@@ -2,6 +2,7 @@
 /*
 
 !/.gitignore
+!/README.md
 !/.ai/
 !/comfyui_library/
 
