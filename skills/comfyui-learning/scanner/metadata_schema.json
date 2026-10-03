@@ -1,0 +1,51 @@
+{
+  "workflow_metadata": {
+    "id": "",
+    "name": "",
+    "file_path": "",
+    "hash": "",
+    "basic": {
+      "created_time": "",
+      "modified_time": "",
+      "file_size": 0
+    },
+    "category": {
+      "primary": "",
+      "secondary": [],
+      "confidence": 0
+    },
+    "nodes": {
+      "count": 0,
+      "types": []
+    },
+    "models": {
+      "checkpoint": [],
+      "diffusion_models": [],
+      "vae": [],
+      "lora": [],
+      "controlnet": []
+    },
+    "parameters": {
+      "resolution": "",
+      "steps": "",
+      "sampler": "",
+      "scheduler": ""
+    },
+    "analysis": {
+      "description": "",
+      "purpose": "",
+      "difficulty": "",
+      "requirements": []
+    },
+    "human_review": {
+      "quality_rating": null,
+      "style_tags": [],
+      "notes": "",
+      "verified": false
+    },
+    "agent": {
+      "search_keywords": [],
+      "embedding_ready": false
+    }
+  }
+}
