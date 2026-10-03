@@ -4,7 +4,7 @@
 !/.gitignore
 !/README.md
 !/CHANGELOG.md
-!/.ai/
+!/skills/
 !/comfyui_library/
 
 # 防御
