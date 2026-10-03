@@ -1,0 +1,10 @@
+# 只跟踪学习助手结构与工作流知识库，其余（ComfyUI 本体、模型、custom_nodes 等）全部忽略
+/*
+
+!/.gitignore
+!/.ai/
+!/comfyui_library/
+
+# 防御
+__pycache__/
+*.pyc

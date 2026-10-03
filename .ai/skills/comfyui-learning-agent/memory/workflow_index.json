@@ -1,0 +1,7 @@
+{
+  "_comment": "已分析工作流索引。workflows 每条记录: {path, name, format, summary, node_count, outputs, analyzed_at}；node_stats 由 tools/knowledge_builder.py --init-index 自动维护。",
+  "version": 1,
+  "updated": "2026-10-04T00:00:00",
+  "workflows": [],
+  "node_stats": {}
+}
