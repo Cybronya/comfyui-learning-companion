@@ -37,11 +37,7 @@ context = ContextManager(
     root
     / "engine"
     / "context"
-    / "context_store.json",
-
-    known_node_types=list(
-        loader.index.keys()
-    )
+    / "context_store.json"
 
 )
 
@@ -69,10 +65,13 @@ parser.parse(
 
 
 
-# 用户提问
+# 用户提问（话题由 teaching 层从上下文节点里匹配）
 question = "KSampler 的 CFG 怎么设置？"
 
-context.update_question(question)
+context.update_question(
+    question,
+    topic="KSampler"
+)
 
 
 context_data = context.get_context()

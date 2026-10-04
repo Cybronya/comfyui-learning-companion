@@ -1,8 +1,14 @@
 {
     "user_id": "default",
-    "current_workflow": null,
+    "current_workflow": {
+        "workflow": "",
+        "task_type": "",
+        "nodes": [],
+        "features": []
+    },
     "workflow_nodes": [],
     "workflow_parameters": {},
-    "active_topic": null,
-    "recent_questions": []
+    "active_topic": "",
+    "recent_questions": [],
+    "last_update": "2026-10-05T03:27:59"
 }

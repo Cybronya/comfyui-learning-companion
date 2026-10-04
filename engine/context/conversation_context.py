@@ -1,68 +1,71 @@
+from dataclasses import dataclass, field
+
+from typing import List
+
+
+
+@dataclass
 class ConversationContext:
 
 
-    MAX_QUESTIONS = 5
+    active_topic:str = ""
 
 
-    def update_question(
+    recent_questions:List[str] = field(
+        default_factory=list
+    )
+
+
+
+    max_history:int = 10
+
+
+
+    def add_question(
         self,
-        store,
-        question,
-        known_node_types
+        question
     ):
 
 
-        recent = (
-            store.get(
-                "recent_questions",
-                []
+        self.recent_questions.append(
+            question
+        )
+
+
+        if len(
+            self.recent_questions
+        ) > self.max_history:
+
+
+            self.recent_questions.pop(
+                0
             )
-            + [question]
-        )
 
 
-        store["recent_questions"] = (
-            recent[
-                -self.MAX_QUESTIONS:
-            ]
-        )
-
-
-        # 从问题里识别正在讨论的节点主题
-        topic = (
-            self.detect_topic(
-                question,
-                known_node_types
-            )
-        )
-
-
-        if topic:
-
-            store["active_topic"] = topic
+        return self
 
 
 
-    def detect_topic(
+    def set_topic(
         self,
-        question,
-        known_node_types
+        topic
     ):
 
-
-        question_lower = (
-            question.lower()
-        )
+        self.active_topic = topic
 
 
-        for node_type in known_node_types:
 
-            if (
-                node_type.lower()
-                in question_lower
-            ):
-
-                return node_type
+    def summary(self):
 
 
-        return None
+        return {
+
+
+            "active_topic":
+            self.active_topic,
+
+
+            "recent_questions":
+            self.recent_questions
+
+        }

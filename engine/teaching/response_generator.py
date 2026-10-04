@@ -1,3 +1,6 @@
+from pathlib import Path
+
+
 class TeachingResponseGenerator:
 
 
@@ -39,13 +42,23 @@ class TeachingResponseGenerator:
         lines = []
 
 
+        workflow_id = (
+            context.get(
+                "workflow",
+                {}
+            ).get(
+                "workflow"
+            )
+        )
+
+
         lines.append(
             "根据你的 workflow:"
         )
 
 
         lines.append(
-            f"当前: {context.get('current_workflow')}"
+            f"当前: {Path(workflow_id).stem if workflow_id else '未打开'}"
         )
 
 
@@ -112,11 +125,19 @@ class TeachingResponseGenerator:
 
 
         # 优先用上下文里已识别的话题
-        if context.get(
-            "active_topic"
-        ):
+        active_topic = (
+            context.get(
+                "conversation",
+                {}
+            ).get(
+                "active_topic"
+            )
+        )
 
-            return context["active_topic"]
+
+        if active_topic:
+
+            return active_topic
 
 
         # 否则在问题里匹配当前工作流的节点
@@ -126,7 +147,10 @@ class TeachingResponseGenerator:
 
 
         for node_type in context.get(
-            "workflow_nodes",
+            "workflow",
+            {}
+        ).get(
+            "nodes",
             []
         ):
 

@@ -1,14 +1,19 @@
 import json
 
+from datetime import datetime
+
 from pathlib import Path
+
 
 from .workflow_context import (
     WorkflowContext
 )
 
+
 from .conversation_context import (
     ConversationContext
 )
+
 
 
 
@@ -18,23 +23,22 @@ class ContextManager:
 
     def __init__(
         self,
-        store_path,
-        known_node_types=None
+        store_path
     ):
+
 
         self.store_path = Path(
             store_path
         )
 
 
-        self.workflow = WorkflowContext()
+        self.workflow_context = (
+            WorkflowContext()
+        )
 
-        self.conversation = ConversationContext()
 
-
-        self.known_node_types = (
-            known_node_types
-            or []
+        self.conversation_context = (
+            ConversationContext()
         )
 
 
@@ -45,55 +49,188 @@ class ContextManager:
     def load(self):
 
 
-        if (
-            self.store_path.exists()
-        ):
+        if not self.store_path.exists():
 
-            with open(
-                self.store_path,
-                "r",
-                encoding="utf-8"
-            ) as f:
+            return
 
-                self.store = json.load(f)
 
-        else:
 
-            self.store = (
-                self.default_store()
+        with open(
+            self.store_path,
+            "r",
+            encoding="utf-8"
+        ) as f:
+
+
+            data=json.load(f)
+
+
+
+        current_workflow = (
+            data.get(
+                "current_workflow",
+                {}
+            )
+        )
+
+
+
+        self.workflow_context.workflow_id=(
+
+            current_workflow.get(
+                "workflow",
+                ""
             )
 
+        )
 
 
-    def default_store(self):
 
-        return {
+        self.workflow_context.task_type=(
 
-            "user_id": "default",
+            current_workflow.get(
+                "task_type",
+                ""
+            )
 
-            "current_workflow": None,
+        )
 
-            "workflow_nodes": [],
 
-            "workflow_parameters": {},
 
-            "active_topic": None,
+        self.workflow_context.features=(
 
-            "recent_questions": []
+            current_workflow.get(
+                "features",
+                []
+            )
+
+        )
+
+
+
+        self.workflow_context.nodes=(
+
+            data.get(
+                "workflow_nodes",
+                []
+            )
+
+        )
+
+
+
+        self.workflow_context.parameters=(
+
+            data.get(
+                "workflow_parameters",
+                {}
+            )
+
+        )
+
+
+
+        self.conversation_context.active_topic=(
+
+            data.get(
+                "active_topic",
+                ""
+            )
+
+        )
+
+
+
+        self.conversation_context.recent_questions=(
+
+            data.get(
+                "recent_questions",
+                []
+            )
+
+        )
+
+
+
+    def save(self):
+
+
+        data={
+
+
+            "user_id":
+            "default",
+
+
+            "current_workflow":
+
+            self.workflow_context.summary(),
+
+
+
+            "workflow_nodes":
+
+            self.workflow_context.nodes,
+
+
+
+            "workflow_parameters":
+
+            self.workflow_context.parameters,
+
+
+
+            "active_topic":
+
+            self.conversation_context.active_topic,
+
+
+
+            "recent_questions":
+
+            self.conversation_context.recent_questions,
+
+
+
+            "last_update":
+
+            datetime.now().isoformat(
+                timespec="seconds"
+            )
 
         }
 
 
 
+        with open(
+            self.store_path,
+            "w",
+            encoding="utf-8"
+        ) as f:
+
+
+            json.dump(
+
+                data,
+
+                f,
+
+                indent=4,
+
+                ensure_ascii=False
+
+            )
+
+
+
     def set_workflow(
         self,
-        workflow_knowledge
+        workflow
     ):
 
 
-        self.workflow.set_workflow(
-            self.store,
-            workflow_knowledge
+        self.workflow_context.update_from_workflow(
+            workflow
         )
 
 
@@ -103,19 +240,22 @@ class ContextManager:
 
     def update_question(
         self,
-        question
+        question,
+        topic=""
     ):
 
 
-        self.conversation.update_question(
-            self.store,
-            question,
-            self.known_node_types
-            or self.store.get(
-                "workflow_nodes",
-                []
-            )
+        self.conversation_context.add_question(
+            question
         )
+
+
+        if topic:
+
+
+            self.conversation_context.set_topic(
+                topic
+            )
 
 
         self.save()
@@ -127,33 +267,16 @@ class ContextManager:
 
         return {
 
-            "current_workflow":
-                self.store.get(
-                    "current_workflow"
-                ),
 
-            "workflow_nodes":
-                self.store.get(
-                    "workflow_nodes",
-                    []
-                ),
+            "workflow":
 
-            "workflow_parameters":
-                self.store.get(
-                    "workflow_parameters",
-                    {}
-                ),
+            self.workflow_context.summary(),
 
-            "active_topic":
-                self.store.get(
-                    "active_topic"
-                ),
 
-            "recent_questions":
-                self.store.get(
-                    "recent_questions",
-                    []
-                )
+
+            "conversation":
+
+            self.conversation_context.summary()
 
         }
 
@@ -162,27 +285,14 @@ class ContextManager:
     def clear(self):
 
 
-        self.store = (
-            self.default_store()
+        self.workflow_context = (
+            WorkflowContext()
+        )
+
+
+        self.conversation_context = (
+            ConversationContext()
         )
 
 
         self.save()
-
-
-
-    def save(self):
-
-
-        with open(
-            self.store_path,
-            "w",
-            encoding="utf-8"
-        ) as f:
-
-            json.dump(
-                self.store,
-                f,
-                ensure_ascii=False,
-                indent=4
-            )
