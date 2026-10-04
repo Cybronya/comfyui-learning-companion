@@ -37,19 +37,19 @@
 | Memory | `skills/comfyui-learning/memory/` | ✅ 规则 + memory_schema + 三模板（三级可信度 Confirmed/Generated/Temporary） |
 | Project Knowledge | `skills/comfyui-learning/project-knowledge/` | ✅ 规则 + knowledge_schema + 三模板 |
 | Core 框架 | `skills/_core/` | 🔶 骨架（skill-discovery / loading / standard / registry 占位） |
-| 对外文档 | `docs/` | ✅ 8 篇全部入库：architecture / workflow-schema / knowledge-system / skill-system / workflow-analysis / pattern-learning / roadmap（v0.4 七篇）+ **learning-engine.md（v0.5 设计，含引擎五模块规划与阅读顺序文档链）** |
+| 对外文档 | `docs/` | ✅ 9 篇全部入库：architecture / workflow-schema / knowledge-system / skill-system / workflow-analysis / pattern-learning / roadmap（v0.4 七篇）+ **learning-engine.md / engine-api.md（v0.5 设计，含引擎五模块+models.py、Core Data Model、全 API 定义与 CLI）**。v0.5 文档链（architecture → skill-system → learning-engine → engine-api → workflow-analysis → pattern-learning → knowledge-system）已在 engine-api.md 第 19 节固化 |
 | 门面 | `README.md` / `CHANGELOG.md` | ✅ 已入库 |
 
 知识卡（v0.2 遗产）：`skills/comfyui-learning/knowledge/` 下 nodes×3、models×3、concepts×2 共 8 张，内容有效但**格式先于 v0.3.1 规范**，待对齐。
 
 ## 4. 当前进行中
 
-- **v0.5 Learning Engine**：设计文档已入库（`docs/learning-engine.md`，含引擎五模块规划 `learning_engine / workflow_loader / skill_router / knowledge_writer / pattern_manager` 与 API 概念），**代码实现未开始**
+- **v0.5 Learning Engine**：设计文档已全部入库（`docs/learning-engine.md` 流程设计 + `docs/engine-api.md` API 设计），**代码实现未开始**。注意 API 设计比流程设计多一个模块：engine/ 实际为六文件（五模块 + `models.py`，Core Data Model：WorkflowObject / AnalysisResult / KnowledgeObject）
 
 ## 5. 待办（下一步，按优先级）
 
 1. **实战首跑**：向 `comfyui_library/workflows/{wan,flux,sdxl}/` 放入第一批真实 workflow（json+分析 md），跑通 scanner → workflow 分析 → explanation 全链路，产出 `workflow_manifest.json`
-2. **v0.5 Learning Engine 实装**：按 `docs/learning-engine.md` 第 14 节实现 engine/ 五模块（设计已定稿，API 概念见第 15 节）
+2. **v0.5 Learning Engine 实装**：按 `docs/learning-engine.md` 第 14 节 + `docs/engine-api.md` 实现 engine/ 六文件（含 models.py 三个 Core Data Model；API、SkillContext、EngineResult、CLI 均已在 engine-api.md 定稿）
 3. **RAG v0.4 实装**：embedding 接入；统一 `build_index`（text 键）与 `search_database`（content 键）的键名；`prepare_documents` 的 content 从 `str(item)` 改为规范拼装
 4. **knowledge/ 卡片对齐 v0.3.1**：格式迁移 + 补 MiniMax H3 与 Wan 的差异对照卡（wan 卡内 TODO）
 5. **pattern_index 尚未建立**：SKILL.md Memory 管理要求的三索引之一（workflow_index ✅ 已有 / pattern_index ❌ / learning_records ✅ 已有）
