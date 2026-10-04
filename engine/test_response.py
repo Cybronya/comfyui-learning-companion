@@ -1,107 +1,101 @@
-from workflow_parser.parser import (
-    WorkflowParser
+from response_generator.generator import (
+    ResponseGenerator
 )
 
 from workflow_parser.knowledge_loader import (
     NodeKnowledgeLoader
 )
 
-from context.context_manager import (
-    ContextManager
-)
-
-from teaching.response_generator import (
-    TeachingResponseGenerator
-)
-
 from pathlib import Path
 
-import json
 
-# 用 __file__ 定位项目根目录，保证从任意工作目录运行都能找到文件。
+
+# 1. 无知识库的基础用法
+generator=ResponseGenerator()
+
+
+
+context={
+
+
+"workflow":{
+
+"nodes":[
+
+"KSampler"
+
+],
+
+"parameters":{
+
+"steps":10,
+
+"cfg":12
+
+}
+
+},
+
+
+"conversation":{
+
+"active_topic":
+
+"KSampler"
+
+}
+
+}
+
+
+
+result=generator.generate(
+
+"为什么我的图片很模糊？",
+
+context
+
+)
+
+
+
+print(
+result["prompt"]
+)
+
+
+
+print("analysis:", result["analysis"])
+
+
+
+# 2. 接入知识库：知识卡内容注入 prompt
 root = Path(__file__).resolve().parent.parent
 
-
-
 loader = NodeKnowledgeLoader(
-
     root
     / "comfyui_library"
     / "knowledge"
-
 )
 
 
-context = ContextManager(
-
-    root
-    / "engine"
-    / "context"
-    / "context_store.json"
-
+generator_with_knowledge = ResponseGenerator(
+    knowledge_loader=loader
 )
 
 
-
-# 模拟用户已打开工作流（解析自动写入上下文）
-parser = WorkflowParser(
-
-    loader,
-
-    context=context
-
+result = generator_with_knowledge.generate(
+    "KSampler 的 steps 怎么设置？",
+    context
 )
 
-
-parser.parse(
-    str(
-        root
-        / "comfyui_library"
-        / "workflows"
-        / "sd1.5"
-        / "basic.json"
-    )
-)
-
-
-
-# 用户提问（话题由 teaching 层从上下文节点里匹配）
-question = "KSampler 的 CFG 怎么设置？"
-
-context.update_question(
-    question,
-    topic="KSampler"
-)
-
-
-context_data = context.get_context()
-
-
-print("Question:")
-
-print("-", question)
 
 print()
 
-print("Context:")
+print("=== 注入知识后 prompt 的知识部分 ===")
 
-print(json.dumps(
-    context_data,
-    ensure_ascii=False,
-    indent=4
-))
+prompt = result["prompt"]
 
-print()
+start = prompt.find("相关知识:")
 
-print("Response:")
-
-print(
-    TeachingResponseGenerator(loader).answer(
-        question,
-        context_data
-    )
-)
-
-
-# 结束后清空状态
-context.clear()
+print(prompt[start:start + 200])
