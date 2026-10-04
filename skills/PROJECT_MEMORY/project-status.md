@@ -44,7 +44,7 @@
 
 ## 4. 当前进行中
 
-- `docs/` 文档体系（v0.4，共 7 篇）：**architecture.md ✅ / workflow-schema.md ✅ / knowledge-system.md ✅ / skill-system.md ✅ / workflow-analysis.md ✅ / pattern-learning.md ✅ 已入库**；roadmap.md 内容待补（等用户供稿）
+- （无——`docs/` 文档体系 7 篇全部入库（architecture / workflow-schema / knowledge-system / skill-system / workflow-analysis / pattern-learning / roadmap），**v0.4 Architecture Standardization 完成**，v0.3.1 规则体系 + v0.4 文档体系双闭环）
 
 ## 5. 待办（下一步，按优先级）
 
@@ -52,7 +52,7 @@
 2. **RAG v0.4 实装**：embedding 接入；统一 `build_index`（text 键）与 `search_database`（content 键）的键名；`prepare_documents` 的 content 从 `str(item)` 改为规范拼装
 3. **knowledge/ 卡片对齐 v0.3.1**：格式迁移 + 补 MiniMax H3 与 Wan 的差异对照卡（wan 卡内 TODO）
 4. **pattern_index 尚未建立**：SKILL.md Memory 管理要求的三索引之一（workflow_index ✅ 已有 / pattern_index ❌ / learning_records ✅ 已有）
-5. **docs 四文档**：workflow-schema / knowledge-system / skill-system / roadmap
+5. **v0.5 展望**：Workflow Analysis Engine（roadmap 第 8 节）——把 scanner/tools 从脚本升级为可产 analysis.md 的引擎
 6. **遗留清理（用户未决）**：旧 `workflow_analysis/`（复数）目录与现行 `workflow/`（单数）内容重叠；`memory/learning_records.md`、`workflow_index.json` 旧格式是否并入 memory 子技能体系
 
 ## 6. 关键事实与资源指针
