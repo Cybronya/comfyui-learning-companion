@@ -1,0 +1,16 @@
+{
+  "document": {
+    "id": "",
+    "type": "",
+    "content": "",
+    "metadata": {
+      "category": [],
+      "models": [],
+      "nodes": [],
+      "tags": []
+    },
+    "embedding": {
+      "status": false
+    }
+  }
+}
