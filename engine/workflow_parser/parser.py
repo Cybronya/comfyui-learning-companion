@@ -44,6 +44,19 @@ class WorkflowParser:
             data=json.load(f)
 
 
+        return self.parse_data(
+            data,
+            workflow_id=filepath
+        )
+
+
+
+    def parse_data(
+        self,
+        data,
+        workflow_id="<dict>"
+    ):
+
 
         nodes=[]
 
@@ -161,7 +174,7 @@ class WorkflowParser:
 
         workflow = WorkflowKnowledge(
 
-            workflow_id=filepath,
+            workflow_id=workflow_id,
 
             nodes=nodes,
 
