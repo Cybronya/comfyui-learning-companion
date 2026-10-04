@@ -27,16 +27,23 @@
     {
       "node_type": "VAEDecode",
       "file": "nodes/vae_decode.md",
-      "category": "Latent / Image Conversion",
+      "category": "Latent Conversion",
       "inputs": ["samples", "vae"],
       "outputs": ["IMAGE"]
     },
     {
       "node_type": "EmptyLatentImage",
       "file": "nodes/empty_latent.md",
-      "category": "Latent Creation",
+      "category": "Latent Generation",
       "inputs": ["width", "height", "batch_size"],
       "outputs": ["LATENT"]
+    },
+    {
+      "node_type": "SaveImage",
+      "file": "nodes/save_image.md",
+      "category": "Output",
+      "inputs": ["images", "filename_prefix"],
+      "outputs": []
     }
   ]
 }

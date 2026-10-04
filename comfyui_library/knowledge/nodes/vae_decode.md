@@ -6,37 +6,37 @@
 
 ## 分类
 
-Latent / Image Conversion
+Latent Conversion
 
 ## 作用
 
-`VAEDecode` 负责把 Latent 空间的数据解码成真正的图片。
+`VAEDecode` 负责把 Stable Diffusion 生成的 Latent 转换成最终图片。
 
-Stable Diffusion 的生成过程发生在 Latent 空间，KSampler 输出的不是图片本身，而是一种压缩的数学表示。
-
-必须经过 `VAEDecode`，才能变成可以查看和保存的 IMAGE。
+它是生成流程中的最后转换步骤。
 
 ---
 
-## 在 Workflow 中的位置
+## Workflow 位置
 
-典型流程：
-
-```
+```text
 KSampler
 
-        ↓
-     LATENT
+     ↓
+
+LATENT
+
+     ↓
 
 VAEDecode
 
-        ↓
-      IMAGE
+     ↓
+
+IMAGE
+
+     ↓
 
 SaveImage
 ```
-
-它是生成链路的"最后一公里"。
 
 ---
 
@@ -46,13 +46,11 @@ SaveImage
 
 来自：
 
-```
+```text
 KSampler
 ```
 
-类型是 LATENT。
-
-包含采样完成后、尚未变成图片的图像信息。
+这是生成完成后的 Latent。
 
 ---
 
@@ -60,11 +58,9 @@ KSampler
 
 来自：
 
-```
+```text
 CheckpointLoaderSimple
 ```
-
-负责 Latent 和 Image 之间转换的解码器。
 
 ---
 
@@ -72,60 +68,130 @@ CheckpointLoaderSimple
 
 ### IMAGE
 
-提供给：
+最终图片数据。
 
-```
+可以提供给：
+
+```text
 SaveImage
 ```
 
-可以直接保存为 PNG 文件。
+保存。
+
+---
+
+# VAE 是什么？
+
+VAE 全称：
+
+```text
+Variational Auto Encoder
+```
+
+它负责：
+
+Latent 和 Image 之间转换。
+
+两个方向：
+
+---
+
+## Encode
+
+图片：
+
+```text
+IMAGE
+
+↓
+
+VAEEncode
+
+↓
+
+LATENT
+```
+
+用于：
+
+* Image To Image
+* Control workflow
+
+---
+
+## Decode
+
+Latent：
+
+```text
+LATENT
+
+↓
+
+VAEDecode
+
+↓
+
+IMAGE
+```
+
+用于：
+
+* 查看生成结果
 
 ---
 
 ## 初学者理解
 
-可以把 VAE 理解为：
+如果 Latent 是 AI 内部语言：
 
-> 一台翻译机器的"出口"。
+那么：
 
-进入时：
+`VAEDecode`
 
-```
-模型眼中的抽象概念（Latent）
-```
+就是：
 
-出来时：
-
-```
-人类能看懂的图片（Image）
-```
-
-与之相反的是 VAEEncode，负责把图片"送进去"（图生图会用到）。
+> 把 AI 的内部语言翻译成人类能看到的图片。
 
 ---
 
 ## 常见错误
 
-### VAE 来源不对
+### VAE 不匹配
 
 表现：
 
-* 图片颜色异常（发灰、偏绿）
-* 画面模糊
+* 色彩异常
+* 细节损失
+* 图片偏色
 
-原因：
+---
 
-* 用了不匹配的 VAE
-* Checkpoint 自带 VAE 与外部 VAE 混用
+### 忽略 VAE 质量
+
+不同 VAE：
+
+可能影响：
+
+* 色彩
+* 清晰度
+* 对比度
 
 ---
 
 ## 学习任务
 
-1. 观察 Latent 直接输出的效果（绕过 VAEDecode 是不行的，理解为什么必须解码）
-2. 更换不同 VAE
-3. 比较解码结果的差异
+实验：
+
+保持 workflow 不变。
+
+替换不同 VAE。
+
+观察：
+
+* 颜色变化
+* 细节变化
 
 学习目标：
 
-理解 Latent 与 Image 之间的转换关系。
+理解 VAE 对最终图片质量的影响。
