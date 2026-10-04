@@ -59,7 +59,7 @@ print("content 开头:", node["content"].splitlines()[0])
 
 # 2. 解析工作流：节点自动携带知识
 parser = WorkflowParser(
-    knowledge_path=knowledge_path
+    knowledge_loader=loader
 )
 
 

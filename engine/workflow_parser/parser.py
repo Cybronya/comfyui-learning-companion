@@ -5,9 +5,6 @@ from .models import (
     WorkflowKnowledge
 )
 
-from .knowledge_loader import (
-    NodeKnowledgeLoader
-)
 
 
 class WorkflowParser:
@@ -15,29 +12,35 @@ class WorkflowParser:
 
     def __init__(
         self,
-        knowledge_path=None
+        knowledge_loader
     ):
 
         self.knowledge_loader = (
-            NodeKnowledgeLoader(
-                knowledge_path
-            )
-            if knowledge_path
-            else None
+            knowledge_loader
         )
 
 
-    def parse(self, filepath):
+
+    def parse(
+        self,
+        filepath
+    ):
+
 
         with open(
             filepath,
             "r",
             encoding="utf-8"
         ) as f:
+
             data=json.load(f)
 
 
+
         nodes=[]
+
+        topics=set()
+
 
 
         for node in data.get(
@@ -46,46 +49,105 @@ class WorkflowParser:
         ):
 
 
-            knowledge = (
-                self.knowledge_loader.load(
-                    node["type"]
-                )
-                if self.knowledge_loader
-                else None
+            node_type=node[
+                "type"
+            ]
+
+
+            info = (
+                self.knowledge_loader
+                .load(node_type)
             )
 
 
-            nodes.append(
-                NodeKnowledge(
-                    id=node["id"],
-                    node_type=node["type"],
-                    role=knowledge.get(
-                        "role",
-                        "unknown"
-                    )
-                    if knowledge
-                    else "unknown",
-                    category=knowledge.get(
-                        "category",
-                        "unknown"
-                    )
-                    if knowledge
-                    else "unknown",
-                    learning_topics=knowledge.get(
+            if info:
+
+
+                topics.update(
+                    info.get(
                         "learning_topics",
                         []
                     )
-                    if knowledge
-                    else [],
-                    inputs=node.get(
+                )
+
+
+                knowledge = NodeKnowledge(
+
+                    id=node["id"],
+
+                    node_type=node_type,
+
+                    role=
+                    info.get(
+                        "role",
+                        "unknown"
+                    ),
+
+                    category=
+                    info.get(
+                        "category",
+                        "unknown"
+                    ),
+
+                    difficulty=
+                    info.get(
+                        "difficulty",
+                        "unknown"
+                    ),
+
+                    learning_topics=
+                    info.get(
+                        "learning_topics",
+                        []
+                    ),
+
+                    explanation=
+                    info.get(
+                        "content"
+                    ),
+
+                    inputs=
+                    node.get(
                         "inputs",
                         {}
                     )
+
                 )
+
+
+            else:
+
+
+                knowledge = NodeKnowledge(
+
+                    id=node["id"],
+
+                    node_type=node_type,
+
+                    inputs=
+                    node.get(
+                        "inputs",
+                        {}
+                    )
+
+                )
+
+
+            nodes.append(
+                knowledge
             )
 
 
+
         return WorkflowKnowledge(
+
             workflow_id=filepath,
-            nodes=nodes
+
+            nodes=nodes,
+
+            # 排序保证输出顺序稳定
+            learning_topics=sorted(
+                topics
+            )
+
         )

@@ -3,34 +3,63 @@ class WorkflowAnalyzer:
 
     def analyze(
         self,
-        knowledge
+        workflow
     ):
 
 
-        types=[
+        node_types=[
             n.node_type
-            for n in knowledge.nodes
+            for n in workflow.nodes
         ]
 
 
+
+        # Text To Image
+
         if (
-            "KSampler" in types
+
+            "KSampler"
+            in node_types
+
             and
-            "CLIPTextEncode" in types
+
+            "CLIPTextEncode"
+            in node_types
+
+            and
+
+            "EmptyLatentImage"
+            in node_types
+
         ):
 
-            knowledge.task_type = (
+            workflow.task_type = (
                 "text_to_image"
             )
 
 
+
+        # Image Input
+
         if (
-            "LoadImage" in types
+            "LoadImage"
+            in node_types
         ):
 
-            knowledge.features.append(
+            workflow.features.append(
                 "image_input"
             )
 
 
-        return knowledge
+
+        workflow.summary = (
+
+            f"This workflow is "
+            f"{workflow.task_type} "
+            f"pipeline with "
+            f"{len(workflow.nodes)} nodes."
+
+        )
+
+
+        return workflow
