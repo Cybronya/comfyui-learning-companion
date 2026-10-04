@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "updated": "2026-10-05",
+  "description": "节点知识卡索引：knowledge/nodes/ 下每张卡片对应一个 ComfyUI 节点",
+  "nodes": [
+    {
+      "node_type": "CheckpointLoaderSimple",
+      "file": "nodes/checkpoint_loader.md",
+      "category": "Model Loading",
+      "inputs": ["ckpt_name"],
+      "outputs": ["MODEL", "CLIP", "VAE"]
+    },
+    {
+      "node_type": "CLIPTextEncode",
+      "file": "nodes/clip_text_encode.md",
+      "category": "Text Conditioning",
+      "inputs": ["text", "CLIP"],
+      "outputs": ["CONDITIONING"]
+    },
+    {
+      "node_type": "KSampler",
+      "file": "nodes/ksampler.md",
+      "category": "Diffusion Sampling",
+      "inputs": ["model", "positive", "negative", "latent_image", "seed", "steps", "cfg", "sampler_name"],
+      "outputs": ["LATENT"]
+    },
+    {
+      "node_type": "VAEDecode",
+      "file": "nodes/vae_decode.md",
+      "category": "Latent / Image Conversion",
+      "inputs": ["samples", "vae"],
+      "outputs": ["IMAGE"]
+    },
+    {
+      "node_type": "EmptyLatentImage",
+      "file": "nodes/empty_latent.md",
+      "category": "Latent Creation",
+      "inputs": ["width", "height", "batch_size"],
+      "outputs": ["LATENT"]
+    }
+  ]
+}
