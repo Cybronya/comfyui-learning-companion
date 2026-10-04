@@ -2,6 +2,23 @@
   "_comment": "已分析工作流索引。workflows 每条记录: {path, name, format, summary, node_count, outputs, analyzed_at}；node_stats 由 tools/knowledge_builder.py --init-index 自动维护。",
   "version": 1,
   "updated": "2026-10-04T00:00:00",
-  "workflows": [],
-  "node_stats": {}
+  "workflows": [
+    {
+      "path": "comfyui_library/workflows/sd1.5/text-to-image-workflow.png",
+      "name": "SD1.5 Text-to-Image Basic（ComfyUI 默认文生图模板）",
+      "format": "png-embedded (ui + api)",
+      "summary": "标准 SD1.5 文生图最小工作流：CheckpointLoaderSimple → CLIPTextEncode×2 → EmptyLatentImage(512x512) → KSampler(euler/normal, 20步, cfg 8, denoise 1.0) → VAEDecode → SaveImage。模型 v1-5-pruned-emaonly-fp16.safetensors，负面词 text, watermark。",
+      "node_count": 7,
+      "outputs": ["SaveImage"],
+      "analyzed_at": "2026-10-04"
+    }
+  ],
+  "node_stats": {
+    "CheckpointLoaderSimple": 1,
+    "CLIPTextEncode": 2,
+    "EmptyLatentImage": 1,
+    "KSampler": 1,
+    "VAEDecode": 1,
+    "SaveImage": 1
+  }
 }

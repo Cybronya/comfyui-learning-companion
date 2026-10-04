@@ -1,33 +1,7 @@
-# 学习记录（learning_records）
+# Learning Records
 
-> 流水账：每学会一个新东西（节点 / 模型 / 原理 / 踩坑），追加一条。
-> 新知识本体写到 `knowledge/` 对应目录，这里只留索引与心得。
+> 分析工作流过程中新学到的节点/模型/原理记录。每条: [日期] 主题 — 要点 — 关联文件。
 
-## 记录格式
-
-```
-### YYYY-MM-DD｜主题（一句话）
-- 类型：节点 / 模型 / 原理 / 踩坑
-- 新增卡片：knowledge/xxx/yyy.md（或"无，仅备忘"）
-- 要点：
-  - …
-- 来源：工作流分析 / 上游 README / 官方文档 / 实测
-```
-
----
-
-### 2026-10-04｜知识库初始化
-- 类型：节点 / 模型 / 原理（建库）
-- 新增卡片：
-  - knowledge/nodes/sampler.md（KSampler 家族）
-  - knowledge/nodes/vae.md（VAE 编解码与 tiled）
-  - knowledge/nodes/controlnet.md（ControlNet 应用）
-  - knowledge/models/sd.md（SD1.5/SDXL/SD3）
-  - knowledge/models/flux.md（FLUX.1 dev/schnell）
-  - knowledge/models/wan.md（Wan2.1/2.2 视频链路，含两段采样与蒸馏 LoRA）
-  - knowledge/concepts/latent.md（潜空间与视频 latent）
-  - knowledge/concepts/diffusion.md（去噪 / CFG / scheduler / flow matching）
-- 要点：
-  - 本项目主场景是视频生成（MiniMax H3），Wan 卡片留了 TODO：H3 专属节点与 Wan 链路的差异对照，待首个 H3 工作流分析后补齐。
-  - 节点插件归属一律对照 comfyui/custom_nodes/NODES_SOURCES.md。
-- 来源：ComfyUI 内置节点文档 / BFL & Wan 官方说明 / 社区通行实践
+- [2026-10-04] ComfyUI PNG 元数据 — ComfyUI 生成/保存的 PNG 在 tEXt chunk 内嵌两份 JSON：`workflow`（UI 画布格式，含 nodes/links/坐标）与 `prompt`（API 格式，数字键 + class_type + inputs）。提取工具：`skills/comfyui-learning/tools/extract_png_workflow.py`（新增，标准库实现，覆盖 tEXt/iTXt/zTXt）。— 关联: workflows/sd1.5/text-to-image-workflow.png
+- [2026-10-04] 核心节点六件套 — CheckpointLoaderSimple（一次输出 MODEL/CLIP/VAE 三路）、CLIPTextEncode（文本→CONDITIONING，正负各一）、EmptyLatentImage（空白潜空间起点）、KSampler（五要素：model/positive/negative/latent + seed/steps/cfg/sampler/scheduler/denoise）、VAEDecode（LATENT→IMAGE）、SaveImage。— 关联: knowledge/patterns/sd15-t2i-basic.md
+- [2026-10-04] SD1.5 官方权重文件名 — `v1-5-pruned-emaonly-fp16.safetensors`：pruned=裁剪版（去掉训练优化器状态，体积小）、emaonly=只含 EMA 权重（出图更稳定）、fp16=半精度（显存约 2GB）。— 关联: workflows/sd1.5/text-to-image-workflow.png
