@@ -1,7 +1,7 @@
 {
   "_comment": "已分析工作流索引。workflows 每条记录: {path, name, format, summary, node_count, outputs, analyzed_at}；node_stats 由 tools/knowledge_builder.py --init-index 自动维护。",
   "version": 1,
-  "updated": "2026-10-04T00:00:00",
+  "updated": "2026-10-04T22:40:44",
   "workflows": [
     {
       "path": "comfyui_library/workflows/sd1.5/text-to-image-workflow.png",
@@ -9,16 +9,33 @@
       "format": "png-embedded (ui + api)",
       "summary": "标准 SD1.5 文生图最小工作流：CheckpointLoaderSimple → CLIPTextEncode×2 → EmptyLatentImage(512x512) → KSampler(euler/normal, 20步, cfg 8, denoise 1.0) → VAEDecode → SaveImage。模型 v1-5-pruned-emaonly-fp16.safetensors，负面词 text, watermark。",
       "node_count": 7,
-      "outputs": ["SaveImage"],
-      "analyzed_at": "2026-10-04"
+      "outputs": [
+        "SaveImage"
+      ],
+      "analyzed_at": "2026-10-04",
+      "pattern": "sd15-t2i-basic"
+    },
+    {
+      "path": "comfyui_library/workflows/sd1.5/lora.png",
+      "name": "SD1.5 LoRA Text-to-Image（ComfyUI 官方 LoRA 基础教程）",
+      "format": "png-embedded (ui + api)",
+      "summary": "在 t2i 基础链路的 CheckpointLoader 与 CLIPTextEncode 之间插入 LoraLoader：dreamshaper_8 + blindbox_V1Mix(model 0.75 / clip 1.0)，768x768，KSampler(dpmpp_2m/karras, 30步, cfg 7, denoise 1.0)，负面词含 (worst quality, low quality:1.4) 权重语法。对比基准 sd15-t2i-basic 仅新增 LoraLoader ×1，判定 pattern evolution: sd15-t2i-basic → sd15-t2i-lora。",
+      "node_count": 8,
+      "outputs": [
+        "SaveImage"
+      ],
+      "analyzed_at": "2026-10-04",
+      "pattern": "sd15-t2i-lora",
+      "evolved_from": "sd15-t2i-basic"
     }
   ],
   "node_stats": {
-    "CheckpointLoaderSimple": 1,
-    "CLIPTextEncode": 2,
-    "EmptyLatentImage": 1,
-    "KSampler": 1,
-    "VAEDecode": 1,
-    "SaveImage": 1
+    "CLIPTextEncode": 4,
+    "KSampler": 2,
+    "CheckpointLoaderSimple": 2,
+    "EmptyLatentImage": 2,
+    "VAEDecode": 2,
+    "SaveImage": 2,
+    "LoraLoader": 1
   }
 }

@@ -27,6 +27,7 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from workflow_parser import normalize, detect_format  # 同目录复用
+from workflow_compare import load as load_workflow  # 支持 JSON 与 PNG（内嵌元数据）
 
 CARD_TEMPLATE = """---
 name: {name}
@@ -64,10 +65,17 @@ TODO(待验证)：ComfyUI 内置，还是 custom_nodes？
 
 
 def find_workflows(root: Path) -> list[Path]:
-    """递归收集看起来像 workflow 的 JSON。"""
+    """递归收集 workflow：PNG（内嵌元数据）+ JSON；排除 _ 开头的提取产物。"""
     found: list[Path] = []
-    for p in sorted(root.rglob("*.json")):
+    for p in sorted(root.rglob("*")):
+        if p.suffix.lower() not in (".json", ".png"):
+            continue
+        if p.name.startswith("_"):  # _prompt.json / _workflow.json 等提取产物
+            continue
         if p.name.startswith("workflow_index"):
+            continue
+        if p.suffix.lower() == ".png":
+            found.append(p)  # 是否真含内嵌工作流由 scan() 解析时甄别
             continue
         try:
             data = json.loads(p.read_text(encoding="utf-8", errors="replace"))
@@ -105,7 +113,7 @@ def scan(workflows: list[Path]) -> tuple[Counter, dict[str, list[str]]]:
     where: dict[str, list[str]] = {}
     for p in workflows:
         try:
-            wf = normalize(json.loads(p.read_text(encoding="utf-8", errors="replace")))
+            wf = load_workflow(str(p))  # load() 内部已 normalize，勿重复
         except (ValueError, json.JSONDecodeError, OSError):
             continue
         for ct, c in wf["stats"].items():

@@ -130,12 +130,31 @@ def main() -> int:
     known_wfs = [load(p) for p in args.known]
 
     if args.index and not known_wfs:
-        idx = json.loads(Path(args.index).read_text(encoding="utf-8"))
-        # 索引中只有节点名集合，构造最小 stats 形状参与 node/pattern 比较
-        known_wfs = [{"stats": {n: 1 for n in w.get("nodes", [])},
-                      "nodes": [], "order": [],
-                      "source": w.get("name", "known")}
-                     for w in idx.get("workflows", [])]
+        idx_path = Path(args.index)
+        idx = json.loads(idx_path.read_text(encoding="utf-8"))
+        # 索引条目的 path 指向真实 workflow 文件（PNG/JSON），逐条加载
+        for w in idx.get("workflows", []):
+            raw = w.get("path")
+            if not raw:
+                continue
+            p = Path(raw)
+            if not p.exists():
+                p = idx_path.parent / raw  # 兼容相对索引目录的写法
+            if not p.exists():
+                print(f"警告: 索引条目文件不存在，跳过: {raw}", file=sys.stderr)
+                continue
+            try:
+                wf = load(str(p))
+                wf["source"] = w.get("name") or p.name  # 参数差异输出里显示来源名
+                known_wfs.append(wf)
+            except (ValueError, json.JSONDecodeError, OSError) as e:
+                print(f"警告: 无法加载 {raw}: {e}", file=sys.stderr)
+        if not known_wfs:
+            # 兜底：退化为全局 node_stats 基线（跨工作流累计值，可能偏高）
+            stats = idx.get("node_stats") or {}
+            if stats:
+                known_wfs.append({"stats": dict(stats), "nodes": [], "order": [],
+                                  "source": "index/node_stats"})
 
     if not known_wfs:
         print("错误: 请提供 known workflow 文件或 --index", file=sys.stderr)

@@ -9,6 +9,7 @@
   1) class_type 层面：仅 A 有 / 仅 B 有 / 共有数量变化
   2) 节点参数层面：同 class_type 的节点逐对匹配，列出 widgets/inputs 中标量参数的差异
 依赖 workflow_parser 的解析逻辑，只使用标准库。
+a/b 可为 workflow JSON，也可为 ComfyUI 导出的 PNG（自动提取内嵌 prompt/workflow chunk）。
 """
 from __future__ import annotations
 
@@ -22,10 +23,21 @@ if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
 from workflow_parser import normalize  # 同目录复用
+from extract_png_workflow import extract_text_chunks  # 同目录复用
 
 
 def load(path: str) -> dict:
-    return normalize(json.loads(Path(path).read_text(encoding="utf-8", errors="replace")))
+    """加载 workflow：JSON 直接解析；PNG 提取内嵌元数据（优先 API 格式 prompt chunk）。"""
+    p = Path(path)
+    if p.suffix.lower() == ".png":
+        chunks = extract_text_chunks(str(p))
+        raw = chunks.get("prompt") or chunks.get("workflow")
+        if raw is None:
+            raise ValueError(f"{path}: PNG 未内嵌 workflow 元数据（prompt/workflow chunk）")
+        data = json.loads(raw)
+    else:
+        data = json.loads(p.read_text(encoding="utf-8", errors="replace"))
+    return normalize(data)
 
 
 def scalar_params(node: dict) -> tuple[dict, list]:
