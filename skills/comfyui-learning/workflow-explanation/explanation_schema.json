@@ -1,0 +1,20 @@
+{
+  "workflow_explanation": {
+    "workflow_name": "",
+    "summary": {
+      "purpose": "",
+      "input": "",
+      "output": ""
+    },
+    "pipeline": [],
+    "nodes": [],
+    "models": [],
+    "parameters": {
+      "important": []
+    },
+    "learning": {
+      "difficulty": "",
+      "recommendations": []
+    }
+  }
+}
