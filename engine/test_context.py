@@ -10,8 +10,8 @@ from workflow_parser.knowledge_loader import (
     NodeKnowledgeLoader
 )
 
-from lesson_generator.generator import (
-    LessonGenerator
+from context.context_manager import (
+    ContextManager
 )
 
 from pathlib import Path
@@ -21,6 +21,7 @@ root = Path(__file__).resolve().parent.parent
 
 
 
+# 1. 初始化知识加载器与上下文管理器
 loader = NodeKnowledgeLoader(
 
     root
@@ -30,13 +31,29 @@ loader = NodeKnowledgeLoader(
 )
 
 
+context = ContextManager(
 
-parser = WorkflowParser(
+    root
+    / "engine"
+    / "context"
+    / "context_store.json",
 
-    loader
+    known_node_types=list(
+        loader.index.keys()
+    )
 
 )
 
+
+
+# 2. 解析工作流（自动写入 WorkflowContext）
+parser = WorkflowParser(
+
+    loader,
+
+    context=context
+
+)
 
 
 workflow = parser.parse(
@@ -52,7 +69,6 @@ workflow = parser.parse(
 )
 
 
-
 workflow = WorkflowAnalyzer().analyze(
 
     workflow
@@ -61,47 +77,28 @@ workflow = WorkflowAnalyzer().analyze(
 
 
 
-lesson = LessonGenerator().generate(
-    workflow
+# 3. 模拟用户提问
+context.update_question(
+    "KSampler 的 CFG 怎么设置？"
 )
 
 
+print("=== 当前上下文 ===")
+
+import json
 
 print(
-    lesson.title
+    json.dumps(
+        context.get_context(),
+        ensure_ascii=False,
+        indent=4
+    )
 )
 
 
+# 4. 结束后清空状态
+context.clear()
 
-for section in lesson.sections:
+print()
 
-
-    print(
-        "\n##",
-        section.title
-    )
-
-
-    print(
-        section.content
-    )
-
-
-    print(
-        "练习:"
-    )
-
-
-    for e in section.exercises:
-
-        print(
-            "-",
-            e
-        )
-
-
-print("\nLearning Topics:")
-
-for topic in lesson.learning_topics:
-
-    print("-", topic)
+print("上下文已清空:", context.get_context())

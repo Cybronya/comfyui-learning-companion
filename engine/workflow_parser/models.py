@@ -29,6 +29,11 @@ class NodeKnowledge:
     explanation:Optional[str]=None
 
 
+    widgets:List=field(
+        default_factory=list
+    )
+
+
     inputs:Dict=field(
         default_factory=dict
     )

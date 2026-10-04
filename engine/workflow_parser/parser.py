@@ -12,11 +12,19 @@ class WorkflowParser:
 
     def __init__(
         self,
-        knowledge_loader
+        knowledge_loader,
+        context=None
     ):
 
         self.knowledge_loader = (
             knowledge_loader
+        )
+
+
+        # 可选的 ContextManager：
+        # 解析后自动写入 WorkflowContext
+        self.context = (
+            context
         )
 
 
@@ -106,6 +114,12 @@ class WorkflowParser:
                         "content"
                     ),
 
+                    widgets=
+                    node.get(
+                        "widgets_values",
+                        []
+                    ),
+
                     inputs=
                     node.get(
                         "inputs",
@@ -124,6 +138,12 @@ class WorkflowParser:
 
                     node_type=node_type,
 
+                    widgets=
+                    node.get(
+                        "widgets_values",
+                        []
+                    ),
+
                     inputs=
                     node.get(
                         "inputs",
@@ -139,7 +159,7 @@ class WorkflowParser:
 
 
 
-        return WorkflowKnowledge(
+        workflow = WorkflowKnowledge(
 
             workflow_id=filepath,
 
@@ -151,3 +171,14 @@ class WorkflowParser:
             )
 
         )
+
+
+        # 解析后自动写入 WorkflowContext
+        if self.context:
+
+            self.context.set_workflow(
+                workflow
+            )
+
+
+        return workflow
