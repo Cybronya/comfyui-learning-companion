@@ -1,0 +1,25 @@
+{
+  "node": {
+    "id": "",
+    "name": "",
+    "class_type": "",
+    "category": "",
+    "package": {
+      "name": "",
+      "path": "",
+      "version": ""
+    },
+    "inputs": [],
+    "outputs": [],
+    "description": "",
+    "capability": [],
+    "relationships": {
+      "requires": [],
+      "commonly_used_with": []
+    },
+    "human_review": {
+      "verified": false,
+      "notes": ""
+    }
+  }
+}
