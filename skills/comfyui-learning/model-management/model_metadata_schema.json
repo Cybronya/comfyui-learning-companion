@@ -1,0 +1,26 @@
+{
+  "model": {
+    "id": "",
+    "name": "",
+    "path": "",
+    "type": "",
+    "format": "",
+    "size": 0,
+    "hash": "",
+    "architecture": "",
+    "dtype": "",
+    "compatibility": {
+      "nodes": [],
+      "workflows": []
+    },
+    "requirements": {
+      "estimated_vram": "",
+      "recommended_gpu": ""
+    },
+    "tags": [],
+    "human_review": {
+      "verified": false,
+      "notes": ""
+    }
+  }
+}
