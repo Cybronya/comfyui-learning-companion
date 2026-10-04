@@ -1,0 +1,26 @@
+{
+  "memory": {
+    "id": "",
+    "type": "",
+    "created": "",
+    "source": "",
+    "content": {
+      "title": "",
+      "description": ""
+    },
+    "related": {
+      "workflow": [],
+      "nodes": [],
+      "models": []
+    },
+    "experiment": {
+      "hardware": "",
+      "configuration": "",
+      "result": ""
+    },
+    "confidence": {
+      "level": "",
+      "verified": false
+    }
+  }
+}
