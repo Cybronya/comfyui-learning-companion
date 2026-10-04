@@ -1,0 +1,17 @@
+{
+  "error_analysis": {
+    "error_type": "",
+    "message": "",
+    "source": {
+      "workflow": "",
+      "node": "",
+      "model": ""
+    },
+    "analysis": {
+      "cause": [],
+      "evidence": []
+    },
+    "solution_direction": [],
+    "learning_note": ""
+  }
+}
