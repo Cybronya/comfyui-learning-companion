@@ -44,7 +44,7 @@
 
 ## 4. 当前进行中
 
-- `docs/` 文档体系（v0.4，共 5 篇）：**architecture.md ✅ / workflow-schema.md ✅ / knowledge-system.md ✅ 已入库**；skill-system.md / roadmap.md 内容待补（等用户供稿）
+- `docs/` 文档体系（v0.4，共 5 篇）：**architecture.md ✅ / workflow-schema.md ✅ / knowledge-system.md ✅ / skill-system.md ✅ 已入库**；roadmap.md 内容待补（等用户供稿）
 
 ## 5. 待办（下一步，按优先级）
 
