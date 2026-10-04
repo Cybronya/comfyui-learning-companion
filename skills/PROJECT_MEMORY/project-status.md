@@ -4,7 +4,7 @@
 > 任何 Agent / 协作者接手前先读本文件；每次开发完成后必须更新本文件对应章节。
 
 - 最后更新：2026-10-04
-- 规则版本：v0.3.1（规范定稿）｜v0.4（docs 架构文档起草中）
+- 规则版本：v0.3.1（规范定稿）｜v0.4 架构标准化 ✅｜**v0.5 设计文档已入库（Learning Engine，引擎实现未开始）**
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master）
 
 ---
@@ -37,22 +37,22 @@
 | Memory | `skills/comfyui-learning/memory/` | ✅ 规则 + memory_schema + 三模板（三级可信度 Confirmed/Generated/Temporary） |
 | Project Knowledge | `skills/comfyui-learning/project-knowledge/` | ✅ 规则 + knowledge_schema + 三模板 |
 | Core 框架 | `skills/_core/` | 🔶 骨架（skill-discovery / loading / standard / registry 占位） |
-| 对外文档 | `docs/architecture.md` | ✅ v0.4 架构设计；**同目录另 4 个文档待补**（见待办） |
+| 对外文档 | `docs/` | ✅ 8 篇全部入库：architecture / workflow-schema / knowledge-system / skill-system / workflow-analysis / pattern-learning / roadmap（v0.4 七篇）+ **learning-engine.md（v0.5 设计，含引擎五模块规划与阅读顺序文档链）** |
 | 门面 | `README.md` / `CHANGELOG.md` | ✅ 已入库 |
 
 知识卡（v0.2 遗产）：`skills/comfyui-learning/knowledge/` 下 nodes×3、models×3、concepts×2 共 8 张，内容有效但**格式先于 v0.3.1 规范**，待对齐。
 
 ## 4. 当前进行中
 
-- （无——`docs/` 文档体系 7 篇全部入库（architecture / workflow-schema / knowledge-system / skill-system / workflow-analysis / pattern-learning / roadmap），**v0.4 Architecture Standardization 完成**，v0.3.1 规则体系 + v0.4 文档体系双闭环）
+- **v0.5 Learning Engine**：设计文档已入库（`docs/learning-engine.md`，含引擎五模块规划 `learning_engine / workflow_loader / skill_router / knowledge_writer / pattern_manager` 与 API 概念），**代码实现未开始**
 
 ## 5. 待办（下一步，按优先级）
 
 1. **实战首跑**：向 `comfyui_library/workflows/{wan,flux,sdxl}/` 放入第一批真实 workflow（json+分析 md），跑通 scanner → workflow 分析 → explanation 全链路，产出 `workflow_manifest.json`
-2. **RAG v0.4 实装**：embedding 接入；统一 `build_index`（text 键）与 `search_database`（content 键）的键名；`prepare_documents` 的 content 从 `str(item)` 改为规范拼装
-3. **knowledge/ 卡片对齐 v0.3.1**：格式迁移 + 补 MiniMax H3 与 Wan 的差异对照卡（wan 卡内 TODO）
-4. **pattern_index 尚未建立**：SKILL.md Memory 管理要求的三索引之一（workflow_index ✅ 已有 / pattern_index ❌ / learning_records ✅ 已有）
-5. **v0.5 展望**：Workflow Analysis Engine（roadmap 第 8 节）——把 scanner/tools 从脚本升级为可产 analysis.md 的引擎
+2. **v0.5 Learning Engine 实装**：按 `docs/learning-engine.md` 第 14 节实现 engine/ 五模块（设计已定稿，API 概念见第 15 节）
+3. **RAG v0.4 实装**：embedding 接入；统一 `build_index`（text 键）与 `search_database`（content 键）的键名；`prepare_documents` 的 content 从 `str(item)` 改为规范拼装
+4. **knowledge/ 卡片对齐 v0.3.1**：格式迁移 + 补 MiniMax H3 与 Wan 的差异对照卡（wan 卡内 TODO）
+5. **pattern_index 尚未建立**：SKILL.md Memory 管理要求的三索引之一（workflow_index ✅ 已有 / pattern_index ❌ / learning_records ✅ 已有）
 6. **遗留清理（用户未决）**：旧 `workflow_analysis/`（复数）目录与现行 `workflow/`（单数）内容重叠；`memory/learning_records.md`、`workflow_index.json` 旧格式是否并入 memory 子技能体系
 
 ## 6. 关键事实与资源指针
