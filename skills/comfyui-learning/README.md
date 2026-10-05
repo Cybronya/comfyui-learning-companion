@@ -59,7 +59,7 @@ python tools/knowledge_builder.py path/to/workflows_dir/ --card KSampler --out k
   `comfyui/custom_nodes/NODES_SOURCES.md`
   是全部自定义节点的权威来源清单（上游、版本、subtree 维护约定）。
 - 本 Agent 只读写 `.ai/` 目录，不碰 ComfyUI 运行文件。
-- `../PROJECT_MEMORY/` 预留给跨技能的项目级长期备忘。
+- 跨技能的项目级长期备忘（开发状态、待办、环境约定）统一放在仓库根 `AGENTS.md` 第 9 节，不再单独设目录。
 
 ## 维护约定
 
