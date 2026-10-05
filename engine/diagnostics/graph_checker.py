@@ -18,6 +18,15 @@ class GraphChecker:
 
 
 
+        # graph 由 WorkflowAnalyzer.analyze(include_graph=True) 提供，
+        # 但不是所有调用方都会构建它（如只关心参数体检的场景会传 None）。
+        # 缺 graph 时只跳过图结构检查，不让整个体检崩掉。
+        if graph is None:
+
+            return issues
+
+
+
         nodes=[
 
             n.node_type

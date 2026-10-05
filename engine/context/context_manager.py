@@ -282,6 +282,55 @@ class ContextManager:
 
 
 
+    def get_retrieval_context(self):
+
+
+        """供 retrieval 排序使用的扁平上下文
+
+        get_context() 面向回答生成（给 LLM 看的嵌套结构），
+        而 retrieval.KnowledgeRanker 需要扁平的 workflow_nodes /
+        parameters 才能做「节点是否在当前工作流」的加权，
+        两者结构不同，所以单独提供一个视图而不是改 get_context()。
+
+
+        """
+
+
+        return {
+
+
+            "workflow":
+
+            self.workflow_context.summary(),
+
+
+
+            "conversation":
+
+            self.conversation_context.summary(),
+
+
+
+            "workflow_nodes":
+
+            list(self.workflow_context.nodes),
+
+
+
+            "workflow_type":
+
+            self.workflow_context.task_type,
+
+
+
+            "parameters":
+
+            dict(self.workflow_context.parameters)
+
+        }
+
+
+
     def clear(self):
 
 

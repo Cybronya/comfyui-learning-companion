@@ -38,7 +38,8 @@ class WorkflowAnalyzer:
 
     def analyze(
         self,
-        workflow_json
+        workflow_json,
+        include_graph=False
     ):
 
 
@@ -66,7 +67,7 @@ class WorkflowAnalyzer:
         )
 
 
-        return {
+        result={
 
 
         "nodes":
@@ -92,3 +93,10 @@ class WorkflowAnalyzer:
 
 
         }
+
+        # agent_core 的诊断环节需要 graph 本身（DiagnosticEngine.analyze
+        # 第二个参数），但 graph 不便序列化，所以只在显式要求时附带。
+        if include_graph:
+            result["graph"]=graph
+
+        return result

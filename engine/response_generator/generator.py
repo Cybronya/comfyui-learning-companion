@@ -14,6 +14,12 @@ from .response_template import (
 
 
 
+from .answer_builder import (
+    AnswerBuilder
+)
+
+
+
 class ResponseGenerator:
 
 
@@ -40,10 +46,17 @@ class ResponseGenerator:
 
 
 
+        self.answer_builder = (
+            AnswerBuilder()
+        )
+
+
+
     def generate(
         self,
         question,
-        context
+        context,
+        knowledge=None
     ):
 
 
@@ -54,7 +67,13 @@ class ResponseGenerator:
 
 
 
-        knowledge=""
+        # retrieval 抽出的知识优先；没有传时才回退到 knowledge_loader 按
+        # 问题类型硬编码取卡（KSampler / VAEDecode 两种），覆盖面太窄。
+        knowledge_text = (
+            knowledge
+            if knowledge
+            else ""
+        )
 
 
 
@@ -71,9 +90,9 @@ class ResponseGenerator:
                 )
 
 
-                if data:
+                if data and not knowledge_text:
 
-                    knowledge=data.get(
+                    knowledge_text=data.get(
                         "content",
                         ""
                     )
@@ -88,9 +107,9 @@ class ResponseGenerator:
                 )
 
 
-                if data:
+                if data and not knowledge_text:
 
-                    knowledge=data.get(
+                    knowledge_text=data.get(
                         "content",
                         ""
                     )
@@ -103,7 +122,7 @@ class ResponseGenerator:
 
             context,
 
-            knowledge
+            knowledge_text
 
         )
 
@@ -121,3 +140,25 @@ class ResponseGenerator:
             analysis
 
         }
+
+
+
+    def answer(
+        self,
+        state
+    ):
+
+
+        """不调 LLM，直接把 AgentState 拼成可读回答。
+
+        与 generate() 的区别：generate() 产出的是「给 LLM 的提示词」，
+        适合把本项目当 Agent 框架、后端接自有模型；
+        answer() 产出的是「给人看的回答」，全规则拼装，无需 LLM。
+        """
+
+
+        return self.answer_builder.build(
+
+            state
+
+        )

@@ -12,3 +12,14 @@
 # 防御
 __pycache__/
 *.pyc
+
+# 运行期副产物（都可由源码重新生成，不入库）
+# 上下文与经验：跑测试会写脏，见 AGENTS.md 3.1
+engine/context/context_store.json
+engine/learning_loop/experience_store.json
+# 检索倒排索引：build_index() 可重建
+engine/retrieval/retrieval_store.json
+# 知识图谱：build_graph() 从 Markdown 重新生成
+engine/knowledge_graph/knowledge_graph.json
+# 学习队列：调度器状态快照，随时可重建
+engine/learning_scheduler/learning_queue.md
