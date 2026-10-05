@@ -7,10 +7,11 @@ source: json
 file: comfyui_library/workflows/sd1.5/basic.json
 hash: a95cceecfb5d5225
 coverage: 1
-learned_at: 2026-10-06 01:35:21
+learned_at: 2026-10-06 03:49:53
 nodes: [CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, EmptyLatentImage, KSampler, VAEDecode, SaveImage]
 patterns: [text_to_image]
 missing: []
+parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "sd15_base_model.safetensors", "denoise": 1, "height": 512, "sampler_name": "euler", "scheduler": "normal", "seed": 261660645921551, "steps": 20, "width": 512}
 ---
 
 # sd1.5/basic.json

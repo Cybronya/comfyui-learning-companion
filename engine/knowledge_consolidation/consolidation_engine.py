@@ -45,7 +45,8 @@ class ConsolidationEngine:
         builder=None,
         store=None,
         similarity: float = 0.6,
-        min_frequency: int = 2
+        min_frequency: int = 2,
+        database=None
     ) -> None:
         """
         初始化引擎
@@ -58,6 +59,8 @@ class ConsolidationEngine:
             store: KnowledgeStore
             similarity: 聚类相似度阈值
             min_frequency: 模式最小成员数
+            database: WorkflowDatabase。传入则归纳出的模式写回
+                     patterns（供 pattern_index 与 workflow.patterns 查询）
         """
         self.loader = loader or ExperienceLoader()
         self.miner = miner or PatternMiner(
@@ -66,6 +69,7 @@ class ConsolidationEngine:
         self.statistic = statistic or ParameterStatistics()
         self.builder = builder or KnowledgeBuilder()
         self.store = store or KnowledgeStore()
+        self.database = database
 
     def consolidate(
         self,
@@ -128,6 +132,10 @@ class ConsolidationEngine:
         built = self.builder.build(patterns, grouped)
         knowledge.patterns = built.patterns
 
+        # ③' 模式写回数据库（不传 database 时跳过）
+        if self.database is not None:
+            self._deposit_patterns(built.patterns)
+
         # ④ 全局观察 + 跨模式对比
         knowledge.global_observations.extend(
             self.miner.global_observations(rows)
@@ -143,6 +151,37 @@ class ConsolidationEngine:
             store.save(knowledge)
 
         return knowledge
+
+    def _deposit_patterns(self, patterns) -> None:
+        """
+        归纳出的模式写回 WorkflowDatabase.patterns
+
+        闭环的最后一环：学习 → 库 → 归纳 → 写回库。
+        PatternRepository.add 会同步回填 workflow.patterns，
+        IndexManager 的 pattern_index 也随之一致。幂等：同名覆盖。
+        """
+        try:
+            for pattern in patterns:
+                description = (
+                    f"{pattern.workflow_type or '未分类'} · "
+                    f"{pattern.frequency} 个样本 · {pattern.level}"
+                )
+                if pattern.recommendations:
+                    description += (
+                        "；" + pattern.recommendations[0]
+                    )
+                self.database.patterns.add(
+                    pattern.name,
+                    pattern.members,
+                    description=description,
+                )
+            print(
+                f"已把 {len(patterns)} 个模式写回数据库"
+                "（comfyui_library.database）"
+            )
+        except Exception as e:
+            # 写回失败不影响归纳产出本身
+            print(f"模式写回数据库失败: {e}")
 
     # ---------- 报告 ----------
 

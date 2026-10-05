@@ -30,6 +30,7 @@ frontmatter 只用标准库解析，支持两种写法（本项目实际用到�
 不需要完整的 YAML 语法。
 """
 
+import json
 import re
 from typing import List, Dict, Any
 
@@ -156,6 +157,13 @@ def parse_frontmatter(front: str) -> Dict[str, Any]:
         match = _INLINE_LIST.match(raw)
         if match:
             result[key] = _split_inline_list(match.group(1))
+        elif raw.startswith("{") and raw.endswith("}"):
+            # 行内 JSON：dict 值（如 parameters）。JSON 自带定界，
+            # 逗号 / 引号 / 冒号都不会像行内列表那样切错
+            try:
+                result[key] = json.loads(raw)
+            except ValueError:
+                result[key] = raw
         elif raw == "":
             result[key] = ""
         else:
@@ -205,6 +213,12 @@ def build_frontmatter(data: Dict[str, Any]) -> str:
             # 含逗号或引号的元素加引号，否则读回时会被切错
             rendered = [_quote_item(item) for item in value]
             lines.append(f"{key}: [{', '.join(rendered)}]")
+        elif isinstance(value, dict):
+            # 行内 JSON，sort_keys 保稳定（git diff 干净）
+            lines.append(
+                f"{key}: "
+                + json.dumps(value, ensure_ascii=False, sort_keys=True)
+            )
         elif isinstance(value, bool):
             lines.append(f"{key}: {str(value).lower()}")
         elif isinstance(value, float):
@@ -247,6 +261,10 @@ def to_markdown(record: LearningRecord) -> str:
         # 参数体检结论进 frontmatter：knowledge_consolidation 要靠它
         # 归纳「这一类 workflow 的常见问题」，只放正文的话机器读不到
         "problems": record.diagnostic_issues or None,
+        # 参数与发现进 frontmatter：经 Markdown 往返后不再丢
+        # （否则存量迁移到数据库的记录没有参数，归纳无从统计）
+        "parameters": record.parameters or None,
+        "discoveries": record.discoveries or None,
         "error": record.error or None,
     })
 
@@ -381,6 +399,11 @@ def from_markdown(text: str) -> LearningRecord:
         patterns=_as_list(data.get("patterns")),
         missing_nodes=_as_list(data.get("missing")),
         diagnostic_issues=_as_list(data.get("problems")),
+        parameters=(
+            data["parameters"]
+            if isinstance(data.get("parameters"), dict) else {}
+        ),
+        discoveries=_as_list(data.get("discoveries")),
         error=data.get("error", ""),
         learned_at=data.get("learned_at", ""),
     )

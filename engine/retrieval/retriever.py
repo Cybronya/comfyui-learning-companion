@@ -66,7 +66,8 @@ class KnowledgeRetriever:
         """
         把 {主题: [条目]} 形式的字典包装成 KnowledgeIndex
         """
-        index = KnowledgeIndex(self.index_path)
+        # auto_load=False：dict 是独立知识源，不得混入磁盘索引
+        index = KnowledgeIndex(self.index_path, auto_load=False)
         for key, items in knowledge.items():
             for item in items:
                 index.add(key, item)

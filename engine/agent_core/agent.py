@@ -42,7 +42,8 @@ class ComfyUIAgent:
         retriever=None,
         generator=None,
         learner=None,
-        config: Dict = None
+        config: Dict = None,
+        auto_modules: bool = True
     ) -> None:
         """
         初始化 Agent
@@ -56,7 +57,15 @@ class ComfyUIAgent:
             generator: ResponseGenerator 实例
             learner: knowledge_evolution 模块（用于 evolve()，不在 ask 链路上）
             config: 配置覆盖项
+            auto_modules: 未传入的模块自动装配真实实现（路径取 config）。
+                          **默认开**：全 None 的 Agent 六个阶段全部跳过，
+                          ask_text 只会回「暂时无法生成回答」——
+                          2026-10-06 实跑踩到：直接 ComfyUIAgent() 的人
+                          拿到的是静默空壳。塞假模块测试不受影响
+                          （传了就不动）；确实要空壳时显式传 False
         """
+        self.config = merge_config(config)
+
         self.parser = parser
         self.analyzer = analyzer
         self.context = context
@@ -65,11 +74,59 @@ class ComfyUIAgent:
         self.generator = generator
         self.learner = learner
 
-        self.config = merge_config(config)
+        if auto_modules and (
+            self.parser is None or self.analyzer is None
+            or self.context is None or self.diagnostics is None
+            or self.retriever is None or self.generator is None
+        ):
+            self._fill_default_modules()
 
         # 最近一次解析结果，供不带 workflow 的提问复用
         self._last_workflow = None
         self._last_workflow_data = None
+
+    def _fill_default_modules(self) -> None:
+        """
+        补齐未传入的模块（与 test_agent_core.build_real_agent 同一接线，
+        存储路径一律取 config，便于测试覆盖成临时目录）
+        """
+        from ..context import ContextManager
+        from ..workflow_parser import WorkflowParser, NodeKnowledgeLoader
+        from ..workflow_analyzer import WorkflowAnalyzer
+        from ..diagnostics import DiagnosticEngine
+        from ..retrieval import KnowledgeRetriever
+        from ..response_generator import ResponseGenerator
+        from ..knowledge_evolution import evolve
+
+        if self.context is None:
+            self.context = ContextManager(
+                self.config["context_store_path"]
+            )
+
+        if self.parser is None:
+            loader = NodeKnowledgeLoader(self.config["knowledge_dir"])
+            self.parser = WorkflowParser(loader, context=self.context)
+
+        if self.analyzer is None:
+            self.analyzer = WorkflowAnalyzer()
+
+        if self.diagnostics is None:
+            self.diagnostics = DiagnosticEngine()
+
+        if self.retriever is None:
+            self.retriever = KnowledgeRetriever()
+            self.retriever.build_index(
+                index_path=self.config["retrieval_index_path"],
+                knowledge_dir=self.config["knowledge_dir"],
+                experience_store=self.config["experience_store"],
+                evolution_store=self.config["evolution_store"],
+            )
+
+        if self.generator is None:
+            self.generator = ResponseGenerator()
+
+        if self.learner is None:
+            self.learner = evolve
 
     # ---------- 主入口 ----------
 

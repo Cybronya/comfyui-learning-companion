@@ -1,0 +1,38 @@
+{
+    "CheckpointLoaderSimple": [
+        "sd1.5/basic.json",
+        "sd1.5/lora.png",
+        "sd1.5/text-to-image-workflow.png"
+    ],
+    "CLIPTextEncode": [
+        "sd1.5/basic.json",
+        "sd1.5/lora.png",
+        "sd1.5/text-to-image-workflow.png"
+    ],
+    "EmptyLatentImage": [
+        "sd1.5/basic.json",
+        "sd1.5/lora.png",
+        "sd1.5/text-to-image-workflow.png"
+    ],
+    "KSampler": [
+        "sd1.5/basic.json",
+        "sd1.5/lora.png",
+        "sd1.5/text-to-image-workflow.png"
+    ],
+    "VAEDecode": [
+        "sd1.5/basic.json",
+        "sd1.5/lora.png",
+        "sd1.5/text-to-image-workflow.png"
+    ],
+    "SaveImage": [
+        "sd1.5/basic.json",
+        "sd1.5/lora.png",
+        "sd1.5/text-to-image-workflow.png"
+    ],
+    "LoraLoader": [
+        "sd1.5/lora.png"
+    ],
+    "MarkdownNote": [
+        "sd1.5/lora.png"
+    ]
+}

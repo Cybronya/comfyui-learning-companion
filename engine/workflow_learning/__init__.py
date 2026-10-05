@@ -67,6 +67,14 @@ from .markdown_format import (
     split_frontmatter,
 )
 from .batch_learner import BatchWorkflowLearner
+from .database_bridge import (
+    STATUS_LEARNED,
+    workflow_record_of,
+    experience_args_of,
+    sync_record,
+    sync_all,
+    is_learned,
+)
 from .paths import (
     PROJECT_ROOT,
     WORKFLOWS_DIR,
@@ -84,6 +92,7 @@ from .paths import (
 def create_batch_learner(
     store_root: str = None,
     verbose: bool = True,
+    database=None,
     **modules
 ) -> BatchWorkflowLearner:
     """
@@ -94,6 +103,8 @@ def create_batch_learner(
                      `comfyui_library/workflows/learning/`
                      （仅测试需要隔离时传）
         verbose: 是否打印进度
+        database: WorkflowDatabase；传入则学习结果镜像进库
+                  （WorkflowDatabase() 即默认库，测试传临时路径的库）
         **modules: analyzer / retriever / parser / diagnostics /
                    explorer / gap_detector / knowledge
 
@@ -107,6 +118,7 @@ def create_batch_learner(
         store=LearningStore(store_root),
         scanner=WorkflowScanner(),
         verbose=verbose,
+        database=database,
     )
 
 
@@ -123,6 +135,12 @@ __all__ = [
     "LearningStore",
     "BatchWorkflowLearner",
     "create_batch_learner",
+    "STATUS_LEARNED",
+    "workflow_record_of",
+    "experience_args_of",
+    "sync_record",
+    "sync_all",
+    "is_learned",
     "to_markdown",
     "from_markdown",
     "parse_frontmatter",

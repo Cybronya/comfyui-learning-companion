@@ -1,0 +1,70 @@
+{
+    "CheckpointLoaderSimple": {
+        "category": "",
+        "used_in": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "usage_count": 3
+    },
+    "CLIPTextEncode": {
+        "category": "",
+        "used_in": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "usage_count": 3
+    },
+    "EmptyLatentImage": {
+        "category": "",
+        "used_in": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "usage_count": 3
+    },
+    "KSampler": {
+        "category": "",
+        "used_in": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "usage_count": 3
+    },
+    "VAEDecode": {
+        "category": "",
+        "used_in": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "usage_count": 3
+    },
+    "SaveImage": {
+        "category": "",
+        "used_in": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "usage_count": 3
+    },
+    "LoraLoader": {
+        "category": "",
+        "used_in": [
+            "sd1.5/lora.png"
+        ],
+        "usage_count": 1
+    },
+    "MarkdownNote": {
+        "category": "",
+        "used_in": [
+            "sd1.5/lora.png"
+        ],
+        "usage_count": 1
+    }
+}

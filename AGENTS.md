@@ -82,7 +82,9 @@ GitHub 走本地代理 **`127.0.0.1:3067`**（Karing）。
 
 ### 3.4 测试
 
-测试脚本在 `engine/test_*.py`，共 **16 个**。**必须加 `-X utf8`**（控制台默认 GBK，中文输出乱码）。
+测试脚本在 `engine/test_*.py`，共 **18 个**（`test_database.py` /
+`test_database_integration.py` 测的是 `comfyui_library/database` 及其引擎接入）。
+**必须加 `-X utf8`**（控制台默认 GBK，中文输出乱码）。
 
 **6 个旧测试用裸导入**（`from workflow_parser.parser import ...`），
 从仓库根用 `python -m engine.xxx` 会 `ModuleNotFoundError`，**只能在 `engine/` 目录下跑**：
@@ -97,7 +99,7 @@ python -X utf8 test_context.py
 python -X utf8 test_response.py
 ```
 
-**10 个用 `from engine.xxx` 包导入**，**从仓库根跑**：
+**12 个用包导入（`from engine.xxx` / `from comfyui_library.database`）**，**从仓库根跑**：
 
 ```powershell
 cd "F:\Program Files\ComfyUI"
@@ -111,9 +113,11 @@ python -X utf8 -m engine.test_workflow_learning
 python -X utf8 -m engine.test_knowledge_consolidation
 python -X utf8 -m engine.test_learning_scheduler
 python -X utf8 -m engine.test_knowledge_graph
+python -X utf8 -m engine.test_database
+python -X utf8 -m engine.test_database_integration
 ```
 
-改 `engine/` 下的模块后，16 个测试全跑一遍（6 个在 `engine/` 目录 + 10 个从根目录）。
+改 `engine/` 下的模块后，18 个测试全跑一遍（6 个在 `engine/` 目录 + 12 个从根目录）。
 
 改动引擎代码后，至少跑一遍相关的 `test_*.py`，确认 exit=0 再提交。
 
@@ -129,6 +133,17 @@ skills/
   _core/                      Skill 框架骨架（🔶 占位）
   comfyui-learning/           主技能 + 11 个子技能（规范 + schema + 模板 + 工具）
 comfyui_library/
+  database/                   **长期知识存储底座**（2026-10-06 新增，只存与查、不学习）
+    models.py                 WorkflowRecord / NodeRecord / PatternRecord / ExperienceRecord
+    database.py               WorkflowDatabase：JSON 持久化（utf-8-sig 读 / version 守卫 / 缺键回填）
+    workflow_repository.py    workflow 增删查；add/delete 自动对账节点反向索引 used_in
+    node_repository.py        节点 → used_in（register 支持补 category）
+    pattern_repository.py     模式登记；回填 workflow.patterns（互引防漂移）
+    experience_repository.py  学习经验（同 workflow_id 最新覆盖）
+    index_manager.py          三个派生索引的构建与落盘（save_all() 可重建）
+    storage/                  workflow_database.json + workflow/node/pattern_index.json
+                              （此处 node_index.json 是**节点使用索引**，与
+                              knowledge/nodes/node_index.json 知识卡索引同名不同物）
   knowledge/nodes/            节点知识卡（6 张）+ node_index.json
   knowledge/patterns/         Pattern 卡（2 张，手写）
     _consolidated/            **归纳出的模式**（自动生成，勿手改）
@@ -153,11 +168,14 @@ engine/                       可执行层（v0.5 起）
   learning_loop/              对比 → 改进分析 → 经验积累
   knowledge_evolution/        从「参数改动记录」归纳 → 改参数会怎样（2026-10-05）
   knowledge_consolidation/    从「完整 workflow」归纳 → 这类流程长什么样（2026-10-06）
+                              （ExperienceLoader 优先读 WorkflowDatabase.experiences）
   retrieval/                  关键词召回 + 排序 → 喂给回答生成器（2026-10-05 新增）
   agent_core/                 总控：把上面模块编成六阶段 Agent（2026-10-06 新增）
   autonomous_learning/        自主学习：给任务，Agent 自己读懂未知 workflow（2026-10-06 新增）
   workflow_learning/          批量学习：扫描目录 → 学 → 记 → 幂等重跑（2026-10-06 新增）
+                              （database_bridge.py：学习记录镜像进 comfyui_library/database）
   learning_scheduler/         学习调度：定优先级 → 排队 → 执行 → 状态可续跑（2026-10-06 新增）
+                              （判「已学」先查数据库 status，库里没有再回退 Markdown）
   knowledge_graph/            知识图谱：把 workflow/节点/模式/问题连成网，供跨条目查询（2026-10-06 新增）
   workflow_index_manager.py   workflow / pattern 索引管理
 ```
@@ -252,10 +270,21 @@ engine/                       可执行层（v0.5 起）
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
 | 知识卡格式对齐 | 🔶 8 张 v0.2 遗产卡（`skills/comfyui-learning/knowledge/`）内容有效但**格式先于 v0.3.1 规范**，待迁移 |
 
+**数据库层（`comfyui_library/database/`，2026-10-06 新增）**
+
+| 内容 | 状态 |
+|---|---|
+| `WorkflowDatabase` 持久化核心 | ✅ utf-8-sig 读 / `version` 守卫 / 缺键回填 / 非法 JSON 带文件名报错；默认落 `database/storage/workflow_database.json`，`summary()` 一行摘要 |
+| 四仓库 | ✅ workflow（增删查 + add/delete 对账 used_in + patterns 并集合并 + content_hash）/ node（register 带 category，只填空不覆盖）/ pattern（add 回填 workflow.patterns，悬空成员可见）/ experience（同 workflow_id 最新覆盖 + delete + `data` 结构化载荷） |
+| `IndexManager` | ✅ 三个派生索引构建 + 落盘（workflow_index / node_index / pattern_index，`save_all()` 可重建） |
+| 测试 | ✅ `engine/test_database.py`（23 组）+ 引擎接库集成 `engine/test_database_integration.py`（14 组），均从仓库根跑、全走 TemporaryDirectory |
+
 **引擎层（`engine/`，v0.5 实装）**
 
 14 个子包全部落地并有 `test_*.py` 覆盖；16 个测试脚本全部 exit=0（2026-10-06 复测，
-6 个在 `engine/` 目录 + 10 个从仓库根，见 3.4）：
+6 个在 `engine/` 目录 + 10 个从仓库根，见 3.4）；同日新增 `comfyui_library/database/`
+存储底座，配套 `test_database.py`（23 组）与引擎接库集成测试
+`test_database_integration.py`（14 组）：
 
 | 模块 | 能力 | 测试 |
 |---|---|---|
@@ -267,13 +296,16 @@ engine/                       可执行层（v0.5 起）
 | `response_generator/` | **双产出，无 LLM 依赖**：`generate()` 出给 LLM 的提示词；`answer(state)` 出给人读的 Markdown（全规则拼装）。新增 `AnswerBuilder`（结论/工作流现状/诊断分组/相关知识/下一步五段式）+ `KnowledgeDistiller`（把 241 行的知识卡按问题蒸馏成 3 段要点）| `test_response.py`、`test_answer.py`（10 组）|
 | `learning_loop/` | `workflow_compare`（节点 / 参数差异）+ `improvement_analyzer`（改动影响推断）+ `experiment_tracker`（经验持久化 / 检索 / 按类型与标签过滤）；附 README / ARCHITECTURE / USAGE_EXAMPLE | `test_learning_loop.py` |
 | `knowledge_evolution/` | **从「参数改动记录」归纳**：`ExperienceCollector`（learning_loop 经验归一化 + 节点清单补全）→ `PatternMiner`（节点组合频次 + 参数区间统计）→ `KnowledgeGenerator`（可读知识 + 风险提示）→ `KnowledgeStore`；主入口 `evolve()`。**局限**：`mine()` 用节点集合精确匹配（`tuple(sorted(set(nodes)))`），节点差一个就归不到同组，`knowledge_consolidation` 的聚类已改进但未回填到此 | `test_knowledge_evolution.py`（8 组）|
-| `knowledge_consolidation/` | **从「完整 workflow」归纳**：`ExperienceLoader`（读 learning/*.md）→ `PatternMiner`（按 workflow_type 分组 + **Jaccard 相似度贪心聚类**，容忍额外节点、忽略 Note 类注释节点）→ `ParameterStatistics`（**逐模式统计**，含中位数/集中度，`seed` 等噪声参数排除）→ `KnowledgeBuilder`（**常见问题按骨架归并聚合** + 建议 + 跨模式对比，阈值复用 RISK_RULES）→ `KnowledgeStore`（Markdown 落盘到 `knowledge/patterns/_consolidated/`）；主入口 `ConsolidationEngine.consolidate()` | `test_knowledge_consolidation.py`（21 组）|
+| `knowledge_consolidation/` | **从「完整 workflow」归纳**：`ExperienceLoader`（读 learning/*.md）→ `PatternMiner`（按 workflow_type 分组 + **Jaccard 相似度贪心聚类**，容忍额外节点、忽略 Note 类注释节点）→ `ParameterStatistics`（**逐模式统计**，含中位数/集中度，`seed` 等噪声参数排除）→ `KnowledgeBuilder`（**常见问题按骨架归并聚合** + 建议 + 跨模式对比，阈值复用 RISK_RULES）→ `KnowledgeStore`（Markdown 落盘到 `knowledge/patterns/_consolidated/`）；主入口 `ConsolidationEngine.consolidate()`；**接库**：`ExperienceLoader(database=)`
+优先读 `experiences.data` 结构化载荷，库空回退 Markdown | `test_knowledge_consolidation.py`（21 组）|
 | `retrieval/` | `KnowledgeIndex`（倒排索引 + 去重）→ `KnowledgeMatcher`（10 主题，中英混排 + 节点类型别名 + 症状词）→ `KnowledgeRanker`（工作流命中 +10 / 类型可信度 / 症状多成因）→ `KnowledgeRetriever.retrieve()` + `format_for_prompt()`；索引可从 `comfyui_library/knowledge` + 两个 store 自动构建 | `test_retrieval.py`（10 组）|
 | `workflow_index_manager.py` | workflow / pattern 索引的增删改查 | 工具脚本，无单测 |
 | `agent_core/` | **总控**：`AgentState`（各阶段产物 + `stages_run`/`stages_skipped`/`errors`/`answer`）+ `AgentPipeline`（阶段链，单阶段失败隔离）+ `DEFAULT_CONFIG`（阶段开关，未知键报错）+ `ComfyUIAgent.ask()`（返回 AgentState）/ `ask_text()`（直接返回中文回答字符串）。六阶段：context → parse → analyze → diagnose → retrieve → respond。离线能力 `evolve()` / `build_index()` / `set_workflow()` | `test_agent_core.py`（16 组，含真实模块端到端）|
 | `autonomous_learning/` | **自主学习**：`TaskPlanner`（计划真依赖任务意图与节点特征）+ `WorkflowExplorer`（**推导 analyzer 不提供的生成流程链** Model→Condition→Latent→Sampling→Decode→Output）+ `KnowledgeGapDetector`（**两档缺口**：完全无知识 / 仅同族通用知识，别名感知）+ `SpecialAnalyzer`（执行计划里的专项步骤：ControlNet/LoRA/参数区间/复现基线/denoise 语义等）+ `Reflection`（量化自评 + 核心缺口封顶等级）+ `LearningReport`（渲染成人读报告）。主入口 `AutonomousLearner.learn()` / `learn_text()` | `test_autonomous_learning.py`（12 组，含真实 workflow 与未知节点两例）|
-| `workflow_learning/` | **批量学习管理**：`WorkflowScanner`（`.json` + `.png`，**默认跳过 `_workflow.json`/`_prompt.json` 伴生文件与 `_learning/` 状态目录**；键用相对路径避免同名冲突）+ `LearningStore`（**Markdown 后端**，一个 workflow 一个 `.md`，内容指纹 sha256 判定重学，失败记录不算已学，`prune_missing` 清理失效记录，`node_frequency` 供挖模式用，自动维护 `index.md`）+ `markdown_format.py`（frontmatter 序列化/解析，仅标准库）+ `WorkflowLearner.learn()`（单文件：analyzer + explorer + retriever + gap_detector + diagnostics）+ `BatchWorkflowLearner.learn_folder()`（批量入口，幂等） | `test_workflow_learning.py`（17 组，含幂等、内容变更重学、grep 可检索性）|
-| `learning_scheduler/` | **学习调度**（只排队与状态，不重复实现学习逻辑）：`LearningTask`（key 用相对路径 + 状态机 pending/running/completed/failed/skipped/**abandoned**）+ `PriorityCalculator`（**内容信号主导**：节点数 +1/个、缺卡节点 +8/个、未见过的节点类型 +4/种、曾失败 +2/次、内容已变更 +5；文件名关键词缩放到 1 倍只作 tie-break）+ `TaskQueue`（优先级降序 + 稳定同分、**`retain_keys()` 增量合并而非 reset**、重试上限用尽转 abandoned 隔离）+ `SchedulerState`（从队列**计算**出来的投影，不独立维护）+ `ScheduleStore`（**Markdown 队列**，含 retry/错误/排序依据，可续跑）+ `LearningScheduler.build_schedule()/run()/resume()` | `test_learning_scheduler.py`（16 组，含重试跨次生效、异常隔离、歧义名不猜）|
+| `workflow_learning/` | **批量学习管理**：`WorkflowScanner`（`.json` + `.png`，**默认跳过 `_workflow.json`/`_prompt.json` 伴生文件与 `_learning/` 状态目录**；键用相对路径避免同名冲突）+ `LearningStore`（**Markdown 后端**，一个 workflow 一个 `.md`，内容指纹 sha256 判定重学，失败记录不算已学，`prune_missing` 清理失效记录，`node_frequency` 供挖模式用，自动维护 `index.md`）+ `markdown_format.py`（frontmatter 序列化/解析，仅标准库）+ `WorkflowLearner.learn()`（单文件：analyzer + explorer + retriever + gap_detector + diagnostics）+ `BatchWorkflowLearner.learn_folder()`（批量入口，幂等）；**接库**：`database=`
+  传入时经 `database_bridge` 把每条记录镜像进 WorkflowDatabase，`sync_database()` 迁移存量 | `test_workflow_learning.py`（17 组，含幂等、内容变更重学、grep 可检索性）|
+| `learning_scheduler/` | **学习调度**（只排队与状态，不重复实现学习逻辑）：`LearningTask`（key 用相对路径 + 状态机 pending/running/completed/failed/skipped/**abandoned**）+ `PriorityCalculator`（**内容信号主导**：节点数 +1/个、缺卡节点 +8/个、未见过的节点类型 +4/种、曾失败 +2/次、内容已变更 +5；文件名关键词缩放到 1 倍只作 tie-break）+ `TaskQueue`（优先级降序 + 稳定同分、**`retain_keys()` 增量合并而非 reset**、重试上限用尽转 abandoned 隔离）+ `SchedulerState`（从队列**计算**出来的投影，不独立维护）+ `ScheduleStore`（**Markdown 队列**，含 retry/错误/排序依据，可续跑）+ `LearningScheduler.build_schedule()/run()/resume()`；**接库**：判「已学」先查
+  WorkflowDatabase.status（库无记录回退 Markdown），run 后镜像进库 | `test_learning_scheduler.py`（16 组，含重试跨次生效、异常隔离、歧义名不猜）|
 | `knowledge_graph/` | **知识图谱**：`KnowledgeGraph`（**邻接索引** `_out`/`_in`，取邻居 O(出度) 而非 O(全部边)；同 id 顶点**属性合并**而非覆盖；加边按三元组去重）+ 8 种顶点（workflow/node/pattern/card/problem/solution/family/concept）+ 11 种关系（contains/requires/member_of/matches/has_problem/problem_in/suggests/has_card/covers/co_used/has_topic）+ `GraphBuilder`（从 LearningStore + KnowledgeStore + node_index.json 建图；**共现两阶段 + 阈值**，超大 workflow 排除；**未匹配的模式成员可见**不静默丢弃）+ `GraphQuery`（`workflows_using` 支持不完整节点名、`paths` 多跳 BFS、`neighborhood`、`nodes_without_cards` 按使用次数排建卡优先级、`describe/render` 人读输出）+ `GraphStore`（JSON 存读，**边属性不丢**、版本守卫、悬空边可见）。**顶点 id 带类型前缀**（`node:KSampler`）防同名跨类型覆盖 | `test_knowledge_graph.py`（26 组，含真实库端到端、歧义名不猜、悬空边往返）|
 
 **两条新入口**（接在既有四条之后）：
@@ -306,6 +338,19 @@ engine/                       可执行层（v0.5 起）
     qy.nodes_without_cards()                 # 该先给哪些节点建卡
     qy.paths("KSampler", "ControlNetApply")  # 两者什么关系（多跳）
 ```
+
+存储底座（不学习、只存与查；2026-10-06 新增，同日完成引擎接入）：
+
+    Workflow Files
+      ↓ workflow_learning（LearningStore 记录正身 + database_bridge 镜像）
+    WorkflowDatabase（comfyui_library/database/storage/workflow_database.json）
+      ├─ workflows    WorkflowRepository    workflow 增删查（status + content_hash 判重学）
+      ├─ nodes        NodeRepository        节点 → used_in
+      ├─ patterns     PatternRepository     模式 ↔ workflow（回填互引）
+      ├─ experiences  ExperienceRepository  学习经验（含 data 结构化载荷，归纳引擎吃它）
+      └─ indexes      IndexManager          workflow/node/pattern_index.json（派生，save_all 重建）
+      ↓ 消费方
+    learning_scheduler（查库判已学）／knowledge_consolidation（读库归纳）
 
 引擎主链路（由 `agent_core` 串起，2026-10-06 首次端到端跑通）：
 
@@ -413,6 +458,66 @@ knowledge_evolution 知识演化、retrieval 知识检索、**agent_core 总控*
 - `GraphStore.save` 丢 `properties`、没有 `load`、没有版本号 → builder 写在边上的
   count/strength 全蒸发，且旧结构文件会被当成新结构读
 
+**同日新增存储底座 `comfyui_library/database/`（Workflow Knowledge Database）**：
+分工边界是「engine 管怎么学，database 管学到了什么」—— 只负责 workflow / node /
+pattern / experience 四类数据的保存与统一查询，不含任何学习逻辑。
+落地时相对设计稿修了 9 处：
+
+- `__init__.py` 漏导出 `IndexManager`；storage/ 列了三个索引文件却只有
+  `build_workflow_index()` 一个方法还不落盘 → 补齐三索引构建 + `save_all()`
+- 读 JSON 用 utf-8 → 改 `utf-8-sig`（硬约定 3.3）
+- 数据文件无版本号 → 加 `version` 守卫（GraphStore 踩过的坑）
+- `load()` 不回填缺键 → 旧文件缺 section 会 KeyError，改为 setdefault 回填
+- `add()` 只写 workflow 自身字段 → `workflow.nodes` 与 `node.used_in`
+  两份状态必然漂移，改为 add/delete 时自动对账反向索引
+- `pattern.workflows` 与 `workflow.patterns` 互为引用各写各的 →
+  PatternRepository.add 回填，WorkflowRepository.add 对 patterns 并集合并防抹掉
+- `NodeRecord.category` 定义了但 register 没处填（「声明了但没人填」）→
+  register 加可选 category（只填空，不覆盖已有值）
+- 标题「增删查」却没有 delete → 补 WorkflowRepository.delete（连带清 used_in）
+  与 ExperienceRepository.delete；删 workflow 不连带删 patterns/experiences，
+  悬空保持可见（与 knowledge_graph 对悬空边同一处理）
+- 便捷入口：WorkflowDatabase 直接挂 `.workflows / .nodes / .patterns /
+  .experiences / .indexes`，不必手工 new 仓库
+
+**同日完成引擎接库（database 成为数据层枢纽）**：新增
+`engine/workflow_learning/database_bridge.py` 作为 LearningRecord ↔ 库的翻译层，
+三个模块接入（database 参数不传则行为与旧版完全一致，显式开启）：
+
+- `workflow_learning`：`BatchWorkflowLearner(…, database=)` / `create_batch_learner(database=)`
+  在 Markdown 落盘后把记录镜像进库（workflow 记录 + 经验结构化载荷）；
+  `sync_database()` 对存量记录做一次性迁移。skipped 记录不镜像
+- `learning_scheduler`：判「已学」先查库的 `workflow.status + content_hash`
+  （`database_bridge.is_learned`：库里没有的 key 返回 None → 回退查 Markdown，不猜；
+  status 非 learned 或指纹对不上 → 判需重学）；`run()` 学完写 Markdown 后同样镜像进库
+- `knowledge_consolidation`：`ExperienceLoader(database=)` / `create_consolidation_engine(database=)`
+  优先从 `experiences.data` 的结构化载荷读（只取 completed；库里一条没有时回退
+  读 Markdown 并打印提示，不静默切换）
+
+接库时对模型的两处扩展：`WorkflowRecord` 补 `content_hash`（调度器判重学必需，
+只看 status 会让改了参数的文件永远不重学）；`ExperienceRecord` 补 `data` 载荷
+（归纳引擎要的是 parameters / problems 等结构化字段，content 只是给人看的摘要）。
+
+接库后发现的问题，已在**同日真实链路实跑**（用 sd1.5 真实 workflow 把
+学习 → 库 → 调度 → 归纳 → 图谱 → 问答全环节过一遍）中修掉四个：
+
+- `create_batch_learner()` 默认产出的 `WorkflowLearner` 是**空壳**
+  （六模块全 None），学出的记录没有类型 / 参数 / 知识覆盖 / 体检 ——
+  现在默认自动装配真实模块（`auto_modules=False` 保留空壳给最小依赖测试）
+- `ComfyUIAgent()` 同病：六阶段全部跳过，`ask_text` 永远回
+  「暂时无法生成回答」—— 现在默认自动装配（存储路径一律取 config，
+  测试塞假模块不受影响）
+- `KnowledgeRetriever(dict)` 会把磁盘上的真实 `retrieval_store.json`
+  一并加载进 dict 知识库（`KnowledgeIndex` 构造即读盘）—— dict 被磁盘
+  内容污染，此前测试能过纯属侥幸。`KnowledgeIndex` 加 `auto_load` 开关，
+  dict 模式不再读盘
+- `WorkflowRepository` 存的记录缺 `id` 字段（`all()` 出来的记录说不清自己是谁）
+
+另把 `parameters` / `discoveries` 写进 Markdown frontmatter（dict 用行内 JSON），
+**Markdown 往返不再丢字段**。真实库 3 条记录已带完整 frontmatter 重学并迁移，
+归纳首次产出参数统计（宽度 / 高度 / 步数的中位数与区间），
+模式已写回数据库（`pattern_index` 1 条，`workflow.patterns` 同步回填）。
+
 `engine/__init__.py` 仍只导出 `LearningEngine`，未对外暴露 `ComfyUIAgent`（待办第 1 项）。
 Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
 
@@ -432,7 +537,9 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
    已有该能力，但学习记录已统一到 `comfyui_library/workflows/learning/*.md`，
    manifest 应改为读 `learning/index.md`（避免两套 learned 状态不一致）
 5. **补齐 Phase 3-5**：`knowledge_writer`（产出 `knowledge/workflows/` 五件套）→ `pattern_manager`
-   （`pattern_index.json` 至今未建立，是 SKILL.md 要求的三索引之一）
+   （`pattern_index.json` 至今未建立，是 SKILL.md 要求的三索引之一。
+   注意 2026-10-06 起 `comfyui_library/database/storage/` 下有一个同名
+   `pattern_index.json`，那是数据库的派生查询索引，不是本条要的 Skill 层索引）
 6. **归纳知识接进检索**：`knowledge_consolidation` 的产出（`knowledge/patterns/_consolidated/`）
    目前是独立目录，`retrieval._index_pattern_cards` 只扫 `patterns/*.md`，
    不扫子目录 —— 所以归纳出的模式**检索不到**。需让 retriever 递归或显式索引该目录
@@ -476,6 +583,12 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
     「未见过的节点类型」与 `knowledge_graph` 的 `co_used` 共现都在数节点对。
     数据源不同（前者扫待学文件、后者扫已学记录）可以并存，
     但两边的「新颖度」口径应共享一份定义，否则长期发散（同待办 7 的性质）
+20. **引擎接库收尾**（2026-10-06 已打通：workflow_learning 写库镜像 /
+    scheduler 查库判已学 / consolidation 读库并写回模式，真实库已完成迁移，
+    剩两件）：
+    - `agent_core` 的 retrieve/respond 仍未查库；`knowledge_graph` 建图仍直读
+      Markdown，未消费 `database/storage/` 的三个派生索引
+    - 三个派生索引与 retrieval 倒排索引的口径统一（同待办 7 的性质）
 
 ### 9.4 维护规则
 

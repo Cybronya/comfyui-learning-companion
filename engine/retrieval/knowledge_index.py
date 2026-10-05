@@ -26,16 +26,28 @@ class KnowledgeIndex:
     关键词倒排索引
     """
 
-    def __init__(self, path: str = "engine/retrieval/retrieval_store.json") -> None:
+    def __init__(
+        self,
+        path: str = "engine/retrieval/retrieval_store.json",
+        auto_load: bool = True
+    ) -> None:
         """
         初始化索引
 
         Args:
             path: 索引文件路径
+            auto_load: 是否自动加载该路径的已有文件。
+                       **传 False 的场景**：dict 知识库包装成索引时
+                       （KnowledgeRetriever._dict_to_index）——
+                       否则磁盘上的真实索引会混进 dict，两条数据源
+                       悄悄合并（2026-10-06 实跑踩到：dict 测试因
+                       真实 retrieval_store.json 里有 pattern 卡而
+                       多召回两条，此前能过纯属侥幸）
         """
         self.path = Path(path)
         self.index: Dict[str, List[Dict]] = {}
-        self.load()
+        if auto_load:
+            self.load()
 
     def load(self) -> None:
         """

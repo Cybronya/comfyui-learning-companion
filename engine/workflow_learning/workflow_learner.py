@@ -40,7 +40,8 @@ class WorkflowLearner:
         diagnostics=None,
         explorer=None,
         gap_detector=None,
-        knowledge=None
+        knowledge=None,
+        auto_modules: bool = True
     ) -> None:
         """
         初始化学习器
@@ -53,6 +54,13 @@ class WorkflowLearner:
             explorer: autonomous_learning.WorkflowExplorer（复用流程链推导）
             gap_detector: autonomous_learning.KnowledgeGapDetector
             knowledge: 已知知识；None 时从 retriever 索引取
+            auto_modules: 未传入的模块自动装配真实实现。
+                          **默认开**：全 None 的 learner 是个空壳，
+                          学出的记录没有类型 / 参数 / 知识覆盖 / 体检，
+                          而调用方很难察觉这种静默降级 ——
+                          2026-10-06 实跑发现 create_batch_learner()
+                          默认产出的就是这种空壳，真实库里的 3 条
+                          学习记录全是降级版。只想测最小依赖时显式传 False
         """
         self.analyzer = analyzer
         self.retriever = retriever
@@ -62,9 +70,58 @@ class WorkflowLearner:
         self.gap_detector = gap_detector
         self.knowledge = knowledge
 
+        if auto_modules and (
+            self.analyzer is None or self.retriever is None
+            or self.parser is None or self.diagnostics is None
+            or self.explorer is None or self.gap_detector is None
+        ):
+            self._fill_default_modules()
+
         # 最近一次分析得到的图对象，供 _fill_diagnostics 用。
         # 不放进 LearningRecord —— graph 不可序列化
         self._graph = None
+
+    def _fill_default_modules(self) -> None:
+        """
+        补齐未传入的模块（与 test_workflow_learning.build_learner 同一接线）
+        """
+        from ..workflow_parser import WorkflowParser, NodeKnowledgeLoader
+        from ..workflow_analyzer import WorkflowAnalyzer
+        from ..diagnostics import DiagnosticEngine
+        from ..retrieval import KnowledgeRetriever
+        from ..autonomous_learning import (
+            WorkflowExplorer,
+            KnowledgeGapDetector,
+        )
+        from .paths import PROJECT_ROOT
+
+        knowledge_dir = PROJECT_ROOT / "comfyui_library" / "knowledge"
+
+        loader = None
+        if self.parser is None or self.explorer is None:
+            loader = NodeKnowledgeLoader(str(knowledge_dir))
+
+        if self.analyzer is None:
+            self.analyzer = WorkflowAnalyzer()
+
+        if self.retriever is None:
+            self.retriever = KnowledgeRetriever()
+            self.retriever.build_index()
+
+        if self.parser is None:
+            self.parser = WorkflowParser(loader)
+
+        if self.diagnostics is None:
+            self.diagnostics = DiagnosticEngine()
+
+        if self.explorer is None:
+            self.explorer = WorkflowExplorer(
+                analyzer=WorkflowAnalyzer(),
+                knowledge_loader=loader,
+            )
+
+        if self.gap_detector is None:
+            self.gap_detector = KnowledgeGapDetector()
 
     # ---------- 对外 ----------
 

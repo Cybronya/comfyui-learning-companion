@@ -5,9 +5,9 @@
 
 | workflow | 类型 | 节点 | 覆盖 | 指纹 | 学于 |
 |---|---|---|---|---|---|
-| [`sd1.5/basic.json`](sd1.5/basic.md) | Text To Image | 7 | 100% | `a95cceec` | 2026-10-06 01:35:21 |
-| [`sd1.5/lora.png`](sd1.5/lora.md) | Text To Image | 9 | 78% | `9d318e7a` | 2026-10-06 01:35:21 |
-| [`sd1.5/text-to-image-workflow.png`](sd1.5/text-to-image-workflow.md) | Text To Image | 7 | 100% | `d154255b` | 2026-10-06 01:35:21 |
+| [`sd1.5/basic.json`](sd1.5/basic.md) | Text To Image | 7 | 100% | `a95cceec` | 2026-10-06 03:49:53 |
+| [`sd1.5/lora.png`](sd1.5/lora.md) | Text To Image | 9 | 78% | `9d318e7a` | 2026-10-06 03:49:53 |
+| [`sd1.5/text-to-image-workflow.png`](sd1.5/text-to-image-workflow.md) | Text To Image | 7 | 100% | `d154255b` | 2026-10-06 03:49:53 |
 
 ---
 

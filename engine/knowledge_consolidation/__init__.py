@@ -62,6 +62,7 @@ def create_consolidation_engine(
     similarity: float = 0.6,
     min_frequency: int = 2,
     save: bool = True,
+    database=None,
 ) -> ConsolidationEngine:
     """
     便捷构造
@@ -72,11 +73,19 @@ def create_consolidation_engine(
         similarity: 聚类相似度阈值
         min_frequency: 模式最小成员数
         save: 归纳时是否落盘
+        database: WorkflowDatabase；传入则经验从
+                  database.experiences 的结构化载荷读取
+                  （库里没有时回退读 Markdown 记录）
 
     Returns:
         ConsolidationEngine 实例
     """
     engine = ConsolidationEngine(
+        loader=(
+            ExperienceLoader(database=database)
+            if database is not None else None
+        ),
+        database=database,
         miner=PatternMiner(
             similarity=similarity, min_frequency=min_frequency
         ),

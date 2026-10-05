@@ -6,18 +6,21 @@
     WorkflowScanner  扫描目录
           ↓
     LearningScheduler.build_schedule()
-          ├─ 查 LearningStore（按 key + 内容指纹）跳过已学
+          ├─ 判「已学」：先查 WorkflowDatabase.status，
+          │              库里没有再回退查 LearningStore（按 key + 内容指纹）
           ├─ 读每个 workflow 的节点清单
           ├─ PriorityCalculator 打分（内容信号为主，文件名为辅）
           └─ TaskQueue（优先级降序，同分保持加入顺序）
           ↓
     LearningScheduler.run()
           └─ 循环取任务 → WorkflowLearner.learn() → 记录状态
+                └─ 写 LearningStore 后镜像进 WorkflowDatabase（若已接）
           ↓
     ScheduleStore  队列落盘（可续跑）
 
 与既有模块的分工：
-    workflow_learning.LearningStore  记录「学没学过 / 学到了什么」
+    workflow_learning.LearningStore  记录「学没学过 / 学到了什么」（人读正身）
+    comfyui_library.database         「已学」的机器查询层（调度器优先查它）
     workflow_learning.WorkflowLearner 执行单文件学习
     learning_scheduler               **只管排队与状态**，不重复实现学习逻辑
 
@@ -51,6 +54,7 @@ from .priority import PriorityCalculator
 from .scheduler_state import SchedulerState
 from .schedule_store import ScheduleStore
 from ..workflow_learning import LearningStore
+from ..workflow_learning.database_bridge import is_learned, sync_record
 from ..workflow_learning.paths import WORKFLOWS_DIR, relative_to_project
 
 
@@ -67,7 +71,8 @@ class LearningScheduler:
         queue=None,
         learner=None,
         schedule_store=None,
-        max_retries: int = 3
+        max_retries: int = 3,
+        database=None
     ) -> None:
         """
         初始化调度器
@@ -81,6 +86,12 @@ class LearningScheduler:
                      不传则只能 build_schedule，不能 run
             schedule_store: ScheduleStore（队列持久化）
             max_retries: 单任务重试上限
+            database: WorkflowDatabase。传入后：
+                      - build_schedule 判「已学」先查库的
+                        workflow.status + content_hash，
+                        库里没有的 key 再回退查 LearningStore
+                      - run() 学完写 LearningStore 后镜像进库。
+                      None 时不接库，行为与旧版一致
         """
         from ..workflow_learning import WorkflowScanner
 
@@ -103,6 +114,7 @@ class LearningScheduler:
             else ScheduleStore()
         )
         self.max_retries = max_retries
+        self.database = database
 
         # 「哪些节点已有知识卡」取自 node_index.json ——
         # 它精确列出了写过卡的节点，是判断知识缺口的权威依据
@@ -156,7 +168,7 @@ class LearningScheduler:
             path = item["path"]
 
             content_hash = self._peek_hash(path)
-            already = self.store.exists(key, content_hash)
+            already = self._already_learned(key, content_hash)
 
             # 已学且内容未变 → 跳过
             if already and not include_learned:
@@ -289,6 +301,9 @@ class LearningScheduler:
                     # 队列文件不写 LearningStore 避免两个存储互相污染 ——
                     # 真正的知识以 LearningStore 为准。
                     path = self.store.write(record)
+                    if path and self.database is not None:
+                        # Markdown 落盘成功后镜像进数据库
+                        sync_record(record, self.database)
                     self.queue.complete(
                         task,
                         result=relative_to_project(record.key),
@@ -415,6 +430,19 @@ class LearningScheduler:
         return "\n".join(lines)
 
     # ---------- 内部 ----------
+
+    def _already_learned(self, key: str, content_hash: str) -> bool:
+        """
+        判断是否已学：先查数据库，库里没有再回退 LearningStore
+
+        数据库判定用 workflow.status + content_hash（见 database_bridge.is_learned），
+        库里没有这条 key 时返回 None —— 说明记录还没镜像过来，
+        回退查 Markdown 正身，不能猜。
+        """
+        from_database = is_learned(self.database, key, content_hash)
+        if from_database is not None:
+            return from_database
+        return self.store.exists(key, content_hash)
 
     def _read_nodes(self, path: str) -> List[str]:
         """

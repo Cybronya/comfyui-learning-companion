@@ -1,0 +1,11 @@
+{
+    "text_to_image_sampler_clip_checkpoint": {
+        "workflows": [
+            "sd1.5/basic.json",
+            "sd1.5/lora.png",
+            "sd1.5/text-to-image-workflow.png"
+        ],
+        "workflow_count": 3,
+        "description": "Text To Image · 3 个样本 · strong；宽度 中位数 512，观测区间 512 - 768，3 个样本"
+    }
+}

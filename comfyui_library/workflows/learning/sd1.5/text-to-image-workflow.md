@@ -7,10 +7,11 @@ source: png
 file: comfyui_library/workflows/sd1.5/text-to-image-workflow.png
 hash: d154255b8120e645
 coverage: 1
-learned_at: 2026-10-06 01:35:21
+learned_at: 2026-10-06 03:49:53
 nodes: [EmptyLatentImage, KSampler, VAEDecode, SaveImage, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode]
 patterns: [text_to_image]
 missing: []
+parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "v1-5-pruned-emaonly-fp16.safetensors", "denoise": 1, "height": 512, "sampler_name": "euler", "scheduler": "normal", "seed": 156680208700286, "steps": 20, "width": 512}
 ---
 
 # sd1.5/text-to-image-workflow.png

@@ -853,7 +853,7 @@ def test_minimal_dependencies():
     print(f"  仅 analyzer: {record.status}，节点 {len(record.nodes)}")
     assert record.status == "completed" and record.nodes
 
-    bare = WorkflowLearner()
+    bare = WorkflowLearner(auto_modules=False)
     bare_record = bare.learn(str(wf))
     print(f"  无模块: {bare_record.status}，节点 {len(bare_record.nodes)}")
     assert bare_record.status == "completed"

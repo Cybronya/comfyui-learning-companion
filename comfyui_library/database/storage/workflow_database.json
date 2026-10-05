@@ -1,0 +1,409 @@
+{
+    "version": 1,
+    "workflows": {
+        "sd1.5/basic.json": {
+            "id": "sd1.5/basic.json",
+            "name": "basic",
+            "file_path": "comfyui_library/workflows/sd1.5/basic.json",
+            "status": "learned",
+            "type": "Text To Image",
+            "nodes": [
+                "CheckpointLoaderSimple",
+                "CLIPTextEncode",
+                "EmptyLatentImage",
+                "KSampler",
+                "VAEDecode",
+                "SaveImage"
+            ],
+            "patterns": [
+                "text_to_image",
+                "text_to_image_sampler_clip_checkpoint"
+            ],
+            "report": "F:\\Program Files\\ComfyUI\\comfyui_library\\workflows\\learning\\sd1.5\\basic.md",
+            "content_hash": "a95cceecfb5d5225"
+        },
+        "sd1.5/lora.png": {
+            "id": "sd1.5/lora.png",
+            "name": "lora",
+            "file_path": "comfyui_library/workflows/sd1.5/lora.png",
+            "status": "learned",
+            "type": "Text To Image",
+            "nodes": [
+                "VAEDecode",
+                "SaveImage",
+                "CLIPTextEncode",
+                "EmptyLatentImage",
+                "LoraLoader",
+                "CheckpointLoaderSimple",
+                "KSampler",
+                "MarkdownNote"
+            ],
+            "patterns": [
+                "text_to_image",
+                "lora",
+                "text_to_image_sampler_clip_checkpoint"
+            ],
+            "report": "F:\\Program Files\\ComfyUI\\comfyui_library\\workflows\\learning\\sd1.5\\lora.md",
+            "content_hash": "9d318e7ac04c1fdf"
+        },
+        "sd1.5/text-to-image-workflow.png": {
+            "id": "sd1.5/text-to-image-workflow.png",
+            "name": "text-to-image-workflow",
+            "file_path": "comfyui_library/workflows/sd1.5/text-to-image-workflow.png",
+            "status": "learned",
+            "type": "Text To Image",
+            "nodes": [
+                "EmptyLatentImage",
+                "KSampler",
+                "VAEDecode",
+                "SaveImage",
+                "CheckpointLoaderSimple",
+                "CLIPTextEncode"
+            ],
+            "patterns": [
+                "text_to_image",
+                "text_to_image_sampler_clip_checkpoint"
+            ],
+            "report": "F:\\Program Files\\ComfyUI\\comfyui_library\\workflows\\learning\\sd1.5\\text-to-image-workflow.md",
+            "content_hash": "d154255b8120e645"
+        }
+    },
+    "nodes": {
+        "CheckpointLoaderSimple": {
+            "category": "",
+            "used_in": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ]
+        },
+        "CLIPTextEncode": {
+            "category": "",
+            "used_in": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ]
+        },
+        "EmptyLatentImage": {
+            "category": "",
+            "used_in": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ]
+        },
+        "KSampler": {
+            "category": "",
+            "used_in": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ]
+        },
+        "VAEDecode": {
+            "category": "",
+            "used_in": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ]
+        },
+        "SaveImage": {
+            "category": "",
+            "used_in": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ]
+        },
+        "LoraLoader": {
+            "category": "",
+            "used_in": [
+                "sd1.5/lora.png"
+            ]
+        },
+        "MarkdownNote": {
+            "category": "",
+            "used_in": [
+                "sd1.5/lora.png"
+            ]
+        }
+    },
+    "patterns": {
+        "text_to_image_sampler_clip_checkpoint": {
+            "workflows": [
+                "sd1.5/basic.json",
+                "sd1.5/lora.png",
+                "sd1.5/text-to-image-workflow.png"
+            ],
+            "description": "Text To Image · 3 个样本 · strong；宽度 中位数 512，观测区间 512 - 768，3 个样本"
+        }
+    },
+    "experiences": {
+        "sd1.5/basic.json": {
+            "content": "",
+            "tags": [
+                "Text To Image",
+                "json"
+            ],
+            "data": {
+                "key": "sd1.5/basic.json",
+                "workflow_name": "basic",
+                "file_path": "comfyui_library/workflows/sd1.5/basic.json",
+                "status": "completed",
+                "source_kind": "json",
+                "content_hash": "a95cceecfb5d5225",
+                "workflow_type": "Text To Image",
+                "nodes": [
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "KSampler",
+                    "VAEDecode",
+                    "SaveImage"
+                ],
+                "patterns": [
+                    "text_to_image"
+                ],
+                "important_nodes": [
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "KSampler",
+                    "VAEDecode"
+                ],
+                "pipeline": [
+                    "Model",
+                    "Condition",
+                    "Latent",
+                    "Sampling",
+                    "Decode",
+                    "Output"
+                ],
+                "parameters": {
+                    "checkpoint": "sd15_base_model.safetensors",
+                    "width": 512,
+                    "height": 512,
+                    "batch_size": 1,
+                    "seed": 261660645921551,
+                    "steps": 20,
+                    "cfg": 7,
+                    "sampler_name": "euler",
+                    "scheduler": "normal",
+                    "denoise": 1
+                },
+                "covered_nodes": [
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "KSampler",
+                    "VAEDecode",
+                    "SaveImage"
+                ],
+                "missing_nodes": [],
+                "knowledge_refs": [
+                    "KSampler",
+                    "VAEDecode",
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "SaveImage",
+                    "sd15-t2i-basic",
+                    "sd15-t2i-lora",
+                    "sampler_name 调整经验",
+                    "steps 调整经验",
+                    "cfg 调整经验"
+                ],
+                "discoveries": [],
+                "diagnostic_issues": [],
+                "report_path": "F:\\Program Files\\ComfyUI\\comfyui_library\\workflows\\learning\\sd1.5\\basic.md",
+                "error": "",
+                "learned_at": "2026-10-06 03:49:53",
+                "coverage": 1.0
+            }
+        },
+        "sd1.5/lora.png": {
+            "content": "次要节点 `MarkdownNote` 知识库中没有该节点类型的任何知识",
+            "tags": [
+                "Text To Image",
+                "png"
+            ],
+            "data": {
+                "key": "sd1.5/lora.png",
+                "workflow_name": "lora",
+                "file_path": "comfyui_library/workflows/sd1.5/lora.png",
+                "status": "completed",
+                "source_kind": "png",
+                "content_hash": "9d318e7ac04c1fdf",
+                "workflow_type": "Text To Image",
+                "nodes": [
+                    "VAEDecode",
+                    "SaveImage",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "CLIPTextEncode",
+                    "LoraLoader",
+                    "CheckpointLoaderSimple",
+                    "KSampler",
+                    "MarkdownNote"
+                ],
+                "patterns": [
+                    "text_to_image",
+                    "lora"
+                ],
+                "important_nodes": [
+                    "VAEDecode",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "LoraLoader",
+                    "CheckpointLoaderSimple",
+                    "KSampler"
+                ],
+                "pipeline": [
+                    "Model",
+                    "Condition",
+                    "Latent",
+                    "Sampling",
+                    "Decode",
+                    "Output",
+                    "Other"
+                ],
+                "parameters": {
+                    "width": 768,
+                    "height": 768,
+                    "batch_size": 1,
+                    "lora_name": "blindbox_v1_mix.safetensors",
+                    "strength_model": 0.75,
+                    "strength_clip": 1,
+                    "checkpoint": "dreamshaper_8.safetensors",
+                    "seed": 261660645921551,
+                    "steps": 30,
+                    "cfg": 7,
+                    "sampler_name": "dpmpp_2m",
+                    "scheduler": "karras",
+                    "denoise": 1
+                },
+                "covered_nodes": [
+                    "VAEDecode",
+                    "SaveImage",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "CLIPTextEncode",
+                    "CheckpointLoaderSimple",
+                    "KSampler"
+                ],
+                "missing_nodes": [
+                    "MarkdownNote"
+                ],
+                "knowledge_refs": [
+                    "KSampler",
+                    "VAEDecode",
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "SaveImage",
+                    "sd15-t2i-basic",
+                    "sd15-t2i-lora",
+                    "sampler_name 调整经验",
+                    "steps 调整经验",
+                    "cfg 调整经验"
+                ],
+                "discoveries": [
+                    "次要节点 `MarkdownNote` 知识库中没有该节点类型的任何知识"
+                ],
+                "diagnostic_issues": [],
+                "report_path": "F:\\Program Files\\ComfyUI\\comfyui_library\\workflows\\learning\\sd1.5\\lora.md",
+                "error": "",
+                "learned_at": "2026-10-06 03:49:53",
+                "coverage": 0.778
+            }
+        },
+        "sd1.5/text-to-image-workflow.png": {
+            "content": "",
+            "tags": [
+                "Text To Image",
+                "png"
+            ],
+            "data": {
+                "key": "sd1.5/text-to-image-workflow.png",
+                "workflow_name": "text-to-image-workflow",
+                "file_path": "comfyui_library/workflows/sd1.5/text-to-image-workflow.png",
+                "status": "completed",
+                "source_kind": "png",
+                "content_hash": "d154255b8120e645",
+                "workflow_type": "Text To Image",
+                "nodes": [
+                    "EmptyLatentImage",
+                    "KSampler",
+                    "VAEDecode",
+                    "SaveImage",
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "CLIPTextEncode"
+                ],
+                "patterns": [
+                    "text_to_image"
+                ],
+                "important_nodes": [
+                    "EmptyLatentImage",
+                    "KSampler",
+                    "VAEDecode",
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode"
+                ],
+                "pipeline": [
+                    "Model",
+                    "Condition",
+                    "Latent",
+                    "Sampling",
+                    "Decode",
+                    "Output"
+                ],
+                "parameters": {
+                    "width": 512,
+                    "height": 512,
+                    "batch_size": 1,
+                    "seed": 156680208700286,
+                    "steps": 20,
+                    "cfg": 8,
+                    "sampler_name": "euler",
+                    "scheduler": "normal",
+                    "denoise": 1,
+                    "checkpoint": "v1-5-pruned-emaonly-fp16.safetensors"
+                },
+                "covered_nodes": [
+                    "EmptyLatentImage",
+                    "KSampler",
+                    "VAEDecode",
+                    "SaveImage",
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "CLIPTextEncode"
+                ],
+                "missing_nodes": [],
+                "knowledge_refs": [
+                    "KSampler",
+                    "VAEDecode",
+                    "CheckpointLoaderSimple",
+                    "CLIPTextEncode",
+                    "EmptyLatentImage",
+                    "SaveImage",
+                    "sd15-t2i-basic",
+                    "sd15-t2i-lora",
+                    "sampler_name 调整经验",
+                    "steps 调整经验",
+                    "cfg 调整经验"
+                ],
+                "discoveries": [],
+                "diagnostic_issues": [],
+                "report_path": "F:\\Program Files\\ComfyUI\\comfyui_library\\workflows\\learning\\sd1.5\\text-to-image-workflow.md",
+                "error": "",
+                "learned_at": "2026-10-06 03:49:53",
+                "coverage": 1.0
+            }
+        }
+    }
+}

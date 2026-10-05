@@ -1,16 +1,17 @@
 """
 经验加载器
 
-从 `workflow_learning` 的学习记录（Markdown）读入待归纳的 workflow。
+从学习记录读入待归纳的 workflow。两个数据源，优先级：
 
-为什么不读 JSON：
-    workflow_learning 上一轮已把 registry.json / experience.json 换成
-    Markdown 记录（comfyui_library/workflows/learning/*.md），
-    设计稿里的 workflow_experience.json 已不存在。这里复用
-    LearningStore 读取，不再另造一套格式。
+1. WorkflowDatabase.experiences（database 参数传入时）——
+   结构化载荷（LearningRecord.to_dict()），由 database_bridge 在
+   学习落盘时镜像。这是数据层枢纽的标准来源。
+2. LearningStore（Markdown 记录）—— 兜底。
+   库是后建的，存量记录可能还没镜像；库里一条都没有时
+   回退查 Markdown 并打印提示（不静默切换）。
 
 加载后统一成 ExperienceRow —— 归纳只认这一个结构，
-不关心上游是 Markdown 记录、JSON 还是将来的数据库。
+不关心上游是 Markdown 记录、JSON 还是数据库。
 """
 
 from typing import List, Dict, Any, Optional
@@ -74,15 +75,18 @@ class ExperienceLoader:
     经验加载器
     """
 
-    def __init__(self, store=None) -> None:
+    def __init__(self, store=None, database=None) -> None:
         """
         初始化加载器
 
         Args:
             store: workflow_learning.LearningStore；
                   None 时用默认（统一位置 comfyui_library/workflows/learning/）
+            database: WorkflowDatabase；传入则优先从
+                     database.experiences 的结构化载荷读取
         """
         self.store = store or LearningStore()
+        self.database = database
 
     def load(self, path=None) -> List[ExperienceRow]:
         """
@@ -90,19 +94,32 @@ class ExperienceLoader:
 
         Args:
             path: 兼容参数。设计稿里这里是「经验文件路径」，
-                  现在记录是 Markdown 目录结构，传入会被忽略并记一条提示。
-                  保留该参数是为了不改变调用方签名。
+                  现在记录来自数据库或 Markdown 目录，传入会被忽略并记一条提示。
 
         Returns:
             ExperienceRow 列表（只含学习成功的记录）
         """
         if path:
             print(
-                "提示：记录已改为 Markdown（workflows/learning/*.md），"
-                "ExperienceLoader.load(path) 的 path 参数被忽略，"
-                "改由 LearningStore 的位置决定"
+                "提示：ExperienceLoader.load(path) 的 path 参数被忽略，"
+                "数据源由 database / LearningStore 的位置决定"
             )
 
+        rows = []
+        if self.database is not None:
+            rows = self._load_from_database()
+            if rows:
+                return rows
+            print(
+                "提示：数据库里没有可归纳的经验"
+                "（可能存量记录未镜像），回退读 Markdown 记录 ——"
+                "可调用 BatchWorkflowLearner.sync_database() 补齐"
+            )
+
+        return self._load_from_store()
+
+    def _load_from_store(self) -> List[ExperienceRow]:
+        """从 LearningStore 的 Markdown 记录读取（兜底来源）"""
         records = self.store.completed_records()
 
         rows = []
@@ -120,6 +137,38 @@ class ExperienceLoader:
                 missing_nodes=record.missing_nodes,
                 coverage=record.coverage,
                 patterns=record.patterns,
+            ))
+
+        return rows
+
+    def _load_from_database(self) -> List[ExperienceRow]:
+        """
+        从 WorkflowDatabase.experiences 的结构化载荷读取
+
+        只取 status=completed 的载荷（data 是 LearningRecord.to_dict()，
+        含 status 字段）；节点清单为空的同样跳过。
+        """
+        experiences = self.database.experiences.all()
+
+        rows = []
+        for key in sorted(experiences):
+            data = experiences[key].get("data") or {}
+            if data.get("status", "completed") != "completed":
+                continue
+
+            nodes = list(data.get("nodes") or [])
+            if not nodes:
+                continue
+
+            rows.append(ExperienceRow(
+                key=data.get("key") or key,
+                workflow_type=data.get("workflow_type", ""),
+                nodes=nodes,
+                parameters=dict(data.get("parameters") or {}),
+                problems=list(data.get("diagnostic_issues") or []),
+                missing_nodes=list(data.get("missing_nodes") or []),
+                coverage=float(data.get("coverage", 0) or 0),
+                patterns=list(data.get("patterns") or []),
             ))
 
         return rows

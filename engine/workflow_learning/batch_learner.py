@@ -8,6 +8,9 @@ design 第九节给的「完整运行逻辑」是一段 10 行的 for 循环，
     扫描目录 → 查登记表 → 跳过已学的 → 逐个学习
              → 写报告 → 存经验 → 更新登记表 → 汇总
 
+    （接了 database 时，每条记录同时镜像进 WorkflowDatabase，
+      见 database_bridge —— Markdown 仍是记录正身，库是查询层）
+
 幂等：同一批文件反复跑，第二次应全部跳过；
 改了内容的文件应被识别为「需重学」并重新学习。
 """
@@ -23,6 +26,7 @@ from .learning_record import (
 from .workflow_scanner import WorkflowScanner
 from .workflow_learner import WorkflowLearner
 from .learning_store import LearningStore
+from .database_bridge import sync_record, sync_all
 from .paths import WORKFLOWS_DIR, relative_to_project
 
 
@@ -36,7 +40,8 @@ class BatchWorkflowLearner:
         learner: WorkflowLearner,
         store=None,
         scanner: WorkflowScanner = None,
-        verbose: bool = True
+        verbose: bool = True,
+        database=None
     ) -> None:
         """
         初始化批量学习器
@@ -46,11 +51,15 @@ class BatchWorkflowLearner:
             store: LearningStore（记录读写与统计都归它）
             scanner: 目录扫描器
             verbose: 是否打印进度
+            database: WorkflowDatabase；传入则每条学习结果
+                      镜像进库（workflow 记录 + 经验载荷）。
+                      None 时不接库，行为与旧版一致
         """
         self.learner = learner
         self.store = store or LearningStore()
         self.scanner = scanner or WorkflowScanner()
         self.verbose = verbose
+        self.database = database
 
     # 兼容旧属性名：registry / experience 曾是两个独立存储，
     # 现在合并为一个 store，指向同一份 Markdown 记录
@@ -131,6 +140,10 @@ class BatchWorkflowLearner:
             if record_path:
                 record.report_path = record_path
 
+            # Markdown 落盘成功后镜像进数据库（失败只提示不中断）
+            if record_path and self.database is not None:
+                sync_record(record, self.database, verbose=self.verbose)
+
             if record.status == STATUS_COMPLETED:
                 learned.append(record)
                 if self.verbose:
@@ -194,7 +207,30 @@ class BatchWorkflowLearner:
         if record_path:
             record.report_path = record_path
 
+        if record_path and self.database is not None:
+            sync_record(record, self.database, verbose=self.verbose)
+
         return record
+
+    def sync_database(self, database=None) -> Dict[str, int]:
+        """
+        全量镜像：把 LearningStore 里的存量记录补进数据库
+
+        数据库是后建的，先学的记录不会自动出现在库里 ——
+        用这个方法做一次性迁移。幂等，重复跑只是覆盖。
+
+        Args:
+            database: 目标库；None 时用构造时传入的 self.database
+
+        Returns:
+            {"synced", "skipped", "failed"}
+        """
+        target = database if database is not None else self.database
+        if target is None:
+            raise RuntimeError(
+                "未指定数据库：构造时传 database= 或在此传入"
+            )
+        return sync_all(self.store, target, verbose=self.verbose)
 
     def pending(self, folder: str) -> List[Dict[str, Any]]:
         """
