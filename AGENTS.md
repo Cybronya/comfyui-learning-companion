@@ -6,8 +6,9 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
 - 最后更新：2026-10-05
-- 规则版本：v0.3.1（规范定稿）｜v0.4 架构标准化 ✅｜v0.5 设计文档已入库 + 引擎实装进行中
-- 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master）
+- **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
+- 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
+- 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
 
 ---
 
@@ -39,7 +40,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 
 ### 3.1 git
 
-- 白名单制 `.gitignore`：根下 `/*` 全忽略，只放行 `.gitignore` / `README.md` / `CHANGELOG.md` /
+- 白名单制 `.gitignore`：根下 `/*` 全忽略，只放行 `.gitignore` / `README.md` /
   `AGENTS.md` / `docs/` / `skills/` / `comfyui_library/` / `engine/`。
   **新增顶层文件必须同步在 `.gitignore` 加一行 `!/<文件名>`，否则不会被跟踪。**
 - 分支 `master`，远程 `https://github.com/Cybronya/comfyui-learning-companion.git`（public）。
@@ -81,7 +82,7 @@ python test_parser.py
 
 ```
 AGENTS.md                     ← 本文件（唯一入口：约定 + 状态）
-README.md / CHANGELOG.md      对外门面
+README.md                     对外门面（版本号只做指针，不重复维护）
 docs/                         设计文档（10 篇）
 skills/
   _core/                      Skill 框架骨架（🔶 占位）
@@ -107,7 +108,7 @@ engine/                       可执行层（v0.5 起）
 | 想了解 | 读 |
 |---|---|
 | 总体架构 | `docs/architecture.md` |
-| 版本目标 | `docs/roadmap.md` |
+| **版本号（唯一权威）** | `docs/roadmap.md` 第 3 节 |
 | 引擎设计与 API | `docs/learning-engine.md`、`docs/engine-api.md` |
 | Workflow 数据结构 | `docs/workflow-schema.md` |
 | 分析怎么做的 | `docs/workflow-analysis.md`、`docs/pattern-learning.md`、`docs/pattern_evolution.md` |
@@ -163,7 +164,7 @@ engine/                       可执行层（v0.5 起）
 |---|---|---|
 | 入口文档 | `AGENTS.md` | ✅ 本文件（2026-10-05 建立，唯一入口） |
 | 对外文档 | `docs/` | ✅ 10 篇：architecture / workflow-schema / knowledge-system / skill-system / workflow-analysis / pattern-learning / pattern_evolution / roadmap / learning-engine / engine-api |
-| 门面 | `README.md` / `CHANGELOG.md` | ✅ 已入库（CHANGELOG 仍停在 v0.3.1，见待办 6） |
+| 门面 | `README.md` | ✅ 已入库；版本号收敛到 `docs/roadmap.md`，本文与 README 均不重复维护（`CHANGELOG.md` 已于 2026-10-05 删除，发布前改用 git tag + GitHub Releases） |
 
 **Skill 层（`skills/`）**
 
@@ -237,7 +238,8 @@ Workflow JSON
 4. **测试入口统一**：6 个 `test_*.py` 改用 `from engine.xxx` 包导入，使其可从仓库根
    `python -m engine.test_xxx` 直接运行（现状只有 `test_learning_loop.py` 符合）
 5. **文档修正**：补写缺失的 `docs/implementation-plan.md`（旧状态文档曾引用它但文件不存在），或删掉相关引用
-6. **CHANGELOG 补记**：仍停在 v0.3.1，v0.4 / v0.5 与全部引擎模块均未入账
+6. **发布准备（v1.0 前）**：仓库目前零 git tag，版本号无 git 层面标记；
+   首次对外发布时用 `git tag v1.0.0` + GitHub Releases 承载 release notes 与 breaking changes
 7. **RAG v0.4 实装**：embedding 接入；统一 `build_index`（text 键）与 `search_database`（content 键）
    的键名；`prepare_documents` 的 content 从 `str(item)` 改为规范拼装
 8. **knowledge/ 卡片对齐 v0.3.1**：格式迁移 + 补 MiniMax H3 与 Wan 的差异对照卡（wan 卡内 TODO）

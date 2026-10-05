@@ -144,53 +144,12 @@ Build a personal knowledge system:
 # Roadmap
 
 
-## v0.1 - Workflow Understanding
+版本号与各阶段目标的**唯一权威来源**是 [`docs/roadmap.md`](docs/roadmap.md)，本节不再重复维护。
 
-Completed:
+当前进度：v0.4 已完成，v0.5（Workflow Analysis Engine）进行中 —— 引擎七个模块
+（解析 / 分析 / 诊断 / 上下文 / 回答生成 / 学习循环 / 索引）均已落地，尚未由统一入口串联。
 
-- Skill framework
-- Workflow analysis rules
-- Learning templates
-
-
-
-## v0.2 - Workflow Scanner
-
-Completed:
-
-- Workflow scanning design
-- Metadata extraction
-- Workflow indexing
-
-
-
-## v0.3 - Pattern Learning
-
-Completed:
-
-- Workflow similarity analysis
-- Pattern extraction design
-- Pattern knowledge structure
-
-
-
-## v0.4 - Knowledge Retrieval
-
-Planned:
-
-- RAG knowledge database
-- Semantic workflow search
-- AI question answering
-
-
-
-## v0.5 - Personal ComfyUI Expert
-
-Planned:
-
-- Workflow recommendation
-- Optimization assistant
-- Experiment memory
+实时开发状态与待办优先级见 [`AGENTS.md`](AGENTS.md) 第 9 节。
 
 
 

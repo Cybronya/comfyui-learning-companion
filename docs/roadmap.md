@@ -1,6 +1,12 @@
 # ComfyUI Learning Companion Roadmap
 
-Version: v0.4
+本文是**全项目唯一的版本号权威来源**。
+`README.md` 与根目录 `AGENTS.md` 均只做指针，不重复维护版本表 —— 2026-10-05 之前
+`CHANGELOG.md` / `README.md` / 本文三处各有一套版本号且互相矛盾（v0.2 与 v0.5 含义都不同），
+已删除 `CHANGELOG.md` 并把版本号收敛到此。
+
+版本号是**规划中的阶段**，不是 git 发布标记（仓库目前无 tag）。对外发布时用
+`git tag` + GitHub Releases 承载 release notes。实时开发进度见 `AGENTS.md` 第 9 节。
 
 ---
 
@@ -92,15 +98,21 @@ AI 负责：
 
 # 3. Version Overview
 
+> **本表是全项目唯一的版本号权威来源。** `README.md` 不再重复列版本，只做指针；
+> 仓库无 git tag，版本号表示「作者规划中的阶段」而非可验证的发布标记。
+> 实时开发进度（哪些模块已落地、待办优先级）见根目录 `AGENTS.md` 第 9 节。
+
 | Version | Goal | Status |
 |-|-|-|
 | v0.1 | Skill Framework | Completed |
 | v0.2 | Workflow Understanding | Completed |
 | v0.3 | Pattern Learning Design | Completed |
-| v0.4 | Architecture Standardization | Current |
-| v0.5 | Workflow Analysis Engine | Planned |
+| v0.4 | Architecture Standardization | Completed |
+| v0.5 | Workflow Analysis Engine | Current（引擎七模块已落地，入口串联与 CLI 待做）|
 | v0.6 | Pattern Learning Engine | Planned |
 | v0.7 | Knowledge Retrieval System | Planned |
+| v0.8 | Experiment Memory System | Planned（对应 `engine/learning_loop/`，已有雏形）|
+| v0.9 | AI ComfyUI Tutor | Planned（对应 `engine/response_generator/`，已有雏形）|
 | v1.0 | Personal ComfyUI Expert | Future |
 
 
