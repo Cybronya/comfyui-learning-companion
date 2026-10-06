@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 hash: eb4c449807f36cd8
 coverage: 0.447368
-learned_at: 2026-10-06 22:38:46
+learned_at: 2026-10-07 02:26:24
 nodes: [SetNode, SetNode, SetNode, LoadImage, GetNode, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, LoadImage, VAELoader, GetNode, LoadImage, UNETLoader, CLIPLoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, SetNode, GetNode, SetNode, GetNode, ComfySwitchNode, EmptyLatentImage, GetNode, KSampler, VAEDecode, SaveImage, SetNode, SetNode, LoadImage, Text, ResolutionSelector, 忽略多组孤海]
 patterns: []
 missing: [忽略多组孤海]

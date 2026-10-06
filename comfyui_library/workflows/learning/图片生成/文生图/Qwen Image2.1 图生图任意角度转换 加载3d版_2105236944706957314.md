@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1 图生图任意角度转换 加载3d版_2105236944706957314.json
 hash: b53e212a4de0da6c
 coverage: 0.9
-learned_at: 2026-10-06 22:57:40
+learned_at: 2026-10-07 02:22:53
 nodes: [LoadImage, LoadBackgroundRemovalModel, RemoveBackground, InvertMask, ComfySwitchNode, UNETLoader, CLIPVisionLoader, VAELoader, VAELoader, TripoSplatConditioning, KSampler, VAEDecodeTripoSplat, SplatToFile3D, SaveGLB, LoadImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, TextEncodeQwenImage21, QwenImage21Cache, KSampler, VAEDecode, SaveImage, Load3D, SaveImage, MarkdownNote, MarkdownNote, TripoSplatPreprocessImage, SaveImage]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/全能图片 全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图+图生图(图片编辑)_2098237558626017281.json
 hash: f57e2d219fd56717
 coverage: 0.666667
-learned_at: 2026-10-06 22:59:28
+learned_at: 2026-10-07 02:34:58
 nodes: [SaveImage, PreviewImage, SaveImage, PreviewImage, 忽略多组孤海, 忽略多组孤海, RH_RhartImageG25OfficialTokenSunburstTextToImage, RH_RhartImageG25OfficialTokenSunburstEdit, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: [忽略多组孤海, 忽略多组孤海]

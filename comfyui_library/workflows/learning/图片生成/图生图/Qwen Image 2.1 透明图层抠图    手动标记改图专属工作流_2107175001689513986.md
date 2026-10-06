@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 透明图层抠图    手动标记改图专属工作流_2107175001689513986.json
 hash: 9cef4429cb7f1874
 coverage: 0.826087
-learned_at: 2026-10-06 22:30:50
+learned_at: 2026-10-07 02:41:23
 nodes: [PathchSageAttentionKJ, QwenImage21Cache, ModelAttentionBackend, TextEncodeQwenImage21, LoadImage, LoadImage, MarkdownNote, CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SaveImageAdvanced, LoadImage, KSampler, VAELoader, VAEDecode, SaveImage, CR Prompt Text, PixaromaLabel, PixaromaLabel, PixaromaLabel, PixaromaLabel, UNETLoader, LoraLoaderModelOnly]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text]

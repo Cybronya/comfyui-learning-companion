@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen image 2.1图像编辑(8)4步加速版_2103517980582834177.json
 hash: 788b78795775e82c
 coverage: 0.39
-learned_at: 2026-10-06 22:26:46
+learned_at: 2026-10-07 02:41:00
 nodes: [MarkdownNote, SetNode, GetNode, GetNode, ImageScaleToTotalPixels, SetNode, VAEEncode, GetNode, GetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, CLIPLoader, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, 忽略多组孤海, TextEncodeQwenImage21, GetNode, ImpactNeg, GetNode, DapaoMakeImageBatchNode, llama_cpp_parameters, GetNode, CM_BoolToInt, PrimitiveFloat, CR Text Replace, LayerUtility: PurgeVRAM, SetNode, 孤海注释, 孤海注释, 孤海注释, 孤海注释, ComfySwitchNode, MarkdownNote, easy anythingIndexSwitch, PrimitiveInt, ExecutionBlocker, llama_cpp_instruct_adv, easy seed, KSampler, GetNode, LayerUtility: ImageScaleByAspectRatio V2, 孤海注释, UNETLoader, LoadImage, QwenImage21Cache, ImageRGBA2RGB, ImpactNeg, VAELoader, VAEEncode, JsonExtractString, JjkText, SaveLatent, PrimitiveBoolean, PrimitiveBoolean, ExecutionBlocker, VAEDecode, ExecutionBlocker, ExecutionBlocker, SaveImage, SaveImageAdvanced, llama_cpp_model_loader]
 patterns: [image_to_image]
 missing: [CR Text Replace, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, easy anythingIndexSwitch, 忽略多组孤海, easy seed]

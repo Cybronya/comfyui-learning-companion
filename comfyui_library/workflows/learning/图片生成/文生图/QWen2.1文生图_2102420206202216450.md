@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/QWen2.1文生图_2102420206202216450.json
 hash: 78a25c2979e0d2b1
 coverage: 0.615385
-learned_at: 2026-10-06 22:39:02
+learned_at: 2026-10-07 02:27:37
 nodes: [KSampler, QwenImage21Cache, MarkdownNote, MarkdownNote, EmptyLatentImage, TextEncodeQwenImage21, TextGenerate, ComfySwitchNode, PreviewAny, CLIPLoader, PrimitiveStringMultiline, CR Prompt Text, UNETLoader, UNETLoader, MarkdownNote, ComfySwitchNode, ComfySwitchNode, PrimitiveBoolean, CLIPLoader, CLIPLoader, VAELoader, ResolutionSelector, PrimitiveBoolean, PrimitiveInt, VAEDecode, SaveImage]
 patterns: []
 missing: [CR Prompt Text]

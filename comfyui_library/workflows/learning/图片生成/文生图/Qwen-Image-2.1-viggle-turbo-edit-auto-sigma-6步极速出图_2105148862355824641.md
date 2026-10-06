@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
 hash: 3dd6c7f9da44f1ea
 coverage: 0.658537
-learned_at: 2026-10-06 22:58:03
+learned_at: 2026-10-07 02:24:50
 nodes: [PrimitiveStringMultiline, MarkdownNote, CLIPLoader, CLIPLoader, PrimitiveBoolean, UNETLoader, UNETLoader, Model Input Switch, QwenImage21Cache, SeedNode, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, PreviewImage, VAEDecode, StringFormat, BasicGuider, TextGenerateLTX2Prompt, LoraLoaderModelOnly, RandomNoise, KSamplerSelect, ManualSigmas, EmptyLatentImage, VAELoader, TextEncodeQwenImage21, Image Comparer (rgthree), LoraLoaderModelOnly, KSampler, Image Comparer (rgthree), ResolutionSelector, SamplerCustomAdvanced, VAEDecode, SaveImage, PreviewImage, VAEDecode, SamplerCustomAdvanced, BasicGuider, Reroute, Reroute]
 patterns: []
 missing: [MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, Model Input Switch]

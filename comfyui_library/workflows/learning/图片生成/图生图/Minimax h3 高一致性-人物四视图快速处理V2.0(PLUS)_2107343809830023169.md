@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Minimax h3 高一致性-人物四视图快速处理V2.0(PLUS)_2107343809830023169.json
 hash: 20ef384cc62c8334
 coverage: 0.54386
-learned_at: 2026-10-06 22:30:28
+learned_at: 2026-10-07 02:41:20
 nodes: [MiniMaxH3ReferenceToVideo, VAELoader, VAELoader, GetNode, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, SetNode, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicScheduler, BasicGuider, RandomNoise, KSamplerSelect, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveFloat, ComfyMathExpression, VHS_VideoCombine, Any Switch (rgthree), MarkdownNote, ImageConcatFromBatch, ImageConcatFromBatch, MarkdownNote, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, CLIPLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, CreateVideo, GetVideoComponents, MarkdownNote, Fast Groups Bypasser (rgthree), ResizeImageMaskNode, workflow>SeedVR放大节点, MarkdownNote, GetImagesFromBatchIndexed, Any Switch (rgthree), MarkdownNote, ResolutionSelector, UNETLoader, LoraLoaderModelOnly, AutoCropFaces, PreviewImage, SaveImage, Image Comparer (rgthree), SaveImage, Fast Groups Bypasser (rgthree), Fast Muter (rgthree), PrimitiveStringMultiline, LoadImage, LoadImage]
 patterns: []
 missing: [AutoCropFaces, Fast Muter (rgthree), workflow>SeedVR放大节点]

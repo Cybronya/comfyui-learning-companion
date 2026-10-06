@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
 hash: 12e15ebeb6f75497
 coverage: 0.928571
-learned_at: 2026-10-06 22:36:40
+learned_at: 2026-10-07 02:14:48
 nodes: [TextEncodeQwenImage21, EmptyLatentImage, KSampler, ResolutionSelector, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, VAEDecode, SaveImage, QwenImage21Cache, ModelSamplingFlux, ModelAttentionBackend]
 patterns: []
 missing: []

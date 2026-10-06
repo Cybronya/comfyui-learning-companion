@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/🔥即梦 Seedream 5.0 PRO 文生图工作流，出图质量绝了！_2106676453466263554.json
 hash: 5e3978188fe5ac91
 coverage: 0.666667
-learned_at: 2026-10-06 22:41:32
+learned_at: 2026-10-07 02:34:49
 nodes: [SaveImage, Text, RH_SeedreamV5ProTextToImage]
 patterns: []
 missing: [RH_SeedreamV5ProTextToImage]

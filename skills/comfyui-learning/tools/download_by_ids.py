@@ -21,12 +21,18 @@
 from __future__ import annotations
 
 import csv
+import json
 import re
 import sys
 import time
+import urllib.request
+import urllib.error
 from pathlib import Path
 
-import requests
+try:
+    import requests
+except ImportError:
+    requests = None  # 项目约定工具只用标准库；urllib 兜底见 _post_raw
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -41,6 +47,29 @@ HEADERS = {
     "Referer": "https://www.runninghub.cn/search",
 }
 DELAY = 0.4  # 每次下载间隔（秒），温和限速
+
+
+def _post_raw(url: str, payload: dict, timeout: int = 15):
+    """POST JSON，返回 (status_code, 解析后的 dict)。requests 缺席时用 urllib。"""
+    if requests is not None:
+        r = requests.post(url, headers=HEADERS, json=payload, timeout=timeout)
+        try:
+            return r.status_code, r.json()
+        except ValueError:
+            return r.status_code, {}
+    data = json.dumps(payload).encode("utf-8")
+    req = urllib.request.Request(url, data=data, headers=HEADERS, method="POST")
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+            status = resp.status
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        status = e.code
+    try:
+        return status, json.loads(body)
+    except ValueError:
+        return status, {}
 
 
 def load_ids(txt_paths: list[Path]) -> list[str]:
@@ -63,7 +92,8 @@ def build_manifest(ids: list[str], keyword: str) -> dict[str, dict]:
     while target - set(meta) and current <= 200:
         body = {"size": 30, "current": current, "search": keyword, "tags": [], "sort": "NEWEST"}
         try:
-            data = requests.post(SEARCH_URL, headers=HEADERS, json=body, timeout=15).json().get("data") or {}
+            _, resp = _post_raw(SEARCH_URL, body)
+            data = resp.get("data") or {}
         except Exception:
             break
         recs = data.get("records") or []
@@ -131,13 +161,15 @@ def download_one(wid: str, name: str, out_dir: Path) -> tuple[bool, str, str]:
         return True, "已存在，跳过", fname
     for attempt in (1, 2):
         try:
-            r = requests.post(EXPORT_URL, headers=HEADERS, json={"workflowId": wid}, timeout=30)
-            if r.status_code == 200 and r.content:
-                data = r.json()
-                if not isinstance(data, dict) or "nodes" not in data:
-                    return False, f"响应不是工作流 JSON（可能是错误信息: {str(data)[:80]}）", fname
-                dest.write_bytes(r.content)
-                return True, f"{len(r.content) // 1024} KB", fname
+            status, data = _post_raw(EXPORT_URL, {"workflowId": wid}, timeout=30)
+            if status == 200 and isinstance(data, dict) and "nodes" in data:
+                content = json.dumps(data, ensure_ascii=False).encode("utf-8")
+                dest.write_bytes(content)
+                return True, f"{len(content) // 1024} KB", fname
+            if status == 412:
+                return False, "412（作者导出限制）", fname
+            if not isinstance(data, dict) or "nodes" not in data:
+                return False, f"响应不是工作流 JSON（可能是错误信息: {str(data)[:80]}）", fname
         except Exception as e:
             if attempt == 2:
                 return False, f"异常: {e}", fname

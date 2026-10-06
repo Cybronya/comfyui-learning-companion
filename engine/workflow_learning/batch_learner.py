@@ -120,40 +120,50 @@ class BatchWorkflowLearner:
         learned: List[LearningRecord] = []
         skipped: List[str] = []
 
-        for item in files:
-            key = item["key"]
-            path = item["path"]
+        # 批量镜像时关掉逐条落盘（库 20MB+ 时逐条全量写是主要瓶颈），
+        # 循环结束统一 save 一次；异常也要保证落盘，不能丢整批
+        if self.database is not None:
+            self.database.auto_save = False
 
-            if not force:
-                content_hash = self._peek_hash(path)
-                if self.store.exists(key, content_hash):
-                    skipped.append(key)
+        try:
+            for item in files:
+                key = item["key"]
+                path = item["path"]
+
+                if not force:
+                    content_hash = self._peek_hash(path)
+                    if self.store.exists(key, content_hash):
+                        skipped.append(key)
+                        if self.verbose:
+                            print(f"  跳过 {key}（已学习）")
+                        continue
+
+                record = self.learner.learn(path, key=key)
+
+                # 记录本身就是完整报告（frontmatter + 正文），
+                # 写进去就同时完成了「登记」与「出报告」
+                record_path = self.store.write(record)
+                if record_path:
+                    record.report_path = record_path
+
+                # Markdown 落盘成功后镜像进数据库（失败只提示不中断）
+                if record_path and self.database is not None:
+                    sync_record(record, self.database, verbose=self.verbose)
+
+                if record.status == STATUS_COMPLETED:
+                    learned.append(record)
                     if self.verbose:
-                        print(f"  跳过 {key}（已学习）")
-                    continue
-
-            record = self.learner.learn(path, key=key)
-
-            # 记录本身就是完整报告（frontmatter + 正文），
-            # 写进去就同时完成了「登记」与「出报告」
-            record_path = self.store.write(record)
-            if record_path:
-                record.report_path = record_path
-
-            # Markdown 落盘成功后镜像进数据库（失败只提示不中断）
-            if record_path and self.database is not None:
-                sync_record(record, self.database, verbose=self.verbose)
-
-            if record.status == STATUS_COMPLETED:
-                learned.append(record)
-                if self.verbose:
-                    print(
-                        f"  学习 {key}：{len(record.nodes)} 节点，"
-                        f"覆盖 {record.coverage:.0%}"
-                    )
-            else:
-                if self.verbose:
-                    print(f"  失败 {key}：{record.error}")
+                        print(
+                            f"  学习 {key}：{len(record.nodes)} 节点，"
+                            f"覆盖 {record.coverage:.0%}"
+                        )
+                else:
+                    if self.verbose:
+                        print(f"  失败 {key}：{record.error}")
+        finally:
+            if self.database is not None:
+                self.database.save()
+                self.database.auto_save = True
 
         # 清理已删除文件的记录
         pruned = []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/开源最强模型Qwen Image 2.1文生图工作流V1.0｜文生图反推一应俱全_2106917950035947522.json
 hash: 05056e409a59dd8d
 coverage: 0.851351
-learned_at: 2026-10-06 22:28:49
+learned_at: 2026-10-07 02:41:11
 nodes: [llama_cpp_parameters, llama_cpp_instruct_adv, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, LoadImage, CR Prompt Text, llama_cpp_model_loader, PixaromaGroupSwitch, PixaromaGroupSwitch, UNETLoader, CLIPLoader, QwenImage21Cache, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAELoader, PixaromaResolution, EmptyLatentImage, KSampler, LoraLoaderModelOnly, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), VAEDecode, VAEDecode, Fast Bypasser (rgthree), PreviewAny, QwenPERewriteT8, Any Switch (rgthree), Any Switch (rgthree), SaveImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), CR Prompt Text]

@@ -46,7 +46,10 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
-import requests
+try:
+    import requests
+except ImportError:
+    requests = None  # 缺席时 _post_json 走 urllib 兜底（标准库）
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -65,9 +68,38 @@ MAX_PAGES = 200
 DELAY = 0.4  # 翻页间隔（秒），温和限速
 
 
+def _post_json(url: str, payload: dict, timeout: int = 15):
+    """POST JSON 并返回 Response-like 对象（只用到 status_code / json()）。
+
+    优先 requests；环境没有（项目约定工具只用标准库）时用 urllib 兜底，
+    接口行为与抓包事实一致。"""
+    try:
+        import requests
+        return requests.post(url, headers=HEADERS, json=payload, timeout=timeout)
+    except ImportError:
+        import urllib.request
+        import ssl
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(url, data=data, headers=HEADERS, method="POST")
+        with urllib.request.urlopen(req, timeout=timeout,
+                                    context=ssl.create_default_context()) as resp:
+            body = resp.read().decode("utf-8", errors="replace")
+
+        class _Resp:
+            status_code = resp.status
+            def __init__(self, body):
+                self._body = body
+            def json(self):
+                return json.loads(self._body)
+            def raise_for_status(self):
+                if self.status_code >= 400:
+                    raise RuntimeError(f"HTTP {self.status_code}")
+        return _Resp(body)
+
+
 def fetch_tree() -> list[dict]:
     """拉取工作流分类树（两级）。"""
-    r = requests.post(TAG_TREE_URL, headers=HEADERS, json={"rang": "WORKFLOW"}, timeout=15)
+    r = _post_json(TAG_TREE_URL, {"rang": "WORKFLOW"})
     r.raise_for_status()
     payload = r.json()
     if payload.get("code") != 0:
@@ -157,7 +189,7 @@ def collect(tag_ids: list[str], target: int, sort: str,
     current = 1
     while len(new_ids) < target and current <= MAX_PAGES:
         body = {"size": PAGE_SIZE, "current": current, "tags": tag_ids, "sort": sort}
-        r = requests.post(LIST_URL, headers=HEADERS, json=body, timeout=15)
+        r = _post_json(LIST_URL, body)
         r.raise_for_status()
         payload = r.json()
         if payload.get("code") != 0:

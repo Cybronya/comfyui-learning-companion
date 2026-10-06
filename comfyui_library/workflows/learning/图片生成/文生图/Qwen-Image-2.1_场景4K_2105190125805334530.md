@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1_场景4K_2105190125805334530.json
 hash: 242d516aaad1b12d
 coverage: 0.619048
-learned_at: 2026-10-06 22:58:05
+learned_at: 2026-10-07 02:25:15
 nodes: [CR Text, CR Text Concatenate, easy seed, QZ_ResolutionPreset, SimpleMathDual+, EmptyLatentImage, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, KSampler, VAEDecode, PreviewImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SimpleMathDual+, SeedVR2VideoUpscaler, ImageScale, SaveImage, Note, CR Text]
 patterns: []
 missing: [CR Text, CR Text, CR Text Concatenate, SimpleMathDual+, SimpleMathDual+, easy seed]

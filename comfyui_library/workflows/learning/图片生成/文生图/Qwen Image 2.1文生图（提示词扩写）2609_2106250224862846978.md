@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1文生图（提示词扩写）2609_2106250224862846978.json
 hash: 422d493a61e3d305
 coverage: 0.714286
-learned_at: 2026-10-06 22:38:04
+learned_at: 2026-10-07 02:21:43
 nodes: [Anything Everywhere3, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, llama_cpp_instruct_adv, PreviewAny, llama_cpp_model_loader, TextEncodeQwenImage21, SaveImage, VAEDecode, SetNode, SeedVR2VideoUpscaler, GetNode, SaveImage, SeedVR2LoadVAEModel, ResolutionSelector, CR Text, SeedVR2LoadDiTModel, Fast Groups Bypasser (rgthree), KSampler]
 patterns: []
 missing: [CR Text]

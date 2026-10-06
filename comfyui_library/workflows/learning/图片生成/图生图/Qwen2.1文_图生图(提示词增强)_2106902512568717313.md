@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen2.1文_图生图(提示词增强)_2106902512568717313.json
 hash: 5c9150c4d60a7f3a
 coverage: 0.809524
-learned_at: 2026-10-06 22:32:07
+learned_at: 2026-10-07 02:41:30
 nodes: [ConditioningZeroOut, VAELoader, KSampler, easy clearCacheAll, easy saveText, VAEDecode, TextEncodeQwenImage21, TextGenerate, LoadImage, SaveImage, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ResolutionSelector, PreviewImage, PreviewAny, EmptyLatentImage, CLIPLoader, CLIPLoader, StringConstantMultiline]
 patterns: []
 missing: [easy clearCacheAll, easy saveText]

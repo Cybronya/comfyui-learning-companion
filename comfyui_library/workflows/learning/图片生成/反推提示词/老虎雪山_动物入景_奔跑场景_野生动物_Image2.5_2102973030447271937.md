@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/老虎雪山_动物入景_奔跑场景_野生动物_Image2.5_2102973030447271937.json
 hash: b97c275e34cc2b42
 coverage: 0.6
-learned_at: 2026-10-06 22:29:22
+learned_at: 2026-10-07 02:41:14
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []

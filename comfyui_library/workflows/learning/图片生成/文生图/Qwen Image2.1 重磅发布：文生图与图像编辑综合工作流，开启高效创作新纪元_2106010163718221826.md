@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1 重磅发布：文生图与图像编辑综合工作流，开启高效创作新纪元_2106010163718221826.json
 hash: 8b9f72636df5988d
 coverage: 0.6
-learned_at: 2026-10-06 22:38:24
+learned_at: 2026-10-07 02:23:07
 nodes: [VAELoader, Anything Everywhere, Text Multiline, CLIPLoader, UNETLoader, QwenImage21Cache, MarkdownNote, GetNode, VAEDecode, SetNode, 忽略多组孤海, 孤海注释, KSampler, AnySwitch, EmptyLatentImage, ImageScaleToTotalPixels, VAEEncode, 孤海注释, 孤海注释, 忽略多组孤海, TextEncodeQwenImage21, LoadImage, LoadImage, SaveImage, LoadImage, ResolutionSelector, Image Comparer (rgthree), LoadImage, Text Multiline, LoadImage]
 patterns: [image_to_image]
 missing: [Text Multiline, Text Multiline, 忽略多组孤海, 忽略多组孤海]

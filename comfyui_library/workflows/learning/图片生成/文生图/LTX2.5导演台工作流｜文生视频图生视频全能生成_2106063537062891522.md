@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json
 hash: 458bd87616b58e70
-coverage: 0.65625
-learned_at: 2026-10-06 22:35:51
+coverage: 0.671875
+learned_at: 2026-10-07 02:11:57
 nodes: [CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, KSamplerSelect, GetNode, GetNode, GetNode, LTXVAudioVAEDecode, GetNode, CLIPLoader, VAELoaderKJ, VAELoaderKJ, SetNode, SetNode, SetNode, SetNode, DiffusionModelLoaderKJ, ConditioningZeroOut, GetNode, BasicScheduler, GetNode, RandomNoise, GetNode, GetNode, LTXDirectorCropGuides, CreateVideo, SetNode, VAEDecodeTiled, LTXVSeparateAVLatent, LTXDirectorGuide, LTXVConditioning, SaveVideo, TTResolutionSelector, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note, SaveImage, LTXDirector]
 patterns: [text_to_image]
-missing: [DiffusionModelLoaderKJ, LTXDirector, LTXDirectorCropGuides, LTXDirectorGuide, LTXVAudioVAEDecode]
+missing: [LTXDirector, LTXDirectorCropGuides, LTXDirectorGuide, LTXVAudioVAEDecode]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `DiffusionModelLoaderKJ` 知识库中没有该节点类型的任何知识, 次要节点 `LTXDirector` 知识库中没有该节点类型的任何知识, 次要节点 `LTXDirectorCropGuides` 知识库中没有该节点类型的任何知识, 次要节点 `LTXDirectorGuide` 知识库中没有该节点类型的任何知识, 核心节点 `LTXVAudioVAEDecode` 仅有 VAE 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `LTXDirector` 知识库中没有该节点类型的任何知识, 次要节点 `LTXDirectorCropGuides` 知识库中没有该节点类型的任何知识, 次要节点 `LTXDirectorGuide` 知识库中没有该节点类型的任何知识, 核心节点 `LTXVAudioVAEDecode` 仅有 VAE 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json
@@ -106,11 +106,11 @@ discoveries: [次要节点 `DiffusionModelLoaderKJ` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **66%**（42/64）
+覆盖率 **67%**（43/64）
 
-**有卡**：`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`CLIPLoader`、`VAELoaderKJ`、`ConditioningZeroOut`、`BasicScheduler`、`RandomNoise`、`CreateVideo`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`SaveVideo`、`TTResolutionSelector`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`SaveImage`
+**有卡**：`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`CLIPLoader`、`VAELoaderKJ`、`DiffusionModelLoaderKJ`、`ConditioningZeroOut`、`BasicScheduler`、`RandomNoise`、`CreateVideo`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`SaveVideo`、`TTResolutionSelector`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`SaveImage`
 
-**缺卡**（5）：`DiffusionModelLoaderKJ`、`LTXDirector`、`LTXDirectorCropGuides`、`LTXDirectorGuide`、`LTXVAudioVAEDecode`
+**缺卡**（4）：`LTXDirector`、`LTXDirectorCropGuides`、`LTXDirectorGuide`、`LTXVAudioVAEDecode`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
@@ -121,7 +121,6 @@ discoveries: [次要节点 `DiffusionModelLoaderKJ` 知识库中没有该节点�
 
 ## 学习发现
 
-- 次要节点 `DiffusionModelLoaderKJ` 知识库中没有该节点类型的任何知识
 - 次要节点 `LTXDirector` 知识库中没有该节点类型的任何知识
 - 次要节点 `LTXDirectorCropGuides` 知识库中没有该节点类型的任何知识
 - 次要节点 `LTXDirectorGuide` 知识库中没有该节点类型的任何知识

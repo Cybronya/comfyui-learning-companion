@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen Image2.1文生图_2103745897376079874.json
 hash: 9570295ca1f4cff4
-coverage: 0.833333
-learned_at: 2026-10-06 22:27:15
+coverage: 0.888889
+learned_at: 2026-10-07 02:41:03
 nodes: [CLIPLoader, VAELoader, TextGenerate, RegexExtract, ComfySwitchNode, UNETLoader, CLIPLoader, EmptyLatentImage, VAEDecode, PreviewAny, JsonExtractString, StringCompare, KSampler, SaveImage, TextEncodeQwenImage21, Text, SaveImageAdvanced, ResolutionSelector]
 patterns: []
-missing: [StringCompare]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 42, "steps": 40, "width": 1024}
-discoveries: [次要节点 `StringCompare` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/反推提示词/Qwen Image2.1文生图_2103745897376079874.json
@@ -57,14 +56,8 @@ discoveries: [次要节点 `StringCompare` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **83%**（15/18）
+覆盖率 **89%**（16/18）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`TextGenerate`、`RegexExtract`、`UNETLoader`、`EmptyLatentImage`、`VAEDecode`、`JsonExtractString`、`KSampler`、`SaveImage`、`TextEncodeQwenImage21`、`Text`、`SaveImageAdvanced`、`ResolutionSelector`
-
-**缺卡**（1）：`StringCompare`
+**有卡**：`CLIPLoader`、`VAELoader`、`TextGenerate`、`RegexExtract`、`UNETLoader`、`EmptyLatentImage`、`VAEDecode`、`JsonExtractString`、`StringCompare`、`KSampler`、`SaveImage`、`TextEncodeQwenImage21`、`Text`、`SaveImageAdvanced`、`ResolutionSelector`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
-
-## 学习发现
-
-- 次要节点 `StringCompare` 知识库中没有该节点类型的任何知识

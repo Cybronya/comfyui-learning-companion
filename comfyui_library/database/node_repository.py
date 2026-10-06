@@ -32,7 +32,8 @@ class NodeRepository:
             entry["category"] = category
         if workflow_id not in entry["used_in"]:
             entry["used_in"].append(workflow_id)
-        self.db.save()
+        if self.db.auto_save:
+            self.db.save()
 
     def workflows_using(self, node: str):
         """哪些 workflow 用了这个节点；没登记过返回空列表"""

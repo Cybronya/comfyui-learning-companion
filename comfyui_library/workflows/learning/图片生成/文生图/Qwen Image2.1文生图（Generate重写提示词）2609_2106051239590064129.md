@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
 hash: 2dc366b528e9fc35
 coverage: 0.68
-learned_at: 2026-10-06 22:38:28
+learned_at: 2026-10-07 02:23:51
 nodes: [MarkdownNote, Note, UNETLoader, TextEncodeQwenImage21, VAELoader, EmptyLatentImage, CLIPLoader, PrimitiveStringMultiline, RegexExtract, StringConcatenate, SeedVR2LoadVAEModel, SaveImage, SaveImageAdvanced, VAEDecode, SetNode, SeedVR2VideoUpscaler, GetNode, TextGenerate, PreviewAny, KSampler, SeedVR2LoadDiTModel, SaveImage, PrimitiveStringMultiline, Fast Groups Bypasser (rgthree), ResolutionSelector]
 patterns: []
 missing: []

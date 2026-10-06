@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生+图像编辑一体化_2105178276711976962.json
 hash: f7d97a2a41864706
 coverage: 0.785714
-learned_at: 2026-10-06 22:57:10
+learned_at: 2026-10-07 02:15:17
 nodes: [孤海注释, CLIPLoader, VAELoader, QwenImage21SpectrumT8, TextEncodeQwenImage21GH, KSampler, VAEDecode, RestoreQwenImage21GH, SaveImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, UNETLoader, GetNode, Image Comparer (rgthree), GoohaiRouteBlocker, GoohaiRatioAndResolution, ShowText|pysssss, QwenImagePromptOptimizer, 忽略多组孤海, DF_Text_Box, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, SetNode, GoohaiRouteBlocker, LoadImage]
 patterns: []
 missing: [忽略多组孤海]

@@ -68,6 +68,12 @@ class LearningStore:
         self.use_hash = use_hash
         self.write_index = write_index
 
+        # 记录缓存（key -> record），惰性构建。库过千条后，
+        # write() 每次为渲染 index.md 全量重读所有 Markdown
+        # （单次写 7s+），这是批量学习变慢的主因之一。
+        # 进程内一旦读过就信任缓存；write/prune 会同步维护。
+        self._cache = None
+
     # ---------- 读写单条 ----------
 
     def record_file(self, key: str) -> Path:
@@ -173,6 +179,9 @@ class LearningStore:
                 to_markdown(record), encoding="utf-8"
             )
 
+            if self._cache is not None:
+                self._cache[record.key] = record
+
             if self.write_index:
                 self._update_index()
 
@@ -195,6 +204,9 @@ class LearningStore:
 
         if path.exists():
             path.unlink()
+
+            if self._cache is not None:
+                self._cache.pop(key, None)
 
             # 顺带清掉空目录，保持 learning/ 干净
             parent = path.parent
@@ -226,7 +238,10 @@ class LearningStore:
         if not self.root.exists():
             return []
 
-        records = []
+        if self._cache is not None:
+            return list(self._cache.values())
+
+        cache = {}
 
         for path in sorted(self.root.rglob("*.md")):
             # index.md 是汇总表，不是记录
@@ -241,9 +256,10 @@ class LearningStore:
                 continue
 
             if record.key:
-                records.append(record)
+                cache[record.key] = record
 
-        return records
+        self._cache = cache
+        return list(cache.values())
 
     def completed_records(self) -> List[LearningRecord]:
         """

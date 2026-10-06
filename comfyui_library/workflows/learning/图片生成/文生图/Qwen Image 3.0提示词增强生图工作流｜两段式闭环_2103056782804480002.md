@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 3.0提示词增强生图工作流｜两段式闭环_2103056782804480002.json
 hash: 37631bdc20496f1d
 coverage: 0.75
-learned_at: 2026-10-06 22:38:17
+learned_at: 2026-10-07 02:22:35
 nodes: [CR Prompt Text, RH_QwenImagePromptEnhancer, SaveImage, Note, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, TextEncodeQwenImageEditPlus, EmptySD3LatentImage, KSampler, VAEDecode]
 patterns: []
 missing: [CR Prompt Text, RH_QwenImagePromptEnhancer]

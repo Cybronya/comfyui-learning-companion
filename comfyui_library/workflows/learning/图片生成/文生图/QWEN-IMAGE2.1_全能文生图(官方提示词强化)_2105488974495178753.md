@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/QWEN-IMAGE2.1_全能文生图(官方提示词强化)_2105488974495178753.json
 hash: 901aa7f9aaa1108d
 coverage: 0.666667
-learned_at: 2026-10-06 22:58:18
+learned_at: 2026-10-07 02:26:21
 nodes: [VAELoader, UNETLoader, CLIPLoader, CLIPLoader, SeedVR2LoadDiTModel, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, ImageScaleToTotalPixels, KSampler, SaveImage, PrimitiveStringMultiline, PrimitiveStringMultiline, EmptyLatentImage, ResolutionSelector, StringFormat, Image Comparer (rgthree), SaveImage, ShowAnything|Mie, VAEDecode, ShowAnything|Mie, TextGenerate, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), RegexExtract, PrimitiveStringMultiline, TextEncodeQwenImage21, ComfySwitchNode]
 patterns: []
 missing: [ShowAnything|Mie, ShowAnything|Mie]

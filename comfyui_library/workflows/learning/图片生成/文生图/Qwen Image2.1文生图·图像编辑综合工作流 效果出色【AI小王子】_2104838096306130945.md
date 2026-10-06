@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json
 hash: 6235188d2f1af307
 coverage: 0.6
-learned_at: 2026-10-06 22:57:52
+learned_at: 2026-10-07 02:23:40
 nodes: [LoadImage, VAELoader, LoadImage, LoadImage, Anything Everywhere, Text Multiline, CLIPLoader, UNETLoader, QwenImage21Cache, MarkdownNote, GetNode, ResolutionSelector, VAEDecode, SetNode, 忽略多组孤海, 孤海注释, LoadImage, LoadImage, Text Multiline, SaveImage, KSampler, AnySwitch, TextEncodeQwenImage21, EmptyLatentImage, ImageScaleToTotalPixels, VAEEncode, Image Comparer (rgthree), 孤海注释, 孤海注释, 忽略多组孤海]
 patterns: [image_to_image]
 missing: [Text Multiline, Text Multiline, 忽略多组孤海, 忽略多组孤海]

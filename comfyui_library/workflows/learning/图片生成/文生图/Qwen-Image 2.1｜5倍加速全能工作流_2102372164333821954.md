@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954.json
 hash: 0b5a6d94d20916ad
 coverage: 0.68
-learned_at: 2026-10-06 22:58:00
+learned_at: 2026-10-07 02:24:32
 nodes: [EmptyLatentImage, VAEDecode, KSampler, QwenImage21Cache, LoadImage, DrawMaskOnImage, LoadImage, easy int, LoadImage, ComfySwitchNode, CR Seed, ResolutionSelector, MarkdownNote, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, PrimitiveStringMultiline, PrimitiveStringMultiline, CLIPLoader, TextGenerateLTX2Prompt, easy showAnything, TextEncodeQwenImage21, PrimitiveStringMultiline, SaveImage]
 patterns: []
 missing: [easy int, CR Seed]

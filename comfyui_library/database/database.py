@@ -50,6 +50,11 @@ class WorkflowDatabase:
             self.data[section] = {}
         self.load()
 
+        # 每次写操作后是否立即落盘。库涨到 20MB+ 后，逐条全量
+        # 写盘成了性能瓶颈（批量学习 401 个文件 = 401 次全量写）。
+        # 批量场景应置 False，结束后显式调 save() 一次。
+        self.auto_save = True
+
         # 便捷入口：db.workflows.add(...) 即可，不必再手工 new 仓库
         self.workflows = WorkflowRepository(self)
         self.nodes = NodeRepository(self)

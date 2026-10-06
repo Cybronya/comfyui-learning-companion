@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 3.0文生图工作流｜阿里旗舰图像模型_2103055683909410817.json
 hash: 704dbfd0dbfcbde5
 coverage: 0.818182
-learned_at: 2026-10-06 22:38:19
+learned_at: 2026-10-07 02:22:38
 nodes: [SaveImage, Note, PrimitiveStringMultiline, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, TextEncodeQwenImageEditPlus, EmptySD3LatentImage, KSampler, VAEDecode]
 patterns: []
 missing: []

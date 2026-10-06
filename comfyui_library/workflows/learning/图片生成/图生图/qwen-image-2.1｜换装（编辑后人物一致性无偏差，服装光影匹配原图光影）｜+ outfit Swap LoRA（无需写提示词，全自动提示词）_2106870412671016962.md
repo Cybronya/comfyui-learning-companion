@@ -6,13 +6,13 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1｜换装（编辑后人物一致性无偏差，服装光影匹配原图光影）｜+ outfit Swap LoRA（无需写提示词，全自动提示词）_2106870412671016962.json
 hash: 39686ee69994f015
-coverage: 0.526316
-learned_at: 2026-10-06 22:31:51
+coverage: 0.552632
+learned_at: 2026-10-07 02:41:28
 nodes: [ComfySwitchNode, UNETLoader, LoraLoaderModelOnly, ComfySwitchNode, RegexMatch, TextGenerate, RegexReplace, JjkText, PrimitiveBoolean, JjkText, JjkText, TextGenerate, ComfySwitchNode, JjkText, JjkText, RegexMatch, TextGenerate, JjkText, LoadImage, VAEDecode, KSampler, SplitImageWithAlpha, VAELoader, CLIPLoader, LoadImage, StringFormat, JjkShowText, Note, Label (rgthree), Label (rgthree), Label (rgthree), TextEncodeQwenImage21, Note, QwenImage21Cache, Note, Note, Image Comparer (rgthree), SaveImage]
 patterns: []
-missing: [JjkShowText, Label (rgthree), Label (rgthree), Label (rgthree)]
+missing: [Label (rgthree), Label (rgthree), Label (rgthree)]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 371892550278457, "steps": 25}
-discoveries: [次要节点 `JjkShowText` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/qwen-image-2.1｜换装（编辑后人物一致性无偏差，服装光影匹配原图光影）｜+ outfit Swap LoRA（无需写提示词，全自动提示词）_2106870412671016962.json
@@ -74,17 +74,16 @@ discoveries: [次要节点 `JjkShowText` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **53%**（20/38）
+覆盖率 **55%**（21/38）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`RegexMatch`、`TextGenerate`、`RegexReplace`、`PrimitiveBoolean`、`LoadImage`、`VAEDecode`、`KSampler`、`SplitImageWithAlpha`、`VAELoader`、`CLIPLoader`、`StringFormat`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`SaveImage`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`RegexMatch`、`TextGenerate`、`RegexReplace`、`PrimitiveBoolean`、`LoadImage`、`VAEDecode`、`KSampler`、`SplitImageWithAlpha`、`VAELoader`、`CLIPLoader`、`StringFormat`、`JjkShowText`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`SaveImage`
 
-**缺卡**（4）：`JjkShowText`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`
+**缺卡**（3）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、QwenImage21Cache
 
 ## 学习发现
 
-- 次要节点 `JjkShowText` 知识库中没有该节点类型的任何知识
 - 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

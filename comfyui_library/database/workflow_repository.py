@@ -68,7 +68,8 @@ class WorkflowRepository:
             if entry and workflow.id in entry["used_in"]:
                 entry["used_in"].remove(workflow.id)
 
-        self.db.save()
+        if self.db.auto_save:
+            self.db.save()
         return dict(workflows[workflow.id])
 
     def delete(self, workflow_id: str) -> bool:
@@ -88,7 +89,8 @@ class WorkflowRepository:
         for entry in self.db.data["nodes"].values():
             if workflow_id in entry["used_in"]:
                 entry["used_in"].remove(workflow_id)
-        self.db.save()
+        if self.db.auto_save:
+            self.db.save()
         return True
 
     # ---------- 查 ----------

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
 hash: 5c31f2f2d34c2415
 coverage: 0.608696
-learned_at: 2026-10-06 22:38:32
+learned_at: 2026-10-07 02:24:02
 nodes: [Seed (rgthree), EmptyLatentImage, VAELoader, CLIPLoader, UNETLoader, VAEDecode, SaveImage, LoadImage, ResolutionSelector, llama_cpp_model_loader, LayerUtility: TextJoin, llama_cpp_parameters, PrimitiveStringMultiline, MarkdownNote, KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, MarkdownNote, TextEncodeQwenImage21, PreviewAny, llama_cpp_instruct_adv, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline]
 patterns: []
 missing: [LayerUtility: TextJoin, Seed (rgthree)]

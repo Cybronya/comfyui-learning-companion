@@ -35,7 +35,8 @@ class PatternRepository:
                 continue
             if name not in record.get("patterns", []):
                 record.setdefault("patterns", []).append(name)
-        self.db.save()
+        if self.db.auto_save:
+            self.db.save()
 
     def get(self, name: str):
         """单模式详情副本 dict；不存在返回 None"""

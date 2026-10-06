@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedream V4.5 文生图｜4K画质_2097885433970647042.json
 hash: 56ab38b0c8ee806f
 coverage: 0.333333
-learned_at: 2026-10-06 22:58:59
+learned_at: 2026-10-07 02:31:20
 nodes: [SaveImage, RH_SeedreamV45TextToImage, PreviewImage]
 patterns: []
 missing: [RH_SeedreamV45TextToImage]

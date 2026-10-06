@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/BF16精度Qwen_Image_2.1文生图，小字不崩高质量文字渲染工作流_2105503929613250561.json
 hash: a438f5d92158e040
 coverage: 0.9
-learned_at: 2026-10-06 22:56:32
+learned_at: 2026-10-07 02:05:33
 nodes: [VAEDecode, EmptyLatentImage, KSampler, TextEncodeQwenImage21, VAELoader, ResolutionSelector, CR Prompt Text, SaveImage, SaveImageAdvanced, CLIPLoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: [CR Prompt Text]

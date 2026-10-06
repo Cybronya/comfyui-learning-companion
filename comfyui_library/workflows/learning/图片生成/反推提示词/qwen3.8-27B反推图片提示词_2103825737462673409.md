@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/qwen3.8-27B反推图片提示词_2103825737462673409.json
 hash: 596bb86b5e048cc4
 coverage: 0.666667
-learned_at: 2026-10-06 22:27:35
+learned_at: 2026-10-07 02:41:05
 nodes: [llama_cpp_model_loader, SaveImage, PreviewAny, easy saveText, llama_cpp_instruct_adv, LoadImage]
 patterns: []
 missing: [easy saveText]

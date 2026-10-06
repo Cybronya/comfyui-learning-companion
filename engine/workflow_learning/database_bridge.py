@@ -88,6 +88,26 @@ def sync_record(
     database: WorkflowDatabase,
     verbose: bool = False,
 ) -> bool:
+    # 单条镜像内也批量：WorkflowRepository.add 会对每个节点
+    # register 一次，逐条落盘时 200 节点 = 200 次全量写 21MB
+    prev = database.auto_save
+    database.auto_save = False
+    try:
+        result = _sync_record_impl(record, database, verbose)
+    finally:
+        # 只有调用方没进批量模式时才在本条结束时落盘；
+        # learn_folder / sync_all 会在整批结束后统一 save
+        if prev:
+            database.save()
+        database.auto_save = prev
+    return result
+
+
+def _sync_record_impl(
+    record: LearningRecord,
+    database: WorkflowDatabase,
+    verbose: bool = False,
+) -> bool:
     """
     把一条学习记录镜像进数据库（workflow 记录 + 经验载荷）
 
@@ -130,14 +150,21 @@ def sync_all(
     """
     synced = skipped = failed = 0
 
-    for record in store.all_records():
-        if record.status == STATUS_SKIPPED:
-            skipped += 1
-            continue
-        if sync_record(record, database, verbose=verbose):
-            synced += 1
-        else:
-            failed += 1
+    # 批量迁移同理：关逐条落盘（库 20MB+ 时逐条全量写是主要瓶颈），
+    # 结束统一 save 一次；异常也要落盘，不能丢整批
+    database.auto_save = False
+    try:
+        for record in store.all_records():
+            if record.status == STATUS_SKIPPED:
+                skipped += 1
+                continue
+            if sync_record(record, database, verbose=verbose):
+                synced += 1
+            else:
+                failed += 1
+    finally:
+        database.save()
+        database.auto_save = True
 
     return {"synced": synced, "skipped": skipped, "failed": failed}
 

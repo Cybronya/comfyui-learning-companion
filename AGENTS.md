@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-06
+- 最后更新：2026-10-07
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -74,13 +74,21 @@ GitHub 走本地代理 **`127.0.0.1:3067`**（Karing）。
 - 镜像前缀只能用于下载，**不能用于 push**。
 - 本节只在你已决定推送后用得上；**推送触发条件见 3.1 推送纪律**。
 
-### 3.3 Python
+### 3.3 RunningHub 下载（2026-10-07 用户明确要求）
+
+- **无论什么情况都用登录态下载**。工作流导出（`/api/workflow/export`）
+  一律走自动化浏览器的登录态（Playwright 持久配置，页头有个人按钮），
+  **禁止匿名 API 直调导出**。市场列表 / 分类树等只读接口可匿名。
+- 412（作者导出限制）处理顺序见 `skills/comfyui-learning/tools/README.md`：
+  先按 ID/标题在既有目录找 → 浏览器登录态走「下载」按钮 → 仍失败记例外不重试。
+
+### 3.4 Python
 
 - 版本 3.12.10。
 - 工具脚本与引擎代码**只用标准库**，不引入第三方依赖。
 - 读 JSON 一律 `utf-8-sig`（Windows 下 ComfyUI 导出的 JSON 带 BOM）。
 
-### 3.4 测试
+### 3.5 测试
 
 测试脚本在 `engine/test_*.py`，共 **18 个**（`test_database.py` /
 `test_database_integration.py` 测的是 `comfyui_library/database` 及其引擎接入）。
@@ -403,6 +411,33 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-07 性能修复（批量学习慢的根因）**：用户反馈执行明显变慢，
+剖析出三层瓶颈并全部修复：
+1. **数据库逐条全量落盘**（主因）：`WorkflowRepository.add` 内部对每个
+   节点 register 一次，每次都全量写 21MB JSON——200 节点的 workflow
+   一次镜像 = 200 次全量写。修复：`WorkflowDatabase.auto_save` 开关
+   （默认 True 行为不变），批量路径（`learn_folder` / `sync_all` /
+   `sync_record`）统一改为整批只 save 一次，异常也保证落盘。
+2. **索引全量重渲染**：`LearningStore.write` 每写一条就重读全部
+   Markdown 渲染 index.md（千条时单次写 7s+）。修复：记录缓存
+   `_cache`（key→record，惰性构建，write/remove 同步维护）。
+3. `sync_record` 批量模式下重复落盘（自己引入的），改为仅在
+   非批量调用时落盘。
+实测：单文件学习（带库镜像）5.1s → **1.7s**；650+ 文件全量重跑
+54s。注意库 21MB 后 `save()` 单次约 0.7-3s（indent=4），批量模式
+下每轮只发生一次。另：当日中断的后台学习任务残留进程曾占用记录
+文件导致测试 PermissionError，已清理——**后台任务取消后要确认
+进程已退出**再跑测试。
+
+**2026-10-07 RunningHub 下载（图片生成/文生图 +401）**：环境无
+requests，`collect_by_tag.py` / `download_by_ids.py` 均已改为
+标准库 `urllib` 兜底（接口行为与抓包事实一致）。收集续至 401，
+下载 401 个新文生图工作流（0 失败），导入闸门拦截 501 个重复后
+全部入库学习（0 失败），新增节点 93 种 → 补卡（606 → **699 张**）。
+全库 **1051 条**：平均 74% / 中位数 77%，浅懂（<20%）0。
+另：改用 urllib 后 412 例外数与之前一致（少数作者限制导出，
+按 3.3 节登录态流程处理）。
 
 **2026-10-07 视频生成目录分类（理解度实测）**：用户建
 `workflows/视频生成/{图生视频,文生视频,视频生视频}` 三小类并把 146 个

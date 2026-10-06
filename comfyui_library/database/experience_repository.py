@@ -32,7 +32,8 @@ class ExperienceRepository:
             "tags": list(tags or []),
             "data": dict(data or {}),
         }
-        self.db.save()
+        if self.db.auto_save:
+            self.db.save()
 
     def get(self, workflow_id: str):
         """单条经验副本 dict；不存在返回 None"""
@@ -51,5 +52,6 @@ class ExperienceRepository:
         removed = self.db.data["experiences"].pop(workflow_id, None)
         if removed is None:
             return False
-        self.db.save()
+        if self.db.auto_save:
+            self.db.save()
         return True

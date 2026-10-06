@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 hash: 0b1190cc623fa661
 coverage: 0.909091
-learned_at: 2026-10-06 22:36:57
+learned_at: 2026-10-07 02:15:43
 nodes: [UNETLoader, LoraLoaderModelOnly, VAELoader, CLIPLoader, EmptyLatentImage, TextEncodeQwenImage21, SaveImage, KSampler, VAEDecode, PrimitiveStringMultiline, ResolutionSelector]
 patterns: []
 missing: []

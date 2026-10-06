@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/千问image2.1文生图_创意海报_微小字体不崩坏_2105577600121921537.json
 hash: 3c170b22da59f3da
 coverage: 0.733333
-learned_at: 2026-10-06 22:40:00
+learned_at: 2026-10-07 02:37:01
 nodes: [CLIPLoader, ShowText|pysssss, UNETLoader, VAELoader, ResolutionSelector, EmptyLatentImage, TextEncodeQwenImage21, Seed (rgthree), VAEDecode, SaveImageAdvanced, KSampler, SaveImage, 忽略多组孤海, QwenPERewriteT8, Text Multiline]
 patterns: []
 missing: [Text Multiline, 忽略多组孤海, Seed (rgthree)]

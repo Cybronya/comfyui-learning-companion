@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
 hash: 225bc956f4a7f18f
 coverage: 0.666667
-learned_at: 2026-10-06 22:58:54
+learned_at: 2026-10-07 02:30:58
 nodes: [MuyeTextEditOutput, SaveVideo, RH_SeedanceV15ProTextToVideoFast]
 patterns: []
 missing: [RH_SeedanceV15ProTextToVideoFast]

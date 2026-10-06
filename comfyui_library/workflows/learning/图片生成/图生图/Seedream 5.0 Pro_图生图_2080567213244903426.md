@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedream 5.0 Pro_图生图_2080567213244903426.json
 hash: ceb3440ee40a2b1a
 coverage: 0.75
-learned_at: 2026-10-06 22:32:21
+learned_at: 2026-10-07 02:41:31
 nodes: [SaveImage, Text, RH_SeedreamV5ProImageToImage, LoadImage]
 patterns: []
 missing: [RH_SeedreamV5ProImageToImage]

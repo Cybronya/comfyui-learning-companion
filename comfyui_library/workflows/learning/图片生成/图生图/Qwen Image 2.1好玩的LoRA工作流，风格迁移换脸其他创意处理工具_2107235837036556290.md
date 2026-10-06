@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1好玩的LoRA工作流，风格迁移换脸其他创意处理工具_2107235837036556290.json
 hash: 795d296fda5b3b48
 coverage: 0.731343
-learned_at: 2026-10-06 22:31:07
+learned_at: 2026-10-07 02:41:24
 nodes: [SetNode, EmptyLatentImage, VAELoader, UNETLoader, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, TextEncodeQwenImage21, Image Comparer (rgthree), AddLabel, QwenImage21Cache, PreviewImage, CLIPLoader, LoadImage, GetNode, GetNode, easy showAnything, TTResolutionSelector, BatchImagesNode, ResolutionSelector, ImageConcatMulti, LoadImage, SetNode, TTResolutionSelector, ImageResizeKJv2, CR Prompt Text, CLIPLoader, KSampler, MuyeTextEditOutput, TextGenerate, ImageResizeKJv2, LoraLoaderModelOnly, SaveImage, SaveImageAdvanced, easy cleanGpuUsed, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [easy cleanGpuUsed, CR Prompt Text]

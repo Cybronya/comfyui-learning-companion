@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/【Qwen_Image_2.1】文生图_官方PE丨老许Gary_2102919042645454849.json
 hash: 7ba7f3343e91b677
 coverage: 0.6875
-learned_at: 2026-10-06 22:59:13
+learned_at: 2026-10-07 02:34:00
 nodes: [TextEncodeQwenImage21, KSampler, UNETLoader, CLIPLoader, VAELoader, SaveImage, CLIPLoader, EmptyLatentImage, TextGenerate, VAEDecode, PreviewImage, ResolutionSelector, PreviewAny, MarkdownNote, CR Prompt Text, CR Prompt Text]
 patterns: []
 missing: [CR Prompt Text, CR Prompt Text]

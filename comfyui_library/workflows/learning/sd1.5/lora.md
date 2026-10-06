@@ -7,7 +7,7 @@ source: png
 file: comfyui_library/workflows/sd1.5/lora.png
 hash: 9d318e7ac04c1fdf
 coverage: 0.888889
-learned_at: 2026-10-06 22:25:08
+learned_at: 2026-10-07 02:40:52
 nodes: [VAEDecode, SaveImage, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, LoraLoader, CheckpointLoaderSimple, KSampler, MarkdownNote]
 patterns: [text_to_image, lora]
 missing: []

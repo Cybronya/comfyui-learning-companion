@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json
 hash: a0e2d49db878d4ee
 coverage: 0.361702
-learned_at: 2026-10-06 22:59:20
+learned_at: 2026-10-07 02:34:25
 nodes: [LayerFilter: HDREffects, SetNode, GetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, ImageCaptionNode, CR Seed, Note, CR Text Input Switch (4 way), KSampler (Efficient), SetNode, VAELoader, ConditioningZeroOut, CLIPLoader, ShowText|pysssss, Fast Groups Bypasser (rgthree), EmptySD3LatentImage, Note, Label (rgthree), Label (rgthree), VOSR2Upscale, VOSR2ModelLoader, Image Comparer (rgthree), SaveImage, ResolutionSelector, EmptySD3LatentImage, CR Latent Input Switch, LoadImage, PreviewImage, UNETLoader, LoraLoaderModelOnly, TESpeedQwenImage21, SplitImageWithAlpha, easy imageChooser, SaveImage, Text Multiline, SetNode, TextEncodeQwenImage21, GetNode, easy positive, TextGenerate, CLIPLoader]
 patterns: []
 missing: [CR Text Input Switch (4 way), ImageCaptionNode, Label (rgthree), Label (rgthree), LayerFilter: HDREffects, TESpeedQwenImage21, Text Multiline, easy imageChooser, easy positive, KSampler (Efficient), CR Latent Input Switch, CR Seed]

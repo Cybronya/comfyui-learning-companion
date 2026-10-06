@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
 hash: 6974e5516fda7c61
 coverage: 0.586957
-learned_at: 2026-10-06 22:56:25
+learned_at: 2026-10-07 02:04:25
 nodes: [SetNode, SetNode, GetNode, easy promptLine, ResolutionSelector, EmptyLatentImage, GetNode, VOSR2ModelLoader, SaveImage, SaveImage, SplitImageWithAlpha, SetNode, GetNode, KSamplerAdvanced, SeedVR2Conditioning, JoinImageWithAlpha, KSampler, SeedVR2Preprocess, UNETLoader, VAELoader, ModelAttentionBackend, TextEncodeQwenImage21, Text Multiline, TextGenerateLTX2Prompt, ResizeImageMaskNode, Text Multiline, CLIPLoader, Fast Groups Bypasser (rgthree), ShowText|pysssss, SaveImage, Image Comparer (rgthree), VAELoader, VAEDecodeTiled, VAEEncodeTiled, VOSR2Upscale, easy cleanGpuUsed, VAEDecode, easy cleanGpuUsed, SplitImageWithAlpha, GetNode, easy cleanGpuUsed, UNETLoader, SeedVR2PostProcessing, easy cleanGpuUsed, Image Comparer (rgthree), Image Comparer (rgthree)]
 patterns: []
 missing: [Text Multiline, Text Multiline, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy promptLine]

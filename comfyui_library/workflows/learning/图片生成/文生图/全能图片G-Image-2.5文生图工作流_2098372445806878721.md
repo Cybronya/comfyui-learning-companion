@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/全能图片G-Image-2.5文生图工作流_2098372445806878721.json
 hash: de2311c19dc259a6
 coverage: 0.818182
-learned_at: 2026-10-06 22:59:32
+learned_at: 2026-10-07 02:35:12
 nodes: [SaveImage, Note, PrimitiveStringMultiline, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, TextEncodeQwenImageEditPlus, EmptySD3LatentImage, KSampler, VAEDecode]
 patterns: []
 missing: []

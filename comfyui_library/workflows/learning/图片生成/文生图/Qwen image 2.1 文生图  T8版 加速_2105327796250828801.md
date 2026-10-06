@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json
 hash: e461b780b2680844
 coverage: 0.9
-learned_at: 2026-10-06 22:57:18
+learned_at: 2026-10-07 02:15:39
 nodes: [CLIPLoader, VAELoader, VAEDecode, KSampler, QwenImage21Cache, SaveImage, UNETLoader, EmptyLatentImage, CLIPLoader, TextEncodeQwenImage21, ResolutionSelector, easy showAnything, TextGenerateLTX2Prompt, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImage21Cache, CR Text, UNETLoader, SaveImageAdvanced]
 patterns: []
 missing: [CR Text]

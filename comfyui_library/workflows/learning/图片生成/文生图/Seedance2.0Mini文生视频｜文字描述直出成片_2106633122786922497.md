@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json
 hash: f60e123f1efcb763
 coverage: 1
-learned_at: 2026-10-06 22:39:26
+learned_at: 2026-10-07 02:31:12
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20MiniTextToVideo]
 patterns: []
 missing: []
