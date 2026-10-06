@@ -603,7 +603,12 @@ class GraphBuilder:
             # 节点太多的 workflow 产生的配对是噪声，不统计
             return
 
-        unique = sorted(set(nodes))
+        # 布线/注释/预览节点与谁都"共现"，纯噪声；
+        # 与 workflow_learning 的忽略清单共享同一份定义
+        from ..workflow_learning.ignore_nodes import is_ignored
+        unique = sorted({
+            n for n in nodes if not is_ignored(n)
+        })
         for i, left in enumerate(unique):
             for right in unique[i + 1:]:
                 self._co_use_counts[(left, right)] = (

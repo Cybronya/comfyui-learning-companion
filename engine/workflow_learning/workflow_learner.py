@@ -24,6 +24,7 @@ from .learning_record import (
     STATUS_FAILED,
 )
 from .workflow_scanner import load_png_workflow
+from .ignore_nodes import is_ignored
 from .paths import relative_to_project
 
 
@@ -269,6 +270,8 @@ class WorkflowLearner:
                 known,
                 core_nodes=record.important_nodes,
             )
+            # 布线/注释/预览节点不建卡，也不算知识缺口
+            gaps = [g for g in gaps if not is_ignored(g.node_type)]
             record.missing_nodes = [g.node_type for g in gaps]
 
             # 缺口本身就是最有价值的发现

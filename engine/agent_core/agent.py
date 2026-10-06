@@ -42,6 +42,7 @@ class ComfyUIAgent:
         retriever=None,
         generator=None,
         learner=None,
+        graph_query=None,
         config: Dict = None,
         auto_modules: bool = True
     ) -> None:
@@ -53,9 +54,11 @@ class ComfyUIAgent:
             analyzer: WorkflowAnalyzer 实例
             context: ContextManager 实例
             diagnostics: DiagnosticEngine 实例
-            retriever: KnowledgeRetriever 实例
-            generator: ResponseGenerator 实例
-            learner: knowledge_evolution 模块（用于 evolve()，不在 ask 链路上）
+        retriever: KnowledgeRetriever 实例
+        generator: ResponseGenerator 实例
+        learner: knowledge_evolution 模块（用于 evolve()，不在 ask 链路上）
+        graph_query: GraphQuery 实例（跨条目图谱查询；不传则按 config
+                     的 graph_json_path 加载已落盘的图）
             config: 配置覆盖项
             auto_modules: 未传入的模块自动装配真实实现（路径取 config）。
                           **默认开**：全 None 的 Agent 六个阶段全部跳过，
@@ -73,6 +76,7 @@ class ComfyUIAgent:
         self.retriever = retriever
         self.generator = generator
         self.learner = learner
+        self.graph_query = graph_query
 
         if auto_modules and (
             self.parser is None or self.analyzer is None
@@ -127,6 +131,20 @@ class ComfyUIAgent:
 
         if self.learner is None:
             self.learner = evolve
+
+        if self.graph_query is None and self.config.get("enable_graph"):
+            # 图谱优先读落盘 JSON（毫秒级）；没建过图就保持 None，
+            # retrieve 阶段会记录跳过原因 —— 不在 init 里现场建图，
+            # 那需要扫全部学习记录，构造一个 Agent 不该花几秒钟
+            from ..knowledge_graph import GraphStore
+            store = GraphStore(self.config["graph_json_path"])
+            try:
+                graph = store.load()
+            except Exception:
+                graph = None
+            if graph is not None:
+                from ..knowledge_graph import GraphQuery
+                self.graph_query = GraphQuery(graph)
 
     # ---------- 主入口 ----------
 
@@ -389,7 +407,99 @@ class ComfyUIAgent:
             limit=effective_limit or 0,
         )
 
+        self._collect_graph_facts(state)
+
         return state
+
+    # ---------- 图谱：跨条目事实 ----------
+
+    def _collect_graph_facts(self, state: AgentState) -> None:
+        """
+        从知识图谱收集跨条目事实
+
+        检索（retrieval）只能答「这个节点是什么」，图谱才能答
+        「哪些流程用了它 / 它常和谁一起出现」。问题文本里命中了
+        节点名（或带 workflow 时命中其节点）才查，查到的事实
+        写进 state.graph_facts，respond 阶段追加到回答末尾。
+        """
+        if self.graph_query is None or not self.config.get("enable_graph"):
+            state.skip_stage("graph", "未启用或未注入图谱")
+            return
+
+        q = self.graph_query
+
+        # 候选节点：优先用本次解析出的 workflow 节点；
+        # 纯文字提问时在图内节点名里找问题文本的命中
+        candidates = state.workflow_nodes()
+        if not candidates:
+            lowered = state.question.lower()
+            candidates = [
+                node.name
+                for node in q.graph.nodes_of_type("node")
+                if node.name and node.name.lower() in lowered
+            ]
+        else:
+            # 问题里点名的节点排最前 —— 用户问了谁就该优先答谁，
+            # 不然会被 workflow 里其他节点挤掉（上限只有几条）
+            lowered = state.question.lower()
+            candidates = sorted(
+                candidates,
+                key=lambda n: n.lower() not in lowered,
+            )
+
+        facts: List[str] = []
+        seen = set()
+        for name in candidates:
+            node_id = q.resolve(name, "node")
+            if not node_id or node_id in seen:
+                continue
+            seen.add(node_id)
+
+            node = q.graph.get_node(node_id)
+            if node is None or not node.get("has_card"):
+                continue  # 没卡的知识检索阶段已经会提示缺口
+
+            users = q.workflows_using(name)
+            if users:
+                preview = "、".join(users[:3])
+                more = f" 等 {len(users)} 个" if len(users) > 3 else ""
+                facts.append(
+                    f"知识图谱：节点 `{name}` 被 {len(users)} 个"
+                    f"已学习的 workflow 使用（如 {preview}{more}）"
+                )
+
+            partners = self._top_co_partners(node_id)
+            if partners:
+                text = "、".join(
+                    f"`{p.replace('node:', '')}`({c})"
+                    for p, c in partners
+                )
+                facts.append(
+                    f"知识图谱：`{name}` 常与 {text} 一起出现"
+                    "（括号内为共现 workflow 数）"
+                )
+
+            if len(facts) >= 6:
+                break
+
+        state.graph_facts = facts
+        state.add_stage("graph")
+
+    def _top_co_partners(self, node_id: str, top: int = 5):
+        """节点共现最密的伙伴（按共现 workflow 数排序）"""
+        counts: Dict[str, int] = {}
+        edges = self.graph_query.graph.out_edges(
+            node_id, "co_used"
+        ) + self.graph_query.graph.in_edges(node_id, "co_used")
+        for e in edges:
+            other = (
+                e.target if e.source == node_id else e.source
+            )
+            counts[other] = counts.get(
+                other, 0
+            ) + e.properties.get("strength", 1)
+        ranked = sorted(counts.items(), key=lambda kv: -kv[1])
+        return ranked[:top]
 
     def _stage_respond(self, state: AgentState) -> AgentState:
         """
@@ -407,6 +517,12 @@ class ComfyUIAgent:
         if hasattr(self.generator, "answer"):
             try:
                 state.answer = self.generator.answer(state)
+                if state.graph_facts:
+                    state.answer = (
+                        state.answer.rstrip()
+                        + "\n\n## 跨条目知识图谱\n\n"
+                        + "\n".join(f"- {f}" for f in state.graph_facts)
+                    )
             except Exception as e:
                 state.add_error("answer", e)
         else:

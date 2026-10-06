@@ -791,9 +791,12 @@ def test_default_location_end_to_end():
         summary = batch.learn_folder()
         print(f"  批次: 找到 {summary['total_found']}，"
               f"学习 {summary['learned']}，跳过 {summary['skipped']}")
-        assert summary["total_found"] == 3, \
+        # 不硬编码样本数（目录会持续扩充）；
+        # 关键不变量：扫描到的 = 学到的，状态目录/伴生文件不算 workflow
+        expected = len(WorkflowScanner().scan(str(WORKFLOWS_DIR)))
+        assert summary["total_found"] == expected, \
             "状态目录里的文件不应被算成 workflow"
-        assert summary["learned"] == 3
+        assert summary["learned"] == expected
 
         # 记录落在统一位置，目录结构镜像
         record = batch.store.read("sd1.5/basic.json")

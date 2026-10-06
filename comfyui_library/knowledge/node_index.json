@@ -1,147 +1,184 @@
 {
-    "version": "1.0",
-
-    "description": "ComfyUI Node Knowledge Base Index",
-
-    "nodes": {
-
-        "CheckpointLoaderSimple": {
-
-            "knowledge_file":
-            "checkpoint_loader_simple.md",
-
-            "category":
-            "Model Loading",
-
-            "role":
-            "load_checkpoint",
-
-            "difficulty":
-            "beginner",
-
-            "learning_topics": [
-                "checkpoint",
-                "model",
-                "vae",
-                "clip"
-            ]
-
-        },
-
-
-        "CLIPTextEncode": {
-
-            "knowledge_file":
-            "clip_text_encode.md",
-
-            "category":
-            "Text Conditioning",
-
-            "role":
-            "text_encoder",
-
-            "difficulty":
-            "beginner",
-
-            "learning_topics": [
-                "prompt",
-                "conditioning",
-                "clip"
-            ]
-
-        },
-
-
-        "EmptyLatentImage": {
-
-            "knowledge_file":
-            "empty_latent_image.md",
-
-            "category":
-            "Latent Generation",
-
-            "role":
-            "latent_initializer",
-
-            "difficulty":
-            "beginner",
-
-            "learning_topics": [
-                "latent",
-                "resolution",
-                "batch"
-            ]
-
-        },
-
-
-        "KSampler": {
-
-            "knowledge_file":
-            "ksampler.md",
-
-            "category":
-            "Diffusion Sampling",
-
-            "role":
-            "sampler",
-
-            "difficulty":
-            "beginner",
-
-            "learning_topics": [
-                "diffusion",
-                "steps",
-                "cfg",
-                "sampler"
-            ]
-
-        },
-
-
-        "VAEDecode": {
-
-            "knowledge_file":
-            "vae_decode.md",
-
-            "category":
-            "Latent Conversion",
-
-            "role":
-            "latent_decoder",
-
-            "difficulty":
-            "beginner",
-
-            "learning_topics": [
-                "vae",
-                "latent",
-                "image"
-            ]
-
-        },
-
-
-        "SaveImage": {
-
-            "knowledge_file":
-            "save_image.md",
-
-            "category":
-            "Output",
-
-            "role":
-            "image_output",
-
-            "difficulty":
-            "beginner",
-
-            "learning_topics": [
-                "output",
-                "file_management"
-            ]
-
-        }
-
+  "version": "1.1",
+  "description": "ComfyUI Node Knowledge Base Index",
+  "nodes": {
+    "CheckpointLoaderSimple": {
+      "knowledge_file": "checkpoint_loader_simple.md",
+      "category": "Model Loading",
+      "role": "load_checkpoint",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "checkpoint",
+        "model",
+        "vae",
+        "clip"
+      ]
+    },
+    "CLIPTextEncode": {
+      "knowledge_file": "clip_text_encode.md",
+      "category": "Text Conditioning",
+      "role": "text_encoder",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "prompt",
+        "conditioning",
+        "clip"
+      ]
+    },
+    "EmptyLatentImage": {
+      "knowledge_file": "empty_latent_image.md",
+      "category": "Latent Generation",
+      "role": "latent_initializer",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "latent",
+        "resolution",
+        "batch"
+      ]
+    },
+    "KSampler": {
+      "knowledge_file": "ksampler.md",
+      "category": "Diffusion Sampling",
+      "role": "sampler",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "diffusion",
+        "steps",
+        "cfg",
+        "sampler"
+      ]
+    },
+    "VAEDecode": {
+      "knowledge_file": "vae_decode.md",
+      "category": "Latent Conversion",
+      "role": "latent_decoder",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "vae",
+        "latent",
+        "image"
+      ]
+    },
+    "SaveImage": {
+      "knowledge_file": "save_image.md",
+      "category": "Output",
+      "role": "image_output",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "output",
+        "file_management"
+      ]
+    },
+    "LoraLoaderModelOnly": {
+      "knowledge_file": "lora_loader_model_only.md",
+      "category": "Model Loading",
+      "role": "load_lora_model",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "lora",
+        "model",
+        "strength"
+      ]
+    },
+    "LoadImage": {
+      "knowledge_file": "load_image.md",
+      "category": "Image Input",
+      "role": "image_input",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "image",
+        "input",
+        "upload"
+      ]
+    },
+    "CLIPLoader": {
+      "knowledge_file": "clip_loader.md",
+      "category": "Model Loading",
+      "role": "load_clip",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "clip",
+        "text_encoder",
+        "type"
+      ]
+    },
+    "VAELoader": {
+      "knowledge_file": "vae_loader.md",
+      "category": "Model Loading",
+      "role": "load_vae",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "vae",
+        "model",
+        "latent"
+      ]
+    },
+    "UNETLoader": {
+      "knowledge_file": "unet_loader.md",
+      "category": "Model Loading",
+      "role": "load_diffusion_model",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "unet",
+        "dit",
+        "weight_dtype"
+      ]
+    },
+    "LayerUtility: ImageScaleByAspectRatio V2": {
+      "knowledge_file": "layerutility_imagescalebyaspectratio_v2.md",
+      "category": "Image Processing",
+      "role": "image_resize",
+      "difficulty": "intermediate",
+      "learning_topics": [
+        "resize",
+        "aspect_ratio",
+        "letterbox"
+      ]
+    },
+    "ResolutionSelector": {
+      "knowledge_file": "resolution_selector.md",
+      "category": "Latent Generation",
+      "role": "resolution_helper",
+      "difficulty": "beginner",
+      "learning_topics": [
+        "resolution",
+        "aspect_ratio",
+        "width",
+        "height"
+      ]
+    },
+    "TextEncodeQwenImage21": {
+      "knowledge_file": "text_encode_qwen_image21.md",
+      "category": "Text Conditioning",
+      "role": "qwen_text_encoder",
+      "difficulty": "intermediate",
+      "learning_topics": [
+        "qwen",
+        "prompt",
+        "conditioning"
+      ]
+    },
+    "ConditioningZeroOut": {
+      "knowledge_file": "conditioning_zero_out.md",
+      "category": "Text Conditioning",
+      "role": "zero_conditioning",
+      "difficulty": "intermediate",
+      "learning_topics": [
+        "conditioning",
+        "negative",
+        "turbo"
+      ]
+    },
+    "QwenImage21Cache": {
+      "knowledge_file": "qwen_image21_cache.md",
+      "category": "Model Optimization",
+      "role": "model_cache",
+      "difficulty": "advanced",
+      "learning_topics": [
+        "qwen",
+        "cache",
+        "optimization"
+      ]
     }
+  }
 }

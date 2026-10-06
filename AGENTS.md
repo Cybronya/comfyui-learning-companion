@@ -171,12 +171,18 @@ engine/                       可执行层（v0.5 起）
                               （ExperienceLoader 优先读 WorkflowDatabase.experiences）
   retrieval/                  关键词召回 + 排序 → 喂给回答生成器（2026-10-05 新增）
   agent_core/                 总控：把上面模块编成六阶段 Agent（2026-10-06 新增）
+                              （2026-10-06 起 retrieve 阶段挂知识图谱：
+                               问题/工作流命中的节点追加跨条目事实到回答，
+                               config.enable_graph / graph_json_path 控制）
   autonomous_learning/        自主学习：给任务，Agent 自己读懂未知 workflow（2026-10-06 新增）
   workflow_learning/          批量学习：扫描目录 → 学 → 记 → 幂等重跑（2026-10-06 新增）
-                              （database_bridge.py：学习记录镜像进 comfyui_library/database）
+                              （database_bridge.py：学习记录镜像进 comfyui_library/database；
+                                ignore_nodes.py：布线节点忽略清单）
   learning_scheduler/         学习调度：定优先级 → 排队 → 执行 → 状态可续跑（2026-10-06 新增）
                               （判「已学」先查数据库 status，库里没有再回退 Markdown）
   knowledge_graph/            知识图谱：把 workflow/节点/模式/问题连成网，供跨条目查询（2026-10-06 新增）
+                              （2026-10-06 起 co_used 与 nodes_without_cards
+                               共享 workflow_learning 的布线节点忽略清单）
   workflow_index_manager.py   workflow / pattern 索引管理
 ```
 
@@ -264,7 +270,8 @@ engine/                       可执行层（v0.5 起）
 
 | 内容 | 状态 |
 |---|---|
-| 节点知识卡 | ✅ 6 张（Checkpoint / CLIPTextEncode / EmptyLatent / KSampler / SaveImage / VAEDecode）+ `node_index.json` v1.0（含 role / difficulty / learning_topics） |
+| 节点知识卡 | ✅ 16 张（原有 6 张 SD1.5 基础卡 + 2026-10-06 从 404 条学习记录按频次起草的 10 张高频卡：LoraLoaderModelOnly / LoadImage / CLIPLoader / VAELoader / UNETLoader / ImageScaleByAspectRatio V2 / ResolutionSelector / TextEncodeQwenImage21 / ConditioningZeroOut / QwenImage21Cache，可信度 Generated，参数分布为实测）+ `node_index.json` v1.1（含 role / difficulty / learning_topics） |
+| 布线节点忽略清单 | ✅ `engine/workflow_learning/ignore_nodes.py`（Note / Reroute / GetNode / SetNode / 注释与预览类等，不建卡、不计缺口；`node_frequency(exclude_ignored=True)` 排建卡优先级） |
 | Pattern 卡 | ✅ 2 张（sd15-t2i-basic / sd15-t2i-lora） |
 | 节点摘要 | ✅ 1 张（loraloader） |
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
@@ -396,6 +403,39 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-06 知识图谱接进回答链路（同日第二轮）**：
+- `agent_core` 的 retrieve 阶段新增 `_collect_graph_facts()`：问题文本或
+  当前 workflow 命中的节点，从图谱取「被多少个已学 workflow 使用 +
+  共现最密的伙伴（按 strength 排序）」，respond 阶段以
+  「## 跨条目知识图谱」小节追加到 `state.answer` 末尾；
+  事实同时存 `state.graph_facts`。Agent 默认从
+  `graph_json_path`（engine/knowledge_graph/knowledge_graph.json）
+  加载已落盘的图——init 不现场建图（那要扫全部学习记录），
+  没建过图就记 skip，不报错
+- `knowledge_graph` 的 co_used 共现与 `nodes_without_cards()` 建卡优先级
+  接入 `workflow_learning.ignore_nodes` 忽略清单：重建后 co_used
+  6238 → 4397 条（布线节点配对全部剔除），建卡优先级不再被
+  Note/GetNode 霸榜。图谱规模 1693 顶点 / 20641 边
+- 遗留（同待办 18）：`matches` 边仍为 0（归纳模式卡成员是合成数据，
+  待重跑 consolidation）
+
+**2026-10-06 知识飞轮首轮（批量学习 + 建卡）**：
+`comfyui_library/workflows/` 扩充到 **404 个真实 workflow**（Qwen Image 2.1 为主，
+含 H3 / Krea2 / FLUX / SDXL / Seedance 等），`workflow_learning` 批量学习全部学完
+（0 失败），学习记录与 `WorkflowDatabase`（404 workflow / 639 节点 / 404 experience）
+同步。据此完成「学习 → 统计 → 建卡」首轮闭环：
+
+- 新增 `ignore_nodes.py` 布线节点忽略清单（Note / Reroute / GetNode / SetNode /
+  注释与预览类），缺口检测不再把纯布线节点算成知识缺口，
+  `node_frequency(exclude_ignored=True)` 供建卡优先级排序
+  （否则 GetNode/SetNode 以 4600+ 次出现永久霸榜）
+- 从 404 条记录统计参数分布，起草 10 张高频节点知识卡（可信度 Generated，
+  卡内标注实测分布），`node_index.json` 升 v1.1（6 → 16 张卡）
+- 修复 `test_workflow_learning` D5 的过时断言（写测试时样本只有 3 个，
+  硬编码 `total_found == 3`，样本扩充后必然失败；改为与扫描结果对账）
+- 注意：D5 会备份→清空→重学→还原真实 learning 目录，
+  改学习逻辑后磁盘记录要**另跑一次 `learn_folder(force=True)`** 才会持久化
 
 **v0.5 引擎实装**：Phase 1（Workflow Loader）✅、Phase 2（analyzer 三件）✅ 之后，
 又完成了 context 上下文引擎、response_generator 回答生成、diagnostics 诊断引擎、learning_loop 学习循环、
@@ -529,10 +569,10 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
 2. **workflow 自动喂给演化**：`learning_loop` 的原始经验不含节点清单，
    `knowledge_evolution` 只能靠 `register_nodes()` 人工补。agent_core 已有解析结果，
    应在 `ask()` 里把节点清单回写，让 evolve() 能自动工作（现在需人工构造）
-3. **实战首跑**：`workflow_learning` 已能批量学 `comfyui_library/workflows/`，
-   但目前只有 sd1.5 一个样本（3 个文件）。需向 `{wan,flux,sdxl}/` 放入真实 workflow，
-   扩展节点卡与主题表覆盖（现有 6 张卡，实测覆盖率 sd1.5 basic 为 100%，
-   lora.png 为 78%，缺口是 `MarkdownNote`）
+3. **实战首跑（2026-10-06 已完成大半）**：`comfyui_library/workflows/` 已扩到 404 个真实
+   workflow 并全部学完。剩余：按 `node_frequency(exclude_ignored=True)` 的频次继续
+   起草高频节点卡（现有 16 张，缺卡节点仍有 600+ 种），并扩充主题表覆盖；
+   `{wan,flux,sdxl}/` 目录仍是空骨架（样本实际落在 `图片生成/` 下）
 4. **产出 workflow_manifest.json**：`skills/comfyui-learning/scanner/tools/build_manifest.py`
    已有该能力，但学习记录已统一到 `comfyui_library/workflows/learning/*.md`，
    manifest 应改为读 `learning/index.md`（避免两套 learned 状态不一致）
@@ -546,9 +586,10 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
 7. **knowledge_evolution 聚类缺陷回填**：它的 `PatternMiner.mine()` 仍是节点集合精确匹配，
    `knowledge_consolidation` 已改成 Jaccard 聚类但两边并存未打通。
    数据源不同（改动记录 vs 完整 workflow）所以不算重复，但算法应统一，否则长期发散
-8. **归纳样本量不足**：真实样本仅 3 个 workflow（都在 sd1.5），
-   `min_frequency=2` 下只能勉强聚出 1 个模式，不足以支撑「SDXL Portrait Pattern」
-   这类结论。需先扩充 `comfyui_library/workflows/` 的样本量
+8. **重跑归纳与图谱（样本已就位）**：样本已扩到 404 个 workflow（2026-10-06），
+   但 `knowledge_consolidation` 的现有模式卡仍是早期合成数据，
+   `knowledge_graph` 也未重建——需用全量样本重跑 consolidation 与 build_graph，
+   并处理同名不同 id 的重复上传样本（约 1/4）
 9. **知识卡格式统一化**：`KnowledgeDistiller` 现在按 Markdown 标题切段，
    但 `knowledge/patterns/*.md` 的标题层级不统一（有的用 H3 分组、有的用加粗），
    蒸馏出的片段偶尔混入 ASCII 示意图残片（如 sd15-t2i-basic 的节点连线图）。
@@ -570,10 +611,11 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
 15. **knowledge/ 卡片对齐 v0.3.1**：格式迁移 + 补 MiniMax H3 与 Wan 的差异对照卡（wan 卡内 TODO）
 16. **遗留清理（用户未决）**：旧 `workflow_analysis/`（复数）目录与现行 `workflow/`（单数）内容重叠；
     `memory/learning_records.md`、`workflow_index.json` 旧格式是否并入 memory 子技能体系
-17. **`knowledge_graph` 接进检索与回答**：`GraphQuery` 现在只能手动调用，
-    `retrieval._index_pattern_cards` 仍只扫 `patterns/*.md` 不扫 `_consolidated/`（同待办 6），
-    `agent_core` 的 `respond` 阶段也没查图。跨条目问题（「哪些流程用了 X」）
-    目前走不到回答链路
+17. **`knowledge_graph` 接进检索与回答（2026-10-06 已完成主链路）**：
+    `agent_core` 的 retrieve 阶段已查图并把跨条目事实追加进回答。
+    剩余：`retrieval._index_pattern_cards` 仍只扫 `patterns/*.md`
+    不扫 `_consolidated/`（同待办 6）；图谱事实目前只有
+    使用者/共现两类，问题边（problem_in）与多跳路径还没接进回答
 18. **`knowledge_graph` 的 matches 边目前为空**：`knowledge/patterns/_consolidated/`
     里的 3 张模式卡成员是早期演示时的合成数据（`sd15_basic_0.json`、`sdxl_portrait_0.json` 等），
     库里并不存在这些 workflow，所以真实图的 `matches` 边为 0。

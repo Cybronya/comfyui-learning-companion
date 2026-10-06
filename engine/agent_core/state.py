@@ -33,6 +33,9 @@ class AgentState:
     answer: str = ""
     # 7. 提示词：给 LLM 的输入（保留给接自有模型时用）
     response: Dict = field(default_factory=dict)
+    # 8. 图谱：跨条目事实（问题里提到的节点/流程在知识图谱里的关联）
+    #    每条是一句人读的中文，respond 阶段追加到 answer 末尾
+    graph_facts: List[str] = field(default_factory=list)
 
     # ---- 过程信息 ----
     # 本次是否复用了 set_workflow() 登记的工作流

@@ -27,6 +27,10 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     "retrieval_auto_build": False,  # 索引为空时是否自动从知识库重建
     "auto_build_index_if_empty": False,
 
+    # 知识图谱（跨条目查询：哪些流程用了 X / 节点常与谁共现）
+    "enable_graph": True,
+    "graph_json_path": "engine/knowledge_graph/knowledge_graph.json",
+
     # 上下文
     "context_store_path": "engine/context/context_store.json",
     "update_context": True,

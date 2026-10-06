@@ -9,6 +9,10 @@
 
 用法:
     python download_by_ids.py <ids1.txt> [ids2.txt ...] --out <输出目录>
+    python download_by_ids.py <ids.txt> --meta <meta.csv> --out <输出目录>
+    # --meta: 预载 collect_by_tag.py 产出的 meta 表（id,name,author,publishTime[,...]），
+    #         适合分类收集的 ID（无搜索关键词可翻页）；缺失的 ID 仍回退关键词搜索补齐。
+    #         可多次传入 --meta 合并多张表。
 
 产出:
     <输出目录>/<名字>_<id>.json     工作流文件（名字在前便于识别，ID 后缀保证唯一）
@@ -76,6 +80,39 @@ def build_manifest(ids: list[str], keyword: str) -> dict[str, dict]:
     return meta
 
 
+def load_meta_csv(path: Path) -> dict[str, dict]:
+    """读 meta 表（collect_by_tag.py 产出，6 列；兼容旧 5 列 manifest 格式）。"""
+    out: dict[str, dict] = {}
+    if not path.exists():
+        return out
+    with open(path, encoding="utf-8-sig") as f:
+        for row in list(csv.reader(f))[1:]:
+            if row and row[0]:
+                out[row[0]] = {
+                    "name": row[1] if len(row) > 1 else "",
+                    "author": row[2] if len(row) > 2 else "",
+                    "publishTime": row[3] if len(row) > 3 else "",
+                }
+    return out
+
+
+def find_existing(out_dir: Path) -> dict[str, str]:
+    """扫描输出目录，按文件名尾缀 ID 建 id -> filename 映射（用于按 ID 去重）。
+
+    识别两种命名：<名字>_<id>.json（标准）与 <id>.json（早期遗留）。
+    """
+    found: dict[str, str] = {}
+    if not out_dir.exists():
+        return found
+    for f in out_dir.glob("*.json"):
+        m = re.search(r"_(\d{8,})\.json$", f.name)
+        if m:
+            found[m.group(1)] = f.name
+        elif re.fullmatch(r"\d{8,}\.json", f.name):
+            found[f.name[:-5]] = f.name
+    return found
+
+
 BAD_CHARS = re.compile(r'[\\/:*?"<>|\r\n\t]')
 
 
@@ -114,11 +151,15 @@ def main() -> int:
         print(__doc__)
         return 1
     txt_paths: list[Path] = []
+    meta_paths: list[Path] = []
     out_dir = Path("workflows-json")
     i = 0
     while i < len(args):
         if args[i] == "--out" and i + 1 < len(args):
             out_dir = Path(args[i + 1])
+            i += 2
+        elif args[i] == "--meta" and i + 1 < len(args):
+            meta_paths.append(Path(args[i + 1]))
             i += 2
         else:
             txt_paths.append(Path(args[i]))
@@ -127,10 +168,30 @@ def main() -> int:
     ids = load_ids(txt_paths)
     print(f"读取 {len(ids)} 个唯一 ID（来自 {len(txt_paths)} 个清单文件）")
 
-    # 用第一个清单对应的关键词建 manifest（文件名里约定包含关键词，否则用 minimax h3）
+    # 按 ID 去重：输出目录里已有该 ID 的文件则跳过下载（manifest 仍补记，保证账实一致）
+    out_dir.mkdir(parents=True, exist_ok=True)
+    existing_files = find_existing(out_dir)
+    excluded_order = [(wid, existing_files[wid]) for wid in ids if wid in existing_files]
+    if excluded_order:
+        print(f"按 ID 去重：{len(excluded_order)} 个已存在于输出目录（如 {excluded_order[0][1]}），跳过下载")
+        ids = [wid for wid in ids if wid not in existing_files]
+    if not ids:
+        print("全部 ID 都已下载过，无需下载（manifest 仍会核对补记）。")
+
+    # 预载分类 meta 表（--meta 可多次传入）；缺失的 ID 回退关键词搜索补齐
+    pre: dict[str, dict] = {}
+    for mp in meta_paths:
+        loaded = load_meta_csv(mp)
+        pre.update(loaded)
+        print(f"预载 meta 表: {mp.resolve()}（{len(loaded)} 条）")
+    missing = [wid for wid in ids if wid not in pre]
     kw = "minimax h3" if any("minimax" in p.name.lower() for p in txt_paths) else txt_paths[0].stem
-    print(f"建立清单映射（搜索关键词 {kw!r}）…")
-    meta = build_manifest(ids, kw)
+    meta = dict(pre)
+    if missing:
+        print(f"{len(pre)} 条来自 meta 表；其余 {len(missing)} 个 ID 用搜索关键词 {kw!r} 补齐映射…")
+        meta.update(build_manifest(missing, kw))
+    else:
+        print(f"全部 {len(ids)} 个 ID 的映射来自 meta 表，无需搜索。")
     print(f"清单覆盖 {len(meta)}/{len(ids)} 个 ID")
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -170,6 +231,12 @@ def main() -> int:
     for wid, r in existing.items():  # 再追加历史中不在本次范围的记录
         if wid not in seen_ids:
             merged.append(r)
+            seen_ids.add(wid)
+    for wid, fname in excluded_order:  # 去重跳过的也补记（文件已在盘上，账面同步）
+        if wid not in seen_ids:
+            m = pre.get(wid, {})
+            merged.append([wid, m.get("name", ""), m.get("author", ""),
+                           m.get("publishTime", ""), fname])
             seen_ids.add(wid)
     with mf.open("w", newline="", encoding="utf-8-sig") as f:
         w = csv.writer(f)

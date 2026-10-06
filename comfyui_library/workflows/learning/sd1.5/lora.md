@@ -7,12 +7,11 @@ source: png
 file: comfyui_library/workflows/sd1.5/lora.png
 hash: 9d318e7ac04c1fdf
 coverage: 0.777778
-learned_at: 2026-10-06 03:49:53
+learned_at: 2026-10-06 21:34:46
 nodes: [VAEDecode, SaveImage, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, LoraLoader, CheckpointLoaderSimple, KSampler, MarkdownNote]
 patterns: [text_to_image, lora]
-missing: [MarkdownNote]
+missing: []
 parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "dreamshaper_8.safetensors", "denoise": 1, "height": 768, "lora_name": "blindbox_v1_mix.safetensors", "sampler_name": "dpmpp_2m", "scheduler": "karras", "seed": 261660645921551, "steps": 30, "strength_clip": 1, "strength_model": 0.75, "width": 768}
-discoveries: [次要节点 `MarkdownNote` 知识库中没有该节点类型的任何知识]
 ---
 
 # sd1.5/lora.png
@@ -58,10 +57,4 @@ discoveries: [次要节点 `MarkdownNote` 知识库中没有该节点类型的�
 
 **有卡**：`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`EmptyLatentImage`、`CheckpointLoaderSimple`、`KSampler`
 
-**缺卡**（1）：`MarkdownNote`
-
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora
-
-## 学习发现
-
-- 次要节点 `MarkdownNote` 知识库中没有该节点类型的任何知识

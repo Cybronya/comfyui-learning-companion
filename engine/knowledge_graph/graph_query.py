@@ -371,11 +371,17 @@ class GraphQuery:
         没有知识卡的节点（按被用到的次数排序）
 
         这是建卡的优先级依据 —— 用得越多越该先补。
+        布线/注释/预览节点（ignore_nodes.IGNORED_NODES）不建卡，
+        也不进优先级，否则 Note/Reroute 永久霸榜。
         """
+        from ..workflow_learning.ignore_nodes import is_ignored
+
         result = []
 
         for node in self.graph.nodes_of_type(TYPE_NODE):
             if node.get("has_card"):
+                continue
+            if is_ignored(node.name):
                 continue
             result.append((self._usage_count(node.id), node.name))
 

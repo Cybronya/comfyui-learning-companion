@@ -24,6 +24,7 @@ from .learning_record import (
     LearningRecord,
     STATUS_COMPLETED,
 )
+from .ignore_nodes import is_ignored
 from .markdown_format import (
     to_markdown,
     from_markdown,
@@ -275,17 +276,25 @@ class LearningStore:
 
     # ---------- 聚合统计 ----------
 
-    def node_frequency(self) -> Dict[str, int]:
+    def node_frequency(
+        self, exclude_ignored: bool = False
+    ) -> Dict[str, int]:
         """
         节点出现频次
 
         高频节点 = 通用必备；只出现一次的节点 = 该 workflow 特有。
         这正是 knowledge_evolution 挖模式需要的输入。
+
+        exclude_ignored=True 时排除布线/注释/预览类节点
+        （ignore_nodes.IGNORED_NODES），用于排建卡优先级——
+        否则 Note/Reroute/GetNode 这类纯布线节点永久霸榜。
         """
         counter: Dict[str, int] = {}
 
         for record in self.completed_records():
             for node in record.nodes:
+                if exclude_ignored and is_ignored(node):
+                    continue
                 counter[node] = counter.get(node, 0) + 1
 
         return counter

@@ -1,0 +1,476 @@
+---
+key: 图片生成/文生图/MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393.json
+name: MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393.json
+hash: f9ed2e25807cc00a
+coverage: 0.157191
+learned_at: 2026-10-06 21:46:56
+nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, easy multiTrackInfoOutput, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, ConditioningZeroOut, GetNode, easy mergeVideosFromPaths, ComfyMathExpression, SetNode, SetNode, SetNode, GetNode, GetNode, easy ifElse, SetNode, SetNode, easy string, GetNode, ComfyMathExpression, SetNode, SetNode, easy ifElse, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, easy promptLine, easy lengthAnything, easy string, easy forLoopStart, Text Concatenate, easy forLoopEnd, GetNode, easy promptLine, ComfyMathExpression, easy indexAnything, easy mergeVideosFromPaths, VideoFrameSample, GetNode, GetNode, SetNode, SetNode, easy lengthAnything, easy forLoopStart, easy promptLine, easy indexAnything, SetNode, SetNode, GetNode, easy forLoopEnd, easy batchAnything, ComfyMathExpression, easy mergeVideosFromPaths, easy ifElse, VideoFrameSample, ComfyMathExpression, easy indexAnything, easy lengthAnything, ComfyMathExpression, easy indexAnything, easy ifElse, easy saveVideo, PrimitiveBoolean, SetNode, SetNode, SetNode, GetNode, ComfyMathExpression, ComfyMathExpression, easy ifElse, ComfyMathExpression, SetNode, SetNode, ComfyMathExpression, GetNode, GetNode, easy promptLine, PathchSageAttentionKJ, SetNode, SetNode, GetNode, easy mergeVideosFromPaths, easy multiTrackTaskOutput, GetNode, GetNode, SetNode, SetNode, Reroute, SetNode, PrimitiveInt, easy ifElse, GetNode, GetNode, GetNode, GetNode, GetNode, easy batchAnything, SetNode, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, easy forLoopStart, Reroute, SetNode, PreviewAny, easy saveVideo, VAEDecode, VAEDecodeAudio, GetNode, SetNode, PreviewAny, easy forLoopEnd, VideoFrameSample, GetNode, PreviewAny, easy mergeVideosFromPaths, GetVideoComponents, BatchCount+, ComfyMathExpression, VideoTemporalCrop, SaveVideo, ComfyMathExpression, CLIPLoader, ImageAddNoise, GetImageRangeFromBatch, ImageBatchMulti, GetVideoComponents, ImageBatchMulti, GetVideoComponents, VideoFrameSample, easy mergeVideosFromPaths, easy ifElse, ComfyMathExpression, VideoFrameSample, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, LoraLoaderBypassModelOnly, MiniMaxH3AudioGuideFeather, easy minimaxH3ToVideo, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, SetNode, PrimitiveBoolean, PrimitiveBoolean, PrimitiveInt, PreviewAny, H3FrozenVideoCache, H3AudioRefineSampler, MiniMaxH3AddGuide, PrimitiveStringMultiline, PrimitiveInt, GetNode, GetNode, SetNode, GetNode, ConditioningZeroOut, ExtendIntermediateSigmas, BasicScheduler, easy ifElse, Reroute, SetNode, PrimitiveBoolean, PrimitiveInt, easy float, LoadVideo, KSamplerSelect, GetNode, SetNode, GetNode, GetNode, easy float, PrimitiveInt, ComfySwitchNode, Reroute, Reroute, SetNode, PrimitiveInt, SetNode, GetNode, GetVideoComponents, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, MiniMaxH3AddGuide, MiniMaxH3AddGuide, ComfyMathExpression, SaveVideo, CreateVideo, easy float, GetNode, SelfLiftH3Sampler, GetNode, GetNode, PrimitiveInt, VAELoader, MiniMaxH3AudioGuideFeather, easy ifElse, easy ifElse, ComfySwitchNode, SetNode, GetNode, easy float, ComfySwitchNode, easy ifElse, PrimitiveFloat, ImageAddNoise, PrimitiveBoolean, CreateVideo, GetNode, GetVideoComponents, GetNode, VideoFrameSample, SetNode, PrimitiveFloat, ImageAddNoise, ComfyMathExpression, ImageAddNoise, ImageAddNoise, GetImageRangeFromBatch, GetImageRangeFromBatch, GetImageRangeFromBatch, GetImageRangeFromBatch, GetVideoComponents, ColorTransfer, easy multiTrackEditor, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
+patterns: [text_to_image]
+missing: [BasicScheduler, BatchCount+, ColorTransfer, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, CreateVideo, CreateVideo, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetImageRangeFromBatch, GetImageRangeFromBatch, GetImageRangeFromBatch, GetImageRangeFromBatch, GetVideoComponents, GetVideoComponents, GetVideoComponents, GetVideoComponents, GetVideoComponents, GetVideoComponents, H3FrozenVideoCache, ImageAddNoise, ImageAddNoise, ImageAddNoise, ImageAddNoise, ImageAddNoise, ImageBatchMulti, ImageBatchMulti, LoadVideo, MiniMaxH3AddGuide, MiniMaxH3AddGuide, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, MiniMaxH3AudioGuideFeather, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, ModelAttentionBackend, PathchSageAttentionKJ, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, Text Concatenate, VideoFrameSample, VideoFrameSample, VideoFrameSample, VideoFrameSample, VideoFrameSample, VideoFrameSample, VideoTemporalCrop, easy batchAnything, easy batchAnything, easy float, easy float, easy float, easy float, easy forLoopEnd, easy forLoopEnd, easy forLoopEnd, easy forLoopStart, easy forLoopStart, easy forLoopStart, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, easy lengthAnything, easy lengthAnything, easy lengthAnything, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy string, easy string, H3AudioRefineSampler, LoraLoaderBypassModelOnly, SelfLiftH3Sampler, VAEDecodeAudio, PreviewAny, PreviewAny, PreviewAny, PreviewAny, SaveVideo, SaveVideo, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptLine, easy promptLine, easy promptLine, easy promptLine, easy saveVideo, easy saveVideo, solarL_SaveImagesToZip]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [次要节点 `BasicScheduler` 知识库中没有该节点类型的任何知识, 次要节点 `BatchCount+` 知识库中没有该节点类型的任何知识, 次要节点 `ColorTransfer` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识, 次要节点 `CreateVideo` 知识库中没有该节点类型的任何知识, 次要节点 `CreateVideo` 知识库中没有该节点类型的任何知识, 次要节点 `ExtendIntermediateSigmas` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识, 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识, 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识, 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识, 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识, 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识, 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识, 次要节点 `H3FrozenVideoCache` 知识库中没有该节点类型的任何知识, 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识, 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识, 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识, 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识, 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识, 次要节点 `ImageBatchMulti` 知识库中没有该节点类型的任何知识, 次要节点 `ImageBatchMulti` 知识库中没有该节点类型的任何知识, 次要节点 `LoadVideo` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxH3AddGuide` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxH3AddGuide` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxH3AddGuide` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxH3AudioGuideFeather` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxH3AudioGuideFeather` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxH3MemoryEfficientSageAttentionPatch` 知识库中没有该节点类型的任何知识, 次要节点 `MiniMaxLowVRAMAttention` 知识库中没有该节点类型的任何知识, 次要节点 `ModelAttentionBackend` 知识库中没有该节点类型的任何知识, 次要节点 `PathchSageAttentionKJ` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识, 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识, 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识, 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识, 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识, 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识, 次要节点 `VideoTemporalCrop` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy minimaxH3ToVideo` 知识库中没有该节点类型的任何知识, 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识, 次要节点 `easy string` 知识库中没有该节点类型的任何知识, 次要节点 `easy string` 知识库中没有该节点类型的任何知识, 核心节点 `H3AudioRefineSampler` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `LoraLoaderBypassModelOnly` 仅有 LoRA 的通用知识，没有该节点自己的说明, 核心节点 `SelfLiftH3Sampler` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `VAEDecodeAudio` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy multiTrackInfoOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy multiTrackTaskOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/MiniMax H3超灵活导演台2.0｜SelfLift双采无缝无色差超长视频_2107365074129211393.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（299 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy multiTrackInfoOutput`
+- `VAELoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `easy mergeVideosFromPaths`
+- `ComfyMathExpression`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy ifElse`
+- `SetNode`
+- `SetNode`
+- `easy string`
+- `GetNode`
+- `ComfyMathExpression`
+- `SetNode`
+- `SetNode`
+- `easy ifElse`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `StringReplace`
+- `easy promptLine`
+- `easy lengthAnything`
+- `easy string`
+- `easy forLoopStart`
+- `Text Concatenate`
+- `easy forLoopEnd`
+- `GetNode`
+- `easy promptLine`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `easy mergeVideosFromPaths`
+- `VideoFrameSample`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `easy lengthAnything`
+- `easy forLoopStart`
+- `easy promptLine`
+- `easy indexAnything`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy forLoopEnd`
+- `easy batchAnything`
+- `ComfyMathExpression`
+- `easy mergeVideosFromPaths`
+- `easy ifElse`
+- `VideoFrameSample`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `easy lengthAnything`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `easy ifElse`
+- `easy saveVideo`
+- `PrimitiveBoolean`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `easy ifElse`
+- `ComfyMathExpression`
+- `SetNode`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `easy promptLine`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy mergeVideosFromPaths`
+- `easy multiTrackTaskOutput`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Reroute`
+- `SetNode`
+- `PrimitiveInt`
+- `easy ifElse`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy batchAnything`
+- `SetNode`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `easy forLoopStart`
+- `Reroute`
+- `SetNode`
+- `PreviewAny`
+- `easy saveVideo`
+- `VAEDecode` ★核心
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SetNode`
+- `PreviewAny`
+- `easy forLoopEnd`
+- `VideoFrameSample`
+- `GetNode`
+- `PreviewAny`
+- `easy mergeVideosFromPaths`
+- `GetVideoComponents`
+- `BatchCount+`
+- `ComfyMathExpression`
+- `VideoTemporalCrop`
+- `SaveVideo`
+- `ComfyMathExpression`
+- `CLIPLoader`
+- `ImageAddNoise`
+- `GetImageRangeFromBatch`
+- `ImageBatchMulti`
+- `GetVideoComponents`
+- `ImageBatchMulti`
+- `GetVideoComponents`
+- `VideoFrameSample`
+- `easy mergeVideosFromPaths`
+- `easy ifElse`
+- `ComfyMathExpression`
+- `VideoFrameSample`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxLowVRAMAttention`
+- `ModelAttentionBackend`
+- `LoraLoaderBypassModelOnly` ★核心
+- `MiniMaxH3AudioGuideFeather`
+- `easy minimaxH3ToVideo`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `SetNode`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PreviewAny`
+- `H3FrozenVideoCache`
+- `H3AudioRefineSampler` ★核心
+- `MiniMaxH3AddGuide`
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `ExtendIntermediateSigmas`
+- `BasicScheduler`
+- `easy ifElse`
+- `Reroute`
+- `SetNode`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `easy float`
+- `LoadVideo`
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy float`
+- `PrimitiveInt`
+- `ComfySwitchNode`
+- `Reroute`
+- `Reroute`
+- `SetNode`
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `GetVideoComponents`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AddGuide`
+- `ComfyMathExpression`
+- `SaveVideo`
+- `CreateVideo`
+- `easy float`
+- `GetNode`
+- `SelfLiftH3Sampler` ★核心
+- `GetNode`
+- `GetNode`
+- `PrimitiveInt`
+- `VAELoader`
+- `MiniMaxH3AudioGuideFeather`
+- `easy ifElse`
+- `easy ifElse`
+- `ComfySwitchNode`
+- `SetNode`
+- `GetNode`
+- `easy float`
+- `ComfySwitchNode`
+- `easy ifElse`
+- `PrimitiveFloat`
+- `ImageAddNoise`
+- `PrimitiveBoolean`
+- `CreateVideo`
+- `GetNode`
+- `GetVideoComponents`
+- `GetNode`
+- `VideoFrameSample`
+- `SetNode`
+- `PrimitiveFloat`
+- `ImageAddNoise`
+- `ComfyMathExpression`
+- `ImageAddNoise`
+- `ImageAddNoise`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `GetVideoComponents`
+- `ColorTransfer`
+- `easy multiTrackEditor`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `solarL_SaveImagesToZip`
+- `JjkText`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `Note`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **16%**（47/299）
+
+**有卡**：`VAELoader`、`ConditioningZeroOut`、`VAEDecode`、`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`
+
+**缺卡**（117）：`BasicScheduler`、`BatchCount+`、`ColorTransfer`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`ComfyMathExpression`、`CreateVideo`、`CreateVideo`、`ExtendIntermediateSigmas`、`GetImageRangeFromBatch`、`GetImageRangeFromBatch`、`GetImageRangeFromBatch`、`GetImageRangeFromBatch`、`GetImageRangeFromBatch`、`GetVideoComponents`、`GetVideoComponents`、`GetVideoComponents`、`GetVideoComponents`、`GetVideoComponents`、`GetVideoComponents`、`H3FrozenVideoCache`、`ImageAddNoise`、`ImageAddNoise`、`ImageAddNoise`、`ImageAddNoise`、`ImageAddNoise`、`ImageBatchMulti`、`ImageBatchMulti`、`LoadVideo`、`MiniMaxH3AddGuide`、`MiniMaxH3AddGuide`、`MiniMaxH3AddGuide`、`MiniMaxH3AudioGuideFeather`、`MiniMaxH3AudioGuideFeather`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxLowVRAMAttention`、`ModelAttentionBackend`、`PathchSageAttentionKJ`、`PrimitiveBoolean`、`PrimitiveBoolean`、`PrimitiveBoolean`、`PrimitiveBoolean`、`PrimitiveBoolean`、`StringReplace`、`StringReplace`、`StringReplace`、`StringReplace`、`StringReplace`、`StringReplace`、`Text Concatenate`、`VideoFrameSample`、`VideoFrameSample`、`VideoFrameSample`、`VideoFrameSample`、`VideoFrameSample`、`VideoFrameSample`、`VideoTemporalCrop`、`easy batchAnything`、`easy batchAnything`、`easy float`、`easy float`、`easy float`、`easy float`、`easy forLoopEnd`、`easy forLoopEnd`、`easy forLoopEnd`、`easy forLoopStart`、`easy forLoopStart`、`easy forLoopStart`、`easy indexAnything`、`easy indexAnything`、`easy indexAnything`、`easy indexAnything`、`easy lengthAnything`、`easy lengthAnything`、`easy lengthAnything`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy minimaxH3ToVideo`、`easy multiTrackEditor`、`easy string`、`easy string`、`H3AudioRefineSampler`、`LoraLoaderBypassModelOnly`、`SelfLiftH3Sampler`、`VAEDecodeAudio`、`PreviewAny`、`PreviewAny`、`PreviewAny`、`PreviewAny`、`SaveVideo`、`SaveVideo`、`easy multiTrackInfoOutput`、`easy multiTrackTaskOutput`、`easy promptLine`、`easy promptLine`、`easy promptLine`、`easy promptLine`、`easy saveVideo`、`easy saveVideo`、`solarL_SaveImagesToZip`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `BasicScheduler` 知识库中没有该节点类型的任何知识
+- 次要节点 `BatchCount+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ColorTransfer` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `ComfyMathExpression` 知识库中没有该节点类型的任何知识
+- 次要节点 `CreateVideo` 知识库中没有该节点类型的任何知识
+- 次要节点 `CreateVideo` 知识库中没有该节点类型的任何知识
+- 次要节点 `ExtendIntermediateSigmas` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetImageRangeFromBatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识
+- 次要节点 `GetVideoComponents` 知识库中没有该节点类型的任何知识
+- 次要节点 `H3FrozenVideoCache` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageAddNoise` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageBatchMulti` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageBatchMulti` 知识库中没有该节点类型的任何知识
+- 次要节点 `LoadVideo` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxH3AddGuide` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxH3AddGuide` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxH3AddGuide` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxH3AudioGuideFeather` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxH3AudioGuideFeather` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxH3MemoryEfficientSageAttentionPatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `MiniMaxLowVRAMAttention` 知识库中没有该节点类型的任何知识
+- 次要节点 `ModelAttentionBackend` 知识库中没有该节点类型的任何知识
+- 次要节点 `PathchSageAttentionKJ` 知识库中没有该节点类型的任何知识
+- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
+- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
+- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
+- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
+- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
+- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoFrameSample` 知识库中没有该节点类型的任何知识
+- 次要节点 `VideoTemporalCrop` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy minimaxH3ToVideo` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy string` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy string` 知识库中没有该节点类型的任何知识
+- 核心节点 `H3AudioRefineSampler` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 核心节点 `LoraLoaderBypassModelOnly` 仅有 LoRA 的通用知识，没有该节点自己的说明
+- 核心节点 `SelfLiftH3Sampler` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 核心节点 `VAEDecodeAudio` 仅有 VAE 的通用知识，没有该节点自己的说明
+- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `SaveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `SaveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `easy multiTrackInfoOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `easy multiTrackTaskOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
