@@ -79,8 +79,12 @@ def slugify(name):
     return s or "node"
 
 
-def collect_usage(targets):
-    """扫全部 workflow JSON，按节点类型归并 inputs/outputs/widget 分布"""
+def collect_usage(targets, files=None):
+    """按节点类型归并 inputs/outputs/widget 分布。
+
+    files=None 时扫全部 workflow JSON；传入文件列表则只统计这些文件
+    （建卡流水线对新批次预建卡用——新节点可能只出现 1 次，
+    等进库再按频次 ≥2 筛就永远没卡了）。"""
     usage = {
         t: {
             "workflows": 0,
@@ -91,7 +95,12 @@ def collect_usage(targets):
         for t in targets
     }
 
-    for path in WORKFLOW_DIR.rglob("*.json"):
+    paths = files if files is not None else [
+        p for p in WORKFLOW_DIR.rglob("*.json")
+        if "learning" not in p.parts and not p.name.startswith("_")
+    ]
+
+    for path in paths:
         if "learning" in path.parts or path.name.startswith("_"):
             continue
         try:
@@ -176,6 +185,65 @@ def render_card(name, stat):
     return "\n".join(lines)
 
 
+def _write_card(index, name, stat):
+    """写一张卡并登记 index，返回卡片文件名"""
+    card_path = NODES_DIR / f"{slugify(name)}.md"
+    if card_path.exists():
+        # 同名 slug 已存在（不同节点类型）——加类型后缀防覆盖
+        card_path = NODES_DIR / f"{slugify(name)}_{abs(hash(name)) % 10000}.md"
+    card_path.write_text(render_card(name, stat), encoding="utf-8")
+
+    cat, role = guess_role(name)
+    index["nodes"][name] = {
+        "knowledge_file": card_path.name,
+        "category": cat,
+        "role": role,
+        "difficulty": "unknown",
+        "learning_topics": [],
+        "auto_drafted": True,
+    }
+    return card_path.name
+
+
+def _save_index(index):
+    index["version"] = "1.2"
+    INDEX_PATH.write_text(
+        json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
+
+
+def draft_for_files(files):
+    """
+    流水线入口：为给定 workflow JSON 文件里「没卡」的节点直接建卡。
+
+    频次 ≥1 即建（学习之前调用，保证首次学习的覆盖率就是准的），
+    统计口径只来自这批文件。返回新建卡片数。
+    """
+    index = json.loads(INDEX_PATH.read_text(encoding="utf-8-sig"))
+    known = set(index["nodes"])
+
+    targets = set()
+    for f in files:
+        try:
+            data = json.loads(Path(f).read_text(encoding="utf-8-sig"))
+        except Exception:
+            continue
+        for n in data.get("nodes", []) if isinstance(data, dict) else []:
+            t = n.get("type")
+            if t and t not in known and not is_ignored(t):
+                targets.add(t)
+    if not targets:
+        return 0
+
+    usage = collect_usage(sorted(targets), files=[Path(f) for f in files])
+    created = 0
+    for name in sorted(targets):
+        _write_card(index, name, usage[name])
+        created += 1
+    _save_index(index)
+    return created
+
+
 def main():
     index = json.loads(INDEX_PATH.read_text(encoding="utf-8-sig"))
     known = set(index["nodes"])
@@ -193,28 +261,10 @@ def main():
 
     created = 0
     for name in targets:
-        stat = usage[name]
-        card_path = NODES_DIR / f"{slugify(name)}.md"
-        if card_path.exists():
-            # 同名 slug 已存在（不同节点类型）——加类型后缀防覆盖
-            card_path = NODES_DIR / f"{slugify(name)}_{abs(hash(name)) % 10000}.md"
-        card_path.write_text(render_card(name, stat), encoding="utf-8")
-
-        cat, role = guess_role(name)
-        index["nodes"][name] = {
-            "knowledge_file": card_path.name,
-            "category": cat,
-            "role": role,
-            "difficulty": "unknown",
-            "learning_topics": [],
-            "auto_drafted": True,
-        }
+        _write_card(index, name, usage[name])
         created += 1
 
-    index["version"] = "1.2"
-    INDEX_PATH.write_text(
-        json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8"
-    )
+    _save_index(index)
     print(f"新建卡片 {created} 张，node_index 共 {len(index['nodes'])} 条")
 
 

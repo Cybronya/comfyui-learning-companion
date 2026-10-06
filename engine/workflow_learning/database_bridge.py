@@ -197,3 +197,23 @@ def is_learned(
         return False
 
     return True
+
+def cleanup_stale(database: WorkflowDatabase, wf_root: str = "") -> int:
+    """
+    清理数据库里指向已不存在文件的 workflow / experience 旧键。
+
+    文件被移动/删除时 learn_folder 只清 Markdown 记录，
+    库侧旧键会永久残留并污染统计——批量学习后调用本函数对账。
+    Returns: 删除的键数
+    """
+    import os
+    stale = []
+    for w in database.workflows.all():
+        fp = w.get("file_path", "") if isinstance(w, dict) else getattr(w, "file_path", "")
+        wid = w.get("id") if isinstance(w, dict) else w.id
+        if fp and not os.path.exists(fp):
+            stale.append(wid)
+    for k in stale:
+        database.workflows.delete(k)
+        database.experiences.delete(k)
+    return len(stale)

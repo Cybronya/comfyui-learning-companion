@@ -1,0 +1,957 @@
+---
+key: 图片生成/文生图/❻「写真V1」Z双采+AIO分镜+K-HD TTP-HD「9.19」_2033062724925661185.json
+name: ❻「写真V1」Z双采+AIO分镜+K-HD TTP-HD「9.19」_2033062724925661185
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/❻「写真V1」Z双采+AIO分镜+K-HD TTP-HD「9.19」_2033062724925661185.json
+hash: d7b38cc1b51a1a39
+coverage: 0.346497
+learned_at: 2026-10-07 03:05:22
+nodes: [SetNode, SetNode, GetNode, SetNode, ReferenceLatent, VAEDecode, SetNode, EmptySD3LatentImage, GetNode, ConditioningZeroOut, GetNode, VAEDecode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, GetNode, VAEDecode, GetNode, ConditioningZeroOut, ReferenceLatent, ReferenceLatent, GetNode, GetNode, VAEDecode, GetNode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, GetNode, VAEDecode, GetNode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, GetNode, VAEDecode, GetNode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, VAEDecode, GetNode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, GetNode, VAEDecode, GetNode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, GetNode, VAEDecode, GetNode, SetNode, ReferenceLatent, ReferenceLatent, VAEEncode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, VAEEncode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, ModelPassThrough, SetNode, GetNode, SetNode, SetNode, ConditioningZeroOut, SetNode, GetNode, GetNode, GetNode, easy int, VAEDecode, GetNode, GetNode, GetNode, StringConcatenate, GetNode, GetNode, easy cleanGpuUsed, VAEDecode, SetNode, PrimitiveString, SetNode, SetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, ConditioningZeroOut, ReferenceLatent, VAEEncode, ReferenceLatent, GetNode, GetNode, GetNode, GetNode, GetNode, ConditioningZeroOut, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, ConditioningZeroOut, ReferenceLatent, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, ConditioningZeroOut, ReferenceLatent, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, ConditioningZeroOut, ReferenceLatent, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, ConditioningZeroOut, GetNode, GetNode, GetNode, GetNode, VAEDecode, ConditioningZeroOut, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, ReferenceLatent, ReferenceLatent, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, VAEEncode, ReferenceLatent, GetNode, ReferenceLatent, ReferenceLatent, ReferenceLatent, ReferenceLatent, GetNode, ReferenceLatent, GetNode, ReferenceLatent, GetNode, GetNode, ReferenceLatent, ReferenceLatent, ReferenceLatent, GetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEEncode, ConditioningZeroOut, VAEDecode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetImageSizeAndCount, GetImageSizeAndCount, GetImageSizeAndCount, GetImageSizeAndCount, GetImageSizeAndCount, GetImageSizeAndCount, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, ConditioningZeroOut, GetNode, GetNode, VAEEncode, GetNode, GetNode, GetNode, SetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, GetNode, GetNode, GetNode, GetNode, GetNode, SaveImage, GetNode, GetNode, SaveImage, GetNode, SaveImage, GetNode, SaveImage, GetNode, SaveImage, GetNode, SaveImage, ConditioningZeroOut, GetNode, ReferenceLatent, ReferenceLatent, SetNode, Mute / Bypass Relay (rgthree), SaveImage, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), PrimitiveString, Mute / Bypass Relay (rgthree), PrimitiveString, Mute / Bypass Repeater (rgthree), Mute / Bypass Relay (rgthree), SetNode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, Seed (rgthree), CLIPTextEncode, Seed (rgthree), CLIPTextEncode, easy showAnything, Seed (rgthree), Seed (rgthree), CLIPTextEncode, Seed (rgthree), SetNode, Seed (rgthree), Seed (rgthree), CLIPTextEncode, Seed (rgthree), Seed (rgthree), EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, EmptyLatentImage, CLIPTextEncode, SetNode, GetNode, ConditioningZeroOut, GetNode, SetNode, GetNode, MarkdownNote, MarkdownNote, SetNode, GetNode, easy float, SetNode, SetNode, CLIPTextEncode, easy showAnything, easy cleanGpuUsed, GetNode, GetNode, GetNode, SetNode, GetNode, easy showAnything, EmptyLatentImage, EmptyLatentImage, GetNode, easy showAnything, SetNode, SetNode, SetNode, ColorMatch, SetNode, ColorMatch, SetNode, ColorMatch, SetNode, ColorMatch, SetNode, ColorMatch, SetNode, ColorMatch, Mute / Bypass Repeater (rgthree), SetNode, ColorMatch, easy showAnything, SetNode, VAELoader, CLIPLoader, CLIPLoader, Seed (rgthree), VAELoader, ColorMatch, ModelPassThrough, GetNode, SetNode, ColorMatch, easy showAnything, easy showAnything, SetNode, easy showAnything, GetNode, GetNode, GetNode, SetNode, TTP_Tile_image_size, GetNode, GetNode, TTP_Image_Tile_Batch, GetNode, SetNode, GetNode, Any Switch (rgthree), GetNode, SetNode, easy imageSize, GetNode, GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), Any Switch (rgthree), PlaySound|pysssss, GetNode, SetNode, GetNode, SetNode, GetNode, Image Comparer (rgthree), easy int, SetNode, GetNode, GetNode, ModelPassThrough, Any Switch (rgthree), ImageCASharpening+, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), StringConcatenate, PrimitiveString, Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), easy int, Mute / Bypass Repeater (rgthree), Mute / Bypass Relay (rgthree), VAELoader, LayerUtility: ImageScaleByAspectRatio V2, SetNode, easy int, Fast Groups Bypasser (rgthree), TextInput_, Split String, TextInput_, StringConcatenate, StringConcatenate, StringConcatenate, StringConcatenate, StringConcatenate, StringConcatenate, StringConcatenate, StringConcatenate, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, Image Comparer (rgthree), easy int, VAELoader, easy int, SetNode, Mute / Bypass Repeater (rgthree), CLIPLoader, ModelPassThrough, CFGGuider, GetNode, GetNode, SetNode, easy cleanGpuUsed, TextInput_, StringConcatenate, easy showAnything, ModelPassThrough, SetNode, KSamplerAdvanced, KSamplerAdvanced, ImageSharpen, UNETLoader, UNETLoader, LoadImage, GetNode, GetNode, SaveImage, SetNode, GetNode, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, SetNode, SaveImage, UNETLoader, LayerUtility: ImageScaleByAspectRatio V2, ImageScale, ModelSamplingAuraFlow, KSamplerSelect, CLIPTextEncode, SeedVR2LoadDiTModel, easy imageSizeBySide, LoraLoaderModelOnly, easy int, Fast Groups Bypasser (rgthree), TTP_Image_Assy, Flux2Scheduler, GetNode, SaveImage, GetNode, GetNode, Any Switch (rgthree), llama_cpp_instruct_adv, RHUploadZip, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, MarkdownNote, MarkdownNote, Fast Groups Bypasser (rgthree), llama_cpp_parameters, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, CLIPTextEncode, GetNode, EmptyLatentImage, GetNode, GetNode, VAEEncode, GetImageSizeAndCount, SetNode, easy int, SetNode, ColorMatch, ImageScaleToTotalPixels, GetImageSizeAndCount, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, LayerUtility: ImageScaleByAspectRatio V2, GetNode, ImageScaleToTotalPixels, GetNode, ImageScaleToTotalPixels, GetNode, ImageScaleToTotalPixels, ImageScaleToTotalPixels, GetNode, GetNode, GetNode, GetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, Fast Groups Bypasser (rgthree), easy int, StringConcatenate, SomethingToString, GetNode, easy showAnything, LoraLoaderModelOnly, CLIPTextEncode, TextInput_, easy showAnything, easy int, TextInput_, llama_cpp_instruct_adv, EmptyLatentImage, LoadImage, Fast Groups Bypasser (rgthree), UNETLoader, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, easy int, Fast Groups Bypasser (rgthree), GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, GetNode, ImageScaleToTotalPixels, KSampler, LayerUtility: ImageScaleByAspectRatio V2, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, KSampler, SaveImage, SaveImage, LoraLoaderModelOnly, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, LoraLoaderModelOnly, LoraLoaderModelOnly, Fast Groups Bypasser (rgthree), llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_model_loader, LayerUtility: ImageScaleByAspectRatio V2, ReferenceLatent, ReferenceLatent, EmptyFlux2LatentImage, SamplerCustomAdvanced, RandomNoise, CLIPLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, PrimitiveFloat, easy int, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
+patterns: [text_to_image, image_to_image]
+missing: [ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, ImageCASharpening+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, Mute / Bypass Relay (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Relay (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), PlaySound|pysssss, Split String, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy float, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), Seed (rgthree), easy imageSize, easy imageSizeBySide]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "Qwen-Rapid-AIO-NSFW-v23.0.safetensors", "denoise": 1, "height": 512, "sampler_name": "lcm", "scheduler": "sgm_uniform", "seed": 965170939418683, "steps": 8, "width": 512}
+discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Split String` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/❻「写真V1」Z双采+AIO分镜+K-HD TTP-HD「9.19」_2033062724925661185.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/❻「写真V1」Z双采+AIO分镜+K-HD TTP-HD「9.19」_2033062724925661185.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（785 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `ReferenceLatent`
+- `VAEDecode` ★核心
+- `SetNode`
+- `EmptySD3LatentImage`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `SetNode`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VAEEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ModelPassThrough`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `ConditioningZeroOut`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy int`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `StringConcatenate`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `SetNode`
+- `PrimitiveString`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `GetNode`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `GetNode`
+- `ReferenceLatent`
+- `GetNode`
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEEncode` ★核心
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `GetNode`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `SaveImage`
+- `ConditioningZeroOut`
+- `GetNode`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `SetNode`
+- `Mute / Bypass Relay (rgthree)`
+- `SaveImage`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `PrimitiveString`
+- `Mute / Bypass Relay (rgthree)`
+- `PrimitiveString`
+- `Mute / Bypass Repeater (rgthree)`
+- `Mute / Bypass Relay (rgthree)`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `CLIPTextEncode` ★核心
+- `easy showAnything`
+- `Seed (rgthree)`
+- `Seed (rgthree)`
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `SetNode`
+- `Seed (rgthree)`
+- `Seed (rgthree)`
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `Seed (rgthree)`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `MarkdownNote`
+- `MarkdownNote`
+- `SetNode`
+- `GetNode`
+- `easy float`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `easy showAnything`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `easy showAnything`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `GetNode`
+- `easy showAnything`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ColorMatch`
+- `SetNode`
+- `ColorMatch`
+- `SetNode`
+- `ColorMatch`
+- `SetNode`
+- `ColorMatch`
+- `SetNode`
+- `ColorMatch`
+- `SetNode`
+- `ColorMatch`
+- `Mute / Bypass Repeater (rgthree)`
+- `SetNode`
+- `ColorMatch`
+- `easy showAnything`
+- `SetNode`
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPLoader`
+- `Seed (rgthree)`
+- `VAELoader`
+- `ColorMatch`
+- `ModelPassThrough`
+- `GetNode`
+- `SetNode`
+- `ColorMatch`
+- `easy showAnything`
+- `easy showAnything`
+- `SetNode`
+- `easy showAnything`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `TTP_Tile_image_size`
+- `GetNode`
+- `GetNode`
+- `TTP_Image_Tile_Batch`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `SetNode`
+- `easy imageSize`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `Any Switch (rgthree)`
+- `PlaySound|pysssss`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `easy int`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ModelPassThrough`
+- `Any Switch (rgthree)`
+- `ImageCASharpening+`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `StringConcatenate`
+- `PrimitiveString`
+- `Mute / Bypass Relay (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `easy int`
+- `Mute / Bypass Repeater (rgthree)`
+- `Mute / Bypass Relay (rgthree)`
+- `VAELoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SetNode`
+- `easy int`
+- `Fast Groups Bypasser (rgthree)`
+- `TextInput_`
+- `Split String`
+- `TextInput_`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `StringConcatenate`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `ImageCASharpening+`
+- `Image Comparer (rgthree)`
+- `easy int`
+- `VAELoader`
+- `easy int`
+- `SetNode`
+- `Mute / Bypass Repeater (rgthree)`
+- `CLIPLoader`
+- `ModelPassThrough`
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `TextInput_`
+- `StringConcatenate`
+- `easy showAnything`
+- `ModelPassThrough`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImageSharpen`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `SaveImage`
+- `SetNode`
+- `GetNode`
+- `SeedVR2VideoUpscaler`
+- `SeedVR2LoadVAEModel`
+- `SetNode`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageScale`
+- `ModelSamplingAuraFlow`
+- `KSamplerSelect` ★核心
+- `CLIPTextEncode` ★核心
+- `SeedVR2LoadDiTModel`
+- `easy imageSizeBySide`
+- `LoraLoaderModelOnly` ★核心
+- `easy int`
+- `Fast Groups Bypasser (rgthree)`
+- `TTP_Image_Assy`
+- `Flux2Scheduler`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `llama_cpp_instruct_adv`
+- `RHUploadZip`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `MarkdownNote`
+- `MarkdownNote`
+- `Fast Groups Bypasser (rgthree)`
+- `llama_cpp_parameters`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSizeAndCount`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `EmptyLatentImage` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEEncode` ★核心
+- `GetImageSizeAndCount`
+- `SetNode`
+- `easy int`
+- `SetNode`
+- `ColorMatch`
+- `ImageScaleToTotalPixels`
+- `GetImageSizeAndCount`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Fast Groups Bypasser (rgthree)`
+- `easy int`
+- `StringConcatenate`
+- `SomethingToString`
+- `GetNode`
+- `easy showAnything`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `TextInput_`
+- `easy showAnything`
+- `easy int`
+- `TextInput_`
+- `llama_cpp_instruct_adv`
+- `EmptyLatentImage` ★核心
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `easy int`
+- `Fast Groups Bypasser (rgthree)`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `KSampler` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `SaveImage`
+- `SaveImage`
+- `LoraLoaderModelOnly` ★核心
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `EmptyFlux2LatentImage`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `CLIPLoader`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveFloat`
+- `easy int`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `512`
+- `height` = `512`
+- `batch_size` = `1`
+- `seed` = `965170939418683`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `lcm`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `1`
+- `checkpoint` = `Qwen-Rapid-AIO-NSFW-v23.0.safetensors`
+
+## 知识
+
+覆盖率 **35%**（272/785）
+
+**有卡**：`ReferenceLatent`、`VAEDecode`、`EmptySD3LatentImage`、`ConditioningZeroOut`、`VAEEncode`、`ModelPassThrough`、`StringConcatenate`、`CLIPTextEncode`、`GetImageSizeAndCount`、`EmptyLatentImage`、`SaveImage`、`ColorMatch`、`VAELoader`、`CLIPLoader`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`TextInput_`、`CFGGuider`、`KSamplerAdvanced`、`ImageSharpen`、`UNETLoader`、`LoadImage`、`SeedVR2VideoUpscaler`、`SeedVR2LoadVAEModel`、`ImageScale`、`ModelSamplingAuraFlow`、`KSamplerSelect`、`SeedVR2LoadDiTModel`、`LoraLoaderModelOnly`、`TTP_Image_Assy`、`Flux2Scheduler`、`llama_cpp_instruct_adv`、`RHUploadZip`、`llama_cpp_parameters`、`ImageScaleToTotalPixels`、`SomethingToString`、`KSampler`、`llama_cpp_model_loader`、`EmptyFlux2LatentImage`、`SamplerCustomAdvanced`、`RandomNoise`、`CheckpointLoaderSimple`
+
+**缺卡**（77）：`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`PlaySound|pysssss`、`Split String`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy float`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`easy imageSize`、`easy imageSizeBySide`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
+
+## 参数体检
+
+发现 18 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `Split String` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
+- 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
