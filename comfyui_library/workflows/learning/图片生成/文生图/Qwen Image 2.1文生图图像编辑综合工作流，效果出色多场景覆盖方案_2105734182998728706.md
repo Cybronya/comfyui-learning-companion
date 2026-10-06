@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1文生图图像编辑综合工作流，效果出色多场景覆盖方案_2105734182998728706.json
 hash: d802be711d7f458b
-coverage: 0.735849
-learned_at: 2026-10-06 21:49:04
+coverage: 0.811321
+learned_at: 2026-10-06 22:37:55
 nodes: [LoadImage, VAELoader, LoadImage, LoadImage, Anything Everywhere, Text Multiline, CLIPLoader, UNETLoader, QwenImage21Cache, GetNode, ResolutionSelector, VAEDecode, SetNode, LoadImage, LoadImage, Text Multiline, SaveImage, KSampler, AnySwitch, TextEncodeQwenImage21, EmptyLatentImage, ImageScaleToTotalPixels, VAEEncode, Image Comparer (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, image_to_image]
-missing: [AnySwitch, ImageScaleToTotalPixels, Text Multiline, Text Multiline, solarL_SaveImagesToZip]
+missing: [Text Multiline, Text Multiline]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `AnySwitch` 知识库中没有该节点类型的任何知识, 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1文生图图像编辑综合工作流，效果出色多场景覆盖方案_2105734182998728706.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `AnySwitch` 知识库中没有该节点类型的任�
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（53 个）：
 - `LoadImage`
@@ -95,11 +95,11 @@ discoveries: [次要节点 `AnySwitch` 知识库中没有该节点类型的任�
 
 ## 知识
 
-覆盖率 **74%**（39/53）
+覆盖率 **81%**（43/53）
 
-**有卡**：`LoadImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`QwenImage21Cache`、`ResolutionSelector`、`VAEDecode`、`SaveImage`、`KSampler`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`
+**有卡**：`LoadImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`QwenImage21Cache`、`ResolutionSelector`、`VAEDecode`、`SaveImage`、`KSampler`、`AnySwitch`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`ImageScaleToTotalPixels`、`VAEEncode`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（5）：`AnySwitch`、`ImageScaleToTotalPixels`、`Text Multiline`、`Text Multiline`、`solarL_SaveImagesToZip`
+**缺卡**（2）：`Text Multiline`、`Text Multiline`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -110,9 +110,6 @@ discoveries: [次要节点 `AnySwitch` 知识库中没有该节点类型的任�
 
 ## 学习发现
 
-- 次要节点 `AnySwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识
 - 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
 - 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

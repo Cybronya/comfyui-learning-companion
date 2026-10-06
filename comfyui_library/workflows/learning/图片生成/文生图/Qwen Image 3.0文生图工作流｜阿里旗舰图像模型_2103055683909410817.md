@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 3.0文生图工作流｜阿里旗舰图像模型_2103055683909410817.json
 hash: 704dbfd0dbfcbde5
-coverage: 0.636364
-learned_at: 2026-10-06 21:49:33
+coverage: 0.818182
+learned_at: 2026-10-06 22:38:19
 nodes: [SaveImage, Note, PrimitiveStringMultiline, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, TextEncodeQwenImageEditPlus, EmptySD3LatentImage, KSampler, VAEDecode]
 patterns: []
-missing: [TextEncodeQwenImageEditPlus]
+missing: []
 parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 42, "steps": 24}
-discoveries: [次要节点 `TextEncodeQwenImageEditPlus` 仅有 VAE 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Qwen Image 3.0文生图工作流｜阿里旗舰图像模型_2103055683909410817.json
@@ -21,7 +20,7 @@ discoveries: [次要节点 `TextEncodeQwenImageEditPlus` 仅有 VAE 的通用知
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（11 个）：
 - `SaveImage`
@@ -47,14 +46,8 @@ discoveries: [次要节点 `TextEncodeQwenImageEditPlus` 仅有 VAE 的通用知
 
 ## 知识
 
-覆盖率 **64%**（7/11）
+覆盖率 **82%**（9/11）
 
-**有卡**：`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`KSampler`、`VAEDecode`
+**有卡**：`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`TextEncodeQwenImageEditPlus`、`EmptySD3LatentImage`、`KSampler`、`VAEDecode`
 
-**缺卡**（1）：`TextEncodeQwenImageEditPlus`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、SaveImage、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `TextEncodeQwenImageEditPlus` 仅有 VAE 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、TextEncodeQwenImageEditPlus、SaveImage

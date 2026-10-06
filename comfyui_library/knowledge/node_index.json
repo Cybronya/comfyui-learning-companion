@@ -1,5 +1,5 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "description": "ComfyUI Node Knowledge Base Index",
   "nodes": {
     "CheckpointLoaderSimple": {
@@ -179,6 +179,4726 @@
         "cache",
         "optimization"
       ]
+    },
+    "AILab_QwenVL": {
+      "knowledge_file": "ailab_qwenvl.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "AIO_Preprocessor": {
+      "knowledge_file": "aio_preprocessor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "AdaptiveLongestEdge_EditUtils": {
+      "knowledge_file": "adaptivelongestedge_editutils.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "AddLabel": {
+      "knowledge_file": "addlabel.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "AnySwitch": {
+      "knowledge_file": "anyswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "BasicGuider": {
+      "knowledge_file": "basicguider.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "BasicScheduler": {
+      "knowledge_file": "basicscheduler.md",
+      "category": "Sampling",
+      "role": "调度器：控制去噪步长序列",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "BatchCount+": {
+      "knowledge_file": "batchcount.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "BatchImagesNode": {
+      "knowledge_file": "batchimagesnode.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Bjornulf_ShowFloat": {
+      "knowledge_file": "bjornulf_showfloat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Bjornulf_ShowInt": {
+      "knowledge_file": "bjornulf_showint.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "BlockSparseAttention": {
+      "knowledge_file": "blocksparseattention.md",
+      "category": "Optimization",
+      "role": "注意力/加速优化节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "BlockifyMask": {
+      "knowledge_file": "blockifymask.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Bookmark (rgthree)": {
+      "knowledge_file": "bookmark_rgthree.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Boolean To Int [Dream]": {
+      "knowledge_file": "boolean_to_int_dream.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CFGGuider": {
+      "knowledge_file": "cfgguider.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CFGNorm": {
+      "knowledge_file": "cfgnorm.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CLIPLoaderGGUF": {
+      "knowledge_file": "cliploadergguf.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CLIPTextEncodeFlux": {
+      "knowledge_file": "cliptextencodeflux.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CLIPVisionLoader": {
+      "knowledge_file": "clipvisionloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CM_BoolToInt": {
+      "knowledge_file": "cm_booltoint.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CM_FloatToInt": {
+      "knowledge_file": "cm_floattoint.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CM_FloatUnaryOperation": {
+      "knowledge_file": "cm_floatunaryoperation.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CM_IntToFloat": {
+      "knowledge_file": "cm_inttofloat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Aspect Ratio": {
+      "knowledge_file": "cr_aspect_ratio.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Prompt Text": {
+      "knowledge_file": "cr_prompt_text.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR SDXL Aspect Ratio": {
+      "knowledge_file": "cr_sdxl_aspect_ratio.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Set Value On Boolean": {
+      "knowledge_file": "cr_set_value_on_boolean.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Text": {
+      "knowledge_file": "cr_text.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Text Concatenate": {
+      "knowledge_file": "cr_text_concatenate.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Text Replace": {
+      "knowledge_file": "cr_text_replace.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CS_Preview_Any": {
+      "knowledge_file": "cs_preview_any.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ColorMatchV2": {
+      "knowledge_file": "colormatchv2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ColorTransfer": {
+      "knowledge_file": "colortransfer.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ComfyMathExpression": {
+      "knowledge_file": "comfymathexpression.md",
+      "category": "Utility",
+      "role": "计算类节点：数值/表达式运算",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ConditioningKrea2Rebalance": {
+      "knowledge_file": "conditioningkrea2rebalance.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ConditioningSetTimestepRange": {
+      "knowledge_file": "conditioningsettimesteprange.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Context (rgthree)": {
+      "knowledge_file": "context_rgthree.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ControlNetApplyAdvanced": {
+      "knowledge_file": "controlnetapplyadvanced.md",
+      "category": "Conditioning",
+      "role": "ControlNet 控制类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ControlNetInpaintingAliMamaApply": {
+      "knowledge_file": "controlnetinpaintingalimamaapply.md",
+      "category": "Conditioning",
+      "role": "ControlNet 控制类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ControlNetLoader": {
+      "knowledge_file": "controlnetloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CreateVideo": {
+      "knowledge_file": "createvideo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CropWithPadInfo": {
+      "knowledge_file": "cropwithpadinfo.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CropWithPadInfo_EditUtils": {
+      "knowledge_file": "cropwithpadinfo_editutils.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DF_Integer": {
+      "knowledge_file": "df_integer.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DF_Text_Box": {
+      "knowledge_file": "df_text_box.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DapaoMakeImageBatchNode": {
+      "knowledge_file": "dapaomakeimagebatchnode.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DepthAnythingV2Preprocessor": {
+      "knowledge_file": "depthanythingv2preprocessor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DetailDaemonSamplerNode": {
+      "knowledge_file": "detaildaemonsamplernode.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DifferentialDiffusion": {
+      "knowledge_file": "differentialdiffusion.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DisTorchPurgeVRAMV2": {
+      "knowledge_file": "distorchpurgevramv2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DisableNoise": {
+      "knowledge_file": "disablenoise.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DrawMaskOnImage": {
+      "knowledge_file": "drawmaskonimage.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DualCLIPLoader": {
+      "knowledge_file": "dualcliploader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DyPE_FLUX": {
+      "knowledge_file": "dype_flux.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EditTextEncode_EditUtils": {
+      "knowledge_file": "edittextencode_editutils.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EmptyFlux2LatentImage": {
+      "knowledge_file": "emptyflux2latentimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EmptyHiDreamO1LatentImage": {
+      "knowledge_file": "emptyhidreamo1latentimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EmptyImage": {
+      "knowledge_file": "emptyimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EmptySD3LatentImage": {
+      "knowledge_file": "emptysd3latentimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EnhancedLoadDiffusionModel": {
+      "knowledge_file": "enhancedloaddiffusionmodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ExecutionBlocker": {
+      "knowledge_file": "executionblocker.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ExtendIntermediateSigmas": {
+      "knowledge_file": "extendintermediatesigmas.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FL_ImageBatchToGrid": {
+      "knowledge_file": "fl_imagebatchtogrid.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FaceDetailer": {
+      "knowledge_file": "facedetailer.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Fast Bypasser (rgthree)": {
+      "knowledge_file": "fast_bypasser_rgthree.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FastFilmGrain": {
+      "knowledge_file": "fastfilmgrain.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FastGroupsBypassSwitch": {
+      "knowledge_file": "fastgroupsbypassswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FastUnsharpSharpen": {
+      "knowledge_file": "fastunsharpsharpen.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Float to Int": {
+      "knowledge_file": "float_to_int.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FloatConstant": {
+      "knowledge_file": "floatconstant.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Flux2KleinConfigPreparer_EditUtils": {
+      "knowledge_file": "flux2kleinconfigpreparer_editutils.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Flux2KleinModelConfig_EditUtils": {
+      "knowledge_file": "flux2kleinmodelconfig_editutils.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Flux2KleinOutputExtractor_EditUtils": {
+      "knowledge_file": "flux2kleinoutputextractor_editutils.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Flux2Scheduler": {
+      "knowledge_file": "flux2scheduler.md",
+      "category": "Sampling",
+      "role": "调度器：控制去噪步长序列",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FluxGuidance": {
+      "knowledge_file": "fluxguidance.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FluxKontextImageScale": {
+      "knowledge_file": "fluxkontextimagescale.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FluxKontextMultiReferenceLatentMethod": {
+      "knowledge_file": "fluxkontextmultireferencelatentmethod.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FluxLoraLoader": {
+      "knowledge_file": "fluxloraloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetImageRangeFromBatch": {
+      "knowledge_file": "getimagerangefrombatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetImageSize": {
+      "knowledge_file": "getimagesize.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetImageSize+": {
+      "knowledge_file": "getimagesize_7256.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetImageSizeAndCount": {
+      "knowledge_file": "getimagesizeandcount.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetImagesFromBatchIndexed": {
+      "knowledge_file": "getimagesfrombatchindexed.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetVideoComponents": {
+      "knowledge_file": "getvideocomponents.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GoogleTranslateTextNode": {
+      "knowledge_file": "googletranslatetextnode.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GoohaiRatioAndResolution": {
+      "knowledge_file": "goohairatioandresolution.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GoohaiRouteBlocker": {
+      "knowledge_file": "goohairouteblocker.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GrowMask": {
+      "knowledge_file": "growmask.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3AudioRefineSampler": {
+      "knowledge_file": "h3audiorefinesampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3FrozenVideoCache": {
+      "knowledge_file": "h3frozenvideocache.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3SigmaRefiner": {
+      "knowledge_file": "h3sigmarefiner.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "HAIGC_SaveImagesToZip": {
+      "knowledge_file": "haigc_saveimagestozip.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "HAIGC_SavePSD": {
+      "knowledge_file": "haigc_savepsd.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "INPAINT_ApplyFooocusInpaint": {
+      "knowledge_file": "inpaint_applyfooocusinpaint.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "INPAINT_InpaintWithModel": {
+      "knowledge_file": "inpaint_inpaintwithmodel.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "INPAINT_LoadFooocusInpaint": {
+      "knowledge_file": "inpaint_loadfooocusinpaint.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "INPAINT_LoadInpaintModel": {
+      "knowledge_file": "inpaint_loadinpaintmodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "INPAINT_VAEEncodeInpaintConditioning": {
+      "knowledge_file": "inpaint_vaeencodeinpaintconditioning.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "INTConstant": {
+      "knowledge_file": "intconstant.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Image Compare (mtb)": {
+      "knowledge_file": "image_compare_mtb.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Image Filter Adjustments": {
+      "knowledge_file": "image_filter_adjustments.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageAddNoise": {
+      "knowledge_file": "imageaddnoise.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageAndMaskPreview": {
+      "knowledge_file": "imageandmaskpreview.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageBatchMulti": {
+      "knowledge_file": "imagebatchmulti.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageBlend": {
+      "knowledge_file": "imageblend.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageCASharpening+": {
+      "knowledge_file": "imagecasharpening.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageColorMatch+": {
+      "knowledge_file": "imagecolormatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageConcanate": {
+      "knowledge_file": "imageconcanate.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageConcatFromBatch": {
+      "knowledge_file": "imageconcatfrombatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageConcatMulti": {
+      "knowledge_file": "imageconcatmulti.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageFromBatch": {
+      "knowledge_file": "imagefrombatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageListToBatch+": {
+      "knowledge_file": "imagelisttobatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageListToImageBatch": {
+      "knowledge_file": "imagelisttoimagebatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImagePadForOutpaint": {
+      "knowledge_file": "imagepadforoutpaint.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImagePass": {
+      "knowledge_file": "imagepass.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageRGBA2RGB": {
+      "knowledge_file": "imagergba2rgb.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageResize+": {
+      "knowledge_file": "imageresize.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageResizeKJ": {
+      "knowledge_file": "imageresizekj.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageResizeKJv2": {
+      "knowledge_file": "imageresizekjv2.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageScale": {
+      "knowledge_file": "imagescale.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageScaleBy": {
+      "knowledge_file": "imagescaleby.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageScaleToMaxDimension": {
+      "knowledge_file": "imagescaletomaxdimension.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageScaleToTotalPixels": {
+      "knowledge_file": "imagescaletototalpixels.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageStitch": {
+      "knowledge_file": "imagestitch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageUpscaleWithModel": {
+      "knowledge_file": "imageupscalewithmodel.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactImageBatchToImageList": {
+      "knowledge_file": "impactimagebatchtoimagelist.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactInt": {
+      "knowledge_file": "impactint.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactMakeAnyList": {
+      "knowledge_file": "impactmakeanylist.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactMinMax": {
+      "knowledge_file": "impactminmax.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactNeg": {
+      "knowledge_file": "impactneg.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactStringSelector": {
+      "knowledge_file": "impactstringselector.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InpaintCrop": {
+      "knowledge_file": "inpaintcrop.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InpaintCropImproved": {
+      "knowledge_file": "inpaintcropimproved.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InpaintModelConditioning": {
+      "knowledge_file": "inpaintmodelconditioning.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InpaintStitch": {
+      "knowledge_file": "inpaintstitch.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InpaintStitchImproved": {
+      "knowledge_file": "inpaintstitchimproved.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Int": {
+      "knowledge_file": "int.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InvertMask": {
+      "knowledge_file": "invertmask.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JWFloat": {
+      "knowledge_file": "jwfloat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JWImageResizeByLongerSide": {
+      "knowledge_file": "jwimageresizebylongerside.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JWIntegerToString": {
+      "knowledge_file": "jwintegertostring.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JWStringConcat": {
+      "knowledge_file": "jwstringconcat.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JoinImageWithAlpha": {
+      "knowledge_file": "joinimagewithalpha.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JoinStringMulti": {
+      "knowledge_file": "joinstringmulti.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JoinStrings": {
+      "knowledge_file": "joinstrings.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JsonExtractString": {
+      "knowledge_file": "jsonextractstring.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KOOK_ImageCompression": {
+      "knowledge_file": "kook_imagecompression.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KOOK_SaveJPGImage": {
+      "knowledge_file": "kook_savejpgimage.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KSamplerAdvanced": {
+      "knowledge_file": "ksampleradvanced.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KSamplerCacheable": {
+      "knowledge_file": "ksamplercacheable.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KSamplerSelect": {
+      "knowledge_file": "ksamplerselect.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Krea2ControlApply": {
+      "knowledge_file": "krea2controlapply.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Krea2ControlImageEncode": {
+      "knowledge_file": "krea2controlimageencode.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Krea2ControlLoRALoader": {
+      "knowledge_file": "krea2controlloraloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KuwaharaBlur": {
+      "knowledge_file": "kuwaharablur.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LCSColorAnchor": {
+      "knowledge_file": "lcscoloranchor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LCSLoadData": {
+      "knowledge_file": "lcsloaddata.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LCSSharpnessCalibrate": {
+      "knowledge_file": "lcssharpnesscalibrate.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LCSSharpnessIntervene": {
+      "knowledge_file": "lcssharpnessintervene.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LCSToneAdjust": {
+      "knowledge_file": "lcstoneadjust.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LG_Color_Match_V2": {
+      "knowledge_file": "lg_color_match_v2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LTXICLoRALoaderModelOnly": {
+      "knowledge_file": "ltxicloraloadermodelonly.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LTXVConcatAVLatent": {
+      "knowledge_file": "ltxvconcatavlatent.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LTXVConditioning": {
+      "knowledge_file": "ltxvconditioning.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LTXVSeparateAVLatent": {
+      "knowledge_file": "ltxvseparateavlatent.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Label (rgthree)": {
+      "knowledge_file": "label_rgthree.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LanPaint_MaskBlend": {
+      "knowledge_file": "lanpaint_maskblend.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Latent Noise Injection": {
+      "knowledge_file": "latent_noise_injection.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LatentSwitch": {
+      "knowledge_file": "latentswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LatentUpscaleBy": {
+      "knowledge_file": "latentupscaleby.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerColor: BrightnessContrastV2": {
+      "knowledge_file": "layercolor_brightnesscontrastv2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerColor: Color of Shadow & Highlight": {
+      "knowledge_file": "layercolor_color_of_shadow_highlight.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerColor: Levels": {
+      "knowledge_file": "layercolor_levels.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerColor: RGB": {
+      "knowledge_file": "layercolor_rgb.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerMask: BiRefNetUltraV2": {
+      "knowledge_file": "layermask_birefnetultrav2.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerMask: LoadBiRefNetModelV2": {
+      "knowledge_file": "layermask_loadbirefnetmodelv2.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerMask: MaskGrow": {
+      "knowledge_file": "layermask_maskgrow.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: ImageBlend": {
+      "knowledge_file": "layerutility_imageblend.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: ImageReel": {
+      "knowledge_file": "layerutility_imagereel.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: ImageReelComposit": {
+      "knowledge_file": "layerutility_imagereelcomposit.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: ImageRemoveAlpha": {
+      "knowledge_file": "layerutility_imageremovealpha.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: JoyCaption2ExtraOptions": {
+      "knowledge_file": "layerutility_joycaption2extraoptions.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: JoyCaptionBeta1": {
+      "knowledge_file": "layerutility_joycaptionbeta1.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: LoadJoyCaptionBeta1Model": {
+      "knowledge_file": "layerutility_loadjoycaptionbeta1model.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: NumberCalculator": {
+      "knowledge_file": "layerutility_numbercalculator.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: NumberCalculatorV2": {
+      "knowledge_file": "layerutility_numbercalculatorv2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: PurgeVRAM": {
+      "knowledge_file": "layerutility_purgevram.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: PurgeVRAM V2": {
+      "knowledge_file": "layerutility_purgevram_v2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: SaveImagePlus": {
+      "knowledge_file": "layerutility_saveimageplus.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: TextJoin": {
+      "knowledge_file": "layerutility_textjoin.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LensBlur": {
+      "knowledge_file": "lensblur.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadAudio": {
+      "knowledge_file": "loadaudio.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadBackgroundRemovalModel": {
+      "knowledge_file": "loadbackgroundremovalmodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadImageGoohai": {
+      "knowledge_file": "loadimagegoohai.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadVideo": {
+      "knowledge_file": "loadvideo.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoaderGGUF": {
+      "knowledge_file": "loadergguf.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoraLoader": {
+      "knowledge_file": "loraloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoraLoaderBypassModelOnly": {
+      "knowledge_file": "loraloaderbypassmodelonly.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ManualSigmas": {
+      "knowledge_file": "manualsigmas.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MaskBlur+": {
+      "knowledge_file": "maskblur.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MaskPreview": {
+      "knowledge_file": "maskpreview.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MaskPreview+": {
+      "knowledge_file": "maskpreview_7217.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MathExpression|pysssss": {
+      "knowledge_file": "mathexpression_pysssss.md",
+      "category": "Utility",
+      "role": "计算类节点：数值/表达式运算",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxChunkFeedForward": {
+      "knowledge_file": "minimaxchunkfeedforward.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3AddGuide": {
+      "knowledge_file": "minimaxh3addguide.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3AudioGuideFeather": {
+      "knowledge_file": "minimaxh3audioguidefeather.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3ImageToVideo": {
+      "knowledge_file": "minimaxh3imagetovideo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3MediaLoaderFantastic": {
+      "knowledge_file": "minimaxh3medialoaderfantastic.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3MemoryEfficientSageAttentionPatch": {
+      "knowledge_file": "minimaxh3memoryefficientsageattentionpatch.md",
+      "category": "Optimization",
+      "role": "注意力/加速优化节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3ReferenceSplitter": {
+      "knowledge_file": "minimaxh3referencesplitter.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3ReferenceToVideo": {
+      "knowledge_file": "minimaxh3referencetovideo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3SigmaShift": {
+      "knowledge_file": "minimaxh3sigmashift.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3UnifiedToVideo": {
+      "knowledge_file": "minimaxh3unifiedtovideo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxLowVRAMAttention": {
+      "knowledge_file": "minimaxlowvramattention.md",
+      "category": "Optimization",
+      "role": "注意力/加速优化节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MinimaxH3LatentUpscaler3D": {
+      "knowledge_file": "minimaxh3latentupscaler3d.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelAttentionBackend": {
+      "knowledge_file": "modelattentionbackend.md",
+      "category": "Optimization",
+      "role": "注意力/加速优化节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelPassThrough": {
+      "knowledge_file": "modelpassthrough.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelPatchLoader": {
+      "knowledge_file": "modelpatchloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelPatchTorchSettings": {
+      "knowledge_file": "modelpatchtorchsettings.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelPreviewOverrideKJ": {
+      "knowledge_file": "modelpreviewoverridekj.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelSamplingAuraFlow": {
+      "knowledge_file": "modelsamplingauraflow.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelSamplingFlux": {
+      "knowledge_file": "modelsamplingflux.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ModelSamplingSD3": {
+      "knowledge_file": "modelsamplingsd3.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MultiTextConcatenate": {
+      "knowledge_file": "multitextconcatenate.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Mute / Bypass Relay (rgthree)": {
+      "knowledge_file": "mute_bypass_relay_rgthree.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Mute / Bypass Repeater (rgthree)": {
+      "knowledge_file": "mute_bypass_repeater_rgthree.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MuyeTextEditOutput": {
+      "knowledge_file": "muyetexteditoutput.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "NunchakuQwenImageDiTLoader": {
+      "knowledge_file": "nunchakuqwenimageditloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "OpenposePreprocessor": {
+      "knowledge_file": "openposepreprocessor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PDIMAGE_LongerSize": {
+      "knowledge_file": "pdimage_longersize.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PIP_图像联结": {
+      "knowledge_file": "pip.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PainterFluxImageEdit": {
+      "knowledge_file": "painterfluximageedit.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PathchSageAttentionKJ": {
+      "knowledge_file": "pathchsageattentionkj.md",
+      "category": "Optimization",
+      "role": "注意力/加速优化节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PhotoShakeNode": {
+      "knowledge_file": "photoshakenode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PixaromaGroupSwitch": {
+      "knowledge_file": "pixaromagroupswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PixaromaLabel": {
+      "knowledge_file": "pixaromalabel.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PixaromaResolution": {
+      "knowledge_file": "pixaromaresolution.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PlaySound|pysssss": {
+      "knowledge_file": "playsound_pysssss.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PreviewBridge": {
+      "knowledge_file": "previewbridge.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PrimitiveBoolean": {
+      "knowledge_file": "primitiveboolean.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ProcessString": {
+      "knowledge_file": "processstring.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Prompts Everywhere": {
+      "knowledge_file": "prompts_everywhere.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PurgeVRAM_UTK": {
+      "knowledge_file": "purgevram_utk.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QZ_ResolutionPreset": {
+      "knowledge_file": "qz_resolutionpreset.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Qwen3VLProcessor": {
+      "knowledge_file": "qwen3vlprocessor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Qwen3VL_Chat": {
+      "knowledge_file": "qwen3vl_chat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Qwen3_VQA": {
+      "knowledge_file": "qwen3_vqa.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Qwen3_VQA_Plus": {
+      "knowledge_file": "qwen3_vqa_plus.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenEditAdaptiveLongestEdge": {
+      "knowledge_file": "qweneditadaptivelongestedge.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenEditConfigPreparer": {
+      "knowledge_file": "qweneditconfigpreparer.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenEditOutputExtractor": {
+      "knowledge_file": "qweneditoutputextractor.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImage21BlockCacheT8": {
+      "knowledge_file": "qwenimage21blockcachet8.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImage21FunPDDLoader": {
+      "knowledge_file": "qwenimage21funpddloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImage21SageAttentionT8": {
+      "knowledge_file": "qwenimage21sageattentiont8.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImage21SpectrumT8": {
+      "knowledge_file": "qwenimage21spectrumt8.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImageIntegratedKSampler": {
+      "knowledge_file": "qwenimageintegratedksampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImagePromptOptimizer": {
+      "knowledge_file": "qwenimagepromptoptimizer.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenMultiangleCameraNode": {
+      "knowledge_file": "qwenmultianglecameranode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenPERewriteT8": {
+      "knowledge_file": "qwenperewritet8.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RHHiddenNodes": {
+      "knowledge_file": "rhhiddennodes.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RHLLMChatNode": {
+      "knowledge_file": "rhllmchatnode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_Captioner": {
+      "knowledge_file": "rh_captioner.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_LLMAPI_NODE": {
+      "knowledge_file": "rh_llmapi_node.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_LLMAPI_Pro_Node": {
+      "knowledge_file": "rh_llmapi_pro_node.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_Nano_Banana2_Gemini31Flash": {
+      "knowledge_file": "rh_nano_banana2_gemini31flash.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_Nano_Banana_Image2Image": {
+      "knowledge_file": "rh_nano_banana_image2image.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25FlareImageToImage": {
+      "knowledge_file": "rh_rhartimageg25flareimagetoimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25OfficialTokenSunburstEdit": {
+      "knowledge_file": "rh_rhartimageg25officialtokensunburstedit.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25OfficialTokenSunburstTextToImage": {
+      "knowledge_file": "rh_rhartimageg25officialtokensunbursttexttoimage.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25SunburstImageToImage": {
+      "knowledge_file": "rh_rhartimageg25sunburstimagetoimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25SunburstTextToImage": {
+      "knowledge_file": "rh_rhartimageg25sunbursttexttoimage.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG2ImageToImage": {
+      "knowledge_file": "rh_rhartimageg2imagetoimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG2OfficialImageToImage": {
+      "knowledge_file": "rh_rhartimageg2officialimagetoimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG2TextToImage": {
+      "knowledge_file": "rh_rhartimageg2texttoimage.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageNProOfficialEdit": {
+      "knowledge_file": "rh_rhartimagenproofficialedit.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartVideoSparkvideo20MiniImageToVideo": {
+      "knowledge_file": "rh_rhartvideosparkvideo20miniimagetovideo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartVideoSparkvideo20MiniTextToVideo": {
+      "knowledge_file": "rh_rhartvideosparkvideo20minitexttovideo.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_Translator": {
+      "knowledge_file": "rh_translator.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RMBG": {
+      "knowledge_file": "rmbg.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RTXVideoSuperResolution": {
+      "knowledge_file": "rtxvideosuperresolution.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RandomNoise": {
+      "knowledge_file": "randomnoise.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ReferenceLatent": {
+      "knowledge_file": "referencelatent.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RegexExtract": {
+      "knowledge_file": "regexextract.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RegexMatch": {
+      "knowledge_file": "regexmatch.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RegexReplace": {
+      "knowledge_file": "regexreplace.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RemoveBackground": {
+      "knowledge_file": "removebackground.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RepeatLatentBatch": {
+      "knowledge_file": "repeatlatentbatch.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ResizeAndPadImage": {
+      "knowledge_file": "resizeandpadimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ResizeImageMaskNode": {
+      "knowledge_file": "resizeimagemasknode.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RestoreQwenImage21GH": {
+      "knowledge_file": "restoreqwenimage21gh.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RunningHub Deepcleaner": {
+      "knowledge_file": "runninghub_deepcleaner.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SAMLoader": {
+      "knowledge_file": "samloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SDXL Empty Latent Image (rgthree)": {
+      "knowledge_file": "sdxl_empty_latent_image_rgthree.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Sa2VANodeTpl": {
+      "knowledge_file": "sa2vanodetpl.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SamplerCustomAdvanced": {
+      "knowledge_file": "samplercustomadvanced.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveAudio": {
+      "knowledge_file": "saveaudio.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveImageAdvanced": {
+      "knowledge_file": "saveimageadvanced.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveImageJPG_GH": {
+      "knowledge_file": "saveimagejpg_gh.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveLatent": {
+      "knowledge_file": "savelatent.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveText": {
+      "knowledge_file": "savetext.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveVideo": {
+      "knowledge_file": "savevideo.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Seed (rgthree)": {
+      "knowledge_file": "seed_rgthree.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedNode": {
+      "knowledge_file": "seednode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2": {
+      "knowledge_file": "seedvr2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2BlockSwap": {
+      "knowledge_file": "seedvr2blockswap.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2Conditioning": {
+      "knowledge_file": "seedvr2conditioning.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2ExtraArgs": {
+      "knowledge_file": "seedvr2extraargs.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2LoadDiTModel": {
+      "knowledge_file": "seedvr2loadditmodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2LoadVAEModel": {
+      "knowledge_file": "seedvr2loadvaemodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2PostProcessing": {
+      "knowledge_file": "seedvr2postprocessing.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2Preprocess": {
+      "knowledge_file": "seedvr2preprocess.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeedVR2VideoUpscaler": {
+      "knowledge_file": "seedvr2videoupscaler.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SelfLiftH3Sampler": {
+      "knowledge_file": "selflifth3sampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SetLatentNoiseMask": {
+      "knowledge_file": "setlatentnoisemask.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SetReserveVRAM": {
+      "knowledge_file": "setreservevram.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SetUnionControlNetType": {
+      "knowledge_file": "setunioncontrolnettype.md",
+      "category": "Conditioning",
+      "role": "ControlNet 控制类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ShellAgentPluginOutputText": {
+      "knowledge_file": "shellagentpluginoutputtext.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ShowAnything|Mie": {
+      "knowledge_file": "showanything_mie.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ShowText": {
+      "knowledge_file": "showtext.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SimpleMath+": {
+      "knowledge_file": "simplemath.md",
+      "category": "Utility",
+      "role": "计算类节点：数值/表达式运算",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SimpleMathDual+": {
+      "knowledge_file": "simplemathdual.md",
+      "category": "Utility",
+      "role": "计算类节点：数值/表达式运算",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SimplePromptBatcher": {
+      "knowledge_file": "simplepromptbatcher.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SomethingToString": {
+      "knowledge_file": "somethingtostring.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SplitImageWithAlpha": {
+      "knowledge_file": "splitimagewithalpha.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SplitSigmas": {
+      "knowledge_file": "splitsigmas.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "StringConcatenate": {
+      "knowledge_file": "stringconcatenate.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "StringConstantMultiline": {
+      "knowledge_file": "stringconstantmultiline.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "StringFormat": {
+      "knowledge_file": "stringformat.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "StringFunction|pysssss": {
+      "knowledge_file": "stringfunction_pysssss.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "StringMergeNode": {
+      "knowledge_file": "stringmergenode.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "StringReplace": {
+      "knowledge_file": "stringreplace.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Switch any [Crystools]": {
+      "knowledge_file": "switch_any_crystools.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TTP_Image_Assy": {
+      "knowledge_file": "ttp_image_assy.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TTP_Image_Tile_Batch": {
+      "knowledge_file": "ttp_image_tile_batch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TTP_Tile_image_size": {
+      "knowledge_file": "ttp_tile_image_size.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TTResolutionSelector": {
+      "knowledge_file": "ttresolutionselector.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Text": {
+      "knowledge_file": "text.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Text Concatenate": {
+      "knowledge_file": "text_concatenate.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Text Load Line From File": {
+      "knowledge_file": "text_load_line_from_file.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Text Multiline": {
+      "knowledge_file": "text_multiline.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImage21GH": {
+      "knowledge_file": "textencodeqwenimage21gh.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImageEdit": {
+      "knowledge_file": "textencodeqwenimageedit.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImageEditPlus": {
+      "knowledge_file": "textencodeqwenimageeditplus.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImageEditPlusAdvance_lrzjason": {
+      "knowledge_file": "textencodeqwenimageeditplusadvance_lrzjason.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImageEditPlusCustom_lrzjason": {
+      "knowledge_file": "textencodeqwenimageeditpluscustom_lrzjason.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextGenerate": {
+      "knowledge_file": "textgenerate.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextGenerateLTX2Prompt": {
+      "knowledge_file": "textgenerateltx2prompt.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextInputBasic": {
+      "knowledge_file": "textinputbasic.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextInput_": {
+      "knowledge_file": "textinput.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextPreview": {
+      "knowledge_file": "textpreview.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Textbox": {
+      "knowledge_file": "textbox.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TripoSplatConditioning": {
+      "knowledge_file": "triposplatconditioning.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TripoSplatPreprocessImage": {
+      "knowledge_file": "triposplatpreprocessimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TurboWanVAELoader": {
+      "knowledge_file": "turbowanvaeloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UltimateSDUpscale": {
+      "knowledge_file": "ultimatesdupscale.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UltralyticsDetectorProvider": {
+      "knowledge_file": "ultralyticsdetectorprovider.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UnetLoaderGGUF": {
+      "knowledge_file": "unetloadergguf.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Upscale Model Loader": {
+      "knowledge_file": "upscale_model_loader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UpscaleModelLoader": {
+      "knowledge_file": "upscalemodelloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAEDecodeAudio": {
+      "knowledge_file": "vaedecodeaudio.md",
+      "category": "Decoding",
+      "role": "解码类节点：把编码数据还原",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAEDecodeTiled": {
+      "knowledge_file": "vaedecodetiled.md",
+      "category": "Decoding",
+      "role": "解码类节点：把编码数据还原",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAEDecodeTripoSplat": {
+      "knowledge_file": "vaedecodetriposplat.md",
+      "category": "Decoding",
+      "role": "解码类节点：把编码数据还原",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAEEncode": {
+      "knowledge_file": "vaeencode.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAEEncodeTiled": {
+      "knowledge_file": "vaeencodetiled.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAELoaderKJ": {
+      "knowledge_file": "vaeloaderkj.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAELoader_Any": {
+      "knowledge_file": "vaeloader_any.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_LoadVideo": {
+      "knowledge_file": "vhs_loadvideo.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_VideoCombine": {
+      "knowledge_file": "vhs_videocombine.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VOSR2ModelLoader": {
+      "knowledge_file": "vosr2modelloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VOSR2Upscale": {
+      "knowledge_file": "vosr2upscale.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VRAM_Debug": {
+      "knowledge_file": "vram_debug.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VRGDG_Music3ConditioningStrength": {
+      "knowledge_file": "vrgdg_music3conditioningstrength.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VideoFrameSample": {
+      "knowledge_file": "videoframesample.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VideoTemporalCrop": {
+      "knowledge_file": "videotemporalcrop.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WD14Tagger|pysssss": {
+      "knowledge_file": "wd14tagger_pysssss.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WanVideoLoraSelect": {
+      "knowledge_file": "wanvideoloraselect.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WanVideoNAG": {
+      "knowledge_file": "wanvideonag.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "XB_CanvasLabel": {
+      "knowledge_file": "xb_canvaslabel.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "XinbaoImageStandardizer": {
+      "knowledge_file": "xinbaoimagestandardizer.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTConvertAny": {
+      "knowledge_file": "yuan_txtconvertany.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTJsonExtractor": {
+      "knowledge_file": "yuan_txtjsonextractor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTParagraphSplitter": {
+      "knowledge_file": "yuan_txtparagraphsplitter.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTReplace": {
+      "knowledge_file": "yuan_txtreplace.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanMultiImage": {
+      "knowledge_file": "yuanmultiimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ZImageFunControlnet": {
+      "knowledge_file": "zimagefuncontrolnet.md",
+      "category": "Conditioning",
+      "role": "ControlNet 控制类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ZML_AnyTypeSwitch": {
+      "knowledge_file": "zml_anytypeswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ZML_BooleanSwitch": {
+      "knowledge_file": "zml_booleanswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy anythingIndexSwitch": {
+      "knowledge_file": "easy_anythingindexswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy batchAnything": {
+      "knowledge_file": "easy_batchanything.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy boolean": {
+      "knowledge_file": "easy_boolean.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy cleanGpuUsed": {
+      "knowledge_file": "easy_cleangpuused.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy clearCacheAll": {
+      "knowledge_file": "easy_clearcacheall.md",
+      "category": "Optimization",
+      "role": "缓存/优化类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy convertAnything": {
+      "knowledge_file": "easy_convertanything.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy float": {
+      "knowledge_file": "easy_float.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy forLoopEnd": {
+      "knowledge_file": "easy_forloopend.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy forLoopStart": {
+      "knowledge_file": "easy_forloopstart.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy getNode": {
+      "knowledge_file": "easy_getnode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageBatchToImageList": {
+      "knowledge_file": "easy_imagebatchtoimagelist.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageColorMatch": {
+      "knowledge_file": "easy_imagecolormatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageConcat": {
+      "knowledge_file": "easy_imageconcat.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageInsetCrop": {
+      "knowledge_file": "easy_imageinsetcrop.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageListToImageBatch": {
+      "knowledge_file": "easy_imagelisttoimagebatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageScaleDownBy": {
+      "knowledge_file": "easy_imagescaledownby.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageSize": {
+      "knowledge_file": "easy_imagesize.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageSizeBySide": {
+      "knowledge_file": "easy_imagesizebyside.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy indexAnything": {
+      "knowledge_file": "easy_indexanything.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy int": {
+      "knowledge_file": "easy_int.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy lengthAnything": {
+      "knowledge_file": "easy_lengthanything.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy loraStack": {
+      "knowledge_file": "easy_lorastack.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy loraStackApply": {
+      "knowledge_file": "easy_lorastackapply.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy mergeVideosFromPaths": {
+      "knowledge_file": "easy_mergevideosfrompaths.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy minimaxH3ToVideo": {
+      "knowledge_file": "easy_minimaxh3tovideo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy multiTrackEditor": {
+      "knowledge_file": "easy_multitrackeditor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy multiTrackInfoOutput": {
+      "knowledge_file": "easy_multitrackinfooutput.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy multiTrackTaskOutput": {
+      "knowledge_file": "easy_multitracktaskoutput.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy positive": {
+      "knowledge_file": "easy_positive.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy promptConcat": {
+      "knowledge_file": "easy_promptconcat.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy promptLine": {
+      "knowledge_file": "easy_promptline.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy saveText": {
+      "knowledge_file": "easy_savetext.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy saveVideo": {
+      "knowledge_file": "easy_savevideo.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy seed": {
+      "knowledge_file": "easy_seed.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy setNode": {
+      "knowledge_file": "easy_setnode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy string": {
+      "knowledge_file": "easy_string.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy textIndexSwitch": {
+      "knowledge_file": "easy_textindexswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy textSwitch": {
+      "knowledge_file": "easy_textswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "llama_cpp_instruct_adv": {
+      "knowledge_file": "llama_cpp_instruct_adv.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "llama_cpp_model_loader": {
+      "knowledge_file": "llama_cpp_model_loader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "llama_cpp_parameters": {
+      "knowledge_file": "llama_cpp_parameters.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "math_calculate": {
+      "knowledge_file": "math_calculate.md",
+      "category": "Utility",
+      "role": "计算类节点：数值/表达式运算",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "sch_split_text": {
+      "knowledge_file": "sch_split_text.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "solarL_SaveImagesToZip": {
+      "knowledge_file": "solarl_saveimagestozip.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ttN concat": {
+      "knowledge_file": "ttn_concat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ttN text7BOX_concat": {
+      "knowledge_file": "ttn_text7box_concat.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "workflow>SeedVR2": {
+      "knowledge_file": "workflow_seedvr2.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "忽略多组孤海": {
+      "knowledge_file": "node.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Prompt List": {
+      "knowledge_file": "cr_prompt_list.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Seed": {
+      "knowledge_file": "cr_seed.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CR Text Input Switch (4 way)": {
+      "knowledge_file": "cr_text_input_switch_4_way.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CreateCameraInfo": {
+      "knowledge_file": "createcamerainfo.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "CustomSigmas": {
+      "knowledge_file": "customsigmas.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FB_Qwen3TTSVoiceDesign": {
+      "knowledge_file": "fb_qwen3ttsvoicedesign.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "KSampler (Efficient)": {
+      "knowledge_file": "ksampler_efficient.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerFilter: HDREffects": {
+      "knowledge_file": "layerfilter_hdreffects.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Load3D": {
+      "knowledge_file": "load3d.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Mask Fill Holes": {
+      "knowledge_file": "mask_fill_holes.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3LatentUpscaleBy32T8": {
+      "knowledge_file": "minimaxh3latentupscaleby32t8.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImage21UnionApply": {
+      "knowledge_file": "qwenimage21unionapply.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenImage21UnionLoader": {
+      "knowledge_file": "qwenimage21unionloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25FlareTextToImage": {
+      "knowledge_file": "rh_rhartimageg25flaretexttoimage.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_RhartImageG25OfficialTokenFlareEdit": {
+      "knowledge_file": "rh_rhartimageg25officialtokenflareedit.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RenderSplat": {
+      "knowledge_file": "rendersplat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SaveGLB": {
+      "knowledge_file": "saveglb.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SplatToFile3D": {
+      "knowledge_file": "splattofile3d.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "String Literal": {
+      "knowledge_file": "string_literal.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "T8QwenImage21FunAccPDD4Step": {
+      "knowledge_file": "t8qwenimage21funaccpdd4step.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextToListNode": {
+      "knowledge_file": "texttolistnode.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTPreviewContent": {
+      "knowledge_file": "yuan_txtpreviewcontent.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuE2CoverTranscribe": {
+      "knowledge_file": "yue2covertranscribe.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuE2Generate": {
+      "knowledge_file": "yue2generate.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuE2Loader": {
+      "knowledge_file": "yue2loader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuE2SamplingConfig": {
+      "knowledge_file": "yue2samplingconfig.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanCustomCombo": {
+      "knowledge_file": "yuancustomcombo.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageChooser": {
+      "knowledge_file": "easy_imagechooser.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Astra": {
+      "knowledge_file": "astra.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "AudioConcat": {
+      "knowledge_file": "audioconcat.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "AudioCrop": {
+      "knowledge_file": "audiocrop.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DA3Inference": {
+      "knowledge_file": "da3inference.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DA3Render": {
+      "knowledge_file": "da3render.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DF_Int_to_Float": {
+      "knowledge_file": "df_int_to_float.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "DiffusionModelLoaderKJ": {
+      "knowledge_file": "diffusionmodelloaderkj.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "EasyCache": {
+      "knowledge_file": "easycache.md",
+      "category": "Optimization",
+      "role": "缓存/优化类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ExtractStoryboards_xuhuan1024": {
+      "knowledge_file": "extractstoryboards_xuhuan1024.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FlashVSR_SM_KSampler": {
+      "knowledge_file": "flashvsr_sm_ksampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "FlashVSR_SM_Model": {
+      "knowledge_file": "flashvsr_sm_model.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Float": {
+      "knowledge_file": "float.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GetImage": {
+      "knowledge_file": "getimage.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GoohaiMinimaxH3TiledSampler": {
+      "knowledge_file": "goohaiminimaxh3tiledsampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3DistanceAttentionPatcher": {
+      "knowledge_file": "h3distanceattentionpatcher.md",
+      "category": "Optimization",
+      "role": "注意力/加速优化节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3ExactRecover": {
+      "knowledge_file": "h3exactrecover.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3InjectSchedule": {
+      "knowledge_file": "h3injectschedule.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3JerkHeatmap": {
+      "knowledge_file": "h3jerkheatmap.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3JerkOracle": {
+      "knowledge_file": "h3jerkoracle.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3LatentUpscaleByJingchen573": {
+      "knowledge_file": "h3latentupscalebyjingchen573.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3TimeSmear": {
+      "knowledge_file": "h3timesmear.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "H3V2VInit": {
+      "knowledge_file": "h3v2vinit.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageBlur": {
+      "knowledge_file": "imageblur.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageCompositeMasked": {
+      "knowledge_file": "imagecompositemasked.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageConcatenateMulti_UTK": {
+      "knowledge_file": "imageconcatenatemulti_utk.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageConcatenate_UTK": {
+      "knowledge_file": "imageconcatenate_utk.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImageToMask": {
+      "knowledge_file": "imagetomask.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ImpactFloat": {
+      "knowledge_file": "impactfloat.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "InspyrenetRembg": {
+      "knowledge_file": "inspyrenetrembg.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JWStringToFloat": {
+      "knowledge_file": "jwstringtofloat.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LTXVAudioVAEEncode": {
+      "knowledge_file": "ltxvaudiovaeencode.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadAudioUI": {
+      "knowledge_file": "loadaudioui.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadDA3Model": {
+      "knowledge_file": "loadda3model.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LoadVideoDepthAnythingModel": {
+      "knowledge_file": "loadvideodepthanythingmodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MaskToImage": {
+      "knowledge_file": "masktoimage.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3AVDecodeT8": {
+      "knowledge_file": "minimaxh3avdecodet8.md",
+      "category": "Decoding",
+      "role": "解码类节点：把编码数据还原",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3ActivationChunkT8Advanced": {
+      "knowledge_file": "minimaxh3activationchunkt8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3AudioConditioningT8": {
+      "knowledge_file": "minimaxh3audioconditioningt8.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3AudioMixT8": {
+      "knowledge_file": "minimaxh3audiomixt8.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3BlockCacheT8": {
+      "knowledge_file": "minimaxh3blockcachet8.md",
+      "category": "Optimization",
+      "role": "缓存/优化类节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3ChunkFeedForwardT8Advanced": {
+      "knowledge_file": "minimaxh3chunkfeedforwardt8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3DualClockSamplerT8": {
+      "knowledge_file": "minimaxh3dualclocksamplert8.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3Easy": {
+      "knowledge_file": "minimaxh3easy.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3EasyModelAdapter": {
+      "knowledge_file": "minimaxh3easymodeladapter.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3EasyOutput": {
+      "knowledge_file": "minimaxh3easyoutput.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3EasySecondPassConditioning": {
+      "knowledge_file": "minimaxh3easysecondpassconditioning.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3FaceRefineConditioningT8Advanced": {
+      "knowledge_file": "minimaxh3facerefineconditioningt8advanced.md",
+      "category": "Conditioning",
+      "role": "条件处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3FaceRefinePlanT8Advanced": {
+      "knowledge_file": "minimaxh3facerefineplant8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3FaceRefineSamplerT8Advanced": {
+      "knowledge_file": "minimaxh3facerefinesamplert8advanced.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3FaceRefineStitchAuditT8Advanced": {
+      "knowledge_file": "minimaxh3facerefinestitchauditt8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3HyperVAE2xLoaderEXPT8": {
+      "knowledge_file": "minimaxh3hypervae2xloaderexpt8.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3LearnedLatentUpscaleT8Advanced": {
+      "knowledge_file": "minimaxh3learnedlatentupscalet8advanced.md",
+      "category": "Upscale",
+      "role": "放大类节点：提升图像/视频分辨率",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3LearnedTwoPassParityPlanT8Advanced": {
+      "knowledge_file": "minimaxh3learnedtwopassparityplant8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3MotionContext": {
+      "knowledge_file": "minimaxh3motioncontext.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3MotionContextLoadLatent": {
+      "knowledge_file": "minimaxh3motioncontextloadlatent.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3MotionContextSaveLatent": {
+      "knowledge_file": "minimaxh3motioncontextsavelatent.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3MotionContextTrim": {
+      "knowledge_file": "minimaxh3motioncontexttrim.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3OutputTrimT8": {
+      "knowledge_file": "minimaxh3outputtrimt8.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3PromptEnhancerT8": {
+      "knowledge_file": "minimaxh3promptenhancert8.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3SafeAVSaveT8Advanced": {
+      "knowledge_file": "minimaxh3safeavsavet8advanced.md",
+      "category": "Output",
+      "role": "输出类节点：把结果写到磁盘",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3SemanticBridgeApplyT8": {
+      "knowledge_file": "minimaxh3semanticbridgeapplyt8.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3SemanticBridgeConfigT8": {
+      "knowledge_file": "minimaxh3semanticbridgeconfigt8.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3TwoPassDetailMixerT8Advanced": {
+      "knowledge_file": "minimaxh3twopassdetailmixert8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3TwoPassLatentReconcileT8Advanced": {
+      "knowledge_file": "minimaxh3twopasslatentreconcilet8advanced.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3Unified": {
+      "knowledge_file": "minimaxh3unified.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3VAEDecodeFast": {
+      "knowledge_file": "minimaxh3vaedecodefast.md",
+      "category": "Decoding",
+      "role": "解码类节点：把编码数据还原",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3VDNExecutionPlanT8Advanced": {
+      "knowledge_file": "minimaxh3vdnexecutionplant8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MiniMaxH3VDNModelComposerT8Advanced": {
+      "knowledge_file": "minimaxh3vdnmodelcomposert8advanced.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MmuuaiGroupBypass": {
+      "knowledge_file": "mmuuaigroupbypass.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PT_H3ConcatAVLatent": {
+      "knowledge_file": "pt_h3concatavlatent.md",
+      "category": "Latent",
+      "role": "latent 空间处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PixaromaGetNode": {
+      "knowledge_file": "pixaromagetnode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PixaromaSetNode": {
+      "knowledge_file": "pixaromasetnode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PointsEditor": {
+      "knowledge_file": "pointseditor.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PreviewAudio": {
+      "knowledge_file": "previewaudio.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "QwenH3PromptLocal": {
+      "knowledge_file": "qwenh3promptlocal.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RHMiniMaxH3Ref2VAImageReference": {
+      "knowledge_file": "rhminimaxh3ref2vaimagereference.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RHMiniMaxH3RefGen": {
+      "knowledge_file": "rhminimaxh3refgen.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RHSettingsNode": {
+      "knowledge_file": "rhsettingsnode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_Screenwriter": {
+      "knowledge_file": "rh_screenwriter.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RepeatImageBatch": {
+      "knowledge_file": "repeatimagebatch.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ResizeShortestToNode": {
+      "knowledge_file": "resizeshortesttonode.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeCModelLoader": {
+      "knowledge_file": "secmodelloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SeCVideoSegmentation": {
+      "knowledge_file": "secvideosegmentation.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SelfLiftAvatarH3Sampler": {
+      "knowledge_file": "selfliftavatarh3sampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SolAttnMiniMax": {
+      "knowledge_file": "solattnminimax.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SolidMask": {
+      "knowledge_file": "solidmask.md",
+      "category": "Mask",
+      "role": "遮罩类节点：生成或处理遮罩",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "SoundFlow_GetLength": {
+      "knowledge_file": "soundflow_getlength.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextConcatenate_UTK": {
+      "knowledge_file": "textconcatenate_utk.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TimbreAudioLoader": {
+      "knowledge_file": "timbreaudioloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TrimAudioDuration": {
+      "knowledge_file": "trimaudioduration.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UniBlockSwap": {
+      "knowledge_file": "uniblockswap.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UniBlockSwapTE": {
+      "knowledge_file": "uniblockswapte.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VAEEncodeAudio": {
+      "knowledge_file": "vaeencodeaudio.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_LoadAudioUpload": {
+      "knowledge_file": "vhs_loadaudioupload.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_LoadVideoFFmpeg": {
+      "knowledge_file": "vhs_loadvideoffmpeg.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_MergeImages": {
+      "knowledge_file": "vhs_mergeimages.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_VideoInfo": {
+      "knowledge_file": "vhs_videoinfo.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VHS_VideoInfoLoaded": {
+      "knowledge_file": "vhs_videoinfoloaded.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VRGDG_MiniMaxH3AudioDrive": {
+      "knowledge_file": "vrgdg_minimaxh3audiodrive.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Video Duration Calculator": {
+      "knowledge_file": "video_duration_calculator.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Video Slice": {
+      "knowledge_file": "video_slice.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "VideoDepthAnythingProcess": {
+      "knowledge_file": "videodepthanythingprocess.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WujiAudioLoader": {
+      "knowledge_file": "wujiaudioloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WujiCleaner": {
+      "knowledge_file": "wujicleaner.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WujiH3PromptEnhancer": {
+      "knowledge_file": "wujih3promptenhancer.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTJsonSwitch": {
+      "knowledge_file": "yuan_txtjsonswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YUAN_TXTShotDurations": {
+      "knowledge_file": "yuan_txtshotdurations.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanAudioList": {
+      "knowledge_file": "yuanaudiolist.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanAudioLoad": {
+      "knowledge_file": "yuanaudioload.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanAudioSplit": {
+      "knowledge_file": "yuanaudiosplit.md",
+      "category": "Audio",
+      "role": "音频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanImageGridComposite": {
+      "knowledge_file": "yuanimagegridcomposite.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanLoadImageOutput": {
+      "knowledge_file": "yuanloadimageoutput.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanPrimitive": {
+      "knowledge_file": "yuanprimitive.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "YuanTool": {
+      "knowledge_file": "yuantool.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Yuan_H3MotionContextTrim": {
+      "knowledge_file": "yuan_h3motioncontexttrim.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Yuan_H3ProgressiveSampler": {
+      "knowledge_file": "yuan_h3progressivesampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Yuan_MiniMaxH3Video": {
+      "knowledge_file": "yuan_minimaxh3video.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy MiniMaxH3ReferenceToVideoBridge": {
+      "knowledge_file": "easy_minimaxh3referencetovideobridge.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy anythingInversedSwitch": {
+      "knowledge_file": "easy_anythinginversedswitch.md",
+      "category": "Control Flow",
+      "role": "分支类节点：按条件选择输入",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy compare": {
+      "knowledge_file": "easy_compare.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageCount": {
+      "knowledge_file": "easy_imagecount.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageRemBg": {
+      "knowledge_file": "easy_imagerembg.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy imageSplitGrid": {
+      "knowledge_file": "easy_imagesplitgrid.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy isNone": {
+      "knowledge_file": "easy_isnone.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "easy mathInt": {
+      "knowledge_file": "easy_mathint.md",
+      "category": "Utility",
+      "role": "计算类节点：数值/表达式运算",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "intToFloat _O": {
+      "knowledge_file": "inttofloat_o.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
     }
   }
 }

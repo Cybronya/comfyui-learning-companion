@@ -44,8 +44,15 @@ COMMENT_NODES = frozenset({
 PREVIEW_NODES = frozenset({
     "PreviewImage",
     "Preview Any",
+    "PreviewAny",
     "Image Comparer (rgthree)",
     "Image Comparer (rgthree) 🖼️",
+    # rgthree 的分组显隐控件：只切换 UI 里参数组的 mute/bypass，
+    # 是给人点的工作台开关，不是生成知识
+    "Fast Groups Bypasser (rgthree)",
+    "Fast Groups Muter (rgthree)",
+    "Fast Groups Bypasser (rgthree) 🛂",
+    "Fast Groups Muter (rgthree) 🔇",
 })
 
 # 输入占位（LoadImage 之外的上传占位类，语义固定到不值一张卡）

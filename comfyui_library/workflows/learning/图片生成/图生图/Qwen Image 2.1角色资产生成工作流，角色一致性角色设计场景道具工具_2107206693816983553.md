@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1角色资产生成工作流，角色一致性角色设计场景道具工具_2107206693816983553.json
 hash: b2ceb47b69676ac0
-coverage: 0.622807
-learned_at: 2026-10-06 21:41:46
+coverage: 0.807018
+learned_at: 2026-10-06 22:31:30
 nodes: [SaveImageAdvanced, ResolutionSelector, SaveImageAdvanced, LoadImage, LoadImage, SaveImageAdvanced, ResolutionSelector, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, ComfySwitchNode, QwenImage21Cache, CLIPLoader, easy cleanGpuUsed, easy showAnything, TextEncodeQwenImage21, CR Prompt Text, UNETLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, ComfySwitchNode, QwenImage21Cache, easy cleanGpuUsed, LoadImage, ImageResizeKJv2, CLIPLoader, ResolutionSelector, easy showAnything, TextEncodeQwenImage21, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, ComfySwitchNode, QwenImage21Cache, TextEncodeQwenImage21, LoadImage, LoadImage, easy cleanGpuUsed, CLIPLoader, easy showAnything, LoadImage, ImageResizeKJv2, UNETLoader, VAELoader, EmptyLatentImage, KSampler, QwenImage21Cache, VAEDecode, SaveImageAdvanced, PreviewImage, CLIPLoader, easy showAnything, TextEncodeQwenImage21, easy cleanGpuUsed, ImageStitch, TTResolutionSelector, CR Prompt Text, CLIPLoader, TTResolutionSelector, ImageResizeKJv2, TTResolutionSelector, MuyeTextEditOutput, TextGenerate, CR Prompt Text, MuyeTextEditOutput, PrimitiveStringMultiline, MuyeTextEditOutput, TextGenerate, TextGenerate, CR Prompt Text, MuyeTextEditOutput, TextGenerate, BatchImagesNode, Fast Groups Bypasser (rgthree), ResolutionSelector, CLIPLoader, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [BatchImagesNode, Fast Groups Bypasser (rgthree), ImageStitch, TextGenerate, TextGenerate, TextGenerate, TextGenerate, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, MuyeTextEditOutput, MuyeTextEditOutput, MuyeTextEditOutput, MuyeTextEditOutput, SaveImageAdvanced, SaveImageAdvanced, SaveImageAdvanced, SaveImageAdvanced, TTResolutionSelector, TTResolutionSelector, TTResolutionSelector, solarL_SaveImagesToZip]
+missing: [easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `ImageStitch` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1角色资产生成工作流，角色一致性角色设计场景道具工具_2107206693816983553.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（114 个）：
 - `SaveImageAdvanced`
@@ -156,11 +156,11 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **62%**（71/114）
+覆盖率 **81%**（92/114）
 
-**有卡**：`ResolutionSelector`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`
+**有卡**：`SaveImageAdvanced`、`ResolutionSelector`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`ImageResizeKJv2`、`ImageStitch`、`TTResolutionSelector`、`MuyeTextEditOutput`、`TextGenerate`、`BatchImagesNode`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（30）：`BatchImagesNode`、`Fast Groups Bypasser (rgthree)`、`ImageStitch`、`TextGenerate`、`TextGenerate`、`TextGenerate`、`TextGenerate`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`ImageResizeKJv2`、`ImageResizeKJv2`、`ImageResizeKJv2`、`MuyeTextEditOutput`、`MuyeTextEditOutput`、`MuyeTextEditOutput`、`MuyeTextEditOutput`、`SaveImageAdvanced`、`SaveImageAdvanced`、`SaveImageAdvanced`、`SaveImageAdvanced`、`TTResolutionSelector`、`TTResolutionSelector`、`TTResolutionSelector`、`solarL_SaveImagesToZip`
+**缺卡**（8）：`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -171,13 +171,6 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageStitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
@@ -186,19 +179,4 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

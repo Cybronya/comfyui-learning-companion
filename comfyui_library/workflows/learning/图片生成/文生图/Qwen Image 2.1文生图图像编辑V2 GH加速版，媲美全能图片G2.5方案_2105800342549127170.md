@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1文生图图像编辑V2 GH加速版，媲美全能图片G2.5方案_2105800342549127170.json
 hash: b9bf6f357eb53f8e
-coverage: 0.40566
-learned_at: 2026-10-06 21:49:01
+coverage: 0.603774
+learned_at: 2026-10-06 22:37:53
 nodes: [LoadImage, CLIPLoader, VAELoader, CLIPTextEncode, VAEDecode, CLIPTextEncode, LatentSwitch, VAEEncode, VAELoader, CLIPLoader, ReferenceLatent, ReferenceLatent, KSamplerAdvanced, UNETLoader, ImageScaleToTotalPixels, PDIMAGE_LongerSize, SetNode, JWFloat, LoadImage, LoadImage, SetNode, SetNode, LoadImage, SetNode, SetNode, LoadImage, SetNode, GetNode, SetNode, VAEDecode, KSampler, GetNode, GetNode, GetNode, GetNode, GetNode, UNETLoader, GetNode, SetNode, GetNode, QwenImage21BlockCacheT8, GetNode, QwenImage21SpectrumT8, GoohaiRouteBlocker, TextEncodeQwenImage21GH, SetNode, GetNode, SaveImage, RestoreQwenImage21GH, SetNode, GetNode, GoohaiRouteBlocker, Fast Groups Bypasser (rgthree), SaveImage, QwenImagePromptOptimizer, GetNode, SetNode, GetNode, QwenImage21SageAttentionT8, GetNode, LoadImage, SetNode, FastGroupsBypassSwitch, GetNode, SetNode, CS_Preview_Any, easy showAnything, SetNode, GetNode, ShowText|pysssss, DF_Text_Box, Image Comparer (rgthree), GetNode, GetNode, PreviewImage, PreviewImage, GoohaiRatioAndResolution, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, image_to_image]
-missing: [DF_Text_Box, Fast Groups Bypasser (rgthree), FastGroupsBypassSwitch, GoohaiRouteBlocker, GoohaiRouteBlocker, ImageScaleToTotalPixels, JWFloat, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, CS_Preview_Any, GoohaiRatioAndResolution, LatentSwitch, PDIMAGE_LongerSize, QwenImagePromptOptimizer, ReferenceLatent, ReferenceLatent, TextEncodeQwenImage21GH, solarL_SaveImagesToZip]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `FastGroupsBypassSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识, 次要节点 `JWFloat` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识, 次要节点 `RestoreQwenImage21GH` 知识库中没有该节点类型的任何知识, 次要节点 `CS_Preview_Any` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `GoohaiRatioAndResolution` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `LatentSwitch` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `PDIMAGE_LongerSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `QwenImagePromptOptimizer` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `TextEncodeQwenImage21GH` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1文生图图像编辑V2 GH加速版，媲美全能图片G2.5方案_2105800342549127170.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（106 个）：
 - `LoadImage`
@@ -148,11 +148,9 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **41%**（43/106）
+覆盖率 **60%**（64/106）
 
-**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`UNETLoader`、`KSampler`、`SaveImage`、`LoraLoaderModelOnly`、`EmptyLatentImage`
-
-**缺卡**（20）：`DF_Text_Box`、`Fast Groups Bypasser (rgthree)`、`FastGroupsBypassSwitch`、`GoohaiRouteBlocker`、`GoohaiRouteBlocker`、`ImageScaleToTotalPixels`、`JWFloat`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`CS_Preview_Any`、`GoohaiRatioAndResolution`、`LatentSwitch`、`PDIMAGE_LongerSize`、`QwenImagePromptOptimizer`、`ReferenceLatent`、`ReferenceLatent`、`TextEncodeQwenImage21GH`、`solarL_SaveImagesToZip`
+**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`LatentSwitch`、`VAEEncode`、`ReferenceLatent`、`KSamplerAdvanced`、`UNETLoader`、`ImageScaleToTotalPixels`、`PDIMAGE_LongerSize`、`JWFloat`、`KSampler`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`GoohaiRouteBlocker`、`TextEncodeQwenImage21GH`、`SaveImage`、`RestoreQwenImage21GH`、`QwenImagePromptOptimizer`、`QwenImage21SageAttentionT8`、`FastGroupsBypassSwitch`、`CS_Preview_Any`、`DF_Text_Box`、`GoohaiRatioAndResolution`、`LoraLoaderModelOnly`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -163,24 +161,4 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `DF_Text_Box` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `FastGroupsBypassSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识
-- 次要节点 `JWFloat` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `RestoreQwenImage21GH` 知识库中没有该节点类型的任何知识
-- 次要节点 `CS_Preview_Any` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `GoohaiRatioAndResolution` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `LatentSwitch` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `PDIMAGE_LongerSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `QwenImagePromptOptimizer` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `TextEncodeQwenImage21GH` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图 _ 纯净官流40步（无PE）_2106930676925812737.json
 hash: 3c0d6da92a174bfe
 coverage: 0.9
-learned_at: 2026-10-06 21:47:53
+learned_at: 2026-10-06 22:36:59
 nodes: [SaveImage, UNETLoader, TextEncodeQwenImage21, CLIPLoader, VAELoader, KSampler, VAEDecode, EmptyLatentImage, ResolutionSelector, PrimitiveStringMultiline]
 patterns: []
 missing: []

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1官流文生图｜多图编辑一站式搞定_2106637714182459393.json
 hash: 5496472ae29c8152
-coverage: 0.725
-learned_at: 2026-10-06 21:48:34
+coverage: 0.8375
+learned_at: 2026-10-06 22:37:31
 nodes: [ResolutionSelector, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, ComfySwitchNode, LoadImage, LoadImage, LoadImage, PrimitiveBoolean, PrimitiveInt, TextGenerate, BatchImagesNode, QwenImage21Cache, ModelAttentionBackend, CLIPLoader, TextGenerate, CLIPLoader, GetImageSize, Any Switch (rgthree), TextEncodeQwenImage21, ImageResizeKJv2, VAEDecode, Image Comparer (rgthree), SaveImage, LoraLoaderModelOnly, LoraLoaderModelOnly, ImageScaleToTotalPixels, LoadImage, LoadImage, PreviewAny, PrimitiveStringMultiline, LoadImage, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, PrimitiveStringMultiline, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [BatchImagesNode, Fast Groups Bypasser (rgthree), ImageScaleToTotalPixels, ModelAttentionBackend, PrimitiveBoolean, TextGenerate, TextGenerate, GetImageSize, ImageResizeKJv2, PreviewAny, solarL_SaveImagesToZip]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识, 次要节点 `ModelAttentionBackend` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1官流文生图｜多图编辑一站式搞定_2106637714182459393.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（80 个）：
 - `ResolutionSelector`
@@ -122,11 +122,9 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **72%**（58/80）
+覆盖率 **84%**（67/80）
 
-**有卡**：`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`LoadImage`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`
-
-**缺卡**（11）：`BatchImagesNode`、`Fast Groups Bypasser (rgthree)`、`ImageScaleToTotalPixels`、`ModelAttentionBackend`、`PrimitiveBoolean`、`TextGenerate`、`TextGenerate`、`GetImageSize`、`ImageResizeKJv2`、`PreviewAny`、`solarL_SaveImagesToZip`
+**有卡**：`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`LoadImage`、`PrimitiveBoolean`、`TextGenerate`、`BatchImagesNode`、`QwenImage21Cache`、`ModelAttentionBackend`、`GetImageSize`、`TextEncodeQwenImage21`、`ImageResizeKJv2`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`、`ImageScaleToTotalPixels`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -137,15 +135,4 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识
-- 次要节点 `ModelAttentionBackend` 知识库中没有该节点类型的任何知识
-- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `GetImageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

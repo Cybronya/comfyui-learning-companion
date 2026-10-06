@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107199232045314049.json
 hash: 01e165b4c08a3c59
-coverage: 0.74
-learned_at: 2026-10-06 21:41:28
+coverage: 0.78
+learned_at: 2026-10-06 22:31:13
 nodes: [CLIPLoader, VAEDecode, UNETLoader, VAELoader, LoraLoaderModelOnly, SaveImage, PreviewImage, KSampler, LoraLoaderModelOnly, ResolutionSelector, PrimitiveStringMultiline, EmptyLatentImage, TextEncodeQwenImage21, KSampler, ConditioningKrea2Rebalance, WujiUpscaler2, LoadImage, Fast Groups Bypasser (rgthree), RH_Screenwriter, WujiImagePrompt, easy showAnything, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [Fast Groups Bypasser (rgthree), RH_Screenwriter, WujiUpscaler2, ConditioningKrea2Rebalance, WujiImagePrompt, solarL_SaveImagesToZip]
+missing: [RH_Screenwriter, WujiImagePrompt, WujiUpscaler2]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `RH_Screenwriter` 知识库中没有该节点类型的任何知识, 次要节点 `WujiUpscaler2` 相关主题 Upscale 在知识库中无对应知识, 次要节点 `ConditioningKrea2Rebalance` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `WujiImagePrompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `RH_Screenwriter` 知识库中没有该节点类型的任何知识, 次要节点 `WujiImagePrompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `WujiUpscaler2` 仅有 Upscale 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107199232045314049.json
@@ -92,11 +92,11 @@ discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有�
 
 ## 知识
 
-覆盖率 **74%**（37/50）
+覆盖率 **78%**（39/50）
 
-**有卡**：`CLIPLoader`、`VAEDecode`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`SaveImage`、`KSampler`、`ResolutionSelector`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`LoadImage`、`CLIPTextEncode`
+**有卡**：`CLIPLoader`、`VAEDecode`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`SaveImage`、`KSampler`、`ResolutionSelector`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`ConditioningKrea2Rebalance`、`LoadImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（6）：`Fast Groups Bypasser (rgthree)`、`RH_Screenwriter`、`WujiUpscaler2`、`ConditioningKrea2Rebalance`、`WujiImagePrompt`、`solarL_SaveImagesToZip`
+**缺卡**（3）：`RH_Screenwriter`、`WujiImagePrompt`、`WujiUpscaler2`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -109,12 +109,9 @@ discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有�
 
 ## 学习发现
 
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `RH_Screenwriter` 知识库中没有该节点类型的任何知识
-- 次要节点 `WujiUpscaler2` 相关主题 Upscale 在知识库中无对应知识
-- 次要节点 `ConditioningKrea2Rebalance` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - 次要节点 `WujiImagePrompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `WujiUpscaler2` 仅有 Upscale 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

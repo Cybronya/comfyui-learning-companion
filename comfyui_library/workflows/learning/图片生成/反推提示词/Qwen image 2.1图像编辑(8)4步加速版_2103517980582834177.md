@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen image 2.1图像编辑(8)4步加速版_2103517980582834177.json
 hash: 788b78795775e82c
-coverage: 0.19
-learned_at: 2026-10-06 21:36:34
+coverage: 0.39
+learned_at: 2026-10-06 22:26:46
 nodes: [MarkdownNote, SetNode, GetNode, GetNode, ImageScaleToTotalPixels, SetNode, VAEEncode, GetNode, GetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, CLIPLoader, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, 忽略多组孤海, TextEncodeQwenImage21, GetNode, ImpactNeg, GetNode, DapaoMakeImageBatchNode, llama_cpp_parameters, GetNode, CM_BoolToInt, PrimitiveFloat, CR Text Replace, LayerUtility: PurgeVRAM, SetNode, 孤海注释, 孤海注释, 孤海注释, 孤海注释, ComfySwitchNode, MarkdownNote, easy anythingIndexSwitch, PrimitiveInt, ExecutionBlocker, llama_cpp_instruct_adv, easy seed, KSampler, GetNode, LayerUtility: ImageScaleByAspectRatio V2, 孤海注释, UNETLoader, LoadImage, QwenImage21Cache, ImageRGBA2RGB, ImpactNeg, VAELoader, VAEEncode, JsonExtractString, JjkText, SaveLatent, PrimitiveBoolean, PrimitiveBoolean, ExecutionBlocker, VAEDecode, ExecutionBlocker, ExecutionBlocker, SaveImage, SaveImageAdvanced, llama_cpp_model_loader]
 patterns: [image_to_image]
-missing: [CM_BoolToInt, CR Text Replace, DapaoMakeImageBatchNode, ExecutionBlocker, ExecutionBlocker, ExecutionBlocker, ExecutionBlocker, ImageRGBA2RGB, ImageScaleToTotalPixels, ImpactNeg, ImpactNeg, JsonExtractString, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, PrimitiveBoolean, PrimitiveBoolean, easy anythingIndexSwitch, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, 忽略多组孤海, SaveImageAdvanced, SaveLatent, easy seed]
+missing: [CR Text Replace, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, easy anythingIndexSwitch, 忽略多组孤海, easy seed]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 523714167721647, "steps": 8}
-discoveries: [次要节点 `CM_BoolToInt` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `DapaoMakeImageBatchNode` 知识库中没有该节点类型的任何知识, 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `ImageRGBA2RGB` 知识库中没有该节点类型的任何知识, 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识, 次要节点 `ImpactNeg` 知识库中没有该节点类型的任何知识, 次要节点 `ImpactNeg` 知识库中没有该节点类型的任何知识, 次要节点 `JsonExtractString` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `llama_cpp_instruct_adv` 知识库中没有该节点类型的任何知识, 次要节点 `llama_cpp_model_loader` 知识库中没有该节点类型的任何知识, 次要节点 `llama_cpp_parameters` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveLatent` 仅有 VAE/SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/反推提示词/Qwen image 2.1图像编辑(8)4步加速版_2103517980582834177.json
@@ -139,11 +139,11 @@ discoveries: [次要节点 `CM_BoolToInt` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **19%**（19/100）
+覆盖率 **39%**（39/100）
 
-**有卡**：`LoadImage`、`VAELoader`、`CLIPLoader`、`TextEncodeQwenImage21`、`KSampler`、`UNETLoader`、`QwenImage21Cache`、`VAEDecode`、`SaveImage`
+**有卡**：`ImageScaleToTotalPixels`、`VAEEncode`、`LoadImage`、`VAELoader`、`CLIPLoader`、`TextEncodeQwenImage21`、`ImpactNeg`、`DapaoMakeImageBatchNode`、`llama_cpp_parameters`、`CM_BoolToInt`、`ExecutionBlocker`、`llama_cpp_instruct_adv`、`KSampler`、`UNETLoader`、`QwenImage21Cache`、`ImageRGBA2RGB`、`JsonExtractString`、`SaveLatent`、`PrimitiveBoolean`、`VAEDecode`、`SaveImage`、`SaveImageAdvanced`、`llama_cpp_model_loader`
 
-**缺卡**（24）：`CM_BoolToInt`、`CR Text Replace`、`DapaoMakeImageBatchNode`、`ExecutionBlocker`、`ExecutionBlocker`、`ExecutionBlocker`、`ExecutionBlocker`、`ImageRGBA2RGB`、`ImageScaleToTotalPixels`、`ImpactNeg`、`ImpactNeg`、`JsonExtractString`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM`、`PrimitiveBoolean`、`PrimitiveBoolean`、`easy anythingIndexSwitch`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`忽略多组孤海`、`SaveImageAdvanced`、`SaveLatent`、`easy seed`
+**缺卡**（6）：`CR Text Replace`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM`、`easy anythingIndexSwitch`、`忽略多组孤海`、`easy seed`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、LoadImage、QwenImage21Cache、UNETLoader
 
@@ -154,28 +154,10 @@ discoveries: [次要节点 `CM_BoolToInt` 知识库中没有该节点类型的�
 
 ## 学习发现
 
-- 次要节点 `CM_BoolToInt` 知识库中没有该节点类型的任何知识
 - 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `DapaoMakeImageBatchNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `ExecutionBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageRGBA2RGB` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImpactNeg` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImpactNeg` 知识库中没有该节点类型的任何知识
-- 次要节点 `JsonExtractString` 知识库中没有该节点类型的任何知识
 - 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `PrimitiveBoolean` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `llama_cpp_instruct_adv` 知识库中没有该节点类型的任何知识
-- 次要节点 `llama_cpp_model_loader` 知识库中没有该节点类型的任何知识
-- 次要节点 `llama_cpp_parameters` 知识库中没有该节点类型的任何知识
 - 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveLatent` 仅有 VAE/SaveImage 的通用知识，没有该节点自己的说明
 - 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

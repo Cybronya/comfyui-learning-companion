@@ -214,6 +214,10 @@ class GraphBuilder:
         self._build_node_cards()
 
         records = list(records or [])
+        # 重复上传的拷贝（content_hash 相同）只建一次图，
+        # 否则 contains/co_used 边的 count 全部虚高
+        from ..workflow_learning.dedupe import dedupe_by_content_hash
+        records, _ = dedupe_by_content_hash(records)
         for record in records:
             self.add_workflow(record)
 

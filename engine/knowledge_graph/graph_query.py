@@ -162,9 +162,9 @@ class GraphQuery:
                 if e.source.startswith(f"{TYPE_WORKFLOW}:")
             ]
 
-        return self._dedupe(
-            self._labels([p for p in pairs])
-        )
+        # 排序保证确定性 —— 邻接表顺序随建图/存读顺序漂移，
+        # 往返后列表相等性会因顺序被破坏（test F2 踩到）
+        return sorted(self._dedupe(self._labels([p for p in pairs])))
 
     def nodes_of(
         self,

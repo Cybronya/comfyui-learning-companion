@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1：文生图_2101751274873122818.json
 hash: df9bf98f18100c80
-coverage: 0.55
-learned_at: 2026-10-06 21:49:26
+coverage: 0.65
+learned_at: 2026-10-06 22:38:13
 nodes: [ResolutionSelector, MarkdownNote, MarkdownNote, MarkdownNote, UNETLoader, TextEncodeQwenImage21, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, PreviewAny, CLIPLoader, PrimitiveStringMultiline, QwenImage21Cache, SaveImage, SaveImageAdvanced, ComfySwitchNode, KSampler, TextGenerate, JjkText]
 patterns: []
-missing: [TextGenerate, PreviewAny, SaveImageAdvanced]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 560836252052479, "steps": 25, "width": 1024}
-discoveries: [次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1：文生图_2101751274873122818.json
@@ -59,16 +58,8 @@ discoveries: [次要节点 `TextGenerate` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **55%**（11/20）
+覆盖率 **65%**（13/20）
 
-**有卡**：`ResolutionSelector`、`UNETLoader`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`QwenImage21Cache`、`SaveImage`、`KSampler`
-
-**缺卡**（3）：`TextGenerate`、`PreviewAny`、`SaveImageAdvanced`
+**有卡**：`ResolutionSelector`、`UNETLoader`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`QwenImage21Cache`、`SaveImage`、`SaveImageAdvanced`、`KSampler`、`TextGenerate`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明

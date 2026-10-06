@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
 hash: 2dc366b528e9fc35
-coverage: 0.4
-learned_at: 2026-10-06 21:49:44
+coverage: 0.68
+learned_at: 2026-10-06 22:38:28
 nodes: [MarkdownNote, Note, UNETLoader, TextEncodeQwenImage21, VAELoader, EmptyLatentImage, CLIPLoader, PrimitiveStringMultiline, RegexExtract, StringConcatenate, SeedVR2LoadVAEModel, SaveImage, SaveImageAdvanced, VAEDecode, SetNode, SeedVR2VideoUpscaler, GetNode, TextGenerate, PreviewAny, KSampler, SeedVR2LoadDiTModel, SaveImage, PrimitiveStringMultiline, Fast Groups Bypasser (rgthree), ResolutionSelector]
 patterns: []
-missing: [Fast Groups Bypasser (rgthree), RegexExtract, StringConcatenate, TextGenerate, PreviewAny, SaveImageAdvanced, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 537375866660005, "steps": 25, "width": 1024}
-discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `RegexExtract` 知识库中没有该节点类型的任何知识, 次要节点 `StringConcatenate` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SeedVR2LoadDiTModel` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `SeedVR2LoadVAEModel` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `SeedVR2VideoUpscaler` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
@@ -64,22 +63,8 @@ discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有�
 
 ## 知识
 
-覆盖率 **40%**（10/25）
+覆盖率 **68%**（17/25）
 
-**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`CLIPLoader`、`SaveImage`、`VAEDecode`、`KSampler`、`ResolutionSelector`
-
-**缺卡**（9）：`Fast Groups Bypasser (rgthree)`、`RegexExtract`、`StringConcatenate`、`TextGenerate`、`PreviewAny`、`SaveImageAdvanced`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`
+**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`CLIPLoader`、`RegexExtract`、`StringConcatenate`、`SeedVR2LoadVAEModel`、`SaveImage`、`SaveImageAdvanced`、`VAEDecode`、`SeedVR2VideoUpscaler`、`TextGenerate`、`KSampler`、`SeedVR2LoadDiTModel`、`ResolutionSelector`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
-
-## 学习发现
-
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `RegexExtract` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringConcatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SeedVR2LoadDiTModel` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `SeedVR2LoadVAEModel` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `SeedVR2VideoUpscaler` 仅有 KSampler 的通用知识，没有该节点自己的说明

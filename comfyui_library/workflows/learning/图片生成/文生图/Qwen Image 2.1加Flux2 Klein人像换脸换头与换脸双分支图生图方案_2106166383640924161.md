@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1加Flux2 Klein人像换脸换头与换脸双分支图生图方案_2106166383640924161.json
 hash: ce2f6b3ccdb12bc5
-coverage: 0.712121
-learned_at: 2026-10-06 21:48:07
+coverage: 0.863636
+learned_at: 2026-10-06 22:37:10
 nodes: [ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextEncodeQwenImage21, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, ResolutionSelector, JjkText, LoadImage, CLIPTextEncode, ReferenceLatent, ReferenceLatent, CLIPLoader, VAELoader, VAEEncode, KSampler, VAEDecode, EmptyFlux2LatentImage, UNETLoader, ReferenceLatent, ReferenceLatent, ImageResizeKJv2, ImageResizeKJv2, VAEEncode, LoraLoaderModelOnly, LoadImage, CLIPTextEncode, SaveImage, Image Comparer (rgthree), LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), LoadImage, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, image_to_image]
-missing: [Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), EmptyFlux2LatentImage, ImageResizeKJv2, ImageResizeKJv2, ReferenceLatent, ReferenceLatent, ReferenceLatent, ReferenceLatent, solarL_SaveImagesToZip]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `EmptyFlux2LatentImage` 仅有 VAE/Checkpoint 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1加Flux2 Klein人像换脸换头与换脸双分支图生图方案_2106166383640924161.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有�
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（66 个）：
 - `ComfySwitchNode`
@@ -108,11 +108,9 @@ discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有�
 
 ## 知识
 
-覆盖率 **71%**（47/66）
+覆盖率 **86%**（57/66）
 
-**有卡**：`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`ResolutionSelector`、`LoadImage`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`SaveImage`
-
-**缺卡**（10）：`Fast Groups Bypasser (rgthree)`、`Fast Groups Bypasser (rgthree)`、`EmptyFlux2LatentImage`、`ImageResizeKJv2`、`ImageResizeKJv2`、`ReferenceLatent`、`ReferenceLatent`、`ReferenceLatent`、`ReferenceLatent`、`solarL_SaveImagesToZip`
+**有卡**：`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`ResolutionSelector`、`LoadImage`、`CLIPTextEncode`、`ReferenceLatent`、`VAEEncode`、`EmptyFlux2LatentImage`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`SaveImage`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
 
@@ -124,15 +122,5 @@ discoveries: [次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有�
 
 ## 学习发现
 
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `EmptyFlux2LatentImage` 仅有 VAE/Checkpoint 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `ReferenceLatent` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

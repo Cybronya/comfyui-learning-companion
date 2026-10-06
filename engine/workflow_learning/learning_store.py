@@ -276,6 +276,18 @@ class LearningStore:
 
     # ---------- 聚合统计 ----------
 
+    def unique_records(self) -> List[LearningRecord]:
+        """
+        completed_records() 的内容去重视图
+
+        同一 workflow 以不同文件名重复上传时（content_hash 相同）
+        只保留首次出现 —— 聚合统计应该用它，否则频次被夸大
+        （2026-10-06 实测 504 条里有 96 条是重复拷贝）。
+        """
+        from .dedupe import dedupe_by_content_hash
+        unique, _ = dedupe_by_content_hash(self.completed_records())
+        return unique
+
     def node_frequency(
         self, exclude_ignored: bool = False
     ) -> Dict[str, int]:
@@ -288,10 +300,13 @@ class LearningStore:
         exclude_ignored=True 时排除布线/注释/预览类节点
         （ignore_nodes.IGNORED_NODES），用于排建卡优先级——
         否则 Note/Reroute/GetNode 这类纯布线节点永久霸榜。
+
+        按内容指纹去重后统计：重复上传的拷贝只算一次，
+        否则「被 N 个 workflow 使用」说的是夸大的数字。
         """
         counter: Dict[str, int] = {}
 
-        for record in self.completed_records():
+        for record in self.unique_records():
             for node in record.nodes:
                 if exclude_ignored and is_ignored(node):
                     continue

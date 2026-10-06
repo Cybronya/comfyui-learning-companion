@@ -270,8 +270,8 @@ engine/                       可执行层（v0.5 起）
 
 | 内容 | 状态 |
 |---|---|
-| 节点知识卡 | ✅ 16 张（原有 6 张 SD1.5 基础卡 + 2026-10-06 从 404 条学习记录按频次起草的 10 张高频卡：LoraLoaderModelOnly / LoadImage / CLIPLoader / VAELoader / UNETLoader / ImageScaleByAspectRatio V2 / ResolutionSelector / TextEncodeQwenImage21 / ConditioningZeroOut / QwenImage21Cache，可信度 Generated，参数分布为实测）+ `node_index.json` v1.1（含 role / difficulty / learning_topics） |
-| 布线节点忽略清单 | ✅ `engine/workflow_learning/ignore_nodes.py`（Note / Reroute / GetNode / SetNode / 注释与预览类等，不建卡、不计缺口；`node_frequency(exclude_ignored=True)` 排建卡优先级） |
+| 节点知识卡 | ✅ 452 张（16 张人工核对：6 张 SD1.5 基础卡 + 10 张高频卡；436 张自动起草于 2026-10-06，来源 `node-analysis/tools/draft_cards_from_workflows.py`——输入/输出槽与取值分布为 404 个 workflow 实测，作用为名称推断标 TODO(待验证)）+ `node_index.json` v1.2（auto_drafted 标记区分两类卡） |
+| 布线节点忽略清单 | ✅ `engine/workflow_learning/ignore_nodes.py`（Note / Reroute / GetNode / SetNode / 注释、预览与 rgthree 分组控件等，不建卡、不计缺口；`node_frequency(exclude_ignored=True)` 排建卡优先级） |
 | Pattern 卡 | ✅ 2 张（sd15-t2i-basic / sd15-t2i-lora） |
 | 节点摘要 | ✅ 1 张（loraloader） |
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
@@ -403,6 +403,76 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-07 视频生成目录分类（理解度实测）**：用户建
+`workflows/视频生成/{图生视频,文生视频,视频生视频}` 三小类并把 146 个
+H3 工作流平铺在根目录。按**学习记录的节点构成**分类（真视频加载器
+VHS_LoadVideo/LoadVideo/HAIGC_VideoLoader → 视频生视频；仅 LoadImage →
+图生视频；纯文本 → 文生视频），再解析 JSON 连线**穿透 GetNode/SetNode
+追溯真实输入源**二次修正。结果 85/4/57，与文件名语义交叉验证一致率
+约 77%；不一致的两种情况均查实：多参考工作流确实带视频输入（数据对，
+命名泛化），以及个别文件名与内容不符（如「图生视频工作流」实际无任何
+图像/视频输入节点，疑残缺导出——数据优先于命名）。分类后重学、
+清死记录与库旧键 146 条，图谱重建 2379 顶点。
+
+**2026-10-06 H3 视频批次入库（+146，全库 650 条）**：`download/` 根目录
+与 `download/workflows-json/` 的 MiniMax H3 工作流经导入工具入库到
+`图片生成/H3视频/`（146 个新文件，workflows-json 与根目录内容重叠被
+指纹闸门拦截）。导入工具补两道闸门：JSON 必须解析为含 nodes 列表的
+dict（拦截 ids-state 等状态文件）+ 可选库内目标子目录参数。
+新增 H3 视频栈节点 126 种 → 补卡（知识卡 480 → **606 张**），
+node_index v1.2。图谱重建：2378 顶点 / 26377 边 / 599 workflow（去重后）。
+全库 650 条：平均 73% / 中位数 78%，深懂档（≥80%）302 个，浅懂 0；
+H3 视频子批平均 74%——主项目方向的知识洼地已填平。
+过程中发现文件被移动（嵌套 workflows-json/ → 平铺）导致 136 条
+「文件不存在」失败记录，按同名平铺文件重学恢复，死记录与库旧键已清；
+`test_store_aggregates` 夹具改为每条独立指纹（适配聚合层去重口径）。
+
+**2026-10-06 原始数据导入管线**：新增
+`skills/comfyui-learning/tools/import_workflows.py`——
+`download/workflows-by-tag/`（原始收件箱）→ 指纹去重 →
+`comfyui_library/workflows/`。三道闸门：与库内指纹比对（口径与
+WorkflowLearner._hash_file 一致）、批次内去重、同名不同内容自动
+改 `_dup` 后缀。首次实跑：下载目录 501 个文件全部与库内重复，
+导入 0——现有批次已全覆盖。新工作流的标准流程：
+import_workflows.py → learn_folder() → draft_cards_from_workflows.py。
+
+**2026-10-06 聚合层内容去重**：504 条学习记录里 45 组内容完全相同
+（96 条，同一 workflow 不同文件名/平台 id 重复上传）。重复会让聚合
+统计虚高——最坏 2 倍（只在重复文件里出现的节点），且
+`min_frequency=2` 的模式归纳可能被「同一文件传两遍」凑出假模式。
+新增 `engine/workflow_learning/dedupe.py`（`dedupe_by_content_hash`，
+按指纹保首次，空指纹全保留），接入三个消费方：
+`LearningStore.node_frequency()/unique_records()`、
+`GraphBuilder.build()`（workflow 504 → 453 顶点）、
+`ExperienceLoader`（database 与 Markdown 两路都去重）。
+学习层**不去重**——逐条记录是判重学/按 key 查找的基础。
+同步放宽 `test_knowledge_consolidation` 的过时断言
+（`source_count == len(records)` → `0 < source_count <= len(records)`）。
+
+**2026-10-06 增量学习第二轮（+100 个 workflow，本批 504 个收口）**：
+新放入 100 个 workflow，`learn_folder()` 幂等增量学完（0 失败）；
+建卡工具再跑一轮为新增节点补 **28 张卡**（知识卡 452 → 480 张），
+只对 100 条新记录 force 重学刷新覆盖率。全库 504 个：
+平均 73% / 中位数 77%，深懂档（≥80%）222 个，浅懂（<20%）0 个。
+图谱重建：1965 顶点 / 20917 边。
+顺带修复：`GraphQuery.workflows_using()` 返回改为**确定性排序**——
+此前按邻接表插入顺序返回，存读往返后顺序漂移，test F2 的
+往返一致性断言失败。
+
+**2026-10-06 建卡收尾（本批 404 个 workflow 学习闭环）**：
+新增 `skills/comfyui-learning/node-analysis/tools/draft_cards_from_workflows.py`：
+从 workflow JSON 提取输入/输出槽（真实字段名）与 widgets_values 取值分布，
+为「用过但没卡」的节点批量起草 Generated 卡（作用只做名称推断并标注
+TODO(待验证)，不编造）。一次产出 **436 张卡**（知识卡 16 → 452 张），
+node_index 升 v1.2（新增 auto_drafted 标记）。全量重学后：
+
+- 平均覆盖率 **53% → 73%**（中位数 76%），深懂档（≥80%）48 → 177 个，
+  浅懂（<20%）35 → **0 个**
+- 图谱重建：1805 顶点 / 17626 边，无孤立点无悬空边
+- 剩余浅区集中在超大整合流（166 节点的小岚整合版 22%）与
+  Wan 数字人（24%）——其节点多为出现 <2 次的长尾，未达建卡阈值
+- 忽略清单补充 rgthree 的 Fast Groups Muter/Bypasser（UI 分组控件）
 
 **2026-10-06 知识图谱接进回答链路（同日第二轮）**：
 - `agent_core` 的 retrieve 阶段新增 `_collect_graph_facts()`：问题文本或

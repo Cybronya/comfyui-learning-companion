@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
 hash: 72940452f190f44a
-coverage: 0.772727
-learned_at: 2026-10-06 21:36:01
+coverage: 0.818182
+learned_at: 2026-10-06 22:26:18
 nodes: [CLIPLoader, UNETLoader, VAELoader, QwenImage21Cache, KSampler, VAEDecode, easy cleanGpuUsed, EmptyLatentImage, SaveImage, easy showAnything, QwenPERewriteT8, CR Prompt Text, TextEncodeQwenImage21, ComfySwitchNode, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [QwenPERewriteT8, easy cleanGpuUsed, CR Prompt Text, solarL_SaveImagesToZip]
+missing: [easy cleanGpuUsed, CR Prompt Text]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/反推提示词/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
@@ -86,11 +86,11 @@ discoveries: [次要节点 `QwenPERewriteT8` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **77%**（34/44）
+覆盖率 **82%**（36/44）
 
-**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`QwenImage21Cache`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`SaveImage`、`TextEncodeQwenImage21`、`ResolutionSelector`、`LoraLoaderModelOnly`、`CLIPTextEncode`
+**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`QwenImage21Cache`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`SaveImage`、`QwenPERewriteT8`、`TextEncodeQwenImage21`、`ResolutionSelector`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（4）：`QwenPERewriteT8`、`easy cleanGpuUsed`、`CR Prompt Text`、`solarL_SaveImagesToZip`
+**缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -101,8 +101,6 @@ discoveries: [次要节点 `QwenPERewriteT8` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

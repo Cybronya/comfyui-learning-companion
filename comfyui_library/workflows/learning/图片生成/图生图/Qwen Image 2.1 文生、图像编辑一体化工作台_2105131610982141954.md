@@ -6,13 +6,13 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json
 hash: c1d661ba79be1dd4
-coverage: 0.314286
-learned_at: 2026-10-06 21:41:02
+coverage: 0.628571
+learned_at: 2026-10-06 22:30:48
 nodes: [LoadImage, LoadImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, SetNode, VAEDecode, CLIPLoader, VAELoader, Reroute, LoadImage, LoadImage, UNETLoader, GoohaiRouteBlocker, 忽略多组孤海, QwenImage21SageAttentionT8, GetNode, KSampler, GoohaiRouteBlocker, 孤海注释, ShowText|pysssss, Image Comparer (rgthree), QwenImage21BlockCacheT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, TextEncodeQwenImage21GH, LoadImageGoohai, SaveImage, GoohaiRatioAndResolution, DF_Text_Box, QwenImagePromptOptimizer, LoadImage]
 patterns: []
-missing: [DF_Text_Box, GoohaiRouteBlocker, GoohaiRouteBlocker, LoadImageGoohai, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, 忽略多组孤海, GoohaiRatioAndResolution, QwenImagePromptOptimizer, TextEncodeQwenImage21GH]
+missing: [忽略多组孤海]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 721893050101110, "steps": 30}
-discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `LoadImageGoohai` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识, 次要节点 `RestoreQwenImage21GH` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRatioAndResolution` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `QwenImagePromptOptimizer` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `TextEncodeQwenImage21GH` 仅有 VAE 的通用知识，没有该节点自己的说明]
+discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json
@@ -21,7 +21,7 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 结构
 
-**生成流程**：Model → Sampling → Decode → Output → Other
+**生成流程**：Model → Sampling → Decode → Process → Output → Other
 
 **节点**（35 个）：
 - `LoadImage`
@@ -71,25 +71,14 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **31%**（11/35）
+覆盖率 **63%**（22/35）
 
-**有卡**：`LoadImage`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`KSampler`、`SaveImage`
+**有卡**：`LoadImage`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`GoohaiRouteBlocker`、`QwenImage21SageAttentionT8`、`KSampler`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`TextEncodeQwenImage21GH`、`LoadImageGoohai`、`SaveImage`、`GoohaiRatioAndResolution`、`DF_Text_Box`、`QwenImagePromptOptimizer`
 
-**缺卡**（12）：`DF_Text_Box`、`GoohaiRouteBlocker`、`GoohaiRouteBlocker`、`LoadImageGoohai`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`忽略多组孤海`、`GoohaiRatioAndResolution`、`QwenImagePromptOptimizer`、`TextEncodeQwenImage21GH`
+**缺卡**（1）：`忽略多组孤海`
 
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPLoader、LoadImage、UNETLoader、SaveImage、sd15-t2i-basic
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPLoader、LoadImage、UNETLoader、TextEncodeQwenImage21GH、QwenImagePromptOptimizer
 
 ## 学习发现
 
-- 次要节点 `DF_Text_Box` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `LoadImageGoohai` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `RestoreQwenImage21GH` 知识库中没有该节点类型的任何知识
 - 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRatioAndResolution` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `QwenImagePromptOptimizer` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `TextEncodeQwenImage21GH` 仅有 VAE 的通用知识，没有该节点自己的说明

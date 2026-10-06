@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/CG2.5文生图_2105976099153997825.json
 hash: 372837b2cd8b77fa
 coverage: 0.5
-learned_at: 2026-10-06 21:44:53
+learned_at: 2026-10-06 22:34:13
 nodes: [RH_RhartImageG25FlareTextToImage, SaveImage]
 patterns: []
 missing: [RH_RhartImageG25FlareTextToImage]
@@ -34,7 +34,7 @@ discoveries: [次要节点 `RH_RhartImageG25FlareTextToImage` 知识库中没有
 
 **缺卡**（1）：`RH_RhartImageG25FlareTextToImage`
 
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora
+**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、Text、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
 
 ## 学习发现
 

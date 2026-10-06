@@ -6,13 +6,13 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
 hash: 1f75acf59771b258
-coverage: 0.6
-learned_at: 2026-10-06 21:50:13
+coverage: 0.8
+learned_at: 2026-10-06 22:38:50
 nodes: [MarkdownNote, QwenPERewriteT8, ShowAnything|Mie, EmptyLatentImage, CLIPLoader, EnhancedLoadDiffusionModel, VAELoader_Any, TextEncodeQwenImage21, KSamplerCacheable, QwenImage21Cache, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PreviewImage, FastGroupsBypassSwitch, ResolutionSelector, JjkText, VAEDecode, SaveImage]
 patterns: []
-missing: [EnhancedLoadDiffusionModel, Fast Groups Bypasser (rgthree), FastGroupsBypassSwitch, QwenPERewriteT8, ShowAnything|Mie, KSamplerCacheable, VAELoader_Any]
+missing: [ShowAnything|Mie]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 612469955575595, "steps": 50, "width": 1024}
-discoveries: [次要节点 `EnhancedLoadDiffusionModel` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `FastGroupsBypassSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 核心节点 `KSamplerCacheable` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `VAELoader_Any` 仅有 VAE 的通用知识，没有该节点自己的说明]
+discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
@@ -64,20 +64,14 @@ discoveries: [次要节点 `EnhancedLoadDiffusionModel` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **60%**（15/25）
+覆盖率 **80%**（20/25）
 
-**有卡**：`EmptyLatentImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`LoadImage`、`ResolutionSelector`、`VAEDecode`、`SaveImage`
+**有卡**：`QwenPERewriteT8`、`EmptyLatentImage`、`CLIPLoader`、`EnhancedLoadDiffusionModel`、`VAELoader_Any`、`TextEncodeQwenImage21`、`KSamplerCacheable`、`QwenImage21Cache`、`LoadImage`、`FastGroupsBypassSwitch`、`ResolutionSelector`、`VAEDecode`、`SaveImage`
 
-**缺卡**（7）：`EnhancedLoadDiffusionModel`、`Fast Groups Bypasser (rgthree)`、`FastGroupsBypassSwitch`、`QwenPERewriteT8`、`ShowAnything|Mie`、`KSamplerCacheable`、`VAELoader_Any`
+**缺卡**（1）：`ShowAnything|Mie`
 
-**用到的条目**：VAEDecode、TextEncodeQwenImage21、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage、QwenImage21Cache、SaveImage
+**用到的条目**：VAEDecode、TextEncodeQwenImage21、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage、QwenImage21Cache、KSamplerCacheable
 
 ## 学习发现
 
-- 次要节点 `EnhancedLoadDiffusionModel` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `FastGroupsBypassSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识
 - 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 核心节点 `KSamplerCacheable` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `VAELoader_Any` 仅有 VAE 的通用知识，没有该节点自己的说明

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1文生多图像编辑一体化工作流，文生图图生图处理方案_2106487983930175490.json
 hash: 3e1fe71c68e7108f
-coverage: 0.580645
-learned_at: 2026-10-06 21:49:18
+coverage: 0.758065
+learned_at: 2026-10-06 22:38:06
 nodes: [Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, SetNode, VAEDecode, CLIPLoader, VAELoader, Reroute, UNETLoader, GoohaiRouteBlocker, QwenImage21SageAttentionT8, GetNode, KSampler, ShowText|pysssss, Image Comparer (rgthree), QwenImagePromptOptimizer, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, TextEncodeQwenImage21GH, SaveImage, LoadImage, LoadImage, LoadImage, LoadImage, DF_Text_Box, GoohaiRatioAndResolution, LoadImage, GoohaiRouteBlocker, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [DF_Text_Box, GoohaiRouteBlocker, GoohaiRouteBlocker, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, GoohaiRatioAndResolution, QwenImagePromptOptimizer, TextEncodeQwenImage21GH, solarL_SaveImagesToZip]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识, 次要节点 `RestoreQwenImage21GH` 知识库中没有该节点类型的任何知识, 次要节点 `GoohaiRatioAndResolution` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `QwenImagePromptOptimizer` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `TextEncodeQwenImage21GH` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1文生多图像编辑一体化工作流，文生图图生图处理方案_2106487983930175490.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（62 个）：
 - `Reroute`
@@ -104,11 +104,9 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **58%**（36/62）
+覆盖率 **76%**（47/62）
 
-**有卡**：`VAEDecode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`KSampler`、`SaveImage`、`LoadImage`、`LoraLoaderModelOnly`、`EmptyLatentImage`、`CLIPTextEncode`
-
-**缺卡**（11）：`DF_Text_Box`、`GoohaiRouteBlocker`、`GoohaiRouteBlocker`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`GoohaiRatioAndResolution`、`QwenImagePromptOptimizer`、`TextEncodeQwenImage21GH`、`solarL_SaveImagesToZip`
+**有卡**：`VAEDecode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`GoohaiRouteBlocker`、`QwenImage21SageAttentionT8`、`KSampler`、`QwenImagePromptOptimizer`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`TextEncodeQwenImage21GH`、`SaveImage`、`LoadImage`、`DF_Text_Box`、`GoohaiRatioAndResolution`、`LoraLoaderModelOnly`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -119,15 +117,4 @@ discoveries: [次要节点 `DF_Text_Box` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `DF_Text_Box` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRouteBlocker` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `RestoreQwenImage21GH` 知识库中没有该节点类型的任何知识
-- 次要节点 `GoohaiRatioAndResolution` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `QwenImagePromptOptimizer` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `TextEncodeQwenImage21GH` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

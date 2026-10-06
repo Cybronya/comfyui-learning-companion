@@ -120,7 +120,12 @@ class ExperienceLoader:
 
     def _load_from_store(self) -> List[ExperienceRow]:
         """从 LearningStore 的 Markdown 记录读取（兜底来源）"""
+        from ..workflow_learning.dedupe import dedupe_by_content_hash
+
         records = self.store.completed_records()
+        # 内容相同的重复上传只归纳一次，否则 min_frequency
+        # 会被「同一文件传两遍」凑数，产出假模式
+        records, _ = dedupe_by_content_hash(records)
 
         rows = []
         for record in records:
@@ -150,18 +155,28 @@ class ExperienceLoader:
         """
         experiences = self.database.experiences.all()
 
+        from ..workflow_learning.dedupe import dedupe_by_content_hash
+
         rows = []
+        datas = []
         for key in sorted(experiences):
             data = experiences[key].get("data") or {}
             if data.get("status", "completed") != "completed":
                 continue
+            # 兜底：载荷里没写 key 就用 experiences 的键
+            if not data.get("key"):
+                data["key"] = key
+            datas.append(data)
 
+        # 与 Markdown 路径同一口径：内容相同的拷贝只归纳一次
+        datas, _ = dedupe_by_content_hash(datas)
+        for data in datas:
             nodes = list(data.get("nodes") or [])
             if not nodes:
                 continue
 
             rows.append(ExperienceRow(
-                key=data.get("key") or key,
+                key=data.get("key") or "",
                 workflow_type=data.get("workflow_type", ""),
                 nodes=nodes,
                 parameters=dict(data.get("parameters") or {}),

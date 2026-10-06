@@ -6,8 +6,8 @@ status: completed
 source: png
 file: comfyui_library/workflows/sd1.5/lora.png
 hash: 9d318e7ac04c1fdf
-coverage: 0.777778
-learned_at: 2026-10-06 21:34:46
+coverage: 0.888889
+learned_at: 2026-10-06 22:25:08
 nodes: [VAEDecode, SaveImage, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, LoraLoader, CheckpointLoaderSimple, KSampler, MarkdownNote]
 patterns: [text_to_image, lora]
 missing: []
@@ -53,8 +53,8 @@ parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "dreamshaper_8.safetensors
 
 ## 知识
 
-覆盖率 **78%**（7/9）
+覆盖率 **89%**（8/9）
 
-**有卡**：`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`EmptyLatentImage`、`CheckpointLoaderSimple`、`KSampler`
+**有卡**：`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`EmptyLatentImage`、`LoraLoader`、`CheckpointLoaderSimple`、`KSampler`
 
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、LoraLoader、SaveImage、sd15-t2i-basic

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen Image 2.1图像编辑V1.0｜2026开源最强模型图生图工作流_2104509451624603649.json
 hash: 7e16252e09125f3a
-coverage: 0.484615
-learned_at: 2026-10-06 21:36:40
+coverage: 0.538462
+learned_at: 2026-10-06 22:26:51
 nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), PathchSageAttentionKJ, Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, QwenImage21Cache, LoraLoaderModelOnly, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Fast Groups Muter (rgthree), UNETLoader, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSampler, VAEDecode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, KSampler, EmptyLatentImage, QwenPERewriteT8, CLIPLoader, VAEDecode, Any Switch (rgthree), SaveImage, Fast Bypasser (rgthree), ResolutionSelector, CR Prompt Text, ShowText|pysssss, TextEncodeQwenImage21, SaveImageAdvanced, PixaromaGroupSwitch, PixaromaGroupSwitch, PixaromaGroupSwitch, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [Fast Bypasser (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), Fast Groups Muter (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, PixaromaGroupSwitch, PixaromaGroupSwitch, PixaromaGroupSwitch, QwenPERewriteT8, CR Prompt Text, SaveImageAdvanced, solarL_SaveImagesToZip]
+missing: [Fast Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), CR Prompt Text]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `PathchSageAttentionKJ` 知识库中没有该节点类型的任何知识, 次要节点 `PixaromaGroupSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `PixaromaGroupSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `PixaromaGroupSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/反推提示词/Qwen Image 2.1图像编辑V1.0｜2026开源最强模型图生图工作流_2104509451624603649.json
@@ -172,11 +172,11 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **48%**（63/130）
+覆盖率 **54%**（70/130）
 
-**有卡**：`LoraLoaderModelOnly`、`QwenImage21Cache`、`UNETLoader`、`VAELoader`、`KSampler`、`VAEDecode`、`LoadImage`、`EmptyLatentImage`、`CLIPLoader`、`SaveImage`、`ResolutionSelector`、`TextEncodeQwenImage21`、`CLIPTextEncode`
+**有卡**：`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`QwenImage21Cache`、`UNETLoader`、`VAELoader`、`KSampler`、`VAEDecode`、`LoadImage`、`EmptyLatentImage`、`QwenPERewriteT8`、`CLIPLoader`、`SaveImage`、`ResolutionSelector`、`TextEncodeQwenImage21`、`SaveImageAdvanced`、`PixaromaGroupSwitch`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（31）：`Fast Bypasser (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`Fast Groups Muter (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`PixaromaGroupSwitch`、`PixaromaGroupSwitch`、`PixaromaGroupSwitch`、`QwenPERewriteT8`、`CR Prompt Text`、`SaveImageAdvanced`、`solarL_SaveImagesToZip`
+**缺卡**（14）：`Fast Bypasser (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -189,16 +189,6 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 ## 学习发现
 
 - 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Muter (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
@@ -211,13 +201,6 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 - 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `PathchSageAttentionKJ` 知识库中没有该节点类型的任何知识
-- 次要节点 `PixaromaGroupSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `PixaromaGroupSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `PixaromaGroupSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

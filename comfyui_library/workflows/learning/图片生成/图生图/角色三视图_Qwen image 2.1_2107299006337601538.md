@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/角色三视图_Qwen image 2.1_2107299006337601538.json
 hash: 75d60c1473730dbe
-coverage: 0.8125
-learned_at: 2026-10-06 21:44:28
+coverage: 1
+learned_at: 2026-10-06 22:33:50
 nodes: [KSampler, KSampler, VAEDecode, ImageStitch, QwenImage21Cache, VAELoader, UNETLoader, CLIPLoader, VAEDecode, LoadImage, ImageScaleToTotalPixels, TextEncodeQwenImage21, EmptyLatentImage, TextEncodeQwenImage21, SaveImageAdvanced, SaveImage]
 patterns: []
-missing: [ImageScaleToTotalPixels, ImageStitch, SaveImageAdvanced]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 2048, "sampler_name": "euler", "scheduler": "simple", "seed": 107308238506398, "steps": 25, "width": 1536}
-discoveries: [次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识, 次要节点 `ImageStitch` 知识库中没有该节点类型的任何知识, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/角色三视图_Qwen image 2.1_2107299006337601538.json
@@ -21,7 +20,7 @@ discoveries: [次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（16 个）：
 - `KSampler` ★核心
@@ -55,16 +54,8 @@ discoveries: [次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **81%**（13/16）
+覆盖率 **100%**（16/16）
 
-**有卡**：`KSampler`、`VAEDecode`、`QwenImage21Cache`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoadImage`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`SaveImage`
-
-**缺卡**（3）：`ImageScaleToTotalPixels`、`ImageStitch`、`SaveImageAdvanced`
+**有卡**：`KSampler`、`VAEDecode`、`ImageStitch`、`QwenImage21Cache`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoadImage`、`ImageScaleToTotalPixels`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`SaveImageAdvanced`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `ImageScaleToTotalPixels` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageStitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明

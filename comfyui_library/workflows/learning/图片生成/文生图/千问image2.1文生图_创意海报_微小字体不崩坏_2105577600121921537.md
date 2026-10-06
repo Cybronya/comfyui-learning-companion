@@ -6,13 +6,13 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/千问image2.1文生图_创意海报_微小字体不崩坏_2105577600121921537.json
 hash: 3c170b22da59f3da
-coverage: 0.6
-learned_at: 2026-10-06 21:51:46
+coverage: 0.733333
+learned_at: 2026-10-06 22:40:00
 nodes: [CLIPLoader, ShowText|pysssss, UNETLoader, VAELoader, ResolutionSelector, EmptyLatentImage, TextEncodeQwenImage21, Seed (rgthree), VAEDecode, SaveImageAdvanced, KSampler, SaveImage, 忽略多组孤海, QwenPERewriteT8, Text Multiline]
 patterns: []
-missing: [QwenPERewriteT8, Text Multiline, 忽略多组孤海, SaveImageAdvanced, Seed (rgthree)]
+missing: [Text Multiline, 忽略多组孤海, Seed (rgthree)]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 0, "steps": 25, "width": 1024}
-discoveries: [次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/千问image2.1文生图_创意海报_微小字体不崩坏_2105577600121921537.json
@@ -54,18 +54,16 @@ discoveries: [次要节点 `QwenPERewriteT8` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **60%**（9/15）
+覆盖率 **73%**（11/15）
 
-**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`VAEDecode`、`KSampler`、`SaveImage`
+**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`VAEDecode`、`SaveImageAdvanced`、`KSampler`、`SaveImage`、`QwenPERewriteT8`
 
-**缺卡**（5）：`QwenPERewriteT8`、`Text Multiline`、`忽略多组孤海`、`SaveImageAdvanced`、`Seed (rgthree)`
+**缺卡**（3）：`Text Multiline`、`忽略多组孤海`、`Seed (rgthree)`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
 
 ## 学习发现
 
-- 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识
 - 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
 - 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

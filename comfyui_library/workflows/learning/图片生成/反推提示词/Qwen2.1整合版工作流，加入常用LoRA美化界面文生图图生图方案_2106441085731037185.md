@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen2.1整合版工作流，加入常用LoRA美化界面文生图图生图方案_2106441085731037185.json
 hash: 21553d087c33cf4d
-coverage: 0.282723
-learned_at: 2026-10-06 21:37:25
+coverage: 0.319372
+learned_at: 2026-10-06 22:27:28
 nodes: [GetNode, GetNode, Context (rgthree), SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, easy ifElse, LoraLoaderModelOnly, Context (rgthree), LoraLoaderModelOnly, Context (rgthree), GetNode, LoraLoaderModelOnly, GetNode, SetNode, GetNode, VAEDecode, GetNode, UNETLoader, SetNode, SetNode, easy ifElse, GetNode, easy ifElse, SetNode, CR Text, GetNode, CR Text, CR Text, SetNode, GetNode, Context (rgthree), Context (rgthree), easy ifElse, SetNode, SetNode, easy ifElse, GetNode, Context (rgthree), SetNode, GetNode, JoinStrings, SetNode, SetNode, easy ifElse, LoraLoaderModelOnly, CR Text, GetNode, Context (rgthree), GetNode, QwenImage21SageAttentionT8, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, GetNode, EmptyLatentImage, GetNode, GetNode, SetNode, easy boolean, CR Text, SetNode, easy ifElse, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, easy ifElse, easy boolean, SetNode, GetNode, Context (rgthree), Context (rgthree), SetNode, QwenImage21Cache, GetNode, ComfySwitchNode, SetNode, SetNode, Fast Groups Bypasser (rgthree), easy ifElse, GetNode, LoraLoaderModelOnly, SetNode, SetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, KSampler, GetNode, QwenPERewriteT8, TextEncodeQwenImage21, LoraLoaderModelOnly, easy anythingIndexSwitch, LoadImage, LoadImage, SaveImage, CR Text, CR Text, SetNode, CR Prompt Text, ComfySwitchNode, GetNode, ComfySwitchNode, GetNode, GetNode, SetNode, SetNode, UNETLoader, CLIPLoader, UNETLoader, easy ifElse, GetNode, SetNode, SetNode, easy ifElse, GetNode, GetNode, GetNode, SetNode, easy boolean, CR Text, easy ifElse, CR Text, CR Text, GetNode, JoinStringMulti, GetNode, SetNode, SetNode, SetNode, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, ImpactSwitch, CR Text, CR Prompt Text, ResolutionSelector, easy boolean, easy showAnything, easy boolean, VAELoader, UNETLoader, easy float, easy ifElse, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Fast Groups Bypasser (rgthree), JoinStringMulti, JoinStrings, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenPERewriteT8, easy anythingIndexSwitch, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy float, CR Prompt Text, CR Prompt Text, solarL_SaveImagesToZip]
+missing: [CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), easy anythingIndexSwitch, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy float, CR Prompt Text, CR Prompt Text]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `JoinStringMulti` 知识库中没有该节点类型的任何知识, 次要节点 `JoinStrings` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识, 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/反推提示词/Qwen2.1整合版工作流，加入常用LoRA美化界面文生图图生图方案_2106441085731037185.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（191 个）：
 - `GetNode`
@@ -233,11 +233,11 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **28%**（54/191）
+覆盖率 **32%**（61/191）
 
-**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`UNETLoader`、`EmptyLatentImage`、`QwenImage21Cache`、`LoadImage`、`KSampler`、`TextEncodeQwenImage21`、`SaveImage`、`CLIPLoader`、`ResolutionSelector`、`VAELoader`、`CLIPTextEncode`
+**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`UNETLoader`、`JoinStrings`、`QwenImage21SageAttentionT8`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`EmptyLatentImage`、`QwenImage21Cache`、`LoadImage`、`KSampler`、`QwenPERewriteT8`、`TextEncodeQwenImage21`、`SaveImage`、`CLIPLoader`、`JoinStringMulti`、`ResolutionSelector`、`VAELoader`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（42）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Fast Groups Bypasser (rgthree)`、`JoinStringMulti`、`JoinStrings`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`QwenImage21SpectrumT8`、`QwenPERewriteT8`、`easy anythingIndexSwitch`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy float`、`CR Prompt Text`、`CR Prompt Text`、`solarL_SaveImagesToZip`
+**缺卡**（34）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`Context (rgthree)`、`easy anythingIndexSwitch`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy boolean`、`easy float`、`CR Prompt Text`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -268,13 +268,6 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识
 - 次要节点 `Context (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Groups Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `JoinStringMulti` 知识库中没有该节点类型的任何知识
-- 次要节点 `JoinStrings` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21BlockCacheT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SageAttentionT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21SpectrumT8` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenPERewriteT8` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
@@ -289,5 +282,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - 次要节点 `easy float` 知识库中没有该节点类型的任何知识
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

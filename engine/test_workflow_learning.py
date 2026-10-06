@@ -353,6 +353,9 @@ def test_store_aggregates():
             nodes=nodes,
             covered_nodes=[n for n in nodes if n not in missing],
             missing_nodes=missing,
+            # node_frequency 按内容指纹去重（聚合层默认口径），
+            # 夹具必须给每条独立指纹，否则三条会被当成同一文件
+            content_hash=f"hash-{i}",
         ))
 
     freq = store.node_frequency()

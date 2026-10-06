@@ -6,13 +6,13 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1：图像编辑_2101759280482447361.json
 hash: c1f4c07517c18ee4
-coverage: 0.5
-learned_at: 2026-10-06 21:41:48
+coverage: 0.625
+learned_at: 2026-10-06 22:31:33
 nodes: [MarkdownNote, MarkdownNote, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, ComfySwitchNode, QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, PrimitiveStringMultiline, PreviewAny, BatchImagesNode, SaveImage, ImageCompare, SaveImageAdvanced, ComfySwitchNode, TextGenerate, JjkText, LoadImage, LoadImage]
 patterns: []
-missing: [BatchImagesNode, ImageCompare, TextGenerate, PreviewAny, SaveImageAdvanced]
+missing: [ImageCompare]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 555537776240235, "steps": 25, "width": 1024}
-discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCompare` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+discoveries: [次要节点 `ImageCompare` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1：图像编辑_2101759280482447361.json
@@ -21,7 +21,7 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（24 个）：
 - `MarkdownNote`
@@ -63,18 +63,14 @@ discoveries: [次要节点 `BatchImagesNode` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **50%**（12/24）
+覆盖率 **62%**（15/24）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`SaveImage`、`LoadImage`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`BatchImagesNode`、`SaveImage`、`SaveImageAdvanced`、`TextGenerate`、`LoadImage`
 
-**缺卡**（5）：`BatchImagesNode`、`ImageCompare`、`TextGenerate`、`PreviewAny`、`SaveImageAdvanced`
+**缺卡**（1）：`ImageCompare`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
 
 ## 学习发现
 
-- 次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识
 - 次要节点 `ImageCompare` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明

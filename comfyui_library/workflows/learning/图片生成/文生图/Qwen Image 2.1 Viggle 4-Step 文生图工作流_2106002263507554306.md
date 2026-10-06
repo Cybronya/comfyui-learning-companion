@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
 hash: 12e15ebeb6f75497
-coverage: 0.785714
-learned_at: 2026-10-06 21:47:32
+coverage: 0.928571
+learned_at: 2026-10-06 22:36:40
 nodes: [TextEncodeQwenImage21, EmptyLatentImage, KSampler, ResolutionSelector, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, VAEDecode, SaveImage, QwenImage21Cache, ModelSamplingFlux, ModelAttentionBackend]
 patterns: []
-missing: [ModelAttentionBackend, ModelSamplingFlux]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 2048, "sampler_name": "euler", "scheduler": "simple", "seed": 314159268, "steps": 25, "width": 2048}
-discoveries: [次要节点 `ModelAttentionBackend` 知识库中没有该节点类型的任何知识, 次要节点 `ModelSamplingFlux` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
@@ -53,15 +52,8 @@ discoveries: [次要节点 `ModelAttentionBackend` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **79%**（11/14）
+覆盖率 **93%**（13/14）
 
-**有卡**：`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`SaveImage`、`QwenImage21Cache`
-
-**缺卡**（2）：`ModelAttentionBackend`、`ModelSamplingFlux`
+**有卡**：`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`SaveImage`、`QwenImage21Cache`、`ModelSamplingFlux`、`ModelAttentionBackend`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPLoader、EmptyLatentImage
-
-## 学习发现
-
-- 次要节点 `ModelAttentionBackend` 知识库中没有该节点类型的任何知识
-- 次要节点 `ModelSamplingFlux` 仅有 Checkpoint 的通用知识，没有该节点自己的说明

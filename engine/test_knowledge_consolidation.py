@@ -784,8 +784,9 @@ def test_engine_from_real_records():
 
         print(f"\n{engine.render_report(knowledge)}")
 
-        assert knowledge.source_count == len(records)
-        # 真实样本只有 3 个且结构相近，min_frequency=2 时应至少成 1 个模式
+        # 归纳输入经过内容去重 + 空节点记录过滤，
+        # source_count ≤ 记录数（2026-10-06 起去重是聚合层默认口径）
+        assert 0 < knowledge.source_count <= len(records)
         if knowledge.source_count >= 2:
             assert knowledge.patterns, "应至少形成一个模式"
 

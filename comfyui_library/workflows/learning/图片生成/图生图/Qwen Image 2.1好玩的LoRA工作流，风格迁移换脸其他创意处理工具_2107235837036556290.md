@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1好玩的LoRA工作流，风格迁移换脸其他创意处理工具_2107235837036556290.json
 hash: 795d296fda5b3b48
-coverage: 0.567164
-learned_at: 2026-10-06 21:41:22
+coverage: 0.731343
+learned_at: 2026-10-06 22:31:07
 nodes: [SetNode, EmptyLatentImage, VAELoader, UNETLoader, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, TextEncodeQwenImage21, Image Comparer (rgthree), AddLabel, QwenImage21Cache, PreviewImage, CLIPLoader, LoadImage, GetNode, GetNode, easy showAnything, TTResolutionSelector, BatchImagesNode, ResolutionSelector, ImageConcatMulti, LoadImage, SetNode, TTResolutionSelector, ImageResizeKJv2, CR Prompt Text, CLIPLoader, KSampler, MuyeTextEditOutput, TextGenerate, ImageResizeKJv2, LoraLoaderModelOnly, SaveImage, SaveImageAdvanced, easy cleanGpuUsed, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [AddLabel, BatchImagesNode, ImageConcatMulti, TextGenerate, easy cleanGpuUsed, CR Prompt Text, ImageResizeKJv2, ImageResizeKJv2, MuyeTextEditOutput, SaveImageAdvanced, TTResolutionSelector, TTResolutionSelector, solarL_SaveImagesToZip]
+missing: [easy cleanGpuUsed, CR Prompt Text]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何知识, 次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识, 次要节点 `ImageConcatMulti` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1好玩的LoRA工作流，风格迁移换脸其他创意处理工具_2107235837036556290.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（67 个）：
 - `SetNode`
@@ -109,11 +109,11 @@ discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **57%**（38/67）
+覆盖率 **73%**（49/67）
 
-**有卡**：`EmptyLatentImage`、`VAELoader`、`UNETLoader`、`VAEDecode`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`CLIPLoader`、`LoadImage`、`ResolutionSelector`、`KSampler`、`LoraLoaderModelOnly`、`SaveImage`、`CLIPTextEncode`
+**有卡**：`EmptyLatentImage`、`VAELoader`、`UNETLoader`、`VAEDecode`、`TextEncodeQwenImage21`、`AddLabel`、`QwenImage21Cache`、`CLIPLoader`、`LoadImage`、`TTResolutionSelector`、`BatchImagesNode`、`ResolutionSelector`、`ImageConcatMulti`、`ImageResizeKJv2`、`KSampler`、`MuyeTextEditOutput`、`TextGenerate`、`LoraLoaderModelOnly`、`SaveImage`、`SaveImageAdvanced`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（13）：`AddLabel`、`BatchImagesNode`、`ImageConcatMulti`、`TextGenerate`、`easy cleanGpuUsed`、`CR Prompt Text`、`ImageResizeKJv2`、`ImageResizeKJv2`、`MuyeTextEditOutput`、`SaveImageAdvanced`、`TTResolutionSelector`、`TTResolutionSelector`、`solarL_SaveImagesToZip`
+**缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -124,17 +124,6 @@ discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何
 
 ## 学习发现
 
-- 次要节点 `AddLabel` 知识库中没有该节点类型的任何知识
-- 次要节点 `BatchImagesNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageConcatMulti` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResizeKJv2` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `MuyeTextEditOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `TTResolutionSelector` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

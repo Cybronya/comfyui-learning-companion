@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1纠正背景透视溶图工作流，图生图背景融合处理工具_2107200687548493825.json
 hash: 21e407c6cb338b87
-coverage: 0.673469
-learned_at: 2026-10-06 21:41:43
+coverage: 0.77551
+learned_at: 2026-10-06 22:31:28
 nodes: [CLIPLoader, VAELoader, UNETLoader, TextEncodeQwenImage21, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, Image Comparer (rgthree), LoadImage, 图像缩放V2_孤海, UC_ImagePad, LoraLoaderModelOnly, LoraLoaderModelOnly, CR Prompt Text, FluxGuidance, InvertMask (segment anything), MaskToImage, Cut By Mask, SaveImageAdvanced, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [Cut By Mask, InvertMask (segment anything), MaskToImage, UC_ImagePad, 图像缩放V2_孤海, CR Prompt Text, FluxGuidance, SaveImageAdvanced, solarL_SaveImagesToZip]
+missing: [Cut By Mask, InvertMask (segment anything), MaskToImage, UC_ImagePad, 图像缩放V2_孤海, CR Prompt Text]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Cut By Mask` 知识库中没有该节点类型的任何知识, 次要节点 `InvertMask (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `MaskToImage` 知识库中没有该节点类型的任何知识, 次要节点 `UC_ImagePad` 知识库中没有该节点类型的任何知识, 次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `FluxGuidance` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `Cut By Mask` 知识库中没有该节点类型的任何知识, 次要节点 `InvertMask (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `MaskToImage` 知识库中没有该节点类型的任何知识, 次要节点 `UC_ImagePad` 知识库中没有该节点类型的任何知识, 次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1纠正背景透视溶图工作流，图生图背景融合处理工具_2107200687548493825.json
@@ -91,11 +91,11 @@ discoveries: [次要节点 `Cut By Mask` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **67%**（33/49）
+覆盖率 **78%**（38/49）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`TextEncodeQwenImage21`、`VAEDecode`、`LoadImage`、`LoraLoaderModelOnly`、`SaveImage`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`TextEncodeQwenImage21`、`KSamplerAdvanced`、`VAEDecode`、`LoadImage`、`LoraLoaderModelOnly`、`FluxGuidance`、`SaveImageAdvanced`、`SaveImage`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（9）：`Cut By Mask`、`InvertMask (segment anything)`、`MaskToImage`、`UC_ImagePad`、`图像缩放V2_孤海`、`CR Prompt Text`、`FluxGuidance`、`SaveImageAdvanced`、`solarL_SaveImagesToZip`
+**缺卡**（6）：`Cut By Mask`、`InvertMask (segment anything)`、`MaskToImage`、`UC_ImagePad`、`图像缩放V2_孤海`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
 
@@ -112,7 +112,4 @@ discoveries: [次要节点 `Cut By Mask` 知识库中没有该节点类型的任
 - 次要节点 `UC_ImagePad` 知识库中没有该节点类型的任何知识
 - 次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识
 - 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `FluxGuidance` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveImageAdvanced` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

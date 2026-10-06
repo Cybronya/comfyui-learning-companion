@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json
 hash: e95045ae99a7fbff
-coverage: 0.786885
-learned_at: 2026-10-06 21:37:31
+coverage: 0.868852
+learned_at: 2026-10-06 22:27:33
 nodes: [UNETLoader, CLIPLoader, VAELoader, VAEDecode, ResolutionSelector, PreviewAny, StringReplace, EmptyLatentImage, TextEncodeQwenImage21, KSampler, SaveImage, StringConstantMultiline, StringConstantMultiline, CLIPLoader, TextGenerate, easy showAnything, easy showAnything, StringFunction|pysssss, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [StringConstantMultiline, StringConstantMultiline, StringFunction|pysssss, StringReplace, TextGenerate, PreviewAny, solarL_SaveImagesToZip]
+missing: [StringFunction|pysssss]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `StringConstantMultiline` 知识库中没有该节点类型的任何知识, 次要节点 `StringConstantMultiline` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识, 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识, 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/反推提示词/qwen2.1文生图｜反推提示词加图生图，套图素材批量产出_2104570933620076545.json
@@ -103,11 +103,11 @@ discoveries: [次要节点 `StringConstantMultiline` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **79%**（48/61）
+覆盖率 **87%**（53/61）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`ResolutionSelector`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`KSampler`、`SaveImage`、`CLIPTextEncode`、`LoraLoaderModelOnly`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`ResolutionSelector`、`StringReplace`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`KSampler`、`SaveImage`、`StringConstantMultiline`、`TextGenerate`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
 
-**缺卡**（7）：`StringConstantMultiline`、`StringConstantMultiline`、`StringFunction|pysssss`、`StringReplace`、`TextGenerate`、`PreviewAny`、`solarL_SaveImagesToZip`
+**缺卡**（1）：`StringFunction|pysssss`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -118,11 +118,5 @@ discoveries: [次要节点 `StringConstantMultiline` 知识库中没有该节点
 
 ## 学习发现
 
-- 次要节点 `StringConstantMultiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringConstantMultiline` 知识库中没有该节点类型的任何知识
 - 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringReplace` 知识库中没有该节点类型的任何知识
-- 次要节点 `TextGenerate` 知识库中没有该节点类型的任何知识
-- 次要节点 `PreviewAny` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

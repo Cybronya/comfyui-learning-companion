@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1文生图原生FUN Viggle三图对比，图生图处理方案_2105795635810226177.json
 hash: e36a3400647aee54
-coverage: 0.666667
-learned_at: 2026-10-06 21:48:56
+coverage: 0.894737
+learned_at: 2026-10-06 22:37:49
 nodes: [StringConstantMultiline, INTConstant, INTConstant, INTConstant, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, EmptyLatentImage, KSampler, LoraLoaderModelOnly, BasicGuider, RandomNoise, KSamplerSelect, CustomSigmas, SamplerCustomAdvanced, VAEDecode, VAEDecode, VAEDecode, SaveImage, T8QwenImage21FunAccPDD4Step, SaveImage, AddLabel, SaveImage, AddLabel, SaveImage, AddLabel, ImageConcatMulti, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [AddLabel, AddLabel, AddLabel, BasicGuider, CustomSigmas, INTConstant, INTConstant, INTConstant, ImageConcatMulti, RandomNoise, StringConstantMultiline, T8QwenImage21FunAccPDD4Step, SamplerCustomAdvanced, solarL_SaveImagesToZip]
+missing: [CustomSigmas, T8QwenImage21FunAccPDD4Step]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何知识, 次要节点 `AddLabel` 知识库中没有该节点类型的任何知识, 次要节点 `AddLabel` 知识库中没有该节点类型的任何知识, 次要节点 `BasicGuider` 知识库中没有该节点类型的任何知识, 次要节点 `CustomSigmas` 知识库中没有该节点类型的任何知识, 次要节点 `INTConstant` 知识库中没有该节点类型的任何知识, 次要节点 `INTConstant` 知识库中没有该节点类型的任何知识, 次要节点 `INTConstant` 知识库中没有该节点类型的任何知识, 次要节点 `ImageConcatMulti` 知识库中没有该节点类型的任何知识, 次要节点 `RandomNoise` 知识库中没有该节点类型的任何知识, 次要节点 `StringConstantMultiline` 知识库中没有该节点类型的任何知识, 次要节点 `T8QwenImage21FunAccPDD4Step` 知识库中没有该节点类型的任何知识, 核心节点 `SamplerCustomAdvanced` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `CustomSigmas` 知识库中没有该节点类型的任何知识, 次要节点 `T8QwenImage21FunAccPDD4Step` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1文生图原生FUN Viggle三图对比，图生图处理方案_2105795635810226177.json
@@ -22,7 +22,7 @@ discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（57 个）：
 - `StringConstantMultiline`
@@ -99,11 +99,11 @@ discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **67%**（38/57）
+覆盖率 **89%**（51/57）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`LoraLoaderModelOnly`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`
+**有卡**：`StringConstantMultiline`、`INTConstant`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`LoraLoaderModelOnly`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`SamplerCustomAdvanced`、`VAEDecode`、`SaveImage`、`AddLabel`、`ImageConcatMulti`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（14）：`AddLabel`、`AddLabel`、`AddLabel`、`BasicGuider`、`CustomSigmas`、`INTConstant`、`INTConstant`、`INTConstant`、`ImageConcatMulti`、`RandomNoise`、`StringConstantMultiline`、`T8QwenImage21FunAccPDD4Step`、`SamplerCustomAdvanced`、`solarL_SaveImagesToZip`
+**缺卡**（2）：`CustomSigmas`、`T8QwenImage21FunAccPDD4Step`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -114,18 +114,6 @@ discoveries: [次要节点 `AddLabel` 知识库中没有该节点类型的任何
 
 ## 学习发现
 
-- 次要节点 `AddLabel` 知识库中没有该节点类型的任何知识
-- 次要节点 `AddLabel` 知识库中没有该节点类型的任何知识
-- 次要节点 `AddLabel` 知识库中没有该节点类型的任何知识
-- 次要节点 `BasicGuider` 知识库中没有该节点类型的任何知识
 - 次要节点 `CustomSigmas` 知识库中没有该节点类型的任何知识
-- 次要节点 `INTConstant` 知识库中没有该节点类型的任何知识
-- 次要节点 `INTConstant` 知识库中没有该节点类型的任何知识
-- 次要节点 `INTConstant` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageConcatMulti` 知识库中没有该节点类型的任何知识
-- 次要节点 `RandomNoise` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringConstantMultiline` 知识库中没有该节点类型的任何知识
 - 次要节点 `T8QwenImage21FunAccPDD4Step` 知识库中没有该节点类型的任何知识
-- 核心节点 `SamplerCustomAdvanced` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `solarL_SaveImagesToZip` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
