@@ -13,6 +13,7 @@
     python -X utf8 skills/comfyui-learning/tools/learn_pipeline.py --tag 图片生成/图生图 --count 50
     python -X utf8 skills/comfyui-learning/tools/learn_pipeline.py --sort RECOMMEND
     python -X utf8 skills/comfyui-learning/tools/learn_pipeline.py --skip-download   # 只学习/补卡/图谱
+    python -X utf8 skills/comfyui-learning/tools/learn_pipeline.py --skip-collect    # 不扩清单，只消化已下载的
 """
 
 import json
@@ -76,6 +77,7 @@ def main():
     count = 100
     sort = "NEWEST"
     skip_download = False
+    skip_collect = False
     i = 0
     while i < len(args):
         if args[i] == "--tag" and i + 1 < len(args):
@@ -86,6 +88,8 @@ def main():
             sort = args[i + 1]; i += 2
         elif args[i] == "--skip-download":
             skip_download = True; i += 1
+        elif args[i] == "--skip-collect":
+            skip_collect = True; i += 1
         else:
             i += 1
 

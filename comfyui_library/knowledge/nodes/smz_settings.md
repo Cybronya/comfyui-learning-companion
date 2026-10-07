@@ -1,0 +1,44 @@
+# smZ Settings
+
+## 节点类型
+
+`smZ Settings`
+
+## 分类
+
+Other
+
+## 作用
+
+作用未知，需人工补充（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 1 个 workflow 中。
+
+## 输入
+
+- `*:MODEL`（1 次）
+- `Prompt word wrap length limit:INT`（1 次）
+- `enable_emphasis:BOOLEAN`（1 次）
+- `RNG:COMBO`（1 次）
+- `disable_nan_check:BOOLEAN`（1 次）
+- `eta:FLOAT`（1 次）
+- `s_churn:FLOAT`（1 次）
+- `s_tmin:FLOAT`（1 次）
+- `s_tmax:FLOAT`（1 次）
+- `s_noise:FLOAT`（1 次）
+
+## 输出
+
+- `MODEL:MODEL`（1 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `["{\"show_headings\":true,\"show_descriptions\":false,\"mode\":\"*\"}", "Stable Diffusion", "", 20, true, "", "gpu", "Co`（1 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)
