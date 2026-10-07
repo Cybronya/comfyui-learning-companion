@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-07
+- 最后更新：2026-10-08
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -411,6 +411,16 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-08 下载收件箱全量对账（清零，无未学工作流）**：
+`download/` 收件箱（workflows-by-tag 3205 + workflows-json 151 + 根目录 H3 12）
+与库内全量指纹对账：3352 个一致＝已学过，**真正未学习 0 个**。
+顺带处理一个脱敏后遗症：库内 7 个 workflow 于 2026-10-07 脱敏后指纹变化，
+`import_workflows.py` 拿收件箱原始版（含 token）比对误判为「新文件」复制入库——
+已删除误导入副本（`comfyui_library/workflows/workflows-by-tag/` 仅含该 7 文件，
+整体清除），并对收件箱原始文件同步脱敏（9 处 → `REDACTED_THIRD_PARTY_TOKEN`）
+使指纹与库内对齐，根治重复误判；随后重学这 7 个刷新记录
+（学习 7 / 跳过 3939 / 失败 0 / 库死键 0），全库 token 扫描 0 残留。
 
 **2026-10-07 下载学习流水线固化（learn_pipeline.py）**：把人肉八步
 （收集→算缺失→下载→去重入库→学习→补卡→force 重学→图谱）固化为
