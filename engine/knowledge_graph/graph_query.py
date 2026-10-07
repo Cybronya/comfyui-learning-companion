@@ -33,6 +33,7 @@ from .models import (
     REL_PROBLEM_IN,
     REL_SUGGESTS,
     REL_CO_USED,
+    REL_FEEDS_INTO,
     REL_HAS_TOPIC,
     nid,
     split_id,
@@ -141,7 +142,18 @@ class GraphQuery:
             workflow 名字列表（不含 id 前缀，便于直接给人看）
         """
         node_id = self.resolve(node_name, TYPE_NODE)
+
         if not node_id:
+            # 不是节点名？试试技法概念名（SelfLift / 双采 / 去油…）：
+            # workflow -[has_topic]-> concept，取 concept 的入边
+            concept_id = self.resolve(node_name, TYPE_CONCEPT)
+            if concept_id:
+                wfs = sorted({
+                    e.source
+                    for e in self.graph.in_edges(concept_id, REL_HAS_TOPIC)
+                    if e.source.startswith(f"{TYPE_WORKFLOW}:")
+                })
+                return self._labels(wfs)
             return []
 
         if relation == REL_CO_USED:
@@ -366,6 +378,30 @@ class GraphQuery:
 
         return self.name_of(edges[0].target)
 
+    def nodes_of_concept(self, concept_name: str, top: int = 8) -> List[str]:
+        """
+        某技法概念下最常用的节点（按包含该概念的 workflow 聚合）
+        """
+        from collections import Counter
+
+        concept_id = self.resolve(concept_name, TYPE_CONCEPT)
+        if not concept_id:
+            return []
+        wfs = {
+            e.source
+            for e in self.graph.in_edges(concept_id, REL_HAS_TOPIC)
+            if e.source.startswith(f"{TYPE_WORKFLOW}:")
+        }
+        counter: Counter = Counter()
+        for wf_id in wfs:
+            for e in self.graph.out_edges(wf_id, REL_CONTAINS):
+                if e.target.startswith(f"{TYPE_NODE}:"):
+                    counter[e.target] += 1
+        return [
+            self.name_of(nid_)
+            for nid_, _ in counter.most_common(top)
+        ]
+
     def nodes_without_cards(self) -> List[str]:
         """
         没有知识卡的节点（按被用到的次数排序）
@@ -395,6 +431,67 @@ class GraphQuery:
             for e in self.graph.in_edges(node_id, REL_CONTAINS)
             if e.source.startswith(f"{TYPE_WORKFLOW}:")
         })
+
+    def top_flows(
+        self,
+        data_type: str = None,
+        limit: int = 15,
+    ) -> List[Dict[str, Any]]:
+        """
+        跨 workflow 的宏观连接：出现最多的有向数据流
+
+        Args:
+            data_type: 只看某种数据（MODEL / LATENT / CONDITIONING /
+                       IMAGE / VAE / CLIP…）；None 不限
+            limit: 返回条数
+
+        Returns:
+            [{from, to, count, data_types}] 按 count 降序
+        """
+        rows = []
+        for e in self.graph.edges:
+            if e.relation != REL_FEEDS_INTO:
+                continue
+            types = e.properties.get("data_types", {})
+            if data_type and data_type not in types:
+                continue
+            rows.append({
+                "from": self.name_of(e.source),
+                "to": self.name_of(e.target),
+                "count": e.properties.get("count", 0),
+                "data_types": types,
+            })
+        rows.sort(key=lambda r: -r["count"])
+        return rows[:limit]
+
+    def flows_of(self, node_name: str, direction: str = "out") -> List[Dict]:
+        """
+        某个节点的宏观连接：它把数据喂给谁 / 它从谁那拿数据
+
+        Args:
+            node_name: 节点名
+            direction: "out"（喂给谁）/"in"（从谁拿）
+        """
+        node_id = self.resolve(node_name, TYPE_NODE)
+        if not node_id:
+            return []
+        if direction == "in":
+            edges = self.graph.in_edges(node_id, REL_FEEDS_INTO)
+            pairs = [(e.source, e.target) for e in edges]
+        else:
+            edges = self.graph.out_edges(node_id, REL_FEEDS_INTO)
+            pairs = [(e.source, e.target) for e in edges]
+        rows = [
+            {
+                "from": self.name_of(s),
+                "to": self.name_of(t),
+                "count": e.properties.get("count", 0),
+                "data_types": e.properties.get("data_types", {}),
+            }
+            for (s, t), e in zip(pairs, edges)
+        ]
+        rows.sort(key=lambda r: -r["count"])
+        return rows
 
     def topics_of(self, name: str, node_type: str = TYPE_NODE) -> List[str]:
         """节点涉及的主题词"""

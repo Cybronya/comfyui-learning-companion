@@ -53,6 +53,7 @@ REL_SUGGESTS = "suggests"        # 问题 → 建议
 REL_CO_USED = "co_used"          # 节点共现（弱关系，仅供参考）
 REL_HAS_TOPIC = "has_topic"      # node/pattern → 主题
 REL_FIXED_BY = "fixed_by"        # workflow 采用某模式修好了问题
+REL_FEEDS_INTO = "feeds_into"    # 节点 → 节点：有向数据流（跨 workflow 聚合）
 
 REL_COVERS = "covers"            # 知识卡覆盖某节点（与 has_card 成对）
 

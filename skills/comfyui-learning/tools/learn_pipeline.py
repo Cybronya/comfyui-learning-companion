@@ -95,7 +95,12 @@ def main():
     safe_tag = tag.replace("/", "_")
 
     # ---- 1. 收集 ID（续收） ----
-    target = count * 4  # 清单按 4 倍冗余续收，覆盖平台重复发布
+    # 目标 = 现有清单条数 + 冗余（collect 的语义是「补足到 target」，
+    # 清单已远超 count 时固定倍数会导致一轮都不收集）
+    known_n = 0
+    if ids_txt.exists():
+        known_n = len([l for l in ids_txt.read_text(encoding="utf-8-sig").splitlines() if l.strip()])
+    target = known_n + count * 4
     print(f"[1/6] 收集 ID：{tag} 目标 {target}（sort={sort}）")
     sh(["skills/comfyui-learning/tools/collect_by_tag.py",
         safe_tag if "/" not in tag else tag,
@@ -147,6 +152,9 @@ def main():
         stale = cleanup_stale(db)
     finally:
         db.save()
+        # 派生索引（workflow/node/pattern）与主库一起刷新，否则 node_index
+        # 停留在早期 sd1.5 时代，建卡优先级/反向索引全部失真
+        db.indexes.save_all()
         db.auto_save = True
     print(f"  学习 {summary['learned']} / 跳过 {summary['skipped']} / "
           f"失败 {summary['failed']}，清理库死键 {stale}")

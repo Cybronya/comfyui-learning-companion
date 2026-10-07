@@ -427,28 +427,47 @@ class ComfyUIAgent:
             return
 
         q = self.graph_query
+        lowered = state.question.lower()
+        facts: List[str] = []
+        seen = set()
 
-        # 候选节点：优先用本次解析出的 workflow 节点；
-        # 纯文字提问时在图内节点名里找问题文本的命中
+        # ① 技法概念命中（SelfLift / 双采 / 去油…）——概念不是节点，
+        #    走 has_topic 反查全部相关工作流 + 标志性节点
+        for node in q.graph.nodes_of_type("concept"):
+            if node.name and node.name.lower() in lowered:
+                users = q.workflows_using(node.name)
+                if users:
+                    preview = "、".join(users[:3])
+                    facts.append(
+                        f"知识图谱：技法「{node.name}」出现在 "
+                        f"{len(users)} 个已学 workflow 中（如 {preview}）"
+                    )
+                    sig = q.nodes_of_concept(node.name, top=5)
+                    if sig:
+                        facts.append(
+                            f"知识图谱：「{node.name}」的标志性节点："
+                            + "、".join(f"`{n}`" for n in sig)
+                        )
+                if len(facts) >= 6:
+                    state.graph_facts = facts
+                    state.add_stage("graph")
+                    return
+
+        # ② 候选节点：优先用本次解析出的 workflow 节点；
+        #    纯文字提问时在图内节点名里找问题文本的命中。
+        #    问题里点名的节点排最前 —— 用户问了谁就该优先答谁
         candidates = state.workflow_nodes()
-        if not candidates:
-            lowered = state.question.lower()
+        if candidates:
+            candidates = sorted(
+                candidates, key=lambda n: n.lower() not in lowered
+            )
+        else:
             candidates = [
                 node.name
                 for node in q.graph.nodes_of_type("node")
                 if node.name and node.name.lower() in lowered
             ]
-        else:
-            # 问题里点名的节点排最前 —— 用户问了谁就该优先答谁，
-            # 不然会被 workflow 里其他节点挤掉（上限只有几条）
-            lowered = state.question.lower()
-            candidates = sorted(
-                candidates,
-                key=lambda n: n.lower() not in lowered,
-            )
 
-        facts: List[str] = []
-        seen = set()
         for name in candidates:
             node_id = q.resolve(name, "node")
             if not node_id or node_id in seen:
@@ -478,6 +497,19 @@ class ComfyUIAgent:
                     f"知识图谱：`{name}` 常与 {text} 一起出现"
                     "（括号内为共现 workflow 数）"
                 )
+
+            # 有向数据流：它从哪拿数据、喂给谁（宏观聚合，带数据类型）
+            for direction, label in (("in", "通常从"), ("out", "通常喂给")):
+                flows = self.graph_query.flows_of(name, direction)[:2]
+                if flows:
+                    text = "；".join(
+                        f"`{f['to'] if direction == 'out' else f['from']}`"
+                        f"({f['count']}次/{'/'.join(list(f['data_types'])[:2])})"
+                        for f in flows
+                    )
+                    facts.append(
+                        f"知识图谱：`{name}` {label} {text}"
+                    )
 
             if len(facts) >= 6:
                 break

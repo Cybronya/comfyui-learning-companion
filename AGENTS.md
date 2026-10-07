@@ -425,6 +425,62 @@ agent_core/ComfyUIAgent.ask()
 test_database_integration 全过。以后新工作流只需一条命令：
 `python -X utf8 skills/comfyui-learning/tools/learn_pipeline.py`。
 
+**2026-10-07 概念层补全（技法名可查）+ feeds_into 进回答**：
+① GraphBuilder._mine_concepts() 从 workflow 标题按词表挖 26 个技法
+概念（SelfLift/双采/数字人/首尾帧/去油…），workflow-[has_topic]->
+concept 678 条；GraphQuery.workflows_using() 支持概念名反查，
+新增 nodes_of_concept()（标志性节点聚合）。agent_core 问题文本
+命中概念名时输出「技法出现在 N 个 workflow + 标志节点」。
+② agent._collect_graph_facts() 接入 flows_of：回答附「通常从/
+通常喂给（次数/数据类型）」。能力对比：SelfLift 查询 0 → 15 个
+workflow；KSampler 问题从共现 5 条 → 含有向数据流 4 条。
+重构 _collect_graph_facts 时曾把 facts 声明插进 for-else 结构
+导致概念事实被清空——已修，教训：方法内插入代码块前先看清
+既有分支结构。图谱 4974 顶点 / 58187 边。
+
+**2026-10-07 宏观数据流入图（feeds_into）**：co_used 只说明
+「一起出现」分不清谁喂谁。新增 REL_FEEDS_INTO 有向关系——
+GraphBuilder._aggregate_dataflow() 用 workflow_analyzer 的
+ConnectionAnalyzer 逐文件解析真实连线，按（源节点→目标节点）
+聚合为 feeds_into 边（count = 多少个 workflow 这样连，
+data_types = MODEL/LATENT/CONDITIONING/IMAGE 等类型分布；
+布线节点跳过，同 workflow 内同源同宿只计一次）。
+GraphQuery 新增 `top_flows(data_type)` / `flows_of(node, direction)`。
+实测 1667 条有向边，结构性规律首次可见：CLIPTextEncode→KSampler 686、
+TextEncodeQwenImage21→KSampler 380（Qwen 族专属编码路径）、
+CLIPTextEncode→ConditioningZeroOut→KSampler 266/181（加速流指纹）、
+UNETLoader→LoraLoaderModelOnly→…→KSampler 的 MODEL 链 715/615/577。
+图谱 4596 顶点 / 54382 边。遗留：feeds_into 尚未接进 agent_core 回答。
+
+**2026-10-07 派生索引失真修复**：发现
+`database/storage/node_index.json` 停留在早期 sd1.5 时代（仅 8 个节点，
+LoraLoaderModelOnly 不在内）——批量学习路径只写主库，从未重建派生索引。
+修复：`learn_pipeline.py` 学习阶段 finally 里补 `db.indexes.save_all()`
+（workflow/node/pattern 三索引随主库一起刷新），并手工重建了一次
+（node_index 8 → 1621 个节点）。test_database /
+test_database_integration 全过。
+
+**2026-10-07 文生图第六批（+100，全库 1751 条）**：learn_pipeline
+一键完成（NEWEST 流已榨干：扫 24 页 0 新增 → 改 RECOMMEND 续收
+5144 个新 ID（已知累计 11679 / 平台总量 13941）→ 下载 100 → 入库
+100（去重闸门拦 1502 个重复）→ 学习前预建卡 92 张 → 学习 100/100
+零失败 → 死键对账 0 → 图谱 5447 顶点 / 63606 边）。
+知识卡 1208 → **1300 张**。全库 1751 条：平均 74%，深懂（≥80%）
+799 个，浅懂 2。本批来源以 HiDream/Flux 对比、洗图去 AI 味类为主。
+
+**2026-10-07 文生图第五批（+100，全库 1551 条）**：learn_pipeline
+一键完成（下载 100 → 预建卡 126 → 学习 100/100 零失败 → 图谱
+4949 顶点 / 57559 边）。知识卡 1082 → **1208 张**。全库 1551 条：
+平均 74%，深懂（≥80%）704 个，浅懂 2。
+
+**2026-10-07 文生图第四批（+100，全库 1451 条）**：首次用
+`learn_pipeline.py` 一键跑完全流程（收集 4003 → 下载 100 → 入库 100
+→ **学习前预建卡 171 张** → 学习 100/100 零失败仅数十秒 → 死键对账
+0 → 图谱 4596 顶点 / 52715 边）。预建卡生效：知识卡 911 → **1082 张**，
+首轮覆盖率即准（无需 force 重学）。全库 1451 条：平均 74%，
+深懂（≥80%）657 个，浅懂（<20%）1。顺手修流水线收集目标 bug
+（固定 4 倍 → 现有清单 + 冗余，否则清单超限后永不收集）。
+
 **2026-10-07 文生图第三批（+100，全库 1351 条）**：NEWEST 流续收
 1300 后取库外前 100 下载导入（0 失败），新增节点 93 种 → 补卡
 （818 → **911 张**），重学刷新后图谱 4155 顶点 / 49034 边 / 1300

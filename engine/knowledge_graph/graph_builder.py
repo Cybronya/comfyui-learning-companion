@@ -59,6 +59,7 @@ from .models import (
     REL_SUGGESTS,
     REL_CO_USED,
     REL_HAS_TOPIC,
+    REL_FEEDS_INTO,
     nid,
 )
 
@@ -229,8 +230,106 @@ class GraphBuilder:
         self._link_patterns()
 
         self._flush_co_occurrence()
+        self._aggregate_dataflow(records)
+        self._mine_concepts(records)
 
         return self.graph
+
+    def _mine_concepts(self, records) -> None:
+        """
+        从 workflow 标题挖技法概念：标题命中词表 → workflow-[has_topic]->concept。
+
+        解决「SelfLift / 双采 / 去油」这类技法名查不到的问题——
+        它们不是节点类型，是标题语义层；挂上 concept 后
+        workflows_using() 即可按概念名反查全部相关工作流。
+        """
+        import re as _re
+
+        from .models import TYPE_CONCEPT
+
+        compiled = [
+            (concept, _re.compile("|".join(_re.escape(k) for k in kws), _re.IGNORECASE))
+            for concept, kws in TECHNIQUE_KEYWORDS.items()
+        ]
+        linked = 0
+        for record in records:
+            title = getattr(record, "workflow_name", "") or ""
+            if not title:
+                continue
+            wf_id = nid(TYPE_WORKFLOW, getattr(record, "key", ""))
+            for concept, rx in compiled:
+                if rx.search(title):
+                    self.graph.ensure_node(
+                        nid(TYPE_CONCEPT, concept), TYPE_CONCEPT, name=concept
+                    )
+                    self.graph.link(wf_id, REL_HAS_TOPIC, nid(TYPE_CONCEPT, concept))
+                    linked += 1
+        if getattr(self, "verbose", False):
+            print(f"  概念挖掘：{linked} 条 workflow-概念关联")
+
+        return self.graph
+
+    # ---------- 跨 workflow 数据流 ----------
+
+    def _aggregate_dataflow(self, records) -> None:
+        """
+        聚合每个已学 workflow 的有向连线为 `feeds_into` 边。
+
+        co_used 只说明「一起出现」，分不清谁喂谁；这里用
+        workflow_analyzer.ConnectionAnalyzer 逐文件解析真实连线，
+        按（源节点 → 目标节点）聚合：count = 多少个 workflow 这样连，
+        data_types = 传输的数据类型分布。布线节点跳过。
+        """
+        import json as _json
+        import os
+        from collections import Counter
+        from pathlib import Path
+
+        from ..workflow_analyzer.connection_analyzer import ConnectionAnalyzer
+        from ..workflow_analyzer.graph_builder import GraphBuilder as WAGraphBuilder
+        from ..workflow_learning.ignore_nodes import is_ignored
+
+        agg: dict = {}
+        parsed = 0
+        for record in records:
+            path = getattr(record, "file_path", "")
+            if not path or not os.path.exists(path):
+                continue
+            try:
+                data = _json.loads(Path(path).read_text(encoding="utf-8-sig"))
+                edges = ConnectionAnalyzer().analyze(
+                    WAGraphBuilder().build(data)
+                )
+            except Exception:
+                continue
+            parsed += 1
+
+            # 同一 workflow 内同源同宿只计一次（多分支重复连线不算多）
+            seen = set()
+            for e in edges:
+                src, dst = e.get("from", ""), e.get("to", "")
+                if not src or not dst or is_ignored(src) or is_ignored(dst):
+                    continue
+                key = (src, dst)
+                if key in seen:
+                    continue
+                seen.add(key)
+                ent = agg.setdefault(key, {"count": 0, "data": Counter()})
+                ent["count"] += 1
+                ent["data"][e.get("data", "") or "UNKNOWN"] += 1
+
+        for (src, dst), ent in agg.items():
+            if ent["count"] < self.co_use_min:
+                continue
+            self.graph.link(
+                nid(TYPE_NODE, src),
+                REL_FEEDS_INTO,
+                nid(TYPE_NODE, dst),
+                count=ent["count"],
+                data_types=dict(ent["data"].most_common()),
+            )
+        if getattr(self, "verbose", False):
+            print(f"  数据流聚合：{parsed} 个文件 → {len(agg)} 对有向连接")
 
     # ---------- workflow ----------
 
@@ -643,6 +742,39 @@ class GraphBuilder:
         if "/" not in key:
             return ""
         return key.split("/", 1)[0]
+
+
+
+# 技法概念词表：标题命中关键词 → concept 顶点。
+# 覆盖社区高频技法；workflows_using() 可按概念名查全部相关工作流。
+# 维护方式：遇到查不到的技法名就往这里加一行。
+TECHNIQUE_KEYWORDS = {
+    "SelfLift": ["selflift"],
+    "双采": ["双采"],
+    "单采": ["单采"],
+    "二采": ["二采", "二次采样"],
+    "数字人": ["数字人"],
+    "对口型": ["对口型", "口播", "lip sync"],
+    "音频驱动": ["音频驱动", "音频参考"],
+    "首尾帧": ["首尾帧"],
+    "视频换背景": ["换背景"],
+    "人物替换": ["换人", "人物替换", "角色替换", "换装"],
+    "动作迁移": ["动作迁移", "动作复刻"],
+    "视频复刻": ["视频复刻", "翻拍", "二创"],
+    "超分放大": ["放大", "超分", "upscale", "4k", "8k"],
+    "去油提质": ["去油", "去ai感", "去除ai感", "提质"],
+    "多参考生成": ["多参", "多图参考", "全能参考", "多参考"],
+    "长视频": ["长视频"],
+    "短剧分镜": ["短剧", "分镜", "漫剧"],
+    "换脸": ["换脸", "换头"],
+    "局部重绘": ["局部重绘", "局部修改"],
+    "扩图": ["扩图", "扩展画面"],
+    "去水印": ["去水印"],
+    "提示词反推": ["反推"],
+    "提示词增强": ["提示词增强", "提示词扩写", "自动扩写", "pe加持"],
+    "洗图转真人": ["转真人", "洗图"],
+    "九图宫格": ["九图", "宫格", "四宫格"],
+}
 
 
 def load_node_index(
