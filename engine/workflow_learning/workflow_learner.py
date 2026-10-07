@@ -150,6 +150,9 @@ class WorkflowLearner:
             file_path=relative_to_project(path),
             key=key or name,
             source_kind="png" if path.suffix.lower() == ".png" else "json",
+            # ComfyUI 官方模板库目录下的样本标记为官方指导
+            official="comfyui-workflow-templates-json"
+            in path.as_posix(),
         )
 
         try:

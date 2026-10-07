@@ -1,0 +1,34 @@
+# ApplyTextureToMesh
+
+## 节点类型
+
+`ApplyTextureToMesh`
+
+## 分类
+
+Utility
+
+## 作用
+
+文本工具节点（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 2 个 workflow 中。
+
+## 输入
+
+- `mesh:MESH`（2 次）
+- `base_color:IMAGE`（2 次）
+- `metallic:IMAGE`（2 次）
+- `roughness:IMAGE`（2 次）
+- `occlusion:IMAGE`（2 次）
+- `normal_map:IMAGE`（2 次）
+
+## 输出
+
+- `mesh:MESH`（2 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)

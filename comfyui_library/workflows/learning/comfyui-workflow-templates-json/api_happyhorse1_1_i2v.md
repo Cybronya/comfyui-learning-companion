@@ -1,0 +1,36 @@
+---
+key: comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json
+name: api_happyhorse1_1_i2v
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json
+hash: 19e7c2b0de7dc32c
+official: true
+coverage: 1
+learned_at: 2026-10-07 21:33:51
+nodes: [HappyHorseImageToVideoApi, SaveVideo, LoadImage]
+patterns: []
+missing: []
+---
+
+# comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json
+
+> 来源文件 `comfyui_library/workflows/comfyui-workflow-templates-json/api_happyhorse1_1_i2v.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（3 个）：
+- `HappyHorseImageToVideoApi`
+- `SaveVideo`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（3/3）
+
+**有卡**：`HappyHorseImageToVideoApi`、`SaveVideo`、`LoadImage`
+
+**用到的条目**：LoadImage、SaveVideo、HappyHorseImageToVideoApi、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

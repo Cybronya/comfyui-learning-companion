@@ -1,0 +1,40 @@
+# ByteDanceSeedAudio
+
+## 节点类型
+
+`ByteDanceSeedAudio`
+
+## 分类
+
+Audio
+
+## 作用
+
+音频处理节点（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 3 个 workflow 中。
+
+## 输入
+
+- `reference_mode.reference_audio_1:AUDIO`（1 次）
+- `reference_mode.reference_audio_2:AUDIO`（1 次）
+- `reference_mode.reference_audio_3:AUDIO`（1 次）
+- `reference_mode.reference_image:IMAGE`（1 次）
+
+## 输出
+
+- `AUDIO:AUDIO`（3 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `["A quiet coffee shop on a rainy afternoon, soft jazz playing from an old speaker, rain tapping against the window, stea`（1 次）
+- `["Quiet café ambience, soft room tone, faint distant chatter, no background music.\n\nElena (woman in her late twenties,`（1 次）
+- `["[Environment: quiet dreamlike garden at dusk, soft blue light, petals drifting, faint water ripples, goldfish swimming`（1 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)

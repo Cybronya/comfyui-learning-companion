@@ -452,6 +452,17 @@ CLIPTextEncode→ConditioningZeroOut→KSampler 266/181（加速流指纹）、
 UNETLoader→LoraLoaderModelOnly→…→KSampler 的 MODEL 链 715/615/577。
 图谱 4596 顶点 / 54382 边。遗留：feeds_into 尚未接进 agent_core 回答。
 
+**2026-10-07 官方模板入库 + official 标记（+597，全库 2345 条）**：ComfyUI
+官方模板库（pip 包 comfyui-workflow-templates-json v0.1.103，610 个 json）
+提取到 `workflows/comfyui-workflow-templates-json/` 并整批学习：预建卡
+527 张 → 学习 598（12 个 `index.*.json` 多语言目录文件非工作流，被闸门
+正确拦截并清理记录）→ 死键 0 → 图谱 7284 顶点 / 70194 边。官方模板
+平均覆盖率 73%，与社区样本持平。新增 **official 标记**四层贯通：
+`LearningRecord.official`（学习器按路径 `comfyui-workflow-templates-json`
+自动识别）→ frontmatter `official: true` → `WorkflowRecord.official` 入库
+→ 图谱 workflow 顶点 `official` 属性；后续检索/统计可据此加权或过滤，
+实现「官方指导优先」。包本体已卸载（内容已提取）。
+
 **2026-10-07 派生索引失真修复**：发现
 `database/storage/node_index.json` 停留在早期 sd1.5 时代（仅 8 个节点，
 LoraLoaderModelOnly 不在内）——批量学习路径只写主库，从未重建派生索引。

@@ -56,6 +56,7 @@ class WorkflowRepository:
             "patterns": new_patterns,
             "report": workflow.report,
             "content_hash": workflow.content_hash,
+            "official": bool(workflow.official),
         }
 
         nodes = self.db.data["nodes"]

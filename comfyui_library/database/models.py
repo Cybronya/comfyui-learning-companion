@@ -28,6 +28,8 @@ class WorkflowRecord:
     # 文件内容指纹。调度器判断「要不要重学」必需：
     # 只看 status 的话，改了参数永远不算新内容（踩过的坑）
     content_hash: str = ""
+    # 官方指导样本（ComfyUI 官方模板库），检索/统计可据此加权或过滤
+    official: bool = False
 
 
 @dataclass

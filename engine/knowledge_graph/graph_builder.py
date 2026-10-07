@@ -364,6 +364,7 @@ class GraphBuilder:
             workflow_type=getattr(record, "workflow_type", ""),
             status=status,
             source=getattr(record, "source_kind", ""),
+            official=bool(getattr(record, "official", False)),
             coverage=round(
                 getattr(record, "coverage", 0.0) or 0.0, 3
             ),

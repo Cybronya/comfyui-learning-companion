@@ -34,6 +34,8 @@ class LearningRecord:
     status: str = STATUS_COMPLETED
     source_kind: str = "json"
     content_hash: str = ""
+    # 官方指导样本（ComfyUI 官方模板库）。检索/统计时可据此加权或过滤
+    official: bool = False
 
     workflow_type: str = ""
     nodes: List[str] = field(default_factory=list)
@@ -79,6 +81,7 @@ class LearningRecord:
             "status": self.status,
             "source_kind": self.source_kind,
             "content_hash": self.content_hash,
+            "official": self.official,
             "workflow_type": self.workflow_type,
             "nodes": list(self.nodes),
             "patterns": list(self.patterns),
@@ -106,6 +109,7 @@ class LearningRecord:
             status=data.get("status", STATUS_COMPLETED),
             source_kind=data.get("source_kind", "json"),
             content_hash=data.get("content_hash", ""),
+            official=bool(data.get("official", False)),
             workflow_type=data.get("workflow_type", ""),
             nodes=data.get("nodes", []),
             patterns=data.get("patterns", []),

@@ -55,6 +55,7 @@ def workflow_record_of(record: LearningRecord) -> WorkflowRecord:
         patterns=list(record.patterns),
         report=record.report_path,
         content_hash=record.content_hash,
+        official=bool(getattr(record, "official", False)),
     )
 
 
