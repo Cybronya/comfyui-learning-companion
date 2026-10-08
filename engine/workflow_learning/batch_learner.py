@@ -56,7 +56,13 @@ class BatchWorkflowLearner:
                       None 时不接库，行为与旧版一致
         """
         self.learner = learner
+        # 批量模式开启 index 延迟渲染：learn_folder 批内只标脏，
+        # 结束时 flush_index() 统一渲染一次（默认 store 也生效；
+        # 外部传入的 store 会被就地开启，批次结束恢复原状）
         self.store = store or LearningStore()
+        self._store_defer_owned = store is None or not getattr(
+            store, "defer_index", False
+        )
         self.scanner = scanner or WorkflowScanner()
         self.verbose = verbose
         self.database = database
@@ -125,6 +131,12 @@ class BatchWorkflowLearner:
         if self.database is not None:
             self.database.auto_save = False
 
+        # 批量模式下 index 延迟渲染，结束统一 flush（见 __init__ 注释）
+        store = self.store
+        if self._store_defer_owned and hasattr(store, "defer_index"):
+            prev_defer = store.defer_index
+            store.defer_index = True
+
         try:
             for item in files:
                 key = item["key"]
@@ -164,6 +176,10 @@ class BatchWorkflowLearner:
             if self.database is not None:
                 self.database.save()
                 self.database.auto_save = True
+            # index.md 批内只标脏，批次结束统一渲染一次
+            if self._store_defer_owned and hasattr(store, "defer_index"):
+                store.defer_index = prev_defer
+            store.flush_index()
 
         # 清理已删除文件的记录
         pruned = []

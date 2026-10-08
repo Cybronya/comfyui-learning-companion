@@ -27,11 +27,16 @@ from .config import DEFAULT_CONFIG, merge_config, stages_of
 # 否则会把下游算出的真实分类挡掉。
 _UNKNOWN_TOKENS = {"unknown", "none", "null", "n/a", "-"}
 
+# 回答末尾最多附几条跨条目图谱事实（太多会淹没正文）
+GRAPH_FACTS_LIMIT_DEFAULT = 6
+
 
 class ComfyUIAgent:
     """
     ComfyUI 学习助手总控
     """
+
+    GRAPH_FACTS_LIMIT = GRAPH_FACTS_LIMIT_DEFAULT
 
     def __init__(
         self,
@@ -119,12 +124,7 @@ class ComfyUIAgent:
 
         if self.retriever is None:
             self.retriever = KnowledgeRetriever()
-            self.retriever.build_index(
-                index_path=self.config["retrieval_index_path"],
-                knowledge_dir=self.config["knowledge_dir"],
-                experience_store=self.config["experience_store"],
-                evolution_store=self.config["evolution_store"],
-            )
+            self._ensure_retrieval_index()
 
         if self.generator is None:
             self.generator = ResponseGenerator()
@@ -146,12 +146,40 @@ class ComfyUIAgent:
                 from ..knowledge_graph import GraphQuery
                 self.graph_query = GraphQuery(graph)
 
+    def _ensure_retrieval_index(self) -> None:
+        """
+        按 config["retrieval_rebuild"] 策略保证检索索引可用
+
+        - if_missing（默认）：索引文件存在且非空就复用（毫秒级加载），
+          否则全量重建一次 —— 知识库 2300+ 张卡时重建并不便宜，
+          每次 create_agent() 都白建一遍是纯浪费
+        - always：每次构造都全量重建（知识库刚变更时用）
+        - never：只读不建（索引缺失时保持空索引，检索静默无结果）
+        """
+        mode = self.config.get("retrieval_rebuild", "if_missing")
+        index_path = self.config["retrieval_index_path"]
+
+        if mode == "never":
+            return
+
+        if mode == "if_missing":
+            existing = self.retriever.base.index
+            if existing:
+                return  # KnowledgeIndex 构造时已从磁盘加载，非空即复用
+
+        self.retriever.build_index(
+            index_path=index_path,
+            knowledge_dir=self.config["knowledge_dir"],
+            experience_store=self.config["experience_store"],
+            evolution_store=self.config["evolution_store"],
+        )
+
     # ---------- 主入口 ----------
 
     def ask_text(
         self,
         question: str,
-        workflow_path: str = None,
+        workflow_json=None,
         limit: int = None
     ) -> str:
         """
@@ -159,13 +187,13 @@ class ComfyUIAgent:
 
         Args:
             question: 用户问题
-            workflow_path: workflow json 路径（可省略，用已登记的）
+            workflow_json: workflow dict 或文件路径（可省略，用已登记的）
             limit: 知识条数上限
 
         Returns:
             Markdown 中文回答
         """
-        state = self.ask(question, workflow_path, limit=limit)
+        state = self.ask(question, workflow_json, limit=limit)
 
         if state.answer:
             return state.answer
@@ -431,6 +459,10 @@ class ComfyUIAgent:
         facts: List[str] = []
         seen = set()
 
+        def facts_full() -> bool:
+            """事实条数达到上限（回答里附太多图谱事实会淹没正文）"""
+            return len(facts) >= self.GRAPH_FACTS_LIMIT
+
         # ① 技法概念命中（SelfLift / 双采 / 去油…）——概念不是节点，
         #    走 has_topic 反查全部相关工作流 + 标志性节点
         for node in q.graph.nodes_of_type("concept"):
@@ -448,10 +480,8 @@ class ComfyUIAgent:
                             f"知识图谱：「{node.name}」的标志性节点："
                             + "、".join(f"`{n}`" for n in sig)
                         )
-                if len(facts) >= 6:
-                    state.graph_facts = facts
-                    state.add_stage("graph")
-                    return
+                if facts_full():
+                    break
 
         # ② 候选节点：优先用本次解析出的 workflow 节点；
         #    纯文字提问时在图内节点名里找问题文本的命中。
@@ -500,7 +530,7 @@ class ComfyUIAgent:
 
             # 有向数据流：它从哪拿数据、喂给谁（宏观聚合，带数据类型）
             for direction, label in (("in", "通常从"), ("out", "通常喂给")):
-                flows = self.graph_query.flows_of(name, direction)[:2]
+                flows = q.flows_of(name, direction)[:2]
                 if flows:
                     text = "；".join(
                         f"`{f['to'] if direction == 'out' else f['from']}`"
@@ -511,7 +541,7 @@ class ComfyUIAgent:
                         f"知识图谱：`{name}` {label} {text}"
                     )
 
-            if len(facts) >= 6:
+            if facts_full():
                 break
 
         state.graph_facts = facts

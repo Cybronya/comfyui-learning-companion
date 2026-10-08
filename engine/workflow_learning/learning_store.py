@@ -49,7 +49,8 @@ class LearningStore:
         self,
         root: str = None,
         use_hash: bool = True,
-        write_index: bool = True
+        write_index: bool = True,
+        defer_index: bool = False
     ) -> None:
         """
         初始化存储
@@ -60,6 +61,11 @@ class LearningStore:
             use_hash: 是否用内容指纹判断是否需要重学。
                       关闭后只按「文件是否存在」判断
             write_index: 写入时是否同步更新 index.md 汇总表
+            defer_index: 批量模式——write/remove 只标脏不渲染 index，
+                        由 flush_index() 统一落盘。单条写场景保持
+                        False（写完 index.md 立即可见）；批量学习器
+                        learn_folder 4000+ 条时逐条同步渲染是 O(n²)，
+                        会多花 20 分钟，必须开
         """
         if root is None:
             root = STATE_DIR
@@ -67,12 +73,17 @@ class LearningStore:
         self.root = Path(root)
         self.use_hash = use_hash
         self.write_index = write_index
+        self.defer_index = defer_index
 
         # 记录缓存（key -> record），惰性构建。库过千条后，
         # write() 每次为渲染 index.md 全量重读所有 Markdown
         # （单次写 7s+），这是批量学习变慢的主因之一。
         # 进程内一旦读过就信任缓存；write/prune 会同步维护。
         self._cache = None
+
+        # index.md 脏标记：write/remove 只标脏不立即渲染，
+        # flush_index() 统一落盘（见 write 的注释）
+        self._index_dirty = False
 
     # ---------- 读写单条 ----------
 
@@ -182,8 +193,14 @@ class LearningStore:
             if self._cache is not None:
                 self._cache[record.key] = record
 
+            # index 渲染策略：defer_index（批量模式）只标脏，
+            # flush_index() 统一渲染一次——render_index 是全量操作，
+            # 逐条同步渲染是 O(n²)。单条写模式保持旧语义，写完即可见
             if self.write_index:
-                self._update_index()
+                if self.defer_index:
+                    self._index_dirty = True
+                else:
+                    self._update_index()
 
             return str(path)
         except Exception as e:
@@ -217,7 +234,10 @@ class LearningStore:
                 parent = parent.parent
 
             if self.write_index:
-                self._update_index()
+                if self.defer_index:
+                    self._index_dirty = True
+                else:
+                    self._update_index()
 
             return True
 
@@ -483,8 +503,19 @@ class LearningStore:
                 else self.root / INDEX_PATH.name
 
             path.write_text(self.render_index(), encoding="utf-8")
+            self._index_dirty = False
         except Exception as e:
             print(f"写 index.md 失败: {e}")
+
+    def flush_index(self) -> None:
+        """
+        把待渲染的 index.md 落盘（仅在有未落盘的写入时真正渲染）
+
+        批量学习在批次结束时调用一次；单条 write 后想要索引立即可见
+        也可以调用。渲染是全量操作，绝不逐条调用
+        """
+        if self.write_index and self._index_dirty:
+            self._update_index()
 
     def render_record(self, record: LearningRecord) -> str:
         """

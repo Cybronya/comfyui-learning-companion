@@ -16,6 +16,13 @@ class NodeKnowledgeLoader:
 
         self.index = {}
 
+        # 知识卡正文缓存（node_type -> markdown）。
+        # load_markdown 每次都 exists()+open()+read()，批量学习时
+        # 同一节点类型会被反复加载（4000 个 workflow、每种节点
+        # 平均出现几十次 → 数万次重复读盘）。卡片文件运行期不变，
+        # 读一次缓存即可
+        self._markdown_cache = {}
+
         self.load_index()
 
 
@@ -62,6 +69,10 @@ class NodeKnowledgeLoader:
     ):
 
 
+        if node_type in self._markdown_cache:
+            return self._markdown_cache[node_type]
+
+
         node_info = (
             self.get_node_info(
                 node_type
@@ -70,6 +81,7 @@ class NodeKnowledgeLoader:
 
 
         if not node_info:
+            self._markdown_cache[node_type] = None
             return None
 
 
@@ -92,6 +104,8 @@ class NodeKnowledgeLoader:
 
         if not file_path.exists():
 
+            self._markdown_cache[node_type] = None
+
             return None
 
 
@@ -102,7 +116,11 @@ class NodeKnowledgeLoader:
             encoding="utf-8"
         ) as f:
 
-            return f.read()
+            content = f.read()
+
+        self._markdown_cache[node_type] = content
+
+        return content
 
 
 

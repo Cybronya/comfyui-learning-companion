@@ -60,49 +60,82 @@ class WorkflowScanner:
         """
         扫描目录
 
+        用 os.walk 而非 rglob：workflows/ 下有约一半文件是 learning/
+        里的学习记录（4000+ 个 .md），rglob 无法目录级剪枝，会把它们
+        全部 stat 一遍再逐个丢弃 —— 千级文件时扫描就要 8 秒+，
+        而剪枝后只碰真正的 workflow 文件。
+
         Args:
             folder: 目录路径
 
         Returns:
-            [{"name", "path", "key", "kind", "size"}]
-            key 是相对路径（用 / 分隔，跨平台一致）
+            [{"name", "path", "rel_path", "key", "kind"}]
+            key 是相对路径（用 / 分隔，跨平台一致）。
+            不再带 size 字段：无消费方，而逐文件 stat 在 4000+ 个
+            文件时是扫描剩余耗时的全部（约 1 秒）；需要大小时对
+            单个 path 调 os.stat 即可
         """
+        import os
+
         root = Path(folder)
         if not root.exists():
             return []
 
+        # rel_path 预解析：resolve()/relative_to() 每次都含系统调用与
+        # pathlib 开销，3946 个文件要 2 秒+；扫描根只 resolve 一次，
+        # 之后用前缀字符串切割（纯内存运算，0.04s）。
+        # 根不在仓库内（如临时目录测试）时退回逐个 relative_to_project
+        root_resolved = root.resolve()
+        try:
+            from .paths import PROJECT_ROOT
+            project_root_str = str(PROJECT_ROOT)
+        except ImportError:
+            project_root_str = None
+
+        def _rel_path(file_str: str) -> str:
+            if project_root_str:
+                s = file_str
+                if s.startswith(project_root_str):
+                    return s[len(project_root_str) + 1:].replace("\\", "/")
+            return relative_to_project(file_str)
+
         workflows = []
 
-        for file in sorted(root.rglob("*")):
-            if not file.is_file():
-                continue
+        for dirpath, dirnames, filenames in os.walk(root_resolved):
+            # 状态目录（learning/）整枝剪掉：里面是学习记录不是 workflow，
+            # 不能拿去"学习"——否则每次批量学习都会把自己的记录当成
+            # 新 workflow，产出 report 再写进记录，无限循环
+            dirnames[:] = [
+                d for d in dirnames if d not in SKIPPED_DIR_NAMES
+            ]
 
-            # 跳过状态目录（learning/）：里面放的是 registry.json /
-            # experience.json / reports，不是 workflow，不能拿去"学习"。
-            # 否则每次跑批量学习都会把自己的学习记录当成新 workflow，
-            # 产出 report、coverage 100%、然后把自己写进 registry，无限循环。
-            if self._in_state_dir(file, root):
-                continue
+            for name in sorted(filenames):
+                file = Path(dirpath) / name
+                # 后缀与伴生判断只用文件名，不必先构造完整 Path 链
+                dot = name.rfind(".")
+                suffix = name[dot:].lower() if dot >= 0 else ""
+                if suffix not in self.extensions:
+                    continue
 
-            suffix = file.suffix.lower()
-            if suffix not in self.extensions:
-                continue
+                if not self.include_sidecars and self._is_sidecar(file):
+                    continue
 
-            if not self.include_sidecars and self._is_sidecar(file):
-                continue
+                s = str(file)
+                # key/rel_path 都是前缀切割（见 _rel_path 注释）
+                rel_to_root = s[len(str(root_resolved)) + 1:].replace(
+                    "\\", "/"
+                )
 
-            relative = file.relative_to(root).as_posix()
+                workflows.append({
+                    "name": file.stem,
+                    # 存绝对路径供立即读取，但一并给相对路径便于持久化
+                    "path": s,
+                    "rel_path": _rel_path(s),
+                    "key": rel_to_root,
+                    "kind": SOURCE_KIND.get(suffix, suffix.lstrip(".")),
+                })
 
-            workflows.append({
-                "name": file.stem,
-                # 存绝对路径供立即读取，但一并给相对路径便于持久化
-                "path": str(file),
-                "rel_path": relative_to_project(file),
-                "key": relative,
-                "kind": SOURCE_KIND.get(suffix, suffix.lstrip(".")),
-                "size": file.stat().st_size,
-            })
-
+        workflows.sort(key=lambda w: w["key"])
         return workflows
 
     @staticmethod
@@ -113,29 +146,6 @@ class WorkflowScanner:
         if file.stem.startswith(SIDECAR_PREFIX):
             return True
         return file.stem.lower() in SIDECAR_NAMES
-
-    @staticmethod
-    def _in_state_dir(file: Path, root: Path) -> bool:
-        """
-        判断文件是否位于状态目录内
-
-        Args:
-            file: 待判断文件
-            root: 扫描根目录
-
-        Returns:
-            是否在状态目录内
-        """
-        try:
-            relative = file.relative_to(root)
-        except ValueError:
-            return False
-
-        # 目录层级里任一段命中 learning 即视为状态文件
-        return any(
-            part in SKIPPED_DIR_NAMES
-            for part in relative.parts[:-1]
-        )
 
 
 # ============================================================

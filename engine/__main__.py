@@ -13,6 +13,7 @@ python -m engine — ComfyUI Learning Companion 命令行入口
 
 import argparse
 import sys
+from pathlib import Path
 
 from . import create_agent
 
@@ -56,9 +57,28 @@ def main(argv=None) -> int:
     args = parser.parse_args(argv)
 
     if args.command == "ask":
+        # 提前校验路径：load_workflow 的 FileNotFoundError 会被
+        # ask() 捕获记入 state.errors，回答照常生成 —— 不在这里拦，
+        # 用户拿到的会是一份「没检查出问题」的正常回答，
+        # 根本不知道自己传的路径是错的（静默降级比报错更伤信任）
+        if args.workflow and not Path(args.workflow).exists():
+            print(
+                f"错误：workflow 文件不存在: {args.workflow}",
+                file=sys.stderr,
+            )
+            return 2
+
         config = {"enable_graph": False} if args.no_graph else None
         agent = create_agent(config=config)
-        print(agent.ask_text(args.question, args.workflow, limit=args.limit))
+        answer = agent.ask_text(args.question, args.workflow, limit=args.limit)
+
+        # 兜底：回答本身是错误汇总（如路径在校验后到读取前被删）
+        # 时走 stderr 并非零退出，不冒充正常回答
+        if args.workflow and answer.startswith("处理过程中出现问题"):
+            print(answer, file=sys.stderr)
+            return 2
+
+        print(answer)
         return 0
 
     return 1

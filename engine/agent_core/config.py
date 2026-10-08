@@ -24,8 +24,8 @@ DEFAULT_CONFIG: Dict[str, Any] = {
     # 检索
     "retrieval_limit": 0,          # 0 = 不限
     "retrieval_index_path": "engine/retrieval/retrieval_store.json",
-    "retrieval_auto_build": False,  # 索引为空时是否自动从知识库重建
-    "auto_build_index_if_empty": False,
+    "retrieval_rebuild": "if_missing",  # if_missing=索引存在且非空就复用；
+                                        # always=每次全量重建；never=只读不建
 
     # 知识图谱（跨条目查询：哪些流程用了 X / 节点常与谁共现）
     "enable_graph": True,
