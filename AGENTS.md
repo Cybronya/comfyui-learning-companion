@@ -412,6 +412,25 @@ agent_core/ComfyUIAgent.ask()
 
 ### 9.2 进行中
 
+**2026-10-08 对外统一入口 + CLI（待办 1 完成）**：
+- `engine/__init__.py` 从只导出遗留 `LearningEngine` 改为导出完整能力集：
+  `ComfyUIAgent` / `create_agent` / `AgentState` / `DEFAULT_CONFIG` /
+  `AutonomousLearner` / `create_batch_learner` / `create_scheduler` /
+  `create_consolidation_engine` / `build_graph`（`LearningEngine` 保留兼容）
+- 新增 `engine/__main__.py` CLI：`python -m engine ask "问题" --workflow xx.json
+  [--limit N] [--no-graph]`，进程内重配 stdout UTF-8 防 GBK 乱码；
+  真实 workflow 端到端实测通过（五段式回答 + 跨条目图谱事实）
+- `test_autonomous_learning` B2 过时断言修复：知识库扩到 1700+ 张卡后
+  WanVideoSampler / WanVideoDecode / VHS_VideoCombine 等已建卡，
+  原「未知工作流」全部 100% 覆盖致断言失效；`build_real_learner` 加可选
+  `knowledge_dir`，B2 改用受控临时知识库（仅 KSampler + VAE 两张卡），
+  测缺口发现行为而不测当前库存，对知识库扩张免疫
+- 18 个测试全部 exit=0。⚠️ 新坑记录：`test_workflow_learning` D5 对真实库做
+  备份→清空→全量重学（现 3946 个文件）→还原，库变大后单轮约 20 分钟，
+  **跑它需给足超时；中途强杀会留下半还原脏库**（本次踩坑一次，
+  git checkout comfyui_library/ 还原修复，另注意测试副产物
+  context_store / experience_store 也要一并还原）
+
 **2026-10-08 下载收件箱全量对账（清零，无未学工作流）**：
 `download/` 收件箱（workflows-by-tag 3205 + workflows-json 151 + 根目录 H3 12）
 与库内全量指纹对账：3352 个一致＝已学过，**真正未学习 0 个**。
@@ -869,9 +888,9 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
 
 ### 9.3 待办（按优先级）
 
-1. **对外暴露统一入口**：`engine/__init__.py` 只导出 `LearningEngine`（一个 2026-10-04 的
-   最小闭环类），十四个子包的能力完全没对外暴露。应改为导出 `ComfyUIAgent` + `create_agent()`，
-   并加 CLI（`python -m engine ask "问题" --workflow xx.json`）
+1. ~~**对外暴露统一入口**~~ **✅ 2026-10-08 完成**：`engine/__init__.py` 已导出完整能力集
+   （`ComfyUIAgent` / `create_agent()` 等），CLI `python -m engine ask` 已可用（见 9.2）。
+   后续可选扩展：CLI 增加 learn / graph 等子命令
 2. **workflow 自动喂给演化**：`learning_loop` 的原始经验不含节点清单，
    `knowledge_evolution` 只能靠 `register_nodes()` 人工补。agent_core 已有解析结果，
    应在 `ask()` 里把节点清单回写，让 evolve() 能自动工作（现在需人工构造）

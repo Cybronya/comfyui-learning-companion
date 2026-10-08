@@ -108,7 +108,7 @@ AI 负责：
 | v0.2 | Workflow Understanding | Completed |
 | v0.3 | Pattern Learning Design | Completed |
 | v0.4 | Architecture Standardization | Completed |
-| v0.5 | Workflow Analysis Engine | Current（引擎七模块已落地，入口串联与 CLI 待做）|
+| v0.5 | Workflow Analysis Engine | Current（引擎 14 个子包全部落地，agent_core 六阶段端到端跑通，对外入口与 CLI 已完成 2026-10-08）|
 | v0.6 | Pattern Learning Engine | Planned |
 | v0.7 | Knowledge Retrieval System | Planned |
 | v0.8 | Experiment Memory System | Planned（对应 `engine/learning_loop/`，已有雏形）|

@@ -339,8 +339,13 @@ def test_report_rendering():
 # B. 真实模块端到端
 # ============================================================
 
-def build_real_learner(tmpdir, index=None):
-    """用真实模块装配学习器"""
+def build_real_learner(tmpdir, index=None, knowledge_dir=None):
+    """用真实模块装配学习器
+
+    knowledge_dir: 知识库目录；缺省用真实库。需要「受控知识环境」的
+    测试（如缺口发现）传入临时目录，避免被真实库存扩张影响——
+    B2 曾因 Wan 系节点后来建了卡，「未知工作流」不再未知而失效。
+    """
     from engine.workflow_parser import WorkflowParser, NodeKnowledgeLoader
     from engine.workflow_analyzer import WorkflowAnalyzer
     from engine.diagnostics import DiagnosticEngine
@@ -348,12 +353,14 @@ def build_real_learner(tmpdir, index=None):
     from engine.knowledge_evolution import evolve
 
     project = Path(__file__).parent.parent
+    if knowledge_dir is None:
+        knowledge_dir = str(project / "comfyui_library" / "knowledge")
 
     retriever = KnowledgeRetriever()
     index_path = str(Path(tmpdir) / "index.json")
     retriever.build_index(
         index_path=index_path,
-        knowledge_dir=str(project / "comfyui_library" / "knowledge"),
+        knowledge_dir=knowledge_dir,
         experience_store=str(
             project / "engine" / "learning_loop" / "experience_store.json"
         ),
@@ -363,7 +370,7 @@ def build_real_learner(tmpdir, index=None):
     )
 
     parser = WorkflowParser(
-        NodeKnowledgeLoader(str(project / "comfyui_library" / "knowledge"))
+        NodeKnowledgeLoader(knowledge_dir)
     )
 
     return AutonomousLearner(
@@ -460,7 +467,45 @@ def test_learn_unknown_workflow():
     }
 
     with TemporaryDirectory() as tmp:
-        learner = build_real_learner(tmp)
+        # 受控知识库：只有 KSampler 与 VAE 两张卡。B2 考察的是「缺口发现
+        # 行为」（别名感知 / 两档缺口 / 等级封顶），知识源必须与真实库存
+        # 解耦——真实库扩到 1700+ 张卡后，当初的「未知节点」已全部建卡，
+        # 用真实库会让本测试永远 100% 覆盖而失效。
+        kdir = Path(tmp) / "knowledge"
+        (kdir / "nodes").mkdir(parents=True)
+        (kdir / "nodes" / "ksampler.md").write_text(
+            "# KSampler\n\n采样器节点：steps 控制去噪次数，cfg 控制\n"
+            "Prompt 控制强度，sampler/scheduler 决定采样算法。\n",
+            encoding="utf-8",
+        )
+        (kdir / "nodes" / "vae.md").write_text(
+            "# VAE\n\n负责 Latent 和 Image 之间的转换（解码与编码）。\n",
+            encoding="utf-8",
+        )
+        (kdir / "node_index.json").write_text(
+            json.dumps({
+                "version": "1.2",
+                "nodes": {
+                    "KSampler": {
+                        "knowledge_file": "ksampler.md",
+                        "category": "Sampling",
+                        "role": "sampler",
+                        "difficulty": "intermediate",
+                        "learning_topics": ["sampler", "cfg", "steps"],
+                    },
+                    "VAE": {
+                        "knowledge_file": "vae.md",
+                        "category": "Decode",
+                        "role": "decoder",
+                        "difficulty": "beginner",
+                        "learning_topics": ["vae", "decode"],
+                    },
+                },
+            }, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
+        learner = build_real_learner(tmp, knowledge_dir=str(kdir))
         state = learner.learn(
             task="学习这个Wan视频生成Workflow，理解如何生成高质量视频",
             workflow=exotic,
