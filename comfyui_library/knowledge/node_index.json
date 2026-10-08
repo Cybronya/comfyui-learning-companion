@@ -18891,6 +18891,158 @@
       "difficulty": "unknown",
       "learning_topics": [],
       "auto_drafted": true
+    },
+    "Batch Merge (mtb)": {
+      "knowledge_file": "batch_merge_mtb.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "GridLoras": {
+      "knowledge_file": "gridloras.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Image Paste Crop": {
+      "knowledge_file": "image_paste_crop.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "IndexTTS2Run": {
+      "knowledge_file": "indextts2run.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "JWStringToInteger": {
+      "knowledge_file": "jwstringtointeger.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "LayerUtility: DeepSeekAPI": {
+      "knowledge_file": "layerutility_deepseekapi.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MelBandRoFormerModelLoader": {
+      "knowledge_file": "melbandroformermodelloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "MelBandRoFormerSampler": {
+      "knowledge_file": "melbandroformersampler.md",
+      "category": "Sampling",
+      "role": "采样类节点：执行扩散去噪",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "PromptTemplateSelector": {
+      "knowledge_file": "prompttemplateselector.md",
+      "category": "Prompt",
+      "role": "提示词处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "RH_BatchImages": {
+      "knowledge_file": "rh_batchimages.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImageEditPlus_lrzjason": {
+      "knowledge_file": "textencodeqwenimageeditplus_lrzjason.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TextEncodeQwenImageEdit_lrzjason": {
+      "knowledge_file": "textencodeqwenimageedit_lrzjason.md",
+      "category": "Encoding",
+      "role": "编码类节点：把数据编码为另一表示",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "TutengGeminiAPI": {
+      "knowledge_file": "tutenggeminiapi.md",
+      "category": "Other",
+      "role": "作用未知，需人工补充",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "UnloadModel": {
+      "knowledge_file": "unloadmodel.md",
+      "category": "Input",
+      "role": "输入类节点：读入外部数据",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WanVideoLoraSelectMulti": {
+      "knowledge_file": "wanvideoloraselectmulti.md",
+      "category": "Video",
+      "role": "视频处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "WanVideoScheduler": {
+      "knowledge_file": "wanvideoscheduler.md",
+      "category": "Sampling",
+      "role": "调度器：控制去噪步长序列",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "Wav2VecModelLoader": {
+      "knowledge_file": "wav2vecmodelloader.md",
+      "category": "Model Loading",
+      "role": "加载类节点：把磁盘上的资源装入图中",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "ZML_TextInput": {
+      "knowledge_file": "zml_textinput.md",
+      "category": "Utility",
+      "role": "文本工具节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
+    },
+    "image resize": {
+      "knowledge_file": "image_resize_393.md",
+      "category": "Image Processing",
+      "role": "图像处理节点",
+      "difficulty": "unknown",
+      "learning_topics": [],
+      "auto_drafted": true
     }
   }
 }

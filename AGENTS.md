@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-08
+- 最后更新：2026-10-09
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -411,6 +411,30 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-09 批量学习性能修复 + 文生图第二十二批（+100，全库 4047 条）**：
+
+性能修复（D5 测试 25 分钟超时的根因，三层全部消除）：
+- **index.md 逐条全量重渲染（主因，O(n²)）**：`LearningStore.write` 每写一条
+  就全量 `render_index()`（4000 条时单次 1s+），learn_folder 全程约 20 分钟。
+  修复：新增 `defer_index` 批量模式——批内 write/remove 只标脏，
+  批次结束 `flush_index()` 统一渲染一次；单条写场景保持旧语义（写完即可见）
+- **扫描器 rglob 全量 stat**：扫描把 learning/ 下 3948 个记录 .md 也逐个
+  stat 后丢弃，且 `relative_to_project()` 逐文件 resolve —— 8.4s。
+  修复：`os.walk` 目录级剪枝 + 前缀字符串切割 + 删掉无消费方的 size 字段
+  —— **8.4s → 0.17s**
+- **知识卡无缓存**：`NodeKnowledgeLoader.load_markdown` 每次都 exists+open+read，
+  全轮约 6 万次重复读盘。修复：按 node_type 缓存卡片正文（运行期不变）
+- 效果：`test_workflow_learning` 全量 D5 从 25 分钟+降到 **约 70s 可完整跑完**
+  （全程 18 个测试 exit=0）；全库 learn_folder 实测 69s。⚠️ D5 仍需
+  run_in_background 方式跑，300s 前台超时强杀会留脏库
+
+文生图第二十二批（+100，learn_pipeline 分步执行）：
+- RECOMMEND 流续收（NEWEST 已榨干：403 页仅 43 个新 ID）→ 下载 100/100
+  零失败（64.7s）→ 指纹去重入库 100（闸门拦 3202 重复）→ 预建卡 19 张
+  → 学习 100 / 跳过 3946 / 失败 0 / 死键 0 → 图谱 10128 顶点 / 114214 边
+- 知识卡 2355 → **2374 张**。全库 4047 条：平均 76%，深懂（≥80%）1927 个，
+  浅懂 9
 
 **2026-10-08 对外统一入口 + CLI（待办 1 完成）**：
 - `engine/__init__.py` 从只导出遗留 `LearningEngine` 改为导出完整能力集：
