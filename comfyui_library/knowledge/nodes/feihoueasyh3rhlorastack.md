@@ -1,0 +1,37 @@
+# FeiHouEasyH3RHLoraStack
+
+## 节点类型
+
+`FeiHouEasyH3RHLoraStack`
+
+## 分类
+
+Other
+
+## 作用
+
+作用未知，需人工补充（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 3 个 workflow 中。
+
+## 输入
+
+- `optional_lora_stack:FEIHOU_MERGE_LORA_STACK`（5 次）
+
+## 输出
+
+- `lora_stack:FEIHOU_MERGE_LORA_STACK`（5 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `[{}, {"type": "FeiHouEasyH3LoraHeaderWidget"}, {"lora": "minimax_h3_fl2v_turbo_4step_v1.2_768p_comfyui_bf16.safetensors"`（2 次）
+- `[{}, {"type": "FeiHouEasyH3LoraHeaderWidget"}, {"lora": "minimax_h3_lms_v1.0_r64.safetensors", "bypass": true, "strength`（2 次）
+- `[{}, {"type": "FeiHouEasyH3LoraHeaderWidget"}, {"lora": "minimax_h3_fl2v_turbo_4step_v1.2_768p_comfyui_bf16.safetensors"`（1 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)

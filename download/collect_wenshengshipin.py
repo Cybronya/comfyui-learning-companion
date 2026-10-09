@@ -29,18 +29,18 @@ HEADERS = {
 }
 PAGE_SIZE = 30
 
-# 旧 ID 文件（用于比对重复）
+# 旧 ID 文件（用于跨分类去重，不包含本分类自身）
 OLD_ID_FILES = [
-    Path(r"F:\Program Files\ComfyUI\download\minimax-h3-workflow-ids.txt"),
-    Path(r"F:\Program Files\ComfyUI\download\minimax-h3-workflow-ids-02.txt"),
-    Path(r"F:\Program Files\ComfyUI\download\minimax-h3-workflow-ids-03.txt"),
     Path(r"F:\Program Files\ComfyUI\download\ids-by-tag\图片生成\文生图_ids.txt"),
     Path(r"F:\Program Files\ComfyUI\download\ids-by-tag\图片生成\图生图_ids.txt"),
     Path(r"F:\Program Files\ComfyUI\download\ids-by-tag\图片生成\反推提示词_ids.txt"),
+    Path(r"F:\Program Files\ComfyUI\download\minimax-h3-workflow-ids.txt"),
+    Path(r"F:\Program Files\ComfyUI\download\minimax-h3-workflow-ids-02.txt"),
+    Path(r"F:\Program Files\ComfyUI\download\minimax-h3-workflow-ids-03.txt"),
 ]
 
-# 输出文件（独立的，不混合）
-OUT_FILE = Path(r"F:\Program Files\ComfyUI\download\视频生成_文生视频_ids.txt")
+# 输出文件（同时是输入：读已有 ID 去重，写合并后的完整集合）
+OUT_FILE = Path(r"F:\Program Files\ComfyUI\download\ids-by-tag\视频生成\文生视频_ids.txt")
 
 
 def api_post(body: dict) -> dict:
@@ -145,6 +145,18 @@ def load_old_ids() -> set[str]:
     return old_ids
 
 
+def load_existing_ids() -> set[str]:
+    """读取本分类已有 ID（OUT_FILE 自身），用于去重。"""
+    existing: set[str] = set()
+    if OUT_FILE.exists():
+        ids = [line.strip() for line in OUT_FILE.read_text(encoding="utf-8").splitlines() if line.strip()]
+        existing.update(ids)
+        print(f"  {OUT_FILE.name} 已有: {len(ids)} 个 ID")
+    else:
+        print(f"  {OUT_FILE.name} 不存在，首次收集")
+    return existing
+
+
 def main() -> int:
     # 1. 找标签
     tag_id = find_wenshengshipin_tag_id(max_pages=5)
@@ -152,28 +164,36 @@ def main() -> int:
         print("未找到「文生视频」分类 tag_id，无法继续。")
         return 1
 
-    # 2. 收集 ID
-    new_ids, names = collect_by_tag_id(tag_id, target=100, sort="NEWEST")
-    if not new_ids:
+    # 2. 收集 ID（从 API 拉 300 个）
+    collected_ids, names = collect_by_tag_id(tag_id, target=300, sort="NEWEST")
+    if not collected_ids:
         print("未收集到任何 ID。")
         return 1
 
-    print(f"\n收集到 {len(new_ids)} 个新 ID")
+    print(f"\nAPI 收集到 {len(collected_ids)} 个 ID")
 
-    # 3. 输出到独立文件
+    # 3. 去重：减去本分类已有 ID
+    print("\n=== 去重 ===")
+    existing_ids = load_existing_ids()
+    collected_set = set(collected_ids)
+    new_ids = [wid for wid in collected_ids if wid not in existing_ids]
+    print(f"  API 收集: {len(collected_ids)}  已有: {len(existing_ids)}  新增: {len(new_ids)}")
+
+    # 4. 写回合并后的完整集合（已有 + 新增）
+    combined = list(existing_ids) + new_ids
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUT_FILE.write_text("\n".join(new_ids) + "\n", encoding="utf-8")
-    print(f"ID 已写入: {OUT_FILE.resolve()}")
+    OUT_FILE.write_text("\n".join(combined) + "\n", encoding="utf-8")
+    print(f"合并后共 {len(combined)} 个 ID，已写入: {OUT_FILE.resolve()}")
 
-    # 4. 比对重复
-    print("\n=== 第 3 步：比对旧 ID 重复 ===")
+    # 5. 比对跨分类重复
+    print("\n=== 跨分类去重 ===")
     old_ids = load_old_ids()
     new_set = set(new_ids)
     duplicates = sorted(new_set & old_ids)
     unique_new = sorted(new_set - old_ids)
 
-    print(f"\n新 ID 总数: {len(new_ids)}")
-    print(f"与旧 ID 重复: {len(duplicates)} 个")
+    print(f"\n新增 ID: {len(new_ids)}")
+    print(f"与跨分类重复: {len(duplicates)} 个")
     print(f"真正新增: {len(unique_new)} 个")
 
     if duplicates:
