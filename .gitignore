@@ -23,3 +23,7 @@ engine/retrieval/retrieval_store.json
 engine/knowledge_graph/knowledge_graph.json
 # 学习队列：调度器状态快照，随时可重建
 engine/learning_scheduler/learning_queue.md
+# 数据库与派生索引（2026-10-09 退出跟踪）：workflow_database.json 已 123MB 超
+# GitHub 100MB 单文件限制被拒推；全部可由学习记录重建（sync_database / save_all）
+comfyui_library/database/storage/*.json
+comfyui_library/knowledge/node_index.json
