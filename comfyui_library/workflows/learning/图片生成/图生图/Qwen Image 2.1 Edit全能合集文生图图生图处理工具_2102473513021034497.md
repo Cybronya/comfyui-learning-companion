@@ -1,0 +1,601 @@
+---
+key: 图片生成/图生图/Qwen Image 2.1 Edit全能合集文生图图生图处理工具_2102473513021034497.json
+name: Qwen Image 2.1 Edit全能合集文生图图生图处理工具_2102473513021034497.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 Edit全能合集文生图图生图处理工具_2102473513021034497.json
+hash: b005e816bef70e68
+coverage: 0.334047
+learned_at: 2026-10-09 22:19:27
+nodes: [GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, FluxKontextMultiReferenceLatentMethod, GetNode, FluxKontextMultiReferenceLatentMethod, GetNode, GetNode, FluxKontextMultiReferenceLatentMethod, FluxKontextMultiReferenceLatentMethod, GetNode, GetNode, GetNode, GetNode, SetNode, VAEDecode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, ImageUpscaleWithModel, GetNode, GetNode, GetNode, VAEDecode, GetNode, SetNode, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, ConditioningZeroOut, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, Seed (rgthree), GetNode, SetNode, SetNode, SetNode, GetNode, PlaySound|pysssss, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LayerUtility: ImageReel, GetNode, SetNode, LayerUtility: ImageReelComposit, GetNode, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, easy getNode, easy getNode, easy imageBatchToImageList, easy setNode, easy setNode, easy setNode, easy setNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, PathchSageAttentionKJ, GetNode, ModelPatchTorchSettings, SetNode, ModelPassThrough, SetNode, GetNode, SetNode, GetNode, VAEDecode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, LayerUtility: ImageReel, SetNode, LayerUtility: ImageReelComposit, GetNode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, SetNode, GetNode, VAEDecode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, Image Comparer (rgthree), SetNode, SetNode, GetNode, SetNode, SetNode, GetNode, SetNode, SetNode, LayerUtility: ImageReel, SetNode, LayerUtility: ImageReelComposit, SetNode, SetNode, VAEDecode, SetNode, SetNode, SetNode, SetNode, GetNode, ConditioningZeroOut, GetImageSize, JoinImageWithAlpha, GetNode, FluxKontextImageScale, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy setNode, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, GetNode, SaveImage, LoadImage, SetNode, GetNode, MaskPreview+, GetNode, GetNode, PreviewImage, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SaveImage, GetNode, Image Blank, ImageCompositeMasked, MaskPreview+, SetNode, GetNode, SaveImage, SetNode, GetNode, SetNode, SaveImage, LoadImage, PreviewImage, SetNode, SetNode, SetNode, PreviewImage, SaveImage, SetNode, SetNode, SeedVR2LoadVAEModel, PlaySound|pysssss, SetNode, SetNode, SetNode, GetNode, GetNode, Image Comparer (rgthree), easy imageListToImageBatch, TTP_Image_Tile_Batch, easy setNode, TTP_Image_Assy, easy setNode, easy getNode, Image Comparer (rgthree), SaveImage, LoadImage, easy promptConcat, SetNode, SetNode, GetNode, GetNode, easy showAnything, FluxKontextMultiReferenceLatentMethod, FluxKontextMultiReferenceLatentMethod, GetNode, GetNode, FluxKontextMultiReferenceLatentMethod, FluxKontextMultiReferenceLatentMethod, GetNode, SetNode, LayerUtility: ImageReelComposit, LayerUtility: ImageReel, GetNode, GetNode, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, Image Comparer (rgthree), PreviewImage, PlaySound|pysssss, ImageStitch, PreviewImage, SeedVR2LoadDiTModel, SeedVR2LoadDiTModel, KSampler, KSampler, PreviewImage, SaveImage, KSampler, LoadImage, LoadImage, LoadImage, SeedVR2VideoUpscaler, easy imageSize, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Bookmark (rgthree), LayerUtility: ImageScaleByAspectRatio V2, TTP_Tile_image_size, easy setNode, GetImageSize, SetNode, SetNode, GetNode, GetNode, UpscaleModelLoader, ImageUpscaleWithModel, easy getNode, ImageScaleToTotalPixels, easy setNode, ImageScale, LayerUtility: ImageScaleByAspectRatio V2, ImageScale, easy imageSizeBySide, llama_cpp_unload_model, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, GetNode, EmptyLatentImage, EmptyLatentImage, ResolutionSelector, EmptyLatentImage, ComfySwitchNode, EmptyLatentImage, ComfySwitchNode, EmptyLatentImage, EmptyLatentImage, ComfySwitchNode, EmptyLatentImage, ComfySwitchNode, LayerUtility: TextBox, JoinStringMulti, easy showAnything, ColorMatchV2, easy int, easy int, ComfySwitchNode, easy showAnything, CLIPLoader, VAELoader, ModelPassThrough, ModelPassThrough, GetNode, Light-Tool: RGBA2RGB, VAEDecode, InpaintStitchImproved, UNETLoader, ToBinaryMask, LoadImage, LayerUtility: TextBox, llama_cpp_model_loader, llama_cpp_parameters, QwenImage21Cache, JoinStringMulti, easy showAnything, JoinStringMulti, LayerUtility: TextBox, easy stylesSelector, VOSR2ModelLoader, UNETLoader, VAELoader, VAEEncodeTiled, JoinImageWithAlpha, SeedVR2Preprocess, VAEDecodeTiled, PlaySound|pysssss, SaveImage, Image Comparer (rgthree), Image Comparer (rgthree), VOSR2Upscale, LoadImage, LensBlur, LayerUtility: ImageScaleByAspectRatio V2, UpscaleModelLoader, ImageScaleToTotalPixels, KSampler, easy promptLine, LoadImage, KSampler, ModelSamplingAuraFlow, CFGNorm, ComfySwitchNode, KSampler, SaveImage, LoadImage, TextEncodeQwenImage21, ResolutionSelector, LayerUtility: TextBox, SaveImage, ImagePadForOutpaint, KSampler, InpaintCropImproved, KSampler, LoadImage, PreviewImage, PreviewImage, ResolutionSelector, TextEncodeQwenImage21, TextEncodeQwenImage21, TextEncodeQwenImage21, ResolutionSelector, ResolutionSelector, TextEncodeQwenImage21, TextEncodeQwenImage21, TextEncodeQwenImage21, ComfySwitchNode, ResolutionSelector, easy showAnything, llama_cpp_instruct_adv, easy prompt, ResolutionSelector, easy promptLine, SeedVR2Conditioning, Image Comparer (rgthree), SaveImage, LoadImage, SeedVR2PostProcessing, ResizeImageMaskNode, QwenMultiangleCameraNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), AIO_Preprocessor, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
+patterns: [text_to_image]
+missing: [Bookmark (rgthree), Image Blank, LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextBox, LayerUtility: TextBox, LayerUtility: TextBox, LayerUtility: TextBox, Light-Tool: RGBA2RGB, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy imageBatchToImageList, easy imageListToImageBatch, easy int, easy int, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, MaskPreview+, MaskPreview+, Seed (rgthree), easy imageSize, easy imageSizeBySide, easy prompt, easy promptConcat, easy promptLine, easy promptLine, easy stylesSelector]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `Light-Tool: RGBA2RGB` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy stylesSelector` 仅有 LoRA 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/图生图/Qwen Image 2.1 Edit全能合集文生图图生图处理工具_2102473513021034497.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102473513021034497.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（467 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `GetNode`
+- `FluxKontextMultiReferenceLatentMethod`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ImageUpscaleWithModel`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ConditioningZeroOut`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `Seed (rgthree)`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `PlaySound|pysssss`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LayerUtility: ImageReel`
+- `GetNode`
+- `SetNode`
+- `LayerUtility: ImageReelComposit`
+- `GetNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `easy setNode`
+- `easy setNode`
+- `easy getNode`
+- `easy getNode`
+- `easy imageBatchToImageList`
+- `easy setNode`
+- `easy setNode`
+- `easy setNode`
+- `easy setNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `PathchSageAttentionKJ`
+- `GetNode`
+- `ModelPatchTorchSettings`
+- `SetNode`
+- `ModelPassThrough`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `LayerUtility: ImageReel`
+- `SetNode`
+- `LayerUtility: ImageReelComposit`
+- `GetNode`
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `SetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `Image Comparer (rgthree)`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: ImageReel`
+- `SetNode`
+- `LayerUtility: ImageReelComposit`
+- `SetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetImageSize`
+- `JoinImageWithAlpha`
+- `GetNode`
+- `FluxKontextImageScale`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy setNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `easy setNode`
+- `GetNode`
+- `SaveImage`
+- `LoadImage`
+- `SetNode`
+- `GetNode`
+- `MaskPreview+`
+- `GetNode`
+- `GetNode`
+- `PreviewImage`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SaveImage`
+- `GetNode`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `MaskPreview+`
+- `SetNode`
+- `GetNode`
+- `SaveImage`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SaveImage`
+- `LoadImage`
+- `PreviewImage`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `SaveImage`
+- `SetNode`
+- `SetNode`
+- `SeedVR2LoadVAEModel`
+- `PlaySound|pysssss`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Image Comparer (rgthree)`
+- `easy imageListToImageBatch`
+- `TTP_Image_Tile_Batch`
+- `easy setNode`
+- `TTP_Image_Assy`
+- `easy setNode`
+- `easy getNode`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `LoadImage`
+- `easy promptConcat`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy showAnything`
+- `FluxKontextMultiReferenceLatentMethod`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `GetNode`
+- `FluxKontextMultiReferenceLatentMethod`
+- `FluxKontextMultiReferenceLatentMethod`
+- `GetNode`
+- `SetNode`
+- `LayerUtility: ImageReelComposit`
+- `LayerUtility: ImageReel`
+- `GetNode`
+- `GetNode`
+- `PlaySound|pysssss`
+- `PlaySound|pysssss`
+- `PlaySound|pysssss`
+- `Image Comparer (rgthree)`
+- `PreviewImage`
+- `PlaySound|pysssss`
+- `ImageStitch`
+- `PreviewImage`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadDiTModel`
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `PreviewImage`
+- `SaveImage`
+- `KSampler` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `SeedVR2VideoUpscaler`
+- `easy imageSize`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `Bookmark (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `TTP_Tile_image_size`
+- `easy setNode`
+- `GetImageSize`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `UpscaleModelLoader`
+- `ImageUpscaleWithModel`
+- `easy getNode`
+- `ImageScaleToTotalPixels`
+- `easy setNode`
+- `ImageScale`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageScale`
+- `easy imageSizeBySide`
+- `llama_cpp_unload_model`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `ResolutionSelector`
+- `EmptyLatentImage` ★核心
+- `ComfySwitchNode`
+- `EmptyLatentImage` ★核心
+- `ComfySwitchNode`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `ComfySwitchNode`
+- `EmptyLatentImage` ★核心
+- `ComfySwitchNode`
+- `LayerUtility: TextBox`
+- `JoinStringMulti`
+- `easy showAnything`
+- `ColorMatchV2`
+- `easy int`
+- `easy int`
+- `ComfySwitchNode`
+- `easy showAnything`
+- `CLIPLoader`
+- `VAELoader`
+- `ModelPassThrough`
+- `ModelPassThrough`
+- `GetNode`
+- `Light-Tool: RGBA2RGB`
+- `VAEDecode` ★核心
+- `InpaintStitchImproved`
+- `UNETLoader` ★核心
+- `ToBinaryMask`
+- `LoadImage`
+- `LayerUtility: TextBox`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `QwenImage21Cache`
+- `JoinStringMulti`
+- `easy showAnything`
+- `JoinStringMulti`
+- `LayerUtility: TextBox`
+- `easy stylesSelector`
+- `VOSR2ModelLoader`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAEEncodeTiled` ★核心
+- `JoinImageWithAlpha`
+- `SeedVR2Preprocess`
+- `VAEDecodeTiled` ★核心
+- `PlaySound|pysssss`
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `VOSR2Upscale`
+- `LoadImage`
+- `LensBlur`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UpscaleModelLoader`
+- `ImageScaleToTotalPixels`
+- `KSampler` ★核心
+- `easy promptLine`
+- `LoadImage`
+- `KSampler` ★核心
+- `ModelSamplingAuraFlow`
+- `CFGNorm`
+- `ComfySwitchNode`
+- `KSampler` ★核心
+- `SaveImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `ResolutionSelector`
+- `LayerUtility: TextBox`
+- `SaveImage`
+- `ImagePadForOutpaint`
+- `KSampler` ★核心
+- `InpaintCropImproved`
+- `KSampler` ★核心
+- `LoadImage`
+- `PreviewImage`
+- `PreviewImage`
+- `ResolutionSelector`
+- `TextEncodeQwenImage21`
+- `TextEncodeQwenImage21`
+- `TextEncodeQwenImage21`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `TextEncodeQwenImage21`
+- `TextEncodeQwenImage21`
+- `TextEncodeQwenImage21`
+- `ComfySwitchNode`
+- `ResolutionSelector`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `easy prompt`
+- `ResolutionSelector`
+- `easy promptLine`
+- `SeedVR2Conditioning`
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `LoadImage`
+- `SeedVR2PostProcessing`
+- `ResizeImageMaskNode`
+- `QwenMultiangleCameraNode`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `AIO_Preprocessor`
+- `Fast Groups Bypasser (rgthree)`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `Note`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **33%**（156/467）
+
+**有卡**：`FluxKontextMultiReferenceLatentMethod`、`VAEDecode`、`ImageUpscaleWithModel`、`ConditioningZeroOut`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelPassThrough`、`GetImageSize`、`JoinImageWithAlpha`、`FluxKontextImageScale`、`SaveImage`、`LoadImage`、`ImageCompositeMasked`、`SeedVR2LoadVAEModel`、`TTP_Image_Tile_Batch`、`TTP_Image_Assy`、`ImageStitch`、`SeedVR2LoadDiTModel`、`KSampler`、`SeedVR2VideoUpscaler`、`TTP_Tile_image_size`、`UpscaleModelLoader`、`ImageScaleToTotalPixels`、`ImageScale`、`llama_cpp_unload_model`、`EmptyLatentImage`、`ResolutionSelector`、`JoinStringMulti`、`ColorMatchV2`、`CLIPLoader`、`VAELoader`、`InpaintStitchImproved`、`UNETLoader`、`ToBinaryMask`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`QwenImage21Cache`、`VOSR2ModelLoader`、`VAEEncodeTiled`、`SeedVR2Preprocess`、`VAEDecodeTiled`、`VOSR2Upscale`、`LensBlur`、`ModelSamplingAuraFlow`、`CFGNorm`、`TextEncodeQwenImage21`、`ImagePadForOutpaint`、`InpaintCropImproved`、`llama_cpp_instruct_adv`、`SeedVR2Conditioning`、`SeedVR2PostProcessing`、`ResizeImageMaskNode`、`QwenMultiangleCameraNode`、`AIO_Preprocessor`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+
+**缺卡**（72）：`Bookmark (rgthree)`、`Image Blank`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`Light-Tool: RGBA2RGB`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy imageBatchToImageList`、`easy imageListToImageBatch`、`easy int`、`easy int`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`MaskPreview+`、`MaskPreview+`、`Seed (rgthree)`、`easy imageSize`、`easy imageSizeBySide`、`easy prompt`、`easy promptConcat`、`easy promptLine`、`easy promptLine`、`easy stylesSelector`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `Bookmark (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
+- 次要节点 `Light-Tool: RGBA2RGB` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
+- 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
+- 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明
+- 次要节点 `easy prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `easy stylesSelector` 仅有 LoRA 的通用知识，没有该节点自己的说明
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

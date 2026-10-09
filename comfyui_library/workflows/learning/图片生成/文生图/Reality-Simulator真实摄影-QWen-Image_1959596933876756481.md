@@ -1,0 +1,67 @@
+---
+key: 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+name: Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+hash: d82c87d1de120565
+coverage: 0.764706
+learned_at: 2026-10-07 23:37:50
+nodes: [KSampler, SaveImage, VAELoader, VAEDecode, CLIPLoader, CLIPTextEncode, UNETLoader, CFGNorm, ModelSamplingAuraFlow, LoraLoaderModelOnly, CLIPTextEncode, PrimitiveString, RH_Captioner, Text Concatenate, easy showAnything, LoadImage, CR SDXL Aspect Ratio]
+patterns: []
+missing: [Text Concatenate, CR SDXL Aspect Ratio]
+parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 260801771094525, "steps": 20}
+discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
+---
+
+# 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1959596933876756481.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（17 个）：
+- `KSampler` ★核心
+- `SaveImage`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `CFGNorm`
+- `ModelSamplingAuraFlow`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveString`
+- `RH_Captioner`
+- `Text Concatenate`
+- `easy showAnything`
+- `LoadImage`
+- `CR SDXL Aspect Ratio`
+
+## 关键参数
+
+- `seed` = `260801771094525`
+- `steps` = `20`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **76%**（13/17）
+
+**有卡**：`KSampler`、`SaveImage`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`CFGNorm`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`RH_Captioner`、`LoadImage`
+
+**缺卡**（2）：`Text Concatenate`、`CR SDXL Aspect Ratio`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage
+
+## 学习发现
+
+- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明

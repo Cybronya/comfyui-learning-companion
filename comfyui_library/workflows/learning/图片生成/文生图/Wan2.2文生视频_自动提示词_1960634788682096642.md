@@ -1,0 +1,97 @@
+---
+key: 图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json
+name: Wan2.2文生视频_自动提示词_1960634788682096642.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json
+hash: c40406138b8f495e
+coverage: 0.609756
+learned_at: 2026-10-07 23:38:42
+nodes: [VAEDecode, RH_Translator, VAELoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, Note, Note, Note, Note, CLIPLoader, KSamplerAdvanced, KSamplerAdvanced, PrimitiveBoolean, Note, INTConstant, INTConstant, SimpleMath+, VHS_VideoCombine, EmptyHunyuanLatentVideo, MathExpression|pysssss, MathExpression|pysssss, ShowText|pysssss, DF_Integer, DF_Integer, MathExpression|pysssss, MathExpression|pysssss, DF_Integer, Text Multiline, CR Text Concatenate, CR Text, RH_Prompter, easy ifElse, ShowText|pysssss]
+patterns: []
+missing: [CR Text, CR Text Concatenate, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, SimpleMath+, Text Multiline]
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
+---
+
+# 图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960634788682096642.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（41 个）：
+- `VAEDecode` ★核心
+- `RH_Translator`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `CLIPLoader`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `PrimitiveBoolean`
+- `Note`
+- `INTConstant`
+- `INTConstant`
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `EmptyHunyuanLatentVideo`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `ShowText|pysssss`
+- `DF_Integer`
+- `DF_Integer`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `DF_Integer`
+- `Text Multiline`
+- `CR Text Concatenate`
+- `CR Text`
+- `RH_Prompter`
+- `easy ifElse`
+- `ShowText|pysssss`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **61%**（25/41）
+
+**有卡**：`VAEDecode`、`RH_Translator`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`CLIPLoader`、`KSamplerAdvanced`、`PrimitiveBoolean`、`INTConstant`、`VHS_VideoCombine`、`EmptyHunyuanLatentVideo`、`DF_Integer`、`RH_Prompter`
+
+**缺卡**（8）：`CR Text`、`CR Text Concatenate`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`SimpleMath+`、`Text Multiline`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
+
+## 学习发现
+
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
+- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

@@ -1,0 +1,65 @@
+---
+key: 图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json
+name: ​​Flex.2控制文生图图生图_1920256323848437761.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json
+hash: 2b3f3d000e9daac4
+coverage: 0.888889
+learned_at: 2026-10-07 22:08:11
+nodes: [UNETLoader, VAELoader, PreviewImage, ImageScaleToTotalPixels, Flex2Conditioner, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, AIO_Preprocessor, DualCLIPLoader, LoadImage, LoraLoaderModelOnly, VAEDecode, DeepTranslatorTextNode, LoadImage, PreviewImage, KSampler, SaveImage]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.6000000000000001, "height": 1024, "sampler_name": "deis", "scheduler": "beta", "seed": 842842660137959, "steps": 28, "width": 1024}
+---
+
+# 图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1920256323848437761.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（18 个）：
+- `UNETLoader` ★核心
+- `VAELoader`
+- `PreviewImage`
+- `ImageScaleToTotalPixels`
+- `Flex2Conditioner`
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `AIO_Preprocessor`
+- `DualCLIPLoader`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
+- `DeepTranslatorTextNode`
+- `LoadImage`
+- `PreviewImage`
+- `KSampler` ★核心
+- `SaveImage`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+- `seed` = `842842660137959`
+- `steps` = `28`
+- `cfg` = `1`
+- `sampler_name` = `deis`
+- `scheduler` = `beta`
+- `denoise` = `0.6000000000000001`
+
+## 知识
+
+覆盖率 **89%**（16/18）
+
+**有卡**：`UNETLoader`、`VAELoader`、`ImageScaleToTotalPixels`、`Flex2Conditioner`、`CLIPTextEncode`、`EmptyLatentImage`、`AIO_Preprocessor`、`DualCLIPLoader`、`LoadImage`、`LoraLoaderModelOnly`、`VAEDecode`、`DeepTranslatorTextNode`、`KSampler`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、EmptyLatentImage、LoadImage、UNETLoader

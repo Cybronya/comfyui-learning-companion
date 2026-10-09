@@ -1,0 +1,59 @@
+---
+key: 图片生成/文生图/F.1+纪实摄影_1938572723696099330.json
+name: F.1+纪实摄影_1938572723696099330.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/F.1+纪实摄影_1938572723696099330.json
+hash: 657e28f257a949a4
+coverage: 0.933333
+learned_at: 2026-10-07 22:46:29
+nodes: [RandomNoise, KSamplerSelect, SamplerCustomAdvanced, BasicScheduler, BasicGuider, Note, VAELoader, CLIPTextEncodeFlux, VAEDecode, UNETLoader, DualCLIPLoader, LoraLoader, SeargePromptCombiner, SaveImage, EmptyLatentImage]
+patterns: [lora]
+missing: []
+parameters: {"batch_size": 1, "height": 1024, "lora_name": "纪实摄影 F.1_v1.0 (1).safetensors", "strength_clip": 1, "strength_model": 0.8000000000000002, "width": 768}
+---
+
+# 图片生成/文生图/F.1+纪实摄影_1938572723696099330.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1938572723696099330.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（15 个）：
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `BasicScheduler`
+- `BasicGuider`
+- `Note`
+- `VAELoader`
+- `CLIPTextEncodeFlux` ★核心
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `LoraLoader` ★核心
+- `SeargePromptCombiner`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `lora_name` = `纪实摄影 F.1_v1.0 (1).safetensors`
+- `strength_model` = `0.8000000000000002`
+- `strength_clip` = `1`
+- `width` = `768`
+- `height` = `1024`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **93%**（14/15）
+
+**有卡**：`RandomNoise`、`KSamplerSelect`、`SamplerCustomAdvanced`、`BasicScheduler`、`BasicGuider`、`VAELoader`、`CLIPTextEncodeFlux`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`LoraLoader`、`SeargePromptCombiner`、`SaveImage`、`EmptyLatentImage`
+
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、CLIPTextEncodeFlux、LoraLoader

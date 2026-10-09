@@ -1,0 +1,63 @@
+---
+key: 图片生成/文生图/Wan2.2 超真实文生图+放大_1950719208512491521.json
+name: Wan2.2 超真实文生图+放大_1950719208512491521.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Wan2.2 超真实文生图+放大_1950719208512491521.json
+hash: d2d90f3825a6d33b
+coverage: 1
+learned_at: 2026-10-07 22:58:36
+nodes: [KSampler, ModelSamplingSD3, CLIPTextEncode, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, VAELoader, CLIPLoader, CLIPTextEncode, EmptyLatentImage, VAEDecode, PMRF, Bjornulf_TextToStringAndSeed, SaveImage, SaveImage]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "sampler_name": "euler", "scheduler": "simple", "seed": 965369974524576, "steps": 10, "width": 720}
+---
+
+# 图片生成/文生图/Wan2.2 超真实文生图+放大_1950719208512491521.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950719208512491521.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（16 个）：
+- `KSampler` ★核心
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `PMRF`
+- `Bjornulf_TextToStringAndSeed`
+- `SaveImage`
+- `SaveImage`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `965369974524576`
+- `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `720`
+- `height` = `1280`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **100%**（16/16）
+
+**有卡**：`KSampler`、`ModelSamplingSD3`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`VAEDecode`、`PMRF`、`Bjornulf_TextToStringAndSeed`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader

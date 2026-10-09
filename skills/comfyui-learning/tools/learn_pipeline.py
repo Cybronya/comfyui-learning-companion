@@ -22,6 +22,10 @@ import subprocess
 import sys
 from pathlib import Path
 
+# 行缓冲：后台重定向到文件时进程被杀也能保留已执行阶段的输出
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(line_buffering=True)
+
 ROOT = Path(__file__).resolve().parents[3]
 TOOLS = Path(__file__).resolve().parent
 sys.path.insert(0, str(ROOT))

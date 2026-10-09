@@ -1,0 +1,107 @@
+---
+key: 图片生成/文生图/FLUX 控制（controlnet Union pro 2.0）-洗图_1948377195357044738.json
+name: FLUX 控制（controlnet Union pro 2.0）-洗图_1948377195357044738.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/FLUX 控制（controlnet Union pro 2.0）-洗图_1948377195357044738.json
+hash: ece055b88fe36471
+coverage: 0.708333
+learned_at: 2026-10-07 22:53:08
+nodes: [PreviewImage, SetUnionControlNetType, PreviewImage, ControlNetApplyAdvanced, PreviewImage, SetUnionControlNetType, Note, Canny, LoraLoaderModelOnly, ControlNetApplyAdvanced, AnyLineArtPreprocessor_aux, Image Comparer (rgthree), ControlNetApplyAdvanced, SetUnionControlNetType, VAEEncode, SetUnionControlNetType, DWPreprocessor, PreviewImage, LayerUtility: JoyCaptionBeta1ExtraOptions, LoraLoader, CLIPTextEncode, ConditioningZeroOut, FluxGuidance, SaveImage, VAEDecode, CLIPTextEncode, ControlNetLoader, ControlNetLoader, ControlNetLoader, ControlNetLoader, ControlNetApplyAdvanced, VAELoader, Fast Groups Bypasser (rgthree), KSampler, VAEDecode, DepthAnythingV2Preprocessor, workflow>获取latent, DualCLIPLoader, LoadImage, ImageScaleToTotalPixels, PreviewImage, workflow>放大, LayerUtility: LoadJoyCaptionBeta1Model, ApplyFBCacheOnModel, UNETLoader, LayerUtility: JoyCaptionBeta1, DeepTranslatorTextNode, easy showAnything]
+patterns: [image_to_image, lora]
+missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, workflow>放大, workflow>获取latent]
+parameters: {"cfg": 1, "controlnet_strength": 0.7000000000000001, "denoise": 1, "lora_name": "FLUX\\加速模型\\FLUX.1-Turbo-Alpha.safetensors", "sampler_name": "euler", "scheduler": "beta", "seed": 123466, "steps": 25, "strength_clip": 1, "strength_model": 1}
+discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>放大` 仅有 Upscale 的通用知识，没有该节点自己的说明, 次要节点 `workflow>获取latent` 仅有 VAE 的通用知识，没有该节点自己的说明]
+---
+
+# 图片生成/文生图/FLUX 控制（controlnet Union pro 2.0）-洗图_1948377195357044738.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1948377195357044738.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
+**节点**（48 个）：
+- `PreviewImage`
+- `SetUnionControlNetType`
+- `PreviewImage`
+- `ControlNetApplyAdvanced` ★核心
+- `PreviewImage`
+- `SetUnionControlNetType`
+- `Note`
+- `Canny`
+- `LoraLoaderModelOnly` ★核心
+- `ControlNetApplyAdvanced` ★核心
+- `AnyLineArtPreprocessor_aux`
+- `Image Comparer (rgthree)`
+- `ControlNetApplyAdvanced` ★核心
+- `SetUnionControlNetType`
+- `VAEEncode` ★核心
+- `SetUnionControlNetType`
+- `DWPreprocessor`
+- `PreviewImage`
+- `LayerUtility: JoyCaptionBeta1ExtraOptions`
+- `LoraLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `FluxGuidance`
+- `SaveImage`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `ControlNetLoader`
+- `ControlNetLoader`
+- `ControlNetLoader`
+- `ControlNetLoader`
+- `ControlNetApplyAdvanced` ★核心
+- `VAELoader`
+- `Fast Groups Bypasser (rgthree)`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `DepthAnythingV2Preprocessor`
+- `workflow>获取latent`
+- `DualCLIPLoader`
+- `LoadImage`
+- `ImageScaleToTotalPixels`
+- `PreviewImage`
+- `workflow>放大`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
+- `ApplyFBCacheOnModel`
+- `UNETLoader` ★核心
+- `LayerUtility: JoyCaptionBeta1`
+- `DeepTranslatorTextNode`
+- `easy showAnything`
+
+**识别到的模式**：image_to_image、lora
+
+## 关键参数
+
+- `controlnet_strength` = `0.7000000000000001`
+- `lora_name` = `FLUX\加速模型\FLUX.1-Turbo-Alpha.safetensors`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+- `seed` = `123466`
+- `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **71%**（34/48）
+
+**有卡**：`SetUnionControlNetType`、`ControlNetApplyAdvanced`、`Canny`、`LoraLoaderModelOnly`、`AnyLineArtPreprocessor_aux`、`VAEEncode`、`DWPreprocessor`、`LoraLoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`FluxGuidance`、`SaveImage`、`VAEDecode`、`ControlNetLoader`、`VAELoader`、`KSampler`、`DepthAnythingV2Preprocessor`、`DualCLIPLoader`、`LoadImage`、`ImageScaleToTotalPixels`、`ApplyFBCacheOnModel`、`UNETLoader`、`DeepTranslatorTextNode`
+
+**缺卡**（5）：`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`workflow>放大`、`workflow>获取latent`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage
+
+## 学习发现
+
+- 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识
+- 次要节点 `workflow>放大` 仅有 Upscale 的通用知识，没有该节点自己的说明
+- 次要节点 `workflow>获取latent` 仅有 VAE 的通用知识，没有该节点自己的说明

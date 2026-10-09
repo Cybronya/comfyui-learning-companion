@@ -1,0 +1,124 @@
+---
+key: 图片生成/文生图/Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
+name: Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
+hash: 9ce8d9427779922d
+coverage: 1
+learned_at: 2026-10-07 19:46:25
+nodes: [SamplerCustomAdvanced, SamplerCustomAdvanced, SamplerCustomAdvanced, VAEDecode, VAEDecode, VAEDecode, BasicGuider, BasicGuider, BasicGuider, BasicGuider, VAEDecode, BasicGuider, SamplerCustomAdvanced, SamplerCustomAdvanced, SamplerCustomAdvanced, VAEDecode, VAEDecode, VAEDecode, BasicGuider, BasicGuider, BasicGuider, SamplerCustomAdvanced, SamplerCustomAdvanced, VAEDecode, BasicGuider, SamplerCustomAdvanced, SamplerCustomAdvanced, VAEDecode, VAEDecode, VAEDecode, BasicGuider, BasicGuider, BasicGuider, SamplerCustomAdvanced, KSamplerSelect, KSamplerSelect, BasicScheduler, KSamplerSelect, BasicScheduler, KSamplerSelect, BasicScheduler, KSamplerSelect, KSamplerSelect, BasicScheduler, BasicScheduler, VAEDecode, SaveImage, SaveImage, SaveImage, SamplerCustomAdvanced, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, NunchakuFluxLoraLoader, BasicScheduler, BasicScheduler, BasicScheduler, BasicScheduler, BasicScheduler, BasicScheduler, BasicScheduler, SaveImage, EmptyLatentImage, NunchakuFluxLoraLoader, SaveImage, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, VAELoader, DualCLIPLoader, NunchakuFluxDiTLoader, KSamplerSelect, CLIPTextEncodeFlux, RandomNoise]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 1280, "width": 720}
+---
+
+# 图片生成/文生图/Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1914962492102012929.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（85 个）：
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `BasicGuider`
+- `BasicGuider`
+- `BasicGuider`
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `BasicGuider`
+- `BasicGuider`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `BasicGuider`
+- `BasicGuider`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `BasicScheduler`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SamplerCustomAdvanced` ★核心
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `NunchakuFluxLoraLoader` ★核心
+- `BasicScheduler`
+- `BasicScheduler`
+- `BasicScheduler`
+- `BasicScheduler`
+- `BasicScheduler`
+- `BasicScheduler`
+- `BasicScheduler`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `SaveImage`
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `VAELoader`
+- `DualCLIPLoader`
+- `NunchakuFluxDiTLoader`
+- `KSamplerSelect` ★核心
+- `CLIPTextEncodeFlux` ★核心
+- `RandomNoise`
+
+## 关键参数
+
+- `width` = `720`
+- `height` = `1280`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **100%**（85/85）
+
+**有卡**：`SamplerCustomAdvanced`、`VAEDecode`、`BasicGuider`、`KSamplerSelect`、`BasicScheduler`、`SaveImage`、`NunchakuFluxLoraLoader`、`EmptyLatentImage`、`VAELoader`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`CLIPTextEncodeFlux`、`RandomNoise`
+
+**用到的条目**：VAEDecode、VAELoader、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、CLIPTextEncodeFlux、NunchakuFluxLoraLoader、DualCLIPLoader

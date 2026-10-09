@@ -1,0 +1,100 @@
+---
+key: 图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json
+name: hunyuan_image_2.1 image generation_1968720557237837826.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json
+hash: c4e11a0e569fd4f1
+coverage: 0.580645
+learned_at: 2026-10-09 02:01:38
+nodes: [VAELoader, DualCLIPLoader, CLIPTextEncode, Note, UNETLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, VAEEncode, HunyuanRefinerLatent, SaveImage, UNETLoader, KSampler, LayerUtility: PurgeVRAM V2, VAEDecode, CLIPTextEncode, EmptyHunyuanImageLatent, KSampler, LayerUtility: PurgeVRAM V2, VAEDecode, SaveImage, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree)]
+patterns: []
+missing: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 770039891896361, "steps": 4}
+discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1968720557237837826.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（31 个）：
+- `VAELoader`
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEEncode` ★核心
+- `HunyuanRefinerLatent`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `EmptyHunyuanImageLatent`
+- `KSampler` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+
+## 关键参数
+
+- `seed` = `770039891896361`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **58%**（18/31）
+
+**有卡**：`VAELoader`、`DualCLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`VAEEncode`、`HunyuanRefinerLatent`、`SaveImage`、`KSampler`、`VAEDecode`、`EmptyHunyuanImageLatent`
+
+**缺卡**（12）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、UNETLoader、VAEEncode、EmptyHunyuanImageLatent、HunyuanRefinerLatent
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,75 @@
+---
+key: 图片生成/文生图/Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
+name: Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
+hash: dc61097e1a12f9a6
+coverage: 0.565217
+learned_at: 2026-10-07 23:04:40
+nodes: [ShowText|pysssss, DeepTranslatorTextNode, Anything Everywhere, Anything Everywhere3, Seed Everywhere, ShowText|pysssss, StringFunction|pysssss, CLIPTextEncode, ConditioningZeroOut, NunchakuTextEncoderLoaderV2, VAELoader, Anything Everywhere, VAEEncode, DeepTranslatorTextNode, KSampler (Efficient), ModelSamplingFlux, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, NunchakuFluxLoraLoader, LayerFilter: HDREffects, SaveImage, LoadImage, Note]
+patterns: []
+missing: [LayerFilter: HDREffects, StringFunction|pysssss, KSampler (Efficient), Seed Everywhere]
+parameters: {"cfg": 1, "denoise": 0.7000000000000002, "sampler_name": "euler", "scheduler": "normal", "seed": 535577283025654, "steps": 30}
+discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+---
+
+# 图片生成/文生图/Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952289860134621185.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Output → Other
+
+**节点**（23 个）：
+- `ShowText|pysssss`
+- `DeepTranslatorTextNode`
+- `Anything Everywhere`
+- `Anything Everywhere3`
+- `Seed Everywhere`
+- `ShowText|pysssss`
+- `StringFunction|pysssss`
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `NunchakuTextEncoderLoaderV2`
+- `VAELoader`
+- `Anything Everywhere`
+- `VAEEncode` ★核心
+- `DeepTranslatorTextNode`
+- `KSampler (Efficient)` ★核心
+- `ModelSamplingFlux`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader` ★核心
+- `LayerFilter: HDREffects`
+- `SaveImage`
+- `LoadImage`
+- `Note`
+
+## 关键参数
+
+- `seed` = `535577283025654`
+- `steps` = `30`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `0.7000000000000002`
+
+## 知识
+
+覆盖率 **57%**（13/23）
+
+**有卡**：`DeepTranslatorTextNode`、`CLIPTextEncode`、`ConditioningZeroOut`、`NunchakuTextEncoderLoaderV2`、`VAELoader`、`VAEEncode`、`ModelSamplingFlux`、`NunchakuFluxDiTLoader`、`NunchakuFluxLoraLoader`、`SaveImage`、`LoadImage`
+
+**缺卡**（4）：`LayerFilter: HDREffects`、`StringFunction|pysssss`、`KSampler (Efficient)`、`Seed Everywhere`
+
+**用到的条目**：VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、VAEEncode、NunchakuTextEncoderLoaderV2、NunchakuFluxLoraLoader、ModelSamplingFlux
+
+## 学习发现
+
+- 次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识
+- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
+- 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明

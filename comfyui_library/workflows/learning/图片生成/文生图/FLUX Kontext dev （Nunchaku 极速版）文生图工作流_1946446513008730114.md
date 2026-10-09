@@ -1,0 +1,60 @@
+---
+key: 图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+name: FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+hash: f6fab7041d53d483
+coverage: 0.846154
+learned_at: 2026-10-07 22:52:48
+nodes: [DualCLIPLoader, VAELoader, FluxGuidance, VAEDecode, KSampler, SaveImage, DeepTranslatorTextNode, EmptyLatentImage, Note, ConditioningZeroOut, CLIPTextEncode, PreviewImage, NunchakuFluxDiTLoader]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1248, "sampler_name": "euler", "scheduler": "simple", "seed": 232865194076121, "steps": 20, "width": 800}
+---
+
+# 图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1946446513008730114.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（13 个）：
+- `DualCLIPLoader`
+- `VAELoader`
+- `FluxGuidance`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `SaveImage`
+- `DeepTranslatorTextNode`
+- `EmptyLatentImage` ★核心
+- `Note`
+- `ConditioningZeroOut`
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `NunchakuFluxDiTLoader`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `232865194076121`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `800`
+- `height` = `1248`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **85%**（11/13）
+
+**有卡**：`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`VAEDecode`、`KSampler`、`SaveImage`、`DeepTranslatorTextNode`、`EmptyLatentImage`、`ConditioningZeroOut`、`CLIPTextEncode`、`NunchakuFluxDiTLoader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、FluxGuidance、DualCLIPLoader

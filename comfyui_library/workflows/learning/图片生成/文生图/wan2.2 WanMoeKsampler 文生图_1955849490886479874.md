@@ -1,0 +1,67 @@
+---
+key: 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+name: wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+hash: a689aae4e99ee909
+coverage: 0.944444
+learned_at: 2026-10-07 23:24:41
+nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyHunyuanLatentVideo, UNETLoader, ImpactInt, ImpactInt, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, VAEDecode, WanMoeKSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, SaveImage, CR Text]
+patterns: []
+missing: [CR Text]
+parameters: {"cfg": 12, "denoise": "res_2s", "sampler_name": 3, "scheduler": 1, "seed": 0.875, "steps": "randomize"}
+discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
+---
+
+# 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1955849490886479874.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（18 个）：
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `EmptyHunyuanLatentVideo`
+- `UNETLoader` ★核心
+- `ImpactInt`
+- `ImpactInt`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `VAEDecode` ★核心
+- `WanMoeKSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `SaveImage`
+- `CR Text`
+
+## 关键参数
+
+- `seed` = `0.875`
+- `steps` = `randomize`
+- `cfg` = `12`
+- `sampler_name` = `3`
+- `scheduler` = `1`
+- `denoise` = `res_2s`
+
+## 知识
+
+覆盖率 **94%**（17/18）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAEDecode`、`WanMoeKSampler`、`SaveImage`
+
+**缺卡**（1）：`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、EmptyHunyuanLatentVideo
+
+## 学习发现
+
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

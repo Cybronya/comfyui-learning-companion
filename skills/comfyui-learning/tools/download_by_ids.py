@@ -153,9 +153,17 @@ def safe_name(s: str) -> str:
 
 
 def download_one(wid: str, name: str, out_dir: Path) -> tuple[bool, str, str]:
-    """下载单个工作流。返回 (成功?, 说明, 最终文件名)。按 <名字>_<id>.json 落盘。"""
+    """下载单个工作流。返回 (成功?, 说明, 最终文件名)。按 <名字>_<id>.json 落盘。
+
+    命名规则（2026-10-09 用户要求）：必须 名字_id.json；拿不到名字才回退 id.json，
+    且打印警告——名字缺失多半是 meta 表没覆盖，应修 meta 而不是让文件裸奔。
+    """
     stem = safe_name(name)
-    fname = f"{stem}_{wid}.json" if stem else f"{wid}.json"
+    if stem:
+        fname = f"{stem}_{wid}.json"
+    else:
+        print(f"  ⚠ {wid} 无名字映射，回退 <id>.json（请检查 meta 表覆盖）", flush=True)
+        fname = f"{wid}.json"
     dest = out_dir / fname
     if dest.exists() and dest.stat().st_size > 0:
         return True, "已存在，跳过", fname
@@ -221,7 +229,11 @@ def main() -> int:
     meta = dict(pre)
     if missing:
         print(f"{len(pre)} 条来自 meta 表；其余 {len(missing)} 个 ID 用搜索关键词 {kw!r} 补齐映射…")
-        meta.update(build_manifest(missing, kw))
+        got = build_manifest(missing, kw)
+        meta.update(got)
+        still = [wid for wid in missing if wid not in got]
+        if still:
+            print(f"⚠ {len(still)} 个 ID 搜索后仍无名字映射，将回退 <id>.json 命名（前 5: {still[:5]}）")
     else:
         print(f"全部 {len(ids)} 个 ID 的映射来自 meta 表，无需搜索。")
     print(f"清单覆盖 {len(meta)}/{len(ids)} 个 ID")

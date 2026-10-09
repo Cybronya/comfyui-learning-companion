@@ -1,0 +1,77 @@
+---
+key: 图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+name: ▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+hash: 461b4fc21eb0d3ff
+coverage: 0.705882
+learned_at: 2026-10-07 23:25:04
+nodes: [VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, Image Comparer (rgthree), VAEDecode, SaveImage, CLIPLoader, UNETLoader, LoadImage, LoraLoaderModelOnly, KSampler, VAELoader, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, CLIPTextEncode, ModelSamplingSD3, ShowText|pysssss, CLIPTextEncode]
+patterns: [image_to_image]
+missing: [LayerMask: LoadFlorence2Model, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: Florence2Image2Prompt]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 651370515831654, "steps": 8}
+discoveries: [次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: Florence2Image2Prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1956293805874008065.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（17 个）：
+- `VAEEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Image Comparer (rgthree)`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `VAELoader`
+- `LayerMask: LoadFlorence2Model`
+- `LayerUtility: Florence2Image2Prompt`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `651370515831654`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `0.30000000000000004`
+
+## 知识
+
+覆盖率 **71%**（12/17）
+
+**有卡**：`VAEEncode`、`VAEDecode`、`SaveImage`、`CLIPLoader`、`UNETLoader`、`LoadImage`、`LoraLoaderModelOnly`、`KSampler`、`VAELoader`、`CLIPTextEncode`、`ModelSamplingSD3`
+
+**缺卡**（3）：`LayerMask: LoadFlorence2Model`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: Florence2Image2Prompt`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: Florence2Image2Prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

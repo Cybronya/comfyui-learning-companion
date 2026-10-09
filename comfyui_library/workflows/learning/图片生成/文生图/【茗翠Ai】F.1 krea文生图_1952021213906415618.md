@@ -1,0 +1,51 @@
+---
+key: 图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+name: 【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+hash: f584422860d9c2e5
+coverage: 1
+learned_at: 2026-10-07 23:04:35
+nodes: [VAELoader, DualCLIPLoader, ConditioningZeroOut, VAEDecode, UNETLoader, KSampler, SaveImage, CLIPTextEncode, EmptySD3LatentImage]
+patterns: []
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 85110201659340, "steps": 25}
+---
+
+# 图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952021213906415618.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output
+
+**节点**（9 个）：
+- `VAELoader`
+- `DualCLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `EmptySD3LatentImage`
+
+## 关键参数
+
+- `seed` = `85110201659340`
+- `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（9/9）
+
+**有卡**：`VAELoader`、`DualCLIPLoader`、`ConditioningZeroOut`、`VAEDecode`、`UNETLoader`、`KSampler`、`SaveImage`、`CLIPTextEncode`、`EmptySD3LatentImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、UNETLoader、SaveImage、EmptySD3LatentImage

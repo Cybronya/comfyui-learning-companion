@@ -1,0 +1,53 @@
+---
+key: 图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+name: 谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+hash: 541eb4554748d8bc
+coverage: 0.75
+learned_at: 2026-10-07 19:13:06
+nodes: [RH_Nano_Banana_Image2Image, LoadImage, SaveImage, easy imageConcat, SaveImage, easy imageConcat, RH_Nano_Banana_Image2Image, LoadImage, SaveImage, easy imageConcat, RH_Nano_Banana_Image2Image, LoadImage]
+patterns: []
+missing: [easy imageConcat, easy imageConcat, easy imageConcat]
+discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识]
+---
+
+# 图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960512200576331778.json`
+
+## 结构
+
+**生成流程**：Process → Output → Other
+
+**节点**（12 个）：
+- `RH_Nano_Banana_Image2Image`
+- `LoadImage`
+- `SaveImage`
+- `easy imageConcat`
+- `SaveImage`
+- `easy imageConcat`
+- `RH_Nano_Banana_Image2Image`
+- `LoadImage`
+- `SaveImage`
+- `easy imageConcat`
+- `RH_Nano_Banana_Image2Image`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **75%**（9/12）
+
+**有卡**：`RH_Nano_Banana_Image2Image`、`LoadImage`、`SaveImage`
+
+**缺卡**（3）：`easy imageConcat`、`easy imageConcat`、`easy imageConcat`
+
+**用到的条目**：LoadImage、SaveImage、RH_Nano_Banana_Image2Image、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+
+## 学习发现
+
+- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识

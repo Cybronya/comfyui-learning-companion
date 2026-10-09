@@ -1,0 +1,39 @@
+---
+key: 图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+name: 【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+hash: 6f12029965258d8f
+coverage: 0.714286
+learned_at: 2026-10-08 00:02:11
+nodes: [SaveImage, Note, DoubaoImageGenerator, LoadImage, LoadImage, Note, DoubaoSizePreset]
+patterns: []
+missing: []
+---
+
+# 图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/1966444511088029698.json`
+
+## 结构
+
+**生成流程**：Process → Output → Other
+
+**节点**（7 个）：
+- `SaveImage`
+- `Note`
+- `DoubaoImageGenerator`
+- `LoadImage`
+- `LoadImage`
+- `Note`
+- `DoubaoSizePreset`
+
+## 知识
+
+覆盖率 **71%**（5/7）
+
+**有卡**：`SaveImage`、`DoubaoImageGenerator`、`LoadImage`、`DoubaoSizePreset`
+
+**用到的条目**：LoadImage、DoubaoSizePreset、SaveImage、DoubaoImageGenerator、sd15-t2i-basic、sd15-t2i-lora、height 调整经验、width 调整经验
