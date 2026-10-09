@@ -9,6 +9,11 @@
 !/comfyui_library/
 !/engine/
 
+# download/ 目录放行 Python 脚本（工具脚本），其余文件（工作流 JSON 等）忽略
+!/download/
+download/*
+!/download/*.py
+
 # 防御
 __pycache__/
 *.pyc
