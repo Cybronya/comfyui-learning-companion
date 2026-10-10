@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_eric_se
 hash: 8708c1b59cc3ffe8
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:36:21
+learned_at: 2026-10-10 22:49:01
 nodes: [SaveImage, RegexReplace, RegexReplace, PrimitiveStringMultiline, SaveImage, PrimitiveStringMultiline, 51b1c920-4b14-43ae-b339-8fce93d4377b, LoadImage, LoadImage, LoadImage, ByteDanceSeedreamNodeV2, ByteDanceSeedreamNodeV2]
 patterns: []
 missing: [51b1c920-4b14-43ae-b339-8fce93d4377b]
@@ -45,7 +45,7 @@ discoveries: [次要节点 `51b1c920-4b14-43ae-b339-8fce93d4377b` 知识库中�
 
 **缺卡**（1）：`51b1c920-4b14-43ae-b339-8fce93d4377b`
 
-**用到的条目**：LoadImage、ByteDanceSeedreamNodeV2、SaveImage、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、ByteDanceSeedreamNode、node
+**用到的条目**：LoadImage、ByteDanceSeedreamNodeV2、SaveImage、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、ByteDanceSeedreamNode、Seed
 
 ## 学习发现
 

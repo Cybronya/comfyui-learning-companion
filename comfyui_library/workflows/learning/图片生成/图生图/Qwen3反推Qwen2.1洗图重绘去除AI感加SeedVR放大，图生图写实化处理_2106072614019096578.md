@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen3反推Qwen2.1洗图重绘去除AI感加SeedVR放大，图生图写实化处理_2106072614019096578.json
-name: Qwen3反推Qwen2.1洗图重绘去除AI感加SeedVR放大，图生图写实化处理_2106072614019096578.json
+name: Qwen3反推Qwen2.1洗图重绘去除AI感加SeedVR放大，图生图写实化处理_2106072614019096578
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen3反推Qwen2.1洗图重绘去除AI感加SeedVR放大，图生图写实化处理_2106072614019096578.json
 hash: a1e6a348a9142445
 coverage: 0.714286
-learned_at: 2026-10-09 22:09:18
+learned_at: 2026-10-10 20:48:10
 nodes: [JoinStrings, easy showAnything, ConditioningZeroOut, SaveImage, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, ImageScaleBy, LayerUtility: PurgeVRAM, SeedVR2VideoUpscaler, LayerUtility: ImageReelComposit, PrimitiveNode, ShowText|pysssss, Fast Groups Bypasser (rgthree), LayerUtility: ImageReel, LayerUtility: ImageScaleByAspectRatio V2, Image Comparer (rgthree), VAEEncode, VAEDecode, easy imageConcat, LayerUtility: PurgeVRAM, SaveImage, PreviewImage, PreviewImage, LoraLoaderModelOnly, KSampler, VAELoader, UNETLoader, CLIPTextEncode, LayerUtility: PurgeVRAM, ImpactInt, CLIPLoader, LoadImage, TextInput_, Qwen3_VQA, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, image_to_image]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, easy imageConcat]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 # 图片生成/图生图/Qwen3反推Qwen2.1洗图重绘去除AI感加SeedVR放大，图生图写实化处理_2106072614019096578.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2106072614019096578.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen3反推Qwen2.1洗图重绘去除AI感加SeedVR放大，图生图写实化处理_2106072614019096578.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json
-name: Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json
+name: Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json
 hash: 4e40cfb3d2279f33
 coverage: 0.639175
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:06
 nodes: [QwenImage21Cache, VAEDecode, ResolutionSelector, TextEncodeQwenImage21, ModelAttentionBackend, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, BasicScheduler, easy cleanGpuUsed, PrimitiveStringMultiline, PrimitiveBoolean, Seed (rgthree), GetImageSizeAndCount, ResizeImageMaskNode, VOSR2ModelLoader, VOSR2Upscale, Images to RGB, Reroute, Reroute, Reroute, Reroute, Reroute, easy cleanGpuUsed, ResizeImageMaskNode, Reroute, Reroute, StringConcatenate, SeedVR2LoadVAEModel, PreviewImage, SeedVR2LoadDiTModel, easy cleanGpuUsed, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, ComfySwitchNode, StringConcatenate, TextGenerate, TextGenerate, UNETLoader, CLIPLoader, VAELoader, Reroute, Reroute, ShowText|pysssss, Image Comparer (rgthree), Reroute, Reroute, Image Comparer (rgthree), PreviewImage, SaveImage, ComfyOrNode, ComfySwitchNode, EmptyLatentImage, LoadImage, ImageResizeKJv2, ImageScaleToMaxDimension, easy cleanGpuUsed, SeedVR2VideoUpscaler, Reroute, easy cleanGpuUsed, INTConstant, JsonExtractString, PrimitiveStringMultiline, PrimitiveBoolean, CLIPLoader, CLIPLoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [Images to RGB, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, Seed (rgthree)]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `Images to RGB` 知识库中没有该节点类型的�
 
 # 图片生成/图生图/Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102536916045484034.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657.json
-name: Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657.json
+name: Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657.json
 hash: e1b8f8a3bfb99ca4
 coverage: 0.652174
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:06
 nodes: [LayerUtility: ImageReelComposit, VAEDecode, easy setNode, VAEDecode, Image Comparer (rgthree), PreviewImage, LayerUtility: ImageReel, TextEncodeQwenImage21, EmptyLatentImage, TextEncodeQwenImage21, ComfySwitchNode, PreviewImage, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, easy setNode, VAEDecode, SaveImage, SaveImage, easy setNode, Seed (rgthree), KSampler, SaveImage, CR Prompt Text, ResolutionSelector, TextGenerateLTX2Prompt, easy showAnything, UNETLoader, QwenImage21Cache, VAELoader, Anything Everywhere3, SetNode, SetNode, GetNode, KSampler, TextGenerateLTX2Prompt, EmptyLatentImage, ShowText|pysssss, GetNode, CR Prompt Text, BatchImagesNode, Image Comparer (rgthree), TextEncodeQwenImage21, GetNode, ResolutionSelector, EmptyLatentImage, ComfySwitchNode, PreviewAny, TextGenerateLTX2Prompt, KSampler, CLIPLoader, CLIPLoader, CLIPLoader, LoadImage, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, easy setNode, easy setNode, easy setNode, CR Prompt Text, CR Prompt Text, CR Prompt Text, Seed (rgthree)]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 # 图片生成/图生图/Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102543389462982657.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像合集人像写真实图生图处理工具_2102543389462982657.json`
 
 ## 结构
 

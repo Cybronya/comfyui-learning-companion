@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/F.1图生图车身修复_2079052568524845058.json
-name: F.1图生图车身修复_2079052568524845058.json
+name: F.1图生图车身修复_2079052568524845058
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/F.1图生图车身修复_2079052568524845058.json
 hash: 17d3450127dffe14
 coverage: 0.823529
-learned_at: 2026-10-09 22:36:21
+learned_at: 2026-10-10 20:48:02
 nodes: [DualCLIPLoader, VAELoader, ConditioningZeroOut, VAEDecode, UNETLoader, 图像缩放V2_孤海, Image Comparer (rgthree), CLIPTextEncode, KSampler, LoadImage, LoraLoaderModelOnly, AILab_QwenVL, easy showAnything, RepeatLatentBatch, RebatchLatents, VAEEncode, SaveImage]
 patterns: [image_to_image]
 missing: [图像缩放V2_孤海]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点�
 
 # 图片生成/图生图/F.1图生图车身修复_2079052568524845058.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2079052568524845058.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/F.1图生图车身修复_2079052568524845058.json`
 
 ## 结构
 

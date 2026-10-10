@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_happyhorse1_
 hash: 19e7c2b0de7dc32c
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:51
+learned_at: 2026-10-10 22:44:18
 nodes: [HappyHorseImageToVideoApi, SaveVideo, LoadImage]
 patterns: []
 missing: []

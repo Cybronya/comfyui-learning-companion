@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/StoryDiffusion+DreamO单人物一致性_1926167931795771393.json
-name: StoryDiffusion+DreamO单人物一致性_1926167931795771393.json
+key: StoryDiffusion+DreamO单人物一致性_1926167931795771393.json
+name: StoryDiffusion+DreamO单人物一致性_1926167931795771393
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/StoryDiffusion+DreamO单人物一致性_1926167931795771393.json
 hash: e3287557508b1811
 coverage: 0.9
-learned_at: 2026-10-07 22:23:05
+learned_at: 2026-10-10 20:59:12
 nodes: [VAELoader, StoryDiffusion_KSampler, EmptyLatentImage, VAEDecode, StoryDiffusion_Apply, SaveImage, ImageResize+, LoadImage, StoryDiffusion_CLIPTextEncode, EasyFunction_Lite]
 patterns: []
 missing: [ImageResize+]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 8, "denoise": 0.5, "height": 512, "sampler_
 discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/StoryDiffusion+DreamO单人物一致性_1926167931795771393.json
+# StoryDiffusion+DreamO单人物一致性_1926167931795771393.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1926167931795771393.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/StoryDiffusion+DreamO单人物一致性_1926167931795771393.json`
 
 ## 结构
 

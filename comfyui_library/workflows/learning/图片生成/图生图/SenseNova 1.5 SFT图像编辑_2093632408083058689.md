@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093632408083058689.json
-name: SenseNova 1.5 SFT图像编辑_2093632408083058689.json
+name: SenseNova 1.5 SFT图像编辑_2093632408083058689
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093632408083058689.json
 hash: 24e58c76dbda4125
 coverage: 0.928571
-learned_at: 2026-10-09 22:36:23
+learned_at: 2026-10-10 20:48:10
 nodes: [SenseNovaSamplingOptions, CLIPTextEncode, SenseNovaReferenceImage, EmptySenseNovaLatentImage, SenseNovaU15Loader, KSampler, SaveImage, VAEDecode, ImageConcanate, SaveImage, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, CLIPTextEncode]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093632408083058689.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2093632408083058689.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/SenseNova 1.5 SFT图像编辑_2093632408083058689.json`
 
 ## 结构
 

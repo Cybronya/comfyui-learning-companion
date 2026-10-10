@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json
-name: Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json
+name: Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json
 hash: 1247527a6038d872
 coverage: 0.910714
-learned_at: 2026-10-09 22:19:30
+learned_at: 2026-10-10 20:48:06
 nodes: [QwenImage21Cache, ComfySwitchNode, KSampler, VAELoader, ResolutionSelector, EmptyLatentImage, LoadImage, LoadImage, TextEncodeQwenImage21, UNETLoader, CLIPLoader, VAEDecode, SaveImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102634269028999170.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像编辑基础版｜改字改色改细节｜日常修图够用了_2102634269028999170.json`
 
 ## 结构
 

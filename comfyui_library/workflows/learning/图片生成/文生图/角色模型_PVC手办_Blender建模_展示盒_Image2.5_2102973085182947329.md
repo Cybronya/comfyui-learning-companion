@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329.json
+key: 角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329.json
 name: 角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329.json
 hash: 880647c44bc9cac0
 coverage: 0.6
-learned_at: 2026-10-07 02:02:32
+learned_at: 2026-10-10 20:59:57
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329.json
+# 角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/角色模型_PVC手办_Blender建模_展示盒_Image2.5_2102973085182947329.json`
 

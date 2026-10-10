@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/视频生视频/MiniMax-H3-视频换背景-视频编辑-牛哥玩ai.json
 hash: ee39f12a3205c6a7
 coverage: 0.758621
-learned_at: 2026-10-07 00:37:57
+learned_at: 2026-10-10 22:56:35
 nodes: [PrimitiveFloat, SamplerCustomAdvanced, GetNode, ImageConcanate, LayerUtility: PurgeVRAM V2, BasicScheduler, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, VHS_VideoCombine, SetNode, VRAM_Debug, RandomNoise, SetNode, GetNode, VAELoader, CLIPLoader, BasicGuider, KSamplerSelect, ComfyMathExpression, PathchSageAttentionKJ, LoraLoaderModelOnly, UNETLoader, ResolutionSelector, MiniMaxH3MemoryEfficientSageAttentionPatch, VAELoader, MiniMaxH3ReferenceToVideo, VHS_LoadVideo, PrimitiveStringMultiline]
 patterns: []
 missing: [LayerUtility: PurgeVRAM V2]

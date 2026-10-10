@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2_klei
 hash: 23cb1b1d9a0f7851
 official: true
 coverage: 0.826087
-learned_at: 2026-10-07 21:35:39
+learned_at: 2026-10-10 22:47:35
 nodes: [KSamplerSelect, UNETLoader, CLIPLoader, CFGGuider, VAELoader, CLIPTextEncode, FluxKVCache, SamplerCustomAdvanced, RandomNoise, VAEDecode, SaveImage, ConditioningZeroOut, Flux2Scheduler, EmptyFlux2LatentImage, GetImageSize, ImageScaleToTotalPixels, ImageScaleToTotalPixels, LoadImage, LoadImage, 27eacb9f-0da2-421d-a0bf-b4b4e5fe5709, MarkdownNote, MarkdownNote, 93041a64-452a-477a-9447-40330b7c1136]
 patterns: []
 missing: [27eacb9f-0da2-421d-a0bf-b4b4e5fe5709, 93041a64-452a-477a-9447-40330b7c1136]

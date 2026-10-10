@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_omni_i
 hash: 49955aa7e7066284
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:03
+learned_at: 2026-10-10 22:44:41
 nodes: [SaveImage, KlingOmniProImageNode]
 patterns: []
 missing: []

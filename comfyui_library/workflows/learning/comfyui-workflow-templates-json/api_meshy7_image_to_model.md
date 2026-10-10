@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_meshy7_image
 hash: 4cee0b1f0de38974
 official: true
 coverage: 0.875
-learned_at: 2026-10-07 21:34:14
+learned_at: 2026-10-10 22:45:01
 nodes: [MeshyTextureNode, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, LoadImage, MeshyImageToModelNode, MarkdownNote, SaveGLB]
 patterns: []
 missing: []

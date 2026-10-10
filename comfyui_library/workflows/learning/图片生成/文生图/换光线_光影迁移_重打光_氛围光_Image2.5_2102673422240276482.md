@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/换光线_光影迁移_重打光_氛围光_Image2.5_2102673422240276482.json
 hash: 00a0788783df0a11
 coverage: 0.6
-learned_at: 2026-10-07 01:58:58
+learned_at: 2026-10-10 23:16:59
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []

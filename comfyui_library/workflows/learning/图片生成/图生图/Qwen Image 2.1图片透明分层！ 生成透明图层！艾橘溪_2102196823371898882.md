@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json
-name: Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json
+name: Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json
 hash: 68ad9a3778b07c85
 coverage: 0.75
-learned_at: 2026-10-09 22:27:09
+learned_at: 2026-10-10 20:48:06
 nodes: [MarkdownNote, CLIPLoader, CLIPLoader, BatchImagesNode, EmptyLatentImage, ComfySwitchNode, VAEDecode, QwenImage21Cache, UNETLoader, VAELoader, SaveImage, ResolutionSelector, LoadImage, TextEncodeQwenImage21, Text Multiline, TextCombinerSix, PreviewAny, KSampler, TextGenerateLTX2Prompt, JjkText]
 patterns: []
 missing: [Text Multiline]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 # 图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102196823371898882.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json`
 
 ## 结构
 

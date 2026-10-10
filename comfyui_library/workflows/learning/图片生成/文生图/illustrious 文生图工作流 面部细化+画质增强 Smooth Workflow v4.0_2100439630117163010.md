@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
+key: illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
 name: illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
 hash: 0ae5cca1dc38d4d2
 coverage: 0.5
-learned_at: 2026-10-07 03:05:05
+learned_at: 2026-10-10 20:59:21
 nodes: [SetNode, SetNode, SetNode, KSampler, GetNode, VAEDecode, VAELoader, GetNode, CheckpointLoaderSimple, EmptyLatentImage, GetNode, GetNode, easy hiresFix, SaveImage, SAMLoader, GetNode, UltralyticsDetectorProvider, FaceDetailer, SaveImage, CLIPTextEncode, CLIPTextEncode, MarkdownNote, GetNode, Lora Loader Stack (rgthree)]
 patterns: [text_to_image]
 missing: [Lora Loader Stack (rgthree), easy hiresFix]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 4, "checkpoint": "silvermoonmix_v60VPred.sa
 discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy hiresFix` 仅有 Upscale 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
+# illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json`
 

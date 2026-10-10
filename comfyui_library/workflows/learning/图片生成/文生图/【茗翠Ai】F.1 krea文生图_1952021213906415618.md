@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json
-name: 【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+key: 【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+name: 【茗翠Ai】F.1 krea文生图_1952021213906415618
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json
 hash: f584422860d9c2e5
 coverage: 1
-learned_at: 2026-10-07 23:04:35
+learned_at: 2026-10-10 20:59:31
 nodes: [VAELoader, DualCLIPLoader, ConditioningZeroOut, VAEDecode, UNETLoader, KSampler, SaveImage, CLIPTextEncode, EmptySD3LatentImage]
 patterns: []
 missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 85110201659340, "steps": 25}
 ---
 
-# 图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json
+# 【茗翠Ai】F.1 krea文生图_1952021213906415618.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952021213906415618.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【茗翠Ai】F.1 krea文生图_1952021213906415618.json`
 
 ## 结构
 

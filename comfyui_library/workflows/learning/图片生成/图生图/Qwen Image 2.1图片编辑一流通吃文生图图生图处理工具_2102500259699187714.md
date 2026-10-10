@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json
-name: Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json
+name: Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json
 hash: 7fa79105d3c66f28
 coverage: 0.717949
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:06
 nodes: [UNETLoader, ModelAttentionBackend, llama_cpp_model_loader, QwenImage21Cache, easy ifElse, llama_cpp_instruct_adv, CLIPLoader, easy lengthAnything, easy forLoopStart, VAELoader, ResolutionSelector, EmptyLatentImage, easy forLoopEnd, PreviewAny, PrimitiveStringMultiline, RepeatLatentBatch, ConditioningZeroOut, CropWithPadInfo_EditUtils, VAEDecode, EditTextEncode_EditUtils, RepeatLatentBatch, CropWithPadInfo_EditUtils, Image Comparer (rgthree), SaveImage, QwenImage21ConfigPreparer_EditUtils, easy ifElse, PrimitiveInt, TextEncodeQwenImage21, KSampler, easy imageSizeByLongerSide, easy indexAnything, QwenImage21ModelConfig_EditUtils, easy ifElse, easy ifElse, easy ifElse, easy ifElse, LoadImage, LoadImage, LoadImage, ComfyMathExpression, easy ifElse, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, easy makeImageList, LoadImage, LoadImage, LoadImage, PrimitiveInt, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy makeImageList, easy imageSizeByLongerSide]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102500259699187714.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json`
 
 ## 结构
 

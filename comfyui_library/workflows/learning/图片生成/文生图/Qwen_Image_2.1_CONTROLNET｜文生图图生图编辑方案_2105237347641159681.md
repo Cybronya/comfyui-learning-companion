@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
+key: Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
 name: Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
 hash: d0f58ef0272dda59
 coverage: 0.898551
-learned_at: 2026-10-07 02:29:23
+learned_at: 2026-10-10 20:59:08
 nodes: [ResolutionSelector, EmptyLatentImage, AIO_Preprocessor, GetImageSize, PreviewImage, PreviewImage, ImageScaleBy, ImageResizeKJv2, ImageResizeKJv2, SaveImage, SeedNode, KSampler, VAEDecode, CLIPLoader, Textbox, TextEncodeQwenImage21, UNETLoader, ResizeImageMaskNode, VAELoader, QwenImage21UnionLoader, QwenImage21Cache, QwenImage21UnionApply, ComfySwitchNode, Textbox, LoadImage, LoadImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
+# Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json`
 

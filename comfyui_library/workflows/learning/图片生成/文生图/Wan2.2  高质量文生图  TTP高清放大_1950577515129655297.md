@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json
-name: Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json
+key: Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json
+name: Wan2.2  高质量文生图  TTP高清放大_1950577515129655297
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json
 hash: 855095a235584f6c
 coverage: 0.794872
-learned_at: 2026-10-07 22:58:34
+learned_at: 2026-10-10 20:59:13
 nodes: [LoraLoaderModelOnly, CLIPTextEncode, UNETLoader, ModelSamplingSD3, UNETLoader, ModelSamplingSD3, CLIPLoader, VAELoader, easy cleanGpuUsed, VAEDecode, easy setNode, CLIPTextEncode, ImageListToImageBatch, easy cleanGpuUsed, SaveImage, EmptyHunyuanLatentVideo, KSamplerAdvanced, CLIPTextEncode, CLIPTextEncode, UNETLoader, CLIPLoader, VAELoader, easy cleanGpuUsed, ImageScaleToTotalPixels, UpscaleModelLoader, easy getNode, TTP_Image_Tile_Batch, TTP_Image_Assy, TTP_Tile_image_size, ImageUpscaleWithModel, SaveImage, Note, KSamplerAdvanced, VAEEncode, easy imageBatchToImageList, ModelSamplingSD3, KSampler, easy cleanGpuUsed, VAEDecode]
 patterns: []
 missing: [easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy getNode, easy imageBatchToImageList, easy setNode]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 0.10000000000000002, "sampler_name": "heun", "
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json
+# Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950577515129655297.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2  高质量文生图  TTP高清放大_1950577515129655297.json`
 
 ## 结构
 

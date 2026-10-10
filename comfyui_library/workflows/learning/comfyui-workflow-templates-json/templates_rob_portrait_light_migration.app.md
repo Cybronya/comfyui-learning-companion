@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_rob_po
 hash: ca6dc58fdfc30736
 official: true
 coverage: 0.428571
-learned_at: 2026-10-07 21:36:39
+learned_at: 2026-10-10 22:49:34
 nodes: [SaveImage, Note, MarkdownNote, LoadImage, LoadImage, Note, d878efb6-f575-4da6-bf2d-d9f32b55643c]
 patterns: []
 missing: [d878efb6-f575-4da6-bf2d-d9f32b55643c]

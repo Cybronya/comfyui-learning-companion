@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_ace_step_1
 hash: ef0d26e72ea75882
 official: true
 coverage: 0.833333
-learned_at: 2026-10-07 21:35:17
+learned_at: 2026-10-10 22:46:58
 nodes: [KSampler, VAEDecodeAudio, ConditioningZeroOut, TextEncodeAceStepAudio, LatentOperationTonemapReinhard, SaveAudioMP3, MarkdownNote, Note, CheckpointLoaderSimple, EmptyAceStepLatentAudio, LatentApplyOperationCFG, ModelSamplingSD3]
 patterns: []
 missing: []

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
-name: flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
+key: flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
+name: flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
 hash: cb1698c9a2f86f32
 coverage: 0.724138
-learned_at: 2026-10-07 22:08:18
+learned_at: 2026-10-10 20:59:18
 nodes: [CLIPTextEncode, PreviewImage, EmptySD3LatentImage, Note, ApplyFBCacheOnModel, Florence2Run, ShowText|pysssss, ImageResize+, easy cleanGpuUsed, Reroute, Reroute, VAEDecode, UNETLoader, DualCLIPLoader, EnhancedCompileModel, VAELoader, Florence2ModelLoader, CLIPTextEncodeFlux, KSampler, ApplyFBCacheOnModel, EnhancedCompileModel, SetUnionControlNetType, AIO_Preprocessor, LoraLoader, ControlNetApplySD3, ControlNetLoader, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
 patterns: [lora]
 missing: [easy cleanGpuUsed, ImageResize+]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "controlnet_strength": 0.8000000000000002, "denoise": 1, 
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
+# flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1921223547296088066.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json`
 
 ## 结构
 

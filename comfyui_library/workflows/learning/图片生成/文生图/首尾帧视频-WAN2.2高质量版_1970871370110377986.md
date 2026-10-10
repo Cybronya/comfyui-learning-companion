@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json
-name: 首尾帧视频-WAN2.2高质量版_1970871370110377986.json
+key: 首尾帧视频-WAN2.2高质量版_1970871370110377986.json
+name: 首尾帧视频-WAN2.2高质量版_1970871370110377986
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json
 hash: cab9d69a4ea0a3f9
 coverage: 0.864865
-learned_at: 2026-10-09 02:01:39
+learned_at: 2026-10-10 21:00:00
 nodes: [ImageResize+, ImageResize+, WanVideoClipVisionEncode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, PrimitiveNode, JWInteger, WanVideoTextEncode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, INTConstant, LoadWanVideoClipTextEncoder, WanVideoBlockSwap, WanVideoSampler, CreateCFGScheduleFloatList, WanVideoModelLoader, WanVideoImageToVideoEncode, SimpleMath+, JWInteger, WanVideoSampler, VHS_VideoCombine, WanVideoDecode, easy cleanGpuUsed, BasicScheduler, RandomNoise, KSamplerSelect, RepeatLatentBatch, FluxGuidance, SamplerCustomAdvanced, EmptyLatentImage, LoraLoader, LoraLoader, Fast Groups Bypasser (rgthree), LoraLoader, DualCLIPLoader, CLIPTextEncode, VAELoader, UNETLoader, BasicScheduler, RandomNoise, KSamplerSelect, RepeatLatentBatch, BasicGuider, FluxGuidance, SamplerCustomAdvanced, SaveImage, EmptyLatentImage, LoraLoader, LoraLoader, Fast Groups Bypasser (rgthree), LoraLoader, DualCLIPLoader, CLIPTextEncode, VAELoader, UNETLoader, LoadImage, BasicGuider, SaveImage, VAEDecode, VAEDecode, LoadImage, RH_Translator, RH_Translator, CR Prompt Text, JWInteger, JWInteger]
 patterns: [lora]
 missing: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, CR Prompt Text, ImageResize+, ImageResize+]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "height": 1024, "lora_name": "flux-lora-大家电�
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json
+# 首尾帧视频-WAN2.2高质量版_1970871370110377986.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1970871370110377986.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json`
 
 ## 结构
 

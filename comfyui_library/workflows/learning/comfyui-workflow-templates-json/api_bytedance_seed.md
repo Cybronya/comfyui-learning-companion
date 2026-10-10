@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bytedance_se
 hash: 7c1f8762033ac5d7
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:33:26
+learned_at: 2026-10-10 22:43:29
 nodes: [ByteDanceSeedNode, PreviewAny, LoadImage, RegexReplace, RegexReplace, JsonExtractString, JsonExtractString, PreviewAny, PreviewAny]
 patterns: []
 missing: []
@@ -39,4 +39,4 @@ missing: []
 
 **有卡**：`ByteDanceSeedNode`、`LoadImage`、`RegexReplace`、`JsonExtractString`
 
-**用到的条目**：LoadImage、ByteDanceSeedNode、JsonExtractString、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、SeedNode、node
+**用到的条目**：LoadImage、ByteDanceSeedNode、JsonExtractString、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、SeedNode、Seed

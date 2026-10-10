@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/llm_qwen3_text_g
 hash: a63fe6fb7583ed0c
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:36:13
+learned_at: 2026-10-10 22:48:47
 nodes: [TextGenerate, PreviewAny, MarkdownNote, CLIPLoader, MarkdownNote]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`TextGenerate`、`CLIPLoader`
 
-**用到的条目**：CLIPLoader、TextGenerate、sd15-t2i-basic、sd15-t2i-lora、Text、CLIPTextEncode、ConditioningZeroOut、CLIPLoaderGGUF
+**用到的条目**：CLIPLoader、TextGenerate、sd15-t2i-basic、sd15-t2i-lora、Text、Loader、CLIPTextEncode、ConditioningZeroOut

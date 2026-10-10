@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_flux_vto.jso
 hash: 3872d6205eb3ae10
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:33:38
+learned_at: 2026-10-10 22:43:53
 nodes: [LoadImage, SaveImage, LoadImage, ImageCompare, FluxVTONode, MarkdownNote, ImageStitch]
 patterns: []
 missing: []
@@ -37,4 +37,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveImage`、`ImageCompare`、`FluxVTONode`、`ImageStitch`
 
-**用到的条目**：LoadImage、FluxVTONode、SaveImage、ImageStitch、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、node
+**用到的条目**：LoadImage、FluxVTONode、SaveImage、ImageStitch、ImageStitch、ImageCompare、sd15-t2i-basic、sd15-t2i-lora

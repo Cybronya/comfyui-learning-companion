@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openai_gpt_i
 hash: 93d502fd2c4fa668
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:34:24
+learned_at: 2026-10-10 22:45:19
 nodes: [LoadImage, SaveImageAdvanced, OpenAIGPTImageNodeV2, MarkdownNote]
 patterns: []
 missing: []

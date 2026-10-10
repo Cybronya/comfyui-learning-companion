@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json
+key: 千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json
 name: 千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json
 hash: af73c1dd304e9dc9
 coverage: 0.892857
-learned_at: 2026-10-07 02:36:47
+learned_at: 2026-10-10 20:59:38
 nodes: [UNETLoader, CLIPLoader, VAELoader, KSampler, EmptyLatentImage, TextEncodeQwenImage21, VAEDecode, SaveImage, TextGenerateLTX2Prompt, ResolutionSelector, easy showAnything, CLIPLoader, CR Text, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [CR Text]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json
+# 千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/千问iamge2.1文生图工作流｜官方同款画质一键直出_2103062439452569601.json`
 

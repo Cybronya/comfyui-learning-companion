@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_stable_aud
 hash: 2858072e28d83772
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:35:19
+learned_at: 2026-10-10 22:47:01
 nodes: [8b66c757-fe2f-4184-91f3-479a19deb565, MarkdownNote, MarkdownNote, SaveAudioAdvanced]
 patterns: []
 missing: [8b66c757-fe2f-4184-91f3-479a19deb565]

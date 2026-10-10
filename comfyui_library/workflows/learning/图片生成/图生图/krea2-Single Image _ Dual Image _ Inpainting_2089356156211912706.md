@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json
-name: krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json
+name: krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json
 hash: 9994e8a8b1fe9418
 coverage: 0.761905
-learned_at: 2026-10-09 22:19:26
+learned_at: 2026-10-10 20:48:11
 nodes: [Krea2EditGroundedEncode, EmptySD3LatentImage, Krea2EditModelPatch, Krea2EditGroundedEncode, CLIPLoader, VAELoader, VAEEncode, VAEEncode, CLIPLoader, VAELoader, KSampler, VAEDecode, SaveImage, Seed (rgthree), VAEDecode, VAEEncode, Krea2EditGroundedEncode, EmptySD3LatentImage, VAELoader, Krea2EditModelPatch, Krea2EditGroundedEncode, GetImageSize+, CLIPLoader, Seed (rgthree), DrawMaskOnImage, ImageScaleToTotalPixels, LoadImage, ImageScaleToTotalPixels, ImageScaleToTotalPixels, LoadImage, ResolutionSelector, PrimitiveStringMultiline, Seed (rgthree), VAEEncode, Krea2EditGroundedEncode, Krea2EditGroundedEncode, LoadImage, ImageScaleToTotalPixels, GetImageSize+, EmptySD3LatentImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveStringMultiline, UNETLoader, Note, UNETLoader, UNETLoader, UNETLoader, LoadImage, PreviewImage, KSampler, SaveImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Note, Note, KSampler, VAEDecode, Krea2EditModelPatch, SaveImage, PrimitiveStringMultiline]
 patterns: [image_to_image]
 missing: [GetImageSize+, GetImageSize+, Seed (rgthree), Seed (rgthree), Seed (rgthree)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 # 图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2089356156211912706.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json`
 
 ## 结构
 

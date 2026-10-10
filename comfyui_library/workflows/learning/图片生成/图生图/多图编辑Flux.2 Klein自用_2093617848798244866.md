@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/多图编辑Flux.2 Klein自用_2093617848798244866.json
-name: 多图编辑Flux.2 Klein自用_2093617848798244866.json
+name: 多图编辑Flux.2 Klein自用_2093617848798244866
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/多图编辑Flux.2 Klein自用_2093617848798244866.json
 hash: 1ae7643e6a2b5bf2
 coverage: 0.92
-learned_at: 2026-10-09 22:36:23
+learned_at: 2026-10-10 20:48:16
 nodes: [LoadImage, ImageScaleToTotalPixels, VAEEncode, ReferenceLatent, VAEEncode, ImageScale, VAELoader, CLIPLoader, KSampler, ReferenceLatent, ReferenceLatent, ConditioningZeroOut, VAEEncode, VAEDecode, GetImageSize, LayerUtility: PurgeVRAM V2, SaveImage, SeedVR2, CFGNorm, UNETLoader, LoadImage, SDXL Empty Latent Image (rgthree), ImageScale, LoadImage, TextEncodeQwenImageEditPlus]
 patterns: [image_to_image]
 missing: [LayerUtility: PurgeVRAM V2, SDXL Empty Latent Image (rgthree)]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 # 图片生成/图生图/多图编辑Flux.2 Klein自用_2093617848798244866.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2093617848798244866.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/多图编辑Flux.2 Klein自用_2093617848798244866.json`
 
 ## 结构
 

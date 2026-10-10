@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_newbieimag
 hash: 7bd2979e303896d5
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:53
+learned_at: 2026-10-10 22:48:21
 nodes: [SaveImage, PrimitiveStringMultiline, StringReplace, PrimitiveStringMultiline, StringReplace, PrimitiveStringMultiline, MarkdownNote, MarkdownNote, 200c18f2-7c51-4b4a-bf17-293f2f691b1b]
 patterns: []
 missing: [200c18f2-7c51-4b4a-bf17-293f2f691b1b]

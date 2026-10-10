@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json
-name: wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json
+key: wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json
+name: wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json
 hash: d4e8390db7a7bae9
 coverage: 0.666667
-learned_at: 2026-10-07 22:58:07
+learned_at: 2026-10-10 20:59:27
 nodes: [CLIPTextEncode, CLIPTextEncode, UNETLoader, VAELoader, VAEDecode, SaveImage, MarkdownNote, CLIPLoader, MarkdownNote, MarkdownNote, MarkdownNote, KSampler, ttN concat, MarkdownNote, LoraLoader, LoraLoader, LoraLoader, easy showAnything, Image_Resize, LoadImage, EmptyHunyuanLatentVideo, LoadImage, VAEEncode, LayerUtility: ZhipuGLM4V]
 patterns: [image_to_image, lora]
 missing: [LayerUtility: ZhipuGLM4V, ttN concat]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "WAN2.1_SmartphoneSnapshotPhot
 discoveries: [次要节点 `LayerUtility: ZhipuGLM4V` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json
+# wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1949347197003997185.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1超真实文生图 特写皮肤细节拉满_1949347197003997185.json`
 
 ## 结构
 

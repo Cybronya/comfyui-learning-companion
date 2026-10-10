@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux.1_fil
 hash: 9f6b7be1e9d67e58
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:35:38
+learned_at: 2026-10-10 22:47:33
 nodes: [PreviewImage, PreviewImage, SaveImage, MarkdownNote, LoadImage, MarkdownNote, cb0eaf1c-704f-477d-8893-79665db14ed1, b8560576-5524-4495-baa5-2cb40da12e9e]
 patterns: []
 missing: [b8560576-5524-4495-baa5-2cb40da12e9e, cb0eaf1c-704f-477d-8893-79665db14ed1]

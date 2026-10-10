@@ -1,13 +1,13 @@
 ---
-key: 图片生成/图生图/老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json
-name: 老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json
+key: 老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json
+name: 老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json
 hash: e8688cb20a5f77bb
 coverage: 0.873016
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 21:22:44
 nodes: [CLIPLoader, VAELoader, QwenImage21Cache, VAEDecode, KSampler, Reroute, EmptyLatentImage, easy ifElse, LoadImage, LoadImage, 图像缩放V2_孤海, LoadImage, UNETLoader, TextEncodeQwenImage21, DF_Text_Box, 布尔孤海, GoohaiUniversalSlider, GH_ImageVideoComparer, SaveImage, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [图像缩放V2_孤海, 布尔孤海]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识, 次要节点 `布尔孤海` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/图生图/老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json
+# 老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102264426807255042.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/老孙AI出品Qwen Image 2.1图像编辑｜图生图实操经验版｜稳定可靠_2102264426807255042.json`
 
 ## 结构
 

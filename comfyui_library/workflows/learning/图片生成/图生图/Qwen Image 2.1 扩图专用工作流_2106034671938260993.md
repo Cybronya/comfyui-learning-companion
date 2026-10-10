@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json
-name: Qwen Image 2.1 扩图专用工作流_2106034671938260993.json
+name: Qwen Image 2.1 扩图专用工作流_2106034671938260993
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json
 hash: 44670bbd70c2bb14
 coverage: 0.833333
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:05
 nodes: [PixaromaLabel, PathchSageAttentionKJ, LayerUtility: ImageScaleByAspectRatio V2, TextEncodeQwenImage21, QwenImage21Cache, PreviewImage, LoadImage, LoadImage, PixaromaLabel, MarkdownNote, VAEDecode, KSampler, SaveImage, CR Prompt Text, ImagePadKJ, GetImageSize, EmptyLatentImage, ModelAttentionBackend, TextGenerateLTX2Prompt, LoadImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2106034671938260993.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json`
 
 ## 结构
 

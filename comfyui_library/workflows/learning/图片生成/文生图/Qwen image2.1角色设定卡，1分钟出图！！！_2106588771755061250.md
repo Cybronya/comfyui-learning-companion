@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
+key: Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
 name: Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
 hash: 5c31f2f2d34c2415
 coverage: 0.608696
-learned_at: 2026-10-07 02:24:02
+learned_at: 2026-10-10 20:58:57
 nodes: [Seed (rgthree), EmptyLatentImage, VAELoader, CLIPLoader, UNETLoader, VAEDecode, SaveImage, LoadImage, ResolutionSelector, llama_cpp_model_loader, LayerUtility: TextJoin, llama_cpp_parameters, PrimitiveStringMultiline, MarkdownNote, KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, MarkdownNote, TextEncodeQwenImage21, PreviewAny, llama_cpp_instruct_adv, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline]
 patterns: []
 missing: [LayerUtility: TextJoin, Seed (rgthree)]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
+# Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json`
 

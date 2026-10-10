@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json
-name: rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json
+key: rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json
+name: rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json
 hash: f53007a137da9def
 coverage: 0.777778
-learned_at: 2026-10-09 20:05:46
+learned_at: 2026-10-10 20:59:26
 nodes: [VAELoader, CLIPLoader, LoraLoaderModelOnly, ConditioningZeroOut, CheckpointLoaderSimple, LoadDiffusionModelShared //Inspire, Qwen3_VQA, Note, Bjornulf_AnythingToText, CLIPTextEncode, ShowText, EmptySD3LatentImage, SaveImage, KSampler, VAEDecode, AILab_QwenVL, Note, Note]
 patterns: []
 missing: [LoadDiffusionModelShared //Inspire]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "Rebalance_beta_00001_.safetensors", "denoi
 discoveries: [次要节点 `LoadDiffusionModelShared //Inspire` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json
+# rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1983970835247628289.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/rebalancev1+Qwen3VL-Supermate（本地实测）_1983970835247628289.json`
 
 ## 结构
 

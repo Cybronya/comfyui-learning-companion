@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen2.1 图生图_2102013171056857089.json
-name: qwen2.1 图生图_2102013171056857089.json
+name: qwen2.1 图生图_2102013171056857089
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen2.1 图生图_2102013171056857089.json
 hash: 9b5fb25e3c3f4de3
 coverage: 0.8
-learned_at: 2026-10-09 22:27:07
+learned_at: 2026-10-10 20:48:12
 nodes: [VAELoader, CLIPLoader, UNETLoader, LoadImage, LoadImage, LoadImage, Image Comparer (rgthree), Int, TextEncodeQwenImage21, KSampler, VAEDecode, EmptyLatentImage, LayerUtility: ImageScaleByAspectRatio V2, ResolutionSelector, EmptyLatentImage, ComfySwitchNode, LoadImage, SaveImage, LoadImage, Text Multiline]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, Text Multiline]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/qwen2.1 图生图_2102013171056857089.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102013171056857089.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen2.1 图生图_2102013171056857089.json`
 
 ## 结构
 

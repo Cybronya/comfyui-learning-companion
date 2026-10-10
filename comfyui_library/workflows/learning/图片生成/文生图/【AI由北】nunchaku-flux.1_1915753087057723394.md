@@ -1,21 +1,21 @@
 ---
-key: 图片生成/文生图/【AI由北】nunchaku-flux.1_1915753087057723394.json
-name: 【AI由北】nunchaku-flux.1_1915753087057723394.json
+key: 【AI由北】nunchaku-flux.1_1915753087057723394.json
+name: 【AI由北】nunchaku-flux.1_1915753087057723394
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【AI由北】nunchaku-flux.1_1915753087057723394.json
 hash: dd679a677f441d42
 coverage: 0.894737
-learned_at: 2026-10-07 22:07:38
+learned_at: 2026-10-10 20:59:29
 nodes: [KSamplerSelect, VAELoader, BasicScheduler, NunchakuFluxLoraLoader, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, ModelSamplingFlux, SamplerCustomAdvanced, EmptySD3LatentImage, BasicGuider, NunchakuTextEncoderLoader, VAEDecode, SaveImage, FluxGuidance, RandomNoise, PrimitiveNode, PrimitiveNode, CLIPTextEncode, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/【AI由北】nunchaku-flux.1_1915753087057723394.json
+# 【AI由北】nunchaku-flux.1_1915753087057723394.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1915753087057723394.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【AI由北】nunchaku-flux.1_1915753087057723394.json`
 
 ## 结构
 

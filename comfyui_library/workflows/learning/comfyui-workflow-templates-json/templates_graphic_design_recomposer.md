@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_graphi
 hash: a32512ac43f8db1d
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:36:38
+learned_at: 2026-10-10 22:49:30
 nodes: [LoadImage, SaveImage, 172f1008-9337-4d2f-9212-ee081cb4faf5]
 patterns: []
 missing: [172f1008-9337-4d2f-9212-ee081cb4faf5]

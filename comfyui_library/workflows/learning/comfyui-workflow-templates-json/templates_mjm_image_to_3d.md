@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_mjm_im
 hash: 81bfc4f83bce2f02
 official: true
 coverage: 0.916667
-learned_at: 2026-10-07 21:36:38
+learned_at: 2026-10-10 22:49:31
 nodes: [BatchImagesNode, MarkdownNote, LoadImage, GeminiNanoBanana2, SaveImage, GeminiNanoBanana2, SaveImage, SaveImage, GeminiNanoBanana2, Preview3D, TripoImageToModelNode, SaveGLB]
 patterns: []
 missing: []

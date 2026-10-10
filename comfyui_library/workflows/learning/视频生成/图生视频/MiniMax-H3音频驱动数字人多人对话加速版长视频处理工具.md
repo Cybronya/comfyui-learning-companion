@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/MiniMax-H3音频驱动数字人多人对话加速版长视频处理工具.json
 hash: 26c7082042619de2
 coverage: 0.92
-learned_at: 2026-10-07 00:33:36
+learned_at: 2026-10-10 22:53:26
 nodes: [CLIPLoader, VAELoader, VAELoader, ComfyMathExpression, UNETLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, BasicGuider, RandomNoise, MiniMaxH3AVDecodeT8, VHS_VideoCombine, SamplerCustomAdvanced, LoraLoaderBypassModelOnly, PrimitiveFloat, ResolutionSelector, LoadImage, LoadImage, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, LoadAudio, SolAttnMiniMax]
 patterns: [text_to_image]
 missing: [CR Prompt Text]

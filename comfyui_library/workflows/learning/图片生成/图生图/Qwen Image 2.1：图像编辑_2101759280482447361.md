@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1：图像编辑_2101759280482447361.json
 hash: c1f4c07517c18ee4
-coverage: 0.625
-learned_at: 2026-10-07 02:41:27
+coverage: 0.666667
+learned_at: 2026-10-10 20:48:08
 nodes: [MarkdownNote, MarkdownNote, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, ComfySwitchNode, QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, PrimitiveStringMultiline, PreviewAny, BatchImagesNode, SaveImage, ImageCompare, SaveImageAdvanced, ComfySwitchNode, TextGenerate, JjkText, LoadImage, LoadImage]
 patterns: []
-missing: [ImageCompare]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 555537776240235, "steps": 25, "width": 1024}
-discoveries: [次要节点 `ImageCompare` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1：图像编辑_2101759280482447361.json
@@ -63,14 +62,8 @@ discoveries: [次要节点 `ImageCompare` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **62%**（15/24）
+覆盖率 **67%**（16/24）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`BatchImagesNode`、`SaveImage`、`SaveImageAdvanced`、`TextGenerate`、`LoadImage`
-
-**缺卡**（1）：`ImageCompare`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`BatchImagesNode`、`SaveImage`、`ImageCompare`、`SaveImageAdvanced`、`TextGenerate`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `ImageCompare` 知识库中没有该节点类型的任何知识

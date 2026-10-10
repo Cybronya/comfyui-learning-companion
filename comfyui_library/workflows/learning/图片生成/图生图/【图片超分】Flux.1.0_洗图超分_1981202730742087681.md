@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/【图片超分】Flux.1.0_洗图超分_1981202730742087681.json
-name: 【图片超分】Flux.1.0_洗图超分_1981202730742087681.json
+name: 【图片超分】Flux.1.0_洗图超分_1981202730742087681
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/【图片超分】Flux.1.0_洗图超分_1981202730742087681.json
 hash: 9216c1412b756eda
 coverage: 0.510204
-learned_at: 2026-10-09 22:36:19
+learned_at: 2026-10-10 20:48:13
 nodes: [easy cleanGpuUsed, CLIPTextEncode, LoraLoaderModelOnly, easy setNode, UNETLoader, LoraLoaderModelOnly, easy cleanGpuUsed, easy getNode, easy getNode, DualCLIPLoader, VAELoader, Anything Everywhere3, easy setNode, easy setNode, easy setNode, easy setNode, ResizeLongestToNode, easy getNode, GetImageSize+, ImageResize+, CLIPTextEncode, ConditioningCombine, ConditioningZeroOut, ControlNetLoader, ControlNetApplyAdvanced, easy cleanGpuUsed, easy getNode, VAEEncode, CR Latent Batch Size, RandomNoise, SamplerCustomAdvanced, BasicGuider, BasicScheduler, KSamplerSelect, easy cleanGpuUsed, easy setNode, easy getNode, Joy_caption_load, easy getNode, easy showAnything, Joy_caption, easy getNode, VAEDecode, LoadImage, SaveImage, ImpactInt, ImpactInt, easy float, easy float]
 patterns: []
 missing: [easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy float, easy float, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode, CR Latent Batch Size, GetImageSize+, ImageResize+]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 # 图片生成/图生图/【图片超分】Flux.1.0_洗图超分_1981202730742087681.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/1981202730742087681.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/【图片超分】Flux.1.0_洗图超分_1981202730742087681.json`
 
 ## 结构
 

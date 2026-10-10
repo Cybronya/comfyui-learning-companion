@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/【Qwen Image 2.1】万能输入工作流_2103013637228154881.json
 hash: 7bcc4a61eebef96a
 coverage: 0.692308
-learned_at: 2026-10-07 02:41:33
+learned_at: 2026-10-10 20:48:13
 nodes: [SaveImage, UNETLoader, QwenImage21Cache, VAELoader, Anything Everywhere3, Fast Groups Bypasser (rgthree), VAEDecode, KSampler, CLIPLoader, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, CR Prompt Text, ResolutionSelector, LoadImage, GetNode, Note, PreviewAny, LoadImage, ComfySwitchNode, CLIPLoader, SetNode, EmptyLatentImage, TextGenerateLTX2Prompt]
 patterns: []
 missing: [CR Prompt Text]

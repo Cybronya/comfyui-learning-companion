@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_moge_perspect
 hash: 8da3e8693f5635b9
 official: true
 coverage: 0.285714
-learned_at: 2026-10-07 21:33:12
+learned_at: 2026-10-10 22:43:01
 nodes: [LoadImage, MarkdownNote, PreviewImage, PreviewImage, SaveGLB, MarkdownNote, 936dfaf2-575a-48b5-9e0c-df391319d11f]
 patterns: []
 missing: [936dfaf2-575a-48b5-9e0c-df391319d11f]

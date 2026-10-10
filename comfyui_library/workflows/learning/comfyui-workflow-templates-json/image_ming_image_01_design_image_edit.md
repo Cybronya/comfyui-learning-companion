@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ming_image
 hash: 843ee90b638d843f
 official: true
 coverage: 0.421053
-learned_at: 2026-10-07 21:35:52
+learned_at: 2026-10-10 22:48:19
 nodes: [LoadImage, 4522b5d6-7f71-4b60-8fab-1e6ffbd5f1c1, GetImageSize, ResizeImageMaskNode, MarkdownNote, MarkdownNote, MarkdownNote, CreateBoundingBoxes, PreviewAny, BuildJsonPromptIdeogram, PreviewAny, PreviewImage, MarkdownNote, PreviewAny, ae951efd-07f6-49cb-bfdb-0b8e3eee4cda, ImageStitch, ImageStitch, PreviewImage, SaveImageAdvanced]
 patterns: []
 missing: [4522b5d6-7f71-4b60-8fab-1e6ffbd5f1c1, ae951efd-07f6-49cb-bfdb-0b8e3eee4cda]
@@ -52,7 +52,7 @@ discoveries: [次要节点 `4522b5d6-7f71-4b60-8fab-1e6ffbd5f1c1` 知识库中�
 
 **缺卡**（2）：`4522b5d6-7f71-4b60-8fab-1e6ffbd5f1c1`、`ae951efd-07f6-49cb-bfdb-0b8e3eee4cda`
 
-**用到的条目**：LoadImage、BuildJsonPromptIdeogram、GetImageSize、ResizeImageMaskNode、GetImageSize、SaveImageAdvanced、ImageStitch、CreateBoundingBoxes
+**用到的条目**：LoadImage、BuildJsonPromptIdeogram、GetImageSize、ResizeImageMaskNode、GetImageSize、SaveImageAdvanced、ImageStitch、ImageStitch
 
 ## 学习发现
 

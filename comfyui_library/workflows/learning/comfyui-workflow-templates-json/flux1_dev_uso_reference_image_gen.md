@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux1_dev_uso_re
 hash: ecdbb10477186cf9
 official: true
 coverage: 0.625
-learned_at: 2026-10-07 21:35:23
+learned_at: 2026-10-10 22:47:07
 nodes: [LoadImage, SaveImage, LoadImage, LoadImage, MarkdownNote, SaveImage, db9e0685-d161-4026-b52c-d0cd40ff7381, ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50]
 patterns: []
 missing: [db9e0685-d161-4026-b52c-d0cd40ff7381, ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50]

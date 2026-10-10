@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
-name: Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
+key: Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
+name: Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
 hash: 6ee9d3de1287178c
 coverage: 0.941176
-learned_at: 2026-10-09 02:01:39
+learned_at: 2026-10-10 20:58:36
 nodes: [EmptyLatentImage, BasicScheduler, RandomNoise, SamplerCustomAdvanced, KSamplerAdvanced, KSamplerSelect, BasicGuider, CLIPTextEncodeFlux, CFGZeroStar, VAEDecode, CLIPTextEncode, StringConstantMultiline, UNETLoader, Lora Loader Stack (rgthree), SaveImage, VAELoader, DualCLIPLoader]
 patterns: []
 missing: [Lora Loader Stack (rgthree)]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 31, "denoise": "normal", "height": 1920, "s
 discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
+# Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1970368325295480834.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_luma_ray3_3_
 hash: 0530f24af18b7dca
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:34:10
+learned_at: 2026-10-10 22:44:53
 nodes: [LumaRay32TextToVideoNode, LumaRay32ExtendVideoNode, SaveVideo, MarkdownNote, PreviewAny, SaveVideo]
 patterns: []
 missing: []

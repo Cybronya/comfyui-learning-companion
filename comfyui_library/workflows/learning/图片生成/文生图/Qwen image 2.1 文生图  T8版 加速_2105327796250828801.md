@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json
+key: Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json
 name: Qwen image 2.1 文生图  T8版 加速_2105327796250828801
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json
 hash: e461b780b2680844
 coverage: 0.9
-learned_at: 2026-10-07 02:15:39
+learned_at: 2026-10-10 20:58:57
 nodes: [CLIPLoader, VAELoader, VAEDecode, KSampler, QwenImage21Cache, SaveImage, UNETLoader, EmptyLatentImage, CLIPLoader, TextEncodeQwenImage21, ResolutionSelector, easy showAnything, TextGenerateLTX2Prompt, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, QwenImage21SpectrumT8, QwenImage21Cache, CR Text, UNETLoader, SaveImageAdvanced]
 patterns: []
 missing: [CR Text]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json
+# Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 文生图  T8版 加速_2105327796250828801.json`
 

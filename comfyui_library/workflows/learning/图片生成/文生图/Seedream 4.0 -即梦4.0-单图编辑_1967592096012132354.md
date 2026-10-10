@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json
-name: Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json
+key: Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json
+name: Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json
 hash: b26fdd9ca092841e
 coverage: 0.75
-learned_at: 2026-10-09 02:01:38
+learned_at: 2026-10-10 20:59:12
 nodes: [SaveImage, LoadImage, RH_Jimeng4_Image2Image, CR Prompt Text]
 patterns: []
 missing: [CR Prompt Text]
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json
+# Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1967592096012132354.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedream 4.0 -即梦4.0-单图编辑_1967592096012132354.json`
 
 ## 结构
 

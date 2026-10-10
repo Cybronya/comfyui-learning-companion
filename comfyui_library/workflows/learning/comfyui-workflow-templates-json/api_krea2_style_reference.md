@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_krea2_style_
 hash: ea21962fbedc0d3b
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:34:06
+learned_at: 2026-10-10 22:44:46
 nodes: [Krea2ImageNode, SaveImage, Krea2StyleReferenceNode, Krea2StyleReferenceNode, LoadImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []
@@ -37,4 +37,4 @@ missing: []
 
 **有卡**：`Krea2ImageNode`、`SaveImage`、`Krea2StyleReferenceNode`、`LoadImage`
 
-**用到的条目**：LoadImage、Krea2StyleReferenceNode、SaveImage、Krea2ImageNode、sd15-t2i-basic、sd15-t2i-lora、node、LoraLoaderModelOnly
+**用到的条目**：LoadImage、Krea2StyleReferenceNode、SaveImage、Krea2ImageNode、sd15-t2i-basic、sd15-t2i-lora、Krea2StyleReference、node

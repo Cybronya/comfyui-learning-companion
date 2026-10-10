@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多图编辑工作流｜角色一致性轻松保｜批量改图不跑脸_2102623788155363330.json
-name: Qwen Image 2.1多图编辑工作流｜角色一致性轻松保｜批量改图不跑脸_2102623788155363330.json
+name: Qwen Image 2.1多图编辑工作流｜角色一致性轻松保｜批量改图不跑脸_2102623788155363330
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑工作流｜角色一致性轻松保｜批量改图不跑脸_2102623788155363330.json
 hash: b0d4a560dc8e9ad1
 coverage: 0.876712
-learned_at: 2026-10-09 22:19:30
+learned_at: 2026-10-10 20:48:07
 nodes: [ComfySwitchNode, VAEDecode, EmptyLatentImage, CLIPLoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy showAnything, TextGenerateLTX2Prompt, TextEncodeQwenImage21, VAELoader, UNETLoader, QwenImage21Cache, KSampler, LoraLoaderModelOnly, ResolutionSelector, PrimitiveStringMultiline, Fast Groups Muter (rgthree), PrimitiveBoolean, Fast Groups Bypasser (rgthree), SaveImage, CLIPLoader, BatchImagesNode, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1多图编辑工作流｜角色一致性轻松保｜批量改图不跑脸_2102623788155363330.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102623788155363330.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑工作流｜角色一致性轻松保｜批量改图不跑脸_2102623788155363330.json`
 
 ## 结构
 

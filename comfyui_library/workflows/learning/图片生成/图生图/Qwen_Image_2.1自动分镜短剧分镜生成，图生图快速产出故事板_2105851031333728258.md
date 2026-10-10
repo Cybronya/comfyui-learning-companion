@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json
-name: Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json
+name: Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json
 hash: b7b392851d3ceeca
 coverage: 0.854167
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:10
 nodes: [CLIPLoader, VAELoader, VAEDecode, QwenImage21Cache, SaveImageAdvanced, ComfySwitchNode, UNETLoader, LoadImage, TextEncodeQwenImage21, SaveImage, EmptyLatentImage, KSampler, LoadImage, LoadImage, PrimitiveStringMultiline, ResolutionSelector, PrimitiveStringMultiline, LoadImage, PreviewImage, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105851031333728258.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen_Image_2.1自动分镜短剧分镜生成，图生图快速产出故事板_2105851031333728258.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_beeble_switc
 hash: 563a38dfa391bef3
 official: true
 coverage: 0.888889
-learned_at: 2026-10-07 21:33:16
+learned_at: 2026-10-10 22:43:10
 nodes: [BeebleSwitchXImageEdit, SaveImage, JoinImageWithAlpha, LoadImage, SaveImage, InvertMask, ImageCompare, LoadImage, MarkdownNote]
 patterns: []
 missing: []

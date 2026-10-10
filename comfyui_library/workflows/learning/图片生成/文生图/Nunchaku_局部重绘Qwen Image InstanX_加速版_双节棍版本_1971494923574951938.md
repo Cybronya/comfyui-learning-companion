@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
-name: Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
+key: Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
+name: Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
 hash: f454185eb7c57c5a
 coverage: 0.833333
-learned_at: 2026-10-09 19:50:51
+learned_at: 2026-10-10 20:58:48
 nodes: [VAELoader, CLIPLoader, MarkdownNote, CLIPTextEncode, ControlNetLoader, ControlNetInpaintingAliMamaApply, ModelSamplingAuraFlow, VAEDecode, MaskToImage, PreviewImage, SaveImage, VAEEncode, LoadImage, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, NunchakuQwenImageDiTLoader, KSampler, UNETLoader]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
+# Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1971494923574951938.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json`
 
 ## 结构
 

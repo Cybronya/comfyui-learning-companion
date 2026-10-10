@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/提示词自动优化Qwen Image 2.1 PE 多图像编辑-t8的pe高质量版_2102243596664655874.json
-name: 提示词自动优化Qwen Image 2.1 PE 多图像编辑-t8的pe高质量版_2102243596664655874.json
+name: 提示词自动优化Qwen Image 2.1 PE 多图像编辑-t8的pe高质量版_2102243596664655874
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/提示词自动优化Qwen Image 2.1 PE 多图像编辑-t8的pe高质量版_2102243596664655874.json
 hash: b7b0f82e3d453ecd
 coverage: 0.777778
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:18
 nodes: [CLIPLoader, VAELoader, TextEncodeQwenImage21, QwenImage21Cache, KSampler, VAEDecode, easy cleanGpuUsed, UNETLoader, easy showAnything, ComfySwitchNode, EmptyLatentImage, PrimitiveBoolean, ResolutionSelector, QwenPERewriteT8, 孤海注释, SaveImage, 孤海注释, LoadImage, CR Prompt Text, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 # 图片生成/图生图/提示词自动优化Qwen Image 2.1 PE 多图像编辑-t8的pe高质量版_2102243596664655874.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102243596664655874.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/提示词自动优化Qwen Image 2.1 PE 多图像编辑-t8的pe高质量版_2102243596664655874.json`
 
 ## 结构
 

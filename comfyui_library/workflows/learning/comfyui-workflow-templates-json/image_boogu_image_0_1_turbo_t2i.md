@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_boogu_imag
 hash: fba9a2cf0e3d171e
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:34
+learned_at: 2026-10-10 22:47:27
 nodes: [SaveImage, 4f6f2e64-58b0-4eb6-9b91-a61d1945a19f, ResolutionSelector, MarkdownNote]
 patterns: []
 missing: [4f6f2e64-58b0-4eb6-9b91-a61d1945a19f]

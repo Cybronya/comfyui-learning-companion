@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_dev_full_te
 hash: f4485b4ab0f8a810
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:25
+learned_at: 2026-10-10 22:47:10
 nodes: [SaveImage, MarkdownNote, 2523c08d-4c99-4b73-910c-62c873f124db]
 patterns: []
 missing: [2523c08d-4c99-4b73-910c-62c873f124db]

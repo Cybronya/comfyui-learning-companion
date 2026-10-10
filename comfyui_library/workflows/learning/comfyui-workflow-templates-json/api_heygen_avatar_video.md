@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_heygen_avata
 hash: 1e48c3fb1c035eb0
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:33:52
+learned_at: 2026-10-10 22:44:20
 nodes: [HeyGenCreateAvatarNode, HeyGenAvatarVideoNode, SaveText, StringConcatenate, PreviewAny, SaveVideo, MarkdownNote, ColorToRGBInt, PreviewAny]
 patterns: []
 missing: []

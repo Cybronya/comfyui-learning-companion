@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_nano_banana_
 hash: 1348890e2f4c6510
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:34:20
+learned_at: 2026-10-10 22:45:13
 nodes: [GeminiNanoBanana2V2, LoadImage, SaveImageAdvanced, ImageCompare, MarkdownNote]
 patterns: []
 missing: []

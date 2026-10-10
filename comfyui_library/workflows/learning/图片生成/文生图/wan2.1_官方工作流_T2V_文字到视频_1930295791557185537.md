@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json
-name: wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json
+key: wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json
+name: wan2.1_官方工作流_T2V_文字到视频_1930295791557185537
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json
 hash: 2b862362b770b7bc
 coverage: 1
-learned_at: 2026-10-07 22:34:30
+learned_at: 2026-10-10 20:59:26
 nodes: [ModelSamplingSD3, KSampler, CLIPTextEncode, UNETLoader, CLIPTextEncode, VAELoader, EmptyHunyuanLatentVideo, CLIPLoader, SaveAnimatedWEBP, VAEDecode, VHS_VideoCombine]
 patterns: []
 missing: []
 parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 138152422751227, "steps": 30}
 ---
 
-# 图片生成/文生图/wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json
+# wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1930295791557185537.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1_官方工作流_T2V_文字到视频_1930295791557185537.json`
 
 ## 结构
 

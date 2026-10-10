@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json
+key: Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json
 name: Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json
 hash: 1135c8f343ed176c
 coverage: 0.729167
-learned_at: 2026-10-07 02:16:48
+learned_at: 2026-10-10 20:58:51
 nodes: [Mask Fill Holes, GrowMask, DrawMaskOnImage, KSampler, VAEDecode, LayerUtility: ImageReelComposit, PreviewImage, EmptyLatentImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), KSampler, SaveImage, LayerUtility: ImageReel, UNETLoader, CLIPLoader, VAELoader, LoadImage, Anything Everywhere3, TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PreviewAny, TextEncodeQwenImage21, KSampler, VAEDecode, KSampler, VAEDecode, TextEncodeQwenImage21, llama_cpp_model_loader, CR Text, llama_cpp_instruct_adv, PreviewAny, EmptyLatentImage, ResolutionSelector, ResolutionSelector, Fast Groups Bypasser (rgthree), EmptyLatentImage, GetImageSize, EmptyLatentImage, CR Text, ComfySwitchNode, SaveImage, ResolutionSelector, RHLLMChatNode, SaveImage, CLIPTextEncode, CheckpointLoaderSimple, SAM3_Detect, Mask Fill Holes, GrowMask, DrawMaskOnImage, PreviewImage, LoadImage, VAEDecode, LayerUtility: ImageReelComposit, TextEncodeQwenImage21, ComfySwitchNode, LayerUtility: ImageReel, PreviewImage, PreviewImage, Image Comparer (rgthree), SaveImage, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [CR Text, CR Text, LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, Mask Fill Holes, Mask Fill Holes]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "checkpoint": "sam3.1_multiplex_fp16.s
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json
+# Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1全功能合集，文生图局部重绘角色多视图图像编辑全覆盖_2103169560424837122.json`
 

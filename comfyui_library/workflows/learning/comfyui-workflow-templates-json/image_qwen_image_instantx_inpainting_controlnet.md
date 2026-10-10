@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_image
 hash: 1a0b3773fbe12a09
 official: true
 coverage: 0.770833
-learned_at: 2026-10-07 21:36:02
+learned_at: 2026-10-10 22:48:36
 nodes: [CLIPLoader, UNETLoader, CLIPTextEncode, ControlNetLoader, VAELoader, ModelSamplingAuraFlow, ControlNetInpaintingAliMamaApply, MarkdownNote, Note, VAEEncode, SetLatentNoiseMask, MaskPreview, MarkdownNote, CLIPLoader, UNETLoader, ControlNetLoader, ModelSamplingAuraFlow, ImageScaleToMaxDimension, LoraLoaderModelOnly, VAEDecode, ImageCompositeMasked, MaskPreview, PreviewImage, KSampler, MarkdownNote, LoadImage, MarkdownNote, CLIPTextEncode, ImagePadForOutpaint, cade3e30-0eb2-4fd2-bf6e-8518f3a96e0c, f93c215e-c393-460e-9534-ed2c3d8a652e, VAEEncode, ControlNetInpaintingAliMamaApply, VAELoader, 2a4b2cc0-db37-4302-a067-da392f38f06b, SaveImage, LoadImage, SaveImage, CLIPTextEncode, CLIPTextEncode, Note, LoraLoaderModelOnly, KSampler, SaveImage, SaveImage, MarkdownNote, VAEDecode, ImageCompositeMasked]
 patterns: [image_to_image]
 missing: [2a4b2cc0-db37-4302-a067-da392f38f06b, cade3e30-0eb2-4fd2-bf6e-8518f3a96e0c, f93c215e-c393-460e-9534-ed2c3d8a652e]

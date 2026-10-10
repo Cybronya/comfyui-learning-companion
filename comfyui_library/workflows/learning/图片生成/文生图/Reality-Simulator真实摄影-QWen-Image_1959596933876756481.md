@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
-name: Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+key: Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+name: Reality-Simulator真实摄影-QWen-Image_1959596933876756481
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
 hash: d82c87d1de120565
 coverage: 0.764706
-learned_at: 2026-10-07 23:37:50
+learned_at: 2026-10-10 20:59:10
 nodes: [KSampler, SaveImage, VAELoader, VAEDecode, CLIPLoader, CLIPTextEncode, UNETLoader, CFGNorm, ModelSamplingAuraFlow, LoraLoaderModelOnly, CLIPTextEncode, PrimitiveString, RH_Captioner, Text Concatenate, easy showAnything, LoadImage, CR SDXL Aspect Ratio]
 patterns: []
 missing: [Text Concatenate, CR SDXL Aspect Ratio]
@@ -15,9 +15,9 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+# Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1959596933876756481.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json`
 
 ## 结构
 

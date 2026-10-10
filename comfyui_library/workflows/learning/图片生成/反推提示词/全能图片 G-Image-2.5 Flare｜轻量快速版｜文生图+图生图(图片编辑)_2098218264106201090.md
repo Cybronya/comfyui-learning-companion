@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json
 hash: 8ba315b7968341b3
 coverage: 0.666667
-learned_at: 2026-10-07 02:41:08
+learned_at: 2026-10-10 20:48:00
 nodes: [SaveImage, PreviewImage, SaveImage, PreviewImage, RH_RhartImageG25OfficialTokenFlareEdit, LoadImage, LoadImage, LoadImage, LoadImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, 忽略多组孤海, 忽略多组孤海]
 patterns: []
 missing: [忽略多组孤海, 忽略多组孤海]

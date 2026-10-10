@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
-name: nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
+key: nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
+name: nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
 hash: 6197acd40ad3d5aa
 coverage: 0.761905
-learned_at: 2026-10-07 22:22:58
+learned_at: 2026-10-10 20:59:23
 nodes: [BasicScheduler, EmptySD3LatentImage, PrimitiveNode, DualCLIPLoader, VAELoader, CLIPTextEncode, KSamplerSelect, RandomNoise, PrimitiveNode, ModelSamplingFlux, ControlNetApplyAdvanced, FluxGuidance, BasicGuider, ImageConcanate, JWImageResizeByLongerSide, ImageConcanate, JWImageResizeByLongerSide, VAEDecode, LayerUtility: PurgeVRAM, SamplerCustomAdvanced, NunchakuFluxDiTLoader, DownloadAndLoadDepthAnythingV2Model, NunchakuPulidApply, NunchakuPulidLoader, SetUnionControlNetType, SetUnionControlNetType, ImpactSwitch, SaveImage, OpenposePreprocessor, DepthAnything_V2, ImpactSwitch, JWInteger, CLIPTextEncode, CR Prompt Text, Note, Note, SaveImage, LoadImage, Note, Note, ControlNetLoader, LoadImage]
 patterns: []
 missing: [LayerUtility: PurgeVRAM, CR Prompt Text]
@@ -15,9 +15,9 @@ parameters: {"controlnet_strength": 0.6000000000000001}
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
+# nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1925220714343768066.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json`
 
 ## 结构
 

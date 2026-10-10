@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_pruna_p_vide
 hash: 2b8616ed5e1680c1
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:34
+learned_at: 2026-10-10 22:45:39
 nodes: [PrunaTextToVideoNode, SaveVideo]
 patterns: []
 missing: []

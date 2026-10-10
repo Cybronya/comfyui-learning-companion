@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_google_nano_
 hash: be0f846e06531f6a
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:43
+learned_at: 2026-10-10 22:44:02
 nodes: [SaveImage, LoadImage, GeminiNanoBanana2V2]
 patterns: []
 missing: []

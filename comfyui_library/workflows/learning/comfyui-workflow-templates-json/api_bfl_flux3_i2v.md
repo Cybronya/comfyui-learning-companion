@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bfl_flux3_i2
 hash: 20ee0c2ce272f4ae
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:18
+learned_at: 2026-10-10 22:43:13
 nodes: [SaveVideo, LoadImage, Flux3ImageToVideoNode]
 patterns: []
 missing: []

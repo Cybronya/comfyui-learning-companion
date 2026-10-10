@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_luma_i2v.jso
 hash: 0c660c05d325a7fb
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:34:08
+learned_at: 2026-10-10 22:44:49
 nodes: [MarkdownNote, LoadImage, LumaImageToVideoNode, SaveVideo, LoadImage, LumaConceptsNode, LumaConceptsNode]
 patterns: []
 missing: []

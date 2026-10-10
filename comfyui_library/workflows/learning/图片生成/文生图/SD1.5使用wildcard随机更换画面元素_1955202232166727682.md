@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
-name: SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
+key: SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
+name: SD1.5使用wildcard随机更换画面元素_1955202232166727682
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
 hash: 6755735e75c41c0f
 coverage: 0.9
-learned_at: 2026-10-07 23:24:19
+learned_at: 2026-10-10 20:59:10
 nodes: [KSampler, CheckpointLoaderSimple, LoraLoader, VAEDecode, easy cleanGpuUsed, ImpactWildcardProcessor, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, SaveImage]
 patterns: [text_to_image, lora]
 missing: [easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "SD1.5 dreamshaper_8.safet
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
+# SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1955202232166727682.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json`
 
 ## 结构
 

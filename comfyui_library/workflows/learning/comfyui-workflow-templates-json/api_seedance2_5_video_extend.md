@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_seedance2_5_
 hash: 4fd2a20e1a89a513
 official: true
 coverage: 0.571429
-learned_at: 2026-10-07 21:34:51
+learned_at: 2026-10-10 22:46:11
 nodes: [SaveVideo, LoadVideo, Video Slice, ByteDance2ReferenceNodeV2, d9aa59a4-3784-4796-9f1b-5b467fb41fa1, SaveVideo, MarkdownNote]
 patterns: []
 missing: [Video Slice, d9aa59a4-3784-4796-9f1b-5b467fb41fa1]

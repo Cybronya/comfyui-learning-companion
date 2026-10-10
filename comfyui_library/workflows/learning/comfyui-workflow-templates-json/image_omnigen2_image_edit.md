@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_omnigen2_i
 hash: 0783a407d8808d35
 official: true
 coverage: 0.888889
-learned_at: 2026-10-07 21:35:54
+learned_at: 2026-10-10 22:48:22
 nodes: [SamplerCustomAdvanced, ReferenceLatent, ReferenceLatent, ReferenceLatent, ReferenceLatent, EmptySD3LatentImage, RandomNoise, DualCFGGuider, VAELoader, CLIPLoader, UNETLoader, LoadImage, BasicScheduler, KSamplerSelect, MarkdownNote, ImageScaleToTotalPixels, ImageScaleToTotalPixels, VAEEncode, CLIPTextEncode, CLIPTextEncode, GetImageSize, MarkdownNote, MarkdownNote, VAEDecode, SaveImage, LoadImage, VAEEncode]
 patterns: []
 missing: []

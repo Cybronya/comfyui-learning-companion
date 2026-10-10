@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_qwen3_t2i.js
 hash: ba6169102417a2ac
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:34:37
+learned_at: 2026-10-10 22:45:43
 nodes: [SaveImage, ResolutionSelector, MarkdownNote, QwenImageTextToImageApi]
 patterns: []
 missing: []

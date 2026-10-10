@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json
+key: Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json
 name: Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json
 hash: 192c308b106c4513
 coverage: 0.466667
-learned_at: 2026-10-07 02:14:26
+learned_at: 2026-10-10 20:58:51
 nodes: [UNETLoader, CLIPLoader, Image Remove Alpha JK, VOSR2Upscale, VOSR2ModelLoader, UNETLoader, CLIPLoader, TextEncodeQwenImage21, QwenImage21Cache, ComfySwitchNode, EmptyLatentImage, VAELoader, ResolutionSelector, PlaySound|pysssss, Lora Loader Stack (rgthree), MarkdownNote, PrimitiveStringMultiline, VAEDecode, easy cleanGpuUsed, GetItemFromList, easy promptList, easy forLoopEnd, easy showAnything, easy batchAnything, Note, SaveImage, KSampler, PreviewImage, easy forLoopStart, easy lengthAnything]
 patterns: []
 missing: [GetItemFromList, Image Remove Alpha JK, PlaySound|pysssss, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy lengthAnything, Lora Loader Stack (rgthree), easy promptList]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `GetItemFromList` 知识库中没有该节点类型的任何知识, 次要节点 `Image Remove Alpha JK` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy promptList` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json
+# Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 skills+for循环-文生图+放大2K,4K_2102658672664072194.json`
 

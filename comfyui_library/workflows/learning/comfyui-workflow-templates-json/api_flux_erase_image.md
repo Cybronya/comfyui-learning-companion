@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_flux_erase_i
 hash: f026370a5b1a3756
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:33:37
+learned_at: 2026-10-10 22:43:51
 nodes: [SaveImage, ImageCompare, MarkdownNote, FluxEraseNode, LoadImage]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveImage`、`ImageCompare`、`FluxEraseNode`、`LoadImage`
 
-**用到的条目**：LoadImage、FluxEraseNode、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、node、CheckpointLoaderSimple
+**用到的条目**：LoadImage、FluxEraseNode、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、node、Compare

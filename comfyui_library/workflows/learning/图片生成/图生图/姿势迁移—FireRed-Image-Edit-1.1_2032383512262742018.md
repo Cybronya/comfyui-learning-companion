@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json
-name: 姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json
+name: 姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json
 hash: d51a122633a0a51a
 coverage: 0.661017
-learned_at: 2026-10-09 22:19:25
+learned_at: 2026-10-10 20:48:16
 nodes: [ImageConcanate, ConditioningZeroOut, VAEDecode, VAEEncode, KSampler, UnetLoaderGGUF, LayerUtility: PurgeVRAM, ImageScaleToTotalPixels, ModelSamplingAuraFlow, CFGNorm, PathchSageAttentionKJ, ConditioningZeroOut, EmptySD3LatentImage, easy imageSize, LoadImage, ShowText|pysssss, LayerUtility: PurgeVRAM, ImageScaleToTotalPixels, ImageScaleToTotalPixels, CLIPLoader, VAELoader, VAELoader, CLIPLoader, CR Text, CR Text, SDPoseOODLoader, LoadImage, CLIPTextEncode, UNETLoader, UNETLoader, VAEDecode, LayerUtility: PurgeVRAM, SaveImage, PreviewImage, Image Comparer (rgthree), ImageConcanate, SaveImageJPG_GH, PreviewImage, VAEDecode, LayerColor: ColorAdapter, KSampler, LoraLoaderModelOnly, workflow>123, LoraLoaderModelOnly, KSampler, SDPoseOODProcessor, PreviewImage, easy ifElse, PrimitiveBoolean, TextEncodeQwenImageEditPlus, ShowText|pysssss, Qwen3_VQA, SomethingToString, PrimitiveBoolean, easy ifElse, CR Text Concatenate, CR Text Concatenate, CR Text, CR Text]
 patterns: [image_to_image]
 missing: [CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, CR Text Concatenate, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, workflow>123, LayerColor: ColorAdapter, easy imageSize]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2032383512262742018.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json`
 
 ## 结构
 

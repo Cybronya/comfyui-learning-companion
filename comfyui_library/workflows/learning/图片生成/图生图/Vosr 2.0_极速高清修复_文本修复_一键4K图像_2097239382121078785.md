@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Vosr 2.0_极速高清修复_文本修复_一键4K图像_2097239382121078785.json
-name: Vosr 2.0_极速高清修复_文本修复_一键4K图像_2097239382121078785.json
+name: Vosr 2.0_极速高清修复_文本修复_一键4K图像_2097239382121078785
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Vosr 2.0_极速高清修复_文本修复_一键4K图像_2097239382121078785.json
 hash: d3e9d1b9afc86a86
 coverage: 0.714286
-learned_at: 2026-10-09 22:27:07
+learned_at: 2026-10-10 20:48:11
 nodes: [VOSR2ModelLoader, Int, SaveImage, VOSR2Upscale, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Image Comparer (rgthree)]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Vosr 2.0_极速高清修复_文本修复_一键4K图像_2097239382121078785.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2097239382121078785.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Vosr 2.0_极速高清修复_文本修复_一键4K图像_2097239382121078785.json`
 
 ## 结构
 

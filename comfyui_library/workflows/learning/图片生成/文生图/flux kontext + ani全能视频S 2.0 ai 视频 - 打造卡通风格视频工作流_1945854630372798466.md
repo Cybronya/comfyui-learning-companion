@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
-name: flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
+key: flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
+name: flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
 hash: d1cf0b3d4e5b3bf4
 coverage: 0.837838
-learned_at: 2026-10-07 19:12:56
+learned_at: 2026-10-10 20:59:18
 nodes: [WanVideoExperimentalArgs, WanVideoSLG, VAELoader, FluxKontextImageScale, LayerUtility: PurgeVRAM V2, ImageResizeKJv2, CLIPTextEncode, KSampler, VAEEncode, ReferenceLatent, FluxGuidance, EmptySD3LatentImage, ConditioningZeroOut, WanVideoBlockSwap, ImageResizeKJv2, WanVideoClipVisionEncode, WanVideoDecode, LayerUtility: PurgeVRAM V2, UNETLoader, DualCLIPLoader, LoadImage, WanVideoLoraSelect, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, CLIPVisionLoader, PreviewImage, VAEDecode, SetNode, GetNode, WanVideoImageToVideoEncode, WanVideoTextEncode, Power Lora Loader (rgthree), WanVideoEnhanceAVideo, WanVideoSampler, WanVideoFreeInitArgs, VHS_VideoCombine]
 patterns: [image_to_image]
 missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, Power Lora Loader (rgthree)]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
+# flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1945854630372798466.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json`
 
 ## 结构
 

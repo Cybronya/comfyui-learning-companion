@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json
-name: Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json
+name: Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json
 hash: 2c2473b8006ee695
 coverage: 0.904762
-learned_at: 2026-10-09 22:27:07
+learned_at: 2026-10-10 20:48:02
 nodes: [VAELoader, SamplerCustom, DF_Get_image_size, ImageScaleToTotalPixels, KSamplerSelect, ModelSamplingAuraFlow, BasicScheduler, SeedVR2LoadDiTModel, TextEncodeBooguEdit, UNETLoader, CLIPLoader, LoraLoaderModelOnly, SaveImage, SeedVR2LoadVAEModel, LoadImage, EmptyLatentImage, CR Prompt Text, SaveImage, VAEDecode, SeedVR2VideoUpscaler, PrimitiveInt]
 patterns: []
 missing: [CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2100503999580565506.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json`
 
 ## 结构
 

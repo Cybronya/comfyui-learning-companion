@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_animat
 hash: c7e67adc03ce0414
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:37:19
+learned_at: 2026-10-10 22:50:45
 nodes: [LoadImage, LoadVideo, 79280513-53b2-4417-93f8-f3e116bb6736, SaveVideo, SaveVideo, MarkdownNote, MarkdownNote, 04554b7f-9d5a-4160-a710-20673bc4782d]
 patterns: []
 missing: [04554b7f-9d5a-4160-a710-20673bc4782d, 79280513-53b2-4417-93f8-f3e116bb6736]

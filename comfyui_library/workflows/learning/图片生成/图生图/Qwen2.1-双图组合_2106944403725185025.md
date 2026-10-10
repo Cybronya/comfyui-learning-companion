@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen2.1-双图组合_2106944403725185025.json
 hash: 0d8f0214243440a8
 coverage: 0.923077
-learned_at: 2026-10-07 02:41:29
+learned_at: 2026-10-10 20:48:09
 nodes: [SaveImage, VAEDecode, BasicGuider, QwenImage21FunPDDLoader, SamplerCustomAdvanced, RandomNoise, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, LoadImage, LoadImage, PrimitiveInt]
 patterns: []
 missing: []

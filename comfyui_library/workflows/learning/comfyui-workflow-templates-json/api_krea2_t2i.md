@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_krea2_t2i.js
 hash: 3e71a141d6485dad
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:06
+learned_at: 2026-10-10 22:44:46
 nodes: [Krea2ImageNode, SaveImage]
 patterns: []
 missing: []

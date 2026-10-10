@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json
-name: Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json
+name: Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json
 hash: 5cefc1350d27200f
 coverage: 0.758621
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:06
 nodes: [VAEDecode, Reroute, LoadImage, 图像缩放V2_孤海, UNETLoader, CLIPLoader, VAELoader, DF_Text_Box, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, GH_ImageVideoComparer, Reroute, Reroute, Reroute, Reroute, EmptyLatentImage, ImpactMinMax, QwenImage21Cache, KSampler, Reroute, Reroute, Reroute, Reroute, GoohaiRatioAndResolution, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [图像缩放V2_孤海]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点�
 
 # 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102546574596460545.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json`
 
 ## 结构
 

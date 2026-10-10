@@ -1,21 +1,21 @@
 ---
-key: 图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
-name: 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
+key: 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
+name: 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
 hash: df5296dfaec8b0e7
 coverage: 0.571429
-learned_at: 2026-10-09 22:36:22
+learned_at: 2026-10-10 21:23:15
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, PreviewImage, SaveImage, SaveImage, Fast Groups Bypasser (rgthree), PreviewImage, RH_RhartImageG25SunburstTextToImage, RH_RhartImageG25OfficialTokenFlareEdit, PreviewImage, SaveImage, RH_RhartImageG25OfficialTokenFlareTextToImage, Fast Groups Bypasser (rgthree), SaveImage, JjkText, Fast Groups Bypasser (rgthree), PreviewImage, RH_RhartImageG25SunburstImageToImage, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []
 ---
 
-# 图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
+# 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2090679203065851906.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json`
 
 ## 结构
 

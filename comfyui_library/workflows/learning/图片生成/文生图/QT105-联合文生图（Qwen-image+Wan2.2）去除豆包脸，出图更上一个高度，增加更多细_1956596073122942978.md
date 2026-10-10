@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
-name: QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
+key: QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
+name: QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
 hash: 41752c02716d537c
 coverage: 0.62069
-learned_at: 2026-10-07 23:25:14
+learned_at: 2026-10-10 20:58:49
 nodes: [Note, RH_LLMAPI_NODE, SetNode, SetNode, EmptyLatentImage, Image Comparer (rgthree), SetNode, easy negative, Fast Groups Bypasser (rgthree), PreviewImage, GetNode, GetNode, PreviewImage, SaveImage, SaveImage, UNETLoader, GetNode, GetNode, SetNode, GetNode, Any Switch (rgthree), CLIPTextEncode, CLIPTextEncode, ModelSamplingAuraFlow, CLIPLoader, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, CLIPTextEncode, ConditioningZeroOut, VAEEncode, UnetLoaderGGUF, VAELoader, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, LoraLoaderModelOnly, CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, Any Switch (rgthree), SetNode, Any Switch (rgthree), VAEDecode, Any Switch (rgthree), KSampler, PlaySound|pysssss, VAEDecode, UNETLoader, KSampler, KSampler, easy positive]
 patterns: [text_to_image]
 missing: [PlaySound|pysssss, easy positive, easy negative]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.1, "height": 1280, "sampler
 discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy negative` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
+# QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1956596073122942978.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json`
 
 ## 结构
 

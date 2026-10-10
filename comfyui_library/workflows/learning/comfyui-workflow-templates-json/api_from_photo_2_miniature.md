@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_from_photo_2
 hash: 97971ab26e5f952f
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:38
+learned_at: 2026-10-10 22:43:53
 nodes: [GeminiImage2Node, LoadImage, SaveImage, GeminiImage2Node, SaveImage, BatchImagesNode]
 patterns: []
 missing: []

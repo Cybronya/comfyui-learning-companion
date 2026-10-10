@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_image
 hash: 9955e6599c377923
 official: true
 coverage: 0.375
-learned_at: 2026-10-07 21:36:01
+learned_at: 2026-10-10 22:48:35
 nodes: [MarkdownNote, f8e756aa-94b4-4c02-943d-2e7910344622, LoadImage, SaveImage, PreviewImage, FluxKontextImageScale, 0e306186-0dda-4b49-bfcb-98cab32901d9, MarkdownNote]
 patterns: []
 missing: [0e306186-0dda-4b49-bfcb-98cab32901d9, f8e756aa-94b4-4c02-943d-2e7910344622]

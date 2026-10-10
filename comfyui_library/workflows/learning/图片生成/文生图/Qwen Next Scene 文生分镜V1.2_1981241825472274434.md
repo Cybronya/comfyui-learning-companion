@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
-name: Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
+key: Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
+name: Qwen Next Scene 文生分镜V1.2_1981241825472274434
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
 hash: c10e1aeaea22d862
 coverage: 0.820513
-learned_at: 2026-10-09 19:56:21
+learned_at: 2026-10-10 20:58:56
 nodes: [KSampler, VAEEncode, easy promptLine, VAEDecode, easy showAnything, UNETLoader, ProcessString, TextEncodeQwenImageEditPlus, CLIPLoader, VAELoader, TextEncodeQwenImageEditPlus, CLIPTextEncode, ConditioningZeroOut, Anything Everywhere3, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, LayerUtility: ImageScaleByAspectRatio V2, MinNode, FluxResolutionNode, RH_Translator, InversionDemoLazySwitch, RH_Translator, InversionDemoLazySwitch, RH_Translator, InversionDemoLazySwitch, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, KSampler, VAEDecode, SaveImage, JjkText, VAEDecode, JjkText, EmptySD3LatentImage, JjkText, SaveImage, PrimitiveBoolean, LoadImage]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, easy promptLine]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "bet
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
+# Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1981241825472274434.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json`
 
 ## 结构
 

@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image2.1文生图2609_2106041124522643458.json
+key: Qwen Image2.1文生图2609_2106041124522643458.json
 name: Qwen Image2.1文生图2609_2106041124522643458
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图2609_2106041124522643458.json
 hash: eba2e077a12a6aa2
 coverage: 0.75
-learned_at: 2026-10-07 02:23:33
+learned_at: 2026-10-10 20:58:55
 nodes: [MarkdownNote, MarkdownNote, TextEncodeQwenImage21, SaveImage, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, VAEDecode, Text Multiline, ResolutionSelector]
 patterns: []
 missing: [Text Multiline]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen Image2.1文生图2609_2106041124522643458.json
+# Qwen Image2.1文生图2609_2106041124522643458.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图2609_2106041124522643458.json`
 

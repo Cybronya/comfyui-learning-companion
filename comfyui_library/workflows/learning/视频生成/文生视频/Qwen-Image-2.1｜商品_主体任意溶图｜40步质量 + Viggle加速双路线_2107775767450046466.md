@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Qwen-Image-2.1｜商品_主体任意溶图｜40步质量 + Viggle加速双路线_2107775767450046466.json
 hash: 567b24ad7e67a241
 coverage: 0.875
-learned_at: 2026-10-10 00:07:22
+learned_at: 2026-10-10 23:04:56
 nodes: [ImageCropper, VAELoader, CLIPLoader, KSamplerAdvanced, TTP_Expand_And_Mask, Image Rembg (Remove Background), TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, ImageUpscaleWithModel, ImageScaleToTotalPixels, FastCanvasTool, LoadImage, LoadImage, FastCanvas, PreviewImage, LoraLoaderModelOnly, KSamplerAdvanced, LoraLoaderModelOnly, FluxGuidance, KSamplerAdvanced, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, SaveImageAdvanced, LoadImage, SaveImageAdvanced, VAEDecode, VAEDecode, SaveImage, Image Comparer (rgthree), SaveImage]
 patterns: []
 missing: [Image Rembg (Remove Background), CR Prompt Text]

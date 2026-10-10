@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
+key: Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
 name: Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
 hash: c91c481d77e6b31e
 coverage: 0.797468
-learned_at: 2026-10-07 02:27:59
+learned_at: 2026-10-10 20:59:07
 nodes: [VAELoader, SetNode, EmptyLatentImage, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageSize, SeedVR2VideoUpscaler, ImageScaleBy, ImageResize+, ImageResize+, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, easy imageSize, GetNode, Any Switch (rgthree), Image Comparer (rgthree), LoadImage, LoadImage, LoadImage, ComfySwitchNode, GetNode, ImageScaleBy, CLIPLoader, ResolutionSelector, TextEncodeQwenImage21, UNETLoader, VAEDecode, SaveImage, QwenImage21Cache, ResolutionSelector, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, VAEDecode, ImageConcatMulti, SaveImage, SaveImage, LoraLoaderModelOnly, KSampler, KSampler, Fast Groups Bypasser (rgthree), SaveImage, LoraLoaderModelOnly, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [ImageResize+, ImageResize+, easy imageSize, easy imageSize]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
+# Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json`
 

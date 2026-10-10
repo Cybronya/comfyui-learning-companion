@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json
-name: Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json
+name: Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json
 hash: ecc78a1df1a14ff4
 coverage: 0.684783
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:06
 nodes: [ResolutionSelector, LoadImage, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, SeedVR2VideoUpscaler, LoadImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SaveImage, TextEncodeQwenImage21, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, TextInput_, EmptyLatentImage, QwenImage21Cache, TextEncodeQwenImage21, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, TextGenerateLTX2Prompt, SetNode, SetNode, GetNode, GetNode, TextGenerateLTX2Prompt, easy seed, LoraLoaderModelOnly, UNETLoader, CLIPLoader, CLIPLoader, Anything Everywhere3, easy showAnything, LoadImage, TextInput_, KSampler, SaveImage, SaveImageAdvanced, VAEDecode, SaveImageAdvanced, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [easy seed]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 
 # 图片生成/图生图/Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102471938563207170.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json`
 
 ## 结构
 

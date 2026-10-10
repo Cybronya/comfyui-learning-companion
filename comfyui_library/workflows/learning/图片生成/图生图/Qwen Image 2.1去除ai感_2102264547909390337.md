@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json
-name: Qwen Image 2.1去除ai感_2102264547909390337.json
+name: Qwen Image 2.1去除ai感_2102264547909390337
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json
 hash: b72d6332e2dd1251
 coverage: 0.815789
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:06
 nodes: [CLIPLoader, VAELoader, LoadImage, ResolutionSelector, QwenImage21Cache, ComfySwitchNode, EmptyLatentImage, VAEDecode, ImageStitch, KSampler, SaveImage, TextEncodeQwenImage21, LoraLoaderModelOnly, MarkdownNote, Note, CLIPLoader, VAELoader, ResolutionSelector, QwenImage21Cache, ComfySwitchNode, EmptyLatentImage, VAEDecode, ImageStitch, KSampler, SaveImage, LoraLoaderModelOnly, UNETLoader, SaveImage, UNETLoader, ComfySwitchNode, ComfySwitchNode, MarkdownNote, LoadImage, TextEncodeQwenImage21, SaveImage, SaveImage, SaveImage, PrimitiveBoolean]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 # 图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102264547909390337.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json`
 
 ## 结构
 

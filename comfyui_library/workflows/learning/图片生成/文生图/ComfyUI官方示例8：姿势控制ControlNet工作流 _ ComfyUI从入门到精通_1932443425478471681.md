@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json
-name: ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json
+key: ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json
+name: ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json
 hash: ffcf3251309a4e56
 coverage: 0.923077
-learned_at: 2026-10-07 22:40:43
+learned_at: 2026-10-10 21:26:56
 nodes: [ControlNetApplyAdvanced, CLIPTextEncode, ControlNetLoader, VAELoader, EmptyLatentImage, CheckpointLoaderSimple, CLIPSetLastLayer, LoadImage, CLIPTextEncode, VAEDecode, PreviewImage, SaveImage, KSampler]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "麦橘majicmixRealistic_v7.safetensors", "controlnet_strength": 1, "denoise": 1, "height": 1024, "sampler_name": "dpmpp_2m", "scheduler": "karras", "seed": 164310667656917, "steps": 20, "width": 1024}
 ---
 
-# 图片生成/文生图/ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json
+# ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1932443425478471681.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/ComfyUI官方示例8：姿势控制ControlNet工作流 _ ComfyUI从入门到精通_1932443425478471681.json`
 
 ## 结构
 

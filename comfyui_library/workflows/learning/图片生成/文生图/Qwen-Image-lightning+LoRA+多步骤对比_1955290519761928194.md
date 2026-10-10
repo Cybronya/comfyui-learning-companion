@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json
-name: Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json
+key: Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json
+name: Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json
 hash: 27408ef8bf5a3837
 coverage: 0.857143
-learned_at: 2026-10-07 23:24:21
+learned_at: 2026-10-10 20:59:02
 nodes: [CLIPLoader, ConditioningZeroOut, KSampler, KSampler, ModelSamplingAuraFlow, UNETLoader, DF_Get_image_size, ConditioningZeroOut, KSampler, ConditioningZeroOut, VAELoader, EmptySD3LatentImage, PreviewImage, VAEDecode, SaveImage, SaveImage, SaveImage, LayerUtility: ImageReelComposit, SaveImage, LoraLoaderModelOnly, ModelSamplingAuraFlow, CLIPTextEncode, ConditioningZeroOut, KSampler, LoraLoaderModelOnly, ModelSamplingAuraFlow, SaveImage, LoraLoaderModelOnly, VAEDecode, VAEDecode, VAEDecode, LayerUtility: ImageReel, ModelSamplingAuraFlow, Note, Note]
 patterns: []
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json
+# Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1955290519761928194.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-lightning+LoRA+多步骤对比_1955290519761928194.json`
 
 ## 结构
 

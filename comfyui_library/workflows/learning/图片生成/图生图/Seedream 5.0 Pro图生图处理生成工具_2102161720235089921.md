@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Seedream 5.0 Pro图生图处理生成工具_2102161720235089921.json
-name: Seedream 5.0 Pro图生图处理生成工具_2102161720235089921.json
+name: Seedream 5.0 Pro图生图处理生成工具_2102161720235089921
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedream 5.0 Pro图生图处理生成工具_2102161720235089921.json
 hash: c338bf09f7edc3f9
 coverage: 0.878788
-learned_at: 2026-10-09 22:27:08
+learned_at: 2026-10-10 20:48:10
 nodes: [SaveImage, Text, RH_SeedreamV5ProImageToImage, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Seedream 5.0 Pro图生图处理生成工具_2102161720235089921.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102161720235089921.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Seedream 5.0 Pro图生图处理生成工具_2102161720235089921.json`
 
 ## 结构
 

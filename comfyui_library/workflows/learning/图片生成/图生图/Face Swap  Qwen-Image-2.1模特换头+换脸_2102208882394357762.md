@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Face Swap  Qwen-Image-2.1模特换头+换脸_2102208882394357762.json
-name: Face Swap  Qwen-Image-2.1模特换头+换脸_2102208882394357762.json
+name: Face Swap  Qwen-Image-2.1模特换头+换脸_2102208882394357762
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Face Swap  Qwen-Image-2.1模特换头+换脸_2102208882394357762.json
 hash: 5ffc466d48136fed
 coverage: 0.882353
-learned_at: 2026-10-09 22:27:09
+learned_at: 2026-10-10 20:48:02
 nodes: [ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextGenerateLTX2Prompt, TextEncodeQwenImage21, UNETLoader, BatchImagesNode, CLIPLoader, CLIPLoader, VAELoader, EmptyLatentImage, ResolutionSelector, JjkText, SaveImage, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 # 图片生成/图生图/Face Swap  Qwen-Image-2.1模特换头+换脸_2102208882394357762.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102208882394357762.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Face Swap  Qwen-Image-2.1模特换头+换脸_2102208882394357762.json`
 
 ## 结构
 

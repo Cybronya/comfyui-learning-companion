@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2011744883106648065.json
-name: ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2011744883106648065.json
+name: ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2011744883106648065
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2011744883106648065.json
 hash: 17df9a315ed8b8ee
 coverage: 0.515152
-learned_at: 2026-10-09 22:36:19
+learned_at: 2026-10-10 20:48:11
 nodes: [SetNode, SetNode, SetNode, easy promptLine, GetNode, GetNode, ModelSamplingAuraFlow, CFGNorm, PlaySound|pysssss, PlaySound|pysssss, INTConstant, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, VAELoader, GetNode, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, VAEEncode, JjkText, SaveImage, FluxKontextMultiReferenceLatentMethod, FluxKontextMultiReferenceLatentMethod, UNETLoader, KSampler, VAEDecode, LayerUtility: PurgeVRAM, SetNode, PlaySound|pysssss, JjkText, LoadImage]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, easy promptLine]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2011744883106648065.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2011744883106648065.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2011744883106648065.json`
 
 ## 结构
 

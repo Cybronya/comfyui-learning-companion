@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-subjec
 hash: 589fe4d34753fe3f
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:36:35
+learned_at: 2026-10-10 22:49:26
 nodes: [LoadImage, LoadImage, GeminiImage2Node, SaveImage, e20a7fb5-3d72-41c9-a78c-fdf287ec46ec]
 patterns: []
 missing: [e20a7fb5-3d72-41c9-a78c-fdf287ec46ec]

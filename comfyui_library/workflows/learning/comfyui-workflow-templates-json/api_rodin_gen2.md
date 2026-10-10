@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_rodin_gen2.j
 hash: 7cf7863804148106
 official: true
 coverage: 0.714286
-learned_at: 2026-10-07 21:34:42
+learned_at: 2026-10-10 22:45:53
 nodes: [Preview3D, LoadImage, Rodin3D_Gen2, MarkdownNote, SaveGLB, Note, BatchImagesNode]
 patterns: []
 missing: []

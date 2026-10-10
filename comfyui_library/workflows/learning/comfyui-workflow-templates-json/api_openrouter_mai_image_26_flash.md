@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openrouter_m
 hash: 748f21141ddd00d1
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:30
+learned_at: 2026-10-10 22:45:30
 nodes: [OpenRouterImageNode, SaveImageAdvanced]
 patterns: []
 missing: []

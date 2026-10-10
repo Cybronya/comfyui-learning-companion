@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
-name: wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
+key: wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
+name: wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
 hash: 31f17dda8fc825de
 coverage: 0.791667
-learned_at: 2026-10-07 22:58:39
+learned_at: 2026-10-10 20:59:27
 nodes: [LoraLoader, CLIPTextEncode, CLIPLoader, VAELoader, CFGZeroStarAndInit, CR Text Concatenate, JWInteger, KSampler, VAEDecode, RH_LLMAPI_NODE, ShowText|pysssss, UNETLoader, ShowText|pysssss, LoraLoader, CLIPTextEncode, LoraLoader, RHHiddenNodes, RHHiddenNodes, Wan_video_prompt_generator, SaveImage, Text Multiline, JWInteger, EmptyLatentImage, Note]
 patterns: [text_to_image, lora]
 missing: [CR Text Concatenate, Text Multiline]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 4, "cfg": 1, "denoise": 1, "height": 512, "lora_name"
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
+# wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950771546711351297.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json`
 
 ## 结构
 

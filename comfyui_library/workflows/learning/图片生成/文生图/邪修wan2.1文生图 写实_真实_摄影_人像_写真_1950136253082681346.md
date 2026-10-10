@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
-name: 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
+key: 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
+name: 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
 hash: 7c383cb95150fab9
 coverage: 0.462963
-learned_at: 2026-10-07 22:58:19
+learned_at: 2026-10-10 20:59:58
 nodes: [VAELoader, UNETLoader, SetNode, SetNode, SetNode, VAEDecode, Anything Everywhere, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, KSampler, easy cleanGpuUsed, KSampler, easy cleanGpuUsed, easy cleanGpuUsed, KSampler, KSampler, SaveImage, CLIPTextEncode, CLIPTextEncode, SaveImage, SaveImage, LoraLoaderModelOnly, SaveImage, LoraLoaderModelOnly, WanVideoNAG, CFGZeroStarAndInit, ModelSamplingSD3, CLIPLoader, easy cleanGpuUsed, SetNode, easy seed, Note, Note, SetNode, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree), JWInteger, JWInteger]
 patterns: []
 missing: [easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy seed]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "bon
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
+# 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950136253082681346.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json`
 
 ## 结构
 

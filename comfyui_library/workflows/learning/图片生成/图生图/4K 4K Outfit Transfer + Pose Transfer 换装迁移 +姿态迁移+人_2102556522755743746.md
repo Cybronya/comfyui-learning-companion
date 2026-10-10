@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json
-name: 4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json
+name: 4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json
 hash: 1744e3b6a536a200
 coverage: 0.745098
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:02
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SDPoseOODProcessor, PreviewImage, KSampler, SDPoseOODLoader, YOLOModelLoader, GroundingDinoModelLoader_SDPose, Note, CheckpointLoaderSimple, Note, TextEncodeQwenImageEditPlus, GetNode, VAEEncode, SetNode, TextEncodeQwenImageEditPlus, ConditioningZeroOut, CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, TextEncodeQwenImageEditPlus, PreviewImage, UNETLoader, MemoryCleaner, MemoryCleaner, MemoryCleaner, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, Note, ImageScaleToTotalPixels, PreviewImage, VAEDecode, SaveImage, SaveImage, LoadImage, ModelSamplingAuraFlow, CFGNorm, EmptySD3LatentImage, VAELoader, INTConstant, KSampler, TextEncodeQwenImageEditPlus, CR Text, LoadImage, Image Comparer (rgthree), LoadImage, Fast Groups Bypasser (rgthree), SeedVR2VideoUpscaler, VAEDecode, Image Comparer (rgthree)]
 patterns: [image_to_image]
 missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102556522755743746.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json`
 
 ## 结构
 

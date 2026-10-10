@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_video_fr
 hash: d7d790eb45ac6ed0
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:54
+learned_at: 2026-10-10 22:50:01
 nodes: [LoadVideo, SaveVideo, MarkdownNote, 022693be-2baa-4009-870a-28921508a7ef]
 patterns: []
 missing: [022693be-2baa-4009-870a-28921508a7ef]

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json
-name: Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json
+name: Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json
 hash: 8303c04355c0e6ff
 coverage: 1
-learned_at: 2026-10-09 22:19:26
+learned_at: 2026-10-10 20:48:10
 nodes: [LoadImage, SaveVideo, RH_BytedanceSeedance25TokenImageToVideo, LoadImage]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2097513080749125634.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Seedance 2.5 图生视频｜首尾帧视频_2097513080749125634.json`
 
 ## 结构
 

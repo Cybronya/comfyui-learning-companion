@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json
-name: JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json
+key: JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json
+name: JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json
 hash: be7fb707b0107694
 coverage: 0.733333
-learned_at: 2026-10-07 22:46:30
+learned_at: 2026-10-10 20:58:41
 nodes: [LayerUtility: LoadJoyCaptionBeta1Model, VAELoader, EmptySD3LatentImage, ShowText|pysssss, CLIPTextEncodeFlux, ConditioningZeroOut, VAEDecode, KSampler, LayerUtility: JoyCaptionBeta1, SaveImage, LoadImage, ShowText|pysssss, ArgosTranslateTextNode, UNETLoader, DualCLIPLoader]
 patterns: []
 missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json
+# JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1938602282357284865.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/JoyCaption Beta One 反推提示词-flux文生图_1938602282357284865.json`
 
 ## 结构
 

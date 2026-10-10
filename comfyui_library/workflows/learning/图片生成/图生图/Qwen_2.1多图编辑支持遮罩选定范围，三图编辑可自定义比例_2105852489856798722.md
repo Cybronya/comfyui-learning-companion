@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen_2.1多图编辑支持遮罩选定范围，三图编辑可自定义比例_2105852489856798722.json
-name: Qwen_2.1多图编辑支持遮罩选定范围，三图编辑可自定义比例_2105852489856798722.json
+name: Qwen_2.1多图编辑支持遮罩选定范围，三图编辑可自定义比例_2105852489856798722
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen_2.1多图编辑支持遮罩选定范围，三图编辑可自定义比例_2105852489856798722.json
 hash: 5341117720304294
 coverage: 0.842105
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:10
 nodes: [Image Comparer (rgthree), LoadImage, GoohaiUniversalSlider, LoadImage, ComfySwitchNode, ResolutionSelector, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ModelConfig_EditUtils, PathchSageAttentionKJ, QwenImage21EditApply_EditUtils, ConditioningZeroOut, VAEDecode, EmptyLatentImage, CropWithPadInfo_EditUtils, KSampler, CropWithPadInfo_EditUtils, Fast Bypasser (rgthree), 布尔孤海, SaveImage, UNETLoader, CLIPLoader, VAELoader, EditTextEncode_EditUtils, LoadImage, workflow>遮罩逻辑, QwenImage21ConfigPreparer_EditUtils, PrimitiveStringMultiline, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: [Fast Bypasser (rgthree), workflow>遮罩逻辑, 布尔孤海]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 # 图片生成/图生图/Qwen_2.1多图编辑支持遮罩选定范围，三图编辑可自定义比例_2105852489856798722.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105852489856798722.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen_2.1多图编辑支持遮罩选定范围，三图编辑可自定义比例_2105852489856798722.json`
 
 ## 结构
 

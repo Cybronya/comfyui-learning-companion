@@ -1,21 +1,21 @@
 ---
-key: 图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json
-name: SPARK.Chroma_preview 反推文生图_1984856656842473473.json
+key: SPARK.Chroma_preview 反推文生图_1984856656842473473.json
+name: SPARK.Chroma_preview 反推文生图_1984856656842473473
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json
 hash: 23b278d5848cceb1
 coverage: 1
-learned_at: 2026-10-09 20:05:47
+learned_at: 2026-10-10 20:59:11
 nodes: [CLIPLoader, VAELoader, T5TokenizerOptions, CFGGuider, KSamplerSelect, CLIPTextEncode, CLIPTextEncode, VAEDecode, BasicScheduler, SamplerCustomAdvanced, SaveImage, RandomNoise, UNETLoader, EmptySD3LatentImage, AILab_QwenVL, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json
+# SPARK.Chroma_preview 反推文生图_1984856656842473473.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1984856656842473473.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json`
 
 ## 结构
 

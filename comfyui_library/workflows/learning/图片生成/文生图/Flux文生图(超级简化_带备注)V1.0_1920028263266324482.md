@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
-name: Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
+key: Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
+name: Flux文生图(超级简化_带备注)V1.0_1920028263266324482
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
 hash: 97e738235cdd5cdf
 coverage: 0.588235
-learned_at: 2026-10-07 22:08:09
+learned_at: 2026-10-10 20:58:37
 nodes: [TextCombinerTwo, RH_Prompter, TextCombinerTwo, RH_Prompter, CR Text Input Switch (4 way), SetNode, GetNode, CLIPTextEncode, BasicGuider, GetNode, GetNode, SamplerCustomAdvanced, BasicScheduler, GetNode, KSamplerSelect, VAELoader, DualCLIPLoader, SetNode, UNETLoader, SetNode, SetNode, RandomNoise, VAEDecode, SetNode, GetNode, SaveImage, JjkText, FluxResolutionNode, EmptyLatentImage, JjkText, ShowText, GetNode, ArgosTranslateTextNode, ShowText]
 patterns: []
 missing: [CR Text Input Switch (4 way)]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "height": 1280, "width": 1024}
 discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
+# Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1920028263266324482.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
-name: Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
+key: Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
+name: Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
 hash: eae758aa50847203
 coverage: 0.777778
-learned_at: 2026-10-07 22:34:25
+learned_at: 2026-10-10 20:58:36
 nodes: [CLIPTextEncode, EmptySD3LatentImage, KSampler, Note, CheckpointLoaderSimple, CLIPTextEncode, VAEDecode, PreviewImage, SaveImage]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "flux1-schnell-fp8.safetensors", "denoise":
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
+# Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1930158858272980993.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json`
 
 ## 结构
 

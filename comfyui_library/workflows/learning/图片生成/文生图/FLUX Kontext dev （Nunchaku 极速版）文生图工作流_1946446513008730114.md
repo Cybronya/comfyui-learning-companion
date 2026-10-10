@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
-name: FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+key: FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+name: FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
 hash: f6fab7041d53d483
 coverage: 0.846154
-learned_at: 2026-10-07 22:52:48
+learned_at: 2026-10-10 20:58:31
 nodes: [DualCLIPLoader, VAELoader, FluxGuidance, VAEDecode, KSampler, SaveImage, DeepTranslatorTextNode, EmptyLatentImage, Note, ConditioningZeroOut, CLIPTextEncode, PreviewImage, NunchakuFluxDiTLoader]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1248, "sampler_name": "euler", "scheduler": "simple", "seed": 232865194076121, "steps": 20, "width": 800}
 ---
 
-# 图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
+# FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1946446513008730114.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX Kontext dev （Nunchaku 极速版）文生图工作流_1946446513008730114.json`
 
 ## 结构
 

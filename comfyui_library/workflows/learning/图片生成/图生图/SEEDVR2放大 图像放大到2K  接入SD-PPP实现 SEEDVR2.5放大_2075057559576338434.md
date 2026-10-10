@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/SEEDVR2放大 图像放大到2K  接入SD-PPP实现 SEEDVR2.5放大_2075057559576338434.json
-name: SEEDVR2放大 图像放大到2K  接入SD-PPP实现 SEEDVR2.5放大_2075057559576338434.json
+name: SEEDVR2放大 图像放大到2K  接入SD-PPP实现 SEEDVR2.5放大_2075057559576338434
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/SEEDVR2放大 图像放大到2K  接入SD-PPP实现 SEEDVR2.5放大_2075057559576338434.json
 hash: 8d7b13d4ce5733f7
 coverage: 0.833333
-learned_at: 2026-10-09 22:36:21
+learned_at: 2026-10-10 20:48:10
 nodes: [Image Comparer (rgthree), SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, SeedVR2VideoUpscaler, SaveImage, LoadImage]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/图生图/SEEDVR2放大 图像放大到2K  接入SD-PPP实现 SEEDVR2.5放大_2075057559576338434.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2075057559576338434.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/SEEDVR2放大 图像放大到2K  接入SD-PPP实现 SEEDVR2.5放大_2075057559576338434.json`
 
 ## 结构
 

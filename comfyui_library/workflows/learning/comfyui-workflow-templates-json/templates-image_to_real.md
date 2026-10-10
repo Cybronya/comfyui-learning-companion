@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-image_
 hash: e4909616f29a1586
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:33
+learned_at: 2026-10-10 22:49:22
 nodes: [SaveImage, 5d31be54-7e20-4abe-81d7-f9e278fe0801, MarkdownNote, LoadImage]
 patterns: []
 missing: [5d31be54-7e20-4abe-81d7-f9e278fe0801]

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/QWen2.1图像编辑_2102423497988460545.json
-name: QWen2.1图像编辑_2102423497988460545.json
+name: QWen2.1图像编辑_2102423497988460545
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/QWen2.1图像编辑_2102423497988460545.json
 hash: 8c112748b3823633
 coverage: 0.736842
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:04
 nodes: [QwenImage21Cache, MarkdownNote, MarkdownNote, VAEDecode, TextGenerate, PreviewAny, BatchImagesNode, PrimitiveStringMultiline, CR Prompt Text, ComfySwitchNode, PrimitiveInt, EmptyLatentImage, KSampler, ComfySwitchNode, SaveImage, ResolutionSelector, TextEncodeQwenImage21, PrimitiveBoolean, PrimitiveBoolean, CLIPLoader, VAELoader, UNETLoader, UNETLoader, ComfySwitchNode, CLIPLoader, PrimitiveBoolean, CLIPLoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ComfySwitchNode]
 patterns: []
 missing: [CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/QWen2.1图像编辑_2102423497988460545.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102423497988460545.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/QWen2.1图像编辑_2102423497988460545.json`
 
 ## 结构
 

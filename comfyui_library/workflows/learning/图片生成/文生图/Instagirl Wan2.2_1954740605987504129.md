@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
-name: Instagirl Wan2.2_1954740605987504129.json
+key: Instagirl Wan2.2_1954740605987504129.json
+name: Instagirl Wan2.2_1954740605987504129
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
 hash: 76a83a29282e01ec
 coverage: 0.785714
-learned_at: 2026-10-07 23:18:24
+learned_at: 2026-10-10 20:58:41
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, UNETLoader, UNETLoader, VAELoader, LoraLoader, CLIPLoader, LoadImage, Note, LoadImage, Note, LoadImage, LoadImage, Note, easy cleanGpuUsed, KSamplerAdvanced, KSamplerAdvanced, CLIPTextEncode, LoraLoaderModelOnly, EmptyHunyuanLatentVideo, Note, SaveImage, CLIPTextEncode, Note, Int, Int, Int]
 patterns: [lora]
 missing: [easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"cfg": 10, "denoise": "beta57", "lora_name": "Instagirlv2.0_hinoise
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
+# Instagirl Wan2.2_1954740605987504129.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1954740605987504129.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json`
 
 ## 结构
 

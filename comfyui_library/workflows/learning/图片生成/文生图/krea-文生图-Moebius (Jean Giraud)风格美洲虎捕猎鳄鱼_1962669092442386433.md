@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
-name: krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
+key: krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
+name: krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
 hash: b218fd1ffc54424a
 coverage: 1
-learned_at: 2026-10-07 23:54:01
+learned_at: 2026-10-10 20:59:22
 nodes: [KSampler, VAEDecode, CLIPTextEncode, UNETLoader, EmptyLatentImage, SaveImage, ConditioningZeroOut, RH_Translator, DualCLIPLoader, VAELoader]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 527787388262472, "steps": 30, "width": 1024}
 ---
 
-# 图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
+# krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1962669092442386433.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json`
 
 ## 结构
 

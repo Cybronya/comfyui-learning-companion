@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
-name: Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
+key: Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
+name: Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
 hash: 0cf8929504a6d983
 coverage: 0.857143
-learned_at: 2026-10-07 23:38:15
+learned_at: 2026-10-10 20:58:55
 nodes: [Note Plus (mtb), NunchakuQwenImageDiTLoader, CLIPLoader, VAELoader, ModelSamplingAuraFlow, Int, CLIPTextEncode, EmptySD3LatentImage, KSampler, VAEDecode, Int, SaveImage, MarkdownNote, CLIPTextEncode]
 patterns: []
 missing: [Note Plus (mtb)]
@@ -15,9 +15,9 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
+# Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960059347424456705.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen image 2.1透明背景抠图_2101914691361660930.json
-name: Qwen image 2.1透明背景抠图_2101914691361660930.json
+name: Qwen image 2.1透明背景抠图_2101914691361660930
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1透明背景抠图_2101914691361660930.json
 hash: 656b153735dc048d
 coverage: 0.708333
-learned_at: 2026-10-09 22:27:07
+learned_at: 2026-10-10 20:48:08
 nodes: [TextEncodeQwenImage21, KSampler, UNETLoader, CLIPLoader, VAELoader, CLIPLoader, EmptyLatentImage, ComfySwitchNode, QwenImage21Cache, VAEDecode, ImageConcatMulti, SaveImageAdvanced, ImageConcatMulti, SaveImageAdvanced, SaveImage, easy cleanGpuUsed, TextCombinerTwo, easy showAnything, ResolutionSelector, JjkText, JjkText, LoadImage, MarkdownNote, Label (rgthree)]
 patterns: []
 missing: [Label (rgthree), easy cleanGpuUsed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen image 2.1透明背景抠图_2101914691361660930.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2101914691361660930.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen image 2.1透明背景抠图_2101914691361660930.json`
 
 ## 结构
 

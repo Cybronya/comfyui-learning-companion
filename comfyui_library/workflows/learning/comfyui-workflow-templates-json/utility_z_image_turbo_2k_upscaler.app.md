@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_z_image_
 hash: a8f23127fb7671ce
 official: true
 coverage: 0.428571
-learned_at: 2026-10-07 21:36:55
+learned_at: 2026-10-10 22:50:03
 nodes: [ImageCompare, SaveImage, MarkdownNote, MarkdownNote, MarkdownNote, LoadImage, dd15cfd3-cd53-428c-b3e2-33ed4ff8fa78]
 patterns: []
 missing: [dd15cfd3-cd53-428c-b3e2-33ed4ff8fa78]
@@ -40,7 +40,7 @@ discoveries: [次要节点 `dd15cfd3-cd53-428c-b3e2-33ed4ff8fa78` 知识库中�
 
 **缺卡**（1）：`dd15cfd3-cd53-428c-b3e2-33ed4ff8fa78`
 
-**用到的条目**：LoadImage、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+**用到的条目**：LoadImage、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、Compare、CS_Preview_Any、easy_multitrackinfooutput
 
 ## 学习发现
 

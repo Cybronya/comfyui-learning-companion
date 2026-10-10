@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json
-name: Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json
+key: Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json
+name: Flux.1文生图工作流（高清+去除AI感）_1954823552040091649
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json
 hash: 9276f0a6a7c4b35a
 coverage: 0.736842
-learned_at: 2026-10-07 23:18:32
+learned_at: 2026-10-10 20:58:36
 nodes: [Lora Loader Stack (rgthree), CheckpointLoaderSimple, CLIPTextEncodeFlux, CFGZeroStar, RandomNoise, BasicGuider, KSamplerSelect, BasicScheduler, EmptyLatentImage, SamplerCustomAdvanced, KSamplerAdvanced, Note, Note, Note, StringConstantMultiline, PreviewImage, CLIPTextEncode, VAEDecode, SaveImage]
 patterns: []
 missing: [Lora Loader Stack (rgthree)]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 31, "checkpoint": "flux1-dev-fp8.safetensor
 discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json
+# Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1954823552040091649.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1文生图工作流（高清+去除AI感）_1954823552040091649.json`
 
 ## 结构
 

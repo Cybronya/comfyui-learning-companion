@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json
-name: Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json
+name: Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json
 hash: 3c19021340733904
 coverage: 0.888889
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:08
 nodes: [PreviewImage, UNETLoader, CLIPLoader, VAELoader, KSampler, SaveImage, VAEDecode, TextEncodeQwenImage21, Image Comparer (rgthree), LoadImage, LoadImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102599156345958401.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1材质迁移｜金属木质一键换质感｜设计素材秒变新风格_2102599156345958401.json`
 
 ## 结构
 

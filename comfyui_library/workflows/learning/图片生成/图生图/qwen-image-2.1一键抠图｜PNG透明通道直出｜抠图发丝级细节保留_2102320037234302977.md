@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json
-name: qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json
+name: qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json
 hash: d751cee826a599d3
 coverage: 0.943396
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:12
 nodes: [CLIPLoader, VAELoader, QwenImage21Cache, VAEDecode, SaveImage, SaveImageAdvanced, KSampler, UNETLoader, LoadImage, TextEncodeQwenImage21, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102320037234302977.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image-2.1一键抠图｜PNG透明通道直出｜抠图发丝级细节保留_2102320037234302977.json`
 
 ## 结构
 

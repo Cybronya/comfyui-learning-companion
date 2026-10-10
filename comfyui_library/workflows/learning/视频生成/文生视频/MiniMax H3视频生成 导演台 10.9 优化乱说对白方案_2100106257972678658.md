@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3视频生成 导演台 10.9 优化乱说对白方案_2100106257972678658.json
 hash: 2bdd926c10ac98b3
 coverage: 0.85
-learned_at: 2026-10-10 00:07:20
+learned_at: 2026-10-10 23:03:27
 nodes: [UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, CLIPLoader, VAELoader, VAELoader, PathchSageAttentionKJ, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, KSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoader, EmptyLatentImage, VAEDecode, CLIPTextEncode, CLIPLoader, JjkText, CLIPTextEncode, solarL_SaveImagesToZip, LoraLoaderModelOnly, Note, MarkdownNote, MarkdownNote, Note, MiniMaxH3Director, VHS_VideoCombine, MarkdownNote, SaveImage, LoadImage]
 patterns: [text_to_image]
 missing: []

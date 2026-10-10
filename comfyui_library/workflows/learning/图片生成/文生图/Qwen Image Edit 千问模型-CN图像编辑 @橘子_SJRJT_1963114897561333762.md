@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json
-name: Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json
+key: Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json
+name: Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json
 hash: 4c36d94aaf865399
 coverage: 0.777778
-learned_at: 2026-10-07 23:54:18
+learned_at: 2026-10-10 20:58:55
 nodes: [VAEDecode, MarkdownNote, EmptyLatentImage, CFGNorm, ModelSamplingAuraFlow, TextEncodeQwenImageEdit, KSampler, VAEEncode, MarkdownNote, MarkdownNote, LayerUtility: ImageScaleByAspectRatio V2, AIO_Preprocessor, OpenposePreprocessor, PreviewImage, SetUnionControlNetType, ControlNetApplySD3, CLIPLoader, VAELoader, TextEncodeQwenImageEdit, LoadImage, LoadImage, MarkdownNote, ImageScaleToTotalPixels, SaveImage, UNETLoader, LoraLoaderModelOnly, ControlNetLoader]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 1.800000000000000
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json
+# Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1963114897561333762.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image Edit 千问模型-CN图像编辑 @橘子_SJRJT_1963114897561333762.json`
 
 ## 结构
 

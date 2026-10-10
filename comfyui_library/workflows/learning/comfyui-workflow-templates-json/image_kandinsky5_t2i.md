@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_kandinsky5
 hash: f542cd9150f8b2e0
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:45
+learned_at: 2026-10-10 22:48:06
 nodes: [MarkdownNote, SaveImage, 7aad998c-49e7-433f-bfb9-b1ac2680aa9e]
 patterns: []
 missing: [7aad998c-49e7-433f-bfb9-b1ac2680aa9e]

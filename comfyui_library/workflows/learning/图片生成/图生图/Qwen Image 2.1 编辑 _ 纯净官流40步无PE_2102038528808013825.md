@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 编辑 _ 纯净官流40步无PE_2102038528808013825.json
-name: Qwen Image 2.1 编辑 _ 纯净官流40步无PE_2102038528808013825.json
+name: Qwen Image 2.1 编辑 _ 纯净官流40步无PE_2102038528808013825
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 编辑 _ 纯净官流40步无PE_2102038528808013825.json
 hash: 28e2b93fa1631fdc
 coverage: 0.76
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:05
 nodes: [MarkdownNote, PixaromaRunTimer, MarkdownNote, ComfySwitchNode, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, Fast Bypasser (rgthree), Image Comparer (rgthree), KSampler, LoadImage, LoadImage, LoadImage, LoadImage, PixaromaSeed, EmptyLatentImage, TextEncodeQwenImage21, PrimitiveBoolean, VAEDecode, SaveImage, LoadImage, ResolutionSelector, LoadImage, PrimitiveStringMultiline]
 patterns: []
 missing: [Fast Bypasser (rgthree)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 # 图片生成/图生图/Qwen Image 2.1 编辑 _ 纯净官流40步无PE_2102038528808013825.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102038528808013825.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 编辑 _ 纯净官流40步无PE_2102038528808013825.json`
 
 ## 结构
 

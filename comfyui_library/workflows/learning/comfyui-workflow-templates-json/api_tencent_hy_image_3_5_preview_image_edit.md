@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_tencent_hy_i
 hash: cb5032a9e6b2a99f
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:34:53
+learned_at: 2026-10-10 22:46:15
 nodes: [SaveImageAdvanced, HunyuanImageEditApi, LoadImage, MarkdownNote]
 patterns: []
 missing: []

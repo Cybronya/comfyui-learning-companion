@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_pid_late
 hash: 9a262215c9c0fac2
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:36:49
+learned_at: 2026-10-10 22:49:51
 nodes: [MarkdownNote, ImageCompare, b6f63f3c-4f79-4394-83c3-552b6b84af62, c20beb1e-2a45-4872-913e-21018c09c578, PreviewImage, PrimitiveStringMultiline, SaveImage, MarkdownNote]
 patterns: []
 missing: [b6f63f3c-4f79-4394-83c3-552b6b84af62, c20beb1e-2a45-4872-913e-21018c09c578]
@@ -41,7 +41,7 @@ discoveries: [次要节点 `b6f63f3c-4f79-4394-83c3-552b6b84af62` 知识库中�
 
 **缺卡**（2）：`b6f63f3c-4f79-4394-83c3-552b6b84af62`、`c20beb1e-2a45-4872-913e-21018c09c578`
 
-**用到的条目**：SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、String、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+**用到的条目**：SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、String、Compare、CS_Preview_Any、easy_multitrackinfooutput
 
 ## 学习发现
 

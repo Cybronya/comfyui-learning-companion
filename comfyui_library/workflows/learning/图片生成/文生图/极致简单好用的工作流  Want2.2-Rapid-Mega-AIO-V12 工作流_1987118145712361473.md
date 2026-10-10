@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
-name: 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
+key: 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
+name: 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
 hash: b6d6f5f171efd6bf
 coverage: 0.705882
-learned_at: 2026-10-09 20:13:12
+learned_at: 2026-10-10 20:59:51
 nodes: [CheckpointLoaderSimple, WanVideoVACEStartToEndFrame, CLIPTextEncode, LoadImage, KSampler, VHS_VideoCombine, ModelSamplingSD3, VAEDecode, LoadImage, CLIPTextEncode, WanVaceToVideo, PrimitiveInt, Note, LoadAudio, Note, Label (rgthree), Note]
 patterns: []
 missing: [Label (rgthree)]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v12.safetensors
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
+# 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1987118145712361473.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json`
 
 ## 结构
 

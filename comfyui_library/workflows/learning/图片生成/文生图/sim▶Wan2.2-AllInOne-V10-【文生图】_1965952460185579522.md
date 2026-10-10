@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
-name: sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
+key: sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
+name: sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
 hash: ac487b12f5ef8fe8
 coverage: 0.909091
-learned_at: 2026-10-08 00:01:54
+learned_at: 2026-10-10 20:59:26
 nodes: [VAEDecode, CLIPTextEncode, CheckpointLoaderSimple, INTConstant, INTConstant, ModelSamplingSD3, KSampler, LayerUtility: PurgeVRAM, SaveImage, CLIPTextEncode, EmptyHunyuanLatentVideo]
 patterns: []
 missing: [LayerUtility: PurgeVRAM]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "wan2.2-t2v-rapid-aio-v10-nsfw.safetensors"
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
+# sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1965952460185579522.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json`
 
 ## 结构
 

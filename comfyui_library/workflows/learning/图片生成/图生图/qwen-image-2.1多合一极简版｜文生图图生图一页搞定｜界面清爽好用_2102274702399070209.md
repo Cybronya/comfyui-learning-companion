@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json
-name: qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json
+name: qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json
 hash: 67e28f90277d6a0e
 coverage: 0.835821
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:12
 nodes: [Seed (rgthree), UNETLoader, SetNode, CLIPLoader, CLIPLoader, EmptyLatentImage, SetNode, QwenImage21Cache, CLIPLoader, KSampler, VAELoader, ResolutionSelector, VAEDecode, SaveImage, Fast Groups Bypasser (rgthree), TextEncodeQwenImage21, TextGenerateLTX2Prompt, ImageBatchMultiV2, MiniMaxH3EasyMediaSplitter, MiniMaxH3EasyMediaLoader, GetNode, PreviewAny, MiniMaxH3EasyMediaSplitter, CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [CR Prompt Text, Seed (rgthree)]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102274702399070209.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json`
 
 ## 结构
 

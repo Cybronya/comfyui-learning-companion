@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen Image 2.1 文生、图像编辑一体化_2105315513315450881.json
 hash: 5933bfed1f272075
 coverage: 0.628571
-learned_at: 2026-10-07 02:40:59
+learned_at: 2026-10-10 20:47:59
 nodes: [LoadImage, LoadImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, SetNode, VAEDecode, CLIPLoader, VAELoader, Reroute, LoadImage, LoadImage, UNETLoader, GoohaiRouteBlocker, 忽略多组孤海, QwenImage21SageAttentionT8, GetNode, KSampler, GoohaiRouteBlocker, 孤海注释, ShowText|pysssss, Image Comparer (rgthree), QwenImagePromptOptimizer, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, TextEncodeQwenImage21GH, SaveImage, LoadImageGoohai, LoadImage, DF_Text_Box, GoohaiRatioAndResolution]
 patterns: []
 missing: [忽略多组孤海]

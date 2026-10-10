@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/地表最强全能图片G2图生图｜GP-T-Image-2单次0.1元｜改图超划算_2102222773492994049.json
-name: 地表最强全能图片G2图生图｜GP-T-Image-2单次0.1元｜改图超划算_2102222773492994049.json
+name: 地表最强全能图片G2图生图｜GP-T-Image-2单次0.1元｜改图超划算_2102222773492994049
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/地表最强全能图片G2图生图｜GP-T-Image-2单次0.1元｜改图超划算_2102222773492994049.json
 hash: fbd3f9bbd48eca0e
 coverage: 0.88
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:16
 nodes: [JjkText, SaveImage, Float, RTXVideoSuperResolution, LoadImage, PrimitiveNode, RH_RhartImageG2ImageToImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/地表最强全能图片G2图生图｜GP-T-Image-2单次0.1元｜改图超划算_2102222773492994049.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102222773492994049.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/地表最强全能图片G2图生图｜GP-T-Image-2单次0.1元｜改图超划算_2102222773492994049.json`
 
 ## 结构
 

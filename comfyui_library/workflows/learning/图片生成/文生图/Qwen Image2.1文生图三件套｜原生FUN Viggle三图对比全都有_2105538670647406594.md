@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594.json
+key: Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594.json
 name: Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594.json
 hash: d17e7ceba2e899b0
 coverage: 0.943662
-learned_at: 2026-10-07 02:23:44
+learned_at: 2026-10-10 20:58:56
 nodes: [StringConstantMultiline, INTConstant, INTConstant, INTConstant, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, EmptyLatentImage, KSampler, LoraLoaderModelOnly, BasicGuider, RandomNoise, KSamplerSelect, CustomSigmas, SamplerCustomAdvanced, VAEDecode, VAEDecode, VAEDecode, SaveImage, T8QwenImage21FunAccPDD4Step, SaveImage, AddLabel, SaveImage, AddLabel, SaveImage, AddLabel, ImageConcatMulti, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594.json
+# Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图三件套｜原生FUN Viggle三图对比全都有_2105538670647406594.json`
 

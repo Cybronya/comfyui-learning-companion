@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image 2.1官流文生、编辑混合流_2106032439419301890.json
+key: Qwen Image 2.1官流文生、编辑混合流_2106032439419301890.json
 name: Qwen Image 2.1官流文生、编辑混合流_2106032439419301890
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1官流文生、编辑混合流_2106032439419301890.json
 hash: 863e73d60c069618
 coverage: 0.765957
-learned_at: 2026-10-07 02:18:38
+learned_at: 2026-10-10 20:58:52
 nodes: [UNETLoader, VAELoader, EmptyLatentImage, VAEDecode, ComfySwitchNode, QwenImage21Cache, CLIPLoader, LoadImage, TextEncodeQwenImage21, CR Prompt Text, LoadImage, ImageResizeKJv2, LoadImage, ImageResizeKJv2, LoadImage, 孤海注释, ImageResizeKJv2, LoadImage, TTResolutionSelector, TTResolutionSelector, ImageResizeKJv2, TTResolutionSelector, CR Prompt Text, CLIPLoader, TTResolutionSelector, KSampler, CLIPLoader, easy showAnything, JWStringConcat, easy showAnything, easy showAnything, StringMergeNode, ResolutionSelector, SaveImageAdvanced, CR Prompt Text, Fast Groups Bypasser (rgthree), ImageResizeKJv2, CR Prompt Text, easy cleanGpuUsed, MuyeTextEditOutput, ZML_AnyTypeSwitch, TextGenerate, MuyeTextEditOutput, TextGenerate, TTResolutionSelector, BatchImagesNode, SaveImage]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Qwen Image 2.1官流文生、编辑混合流_2106032439419301890.json
+# Qwen Image 2.1官流文生、编辑混合流_2106032439419301890.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1官流文生、编辑混合流_2106032439419301890.json`
 

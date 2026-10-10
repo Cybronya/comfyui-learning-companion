@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json
-name: Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json
+key: Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json
+name: Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json
 hash: b824c342d2d9a0b1
 coverage: 1
-learned_at: 2026-10-07 23:04:13
+learned_at: 2026-10-10 20:58:36
 nodes: [ConditioningZeroOut, VAEDecode, VAELoader, UNETLoader, DualCLIPLoader, EmptyLatentImage, KSampler, SaveImage, CLIPTextEncode]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "sampler_name": "euler", "scheduler": "simple", "seed": 156098985751864, "steps": 20, "width": 1024}
 ---
 
-# 图片生成/文生图/Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json
+# Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951288817326215170.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev文生图-无AI味逼真质感_1951288817326215170.json`
 
 ## 结构
 

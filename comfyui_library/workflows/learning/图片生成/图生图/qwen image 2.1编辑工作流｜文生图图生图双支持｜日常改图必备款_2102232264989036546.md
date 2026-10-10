@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen image 2.1编辑工作流｜文生图图生图双支持｜日常改图必备款_2102232264989036546.json
-name: qwen image 2.1编辑工作流｜文生图图生图双支持｜日常改图必备款_2102232264989036546.json
+name: qwen image 2.1编辑工作流｜文生图图生图双支持｜日常改图必备款_2102232264989036546
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen image 2.1编辑工作流｜文生图图生图双支持｜日常改图必备款_2102232264989036546.json
 hash: 17717b2856987cc0
 coverage: 0.792208
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:12
 nodes: [CLIPLoader, ComfySwitchNode, KSampler, LoadImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, EmptyLatentImage, UNETLoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VAELoader, CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, BatchImagesNode, SaveImage, TextEncodeQwenImage21, QwenImage21Cache, TextGenerateLTX2Prompt, Fast Groups Bypasser (rgthree), VAEDecode, LoadImage, PrimitiveStringMultiline, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/qwen image 2.1编辑工作流｜文生图图生图双支持｜日常改图必备款_2102232264989036546.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102232264989036546.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen image 2.1编辑工作流｜文生图图生图双支持｜日常改图必备款_2102232264989036546.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
-name: Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
+key: Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
+name: Upscaler-F.1专属高清放大CN模型_1925152412171235330
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
 hash: 3dc1f7095960a419
 coverage: 0.724138
-learned_at: 2026-10-07 22:22:57
+learned_at: 2026-10-10 20:59:12
 nodes: [Reroute, Note, Fast Groups Bypasser (rgthree), Reroute, SamplerCustomAdvanced, BasicGuider, RandomNoise, KSamplerSelect, BasicScheduler, VAEEncode, Reroute, VAEDecode, CLIPTextEncodeFlux, CLIPTextEncodeFlux, RepeatLatentBatch, Display Any (rgthree), SaveImage, Miaoshouai_Tagger, LoraLoader, DualCLIPLoader, UNETLoader, VAELoader, StringFunction|pysssss, GetImageSizeAndCount, ControlNetLoader, ControlNetApplyAdvanced, LoadImage, LatentUpscaleBy, Image Comparer (rgthree)]
 patterns: [lora]
 missing: [Display Any (rgthree), StringFunction|pysssss]
@@ -15,9 +15,9 @@ parameters: {"controlnet_strength": 0.7000000000000002, "lora_name": null, "stre
 discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
+# Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1925152412171235330.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json`
 
 ## 结构
 

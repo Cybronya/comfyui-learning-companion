@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
-name: Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
+key: Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
+name: Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
 hash: 266c0d79403eb5b5
 coverage: 0.65
-learned_at: 2026-10-07 22:59:05
+learned_at: 2026-10-10 20:58:35
 nodes: [easy compare, Int, RH_Translator, RH_LLMAPI_NODE, Note, DualCLIPLoader, UNETLoader, Note, Int, CLIPTextEncode, VAELoader, ConditioningZeroOut, KSampler, VAEDecode, easy ifElse, SaveImage, Display Any (rgthree), CR Text, CR SDXL Aspect Ratio, Int]
 patterns: []
 missing: [CR Text, Display Any (rgthree), easy compare, CR SDXL Aspect Ratio]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy compare` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
+# Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951177482479280130.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json`
 
 ## 结构
 

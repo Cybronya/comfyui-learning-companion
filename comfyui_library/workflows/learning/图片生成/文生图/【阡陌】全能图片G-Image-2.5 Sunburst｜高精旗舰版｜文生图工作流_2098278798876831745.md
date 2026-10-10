@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json
+key: 【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json
 name: 【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json
 hash: 7c026e5efbd33908
 coverage: 1
-learned_at: 2026-10-07 03:05:25
+learned_at: 2026-10-10 20:59:32
 nodes: [SaveImage, RH_RhartImageG25SunburstTextToImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json
+# 【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】全能图片G-Image-2.5 Sunburst｜高精旗舰版｜文生图工作流_2098278798876831745.json`
 

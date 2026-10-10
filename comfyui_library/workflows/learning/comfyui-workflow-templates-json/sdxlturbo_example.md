@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sdxlturbo_exampl
 hash: d3ece55064f10b31
 official: true
 coverage: 0.9
-learned_at: 2026-10-07 21:36:18
+learned_at: 2026-10-10 22:48:55
 nodes: [CLIPTextEncode, CheckpointLoaderSimple, KSamplerSelect, EmptyLatentImage, SDTurboScheduler, CLIPTextEncode, SamplerCustom, MarkdownNote, VAEDecode, SaveImage]
 patterns: []
 missing: []

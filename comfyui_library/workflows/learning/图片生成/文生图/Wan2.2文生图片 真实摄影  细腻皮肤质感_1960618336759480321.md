@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json
-name: Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json
+key: Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json
+name: Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json
 hash: 0e6ca4281d3c6699
 coverage: 0.909091
-learned_at: 2026-10-07 23:38:41
+learned_at: 2026-10-10 20:59:14
 nodes: [CLIPLoader, CLIPTextEncode, VAELoader, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, GetImageRangeFromBatch, VAEDecode, KSamplerAdvanced, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, easy int, SaveImage, EmptyHunyuanLatentVideo, easy int, CLIPTextEncode, Wan_video_prompt_generator, Text]
 patterns: []
 missing: [easy int, easy int]
@@ -15,9 +15,9 @@ parameters: {"cfg": 14, "denoise": "simple", "sampler_name": 3.5, "scheduler": "
 discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json
+# Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960618336759480321.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图片 真实摄影  细腻皮肤质感_1960618336759480321.json`
 
 ## 结构
 

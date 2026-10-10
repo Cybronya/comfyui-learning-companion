@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image-2.1-服装模特图姿势裂变_2101840140003012609.json
-name: qwen-image-2.1-服装模特图姿势裂变_2101840140003012609.json
+name: qwen-image-2.1-服装模特图姿势裂变_2101840140003012609
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1-服装模特图姿势裂变_2101840140003012609.json
 hash: e6b66c6b0602b20e
 coverage: 0.780488
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:12
 nodes: [QwenImage21Cache, CLIPLoader, SamplerCustomAdvanced, KSamplerSelect, BasicGuider, VAELoader, ReferenceLatent, BasicScheduler, UNETLoader, CLIPTextEncode, CLIPTextEncode, VAELoader, CLIPLoader, CLIPLoader, VAELoader, VAEDecode, UNETLoader, UNETLoader, VAEEncode, easy ifElse, LoadImage, ImageTile+, Image Comparer (rgthree), TextEncodeQwenImage21, ImageScaleToTotalPixelsX, EmptyLatentImage, ImageScaleToTotalPixelsX, ColorMatchV2, SaveImage, ImageUntile+, CLIPLoader, TextGenerateLTX2Prompt, ResolutionSelector, RandomNoise, KSampler, PreviewAny, VAEDecode, Seed (rgthree), PrimitiveStringMultiline, PreviewImage, PreviewImage]
 patterns: [text_to_image, image_to_image]
 missing: [ImageTile+, ImageUntile+, Seed (rgthree)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `ImageTile+` 知识库中没有该节点类型的任�
 
 # 图片生成/图生图/qwen-image-2.1-服装模特图姿势裂变_2101840140003012609.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2101840140003012609.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image-2.1-服装模特图姿势裂变_2101840140003012609.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/【批量处理工具】去水印_Flux.2.0Klein9B_2031674597690576897.json
-name: 【批量处理工具】去水印_Flux.2.0Klein9B_2031674597690576897.json
+name: 【批量处理工具】去水印_Flux.2.0Klein9B_2031674597690576897
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/【批量处理工具】去水印_Flux.2.0Klein9B_2031674597690576897.json
 hash: 798183356fb13bf5
 coverage: 0.681818
-learned_at: 2026-10-09 22:36:20
+learned_at: 2026-10-10 20:48:13
 nodes: [RHBatchImages:, easy imageCount, SaveImage, HAIGC_SaveImagesToZip, RHExtractImage, easy forLoopStart, easy batchAnything, ConditioningZeroOut, easy showAnything, scale, TextInput_, JjkText, ReferenceLatent, VAEEncode, UNETLoader, KSampler, VAEDecode, CLIPLoader, CLIPTextEncode, VAELoader, RHUploadZip, easy forLoopEnd]
 patterns: []
 missing: [RHBatchImages:, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy imageCount]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `RHBatchImages:` 知识库中没有该节点类型的
 
 # 图片生成/图生图/【批量处理工具】去水印_Flux.2.0Klein9B_2031674597690576897.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2031674597690576897.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/【批量处理工具】去水印_Flux.2.0Klein9B_2031674597690576897.json`
 
 ## 结构
 

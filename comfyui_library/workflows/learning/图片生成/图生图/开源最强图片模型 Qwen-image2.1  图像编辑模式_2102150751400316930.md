@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930.json
-name: 开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930.json
+name: 开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930.json
 hash: 0a8474ebfcfdbab4
 coverage: 0.736842
-learned_at: 2026-10-09 22:27:08
+learned_at: 2026-10-10 20:48:17
 nodes: [ResolutionSelector, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, ComfySwitchNode, QwenImage21Cache, 孤海注释, MarkdownNote, Note Plus (mtb), LoadImage, CLIPLoader, CR Text, TextGenerateLTX2Prompt, KSampler, VAEDecode, TextEncodeQwenImage21, LoadImage, SaveImage]
 patterns: []
 missing: [CR Text, Note Plus (mtb)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102150751400316930.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/开源最强图片模型 Qwen-image2.1  图像编辑模式_2102150751400316930.json`
 
 ## 结构
 

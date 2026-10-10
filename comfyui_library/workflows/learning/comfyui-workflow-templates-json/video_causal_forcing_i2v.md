@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_causal_for
 hash: 150c6ecc976a9dcd
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:36:57
+learned_at: 2026-10-10 22:50:07
 nodes: [SaveVideo, LoadImage, 96ba6b5d-dd48-49b3-84c3-5b86eafc2a07, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [96ba6b5d-dd48-49b3-84c3-5b86eafc2a07]

@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105485714585636866.json
+key: Qwen_image_2.1_文生图提示词增强_2105485714585636866.json
 name: Qwen_image_2.1_文生图提示词增强_2105485714585636866
 type: Unknown Workflow
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105485714585636866.json
 hash: 6518a82079d1275d
 coverage: 0.857143
-learned_at: 2026-10-07 02:29:34
+learned_at: 2026-10-10 20:59:09
 nodes: [TextEncodeQwenImage21, EmptyLatentImage, VAEDecode, UNETLoader, CLIPLoader, VAELoader, easy showAnything, SaveImageAdvanced, KSampler, ResolutionSelector, CLIPLoader, PrimitiveStringMultiline, TextGenerateLTX2Prompt, SaveImage]
 patterns: []
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 673343643974885, "steps": 25, "width": 1024}
 ---
 
-# 图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105485714585636866.json
+# Qwen_image_2.1_文生图提示词增强_2105485714585636866.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_image_2.1_文生图提示词增强_2105485714585636866.json`
 

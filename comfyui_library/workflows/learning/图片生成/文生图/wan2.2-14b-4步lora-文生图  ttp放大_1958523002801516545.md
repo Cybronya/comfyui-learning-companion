@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json
-name: wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json
+key: wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json
+name: wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json
 hash: e7f685dac9cc5297
 coverage: 0.892857
-learned_at: 2026-10-07 23:31:30
+learned_at: 2026-10-10 20:59:27
 nodes: [CLIPLoader, UNETLoader, UNETLoader, ModelSamplingSD3, MarkdownNote, MarkdownNote, ModelSamplingSD3, VAELoader, EmptyHunyuanLatentVideo, UpscaleImageByUsingModel, UpscaleModelLoader, TTP_Tile_image_size, TTP_Image_Tile_Batch, ImpactImageBatchToImageList, VAEEncode, KSampler, VAEDecode, easy imageListToImageBatch, CLIPTextEncode, VAEDecode, TTP_Image_Assy, KSamplerAdvanced, KSamplerAdvanced, SaveImage, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, SaveImage]
 patterns: []
 missing: [easy imageListToImageBatch]
@@ -16,9 +16,9 @@ parameters: {"cfg": 12, "denoise": "simple", "sampler_name": 1, "scheduler": "eu
 discoveries: [次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json
+# wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1958523002801516545.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2-14b-4步lora-文生图  ttp放大_1958523002801516545.json`
 
 ## 结构
 

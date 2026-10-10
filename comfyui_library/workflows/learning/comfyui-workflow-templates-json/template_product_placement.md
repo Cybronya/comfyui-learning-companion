@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_product
 hash: 013bbca546662fbe
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:36:24
+learned_at: 2026-10-10 22:49:05
 nodes: [LoadImage, LoadImage, LoadImage, KlingVideoNode, GeminiNode, PreviewAny, LoadImage, SaveVideo, PreviewImage, GeminiNanoBanana2V2]
 patterns: []
 missing: []

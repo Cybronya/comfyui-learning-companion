@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
-name: Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
+key: Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
+name: Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
 hash: 057736a357757742
 coverage: 0.666667
-learned_at: 2026-10-07 23:04:03
+learned_at: 2026-10-10 20:58:48
 nodes: [VAELoader, DualCLIPLoader, SaveImage, VAEDecode, KSampler, ConditioningZeroOut, easy showAnything, RH_Translator, CLIPTextEncode, CR SDXL Aspect Ratio, MarkdownNote, MarkdownNote, UNETLoader, NunchakuFluxDiTLoader, Text Multiline]
 patterns: []
 missing: [Text Multiline, CR SDXL Aspect Ratio]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
+# Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951205710673719298.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json`
 
 ## 结构
 

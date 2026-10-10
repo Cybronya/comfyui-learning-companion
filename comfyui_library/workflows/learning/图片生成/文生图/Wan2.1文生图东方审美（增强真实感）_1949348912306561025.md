@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json
-name: Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json
+key: Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json
+name: Wan2.1文生图东方审美（增强真实感）_1949348912306561025
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json
 hash: 2f67e55f787f3c48
 coverage: 0.714286
-learned_at: 2026-10-07 22:58:07
+learned_at: 2026-10-10 20:59:13
 nodes: [VAELoader, LoadImage, LoadImage, EmptyHunyuanLatentVideo, LayerColor: Brightness & Contrast, CLIPTextEncode, FilmGrain, KSampler, LoraLoader, SaveImage, PrimitiveInt, PrimitiveInt, PreviewImage, VAEDecode, LoraLoader, LoraLoader, CR Text, CLIPLoader, UNETLoader, CLIPTextEncode, PreviewImage]
 patterns: [lora]
 missing: [CR Text, LayerColor: Brightness & Contrast]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "lightx2v_I2V_14B_480p_cfg_ste
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: Brightness & Contrast` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json
+# Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1949348912306561025.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1文生图东方审美（增强真实感）_1949348912306561025.json`
 
 ## 结构
 

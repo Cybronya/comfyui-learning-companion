@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1全能图片编辑官方提示词强化处理工具_2102552758141411330.json
-name: Qwen Image 2.1全能图片编辑官方提示词强化处理工具_2102552758141411330.json
+name: Qwen Image 2.1全能图片编辑官方提示词强化处理工具_2102552758141411330
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1全能图片编辑官方提示词强化处理工具_2102552758141411330.json
 hash: 25d8db4449cdca5d
 coverage: 0.764706
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:06
 nodes: [VAELoader, EmptyLatentImage, QwenImage21Cache, UNETLoader, CLIPLoader, KSampler, Image Comparer (rgthree), SeedVR2LoadDiTModel, SaveImage, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, ImageScaleToTotalPixels, PrimitiveStringMultiline, PrimitiveStringMultiline, StringFormat, TextEncodeQwenImage21, SaveImage, CLIPLoader, PrimitiveStringMultiline, BatchImagesNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Image Comparer (rgthree), TextGenerate, Fast Groups Bypasser (rgthree), ShowAnything|Mie, ResolutionSelector, PrimitiveBoolean, ShowAnything|Mie, LoadImage, ComfySwitchNode, RegexExtract, PrimitiveStringMultiline, ComfySwitchNode, VAEDecode, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [ShowAnything|Mie, ShowAnything|Mie]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1全能图片编辑官方提示词强化处理工具_2102552758141411330.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102552758141411330.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1全能图片编辑官方提示词强化处理工具_2102552758141411330.json`
 
 ## 结构
 

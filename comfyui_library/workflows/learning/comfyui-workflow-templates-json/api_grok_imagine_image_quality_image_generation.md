@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_grok_imagine
 hash: 29ca11160f73822a
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:46
+learned_at: 2026-10-10 22:44:08
 nodes: [GrokImageNode, SaveImage]
 patterns: []
 missing: []

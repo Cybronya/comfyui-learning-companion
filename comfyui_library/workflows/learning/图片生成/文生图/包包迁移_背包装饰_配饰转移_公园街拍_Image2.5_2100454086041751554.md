@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554.json
+key: 包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554.json
 name: 包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554.json
 hash: 2da1c603245d4008
 coverage: 0.6
-learned_at: 2026-10-07 03:05:31
+learned_at: 2026-10-10 20:59:37
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554.json
+# 包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/包包迁移_背包装饰_配饰转移_公园街拍_Image2.5_2100454086041751554.json`
 

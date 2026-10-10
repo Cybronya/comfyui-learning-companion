@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-produc
 hash: 6a0cd63334b4e365
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:36:34
+learned_at: 2026-10-10 22:49:24
 nodes: [ImageBatch, LoadImage, LoadImage, GetImageSize, ResizeAndPadImage, PrimitiveStringMultiline, RegexReplace, PrimitiveStringMultiline, SaveImage, GeminiImage2Node]
 patterns: []
 missing: []
@@ -40,4 +40,4 @@ missing: []
 
 **有卡**：`ImageBatch`、`LoadImage`、`GetImageSize`、`ResizeAndPadImage`、`RegexReplace`、`SaveImage`、`GeminiImage2Node`
 
-**用到的条目**：LoadImage、GetImageSize、ResizeAndPadImage、GetImageSize、SaveImage、RegexReplace、ImageBatch、GeminiImage2Node
+**用到的条目**：LoadImage、GetImageSize、ResizeAndPadImage、GetImageSize、SaveImage、RegexReplace、ImageBatch、ImageBatch

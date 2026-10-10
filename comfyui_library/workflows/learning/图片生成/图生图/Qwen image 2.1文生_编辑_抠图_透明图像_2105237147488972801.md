@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json
-name: Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json
+name: Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json
 hash: 7e830f00e58ae92f
 coverage: 0.785714
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:08
 nodes: [TextEncodeQwenImage21, ComfySwitchNode, LoadImage, LoadImage, Image Comparer (rgthree), KSampler, SaveImage, VOSR2ModelLoader, Change Channel Count, VOSR2Upscale, SaveImage, LoadImage, QwenImage21Cache, VAEDecode, QwenPERewriteT8, easy showAnything, EmptyLatentImage, Fast Groups Bypasser (rgthree), PrimitiveBoolean, PrimitiveBoolean, SaveImageAdvanced, LoadImage, ResolutionSelector, CR Text, VAELoader, CLIPLoader, UNETLoader, LoraLoaderModelOnly]
 patterns: []
 missing: [CR Text, Change Channel Count]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105237147488972801.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json`
 
 ## 结构
 

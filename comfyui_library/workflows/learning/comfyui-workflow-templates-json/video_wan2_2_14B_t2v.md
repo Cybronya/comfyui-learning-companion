@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan2_2_14B
 hash: dada2276e9327b97
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:37:17
+learned_at: 2026-10-10 22:50:42
 nodes: [MarkdownNote, MarkdownNote, cb63cc72-d82e-4c9b-988d-6807f538d6ab, SaveVideo]
 patterns: []
 missing: [cb63cc72-d82e-4c9b-988d-6807f538d6ab]

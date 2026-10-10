@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/千问qwen-image-2.1文生图工作流_2104553799485583362.json
+key: 千问qwen-image-2.1文生图工作流_2104553799485583362.json
 name: 千问qwen-image-2.1文生图工作流_2104553799485583362
 type: Text To Image
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/千问qwen-image-2.1文生图工作流_2104553799485583362.json
 hash: 8edbee92f88aa335
 coverage: 0.909091
-learned_at: 2026-10-07 02:37:12
+learned_at: 2026-10-10 20:59:38
 nodes: [ConditioningZeroOut, VAEDecode, SaveImage, LoraLoaderModelOnly, UNETLoader, VAELoader, CLIPLoader, EmptyLatentImage, PreviewImage, KSampler, CLIPTextEncode]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1920, "sampler_name": "euler", "scheduler": "simple", "seed": 135300370575368, "steps": 30, "width": 1440}
 ---
 
-# 图片生成/文生图/千问qwen-image-2.1文生图工作流_2104553799485583362.json
+# 千问qwen-image-2.1文生图工作流_2104553799485583362.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/千问qwen-image-2.1文生图工作流_2104553799485583362.json`
 

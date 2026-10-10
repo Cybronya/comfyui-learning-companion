@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
-name: 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
+key: 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
+name: 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
 hash: 6a21520736c1ce5a
 coverage: 0.903226
-learned_at: 2026-10-07 22:53:01
+learned_at: 2026-10-10 20:59:50
 nodes: [CLIPTextEncode, ModelSamplingSD3, UNETLoader, UNETLoader, ModelSamplingSD3, CLIPLoader, VAELoader, CLIPTextEncode, CR Text, Int, Int, RH_LLMAPI_NODE, EmptyHunyuanLatentVideo, VAEDecode, SeedVR2BlockSwap, LayerUtility: PurgeVRAM V2, SeedVR2, KSampler, KSampler, Bjornulf_TextToStringAndSeed, CFGZeroStar, CFGZeroStar, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Image Comparer (rgthree), SaveImage, SaveImage, PathchSageAttentionKJ, PathchSageAttentionKJ]
 patterns: []
 missing: [CR Text, LayerUtility: PurgeVRAM V2]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 0.3500000000000001, "sampler_name": "euler", "
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
+# 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1947568847031361537.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json`
 
 ## 结构
 

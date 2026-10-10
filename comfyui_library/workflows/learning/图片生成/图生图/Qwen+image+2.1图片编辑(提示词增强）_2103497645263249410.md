@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen+image+2.1图片编辑(提示词增强）_2103497645263249410.json
-name: Qwen+image+2.1图片编辑(提示词增强）_2103497645263249410.json
+name: Qwen+image+2.1图片编辑(提示词增强）_2103497645263249410
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen+image+2.1图片编辑(提示词增强）_2103497645263249410.json
 hash: c4c2329ff4c292f6
 coverage: 0.870968
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:09
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CLIPLoader, VAELoader, UNETLoader, QwenImage21Cache, LoadImage, BatchImagesNode, ComfySwitchNode, KSampler, ImageConcatMulti, ImageConcatMulti, SaveImageAdvanced, VAEDecode, SaveImage, ResolutionSelector, ImageResizeKJv2, LoadImage, LoadImage, CLIPLoader, EmptyLatentImage, Image Comparer (rgthree), LayerUtility: ImageScaleByAspectRatio V2, TextEncodeQwenImage21, TextGenerateLTX2Prompt, easy showAnything]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen+image+2.1图片编辑(提示词增强）_2103497645263249410.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103497645263249410.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen+image+2.1图片编辑(提示词增强）_2103497645263249410.json`
 
 ## 结构
 

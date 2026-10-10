@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json
-name: SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json
+key: SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json
+name: SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json
 hash: 0480c1fd561bc97b
 coverage: 0.833333
-learned_at: 2026-10-07 22:41:06
+learned_at: 2026-10-10 20:59:11
 nodes: [UpscaleModelLoader, UpscaleModelLoader, SUPIR_model_loader_v2, CheckpointLoaderSimple, SUPIR_first_stage, SUPIR_conditioner, SUPIR_encode, SUPIR_sample, SUPIR_decode, ImageUpscaleWithModel, ImageScaleBy, ImageUpscaleWithModel, ImageScaleBy, LoadImage, ImageResize+, easy int, CR Image Input Switch, KSampler, ColorMatch, VAEDecodeTiled, NunchakuTextEncoderLoader, VAELoader, VAEEncodeTiled, PreviewImage, SaveImage, NunchakuFluxDiTLoader, CLIPTextEncode, CLIPTextEncode, NunchakuFluxLoraLoader, Image Comparer (rgthree)]
 patterns: []
 missing: [CR Image Input Switch, easy int, ImageResize+]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "XLL dreamshaperXL_lightningDPMSDE.safetens
 discoveries: [次要节点 `CR Image Input Switch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
-# 图片生成/文生图/SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json
+# SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1934859493480013825.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/SUPIR+FLUX.krea图片变清晰去ai感_1934859493480013825.json`
 
 ## 结构
 

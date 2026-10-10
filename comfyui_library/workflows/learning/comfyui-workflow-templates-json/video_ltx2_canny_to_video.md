@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_canny
 hash: 68e5cb0ecfff5e11
 official: true
 coverage: 0.578947
-learned_at: 2026-10-07 21:37:05
+learned_at: 2026-10-10 22:50:21
 nodes: [Canny, GetVideoComponents, ImageFromBatch, ResizeImageMaskNode, ResizeImageMaskNode, PrimitiveInt, ImageScaleBy, MarkdownNote, LoadVideo, LoadImage, PreviewImage, SaveVideo, PrimitiveInt, MarkdownNote, PrimitiveInt, SaveVideo, PrimitiveBoolean, 68857357-cbc2-4c3a-a786-c3a58d43f9b1, 4ba16137-671b-4a0a-9b09-fff1ba6ac7d8]
 patterns: []
 missing: [4ba16137-671b-4a0a-9b09-fff1ba6ac7d8, 68857357-cbc2-4c3a-a786-c3a58d43f9b1]

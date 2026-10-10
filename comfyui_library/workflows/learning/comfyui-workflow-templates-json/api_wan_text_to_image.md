@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wan_text_to_
 hash: 109eb59061c41609
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:35:11
+learned_at: 2026-10-10 22:46:48
 nodes: [MarkdownNote, WanTextToImageApi, SaveImage]
 patterns: []
 missing: []

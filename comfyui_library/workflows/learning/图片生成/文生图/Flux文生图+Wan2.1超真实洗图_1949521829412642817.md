@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux文生图+Wan2.1超真实洗图_1949521829412642817.json
-name: Flux文生图+Wan2.1超真实洗图_1949521829412642817.json
+key: Flux文生图+Wan2.1超真实洗图_1949521829412642817.json
+name: Flux文生图+Wan2.1超真实洗图_1949521829412642817
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux文生图+Wan2.1超真实洗图_1949521829412642817.json
 hash: 7a75b2dc40467d59
 coverage: 0.848485
-learned_at: 2026-10-07 22:58:10
+learned_at: 2026-10-10 20:58:37
 nodes: [CLIPTextEncode, FilmGrain, VAELoader, KSampler, PrimitiveNode, CLIPTextEncode, RandomNoise, BasicGuider, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, VAEDecode, CLIPTextEncode, PreviewImage, GetImageSize, RH_Captioner, ImageScale, VAEEncode, RH_Translator, EmptyLatentImage, UNETLoader, DualCLIPLoader, VAELoader, UNETLoader, CLIPLoader, LoraLoader, LayerColor: Brightness & Contrast, LoadImage, LoadImage, VAEDecode, SaveImage, Image Comparer (rgthree), PreviewImage]
 patterns: [text_to_image, image_to_image, lora]
 missing: [LayerColor: Brightness & Contrast]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.5000000000000001, "height":
 discoveries: [次要节点 `LayerColor: Brightness & Contrast` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Flux文生图+Wan2.1超真实洗图_1949521829412642817.json
+# Flux文生图+Wan2.1超真实洗图_1949521829412642817.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1949521829412642817.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux文生图+Wan2.1超真实洗图_1949521829412642817.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json
-name: Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json
+name: Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json
 hash: bbfca012c9c69c34
 coverage: 0.628571
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:05
 nodes: [LoadImage, LoadImage, Reroute, LoadImage, Reroute, Reroute, Reroute, Reroute, Reroute, SetNode, VAEDecode, CLIPLoader, VAELoader, Reroute, LoadImage, LoadImage, UNETLoader, GoohaiRouteBlocker, GoohaiRatioAndResolution, 忽略多组孤海, QwenImage21SageAttentionT8, GetNode, KSampler, GoohaiRouteBlocker, 孤海注释, ShowText|pysssss, Image Comparer (rgthree), QwenImagePromptOptimizer, DF_Text_Box, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, TextEncodeQwenImage21GH, LoadImageGoohai, SaveImage]
 patterns: []
 missing: [忽略多组孤海]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 # 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103270694288183297.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化_2103270694288183297.json`
 
 ## 结构
 

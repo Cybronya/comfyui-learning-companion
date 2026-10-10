@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json
-name: Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json
+name: Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json
 hash: 59411a240e558f9c
 coverage: 0.769231
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:09
 nodes: [UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, SaveImage, KSampler, 孤海注释, VAEDecode, CR Text, LoadImage, EmptyLatentImage, ComfySwitchNode]
 patterns: []
 missing: [CR Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102380656931196930.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_rodin_image_
 hash: b435cf02a56b54ed
 official: true
 coverage: 0.909091
-learned_at: 2026-10-07 21:34:42
+learned_at: 2026-10-10 22:45:54
 nodes: [Preview3D, Rodin3D_Detail, Preview3D, Preview3D, Preview3D, Rodin3D_Sketch, Rodin3D_Smooth, Note, BatchImagesNode, LoadImage, Rodin3D_Regular]
 patterns: []
 missing: []

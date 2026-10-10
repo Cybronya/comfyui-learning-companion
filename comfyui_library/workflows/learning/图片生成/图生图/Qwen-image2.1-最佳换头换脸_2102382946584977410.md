@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json
-name: Qwen-image2.1-最佳换头换脸_2102382946584977410.json
+name: Qwen-image2.1-最佳换头换脸_2102382946584977410
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json
 hash: 7690cd765035560f
 coverage: 0.769231
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:09
 nodes: [LayerUtility: ImageScaleByAspectRatio V2, VAEDecode, PreviewImage, VAELoader, KSampler, CLIPLoader, UNETLoader, TextEncodeQwenImage21, SaveImage, LoadImage, LoadImage, LoraLoaderModelOnly, CR Prompt Text]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102382946584977410.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-image2.1-最佳换头换脸_2102382946584977410.json`
 
 ## 结构
 

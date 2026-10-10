@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_dancer
 hash: 17e4d2a493de0a47
 official: true
 coverage: 0.571429
-learned_at: 2026-10-07 21:37:20
+learned_at: 2026-10-10 22:50:48
 nodes: [LoadImage, LoadAudio, f7467834-35a6-42fe-b525-7f17383beb4f, SaveVideo, SaveVideo, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [f7467834-35a6-42fe-b525-7f17383beb4f]

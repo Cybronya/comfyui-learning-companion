@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-produc
 hash: ee585bfe1944cc78
 official: true
 coverage: 0.625
-learned_at: 2026-10-07 21:36:34
+learned_at: 2026-10-10 22:49:25
 nodes: [PrimitiveStringMultiline, LoadImage, LoadImage, SaveImage, ByteDanceSeedreamNode, RegexReplace, PrimitiveStringMultiline, 94a7e2c4-f61f-4641-a52c-758479d9b975]
 patterns: []
 missing: [94a7e2c4-f61f-4641-a52c-758479d9b975]
@@ -41,7 +41,7 @@ discoveries: [次要节点 `94a7e2c4-f61f-4641-a52c-758479d9b975` 知识库中�
 
 **缺卡**（1）：`94a7e2c4-f61f-4641-a52c-758479d9b975`
 
-**用到的条目**：LoadImage、ByteDanceSeedreamNode、SaveImage、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、node、String
+**用到的条目**：LoadImage、ByteDanceSeedreamNode、SaveImage、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、Seed、node
 
 ## 学习发现
 

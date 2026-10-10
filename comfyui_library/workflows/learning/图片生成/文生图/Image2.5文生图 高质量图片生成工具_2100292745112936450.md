@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json
+key: Image2.5文生图 高质量图片生成工具_2100292745112936450.json
 name: Image2.5文生图 高质量图片生成工具_2100292745112936450
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json
 hash: 1121ffd49fcfc3a7
 coverage: 0.818182
-learned_at: 2026-10-07 03:05:06
+learned_at: 2026-10-10 20:58:40
 nodes: [SaveImage, RH_RhartImageG25SunburstTextToImage, PreviewImage, JjkText, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json
+# Image2.5文生图 高质量图片生成工具_2100292745112936450.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json`
 

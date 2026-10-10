@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
-name: ▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+key: ▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+name: ▶WAN2.2单底噪图生图洗图流_1956293805874008065
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
 hash: 461b4fc21eb0d3ff
 coverage: 0.705882
-learned_at: 2026-10-07 23:25:04
+learned_at: 2026-10-10 20:59:28
 nodes: [VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, Image Comparer (rgthree), VAEDecode, SaveImage, CLIPLoader, UNETLoader, LoadImage, LoraLoaderModelOnly, KSampler, VAELoader, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, CLIPTextEncode, ModelSamplingSD3, ShowText|pysssss, CLIPTextEncode]
 patterns: [image_to_image]
 missing: [LayerMask: LoadFlorence2Model, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: Florence2Image2Prompt]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "res_2s",
 discoveries: [次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: Florence2Image2Prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+# ▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1956293805874008065.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json`
 
 ## 结构
 

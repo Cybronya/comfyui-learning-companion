@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json
-name: Flux.1Krea文生图_1951794471434399745.json
+key: Flux.1Krea文生图_1951794471434399745.json
+name: Flux.1Krea文生图_1951794471434399745
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json
 hash: 5a3d181e8f1592ac
 coverage: 1
-learned_at: 2026-10-07 23:04:25
+learned_at: 2026-10-10 20:58:36
 nodes: [SaveImage, CLIPTextEncode, ConditioningZeroOut, VAELoader, DualCLIPLoader, KSampler, EmptyLatentImage, UNETLoader, LoraLoaderModelOnly, VAEDecode, RH_Translator]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 294507246359010, "steps": 20, "width": 1024}
 ---
 
-# 图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json
+# Flux.1Krea文生图_1951794471434399745.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951794471434399745.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json`
 
 ## 结构
 

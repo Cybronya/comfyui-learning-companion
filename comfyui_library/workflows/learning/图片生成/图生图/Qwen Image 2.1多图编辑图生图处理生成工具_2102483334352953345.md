@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json
-name: Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json
+name: Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json
 hash: 32df94c4e8d4af5c
 coverage: 0.884615
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:07
 nodes: [EmptyLatentImage, VAEDecode, SaveImage, ComfySwitchNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, ResolutionSelector, VAELoader, CLIPLoader, QwenImage21Cache, UNETLoader, RHLLMChatNode, CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [CR Prompt Text]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102483334352953345.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102483334352953345.json`
 
 ## 结构
 

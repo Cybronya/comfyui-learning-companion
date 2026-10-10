@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
-name: 千问文生图+wan2.2高清放大_1952618606662234114.json
+key: 千问文生图+wan2.2高清放大_1952618606662234114.json
+name: 千问文生图+wan2.2高清放大_1952618606662234114
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
 hash: bf9ec881ea959f0a
 coverage: 0.866667
-learned_at: 2026-10-07 23:04:57
+learned_at: 2026-10-10 20:59:38
 nodes: [CLIPTextEncode, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoader, KSampler, LoraLoader, UNETLoader, VAEEncode, CLIPLoader, VAELoader, ModelSamplingAuraFlow, CLIPTextEncode, EmptySD3LatentImage, CLIPTextEncode, Reroute, CLIPTextEncode, SaveImage, Image Comparer (rgthree), VAEDecode, CLIPLoader, VAELoader, LoraLoader, UNETLoader, ImageUpscaleWithModel, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, ImageFromBatch, Image Tiled, ImageConcanateOfUtils, KSampler, VAEDecode, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, PreviewImage, ImageScaleToTotalPixels, Reroute, SaveImage, UpscaleModelLoader, CR Text]
 patterns: [lora]
 missing: [CR Text, Image Tiled]
@@ -15,9 +15,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
+# 千问文生图+wan2.2高清放大_1952618606662234114.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952618606662234114.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json`
 
 ## 结构
 

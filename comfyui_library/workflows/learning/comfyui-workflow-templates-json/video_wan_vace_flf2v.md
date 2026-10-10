@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_vace_f
 hash: 5fbeee13bb27ffe8
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:37:22
+learned_at: 2026-10-10 22:50:51
 nodes: [MarkdownNote, SaveVideo, LoadImage, LoadImage, f0d12712-a319-499d-8e91-197b72dfb3a3, MarkdownNote]
 patterns: []
 missing: [f0d12712-a319-499d-8e91-197b72dfb3a3]

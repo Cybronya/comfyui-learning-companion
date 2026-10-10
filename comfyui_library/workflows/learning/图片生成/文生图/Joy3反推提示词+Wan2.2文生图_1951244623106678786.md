@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Joy3反推提示词+Wan2.2文生图_1951244623106678786.json
-name: Joy3反推提示词+Wan2.2文生图_1951244623106678786.json
+key: Joy3反推提示词+Wan2.2文生图_1951244623106678786.json
+name: Joy3反推提示词+Wan2.2文生图_1951244623106678786
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Joy3反推提示词+Wan2.2文生图_1951244623106678786.json
 hash: 64a13d7a73e9ebcd
 coverage: 0.558824
-learned_at: 2026-10-07 23:04:06
+learned_at: 2026-10-10 20:58:41
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, UNETLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, easy cleanGpuUsed, LayerUtility: ImageScaleByAspectRatio V2, KSamplerAdvanced, KSamplerAdvanced, easy cleanGpuUsed, EmptyHunyuanLatentVideo, DeepTranslatorTextNode, Reroute, Image Comparer (rgthree), ShowText|pysssss, CLIPLoader, LayerUtility: JoyCaptionBeta1, Note, LayerUtility: LoadJoyCaptionBeta1Model, Note, ShowText|pysssss, LayerUtility: JoyCaptionBeta1ExtraOptions, LoadImage, Reroute, easy imageConcat, SaveImage, VAEDecode, SaveImage, LayerUtility: ImageScaleByAspectRatio V2, DeepTranslatorTextNode]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, easy cleanGpuUsed, easy cleanGpuUsed, easy imageConcat]
@@ -15,9 +15,9 @@ parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Joy3反推提示词+Wan2.2文生图_1951244623106678786.json
+# Joy3反推提示词+Wan2.2文生图_1951244623106678786.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951244623106678786.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Joy3反推提示词+Wan2.2文生图_1951244623106678786.json`
 
 ## 结构
 

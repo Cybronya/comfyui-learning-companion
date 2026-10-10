@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
-name: WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
+key: WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
+name: WAN2.2单噪文生图-超写实不油腻_1951534176858263554
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
 hash: a547252b95299939
 coverage: 0.583333
-learned_at: 2026-10-07 23:04:19
+learned_at: 2026-10-10 20:59:13
 nodes: [PathchSageAttentionKJ, UnetLoaderGGUF, Lora Loader Stack (rgthree), SaveImage, ModelSamplingSD3, VAELoader, FastLaplacianSharpen, FastFilmGrain, easy cleanGpuUsed, easy clearCacheAll, WanVideoNAG, VAEDecode, CLIPTextEncode, PreviewImage, MarkdownNote, Label (rgthree), KSampler, MarkdownNote, MarkdownNote, Label (rgthree), CLIPLoader, CLIPTextEncode, Note Plus (mtb), EmptyLatentImage]
 patterns: [text_to_image]
 missing: [Label (rgthree), Label (rgthree), Note Plus (mtb), easy cleanGpuUsed, easy clearCacheAll, Lora Loader Stack (rgthree)]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 0.8, "denoise": 0.8500000000000002, "height
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
+# WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951534176858263554.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json`
 
 ## 结构
 

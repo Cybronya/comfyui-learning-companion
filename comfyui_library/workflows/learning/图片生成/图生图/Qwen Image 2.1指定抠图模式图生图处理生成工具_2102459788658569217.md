@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1指定抠图模式图生图处理生成工具_2102459788658569217.json
-name: Qwen Image 2.1指定抠图模式图生图处理生成工具_2102459788658569217.json
+name: Qwen Image 2.1指定抠图模式图生图处理生成工具_2102459788658569217
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1指定抠图模式图生图处理生成工具_2102459788658569217.json
 hash: defa4b2279e6632f
 coverage: 0.833333
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:07
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, ComfySwitchNode, QwenImage21Cache, TextEncodeQwenImage21, Note Plus (mtb), LoadImage, VAEDecode, CR Text, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [CR Text, Note Plus (mtb)]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/Qwen Image 2.1指定抠图模式图生图处理生成工具_2102459788658569217.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102459788658569217.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1指定抠图模式图生图处理生成工具_2102459788658569217.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bfl_flux_1_k
 hash: f97e800c5dabede7
 official: true
 coverage: 0.7
-learned_at: 2026-10-07 21:33:20
+learned_at: 2026-10-10 22:43:18
 nodes: [LoadImage, LoadImage, SaveImage, LoadImage, FluxKontextProImageNode, ImageStitch, ImageStitch, PreviewImage, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []
@@ -40,4 +40,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveImage`、`FluxKontextProImageNode`、`ImageStitch`
 
-**用到的条目**：LoadImage、FluxKontextProImageNode、SaveImage、ImageStitch、sd15-t2i-basic、sd15-t2i-lora、node、Text
+**用到的条目**：LoadImage、FluxKontextProImageNode、SaveImage、ImageStitch、ImageStitch、sd15-t2i-basic、sd15-t2i-lora、node

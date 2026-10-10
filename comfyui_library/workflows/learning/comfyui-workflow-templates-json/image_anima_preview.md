@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_anima_prev
 hash: 4cfdca0c48a3f93d
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:33
+learned_at: 2026-10-10 22:47:25
 nodes: [MarkdownNote, SaveImage, a3c0dab6-b250-4585-a0f9-8fb8b074fb2f]
 patterns: []
 missing: [a3c0dab6-b250-4585-a0f9-8fb8b074fb2f]

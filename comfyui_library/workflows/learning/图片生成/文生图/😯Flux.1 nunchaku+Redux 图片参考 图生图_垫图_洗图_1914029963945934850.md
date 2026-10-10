@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
-name: 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
+key: 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
+name: 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
 hash: 0a71e96e96bf04da
 coverage: 0.514706
-learned_at: 2026-10-07 19:12:47
+learned_at: 2026-10-10 21:00:02
 nodes: [GetNode, SetNode, CR Text, CLIPVisionEncode, GetNode, GetNode, VAEDecode, DetailDaemonSamplerNode, BasicGuider, KSamplerSelect, RepeatLatentBatch, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, StyleModelApply, StyleModelLoader, CLIPVisionEncode, CLIPVisionLoader, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, GetNode, GetNode, LoadImage, SetNode, GetNode, ImageSmartSharpen+, GetNode, UpscaleModelLoader, GetNode, LatentPixelScale, VAEEncode, InjectLatentNoise+, RandomNoise, FluxGuidance, ConditioningZeroOut, CLIPTextEncode, VAELoader, SetNode, SetNode, SetNode, SetNode, SetNode, CLIPTextEncode, GetNode, NunchakuFluxLoraLoader, SetNode, DualCLIPLoader, NunchakuTextEncoderLoaderV2, CR Text Concatenate, GetNode, SetNode, RebatchLatents, NunchakuFluxLoraLoader, NunchakuFluxDiTLoader, SamplerCustomAdvanced, StyleModelApply, StyleModelLoader, CLIPVisionLoader, NunchakuFluxLoraLoader, LayerUtility: ImageScaleByAspectRatio V2, BasicScheduler, ShowText|pysssss, AILab_QwenVL, SaveImage, GetNode]
 patterns: []
 missing: [CR Text, CR Text Concatenate, ImageSmartSharpen+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, InjectLatentNoise+]
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `InjectLatentNoise+` 仅有 VAE 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
+# 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1914029963945934850.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json`
 
 ## 结构
 

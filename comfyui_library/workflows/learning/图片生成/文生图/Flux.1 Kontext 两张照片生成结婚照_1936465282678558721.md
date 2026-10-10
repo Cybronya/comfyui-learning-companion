@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
-name: Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
+key: Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
+name: Flux.1 Kontext 两张照片生成结婚照_1936465282678558721
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
 hash: 7a8106a6eca632ed
 coverage: 0.777778
-learned_at: 2026-10-07 22:41:23
+learned_at: 2026-10-10 20:58:35
 nodes: [RH_ComfyFluxKontext, PreviewImage, LoadImage, LoadImage, SaveImage, Image Stitch, Text, Bjornulf_ShowStringText, ArgosTranslateTextNode]
 patterns: []
 missing: [Image Stitch]
 discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
+# Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1936465282678558721.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json`
 
 ## 结构
 

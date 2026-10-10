@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
-name: 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
+key: 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
+name: 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
 hash: cf9b95b5ce18499e
 coverage: 0.774194
-learned_at: 2026-10-08 00:02:07
+learned_at: 2026-10-10 20:59:31
 nodes: [EnhancedLoadDiffusionModel, AudioEncoderLoader, CLIPLoader, CLIPTextEncode, CLIPTextEncode, AudioEncoderEncode, LoraLoaderModelOnly, WanSoundImageToVideo, VAEDecode, Note, Note, PrimitiveNode, PrimitiveNode, PrimitiveNode, VAELoader, LoraLoaderModelOnly, CLIPTextEncode, VAEDecode, EmptyLatentImage, UNETLoader, DualCLIPLoader, LoraLoaderModelOnly, KSamplerAdvanced, CLIPTextEncode, SaveImage, VAELoader, LoadAudio, VHS_VideoCombine, Fast Groups Bypasser (rgthree), PrimitiveNode, KSampler]
 patterns: [text_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 768, "sampler_na
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
+# 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1966350469507526658.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json`
 
 ## 结构
 

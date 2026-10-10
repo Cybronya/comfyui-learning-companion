@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
-name: Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
+key: Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
+name: Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
 hash: d824d9137e626446
 coverage: 0.636364
-learned_at: 2026-10-07 18:48:20
+learned_at: 2026-10-10 20:58:39
 nodes: [LoadAudio, Gemini_Flash_200_Exp, ShowText|pysssss, LoadImage, LoadImage, PreviewImage, LoadImage, PreviewImage, LoadImage, Gemini_Flash_200_Exp, LoadImage, PreviewImage, Gemini_Flash_200_Exp, Gemini_Flash_200_Exp, LoadImage, PreviewImage, LoadImage, Gemini_Flash_200_Exp, LoadImage, ShowText|pysssss, Gemini_Flash_200_Exp, VHS_LoadVideo, ShowText|pysssss, Gemini_Flash_200_Exp, PreviewImage, ImageConcanate, ImageConcanate, PreviewImage, ImageConcanate, PreviewImage, Fast Groups Bypasser (rgthree), Note _O, VHS_VideoCombine]
 patterns: []
 missing: [Note _O]
 discoveries: [次要节点 `Note _O` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
+# Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1902741651008204801.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json`
 
 ## 结构
 

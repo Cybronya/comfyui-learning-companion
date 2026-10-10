@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json
-name: wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json
+key: wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json
+name: wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json
 hash: ee9a5b35fc8fbe62
 coverage: 0.681818
-learned_at: 2026-10-07 22:58:26
+learned_at: 2026-10-10 20:59:26
 nodes: [CLIPTextEncode, CLIPTextEncode, CR Text Concatenate, VAELoader, VAEDecode, CLIPSetLastLayer, EmptyHunyuanLatentVideo, SaveImage, TeaCache, MarkdownNote, MarkdownNote, MarkdownNote, KSampler, CR Prompt Text, CR Prompt Text, PathchSageAttentionKJ, MarkdownNote, UNETLoader, CLIPLoader, LoraLoader, LoraLoader, LoraLoader]
 patterns: [lora]
 missing: [CR Text Concatenate, CR Prompt Text, CR Prompt Text]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "WAN2.1_SmartphoneSnapshotPhot
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json
+# wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950459448403910658.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1文生图去AI味增加皮肤纹理细节提高真实感_1950459448403910658.json`
 
 ## 结构
 

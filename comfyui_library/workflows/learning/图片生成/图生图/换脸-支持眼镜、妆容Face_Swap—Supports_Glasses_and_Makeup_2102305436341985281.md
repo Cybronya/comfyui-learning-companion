@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281.json
-name: 换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281.json
+name: 换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281.json
 hash: fd2287f27b68823f
 coverage: 0.666667
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:17
 nodes: [Note, Note, Int Literal, Note, Int Literal, KSampler, DownloadAndLoadFlorence2Model, GrowMaskWithBlur, RHHiddenNodes, StyleModelLoader, GrowMaskWithBlur, CLIPVisionLoader, LayerUtility: ColorImage V2, LayerUtility: ImageScaleRestore V2, Get Image Size, Florence2Run, LayerUtility: ImageBlend, AddMask, ImageToMask, CM_IntBinaryOperation, RepeatLatentBatch, CachePreviewBridge, CachePreviewBridge, CachePreviewBridge, CachePreviewBridge, SaveImage, UNETLoader, ImageMaskSwitch, LayerUtility: CropByMask V2, LayerUtility: CropByMask V2, CLIPVisionEncode, SubtractMask, AddMask, ImageConcanate, ImageConcanate, Get Image Size, CM_NumberToInt, CM_IntBinaryOperation, ImpactInt, VAEDecode, ImageAndMaskPreview, MaskToImage, SubtractMask, ImageConcanate, VAELoader, Mask Fill Holes, BlendInpaint, workflow>123, CutForInpaint, InpaintModelConditioning, IsMaskEmpty, ImageToMask, RHHiddenNodes, easy mathInt, ImageAndMaskPreview, ImageToMask, MaskToImage, ConditioningZeroOut, IsMaskEmpty, StyleModelApply, DifferentialDiffusion, Mask Fill Holes, CM_NumberToInt, MaskToImage, LayerUtility: ImageScaleByAspectRatio V2, ImageCrop+, easy imageSize, ImageScale, workflow>zz, ImageMaskSwitch, LayerUtility: ImageScaleByAspectRatio V2, FluxGuidance, ImageAndMaskPreview, GrowMaskWithBlur, easy cleanGpuUsed, CLIPTextEncode, LoraLoaderModelOnly, ColorMatch, LayerMask: PersonMaskUltra V2, LoadImage, Int Literal, Note, Note, LoadImage, Note, LayerMask: PersonMaskUltra V2, PreviewImage]
 patterns: []
 missing: [ImageCrop+, Int Literal, Int Literal, Int Literal, LayerMask: PersonMaskUltra V2, LayerMask: PersonMaskUltra V2, LayerUtility: ColorImage V2, LayerUtility: CropByMask V2, LayerUtility: CropByMask V2, LayerUtility: ImageBlend, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, Mask Fill Holes, Mask Fill Holes, easy cleanGpuUsed, easy mathInt, workflow>123, workflow>zz, Get Image Size, Get Image Size, easy imageSize]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `ImageCrop+` 知识库中没有该节点类型的任�
 
 # 图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102305436341985281.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/换脸-支持眼镜、妆容Face_Swap—Supports_Glasses_and_Makeup_2102305436341985281.json`
 
 ## 结构
 

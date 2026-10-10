@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json
-name: qwen-Image -nunchaku+lora_1963114884189884418.json
+key: qwen-Image -nunchaku+lora_1963114884189884418.json
+name: qwen-Image -nunchaku+lora_1963114884189884418
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json
 hash: 1d831bae0e748581
 coverage: 1
-learned_at: 2026-10-07 23:54:17
+learned_at: 2026-10-10 20:59:24
 nodes: [CLIPTextEncode, CLIPLoader, VAELoader, ModelSamplingAuraFlow, NunchakuQwenImageDiTLoader, VAEDecode, SaveImage, EmptySD3LatentImage, CLIPTextEncode, KSampler, NunchakuQwenImageLoraLoader1]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json
+# qwen-Image -nunchaku+lora_1963114884189884418.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1963114884189884418.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json`
 
 ## 结构
 

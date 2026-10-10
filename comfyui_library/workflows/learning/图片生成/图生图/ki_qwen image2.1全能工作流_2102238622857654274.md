@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/ki_qwen image2.1全能工作流_2102238622857654274.json
-name: ki_qwen image2.1全能工作流_2102238622857654274.json
+name: ki_qwen image2.1全能工作流_2102238622857654274
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/ki_qwen image2.1全能工作流_2102238622857654274.json
 hash: 430e48632b7eb22d
 coverage: 0.328767
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:11
 nodes: [VAEDecode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, SetNode, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, SaveImage, UNETLoader, CLIPLoader, VAELoader, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, LoadImage, easy showAnything, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, QwenImage21Cache, TextEncodeQwenImage21, KSampler, LoadImage, Fast Groups Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, EmptyLatentImage, GetNode, GetImageSize, SetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, CR Text, CR Text, CR Text, SetNode, LoadImage, SetNode, SetNode, GetNode, PreviewImage, CR Text, CR Text, AIO_Preprocessor, llama_cpp_parameters, LoadImage, llama_cpp_instruct_adv, llama_cpp_instruct_adv, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_model_loader, ki_宫格拼图简易版, PreviewImage, LoadImage, LoadImage, GetNode, Image Comparer (rgthree), CR Text Concatenate, easy showAnything, CR Text]
 patterns: []
 missing: [CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, ki_宫格拼图简易版]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/ki_qwen image2.1全能工作流_2102238622857654274.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102238622857654274.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/ki_qwen image2.1全能工作流_2102238622857654274.json`
 
 ## 结构
 

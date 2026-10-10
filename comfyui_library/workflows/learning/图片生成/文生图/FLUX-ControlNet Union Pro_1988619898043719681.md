@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/FLUX-ControlNet Union Pro_1988619898043719681.json
-name: FLUX-ControlNet Union Pro_1988619898043719681.json
+key: FLUX-ControlNet Union Pro_1988619898043719681.json
+name: FLUX-ControlNet Union Pro_1988619898043719681
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/FLUX-ControlNet Union Pro_1988619898043719681.json
 hash: ebe13c3834a1bd3b
 coverage: 0.791667
-learned_at: 2026-10-09 21:16:01
+learned_at: 2026-10-10 20:58:32
 nodes: [SetUnionControlNetType, AIO_Preprocessor, PreviewImage, KSampler, VAEDecode, SaveImage, EmptyLatentImage, PreviewImage, ControlNetApplySD3, ConditioningZeroOut, LayerUtility: LoadJoyCaptionBeta1Model, DualCLIPLoader, ImageResize+, UNETLoader, CLIPTextEncode, LoraLoader, LoraLoader, LoraLoader, LoraLoader, ControlNetLoader, VAELoader, LayerUtility: JoyCaptionBeta1, LoadImage, LoraLoader]
 patterns: [text_to_image, lora]
 missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, ImageResize+]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 0.52, "denoise": 
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/FLUX-ControlNet Union Pro_1988619898043719681.json
+# FLUX-ControlNet Union Pro_1988619898043719681.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1988619898043719681.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX-ControlNet Union Pro_1988619898043719681.json`
 
 ## 结构
 

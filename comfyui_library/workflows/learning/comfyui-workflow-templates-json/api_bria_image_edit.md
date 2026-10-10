@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_image_e
 hash: f80a739ff44d32b6
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:33:23
+learned_at: 2026-10-10 22:43:23
 nodes: [SaveImage, LoadImage, ImageCompare, MarkdownNote, BriaImageEditNode]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`ImageCompare`、`BriaImageEditNode`
 
-**用到的条目**：LoadImage、SaveImage、BriaImageEditNode、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、BriaImageEditNode、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、node、Compare

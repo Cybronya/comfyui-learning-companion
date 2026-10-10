@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_krea2_turb
 hash: 8688a4fe39292924
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:46
+learned_at: 2026-10-10 22:48:08
 nodes: [SaveImage, b0e5ca93-2731-42b9-8e0a-d28ea851ff81, MarkdownNote, MarkdownNote, MarkdownNote, ResolutionSelector]
 patterns: []
 missing: [b0e5ca93-2731-42b9-8e0a-d28ea851ff81]

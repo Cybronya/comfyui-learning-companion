@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/（最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json
-name: （最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json
+key: （最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json
+name: （最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/（最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json
 hash: 3d7ac1e940008c5b
 coverage: 0.680672
-learned_at: 2026-10-07 23:04:21
+learned_at: 2026-10-10 21:00:00
 nodes: [ControlNetLoader, InstantIDFaceAnalysis, ControlNetApplyAdvanced, CLIPTextEncode, LayerUtility: LayerImageTransform, CheckpointLoaderSimple, ApplyInstantID, ApplyFBCacheOnModel, KSampler, InstantIDModelLoader, ApplyPulidFlux, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, LoraLoaderModelOnly, UNETLoader, ModelSamplingSD3, ModelSamplingSD3, DownloadAndLoadDepthAnythingV2Model, SetUnionControlNetType, DepthAnything_V2, ImpactSwitch, VAELoader, UNETLoader, PulidFluxModelLoader, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxOptions, PulidFluxFaceDetector, PreviewImage, PreviewImage, MaskPreview+, PreviewImage, CM_IntToNumber, VAEEncode, LayerMask: PersonMaskUltra V2, LayerMask: MaskGrow, SetLatentNoiseMask, LayerUtility: CropBoxResolve, GetImageSize+, CM_NumberUnaryOperation, CM_NumberToInt, PreviewImage, CM_IntToFloat, PreviewImage, PathchSageAttentionKJ, LayerUtility: PurgeVRAM, PrimitiveNode, FaceBoundingBox, FaceAnalysisModels, PreviewImage, JWInteger, LayerUtility: PurgeVRAM, CLIPTextEncode, CLIPTextEncode, CLIPLoader, CLIPTextEncode, LoraLoaderModelOnly, DualCLIPLoader, PreviewImage, ImageScale, SetNode, PreviewImage, CLIPTextEncode, LayerUtility: CropByMask, CM_NumberToInt, CM_IntToFloat, ImageScaleBy, CR Upscale Image, ControlNetLoader, ImpactSwitch, LayerMask: PersonMaskUltra V2, PreviewImage, ControlNetLoader, BasicGuider, KSampler, DWPreprocessor, LayerMask: MaskGrow, ConditioningZeroOut, GetNode, GetNode, RandomNoise, SamplerCustomAdvanced, LoraLoaderModelOnly, BasicScheduler, KSamplerSelect, FluxGuidance, ImageConcanate, SetUnionControlNetType, CR Prompt Text, ControlNetApplyAdvanced, Bjornulf_TextToStringAndSeed, VAELoader, VAEEncode, SaveImage, JWImageResizeByLongerSide, SaveImage, Image Comparer (rgthree), ImageScale, PreviewImage, VAEDecode, LayerUtility: LayerImageTransform, ImageScaleBy, PreviewImage, easy imageColorMatch, PreviewImage, ImageComposite+, SaveImage, PDIMAGE_LongerSize, VAEDecode, Image Comparer (rgthree), VAEDecode, SaveImage, KSampler, Image Comparer (rgthree), PreviewImage, LoadImage, LoadImage, EmptySD3LatentImage]
 patterns: [image_to_image]
 missing: [ImageComposite+, LayerMask: MaskGrow, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerMask: PersonMaskUltra V2, LayerUtility: CropBoxResolve, LayerUtility: CropByMask, LayerUtility: LayerImageTransform, LayerUtility: LayerImageTransform, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, easy imageColorMatch, CR Prompt Text, CR Upscale Image, GetImageSize+, MaskPreview+]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "juggernautXL_v9Rdphoto2Lightning.safetenso
 discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropBoxResolve` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LayerImageTransform` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LayerImageTransform` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Upscale Image` 仅有 Upscale 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/（最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json
+# （最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951546750295330818.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/（最强人像文生图）Wan2.2+Krea+Cn2.0+Pulid+InstantID_1951546750295330818.json`
 
 ## 结构
 

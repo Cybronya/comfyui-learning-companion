@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_recraft_v4_s
 hash: b974e7c4b33e96b2
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:34:39
+learned_at: 2026-10-10 22:45:48
 nodes: [RecraftV4CreateStyleNode, LoadImage, LoadImage, LoadImage, LoadImage, SaveText, RecraftV4TextToImageNode, SaveImageAdvanced, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

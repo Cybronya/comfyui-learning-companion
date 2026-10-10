@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_flux_video_e
 hash: 5dd5d2c50732e449
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:33:37
+learned_at: 2026-10-10 22:43:52
 nodes: [LoadVideo, SaveVideo, FluxVideoEditNode, MarkdownNote]
 patterns: []
 missing: []

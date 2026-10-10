@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/llm_gemma4_text_
 hash: 2ffe86d2b809f2a2
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:36:13
+learned_at: 2026-10-10 22:48:45
 nodes: [CLIPLoader, LoadAudio, LoadImage, PreviewAny, TextGenerate, LoadVideo, GetVideoComponents, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

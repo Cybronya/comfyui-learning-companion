@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json
-name: 一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json
+key: 一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json
+name: 一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json
 hash: 674ea517a99dfd3f
 coverage: 0.866667
-learned_at: 2026-10-07 19:46:05
+learned_at: 2026-10-10 20:59:32
 nodes: [VAELoader, NunchakuTextEncoderLoader, KSamplerSelect, NunchakuFluxDiTLoader, ModelSamplingFlux, FluxGuidance, ConditioningZeroOut, PrimitiveNode, PrimitiveNode, EmptySD3LatentImage, LoraLoaderModelOnly, CLIPTextEncode, SaveImage, VAEDecode, KSampler]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "norm
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json
+# 一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1912263987780878337.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/一秒两张 Flux Nunchaku Turbo四步极速出图工作流-StarAI_1912263987780878337.json`
 
 ## 结构
 

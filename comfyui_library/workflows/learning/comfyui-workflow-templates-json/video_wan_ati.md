@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_ati.js
 hash: 2495a1985aa0781f
 official: true
 coverage: 0.777778
-learned_at: 2026-10-07 21:37:20
+learned_at: 2026-10-10 22:50:47
 nodes: [UNETLoader, CLIPLoader, WanTrackToVideo, CLIPTextEncode, CLIPVisionEncode, VAELoader, CLIPVisionLoader, SaveVideo, LoadImage, MarkdownNote, CreateVideo, KSampler, ModelSamplingSD3, MarkdownNote, VAEDecode, CLIPTextEncode, PrimitiveStringMultiline, MarkdownNote]
 patterns: []
 missing: []

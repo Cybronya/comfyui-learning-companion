@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_rob_re
 hash: c0639c3dfe7009f6
 official: true
 coverage: 0.625
-learned_at: 2026-10-07 21:36:40
+learned_at: 2026-10-10 22:49:34
 nodes: [LoadImage, ImageCompare, SaveImage, c19ae9b8-d43c-40d3-8ae7-eea7d345a587, SaveImage, 010af74f-5a21-43f4-b520-14374608c312, GrokImageNode, PreviewAny]
 patterns: []
 missing: [010af74f-5a21-43f4-b520-14374608c312, c19ae9b8-d43c-40d3-8ae7-eea7d345a587]

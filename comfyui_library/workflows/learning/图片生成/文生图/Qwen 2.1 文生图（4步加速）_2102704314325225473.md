@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen 2.1 文生图（4步加速）_2102704314325225473.json
+key: Qwen 2.1 文生图（4步加速）_2102704314325225473.json
 name: Qwen 2.1 文生图（4步加速）_2102704314325225473
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen 2.1 文生图（4步加速）_2102704314325225473.json
 hash: 667bf4f4393811ba
 coverage: 0.75
-learned_at: 2026-10-07 02:13:13
+learned_at: 2026-10-10 20:58:50
 nodes: [TextEncodeQwenImage21, LoraLoaderModelOnly, UNETLoader, CLIPLoader, VAELoader, SaveImage, EmptyLatentImage, QwenImage21Cache, VAEDecode, easy cleanGpuUsed, CR Prompt Text, ResolutionSelector, QwenPERewriteT8, easy showAnything, ComfySwitchNode, KSampler]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen 2.1 文生图（4步加速）_2102704314325225473.json
+# Qwen 2.1 文生图（4步加速）_2102704314325225473.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen 2.1 文生图（4步加速）_2102704314325225473.json`
 

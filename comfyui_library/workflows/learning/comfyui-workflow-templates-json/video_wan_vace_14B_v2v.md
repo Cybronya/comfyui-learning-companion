@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_vace_1
 hash: c190961990c76696
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:37:22
+learned_at: 2026-10-10 22:50:50
 nodes: [CreateVideo, KSampler, ModelSamplingSD3, UNETLoader, VAELoader, MarkdownNote, TrimVideoLatent, VAEDecode, SaveAnimatedWEBP, UNETLoader, LoraLoader, CLIPLoader, CLIPLoader, WanVaceToVideo, SaveVideo, PreviewImage, GetVideoComponents, Canny, MarkdownNote, LoraLoader, CLIPTextEncode, CLIPTextEncode, MarkdownNote, MarkdownNote, MarkdownNote, LoadVideo, LoadImage, MarkdownNote]
 patterns: [lora]
 missing: []

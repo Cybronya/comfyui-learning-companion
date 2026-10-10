@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux1.1pro-精炼人像lora_1910491843820253185.json
-name: Flux1.1pro-精炼人像lora_1910491843820253185.json
+key: Flux1.1pro-精炼人像lora_1910491843820253185.json
+name: Flux1.1pro-精炼人像lora_1910491843820253185
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux1.1pro-精炼人像lora_1910491843820253185.json
 hash: c93039c8353d5c0f
 coverage: 1
-learned_at: 2026-10-07 19:12:42
+learned_at: 2026-10-10 20:58:36
 nodes: [FluxGuidance, CLIPTextEncode, DualCLIPLoader, VAELoader, VAEDecode, KSampler, TeaCache, LoraLoaderModelOnly, CLIPTextEncode, EmptyLatentImage, SaveImage, UNETLoader, LoraLoaderModelOnly]
 patterns: [text_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Flux1.1pro-精炼人像lora_1910491843820253185.json
+# Flux1.1pro-精炼人像lora_1910491843820253185.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1910491843820253185.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux1.1pro-精炼人像lora_1910491843820253185.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_sdpose_m
 hash: 7c0c2da013e5a18c
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:50
+learned_at: 2026-10-10 22:49:55
 nodes: [MarkdownNote, 01b6a731-fb78-4070-9a38-c87146da9604, LoadImage, SaveImage, DrawBBoxes, PreviewImage, ResizeImageMaskNode, PrimitiveInt, MarkdownNote, ImageBlend]
 patterns: []
 missing: [01b6a731-fb78-4070-9a38-c87146da9604]

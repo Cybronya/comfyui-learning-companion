@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
+key: PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
 name: PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
 hash: d7280791e9ab66fe
 coverage: 0.818182
-learned_at: 2026-10-07 02:13:05
+learned_at: 2026-10-10 21:27:35
 nodes: [CLIPLoader, UNETLoader, VAELoader, QwenImage21Cache, KSampler, VAEDecode, easy cleanGpuUsed, EmptyLatentImage, SaveImage, easy showAnything, QwenPERewriteT8, CR Prompt Text, TextEncodeQwenImage21, ComfySwitchNode, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
+# PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/PE提示词加持 Qwen Image 2.1文生图质量跃升_2104336965058514946.json`
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2高阶文生图_1950437362914516993.json
-name: wan2.2高阶文生图_1950437362914516993.json
+key: wan2.2高阶文生图_1950437362914516993.json
+name: wan2.2高阶文生图_1950437362914516993
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2高阶文生图_1950437362914516993.json
 hash: bfbbea31e839842a
 coverage: 0.866667
-learned_at: 2026-10-07 22:58:24
+learned_at: 2026-10-10 20:59:27
 nodes: [CLIPLoader, VAELoader, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, easy cleanGpuUsed, KSampler, LoraLoaderModelOnly, RH_Translator, LoraLoaderModelOnly, VAEDecode, SaveImage, ShowText|pysssss, EmptyLatentImage, UNETLoader]
 patterns: [text_to_image]
 missing: [easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1920, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/wan2.2高阶文生图_1950437362914516993.json
+# wan2.2高阶文生图_1950437362914516993.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950437362914516993.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2高阶文生图_1950437362914516993.json`
 
 ## 结构
 

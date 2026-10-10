@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354.json
+key: 项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354.json
 name: 项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354.json
 hash: 268d875751466097
 coverage: 0.6
-learned_at: 2026-10-07 02:02:57
+learned_at: 2026-10-10 20:59:59
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354.json
+# 项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/项链迁移_首饰佩戴_配饰转移_珠宝生成_Image2.5_2102973133543268354.json`
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_hunyuan_vi
 hash: 9b945d0dd0ce8013
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:37:00
+learned_at: 2026-10-10 22:50:12
 nodes: [DualCLIPLoader, UNETLoader, VAELoader, VAEDecode, EasyCache, MarkdownNote, HunyuanVideo15SuperResolution, CLIPTextEncode, Note, UNETLoader, MarkdownNote, LatentUpscaleModelLoader, EasyCache, CLIPTextEncode, VAEDecodeTiled, Note, CreateVideo, VAEDecode, Note, BasicScheduler, RandomNoise, KSamplerSelect, CFGGuider, ModelSamplingSD3, SamplerCustomAdvanced, SaveVideo, CreateVideo, RandomNoise, KSamplerSelect, ModelSamplingSD3, BasicScheduler, SplitSigmas, DisableNoise, SamplerCustomAdvanced, SamplerCustomAdvanced, CFGGuider, CFGGuider, Note, HunyuanVideo15LatentUpscaleWithModel, SaveVideo, VAEDecodeTiled, EmptyHunyuanVideo15Latent]
 patterns: []
 missing: []

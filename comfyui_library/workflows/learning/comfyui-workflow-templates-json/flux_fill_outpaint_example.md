@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_fill_outpai
 hash: 87f4f940de570cab
 official: true
 coverage: 0.928571
-learned_at: 2026-10-07 21:35:26
+learned_at: 2026-10-10 22:47:12
 nodes: [DualCLIPLoader, UNETLoader, CLIPTextEncode, VAELoader, ConditioningZeroOut, FluxGuidance, DifferentialDiffusion, ImagePadForOutpaint, VAEDecode, InpaintModelConditioning, KSampler, SaveImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []

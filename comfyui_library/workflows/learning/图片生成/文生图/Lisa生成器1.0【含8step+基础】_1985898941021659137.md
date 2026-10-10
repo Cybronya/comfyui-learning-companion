@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json
-name: Lisa生成器1.0【含8step+基础】_1985898941021659137.json
+key: Lisa生成器1.0【含8step+基础】_1985898941021659137.json
+name: Lisa生成器1.0【含8step+基础】_1985898941021659137
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json
 hash: 557a44d679be9a47
 coverage: 0.9375
-learned_at: 2026-10-09 20:13:11
+learned_at: 2026-10-10 20:58:46
 nodes: [CLIPLoader, VAELoader, ModelSamplingAuraFlow, EmptyLatentImage, VAEDecode, CFGNorm, KSampler, Power Lora Loader (rgthree), CLIPLoader, VAELoader, LoraLoaderModelOnly, ModelSamplingAuraFlow, VAEDecode, UNETLoader, CLIPTextEncode, LoraLoaderModelOnly, KSampler, Power Lora Loader (rgthree), CFGNorm, SaveImage, SaveImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, ModelSamplingAuraFlow, EmptyLatentImage, VAEDecode, UNETLoader, CFGNorm, SaveImage, EmptyLatentImage, Power Lora Loader (rgthree), CLIPLoader, VAELoader, LoraLoaderModelOnly, ModelSamplingAuraFlow, EmptyLatentImage, VAEDecode, UNETLoader, CFGNorm, SaveImage, KSampler, CLIPLoader, CLIPTextEncode, ModelSamplingAuraFlow, LoraLoaderModelOnly, VAEDecode, UNETLoader, Power Lora Loader (rgthree), CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, KSampler, VAELoader, CLIPTextEncode, EmptySD3LatentImage, SaveImage, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, KSampler, CLIPTextEncode, LoadImage]
 patterns: [text_to_image]
 missing: [Power Lora Loader (rgthree), Power Lora Loader (rgthree), Power Lora Loader (rgthree), Power Lora Loader (rgthree)]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json
+# Lisa生成器1.0【含8step+基础】_1985898941021659137.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1985898941021659137.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json`
 
 ## 结构
 

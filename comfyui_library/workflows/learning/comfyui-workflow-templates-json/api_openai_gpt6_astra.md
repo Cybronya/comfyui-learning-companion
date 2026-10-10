@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openai_gpt6_
 hash: 6c13d4560ab3ef54
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:34:23
+learned_at: 2026-10-10 22:45:18
 nodes: [LoadImage, SaveText, PrimitiveStringMultiline, PreviewAny, 1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5, OpenAIChatNode]
 patterns: []
 missing: [1d28f9d1-7c68-4b3b-99f5-2bf7fe0615c5]

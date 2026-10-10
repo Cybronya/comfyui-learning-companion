@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json
-name: wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json
+key: wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json
+name: wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json
 hash: e00072da0faa45af
 coverage: 0.54902
-learned_at: 2026-10-07 23:11:31
+learned_at: 2026-10-10 20:59:27
 nodes: [VAELoader, CLIPLoader, CLIPTextEncode, CLIPTextEncode, UNETLoader, UNETLoader, LoraLoaderModelOnly, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, easy showAnything, Int, Int, easy batchAnything, MathExpression|pysssss, GetImageSizeAndCount, LayerUtility: PurgeVRAM V2, VAEDecode, PathchSageAttentionKJ, ModelSamplingSD3, Fast Groups Muter (rgthree), easy showAnything, Text Load Line From File, VHS_VideoCombine, LoraLoaderModelOnly, ImageFromBatch, easy forLoopStart, PathchSageAttentionKJ, ModelSamplingSD3, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, CR Model Input Switch, CR Text, CR Model Input Switch, ConditionalTextOutput, easy convertAnything, CR Text, easy showAnything, CR Model Input Switch, CR Text, PreviewImage, easy forLoopEnd, KSamplerAdvanced, WanImageToVideo, Text Multiline, VHS_VideoCombine, Int, KSamplerAdvanced]
 patterns: []
 missing: [CR Model Input Switch, CR Model Input Switch, CR Model Input Switch, CR Text, CR Text, CR Text, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, Text Load Line From File, Text Multiline, easy batchAnything, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy convertAnything, easy forLoopEnd, easy forLoopStart]
@@ -15,9 +15,9 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 2.5, "scheduler": "l
 discoveries: [次要节点 `CR Model Input Switch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Model Input Switch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Model Input Switch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json
+# wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1953042137630896130.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2-文生视频-极速超长视频-精准控制动作_1953042137630896130.json`
 
 ## 结构
 

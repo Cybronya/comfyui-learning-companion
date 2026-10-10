@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux1_krea_dev.j
 hash: b6984f6aec4ba7bc
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:23
+learned_at: 2026-10-10 22:47:07
 nodes: [SaveImage, MarkdownNote, 1135e349-dce8-45e8-8905-aaa86675429b]
 patterns: []
 missing: [1135e349-dce8-45e8-8905-aaa86675429b]

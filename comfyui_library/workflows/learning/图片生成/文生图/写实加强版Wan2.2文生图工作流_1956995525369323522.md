@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/写实加强版Wan2.2文生图工作流_1956995525369323522.json
-name: 写实加强版Wan2.2文生图工作流_1956995525369323522.json
+key: 写实加强版Wan2.2文生图工作流_1956995525369323522.json
+name: 写实加强版Wan2.2文生图工作流_1956995525369323522
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/写实加强版Wan2.2文生图工作流_1956995525369323522.json
 hash: e80b41b69dbe73e3
 coverage: 1
-learned_at: 2026-10-07 23:30:44
+learned_at: 2026-10-10 20:59:36
 nodes: [CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, VAELoader, EmptySD3LatentImage, CLIPLoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, KSampler, VAEDecode, SaveImage]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/写实加强版Wan2.2文生图工作流_1956995525369323522.json
+# 写实加强版Wan2.2文生图工作流_1956995525369323522.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1956995525369323522.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/写实加强版Wan2.2文生图工作流_1956995525369323522.json`
 
 ## 结构
 

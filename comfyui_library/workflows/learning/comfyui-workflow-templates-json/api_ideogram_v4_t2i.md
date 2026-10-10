@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_ideogram_v4_
 hash: ac423cc3ae632114
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:33:59
+learned_at: 2026-10-10 22:44:33
 nodes: [SaveImage, IdeogramV4, MarkdownNote, PreviewAny, GeminiNodeV3]
 patterns: []
 missing: []

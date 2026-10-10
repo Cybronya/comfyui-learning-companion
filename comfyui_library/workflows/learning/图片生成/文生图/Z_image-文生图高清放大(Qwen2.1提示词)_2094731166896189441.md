@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441.json
+key: Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441.json
 name: Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441.json
 hash: 85f7e3c0191f6321
 coverage: 0.733333
-learned_at: 2026-10-07 02:33:05
+learned_at: 2026-10-10 20:59:17
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, CLIPLoader, VAELoader, CLIPTextEncode, TTResolutionSelector, KSampler, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, Switch any [Crystools], ConditioningZeroOut, ReferenceLatent, ReferenceLatent, KSampler, Image Comparer (rgthree), PreviewImage, ImageScaleToTotalPixels, SeedVR2BlockSwap, SeedVR2ExtraArgs, SeedVR2, 忽略多组孤海, PrimitiveStringMultiline, CLIPLoader, CLIPTextEncode, 忽略多组孤海, TextConcatenator, TextGenerate, CR Text Concatenate, JsonExtractString, PreviewAny, PreviewImage, VAEDecode, VAEDecode, Image Comparer (rgthree), SaveImage, PrimitiveStringMultiline, YC Color Match, VAEEncode]
 patterns: [text_to_image]
 missing: [CR Text Concatenate, Switch any [Crystools], YC Color Match, 忽略多组孤海, 忽略多组孤海]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1080, "sampler_n
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `YC Color Match` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441.json
+# Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Z_image-文生图高清放大(Qwen2.1提示词)_2094731166896189441.json`
 

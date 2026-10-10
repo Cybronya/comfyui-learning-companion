@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
-name: wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
+key: wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
+name: wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
 hash: 3d0a37139b223c8f
 coverage: 0.441176
-learned_at: 2026-10-07 22:53:12
+learned_at: 2026-10-10 20:59:26
 nodes: [GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, UNETLoader, VAELoader, PathchSageAttentionKJ, LoraLoaderModelOnly, SetNode, EmptySD3LatentImage, CLIPTextEncode, SetNode, SetNode, ModelSamplingSD3, CLIPTextEncode, KSampler, SetNode, VAEDecode, WanVideoNAG, CLIPLoader, easy forLoopStart, Text Find and Replace, easy showAnything, Text Load Line From File, ShowText|pysssss, easy forLoopEnd, SaveImage, RH_LLMAPI_NODE, ShowText|pysssss, Text Multiline, SaveImage, Text Multiline]
 patterns: []
 missing: [Text Find and Replace, Text Load Line From File, Text Multiline, Text Multiline, easy forLoopEnd, easy forLoopStart]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "sim
 discoveries: [次要节点 `Text Find and Replace` 知识库中没有该节点类型的任何知识, 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
+# wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1948598976525271042.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json`
 
 ## 结构
 

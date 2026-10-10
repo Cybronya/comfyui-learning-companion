@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json
+key: Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json
 name: Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945
 type: Image To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json
 hash: 6235188d2f1af307
 coverage: 0.6
-learned_at: 2026-10-07 02:23:40
+learned_at: 2026-10-10 20:58:56
 nodes: [LoadImage, VAELoader, LoadImage, LoadImage, Anything Everywhere, Text Multiline, CLIPLoader, UNETLoader, QwenImage21Cache, MarkdownNote, GetNode, ResolutionSelector, VAEDecode, SetNode, 忽略多组孤海, 孤海注释, LoadImage, LoadImage, Text Multiline, SaveImage, KSampler, AnySwitch, TextEncodeQwenImage21, EmptyLatentImage, ImageScaleToTotalPixels, VAEEncode, Image Comparer (rgthree), 孤海注释, 孤海注释, 忽略多组孤海]
 patterns: [image_to_image]
 missing: [Text Multiline, Text Multiline, 忽略多组孤海, 忽略多组孤海]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json
+# Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图·图像编辑综合工作流 效果出色【AI小王子】_2104838096306130945.json`
 

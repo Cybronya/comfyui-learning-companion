@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_omnigen2_t
 hash: 61d97a1ac1d74f28
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:54
+learned_at: 2026-10-10 22:48:23
 nodes: [MarkdownNote, SaveImage, 4b17d220-4312-4981-9eae-9a76bf3b6ec9]
 patterns: []
 missing: [4b17d220-4312-4981-9eae-9a76bf3b6ec9]

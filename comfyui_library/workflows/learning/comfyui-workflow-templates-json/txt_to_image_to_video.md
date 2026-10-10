@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/txt_to_image_to_
 hash: 5f10394fa88508f8
 official: true
 coverage: 0.866667
-learned_at: 2026-10-07 21:36:41
+learned_at: 2026-10-10 22:49:36
 nodes: [KSampler, CLIPTextEncode, CLIPTextEncode, EmptyLatentImage, CheckpointLoaderSimple, VAEDecode, SVD_img2vid_Conditioning, VideoLinearCFGGuidance, ImageOnlyCheckpointLoader, CreateVideo, KSampler, VAEDecode, PreviewImage, MarkdownNote, SaveVideo]
 patterns: [text_to_image]
 missing: []

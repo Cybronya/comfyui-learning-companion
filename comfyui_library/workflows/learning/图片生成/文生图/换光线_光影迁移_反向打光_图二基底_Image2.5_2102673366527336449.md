@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/换光线_光影迁移_反向打光_图二基底_Image2.5_2102673366527336449.json
 hash: 6fd95028d5a4904b
 coverage: 0.6
-learned_at: 2026-10-07 01:58:53
+learned_at: 2026-10-10 23:16:58
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []

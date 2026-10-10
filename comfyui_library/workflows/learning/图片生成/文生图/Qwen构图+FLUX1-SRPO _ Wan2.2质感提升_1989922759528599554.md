@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json
-name: Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json
+key: Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json
+name: Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json
 hash: accda06c5c33563d
 coverage: 0.736842
-learned_at: 2026-10-09 21:16:02
+learned_at: 2026-10-10 20:59:10
 nodes: [ConditioningZeroOut, UNETLoader, UNETLoader, CLIPTextEncode, EmptySD3LatentImage, LoraLoader, PathchSageAttentionKJ, ModelSamplingSD3, CLIPTextEncode, VAEEncode, CLIPTextEncode, LoraLoader, LoraLoader, Text Concatenate, CLIPLoader, CLIPTextEncode, KSampler, SaveImage, Image Comparer (rgthree), VAELoader, Text Multiline, CLIPTextEncode, VAEEncode, FluxGuidance, DualCLIPLoader, VAELoader, UpscaleModelLoader, ImageScaleBy, RH_Translator, SaveImage, Image Comparer (rgthree), LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, VAEDecode, VAEDecode, KSampler, PreviewImage, SaveImage, ModelSamplingAuraFlow, CLIPLoader, VAELoader, KSampler, VAEDecode, UNETLoader, LoraLoaderModelOnly, SaveImage, PreviewImage, LoraLoaderModelOnly, PreviewImage, ImageUpscaleWithModel, Reroute, Text Multiline, PreviewImage, LoadImage, ShowText|pysssss]
 patterns: [image_to_image, lora]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, Text Concatenate, Text Multiline, Text Multiline]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "WAN2.2-LowNoise_SmartphoneSna
 discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json
+# Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1989922759528599554.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen构图+FLUX1-SRPO _ Wan2.2质感提升_1989922759528599554.json`
 
 ## 结构
 

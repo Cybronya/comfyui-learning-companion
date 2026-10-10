@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json
-name: Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json
+key: Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json
+name: Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json
 hash: 6d203aa7a358b05f
 coverage: 0.866667
-learned_at: 2026-10-07 23:11:58
+learned_at: 2026-10-10 20:58:50
 nodes: [CLIPTextEncode, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoader, KSampler, LoraLoader, UNETLoader, VAEEncode, CLIPLoader, VAELoader, ModelSamplingAuraFlow, CLIPTextEncode, EmptySD3LatentImage, CLIPTextEncode, Reroute, CLIPTextEncode, SaveImage, Image Comparer (rgthree), VAEDecode, CLIPLoader, VAELoader, LoraLoader, UNETLoader, ImageUpscaleWithModel, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, ImageFromBatch, Image Tiled, ImageConcanateOfUtils, KSampler, VAEDecode, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, PreviewImage, ImageScaleToTotalPixels, Reroute, SaveImage, UpscaleModelLoader, CR Text]
 patterns: [lora]
 missing: [CR Text, Image Tiled]
@@ -15,9 +15,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json
+# Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1953397505272807426.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image + Wan2.2 真实感 + 高清放大_1953397505272807426.json`
 
 ## 结构
 

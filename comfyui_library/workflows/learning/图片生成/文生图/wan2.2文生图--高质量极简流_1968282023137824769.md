@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2文生图--高质量极简流_1968282023137824769.json
-name: wan2.2文生图--高质量极简流_1968282023137824769.json
+key: wan2.2文生图--高质量极简流_1968282023137824769.json
+name: wan2.2文生图--高质量极简流_1968282023137824769
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生图--高质量极简流_1968282023137824769.json
 hash: ad74e9c947722aa8
 coverage: 0.666667
-learned_at: 2026-10-09 02:01:38
+learned_at: 2026-10-10 20:59:27
 nodes: [CLIPTextEncode, EmptyHunyuanLatentVideo, PathchSageAttentionKJ, CLIPLoader, VAELoader, Note, MarkdownNote, Note, LoraLoader, UNETLoader, KSampler, LoraLoader, SaveImage, VAEDecode, PreviewImage, CLIPTextEncode, easy int, easy int]
 patterns: [lora]
 missing: [easy int, easy int]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "FastWan_T2V_14B_480p_lora_ran
 discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.2文生图--高质量极简流_1968282023137824769.json
+# wan2.2文生图--高质量极简流_1968282023137824769.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1968282023137824769.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2文生图--高质量极简流_1968282023137824769.json`
 
 ## 结构
 

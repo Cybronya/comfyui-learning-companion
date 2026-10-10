@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 Easy hybrid｜全能参考极简多合一 出片so easy_2105560151372681218.json
 hash: d4b581b5133a0158
 coverage: 0.933333
-learned_at: 2026-10-10 00:07:18
+learned_at: 2026-10-10 23:01:05
 nodes: [MiniMaxH3EasyOutput, BasicGuider, RandomNoise, SamplerCustomAdvanced, VAEDecodeAudio, VAEDecode, CreateVideo, KSamplerSelect, MiniMaxH3MemoryEfficientSageAttentionPatch, SaveVideo, MiniMaxH3Easy, BasicScheduler, PathchSageAttentionKJ, MiniMaxH3EasyLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, MiniMaxH3EasyMediaLoader, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []

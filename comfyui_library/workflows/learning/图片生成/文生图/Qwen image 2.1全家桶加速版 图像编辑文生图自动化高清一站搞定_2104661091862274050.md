@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
+key: Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
 name: Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
 hash: 3c4b1f9914a2700a
 coverage: 0.47343
-learned_at: 2026-10-07 02:17:00
+learned_at: 2026-10-10 20:58:57
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, JsonExtractString, TextGenerate, JsonExtractString, BatchImagesNode, StringConcatenate, llama_cpp_instruct_adv, BatchImagesNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, SetNode, GetNode, GetNode, GetNode, LoadImage, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, LoadImage, SetNode, GetNode, GetNode, GetNode, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, ImageScaleToMaxDimension, GetNode, GetNode, GetNode, LoadImage, SetNode, LoadImage, GetNode, CLIPLoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, StringConcatenate, GetNode, CLIPLoader, StringConcatenate, TextGenerate, SetNode, SetNode, llama_cpp_instruct_adv, llama_cpp_model_loader, CLIPLoader, VAELoader, GetNode, SetNode, SetNode, SetNode, SetNode, ComfySwitchNode, GetNode, KSampler, ComfySwitchNode, KSampler, Any Switch (rgthree), TextEncodeQwenImage21, PreviewAny, ComfySwitchNode, SaveImage, VAEDecode, LoadImage, Any Switch (rgthree), PreviewAny, TextEncodeQwenImage21, KSampler, KSampler, ComfySwitchNode, VAEDecode, SetNode, llama_cpp_parameters, StringConcatenate, SetNode, QwenImage21Cache, SetNode, CLIPTextEncode, UNETLoader, LoraLoaderBypassModelOnly, GetNode, GoohaiAnyExists, GoohaiAnyExists, GetNode, VAEDecode, CLIPTextEncode, SaveImage, SetNode, LatentSwitch, VAEEncode, VAELoader, CLIPLoader, ReferenceLatent, ReferenceLatent, SetNode, EmptyLatentImage, ResolutionSelector, ComfySwitchNode, SetNode, SetNode, SetNode, KSamplerAdvanced, UNETLoader, ImageScaleToTotalPixels, GetNode, JWFloat, PDIMAGE_LongerSize, GetNode, SetNode, CR Prompt Text, Image Comparer (rgthree), PrimitiveBoolean, Fast Groups Bypasser (rgthree), SeedNode, PrimitiveBoolean, GetNode, PreviewImage, PreviewImage, Image Comparer (rgthree), SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, image_to_image]
 missing: [CR Prompt Text]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
+# Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json`
 

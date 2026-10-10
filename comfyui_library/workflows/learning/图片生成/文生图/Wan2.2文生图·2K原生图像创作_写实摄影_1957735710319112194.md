@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json
-name: Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json
+key: Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json
+name: Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json
 hash: d61be7daa4cd6a26
 coverage: 0.909091
-learned_at: 2026-10-07 19:13:04
+learned_at: 2026-10-10 20:59:14
 nodes: [CLIPLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, GetImageRangeFromBatch, VAEDecode, KSamplerAdvanced, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, easy int, SaveImage, EmptyHunyuanLatentVideo, easy int, Text, Wan_video_prompt_generator]
 patterns: []
 missing: [easy int, easy int]
@@ -15,9 +15,9 @@ parameters: {"cfg": 14, "denoise": "simple", "sampler_name": 3.5, "scheduler": "
 discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json
+# Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1957735710319112194.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1957735710319112194.json`
 
 ## 结构
 

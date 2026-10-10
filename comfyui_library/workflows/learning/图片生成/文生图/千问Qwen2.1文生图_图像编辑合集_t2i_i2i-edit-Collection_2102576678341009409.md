@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409.json
+key: 千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409.json
 name: 千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409.json
 hash: 9c7b373119598eec
 coverage: 0.627451
-learned_at: 2026-10-07 02:37:26
+learned_at: 2026-10-10 20:59:38
 nodes: [CLIPLoader, VAELoader, Note, QwenImage21Cache, EmptyLatentImage, MarkdownNote, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageSize, SeedVR2VideoUpscaler, ImageScaleBy, ImageResize+, ImageResize+, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, SaveImage, easy imageSize, GetNode, Any Switch (rgthree), Image Comparer (rgthree), ComfySwitchNode, GetNode, ImageScaleBy, KSampler, UNETLoader, SetNode, ResolutionSelector, SetNode, VAEDecode, SaveImage, MarkdownNote, Image Comparer (rgthree), TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, PrimitiveStringMultiline, Fast Groups Bypasser (rgthree), VAELoader, TextEncodeQwenImage21, CLIPLoader, EmptyLatentImage, MarkdownNote, KSampler, SaveImage, VAEDecode, Int, UNETLoader, PrimitiveStringMultiline, ResolutionSelector]
 patterns: []
 missing: [ImageResize+, ImageResize+, easy imageSize, easy imageSize]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409.json
+# 千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/千问Qwen2.1文生图_图像编辑合集_t2i_i2i-edit-Collection_2102576678341009409.json`
 

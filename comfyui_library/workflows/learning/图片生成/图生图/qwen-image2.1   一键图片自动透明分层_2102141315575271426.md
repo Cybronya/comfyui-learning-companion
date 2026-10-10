@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image2.1   一键图片自动透明分层_2102141315575271426.json
-name: qwen-image2.1   一键图片自动透明分层_2102141315575271426.json
+name: qwen-image2.1   一键图片自动透明分层_2102141315575271426
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image2.1   一键图片自动透明分层_2102141315575271426.json
 hash: 3cdf5051ceb97da2
 coverage: 0.55
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:12
 nodes: [easy forLoopEnd, SaveImage, CLIPLoader, VAELoader, TextEncodeQwenImage21, VAEDecode, easy forLoopEnd, KSampler, UNETLoader, PreviewAny, easy forLoopStart, Text Load Line From File, SaveImage, QwenImage21Cache, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, PreviewAny, LoadImage, CR Text]
 patterns: []
 missing: [CR Text, Text Load Line From File, easy forLoopEnd, easy forLoopEnd, easy forLoopStart]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/qwen-image2.1   一键图片自动透明分层_2102141315575271426.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102141315575271426.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image2.1   一键图片自动透明分层_2102141315575271426.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_flux2.json
 hash: b7f0a5d09b1a603a
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:33:37
+learned_at: 2026-10-10 22:43:50
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, SaveImage, Flux2ImageNode, MarkdownNote]
 patterns: []
 missing: []

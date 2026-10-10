@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
+key: Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 name: Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 hash: 0b1190cc623fa661
 coverage: 0.909091
-learned_at: 2026-10-07 02:15:43
+learned_at: 2026-10-10 20:58:51
 nodes: [UNETLoader, LoraLoaderModelOnly, VAELoader, CLIPLoader, EmptyLatentImage, TextEncodeQwenImage21, SaveImage, KSampler, VAEDecode, PrimitiveStringMultiline, ResolutionSelector]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
+# Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json`
 

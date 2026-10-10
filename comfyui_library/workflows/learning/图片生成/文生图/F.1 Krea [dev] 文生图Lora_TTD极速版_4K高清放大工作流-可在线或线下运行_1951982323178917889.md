@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
-name: F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
+key: F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
+name: F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
 hash: 71bca5e708ccf9b5
 coverage: 0.741935
-learned_at: 2026-10-07 23:04:32
+learned_at: 2026-10-10 20:58:30
 nodes: [ConditioningZeroOut, VAEDecode, CLIPTextEncode, ImageResizeKJ, Reroute, easy imageListToImageBatch, VAEEncode, TTP_Image_Assy, easy imageBatchToImageList, TTP_Image_Tile_Batch, ImageUpscaleWithModel, SaveImage, CLIPTextEncode, PreviewImage, ImageSmartSharpen+, Image Comparer (rgthree), SaveImage, Image Comparer (rgthree), EmptySD3LatentImage, Fast Groups Muter (rgthree), KSampler, CLIPTextEncode, TTP_Tile_image_size, VAEDecodeTiled, KSampler, UNETLoader, DualCLIPLoader, VAELoader, LoraLoaderModelOnly, UpscaleModelLoader, LoraLoaderModelOnly]
 patterns: []
 missing: [ImageSmartSharpen+, easy imageBatchToImageList, easy imageListToImageBatch]
@@ -16,9 +16,9 @@ parameters: {"cfg": 2.5, "denoise": 0.30000000000000004, "sampler_name": "euler"
 discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
+# F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951982323178917889.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json`
 
 ## 结构
 

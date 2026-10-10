@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
-name: 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
+key: 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
+name: 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
 hash: 1b6412e6bceccd14
 coverage: 0.875
-learned_at: 2026-10-07 22:08:21
+learned_at: 2026-10-10 20:59:50
 nodes: [BasicGuider, VAEEncode, VAELoader, RandomNoise, KSamplerSelect, VAEDecode, DualCLIPLoader, FluxGuidance, SamplerCustomAdvanced, BasicScheduler, ControlNetApplyAdvanced, ControlNetLoader, AIO_Preprocessor, LayerUtility: ImageScaleByAspectRatio V2, ApplyFBCacheOnModel, CLIPTextEncode, CLIPTextEncode, PreviewImage, SetUnionControlNetType, LoraLoaderModelOnly, UNETLoader, CR Text, LoadImage, SaveImage]
 patterns: []
 missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2]
@@ -15,9 +15,9 @@ parameters: {"controlnet_strength": 0.8000000000000002}
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
+# 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1921750937419857922.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-all_in
 hash: d91afab745d6cd73
 official: true
 coverage: 0.631579
-learned_at: 2026-10-07 21:36:31
+learned_at: 2026-10-10 22:49:18
 nodes: [GrokImageEditNode, GeminiImage2Node, ByteDanceSeedreamNode, SaveImage, OpenAIGPTImage1, SaveImage, PrimitiveStringMultiline, 84c2d189-ef35-4317-b56d-3bed5045314c, 4bef21c6-ad90-465c-b6db-791064306e5c, Reroute, Reroute, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, LoadImage, fc6d7b70-f58e-4eeb-8e52-b390a2d5fd88, MarkdownNote]
 patterns: []
 missing: [4bef21c6-ad90-465c-b6db-791064306e5c, 84c2d189-ef35-4317-b56d-3bed5045314c, fc6d7b70-f58e-4eeb-8e52-b390a2d5fd88]

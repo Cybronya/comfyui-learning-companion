@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_pixal3d_trell
 hash: 628844750e64fb13
 official: true
 coverage: 0.772727
-learned_at: 2026-10-07 21:33:13
+learned_at: 2026-10-10 22:43:03
 nodes: [Trellis2ShapeStage, PreviewImage, PreviewImage, PreviewImage, VAELoader, VaeDecodeTextureTrellis, CLIPVisionLoader, GetMeshInfo, RenderUVAtlas, PreviewImage, KSampler, ApplyTextureToMesh, BakeTextureFromVoxel, PrimitiveInt, MeshSmoothNormals, KSampler, PaintMesh, CFGOverride, RescaleCFG, RemoveBackground, ComfySwitchNode, MaskPreview, PreviewImage, Preview3DAdvanced, VaeDecodeStructureTrellis2, VoxelToMesh, MeshToFile3D, KSampler, RescaleCFG, CFGOverride, ModelSamplingSD3, Note, Trellis2UpsampleStage, BakeAmbientOcclusion, BakeNormalMapFromMesh, PreviewImage, PreviewImage, RemeshMesh, DecimateMesh, UnwrapMesh, VAELoader, LoadMoGeModel, LoadBackgroundRemovalModel, MoGeInference, MoGeGeometryToFOV, Trellis2Conditioning, Pixal3DConditioning, VaeDecodeShapeTrellis, UNETLoader, Trellis2TextureStage, MeshToFile3D, MeshSmoothNormals, MeshToFile3D, EmptyTrellis2LatentStructure, KSampler, LoadImage, ImageCropToMask, MarkdownNote, ComfySwitchNode, ComfySwitchNode, PrimitiveBoolean, MarkdownNote, ComfySwitchNode, UNETLoader, Save3DAdvanced, Preview3DAdvanced]
 patterns: []
 missing: []

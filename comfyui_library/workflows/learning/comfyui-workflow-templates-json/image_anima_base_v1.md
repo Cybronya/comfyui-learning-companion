@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_anima_base
 hash: 5c01d75975c46ba3
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:31
+learned_at: 2026-10-10 22:47:22
 nodes: [MarkdownNote, SaveImage, 7b85231a-efd4-4929-89d9-7e849a2d4554, ResolutionSelector]
 patterns: []
 missing: [7b85231a-efd4-4929-89d9-7e849a2d4554]

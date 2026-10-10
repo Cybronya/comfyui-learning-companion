@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1｜换装（编辑后人物一致性无偏差，服装光影匹配原图光影）｜+ outfit Swap LoRA（无需写提示词，全自动提示词）_2106870412671016962.json
 hash: 39686ee69994f015
 coverage: 0.552632
-learned_at: 2026-10-07 02:41:28
+learned_at: 2026-10-10 20:48:12
 nodes: [ComfySwitchNode, UNETLoader, LoraLoaderModelOnly, ComfySwitchNode, RegexMatch, TextGenerate, RegexReplace, JjkText, PrimitiveBoolean, JjkText, JjkText, TextGenerate, ComfySwitchNode, JjkText, JjkText, RegexMatch, TextGenerate, JjkText, LoadImage, VAEDecode, KSampler, SplitImageWithAlpha, VAELoader, CLIPLoader, LoadImage, StringFormat, JjkShowText, Note, Label (rgthree), Label (rgthree), Label (rgthree), TextEncodeQwenImage21, Note, QwenImage21Cache, Note, Note, Image Comparer (rgthree), SaveImage]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), Label (rgthree)]

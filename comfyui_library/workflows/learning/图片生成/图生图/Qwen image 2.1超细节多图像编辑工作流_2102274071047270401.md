@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json
-name: Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json
+name: Qwen image 2.1超细节多图像编辑工作流_2102274071047270401
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json
 hash: adb4ed772a06e9da
 coverage: 0.709677
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:08
 nodes: [EmptyLatentImage, easy seed, ResolutionSelector, EmptyImage, LayerUtility: ImageScaleByAspectRatio V2, INTConstant, Label (rgthree), MarkdownNote, Label (rgthree), QwenImage21Cache, MarkdownNote, MarkdownNote, Image Comparer (rgthree), UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, Text Multiline, TextEncodeQwenImage21, KSampler, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VAEDecode, SaveImage]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, Text Multiline, easy seed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102274071047270401.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json`
 
 ## 结构
 

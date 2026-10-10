@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458.json
+key: Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458.json
 name: Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458.json
 hash: 73e8bb2ea00ee9e7
 coverage: 0.866667
-learned_at: 2026-10-07 02:15:50
+learned_at: 2026-10-10 20:58:57
 nodes: [CLIPLoader, VAELoader, VAEDecode, SaveImageAdvanced, KSampler, QwenImage21Cache, TextEncodeQwenImage21, easy showAnything, SaveImage, ResolutionSelector, TextGenerateLTX2Prompt, UNETLoader, EmptyLatentImage, CLIPLoader, CR Text]
 patterns: []
 missing: [CR Text]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458.json
+# Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 文生图 日常出图够用啦！_2104947912215187458.json`
 

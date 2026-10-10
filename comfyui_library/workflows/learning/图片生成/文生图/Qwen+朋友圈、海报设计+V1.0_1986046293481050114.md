@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
-name: Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
+key: Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
+name: Qwen+朋友圈、海报设计+V1.0_1986046293481050114
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
 hash: eb86ae2c8e0167da
 coverage: 0.866667
-learned_at: 2026-10-07 19:34:57
+learned_at: 2026-10-10 20:58:58
 nodes: [ModelSamplingAuraFlow, UpscaleModelLoader, UltimateSDUpscale, PreviewImage, CLIPTextEncode, VAEDecode, CLIPTextEncode, EmptySD3LatentImage, VAELoader, UNETLoader, CLIPLoader, LoraLoader, Note, SaveImage, KSampler]
 patterns: [lora]
 missing: []
 parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Qwen-Image 3D IP XIAOXIAOloRA.safetensors", "sampler_name": "euler", "scheduler": "simple", "seed": 346361969038499, "steps": 30, "strength_clip": 0.8000000000000002, "strength_model": 0.8000000000000002}
 ---
 
-# 图片生成/文生图/Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
+# Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1986046293481050114.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json`
 
 ## 结构
 

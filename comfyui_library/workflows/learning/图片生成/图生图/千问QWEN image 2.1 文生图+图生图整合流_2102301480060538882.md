@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json
-name: 千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json
+name: 千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json
 hash: 6c3c4d6e6a6d91f5
 coverage: 0.474576
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:15
 nodes: [LoadImage, LoadImage, SaveImage, PreviewImage, VAELoader, CLIPLoader, EmptyLatentImage, PlaySound|pysssss, VAEDecode, TextEncodeQwenImage21, KSampler, JjkText, 孤海注释, 孤海注释, JjkText, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, 孤海注释, KSampler, CLIPLoader, VAELoader, EmptyLatentImage, UNETLoader, QwenImage21Cache, PlaySound|pysssss, ComfySwitchNode, UNETLoader, ResolutionSelector, 孤海注释, TextEncodeQwenImage21, VAEDecode, 孤海注释, easy int, easy int, 孤海注释, 孤海注释, LoadImage, Note, 孤海注释, JjkText, JjkText, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, 孤海注释, PreviewImage, SaveImage, Image Comparer (rgthree)]
 patterns: []
 missing: [PlaySound|pysssss, PlaySound|pysssss, easy int, easy int]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 
 # 图片生成/图生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102301480060538882.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/千问QWEN image 2.1 文生图+图生图整合流_2102301480060538882.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
-name: 一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
+key: 一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
+name: 一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
 hash: 88a5cb694ce73314
 coverage: 0.615385
-learned_at: 2026-10-09 02:01:38
+learned_at: 2026-10-10 20:59:33
 nodes: [PreviewImage, KSampler (Efficient), UnetLoaderGGUF, Prompts Everywhere, CLIPTextEncode, CLIPTextEncode, EasyCache, DualCLIPLoader, VAELoader, EmptyHunyuanImageLatent, Note, SaveImage, LayerFilter: HDREffects]
 patterns: []
 missing: [LayerFilter: HDREffects, KSampler (Efficient), Prompts Everywhere]
@@ -15,9 +15,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
+# 一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1968132983377002497.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json`
 
 ## 结构
 

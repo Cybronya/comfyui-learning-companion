@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json
+key: Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json
 name: Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346
 type: Unknown Workflow
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json
 hash: 467e55a908100e17
 coverage: 0.6875
-learned_at: 2026-10-07 02:25:59
+learned_at: 2026-10-10 20:59:05
 nodes: [CLIPLoader, VAELoader, ImpactInt, ImpactInt, TextEncodeQwenImage21, GetNode, EmptyLatentImage, SetNode, GetNode, SetNode, VAEDecode, KSampler, SaveImage, UNETLoader, MarkdownNote, Text]
 patterns: []
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 257, "steps": 50, "width": 1024}
 ---
 
-# 图片生成/文生图/Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json
+# Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image2.1 空间折叠流之太虚生成_2103043423883321346.json`
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_image_o
 hash: eb12f8faaec98a90
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:33:23
+learned_at: 2026-10-10 22:43:24
 nodes: [SaveImage, LoadImage, ImagePadForOutpaint, BriaImageEditNode, PreviewImage]
 patterns: []
 missing: []

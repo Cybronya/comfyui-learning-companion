@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/风格转绘-F.1_1894391214139965442.json
+key: 风格转绘-F.1_1894391214139965442.json
 name: 风格转绘-F.1_1894391214139965442
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/风格转绘-F.1_1894391214139965442.json
 hash: 3a14663dc2e9d85b
 coverage: 0.767442
-learned_at: 2026-10-07 03:18:17
+learned_at: 2026-10-10 20:59:59
 nodes: [SetUnionControlNetType, ConditioningZeroOut, FluxGuidance, VAELoader, KSampler, ControlNetApplyAdvanced, KSampler, VAEEncode, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, FaceAnalysisModels, PreviewImage, preview_mask, PulidFluxModelLoader, CLIPTextEncode, Text Concatenate (JPS), Joy_caption_two, easy cleanGpuUsed, easy cleanGpuUsed, VAEDecode, VAEDecode, GrowMaskWithBlur, PreviewImage, FaceBoundingBox, easy cleanGpuUsed, ApplyPulidFlux, LatentUpscaleBy, LoadImage, OpenposePreprocessor, PreviewImage, PreviewImage, SaveImage, ShowText|pysssss, TextInput_, LayerMask: PersonMaskUltra V2, EmptyLatentImage, LoadImage, Joy_caption_two_load, DualCLIPLoader, ControlNetLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: [text_to_image, image_to_image]
 missing: [LayerMask: PersonMaskUltra V2, Text Concatenate (JPS), easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 2, "cfg": 1, "controlnet_strength": 0.75, "denoise": 
 discoveries: [次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/风格转绘-F.1_1894391214139965442.json
+# 风格转绘-F.1_1894391214139965442.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/风格转绘-F.1_1894391214139965442.json`
 

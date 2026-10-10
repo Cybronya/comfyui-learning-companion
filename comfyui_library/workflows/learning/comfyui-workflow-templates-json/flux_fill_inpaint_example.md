@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_fill_inpain
 hash: ca742145b8194dea
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:25
+learned_at: 2026-10-10 22:47:11
 nodes: [MarkdownNote, SaveImage, LoadImage, 42bcb419-1e9f-48eb-a6d6-c22e0625db3a]
 patterns: []
 missing: [42bcb419-1e9f-48eb-a6d6-c22e0625db3a]

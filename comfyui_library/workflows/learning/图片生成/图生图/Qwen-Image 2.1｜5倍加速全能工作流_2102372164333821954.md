@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954.json
-name: Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954.json
+name: Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954.json
 hash: 955c78a9aadc2e71
 coverage: 0.68
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:09
 nodes: [EmptyLatentImage, VAEDecode, KSampler, QwenImage21Cache, LoadImage, DrawMaskOnImage, LoadImage, easy int, LoadImage, ComfySwitchNode, CR Seed, ResolutionSelector, MarkdownNote, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, PrimitiveStringMultiline, PrimitiveStringMultiline, CLIPLoader, TextGenerateLTX2Prompt, easy showAnything, TextEncodeQwenImage21, PrimitiveStringMultiline, SaveImage]
 patterns: []
 missing: [easy int, CR Seed]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 # 图片生成/图生图/Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102372164333821954.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-Image 2.1｜5倍加速全能工作流_2102372164333821954.json`
 
 ## 结构
 

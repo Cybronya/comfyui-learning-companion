@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441.json
-name: 抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441.json
+name: 抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441.json
 hash: 48131c482be1f482
 coverage: 0.6
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:17
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/图生图/抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102278248506941441.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1一键图片换装图生图处理工具_2102528994515181569.json
-name: Qwen Image 2.1一键图片换装图生图处理工具_2102528994515181569.json
+name: Qwen Image 2.1一键图片换装图生图处理工具_2102528994515181569
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1一键图片换装图生图处理工具_2102528994515181569.json
 hash: c67c2613505c893b
 coverage: 0.869565
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:05
 nodes: [CLIPLoader, CLIPLoader, BatchImagesNode, VAELoader, EmptyLatentImage, ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextGenerateLTX2Prompt, TextEncodeQwenImage21, UNETLoader, JjkText, ResolutionSelector, LoadImage, SaveImage, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1一键图片换装图生图处理工具_2102528994515181569.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102528994515181569.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1一键图片换装图生图处理工具_2102528994515181569.json`
 
 ## 结构
 

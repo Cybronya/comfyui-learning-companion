@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
-name: Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
+key: Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
+name: Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
 hash: 5af0b8fbcd83e336
 coverage: 0.916667
-learned_at: 2026-10-09 02:01:39
+learned_at: 2026-10-10 20:59:14
 nodes: [ModelSamplingSD3, EmptyLatentImage, CLIPLoader, KSampler, VAEDecode, FluxResolutionNode, PrimitiveStringMultiline, CLIPTextEncode, CLIPTextEncode, VAELoader, UNETLoader, SaveImage]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 3, "denoise": 1, "height": 1376, "sampler_name": "deis", "scheduler": "simple", "seed": 969272243003471, "steps": 30, "width": 768}
 ---
 
-# 图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
+# Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1969671833953988610.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_image_st
 hash: d00b088bdba0d456
 official: true
 coverage: 0.9
-learned_at: 2026-10-07 21:36:46
+learned_at: 2026-10-10 22:49:46
 nodes: [LoadImage, LoadImage, ImageStitch, ResizeImageMaskNode, ImageStitch, ImageStitch, SaveImage, LoadImage, MarkdownNote, LoadImage]
 patterns: []
 missing: []
@@ -40,4 +40,4 @@ missing: []
 
 **有卡**：`LoadImage`、`ImageStitch`、`ResizeImageMaskNode`、`SaveImage`
 
-**用到的条目**：LoadImage、ResizeImageMaskNode、SaveImage、ImageStitch、sd15-t2i-basic、sd15-t2i-lora、ResizeImage、node
+**用到的条目**：LoadImage、ResizeImageMaskNode、SaveImage、ImageStitch、ImageStitch、sd15-t2i-basic、sd15-t2i-lora、ResizeImage

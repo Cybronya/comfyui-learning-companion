@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Texture Restoration质感修复SeedVR2.5+图像高清修复High_2107279324872265729.json
 hash: 0b89bacde79dce49
 coverage: 0.566667
-learned_at: 2026-10-07 02:41:32
+learned_at: 2026-10-10 20:48:11
 nodes: [TTP_Image_Tile_Batch, INTConstant, ImageScaleToTotalPixels, PreviewImage, SeedVR2VideoUpscaler, Image Comparer (rgthree), SeedVR2LoadVAEModel, LoadImage, ImageScale, easy imageListToImageBatch, TTP_Image_Assy, easy imageSize, easy imageSizeBySide, SeedVR2LoadVAEModel, TTP_Tile_image_size, SeedVR2LoadDiTModel, SeedVR2LoadDiTModel, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, SeedVR2VideoUpscaler, LayerUtility: ImageScaleByAspectRatio V2, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), SaveImage, SaveImage, easy imageBatchToImageList, INTConstant, LoadImage, Note, Note]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, easy imageBatchToImageList, easy imageListToImageBatch, easy imageSize, easy imageSizeBySide]

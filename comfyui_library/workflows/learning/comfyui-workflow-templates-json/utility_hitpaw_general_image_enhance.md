@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_hitpaw_g
 hash: 04028120c083e395
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:36:44
+learned_at: 2026-10-10 22:49:43
 nodes: [MarkdownNote, SaveImage, ImageCompare, LoadImage, HitPawGeneralImageEnhance]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveImage`、`ImageCompare`、`LoadImage`、`HitPawGeneralImageEnhance`
 
-**用到的条目**：LoadImage、SaveImage、HitPawGeneralImageEnhance、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImage、HitPawGeneralImageEnhance、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、Compare、CS_Preview_Any

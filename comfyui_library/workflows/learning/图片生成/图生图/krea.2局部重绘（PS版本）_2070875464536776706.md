@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/krea.2局部重绘（PS版本）_2070875464536776706.json
-name: krea.2局部重绘（PS版本）_2070875464536776706.json
+name: krea.2局部重绘（PS版本）_2070875464536776706
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/krea.2局部重绘（PS版本）_2070875464536776706.json
 hash: c77ea1d3535a13da
 coverage: 0.857143
-learned_at: 2026-10-09 22:19:25
+learned_at: 2026-10-10 20:48:11
 nodes: [CLIPLoader, VAELoader, UNETLoader, Image Comparer (rgthree), SaveImage, VAEDecode, KSamplerAdvanced, LoraLoaderModelOnly, ConditioningZeroOut, VAEEncode, CLIPTextEncode, LoadImage, Int, CR Text]
 patterns: []
 missing: [CR Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/krea.2局部重绘（PS版本）_2070875464536776706.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2070875464536776706.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/krea.2局部重绘（PS版本）_2070875464536776706.json`
 
 ## 结构
 

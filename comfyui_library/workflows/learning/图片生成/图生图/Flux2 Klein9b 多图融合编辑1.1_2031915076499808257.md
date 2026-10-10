@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Flux2 Klein9b 多图融合编辑1.1_2031915076499808257.json
-name: Flux2 Klein9b 多图融合编辑1.1_2031915076499808257.json
+name: Flux2 Klein9b 多图融合编辑1.1_2031915076499808257
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Flux2 Klein9b 多图融合编辑1.1_2031915076499808257.json
 hash: ca843ca9c0f8ea20
 coverage: 0.583333
-learned_at: 2026-10-09 22:36:20
+learned_at: 2026-10-10 20:48:02
 nodes: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, VAEDecode, ConditioningZeroOut, VAEEncode, CLIPTextEncode, VAEEncode, ReferenceLatent, ReferenceLatent, ComfySwitchNode, ReferenceLatent, VAEEncode, ComfySwitchNode, easy isNone, easy showAnything, Image Comparer (rgthree), easy isNone, easy showAnything, ReferenceLatent, ComfySwitchNode, ComfySwitchNode, LayerUtility: ImageScaleByAspectRatio V2, easy isNone, easy showAnything, VAEEncode, easy isNone, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, EmptyFlux2LatentImage, Note, CLIPLoader, VAELoader, LoadImage, LoadImage, LoadImage, PrimitiveStringMultiline, LoadImage, easy int, UNETLoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, KSampler, PDRatioSelector, ratio_selector, Int, SaveImage]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, easy int, easy isNone, easy isNone, easy isNone, easy isNone]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Flux2 Klein9b 多图融合编辑1.1_2031915076499808257.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2031915076499808257.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Flux2 Klein9b 多图融合编辑1.1_2031915076499808257.json`
 
 ## 结构
 

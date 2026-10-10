@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json
-name: Qwen Image 2.1多图编辑_2102401818163765249.json
+name: Qwen Image 2.1多图编辑_2102401818163765249
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json
 hash: 7a5bcf4a479fc1b7
 coverage: 0.842105
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:07
 nodes: [CLIPLoader, TextGenerateLTX2Prompt, UNETLoader, QwenImage21Cache, LoadImage, VAEDecode, KSampler, LoadImage, LoadImage, SaveImage, easy imageConcat, ResolutionSelector, JjkText, TextEncodeQwenImage21, ComfySwitchNode, CLIPLoader, VAELoader, EmptyLatentImage, BatchImagesNode]
 patterns: []
 missing: [easy imageConcat]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102401818163765249.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json`
 
 ## 结构
 

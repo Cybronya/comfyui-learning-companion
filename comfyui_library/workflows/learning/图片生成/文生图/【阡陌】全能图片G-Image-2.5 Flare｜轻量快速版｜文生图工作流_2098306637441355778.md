@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json
+key: 【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json
 name: 【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json
 hash: fff83f0b3e84004e
 coverage: 1
-learned_at: 2026-10-07 03:05:25
+learned_at: 2026-10-10 20:59:32
 nodes: [SaveImage, RH_RhartImageG25FlareTextToImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json
+# 【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】全能图片G-Image-2.5 Flare｜轻量快速版｜文生图工作流_2098306637441355778.json`
 

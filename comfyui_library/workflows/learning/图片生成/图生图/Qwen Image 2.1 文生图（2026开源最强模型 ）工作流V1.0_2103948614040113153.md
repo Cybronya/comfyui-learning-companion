@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json
-name: Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json
+name: Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json
 hash: 64073962d65781a2
 coverage: 0.692308
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:05
 nodes: [LoadImage, LoadImage, MarkdownNote, LoraLoaderModelOnly, PixaromaGroupSwitch, TextEncodeQwenImage21, KSampler, PixaromaResolution, EmptyLatentImage, KSampler, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), Any Switch (rgthree), PixaromaLabel, PixaromaLabel, VAEDecode, VAEDecode, LoraLoaderModelOnly, CR Text Concatenate, CR Text Concatenate, CR Prompt Text, CR Prompt Text, PixaromaGroupSwitch, Any Switch (rgthree), SaveImage, LoadImage, PreviewAny, QwenPERewriteT8, SaveImageAdvanced, CLIPLoader, UNETLoader, VAELoader, LoraLoaderModelOnly, QwenImage21Cache, PathchSageAttentionKJ, ModelAttentionBackend, QwenPERewriteT8, CR Prompt Text]
 patterns: []
 missing: [CR Text Concatenate, CR Text Concatenate, Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), CR Prompt Text, CR Prompt Text, CR Prompt Text]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 # 图片生成/图生图/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103948614040113153.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 文生图（2026开源最强模型 ）工作流V1.0_2103948614040113153.json`
 
 ## 结构
 

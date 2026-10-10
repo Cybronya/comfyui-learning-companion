@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_grok_video.j
 hash: 699b8d578329419a
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:48
+learned_at: 2026-10-10 22:44:12
 nodes: [SaveVideo, LoadImage, GrokVideoNode]
 patterns: []
 missing: []

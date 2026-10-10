@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_hunyuan3d_te
 hash: c6fb65e6b3a9b825
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:57
+learned_at: 2026-10-10 22:44:29
 nodes: [Preview3D, SaveGLB, SaveGLB, TencentTextToModelNode, SaveImage]
 patterns: []
 missing: []

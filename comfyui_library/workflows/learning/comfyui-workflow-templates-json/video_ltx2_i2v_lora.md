@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_i2v_l
 hash: 8d5756481de5843a
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:37:07
+learned_at: 2026-10-10 22:50:25
 nodes: [SaveVideo, MarkdownNote, b7c2d337-c38d-4c04-922b-2d638449d13e, LoadImage, MarkdownNote]
 patterns: []
 missing: [b7c2d337-c38d-4c04-922b-2d638449d13e]

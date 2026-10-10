@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/wan2.1_fun_contr
 hash: 79ca227973ae5f09
 official: true
 coverage: 0.909091
-learned_at: 2026-10-07 21:37:25
+learned_at: 2026-10-10 22:50:55
 nodes: [KSampler, CLIPTextEncode, CLIPTextEncode, UNETLoader, CLIPLoader, VAELoader, CLIPVisionLoader, CLIPVisionEncode, WanFunControlToVideo, SkipLayerGuidanceDiT, CFGZeroStar, ModelSamplingSD3, UNetTemporalAttentionMultiply, Canny, PreviewImage, VAEDecode, CreateVideo, SaveVideo, MarkdownNote, LoadImage, LoadVideo, GetVideoComponents]
 patterns: []
 missing: []

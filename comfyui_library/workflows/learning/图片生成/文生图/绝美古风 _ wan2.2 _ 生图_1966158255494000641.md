@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
-name: 绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
+key: 绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
+name: 绝美古风 _ wan2.2 _ 生图_1966158255494000641
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
 hash: 7b85dc39817066d6
 coverage: 0.638889
-learned_at: 2026-10-08 00:02:02
+learned_at: 2026-10-10 20:59:56
 nodes: [UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, VAEDecode, SaveImage, SaveImage, SaveImage, VAEDecode, VAEDecode, VAEDecode, KSampler, KSampler, KSampler, KSampler, SaveImage, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, Text Concatenate (JPS), Anything Everywhere, CLIPLoader, VAELoader, EmptyLatentImage, Mute / Bypass Repeater (rgthree), JjkText, CLIPTextEncode, Reroute, CLIPTextEncode, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), LayerUtility: JoyCaptionBeta1, ShowText|pysssss, Fast Bypasser (rgthree), LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, Anything Everywhere3]
 patterns: [text_to_image]
 missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Text Concatenate (JPS)]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
+# 绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1966158255494000641.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_triposplat_im
 hash: 25d9256b082e2eed
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:33:14
+learned_at: 2026-10-10 22:43:04
 nodes: [SaveGLB, CreateCameraInfo, SplatToMesh, SaveVideo, RenderSplat, CreateVideo, SaveGLB, SplatToFile3D, MarkdownNote, MarkdownNote, b64333d5-4e6f-4e99-9506-2ec4f63259fe, LoadImage]
 patterns: []
 missing: [b64333d5-4e6f-4e99-9506-2ec4f63259fe]

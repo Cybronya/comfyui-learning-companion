@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
+key: SDXL.一个流秒换百种风格_1892971967237271553.json
 name: SDXL.一个流秒换百种风格_1892971967237271553
 type: Image To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
 hash: 65808abc87c96d08
 coverage: 0.619048
-learned_at: 2026-10-07 03:18:02
+learned_at: 2026-10-10 20:59:11
 nodes: [Reroute, WD14Tagger|pysssss, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, OpenposePreprocessor, ControlNetApply, PreviewImage, PreviewImage, workflow/cn-depth, PreviewImage, LoadImage, VAEDecode, KSampler, VAEEncode, workflow/cn-canny, ImageScale, SaveImage, SDXLPromptStyler, Note]
 patterns: [image_to_image, controlnet]
 missing: [WD14Tagger|pysssss, workflow/cn-canny, workflow/cn-depth]
@@ -15,7 +15,7 @@ parameters: {"cfg": 6, "checkpoint": "dreamshaperXL_v21TurboDPMSDE.safetensors",
 discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `workflow/cn-canny` 仅有 ControlNet 的通用知识，没有该节点自己的说明, 次要节点 `workflow/cn-depth` 仅有 ControlNet 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
+# SDXL.一个流秒换百种风格_1892971967237271553.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json`
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_seedanc
 hash: fc4f8bf9bf15b948
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:36:27
+learned_at: 2026-10-10 22:49:10
 nodes: [SaveVideo, LoadImage, LoadImage, GeminiNode, PreviewAny, PreviewImage, MarkdownNote, ImageStitch, ByteDance2ReferenceNode]
 patterns: []
 missing: []
@@ -39,4 +39,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`GeminiNode`、`ImageStitch`、`ByteDance2ReferenceNode`
 
-**用到的条目**：LoadImage、SaveVideo、ImageStitch、ByteDance2ReferenceNode、GeminiNode、sd15-t2i-basic、sd15-t2i-lora、node
+**用到的条目**：LoadImage、SaveVideo、ImageStitch、ImageStitch、ByteDance2ReferenceNode、GeminiNode、sd15-t2i-basic、sd15-t2i-lora

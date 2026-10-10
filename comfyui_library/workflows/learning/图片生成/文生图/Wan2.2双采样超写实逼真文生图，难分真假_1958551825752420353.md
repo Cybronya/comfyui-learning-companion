@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json
-name: Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json
+key: Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json
+name: Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json
 hash: 94e2a36919199067
 coverage: 0.904762
-learned_at: 2026-10-07 23:31:31
+learned_at: 2026-10-10 20:59:14
 nodes: [UNETLoader, UNETLoader, LoraLoader, LoraLoader, LoraLoader, CLIPLoader, VAELoader, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, VAEDecode, CLIPTextEncode, CLIPTextEncode, PreviewImage, VAEDecode, EmptyHunyuanLatentVideo, JWInteger, JWInteger, SaveImage, CR Text]
 patterns: [lora]
 missing: [CR Text]
@@ -15,9 +15,9 @@ parameters: {"cfg": 14, "denoise": "bong_tangent", "lora_name": "WAN2.1_Smartpho
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json
+# Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1958551825752420353.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2双采样超写实逼真文生图，难分真假_1958551825752420353.json`
 
 ## 结构
 

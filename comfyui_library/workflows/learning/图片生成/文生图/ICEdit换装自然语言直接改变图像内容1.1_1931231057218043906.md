@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
-name: ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
+key: ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
+name: ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
 hash: 1ef19c537e2cb55f
 coverage: 0.684211
-learned_at: 2026-10-07 22:34:40
+learned_at: 2026-10-10 20:58:40
 nodes: [Evaluate Strings, CLIPTextEncode, FluxGuidance, ConditioningZeroOut, InpaintModelConditioning, Text Multiline, Seed Everywhere, EmptyImage, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, DifferentialDiffusion, FaceAnalysisModels, FaceBoundingBox, ImageResize+, easy makeImageForICLora, PreviewImage, MaskPreview+, VAEDecode, easy imageInsetCrop, PreviewImage, SaveImage, Image Comparer (rgthree), BaiduTranslateNode, UpscaleModelLoader, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PreviewImage, ApplyPulidFlux, UltimateSDUpscale, LoadImage, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, DualCLIPLoader, UNETLoader, PulidFluxModelLoader, KSampler]
 patterns: []
 missing: [Evaluate Strings, LayerUtility: ImageScaleByAspectRatio V2, Text Multiline, easy imageInsetCrop, ImageResize+, MaskPreview+, Seed Everywhere, easy makeImageForICLora]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta
 discoveries: [次要节点 `Evaluate Strings` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageInsetCrop` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy makeImageForICLora` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
+# ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1931231057218043906.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json`
 
 ## 结构
 

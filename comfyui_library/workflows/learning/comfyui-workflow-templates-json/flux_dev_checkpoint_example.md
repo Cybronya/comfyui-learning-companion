@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_dev_checkpo
 hash: 5007df537a863f1a
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:24
+learned_at: 2026-10-10 22:47:10
 nodes: [MarkdownNote, SaveImage, e2a55522-bf16-4d9f-a222-5b8788ef2982]
 patterns: []
 missing: [e2a55522-bf16-4d9f-a222-5b8788ef2982]

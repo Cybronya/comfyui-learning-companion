@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
+key: Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 name: Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 hash: eb4c449807f36cd8
 coverage: 0.447368
-learned_at: 2026-10-07 02:26:24
+learned_at: 2026-10-10 20:59:05
 nodes: [SetNode, SetNode, SetNode, LoadImage, GetNode, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, LoadImage, VAELoader, GetNode, LoadImage, UNETLoader, CLIPLoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, SetNode, GetNode, SetNode, GetNode, ComfySwitchNode, EmptyLatentImage, GetNode, KSampler, VAEDecode, SaveImage, SetNode, SetNode, LoadImage, Text, ResolutionSelector, 忽略多组孤海]
 patterns: []
 missing: [忽略多组孤海]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
+# Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json`
 

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/全能图片G Image2.5图生图_2107159515836805121.json
 hash: 9853473502005478
 coverage: 1
-learned_at: 2026-10-07 02:41:35
+learned_at: 2026-10-10 20:48:15
 nodes: [SaveImage, Text, LoadImage, RH_RhartImageG25OfficialTokenSunburstEdit]
 patterns: []
 missing: []

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_depth_an
 hash: 1dcbb8b960815159
 official: true
 coverage: 0.428571
-learned_at: 2026-10-07 21:36:44
+learned_at: 2026-10-10 22:49:43
 nodes: [605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3, MarkdownNote, MarkdownNote, LoadVideo, PreviewImage, CreateVideo, SaveVideo]
 patterns: []
 missing: [605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3]

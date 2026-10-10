@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_marigold_v
 hash: 166b1484cf6805de
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:35:51
+learned_at: 2026-10-10 22:48:17
 nodes: [LoadImage, ImageCompare, SaveImageAdvanced, 790255fa-100b-4dda-9ab5-e5e1731951db, MarkdownNote]
 patterns: []
 missing: [790255fa-100b-4dda-9ab5-e5e1731951db]
@@ -38,7 +38,7 @@ discoveries: [次要节点 `790255fa-100b-4dda-9ab5-e5e1731951db` 知识库中�
 
 **缺卡**（1）：`790255fa-100b-4dda-9ab5-e5e1731951db`
 
-**用到的条目**：LoadImage、SaveImageAdvanced、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImageAdvanced、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Compare、CS_Preview_Any
 
 ## 学习发现
 

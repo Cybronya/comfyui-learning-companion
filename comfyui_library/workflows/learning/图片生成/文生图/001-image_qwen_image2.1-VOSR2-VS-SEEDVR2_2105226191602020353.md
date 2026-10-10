@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
+key: 001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
 name: 001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
 hash: 6974e5516fda7c61
 coverage: 0.586957
-learned_at: 2026-10-07 02:04:25
+learned_at: 2026-10-10 21:25:19
 nodes: [SetNode, SetNode, GetNode, easy promptLine, ResolutionSelector, EmptyLatentImage, GetNode, VOSR2ModelLoader, SaveImage, SaveImage, SplitImageWithAlpha, SetNode, GetNode, KSamplerAdvanced, SeedVR2Conditioning, JoinImageWithAlpha, KSampler, SeedVR2Preprocess, UNETLoader, VAELoader, ModelAttentionBackend, TextEncodeQwenImage21, Text Multiline, TextGenerateLTX2Prompt, ResizeImageMaskNode, Text Multiline, CLIPLoader, Fast Groups Bypasser (rgthree), ShowText|pysssss, SaveImage, Image Comparer (rgthree), VAELoader, VAEDecodeTiled, VAEEncodeTiled, VOSR2Upscale, easy cleanGpuUsed, VAEDecode, easy cleanGpuUsed, SplitImageWithAlpha, GetNode, easy cleanGpuUsed, UNETLoader, SeedVR2PostProcessing, easy cleanGpuUsed, Image Comparer (rgthree), Image Comparer (rgthree)]
 patterns: []
 missing: [Text Multiline, Text Multiline, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy promptLine]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1344, "sampler_n
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
+# 001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json`
 

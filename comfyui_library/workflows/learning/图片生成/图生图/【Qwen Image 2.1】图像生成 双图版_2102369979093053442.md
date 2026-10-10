@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/【Qwen Image 2.1】图像生成 双图版_2102369979093053442.json
-name: 【Qwen Image 2.1】图像生成 双图版_2102369979093053442.json
+name: 【Qwen Image 2.1】图像生成 双图版_2102369979093053442
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/【Qwen Image 2.1】图像生成 双图版_2102369979093053442.json
 hash: d30e38a3ff59d011
 coverage: 0.546875
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:13
 nodes: [LayerUtility: ImageReelComposit, VAEDecode, easy setNode, VAEDecode, Image Comparer (rgthree), PreviewImage, LayerUtility: ImageReel, TextEncodeQwenImage21, EmptyLatentImage, TextEncodeQwenImage21, ComfySwitchNode, PreviewImage, easy setNode, VAEDecode, SaveImage, easy setNode, Seed (rgthree), KSampler, SaveImage, CR Prompt Text, ResolutionSelector, TextGenerateLTX2Prompt, easy showAnything, UNETLoader, QwenImage21Cache, VAELoader, Anything Everywhere3, SetNode, SetNode, GetNode, LoadImage, KSampler, TextGenerateLTX2Prompt, EmptyLatentImage, ShowText|pysssss, GetNode, CR Prompt Text, ResolutionSelector, BatchImagesNode, Image Comparer (rgthree), Fast Groups Bypasser (rgthree), TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, GetNode, EmptyLatentImage, ComfySwitchNode, LoadImage, LoadImage, PreviewAny, TextGenerateLTX2Prompt, CLIPLoader, CLIPLoader, CLIPLoader, CR Prompt Text, Note, LayerUtility: ImageReel, ResolutionSelector, SaveImage, LayerUtility: ImageReelComposit, KSampler, LoadImage, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, easy setNode, easy setNode, easy setNode, CR Prompt Text, CR Prompt Text, CR Prompt Text, Seed (rgthree)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 # 图片生成/图生图/【Qwen Image 2.1】图像生成 双图版_2102369979093053442.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102369979093053442.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/【Qwen Image 2.1】图像生成 双图版_2102369979093053442.json`
 
 ## 结构
 

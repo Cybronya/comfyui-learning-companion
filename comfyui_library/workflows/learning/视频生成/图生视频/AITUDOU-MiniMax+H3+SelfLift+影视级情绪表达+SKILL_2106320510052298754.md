@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/AITUDOU-MiniMax+H3+SelfLift+影视级情绪表达+SKILL_2106320510052298754.json
 hash: d01e259c75462a68
 coverage: 0.443182
-learned_at: 2026-10-07 00:31:03
+learned_at: 2026-10-10 22:51:43
 nodes: [UNETLoader, ModelAttentionBackend, SolAttnMiniMax, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoader, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, MarkdownNote, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, ConditioningZeroOut, GetNode, GetNode, SetNode, GetNode, KSamplerSelect, GetNode, BasicScheduler, H3SigmaRefiner, GetNode, GetNode, VAEDecodeAudio, ComfyMathExpression, SetNode, GetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, SetNode, CLIPLoader, SetNode, VAEDecode, SetNode, Label (rgthree), Label (rgthree), Label (rgthree), Fast Groups Bypasser (rgthree), MiniMaxH3MemoryEfficientSageAttentionPatch, VAELoader, SetNode, SetNode, SetNode, SetNode, VHS_VideoCombine, LoadImage, SetNode, SetNode, LoadImage, MiniMaxH3ReferenceToVideo, LoadImage, LoadImage, LoadImage, SetNode, LoadImage, LoadImage, LoadImage, Text, Float, LoadAudio, LoadAudio, LoadAudio, ResolutionSelector, SelfLiftH3Sampler, LoadImage, SetNode]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), Label (rgthree)]

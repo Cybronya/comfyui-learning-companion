@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_firered_im
 hash: be0b3d285cf4f746
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:38
+learned_at: 2026-10-10 22:47:32
 nodes: [LoadImage, MarkdownNote, SaveImage, 1db9ada8-0f48-4990-95fc-9df56969dd2d]
 patterns: []
 missing: [1db9ada8-0f48-4990-95fc-9df56969dd2d]

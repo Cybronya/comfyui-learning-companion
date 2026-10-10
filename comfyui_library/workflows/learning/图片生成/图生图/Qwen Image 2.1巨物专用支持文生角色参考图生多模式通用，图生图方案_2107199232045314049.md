@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1巨物专用支持文生角色参考图生多模式通用，图生图方案_2107199232045314049.json
 hash: 01e165b4c08a3c59
 coverage: 0.82
-learned_at: 2026-10-07 02:41:25
+learned_at: 2026-10-10 20:48:07
 nodes: [CLIPLoader, VAEDecode, UNETLoader, VAELoader, LoraLoaderModelOnly, SaveImage, PreviewImage, KSampler, LoraLoaderModelOnly, ResolutionSelector, PrimitiveStringMultiline, EmptyLatentImage, TextEncodeQwenImage21, KSampler, ConditioningKrea2Rebalance, WujiUpscaler2, LoadImage, Fast Groups Bypasser (rgthree), RH_Screenwriter, WujiImagePrompt, easy showAnything, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [WujiImagePrompt]

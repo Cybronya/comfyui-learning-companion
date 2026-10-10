@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_moge_panorama
 hash: 60564578dde34f12
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:33:12
+learned_at: 2026-10-10 22:43:01
 nodes: [LoadImage, MarkdownNote, MarkdownNote, 94961018-e012-4f04-9891-adc008a73d54, SaveGLB]
 patterns: []
 missing: [94961018-e012-4f04-9891-adc008a73d54]

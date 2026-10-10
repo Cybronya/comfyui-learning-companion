@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_topaz_video_
 hash: 9989fe057334401f
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:56
+learned_at: 2026-10-10 22:46:20
 nodes: [SaveVideo, LoadVideo, TopazVideoEnhanceV2]
 patterns: []
 missing: []

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json
-name: HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json
+key: HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json
+name: HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json
 hash: 2c2a73fb639dfc7e
 coverage: 0.576923
-learned_at: 2026-10-07 19:46:07
+learned_at: 2026-10-10 20:58:40
 nodes: [VAEDecode, VAELoader, MarkdownNote, UnetLoaderGGUF, MarkdownNote, EmptySD3LatentImage, CLIPTextEncode, QuadrupleCLIPLoader, CLIPTextEncode, KSampler, RH_Captioner, ModelSamplingSD3, TeaCache, UNETLoader, LoraLoaderModelOnly, SaveImage, Note, Text Multiline, Text Concatenate, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, easy showAnything, Fast Groups Bypasser (rgthree), LoadImage, CR SDXL Aspect Ratio, LayerUtility: JoyCaptionBeta1ExtraOptions]
 patterns: []
 missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, Text Concatenate, Text Multiline, CR SDXL Aspect Ratio]
@@ -15,9 +15,9 @@ parameters: {"cfg": 5, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "sim
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json
+# HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1912548267165712385.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/HiDream：TeaCache加速+ComfyUI原生文生图流_1912548267165712385.json`
 
 ## 结构
 

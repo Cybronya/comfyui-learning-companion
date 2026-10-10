@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_schnell_ful
 hash: 79d3106be26b6e02
 official: true
 coverage: 0.9
-learned_at: 2026-10-07 21:35:27
+learned_at: 2026-10-10 22:47:15
 nodes: [VAELoader, DualCLIPLoader, EmptySD3LatentImage, ConditioningZeroOut, VAEDecode, SaveImage, UNETLoader, KSampler, CLIPTextEncodeFlux, MarkdownNote]
 patterns: []
 missing: []

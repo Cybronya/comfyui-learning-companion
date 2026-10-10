@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_bernini_r_
 hash: ef0644e39739b408
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:56
+learned_at: 2026-10-10 22:50:05
 nodes: [LoadVideo, SaveVideo, MarkdownNote, MarkdownNote, BatchImagesNode, MarkdownNote, LoadImage, Video Slice, GetVideoComponents, GetImageSize, PreviewAny, 69c3c422-bcfe-4955-bc23-8bac307287a8]
 patterns: []
 missing: [69c3c422-bcfe-4955-bc23-8bac307287a8, Video Slice]

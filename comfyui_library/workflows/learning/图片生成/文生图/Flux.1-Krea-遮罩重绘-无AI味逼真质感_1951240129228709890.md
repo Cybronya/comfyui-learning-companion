@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json
-name: Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json
+key: Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json
+name: Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json
 hash: 85940428fdf8632d
 coverage: 0.727273
-learned_at: 2026-10-07 23:04:05
+learned_at: 2026-10-10 20:58:36
 nodes: [DualCLIPLoader, MarkdownNote, MarkdownNote, UNETLoader, VAEDecode, SaveImage, SaveImage, ImageStitch, CLIPTextEncode, Text Concatenate, ConditioningZeroOut, KSampler, VAELoader, LoadImage, MaskPreview, easy showAnything, Text Multiline, Note, LoraLoaderModelOnly, RepeatLatentBatch, InpaintModelConditioning, ImpactGaussianBlurMask]
 patterns: []
 missing: [Text Concatenate, Text Multiline]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json
+# Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951240129228709890.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-遮罩重绘-无AI味逼真质感_1951240129228709890.json`
 
 ## 结构
 

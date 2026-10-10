@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json
-name: Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json
+name: Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json
 hash: 1e76590741557f2e
 coverage: 0.481481
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:07
 nodes: [VAELoader, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, LoadImage, UNETLoader, CLIPLoader, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, GetNode, GetNode, GetNode, EmptyLatentImage, GetNode, easy boolean, SetNode, easy boolean, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, GetNode, Any To String (mtb), llama_cpp_model_loader, ImpactConditionalBranch, ImpactConditionalBranch, GetNode, llama_cpp_instruct_adv, XB_BatchImages, ShowText|pysssss, SetNode, CR Text, CR Text, Fast Groups Muter (rgthree), ResolutionSelector, SetNode, SetNode, QwenImage21Cache, KSampler, GetNode, ComfySwitchNode, CR Text, SetNode, SetNode, TextEncodeQwenImage21, easy cleanGpuUsed, VAEDecode, SaveImage, SaveImageAdvanced, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [Any To String (mtb), CR Text, CR Text, CR Text, easy boolean, easy boolean, easy cleanGpuUsed]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `Any To String (mtb)` 知识库中没有该节点类�
 
 # 图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102551057128845314.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json`
 
 ## 结构
 

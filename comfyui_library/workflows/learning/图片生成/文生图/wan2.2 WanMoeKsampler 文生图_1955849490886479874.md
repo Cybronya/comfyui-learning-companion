@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
-name: wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+key: wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+name: wan2.2 WanMoeKsampler 文生图_1955849490886479874
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
 hash: a689aae4e99ee909
 coverage: 0.944444
-learned_at: 2026-10-07 23:24:41
+learned_at: 2026-10-10 20:59:27
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyHunyuanLatentVideo, UNETLoader, ImpactInt, ImpactInt, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, VAEDecode, WanMoeKSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, SaveImage, CR Text]
 patterns: []
 missing: [CR Text]
@@ -15,9 +15,9 @@ parameters: {"cfg": 12, "denoise": "res_2s", "sampler_name": 3, "scheduler": 1, 
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+# wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1955849490886479874.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json`
 
 ## 结构
 

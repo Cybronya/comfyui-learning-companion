@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json
-name: Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json
+name: Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json
 hash: 49c167bb28aee775
 coverage: 0.676768
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:08
 nodes: [SetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, JsonExtractString, llama_cpp_model_loader, llama_cpp_parameters, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, PrimitiveBoolean, PrimitiveBoolean, GetNode, GetNode, GetNode, ExecutionBlocker, PrimitiveInt, ImpactNeg, ImpactNeg, ExecutionBlocker, ExecutionBlocker, CR Text Replace, PrimitiveBoolean, PrimitiveBoolean, MathExpression_UTK, llama_cpp_instruct_adv, RHLLMChatNode, easy anythingIndexSwitch, DapaoMakeImageBatchNode, llama_cpp_instruct_adv, RHLLMChatNode, 1hew_SaveTxt, easy anythingIndexSwitch, easy anythingIndexSwitch, JjkText, SetNode, PrimitiveInt, ExecutionBlocker, SaveImage, ExecutionBlocker, LoadImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [CR Text Replace, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102233840218632193.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen image 2.1提示词强化｜反推提示词自动扩写｜文生图效果翻倍_2102233840218632193.json`
 
 ## 结构
 

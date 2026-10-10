@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
-name: 升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
+key: 升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
+name: 升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
 hash: b0249ba8e84241f6
 coverage: 0.692308
-learned_at: 2026-10-07 19:12:58
+learned_at: 2026-10-10 20:59:39
 nodes: [KSampler, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, FluxGuidance, ConditioningZeroOut, SDXL Empty Latent Image (rgthree), CLIPTextEncode, CR Text, VAEDecodeTiled, ImageScaleBy, ImageUpscaleWithModel, TTP_Image_Tile_Batch, TTP_Tile_image_size, VAEEncode, ImpactImageBatchToImageList, Reroute, ImageListToImageBatch, TTP_Image_Assy, VAEDecode, DualCLIPLoader, VAELoader, Reroute, CLIPTextEncode, CLIPTextEncode, KSampler, Reroute, Reroute, UpscaleModelLoader, LoadImage, UNETLoader, LoraLoaderModelOnly, Note, LoadImage, ShowText|pysssss, Note, SaveImage, LoadImage, CR Text Concatenate, SaveImage]
 patterns: [image_to_image]
 missing: [CR Text, CR Text Concatenate, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, SDXL Empty Latent Image (rgthree)]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 0.9, "sampler_name": "euler", "scheduler": "ex
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `SDXL Empty Latent Image (rgthree)` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
+# 升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951105950621048833.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json`
 
 ## 结构
 

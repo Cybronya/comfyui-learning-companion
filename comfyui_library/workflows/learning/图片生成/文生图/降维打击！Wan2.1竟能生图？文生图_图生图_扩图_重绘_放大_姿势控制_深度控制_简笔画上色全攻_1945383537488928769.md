@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
-name: 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
+key: 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
+name: 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
 hash: 742497544022b207
 coverage: 0.927536
-learned_at: 2026-10-07 22:52:39
+learned_at: 2026-10-10 20:59:59
 nodes: [VAEDecode, LoraLoaderModelOnly, ModelSamplingSD3, LoraLoaderModelOnly, VAEDecode, ModelSamplingSD3, PreviewImage, SaveImage, CLIPLoader, UNETLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, PreviewImage, UNETLoader, TrimVideoLatent, VAEDecode, CLIPLoader, EmptyHunyuanLatentVideo, SaveImage, PreviewImage, VAELoader, VAEEncode, CLIPTextEncode, KSampler, VAELoader, UNETLoader, CLIPLoader, CLIPTextEncode, CLIPTextEncode, ImageResizeKJv2, KSampler, LoadImage, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, LoadImage, CLIPTextEncode, ImagePadForOutpaint, WanVaceToVideo, RepeatImageBatch, CLIPLoader, UNETLoader, VAELoader, KSampler, CLIPTextEncode, PreviewImage, TrimVideoLatent, VAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, WanVaceToVideo, RepeatImageBatch, LoadImage, CLIPTextEncode, LoadImage, CLIPLoader, UNETLoader, VAELoader, KSampler, CLIPTextEncode, PreviewImage, TrimVideoLatent, VAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, RepeatImageBatch, CLIPLoader, UNETLoader, VAELoader, KSampler, CLIPTextEncode, TrimVideoLatent, VAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, LoadImage, CLIPTextEncode, WanVaceToVideo, LoadImage, CLIPTextEncode, RepeatImageBatch, WanVaceToVideo, GetImageRangeFromBatch, CLIPLoader, UNETLoader, VAELoader, KSampler, CLIPTextEncode, TrimVideoLatent, VAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, GetImageRangeFromBatch, LoadImage, WanVaceToVideo, RepeatImageBatch, CLIPTextEncode, CLIPLoader, UNETLoader, VAELoader, KSampler, TrimVideoLatent, VAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, SaveImage, GetImageRangeFromBatch, WanVaceToVideo, RepeatImageBatch, LoadImage, CLIPTextEncode, CLIPTextEncode, AIO_Preprocessor, AIO_Preprocessor, SaveImage, PreviewImage, SaveImage, PreviewImage, LoadImage, AIO_Preprocessor, SaveImage, PreviewImage, Fast Groups Bypasser (rgthree), Label (rgthree)]
 patterns: [image_to_image]
 missing: [Label (rgthree)]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "sim
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
+# 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1945383537488928769.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json`
 
 ## 结构
 

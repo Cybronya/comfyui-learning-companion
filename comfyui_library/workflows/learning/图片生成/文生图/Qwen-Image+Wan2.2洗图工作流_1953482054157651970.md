@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
-name: Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
+key: Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
+name: Qwen-Image+Wan2.2洗图工作流_1953482054157651970
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
 hash: 96176adde43ec733
 coverage: 0.941176
-learned_at: 2026-10-07 23:12:02
+learned_at: 2026-10-10 20:58:58
 nodes: [VAELoader, CLIPLoader, SaveImage, UNETLoader, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, LoraLoaderModelOnly, CLIPLoader, CLIPTextEncode, String Literal, VAEDecode, VAELoader, LoraLoaderModelOnly, PreviewBridge, ModelSamplingSD3, ModelSamplingSD3, VAEDecode, SaveImage, Seed, ShowText|pysssss, CLIPTextEncode, ConditioningZeroOut, VAEEncode, EmptyLatentImage, DeepTranslatorTextNode, CLIPTextEncode, ModelSamplingAuraFlow, UNETLoader, LoraLoaderModelOnly, KSampler, KSampler, KSampler]
 patterns: [text_to_image]
 missing: [String Literal]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.1, "height": 1536, "sampler
 discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
+# Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1953482054157651970.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json`
 
 ## 结构
 

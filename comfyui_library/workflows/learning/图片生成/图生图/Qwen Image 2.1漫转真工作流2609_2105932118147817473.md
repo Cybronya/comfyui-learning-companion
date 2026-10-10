@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1漫转真工作流2609_2105932118147817473.json
-name: Qwen Image 2.1漫转真工作流2609_2105932118147817473.json
+name: Qwen Image 2.1漫转真工作流2609_2105932118147817473
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1漫转真工作流2609_2105932118147817473.json
 hash: 790c647ea95280e9
 coverage: 0.73913
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:08
 nodes: [孤海注释, JoinStrings, PrimitiveBoolean, ComfySwitchNode, CLIPLoader, VAELoader, LoraLoaderModelOnly, UNETLoader, CLIPLoader, TextEncodeQwenImage21, QwenImage21Cache, VAEDecode, EmptyLatentImage, BatchImagesNode, easy positive, TextGenerate, ShowText|pysssss, SaveImage, LayerUtility: ImageScaleByAspectRatio V2, easy positive, KSampler, LoadImage, ResolutionSelector]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, easy positive, easy positive]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen Image 2.1漫转真工作流2609_2105932118147817473.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105932118147817473.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1漫转真工作流2609_2105932118147817473.json`
 
 ## 结构
 

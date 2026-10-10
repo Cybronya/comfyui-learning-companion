@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2 低噪模型 文生图_1962185965135663106.json
-name: Wan2.2 低噪模型 文生图_1962185965135663106.json
+key: Wan2.2 低噪模型 文生图_1962185965135663106.json
+name: Wan2.2 低噪模型 文生图_1962185965135663106
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 低噪模型 文生图_1962185965135663106.json
 hash: 044f7227419f6dd2
 coverage: 0.823529
-learned_at: 2026-10-07 23:53:37
+learned_at: 2026-10-10 20:59:13
 nodes: [WanVideoNAG, ModelSamplingSD3, CLIPTextEncode, VAELoader, CLIPTextEncode, VAEDecode, FastFilmGrain, KSampler, CR Upscale Image, CLIPLoader, LoraLoader, PathchSageAttentionKJ, easy cleanGpuUsed, easy clearCacheAll, EmptyLatentImage, SaveImage, UNETLoader]
 patterns: [text_to_image, lora]
 missing: [easy cleanGpuUsed, easy clearCacheAll, CR Upscale Image]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1600, "lora_name
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `CR Upscale Image` 仅有 Upscale 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Wan2.2 低噪模型 文生图_1962185965135663106.json
+# Wan2.2 低噪模型 文生图_1962185965135663106.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1962185965135663106.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 低噪模型 文生图_1962185965135663106.json`
 
 ## 结构
 

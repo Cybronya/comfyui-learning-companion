@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sdxl_revision_te
 hash: fb299a5caf94f8c2
 official: true
 coverage: 0.933333
-learned_at: 2026-10-07 21:36:17
+learned_at: 2026-10-10 22:48:54
 nodes: [CLIPVisionLoader, CLIPTextEncode, LoadImage, CLIPVisionEncode, unCLIPConditioning, CLIPVisionEncode, unCLIPConditioning, CheckpointLoaderSimple, EmptyLatentImage, LoadImage, KSampler, SaveImage, MarkdownNote, VAEDecode, CLIPTextEncode]
 patterns: [text_to_image]
 missing: []

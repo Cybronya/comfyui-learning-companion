@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5文生视频工作流｜一句话生成带音效大片_2095480544271364097.json
 hash: 716f7285cde3764c
 coverage: 0.857143
-learned_at: 2026-10-10 00:07:22
+learned_at: 2026-10-10 23:05:33
 nodes: [PrimitiveStringMultiline, SaveVideo, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, RHMiniMaxH3VideoGen, CreateVideo]
 patterns: []
 missing: []

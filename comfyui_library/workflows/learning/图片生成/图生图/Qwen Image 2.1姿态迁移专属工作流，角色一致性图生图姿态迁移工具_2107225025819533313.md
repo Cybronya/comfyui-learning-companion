@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1姿态迁移专属工作流，角色一致性图生图姿态迁移工具_2107225025819533313.json
 hash: 2287ac92f88435c1
-coverage: 0.581633
-learned_at: 2026-10-07 02:41:24
+coverage: 0.602041
+learned_at: 2026-10-10 20:48:07
 nodes: [SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, PixaromaGroupSwitch, ResolutionSelector, EmptyLatentImage, GetNode, GetNode, KSampler, CR Prompt Text, ShowText|pysssss, VRAM_Debug, TextEncodeQwenImage21, GetNode, PreviewImage, SetNode, easy showAnything, easy showAnything, CM_NumberToInt, GetImageSize, LayerUtility: ImageScaleRestore, easy imageSize, easy imageSize, LayerUtility: ImageScaleByAspectRatio V2, ImageCASharpening+, ttN concat, SetNode, GetNode, SetNode, GetNode, GetNode, ttN concat, PixaromaGroupSwitch, VAEDecode, SaveImage, PixaromaGroupSwitch, GetNode, GetNode, QwenPERewriteT8, LoadImage, DWPreprocessor, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, ImageRGBA2RGB, ImageResize+, LayerUtility: NumberCalculatorV2, TTP_Tile_image_size, ImageScaleBy, GetImageSize, CM_NumberBinaryOperation, LayerUtility: NumberCalculatorV2, easy imageSize, ImageCASharpening+, ImageResize+, TTP_Image_Assy, CR Prompt Text, PathchSageAttentionKJ, QwenImage21Cache, ModelAttentionBackend, TTP_Image_Tile_Batch, SaveImage, SeedVR2VideoUpscaler, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, LoadImage, CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CM_NumberBinaryOperation, CM_NumberToInt, ImageCASharpening+, ImageCASharpening+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore, LayerUtility: NumberCalculatorV2, LayerUtility: NumberCalculatorV2, ttN concat, ttN concat, CR Prompt Text, CR Prompt Text, CR Prompt Text, ImageResize+, ImageResize+, easy imageSize, easy imageSize, easy imageSize]
+missing: [ImageCASharpening+, ImageCASharpening+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore, LayerUtility: NumberCalculatorV2, LayerUtility: NumberCalculatorV2, ttN concat, ttN concat, CR Prompt Text, CR Prompt Text, CR Prompt Text, ImageResize+, ImageResize+, easy imageSize, easy imageSize, easy imageSize]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CM_NumberBinaryOperation` 知识库中没有该节点类型的任何知识, 次要节点 `CM_NumberToInt` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleRestore` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: NumberCalculatorV2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: NumberCalculatorV2` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleRestore` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: NumberCalculatorV2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: NumberCalculatorV2` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1姿态迁移专属工作流，角色一致性图生图姿态迁移工具_2107225025819533313.json
@@ -140,11 +140,11 @@ discoveries: [次要节点 `CM_NumberBinaryOperation` 知识库中没有该节�
 
 ## 知识
 
-覆盖率 **58%**（57/98）
+覆盖率 **60%**（59/98）
 
-**有卡**：`PixaromaGroupSwitch`、`ResolutionSelector`、`EmptyLatentImage`、`KSampler`、`VRAM_Debug`、`TextEncodeQwenImage21`、`GetImageSize`、`VAEDecode`、`SaveImage`、`QwenPERewriteT8`、`LoadImage`、`DWPreprocessor`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`ImageRGBA2RGB`、`TTP_Tile_image_size`、`ImageScaleBy`、`TTP_Image_Assy`、`PathchSageAttentionKJ`、`QwenImage21Cache`、`ModelAttentionBackend`、`TTP_Image_Tile_Batch`、`SeedVR2VideoUpscaler`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`PixaromaGroupSwitch`、`ResolutionSelector`、`EmptyLatentImage`、`KSampler`、`VRAM_Debug`、`TextEncodeQwenImage21`、`CM_NumberToInt`、`GetImageSize`、`VAEDecode`、`SaveImage`、`QwenPERewriteT8`、`LoadImage`、`DWPreprocessor`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`ImageRGBA2RGB`、`TTP_Tile_image_size`、`ImageScaleBy`、`CM_NumberBinaryOperation`、`TTP_Image_Assy`、`PathchSageAttentionKJ`、`QwenImage21Cache`、`ModelAttentionBackend`、`TTP_Image_Tile_Batch`、`SeedVR2VideoUpscaler`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（20）：`CM_NumberBinaryOperation`、`CM_NumberToInt`、`ImageCASharpening+`、`ImageCASharpening+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleRestore`、`LayerUtility: NumberCalculatorV2`、`LayerUtility: NumberCalculatorV2`、`ttN concat`、`ttN concat`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`ImageResize+`、`ImageResize+`、`easy imageSize`、`easy imageSize`、`easy imageSize`
+**缺卡**（18）：`ImageCASharpening+`、`ImageCASharpening+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleRestore`、`LayerUtility: NumberCalculatorV2`、`LayerUtility: NumberCalculatorV2`、`ttN concat`、`ttN concat`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`ImageResize+`、`ImageResize+`、`easy imageSize`、`easy imageSize`、`easy imageSize`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -155,8 +155,6 @@ discoveries: [次要节点 `CM_NumberBinaryOperation` 知识库中没有该节�
 
 ## 学习发现
 
-- 次要节点 `CM_NumberBinaryOperation` 知识库中没有该节点类型的任何知识
-- 次要节点 `CM_NumberToInt` 知识库中没有该节点类型的任何知识
 - 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
 - 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
 - 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识

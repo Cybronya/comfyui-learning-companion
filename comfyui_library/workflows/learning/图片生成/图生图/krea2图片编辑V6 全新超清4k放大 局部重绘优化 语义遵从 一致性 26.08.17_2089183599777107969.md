@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/krea2图片编辑V6 全新超清4k放大 局部重绘优化 语义遵从 一致性 26.08.17_2089183599777107969.json
-name: krea2图片编辑V6 全新超清4k放大 局部重绘优化 语义遵从 一致性 26.08.17_2089183599777107969.json
+name: krea2图片编辑V6 全新超清4k放大 局部重绘优化 语义遵从 一致性 26.08.17_2089183599777107969
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/krea2图片编辑V6 全新超清4k放大 局部重绘优化 语义遵从 一致性 26.08.17_2089183599777107969.json
 hash: f6827e7e6cb39052
 coverage: 0.633333
-learned_at: 2026-10-09 22:36:22
+learned_at: 2026-10-10 20:48:12
 nodes: [ExecutionBlocker, ExecutionBlocker, SaveLatent, PlaySound|pysssss, VAELoader, JjkText, Note, ImpactNeg, ExecutionBlocker, Reroute, ImageScaleToTotalPixels, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, ImageRGBA2RGB, LoraLoaderModelOnly, CLIPLoader, VAEEncode, LoraLoaderModelOnly, KSampler, CM_BoolToInt, easy anythingIndexSwitch, VAELoader, CFGNorm, LoraLoaderModelOnly, VAELoader, GetImageSize, CM_BoolToInt, ImpactNeg, RH_RFMSR_ModelLoader, Int, Int, Int, 孤海注释, VAEEncode, VAEDecode, IntConditions, IntConditions, easy anythingIndexSwitch, 孤海注释, ImageScaleToTotalPixels, LayerUtility: PurgeVRAM, ExecutionBlocker, ExecutionBlocker, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, RH_RFMSR_Upscale, PrimitiveBoolean, VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, ImageScaleToTotalPixels, GrowMaskWithBlur, UNETLoader, EmptySD3LatentImage, LoadImage, 1hew_TextToAny, 1hew_TextToAny, 孤海注释, 孤海注释, PrimitiveFloat, PrimitiveBoolean, 图像缩放V2_孤海, UpscaleModelLoader, Krea2EditGroundedEncode, JjkText, JjkText, easy mathString, easy mathString, CM_BoolToInt, easy anythingIndexSwitch, JjkText, StringReplace, StringReplace, Krea2EditModelPatch, Krea2EditModelPatch, PrimitiveFloat, PixelKSampleUpscalerProvider, IterativeImageUpscale, SaveImage, easy anythingIndexSwitch, RHLLMChatNode, easy anythingIndexSwitch, PreviewAny, Krea2EditGroundedEncode, StringReplace, PreviewAny]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, PlaySound|pysssss, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch, easy mathString, easy mathString, 图像缩放V2_孤海]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/krea2图片编辑V6 全新超清4k放大 局部重绘优化 语义遵从 一致性 26.08.17_2089183599777107969.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2089183599777107969.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/krea2图片编辑V6 全新超清4k放大 局部重绘优化 语义遵从 一致性 26.08.17_2089183599777107969.json`
 
 ## 结构
 

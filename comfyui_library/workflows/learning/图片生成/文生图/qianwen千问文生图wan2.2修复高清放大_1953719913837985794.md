@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
-name: qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
+key: qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
+name: qianwen千问文生图wan2.2修复高清放大_1953719913837985794
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
 hash: 87298000c05bacfa
 coverage: 0.863636
-learned_at: 2026-10-07 23:17:34
+learned_at: 2026-10-10 20:59:23
 nodes: [PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, VAEEncode, Reroute, VAEDecode, ImageUpscaleWithModel, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, Image Tiled, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, PreviewImage, UpscaleModelLoader, UNETLoader, VAELoader, CLIPLoader, VAELoader, ImageScaleToTotalPixels, LoraLoader, LoraLoader, KSampler, ImageConcanateOfUtils, ImageConcanateOfUtils, CLIPTextEncode, CLIPTextEncode, LoraLoader, SaveImage, Image Comparer (rgthree), VAEDecode, EmptySD3LatentImage, CLIPTextEncode, UNETLoader, KSampler, CLIPTextEncode, ModelSamplingAuraFlow, Reroute, CR Text, CLIPLoader]
 patterns: [lora]
 missing: [CR Text, Image Tiled]
@@ -15,9 +15,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "WAN2.2-LowNoise_SmartphoneS
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
+# qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1953719913837985794.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json`
 
 ## 结构
 

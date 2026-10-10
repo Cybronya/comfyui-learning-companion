@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_minimax_h3_r
 hash: 09b7e7e63a3a765f
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:20
+learned_at: 2026-10-10 22:45:11
 nodes: [LoadImage, SaveVideo, MinimaxHailuo03ReferenceNode]
 patterns: []
 missing: []

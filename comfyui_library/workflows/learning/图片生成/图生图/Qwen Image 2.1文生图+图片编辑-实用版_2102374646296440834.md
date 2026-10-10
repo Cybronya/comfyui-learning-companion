@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json
-name: Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json
+name: Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json
 hash: 4d172726e2b944a2
 coverage: 0.745283
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:07
 nodes: [MarkdownNote, VAELoader, KSampler, CLIPLoader, VAELoader, KSampler, ConditioningZeroOut, EmptySD3LatentImage, VAELoader, CLIPLoader, EmptyLatentImage, VAEDecode, VAEDecode, VAEDecode, KSampler, UNETLoader, LoraLoaderModelOnly, CLIPTextEncode, ConditioningZeroOut, AddLabel, SaveImage, Seed (rgthree), ModelSamplingAuraFlow, UNETLoader, TextEncodeQwenImage21, AddLabel, BatchImagesNode, CLIPTextEncode, ImagesConcanateToGrid, AddLabel, ResolutionSelector, SaveImage, SaveImage, UNETLoader, CLIPLoader, easy promptList, TextGenerateLTX2Prompt, AILab_QwenVL, TextEncodeQwenImage21, EmptyLatentImage, KSampler, VAEDecode, PrimitiveStringMultiline, SaveImage, LoadImage, PreviewAny, MarkdownNote, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), CLIPLoader, UNETLoader, Label (rgthree), Label (rgthree), KSampler, QwenImage21Cache, CLIPLoader, TextEncodeQwenImage21, VAELoader, CLIPLoader, TextGenerateLTX2Prompt, GetImageSize, EmptyLatentImage, VAEDecode, SaveImage, Image Comparer (rgthree), Label (rgthree), Label (rgthree), UNETLoader, CLIPLoader, VAELoader, ResolutionSelector, CLIPLoader, SaveImage, PrimitiveStringMultiline, Note, easy anythingIndexSwitch, PreviewAny, ComfySwitchNode, PreviewAny, Label (rgthree), LoadImage, LoadImage, LoadImage, UNETLoader, CLIPLoader, VAELoader, PrimitiveStringMultiline, TextEncodeQwenImage21, GetImageSize, EmptyLatentImage, QwenImage21Cache, KSampler, VAEDecode, SaveImage, Image Comparer (rgthree), LoadImage, PrimitiveStringMultiline, BatchImagesNode, ResolutionSelector, LoadImage, LoadImage, PreviewAny, ComfySwitchNode, TextGenerateLTX2Prompt]
 patterns: [text_to_image]
 missing: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), easy anythingIndexSwitch, Seed (rgthree), easy promptList]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102374646296440834.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1文生图+图片编辑-实用版_2102374646296440834.json`
 
 ## 结构
 

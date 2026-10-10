@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json
-name: wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json
+key: wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json
+name: wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json
 hash: eb7cf8e447629faa
 coverage: 0.424658
-learned_at: 2026-10-07 22:53:08
+learned_at: 2026-10-10 20:59:26
 nodes: [GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, VAEEncode, GroundingDinoModelLoader (segment anything), SAMLoader, SetNode, VAEDecode, SetNode, GetNode, GetNode, SaveImage, PreviewImage, ImageCompositeMasked, GetNode, GetNode, KSampler, SetNode, VAEDecode, PreviewImage, VAEDecode, UNETLoader, VAELoader, CLIPLoader, PathchSageAttentionKJ, LoraLoaderModelOnly, SetNode, EmptySD3LatentImage, CLIPTextEncode, SetNode, SetNode, ModelSamplingSD3, WanVideoNAG, ImageUpscaleWithModel, UpscaleModelLoader, GetNode, ImageResizeKJv2, VAEEncode, KSampler, GroundingDinoSAMSegment (segment anything), GrowMask, ImageScaleBy, GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, PreviewImage, KSampler, SetLatentNoiseMask, MaskPreview, GetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, ImageCrop, MaskBoundingBox+, PreviewImage, CLIPTextEncode]
 patterns: []
 missing: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GroundingDinoSAMSegment (segment anything), MaskBoundingBox+]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 0.5000000000000001, "sampler_name": "uni_pc", 
 discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `MaskBoundingBox+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json
+# wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1948383571122749441.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1文生图降维打击——高射炮打蚊子系统四（文生图——放大——修脸完整工作流）_1948383571122749441.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_lotus_dept
 hash: 26391eef92b6eafe
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:49
+learned_at: 2026-10-10 22:48:13
 nodes: [LoadImage, c7d32155-757f-4e5d-a139-7e438da96f2f, SaveImage, MarkdownNote]
 patterns: []
 missing: [c7d32155-757f-4e5d-a139-7e438da96f2f]

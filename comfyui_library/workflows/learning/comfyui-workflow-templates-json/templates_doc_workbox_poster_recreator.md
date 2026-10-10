@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_doc_wo
 hash: ab88e964eb331d21
 official: true
 coverage: 0.571429
-learned_at: 2026-10-07 21:36:37
+learned_at: 2026-10-10 22:49:30
 nodes: [SaveImage, MarkdownNote, ComfySwitchNode, StringConcatenate, PrimitiveStringMultiline, GeminiImage2Node, LoadImage]
 patterns: []
 missing: []

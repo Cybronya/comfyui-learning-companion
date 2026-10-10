@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image-2.1_洗图完美版_2105957638642167810.json
-name: qwen-image-2.1_洗图完美版_2105957638642167810.json
+name: qwen-image-2.1_洗图完美版_2105957638642167810
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1_洗图完美版_2105957638642167810.json
 hash: e0057a02c63a7e97
 coverage: 0.540541
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:12
 nodes: [JoinStrings, easy showAnything, MarkdownNote, ConditioningZeroOut, SaveImage, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, ImageScaleBy, LayerUtility: PurgeVRAM, SeedVR2VideoUpscaler, LayerUtility: ImageReelComposit, ShowText|pysssss, Fast Groups Bypasser (rgthree), LayerUtility: ImageReel, LayerUtility: ImageScaleByAspectRatio V2, Image Comparer (rgthree), LayerUtility: PurgeVRAM, SaveImage, MarkdownNote, LoraLoaderModelOnly, KSampler, VAELoader, UNETLoader, CLIPTextEncode, LayerUtility: PurgeVRAM, ImpactInt, CLIPLoader, MarkdownNote, TextInput_, Qwen3_VQA, LoadImage, VAEDecode, VAEEncode, PreviewImage, easy imageConcat, PreviewImage, PrimitiveNode]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, easy imageConcat]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 # 图片生成/图生图/qwen-image-2.1_洗图完美版_2105957638642167810.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105957638642167810.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image-2.1_洗图完美版_2105957638642167810.json`
 
 ## 结构
 

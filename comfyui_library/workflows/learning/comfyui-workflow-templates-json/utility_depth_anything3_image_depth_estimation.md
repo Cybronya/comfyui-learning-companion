@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_depth_an
 hash: 4219037c4eebc338
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:36:44
+learned_at: 2026-10-10 22:49:42
 nodes: [PreviewImage, 605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3, ImageCompare, MarkdownNote, MarkdownNote, LoadImage]
 patterns: []
 missing: [605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3]
@@ -39,7 +39,7 @@ discoveries: [次要节点 `605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3` 知识库中�
 
 **缺卡**（1）：`605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3`
 
-**用到的条目**：LoadImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+**用到的条目**：LoadImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、Compare、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
 
 ## 学习发现
 

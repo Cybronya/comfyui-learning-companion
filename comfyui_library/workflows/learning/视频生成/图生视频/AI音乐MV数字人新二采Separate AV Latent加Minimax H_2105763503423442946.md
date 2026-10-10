@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H_2105763503423442946.json
 hash: 131d6158ae15200e
-coverage: 0.876712
-learned_at: 2026-10-07 00:31:06
+coverage: 0.890411
+learned_at: 2026-10-10 22:51:49
 nodes: [MiniMaxChunkFeedForward, CLIPLoader, VAELoader, VAELoader, VAEDecode, MiniMaxLowVRAMAttention, Reroute, SoundFlow_GetLength, ComfyMathExpression, ComfyNumberConvert, PreviewAny, LTXVSeparateAVLatent, ConditioningZeroOut, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, LoadImage, KSamplerSelect, TrimAudioDuration, LoadAudio, PrimitiveFloat, PrimitiveFloat, ResolutionSelector, LoadImage, Textbox, VHS_VideoCombine, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SelfLiftAvatarH3Sampler, BasicScheduler, LTXVSeparateAVLatent, LTXVAudioVAEEncode, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
-missing: [ComfyNumberConvert]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `ComfyNumberConvert` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H_2105763503423442946.json
@@ -115,11 +115,9 @@ discoveries: [次要节点 `ComfyNumberConvert` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **88%**（64/73）
+覆盖率 **89%**（65/73）
 
-**有卡**：`MiniMaxChunkFeedForward`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`MiniMaxLowVRAMAttention`、`SoundFlow_GetLength`、`ComfyMathExpression`、`LTXVSeparateAVLatent`、`ConditioningZeroOut`、`SolidMask`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`LoadImage`、`KSamplerSelect`、`TrimAudioDuration`、`LoadAudio`、`ResolutionSelector`、`Textbox`、`VHS_VideoCombine`、`MiniMaxH3ReferenceToVideo`、`ModelAttentionBackend`、`UNETLoader`、`LoraLoaderModelOnly`、`SelfLiftAvatarH3Sampler`、`BasicScheduler`、`LTXVAudioVAEEncode`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
-
-**缺卡**（1）：`ComfyNumberConvert`
+**有卡**：`MiniMaxChunkFeedForward`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`MiniMaxLowVRAMAttention`、`SoundFlow_GetLength`、`ComfyMathExpression`、`ComfyNumberConvert`、`LTXVSeparateAVLatent`、`ConditioningZeroOut`、`SolidMask`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`LoadImage`、`KSamplerSelect`、`TrimAudioDuration`、`LoadAudio`、`ResolutionSelector`、`Textbox`、`VHS_VideoCombine`、`MiniMaxH3ReferenceToVideo`、`ModelAttentionBackend`、`UNETLoader`、`LoraLoaderModelOnly`、`SelfLiftAvatarH3Sampler`、`BasicScheduler`、`LTXVAudioVAEEncode`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
@@ -130,5 +128,4 @@ discoveries: [次要节点 `ComfyNumberConvert` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `ComfyNumberConvert` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/qwen image 2.1文生图_2094967170106216450.json
+key: qwen image 2.1文生图_2094967170106216450.json
 name: qwen image 2.1文生图_2094967170106216450
 type: Unknown Workflow
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen image 2.1文生图_2094967170106216450.json
 hash: 938339cc5b0c7b9a
 coverage: 0.785714
-learned_at: 2026-10-07 02:19:15
+learned_at: 2026-10-10 20:59:23
 nodes: [VAEDecode, VAELoader, EmptyLatentImage, UNETLoader, ResolutionSelector, CLIPLoader, CLIPLoader, SaveImage, TextEncodeQwenImage21, PrimitiveStringMultiline, PrimitiveStringMultiline, TextGenerateLTX2Prompt, KSampler, easy showAnything]
 patterns: []
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 7, "steps": 40, "width": 1024}
 ---
 
-# 图片生成/文生图/qwen image 2.1文生图_2094967170106216450.json
+# qwen image 2.1文生图_2094967170106216450.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen image 2.1文生图_2094967170106216450.json`
 

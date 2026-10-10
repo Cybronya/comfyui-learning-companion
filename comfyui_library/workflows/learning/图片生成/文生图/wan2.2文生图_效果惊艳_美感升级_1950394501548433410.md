@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json
-name: wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json
+key: wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json
+name: wan2.2文生图_效果惊艳_美感升级_1950394501548433410
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json
 hash: 60c354170c1d0300
 coverage: 0.679245
-learned_at: 2026-10-07 22:58:23
+learned_at: 2026-10-10 20:59:27
 nodes: [VAELoader, CLIPLoader, Anything Everywhere3, TTP_Image_Tile_Batch, easy imageBatchToImageList, ImageScaleToTotalPixels, easy cleanGpuUsed, VAEEncode, easy cleanGpuUsed, SetNode, GetNode, TTP_Image_Assy, PreviewImage, ImageUpscaleWithModel, UpscaleModelLoader, SaveImage, ModelSamplingSD3, UNETLoader, CLIPLoader, VAELoader, UNETLoader, CLIPTextEncode, SDXLEmptyLatentSizePicker+, VAEDecode, Image Comparer (rgthree), CR Text Concatenate, RH_Prompter, ShowText|pysssss, KSampler, KSampler, easy seed, CR Text, RH_Translator, UNETLoader, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ImageListToImageBatch, VAEDecode, SetNode, GetNode, TTP_Tile_image_size, KSampler, PreviewImage, easy cleanGpuUsed]
 patterns: []
 missing: [CR Text, CR Text Concatenate, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy imageBatchToImageList, SDXLEmptyLatentSizePicker+, easy seed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 0, "cfg": 1, "denoise": 0.06000000000000001, "height"
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 核心节点 `SDXLEmptyLatentSizePicker+` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json
+# wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950394501548433410.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2文生图_效果惊艳_美感升级_1950394501548433410.json`
 
 ## 结构
 

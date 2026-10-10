@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
-name: Flex.2-preview文生图演示_1916390487366762498.json
+key: Flex.2-preview文生图演示_1916390487366762498.json
+name: Flex.2-preview文生图演示_1916390487366762498
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
 hash: 857a07bacf4fa0d7
 coverage: 0.9
-learned_at: 2026-10-07 22:07:48
+learned_at: 2026-10-10 20:58:33
 nodes: [KSampler, VAEDecode, SaveImage, VAELoader, UNETLoader, DualCLIPLoader, Flex2Conditioner, CLIPTextEncode, CLIPTextEncode, CR SDXL Aspect Ratio]
 patterns: []
 missing: [CR SDXL Aspect Ratio]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta"
 discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
+# Flex.2-preview文生图演示_1916390487366762498.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1916390487366762498.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json`
 
 ## 结构
 

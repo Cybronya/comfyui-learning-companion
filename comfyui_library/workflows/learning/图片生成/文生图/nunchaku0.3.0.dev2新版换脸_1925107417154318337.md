@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
-name: nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
+key: nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
+name: nunchaku0.3.0.dev2新版换脸_1925107417154318337
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
 hash: 1844f9e457f24602
 coverage: 0.961538
-learned_at: 2026-10-07 22:22:54
+learned_at: 2026-10-10 20:59:23
 nodes: [VAELoader, EmptySD3LatentImage, NunchakuPulidApply, SetUnionControlNetType, AIO_Preprocessor, BasicGuider, RandomNoise, KSamplerSelect, VAEDecode, CLIPTextEncode, ModelSamplingFlux, FluxGuidance, ConditioningZeroOut, NunchakuPulidLoader, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, ControlNetLoader, ControlNetApplyAdvanced, LoadImage, SaveImage, ImageConcatMulti, BasicScheduler, PreviewImage, NunchakuFluxLoraLoader, LoadImage, SamplerCustomAdvanced]
 patterns: []
 missing: []
 parameters: {"controlnet_strength": 0.6000000000000001}
 ---
 
-# 图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
+# nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1925107417154318337.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json`
 
 ## 结构
 

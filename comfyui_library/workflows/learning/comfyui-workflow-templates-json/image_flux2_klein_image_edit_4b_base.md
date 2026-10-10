@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2_klei
 hash: 5c0a65f357c32ceb
 official: true
 coverage: 0.571429
-learned_at: 2026-10-07 21:35:40
+learned_at: 2026-10-10 22:47:36
 nodes: [SaveImage, LoadImage, SaveImage, LoadImage, MarkdownNote, 7b34ab90-36f9-45ba-a665-71d418f0df18, 65c22b29-59aa-496b-89c6-55a603658670]
 patterns: []
 missing: [65c22b29-59aa-496b-89c6-55a603658670, 7b34ab90-36f9-45ba-a665-71d418f0df18]

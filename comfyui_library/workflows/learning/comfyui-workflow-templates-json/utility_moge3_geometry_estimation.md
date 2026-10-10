@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_moge3_ge
 hash: fd7d49b2c7efde57
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:36:47
+learned_at: 2026-10-10 22:49:47
 nodes: [LoadImage, PreviewImage, 5b702329-a5ec-4a7d-b000-213d0c04bbbd, MarkdownNote]
 patterns: []
 missing: [5b702329-a5ec-4a7d-b000-213d0c04bbbd]

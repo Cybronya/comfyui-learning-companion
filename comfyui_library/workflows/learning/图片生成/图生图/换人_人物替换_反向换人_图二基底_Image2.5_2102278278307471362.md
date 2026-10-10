@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/换人_人物替换_反向换人_图二基底_Image2.5_2102278278307471362.json
-name: 换人_人物替换_反向换人_图二基底_Image2.5_2102278278307471362.json
+name: 换人_人物替换_反向换人_图二基底_Image2.5_2102278278307471362
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/换人_人物替换_反向换人_图二基底_Image2.5_2102278278307471362.json
 hash: 99785c93ad72a1fe
 coverage: 0.6
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:17
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/图生图/换人_人物替换_反向换人_图二基底_Image2.5_2102278278307471362.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102278278307471362.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/换人_人物替换_反向换人_图二基底_Image2.5_2102278278307471362.json`
 
 ## 结构
 

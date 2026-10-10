@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
-name: Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
+key: Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
+name: Qwen3反推 _ Wan2.2 文生图_1962523964402712577
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
 hash: 0843f43be4527d7c
 coverage: 0.714286
-learned_at: 2026-10-07 23:53:58
+learned_at: 2026-10-10 20:59:07
 nodes: [UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, VAEDecode, SaveImage, SaveImage, SaveImage, VAEDecode, VAEDecode, VAEDecode, KSampler, KSampler, KSampler, KSampler, LoraLoaderModelOnly, SaveImage, Text Concatenate (JPS), Anything Everywhere, CLIPLoader, VAELoader, EmptyLatentImage, Anything Everywhere3, Mute / Bypass Repeater (rgthree), JjkText, Reroute, CLIPTextEncode, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), ShowText|pysssss, RH_Captioner_Pro, CLIPTextEncode, Fast Bypasser (rgthree), LoadImage]
 patterns: [text_to_image]
 missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Text Concatenate (JPS)]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
+# Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1962523964402712577.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json`
 
 ## 结构
 

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedance2.0 mini图生视频_2070424978759180289.json
 hash: 8e7522a9a85b8cc6
 coverage: 0.75
-learned_at: 2026-10-07 02:31:02
+learned_at: 2026-10-10 23:16:06
 nodes: [RH_RhartVideoSparkvideo20MiniImageToVideo, LoadImage, CR Text, SaveVideo]
 patterns: []
 missing: [CR Text]

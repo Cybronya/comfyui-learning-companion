@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan21_scai
 hash: 2048278312063ac8
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:37:12
+learned_at: 2026-10-10 22:50:34
 nodes: [LoadVideo, SaveVideo, LoadImage, CreateVideo, GetVideoComponents, GetImageSize, ComfyMathExpression, PreviewAny, BatchImagesNode, CreateVideo, SaveVideo, MarkdownNote, d1ab1953-6167-4827-b44e-b4108cea5702, 56bf150b-bd14-4513-8e03-335e1972ba62, MarkdownNote]
 patterns: []
 missing: [56bf150b-bd14-4513-8e03-335e1972ba62, d1ab1953-6167-4827-b44e-b4108cea5702]

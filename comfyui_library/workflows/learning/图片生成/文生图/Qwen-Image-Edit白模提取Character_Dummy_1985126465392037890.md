@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
-name: Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
+key: Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
+name: Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
 hash: 31bcfc723c6ed3b9
 coverage: 0.782609
-learned_at: 2026-10-09 20:13:10
+learned_at: 2026-10-10 20:59:01
 nodes: [CFGNorm, KSampler, EmptySD3LatentImage, MarkdownNote, MarkdownNote, CLIPLoader, ImageConcatMulti, VAEDecode, ModelSamplingAuraFlow, TextEncodeQwenImageEditPlus, VAEEncode, ImageScaleToTotalPixels, MarkdownNote, MarkdownNote, SaveImage, SaveImage, TextEncodeQwenImageEditPlus, MarkdownNote, VAELoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, LoadImage]
 patterns: [image_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
+# Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1985126465392037890.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json`
 
 ## 结构
 

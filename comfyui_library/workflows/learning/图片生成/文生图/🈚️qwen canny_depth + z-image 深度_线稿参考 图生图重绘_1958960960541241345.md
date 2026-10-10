@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
-name: 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
+key: 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
+name: 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
 hash: d30b5fab3081710b
 coverage: 0.546512
-learned_at: 2026-10-07 23:31:46
+learned_at: 2026-10-10 21:00:01
 nodes: [VAELoader, SetNode, SetNode, AIO_Preprocessor, AIO_Preprocessor, LayerUtility: ImageScaleByAspectRatio V2, RepeatLatentBatch, ModelPatchLoader, ModelPatchLoader, GetNode, RH_Translator, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, GetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, PreviewImage, RH_LLMAPI_NODE, RH_LLMAPI_NODE, easy imageRemBg, ShowText|pysssss, CLIPTextEncode, GetNode, SetNode, LoadImage, ImpactSwitch, ImpactSwitch, LoadImage, CLIPTextEncode, ConditioningZeroOut, VAEDecode, CLIPLoader, VAELoader, VAEEncode, RebatchLatents, UNETLoader, LayerUtility: ImageScaleByAspectRatio V2, RepeatLatentBatch, KSampler, SetNode, GetNode, LoraLoaderModelOnly, SetNode, GetNode, SetNode, JWInteger, SetNode, easy seed, SetNode, JWInteger, SetNode, GetNode, GetNode, GetNode, Note, RebatchLatents, QwenImageDiffsynthControlnet, GetNode, EmptyLatentImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGNorm, ModelSamplingAuraFlow, UNETLoader, ImpactSwitch, easy cleanGpuUsed, easy cleanGpuUsed, VAEDecode, GetNode, GetNode, Anything Everywhere3, CLIPLoader, CFGZeroStar, ModelPassThrough, CLIPTextEncode, ConditioningZeroOut, LoraLoaderModelOnly, GetNode, Int, PreviewImage, SaveImage, KSamplerSelect, DetailDaemonSamplerNode, BasicScheduler, SamplerCustom]
 patterns: [text_to_image, image_to_image]
 missing: [CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, easy cleanGpuUsed, easy cleanGpuUsed, easy imageRemBg, easy seed]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.3500000000000001, "height":
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
+# 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1958960960541241345.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json`
 
 ## 结构
 

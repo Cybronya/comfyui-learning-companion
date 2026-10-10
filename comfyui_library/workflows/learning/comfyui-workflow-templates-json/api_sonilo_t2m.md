@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_sonilo_t2m.j
 hash: 44c46a30a0a0083d
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:52
+learned_at: 2026-10-10 22:46:11
 nodes: [SoniloTextToMusic, SaveAudioAdvanced]
 patterns: []
 missing: []

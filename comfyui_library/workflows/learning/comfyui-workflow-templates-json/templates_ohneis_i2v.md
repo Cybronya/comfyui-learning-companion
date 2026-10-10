@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_ohneis
 hash: f59f197414287a9a
 official: true
 coverage: 0.833333
-learned_at: 2026-10-07 21:36:39
+learned_at: 2026-10-10 22:49:33
 nodes: [f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1, SaveImage, GeminiImage2Node, KlingImageToVideoWithAudio, SaveVideo, SaveImage]
 patterns: []
 missing: [f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1]

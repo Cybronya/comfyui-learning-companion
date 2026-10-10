@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_sam3d_bo
 hash: 4b989539c6e4b385
 official: true
 coverage: 0.76
-learned_at: 2026-10-07 21:36:50
+learned_at: 2026-10-10 22:49:54
 nodes: [CLIPTextEncode, SAM3_VideoTrack, CheckpointLoaderSimple, RTDETR_detect, SAM3DBody_FaceExpression, SAM3DBody_Predict, SAM3DBody_Smooth, SAM3DBody_Loader, MoGeGeometryToFOV, MoGeInference, LoadMoGeModel, BuildPoseFile, CreateVideo, SaveVideo, LoadVideo, Video Slice, GetVideoComponents, Note, Note, Note, Note, UNETLoader, SAM3DBody_Render, MarkdownNote, Save3DAdvanced]
 patterns: []
 missing: [Video Slice]

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/CHIEFAI-千问IMAGE2.1换头工作流_2104392510440304641.json
-name: CHIEFAI-千问IMAGE2.1换头工作流_2104392510440304641.json
+name: CHIEFAI-千问IMAGE2.1换头工作流_2104392510440304641
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/CHIEFAI-千问IMAGE2.1换头工作流_2104392510440304641.json
 hash: 23911ab6b611edc2
 coverage: 0.833333
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:02
 nodes: [LoraLoaderModelOnly, VAEDecode, UNETLoader, KSampler, SaveImage, LoadImage, VAELoader, CLIPLoader, PrimitiveStringMultiline, TextEncodeQwenImage21, LoadImage, Get resolution [Crystools]]
 patterns: []
 missing: [Get resolution [Crystools]]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Get resolution [Crystools]` 仅有 Resolution 的通
 
 # 图片生成/图生图/CHIEFAI-千问IMAGE2.1换头工作流_2104392510440304641.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2104392510440304641.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/CHIEFAI-千问IMAGE2.1换头工作流_2104392510440304641.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bytedance_se
 hash: 4f773172795ce0a9
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:33:26
+learned_at: 2026-10-10 22:43:30
 nodes: [ByteDanceSeedAudio, SaveAudioAdvanced, MarkdownNote]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`ByteDanceSeedAudio`、`SaveAudioAdvanced`
 
-**用到的条目**：ByteDanceSeedAudio、SaveAudioAdvanced、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、sampler_name 调整经验、steps 调整经验、cfg 调整经验
+**用到的条目**：ByteDanceSeedAudio、SaveAudioAdvanced、sd15-t2i-basic、sd15-t2i-lora、Seed、SaveAudio、sampler_name 调整经验、steps 调整经验

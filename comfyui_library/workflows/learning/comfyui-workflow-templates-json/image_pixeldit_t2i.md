@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_pixeldit_t
 hash: ef4a37f4125b2acf
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:35:55
+learned_at: 2026-10-10 22:48:24
 nodes: [MarkdownNote, SaveImage, ef85a5af-0944-4f72-bffd-7d6d9941f33c, ResolutionSelector, MarkdownNote]
 patterns: []
 missing: [ef85a5af-0944-4f72-bffd-7d6d9941f33c]

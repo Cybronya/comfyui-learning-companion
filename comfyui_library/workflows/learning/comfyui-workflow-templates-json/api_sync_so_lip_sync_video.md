@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_sync_so_lip_
 hash: 33cf05c95888f6d2
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:52
+learned_at: 2026-10-10 22:46:13
 nodes: [SyncLipSyncNode, LoadVideo, LoadAudio, RecordAudio, SaveVideo]
 patterns: []
 missing: []

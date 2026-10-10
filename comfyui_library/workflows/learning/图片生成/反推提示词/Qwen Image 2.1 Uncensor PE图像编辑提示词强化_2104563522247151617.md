@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/Qwen Image 2.1 Uncensor PE图像编辑提示词强化_2104563522247151617.json
 hash: 3125302d1230258a
 coverage: 0.823529
-learned_at: 2026-10-07 02:40:58
+learned_at: 2026-10-10 20:47:59
 nodes: [PreviewAny, PreviewAny, LoadImage, SaveImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, QwenPERewriteT8, QwenPECanvasT8, PreviewAny, ShellAgentPluginOutputText]
 patterns: []
 missing: []

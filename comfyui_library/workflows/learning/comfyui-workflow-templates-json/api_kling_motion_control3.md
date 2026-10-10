@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_motion
 hash: 0d978dbb74ff24f3
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:00
+learned_at: 2026-10-10 22:44:36
 nodes: [LoadImage, LoadVideo, KlingMotionControl, SaveVideo]
 patterns: []
 missing: []

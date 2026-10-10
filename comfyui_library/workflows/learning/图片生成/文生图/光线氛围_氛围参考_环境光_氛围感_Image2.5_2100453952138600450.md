@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450.json
+key: 光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450.json
 name: 光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450.json
 hash: 9633ee0754f6c8f4
 coverage: 0.6
-learned_at: 2026-10-07 03:05:28
+learned_at: 2026-10-10 20:59:35
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450.json
+# 光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/光线氛围_氛围参考_环境光_氛围感_Image2.5_2100453952138600450.json`
 

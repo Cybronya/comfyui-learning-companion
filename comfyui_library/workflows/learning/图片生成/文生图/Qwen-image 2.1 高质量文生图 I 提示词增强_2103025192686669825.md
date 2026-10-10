@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825.json
+key: Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825.json
 name: Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825.json
 hash: 84a5af7742aa189e
 coverage: 0.533333
-learned_at: 2026-10-07 02:24:28
+learned_at: 2026-10-10 20:59:05
 nodes: [SeedVR2PostProcessing, KSampler, VAEEncodeTiled, SeedVR2Preprocess, SeedVR2Conditioning, QwenImage21Cache, easy cleanGpuUsed, LayerUtility: ImageScaleByAspectRatio V2, CLIPLoader, GetNode, SetNode, VAELoader, SetNode, GetNode, KSampler, Note, Label (rgthree), SetNode, UNETLoader, VAELoader, UNETLoader, VAEDecode, GetNode, VAEDecodeTiled, SaveImage, Note, Image Comparer (rgthree), TextEncodeQwenImage21, llama_cpp_parameters, llama_cpp_instruct_adv, String Literal, easy showAnything, KepStringLiteral, EmptyLatentImage, String Literal, String Literal, easy seed, Fast Groups Bypasser (rgthree), INTConstant, Fast Groups Bypasser (rgthree), ResolutionSelector, llama_cpp_model_loader, Label (rgthree), SaveImage, PrimitiveStringMultiline]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, String Literal, String Literal, String Literal, easy cleanGpuUsed, easy seed]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825.json
+# Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image 2.1 高质量文生图 I 提示词增强_2103025192686669825.json`
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json
-name: Seedance2.0 mini图生视频_2070424978759180289.json
+name: Seedance2.0 mini图生视频_2070424978759180289
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json
 hash: 574e5383d0c36b66
 coverage: 0.75
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:10
 nodes: [RH_RhartVideoSparkvideo20MiniImageToVideo, LoadImage, CR Text, SaveVideo]
 patterns: []
 missing: [CR Text]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2070424978759180289.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Seedance2.0 mini图生视频_2070424978759180289.json`
 
 ## 结构
 

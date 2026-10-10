@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_luma_t2v.jso
 hash: 681de365515c9310
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:34:10
+learned_at: 2026-10-10 22:44:54
 nodes: [LumaConceptsNode, LumaConceptsNode, SaveVideo, LumaVideoNode, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

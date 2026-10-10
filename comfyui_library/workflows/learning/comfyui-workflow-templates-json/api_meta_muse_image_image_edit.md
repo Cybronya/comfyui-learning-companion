@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_meta_muse_im
 hash: a2be10963d408937
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:34:16
+learned_at: 2026-10-10 22:45:05
 nodes: [SaveImageAdvanced, MetaMuseImageEditApi, LoadImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []

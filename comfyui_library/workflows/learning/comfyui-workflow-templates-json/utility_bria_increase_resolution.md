@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_bria_inc
 hash: 6dd5325a36aede03
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:36:43
+learned_at: 2026-10-10 22:49:40
 nodes: [BriaIncreaseResolution, LoadImage, SaveImageAdvanced, ImageCompare]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`BriaIncreaseResolution`、`LoadImage`、`SaveImageAdvanced`、`ImageCompare`
 
-**用到的条目**：LoadImage、BriaIncreaseResolution、SaveImageAdvanced、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、EmptyLatentImage
+**用到的条目**：LoadImage、BriaIncreaseResolution、SaveImageAdvanced、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Compare

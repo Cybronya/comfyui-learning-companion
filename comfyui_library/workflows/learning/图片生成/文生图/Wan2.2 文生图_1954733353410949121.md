@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2 文生图_1954733353410949121.json
-name: Wan2.2 文生图_1954733353410949121.json
+key: Wan2.2 文生图_1954733353410949121.json
+name: Wan2.2 文生图_1954733353410949121
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 文生图_1954733353410949121.json
 hash: cd1c9e6026a868cc
 coverage: 0.875
-learned_at: 2026-10-07 23:18:22
+learned_at: 2026-10-10 20:59:13
 nodes: [PrimitiveInt, PrimitiveInt, VAEDecode, EmptyHunyuanLatentVideo, VAELoader, CFGZeroStarAndInit, UNETLoader, CLIPLoader, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, LoraLoader, LoraLoader, LoraLoader, SaveImage, KSampler]
 patterns: [lora]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Wan2.2-Lightning_T2V-v1.1-A
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Wan2.2 文生图_1954733353410949121.json
+# Wan2.2 文生图_1954733353410949121.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1954733353410949121.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 文生图_1954733353410949121.json`
 
 ## 结构
 

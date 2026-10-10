@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json
-name: Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json
+name: Anima-aesthetic-v1.1-局部重绘_2078101582297788417
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json
 hash: 59b8db70dac81c7f
 coverage: 0.882353
-learned_at: 2026-10-09 22:36:21
+learned_at: 2026-10-10 20:48:02
 nodes: [UNETLoader, MaskFillHoles, LayerUtility: ImageScaleByAspectRatio V2, KSampler, VAEDecode, PreviewImage, SaveImage, LoadImage, CLIPLoader, VAELoader, VAEEncode, SetLatentNoiseMask, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, ModelPatchLoader, AnimaLLLiteApply]
 patterns: [image_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2078101582297788417.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json`
 
 ## 结构
 

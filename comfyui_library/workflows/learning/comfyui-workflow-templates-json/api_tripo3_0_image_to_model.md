@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_tripo3_0_ima
 hash: a9ab6138e142dce5
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:56
+learned_at: 2026-10-10 22:46:21
 nodes: [Preview3D, TripoImageToModelNode, SaveGLB, TripoRigNode, TripoRetargetNode, TripoConversionNode, TripoTextureNode, LoadImage, LoadImage, LoadImage, BatchImagesNode]
 patterns: []
 missing: []

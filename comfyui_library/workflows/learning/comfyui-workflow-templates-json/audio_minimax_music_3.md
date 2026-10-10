@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_minimax_mu
 hash: ecee30e327205f5c
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:35:18
+learned_at: 2026-10-10 22:46:59
 nodes: [SaveAudioAdvanced, ac99f841-a3de-4329-9564-953b81cf9e16, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [ac99f841-a3de-4329-9564-953b81cf9e16]

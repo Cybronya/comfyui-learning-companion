@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/LTX2.5目前最好的商业级数字人_2091907655366434818.json
-name: LTX2.5目前最好的商业级数字人_2091907655366434818.json
+name: LTX2.5目前最好的商业级数字人_2091907655366434818
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/LTX2.5目前最好的商业级数字人_2091907655366434818.json
 hash: 519f62539f8214c0
 coverage: 0.918919
-learned_at: 2026-10-09 22:36:23
+learned_at: 2026-10-10 20:48:04
 nodes: [LTXVLatentUpsampler, LTXVDualCFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVConditioning, LTXVDualCFGGuider, LTXVConcatAVLatent, RandomNoise, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVSeparateAVLatent, LTXDirectorCropGuides, LTXDirectorCropGuides, LTXDirectorGuide, SaveVideo, LTX2_NAG, CreateVideo, VAEDecodeTiled, LatentUpscaleModelLoader, LTXDirectorGuide, LTX2_NAG, VAELoader, VAELoader, RandomNoise, MarkdownNote, CLIPTextEncode, 孤海注释, 孤海注释, CLIPLoader, UNETLoader, LoadVideoUI, LTXDirector]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/图生图/LTX2.5目前最好的商业级数字人_2091907655366434818.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2091907655366434818.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/LTX2.5目前最好的商业级数字人_2091907655366434818.json`
 
 ## 结构
 

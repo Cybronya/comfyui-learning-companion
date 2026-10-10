@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_v3_t2i
 hash: 68a0f51791eb787c
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:05
+learned_at: 2026-10-10 22:44:44
 nodes: [KlingImageGenerationNode, SaveImage]
 patterns: []
 missing: []

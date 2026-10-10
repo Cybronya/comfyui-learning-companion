@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json
-name: 全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json
+name: 全能图片G-Image-2.5图像编辑工作流_2098372807368470529
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json
 hash: 4b5f1654f027a473
 coverage: 0.857143
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:15
 nodes: [LoadImage, LoadImage, SaveImage, Note, PrimitiveStringMultiline, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, TextEncodeQwenImageEditPlus, ImageScaleToTotalPixels, VAEEncode, KSampler, VAEDecode]
 patterns: [image_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 
 # 图片生成/图生图/全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2098372807368470529.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/全能图片G-Image-2.5图像编辑工作流_2098372807368470529.json`
 
 ## 结构
 

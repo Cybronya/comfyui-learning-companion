@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1故事分镜三模式｜九宫四宫随心切｜参考图直接生成分镜_2102591631139622913.json
-name: Qwen Image 2.1故事分镜三模式｜九宫四宫随心切｜参考图直接生成分镜_2102591631139622913.json
+name: Qwen Image 2.1故事分镜三模式｜九宫四宫随心切｜参考图直接生成分镜_2102591631139622913
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1故事分镜三模式｜九宫四宫随心切｜参考图直接生成分镜_2102591631139622913.json
 hash: 12c36c88cf6849c8
 coverage: 0.658824
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:07
 nodes: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveStringMultiline, PrimitiveStringMultiline, ComfySwitchNode, TextEncodeQwenImage21, PrimitiveInt, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, EmptyLatentImage, easy seed, GetNode, UNETLoader, QwenImage21Cache, CLIPLoader, VAELoader, SetNode, SetNode, SetNode, SaveImage, StringConcatenate, PrimitiveBoolean, ComfySwitchNode, PrimitiveStringMultiline, PrimitiveInt, PrimitiveInt, KSampler, VAEDecode, GetNode, GetNode, ComfySwitchNode, RHLLMChatNode, PreviewAny, PrimitiveStringMultiline, LoadImage, LoadImage, LoadImage, PrimitiveBoolean, PrimitiveBoolean, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, easy seed]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen Image 2.1故事分镜三模式｜九宫四宫随心切｜参考图直接生成分镜_2102591631139622913.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102591631139622913.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1故事分镜三模式｜九宫四宫随心切｜参考图直接生成分镜_2102591631139622913.json`
 
 ## 结构
 

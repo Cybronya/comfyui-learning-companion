@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/basic_switch_nod
 hash: 2e07f9d49517e675
 official: true
 coverage: 0.210526
-learned_at: 2026-10-07 21:35:22
+learned_at: 2026-10-10 22:47:06
 nodes: [LoraLoaderModelOnly, SaveImage, UNETLoader, ComfySwitchNode, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveBoolean, ComfySwitchNode, MarkdownNote, MarkdownNote, 0f79b7f9-d214-4587-b475-bc429519b976, PrimitiveString, PrimitiveString, PrimitiveString, ComfySwitchNode, PreviewAny, ComfySwitchNode, PrimitiveString, PreviewAny]
 patterns: []
 missing: [0f79b7f9-d214-4587-b475-bc429519b976]

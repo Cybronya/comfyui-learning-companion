@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/ltxv_text_to_vid
 hash: 8bbd5219ec8351fc
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:36:15
+learned_at: 2026-10-10 22:48:49
 nodes: [CLIPLoader, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, Note, EmptyLTXVLatentVideo, SamplerCustom, KSamplerSelect, LTXVScheduler, LTXVConditioning, VAEDecode, CreateVideo, SaveVideo, MarkdownNote]
 patterns: []
 missing: []

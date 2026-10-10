@@ -1,22 +1,22 @@
 ---
-key: 图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json
-name: 透明背景抠图！Qwen2.1_2102200839111790594.json
+key: 透明背景抠图！Qwen2.1_2102200839111790594.json
+name: 透明背景抠图！Qwen2.1_2102200839111790594
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json
 hash: b7d8f3b98ec04c26
 coverage: 0.522727
-learned_at: 2026-10-09 22:27:09
+learned_at: 2026-10-10 21:23:07
 nodes: [CLIPLoader, VAELoader, EmptyLatentImage, QwenImage21Cache, SetNode, SetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, LoadImage, SetNode, LoadImage, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPLoader, FastGroupsBypassSwitch, ResolutionSelector, Fast Groups Bypasser (rgthree), UNETLoader, easy showAnything, KSampler, TextEncodeQwenImage21, BatchImagesNode, TextCombinerTwo, JjkText, SaveImage, LoadImage, LoadImage, JjkText, GH_ImageVideoComparer, VAEDecode, PreviewImage, GetNode]
 patterns: []
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 999, "steps": 45, "width": 1024}
 ---
 
-# 图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json
+# 透明背景抠图！Qwen2.1_2102200839111790594.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102200839111790594.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json`
 
 ## 结构
 

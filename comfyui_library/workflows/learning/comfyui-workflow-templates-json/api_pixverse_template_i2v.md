@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_pixverse_tem
 hash: 79f4541e836be405
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:34:33
+learned_at: 2026-10-10 22:45:37
 nodes: [PixverseImageToVideoNode, PixverseTemplateNode, LoadImage, SaveVideo, MarkdownNote]
 patterns: []
 missing: []

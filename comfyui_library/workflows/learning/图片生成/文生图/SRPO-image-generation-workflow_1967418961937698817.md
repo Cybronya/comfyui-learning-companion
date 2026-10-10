@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
-name: SRPO-image-generation-workflow_1967418961937698817.json
+key: SRPO-image-generation-workflow_1967418961937698817.json
+name: SRPO-image-generation-workflow_1967418961937698817
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
 hash: cb3ad7d830ae66e7
 coverage: 0.842105
-learned_at: 2026-10-08 00:02:34
+learned_at: 2026-10-10 20:59:11
 nodes: [PrimitiveNode, PrimitiveNode, SeedVR2, VAEDecode, SaveImage, BasicGuider, UNETLoader, DualCLIPLoader, VAELoader, FluxGuidance, SamplerCustomAdvanced, EmptySD3LatentImage, RandomNoise, KSamplerSelect, BasicScheduler, ModelSamplingFlux, SaveImage, LayerUtility: PurgeVRAM V2, CLIPTextEncode]
 patterns: []
 missing: [LayerUtility: PurgeVRAM V2]
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
+# SRPO-image-generation-workflow_1967418961937698817.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1967418961937698817.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json`
 
 ## 结构
 

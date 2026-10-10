@@ -1,13 +1,13 @@
 ---
 key: 图片生成/文生图/[🛫书墨]wan2.2文生图+ttp2倍_1952329723617718274.json
-name: [🛫书墨]wan2.2文生图+ttp2倍_1952329723617718274.json
+name: [🛫书墨]wan2.2文生图+ttp2倍_1952329723617718274
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/[🛫书墨]wan2.2文生图+ttp2倍_1952329723617718274.json
 hash: 51e306523b027489
 coverage: 0.868421
-learned_at: 2026-10-07 23:04:41
+learned_at: 2026-10-10 23:16:22
 nodes: [MarkdownNote, EmptyHunyuanLatentVideo, WanVideoNAG, RandomNoise, CFGGuider, BasicScheduler, SplitSigmas, SamplerCustomAdvanced, SamplerCustomAdvanced, UNETLoader, CLIPLoader, LoraLoaderModelOnly, VAELoader, CFGGuider, ModelSamplingSD3, RandomNoise, ImageListToImageBatch, VAEEncode, ImpactImageBatchToImageList, TTP_Image_Tile_Batch, TTP_Tile_image_size, UpscaleModelLoader, VAEDecode, ImageUpscaleWithModel, DetailDaemonSamplerNode, KSamplerSelect, DisableNoise, CLIPTextEncode, VAEDecode, Any Switch (rgthree), CLIPTextEncode, PrimitiveStringMultiline, PreviewImage, SaveImage, SamplerCustomAdvanced, TTP_Image_Assy, BasicScheduler, Fast Groups Muter (rgthree)]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/文生图/[🛫书墨]wan2.2文生图+ttp2倍_1952329723617718274.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952329723617718274.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/[🛫书墨]wan2.2文生图+ttp2倍_1952329723617718274.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-Image-2.1 一键扩图_2102372569633607682.json
-name: Qwen-Image-2.1 一键扩图_2102372569633607682.json
+name: Qwen-Image-2.1 一键扩图_2102372569633607682
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-Image-2.1 一键扩图_2102372569633607682.json
 hash: 28fc287377719abd
 coverage: 0.875
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:09
 nodes: [KSampler, QwenImage21Cache, TextEncodeQwenImage21, SaveImage, UNETLoader, CLIPLoader, CLIPLoader, VAELoader, EmptyLatentImage, TextGenerateLTX2Prompt, ResolutionSelector, JjkText, LoadImage, BatchImagesNode, ComfySwitchNode, VAEDecode]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 # 图片生成/图生图/Qwen-Image-2.1 一键扩图_2102372569633607682.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102372569633607682.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-Image-2.1 一键扩图_2102372569633607682.json`
 
 ## 结构
 

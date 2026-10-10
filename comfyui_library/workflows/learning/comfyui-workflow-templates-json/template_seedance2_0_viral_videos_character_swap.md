@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_seedanc
 hash: f9a7baf356457704
 official: true
 coverage: 0.833333
-learned_at: 2026-10-07 21:36:26
+learned_at: 2026-10-10 22:49:09
 nodes: [LoadVideo, PreviewAny, Video Slice, OpenAIGPTImageNodeV2, ImageFromBatch, GetVideoComponents, LoadImage, SaveVideo, SaveImage, StringConcatenate, ByteDance2ReferenceNodeV2, GeminiNodeV3]
 patterns: []
 missing: [Video Slice]

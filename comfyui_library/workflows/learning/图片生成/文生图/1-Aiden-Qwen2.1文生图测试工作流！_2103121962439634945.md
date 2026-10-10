@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
+key: 1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
 name: 1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
 hash: 5b4796eaac96c805
 coverage: 0.607143
-learned_at: 2026-10-07 02:04:28
+learned_at: 2026-10-10 21:25:28
 nodes: [TextEncodeQwenImage21, KSampler, VAEDecode, EmptyLatentImage, ResolutionSelector, 孤海注释, MarkdownNote, 孤海注释, PreviewImage, ModelPreviewOverrideKJ, 孤海注释, VOSR2Upscale, SaveImage, VOSR2ModelLoader, SplitImageWithAlpha, 忽略多组孤海, UNETLoader, CLIPLoader, VAELoader, easy positive, LayerUtility: PurgeVRAM V2, ShowText|pysssss, CLIPLoader, easy positive, JoinStrings, StringFormat, Image Comparer (rgthree), TextGenerate]
 patterns: []
 missing: [LayerUtility: PurgeVRAM V2, easy positive, easy positive, 忽略多组孤海]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
+# 1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json`
 

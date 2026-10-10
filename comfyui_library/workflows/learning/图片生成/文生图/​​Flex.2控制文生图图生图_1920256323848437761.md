@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json
-name: ​​Flex.2控制文生图图生图_1920256323848437761.json
+key: ​​Flex.2控制文生图图生图_1920256323848437761.json
+name: ​​Flex.2控制文生图图生图_1920256323848437761
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json
 hash: 2b3f3d000e9daac4
 coverage: 0.888889
-learned_at: 2026-10-07 22:08:11
+learned_at: 2026-10-10 20:59:28
 nodes: [UNETLoader, VAELoader, PreviewImage, ImageScaleToTotalPixels, Flex2Conditioner, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, AIO_Preprocessor, DualCLIPLoader, LoadImage, LoraLoaderModelOnly, VAEDecode, DeepTranslatorTextNode, LoadImage, PreviewImage, KSampler, SaveImage]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.6000000000000001, "height": 1024, "sampler_name": "deis", "scheduler": "beta", "seed": 842842660137959, "steps": 28, "width": 1024}
 ---
 
-# 图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json
+# ​​Flex.2控制文生图图生图_1920256323848437761.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1920256323848437761.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/​​Flex.2控制文生图图生图_1920256323848437761.json`
 
 ## 结构
 

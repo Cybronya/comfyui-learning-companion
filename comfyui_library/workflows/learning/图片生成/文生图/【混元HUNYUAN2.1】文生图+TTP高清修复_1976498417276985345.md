@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
-name: 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
+key: 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
+name: 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
 hash: 3c627043af58d7d8
 coverage: 0.782609
-learned_at: 2026-10-07 19:34:49
+learned_at: 2026-10-10 20:59:31
 nodes: [UNETLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, VAEEncode, HunyuanRefinerLatent, LayerUtility: PurgeVRAM V2, VAEDecode, KSampler, UNETLoader, SaveImage, DualCLIPLoader, VAELoader, CLIPTextEncode, EmptyHunyuanImageLatent, KSampler, CLIPTextEncode, VAEDecode, RH_Translator, TTP_Tile_image_size, Note, PreviewImage, Note, Image Comparer (rgthree), VAEEncodeTiled, easy imageListToImageBatch, ImageScaleBy, UNETLoader, Anything Everywhere3, VAELoader, easy imageBatchToImageList, TTP_Image_Assy, DualCLIPLoader, ConditioningZeroOut, CLIPTextEncode, KSampler, UpscaleModelLoader, ImageUpscaleWithModel, LoraLoaderModelOnly, VAEDecodeTiled, SaveImage, TTP_Image_Tile_Batch, SaveImage, ImageCASharpening+, Note, FluxResolutionNode]
 patterns: []
 missing: [ImageCASharpening+, LayerUtility: PurgeVRAM V2, easy imageBatchToImageList, easy imageListToImageBatch]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "euler", 
 discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
+# 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1976498417276985345.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json`
 
 ## 结构
 

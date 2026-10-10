@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json
-name: 提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json
+name: 提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json
 hash: 73c1821099bace73
 coverage: 0.623529
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:18
 nodes: [SetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, JsonExtractString, llama_cpp_model_loader, llama_cpp_parameters, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, PrimitiveBoolean, PrimitiveBoolean, GetNode, GetNode, GetNode, ExecutionBlocker, PrimitiveInt, ImpactNeg, ImpactNeg, ExecutionBlocker, ExecutionBlocker, CR Text Replace, PrimitiveBoolean, PrimitiveBoolean, MathExpression_UTK, llama_cpp_instruct_adv, RHLLMChatNode, easy anythingIndexSwitch, DapaoMakeImageBatchNode, llama_cpp_instruct_adv, RHLLMChatNode, 1hew_SaveTxt, easy anythingIndexSwitch, easy anythingIndexSwitch, JjkText, SetNode, PrimitiveInt, ExecutionBlocker, SaveImage, ExecutionBlocker, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [CR Text Replace, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 # 图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102492597783719938.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json`
 
 ## 结构
 

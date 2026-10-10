@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_topaz_image_
 hash: 6d5524c5aa8e87e3
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:34:55
+learned_at: 2026-10-10 22:46:18
 nodes: [TopazImageEnhanceV2, LoadImage, SaveImageAdvanced, ImageCompare, MarkdownNote]
 patterns: []
 missing: []

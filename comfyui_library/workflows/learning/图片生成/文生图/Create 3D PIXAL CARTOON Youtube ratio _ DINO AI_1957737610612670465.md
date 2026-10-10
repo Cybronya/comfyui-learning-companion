@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
-name: Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
+key: Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
+name: Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
 hash: 374c8e96e0511083
 coverage: 0.933333
-learned_at: 2026-10-07 23:31:15
+learned_at: 2026-10-10 21:27:03
 nodes: [VAEDecode, VAELoader, SamplerCustomAdvanced, KSamplerSelect, BasicScheduler, BasicGuider, RandomNoise, FluxGuidance, LoraLoaderModelOnly, DualCLIPLoader, UNETLoader, ModelSamplingFlux, SaveImage, CLIPTextEncode, CR SDXL Aspect Ratio]
 patterns: []
 missing: [CR SDXL Aspect Ratio]
 discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
+# Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1957737610612670465.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json`
 
 ## 结构
 

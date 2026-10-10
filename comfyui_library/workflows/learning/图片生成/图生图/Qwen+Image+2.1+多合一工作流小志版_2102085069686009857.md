@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen+Image+2.1+多合一工作流小志版_2102085069686009857.json
-name: Qwen+Image+2.1+多合一工作流小志版_2102085069686009857.json
+name: Qwen+Image+2.1+多合一工作流小志版_2102085069686009857
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen+Image+2.1+多合一工作流小志版_2102085069686009857.json
 hash: 498fa813d20437ad
 coverage: 0.522388
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:09
 nodes: [ConditioningZeroOut, VAEDecode, QwenImage21ModelConfig_EditUtils, QwenImage21Cache, GetNode, GetNode, GetNode, CLIPLoader, SetNode, EditTextEncode_EditUtils, SetNode, SetNode, VAELoader, UNETLoader, CLIPLoader, SetNode, SetNode, CLIPLoader, BatchImagesNode, PrimitiveInt, Label (rgthree), Label (rgthree), Label (rgthree), EmptyLatentImage, GetNode, TextEncodeQwenImage21, PrimitiveInt, PrimitiveInt, MarkdownNote, Label (rgthree), KSampler, KSampler, MarkdownNote, PrimitiveInt, CropWithPadInfo_EditUtils, PrimitiveStringMultiline, ResolutionSelector, GetNode, GetNode, GetNode, GetNode, easy showAnything, Note, TextGenerateLTX2Prompt, Label (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveInt, TextGenerateLTX2Prompt, CropWithPadInfo_EditUtils, PrimitiveStringMultiline, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, SaveImage, Image Comparer (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), VAEDecode, SaveImage]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen+Image+2.1+多合一工作流小志版_2102085069686009857.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102085069686009857.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen+Image+2.1+多合一工作流小志版_2102085069686009857.json`
 
 ## 结构
 

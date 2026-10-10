@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json
-name: Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json
+key: Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json
+name: Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json
 hash: 299bb3ba68a3297c
 coverage: 0.782609
-learned_at: 2026-10-09 19:50:52
+learned_at: 2026-10-10 20:59:09
 nodes: [SaveImage, CLIPLoader, UNETLoader, ModelSamplingAuraFlow, VAELoader, CLIPTextEncode, SaveImage, ImageConcatMulti, PreviewImage, VAEDecode, KSampler, ControlNetLoader, EmptySD3LatentImage, Reroute, LayerUtility: ImageScaleByAspectRatio V2, Reroute, LoraLoaderModelOnly, AIO_Preprocessor, SetUnionControlNetType, LoadImage, ControlNetApplySD3, CLIPTextEncode, MarkdownNote]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1.5, "controlnet_strength": 0.75, "denoise": 1, "sampler_nam
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json
+# Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1974331826225459201.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_instantX_Controlnet_Union工作流1.0_1974331826225459201.json`
 
 ## 结构
 

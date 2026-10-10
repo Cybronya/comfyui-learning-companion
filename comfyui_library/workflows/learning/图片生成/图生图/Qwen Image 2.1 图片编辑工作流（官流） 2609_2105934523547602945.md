@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json
-name: Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json
+name: Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json
 hash: 9d51405c3cccc408
 coverage: 0.853659
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:05
 nodes: [ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, PrimitiveBoolean, 孤海注释, JoinStrings, EmptyLatentImage, ComfySwitchNode, TextGenerate, easy positive, BatchImagesNode, SaveImage, QwenImage21Cache, TextEncodeQwenImage21, UNETLoader, CLIPLoader, VAELoader, CLIPLoader, ShowText|pysssss, 忽略多组孤海, VAEDecode, KSampler, ResolutionSelector, easy positive, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: [easy positive, easy positive, 忽略多组孤海]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 # 图片生成/图生图/Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105934523547602945.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json`
 
 ## 结构
 

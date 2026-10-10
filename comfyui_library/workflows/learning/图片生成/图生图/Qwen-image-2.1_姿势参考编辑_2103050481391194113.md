@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-image-2.1_姿势参考编辑_2103050481391194113.json
-name: Qwen-image-2.1_姿势参考编辑_2103050481391194113.json
+name: Qwen-image-2.1_姿势参考编辑_2103050481391194113
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image-2.1_姿势参考编辑_2103050481391194113.json
 hash: 99839730d306e019
 coverage: 0.681818
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:09
 nodes: [UNETLoader, QwenImage21SageAttentionT8, QwenImage21BlockCacheT8, CLIPLoader, SetNode, VAELoader, SetNode, QwenImage21SpectrumT8, SetNode, QwenPERewriteT8, GetNode, GetNode, GetNode, KSampler, TextEncodeQwenImage21, EmptyLatentImage, VAEDecode, JjkText, ResolutionSelector, SaveImage, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 # 图片生成/图生图/Qwen-image-2.1_姿势参考编辑_2103050481391194113.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103050481391194113.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-image-2.1_姿势参考编辑_2103050481391194113.json`
 
 ## 结构
 

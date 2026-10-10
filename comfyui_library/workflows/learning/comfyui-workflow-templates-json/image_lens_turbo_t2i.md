@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_lens_turbo
 hash: 29f251d00e8538e4
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:35:47
+learned_at: 2026-10-10 22:48:10
 nodes: [ec44c008-5f23-4498-a682-eb96a8598475, ResolutionSelector, SaveImage, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [ec44c008-5f23-4498-a682-eb96a8598475]

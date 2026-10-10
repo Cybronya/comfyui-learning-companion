@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling2_6_i2v
 hash: 0f92201d96f17ce9
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:33:59
+learned_at: 2026-10-10 22:44:33
 nodes: [SaveVideo, MarkdownNote, LoadImage, KlingImageToVideoWithAudio]
 patterns: []
 missing: []

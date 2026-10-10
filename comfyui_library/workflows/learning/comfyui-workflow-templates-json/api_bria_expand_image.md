@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_expand_
 hash: e12187e5fc075a23
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:33:22
+learned_at: 2026-10-10 22:43:22
 nodes: [LoadImage, SaveImageAdvanced, MarkdownNote, BriaExpandImage]
 patterns: []
 missing: []

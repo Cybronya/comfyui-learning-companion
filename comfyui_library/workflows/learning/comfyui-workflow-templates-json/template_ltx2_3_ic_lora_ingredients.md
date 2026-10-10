@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_ltx2_3_
 hash: a829cc49ea8baedd
 official: true
 coverage: 0.538462
-learned_at: 2026-10-07 21:36:23
+learned_at: 2026-10-10 22:49:03
 nodes: [SaveVideo, MarkdownNote, f9f61b10-b689-4d67-b4fa-0acc1d9b5390, MarkdownNote, RepeatImageBatch, EmptyImage, PrimitiveInt, PrimitiveInt, ComfyMathExpression, GetImageSize, ResizeAndPadImage, PreviewImage, LoadImage]
 patterns: []
 missing: [f9f61b10-b689-4d67-b4fa-0acc1d9b5390]

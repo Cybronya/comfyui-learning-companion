@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_mage_flow_
 hash: 0a1eb40810d2a6f7
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:35:50
+learned_at: 2026-10-10 22:48:15
 nodes: [SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d, MarkdownNote, MarkdownNote, ResolutionSelector]
 patterns: []
 missing: [d069257b-0abc-4d5a-9a19-579e0fe5bd8d]

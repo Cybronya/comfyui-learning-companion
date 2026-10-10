@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2文生图 高清放大_1950888087578681345.json
-name: wan2.2文生图 高清放大_1950888087578681345.json
+key: wan2.2文生图 高清放大_1950888087578681345.json
+name: wan2.2文生图 高清放大_1950888087578681345
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生图 高清放大_1950888087578681345.json
 hash: 0f79f93d3dfadde1
 coverage: 0.8
-learned_at: 2026-10-07 22:58:42
+learned_at: 2026-10-10 20:59:27
 nodes: [ImageScaleToTotalPixels, UpscaleModelLoader, CLIPLoader, CLIPTextEncode, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, KSampler, ModelSamplingSD3, CLIPTextEncode, UNETLoader, CLIPLoader, VAELoader, ModelSamplingSD3, LoraLoaderModelOnly, PathchSageAttentionKJ, Anything Everywhere3, TTP_Tile_image_size, TTP_Image_Tile_Batch, easy imageBatchToImageList, VAEEncode, easy cleanGpuUsed, easy cleanGpuUsed, ImageUpscaleWithModel, TTP_Image_Assy, VAELoader, CLIPTextEncode, easy cleanGpuUsed, Image Comparer (rgthree), LoraLoaderModelOnly, ImageListToImageBatch, VAEDecode, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, KSampler, RH_Prompter, CLIPTextEncode, KSampler, RH_Translator, PreviewImage, easy seed, SDXLEmptyLatentSizePicker+]
 patterns: []
 missing: [easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy imageBatchToImageList, SDXLEmptyLatentSizePicker+, easy seed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 0, "cfg": 1, "denoise": 1, "height": 1, "sampler_name
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 核心节点 `SDXLEmptyLatentSizePicker+` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/wan2.2文生图 高清放大_1950888087578681345.json
+# wan2.2文生图 高清放大_1950888087578681345.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950888087578681345.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2文生图 高清放大_1950888087578681345.json`
 
 ## 结构
 

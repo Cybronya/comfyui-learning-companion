@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1一键扩图｜画面秒变超宽幅｜构图不够能延展_2102603964750581761.json
-name: Qwen Image 2.1一键扩图｜画面秒变超宽幅｜构图不够能延展_2102603964750581761.json
+name: Qwen Image 2.1一键扩图｜画面秒变超宽幅｜构图不够能延展_2102603964750581761
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1一键扩图｜画面秒变超宽幅｜构图不够能延展_2102603964750581761.json
 hash: 55a716707495f589
 coverage: 0.898305
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:05
 nodes: [KSampler, QwenImage21Cache, TextEncodeQwenImage21, SaveImage, UNETLoader, CLIPLoader, CLIPLoader, VAELoader, EmptyLatentImage, TextGenerateLTX2Prompt, ResolutionSelector, JjkText, LoadImage, BatchImagesNode, ComfySwitchNode, VAEDecode, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1一键扩图｜画面秒变超宽幅｜构图不够能延展_2102603964750581761.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102603964750581761.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1一键扩图｜画面秒变超宽幅｜构图不够能延展_2102603964750581761.json`
 
 ## 结构
 

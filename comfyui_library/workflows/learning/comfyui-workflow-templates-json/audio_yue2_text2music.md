@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_yue2_text2
 hash: 6df2eb4b7337816a
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:20
+learned_at: 2026-10-10 22:47:03
 nodes: [SaveAudioAdvanced, 59dddde1-2d83-4b6e-9c71-1e5cb2d823d6, MarkdownNote]
 patterns: []
 missing: [59dddde1-2d83-4b6e-9c71-1e5cb2d823d6]

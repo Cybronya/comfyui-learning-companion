@@ -1,0 +1,42 @@
+# workflow><Picture 2>
+
+## 节点类型
+
+`workflow><Picture 2>`
+
+## 分类
+
+Other
+
+## 作用
+
+作用未知，需人工补充（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 1 个 workflow 中。
+
+## 输入
+
+- `input1:*`（1 次）
+- `image:COMBO`（1 次）
+- `upload:IMAGEUPLOAD`（1 次）
+- `value:INT`（1 次）
+- `sel_mode:BOOLEAN`（1 次）
+
+## 输出
+
+- `MASK:MASK`（1 次）
+- `IMAGE:*`（1 次）
+- `selected_label:STRING`（1 次）
+- `selected_index:INT`（1 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `["0fbb787fb39ffa24b5da3f3e6575b54b3d8a65320977dd2a07f2bc6123aeffd1.jpg", "image", 2, true]`（1 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json
-name: BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json
+name: BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json
 hash: 130015e8eb506cf0
 coverage: 0.857143
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:02
 nodes: [VAELoader, VAEDecode, QwenImage21Cache, TextEncodeQwenImage21, KSampler, ComfySwitchNode, CLIPLoader, LoadImage, ResolutionSelector, CR Prompt Text, EmptyLatentImage, SaveImageAdvanced, UNETLoader, SaveImage]
 patterns: []
 missing: [CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102282925260759042.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json`
 
 ## 结构
 

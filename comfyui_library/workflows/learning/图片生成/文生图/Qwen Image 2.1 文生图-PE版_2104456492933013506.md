@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen Image 2.1 文生图-PE版_2104456492933013506.json
+key: Qwen Image 2.1 文生图-PE版_2104456492933013506.json
 name: Qwen Image 2.1 文生图-PE版_2104456492933013506
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图-PE版_2104456492933013506.json
 hash: 62fd3c1b1cb572ae
 coverage: 0.733333
-learned_at: 2026-10-07 02:15:58
+learned_at: 2026-10-10 20:58:51
 nodes: [QwenImage21Cache, CLIPLoader, UNETLoader, TextEncodeQwenImage21, EmptyLatentImage, ComfySwitchNode, VAELoader, easy cleanGpuUsed, VAEDecode, ResolutionSelector, CR Prompt Text, easy showAnything, QwenPERewriteT8, SaveImage, KSampler]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Qwen Image 2.1 文生图-PE版_2104456492933013506.json
+# Qwen Image 2.1 文生图-PE版_2104456492933013506.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图-PE版_2104456492933013506.json`
 

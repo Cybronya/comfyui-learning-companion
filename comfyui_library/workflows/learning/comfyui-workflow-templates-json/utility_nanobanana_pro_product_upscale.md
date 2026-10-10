@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_nanobana
 hash: b90421c7326550d4
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:36:48
+learned_at: 2026-10-10 22:49:51
 nodes: [LoadImage, GeminiImage2Node, SaveImage]
 patterns: []
 missing: []

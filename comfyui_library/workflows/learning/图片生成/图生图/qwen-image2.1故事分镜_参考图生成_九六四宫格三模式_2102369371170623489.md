@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json
-name: qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json
+name: qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json
 hash: f5955dc47ae13067
 coverage: 0.395349
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:12
 nodes: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveStringMultiline, PrimitiveStringMultiline, ComfySwitchNode, TextEncodeQwenImage21, PrimitiveInt, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, EmptyLatentImage, easy seed, GetNode, UNETLoader, QwenImage21Cache, CLIPLoader, VAELoader, SetNode, SetNode, SetNode, SaveImage, MarkdownNote, StringConcatenate, PrimitiveBoolean, ComfySwitchNode, PrimitiveStringMultiline, PrimitiveInt, PrimitiveInt, KSampler, VAEDecode, GetNode, GetNode, ComfySwitchNode, RHLLMChatNode, PreviewAny, PrimitiveStringMultiline, LoadImage, LoadImage, LoadImage, PrimitiveBoolean, PrimitiveBoolean]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, easy seed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102369371170623489.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image2.1故事分镜_参考图生成_九六四宫格三模式_2102369371170623489.json`
 
 ## 结构
 

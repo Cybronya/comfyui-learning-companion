@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json
+key: Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json
 name: Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json
 hash: b17315fddf50057c
 coverage: 0.883721
-learned_at: 2026-10-07 03:05:15
+learned_at: 2026-10-10 20:59:10
 nodes: [ModelSamplingAuraFlow, UpscaleModelLoader, UltimateSDUpscale, PreviewImage, CLIPTextEncode, VAEDecode, CLIPTextEncode, EmptySD3LatentImage, VAELoader, UNETLoader, CLIPLoader, LoraLoader, SaveImage, KSampler, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, lora]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "lora_name
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json
+# Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen朋友圈海报设计V1.0文生图工具_2100273790323351553.json`
 

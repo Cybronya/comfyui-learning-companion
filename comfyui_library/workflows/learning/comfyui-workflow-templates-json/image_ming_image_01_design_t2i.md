@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ming_image
 hash: 03074f0ac9572f30
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:35:52
+learned_at: 2026-10-10 22:48:20
 nodes: [ResolutionSelector, 4d166aa4-f08c-43b7-b889-2b43e3b4c535, MarkdownNote, MarkdownNote, SaveImageAdvanced]
 patterns: []
 missing: [4d166aa4-f08c-43b7-b889-2b43e3b4c535]

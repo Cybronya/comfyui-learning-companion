@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json
-name: Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json
+name: Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json
 hash: efa335346cf53eab
 coverage: 0.692308
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:09
 nodes: [MarkdownNote, Note, CLIPLoader, VAELoader, QwenImage21Cache, CLIPLoader, LoadImage, StringConstantMultiline, KSampler, easy seed, UNETLoader, StringReplace, StringConstantMultiline, TextGenerate, BatchImagesNode, VAEDecode, StringFunction|pysssss, PreviewAny, PreviewAny, EmptyLatentImage, Image Comparer (rgthree), ResolutionSelector, ComfySwitchNode, LoadImage, SaveImage, TextEncodeQwenImage21]
 patterns: []
 missing: [StringFunction|pysssss, easy seed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `StringFunction|pysssss` 知识库中没有该节点�
 
 # 图片生成/图生图/Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2101899697924431873.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen2.1图像编辑_PE增强【已清理think】_2101899697924431873.json`
 
 ## 结构
 

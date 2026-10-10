@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433.json
+key: 睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433.json
 name: 睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433.json
 hash: 4d7761c4e9d67190
 coverage: 0.6
-learned_at: 2026-10-07 02:01:34
+learned_at: 2026-10-10 20:59:54
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433.json
+# 睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/睡沙发_姿势_沙发场景_慵懒人像_Image2.5_2102673778701586433.json`
 

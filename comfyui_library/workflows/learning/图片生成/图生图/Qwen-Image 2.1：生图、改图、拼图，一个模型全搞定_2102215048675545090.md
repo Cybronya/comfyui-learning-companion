@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json
-name: Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json
+name: Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json
 hash: b398936d5c0a4da2
 coverage: 0.287671
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:09
 nodes: [SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, PrimitiveStringMultiline, SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, GetNode, LoadImage, SetNode, SetNode, GetNode, SetNode, GetNode, LoadImage, SetNode, LoadImage, GetNode, LoadImage, SetNode, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, PrimitiveStringMultiline, ResolutionSelector, EmptyLatentImage, SetNode, UNETLoader, SetNode, QwenImage21Cache, CLIPLoader, TextEncodeQwenImage21, ComfySwitchNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, VAEDecode, KSampler, SetNode, VAELoader, SaveImage, SetNode, GetNode, SaveImageAdvanced, SetNode, LoadImage, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 # 图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102215048675545090.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-Image 2.1：生图、改图、拼图，一个模型全搞定_2102215048675545090.json`
 
 ## 结构
 

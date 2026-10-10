@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json
-name: Wan2.2文生图(低噪版)_1951900115835498497.json
+key: Wan2.2文生图(低噪版)_1951900115835498497.json
+name: Wan2.2文生图(低噪版)_1951900115835498497
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json
 hash: 38505e6b4630b98d
 coverage: 0.882353
-learned_at: 2026-10-07 23:04:28
+learned_at: 2026-10-10 20:59:14
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, CLIPLoader, easy clearCacheAll, easy cleanGpuUsed, FastFilmGrain, SaveImage, ModelSamplingSD3, WanVideoNAG, VAELoader, UNETLoader, CLIPTextEncode, SaveImage, EmptyHunyuanLatentVideo, KSampler, CLIPTextEncode]
 patterns: []
 missing: [easy cleanGpuUsed, easy clearCacheAll]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json
+# Wan2.2文生图(低噪版)_1951900115835498497.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951900115835498497.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json`
 
 ## 结构
 

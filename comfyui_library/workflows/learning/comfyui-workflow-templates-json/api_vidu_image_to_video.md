@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_vidu_image_t
 hash: e316691df165efea
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:35:02
+learned_at: 2026-10-10 22:46:31
 nodes: [LoadImage, MarkdownNote, ViduImageToVideoNode, SaveVideo]
 patterns: []
 missing: []

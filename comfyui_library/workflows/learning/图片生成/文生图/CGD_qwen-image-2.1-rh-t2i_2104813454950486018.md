@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
+key: CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
 name: CGD_qwen-image-2.1-rh-t2i_2104813454950486018
 type: Unknown Workflow
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
 hash: fa595e4f2e84158d
 coverage: 0.722222
-learned_at: 2026-10-07 02:05:40
+learned_at: 2026-10-10 21:26:34
 nodes: [MarkdownNote, CLIPLoader, VAELoader, QwenImage21Cache, UNETLoader, KSampler, EmptyLatentImage, ResolutionSelector, MarkdownNote, PrimitiveStringMultiline, CLIPLoader, TextGenerate, VAEDecode, SaveImageAdvanced, SaveImage, ComfySwitchNode, PreviewAny, TextEncodeQwenImage21]
 patterns: []
 missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 447606998181262, "steps": 25, "width": 1024}
 ---
 
-# 图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
+# CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json`
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wan_text_to_
 hash: 2a72e1ef0bf99c85
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:35:12
+learned_at: 2026-10-10 22:46:48
 nodes: [SaveVideo, RecordAudio, MarkdownNote, WanTextToVideoApi, MarkdownNote, LoadAudio]
 patterns: []
 missing: []

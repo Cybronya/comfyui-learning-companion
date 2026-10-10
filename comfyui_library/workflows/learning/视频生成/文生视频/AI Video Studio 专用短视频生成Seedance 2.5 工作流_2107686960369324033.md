@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI Video Studio 专用短视频生成Seedance 2.5 工作流_2107686960369324033.json
 hash: 390afced8a429504
 coverage: 0.857143
-learned_at: 2026-10-10 00:07:16
+learned_at: 2026-10-10 22:58:30
 nodes: [CR Prompt Text, TextConcatenate_UTK, TextConcatenate_UTK, easy boolean, LazySwitchKJ_UTK, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy boolean, LazySwitchKJ_UTK, RH_BytedanceSeedance25TokenMultimodalVideo, RH_Upscale, SaveVideo, LayerUtility: PurgeVRAM V2, Note, LoadAudio, LoadAudio, LoadAudio, LoadAudio, LoadAudio, CR Text, CR Prompt Text]
 patterns: []
 missing: [CR Text, LayerUtility: PurgeVRAM V2, easy boolean, easy boolean, CR Prompt Text, CR Prompt Text]

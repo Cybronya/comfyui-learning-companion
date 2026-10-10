@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_luma_photon_
 hash: 13827b03860aede5
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:34:08
+learned_at: 2026-10-10 22:44:50
 nodes: [LoadImage, SaveImage, LumaImageModifyNode, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

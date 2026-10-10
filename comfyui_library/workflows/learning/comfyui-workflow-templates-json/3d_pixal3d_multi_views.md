@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_pixal3d_multi
 hash: eb448b03a96a477a
 official: true
 coverage: 0.852941
-learned_at: 2026-10-07 21:33:13
+learned_at: 2026-10-10 22:43:02
 nodes: [Trellis2ShapeStage, PreviewImage, PreviewImage, PreviewImage, VAELoader, VaeDecodeTextureTrellis, CLIPVisionLoader, GetMeshInfo, RenderUVAtlas, PreviewImage, KSampler, ApplyTextureToMesh, BakeTextureFromVoxel, PrimitiveInt, MeshSmoothNormals, KSampler, PaintMesh, CFGOverride, RescaleCFG, RemoveBackground, Preview3DAdvanced, VaeDecodeStructureTrellis2, VoxelToMesh, MeshToFile3D, KSampler, RescaleCFG, CFGOverride, ModelSamplingSD3, Note, Trellis2UpsampleStage, BakeAmbientOcclusion, BakeNormalMapFromMesh, PreviewImage, PreviewImage, RemeshMesh, DecimateMesh, UnwrapMesh, VAELoader, LoadBackgroundRemovalModel, VaeDecodeShapeTrellis, Trellis2TextureStage, MeshToFile3D, MeshSmoothNormals, MeshToFile3D, EmptyTrellis2LatentStructure, KSampler, ImageCropToMask, UNETLoader, Preview3DAdvanced, Pixal3DMultiViewConditioning, ImageCropV2, SaveImageAdvanced, ImageCropV2, ImageCropV2, SaveImageAdvanced, SaveImageAdvanced, ImageCropV2, SaveImageAdvanced, RemoveBackground, ImageCropToMask, ImageCropToMask, RemoveBackground, ImageCropToMask, RemoveBackground, LoadImage, Save3DAdvanced, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

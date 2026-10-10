@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan2_1_inf
 hash: 3b7f7029adb969b5
 official: true
 coverage: 0.611111
-learned_at: 2026-10-07 21:37:13
+learned_at: 2026-10-10 22:50:36
 nodes: [CreateVideo, LoadAudio, PrimitiveInt, PrimitiveInt, AudioConcat, CreateVideo, SaveVideo, MarkdownNote, SaveVideo, LoadImage, LoadAudio, MarkdownNote, MarkdownNote, BatchImagesNode, Painter, Painter, f94665ea-d4c0-44ce-b3fb-9af101983ff5, dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55]
 patterns: []
 missing: [dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55, f94665ea-d4c0-44ce-b3fb-9af101983ff5]

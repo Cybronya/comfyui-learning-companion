@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json
+key: DP小熊猫 V1.0_1897934794485878785.json
 name: DP小熊猫 V1.0_1897934794485878785
 type: Unknown Workflow
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json
 hash: 46b084daac92cd83
 coverage: 1
-learned_at: 2026-10-07 03:17:52
+learned_at: 2026-10-10 21:27:05
 nodes: [SaveImage, VAEDecode, SamplerCustomAdvanced, VAELoader, EmptyLatentImage, BasicScheduler, KSamplerSelect, BasicGuider, RandomNoise, UNETLoader, DualCLIPLoader, LoraLoader, CLIPTextEncode]
 patterns: [lora]
 missing: []
 parameters: {"batch_size": 1, "height": 400, "lora_name": "flux-lora (1).safetensors", "strength_clip": 1, "strength_model": 1, "width": 400}
 ---
 
-# 图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json
+# DP小熊猫 V1.0_1897934794485878785.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json`
 

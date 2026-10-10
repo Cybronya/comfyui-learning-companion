@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json
-name: Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json
+key: Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json
+name: Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json
 hash: 932324398b86f548
 coverage: 0.816327
-learned_at: 2026-10-09 21:16:00
+learned_at: 2026-10-10 20:59:09
 nodes: [Text Multiline, EmptySD3LatentImage, UNETLoader, DualCLIPLoader, VAELoader, UpscaleModelLoader, LoraLoaderModelOnly, CLIPTextEncode, ImageUpscaleWithModel, ImageScaleBy, FluxGuidance, ConditioningZeroOut, VAEEncode, KSampler, UNETLoader, CLIPLoader, VAELoader, Text Concatenate, LoraLoader, LoraLoader, PathchSageAttentionKJ, LoraLoader, ModelSamplingSD3, KSampler, SaveImage, SaveImage, LayerUtility: ImageReelComposit, Fast Groups Bypasser (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), Image Comparer (rgthree), VAEDecode, VAEEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, CLIPTextEncode, VAEDecode, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, ModelSamplingAuraFlow, Text Multiline, CLIPTextEncode, CLIPTextEncode, LayerUtility: ImageReel, SaveImage]
 patterns: [lora]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, Text Concatenate, Text Multiline, Text Multiline]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "WAN2.2-LowNoise_SmartphoneSna
 discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json
+# Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1988050506423668737.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen八步生图+SPRO洗图+Wan2.2洗图+对比展示_1988050506423668737.json`
 
 ## 结构
 

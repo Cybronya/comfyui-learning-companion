@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json
-name: 啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json
+key: 啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json
+name: 啊癫 Wan2.2 人像写实 超真实_1952340994471735297
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json
 hash: b7c4bc01cf261a59
 coverage: 0.76
-learned_at: 2026-10-07 23:04:41
+learned_at: 2026-10-10 20:59:41
 nodes: [CLIPTextEncode, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LoraLoader, LoraLoader, VAELoader, UNETLoader, CLIPLoader, PathchSageAttentionKJ, VAEEncode, ModelSamplingSD3, CR Text Concatenate, LoraLoader, SaveImage, SaveLatent, CR Text, CFGZeroStarAndInit, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, VAEDecode, RH_Captioner, SaveImage, LoadImage, easy showAnything, KSampler]
 patterns: [image_to_image, lora]
 missing: [CR Text, CR Text Concatenate, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageScaleByAspectRatio V2]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 0.15000000000000002, "lora_name": "WAN2.2-LowN
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json
+# 啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952340994471735297.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/啊癫 Wan2.2 人像写实 超真实_1952340994471735297.json`
 
 ## 结构
 

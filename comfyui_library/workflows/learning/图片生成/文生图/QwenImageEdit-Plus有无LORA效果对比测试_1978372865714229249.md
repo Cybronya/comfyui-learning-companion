@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
-name: QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
+key: QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
+name: QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
 hash: 4873a2bdacae0438
 coverage: 0.818182
-learned_at: 2026-10-09 19:50:54
+learned_at: 2026-10-10 20:59:07
 nodes: [ModelSamplingAuraFlow, CFGNorm, KSampler, SaveImage, SaveImage, ImageStitch, LayerUtility: PurgeVRAM V2, ModelSamplingAuraFlow, CFGNorm, KSampler, SaveImage, SaveImage, ImageStitch, LayerUtility: PurgeVRAM V2, CLIPLoader, GetImageSize, ConditioningZeroOut, EmptySD3LatentImage, VAELoader, PrimitiveInt, TextEncodeQwenImageEditPlus, ImageScaleToTotalPixels, VAEDecode, VAEDecode, ImageBatch, ImageBatch, easy joinImageBatch, PreviewImage, Text Multiline, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage]
 patterns: []
 missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, Text Multiline, easy joinImageBatch]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy joinImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
+# QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1978372865714229249.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_redux_model
 hash: fb5e6fac9566ffc9
 official: true
 coverage: 0.758621
-learned_at: 2026-10-07 21:35:27
+learned_at: 2026-10-10 22:47:14
 nodes: [PrimitiveNode, EmptySD3LatentImage, BasicScheduler, StyleModelApply, StyleModelApply, UNETLoader, DualCLIPLoader, VAELoader, StyleModelLoader, CLIPVisionLoader, VAEDecode, MarkdownNote, CLIPVisionEncode, CLIPVisionEncode, Note, SamplerCustomAdvanced, KSamplerSelect, BasicGuider, RandomNoise, ModelSamplingFlux, Note, MarkdownNote, PrimitiveNode, FluxGuidance, MarkdownNote, CLIPTextEncode, SaveImage, LoadImage, LoadImage]
 patterns: []
 missing: []

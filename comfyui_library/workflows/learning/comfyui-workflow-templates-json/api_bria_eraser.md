@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_eraser.
 hash: 2b2669f7ab4a46f2
 official: true
 coverage: 0.833333
-learned_at: 2026-10-07 21:33:22
+learned_at: 2026-10-10 22:43:21
 nodes: [LoadImage, Painter, SaveImageAdvanced, ImageCompare, MarkdownNote, BriaEraser]
 patterns: []
 missing: []

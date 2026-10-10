@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json
-name: Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json
+name: Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json
 hash: 284891ccd61143a9
 coverage: 0.773585
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:07
 nodes: [ResolutionSelector, KSampler, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, QwenImage21Cache, TextEncodeQwenImage21, ResizeImageMaskNode, EmptyLatentImage, ImagePadForOutpaint, DrawMaskOnImage, PreviewImage, GetImageSize, SaveImageAdvanced, VAEDecode, SaveImage, CLIPLoader, VAELoader, UNETLoader, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102522537514196994.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1扩图局部重绘图生图处理工具_2102522537514196994.json`
 
 ## 结构
 

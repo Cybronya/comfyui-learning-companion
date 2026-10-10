@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多图编辑2609_2106043418517524481.json
-name: Qwen Image 2.1多图编辑2609_2106043418517524481.json
+name: Qwen Image 2.1多图编辑2609_2106043418517524481
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑2609_2106043418517524481.json
 hash: 3b5c0a323da06a9f
 coverage: 0.304348
-learned_at: 2026-10-09 22:09:18
+learned_at: 2026-10-10 20:48:07
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, UNETLoader, CLIPLoader, VAELoader, SetNode, EmptyLatentImage, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, SetNode, TextEncodeQwenImage21, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ResolutionSelector, GetNode, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, Text Multiline, MarkdownNote, GetNode, GetNode, GetNode, GetNode, GetImageSize, EmptyLatentImage, KSampler, VAEDecode, GetNode, SaveImage, SetNode, SetNode, SetNode]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, Text Multiline]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen Image 2.1多图编辑2609_2106043418517524481.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2106043418517524481.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑2609_2106043418517524481.json`
 
 ## 结构
 

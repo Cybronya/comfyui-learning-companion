@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_hunyuan3d_mul
 hash: cce7786008b53d3c
 official: true
 coverage: 0.894737
-learned_at: 2026-10-07 21:33:12
+learned_at: 2026-10-10 22:43:00
 nodes: [CLIPVisionEncode, LoadImage, CLIPVisionEncode, LoadImage, LoadImage, CLIPVisionEncode, CLIPVisionEncode, FluxGuidance, EmptyLatentHunyuan3Dv2, Hunyuan3Dv2ConditioningMultiView, VAEDecodeHunyuan3D, VoxelToMesh, SaveGLB, LoadImage, KSampler, MarkdownNote, ModelSamplingAuraFlow, ImageOnlyCheckpointLoader, MarkdownNote]
 patterns: []
 missing: []

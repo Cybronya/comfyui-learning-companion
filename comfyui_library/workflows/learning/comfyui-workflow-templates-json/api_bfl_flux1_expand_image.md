@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bfl_flux1_ex
 hash: d25664519893d0d9
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:17
+learned_at: 2026-10-10 22:43:12
 nodes: [FluxProExpandNode, SaveImage, LoadImage]
 patterns: []
 missing: []

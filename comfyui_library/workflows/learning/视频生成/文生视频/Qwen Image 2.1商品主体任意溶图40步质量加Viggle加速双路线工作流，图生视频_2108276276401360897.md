@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json
 hash: db55e2654a101243
 coverage: 0.868852
-learned_at: 2026-10-10 00:07:22
+learned_at: 2026-10-10 23:04:54
 nodes: [ImageCropper, VAELoader, CLIPLoader, KSamplerAdvanced, TTP_Expand_And_Mask, Image Rembg (Remove Background), TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, ImageUpscaleWithModel, ImageScaleToTotalPixels, FastCanvasTool, LoadImage, LoadImage, FastCanvas, PreviewImage, LoraLoaderModelOnly, KSamplerAdvanced, LoraLoaderModelOnly, FluxGuidance, KSamplerAdvanced, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, SaveImageAdvanced, LoadImage, SaveImageAdvanced, VAEDecode, VAEDecode, SaveImage, Image Comparer (rgthree), SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [Image Rembg (Remove Background), CR Prompt Text]

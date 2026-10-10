@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_meshy_text_t
 hash: 5d2a399b383e3f93
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:16
+learned_at: 2026-10-10 22:45:04
 nodes: [MeshyTextureNode, MeshyAnimateModelNode, MeshyRefineNode, MeshyRigModelNode, SaveGLB, SaveGLB, MeshyTextToModelNode]
 patterns: []
 missing: []

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ideogram4_
 hash: 3137e5d520fbb721
 official: true
 coverage: 0.25
-learned_at: 2026-10-07 21:35:44
+learned_at: 2026-10-10 22:48:04
 nodes: [ResolutionSelector, 83e6e004-48ea-408e-9024-eb49c3d7dc14, MarkdownNote, MarkdownNote, PreviewAny, f5f04613-ee09-4cd9-9ada-a880360891d4, SaveImage, MarkdownNote]
 patterns: []
 missing: [83e6e004-48ea-408e-9024-eb49c3d7dc14, f5f04613-ee09-4cd9-9ada-a880360891d4]

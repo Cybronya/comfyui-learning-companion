@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json
-name: Qwen Image 2.1 整张图像编辑_2102952588135194626.json
+name: Qwen Image 2.1 整张图像编辑_2102952588135194626
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json
 hash: e1e836ae176c978e
 coverage: 0.789474
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:05
 nodes: [VAELoader, QwenPERewriteT8, easy showAnything, QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, VAEDecode, easy cleanGpuUsed, EmptyLatentImage, ComfySwitchNode, LoadImage, ResolutionSelector, CR Prompt Text, SaveImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, UNETLoader, QwenImage21SpectrumT8, KSampler]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 # 图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102952588135194626.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json`
 
 ## 结构
 

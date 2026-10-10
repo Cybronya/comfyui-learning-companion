@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_eric_th
 hash: 6a111f151631a4cd
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:36:22
+learned_at: 2026-10-10 22:49:02
 nodes: [MarkdownNote, SaveImage, LoadImage, BatchImagesNode, GeminiNanoBanana2, Note]
 patterns: []
 missing: []

@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json
+key: Qwen image 2.1文生图_2103043092977905666.json
 name: Qwen image 2.1文生图_2103043092977905666
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json
 hash: 27d8f0accd283af1
 coverage: 0.647059
-learned_at: 2026-10-07 02:19:29
+learned_at: 2026-10-10 20:58:57
 nodes: [EmptyLatentImage, VAELoader, CLIPLoader, SaveImage, Note, Label (rgthree), Label (rgthree), MarkdownNote, MarkdownNote, MarkdownNote, ResolutionSelector, VAEDecode, KSampler, QwenImage21Cache, PathchSageAttentionKJ, TextEncodeQwenImage21, UNETLoader]
 patterns: []
 missing: [Label (rgthree), Label (rgthree)]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json
+# Qwen image 2.1文生图_2103043092977905666.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1文生图_2103043092977905666.json`
 

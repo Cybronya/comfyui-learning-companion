@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
-name: Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
+name: Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
 hash: 1c995de9b428b4cd
 coverage: 0.8
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:09
 nodes: [MarkdownNote, QwenPERewriteT8, ShowAnything|Mie, EmptyLatentImage, CLIPLoader, EnhancedLoadDiffusionModel, VAELoader_Any, TextEncodeQwenImage21, KSamplerCacheable, QwenImage21Cache, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PreviewImage, FastGroupsBypassSwitch, ResolutionSelector, JjkText, VAEDecode, SaveImage]
 patterns: []
 missing: [ShowAnything|Mie]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103803289958703105.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json`
 
 ## 结构
 

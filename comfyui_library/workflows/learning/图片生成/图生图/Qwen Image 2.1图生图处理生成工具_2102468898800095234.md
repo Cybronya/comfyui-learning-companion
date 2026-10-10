@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图生图处理生成工具_2102468898800095234.json
-name: Qwen Image 2.1图生图处理生成工具_2102468898800095234.json
+name: Qwen Image 2.1图生图处理生成工具_2102468898800095234
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图生图处理生成工具_2102468898800095234.json
 hash: 622a37a43a5fd1ab
 coverage: 0.836735
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:06
 nodes: [VAELoader, CLIPLoader, UNETLoader, LoadImage, LoadImage, LoadImage, Image Comparer (rgthree), Int, TextEncodeQwenImage21, KSampler, VAEDecode, EmptyLatentImage, LayerUtility: ImageScaleByAspectRatio V2, ResolutionSelector, EmptyLatentImage, ComfySwitchNode, LoadImage, SaveImage, LoadImage, Text Multiline, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, Text Multiline]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/Qwen Image 2.1图生图处理生成工具_2102468898800095234.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102468898800095234.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图生图处理生成工具_2102468898800095234.json`
 
 ## 结构
 

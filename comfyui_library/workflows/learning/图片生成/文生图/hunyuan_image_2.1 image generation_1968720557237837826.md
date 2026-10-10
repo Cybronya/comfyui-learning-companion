@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json
-name: hunyuan_image_2.1 image generation_1968720557237837826.json
+key: hunyuan_image_2.1 image generation_1968720557237837826.json
+name: hunyuan_image_2.1 image generation_1968720557237837826
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json
 hash: c4e11a0e569fd4f1
 coverage: 0.580645
-learned_at: 2026-10-09 02:01:38
+learned_at: 2026-10-10 20:59:21
 nodes: [VAELoader, DualCLIPLoader, CLIPTextEncode, Note, UNETLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, VAEEncode, HunyuanRefinerLatent, SaveImage, UNETLoader, KSampler, LayerUtility: PurgeVRAM V2, VAEDecode, CLIPTextEncode, EmptyHunyuanImageLatent, KSampler, LayerUtility: PurgeVRAM V2, VAEDecode, SaveImage, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree)]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json
+# hunyuan_image_2.1 image generation_1968720557237837826.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1968720557237837826.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/hunyuan_image_2.1 image generation_1968720557237837826.json`
 
 ## 结构
 

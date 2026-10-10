@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
-name: Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
+key: Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
+name: Qwen_Image_To_Dateset_Workflow_1958778756431241218
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
 hash: 765fa05f001cfe48
 coverage: 0.666667
-learned_at: 2026-10-07 23:31:38
+learned_at: 2026-10-10 20:59:08
 nodes: [SetNode, SetNode, GetNode, GetNode, GetNode, VAEEncode, VAEEncode, VAEDecode, KSampler, KSampler, CR Image Grid Panel, PreviewImage, LoadImage, ImageListToImageBatch, SaveImage, UNETLoader, VAELoader, CLIPLoader, UpscaleModelLoader, SetNode, SetNode, Lora Loader Stack (rgthree), ModelPassThrough, ImageScaleToTotalPixels, CR Prompt List, TextEncodeQwenImageEdit, GetNode, ModelSamplingAuraFlow, CLIPTextEncode, CFGNorm, VAEDecode, PreviewImage, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, ImageScaleBy, ImageScaleToTotalPixels, UpscaleModelLoader, ImageUpscaleWithModel]
 patterns: [image_to_image]
 missing: [CR Image Grid Panel, CR Prompt List, Lora Loader Stack (rgthree)]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "epicrealismXL_vxviiCrystalclear.safetensor
 discoveries: [次要节点 `CR Image Grid Panel` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt List` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
+# Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1958778756431241218.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json`
 
 ## 结构
 

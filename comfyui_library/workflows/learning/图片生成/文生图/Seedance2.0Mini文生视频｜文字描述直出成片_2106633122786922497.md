@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json
+key: Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json
 name: Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json
 hash: f60e123f1efcb763
 coverage: 1
-learned_at: 2026-10-07 02:31:12
+learned_at: 2026-10-10 20:59:12
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20MiniTextToVideo]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json
+# Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedance2.0Mini文生视频｜文字描述直出成片_2106633122786922497.json`
 

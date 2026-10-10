@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
-name: Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
+key: Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
+name: Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
 hash: d4df9d025ddea1f3
 coverage: 0.75
-learned_at: 2026-10-07 23:11:20
+learned_at: 2026-10-10 20:58:58
 nodes: [CLIPTextEncode, FluxGuidance, ModelSamplingFlux, KSamplerSelect, BasicScheduler, RandomNoise, LayerUtility: PurgeVRAM V2, SaveImage, AddLabel, String Literal, BasicGuider, SamplerCustomAdvanced, VAELoader, DualCLIPLoader, CLIPLoader, VAELoader, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, KSampler, KSampler, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, SaveImage, AddLabel, VAEDecode, String Literal, String Literal, AddLabel, CLIPTextEncode, UNETLoader, UNETLoader, VAEDecode, PreviewImage, QwenImageModelLoader, String Literal, SDXLEmptyLatentSizePicker+, easy seed, RH_QwenImageGenerator, SaveImage, UNETLoader, ImageConcanate, ImageConcanate, PreviewImage]
 patterns: []
 missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, String Literal, String Literal, String Literal, String Literal, SDXLEmptyLatentSizePicker+, easy seed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 0, "cfg": 3.5, "denoise": 0.5000000000000001, "height
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 核心节点 `SDXLEmptyLatentSizePicker+` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
+# Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952909781780598785.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json`
 
 ## 结构
 

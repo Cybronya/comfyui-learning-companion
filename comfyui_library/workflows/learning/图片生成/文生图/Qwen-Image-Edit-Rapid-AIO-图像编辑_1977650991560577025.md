@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
-name: Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
+key: Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
+name: Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
 hash: 9586963085ff1350
 coverage: 0.9
-learned_at: 2026-10-09 19:50:54
+learned_at: 2026-10-10 20:59:00
 nodes: [ImageScaleToTotalPixels, VAEEncode, KSampler, PreviewImage, TextEncodeQwenImageEditPlus, CheckpointLoaderSimple, TextEncodeQwenImageEditPlus, VAEDecode, SaveImage, LoadImage]
 patterns: [image_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "Qwen-Rapid-AIO-v3.safetensors", "denoise":
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
+# Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1977650991560577025.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json`
 
 ## 结构
 

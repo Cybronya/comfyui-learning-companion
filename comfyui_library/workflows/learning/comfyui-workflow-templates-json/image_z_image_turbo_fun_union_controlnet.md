@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_z_image_tu
 hash: 617c27df391c122b
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:06
+learned_at: 2026-10-10 22:48:43
 nodes: [ImageScaleToMaxDimension, LoadImage, PreviewImage, MarkdownNote, Canny, SaveImage, e87b26c4-6b14-4040-bad6-063536f6fbea, MarkdownNote]
 patterns: []
 missing: [e87b26c4-6b14-4040-bad6-063536f6fbea]

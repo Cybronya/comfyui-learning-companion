@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json
-name: qwen image 2.1 编辑_2101987550209593345.json
+name: qwen image 2.1 编辑_2101987550209593345
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json
 hash: 1e154647dc54403a
 coverage: 0.628571
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:12
 nodes: [CLIPLoader, ComfySwitchNode, KSampler, LoadImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, EmptyLatentImage, UNETLoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VAELoader, CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, BatchImagesNode, TextEncodeQwenImage21, QwenImage21Cache, Fast Groups Bypasser (rgthree), VAEDecode, LoadImage, PrimitiveStringMultiline, ResolutionSelector, SaveImage, PrimitiveStringMultiline, TextGenerateLTX2Prompt]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2101987550209593345.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen image 2.1 编辑_2101987550209593345.json`
 
 ## 结构
 

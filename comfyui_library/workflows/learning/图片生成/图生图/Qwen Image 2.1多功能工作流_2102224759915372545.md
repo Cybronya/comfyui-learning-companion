@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多功能工作流_2102224759915372545.json
-name: Qwen Image 2.1多功能工作流_2102224759915372545.json
+name: Qwen Image 2.1多功能工作流_2102224759915372545
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多功能工作流_2102224759915372545.json
 hash: 9dc69b221872ce65
 coverage: 0.691358
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:06
 nodes: [EmptyLatentImage, DrawMaskOnImage, easy sam3ImageSegmentation, INPAINT_ExpandMask, INPAINT_ExpandMask, Masks Subtract, easy sam3ImageSegmentation, QwenImage21Cache, TextEncodeQwenImage21, GetNode, PreviewImage, ImageAndMaskPreview, ResolutionSelector, ComfySwitchNode, VAEDecode, KSampler, SaveImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), EmptyLatentImage, KSampler, VAEDecode, ShowText|pysssss, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, GetNode, BatchImagesNode, ComfySwitchNode, ResolutionSelector, KSampler, VAEDecode, VAEDecode, ShowText|pysssss, EmptyLatentImage, SetNode, SetNode, DF_Integer, ImageResize+, SimpleMath+, GetImageSize, TTP_Image_Tile_Batch, ImpactMinMax, DF_Integer, TextEncodeQwenImage21, ResolutionSelector, SaveImage, KSampler, SaveImage, ShowText|pysssss, TextEncodeQwenImage21, CR Prompt Text, SaveImage, UNETLoader, CLIPLoader, CLIPLoader, CLIPLoader, TextEncodeQwenImage21, TextGenerateLTX2Prompt, GetNode, VAELoader, Anything Everywhere3, TextGenerateLTX2Prompt, TextGenerateLTX2Prompt, LoadImage, LoadImage, easy sam3ModelLoader, LoadImage, SeedVR2LoadDiTModel, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, TTP_Image_Assy, SaveImage, CR Prompt Text, CR Prompt Text, Fast Groups Bypasser (rgthree), LoadImage, CR Prompt Text, ResizeLongestToNode]
 patterns: []
 missing: [Masks Subtract, SimpleMath+, easy sam3ImageSegmentation, easy sam3ImageSegmentation, easy sam3ModelLoader, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, ImageResize+]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Masks Subtract` 知识库中没有该节点类型的
 
 # 图片生成/图生图/Qwen Image 2.1多功能工作流_2102224759915372545.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102224759915372545.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多功能工作流_2102224759915372545.json`
 
 ## 结构
 

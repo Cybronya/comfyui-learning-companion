@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json
-name: 千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json
+key: 千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json
+name: 千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json
 hash: 1a193fda7810c541
 coverage: 0.568182
-learned_at: 2026-10-09 02:01:39
+learned_at: 2026-10-10 20:59:39
 nodes: [ImpactSwitch, ImpactMinMax, PreviewImage, PreviewImage, PreviewImage, PreviewImage, Note, Note, Note, Note, ControlNetApplyAdvanced, KSampler, LayerUtility: PurgeVRAM V2, VAEEncode, CR Text, CR Text Concatenate, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, easy int, easy int, LoadImage, VAEDecode, CLIPLoader, VAELoader, ImpactConditionalBranch, CLIPTextEncode, CLIPTextEncode, ModelSamplingAuraFlow, SeedVR2GGUF, RH_Captioner, CR Text, easy boolean, Note, easy float, SaveImage, UnetLoaderGGUF, ControlNetLoader, LayerUtility: ImageScaleByAspectRatio V2, DWPreprocessor, AnyLineArtPreprocessor_aux, CannyEdgePreprocessor, DepthAnythingPreprocessor, LoadImage]
 patterns: [image_to_image]
 missing: [CR Text, CR Text, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, easy boolean, easy float, easy int, easy int]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "controlnet_strength": 1.0000000000000002, "denoise": 1, 
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json
+# 千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1969044313470607361.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/千问洗图神器Qwen-Image-ControlNet-Union_1969044313470607361.json`
 
 ## 结构
 

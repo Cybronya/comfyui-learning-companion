@@ -1,21 +1,21 @@
 ---
-key: 图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
-name: 【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+key: 【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+name: 【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
 hash: 6f12029965258d8f
 coverage: 0.714286
-learned_at: 2026-10-08 00:02:11
+learned_at: 2026-10-10 20:59:32
 nodes: [SaveImage, Note, DoubaoImageGenerator, LoadImage, LoadImage, Note, DoubaoSizePreset]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
+# 【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1966444511088029698.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】豆包Seedream 4.0超强文生图工作流_1966444511088029698.json`
 
 ## 结构
 

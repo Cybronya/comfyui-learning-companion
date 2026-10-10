@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
-name: WAN2.2提升画质的10个窍门_1952624573403607042.json
+key: WAN2.2提升画质的10个窍门_1952624573403607042.json
+name: WAN2.2提升画质的10个窍门_1952624573403607042
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
 hash: 2841b4a0ddbd4e88
 coverage: 0.517241
-learned_at: 2026-10-07 23:04:58
+learned_at: 2026-10-10 20:59:13
 nodes: [VAELoader, VAEDecode, VAEDecode, CLIPLoader, MarkdownNote, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, CLIPTextEncode, LoraLoaderModelOnly, MarkdownNote, MarkdownNote, PreviewImage, SaveImage, MarkdownNote, MarkdownNote, PreviewImage, KSamplerAdvanced, CLIPTextEncode, MarkdownNote, UNETLoader, MarkdownNote, KSamplerAdvanced, Note Plus (mtb), Label (rgthree), EmptyHunyuanLatentVideo, PrimitiveInt, PrimitiveInt, MarkdownNote]
 patterns: []
 missing: [Label (rgthree), Note Plus (mtb)]
@@ -15,9 +15,9 @@ parameters: {"cfg": 30, "denoise": "bong_tangent", "sampler_name": 1, "scheduler
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
+# WAN2.2提升画质的10个窍门_1952624573403607042.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952624573403607042.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json`
 
 ## 结构
 

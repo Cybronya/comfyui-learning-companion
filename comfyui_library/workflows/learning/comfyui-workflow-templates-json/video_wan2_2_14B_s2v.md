@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan2_2_14B
 hash: 9b017cde7f056496
 official: true
 coverage: 0.596774
-learned_at: 2026-10-07 21:37:16
+learned_at: 2026-10-10 22:50:41
 nodes: [CLIPLoader, VAEDecode, CLIPTextEncode, VAELoader, AudioEncoderLoader, WanSoundImageToVideo, ModelSamplingSD3, ImageFromBatch, LatentConcat, LatentCut, CLIPTextEncode, Note, 866cdb67-cb97-4a54-8738-e9ece4f5f25f, PrimitiveInt, CreateVideo, SaveVideo, PrimitiveInt, MarkdownNote, ad3f1d6b-f6de-4f22-abcf-caeed4bf8ce4, AudioEncoderEncode, 92cfa20b-adb6-4f00-8596-f14b534cf926, Note, LoraLoaderModelOnly, PrimitiveInt, PrimitiveFloat, CLIPLoader, VAEDecode, CLIPTextEncode, VAELoader, AudioEncoderLoader, KSampler, WanSoundImageToVideo, ModelSamplingSD3, ImageFromBatch, LatentConcat, LatentCut, CLIPTextEncode, Note, d7670b5a-34e9-40f6-ac84-ec52996e52f3, PrimitiveInt, CreateVideo, PrimitiveInt, MarkdownNote, bdee126d-2d92-4d01-9e74-9118a9d609c5, AudioEncoderEncode, SaveVideo, PrimitiveInt, PrimitiveFloat, MarkdownNote, MarkdownNote, MarkdownNote, 51b3a856-6e10-44f8-94d7-2a92a39c9707, UNETLoader, UNETLoader, Note, MarkdownNote, KSampler, MarkdownNote, LoadAudio, LoadImage, LoadAudio, LoadImage]
 patterns: []
 missing: [51b3a856-6e10-44f8-94d7-2a92a39c9707, 866cdb67-cb97-4a54-8738-e9ece4f5f25f, 92cfa20b-adb6-4f00-8596-f14b534cf926, ad3f1d6b-f6de-4f22-abcf-caeed4bf8ce4, bdee126d-2d92-4d01-9e74-9118a9d609c5, d7670b5a-34e9-40f6-ac84-ec52996e52f3]

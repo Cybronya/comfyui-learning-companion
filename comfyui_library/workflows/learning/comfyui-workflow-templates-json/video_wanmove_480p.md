@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wanmove_48
 hash: f940baa64b76e110
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:37:24
+learned_at: 2026-10-10 22:50:53
 nodes: [CreateVideo, SaveVideo, WanMoveVisualizeTracks, GenerateTracks, GenerateTracks, GenerateTracks, WanMoveConcatTrack, WanMoveConcatTrack, ImageScale, SaveVideo, MarkdownNote, LoadImage, PreviewImage, MarkdownNote, WanMoveTracksFromCoords, 0ad975d5-38e9-46ed-a943-85b7c5594051]
 patterns: []
 missing: [0ad975d5-38e9-46ed-a943-85b7c5594051]

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0文生视频｜一句话生成大片 描述越细效果越惊艳_2105496532777787394.json
 hash: 48e97561ce7b9f83
 coverage: 1
-learned_at: 2026-10-10 00:07:22
+learned_at: 2026-10-10 23:05:29
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20TextToVideo]
 patterns: []
 missing: []

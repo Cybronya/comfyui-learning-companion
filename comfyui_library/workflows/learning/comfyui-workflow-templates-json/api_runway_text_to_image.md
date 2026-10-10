@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_runway_text_
 hash: 3b379ff15e66d46b
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:34:44
+learned_at: 2026-10-10 22:45:57
 nodes: [SaveImage, RunwayTextToImageNode, MarkdownNote, MarkdownNote, LoadImage]
 patterns: []
 missing: []

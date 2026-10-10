@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_magnific_ski
 hash: 44f46d8037206a75
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:13
+learned_at: 2026-10-10 22:44:59
 nodes: [MagnificImageSkinEnhancerNode, LoadImage, SaveImage, ImageCompare]
 patterns: []
 missing: []

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan 2.1写实摄影文生图_1945372680700796929.json
-name: Wan 2.1写实摄影文生图_1945372680700796929.json
+key: Wan 2.1写实摄影文生图_1945372680700796929.json
+name: Wan 2.1写实摄影文生图_1945372680700796929
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan 2.1写实摄影文生图_1945372680700796929.json
 hash: e195685a91ca9185
 coverage: 0.863636
-learned_at: 2026-10-07 22:52:38
+learned_at: 2026-10-10 20:59:13
 nodes: [EmptyLatentImage, KSampler, VAEDecode, VAELoader, LoraLoader, WanVideoNAG, ModelSamplingSD3, SaveImage, PathchSageAttentionKJ, CLIPLoader, FluxResolutionNode, LoraLoaderModelOnly, UNETLoader, JjkText, JjkText, CR Text Concatenate, RH_Prompter, ShowText, RH_Translator, CLIPTextEncode, FastFilmGrain, CLIPTextEncode]
 patterns: [text_to_image, lora]
 missing: [CR Text Concatenate]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "lora_name
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan 2.1写实摄影文生图_1945372680700796929.json
+# Wan 2.1写实摄影文生图_1945372680700796929.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1945372680700796929.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan 2.1写实摄影文生图_1945372680700796929.json`
 
 ## 结构
 

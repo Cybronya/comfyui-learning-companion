@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑提示词反推工作流，人像写真图生图其它图片处理_2107255642946887682.json
 hash: b5e04c22ee5423a3
-coverage: 0.692308
-learned_at: 2026-10-07 02:41:23
+coverage: 0.717949
+learned_at: 2026-10-10 20:48:06
 nodes: [UNETLoader, ModelAttentionBackend, llama_cpp_model_loader, QwenImage21Cache, easy ifElse, llama_cpp_instruct_adv, CLIPLoader, easy lengthAnything, easy forLoopStart, VAELoader, EmptyLatentImage, easy forLoopEnd, PreviewAny, PrimitiveStringMultiline, RepeatLatentBatch, ConditioningZeroOut, CropWithPadInfo_EditUtils, VAEDecode, EditTextEncode_EditUtils, RepeatLatentBatch, CropWithPadInfo_EditUtils, Image Comparer (rgthree), SaveImage, QwenImage21ConfigPreparer_EditUtils, easy ifElse, PrimitiveInt, TextEncodeQwenImage21, KSampler, easy imageSizeByLongerSide, easy indexAnything, QwenImage21ModelConfig_EditUtils, easy ifElse, easy ifElse, easy ifElse, easy ifElse, LoadImage, ComfyMathExpression, easy ifElse, PrimitiveBoolean, PrimitiveBoolean, easy makeImageList, LoadImage, LoadImage, LoadImage, PrimitiveInt, PrimitiveBoolean, LoadImage, LoadImage, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [QwenImage21ConfigPreparer_EditUtils, QwenImage21ModelConfig_EditUtils, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy makeImageList, easy imageSizeByLongerSide]
+missing: [easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy makeImageList, easy imageSizeByLongerSide]
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `QwenImage21ConfigPreparer_EditUtils` 知识库中没有该节点类型的任何知识, 次要节点 `QwenImage21ModelConfig_EditUtils` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy makeImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSizeByLongerSide` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy makeImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSizeByLongerSide` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1图片编辑提示词反推工作流，人像写真图生图其它图片处理_2107255642946887682.json
@@ -120,11 +120,11 @@ discoveries: [次要节点 `QwenImage21ConfigPreparer_EditUtils` 知识库中没
 
 ## 知识
 
-覆盖率 **69%**（54/78）
+覆盖率 **72%**（56/78）
 
-**有卡**：`UNETLoader`、`ModelAttentionBackend`、`llama_cpp_model_loader`、`QwenImage21Cache`、`llama_cpp_instruct_adv`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`RepeatLatentBatch`、`ConditioningZeroOut`、`CropWithPadInfo_EditUtils`、`VAEDecode`、`EditTextEncode_EditUtils`、`SaveImage`、`TextEncodeQwenImage21`、`KSampler`、`LoadImage`、`ComfyMathExpression`、`PrimitiveBoolean`、`ResolutionSelector`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`UNETLoader`、`ModelAttentionBackend`、`llama_cpp_model_loader`、`QwenImage21Cache`、`llama_cpp_instruct_adv`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`RepeatLatentBatch`、`ConditioningZeroOut`、`CropWithPadInfo_EditUtils`、`VAEDecode`、`EditTextEncode_EditUtils`、`SaveImage`、`QwenImage21ConfigPreparer_EditUtils`、`TextEncodeQwenImage21`、`KSampler`、`QwenImage21ModelConfig_EditUtils`、`LoadImage`、`ComfyMathExpression`、`PrimitiveBoolean`、`ResolutionSelector`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（8）：`QwenImage21ConfigPreparer_EditUtils`、`QwenImage21ModelConfig_EditUtils`、`easy forLoopEnd`、`easy forLoopStart`、`easy indexAnything`、`easy lengthAnything`、`easy makeImageList`、`easy imageSizeByLongerSide`
+**缺卡**（6）：`easy forLoopEnd`、`easy forLoopStart`、`easy indexAnything`、`easy lengthAnything`、`easy makeImageList`、`easy imageSizeByLongerSide`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
@@ -135,8 +135,6 @@ discoveries: [次要节点 `QwenImage21ConfigPreparer_EditUtils` 知识库中没
 
 ## 学习发现
 
-- 次要节点 `QwenImage21ConfigPreparer_EditUtils` 知识库中没有该节点类型的任何知识
-- 次要节点 `QwenImage21ModelConfig_EditUtils` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
 - 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识

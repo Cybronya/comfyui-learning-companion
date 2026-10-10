@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json
+key: Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json
 name: Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json
 hash: fe312eb509db9d83
 coverage: 0.857143
-learned_at: 2026-10-07 02:29:05
+learned_at: 2026-10-10 20:59:08
 nodes: [PrimitiveInt, ComfyMathExpression, SeedVR2Preprocess, VAEEncodeTiled, PrimitiveInt, SeedVR2Conditioning, ComfyMathExpression, ImageMergeTileList, VAEDecodeTiled, ComfyMathExpression, GetImageSize, PrimitiveFloat, KSampler, SeedVR2PostProcessing, SplitImageToTileList, SamplerCustomAdvanced, SamplerCustomAdvanced, CLIPLoader, ResolutionSelector, BasicScheduler, CFGGuider, CFGGuider, KSamplerSelect, EmptyLatentImage, SplitSigmas, RandomNoise, VAEDecode, KSamplerSelect, ImageScale, SaveImageAdvanced, UNETLoader, VAELoader, UNETLoader, VAELoader, Seed (rgthree), ResizeImageMaskNode, LayerUtility: HLFrequencyDetailRestore, TextEncodeQwenImage21, ImageBlend, Image Comparer (rgthree), RH_DLSS5Enhance, SaveImage]
 patterns: []
 missing: [LayerUtility: HLFrequencyDetailRestore, Seed (rgthree)]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json
+# Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2103710176829329409.json`
 

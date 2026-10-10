@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/小说剧本转标准JSON预处理剧本+搭配全栈式短剧生成V4.2.1使用_2088987931473170433.json
 hash: 43d48dd44a00f71f
 coverage: 0.5
-learned_at: 2026-10-07 02:41:10
+learned_at: 2026-10-10 20:48:01
 nodes: [JjkText, PreviewAny, RHLLMChatNode, SaveText]
 patterns: []
 missing: []

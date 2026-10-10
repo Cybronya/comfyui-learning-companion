@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json
-name: 中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json
+key: 中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json
+name: 中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json
 hash: f2917a2c394cc3e4
 coverage: 1
-learned_at: 2026-10-07 22:34:21
+learned_at: 2026-10-10 20:59:34
 nodes: [KSamplerSelect, RandomNoise, BasicGuider, SamplerCustomAdvanced, VAEDecode, UNETLoader, DualCLIPLoader, VAELoader, EmptyLatentImage, BasicScheduler, CLIPTextEncode, SaveImage, ShowText, LoraLoader, RH_Translator]
 patterns: [lora]
 missing: []
 parameters: {"batch_size": 1, "height": 1024, "lora_name": "flat childrenXX.safetensors", "strength_clip": 1, "strength_model": 0.8, "width": 768}
 ---
 
-# 图片生成/文生图/中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json
+# 中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1929761113691340801.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/中文直出---F.1-FLUX文生图工作流+LORA（一键运行）_1929761113691340801.json`
 
 ## 结构
 

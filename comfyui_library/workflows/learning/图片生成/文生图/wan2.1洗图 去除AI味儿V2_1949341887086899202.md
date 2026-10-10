@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.1洗图 去除AI味儿V2_1949341887086899202.json
-name: wan2.1洗图 去除AI味儿V2_1949341887086899202.json
+key: wan2.1洗图 去除AI味儿V2_1949341887086899202.json
+name: wan2.1洗图 去除AI味儿V2_1949341887086899202
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1洗图 去除AI味儿V2_1949341887086899202.json
 hash: 411e7f05f5252be9
 coverage: 0.586207
-learned_at: 2026-10-07 22:58:06
+learned_at: 2026-10-10 20:59:27
 nodes: [CLIPTextEncode, CLIPTextEncode, EmptyHunyuanLatentVideo, VAELoader, SaveImage, MarkdownNote, CLIPLoader, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, VAEEncode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: SaveImagePlusV2, Reroute, PreviewImage, PDImageResizeV2, UNETLoader, LoadImage, RH_LLMAPI_NODE, LoraLoader, LoraLoader, VAEDecode, ttN concat, RH_Captioner, easy showAnything, LoraLoader, KSampler]
 patterns: [image_to_image, lora]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, ttN concat, LayerUtility: SaveImagePlusV2]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 0.20000000000000004, "lora_name": "WAN2.1_Smar
 discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: SaveImagePlusV2` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/wan2.1洗图 去除AI味儿V2_1949341887086899202.json
+# wan2.1洗图 去除AI味儿V2_1949341887086899202.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1949341887086899202.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1洗图 去除AI味儿V2_1949341887086899202.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openai_chat.
 hash: dd4268e42951df85
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:22
+learned_at: 2026-10-10 22:45:16
 nodes: [OpenAIChatConfig, OpenAIChatNode, LoadImage, SaveText]
 patterns: []
 missing: []

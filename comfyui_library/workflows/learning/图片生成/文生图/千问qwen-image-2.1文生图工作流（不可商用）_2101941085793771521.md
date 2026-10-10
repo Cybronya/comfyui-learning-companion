@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json
+key: 千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json
 name: 千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json
 hash: e7bc3a2e6a7ec3b8
 coverage: 0.923077
-learned_at: 2026-10-07 02:37:16
+learned_at: 2026-10-10 20:59:38
 nodes: [ConditioningZeroOut, VAEDecode, SaveImage, UNETLoader, EmptyLatentImage, PreviewImage, CLIPLoader, KSampler, CLIPTextEncode, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: [text_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1920, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json
+# 千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/千问qwen-image-2.1文生图工作流（不可商用）_2101941085793771521.json`
 

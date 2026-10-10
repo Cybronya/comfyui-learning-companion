@@ -1,13 +1,13 @@
 ---
-key: 图片生成/图生图/超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json
-name: 超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json
+key: 超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json
+name: 超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json
 hash: 4a86f24f029758a9
 coverage: 0.846154
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 21:23:05
 nodes: [CLIPLoader, UNETLoader, KSampler, VAEDecode, easy cleanGpuUsed, VAELoader, EmptyLatentImage, ComfySwitchNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy showAnything, QwenPERewriteT8, LoadImage, LoadImage, ResolutionSelector, LoadImage, SaveImage, TextEncodeQwenImage21, CR Prompt Text, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, QwenImage21SageAttentionT8]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/图生图/超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json
+# 超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103518802859352065.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/超级加速版Qwen Image 2.1 PE 图像编辑_2103518802859352065.json`
 
 ## 结构
 

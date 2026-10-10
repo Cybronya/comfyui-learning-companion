@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-image2.1文生_图片编辑多合一_2102201438289088513.json
-name: Qwen-image2.1文生_图片编辑多合一_2102201438289088513.json
+name: Qwen-image2.1文生_图片编辑多合一_2102201438289088513
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1文生_图片编辑多合一_2102201438289088513.json
 hash: 11a16179bd934810
 coverage: 0.690476
-learned_at: 2026-10-09 22:27:09
+learned_at: 2026-10-10 20:48:09
 nodes: [VAELoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, llama_cpp_model_loader, ImpactConditionalBranch, llama_cpp_instruct_adv, XB_BatchImages, CR Text, CR Text, ResolutionSelector, QwenImage21Cache, ComfySwitchNode, ImpactConditionalBranch, easy boolean, llama_cpp_instruct_adv, ShowText|pysssss, easy cleanGpuUsed, TextEncodeQwenImage21, easy boolean, UNETLoader, CLIPLoader, ComfySwitchNode, INTConstant, EmptyLatentImage, VAEDecode, LoadImage, INTConstant, Image Comparer (rgthree), KSampler, Fast Groups Bypasser (rgthree), Note, Fast Groups Muter (rgthree), CR Text, SaveImage, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: [CR Text, CR Text, CR Text, easy boolean, easy boolean, easy cleanGpuUsed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/Qwen-image2.1文生_图片编辑多合一_2102201438289088513.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102201438289088513.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-image2.1文生_图片编辑多合一_2102201438289088513.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json
-name: Wan_2.1_文生图_1942908235353374722.json
+key: Wan_2.1_文生图_1942908235353374722.json
+name: Wan_2.1_文生图_1942908235353374722
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json
 hash: 236259536ac74a81
 coverage: 0.6
-learned_at: 2026-10-07 22:47:11
+learned_at: 2026-10-10 20:59:15
 nodes: [CLIPTextEncode, EmptyHunyuanLatentVideo, KSampler, SaveImage, easy clearCacheAll, easy cleanGpuUsed, VAELoader, ModelSamplingSD3, FastFilmGrain, VAEDecode, Label (rgthree), MarkdownNote, Label (rgthree), Label (rgthree), WanVideoNAG, Note, Label (rgthree), Label (rgthree), Note, LoraLoader, ModelPatchTorchSettings, CLIPTextEncode, UnetLoaderGGUF, CLIPLoader, PathchSageAttentionKJ]
 patterns: [lora]
 missing: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), easy cleanGpuUsed, easy clearCacheAll]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "Wan21_T2V_14B_lightx2v_cfg_st
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json
+# Wan_2.1_文生图_1942908235353374722.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1942908235353374722.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json`
 
 ## 结构
 

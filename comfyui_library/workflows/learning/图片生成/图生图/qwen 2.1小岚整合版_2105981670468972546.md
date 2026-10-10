@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen 2.1小岚整合版_2105981670468972546.json
-name: qwen 2.1小岚整合版_2105981670468972546.json
+name: qwen 2.1小岚整合版_2105981670468972546
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen 2.1小岚整合版_2105981670468972546.json
 hash: bde75f858549b7ad
 coverage: 0.216867
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:12
 nodes: [GetNode, GetNode, Context (rgthree), SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, easy ifElse, LoraLoaderModelOnly, Context (rgthree), LoraLoaderModelOnly, Context (rgthree), GetNode, LoraLoaderModelOnly, GetNode, SetNode, GetNode, VAEDecode, GetNode, UNETLoader, SetNode, SetNode, easy ifElse, GetNode, easy ifElse, SetNode, CR Text, GetNode, CR Text, CR Text, SetNode, GetNode, Context (rgthree), Context (rgthree), easy ifElse, SetNode, SetNode, easy ifElse, GetNode, Context (rgthree), SetNode, GetNode, JoinStrings, SetNode, SetNode, easy ifElse, LoraLoaderModelOnly, CR Text, GetNode, Context (rgthree), GetNode, QwenImage21SageAttentionT8, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, GetNode, EmptyLatentImage, GetNode, GetNode, SetNode, easy boolean, CR Text, SetNode, MarkdownNote, easy ifElse, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, MarkdownNote, easy ifElse, easy boolean, SetNode, GetNode, Context (rgthree), Context (rgthree), MarkdownNote, SetNode, QwenImage21Cache, GetNode, ComfySwitchNode, SetNode, SetNode, Fast Groups Bypasser (rgthree), easy ifElse, GetNode, LoraLoaderModelOnly, SetNode, SetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, KSampler, GetNode, QwenPERewriteT8, TextEncodeQwenImage21, LoraLoaderModelOnly, MarkdownNote, easy anythingIndexSwitch, LoadImage, LoadImage, SaveImage, CR Text, CR Text, SetNode, CR Prompt Text, ComfySwitchNode, GetNode, ComfySwitchNode, GetNode, GetNode, SetNode, SetNode, UNETLoader, CLIPLoader, UNETLoader, easy ifElse, GetNode, SetNode, SetNode, easy ifElse, GetNode, GetNode, GetNode, SetNode, easy boolean, CR Text, easy ifElse, CR Text, CR Text, GetNode, JoinStringMulti, GetNode, SetNode, SetNode, SetNode, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, ImpactSwitch, CR Text, CR Prompt Text, ResolutionSelector, easy boolean, easy showAnything, easy boolean, VAELoader, UNETLoader, easy float, easy ifElse]
 patterns: []
 missing: [CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), Context (rgthree), easy anythingIndexSwitch, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy boolean, easy float, CR Prompt Text, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/qwen 2.1小岚整合版_2105981670468972546.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105981670468972546.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen 2.1小岚整合版_2105981670468972546.json`
 
 ## 结构
 

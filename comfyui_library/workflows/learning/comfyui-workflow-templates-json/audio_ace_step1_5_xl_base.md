@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_ace_step1_
 hash: 1fa288961b107b7a
 official: true
 coverage: 0.615385
-learned_at: 2026-10-07 21:35:14
+learned_at: 2026-10-10 22:46:51
 nodes: [UNETLoader, VAELoader, PrimitiveNode, EmptyAceStep1.5LatentAudio, ConditioningZeroOut, KSampler, VAEDecodeAudio, DualCLIPLoader, PrimitiveInt, MarkdownNote, TextEncodeAceStepAudio1.5, ModelSamplingAuraFlow, SaveAudioAdvanced]
 patterns: []
 missing: [EmptyAceStep1.5LatentAudio, TextEncodeAceStepAudio1.5]

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_seedvr2_
 hash: 7075ec75f71f30ee
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:36:52
+learned_at: 2026-10-10 22:49:58
 nodes: [LoadImage, SaveImage, ImageCompare, 1970dcb4-982a-4c01-a373-4d239a3041e4, MarkdownNote]
 patterns: []
 missing: [1970dcb4-982a-4c01-a373-4d239a3041e4]
@@ -38,7 +38,7 @@ discoveries: [次要节点 `1970dcb4-982a-4c01-a373-4d239a3041e4` 知识库中�
 
 **缺卡**（1）：`1970dcb4-982a-4c01-a373-4d239a3041e4`
 
-**用到的条目**：LoadImage、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+**用到的条目**：LoadImage、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、Compare、CS_Preview_Any、easy_multitrackinfooutput
 
 ## 学习发现
 

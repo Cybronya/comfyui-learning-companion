@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
-name: Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
+key: Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
+name: Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
 hash: 027d9253e29dd3cd
 coverage: 0.521739
-learned_at: 2026-10-07 23:04:38
+learned_at: 2026-10-10 20:58:35
 nodes: [ShowText|pysssss, DeepTranslatorTextNode, Anything Everywhere, Seed Everywhere, ShowText|pysssss, StringFunction|pysssss, CLIPTextEncode, EmptyLatentImage, Anything Everywhere, ConditioningZeroOut, VAELoader, PreviewImage, DualCLIPLoader, Anything Everywhere3, ModelSamplingFlux, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler (Efficient), UNETLoader, SaveImage, LayerFilter: HDREffects, DeepTranslatorTextNode, Note]
 patterns: []
 missing: [LayerFilter: HDREffects, StringFunction|pysssss, KSampler (Efficient), Seed Everywhere]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
+# Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952280309612097537.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json`
 
 ## 结构
 

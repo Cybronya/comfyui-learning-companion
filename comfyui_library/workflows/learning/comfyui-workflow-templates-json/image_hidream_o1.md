@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_hidream_o1
 hash: c8febb2f631692b7
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:35:43
+learned_at: 2026-10-10 22:48:02
 nodes: [SamplerCustom, BasicScheduler, CheckpointLoaderSimple, ModelNoiseScale, HiDreamO1ReferenceImages, CLIPTextEncode, VAEDecode, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, GetImageSize, PrimitiveBoolean, fa7296b5-c974-4466-bfe3-a1f05f43b880, ComfySwitchNode, PrimitiveBoolean, CLIPTextEncode, MarkdownNote, ImageScaleToTotalPixels, MarkdownNote, LoadImage, ComfyMathExpression, ComfyMathExpression, PreviewAny, EmptyHiDreamO1LatentImage, EmptyHiDreamO1LatentImage, MarkdownNote, PrimitiveStringMultiline, SaveImage, KSamplerSelect, HiDreamO1PatchSeamSmoothing]
 patterns: []
 missing: [fa7296b5-c974-4466-bfe3-a1f05f43b880]

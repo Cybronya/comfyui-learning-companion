@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/视频生视频/MiniMax-H3-真·上下文无缝无色差长视频，SelfLift双采-简易版-.json
 hash: 1476cd5e86f546d1
 coverage: 0.666667
-learned_at: 2026-10-07 00:37:42
+learned_at: 2026-10-10 22:56:31
 nodes: [MarkdownNote, ComfyMathExpression, MarkdownNote, MiniMaxH3MemoryEfficientSageAttentionPatch, Note, PathchSageAttentionKJ, Note, CLIPLoader, ModelAttentionBackend, LoraLoaderModelOnly, VAEDecode, VAEDecodeAudio, UNETLoader, ConditioningZeroOut, MiniMaxLowVRAMAttention, BlockSparseAttention, UNETLoader, VAELoader, VAELoader, ExtendIntermediateSigmas, MarkdownNote, Reroute, Reroute, KSamplerSelect, CreateVideo, ComfySwitchNode, Note, PrimitiveInt, Note, Reroute, LoraLoaderModelOnly, BasicScheduler, ResolutionSelector, VideoTemporalCrop, ComfySwitchNode, SaveVideo, GetVideoComponents, CreateVideo, PrimitiveBoolean, PrimitiveFloat, Note, PrimitiveInt, PrimitiveInt, easy float, easy float, ComfySwitchNode, ComfySwitchNode, Reroute, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveInt, ComfySwitchNode, LoadVideo, Note, ColorTransfer, LoadAudio, LoadAudio, LoadAudio, MiniMaxH3ReferenceToVideo, Note, ImageAddNoise, GetImageRangeFromBatch, ComfyMathExpression, MiniMaxH3AddGuide, ComfyMathExpression, GetVideoComponents, VideoFrameSample, VideoFrameSample, ImageAddNoise, GetImageRangeFromBatch, ImageBatchMulti, MiniMaxH3AudioGuideFeather, GetVideoComponents, Note, Note, SelfLiftH3Sampler, VHS_LoadVideo, VHS_LoadVideo, VHS_LoadVideo, PrimitiveStringMultiline]
 patterns: []
 missing: [easy float, easy float]

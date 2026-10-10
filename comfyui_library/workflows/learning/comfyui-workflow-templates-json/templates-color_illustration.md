@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-color_
 hash: fe340d22eb2dd71c
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:36:32
+learned_at: 2026-10-10 22:49:21
 nodes: [SaveImage, GeminiImage2Node, LoadImage]
 patterns: []
 missing: []

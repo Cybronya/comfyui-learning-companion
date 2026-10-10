@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/RH_万相3.0-文生图_2100147232220729346.json
+key: RH_万相3.0-文生图_2100147232220729346.json
 name: RH_万相3.0-文生图_2100147232220729346
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/RH_万相3.0-文生图_2100147232220729346.json
 hash: 8424bb1a972cb70b
 coverage: 0.75
-learned_at: 2026-10-07 03:05:15
+learned_at: 2026-10-10 20:59:10
 nodes: [SaveImage, RH_RhartImageG2TextToImage, EmptyImage, PreviewImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/RH_万相3.0-文生图_2100147232220729346.json
+# RH_万相3.0-文生图_2100147232220729346.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/RH_万相3.0-文生图_2100147232220729346.json`
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_birefnet
 hash: a89e7323957cea65
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:36:42
+learned_at: 2026-10-10 22:49:39
 nodes: [LoadImage, PreviewImage, 5b40ca21-ba1a-41d5-b403-4d2d7acdc195, MaskPreview, MarkdownNote]
 patterns: []
 missing: [5b40ca21-ba1a-41d5-b403-4d2d7acdc195]

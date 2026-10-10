@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Canny _  FLUX_CN 2.0_1900592230405390338.json
+key: Canny _  FLUX_CN 2.0_1900592230405390338.json
 name: Canny _  FLUX_CN 2.0_1900592230405390338
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Canny _  FLUX_CN 2.0_1900592230405390338.json
 hash: 6f52835fc207d5a0
 coverage: 0.740741
-learned_at: 2026-10-07 03:17:51
+learned_at: 2026-10-10 21:26:43
 nodes: [LayerUtility: ImageRemoveAlpha, LayerUtility: ColorPicker, PreviewImage, SetShakkerLabsUnionControlNetType, Joy_caption_two_load, CLIPTextEncodeFlux, CLIPTextEncode, ControlNetApplyAdvanced, Canny, PreviewImage, KSampler, LoadImage, Joy_caption_two, LoadImage, VAELoader, easy cleanGpuUsed, Text Concatenate (JPS), TextInput_, UNETLoader, LoraLoader, LoraLoader, LayerMask: SegmentAnythingUltra V2, DualCLIPLoader, VAEDecode, EmptyLatentImage, SaveImage, ControlNetLoader]
 patterns: [text_to_image, lora]
 missing: [LayerMask: SegmentAnythingUltra V2, LayerUtility: ColorPicker, LayerUtility: ImageRemoveAlpha, Text Concatenate (JPS), easy cleanGpuUsed]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 2, "cfg": 1, "controlnet_strength": 0.700000000000000
 discoveries: [次要节点 `LayerMask: SegmentAnythingUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ColorPicker` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageRemoveAlpha` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Canny _  FLUX_CN 2.0_1900592230405390338.json
+# Canny _  FLUX_CN 2.0_1900592230405390338.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Canny _  FLUX_CN 2.0_1900592230405390338.json`
 

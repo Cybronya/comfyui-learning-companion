@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
+key: Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
 name: Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
 hash: 3dd6c7f9da44f1ea
 coverage: 0.658537
-learned_at: 2026-10-07 02:24:50
+learned_at: 2026-10-10 20:59:00
 nodes: [PrimitiveStringMultiline, MarkdownNote, CLIPLoader, CLIPLoader, PrimitiveBoolean, UNETLoader, UNETLoader, Model Input Switch, QwenImage21Cache, SeedNode, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, PreviewImage, VAEDecode, StringFormat, BasicGuider, TextGenerateLTX2Prompt, LoraLoaderModelOnly, RandomNoise, KSamplerSelect, ManualSigmas, EmptyLatentImage, VAELoader, TextEncodeQwenImage21, Image Comparer (rgthree), LoraLoaderModelOnly, KSampler, Image Comparer (rgthree), ResolutionSelector, SamplerCustomAdvanced, VAEDecode, SaveImage, PreviewImage, VAEDecode, SamplerCustomAdvanced, BasicGuider, Reroute, Reroute]
 patterns: []
 missing: [MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, Model Input Switch]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Model Input Switch` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
+# Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json`
 

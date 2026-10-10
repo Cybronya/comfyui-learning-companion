@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json
-name: HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json
+key: HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json
+name: HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json
 hash: 96be30e7c15c1ef3
 coverage: 0.505495
-learned_at: 2026-10-07 22:08:04
+learned_at: 2026-10-10 20:58:40
 nodes: [ImpactMakeImageBatch, HyperLoRAIDCond, HyperLoRAGenerateIDLoRA, SetNode, HyperLoRAFaceAttr, HyperLoRALoader, GetNode, HyperLoRAApplyLoRA, SetNode, LayerMask: PersonMaskUltra V2, InstantIDModelLoader, CLIPTextEncode, PreviewImage, GoogleTranslateTextNode, HyperLoRAConfig, Anything Everywhere3, BNK_CLIPTextEncodeAdvanced, GetNode, CheckpointLoaderSimple, ApplyFBCacheOnModel, Note, GetNode, DifferentialDiffusion, VAEEncode, SetLatentNoiseMask, VAEDecode, Note, Note, SaveImage, PreviewImage, ShowText|pysssss, ShowText|pysssss, InstantIDFaceAnalysis, ApplyInstantID, FaceAnalysisModels, GetNode, CLIPTextEncode, ImageResize+, ImageResize+, FaceBoundingBox, PreviewImage, KSampler, LayerColor: ColorAdapter, Bounded Image Blend with Mask, Bounded Image Crop with Mask, LayerMask: MaskGrow, PreviewImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LayerMask: PersonMaskUltra V2, Florence2ModelLoader, ControlNetLoader, Florence2Run, easy textSwitch, CR Text, SetNode, GetNode, PixelPerfectResolution, OpenposePreprocessor, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2, InstantIDModelLoader, InstantIDFaceAnalysis, ApplyInstantID, ControlNetLoader, Reroute, BNK_CLIPTextEncodeAdvanced, LoadImage, KSampler, PreviewImage, GetNode, ImageConcanate, EmptyLatentImage, easy seed, PreviewImage, CR Text, Note, FaceDetailer, CR Text Concatenate, ControlNetApplyAdvanced, PreviewBridge, Reroute, ControlNetLoader, VAEDecode, SetNode, GetNode, SaveImage, SetNode, GetNode, UltralyticsDetectorProvider, LayerUtility: PurgeVRAM V2]
 patterns: [text_to_image, image_to_image]
 missing: [Bounded Image Blend with Mask, Bounded Image Crop with Mask, CR Text, CR Text, CR Text Concatenate, LayerMask: MaskGrow, LayerMask: PersonMaskUltra V2, LayerMask: PersonMaskUltra V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, easy textSwitch, ImageResize+, ImageResize+, LayerColor: ColorAdapter, easy seed]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 2, "checkpoint": "juggernautXL_v9-Lightning
 discoveries: [次要节点 `Bounded Image Blend with Mask` 知识库中没有该节点类型的任何知识, 次要节点 `Bounded Image Crop with Mask` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json
+# HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1918163723956195329.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/HyperLora（CN姿势控制+InstantID+面部细化）_1918163723956195329.json`
 
 ## 结构
 

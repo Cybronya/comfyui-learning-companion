@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/生图-文生图-SD1.5-二次元_1983052029968941058.json
-name: 生图-文生图-SD1.5-二次元_1983052029968941058.json
+key: 生图-文生图-SD1.5-二次元_1983052029968941058.json
+name: 生图-文生图-SD1.5-二次元_1983052029968941058
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/生图-文生图-SD1.5-二次元_1983052029968941058.json
 hash: bc624ed090fb6a18
 coverage: 0.388889
-learned_at: 2026-10-09 20:05:45
+learned_at: 2026-10-10 20:59:53
 nodes: [VAEDecode, Reroute, Reroute, CLIPTextEncode, Reroute, Lora Loader Stack (rgthree), Reroute, KSampler, SaveImage, CLIPTextEncode, easy int, StringFunction|pysssss, easy seed, EmptyLatentImage, easy int, easy int, CheckpointLoaderSimple, easy positive]
 patterns: [text_to_image]
 missing: [StringFunction|pysssss, easy int, easy int, easy int, easy positive, Lora Loader Stack (rgthree), easy seed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "Colorful Anime Kawa 彩�
 discoveries: [次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/生图-文生图-SD1.5-二次元_1983052029968941058.json
+# 生图-文生图-SD1.5-二次元_1983052029968941058.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1983052029968941058.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/生图-文生图-SD1.5-二次元_1983052029968941058.json`
 
 ## 结构
 

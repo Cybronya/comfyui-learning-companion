@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
-name: PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
+key: PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
+name: PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
 hash: 5242649755fcadee
 coverage: 0.601093
-learned_at: 2026-10-07 18:48:33
+learned_at: 2026-10-10 20:58:49
 nodes: [PreviewImage, ImageCrop, Reroute, PreviewImage, ImageCrop, PreviewImage, PreviewImage, ImageCrop, Reroute, GetNode, SaveImage, SaveImage, SaveImage, SaveImage, String Literal, GetNode, JoinStrings, JoinStrings, GetNode, String Literal, SaveImage, Anything Everywhere, String Literal, JoinStrings, GetNode, JoinStrings, String Literal, Anything Everywhere, Anything Everywhere, JoinStrings, SaveImage, SaveImage, JoinStrings, JoinStrings, SetNode, CLIPTextEncode, CLIPTextEncode, JoinStrings, JoinStrings, SetNode, SamplerCustomAdvanced, SamplerCustomAdvanced, EmptyLatentImage, SetUnionControlNetType, SetUnionControlNetType, SetUnionControlNetType, SetUnionControlNetType, GetNode, SamplerCustomAdvanced, CFGGuider, CFGGuider, CFGGuider, FluxGuidance, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, JoinStrings, ImageCrop, Anything Everywhere, ImageCrop, ImageCrop, ImageResize+, ImageCrop, GetNode, ToDetailerPipe, CFGGuider, VAEDecode, VAEDecode, VAEDecode, VAEDecode, ImageCrop, GetNode, ImageResize+, RandomNoise, CLIPTextEncode, PreviewImage, SamplerCustomAdvanced, String Literal, SetNode, SetNode, SetNode, SetNode, ImageResize+, ImageResize+, AnyLineArtPreprocessor_aux, AnyLineArtPreprocessor_aux, AnyLineArtPreprocessor_aux, AnyLineArtPreprocessor_aux, String Literal, String Literal, String Literal, GetNode, String Literal, GetNode, ModelPassThrough, Anything Everywhere, ControlNetApplySD3, ControlNetApplySD3, ControlNetApplySD3, ControlNetApplySD3, SetNode, Anything Everywhere, BasicScheduler, SetNode, RandomNoise, Anything Everywhere, Note, BasicGuider, FromBasicPipe_v2, UltimateSDUpscale, JoinStrings, SetNode, SaveImage, GetNode, String Literal, SaveImage, SaveImage, SaveImage, JoinStrings, SaveImage, SaveImage, SaveImage, ExpressionEditor, ExpressionEditor, ExpressionEditor, ExpressionEditor, GetNode, String Literal, String Literal, KSamplerSelect, ImageScale, SetUnionControlNetType, VAEDecode, CFGGuider, SetNode, EmptySD3LatentImage, ToBasicPipe, String Literal, LoadImage, GetNode, GetNode, LoraLoader, LoraLoader, Anything Everywhere, PulidFluxEvaClipLoader, Anything Everywhere, SaveImage, String Literal, JoinStrings, SamplerCustomAdvanced, PreviewImage, FaceDetailerPipe, GetNode, SaveImage, Note, SetNode, PrimitiveNode, PrimitiveNode, Note, LoadImage, VAELoader, PrimitiveNode, PrimitiveNode, DualCLIPLoader, ControlNetLoader, Fast Groups Bypasser (rgthree), UpscaleModelLoader, UltralyticsDetectorProvider, ImageScale, ApplyPulidFlux, easy cleanGpuUsed, ModelSamplingFlux, GetNode, PulidFluxInsightFaceLoader, PulidFluxModelLoader, Int Literal, ModelSamplingFlux, ControlNetApplySD3, UNETLoader, easy cleanGpuUsed, ApplyPulidFlux, Anything Everywhere, ImageCrop]
 patterns: [lora]
 missing: [Int Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, easy cleanGpuUsed, easy cleanGpuUsed, ImageResize+, ImageResize+, ImageResize+, ImageResize+]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.6300000000000001, "height
 discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
+# PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1906720124529782785.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json`
 
 ## 结构
 

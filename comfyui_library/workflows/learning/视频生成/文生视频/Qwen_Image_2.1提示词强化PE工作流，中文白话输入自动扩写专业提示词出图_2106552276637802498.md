@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Qwen_Image_2.1提示词强化PE工作流，中文白话输入自动扩写专业提示词出图_2106552276637802498.json
 hash: 10c9ff7efca1927d
 coverage: 0.828571
-learned_at: 2026-10-10 00:07:22
+learned_at: 2026-10-10 23:05:00
 nodes: [PreviewAny, PreviewAny, PreviewAny, SaveText, QwenPECanvasT8, QwenPERewriteT8, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: []

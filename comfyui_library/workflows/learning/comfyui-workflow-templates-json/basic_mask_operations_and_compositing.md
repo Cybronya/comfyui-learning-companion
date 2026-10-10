@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/basic_mask_opera
 hash: 8873d1f10ab21708
 official: true
 coverage: 0.804878
-learned_at: 2026-10-07 21:35:22
+learned_at: 2026-10-10 22:47:05
 nodes: [PreviewImage, MaskPreview, PreviewImage, PreviewImage, EmptyImage, LoadImage, MaskComposite, MaskPreview, SolidMask, MaskPreview, MaskComposite, MaskPreview, MaskComposite, MaskPreview, MaskComposite, MaskPreview, MaskComposite, MaskPreview, MarkdownNote, MarkdownNote, MarkdownNote, MaskComposite, MaskPreview, MaskComposite, MaskPreview, FeatherMask, MaskPreview, SolidMask, ImageToMask, MaskPreview, ThresholdMask, MaskPreview, MaskPreview, MaskToImage, InvertMask, FeatherMask, MaskPreview, ImageCompositeMasked, EmptyImage, PreviewImage, MarkdownNote]
 patterns: []
 missing: []

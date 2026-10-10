@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_capybara_v
 hash: 338a88ed531fcc66
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:36:56
+learned_at: 2026-10-10 22:50:06
 nodes: [MarkdownNote, SaveVideo, MarkdownNote, 4f4ddf39-1508-4d34-a35c-ff10e6ce995b, LoadImage, MarkdownNote]
 patterns: []
 missing: [4f4ddf39-1508-4d34-a35c-ff10e6ce995b]

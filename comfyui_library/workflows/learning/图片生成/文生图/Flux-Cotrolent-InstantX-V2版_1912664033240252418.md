@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux-Cotrolent-InstantX-V2版_1912664033240252418.json
-name: Flux-Cotrolent-InstantX-V2版_1912664033240252418.json
+key: Flux-Cotrolent-InstantX-V2版_1912664033240252418.json
+name: Flux-Cotrolent-InstantX-V2版_1912664033240252418
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux-Cotrolent-InstantX-V2版_1912664033240252418.json
 hash: c02bb6b9418d70b6
 coverage: 0.6875
-learned_at: 2026-10-07 19:46:07
+learned_at: 2026-10-10 20:58:35
 nodes: [LayerUtility: PurgeVRAM, ConditioningZeroOut, VAELoader, ControlNetApplySD3, KSampler, DualCLIPLoader, CR Text, ConstrainImage|pysssss, LoraLoaderModelOnly, Joy_caption_two, Joy_caption_two_load, ShowText|pysssss, EmptyLatentImage, easy imageSize, AIO_Preprocessor, PreviewImage, ControlNetLoader, SetUnionControlNetType, KSampler, VAEDecode, PreviewImage, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, ControlNetLoader, SetUnionControlNetType, ControlNetApplySD3, SaveImage, LoadImage, UNETLoader, CLIPTextEncode, VAEDecode, PreviewImage]
 patterns: [text_to_image]
 missing: [CR Text, ConstrainImage|pysssss, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: PurgeVRAM, easy imageSize]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 1, "denoise": 1, 
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ConstrainImage|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flux-Cotrolent-InstantX-V2版_1912664033240252418.json
+# Flux-Cotrolent-InstantX-V2版_1912664033240252418.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1912664033240252418.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux-Cotrolent-InstantX-V2版_1912664033240252418.json`
 
 ## 结构
 

@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json
+key: Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json
 name: Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json
 hash: 79b2490bb4cf39bb
 coverage: 0.857143
-learned_at: 2026-10-07 02:06:48
+learned_at: 2026-10-10 20:58:40
 nodes: [RH_Screenwriter, Note, LoadImage, SaveImage, WujiUpscaler2, WujiAPI, WujiClosedSourceGenerator]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json
+# Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json`
 

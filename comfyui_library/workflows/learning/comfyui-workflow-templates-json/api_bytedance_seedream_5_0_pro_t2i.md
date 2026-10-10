@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bytedance_se
 hash: 8b46e0100415d441
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:31
+learned_at: 2026-10-10 22:43:40
 nodes: [SaveImageAdvanced, ByteDanceSeedreamNodeV3]
 patterns: []
 missing: []
@@ -32,4 +32,4 @@ missing: []
 
 **有卡**：`SaveImageAdvanced`、`ByteDanceSeedreamNodeV3`
 
-**用到的条目**：ByteDanceSeedreamNodeV3、SaveImageAdvanced、sd15-t2i-basic、sd15-t2i-lora、ByteDanceSeedreamNode、SaveImage、node、sampler_name 调整经验
+**用到的条目**：ByteDanceSeedreamNodeV3、SaveImageAdvanced、sd15-t2i-basic、sd15-t2i-lora、ByteDanceSeedreamNode、Seed、SaveImage、node

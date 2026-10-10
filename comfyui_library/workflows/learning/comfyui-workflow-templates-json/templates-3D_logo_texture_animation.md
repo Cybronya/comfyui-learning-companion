@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-3D_log
 hash: 7a83f6a173270895
 official: true
 coverage: 0.818182
-learned_at: 2026-10-07 21:36:30
+learned_at: 2026-10-10 22:49:16
 nodes: [PreviewAny, SaveImage, 97e30068-e6e5-4f5a-8b65-2889dd22f332, SaveImage, ByteDanceFirstLastFrameNode, SaveImage, SaveVideo, LoadImage, GeminiImage2Node, GeminiImage2Node, GeminiImage2Node]
 patterns: []
 missing: [97e30068-e6e5-4f5a-8b65-2889dd22f332]

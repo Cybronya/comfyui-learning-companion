@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sdxl_refiner_pro
 hash: c376af45ad93aeb5
 official: true
 coverage: 0.55
-learned_at: 2026-10-07 21:36:17
+learned_at: 2026-10-10 22:48:53
 nodes: [Note, Note, Note, Note, CheckpointLoaderSimple, CheckpointLoaderSimple, Note, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, PrimitiveNode, PrimitiveNode, EmptyLatentImage, KSamplerAdvanced, Note, KSamplerAdvanced, VAEDecode, SaveImage, MarkdownNote]
 patterns: []
 missing: []

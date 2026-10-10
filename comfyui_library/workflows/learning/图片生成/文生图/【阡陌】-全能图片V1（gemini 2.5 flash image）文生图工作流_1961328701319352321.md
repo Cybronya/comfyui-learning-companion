@@ -1,21 +1,21 @@
 ---
-key: 图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
-name: 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
+key: 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
+name: 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
 hash: 969a3cb93d2c85ed
 coverage: 0.833333
-learned_at: 2026-10-07 23:46:32
+learned_at: 2026-10-10 20:59:32
 nodes: [RH_LLMAPI_NODE, ShowText|pysssss, EmptyImage, RH_Nano_Banana_Image2Image, SaveImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
+# 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1961328701319352321.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json`
 
 ## 结构
 

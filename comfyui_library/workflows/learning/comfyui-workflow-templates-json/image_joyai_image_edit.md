@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_joyai_imag
 hash: 2a3261bfaba39ddd
 official: true
 coverage: 0.714286
-learned_at: 2026-10-07 21:35:45
+learned_at: 2026-10-10 22:48:05
 nodes: [LoadImage, 7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01, GetImageSize, ImageScaleToTotalPixels, MarkdownNote, ImageCompare, SaveImageAdvanced]
 patterns: []
 missing: [7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01]

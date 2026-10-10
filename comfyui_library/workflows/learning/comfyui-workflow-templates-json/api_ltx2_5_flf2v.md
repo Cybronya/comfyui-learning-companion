@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_ltx2_5_flf2v
 hash: d26fb425b504c03e
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:06
+learned_at: 2026-10-10 22:44:47
 nodes: [SaveVideo, LoadImage, LoadImage, LtxApi25ImageToVideo]
 patterns: []
 missing: []

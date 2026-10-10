@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_chroma_tex
 hash: fd89c0b70424d2b3
 official: true
 coverage: 0.833333
-learned_at: 2026-10-07 21:35:36
+learned_at: 2026-10-10 22:47:29
 nodes: [VAEDecode, CFGGuider, KSamplerSelect, ModelSamplingAuraFlow, VAELoader, RandomNoise, CLIPLoader, BasicScheduler, EmptySD3LatentImage, Note, SaveImage, T5TokenizerOptions, Note, SamplerCustomAdvanced, CLIPTextEncode, CLIPTextEncode, UNETLoader, MarkdownNote]
 patterns: []
 missing: []

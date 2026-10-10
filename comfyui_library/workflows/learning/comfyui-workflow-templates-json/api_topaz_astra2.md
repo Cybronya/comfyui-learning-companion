@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_topaz_astra2
 hash: b9fd9a9fa646cad5
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:54
+learned_at: 2026-10-10 22:46:16
 nodes: [LoadVideo, TopazVideoEnhanceV2, SaveVideo]
 patterns: []
 missing: []

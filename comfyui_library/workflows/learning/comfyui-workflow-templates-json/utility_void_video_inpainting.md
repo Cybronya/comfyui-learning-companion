@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_void_vid
 hash: 1f2e06b8830070ec
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:55
+learned_at: 2026-10-10 22:50:03
 nodes: [SaveVideo, LoadVideo, SaveVideo, MarkdownNote, MarkdownNote, c3157b75-484a-459e-b8de-57823bef5130]
 patterns: []
 missing: [c3157b75-484a-459e-b8de-57823bef5130]

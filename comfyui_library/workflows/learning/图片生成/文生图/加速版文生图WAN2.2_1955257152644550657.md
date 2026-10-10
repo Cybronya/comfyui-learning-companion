@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json
-name: 加速版文生图WAN2.2_1955257152644550657.json
+key: 加速版文生图WAN2.2_1955257152644550657.json
+name: 加速版文生图WAN2.2_1955257152644550657
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json
 hash: d73784a42af96a67
 coverage: 0.909091
-learned_at: 2026-10-07 23:24:20
+learned_at: 2026-10-10 20:59:36
 nodes: [VAELoader, CLIPLoader, UNETLoader, CLIPTextEncode, VAEDecode, ModelSamplingAuraFlow, MarkdownNote, KSampler, EmptySD3LatentImage, SaveImage, CLIPTextEncode]
 patterns: []
 missing: []
 parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 486982420453123, "steps": 20}
 ---
 
-# 图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json
+# 加速版文生图WAN2.2_1955257152644550657.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1955257152644550657.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json`
 
 ## 结构
 

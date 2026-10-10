@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_mjm_lo
 hash: b883eca16800e76a
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:36:38
+learned_at: 2026-10-10 22:49:32
 nodes: [PreviewImage, SaveVideo, LoadImage, 3313ce14-acfd-4a9c-9f0c-a1b01147e934, MarkdownNote]
 patterns: []
 missing: [3313ce14-acfd-4a9c-9f0c-a1b01147e934]

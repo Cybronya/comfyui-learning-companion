@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1图片换头换脸｜人像替换自然贴合｜光影肤色都照顾到_2102597696380030977.json
-name: Qwen Image 2.1图片换头换脸｜人像替换自然贴合｜光影肤色都照顾到_2102597696380030977.json
+name: Qwen Image 2.1图片换头换脸｜人像替换自然贴合｜光影肤色都照顾到_2102597696380030977
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片换头换脸｜人像替换自然贴合｜光影肤色都照顾到_2102597696380030977.json
 hash: f7256001a1a80fab
 coverage: 0.9
-learned_at: 2026-10-09 22:19:29
+learned_at: 2026-10-10 20:48:06
 nodes: [QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, EmptyLatentImage, TextGenerateLTX2Prompt, BatchImagesNode, ComfySwitchNode, VAEDecode, LoadImage, LoadImage, KSampler, VAELoader, CLIPLoader, UNETLoader, SaveImage, ResolutionSelector, JjkText, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1图片换头换脸｜人像替换自然贴合｜光影肤色都照顾到_2102597696380030977.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102597696380030977.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片换头换脸｜人像替换自然贴合｜光影肤色都照顾到_2102597696380030977.json`
 
 ## 结构
 

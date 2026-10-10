@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json
+key: Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json
 name: Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json
 hash: 6b01f80598fffa86
 coverage: 0.782609
-learned_at: 2026-10-07 02:28:14
+learned_at: 2026-10-10 20:59:07
 nodes: [TextGenerate, CLIPLoader, StringConstantMultiline, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, UNETLoader, ConditioningZeroOut, LoraLoaderModelOnly, CLIPLoader, VAELoader, ResolutionSelector, KSampler, ImageScaleBy, TextEncodeQwenImage21, EmptyLatentImage, VAEDecode, easy clearCacheAll, PreviewImage, SaveImage, Fast Groups Bypasser (rgthree), Label (rgthree), Label (rgthree)]
 patterns: []
 missing: [Label (rgthree), Label (rgthree), easy clearCacheAll]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json
+# Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图带提示词增强 高清放大 精干版_2103050735842840577.json`
 

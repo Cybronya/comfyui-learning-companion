@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_3d_mat
 hash: 2d29bcdb28266c75
 official: true
 coverage: 0.769231
-learned_at: 2026-10-07 21:36:37
+learned_at: 2026-10-10 22:49:29
 nodes: [RecraftRemoveBackgroundNode, PrimitiveStringMultiline, StringConcatenate, PrimitiveStringMultiline, StringConcatenate, LoadImage, BatchImagesNode, GeminiImage2Node, LoadImage, ImageCompare, SaveImage, SaveImage, PrimitiveStringMultiline]
 patterns: []
 missing: []

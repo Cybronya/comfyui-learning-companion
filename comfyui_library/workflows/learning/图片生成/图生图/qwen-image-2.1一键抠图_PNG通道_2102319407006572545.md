@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json
-name: qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json
+name: qwen-image-2.1一键抠图_PNG通道_2102319407006572545
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json
 hash: f85e0bbb7675c42e
 coverage: 0.916667
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:12
 nodes: [CLIPLoader, VAELoader, QwenImage21Cache, SaveImageAdvanced, KSampler, UNETLoader, TextEncodeQwenImage21, LoadImage, SaveImage, VAEDecode, EmptyImage, PreviewImage]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 # 图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102319407006572545.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen-image-2.1一键抠图_PNG通道_2102319407006572545.json`
 
 ## 结构
 

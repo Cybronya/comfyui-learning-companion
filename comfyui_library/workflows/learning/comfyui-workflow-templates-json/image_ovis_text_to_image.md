@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ovis_text_
 hash: 6e9dd1168c854573
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:54
+learned_at: 2026-10-10 22:48:24
 nodes: [SaveImage, MarkdownNote, 5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1]
 patterns: []
 missing: [5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1]

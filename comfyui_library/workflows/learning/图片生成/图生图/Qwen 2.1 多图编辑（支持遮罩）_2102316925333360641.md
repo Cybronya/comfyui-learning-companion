@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json
-name: Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json
+name: Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json
 hash: a00463fd04841900
 coverage: 0.628571
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:04
 nodes: [Image Comparer (rgthree), LoadImage, GoohaiUniversalSlider, LoadImage, ComfySwitchNode, ResolutionSelector, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ModelConfig_EditUtils, PathchSageAttentionKJ, QwenImage21EditApply_EditUtils, ConditioningZeroOut, VAEDecode, EmptyLatentImage, CropWithPadInfo_EditUtils, KSampler, CropWithPadInfo_EditUtils, Fast Bypasser (rgthree), 布尔孤海, SaveImage, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, VAELoader, EditTextEncode_EditUtils, LoadImage, workflow>遮罩逻辑, QwenImage21ConfigPreparer_EditUtils, PrimitiveStringMultiline, 孤海注释]
 patterns: []
 missing: [Fast Bypasser (rgthree), workflow>遮罩逻辑, 布尔孤海]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 # 图片生成/图生图/Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102316925333360641.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wan2_6_t2v.j
 hash: 0eb00a4d396de5f0
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:35:07
+learned_at: 2026-10-10 22:46:40
 nodes: [SaveVideo, WanTextToVideoApi]
 patterns: []
 missing: []

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
-name: Flux最新Controlnet--Flex.2_1916356826265489409.json
+key: Flux最新Controlnet--Flex.2_1916356826265489409.json
+name: Flux最新Controlnet--Flex.2_1916356826265489409
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
 hash: 5645c3abd11d58eb
 coverage: 0.636364
-learned_at: 2026-10-07 22:07:47
+learned_at: 2026-10-10 20:58:38
 nodes: [ShowText|pysssss, LayerUtility: TextJoin, DualCLIPLoader, VAELoader, SaveImage, VAEDecode, Note, GetNode, PreviewImage, PreviewImage, Image Comparer (rgthree), UNETLoader, SetNode, LoadImage, ImageScaleToTotalPixels, DWPreprocessor, RH_Captioner, Flex2Conditioner, KSampler, Flex2Conditioner, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, ImageScaleToTotalPixels, ImageScaleToTotalPixels, DownloadAndLoadDepthAnythingV2Model, PreviewImage, DepthAnything_V2, EmptyLatentImage, LoraLoaderModelOnly, CR Text, Note, Note]
 patterns: [text_to_image]
 missing: [CR Text, LayerUtility: TextJoin]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
+# Flux最新Controlnet--Flex.2_1916356826265489409.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1916356826265489409.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json`
 
 ## 结构
 

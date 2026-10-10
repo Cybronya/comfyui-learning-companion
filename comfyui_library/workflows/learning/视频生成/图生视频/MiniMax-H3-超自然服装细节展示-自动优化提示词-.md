@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/MiniMax-H3-超自然服装细节展示-自动优化提示词-.json
 hash: 00f1ff5c4351f6a3
 coverage: 0.837838
-learned_at: 2026-10-07 00:33:22
+learned_at: 2026-10-10 22:53:21
 nodes: [CLIPLoader, VAELoader, VAELoader, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, RandomNoise, KSamplerSelect, BasicGuider, BasicScheduler, VAEDecode, VAEDecodeAudio, CreateVideo, LoraLoaderModelOnly, ModelPreviewOverrideKJ, UNETLoader, MiniMaxH3ReferenceToVideo, LoadImage, LoadImage, MarkdownNote, SamplerCustomAdvanced, LoadImage, ComfyMathExpression, BlockSparseAttention, ModelAttentionBackend, MiniMaxH3SigmaShift, MiniMaxChunkFeedForward, PrimitiveStringMultiline, SaveVideo, LoadImage, LoadImage, INTConstant, ResolutionSelector, easy seed, ShowText|pysssss, PrimitiveStringMultiline, PrimitiveStringMultiline, MiniMaxH3PromptEnhancerT8]
 patterns: []
 missing: [easy seed]

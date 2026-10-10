@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
-name: Wan2.2 单模低噪写实文生图_1950729804771430402.json
+key: Wan2.2 单模低噪写实文生图_1950729804771430402.json
+name: Wan2.2 单模低噪写实文生图_1950729804771430402
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
 hash: 9973aa3d98d7d37d
 coverage: 0.615385
-learned_at: 2026-10-07 22:58:37
+learned_at: 2026-10-10 20:59:13
 nodes: [CLIPTextEncode, VAEDecode, LoraLoader, LoraLoader, MarkdownNote, MarkdownNote, CLIPLoader, VAELoader, LoraLoader, MarkdownNote, KSampler, CLIPTextEncode, EmptyHunyuanLatentVideo, ImpactInt, CFGZeroStarAndInit, CR Text, ImpactSwitch, ImpactInt, CR Text Concatenate, easy showAnything, Note, SaveImage, CR Text, UNETLoader, RH_LLMAPI_NODE, MarkdownNote]
 patterns: [lora]
 missing: [CR Text, CR Text, CR Text Concatenate]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA.s
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
+# Wan2.2 单模低噪写实文生图_1950729804771430402.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950729804771430402.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json`
 
 ## 结构
 

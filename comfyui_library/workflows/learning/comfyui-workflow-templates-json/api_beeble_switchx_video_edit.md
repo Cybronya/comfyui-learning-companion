@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_beeble_switc
 hash: 337d004a1cc32779
 official: true
 coverage: 0.7
-learned_at: 2026-10-07 21:33:17
+learned_at: 2026-10-10 22:43:11
 nodes: [LoadImage, MarkdownNote, BeebleSwitchXVideoEdit, LoadVideo, SaveVideo, SaveVideo, GetVideoComponents, Video Slice, GetImageSize, PreviewAny]
 patterns: []
 missing: [Video Slice]

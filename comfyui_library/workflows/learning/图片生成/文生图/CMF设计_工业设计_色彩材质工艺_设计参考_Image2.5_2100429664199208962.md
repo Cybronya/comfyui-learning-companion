@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962.json
+key: CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962.json
 name: CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962.json
 hash: 710045e86ecad80a
 coverage: 0.6
-learned_at: 2026-10-07 03:04:55
+learned_at: 2026-10-10 21:26:42
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962.json
+# CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/CMF设计_工业设计_色彩材质工艺_设计参考_Image2.5_2100429664199208962.json`
 

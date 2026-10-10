@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/一键运行：qwen image  2.1 编辑 （图像选择、文本切换、高清放大）_2107330978216759298.json
 hash: 340dc2546bef686d
 coverage: 0.285714
-learned_at: 2026-10-07 02:41:33
+learned_at: 2026-10-10 20:48:14
 nodes: [LayerFilter: HDREffects, GetNode, GetNode, SetNode, CR Seed, KSampler (Efficient), VAELoader, Fast Groups Bypasser (rgthree), Label (rgthree), Label (rgthree), VOSR2Upscale, VOSR2ModelLoader, SplitImageWithAlpha, Image Comparer (rgthree), QwenImage21Cache, LoadImage, CLIPLoader, ImageScaleToTotalPixels, ImageScaleToTotalPixels, TextEncodeQwenImage21, LoadImage, ImageScaleToTotalPixels, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, CR Text, SetNode, GetNode, SetNode, ShowText|pysssss, GetNode, KOOK_SaveJPGImage, Image Comparer (rgthree), GetNode, SetNode, GetNode, GetNode, ConditioningZeroOut, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, LoadImage, PromptExpand, CR Text Input Switch, UNETLoader, SetNode, PreviewImage, easy imageChooser, Note]
 patterns: []
 missing: [CR Text, CR Text Input Switch, Label (rgthree), Label (rgthree), LayerFilter: HDREffects, easy imageChooser, KSampler (Efficient), CR Seed, PromptExpand]

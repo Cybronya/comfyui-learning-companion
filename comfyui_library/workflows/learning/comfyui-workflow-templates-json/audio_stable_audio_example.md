@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_stable_aud
 hash: 15fccec0aa3fd6bb
 official: true
 coverage: 0.888889
-learned_at: 2026-10-07 21:35:20
+learned_at: 2026-10-10 22:47:01
 nodes: [CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, CLIPLoader, EmptyLatentAudio, KSampler, VAEDecodeAudio, MarkdownNote, SaveAudioAdvanced]
 patterns: []
 missing: []

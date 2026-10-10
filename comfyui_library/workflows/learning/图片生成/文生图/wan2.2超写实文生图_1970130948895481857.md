@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json
-name: wan2.2超写实文生图_1970130948895481857.json
+key: wan2.2超写实文生图_1970130948895481857.json
+name: wan2.2超写实文生图_1970130948895481857
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json
 hash: 60cea33b7befb1ca
 coverage: 0.9
-learned_at: 2026-10-09 02:01:39
+learned_at: 2026-10-10 20:59:27
 nodes: [LayerUtility: PurgeVRAM, EmptyLatentImage, LoraLoaderModelOnly, PathchSageAttentionKJ, CheckpointLoaderSimple, CLIPTextEncode, KSampler, VAEDecode, SaveImage, CLIPTextEncode]
 patterns: [text_to_image]
 missing: [LayerUtility: PurgeVRAM]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "wan2.2-t2v-rapid-aio-v10.
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json
+# wan2.2超写实文生图_1970130948895481857.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1970130948895481857.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json`
 
 ## 结构
 

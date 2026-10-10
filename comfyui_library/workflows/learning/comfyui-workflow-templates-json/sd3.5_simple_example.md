@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sd3.5_simple_exa
 hash: 22636f8ea8d35f41
 official: true
 coverage: 0.875
-learned_at: 2026-10-07 21:36:17
+learned_at: 2026-10-10 22:48:52
 nodes: [VAEDecode, SaveImage, CLIPTextEncode, EmptySD3LatentImage, CheckpointLoaderSimple, CLIPTextEncode, KSampler, MarkdownNote]
 patterns: []
 missing: []

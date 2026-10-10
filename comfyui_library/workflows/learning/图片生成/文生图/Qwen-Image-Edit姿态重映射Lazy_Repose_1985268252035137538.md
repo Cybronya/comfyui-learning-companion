@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json
-name: Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json
+key: Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json
+name: Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json
 hash: 644f4127bb420aa4
 coverage: 0.730769
-learned_at: 2026-10-09 20:13:10
+learned_at: 2026-10-10 20:59:01
 nodes: [CFGNorm, EmptySD3LatentImage, MarkdownNote, MarkdownNote, ModelSamplingAuraFlow, KSampler, VAEDecode, TextEncodeQwenImageEditPlus, PreviewImage, AIO_Preprocessor, GetImageSize, ImageConcanate, ImageResizeKJv2, ImageConcanate, SaveImage, SaveImage, MarkdownNote, MarkdownNote, MarkdownNote, ImageScaleToTotalPixels, MarkdownNote, CheckpointLoaderSimple, LoadImage, TextEncodeQwenImageEditPlus, LoadImage, VAEEncode]
 patterns: [image_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "Qwen-Rapid-AIO-NSFW-v7.1.safetensors", "de
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json
+# Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1985268252035137538.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit姿态重映射Lazy_Repose_1985268252035137538.json`
 
 ## 结构
 

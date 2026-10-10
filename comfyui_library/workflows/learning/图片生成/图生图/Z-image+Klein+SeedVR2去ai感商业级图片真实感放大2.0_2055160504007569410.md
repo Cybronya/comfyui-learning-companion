@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json
-name: Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json
+name: Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json
 hash: 1fcced1b84bdf947
 coverage: 0.693069
-learned_at: 2026-10-09 22:36:21
+learned_at: 2026-10-10 20:48:11
 nodes: [SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, NunchakuFluxDiTLoader, NunchakuTextEncoderLoader, VAELoader, FluxForwardODESampler, BasicScheduler, FluxDeGuidance, DisableNoise, VAEEncode, FluxDeGuidance, InFluxModelSamplingPred, BasicGuider, SamplerCustomAdvanced, DisableNoise, OutFluxModelSamplingPred, BasicScheduler, FluxReverseODESampler, BasicGuider, SamplerCustomAdvanced, FlipSigmas, ImageResize+, LoadImage, VAEEncode, ImageScaleBy, ImageResize+, Get resolution [Crystools], TTP_Tile_image_size, TTP_Image_Tile_Batch, SimpleMath+, ImageScaleBy, Get resolution [Crystools], CLIPLoader, VAELoader, PreviewImage, PreviewImage, PreviewImage, SaveImage, Image Comparer (rgthree), PreviewImage, PreviewImage, CLIPTextEncode, Latent Noise Injection, Note, Latent Noise Injection, Float, Note, Note, Note, Note, VAEDecode, VAEDecode, CLIPTextEncode, UNETLoader, ModelSamplingAuraFlow, Note, JWFloat, easy int, JWFloat, JWFloat, JWFloat, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, Float, easy cleanGpuUsed, KSampler, KSampler, PreviewImage, easy imageColorMatch, ImageResize+, LayerUtility: PurgeVRAM V2, AILab_QwenVL, CR Text, ShowText|pysssss, TTP_Image_Assy, ImageUpscaleWithModel, LayerUtility: PurgeVRAM V2, KSamplerSelect, UpscaleModelLoader, Upscale Model Loader, ConditioningZeroOut, AdvancedLyingSigmaSampler, UltimateSDUpscaleCustomSample, VAELoader, CLIPLoader, easy cleanGpuUsed, CLIPTextEncode, KSampler, VAEEncode, ReferenceLatent, VAEDecode, ConditioningZeroOut, VAEDecode, easy imageColorMatch, UNETLoader_Any, LoraLoaderModelOnly, CLIPTextEncode, LoraLoaderModelOnly]
 patterns: [image_to_image]
 missing: [CR Text, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, SimpleMath+, easy cleanGpuUsed, easy cleanGpuUsed, easy imageColorMatch, easy imageColorMatch, easy int, Get resolution [Crystools], Get resolution [Crystools], ImageResize+, ImageResize+, ImageResize+, Latent Noise Injection, Latent Noise Injection, Upscale Model Loader]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2055160504007569410.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Z-image+Klein+SeedVR2去ai感商业级图片真实感放大2.0_2055160504007569410.json`
 
 ## 结构
 

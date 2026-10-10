@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_minimax_h3
 hash: 8f6c8f1bbc732b9b
 official: true
 coverage: 0.615385
-learned_at: 2026-10-07 21:37:08
+learned_at: 2026-10-10 22:50:27
 nodes: [ResolutionSelector, MarkdownNote, MarkdownNote, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, BasicGuider, UNETLoader, CLIPLoader, RandomNoise, CreateVideo, ComfyMathExpression, PrimitiveFloat, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, MarkdownNote, ComfySwitchNode, ComfySwitchNode, PrimitiveInt, PrimitiveInt, LoraLoaderModelOnly, PrimitiveBoolean, MiniMaxH3FunControlNetApply, ModelPatchLoader, LoadVideo, 622cceeb-7ba3-4dd9-b0e8-00066c5222a4, PreviewImage, Video Slice, SaveVideo, MarkdownNote, GetVideoComponents, GetImageSize, PrimitiveBoolean, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [622cceeb-7ba3-4dd9-b0e8-00066c5222a4, Video Slice]

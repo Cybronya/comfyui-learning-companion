@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json
-name: qwen image2.1产品细节图_2102470856244031490.json
+name: qwen image2.1产品细节图_2102470856244031490
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json
 hash: 45a9981ce8ba6ca9
 coverage: 0.535714
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:12
 nodes: [VAELoader, CLIPLoader, TextGenerateLTX2Prompt, TextEncodeQwenImage21, KSampler, easy setNode, VAEDecode, ShowText|pysssss, EmptyLatentImage, ComfySwitchNode, LoadImage, CLIPLoader, CLIPLoader, SetNode, SetNode, GetNode, ResolutionSelector, LayerUtility: ImageReelComposit, LayerUtility: ImageReel, UNETLoader, SaveImage, PreviewImage, Image Comparer (rgthree), CR Prompt Text, Note, LoraLoaderModelOnly, QwenImage21Cache, Anything Everywhere3]
 patterns: []
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, easy setNode, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 # 图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102470856244031490.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json`
 
 ## 结构
 

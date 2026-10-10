@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089.json
+key: Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089.json
 name: Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089.json
 hash: 0bf450869286d25c
 coverage: 0.880952
-learned_at: 2026-10-07 02:27:55
+learned_at: 2026-10-10 20:59:07
 nodes: [CLIPTextEncode, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, EmptyLatentImage, KSampler, VAEDecode, PreviewImage, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089.json
+# Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图写实风格 照片级质感画面直出_2105475614315737089.json`
 

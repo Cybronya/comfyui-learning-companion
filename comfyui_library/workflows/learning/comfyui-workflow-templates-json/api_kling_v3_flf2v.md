@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_v3_flf
 hash: c82194bc9c7d576a
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:04
+learned_at: 2026-10-10 22:44:44
 nodes: [LoadImage, SaveVideo, KlingFirstLastFrameNode, LoadImage]
 patterns: []
 missing: []

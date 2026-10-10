@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json
-name: Wan2.2-顶级文生图_1951984559229489154.json
+key: Wan2.2-顶级文生图_1951984559229489154.json
+name: Wan2.2-顶级文生图_1951984559229489154
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json
 hash: 7a68b588c022b00b
 coverage: 0.96
-learned_at: 2026-10-07 23:04:32
+learned_at: 2026-10-10 20:59:14
 nodes: [LoraLoaderModelOnly, UNETLoader, UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGZeroStarAndInit, EmptyHunyuanLatentVideo, ImpactInt, ImpactInt, KSamplerAdvanced, KSamplerAdvanced, ConditioningZeroOut, VAEDecode, VAEDecode, SaveImage, Image Comparer (rgthree), SaveImage, CLIPTextEncode, KSamplerAdvanced]
 patterns: []
 missing: []
 parameters: {"cfg": 10, "denoise": "beta", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
 ---
 
-# 图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json
+# Wan2.2-顶级文生图_1951984559229489154.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1951984559229489154.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json`
 
 ## 结构
 

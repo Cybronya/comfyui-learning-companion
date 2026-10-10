@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_image_s
 hash: fb5e9e3deb2664d7
 official: true
 coverage: 0.588235
-learned_at: 2026-10-07 21:36:22
+learned_at: 2026-10-10 22:49:02
 nodes: [PreviewAny, LoadImage, ElevenLabsTextToSpeech, RegexExtract, PreviewAny, PreviewAny, SaveAudioMP3, GeminiNode, SaveVideo, 98fb87e2-23b5-4ecb-aacc-365912414a12, ElevenLabsVoiceSelector, LoadAudio, ElevenLabsInstantVoiceClone, MarkdownNote, RegexExtract, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [98fb87e2-23b5-4ecb-aacc-365912414a12]

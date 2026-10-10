@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json
-name: Wan2.1 文生图+图像高清修复_1945356782250414081.json
+key: Wan2.1 文生图+图像高清修复_1945356782250414081.json
+name: Wan2.1 文生图+图像高清修复_1945356782250414081
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json
 hash: f25b826fbb5b0226
 coverage: 0.782609
-learned_at: 2026-10-07 22:52:37
+learned_at: 2026-10-10 20:59:13
 nodes: [UNETLoader, CLIPLoader, MarkdownNote, MarkdownNote, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, EmptyLatentImage, CLIPTextEncode, SaveImage, VAEDecode, KSampler, LoadImage, VAEEncode, ImageScale, LayerUtility: ImageScaleRestore V2, UpscaleModelLoader, ShowText|pysssss, JJC_JoyCaption, ImageUpscaleWithModel, RH_Translator, VAELoader, Image Comparer (rgthree)]
 patterns: [text_to_image, image_to_image]
 missing: [LayerUtility: ImageScaleRestore V2]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.10000000000000002, "height"
 discoveries: [次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json
+# Wan2.1 文生图+图像高清修复_1945356782250414081.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1945356782250414081.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json`
 
 ## 结构
 

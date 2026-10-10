@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
-name: Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
+key: Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
+name: Qwen Image InstantX Controlnet 控制集合_1961108839028428802
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
 hash: d4003b65bc230cb9
 coverage: 0.74359
-learned_at: 2026-10-07 23:46:14
+learned_at: 2026-10-10 20:58:55
 nodes: [ControlNetApplySD3, EmptySD3LatentImage, CFGNorm, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, ModelSamplingAuraFlow, SeedVR2GGUF, SaveImage, Image Comparer (rgthree), LoadImage, Reroute, SeedVR2BlockSwap, PreviewImage, ControlNetLoader, SetUnionControlNetType, GetImageSize, ShowText|pysssss, LoadImage, OpenposePreprocessor, PreviewImage, CLIPLoader, UNETLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, ImageConcanate, VAEDecode, KSampler, Reroute, SaveImage, ControlNetApplySD3, EmptySD3LatentImage, CFGNorm, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, ModelSamplingAuraFlow, CLIPLoader, UNETLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, ImageConcanate, VAEDecode, KSampler, SaveImage, ShowText|pysssss, AIO_Preprocessor, PreviewImage, GetImageSize, ControlNetLoader, ControlNetApplySD3, EmptySD3LatentImage, CFGNorm, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, ModelSamplingAuraFlow, PreviewImage, LoadImage, CLIPLoader, UNETLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, ImageConcanate, VAEDecode, KSampler, ShowText|pysssss, PreviewImage, Reroute, GetImageSize, ControlNetLoader, SaveImage, SetUnionControlNetType, AIO_Preprocessor, SetUnionControlNetType, LoadImage, PreviewImage, Reroute]
 patterns: []
 missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: LoadJoyCaptionBeta1Model]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "controlnet_strength": 1.0000000000000002, "denoise": 1, 
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
+# Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1961108839028428802.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json`
 
 ## 结构
 

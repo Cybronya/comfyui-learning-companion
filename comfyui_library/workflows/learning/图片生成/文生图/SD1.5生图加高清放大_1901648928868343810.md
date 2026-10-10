@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/SD1.5生图加高清放大_1901648928868343810.json
+key: SD1.5生图加高清放大_1901648928868343810.json
 name: SD1.5生图加高清放大_1901648928868343810
 type: Text To Image
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/SD1.5生图加高清放大_1901648928868343810.json
 hash: 73b8eead885eaa70
 coverage: 1
-learned_at: 2026-10-07 03:18:01
+learned_at: 2026-10-10 20:59:10
 nodes: [KSampler, VAEDecode, UpscaleModelLoader, ImageUpscaleWithModel, VAEEncode, EmptyLatentImage, CLIPTextEncode, CLIPTextEncode, KSampler, SaveImage, VAEDecode, CheckpointLoaderSimple]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "超绝精美古风大模型 _v1.0.safetensors", "denoise": 0.75, "height": 768, "sampler_name": "dpmpp_2m", "scheduler": "karras", "seed": 477381964747527, "steps": 50, "width": 512}
 ---
 
-# 图片生成/文生图/SD1.5生图加高清放大_1901648928868343810.json
+# SD1.5生图加高清放大_1901648928868343810.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SD1.5生图加高清放大_1901648928868343810.json`
 

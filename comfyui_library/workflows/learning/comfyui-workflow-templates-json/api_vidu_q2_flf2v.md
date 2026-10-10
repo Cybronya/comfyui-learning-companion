@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_vidu_q2_flf2
 hash: bb699c0fe1192bf8
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:35:02
+learned_at: 2026-10-10 22:46:32
 nodes: [LoadImage, LoadImage, SaveVideo, Vidu2StartEndToVideoNode]
 patterns: []
 missing: []

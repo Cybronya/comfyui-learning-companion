@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_kandinsky5
 hash: c39ffd24850a6e4f
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:37:00
+learned_at: 2026-10-10 22:50:12
 nodes: [LoadImage, MarkdownNote, SaveVideo, MarkdownNote, 6a20d49e-c1e9-4e92-a7aa-f5550649f6f0]
 patterns: []
 missing: [6a20d49e-c1e9-4e92-a7aa-f5550649f6f0]

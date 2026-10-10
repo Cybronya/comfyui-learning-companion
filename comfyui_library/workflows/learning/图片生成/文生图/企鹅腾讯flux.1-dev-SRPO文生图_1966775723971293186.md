@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json
-name: 企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json
+key: 企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json
+name: 企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json
 hash: 51c26fc27c1f603e
 coverage: 0.9375
-learned_at: 2026-10-08 00:02:17
+learned_at: 2026-10-10 20:59:35
 nodes: [KSamplerSelect, RandomNoise, UNETLoader, SaveImage, CLIPTextEncode, CR SDXL Aspect Ratio, EmptySD3LatentImage, VAEDecode, SamplerCustomAdvanced, BasicScheduler, BasicGuider, FluxGuidance, DualCLIPLoader, VAELoader, RH_Translator, ModelSamplingFlux]
 patterns: []
 missing: [CR SDXL Aspect Ratio]
 discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json
+# 企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1966775723971293186.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/企鹅腾讯flux.1-dev-SRPO文生图_1966775723971293186.json`
 
 ## 结构
 

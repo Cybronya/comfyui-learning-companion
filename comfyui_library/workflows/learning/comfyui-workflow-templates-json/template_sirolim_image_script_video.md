@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_sirolim
 hash: 68f350f74fa386ce
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:36:28
+learned_at: 2026-10-10 22:49:12
 nodes: [PreviewAny, PreviewAny, PreviewAny, a03ed0e4-3a0d-41cd-aadd-b5d67704085f, c44367fd-75c5-458f-b021-73da52bf832b, df0c6995-6d81-44a3-86ef-0e3971682e89, MarkdownNote, LoadImage, PrimitiveNode, PreviewAny, GeminiNanoBanana2, PreviewImage, SaveVideo, KlingOmniProImageToVideoNode, GeminiNode]
 patterns: []
 missing: [a03ed0e4-3a0d-41cd-aadd-b5d67704085f, c44367fd-75c5-458f-b021-73da52bf832b, df0c6995-6d81-44a3-86ef-0e3971682e89]

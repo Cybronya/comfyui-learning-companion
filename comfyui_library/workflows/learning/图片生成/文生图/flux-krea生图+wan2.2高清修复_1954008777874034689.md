@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/flux-krea生图+wan2.2高清修复_1954008777874034689.json
-name: flux-krea生图+wan2.2高清修复_1954008777874034689.json
+key: flux-krea生图+wan2.2高清修复_1954008777874034689.json
+name: flux-krea生图+wan2.2高清修复_1954008777874034689
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/flux-krea生图+wan2.2高清修复_1954008777874034689.json
 hash: fe83c8ae8a452290
 coverage: 0.815789
-learned_at: 2026-10-07 23:17:48
+learned_at: 2026-10-10 20:59:19
 nodes: [PathchSageAttentionKJ, ModelSamplingSD3, UNETLoader, DualCLIPLoader, LoraLoaderModelOnly, KSamplerSelect, FluxGuidance, BasicGuider, SamplerCustomAdvanced, RandomNoise, BasicScheduler, VAELoader, VAEEncode, VAEDecode, CLIPLoader, VAELoader, LoraLoader, CLIPTextEncode, CLIPTextEncode, CFGZeroStarAndInit, Reroute, Image Comparer (rgthree), LoraLoader, CLIPTextEncode, SaveImage, VAEDecode, LoraLoader, UNETLoader, KSampler, LayerUtility: ImageScaleByAspectRatio V2, ImageUpscaleWithModel, EmptyLatentImage, CR Text, CR Text Concatenate, CR Text, UpscaleModelLoader, SaveImage, easy seed]
 patterns: [text_to_image, lora]
 missing: [CR Text, CR Text, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, easy seed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.4000000000000001, "height":
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/flux-krea生图+wan2.2高清修复_1954008777874034689.json
+# flux-krea生图+wan2.2高清修复_1954008777874034689.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1954008777874034689.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/flux-krea生图+wan2.2高清修复_1954008777874034689.json`
 
 ## 结构
 

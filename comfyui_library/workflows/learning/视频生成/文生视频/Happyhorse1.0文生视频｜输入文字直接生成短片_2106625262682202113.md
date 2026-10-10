@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Happyhorse1.0文生视频｜输入文字直接生成短片_2106625262682202113.json
 hash: 0ecf2e9ebda72b5c
 coverage: 1
-learned_at: 2026-10-10 00:07:17
+learned_at: 2026-10-10 22:59:56
 nodes: [RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 patterns: []
 missing: []

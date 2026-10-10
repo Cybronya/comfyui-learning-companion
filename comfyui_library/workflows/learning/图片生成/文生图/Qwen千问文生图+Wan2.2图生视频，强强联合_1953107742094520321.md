@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
-name: Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
+key: Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
+name: Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
 hash: 840fa0ca48eb6268
 coverage: 0.76087
-learned_at: 2026-10-07 23:11:37
+learned_at: 2026-10-10 20:59:09
 nodes: [WanVideoLoraSelect, WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader, WanVideoTextEncode, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoModelLoader, ImageResizeKJv2, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoDecode, GetImageSizeAndCount, WanVideoImageToVideoEncode, CLIPVisionLoader, UNETLoader, VAELoader, CLIPLoader, EmptySD3LatentImage, RH_LLMAPI_NODE, PreviewImage, WanVideoTorchCompileSettings, VAEDecode, ModelSamplingAuraFlow, KSampler, CR Text, CLIPTextEncode, CLIPTextEncode, easy cleanGpuUsed, easy cleanGpuUsed, easy showAnything, LoadImage, LoadImage, WanVideoClipVisionEncode, WanVideoSampler, WanVideoSampler, VHS_VideoCombine, VHS_VideoCombine]
 patterns: []
 missing: [CR Text, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
+# Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1953107742094520321.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json`
 
 ## 结构
 

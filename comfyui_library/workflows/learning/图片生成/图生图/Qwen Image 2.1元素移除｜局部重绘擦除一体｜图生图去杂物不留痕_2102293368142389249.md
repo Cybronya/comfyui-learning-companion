@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json
-name: Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json
+name: Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json
 hash: f0957934a65f925b
 coverage: 0.820896
-learned_at: 2026-10-09 22:27:11
+learned_at: 2026-10-10 20:48:06
 nodes: [ResolutionSelector, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, QwenImage21Cache, TextEncodeQwenImage21, ResizeImageMaskNode, ResizeMask, GrowMaskWithBlur, DrawMaskOnImage, PreviewImage, EmptyLatentImage, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, KSampler, LoadImage, VAEDecode, SaveImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102293368142389249.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1元素移除｜局部重绘擦除一体｜图生图去杂物不留痕_2102293368142389249.json`
 
 ## 结构
 

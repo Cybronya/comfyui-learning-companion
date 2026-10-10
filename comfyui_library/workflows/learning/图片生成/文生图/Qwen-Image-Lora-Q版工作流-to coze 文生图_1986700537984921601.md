@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json
-name: Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json
+key: Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json
+name: Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json
 hash: 722b8a5e6c5c892e
 coverage: 1
-learned_at: 2026-10-09 20:13:12
+learned_at: 2026-10-10 20:59:01
 nodes: [VAEDecode, SaveImage, VAELoader, EmptySD3LatentImage, ModelSamplingAuraFlow, ConditioningZeroOut, CLIPLoader, LoraLoaderModelOnly, KSampler, CLIPTextEncode, UNETLoader]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json
+# Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1986700537984921601.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Lora-Q版工作流-to coze 文生图_1986700537984921601.json`
 
 ## 结构
 

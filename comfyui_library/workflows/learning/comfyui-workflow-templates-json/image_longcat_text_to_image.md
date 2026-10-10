@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_longcat_te
 hash: 0df9cfdf378e68b3
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:48
+learned_at: 2026-10-10 22:48:12
 nodes: [ResolutionSelector, MarkdownNote, SaveImage, 4cdb8c8f-7b15-4921-a2b1-383d5c2d9105]
 patterns: []
 missing: [4cdb8c8f-7b15-4921-a2b1-383d5c2d9105]

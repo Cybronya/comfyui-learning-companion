@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
-name: lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
+key: lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
+name: lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
 hash: ac984d1c055b83a3
 coverage: 0.472222
-learned_at: 2026-10-07 23:18:12
+learned_at: 2026-10-10 20:59:22
 nodes: [MatAnyoneVideoMatting, GroundingDinoSAMSegment (segment anything), SAMModelLoader (segment anything), GroundingDinoModelLoader (segment anything), MaskPreview+, Reroute, MaskToImage, GetImagesFromBatchIndexed, TransparentBGSession+, ImageRemoveBackground+, LayerUtility: PurgeVRAM, CLIPVisionLoader, WanImageToVideo, PrimitiveNode, Reroute (rgthree), Reroute (rgthree), PathchSageAttentionKJ, Reroute (rgthree), EmptyHunyuanLatentVideo, KSamplerSelect, BasicScheduler, CFGGuider, VAEDecodeTiled, Reroute (rgthree), VAEDecodeTiled, Reroute (rgthree), Reroute (rgthree), MathExpression|pysssss, SplitSigmas, CLIPTextEncode, CLIPTextEncode, CLIPVisionEncode, ImageScale, Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), GetLatentRangeFromBatch, Reroute (rgthree), ScheduledCFGGuidance, Reroute (rgthree), MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, Reroute, Reroute, ImageUpscaleWithModel, UpscaleModelLoader, SamplerCustomAdvanced, SamplerCustomAdvanced, VHS_VideoCombine, RandomNoise, CLIPLoader, VAELoader, VHS_VideoCombine, MaskPreview+, PreviewImage, LoraLoaderModelOnly, VHS_VideoCombine, RHHiddenNodes, UnetLoaderGGUF, VHS_VideoCombine, PreviewImage, Image Crop Face, LoadImage, PrimitiveNode, Note]
 patterns: []
 missing: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), Image Crop Face, ImageRemoveBackground+, LayerUtility: PurgeVRAM, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, SAMModelLoader (segment anything), TransparentBGSession+, MaskPreview+, MaskPreview+]
 discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `Image Crop Face` 知识库中没有该节点类型的任何知识, 次要节点 `ImageRemoveBackground+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SAMModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `TransparentBGSession+` 知识库中没有该节点类型的任何知识, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
+# lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1954537986593583106.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json`
 
 ## 结构
 

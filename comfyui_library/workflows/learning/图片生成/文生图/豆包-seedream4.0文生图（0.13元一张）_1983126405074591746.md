@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json
-name: 豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json
+key: 豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json
+name: 豆包-seedream4.0文生图（0.13元一张）_1983126405074591746
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json
 hash: 94a6bb9fc5f57636
 coverage: 0.4
-learned_at: 2026-10-09 20:05:45
+learned_at: 2026-10-10 20:59:57
 nodes: [CR Text, PrimitiveNode, SaveImage, PreviewImage, RH_Jimeng4_Image2Image]
 patterns: []
 missing: [CR Text]
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json
+# 豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1983126405074591746.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/豆包-seedream4.0文生图（0.13元一张）_1983126405074591746.json`
 
 ## 结构
 

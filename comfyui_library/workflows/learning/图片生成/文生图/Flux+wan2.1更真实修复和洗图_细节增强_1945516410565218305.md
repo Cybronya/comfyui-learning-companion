@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json
-name: Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json
+key: Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json
+name: Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json
 hash: e970033f2df2c49c
 coverage: 0.763158
-learned_at: 2026-10-07 22:52:40
+learned_at: 2026-10-10 20:58:35
 nodes: [FluxGuidance, CLIPTextEncode, CLIPTextEncode, UNETLoader, RH_Captioner, Text Multiline, VAELoader, DualCLIPLoader, VAELoader, Text Concatenate, easy showAnything, CLIPLoader, CLIPTextEncode, CLIPTextEncode, VAEEncode, UNETLoader, KSampler, LoraLoaderModelOnly, KSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, PreviewImage, Image Comparer (rgthree), LayerUtility: PurgeVRAM V2, VAEDecode, SaveImage, PreviewImage, ImageSharpen, EsesImageEffectBloom, BetterFilmGrain, ModelSamplingSD3, LoadImage, ImageScaleDownToSize, CR SDXL Aspect Ratio, GetImageSizeAndCount, CR Simple Image Compare, SaveImage]
 patterns: [image_to_image]
 missing: [CR Simple Image Compare, LayerUtility: PurgeVRAM V2, Text Concatenate, Text Multiline, CR SDXL Aspect Ratio]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 0.20000000000000004, "sampler_name": "uni_pc",
 discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json
+# Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1945516410565218305.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux+wan2.1更真实修复和洗图_细节增强_1945516410565218305.json`
 
 ## 结构
 

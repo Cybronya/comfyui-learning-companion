@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sdxl_simple_exam
 hash: 7f3825deea7a3fc4
 official: true
 coverage: 0.44
-learned_at: 2026-10-07 21:36:18
+learned_at: 2026-10-10 22:48:55
 nodes: [EmptyLatentImage, Note, CheckpointLoaderSimple, PrimitiveNode, PrimitiveNode, Note, VAEDecode, Note, CLIPTextEncode, CLIPTextEncode, Note, KSamplerAdvanced, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, CheckpointLoaderSimple, Note, Note, PrimitiveNode, PrimitiveNode, Note, Note, MarkdownNote, Note, SaveImage]
 patterns: []
 missing: []

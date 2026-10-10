@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
+key: Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
 name: Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
 hash: 554cb0d98da6a2bf
 coverage: 0.86
-learned_at: 2026-10-07 02:28:17
+learned_at: 2026-10-10 20:59:07
 nodes: [TextGenerate, CLIPLoader, StringConstantMultiline, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, UNETLoader, ConditioningZeroOut, LoraLoaderModelOnly, CLIPLoader, VAELoader, ResolutionSelector, KSampler, ImageScaleBy, TextEncodeQwenImage21, EmptyLatentImage, VAEDecode, easy clearCacheAll, PreviewImage, SaveImage, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [easy clearCacheAll]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
+# Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json`
 

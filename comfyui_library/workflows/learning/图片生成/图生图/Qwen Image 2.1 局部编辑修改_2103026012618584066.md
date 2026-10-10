@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 局部编辑修改_2103026012618584066.json
-name: Qwen Image 2.1 局部编辑修改_2103026012618584066.json
+name: Qwen Image 2.1 局部编辑修改_2103026012618584066
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 局部编辑修改_2103026012618584066.json
 hash: 5617a354ae6386f6
 coverage: 0.653846
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:05
 nodes: [VAELoader, QwenImage21Cache, CLIPLoader, easy showAnything, Reroute, GrowMaskWithBlur, LayerUtility: CropByMask V2, GrowMaskWithBlur, LayerUtility: RestoreCropBox, ColorMatch, LayerUtility: ImageScaleRestore V2, VAEDecode, LoadImage, Image Comparer (rgthree), SaveImage, QwenPERewriteT8, LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text, TextEncodeQwenImage21, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, UNETLoader, QwenImage21SpectrumT8, KSampler, EmptyLatentImage, ComfySwitchNode]
 patterns: []
 missing: [LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: RestoreCropBox, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `LayerUtility: CropByMask V2` 知识库中没有该�
 
 # 图片生成/图生图/Qwen Image 2.1 局部编辑修改_2103026012618584066.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2103026012618584066.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 局部编辑修改_2103026012618584066.json`
 
 ## 结构
 

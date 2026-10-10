@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openai_fashi
 hash: 70f01c8294907b38
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:23
+learned_at: 2026-10-10 22:45:17
 nodes: [SaveImage, SaveImage, LoadImage, OpenAIGPTImageNodeV2, OpenAIGPTImageNodeV2]
 patterns: []
 missing: []

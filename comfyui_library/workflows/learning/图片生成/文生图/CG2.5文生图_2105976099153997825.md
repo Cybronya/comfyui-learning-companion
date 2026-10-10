@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/CG2.5文生图_2105976099153997825.json
+key: CG2.5文生图_2105976099153997825.json
 name: CG2.5文生图_2105976099153997825
 type: Unknown Workflow
 status: completed
@@ -7,13 +7,13 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/CG2.5文生图_2105976099153997825.json
 hash: 372837b2cd8b77fa
 coverage: 1
-learned_at: 2026-10-07 02:05:36
+learned_at: 2026-10-10 21:26:34
 nodes: [RH_RhartImageG25FlareTextToImage, SaveImage]
 patterns: []
 missing: []
 ---
 
-# 图片生成/文生图/CG2.5文生图_2105976099153997825.json
+# CG2.5文生图_2105976099153997825.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/CG2.5文生图_2105976099153997825.json`
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json
-name: MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json
+name: MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json
 hash: 8855d0b8a297debb
 coverage: 0.25
-learned_at: 2026-10-09 22:36:23
+learned_at: 2026-10-10 20:48:04
 nodes: [孤海注释, LoadImage, 孤海注释, LoadImage, 孤海注释, 孤海注释, RH_YouchuanTextToImageV82Fast, 孤海注释, PlaySound|pysssss, MarkdownNote, JjkText, 孤海注释, 孤海注释, JjkText, SaveImage, PreviewImage]
 patterns: []
 missing: [PlaySound|pysssss]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 
 # 图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2093149914611150850.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/MJ悠船V8.2 美学艺术图像模型 文生图+图生图_2093149914611150850.json`
 
 ## 结构
 

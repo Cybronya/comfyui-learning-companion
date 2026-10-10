@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json
-name: JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json
+key: JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json
+name: JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json
 hash: de9a33005d60706f
 coverage: 0.555556
-learned_at: 2026-10-07 22:22:48
+learned_at: 2026-10-10 20:58:41
 nodes: [Note Plus (mtb), easy showAnything, easy cleanGpuUsed, Reroute, Note, Fast Groups Bypasser (rgthree), VAELoader, EmptyLatentImage, FluxGuidance, ConditioningZeroOut, CLIPTextEncode, VAEDecode, easy cleanGpuUsed, RH_Translator, ShowText|pysssss, KSampler, UNETLoader, DualCLIPLoader, SaveImage, Reroute, LayerUtility: ImageScaleByAspectRatio V2, RH_Translator, ShowText|pysssss, easy cleanGpuUsed, JJC_JoyCaption_Custom, JJC_JoyCaption, TextCombinerTwo, JjkText, easy showAnything, RH_Captioner, LoadImage, JjkText, TextCombinerTwo, ShowText|pysssss, RH_Translator, RH_Prompter]
 patterns: [text_to_image]
 missing: [LayerUtility: ImageScaleByAspectRatio V2, Note Plus (mtb), easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json
+# JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1924359655332769794.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/JoyCaption3 (Beta-one版）最新提示词反推神器-StarAI_1924359655332769794.json`
 
 ## 结构
 

@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
-name: F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
+key: F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
+name: F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
 hash: f1595d7928c81196
 coverage: 1
-learned_at: 2026-10-07 19:12:41
+learned_at: 2026-10-10 20:58:30
 nodes: [SaveImage, ConditioningZeroOut, VAEDecode, CLIPTextEncode, VAELoader, KSampler, EmptySD3LatentImage, DualCLIPLoader, UNETLoader, LoraLoaderModelOnly]
 patterns: []
 missing: []
 parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 949835274990178, "steps": 30}
 ---
 
-# 图片生成/文生图/F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
+# F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1910297443941187586.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/basic_datatype_c
 hash: 8d0d1495671f79d7
 official: true
 coverage: 0.2
-learned_at: 2026-10-07 21:35:21
+learned_at: 2026-10-10 22:47:04
 nodes: [PrimitiveStringMultiline, PreviewAny, PrimitiveInt, PrimitiveFloat, PreviewAny, PreviewAny, PreviewAny, ComfyMathExpression, PreviewAny, PreviewAny, PreviewAny, PreviewAny, PreviewAny, PreviewAny, ComfyMathExpression, PreviewAny, ComfyNumberConvert, PreviewAny, ComfyMathExpression, PreviewAny]
 patterns: []
 missing: []

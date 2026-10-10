@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Worker Text2Image V1.1_1988431547948818433.json
-name: Worker Text2Image V1.1_1988431547948818433.json
+key: Worker Text2Image V1.1_1988431547948818433.json
+name: Worker Text2Image V1.1_1988431547948818433
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Worker Text2Image V1.1_1988431547948818433.json
 hash: d97df9dd7a94470b
 coverage: 0.681818
-learned_at: 2026-10-09 21:16:01
+learned_at: 2026-10-10 20:59:15
 nodes: [QwenEditResolution, PrimitiveInt, CR Text, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, LoraLoaderModelOnly, ModelSamplingAuraFlow, KSampler, SaveImage, VAEDecode, VAELoader, CLIPLoader, CLIPTextEncode, EmptyLatentImage, InversionDemoLazyIndexSwitch, InversionDemoLazyIndexSwitch, RH_LLMAPI_NODE, CLIPTextEncode, UNETLoader]
 patterns: [text_to_image]
 missing: [CR Text]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 16, "sampler_nam
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Worker Text2Image V1.1_1988431547948818433.json
+# Worker Text2Image V1.1_1988431547948818433.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1988431547948818433.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Worker Text2Image V1.1_1988431547948818433.json`
 
 ## 结构
 

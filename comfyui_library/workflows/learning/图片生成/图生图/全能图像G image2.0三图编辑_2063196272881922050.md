@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/全能图像G image2.0三图编辑_2063196272881922050.json
-name: 全能图像G image2.0三图编辑_2063196272881922050.json
+name: 全能图像G image2.0三图编辑_2063196272881922050
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/全能图像G image2.0三图编辑_2063196272881922050.json
 hash: e8c4c21c67776e61
 coverage: 0.714286
-learned_at: 2026-10-09 22:19:25
+learned_at: 2026-10-10 20:48:14
 nodes: [RH_RhartImageG2ImageToImage, MarkdownNote, SaveImage, LoadImage, LoadImage, LoadImage, CR Text]
 patterns: []
 missing: [CR Text]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/全能图像G image2.0三图编辑_2063196272881922050.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2063196272881922050.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/全能图像G image2.0三图编辑_2063196272881922050.json`
 
 ## 结构
 

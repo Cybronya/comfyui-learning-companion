@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
-name: Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
+key: Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
+name: Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
 hash: 2d6f1ce6cfe42899
 coverage: 0.555556
-learned_at: 2026-10-07 22:34:39
+learned_at: 2026-10-10 20:58:48
 nodes: [VAELoader, EmptyLatentImage, DualCLIPLoader, NunchakuFluxDiTLoader, Anything Everywhere, Anything Everywhere, Anything Everywhere, ControlNetApplyAdvanced, Reroute, workflow>HAOTU-k采样+vae, workflow>HAOTU-k采样+vae, workflow>HAOTU-k采样+vae, Reroute, Reroute, Reroute, NunchakuFluxLoraLoader, Anything Everywhere, NunchakuPulidApply, NunchakuPulidLoader, CropFace, PreviewImage, LoadImage, workflow>HAOTU-k采样+vae, SaveImage, SaveImage, SaveImage, SaveImage, CLIPTextEncode, ControlNetLoader, AIO_Preprocessor, LoadImage, Anything Everywhere, FluxGuidance, CLIPTextEncode, Fast Groups Bypasser (rgthree), JjkText]
 patterns: []
 missing: [workflow>HAOTU-k采样+vae, workflow>HAOTU-k采样+vae, workflow>HAOTU-k采样+vae, workflow>HAOTU-k采样+vae]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.8000000000000002, "height
 discoveries: [次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
+# Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1931213516072792065.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json`
 
 ## 结构
 

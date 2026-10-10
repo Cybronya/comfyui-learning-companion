@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Fenglairh-Qwen_Image_2.1图像编辑_2102265363466645506.json
-name: Fenglairh-Qwen_Image_2.1图像编辑_2102265363466645506.json
+name: Fenglairh-Qwen_Image_2.1图像编辑_2102265363466645506
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Fenglairh-Qwen_Image_2.1图像编辑_2102265363466645506.json
 hash: ea08dc0da3d5bd43
 coverage: 0.516129
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:02
 nodes: [UNETLoader, SetNode, CLIPLoader, SetNode, VAELoader, SetNode, GetNode, ComfySwitchNode, LoadImage, LoadImage, LoadImage, LoadImage, GetNode, GetNode, LoadImage, LoadImage, MarkdownNote, Note, Note, QwenImage21Cache, KSampler, GetNode, VAEDecode, easy cleanGpuUsed, SetNode, TextEncodeQwenImage21, PrimitiveStringMultiline, GetNode, SaveImage, ResolutionSelector, EmptyLatentImage]
 patterns: []
 missing: [easy cleanGpuUsed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 # 图片生成/图生图/Fenglairh-Qwen_Image_2.1图像编辑_2102265363466645506.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102265363466645506.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Fenglairh-Qwen_Image_2.1图像编辑_2102265363466645506.json`
 
 ## 结构
 

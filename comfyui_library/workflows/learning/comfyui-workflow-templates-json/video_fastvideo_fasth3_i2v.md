@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_fastvideo_
 hash: 5a9d8d03bd9215f4
 official: true
 coverage: 0.571429
-learned_at: 2026-10-07 21:36:58
+learned_at: 2026-10-10 22:50:08
 nodes: [SaveVideo, 4c314f31-ecda-4b08-ae98-faaba1bf613f, LoadImage, MarkdownNote, MarkdownNote, GetImageSize, ImageScaleToTotalPixels]
 patterns: []
 missing: [4c314f31-ecda-4b08-ae98-faaba1bf613f]

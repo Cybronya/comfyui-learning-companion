@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_anima_llli
 hash: d46cfa6b0a7784f1
 official: true
 coverage: 0.555556
-learned_at: 2026-10-07 21:35:32
+learned_at: 2026-10-10 22:47:24
 nodes: [MarkdownNote, SaveImage, GetImageSize, ImageCompare, 147b517e-5ea6-4fba-84f7-46851be6e4ce, LoadImage, PreviewImage, 28eb0ec0-5d35-42e9-8cb3-d1161dc5a231, ResizeImageMaskNode]
 patterns: []
 missing: [147b517e-5ea6-4fba-84f7-46851be6e4ce, 28eb0ec0-5d35-42e9-8cb3-d1161dc5a231]

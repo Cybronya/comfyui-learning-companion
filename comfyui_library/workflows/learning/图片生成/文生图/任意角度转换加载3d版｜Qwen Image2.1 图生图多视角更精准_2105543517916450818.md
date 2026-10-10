@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json
+key: 任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json
 name: 任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json
 hash: 8065c8ef5e57ad85
 coverage: 0.929577
-learned_at: 2026-10-07 02:34:50
+learned_at: 2026-10-10 20:59:35
 nodes: [LoadImage, LoadBackgroundRemovalModel, RemoveBackground, InvertMask, ComfySwitchNode, UNETLoader, CLIPVisionLoader, VAELoader, VAELoader, TripoSplatConditioning, KSampler, VAEDecodeTripoSplat, SplatToFile3D, SaveGLB, LoadImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, TextEncodeQwenImage21, QwenImage21Cache, KSampler, VAEDecode, SaveImage, Load3D, SaveImage, TripoSplatPreprocessImage, SaveImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json
+# 任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/任意角度转换加载3d版｜Qwen Image2.1 图生图多视角更精准_2105543517916450818.json`
 

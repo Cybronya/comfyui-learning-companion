@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json
-name: Wan2.2生图 Krea生图_1952974633274380290.json
+key: Wan2.2生图 Krea生图_1952974633274380290.json
+name: Wan2.2生图 Krea生图_1952974633274380290
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json
 hash: c985d78e447ceba2
 coverage: 0.75
-learned_at: 2026-10-07 23:11:26
+learned_at: 2026-10-10 20:59:14
 nodes: [CLIPLoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, ConditioningZeroOut, VAELoader, UNETLoader, UNETLoader, CLIPTextEncode, CLIPTextEncode, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, VAEDecode, KSampler, ModelSamplingSD3, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, EmptyLatentImage, KSampler, EmptyHunyuanLatentVideo, VAELoader, VAEDecode, VAEDecode, VAEDecode, KSampler, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: ImageReel, LayerUtility: ImageReel, DualCLIPLoader, easy seed, CLIPTextEncode, RH_Translator, SaveImage, SaveImage, ImageConcanate, SaveImage, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, SaveImage, Note, Note, PIP_longsize, SaveImage, LoadImage, RH_Captioner, CR Text, RH_LLMAPI_NODE, ImpactSwitch, easy showAnything, ImpactSwitch, ImpactInt, ImpactInt]
 patterns: [text_to_image]
 missing: [CR Text, LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, easy seed]
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 512, "sampler_na
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json
+# Wan2.2生图 Krea生图_1952974633274380290.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952974633274380290.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json`
 
 ## 结构
 

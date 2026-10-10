@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json
-name: 图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json
+name: 图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json
 hash: 3fe93bd97f3159da
 coverage: 0.340659
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:16
 nodes: [MarkdownNote, SetNode, GetNode, GetNode, ImageScaleToTotalPixels, SetNode, VAEEncode, GetNode, GetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, CLIPLoader, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, 忽略多组孤海, TextEncodeQwenImage21, LoadImage, UNETLoader, QwenImage21Cache, LayerUtility: ImageScaleByAspectRatio V2, GetNode, ImpactNeg, GetNode, DapaoMakeImageBatchNode, llama_cpp_parameters, GetNode, CM_BoolToInt, JsonExtractString, PrimitiveFloat, CR Text Replace, LayerUtility: PurgeVRAM, SetNode, GetNode, VAEDecode, SaveImage, 孤海注释, 孤海注释, 孤海注释, 孤海注释, ComfySwitchNode, ExecutionBlocker, SaveImageAdvanced, MarkdownNote, easy anythingIndexSwitch, PrimitiveInt, llama_cpp_model_loader, ExecutionBlocker, KSampler, JjkText, PrimitiveBoolean, llama_cpp_instruct_adv, easy seed]
 patterns: [image_to_image]
 missing: [CR Text Replace, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, easy anythingIndexSwitch, 忽略多组孤海, easy seed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 # 图片生成/图生图/图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102274359825100801.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/图像编辑by Qwen image 2.1 自动优化提示词_2102274359825100801.json`
 
 ## 结构
 

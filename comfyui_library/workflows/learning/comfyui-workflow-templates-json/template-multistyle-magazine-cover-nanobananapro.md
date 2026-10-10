@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template-multist
 hash: 508c0b20aa4dc5e9
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:36:19
+learned_at: 2026-10-10 22:48:56
 nodes: [GeminiImage2Node, GeminiImage2Node, GeminiImage2Node, SaveImage, LoadImage, SaveImage, SaveImage, SaveImage, GeminiImage2Node]
 patterns: []
 missing: []

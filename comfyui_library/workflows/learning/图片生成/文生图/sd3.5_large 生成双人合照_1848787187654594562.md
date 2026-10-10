@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json
+key: sd3.5_large 生成双人合照_1848787187654594562.json
 name: sd3.5_large 生成双人合照_1848787187654594562
 type: Unknown Workflow
 status: completed
@@ -7,14 +7,14 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json
 hash: e671c8dc0c5e5c9b
 coverage: 0.8125
-learned_at: 2026-10-07 03:05:17
+learned_at: 2026-10-10 20:59:26
 nodes: [VAEDecode, SaveImage, EmptySD3LatentImage, Note, CLIPLoader, DualCLIPLoader, Note, TripleCLIPLoader, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, KSampler, SeargePromptText, RH_Prompter, ShowText|pysssss, SeargePromptText]
 patterns: []
 missing: []
 parameters: {"cfg": 5.45, "checkpoint": "sd3.5_large.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "sgm_uniform", "seed": 534920178543917, "steps": 25}
 ---
 
-# 图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json
+# sd3.5_large 生成双人合照_1848787187654594562.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json`
 

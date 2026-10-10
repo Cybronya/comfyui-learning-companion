@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan2.1_alp
 hash: 06540729fb1cc313
 official: true
 coverage: 0.894737
-learned_at: 2026-10-07 21:37:11
+learned_at: 2026-10-10 22:50:32
 nodes: [ImageToMask, InvertMask, VAEDecode, VAEDecode, JoinImageWithAlpha, CLIPTextEncode, SaveAnimatedWEBP, CLIPTextEncode, EmptyHunyuanLatentVideo, UNETLoader, CLIPLoader, LoraLoaderModelOnly, VAELoader, VAELoader, ModelSamplingSD3, KSampler, MarkdownNote, MarkdownNote, LoraLoaderModelOnly]
 patterns: []
 missing: []

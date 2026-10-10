@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_rodin3d_gen2
 hash: 0aa5bebc197b5d86
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:41
+learned_at: 2026-10-10 22:45:52
 nodes: [Rodin3D_Gen25_Text, SaveGLB]
 patterns: []
 missing: []

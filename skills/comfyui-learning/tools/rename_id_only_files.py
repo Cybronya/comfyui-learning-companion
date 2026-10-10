@@ -50,6 +50,14 @@ def rename_dir(d: Path):
             continue
         nf = d / f"{safe}_{wid}.json"
         if nf.exists():
+            # 目标已有同名内容文件：本文件是重复下载，直接删除裸 id 副本
+            try:
+                if nf.read_bytes() == f.read_bytes():
+                    f.unlink()
+                    print(f"  重复裸id副本已删: {wid}（与 {nf.name} 同内容）")
+                    continue
+            except OSError:
+                pass
             print(f"  目标已存在，保留原名: {d.name}/{wid} -> {nf.name}")
             continue
         f.rename(nf)

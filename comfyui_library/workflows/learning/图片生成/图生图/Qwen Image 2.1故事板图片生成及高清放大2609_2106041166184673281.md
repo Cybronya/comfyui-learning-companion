@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json
-name: Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json
+name: Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json
 hash: 614e6023fef7cc8f
 coverage: 0.647059
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:07
 nodes: [MarkdownNote, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, VAEDecode, easy imageSplitGrid, GetImageSize, EmptyLatentImage, ResolutionSelector, EmptyImage, easy forLoopStart, ImageFromBatch, GetNode, GetNode, Note, KSampler, KSampler, VAEDecode, ImageScaleBy, GetImageSize, CenterCropImages, BatchImagesNode, easy forLoopEnd, GetNode, ImageFromBatch, LoadImage, SaveImage, TextEncodeQwenImage21, TextEncodeQwenImage21, SaveImage, SetNode, SetNode, PreviewImage]
 patterns: []
 missing: [easy forLoopEnd, easy forLoopStart, easy imageSplitGrid]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2106041166184673281.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json`
 
 ## 结构
 

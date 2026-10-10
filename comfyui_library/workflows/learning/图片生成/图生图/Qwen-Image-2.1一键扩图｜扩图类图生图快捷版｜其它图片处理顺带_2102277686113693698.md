@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-Image-2.1一键扩图｜扩图类图生图快捷版｜其它图片处理顺带_2102277686113693698.json
-name: Qwen-Image-2.1一键扩图｜扩图类图生图快捷版｜其它图片处理顺带_2102277686113693698.json
+name: Qwen-Image-2.1一键扩图｜扩图类图生图快捷版｜其它图片处理顺带_2102277686113693698
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-Image-2.1一键扩图｜扩图类图生图快捷版｜其它图片处理顺带_2102277686113693698.json
 hash: 57a5f99053638ade
 coverage: 0.898305
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:09
 nodes: [CLIPLoader, CLIPLoader, BatchImagesNode, EmptyLatentImage, ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextGenerateLTX2Prompt, TextEncodeQwenImage21, UNETLoader, VAELoader, SaveImage, ResolutionSelector, JjkText, LoadImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen-Image-2.1一键扩图｜扩图类图生图快捷版｜其它图片处理顺带_2102277686113693698.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102277686113693698.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-Image-2.1一键扩图｜扩图类图生图快捷版｜其它图片处理顺带_2102277686113693698.json`
 
 ## 结构
 

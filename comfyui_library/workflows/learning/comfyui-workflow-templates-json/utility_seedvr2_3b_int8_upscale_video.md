@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_seedvr2_
 hash: 4db5e31ddbbc4152
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:36:53
+learned_at: 2026-10-10 22:49:59
 nodes: [1970dcb4-982a-4c01-a373-4d239a3041e4, LoadVideo, SaveVideo, MarkdownNote, MarkdownNote]
 patterns: []
 missing: [1970dcb4-982a-4c01-a373-4d239a3041e4]

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-6-key-
 hash: 50f43d9d5b938c9c
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:36:30
+learned_at: 2026-10-10 22:49:17
 nodes: [LoadImage, LoadImage, LoadImage, 11ac0cb0-38fb-41d4-9a55-7c44422b2516, LoadImage, LoadImage, LoadImage, CreateVideo, SaveVideo, 9b7cf080-33ac-4d1c-9b52-45adb7553d7a, 3492fd2d-d5cc-4501-8939-04270070cc20, 838780e8-b7b2-4d02-9978-176c68183542, 35dfc356-fa2d-434c-bfae-0faf9b79fb69, MarkdownNote, BatchImagesNode]
 patterns: []
 missing: [11ac0cb0-38fb-41d4-9a55-7c44422b2516, 3492fd2d-d5cc-4501-8939-04270070cc20, 35dfc356-fa2d-434c-bfae-0faf9b79fb69, 838780e8-b7b2-4d02-9978-176c68183542, 9b7cf080-33ac-4d1c-9b52-45adb7553d7a]

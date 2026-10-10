@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_moge_dep
 hash: 5aa7d3b87d4709e6
 official: true
 coverage: 0.285714
-learned_at: 2026-10-07 21:36:47
+learned_at: 2026-10-10 22:49:48
 nodes: [LoadImage, ca1fac5f-abe5-4729-b7fe-2299f6630a65, MarkdownNote, PreviewImage, PreviewImage, MarkdownNote, MaskPreview]
 patterns: []
 missing: [ca1fac5f-abe5-4729-b7fe-2299f6630a65]

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_topaz_il
 hash: e2d0b770a1b9ddbd
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:36:53
+learned_at: 2026-10-10 22:50:00
 nodes: [ImageCompare, ImageScaleBy, SaveImage, TopazImageEnhance, GetImageSize, LoadImage, MarkdownNote, PrimitiveNode]
 patterns: []
 missing: []

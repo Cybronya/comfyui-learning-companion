@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_minimax_h3
 hash: 8a5eb23b0dd2df9e
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:37:11
+learned_at: 2026-10-10 22:50:31
 nodes: [SaveVideo, ResolutionSelector, MarkdownNote, MarkdownNote, MarkdownNote, 79dd8a95-ce9d-4c14-b264-2162e8bec5ce]
 patterns: []
 missing: [79dd8a95-ce9d-4c14-b264-2162e8bec5ce]

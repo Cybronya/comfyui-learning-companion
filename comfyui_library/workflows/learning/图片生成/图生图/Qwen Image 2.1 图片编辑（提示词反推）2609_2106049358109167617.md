@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 图片编辑（提示词反推）2609_2106049358109167617.json
-name: Qwen Image 2.1 图片编辑（提示词反推）2609_2106049358109167617.json
+name: Qwen Image 2.1 图片编辑（提示词反推）2609_2106049358109167617
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 图片编辑（提示词反推）2609_2106049358109167617.json
 hash: e210f808161eb7b8
 coverage: 0.632653
-learned_at: 2026-10-09 22:09:18
+learned_at: 2026-10-10 20:48:05
 nodes: [UNETLoader, ModelAttentionBackend, llama_cpp_model_loader, QwenImage21Cache, easy ifElse, llama_cpp_instruct_adv, CLIPLoader, easy lengthAnything, easy forLoopStart, VAELoader, EmptyLatentImage, easy forLoopEnd, PreviewAny, PrimitiveStringMultiline, RepeatLatentBatch, ConditioningZeroOut, CropWithPadInfo_EditUtils, VAEDecode, EditTextEncode_EditUtils, RepeatLatentBatch, CropWithPadInfo_EditUtils, Image Comparer (rgthree), SaveImage, QwenImage21ConfigPreparer_EditUtils, easy ifElse, PrimitiveInt, TextEncodeQwenImage21, KSampler, easy imageSizeByLongerSide, easy indexAnything, QwenImage21ModelConfig_EditUtils, easy ifElse, easy ifElse, easy ifElse, easy ifElse, LoadImage, ComfyMathExpression, easy ifElse, PrimitiveBoolean, PrimitiveBoolean, easy makeImageList, LoadImage, LoadImage, LoadImage, PrimitiveInt, PrimitiveBoolean, LoadImage, LoadImage, ResolutionSelector]
 patterns: []
 missing: [easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy makeImageList, easy imageSizeByLongerSide]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1 图片编辑（提示词反推）2609_2106049358109167617.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2106049358109167617.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 图片编辑（提示词反推）2609_2106049358109167617.json`
 
 ## 结构
 

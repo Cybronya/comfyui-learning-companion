@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json
-name: SD1.5参考图像进行风格转绘_1915706848396382210.json
+key: SD1.5参考图像进行风格转绘_1915706848396382210.json
+name: SD1.5参考图像进行风格转绘_1915706848396382210
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json
 hash: 2c5fe2acca2dee0d
 coverage: 0.652174
-learned_at: 2026-10-07 22:07:37
+learned_at: 2026-10-10 20:59:10
 nodes: [KSampler, BNK_CLIPTextEncodeAdvanced, EmptyLatentImage, LoadImage, BNK_CLIPTextEncodeAdvanced, WD14Tagger|pysssss, ImageResize+, LoadImage, LoraLoader|pysssss, AIO_Preprocessor, ControlNetLoader, VAEDecode, PreviewImage, SaveImage, AIO_Preprocessor, ControlNetLoader, ControlNetApplySD3, Image Comparer (rgthree), easy ipadapterApply, PreviewImage, Note, CheckpointLoaderSimple, ControlNetApplySD3]
 patterns: []
 missing: [WD14Tagger|pysssss, LoraLoader|pysssss, easy ipadapterApply, ImageResize+]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "majicmixLux_v3.safetensor
 discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `LoraLoader|pysssss` 仅有 LoRA 的通用知识，没有该节点自己的说明, 核心节点 `easy ipadapterApply` 仅有 IPAdapter 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json
+# SD1.5参考图像进行风格转绘_1915706848396382210.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1915706848396382210.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json`
 
 ## 结构
 

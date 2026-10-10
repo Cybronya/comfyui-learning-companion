@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
-name: 谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+key: 谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+name: 谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
 hash: 541eb4554748d8bc
 coverage: 0.75
-learned_at: 2026-10-07 19:13:06
+learned_at: 2026-10-10 20:59:57
 nodes: [RH_Nano_Banana_Image2Image, LoadImage, SaveImage, easy imageConcat, SaveImage, easy imageConcat, RH_Nano_Banana_Image2Image, LoadImage, SaveImage, easy imageConcat, RH_Nano_Banana_Image2Image, LoadImage]
 patterns: []
 missing: [easy imageConcat, easy imageConcat, easy imageConcat]
 discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
+# 谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960512200576331778.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json`
 
 ## 结构
 

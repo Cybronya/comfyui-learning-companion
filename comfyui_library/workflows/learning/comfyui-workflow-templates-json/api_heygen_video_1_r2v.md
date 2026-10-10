@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_heygen_video
 hash: 5d880ade46f01c86
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:33:53
+learned_at: 2026-10-10 22:44:23
 nodes: [SaveVideo, HeyGenReferenceToVideoNode, LoadImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []

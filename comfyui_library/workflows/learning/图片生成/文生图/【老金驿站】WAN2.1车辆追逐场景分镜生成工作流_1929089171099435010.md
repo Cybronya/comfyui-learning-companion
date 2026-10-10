@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json
-name: 【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json
+key: 【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json
+name: 【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json
 hash: 07ae50e4be88833e
 coverage: 0.870968
-learned_at: 2026-10-07 22:34:15
+learned_at: 2026-10-10 20:59:31
 nodes: [WanVideoVRAMManagement, WanVideoBlockSwap, WanVideoModelLoader, LoadImage, WanVideoClipVisionEncode, CLIPVisionLoader, ImageResizeKJ, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoLoraSelect, WanVideoImageToVideoEncode, WanVideoTeaCache, WanVideoEnhanceAVideo, VHS_VideoCombine, WanVideoDecode, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoTextEncode, VAELoader, DualCLIPLoader, EmptySD3LatentImage, VAEDecode, SaveImage, PreviewImage, EmptyConditioning, UNETLoader, Fast Groups Bypasser (rgthree), CLIPTextEncode, KSampler]
 patterns: []
 missing: [easy cleanGpuUsed, easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta"
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json
+# 【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1929089171099435010.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/【老金驿站】WAN2.1车辆追逐场景分镜生成工作流_1929089171099435010.json`
 
 ## 结构
 

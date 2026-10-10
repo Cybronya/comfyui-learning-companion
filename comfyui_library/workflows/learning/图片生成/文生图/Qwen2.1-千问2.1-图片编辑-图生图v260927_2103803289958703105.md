@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1-千问2.1-图片编辑-图生图v260927_2103803289958703105.json
 hash: 1f75acf59771b258
 coverage: 0.8
-learned_at: 2026-10-07 02:26:57
+learned_at: 2026-10-10 23:16:03
 nodes: [MarkdownNote, QwenPERewriteT8, ShowAnything|Mie, EmptyLatentImage, CLIPLoader, EnhancedLoadDiffusionModel, VAELoader_Any, TextEncodeQwenImage21, KSamplerCacheable, QwenImage21Cache, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PreviewImage, FastGroupsBypassSwitch, ResolutionSelector, JjkText, VAEDecode, SaveImage]
 patterns: []
 missing: [ShowAnything|Mie]

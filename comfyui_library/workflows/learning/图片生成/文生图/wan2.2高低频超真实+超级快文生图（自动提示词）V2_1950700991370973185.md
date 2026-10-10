@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json
-name: wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json
+key: wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json
+name: wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json
 hash: 85f9b9376bcb0065
 coverage: 0.83871
-learned_at: 2026-10-07 22:58:36
+learned_at: 2026-10-10 20:59:27
 nodes: [LoraLoaderModelOnly, CLIPLoader, UNETLoader, LoraLoaderModelOnly, UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, CLIPTextEncode, VAELoader, ShowText|pysssss, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, JWInteger, EmptyLatentImage, Wan_video_prompt_generator, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, RH_LLMAPI_NODE, ShowText|pysssss, Text Multiline, ModelSamplingSD3, Bjornulf_TextToStringAndSeed, VAEDecode, KSampler, JWInteger, Text Multiline, CR Text Concatenate, SaveImage]
 patterns: [text_to_image]
 missing: [CR Text Concatenate, Text Multiline, Text Multiline]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 4, "cfg": 1, "denoise": 1, "height": 512, "sampler_na
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json
+# wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1950700991370973185.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2高低频超真实+超级快文生图（自动提示词）V2_1950700991370973185.json`
 
 ## 结构
 

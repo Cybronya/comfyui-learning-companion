@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json
-name: Wan2.2文生视频_自动提示词_1960634788682096642.json
+key: Wan2.2文生视频_自动提示词_1960634788682096642.json
+name: Wan2.2文生视频_自动提示词_1960634788682096642
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json
 hash: c40406138b8f495e
 coverage: 0.609756
-learned_at: 2026-10-07 23:38:42
+learned_at: 2026-10-10 20:59:14
 nodes: [VAEDecode, RH_Translator, VAELoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, Note, Note, Note, Note, CLIPLoader, KSamplerAdvanced, KSamplerAdvanced, PrimitiveBoolean, Note, INTConstant, INTConstant, SimpleMath+, VHS_VideoCombine, EmptyHunyuanLatentVideo, MathExpression|pysssss, MathExpression|pysssss, ShowText|pysssss, DF_Integer, DF_Integer, MathExpression|pysssss, MathExpression|pysssss, DF_Integer, Text Multiline, CR Text Concatenate, CR Text, RH_Prompter, easy ifElse, ShowText|pysssss]
 patterns: []
 missing: [CR Text, CR Text Concatenate, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, SimpleMath+, Text Multiline]
@@ -15,9 +15,9 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "e
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json
+# Wan2.2文生视频_自动提示词_1960634788682096642.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960634788682096642.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生视频_自动提示词_1960634788682096642.json`
 
 ## 结构
 

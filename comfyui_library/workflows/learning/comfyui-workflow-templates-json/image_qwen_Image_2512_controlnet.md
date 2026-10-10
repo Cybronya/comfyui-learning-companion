@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_Image
 hash: 1fdfa3828059a771
 official: true
 coverage: 0.555556
-learned_at: 2026-10-07 21:35:56
+learned_at: 2026-10-10 22:48:26
 nodes: [ResizeImageMaskNode, GetImageSize, LoadImage, MarkdownNote, 3f445b89-990a-4475-aec8-84ce536527f7, SaveImage, MarkdownNote, PreviewImage, Canny]
 patterns: []
 missing: [3f445b89-990a-4475-aec8-84ce536527f7]

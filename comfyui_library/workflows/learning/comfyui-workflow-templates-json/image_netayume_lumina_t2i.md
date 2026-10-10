@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_netayume_l
 hash: 988b37618599a5bd
 official: true
 coverage: 0.2
-learned_at: 2026-10-07 21:35:53
+learned_at: 2026-10-10 22:48:20
 nodes: [MarkdownNote, SaveImage, MarkdownNote, MarkdownNote, 3649d32d-3c81-4249-9e89-a1fe12609f65]
 patterns: []
 missing: [3649d32d-3c81-4249-9e89-a1fe12609f65]

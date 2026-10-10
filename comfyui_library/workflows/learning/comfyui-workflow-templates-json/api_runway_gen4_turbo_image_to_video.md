@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_runway_gen4_
 hash: 84684350acc37c37
 official: true
 coverage: 0.75
-learned_at: 2026-10-07 21:34:43
+learned_at: 2026-10-10 22:45:56
 nodes: [SaveVideo, RunwayImageToVideoNodeGen4, MarkdownNote, LoadImage]
 patterns: []
 missing: []

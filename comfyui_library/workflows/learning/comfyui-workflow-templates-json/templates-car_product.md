@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-car_pr
 hash: 9c54ff7545e4938b
 official: true
 coverage: 0.782609
-learned_at: 2026-10-07 21:36:31
+learned_at: 2026-10-10 22:49:19
 nodes: [SaveImage, SaveImage, SaveImage, SaveImage, LoadImage, SaveVideo, SaveVideo, SaveVideo, Reroute, GetVideoComponents, GetVideoComponents, BatchImagesNode, CreateVideo, GetVideoComponents, Reroute, SaveVideo, ba9a7b30-cca0-4afc-9b44-ebfdc6121d4a, ByteDanceSeedreamNodeV3, ByteDanceSeedreamNodeV3, ByteDanceSeedreamNodeV3, ByteDanceSeedreamNodeV3, f0fb6ee5-af18-4ce2-b2e5-3c41c2b18aec, 8644d200-d58d-4311-bebe-a9f397568743]
 patterns: []
 missing: [8644d200-d58d-4311-bebe-a9f397568743, ba9a7b30-cca0-4afc-9b44-ebfdc6121d4a, f0fb6ee5-af18-4ce2-b2e5-3c41c2b18aec]

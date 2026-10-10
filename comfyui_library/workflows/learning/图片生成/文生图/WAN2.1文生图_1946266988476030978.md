@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/WAN2.1文生图_1946266988476030978.json
-name: WAN2.1文生图_1946266988476030978.json
+key: WAN2.1文生图_1946266988476030978.json
+name: WAN2.1文生图_1946266988476030978
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/WAN2.1文生图_1946266988476030978.json
 hash: 7bd1c759b2bd2144
 coverage: 0.923077
-learned_at: 2026-10-07 22:52:45
+learned_at: 2026-10-10 20:59:13
 nodes: [CLIPLoader, LoraLoader, LoraLoader, LoraLoader, CLIPTextEncode, VAELoader, EmptyHunyuanLatentVideo, KSampler, SaveImage, UNETLoader, CLIPTextEncode, VAEDecode, easy cleanGpuUsed]
 patterns: [lora]
 missing: [easy cleanGpuUsed]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "WAN2.1_BaldursGate3Style_v1_b
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/WAN2.1文生图_1946266988476030978.json
+# WAN2.1文生图_1946266988476030978.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1946266988476030978.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.1文生图_1946266988476030978.json`
 
 ## 结构
 

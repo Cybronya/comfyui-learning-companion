@@ -108,11 +108,14 @@ def main():
     known_n = 0
     if ids_txt.exists():
         known_n = len([l for l in ids_txt.read_text(encoding="utf-8-sig").splitlines() if l.strip()])
-    target = known_n + count * 4
-    print(f"[1/6] 收集 ID：{tag} 目标 {target}（sort={sort}）")
-    sh(["skills/comfyui-learning/tools/collect_by_tag.py",
-        safe_tag if "/" not in tag else tag,
-        str(target), "--out", "download/ids-by-tag", "--sort", sort])
+    if skip_collect:
+        print("[1/6] 跳过收集（--skip-collect）")
+    else:
+        target = known_n + count * 4
+        print(f"[1/6] 收集 ID：{tag} 目标 {target}（sort={sort}）")
+        sh(["skills/comfyui-learning/tools/collect_by_tag.py",
+            safe_tag if "/" not in tag else tag,
+            str(target), "--out", "download/ids-by-tag", "--sort", sort])
 
     # ---- 2/3. 下载缺失的 ----
     if not skip_download and ids_txt.exists():
@@ -121,8 +124,9 @@ def main():
         if missing:
             tmp = IDS_DIR / parts[0] / f"{parts[-1]}_next.txt"
             tmp.write_text("\n".join(missing[:count]), encoding="utf-8")
+            meta_csv = IDS_DIR / parts[0] / f"{parts[-1]}_meta.csv"
             sh(["skills/comfyui-learning/tools/download_by_ids.py",
-                tmp, "--meta", out_dir / "manifest.csv", "--out", out_dir])
+                tmp, "--meta", meta_csv, "--out", out_dir])
             tmp.unlink()
         else:
             print("  无缺失，跳过下载")

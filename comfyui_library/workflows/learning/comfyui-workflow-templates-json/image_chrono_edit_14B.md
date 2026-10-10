@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_chrono_edi
 hash: c86697631af81cd1
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:35:36
+learned_at: 2026-10-10 22:47:30
 nodes: [LoadImage, MarkdownNote, SaveImage, 2b61e18f-9327-49e6-98af-da8e557c2336]
 patterns: []
 missing: [2b61e18f-9327-49e6-98af-da8e557c2336]

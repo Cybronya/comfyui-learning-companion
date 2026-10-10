@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
-name: Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
+key: Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
+name: Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
 hash: 7c1c0ca1ee3d9f16
 coverage: 0.842105
-learned_at: 2026-10-08 00:02:07
+learned_at: 2026-10-10 20:58:48
 nodes: [VAELoader, VAEEncode, ModelSamplingAuraFlow, ImagePadForOutpaint, PreviewImage, ControlNetLoader, Image Comparer (rgthree), CLIPTextEncode, LoadImage, ImageScaleToTotalPixels, VAEEncode, PreviewImage, CLIPLoader, NunchakuQwenImageDiTLoader, KSampler, CLIPTextEncode, ControlNetInpaintingAliMamaApply, VAEDecode, SaveImage]
 patterns: [image_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
+# Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1966334484977233922.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json`
 
 ## 结构
 

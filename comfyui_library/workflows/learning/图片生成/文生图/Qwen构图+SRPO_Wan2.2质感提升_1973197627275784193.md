@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json
-name: Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json
+key: Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json
+name: Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json
 hash: af0b1c4639e54178
 coverage: 0.833333
-learned_at: 2026-10-09 19:50:52
+learned_at: 2026-10-10 20:59:10
 nodes: [VAELoader, CLIPLoader, UNETLoader, UpscaleModelLoader, ConditioningZeroOut, UNETLoader, VAELoader, DualCLIPLoader, FluxGuidance, VAEEncode, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, KSampler, LoraLoaderModelOnly, VAELoader, CLIPTextEncode, VAEEncode, CLIPLoader, KSampler, KSampler, EmptySD3LatentImage, ModelSamplingAuraFlow, CLIPTextEncode, UNETLoader, CLIPTextEncode, LoraLoader, LoraLoader, LoraLoader, Text Concatenate, PathchSageAttentionKJ, ModelSamplingSD3, Text Multiline, VAEDecode, Image Comparer (rgthree), Fast Groups Bypasser (rgthree), SaveImage, Image Comparer (rgthree), VAEDecode, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, SaveImage, VAEDecode, ImageUpscaleWithModel, ImageScaleBy, Text Multiline, SaveImage, SaveImage]
 patterns: [lora]
 missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, Text Concatenate, Text Multiline, Text Multiline]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "WAN2.2-LowNoise_SmartphoneSna
 discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json
+# Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1973197627275784193.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen构图+SRPO_Wan2.2质感提升_1973197627275784193.json`
 
 ## 结构
 

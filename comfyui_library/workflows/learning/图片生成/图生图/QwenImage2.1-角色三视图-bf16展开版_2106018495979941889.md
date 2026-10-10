@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/QwenImage2.1-角色三视图-bf16展开版_2106018495979941889.json
-name: QwenImage2.1-角色三视图-bf16展开版_2106018495979941889.json
+name: QwenImage2.1-角色三视图-bf16展开版_2106018495979941889
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/QwenImage2.1-角色三视图-bf16展开版_2106018495979941889.json
 hash: 485fdb1855507a14
 coverage: 0.785714
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:10
 nodes: [UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, EmptyLatentImage, KSampler, VAEDecode, SaveImage, LoadImage, PrimitiveStringMultiline, PrimitiveStringMultiline, ComfySwitchNode, PrimitiveBoolean]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1152, "sampler_n
 
 # 图片生成/图生图/QwenImage2.1-角色三视图-bf16展开版_2106018495979941889.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2106018495979941889.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/QwenImage2.1-角色三视图-bf16展开版_2106018495979941889.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_sonilo_v2m.j
 hash: afbdca2429d8db99
 official: true
 coverage: 0.666667
-learned_at: 2026-10-07 21:34:52
+learned_at: 2026-10-10 22:46:12
 nodes: [SoniloVideoToMusic, LoadVideo, SaveVideo, bb615e2f-2ea7-40b8-9419-f0206c2d60dd, MarkdownNote, SaveAudioAdvanced]
 patterns: []
 missing: [bb615e2f-2ea7-40b8-9419-f0206c2d60dd]

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_ideogram_p_i
 hash: fd20cd8b658e08a3
 official: true
 coverage: 0.8
-learned_at: 2026-10-07 21:33:57
+learned_at: 2026-10-10 22:44:30
 nodes: [PreviewAny, CreateBoundingBoxes, IdeogramPImage, BuildJsonPromptIdeogram, SaveImageAdvanced]
 patterns: []
 missing: []

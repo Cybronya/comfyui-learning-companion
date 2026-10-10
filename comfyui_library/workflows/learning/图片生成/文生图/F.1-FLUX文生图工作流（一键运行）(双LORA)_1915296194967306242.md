@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json
-name: F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json
+key: F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json
+name: F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json
 hash: 8c9e8e164ea5ca0a
 coverage: 1
-learned_at: 2026-10-07 22:07:34
+learned_at: 2026-10-10 20:58:30
 nodes: [VAELoader, KSamplerSelect, RandomNoise, BasicGuider, SamplerCustomAdvanced, VAEDecode, CLIPTextEncode, EmptyLatentImage, BasicScheduler, SaveImage, LoraLoader, LoraLoader, DualCLIPLoader, UNETLoader]
 patterns: [lora]
 missing: []
 parameters: {"batch_size": 2, "height": 1024, "lora_name": "flux-dpgirl-mql-lora.safetensors", "strength_clip": 1, "strength_model": 0.6, "width": 768}
 ---
 
-# 图片生成/文生图/F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json
+# F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1915296194967306242.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1-FLUX文生图工作流（一键运行）(双LORA)_1915296194967306242.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
-name: 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
+key: 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
+name: 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
 hash: 51b3a4f4f2e27d1b
 coverage: 0.95
-learned_at: 2026-10-09 02:01:38
+learned_at: 2026-10-10 20:59:49
 nodes: [VAELoader, CLIPTextEncode, VAELoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, VAEEncode, CLIPTextEncode, ImageScaleToMegapixels, VAEDecode, UpscaleModelLoader, SaveImage, CLIPLoader, VAEDecode, ImageScaleToMegapixels, BetterFilmGrain, ImageSharpen, JWInteger, JWInteger, CLIPTextEncode, PrimitiveStringMultiline, CLIPTextEncode, CLIPLoader, KSampler, KSampler, UNETLoader, ModelSamplingAuraFlow, CFGNorm, NunchakuQwenImageDiTLoader, LoraLoaderModelOnly, ModelSamplingAuraFlow, LoraLoaderModelOnly, JWInteger, JWInteger, EmptySD3LatentImage, Note, SaveImage, LazySwitch2way, PrimitiveBoolean]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
+# 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1968189243870838785.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json`
 
 ## 结构
 

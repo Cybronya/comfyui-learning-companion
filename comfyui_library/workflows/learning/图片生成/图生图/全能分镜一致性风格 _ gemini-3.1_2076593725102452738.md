@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json
-name: 全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json
+name: 全能分镜一致性风格 _ gemini-3.1_2076593725102452738
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json
 hash: ba9cf80018684930
 coverage: 0.625
-learned_at: 2026-10-09 22:36:21
+learned_at: 2026-10-10 20:48:14
 nodes: [ProcessString, easy showAnything, SaveImage, RH_Nano_Banana2_Gemini31Flash, RH_LLMAPI_Pro_Node, easy promptLine, JjkText, LoadImage]
 patterns: []
 missing: [easy promptLine]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2076593725102452738.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/全能分镜一致性风格 _ gemini-3.1_2076593725102452738.json`
 
 ## 结构
 

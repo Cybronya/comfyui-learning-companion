@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan2_2_14B
 hash: 9233091ea1891c03
 official: true
 coverage: 0.894737
-learned_at: 2026-10-07 21:37:15
+learned_at: 2026-10-10 22:50:39
 nodes: [CLIPLoader, VAELoader, UNETLoader, CLIPTextEncode, LoraLoaderModelOnly, ModelSamplingSD3, LoraLoaderModelOnly, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, CLIPLoader, VAELoader, UNETLoader, UNETLoader, LoadImage, LoadImage, WanFunInpaintToVideo, VAEDecode, CreateVideo, SaveVideo, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, KSamplerAdvanced, UNETLoader, WanFunInpaintToVideo, Note, MarkdownNote, CreateVideo, SaveVideo, CLIPTextEncode, CLIPTextEncode, Note, MarkdownNote, LoadImage, LoadImage]
 patterns: []
 missing: []

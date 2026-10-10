@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
-name: Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
+key: Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
+name: Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
 hash: a8b3d237a3f61558
 coverage: 0.733333
-learned_at: 2026-10-07 23:12:01
+learned_at: 2026-10-10 20:58:36
 nodes: [MarkdownNote, MarkdownNote, EmptyLatentImage, VAELoader, DualCLIPLoader, UNETLoader, ConditioningZeroOut, easy showAnything, CLIPTextEncode, RH_Translator, KSampler, LoraLoaderModelOnly, VAEDecode, SaveImage, Text Multiline]
 patterns: [text_to_image]
 missing: [Text Multiline]
@@ -15,9 +15,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
+# Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1953481264051441666.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json`
 
 ## 结构
 

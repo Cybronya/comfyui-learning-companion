@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/qwen image 2.1多合一_2102060589370667009.json
-name: qwen image 2.1多合一_2102060589370667009.json
+name: qwen image 2.1多合一_2102060589370667009
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen image 2.1多合一_2102060589370667009.json
 hash: c74aab90aee5cd34
 coverage: 0.558824
-learned_at: 2026-10-09 22:27:07
+learned_at: 2026-10-10 20:48:12
 nodes: [ResolutionSelector, LoadImage, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, SeedVR2VideoUpscaler, LoadImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SaveImage, TextEncodeQwenImage21, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, TextInput_, EmptyLatentImage, QwenImage21Cache, TextEncodeQwenImage21, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, TextGenerateLTX2Prompt, SetNode, SetNode, GetNode, GetNode, TextGenerateLTX2Prompt, easy seed, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, LoraLoaderModelOnly, UNETLoader, CLIPLoader, CLIPLoader, Anything Everywhere3, easy showAnything, LoadImage, TextInput_, KSampler, SaveImage, SaveImageAdvanced, VAEDecode, SaveImageAdvanced]
 patterns: []
 missing: [忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, easy seed]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 # 图片生成/图生图/qwen image 2.1多合一_2102060589370667009.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102060589370667009.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/qwen image 2.1多合一_2102060589370667009.json`
 
 ## 结构
 

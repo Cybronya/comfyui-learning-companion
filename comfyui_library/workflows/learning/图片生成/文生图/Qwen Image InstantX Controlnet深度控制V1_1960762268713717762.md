@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
-name: Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
+key: Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
+name: Qwen Image InstantX Controlnet深度控制V1_1960762268713717762
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
 hash: f1b47297bb687813
 coverage: 0.892857
-learned_at: 2026-10-07 23:45:49
+learned_at: 2026-10-10 20:58:55
 nodes: [CLIPTextEncode, CLIPLoader, VAELoader, UNETLoader, LoraLoaderModelOnly, PreviewImage, SaveLatent, ModelSamplingAuraFlow, ControlNetLoader, VAEDecode, ImageConcanate, DepthAnything_V2, DownloadAndLoadDepthAnythingV2Model, PreviewImage, LoadImage, CLIPTextEncode, ControlNetApplySD3, KSampler, CFGNorm, SetUnionControlNetType, EmptySD3LatentImage, SeedVR2BlockSwap, PreviewImage, LoraLoaderModelOnly, SeedVR2GGUF, SaveImage, SaveImage, LoraLoaderModelOnly]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "controlnet_strength": 0.7500000000000001, "denoise": 1, 
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
+# Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960762268713717762.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json`
 
 ## 结构
 

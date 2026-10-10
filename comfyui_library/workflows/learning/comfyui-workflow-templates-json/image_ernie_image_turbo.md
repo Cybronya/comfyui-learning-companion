@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ernie_imag
 hash: 4592a576b0d2173a
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:37
+learned_at: 2026-10-10 22:47:31
 nodes: [SaveImage, 03921aea-a70e-44b4-bc77-f6bda10f2120, MarkdownNote]
 patterns: []
 missing: [03921aea-a70e-44b4-bc77-f6bda10f2120]

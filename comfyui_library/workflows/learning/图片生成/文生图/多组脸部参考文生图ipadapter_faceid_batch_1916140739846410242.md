@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
-name: 多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
+key: 多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
+name: 多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
 hash: a28bdc6b52da6691
 coverage: 0.9
-learned_at: 2026-10-07 22:07:45
+learned_at: 2026-10-10 20:59:42
 nodes: [CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, EmptyLatentImage, ImageBatch, IPAdapterUnifiedLoader, IPAdapterFaceID, IPAdapter, KSampler, LoadImage, LoadImage, LoadImage, LoadImage, ImageBatch, ImageBatch, IPAdapterUnifiedLoaderFaceID, Note, VAEDecode, SaveImage, PreviewImage]
 patterns: [text_to_image]
 missing: []
 parameters: {"batch_size": 1, "cfg": 6.5, "checkpoint": "majicmixRealistic_v7.safetensors", "denoise": 1, "height": 1024, "sampler_name": "ddpm", "scheduler": "karras", "seed": 1102715810419781, "steps": 30, "width": 1024}
 ---
 
-# 图片生成/文生图/多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
+# 多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1916140739846410242.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json`
 
 ## 结构
 

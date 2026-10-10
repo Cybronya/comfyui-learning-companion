@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Wan2.2 文生图 48出_1954055995188236290.json
-name: Wan2.2 文生图 48出_1954055995188236290.json
+key: Wan2.2 文生图 48出_1954055995188236290.json
+name: Wan2.2 文生图 48出_1954055995188236290
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 文生图 48出_1954055995188236290.json
 hash: 448a6780e44d09b9
 coverage: 0.985366
-learned_at: 2026-10-07 23:17:51
+learned_at: 2026-10-10 20:59:13
 nodes: [UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, VAELoader, EmptyLatentImage, Anything Everywhere, Anything Everywhere, KSampler, CLIPLoader, Anything Everywhere3, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, KSampler, CLIPTextEncode, VAEDecode, KSampler, CLIPTextEncode, VAEDecode, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, CLIPTextEncode]
 patterns: [text_to_image]
 missing: []
@@ -16,9 +16,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Wan2.2 文生图 48出_1954055995188236290.json
+# Wan2.2 文生图 48出_1954055995188236290.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1954055995188236290.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 文生图 48出_1954055995188236290.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json
-name: rebalancev1+Qwen3VL-workflow_1981298041351208962.json
+key: rebalancev1+Qwen3VL-workflow_1981298041351208962.json
+name: rebalancev1+Qwen3VL-workflow_1981298041351208962
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json
 hash: 12804915c14016ef
 coverage: 0.916667
-learned_at: 2026-10-09 19:56:21
+learned_at: 2026-10-10 20:59:26
 nodes: [EmptySD3LatentImage, VAEDecode, SaveImage, PreviewAny, CheckpointLoaderSimple, CLIPLoader, VAELoader, CLIPTextEncode, ConditioningZeroOut, LoraLoaderModelOnly, KSampler, AILab_QwenVL]
 patterns: []
 missing: []
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "checkpoint": "Rebalance_beta_00001_.safetensors", "denoi
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json
+# rebalancev1+Qwen3VL-workflow_1981298041351208962.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1981298041351208962.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json`
 
 ## 结构
 

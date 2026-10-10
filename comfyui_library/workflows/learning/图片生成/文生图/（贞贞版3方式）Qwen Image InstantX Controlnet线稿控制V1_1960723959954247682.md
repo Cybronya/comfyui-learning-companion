@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/（贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json
-name: （贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json
+key: （贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json
+name: （贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/（贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json
 hash: 29dba279a9c41ef7
 coverage: 0.789474
-learned_at: 2026-10-07 23:38:43
+learned_at: 2026-10-10 21:00:01
 nodes: [CLIPTextEncode, EmptySD3LatentImage, CLIPLoader, VAELoader, UNETLoader, ControlNetApplySD3, AIO_Preprocessor, PreviewImage, SeedVR2BlockSwap, PreviewImage, SaveImage, PreviewImage, KSampler, PreviewImage, KSampler, PreviewImage, ModelSamplingAuraFlow, ControlNetLoader, VAEDecode, VAEDecode, SeedVR2GGUF, Image Compare (mtb), PreviewImage, SetUnionControlNetType, SaveLatent, ImageConcanate, LoraLoaderModelOnly, KSampler, SaveImage, LoraLoaderModelOnly, CLIPTextEncode, PreviewImage, CFGNorm, LoraLoaderModelOnly, ImageConcatMulti, ModelSamplingAuraFlow, VAEDecode, LoadImage]
 patterns: []
 missing: [Image Compare (mtb)]
@@ -16,9 +16,9 @@ parameters: {"cfg": 1, "controlnet_strength": 0.75, "denoise": 1, "sampler_name"
 discoveries: [次要节点 `Image Compare (mtb)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/（贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json
+# （贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1960723959954247682.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/（贞贞版3方式）Qwen Image InstantX Controlnet线稿控制V1_1960723959954247682.json`
 
 ## 结构
 

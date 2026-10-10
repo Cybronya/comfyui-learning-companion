@@ -1,22 +1,22 @@
 ---
-key: 图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json
-name: 视频-文生视频wan2.2-最强过审_1959964511526662146.json
+key: 视频-文生视频wan2.2-最强过审_1959964511526662146.json
+name: 视频-文生视频wan2.2-最强过审_1959964511526662146
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json
 hash: 9031941caf1c9ffc
 coverage: 0.697674
-learned_at: 2026-10-07 23:38:10
+learned_at: 2026-10-10 20:59:57
 nodes: [WanVideoSampler, WanVideoSampler, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoLoraSelect, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoBlockSwap, WanVideoDecode, WanVideoVAELoader, VHS_VideoCombine, CreateCFGScheduleFloatList, INTConstant, INTConstant, LoadWanVideoT5TextEncoder, PrimitiveNode, MathExpression|pysssss, TextConcat, CR Prompt Text, ShowText|pysssss, JWStringConcat, easy showAnything, easy showAnything, WanVideoEmptyEmbeds, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, RH_LLMAPI_NODE, GetImageSizeAndCount, ImageFromBatch+, CR Prompt Text, Int, CR Prompt Text, Wan22PromptSelector, Int, Int, WanVideoTextEncode, easy showAnything, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoSetLoRAs, Note]
 patterns: []
 missing: [ImageFromBatch+, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, CR Prompt Text, CR Prompt Text, CR Prompt Text]
 discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json
+# 视频-文生视频wan2.2-最强过审_1959964511526662146.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1959964511526662146.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/视频-文生视频wan2.2-最强过审_1959964511526662146.json`
 
 ## 结构
 

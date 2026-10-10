@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-image2.1 文生图+VOSR2放大_2105647237308174337.json
 hash: e04f2f6ad75f4537
 coverage: 0.652174
-learned_at: 2026-10-07 02:25:55
+learned_at: 2026-10-10 23:16:02
 nodes: [CLIPLoader, VAELoader, UNETLoader, Anything Everywhere3, llama_cpp_model_loader, CR Text, TextEncodeQwenImage21, ResolutionSelector, VOSR2ModelLoader, SplitImageWithAlpha, VOSR2Upscale, MarkdownNote, Fast Groups Bypasser (rgthree), EmptyLatentImage, SaveImage, SaveImage, KSampler, VAEDecode, PreviewAny, llama_cpp_instruct_adv, Image Comparer (rgthree), MarkdownNote, 孤海注释]
 patterns: []
 missing: [CR Text]

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1一键换装｜图片服装替换自动完成｜电商模特好帮手_2102224257387425794.json
-name: Qwen Image 2.1一键换装｜图片服装替换自动完成｜电商模特好帮手_2102224257387425794.json
+name: Qwen Image 2.1一键换装｜图片服装替换自动完成｜电商模特好帮手_2102224257387425794
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1一键换装｜图片服装替换自动完成｜电商模特好帮手_2102224257387425794.json
 hash: 73bb2887fd3fb9e5
 coverage: 0.9
-learned_at: 2026-10-09 22:27:10
+learned_at: 2026-10-10 20:48:06
 nodes: [CLIPLoader, CLIPLoader, BatchImagesNode, VAELoader, EmptyLatentImage, ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextGenerateLTX2Prompt, TextEncodeQwenImage21, UNETLoader, JjkText, SaveImage, LoadImage, LoadImage, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1一键换装｜图片服装替换自动完成｜电商模特好帮手_2102224257387425794.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102224257387425794.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1一键换装｜图片服装替换自动完成｜电商模特好帮手_2102224257387425794.json`
 
 ## 结构
 

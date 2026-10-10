@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sd3.5_large_dept
 hash: 66e7f349efad7392
 official: true
 coverage: 0.705882
-learned_at: 2026-10-07 21:36:16
+learned_at: 2026-10-10 22:48:51
 nodes: [ControlNetLoader, ImageScaleToTotalPixels, ConditioningZeroOut, CheckpointLoaderSimple, LoadImage, CLIPTextEncode, 6b0ed7ac-f476-44c9-9dad-b3f23ef985f8, KSampler, VAEDecode, VAEEncode, ControlNetApplyAdvanced, EmptySD3LatentImage, SaveImage, MarkdownNote, PreviewImage, MarkdownNote, MarkdownNote]
 patterns: [image_to_image]
 missing: [6b0ed7ac-f476-44c9-9dad-b3f23ef985f8]

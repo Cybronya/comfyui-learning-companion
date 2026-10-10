@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_bria_rem
 hash: 9073e45deb887912
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:36:43
+learned_at: 2026-10-10 22:49:41
 nodes: [SaveImage, ImageCompare, LoadImage, BriaRemoveImageBackground]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`SaveImage`、`ImageCompare`、`LoadImage`、`BriaRemoveImageBackground`
 
-**用到的条目**：LoadImage、SaveImage、BriaRemoveImageBackground、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImage、BriaRemoveImageBackground、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、Compare、CS_Preview_Any

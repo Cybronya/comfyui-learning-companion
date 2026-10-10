@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
+key: HerRAW-v0.1 配套工作流_2105122285165301761.json
 name: HerRAW-v0.1 配套工作流_2105122285165301761
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
 hash: 59bacec04f6d6ffc
 coverage: 0.764706
-learned_at: 2026-10-07 02:06:34
+learned_at: 2026-10-10 20:58:39
 nodes: [EmptyLatentImage, CLIPTextEncode, ConditioningZeroOut, SaveImage, ImageMergeTileList, SeedVR2PostProcessing, SeedVR2Conditioning, VAEEncodeTiled, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, SeedVR2Preprocess, KSampler, GetImageSize, VAEDecodeTiled, SplitImageToTileList, PrimitiveInt, PrimitiveInt, ResizeImageMaskNode, PrimitiveFloat, VAEDecode, Seed (rgthree), ResolutionSelector, Fast Groups Bypasser (rgthree), KSamplerAdvanced, MarkdownNote, VAELoader, CLIPLoader, LoraLoaderModelOnly, UNETLoader, VAELoader, PreviewImage, UNETLoader, PrimitiveStringMultiline]
 patterns: [text_to_image]
 missing: [Seed (rgthree)]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 8, "denoise": "beta", "height": 512, "sampl
 discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
+# HerRAW-v0.1 配套工作流_2105122285165301761.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json`
 

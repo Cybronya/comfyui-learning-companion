@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/文生视频分镜脚本（自动）QWEN3.8_2107367744923594753.json
 hash: 8aff9bc5af4f8337
 coverage: 0.666667
-learned_at: 2026-10-07 02:41:12
+learned_at: 2026-10-10 20:48:01
 nodes: [SaveImage, LoadImage, RH_Translator, LoadImage, easy saveText, CR Prompt Text, MiniMaxH3PromptEnhancerT8, CM_FloatToInt, PreviewAny]
 patterns: []
 missing: [CR Prompt Text, easy saveText]

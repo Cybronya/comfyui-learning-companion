@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/fuse_options.jso
 hash: 1e5d9f060a1a53de
 official: true
 coverage: 0
-learned_at: 2026-10-07 21:35:28
+learned_at: 2026-10-10 22:47:16
 nodes: []
 patterns: []
 missing: []

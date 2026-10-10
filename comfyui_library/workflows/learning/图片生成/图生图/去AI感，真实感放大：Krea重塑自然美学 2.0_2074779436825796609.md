@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json
-name: 去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json
+name: 去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609
 type: Image To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json
 hash: 29db156649052a53
 coverage: 0.5
-learned_at: 2026-10-09 22:36:21
+learned_at: 2026-10-10 20:48:16
 nodes: [Image Comparer (rgthree), Note, Note, Note, Note, Note, Note, VAELoader, SaveImage, PrimitiveFloat, PrimitiveFloat, Int, UNETLoader_Any, KSampler, SaveImage, PreviewImage, PreviewImage, PreviewImage, SaveImage, PreviewImage, SaveImage, easy boolean, Int, PrimitiveFloat, RHHiddenNodes, easy ifElse, RHHiddenNodes, Int, Int, PrimitiveFloat, VAEEncode, CLIPTextEncode, VAEDecode, KuwaharaBlur, VAEDecode, easy cleanGpuUsed, CLIPLoader, easy cleanGpuUsed, DisTorchPurgeVRAMV2, llama_cpp_instruct_adv, easy showAnything, llama_cpp_model_loader, GroupExecutor, CR Text, CLIPTextEncode, LoraLoaderModelOnly, ImageResize+, LoadImage, KSamplerAdvanced, easy imageColorMatch, LayerColor: RGB, LayerColor: Color of Shadow & Highlight, LayerColor: Color of Shadow & Highlight, easy imageColorMatch]
 patterns: [image_to_image]
 missing: [CR Text, LayerColor: Color of Shadow & Highlight, LayerColor: Color of Shadow & Highlight, LayerColor: RGB, easy boolean, easy cleanGpuUsed, easy cleanGpuUsed, easy imageColorMatch, easy imageColorMatch, ImageResize+]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2074779436825796609.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json`
 
 ## 结构
 

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_canny_model
 hash: 466bb57fdd4e5a9e
 official: true
 coverage: 0.857143
-learned_at: 2026-10-07 21:35:24
+learned_at: 2026-10-10 22:47:08
 nodes: [DualCLIPLoader, ConditioningZeroOut, UNETLoader, VAELoader, FluxGuidance, Canny, LoadImage, SaveImage, VAEDecode, KSampler, InstructPixToPixConditioning, PreviewImage, CLIPTextEncode, MarkdownNote]
 patterns: []
 missing: []

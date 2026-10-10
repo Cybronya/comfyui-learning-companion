@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json
-name: Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json
+key: Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json
+name: Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json
 hash: ea4bc1c1e2feaa86
 coverage: 0.913043
-learned_at: 2026-10-09 21:16:02
+learned_at: 2026-10-10 20:59:17
 nodes: [RunningHub_ZImageI2L_Saver, easy cleanGpuUsed, RunningHub_ZImageI2L_Loader, KSampler, VAEDecode, PreviewAny, EmptySD3LatentImage, RunningHub_ZImageI2L_LoraGenerator, CLIPLoader, UNETLoader, VAELoader, ModelSamplingAuraFlow, CLIPTextEncode, LoraLoader, ImageBatchMulti, CLIPTextEncode, SaveImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: [lora]
 missing: [easy cleanGpuUsed]
@@ -15,9 +15,9 @@ parameters: {"cfg": 4, "denoise": 1, "lora_name": null, "sampler_name": "res_mul
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json
+# Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/2023308170269036545.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Z-Image-i2L (Image to LoRA)快速lora训练+测试_2023308170269036545.json`
 
 ## 结构
 

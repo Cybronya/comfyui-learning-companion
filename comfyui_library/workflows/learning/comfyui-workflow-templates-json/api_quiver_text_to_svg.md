@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_quiver_text_
 hash: 3e02c8c2c3f1436a
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:36
+learned_at: 2026-10-10 22:45:42
 nodes: [SaveSVGNode, QuiverTextToSVGNode]
 patterns: []
 missing: []

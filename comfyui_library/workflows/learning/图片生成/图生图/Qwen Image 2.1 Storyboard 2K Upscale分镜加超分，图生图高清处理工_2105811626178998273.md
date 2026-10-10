@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 Storyboard 2K Upscale分镜加超分，图生图高清处理工_2105811626178998273.json
-name: Qwen Image 2.1 Storyboard 2K Upscale分镜加超分，图生图高清处理工_2105811626178998273.json
+name: Qwen Image 2.1 Storyboard 2K Upscale分镜加超分，图生图高清处理工_2105811626178998273
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 Storyboard 2K Upscale分镜加超分，图生图高清处理工_2105811626178998273.json
 hash: 8093b3fee83e79c5
 coverage: 0.837209
-learned_at: 2026-10-09 22:09:17
+learned_at: 2026-10-10 20:48:05
 nodes: [UNETLoader, CLIPLoader, VAELoader, LoadImage, VAEDecode, SaveImage, PreviewImage, easy imageSplitGrid, SetNode, GetImageSize, SetNode, EmptyLatentImage, TextEncodeQwenImage21, KSampler, ResolutionSelector, EmptyImage, easy forLoopStart, ImageFromBatch, GetNode, GetNode, VAEDecode, ImageScaleBy, GetImageSize, CenterCropImages, BatchImagesNode, easy forLoopEnd, GetNode, ImageFromBatch, SaveImage, TextEncodeQwenImage21, KSampler, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [easy forLoopEnd, easy forLoopStart, easy imageSplitGrid]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 # 图片生成/图生图/Qwen Image 2.1 Storyboard 2K Upscale分镜加超分，图生图高清处理工_2105811626178998273.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2105811626178998273.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 Storyboard 2K Upscale分镜加超分，图生图高清处理工_2105811626178998273.json`
 
 ## 结构
 

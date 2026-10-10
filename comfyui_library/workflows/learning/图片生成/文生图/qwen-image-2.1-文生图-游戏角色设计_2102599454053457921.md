@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
+key: qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
 name: qwen-image-2.1-文生图-游戏角色设计_2102599454053457921
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
 hash: 30df76452dd36c50
 coverage: 0.823529
-learned_at: 2026-10-07 02:24:57
+learned_at: 2026-10-10 20:59:24
 nodes: [QwenImage21Cache, CLIPLoader, SamplerCustomAdvanced, KSamplerSelect, BasicGuider, VAELoader, ReferenceLatent, CLIPLoader, VAEDecode, VAEEncode, UNETLoader, TextGenerateLTX2Prompt, KSampler, RandomNoise, SaveImage, VAEDecode, PreviewImage, PreviewImage, CLIPTextEncode, VAELoader, BasicScheduler, ResolutionSelector, easy positive, Seed (rgthree), easy showAnything, CLIPLoader, TextEncodeQwenImage21, EmptyLatentImage, ImageScaleToTotalPixelsX, UNETLoader, ColorMatchV2, VOSR2ModelLoader, VOSR2Upscale, PreviewImage]
 patterns: [text_to_image]
 missing: [easy positive, Seed (rgthree)]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
+# qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json`
 

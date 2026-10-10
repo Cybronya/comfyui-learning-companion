@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json
-name: Seedream V4.5 图生图｜4K画质_2097872766719582209.json
+name: Seedream V4.5 图生图｜4K画质_2097872766719582209
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json
 hash: 03adf25971582c79
 coverage: 0.833333
-learned_at: 2026-10-09 22:19:26
+learned_at: 2026-10-10 20:48:10
 nodes: [SaveImage, LoadImage, LoadImage, RH_SeedreamV45ImageToImage, PreviewImage, LoadImage]
 patterns: []
 missing: []
@@ -15,7 +15,7 @@ missing: []
 
 # 图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2097872766719582209.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json`
 
 ## 结构
 

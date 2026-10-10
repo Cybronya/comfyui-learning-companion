@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json
-name: 全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json
+name: 全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json
 hash: cb08807b55c9739f
 coverage: 0.666667
-learned_at: 2026-10-09 22:19:26
+learned_at: 2026-10-10 20:48:15
 nodes: [SaveImage, PreviewImage, SaveImage, PreviewImage, RH_RhartImageG25OfficialTokenFlareEdit, LoadImage, LoadImage, LoadImage, LoadImage, RH_RhartImageG25OfficialTokenSunburstTextToImage, 忽略多组孤海, 忽略多组孤海]
 patterns: []
 missing: [忽略多组孤海, 忽略多组孤海]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 # 图片生成/图生图/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2098218264106201090.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/全能图片 G-Image-2.5 Flare｜轻量快速版｜文生图+图生图(图片编辑)_2098218264106201090.json`
 
 ## 结构
 

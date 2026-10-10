@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json
 hash: 53cae23ad9dba930
 coverage: 0.305085
-learned_at: 2026-10-07 02:41:10
+learned_at: 2026-10-10 20:48:01
 nodes: [CLIPLoader, GetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, QwenImage21Cache, Seed (rgthree), EmptyLatentImage, GetNode, SetNode, VAELoader, UNETLoader, SetNode, GetNode, 忽略多组孤海, QwenPERewriteT8, ShowText|pysssss, Note, GetNode, GetNode, SetNode, SaveImageAdvanced, VAEDecode, SaveImage, KSampler, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, TextEncodeQwenImage21, SetNode, SetNode, SetNode, SetNode, LoadImage, 忽略多组孤海, ComfySwitchNode, ResolutionSelector, Note, SetNode, Note, Text Multiline, Image Comparer (rgthree), LoadImage, LoadImage, Note, XinbaoImageStandardizer]
 patterns: []
 missing: [Text Multiline, 忽略多组孤海, 忽略多组孤海, Seed (rgthree)]

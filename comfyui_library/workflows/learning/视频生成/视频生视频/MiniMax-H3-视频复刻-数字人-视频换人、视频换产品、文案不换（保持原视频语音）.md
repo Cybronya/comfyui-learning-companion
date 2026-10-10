@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/视频生视频/MiniMax-H3-视频复刻-数字人-视频换人、视频换产品、文案不换（保持原视频语音）.json
 hash: 22cd60c727a7912d
 coverage: 0.65625
-learned_at: 2026-10-07 00:37:45
+learned_at: 2026-10-10 22:56:32
 nodes: [CLIPLoader, VAELoader, VAELoader, ComfyMathExpression, UNETLoader, SolAttnMiniMax, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, MiniMaxH3DualClockSamplerT8, BasicGuider, RandomNoise, MarkdownNote, SamplerCustomAdvanced, LoraLoaderBypassModelOnly, PrimitiveFloat, MarkdownNote, MarkdownNote, LoadImage, CR Prompt Text, LoadImage, ResolutionSelector, VHS_LoadVideo, VHS_LoadVideo, MiniMaxH3AVDecodeT8, MiniMaxH3AudioConditioningT8, MarkdownNote, MarkdownNote, MarkdownNote, VHS_VideoCombine, 孤海注释, 孤海注释, 孤海注释]
 patterns: []
 missing: [CR Prompt Text]

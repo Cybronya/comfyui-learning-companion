@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/Image_capybara_v
 hash: f933fe2bddf57c6c
 official: true
 coverage: 0.2
-learned_at: 2026-10-07 21:35:35
+learned_at: 2026-10-10 22:43:05
 nodes: [MarkdownNote, MarkdownNote, SaveImage, MarkdownNote, 4f4ddf39-1508-4d34-a35c-ff10e6ce995b]
 patterns: []
 missing: [4f4ddf39-1508-4d34-a35c-ff10e6ce995b]

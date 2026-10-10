@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-portra
 hash: 759bba6fe1035bf2
 official: true
 coverage: 0.5
-learned_at: 2026-10-07 21:36:34
+learned_at: 2026-10-10 22:49:23
 nodes: [SaveImage, Note, MarkdownNote, LoadImage, LoadImage, 9e3c3756-d15f-4361-8e99-c35673036e68]
 patterns: []
 missing: [9e3c3756-d15f-4361-8e99-c35673036e68]

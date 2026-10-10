@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/sd3.5_large_blur
 hash: 1080bd0dc2fd3ed9
 official: true
 coverage: 0.833333
-learned_at: 2026-10-07 21:36:15
+learned_at: 2026-10-10 22:48:50
 nodes: [ConditioningZeroOut, CLIPTextEncode, VAEDecode, LoadImage, EmptySD3LatentImage, ControlNetLoader, CheckpointLoaderSimple, MarkdownNote, MarkdownNote, KSampler, SaveImage, ControlNetApplyAdvanced]
 patterns: []
 missing: []

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_image
 hash: 3a95c94c18872d88
 official: true
 coverage: 0.846154
-learned_at: 2026-10-07 21:35:57
+learned_at: 2026-10-10 22:48:28
 nodes: [CLIPLoader, UNETLoader, VAELoader, EmptySD3LatentImage, MarkdownNote, VAEDecode, LoraLoaderModelOnly, KSampler, ConditioningZeroOut, ModelSamplingAuraFlow, CLIPTextEncode, SaveImage, MarkdownNote]
 patterns: []
 missing: []

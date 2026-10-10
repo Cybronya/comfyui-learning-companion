@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1 参考人物姿势_2102935036923310081.json
-name: Qwen Image 2.1 参考人物姿势_2102935036923310081.json
+name: Qwen Image 2.1 参考人物姿势_2102935036923310081
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 参考人物姿势_2102935036923310081.json
 hash: 8839c6f33fdd711e
 coverage: 0.772727
-learned_at: 2026-10-09 22:09:16
+learned_at: 2026-10-10 20:48:05
 nodes: [CLIPLoader, CR Prompt Text, easy cleanGpuUsed, SaveImage, Note, QwenPERewriteT8, easy showAnything, TextEncodeQwenImage21, LoadImage, ResolutionSelector, LoadImage, VAELoader, AIO_Preprocessor, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, UNETLoader, QwenImage21SpectrumT8, KSampler, VAEDecode, QwenImage21Cache, EmptyLatentImage, ComfySwitchNode]
 patterns: []
 missing: [easy cleanGpuUsed, CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 # 图片生成/图生图/Qwen Image 2.1 参考人物姿势_2102935036923310081.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102935036923310081.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 参考人物姿势_2102935036923310081.json`
 
 ## 结构
 

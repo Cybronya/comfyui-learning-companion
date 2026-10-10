@@ -1,13 +1,13 @@
 ---
 key: 图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json
-name: [🛫书墨]wan2.2图像反推文生图_1952356133568745474.json
+name: [🛫书墨]wan2.2图像反推文生图_1952356133568745474
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json
 hash: dfcf322c7843861e
 coverage: 0.769231
-learned_at: 2026-10-07 23:04:43
+learned_at: 2026-10-10 23:16:21
 nodes: [MarkdownNote, EmptyHunyuanLatentVideo, KSamplerSelect, RandomNoise, CFGGuider, BasicScheduler, SplitSigmas, SamplerCustomAdvanced, DisableNoise, SamplerCustomAdvanced, ModelSamplingSD3, WanVideoNAG, CLIPTextEncode, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1ExtraOptions, VAEDecode, SaveImage, LayerUtility: JoyCaptionBeta1, VAELoader, CLIPLoader, UNETLoader, LoraLoaderModelOnly, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, ShowText|pysssss]
 patterns: []
 missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model]
@@ -16,7 +16,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 # 图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952356133568745474.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json`
 
 ## 结构
 

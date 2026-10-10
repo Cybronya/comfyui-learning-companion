@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json
-name: Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json
+name: Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json
 hash: 53e3c15f0e5822ad
 coverage: 0.722222
-learned_at: 2026-10-09 22:19:28
+learned_at: 2026-10-10 20:48:07
 nodes: [Image Comparer (rgthree), OpenposePreprocessor, Reroute, GetImageSize, NuiKr.OpenPoseEditor, ResolutionSelector, EmptyLatentImage, Reroute, GroupSwitcher, Reroute, PreviewImage, PreviewImage, Reroute, Reroute, SaveImage, PrimitiveStringMultiline, PrimitiveBoolean, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, ComfySwitchNode, KSampler, VAEDecode, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: [NuiKr.OpenPoseEditor]
@@ -18,7 +18,7 @@ discoveries: [次要节点 `NuiKr.OpenPoseEditor` 仅有 ControlNet/KSampler 的
 
 # 图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102549583330111489.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json`
 
 ## 结构
 

@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961.json
-name: CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961.json
+name: CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961.json
 hash: ad6640acbba68f89
 coverage: 0.909091
-learned_at: 2026-10-09 22:19:27
+learned_at: 2026-10-10 20:48:02
 nodes: [VAELoader, AIO_Preprocessor, LoadImage, LoadImage, CLIPLoader, UNETLoader, VAEDecode, SaveImage, TextEncodeQwenImage21, PrimitiveStringMultiline, KSampler]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 # 图片生成/图生图/CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102217964954152961.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961.json`
 
 ## 结构
 

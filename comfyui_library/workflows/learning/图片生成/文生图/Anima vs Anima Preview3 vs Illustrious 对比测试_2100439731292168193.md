@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193.json
+key: Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193.json
 name: Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193
 type: Text To Image
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193.json
 hash: 337615625ead4cc8
 coverage: 0.95
-learned_at: 2026-10-07 03:04:54
+learned_at: 2026-10-10 21:26:14
 nodes: [CLIPTextEncode, CLIPTextEncode, VAEDecode, SaveImage, AddLabel, CLIPTextEncode, ModelSamplingAuraFlow, KSampler, VAELoader, VAEDecode, SaveImage, EmptyLatentImage, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, ImageConcanate, AddLabel, AddLabel, easy seed, KSampler, AddLabel, ModelSamplingAuraFlow, KSampler, CheckpointLoaderSimple, CLIPTextEncode, CLIPLoader, VAELoader, CLIPLoader, UNETLoader, UNETLoader, ImageConcanate, VAEDecode, SaveImage, SaveImage, MarkdownNote, LoadImage, LoadImage, Text, LoadImage, LoadImage]
 patterns: [text_to_image]
 missing: [easy seed]
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "waiIllustriousSDXL_v170.s
 discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 图片生成/文生图/Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193.json
+# Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Anima vs Anima Preview3 vs Illustrious 对比测试_2100439731292168193.json`
 

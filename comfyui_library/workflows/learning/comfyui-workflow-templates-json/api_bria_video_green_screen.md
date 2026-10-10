@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_video_g
 hash: 088a48b99a4a6f5d
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:24
+learned_at: 2026-10-10 22:43:26
 nodes: [LoadVideo, SaveVideo, BriaVideoGreenScreen]
 patterns: []
 missing: []

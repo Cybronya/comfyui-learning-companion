@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/自用版  Qwen Image 2.1文生图+图像编辑 二合一高清放大工作流V2.0_2105125909257871362.json
 hash: 8be7dc5326901061
 coverage: 0.410714
-learned_at: 2026-10-06 23:00:28
+learned_at: 2026-10-10 23:17:03
 nodes: [GetNode, SetNode, GetNode, KSampler, VAEDecode, GetNode, GetNode, GetNode, TextEncodeQwenImage21, GetNode, LoadImage, LoadImage, SetNode, SetNode, SetNode, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, TTP_Image_Tile_Batch, ImageScaleBy, ImageScaleBy, SeedVR2VideoUpscaler, TTP_Image_Assy, GetImageSize+, ImageCASharpening+, ImageResize+, SeedVR2LoadVAEModel, LoadImage, SetNode, 孤海注释, 孤海注释, 孤海注释, EmptyLatentImage, easy ifElse, SetNode, ResolutionSelector, SetNode, TTP_Tile_image_size, SetNode, SetNode, SetNode, easy promptLine, TextToListNode, 忽略多组孤海, 孤海注释, UNETLoader, CLIPLoader, VAELoader, SeedVR2LoadDiTModel, Image Comparer (rgthree), LoraLoaderModelOnly, PreviewImage, SaveImage, PrimitiveStringMultiline, LoadImage]
 patterns: []
 missing: [ImageCASharpening+, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, GetImageSize+, ImageResize+, easy promptLine]

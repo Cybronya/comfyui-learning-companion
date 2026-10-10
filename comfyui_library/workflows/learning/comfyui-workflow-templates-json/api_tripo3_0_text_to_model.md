@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_tripo3_0_tex
 hash: a01f54233a593d4d
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:34:57
+learned_at: 2026-10-10 22:46:21
 nodes: [TripoTextToModelNode, SaveGLB, TripoRigNode, TripoRetargetNode, TripoConversionNode, TripoTextureNode, SaveGLB]
 patterns: []
 missing: []

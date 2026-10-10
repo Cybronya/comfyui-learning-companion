@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/anima_base 1.0 文生图_1888839342318870529.json
 hash: de7acd811fc92867
 coverage: 0.875
-learned_at: 2026-10-07 03:04:55
+learned_at: 2026-10-10 23:16:30
 nodes: [CLIPLoader, UNETLoader, VAELoader, CLIPTextEncode, VAEDecode, KSampler, Int, KSampler, SaveImage, VAEDecode, SaveImage, RH_Translator, CLIPTextEncode, CR Text Concatenate, JjkText, EmptyLatentImage]
 patterns: [text_to_image]
 missing: [CR Text Concatenate]

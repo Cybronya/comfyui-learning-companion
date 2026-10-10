@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_remove_
 hash: 06b0ac2b179694ef
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:33:23
+learned_at: 2026-10-10 22:43:25
 nodes: [BriaRemoveVideoBackground, LoadVideo, SaveVideo]
 patterns: []
 missing: []

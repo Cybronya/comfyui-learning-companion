@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json
-name: 开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json
+name: 开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json
 hash: f69ba5cf2ef4eb86
 coverage: 0.666667
-learned_at: 2026-10-09 22:27:09
+learned_at: 2026-10-10 20:48:17
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, ComfySwitchNode, QwenImage21Cache, 孤海注释, MarkdownNote, Note Plus (mtb), LoadImage, VAEDecode, CR Text, SaveImage, TextEncodeQwenImage21]
 patterns: []
 missing: [CR Text, Note Plus (mtb)]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 # 图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102179241923272706.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json`
 
 ## 结构
 

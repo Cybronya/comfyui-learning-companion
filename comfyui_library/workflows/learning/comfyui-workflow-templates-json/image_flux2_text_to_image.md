@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2_text
 hash: 58592f46e85b5b4b
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:42
+learned_at: 2026-10-10 22:48:01
 nodes: [SaveImage, MarkdownNote, e3a57dc6-b2bf-4d05-927d-3715b40d2a77]
 patterns: []
 missing: [e3a57dc6-b2bf-4d05-927d-3715b40d2a77]

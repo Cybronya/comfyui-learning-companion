@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json
-name: Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json
+name: Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825
 type: Text To Image
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json
 hash: 1a8671c46100d5e1
 coverage: 0.688889
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:06
 nodes: [QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, ConditioningZeroOut, VAEDecode, QwenImage21ModelConfig_EditUtils, QwenImage21Cache, GetNode, GetNode, GetNode, CLIPLoader, SetNode, EditTextEncode_EditUtils, SetNode, SetNode, VAELoader, UNETLoader, CLIPLoader, SetNode, SetNode, CLIPLoader, BatchImagesNode, PrimitiveInt, EmptyLatentImage, GetNode, TextEncodeQwenImage21, PrimitiveInt, PrimitiveInt, KSampler, KSampler, Fast Groups Bypasser (rgthree), PrimitiveInt, CropWithPadInfo_EditUtils, PrimitiveStringMultiline, ResolutionSelector, GetNode, GetNode, GetNode, GetNode, easy showAnything, VAEDecode, SaveImageAdvanced, TextGenerateLTX2Prompt, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveInt, TextGenerateLTX2Prompt, Image Comparer (rgthree), CropWithPadInfo_EditUtils, SaveImage, LoadImage, SaveImage, PrimitiveStringMultiline, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -18,7 +18,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 # 图片生成/图生图/Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102465754015821825.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多合一工作流图生图文生图处理工具_2102465754015821825.json`
 
 ## 结构
 

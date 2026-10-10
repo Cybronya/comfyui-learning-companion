@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-1_inpu
 hash: 7d5b8b53682f3916
 official: true
 coverage: 0.961538
-learned_at: 2026-10-07 21:36:29
+learned_at: 2026-10-10 22:49:15
 nodes: [LoadImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, GrokImageEditNodeV2, SaveImage, MarkdownNote]
 patterns: []
 missing: []

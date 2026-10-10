@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json
-name: Qwen-image2.1-动作迁移_2102372877952704514.json
+name: Qwen-image2.1-动作迁移_2102372877952704514
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json
 hash: 474f973873ac8a79
 coverage: 0.8
-learned_at: 2026-10-09 22:27:12
+learned_at: 2026-10-10 20:48:09
 nodes: [SaveImage, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, VAEDecode, LoadImage, LoadImage, PreviewImage, KSampler, BodyRatioMapperSDPoseRender, CheckpointLoaderSimple, SDPoseKeypointExtractor, PreviewImage, CR Prompt Text]
 patterns: []
 missing: [CR Prompt Text]
@@ -17,7 +17,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 # 图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102372877952704514.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Qwen-image2.1-动作迁移_2102372877952704514.json`
 
 ## 结构
 

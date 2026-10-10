@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_sferro2
 hash: f79a55c06fa5bfb5
 official: true
 coverage: 1
-learned_at: 2026-10-07 21:36:27
+learned_at: 2026-10-10 22:49:11
 nodes: [LoadImage, BatchImagesNode, GeminiImage2Node, SaveImage, LoadImage]
 patterns: []
 missing: []

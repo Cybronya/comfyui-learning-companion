@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-1_clic
 hash: bbb8334b1219b563
 official: true
 coverage: 0.45
-learned_at: 2026-10-07 21:36:29
+learned_at: 2026-10-10 22:49:14
 nodes: [SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, 0f47377a-2933-4dba-9791-a9c54b078226, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, b7908082-f5ff-497d-8e80-e4b0ffde0419, LoadImage, MarkdownNote]
 patterns: []
 missing: [0f47377a-2933-4dba-9791-a9c54b078226, b7908082-f5ff-497d-8e80-e4b0ffde0419]

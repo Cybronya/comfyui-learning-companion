@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_sdpose_o
 hash: f6862c07ae413dac
 official: true
 coverage: 0.6
-learned_at: 2026-10-07 21:36:52
+learned_at: 2026-10-10 22:49:57
 nodes: [MarkdownNote, LoadVideo, CreateVideo, SaveVideo, 01b6a731-fb78-4070-9a38-c87146da9604]
 patterns: []
 missing: [01b6a731-fb78-4070-9a38-c87146da9604]

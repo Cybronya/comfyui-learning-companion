@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_chroma1_ra
 hash: 5ca1c9c0c67c051a
 official: true
 coverage: 0.333333
-learned_at: 2026-10-07 21:35:35
+learned_at: 2026-10-10 22:47:28
 nodes: [SaveImage, MarkdownNote, 107cc5d5-a32e-4420-96ef-83996f29ac4c]
 patterns: []
 missing: [107cc5d5-a32e-4420-96ef-83996f29ac4c]

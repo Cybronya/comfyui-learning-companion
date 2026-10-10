@@ -1,5 +1,5 @@
 ---
-key: 图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
+key: Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
 name: Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786
 type: Unknown Workflow
 status: completed
@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
 hash: a6989a66b6ce490f
 coverage: 0.736842
-learned_at: 2026-10-07 02:29:38
+learned_at: 2026-10-10 20:59:08
 nodes: [MarkdownNote, MarkdownNote, TextEncodeQwenImage21, QwenImage21Cache, PreviewAny, SaveImageAdvanced, SaveImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Label (rgthree), TextGenerate, PrimitiveStringMultiline, EmptyLatentImage, UNETLoader, CLIPLoader, PrimitiveStringMultiline, ComfySwitchNode, SeedNode, CLIPLoader, PrimitiveBoolean, StringConcatenate, Textbox, VAEDecode, ResolutionSelector, ComfySwitchNode, Note, Note, PrimitiveBoolean, VAELoader, KSampler]
 patterns: []
 missing: [Label (rgthree)]
@@ -15,7 +15,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
-# 图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
+# Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json`
 

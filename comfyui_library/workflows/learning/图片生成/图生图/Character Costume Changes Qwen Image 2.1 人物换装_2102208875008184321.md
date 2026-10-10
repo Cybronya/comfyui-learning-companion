@@ -1,13 +1,13 @@
 ---
 key: 图片生成/图生图/Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321.json
-name: Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321.json
+name: Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321.json
 hash: 3cef85b735f20eae
 coverage: 0.833333
-learned_at: 2026-10-09 22:27:09
+learned_at: 2026-10-10 20:48:02
 nodes: [CLIPLoader, CLIPLoader, BatchImagesNode, VAELoader, EmptyLatentImage, ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextGenerateLTX2Prompt, TextEncodeQwenImage21, UNETLoader, ResolutionSelector, LoadImage, LoadImage, JjkText, Note, SaveImage]
 patterns: []
 missing: []
@@ -16,7 +16,7 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 # 图片生成/图生图/Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/图生图/2102208875008184321.json`
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321.json`
 
 ## 结构
 

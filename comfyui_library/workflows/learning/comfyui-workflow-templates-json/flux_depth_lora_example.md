@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_depth_lora_
 hash: a377b0c63a6f8e5b
 official: true
 coverage: 0.4
-learned_at: 2026-10-07 21:35:24
+learned_at: 2026-10-10 22:47:09
 nodes: [LoadImage, MarkdownNote, MarkdownNote, SaveImage, 93bb962d-07fe-4a22-88e4-2df05e9caf80]
 patterns: []
 missing: [93bb962d-07fe-4a22-88e4-2df05e9caf80]

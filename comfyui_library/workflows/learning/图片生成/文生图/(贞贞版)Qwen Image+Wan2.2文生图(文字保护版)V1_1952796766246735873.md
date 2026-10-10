@@ -1,13 +1,13 @@
 ---
-key: 图片生成/文生图/(贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json
-name: (贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json
+key: (贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json
+name: (贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/(贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json
 hash: 8a780fd823497f62
 coverage: 0.75
-learned_at: 2026-10-07 23:11:12
+learned_at: 2026-10-10 21:24:33
 nodes: [CLIPLoader, ModelSamplingAuraFlow, VAELoader, CLIPTextEncode, KSampler, CLIPTextEncode, VAELoader, InpaintModelConditioning, ModelSamplingSD3, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, CLIPLoader, UNETLoader, InvertMask, LoraLoaderModelOnly, SaveImage, VAEDecode, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, PreviewImage, BBoxesToSAM2, easy showAnything, LayerMask: LoadSAM2Model, LayerUtility: PurgeVRAM, CR Prompt Text, KSampler, DownloadAndLoadQwenModel, LayerMask: SAM2UltraV2, LayerUtility: PurgeVRAM, MaskPreview+, MaskToImage, PreviewImage, INPAINT_ExpandMask, SaveImage, VAEDecode, LoadImage, QwenVLDetection, CLIPTextEncode, CLIPTextEncode, CR Prompt Text, EmptySD3LatentImage, JWInteger, JWInteger]
 patterns: []
 missing: [LayerMask: LoadSAM2Model, LayerMask: SAM2UltraV2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, CR Prompt Text, CR Prompt Text, MaskPreview+]
@@ -15,9 +15,9 @@ parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "no
 discoveries: [次要节点 `LayerMask: LoadSAM2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SAM2UltraV2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
-# 图片生成/文生图/(贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json
+# (贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json
 
-> 来源文件 `comfyui_library/workflows/图片生成/文生图/1952796766246735873.json`
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/(贞贞版)Qwen Image+Wan2.2文生图(文字保护版)V1_1952796766246735873.json`
 
 ## 结构
 
