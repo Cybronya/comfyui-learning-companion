@@ -1,0 +1,149 @@
+---
+key: 视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json
+name: LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json
+hash: fdd41e09381c12e1
+coverage: 0.578947
+learned_at: 2026-10-11 03:16:47
+nodes: [CFGGuider, LTXVSeparateAVLatent, ImageScaleBy, CFGGuider, easy cleanGpuUsed, KSamplerSelect, KSamplerSelect, PIP_IntegerCalculator, Int, PIP_IntegerCalculator, EmptyImage, PrimitiveInt, PrimitiveFloat, PrimitiveInt, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, easy cleanGpuUsed, CLIPTextEncode, easy cleanGpuUsed, LTXVConditioning, RandomNoise, easy cleanGpuUsed, CLIPTextEncode, easy cleanGpuUsed, LTXVConcatAVLatent, easy cleanGpuUsed, VHS_VideoCombine, VAEDecodeTiled, LTXVAudioVAEDecode, Int, Int, CR Text Concatenate, RandomNoise, GetImageSize, CR Text Concatenate, ttN concat, easy convertAnything, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, RH_LLMAPI_NODE, LTXVChunkFeedForward, VRAMReserver, CR String To Combo, LoraLoaderModelOnly, LoraLoaderModelOnly, Display Any (rgthree), CR Text Concatenate, CR Text Concatenate, CR Text, Int, CheckpointLoaderSimple, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, LTXVAudioVAELoader, SamplerCustomAdvanced, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, SamplerCustomAdvanced, CR Text, ManualSigmas, LTXVScheduler, ManualSigmas, ManualSigmas, ImpactSwitch, ImpactSwitch, CR Text, CR Text, SaveAudio, CR Text]
+patterns: []
+missing: [CR String To Combo, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, Display Any (rgthree), easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy convertAnything, ttN concat]
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled.safetensors", "height": 25, "width": 121}
+discoveries: [次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识]
+---
+
+# 视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/LTX2.3文生视频 ai提示词优化增强版 提示词ai优化版文生视频_2029978716578779138.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（76 个）：
+- `CFGGuider`
+- `LTXVSeparateAVLatent`
+- `ImageScaleBy`
+- `CFGGuider`
+- `easy cleanGpuUsed`
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `PIP_IntegerCalculator`
+- `Int`
+- `PIP_IntegerCalculator`
+- `EmptyImage`
+- `PrimitiveInt`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `LTXVConditioning`
+- `RandomNoise`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `LTXVConcatAVLatent`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `Int`
+- `Int`
+- `CR Text Concatenate`
+- `RandomNoise`
+- `GetImageSize`
+- `CR Text Concatenate`
+- `ttN concat`
+- `easy convertAnything`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `RH_LLMAPI_NODE`
+- `LTXVChunkFeedForward`
+- `VRAMReserver`
+- `CR String To Combo`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Display Any (rgthree)`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text`
+- `Int`
+- `CheckpointLoaderSimple` ★核心
+- `LatentUpscaleModelLoader`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `CR Text`
+- `ManualSigmas`
+- `LTXVScheduler`
+- `ManualSigmas`
+- `ManualSigmas`
+- `ImpactSwitch`
+- `ImpactSwitch`
+- `CR Text`
+- `CR Text`
+- `SaveAudio`
+- `CR Text`
+
+## 关键参数
+
+- `width` = `121`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-distilled.safetensors`
+
+## 知识
+
+覆盖率 **58%**（44/76）
+
+**有卡**：`CFGGuider`、`LTXVSeparateAVLatent`、`ImageScaleBy`、`KSamplerSelect`、`PIP_IntegerCalculator`、`Int`、`EmptyImage`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`CLIPTextEncode`、`LTXVConditioning`、`RandomNoise`、`LTXVConcatAVLatent`、`VHS_VideoCombine`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`GetImageSize`、`RH_LLMAPI_NODE`、`LTXVChunkFeedForward`、`VRAMReserver`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`ManualSigmas`、`LTXVScheduler`、`SaveAudio`
+
+**缺卡**（27）：`CR String To Combo`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`Display Any (rgthree)`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy convertAnything`、`ttN concat`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
+
+## 学习发现
+
+- 次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识

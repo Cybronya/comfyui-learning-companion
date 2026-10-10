@@ -1,20 +1,20 @@
 ---
-key: 文改图 _ Gemini2.0_1902281640062640129.json
+key: 图片生成/文生图/文改图 _ Gemini2.0_1902281640062640129.json
 name: 文改图 _ Gemini2.0_1902281640062640129
 type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/文改图 _ Gemini2.0_1902281640062640129.json
-hash: 15edbac06a801260
+hash: 4c8bea853bf6bfb5
 coverage: 0.461538
-learned_at: 2026-10-10 20:59:45
+learned_at: 2026-10-11 02:44:56
 nodes: [LoadImage, easy imageSize, DeepTranslatorTextNode, ShowText|pysssss, Google-Gemini-PL, Textbox, ShowText|pysssss, CR Text Concatenate, Textbox, easy imageSize, PreviewImage, SaveImage, Gemini_Flash_200_Exp]
 patterns: []
 missing: [CR Text Concatenate, Google-Gemini-PL, easy imageSize, easy imageSize]
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Google-Gemini-PL` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 文改图 _ Gemini2.0_1902281640062640129.json
+# 图片生成/文生图/文改图 _ Gemini2.0_1902281640062640129.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文改图 _ Gemini2.0_1902281640062640129.json`
 

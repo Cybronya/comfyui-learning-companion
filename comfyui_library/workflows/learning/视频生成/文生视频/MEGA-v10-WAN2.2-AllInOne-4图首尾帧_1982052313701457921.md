@@ -1,0 +1,85 @@
+---
+key: 视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-4图首尾帧_1982052313701457921.json
+name: MEGA-v10-WAN2.2-AllInOne-4图首尾帧_1982052313701457921
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-4图首尾帧_1982052313701457921.json
+hash: fa939f309eef2606
+coverage: 0.928571
+learned_at: 2026-10-11 02:45:00
+nodes: [ImageResizeKJ, INTConstant, INTConstant, ImageResizeKJ, GetImageRangeFromBatch, ModelSamplingSD3, PrimitiveInt, KSampler, VAEDecode, WanVideoVACEStartToEndFrame, GetImageSizeAndCount, WanVaceToVideo, CLIPTextEncode, CLIPTextEncode, LoadImage, String Literal, LoadImage, LoadImage, WanVideoVACEStartToEndFrame, ImageResizeKJ, VHS_VideoCombine, LoadImage, ImageResizeKJ, WanVideoVACEStartToEndFrame, GetImageRangeFromBatch, ImageBatchMulti, MaskBatchMulti, CheckpointLoaderSimple]
+patterns: []
+missing: [String Literal]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v11.safetensors", "denoise": 1, "sampler_name": "ipndm", "scheduler": "beta", "seed": 6456545463455, "steps": 4}
+discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-4图首尾帧_1982052313701457921.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-4图首尾帧_1982052313701457921.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（28 个）：
+- `ImageResizeKJ`
+- `INTConstant`
+- `INTConstant`
+- `ImageResizeKJ`
+- `GetImageRangeFromBatch`
+- `ModelSamplingSD3`
+- `PrimitiveInt`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `WanVideoVACEStartToEndFrame`
+- `GetImageSizeAndCount`
+- `WanVaceToVideo`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `String Literal`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoVACEStartToEndFrame`
+- `ImageResizeKJ`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `ImageResizeKJ`
+- `WanVideoVACEStartToEndFrame`
+- `GetImageRangeFromBatch`
+- `ImageBatchMulti`
+- `MaskBatchMulti`
+- `CheckpointLoaderSimple` ★核心
+
+## 关键参数
+
+- `seed` = `6456545463455`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `ipndm`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-rapid-mega-aio-nsfw-v11.safetensors`
+
+## 知识
+
+覆盖率 **93%**（26/28）
+
+**有卡**：`ImageResizeKJ`、`INTConstant`、`GetImageRangeFromBatch`、`ModelSamplingSD3`、`KSampler`、`VAEDecode`、`WanVideoVACEStartToEndFrame`、`GetImageSizeAndCount`、`WanVaceToVideo`、`CLIPTextEncode`、`LoadImage`、`VHS_VideoCombine`、`ImageBatchMulti`、`MaskBatchMulti`、`CheckpointLoaderSimple`
+
+**缺卡**（1）：`String Literal`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、GetImageSizeAndCount、ImageResizeKJ、GetImageRangeFromBatch
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

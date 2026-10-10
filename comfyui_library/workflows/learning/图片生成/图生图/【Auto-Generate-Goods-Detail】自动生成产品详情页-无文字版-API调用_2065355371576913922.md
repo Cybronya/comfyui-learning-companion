@@ -5,9 +5,9 @@ type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/【Auto-Generate-Goods-Detail】自动生成产品详情页-无文字版-API调用_2065355371576913922.json
-hash: 8dc794ee1d4021a8
+hash: c27cb59cbfebdb43
 coverage: 0.241379
-learned_at: 2026-10-10 20:48:13
+learned_at: 2026-10-11 02:44:50
 nodes: [PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, PrimitiveString, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, PrimitiveString, ZML_MergeText, easy promptLine, easy showAnything, easy showAnything, easy promptLine, LoadImagesFromURL, LoadImagesFromURL, LoadImagesFromURL, LoadImagesFromURL, Reroute, Reroute, Reroute, Reroute, Reroute, LoadMultiImage, Reroute, easy showAnything, LoadImagesFromURL, Text Multiline, Reroute, RH_LLMAPI_Pro_Node, Text Find and Replace, RH_LLMAPI_Pro_Node, easy showAnything, PrimitiveString, PrimitiveString, easy showAnything, Text Multiline, JjkText, easy showAnything, LoadImagesFromURL, PrimitiveString, SaveImage, RH_RhartImageG2ImageToImage, RH_Nano_Banana2_Image2Image, PrimitiveString, CR String To Combo, SaveImage]
 patterns: []
 missing: [CR String To Combo, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, Text Find and Replace, Text Multiline, Text Multiline, easy promptLine, easy promptLine]
