@@ -64,7 +64,7 @@ HEADERS = {
     "Referer": "https://www.runninghub.cn/page-workflow",
 }
 PAGE_SIZE = 30
-MAX_PAGES = 200
+MAX_PAGES = 900
 DELAY = 0.4  # 翻页间隔（秒），温和限速
 
 
