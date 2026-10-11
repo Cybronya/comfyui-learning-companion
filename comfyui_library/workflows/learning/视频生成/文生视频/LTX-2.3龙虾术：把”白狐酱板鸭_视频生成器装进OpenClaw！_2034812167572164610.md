@@ -1,0 +1,101 @@
+---
+key: 视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json
+name: LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json
+hash: deb222c4e1cd3b21
+coverage: 0.770492
+learned_at: 2026-10-11 03:48:35
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, LTXVAudioVAELoader, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LoraLoaderModelOnly, ResizeImagesByLongerEdge, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVPreprocess, ResizeImageMaskNode, KSamplerSelect, ComfyMathExpression, Reroute, ComfyMathExpression, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVAudioVAEDecode, ComfyMathExpression, CLIPTextEncode, LTXVConditioning, LTXVEmptyLatentAudio, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CreateVideo, CFGGuider, VAEDecodeTiled, CheckpointLoaderSimple, LTXVConcatAVLatent, SaveVideo, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, CLIPTextEncode, PrimitiveBoolean, string_util_StrConcat, PrimitiveStringMultiline, string_util_StrConcat, string_util_StrConcat, PrimitiveStringMultiline, string_util_StrConcat, string_util_StrConcat, string_util_StrConcat, StringReplace, PrimitiveStringMultiline, PrimitiveStringMultiline, LoadImage, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PreviewAny, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（61 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `LTXVAudioVAELoader`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `LoraLoaderModelOnly` ★核心
+- `ResizeImagesByLongerEdge`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `ResizeImageMaskNode`
+- `KSamplerSelect` ★核心
+- `ComfyMathExpression`
+- `Reroute`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `LTXVImgToVideoInplace`
+- `LTXVAudioVAEDecode` ★核心
+- `ComfyMathExpression`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `LTXVEmptyLatentAudio` ★核心
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `CreateVideo`
+- `CFGGuider`
+- `VAEDecodeTiled` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LTXVConcatAVLatent`
+- `SaveVideo`
+- `LatentUpscaleModelLoader`
+- `LTXAVTextEncoderLoader`
+- `CLIPTextEncode` ★核心
+- `PrimitiveBoolean`
+- `string_util_StrConcat`
+- `PrimitiveStringMultiline`
+- `string_util_StrConcat`
+- `string_util_StrConcat`
+- `PrimitiveStringMultiline`
+- `string_util_StrConcat`
+- `string_util_StrConcat`
+- `string_util_StrConcat`
+- `StringReplace`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **77%**（47/61）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`ResizeImageMaskNode`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`CreateVideo`、`VAEDecodeTiled`、`CheckpointLoaderSimple`、`SaveVideo`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`PrimitiveBoolean`、`string_util_StrConcat`、`StringReplace`、`LoadImage`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

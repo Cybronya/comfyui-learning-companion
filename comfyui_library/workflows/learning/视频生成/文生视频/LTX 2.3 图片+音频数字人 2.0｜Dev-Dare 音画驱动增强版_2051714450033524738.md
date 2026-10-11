@@ -1,0 +1,125 @@
+---
+key: 视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json
+name: LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json
+hash: 45ef1e03b04a07cd
+coverage: 0.906667
+learned_at: 2026-10-11 19:49:35
+nodes: [PrimitiveBoolean, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, CM_FloatToInt, JWImageResizeByLongerSide, LTXVConditioning, LTXVPreprocess, SolidMask, LTXVAudioVAEEncode, SetLatentNoiseMask, LoraLoaderModelOnly, PrimitiveInt, CFGGuider, CFGGuider, CFGGuider, LTXVImgToVideoConditionOnly, SamplerCustomAdvanced, LTXVLatentUpsampler, GetLatentSizeAndCount, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SamplerCustomAdvanced, image_scale_pixel_v2, MelBandRoFormerSampler, MelBandRoFormerModelLoader, Audio Duration (mtb), SimpleMath+, easy showAnything, Float, Float, GetLatentSizeAndCount, LTXVConcatAVLatent, LTXVSeparateAVLatent, VRAMReserver, TrimAudioDuration, LoraLoaderModelOnly, LoadImage, SaveVideo, LoraLoaderModelOnly, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, PromptRelayEncode, LTX2_NAG, CLIPTextEncode, LayerUtility: PurgeVRAM V2, LatentUpscaleModelLoader, LoadAudio, PrimitiveFloat, Seed Everywhere, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, Text, Text, Text]
+patterns: []
+missing: [Audio Duration (mtb), LayerUtility: PurgeVRAM V2, SimpleMath+, Seed Everywhere]
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-dare-merged-distilled-1.1.safetensors", "height": 25, "width": 97}
+discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+---
+
+# 视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（75 个）：
+- `PrimitiveBoolean`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `RandomNoise`
+- `CM_FloatToInt`
+- `JWImageResizeByLongerSide`
+- `LTXVConditioning`
+- `LTXVPreprocess`
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `SetLatentNoiseMask`
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveInt`
+- `CFGGuider`
+- `CFGGuider`
+- `CFGGuider`
+- `LTXVImgToVideoConditionOnly`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `GetLatentSizeAndCount`
+- `LTXVImgToVideoConditionOnly`
+- `SolidMask`
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoConditionOnly`
+- `SolidMask`
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `CreateVideo`
+- `SamplerCustomAdvanced` ★核心
+- `image_scale_pixel_v2`
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `Audio Duration (mtb)`
+- `SimpleMath+`
+- `easy showAnything`
+- `Float`
+- `Float`
+- `GetLatentSizeAndCount`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `VRAMReserver`
+- `TrimAudioDuration`
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `SaveVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `PromptRelayEncode`
+- `LTX2_NAG`
+- `CLIPTextEncode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `LatentUpscaleModelLoader`
+- `LoadAudio`
+- `PrimitiveFloat`
+- `Seed Everywhere`
+- `CheckpointLoaderSimple` ★核心
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `Text`
+- `Text`
+- `Text`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-dare-merged-distilled-1.1.safetensors`
+
+## 知识
+
+覆盖率 **91%**（68/75）
+
+**有卡**：`PrimitiveBoolean`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`CM_FloatToInt`、`JWImageResizeByLongerSide`、`LTXVConditioning`、`LTXVPreprocess`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXVImgToVideoConditionOnly`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`GetLatentSizeAndCount`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`image_scale_pixel_v2`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`Float`、`VRAMReserver`、`TrimAudioDuration`、`LoadImage`、`SaveVideo`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`LTX2_NAG`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LoadAudio`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`Text`
+
+**缺卡**（4）：`Audio Duration (mtb)`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`Seed Everywhere`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
+
+## 学习发现
+
+- 次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
+- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
+- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明

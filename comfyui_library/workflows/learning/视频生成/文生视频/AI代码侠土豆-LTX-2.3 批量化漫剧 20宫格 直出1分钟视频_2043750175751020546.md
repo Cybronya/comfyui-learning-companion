@@ -1,0 +1,169 @@
+---
+key: 视频生成/文生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546.json
+name: AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546.json
+hash: 55117646f9b4020c
+coverage: 0.415094
+learned_at: 2026-10-11 19:49:33
+nodes: [SetNode, SetNode, SimpleMath+, SetNode, INTConstant, GetNode, PrimitiveFloat, SetNode, GetNode, GetNode, GetNode, GetNode, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, SetNode, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SetNode, SetNode, ImageResizeKJv2, SetNode, GetNode, GetNode, GetNode, GetNode, CR Float To Integer, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, VAELoader, LatentUpscaleModelLoader, SetNode, VAELoaderKJ, SetNode, SetNode, SetNode, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, GetNode, GetNode, CLIPTextEncode, GetNode, GetNode, GetNode, LTXVCropGuides, SamplerCustomAdvanced, LTXVSeparateAVLatent, CLIPTextEncode, LTXVConditioning, GetNode, RH_LLMAPI_Pro_Node, easy cleanGpuUsed, DualCLIPLoader, SetNode, GetNode, GetNode, TTResolutionSelector, easy indexAnything, easy indexAnything, LTXVAudioVAEDecode, easy cleanGpuUsed, GetNode, SDVM Image List Repeat, easy lengthAnything, SetNode, SetNode, SetNode, GuHaiAutoImageSplit, PreviewImage, LTXVAddGuideMulti, ShowText|pysssss, easy showAnything, PreviewImage, Reroute, Reroute, Reroute, Reroute, Reroute, VAEDecodeTiled, easy batchAnything, easy isNone, If ANY execute A else B, EmptyAudio, AudioConcat, Text, easy forLoopStart, easy forLoopEnd, VHS_VideoCombine, LoadImage, LoadImage, LoadImage, LoadImage, Text, Text, Text, Text, Text, UNETLoader, UNETLoader, LoadImage, easy promptList]
+patterns: []
+missing: [CR Float To Integer, If ANY execute A else B, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SDVM Image List Repeat, SimpleMath+, easy batchAnything, easy cleanGpuUsed, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy indexAnything, easy isNone, easy lengthAnything, easy promptList]
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识, 次要节点 `If ANY execute A else B` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `SDVM Image List Repeat` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy isNone` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptList` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+---
+
+# 视频生成/文生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2043750175751020546.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（106 个）：
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `PrimitiveFloat`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `SetNode`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CR Float To Integer`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `VAELoader`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `VAELoaderKJ`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `GetNode`
+- `RH_LLMAPI_Pro_Node`
+- `easy cleanGpuUsed`
+- `DualCLIPLoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `TTResolutionSelector`
+- `easy indexAnything`
+- `easy indexAnything`
+- `LTXVAudioVAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `GetNode`
+- `SDVM Image List Repeat`
+- `easy lengthAnything`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GuHaiAutoImageSplit`
+- `PreviewImage`
+- `LTXVAddGuideMulti`
+- `ShowText|pysssss`
+- `easy showAnything`
+- `PreviewImage`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `VAEDecodeTiled` ★核心
+- `easy batchAnything`
+- `easy isNone`
+- `If ANY execute A else B`
+- `EmptyAudio`
+- `AudioConcat`
+- `Text`
+- `easy forLoopStart`
+- `easy forLoopEnd`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `Text`
+- `Text`
+- `Text`
+- `Text`
+- `Text`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoadImage`
+- `easy promptList`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **42%**（44/106）
+
+**有卡**：`INTConstant`、`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`VAELoader`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`RH_LLMAPI_Pro_Node`、`DualCLIPLoader`、`TTResolutionSelector`、`LTXVAudioVAEDecode`、`GuHaiAutoImageSplit`、`LTXVAddGuideMulti`、`VAEDecodeTiled`、`EmptyAudio`、`AudioConcat`、`Text`、`VHS_VideoCombine`、`LoadImage`、`UNETLoader`
+
+**缺卡**（18）：`CR Float To Integer`、`If ANY execute A else B`、`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`SDVM Image List Repeat`、`SimpleMath+`、`easy batchAnything`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy forLoopEnd`、`easy forLoopStart`、`easy indexAnything`、`easy indexAnything`、`easy isNone`、`easy lengthAnything`、`easy promptList`
+
+**用到的条目**：VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent
+
+## 学习发现
+
+- 次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识
+- 次要节点 `If ANY execute A else B` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
+- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
+- 次要节点 `SDVM Image List Repeat` 知识库中没有该节点类型的任何知识
+- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy isNone` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy promptList` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

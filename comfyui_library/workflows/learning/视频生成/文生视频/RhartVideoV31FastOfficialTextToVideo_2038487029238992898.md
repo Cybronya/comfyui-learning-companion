@@ -1,0 +1,34 @@
+---
+key: 视频生成/文生视频/RhartVideoV31FastOfficialTextToVideo_2038487029238992898.json
+name: RhartVideoV31FastOfficialTextToVideo_2038487029238992898
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/RhartVideoV31FastOfficialTextToVideo_2038487029238992898.json
+hash: 6f00192b438b9b23
+coverage: 1
+learned_at: 2026-10-11 03:48:37
+nodes: [RH_RhartVideoV31FastOfficialTextToVideo, SaveVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/RhartVideoV31FastOfficialTextToVideo_2038487029238992898.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/RhartVideoV31FastOfficialTextToVideo_2038487029238992898.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（2 个）：
+- `RH_RhartVideoV31FastOfficialTextToVideo`
+- `SaveVideo`
+
+## 知识
+
+覆盖率 **100%**（2/2）
+
+**有卡**：`RH_RhartVideoV31FastOfficialTextToVideo`、`SaveVideo`
+
+**用到的条目**：SaveVideo、RH_RhartVideoV31FastOfficialTextToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

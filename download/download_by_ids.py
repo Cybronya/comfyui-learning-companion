@@ -126,7 +126,7 @@ def build_manifest(ids: list[str], tag_id: str | None = None,
     return meta
 
 
-BAD_CHARS = re.compile(r'[\\/:*?"<>|\r\n\t]')
+BAD_CHARS = re.compile(r'[\\/:*?"<>|\x00-\x1f\x7f]')
 
 
 def safe_name(s: str) -> str:

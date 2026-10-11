@@ -1,0 +1,121 @@
+---
+key: 视频生成/文生视频/MiniMax H3_多参极简工作流V3.0（多参考长视频续接）_2094855892327026689.json
+name: MiniMax H3_多参极简工作流V3.0（多参考长视频续接）_2094855892327026689
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3_多参极简工作流V3.0（多参考长视频续接）_2094855892327026689.json
+hash: 6adf3eda35534505
+coverage: 0.616667
+learned_at: 2026-10-11 21:30:22
+nodes: [孤海注释, 孤海注释, VAELoader, MiniMaxH3MemoryEfficientSageAttentionPatch, LTXVSeparateAVLatent, CLIPLoader, VAELoader, 孤海注释, SamplerCustomAdvanced, ConditioningZeroOut, VAEDecodeAudio, VAEDecode, ComfyMathExpression, RandomNoise, LoraLoaderModelOnly, UNETLoader, MiniMaxH3MotionContext, Seed (rgthree), BasicGuider, KSamplerSelect, BasicScheduler, CreateVideo, ResolutionSelector, MiniMaxH3MotionContextTrim, KSampler, MinimaxH3LatentUpscaler3D, Int, LoadVideo, LoadVideo, LoadImage, MarkdownNote, Fast Groups Bypasser (rgthree), MiniMaxH3ReferenceToVideo, LTXVConcatAVLatent, VAEDecode, VAEDecodeAudio, FlashVSRNode, VHS_VideoCombine, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, RH_LLMAPI_NODE, CR Text, PreviewAny, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, 孤海注释, Text Multiline, Fast Groups Bypasser (rgthree), LoadVideoUI, PreviewVideoNode, Text Multiline, PrimitiveFloat, LoadAudioUI, LoadAudioUI, Text Multiline, CS-MultiImageLoader]
+patterns: []
+missing: [CR Text, CS-MultiImageLoader, Text Multiline, Text Multiline, Text Multiline, Seed (rgthree)]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 0.3, "sampler_name": "res_multistep", "scheduler": "simple", "seed": 819327788865639, "steps": 8}
+discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CS-MultiImageLoader` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/MiniMax H3_多参极简工作流V3.0（多参考长视频续接）_2094855892327026689.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/MiniMax H3_多参极简工作流V3.0（多参考长视频续接）_2094855892327026689.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（60 个）：
+- `孤海注释`
+- `孤海注释`
+- `VAELoader`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `LTXVSeparateAVLatent`
+- `CLIPLoader`
+- `VAELoader`
+- `孤海注释`
+- `SamplerCustomAdvanced` ★核心
+- `ConditioningZeroOut`
+- `VAEDecodeAudio` ★核心
+- `VAEDecode` ★核心
+- `ComfyMathExpression`
+- `RandomNoise`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `MiniMaxH3MotionContext`
+- `Seed (rgthree)`
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `CreateVideo`
+- `ResolutionSelector`
+- `MiniMaxH3MotionContextTrim`
+- `KSampler` ★核心
+- `MinimaxH3LatentUpscaler3D`
+- `Int`
+- `LoadVideo`
+- `LoadVideo`
+- `LoadImage`
+- `MarkdownNote`
+- `Fast Groups Bypasser (rgthree)`
+- `MiniMaxH3ReferenceToVideo`
+- `LTXVConcatAVLatent`
+- `VAEDecode` ★核心
+- `VAEDecodeAudio` ★核心
+- `FlashVSRNode`
+- `VHS_VideoCombine`
+- `Fast Groups Bypasser (rgthree)`
+- `孤海注释`
+- `孤海注释`
+- `孤海注释`
+- `孤海注释`
+- `孤海注释`
+- `RH_LLMAPI_NODE`
+- `CR Text`
+- `PreviewAny`
+- `Fast Groups Bypasser (rgthree)`
+- `PrimitiveStringMultiline`
+- `孤海注释`
+- `Text Multiline`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadVideoUI`
+- `PreviewVideoNode`
+- `Text Multiline`
+- `PrimitiveFloat`
+- `LoadAudioUI`
+- `LoadAudioUI`
+- `Text Multiline`
+- `CS-MultiImageLoader`
+
+## 关键参数
+
+- `seed` = `819327788865639`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_multistep`
+- `scheduler` = `simple`
+- `denoise` = `0.3`
+
+## 知识
+
+覆盖率 **62%**（37/60）
+
+**有卡**：`VAELoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LTXVSeparateAVLatent`、`CLIPLoader`、`SamplerCustomAdvanced`、`ConditioningZeroOut`、`VAEDecodeAudio`、`VAEDecode`、`ComfyMathExpression`、`RandomNoise`、`LoraLoaderModelOnly`、`UNETLoader`、`MiniMaxH3MotionContext`、`BasicGuider`、`KSamplerSelect`、`BasicScheduler`、`CreateVideo`、`ResolutionSelector`、`MiniMaxH3MotionContextTrim`、`KSampler`、`MinimaxH3LatentUpscaler3D`、`Int`、`LoadVideo`、`LoadImage`、`MiniMaxH3ReferenceToVideo`、`LTXVConcatAVLatent`、`FlashVSRNode`、`VHS_VideoCombine`、`RH_LLMAPI_NODE`、`LoadVideoUI`、`PreviewVideoNode`、`LoadAudioUI`
+
+**缺卡**（6）：`CR Text`、`CS-MultiImageLoader`、`Text Multiline`、`Text Multiline`、`Text Multiline`、`Seed (rgthree)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+- 次要节点 `CS-MultiImageLoader` 知识库中没有该节点类型的任何知识
+- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

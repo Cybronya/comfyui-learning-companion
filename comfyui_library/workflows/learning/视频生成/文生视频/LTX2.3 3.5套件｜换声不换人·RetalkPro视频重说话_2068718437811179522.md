@@ -1,0 +1,99 @@
+---
+key: 视频生成/文生视频/LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522.json
+name: LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522.json
+hash: e24a892a674bfb80
+coverage: 0.983051
+learned_at: 2026-10-11 20:21:25
+nodes: [RandomNoise, CFGGuider, ManualSigmas, LTXVConcatAVLatent, LTXVAudioVAEDecode, LTXAddVideoICLoRAGuide, LatentUpscaleModelLoader, LTXVEmptyLatentAudio, CLIPTextEncode, CheckpointLoaderSimple, LTXVCropGuides, LTXVSeparateAVLatent, LTXVSetAudioRefTokens, EmptyLTXVLatentVideo, KSamplerSelect, LTXAddVideoICLoRAGuide, KSamplerSelect, RandomNoise, CFGGuider, LTXVAudioVAEEncode, SamplerCustomAdvanced, LTXVAudioVAELoader, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, LTXAVTextEncoderLoader, LTXVSetAudioRefTokens, SamplerCustomAdvanced, LTXVSeparateAVLatent, LoraLoaderModelOnly, LTXAddVideoICLoRAGuide, LTXVConcatAVLatent, CFGGuider, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, LoraLoaderModelOnly, LoraLoaderModelOnly, image_scale_pixel_v2, Image_Resize_longsize, LTX2SamplingPreviewOverride, VAELoader, LTXVConditioning, LTX2_NAG, GetImageSizeAndCount, easy showAnything, LTXVTiledVAEDecode, JWImageSequenceExtractFromBatch, VHS_VideoCombine, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVCropGuides, LTXVLatentUpsampler, LTXVSetAudioRefTokens, ManualSigmas, ManualSigmas, PromptRelaySmartEncode, ComfyMathExpression, LoadVideoUI]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors", "height": 24, "width": 97}
+---
+
+# 视频生成/文生视频/LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/LTX2.3 3.5套件｜换声不换人·RetalkPro视频重说话_2068718437811179522.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（59 个）：
+- `RandomNoise`
+- `CFGGuider`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXAddVideoICLoRAGuide`
+- `LatentUpscaleModelLoader`
+- `LTXVEmptyLatentAudio` ★核心
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LTXVSetAudioRefTokens`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect` ★核心
+- `LTXAddVideoICLoRAGuide`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `CFGGuider`
+- `LTXVAudioVAEEncode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVAudioVAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `LTXAVTextEncoderLoader`
+- `LTXVSetAudioRefTokens`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly` ★核心
+- `LTXAddVideoICLoRAGuide`
+- `LTXVConcatAVLatent`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `image_scale_pixel_v2`
+- `Image_Resize_longsize`
+- `LTX2SamplingPreviewOverride`
+- `VAELoader`
+- `LTXVConditioning`
+- `LTX2_NAG`
+- `GetImageSizeAndCount`
+- `easy showAnything`
+- `LTXVTiledVAEDecode` ★核心
+- `JWImageSequenceExtractFromBatch`
+- `VHS_VideoCombine`
+- `LTXVConcatAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSetAudioRefTokens`
+- `ManualSigmas`
+- `ManualSigmas`
+- `PromptRelaySmartEncode`
+- `ComfyMathExpression`
+- `LoadVideoUI`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors`
+
+## 知识
+
+覆盖率 **98%**（58/59）
+
+**有卡**：`RandomNoise`、`CFGGuider`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVAudioVAEDecode`、`LTXAddVideoICLoRAGuide`、`LatentUpscaleModelLoader`、`LTXVEmptyLatentAudio`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`LTXVSetAudioRefTokens`、`EmptyLTXVLatentVideo`、`KSamplerSelect`、`LTXVAudioVAEEncode`、`SamplerCustomAdvanced`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXICLoRALoaderModelOnly`、`LTXAVTextEncoderLoader`、`image_scale_pixel_v2`、`Image_Resize_longsize`、`LTX2SamplingPreviewOverride`、`VAELoader`、`LTXVConditioning`、`LTX2_NAG`、`GetImageSizeAndCount`、`LTXVTiledVAEDecode`、`JWImageSequenceExtractFromBatch`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`PromptRelaySmartEncode`、`ComfyMathExpression`、`LoadVideoUI`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

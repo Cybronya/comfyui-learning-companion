@@ -1,0 +1,402 @@
+---
+key: 视频生成/文生视频/Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985.json
+name: Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985.json
+hash: c5ad0c40f7311559
+coverage: 0.449541
+learned_at: 2026-10-11 21:19:47
+nodes: [SomethingToString, llama_cpp_parameters, Reroute, Reroute, CR Text Concatenate, GetNode, SetNode, SetNode, SetNode, ComfyMathExpression, SetNode, GetNode, GetNode, llama_cpp_unload_model, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, llama_cpp_model_loader, SetNode, GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), GetNode, GetNode, GetNode, Any Switch (rgthree), SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), SetNode, SetNode, SetNode, SetNode, LoadImage, LoadImage, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, LayerUtility: PurgeVRAM, SetNode, LoadImage, GetNode, RandomNoise, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, VAEDecodeAudio, VAEDecode, SetNode, GetNode, SetNode, SetNode, VAEDecode, GetNode, SetNode, VAEDecodeAudio, SetNode, VAEDecode, GetNode, MiniMaxH3ImageToVideo, ModelPassThrough, ModelPassThrough, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, LoadImage, llama_cpp_instruct_adv, GetNode, CR Prompt Text, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy clearCacheAll, GetNode, GetNode, GetNode, RandomNoise, VAEDecode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, PlaySound|pysssss, GetNode, GetNode, SetNode, SetNode, GetNode, VAEDecodeAudio, GetNode, GetNode, ModelPassThrough, GetNode, ModelPassThrough, Any Switch (rgthree), BasicScheduler, GetNode, GetNode, GetNode, PreviewAny, CR Prompt Text, SetNode, GetNode, PlaySound|pysssss, GetNode, GetNode, VHS_VideoCombine, PlaySound|pysssss, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, PlaySound|pysssss, VAEEncodeAudio, VAEDecode, easy clearCacheAll, easy clearCacheAll, KSamplerSelect, KSamplerSelect, KSamplerSelect, GetNode, LoadImage, KSamplerSelect, easy clearCacheAll, RandomNoise, VAEDecode, VAEDecodeAudio, GetNode, Any Switch (rgthree), VHS_VideoCombine, ModelPassThrough, Seed (rgthree), BasicScheduler, Any Switch (rgthree), VAEEncode, LoraLoaderModelOnly, LoadImage, GetNode, GetNode, SetNode, GetNode, VAELoader, VAELoader, VHS_VideoCombine, PlaySound|pysssss, GetNode, BasicScheduler, BasicScheduler, RandomNoise, RandomNoise, ExtendIntermediateSigmas, Any Switch (rgthree), SamplerCustomAdvanced, GetNode, BasicGuider, GetNode, ModelPassThrough, Any Switch (rgthree), BasicGuider, GetNode, KSamplerSelect, BasicScheduler, GetNode, Any Switch (rgthree), SamplerCustomAdvanced, SamplerCustomAdvanced, ModelPreviewOverrideKJ, BasicGuider, GetNode, SamplerCustomAdvanced, ModelPreviewOverrideKJ, BasicGuider, GetNode, PT_H3ConcatAVLatent, SamplerCustomAdvanced, ModelPreviewOverrideKJ, Fast Groups Bypasser (rgthree), BasicGuider, ModelPreviewOverrideKJ, ExtendIntermediateSigmas, PathchSageAttentionKJ, ModelAttentionBackend, GetNode, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, PathchSageAttentionKJ, Fast Groups Bypasser (rgthree), ModelAttentionBackend, GetNode, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, PathchSageAttentionKJ, ModelAttentionBackend, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, PathchSageAttentionKJ, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, MiniMaxH3SigmaShift, PathchSageAttentionKJ, Fast Groups Bypasser (rgthree), MiniMaxH3ImageToVideo, GetNode, MiniMaxH3ImageToVideo, MiniMaxH3ReferenceToVideo, ImageResizeKJv2, Fast Groups Bypasser (rgthree), Seed (rgthree), Fast Groups Bypasser (rgthree), ExtendIntermediateSigmas, VHS_LoadVideo, ModelPreviewOverrideKJ, ExtendIntermediateSigmas, UNETLoader, UNETLoader, Fast Groups Bypasser (rgthree), MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, ModelAttentionBackend, Fast Groups Bypasser (rgthree), UNETLoader, CLIPLoader, PrimitiveFloat, LoadAudio, PrimitiveStringMultiline, PrimitiveFloat, ResolutionSelector, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, UNETLoader, ResolutionSelector, ResolutionSelector, SetNode, LoraLoaderModelOnly, ModelPassThrough, SetNode, LoraLoaderModelOnly, UNETLoader, UNETLoader, UNETLoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
+patterns: [text_to_image, image_to_image]
+missing: [CR Text Concatenate, LayerUtility: PurgeVRAM, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, CR Prompt Text, CR Prompt Text, Seed (rgthree), Seed (rgthree)]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/Minimax H3五合一8.19版｜加速反推双采多参文图首尾帧_2092372050458537985.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（327 个）：
+- `SomethingToString`
+- `llama_cpp_parameters`
+- `Reroute`
+- `Reroute`
+- `CR Text Concatenate`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ComfyMathExpression`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `llama_cpp_unload_model`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `llama_cpp_model_loader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `LoadImage`
+- `GetNode`
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VAEDecodeAudio` ★核心
+- `VAEDecode` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `SetNode`
+- `VAEDecodeAudio` ★核心
+- `SetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `MiniMaxH3ImageToVideo`
+- `ModelPassThrough`
+- `ModelPassThrough`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `LoadImage`
+- `llama_cpp_instruct_adv`
+- `GetNode`
+- `CR Prompt Text`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy clearCacheAll`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `RandomNoise`
+- `VAEDecode` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `PlaySound|pysssss`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `GetNode`
+- `ModelPassThrough`
+- `GetNode`
+- `ModelPassThrough`
+- `Any Switch (rgthree)`
+- `BasicScheduler`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PreviewAny`
+- `CR Prompt Text`
+- `SetNode`
+- `GetNode`
+- `PlaySound|pysssss`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `PlaySound|pysssss`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `VHS_VideoCombine`
+- `PlaySound|pysssss`
+- `VAEEncodeAudio` ★核心
+- `VAEDecode` ★核心
+- `easy clearCacheAll`
+- `easy clearCacheAll`
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `LoadImage`
+- `KSamplerSelect` ★核心
+- `easy clearCacheAll`
+- `RandomNoise`
+- `VAEDecode` ★核心
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `Any Switch (rgthree)`
+- `VHS_VideoCombine`
+- `ModelPassThrough`
+- `Seed (rgthree)`
+- `BasicScheduler`
+- `Any Switch (rgthree)`
+- `VAEEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VAELoader`
+- `VAELoader`
+- `VHS_VideoCombine`
+- `PlaySound|pysssss`
+- `GetNode`
+- `BasicScheduler`
+- `BasicScheduler`
+- `RandomNoise`
+- `RandomNoise`
+- `ExtendIntermediateSigmas`
+- `Any Switch (rgthree)`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `BasicGuider`
+- `GetNode`
+- `ModelPassThrough`
+- `Any Switch (rgthree)`
+- `BasicGuider`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `ModelPreviewOverrideKJ`
+- `BasicGuider`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `ModelPreviewOverrideKJ`
+- `BasicGuider`
+- `GetNode`
+- `PT_H3ConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `ModelPreviewOverrideKJ`
+- `Fast Groups Bypasser (rgthree)`
+- `BasicGuider`
+- `ModelPreviewOverrideKJ`
+- `ExtendIntermediateSigmas`
+- `PathchSageAttentionKJ`
+- `ModelAttentionBackend`
+- `GetNode`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `PathchSageAttentionKJ`
+- `Fast Groups Bypasser (rgthree)`
+- `ModelAttentionBackend`
+- `GetNode`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `PathchSageAttentionKJ`
+- `ModelAttentionBackend`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `PathchSageAttentionKJ`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ModelAttentionBackend`
+- `MiniMaxH3SigmaShift`
+- `PathchSageAttentionKJ`
+- `Fast Groups Bypasser (rgthree)`
+- `MiniMaxH3ImageToVideo`
+- `GetNode`
+- `MiniMaxH3ImageToVideo`
+- `MiniMaxH3ReferenceToVideo`
+- `ImageResizeKJv2`
+- `Fast Groups Bypasser (rgthree)`
+- `Seed (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `ExtendIntermediateSigmas`
+- `VHS_LoadVideo`
+- `ModelPreviewOverrideKJ`
+- `ExtendIntermediateSigmas`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `ModelAttentionBackend`
+- `Fast Groups Bypasser (rgthree)`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `PrimitiveFloat`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `Fast Groups Bypasser (rgthree)`
+- `PrimitiveStringMultiline`
+- `UNETLoader` ★核心
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `ModelPassThrough`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `JjkText`
+- `EmptyLatentImage` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `Note`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **45%**（147/327）
+
+**有卡**：`SomethingToString`、`llama_cpp_parameters`、`ComfyMathExpression`、`llama_cpp_unload_model`、`llama_cpp_model_loader`、`LoadImage`、`RandomNoise`、`VAEDecodeAudio`、`VAEDecode`、`MiniMaxH3ImageToVideo`、`ModelPassThrough`、`llama_cpp_instruct_adv`、`BasicScheduler`、`VHS_VideoCombine`、`VAEEncodeAudio`、`KSamplerSelect`、`VAEEncode`、`LoraLoaderModelOnly`、`VAELoader`、`ExtendIntermediateSigmas`、`SamplerCustomAdvanced`、`BasicGuider`、`ModelPreviewOverrideKJ`、`PT_H3ConcatAVLatent`、`PathchSageAttentionKJ`、`ModelAttentionBackend`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxH3SigmaShift`、`MiniMaxH3ReferenceToVideo`、`ImageResizeKJv2`、`VHS_LoadVideo`、`UNETLoader`、`CLIPLoader`、`LoadAudio`、`ResolutionSelector`、`KSampler`、`CLIPTextEncode`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
+
+**缺卡**（15）：`CR Text Concatenate`、`LayerUtility: PurgeVRAM`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`CR Prompt Text`、`CR Prompt Text`、`Seed (rgthree)`、`Seed (rgthree)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
+- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
+- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

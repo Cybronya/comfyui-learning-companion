@@ -1,0 +1,109 @@
+---
+key: 视频生成/文生视频/QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505.json
+name: QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505.json
+hash: 2e3d017f568891e5
+coverage: 0.829787
+learned_at: 2026-10-11 22:12:46
+nodes: [CLIPLoader, VAELoader, EmptyLatentImage, GetImageSize, MathExpression|pysssss, MathExpression|pysssss, UNETLoader, LoraLoaderModelOnly, TextEncodeQwenImage21, JWStringConcat, easy showAnything, JWString, RHLLMChatNode, KSampler, LoadImage, VAEDecode, Image Comparer (rgthree), SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
+patterns: [text_to_image]
+missing: [MathExpression|pysssss, MathExpression|pysssss]
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（47 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `EmptyLatentImage` ★核心
+- `GetImageSize`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `TextEncodeQwenImage21`
+- `JWStringConcat`
+- `easy showAnything`
+- `JWString`
+- `RHLLMChatNode`
+- `KSampler` ★核心
+- `LoadImage`
+- `VAEDecode` ★核心
+- `Image Comparer (rgthree)`
+- `SaveImage`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `Note`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **83%**（39/47）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`GetImageSize`、`UNETLoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`JWStringConcat`、`JWString`、`RHLLMChatNode`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+
+**缺卡**（2）：`MathExpression|pysssss`、`MathExpression|pysssss`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
