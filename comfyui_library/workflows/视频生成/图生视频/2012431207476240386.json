@@ -1,0 +1,1017 @@
+{
+	"last_link_id":35,
+	"nodes":[
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"Univideo Pipeline",
+					"links":[
+						3
+					],
+					"label":"Univideo Pipeline",
+					"type":"RH_Univideo_Pipeline",
+					"localized_name":"Univideo Pipeline"
+				}
+			],
+			"size":[
+				223.58163452148438,
+				26
+			],
+			"pos":[
+				2545.02490234375,
+				227.75404357910156
+			],
+			"inputs":[
+				
+			],
+			"flags":{
+				"collapsed":false
+			},
+			"id":19,
+			"type":"RunningHub Univideo Loader",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"RunningHub Univideo Loader"
+			},
+			"order":0
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"prompt",
+					"links":[
+						6
+					],
+					"label":"prompt",
+					"type":"STRING",
+					"localized_name":"prompt"
+				},
+				{
+					"name":"show_help",
+					"label":"show_help",
+					"type":"STRING",
+					"localized_name":"show_help"
+				}
+			],
+			"size":[
+				400,
+				200
+			],
+			"pos":[
+				631.5718383789062,
+				632.4447631835938
+			],
+			"widgets_values":[
+				"将图片中的人物替换成视频中人物，光影融合，看起来逼真"
+			],
+			"inputs":[
+				{
+					"widget":{
+						"name":"prompt"
+					},
+					"name":"prompt",
+					"label":"prompt",
+					"type":"STRING",
+					"localized_name":"prompt"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":11,
+			"type":"CR Prompt Text",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"CR Prompt Text"
+			},
+			"order":1
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"IMAGE",
+					"links":[
+						26
+					],
+					"label":"IMAGE",
+					"type":"IMAGE",
+					"localized_name":"IMAGE"
+				},
+				{
+					"name":"MASK",
+					"label":"MASK",
+					"type":"MASK",
+					"localized_name":"MASK"
+				}
+			],
+			"size":[
+				329.2127685546875,
+				350.89654541015625
+			],
+			"pos":[
+				669.7329711914062,
+				947.0665283203125
+			],
+			"widgets_values":[
+				"8cc274bf7c77e9d89abe82f1cdecc71003b2cf3004d6e3bca60d0e7247b064e3.jpeg",
+				"image"
+			],
+			"inputs":[
+				{
+					"widget":{
+						"name":"image"
+					},
+					"name":"image",
+					"label":"image",
+					"type":"COMBO",
+					"localized_name":"image"
+				},
+				{
+					"widget":{
+						"name":"upload"
+					},
+					"name":"upload",
+					"label":"upload",
+					"type":"IMAGEUPLOAD",
+					"localized_name":"choose file to upload"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":4,
+			"type":"LoadImage",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"LoadImage"
+			},
+			"order":2
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"video_url",
+					"label":"video_url",
+					"type":"STRING",
+					"localized_name":"video_url"
+				}
+			],
+			"size":[
+				350,
+				784.3636474609375
+			],
+			"pos":[
+				3764.0712890625,
+				334.6658935546875
+			],
+			"widgets_values":[
+				"video/ComfyUI",
+				"auto",
+				"auto"
+			],
+			"inputs":[
+				{
+					"name":"video",
+					"link":2,
+					"label":"video",
+					"type":"VIDEO",
+					"localized_name":"video"
+				},
+				{
+					"widget":{
+						"name":"filename_prefix"
+					},
+					"name":"filename_prefix",
+					"label":"filename_prefix",
+					"type":"STRING",
+					"localized_name":"filename_prefix"
+				},
+				{
+					"widget":{
+						"name":"format"
+					},
+					"name":"format",
+					"label":"format",
+					"type":"COMBO",
+					"localized_name":"format"
+				},
+				{
+					"widget":{
+						"name":"codec"
+					},
+					"name":"codec",
+					"label":"codec",
+					"type":"COMBO",
+					"localized_name":"codec"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":2,
+			"type":"SaveVideo",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"SaveVideo"
+			},
+			"order":9
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"VIDEO",
+					"links":[
+						4,
+						12
+					],
+					"label":"VIDEO",
+					"type":"VIDEO",
+					"localized_name":"VIDEO"
+				}
+			],
+			"size":[
+				492.4437255859375,
+				772.4500122070312
+			],
+			"pos":[
+				573.4956665039062,
+				-311.7428283691406
+			],
+			"widgets_values":[
+				"1d3e1217dfd5db6d098607bf2eecfdaac9c5d1546e33b35526742c821881e066.mp4",
+				null,
+				{
+					"paused":false,
+					"hidden":false,
+					"params":{
+						
+					}
+				}
+			],
+			"inputs":[
+				{
+					"widget":{
+						"name":"file"
+					},
+					"name":"file",
+					"label":"file",
+					"type":"COMBO",
+					"localized_name":"file"
+				},
+				{
+					"widget":{
+						"name":"upload"
+					},
+					"name":"upload",
+					"label":"upload",
+					"type":"VIDEOPLOAD",
+					"localized_name":"choose file to upload"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":6,
+			"type":"LoadVideo",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"LoadVideo"
+			},
+			"order":3
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"INT",
+					"links":[
+						9
+					],
+					"label":"INT",
+					"type":"INT",
+					"localized_name":"INT"
+				}
+			],
+			"size":[
+				270,
+				58
+			],
+			"pos":[
+				1452.199951171875,
+				836.7286987304688
+			],
+			"widgets_values":[
+				49
+			],
+			"inputs":[
+				{
+					"widget":{
+						"name":"value"
+					},
+					"name":"value",
+					"label":"value",
+					"type":"INT",
+					"localized_name":"value"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":16,
+			"type":"JWInteger",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"JWInteger"
+			},
+			"order":4
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"video",
+					"links":[
+						2
+					],
+					"label":"video",
+					"type":"VIDEO",
+					"localized_name":"video"
+				}
+			],
+			"size":[
+				400,
+				296
+			],
+			"pos":[
+				2939.00244140625,
+				252.35775756835938
+			],
+			"widgets_values":[
+				"",
+				832,
+				480,
+				81,
+				20,
+				16,
+				472874461794068,
+				"randomize"
+			],
+			"inputs":[
+				{
+					"name":"pipeline",
+					"link":3,
+					"label":"pipeline",
+					"type":"RH_Univideo_Pipeline",
+					"localized_name":"pipeline"
+				},
+				{
+					"name":"ref_video",
+					"link":4,
+					"label":"ref_video",
+					"type":"VIDEO",
+					"localized_name":"ref_video"
+				},
+				{
+					"shape":7,
+					"name":"ref_image",
+					"link":27,
+					"label":"ref_image",
+					"type":"IMAGE",
+					"localized_name":"ref_image"
+				},
+				{
+					"widget":{
+						"name":"prompt"
+					},
+					"name":"prompt",
+					"link":6,
+					"label":"prompt",
+					"type":"STRING",
+					"localized_name":"prompt"
+				},
+				{
+					"widget":{
+						"name":"width"
+					},
+					"name":"width",
+					"link":34,
+					"label":"width",
+					"type":"INT",
+					"localized_name":"width"
+				},
+				{
+					"widget":{
+						"name":"height"
+					},
+					"name":"height",
+					"link":35,
+					"label":"height",
+					"type":"INT",
+					"localized_name":"height"
+				},
+				{
+					"widget":{
+						"name":"num_frames"
+					},
+					"name":"num_frames",
+					"link":9,
+					"label":"num_frames",
+					"type":"INT",
+					"localized_name":"num_frames"
+				},
+				{
+					"widget":{
+						"name":"sample_steps"
+					},
+					"name":"sample_steps",
+					"label":"sample_steps",
+					"type":"INT",
+					"localized_name":"sample_steps"
+				},
+				{
+					"widget":{
+						"name":"fps"
+					},
+					"name":"fps",
+					"label":"fps",
+					"type":"INT",
+					"localized_name":"fps"
+				},
+				{
+					"widget":{
+						"name":"seed"
+					},
+					"name":"seed",
+					"label":"seed",
+					"type":"INT",
+					"localized_name":"seed"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":3,
+			"type":"RunningHub Univideo Editor",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"RunningHub Univideo Editor"
+			},
+			"order":8
+		},
+		{
+			"outputs":[
+				{
+					"name":"IMAGE",
+					"links":[
+						27
+					],
+					"label":"IMAGE",
+					"type":"IMAGE",
+					"localized_name":"IMAGE"
+				},
+				{
+					"name":"MASK",
+					"label":"MASK",
+					"type":"MASK",
+					"localized_name":"MASK"
+				},
+				{
+					"name":"MASK_IMAGE",
+					"label":"MASK_IMAGE",
+					"type":"IMAGE",
+					"localized_name":"MASK_IMAGE"
+				}
+			],
+			"color":"#222e40",
+			"widgets_values":[
+				"RMBG-2.0",
+				1,
+				1024,
+				0,
+				0,
+				false,
+				false,
+				"Color",
+				"#ffffff"
+			],
+			"inputs":[
+				{
+					"name":"image",
+					"link":26,
+					"label":"image",
+					"type":"IMAGE",
+					"localized_name":"image"
+				},
+				{
+					"widget":{
+						"name":"model"
+					},
+					"name":"model",
+					"label":"model",
+					"type":"COMBO",
+					"localized_name":"model"
+				},
+				{
+					"widget":{
+						"name":"sensitivity"
+					},
+					"shape":7,
+					"name":"sensitivity",
+					"label":"sensitivity",
+					"type":"FLOAT",
+					"localized_name":"sensitivity"
+				},
+				{
+					"widget":{
+						"name":"process_res"
+					},
+					"shape":7,
+					"name":"process_res",
+					"label":"process_res",
+					"type":"INT",
+					"localized_name":"process_res"
+				},
+				{
+					"widget":{
+						"name":"mask_blur"
+					},
+					"shape":7,
+					"name":"mask_blur",
+					"label":"mask_blur",
+					"type":"INT",
+					"localized_name":"mask_blur"
+				},
+				{
+					"widget":{
+						"name":"mask_offset"
+					},
+					"shape":7,
+					"name":"mask_offset",
+					"label":"mask_offset",
+					"type":"INT",
+					"localized_name":"mask_offset"
+				},
+				{
+					"widget":{
+						"name":"invert_output"
+					},
+					"shape":7,
+					"name":"invert_output",
+					"label":"invert_output",
+					"type":"BOOLEAN",
+					"localized_name":"invert_output"
+				},
+				{
+					"widget":{
+						"name":"refine_foreground"
+					},
+					"shape":7,
+					"name":"refine_foreground",
+					"label":"refine_foreground",
+					"type":"BOOLEAN",
+					"localized_name":"refine_foreground"
+				},
+				{
+					"widget":{
+						"name":"background"
+					},
+					"shape":7,
+					"name":"background",
+					"label":"background",
+					"type":"COMBO",
+					"localized_name":"background"
+				},
+				{
+					"widget":{
+						"name":"background_color"
+					},
+					"shape":7,
+					"name":"background_color",
+					"label":"background_color",
+					"type":"COLOR",
+					"localized_name":"background_color"
+				}
+			],
+			"flags":{
+				
+			},
+			"type":"RMBG",
+			"mode":0,
+			"bgcolor":"#364254",
+			"size":[
+				340,
+				302
+			],
+			"pos":[
+				1623.598876953125,
+				405.8875427246094
+			],
+			"id":22,
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"RMBG"
+			},
+			"order":5
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"images",
+					"links":[
+						33
+					],
+					"label":"images",
+					"type":"IMAGE",
+					"localized_name":"images"
+				},
+				{
+					"name":"audio",
+					"links":[
+						
+					],
+					"label":"audio",
+					"type":"AUDIO",
+					"localized_name":"audio"
+				},
+				{
+					"name":"fps",
+					"links":[
+						
+					],
+					"label":"fps",
+					"type":"FLOAT",
+					"localized_name":"fps"
+				}
+			],
+			"size":[
+				185.17733764648438,
+				66
+			],
+			"pos":[
+				2057.269287109375,
+				263.430908203125
+			],
+			"inputs":[
+				{
+					"name":"video",
+					"link":12,
+					"label":"video",
+					"type":"VIDEO",
+					"localized_name":"video"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":7,
+			"type":"GetVideoComponents",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"GetVideoComponents"
+			},
+			"order":6
+		},
+		{
+			"mode":0,
+			"outputs":[
+				{
+					"name":"🖼️ 图像",
+					"label":"🖼️ 图像",
+					"type":"IMAGE",
+					"localized_name":"🖼️ 图像"
+				},
+				{
+					"name":"😷 遮罩",
+					"label":"😷 遮罩",
+					"type":"MASK",
+					"localized_name":"😷 遮罩"
+				},
+				{
+					"name":"📏 原始尺寸",
+					"label":"📏 原始尺寸",
+					"type":"INT",
+					"localized_name":"📏 原始尺寸"
+				},
+				{
+					"name":"📏 宽度",
+					"links":[
+						34
+					],
+					"label":"📏 宽度",
+					"type":"INT",
+					"localized_name":"📏 宽度"
+				},
+				{
+					"name":"📏 高度",
+					"links":[
+						35
+					],
+					"label":"📏 高度",
+					"type":"INT",
+					"localized_name":"📏 高度"
+				}
+			],
+			"size":[
+				318.2466735839844,
+				330
+			],
+			"pos":[
+				2301.053955078125,
+				409.50201416015625
+			],
+			"widgets_values":[
+				"原图",
+				1,
+				1,
+				"包含",
+				"lanczos",
+				8,
+				"锁定最长边",
+				640,
+				"#000000"
+			],
+			"inputs":[
+				{
+					"name":"📸 图像",
+					"link":33,
+					"label":"📸 图像",
+					"type":"IMAGE",
+					"localized_name":"📸 图像"
+				},
+				{
+					"shape":7,
+					"name":"😷 遮罩",
+					"label":"😷 遮罩",
+					"type":"MASK",
+					"localized_name":"😷 遮罩"
+				},
+				{
+					"widget":{
+						"name":"📐 宽高比"
+					},
+					"name":"📐 宽高比",
+					"label":"📐 宽高比",
+					"type":"COMBO",
+					"localized_name":"📐 宽高比"
+				},
+				{
+					"widget":{
+						"name":"📏 比例宽度"
+					},
+					"name":"📏 比例宽度",
+					"label":"📏 比例宽度",
+					"type":"INT",
+					"localized_name":"📏 比例宽度"
+				},
+				{
+					"widget":{
+						"name":"📏 比例高度"
+					},
+					"name":"📏 比例高度",
+					"label":"📏 比例高度",
+					"type":"INT",
+					"localized_name":"📏 比例高度"
+				},
+				{
+					"widget":{
+						"name":"🎨 适应模式"
+					},
+					"name":"🎨 适应模式",
+					"label":"🎨 适应模式",
+					"type":"COMBO",
+					"localized_name":"🎨 适应模式"
+				},
+				{
+					"widget":{
+						"name":"🔍 缩放算法"
+					},
+					"name":"🔍 缩放算法",
+					"label":"🔍 缩放算法",
+					"type":"COMBO",
+					"localized_name":"🔍 缩放算法"
+				},
+				{
+					"widget":{
+						"name":"🔢 尺寸倍数"
+					},
+					"name":"🔢 尺寸倍数",
+					"label":"🔢 尺寸倍数",
+					"type":"INT",
+					"localized_name":"🔢 尺寸倍数"
+				},
+				{
+					"widget":{
+						"name":"📏 锁定边长"
+					},
+					"name":"📏 锁定边长",
+					"label":"📏 锁定边长",
+					"type":"COMBO",
+					"localized_name":"📏 锁定边长"
+				},
+				{
+					"widget":{
+						"name":"📏 锁定长度"
+					},
+					"name":"📏 锁定长度",
+					"label":"📏 锁定长度",
+					"type":"INT",
+					"localized_name":"📏 锁定长度"
+				},
+				{
+					"widget":{
+						"name":"🌈 背景颜色"
+					},
+					"name":"🌈 背景颜色",
+					"label":"🌈 背景颜色",
+					"type":"STRING",
+					"localized_name":"🌈 背景颜色"
+				}
+			],
+			"flags":{
+				
+			},
+			"id":26,
+			"type":"DapaoImageAspectRatioResizeNode",
+			"properties":{
+				"widget_ue_connectable":{
+					
+				},
+				"Node name for S&R":"DapaoImageAspectRatioResizeNode"
+			},
+			"order":7
+		}
+	],
+	"extra":{
+		"links_added_by_ue":[
+			
+		],
+		"ue_links":[
+			
+		],
+		"0246.VERSION":[
+			0,
+			0,
+			4
+		],
+		"ds":{
+			"offset":[
+				-1769.2606129678159,
+				-22.03714256510409
+			],
+			"scale":0.8264462809917374
+		}
+	},
+	"groups":[
+		{
+			"color":"#3f789e",
+			"font_size":24,
+			"flags":{
+				
+			},
+			"id":1,
+			"title":"工作流定制+v:xdy520s",
+			"bounding":[
+				544.8181762695312,
+				-310.4551696777344,
+				512.4437866210938,
+				1618.4183349609375
+			]
+		},
+		{
+			"color":"#3f789e",
+			"font_size":24,
+			"flags":{
+				
+			},
+			"id":2,
+			"title":"视频编辑",
+			"bounding":[
+				1442.199951171875,
+				154.15411376953125,
+				1906.8021240234375,
+				750.5748291015625
+			]
+		}
+	],
+	"links":[
+		[
+			2,
+			3,
+			0,
+			2,
+			0,
+			"VIDEO"
+		],
+		[
+			3,
+			19,
+			0,
+			3,
+			0,
+			"RH_Univideo_Pipeline"
+		],
+		[
+			4,
+			6,
+			0,
+			3,
+			1,
+			"VIDEO"
+		],
+		[
+			6,
+			11,
+			0,
+			3,
+			3,
+			"STRING"
+		],
+		[
+			9,
+			16,
+			0,
+			3,
+			6,
+			"INT"
+		],
+		[
+			12,
+			6,
+			0,
+			7,
+			0,
+			"VIDEO"
+		],
+		[
+			26,
+			4,
+			0,
+			22,
+			0,
+			"IMAGE"
+		],
+		[
+			27,
+			22,
+			0,
+			3,
+			2,
+			"IMAGE"
+		],
+		[
+			33,
+			7,
+			0,
+			26,
+			0,
+			"IMAGE"
+		],
+		[
+			34,
+			26,
+			3,
+			3,
+			4,
+			"INT"
+		],
+		[
+			35,
+			26,
+			4,
+			3,
+			5,
+			"INT"
+		]
+	],
+	"id":"d0acbb67-95ed-4e74-a11e-a52da8e6f33d",
+	"config":{
+		
+	},
+	"version":0.4,
+	"last_node_id":26,
+	"revision":0
+}
