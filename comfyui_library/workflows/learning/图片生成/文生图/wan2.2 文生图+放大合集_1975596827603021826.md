@@ -1,5 +1,5 @@
 ---
-key: wan2.2 文生图+放大合集_1975596827603021826.json
+key: 图片生成/文生图/wan2.2 文生图+放大合集_1975596827603021826.json
 name: wan2.2 文生图+放大合集_1975596827603021826
 type: Image To Image
 status: completed
@@ -15,33 +15,31 @@ parameters: {"cfg": 1, "denoise": 0.1, "sampler_name": "heun", "scheduler": "bet
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2 文生图+放大合集_1975596827603021826.json
+# 图片生成/文生图/wan2.2 文生图+放大合集_1975596827603021826.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2 文生图+放大合集_1975596827603021826.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（55 个）：
 - `ModelSamplingSD3`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `UNETLoader`
 - `CLIPLoader`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
 - `EmptyHunyuanLatentVideo`
 - `LoaderGGUF`
 - `CLIPLoader`
 - `SeedVR2BlockSwap`
 - `Image Comparer (rgthree)`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 - `SaveImage`
 - `SaveImage`
@@ -53,30 +51,30 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `ImageListToImageBatch`
 - `VAELoader`
 - `LayerUtility: PurgeVRAM`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ModelSamplingSD3`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `LoadImage`
 - `TTP_Image_Assy`
 - `TTP_Tile_image_size`
 - `TTP_Image_Tile_Batch`
 - `UpscaleModelLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `Image Comparer (rgthree)`
 - `easy cleanGpuUsed`
-- `UnetLoaderGGUF` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF`
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
 - `VAELoader`
 - `Fast Groups Muter (rgthree)`
 - `easy cleanGpuUsed`
 - `SeedVR2GGUF`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `Text`
-- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF`
 - `easy cleanGpuUsed`
 - `Note`
 
@@ -84,22 +82,20 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `359343628422723`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.1`
 - `sampler_name` = `heun`
 - `scheduler` = `beta`
-- `denoise` = `0.1`
+- `seed` = `359343628422723`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **80%**（44/55）
 
-**有卡**：`ModelSamplingSD3`、`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`CLIPLoader`、`VAEDecode`、`KSamplerAdvanced`、`LoraLoaderModelOnly`、`EmptyHunyuanLatentVideo`、`LoaderGGUF`、`SeedVR2BlockSwap`、`SaveImage`、`ImageUpscaleWithModel`、`ImageScaleToTotalPixels`、`ImageListToImageBatch`、`VAEEncode`、`KSampler`、`LoadImage`、`TTP_Image_Assy`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`UpscaleModelLoader`、`UnetLoaderGGUF`、`SeedVR2GGUF`、`Text`
+**有卡**：`ModelSamplingSD3`、`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`CLIPLoader`、`VAEDecode`、`KSamplerAdvanced`、`LoraLoaderModelOnly`、`EmptyHunyuanLatentVideo`、`LoaderGGUF`、`SeedVR2BlockSwap`、`Image Comparer (rgthree)`、`SaveImage`、`easy imageBatchToImageList`、`ImageUpscaleWithModel`、`easy cleanGpuUsed`、`ImageScaleToTotalPixels`、`ImageListToImageBatch`、`LayerUtility: PurgeVRAM`、`VAEEncode`、`KSampler`、`LoadImage`、`TTP_Image_Assy`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`UpscaleModelLoader`、`UnetLoaderGGUF`
 
 **缺卡**（7）：`LayerUtility: PurgeVRAM`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageBatchToImageList`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
+key: 图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
 name: nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"controlnet_strength": 0.6000000000000001}
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
+# 图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku JibmixFlux pulid 姿势_深度切换加速工作流V1_1925220714343768066.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（42 个）：
 - `BasicScheduler`
@@ -29,21 +27,21 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `PrimitiveNode`
 - `DualCLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `KSamplerSelect` ★核心
+- `CLIPTextEncode`
+- `KSamplerSelect`
 - `RandomNoise`
 - `PrimitiveNode`
 - `ModelSamplingFlux`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `FluxGuidance`
 - `BasicGuider`
 - `ImageConcanate`
 - `JWImageResizeByLongerSide`
 - `ImageConcanate`
 - `JWImageResizeByLongerSide`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LayerUtility: PurgeVRAM`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `NunchakuFluxDiTLoader`
 - `DownloadAndLoadDepthAnythingV2Model`
 - `NunchakuPulidApply`
@@ -56,7 +54,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `DepthAnything_V2`
 - `ImpactSwitch`
 - `JWInteger`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CR Prompt Text`
 - `Note`
 - `Note`
@@ -75,11 +73,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 覆盖率 **76%**（32/42）
 
-**有卡**：`BasicScheduler`、`EmptySD3LatentImage`、`DualCLIPLoader`、`VAELoader`、`CLIPTextEncode`、`KSamplerSelect`、`RandomNoise`、`ModelSamplingFlux`、`ControlNetApplyAdvanced`、`FluxGuidance`、`BasicGuider`、`ImageConcanate`、`JWImageResizeByLongerSide`、`VAEDecode`、`SamplerCustomAdvanced`、`NunchakuFluxDiTLoader`、`DownloadAndLoadDepthAnythingV2Model`、`NunchakuPulidApply`、`NunchakuPulidLoader`、`SetUnionControlNetType`、`SaveImage`、`OpenposePreprocessor`、`DepthAnything_V2`、`JWInteger`、`LoadImage`、`ControlNetLoader`
+**有卡**：`BasicScheduler`、`EmptySD3LatentImage`、`PrimitiveNode`、`DualCLIPLoader`、`VAELoader`、`CLIPTextEncode`、`KSamplerSelect`、`RandomNoise`、`ModelSamplingFlux`、`ControlNetApplyAdvanced`、`FluxGuidance`、`BasicGuider`、`ImageConcanate`、`JWImageResizeByLongerSide`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`SamplerCustomAdvanced`、`NunchakuFluxDiTLoader`、`DownloadAndLoadDepthAnythingV2Model`、`NunchakuPulidApply`、`NunchakuPulidLoader`、`SetUnionControlNetType`、`ImpactSwitch`、`SaveImage`、`OpenposePreprocessor`、`DepthAnything_V2`、`JWInteger`
 
 **缺卡**（2）：`LayerUtility: PurgeVRAM`、`CR Prompt Text`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、LoadImage、ControlNetApplyAdvanced、ControlNetLoader、OpenposePreprocessor、SetUnionControlNetType
 
 ## 学习发现
 

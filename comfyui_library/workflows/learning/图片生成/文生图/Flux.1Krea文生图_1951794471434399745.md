@@ -1,5 +1,5 @@
 ---
-key: Flux.1Krea文生图_1951794471434399745.json
+key: 图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json
 name: Flux.1Krea文生图_1951794471434399745
 type: Text To Image
 status: completed
@@ -14,45 +14,41 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 294507246359010, "steps": 20, "width": 1024}
 ---
 
-# Flux.1Krea文生图_1951794471434399745.json
+# 图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（11 个）：
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `VAELoader`
 - `DualCLIPLoader`
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `EmptyLatentImage`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
 - `RH_Translator`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `seed` = `294507246359010`
-- `steps` = `20`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `294507246359010`
+- `steps` = `20`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`SaveImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`VAELoader`、`DualCLIPLoader`、`KSampler`、`EmptyLatentImage`、`UNETLoader`、`LoraLoaderModelOnly`、`VAEDecode`、`RH_Translator`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、UNETLoader

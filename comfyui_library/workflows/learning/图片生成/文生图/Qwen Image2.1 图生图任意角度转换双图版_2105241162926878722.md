@@ -1,5 +1,5 @@
 ---
-key: Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722.json
+key: 图片生成/文生图/Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722.json
 name: Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722
 type: Unknown Workflow
 status: completed
@@ -14,24 +14,22 @@ missing: []
 parameters: {"cfg": 3, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 20260930, "steps": 24}
 ---
 
-# Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722.json
+# 图片生成/文生图/Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（13 个）：
 - `LoadImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `TextEncodeQwenImage21`
 - `QwenImage21Cache`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `MarkdownNote`
 - `MarkdownNote`
@@ -39,17 +37,15 @@ parameters: {"cfg": 3, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 ## 关键参数
 
-- `seed` = `20260930`
-- `steps` = `24`
 - `cfg` = `3`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `20260930`
+- `steps` = `24`
 
 ## 知识
 
 覆盖率 **85%**（11/13）
 
-**有卡**：`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`KSampler`、`VAEDecode`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、QwenImage21Cache
+**有卡**：`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`KSampler`、`VAEDecode`、`SaveImage`、`MarkdownNote`

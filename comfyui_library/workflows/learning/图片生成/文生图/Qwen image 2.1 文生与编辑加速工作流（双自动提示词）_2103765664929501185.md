@@ -1,5 +1,5 @@
 ---
-key: Qwen image 2.1 文生与编辑加速工作流（双自动提示词）_2103765664929501185.json
+key: 图片生成/文生图/Qwen image 2.1 文生与编辑加速工作流（双自动提示词）_2103765664929501185.json
 name: Qwen image 2.1 文生与编辑加速工作流（双自动提示词）_2103765664929501185
 type: Unknown Workflow
 status: completed
@@ -16,28 +16,26 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen image 2.1 文生与编辑加速工作流（双自动提示词）_2103765664929501185.json
+# 图片生成/文生图/Qwen image 2.1 文生与编辑加速工作流（双自动提示词）_2103765664929501185.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 文生与编辑加速工作流（双自动提示词）_2103765664929501185.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（150 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `UNETLoader`
+- `EmptyLatentImage`
+- `KSampler`
 - `TextEncodeQwenImage21`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `QwenImage21Cache`
 - `忽略多组孤海`
@@ -151,7 +149,7 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `GetNode`
 - `ComfySwitchNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `ComfySwitchNode`
 - `SetNode`
 - `GetNode`
@@ -171,32 +169,30 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `CR Prompt Text`
 - `LoadImage`
 - `PrimitiveBoolean`
-- `KSampler` ★核心
-- `LoraLoaderBypassModelOnly` ★核心
+- `KSampler`
+- `LoraLoaderBypassModelOnly`
 - `Any Switch (rgthree)`
 - `llama_cpp_model_loader`
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `426982129804706`
-- `steps` = `6`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `426982129804706`
+- `steps` = `6`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **37%**（55/150）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`VAEDecode`、`UNETLoader`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`、`QwenImage21Cache`、`StringConcatenate`、`TextGenerate`、`JsonExtractString`、`BatchImagesNode`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`ImageScaleToMaxDimension`、`ResolutionSelector`、`PrimitiveBoolean`、`LoraLoaderBypassModelOnly`、`llama_cpp_model_loader`
+**有卡**：`CLIPLoader`、`VAELoader`、`VAEDecode`、`UNETLoader`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`、`QwenImage21Cache`、`忽略多组孤海`、`StringConcatenate`、`TextGenerate`、`JsonExtractString`、`BatchImagesNode`、`Any Switch (rgthree)`、`PreviewAny`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`Note`、`SetNode`、`GetNode`
 
 **缺卡**（4）：`忽略多组孤海`、`忽略多组孤海`、`忽略多组孤海`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: 服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json
+key: 图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json
 name: 服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954
 type: Text To Image
 status: completed
@@ -16,19 +16,17 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json
+# 图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/服装提取3D展示精修褶皱 Qwen Image 2.1 PE提示词优化_2104335404265725954.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（57 个）：
 - `LoadImage`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `ComfySwitchNode`
 - `LoadImage`
 - `LoadImage`
@@ -43,10 +41,10 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `Text Multiline`
 - `ResolutionSelector`
 - `CLIPLoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `QwenPERewriteT8`
 - `Display Any (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `QwenImage21SageAttentionT8`
 - `TextEncodeQwenImage21`
 - `SaveImage`
@@ -55,30 +53,30 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `LoadImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -87,25 +85,23 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **86%**（49/57）
 
-**有卡**：`LoadImage`、`VAELoader`、`VAEDecode`、`KSampler`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`ResolutionSelector`、`CLIPLoader`、`EmptyLatentImage`、`QwenPERewriteT8`、`UNETLoader`、`QwenImage21SageAttentionT8`、`TextEncodeQwenImage21`、`SaveImage`、`ImageStitch`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`LoadImage`、`VAELoader`、`VAEDecode`、`KSampler`、`ComfySwitchNode`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`easy seed`、`Text Multiline`、`ResolutionSelector`、`CLIPLoader`、`EmptyLatentImage`、`QwenPERewriteT8`、`Display Any (rgthree)`、`UNETLoader`、`QwenImage21SageAttentionT8`、`TextEncodeQwenImage21`、`SaveImage`、`ImageStitch`、`孤海注释`、`LoraLoaderModelOnly`
 
 **缺卡**（3）：`Display Any (rgthree)`、`Text Multiline`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

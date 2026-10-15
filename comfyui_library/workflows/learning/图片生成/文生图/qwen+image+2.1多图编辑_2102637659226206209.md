@@ -1,5 +1,5 @@
 ---
-key: qwen+image+2.1多图编辑_2102637659226206209.json
+key: 图片生成/文生图/qwen+image+2.1多图编辑_2102637659226206209.json
 name: qwen+image+2.1多图编辑_2102637659226206209
 type: Unknown Workflow
 status: completed
@@ -15,24 +15,22 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# qwen+image+2.1多图编辑_2102637659226206209.json
+# 图片生成/文生图/qwen+image+2.1多图编辑_2102637659226206209.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen+image+2.1多图编辑_2102637659226206209.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（20 个）：
 - `CLIPLoader`
-- `KSampler` ★核心
+- `KSampler`
 - `QwenImage21Cache`
 - `ComfySwitchNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `VAEDecode`
 - `SaveImage`
 - `LoadImage`
 - `LoadImage`
@@ -47,25 +45,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `1121348690810382`
-- `steps` = `25`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1121348690810382`
+- `steps` = `25`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **85%**（17/20）
 
-**有卡**：`CLIPLoader`、`KSampler`、`QwenImage21Cache`、`EmptyLatentImage`、`ResolutionSelector`、`VAELoader`、`UNETLoader`、`VAEDecode`、`SaveImage`、`LoadImage`、`TextGenerateLTX2Prompt`、`BatchImagesNode`、`TextEncodeQwenImage21`
+**有卡**：`CLIPLoader`、`KSampler`、`QwenImage21Cache`、`ComfySwitchNode`、`EmptyLatentImage`、`ResolutionSelector`、`VAELoader`、`UNETLoader`、`VAEDecode`、`SaveImage`、`LoadImage`、`TextGenerateLTX2Prompt`、`BatchImagesNode`、`CR Text`
 
 **缺卡**（1）：`CR Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 学习发现
 

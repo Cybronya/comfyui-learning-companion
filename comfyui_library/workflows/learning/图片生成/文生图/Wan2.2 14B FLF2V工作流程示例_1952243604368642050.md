@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 14B FLF2V工作流程示例_1952243604368642050.json
+key: 图片生成/文生图/Wan2.2 14B FLF2V工作流程示例_1952243604368642050.json
 name: Wan2.2 14B FLF2V工作流程示例_1952243604368642050
 type: Unknown Workflow
 status: completed
@@ -14,50 +14,46 @@ missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 4, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
 ---
 
-# Wan2.2 14B FLF2V工作流程示例_1952243604368642050.json
+# 图片生成/文生图/Wan2.2 14B FLF2V工作流程示例_1952243604368642050.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 14B FLF2V工作流程示例_1952243604368642050.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（21 个）：
 - `CLIPLoader`
 - `ModelSamplingSD3`
 - `MarkdownNote`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `WanFirstLastFrameToVideo`
 - `Note`
 - `SaveVideo`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CreateVideo`
 - `Note`
 - `LoadImage`
 - `LoadImage`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSamplerAdvanced` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `20`
+- `denoise` = `simple`
 - `sampler_name` = `4`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **86%**（18/21）
 
-**有卡**：`CLIPLoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`VAELoader`、`WanFirstLastFrameToVideo`、`SaveVideo`、`VAEDecode`、`CreateVideo`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`KSamplerAdvanced`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
+**有卡**：`CLIPLoader`、`ModelSamplingSD3`、`MarkdownNote`、`CLIPTextEncode`、`VAELoader`、`WanFirstLastFrameToVideo`、`Note`、`SaveVideo`、`VAEDecode`、`CreateVideo`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`

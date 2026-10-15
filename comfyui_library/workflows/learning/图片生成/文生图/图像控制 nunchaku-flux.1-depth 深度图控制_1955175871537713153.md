@@ -1,5 +1,5 @@
 ---
-key: 图像控制 nunchaku-flux.1-depth 深度图控制_1955175871537713153.json
+key: 图片生成/文生图/图像控制 nunchaku-flux.1-depth 深度图控制_1955175871537713153.json
 name: 图像控制 nunchaku-flux.1-depth 深度图控制_1955175871537713153
 type: Unknown Workflow
 status: completed
@@ -15,53 +15,49 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 图像控制 nunchaku-flux.1-depth 深度图控制_1955175871537713153.json
+# 图片生成/文生图/图像控制 nunchaku-flux.1-depth 深度图控制_1955175871537713153.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/图像控制 nunchaku-flux.1-depth 深度图控制_1955175871537713153.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Output → Other
-
 **节点**（19 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `DualCLIPLoader`
 - `PreviewImage`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `Seed Everywhere`
 - `PreviewImage`
 - `Image Comparer (rgthree)`
 - `Prompts Everywhere`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `NunchakuFluxDiTLoader`
 - `LoadImage`
 - `InstructPixToPixConditioning`
 - `VAELoader`
 - `Anything Everywhere`
 - `AIO_Preprocessor`
-- `KSampler (Efficient)` ★核心
+- `KSampler (Efficient)`
 - `SaveImage`
 - `Note`
 
 ## 关键参数
 
-- `seed` = `860855444243422`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `860855444243422`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **58%**（11/19）
 
-**有卡**：`CLIPTextEncode`、`DualCLIPLoader`、`NunchakuFluxLoraLoader`、`FluxGuidance`、`NunchakuFluxDiTLoader`、`LoadImage`、`InstructPixToPixConditioning`、`VAELoader`、`AIO_Preprocessor`、`SaveImage`
+**有卡**：`CLIPTextEncode`、`DualCLIPLoader`、`PreviewImage`、`NunchakuFluxLoraLoader`、`Seed Everywhere`、`Image Comparer (rgthree)`、`Prompts Everywhere`、`FluxGuidance`、`NunchakuFluxDiTLoader`
 
 **缺卡**（3）：`KSampler (Efficient)`、`Prompts Everywhere`、`Seed Everywhere`
-
-**用到的条目**：VAELoader、CLIPTextEncode、LoadImage、FluxGuidance、NunchakuFluxLoraLoader、DualCLIPLoader、NunchakuFluxDiTLoader、InstructPixToPixConditioning
 
 ## 学习发现
 

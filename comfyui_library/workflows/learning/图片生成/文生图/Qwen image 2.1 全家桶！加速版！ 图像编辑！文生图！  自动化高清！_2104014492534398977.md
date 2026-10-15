@@ -1,5 +1,5 @@
 ---
-key: Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json
+key: 图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json
 name: Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4, "denoise": "simple", "height": 1024, "sa
 discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json
+# 图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 全家桶！加速版！ 图像编辑！文生图！  自动化高清！_2104014492534398977.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（184 个）：
 - `LoadImage`
@@ -140,23 +138,23 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `SetNode`
 - `ComfySwitchNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `ComfySwitchNode`
-- `KSampler` ★核心
+- `KSampler`
 - `Any Switch (rgthree)`
 - `TextEncodeQwenImage21`
 - `PreviewAny`
 - `ComfySwitchNode`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `Any Switch (rgthree)`
 - `PreviewAny`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `ComfySwitchNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `llama_cpp_parameters`
 - `StringConcatenate`
@@ -164,32 +162,32 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `QwenImage21Cache`
 - `忽略多组孤海`
 - `SetNode`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderBypassModelOnly` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
+- `LoraLoaderBypassModelOnly`
 - `GetNode`
 - `GoohaiAnyExists`
 - `GoohaiAnyExists`
 - `GetNode`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `SaveImage`
 - `SetNode`
 - `LatentSwitch`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `VAELoader`
 - `CLIPLoader`
 - `ReferenceLatent`
 - `ReferenceLatent`
 - `SetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `ComfySwitchNode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `KSamplerAdvanced` ★核心
-- `UNETLoader` ★核心
+- `KSamplerAdvanced`
+- `UNETLoader`
 - `ImageScaleToTotalPixels`
 - `GetNode`
 - `JWFloat`
@@ -214,25 +212,23 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `fixed`
+- `batch_size` = `1`
 - `cfg` = `4`
+- `denoise` = `simple`
+- `height` = `1024`
 - `sampler_name` = `1`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `enable`
+- `steps` = `fixed`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **40%**（73/184）
 
-**有卡**：`LoadImage`、`JsonExtractString`、`TextGenerate`、`BatchImagesNode`、`StringConcatenate`、`llama_cpp_instruct_adv`、`ImageScaleToMaxDimension`、`CLIPLoader`、`llama_cpp_model_loader`、`VAELoader`、`KSampler`、`TextEncodeQwenImage21`、`SaveImage`、`VAEDecode`、`llama_cpp_parameters`、`QwenImage21Cache`、`CLIPTextEncode`、`UNETLoader`、`LoraLoaderBypassModelOnly`、`GoohaiAnyExists`、`LatentSwitch`、`VAEEncode`、`ReferenceLatent`、`EmptyLatentImage`、`ResolutionSelector`、`KSamplerAdvanced`、`ImageScaleToTotalPixels`、`JWFloat`、`PDIMAGE_LongerSize`、`PrimitiveBoolean`、`SeedNode`
+**有卡**：`LoadImage`、`忽略多组孤海`、`JsonExtractString`、`TextGenerate`、`BatchImagesNode`、`StringConcatenate`、`llama_cpp_instruct_adv`、`Note`、`GetNode`、`SetNode`、`ImageScaleToMaxDimension`
 
 **缺卡**（4）：`忽略多组孤海`、`忽略多组孤海`、`忽略多组孤海`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
 ## 参数体检
 

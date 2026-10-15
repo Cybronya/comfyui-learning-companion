@@ -1,5 +1,5 @@
 ---
-key: Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
+key: 图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
 name: Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681
 type: Text To Image
 status: completed
@@ -16,17 +16,15 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
+# 图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1_CONTROLNET｜文生图图生图编辑方案_2105237347641159681.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（69 个）：
 - `ResolutionSelector`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `AIO_Preprocessor`
 - `GetImageSize`
 - `PreviewImage`
@@ -36,12 +34,12 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `ImageResizeKJv2`
 - `SaveImage`
 - `SeedNode`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `CLIPLoader`
 - `Textbox`
 - `TextEncodeQwenImage21`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ResizeImageMaskNode`
 - `VAELoader`
 - `QwenImage21UnionLoader`
@@ -53,69 +51,67 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `LoadImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **90%**（62/69）
 
-**有卡**：`ResolutionSelector`、`EmptyLatentImage`、`AIO_Preprocessor`、`GetImageSize`、`ImageScaleBy`、`ImageResizeKJv2`、`SaveImage`、`SeedNode`、`KSampler`、`VAEDecode`、`CLIPLoader`、`Textbox`、`TextEncodeQwenImage21`、`UNETLoader`、`ResizeImageMaskNode`、`VAELoader`、`QwenImage21UnionLoader`、`QwenImage21Cache`、`QwenImage21UnionApply`、`LoadImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
+**有卡**：`ResolutionSelector`、`EmptyLatentImage`、`AIO_Preprocessor`、`GetImageSize`、`PreviewImage`、`ImageScaleBy`、`ImageResizeKJv2`、`SaveImage`、`SeedNode`、`KSampler`、`VAEDecode`、`CLIPLoader`、`Textbox`、`TextEncodeQwenImage21`、`UNETLoader`、`ResizeImageMaskNode`、`VAELoader`、`QwenImage21UnionLoader`、`QwenImage21Cache`、`QwenImage21UnionApply`、`ComfySwitchNode`、`LoadImage`、`孤海注释`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`JjkText`、`LoraLoaderModelOnly`
 
 ## 参数体检
 

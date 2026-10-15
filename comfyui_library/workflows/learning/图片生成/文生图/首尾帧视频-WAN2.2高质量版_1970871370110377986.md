@@ -1,5 +1,5 @@
 ---
-key: 首尾帧视频-WAN2.2高质量版_1970871370110377986.json
+key: 图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json
 name: 首尾帧视频-WAN2.2高质量版_1970871370110377986
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "height": 1024, "lora_name": "flux-lora-大家电�
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 首尾帧视频-WAN2.2高质量版_1970871370110377986.json
+# 图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/首尾帧视频-WAN2.2高质量版_1970871370110377986.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（74 个）：
 - `ImageResize+`
@@ -43,55 +41,55 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `LayerUtility: PurgeVRAM`
 - `LayerUtility: PurgeVRAM`
 - `INTConstant`
-- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadWanVideoClipTextEncoder`
 - `WanVideoBlockSwap`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `CreateCFGScheduleFloatList`
 - `WanVideoModelLoader`
 - `WanVideoImageToVideoEncode`
 - `SimpleMath+`
 - `JWInteger`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `VHS_VideoCombine`
 - `WanVideoDecode`
 - `easy cleanGpuUsed`
 - `BasicScheduler`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `RepeatLatentBatch`
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
-- `EmptyLatentImage` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `SamplerCustomAdvanced`
+- `EmptyLatentImage`
+- `LoraLoader`
+- `LoraLoader`
 - `Fast Groups Bypasser (rgthree)`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `BasicScheduler`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `RepeatLatentBatch`
 - `BasicGuider`
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `EmptyLatentImage`
+- `LoraLoader`
+- `LoraLoader`
 - `Fast Groups Bypasser (rgthree)`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LoadImage`
 - `BasicGuider`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `LoadImage`
 - `RH_Translator`
 - `RH_Translator`
@@ -103,22 +101,20 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `width` = `768`
-- `height` = `1024`
 - `batch_size` = `1`
+- `height` = `1024`
 - `lora_name` = `flux-lora-大家电场景图.safetensors`
-- `strength_model` = `0.6000000000000001`
 - `strength_clip` = `0.6000000000000001`
+- `strength_model` = `0.6000000000000001`
+- `width` = `768`
 
 ## 知识
 
 覆盖率 **86%**（64/74）
 
-**有卡**：`WanVideoClipVisionEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`JWInteger`、`WanVideoTextEncode`、`INTConstant`、`LoadWanVideoClipTextEncoder`、`WanVideoSampler`、`CreateCFGScheduleFloatList`、`WanVideoImageToVideoEncode`、`VHS_VideoCombine`、`WanVideoDecode`、`BasicScheduler`、`RandomNoise`、`KSamplerSelect`、`RepeatLatentBatch`、`FluxGuidance`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`LoraLoader`、`DualCLIPLoader`、`CLIPTextEncode`、`VAELoader`、`UNETLoader`、`BasicGuider`、`SaveImage`、`LoadImage`、`VAEDecode`、`RH_Translator`
+**有卡**：`ImageResize+`、`WanVideoClipVisionEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`PrimitiveNode`、`JWInteger`、`WanVideoTextEncode`、`LayerUtility: PurgeVRAM`、`INTConstant`、`LoadWanVideoClipTextEncoder`、`WanVideoSampler`、`CreateCFGScheduleFloatList`、`WanVideoImageToVideoEncode`、`SimpleMath+`、`VHS_VideoCombine`、`WanVideoDecode`、`easy cleanGpuUsed`、`BasicScheduler`、`RandomNoise`、`KSamplerSelect`、`RepeatLatentBatch`、`FluxGuidance`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`LoraLoader`、`Fast Groups Bypasser (rgthree)`、`DualCLIPLoader`、`CLIPTextEncode`、`VAELoader`、`UNETLoader`、`BasicGuider`、`SaveImage`、`LoadImage`
 
 **缺卡**（7）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`SimpleMath+`、`easy cleanGpuUsed`、`CR Prompt Text`、`ImageResize+`、`ImageResize+`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、FluxGuidance、KSamplerSelect
 
 ## 学习发现
 

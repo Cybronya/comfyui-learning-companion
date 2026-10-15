@@ -1,5 +1,5 @@
 ---
-key: Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
+key: 图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
 name: Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
+# 图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen千问文生图+Wan2.2图生视频，强强联合_1953107742094520321.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（46 个）：
 - `WanVideoLoraSelect`
@@ -47,48 +45,46 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetImageSizeAndCount`
 - `WanVideoImageToVideoEncode`
 - `CLIPVisionLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
 - `EmptySD3LatentImage`
 - `RH_LLMAPI_NODE`
 - `PreviewImage`
 - `WanVideoTorchCompileSettings`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `CR Text`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
 - `easy showAnything`
 - `LoadImage`
 - `LoadImage`
 - `WanVideoClipVisionEncode`
-- `WanVideoSampler` ★核心
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
+- `WanVideoSampler`
 - `VHS_VideoCombine`
 - `VHS_VideoCombine`
 
 ## 关键参数
 
-- `seed` = `984153404233391`
-- `steps` = `20`
 - `cfg` = `4`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `984153404233391`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **76%**（35/46）
 
-**有卡**：`WanVideoLoraSelect`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`WanVideoTextEncode`、`WanVideoModelLoader`、`ImageResizeKJv2`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoImageToVideoEncode`、`CLIPVisionLoader`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`EmptySD3LatentImage`、`RH_LLMAPI_NODE`、`WanVideoTorchCompileSettings`、`VAEDecode`、`ModelSamplingAuraFlow`、`KSampler`、`CLIPTextEncode`、`LoadImage`、`WanVideoClipVisionEncode`、`WanVideoSampler`、`VHS_VideoCombine`
+**有卡**：`WanVideoLoraSelect`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`WanVideoTextEncode`、`easy cleanGpuUsed`、`WanVideoModelLoader`、`ImageResizeKJv2`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoImageToVideoEncode`、`CLIPVisionLoader`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`EmptySD3LatentImage`、`RH_LLMAPI_NODE`、`PreviewImage`、`WanVideoTorchCompileSettings`、`VAEDecode`、`ModelSamplingAuraFlow`、`KSampler`、`CR Text`、`CLIPTextEncode`
 
 **缺卡**（9）：`CR Text`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanVideoSampler
 
 ## 学习发现
 

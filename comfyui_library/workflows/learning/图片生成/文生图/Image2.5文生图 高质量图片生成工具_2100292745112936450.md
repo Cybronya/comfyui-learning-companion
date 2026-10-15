@@ -1,5 +1,5 @@
 ---
-key: Image2.5文生图 高质量图片生成工具_2100292745112936450.json
+key: 图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json
 name: Image2.5文生图 高质量图片生成工具_2100292745112936450
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Image2.5文生图 高质量图片生成工具_2100292745112936450.json
+# 图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Image2.5文生图 高质量图片生成工具_2100292745112936450.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（33 个）：
 - `SaveImage`
@@ -31,30 +29,30 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `JjkText`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -63,23 +61,21 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **82%**（27/33）
 
-**有卡**：`SaveImage`、`RH_RhartImageG25SunburstTextToImage`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`CLIPLoader`、`VAELoader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader
+**有卡**：`SaveImage`、`RH_RhartImageG25SunburstTextToImage`、`PreviewImage`、`JjkText`、`孤海注释`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`
 
 ## 参数体检
 

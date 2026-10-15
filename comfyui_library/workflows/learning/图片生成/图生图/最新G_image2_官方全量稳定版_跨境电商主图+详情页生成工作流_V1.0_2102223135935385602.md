@@ -1,5 +1,5 @@
 ---
-key: 最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json
+key: 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json
 name: 最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [easy promptConcat, easy promptConcat, easy promptConcat, easy promptLi
 discoveries: [次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json
+# 图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/图生图/最新G_image2_官方全量稳定版_跨境电商主图+详情页生成工作流_V1.0_2102223135935385602.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（19 个）：
 - `HAIGC_Layer`
@@ -47,11 +45,9 @@ discoveries: [次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用�
 
 覆盖率 **63%**（12/19）
 
-**有卡**：`HAIGC_Layer`、`HAIGC_CombineUnits`、`RH_LLMAPI_Pro_Node`、`RH_RhartImageNG31FlashOfficialImageToImage`、`SaveImage`、`LoadImage`、`Text`、`ProcessString`、`HAIGC_SavePSD`
+**有卡**：`HAIGC_Layer`、`ShowText|pysssss`、`HAIGC_CombineUnits`、`RH_LLMAPI_Pro_Node`、`RH_RhartImageNG31FlashOfficialImageToImage`、`SaveImage`、`LoadImage`、`Text`
 
 **缺卡**（4）：`easy promptConcat`、`easy promptConcat`、`easy promptConcat`、`easy promptLine`
-
-**用到的条目**：LoadImage、SaveImage、HAIGC_SavePSD、ProcessString、RH_LLMAPI_Pro_Node、Text、HAIGC_Layer、HAIGC_CombineUnits
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: 全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json
+key: 图片生成/文生图/全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json
 name: 全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [Text Concatenate, CR Prompt Text, CR Prompt Text, CR Prompt Text]
 discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json
+# 图片生成/文生图/全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/全能视频S文生视频（RH API版-国庆0.05元_10秒）_1973716843041042434.json`
 
 ## 结构
-
-**生成流程**：Output → Other
 
 **节点**（10 个）：
 - `easy showAnything`
@@ -38,11 +36,9 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 覆盖率 **20%**（2/10）
 
-**有卡**：`RH_Sora2_T2V`、`SaveVideo`
+**有卡**：`easy showAnything`
 
 **缺卡**（4）：`Text Concatenate`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：SaveVideo、RH_Sora2_T2V、sd15-t2i-basic、sd15-t2i-lora、Text、Switch、CLIPTextEncode、CLIPLoader
 
 ## 学习发现
 

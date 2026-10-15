@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json
+key: 图片生成/文生图/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json
 name: Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json
+# 图片生成/文生图/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1图生图图像编辑工作流，2026开源最强模型多场景覆盖方案_2106067768159326209.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（120 个）：
 - `SetNode`
@@ -49,15 +47,15 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `QwenImage21Cache`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `Mute / Bypass Repeater (rgthree)`
 - `Mute / Bypass Repeater (rgthree)`
 - `Fast Groups Muter (rgthree)`
 - `PixaromaGroupSwitch`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `GetNode`
 - `GetNode`
@@ -69,8 +67,8 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `SetNode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
@@ -96,10 +94,10 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `LoadImage`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `EmptyLatentImage`
 - `CLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Any Switch (rgthree)`
 - `SaveImage`
 - `Fast Bypasser (rgthree)`
@@ -118,30 +116,30 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `SaveImageAdvanced`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -150,25 +148,23 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **47%**（56/120）
 
-**有卡**：`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`QwenImage21Cache`、`PixaromaGroupSwitch`、`UNETLoader`、`VAELoader`、`KSampler`、`VAEDecode`、`LoadImage`、`EmptyLatentImage`、`CLIPLoader`、`SaveImage`、`ResolutionSelector`、`TextEncodeQwenImage21`、`QwenPERewriteT8`、`SaveImageAdvanced`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`SetNode`、`Fast Groups Muter (rgthree)`、`PathchSageAttentionKJ`、`GetNode`、`LoraLoaderModelOnly`、`QwenImage21Cache`、`Mute / Bypass Repeater (rgthree)`、`PixaromaGroupSwitch`、`UNETLoader`、`VAELoader`、`KSampler`、`VAEDecode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`
 
 **缺卡**（17）：`CR Text Concatenate`、`Fast Bypasser (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

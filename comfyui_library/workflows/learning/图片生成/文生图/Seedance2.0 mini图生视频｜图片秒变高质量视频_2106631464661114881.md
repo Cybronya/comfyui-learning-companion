@@ -1,5 +1,5 @@
 ---
-key: Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json
+key: 图片生成/文生图/Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json
 name: Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json
+# 图片生成/文生图/Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedance2.0 mini图生视频｜图片秒变高质量视频_2106631464661114881.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（47 个）：
 - `RH_RhartVideoSparkvideo20MiniImageToVideo`
@@ -31,71 +29,69 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `SaveVideo`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **89%**（42/47）
 
-**有卡**：`RH_RhartVideoSparkvideo20MiniImageToVideo`、`LoadImage`、`SaveVideo`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
+**有卡**：`RH_RhartVideoSparkvideo20MiniImageToVideo`、`LoadImage`、`CR Text`、`SaveVideo`、`孤海注释`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`、`JjkText`、`LoraLoaderModelOnly`
 
 **缺卡**（1）：`CR Text`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 

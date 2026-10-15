@@ -1,5 +1,5 @@
 ---
-key: Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
+key: 图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
 name: Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [RH_SeedanceV15ProTextToVideoFast]
 discoveries: [次要节点 `RH_SeedanceV15ProTextToVideoFast` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
+# 图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json`
 
 ## 结构
-
-**生成流程**：Output → Other
 
 **节点**（3 个）：
 - `MuyeTextEditOutput`
@@ -34,8 +32,6 @@ discoveries: [次要节点 `RH_SeedanceV15ProTextToVideoFast` 仅有 KSampler �
 **有卡**：`MuyeTextEditOutput`、`SaveVideo`
 
 **缺卡**（1）：`RH_SeedanceV15ProTextToVideoFast`
-
-**用到的条目**：MuyeTextEditOutput、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、RH_SeedanceV15ProTextToVideo、Text、sampler_name 调整经验
 
 ## 学习发现
 

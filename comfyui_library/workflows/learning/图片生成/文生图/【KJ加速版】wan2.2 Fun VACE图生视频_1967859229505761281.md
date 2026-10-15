@@ -1,5 +1,5 @@
 ---
-key: 【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json
+key: 图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json
 name: 【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [Text Multiline]
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json
+# 图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Process → Other
 
 **节点**（42 个）：
 - `GetNode`
@@ -29,7 +27,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `Note`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoBlockSwap`
 - `SetNode`
 - `SetNode`
@@ -47,7 +45,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `WanVideoVACEModelSelect`
 - `INTConstant`
 - `INTConstant`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `GetNode`
 - `GetNode`
 - `WanVideoTextEncodeCached`
@@ -70,11 +68,9 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 覆盖率 **71%**（30/42）
 
-**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSampler`、`WanVideoBlockSwap`、`WanVideoScheduler`、`ImageConcatMulti`、`WanVideoDecode`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncodeCached`、`VHS_VideoCombine`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`WanVideoLoraSelectMulti`、`ImageResizeKJv2`、`WanVideoVACEStartToEndFrame`、`LoadImage`
+**有卡**：`GetNode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`Note`、`WanVideoSampler`、`WanVideoBlockSwap`、`SetNode`、`Reroute`、`PrimitiveNode`、`WanVideoScheduler`、`ImageConcatMulti`、`WanVideoDecode`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncodeCached`、`VHS_VideoCombine`
 
 **缺卡**（1）：`Text Multiline`
-
-**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti
 
 ## 学习发现
 

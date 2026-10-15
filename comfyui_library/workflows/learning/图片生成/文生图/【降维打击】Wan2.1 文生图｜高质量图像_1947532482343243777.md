@@ -1,5 +1,5 @@
 ---
-key: 【降维打击】Wan2.1 文生图｜高质量图像_1947532482343243777.json
+key: 图片生成/文生图/【降维打击】Wan2.1 文生图｜高质量图像_1947532482343243777.json
 name: 【降维打击】Wan2.1 文生图｜高质量图像_1947532482343243777
 type: Text To Image
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "lora_name
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# 【降维打击】Wan2.1 文生图｜高质量图像_1947532482343243777.json
+# 图片生成/文生图/【降维打击】Wan2.1 文生图｜高质量图像_1947532482343243777.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【降维打击】Wan2.1 文生图｜高质量图像_1947532482343243777.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（32 个）：
 - `CR Text Concatenate`
@@ -31,9 +29,9 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `JjkText`
 - `TextCombinerSix`
 - `RH_Translator`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `WanVideoNAG`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingSD3`
 - `VAELoader`
 - `FastFilmGrain`
@@ -45,44 +43,42 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `JjkText`
 - `FastFilmGrain`
 - `PathchSageAttentionKJ`
-- `UnetLoaderGGUF` ★核心
-- `LoraLoader` ★核心
+- `UnetLoaderGGUF`
+- `LoraLoader`
 - `CLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `FluxResolutionNode`
 - `ImpactSwitch`
 - `RH_Prompter`
 - `JjkText`
 - `SaveImage`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 
 **识别到的模式**：text_to_image、lora
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1280`
 - `batch_size` = `1`
-- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
-- `strength_model` = `1`
-- `strength_clip` = `1`
-- `seed` = `524029734907686`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1280`
+- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `524029734907686`
+- `steps` = `10`
+- `strength_clip` = `1`
+- `strength_model` = `1`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **69%**（22/32）
 
-**有卡**：`ShowText`、`RH_Prompter`、`TextCombinerSix`、`RH_Translator`、`EmptyLatentImage`、`WanVideoNAG`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAELoader`、`FastFilmGrain`、`PathchSageAttentionKJ`、`UnetLoaderGGUF`、`LoraLoader`、`CLIPLoader`、`VAEDecode`、`FluxResolutionNode`、`SaveImage`、`KSampler`
+**有卡**：`CR Text Concatenate`、`ShowText`、`RH_Prompter`、`JjkText`、`TextCombinerSix`、`RH_Translator`、`EmptyLatentImage`、`WanVideoNAG`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAELoader`、`FastFilmGrain`、`easy clearCacheAll`、`easy showAnything`、`easy cleanGpuUsed`、`PathchSageAttentionKJ`、`UnetLoaderGGUF`
 
 **缺卡**（3）：`CR Text Concatenate`、`easy cleanGpuUsed`、`easy clearCacheAll`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoraLoader、LoraLoader
 
 ## 学习发现
 

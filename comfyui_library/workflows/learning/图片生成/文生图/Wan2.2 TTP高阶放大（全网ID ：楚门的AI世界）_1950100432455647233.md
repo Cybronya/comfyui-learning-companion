@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json
+key: 图片生成/文生图/Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json
 name: Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233
 type: Image To Image
 status: completed
@@ -15,30 +15,28 @@ parameters: {"cfg": 1, "denoise": 0.10000000000000002, "sampler_name": "heun", "
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json
+# 图片生成/文生图/Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 TTP高阶放大（全网ID ：楚门的AI世界）_1950100432455647233.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（26 个）：
 - `TTP_Image_Tile_Batch`
 - `PreviewImage`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `easy imageBatchToImageList`
 - `PreviewImage`
 - `ImageListToImageBatch`
-- `VAEEncode` ★核心
-- `VAEDecode` ★核心
+- `VAEEncode`
+- `VAEDecode`
 - `PreviewImage`
-- `UNETLoader` ★核心
-- `KSampler` ★核心
+- `UNETLoader`
+- `KSampler`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `TTP_Tile_image_size`
 - `ImageScaleToTotalPixels`
@@ -55,22 +53,20 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `seed` = `254894341020511`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.10000000000000002`
 - `sampler_name` = `heun`
 - `scheduler` = `beta`
-- `denoise` = `0.10000000000000002`
+- `seed` = `254894341020511`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **73%**（19/26）
 
-**有卡**：`TTP_Image_Tile_Batch`、`CLIPTextEncode`、`ImageListToImageBatch`、`VAEEncode`、`VAEDecode`、`UNETLoader`、`KSampler`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`TTP_Tile_image_size`、`ImageScaleToTotalPixels`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`LoadImage`、`SaveImage`、`TTP_Image_Assy`
+**有卡**：`TTP_Image_Tile_Batch`、`PreviewImage`、`CLIPTextEncode`、`easy imageBatchToImageList`、`ImageListToImageBatch`、`VAEEncode`、`VAEDecode`、`UNETLoader`、`KSampler`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`TTP_Tile_image_size`、`ImageScaleToTotalPixels`、`ImageUpscaleWithModel`
 
 **缺卡**（3）：`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageBatchToImageList`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 学习发现
 

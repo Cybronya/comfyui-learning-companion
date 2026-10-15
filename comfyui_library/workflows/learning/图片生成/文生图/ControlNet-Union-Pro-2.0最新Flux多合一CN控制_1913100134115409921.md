@@ -1,5 +1,5 @@
 ---
-key: ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json
+key: 图片生成/文生图/ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json
 name: ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921
 type: Unknown Workflow
 status: completed
@@ -15,40 +15,38 @@ parameters: {"controlnet_strength": 0.8000000000000002}
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json
+# 图片生成/文生图/ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（37 个）：
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `easy cleanGpuUsed`
 - `ControlNetLoader`
 - `DualCLIPLoader`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `PreviewImage`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `Text Concatenate`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `ImageConcanate`
 - `ImageConcanate`
 - `ShowText|pysssss`
 - `LoadImage`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
 - `Note`
@@ -57,9 +55,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `Florence2Run`
 - `Text Multiline`
 - `RH_Captioner`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `ApplyFBCacheOnModel`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `RepeatLatentBatch`
 
 ## 关键参数
@@ -70,11 +68,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 覆盖率 **81%**（30/37）
 
-**有卡**：`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`ControlNetLoader`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`UNETLoader`、`CLIPTextEncode`、`FluxGuidance`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`ImageConcanate`、`LoadImage`、`AIO_Preprocessor`、`SetUnionControlNetType`、`DownloadAndLoadFlorence2Model`、`Florence2Run`、`RH_Captioner`、`ControlNetApplyAdvanced`、`ApplyFBCacheOnModel`、`VAEEncode`、`RepeatLatentBatch`
+**有卡**：`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`easy cleanGpuUsed`、`ControlNetLoader`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`PreviewImage`、`UNETLoader`、`CLIPTextEncode`、`FluxGuidance`、`SamplerCustomAdvanced`、`Text Concatenate`、`LoraLoaderModelOnly`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageConcanate`、`ShowText|pysssss`、`LoadImage`、`AIO_Preprocessor`、`SetUnionControlNetType`、`Note`、`DownloadAndLoadFlorence2Model`
 
 **缺卡**（4）：`LayerUtility: ImageScaleByAspectRatio V2`、`Text Concatenate`、`Text Multiline`、`easy cleanGpuUsed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
 
 ## 学习发现
 

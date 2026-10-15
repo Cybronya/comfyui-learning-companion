@@ -1,5 +1,5 @@
 ---
-key: Flux图像反推Chroma,Dev,Flex.2,Shuttle Jugar对比工作流_1922552538472792066.json
+key: 图片生成/文生图/Flux图像反推Chroma,Dev,Flex.2,Shuttle Jugar对比工作流_1922552538472792066.json
 name: Flux图像反推Chroma,Dev,Flex.2,Shuttle Jugar对比工作流_1922552538472792066
 type: Text To Image
 status: completed
@@ -15,36 +15,34 @@ parameters: {"batch_size": 1, "cfg": 4, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flux图像反推Chroma,Dev,Flex.2,Shuttle Jugar对比工作流_1922552538472792066.json
+# 图片生成/文生图/Flux图像反推Chroma,Dev,Flex.2,Shuttle Jugar对比工作流_1922552538472792066.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux图像反推Chroma,Dev,Flex.2,Shuttle Jugar对比工作流_1922552538472792066.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（68 个）：
 - `VAELoader`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Note`
 - `CLIPLoader`
 - `T5TokenizerOptions`
-- `UNETLoader` ★核心
-- `EmptyLatentImage` ★核心
-- `KSamplerSelect` ★核心
+- `UNETLoader`
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `VAELoader`
 - `RandomNoise`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `NunchakuTextEncoderLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `NunchakuFluxDiTLoader`
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `BasicGuider`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `EmptySD3LatentImage`
 - `ApplyFBCacheOnModel`
 - `FlexGuidance`
@@ -53,23 +51,23 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `DualCLIPLoader`
 - `ConditioningZeroOut`
 - `Flex2Conditioner`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `KSampler`
+- `VAEDecode`
+- `SamplerCustomAdvanced`
 - `VAELoader`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicGuider`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `DualCLIPLoader`
 - `BasicScheduler`
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `VAEDecode`
 - `RandomNoise`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ImageConcanate`
 - `ImageConcanate`
 - `ImageConcanate`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `AddLabel`
 - `LayerUtility: PurgeVRAM`
 - `AddLabel`
@@ -81,14 +79,14 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `LayerUtility: PurgeVRAM`
 - `SaveImage`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LayerUtility: PurgeVRAM`
 - `RH_Captioner`
 - `RH_Translator`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `LayerUtility: PurgeVRAM`
-- `KSampler` ★核心
+- `KSampler`
 - `easy showAnything`
 - `SaveImage`
 - `LoadImage`
@@ -97,25 +95,23 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `819665775881981`
-- `steps` = `30`
 - `cfg` = `4`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `819665775881981`
+- `steps` = `30`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **88%**（60/68）
 
-**有卡**：`VAELoader`、`EmptySD3LatentImage`、`CLIPTextEncode`、`CLIPLoader`、`T5TokenizerOptions`、`UNETLoader`、`EmptyLatentImage`、`KSamplerSelect`、`RandomNoise`、`BasicScheduler`、`SamplerCustomAdvanced`、`NunchakuTextEncoderLoader`、`NunchakuFluxDiTLoader`、`LoraLoaderModelOnly`、`BasicGuider`、`VAEDecode`、`ApplyFBCacheOnModel`、`FlexGuidance`、`ImpactInt`、`DualCLIPLoader`、`ConditioningZeroOut`、`Flex2Conditioner`、`KSampler`、`ImageConcanate`、`AddLabel`、`SaveImage`、`RH_Captioner`、`RH_Translator`、`LoadImage`
+**有卡**：`VAELoader`、`EmptySD3LatentImage`、`CLIPTextEncode`、`Note`、`CLIPLoader`、`T5TokenizerOptions`、`UNETLoader`、`EmptyLatentImage`、`KSamplerSelect`、`RandomNoise`、`BasicScheduler`、`SamplerCustomAdvanced`、`NunchakuTextEncoderLoader`、`NunchakuFluxDiTLoader`、`LoraLoaderModelOnly`、`BasicGuider`、`VAEDecode`、`ApplyFBCacheOnModel`、`FlexGuidance`、`ImpactInt`、`DualCLIPLoader`、`ConditioningZeroOut`、`Flex2Conditioner`、`KSampler`、`ImageConcanate`、`AddLabel`、`LayerUtility: PurgeVRAM`、`SaveImage`、`RH_Captioner`
 
 **缺卡**（6）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 学习发现
 

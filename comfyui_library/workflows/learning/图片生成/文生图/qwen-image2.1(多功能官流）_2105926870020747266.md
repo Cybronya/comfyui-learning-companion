@@ -1,5 +1,5 @@
 ---
-key: qwen-image2.1(多功能官流）_2105926870020747266.json
+key: 图片生成/文生图/qwen-image2.1(多功能官流）_2105926870020747266.json
 name: qwen-image2.1(多功能官流）_2105926870020747266
 type: Unknown Workflow
 status: completed
@@ -14,22 +14,20 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 755988244719898, "steps": 30, "width": 1024}
 ---
 
-# qwen-image2.1(多功能官流）_2105926870020747266.json
+# 图片生成/文生图/qwen-image2.1(多功能官流）_2105926870020747266.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen-image2.1(多功能官流）_2105926870020747266.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（38 个）：
 - `ResolutionSelector`
 - `MarkdownNote`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `EmptyLatentImage`
+- `KSampler`
 - `ComfySwitchNode`
 - `LoadImage`
 - `LoadImage`
@@ -52,32 +50,30 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 - `Any Switch (rgthree)`
 - `TextEncodeQwenImage21`
 - `ImageResizeKJv2`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Image Comparer (rgthree)`
 - `LoadImage`
 - `LoadImage`
 - `Fast Groups Bypasser (rgthree)`
 - `PrimitiveStringMultiline`
 - `SaveImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `755988244719898`
-- `steps` = `30`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `755988244719898`
+- `steps` = `30`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **74%**（28/38）
 
-**有卡**：`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`LoadImage`、`PrimitiveBoolean`、`TextGenerate`、`BatchImagesNode`、`ImageScaleToTotalPixels`、`QwenImage21Cache`、`ModelAttentionBackend`、`GetImageSize`、`TextEncodeQwenImage21`、`ImageResizeKJv2`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
+**有卡**：`ResolutionSelector`、`MarkdownNote`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`ComfySwitchNode`、`LoadImage`、`PrimitiveBoolean`、`PrimitiveInt`、`PreviewAny`、`PrimitiveStringMultiline`、`TextGenerate`、`BatchImagesNode`、`ImageScaleToTotalPixels`、`QwenImage21Cache`、`ModelAttentionBackend`、`GetImageSize`、`Any Switch (rgthree)`、`TextEncodeQwenImage21`

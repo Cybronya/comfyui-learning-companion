@@ -1,5 +1,5 @@
 ---
-key: 最强F.1，一键换脸写真（国风旗袍款）_1909190108040278017.json
+key: 图片生成/文生图/最强F.1，一键换脸写真（国风旗袍款）_1909190108040278017.json
 name: 最强F.1，一键换脸写真（国风旗袍款）_1909190108040278017
 type: Unknown Workflow
 status: completed
@@ -15,28 +15,26 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1360, "lora_name
 discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler //Inspire` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# 最强F.1，一键换脸写真（国风旗袍款）_1909190108040278017.json
+# 图片生成/文生图/最强F.1，一键换脸写真（国风旗袍款）_1909190108040278017.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/最强F.1，一键换脸写真（国风旗袍款）_1909190108040278017.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（51 个）：
 - `DifferentialDiffusion`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `VAELoader`
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `LoraLoader`
+- `LoraLoader`
 - `Anything Everywhere3`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Reroute`
 - `Reroute`
 - `Reroute`
@@ -47,9 +45,9 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 - `Reroute`
 - `Reroute`
 - `UltimateSDUpscale`
-- `KSampler //Inspire` ★核心
+- `KSampler //Inspire`
 - `Image Comparer (rgthree)`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `UpscaleModelLoader`
 - `UltralyticsDetectorProvider`
 - `PulidFluxEvaClipLoader`
@@ -80,28 +78,26 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `lora_name` = `AWPortrait CN_1.0`
-- `strength_model` = `0.5`
-- `strength_clip` = `1`
-- `seed` = `958736835959547`
-- `steps` = `28`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1360`
+- `lora_name` = `AWPortrait CN_1.0`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `958736835959547`
+- `steps` = `28`
+- `strength_clip` = `1`
+- `strength_model` = `0.5`
 - `width` = `1024`
-- `height` = `1360`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **63%**（32/51）
 
-**有卡**：`DifferentialDiffusion`、`UNETLoader`、`DualCLIPLoader`、`LoraLoader`、`VAELoader`、`CLIPTextEncode`、`FluxGuidance`、`ConditioningZeroOut`、`VAEDecode`、`FaceDetailer`、`UltimateSDUpscale`、`EmptyLatentImage`、`UpscaleModelLoader`、`UltralyticsDetectorProvider`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`SAMLoader`、`PulidFluxModelLoader`、`LoadImage`、`FaceAnalysisModels`、`ApplyPulidFlux`、`DeepTranslatorTextNode`、`Joy_extra_options`、`Joy_caption_two_load`、`FaceBoundingBox`、`Joy_caption_two_advanced`、`SaveImage`
+**有卡**：`DifferentialDiffusion`、`UNETLoader`、`DualCLIPLoader`、`LoraLoader`、`VAELoader`、`Anything Everywhere3`、`CLIPTextEncode`、`FluxGuidance`、`ConditioningZeroOut`、`VAEDecode`、`Reroute`、`easy clearCacheAll`、`Note`、`FaceDetailer`、`UltimateSDUpscale`、`KSampler //Inspire`、`Image Comparer (rgthree)`、`EmptyLatentImage`、`UpscaleModelLoader`、`UltralyticsDetectorProvider`、`PulidFluxEvaClipLoader`、`ImageResize+`、`PulidFluxInsightFaceLoader`、`SAMLoader`
 
 **缺卡**（5）：`Text Concatenate`、`easy clearCacheAll`、`easy clearCacheAll`、`KSampler //Inspire`、`ImageResize+`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、LoadImage、FluxGuidance
 
 ## 学习发现
 

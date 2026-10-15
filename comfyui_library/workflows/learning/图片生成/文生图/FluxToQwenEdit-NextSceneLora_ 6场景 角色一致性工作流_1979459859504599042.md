@@ -1,5 +1,5 @@
 ---
-key: FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json
+key: 图片生成/文生图/FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json
 name: FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042
 type: Image To Image
 status: completed
@@ -16,23 +16,21 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json
+# 图片生成/文生图/FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FluxToQwenEdit-NextSceneLora_ 6场景 角色一致性工作流_1979459859504599042.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（95 个）：
 - `EmptySD3LatentImage`
-- `KSampler` ★核心
+- `KSampler`
 - `ConditioningZeroOut`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
-- `VAEEncode` ★核心
+- `KSampler`
+- `VAEEncode`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
 - `ImageScaleToTotalPixels`
@@ -41,32 +39,32 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `SetNode`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
 - `ImageScaleToTotalPixels`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
 - `ImageScaleToTotalPixels`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
 - `ImageScaleToTotalPixels`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
 - `ImageScaleToTotalPixels`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `SetNode`
 - `SetNode`
 - `GetNode`
@@ -91,25 +89,25 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `Fast Groups Bypasser (rgthree)`
 - `Note`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `SetNode`
 - `SetNode`
 - `SaveImage`
@@ -117,7 +115,7 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `SaveImage`
 
@@ -125,22 +123,20 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `seed` = `8650324624072`
-- `steps` = `4`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `8650324624072`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **64%**（61/95）
 
-**有卡**：`EmptySD3LatentImage`、`KSampler`、`ConditioningZeroOut`、`CLIPTextEncode`、`CFGNorm`、`ModelSamplingAuraFlow`、`VAEEncode`、`TextEncodeQwenImageEditPlus`、`ImageScaleToTotalPixels`、`LoadImage`、`UNETLoader`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`VAELoader`、`CLIPLoader`、`VAEDecode`、`SaveImage`
+**有卡**：`EmptySD3LatentImage`、`KSampler`、`ConditioningZeroOut`、`CLIPTextEncode`、`CFGNorm`、`ModelSamplingAuraFlow`、`VAEEncode`、`TextEncodeQwenImageEditPlus`、`ImageScaleToTotalPixels`、`SetNode`、`GetNode`、`LoadImage`
 
 **缺卡**（1）：`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage
 
 ## 参数体检
 

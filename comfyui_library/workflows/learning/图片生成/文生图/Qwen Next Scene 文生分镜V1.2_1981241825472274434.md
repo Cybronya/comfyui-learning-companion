@@ -1,5 +1,5 @@
 ---
-key: Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
+key: 图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
 name: Qwen Next Scene 文生分镜V1.2_1981241825472274434
 type: Image To Image
 status: completed
@@ -16,32 +16,30 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "bet
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
+# 图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Next Scene 文生分镜V1.2_1981241825472274434.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（39 个）：
-- `KSampler` ★核心
-- `VAEEncode` ★核心
+- `KSampler`
+- `VAEEncode`
 - `easy promptLine`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy showAnything`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ProcessString`
 - `TextEncodeQwenImageEditPlus`
 - `CLIPLoader`
 - `VAELoader`
 - `TextEncodeQwenImageEditPlus`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `Anything Everywhere3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `MinNode`
 - `FluxResolutionNode`
@@ -53,11 +51,11 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `InversionDemoLazySwitch`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `JjkText`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JjkText`
 - `EmptySD3LatentImage`
 - `JjkText`
@@ -69,22 +67,20 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 关键参数
 
-- `seed` = `792342327315534`
-- `steps` = `4`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `res_2s`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `792342327315534`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **82%**（32/39）
 
-**有卡**：`KSampler`、`VAEEncode`、`VAEDecode`、`UNETLoader`、`ProcessString`、`TextEncodeQwenImageEditPlus`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`MinNode`、`FluxResolutionNode`、`RH_Translator`、`InversionDemoLazySwitch`、`SaveImage`、`EmptySD3LatentImage`、`PrimitiveBoolean`、`LoadImage`
+**有卡**：`KSampler`、`VAEEncode`、`easy promptLine`、`VAEDecode`、`easy showAnything`、`UNETLoader`、`ProcessString`、`TextEncodeQwenImageEditPlus`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`Anything Everywhere3`、`LoraLoaderModelOnly`、`LayerUtility: ImageScaleByAspectRatio V2`、`MinNode`、`FluxResolutionNode`、`RH_Translator`、`InversionDemoLazySwitch`、`SaveImage`、`JjkText`
 
 **缺卡**（2）：`LayerUtility: ImageScaleByAspectRatio V2`、`easy promptLine`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 

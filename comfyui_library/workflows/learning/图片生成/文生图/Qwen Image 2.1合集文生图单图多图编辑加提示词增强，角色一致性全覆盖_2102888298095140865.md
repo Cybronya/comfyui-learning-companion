@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json
+key: 图片生成/文生图/Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json
 name: Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json
+# 图片生成/文生图/Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1合集文生图单图多图编辑加提示词增强，角色一致性全覆盖_2102888298095140865.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（133 个）：
 - `SetNode`
@@ -73,12 +71,12 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `GetNode`
 - `LoadImage`
 - `GetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `PreviewAny`
 - `ComfySwitchNode`
 - `QwenImage21Cache`
 - `PrimitiveInt`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `TextEncodeQwenImage21`
 - `ResolutionSelector`
 - `SetNode`
@@ -87,7 +85,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `LoadImage`
 - `LoadImage`
 - `PrimitiveBoolean`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `SetNode`
@@ -95,7 +93,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `GetNode`
 - `GetNode`
 - `TextGenerateLTX2Prompt`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImageAdvanced`
 - `SetNode`
 - `SetNode`
@@ -110,7 +108,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `PrimitiveBoolean`
 - `GetNode`
 - `GetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `SetNode`
 - `easy seed`
 - `JjkText`
@@ -122,8 +120,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `GetNode`
 - `TextEncodeQwenImage21`
 - `GetNode`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `SetNode`
 - `SaveImage`
 - `Fast Groups Bypasser (rgthree)`
@@ -131,30 +129,30 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `SaveImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -163,25 +161,23 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **44%**（58/133）
 
-**有卡**：`LoadImage`、`VAELoader`、`BatchImagesNode`、`EmptyLatentImage`、`QwenImage21Cache`、`UNETLoader`、`TextEncodeQwenImage21`、`ResolutionSelector`、`PrimitiveBoolean`、`VAEDecode`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`KSampler`、`SaveImageAdvanced`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`SetNode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`GetNode`、`VAELoader`、`BatchImagesNode`、`EmptyLatentImage`、`PreviewAny`、`ComfySwitchNode`、`QwenImage21Cache`、`PrimitiveInt`、`UNETLoader`、`TextEncodeQwenImage21`、`ResolutionSelector`、`easy seed`
 
 **缺卡**（11）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy seed`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

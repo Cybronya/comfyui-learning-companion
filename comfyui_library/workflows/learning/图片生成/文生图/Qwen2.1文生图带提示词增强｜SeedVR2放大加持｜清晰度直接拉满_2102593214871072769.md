@@ -1,5 +1,5 @@
 ---
-key: Qwen2.1文生图带提示词增强｜SeedVR2放大加持｜清晰度直接拉满_2102593214871072769.json
+key: 图片生成/文生图/Qwen2.1文生图带提示词增强｜SeedVR2放大加持｜清晰度直接拉满_2102593214871072769.json
 name: Qwen2.1文生图带提示词增强｜SeedVR2放大加持｜清晰度直接拉满_2102593214871072769
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen2.1文生图带提示词增强｜SeedVR2放大加持｜清晰度直接拉满_2102593214871072769.json
+# 图片生成/文生图/Qwen2.1文生图带提示词增强｜SeedVR2放大加持｜清晰度直接拉满_2102593214871072769.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图带提示词增强｜SeedVR2放大加持｜清晰度直接拉满_2102593214871072769.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（64 个）：
 - `ConditioningZeroOut`
@@ -31,8 +29,8 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 - `TextEncodeQwenImage21`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `StringConstantMultiline`
 - `ResolutionSelector`
 - `SeedVR2LoadVAEModel`
@@ -41,78 +39,76 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 - `SaveImage`
 - `SaveImage`
 - `SeedVR2VideoUpscaler`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `ImageScaleBy`
 - `easy clearCacheAll`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **91%**（58/64）
 
-**有卡**：`ConditioningZeroOut`、`CLIPLoader`、`TextGenerate`、`TextEncodeQwenImage21`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`StringConstantMultiline`、`ResolutionSelector`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`SaveImage`、`SeedVR2VideoUpscaler`、`VAEDecode`、`KSampler`、`ImageScaleBy`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`ConditioningZeroOut`、`CLIPLoader`、`TextGenerate`、`TextEncodeQwenImage21`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`StringConstantMultiline`、`ResolutionSelector`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`easy int`、`SaveImage`、`SeedVR2VideoUpscaler`、`VAEDecode`、`KSampler`、`ImageScaleBy`、`easy clearCacheAll`、`EmptyLatentImage`、`孤海注释`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`JjkText`
 
 **缺卡**（2）：`easy clearCacheAll`、`easy int`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 

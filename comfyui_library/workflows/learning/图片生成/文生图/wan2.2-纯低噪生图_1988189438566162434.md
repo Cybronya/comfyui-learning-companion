@@ -1,5 +1,5 @@
 ---
-key: wan2.2-纯低噪生图_1988189438566162434.json
+key: 图片生成/文生图/wan2.2-纯低噪生图_1988189438566162434.json
 name: wan2.2-纯低噪生图_1988189438566162434
 type: Unknown Workflow
 status: completed
@@ -16,13 +16,11 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# wan2.2-纯低噪生图_1988189438566162434.json
+# 图片生成/文生图/wan2.2-纯低噪生图_1988189438566162434.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2-纯低噪生图_1988189438566162434.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
 
 **节点**（41 个）：
 - `PreviewAny`
@@ -30,19 +28,19 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `RH_Captioner`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `EmptyHunyuanLatentVideo`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SetNode`
 - `SetNode`
 - `SaveImage`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `LoadImage`
@@ -59,7 +57,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `PreviewAny`
 - `Text Multiline`
 - `INTConstant`
-- `KSampler` ★核心
+- `KSampler`
 - `GetNode`
 - `GetNode`
 - `SetNode`
@@ -69,22 +67,20 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `seed` = `95494355540032`
-- `steps` = `6`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `95494355540032`
+- `steps` = `6`
 
 ## 知识
 
 覆盖率 **39%**（16/41）
 
-**有卡**：`RH_Translator`、`RH_Captioner`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`LoadImage`、`ModelSamplingSD3`、`DF_Float`、`INTConstant`、`KSampler`
+**有卡**：`PreviewAny`、`RH_Translator`、`RH_Captioner`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`SetNode`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`GetNode`
 
 **缺卡**（3）：`Text Multiline`、`Text Multiline`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 

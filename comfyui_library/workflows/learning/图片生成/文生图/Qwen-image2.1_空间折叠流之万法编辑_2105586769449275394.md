@@ -1,5 +1,5 @@
 ---
-key: Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
+key: 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 name: Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
+# 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（38 个）：
 - `SetNode`
@@ -41,7 +39,7 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `VAELoader`
 - `GetNode`
 - `LoadImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `QwenImage21Cache`
 - `LoadImage`
@@ -51,10 +49,10 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `SetNode`
 - `GetNode`
 - `ComfySwitchNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetNode`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `SetNode`
 - `SetNode`
@@ -65,25 +63,23 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `286759499462852`
-- `steps` = `35`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `286759499462852`
+- `steps` = `35`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **45%**（17/38）
 
-**有卡**：`LoadImage`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`SaveImage`、`Text`、`ResolutionSelector`
+**有卡**：`SetNode`、`LoadImage`、`GetNode`、`VAELoader`
 
 **缺卡**（1）：`忽略多组孤海`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 学习发现
 

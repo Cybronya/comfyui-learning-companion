@@ -1,5 +1,5 @@
 ---
-key: incontext-controlnet-home_1914936305506287617.json
+key: 图片生成/文生图/incontext-controlnet-home_1914936305506287617.json
 name: incontext-controlnet-home_1914936305506287617
 type: Unknown Workflow
 status: completed
@@ -14,23 +14,21 @@ missing: []
 parameters: {"lora_name": "home-decoration.safetensors", "strength_clip": 1, "strength_model": 1}
 ---
 
-# incontext-controlnet-home_1914936305506287617.json
+# 图片生成/文生图/incontext-controlnet-home_1914936305506287617.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/incontext-controlnet-home_1914936305506287617.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（19 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `Note`
 - `BasicGuider`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `VAELoader`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `FluxGuidance`
 - `EmptySD3LatentImage`
 - `PrimitiveNode`
@@ -38,23 +36,21 @@ parameters: {"lora_name": "home-decoration.safetensors", "strength_clip": 1, "st
 - `RandomNoise`
 - `ModelSamplingFlux`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `LoraLoader` ★核心
+- `CLIPTextEncode`
+- `LoraLoader`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
 - `lora_name` = `home-decoration.safetensors`
-- `strength_model` = `1`
 - `strength_clip` = `1`
+- `strength_model` = `1`
 
 ## 知识
 
 覆盖率 **79%**（15/19）
 
-**有卡**：`VAEDecode`、`BasicGuider`、`KSamplerSelect`、`VAELoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`FluxGuidance`、`EmptySD3LatentImage`、`RandomNoise`、`ModelSamplingFlux`、`SaveImage`、`UNETLoader`、`DualCLIPLoader`、`CLIPTextEncode`、`LoraLoader`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、LoraLoader
+**有卡**：`VAEDecode`、`Note`、`BasicGuider`、`KSamplerSelect`、`VAELoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`FluxGuidance`、`EmptySD3LatentImage`、`PrimitiveNode`、`RandomNoise`、`ModelSamplingFlux`、`SaveImage`

@@ -1,5 +1,5 @@
 ---
-key: wan2.2文生图_图生图超真实工作流（高射炮打蚊子系列五）_1950505463844687874.json
+key: 图片生成/文生图/wan2.2文生图_图生图超真实工作流（高射炮打蚊子系列五）_1950505463844687874.json
 name: wan2.2文生图_图生图超真实工作流（高射炮打蚊子系列五）_1950505463844687874
 type: Unknown Workflow
 status: completed
@@ -15,23 +15,21 @@ parameters: {"cfg": 12, "denoise": "bong_tangent", "sampler_name": 1, "scheduler
 discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2文生图_图生图超真实工作流（高射炮打蚊子系列五）_1950505463844687874.json
+# 图片生成/文生图/wan2.2文生图_图生图超真实工作流（高射炮打蚊子系列五）_1950505463844687874.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2文生图_图生图超真实工作流（高射炮打蚊子系列五）_1950505463844687874.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（41 个）：
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Text Concatenate`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
 - `PathchSageAttentionKJ`
 - `EmptyHunyuanLatentVideo`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `CR Simple Image Compare`
 - `Primitive integer [Crystools]`
 - `Primitive integer [Crystools]`
@@ -41,25 +39,25 @@ discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点
 - `Text Multiline`
 - `RH_Captioner`
 - `PathchSageAttentionKJ`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ImageScaleDownToSize`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
 - `easy anythingIndexSwitch`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
 - `easy anythingIndexSwitch`
 - `easy showAnything`
 - `GetImageSizeAndCount`
@@ -68,22 +66,20 @@ discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `12`
+- `denoise` = `bong_tangent`
 - `sampler_name` = `1`
 - `scheduler` = `res_2s`
-- `denoise` = `bong_tangent`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **73%**（30/41）
 
-**有卡**：`CLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`VAEEncode`、`RH_Captioner`、`KSamplerAdvanced`、`ImageScaleDownToSize`、`VAELoader`、`SaveImage`、`VAEDecode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`GetImageSizeAndCount`、`LoadImage`
+**有卡**：`CLIPLoader`、`CLIPTextEncode`、`Text Concatenate`、`UNETLoader`、`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`VAEEncode`、`CR Simple Image Compare`、`Primitive integer [Crystools]`、`Note`、`Text Multiline`、`RH_Captioner`、`KSamplerAdvanced`、`ImageScaleDownToSize`、`VAELoader`、`SaveImage`、`VAEDecode`、`LoraLoaderModelOnly`、`easy anythingIndexSwitch`、`ModelSamplingSD3`
 
 **缺卡**（8）：`CR Simple Image Compare`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Text Concatenate`、`Text Multiline`、`easy anythingIndexSwitch`、`easy anythingIndexSwitch`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
 
 ## 学习发现
 

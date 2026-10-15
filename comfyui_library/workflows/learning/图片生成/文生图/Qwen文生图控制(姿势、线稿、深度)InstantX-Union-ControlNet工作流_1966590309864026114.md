@@ -1,5 +1,5 @@
 ---
-key: Qwen文生图控制(姿势、线稿、深度)InstantX-Union-ControlNet工作流_1966590309864026114.json
+key: 图片生成/文生图/Qwen文生图控制(姿势、线稿、深度)InstantX-Union-ControlNet工作流_1966590309864026114.json
 name: Qwen文生图控制(姿势、线稿、深度)InstantX-Union-ControlNet工作流_1966590309864026114
 type: Unknown Workflow
 status: completed
@@ -16,16 +16,14 @@ parameters: {"cfg": 2.5, "controlnet_strength": 0.75, "denoise": 1, "sampler_nam
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen文生图控制(姿势、线稿、深度)InstantX-Union-ControlNet工作流_1966590309864026114.json
+# 图片生成/文生图/Qwen文生图控制(姿势、线稿、深度)InstantX-Union-ControlNet工作流_1966590309864026114.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen文生图控制(姿势、线稿、深度)InstantX-Union-ControlNet工作流_1966590309864026114.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（25 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
 - `Note`
 - `MarkdownNote`
@@ -35,39 +33,37 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `CLIPLoader`
 - `MarkdownNote`
 - `SetUnionControlNetType`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `MarkdownNote`
 - `MarkdownNote`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `ImageConcanate`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
-- `ControlNetApplySD3` ★核心
-- `UNETLoader` ★核心
+- `ControlNetApplySD3`
+- `UNETLoader`
 - `ControlNetLoader`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `PreviewImage`
 - `AIO_Preprocessor`
 
 ## 关键参数
 
-- `controlnet_strength` = `0.75`
-- `seed` = `297711440235749`
-- `steps` = `8`
 - `cfg` = `2.5`
+- `controlnet_strength` = `0.75`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `297711440235749`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **72%**（18/25）
 
-**有卡**：`CLIPTextEncode`、`ModelSamplingAuraFlow`、`VAELoader`、`EmptySD3LatentImage`、`CLIPLoader`、`SetUnionControlNetType`、`LoraLoaderModelOnly`、`SaveImage`、`ImageConcanate`、`VAEDecode`、`LoadImage`、`ControlNetApplySD3`、`UNETLoader`、`ControlNetLoader`、`KSampler`、`AIO_Preprocessor`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+**有卡**：`CLIPTextEncode`、`ModelSamplingAuraFlow`、`Note`、`MarkdownNote`、`VAELoader`、`EmptySD3LatentImage`、`CLIPLoader`、`SetUnionControlNetType`、`LoraLoaderModelOnly`、`SaveImage`、`ImageConcanate`、`VAEDecode`、`LoadImage`
 
 ## 参数体检
 

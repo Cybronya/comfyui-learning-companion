@@ -1,5 +1,5 @@
 ---
-key: Nunchaku加速+FluxControlnet合集_1910000993843773442.json
+key: 图片生成/文生图/Nunchaku加速+FluxControlnet合集_1910000993843773442.json
 name: Nunchaku加速+FluxControlnet合集_1910000993843773442
 type: Unknown Workflow
 status: completed
@@ -15,57 +15,55 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.7000000000000002, "height
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ConstrainImage|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `ConstrainImage|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `CR Latent Batch Size` 仅有 VAE/Resolution 的通用知识，没有该节点自己的说明, 次要节点 `Get resolution [Crystools]` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# Nunchaku加速+FluxControlnet合集_1910000993843773442.json
+# 图片生成/文生图/Nunchaku加速+FluxControlnet合集_1910000993843773442.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku加速+FluxControlnet合集_1910000993843773442.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（75 个）：
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `NunchakuFluxDiTLoader`
 - `ModelSamplingFlux`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `DifferentialDiffusion`
 - `Note`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `ControlNetLoader`
 - `Reroute`
-- `KSamplerSelect` ★核心
-- `VAEDecode` ★核心
+- `KSamplerSelect`
+- `VAEDecode`
 - `DifferentialDiffusion`
 - `Note`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
 - `Reroute`
 - `ControlNetLoader`
 - `BasicGuider`
 - `FluxGuidance`
-- `VAEEncode` ★核心
-- `NunchakuFluxLoraLoader` ★核心
+- `VAEEncode`
+- `NunchakuFluxLoraLoader`
 - `SetUnionControlNetType`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `AIO_Preprocessor`
 - `RandomNoise`
 - `BasicScheduler`
@@ -76,21 +74,21 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetImageSize`
 - `NunchakuFluxDiTLoader`
 - `NunchakuTextEncoderLoader`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `CR Latent Batch Size`
 - `NunchakuTextEncoderLoader`
 - `FluxGuidance`
 - `BasicGuider`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Reroute`
 - `Reroute`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Image Comparer (rgthree)`
-- `ACN_AdvancedControlNetApplySingle_v2` ★核心
-- `CLIPTextEncode` ★核心
+- `ACN_AdvancedControlNetApplySingle_v2`
+- `CLIPTextEncode`
 - `SaveImage`
 - `LoadImage`
 - `Image Comparer (rgthree)`
@@ -102,20 +100,18 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `controlnet_strength` = `0.7000000000000002`
-- `width` = `952`
-- `height` = `1024`
 - `batch_size` = `1`
+- `controlnet_strength` = `0.7000000000000002`
+- `height` = `1024`
+- `width` = `952`
 
 ## 知识
 
 覆盖率 **81%**（61/75）
 
-**有卡**：`KSamplerSelect`、`NunchakuFluxDiTLoader`、`ModelSamplingFlux`、`SamplerCustomAdvanced`、`DifferentialDiffusion`、`ACN_AdvancedControlNetApplySingle_v2`、`SetUnionControlNetType`、`AIO_Preprocessor`、`ControlNetLoader`、`VAEDecode`、`BasicGuider`、`FluxGuidance`、`VAEEncode`、`NunchakuFluxLoraLoader`、`VAELoader`、`EmptyLatentImage`、`RandomNoise`、`BasicScheduler`、`GetImageSize`、`NunchakuTextEncoderLoader`、`CLIPTextEncode`、`SaveImage`、`LoadImage`
+**有卡**：`KSamplerSelect`、`NunchakuFluxDiTLoader`、`ModelSamplingFlux`、`SamplerCustomAdvanced`、`DifferentialDiffusion`、`Note`、`ACN_AdvancedControlNetApplySingle_v2`、`SetUnionControlNetType`、`AIO_Preprocessor`、`ControlNetLoader`、`Reroute`、`VAEDecode`、`BasicGuider`、`FluxGuidance`、`VAEEncode`、`NunchakuFluxLoraLoader`、`VAELoader`、`EmptyLatentImage`、`RandomNoise`、`BasicScheduler`、`ConstrainImage|pysssss`、`GetImageSize`、`NunchakuTextEncoderLoader`、`CR Latent Batch Size`、`CLIPTextEncode`
 
 **缺卡**（5）：`CR Text`、`ConstrainImage|pysssss`、`ConstrainImage|pysssss`、`CR Latent Batch Size`、`Get resolution [Crystools]`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetLoader、SetUnionControlNetType、ACN_AdvancedControlNetApplySingle_v2
 
 ## 学习发现
 

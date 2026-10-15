@@ -1,5 +1,5 @@
 ---
-key: 文生图-qwen image2.1-t8pe加速版_2106329151098671105.json
+key: 图片生成/文生图/文生图-qwen image2.1-t8pe加速版_2106329151098671105.json
 name: 文生图-qwen image2.1-t8pe加速版_2106329151098671105
 type: Unknown Workflow
 status: completed
@@ -15,25 +15,23 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# 文生图-qwen image2.1-t8pe加速版_2106329151098671105.json
+# 图片生成/文生图/文生图-qwen image2.1-t8pe加速版_2106329151098671105.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图-qwen image2.1-t8pe加速版_2106329151098671105.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（26 个）：
 - `QwenImage21Cache`
 - `CLIPLoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `VAELoader`
-- `KSampler` ★核心
+- `KSampler`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ResolutionSelector`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `MarkdownNote`
 - `Note`
 - `SeedVR2LoadVAEModel`
@@ -53,25 +51,23 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `480862308269817`
-- `steps` = `40`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `480862308269817`
+- `steps` = `40`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **65%**（17/26）
 
-**有卡**：`QwenImage21Cache`、`CLIPLoader`、`EmptyLatentImage`、`VAELoader`、`KSampler`、`VAEDecode`、`ResolutionSelector`、`UNETLoader`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`ImageScaleToTotalPixels`、`INTConstant`、`SaveImage`、`SeedVR2LoadDiTModel`、`TextEncodeQwenImage21`、`QwenPERewriteT8`
+**有卡**：`QwenImage21Cache`、`CLIPLoader`、`EmptyLatentImage`、`ComfySwitchNode`、`VAELoader`、`KSampler`、`easy cleanGpuUsed`、`VAEDecode`、`ResolutionSelector`、`UNETLoader`、`MarkdownNote`、`Note`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`ImageScaleToTotalPixels`、`PreviewImage`、`Image Comparer (rgthree)`
 
 **缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、QwenImage21Cache
 
 ## 学习发现
 

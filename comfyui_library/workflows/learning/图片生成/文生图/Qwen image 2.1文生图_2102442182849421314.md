@@ -1,5 +1,5 @@
 ---
-key: Qwen image 2.1文生图_2102442182849421314.json
+key: 图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json
 name: Qwen image 2.1文生图_2102442182849421314
 type: Unknown Workflow
 status: completed
@@ -14,22 +14,20 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 842850240, "steps": 50, "width": 1024}
 ---
 
-# Qwen image 2.1文生图_2102442182849421314.json
+# 图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1文生图_2102442182849421314.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（16 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `VAEDecode`
+- `EmptyLatentImage`
 - `MarkdownNote`
 - `MarkdownNote`
 - `MarkdownNote`
@@ -42,20 +40,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 ## 关键参数
 
-- `seed` = `842850240`
-- `steps` = `50`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `842850240`
+- `steps` = `50`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **75%**（12/16）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`TextGenerateLTX2Prompt`、`SaveImage`、`Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`MarkdownNote`、`ResolutionSelector`

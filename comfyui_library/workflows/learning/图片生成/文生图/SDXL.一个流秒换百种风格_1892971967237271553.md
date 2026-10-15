@@ -1,5 +1,5 @@
 ---
-key: SDXL.一个流秒换百种风格_1892971967237271553.json
+key: 图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
 name: SDXL.一个流秒换百种风格_1892971967237271553
 type: Image To Image
 status: completed
@@ -15,31 +15,29 @@ parameters: {"cfg": 6, "checkpoint": "dreamshaperXL_v21TurboDPMSDE.safetensors",
 discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `workflow/cn-canny` 仅有 ControlNet 的通用知识，没有该节点自己的说明, 次要节点 `workflow/cn-depth` 仅有 ControlNet 的通用知识，没有该节点自己的说明]
 ---
 
-# SDXL.一个流秒换百种风格_1892971967237271553.json
+# 图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（21 个）：
 - `Reroute`
 - `WD14Tagger|pysssss`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `ControlNetLoader`
 - `OpenposePreprocessor`
-- `ControlNetApply` ★核心
+- `ControlNetApply`
 - `PreviewImage`
 - `PreviewImage`
 - `workflow/cn-depth`
 - `PreviewImage`
 - `LoadImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `VAEEncode` ★核心
+- `VAEDecode`
+- `KSampler`
+- `VAEEncode`
 - `workflow/cn-canny`
 - `ImageScale`
 - `SaveImage`
@@ -50,24 +48,22 @@ discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类�
 
 ## 关键参数
 
+- `cfg` = `6`
 - `checkpoint` = `dreamshaperXL_v21TurboDPMSDE.safetensors`
 - `controlnet_strength` = `0.8200000000000001`
-- `seed` = `570714527648738`
-- `steps` = `20`
-- `cfg` = `6`
+- `denoise` = `0.8`
 - `sampler_name` = `euler_ancestral`
 - `scheduler` = `normal`
-- `denoise` = `0.8`
+- `seed` = `570714527648738`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **62%**（13/21）
 
-**有卡**：`CLIPTextEncode`、`CheckpointLoaderSimple`、`ControlNetLoader`、`OpenposePreprocessor`、`ControlNetApply`、`LoadImage`、`VAEDecode`、`KSampler`、`VAEEncode`、`ImageScale`、`SaveImage`、`SDXLPromptStyler`
+**有卡**：`Reroute`、`WD14Tagger|pysssss`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`ControlNetLoader`、`OpenposePreprocessor`、`ControlNetApply`、`PreviewImage`、`workflow/cn-depth`、`LoadImage`
 
 **缺卡**（3）：`WD14Tagger|pysssss`、`workflow/cn-canny`、`workflow/cn-depth`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、ControlNetLoader、OpenposePreprocessor、ControlNetApply
 
 ## 学习发现
 

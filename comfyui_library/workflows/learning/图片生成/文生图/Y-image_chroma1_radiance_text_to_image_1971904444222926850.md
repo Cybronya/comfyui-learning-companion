@@ -1,5 +1,5 @@
 ---
-key: Y-image_chroma1_radiance_text_to_image_1971904444222926850.json
+key: 图片生成/文生图/Y-image_chroma1_radiance_text_to_image_1971904444222926850.json
 name: Y-image_chroma1_radiance_text_to_image_1971904444222926850
 type: Unknown Workflow
 status: completed
@@ -15,49 +15,45 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `SDXL Resolutions (JPS)` 仅有 Checkpoint/Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# Y-image_chroma1_radiance_text_to_image_1971904444222926850.json
+# 图片生成/文生图/Y-image_chroma1_radiance_text_to_image_1971904444222926850.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Y-image_chroma1_radiance_text_to_image_1971904444222926850.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（15 个）：
 - `CLIPLoader`
 - `T5TokenizerOptions`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `MarkdownNote`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `Note`
 - `SDXL Resolutions (JPS)`
 - `EmptyChromaRadianceLatentImage`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `566931473184963`
-- `steps` = `30`
 - `cfg` = `4`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `566931473184963`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **73%**（11/15）
 
-**有卡**：`CLIPLoader`、`T5TokenizerOptions`、`ModelSamplingAuraFlow`、`VAEDecode`、`VAELoader`、`CLIPTextEncode`、`KSampler`、`EmptyChromaRadianceLatentImage`、`UNETLoader`、`SaveImage`
+**有卡**：`CLIPLoader`、`T5TokenizerOptions`、`ModelSamplingAuraFlow`、`VAEDecode`、`Note`、`MarkdownNote`、`VAELoader`、`CLIPTextEncode`、`KSampler`、`SDXL Resolutions (JPS)`
 
 **缺卡**（1）：`SDXL Resolutions (JPS)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、EmptyChromaRadianceLatentImage、SaveImage
 
 ## 学习发现
 

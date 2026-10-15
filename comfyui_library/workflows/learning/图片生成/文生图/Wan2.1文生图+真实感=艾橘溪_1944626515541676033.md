@@ -1,5 +1,5 @@
 ---
-key: Wan2.1文生图+真实感=艾橘溪_1944626515541676033.json
+key: 图片生成/文生图/Wan2.1文生图+真实感=艾橘溪_1944626515541676033.json
 name: Wan2.1文生图+真实感=艾橘溪_1944626515541676033
 type: Unknown Workflow
 status: completed
@@ -15,49 +15,45 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.1文生图+真实感=艾橘溪_1944626515541676033.json
+# 图片生成/文生图/Wan2.1文生图+真实感=艾橘溪_1944626515541676033.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1文生图+真实感=艾橘溪_1944626515541676033.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（15 个）：
 - `Note`
 - `Int`
 - `Int`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `952511070311462`
-- `steps` = `12`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `952511070311462`
+- `steps` = `12`
 
 ## 知识
 
 覆盖率 **87%**（13/15）
 
-**有卡**：`Int`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`ModelSamplingSD3`、`VAEDecode`、`KSampler`、`SaveImage`
+**有卡**：`Note`、`Int`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`ModelSamplingSD3`、`VAEDecode`、`easy cleanGpuUsed`、`KSampler`
 
 **缺卡**（1）：`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

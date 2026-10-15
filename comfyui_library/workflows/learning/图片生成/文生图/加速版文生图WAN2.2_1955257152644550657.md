@@ -1,5 +1,5 @@
 ---
-key: 加速版文生图WAN2.2_1955257152644550657.json
+key: 图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json
 name: 加速版文生图WAN2.2_1955257152644550657
 type: Unknown Workflow
 status: completed
@@ -14,40 +14,36 @@ missing: []
 parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 486982420453123, "steps": 20}
 ---
 
-# 加速版文生图WAN2.2_1955257152644550657.json
+# 图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（11 个）：
 - `VAELoader`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `ModelSamplingAuraFlow`
 - `MarkdownNote`
-- `KSampler` ★核心
+- `KSampler`
 - `EmptySD3LatentImage`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 
 ## 关键参数
 
-- `seed` = `486982420453123`
-- `steps` = `20`
 - `cfg` = `4`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `486982420453123`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **91%**（10/11）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAEDecode`、`ModelSamplingAuraFlow`、`KSampler`、`EmptySD3LatentImage`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、SaveImage、EmptySD3LatentImage
+**有卡**：`VAELoader`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAEDecode`、`ModelSamplingAuraFlow`、`MarkdownNote`、`KSampler`、`EmptySD3LatentImage`、`SaveImage`

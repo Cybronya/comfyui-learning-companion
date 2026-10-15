@@ -1,5 +1,5 @@
 ---
-key: 一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json
+key: 图片生成/文生图/一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json
 name: 一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCaptionNode` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 次要节点 `TESpeedQwenImage21` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageChooser` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `CR Latent Input Switch` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `CR Seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json
+# 图片生成/文生图/一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/一键运行：Qwen-Image-2.1 文生图 高清放大 反推 图像选择_2105542674064437249.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Process → Output → Other
 
 **节点**（47 个）：
 - `LayerFilter: HDREffects`
@@ -38,7 +36,7 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 - `CR Seed`
 - `Note`
 - `CR Text Input Switch (4 way)`
-- `KSampler (Efficient)` ★核心
+- `KSampler (Efficient)`
 - `SetNode`
 - `VAELoader`
 - `ConditioningZeroOut`
@@ -58,8 +56,8 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 - `CR Latent Input Switch`
 - `LoadImage`
 - `PreviewImage`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `TESpeedQwenImage21`
 - `SplitImageWithAlpha`
 - `easy imageChooser`
@@ -74,22 +72,20 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 
 ## 关键参数
 
-- `seed` = `403214011463433`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `403214011463433`
+- `steps` = `25`
 
 ## 知识
 
 覆盖率 **36%**（17/47）
 
-**有卡**：`VAELoader`、`ConditioningZeroOut`、`CLIPLoader`、`EmptySD3LatentImage`、`VOSR2Upscale`、`VOSR2ModelLoader`、`SaveImage`、`ResolutionSelector`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`SplitImageWithAlpha`、`TextEncodeQwenImage21`、`TextGenerate`
+**有卡**：`LayerFilter: HDREffects`、`SetNode`、`GetNode`、`ImageCaptionNode`、`CR Seed`、`Note`、`CR Text Input Switch (4 way)`、`KSampler (Efficient)`、`VAELoader`
 
 **缺卡**（12）：`CR Text Input Switch (4 way)`、`ImageCaptionNode`、`Label (rgthree)`、`Label (rgthree)`、`LayerFilter: HDREffects`、`TESpeedQwenImage21`、`Text Multiline`、`easy imageChooser`、`easy positive`、`KSampler (Efficient)`、`CR Latent Input Switch`、`CR Seed`
-
-**用到的条目**：TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader
 
 ## 学习发现
 

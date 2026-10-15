@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json
+key: 图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json
 name: Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457
 type: Unknown Workflow
 status: completed
@@ -16,25 +16,23 @@ parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "de
 discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Zoe-DepthMapPreprocessor` 仅有 ControlNet 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json
+# 图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Other
-
 **节点**（25 个）：
 - `ModelSamplingSD3`
 - `Note`
 - `ImageResizeKJ`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `LoadImage`
 - `ImageResizeKJ`
 - `LoadImage`
 - `VHS_VideoCombine`
-- `KSampler` ★核心
+- `KSampler`
 - `WanVaceToVideo`
 - `VHS_LoadVideo`
 - `DWPreprocessor`
@@ -42,8 +40,8 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 - `ImageBlend`
 - `VHS_VideoCombine`
 - `VHS_VideoCombine`
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
 - `Fast Groups Bypasser (rgthree)`
 - `Primitive integer [Crystools]`
 - `INTConstant`
@@ -53,23 +51,21 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 
 ## 关键参数
 
-- `seed` = `7567358653673`
-- `steps` = `4`
 - `cfg` = `1`
+- `checkpoint` = `wan2.2-rapid-mega-aio-v1.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `ipndm`
 - `scheduler` = `sgm_uniform`
-- `denoise` = `1`
-- `checkpoint` = `wan2.2-rapid-mega-aio-v1.safetensors`
+- `seed` = `7567358653673`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **80%**（20/25）
 
-**有卡**：`ModelSamplingSD3`、`ImageResizeKJ`、`VAEDecode`、`CLIPTextEncode`、`LoadImage`、`VHS_VideoCombine`、`KSampler`、`WanVaceToVideo`、`VHS_LoadVideo`、`DWPreprocessor`、`ImageBlend`、`CheckpointLoaderSimple`、`INTConstant`、`WanVideoVACEStartToEndFrame`
+**有卡**：`ModelSamplingSD3`、`Note`、`ImageResizeKJ`、`VAEDecode`、`CLIPTextEncode`、`LoadImage`、`VHS_VideoCombine`、`KSampler`、`WanVaceToVideo`、`VHS_LoadVideo`、`DWPreprocessor`、`Zoe-DepthMapPreprocessor`、`ImageBlend`、`CheckpointLoaderSimple`、`Fast Groups Bypasser (rgthree)`
 
 **缺卡**（3）：`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Zoe-DepthMapPreprocessor`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、ImageResizeKJ、ImageBlend、INTConstant
 
 ## 参数体检
 

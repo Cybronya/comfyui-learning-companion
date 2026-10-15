@@ -1,5 +1,5 @@
 ---
-key: 全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json
+key: 图片生成/文生图/全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json
 name: 全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text, CR Text, CR Text, CR Text]
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# 全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json
+# 图片生成/文生图/全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/全能图片V1 2 & Pro文生图_图生图（0.2元_次）_1992067815244976129.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（57 个）：
 - `LoadImage`
@@ -85,11 +83,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **91%**（52/57）
 
-**有卡**：`LoadImage`、`SaveImage`、`RH_Nano_Banana2_Image2Image`
+**有卡**：`LoadImage`、`SaveImage`、`RH_Nano_Banana2_Image2Image`、`CR Text`、`Fast Groups Bypasser (rgthree)`
 
 **缺卡**（4）：`CR Text`、`CR Text`、`CR Text`、`CR Text`
-
-**用到的条目**：LoadImage、SaveImage、RH_Nano_Banana2_Image2Image、sd15-t2i-basic、sd15-t2i-lora、Text、CS_Preview_Any、easy_multitrackinfooutput
 
 ## 学习发现
 

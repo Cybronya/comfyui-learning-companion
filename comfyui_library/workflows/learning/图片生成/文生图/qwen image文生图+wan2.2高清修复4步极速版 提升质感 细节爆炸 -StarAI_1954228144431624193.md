@@ -1,5 +1,5 @@
 ---
-key: qwen image文生图+wan2.2高清修复4步极速版 提升质感 细节爆炸 -StarAI_1954228144431624193.json
+key: 图片生成/文生图/qwen image文生图+wan2.2高清修复4步极速版 提升质感 细节爆炸 -StarAI_1954228144431624193.json
 name: qwen image文生图+wan2.2高清修复4步极速版 提升质感 细节爆炸 -StarAI_1954228144431624193
 type: Image To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "euler", 
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `ImageListToBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageListToBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# qwen image文生图+wan2.2高清修复4步极速版 提升质感 细节爆炸 -StarAI_1954228144431624193.json
+# 图片生成/文生图/qwen image文生图+wan2.2高清修复4步极速版 提升质感 细节爆炸 -StarAI_1954228144431624193.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen image文生图+wan2.2高清修复4步极速版 提升质感 细节爆炸 -StarAI_1954228144431624193.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（79 个）：
 - `easy textSwitch`
@@ -34,18 +32,18 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `PathchSageAttentionKJ`
 - `SaveImage`
 - `SaveImage`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `CR Text Concatenate`
 - `RH_Prompter`
 - `RHHiddenNodes`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `Textbox`
 - `easy showAnything`
 - `Note`
@@ -59,35 +57,35 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `TTP_Tile_image_size`
 - `TTP_Image_Tile_Batch`
 - `easy imageBatchToImageList`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `ClownsharKSampler_Beta` ★核心
+- `KSampler`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `ClownsharKSampler_Beta`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `ImageScaleToTotalPixels`
 - `UpscaleModelLoader`
 - `ImageUpscaleWithModel`
 - `TTP_Image_Assy`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `ImageListToBatch+`
 - `SaveImage`
 - `ImageScaleToTotalPixels`
 - `UpscaleModelLoader`
 - `easy imageBatchToImageList`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PathchSageAttentionKJ`
 - `LoadImage`
 - `ImageUpscaleWithModel`
-- `VAEEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecodeTiled` ★核心
+- `VAEEncode`
+- `KSampler`
+- `VAEDecodeTiled`
 - `ImageListToBatch+`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
@@ -98,8 +96,8 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `Image Comparer (rgthree)`
 - `Text`
 - `ShowText`
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
 - `Note Plus (mtb)`
 - `Fast Groups Bypasser (rgthree)`
 - `MarkdownNote`
@@ -109,22 +107,20 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `55735268734307`
-- `steps` = `4`
 - `cfg` = `1`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.30000000000000004`
+- `seed` = `55735268734307`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **77%**（61/79）
 
-**有卡**：`EmptySD3LatentImage`、`VAELoader`、`CLIPLoader`、`PathchSageAttentionKJ`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`VAEDecode`、`RH_Prompter`、`RHHiddenNodes`、`Textbox`、`RH_Captioner`、`ModelSamplingAuraFlow`、`LatentUpscaleBy`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`VAEEncode`、`KSampler`、`ClownsharKSampler_Beta`、`ImageScaleToTotalPixels`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`TTP_Image_Assy`、`VAEDecodeTiled`、`LoadImage`、`Text`、`ShowText`
+**有卡**：`easy textSwitch`、`easy int`、`EmptySD3LatentImage`、`VAELoader`、`CLIPLoader`、`PathchSageAttentionKJ`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`VAEDecode`、`CR Text Concatenate`、`RH_Prompter`、`RHHiddenNodes`、`Textbox`、`easy showAnything`、`Note`、`RH_Captioner`、`ModelSamplingAuraFlow`、`LatentUpscaleBy`、`ImpactSwitch`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`easy imageBatchToImageList`、`VAEEncode`、`KSampler`、`ClownsharKSampler_Beta`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageScaleToTotalPixels`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`TTP_Image_Assy`、`VAEDecodeTiled`、`ImageListToBatch+`、`LoadImage`
 
 **缺卡**（11）：`CR Text Concatenate`、`ImageListToBatch+`、`ImageListToBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`Note Plus (mtb)`、`easy imageBatchToImageList`、`easy imageBatchToImageList`、`easy int`、`easy int`、`easy int`、`easy textSwitch`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 

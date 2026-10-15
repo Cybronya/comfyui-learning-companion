@@ -1,5 +1,5 @@
 ---
-key: wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json
+key: 图片生成/文生图/wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json
 name: wan2.1_t2v1_3B提升本地运行速度_1902941440509382658
 type: Unknown Workflow
 status: completed
@@ -14,40 +14,36 @@ missing: []
 parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 82628696717253, "steps": 30}
 ---
 
-# wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json
+# 图片生成/文生图/wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1_t2v1_3B提升本地运行速度_1902941440509382658.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Other
-
 **节点**（11 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VHS_VideoCombine`
 - `ModelSamplingSD3`
 - `TeaCache`
 - `EmptyHunyuanLatentVideo`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 
 ## 关键参数
 
-- `seed` = `82628696717253`
-- `steps` = `30`
 - `cfg` = `6`
+- `denoise` = `1`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `82628696717253`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAEDecode`、`VHS_VideoCombine`、`ModelSamplingSD3`、`TeaCache`、`EmptyHunyuanLatentVideo`、`KSampler`、`VAELoader`、`UNETLoader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo、ModelSamplingSD3

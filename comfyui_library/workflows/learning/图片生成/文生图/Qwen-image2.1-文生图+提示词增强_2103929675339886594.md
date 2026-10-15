@@ -1,5 +1,5 @@
 ---
-key: Qwen-image2.1-文生图+提示词增强_2103929675339886594.json
+key: 图片生成/文生图/Qwen-image2.1-文生图+提示词增强_2103929675339886594.json
 name: Qwen-image2.1-文生图+提示词增强_2103929675339886594
 type: Unknown Workflow
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1920, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen-image2.1-文生图+提示词增强_2103929675339886594.json
+# 图片生成/文生图/Qwen-image2.1-文生图+提示词增强_2103929675339886594.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image2.1-文生图+提示词增强_2103929675339886594.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（23 个）：
 - `PrimitiveStringMultiline`
@@ -36,38 +34,36 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `PreviewAny`
 - `PrimitiveBoolean`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `ModelAttentionBackend`
 - `TextEncodeQwenImage21`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SeedNode`
 - `PrimitiveStringMultiline`
-- `EmptyLatentImage` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `EmptyLatentImage`
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `SaveImageAdvanced`
 - `SaveImage`
 
 ## 关键参数
 
-- `width` = `1080`
-- `height` = `1920`
 - `batch_size` = `1`
-- `seed` = `1062834340239450`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1920`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1062834340239450`
+- `steps` = `8`
+- `width` = `1080`
 
 ## 知识
 
 覆盖率 **74%**（17/23）
 
-**有卡**：`StringConcatenate`、`TextGenerate`、`SeedNode`、`JsonExtractString`、`PrimitiveBoolean`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`ModelAttentionBackend`、`TextEncodeQwenImage21`、`VAEDecode`、`EmptyLatentImage`、`LoraLoaderModelOnly`、`KSampler`、`SaveImageAdvanced`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、UNETLoader
+**有卡**：`PrimitiveStringMultiline`、`ComfySwitchNode`、`StringConcatenate`、`TextGenerate`、`SeedNode`、`JsonExtractString`、`PreviewAny`、`PrimitiveBoolean`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`ModelAttentionBackend`、`TextEncodeQwenImage21`、`VAEDecode`
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: incontextlora-filmstoryboard_1915225224143372289.json
+key: 图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json
 name: incontextlora-filmstoryboard_1915225224143372289
 type: Unknown Workflow
 status: completed
@@ -14,23 +14,21 @@ missing: []
 parameters: {"lora_name": "film-storyboard.safetensors", "strength_clip": 1, "strength_model": 1}
 ---
 
-# incontextlora-filmstoryboard_1915225224143372289.json
+# 图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/incontextlora-filmstoryboard_1915225224143372289.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（19 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `Note`
 - `BasicGuider`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `VAELoader`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `FluxGuidance`
 - `EmptySD3LatentImage`
 - `PrimitiveNode`
@@ -38,9 +36,9 @@ parameters: {"lora_name": "film-storyboard.safetensors", "strength_clip": 1, "st
 - `RandomNoise`
 - `ModelSamplingFlux`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `LoraLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
+- `LoraLoader`
 - `DualCLIPLoader`
 
 **识别到的模式**：lora
@@ -48,13 +46,11 @@ parameters: {"lora_name": "film-storyboard.safetensors", "strength_clip": 1, "st
 ## 关键参数
 
 - `lora_name` = `film-storyboard.safetensors`
-- `strength_model` = `1`
 - `strength_clip` = `1`
+- `strength_model` = `1`
 
 ## 知识
 
 覆盖率 **79%**（15/19）
 
-**有卡**：`VAEDecode`、`BasicGuider`、`KSamplerSelect`、`VAELoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`FluxGuidance`、`EmptySD3LatentImage`、`RandomNoise`、`ModelSamplingFlux`、`SaveImage`、`CLIPTextEncode`、`UNETLoader`、`LoraLoader`、`DualCLIPLoader`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、LoraLoader
+**有卡**：`VAEDecode`、`Note`、`BasicGuider`、`KSamplerSelect`、`VAELoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`FluxGuidance`、`EmptySD3LatentImage`、`PrimitiveNode`、`RandomNoise`、`ModelSamplingFlux`、`SaveImage`

@@ -1,5 +1,5 @@
 ---
-key: Qwen 2.1基础工作流i2v t2v，文生视频图生视频双模式入门方案_2103210530956726273.json
+key: 图片生成/文生图/Qwen 2.1基础工作流i2v t2v，文生视频图生视频双模式入门方案_2103210530956726273.json
 name: Qwen 2.1基础工作流i2v t2v，文生视频图生视频双模式入门方案_2103210530956726273
 type: Text To Image
 status: completed
@@ -16,28 +16,26 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen 2.1基础工作流i2v t2v，文生视频图生视频双模式入门方案_2103210530956726273.json
+# 图片生成/文生图/Qwen 2.1基础工作流i2v t2v，文生视频图生视频双模式入门方案_2103210530956726273.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen 2.1基础工作流i2v t2v，文生视频图生视频双模式入门方案_2103210530956726273.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（57 个）：
 - `ResolutionSelector`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `EmptyLatentImage`
+- `VAEDecode`
+- `KSampler`
 - `Seed (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `EmptyLatentImage`
+- `KSampler`
 - `ComfySwitchNode`
 - `QwenImage21Cache`
 - `SaveImageAdvanced`
@@ -51,34 +49,34 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 - `LoadImage`
 - `Fast Groups Bypasser (rgthree)`
 - `TextEncodeQwenImage21`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -87,25 +85,23 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **84%**（48/57）
 
-**有卡**：`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`SaveImageAdvanced`、`LoadImage`、`TextEncodeQwenImage21`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`Seed (rgthree)`、`ComfySwitchNode`、`QwenImage21Cache`、`SaveImageAdvanced`、`LoadImage`、`TextEncodeQwenImage21`、`Fast Groups Bypasser (rgthree)`、`SaveImage`、`孤海注释`、`LoraLoaderModelOnly`
 
 **缺卡**（2）：`Seed (rgthree)`、`Seed (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen-Image-Edit三视图Character_Sheet_1985126473839366145.json
+key: 图片生成/文生图/Qwen-Image-Edit三视图Character_Sheet_1985126473839366145.json
 name: Qwen-Image-Edit三视图Character_Sheet_1985126473839366145
 type: Image To Image
 status: completed
@@ -16,25 +16,23 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen-Image-Edit三视图Character_Sheet_1985126473839366145.json
+# 图片生成/文生图/Qwen-Image-Edit三视图Character_Sheet_1985126473839366145.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit三视图Character_Sheet_1985126473839366145.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Sampling → Decode → Process → Output → Other
-
 **节点**（62 个）：
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `MarkdownNote`
 - `ImageScaleToTotalPixels`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
 - `TextEncodeQwenImageEditPlus`
@@ -42,19 +40,19 @@ discoveries: [次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点�
 - `MarkdownNote`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `CLIPLoader`
 - `PreviewImage`
 - `LayerUtility: CropByMask V2`
 - `LayerUtility: CropByMask V2`
 - `ImageUpscaleWithModel`
 - `ImageUpscaleWithModel`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `PreviewImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
@@ -74,8 +72,8 @@ discoveries: [次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点�
 - `ImageConcanate`
 - `MarkdownNote`
 - `MarkdownNote`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `LoadImage`
 - `LayerMask: RemBgUltra`
 - `MaskPreview`
@@ -92,22 +90,20 @@ discoveries: [次要节点 `LayerMask: RemBgUltra` 知识库中没有该节点�
 
 ## 关键参数
 
-- `seed` = `348546921967979`
-- `steps` = `4`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `348546921967979`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **66%**（41/62）
 
-**有卡**：`VAEEncode`、`ImageScaleToTotalPixels`、`TextEncodeQwenImageEditPlus`、`KSampler`、`CFGNorm`、`ModelSamplingAuraFlow`、`CLIPLoader`、`ImageUpscaleWithModel`、`VAEDecode`、`SaveImage`、`INTConstant`、`UpscaleModelLoader`、`ImageConcanate`、`LoraLoaderModelOnly`、`UNETLoader`、`LoadImage`、`MaskPreview`、`VAELoader`
+**有卡**：`VAEEncode`、`MarkdownNote`、`ImageScaleToTotalPixels`、`TextEncodeQwenImageEditPlus`、`KSampler`、`CFGNorm`、`ModelSamplingAuraFlow`、`CLIPLoader`、`PreviewImage`、`LayerUtility: CropByMask V2`、`ImageUpscaleWithModel`、`VAEDecode`、`SaveImage`、`INTConstant`、`UpscaleModelLoader`、`ImageConcanate`
 
 **缺卡**（8）：`LayerMask: RemBgUltra`、`LayerMask: RemBgUltra`、`LayerMask: RemBgUltra`、`LayerMask: RemBgUltra`、`LayerUtility: CropByMask V2`、`LayerUtility: CropByMask V2`、`LayerUtility: CropByMask V2`、`LayerUtility: CropByMask V2`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、UNETLoader、CFGNorm
 
 ## 参数体检
 

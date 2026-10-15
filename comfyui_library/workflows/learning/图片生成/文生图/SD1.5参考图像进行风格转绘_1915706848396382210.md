@@ -1,5 +1,5 @@
 ---
-key: SD1.5参考图像进行风格转绘_1915706848396382210.json
+key: 图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json
 name: SD1.5参考图像进行风格转绘_1915706848396382210
 type: Unknown Workflow
 status: completed
@@ -15,65 +15,61 @@ parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "majicmixLux_v3.safetensor
 discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `LoraLoader|pysssss` 仅有 LoRA 的通用知识，没有该节点自己的说明, 核心节点 `easy ipadapterApply` 仅有 IPAdapter 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# SD1.5参考图像进行风格转绘_1915706848396382210.json
+# 图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SD1.5参考图像进行风格转绘_1915706848396382210.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（23 个）：
-- `KSampler` ★核心
-- `BNK_CLIPTextEncodeAdvanced` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `BNK_CLIPTextEncodeAdvanced`
+- `EmptyLatentImage`
 - `LoadImage`
-- `BNK_CLIPTextEncodeAdvanced` ★核心
+- `BNK_CLIPTextEncodeAdvanced`
 - `WD14Tagger|pysssss`
 - `ImageResize+`
 - `LoadImage`
-- `LoraLoader|pysssss` ★核心
+- `LoraLoader|pysssss`
 - `AIO_Preprocessor`
 - `ControlNetLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
 - `SaveImage`
 - `AIO_Preprocessor`
 - `ControlNetLoader`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `Image Comparer (rgthree)`
-- `easy ipadapterApply` ★核心
+- `easy ipadapterApply`
 - `PreviewImage`
 - `Note`
-- `CheckpointLoaderSimple` ★核心
-- `ControlNetApplySD3` ★核心
+- `CheckpointLoaderSimple`
+- `ControlNetApplySD3`
 
 ## 关键参数
 
-- `seed` = `940742076856634`
-- `steps` = `25`
+- `batch_size` = `1`
 - `cfg` = `7`
+- `checkpoint` = `majicmixLux_v3.safetensors`
+- `controlnet_strength` = `0.7000000000000002`
+- `denoise` = `1`
+- `height` = `1024`
+- `lora_name` = `FLUX_NIJI风格_暖光古风推文_F.1_v2.safetensors`
 - `sampler_name` = `dpmpp_2m`
 - `scheduler` = `karras`
-- `denoise` = `1`
-- `width` = `768`
-- `height` = `1024`
-- `batch_size` = `1`
-- `lora_name` = `FLUX_NIJI风格_暖光古风推文_F.1_v2.safetensors`
-- `strength_model` = `0.8000000000000002`
+- `seed` = `940742076856634`
+- `steps` = `25`
 - `strength_clip` = `1`
-- `controlnet_strength` = `0.7000000000000002`
-- `checkpoint` = `majicmixLux_v3.safetensors`
+- `strength_model` = `0.8000000000000002`
+- `width` = `768`
 
 ## 知识
 
 覆盖率 **65%**（15/23）
 
-**有卡**：`KSampler`、`BNK_CLIPTextEncodeAdvanced`、`EmptyLatentImage`、`LoadImage`、`AIO_Preprocessor`、`ControlNetLoader`、`VAEDecode`、`SaveImage`、`ControlNetApplySD3`、`CheckpointLoaderSimple`
+**有卡**：`KSampler`、`BNK_CLIPTextEncodeAdvanced`、`EmptyLatentImage`、`LoadImage`、`WD14Tagger|pysssss`、`ImageResize+`、`LoraLoader|pysssss`、`AIO_Preprocessor`、`ControlNetLoader`、`VAEDecode`、`PreviewImage`、`SaveImage`
 
 **缺卡**（4）：`WD14Tagger|pysssss`、`LoraLoader|pysssss`、`easy ipadapterApply`、`ImageResize+`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、EmptyLatentImage、LoadImage、ControlNetLoader、ControlNetApplySD3、BNK_CLIPTextEncodeAdvanced
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: sd1.5文生图换脸_1894364757380497410.json
+key: 图片生成/文生图/sd1.5文生图换脸_1894364757380497410.json
 name: sd1.5文生图换脸_1894364757380497410
 type: Unknown Workflow
 status: completed
@@ -15,22 +15,20 @@ parameters: {"checkpoint": "majicmixRealistic_v7.safetensors"}
 discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
-# sd1.5文生图换脸_1894364757380497410.json
+# 图片生成/文生图/sd1.5文生图换脸_1894364757380497410.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/sd1.5文生图换脸_1894364757380497410.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Control → Output → Other
 
 **节点**（13 个）：
 - `UltralyticsDetectorProvider`
 - `SAMLoader`
 - `IPAdapterUnifiedLoaderFaceID`
 - `IPAdapterFaceID`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `ColorMatch`
 - `PreviewImage`
 - `SaveImage`
@@ -46,11 +44,9 @@ discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类�
 
 覆盖率 **85%**（11/13）
 
-**有卡**：`UltralyticsDetectorProvider`、`SAMLoader`、`IPAdapterUnifiedLoaderFaceID`、`IPAdapterFaceID`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`ColorMatch`、`SaveImage`、`LoadImage`、`FaceDetailer`
+**有卡**：`UltralyticsDetectorProvider`、`SAMLoader`、`IPAdapterUnifiedLoaderFaceID`、`IPAdapterFaceID`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`ColorMatch`、`PreviewImage`、`SaveImage`、`LoadImage`
 
 **缺卡**（1）：`WD14Tagger|pysssss`
-
-**用到的条目**：CheckpointLoaderSimple、CLIPTextEncode、LoadImage、IPAdapterFaceID、IPAdapterUnifiedLoaderFaceID、SaveImage、FaceDetailer、SAMLoader
 
 ## 学习发现
 

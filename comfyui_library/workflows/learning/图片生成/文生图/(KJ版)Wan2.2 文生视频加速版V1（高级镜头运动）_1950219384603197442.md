@@ -1,5 +1,5 @@
 ---
-key: (KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json
+key: 图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json
 name: (KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text]
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# (KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json
+# 图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/(KJ版)Wan2.2 文生视频加速版V1（高级镜头运动）_1950219384603197442.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Process → Other
 
 **节点**（137 个）：
 - `Note`
@@ -34,9 +32,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `PrimitiveNode`
 - `WanVideoVAELoader`
 - `LoadWanVideoT5TextEncoder`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoEmptyEmbeds`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `CreateCFGScheduleFloatList`
 - `INTConstant`
 - `INTConstant`
@@ -68,9 +66,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `WanVideoBlockSwap`
 - `WanVideoVAELoader`
 - `LoadWanVideoT5TextEncoder`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoEmptyEmbeds`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `CreateCFGScheduleFloatList`
 - `INTConstant`
 - `INTConstant`
@@ -103,9 +101,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `PrimitiveNode`
 - `WanVideoVAELoader`
 - `LoadWanVideoT5TextEncoder`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoEmptyEmbeds`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `CreateCFGScheduleFloatList`
 - `INTConstant`
 - `INTConstant`
@@ -136,9 +134,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `PrimitiveNode`
 - `WanVideoVAELoader`
 - `LoadWanVideoT5TextEncoder`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoEmptyEmbeds`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `CreateCFGScheduleFloatList`
 - `INTConstant`
 - `INTConstant`
@@ -165,11 +163,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 覆盖率 **79%**（108/137）
 
-**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoSampler`、`WanVideoEmptyEmbeds`、`CreateCFGScheduleFloatList`、`INTConstant`、`JWInteger`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`VHS_VideoCombine`、`WanVideoTextEncode`
+**有卡**：`Note`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoBlockSwap`、`PrimitiveNode`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoSampler`、`WanVideoEmptyEmbeds`、`CreateCFGScheduleFloatList`、`INTConstant`、`JWInteger`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`VHS_VideoCombine`、`WanVideoTextEncode`、`Fast Groups Bypasser (rgthree)`、`CR Prompt Text`
 
 **缺卡**（4）：`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
+key: 图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
 name: sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522
 type: Unknown Workflow
 status: completed
@@ -16,46 +16,42 @@ parameters: {"cfg": 1, "checkpoint": "wan2.2-t2v-rapid-aio-v10-nsfw.safetensors"
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
+# 图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/sim▶Wan2.2-AllInOne-V10-【文生图】_1965952460185579522.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（11 个）：
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `INTConstant`
 - `INTConstant`
 - `ModelSamplingSD3`
-- `KSampler` ★核心
+- `KSampler`
 - `LayerUtility: PurgeVRAM`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 
 ## 关键参数
 
-- `checkpoint` = `wan2.2-t2v-rapid-aio-v10-nsfw.safetensors`
-- `seed` = `149675424748945`
-- `steps` = `4`
 - `cfg` = `1`
+- `checkpoint` = `wan2.2-t2v-rapid-aio-v10-nsfw.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `euler_ancestral`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `149675424748945`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **91%**（10/11）
 
-**有卡**：`VAEDecode`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`INTConstant`、`ModelSamplingSD3`、`KSampler`、`SaveImage`、`EmptyHunyuanLatentVideo`
+**有卡**：`VAEDecode`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`INTConstant`、`ModelSamplingSD3`、`KSampler`、`LayerUtility: PurgeVRAM`、`SaveImage`
 
 **缺卡**（1）：`LayerUtility: PurgeVRAM`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyHunyuanLatentVideo、SaveImage、INTConstant、ModelSamplingSD3
 
 ## 参数体检
 

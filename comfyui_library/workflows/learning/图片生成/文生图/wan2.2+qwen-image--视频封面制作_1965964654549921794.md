@@ -1,5 +1,5 @@
 ---
-key: wan2.2+qwen-image--视频封面制作_1965964654549921794.json
+key: 图片生成/文生图/wan2.2+qwen-image--视频封面制作_1965964654549921794.json
 name: wan2.2+qwen-image--视频封面制作_1965964654549921794
 type: Image To Image
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 3.5, "denoise": 0.8500000000000002, "sampler_name": "euler",
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# wan2.2+qwen-image--视频封面制作_1965964654549921794.json
+# 图片生成/文生图/wan2.2+qwen-image--视频封面制作_1965964654549921794.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2+qwen-image--视频封面制作_1965964654549921794.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（73 个）：
 - `JjkText`
@@ -48,25 +46,25 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `TextCombinerTwo`
 - `TextCombinerTwo`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `VAELoader`
 - `CLIPLoader`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `RH_LLMAPI_NODE`
 - `ImpactSwitch`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `LayerUtility: PurgeVRAM V2`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `easy showAnything`
 - `TextCombinerSix`
 - `TextCombinerSix`
@@ -75,25 +73,25 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `JjkText`
 - `easy showAnything`
 - `easy showAnything`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
 - `JjkText`
 - `JjkText`
 - `PreviewImage`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `SeedVR2BlockSwap`
 - `SaveImage`
 - `SaveImage`
 - `JjkText`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `EmptySD3LatentImage`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `VAEEncode` ★核心
+- `VAEDecode`
+- `VAEEncode`
 - `easy showAnything`
-- `KSampler` ★核心
+- `KSampler`
 - `easy seed`
 - `JjkText`
 - `JjkText`
@@ -102,22 +100,20 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `756467682942260`
-- `steps` = `20`
 - `cfg` = `3.5`
+- `denoise` = `0.8500000000000002`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `0.8500000000000002`
+- `seed` = `756467682942260`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **64%**（47/73）
 
-**有卡**：`CLIPLoader`、`EmptySD3LatentImage`、`LimitNumber`、`LoadImage`、`TextCombinerTwo`、`TextCombinerSix`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAELoader`、`VAEDecode`、`UNETLoader`、`RH_LLMAPI_NODE`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`SeedVR2`、`KSampler`、`SaveImage`、`SeedVR2BlockSwap`、`VAEEncode`
+**有卡**：`JjkText`、`LayerUtility: PurgeVRAM`、`CLIPLoader`、`EmptySD3LatentImage`、`LimitNumber`、`Note`、`LoadImage`、`PrimitiveInt`、`TextCombinerTwo`、`TextCombinerSix`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAELoader`、`VAEDecode`、`UNETLoader`、`RH_LLMAPI_NODE`、`ImpactSwitch`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`LayerUtility: PurgeVRAM V2`、`easy showAnything`、`SeedVR2`
 
 **缺卡**（3）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM V2`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: qwen-Image -nunchaku+lora_1963114884189884418.json
+key: 图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json
 name: qwen-Image -nunchaku+lora_1963114884189884418
 type: Unknown Workflow
 status: completed
@@ -16,43 +16,39 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# qwen-Image -nunchaku+lora_1963114884189884418.json
+# 图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen-Image -nunchaku+lora_1963114884189884418.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（11 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `VAELoader`
 - `ModelSamplingAuraFlow`
 - `NunchakuQwenImageDiTLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `NunchakuQwenImageLoraLoader1` ★核心
+- `CLIPTextEncode`
+- `KSampler`
+- `NunchakuQwenImageLoraLoader1`
 
 ## 关键参数
 
-- `seed` = `1008056321523755`
-- `steps` = `8`
 - `cfg` = `2.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1008056321523755`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`NunchakuQwenImageDiTLoader`、`VAEDecode`、`SaveImage`、`EmptySD3LatentImage`、`KSampler`、`NunchakuQwenImageLoraLoader1`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、NunchakuQwenImageLoraLoader1、SaveImage、EmptySD3LatentImage
 
 ## 参数体检
 

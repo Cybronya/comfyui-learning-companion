@@ -1,5 +1,5 @@
 ---
-key: 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
+key: 图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
 name: 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769
 type: Image To Image
 status: completed
@@ -16,141 +16,139 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "sim
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
+# 图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/降维打击！Wan2.1竟能生图？文生图_图生图_扩图_重绘_放大_姿势控制_深度控制_简笔画上色全攻_1945383537488928769.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（138 个）：
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
+- `LoraLoaderModelOnly`
+- `VAEDecode`
 - `ModelSamplingSD3`
 - `PreviewImage`
 - `SaveImage`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `CLIPTextEncode`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `TrimVideoLatent`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `EmptyHunyuanLatentVideo`
 - `SaveImage`
 - `PreviewImage`
 - `VAELoader`
-- `VAEEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `VAEEncode`
+- `CLIPTextEncode`
+- `KSampler`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `ImageResizeKJv2`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `SaveImage`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ImagePadForOutpaint`
 - `WanVaceToVideo`
 - `RepeatImageBatch`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `PreviewImage`
 - `TrimVideoLatent`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `SaveImage`
 - `WanVaceToVideo`
 - `RepeatImageBatch`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LoadImage`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `PreviewImage`
 - `TrimVideoLatent`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `SaveImage`
 - `RepeatImageBatch`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `TrimVideoLatent`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `SaveImage`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `WanVaceToVideo`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `RepeatImageBatch`
 - `WanVaceToVideo`
 - `GetImageRangeFromBatch`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `TrimVideoLatent`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `SaveImage`
 - `GetImageRangeFromBatch`
 - `LoadImage`
 - `WanVaceToVideo`
 - `RepeatImageBatch`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `KSampler` ★核心
+- `KSampler`
 - `TrimVideoLatent`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `SaveImage`
 - `GetImageRangeFromBatch`
 - `WanVaceToVideo`
 - `RepeatImageBatch`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `AIO_Preprocessor`
 - `AIO_Preprocessor`
 - `SaveImage`
@@ -168,22 +166,20 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `666`
-- `steps` = `6`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `666`
+- `steps` = `6`
 
 ## 知识
 
 覆盖率 **93%**（128/138）
 
-**有卡**：`VAEDecode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`SaveImage`、`CLIPLoader`、`UNETLoader`、`VAELoader`、`KSampler`、`CLIPTextEncode`、`TrimVideoLatent`、`EmptyHunyuanLatentVideo`、`VAEEncode`、`ImageResizeKJv2`、`LoadImage`、`ImagePadForOutpaint`、`WanVaceToVideo`、`RepeatImageBatch`、`GetImageRangeFromBatch`、`AIO_Preprocessor`
+**有卡**：`VAEDecode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`PreviewImage`、`SaveImage`、`CLIPLoader`、`UNETLoader`、`VAELoader`、`KSampler`、`CLIPTextEncode`、`TrimVideoLatent`、`EmptyHunyuanLatentVideo`、`VAEEncode`、`ImageResizeKJv2`、`LoadImage`、`ImagePadForOutpaint`、`WanVaceToVideo`、`RepeatImageBatch`、`GetImageRangeFromBatch`、`AIO_Preprocessor`
 
 **缺卡**（1）：`Label (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 

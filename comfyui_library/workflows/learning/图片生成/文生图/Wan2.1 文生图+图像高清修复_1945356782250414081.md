@@ -1,5 +1,5 @@
 ---
-key: Wan2.1 文生图+图像高清修复_1945356782250414081.json
+key: 图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json
 name: Wan2.1 文生图+图像高清修复_1945356782250414081
 type: Text To Image
 status: completed
@@ -15,29 +15,27 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.10000000000000002, "height"
 discoveries: [次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.1 文生图+图像高清修复_1945356782250414081.json
+# 图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1 文生图+图像高清修复_1945356782250414081.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（23 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `MarkdownNote`
 - `MarkdownNote`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
+- `EmptyLatentImage`
+- `CLIPTextEncode`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `LoadImage`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ImageScale`
 - `LayerUtility: ImageScaleRestore V2`
 - `UpscaleModelLoader`
@@ -52,25 +50,23 @@ discoveries: [次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1920`
 - `batch_size` = `1`
-- `seed` = `1234571656`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.10000000000000002`
+- `height` = `1920`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `0.10000000000000002`
+- `seed` = `1234571656`
+- `steps` = `10`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **78%**（18/23）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`EmptyLatentImage`、`SaveImage`、`VAEDecode`、`KSampler`、`LoadImage`、`VAEEncode`、`ImageScale`、`UpscaleModelLoader`、`JJC_JoyCaption`、`ImageUpscaleWithModel`、`RH_Translator`、`VAELoader`
+**有卡**：`UNETLoader`、`CLIPLoader`、`MarkdownNote`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`EmptyLatentImage`、`SaveImage`、`VAEDecode`、`KSampler`、`LoadImage`、`VAEEncode`、`ImageScale`、`LayerUtility: ImageScaleRestore V2`、`UpscaleModelLoader`、`ShowText|pysssss`
 
 **缺卡**（1）：`LayerUtility: ImageScaleRestore V2`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 学习发现
 

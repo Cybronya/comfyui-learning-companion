@@ -1,5 +1,5 @@
 ---
-key: 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
+key: 图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
 name: 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658
 type: Text To Image
 status: completed
@@ -16,68 +16,64 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 768, "sampler_na
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
+# 图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【数字人_文生图生视频】Wan2.2 S2V 文生图生视频工作流_1966350469507526658.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（31 个）：
 - `EnhancedLoadDiffusionModel`
 - `AudioEncoderLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `AudioEncoderEncode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `WanSoundImageToVideo`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `Note`
 - `PrimitiveNode`
 - `PrimitiveNode`
 - `PrimitiveNode`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
+- `VAEDecode`
+- `EmptyLatentImage`
+- `UNETLoader`
 - `DualCLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `KSamplerAdvanced` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `KSamplerAdvanced`
+- `CLIPTextEncode`
 - `SaveImage`
 - `VAELoader`
 - `LoadAudio`
 - `VHS_VideoCombine`
 - `Fast Groups Bypasser (rgthree)`
 - `PrimitiveNode`
-- `KSampler` ★核心
+- `KSampler`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `768`
 - `batch_size` = `1`
-- `seed` = `1094293246584357`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `768`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1094293246584357`
+- `steps` = `8`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **77%**（24/31）
 
-**有卡**：`EnhancedLoadDiffusionModel`、`AudioEncoderLoader`、`CLIPLoader`、`CLIPTextEncode`、`AudioEncoderEncode`、`LoraLoaderModelOnly`、`WanSoundImageToVideo`、`VAEDecode`、`VAELoader`、`EmptyLatentImage`、`UNETLoader`、`DualCLIPLoader`、`KSamplerAdvanced`、`SaveImage`、`LoadAudio`、`VHS_VideoCombine`、`KSampler`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader
+**有卡**：`EnhancedLoadDiffusionModel`、`AudioEncoderLoader`、`CLIPLoader`、`CLIPTextEncode`、`AudioEncoderEncode`、`LoraLoaderModelOnly`、`WanSoundImageToVideo`、`VAEDecode`、`Note`、`PrimitiveNode`、`VAELoader`、`EmptyLatentImage`、`UNETLoader`、`DualCLIPLoader`、`KSamplerAdvanced`
 
 ## 参数体检
 

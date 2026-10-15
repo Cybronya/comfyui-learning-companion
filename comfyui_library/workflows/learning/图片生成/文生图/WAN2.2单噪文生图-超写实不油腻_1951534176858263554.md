@@ -1,5 +1,5 @@
 ---
-key: WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
+key: 图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
 name: WAN2.2单噪文生图-超写实不油腻_1951534176858263554
 type: Text To Image
 status: completed
@@ -15,17 +15,15 @@ parameters: {"batch_size": 1, "cfg": 0.8, "denoise": 0.8500000000000002, "height
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
+# 图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.2单噪文生图-超写实不油腻_1951534176858263554.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（24 个）：
 - `PathchSageAttentionKJ`
-- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF`
 - `Lora Loader Stack (rgthree)`
 - `SaveImage`
 - `ModelSamplingSD3`
@@ -35,43 +33,41 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `easy cleanGpuUsed`
 - `easy clearCacheAll`
 - `WanVideoNAG`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `PreviewImage`
 - `MarkdownNote`
 - `Label (rgthree)`
-- `KSampler` ★核心
+- `KSampler`
 - `MarkdownNote`
 - `MarkdownNote`
 - `Label (rgthree)`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Note Plus (mtb)`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `seed` = `994727085451482`
-- `steps` = `10`
+- `batch_size` = `1`
 - `cfg` = `0.8`
+- `denoise` = `0.8500000000000002`
+- `height` = `1088`
 - `sampler_name` = `euler`
 - `scheduler` = `bong_tangent`
-- `denoise` = `0.8500000000000002`
+- `seed` = `994727085451482`
+- `steps` = `10`
 - `width` = `1920`
-- `height` = `1088`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **58%**（14/24）
 
-**有卡**：`PathchSageAttentionKJ`、`UnetLoaderGGUF`、`SaveImage`、`ModelSamplingSD3`、`VAELoader`、`FastLaplacianSharpen`、`FastFilmGrain`、`WanVideoNAG`、`VAEDecode`、`CLIPTextEncode`、`KSampler`、`CLIPLoader`、`EmptyLatentImage`
+**有卡**：`PathchSageAttentionKJ`、`UnetLoaderGGUF`、`Lora Loader Stack (rgthree)`、`SaveImage`、`ModelSamplingSD3`、`VAELoader`、`FastLaplacianSharpen`、`FastFilmGrain`、`easy cleanGpuUsed`、`easy clearCacheAll`、`WanVideoNAG`、`VAEDecode`、`CLIPTextEncode`、`PreviewImage`
 
 **缺卡**（6）：`Label (rgthree)`、`Label (rgthree)`、`Note Plus (mtb)`、`easy cleanGpuUsed`、`easy clearCacheAll`、`Lora Loader Stack (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、SaveImage、FastFilmGrain
 
 ## 学习发现
 

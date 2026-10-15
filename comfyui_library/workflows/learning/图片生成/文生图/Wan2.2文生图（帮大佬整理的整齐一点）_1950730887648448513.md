@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图（帮大佬整理的整齐一点）_1950730887648448513.json
+key: 图片生成/文生图/Wan2.2文生图（帮大佬整理的整齐一点）_1950730887648448513.json
 name: Wan2.2文生图（帮大佬整理的整齐一点）_1950730887648448513
 type: Image To Image
 status: completed
@@ -15,33 +15,31 @@ parameters: {"cfg": 20, "denoise": "normal", "sampler_name": 3.5, "scheduler": "
 discoveries: [次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2文生图（帮大佬整理的整齐一点）_1950730887648448513.json
+# 图片生成/文生图/Wan2.2文生图（帮大佬整理的整齐一点）_1950730887648448513.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图（帮大佬整理的整齐一点）_1950730887648448513.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（56 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `SaveAnimatedWEBP`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `easy cleanGpuUsed`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ImageScaleToTotalPixels`
 - `ImageUpscaleWithModel`
 - `UpscaleModelLoader`
@@ -51,9 +49,9 @@ discoveries: [次要节点 `easy anythingIndexSwitch` 知识库中没有该节�
 - `ImageListToImageBatch`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `TTP_Image_Assy`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `CLIPLoader`
 - `easy showAnything`
@@ -66,12 +64,12 @@ discoveries: [次要节点 `easy anythingIndexSwitch` 知识库中没有该节�
 - `easy anythingIndexSwitch`
 - `Image Comparer (rgthree)`
 - `RH_Captioner`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `JjkText`
 - `EmptyHunyuanLatentVideo`
 - `JjkText`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `RH_Prompter`
 - `LoadImage`
 - `Note`
@@ -85,22 +83,20 @@ discoveries: [次要节点 `easy anythingIndexSwitch` 知识库中没有该节�
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `20`
+- `denoise` = `normal`
 - `sampler_name` = `3.5`
 - `scheduler` = `euler`
-- `denoise` = `normal`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **66%**（37/56）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`VAEDecode`、`SaveAnimatedWEBP`、`LoraLoaderModelOnly`、`VAEEncode`、`ImageScaleToTotalPixels`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`ImageListToImageBatch`、`TTP_Image_Assy`、`KSampler`、`SaveImage`、`TextCombinerTwo`、`RH_Translator`、`RH_Captioner`、`EmptyHunyuanLatentVideo`、`KSamplerAdvanced`、`RH_Prompter`、`LoadImage`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`VAEDecode`、`easy cleanGpuUsed`、`SaveAnimatedWEBP`、`LoraLoaderModelOnly`、`VAEEncode`、`ImageScaleToTotalPixels`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`easy imageBatchToImageList`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`ImageListToImageBatch`、`TTP_Image_Assy`、`KSampler`、`SaveImage`、`easy showAnything`、`TextCombinerTwo`
 
 **缺卡**（6）：`easy anythingIndexSwitch`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageBatchToImageList`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 学习发现
 

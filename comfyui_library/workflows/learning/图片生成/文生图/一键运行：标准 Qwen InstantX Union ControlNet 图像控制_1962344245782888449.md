@@ -1,5 +1,5 @@
 ---
-key: 一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json
+key: 图片生成/文生图/一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json
 name: 一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 2.5, "controlnet_strength": 1, "denoise": 0.5000000000000001
 discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json
+# 图片生成/文生图/一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Control → Sampling → Output → Other
 
 **节点**（27 个）：
 - `LayerFilter: HDREffects`
@@ -30,47 +28,45 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `Anything Everywhere`
 - `SetUnionControlNetType`
 - `Seed Everywhere`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
 - `Prompts Everywhere`
 - `AIO_Preprocessor`
 - `PreviewImage`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `LoadImage`
-- `LoraLoaderModelOnly` ★核心
-- `VAEEncode` ★核心
+- `LoraLoaderModelOnly`
+- `VAEEncode`
 - `ControlNetLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `StringConstantMultiline`
 - `PreviewImage`
 - `VAELoader`
 - `PreviewImage`
-- `KSampler (Efficient)` ★核心
-- `KSampler (Efficient)` ★核心
+- `KSampler (Efficient)`
+- `KSampler (Efficient)`
 - `SaveImage`
 - `MarkdownNote`
 
 ## 关键参数
 
-- `controlnet_strength` = `1`
-- `seed` = `451677997825500`
-- `steps` = `20`
 - `cfg` = `2.5`
+- `controlnet_strength` = `1`
+- `denoise` = `0.5000000000000001`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.5000000000000001`
+- `seed` = `451677997825500`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **56%**（15/27）
 
-**有卡**：`SetUnionControlNetType`、`UNETLoader`、`ModelSamplingAuraFlow`、`AIO_Preprocessor`、`ControlNetApplySD3`、`LoadImage`、`LoraLoaderModelOnly`、`VAEEncode`、`ControlNetLoader`、`CLIPLoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`StringConstantMultiline`、`VAELoader`、`SaveImage`
+**有卡**：`LayerFilter: HDREffects`、`Anything Everywhere`、`SetUnionControlNetType`、`Seed Everywhere`、`UNETLoader`、`ModelSamplingAuraFlow`、`Prompts Everywhere`、`AIO_Preprocessor`、`PreviewImage`、`ControlNetApplySD3`、`LoadImage`、`LoraLoaderModelOnly`、`VAEEncode`
 
 **缺卡**（5）：`LayerFilter: HDREffects`、`KSampler (Efficient)`、`KSampler (Efficient)`、`Prompts Everywhere`、`Seed Everywhere`
-
-**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader、ControlNetLoader
 
 ## 学习发现
 

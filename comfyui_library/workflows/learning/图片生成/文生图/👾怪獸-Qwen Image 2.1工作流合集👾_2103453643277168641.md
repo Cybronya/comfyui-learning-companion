@@ -1,5 +1,5 @@
 ---
-key: 👾怪獸-Qwen Image 2.1工作流合集👾_2103453643277168641.json
+key: 图片生成/文生图/👾怪獸-Qwen Image 2.1工作流合集👾_2103453643277168641.json
 name: 👾怪獸-Qwen Image 2.1工作流合集👾_2103453643277168641
 type: Unknown Workflow
 status: completed
@@ -16,20 +16,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 👾怪獸-Qwen Image 2.1工作流合集👾_2103453643277168641.json
+# 图片生成/文生图/👾怪獸-Qwen Image 2.1工作流合集👾_2103453643277168641.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/👾怪獸-Qwen Image 2.1工作流合集👾_2103453643277168641.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（69 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy showAnything`
 - `JjkText`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `ComfySwitchNode`
 - `GetNode`
@@ -43,25 +41,25 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `BatchImagesNode`
 - `GetNode`
 - `PreviewAny`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `MarkdownNote`
 - `LoadImage`
 - `Image Comparer (rgthree)`
 - `GetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `TextEncodeQwenImage21`
 - `ShowText|pysssss`
 - `LoadImage`
 - `ResolutionSelector`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `TextEncodeQwenImage21`
 - `TextGenerateLTX2Prompt`
 - `FastGroupsBypassSwitch`
 - `TextGenerateLTX2Prompt`
 - `ResolutionSelector`
 - `CR Text`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
 - `LoadImage`
@@ -75,18 +73,18 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `ImageBlend`
 - `PreviewImage`
 - `LoadImage`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `LoadImage`
 - `LoadImage`
 - `TextEncodeQwenImage21`
 - `TextGenerateLTX2Prompt`
 - `CR Prompt Text`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `QwenImage21SageAttentionT8`
-- `LoraLoaderBypassModelOnly` ★核心
-- `KSampler` ★核心
+- `LoraLoaderBypassModelOnly`
+- `KSampler`
 - `VAELoader`
 - `ComfySwitchNode`
 - `SaveImage`
@@ -97,25 +95,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `454327193221583`
-- `steps` = `6`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `454327193221583`
+- `steps` = `6`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **65%**（45/69）
 
-**有卡**：`VAEDecode`、`SaveImage`、`ResolutionSelector`、`CLIPLoader`、`VAELoader`、`AIO_Preprocessor`、`BatchImagesNode`、`EmptyLatentImage`、`LoadImage`、`TextEncodeQwenImage21`、`TextGenerateLTX2Prompt`、`FastGroupsBypassSwitch`、`Qwen3VL_Advanced`、`DWPreprocessor`、`DepthAnythingPreprocessor`、`ImageBlend`、`KSampler`、`UNETLoader`、`QwenImage21SageAttentionT8`、`LoraLoaderBypassModelOnly`
+**有卡**：`VAEDecode`、`easy showAnything`、`JjkText`、`PreviewImage`、`SaveImage`、`ComfySwitchNode`、`GetNode`、`ResolutionSelector`、`SetNode`、`CLIPLoader`、`VAELoader`、`Anything Everywhere3`、`AIO_Preprocessor`、`BatchImagesNode`、`PreviewAny`、`EmptyLatentImage`、`MarkdownNote`、`LoadImage`、`Image Comparer (rgthree)`、`TextEncodeQwenImage21`、`ShowText|pysssss`、`TextGenerateLTX2Prompt`、`FastGroupsBypassSwitch`、`CR Text`、`Fast Groups Bypasser (rgthree)`、`CR Text Concatenate`、`Qwen3VL_Advanced`
 
 **缺卡**（3）：`CR Text`、`CR Text Concatenate`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图常规版V1_1950531381078249473.json
+key: 图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json
 name: Wan2.2文生图常规版V1_1950531381078249473
 type: Unknown Workflow
 status: completed
@@ -14,54 +14,50 @@ missing: []
 parameters: {"cfg": 12, "denoise": "beta", "sampler_name": 1, "scheduler": "heun", "seed": "enable", "steps": "fixed"}
 ---
 
-# Wan2.2文生图常规版V1_1950531381078249473.json
+# 图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（25 个）：
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `JWInteger`
 - `JWInteger`
 - `JWInteger`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSamplerAdvanced` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `KSamplerAdvanced`
 - `SaveImage`
 - `PMRF`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `fixed`
 - `cfg` = `12`
+- `denoise` = `beta`
 - `sampler_name` = `1`
 - `scheduler` = `heun`
-- `denoise` = `beta`
+- `seed` = `enable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **96%**（24/25）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`JWInteger`、`VAEDecode`、`KSamplerAdvanced`、`UNETLoader`、`SaveImage`、`PMRF`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
+**有卡**：`CLIPLoader`、`VAELoader`、`Note`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`JWInteger`、`VAEDecode`、`KSamplerAdvanced`、`UNETLoader`、`SaveImage`、`PMRF`

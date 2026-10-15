@@ -1,5 +1,5 @@
 ---
-key: SD3.5文生图官方工作流FP16_1930199196047982593.json
+key: 图片生成/文生图/SD3.5文生图官方工作流FP16_1930199196047982593.json
 name: SD3.5文生图官方工作流FP16_1930199196047982593
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"cfg": 5.45, "checkpoint": "sd3.5_large.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "sgm_uniform", "seed": 753747895600699, "steps": 30}
 ---
 
-# SD3.5文生图官方工作流FP16_1930199196047982593.json
+# 图片生成/文生图/SD3.5文生图官方工作流FP16_1930199196047982593.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SD3.5文生图官方工作流FP16_1930199196047982593.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（13 个）：
 - `Note`
@@ -28,29 +26,27 @@ parameters: {"cfg": 5.45, "checkpoint": "sd3.5_large.safetensors", "denoise": 1,
 - `Note`
 - `SaveImage`
 - `TripleCLIPLoader`
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
+- `VAEDecode`
 - `EmptySD3LatentImage`
 - `PreviewImage`
 - `CLIPLoader`
 
 ## 关键参数
 
-- `checkpoint` = `sd3.5_large.safetensors`
-- `seed` = `753747895600699`
-- `steps` = `30`
 - `cfg` = `5.45`
+- `checkpoint` = `sd3.5_large.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `sgm_uniform`
-- `denoise` = `1`
+- `seed` = `753747895600699`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **77%**（10/13）
 
-**有卡**：`DualCLIPLoader`、`SaveImage`、`TripleCLIPLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`EmptySD3LatentImage`、`CLIPLoader`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、DualCLIPLoader、TripleCLIPLoader、SaveImage
+**有卡**：`Note`、`DualCLIPLoader`、`SaveImage`、`TripleCLIPLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`KSampler`、`VAEDecode`

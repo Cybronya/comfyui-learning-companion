@@ -1,5 +1,5 @@
 ---
-key: 千问文生图+wan2.2高清放大_1952618606662234114.json
+key: 图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
 name: 千问文生图+wan2.2高清放大_1952618606662234114
 type: Unknown Workflow
 status: completed
@@ -15,39 +15,37 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识]
 ---
 
-# 千问文生图+wan2.2高清放大_1952618606662234114.json
+# 图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（45 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `LoraLoader` ★核心
-- `KSampler` ★核心
-- `LoraLoader` ★核心
-- `UNETLoader` ★核心
-- `VAEEncode` ★核心
+- `LoraLoader`
+- `KSampler`
+- `LoraLoader`
+- `UNETLoader`
+- `VAEEncode`
 - `CLIPLoader`
 - `VAELoader`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Reroute`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `Image Comparer (rgthree)`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoader` ★核心
-- `UNETLoader` ★核心
+- `LoraLoader`
+- `UNETLoader`
 - `ImageUpscaleWithModel`
 - `ImageFromBatch`
 - `ImageFromBatch`
@@ -58,8 +56,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `ImageFromBatch`
 - `Image Tiled`
 - `ImageConcanateOfUtils`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `ImageConcanateOfUtils`
 - `ImageFromBatch`
 - `ImageFromBatch`
@@ -74,25 +72,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
-- `strength_model` = `0.4000000000000001`
-- `strength_clip` = `0.4000000000000001`
-- `seed` = `917067538790824`
-- `steps` = `20`
 - `cfg` = `3.5`
+- `denoise` = `1`
+- `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `1`
+- `seed` = `917067538790824`
+- `steps` = `20`
+- `strength_clip` = `0.4000000000000001`
+- `strength_model` = `0.4000000000000001`
 
 ## 知识
 
 覆盖率 **87%**（39/45）
 
-**有卡**：`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CFGZeroStarAndInit`、`LoraLoader`、`KSampler`、`UNETLoader`、`VAEEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`SaveImage`、`VAEDecode`、`ImageUpscaleWithModel`、`ImageFromBatch`、`ImageConcanateOfUtils`、`ImageScaleToTotalPixels`、`UpscaleModelLoader`
+**有卡**：`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CFGZeroStarAndInit`、`LoraLoader`、`KSampler`、`UNETLoader`、`VAEEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`Reroute`、`SaveImage`、`Image Comparer (rgthree)`、`VAEDecode`、`ImageUpscaleWithModel`、`ImageFromBatch`、`ImageConcanateOfUtils`、`Image Tiled`
 
 **缺卡**（2）：`CR Text`、`Image Tiled`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、CFGZeroStarAndInit、VAEEncode
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: 服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json
+key: 图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json
 name: 服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097
 type: Unknown Workflow
 status: completed
@@ -15,25 +15,23 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "sgm_
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识]
 ---
 
-# 服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json
+# 图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/图生图/服装换材质丨Flux.1_Depth＋Redux丨面料纹理迁移_2102210198915076097.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（23 个）：
 - `FluxGuidance`
 - `StyleModelAdvancedApply`
 - `InstructPixToPixConditioning`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `Anything Everywhere3`
 - `Anything Everywhere`
 - `Anything Everywhere`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `CLIPVisionEncode`
 - `LayerUtility: TextBox`
@@ -44,28 +42,26 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `LoadImage`
 - `StyleModelLoader`
 - `CLIPVisionLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 - `VAELoader`
 
 ## 关键参数
 
-- `seed` = `353748859257925`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `sgm_uniform`
-- `denoise` = `1`
+- `seed` = `353748859257925`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **78%**（18/23）
 
-**有卡**：`FluxGuidance`、`StyleModelAdvancedApply`、`InstructPixToPixConditioning`、`KSampler`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`CLIPVisionEncode`、`DepthAnythingPreprocessor`、`RHHiddenNodes`、`LoadImage`、`StyleModelLoader`、`CLIPVisionLoader`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`
+**有卡**：`FluxGuidance`、`StyleModelAdvancedApply`、`InstructPixToPixConditioning`、`KSampler`、`VAEDecode`、`SaveImage`、`Anything Everywhere3`、`Anything Everywhere`、`CLIPTextEncode`、`ConditioningZeroOut`、`CLIPVisionEncode`、`LayerUtility: TextBox`、`LayerUtility: ImageScaleByAspectRatio V2`、`DepthAnythingPreprocessor`、`RHHiddenNodes`、`LoadImage`
 
 **缺卡**（2）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: TextBox`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、DepthAnythingPreprocessor
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
+key: 图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
 name: Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
+# 图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图带提示词增强高清放大精干版，数字人文生图方案_2103559733838962690.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（50 个）：
 - `TextGenerate`
@@ -31,47 +29,47 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 - `SeedVR2VideoUpscaler`
 - `SeedVR2LoadVAEModel`
 - `SeedVR2LoadDiTModel`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ConditioningZeroOut`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
 - `VAELoader`
 - `ResolutionSelector`
-- `KSampler` ★核心
+- `KSampler`
 - `ImageScaleBy`
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `VAEDecode`
 - `easy clearCacheAll`
 - `PreviewImage`
 - `SaveImage`
 - `Fast Groups Bypasser (rgthree)`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -80,25 +78,23 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **86%**（43/50）
 
-**有卡**：`TextGenerate`、`CLIPLoader`、`StringConstantMultiline`、`SeedVR2VideoUpscaler`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`UNETLoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`VAELoader`、`ResolutionSelector`、`KSampler`、`ImageScaleBy`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`TextGenerate`、`CLIPLoader`、`StringConstantMultiline`、`SeedVR2VideoUpscaler`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`UNETLoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`VAELoader`、`ResolutionSelector`、`KSampler`、`ImageScaleBy`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`VAEDecode`、`easy clearCacheAll`、`PreviewImage`、`SaveImage`、`Fast Groups Bypasser (rgthree)`、`孤海注释`、`JjkText`
 
 **缺卡**（1）：`easy clearCacheAll`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 

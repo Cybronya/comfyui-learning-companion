@@ -1,5 +1,5 @@
 ---
-key: 文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json
+key: 图片生成/文生图/文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json
 name: 文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529
 type: Unknown Workflow
 status: completed
@@ -13,39 +13,35 @@ patterns: []
 missing: []
 ---
 
-# 文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json
+# 图片生成/文生图/文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图 — Flux 美女摄影快速出图工作流 v1.5_1910272215428886529.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（19 个）：
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `PrimitiveNode`
 - `BasicGuider`
 - `VAELoader`
 - `EmptySD3LatentImage`
 - `PrimitiveNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `RandomNoise`
 - `BasicScheduler`
 - `ModelSamplingFlux`
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
 - `NunchakuTextEncoderLoader`
 - `NunchakuFluxDiTLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PreviewImage`
 
 ## 知识
 
 覆盖率 **84%**（16/19）
 
-**有卡**：`FluxGuidance`、`SamplerCustomAdvanced`、`BasicGuider`、`VAELoader`、`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`KSamplerSelect`、`RandomNoise`、`BasicScheduler`、`ModelSamplingFlux`、`NunchakuFluxLoraLoader`、`NunchakuTextEncoderLoader`、`NunchakuFluxDiTLoader`、`CLIPTextEncode`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、NunchakuTextEncoderLoader、NunchakuFluxLoraLoader
+**有卡**：`FluxGuidance`、`SamplerCustomAdvanced`、`PrimitiveNode`、`BasicGuider`、`VAELoader`、`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`KSamplerSelect`、`RandomNoise`、`BasicScheduler`、`ModelSamplingFlux`、`NunchakuFluxLoraLoader`、`NunchakuTextEncoderLoader`

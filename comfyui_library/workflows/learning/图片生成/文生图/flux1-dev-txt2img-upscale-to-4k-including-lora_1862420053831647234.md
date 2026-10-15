@@ -1,5 +1,5 @@
 ---
-key: flux1-dev-txt2img-upscale-to-4k-including-lora_1862420053831647234.json
+key: 图片生成/文生图/flux1-dev-txt2img-upscale-to-4k-including-lora_1862420053831647234.json
 name: flux1-dev-txt2img-upscale-to-4k-including-lora_1862420053831647234
 type: Unknown Workflow
 status: completed
@@ -14,36 +14,34 @@ missing: []
 parameters: {"cfg": 1, "denoise": 1, "lora_name": "aidmaImageUpgrader-FLUX-V0.2.safetensors", "sampler_name": "euler", "scheduler": "simple", "seed": 497529703472631, "steps": 60, "strength_clip": 1, "strength_model": 1}
 ---
 
-# flux1-dev-txt2img-upscale-to-4k-including-lora_1862420053831647234.json
+# 图片生成/文生图/flux1-dev-txt2img-upscale-to-4k-including-lora_1862420053831647234.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/flux1-dev-txt2img-upscale-to-4k-including-lora_1862420053831647234.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（23 个）：
 - `FluxGuidance`
 - `Reroute`
 - `ConditioningZeroOut`
 - `Reroute`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SDXLAspectRatioSelector`
 - `Reroute`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Int`
 - `Int`
 - `EmptySD3LatentImage`
 - `Image Comparer (rgthree)`
 - `FL_SDUltimate_Slices`
-- `KSampler` ★核心
+- `KSampler`
 - `Reroute`
 - `SaveImage`
 - `SaveImage`
 - `UltimateSDUpscale`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `UpscaleModelLoader`
 - `DualCLIPLoader`
 
@@ -51,20 +49,18 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "aidmaImageUpgrader-FLUX-V0.2.
 
 ## 关键参数
 
-- `seed` = `497529703472631`
-- `steps` = `60`
 - `cfg` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `denoise` = `1`
 - `lora_name` = `aidmaImageUpgrader-FLUX-V0.2.safetensors`
-- `strength_model` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `seed` = `497529703472631`
+- `steps` = `60`
 - `strength_clip` = `1`
+- `strength_model` = `1`
 
 ## 知识
 
 覆盖率 **78%**（18/23）
 
-**有卡**：`FluxGuidance`、`ConditioningZeroOut`、`VAEDecode`、`SDXLAspectRatioSelector`、`CLIPTextEncode`、`Int`、`EmptySD3LatentImage`、`FL_SDUltimate_Slices`、`KSampler`、`SaveImage`、`UltimateSDUpscale`、`UNETLoader`、`VAELoader`、`LoraLoader`、`UpscaleModelLoader`、`DualCLIPLoader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、FluxGuidance、LoraLoader
+**有卡**：`FluxGuidance`、`Reroute`、`ConditioningZeroOut`、`VAEDecode`、`SDXLAspectRatioSelector`、`CLIPTextEncode`、`Int`、`EmptySD3LatentImage`、`Image Comparer (rgthree)`、`FL_SDUltimate_Slices`、`KSampler`、`SaveImage`、`UltimateSDUpscale`

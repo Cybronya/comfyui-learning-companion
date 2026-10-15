@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json
+key: 图片生成/文生图/Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json
 name: Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530
 type: Text To Image
 status: completed
@@ -16,34 +16,32 @@ parameters: {"batch_size": 1, "cfg": 4.5, "checkpoint": "sam3.1_multiplex_fp16.s
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json
+# 图片生成/文生图/Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1全功能合集，覆盖角色一致性文生图图生图多场景_2102847595486998530.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（96 个）：
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `VAEDecode`
+- `EmptyLatentImage`
+- `KSampler`
 - `ResolutionSelector`
 - `Mask Fill Holes`
 - `SAM3_Detect`
 - `GrowMask`
 - `DrawMaskOnImage`
 - `PreviewImage`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `Mask Fill Holes`
 - `GrowMask`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LayerUtility: ImageReelComposit`
 - `PreviewImage`
 - `ResolutionSelector`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `LayerUtility: ImageReel`
 - `LayerUtility: ImageReelComposit`
 - `PreviewImage`
@@ -51,34 +49,34 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `SaveImage`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetImageSize`
 - `TextEncodeQwenImage21`
 - `TextEncodeQwenImage21`
 - `DrawMaskOnImage`
 - `ComfySwitchNode`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImage21`
 - `PreviewImage`
 - `ResolutionSelector`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ComfySwitchNode`
 - `SaveImage`
 - `CR Text`
 - `PreviewAny`
 - `llama_cpp_model_loader`
 - `llama_cpp_instruct_adv`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `LoadImage`
 - `SaveImage`
 - `LayerUtility: ImageReel`
 - `LoadImage`
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
 - `TextEncodeQwenImage21`
 - `SaveImage`
 - `Anything Everywhere3`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `Image Comparer (rgthree)`
@@ -94,30 +92,30 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `PreviewAny`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -126,26 +124,24 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
-- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
 
 ## 知识
 
 覆盖率 **73%**（70/96）
 
-**有卡**：`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`SAM3_Detect`、`GrowMask`、`DrawMaskOnImage`、`SaveImage`、`GetImageSize`、`TextEncodeQwenImage21`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`LoadImage`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`RHLLMChatNode`、`LoraLoaderModelOnly`、`solarL_SaveImagesToZip`
+**有卡**：`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`Mask Fill Holes`、`SAM3_Detect`、`GrowMask`、`DrawMaskOnImage`、`PreviewImage`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReel`、`Fast Groups Bypasser (rgthree)`、`SaveImage`、`GetImageSize`、`TextEncodeQwenImage21`、`ComfySwitchNode`、`CR Text`、`PreviewAny`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`LoadImage`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`Anything Everywhere3`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`Image Comparer (rgthree)`、`RHLLMChatNode`、`孤海注释`
 
 **缺卡**（8）：`CR Text`、`CR Text`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`Mask Fill Holes`、`Mask Fill Holes`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode
 
 ## 参数体检
 

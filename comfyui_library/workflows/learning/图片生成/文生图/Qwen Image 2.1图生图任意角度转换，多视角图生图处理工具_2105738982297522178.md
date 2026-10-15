@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178.json
+key: 图片生成/文生图/Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178.json
 name: Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178.json
+# 图片生成/文生图/Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1图生图任意角度转换，多视角图生图处理工具_2105738982297522178.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（59 个）：
 - `LoadBackgroundRemovalModel`
@@ -30,24 +28,24 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `InvertMask`
 - `TripoSplatPreprocessImage`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPVisionLoader`
 - `VAELoader`
 - `VAELoader`
 - `TripoSplatConditioning`
-- `KSampler` ★核心
-- `VAEDecodeTripoSplat` ★核心
-- `UNETLoader` ★核心
+- `KSampler`
+- `VAEDecodeTripoSplat`
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `TextEncodeQwenImage21`
 - `QwenImage21Cache`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `ComfySwitchNode`
 - `SaveImage`
 - `CreateCameraInfo`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `RenderSplat`
 - `GetImageSize`
 - `ImageScaleToMaxDimension`
@@ -57,30 +55,30 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `SaveImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -89,23 +87,21 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **90%**（53/59）
 
-**有卡**：`LoadBackgroundRemovalModel`、`RemoveBackground`、`InvertMask`、`TripoSplatPreprocessImage`、`UNETLoader`、`CLIPVisionLoader`、`VAELoader`、`TripoSplatConditioning`、`KSampler`、`VAEDecodeTripoSplat`、`CLIPLoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`VAEDecode`、`SaveImage`、`CreateCameraInfo`、`LoraLoaderModelOnly`、`RenderSplat`、`GetImageSize`、`ImageScaleToMaxDimension`、`LoadImage`、`ImageConcanate`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
+**有卡**：`LoadBackgroundRemovalModel`、`RemoveBackground`、`InvertMask`、`TripoSplatPreprocessImage`、`PreviewImage`、`UNETLoader`、`CLIPVisionLoader`、`VAELoader`、`TripoSplatConditioning`、`KSampler`、`VAEDecodeTripoSplat`、`CLIPLoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`VAEDecode`、`ComfySwitchNode`、`SaveImage`、`CreateCameraInfo`、`LoraLoaderModelOnly`、`RenderSplat`、`GetImageSize`、`ImageScaleToMaxDimension`、`LoadImage`、`ImageConcanate`、`孤海注释`、`EmptyLatentImage`、`JjkText`、`CLIPTextEncode`
 
 ## 参数体检
 

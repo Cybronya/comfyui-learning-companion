@@ -1,5 +1,5 @@
 ---
-key: 超细节 Flux Sigma Vision Alpha1 - T2I - v1 (slow)_1887868607894806529.json
+key: 图片生成/文生图/超细节 Flux Sigma Vision Alpha1 - T2I - v1 (slow)_1887868607894806529.json
 name: 超细节 Flux Sigma Vision Alpha1 - T2I - v1 (slow)_1887868607894806529
 type: Unknown Workflow
 status: completed
@@ -14,18 +14,16 @@ missing: [Bookmark (rgthree), Bookmark (rgthree), Bookmark (rgthree), CR Aspect 
 discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Bookmark (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Bookmark (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Aspect Ratio` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text _O` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 超细节 Flux Sigma Vision Alpha1 - T2I - v1 (slow)_1887868607894806529.json
+# 图片生成/文生图/超细节 Flux Sigma Vision Alpha1 - T2I - v1 (slow)_1887868607894806529.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/超细节 Flux Sigma Vision Alpha1 - T2I - v1 (slow)_1887868607894806529.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（104 个）：
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `Anything Everywhere`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `UpscaleModelLoader`
 - `ModelSamplingFlux`
 - `BasicScheduler`
@@ -62,40 +60,40 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `mxSlider`
 - `mxSlider`
 - `mxSlider`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `mxSlider`
 - `MultiplySigmas`
-- `DetailDaemonSamplerNode` ★核心
+- `DetailDaemonSamplerNode`
 - `mxSlider`
 - `DetailDaemonGraphSigmasNode`
-- `DetailDaemonSamplerNode` ★核心
+- `DetailDaemonSamplerNode`
 - `DetailDaemonGraphSigmasNode`
-- `DetailDaemonSamplerNode` ★核心
-- `CLIPTextEncode` ★核心
+- `DetailDaemonSamplerNode`
+- `CLIPTextEncode`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `ModelSamplingFlux`
 - `UltimateSDUpscaleCustomSample`
 - `easy imageColorMatch`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `RandomNoise`
 - `easy imageColorMatch`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `Note`
 - `Note`
 - `mxSlider`
 - `mxSlider`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `CFGGuider`
 - `SaveImage`
 - `CR Aspect Ratio`
 - `ETN_CropImage`
 - `mxSlider`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `mxSlider`
 - `mxSlider`
 - `mxSlider`
@@ -119,7 +117,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `mxSlider`
 - `mxSlider`
 - `Text _O`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `TripleCLIPLoader`
 - `Power Lora Loader (rgthree)`
@@ -132,11 +130,9 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 
 覆盖率 **79%**（82/104）
 
-**有卡**：`KSamplerSelect`、`VAEDecodeTiled`、`UpscaleModelLoader`、`ModelSamplingFlux`、`BasicScheduler`、`mxSlider`、`MultiplySigmas`、`DetailDaemonGraphSigmasNode`、`DetailDaemonSamplerNode`、`CLIPTextEncode`、`UltimateSDUpscaleCustomSample`、`RandomNoise`、`SaveImage`、`VAEDecode`、`SamplerCustomAdvanced`、`CFGGuider`、`ETN_CropImage`、`UNETLoader`、`VAELoader`、`TripleCLIPLoader`、`DualCLIPLoader`
+**有卡**：`KSamplerSelect`、`Anything Everywhere`、`VAEDecodeTiled`、`UpscaleModelLoader`、`ModelSamplingFlux`、`BasicScheduler`、`mxSlider`、`Bookmark (rgthree)`、`MultiplySigmas`、`DetailDaemonGraphSigmasNode`、`Seed (rgthree)`、`Reroute`、`DetailDaemonSamplerNode`、`CLIPTextEncode`、`UltimateSDUpscaleCustomSample`、`easy imageColorMatch`、`RandomNoise`、`SaveImage`、`VAEDecode`、`Note`、`SamplerCustomAdvanced`、`CFGGuider`、`CR Aspect Ratio`、`ETN_CropImage`、`Fast Groups Bypasser (rgthree)`、`Fast Bypasser (rgthree)`
 
 **缺卡**（14）：`Bookmark (rgthree)`、`Bookmark (rgthree)`、`Bookmark (rgthree)`、`CR Aspect Ratio`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Text _O`、`easy imageColorMatch`、`easy imageColorMatch`、`Power Lora Loader (rgthree)`、`Power Lora Loader (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CFGGuider、DetailDaemonSamplerNode、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

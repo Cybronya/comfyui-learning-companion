@@ -1,5 +1,5 @@
 ---
-key: WAN2.2提升画质的10个窍门_1952624573403607042.json
+key: 图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
 name: WAN2.2提升画质的10个窍门_1952624573403607042
 type: Unknown Workflow
 status: completed
@@ -15,25 +15,23 @@ parameters: {"cfg": 30, "denoise": "bong_tangent", "sampler_name": 1, "scheduler
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# WAN2.2提升画质的10个窍门_1952624573403607042.json
+# 图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（29 个）：
 - `VAELoader`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `CLIPLoader`
 - `MarkdownNote`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `MarkdownNote`
 - `MarkdownNote`
 - `PreviewImage`
@@ -41,12 +39,12 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `MarkdownNote`
 - `MarkdownNote`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced`
+- `CLIPTextEncode`
 - `MarkdownNote`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `MarkdownNote`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `Note Plus (mtb)`
 - `Label (rgthree)`
 - `EmptyHunyuanLatentVideo`
@@ -56,22 +54,20 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `fixed`
 - `cfg` = `30`
+- `denoise` = `bong_tangent`
 - `sampler_name` = `1`
 - `scheduler` = `res_2s`
-- `denoise` = `bong_tangent`
+- `seed` = `enable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **52%**（15/29）
 
-**有卡**：`VAELoader`、`VAEDecode`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`SaveImage`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`
+**有卡**：`VAELoader`、`VAEDecode`、`CLIPLoader`、`MarkdownNote`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`PreviewImage`、`SaveImage`
 
 **缺卡**（2）：`Label (rgthree)`、`Note Plus (mtb)`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen-image2.1全功能合集_2102448185208823809.json
+key: 图片生成/文生图/Qwen-image2.1全功能合集_2102448185208823809.json
 name: Qwen-image2.1全功能合集_2102448185208823809
 type: Text To Image
 status: completed
@@ -15,29 +15,27 @@ parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "sam3.1_multiplex_fp16.saf
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen-image2.1全功能合集_2102448185208823809.json
+# 图片生成/文生图/Qwen-image2.1全功能合集_2102448185208823809.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image2.1全功能合集_2102448185208823809.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（73 个）：
 - `Mask Fill Holes`
 - `GrowMask`
 - `DrawMaskOnImage`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `LayerUtility: ImageReelComposit`
 - `PreviewImage`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `LayerUtility: ImageReel`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `LoadImage`
@@ -51,25 +49,25 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `LoadImage`
 - `PreviewAny`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `MarkdownNote`
 - `MarkdownNote`
 - `MarkdownNote`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `TextEncodeQwenImage21`
 - `llama_cpp_model_loader`
 - `CR Text`
 - `llama_cpp_instruct_adv`
 - `PreviewAny`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `ResolutionSelector`
 - `Fast Groups Bypasser (rgthree)`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetImageSize`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `CR Text`
 - `MarkdownNote`
 - `ComfySwitchNode`
@@ -77,15 +75,15 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `ResolutionSelector`
 - `RHLLMChatNode`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `SAM3_Detect`
 - `Mask Fill Holes`
 - `GrowMask`
 - `DrawMaskOnImage`
 - `PreviewImage`
 - `LoadImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LayerUtility: ImageReelComposit`
 - `TextEncodeQwenImage21`
 - `ComfySwitchNode`
@@ -102,26 +100,24 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `9528`
-- `steps` = `40`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `9528`
+- `steps` = `40`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
-- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
 
 ## 知识
 
 覆盖率 **62%**（45/73）
 
-**有卡**：`GrowMask`、`DrawMaskOnImage`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`、`TextEncodeQwenImage21`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`ResolutionSelector`、`GetImageSize`、`RHLLMChatNode`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`SAM3_Detect`
+**有卡**：`Mask Fill Holes`、`GrowMask`、`DrawMaskOnImage`、`KSampler`、`VAEDecode`、`LayerUtility: ImageReelComposit`、`PreviewImage`、`EmptyLatentImage`、`Fast Groups Bypasser (rgthree)`、`SaveImage`、`LayerUtility: ImageReel`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`、`Anything Everywhere3`、`TextEncodeQwenImage21`、`PreviewAny`、`MarkdownNote`、`llama_cpp_model_loader`、`CR Text`、`llama_cpp_instruct_adv`、`ResolutionSelector`、`GetImageSize`
 
 **缺卡**（8）：`CR Text`、`CR Text`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`Mask Fill Holes`、`Mask Fill Holes`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: qwen image 2.1文生图游戏角色设计 游戏人物批量生成_2105403211334115329.json
+key: 图片生成/文生图/qwen image 2.1文生图游戏角色设计 游戏人物批量生成_2105403211334115329.json
 name: qwen image 2.1文生图游戏角色设计 游戏人物批量生成_2105403211334115329
 type: Text To Image
 status: completed
@@ -16,34 +16,32 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# qwen image 2.1文生图游戏角色设计 游戏人物批量生成_2105403211334115329.json
+# 图片生成/文生图/qwen image 2.1文生图游戏角色设计 游戏人物批量生成_2105403211334115329.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen image 2.1文生图游戏角色设计 游戏人物批量生成_2105403211334115329.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（89 个）：
 - `QwenImage21Cache`
 - `CLIPLoader`
-- `SamplerCustomAdvanced` ★核心
-- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced`
+- `KSamplerSelect`
 - `BasicGuider`
 - `VAELoader`
 - `ReferenceLatent`
 - `CLIPLoader`
-- `VAEDecode` ★核心
-- `VAEEncode` ★核心
-- `UNETLoader` ★核心
+- `VAEDecode`
+- `VAEEncode`
+- `UNETLoader`
 - `TextGenerateLTX2Prompt`
-- `KSampler` ★核心
+- `KSampler`
 - `RandomNoise`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
 - `PreviewImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
 - `BasicScheduler`
 - `ResolutionSelector`
@@ -52,65 +50,65 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 - `easy showAnything`
 - `CLIPLoader`
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ImageScaleToTotalPixelsX`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ColorMatchV2`
 - `VOSR2ModelLoader`
 - `VOSR2Upscale`
 - `PreviewImage`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -119,25 +117,23 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **88%**（78/89）
 
-**有卡**：`QwenImage21Cache`、`CLIPLoader`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicGuider`、`VAELoader`、`ReferenceLatent`、`VAEDecode`、`VAEEncode`、`UNETLoader`、`TextGenerateLTX2Prompt`、`KSampler`、`RandomNoise`、`SaveImage`、`CLIPTextEncode`、`BasicScheduler`、`ResolutionSelector`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`ImageScaleToTotalPixelsX`、`ColorMatchV2`、`VOSR2ModelLoader`、`VOSR2Upscale`、`LoraLoaderModelOnly`、`solarL_SaveImagesToZip`
+**有卡**：`QwenImage21Cache`、`CLIPLoader`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicGuider`、`VAELoader`、`ReferenceLatent`、`VAEDecode`、`VAEEncode`、`UNETLoader`、`TextGenerateLTX2Prompt`、`KSampler`、`RandomNoise`、`SaveImage`、`PreviewImage`、`CLIPTextEncode`、`BasicScheduler`、`ResolutionSelector`、`easy positive`、`Seed (rgthree)`、`easy showAnything`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`ImageScaleToTotalPixelsX`、`ColorMatchV2`、`VOSR2ModelLoader`、`VOSR2Upscale`、`LoraLoaderModelOnly`、`JjkText`、`solarL_SaveImagesToZip`、`孤海注释`
 
 **缺卡**（2）：`easy positive`、`Seed (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

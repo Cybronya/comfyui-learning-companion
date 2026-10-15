@@ -1,5 +1,5 @@
 ---
-key: WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json
+key: 图片生成/文生图/WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json
 name: WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 6, "denoise": 1, "sampler_name": "euler_ancestral", "schedul
 discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型的任何知识, 次要节点 `CR Split String` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>MainLoad` 知识库中没有该节点类型的任何知识, 次要节点 `easy loraStack` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy loraStackApply` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json
+# 图片生成/文生图/WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/WAI Illustrious全元素随机工作流ver1.84 [SakuragiKiri]_1950577025067175938.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（78 个）：
 - `Reroute`
@@ -43,7 +41,7 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 - `easy textSwitch`
 - `easy textSwitch`
 - `CLIPSetLastLayer`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `UpscaleModelLoader`
 - `ImageUpscaleWithModel`
 - `ImageScaleBy`
@@ -52,7 +50,7 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 - `JjkText`
 - `JjkConcat`
 - `JjkText`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy textSwitch`
 - `easy textSwitch`
 - `easy textSwitch`
@@ -86,13 +84,13 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 - `TextRandomMultiline`
 - `TextRandomMultiline`
 - `TextRandomMultiline`
-- `KSampler` ★核心
+- `KSampler`
 - `easy loraStackApply`
 - `easy loraStack`
 - `JjkText`
 - `JjkText`
 - `TextRandomMultiline`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `math_calculate`
 - `PrimitiveFloat`
 - `JjkText`
@@ -105,22 +103,20 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `1062863783454195`
-- `steps` = `20`
 - `cfg` = `6`
+- `denoise` = `1`
 - `sampler_name` = `euler_ancestral`
 - `scheduler` = `normal`
-- `denoise` = `1`
+- `seed` = `1062863783454195`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **51%**（40/78）
 
-**有卡**：`Int`、`StringConcatenate`、`CLIPSetLastLayer`、`VAEDecode`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`ImageScaleBy`、`JjkConcat`、`CLIPTextEncode`、`ImpactStringSelector`、`TextRandomMultiline`、`KSampler`、`math_calculate`、`SaveImage`
+**有卡**：`Reroute`、`Int`、`StringConcatenate`、`easy textSwitch`、`CLIPSetLastLayer`、`VAEDecode`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`ImageScaleBy`、`workflow>MainLoad`、`JjkText`、`JjkConcat`、`CLIPTextEncode`、`CR Split String`
 
 **缺卡**（15）：`CR Split String`、`CR Split String`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`workflow>MainLoad`、`easy loraStack`、`easy loraStackApply`
-
-**用到的条目**：KSampler、VAEDecode、CLIPTextEncode、ImageUpscaleWithModel、UpscaleModelLoader、UpscaleModelLoader、CLIPSetLastLayer、SaveImage
 
 ## 学习发现
 

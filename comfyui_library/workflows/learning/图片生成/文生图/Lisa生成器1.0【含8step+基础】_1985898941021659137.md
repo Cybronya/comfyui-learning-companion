@@ -1,5 +1,5 @@
 ---
-key: Lisa生成器1.0【含8step+基础】_1985898941021659137.json
+key: 图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json
 name: Lisa生成器1.0【含8step+基础】_1985898941021659137
 type: Text To Image
 status: completed
@@ -15,103 +15,99 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# Lisa生成器1.0【含8step+基础】_1985898941021659137.json
+# 图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Lisa生成器1.0【含8step+基础】_1985898941021659137.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（64 个）：
 - `CLIPLoader`
 - `VAELoader`
 - `ModelSamplingAuraFlow`
-- `EmptyLatentImage` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `VAEDecode`
 - `CFGNorm`
-- `KSampler` ★核心
+- `KSampler`
 - `Power Lora Loader (rgthree)`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `UNETLoader`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `Power Lora Loader (rgthree)`
 - `CFGNorm`
 - `SaveImage`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `EmptyLatentImage` ★核心
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `EmptyLatentImage`
+- `VAEDecode`
+- `UNETLoader`
 - `CFGNorm`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Power Lora Loader (rgthree)`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `EmptyLatentImage` ★核心
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `EmptyLatentImage`
+- `VAEDecode`
+- `UNETLoader`
 - `CFGNorm`
 - `SaveImage`
-- `KSampler` ★核心
+- `KSampler`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `VAEDecode`
+- `UNETLoader`
 - `Power Lora Loader (rgthree)`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
+- `CLIPTextEncode`
 - `LoadImage`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `768`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `817349474416955`
-- `steps` = `14`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler_ancestral`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `817349474416955`
+- `steps` = `14`
+- `width` = `768`
 
 ## 知识
 
 覆盖率 **94%**（60/64）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptyLatentImage`、`VAEDecode`、`CFGNorm`、`KSampler`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`SaveImage`、`EmptySD3LatentImage`、`LoadImage`
+**有卡**：`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptyLatentImage`、`VAEDecode`、`CFGNorm`、`KSampler`、`Power Lora Loader (rgthree)`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`SaveImage`、`EmptySD3LatentImage`
 
 **缺卡**（4）：`Power Lora Loader (rgthree)`、`Power Lora Loader (rgthree)`、`Power Lora Loader (rgthree)`、`Power Lora Loader (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 学习发现
 

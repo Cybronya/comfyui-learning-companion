@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json
+key: 图片生成/文生图/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json
 name: Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json
+# 图片生成/文生图/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1全能图像二合一加提示增强，文生图多图编辑自由切换_2103219635977015297.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（62 个）：
 - `TextEncodeQwenImage21`
@@ -42,8 +40,8 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `LoadImage`
 - `TextGenerate`
 - `PrimitiveStringMultiline`
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
+- `EmptyLatentImage`
+- `UNETLoader`
 - `CLIPLoader`
 - `PrimitiveStringMultiline`
 - `ComfySwitchNode`
@@ -52,38 +50,38 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `PrimitiveBoolean`
 - `StringConcatenate`
 - `Textbox`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ResolutionSelector`
 - `ComfySwitchNode`
 - `PrimitiveBoolean`
 - `VAELoader`
-- `KSampler` ★核心
+- `KSampler`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -92,23 +90,21 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **85%**（53/62）
 
-**有卡**：`TextEncodeQwenImage21`、`QwenImage21Cache`、`SaveImageAdvanced`、`SaveImage`、`LoadImage`、`TextGenerate`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`SeedNode`、`PrimitiveBoolean`、`StringConcatenate`、`Textbox`、`VAEDecode`、`ResolutionSelector`、`VAELoader`、`KSampler`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
+**有卡**：`TextEncodeQwenImage21`、`QwenImage21Cache`、`PreviewAny`、`SaveImageAdvanced`、`SaveImage`、`LoadImage`、`TextGenerate`、`PrimitiveStringMultiline`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`ComfySwitchNode`、`SeedNode`、`PrimitiveBoolean`、`StringConcatenate`、`Textbox`、`VAEDecode`、`ResolutionSelector`、`VAELoader`、`KSampler`、`孤海注释`、`LoraLoaderModelOnly`
 
 ## 参数体检
 

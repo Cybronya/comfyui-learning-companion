@@ -1,5 +1,5 @@
 ---
-key: Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
+key: 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
 name: Flux.1 Kontext 两张照片生成结婚照_1936465282678558721
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [Image Stitch]
 discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
+# 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（9 个）：
 - `RH_ComfyFluxKontext`
@@ -37,11 +35,9 @@ discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的�
 
 覆盖率 **78%**（7/9）
 
-**有卡**：`RH_ComfyFluxKontext`、`LoadImage`、`SaveImage`、`Text`、`Bjornulf_ShowStringText`、`ArgosTranslateTextNode`
+**有卡**：`RH_ComfyFluxKontext`、`PreviewImage`、`LoadImage`、`SaveImage`、`Image Stitch`、`Text`
 
 **缺卡**（1）：`Image Stitch`
-
-**用到的条目**：LoadImage、RH_ComfyFluxKontext、SaveImage、Text、ArgosTranslateTextNode、Bjornulf_ShowStringText、sd15-t2i-basic、sd15-t2i-lora
 
 ## 学习发现
 

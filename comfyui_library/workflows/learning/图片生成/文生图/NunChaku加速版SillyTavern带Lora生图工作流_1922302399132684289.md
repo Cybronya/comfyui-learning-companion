@@ -1,5 +1,5 @@
 ---
-key: NunChaku加速版SillyTavern带Lora生图工作流_1922302399132684289.json
+key: 图片生成/文生图/NunChaku加速版SillyTavern带Lora生图工作流_1922302399132684289.json
 name: NunChaku加速版SillyTavern带Lora生图工作流_1922302399132684289
 type: Unknown Workflow
 status: completed
@@ -15,31 +15,29 @@ parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Combine Prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# NunChaku加速版SillyTavern带Lora生图工作流_1922302399132684289.json
+# 图片生成/文生图/NunChaku加速版SillyTavern带Lora生图工作流_1922302399132684289.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/NunChaku加速版SillyTavern带Lora生图工作流_1922302399132684289.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（21 个）：
-- `EmptyLatentImage` ★核心
-- `KSamplerSelect` ★核心
+- `EmptyLatentImage`
+- `KSamplerSelect`
 - `VAELoader`
 - `RandomNoise`
 - `Note Plus (mtb)`
 - `BasicGuider`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `CR Combine Prompt`
 - `NunchakuTextEncoderLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `easy showAnything`
 - `NunchakuFluxDiTLoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `CR Prompt Text`
 - `CR Prompt Text`
 - `Note`
@@ -48,19 +46,17 @@ discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
+- `height` = `1024`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **62%**（13/21）
 
-**有卡**：`EmptyLatentImage`、`KSamplerSelect`、`VAELoader`、`RandomNoise`、`BasicGuider`、`BasicScheduler`、`SamplerCustomAdvanced`、`VAEDecode`、`NunchakuTextEncoderLoader`、`CLIPTextEncode`、`SaveImage`、`NunchakuFluxDiTLoader`、`LoraLoaderModelOnly`
+**有卡**：`EmptyLatentImage`、`KSamplerSelect`、`VAELoader`、`RandomNoise`、`Note Plus (mtb)`、`BasicGuider`、`BasicScheduler`、`SamplerCustomAdvanced`、`VAEDecode`、`CR Combine Prompt`、`NunchakuTextEncoderLoader`、`CLIPTextEncode`、`SaveImage`
 
 **缺卡**（4）：`Note Plus (mtb)`、`CR Combine Prompt`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、NunchakuTextEncoderLoader
 
 ## 学习发现
 

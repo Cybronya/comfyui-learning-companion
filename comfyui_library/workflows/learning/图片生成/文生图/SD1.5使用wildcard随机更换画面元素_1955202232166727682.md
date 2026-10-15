@@ -1,5 +1,5 @@
 ---
-key: SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
+key: 图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
 name: SD1.5使用wildcard随机更换画面元素_1955202232166727682
 type: Text To Image
 status: completed
@@ -15,53 +15,49 @@ parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "SD1.5 dreamshaper_8.safet
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
+# 图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SD1.5使用wildcard随机更换画面元素_1955202232166727682.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（10 个）：
-- `KSampler` ★核心
-- `CheckpointLoaderSimple` ★核心
-- `LoraLoader` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `CheckpointLoaderSimple`
+- `LoraLoader`
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `ImpactWildcardProcessor`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
+- `CLIPTextEncode`
 - `SaveImage`
 
 **识别到的模式**：text_to_image、lora
 
 ## 关键参数
 
-- `seed` = `935649230133986`
-- `steps` = `20`
+- `batch_size` = `1`
 - `cfg` = `8`
+- `checkpoint` = `SD1.5 dreamshaper_8.safetensors`
+- `denoise` = `1`
+- `height` = `768`
+- `lora_name` = `YUNY_繁花素雪_v1.1.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `1`
-- `checkpoint` = `SD1.5 dreamshaper_8.safetensors`
-- `lora_name` = `YUNY_繁花素雪_v1.1.safetensors`
-- `strength_model` = `0.30000000000000004`
+- `seed` = `935649230133986`
+- `steps` = `20`
 - `strength_clip` = `0.8000000000000002`
+- `strength_model` = `0.30000000000000004`
 - `width` = `512`
-- `height` = `768`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **90%**（9/10）
 
-**有卡**：`KSampler`、`CheckpointLoaderSimple`、`LoraLoader`、`VAEDecode`、`ImpactWildcardProcessor`、`CLIPTextEncode`、`EmptyLatentImage`、`SaveImage`
+**有卡**：`KSampler`、`CheckpointLoaderSimple`、`LoraLoader`、`VAEDecode`、`easy cleanGpuUsed`、`ImpactWildcardProcessor`、`CLIPTextEncode`、`EmptyLatentImage`
 
 **缺卡**（1）：`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、LoraLoader、LoraLoader、SaveImage
 
 ## 学习发现
 

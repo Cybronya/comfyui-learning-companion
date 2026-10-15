@@ -1,5 +1,5 @@
 ---
-key: wan2.1生图-放大-修脸工作流_1947192243175239681.json
+key: 图片生成/文生图/wan2.1生图-放大-修脸工作流_1947192243175239681.json
 name: wan2.1生图-放大-修脸工作流_1947192243175239681
 type: Unknown Workflow
 status: completed
@@ -16,13 +16,11 @@ parameters: {"cfg": 1, "denoise": 0.5000000000000001, "sampler_name": "uni_pc", 
 discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `MaskBoundingBox+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# wan2.1生图-放大-修脸工作流_1947192243175239681.json
+# 图片生成/文生图/wan2.1生图-放大-修脸工作流_1947192243175239681.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1生图-放大-修脸工作流_1947192243175239681.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（73 个）：
 - `GetNode`
@@ -44,11 +42,11 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `GetNode`
 - `SetNode`
 - `SetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GroundingDinoModelLoader (segment anything)`
 - `SAMLoader`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `GetNode`
@@ -57,19 +55,19 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `ImageCompositeMasked`
 - `GetNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `VAEDecode`
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SetNode`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
 - `SetNode`
 - `ModelSamplingSD3`
@@ -78,15 +76,15 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `UpscaleModelLoader`
 - `GetNode`
 - `ImageResizeKJv2`
-- `VAEEncode` ★核心
-- `KSampler` ★核心
+- `VAEEncode`
+- `KSampler`
 - `GroundingDinoSAMSegment (segment anything)`
 - `GrowMask`
 - `ImageScaleBy`
 - `GroundingDinoSAMSegment (segment anything)`
 - `GrowMaskWithBlur`
 - `PreviewImage`
-- `KSampler` ★核心
+- `KSampler`
 - `SetLatentNoiseMask`
 - `MaskPreview`
 - `GetNode`
@@ -96,27 +94,25 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `GetNode`
 - `ImageCrop`
 - `MaskBoundingBox+`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PreviewImage`
 
 ## 关键参数
 
-- `seed` = `409860341308050`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `0.5000000000000001`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `0.5000000000000001`
+- `seed` = `409860341308050`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **42%**（31/73）
 
-**有卡**：`VAEEncode`、`SAMLoader`、`VAEDecode`、`SaveImage`、`ImageCompositeMasked`、`KSampler`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`EmptySD3LatentImage`、`CLIPTextEncode`、`ModelSamplingSD3`、`WanVideoNAG`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`ImageResizeKJv2`、`GrowMask`、`ImageScaleBy`、`GrowMaskWithBlur`、`SetLatentNoiseMask`、`MaskPreview`、`ImageCrop`
+**有卡**：`GetNode`、`SetNode`、`VAEEncode`、`GroundingDinoModelLoader (segment anything)`、`SAMLoader`、`VAEDecode`、`SaveImage`、`PreviewImage`、`ImageCompositeMasked`
 
 **缺卡**（4）：`GroundingDinoModelLoader (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`MaskBoundingBox+`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、SetLatentNoiseMask
 
 ## 参数体检
 

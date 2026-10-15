@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 Smooth Mix文生视频_1980468292714455042.json
+key: 图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json
 name: Wan2.2 Smooth Mix文生视频_1980468292714455042
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "eul
 discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive string multiline [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleCondition+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Wan2.2 Smooth Mix文生视频_1980468292714455042.json
+# 图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Other
 
 **节点**（66 个）：
 - `SetNode`
@@ -34,7 +32,7 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 - `CLIPLoader`
 - `easy cleanGpuUsed`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `GetNode`
 - `GetNode`
@@ -50,7 +48,7 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 - `SetNode`
 - `VAELoader`
 - `WanImageToVideo`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
 - `SetNode`
 - `GetNode`
@@ -60,19 +58,19 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 - `ModelSamplingSD3`
 - `easy cleanGpuUsed`
 - `SetNode`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `GetNode`
 - `GetNode`
 - `PathchSageAttentionKJ`
 - `FloatConstant`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy seed`
 - `SetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `INTConstant`
 - `INTConstant`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VHS_VideoCombine`
 - `easy clearCacheAll`
 - `GIMMVFI_interpolate`
@@ -93,22 +91,20 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `6`
+- `denoise` = `simple`
 - `sampler_name` = `1`
 - `scheduler` = `euler_ancestral`
-- `denoise` = `simple`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **39%**（26/66）
 
-**有卡**：`INTConstant`、`CLIPLoader`、`VAEDecode`、`VAELoader`、`WanImageToVideo`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`FloatConstant`、`UNETLoader`、`VHS_VideoCombine`、`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`Int`、`JjkShowText`、`RH_LLMAPI_NODE`
+**有卡**：`SetNode`、`INTConstant`、`SimpleMath+`、`CLIPLoader`、`easy cleanGpuUsed`、`GetNode`、`VAEDecode`、`VAELoader`、`WanImageToVideo`
 
 **缺卡**（13）：`ImageFromBatch+`、`Primitive string multiline [Crystools]`、`SimpleCondition+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy clearCacheAll`、`easy clearCacheAll`、`easy seed`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、FloatConstant、Int
 
 ## 学习发现
 

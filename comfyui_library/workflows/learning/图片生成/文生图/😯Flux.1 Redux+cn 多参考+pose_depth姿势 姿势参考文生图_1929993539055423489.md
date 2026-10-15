@@ -1,5 +1,5 @@
 ---
-key: 😯Flux.1 Redux+cn 多参考+pose_depth姿势 姿势参考文生图_1929993539055423489.json
+key: 图片生成/文生图/😯Flux.1 Redux+cn 多参考+pose_depth姿势 姿势参考文生图_1929993539055423489.json
 name: 😯Flux.1 Redux+cn 多参考+pose_depth姿势 姿势参考文生图_1929993539055423489
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"controlnet_strength": 0.5000000000000001, "lora_name": "kkk-manfoo
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: Brightness & Contrast` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskPreview` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `LayerMask: MaskPreview` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `LayerMask: MaskPreview` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 😯Flux.1 Redux+cn 多参考+pose_depth姿势 姿势参考文生图_1929993539055423489.json
+# 图片生成/文生图/😯Flux.1 Redux+cn 多参考+pose_depth姿势 姿势参考文生图_1929993539055423489.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/😯Flux.1 Redux+cn 多参考+pose_depth姿势 姿势参考文生图_1929993539055423489.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（160 个）：
 - `SetNode`
@@ -32,7 +30,7 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `GetNode`
 - `SetNode`
 - `GetNode`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `SetNode`
 - `ModelSamplingFlux`
 - `GetNode`
@@ -42,8 +40,8 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `SetNode`
 - `easy textSwitch`
 - `SetNode`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `SetNode`
 - `SetNode`
 - `GetNode`
@@ -72,10 +70,10 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `GetNode`
 - `ControlNetLoader`
 - `StyleModelApply`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `DWPreprocessor`
 - `PreviewImage`
 - `SetNode`
@@ -116,7 +114,7 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `GetNode`
 - `AIO_Preprocessor`
 - `SetNode`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `SetUnionControlNetType`
 - `GetNode`
 - `ShowText|pysssss`
@@ -143,10 +141,10 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `GetNode`
 - `ReduxAdvanced`
 - `LoadImage`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `RepeatLatentBatch`
 - `easy seed`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `INPAINT_MaskedFill`
 - `SetNode`
 - `LayerMask: MaskPreview`
@@ -154,7 +152,7 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `LayerMask: MaskGrow`
 - `LayerMask: MaskGrow`
 - `PreviewImage`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `InpaintCrop`
 - `SetNode`
 - `GetNode`
@@ -165,22 +163,22 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `BasicGuider`
 - `GetNode`
 - `RandomNoise`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `GetNode`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `GetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `SetNode`
 - `FluxGuidance`
 - `BasicScheduler`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `SaveImage`
 - `SaveImage`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `RH_LLMAPI_NODE`
 - `DualCLIPLoaderGGUF`
 - `VAELoader`
@@ -189,20 +187,18 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `lora_name` = `kkk-manfoot-v3-b20.safetensors`
-- `strength_model` = `0.5000000000000001`
-- `strength_clip` = `1`
 - `controlnet_strength` = `0.5000000000000001`
+- `lora_name` = `kkk-manfoot-v3-b20.safetensors`
+- `strength_clip` = `1`
+- `strength_model` = `0.5000000000000001`
 
 ## 知识
 
 覆盖率 **36%**（57/160）
 
-**有卡**：`TeaCache`、`ConditioningZeroOut`、`LoraLoader`、`ModelSamplingFlux`、`RH_Translator`、`UNETLoader`、`CLIPTextEncode`、`BasicGuider`、`CLIPVisionLoader`、`CLIPVisionEncode`、`StyleModelLoader`、`BasicScheduler`、`FluxGuidance`、`RandomNoise`、`ControlNetLoader`、`StyleModelApply`、`KSamplerSelect`、`VAEDecode`、`DWPreprocessor`、`RH_LLMAPI_NODE`、`BiRefNetRMBG`、`BackgroundScaler`、`AIO_Preprocessor`、`ControlNetApplySD3`、`SetUnionControlNetType`、`ReduxAdvanced`、`RebatchLatents`、`SaveImage`、`LoadImage`、`VAEEncode`、`RepeatLatentBatch`、`INPAINT_MaskedFill`、`SamplerCustomAdvanced`、`InpaintCrop`、`DualCLIPLoaderGGUF`、`VAELoader`
+**有卡**：`SetNode`、`TeaCache`、`ConditioningZeroOut`、`GetNode`、`LoraLoader`、`ModelSamplingFlux`、`RH_Translator`、`easy textSwitch`、`UNETLoader`、`CLIPTextEncode`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`BasicGuider`、`CLIPVisionLoader`、`CLIPVisionEncode`、`StyleModelLoader`、`BasicScheduler`、`FluxGuidance`、`RandomNoise`、`ControlNetLoader`、`StyleModelApply`、`KSamplerSelect`、`VAEDecode`、`DWPreprocessor`、`PreviewImage`
 
 **缺卡**（19）：`CR Text Concatenate`、`ImageSmartSharpen+`、`ImageSmartSharpen+`、`LayerColor: Brightness & Contrast`、`LayerMask: MaskGrow`、`LayerMask: MaskGrow`、`LayerMask: MaskGrow`、`LayerMask: MaskGrow`、`LayerMask: PersonMaskUltra V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy textSwitch`、`LayerMask: MaskPreview`、`LayerMask: MaskPreview`、`LayerMask: MaskPreview`、`easy seed`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、ControlNetLoader、SetUnionControlNetType
 
 ## 学习发现
 

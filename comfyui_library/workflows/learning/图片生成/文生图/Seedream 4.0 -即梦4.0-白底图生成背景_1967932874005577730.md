@@ -1,5 +1,5 @@
 ---
-key: Seedream 4.0 -即梦4.0-白底图生成背景_1967932874005577730.json
+key: 图片生成/文生图/Seedream 4.0 -即梦4.0-白底图生成背景_1967932874005577730.json
 name: Seedream 4.0 -即梦4.0-白底图生成背景_1967932874005577730
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text, CR Text, CR Text Concatenate, CR Text Concatenate, easy textI
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy textIndexSwitch` 知识库中没有该节点类型的任何知识]
 ---
 
-# Seedream 4.0 -即梦4.0-白底图生成背景_1967932874005577730.json
+# 图片生成/文生图/Seedream 4.0 -即梦4.0-白底图生成背景_1967932874005577730.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedream 4.0 -即梦4.0-白底图生成背景_1967932874005577730.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（26 个）：
 - `RH_Captioner`
@@ -54,11 +52,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **42%**（11/26）
 
-**有卡**：`RH_Captioner`、`LoadImage`、`SaveImage`、`RH_Jimeng4_Image2Image`、`RH_LLMAPI_NODE`、`RHHiddenNodes`
+**有卡**：`RH_Captioner`、`CR Text Concatenate`、`LoadImage`、`ShowText|pysssss`、`SaveImage`、`Image Comparer (rgthree)`、`RH_Jimeng4_Image2Image`、`Note`
 
 **缺卡**（5）：`CR Text`、`CR Text`、`CR Text Concatenate`、`CR Text Concatenate`、`easy textIndexSwitch`
-
-**用到的条目**：LoadImage、SaveImage、RH_Captioner、RH_LLMAPI_NODE、RHHiddenNodes、RH_Jimeng4_Image2Image、sd15-t2i-basic、sd15-t2i-lora
 
 ## 学习发现
 

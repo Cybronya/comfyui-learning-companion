@@ -1,5 +1,5 @@
 ---
-key: ✅wan2.2+ttp放大(fix改善幻影等的出现)_1953289093499260929.json
+key: 图片生成/文生图/✅wan2.2+ttp放大(fix改善幻影等的出现)_1953289093499260929.json
 name: ✅wan2.2+ttp放大(fix改善幻影等的出现)_1953289093499260929
 type: Text To Image
 status: completed
@@ -15,26 +15,24 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 512, "sampler_na
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Manual XY Entry Info` 知识库中没有该节点类型的任何知识, 次要节点 `Manual XY Entry Info` 知识库中没有该节点类型的任何知识, 次要节点 `Manual XY Entry Info` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageChooser` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识]
 ---
 
-# ✅wan2.2+ttp放大(fix改善幻影等的出现)_1953289093499260929.json
+# 图片生成/文生图/✅wan2.2+ttp放大(fix改善幻影等的出现)_1953289093499260929.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/✅wan2.2+ttp放大(fix改善幻影等的出现)_1953289093499260929.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（108 个）：
 - `SetNode`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `easy imageListToImageBatch`
 - `TTP_CoordinateSplitter`
 - `SetNode`
 - `easy imageBatchToImageList`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ImageUpscaleWithModel`
 - `ImageResizeKJ`
 - `TTP_Image_Tile_Batch`
@@ -55,13 +53,13 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `VAELoader`
 - `SaveImage`
 - `NAGGuider`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `ShowText|pysssss`
 - `ShowText|pysssss`
 - `CR Text Concatenate`
@@ -86,35 +84,35 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetNode`
 - `LayerUtility: JoyCaptionBeta1`
 - `Image Comparer (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LayerUtility: JoyCaptionBeta1`
 - `CR Text`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `BasicScheduler`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `SaveImage`
-- `UNETLoader` ★核心
-- `VAEEncode` ★核心
+- `UNETLoader`
+- `VAEEncode`
 - `ImageResizeAndCropNode`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `Text Concatenate`
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `EmptyLatentImage`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `JWInteger`
 - `JWInteger`
 - `Bjornulf_TextToStringAndSeed`
@@ -129,33 +127,31 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `LayerUtility: JoyCaptionBeta1ExtraOptions`
 - `LayerUtility: JoyCaptionBeta1ExtraOptions`
 - `LoadImage`
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 
 **识别到的模式**：text_to_image、image_to_image
 
 ## 关键参数
 
-- `seed` = `497163970725457`
-- `steps` = `10`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `heun`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `497163970725457`
+- `steps` = `10`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **54%**（58/108）
 
-**有卡**：`CLIPTextEncode`、`VAEDecodeTiled`、`TTP_CoordinateSplitter`、`ImageUpscaleWithModel`、`ImageResizeKJ`、`TTP_Image_Tile_Batch`、`TTP_Image_Assy`、`ImageScaleToTotalPixels`、`CLIPLoader`、`VAELoader`、`SaveImage`、`NAGGuider`、`SamplerCustomAdvanced`、`VAEEncode`、`RandomNoise`、`KSamplerSelect`、`UpscaleModelLoader`、`TTP_condtobatch`、`TTP_condsetarea_merge`、`ConditioningAverage`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`BasicScheduler`、`LoraLoaderModelOnly`、`VAEDecode`、`ImageResizeAndCropNode`、`KSampler`、`EmptyLatentImage`、`JWInteger`、`Bjornulf_TextToStringAndSeed`、`PMRF`、`LoadImage`、`LazySwitch1way`、`TTP_Tile_image_size`
+**有卡**：`SetNode`、`CLIPTextEncode`、`GetNode`、`VAEDecodeTiled`、`easy imageListToImageBatch`、`TTP_CoordinateSplitter`、`easy imageBatchToImageList`、`ImageUpscaleWithModel`、`ImageResizeKJ`、`TTP_Image_Tile_Batch`、`TTP_Image_Assy`、`ImageSmartSharpen+`、`ImageScaleToTotalPixels`、`easy cleanGpuUsed`、`CLIPLoader`、`VAELoader`、`SaveImage`、`NAGGuider`、`SamplerCustomAdvanced`、`VAEEncode`、`RandomNoise`、`KSamplerSelect`、`ShowText|pysssss`、`CR Text Concatenate`、`CR Text`、`Manual XY Entry Info`、`UpscaleModelLoader`、`PreviewImage`、`TTP_condtobatch`、`TTP_condsetarea_merge`、`ConditioningAverage`
 
 **缺卡**（21）：`CR Text`、`CR Text`、`CR Text Concatenate`、`CR Text Concatenate`、`ImageSmartSharpen+`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Manual XY Entry Info`、`Manual XY Entry Info`、`Manual XY Entry Info`、`Text Concatenate`、`Text Multiline`、`easy cleanGpuUsed`、`easy imageBatchToImageList`、`easy imageChooser`、`easy imageListToImageBatch`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 学习发现
 

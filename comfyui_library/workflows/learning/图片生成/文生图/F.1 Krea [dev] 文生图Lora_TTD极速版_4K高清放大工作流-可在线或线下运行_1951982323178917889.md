@@ -1,5 +1,5 @@
 ---
-key: F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
+key: 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
 name: F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889
 type: Unknown Workflow
 status: completed
@@ -16,28 +16,26 @@ parameters: {"cfg": 2.5, "denoise": 0.30000000000000004, "sampler_name": "euler"
 discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
+# 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_4K高清放大工作流-可在线或线下运行_1951982323178917889.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（31 个）：
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `ImageResizeKJ`
 - `Reroute`
 - `easy imageListToImageBatch`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `TTP_Image_Assy`
 - `easy imageBatchToImageList`
 - `TTP_Image_Tile_Batch`
 - `ImageUpscaleWithModel`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PreviewImage`
 - `ImageSmartSharpen+`
 - `Image Comparer (rgthree)`
@@ -45,36 +43,34 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 - `Image Comparer (rgthree)`
 - `EmptySD3LatentImage`
 - `Fast Groups Muter (rgthree)`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `TTP_Tile_image_size`
-- `VAEDecodeTiled` ★核心
-- `KSampler` ★核心
-- `UNETLoader` ★核心
+- `VAEDecodeTiled`
+- `KSampler`
+- `UNETLoader`
 - `DualCLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `UpscaleModelLoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 
 ## 关键参数
 
-- `seed` = `328338393162286`
-- `steps` = `4`
 - `cfg` = `2.5`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `euler`
 - `scheduler` = `sgm_uniform`
-- `denoise` = `0.30000000000000004`
+- `seed` = `328338393162286`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **74%**（23/31）
 
-**有卡**：`ConditioningZeroOut`、`VAEDecode`、`CLIPTextEncode`、`ImageResizeKJ`、`VAEEncode`、`TTP_Image_Assy`、`TTP_Image_Tile_Batch`、`ImageUpscaleWithModel`、`SaveImage`、`EmptySD3LatentImage`、`KSampler`、`TTP_Tile_image_size`、`VAEDecodeTiled`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UpscaleModelLoader`
+**有卡**：`ConditioningZeroOut`、`VAEDecode`、`CLIPTextEncode`、`ImageResizeKJ`、`Reroute`、`easy imageListToImageBatch`、`VAEEncode`、`TTP_Image_Assy`、`easy imageBatchToImageList`、`TTP_Image_Tile_Batch`、`ImageUpscaleWithModel`、`SaveImage`、`PreviewImage`、`ImageSmartSharpen+`、`Image Comparer (rgthree)`、`EmptySD3LatentImage`、`Fast Groups Muter (rgthree)`、`KSampler`、`TTP_Tile_image_size`
 
 **缺卡**（3）：`ImageSmartSharpen+`、`easy imageBatchToImageList`、`easy imageListToImageBatch`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、UNETLoader、VAEDecodeTiled
 
 ## 参数体检
 

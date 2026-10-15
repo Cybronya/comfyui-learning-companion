@@ -1,5 +1,5 @@
 ---
-key: PuLID + Pose CN 2.0_1914263520249114625.json
+key: 图片生成/文生图/PuLID + Pose CN 2.0_1914263520249114625.json
 name: PuLID + Pose CN 2.0_1914263520249114625
 type: Text To Image
 status: completed
@@ -15,20 +15,18 @@ parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 0.700000000000000
 discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# PuLID + Pose CN 2.0_1914263520249114625.json
+# 图片生成/文生图/PuLID + Pose CN 2.0_1914263520249114625.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/PuLID + Pose CN 2.0_1914263520249114625.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（62 个）：
-- `CLIPTextEncodeFlux` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncodeFlux`
+- `CLIPTextEncode`
 - `PreviewImage`
 - `SetShakkerLabsUnionControlNetType`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `ControlNetLoader`
 - `PulidFluxEvaClipLoader`
 - `PulidFluxInsightFaceLoader`
@@ -37,16 +35,16 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `GrowMaskWithBlur`
 - `preview_mask`
 - `PreviewImage`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `PulidFluxModelLoader`
 - `FaceBoundingBox`
 - `LayerMask: PersonMaskUltra V2`
 - `GetImageSize`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `ControlNetApplyAdvanced` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `ControlNetApplyAdvanced`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `DWPreprocessor`
 - `easy cleanGpuUsed`
 - `ApplyPulidFlux`
@@ -55,19 +53,19 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `Reroute`
 - `Reroute`
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `KSampler` ★核心
+- `KSampler`
 - `easy cleanGpuUsed`
-- `KSampler` ★核心
+- `KSampler`
 - `easy cleanGpuUsed`
 - `LoadImage`
 - `LoadImage`
@@ -80,40 +78,38 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `RH_Captioner`
 - `TextInput_`
 - `Text Concatenate (JPS)`
-- `KSampler` ★核心
+- `KSampler`
 - `RH_Captioner`
 - `Fast Groups Bypasser (rgthree)`
 - `ConstrainImage|pysssss`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 
 **识别到的模式**：text_to_image、lora
 
 ## 关键参数
 
-- `lora_name` = `爱妃Zhang Yuxi.safetensors`
-- `strength_model` = `0.6`
-- `strength_clip` = `1`
-- `controlnet_strength` = `0.7000000000000001`
-- `width` = `1024`
-- `height` = `1536`
 - `batch_size` = `1`
-- `seed` = `62239091599981`
-- `steps` = `20`
 - `cfg` = `1`
+- `controlnet_strength` = `0.7000000000000001`
+- `denoise` = `1`
+- `height` = `1536`
+- `lora_name` = `爱妃Zhang Yuxi.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `62239091599981`
+- `steps` = `20`
+- `strength_clip` = `1`
+- `strength_model` = `0.6`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **63%**（39/62）
 
-**有卡**：`CLIPTextEncodeFlux`、`CLIPTextEncode`、`SetShakkerLabsUnionControlNetType`、`LoraLoader`、`ControlNetLoader`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`FaceAnalysisModels`、`GrowMaskWithBlur`、`preview_mask`、`PulidFluxModelLoader`、`FaceBoundingBox`、`GetImageSize`、`VAEDecode`、`ControlNetApplyAdvanced`、`VAELoader`、`EmptyLatentImage`、`DWPreprocessor`、`ApplyPulidFlux`、`KSampler`、`LoadImage`、`SaveImage`、`RH_Captioner`、`TextInput_`、`UNETLoader`、`DualCLIPLoader`
+**有卡**：`CLIPTextEncodeFlux`、`CLIPTextEncode`、`PreviewImage`、`SetShakkerLabsUnionControlNetType`、`LoraLoader`、`ControlNetLoader`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`FaceAnalysisModels`、`GrowMaskWithBlur`、`preview_mask`、`PulidFluxModelLoader`、`FaceBoundingBox`、`LayerMask: PersonMaskUltra V2`、`GetImageSize`、`VAEDecode`、`ControlNetApplyAdvanced`、`VAELoader`、`EmptyLatentImage`、`DWPreprocessor`、`easy cleanGpuUsed`、`ApplyPulidFlux`、`Reroute`、`KSampler`
 
 **缺卡**（8）：`ConstrainImage|pysssss`、`LayerMask: PersonMaskUltra V2`、`Text Concatenate (JPS)`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced
 
 ## 学习发现
 

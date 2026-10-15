@@ -1,5 +1,5 @@
 ---
-key: 【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json
+key: 图片生成/文生图/【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json
 name: 【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# 【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json
+# 图片生成/文生图/【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（8 个）：
 - `Note`
@@ -35,6 +33,4 @@ missing: []
 
 覆盖率 **50%**（4/8）
 
-**有卡**：`LoadImage`、`SaveImage`、`QwenImageNode`、`RH_LLMAPI_NODE`
-
-**用到的条目**：LoadImage、SaveImage、RH_LLMAPI_NODE、QwenImageNode、sd15-t2i-basic、sd15-t2i-lora、node、ShowText
+**有卡**：`Note`、`LoadImage`、`SaveImage`

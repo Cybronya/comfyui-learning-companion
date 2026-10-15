@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json
+key: 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json
 name: Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977
 type: Unknown Workflow
 status: completed
@@ -15,31 +15,29 @@ parameters: {"cfg": 14, "denoise": "simple", "sampler_name": 3.5, "scheduler": "
 discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json
+# 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1958426008351358977.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（22 个）：
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `GetImageRangeFromBatch`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `UNETLoader`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `easy int`
 - `SaveImage`
 - `EmptyHunyuanLatentVideo`
@@ -49,22 +47,20 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `randomize`
 - `cfg` = `14`
+- `denoise` = `simple`
 - `sampler_name` = `3.5`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `enable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **91%**（20/22）
 
-**有卡**：`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`GetImageRangeFromBatch`、`VAEDecode`、`UNETLoader`、`LoraLoaderModelOnly`、`SaveImage`、`EmptyHunyuanLatentVideo`、`Text`、`Wan_video_prompt_generator`
+**有卡**：`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`GetImageRangeFromBatch`、`VAEDecode`、`UNETLoader`、`LoraLoaderModelOnly`、`easy int`、`SaveImage`、`EmptyHunyuanLatentVideo`
 
 **缺卡**（2）：`easy int`、`easy int`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

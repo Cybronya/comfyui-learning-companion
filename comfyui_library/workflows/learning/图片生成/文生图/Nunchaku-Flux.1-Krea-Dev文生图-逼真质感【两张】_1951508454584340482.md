@@ -1,5 +1,5 @@
 ---
-key: Nunchaku-Flux.1-Krea-Dev文生图-逼真质感【两张】_1951508454584340482.json
+key: 图片生成/文生图/Nunchaku-Flux.1-Krea-Dev文生图-逼真质感【两张】_1951508454584340482.json
 name: Nunchaku-Flux.1-Krea-Dev文生图-逼真质感【两张】_1951508454584340482
 type: Unknown Workflow
 status: completed
@@ -15,46 +15,42 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# Nunchaku-Flux.1-Krea-Dev文生图-逼真质感【两张】_1951508454584340482.json
+# 图片生成/文生图/Nunchaku-Flux.1-Krea-Dev文生图-逼真质感【两张】_1951508454584340482.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku-Flux.1-Krea-Dev文生图-逼真质感【两张】_1951508454584340482.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（12 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `SaveImage`
 - `NunchakuFluxDiTLoader`
 - `CR SDXL Aspect Ratio`
 - `RH_Translator`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `DualCLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `Text Multiline`
 
 ## 关键参数
 
-- `seed` = `982866085529541`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `982866085529541`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **83%**（10/12）
 
-**有卡**：`UNETLoader`、`SaveImage`、`NunchakuFluxDiTLoader`、`RH_Translator`、`KSampler`、`VAEDecode`、`DualCLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`
+**有卡**：`UNETLoader`、`SaveImage`、`NunchakuFluxDiTLoader`、`CR SDXL Aspect Ratio`、`RH_Translator`、`KSampler`、`VAEDecode`、`DualCLIPLoader`、`VAELoader`、`CLIPTextEncode`
 
 **缺卡**（2）：`Text Multiline`、`CR SDXL Aspect Ratio`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、DualCLIPLoader、NunchakuFluxDiTLoader
 
 ## 学习发现
 

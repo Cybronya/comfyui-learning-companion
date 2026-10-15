@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 视频封面制作 v3.0_1970924112187138049.json
+key: 图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json
 name: Qwen Image 视频封面制作 v3.0_1970924112187138049
 type: Unknown Workflow
 status: completed
@@ -15,22 +15,20 @@ parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "no
 discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Qwen Image 视频封面制作 v3.0_1970924112187138049.json
+# 图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 视频封面制作 v3.0_1970924112187138049.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（34 个）：
 - `LoadImage`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `VAEDecode`
 - `ModelSamplingAuraFlow`
 - `SaveImage`
 - `EmptySD3LatentImage`
@@ -52,7 +50,7 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 - `JjkText`
 - `RH_LLMAPI_NODE`
 - `JjkText`
-- `KSampler` ★核心
+- `KSampler`
 - `JjkText`
 - `easy showAnything`
 - `Note`
@@ -61,22 +59,20 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 
 ## 关键参数
 
-- `seed` = `43418218178449`
-- `steps` = `30`
 - `cfg` = `3.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `1`
+- `seed` = `43418218178449`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **56%**（19/34）
 
-**有卡**：`LoadImage`、`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`VAEDecode`、`ModelSamplingAuraFlow`、`SaveImage`、`EmptySD3LatentImage`、`LimitNumber`、`TextCombinerTwo`、`TextCombinerSix`、`RH_LLMAPI_NODE`、`KSampler`
+**有卡**：`LoadImage`、`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`VAEDecode`、`ModelSamplingAuraFlow`、`SaveImage`、`EmptySD3LatentImage`、`LimitNumber`、`ImpactSwitch`、`JjkText`、`TextCombinerTwo`、`Note`、`TextCombinerSix`
 
 **缺卡**（1）：`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、SaveImage
 
 ## 学习发现
 

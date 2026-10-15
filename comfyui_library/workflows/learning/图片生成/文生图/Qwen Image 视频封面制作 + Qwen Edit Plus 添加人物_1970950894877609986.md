@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json
+key: 图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json
 name: Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986
 type: Unknown Workflow
 status: completed
@@ -15,20 +15,18 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json
+# 图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 视频封面制作 + Qwen Edit Plus 添加人物_1970950894877609986.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（46 个）：
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
 - `EmptySD3LatentImage`
 - `LimitNumber`
@@ -48,7 +46,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `JjkText`
 - `RH_LLMAPI_NODE`
 - `JjkText`
-- `KSampler` ★核心
+- `KSampler`
 - `Note`
 - `JjkText`
 - `JjkText`
@@ -57,38 +55,36 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `ConditioningZeroOut`
 - `TextEncodeQwenImageEditPlus_lrzjason`
 - `LayerUtility: PurgeVRAM V2`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `SaveImage`
 - `easy showAnything`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
 - `easy seed`
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `JjkText`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JjkText`
 - `LoadImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 
 ## 关键参数
 
-- `seed` = `931852754142298`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `931852754142298`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **61%**（28/46）
 
-**有卡**：`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`LimitNumber`、`TextCombinerTwo`、`TextCombinerSix`、`RH_LLMAPI_NODE`、`KSampler`、`ConditioningZeroOut`、`TextEncodeQwenImageEditPlus_lrzjason`、`SaveImage`、`LoadImage`、`VAEDecode`
+**有卡**：`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`LimitNumber`、`ImpactSwitch`、`JjkText`、`TextCombinerTwo`、`Note`、`TextCombinerSix`、`PrimitiveInt`、`RH_LLMAPI_NODE`、`KSampler`
 
 **缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader
 
 ## 学习发现
 

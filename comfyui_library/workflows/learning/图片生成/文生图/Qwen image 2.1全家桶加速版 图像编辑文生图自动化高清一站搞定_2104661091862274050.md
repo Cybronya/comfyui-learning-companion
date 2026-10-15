@@ -1,5 +1,5 @@
 ---
-key: Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
+key: 图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
 name: Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
+# 图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1全家桶加速版 图像编辑文生图自动化高清一站搞定_2104661091862274050.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（207 个）：
 - `LoadImage`
@@ -137,55 +135,55 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `SetNode`
 - `ComfySwitchNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `ComfySwitchNode`
-- `KSampler` ★核心
+- `KSampler`
 - `Any Switch (rgthree)`
 - `TextEncodeQwenImage21`
 - `PreviewAny`
 - `ComfySwitchNode`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `Any Switch (rgthree)`
 - `PreviewAny`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `ComfySwitchNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `llama_cpp_parameters`
 - `StringConcatenate`
 - `SetNode`
 - `QwenImage21Cache`
 - `SetNode`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderBypassModelOnly` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
+- `LoraLoaderBypassModelOnly`
 - `GetNode`
 - `GoohaiAnyExists`
 - `GoohaiAnyExists`
 - `GetNode`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `SaveImage`
 - `SetNode`
 - `LatentSwitch`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `VAELoader`
 - `CLIPLoader`
 - `ReferenceLatent`
 - `ReferenceLatent`
 - `SetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `ComfySwitchNode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `KSamplerAdvanced` ★核心
-- `UNETLoader` ★核心
+- `KSamplerAdvanced`
+- `UNETLoader`
 - `ImageScaleToTotalPixels`
 - `GetNode`
 - `JWFloat`
@@ -205,30 +203,30 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `SaveImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -237,25 +235,23 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **47%**（98/207）
 
-**有卡**：`LoadImage`、`JsonExtractString`、`TextGenerate`、`BatchImagesNode`、`StringConcatenate`、`llama_cpp_instruct_adv`、`ImageScaleToMaxDimension`、`CLIPLoader`、`llama_cpp_model_loader`、`VAELoader`、`KSampler`、`TextEncodeQwenImage21`、`SaveImage`、`VAEDecode`、`llama_cpp_parameters`、`QwenImage21Cache`、`CLIPTextEncode`、`UNETLoader`、`LoraLoaderBypassModelOnly`、`GoohaiAnyExists`、`LatentSwitch`、`VAEEncode`、`ReferenceLatent`、`EmptyLatentImage`、`ResolutionSelector`、`KSamplerAdvanced`、`ImageScaleToTotalPixels`、`JWFloat`、`PDIMAGE_LongerSize`、`PrimitiveBoolean`、`SeedNode`、`LoraLoaderModelOnly`、`solarL_SaveImagesToZip`
+**有卡**：`LoadImage`、`JsonExtractString`、`TextGenerate`、`BatchImagesNode`、`StringConcatenate`、`llama_cpp_instruct_adv`、`GetNode`、`SetNode`、`ImageScaleToMaxDimension`、`CLIPLoader`
 
 **缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

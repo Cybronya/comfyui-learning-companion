@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
+key: 图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 name: Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505
 type: Unknown Workflow
 status: completed
@@ -16,46 +16,42 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
+# 图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（11 个）：
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `VAELoader`
 - `CLIPLoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `TextEncodeQwenImage21`
 - `SaveImage`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `PrimitiveStringMultiline`
 - `ResolutionSelector`
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `1001138963381157`
-- `steps` = `6`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1001138963381157`
+- `steps` = `6`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **91%**（10/11）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`SaveImage`、`KSampler`、`VAEDecode`、`ResolutionSelector`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`SaveImage`、`KSampler`、`VAEDecode`、`PrimitiveStringMultiline`
 
 ## 参数体检
 

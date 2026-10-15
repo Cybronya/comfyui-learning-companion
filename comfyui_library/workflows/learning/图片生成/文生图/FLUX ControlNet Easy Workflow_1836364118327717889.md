@@ -1,5 +1,5 @@
 ---
-key: FLUX ControlNet Easy Workflow_1836364118327717889.json
+key: 图片生成/文生图/FLUX ControlNet Easy Workflow_1836364118327717889.json
 name: FLUX ControlNet Easy Workflow_1836364118327717889
 type: Unknown Workflow
 status: completed
@@ -14,42 +14,38 @@ missing: []
 parameters: {"batch_size": 1, "height": 768, "width": 512}
 ---
 
-# FLUX ControlNet Easy Workflow_1836364118327717889.json
+# 图片生成/文生图/FLUX ControlNet Easy Workflow_1836364118327717889.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX ControlNet Easy Workflow_1836364118327717889.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Output → Other
-
 **节点**（16 个）：
 - `PreviewImage`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
+- `CLIPTextEncodeFlux`
 - `AIO_Preprocessor`
 - `LoadFluxControlNet`
 - `SaveImage`
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `LoadImage`
-- `XlabsSampler` ★核心
+- `XlabsSampler`
 - `DualCLIPLoaderGGUF`
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
-- `UnetLoaderGGUF` ★核心
+- `EmptyLatentImage`
+- `UNETLoader`
+- `UnetLoaderGGUF`
 - `ApplyFluxControlNet`
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `768`
 - `batch_size` = `1`
+- `height` = `768`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **94%**（15/16）
 
-**有卡**：`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`CLIPTextEncodeFlux`、`AIO_Preprocessor`、`LoadFluxControlNet`、`SaveImage`、`LoadImage`、`XlabsSampler`、`DualCLIPLoaderGGUF`、`EmptyLatentImage`、`UNETLoader`、`UnetLoaderGGUF`、`ApplyFluxControlNet`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ApplyFluxControlNet、LoadFluxControlNet
+**有卡**：`PreviewImage`、`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`CLIPTextEncodeFlux`、`AIO_Preprocessor`、`LoadFluxControlNet`、`SaveImage`、`LoadImage`、`XlabsSampler`、`DualCLIPLoaderGGUF`、`EmptyLatentImage`、`UNETLoader`、`UnetLoaderGGUF`

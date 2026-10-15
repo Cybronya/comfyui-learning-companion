@@ -1,5 +1,5 @@
 ---
-key: wan2.2-ti2v-5B文生图_1951273402428502018.json
+key: 图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json
 name: wan2.2-ti2v-5B文生图_1951273402428502018
 type: Unknown Workflow
 status: completed
@@ -14,40 +14,36 @@ missing: []
 parameters: {"cfg": 5, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 132741281615021, "steps": 30}
 ---
 
-# wan2.2-ti2v-5B文生图_1951273402428502018.json
+# 图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2-ti2v-5B文生图_1951273402428502018.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（11 个）：
-- `KSampler` ★核心
+- `KSampler`
 - `CLIPLoader`
 - `VAELoader`
 - `ModelSamplingSD3`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `VHS_VideoCombine`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `Wan22ImageToVideoLatent`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 
 ## 关键参数
 
-- `seed` = `132741281615021`
-- `steps` = `30`
 - `cfg` = `5`
+- `denoise` = `1`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `132741281615021`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`KSampler`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`UNETLoader`、`CLIPTextEncode`、`VHS_VideoCombine`、`VAEDecode`、`SaveImage`、`Wan22ImageToVideoLatent`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、Wan22ImageToVideoLatent、SaveImage

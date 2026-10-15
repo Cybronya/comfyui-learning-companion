@@ -1,5 +1,5 @@
 ---
-key: DNR-wan2.2文生视频-KJ版_1950229173782667265.json
+key: 图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json
 name: DNR-wan2.2文生视频-KJ版_1950229173782667265
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Prompt Text]
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# DNR-wan2.2文生视频-KJ版_1950229173782667265.json
+# 图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/DNR-wan2.2文生视频-KJ版_1950229173782667265.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Other
 
 **节点**（38 个）：
 - `WanVideoEasyCache`
@@ -42,8 +40,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `CreateCFGScheduleFloatList`
 - `WanVideoTextEncode`
 - `GetNode`
-- `WanVideoSampler` ★核心
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
+- `WanVideoSampler`
 - `JWInteger`
 - `WanVideoSetLoRAs`
 - `WanVideoSetBlockSwap`
@@ -66,11 +64,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 覆盖率 **66%**（25/38）
 
-**有卡**：`WanVideoEasyCache`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoDecode`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`CreateCFGScheduleFloatList`、`WanVideoTextEncode`、`WanVideoSampler`、`JWInteger`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoEmptyEmbeds`、`INTConstant`、`WanVideoLoraSelect`、`WanVideoModelLoader`
+**有卡**：`WanVideoEasyCache`、`SetNode`、`GetNode`、`PrimitiveNode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoDecode`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`CreateCFGScheduleFloatList`、`WanVideoTextEncode`、`WanVideoSampler`、`JWInteger`、`WanVideoBlockSwap`
 
 **缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs
 
 ## 学习发现
 

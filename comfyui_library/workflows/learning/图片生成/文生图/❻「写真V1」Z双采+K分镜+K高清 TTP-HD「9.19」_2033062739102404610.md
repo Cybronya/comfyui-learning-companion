@@ -1,5 +1,5 @@
 ---
-key: ❻「写真V1」Z双采+K分镜+K高清 TTP-HD「9.19」_2033062739102404610.json
+key: 图片生成/文生图/❻「写真V1」Z双采+K分镜+K高清 TTP-HD「9.19」_2033062739102404610.json
 name: ❻「写真V1」Z双采+K分镜+K高清 TTP-HD「9.19」_2033062739102404610
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 15, "denoise": "sgm_uniform", "height": 512
 discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Relay (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Split String` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# ❻「写真V1」Z双采+K分镜+K高清 TTP-HD「9.19」_2033062739102404610.json
+# 图片生成/文生图/❻「写真V1」Z双采+K分镜+K高清 TTP-HD「9.19」_2033062739102404610.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/❻「写真V1」Z双采+K分镜+K高清 TTP-HD「9.19」_2033062739102404610.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（784 个）：
 - `SetNode`
@@ -80,14 +78,14 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PrimitiveString`
 - `SetNode`
 - `SetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `SetNode`
 - `GetNode`
@@ -100,7 +98,7 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
 - `GetNode`
@@ -108,61 +106,61 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `ConditioningZeroOut`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
-- `VAEEncode` ★核心
+- `VAEDecode`
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ConditioningZeroOut`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ConditioningZeroOut`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ReferenceLatent`
 - `GetNode`
 - `SetNode`
@@ -175,7 +173,7 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `SetNode`
 - `GetNode`
 - `GetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
 - `ReferenceLatent`
@@ -235,9 +233,9 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `SetNode`
 - `GetNode`
@@ -280,14 +278,14 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
 - `GetNode`
 - `GetNode`
 - `GetNode`
@@ -312,29 +310,29 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `PrimitiveString`
 - `Mute / Bypass Relay (rgthree)`
 - `Mute / Bypass Relay (rgthree)`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Mute / Bypass Repeater (rgthree)`
 - `Mute / Bypass Relay (rgthree)`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `TextInput_`
 - `SetNode`
 - `Seed (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Seed (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `Seed (rgthree)`
 - `Seed (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `Seed (rgthree)`
 - `SetNode`
 - `Seed (rgthree)`
 - `Seed (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Seed (rgthree)`
 - `Seed (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `CLIPLoader`
 - `SetNode`
@@ -342,7 +340,7 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `easy float`
 - `SetNode`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `easy showAnything`
 - `easy cleanGpuUsed`
@@ -376,12 +374,12 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `SetNode`
 - `MarkdownNote`
 - `MarkdownNote`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `easy showAnything`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `easy int`
 - `Mute / Bypass Relay (rgthree)`
@@ -413,9 +411,9 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `SetNode`
 - `easy int`
 - `TextInput_`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `VAEDecode`
 - `GetNode`
 - `SetNode`
 - `GetNode`
@@ -485,69 +483,69 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `MarkdownNote`
 - `Fast Groups Bypasser (rgthree)`
 - `ReferenceLatent`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
-- `GetNode`
-- `ConditioningZeroOut`
-- `ReferenceLatent`
-- `ReferenceLatent`
-- `GetNode`
-- `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
 - `ReferenceLatent`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
-- `VAEDecode` ★核心
+- `GetNode`
+- `VAEDecode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
-- `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `VAEEncode`
+- `ReferenceLatent`
+- `GetNode`
+- `GetNode`
+- `VAEDecode`
 - `GetNode`
 - `SetNode`
 - `ReferenceLatent`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
@@ -575,25 +573,25 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `SetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ReferenceLatent`
 - `GetNode`
 - `GetNode`
@@ -631,17 +629,17 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `ConditioningZeroOut`
 - `GetNode`
 - `GetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
 - `GetNode`
 - `GetNode`
 - `GetNode`
@@ -671,9 +669,9 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `ImageCASharpening+`
 - `ImageCASharpening+`
 - `ImageCASharpening+`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetImageSizeAndCount`
 - `ImageScaleToTotalPixels`
 - `GetImageSizeAndCount`
@@ -700,19 +698,19 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `GetNode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
 - `GetImageSizeAndCount`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `GetNode`
 - `ImageScaleToTotalPixels`
-- `KSampler` ★核心
+- `KSampler`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `SetNode`
 - `SetNode`
@@ -739,7 +737,7 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `Mute / Bypass Repeater (rgthree)`
 - `PrimitiveString`
 - `Fast Groups Bypasser (rgthree)`
-- `KSampler` ★核心
+- `KSampler`
 - `ColorMatch`
 - `Mute / Bypass Repeater (rgthree)`
 - `CLIPLoader`
@@ -748,28 +746,28 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `SaveImage`
 - `Fast Groups Bypasser (rgthree)`
 - `ModelPassThrough`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `easy int`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
 - `TextInput_`
 - `llama_cpp_instruct_adv`
 - `SaveImage`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `llama_cpp_instruct_adv`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `ColorMatch`
 - `PrimitiveFloat`
 - `llama_cpp_parameters`
@@ -777,62 +775,60 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 - `LoadImage`
 - `ModelSamplingAuraFlow`
 - `easy showAnything`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerSelect` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `Flux2Scheduler`
 - `easy int`
 - `ImageSharpen`
 - `CFGGuider`
 - `ReferenceLatent`
 - `ReferenceLatent`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `EmptyFlux2LatentImage`
 - `GetImageSizeAndCount`
 - `ConditioningZeroOut`
 - `GetNode`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `Image Comparer (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `RandomNoise`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `SamplerCustomAdvanced` ★核心
-- `CLIPTextEncode` ★核心
+- `SamplerCustomAdvanced`
+- `CLIPTextEncode`
 - `GetNode`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
 - `llama_cpp_model_loader`
 - `llama_cpp_parameters`
 - `ModelPassThrough`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `UNETLoader`
+- `UNETLoader`
 
 **识别到的模式**：text_to_image、image_to_image
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `512`
 - `batch_size` = `1`
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `15`
+- `denoise` = `sgm_uniform`
+- `height` = `512`
 - `sampler_name` = `1.5`
 - `scheduler` = `dpmpp_2m_sde`
-- `denoise` = `sgm_uniform`
+- `seed` = `disable`
+- `steps` = `fixed`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **35%**（271/784）
 
-**有卡**：`EmptySD3LatentImage`、`ModelPassThrough`、`ConditioningZeroOut`、`StringConcatenate`、`VAEDecode`、`ReferenceLatent`、`VAEEncode`、`EmptyLatentImage`、`SaveImage`、`TextInput_`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`LoadImage`、`SomethingToString`、`LoraLoaderModelOnly`、`UNETLoader`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`SeedVR2VideoUpscaler`、`SeedVR2LoadVAEModel`、`ImageScale`、`SeedVR2LoadDiTModel`、`TTP_Image_Assy`、`RHUploadZip`、`GetImageSizeAndCount`、`ColorMatch`、`ImageScaleToTotalPixels`、`KSampler`、`llama_cpp_instruct_adv`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`ModelSamplingAuraFlow`、`KSamplerAdvanced`、`KSamplerSelect`、`Flux2Scheduler`、`ImageSharpen`、`CFGGuider`、`EmptyFlux2LatentImage`、`RandomNoise`、`SamplerCustomAdvanced`
+**有卡**：`SetNode`、`GetNode`、`EmptySD3LatentImage`、`easy cleanGpuUsed`、`ModelPassThrough`、`ConditioningZeroOut`、`StringConcatenate`、`VAEDecode`、`PrimitiveString`、`ReferenceLatent`、`VAEEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLatentImage`、`SaveImage`
 
 **缺卡**（77）：`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`ImageCASharpening+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Relay (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`PlaySound|pysssss`、`Split String`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy float`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`、`easy imageSize`、`easy imageSizeBySide`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: Flex.2-preview文生图演示_1916390487366762498.json
+key: 图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
 name: Flex.2-preview文生图演示_1916390487366762498
 type: Unknown Workflow
 status: completed
@@ -15,34 +15,32 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta"
 discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# Flex.2-preview文生图演示_1916390487366762498.json
+# 图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（10 个）：
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 - `Flex2Conditioner`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CR SDXL Aspect Ratio`
 
 ## 关键参数
 
-- `seed` = `645445586904259`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `deis`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `645445586904259`
+- `steps` = `25`
 
 ## 知识
 
@@ -51,8 +49,6 @@ discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知
 **有卡**：`KSampler`、`VAEDecode`、`SaveImage`、`VAELoader`、`UNETLoader`、`DualCLIPLoader`、`Flex2Conditioner`、`CLIPTextEncode`
 
 **缺卡**（1）：`CR SDXL Aspect Ratio`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、DualCLIPLoader、SaveImage、Flex2Conditioner
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: FLUX 1.D_基础文生图-优化速度_1907284499745366017.json
+key: 图片生成/文生图/FLUX 1.D_基础文生图-优化速度_1907284499745366017.json
 name: FLUX 1.D_基础文生图-优化速度_1907284499745366017
 type: Unknown Workflow
 status: completed
@@ -15,28 +15,26 @@ parameters: {"batch_size": 3, "height": 512, "lora_name": "F.1-Ghibli Characters
 discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Node Collector (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Node Combiner (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# FLUX 1.D_基础文生图-优化速度_1907284499745366017.json
+# 图片生成/文生图/FLUX 1.D_基础文生图-优化速度_1907284499745366017.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX 1.D_基础文生图-优化速度_1907284499745366017.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（36 个）：
 - `BasicGuider`
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `RandomNoise`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Text Multiline`
 - `SiliconflowLLM`
 - `easy showAnything`
 - `ArtGallery_Zho`
 - `easy seed`
 - `easy promptConcat`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `SaveImage`
 - `Node Collector (rgthree)`
@@ -49,13 +47,13 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 - `ChinesePrompt_Mix`
 - `Int`
 - `Int`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `CFGZeroStarAndInit`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `DualCLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CFGZeroStarAndInit`
 - `ApplyFBCacheOnModel`
 - `Text Multiline`
@@ -65,22 +63,20 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `512`
 - `batch_size` = `3`
+- `height` = `512`
 - `lora_name` = `F.1-Ghibli Characters-吉卜力动漫人物_F.1-吉卜力人物-V1.0.safetensors`
-- `strength_model` = `1.0000000000000002`
 - `strength_clip` = `1`
+- `strength_model` = `1.0000000000000002`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **64%**（23/36）
 
-**有卡**：`BasicGuider`、`FluxGuidance`、`SamplerCustomAdvanced`、`RandomNoise`、`VAELoader`、`EmptyLatentImage`、`SiliconflowLLM`、`ArtGallery_Zho`、`KSamplerSelect`、`BasicScheduler`、`SaveImage`、`DifferentialDiffusion`、`ChinesePrompt_Mix`、`Int`、`LoraLoader`、`CFGZeroStarAndInit`、`VAEDecode`、`CLIPTextEncode`、`DualCLIPLoader`、`UNETLoader`、`ApplyFBCacheOnModel`
+**有卡**：`BasicGuider`、`FluxGuidance`、`SamplerCustomAdvanced`、`RandomNoise`、`VAELoader`、`EmptyLatentImage`、`Text Multiline`、`SiliconflowLLM`、`easy showAnything`、`ArtGallery_Zho`、`easy seed`、`easy promptConcat`、`KSamplerSelect`、`BasicScheduler`、`SaveImage`、`Node Collector (rgthree)`、`Node Combiner (rgthree)`、`DifferentialDiffusion`、`Fast Bypasser (rgthree)`、`ChinesePrompt_Mix`
 
 **缺卡**（11）：`Fast Bypasser (rgthree)`、`Node Collector (rgthree)`、`Node Combiner (rgthree)`、`Text Multiline`、`Text Multiline`、`Text Multiline`、`Text Multiline`、`easy cleanGpuUsed`、`easy promptConcat`、`easy seed`、`easy seed`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json
+key: 图片生成/文生图/Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json
 name: Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217
 type: Unknown Workflow
 status: completed
@@ -14,31 +14,29 @@ missing: []
 parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 ---
 
-# Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json
+# 图片生成/文生图/Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（22 个）：
 - `ModelSamplingFlux`
 - `NunchakuTextEncoderLoader`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `RandomNoise`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `ShowText|pysssss`
 - `RH_LLMAPI_NODE`
 - `NunchakuFluxDiTLoader`
 - `PrimitiveNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `FluxGuidance`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `SaveImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `VAEDecode`
+- `SamplerCustomAdvanced`
 - `BasicGuider`
 - `VAELoader`
 - `RH_Translator`
@@ -48,14 +46,12 @@ parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
+- `height` = `1024`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **77%**（17/22）
 
-**有卡**：`ModelSamplingFlux`、`NunchakuTextEncoderLoader`、`KSamplerSelect`、`RandomNoise`、`NunchakuFluxLoraLoader`、`RH_LLMAPI_NODE`、`NunchakuFluxDiTLoader`、`CLIPTextEncode`、`FluxGuidance`、`EmptyLatentImage`、`SaveImage`、`VAEDecode`、`SamplerCustomAdvanced`、`BasicGuider`、`VAELoader`、`RH_Translator`、`BasicScheduler`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、NunchakuTextEncoderLoader
+**有卡**：`ModelSamplingFlux`、`NunchakuTextEncoderLoader`、`KSamplerSelect`、`RandomNoise`、`NunchakuFluxLoraLoader`、`ShowText|pysssss`、`RH_LLMAPI_NODE`、`NunchakuFluxDiTLoader`、`PrimitiveNode`、`CLIPTextEncode`、`FluxGuidance`、`EmptyLatentImage`、`SaveImage`、`PreviewImage`、`VAEDecode`、`SamplerCustomAdvanced`、`BasicGuider`

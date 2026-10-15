@@ -1,5 +1,5 @@
 ---
-key: Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
+key: 图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
 name: Qwen Image InstantX Controlnet 控制集合_1961108839028428802
 type: Unknown Workflow
 status: completed
@@ -15,16 +15,14 @@ parameters: {"cfg": 1, "controlnet_strength": 1.0000000000000002, "denoise": 1, 
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
+# 图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image InstantX Controlnet 控制集合_1961108839028428802.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（78 个）：
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `EmptySD3LatentImage`
 - `CFGNorm`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
@@ -45,36 +43,36 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 - `OpenposePreprocessor`
 - `PreviewImage`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ImageConcanate`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `Reroute`
 - `SaveImage`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `EmptySD3LatentImage`
 - `CFGNorm`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LayerUtility: JoyCaptionBeta1`
 - `ModelSamplingAuraFlow`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ImageConcanate`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `SaveImage`
 - `ShowText|pysssss`
 - `AIO_Preprocessor`
 - `PreviewImage`
 - `GetImageSize`
 - `ControlNetLoader`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `EmptySD3LatentImage`
 - `CFGNorm`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
@@ -83,13 +81,13 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 - `PreviewImage`
 - `LoadImage`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ImageConcanate`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `ShowText|pysssss`
 - `PreviewImage`
 - `Reroute`
@@ -105,23 +103,21 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 
 ## 关键参数
 
-- `controlnet_strength` = `1.0000000000000002`
-- `seed` = `397623419622816`
-- `steps` = `20`
 - `cfg` = `1`
+- `controlnet_strength` = `1.0000000000000002`
+- `denoise` = `1`
 - `sampler_name` = `res_2s`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `397623419622816`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **74%**（58/78）
 
-**有卡**：`ControlNetApplySD3`、`EmptySD3LatentImage`、`CFGNorm`、`ModelSamplingAuraFlow`、`SeedVR2GGUF`、`SaveImage`、`LoadImage`、`SeedVR2BlockSwap`、`ControlNetLoader`、`SetUnionControlNetType`、`GetImageSize`、`OpenposePreprocessor`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`ImageConcanate`、`VAEDecode`、`KSampler`、`AIO_Preprocessor`
+**有卡**：`ControlNetApplySD3`、`EmptySD3LatentImage`、`CFGNorm`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: JoyCaptionBeta1`、`ModelSamplingAuraFlow`、`SeedVR2GGUF`、`SaveImage`、`Image Comparer (rgthree)`、`LoadImage`、`Reroute`、`SeedVR2BlockSwap`、`PreviewImage`、`ControlNetLoader`、`SetUnionControlNetType`、`GetImageSize`、`ShowText|pysssss`、`OpenposePreprocessor`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`ImageConcanate`、`VAEDecode`、`KSampler`、`AIO_Preprocessor`
 
 **缺卡**（6）：`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: LoadJoyCaptionBeta1Model`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、ControlNetLoader
 
 ## 学习发现
 

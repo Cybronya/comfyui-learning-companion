@@ -1,5 +1,5 @@
 ---
-key: Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
+key: 图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
 name: Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy compare` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
+# 图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev文生图【逼真质感 无AI味】_1951177482479280130.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
 
 **节点**（20 个）：
 - `easy compare`
@@ -30,14 +28,14 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `RH_LLMAPI_NODE`
 - `Note`
 - `DualCLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Note`
 - `Int`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
 - `ConditioningZeroOut`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `easy ifElse`
 - `SaveImage`
 - `Display Any (rgthree)`
@@ -47,22 +45,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `534550369502419`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `534550369502419`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **65%**（13/20）
 
-**有卡**：`Int`、`RH_Translator`、`RH_LLMAPI_NODE`、`DualCLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`ConditioningZeroOut`、`KSampler`、`VAEDecode`、`SaveImage`
+**有卡**：`easy compare`、`Int`、`RH_Translator`、`RH_LLMAPI_NODE`、`Note`、`DualCLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`ConditioningZeroOut`、`KSampler`
 
 **缺卡**（4）：`CR Text`、`Display Any (rgthree)`、`easy compare`、`CR SDXL Aspect Ratio`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、DualCLIPLoader、SaveImage
 
 ## 学习发现
 

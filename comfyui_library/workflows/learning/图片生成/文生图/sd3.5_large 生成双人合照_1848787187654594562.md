@@ -1,5 +1,5 @@
 ---
-key: sd3.5_large 生成双人合照_1848787187654594562.json
+key: 图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json
 name: sd3.5_large 生成双人合照_1848787187654594562
 type: Unknown Workflow
 status: completed
@@ -14,16 +14,14 @@ missing: []
 parameters: {"cfg": 5.45, "checkpoint": "sd3.5_large.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "sgm_uniform", "seed": 534920178543917, "steps": 25}
 ---
 
-# sd3.5_large 生成双人合照_1848787187654594562.json
+# 图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/sd3.5_large 生成双人合照_1848787187654594562.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（16 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `EmptySD3LatentImage`
 - `Note`
@@ -31,10 +29,10 @@ parameters: {"cfg": 5.45, "checkpoint": "sd3.5_large.safetensors", "denoise": 1,
 - `DualCLIPLoader`
 - `Note`
 - `TripleCLIPLoader`
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
 - `SeargePromptText`
 - `RH_Prompter`
 - `ShowText|pysssss`
@@ -42,18 +40,16 @@ parameters: {"cfg": 5.45, "checkpoint": "sd3.5_large.safetensors", "denoise": 1,
 
 ## 关键参数
 
-- `checkpoint` = `sd3.5_large.safetensors`
-- `seed` = `534920178543917`
-- `steps` = `25`
 - `cfg` = `5.45`
+- `checkpoint` = `sd3.5_large.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `sgm_uniform`
-- `denoise` = `1`
+- `seed` = `534920178543917`
+- `steps` = `25`
 
 ## 知识
 
 覆盖率 **81%**（13/16）
 
-**有卡**：`VAEDecode`、`SaveImage`、`EmptySD3LatentImage`、`CLIPLoader`、`DualCLIPLoader`、`TripleCLIPLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`KSampler`、`SeargePromptText`、`RH_Prompter`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、DualCLIPLoader、RH_Prompter、SeargePromptText
+**有卡**：`VAEDecode`、`SaveImage`、`EmptySD3LatentImage`、`Note`、`CLIPLoader`、`DualCLIPLoader`、`TripleCLIPLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`KSampler`、`SeargePromptText`

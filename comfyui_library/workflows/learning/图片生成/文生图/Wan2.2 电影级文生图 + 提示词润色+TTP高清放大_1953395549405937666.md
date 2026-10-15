@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json
+key: 图片生成/文生图/Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json
 name: Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666
 type: Unknown Workflow
 status: completed
@@ -15,38 +15,36 @@ parameters: {"cfg": 1, "denoise": 0.10000000000000002, "sampler_name": "heun", "
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json
+# 图片生成/文生图/Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 电影级文生图 + 提示词润色+TTP高清放大_1953395549405937666.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（64 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy imageBatchToImageList`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `CR Text Concatenate`
 - `CR Text`
 - `RH_Translator`
 - `ShowText|pysssss`
 - `RH_Prompter`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `CR Text`
 - `ImageUpscaleWithModel`
 - `LayerUtility: ImageScaleByAspectRatio V2`
@@ -57,23 +55,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `easy cleanGpuUsed`
 - `easy imageSize`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `TTP_Tile_image_size`
 - `TTP_Image_Tile_Batch`
 - `PreviewImage`
 - `PreviewImage`
 - `easy cleanGpuUsed`
 - `ImageListToImageBatch`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `easy int`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
 - `easy int`
@@ -91,22 +89,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `941869908726418`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.10000000000000002`
 - `sampler_name` = `heun`
 - `scheduler` = `beta`
-- `denoise` = `0.10000000000000002`
+- `seed` = `941869908726418`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **58%**（37/64）
 
-**有卡**：`CLIPTextEncode`、`VAEEncode`、`RH_Translator`、`RH_Prompter`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAELoader`、`KSamplerAdvanced`、`CLIPLoader`、`EmptyHunyuanLatentVideo`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`ImageScaleBy`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`ImageListToImageBatch`、`KSampler`、`VAEDecode`、`PrimitiveBoolean`、`TTP_Image_Assy`、`SaveImage`
+**有卡**：`CLIPTextEncode`、`easy imageBatchToImageList`、`VAEEncode`、`CR Text Concatenate`、`CR Text`、`RH_Translator`、`ShowText|pysssss`、`RH_Prompter`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAELoader`、`KSamplerAdvanced`、`CLIPLoader`、`EmptyHunyuanLatentVideo`、`ImageUpscaleWithModel`、`LayerUtility: ImageScaleByAspectRatio V2`、`UpscaleModelLoader`、`ImageScaleBy`、`easy cleanGpuUsed`、`easy imageSize`
 
 **缺卡**（17）：`CR Text`、`CR Text`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`Text Multiline`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageBatchToImageList`、`easy int`、`easy int`、`easy int`、`easy imageSize`、`easy imageSize`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json
+key: 图片生成/文生图/Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json
 name: Wan2.2质量文生图+TTP高阶放大_1950457350153003010
 type: Unknown Workflow
 status: completed
@@ -15,37 +15,35 @@ parameters: {"cfg": 1, "denoise": 0.10000000000000002, "sampler_name": "heun", "
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json
+# 图片生成/文生图/Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2质量文生图+TTP高阶放大_1950457350153003010.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（44 个）：
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
 - `VAELoader`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `CLIPTextEncode`
 - `easy imageBatchToImageList`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
 - `TTP_Tile_image_size`
@@ -56,37 +54,35 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `easy cleanGpuUsed`
 - `TTP_Image_Assy`
 - `Reroute`
-- `KSampler` ★核心
+- `KSampler`
 - `ImageUpscaleWithModel`
 - `PreviewImage`
 - `PreviewImage`
 - `TTP_Image_Tile_Batch`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `EmptyHunyuanLatentVideo`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Image Comparer (rgthree)`
 - `SaveImage`
 - `SaveAnimatedWEBP`
 
 ## 关键参数
 
-- `seed` = `187457617380377`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.10000000000000002`
 - `sampler_name` = `heun`
 - `scheduler` = `beta`
-- `denoise` = `0.10000000000000002`
+- `seed` = `187457617380377`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **77%**（34/44）
 
-**有卡**：`CLIPTextEncode`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`KSamplerAdvanced`、`VAEEncode`、`SaveImage`、`VAEDecode`、`ModelSamplingSD3`、`TTP_Tile_image_size`、`UpscaleModelLoader`、`ImageScaleToTotalPixels`、`ImageListToImageBatch`、`TTP_Image_Assy`、`KSampler`、`ImageUpscaleWithModel`、`TTP_Image_Tile_Batch`、`EmptyHunyuanLatentVideo`、`SaveAnimatedWEBP`
+**有卡**：`CLIPTextEncode`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`KSamplerAdvanced`、`easy imageBatchToImageList`、`PreviewImage`、`VAEEncode`、`SaveImage`、`VAEDecode`、`easy cleanGpuUsed`、`ModelSamplingSD3`、`TTP_Tile_image_size`、`UpscaleModelLoader`、`ImageScaleToTotalPixels`、`ImageListToImageBatch`、`TTP_Image_Assy`、`Reroute`、`KSampler`、`ImageUpscaleWithModel`
 
 **缺卡**（5）：`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageBatchToImageList`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced
 
 ## 学习发现
 

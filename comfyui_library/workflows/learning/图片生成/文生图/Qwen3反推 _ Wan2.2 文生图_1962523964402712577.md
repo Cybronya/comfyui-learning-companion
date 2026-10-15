@@ -1,5 +1,5 @@
 ---
-key: Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
+key: 图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
 name: Qwen3反推 _ Wan2.2 文生图_1962523964402712577
 type: Text To Image
 status: completed
@@ -16,48 +16,46 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
+# 图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（35 个）：
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `Text Concatenate (JPS)`
 - `Anything Everywhere`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Anything Everywhere3`
 - `Mute / Bypass Repeater (rgthree)`
 - `JjkText`
 - `Reroute`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Mute / Bypass Repeater (rgthree)`
 - `Fast Bypasser (rgthree)`
 - `ShowText|pysssss`
 - `RH_Captioner_Pro`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Fast Bypasser (rgthree)`
 - `LoadImage`
 
@@ -65,25 +63,23 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `510662276037286`
-- `steps` = `8`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `510662276037286`
+- `steps` = `8`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **71%**（25/35）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`CLIPTextEncode`、`RH_Captioner_Pro`、`LoadImage`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`Text Concatenate (JPS)`、`Anything Everywhere`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`Anything Everywhere3`、`Mute / Bypass Repeater (rgthree)`
 
 **缺卡**（5）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Text Concatenate (JPS)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 

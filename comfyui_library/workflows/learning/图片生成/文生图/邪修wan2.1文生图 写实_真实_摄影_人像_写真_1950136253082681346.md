@@ -1,5 +1,5 @@
 ---
-key: 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
+key: 图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
 name: 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346
 type: Unknown Workflow
 status: completed
@@ -15,55 +15,53 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "bon
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# 邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
+# 图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/邪修wan2.1文生图 写实_真实_摄影_人像_写真_1950136253082681346.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（54 个）：
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Anything Everywhere`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `easy cleanGpuUsed`
-- `KSampler` ★核心
+- `KSampler`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `SaveImage`
 - `SaveImage`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SaveImage`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `WanVideoNAG`
 - `CFGZeroStarAndInit`
 - `ModelSamplingSD3`
@@ -81,22 +79,20 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `seed` = `556545841742232`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `556545841742232`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **46%**（25/54）
 
-**有卡**：`VAELoader`、`UNETLoader`、`VAEDecode`、`KSampler`、`SaveImage`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`WanVideoNAG`、`CFGZeroStarAndInit`、`ModelSamplingSD3`、`CLIPLoader`、`EmptyHunyuanLatentVideo`、`JWInteger`
+**有卡**：`VAELoader`、`UNETLoader`、`SetNode`、`VAEDecode`、`Anything Everywhere`、`GetNode`
 
 **缺卡**（5）：`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、CFGZeroStarAndInit
 
 ## 学习发现
 

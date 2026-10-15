@@ -1,5 +1,5 @@
 ---
-key: Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
+key: 图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
 name: Flux文生图(超级简化_带备注)V1.0_1920028263266324482
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "height": 1280, "width": 1024}
 discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
+# 图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（34 个）：
 - `TextCombinerTwo`
@@ -31,28 +29,28 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 - `CR Text Input Switch (4 way)`
 - `SetNode`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `BasicGuider`
 - `GetNode`
 - `GetNode`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `BasicScheduler`
 - `GetNode`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `VAELoader`
 - `DualCLIPLoader`
 - `SetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `SetNode`
 - `SetNode`
 - `RandomNoise`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `SaveImage`
 - `JjkText`
 - `FluxResolutionNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `JjkText`
 - `ShowText`
 - `GetNode`
@@ -61,19 +59,17 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1280`
 - `batch_size` = `1`
+- `height` = `1280`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **59%**（20/34）
 
-**有卡**：`TextCombinerTwo`、`RH_Prompter`、`CLIPTextEncode`、`BasicGuider`、`SamplerCustomAdvanced`、`BasicScheduler`、`KSamplerSelect`、`VAELoader`、`DualCLIPLoader`、`UNETLoader`、`RandomNoise`、`VAEDecode`、`SaveImage`、`FluxResolutionNode`、`EmptyLatentImage`、`ShowText`、`ArgosTranslateTextNode`
+**有卡**：`TextCombinerTwo`、`RH_Prompter`、`CR Text Input Switch (4 way)`、`SetNode`、`GetNode`、`CLIPTextEncode`、`BasicGuider`、`SamplerCustomAdvanced`、`BasicScheduler`、`KSamplerSelect`、`VAELoader`、`DualCLIPLoader`、`UNETLoader`
 
 **缺卡**（1）：`CR Text Input Switch (4 way)`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、DualCLIPLoader
 
 ## 学习发现
 

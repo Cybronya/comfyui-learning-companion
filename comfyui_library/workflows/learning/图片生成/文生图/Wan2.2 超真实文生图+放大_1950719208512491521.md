@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 超真实文生图+放大_1950719208512491521.json
+key: 图片生成/文生图/Wan2.2 超真实文生图+放大_1950719208512491521.json
 name: Wan2.2 超真实文生图+放大_1950719208512491521
 type: Text To Image
 status: completed
@@ -14,27 +14,25 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "sampler_name": "euler", "scheduler": "simple", "seed": 965369974524576, "steps": 10, "width": 720}
 ---
 
-# Wan2.2 超真实文生图+放大_1950719208512491521.json
+# 图片生成/文生图/Wan2.2 超真实文生图+放大_1950719208512491521.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 超真实文生图+放大_1950719208512491521.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（16 个）：
-- `KSampler` ★核心
+- `KSampler`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
+- `VAEDecode`
 - `PMRF`
 - `Bjornulf_TextToStringAndSeed`
 - `SaveImage`
@@ -44,20 +42,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1280, "sampler_n
 
 ## 关键参数
 
-- `seed` = `965369974524576`
-- `steps` = `10`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1280`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `965369974524576`
+- `steps` = `10`
 - `width` = `720`
-- `height` = `1280`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（16/16）
 
 **有卡**：`KSampler`、`ModelSamplingSD3`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`VAEDecode`、`PMRF`、`Bjornulf_TextToStringAndSeed`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader

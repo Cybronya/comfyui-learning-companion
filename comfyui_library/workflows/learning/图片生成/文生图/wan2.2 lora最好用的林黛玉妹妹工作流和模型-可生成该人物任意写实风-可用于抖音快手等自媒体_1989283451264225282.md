@@ -1,5 +1,5 @@
 ---
-key: wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json
+key: 图片生成/文生图/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json
 name: wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 2.5, "scheduler": "ddim", "seed": "enable", "steps": "randomize"}
 ---
 
-# wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json
+# 图片生成/文生图/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
 
 **节点**（39 个）：
 - `SetNode`
@@ -28,14 +26,14 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 2.5, "scheduler": "d
 - `GetNode`
 - `GetNode`
 - `CFGZeroStar`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `SetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `GetNode`
 - `SetNode`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `SetNode`
 - `WanVideoNAG`
 - `CLIPLoader`
@@ -45,37 +43,35 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 2.5, "scheduler": "d
 - `PathchSageAttentionKJ`
 - `GetNode`
 - `MarkdownNote`
-- `CLIPTextEncode` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `JoinStringMulti`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `VHS_VideoCombine`
 - `SetNode`
 - `SaveImage`
 - `String`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `EmptyHunyuanLatentVideo`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `JWStringMultiline`
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `randomize`
 - `cfg` = `8`
+- `denoise` = `simple`
 - `sampler_name` = `2.5`
 - `scheduler` = `ddim`
-- `denoise` = `simple`
+- `seed` = `enable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **62%**（24/39）
 
-**有卡**：`CFGZeroStar`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`WanVideoNAG`、`CLIPLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`KSamplerAdvanced`、`JoinStringMulti`、`VAEDecode`、`VHS_VideoCombine`、`SaveImage`、`String`、`EmptyHunyuanLatentVideo`、`JWStringMultiline`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、CFGZeroStar
+**有卡**：`SetNode`、`GetNode`、`CFGZeroStar`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`WanVideoNAG`、`CLIPLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`MarkdownNote`、`CLIPTextEncode`、`KSamplerAdvanced`

@@ -1,5 +1,5 @@
 ---
-key: 文生图Wan2.2 极简+高清_1974421120923340802.json
+key: 图片生成/文生图/文生图Wan2.2 极简+高清_1974421120923340802.json
 name: 文生图Wan2.2 极简+高清_1974421120923340802
 type: Unknown Workflow
 status: completed
@@ -15,51 +15,47 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "eul
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 文生图Wan2.2 极简+高清_1974421120923340802.json
+# 图片生成/文生图/文生图Wan2.2 极简+高清_1974421120923340802.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图Wan2.2 极简+高清_1974421120923340802.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（17 个）：
 - `VAELoader`
 - `EmptyHunyuanLatentVideo`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `easy cleanGpuUsed`
 - `Text`
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `SaveImage`
 - `SeedVR2`
 - `Image Comparer (rgthree)`
 - `Anything Everywhere3`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PreviewImage`
 - `SeedVR2BlockSwap`
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `fixed`
 - `cfg` = `8`
+- `denoise` = `simple`
 - `sampler_name` = `1`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `enable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **76%**（13/17）
 
-**有卡**：`VAELoader`、`EmptyHunyuanLatentVideo`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`Text`、`KSamplerAdvanced`、`VAEDecode`、`SaveImage`、`SeedVR2`、`LoraLoaderModelOnly`、`SeedVR2BlockSwap`
+**有卡**：`VAELoader`、`EmptyHunyuanLatentVideo`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`easy cleanGpuUsed`、`Text`、`KSamplerAdvanced`、`VAEDecode`、`SaveImage`、`SeedVR2`、`Image Comparer (rgthree)`
 
 **缺卡**（1）：`easy cleanGpuUsed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、SeedVR2
 
 ## 学习发现
 

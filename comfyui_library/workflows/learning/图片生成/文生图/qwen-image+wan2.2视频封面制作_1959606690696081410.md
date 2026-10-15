@@ -1,5 +1,5 @@
 ---
-key: qwen-image+wan2.2视频封面制作_1959606690696081410.json
+key: 图片生成/文生图/qwen-image+wan2.2视频封面制作_1959606690696081410.json
 name: qwen-image+wan2.2视频封面制作_1959606690696081410
 type: Unknown Workflow
 status: completed
@@ -15,44 +15,42 @@ parameters: {"cfg": 3.5, "denoise": 0.30000000000000004, "sampler_name": "euler"
 discoveries: [次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `MaskBoundingBox+` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskPreview` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `LayerMask: MaskPreview` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `LayerMask: MaskPreview` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# qwen-image+wan2.2视频封面制作_1959606690696081410.json
+# 图片生成/文生图/qwen-image+wan2.2视频封面制作_1959606690696081410.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen-image+wan2.2视频封面制作_1959606690696081410.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（88 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `JjkText`
 - `JjkText`
 - `JjkText`
 - `QwenVLDetection`
 - `BBoxesToSAM2`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingSD3`
 - `VAELoader`
 - `JjkText`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LayerUtility: PurgeVRAM`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JjkText`
 - `easy showAnything`
 - `SeedVR2BlockSwap`
 - `SeedVR2`
 - `LayerUtility: PurgeVRAM`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JjkText`
 - `VAELoader`
 - `CLIPLoader`
 - `JjkText`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `EmptySD3LatentImage`
 - `ImpactSwitch`
 - `LimitNumber`
@@ -79,12 +77,12 @@ discoveries: [次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类�
 - `ModelSamplingAuraFlow`
 - `easy showAnything`
 - `easy showAnything`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
+- `KSampler`
 - `PrimitiveInt`
 - `easy seed`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LayerMask: MaskPreview`
 - `JjkText`
 - `JjkText`
@@ -97,15 +95,15 @@ discoveries: [次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类�
 - `MathExpression|pysssss`
 - `MaskBoundingBox+`
 - `LayerMask: MaskGrow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `RH_Captioner`
-- `KSampler` ★核心
+- `KSampler`
 - `RH_LLMAPI_NODE`
 - `DownloadAndLoadQwenModel`
 - `TextCombinerSix`
 - `RH_LLMAPI_NODE`
 - `JjkText`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LoadImage`
 - `SaveImage`
 - `SaveImage`
@@ -115,22 +113,20 @@ discoveries: [次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `756467682942260`
-- `steps` = `20`
 - `cfg` = `3.5`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `0.30000000000000004`
+- `seed` = `756467682942260`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **59%**（52/88）
 
-**有卡**：`CLIPTextEncode`、`QwenVLDetection`、`BBoxesToSAM2`、`CLIPLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`UNETLoader`、`ModelSamplingSD3`、`VAELoader`、`VAEDecode`、`SeedVR2BlockSwap`、`SeedVR2`、`EmptySD3LatentImage`、`LimitNumber`、`TextCombinerTwo`、`TextCombinerSix`、`InpaintModelConditioning`、`ModelSamplingAuraFlow`、`KSampler`、`GetMaskSizeAndCount`、`RH_Captioner`、`RH_LLMAPI_NODE`、`DownloadAndLoadQwenModel`、`LoadImage`、`SaveImage`、`CreateShapeMask`
+**有卡**：`CLIPTextEncode`、`JjkText`、`QwenVLDetection`、`BBoxesToSAM2`、`CLIPLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`UNETLoader`、`ModelSamplingSD3`、`VAELoader`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`easy showAnything`、`SeedVR2BlockSwap`、`SeedVR2`、`EmptySD3LatentImage`、`ImpactSwitch`、`LimitNumber`、`Note`、`TextCombinerTwo`、`TextCombinerSix`、`InpaintModelConditioning`、`LayerMask: MaskPreview`
 
 **缺卡**（14）：`LayerMask: MaskGrow`、`LayerMask: SAM2Ultra`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`MaskBoundingBox+`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`LayerMask: MaskPreview`、`LayerMask: MaskPreview`、`LayerMask: MaskPreview`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 学习发现
 

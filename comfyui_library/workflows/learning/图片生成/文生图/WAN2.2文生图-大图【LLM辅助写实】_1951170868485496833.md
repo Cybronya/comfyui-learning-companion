@@ -1,5 +1,5 @@
 ---
-key: WAN2.2文生图-大图【LLM辅助写实】_1951170868485496833.json
+key: 图片生成/文生图/WAN2.2文生图-大图【LLM辅助写实】_1951170868485496833.json
 name: WAN2.2文生图-大图【LLM辅助写实】_1951170868485496833
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 10, "denoise": 0.25000000000000006, "sampler_name": "euler",
 discoveries: [次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# WAN2.2文生图-大图【LLM辅助写实】_1951170868485496833.json
+# 图片生成/文生图/WAN2.2文生图-大图【LLM辅助写实】_1951170868485496833.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.2文生图-大图【LLM辅助写实】_1951170868485496833.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（46 个）：
 - `ImageFromBatch`
@@ -32,37 +30,37 @@ discoveries: [次要节点 `Image Tiled` 知识库中没有该节点类型的任
 - `ImageFromBatch`
 - `ImageFromBatch`
 - `ImageUpscaleWithModel`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
 - `TeaCache`
 - `TeaCache`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `PreviewImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ImageUpscaleWithModel`
 - `UpscaleModelLoader`
 - `ImageScaleBy`
-- `VAEEncode` ★核心
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `VAEEncode`
+- `UNETLoader`
+- `VAEDecode`
 - `ImageFromBatch`
 - `ImageConcanateOfUtils`
 - `ImageConcanateOfUtils`
 - `ImageConcanateOfUtils`
-- `KSampler` ★核心
-- `VAEEncode` ★核心
+- `KSampler`
+- `VAEEncode`
 - `ImageScaleBy`
 - `PreviewImage`
 - `PreviewImage`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `SaveImage`
-- `KSampler` ★核心
+- `KSampler`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `RH_LLMAPI_NODE`
 - `EmptyHunyuanLatentVideo`
 - `Text Multiline`
@@ -73,22 +71,20 @@ discoveries: [次要节点 `Image Tiled` 知识库中没有该节点类型的任
 
 ## 关键参数
 
-- `seed` = `14`
-- `steps` = `20`
 - `cfg` = `10`
+- `denoise` = `0.25000000000000006`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `0.25000000000000006`
+- `seed` = `14`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **83%**（38/46）
 
-**有卡**：`ImageFromBatch`、`ImageUpscaleWithModel`、`UNETLoader`、`ModelSamplingSD3`、`TeaCache`、`KSampler`、`VAEDecode`、`CLIPTextEncode`、`UpscaleModelLoader`、`ImageScaleBy`、`VAEEncode`、`ImageConcanateOfUtils`、`VAEDecodeTiled`、`SaveImage`、`CLIPLoader`、`VAELoader`、`RH_LLMAPI_NODE`、`EmptyHunyuanLatentVideo`
+**有卡**：`ImageFromBatch`、`ImageUpscaleWithModel`、`UNETLoader`、`ModelSamplingSD3`、`TeaCache`、`KSampler`、`VAEDecode`、`PreviewImage`、`CLIPTextEncode`、`UpscaleModelLoader`、`ImageScaleBy`、`VAEEncode`、`ImageConcanateOfUtils`、`VAEDecodeTiled`、`SaveImage`、`CLIPLoader`、`VAELoader`、`Note`
 
 **缺卡**（2）：`Image Tiled`、`Text Multiline`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、VAEDecodeTiled、VAEEncode
 
 ## 学习发现
 

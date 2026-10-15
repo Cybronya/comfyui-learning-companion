@@ -1,5 +1,5 @@
 ---
-key: InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json
+key: 图片生成/文生图/InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json
 name: InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369
 type: Image To Image
 status: completed
@@ -14,21 +14,19 @@ missing: []
 parameters: {"cfg": 2.5, "controlnet_strength": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 514475539865847, "steps": 20}
 ---
 
-# InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json
+# 图片生成/文生图/InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/InstantX_Qwen-Image-ControlNet-Union（,线稿_深度_姿态）_1961145405088186369.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（72 个）：
 - `MarkdownNote`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `Note`
 - `MarkdownNote`
@@ -36,13 +34,13 @@ parameters: {"cfg": 2.5, "controlnet_strength": 1, "denoise": 1, "sampler_name":
 - `MarkdownNote`
 - `MarkdownNote`
 - `Canny`
-- `ControlNetApplyAdvanced` ★核心
-- `VAEEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced`
+- `VAEEncode`
+- `CLIPTextEncode`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `CLIPTextEncode`
 - `LoadImage`
 - `DownloadAndLoadDepthAnythingV2Model`
 - `DepthAnything_V2`
@@ -51,43 +49,43 @@ parameters: {"cfg": 2.5, "controlnet_strength": 1, "denoise": 1, "sampler_name":
 - `MarkdownNote`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `Note`
 - `MarkdownNote`
 - `MarkdownNote`
 - `MarkdownNote`
-- `ControlNetApplyAdvanced` ★核心
-- `VAEEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced`
+- `VAEEncode`
+- `CLIPTextEncode`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `CLIPTextEncode`
 - `LoadImage`
 - `ControlNetLoader`
 - `SaveImage`
 - `MarkdownNote`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `Note`
 - `MarkdownNote`
 - `MarkdownNote`
 - `MarkdownNote`
 - `Canny`
-- `ControlNetApplyAdvanced` ★核心
-- `VAEEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced`
+- `VAEEncode`
+- `CLIPTextEncode`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `CLIPTextEncode`
 - `LoadImage`
 - `SaveImage`
 - `ImageScaleToTotalPixels`
@@ -100,18 +98,16 @@ parameters: {"cfg": 2.5, "controlnet_strength": 1, "denoise": 1, "sampler_name":
 
 ## 关键参数
 
-- `controlnet_strength` = `1`
-- `seed` = `514475539865847`
-- `steps` = `20`
 - `cfg` = `2.5`
+- `controlnet_strength` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `514475539865847`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **71%**（51/72）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`ModelSamplingAuraFlow`、`VAEDecode`、`ImageScaleToTotalPixels`、`Canny`、`ControlNetApplyAdvanced`、`VAEEncode`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSampler`、`LoadImage`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`ControlNetLoader`、`SaveImage`、`DWPreprocessor`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+**有卡**：`MarkdownNote`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`ModelSamplingAuraFlow`、`VAEDecode`、`Note`、`ImageScaleToTotalPixels`、`Canny`、`ControlNetApplyAdvanced`、`VAEEncode`、`CLIPTextEncode`、`PreviewImage`、`LoraLoaderModelOnly`、`KSampler`、`LoadImage`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`ControlNetLoader`、`SaveImage`

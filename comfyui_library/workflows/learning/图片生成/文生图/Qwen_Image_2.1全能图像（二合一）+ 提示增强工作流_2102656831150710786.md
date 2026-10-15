@@ -1,5 +1,5 @@
 ---
-key: Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
+key: 图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
 name: Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
+# 图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（38 个）：
 - `MarkdownNote`
@@ -44,8 +42,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `Label (rgthree)`
 - `TextGenerate`
 - `PrimitiveStringMultiline`
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
+- `EmptyLatentImage`
+- `UNETLoader`
 - `CLIPLoader`
 - `PrimitiveStringMultiline`
 - `ComfySwitchNode`
@@ -54,36 +52,34 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `PrimitiveBoolean`
 - `StringConcatenate`
 - `Textbox`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ResolutionSelector`
 - `ComfySwitchNode`
 - `Note`
 - `Note`
 - `PrimitiveBoolean`
 - `VAELoader`
-- `KSampler` ★核心
+- `KSampler`
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1536`
 - `batch_size` = `1`
-- `seed` = `739404592123668`
-- `steps` = `35`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `739404592123668`
+- `steps` = `35`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **74%**（28/38）
 
-**有卡**：`TextEncodeQwenImage21`、`QwenImage21Cache`、`SaveImageAdvanced`、`SaveImage`、`LoadImage`、`TextGenerate`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`SeedNode`、`PrimitiveBoolean`、`StringConcatenate`、`Textbox`、`VAEDecode`、`ResolutionSelector`、`VAELoader`、`KSampler`
+**有卡**：`MarkdownNote`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`PreviewAny`、`SaveImageAdvanced`、`SaveImage`、`LoadImage`、`Label (rgthree)`、`TextGenerate`、`PrimitiveStringMultiline`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`ComfySwitchNode`、`SeedNode`、`PrimitiveBoolean`
 
 **缺卡**（1）：`Label (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 学习发现
 

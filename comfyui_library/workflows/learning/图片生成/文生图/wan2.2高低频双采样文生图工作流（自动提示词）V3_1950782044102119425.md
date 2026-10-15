@@ -1,5 +1,5 @@
 ---
-key: wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json
+key: 图片生成/文生图/wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json
 name: wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425
 type: Unknown Workflow
 status: completed
@@ -15,41 +15,39 @@ parameters: {"cfg": 10, "denoise": "simple", "sampler_name": 1, "scheduler": "eu
 discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json
+# 图片生成/文生图/wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（35 个）：
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `EmptyHunyuanLatentVideo`
 - `ImpactInt`
 - `ImpactInt`
 - `ShowText|pysssss`
 - `Wan_video_prompt_generator`
 - `RH_LLMAPI_NODE`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CR Text Concatenate`
 - `CR Text`
 - `ShowText|pysssss`
@@ -62,22 +60,20 @@ discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `10`
+- `denoise` = `simple`
 - `sampler_name` = `1`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **77%**（27/35）
 
-**有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`ModelSamplingSD3`、`VAELoader`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`Wan_video_prompt_generator`、`RH_LLMAPI_NODE`、`CLIPTextEncode`、`CLIPLoader`、`SaveImage`
+**有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`ModelSamplingSD3`、`VAELoader`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`ShowText|pysssss`、`Wan_video_prompt_generator`、`RH_LLMAPI_NODE`、`CLIPTextEncode`、`CLIPLoader`、`CR Text Concatenate`
 
 **缺卡**（4）：`CR Simple Image Compare`、`CR Text`、`CR Text Concatenate`、`Text Multiline`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、CFGZeroStarAndInit
 
 ## 学习发现
 

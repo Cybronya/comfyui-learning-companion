@@ -1,5 +1,5 @@
 ---
-key: SPARK.Chroma_preview 反推文生图_1984856656842473473.json
+key: 图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json
 name: SPARK.Chroma_preview 反推文生图_1984856656842473473
 type: Unknown Workflow
 status: completed
@@ -13,28 +13,26 @@ patterns: []
 missing: []
 ---
 
-# SPARK.Chroma_preview 反推文生图_1984856656842473473.json
+# 图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（16 个）：
 - `CLIPLoader`
 - `VAELoader`
 - `T5TokenizerOptions`
 - `CFGGuider`
-- `KSamplerSelect` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `KSamplerSelect`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `SaveImage`
 - `RandomNoise`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `EmptySD3LatentImage`
 - `AILab_QwenVL`
 - `LoadImage`
@@ -44,5 +42,3 @@ missing: []
 覆盖率 **100%**（16/16）
 
 **有卡**：`CLIPLoader`、`VAELoader`、`T5TokenizerOptions`、`CFGGuider`、`KSamplerSelect`、`CLIPTextEncode`、`VAEDecode`、`BasicScheduler`、`SamplerCustomAdvanced`、`SaveImage`、`RandomNoise`、`UNETLoader`、`EmptySD3LatentImage`、`AILab_QwenVL`、`LoadImage`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGGuider、KSamplerSelect

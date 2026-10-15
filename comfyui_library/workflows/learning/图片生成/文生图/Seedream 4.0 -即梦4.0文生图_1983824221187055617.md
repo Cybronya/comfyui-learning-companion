@@ -1,5 +1,5 @@
 ---
-key: Seedream 4.0 -即梦4.0文生图_1983824221187055617.json
+key: 图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json
 name: Seedream 4.0 -即梦4.0文生图_1983824221187055617
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text, CR Text Concatenate, easy int]
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
-# Seedream 4.0 -即梦4.0文生图_1983824221187055617.json
+# 图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（18 个）：
 - `SaveImage`
@@ -46,11 +44,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **17%**（3/18）
 
-**有卡**：`SaveImage`、`InversionDemoLazyIndexSwitch`、`RH_Jimeng4_Image2Image`
+**有卡**：`SaveImage`、`JjkText`
 
 **缺卡**（3）：`CR Text`、`CR Text Concatenate`、`easy int`
-
-**用到的条目**：SaveImage、InversionDemoLazyIndexSwitch、RH_Jimeng4_Image2Image、sd15-t2i-basic、sd15-t2i-lora、Int、node、ShowText
 
 ## 学习发现
 

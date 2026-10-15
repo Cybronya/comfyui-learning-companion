@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1图像生成大合集｜文生图海报制作图生图｜一站式出图全家桶_2104759923023372289.json
+key: 图片生成/文生图/Qwen Image 2.1图像生成大合集｜文生图海报制作图生图｜一站式出图全家桶_2104759923023372289.json
 name: Qwen Image 2.1图像生成大合集｜文生图海报制作图生图｜一站式出图全家桶_2104759923023372289
 type: Text To Image
 status: completed
@@ -16,40 +16,38 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1图像生成大合集｜文生图海报制作图生图｜一站式出图全家桶_2104759923023372289.json
+# 图片生成/文生图/Qwen Image 2.1图像生成大合集｜文生图海报制作图生图｜一站式出图全家桶_2104759923023372289.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1图像生成大合集｜文生图海报制作图生图｜一站式出图全家桶_2104759923023372289.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（106 个）：
 - `LayerUtility: ImageReelComposit`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy setNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Image Comparer (rgthree)`
 - `PreviewImage`
 - `LayerUtility: ImageReel`
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `TextEncodeQwenImage21`
 - `ComfySwitchNode`
 - `PreviewImage`
 - `LayerUtility: ImageReel`
 - `LayerUtility: ImageReelComposit`
 - `easy setNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `SaveImage`
 - `easy setNode`
 - `Seed (rgthree)`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `ResolutionSelector`
 - `easy showAnything`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `QwenImage21Cache`
 - `VAELoader`
 - `Anything Everywhere3`
@@ -57,9 +55,9 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 - `SetNode`
 - `GetNode`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `TextGenerateLTX2Prompt`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ShowText|pysssss`
 - `GetNode`
 - `CR Prompt Text`
@@ -72,14 +70,14 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 - `LoadImage`
 - `GetNode`
 - `ResolutionSelector`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `LoadImage`
 - `LoadImage`
 - `PreviewAny`
 - `TextGenerateLTX2Prompt`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `CR Prompt Text`
 - `CLIPLoader`
 - `CLIPLoader`
@@ -90,71 +88,69 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 - `Fast Groups Bypasser (rgthree)`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **70%**（74/106）
 
-**有卡**：`VAEDecode`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`SaveImage`、`KSampler`、`ResolutionSelector`、`UNETLoader`、`QwenImage21Cache`、`VAELoader`、`LoadImage`、`TextGenerateLTX2Prompt`、`BatchImagesNode`、`CLIPLoader`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
+**有卡**：`LayerUtility: ImageReelComposit`、`VAEDecode`、`easy setNode`、`Image Comparer (rgthree)`、`PreviewImage`、`LayerUtility: ImageReel`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`ComfySwitchNode`、`SaveImage`、`Seed (rgthree)`、`KSampler`、`ResolutionSelector`、`easy showAnything`、`UNETLoader`、`QwenImage21Cache`、`VAELoader`、`Anything Everywhere3`、`SetNode`、`GetNode`、`LoadImage`、`TextGenerateLTX2Prompt`、`ShowText|pysssss`、`CR Prompt Text`、`BatchImagesNode`、`PreviewAny`、`CLIPLoader`、`Fast Groups Bypasser (rgthree)`、`孤海注释`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`JjkText`
 
 **缺卡**（11）：`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`easy setNode`、`easy setNode`、`easy setNode`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`Seed (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

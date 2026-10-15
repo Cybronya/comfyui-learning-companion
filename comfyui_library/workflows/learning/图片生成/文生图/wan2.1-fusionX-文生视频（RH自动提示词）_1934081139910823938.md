@@ -1,5 +1,5 @@
 ---
-key: wan2.1-fusionX-文生视频（RH自动提示词）_1934081139910823938.json
+key: 图片生成/文生图/wan2.1-fusionX-文生视频（RH自动提示词）_1934081139910823938.json
 name: wan2.1-fusionX-文生视频（RH自动提示词）_1934081139910823938
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text, CR Text, CR Text, CR Text Concatenate]
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.1-fusionX-文生视频（RH自动提示词）_1934081139910823938.json
+# 图片生成/文生图/wan2.1-fusionX-文生视频（RH自动提示词）_1934081139910823938.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1-fusionX-文生视频（RH自动提示词）_1934081139910823938.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Process → Other
 
 **节点**（35 个）：
 - `GIMMVFI_interpolate`
@@ -28,7 +26,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `UpscaleModelLoader`
 - `WanVideoDecode`
 - `GetNode`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoExperimentalArgs`
 - `WanVideoSLG`
 - `WanVideoEnhanceAVideo`
@@ -63,11 +61,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **60%**（21/35）
 
-**有卡**：`GIMMVFI_interpolate`、`ImageScaleToMegapixels`、`UpscaleModelLoader`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoSLG`、`WanVideoEnhanceAVideo`、`WanVideoApplyNAG`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`DownloadAndLoadGIMMVFIModel`、`VHS_VideoCombine`、`WanVideoEmptyEmbeds`、`WanVideoTeaCache`、`WanVideoTextEncodeSingle`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoVAELoader`、`RH_Prompter`
+**有卡**：`GIMMVFI_interpolate`、`ImageScaleToMegapixels`、`UpscaleModelLoader`、`WanVideoDecode`、`GetNode`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoSLG`、`WanVideoEnhanceAVideo`、`SetNode`、`WanVideoApplyNAG`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`DownloadAndLoadGIMMVFIModel`、`VHS_VideoCombine`、`WanVideoEmptyEmbeds`、`WanVideoTeaCache`、`WanVideoTextEncodeSingle`、`LoadWanVideoT5TextEncoder`
 
 **缺卡**（4）：`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`
-
-**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、UpscaleModelLoader、UpscaleModelLoader、RH_Prompter
 
 ## 学习发现
 

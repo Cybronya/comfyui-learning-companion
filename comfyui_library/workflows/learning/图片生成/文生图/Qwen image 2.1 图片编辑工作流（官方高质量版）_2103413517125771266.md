@@ -1,5 +1,5 @@
 ---
-key: Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json
+key: 图片生成/文生图/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json
 name: Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json
+# 图片生成/文生图/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image 2.1 图片编辑工作流（官方高质量版）_2103413517125771266.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（42 个）：
 - `ImageScaleToTotalPixels`
@@ -37,7 +35,7 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 - `PrimitiveBoolean`
 - `孤海注释`
 - `JoinStrings`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `TextGenerate`
 - `easy positive`
@@ -45,14 +43,14 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 - `SaveImage`
 - `QwenImage21Cache`
 - `TextEncodeQwenImage21`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `CLIPLoader`
 - `ShowText|pysssss`
 - `忽略多组孤海`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
@@ -69,25 +67,23 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `633386983712418`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `633386983712418`
+- `steps` = `25`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **83%**（35/42）
 
-**有卡**：`ImageScaleToTotalPixels`、`PrimitiveBoolean`、`JoinStrings`、`EmptyLatentImage`、`TextGenerate`、`BatchImagesNode`、`SaveImage`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`KSampler`、`LoadImage`、`ResolutionSelector`
+**有卡**：`ImageScaleToTotalPixels`、`PrimitiveBoolean`、`孤海注释`、`JoinStrings`、`EmptyLatentImage`、`ComfySwitchNode`、`TextGenerate`、`easy positive`、`BatchImagesNode`、`SaveImage`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ShowText|pysssss`、`忽略多组孤海`、`VAEDecode`、`KSampler`、`LoadImage`
 
 **缺卡**（3）：`easy positive`、`easy positive`、`忽略多组孤海`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 学习发现
 

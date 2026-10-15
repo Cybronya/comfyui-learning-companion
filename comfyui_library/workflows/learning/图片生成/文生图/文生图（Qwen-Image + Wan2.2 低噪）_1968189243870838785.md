@@ -1,5 +1,5 @@
 ---
-key: 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
+key: 图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
 name: 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785
 type: Unknown Workflow
 status: completed
@@ -16,48 +16,46 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
+# 图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图（Qwen-Image + Wan2.2 低噪）_1968189243870838785.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（40 个）：
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `VAEEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEEncode`
+- `CLIPTextEncode`
 - `ImageScaleToMegapixels`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `UpscaleModelLoader`
 - `SaveImage`
 - `CLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ImageScaleToMegapixels`
 - `BetterFilmGrain`
 - `ImageSharpen`
 - `JWInteger`
 - `JWInteger`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PrimitiveStringMultiline`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `UNETLoader` ★核心
+- `KSampler`
+- `KSampler`
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
 - `CFGNorm`
 - `NunchakuQwenImageDiTLoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingAuraFlow`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `JWInteger`
 - `JWInteger`
 - `EmptySD3LatentImage`
@@ -68,20 +66,18 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `1088836026456039`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1088836026456039`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **95%**（38/40）
 
-**有卡**：`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`VAEEncode`、`ImageScaleToMegapixels`、`VAEDecode`、`UpscaleModelLoader`、`SaveImage`、`CLIPLoader`、`BetterFilmGrain`、`ImageSharpen`、`JWInteger`、`KSampler`、`ModelSamplingAuraFlow`、`CFGNorm`、`NunchakuQwenImageDiTLoader`、`EmptySD3LatentImage`、`LazySwitch2way`、`PrimitiveBoolean`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、CFGNorm
+**有卡**：`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`VAEEncode`、`ImageScaleToMegapixels`、`VAEDecode`、`UpscaleModelLoader`、`SaveImage`、`CLIPLoader`、`BetterFilmGrain`、`ImageSharpen`、`JWInteger`、`PrimitiveStringMultiline`、`KSampler`、`ModelSamplingAuraFlow`、`CFGNorm`、`NunchakuQwenImageDiTLoader`、`EmptySD3LatentImage`、`Note`
 
 ## 参数体检
 

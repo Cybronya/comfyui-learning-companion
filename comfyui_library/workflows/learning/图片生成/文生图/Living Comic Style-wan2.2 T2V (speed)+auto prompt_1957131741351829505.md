@@ -1,5 +1,5 @@
 ---
-key: Living Comic Style-wan2.2 T2V (speed)+auto prompt_1957131741351829505.json
+key: 图片生成/文生图/Living Comic Style-wan2.2 T2V (speed)+auto prompt_1957131741351829505.json
 name: Living Comic Style-wan2.2 T2V (speed)+auto prompt_1957131741351829505
 type: Unknown Workflow
 status: completed
@@ -15,16 +15,14 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "e
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# Living Comic Style-wan2.2 T2V (speed)+auto prompt_1957131741351829505.json
+# 图片生成/文生图/Living Comic Style-wan2.2 T2V (speed)+auto prompt_1957131741351829505.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Living Comic Style-wan2.2 T2V (speed)+auto prompt_1957131741351829505.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（42 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VAELoader`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
@@ -33,8 +31,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `Note`
 - `Note`
 - `CLIPLoader`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `SimpleMath+`
 - `EmptyHunyuanLatentVideo`
 - `MathExpression|pysssss`
@@ -47,15 +45,15 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `RH_Prompter`
 - `ShowText|pysssss`
 - `INTConstant`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `easy ifElse`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `INTConstant`
 - `DF_Integer`
 - `DF_Integer`
@@ -69,22 +67,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `8`
+- `denoise` = `simple`
 - `sampler_name` = `3.5`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **69%**（29/42）
 
-**有卡**：`VAEDecode`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPLoader`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`、`DF_Integer`、`RH_Prompter`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`PrimitiveBoolean`、`RH_Translator`、`ShellAgentPluginInputText`、`VHS_VideoCombine`、`ShellAgentPluginSaveVideoVHS`
+**有卡**：`VAEDecode`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`Note`、`CLIPLoader`、`KSamplerAdvanced`、`SimpleMath+`、`EmptyHunyuanLatentVideo`、`MathExpression|pysssss`、`ShowText|pysssss`、`DF_Integer`、`CR Text Concatenate`、`RH_Prompter`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`
 
 **缺卡**（8）：`CR Text`、`CR Text Concatenate`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`SimpleMath+`、`Text Multiline`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

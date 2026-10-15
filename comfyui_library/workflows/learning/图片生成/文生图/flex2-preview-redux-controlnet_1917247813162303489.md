@@ -1,5 +1,5 @@
 ---
-key: flex2-preview-redux-controlnet_1917247813162303489.json
+key: 图片生成/文生图/flex2-preview-redux-controlnet_1917247813162303489.json
 name: flex2-preview-redux-controlnet_1917247813162303489
 type: Unknown Workflow
 status: completed
@@ -15,30 +15,28 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta"
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
 ---
 
-# flex2-preview-redux-controlnet_1917247813162303489.json
+# 图片生成/文生图/flex2-preview-redux-controlnet_1917247813162303489.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/flex2-preview-redux-controlnet_1917247813162303489.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（32 个）：
 - `SetNode`
 - `EmptySD3LatentImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LayerUtility: PurgeVRAM`
 - `SetNode`
 - `SetNode`
 - `SetNode`
 - `DualCLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `CLIPTextEncode`
 - `CFGZeroStar`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
 - `GetImageSizeAndCount`
 - `CLIPVisionLoader`
@@ -59,22 +57,20 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `851662770584958`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `deis`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `851662770584958`
+- `steps` = `25`
 
 ## 知识
 
 覆盖率 **78%**（25/32）
 
-**有卡**：`EmptySD3LatentImage`、`VAEDecode`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CFGZeroStar`、`UNETLoader`、`VAELoader`、`GetImageSizeAndCount`、`CLIPVisionLoader`、`StyleModelApply`、`StyleModelLoader`、`Florence2Run`、`Florence2ModelLoader`、`CLIPVisionEncode`、`ImageScaleToTotalPixels`、`DepthAnythingPreprocessor`、`Flex2Conditioner`、`SaveImage`、`LoadImage`
+**有卡**：`SetNode`、`EmptySD3LatentImage`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CFGZeroStar`、`UNETLoader`、`VAELoader`、`GetImageSizeAndCount`、`CLIPVisionLoader`、`StyleModelApply`、`StyleModelLoader`、`Florence2Run`、`Florence2ModelLoader`、`CLIPVisionEncode`、`ImageScaleToTotalPixels`、`DepthAnythingPreprocessor`
 
 **缺卡**（1）：`LayerUtility: PurgeVRAM`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、DepthAnythingPreprocessor
 
 ## 学习发现
 

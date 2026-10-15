@@ -1,5 +1,5 @@
 ---
-key: Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
+key: 图片生成/文生图/Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
 name: Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929
 type: Unknown Workflow
 status: completed
@@ -14,111 +14,107 @@ missing: []
 parameters: {"batch_size": 1, "height": 1280, "width": 720}
 ---
 
-# Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
+# 图片生成/文生图/Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku_Flux_12Lora_TurboVersion_v1_1914962492102012929.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（85 个）：
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `BasicGuider`
 - `BasicGuider`
 - `BasicGuider`
 - `BasicGuider`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `BasicGuider`
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `BasicGuider`
-- `BasicGuider`
-- `BasicGuider`
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
-- `BasicGuider`
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `BasicGuider`
 - `BasicGuider`
 - `BasicGuider`
-- `SamplerCustomAdvanced` ★核心
-- `KSamplerSelect` ★核心
-- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `BasicGuider`
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `BasicGuider`
+- `BasicGuider`
+- `BasicGuider`
+- `SamplerCustomAdvanced`
+- `KSamplerSelect`
+- `KSamplerSelect`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
-- `KSamplerSelect` ★核心
-- `BasicScheduler`
-- `BasicScheduler`
-- `VAEDecode` ★核心
-- `SaveImage`
-- `SaveImage`
-- `SaveImage`
-- `SamplerCustomAdvanced` ★核心
-- `SaveImage`
-- `SaveImage`
-- `SaveImage`
-- `SaveImage`
-- `SaveImage`
-- `SaveImage`
-- `SaveImage`
-- `NunchakuFluxLoraLoader` ★核心
+- `KSamplerSelect`
+- `KSamplerSelect`
 - `BasicScheduler`
 - `BasicScheduler`
+- `VAEDecode`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SamplerCustomAdvanced`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `NunchakuFluxLoraLoader`
 - `BasicScheduler`
 - `BasicScheduler`
 - `BasicScheduler`
 - `BasicScheduler`
 - `BasicScheduler`
+- `BasicScheduler`
+- `BasicScheduler`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
-- `NunchakuFluxLoraLoader` ★核心
+- `EmptyLatentImage`
+- `NunchakuFluxLoraLoader`
 - `SaveImage`
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
 - `VAELoader`
 - `DualCLIPLoader`
 - `NunchakuFluxDiTLoader`
-- `KSamplerSelect` ★核心
-- `CLIPTextEncodeFlux` ★核心
+- `KSamplerSelect`
+- `CLIPTextEncodeFlux`
 - `RandomNoise`
 
 ## 关键参数
 
-- `width` = `720`
-- `height` = `1280`
 - `batch_size` = `1`
+- `height` = `1280`
+- `width` = `720`
 
 ## 知识
 
 覆盖率 **100%**（85/85）
 
 **有卡**：`SamplerCustomAdvanced`、`VAEDecode`、`BasicGuider`、`KSamplerSelect`、`BasicScheduler`、`SaveImage`、`NunchakuFluxLoraLoader`、`EmptyLatentImage`、`VAELoader`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`CLIPTextEncodeFlux`、`RandomNoise`
-
-**用到的条目**：VAEDecode、VAELoader、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、CLIPTextEncodeFlux、NunchakuFluxLoraLoader、DualCLIPLoader

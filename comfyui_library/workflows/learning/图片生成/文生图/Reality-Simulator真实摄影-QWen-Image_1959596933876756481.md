@@ -1,5 +1,5 @@
 ---
-key: Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+key: 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
 name: Reality-Simulator真实摄影-QWen-Image_1959596933876756481
 type: Unknown Workflow
 status: completed
@@ -15,26 +15,24 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
+# 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（17 个）：
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `PrimitiveString`
 - `RH_Captioner`
 - `Text Concatenate`
@@ -44,22 +42,20 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `260801771094525`
-- `steps` = `20`
 - `cfg` = `2.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `260801771094525`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **76%**（13/17）
 
-**有卡**：`KSampler`、`SaveImage`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`CFGNorm`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`RH_Captioner`、`LoadImage`
+**有卡**：`KSampler`、`SaveImage`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`CFGNorm`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`PrimitiveString`、`RH_Captioner`
 
 **缺卡**（2）：`Text Concatenate`、`CR SDXL Aspect Ratio`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage
 
 ## 学习发现
 

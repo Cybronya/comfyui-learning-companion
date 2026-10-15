@@ -1,5 +1,5 @@
 ---
-key: BF16小字不崩-Qwen image 2.1图片编辑_2102769559072763906.json
+key: 图片生成/文生图/BF16小字不崩-Qwen image 2.1图片编辑_2102769559072763906.json
 name: BF16小字不崩-Qwen image 2.1图片编辑_2102769559072763906
 type: Unknown Workflow
 status: completed
@@ -15,23 +15,21 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# BF16小字不崩-Qwen image 2.1图片编辑_2102769559072763906.json
+# 图片生成/文生图/BF16小字不崩-Qwen image 2.1图片编辑_2102769559072763906.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/BF16小字不崩-Qwen image 2.1图片编辑_2102769559072763906.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（25 个）：
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `QwenImage21Cache`
-- `KSampler` ★核心
+- `KSampler`
 - `ComfySwitchNode`
 - `ResolutionSelector`
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
+- `EmptyLatentImage`
+- `UNETLoader`
 - `SaveImage`
 - `CR Prompt Text`
 - `LoadImage`
@@ -52,25 +50,23 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 关键参数
 
-- `seed` = `999`
-- `steps` = `50`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `999`
+- `steps` = `50`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **92%**（23/25）
 
-**有卡**：`VAELoader`、`VAEDecode`、`QwenImage21Cache`、`KSampler`、`ResolutionSelector`、`EmptyLatentImage`、`UNETLoader`、`SaveImage`、`LoadImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`SaveImageAdvanced`
+**有卡**：`VAELoader`、`VAEDecode`、`QwenImage21Cache`、`KSampler`、`ComfySwitchNode`、`ResolutionSelector`、`EmptyLatentImage`、`UNETLoader`、`SaveImage`、`CR Prompt Text`、`LoadImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`SaveImageAdvanced`
 
 **缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 学习发现
 

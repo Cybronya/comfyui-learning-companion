@@ -1,5 +1,5 @@
 ---
-key: Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
+key: 图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
 name: Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922
 type: Image To Image
 status: completed
@@ -16,53 +16,49 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
+# 图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（19 个）：
 - `VAELoader`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ModelSamplingAuraFlow`
 - `ImagePadForOutpaint`
 - `PreviewImage`
 - `ControlNetLoader`
 - `Image Comparer (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LoadImage`
 - `ImageScaleToTotalPixels`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `PreviewImage`
 - `CLIPLoader`
 - `NunchakuQwenImageDiTLoader`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `ControlNetInpaintingAliMamaApply`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 
 **识别到的模式**：image_to_image
 
 ## 关键参数
 
-- `seed` = `512928016638163`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `512928016638163`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **84%**（16/19）
 
-**有卡**：`VAELoader`、`VAEEncode`、`ModelSamplingAuraFlow`、`ImagePadForOutpaint`、`ControlNetLoader`、`CLIPTextEncode`、`LoadImage`、`ImageScaleToTotalPixels`、`CLIPLoader`、`NunchakuQwenImageDiTLoader`、`KSampler`、`ControlNetInpaintingAliMamaApply`、`VAEDecode`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、ControlNetInpaintingAliMamaApply、ControlNetLoader
+**有卡**：`VAELoader`、`VAEEncode`、`ModelSamplingAuraFlow`、`ImagePadForOutpaint`、`PreviewImage`、`ControlNetLoader`、`Image Comparer (rgthree)`、`CLIPTextEncode`、`LoadImage`、`ImageScaleToTotalPixels`、`CLIPLoader`、`NunchakuQwenImageDiTLoader`、`KSampler`
 
 ## 参数体检
 

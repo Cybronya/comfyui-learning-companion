@@ -1,5 +1,5 @@
 ---
-key: （方案2）Wan2.2+Krea+Cn2.0（姿势_深度）+Pulid+InstantID全生态V2_1951200400257036289.json
+key: 图片生成/文生图/（方案2）Wan2.2+Krea+Cn2.0（姿势_深度）+Pulid+InstantID全生态V2_1951200400257036289.json
 name: （方案2）Wan2.2+Krea+Cn2.0（姿势_深度）+Pulid+InstantID全生态V2_1951200400257036289
 type: Image To Image
 status: completed
@@ -16,41 +16,39 @@ parameters: {"cfg": 1, "checkpoint": "juggernautXL_v9Rdphoto2Lightning.safetenso
 discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: MaskGrow` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: PersonMaskUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropBoxResolve` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LayerImageTransform` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LayerImageTransform` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Upscale Image` 仅有 Upscale 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# （方案2）Wan2.2+Krea+Cn2.0（姿势_深度）+Pulid+InstantID全生态V2_1951200400257036289.json
+# 图片生成/文生图/（方案2）Wan2.2+Krea+Cn2.0（姿势_深度）+Pulid+InstantID全生态V2_1951200400257036289.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/（方案2）Wan2.2+Krea+Cn2.0（姿势_深度）+Pulid+InstantID全生态V2_1951200400257036289.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（113 个）：
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `Note`
 - `DualCLIPLoader`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `VAELoader`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `KSampler`
 - `ControlNetLoader`
 - `SetUnionControlNetType`
 - `SetUnionControlNetType`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `BasicScheduler`
 - `BasicGuider`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `DownloadAndLoadDepthAnythingV2Model`
 - `JWInteger`
 - `LoadImage`
@@ -65,10 +63,10 @@ discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型�
 - `LayerMask: MaskGrow`
 - `ControlNetLoader`
 - `SetLatentNoiseMask`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `InstantIDFaceAnalysis`
-- `ControlNetApplyAdvanced` ★核心
-- `VAEDecode` ★核心
+- `ControlNetApplyAdvanced`
+- `VAEDecode`
 - `ImageScaleBy`
 - `LayerMask: MaskGrow`
 - `CM_IntToFloat`
@@ -79,7 +77,7 @@ discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型�
 - `PreviewImage`
 - `MaskPreview+`
 - `GetImageSize+`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy imageColorMatch`
 - `PreviewImage`
 - `PreviewImage`
@@ -89,11 +87,11 @@ discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型�
 - `CM_IntToFloat`
 - `LayerUtility: CropByMask`
 - `LayerMask: PersonMaskUltra V2`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PreviewImage`
 - `LayerUtility: LayerImageTransform`
 - `SaveImage`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `ApplyInstantID`
 - `ApplyFBCacheOnModel`
 - `FaceAnalysisModels`
@@ -104,7 +102,7 @@ discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型�
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
-- `KSampler` ★核心
+- `KSampler`
 - `InstantIDModelLoader`
 - `ControlNetLoader`
 - `ImpactSwitch`
@@ -116,19 +114,19 @@ discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型�
 - `ControlNetLoader`
 - `PDIMAGE_LongerSize`
 - `LayerUtility: PurgeVRAM`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `FluxGuidance`
 - `VAELoader`
 - `SaveImage`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CR Prompt Text`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `RH_Captioner`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Bjornulf_TextToStringAndSeed`
 - `RandomNoise`
 - `ImageConcanate`
@@ -143,24 +141,22 @@ discoveries: [次要节点 `ImageComposite+` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `497163970725457`
-- `steps` = `10`
 - `cfg` = `1`
+- `checkpoint` = `juggernautXL_v9Rdphoto2Lightning.safetensors`
+- `controlnet_strength` = `0.1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
-- `controlnet_strength` = `0.1`
-- `checkpoint` = `juggernautXL_v9Rdphoto2Lightning.safetensors`
+- `seed` = `497163970725457`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **73%**（82/113）
 
-**有卡**：`KSamplerSelect`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`KSampler`、`ControlNetLoader`、`SetUnionControlNetType`、`SamplerCustomAdvanced`、`BasicScheduler`、`BasicGuider`、`ConditioningZeroOut`、`ControlNetApplyAdvanced`、`DownloadAndLoadDepthAnythingV2Model`、`JWInteger`、`LoadImage`、`EmptySD3LatentImage`、`CM_NumberUnaryOperation`、`CM_NumberToInt`、`ImageScale`、`SetLatentNoiseMask`、`VAEEncode`、`InstantIDFaceAnalysis`、`VAEDecode`、`ImageScaleBy`、`CM_IntToFloat`、`CM_IntToNumber`、`SaveImage`、`CheckpointLoaderSimple`、`ApplyInstantID`、`ApplyFBCacheOnModel`、`FaceAnalysisModels`、`FaceBoundingBox`、`JWImageResizeByLongerSide`、`InstantIDModelLoader`、`DepthAnything_V2`、`OpenposePreprocessor`、`SeedVR2`、`PDIMAGE_LongerSize`、`FluxGuidance`、`RH_Captioner`、`Bjornulf_TextToStringAndSeed`、`RandomNoise`、`ImageConcanate`、`NunchakuFluxDiTLoader`、`NunchakuFluxPuLIDApplyV2`、`NunchakuPuLIDLoaderV2`
+**有卡**：`KSamplerSelect`、`Note`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`KSampler`、`ControlNetLoader`、`SetUnionControlNetType`、`SamplerCustomAdvanced`、`BasicScheduler`、`BasicGuider`、`ConditioningZeroOut`、`ControlNetApplyAdvanced`、`DownloadAndLoadDepthAnythingV2Model`、`JWInteger`、`LoadImage`、`EmptySD3LatentImage`、`LayerUtility: PurgeVRAM`、`CM_NumberUnaryOperation`、`CM_NumberToInt`、`ImageScale`、`LayerMask: MaskGrow`、`SetLatentNoiseMask`、`VAEEncode`、`InstantIDFaceAnalysis`、`VAEDecode`、`ImageScaleBy`、`CM_IntToFloat`、`LayerMask: PersonMaskUltra V2`、`CR Upscale Image`、`CM_IntToNumber`、`PreviewImage`、`MaskPreview+`、`GetImageSize+`、`easy imageColorMatch`、`Image Comparer (rgthree)`、`LayerUtility: CropBoxResolve`、`LayerUtility: CropByMask`、`LayerUtility: LayerImageTransform`、`SaveImage`、`CheckpointLoaderSimple`、`ApplyInstantID`、`ApplyFBCacheOnModel`、`FaceAnalysisModels`、`FaceBoundingBox`、`PrimitiveNode`、`JWImageResizeByLongerSide`、`InstantIDModelLoader`
 
 **缺卡**（18）：`ImageComposite+`、`LayerMask: MaskGrow`、`LayerMask: MaskGrow`、`LayerMask: PersonMaskUltra V2`、`LayerMask: PersonMaskUltra V2`、`LayerUtility: CropBoxResolve`、`LayerUtility: CropByMask`、`LayerUtility: LayerImageTransform`、`LayerUtility: LayerImageTransform`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`easy imageColorMatch`、`CR Prompt Text`、`CR Upscale Image`、`GetImageSize+`、`MaskPreview+`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: QwenImage 2.1 - 文生图&图像编辑 - V2 GH加速版，媲美全能图片G2.5_2105227239670509570.json
+key: 图片生成/文生图/QwenImage 2.1 - 文生图&图像编辑 - V2 GH加速版，媲美全能图片G2.5_2105227239670509570.json
 name: QwenImage 2.1 - 文生图&图像编辑 - V2 GH加速版，媲美全能图片G2.5_2105227239670509570
 type: Image To Image
 status: completed
@@ -15,29 +15,27 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# QwenImage 2.1 - 文生图&图像编辑 - V2 GH加速版，媲美全能图片G2.5_2105227239670509570.json
+# 图片生成/文生图/QwenImage 2.1 - 文生图&图像编辑 - V2 GH加速版，媲美全能图片G2.5_2105227239670509570.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/QwenImage 2.1 - 文生图&图像编辑 - V2 GH加速版，媲美全能图片G2.5_2105227239670509570.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（78 个）：
 - `LoadImage`
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
+- `CLIPTextEncode`
 - `LatentSwitch`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `VAELoader`
 - `CLIPLoader`
 - `ReferenceLatent`
 - `ReferenceLatent`
-- `KSamplerAdvanced` ★核心
-- `UNETLoader` ★核心
+- `KSamplerAdvanced`
+- `UNETLoader`
 - `ImageScaleToTotalPixels`
 - `PDIMAGE_LongerSize`
 - `SetNode`
@@ -53,14 +51,14 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `SetNode`
 - `GetNode`
 - `SetNode`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `GetNode`
 - `SetNode`
 - `GetNode`
@@ -107,22 +105,20 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `735756756078566`
-- `steps` = `30`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `735756756078566`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **50%**（39/78）
 
-**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`LatentSwitch`、`VAEEncode`、`ReferenceLatent`、`KSamplerAdvanced`、`UNETLoader`、`ImageScaleToTotalPixels`、`PDIMAGE_LongerSize`、`JWFloat`、`KSampler`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`GoohaiRouteBlocker`、`TextEncodeQwenImage21GH`、`SaveImage`、`RestoreQwenImage21GH`、`QwenImagePromptOptimizer`、`QwenImage21SageAttentionT8`、`FastGroupsBypassSwitch`、`CS_Preview_Any`、`DF_Text_Box`、`GoohaiRatioAndResolution`
+**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`LatentSwitch`、`VAEEncode`、`ReferenceLatent`、`KSamplerAdvanced`、`UNETLoader`、`ImageScaleToTotalPixels`、`PDIMAGE_LongerSize`、`SetNode`、`JWFloat`、`GetNode`、`KSampler`
 
 **缺卡**（1）：`忽略多组孤海`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
 
 ## 学习发现
 

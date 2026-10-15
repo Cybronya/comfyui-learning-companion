@@ -1,5 +1,5 @@
 ---
-key: 【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json
+key: 图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json
 name: 【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta"
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# 【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json
+# 图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【老金驿站】WAN2.1史诗级英雄分镜生成工作流_1929452145547055105.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（31 个）：
 - `WanVideoVRAMManagement`
@@ -43,37 +41,35 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `VAELoader`
 - `DualCLIPLoader`
 - `EmptySD3LatentImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `PreviewImage`
 - `EmptyConditioning`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LoadImage`
 - `Fast Groups Bypasser (rgthree)`
 - `WanVideoLoraSelect`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `WanVideoTextEncode`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 
 ## 关键参数
 
-- `seed` = `884675576583938`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `deis`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `884675576583938`
+- `steps` = `25`
 
 ## 知识
 
 覆盖率 **87%**（27/31）
 
-**有卡**：`WanVideoVRAMManagement`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`ImageResizeKJ`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoImageToVideoEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoTorchCompileSettings`、`VAELoader`、`DualCLIPLoader`、`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`EmptyConditioning`、`UNETLoader`、`LoadImage`、`WanVideoLoraSelect`、`CLIPTextEncode`、`KSampler`、`WanVideoTextEncode`、`WanVideoSampler`
+**有卡**：`WanVideoVRAMManagement`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`ImageResizeKJ`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoImageToVideoEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`VHS_VideoCombine`、`WanVideoDecode`、`easy cleanGpuUsed`、`WanVideoTorchCompileSettings`、`VAELoader`、`DualCLIPLoader`、`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`PreviewImage`、`EmptyConditioning`、`UNETLoader`、`LoadImage`、`Fast Groups Bypasser (rgthree)`、`WanVideoLoraSelect`
 
 **缺卡**（2）：`easy cleanGpuUsed`、`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、WanVideoSampler、LoadWanVideoT5TextEncoder
 
 ## 学习发现
 

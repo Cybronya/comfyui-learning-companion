@@ -1,5 +1,5 @@
 ---
-key: ✨Flux All in 1 - 一站式工作流✨ V2.0_1889200614256336897.json
+key: 图片生成/文生图/✨Flux All in 1 - 一站式工作流✨ V2.0_1889200614256336897.json
 name: ✨Flux All in 1 - 一站式工作流✨ V2.0_1889200614256336897
 type: Unknown Workflow
 status: completed
@@ -15,19 +15,17 @@ parameters: {"controlnet_strength": 0.6, "lora_name": null, "strength_clip": 1, 
 discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的任何知识, 次要节点 `Float to String` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaption2` 知识库中没有该节点类型的任何知识, 次要节点 `SchedulerSelectHelper+` 知识库中没有该节点类型的任何知识, 次要节点 `SchedulerSelectHelper+` 知识库中没有该节点类型的任何知识, 次要节点 `SchedulerSelectHelper+` 知识库中没有该节点类型的任何知识, 次要节点 `SchedulerSelectHelper+` 知识库中没有该节点类型的任何知识, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `FluxSamplerParams+` 仅有 KSampler/Checkpoint 的通用知识，没有该节点自己的说明, 核心节点 `SamplerSelectHelper+` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `SamplerSelectHelper+` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `SamplerSelectHelper+` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `SamplerSelectHelper+` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `ChangeImageBatchSize //Inspire` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `DF_DynamicPrompts_Text_Box` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `SDXL Empty Latent Image (rgthree)` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# ✨Flux All in 1 - 一站式工作流✨ V2.0_1889200614256336897.json
+# 图片生成/文生图/✨Flux All in 1 - 一站式工作流✨ V2.0_1889200614256336897.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/✨Flux All in 1 - 一站式工作流✨ V2.0_1889200614256336897.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（241 个）：
 - `Florence2ModelLoader`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `GetNode`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `PreviewImage`
 - `GetNode`
 - `Anything Everywhere`
@@ -35,7 +33,7 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `StepsAndCfg`
 - `Anything Everywhere`
 - `GetNode`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `PreviewImage`
 - `ConditioningZeroOut`
 - `InpaintModelConditioning`
@@ -53,17 +51,17 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `ConditioningZeroOut`
 - `InstructPixToPixConditioning`
 - `PreviewImage`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `AV_VAELoader`
 - `GetNode`
 - `GetNode`
 - `ConditioningZeroOut`
 - `SetNode`
 - `ConditioningZeroOut`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `SetNode`
 - `SetNode`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `SetNode`
 - `SetNode`
 - `SetNode`
@@ -71,7 +69,7 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `GetNode`
 - `SetNode`
 - `SetNode`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `Float to String`
 - `SetNode`
 - `Anything Everywhere`
@@ -80,18 +78,18 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `JWIntegerToString`
 - `JWIntegerToString`
 - `DualCLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
@@ -100,12 +98,12 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `PreviewImage`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `FluxSamplerParams+` ★核心
-- `VAEDecode` ★核心
+- `FluxSamplerParams+`
+- `VAEDecode`
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
@@ -114,7 +112,7 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `SaveImage`
 - `Note`
 - `RH_Captioner`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ControlNetLoader`
 - `SaveImage`
 - `ConditioningZeroOut`
@@ -125,24 +123,24 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `PreviewImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `StyleModelLoader`
 - `CLIPVisionLoader`
 - `ReduxAdvanced`
 - `SaveImage`
-- `FluxSamplerParams+` ★核心
+- `FluxSamplerParams+`
 - `CLIPVisionLoader`
 - `StyleModelLoader`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReduxAdvanced`
 - `LoadImage`
 - `SaveImage`
@@ -167,7 +165,7 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `FloatSlider`
 - `Label (rgthree)`
 - `Anything Everywhere3`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `Any Switch (rgthree)`
 - `IPAdapterFluxLoader`
 - `ApplyIPAdapterFlux`
@@ -177,14 +175,14 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `Any Switch (rgthree)`
 - `Any Switch (rgthree)`
 - `SchedulerSelectHelper+`
-- `SamplerSelectHelper+` ★核心
+- `SamplerSelectHelper+`
 - `SchedulerSelectHelper+`
-- `SamplerSelectHelper+` ★核心
+- `SamplerSelectHelper+`
 - `SchedulerSelectHelper+`
 - `SetNode`
 - `SetNode`
-- `SamplerSelectHelper+` ★核心
-- `SamplerSelectHelper+` ★核心
+- `SamplerSelectHelper+`
+- `SamplerSelectHelper+`
 - `Note`
 - `Note`
 - `GetNode`
@@ -215,7 +213,7 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `GetNode`
 - `GetNode`
 - `Any Switch (rgthree)`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `GetNode`
 - `GetNode`
 - `ControlNetLoader`
@@ -226,10 +224,10 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `GetNode`
 - `Florence2Run`
 - `DF_Image_scale_to_side`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `GetNode`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `InpaintModelConditioning`
 - `ImagePadForOutpaint`
@@ -240,13 +238,13 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `GetNode`
 - `GetNode`
 - `AIO_Preprocessor`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `GetNode`
 - `UltimateSDUpscale`
 - `GetNode`
 - `ChangeImageBatchSize //Inspire`
 - `GetNode`
-- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3`
 - `RH_LLMAPI_NODE`
 - `Fast Groups Muter (rgthree)`
 - `LoadImage`
@@ -256,10 +254,10 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 - `Fast Groups Bypasser (rgthree)`
 - `DF_DynamicPrompts_Text_Box`
 - `Fast Groups Muter (rgthree)`
-- `LoraLoaderModelOnly` ★核心
-- `FluxSamplerParams+` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `FluxSamplerParams+`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `GetNode`
 - `GetNode`
 - `AIO_Preprocessor`
@@ -270,20 +268,18 @@ discoveries: [次要节点 `Concat Text _O` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `lora_name` = `None`
-- `strength_model` = `1`
-- `strength_clip` = `1`
 - `controlnet_strength` = `0.6`
+- `lora_name` = `None`
+- `strength_clip` = `1`
+- `strength_model` = `1`
 
 ## 知识
 
 覆盖率 **38%**（92/241）
 
-**有卡**：`Florence2ModelLoader`、`StepsAndCfg`、`ConditioningZeroOut`、`InpaintModelConditioning`、`FluxGuidance`、`InstructPixToPixConditioning`、`AV_VAELoader`、`JWIntegerToString`、`DualCLIPLoader`、`VAEDecode`、`SaveImage`、`RH_Captioner`、`LoraLoaderModelOnly`、`ControlNetLoader`、`UpscaleModelLoader`、`ReduxAdvanced`、`CLIPTextEncode`、`StyleModelLoader`、`CLIPVisionLoader`、`VAEEncode`、`LoadImage`、`ImpactGaussianBlurMask`、`FloatSlider`、`Seed_`、`LoraLoader`、`IPAdapterFluxLoader`、`ApplyIPAdapterFlux`、`ControlNetApplySD3`、`Florence2Run`、`DF_Image_scale_to_side`、`ImagePadForOutpaint`、`AIO_Preprocessor`、`UltimateSDUpscale`、`RH_LLMAPI_NODE`、`TextBox`、`UNETLoader`、`SetUnionControlNetType`
+**有卡**：`Florence2ModelLoader`、`FluxSamplerParams+`、`GetNode`、`PreviewImage`、`Anything Everywhere`、`StepsAndCfg`、`ConditioningZeroOut`、`InpaintModelConditioning`、`FluxGuidance`、`InstructPixToPixConditioning`、`AV_VAELoader`、`SetNode`、`Float to String`、`JWIntegerToString`、`DualCLIPLoader`、`VAEDecode`、`SaveImage`、`Note`、`RH_Captioner`、`LoraLoaderModelOnly`、`ControlNetLoader`
 
 **缺卡**（30）：`Concat Text _O`、`Float to String`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`LayerUtility: JoyCaption2`、`SchedulerSelectHelper+`、`SchedulerSelectHelper+`、`SchedulerSelectHelper+`、`SchedulerSelectHelper+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`FluxSamplerParams+`、`SamplerSelectHelper+`、`SamplerSelectHelper+`、`SamplerSelectHelper+`、`SamplerSelectHelper+`、`ChangeImageBatchSize //Inspire`、`DF_DynamicPrompts_Text_Box`、`SDXL Empty Latent Image (rgthree)`
-
-**用到的条目**：VAEDecode、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、ControlNetLoader、SetUnionControlNetType
 
 ## 学习发现
 

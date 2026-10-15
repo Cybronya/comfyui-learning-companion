@@ -1,5 +1,5 @@
 ---
-key: Qwen 朋友圈日签海报设计 V1.0_1955900129352011777.json
+key: 图片生成/文生图/Qwen 朋友圈日签海报设计 V1.0_1955900129352011777.json
 name: Qwen 朋友圈日签海报设计 V1.0_1955900129352011777
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Qwen-Image 3D IP XIAOXIAOloRA.safetensors", "sampler_name": "euler", "scheduler": "simple", "seed": 829124059047672, "steps": 30, "strength_clip": 0.8000000000000002, "strength_model": 0.8000000000000002}
 ---
 
-# Qwen 朋友圈日签海报设计 V1.0_1955900129352011777.json
+# 图片生成/文生图/Qwen 朋友圈日签海报设计 V1.0_1955900129352011777.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen 朋友圈日签海报设计 V1.0_1955900129352011777.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（15 个）：
 - `ModelSamplingAuraFlow`
@@ -28,35 +26,33 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Qwen-Image 3D IP XIAOXIAOlo
 - `UltimateSDUpscale`
 - `PreviewImage`
 - `Note`
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
 - `SaveImage`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `seed` = `829124059047672`
-- `steps` = `30`
 - `cfg` = `3.5`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `denoise` = `1`
 - `lora_name` = `Qwen-Image 3D IP XIAOXIAOloRA.safetensors`
-- `strength_model` = `0.8000000000000002`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `seed` = `829124059047672`
+- `steps` = `30`
 - `strength_clip` = `0.8000000000000002`
+- `strength_model` = `0.8000000000000002`
 
 ## 知识
 
 覆盖率 **87%**（13/15）
 
-**有卡**：`ModelSamplingAuraFlow`、`UpscaleModelLoader`、`UltimateSDUpscale`、`CLIPTextEncode`、`VAEDecode`、`SaveImage`、`KSampler`、`EmptySD3LatentImage`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、LoraLoader、LoraLoader
+**有卡**：`ModelSamplingAuraFlow`、`UpscaleModelLoader`、`UltimateSDUpscale`、`PreviewImage`、`Note`、`CLIPTextEncode`、`VAEDecode`、`SaveImage`、`KSampler`、`EmptySD3LatentImage`、`VAELoader`、`UNETLoader`

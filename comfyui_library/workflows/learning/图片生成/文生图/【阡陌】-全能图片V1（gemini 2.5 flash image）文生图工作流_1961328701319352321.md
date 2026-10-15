@@ -1,5 +1,5 @@
 ---
-key: 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
+key: 图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
 name: 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# 【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
+# 图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】-全能图片V1（gemini 2.5 flash image）文生图工作流_1961328701319352321.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（6 个）：
 - `RH_LLMAPI_NODE`
@@ -33,6 +31,4 @@ missing: []
 
 覆盖率 **83%**（5/6）
 
-**有卡**：`RH_LLMAPI_NODE`、`EmptyImage`、`RH_Nano_Banana_Image2Image`、`SaveImage`、`LoadImage`
-
-**用到的条目**：LoadImage、SaveImage、EmptyImage、RH_LLMAPI_NODE、RH_Nano_Banana_Image2Image、sd15-t2i-basic、sd15-t2i-lora、node
+**有卡**：`RH_LLMAPI_NODE`、`ShowText|pysssss`、`EmptyImage`、`RH_Nano_Banana_Image2Image`、`SaveImage`

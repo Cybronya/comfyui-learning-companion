@@ -1,5 +1,5 @@
 ---
-key: F.1 在线生图-反推_1873979338214559746.json
+key: 图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json
 name: F.1 在线生图-反推_1873979338214559746
 type: Text To Image
 status: completed
@@ -15,41 +15,39 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识]
 ---
 
-# F.1 在线生图-反推_1873979338214559746.json
+# 图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1 在线生图-反推_1873979338214559746.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（30 个）：
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Anything Everywhere3`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `LayerUtility: JoyCaptionBeta1`
 - `LayerUtility: JoyCaptionBeta1ExtraOptions`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `ShowText|pysssss`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `ConditioningZeroOut`
-- `KSampler` ★核心
+- `KSampler`
 - `ConditioningZeroOut`
-- `KSampler` ★核心
+- `KSampler`
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `FluxGuidance`
 - `VAELoader`
 - `Anything Everywhere3`
@@ -59,25 +57,23 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1536`
 - `batch_size` = `1`
-- `seed` = `1079658624448393`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1079658624448393`
+- `steps` = `20`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **80%**（24/30）
 
-**有卡**：`SaveImage`、`EmptyLatentImage`、`UNETLoader`、`LoraLoaderModelOnly`、`LoadImage`、`CLIPTextEncode`、`KSampler`、`ConditioningZeroOut`、`VAEDecode`、`FluxGuidance`、`VAELoader`、`DualCLIPLoader`
+**有卡**：`SaveImage`、`EmptyLatentImage`、`Anything Everywhere3`、`UNETLoader`、`LoraLoaderModelOnly`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`ShowText|pysssss`、`LoadImage`、`CLIPTextEncode`、`KSampler`、`ConditioningZeroOut`、`VAEDecode`
 
 **缺卡**（3）：`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage
 
 ## 学习发现
 

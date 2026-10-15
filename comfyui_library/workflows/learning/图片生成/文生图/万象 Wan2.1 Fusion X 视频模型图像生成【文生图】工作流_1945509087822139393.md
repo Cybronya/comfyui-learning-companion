@@ -1,5 +1,5 @@
 ---
-key: 万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json
+key: 图片生成/文生图/万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json
 name: 万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393
 type: Unknown Workflow
 status: completed
@@ -15,80 +15,76 @@ parameters: {"cfg": 1, "denoise": 0.20000000000000004, "sampler_name": "uni_pc",
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# 万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json
+# 图片生成/文生图/万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/万象 Wan2.1 Fusion X 视频模型图像生成【文生图】工作流_1945509087822139393.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（46 个）：
 - `EmptySD3LatentImage`
 - `GetNode`
 - `GetNode`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `CFGGuider`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
 - `SetNode`
 - `DualCLIPLoader`
 - `GetNode`
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ImageSharpen`
 - `BetterFilmGrain`
 - `SaveImage`
 - `GetNode`
-- `KSampler` ★核心
-- `VAEEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSampler`
+- `VAEEncode`
+- `CLIPTextEncode`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `Note`
 - `Image Comparer (rgthree)`
 - `easy cleanGpuUsed`
 - `ModelSamplingSD3`
 - `easy clearCacheAll`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `VAELoader`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `GetNode`
 - `EsesImageEffectBloom`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GeminiFLUXResolutions`
 - `RandomNoise`
 - `CR Text`
 
 ## 关键参数
 
-- `seed` = `1061465765857073`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.20000000000000004`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `0.20000000000000004`
+- `seed` = `1061465765857073`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **67%**（31/46）
 
-**有卡**：`EmptySD3LatentImage`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`SamplerCustomAdvanced`、`SaveImage`、`CLIPTextEncode`、`DualCLIPLoader`、`VAELoader`、`VAEDecode`、`ImageSharpen`、`BetterFilmGrain`、`KSampler`、`VAEEncode`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`FluxGuidance`、`CLIPLoader`、`EsesImageEffectBloom`、`GeminiFLUXResolutions`、`RandomNoise`
+**有卡**：`EmptySD3LatentImage`、`GetNode`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`SamplerCustomAdvanced`、`SaveImage`、`CLIPTextEncode`、`SetNode`、`DualCLIPLoader`、`VAELoader`、`VAEDecode`、`ImageSharpen`、`BetterFilmGrain`、`KSampler`、`VAEEncode`、`UNETLoader`、`LoraLoaderModelOnly`、`Note`、`Image Comparer (rgthree)`、`easy cleanGpuUsed`、`ModelSamplingSD3`、`easy clearCacheAll`
 
 **缺卡**（4）：`CR Text`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy clearCacheAll`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、CFGGuider
 
 ## 学习发现
 

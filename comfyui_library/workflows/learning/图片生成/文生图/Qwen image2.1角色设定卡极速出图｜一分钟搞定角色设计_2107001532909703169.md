@@ -1,5 +1,5 @@
 ---
-key: Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json
+key: 图片生成/文生图/Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json
 name: Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169
 type: Text To Image
 status: completed
@@ -16,21 +16,19 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json
+# 图片生成/文生图/Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image2.1角色设定卡极速出图｜一分钟搞定角色设计_2107001532909703169.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（64 个）：
 - `Seed (rgthree)`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `VAELoader`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `VAEDecode`
 - `SaveImage`
 - `LoadImage`
 - `ResolutionSelector`
@@ -38,8 +36,8 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 - `LayerUtility: TextJoin`
 - `llama_cpp_parameters`
 - `PrimitiveStringMultiline`
-- `KSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSampler`
+- `LoraLoaderModelOnly`
 - `PrimitiveStringMultiline`
 - `TextEncodeQwenImage21`
 - `PreviewAny`
@@ -48,71 +46,69 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 - `PrimitiveStringMultiline`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **83%**（53/64）
 
-**有卡**：`EmptyLatentImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`VAEDecode`、`SaveImage`、`LoadImage`、`ResolutionSelector`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`KSampler`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`llama_cpp_instruct_adv`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`Seed (rgthree)`、`EmptyLatentImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`VAEDecode`、`SaveImage`、`LoadImage`、`ResolutionSelector`、`llama_cpp_model_loader`、`LayerUtility: TextJoin`、`llama_cpp_parameters`、`PrimitiveStringMultiline`、`KSampler`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`PreviewAny`、`llama_cpp_instruct_adv`、`Fast Groups Bypasser (rgthree)`、`孤海注释`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`JjkText`
 
 **缺卡**（2）：`LayerUtility: TextJoin`、`Seed (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

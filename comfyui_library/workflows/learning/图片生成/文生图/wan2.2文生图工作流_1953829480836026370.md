@@ -1,5 +1,5 @@
 ---
-key: wan2.2文生图工作流_1953829480836026370.json
+key: 图片生成/文生图/wan2.2文生图工作流_1953829480836026370.json
 name: wan2.2文生图工作流_1953829480836026370
 type: Unknown Workflow
 status: completed
@@ -14,42 +14,38 @@ missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
 ---
 
-# wan2.2文生图工作流_1953829480836026370.json
+# 图片生成/文生图/wan2.2文生图工作流_1953829480836026370.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2文生图工作流_1953829480836026370.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（13 个）：
 - `VAELoader`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `UNETLoader`
+- `UNETLoader`
 - `CLIPLoader`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `EmptyHunyuanLatentVideo`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `fixed`
 - `cfg` = `20`
+- `denoise` = `simple`
 - `sampler_name` = `3.5`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `disable`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`VAELoader`、`UNETLoader`、`CLIPLoader`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo、SaveImage

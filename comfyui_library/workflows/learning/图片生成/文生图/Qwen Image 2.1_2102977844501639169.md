@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1_2102977844501639169.json
+key: 图片生成/文生图/Qwen Image 2.1_2102977844501639169.json
 name: Qwen Image 2.1_2102977844501639169
 type: Unknown Workflow
 status: completed
@@ -14,52 +14,48 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1536, "sampler_name": "er_sde", "scheduler": "bong_tangent", "seed": 986840392602112, "steps": 50, "width": 1024}
 ---
 
-# Qwen Image 2.1_2102977844501639169.json
+# 图片生成/文生图/Qwen Image 2.1_2102977844501639169.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1_2102977844501639169.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（20 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `QwenImage21Cache`
 - `ComfySwitchNode`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `VAELoader`
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `LoadImage`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `TextEncodeQwenImage21`
 - `Fast Groups Bypasser (rgthree)`
 
 ## 关键参数
 
-- `seed` = `986840392602112`
-- `steps` = `50`
+- `batch_size` = `1`
 - `cfg` = `3.5`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `er_sde`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `986840392602112`
+- `steps` = `50`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **90%**（18/20）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`KSampler`、`VAEDecode`、`SaveImage`、`VAELoader`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`LoadImage`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
+**有卡**：`UNETLoader`、`CLIPLoader`、`KSampler`、`VAEDecode`、`SaveImage`、`VAELoader`、`QwenImage21Cache`、`ComfySwitchNode`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`LoadImage`

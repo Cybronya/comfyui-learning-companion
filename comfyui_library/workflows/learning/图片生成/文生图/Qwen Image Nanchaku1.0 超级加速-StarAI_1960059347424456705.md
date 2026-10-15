@@ -1,5 +1,5 @@
 ---
-key: Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
+key: 图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
 name: Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
+# 图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image Nanchaku1.0 超级加速-StarAI_1960059347424456705.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（14 个）：
 - `Note Plus (mtb)`
@@ -30,33 +28,31 @@ discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型�
 - `VAELoader`
 - `ModelSamplingAuraFlow`
 - `Int`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `Int`
 - `SaveImage`
 - `MarkdownNote`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 
 ## 关键参数
 
-- `seed` = `998491117779248`
-- `steps` = `20`
 - `cfg` = `2.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `998491117779248`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **86%**（12/14）
 
-**有卡**：`NunchakuQwenImageDiTLoader`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`Int`、`CLIPTextEncode`、`EmptySD3LatentImage`、`KSampler`、`VAEDecode`、`SaveImage`
+**有卡**：`Note Plus (mtb)`、`NunchakuQwenImageDiTLoader`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`Int`、`CLIPTextEncode`、`EmptySD3LatentImage`、`KSampler`、`VAEDecode`、`SaveImage`
 
 **缺卡**（1）：`Note Plus (mtb)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、SaveImage、EmptySD3LatentImage、Int
 
 ## 学习发现
 

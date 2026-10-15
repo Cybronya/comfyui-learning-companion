@@ -1,5 +1,5 @@
 ---
-key: Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json
+key: 图片生成/文生图/Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json
 name: Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353
 type: Image To Image
 status: completed
@@ -15,25 +15,23 @@ parameters: {"cfg": 1, "controlnet_strength": 0.8000000000000002, "denoise": 0.4
 discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `MiDaS-DepthMapPreprocessor` 仅有 ControlNet 的通用知识，没有该节点自己的说明]
 ---
 
-# Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json
+# 图片生成/文生图/Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（33 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `KSampler`
+- `VAEDecode`
 - `ImageScaleBy`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `ImageResizeKJ`
 - `UpscaleModelLoader`
@@ -42,8 +40,8 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 - `MiDaS-DepthMapPreprocessor`
 - `CannyEdgePreprocessor`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
-- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced`
+- `CLIPTextEncode`
 - `Image Switch (JPS)`
 - `PreviewImage`
 - `SaveImage`
@@ -52,7 +50,7 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 - `DWPreprocessor`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `LayerUtility: TextBox`
 - `SetUnionControlNetType`
 - `Note`
@@ -62,23 +60,21 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `378813125626722`
-- `steps` = `20`
 - `cfg` = `1`
+- `controlnet_strength` = `0.8000000000000002`
+- `denoise` = `0.4000000000000001`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `0.4000000000000001`
-- `controlnet_strength` = `0.8000000000000002`
+- `seed` = `378813125626722`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **79%**（26/33）
 
-**有卡**：`UNETLoader`、`DualCLIPLoader`、`FluxGuidance`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`ImageScaleBy`、`VAEEncode`、`VAELoader`、`SaveImage`、`ImageResizeKJ`、`UpscaleModelLoader`、`UltimateSDUpscale`、`HEDPreprocessor`、`CannyEdgePreprocessor`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`EmptySD3LatentImage`、`DWPreprocessor`、`LoadImage`、`SetUnionControlNetType`
+**有卡**：`UNETLoader`、`DualCLIPLoader`、`FluxGuidance`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`ImageScaleBy`、`VAEEncode`、`VAELoader`、`SaveImage`、`ImageResizeKJ`、`UpscaleModelLoader`、`UltimateSDUpscale`、`HEDPreprocessor`、`MiDaS-DepthMapPreprocessor`、`CannyEdgePreprocessor`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`Image Switch (JPS)`、`PreviewImage`、`EmptySD3LatentImage`、`DWPreprocessor`
 
 **缺卡**（4）：`Image Switch (JPS)`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: TextBox`、`MiDaS-DepthMapPreprocessor`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
 
 ## 学习发现
 

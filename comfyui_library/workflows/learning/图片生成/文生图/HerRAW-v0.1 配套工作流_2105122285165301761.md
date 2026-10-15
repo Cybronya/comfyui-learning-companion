@@ -1,5 +1,5 @@
 ---
-key: HerRAW-v0.1 配套工作流_2105122285165301761.json
+key: 图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
 name: HerRAW-v0.1 配套工作流_2105122285165301761
 type: Text To Image
 status: completed
@@ -16,73 +16,69 @@ parameters: {"batch_size": 1, "cfg": 8, "denoise": "beta", "height": 512, "sampl
 discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# HerRAW-v0.1 配套工作流_2105122285165301761.json
+# 图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（34 个）：
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
+- `EmptyLatentImage`
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `SaveImage`
 - `ImageMergeTileList`
 - `SeedVR2PostProcessing`
 - `SeedVR2Conditioning`
-- `VAEEncodeTiled` ★核心
+- `VAEEncodeTiled`
 - `ComfyMathExpression`
 - `ComfyMathExpression`
 - `ComfyMathExpression`
 - `SeedVR2Preprocess`
-- `KSampler` ★核心
+- `KSampler`
 - `GetImageSize`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `SplitImageToTileList`
 - `PrimitiveInt`
 - `PrimitiveInt`
 - `ResizeImageMaskNode`
 - `PrimitiveFloat`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Seed (rgthree)`
 - `ResolutionSelector`
 - `Fast Groups Bypasser (rgthree)`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `MarkdownNote`
 - `VAELoader`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `VAELoader`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `PrimitiveStringMultiline`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `512`
 - `batch_size` = `1`
-- `seed` = `enable`
-- `steps` = `randomize`
 - `cfg` = `8`
+- `denoise` = `beta`
+- `height` = `512`
 - `sampler_name` = `1`
 - `scheduler` = `ddim`
-- `denoise` = `beta`
+- `seed` = `enable`
+- `steps` = `randomize`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **76%**（26/34）
 
-**有卡**：`EmptyLatentImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`SaveImage`、`ImageMergeTileList`、`SeedVR2PostProcessing`、`SeedVR2Conditioning`、`VAEEncodeTiled`、`ComfyMathExpression`、`SeedVR2Preprocess`、`KSampler`、`GetImageSize`、`VAEDecodeTiled`、`SplitImageToTileList`、`ResizeImageMaskNode`、`VAEDecode`、`ResolutionSelector`、`KSamplerAdvanced`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`
+**有卡**：`EmptyLatentImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`SaveImage`、`ImageMergeTileList`、`SeedVR2PostProcessing`、`SeedVR2Conditioning`、`VAEEncodeTiled`、`ComfyMathExpression`、`SeedVR2Preprocess`、`KSampler`、`GetImageSize`、`VAEDecodeTiled`、`SplitImageToTileList`、`PrimitiveInt`、`ResizeImageMaskNode`、`PrimitiveFloat`、`VAEDecode`、`Seed (rgthree)`、`ResolutionSelector`、`Fast Groups Bypasser (rgthree)`、`KSamplerAdvanced`、`MarkdownNote`
 
 **缺卡**（1）：`Seed (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 

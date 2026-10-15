@@ -1,5 +1,5 @@
 ---
-key: krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
+key: 图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
 name: krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433
 type: Text To Image
 status: completed
@@ -14,20 +14,18 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 527787388262472, "steps": 30, "width": 1024}
 ---
 
-# krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
+# 图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/krea-文生图-Moebius (Jean Giraud)风格美洲虎捕猎鳄鱼_1962669092442386433.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（10 个）：
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `VAEDecode`
+- `CLIPTextEncode`
+- `UNETLoader`
+- `EmptyLatentImage`
 - `SaveImage`
 - `ConditioningZeroOut`
 - `RH_Translator`
@@ -38,20 +36,18 @@ parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1536, "sampler
 
 ## 关键参数
 
-- `seed` = `527787388262472`
-- `steps` = `30`
+- `batch_size` = `1`
 - `cfg` = `3.5`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `527787388262472`
+- `steps` = `30`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（10/10）
 
 **有卡**：`KSampler`、`VAEDecode`、`CLIPTextEncode`、`UNETLoader`、`EmptyLatentImage`、`SaveImage`、`ConditioningZeroOut`、`RH_Translator`、`DualCLIPLoader`、`VAELoader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、UNETLoader、SaveImage

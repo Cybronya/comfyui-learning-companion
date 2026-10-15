@@ -1,5 +1,5 @@
 ---
-key: wan2.2超写实文生图_1970130948895481857.json
+key: 图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json
 name: wan2.2超写实文生图_1970130948895481857
 type: Text To Image
 status: completed
@@ -15,50 +15,46 @@ parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "wan2.2-t2v-rapid-aio-v10.
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2超写实文生图_1970130948895481857.json
+# 图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2超写实文生图_1970130948895481857.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（10 个）：
 - `LayerUtility: PurgeVRAM`
-- `EmptyLatentImage` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `EmptyLatentImage`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `1280`
-- `height` = `1280`
 - `batch_size` = `1`
-- `checkpoint` = `wan2.2-t2v-rapid-aio-v10.safetensors`
-- `seed` = `739786914323188`
-- `steps` = `10`
 - `cfg` = `1`
+- `checkpoint` = `wan2.2-t2v-rapid-aio-v10.safetensors`
+- `denoise` = `1`
+- `height` = `1280`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `739786914323188`
+- `steps` = `10`
+- `width` = `1280`
 
 ## 知识
 
 覆盖率 **90%**（9/10）
 
-**有卡**：`EmptyLatentImage`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`SaveImage`
+**有卡**：`LayerUtility: PurgeVRAM`、`EmptyLatentImage`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`SaveImage`
 
 **缺卡**（1）：`LayerUtility: PurgeVRAM`
-
-**用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、SaveImage、PathchSageAttentionKJ
 
 ## 学习发现
 

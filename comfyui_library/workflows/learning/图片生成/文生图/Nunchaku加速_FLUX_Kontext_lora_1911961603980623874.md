@@ -1,5 +1,5 @@
 ---
-key: Nunchaku加速_FLUX_Kontext_lora_1911961603980623874.json
+key: 图片生成/文生图/Nunchaku加速_FLUX_Kontext_lora_1911961603980623874.json
 name: Nunchaku加速_FLUX_Kontext_lora_1911961603980623874
 type: Text To Image
 status: completed
@@ -15,62 +15,60 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.30000000000000004, "height"
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# Nunchaku加速_FLUX_Kontext_lora_1911961603980623874.json
+# 图片生成/文生图/Nunchaku加速_FLUX_Kontext_lora_1911961603980623874.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku加速_FLUX_Kontext_lora_1911961603980623874.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（52 个）：
 - `VAELoader`
 - `DualCLIPLoader`
 - `NunchakuFluxDiTLoader`
 - `Anything Everywhere3`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `SetNode`
 - `FluxGuidance`
 - `DifferentialDiffusion`
 - `ConditioningZeroOut`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `ConditioningZeroOut`
-- `CLIPTextEncode` ★核心
-- `VAEEncode` ★核心
+- `CLIPTextEncode`
+- `VAEEncode`
 - `FluxKontextImageScale`
 - `ReferenceLatent`
 - `FluxGuidance`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `NunchakuFluxDiTLoader`
 - `VAELoader`
 - `DualCLIPLoader`
 - `Anything Everywhere3`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `NunchakuFluxDiTLoader`
 - `VAELoader`
 - `DualCLIPLoader`
 - `Anything Everywhere3`
 - `RH_Translator`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `VAEEncode` ★核心
+- `VAEDecode`
+- `KSampler`
+- `VAEEncode`
 - `DifferentialDiffusion`
 - `FluxGuidance`
 - `RH_Translator`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `LoadImage`
 - `Image Comparer (rgthree)`
 - `LoadImage`
@@ -81,25 +79,23 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1536`
 - `batch_size` = `1`
-- `seed` = `981053385176214`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `0.30000000000000004`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `0.30000000000000004`
+- `seed` = `981053385176214`
+- `steps` = `20`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **81%**（42/52）
 
-**有卡**：`VAELoader`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`CLIPTextEncode`、`NunchakuFluxLoraLoader`、`FluxGuidance`、`DifferentialDiffusion`、`ConditioningZeroOut`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`VAEEncode`、`FluxKontextImageScale`、`ReferenceLatent`、`SaveImage`、`RH_Translator`、`LoadImage`
+**有卡**：`VAELoader`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`Anything Everywhere3`、`CLIPTextEncode`、`SetNode`、`NunchakuFluxLoraLoader`、`FluxGuidance`、`DifferentialDiffusion`、`ConditioningZeroOut`、`EmptyLatentImage`、`GetNode`、`VAEDecode`、`KSampler`、`VAEEncode`、`FluxKontextImageScale`、`ReferenceLatent`、`SaveImage`、`RH_Translator`、`LayerUtility: ImageScaleByAspectRatio V2`
 
 **缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、LoadImage、FluxGuidance
 
 ## 学习发现
 

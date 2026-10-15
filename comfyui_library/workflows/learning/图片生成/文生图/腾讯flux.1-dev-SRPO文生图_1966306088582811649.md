@@ -1,5 +1,5 @@
 ---
-key: 腾讯flux.1-dev-SRPO文生图_1966306088582811649.json
+key: 图片生成/文生图/腾讯flux.1-dev-SRPO文生图_1966306088582811649.json
 name: 腾讯flux.1-dev-SRPO文生图_1966306088582811649
 type: Unknown Workflow
 status: completed
@@ -14,19 +14,17 @@ missing: [MathExpression|pysssss, easy clearCacheAll, CR SDXL Aspect Ratio]
 discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 腾讯flux.1-dev-SRPO文生图_1966306088582811649.json
+# 图片生成/文生图/腾讯flux.1-dev-SRPO文生图_1966306088582811649.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/腾讯flux.1-dev-SRPO文生图_1966306088582811649.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（24 个）：
 - `DualCLIPLoader`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect`
+- `SamplerCustomAdvanced`
 - `RandomNoise`
 - `ModelSamplingFlux`
 - `EmptySD3LatentImage`
@@ -34,14 +32,14 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 - `VAELoader`
 - `BasicGuider`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `RH_Translator`
 - `Note`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `SeedVR2ExtraArgs`
 - `CR SDXL Aspect Ratio`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy clearCacheAll`
 - `PreviewImage`
 - `SeedVR2BlockSwap`
@@ -52,11 +50,9 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 覆盖率 **75%**（18/24）
 
-**有卡**：`DualCLIPLoader`、`BasicScheduler`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`ModelSamplingFlux`、`EmptySD3LatentImage`、`VAELoader`、`BasicGuider`、`FluxGuidance`、`CLIPTextEncode`、`RH_Translator`、`UNETLoader`、`SeedVR2ExtraArgs`、`SaveImage`、`VAEDecode`、`SeedVR2BlockSwap`、`SeedVR2GGUF`
+**有卡**：`DualCLIPLoader`、`BasicScheduler`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`ModelSamplingFlux`、`EmptySD3LatentImage`、`Note`、`VAELoader`、`BasicGuider`、`FluxGuidance`、`CLIPTextEncode`、`RH_Translator`、`UNETLoader`、`SeedVR2ExtraArgs`、`CR SDXL Aspect Ratio`、`SaveImage`
 
 **缺卡**（3）：`MathExpression|pysssss`、`easy clearCacheAll`、`CR SDXL Aspect Ratio`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、SeedVR2BlockSwap
 
 ## 学习发现
 

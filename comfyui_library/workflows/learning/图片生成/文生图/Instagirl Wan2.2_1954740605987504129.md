@@ -1,5 +1,5 @@
 ---
-key: Instagirl Wan2.2_1954740605987504129.json
+key: 图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
 name: Instagirl Wan2.2_1954740605987504129
 type: Unknown Workflow
 status: completed
@@ -15,22 +15,20 @@ parameters: {"cfg": 10, "denoise": "beta57", "lora_name": "Instagirlv2.0_hinoise
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# Instagirl Wan2.2_1954740605987504129.json
+# 图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（28 个）：
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
+- `UNETLoader`
+- `UNETLoader`
 - `VAELoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `CLIPLoader`
 - `LoadImage`
 - `Note`
@@ -40,14 +38,14 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `LoadImage`
 - `Note`
 - `easy cleanGpuUsed`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `EmptyHunyuanLatentVideo`
 - `Note`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Note`
 - `Int`
 - `Int`
@@ -57,25 +55,23 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `lora_name` = `Instagirlv2.0_hinoise.safetensors`
-- `strength_model` = `1`
-- `strength_clip` = `1`
-- `seed` = `enable`
-- `steps` = `fixed`
 - `cfg` = `10`
+- `denoise` = `beta57`
+- `lora_name` = `Instagirlv2.0_hinoise.safetensors`
 - `sampler_name` = `1`
 - `scheduler` = `res_2s`
-- `denoise` = `beta57`
+- `seed` = `enable`
+- `steps` = `fixed`
+- `strength_clip` = `1`
+- `strength_model` = `1`
 
 ## 知识
 
 覆盖率 **79%**（22/28）
 
-**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`UNETLoader`、`VAELoader`、`LoraLoader`、`CLIPLoader`、`LoadImage`、`KSamplerAdvanced`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`SaveImage`、`Int`
+**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`UNETLoader`、`VAELoader`、`LoraLoader`、`CLIPLoader`、`LoadImage`、`Note`、`easy cleanGpuUsed`、`KSamplerAdvanced`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`
 
 **缺卡**（1）：`easy cleanGpuUsed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
 
 ## 学习发现
 

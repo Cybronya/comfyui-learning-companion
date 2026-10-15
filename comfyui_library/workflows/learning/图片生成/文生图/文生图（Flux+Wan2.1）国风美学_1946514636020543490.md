@@ -1,5 +1,5 @@
 ---
-key: 文生图（Flux+Wan2.1）国风美学_1946514636020543490.json
+key: 图片生成/文生图/文生图（Flux+Wan2.1）国风美学_1946514636020543490.json
 name: 文生图（Flux+Wan2.1）国风美学_1946514636020543490
 type: Unknown Workflow
 status: completed
@@ -15,45 +15,43 @@ parameters: {"cfg": 1, "denoise": 0.20000000000000004, "sampler_name": "uni_pc",
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `Upscale Model Loader` 仅有 Upscale 的通用知识，没有该节点自己的说明]
 ---
 
-# 文生图（Flux+Wan2.1）国风美学_1946514636020543490.json
+# 图片生成/文生图/文生图（Flux+Wan2.1）国风美学_1946514636020543490.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图（Flux+Wan2.1）国风美学_1946514636020543490.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（34 个）：
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `ImageSharpen`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ModelSamplingSD3`
 - `EsesImageEffectBloom`
 - `EmptySD3LatentImage`
 - `DualCLIPLoader`
 - `VAELoader`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `BetterFilmGrain`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `Text Multiline`
-- `KSampler` ★核心
+- `KSampler`
 - `ImageConcanate`
 - `ImageScaleToMegapixels`
 - `Upscale Model Loader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
 - `SaveImage`
 - `PreviewImage`
@@ -61,22 +59,20 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `seed` = `1015`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.20000000000000004`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `0.20000000000000004`
+- `seed` = `1015`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **82%**（28/34）
 
-**有卡**：`CLIPTextEncode`、`FluxGuidance`、`ImageSharpen`、`VAEEncode`、`ModelSamplingSD3`、`EsesImageEffectBloom`、`EmptySD3LatentImage`、`DualCLIPLoader`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`BetterFilmGrain`、`VAEDecode`、`KSampler`、`ImageConcanate`、`ImageScaleToMegapixels`、`SaveImage`、`DeepTranslatorTextNode`
+**有卡**：`CLIPTextEncode`、`FluxGuidance`、`ImageSharpen`、`VAEEncode`、`ModelSamplingSD3`、`EsesImageEffectBloom`、`EmptySD3LatentImage`、`DualCLIPLoader`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`BetterFilmGrain`、`VAEDecode`、`easy cleanGpuUsed`、`PreviewImage`、`KSampler`、`Text Multiline`、`ImageConcanate`、`ImageScaleToMegapixels`
 
 **缺卡**（3）：`Text Multiline`、`easy cleanGpuUsed`、`Upscale Model Loader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、FluxGuidance
 
 ## 学习发现
 

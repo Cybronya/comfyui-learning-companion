@@ -1,5 +1,5 @@
 ---
-key: nunchaku-FLUX.1-Krea_1951667086886121474.json
+key: 图片生成/文生图/nunchaku-FLUX.1-Krea_1951667086886121474.json
 name: nunchaku-FLUX.1-Krea_1951667086886121474
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"cfg": 10, "denoise": 1.0000000000000002, "sampler_name": -1, "scheduler": -0.6700000000000002, "seed": 0.5, "steps": "bong_tangent"}
 ---
 
-# nunchaku-FLUX.1-Krea_1951667086886121474.json
+# 图片生成/文生图/nunchaku-FLUX.1-Krea_1951667086886121474.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku-FLUX.1-Krea_1951667086886121474.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（26 个）：
 - `NunchakuFluxDiTLoader`
@@ -30,39 +28,37 @@ parameters: {"cfg": 10, "denoise": 1.0000000000000002, "sampler_name": -1, "sche
 - `BasicGuider`
 - `EmptySD3LatentImage`
 - `VAELoader`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `NunchakuTextEncoderLoader`
-- `SamplerCustomAdvanced` ★核心
-- `ClownsharKSampler_Beta` ★核心
+- `SamplerCustomAdvanced`
+- `ClownsharKSampler_Beta`
 - `LatentUpscaleBy`
 - `ClownOptions_DetailBoost_Beta`
 - `SharkOptions_Beta`
-- `ClownOptions_SwapSampler_Beta` ★核心
+- `ClownOptions_SwapSampler_Beta`
 - `RandomNoise`
 - `ModelSamplingFlux`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `FluxGuidance`
 - `Fast Groups Bypasser (rgthree)`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `NunchakuFluxLoraLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `NunchakuFluxLoraLoader`
+- `CLIPTextEncode`
 
 ## 关键参数
 
-- `seed` = `0.5`
-- `steps` = `bong_tangent`
 - `cfg` = `10`
+- `denoise` = `1.0000000000000002`
 - `sampler_name` = `-1`
 - `scheduler` = `-0.6700000000000002`
-- `denoise` = `1.0000000000000002`
+- `seed` = `0.5`
+- `steps` = `bong_tangent`
 
 ## 知识
 
 覆盖率 **88%**（23/26）
 
-**有卡**：`NunchakuFluxDiTLoader`、`SaveImage`、`BasicGuider`、`EmptySD3LatentImage`、`VAELoader`、`NunchakuFluxLoraLoader`、`NunchakuTextEncoderLoader`、`SamplerCustomAdvanced`、`ClownsharKSampler_Beta`、`LatentUpscaleBy`、`ClownOptions_DetailBoost_Beta`、`SharkOptions_Beta`、`ClownOptions_SwapSampler_Beta`、`RandomNoise`、`ModelSamplingFlux`、`VAEDecode`、`FluxGuidance`、`KSamplerSelect`、`BasicScheduler`、`CLIPTextEncode`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、ClownsharKSampler_Beta、ClownOptions_SwapSampler_Beta
+**有卡**：`NunchakuFluxDiTLoader`、`PrimitiveNode`、`SaveImage`、`BasicGuider`、`EmptySD3LatentImage`、`VAELoader`、`NunchakuFluxLoraLoader`、`NunchakuTextEncoderLoader`、`SamplerCustomAdvanced`、`ClownsharKSampler_Beta`、`LatentUpscaleBy`、`ClownOptions_DetailBoost_Beta`、`SharkOptions_Beta`、`ClownOptions_SwapSampler_Beta`、`RandomNoise`、`ModelSamplingFlux`、`VAEDecode`、`FluxGuidance`、`Fast Groups Bypasser (rgthree)`、`KSamplerSelect`、`BasicScheduler`

@@ -1,5 +1,5 @@
 ---
-key: Wan2.2-顶级文生图_1951984559229489154.json
+key: 图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json
 name: Wan2.2-顶级文生图_1951984559229489154
 type: Unknown Workflow
 status: completed
@@ -14,54 +14,50 @@ missing: []
 parameters: {"cfg": 10, "denoise": "beta", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
 ---
 
-# Wan2.2-顶级文生图_1951984559229489154.json
+# 图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2-顶级文生图_1951984559229489154.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（25 个）：
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `UNETLoader`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `EmptyHunyuanLatentVideo`
 - `ImpactInt`
 - `ImpactInt`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `randomize`
 - `cfg` = `10`
+- `denoise` = `beta`
 - `sampler_name` = `1`
 - `scheduler` = `euler`
-- `denoise` = `beta`
+- `seed` = `disable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **96%**（24/25）
 
-**有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`CFGZeroStarAndInit`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`KSamplerAdvanced`、`ConditioningZeroOut`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、UNETLoader、KSamplerAdvanced
+**有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`CFGZeroStarAndInit`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`KSamplerAdvanced`、`ConditioningZeroOut`、`VAEDecode`、`SaveImage`、`Image Comparer (rgthree)`、`CLIPTextEncode`

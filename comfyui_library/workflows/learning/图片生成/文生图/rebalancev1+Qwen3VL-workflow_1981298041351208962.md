@@ -1,5 +1,5 @@
 ---
-key: rebalancev1+Qwen3VL-workflow_1981298041351208962.json
+key: 图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json
 name: rebalancev1+Qwen3VL-workflow_1981298041351208962
 type: Unknown Workflow
 status: completed
@@ -16,45 +16,41 @@ parameters: {"cfg": 1, "checkpoint": "Rebalance_beta_00001_.safetensors", "denoi
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# rebalancev1+Qwen3VL-workflow_1981298041351208962.json
+# 图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/rebalancev1+Qwen3VL-workflow_1981298041351208962.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（12 个）：
 - `EmptySD3LatentImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `PreviewAny`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `AILab_QwenVL`
 
 ## 关键参数
 
-- `checkpoint` = `Rebalance_beta_00001_.safetensors`
-- `seed` = `774295928468411`
-- `steps` = `8`
 - `cfg` = `1`
+- `checkpoint` = `Rebalance_beta_00001_.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `774295928468411`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **92%**（11/12）
 
-**有卡**：`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`CheckpointLoaderSimple`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`KSampler`、`AILab_QwenVL`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
+**有卡**：`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`PreviewAny`、`CheckpointLoaderSimple`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`KSampler`
 
 ## 参数体检
 

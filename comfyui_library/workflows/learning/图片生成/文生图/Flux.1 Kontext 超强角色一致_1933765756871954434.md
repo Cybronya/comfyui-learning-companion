@@ -1,5 +1,5 @@
 ---
-key: Flux.1 Kontext 超强角色一致_1933765756871954434.json
+key: 图片生成/文生图/Flux.1 Kontext 超强角色一致_1933765756871954434.json
 name: Flux.1 Kontext 超强角色一致_1933765756871954434
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# Flux.1 Kontext 超强角色一致_1933765756871954434.json
+# 图片生成/文生图/Flux.1 Kontext 超强角色一致_1933765756871954434.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Kontext 超强角色一致_1933765756871954434.json`
 
 ## 结构
-
-**生成流程**：Output → Other
 
 **节点**（6 个）：
 - `Bjornulf_ShowStringText`
@@ -33,6 +31,4 @@ missing: []
 
 覆盖率 **83%**（5/6）
 
-**有卡**：`Bjornulf_ShowStringText`、`SaveImage`、`LoadImage`、`ArgosTranslateTextNode`、`RH_ComfyFluxKontext`
-
-**用到的条目**：LoadImage、RH_ComfyFluxKontext、SaveImage、ArgosTranslateTextNode、Bjornulf_ShowStringText、sd15-t2i-basic、sd15-t2i-lora、node
+**有卡**：`Bjornulf_ShowStringText`、`SaveImage`、`Note`、`LoadImage`、`ArgosTranslateTextNode`

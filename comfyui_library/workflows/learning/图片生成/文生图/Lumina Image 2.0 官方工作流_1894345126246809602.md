@@ -1,5 +1,5 @@
 ---
-key: Lumina Image 2.0 官方工作流_1894345126246809602.json
+key: 图片生成/文生图/Lumina Image 2.0 官方工作流_1894345126246809602.json
 name: Lumina Image 2.0 官方工作流_1894345126246809602
 type: Unknown Workflow
 status: completed
@@ -14,40 +14,36 @@ missing: []
 parameters: {"cfg": 4, "checkpoint": "lumina_2.safetensors", "denoise": 1, "sampler_name": "res_multistep", "scheduler": "simple", "seed": 526750517779995, "steps": 25}
 ---
 
-# Lumina Image 2.0 官方工作流_1894345126246809602.json
+# 图片生成/文生图/Lumina Image 2.0 官方工作流_1894345126246809602.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Lumina Image 2.0 官方工作流_1894345126246809602.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（10 个）：
-- `CheckpointLoaderSimple` ★核心
-- `VAEDecode` ★核心
+- `CheckpointLoaderSimple`
+- `VAEDecode`
 - `EmptySD3LatentImage`
 - `SaveImage`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Note`
 - `Note`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 
 ## 关键参数
 
-- `checkpoint` = `lumina_2.safetensors`
-- `seed` = `526750517779995`
-- `steps` = `25`
 - `cfg` = `4`
+- `checkpoint` = `lumina_2.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `res_multistep`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `526750517779995`
+- `steps` = `25`
 
 ## 知识
 
 覆盖率 **80%**（8/10）
 
-**有卡**：`CheckpointLoaderSimple`、`VAEDecode`、`EmptySD3LatentImage`、`SaveImage`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`KSampler`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、SaveImage、EmptySD3LatentImage、ModelSamplingAuraFlow、sd15-t2i-basic
+**有卡**：`CheckpointLoaderSimple`、`VAEDecode`、`EmptySD3LatentImage`、`SaveImage`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`Note`

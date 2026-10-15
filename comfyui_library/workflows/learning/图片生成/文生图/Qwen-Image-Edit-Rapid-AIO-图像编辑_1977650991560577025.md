@@ -1,5 +1,5 @@
 ---
-key: Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
+key: 图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
 name: Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025
 type: Image To Image
 status: completed
@@ -16,23 +16,21 @@ parameters: {"cfg": 1, "checkpoint": "Qwen-Rapid-AIO-v3.safetensors", "denoise":
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
+# 图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit-Rapid-AIO-图像编辑_1977650991560577025.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Sampling → Decode → Process → Output → Other
-
 **节点**（10 个）：
 - `ImageScaleToTotalPixels`
-- `VAEEncode` ★核心
-- `KSampler` ★核心
+- `VAEEncode`
+- `KSampler`
 - `PreviewImage`
 - `TextEncodeQwenImageEditPlus`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `TextEncodeQwenImageEditPlus`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `LoadImage`
 
@@ -40,21 +38,19 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `65454653`
-- `steps` = `4`
 - `cfg` = `1`
+- `checkpoint` = `Qwen-Rapid-AIO-v3.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `sa_solver`
 - `scheduler` = `beta`
-- `denoise` = `1`
-- `checkpoint` = `Qwen-Rapid-AIO-v3.safetensors`
+- `seed` = `65454653`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **90%**（9/10）
 
-**有卡**：`ImageScaleToTotalPixels`、`VAEEncode`、`KSampler`、`TextEncodeQwenImageEditPlus`、`CheckpointLoaderSimple`、`VAEDecode`、`SaveImage`、`LoadImage`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、LoadImage、TextEncodeQwenImageEditPlus、VAEEncode、SaveImage、ImageScaleToTotalPixels
+**有卡**：`ImageScaleToTotalPixels`、`VAEEncode`、`KSampler`、`PreviewImage`、`TextEncodeQwenImageEditPlus`、`CheckpointLoaderSimple`、`VAEDecode`、`SaveImage`
 
 ## 参数体检
 

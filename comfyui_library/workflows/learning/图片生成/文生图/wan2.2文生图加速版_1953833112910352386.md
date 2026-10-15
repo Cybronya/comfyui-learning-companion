@@ -1,5 +1,5 @@
 ---
-key: wan2.2文生图加速版_1953833112910352386.json
+key: 图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json
 name: wan2.2文生图加速版_1953833112910352386
 type: Unknown Workflow
 status: completed
@@ -15,59 +15,55 @@ parameters: {"cfg": 12, "denoise": "bong_tangent", "sampler_name": 1, "scheduler
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2文生图加速版_1953833112910352386.json
+# 图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2文生图加速版_1953833112910352386.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（25 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
+- `UNETLoader`
 - `EmptyHunyuanLatentVideo`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `CR Text Concatenate`
-- `KSamplerAdvanced` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
 - `ImpactInt`
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `CR Text`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ImpactInt`
 - `CR Text`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `randomize`
 - `cfg` = `12`
+- `denoise` = `bong_tangent`
 - `sampler_name` = `1`
 - `scheduler` = `res_2s`
-- `denoise` = `bong_tangent`
+- `seed` = `disable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **88%**（22/25）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`ImpactInt`、`VAEDecode`、`SaveImage`
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CR Text Concatenate`、`KSamplerAdvanced`、`ImpactInt`、`VAEDecode`、`CR Text`
 
 **缺卡**（3）：`CR Text`、`CR Text`、`CR Text Concatenate`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

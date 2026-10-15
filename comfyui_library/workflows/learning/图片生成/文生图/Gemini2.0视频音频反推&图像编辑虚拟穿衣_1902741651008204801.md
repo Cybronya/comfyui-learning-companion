@@ -1,5 +1,5 @@
 ---
-key: Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
+key: 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
 name: Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [Note _O]
 discoveries: [次要节点 `Note _O` 知识库中没有该节点类型的任何知识]
 ---
 
-# Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
+# 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（33 个）：
 - `LoadAudio`
@@ -61,11 +59,9 @@ discoveries: [次要节点 `Note _O` 知识库中没有该节点类型的任何�
 
 覆盖率 **64%**（21/33）
 
-**有卡**：`LoadAudio`、`Gemini_Flash_200_Exp`、`LoadImage`、`VHS_LoadVideo`、`ImageConcanate`、`VHS_VideoCombine`
+**有卡**：`LoadAudio`、`Gemini_Flash_200_Exp`、`ShowText|pysssss`、`LoadImage`、`PreviewImage`
 
 **缺卡**（1）：`Note _O`
-
-**用到的条目**：LoadImage、ImageConcanate、LoadAudio、VHS_LoadVideo、VHS_VideoCombine、Gemini_Flash_200_Exp、sd15-t2i-basic、sd15-t2i-lora
 
 ## 学习发现
 

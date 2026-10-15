@@ -1,5 +1,5 @@
 ---
-key: 🈚️基础 文生图-图片反推-Wan2.2-moe-native-Lightx_1953118044471160833.json
+key: 图片生成/文生图/🈚️基础 文生图-图片反推-Wan2.2-moe-native-Lightx_1953118044471160833.json
 name: 🈚️基础 文生图-图片反推-Wan2.2-moe-native-Lightx_1953118044471160833
 type: Unknown Workflow
 status: completed
@@ -16,20 +16,18 @@ parameters: {"cfg": 4, "denoise": "euler_ancestral", "sampler_name": 1, "schedul
 discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Qwen2.5VL` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 🈚️基础 文生图-图片反推-Wan2.2-moe-native-Lightx_1953118044471160833.json
+# 图片生成/文生图/🈚️基础 文生图-图片反推-Wan2.2-moe-native-Lightx_1953118044471160833.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/🈚️基础 文生图-图片反推-Wan2.2-moe-native-Lightx_1953118044471160833.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（68 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
 - `SetNode`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `SetNode`
 - `ApplySageAttention`
@@ -47,7 +45,7 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 - `GetNode`
 - `JWInteger`
 - `SetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `GetNode`
 - `LoadImage`
 - `GetNode`
@@ -55,12 +53,12 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 - `RebatchLatents`
 - `LatentPixelScale`
 - `ImageSmartSharpen+`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `GetNode`
 - `UpscaleModelLoader`
-- `KSampler` ★核心
-- `WanMoeKSampler` ★核心
+- `KSampler`
+- `WanMoeKSampler`
 - `GetNode`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LayerUtility: JoyCaptionBeta1ExtraOptions`
@@ -78,7 +76,7 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 - `SetNode`
 - `GetNode`
 - `SetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ApplySageAttention`
 - `GetNode`
 - `EmptyHunyuanLatentVideo`
@@ -87,31 +85,29 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 - `easy showAnything`
 - `easy cleanGpuUsed`
 - `SetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ImpactSwitch`
 - `wanBlockSwap`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `PreviewImage`
 
 ## 关键参数
 
-- `seed` = `0.875`
-- `steps` = `randomize`
 - `cfg` = `4`
+- `denoise` = `euler_ancestral`
 - `sampler_name` = `1`
 - `scheduler` = `1`
-- `denoise` = `euler_ancestral`
+- `seed` = `0.875`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **40%**（27/68）
 
-**有卡**：`CLIPTextEncode`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`ApplySageAttention`、`wanBlockSwap`、`JWInteger`、`LoraLoaderModelOnly`、`LoadImage`、`RebatchLatents`、`LatentPixelScale`、`UpscaleModelLoader`、`KSampler`、`WanMoeKSampler`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`SaveImage`
+**有卡**：`CLIPTextEncode`、`VAELoader`、`SetNode`、`VAEDecode`、`CLIPLoader`、`ApplySageAttention`、`wanBlockSwap`、`GetNode`、`easy seed`、`JWInteger`、`LoraLoaderModelOnly`、`LoadImage`、`RebatchLatents`
 
 **缺卡**（9）：`ImageSmartSharpen+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Qwen2.5VL`、`easy cleanGpuUsed`、`CR Prompt Text`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 

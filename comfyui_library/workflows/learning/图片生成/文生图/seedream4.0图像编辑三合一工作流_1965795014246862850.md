@@ -1,5 +1,5 @@
 ---
-key: seedream4.0图像编辑三合一工作流_1965795014246862850.json
+key: 图片生成/文生图/seedream4.0图像编辑三合一工作流_1965795014246862850.json
 name: seedream4.0图像编辑三合一工作流_1965795014246862850
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [easy imageConcat]
 discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识]
 ---
 
-# seedream4.0图像编辑三合一工作流_1965795014246862850.json
+# 图片生成/文生图/seedream4.0图像编辑三合一工作流_1965795014246862850.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/seedream4.0图像编辑三合一工作流_1965795014246862850.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（11 个）：
 - `SaveImage`
@@ -39,11 +37,9 @@ discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型�
 
 覆盖率 **82%**（9/11）
 
-**有卡**：`SaveImage`、`Comfly_Doubao_Seedream_4`、`LoadImage`
+**有卡**：`SaveImage`、`Comfly_Doubao_Seedream_4`、`LoadImage`、`easy imageConcat`、`Fast Groups Muter (rgthree)`
 
 **缺卡**（1）：`easy imageConcat`
-
-**用到的条目**：LoadImage、Comfly_Doubao_Seedream_4、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Seed、sampler_name 调整经验、steps 调整经验
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: （贞贞lora-图像编辑）Qwen Image 2.1 PE 姿势编辑_2105844300620853250.json
+key: 图片生成/图生图/（贞贞lora-图像编辑）Qwen Image 2.1 PE 姿势编辑_2105844300620853250.json
 name: （贞贞lora-图像编辑）Qwen Image 2.1 PE 姿势编辑_2105844300620853250
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
-# （贞贞lora-图像编辑）Qwen Image 2.1 PE 姿势编辑_2105844300620853250.json
+# 图片生成/图生图/（贞贞lora-图像编辑）Qwen Image 2.1 PE 姿势编辑_2105844300620853250.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/图生图/（贞贞lora-图像编辑）Qwen Image 2.1 PE 姿势编辑_2105844300620853250.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（38 个）：
 - `Note`
@@ -38,23 +36,23 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `LoadImage`
 - `LoadImage`
 - `Note`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CR Prompt Text`
 - `QwenImage21SageAttentionT8`
 - `ConcatTextOfUtils`
 - `TextEncodeQwenImage21`
 - `LoadImage`
 - `CR Prompt Text`
-- `UNETLoader` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `EmptyLatentImage`
 - `SaveImage`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `QwenImage21BlockCacheT8`
 - `QwenImage21SpectrumT8`
 - `SaveImage`
 - `easy cleanGpuUsed`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
 - `SaveImage`
 - `SaveImage`
@@ -65,25 +63,23 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `19960422`
-- `steps` = `40`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `19960422`
+- `steps` = `40`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **76%**（29/38）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`LoadImage`、`VAEDecode`、`QwenImage21SageAttentionT8`、`ConcatTextOfUtils`、`TextEncodeQwenImage21`、`UNETLoader`、`EmptyLatentImage`、`SaveImage`、`LoraLoaderModelOnly`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`KSampler`、`QwenPERewriteT8`
+**有卡**：`Note`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`ComfySwitchNode`、`LoadImage`、`VAEDecode`、`CR Prompt Text`、`QwenImage21SageAttentionT8`、`ConcatTextOfUtils`、`TextEncodeQwenImage21`、`UNETLoader`、`EmptyLatentImage`、`SaveImage`、`LoraLoaderModelOnly`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`easy cleanGpuUsed`
 
 **缺卡**（4）：`easy cleanGpuUsed`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
+key: 图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
 name: QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249
 type: Unknown Workflow
 status: completed
@@ -16,25 +16,23 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy joinImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
+# 图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/QwenImageEdit-Plus有无LORA效果对比测试_1978372865714229249.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（33 个）：
 - `ModelSamplingAuraFlow`
 - `CFGNorm`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `SaveImage`
 - `ImageStitch`
 - `LayerUtility: PurgeVRAM V2`
 - `ModelSamplingAuraFlow`
 - `CFGNorm`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `SaveImage`
 - `ImageStitch`
@@ -47,36 +45,34 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `PrimitiveInt`
 - `TextEncodeQwenImageEditPlus`
 - `ImageScaleToTotalPixels`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `ImageBatch`
 - `ImageBatch`
 - `easy joinImageBatch`
 - `PreviewImage`
 - `Text Multiline`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `LoadImage`
 
 ## 关键参数
 
-- `seed` = `476602248560184`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `476602248560184`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **82%**（27/33）
 
-**有卡**：`ModelSamplingAuraFlow`、`CFGNorm`、`KSampler`、`SaveImage`、`ImageStitch`、`CLIPLoader`、`GetImageSize`、`ConditioningZeroOut`、`EmptySD3LatentImage`、`VAELoader`、`TextEncodeQwenImageEditPlus`、`ImageScaleToTotalPixels`、`VAEDecode`、`ImageBatch`、`UNETLoader`、`LoraLoaderModelOnly`、`LoadImage`
+**有卡**：`ModelSamplingAuraFlow`、`CFGNorm`、`KSampler`、`SaveImage`、`ImageStitch`、`LayerUtility: PurgeVRAM V2`、`CLIPLoader`、`GetImageSize`、`ConditioningZeroOut`、`EmptySD3LatentImage`、`VAELoader`、`PrimitiveInt`、`TextEncodeQwenImageEditPlus`、`ImageScaleToTotalPixels`、`VAEDecode`、`ImageBatch`、`easy joinImageBatch`
 
 **缺卡**（4）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`Text Multiline`、`easy joinImageBatch`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader
 
 ## 参数体检
 

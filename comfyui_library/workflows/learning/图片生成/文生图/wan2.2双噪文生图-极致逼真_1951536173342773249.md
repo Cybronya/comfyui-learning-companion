@@ -1,5 +1,5 @@
 ---
-key: wan2.2双噪文生图-极致逼真_1951536173342773249.json
+key: 图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json
 name: wan2.2双噪文生图-极致逼真_1951536173342773249
 type: Unknown Workflow
 status: completed
@@ -15,65 +15,61 @@ parameters: {"batch_size": 1, "cfg": 30, "denoise": "bong_tangent", "height": 10
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2双噪文生图-极致逼真_1951536173342773249.json
+# 图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（28 个）：
 - `SetNode`
 - `SetNode`
 - `ModelPassThrough`
 - `GetNode`
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `Label (rgthree)`
 - `Label (rgthree)`
 - `Anything Everywhere`
 - `Anything Everywhere`
-- `CLIPTextEncode` ★核心
-- `KSamplerAdvanced` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `KSamplerAdvanced`
+- `EmptyLatentImage`
 - `ModelPassThrough`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `MarkdownNote`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `SaveImage`
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `UNETLoader`
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `Note Plus (mtb)`
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `randomize`
+- `batch_size` = `1`
 - `cfg` = `30`
+- `denoise` = `bong_tangent`
+- `height` = `1088`
 - `sampler_name` = `3`
 - `scheduler` = `res_2s`
-- `denoise` = `bong_tangent`
+- `seed` = `enable`
+- `steps` = `randomize`
 - `width` = `1920`
-- `height` = `1088`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **61%**（17/28）
 
-**有卡**：`ModelPassThrough`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`
+**有卡**：`SetNode`、`ModelPassThrough`、`GetNode`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`Label (rgthree)`、`Anything Everywhere`、`KSamplerAdvanced`、`EmptyLatentImage`、`MarkdownNote`
 
 **缺卡**（3）：`Label (rgthree)`、`Label (rgthree)`、`Note Plus (mtb)`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader、KSamplerAdvanced
 
 ## 学习发现
 

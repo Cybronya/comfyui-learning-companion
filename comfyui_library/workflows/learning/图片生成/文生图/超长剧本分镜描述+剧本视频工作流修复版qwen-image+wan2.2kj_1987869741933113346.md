@@ -1,5 +1,5 @@
 ---
-key: 超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj_1987869741933113346.json
+key: 图片生成/文生图/超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj_1987869741933113346.json
 name: 超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj_1987869741933113346
 type: Text To Image
 status: completed
@@ -16,24 +16,22 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 512, "sampler_na
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `List Length` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Substract Int Int (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt List` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt List` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt List` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj_1987869741933113346.json
+# 图片生成/文生图/超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj_1987869741933113346.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/超长剧本分镜描述+剧本视频工作流修复版qwen-image+wan2.2kj_1987869741933113346.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（121 个）：
 - `ModelSamplingAuraFlow`
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
 - `PathchSageAttentionKJ`
 - `VAELoader`
 - `CLIPLoader`
-- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
@@ -53,10 +51,10 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `LayerUtility: PurgeVRAM`
 - `WanVideoLoraSelect`
 - `WanVideoLoraSelect`
-- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadWanVideoClipTextEncoder`
 - `WanVideoSLG`
 - `WanVideoSLG`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `SimpleMath+`
 - `SetNode`
 - `WanVideoTextEncode`
@@ -79,7 +77,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `WanVideoBlockSwap`
 - `WanVideoLoraSelect`
 - `WanVideoLoraSelect`
-- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadWanVideoClipTextEncoder`
 - `WanVideoSLG`
 - `WanVideoSLG`
 - `JWInteger`
@@ -88,19 +86,19 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `CR Prompt List`
 - `JWInteger`
 - `JWInteger`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `JWInteger`
 - `ImageResize+`
 - `WanVideoVAELoader`
-- `WanVideoSampler` ★核心
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
+- `WanVideoSampler`
 - `LayerUtility: PurgeVRAM`
 - `LayerUtility: PurgeVRAM`
 - `easy lengthAnything`
 - `PreviewImage`
 - `SimpleMath+`
 - `easy showAnything`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoVAELoader`
 - `easy forLoopStart`
 - `WanVideoDecode`
@@ -117,7 +115,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `VHS_VideoCombine`
 - `CreateCFGScheduleFloatList`
 - `LoadImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
 - `GODMT_ListSlice`
 - `ImpactImageBatchToImageList`
@@ -151,25 +149,23 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `551057179077766`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `551057179077766`
+- `steps` = `4`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **64%**（77/121）
 
-**有卡**：`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`KSampler`、`PathchSageAttentionKJ`、`VAELoader`、`CLIPLoader`、`UnetLoaderGGUF`、`WanVideoClipVisionEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`JWInteger`、`INTConstant`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`LoadWanVideoClipTextEncoder`、`WanVideoSLG`、`EmptyLatentImage`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`WanVideoSampler`、`WanVideoVAELoader`、`WanVideoDecode`、`ColorMatch`、`ImageBatchJoin`、`CreateCFGScheduleFloatList`、`VHS_VideoCombine`、`LoadImage`、`VAEDecode`、`GODMT_ListSlice`、`ImpactImageBatchToImageList`、`TextBox`
+**有卡**：`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`KSampler`、`PathchSageAttentionKJ`、`VAELoader`、`CLIPLoader`、`UnetLoaderGGUF`、`easy cleanGpuUsed`、`WanVideoClipVisionEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`JWInteger`、`INTConstant`、`PrimitiveNode`、`WanVideoModelLoader`、`LayerUtility: PurgeVRAM`、`WanVideoLoraSelect`、`LoadWanVideoClipTextEncoder`、`WanVideoSLG`、`EmptyLatentImage`、`SimpleMath+`、`SetNode`、`WanVideoTextEncode`、`CR Prompt List`、`CR SDXL Aspect Ratio`、`WanVideoImageToVideoEncode`、`ImageResize+`、`PreviewImage`、`WanVideoSampler`、`WanVideoVAELoader`、`easy lengthAnything`、`easy showAnything`
 
 **缺卡**（28）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`List Length`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`SimpleMath+`、`SimpleMath+`、`Substract Int Int (JPS)`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy forLoopEnd`、`easy forLoopStart`、`easy imageListToImageBatch`、`easy lengthAnything`、`easy lengthAnything`、`CR Prompt List`、`CR Prompt List`、`CR Prompt List`、`CR Prompt Text`、`CR SDXL Aspect Ratio`、`ImageResize+`、`ImageResize+`、`ImageResize+`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 

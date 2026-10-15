@@ -1,5 +1,5 @@
 ---
-key: QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
+key: 图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
 name: QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978
 type: Text To Image
 status: completed
@@ -16,20 +16,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.1, "height": 1280, "sampler
 discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy negative` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
+# 图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/QT105-联合文生图（Qwen-image+Wan2.2）去除豆包脸，出图更上一个高度，增加更多细_1956596073122942978.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（58 个）：
 - `Note`
 - `RH_LLMAPI_NODE`
 - `SetNode`
 - `SetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Image Comparer (rgthree)`
 - `SetNode`
 - `easy negative`
@@ -40,73 +38,71 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 - `PreviewImage`
 - `SaveImage`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `GetNode`
 - `GetNode`
 - `SetNode`
 - `GetNode`
 - `Any Switch (rgthree)`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
 - `CLIPLoader`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `VAEEncode` ★核心
-- `UnetLoaderGGUF` ★核心
+- `VAEEncode`
+- `UnetLoaderGGUF`
 - `VAELoader`
 - `VAELoader`
-- `UnetLoaderGGUF` ★核心
-- `UnetLoaderGGUF` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF`
+- `UnetLoaderGGUF`
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `Any Switch (rgthree)`
 - `SetNode`
 - `Any Switch (rgthree)`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Any Switch (rgthree)`
-- `KSampler` ★核心
+- `KSampler`
 - `PlaySound|pysssss`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `UNETLoader`
+- `KSampler`
+- `KSampler`
 - `easy positive`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `1280`
-- `height` = `1280`
 - `batch_size` = `1`
-- `seed` = `44985077519229`
-- `steps` = `5`
 - `cfg` = `1`
+- `denoise` = `0.1`
+- `height` = `1280`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.1`
+- `seed` = `44985077519229`
+- `steps` = `5`
+- `width` = `1280`
 
 ## 知识
 
 覆盖率 **62%**（36/58）
 
-**有卡**：`RH_LLMAPI_NODE`、`EmptyLatentImage`、`SaveImage`、`UNETLoader`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`CLIPLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`ConditioningZeroOut`、`VAEEncode`、`UnetLoaderGGUF`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`KSampler`
+**有卡**：`Note`、`RH_LLMAPI_NODE`、`SetNode`、`EmptyLatentImage`、`Image Comparer (rgthree)`、`easy negative`、`Fast Groups Bypasser (rgthree)`、`PreviewImage`、`GetNode`、`SaveImage`、`UNETLoader`、`Any Switch (rgthree)`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`CLIPLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`ConditioningZeroOut`、`VAEEncode`、`UnetLoaderGGUF`、`VAELoader`
 
 **缺卡**（3）：`PlaySound|pysssss`、`easy positive`、`easy negative`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 

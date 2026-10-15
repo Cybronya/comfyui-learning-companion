@@ -1,5 +1,5 @@
 ---
-key: Wan2.2终极写实文生图双噪流_1950564507682787330.json
+key: 图片生成/文生图/Wan2.2终极写实文生图双噪流_1950564507682787330.json
 name: Wan2.2终极写实文生图双噪流_1950564507682787330
 type: Unknown Workflow
 status: completed
@@ -15,44 +15,42 @@ parameters: {"cfg": 10, "denoise": "beta", "sampler_name": 1, "scheduler": "eule
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2终极写实文生图双噪流_1950564507682787330.json
+# 图片生成/文生图/Wan2.2终极写实文生图双噪流_1950564507682787330.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2终极写实文生图双噪流_1950564507682787330.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（33 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `CR Text Concatenate`
 - `VAELoader`
 - `CLIPLoader`
 - `SaveImage`
-- `UNETLoader` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `UNETLoader`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ModelSamplingSD3`
 - `ImpactInt`
 - `ImpactInt`
 - `ImpactSwitch`
 - `Note`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CR Text`
 - `RH_LLMAPI_NODE`
 - `CR Text`
@@ -60,22 +58,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `disable`
-- `steps` = `randomize`
 - `cfg` = `10`
+- `denoise` = `beta`
 - `sampler_name` = `1`
 - `scheduler` = `euler`
-- `denoise` = `beta`
+- `seed` = `disable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **82%**（27/33）
 
-**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`SaveImage`、`KSamplerAdvanced`、`VAEDecode`、`ImpactInt`、`RH_LLMAPI_NODE`
+**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`UNETLoader`、`CR Text Concatenate`、`VAELoader`、`CLIPLoader`、`SaveImage`、`KSamplerAdvanced`、`VAEDecode`、`ImpactInt`、`ImpactSwitch`
 
 **缺卡**（3）：`CR Text`、`CR Text`、`CR Text Concatenate`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、CFGZeroStarAndInit
 
 ## 学习发现
 

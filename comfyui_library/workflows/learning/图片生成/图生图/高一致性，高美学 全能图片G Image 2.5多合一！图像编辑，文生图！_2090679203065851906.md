@@ -1,5 +1,5 @@
 ---
-key: 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
+key: 图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
 name: 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# 高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
+# 图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/图生图/高一致性，高美学 全能图片G Image 2.5多合一！图像编辑，文生图！_2090679203065851906.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（21 个）：
 - `LoadImage`
@@ -48,6 +46,4 @@ missing: []
 
 覆盖率 **57%**（12/21）
 
-**有卡**：`LoadImage`、`SaveImage`、`RH_RhartImageG25SunburstTextToImage`、`RH_RhartImageG25OfficialTokenFlareEdit`、`RH_RhartImageG25OfficialTokenFlareTextToImage`、`RH_RhartImageG25SunburstImageToImage`
-
-**用到的条目**：LoadImage、SaveImage、RH_RhartImageG25SunburstImageToImage、RH_RhartImageG25SunburstTextToImage、RH_RhartImageG25OfficialTokenFlareEdit、RH_RhartImageG25OfficialTokenFlareTextToImage、sd15-t2i-basic、sd15-t2i-lora
+**有卡**：`LoadImage`、`PreviewImage`、`SaveImage`、`Fast Groups Bypasser (rgthree)`、`RH_RhartImageG25SunburstTextToImage`、`RH_RhartImageG25OfficialTokenFlareEdit`

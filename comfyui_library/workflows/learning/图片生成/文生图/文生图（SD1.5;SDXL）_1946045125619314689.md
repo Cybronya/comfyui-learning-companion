@@ -1,5 +1,5 @@
 ---
-key: 文生图（SD1.5;SDXL）_1946045125619314689.json
+key: 图片生成/文生图/文生图（SD1.5;SDXL）_1946045125619314689.json
 name: 文生图（SD1.5;SDXL）_1946045125619314689
 type: Text To Image
 status: completed
@@ -14,44 +14,40 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "XL真人写实摄影_V1.safetensors", "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "normal", "seed": 334203732458272, "steps": 29, "width": 1024}
 ---
 
-# 文生图（SD1.5;SDXL）_1946045125619314689.json
+# 图片生成/文生图/文生图（SD1.5;SDXL）_1946045125619314689.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图（SD1.5;SDXL）_1946045125619314689.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（9 个）：
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `Note`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Note`
-- `CheckpointLoaderSimple` ★核心
-- `EmptyLatentImage` ★核心
+- `CheckpointLoaderSimple`
+- `EmptyLatentImage`
 - `SaveImage`
-- `KSampler` ★核心
+- `KSampler`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `checkpoint` = `XL真人写实摄影_V1.safetensors`
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `334203732458272`
-- `steps` = `29`
 - `cfg` = `8`
+- `checkpoint` = `XL真人写实摄影_V1.safetensors`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `1`
+- `seed` = `334203732458272`
+- `steps` = `29`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **78%**（7/9）
 
-**有卡**：`VAEDecode`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`EmptyLatentImage`、`SaveImage`、`KSampler`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora
+**有卡**：`VAEDecode`、`CLIPTextEncode`、`Note`、`CheckpointLoaderSimple`、`EmptyLatentImage`

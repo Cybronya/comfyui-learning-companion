@@ -1,5 +1,5 @@
 ---
-key: Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
+key: 图片生成/文生图/Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
 name: Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129
 type: Unknown Workflow
 status: completed
@@ -14,21 +14,19 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 537375866660005, "steps": 25, "width": 1024}
 ---
 
-# Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
+# 图片生成/文生图/Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图（Generate重写提示词）2609_2106051239590064129.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（25 个）：
 - `MarkdownNote`
 - `Note`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `TextEncodeQwenImage21`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `CLIPLoader`
 - `PrimitiveStringMultiline`
 - `RegexExtract`
@@ -36,13 +34,13 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 - `SeedVR2LoadVAEModel`
 - `SaveImage`
 - `SaveImageAdvanced`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `SeedVR2VideoUpscaler`
 - `GetNode`
 - `TextGenerate`
 - `PreviewAny`
-- `KSampler` ★核心
+- `KSampler`
 - `SeedVR2LoadDiTModel`
 - `SaveImage`
 - `PrimitiveStringMultiline`
@@ -51,20 +49,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `537375866660005`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `537375866660005`
+- `steps` = `25`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **68%**（17/25）
 
-**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`CLIPLoader`、`RegexExtract`、`StringConcatenate`、`SeedVR2LoadVAEModel`、`SaveImage`、`SaveImageAdvanced`、`VAEDecode`、`SeedVR2VideoUpscaler`、`TextGenerate`、`KSampler`、`SeedVR2LoadDiTModel`、`ResolutionSelector`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
+**有卡**：`MarkdownNote`、`Note`、`UNETLoader`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`CLIPLoader`、`PrimitiveStringMultiline`、`RegexExtract`、`StringConcatenate`、`SeedVR2LoadVAEModel`、`SaveImage`、`SaveImageAdvanced`、`VAEDecode`、`SetNode`、`SeedVR2VideoUpscaler`、`GetNode`

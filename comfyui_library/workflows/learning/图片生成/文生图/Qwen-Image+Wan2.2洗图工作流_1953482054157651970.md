@@ -1,5 +1,5 @@
 ---
-key: Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
+key: 图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
 name: Qwen-Image+Wan2.2洗图工作流_1953482054157651970
 type: Text To Image
 status: completed
@@ -16,73 +16,69 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.1, "height": 1536, "sampler
 discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
+# 图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image+Wan2.2洗图工作流_1953482054157651970.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（34 个）：
 - `VAELoader`
 - `CLIPLoader`
 - `SaveImage`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `String Literal`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PreviewBridge`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `Seed`
 - `ShowText|pysssss`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `VAEEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `VAEEncode`
+- `EmptyLatentImage`
 - `DeepTranslatorTextNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `KSampler`
+- `KSampler`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `768`
-- `height` = `1536`
 - `batch_size` = `1`
-- `seed` = `217088130541187`
-- `steps` = `5`
 - `cfg` = `1`
+- `denoise` = `0.1`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.1`
+- `seed` = `217088130541187`
+- `steps` = `5`
+- `width` = `768`
 
 ## 知识
 
 覆盖率 **94%**（32/34）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`VAEDecode`、`PreviewBridge`、`ModelSamplingSD3`、`Seed`、`ConditioningZeroOut`、`VAEEncode`、`EmptyLatentImage`、`DeepTranslatorTextNode`、`ModelSamplingAuraFlow`、`KSampler`
+**有卡**：`VAELoader`、`CLIPLoader`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`String Literal`、`VAEDecode`、`PreviewBridge`、`ModelSamplingSD3`、`Seed`、`ShowText|pysssss`、`ConditioningZeroOut`、`VAEEncode`、`EmptyLatentImage`、`DeepTranslatorTextNode`、`ModelSamplingAuraFlow`、`KSampler`
 
 **缺卡**（1）：`String Literal`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 

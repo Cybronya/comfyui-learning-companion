@@ -1,5 +1,5 @@
 ---
-key: 谷歌Gemini Flash 2.0 exp 支持图片编辑、视频、音频反推_1916850895793881090.json
+key: 图片生成/文生图/谷歌Gemini Flash 2.0 exp 支持图片编辑、视频、音频反推_1916850895793881090.json
 name: 谷歌Gemini Flash 2.0 exp 支持图片编辑、视频、音频反推_1916850895793881090
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# 谷歌Gemini Flash 2.0 exp 支持图片编辑、视频、音频反推_1916850895793881090.json
+# 图片生成/文生图/谷歌Gemini Flash 2.0 exp 支持图片编辑、视频、音频反推_1916850895793881090.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/谷歌Gemini Flash 2.0 exp 支持图片编辑、视频、音频反推_1916850895793881090.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（20 个）：
 - `LoadImage`
@@ -47,6 +45,4 @@ missing: []
 
 覆盖率 **65%**（13/20）
 
-**有卡**：`LoadImage`、`ImageBatch`、`LoadAudio`、`VHS_LoadVideo`、`SaveImage`、`Gemini_Flash_200_Exp`
-
-**用到的条目**：LoadImage、SaveImage、LoadAudio、VHS_LoadVideo、ImageBatch、ImageBatch、Gemini_Flash_200_Exp、sd15-t2i-basic
+**有卡**：`LoadImage`、`easy showAnything`、`PreviewImage`、`ImageBatch`、`LoadAudio`、`VHS_LoadVideo`、`Note`

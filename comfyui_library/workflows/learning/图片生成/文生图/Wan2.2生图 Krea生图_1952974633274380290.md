@@ -1,5 +1,5 @@
 ---
-key: Wan2.2生图 Krea生图_1952974633274380290.json
+key: 图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json
 name: Wan2.2生图 Krea生图_1952974633274380290
 type: Text To Image
 status: completed
@@ -16,54 +16,52 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 512, "sampler_na
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Wan2.2生图 Krea生图_1952974633274380290.json
+# 图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2生图 Krea生图_1952974633274380290.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（60 个）：
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `ConditioningZeroOut`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `UNETLoader`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `LayerUtility: PurgeVRAM V2`
 - `LayerUtility: PurgeVRAM V2`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `EmptyLatentImage`
+- `KSampler`
 - `EmptyHunyuanLatentVideo`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
 - `LayerUtility: PurgeVRAM V2`
 - `LayerUtility: PurgeVRAM V2`
 - `LayerUtility: ImageReel`
 - `LayerUtility: ImageReel`
 - `DualCLIPLoader`
 - `easy seed`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `RH_Translator`
 - `SaveImage`
 - `SaveImage`
@@ -90,25 +88,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `1001197317863694`
-- `steps` = `8`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `1001197317863694`
+- `steps` = `8`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **75%**（45/60）
 
-**有卡**：`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`ConditioningZeroOut`、`VAELoader`、`CLIPTextEncode`、`VAEDecode`、`KSampler`、`EmptyLatentImage`、`EmptyHunyuanLatentVideo`、`DualCLIPLoader`、`RH_Translator`、`SaveImage`、`ImageConcanate`、`PIP_longsize`、`LoadImage`、`RH_Captioner`、`RH_LLMAPI_NODE`、`ImpactInt`
+**有卡**：`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`ConditioningZeroOut`、`VAELoader`、`CLIPTextEncode`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`KSampler`、`EmptyLatentImage`、`EmptyHunyuanLatentVideo`、`LayerUtility: ImageReel`、`DualCLIPLoader`、`easy seed`、`RH_Translator`、`SaveImage`、`ImageConcanate`、`LayerUtility: ImageReelComposit`
 
 **缺卡**（10）：`CR Text`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 

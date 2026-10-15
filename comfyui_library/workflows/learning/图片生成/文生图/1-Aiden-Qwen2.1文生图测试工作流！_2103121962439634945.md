@@ -1,5 +1,5 @@
 ---
-key: 1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
+key: 图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
 name: 1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945
 type: Unknown Workflow
 status: completed
@@ -15,19 +15,17 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# 1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
+# 图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（28 个）：
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `VAEDecode`
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `孤海注释`
 - `MarkdownNote`
@@ -40,7 +38,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `VOSR2ModelLoader`
 - `SplitImageWithAlpha`
 - `忽略多组孤海`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `easy positive`
@@ -55,25 +53,23 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 关键参数
 
-- `seed` = `210`
-- `steps` = `25`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `210`
+- `steps` = `25`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **61%**（17/28）
 
-**有卡**：`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`ModelPreviewOverrideKJ`、`VOSR2Upscale`、`SaveImage`、`VOSR2ModelLoader`、`SplitImageWithAlpha`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`JoinStrings`、`StringFormat`、`TextGenerate`
+**有卡**：`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`孤海注释`、`MarkdownNote`、`PreviewImage`、`ModelPreviewOverrideKJ`、`VOSR2Upscale`、`SaveImage`、`VOSR2ModelLoader`、`SplitImageWithAlpha`、`忽略多组孤海`、`UNETLoader`
 
 **缺卡**（4）：`LayerUtility: PurgeVRAM V2`、`easy positive`、`easy positive`、`忽略多组孤海`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
 
 ## 学习发现
 

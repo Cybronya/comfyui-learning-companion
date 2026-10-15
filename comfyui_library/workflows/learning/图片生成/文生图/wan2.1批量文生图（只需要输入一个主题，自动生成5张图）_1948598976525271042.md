@@ -1,5 +1,5 @@
 ---
-key: wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
+key: 图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
 name: wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042
 type: Unknown Workflow
 status: completed
@@ -16,13 +16,11 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "sim
 discoveries: [次要节点 `Text Find and Replace` 知识库中没有该节点类型的任何知识, 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
+# 图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1批量文生图（只需要输入一个主题，自动生成5张图）_1948598976525271042.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（34 个）：
 - `GetNode`
@@ -31,20 +29,20 @@ discoveries: [次要节点 `Text Find and Replace` 知识库中没有该节点�
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SetNode`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
 - `SetNode`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `WanVideoNAG`
 - `CLIPLoader`
 - `easy forLoopStart`
@@ -62,22 +60,20 @@ discoveries: [次要节点 `Text Find and Replace` 知识库中没有该节点�
 
 ## 关键参数
 
-- `seed` = `97746812058490`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `97746812058490`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **44%**（15/34）
 
-**有卡**：`UNETLoader`、`VAELoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`EmptySD3LatentImage`、`CLIPTextEncode`、`ModelSamplingSD3`、`KSampler`、`VAEDecode`、`WanVideoNAG`、`CLIPLoader`、`SaveImage`、`RH_LLMAPI_NODE`
+**有卡**：`GetNode`、`SetNode`、`UNETLoader`、`VAELoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`EmptySD3LatentImage`、`CLIPTextEncode`
 
 **缺卡**（6）：`Text Find and Replace`、`Text Load Line From File`、`Text Multiline`、`Text Multiline`、`easy forLoopEnd`、`easy forLoopStart`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、SaveImage
 
 ## 参数体检
 

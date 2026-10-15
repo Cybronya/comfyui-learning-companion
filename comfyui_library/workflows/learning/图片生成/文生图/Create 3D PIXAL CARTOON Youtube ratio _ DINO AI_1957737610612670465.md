@@ -1,5 +1,5 @@
 ---
-key: Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
+key: 图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
 name: Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465
 type: Unknown Workflow
 status: completed
@@ -14,29 +14,27 @@ missing: [CR SDXL Aspect Ratio]
 discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
+# 图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Create 3D PIXAL CARTOON Youtube ratio _ DINO AI_1957737610612670465.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（15 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VAELoader`
-- `SamplerCustomAdvanced` ★核心
-- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced`
+- `KSamplerSelect`
 - `BasicScheduler`
 - `BasicGuider`
 - `RandomNoise`
 - `FluxGuidance`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `DualCLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingFlux`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CR SDXL Aspect Ratio`
 
 ## 知识
@@ -46,8 +44,6 @@ discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知
 **有卡**：`VAEDecode`、`VAELoader`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicScheduler`、`BasicGuider`、`RandomNoise`、`FluxGuidance`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`UNETLoader`、`ModelSamplingFlux`、`SaveImage`、`CLIPTextEncode`
 
 **缺卡**（1）：`CR SDXL Aspect Ratio`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

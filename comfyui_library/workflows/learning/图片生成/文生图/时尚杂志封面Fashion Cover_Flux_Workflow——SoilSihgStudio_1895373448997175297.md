@@ -1,5 +1,5 @@
 ---
-key: 时尚杂志封面Fashion Cover_Flux_Workflow——SoilSihgStudio_1895373448997175297.json
+key: 图片生成/文生图/时尚杂志封面Fashion Cover_Flux_Workflow——SoilSihgStudio_1895373448997175297.json
 name: 时尚杂志封面Fashion Cover_Flux_Workflow——SoilSihgStudio_1895373448997175297
 type: Unknown Workflow
 status: completed
@@ -14,18 +14,16 @@ missing: [Int Literal, Int Literal, PlaySound|pysssss, String Literal]
 discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任何知识, 次要节点 `Int Literal` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识]
 ---
 
-# 时尚杂志封面Fashion Cover_Flux_Workflow——SoilSihgStudio_1895373448997175297.json
+# 图片生成/文生图/时尚杂志封面Fashion Cover_Flux_Workflow——SoilSihgStudio_1895373448997175297.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/时尚杂志封面Fashion Cover_Flux_Workflow——SoilSihgStudio_1895373448997175297.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（29 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `RandomNoise`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `BasicGuider`
 - `FluxGuidance`
 - `FluxForwardOverrider`
@@ -36,8 +34,8 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `ModelSamplingFlux`
 - `Int Literal`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
-- `KSamplerSelect` ★核心
+- `LoraLoaderModelOnly`
+- `KSamplerSelect`
 - `BasicScheduler`
 - `Note`
 - `SaveImage`
@@ -47,21 +45,19 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `EmptySD3LatentImage`
 - `String Literal`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `ConditioningCombine`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Reroute`
 
 ## 知识
 
 覆盖率 **66%**（19/29）
 
-**有卡**：`VAEDecode`、`RandomNoise`、`SamplerCustomAdvanced`、`BasicGuider`、`FluxGuidance`、`FluxForwardOverrider`、`ApplyTeaCachePatch`、`ModelSamplingFlux`、`LoraLoaderModelOnly`、`KSamplerSelect`、`BasicScheduler`、`SaveImage`、`VAELoader`、`EmptySD3LatentImage`、`DualCLIPLoader`、`CLIPTextEncode`、`ConditioningCombine`、`UNETLoader`
+**有卡**：`VAEDecode`、`RandomNoise`、`SamplerCustomAdvanced`、`BasicGuider`、`FluxGuidance`、`FluxForwardOverrider`、`ApplyTeaCachePatch`、`SetNode`、`Int Literal`、`GetNode`、`ModelSamplingFlux`、`LoraLoaderModelOnly`、`KSamplerSelect`、`BasicScheduler`、`Note`、`SaveImage`、`PlaySound|pysssss`
 
 **缺卡**（4）：`Int Literal`、`Int Literal`、`PlaySound|pysssss`、`String Literal`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

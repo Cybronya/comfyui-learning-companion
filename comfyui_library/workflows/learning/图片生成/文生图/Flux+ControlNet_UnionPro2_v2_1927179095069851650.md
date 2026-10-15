@@ -1,5 +1,5 @@
 ---
-key: Flux+ControlNet_UnionPro2_v2_1927179095069851650.json
+key: 图片生成/文生图/Flux+ControlNet_UnionPro2_v2_1927179095069851650.json
 name: Flux+ControlNet_UnionPro2_v2_1927179095069851650
 type: Unknown Workflow
 status: completed
@@ -15,42 +15,40 @@ parameters: {"controlnet_strength": 0.7000000000000002}
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flux+ControlNet_UnionPro2_v2_1927179095069851650.json
+# 图片生成/文生图/Flux+ControlNet_UnionPro2_v2_1927179095069851650.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux+ControlNet_UnionPro2_v2_1927179095069851650.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（27 个）：
 - `DualCLIPLoader`
 - `RandomNoise`
 - `BasicGuider`
-- `KSamplerSelect` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect`
+- `SamplerCustomAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `ImpactCombineConditionings`
 - `VAELoader`
 - `PreviewImage`
 - `ConditioningZeroOut`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `BasicScheduler`
 - `Note`
 - `EmptySD3LatentImage`
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `LoadImage`
 - `ModelSamplingFlux`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Note`
 - `PrimitiveNode`
 - `PrimitiveNode`
 - `Text Multiline`
 - `AIO_Preprocessor`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 
 ## 关键参数
 
@@ -60,11 +58,9 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 覆盖率 **74%**（20/27）
 
-**有卡**：`DualCLIPLoader`、`RandomNoise`、`BasicGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`VAEDecode`、`SaveImage`、`ImpactCombineConditionings`、`VAELoader`、`ConditioningZeroOut`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`BasicScheduler`、`EmptySD3LatentImage`、`CLIPTextEncodeFlux`、`LoadImage`、`ModelSamplingFlux`、`UNETLoader`、`AIO_Preprocessor`、`LoraLoaderModelOnly`
+**有卡**：`DualCLIPLoader`、`RandomNoise`、`BasicGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`PreviewImage`、`VAEDecode`、`SaveImage`、`ImpactCombineConditionings`、`VAELoader`、`ConditioningZeroOut`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`BasicScheduler`、`Note`、`EmptySD3LatentImage`、`CLIPTextEncodeFlux`、`LoadImage`、`ModelSamplingFlux`
 
 **缺卡**（1）：`Text Multiline`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、ConditioningZeroOut、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
 
 ## 学习发现
 

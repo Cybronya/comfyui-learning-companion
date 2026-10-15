@@ -1,5 +1,5 @@
 ---
-key: ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json
+key: 图片生成/文生图/ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json
 name: ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "height": 1536, "lora_name": "粉色情人-000012.
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识]
 ---
 
-# ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json
+# 图片生成/文生图/ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/ComfyUI进阶教程：运用In-Context LoRA精准控制角色一致性_1920491097255251969.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（30 个）：
 - `DualCLIPLoader`
@@ -31,20 +29,20 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `CR Text Concatenate`
 - `CR Text Concatenate`
 - `CR Text Concatenate`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `CR Text Concatenate`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `VAELoader`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicGuider`
 - `RandomNoise`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `Anything Everywhere3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `TextInput_`
 - `BasicScheduler`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Text Concatenate (JPS)`
 - `easy showAnything`
 - `TextInput_`
@@ -52,29 +50,27 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `TextInput_`
 - `TextInput_`
 - `TextInput_`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `SaveImage`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `lora_name` = `粉色情人-000012.safetensors`
-- `strength_model` = `0.6`
-- `strength_clip` = `1`
-- `width` = `1024`
-- `height` = `1536`
 - `batch_size` = `1`
+- `height` = `1536`
+- `lora_name` = `粉色情人-000012.safetensors`
+- `strength_clip` = `1`
+- `strength_model` = `0.6`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **77%**（23/30）
 
-**有卡**：`DualCLIPLoader`、`TextInput_`、`SamplerCustomAdvanced`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`KSamplerSelect`、`BasicGuider`、`RandomNoise`、`LoraLoader`、`VAEDecode`、`BasicScheduler`、`EmptyLatentImage`、`SaveImage`
+**有卡**：`DualCLIPLoader`、`TextInput_`、`CR Text Concatenate`、`SamplerCustomAdvanced`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`KSamplerSelect`、`BasicGuider`、`RandomNoise`、`LoraLoader`、`Anything Everywhere3`、`VAEDecode`、`BasicScheduler`、`EmptyLatentImage`、`Text Concatenate (JPS)`、`easy showAnything`
 
 **缺卡**（5）：`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`Text Concatenate (JPS)`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、UNETLoader、KSamplerSelect、SamplerCustomAdvanced、LoraLoader
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: ❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970.json
+key: 图片生成/文生图/❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970.json
 name: ❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 12, "checkpoint": "Z-Image-Base-8steps-White_Marble-AIO_v1.s
 discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节点类型的任何知识, 次要节点 `CR Simple Text Watermark` 知识库中没有该节点类型的任何知识, 次要节点 `CR Simple Text Watermark` 知识库中没有该节点类型的任何知识, 次要节点 `CR Simple Text Watermark` 知识库中没有该节点类型的任何知识, 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# ❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970.json
+# 图片生成/文生图/❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/❼「写真V2」Z双采+TTP-HD「9.20」_2039328218167123970.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（174 个）：
 - `SetNode`
@@ -56,11 +54,11 @@ discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节�
 - `GetNode`
 - `SetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `easy cleanGpuUsed`
@@ -125,7 +123,7 @@ discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节�
 - `SeedVR2VideoUpscaler`
 - `ConditioningZeroOut`
 - `SetNode`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `GetNode`
 - `SetNode`
 - `GetNode`
@@ -142,7 +140,7 @@ discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节�
 - `TextInput_`
 - `TextInput_`
 - `TextInput_`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `CLIPLoader`
 - `SetNode`
 - `VAELoader`
@@ -157,20 +155,20 @@ discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节�
 - `MarkdownNote`
 - `TextInput_`
 - `TextInput_`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Fast Groups Bypasser (rgthree)`
 - `GetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `LazyCache`
 - `ModelSamplingAuraFlow`
 - `easy showAnything`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `MarkdownNote`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `MarkdownNote`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `MarkdownNote`
 - `MarkdownNote`
 - `MarkdownNote`
@@ -179,11 +177,11 @@ discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节�
 - `TextInput_`
 - `TextInput_`
 - `ModelSamplingAuraFlow`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `TextInput_`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `LazyCache`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `KOOK_SaveJPGImage`
 - `Fast Groups Bypasser (rgthree)`
 - `Image Comparer (rgthree)`
@@ -201,23 +199,21 @@ discoveries: [次要节点 `CR Simple Text Watermark` 知识库中没有该节�
 
 ## 关键参数
 
-- `checkpoint` = `Z-Image-Base-8steps-White_Marble-AIO_v1.safetensors`
-- `seed` = `disable`
-- `steps` = `randomize`
 - `cfg` = `12`
+- `checkpoint` = `Z-Image-Base-8steps-White_Marble-AIO_v1.safetensors`
+- `denoise` = `simple`
 - `sampler_name` = `1`
 - `scheduler` = `dpmpp_sde`
-- `denoise` = `simple`
+- `seed` = `disable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **36%**（63/174）
 
-**有卡**：`EmptySD3LatentImage`、`StringConcatenate`、`TTP_Image_Tile_Batch`、`VAEDecode`、`ModelPassThrough`、`KOOK_ImageCompression`、`KOOK_SaveJPGImage`、`CameraWatermarkNode`、`SomethingToString`、`TextInput_`、`llama_cpp_instruct_adv`、`TTP_Tile_image_size`、`TTP_Image_Assy`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`ConditioningZeroOut`、`UNETLoader`、`llama_cpp_parameters`、`SaveImage`、`CheckpointLoaderSimple`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`LazyCache`、`ModelSamplingAuraFlow`、`KSamplerAdvanced`、`ImageScale`、`LoadImage`、`llama_cpp_model_loader`、`ImageSharpen`、`ColorMatch`、`SeedVR2LoadDiTModel`
+**有卡**：`SetNode`、`GetNode`、`EmptySD3LatentImage`、`StringConcatenate`、`TTP_Image_Tile_Batch`、`easy imageSize`、`Any Switch (rgthree)`、`VAEDecode`、`easy cleanGpuUsed`、`ModelPassThrough`、`PrimitiveString`、`PlaySound|pysssss`、`KOOK_ImageCompression`、`KOOK_SaveJPGImage`、`CameraWatermarkNode`、`LayerUtility: ImageScaleByAspectRatio V2`、`Fast Groups Bypasser (rgthree)`
 
 **缺卡**（19）：`CR Simple Text Watermark`、`CR Simple Text Watermark`、`CR Simple Text Watermark`、`CR Simple Text Watermark`、`ImageCASharpening+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy int`、`easy int`、`easy int`、`easy int`、`easy imageSize`、`easy imageSizeBySide`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: WAN2.2文生图_1953166220825718786.json
+key: 图片生成/文生图/WAN2.2文生图_1953166220825718786.json
 name: WAN2.2文生图_1953166220825718786
 type: Unknown Workflow
 status: completed
@@ -14,46 +14,42 @@ missing: []
 parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "heun", "scheduler": "simple", "seed": 678250135486522, "steps": 20}
 ---
 
-# WAN2.2文生图_1953166220825718786.json
+# 图片生成/文生图/WAN2.2文生图_1953166220825718786.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/WAN2.2文生图_1953166220825718786.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（17 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `UNETLoader`
+- `UNETLoader`
 - `EmptySD3LatentImage`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `RH_LLMAPI_NODE`
 - `PreviewImage`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `678250135486522`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `heun`
 - `scheduler` = `simple`
-- `denoise` = `0.30000000000000004`
+- `seed` = `678250135486522`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **94%**（16/17）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`EmptySD3LatentImage`、`LoadImage`、`KSampler`、`ModelSamplingSD3`、`CLIPTextEncode`、`VAEDecode`、`RH_LLMAPI_NODE`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、SaveImage
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`EmptySD3LatentImage`、`LoadImage`、`KSampler`、`ModelSamplingSD3`、`CLIPTextEncode`、`VAEDecode`、`RH_LLMAPI_NODE`、`PreviewImage`

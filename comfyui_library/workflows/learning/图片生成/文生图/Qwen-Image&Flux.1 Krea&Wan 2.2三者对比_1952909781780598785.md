@@ -1,5 +1,5 @@
 ---
-key: Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
+key: 图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
 name: Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785
 type: Unknown Workflow
 status: completed
@@ -15,19 +15,17 @@ parameters: {"batch_size": 0, "cfg": 3.5, "denoise": 0.5000000000000001, "height
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 核心节点 `SDXLEmptyLatentSizePicker+` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
+# 图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image&Flux.1 Krea&Wan 2.2三者对比_1952909781780598785.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（44 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `FluxGuidance`
 - `ModelSamplingFlux`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `RandomNoise`
 - `LayerUtility: PurgeVRAM V2`
@@ -35,61 +33,59 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `AddLabel`
 - `String Literal`
 - `BasicGuider`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `VAELoader`
 - `DualCLIPLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
+- `KSampler`
 - `LayerUtility: PurgeVRAM V2`
 - `LayerUtility: PurgeVRAM V2`
 - `SaveImage`
 - `AddLabel`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `String Literal`
 - `String Literal`
 - `AddLabel`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
+- `UNETLoader`
+- `VAEDecode`
 - `PreviewImage`
 - `QwenImageModelLoader`
 - `String Literal`
-- `SDXLEmptyLatentSizePicker+` ★核心
+- `SDXLEmptyLatentSizePicker+`
 - `easy seed`
 - `RH_QwenImageGenerator`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ImageConcanate`
 - `ImageConcanate`
 - `PreviewImage`
 
 ## 关键参数
 
-- `seed` = `75543360141822`
-- `steps` = `20`
+- `batch_size` = `0`
 - `cfg` = `3.5`
+- `denoise` = `0.5000000000000001`
+- `height` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.5000000000000001`
+- `seed` = `75543360141822`
+- `steps` = `20`
 - `width` = `1280x768 (1.67)`
-- `height` = `1`
-- `batch_size` = `0`
 
 ## 知识
 
 覆盖率 **75%**（33/44）
 
-**有卡**：`CLIPTextEncode`、`FluxGuidance`、`ModelSamplingFlux`、`KSamplerSelect`、`BasicScheduler`、`RandomNoise`、`SaveImage`、`AddLabel`、`BasicGuider`、`SamplerCustomAdvanced`、`VAELoader`、`DualCLIPLoader`、`CLIPLoader`、`ModelSamplingSD3`、`KSampler`、`VAEDecode`、`UNETLoader`、`QwenImageModelLoader`、`RH_QwenImageGenerator`、`ImageConcanate`
+**有卡**：`CLIPTextEncode`、`FluxGuidance`、`ModelSamplingFlux`、`KSamplerSelect`、`BasicScheduler`、`RandomNoise`、`LayerUtility: PurgeVRAM V2`、`SaveImage`、`AddLabel`、`String Literal`、`BasicGuider`、`SamplerCustomAdvanced`、`VAELoader`、`DualCLIPLoader`、`CLIPLoader`、`ModelSamplingSD3`、`KSampler`、`VAEDecode`、`UNETLoader`
 
 **缺卡**（9）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`SDXLEmptyLatentSizePicker+`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、FluxGuidance、KSamplerSelect
 
 ## 学习发现
 

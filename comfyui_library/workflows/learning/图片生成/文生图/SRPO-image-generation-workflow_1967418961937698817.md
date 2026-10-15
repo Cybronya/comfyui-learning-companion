@@ -1,5 +1,5 @@
 ---
-key: SRPO-image-generation-workflow_1967418961937698817.json
+key: 图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
 name: SRPO-image-generation-workflow_1967418961937698817
 type: Unknown Workflow
 status: completed
@@ -14,44 +14,40 @@ missing: [LayerUtility: PurgeVRAM V2]
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# SRPO-image-generation-workflow_1967418961937698817.json
+# 图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（19 个）：
 - `PrimitiveNode`
 - `PrimitiveNode`
 - `SeedVR2`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `BasicGuider`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 - `VAELoader`
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `EmptySD3LatentImage`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `ModelSamplingFlux`
 - `SaveImage`
 - `LayerUtility: PurgeVRAM V2`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 
 ## 知识
 
 覆盖率 **84%**（16/19）
 
-**有卡**：`SeedVR2`、`VAEDecode`、`SaveImage`、`BasicGuider`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`SamplerCustomAdvanced`、`EmptySD3LatentImage`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`ModelSamplingFlux`、`CLIPTextEncode`
+**有卡**：`PrimitiveNode`、`SeedVR2`、`VAEDecode`、`SaveImage`、`BasicGuider`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`SamplerCustomAdvanced`、`EmptySD3LatentImage`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`ModelSamplingFlux`
 
 **缺卡**（1）：`LayerUtility: PurgeVRAM V2`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、SeedVR2
 
 ## 学习发现
 

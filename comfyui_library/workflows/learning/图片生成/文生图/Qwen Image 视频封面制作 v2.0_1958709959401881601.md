@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 视频封面制作 v2.0_1958709959401881601.json
+key: 图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json
 name: Qwen Image 视频封面制作 v2.0_1958709959401881601
 type: Unknown Workflow
 status: completed
@@ -15,27 +15,25 @@ parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "no
 discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Qwen Image 视频封面制作 v2.0_1958709959401881601.json
+# 图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 视频封面制作 v2.0_1958709959401881601.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（41 个）：
 - `LoadImage`
 - `TextCombinerTwo`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `easy showAnything`
 - `RH_LLMAPI_NODE`
 - `JjkText`
 - `TextCombinerTwo`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy showAnything`
 - `JjkText`
 - `TextCombinerTwo`
@@ -60,7 +58,7 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 - `easy seed`
 - `EmptySD3LatentImage`
 - `ImpactSwitch`
-- `KSampler` ★核心
+- `KSampler`
 - `JjkText`
 - `JjkText`
 - `JjkText`
@@ -68,22 +66,20 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 
 ## 关键参数
 
-- `seed` = `43418218178449`
-- `steps` = `20`
 - `cfg` = `3.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `1`
+- `seed` = `43418218178449`
+- `steps` = `20`
 
 ## 知识
 
 覆盖率 **54%**（22/41）
 
-**有卡**：`LoadImage`、`TextCombinerTwo`、`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`RH_LLMAPI_NODE`、`VAEDecode`、`TextCombinerSix`、`ModelSamplingAuraFlow`、`SaveImage`、`EmptySD3LatentImage`、`LimitNumber`、`KSampler`
+**有卡**：`LoadImage`、`TextCombinerTwo`、`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`UNETLoader`、`easy showAnything`、`RH_LLMAPI_NODE`、`JjkText`、`VAEDecode`、`TextCombinerSix`
 
 **缺卡**（1）：`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、SaveImage
 
 ## 学习发现
 

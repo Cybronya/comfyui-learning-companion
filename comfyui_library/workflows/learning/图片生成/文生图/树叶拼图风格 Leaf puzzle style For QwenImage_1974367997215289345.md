@@ -1,5 +1,5 @@
 ---
-key: 树叶拼图风格 Leaf puzzle style For QwenImage_1974367997215289345.json
+key: 图片生成/文生图/树叶拼图风格 Leaf puzzle style For QwenImage_1974367997215289345.json
 name: 树叶拼图风格 Leaf puzzle style For QwenImage_1974367997215289345
 type: Unknown Workflow
 status: completed
@@ -14,29 +14,27 @@ missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 392352416150076, "steps": 10}
 ---
 
-# 树叶拼图风格 Leaf puzzle style For QwenImage_1974367997215289345.json
+# 图片生成/文生图/树叶拼图风格 Leaf puzzle style For QwenImage_1974367997215289345.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/树叶拼图风格 Leaf puzzle style For QwenImage_1974367997215289345.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（19 个）：
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
 - `PreviewImage`
 - `CLIPLoader`
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `ConcatText_Zho`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `Note`
 - `EmptyHunyuanLatentVideo`
 - `JjkText`
@@ -45,17 +43,15 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 ## 关键参数
 
-- `seed` = `392352416150076`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `392352416150076`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **84%**（16/19）
 
-**有卡**：`KSampler`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`SaveImage`、`ConcatText_Zho`、`UNETLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`EmptyHunyuanLatentVideo`、`Int`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo
+**有卡**：`KSampler`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`PreviewImage`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`SaveImage`、`ConcatText_Zho`、`UNETLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`Note`、`EmptyHunyuanLatentVideo`

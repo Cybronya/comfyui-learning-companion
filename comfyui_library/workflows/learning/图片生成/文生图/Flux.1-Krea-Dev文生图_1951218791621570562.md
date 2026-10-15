@@ -1,5 +1,5 @@
 ---
-key: Flux.1-Krea-Dev文生图_1951218791621570562.json
+key: 图片生成/文生图/Flux.1-Krea-Dev文生图_1951218791621570562.json
 name: Flux.1-Krea-Dev文生图_1951218791621570562
 type: Text To Image
 status: completed
@@ -15,55 +15,51 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1920, "sampler_n
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flux.1-Krea-Dev文生图_1951218791621570562.json
+# 图片生成/文生图/Flux.1-Krea-Dev文生图_1951218791621570562.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev文生图_1951218791621570562.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（16 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 - `VAELoader`
 - `RH_Translator`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy showAnything`
 - `ConditioningZeroOut`
 - `LayerUtility: PurgeVRAM V2`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Note`
 - `ApplyFBCacheAndSkipBlocks`
 - `Note`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `Text Multiline`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `1080`
-- `height` = `1920`
 - `batch_size` = `1`
-- `seed` = `552594972918839`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1920`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `552594972918839`
+- `steps` = `25`
+- `width` = `1080`
 
 ## 知识
 
 覆盖率 **69%**（11/16）
 
-**有卡**：`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`RH_Translator`、`CLIPTextEncode`、`ConditioningZeroOut`、`SaveImage`、`EmptyLatentImage`、`ApplyFBCacheAndSkipBlocks`、`KSampler`、`VAEDecode`
+**有卡**：`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`RH_Translator`、`CLIPTextEncode`、`easy showAnything`、`ConditioningZeroOut`、`LayerUtility: PurgeVRAM V2`、`SaveImage`、`EmptyLatentImage`、`Note`
 
 **缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`Text Multiline`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、UNETLoader、SaveImage
 
 ## 学习发现
 

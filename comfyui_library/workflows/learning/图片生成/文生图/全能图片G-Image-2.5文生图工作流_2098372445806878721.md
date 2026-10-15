@@ -1,5 +1,5 @@
 ---
-key: 全能图片G-Image-2.5文生图工作流_2098372445806878721.json
+key: 图片生成/文生图/全能图片G-Image-2.5文生图工作流_2098372445806878721.json
 name: 全能图片G-Image-2.5文生图工作流_2098372445806878721
 type: Unknown Workflow
 status: completed
@@ -14,40 +14,36 @@ missing: []
 parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 42, "steps": 24}
 ---
 
-# 全能图片G-Image-2.5文生图工作流_2098372445806878721.json
+# 图片生成/文生图/全能图片G-Image-2.5文生图工作流_2098372445806878721.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/全能图片G-Image-2.5文生图工作流_2098372445806878721.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（11 个）：
 - `SaveImage`
 - `Note`
 - `PrimitiveStringMultiline`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `TextEncodeQwenImageEditPlus`
 - `EmptySD3LatentImage`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 
 ## 关键参数
 
-- `seed` = `42`
-- `steps` = `24`
 - `cfg` = `2.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `42`
+- `steps` = `24`
 
 ## 知识
 
 覆盖率 **82%**（9/11）
 
-**有卡**：`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`TextEncodeQwenImageEditPlus`、`EmptySD3LatentImage`、`KSampler`、`VAEDecode`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、TextEncodeQwenImageEditPlus、SaveImage
+**有卡**：`SaveImage`、`Note`、`PrimitiveStringMultiline`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`TextEncodeQwenImageEditPlus`、`EmptySD3LatentImage`

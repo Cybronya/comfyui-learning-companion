@@ -1,5 +1,5 @@
 ---
-key: 全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json
+key: 图片生成/文生图/全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json
 name: 全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [Text Multiline]
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# 全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json
+# 图片生成/文生图/全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/全能图片V1 2 & Pro 电商模特手持商品万能工作流 V2.0_1991534578351480833.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（15 个）：
 - `easy showAnything`
@@ -43,11 +41,9 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 覆盖率 **47%**（7/15）
 
-**有卡**：`RH_LLMAPI_NODE`、`RH_Nano_Banana2_Image2Image`、`LoadImage`、`SaveImage`、`ImageScale`
+**有卡**：`easy showAnything`、`GetNode`、`RH_LLMAPI_NODE`、`SetNode`、`RH_Nano_Banana2_Image2Image`
 
 **缺卡**（1）：`Text Multiline`
-
-**用到的条目**：LoadImage、SaveImage、ImageScale、RH_LLMAPI_NODE、RH_Nano_Banana2_Image2Image、sd15-t2i-basic、sd15-t2i-lora、node
 
 ## 学习发现
 

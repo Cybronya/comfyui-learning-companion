@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图工作流——comfyui官方版_1951146831617175554.json
+key: 图片生成/文生图/Wan2.2文生图工作流——comfyui官方版_1951146831617175554.json
 name: Wan2.2文生图工作流——comfyui官方版_1951146831617175554
 type: Unknown Workflow
 status: completed
@@ -14,46 +14,42 @@ missing: []
 parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "euler", "scheduler": "beta", "seed": 68775626476827, "steps": 10}
 ---
 
-# Wan2.2文生图工作流——comfyui官方版_1951146831617175554.json
+# 图片生成/文生图/Wan2.2文生图工作流——comfyui官方版_1951146831617175554.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图工作流——comfyui官方版_1951146831617175554.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（17 个）：
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `ModelSamplingSD3`
 - `VAELoader`
-- `KSampler` ★核心
+- `KSampler`
 - `ModelSamplingSD3`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
+- `VAEDecode`
+- `VAEDecode`
 - `EmptyHunyuanLatentVideo`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SaveImage`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `68775626476827`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `0.30000000000000004`
+- `seed` = `68775626476827`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **100%**（17/17）
 
 **有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`ModelSamplingSD3`、`VAELoader`、`KSampler`、`CLIPLoader`、`CLIPTextEncode`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo

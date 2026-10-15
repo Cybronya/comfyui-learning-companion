@@ -1,5 +1,5 @@
 ---
-key: Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json
+key: 图片生成/文生图/Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json
 name: Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250
 type: Unknown Workflow
 status: completed
@@ -15,21 +15,19 @@ parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json
+# 图片生成/文生图/Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（31 个）：
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
 - `VAELoader`
 - `ResolutionSelector`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `PrimitiveBoolean`
 - `PrimitiveStringMultiline`
 - `StringFormat`
@@ -41,10 +39,10 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 - `TextEncodeQwenImage21`
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `ManualSigmas`
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `SaveImage`
 - `MathExpression|pysssss`
 - `MathExpression|pysssss`
@@ -58,19 +56,17 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
+- `height` = `1024`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **65%**（20/31）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`PrimitiveBoolean`、`StringFormat`、`TextGenerate`、`JsonExtractString`、`StringCompare`、`TextEncodeQwenImage21`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`VAEDecode`、`SaveImage`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`PrimitiveBoolean`、`PrimitiveStringMultiline`、`StringFormat`、`TextGenerate`、`JsonExtractString`、`StringCompare`、`ComfySwitchNode`、`TextEncodeQwenImage21`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`
 
 **缺卡**（5）：`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`
-
-**用到的条目**：VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen2.1文生图与图像编辑合集，开源新王t2i i2i多场景覆盖_2103238483472113665.json
+key: 图片生成/文生图/Qwen2.1文生图与图像编辑合集，开源新王t2i i2i多场景覆盖_2103238483472113665.json
 name: Qwen2.1文生图与图像编辑合集，开源新王t2i i2i多场景覆盖_2103238483472113665
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen2.1文生图与图像编辑合集，开源新王t2i i2i多场景覆盖_2103238483472113665.json
+# 图片生成/文生图/Qwen2.1文生图与图像编辑合集，开源新王t2i i2i多场景覆盖_2103238483472113665.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图与图像编辑合集，开源新王t2i i2i多场景覆盖_2103238483472113665.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（77 个）：
 - `CLIPLoader`
@@ -30,7 +28,7 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 - `VAELoader`
 - `VAELoader`
 - `QwenImage21Cache`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
@@ -46,20 +44,20 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 - `GetNode`
 - `Any Switch (rgthree)`
 - `Image Comparer (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ComfySwitchNode`
 - `GetNode`
 - `ImageScaleBy`
-- `KSampler` ★核心
-- `UNETLoader` ★核心
+- `KSampler`
+- `UNETLoader`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ResolutionSelector`
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `EmptyLatentImage`
 - `Int`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `TextEncodeQwenImage21`
@@ -75,30 +73,30 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 - `PrimitiveStringMultiline`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -107,25 +105,23 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **74%**（57/77）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`EmptyLatentImage`、`TTP_Image_Assy`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`SeedVR2VideoUpscaler`、`ImageScaleBy`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`SaveImage`、`UNETLoader`、`KSampler`、`VAEDecode`、`ResolutionSelector`、`Int`、`TextEncodeQwenImage21`、`LoadImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`EmptyLatentImage`、`TTP_Image_Assy`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`easy imageSize`、`SeedVR2VideoUpscaler`、`ImageScaleBy`、`ImageResize+`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`SaveImage`、`GetNode`、`Any Switch (rgthree)`、`Image Comparer (rgthree)`、`UNETLoader`、`ComfySwitchNode`、`KSampler`、`SetNode`、`VAEDecode`、`ResolutionSelector`、`Int`、`TextEncodeQwenImage21`、`LoadImage`、`PrimitiveStringMultiline`、`Fast Groups Bypasser (rgthree)`、`孤海注释`、`LoraLoaderModelOnly`
 
 **缺卡**（4）：`ImageResize+`、`ImageResize+`、`easy imageSize`、`easy imageSize`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
+key: 图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
 name: 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922
 type: Unknown Workflow
 status: completed
@@ -15,36 +15,34 @@ parameters: {"controlnet_strength": 0.8000000000000002}
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
+# 图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/最强Flux控制工作流_FLUX ControlNet-Union-Pro-2.0_1921750937419857922.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（24 个）：
 - `BasicGuider`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `VAELoader`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
-- `VAEDecode` ★核心
+- `KSamplerSelect`
+- `VAEDecode`
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `BasicScheduler`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
 - `AIO_Preprocessor`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `ApplyFBCacheOnModel`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `PreviewImage`
 - `SetUnionControlNetType`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `CR Text`
 - `LoadImage`
 - `SaveImage`
@@ -57,11 +55,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **88%**（21/24）
 
-**有卡**：`BasicGuider`、`VAEEncode`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`VAEDecode`、`DualCLIPLoader`、`FluxGuidance`、`SamplerCustomAdvanced`、`BasicScheduler`、`ControlNetApplyAdvanced`、`ControlNetLoader`、`AIO_Preprocessor`、`ApplyFBCacheOnModel`、`CLIPTextEncode`、`SetUnionControlNetType`、`LoraLoaderModelOnly`、`UNETLoader`、`LoadImage`、`SaveImage`
+**有卡**：`BasicGuider`、`VAEEncode`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`VAEDecode`、`DualCLIPLoader`、`FluxGuidance`、`SamplerCustomAdvanced`、`BasicScheduler`、`ControlNetApplyAdvanced`、`ControlNetLoader`、`AIO_Preprocessor`、`LayerUtility: ImageScaleByAspectRatio V2`、`ApplyFBCacheOnModel`、`CLIPTextEncode`、`PreviewImage`、`SetUnionControlNetType`、`LoraLoaderModelOnly`、`UNETLoader`
 
 **缺卡**（2）：`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
 
 ## 学习发现
 

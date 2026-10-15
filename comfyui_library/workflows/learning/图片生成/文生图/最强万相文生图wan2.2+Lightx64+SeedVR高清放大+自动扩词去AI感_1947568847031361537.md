@@ -1,5 +1,5 @@
 ---
-key: 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
+key: 图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
 name: 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537
 type: Unknown Workflow
 status: completed
@@ -15,41 +15,39 @@ parameters: {"cfg": 1, "denoise": 0.3500000000000001, "sampler_name": "euler", "
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# 最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
+# 图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/最强万相文生图wan2.2+Lightx64+SeedVR高清放大+自动扩词去AI感_1947568847031361537.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（31 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingSD3`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `UNETLoader`
+- `UNETLoader`
 - `ModelSamplingSD3`
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CR Text`
 - `Int`
 - `Int`
 - `RH_LLMAPI_NODE`
 - `EmptyHunyuanLatentVideo`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SeedVR2BlockSwap`
 - `LayerUtility: PurgeVRAM V2`
 - `SeedVR2`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `Bjornulf_TextToStringAndSeed`
 - `CFGZeroStar`
 - `CFGZeroStar`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `Image Comparer (rgthree)`
 - `SaveImage`
 - `SaveImage`
@@ -58,22 +56,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `965369974524576`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.3500000000000001`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.3500000000000001`
+- `seed` = `965369974524576`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **90%**（28/31）
 
-**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`Int`、`RH_LLMAPI_NODE`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`SeedVR2BlockSwap`、`SeedVR2`、`KSampler`、`Bjornulf_TextToStringAndSeed`、`CFGZeroStar`、`LoraLoaderModelOnly`、`SaveImage`、`PathchSageAttentionKJ`
+**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CR Text`、`Int`、`RH_LLMAPI_NODE`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`SeedVR2BlockSwap`、`LayerUtility: PurgeVRAM V2`、`SeedVR2`、`KSampler`、`Bjornulf_TextToStringAndSeed`、`CFGZeroStar`、`LoraLoaderModelOnly`、`Image Comparer (rgthree)`、`SaveImage`
 
 **缺卡**（2）：`CR Text`、`LayerUtility: PurgeVRAM V2`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、SeedVR2
 
 ## 学习发现
 

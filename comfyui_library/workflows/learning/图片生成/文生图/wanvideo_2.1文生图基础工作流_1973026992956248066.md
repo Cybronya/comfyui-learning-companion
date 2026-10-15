@@ -1,5 +1,5 @@
 ---
-key: wanvideo_2.1文生图基础工作流_1973026992956248066.json
+key: 图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json
 name: wanvideo_2.1文生图基础工作流_1973026992956248066
 type: Unknown Workflow
 status: completed
@@ -13,19 +13,17 @@ patterns: []
 missing: []
 ---
 
-# wanvideo_2.1文生图基础工作流_1973026992956248066.json
+# 图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wanvideo_2.1文生图基础工作流_1973026992956248066.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Output → Other
-
 **节点**（18 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `Note`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `WanVideoTextEmbedBridge`
 - `WanVideoVAELoader`
 - `WanVideoTorchCompileSettings`
@@ -36,7 +34,7 @@ missing: []
 - `WanVideoEmptyEmbeds`
 - `WanVideoEnhanceAVideo`
 - `WanVideoDecode`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoTeaCache`
 - `SaveImage`
 - `WanVideoTextEncode`
@@ -45,6 +43,4 @@ missing: []
 
 覆盖率 **94%**（17/18）
 
-**有卡**：`CLIPTextEncode`、`CLIPLoader`、`WanVideoTextEmbedBridge`、`WanVideoVAELoader`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoEmptyEmbeds`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoTeaCache`、`SaveImage`、`WanVideoTextEncode`
-
-**用到的条目**：CLIPTextEncode、CLIPLoader、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect
+**有卡**：`CLIPTextEncode`、`CLIPLoader`、`Note`、`WanVideoTextEmbedBridge`、`WanVideoVAELoader`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoEmptyEmbeds`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoTeaCache`、`SaveImage`

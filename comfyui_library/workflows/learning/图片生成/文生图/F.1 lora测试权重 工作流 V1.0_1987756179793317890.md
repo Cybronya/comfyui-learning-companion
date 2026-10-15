@@ -1,5 +1,5 @@
 ---
-key: F.1 lora测试权重 工作流 V1.0_1987756179793317890.json
+key: 图片生成/文生图/F.1 lora测试权重 工作流 V1.0_1987756179793317890.json
 name: F.1 lora测试权重 工作流 V1.0_1987756179793317890
 type: Unknown Workflow
 status: completed
@@ -15,57 +15,55 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "zi-jm-flux-lora-000008.safete
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `ttN float` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# F.1 lora测试权重 工作流 V1.0_1987756179793317890.json
+# 图片生成/文生图/F.1 lora测试权重 工作流 V1.0_1987756179793317890.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1 lora测试权重 工作流 V1.0_1987756179793317890.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（226 个）：
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
 - `CR Text`
 - `easy getNode`
 - `easy getNode`
 - `easy getNode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
 - `easy getNode`
 - `easy getNode`
@@ -85,37 +83,37 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `easy getNode`
 - `DualCLIPLoader`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `Anything Everywhere`
 - `easy setNode`
 - `easy setNode`
@@ -133,16 +131,16 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `easy getNode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `CR Text`
 - `easy getNode`
@@ -155,59 +153,59 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `easy getNode`
 - `easy getNode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
-- `CLIPTextEncode` ★核心
-- `easy getNode`
-- `easy getNode`
-- `CLIPTextEncode` ★核心
-- `easy getNode`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
 - `easy getNode`
 - `easy getNode`
+- `CLIPTextEncode`
 - `easy getNode`
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
 - `SaveImage`
 - `SaveImage`
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
+- `LoraLoader`
 - `easy getNode`
 - `easy getNode`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `easy getNode`
 - `easy getNode`
 - `EmptySD3LatentImage`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
 - `SaveImage`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
 - `Anything Everywhere`
-- `KSampler` ★核心
+- `KSampler`
 - `easy setNode`
 - `easy setNode`
 - `easy getNode`
@@ -227,16 +225,16 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `easy getNode`
 - `SaveImage`
 - `ttN float`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `easy getNode`
 - `SaveImage`
 - `SaveImage`
 - `easy getNode`
 - `easy getNode`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `easy seed`
 - `ShowText|pysssss`
 - `easy setNode`
@@ -246,34 +244,32 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `SaveImage`
 - `SaveImage`
 - `CR Text`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `easy setNode`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `LoraNames_`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `lora_name` = `zi-jm-flux-lora-000008.safetensors`
-- `strength_model` = `0.10000000000000002`
-- `strength_clip` = `0.10000000000000002`
-- `seed` = `261318560279650`
-- `steps` = `30`
 - `cfg` = `1`
+- `denoise` = `1`
+- `lora_name` = `zi-jm-flux-lora-000008.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `261318560279650`
+- `steps` = `30`
+- `strength_clip` = `0.10000000000000002`
+- `strength_model` = `0.10000000000000002`
 
 ## 知识
 
 覆盖率 **56%**（127/226）
 
-**有卡**：`ConditioningZeroOut`、`FluxGuidance`、`CLIPTextEncode`、`SaveImage`、`LoraLoader`、`DualCLIPLoader`、`VAELoader`、`VAEDecode`、`EmptySD3LatentImage`、`KSampler`、`UNETLoader`、`BaiduTranslateNode`、`LoraNames_`
+**有卡**：`ConditioningZeroOut`、`FluxGuidance`、`CLIPTextEncode`、`SaveImage`、`LoraLoader`、`CR Text`、`easy getNode`、`DualCLIPLoader`、`VAELoader`、`VAEDecode`、`Anything Everywhere`、`easy setNode`
 
 **缺卡**（96）：`CR Text`、`CR Text`、`CR Text`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`ttN float`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、FluxGuidance、LoraLoader
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
+key: 图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
 name: Upscaler-F.1专属高清放大CN模型_1925152412171235330
 type: Unknown Workflow
 status: completed
@@ -15,41 +15,39 @@ parameters: {"controlnet_strength": 0.7000000000000002, "lora_name": null, "stre
 discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
-# Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
+# 图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（29 个）：
 - `Reroute`
 - `Note`
 - `Fast Groups Bypasser (rgthree)`
 - `Reroute`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `Reroute`
-- `VAEDecode` ★核心
-- `CLIPTextEncodeFlux` ★核心
-- `CLIPTextEncodeFlux` ★核心
+- `VAEDecode`
+- `CLIPTextEncodeFlux`
+- `CLIPTextEncodeFlux`
 - `RepeatLatentBatch`
 - `Display Any (rgthree)`
 - `SaveImage`
 - `Miaoshouai_Tagger`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `DualCLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `StringFunction|pysssss`
 - `GetImageSizeAndCount`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `LoadImage`
 - `LatentUpscaleBy`
 - `Image Comparer (rgthree)`
@@ -58,20 +56,18 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 关键参数
 
-- `lora_name` = `None`
-- `strength_model` = `0.8`
-- `strength_clip` = `1`
 - `controlnet_strength` = `0.7000000000000002`
+- `lora_name` = `None`
+- `strength_clip` = `1`
+- `strength_model` = `0.8`
 
 ## 知识
 
 覆盖率 **72%**（21/29）
 
-**有卡**：`SamplerCustomAdvanced`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`VAEEncode`、`VAEDecode`、`CLIPTextEncodeFlux`、`RepeatLatentBatch`、`SaveImage`、`Miaoshouai_Tagger`、`LoraLoader`、`DualCLIPLoader`、`UNETLoader`、`VAELoader`、`GetImageSizeAndCount`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`LoadImage`、`LatentUpscaleBy`
+**有卡**：`Reroute`、`Note`、`Fast Groups Bypasser (rgthree)`、`SamplerCustomAdvanced`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`VAEEncode`、`VAEDecode`、`CLIPTextEncodeFlux`、`RepeatLatentBatch`、`Display Any (rgthree)`、`SaveImage`、`Miaoshouai_Tagger`、`LoraLoader`、`DualCLIPLoader`、`UNETLoader`
 
 **缺卡**（2）：`Display Any (rgthree)`、`StringFunction|pysssss`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、LoadImage、ControlNetApplyAdvanced、ControlNetLoader、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

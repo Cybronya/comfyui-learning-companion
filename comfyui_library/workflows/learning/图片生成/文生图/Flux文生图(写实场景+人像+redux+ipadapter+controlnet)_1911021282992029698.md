@@ -1,5 +1,5 @@
 ---
-key: Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698.json
+key: 图片生成/文生图/Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698.json
 name: Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"batch_size": 1, "controlnet_strength": 0.6000000000000001, "height": 1280, "width": 952}
 ---
 
-# Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698.json
+# 图片生成/文生图/Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Output → Other
 
 **节点**（49 个）：
 - `IPAdapterFluxLoader`
@@ -33,39 +31,39 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.6000000000000001, "height
 - `RH_Prompter`
 - `JjkText`
 - `ShowText|pysssss`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ReduxAdvanced`
 - `ApplyIPAdapterFlux`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `ModelSamplingFlux`
 - `RandomNoise`
-- `EmptyLatentImage` ★核心
-- `SamplerCustomAdvanced` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `EmptyLatentImage`
+- `SamplerCustomAdvanced`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `BasicGuider`
 - `FluxGuidance`
 - `SetUnionControlNetType`
 - `DepthAnythingV2Preprocessor`
 - `DualCLIPLoader`
 - `Anything Everywhere`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Anything Everywhere`
 - `Anything Everywhere`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ControlNetLoader`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `SetUnionControlNetType`
 - `OpenposePreprocessor`
 - `LoadImage`
 - `PyraCannyPreprocessor`
 - `SetUnionControlNetType`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `Fast Groups Bypasser (rgthree)`
 - `Int`
 - `Int`
@@ -75,15 +73,13 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.6000000000000001, "height
 
 ## 关键参数
 
-- `width` = `952`
-- `height` = `1280`
 - `batch_size` = `1`
 - `controlnet_strength` = `0.6000000000000001`
+- `height` = `1280`
+- `width` = `952`
 
 ## 知识
 
 覆盖率 **86%**（42/49）
 
-**有卡**：`IPAdapterFluxLoader`、`StyleModelLoader`、`CLIPVisionLoader`、`LoadImage`、`SaveImage`、`TextCombinerTwo`、`RH_Prompter`、`CLIPTextEncode`、`ReduxAdvanced`、`ApplyIPAdapterFlux`、`KSamplerSelect`、`ModelSamplingFlux`、`RandomNoise`、`EmptyLatentImage`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`BasicGuider`、`FluxGuidance`、`SetUnionControlNetType`、`DepthAnythingV2Preprocessor`、`DualCLIPLoader`、`UNETLoader`、`VAEDecode`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`OpenposePreprocessor`、`PyraCannyPreprocessor`、`Int`、`VAELoader`、`BasicScheduler`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced
+**有卡**：`IPAdapterFluxLoader`、`StyleModelLoader`、`CLIPVisionLoader`、`LoadImage`、`SaveImage`、`TextCombinerTwo`、`JjkText`、`RH_Prompter`、`ShowText|pysssss`、`CLIPTextEncode`、`ReduxAdvanced`、`ApplyIPAdapterFlux`、`KSamplerSelect`、`ModelSamplingFlux`、`RandomNoise`、`EmptyLatentImage`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`BasicGuider`、`FluxGuidance`、`SetUnionControlNetType`、`DepthAnythingV2Preprocessor`、`DualCLIPLoader`、`Anything Everywhere`、`UNETLoader`、`VAEDecode`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`OpenposePreprocessor`、`PyraCannyPreprocessor`

@@ -1,5 +1,5 @@
 ---
-key: FLUX.1_ipadapter_1880962162222067713.json
+key: 图片生成/文生图/FLUX.1_ipadapter_1880962162222067713.json
 name: FLUX.1_ipadapter_1880962162222067713
 type: Text To Image
 status: completed
@@ -14,47 +14,43 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1.76, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "normal", "seed": 90424892955213, "steps": 20, "width": 768}
 ---
 
-# FLUX.1_ipadapter_1880962162222067713.json
+# 图片生成/文生图/FLUX.1_ipadapter_1880962162222067713.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX.1_ipadapter_1880962162222067713.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Output → Other
-
 **节点**（13 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `FluxGuidance`
 - `ConditioningZeroOut`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `IPAdapterFluxLoader`
 - `ApplyIPAdapterFlux`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `seed` = `90424892955213`
-- `steps` = `20`
+- `batch_size` = `1`
 - `cfg` = `1.76`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `1`
+- `seed` = `90424892955213`
+- `steps` = `20`
 - `width` = `768`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`KSampler`、`CLIPTextEncode`、`FluxGuidance`、`ConditioningZeroOut`、`EmptyLatentImage`、`IPAdapterFluxLoader`、`ApplyIPAdapterFlux`、`SaveImage`、`VAEDecode`、`LoadImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、LoadImage

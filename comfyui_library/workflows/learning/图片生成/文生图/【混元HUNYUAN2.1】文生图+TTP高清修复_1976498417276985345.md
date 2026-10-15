@@ -1,5 +1,5 @@
 ---
-key: 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
+key: 图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
 name: 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345
 type: Unknown Workflow
 status: completed
@@ -16,55 +16,53 @@ parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "euler", 
 discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
+# 图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【混元HUNYUAN2.1】文生图+TTP高清修复_1976498417276985345.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（46 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `VAEEncode`
 - `HunyuanRefinerLatent`
 - `LayerUtility: PurgeVRAM V2`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `UNETLoader` ★核心
+- `VAEDecode`
+- `KSampler`
+- `UNETLoader`
 - `SaveImage`
 - `DualCLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanImageLatent`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `RH_Translator`
 - `TTP_Tile_image_size`
 - `Note`
 - `PreviewImage`
 - `Note`
 - `Image Comparer (rgthree)`
-- `VAEEncodeTiled` ★核心
+- `VAEEncodeTiled`
 - `easy imageListToImageBatch`
 - `ImageScaleBy`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Anything Everywhere3`
 - `VAELoader`
 - `easy imageBatchToImageList`
 - `TTP_Image_Assy`
 - `DualCLIPLoader`
 - `ConditioningZeroOut`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `UpscaleModelLoader`
 - `ImageUpscaleWithModel`
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecodeTiled` ★核心
+- `LoraLoaderModelOnly`
+- `VAEDecodeTiled`
 - `SaveImage`
 - `TTP_Image_Tile_Batch`
 - `SaveImage`
@@ -74,22 +72,20 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `seed` = `775938512193907`
-- `steps` = `2`
 - `cfg` = `1`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `euler`
 - `scheduler` = `karras`
-- `denoise` = `0.30000000000000004`
+- `seed` = `775938512193907`
+- `steps` = `2`
 
 ## 知识
 
 覆盖率 **78%**（36/46）
 
-**有卡**：`UNETLoader`、`VAELoader`、`CLIPTextEncode`、`VAEEncode`、`HunyuanRefinerLatent`、`VAEDecode`、`KSampler`、`SaveImage`、`DualCLIPLoader`、`EmptyHunyuanImageLatent`、`RH_Translator`、`TTP_Tile_image_size`、`VAEEncodeTiled`、`ImageScaleBy`、`TTP_Image_Assy`、`ConditioningZeroOut`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`TTP_Image_Tile_Batch`、`FluxResolutionNode`
+**有卡**：`UNETLoader`、`VAELoader`、`CLIPTextEncode`、`VAEEncode`、`HunyuanRefinerLatent`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`KSampler`、`SaveImage`、`DualCLIPLoader`、`EmptyHunyuanImageLatent`、`RH_Translator`、`TTP_Tile_image_size`、`Note`、`PreviewImage`、`Image Comparer (rgthree)`、`VAEEncodeTiled`、`easy imageListToImageBatch`、`ImageScaleBy`、`Anything Everywhere3`、`easy imageBatchToImageList`、`TTP_Image_Assy`、`ConditioningZeroOut`
 
 **缺卡**（4）：`ImageCASharpening+`、`LayerUtility: PurgeVRAM V2`、`easy imageBatchToImageList`、`easy imageListToImageBatch`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、VAEDecodeTiled
 
 ## 参数体检
 

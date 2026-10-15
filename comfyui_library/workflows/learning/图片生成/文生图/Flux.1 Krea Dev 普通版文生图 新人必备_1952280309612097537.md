@@ -1,5 +1,5 @@
 ---
-key: Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
+key: 图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
 name: Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
+# 图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Output → Other
 
 **节点**（23 个）：
 - `ShowText|pysssss`
@@ -30,8 +28,8 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `Seed Everywhere`
 - `ShowText|pysssss`
 - `StringFunction|pysssss`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `Anything Everywhere`
 - `ConditioningZeroOut`
 - `VAELoader`
@@ -39,10 +37,10 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `DualCLIPLoader`
 - `Anything Everywhere3`
 - `ModelSamplingFlux`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler (Efficient)` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler (Efficient)`
+- `UNETLoader`
 - `SaveImage`
 - `LayerFilter: HDREffects`
 - `DeepTranslatorTextNode`
@@ -50,25 +48,23 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 关键参数
 
-- `width` = `800`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `535577283025654`
-- `steps` = `20`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `535577283025654`
+- `steps` = `20`
+- `width` = `800`
 
 ## 知识
 
 覆盖率 **52%**（12/23）
 
-**有卡**：`DeepTranslatorTextNode`、`CLIPTextEncode`、`EmptyLatentImage`、`ConditioningZeroOut`、`VAELoader`、`DualCLIPLoader`、`ModelSamplingFlux`、`LoraLoaderModelOnly`、`UNETLoader`、`SaveImage`
+**有卡**：`ShowText|pysssss`、`DeepTranslatorTextNode`、`Anything Everywhere`、`Seed Everywhere`、`StringFunction|pysssss`、`CLIPTextEncode`、`EmptyLatentImage`、`ConditioningZeroOut`、`VAELoader`、`PreviewImage`
 
 **缺卡**（4）：`LayerFilter: HDREffects`、`StringFunction|pysssss`、`KSampler (Efficient)`、`Seed Everywhere`
-
-**用到的条目**：VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、DualCLIPLoader、ModelSamplingFlux
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Flex.1 Alpha新版Redux对比老板Redux工作流_1912117580814057474.json
+key: 图片生成/文生图/Flex.1 Alpha新版Redux对比老板Redux工作流_1912117580814057474.json
 name: Flex.1 Alpha新版Redux对比老板Redux工作流_1912117580814057474
 type: Unknown Workflow
 status: completed
@@ -15,21 +15,19 @@ parameters: {"checkpoint": "Flex.1-alpha.safetensors"}
 discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flex.1 Alpha新版Redux对比老板Redux工作流_1912117580814057474.json
+# 图片生成/文生图/Flex.1 Alpha新版Redux对比老板Redux工作流_1912117580814057474.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flex.1 Alpha新版Redux对比老板Redux工作流_1912117580814057474.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（53 个）：
 - `PrimitiveNode`
 - `EmptySD3LatentImage`
 - `BasicGuider`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PrimitiveNode`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `LayerUtility: PurgeVRAM V2`
 - `StyleModelApply`
@@ -40,13 +38,13 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `CLIPVisionEncode`
 - `LayerUtility: PurgeVRAM V2`
 - `StyleModelLoader`
-- `CLIPTextEncode` ★核心
-- `KSamplerSelect` ★核心
+- `CLIPTextEncode`
+- `KSamplerSelect`
 - `BasicScheduler`
 - `AdvancedVisionLoader`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `PrimitiveNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `AddLabel`
 - `AddLabel`
 - `ImageConcatMulti`
@@ -57,17 +55,17 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `PrimitiveNode`
 - `AddLabel`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ApplyFBCacheOnModel`
 - `ApplyFBCacheOnModel`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `PrimitiveNode`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `ModelSamplingFlux`
 - `JWImageResizeByLongerSide`
 - `DF_Get_image_size`
 - `SaveImage`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `AdvancedVisionLoader`
 - `CLIPVisionEncode`
 - `StyleModelLoader`
@@ -86,11 +84,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 覆盖率 **81%**（43/53）
 
-**有卡**：`EmptySD3LatentImage`、`BasicGuider`、`CLIPTextEncode`、`KSamplerSelect`、`BasicScheduler`、`StyleModelApply`、`ModelSamplingFlux`、`FluxGuidance`、`CLIPVisionEncode`、`StyleModelLoader`、`AdvancedVisionLoader`、`SamplerCustomAdvanced`、`VAEDecode`、`AddLabel`、`ImageConcatMulti`、`JWImageResizeByLongerSide`、`RandomNoise`、`SaveImage`、`ApplyFBCacheOnModel`、`CheckpointLoaderSimple`、`DF_Get_image_size`、`LoadImage`
+**有卡**：`PrimitiveNode`、`EmptySD3LatentImage`、`BasicGuider`、`CLIPTextEncode`、`KSamplerSelect`、`BasicScheduler`、`LayerUtility: PurgeVRAM V2`、`StyleModelApply`、`ModelSamplingFlux`、`FluxGuidance`、`CLIPVisionEncode`、`StyleModelLoader`、`AdvancedVisionLoader`、`SamplerCustomAdvanced`、`VAEDecode`、`AddLabel`、`ImageConcatMulti`、`JWImageResizeByLongerSide`、`RandomNoise`、`SaveImage`、`ApplyFBCacheOnModel`、`CheckpointLoaderSimple`、`DF_Get_image_size`
 
 **缺卡**（3）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`Note Plus (mtb)`
-
-**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、CLIPVisionEncode
 
 ## 学习发现
 

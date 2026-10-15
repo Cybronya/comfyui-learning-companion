@@ -1,5 +1,5 @@
 ---
-key: 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
+key: 图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
 name: 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.3500000000000001, "height":
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
+# 图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/🈚️qwen canny_depth + z-image 深度_线稿参考 图生图重绘_1958960960541241345.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（86 个）：
 - `VAELoader`
@@ -46,27 +44,27 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `RH_LLMAPI_NODE`
 - `easy imageRemBg`
 - `ShowText|pysssss`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
 - `SetNode`
 - `LoadImage`
 - `ImpactSwitch`
 - `ImpactSwitch`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `RebatchLatents`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `RepeatLatentBatch`
-- `KSampler` ★核心
+- `KSampler`
 - `SetNode`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SetNode`
 - `GetNode`
 - `SetNode`
@@ -83,58 +81,56 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `RebatchLatents`
 - `QwenImageDiffsynthControlnet`
 - `GetNode`
-- `EmptyLatentImage` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `EmptyLatentImage`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ImpactSwitch`
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
 - `Anything Everywhere3`
 - `CLIPLoader`
 - `CFGZeroStar`
 - `ModelPassThrough`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `GetNode`
 - `Int`
 - `PreviewImage`
 - `SaveImage`
-- `KSamplerSelect` ★核心
-- `DetailDaemonSamplerNode` ★核心
+- `KSamplerSelect`
+- `DetailDaemonSamplerNode`
 - `BasicScheduler`
-- `SamplerCustom` ★核心
+- `SamplerCustom`
 
 **识别到的模式**：text_to_image、image_to_image
 
 ## 关键参数
 
-- `seed` = `1030454734910631`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `0.3500000000000001`
+- `height` = `512`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.3500000000000001`
+- `seed` = `1030454734910631`
+- `steps` = `4`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **55%**（47/86）
 
-**有卡**：`VAELoader`、`AIO_Preprocessor`、`RepeatLatentBatch`、`ModelPatchLoader`、`RH_Translator`、`RH_LLMAPI_NODE`、`CLIPTextEncode`、`LoadImage`、`ConditioningZeroOut`、`VAEDecode`、`CLIPLoader`、`VAEEncode`、`RebatchLatents`、`UNETLoader`、`KSampler`、`LoraLoaderModelOnly`、`JWInteger`、`QwenImageDiffsynthControlnet`、`EmptyLatentImage`、`CFGNorm`、`ModelSamplingAuraFlow`、`CFGZeroStar`、`ModelPassThrough`、`Int`、`SaveImage`、`KSamplerSelect`、`DetailDaemonSamplerNode`、`BasicScheduler`、`SamplerCustom`
+**有卡**：`VAELoader`、`SetNode`、`AIO_Preprocessor`、`LayerUtility: ImageScaleByAspectRatio V2`、`RepeatLatentBatch`、`ModelPatchLoader`、`GetNode`、`RH_Translator`、`CR Text Concatenate`、`PreviewImage`、`RH_LLMAPI_NODE`、`easy imageRemBg`、`ShowText|pysssss`、`CLIPTextEncode`、`LoadImage`、`ImpactSwitch`、`ConditioningZeroOut`、`VAEDecode`、`CLIPLoader`、`VAEEncode`、`RebatchLatents`、`UNETLoader`、`KSampler`、`LoraLoaderModelOnly`、`JWInteger`
 
 **缺卡**（9）：`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageRemBg`、`easy seed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 

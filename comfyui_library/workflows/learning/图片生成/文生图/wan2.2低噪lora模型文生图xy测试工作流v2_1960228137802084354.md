@@ -1,5 +1,5 @@
 ---
-key: wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json
+key: 图片生成/文生图/wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json
 name: wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354
 type: Text To Image
 status: completed
@@ -15,20 +15,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 512, "sampler_na
 discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Create Grid Image from Batch` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy rangeFloat` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Lora Loader` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Lora Loader` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `Lora Loader` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json
+# 图片生成/文生图/wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2低噪lora模型文生图xy测试工作流v2_1960228137802084354.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（135 个）：
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `easy showAnything`
 - `GetNode`
 - `JoinStrings`
@@ -38,15 +36,15 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `GetNode`
 - `CLIPLoader`
 - `SetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PMRF`
 - `JoinStrings`
 - `GetNode`
@@ -54,10 +52,10 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `easy convertAnything`
 - `AddLabel`
 - `SetNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JoinStrings`
 - `Text`
 - `SetNode`
@@ -67,40 +65,40 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `AddLabel`
 - `ReActorImageDublicator`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `GetNode`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JoinStrings`
 - `easy convertAnything`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `AddLabel`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JoinStrings`
 - `easy convertAnything`
 - `GetNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `Note`
 - `Note`
@@ -109,7 +107,7 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `GetNode`
 - `Seed_`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `SetNode`
 - `SetNode`
 - `PrimitiveInt`
@@ -119,7 +117,7 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `GetNode`
 - `Create Grid Image from Batch`
 - `easy rangeFloat`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `JjkText`
 - `LoadImage`
 - `ConstrainImage|pysssss`
@@ -135,21 +133,21 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `SetNode`
 - `RH_Captioner`
 - `GetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JoinStrings`
 - `easy convertAnything`
 - `GetNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `GetNode`
 - `GetNode`
 - `Note`
@@ -164,25 +162,23 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `512`
 - `batch_size` = `1`
-- `seed` = `1054444916599011`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1054444916599011`
+- `steps` = `10`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **46%**（62/135）
 
-**有卡**：`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`JoinStrings`、`CLIPLoader`、`VAEDecode`、`PMRF`、`AddLabel`、`EmptyLatentImage`、`Text`、`ReActorImageDublicator`、`KSampler`、`SaveImage`、`Seed_`、`UNETLoader`、`LoadImage`、`GetImageSize`、`JWInteger`、`VAELoader`、`RH_Captioner`、`ImpactMakeImageList`、`Int`
+**有卡**：`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`easy showAnything`、`GetNode`、`JoinStrings`、`SetNode`、`CLIPLoader`、`VAEDecode`、`PMRF`、`easy convertAnything`、`AddLabel`、`EmptyLatentImage`、`Text`、`ReActorImageDublicator`、`KSampler`
 
 **缺卡**（13）：`ConstrainImage|pysssss`、`Create Grid Image from Batch`、`easy convertAnything`、`easy convertAnything`、`easy convertAnything`、`easy convertAnything`、`easy convertAnything`、`easy imageListToImageBatch`、`easy rangeFloat`、`Lora Loader`、`Lora Loader`、`Lora Loader`、`Lora Loader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 学习发现
 

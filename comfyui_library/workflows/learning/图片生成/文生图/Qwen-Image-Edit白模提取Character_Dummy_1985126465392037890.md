@@ -1,5 +1,5 @@
 ---
-key: Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
+key: 图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
 name: Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890
 type: Image To Image
 status: completed
@@ -16,26 +16,24 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
+# 图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Image-Edit白模提取Character_Dummy_1985126465392037890.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Sampling → Decode → Process → Output → Other
-
 **节点**（23 个）：
 - `CFGNorm`
-- `KSampler` ★核心
+- `KSampler`
 - `EmptySD3LatentImage`
 - `MarkdownNote`
 - `MarkdownNote`
 - `CLIPLoader`
 - `ImageConcatMulti`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ModelSamplingAuraFlow`
 - `TextEncodeQwenImageEditPlus`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ImageScaleToTotalPixels`
 - `MarkdownNote`
 - `MarkdownNote`
@@ -44,29 +42,27 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `TextEncodeQwenImageEditPlus`
 - `MarkdownNote`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `LoadImage`
 
 **识别到的模式**：image_to_image
 
 ## 关键参数
 
-- `seed` = `107383467143834`
-- `steps` = `4`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `107383467143834`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **78%**（18/23）
 
-**有卡**：`CFGNorm`、`KSampler`、`EmptySD3LatentImage`、`CLIPLoader`、`ImageConcatMulti`、`VAEDecode`、`ModelSamplingAuraFlow`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`ImageScaleToTotalPixels`、`SaveImage`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`LoadImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、UNETLoader、CFGNorm
+**有卡**：`CFGNorm`、`KSampler`、`EmptySD3LatentImage`、`MarkdownNote`、`CLIPLoader`、`ImageConcatMulti`、`VAEDecode`、`ModelSamplingAuraFlow`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`ImageScaleToTotalPixels`、`SaveImage`
 
 ## 参数体检
 

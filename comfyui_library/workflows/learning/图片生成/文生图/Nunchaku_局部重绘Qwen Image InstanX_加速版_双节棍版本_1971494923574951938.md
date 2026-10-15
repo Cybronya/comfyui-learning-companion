@@ -1,5 +1,5 @@
 ---
-key: Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
+key: 图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
 name: Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938
 type: Image To Image
 status: completed
@@ -16,54 +16,50 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
+# 图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku_局部重绘Qwen Image InstanX_加速版_双节棍版本_1971494923574951938.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（18 个）：
 - `VAELoader`
 - `CLIPLoader`
 - `MarkdownNote`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ControlNetLoader`
 - `ControlNetInpaintingAliMamaApply`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `MaskToImage`
 - `PreviewImage`
 - `SaveImage`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `NunchakuQwenImageDiTLoader`
-- `KSampler` ★核心
-- `UNETLoader` ★核心
+- `KSampler`
+- `UNETLoader`
 
 **识别到的模式**：image_to_image
 
 ## 关键参数
 
-- `seed` = `974024003577922`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `974024003577922`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **83%**（15/18）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`ControlNetLoader`、`ControlNetInpaintingAliMamaApply`、`ModelSamplingAuraFlow`、`VAEDecode`、`MaskToImage`、`SaveImage`、`VAEEncode`、`LoadImage`、`NunchakuQwenImageDiTLoader`、`KSampler`、`UNETLoader`
+**有卡**：`VAELoader`、`CLIPLoader`、`MarkdownNote`、`CLIPTextEncode`、`ControlNetLoader`、`ControlNetInpaintingAliMamaApply`、`ModelSamplingAuraFlow`、`VAEDecode`、`MaskToImage`、`PreviewImage`、`SaveImage`、`VAEEncode`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`
 
 **缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、ControlNetInpaintingAliMamaApply
 
 ## 参数体检
 

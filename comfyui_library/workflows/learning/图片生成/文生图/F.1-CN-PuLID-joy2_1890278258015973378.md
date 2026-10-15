@@ -1,5 +1,5 @@
 ---
-key: F.1-CN-PuLID-joy2_1890278258015973378.json
+key: 图片生成/文生图/F.1-CN-PuLID-joy2_1890278258015973378.json
 name: F.1-CN-PuLID-joy2_1890278258015973378
 type: Text To Image
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 0.8, "denoise": 1
 discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SegmentAnythingUltra V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ColorPicker` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageRemoveAlpha` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# F.1-CN-PuLID-joy2_1890278258015973378.json
+# 图片生成/文生图/F.1-CN-PuLID-joy2_1890278258015973378.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1-CN-PuLID-joy2_1890278258015973378.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（95 个）：
 - `PulidFluxEvaClipLoader`
@@ -30,7 +28,7 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `Mute / Bypass Repeater (rgthree)`
 - `Mute / Bypass Repeater (rgthree)`
 - `Text Concatenate (JPS)`
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `Any Switch (rgthree)`
 - `Mute / Bypass Repeater (rgthree)`
 - `Reroute`
@@ -53,10 +51,10 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `Fast Bypasser (rgthree)`
 - `VAELoader`
 - `easy cleanGpuUsed`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ConstrainImage|pysssss`
 - `GetImageSize`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Mute / Bypass Repeater (rgthree)`
 - `Reroute`
 - `Mute / Bypass Repeater (rgthree)`
@@ -71,20 +69,20 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `Reroute`
 - `Fast Bypasser (rgthree)`
 - `Fast Bypasser (rgthree)`
-- `KSampler` ★核心
+- `KSampler`
 - `Reroute`
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `LoraLoader`
+- `LoraLoader`
 - `Fast Bypasser (rgthree)`
 - `Fast Bypasser (rgthree)`
 - `Joy_caption_two`
 - `easy showAnything`
 - `Fast Bypasser (rgthree)`
 - `Fast Bypasser (rgthree)`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `TextInput_`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LayerUtility: ColorPicker`
 - `LayerUtility: ImageRemoveAlpha`
 - `PreviewImage`
@@ -92,7 +90,7 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `Mute / Bypass Repeater (rgthree)`
 - `AIO_Preprocessor`
 - `PreviewImage`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `Reroute`
 - `Reroute`
 - `DWPreprocessor`
@@ -105,18 +103,18 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `SetShakkerLabsUnionControlNetType`
 - `Fast Bypasser (rgthree)`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `Fast Bypasser (rgthree)`
 - `Fast Bypasser (rgthree)`
 - `LoadImage`
 - `LayerMask: SegmentAnythingUltra V2`
 - `ControlNetLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `PulidFluxModelLoader`
 - `Joy_caption_two_load`
 
@@ -124,29 +122,27 @@ discoveries: [次要节点 `ConstrainImage|pysssss` 知识库中没有该节点�
 
 ## 关键参数
 
-- `width` = `768`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `732946905914755`
-- `steps` = `20`
 - `cfg` = `1`
+- `controlnet_strength` = `0.8`
+- `denoise` = `1`
+- `height` = `1024`
+- `lora_name` = `秋日森林_秋天女孩_V1.0.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
-- `lora_name` = `秋日森林_秋天女孩_V1.0.safetensors`
-- `strength_model` = `0.8`
+- `seed` = `732946905914755`
+- `steps` = `20`
 - `strength_clip` = `1`
-- `controlnet_strength` = `0.8`
+- `strength_model` = `0.8`
+- `width` = `768`
 
 ## 知识
 
 覆盖率 **34%**（32/95）
 
-**有卡**：`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`CLIPTextEncodeFlux`、`ApplyPulidFlux`、`VAELoader`、`EmptyLatentImage`、`GetImageSize`、`LoadImage`、`KSampler`、`LoraLoader`、`Joy_caption_two`、`VAEDecode`、`TextInput_`、`SaveImage`、`CLIPTextEncode`、`AIO_Preprocessor`、`ControlNetApplyAdvanced`、`DWPreprocessor`、`Canny`、`SetShakkerLabsUnionControlNetType`、`ControlNetLoader`、`UNETLoader`、`DualCLIPLoader`、`PulidFluxModelLoader`、`Joy_caption_two_load`
+**有卡**：`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`Mute / Bypass Repeater (rgthree)`、`Text Concatenate (JPS)`、`CLIPTextEncodeFlux`、`Any Switch (rgthree)`、`Reroute`、`ApplyPulidFlux`、`Fast Bypasser (rgthree)`、`VAELoader`、`easy cleanGpuUsed`、`EmptyLatentImage`、`ConstrainImage|pysssss`、`GetImageSize`
 
 **缺卡**（30）：`ConstrainImage|pysssss`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`LayerMask: SegmentAnythingUltra V2`、`LayerUtility: ColorPicker`、`LayerUtility: ImageRemoveAlpha`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Text Concatenate (JPS)`、`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced
 
 ## 学习发现
 

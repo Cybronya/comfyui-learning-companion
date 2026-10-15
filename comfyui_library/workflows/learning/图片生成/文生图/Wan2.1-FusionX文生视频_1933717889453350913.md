@@ -1,5 +1,5 @@
 ---
-key: Wan2.1-FusionX文生视频_1933717889453350913.json
+key: 图片生成/文生图/Wan2.1-FusionX文生视频_1933717889453350913.json
 name: Wan2.1-FusionX文生视频_1933717889453350913
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [Primitive integer [Crystools], Primitive integer [Crystools], Text Mul
 discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.1-FusionX文生视频_1933717889453350913.json
+# 图片生成/文生图/Wan2.1-FusionX文生视频_1933717889453350913.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1-FusionX文生视频_1933717889453350913.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Other
 
 **节点**（18 个）：
 - `WanVideoBlockSwap`
@@ -37,7 +35,7 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 - `WanVideoExperimentalArgs`
 - `WanVideoTextEncode`
 - `Primitive integer [Crystools]`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoDecode`
 - `VHS_VideoCombine`
 - `WanVideoSLG`
@@ -46,11 +44,9 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 
 覆盖率 **83%**（15/18）
 
-**有卡**：`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoModelLoader`、`JWInteger`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoEmptyEmbeds`、`WanVideoExperimentalArgs`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`VHS_VideoCombine`、`WanVideoSLG`
+**有卡**：`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoModelLoader`、`JWInteger`、`Primitive integer [Crystools]`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoEmptyEmbeds`、`Text Multiline`、`WanVideoExperimentalArgs`、`WanVideoTextEncode`、`WanVideoSampler`
 
 **缺卡**（3）：`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Text Multiline`
-
-**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、VHS_VideoCombine、WanVideoBlockSwap、WanVideoModelLoader
 
 ## 学习发现
 

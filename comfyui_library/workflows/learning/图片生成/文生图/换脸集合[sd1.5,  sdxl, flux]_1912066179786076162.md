@@ -1,5 +1,5 @@
 ---
-key: 换脸集合[sd1.5,  sdxl, flux]_1912066179786076162.json
+key: 图片生成/文生图/换脸集合[sd1.5,  sdxl, flux]_1912066179786076162.json
 name: 换脸集合[sd1.5,  sdxl, flux]_1912066179786076162
 type: Text To Image
 status: completed
@@ -16,127 +16,125 @@ parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "LEOSAM HelloWorld 新世�
 discoveries: [次要节点 `LayerUtility: CropByMask` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageBlendAdvance V3` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageBlendAdvance V3` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: RestoreCropBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: RestoreCropBox` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Gaussian Region` 知识库中没有该节点类型的任何知识, 次要节点 `MaskBlur+` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 换脸集合[sd1.5,  sdxl, flux]_1912066179786076162.json
+# 图片生成/文生图/换脸集合[sd1.5,  sdxl, flux]_1912066179786076162.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/换脸集合[sd1.5,  sdxl, flux]_1912066179786076162.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（262 个）：
 - `InstantIDFaceAnalysis`
 - `InstantIDModelLoader`
 - `ControlNetLoader`
 - `ApplyInstantID`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `ControlNetLoader`
 - `InstantIDModelLoader`
 - `InstantIDFaceAnalysis`
 - `ApplyInstantID`
 - `InpaintModelConditioning`
-- `KSampler` ★核心
+- `KSampler`
 - `DifferentialDiffusion`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `LoadImage`
 - `ApplyPulid`
 - `PulidEvaClipLoader`
 - `PulidInsightFaceLoader`
 - `PulidModelLoader`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `LoadImage`
 - `ApplyPulid`
 - `PulidEvaClipLoader`
 - `PulidInsightFaceLoader`
 - `PulidModelLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
-- `ControlNetApplyAdvanced` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `ControlNetApplyAdvanced`
+- `CheckpointLoaderSimple`
 - `LoadImage`
 - `ControlNetLoader`
 - `LayerUtility: CropByMask`
 - `LoadImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LayerUtility: ImageScaleRestore V2`
 - `SaveImage`
 - `LayerUtility: RestoreCropBox`
-- `KSampler` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `KSampler`
+- `CheckpointLoaderSimple`
 - `ApplyZenID`
 - `DifferentialDiffusion`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
 - `MaskBlur+`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `DWPreprocessor`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `ControlNetLoader`
 - `ZenIDCombineFace`
 - `LoadImage`
 - `LoadImage`
 - `PreviewImage`
-- `CheckpointLoaderSimple` ★核心
-- `KSampler` ★核心
+- `CheckpointLoaderSimple`
+- `KSampler`
 - `InstantIDModelLoader`
 - `EcomIDEvaClipLoader`
 - `EcomIDFaceAnalysis`
 - `ControlNetLoader`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `KSampler`
+- `CLIPTextEncode`
 - `ApplyEcomID`
 - `GetImageSize+`
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `EmptyLatentImage`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `GetImageSize+`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `SaveImage`
 - `PreviewImage`
 - `LayerUtility: ImageBlendAdvance V3`
 - `LoadImage`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `LoadImage`
 - `EmptyImage`
 - `Note`
 - `ApplyEcomIDAdvanced`
 - `Note`
 - `Note`
-- `VAEDecode` ★核心
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `EmptyLatentImage`
+- `CLIPTextEncode`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ApplyPulidFlux`
 - `PulidFluxEvaClipLoader`
 - `PulidFluxModelLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `VAELoader`
 - `PulidFluxInsightFaceLoader`
@@ -147,95 +145,95 @@ discoveries: [次要节点 `LayerUtility: CropByMask` 知识库中没有该节�
 - `OpenposePreprocessor`
 - `LoadImage`
 - `GetImageSize+`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ControlNetLoader`
 - `PreviewImage`
 - `ApplyPulidFlux`
 - `ControlNetLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `ControlNetApplyAdvanced` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `ControlNetApplyAdvanced`
 - `LoadImage`
 - `GetImageSize+`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `ControlNetLoader`
 - `InfiniteYouApply`
 - `VAELoader`
 - `LoadImage`
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `EmptyLatentImage`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `SaveImage`
 - `ControlNetLoader`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `LoadImage`
 - `LoadImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `FaceCombine`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `LoadImage`
 - `IPAdapterUnifiedLoaderFaceID`
 - `CLIPVisionLoader`
 - `IPAdapterInsightFaceLoader`
 - `IPAdapterFaceID`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `LoadImage`
 - `CLIPVisionLoader`
 - `IPAdapterInsightFaceLoader`
 - `IPAdapterFaceID`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `KSampler` ★核心
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
 - `IPAdapterUnifiedLoaderFaceID`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `LoadImage`
 - `CLIPVisionLoader`
-- `CLIPTextEncode` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode`
+- `CheckpointLoaderSimple`
 - `IPAdapterUnifiedLoader`
 - `IPAdapterAdvanced`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
 - `PulidModelLoader`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `IPAdapterAdvanced`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImage`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `CLIPVisionLoader`
 - `IPAdapterUnifiedLoader`
 - `LoadImage`
@@ -246,22 +244,22 @@ discoveries: [次要节点 `LayerUtility: CropByMask` 知识库中没有该节�
 - `LoadImage`
 - `SaveImage`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
 - `CLIPVisionLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `InpaintModelConditioning`
 - `CLIPVisionEncode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `FluxGuidance`
 - `ImageIC`
 - `StyleModelApply`
 - `StyleModelLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `PreviewImage`
 - `MaskPreview+`
-- `KSampler` ★核心
+- `KSampler`
 - `EmptyImage`
 - `LayerUtility: CropByMask V2`
 - `LayerUtility: ImageScaleByAspectRatio V2`
@@ -276,12 +274,12 @@ discoveries: [次要节点 `LayerUtility: CropByMask` 知识库中没有该节�
 - `LoadImage`
 - `LayerUtility: CropByMask`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ControlNetLoader`
-- `KSampler` ★核心
+- `KSampler`
 - `DifferentialDiffusion`
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `LoadImage`
 - `SaveImage`
@@ -292,27 +290,25 @@ discoveries: [次要节点 `LayerUtility: CropByMask` 知识库中没有该节�
 
 ## 关键参数
 
-- `checkpoint` = `LEOSAM HelloWorld 新世界 - V7.safetensors`
-- `seed` = `474562052770258`
-- `steps` = `10`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `checkpoint` = `LEOSAM HelloWorld 新世界 - V7.safetensors`
+- `controlnet_strength` = `0.8000000000000002`
+- `denoise` = `0.5500000000000002`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `0.5500000000000002`
+- `seed` = `474562052770258`
+- `steps` = `10`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
-- `controlnet_strength` = `0.8000000000000002`
 
 ## 知识
 
 覆盖率 **90%**（236/262）
 
-**有卡**：`InstantIDFaceAnalysis`、`InstantIDModelLoader`、`ControlNetLoader`、`ApplyInstantID`、`CheckpointLoaderSimple`、`LoadImage`、`KSampler`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`InpaintModelConditioning`、`DifferentialDiffusion`、`ApplyPulid`、`PulidEvaClipLoader`、`PulidInsightFaceLoader`、`PulidModelLoader`、`EmptyLatentImage`、`ControlNetApplyAdvanced`、`ApplyZenID`、`DWPreprocessor`、`ZenIDCombineFace`、`EcomIDEvaClipLoader`、`EcomIDFaceAnalysis`、`ApplyEcomID`、`EmptyImage`、`ApplyEcomIDAdvanced`、`ApplyPulidFlux`、`PulidFluxEvaClipLoader`、`PulidFluxModelLoader`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`PulidFluxInsightFaceLoader`、`OpenposePreprocessor`、`InfiniteYouApply`、`FaceCombine`、`IPAdapterUnifiedLoaderFaceID`、`CLIPVisionLoader`、`IPAdapterInsightFaceLoader`、`IPAdapterFaceID`、`IPAdapterUnifiedLoader`、`IPAdapterAdvanced`、`ReActorFaceSwap`、`ReActorFaceBoost`、`LoraLoaderModelOnly`、`CLIPVisionEncode`、`FluxGuidance`、`ImageIC`、`StyleModelApply`、`StyleModelLoader`、`ImageSharpen`、`ImpactGaussianBlurMask`、`FaceSwap_InfiniteYou`
+**有卡**：`InstantIDFaceAnalysis`、`InstantIDModelLoader`、`ControlNetLoader`、`ApplyInstantID`、`CheckpointLoaderSimple`、`LoadImage`、`KSampler`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`InpaintModelConditioning`、`DifferentialDiffusion`、`ApplyPulid`、`PulidEvaClipLoader`、`PulidInsightFaceLoader`、`PulidModelLoader`、`EmptyLatentImage`、`ControlNetApplyAdvanced`、`LayerUtility: CropByMask`、`LayerUtility: ImageScaleRestore V2`、`LayerUtility: RestoreCropBox`、`ApplyZenID`、`LayerUtility: ImageScaleByAspectRatio V2`、`MaskBlur+`、`DWPreprocessor`、`ZenIDCombineFace`、`PreviewImage`、`EcomIDEvaClipLoader`、`EcomIDFaceAnalysis`、`ApplyEcomID`、`GetImageSize+`、`LayerUtility: ImageBlendAdvance V3`、`EmptyImage`、`Note`、`ApplyEcomIDAdvanced`、`ApplyPulidFlux`、`PulidFluxEvaClipLoader`、`PulidFluxModelLoader`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`PulidFluxInsightFaceLoader`、`OpenposePreprocessor`、`InfiniteYouApply`、`FaceCombine`、`IPAdapterUnifiedLoaderFaceID`、`CLIPVisionLoader`、`IPAdapterInsightFaceLoader`、`IPAdapterFaceID`、`IPAdapterUnifiedLoader`、`IPAdapterAdvanced`、`ReActorFaceSwap`、`ReActorFaceBoost`、`LoraLoaderModelOnly`、`CLIPVisionEncode`、`FluxGuidance`、`ImageIC`、`StyleModelApply`、`StyleModelLoader`、`MaskPreview+`
 
 **缺卡**（18）：`LayerUtility: CropByMask`、`LayerUtility: CropByMask`、`LayerUtility: CropByMask V2`、`LayerUtility: ImageBlendAdvance V3`、`LayerUtility: ImageBlendAdvance V3`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleRestore V2`、`LayerUtility: ImageScaleRestore V2`、`LayerUtility: RestoreCropBox`、`LayerUtility: RestoreCropBox`、`Mask Gaussian Region`、`MaskBlur+`、`GetImageSize+`、`GetImageSize+`、`GetImageSize+`、`GetImageSize+`、`MaskPreview+`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、EmptyLatentImage
 
 ## 参数体检
 

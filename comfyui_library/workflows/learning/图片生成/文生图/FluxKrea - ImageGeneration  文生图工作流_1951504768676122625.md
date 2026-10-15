@@ -1,5 +1,5 @@
 ---
-key: FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json
+key: 图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json
 name: FluxKrea - ImageGeneration  文生图工作流_1951504768676122625
 type: Unknown Workflow
 status: completed
@@ -15,59 +15,55 @@ parameters: {"batch_size": 1, "height": 1280, "lora_name": "blonde.sft", "streng
 discoveries: [次要节点 `Primitive string multiline [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
-# FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json
+# 图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FluxKrea - ImageGeneration  文生图工作流_1951504768676122625.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（23 个）：
 - `SetNode`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingFlux`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `BasicGuider`
 - `FluxGuidance`
 - `PathchSageAttentionKJ`
 - `BasicScheduler`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `RandomNoise`
 - `VAELoader`
-- `LoraLoader` ★核心
-- `VAEDecode` ★核心
+- `LoraLoader`
+- `VAEDecode`
 - `SaveImage`
 - `Primitive string multiline [Crystools]`
-- `KSamplerSelect` ★核心
-- `UNETLoader` ★核心
+- `KSamplerSelect`
+- `UNETLoader`
 - `DualCLIPLoader`
 - `easy int`
 - `easy int`
-- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF`
 - `DualCLIPLoaderGGUF`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `width` = `904`
-- `height` = `1280`
 - `batch_size` = `1`
+- `height` = `1280`
 - `lora_name` = `blonde.sft`
-- `strength_model` = `0.9`
 - `strength_clip` = `0.9`
+- `strength_model` = `0.9`
+- `width` = `904`
 
 ## 知识
 
 覆盖率 **78%**（18/23）
 
-**有卡**：`CLIPTextEncode`、`ModelSamplingFlux`、`SamplerCustomAdvanced`、`BasicGuider`、`FluxGuidance`、`PathchSageAttentionKJ`、`BasicScheduler`、`EmptyLatentImage`、`RandomNoise`、`VAELoader`、`LoraLoader`、`VAEDecode`、`SaveImage`、`KSamplerSelect`、`UNETLoader`、`DualCLIPLoader`、`UnetLoaderGGUF`、`DualCLIPLoaderGGUF`
+**有卡**：`SetNode`、`CLIPTextEncode`、`ModelSamplingFlux`、`SamplerCustomAdvanced`、`BasicGuider`、`FluxGuidance`、`PathchSageAttentionKJ`、`BasicScheduler`、`EmptyLatentImage`、`RandomNoise`、`VAELoader`、`LoraLoader`、`VAEDecode`、`SaveImage`、`Primitive string multiline [Crystools]`、`KSamplerSelect`、`UNETLoader`
 
 **缺卡**（3）：`Primitive string multiline [Crystools]`、`easy int`、`easy int`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

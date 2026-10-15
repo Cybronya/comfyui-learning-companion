@@ -1,5 +1,5 @@
 ---
-key: LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json
+key: 图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json
 name: LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522
 type: Text To Image
 status: completed
@@ -16,23 +16,21 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json
+# 图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/LTX2.5导演台工作流｜文生视频图生视频全能生成_2106063537062891522.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（64 个）：
 - `CFGGuider`
 - `LTXVConcatAVLatent`
-- `SamplerCustomAdvanced` ★核心
-- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced`
+- `KSamplerSelect`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `LTXVAudioVAEDecode` ★核心
+- `LTXVAudioVAEDecode`
 - `GetNode`
 - `CLIPLoader`
 - `VAELoaderKJ`
@@ -52,7 +50,7 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `LTXDirectorCropGuides`
 - `CreateVideo`
 - `SetNode`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `LTXVSeparateAVLatent`
 - `LTXDirectorGuide`
 - `LTXVConditioning`
@@ -60,31 +58,31 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `TTResolutionSelector`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `CLIPTextEncode`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `JjkText`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VAELoader`
 - `Note`
 - `SaveImage`
@@ -94,23 +92,21 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **73%**（47/64）
 
-**有卡**：`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVAudioVAEDecode`、`CLIPLoader`、`VAELoaderKJ`、`DiffusionModelLoaderKJ`、`ConditioningZeroOut`、`BasicScheduler`、`RandomNoise`、`LTXDirectorCropGuides`、`CreateVideo`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`LTXDirectorGuide`、`LTXVConditioning`、`SaveVideo`、`TTResolutionSelector`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`SaveImage`、`LTXDirector`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
+**有卡**：`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`GetNode`、`LTXVAudioVAEDecode`、`CLIPLoader`、`VAELoaderKJ`、`SetNode`、`DiffusionModelLoaderKJ`、`ConditioningZeroOut`、`BasicScheduler`、`RandomNoise`、`LTXDirectorCropGuides`、`CreateVideo`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`LTXDirectorGuide`、`LTXVConditioning`、`SaveVideo`、`TTResolutionSelector`、`孤海注释`、`UNETLoader`、`LoraLoaderModelOnly`
 
 ## 参数体检
 

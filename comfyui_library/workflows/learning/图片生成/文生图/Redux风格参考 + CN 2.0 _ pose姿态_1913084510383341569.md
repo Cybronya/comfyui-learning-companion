@@ -1,5 +1,5 @@
 ---
-key: Redux风格参考 + CN 2.0 _ pose姿态_1913084510383341569.json
+key: 图片生成/文生图/Redux风格参考 + CN 2.0 _ pose姿态_1913084510383341569.json
 name: Redux风格参考 + CN 2.0 _ pose姿态_1913084510383341569
 type: Text To Image
 status: completed
@@ -14,34 +14,32 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 0.7000000000000001, "denoise": 1, "height": 1536, "lora_name": "秋日森林_秋天女孩_V1.0.safetensors", "sampler_name": "euler", "scheduler": "simple", "seed": 1019313570362968, "steps": 20, "strength_clip": 1, "strength_model": 0.8, "width": 1024}
 ---
 
-# Redux风格参考 + CN 2.0 _ pose姿态_1913084510383341569.json
+# 图片生成/文生图/Redux风格参考 + CN 2.0 _ pose姿态_1913084510383341569.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Redux风格参考 + CN 2.0 _ pose姿态_1913084510383341569.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Output → Other
-
 **节点**（24 个）：
-- `KSampler` ★核心
-- `ControlNetApplyAdvanced` ★核心
+- `KSampler`
+- `ControlNetApplyAdvanced`
 - `DWPreprocessor`
 - `PreviewImage`
 - `SetShakkerLabsUnionControlNetType`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `LoraLoader` ★核心
-- `VAEDecode` ★核心
+- `LoraLoader`
+- `VAEDecode`
 - `ControlNetLoader`
 - `StyleModelLoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `CLIPVisionEncode`
 - `CLIPVisionLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `RH_Captioner`
-- `LoraLoader` ★核心
-- `CLIPTextEncodeFlux` ★核心
+- `LoraLoader`
+- `CLIPTextEncodeFlux`
 - `ShowText|pysssss`
 - `SaveImage`
 - `LoadImage`
@@ -52,24 +50,22 @@ parameters: {"batch_size": 1, "cfg": 1, "controlnet_strength": 0.700000000000000
 
 ## 关键参数
 
-- `seed` = `1019313570362968`
-- `steps` = `20`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `controlnet_strength` = `0.7000000000000001`
+- `denoise` = `1`
+- `height` = `1536`
+- `lora_name` = `秋日森林_秋天女孩_V1.0.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
-- `controlnet_strength` = `0.7000000000000001`
-- `lora_name` = `秋日森林_秋天女孩_V1.0.safetensors`
-- `strength_model` = `0.8`
+- `seed` = `1019313570362968`
+- `steps` = `20`
 - `strength_clip` = `1`
+- `strength_model` = `0.8`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **92%**（22/24）
 
-**有卡**：`KSampler`、`ControlNetApplyAdvanced`、`DWPreprocessor`、`SetShakkerLabsUnionControlNetType`、`UNETLoader`、`DualCLIPLoader`、`LoraLoader`、`VAEDecode`、`ControlNetLoader`、`StyleModelLoader`、`EmptyLatentImage`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`CLIPTextEncode`、`RH_Captioner`、`CLIPTextEncodeFlux`、`SaveImage`、`LoadImage`、`StyleModelApply`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced
+**有卡**：`KSampler`、`ControlNetApplyAdvanced`、`DWPreprocessor`、`PreviewImage`、`SetShakkerLabsUnionControlNetType`、`UNETLoader`、`DualCLIPLoader`、`LoraLoader`、`VAEDecode`、`ControlNetLoader`、`StyleModelLoader`、`EmptyLatentImage`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`CLIPTextEncode`、`RH_Captioner`、`CLIPTextEncodeFlux`、`ShowText|pysssss`、`SaveImage`、`LoadImage`

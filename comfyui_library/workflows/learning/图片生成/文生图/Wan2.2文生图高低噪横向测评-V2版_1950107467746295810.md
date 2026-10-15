@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图高低噪横向测评-V2版_1950107467746295810.json
+key: 图片生成/文生图/Wan2.2文生图高低噪横向测评-V2版_1950107467746295810.json
 name: Wan2.2文生图高低噪横向测评-V2版_1950107467746295810
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "heun", "scheduler": "simpl
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2文生图高低噪横向测评-V2版_1950107467746295810.json
+# 图片生成/文生图/Wan2.2文生图高低噪横向测评-V2版_1950107467746295810.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图高低噪横向测评-V2版_1950107467746295810.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
 
 **节点**（508 个）：
 - `ImpactInt`
@@ -31,496 +29,496 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `CR Text`
 - `LoadImage`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
 - `PreviewImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
 - `LoadImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
 - `CFGZeroStarAndInit`
-- `ModelSamplingSD3`
-- `PathchSageAttentionKJ`
-- `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
-- `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `PreviewImage`
-- `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly`
+- `ModelSamplingSD3`
+- `VAEDecode`
+- `VAEDecode`
+- `PreviewImage`
+- `VAEDecode`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
+- `PreviewImage`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `PreviewImage`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `PreviewImage`
+- `KSamplerAdvanced`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CFGZeroStarAndInit`
+- `UNETLoader`
 - `easy showAnything`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `PreviewImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `CFGZeroStarAndInit`
 - `PreviewImage`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `EmptyHunyuanLatentVideo`
 - `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `KSampler`
+- `VAEDecode`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PreviewImage`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `PathchSageAttentionKJ`
-- `ModelSamplingSD3`
-- `CFGZeroStarAndInit`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `PreviewImage`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `PreviewImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `KSampler` ★核心
-- `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `ModelSamplingSD3`
-- `PreviewImage`
-- `PreviewImage`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
 - `PathchSageAttentionKJ`
-- `ModelSamplingSD3`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CFGZeroStarAndInit`
-- `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
-- `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CFGZeroStarAndInit`
-- `PathchSageAttentionKJ`
-- `ModelSamplingSD3`
-- `KSamplerAdvanced` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `PreviewImage`
-- `KSamplerAdvanced` ★核心
-- `PreviewImage`
-- `VAEDecode` ★核心
-- `KSamplerAdvanced` ★核心
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
-- `PreviewImage`
-- `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CFGZeroStarAndInit`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `VAEDecode`
+- `VAEDecode`
+- `LoraLoaderModelOnly`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `PreviewImage`
+- `VAEDecode`
+- `KSampler`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `KSampler`
+- `PreviewImage`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `PreviewImage`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSamplerAdvanced`
+- `KSamplerAdvanced`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `VAEDecode`
+- `KSampler`
+- `KSampler`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `VAEDecode`
+- `VAEDecode`
+- `CFGZeroStarAndInit`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `VAEDecode`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CFGZeroStarAndInit`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced`
+- `VAEDecode`
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
+- `VAEDecode`
+- `PreviewImage`
+- `KSamplerAdvanced`
+- `PreviewImage`
+- `VAEDecode`
+- `KSamplerAdvanced`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `LoraLoaderModelOnly`
+- `PreviewImage`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CFGZeroStarAndInit`
+- `LoraLoaderModelOnly`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CFGZeroStarAndInit`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `VAEDecode`
+- `VAEDecode`
+- `PreviewImage`
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `KSampler`
 - `ModelSamplingSD3`
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `KSamplerAdvanced` ★核心
+- `VAEDecode`
+- `KSampler`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `KSamplerAdvanced`
 - `PreviewImage`
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `LoraLoaderModelOnly`
 - `CR Text`
 - `ImpactSwitch`
 - `Note`
@@ -528,29 +526,27 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `PreviewImage`
 - `PreviewImage`
 - `PreviewImage`
-- `KSampler` ★核心
+- `KSampler`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `1`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `heun`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **80%**（405/508）
 
-**有卡**：`ImpactInt`、`RH_LLMAPI_NODE`、`LoadImage`、`CLIPLoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`VAELoader`、`KSamplerAdvanced`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`KSampler`、`SaveImage`
+**有卡**：`ImpactInt`、`CR Text Concatenate`、`RH_LLMAPI_NODE`、`CR Text`、`LoadImage`、`CLIPLoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`VAELoader`、`KSamplerAdvanced`、`PreviewImage`、`UNETLoader`、`easy showAnything`、`EmptyHunyuanLatentVideo`、`KSampler`
 
 **缺卡**（3）：`CR Text`、`CR Text`、`CR Text Concatenate`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 学习发现
 

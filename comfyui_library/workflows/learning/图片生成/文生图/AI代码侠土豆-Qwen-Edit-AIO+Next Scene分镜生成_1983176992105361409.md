@@ -1,5 +1,5 @@
 ---
-key: AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json
+key: 图片生成/文生图/AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json
 name: AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409
 type: Unknown Workflow
 status: completed
@@ -16,13 +16,11 @@ parameters: {"cfg": 1, "checkpoint": "Qwen-Rapid-AIO-NSFW-v5.3.safetensors", "de
 discoveries: [次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json
+# 图片生成/文生图/AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/AI代码侠土豆-Qwen-Edit-AIO+Next Scene分镜生成_1983176992105361409.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（27 个）：
 - `ConditioningZeroOut`
@@ -33,15 +31,15 @@ discoveries: [次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知�
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `TextEncodeQwenImageEditPlusAdvance_lrzjason`
 - `ImageResizeKJv2`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly`
+- `CheckpointLoaderSimple`
 - `SetNode`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SetNode`
 - `SetNode`
 - `easy promptLine`
@@ -50,28 +48,26 @@ discoveries: [次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知�
 - `ProcessString`
 - `PreviewImage`
 - `LoadImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `375178709195536`
-- `steps` = `4`
 - `cfg` = `1`
+- `checkpoint` = `Qwen-Rapid-AIO-NSFW-v5.3.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `sa_solver`
 - `scheduler` = `beta`
-- `denoise` = `1`
-- `checkpoint` = `Qwen-Rapid-AIO-NSFW-v5.3.safetensors`
+- `seed` = `375178709195536`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **52%**（14/27）
 
-**有卡**：`ConditioningZeroOut`、`KSampler`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`ImageResizeKJv2`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`Text`、`ProcessString`、`LoadImage`、`VAEDecode`、`SaveImage`
+**有卡**：`ConditioningZeroOut`、`SetNode`、`GetNode`、`KSampler`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`ImageResizeKJv2`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`
 
 **缺卡**（1）：`easy promptLine`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPLoader、ConditioningZeroOut、LoadImage
 
 ## 参数体检
 

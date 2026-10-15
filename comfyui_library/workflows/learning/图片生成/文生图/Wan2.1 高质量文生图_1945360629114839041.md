@@ -1,5 +1,5 @@
 ---
-key: Wan2.1 高质量文生图_1945360629114839041.json
+key: 图片生成/文生图/Wan2.1 高质量文生图_1945360629114839041.json
 name: Wan2.1 高质量文生图_1945360629114839041
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# Wan2.1 高质量文生图_1945360629114839041.json
+# 图片生成/文生图/Wan2.1 高质量文生图_1945360629114839041.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1 高质量文生图_1945360629114839041.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Output → Other
 
 **节点**（16 个）：
 - `WanVideoLoraSelect`
@@ -28,7 +26,7 @@ missing: []
 - `LoadWanVideoT5TextEncoder`
 - `WanVideoDecode`
 - `WanVideoLoraSelect`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `SaveImage`
 - `WanVideoTextEncodeSingle`
 - `WanVideoApplyNAG`
@@ -44,5 +42,3 @@ missing: []
 覆盖率 **100%**（16/16）
 
 **有卡**：`WanVideoLoraSelect`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoSampler`、`SaveImage`、`WanVideoTextEncodeSingle`、`WanVideoApplyNAG`、`FluxResolutionNode`、`WanVideoEmptyEmbeds`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`
-
-**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、WanVideoLoraSelect、FluxResolutionNode、SaveImage

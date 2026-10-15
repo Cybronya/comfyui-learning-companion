@@ -1,5 +1,5 @@
 ---
-key: Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json
+key: 图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json
 name: Aiwood-qwen+wan2.1洗图流好_1961790773043904514
 type: Unknown Workflow
 status: completed
@@ -16,23 +16,21 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json
+# 图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Aiwood-qwen+wan2.1洗图流好_1961790773043904514.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（39 个）：
-- `CLIPTextEncode` ★核心
-- `VAEEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `VAEEncode`
+- `VAEDecode`
 - `ModelSamplingSD3`
 - `ConditioningZeroOut`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `easy showAnything`
 - `PreviewImage`
 - `ImageSharpen`
@@ -42,47 +40,45 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `EsesImageEffectBloom`
 - `BetterFilmGrain`
 - `Note`
-- `VAEDecode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `EmptySD3LatentImage`
 - `Image Comparer (rgthree)`
 - `PreviewImage`
-- `KSampler` ★核心
+- `KSampler`
 - `Text Multiline`
 - `PreviewImage`
 - `easy promptConcat`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `ImageScaleToMegapixels`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `333`
-- `steps` = `4`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `333`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **77%**（30/39）
 
-**有卡**：`CLIPTextEncode`、`VAEEncode`、`VAEDecode`、`ModelSamplingSD3`、`ConditioningZeroOut`、`ModelSamplingAuraFlow`、`ImageSharpen`、`BetterFilmGrain`、`UpscaleModelLoader`、`EsesImageEffectBloom`、`LoraLoaderModelOnly`、`KSampler`、`EmptySD3LatentImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ImageScaleToMegapixels`、`SaveImage`
+**有卡**：`CLIPTextEncode`、`VAEEncode`、`VAEDecode`、`ModelSamplingSD3`、`ConditioningZeroOut`、`ModelSamplingAuraFlow`、`easy showAnything`、`PreviewImage`、`ImageSharpen`、`BetterFilmGrain`、`Text Multiline`、`UpscaleModelLoader`、`EsesImageEffectBloom`、`Note`、`LoraLoaderModelOnly`、`KSampler`、`EmptySD3LatentImage`、`Image Comparer (rgthree)`、`easy promptConcat`、`UNETLoader`、`CLIPLoader`
 
 **缺卡**（3）：`Text Multiline`、`Text Multiline`、`easy promptConcat`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、UNETLoader
 
 ## 参数体检
 

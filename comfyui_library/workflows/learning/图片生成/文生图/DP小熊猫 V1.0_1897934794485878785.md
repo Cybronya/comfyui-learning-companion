@@ -1,5 +1,5 @@
 ---
-key: DP小熊猫 V1.0_1897934794485878785.json
+key: 图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json
 name: DP小熊猫 V1.0_1897934794485878785
 type: Unknown Workflow
 status: completed
@@ -14,44 +14,40 @@ missing: []
 parameters: {"batch_size": 1, "height": 400, "lora_name": "flux-lora (1).safetensors", "strength_clip": 1, "strength_model": 1, "width": 400}
 ---
 
-# DP小熊猫 V1.0_1897934794485878785.json
+# 图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/DP小熊猫 V1.0_1897934794485878785.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（13 个）：
 - `SaveImage`
-- `VAEDecode` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `VAEDecode`
+- `SamplerCustomAdvanced`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicGuider`
 - `RandomNoise`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DualCLIPLoader`
-- `LoraLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoader`
+- `CLIPTextEncode`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `width` = `400`
-- `height` = `400`
 - `batch_size` = `1`
+- `height` = `400`
 - `lora_name` = `flux-lora (1).safetensors`
-- `strength_model` = `1`
 - `strength_clip` = `1`
+- `strength_model` = `1`
+- `width` = `400`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`SaveImage`、`VAEDecode`、`SamplerCustomAdvanced`、`VAELoader`、`EmptyLatentImage`、`BasicScheduler`、`KSamplerSelect`、`BasicGuider`、`RandomNoise`、`UNETLoader`、`DualCLIPLoader`、`LoraLoader`、`CLIPTextEncode`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、UNETLoader、KSamplerSelect、SamplerCustomAdvanced、LoraLoader

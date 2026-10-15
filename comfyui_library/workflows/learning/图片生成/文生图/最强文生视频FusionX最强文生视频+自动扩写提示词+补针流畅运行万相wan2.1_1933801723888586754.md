@@ -1,5 +1,5 @@
 ---
-key: 最强文生视频FusionX最强文生视频+自动扩写提示词+补针流畅运行万相wan2.1_1933801723888586754.json
+key: 图片生成/文生图/最强文生视频FusionX最强文生视频+自动扩写提示词+补针流畅运行万相wan2.1_1933801723888586754.json
 name: 最强文生视频FusionX最强文生视频+自动扩写提示词+补针流畅运行万相wan2.1_1933801723888586754
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text, LayerUtility: PurgeVRAM V2, Primitive integer [Crystools]]
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识]
 ---
 
-# 最强文生视频FusionX最强文生视频+自动扩写提示词+补针流畅运行万相wan2.1_1933801723888586754.json
+# 图片生成/文生图/最强文生视频FusionX最强文生视频+自动扩写提示词+补针流畅运行万相wan2.1_1933801723888586754.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/最强文生视频FusionX最强文生视频+自动扩写提示词+补针流畅运行万相wan2.1_1933801723888586754.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Other
 
 **节点**（24 个）：
 - `WanVideoSLG`
@@ -32,7 +30,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `VHS_VideoCombine`
 - `LayerUtility: PurgeVRAM V2`
 - `Primitive integer [Crystools]`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `JWInteger`
 - `JWInteger`
 - `VHS_VideoCombine`
@@ -52,11 +50,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **88%**（21/24）
 
-**有卡**：`WanVideoSLG`、`WanVideoEnhanceAVideo`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`VHS_VideoCombine`、`WanVideoSampler`、`JWInteger`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`RH_OneShot_Prompter`、`WanVideoEmptyEmbeds`、`WanVideoBlockSwap`、`WanVideoApplyNAG`、`WanVideoTextEncodeSingle`、`WanVideoMagCache`
+**有卡**：`WanVideoSLG`、`WanVideoEnhanceAVideo`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`VHS_VideoCombine`、`LayerUtility: PurgeVRAM V2`、`Primitive integer [Crystools]`、`WanVideoSampler`、`JWInteger`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`RH_OneShot_Prompter`、`CR Text`、`WanVideoEmptyEmbeds`、`WanVideoBlockSwap`、`WanVideoApplyNAG`
 
 **缺卡**（3）：`CR Text`、`LayerUtility: PurgeVRAM V2`、`Primitive integer [Crystools]`
-
-**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、RH_OneShot_Prompter、VHS_VideoCombine、WanVideoBlockSwap
 
 ## 学习发现
 

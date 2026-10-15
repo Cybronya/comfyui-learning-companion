@@ -1,5 +1,5 @@
 ---
-key: ▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+key: 图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
 name: ▶WAN2.2单底噪图生图洗图流_1956293805874008065
 type: Image To Image
 status: completed
@@ -16,53 +16,49 @@ parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "res_2s",
 discoveries: [次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: Florence2Image2Prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# ▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
+# 图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/▶WAN2.2单底噪图生图洗图流_1956293805874008065.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（17 个）：
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `Image Comparer (rgthree)`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `CLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LoadImage`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
 - `VAELoader`
 - `LayerMask: LoadFlorence2Model`
 - `LayerUtility: Florence2Image2Prompt`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingSD3`
 - `ShowText|pysssss`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 
 **识别到的模式**：image_to_image
 
 ## 关键参数
 
-- `seed` = `651370515831654`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `0.30000000000000004`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `0.30000000000000004`
+- `seed` = `651370515831654`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **71%**（12/17）
 
-**有卡**：`VAEEncode`、`VAEDecode`、`SaveImage`、`CLIPLoader`、`UNETLoader`、`LoadImage`、`LoraLoaderModelOnly`、`KSampler`、`VAELoader`、`CLIPTextEncode`、`ModelSamplingSD3`
+**有卡**：`VAEEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`Image Comparer (rgthree)`、`VAEDecode`、`SaveImage`、`CLIPLoader`、`UNETLoader`、`LoadImage`、`LoraLoaderModelOnly`、`KSampler`、`VAELoader`、`LayerMask: LoadFlorence2Model`
 
 **缺卡**（3）：`LayerMask: LoadFlorence2Model`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: Florence2Image2Prompt`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: SUPO_FLUX_KREA_WAN2.2_Qwen image单图对比_1969410394144075778.json
+key: 图片生成/文生图/SUPO_FLUX_KREA_WAN2.2_Qwen image单图对比_1969410394144075778.json
 name: SUPO_FLUX_KREA_WAN2.2_Qwen image单图对比_1969410394144075778
 type: Text To Image
 status: completed
@@ -14,86 +14,84 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 512, "sampler_name": "res_2s", "scheduler": "beta57", "seed": 905514555295785, "steps": 25, "width": 512}
 ---
 
-# SUPO_FLUX_KREA_WAN2.2_Qwen image单图对比_1969410394144075778.json
+# 图片生成/文生图/SUPO_FLUX_KREA_WAN2.2_Qwen image单图对比_1969410394144075778.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/SUPO_FLUX_KREA_WAN2.2_Qwen image单图对比_1969410394144075778.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（74 个）：
 - `ModelSamplingSD3`
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 - `VAELoader`
 - `ModelSamplingAuraFlow`
 - `CLIPLoader`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `UNETLoader`
+- `UNETLoader`
 - `EmptySD3LatentImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `PatchModelAddDownscale`
 - `PatchModelAddDownscale`
 - `PatchModelAddDownscale`
-- `KSampler` ★核心
-- `UNETLoader` ★核心
+- `KSampler`
+- `UNETLoader`
 - `PatchModelAddDownscale`
 - `Int`
 - `ModelSamplingFlux`
 - `BasicGuider`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `PreviewImage`
 - `AddLabel`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `PatchModelAddDownscale`
 - `ModelSamplingFlux`
 - `BasicGuider`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `PreviewImage`
 - `AddLabel`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ModelSamplingFlux`
 - `BasicGuider`
 - `BasicScheduler`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `PreviewImage`
 - `AddLabel`
 - `ModelSamplingSD3`
 - `PreviewImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `AddLabel`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `PreviewImage`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `VAELoader`
 - `Int`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `KSamplerSelect` ★核心
-- `DetailDaemonSamplerNode` ★核心
+- `CLIPTextEncode`
+- `KSamplerSelect`
+- `DetailDaemonSamplerNode`
 - `Seed_`
 - `RandomNoise`
 - `PreviewImage`
 - `AddLabel`
 - `PreviewImage`
 - `PatchModelAddDownscale`
-- `CLIPTextEncode` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `KSampler`
 - `ImageBatchMulti`
 - `PreviewImage`
 - `SaveImage`
@@ -102,20 +100,18 @@ parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 512, "sampler_
 
 ## 关键参数
 
-- `seed` = `905514555295785`
-- `steps` = `25`
+- `batch_size` = `1`
 - `cfg` = `3.5`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `res_2s`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `905514555295785`
+- `steps` = `25`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **84%**（62/74）
 
-**有卡**：`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`ModelSamplingAuraFlow`、`UNETLoader`、`EmptySD3LatentImage`、`PatchModelAddDownscale`、`KSampler`、`Int`、`ModelSamplingFlux`、`BasicGuider`、`BasicScheduler`、`SamplerCustomAdvanced`、`VAEDecode`、`AddLabel`、`EmptyLatentImage`、`DualCLIPLoader`、`KSamplerSelect`、`DetailDaemonSamplerNode`、`Seed_`、`RandomNoise`、`ImageBatchMulti`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、DetailDaemonSamplerNode
+**有卡**：`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`ModelSamplingAuraFlow`、`UNETLoader`、`EmptySD3LatentImage`、`PatchModelAddDownscale`、`KSampler`、`Int`、`ModelSamplingFlux`、`BasicGuider`、`BasicScheduler`、`SamplerCustomAdvanced`、`VAEDecode`、`PreviewImage`、`AddLabel`、`EmptyLatentImage`、`DualCLIPLoader`、`KSamplerSelect`

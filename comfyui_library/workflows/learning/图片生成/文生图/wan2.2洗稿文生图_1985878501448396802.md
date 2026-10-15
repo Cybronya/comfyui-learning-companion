@@ -1,5 +1,5 @@
 ---
-key: wan2.2洗稿文生图_1985878501448396802.json
+key: 图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json
 name: wan2.2洗稿文生图_1985878501448396802
 type: Unknown Workflow
 status: completed
@@ -13,26 +13,24 @@ patterns: []
 missing: []
 ---
 
-# wan2.2洗稿文生图_1985878501448396802.json
+# 图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（21 个）：
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `VAELoader`
 - `ModelSamplingSD3`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `RandomNoise`
 - `CFGGuider`
 - `BasicScheduler`
-- `KSamplerSelect` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect`
+- `SamplerCustomAdvanced`
 - `DisableNoise`
 - `SplitSigmas`
 - `WanVideoNAG`
@@ -40,14 +38,12 @@ missing: []
 - `EmptyHunyuanLatentVideo`
 - `Note`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `Note`
-- `UNETLoader` ★核心
+- `UNETLoader`
 
 ## 知识
 
 覆盖率 **90%**（19/21）
 
-**有卡**：`CLIPTextEncode`、`VAEDecode`、`VAELoader`、`ModelSamplingSD3`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`BasicScheduler`、`KSamplerSelect`、`DisableNoise`、`SplitSigmas`、`WanVideoNAG`、`SaveImage`、`EmptyHunyuanLatentVideo`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、CFGGuider、KSamplerSelect
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`VAELoader`、`ModelSamplingSD3`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`BasicScheduler`、`KSamplerSelect`、`DisableNoise`、`SplitSigmas`、`WanVideoNAG`、`SaveImage`、`EmptyHunyuanLatentVideo`、`Note`、`CLIPLoader`、`LoraLoaderModelOnly`

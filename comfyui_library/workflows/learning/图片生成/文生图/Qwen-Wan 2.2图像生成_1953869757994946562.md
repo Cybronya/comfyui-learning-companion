@@ -1,5 +1,5 @@
 ---
-key: Qwen-Wan 2.2图像生成_1953869757994946562.json
+key: 图片生成/文生图/Qwen-Wan 2.2图像生成_1953869757994946562.json
 name: Qwen-Wan 2.2图像生成_1953869757994946562
 type: Unknown Workflow
 status: completed
@@ -16,28 +16,26 @@ parameters: {"cfg": 4, "denoise": 1.0000000000000002, "sampler_name": -1, "sched
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen-Wan 2.2图像生成_1953869757994946562.json
+# 图片生成/文生图/Qwen-Wan 2.2图像生成_1953869757994946562.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-Wan 2.2图像生成_1953869757994946562.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（31 个）：
 - `CLIPLoader`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `PathchSageAttentionKJ`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `VAELoader`
 - `CLIPLoader`
 - `PathchSageAttentionKJ`
 - `JWStringConcat`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `ClownsharKSampler_Beta` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `ClownsharKSampler_Beta`
 - `VAELoader`
 - `Textbox`
 - `EmptySD3LatentImage`
@@ -46,35 +44,33 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `SaveImage`
 - `Note`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
+- `VAEDecode`
+- `VAEDecode`
 - `ImageStitch`
 - `PreviewImage`
 - `Textbox`
-- `UnetLoaderGGUF` ★核心
-- `UnetLoaderGGUF` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF`
+- `UnetLoaderGGUF`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 
 ## 关键参数
 
-- `seed` = `0.5000000000000001`
-- `steps` = `beta57`
 - `cfg` = `4`
+- `denoise` = `1.0000000000000002`
 - `sampler_name` = `-1`
 - `scheduler` = `0.30000000000000004`
-- `denoise` = `1.0000000000000002`
+- `seed` = `0.5000000000000001`
+- `steps` = `beta57`
 
 ## 知识
 
 覆盖率 **87%**（27/31）
 
-**有卡**：`CLIPLoader`、`ModelSamplingAuraFlow`、`KSampler`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`VAELoader`、`JWStringConcat`、`ClownsharKSampler_Beta`、`Textbox`、`EmptySD3LatentImage`、`LatentUpscaleBy`、`SaveImage`、`VAEDecode`、`ImageStitch`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`
+**有卡**：`CLIPLoader`、`ModelSamplingAuraFlow`、`KSampler`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`VAELoader`、`JWStringConcat`、`ClownsharKSampler_Beta`、`Textbox`、`EmptySD3LatentImage`、`LatentUpscaleBy`、`PreviewImage`、`SaveImage`、`Note`、`easy cleanGpuUsed`、`VAEDecode`、`ImageStitch`、`UnetLoaderGGUF`
 
 **缺卡**（1）：`easy cleanGpuUsed`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ClownsharKSampler_Beta、LatentUpscaleBy
 
 ## 参数体检
 

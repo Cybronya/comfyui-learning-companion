@@ -1,5 +1,5 @@
 ---
-key: 精品大合集Qwen image 2.1好用的都在这里啦-截止到260929_2104209467754770434.json
+key: 图片生成/文生图/精品大合集Qwen image 2.1好用的都在这里啦-截止到260929_2104209467754770434.json
 name: 精品大合集Qwen image 2.1好用的都在这里啦-截止到260929_2104209467754770434
 type: Text To Image
 status: completed
@@ -16,28 +16,26 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 精品大合集Qwen image 2.1好用的都在这里啦-截止到260929_2104209467754770434.json
+# 图片生成/文生图/精品大合集Qwen image 2.1好用的都在这里啦-截止到260929_2104209467754770434.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/精品大合集Qwen image 2.1好用的都在这里啦-截止到260929_2104209467754770434.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（159 个）：
 - `easy showAnything`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `孤海注释`
 - `SaveImage`
 - `CLIPLoader`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `easy cleanGpuUsed`
 - `easy showAnything`
 - `ComfySwitchNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `PrimitiveBoolean`
 - `ResolutionSelector`
 - `孤海注释`
@@ -53,17 +51,17 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `QwenImage21Cache`
 - `CLIPLoader`
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `VAELoader`
 - `easy showAnything`
-- `KSampler` ★核心
+- `KSampler`
 - `easy cleanGpuUsed`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `LoadImage`
 - `LoadImage`
@@ -76,13 +74,13 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `LoadImage`
 - `LoadImage`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
+- `KSampler`
 - `忽略多组孤海`
 - `忽略多组孤海`
 - `easy cleanGpuUsed`
 - `ConditioningZeroOut`
-- `VAEEncode` ★核心
-- `VAEDecode` ★核心
+- `VAEEncode`
+- `VAEDecode`
 - `easy imageBatchToImageList`
 - `easy imageListToImageBatch`
 - `ResolutionSelector`
@@ -93,23 +91,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `VAELoader`
 - `Image Comparer (rgthree)`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `KSampler` ★核心
+- `KSampler`
 - `TTP_Tile_image_size`
 - `SimpleMath+`
 - `TTP_Image_Tile_Batch`
 - `SimpleMath+`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `CLIPLoader`
 - `ReferenceLatent`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `CR Prompt Text`
 - `ResolutionSelector`
-- `UNETLoader` ★核心
-- `UNETLoader` ★核心
+- `UNETLoader`
+- `UNETLoader`
 - `LoadImage`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `ImageConcanate`
 - `SetNode`
@@ -120,9 +118,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetNode`
 - `GetNode`
 - `PreviewImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `ReferenceLatent`
 - `ReferenceLatent`
 - `CFGGuider`
@@ -130,10 +128,10 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetImageSize`
 - `Flux2Scheduler`
 - `EmptyFlux2LatentImage`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `RandomNoise`
-- `SamplerCustomAdvanced` ★核心
-- `VAEDecode` ★核心
+- `SamplerCustomAdvanced`
+- `VAEDecode`
 - `SetNode`
 - `孤海注释`
 - `孤海注释`
@@ -156,17 +154,17 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `PrimitiveStringMultiline`
 - `PrimitiveBoolean`
 - `ResolutionSelector`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `TextGenerateLTX2Prompt`
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
 - `BatchImagesNode`
 - `QwenPERewriteT8`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `QwenImage21Cache`
@@ -183,31 +181,29 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `LoadImage`
 - `LoadImage`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
+- `KSampler`
 
 **识别到的模式**：text_to_image、image_to_image
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `1075617768064495`
-- `steps` = `40`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1075617768064495`
+- `steps` = `40`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **70%**（111/159）
 
-**有卡**：`EmptyLatentImage`、`SaveImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`PrimitiveBoolean`、`ResolutionSelector`、`LoadImage`、`QwenImage21Cache`、`VAELoader`、`QwenPERewriteT8`、`ConditioningZeroOut`、`VAEEncode`、`TTP_Image_Assy`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`LoraLoaderModelOnly`、`ReferenceLatent`、`UNETLoader`、`CLIPTextEncode`、`ImageConcanate`、`CFGGuider`、`ImageScaleToTotalPixels`、`GetImageSize`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`KSamplerSelect`、`RandomNoise`、`SamplerCustomAdvanced`、`TextGenerateLTX2Prompt`、`BatchImagesNode`、`QwenImage21SageAttentionT8`
+**有卡**：`easy showAnything`、`EmptyLatentImage`、`ComfySwitchNode`、`孤海注释`、`SaveImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`easy cleanGpuUsed`、`PrimitiveBoolean`、`ResolutionSelector`、`LoadImage`、`QwenImage21Cache`、`VAELoader`、`QwenPERewriteT8`、`忽略多组孤海`、`ConditioningZeroOut`、`VAEEncode`、`easy imageBatchToImageList`、`easy imageListToImageBatch`、`TTP_Image_Assy`、`Image Comparer (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`TTP_Tile_image_size`、`SimpleMath+`、`TTP_Image_Tile_Batch`、`LoraLoaderModelOnly`、`ReferenceLatent`、`UNETLoader`、`CLIPTextEncode`、`CR Prompt Text`、`ImageConcanate`、`SetNode`、`GetNode`、`PreviewImage`、`CFGGuider`、`ImageScaleToTotalPixels`、`GetImageSize`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`KSamplerSelect`、`RandomNoise`、`SamplerCustomAdvanced`
 
 **缺卡**（17）：`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageBatchToImageList`、`easy imageListToImageBatch`、`忽略多组孤海`、`忽略多组孤海`、`忽略多组孤海`、`忽略多组孤海`、`忽略多组孤海`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
 
 ## 参数体检
 

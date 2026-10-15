@@ -1,5 +1,5 @@
 ---
-key: 调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json
+key: 图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json
 name: 调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# 调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json
+# 图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（11 个）：
 - `LoadImage`
@@ -38,6 +36,4 @@ missing: []
 
 覆盖率 **82%**（9/11）
 
-**有卡**：`LoadImage`、`DoubaoSizePreset`、`SaveImage`、`DoubaoImageGenerator`
-
-**用到的条目**：LoadImage、DoubaoSizePreset、SaveImage、DoubaoImageGenerator、sd15-t2i-basic、sd15-t2i-lora、height 调整经验、width 调整经验
+**有卡**：`LoadImage`、`Note`、`PreviewImage`、`DoubaoSizePreset`、`SaveImage`

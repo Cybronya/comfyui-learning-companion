@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图v2.0_1951114718939389953.json
+key: 图片生成/文生图/Wan2.2文生图v2.0_1951114718939389953.json
 name: Wan2.2文生图v2.0_1951114718939389953
 type: Text To Image
 status: completed
@@ -14,63 +14,59 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 512, "sampler_name": "heun", "scheduler": "beta", "seed": 497163970725457, "steps": 10, "width": 512}
 ---
 
-# Wan2.2文生图v2.0_1951114718939389953.json
+# 图片生成/文生图/Wan2.2文生图v2.0_1951114718939389953.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图v2.0_1951114718939389953.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（29 个）：
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `JWInteger`
 - `PrimitiveInt`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `JWInteger`
 - `JjkText`
 - `PMRF`
 - `VAELoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `EmptyLatentImage` ★核心
+- `CLIPTextEncode`
+- `EmptyLatentImage`
 - `LoadImage`
 - `PreviewImage`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
 - `Seed_`
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `seed` = `497163970725457`
-- `steps` = `10`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `heun`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `497163970725457`
+- `steps` = `10`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **90%**（26/29）
 
-**有卡**：`ModelSamplingSD3`、`LoraLoaderModelOnly`、`KSampler`、`PathchSageAttentionKJ`、`JWInteger`、`SaveImage`、`VAEDecode`、`PMRF`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`EmptyLatentImage`、`LoadImage`、`UNETLoader`、`Seed_`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
+**有卡**：`ModelSamplingSD3`、`LoraLoaderModelOnly`、`KSampler`、`PathchSageAttentionKJ`、`JWInteger`、`PrimitiveInt`、`SaveImage`、`VAEDecode`、`JjkText`、`PMRF`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`EmptyLatentImage`、`LoadImage`、`PreviewImage`、`UNETLoader`、`Seed_`

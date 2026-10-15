@@ -1,5 +1,5 @@
 ---
-key: CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
+key: 图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
 name: CGD_qwen-image-2.1-rh-t2i_2104813454950486018
 type: Unknown Workflow
 status: completed
@@ -14,28 +14,26 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 447606998181262, "steps": 25, "width": 1024}
 ---
 
-# CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
+# 图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/CGD_qwen-image-2.1-rh-t2i_2104813454950486018.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（18 个）：
 - `MarkdownNote`
 - `CLIPLoader`
 - `VAELoader`
 - `QwenImage21Cache`
-- `UNETLoader` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `KSampler`
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `MarkdownNote`
 - `PrimitiveStringMultiline`
 - `CLIPLoader`
 - `TextGenerate`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImageAdvanced`
 - `SaveImage`
 - `ComfySwitchNode`
@@ -44,20 +42,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 ## 关键参数
 
-- `seed` = `447606998181262`
-- `steps` = `25`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `447606998181262`
+- `steps` = `25`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **72%**（13/18）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`UNETLoader`、`KSampler`、`EmptyLatentImage`、`ResolutionSelector`、`TextGenerate`、`VAEDecode`、`SaveImageAdvanced`、`SaveImage`、`TextEncodeQwenImage21`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、QwenImage21Cache
+**有卡**：`MarkdownNote`、`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`UNETLoader`、`KSampler`、`EmptyLatentImage`、`ResolutionSelector`、`PrimitiveStringMultiline`、`TextGenerate`、`VAEDecode`

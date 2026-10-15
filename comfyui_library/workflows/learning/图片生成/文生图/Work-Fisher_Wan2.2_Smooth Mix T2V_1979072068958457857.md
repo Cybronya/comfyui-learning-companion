@@ -1,5 +1,5 @@
 ---
-key: Work-Fisher_Wan2.2_Smooth Mix T2V_1979072068958457857.json
+key: 图片生成/文生图/Work-Fisher_Wan2.2_Smooth Mix T2V_1979072068958457857.json
 name: Work-Fisher_Wan2.2_Smooth Mix T2V_1979072068958457857
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 6, "denoise": "euler_ancestral", "sampler_name": 1, "schedul
 discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# Work-Fisher_Wan2.2_Smooth Mix T2V_1979072068958457857.json
+# 图片生成/文生图/Work-Fisher_Wan2.2_Smooth Mix T2V_1979072068958457857.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Work-Fisher_Wan2.2_Smooth Mix T2V_1979072068958457857.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Decode → Other
 
 **节点**（52 个）：
 - `RIFE VFI`
@@ -39,7 +37,7 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 - `ModelPatchTorchSettings`
 - `Reroute`
 - `Reroute`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Reroute`
 - `Fast Groups Bypasser (rgthree)`
 - `Note`
@@ -50,9 +48,9 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `UNETLoader` ★核心
-- `WanMoeKSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `WanMoeKSampler`
+- `LoraLoaderModelOnly`
 - `wanBlockSwap`
 - `wanBlockSwap`
 - `Note`
@@ -61,7 +59,7 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 - `INTConstant`
 - `VHS_VideoCombine`
 - `VHS_VideoCombine`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Reroute`
 - `Reroute`
 - `Reroute`
@@ -74,27 +72,25 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 - `CLIPLoader`
 - `Reroute`
 - `easy cleanGpuUsed`
-- `CLIPTextEncode` ★核心
-- `UnetLoaderGGUF` ★核心
+- `CLIPTextEncode`
+- `UnetLoaderGGUF`
 
 ## 关键参数
 
-- `seed` = `0.9`
-- `steps` = `fixed`
 - `cfg` = `6`
+- `denoise` = `euler_ancestral`
 - `sampler_name` = `1`
 - `scheduler` = `1`
-- `denoise` = `euler_ancestral`
+- `seed` = `0.9`
+- `steps` = `fixed`
 
 ## 知识
 
 覆盖率 **42%**（22/52）
 
-**有卡**：`PathchSageAttentionKJ`、`Int`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`WanImageToVideo`、`UNETLoader`、`WanMoeKSampler`、`LoraLoaderModelOnly`、`wanBlockSwap`、`INTConstant`、`VHS_VideoCombine`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`UnetLoaderGGUF`
+**有卡**：`RIFE VFI`、`PathchSageAttentionKJ`、`Int`、`Reroute`、`Note`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`Fast Groups Bypasser (rgthree)`
 
 **缺卡**（2）：`RIFE VFI`、`easy cleanGpuUsed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、Int
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen3-vl-plus反推提示词+即梦4.0图像生成（0.15元一次）_1980262999250415617.json
+key: 图片生成/文生图/Qwen3-vl-plus反推提示词+即梦4.0图像生成（0.15元一次）_1980262999250415617.json
 name: Qwen3-vl-plus反推提示词+即梦4.0图像生成（0.15元一次）_1980262999250415617
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text Concatenate, easy anythingIndexSwitch, easy saveText, easy sav
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
-# Qwen3-vl-plus反推提示词+即梦4.0图像生成（0.15元一次）_1980262999250415617.json
+# 图片生成/文生图/Qwen3-vl-plus反推提示词+即梦4.0图像生成（0.15元一次）_1980262999250415617.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen3-vl-plus反推提示词+即梦4.0图像生成（0.15元一次）_1980262999250415617.json`
 
 ## 结构
-
-**生成流程**：Process → Output → Other
 
 **节点**（22 个）：
 - `MarkdownNote`
@@ -50,11 +48,9 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 覆盖率 **59%**（13/22）
 
-**有卡**：`LoadImage`、`String`、`RH_Jimeng4_Image2Image`、`RH_Captioner_Pro`、`SaveImage`
+**有卡**：`MarkdownNote`、`LoadImage`、`easy anythingIndexSwitch`、`CR Text Concatenate`、`String`、`RH_Jimeng4_Image2Image`、`RH_Captioner_Pro`、`PrimitiveInt`
 
 **缺卡**（4）：`CR Text Concatenate`、`easy anythingIndexSwitch`、`easy saveText`、`easy saveText`
-
-**用到的条目**：LoadImage、SaveImage、RH_Jimeng4_Image2Image、String、RH_Captioner_Pro、sd15-t2i-basic、sd15-t2i-lora、SaveText
 
 ## 学习发现
 

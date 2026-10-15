@@ -1,5 +1,5 @@
 ---
-key: nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
+key: 图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
 name: nunchaku0.3.0.dev2新版换脸_1925107417154318337
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"controlnet_strength": 0.6000000000000001}
 ---
 
-# nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
+# 图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku0.3.0.dev2新版换脸_1925107417154318337.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（26 个）：
 - `VAELoader`
@@ -30,9 +28,9 @@ parameters: {"controlnet_strength": 0.6000000000000001}
 - `AIO_Preprocessor`
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect` ★核心
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `KSamplerSelect`
+- `VAEDecode`
+- `CLIPTextEncode`
 - `ModelSamplingFlux`
 - `FluxGuidance`
 - `ConditioningZeroOut`
@@ -40,15 +38,15 @@ parameters: {"controlnet_strength": 0.6000000000000001}
 - `NunchakuFluxDiTLoader`
 - `NunchakuTextEncoderLoader`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `LoadImage`
 - `SaveImage`
 - `ImageConcatMulti`
 - `BasicScheduler`
 - `PreviewImage`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `LoadImage`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 
 ## 关键参数
 
@@ -58,6 +56,4 @@ parameters: {"controlnet_strength": 0.6000000000000001}
 
 覆盖率 **96%**（25/26）
 
-**有卡**：`VAELoader`、`EmptySD3LatentImage`、`NunchakuPulidApply`、`SetUnionControlNetType`、`AIO_Preprocessor`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`VAEDecode`、`CLIPTextEncode`、`ModelSamplingFlux`、`FluxGuidance`、`ConditioningZeroOut`、`NunchakuPulidLoader`、`NunchakuFluxDiTLoader`、`NunchakuTextEncoderLoader`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`LoadImage`、`SaveImage`、`ImageConcatMulti`、`BasicScheduler`、`NunchakuFluxLoraLoader`、`SamplerCustomAdvanced`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、ControlNetApplyAdvanced、ControlNetLoader、SetUnionControlNetType
+**有卡**：`VAELoader`、`EmptySD3LatentImage`、`NunchakuPulidApply`、`SetUnionControlNetType`、`AIO_Preprocessor`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`VAEDecode`、`CLIPTextEncode`、`ModelSamplingFlux`、`FluxGuidance`、`ConditioningZeroOut`、`NunchakuPulidLoader`、`NunchakuFluxDiTLoader`、`NunchakuTextEncoderLoader`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`LoadImage`、`SaveImage`、`ImageConcatMulti`、`BasicScheduler`、`PreviewImage`、`NunchakuFluxLoraLoader`

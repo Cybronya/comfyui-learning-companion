@@ -1,5 +1,5 @@
 ---
-key: nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json
+key: 图片生成/文生图/nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json
 name: nunchaku-flux.1-dev 官方加速工作流_1909669429062631425
 type: Unknown Workflow
 status: completed
@@ -13,21 +13,19 @@ patterns: []
 missing: []
 ---
 
-# nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json
+# 图片生成/文生图/nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku-flux.1-dev 官方加速工作流_1909669429062631425.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（18 个）：
 - `FluxGuidance`
-- `KSamplerSelect` ★核心
-- `VAEDecode` ★核心
+- `KSamplerSelect`
+- `VAEDecode`
 - `BasicGuider`
 - `EmptySD3LatentImage`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `RandomNoise`
 - `ModelSamplingFlux`
 - `VAELoader`
@@ -35,16 +33,14 @@ missing: []
 - `PrimitiveNode`
 - `SaveImage`
 - `BasicScheduler`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `NunchakuFluxDiTLoader`
 - `NunchakuTextEncoderLoader`
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
 
 ## 知识
 
 覆盖率 **89%**（16/18）
 
-**有卡**：`FluxGuidance`、`KSamplerSelect`、`VAEDecode`、`BasicGuider`、`EmptySD3LatentImage`、`SamplerCustomAdvanced`、`RandomNoise`、`ModelSamplingFlux`、`VAELoader`、`SaveImage`、`BasicScheduler`、`CLIPTextEncode`、`NunchakuFluxDiTLoader`、`NunchakuTextEncoderLoader`、`NunchakuFluxLoraLoader`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、NunchakuTextEncoderLoader、NunchakuFluxLoraLoader
+**有卡**：`FluxGuidance`、`KSamplerSelect`、`VAEDecode`、`BasicGuider`、`EmptySD3LatentImage`、`SamplerCustomAdvanced`、`RandomNoise`、`ModelSamplingFlux`、`VAELoader`、`PrimitiveNode`、`SaveImage`、`BasicScheduler`、`CLIPTextEncode`、`NunchakuFluxDiTLoader`、`NunchakuTextEncoderLoader`

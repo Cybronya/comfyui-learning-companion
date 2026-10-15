@@ -1,5 +1,5 @@
 ---
-key: 【AWPortrait-QW】Qwen版AWP Lora模型，更符合国人面部特征与审美，皮肤质感细腻_1961717444916264961.json
+key: 图片生成/文生图/【AWPortrait-QW】Qwen版AWP Lora模型，更符合国人面部特征与审美，皮肤质感细腻_1961717444916264961.json
 name: 【AWPortrait-QW】Qwen版AWP Lora模型，更符合国人面部特征与审美，皮肤质感细腻_1961717444916264961
 type: Unknown Workflow
 status: completed
@@ -15,33 +15,31 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
-# 【AWPortrait-QW】Qwen版AWP Lora模型，更符合国人面部特征与审美，皮肤质感细腻_1961717444916264961.json
+# 图片生成/文生图/【AWPortrait-QW】Qwen版AWP Lora模型，更符合国人面部特征与审美，皮肤质感细腻_1961717444916264961.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【AWPortrait-QW】Qwen版AWP Lora模型，更符合国人面部特征与审美，皮肤质感细腻_1961717444916264961.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（24 个）：
-- `KSampler` ★核心
+- `KSampler`
 - `CLIPLoader`
 - `VAELoader`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LayerUtility: JoyCaptionBeta1`
 - `ShowText|pysssss`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `easy showAnything`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `PreviewImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CR SDXL Aspect Ratio`
 - `Text Concatenate`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PrimitiveString`
 - `Reroute`
 - `GetImageSize`
@@ -51,22 +49,20 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 
 ## 关键参数
 
-- `seed` = `269396040660126`
-- `steps` = `30`
 - `cfg` = `4`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `269396040660126`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **54%**（13/24）
 
-**有卡**：`KSampler`、`CLIPLoader`、`VAELoader`、`SaveImage`、`UNETLoader`、`LoadImage`、`ModelSamplingAuraFlow`、`VAEDecode`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`GetImageSize`
+**有卡**：`KSampler`、`CLIPLoader`、`VAELoader`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: JoyCaptionBeta1`、`ShowText|pysssss`、`SaveImage`、`UNETLoader`、`LoadImage`、`ModelSamplingAuraFlow`、`VAEDecode`、`easy showAnything`、`LoraLoaderModelOnly`
 
 **缺卡**（4）：`LayerUtility: JoyCaptionBeta1`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Text Concatenate`、`CR SDXL Aspect Ratio`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen_Image2.1_文生图-提示词增强_2101869061239033857.json
+key: 图片生成/文生图/Qwen_Image2.1_文生图-提示词增强_2101869061239033857.json
 name: Qwen_Image2.1_文生图-提示词增强_2101869061239033857
 type: Unknown Workflow
 status: completed
@@ -15,26 +15,24 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen_Image2.1_文生图-提示词增强_2101869061239033857.json
+# 图片生成/文生图/Qwen_Image2.1_文生图-提示词增强_2101869061239033857.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image2.1_文生图-提示词增强_2101869061239033857.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（18 个）：
 - `MarkdownNote`
 - `PreviewAny`
 - `TextEncodeQwenImage21`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `CLIPLoader`
 - `忽略多组孤海`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `SaveImageAdvanced`
 - `SaveImage`
 - `TextGenerate`
@@ -45,25 +43,23 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
-- `seed` = `407992822506572`
-- `steps` = `50`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `407992822506572`
+- `steps` = `50`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **67%**（12/18）
 
-**有卡**：`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`SaveImageAdvanced`、`SaveImage`、`TextGenerate`、`ResolutionSelector`
+**有卡**：`MarkdownNote`、`PreviewAny`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`忽略多组孤海`、`KSampler`、`VAEDecode`、`SaveImageAdvanced`
 
 **缺卡**（1）：`忽略多组孤海`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
 
 ## 学习发现
 

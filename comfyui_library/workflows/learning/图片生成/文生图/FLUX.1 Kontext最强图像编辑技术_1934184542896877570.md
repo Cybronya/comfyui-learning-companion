@@ -1,5 +1,5 @@
 ---
-key: FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json
+key: 图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json
 name: FLUX.1 Kontext最强图像编辑技术_1934184542896877570
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json
+# 图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json`
 
 ## 结构
-
-**生成流程**：Output → Other
 
 **节点**（4 个）：
 - `SaveImage`
@@ -32,5 +30,3 @@ missing: []
 覆盖率 **100%**（4/4）
 
 **有卡**：`SaveImage`、`RH_ComfyFluxKontext`、`DeepTranslatorTextNode`、`LoadImage`
-
-**用到的条目**：LoadImage、RH_ComfyFluxKontext、SaveImage、DeepTranslatorTextNode、sd15-t2i-basic、sd15-t2i-lora、node、Text

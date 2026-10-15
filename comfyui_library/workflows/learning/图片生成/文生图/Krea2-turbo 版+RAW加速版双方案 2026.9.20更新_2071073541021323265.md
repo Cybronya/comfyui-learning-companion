@@ -1,5 +1,5 @@
 ---
-key: Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json
+key: 图片生成/文生图/Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json
 name: Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265
 type: Text To Image
 status: completed
@@ -16,40 +16,38 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1680, "sampler_n
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json
+# 图片生成/文生图/Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Krea2-turbo 版+RAW加速版双方案 2026.9.20更新_2071073541021323265.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（44 个）：
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `SeedVR2LoadVAEModel`
 - `ImageScaleBy`
 - `SeedVR2LoadDiTModel`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `easy clearCacheAll`
 - `SeedVR2VideoUpscaler`
 - `Image Comparer (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `PrimitiveStringMultiline`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
-- `EmptyLatentImage` ★核心
-- `UNETLoader` ★核心
+- `EmptyLatentImage`
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `KSampler`
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `SeedVR2LoadVAEModel`
@@ -58,41 +56,39 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 - `easy clearCacheAll`
 - `SeedVR2VideoUpscaler`
 - `easy int`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `easy int`
 - `CR Text Concatenate`
 - `Text`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `Text`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `Fast Groups Muter (rgthree)`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1680`
 - `batch_size` = `1`
-- `seed` = `587786870124111`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1680`
 - `sampler_name` = `euler_ancestral`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `587786870124111`
+- `steps` = `8`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **80%**（35/44）
 
-**有卡**：`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`SeedVR2LoadVAEModel`、`ImageScaleBy`、`SeedVR2LoadDiTModel`、`VAEDecode`、`SaveImage`、`EmptyLatentImage`、`SeedVR2VideoUpscaler`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`Text`
+**有卡**：`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`SeedVR2LoadVAEModel`、`ImageScaleBy`、`SeedVR2LoadDiTModel`、`VAEDecode`、`SaveImage`、`EmptyLatentImage`、`easy clearCacheAll`、`SeedVR2VideoUpscaler`、`Image Comparer (rgthree)`、`PrimitiveStringMultiline`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`easy int`
 
 **缺卡**（5）：`CR Text Concatenate`、`easy clearCacheAll`、`easy clearCacheAll`、`easy int`、`easy int`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 

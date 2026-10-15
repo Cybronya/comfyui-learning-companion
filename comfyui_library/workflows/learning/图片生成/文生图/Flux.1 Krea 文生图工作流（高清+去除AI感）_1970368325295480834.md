@@ -1,5 +1,5 @@
 ---
-key: Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
+key: 图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
 name: Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834
 type: Unknown Workflow
 status: completed
@@ -15,28 +15,26 @@ parameters: {"batch_size": 1, "cfg": 31, "denoise": "normal", "height": 1920, "s
 discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
-# Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
+# 图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（17 个）：
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `BasicScheduler`
 - `RandomNoise`
-- `SamplerCustomAdvanced` ★核心
-- `KSamplerAdvanced` ★核心
-- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced`
+- `KSamplerAdvanced`
+- `KSamplerSelect`
 - `BasicGuider`
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `CFGZeroStar`
-- `VAEDecode` ★核心
-- `CLIPTextEncode` ★核心
+- `VAEDecode`
+- `CLIPTextEncode`
 - `StringConstantMultiline`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `Lora Loader Stack (rgthree)`
 - `SaveImage`
 - `VAELoader`
@@ -44,25 +42,23 @@ discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用�
 
 ## 关键参数
 
-- `width` = `1080`
-- `height` = `1920`
 - `batch_size` = `1`
-- `seed` = `enable`
-- `steps` = `randomize`
 - `cfg` = `31`
+- `denoise` = `normal`
+- `height` = `1920`
 - `sampler_name` = `2`
 - `scheduler` = `euler`
-- `denoise` = `normal`
+- `seed` = `enable`
+- `steps` = `randomize`
+- `width` = `1080`
 
 ## 知识
 
 覆盖率 **94%**（16/17）
 
-**有卡**：`EmptyLatentImage`、`BasicScheduler`、`RandomNoise`、`SamplerCustomAdvanced`、`KSamplerAdvanced`、`KSamplerSelect`、`BasicGuider`、`CLIPTextEncodeFlux`、`CFGZeroStar`、`VAEDecode`、`CLIPTextEncode`、`StringConstantMultiline`、`UNETLoader`、`SaveImage`、`VAELoader`、`DualCLIPLoader`
+**有卡**：`EmptyLatentImage`、`BasicScheduler`、`RandomNoise`、`SamplerCustomAdvanced`、`KSamplerAdvanced`、`KSamplerSelect`、`BasicGuider`、`CLIPTextEncodeFlux`、`CFGZeroStar`、`VAEDecode`、`CLIPTextEncode`、`StringConstantMultiline`、`UNETLoader`、`Lora Loader Stack (rgthree)`、`SaveImage`、`VAELoader`
 
 **缺卡**（1）：`Lora Loader Stack (rgthree)`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、KSamplerAdvanced、KSamplerSelect、SamplerCustomAdvanced
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Wan2.2 单模低噪写实文生图_1950729804771430402.json
+key: 图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
 name: Wan2.2 单模低噪写实文生图_1950729804771430402
 type: Unknown Workflow
 status: completed
@@ -16,27 +16,25 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA.s
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Wan2.2 单模低噪写实文生图_1950729804771430402.json
+# 图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（26 个）：
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
+- `CLIPTextEncode`
+- `VAEDecode`
+- `LoraLoader`
+- `LoraLoader`
 - `MarkdownNote`
 - `MarkdownNote`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `MarkdownNote`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
 - `ImpactInt`
 - `CFGZeroStarAndInit`
@@ -48,7 +46,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `Note`
 - `SaveImage`
 - `CR Text`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `RH_LLMAPI_NODE`
 - `MarkdownNote`
 
@@ -56,25 +54,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
-- `strength_model` = `0.4000000000000001`
-- `strength_clip` = `0.4000000000000001`
-- `seed` = `66067103546342`
-- `steps` = `8`
 - `cfg` = `1`
+- `denoise` = `1`
+- `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `66067103546342`
+- `steps` = `8`
+- `strength_clip` = `0.4000000000000001`
+- `strength_model` = `0.4000000000000001`
 
 ## 知识
 
 覆盖率 **62%**（16/26）
 
-**有卡**：`CLIPTextEncode`、`VAEDecode`、`LoraLoader`、`CLIPLoader`、`VAELoader`、`KSampler`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CFGZeroStarAndInit`、`SaveImage`、`UNETLoader`、`RH_LLMAPI_NODE`
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`LoraLoader`、`MarkdownNote`、`CLIPLoader`、`VAELoader`、`KSampler`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CFGZeroStarAndInit`、`CR Text`
 
 **缺卡**（3）：`CR Text`、`CR Text`、`CR Text Concatenate`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、CFGZeroStarAndInit、EmptyHunyuanLatentVideo
 
 ## 参数体检
 

@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1+SeedVR2+DLSS5级联 人像写真写实高清放大_2104292002979471361.json
+key: 图片生成/文生图/Qwen Image 2.1+SeedVR2+DLSS5级联 人像写真写实高清放大_2104292002979471361.json
 name: Qwen Image 2.1+SeedVR2+DLSS5级联 人像写真写实高清放大_2104292002979471361
 type: Text To Image
 status: completed
@@ -16,48 +16,46 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image 2.1+SeedVR2+DLSS5级联 人像写真写实高清放大_2104292002979471361.json
+# 图片生成/文生图/Qwen Image 2.1+SeedVR2+DLSS5级联 人像写真写实高清放大_2104292002979471361.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1+SeedVR2+DLSS5级联 人像写真写实高清放大_2104292002979471361.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（71 个）：
 - `PrimitiveInt`
 - `ComfyMathExpression`
 - `SeedVR2Preprocess`
-- `VAEEncodeTiled` ★核心
+- `VAEEncodeTiled`
 - `PrimitiveInt`
 - `SeedVR2Conditioning`
 - `ComfyMathExpression`
 - `ImageMergeTileList`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `ComfyMathExpression`
 - `GetImageSize`
 - `PrimitiveFloat`
-- `KSampler` ★核心
+- `KSampler`
 - `SeedVR2PostProcessing`
 - `SplitImageToTileList`
-- `SamplerCustomAdvanced` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced`
 - `CLIPLoader`
 - `ResolutionSelector`
 - `BasicScheduler`
 - `CFGGuider`
 - `CFGGuider`
-- `KSamplerSelect` ★核心
-- `EmptyLatentImage` ★核心
+- `KSamplerSelect`
+- `EmptyLatentImage`
 - `SplitSigmas`
 - `RandomNoise`
-- `VAEDecode` ★核心
-- `KSamplerSelect` ★核心
+- `VAEDecode`
+- `KSamplerSelect`
 - `ImageScale`
 - `SaveImageAdvanced`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `Seed (rgthree)`
 - `ResizeImageMaskNode`
@@ -69,30 +67,30 @@ discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中
 - `SaveImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -101,25 +99,23 @@ discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **86%**（61/71）
 
-**有卡**：`ComfyMathExpression`、`SeedVR2Preprocess`、`VAEEncodeTiled`、`SeedVR2Conditioning`、`ImageMergeTileList`、`VAEDecodeTiled`、`GetImageSize`、`KSampler`、`SeedVR2PostProcessing`、`SplitImageToTileList`、`SamplerCustomAdvanced`、`CLIPLoader`、`ResolutionSelector`、`BasicScheduler`、`CFGGuider`、`KSamplerSelect`、`EmptyLatentImage`、`SplitSigmas`、`RandomNoise`、`VAEDecode`、`ImageScale`、`SaveImageAdvanced`、`UNETLoader`、`VAELoader`、`ResizeImageMaskNode`、`TextEncodeQwenImage21`、`ImageBlend`、`RH_DLSS5Enhance`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`PrimitiveInt`、`ComfyMathExpression`、`SeedVR2Preprocess`、`VAEEncodeTiled`、`SeedVR2Conditioning`、`ImageMergeTileList`、`VAEDecodeTiled`、`GetImageSize`、`PrimitiveFloat`、`KSampler`、`SeedVR2PostProcessing`、`SplitImageToTileList`、`SamplerCustomAdvanced`、`CLIPLoader`、`ResolutionSelector`、`BasicScheduler`、`CFGGuider`、`KSamplerSelect`、`EmptyLatentImage`、`SplitSigmas`、`RandomNoise`、`VAEDecode`、`ImageScale`、`SaveImageAdvanced`、`UNETLoader`、`VAELoader`、`Seed (rgthree)`、`ResizeImageMaskNode`、`LayerUtility: HLFrequencyDetailRestore`、`TextEncodeQwenImage21`、`ImageBlend`、`Image Comparer (rgthree)`、`RH_DLSS5Enhance`、`SaveImage`、`孤海注释`、`LoraLoaderModelOnly`
 
 **缺卡**（2）：`LayerUtility: HLFrequencyDetailRestore`、`Seed (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

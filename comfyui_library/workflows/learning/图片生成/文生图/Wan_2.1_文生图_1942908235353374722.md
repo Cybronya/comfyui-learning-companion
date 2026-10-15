@@ -1,5 +1,5 @@
 ---
-key: Wan_2.1_文生图_1942908235353374722.json
+key: 图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json
 name: Wan_2.1_文生图_1942908235353374722
 type: Unknown Workflow
 status: completed
@@ -15,25 +15,23 @@ parameters: {"cfg": 1, "denoise": 1, "lora_name": "Wan21_T2V_14B_lightx2v_cfg_st
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan_2.1_文生图_1942908235353374722.json
+# 图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan_2.1_文生图_1942908235353374722.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（25 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `easy clearCacheAll`
 - `easy cleanGpuUsed`
 - `VAELoader`
 - `ModelSamplingSD3`
 - `FastFilmGrain`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Label (rgthree)`
 - `MarkdownNote`
 - `Label (rgthree)`
@@ -43,10 +41,10 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `Label (rgthree)`
 - `Label (rgthree)`
 - `Note`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `ModelPatchTorchSettings`
-- `CLIPTextEncode` ★核心
-- `UnetLoaderGGUF` ★核心
+- `CLIPTextEncode`
+- `UnetLoaderGGUF`
 - `CLIPLoader`
 - `PathchSageAttentionKJ`
 
@@ -54,25 +52,23 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `664505851744406`
-- `steps` = `10`
 - `cfg` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `beta`
 - `denoise` = `1`
 - `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
-- `strength_model` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `seed` = `664505851744406`
+- `steps` = `10`
 - `strength_clip` = `1`
+- `strength_model` = `1`
 
 ## 知识
 
 覆盖率 **60%**（15/25）
 
-**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSampler`、`SaveImage`、`VAELoader`、`ModelSamplingSD3`、`FastFilmGrain`、`VAEDecode`、`WanVideoNAG`、`LoraLoader`、`ModelPatchTorchSettings`、`UnetLoaderGGUF`、`CLIPLoader`、`PathchSageAttentionKJ`
+**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSampler`、`SaveImage`、`easy clearCacheAll`、`easy cleanGpuUsed`、`VAELoader`、`ModelSamplingSD3`、`FastFilmGrain`、`VAEDecode`、`Label (rgthree)`、`MarkdownNote`、`WanVideoNAG`
 
 **缺卡**（7）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`easy cleanGpuUsed`、`easy clearCacheAll`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyHunyuanLatentVideo、LoraLoader、LoraLoader
 
 ## 学习发现
 

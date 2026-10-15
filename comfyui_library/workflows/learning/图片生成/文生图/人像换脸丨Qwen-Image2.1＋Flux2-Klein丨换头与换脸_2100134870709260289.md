@@ -1,5 +1,5 @@
 ---
-key: 人像换脸丨Qwen-Image2.1＋Flux2-Klein丨换头与换脸_2100134870709260289.json
+key: 图片生成/文生图/人像换脸丨Qwen-Image2.1＋Flux2-Klein丨换头与换脸_2100134870709260289.json
 name: 人像换脸丨Qwen-Image2.1＋Flux2-Klein丨换头与换脸_2100134870709260289
 type: Text To Image
 status: completed
@@ -16,45 +16,43 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 人像换脸丨Qwen-Image2.1＋Flux2-Klein丨换头与换脸_2100134870709260289.json
+# 图片生成/文生图/人像换脸丨Qwen-Image2.1＋Flux2-Klein丨换头与换脸_2100134870709260289.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/人像换脸丨Qwen-Image2.1＋Flux2-Klein丨换头与换脸_2100134870709260289.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（37 个）：
 - `ComfySwitchNode`
-- `VAEDecode` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `KSampler`
 - `QwenImage21Cache`
 - `TextEncodeQwenImage21`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ResolutionSelector`
 - `JjkText`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ReferenceLatent`
 - `ReferenceLatent`
 - `CLIPLoader`
 - `VAELoader`
-- `VAEEncode` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `VAEEncode`
+- `KSampler`
+- `VAEDecode`
 - `EmptyFlux2LatentImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ReferenceLatent`
 - `ReferenceLatent`
 - `ImageResizeKJv2`
 - `ImageResizeKJv2`
-- `VAEEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEEncode`
+- `LoraLoaderModelOnly`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `LoadImage`
@@ -67,23 +65,21 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `229768560102089`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `229768560102089`
+- `steps` = `4`
 - `width` = `1024`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **86%**（32/37）
 
-**有卡**：`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`ResolutionSelector`、`LoadImage`、`CLIPTextEncode`、`ReferenceLatent`、`VAEEncode`、`EmptyFlux2LatentImage`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
+**有卡**：`ComfySwitchNode`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`ResolutionSelector`、`JjkText`、`LoadImage`、`CLIPTextEncode`、`ReferenceLatent`、`VAEEncode`、`EmptyFlux2LatentImage`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`SaveImage`、`Image Comparer (rgthree)`
 
 ## 参数体检
 

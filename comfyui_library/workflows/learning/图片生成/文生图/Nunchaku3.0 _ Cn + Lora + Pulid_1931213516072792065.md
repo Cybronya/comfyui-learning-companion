@@ -1,5 +1,5 @@
 ---
-key: Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
+key: 图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
 name: Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065
 type: Unknown Workflow
 status: completed
@@ -15,23 +15,21 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.8000000000000002, "height
 discoveries: [次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明, 次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的通用知识，没有该节点自己的说明]
 ---
 
-# Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
+# 图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku3.0 _ Cn + Lora + Pulid_1931213516072792065.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Output → Other
-
 **节点**（36 个）：
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `DualCLIPLoader`
 - `NunchakuFluxDiTLoader`
 - `Anything Everywhere`
 - `Anything Everywhere`
 - `Anything Everywhere`
-- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced`
 - `Reroute`
 - `workflow>HAOTU-k采样+vae`
 - `workflow>HAOTU-k采样+vae`
@@ -39,7 +37,7 @@ discoveries: [次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的�
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `Anything Everywhere`
 - `NunchakuPulidApply`
 - `NunchakuPulidLoader`
@@ -51,32 +49,30 @@ discoveries: [次要节点 `workflow>HAOTU-k采样+vae` 仅有 KSampler/VAE 的�
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ControlNetLoader`
 - `AIO_Preprocessor`
 - `LoadImage`
 - `Anything Everywhere`
 - `FluxGuidance`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Fast Groups Bypasser (rgthree)`
 - `JjkText`
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1536`
 - `batch_size` = `1`
 - `controlnet_strength` = `0.8000000000000002`
+- `height` = `1536`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **56%**（20/36）
 
-**有卡**：`VAELoader`、`EmptyLatentImage`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`ControlNetApplyAdvanced`、`NunchakuFluxLoraLoader`、`NunchakuPulidApply`、`NunchakuPulidLoader`、`CropFace`、`LoadImage`、`SaveImage`、`CLIPTextEncode`、`ControlNetLoader`、`AIO_Preprocessor`、`FluxGuidance`
+**有卡**：`VAELoader`、`EmptyLatentImage`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`Anything Everywhere`、`ControlNetApplyAdvanced`、`Reroute`、`workflow>HAOTU-k采样+vae`、`NunchakuFluxLoraLoader`、`NunchakuPulidApply`、`NunchakuPulidLoader`、`CropFace`
 
 **缺卡**（4）：`workflow>HAOTU-k采样+vae`、`workflow>HAOTU-k采样+vae`、`workflow>HAOTU-k采样+vae`、`workflow>HAOTU-k采样+vae`
-
-**用到的条目**：VAELoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced、ControlNetLoader、FluxGuidance、NunchakuFluxLoraLoader
 
 ## 学习发现
 

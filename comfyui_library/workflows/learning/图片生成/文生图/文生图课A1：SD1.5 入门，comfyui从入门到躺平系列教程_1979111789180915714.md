@@ -1,5 +1,5 @@
 ---
-key: 文生图课A1：SD1.5 入门，comfyui从入门到躺平系列教程_1979111789180915714.json
+key: 图片生成/文生图/文生图课A1：SD1.5 入门，comfyui从入门到躺平系列教程_1979111789180915714.json
 name: 文生图课A1：SD1.5 入门，comfyui从入门到躺平系列教程_1979111789180915714
 type: Text To Image
 status: completed
@@ -14,47 +14,43 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 3, "checkpoint": "v1-5-pruned-emaonly.safetensors", "denoise": 1, "height": 512, "sampler_name": "dpmpp_2m_sde", "scheduler": "karras", "seed": 123456789, "steps": 28, "width": 512}
 ---
 
-# 文生图课A1：SD1.5 入门，comfyui从入门到躺平系列教程_1979111789180915714.json
+# 图片生成/文生图/文生图课A1：SD1.5 入门，comfyui从入门到躺平系列教程_1979111789180915714.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图课A1：SD1.5 入门，comfyui从入门到躺平系列教程_1979111789180915714.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（12 个）：
 - `SaveImage`
 - `MarkdownNote`
 - `MarkdownNote`
-- `EmptyLatentImage` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `MarkdownNote`
 - `LoadImage`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `MarkdownNote`
-- `KSampler` ★核心
+- `KSampler`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `width` = `512`
-- `height` = `512`
 - `batch_size` = `1`
-- `checkpoint` = `v1-5-pruned-emaonly.safetensors`
-- `seed` = `123456789`
-- `steps` = `28`
 - `cfg` = `3`
+- `checkpoint` = `v1-5-pruned-emaonly.safetensors`
+- `denoise` = `1`
+- `height` = `512`
 - `sampler_name` = `dpmpp_2m_sde`
 - `scheduler` = `karras`
-- `denoise` = `1`
+- `seed` = `123456789`
+- `steps` = `28`
+- `width` = `512`
 
 ## 知识
 
 覆盖率 **67%**（8/12）
 
-**有卡**：`SaveImage`、`EmptyLatentImage`、`CLIPTextEncode`、`VAEDecode`、`LoadImage`、`CheckpointLoaderSimple`、`KSampler`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、LoadImage、SaveImage、sd15-t2i-basic
+**有卡**：`SaveImage`、`MarkdownNote`、`EmptyLatentImage`、`CLIPTextEncode`、`VAEDecode`

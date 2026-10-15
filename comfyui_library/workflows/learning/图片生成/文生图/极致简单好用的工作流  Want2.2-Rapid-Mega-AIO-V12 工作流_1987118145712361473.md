@@ -1,5 +1,5 @@
 ---
-key: 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
+key: 图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
 name: 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473
 type: Unknown Workflow
 status: completed
@@ -16,25 +16,23 @@ parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v12.safetensors
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
+# 图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/极致简单好用的工作流  Want2.2-Rapid-Mega-AIO-V12 工作流_1987118145712361473.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Other
-
 **节点**（17 个）：
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `WanVideoVACEStartToEndFrame`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `VHS_VideoCombine`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `WanVaceToVideo`
 - `PrimitiveInt`
 - `Note`
@@ -45,23 +43,21 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `checkpoint` = `wan2.2-rapid-mega-aio-nsfw-v12.safetensors`
-- `seed` = `6456545463455`
-- `steps` = `4`
 - `cfg` = `1`
+- `checkpoint` = `wan2.2-rapid-mega-aio-nsfw-v12.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `euler_ancestral`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `6456545463455`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **71%**（12/17）
 
-**有卡**：`CheckpointLoaderSimple`、`WanVideoVACEStartToEndFrame`、`CLIPTextEncode`、`LoadImage`、`KSampler`、`VHS_VideoCombine`、`ModelSamplingSD3`、`VAEDecode`、`WanVaceToVideo`、`LoadAudio`
+**有卡**：`CheckpointLoaderSimple`、`WanVideoVACEStartToEndFrame`、`CLIPTextEncode`、`LoadImage`、`KSampler`、`VHS_VideoCombine`、`ModelSamplingSD3`、`VAEDecode`、`WanVaceToVideo`、`PrimitiveInt`
 
 **缺卡**（1）：`Label (rgthree)`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LoadAudio、ModelSamplingSD3、VHS_VideoCombine
 
 ## 参数体检
 

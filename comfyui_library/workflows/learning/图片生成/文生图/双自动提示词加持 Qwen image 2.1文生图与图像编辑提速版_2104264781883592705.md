@@ -1,5 +1,5 @@
 ---
-key: 双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json
+key: 图片生成/文生图/双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json
 name: 双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705
 type: Text To Image
 status: completed
@@ -16,28 +16,26 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json
+# 图片生成/文生图/双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/双自动提示词加持 Qwen image 2.1文生图与图像编辑提速版_2104264781883592705.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（173 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `UNETLoader`
+- `EmptyLatentImage`
+- `KSampler`
 - `TextEncodeQwenImage21`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `QwenImage21Cache`
 - `CLIPLoader`
@@ -146,7 +144,7 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `GetNode`
 - `ComfySwitchNode`
 - `GetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `ComfySwitchNode`
 - `SetNode`
 - `GetNode`
@@ -166,35 +164,35 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `LoadImage`
 - `llama_cpp_model_loader`
 - `PrimitiveBoolean`
-- `KSampler` ★核心
-- `LoraLoaderBypassModelOnly` ★核心
+- `KSampler`
+- `LoraLoaderBypassModelOnly`
 - `Any Switch (rgthree)`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `KSampler`
+- `EmptyLatentImage`
 - `JjkText`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `solarL_SaveImagesToZip`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -203,25 +201,23 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 关键参数
 
-- `width` = `80`
-- `height` = `80`
 - `batch_size` = `1`
-- `seed` = `598626327129635`
-- `steps` = `4`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `width` = `80`
 
 ## 知识
 
 覆盖率 **46%**（80/173）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`VAEDecode`、`UNETLoader`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`、`QwenImage21Cache`、`StringConcatenate`、`TextGenerate`、`JsonExtractString`、`BatchImagesNode`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`ImageScaleToMaxDimension`、`ResolutionSelector`、`PrimitiveBoolean`、`llama_cpp_model_loader`、`LoraLoaderBypassModelOnly`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+**有卡**：`CLIPLoader`、`VAELoader`、`VAEDecode`、`UNETLoader`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`、`QwenImage21Cache`、`StringConcatenate`、`TextGenerate`、`JsonExtractString`、`BatchImagesNode`、`Any Switch (rgthree)`、`PreviewAny`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`SetNode`、`GetNode`
 
 **缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

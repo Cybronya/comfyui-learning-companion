@@ -1,5 +1,5 @@
 ---
-key: Flux.1-dev-lora-JoyC Beta-Y-Workflow_1934815242520043521.json
+key: 图片生成/文生图/Flux.1-dev-lora-JoyC Beta-Y-Workflow_1934815242520043521.json
 name: Flux.1-dev-lora-JoyC Beta-Y-Workflow_1934815242520043521
 type: Unknown Workflow
 status: completed
@@ -15,32 +15,30 @@ parameters: {"batch_size": 1, "height": 1024, "lora_name": "AWPortraitCN_2.safet
 discoveries: [次要节点 `DrawText+` 知识库中没有该节点类型的任何知识, 次要节点 `SDXL Resolutions (JPS)` 仅有 Checkpoint/Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# Flux.1-dev-lora-JoyC Beta-Y-Workflow_1934815242520043521.json
+# 图片生成/文生图/Flux.1-dev-lora-JoyC Beta-Y-Workflow_1934815242520043521.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1-dev-lora-JoyC Beta-Y-Workflow_1934815242520043521.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（26 个）：
 - `BasicGuider`
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `RandomNoise`
 - `ShowText|pysssss`
 - `JJC_JoyCaption_Custom`
 - `ShowText|pysssss`
 - `JJC_JoyCaption`
 - `ShowText|pysssss`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `Reroute`
-- `EmptyLatentImage` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `EmptyLatentImage`
+- `SamplerCustomAdvanced`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SDXL Resolutions (JPS)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ShowText|pysssss`
 - `SeargePromptCombiner`
 - `DualCLIPLoader`
@@ -48,29 +46,27 @@ discoveries: [次要节点 `DrawText+` 知识库中没有该节点类型的任�
 - `LoadImage`
 - `Fast Groups Bypasser (rgthree)`
 - `DrawText+`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `VAELoader`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `width` = `768`
-- `height` = `1024`
 - `batch_size` = `1`
+- `height` = `1024`
 - `lora_name` = `AWPortraitCN_2.safetensors`
-- `strength_model` = `0.8500000000000002`
 - `strength_clip` = `0.8500000000000002`
+- `strength_model` = `0.8500000000000002`
+- `width` = `768`
 
 ## 知识
 
 覆盖率 **69%**（18/26）
 
-**有卡**：`BasicGuider`、`CLIPTextEncodeFlux`、`RandomNoise`、`JJC_JoyCaption_Custom`、`JJC_JoyCaption`、`KSamplerSelect`、`BasicScheduler`、`EmptyLatentImage`、`SamplerCustomAdvanced`、`SaveImage`、`VAEDecode`、`UNETLoader`、`SeargePromptCombiner`、`DualCLIPLoader`、`LoadImage`、`LoraLoader`、`VAELoader`
+**有卡**：`BasicGuider`、`CLIPTextEncodeFlux`、`RandomNoise`、`ShowText|pysssss`、`JJC_JoyCaption_Custom`、`JJC_JoyCaption`、`KSamplerSelect`、`BasicScheduler`、`Reroute`、`EmptyLatentImage`、`SamplerCustomAdvanced`、`SaveImage`、`VAEDecode`、`SDXL Resolutions (JPS)`、`UNETLoader`
 
 **缺卡**（2）：`DrawText+`、`SDXL Resolutions (JPS)`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、EmptyLatentImage、LoadImage、KSamplerSelect、SamplerCustomAdvanced、CLIPTextEncodeFlux
 
 ## 学习发现
 

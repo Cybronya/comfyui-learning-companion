@@ -1,5 +1,5 @@
 ---
-key: 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
+key: 图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
 name: 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR Text, CR Text Concatenate, ImageSmartSharpen+, LayerUtility: ImageS
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `InjectLatentNoise+` 仅有 VAE 的通用知识，没有该节点自己的说明]
 ---
 
-# 😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
+# 图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/😯Flux.1 nunchaku+Redux 图片参考 图生图_垫图_洗图_1914029963945934850.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（68 个）：
 - `GetNode`
@@ -29,10 +27,10 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `CLIPVisionEncode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
-- `DetailDaemonSamplerNode` ★核心
+- `VAEDecode`
+- `DetailDaemonSamplerNode`
 - `BasicGuider`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `RepeatLatentBatch`
 - `GetNode`
 - `GetNode`
@@ -56,21 +54,21 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `UpscaleModelLoader`
 - `GetNode`
 - `LatentPixelScale`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `InjectLatentNoise+`
 - `RandomNoise`
 - `FluxGuidance`
 - `ConditioningZeroOut`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
 - `SetNode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `GetNode`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `SetNode`
 - `DualCLIPLoader`
 - `NunchakuTextEncoderLoaderV2`
@@ -78,13 +76,13 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetNode`
 - `SetNode`
 - `RebatchLatents`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `NunchakuFluxDiTLoader`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `StyleModelApply`
 - `StyleModelLoader`
 - `CLIPVisionLoader`
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `BasicScheduler`
 - `ShowText|pysssss`
@@ -96,11 +94,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 覆盖率 **51%**（35/68）
 
-**有卡**：`CLIPVisionEncode`、`VAEDecode`、`DetailDaemonSamplerNode`、`BasicGuider`、`KSamplerSelect`、`RepeatLatentBatch`、`StyleModelApply`、`StyleModelLoader`、`CLIPVisionLoader`、`LoadImage`、`UpscaleModelLoader`、`LatentPixelScale`、`VAEEncode`、`RandomNoise`、`FluxGuidance`、`ConditioningZeroOut`、`CLIPTextEncode`、`VAELoader`、`NunchakuFluxLoraLoader`、`DualCLIPLoader`、`NunchakuTextEncoderLoaderV2`、`RebatchLatents`、`NunchakuFluxDiTLoader`、`SamplerCustomAdvanced`、`BasicScheduler`、`AILab_QwenVL`、`SaveImage`
+**有卡**：`GetNode`、`SetNode`、`CR Text`、`CLIPVisionEncode`、`VAEDecode`、`DetailDaemonSamplerNode`、`BasicGuider`、`KSamplerSelect`、`RepeatLatentBatch`、`StyleModelApply`、`StyleModelLoader`、`CLIPVisionLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`ImageSmartSharpen+`、`UpscaleModelLoader`、`LatentPixelScale`、`VAEEncode`、`InjectLatentNoise+`
 
 **缺卡**（6）：`CR Text`、`CR Text Concatenate`、`ImageSmartSharpen+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`InjectLatentNoise+`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、DetailDaemonSamplerNode、FluxGuidance、KSamplerSelect
 
 ## 学习发现
 

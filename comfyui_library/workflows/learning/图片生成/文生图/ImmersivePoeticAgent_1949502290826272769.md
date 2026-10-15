@@ -1,5 +1,5 @@
 ---
-key: ImmersivePoeticAgent_1949502290826272769.json
+key: 图片生成/文生图/ImmersivePoeticAgent_1949502290826272769.json
 name: ImmersivePoeticAgent_1949502290826272769
 type: Unknown Workflow
 status: completed
@@ -15,18 +15,16 @@ parameters: {"checkpoint": "flux1-dev-fp8-with_clip_vae.safetensors", "lora_name
 discoveries: [次要节点 `CR Overlay Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Overlay Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Vignette Filter` 知识库中没有该节点类型的任何知识, 次要节点 `LayerFilter: MotionBlur` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
-# ImmersivePoeticAgent_1949502290826272769.json
+# 图片生成/文生图/ImmersivePoeticAgent_1949502290826272769.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/ImmersivePoeticAgent_1949502290826272769.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（62 个）：
 - `Reroute`
 - `EmptySD3LatentImage`
-- `KSamplerSelect` ★核心
+- `KSamplerSelect`
 - `BasicScheduler`
 - `easy cleanGpuUsed`
 - `RandomNoise`
@@ -39,18 +37,18 @@ discoveries: [次要节点 `CR Overlay Text` 知识库中没有该节点类型�
 - `easy cleanGpuUsed`
 - `easy cleanGpuUsed`
 - `Reroute`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ACEStepGen`
 - `easy cleanGpuUsed`
 - `Reroute`
 - `Reroute`
 - `TeaCache`
 - `MultiLinePromptACES`
-- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced`
 - `easy cleanGpuUsed`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `JjkText`
-- `CheckpointLoaderSimple` ★核心
+- `CheckpointLoaderSimple`
 - `ShowText`
 - `GetTextFromJson`
 - `GetTextFromJson`
@@ -70,7 +68,7 @@ discoveries: [次要节点 `CR Overlay Text` 知识库中没有该节点类型�
 - `SaveImage`
 - `ETN_CropImage`
 - `CR Vignette Filter`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `CR Overlay Text`
 - `ImageScaleBy`
 - `SaveImage`
@@ -91,20 +89,18 @@ discoveries: [次要节点 `CR Overlay Text` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `lora_name` = `纪实摄影 F.1_v1.0.safetensors`
-- `strength_model` = `0.8000000000000002`
-- `strength_clip` = `1.0100000000000002`
 - `checkpoint` = `flux1-dev-fp8-with_clip_vae.safetensors`
+- `lora_name` = `纪实摄影 F.1_v1.0.safetensors`
+- `strength_clip` = `1.0100000000000002`
+- `strength_model` = `0.8000000000000002`
 
 ## 知识
 
 覆盖率 **60%**（37/62）
 
-**有卡**：`EmptySD3LatentImage`、`KSamplerSelect`、`BasicScheduler`、`RandomNoise`、`ModelSamplingFlux`、`BasicGuider`、`FluxGuidance`、`CLIPTextEncode`、`ACEStepGen`、`TeaCache`、`MultiLinePromptACES`、`SamplerCustomAdvanced`、`LoraLoader`、`CheckpointLoaderSimple`、`ShowText`、`GetTextFromJson`、`LoadJsonFromText`、`ReplaceText`、`TextCombinerTwo`、`RH_LLMAPI_NODE`、`SaveAudio`、`RH_Captioner`、`GenerationParameters`、`SaveImage`、`ETN_CropImage`、`VAEDecode`、`ImageScaleBy`、`LoadImage`、`BrightnessNode`
+**有卡**：`Reroute`、`EmptySD3LatentImage`、`KSamplerSelect`、`BasicScheduler`、`easy cleanGpuUsed`、`RandomNoise`、`ModelSamplingFlux`、`PrimitiveNode`、`BasicGuider`、`Text Concatenate`、`FluxGuidance`、`CLIPTextEncode`、`ACEStepGen`、`TeaCache`、`MultiLinePromptACES`、`SamplerCustomAdvanced`、`LoraLoader`、`JjkText`、`CheckpointLoaderSimple`、`ShowText`、`GetTextFromJson`、`LoadJsonFromText`、`ReplaceText`、`TextCombinerTwo`
 
 **缺卡**（11）：`CR Overlay Text`、`CR Overlay Text`、`CR Vignette Filter`、`LayerFilter: MotionBlur`、`Text Concatenate`、`Text Concatenate`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
-
-**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、LoraLoader
 
 ## 学习发现
 

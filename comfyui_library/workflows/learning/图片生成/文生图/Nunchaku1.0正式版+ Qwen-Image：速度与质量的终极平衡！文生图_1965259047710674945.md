@@ -1,5 +1,5 @@
 ---
-key: Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json
+key: 图片生成/文生图/Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json
 name: Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945
 type: Unknown Workflow
 status: completed
@@ -14,40 +14,36 @@ missing: []
 parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 1030870340626888, "steps": 30}
 ---
 
-# Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json
+# 图片生成/文生图/Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku1.0正式版+ Qwen-Image：速度与质量的终极平衡！文生图_1965259047710674945.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（11 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `NunchakuQwenImageDiTLoader`
 - `SaveImage`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Text`
 - `EmptySD3LatentImage`
 
 ## 关键参数
 
-- `seed` = `1030870340626888`
-- `steps` = `30`
 - `cfg` = `2.5`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `1030870340626888`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`KSampler`、`VAEDecode`、`NunchakuQwenImageDiTLoader`、`SaveImage`、`Text`、`EmptySD3LatentImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、SaveImage、EmptySD3LatentImage、ModelSamplingAuraFlow

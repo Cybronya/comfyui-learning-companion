@@ -1,5 +1,5 @@
 ---
-key: Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
+key: 图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
 name: Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306
 type: Unknown Workflow
 status: completed
@@ -14,25 +14,23 @@ missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 2048, "sampler_name": "euler", "scheduler": "simple", "seed": 314159268, "steps": 25, "width": 2048}
 ---
 
-# Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
+# 图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 Viggle 4-Step 文生图工作流_2106002263507554306.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（14 个）：
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
+- `EmptyLatentImage`
+- `KSampler`
 - `ResolutionSelector`
 - `MarkdownNote`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
+- `LoraLoaderModelOnly`
+- `VAEDecode`
 - `SaveImage`
 - `QwenImage21Cache`
 - `ModelSamplingFlux`
@@ -40,20 +38,18 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 2048, "sampler_n
 
 ## 关键参数
 
-- `width` = `2048`
-- `height` = `2048`
 - `batch_size` = `1`
-- `seed` = `314159268`
-- `steps` = `25`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `2048`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `314159268`
+- `steps` = `25`
+- `width` = `2048`
 
 ## 知识
 
 覆盖率 **93%**（13/14）
 
-**有卡**：`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`SaveImage`、`QwenImage21Cache`、`ModelSamplingFlux`、`ModelAttentionBackend`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPLoader、EmptyLatentImage
+**有卡**：`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`MarkdownNote`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`SaveImage`、`QwenImage21Cache`、`ModelSamplingFlux`

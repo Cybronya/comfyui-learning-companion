@@ -1,5 +1,5 @@
 ---
-key: wan2.2 multitalk 数字人_1956947526549999617.json
+key: 图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json
 name: wan2.2 multitalk 数字人_1956947526549999617
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [SimpleMath+]
 discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2 multitalk 数字人_1956947526549999617.json
+# 图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Process → Other
 
 **节点**（49 个）：
 - `WanVideoBlockSwap`
@@ -57,7 +55,7 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 - `RH_GetAudioDuration`
 - `GetNode`
 - `WanVideoClipVisionEncode`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `ImageResizeKJv2`
 - `WanVideoImageToVideoEncode`
 - `LoadImage`
@@ -69,7 +67,7 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `MultiTalkModelLoader`
 - `GetNode`
 
@@ -77,11 +75,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 覆盖率 **59%**（29/49）
 
-**有卡**：`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`MultiTalkModelLoader`、`DownloadAndLoadWav2VecModel`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`CLIPVisionLoader`、`WanVideoVAELoader`、`MultiTalkWav2VecEmbeds`、`AudioCrop`、`RH_GetAudioDuration`、`WanVideoClipVisionEncode`、`WanVideoSampler`、`ImageResizeKJv2`、`WanVideoImageToVideoEncode`、`LoadImage`、`WanVideoTextEncode`、`LoadAudio`、`VHS_VideoCombine`、`Int`
+**有卡**：`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`MultiTalkModelLoader`、`SetNode`、`GetNode`、`DownloadAndLoadWav2VecModel`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`SimpleMath+`、`CLIPVisionLoader`、`WanVideoVAELoader`
 
 **缺卡**（1）：`SimpleMath+`
-
-**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode
 
 ## 学习发现
 

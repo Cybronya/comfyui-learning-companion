@@ -1,5 +1,5 @@
 ---
-key: 【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json
+key: 图片生成/文生图/【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json
 name: 【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553
 type: Text To Image
 status: completed
@@ -16,26 +16,24 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json
+# 图片生成/文生图/【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（13 个）：
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `KSampler`
+- `EmptyLatentImage`
+- `LoraLoaderModelOnly`
 - `NunchakuQwenImageDiTLoader`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `VAELoader`
 
@@ -43,23 +41,21 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `seed` = `248921332779208`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1024`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `248921332779208`
+- `steps` = `4`
 - `width` = `768`
-- `height` = `1024`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`SaveImage`、`VAEDecode`、`LoadImage`、`ModelSamplingAuraFlow`、`KSampler`、`EmptyLatentImage`、`LoraLoaderModelOnly`、`NunchakuQwenImageDiTLoader`、`UNETLoader`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 

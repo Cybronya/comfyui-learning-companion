@@ -1,5 +1,5 @@
 ---
-key: Qwen image2.1全能工作流_2103756014926516225.json
+key: 图片生成/文生图/Qwen image2.1全能工作流_2103756014926516225.json
 name: Qwen image2.1全能工作流_2103756014926516225
 type: Unknown Workflow
 status: completed
@@ -15,16 +15,14 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1080, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `ki_宫格拼图简易版` 知识库中没有该节点类型的任何知识]
 ---
 
-# Qwen image2.1全能工作流_2103756014926516225.json
+# 图片生成/文生图/Qwen image2.1全能工作流_2103756014926516225.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen image2.1全能工作流_2103756014926516225.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（73 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `SetNode`
 - `LayerUtility: ImageScaleByAspectRatio V2`
@@ -37,7 +35,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `LayerUtility: PurgeVRAM V2`
 - `LayerUtility: PurgeVRAM V2`
 - `SaveImage`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `GetNode`
@@ -59,11 +57,11 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `GetNode`
 - `QwenImage21Cache`
 - `TextEncodeQwenImage21`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
 - `Fast Groups Bypasser (rgthree)`
 - `LayerUtility: ImageScaleByAspectRatio V2`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `GetNode`
 - `GetImageSize`
 - `SetNode`
@@ -100,25 +98,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `901254853794380`
-- `steps` = `40`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1080`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `901254853794380`
+- `steps` = `40`
 - `width` = `1920`
-- `height` = `1080`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **33%**（24/73）
 
-**有卡**：`VAEDecode`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`KSampler`、`EmptyLatentImage`、`GetImageSize`、`AIO_Preprocessor`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`
+**有卡**：`VAEDecode`、`LayerUtility: ImageScaleByAspectRatio V2`、`SetNode`、`LayerUtility: PurgeVRAM V2`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`GetNode`、`LoadImage`、`easy showAnything`
 
 **缺卡**（17）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`ki_宫格拼图简易版`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
 
 ## 学习发现
 

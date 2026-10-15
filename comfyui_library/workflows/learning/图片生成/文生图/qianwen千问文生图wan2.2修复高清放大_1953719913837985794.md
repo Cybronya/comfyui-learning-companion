@@ -1,5 +1,5 @@
 ---
-key: qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
+key: 图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
 name: qianwen千问文生图wan2.2修复高清放大_1953719913837985794
 type: Unknown Workflow
 status: completed
@@ -15,21 +15,19 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "WAN2.2-LowNoise_SmartphoneS
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识]
 ---
 
-# qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
+# 图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qianwen千问文生图wan2.2修复高清放大_1953719913837985794.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（44 个）：
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `Reroute`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ImageUpscaleWithModel`
 - `ImageFromBatch`
 - `ImageFromBatch`
@@ -43,27 +41,27 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `ImageFromBatch`
 - `PreviewImage`
 - `UpscaleModelLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
 - `CLIPLoader`
 - `VAELoader`
 - `ImageScaleToTotalPixels`
-- `LoraLoader` ★核心
-- `LoraLoader` ★核心
-- `KSampler` ★核心
+- `LoraLoader`
+- `LoraLoader`
+- `KSampler`
 - `ImageConcanateOfUtils`
 - `ImageConcanateOfUtils`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoader` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoader`
 - `SaveImage`
 - `Image Comparer (rgthree)`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
+- `KSampler`
+- `CLIPTextEncode`
 - `ModelSamplingAuraFlow`
 - `Reroute`
 - `CR Text`
@@ -73,25 +71,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `lora_name` = `WAN2.2-LowNoise_SmartphoneSnapshotPhotoReality_v3_by-AI_Characters.safetensors`
-- `strength_model` = `0.7000000000000002`
-- `strength_clip` = `0.7000000000000002`
-- `seed` = `722313145982736`
-- `steps` = `20`
 - `cfg` = `3.5`
+- `denoise` = `1`
+- `lora_name` = `WAN2.2-LowNoise_SmartphoneSnapshotPhotoReality_v3_by-AI_Characters.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `722313145982736`
+- `steps` = `20`
+- `strength_clip` = `0.7000000000000002`
+- `strength_model` = `0.7000000000000002`
 
 ## 知识
 
 覆盖率 **86%**（38/44）
 
-**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CFGZeroStarAndInit`、`VAEEncode`、`VAEDecode`、`ImageUpscaleWithModel`、`ImageFromBatch`、`ImageConcanateOfUtils`、`UpscaleModelLoader`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`ImageScaleToTotalPixels`、`LoraLoader`、`KSampler`、`CLIPTextEncode`、`SaveImage`、`EmptySD3LatentImage`、`ModelSamplingAuraFlow`
+**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CFGZeroStarAndInit`、`VAEEncode`、`Reroute`、`VAEDecode`、`ImageUpscaleWithModel`、`ImageFromBatch`、`Image Tiled`、`ImageConcanateOfUtils`、`PreviewImage`、`UpscaleModelLoader`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`ImageScaleToTotalPixels`、`LoraLoader`、`KSampler`、`CLIPTextEncode`、`SaveImage`、`Image Comparer (rgthree)`、`EmptySD3LatentImage`
 
 **缺卡**（2）：`CR Text`、`Image Tiled`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、CFGZeroStarAndInit、VAEEncode
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+key: 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
 name: wan2.2 WanMoeKsampler 文生图_1955849490886479874
 type: Unknown Workflow
 status: completed
@@ -15,42 +15,40 @@ parameters: {"cfg": 12, "denoise": "res_2s", "sampler_name": 3, "scheduler": 1, 
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
+# 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（18 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
 - `VAELoader`
 - `EmptyHunyuanLatentVideo`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ImpactInt`
 - `ImpactInt`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
-- `VAEDecode` ★核心
-- `WanMoeKSampler` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `VAEDecode`
+- `WanMoeKSampler`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `PathchSageAttentionKJ`
 - `SaveImage`
 - `CR Text`
 
 ## 关键参数
 
-- `seed` = `0.875`
-- `steps` = `randomize`
 - `cfg` = `12`
+- `denoise` = `res_2s`
 - `sampler_name` = `3`
 - `scheduler` = `1`
-- `denoise` = `res_2s`
+- `seed` = `0.875`
+- `steps` = `randomize`
 
 ## 知识
 
@@ -59,8 +57,6 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 **有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAEDecode`、`WanMoeKSampler`、`SaveImage`
 
 **缺卡**（1）：`CR Text`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

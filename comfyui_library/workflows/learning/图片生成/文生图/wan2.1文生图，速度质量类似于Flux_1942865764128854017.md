@@ -1,5 +1,5 @@
 ---
-key: wan2.1文生图，速度质量类似于Flux_1942865764128854017.json
+key: 图片生成/文生图/wan2.1文生图，速度质量类似于Flux_1942865764128854017.json
 name: wan2.1文生图，速度质量类似于Flux_1942865764128854017
 type: Text To Image
 status: completed
@@ -15,28 +15,26 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1088, "lora_name
 discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# wan2.1文生图，速度质量类似于Flux_1942865764128854017.json
+# 图片生成/文生图/wan2.1文生图，速度质量类似于Flux_1942865764128854017.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1文生图，速度质量类似于Flux_1942865764128854017.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（44 个）：
 - `PathchSageAttentionKJ`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptyHunyuanLatentVideo`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `easy clearCacheAll`
 - `easy cleanGpuUsed`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Label (rgthree)`
 - `MarkdownNote`
 - `Label (rgthree)`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Label (rgthree)`
 - `Note`
 - `Label (rgthree)`
@@ -44,26 +42,26 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `FastFilmGrain`
 - `WanVideoNAG`
 - `VAELoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `SaveImage`
 - `easy clearCacheAll`
 - `easy cleanGpuUsed`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Note`
 - `Label (rgthree)`
 - `Label (rgthree)`
 - `FastFilmGrain`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ModelSamplingSD3`
 - `WanVideoNAG`
 - `DualCLIPLoader`
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `UNETLoader`
 - `VAELoader`
-- `KSampler` ★核心
-- `EmptyLatentImage` ★核心
+- `KSampler`
+- `EmptyLatentImage`
 - `Fast Groups Bypasser (rgthree)`
 - `DeepTranslatorTextNode`
 - `Note`
@@ -73,28 +71,26 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `seed` = `506939822677643`
-- `steps` = `20`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1088`
+- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `1`
-- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
-- `strength_model` = `1`
+- `seed` = `506939822677643`
+- `steps` = `20`
 - `strength_clip` = `1`
+- `strength_model` = `1`
 - `width` = `1920`
-- `height` = `1088`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **61%**（27/44）
 
-**有卡**：`PathchSageAttentionKJ`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSampler`、`SaveImage`、`ModelSamplingSD3`、`VAEDecode`、`FastFilmGrain`、`WanVideoNAG`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoader`、`DualCLIPLoader`、`EmptyLatentImage`、`DeepTranslatorTextNode`
+**有卡**：`PathchSageAttentionKJ`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSampler`、`SaveImage`、`easy clearCacheAll`、`easy cleanGpuUsed`、`ModelSamplingSD3`、`VAEDecode`、`Label (rgthree)`、`MarkdownNote`、`Note`、`FastFilmGrain`、`WanVideoNAG`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoader`
 
 **缺卡**（12）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Text Multiline`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy clearCacheAll`、`easy clearCacheAll`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

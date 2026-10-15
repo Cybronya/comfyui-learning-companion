@@ -1,5 +1,5 @@
 ---
-key: Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
+key: 图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
 name: Qwen Image InstantX Controlnet深度控制V1_1960762268713717762
 type: Unknown Workflow
 status: completed
@@ -16,61 +16,57 @@ parameters: {"cfg": 1, "controlnet_strength": 0.7500000000000001, "denoise": 1, 
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
+# 图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen Image InstantX Controlnet深度控制V1_1960762268713717762.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（28 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `UNETLoader`
+- `LoraLoaderModelOnly`
 - `PreviewImage`
 - `SaveLatent`
 - `ModelSamplingAuraFlow`
 - `ControlNetLoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ImageConcanate`
 - `DepthAnything_V2`
 - `DownloadAndLoadDepthAnythingV2Model`
 - `PreviewImage`
 - `LoadImage`
-- `CLIPTextEncode` ★核心
-- `ControlNetApplySD3` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncode`
+- `ControlNetApplySD3`
+- `KSampler`
 - `CFGNorm`
 - `SetUnionControlNetType`
 - `EmptySD3LatentImage`
 - `SeedVR2BlockSwap`
 - `PreviewImage`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 - `SeedVR2GGUF`
 - `SaveImage`
 - `SaveImage`
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
 
 ## 关键参数
 
-- `controlnet_strength` = `0.7500000000000001`
-- `seed` = `397623419622816`
-- `steps` = `8`
 - `cfg` = `1`
+- `controlnet_strength` = `0.7500000000000001`
+- `denoise` = `1`
 - `sampler_name` = `res_2s`
 - `scheduler` = `beta57`
-- `denoise` = `1`
+- `seed` = `397623419622816`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **89%**（25/28）
 
-**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`SaveLatent`、`ModelSamplingAuraFlow`、`ControlNetLoader`、`VAEDecode`、`ImageConcanate`、`DepthAnything_V2`、`DownloadAndLoadDepthAnythingV2Model`、`LoadImage`、`ControlNetApplySD3`、`KSampler`、`CFGNorm`、`SetUnionControlNetType`、`EmptySD3LatentImage`、`SeedVR2BlockSwap`、`SeedVR2GGUF`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`PreviewImage`、`SaveLatent`、`ModelSamplingAuraFlow`、`ControlNetLoader`、`VAEDecode`、`ImageConcanate`、`DepthAnything_V2`、`DownloadAndLoadDepthAnythingV2Model`、`LoadImage`、`ControlNetApplySD3`、`KSampler`、`CFGNorm`、`SetUnionControlNetType`、`EmptySD3LatentImage`、`SeedVR2BlockSwap`、`SeedVR2GGUF`
 
 ## 参数体检
 

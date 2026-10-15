@@ -1,5 +1,5 @@
 ---
-key: Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
+key: 图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
 name: Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993
 type: Unknown Workflow
 status: completed
@@ -16,42 +16,38 @@ parameters: {"cfg": 1, "checkpoint": "flux1-schnell-fp8.safetensors", "denoise":
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
+# 图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux_Schnell_Checkpoint文生图官方工作流_1930158858272980993.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（9 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
-- `KSampler` ★核心
+- `KSampler`
 - `Note`
-- `CheckpointLoaderSimple` ★核心
-- `CLIPTextEncode` ★核心
-- `VAEDecode` ★核心
+- `CheckpointLoaderSimple`
+- `CLIPTextEncode`
+- `VAEDecode`
 - `PreviewImage`
 - `SaveImage`
 
 ## 关键参数
 
-- `seed` = `82479110408550`
-- `steps` = `4`
 - `cfg` = `1`
+- `checkpoint` = `flux1-schnell-fp8.safetensors`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
-- `checkpoint` = `flux1-schnell-fp8.safetensors`
+- `seed` = `82479110408550`
+- `steps` = `4`
 
 ## 知识
 
 覆盖率 **78%**（7/9）
 
-**有卡**：`CLIPTextEncode`、`EmptySD3LatentImage`、`KSampler`、`CheckpointLoaderSimple`、`VAEDecode`、`SaveImage`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、SaveImage、EmptySD3LatentImage、sd15-t2i-basic、sd15-t2i-lora
+**有卡**：`CLIPTextEncode`、`EmptySD3LatentImage`、`KSampler`、`Note`、`CheckpointLoaderSimple`、`VAEDecode`
 
 ## 参数体检
 

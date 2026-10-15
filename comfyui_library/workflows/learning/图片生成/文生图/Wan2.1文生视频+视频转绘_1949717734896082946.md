@@ -1,5 +1,5 @@
 ---
-key: Wan2.1文生视频+视频转绘_1949717734896082946.json
+key: 图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json
 name: Wan2.1文生视频+视频转绘_1949717734896082946
 type: Unknown Workflow
 status: completed
@@ -13,13 +13,11 @@ patterns: []
 missing: []
 ---
 
-# Wan2.1文生视频+视频转绘_1949717734896082946.json
+# 图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.1文生视频+视频转绘_1949717734896082946.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Process → Output → Other
 
 **节点**（19 个）：
 - `WanVideoDecode`
@@ -30,7 +28,7 @@ missing: []
 - `WanVideoTextEncodeSingle`
 - `WanVideoVAELoader`
 - `WanVideoApplyNAG`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `WanVideoContextOptions`
 - `LoadWanVideoT5TextEncoder`
 - `WanVideoLoraSelect`
@@ -46,6 +44,4 @@ missing: []
 
 覆盖率 **95%**（18/19）
 
-**有卡**：`WanVideoDecode`、`WanVideoTextEncodeSingle`、`ImageResizeKJv2`、`WanVideoVACEEncode`、`WanVideoVAELoader`、`WanVideoApplyNAG`、`WanVideoSampler`、`WanVideoContextOptions`、`LoadWanVideoT5TextEncoder`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`Int`、`VHS_VideoCombine`、`VHS_LoadVideo`、`DWPreprocessor`
-
-**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、WanVideoVACEEncode、WanVideoLoraSelect、ImageResizeKJv2
+**有卡**：`WanVideoDecode`、`WanVideoTextEncodeSingle`、`ImageResizeKJv2`、`PreviewImage`、`WanVideoVACEEncode`、`WanVideoVAELoader`、`WanVideoApplyNAG`、`WanVideoSampler`、`WanVideoContextOptions`、`LoadWanVideoT5TextEncoder`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`Int`、`VHS_VideoCombine`、`VHS_LoadVideo`

@@ -1,5 +1,5 @@
 ---
-key: Qwen2.1 Edit All In One 大合集｜文生图图生图高清放大一站搞定_2103658316122640386.json
+key: 图片生成/文生图/Qwen2.1 Edit All In One 大合集｜文生图图生图高清放大一站搞定_2103658316122640386.json
 name: Qwen2.1 Edit All In One 大合集｜文生图图生图高清放大一站搞定_2103658316122640386
 type: Text To Image
 status: completed
@@ -16,13 +16,11 @@ parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_n
 discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `Light-Tool: RGBA2RGB` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSizeBySide` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy prompt` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy stylesSelector` 仅有 LoRA 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Qwen2.1 Edit All In One 大合集｜文生图图生图高清放大一站搞定_2103658316122640386.json
+# 图片生成/文生图/Qwen2.1 Edit All In One 大合集｜文生图图生图高清放大一站搞定_2103658316122640386.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen2.1 Edit All In One 大合集｜文生图图生图高清放大一站搞定_2103658316122640386.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（484 个）：
 - `GetNode`
@@ -48,7 +46,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
@@ -72,7 +70,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `ImageUpscaleWithModel`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `SetNode`
 - `SetNode`
@@ -106,7 +104,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Seed (rgthree)`
 - `GetNode`
 - `SetNode`
@@ -156,7 +154,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `ModelPassThrough`
 - `SetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `GetNode`
 - `GetNode`
@@ -179,7 +177,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `LayerUtility: ImageReelComposit`
 - `SetNode`
 - `GetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
@@ -200,7 +198,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `LayerUtility: ImageReelComposit`
 - `SetNode`
 - `SetNode`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetNode`
 - `SetNode`
 - `SetNode`
@@ -294,11 +292,11 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `PreviewImage`
 - `SeedVR2LoadDiTModel`
 - `SeedVR2LoadDiTModel`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 - `PreviewImage`
 - `SaveImage`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
 - `LoadImage`
 - `SeedVR2VideoUpscaler`
@@ -328,16 +326,16 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `LoadImage`
 - `LoadImage`
 - `GetNode`
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
+- `EmptyLatentImage`
+- `EmptyLatentImage`
 - `ComfySwitchNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
-- `EmptyLatentImage` ★核心
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
+- `EmptyLatentImage`
 - `ComfySwitchNode`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ComfySwitchNode`
 - `LayerUtility: TextBox`
 - `JoinStringMulti`
@@ -352,9 +350,9 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `ModelPassThrough`
 - `GetNode`
 - `Light-Tool: RGBA2RGB`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `InpaintStitchImproved`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ToBinaryMask`
 - `LoadImage`
 - `LayerUtility: TextBox`
@@ -368,12 +366,12 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `LayerUtility: TextBox`
 - `easy stylesSelector`
 - `VOSR2ModelLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `VAELoader`
-- `VAEEncodeTiled` ★核心
+- `VAEEncodeTiled`
 - `JoinImageWithAlpha`
 - `SeedVR2Preprocess`
-- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled`
 - `PlaySound|pysssss`
 - `SaveImage`
 - `Image Comparer (rgthree)`
@@ -384,14 +382,14 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `UpscaleModelLoader`
 - `ImageScaleToTotalPixels`
-- `KSampler` ★核心
+- `KSampler`
 - `easy promptLine`
 - `LoadImage`
-- `KSampler` ★核心
+- `KSampler`
 - `ModelSamplingAuraFlow`
 - `CFGNorm`
 - `ComfySwitchNode`
-- `KSampler` ★核心
+- `KSampler`
 - `SaveImage`
 - `LoadImage`
 - `TextEncodeQwenImage21`
@@ -399,7 +397,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `LayerUtility: TextBox`
 - `SaveImage`
 - `InpaintCropImproved`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
 - `PreviewImage`
 - `PreviewImage`
@@ -444,7 +442,7 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `GetNode`
 - `ImageCompositeMasked`
 - `SetNode`
-- `KSampler` ★核心
+- `KSampler`
 - `GetNode`
 - `GetNode`
 - `LayerUtility: ImageReel`
@@ -468,71 +466,69 @@ discoveries: [次要节点 `Bookmark (rgthree)` 知识库中没有该节点类�
 - `ResolutionSelector`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `EmptyLatentImage`
+- `KSampler`
+- `VAEDecode`
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `CLIPTextEncode`
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `seed` = `598626327129635`
-- `steps` = `4`
+- `batch_size` = `1`
 - `cfg` = `4.5`
+- `denoise` = `1`
+- `height` = `80`
 - `sampler_name` = `er_sde`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
 - `width` = `80`
-- `height` = `80`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **35%**（171/484）
 
-**有卡**：`FluxKontextMultiReferenceLatentMethod`、`VAEDecode`、`ImageUpscaleWithModel`、`ConditioningZeroOut`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelPassThrough`、`GetImageSize`、`JoinImageWithAlpha`、`FluxKontextImageScale`、`SaveImage`、`LoadImage`、`SeedVR2LoadVAEModel`、`TTP_Image_Tile_Batch`、`TTP_Image_Assy`、`ImageStitch`、`SeedVR2LoadDiTModel`、`KSampler`、`SeedVR2VideoUpscaler`、`TTP_Tile_image_size`、`UpscaleModelLoader`、`ImageScaleToTotalPixels`、`ImageScale`、`llama_cpp_unload_model`、`EmptyLatentImage`、`JoinStringMulti`、`CLIPLoader`、`VAELoader`、`InpaintStitchImproved`、`UNETLoader`、`ToBinaryMask`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`QwenImage21Cache`、`VOSR2ModelLoader`、`VAEEncodeTiled`、`SeedVR2Preprocess`、`VAEDecodeTiled`、`VOSR2Upscale`、`LensBlur`、`ModelSamplingAuraFlow`、`CFGNorm`、`TextEncodeQwenImage21`、`ResolutionSelector`、`InpaintCropImproved`、`llama_cpp_instruct_adv`、`SeedVR2Conditioning`、`SeedVR2PostProcessing`、`ResizeImageMaskNode`、`QwenMultiangleCameraNode`、`AIO_Preprocessor`、`ColorMatchV2`、`ImageCompositeMasked`、`ImagePadForOutpaint`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
+**有卡**：`GetNode`、`SetNode`、`FluxKontextMultiReferenceLatentMethod`、`VAEDecode`、`ImageUpscaleWithModel`、`ConditioningZeroOut`、`Seed (rgthree)`、`PlaySound|pysssss`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`easy getNode`、`easy setNode`、`easy imageBatchToImageList`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelPassThrough`、`Image Comparer (rgthree)`
 
 **缺卡**（73）：`Bookmark (rgthree)`、`Image Blank`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`LayerUtility: TextBox`、`Light-Tool: RGBA2RGB`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy imageBatchToImageList`、`easy imageListToImageBatch`、`easy int`、`easy int`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`MaskPreview+`、`MaskPreview+`、`Seed (rgthree)`、`easy imageSize`、`easy imageSizeBySide`、`easy prompt`、`easy promptConcat`、`easy promptLine`、`easy promptLine`、`easy stylesSelector`
-
-**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
 
 ## 参数体检
 

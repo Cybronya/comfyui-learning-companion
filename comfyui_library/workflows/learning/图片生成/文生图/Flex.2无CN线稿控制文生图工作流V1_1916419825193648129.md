@@ -1,5 +1,5 @@
 ---
-key: Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json
+key: 图片生成/文生图/Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json
 name: Flex.2无CN线稿控制文生图工作流V1_1916419825193648129
 type: Text To Image
 status: completed
@@ -15,31 +15,29 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1256, "sampler_n
 discoveries: [次要节点 `GroundingDinoModelLoader (segment anything2)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json
+# 图片生成/文生图/Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flex.2无CN线稿控制文生图工作流V1_1916419825193648129.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
-
 **节点**（26 个）：
 - `DF_Get_image_size`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `UNETLoader`
 - `Flex2Conditioner`
 - `ApplyFBCacheOnModel`
 - `DualCLIPLoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `VAELoader`
 - `GroundingDinoModelLoader (segment anything2)`
-- `KSampler` ★核心
-- `VAEEncode` ★核心
+- `KSampler`
+- `VAEEncode`
 - `Flex2Conditioner`
 - `ImageScaleToTotalPixels`
 - `ImageConcanate`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `JWImageResizeByLongerSide`
 - `ImageConcanate`
@@ -55,25 +53,23 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything2)` 知识
 
 ## 关键参数
 
-- `width` = `840`
-- `height` = `1256`
 - `batch_size` = `1`
-- `seed` = `726210541184116`
-- `steps` = `30`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1256`
 - `sampler_name` = `deis`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `726210541184116`
+- `steps` = `30`
+- `width` = `840`
 
 ## 知识
 
 覆盖率 **88%**（23/26）
 
-**有卡**：`DF_Get_image_size`、`CLIPTextEncode`、`UNETLoader`、`Flex2Conditioner`、`ApplyFBCacheOnModel`、`DualCLIPLoader`、`EmptyLatentImage`、`VAELoader`、`KSampler`、`VAEEncode`、`ImageScaleToTotalPixels`、`ImageConcanate`、`VAEDecode`、`SaveImage`、`JWImageResizeByLongerSide`、`AnyLineArtPreprocessor_aux`、`LoadImage`
+**有卡**：`DF_Get_image_size`、`CLIPTextEncode`、`UNETLoader`、`Flex2Conditioner`、`ApplyFBCacheOnModel`、`DualCLIPLoader`、`EmptyLatentImage`、`VAELoader`、`GroundingDinoModelLoader (segment anything2)`、`KSampler`、`VAEEncode`、`ImageScaleToTotalPixels`、`ImageConcanate`、`VAEDecode`、`SaveImage`、`JWImageResizeByLongerSide`、`Note Plus (mtb)`、`PreviewImage`
 
 **缺卡**（2）：`GroundingDinoModelLoader (segment anything2)`、`Note Plus (mtb)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、LoadImage、UNETLoader、VAEEncode
 
 ## 学习发现
 

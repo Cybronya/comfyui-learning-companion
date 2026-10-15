@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图(低噪版)_1951900115835498497.json
+key: 图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json
 name: Wan2.2文生图(低噪版)_1951900115835498497
 type: Unknown Workflow
 status: completed
@@ -15,18 +15,16 @@ parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
-# Wan2.2文生图(低噪版)_1951900115835498497.json
+# 图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图(低噪版)_1951900115835498497.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Output → Other
-
 **节点**（17 个）：
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `VAEDecode` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `VAEDecode`
 - `CLIPLoader`
 - `easy clearCacheAll`
 - `easy cleanGpuUsed`
@@ -35,31 +33,29 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `ModelSamplingSD3`
 - `WanVideoNAG`
 - `VAELoader`
-- `UNETLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `UNETLoader`
+- `CLIPTextEncode`
 - `SaveImage`
 - `EmptyHunyuanLatentVideo`
-- `KSampler` ★核心
-- `CLIPTextEncode` ★核心
+- `KSampler`
+- `CLIPTextEncode`
 
 ## 关键参数
 
-- `seed` = `655799065515777`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `beta`
-- `denoise` = `1`
+- `seed` = `655799065515777`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **88%**（15/17）
 
-**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`CLIPLoader`、`FastFilmGrain`、`SaveImage`、`ModelSamplingSD3`、`WanVideoNAG`、`VAELoader`、`UNETLoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSampler`
+**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`CLIPLoader`、`easy clearCacheAll`、`easy cleanGpuUsed`、`FastFilmGrain`、`SaveImage`、`ModelSamplingSD3`、`WanVideoNAG`、`VAELoader`、`UNETLoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`
 
 **缺卡**（2）：`easy cleanGpuUsed`、`easy clearCacheAll`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo
 
 ## 学习发现
 

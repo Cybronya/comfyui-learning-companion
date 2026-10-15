@@ -1,5 +1,5 @@
 ---
-key: 文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json
+key: 图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json
 name: 文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649
 type: Unknown Workflow
 status: completed
@@ -16,25 +16,23 @@ parameters: {"cfg": 1, "denoise": 0.15000000000000002, "sampler_name": "uni_pc",
 discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json
+# 图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图（Qwen-Image + Wan2.1 ）无文字快速版_1956895648390811649.json`
 
 ## 结构
 
-**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（35 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `Note`
 - `ImageSharpen`
 - `EsesImageEffectBloom`
@@ -42,43 +40,41 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 - `UpscaleModelLoader`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `LayerUtility: PurgeVRAM`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ImageScaleToMegapixels`
 - `JWInteger`
 - `JWInteger`
 - `VAELoader`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `CR Prompt Text`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `VAEDecode`
+- `UNETLoader`
 - `ModelSamplingAuraFlow`
 - `CFGNorm`
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `KSampler`
+- `KSampler`
 
 ## 关键参数
 
-- `seed` = `965369974524576`
-- `steps` = `10`
 - `cfg` = `1`
+- `denoise` = `0.15000000000000002`
 - `sampler_name` = `uni_pc`
 - `scheduler` = `simple`
-- `denoise` = `0.15000000000000002`
+- `seed` = `965369974524576`
+- `steps` = `10`
 
 ## 知识
 
 覆盖率 **91%**（32/35）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptySD3LatentImage`、`LoraLoaderModelOnly`、`UNETLoader`、`ImageSharpen`、`EsesImageEffectBloom`、`BetterFilmGrain`、`UpscaleModelLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEEncode`、`VAEDecode`、`ImageScaleToMegapixels`、`JWInteger`、`SaveImage`、`ModelSamplingAuraFlow`、`CFGNorm`、`KSampler`
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptySD3LatentImage`、`LoraLoaderModelOnly`、`UNETLoader`、`Note`、`ImageSharpen`、`EsesImageEffectBloom`、`BetterFilmGrain`、`UpscaleModelLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEEncode`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`ImageScaleToMegapixels`、`JWInteger`、`CR Prompt Text`、`SaveImage`、`ModelSamplingAuraFlow`
 
 **缺卡**（2）：`LayerUtility: PurgeVRAM`、`CR Prompt Text`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、CFGNorm
 
 ## 参数体检
 

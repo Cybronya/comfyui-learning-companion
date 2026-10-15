@@ -1,5 +1,5 @@
 ---
-key: Nunchaku-Qwen-image-edit-plus-2509_1971430770592137218.json
+key: 图片生成/文生图/Nunchaku-Qwen-image-edit-plus-2509_1971430770592137218.json
 name: Nunchaku-Qwen-image-edit-plus-2509_1971430770592137218
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: []
 parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 671, "steps": 50}
 ---
 
-# Nunchaku-Qwen-image-edit-plus-2509_1971430770592137218.json
+# 图片生成/文生图/Nunchaku-Qwen-image-edit-plus-2509_1971430770592137218.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-image-edit-plus-2509_1971430770592137218.json`
 
 ## 结构
-
-**生成流程**：Model → Sampling → Decode → Process → Output → Other
 
 **节点**（27 个）：
 - `LoadImage`
@@ -29,7 +27,7 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 - `LoadImage`
 - `TextEncodeQwenImageEditPlus`
 - `NunchakuQwenImageDiTLoader`
-- `KSampler` ★核心
+- `KSampler`
 - `LoadImage`
 - `ModelSamplingAuraFlow`
 - `CFGNorm`
@@ -39,7 +37,7 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 - `GetImageSize`
 - `LoadImage`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `ImageScaleToTotalPixels`
 - `ImageStitch`
 - `ImageScaleToTotalPixels`
@@ -53,17 +51,15 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 ## 关键参数
 
-- `seed` = `671`
-- `steps` = `50`
 - `cfg` = `4`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `671`
+- `steps` = `50`
 
 ## 知识
 
 覆盖率 **89%**（24/27）
 
-**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImageEditPlus`、`NunchakuQwenImageDiTLoader`、`KSampler`、`ModelSamplingAuraFlow`、`CFGNorm`、`EmptySD3LatentImage`、`ImageScaleToTotalPixels`、`DWPreprocessor`、`GetImageSize`、`SaveImage`、`VAEDecode`、`ImageStitch`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPLoader、LoadImage、CFGNorm、TextEncodeQwenImageEditPlus、EmptySD3LatentImage
+**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImageEditPlus`、`NunchakuQwenImageDiTLoader`、`KSampler`、`ModelSamplingAuraFlow`、`CFGNorm`、`EmptySD3LatentImage`、`ImageScaleToTotalPixels`、`DWPreprocessor`、`GetImageSize`、`SaveImage`、`VAEDecode`、`ImageStitch`、`Reroute`、`PreviewImage`

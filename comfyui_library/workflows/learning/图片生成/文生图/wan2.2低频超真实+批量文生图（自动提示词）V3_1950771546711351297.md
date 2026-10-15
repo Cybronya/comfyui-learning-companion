@@ -1,5 +1,5 @@
 ---
-key: wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
+key: 图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
 name: wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297
 type: Text To Image
 status: completed
@@ -16,66 +16,62 @@ parameters: {"batch_size": 4, "cfg": 1, "denoise": 1, "height": 512, "lora_name"
 discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
+# 图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2低频超真实+批量文生图（自动提示词）V3_1950771546711351297.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（24 个）：
-- `LoraLoader` ★核心
-- `CLIPTextEncode` ★核心
+- `LoraLoader`
+- `CLIPTextEncode`
 - `CLIPLoader`
 - `VAELoader`
 - `CFGZeroStarAndInit`
 - `CR Text Concatenate`
 - `JWInteger`
-- `KSampler` ★核心
-- `VAEDecode` ★核心
+- `KSampler`
+- `VAEDecode`
 - `RH_LLMAPI_NODE`
 - `ShowText|pysssss`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `ShowText|pysssss`
-- `LoraLoader` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoader` ★核心
+- `LoraLoader`
+- `CLIPTextEncode`
+- `LoraLoader`
 - `RHHiddenNodes`
 - `RHHiddenNodes`
 - `Wan_video_prompt_generator`
 - `SaveImage`
 - `Text Multiline`
 - `JWInteger`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Note`
 
 **识别到的模式**：text_to_image、lora
 
 ## 关键参数
 
-- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
-- `strength_model` = `0.4000000000000001`
-- `strength_clip` = `0.4000000000000001`
-- `seed` = `162542999044562`
-- `steps` = `8`
+- `batch_size` = `4`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `512`
+- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `162542999044562`
+- `steps` = `8`
+- `strength_clip` = `0.4000000000000001`
+- `strength_model` = `0.4000000000000001`
 - `width` = `512`
-- `height` = `512`
-- `batch_size` = `4`
 
 ## 知识
 
 覆盖率 **79%**（19/24）
 
-**有卡**：`LoraLoader`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`CFGZeroStarAndInit`、`JWInteger`、`KSampler`、`VAEDecode`、`RH_LLMAPI_NODE`、`UNETLoader`、`RHHiddenNodes`、`Wan_video_prompt_generator`、`SaveImage`、`EmptyLatentImage`
+**有卡**：`LoraLoader`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`CFGZeroStarAndInit`、`CR Text Concatenate`、`JWInteger`、`KSampler`、`VAEDecode`、`RH_LLMAPI_NODE`、`ShowText|pysssss`、`UNETLoader`、`RHHiddenNodes`、`Wan_video_prompt_generator`
 
 **缺卡**（2）：`CR Text Concatenate`、`Text Multiline`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader、CFGZeroStarAndInit
 
 ## 参数体检
 

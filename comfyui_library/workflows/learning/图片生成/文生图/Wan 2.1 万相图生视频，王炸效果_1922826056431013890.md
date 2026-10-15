@@ -1,5 +1,5 @@
 ---
-key: Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json
+key: 图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json
 name: Wan 2.1 万相图生视频，王炸效果_1922826056431013890
 type: Unknown Workflow
 status: completed
@@ -14,13 +14,11 @@ missing: [CR String To Number, FILM VFI, Fast Muter (rgthree), Label (rgthree), 
 discoveries: [次要节点 `CR String To Number` 知识库中没有该节点类型的任何知识, 次要节点 `FILM VFI` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Muter (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json
+# 图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan 2.1 万相图生视频，王炸效果_1922826056431013890.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Sampling → Process → Other
 
 **节点**（58 个）：
 - `easy cleanGpuUsed`
@@ -66,14 +64,14 @@ discoveries: [次要节点 `CR String To Number` 知识库中没有该节点类�
 - `WanVideoTeaCache`
 - `WanVideoEnhanceAVideo`
 - `VHS_VideoCombine`
-- `WanVideoSampler` ★核心
+- `WanVideoSampler`
 - `easy cleanGpuUsed`
 - `WanVideoTextEncode`
 - `WanVideoSLG`
 - `WanVideoExperimentalArgs`
 - `WanVideoDecode`
 - `WanVideoLoraSelect`
-- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadWanVideoClipTextEncoder`
 - `Fast Groups Bypasser (rgthree)`
 - `easy cleanGpuUsed`
 - `WanVideoModelLoader`
@@ -86,11 +84,9 @@ discoveries: [次要节点 `CR String To Number` 知识库中没有该节点类�
 
 覆盖率 **52%**（30/58）
 
-**有卡**：`ImageUpscaleWithModel`、`ImageResizeKJ`、`UpscaleModelLoader`、`VHS_VideoCombine`、`ImageResizeAdvanced`、`Int`、`CM_IntToNumber`、`CM_NumberToInt`、`LoadImage`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoSampler`、`WanVideoTextEncode`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`WanVideoLoraSelect`、`LoadWanVideoClipTextEncoder`、`WanVideoModelLoader`、`WanVideoImageClipEncode`
+**有卡**：`easy cleanGpuUsed`、`ImageUpscaleWithModel`、`FILM VFI`、`ImageResizeKJ`、`UpscaleModelLoader`、`VHS_VideoCombine`、`JjkText`、`ImpactSwitch`、`ImageResizeAdvanced`、`WD14Tagger|pysssss`、`ShowText|pysssss`、`easy textSwitch`、`Int`、`MathExpression|pysssss`、`easy showAnything`、`CM_IntToNumber`、`CR String To Number`
 
 **缺卡**（17）：`CR String To Number`、`FILM VFI`、`Fast Muter (rgthree)`、`Label (rgthree)`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`WD14Tagger|pysssss`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy textSwitch`、`ImageResize+`
-
-**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader
 
 ## 学习发现
 

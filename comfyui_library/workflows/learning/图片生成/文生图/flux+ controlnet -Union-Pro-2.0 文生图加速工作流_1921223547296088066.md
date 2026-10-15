@@ -1,5 +1,5 @@
 ---
-key: flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
+key: 图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
 name: flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066
 type: Unknown Workflow
 status: completed
@@ -15,16 +15,14 @@ parameters: {"cfg": 1, "controlnet_strength": 0.8000000000000002, "denoise": 1, 
 discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
-# flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
+# 图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（29 个）：
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `PreviewImage`
 - `EmptySD3LatentImage`
 - `Note`
@@ -35,20 +33,20 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `easy cleanGpuUsed`
 - `Reroute`
 - `Reroute`
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `VAEDecode`
+- `UNETLoader`
 - `DualCLIPLoader`
 - `EnhancedCompileModel`
 - `VAELoader`
 - `Florence2ModelLoader`
-- `CLIPTextEncodeFlux` ★核心
-- `KSampler` ★核心
+- `CLIPTextEncodeFlux`
+- `KSampler`
 - `ApplyFBCacheOnModel`
 - `EnhancedCompileModel`
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
-- `LoraLoader` ★核心
-- `ControlNetApplySD3` ★核心
+- `LoraLoader`
+- `ControlNetApplySD3`
 - `ControlNetLoader`
 - `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
@@ -58,26 +56,24 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `seed` = `824497853205778`
-- `steps` = `25`
 - `cfg` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `normal`
+- `controlnet_strength` = `0.8000000000000002`
 - `denoise` = `1`
 - `lora_name` = `AWPortraitCN.safetensors`
-- `strength_model` = `0.5000000000000001`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `seed` = `824497853205778`
+- `steps` = `25`
 - `strength_clip` = `1`
-- `controlnet_strength` = `0.8000000000000002`
+- `strength_model` = `0.5000000000000001`
 
 ## 知识
 
 覆盖率 **72%**（21/29）
 
-**有卡**：`CLIPTextEncode`、`EmptySD3LatentImage`、`ApplyFBCacheOnModel`、`Florence2Run`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`EnhancedCompileModel`、`VAELoader`、`Florence2ModelLoader`、`CLIPTextEncodeFlux`、`KSampler`、`SetUnionControlNetType`、`AIO_Preprocessor`、`LoraLoader`、`ControlNetApplySD3`、`ControlNetLoader`、`LoadImage`、`SaveImage`
+**有卡**：`CLIPTextEncode`、`PreviewImage`、`EmptySD3LatentImage`、`Note`、`ApplyFBCacheOnModel`、`Florence2Run`、`ShowText|pysssss`、`ImageResize+`、`easy cleanGpuUsed`、`Reroute`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`EnhancedCompileModel`、`VAELoader`、`Florence2ModelLoader`、`CLIPTextEncodeFlux`、`KSampler`
 
 **缺卡**（2）：`easy cleanGpuUsed`、`ImageResize+`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、LoadImage、ControlNetLoader、SetUnionControlNetType
 
 ## 学习发现
 

@@ -1,5 +1,5 @@
 ---
-key: Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
+key: 图片生成/文生图/Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
 name: Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185
 type: Unknown Workflow
 status: completed
@@ -15,13 +15,11 @@ parameters: {"cfg": 1, "denoise": 0.7000000000000002, "sampler_name": "euler", "
 discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
-# Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
+# 图片生成/文生图/Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev Nunchaku图生图  新人必备_1952289860134621185.json`
 
 ## 结构
-
-**生成流程**：Model → Encode → Condition → Sampling → Output → Other
 
 **节点**（23 个）：
 - `ShowText|pysssss`
@@ -31,18 +29,18 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `Seed Everywhere`
 - `ShowText|pysssss`
 - `StringFunction|pysssss`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `ConditioningZeroOut`
 - `NunchakuTextEncoderLoaderV2`
 - `VAELoader`
 - `Anything Everywhere`
-- `VAEEncode` ★核心
+- `VAEEncode`
 - `DeepTranslatorTextNode`
-- `KSampler (Efficient)` ★核心
+- `KSampler (Efficient)`
 - `ModelSamplingFlux`
 - `NunchakuFluxDiTLoader`
-- `NunchakuFluxLoraLoader` ★核心
-- `NunchakuFluxLoraLoader` ★核心
+- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader`
 - `LayerFilter: HDREffects`
 - `SaveImage`
 - `LoadImage`
@@ -50,22 +48,20 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `535577283025654`
-- `steps` = `30`
 - `cfg` = `1`
+- `denoise` = `0.7000000000000002`
 - `sampler_name` = `euler`
 - `scheduler` = `normal`
-- `denoise` = `0.7000000000000002`
+- `seed` = `535577283025654`
+- `steps` = `30`
 
 ## 知识
 
 覆盖率 **57%**（13/23）
 
-**有卡**：`DeepTranslatorTextNode`、`CLIPTextEncode`、`ConditioningZeroOut`、`NunchakuTextEncoderLoaderV2`、`VAELoader`、`VAEEncode`、`ModelSamplingFlux`、`NunchakuFluxDiTLoader`、`NunchakuFluxLoraLoader`、`SaveImage`、`LoadImage`
+**有卡**：`ShowText|pysssss`、`DeepTranslatorTextNode`、`Anything Everywhere`、`Anything Everywhere3`、`Seed Everywhere`、`StringFunction|pysssss`、`CLIPTextEncode`、`ConditioningZeroOut`、`NunchakuTextEncoderLoaderV2`、`VAELoader`、`VAEEncode`
 
 **缺卡**（4）：`LayerFilter: HDREffects`、`StringFunction|pysssss`、`KSampler (Efficient)`、`Seed Everywhere`
-
-**用到的条目**：VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、VAEEncode、NunchakuTextEncoderLoaderV2、NunchakuFluxLoraLoader、ModelSamplingFlux
 
 ## 学习发现
 

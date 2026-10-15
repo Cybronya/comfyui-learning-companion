@@ -1,5 +1,5 @@
 ---
-key: 绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
+key: 图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
 name: 绝美古风 _ wan2.2 _ 生图_1966158255494000641
 type: Text To Image
 status: completed
@@ -16,29 +16,27 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# 绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
+# 图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（36 个）：
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `VAEDecode` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
-- `KSampler` ★核心
+- `VAEDecode`
+- `VAEDecode`
+- `VAEDecode`
+- `KSampler`
+- `KSampler`
+- `KSampler`
+- `KSampler`
 - `SaveImage`
 - `LayerUtility: JoyCaptionBeta1ExtraOptions`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
@@ -46,19 +44,19 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 - `Anything Everywhere`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `Mute / Bypass Repeater (rgthree)`
 - `JjkText`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Reroute`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `Mute / Bypass Repeater (rgthree)`
 - `Fast Bypasser (rgthree)`
 - `LayerUtility: JoyCaptionBeta1`
 - `ShowText|pysssss`
 - `Fast Bypasser (rgthree)`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
 - `LoadImage`
 - `Anything Everywhere3`
 
@@ -66,25 +64,23 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 关键参数
 
-- `seed` = `267456121467219`
-- `steps` = `8`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `res_2s`
 - `scheduler` = `bong_tangent`
-- `denoise` = `1`
+- `seed` = `267456121467219`
+- `steps` = `8`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **64%**（23/36）
 
-**有卡**：`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`LoadImage`
+**有卡**：`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Text Concatenate (JPS)`、`Anything Everywhere`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`Mute / Bypass Repeater (rgthree)`
 
 **缺卡**（8）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Text Concatenate (JPS)`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 

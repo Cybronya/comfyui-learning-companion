@@ -1,5 +1,5 @@
 ---
-key: F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json
+key: 图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json
 name: F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089
 type: Unknown Workflow
 status: completed
@@ -15,19 +15,17 @@ parameters: {"batch_size": 1, "height": 1024, "lora_name": "精致古装.safeten
 discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
-# F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json
+# 图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（59 个）：
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `PreviewImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `VAELoader`
 - `SaveImage`
 - `PreviewImage`
@@ -47,7 +45,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `PreviewImage`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Reroute`
 - `Reroute`
 - `Reroute`
@@ -58,27 +56,27 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `CannyEdgePreprocessor`
 - `PreviewImage`
 - `VAELoader`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SaveImage`
 - `HEDPreprocessor`
 - `Reroute`
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 - `ApplyFluxControlNet`
-- `XlabsSampler` ★核心
+- `XlabsSampler`
 - `ApplyFluxControlNet`
-- `XlabsSampler` ★核心
+- `XlabsSampler`
 - `ApplyFluxControlNet`
-- `XlabsSampler` ★核心
+- `XlabsSampler`
 - `PreviewImage`
 - `PreviewImage`
-- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux`
 - `LoadImage`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `DualCLIPLoader`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `DepthAnythingV2Preprocessor`
 - `LoadFluxControlNet`
 - `LoadFluxControlNet`
@@ -88,22 +86,20 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 关键参数
 
-- `width` = `1024`
-- `height` = `1024`
 - `batch_size` = `1`
+- `height` = `1024`
 - `lora_name` = `精致古装.safetensors`
-- `strength_model` = `0.8`
 - `strength_clip` = `1`
+- `strength_model` = `0.8`
+- `width` = `1024`
 
 ## 知识
 
 覆盖率 **47%**（28/59）
 
-**有卡**：`CLIPTextEncodeFlux`、`VAEDecode`、`VAELoader`、`SaveImage`、`CannyEdgePreprocessor`、`HEDPreprocessor`、`EmptyLatentImage`、`ApplyFluxControlNet`、`XlabsSampler`、`LoadImage`、`LoraLoader`、`DualCLIPLoader`、`UNETLoader`、`DepthAnythingV2Preprocessor`、`LoadFluxControlNet`
+**有卡**：`CLIPTextEncodeFlux`、`LayerUtility: ImageScaleByAspectRatio V2`、`PreviewImage`、`VAEDecode`、`VAELoader`、`SaveImage`、`Reroute`
 
 **缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、EmptyLatentImage、LoadImage、DepthAnythingV2Preprocessor、ApplyFluxControlNet、CannyEdgePreprocessor
 
 ## 学习发现
 

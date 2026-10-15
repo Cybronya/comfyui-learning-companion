@@ -1,5 +1,5 @@
 ---
-key: F.1+皮克斯_1946922717151158273.json
+key: 图片生成/文生图/F.1+皮克斯_1946922717151158273.json
 name: F.1+皮克斯_1946922717151158273
 type: Unknown Workflow
 status: completed
@@ -14,46 +14,42 @@ missing: []
 parameters: {"batch_size": 1, "height": 1280, "lora_name": "卡皮巴拉Lora.safetensors", "strength_clip": 1, "strength_model": 0.8000000000000002, "width": 720}
 ---
 
-# F.1+皮克斯_1946922717151158273.json
+# 图片生成/文生图/F.1+皮克斯_1946922717151158273.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/F.1+皮克斯_1946922717151158273.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
-
 **节点**（15 个）：
 - `RandomNoise`
-- `KSamplerSelect` ★核心
-- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect`
+- `SamplerCustomAdvanced`
 - `BasicGuider`
 - `Note`
 - `SaveImage`
 - `VAELoader`
-- `CLIPTextEncodeFlux` ★核心
-- `VAEDecode` ★核心
-- `UNETLoader` ★核心
+- `CLIPTextEncodeFlux`
+- `VAEDecode`
+- `UNETLoader`
 - `DualCLIPLoader`
 - `BasicScheduler`
-- `LoraLoader` ★核心
+- `LoraLoader`
 - `SeargePromptCombiner`
-- `EmptyLatentImage` ★核心
+- `EmptyLatentImage`
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `lora_name` = `卡皮巴拉Lora.safetensors`
-- `strength_model` = `0.8000000000000002`
-- `strength_clip` = `1`
-- `width` = `720`
-- `height` = `1280`
 - `batch_size` = `1`
+- `height` = `1280`
+- `lora_name` = `卡皮巴拉Lora.safetensors`
+- `strength_clip` = `1`
+- `strength_model` = `0.8000000000000002`
+- `width` = `720`
 
 ## 知识
 
 覆盖率 **93%**（14/15）
 
-**有卡**：`RandomNoise`、`KSamplerSelect`、`SamplerCustomAdvanced`、`BasicGuider`、`SaveImage`、`VAELoader`、`CLIPTextEncodeFlux`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`BasicScheduler`、`LoraLoader`、`SeargePromptCombiner`、`EmptyLatentImage`
-
-**用到的条目**：VAEDecode、VAELoader、UNETLoader、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、CLIPTextEncodeFlux、LoraLoader
+**有卡**：`RandomNoise`、`KSamplerSelect`、`SamplerCustomAdvanced`、`BasicGuider`、`Note`、`SaveImage`、`VAELoader`、`CLIPTextEncodeFlux`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`BasicScheduler`、`LoraLoader`、`SeargePromptCombiner`

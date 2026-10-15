@@ -1,5 +1,5 @@
 ---
-key: Wan2.2文生图_洗图+角色Lora_1972247141810958337.json
+key: 图片生成/文生图/Wan2.2文生图_洗图+角色Lora_1972247141810958337.json
 name: Wan2.2文生图_洗图+角色Lora_1972247141810958337
 type: Unknown Workflow
 status: completed
@@ -14,23 +14,21 @@ missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
 ---
 
-# Wan2.2文生图_洗图+角色Lora_1972247141810958337.json
+# 图片生成/文生图/Wan2.2文生图_洗图+角色Lora_1972247141810958337.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2文生图_洗图+角色Lora_1972247141810958337.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
-
 **节点**（38 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `KSamplerAdvanced` ★核心
-- `UNETLoader` ★核心
-- `VAEDecode` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
+- `KSamplerAdvanced`
+- `UNETLoader`
+- `VAEDecode`
 - `EmptyHunyuanLatentVideo`
 - `ImageResizeKJv2`
 - `GetNode`
@@ -38,10 +36,10 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "eul
 - `GetNode`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `LoraLoaderModelOnly` ★核心
-- `UNETLoader` ★核心
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly`
+- `UNETLoader`
 - `StringConcatenate`
 - `Int`
 - `SetNode`
@@ -57,24 +55,22 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "eul
 - `Fast Groups Bypasser (rgthree)`
 - `Note`
 - `LoadImage`
-- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced`
 - `SaveImage`
 - `GetNode`
 - `GetNode`
 
 ## 关键参数
 
-- `seed` = `enable`
-- `steps` = `randomize`
 - `cfg` = `8`
+- `denoise` = `simple`
 - `sampler_name` = `1`
 - `scheduler` = `euler`
-- `denoise` = `simple`
+- `seed` = `enable`
+- `steps` = `randomize`
 
 ## 知识
 
 覆盖率 **66%**（25/38）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`UNETLoader`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`ImageResizeKJv2`、`ModelSamplingSD3`、`StringConcatenate`、`Int`、`TextInput_`、`AILab_QwenVL`、`LoadImage`、`SaveImage`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`UNETLoader`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`ImageResizeKJv2`、`GetNode`、`ModelSamplingSD3`、`StringConcatenate`、`Int`、`SetNode`、`TextInput_`

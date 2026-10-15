@@ -1,5 +1,5 @@
 ---
-key: Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946.json
+key: 图片生成/文生图/Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946.json
 name: Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946
 type: Unknown Workflow
 status: completed
@@ -16,21 +16,19 @@ parameters: {"cfg": 1, "controlnet_strength": 1, "denoise": 1, "sampler_name": "
 discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
-# Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946.json
+# 图片生成/文生图/Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946.json`
 
 ## 结构
 
-**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
-
 **节点**（17 个）：
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `SetUnionControlNetType`
-- `CLIPTextEncode` ★核心
-- `ControlNetApplyAdvanced` ★核心
+- `CLIPTextEncode`
+- `ControlNetApplyAdvanced`
 - `CLIPLoader`
-- `CLIPTextEncode` ★核心
+- `CLIPTextEncode`
 - `EmptySD3LatentImage`
 - `VAELoader`
 - `SaveImage`
@@ -39,27 +37,25 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `NunchakuQwenImageDiTLoader`
 - `GLM_Vision_ImageToPrompt`
 - `ModelSamplingAuraFlow`
-- `KSampler` ★核心
+- `KSampler`
 - `PreviewImage`
 - `LoadImage`
 
 ## 关键参数
 
-- `controlnet_strength` = `1`
-- `seed` = `710000615240506`
-- `steps` = `8`
 - `cfg` = `1`
+- `controlnet_strength` = `1`
+- `denoise` = `1`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `710000615240506`
+- `steps` = `8`
 
 ## 知识
 
 覆盖率 **94%**（16/17）
 
-**有卡**：`VAEDecode`、`SetUnionControlNetType`、`CLIPTextEncode`、`ControlNetApplyAdvanced`、`CLIPLoader`、`EmptySD3LatentImage`、`VAELoader`、`SaveImage`、`ControlNetLoader`、`AIO_Preprocessor`、`NunchakuQwenImageDiTLoader`、`GLM_Vision_ImageToPrompt`、`ModelSamplingAuraFlow`、`KSampler`、`LoadImage`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
+**有卡**：`VAEDecode`、`SetUnionControlNetType`、`CLIPTextEncode`、`ControlNetApplyAdvanced`、`CLIPLoader`、`EmptySD3LatentImage`、`VAELoader`、`SaveImage`、`ControlNetLoader`、`AIO_Preprocessor`、`NunchakuQwenImageDiTLoader`、`GLM_Vision_ImageToPrompt`、`ModelSamplingAuraFlow`、`KSampler`、`PreviewImage`
 
 ## 参数体检
 

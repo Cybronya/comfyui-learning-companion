@@ -1,5 +1,5 @@
 ---
-key: Flux最新Controlnet--Flex.2_1916356826265489409.json
+key: 图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
 name: Flux最新Controlnet--Flex.2_1916356826265489409
 type: Text To Image
 status: completed
@@ -15,13 +15,11 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识]
 ---
 
-# Flux最新Controlnet--Flex.2_1916356826265489409.json
+# 图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
 
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json`
 
 ## 结构
-
-**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（33 个）：
 - `ShowText|pysssss`
@@ -29,31 +27,31 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `DualCLIPLoader`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode` ★核心
+- `VAEDecode`
 - `Note`
 - `GetNode`
 - `PreviewImage`
 - `PreviewImage`
 - `Image Comparer (rgthree)`
-- `UNETLoader` ★核心
+- `UNETLoader`
 - `SetNode`
 - `LoadImage`
 - `ImageScaleToTotalPixels`
 - `DWPreprocessor`
 - `RH_Captioner`
 - `Flex2Conditioner`
-- `KSampler` ★核心
+- `KSampler`
 - `Flex2Conditioner`
-- `CLIPTextEncode` ★核心
-- `CLIPTextEncode` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode`
+- `CLIPTextEncode`
+- `LoraLoaderModelOnly`
 - `ImageScaleToTotalPixels`
 - `ImageScaleToTotalPixels`
 - `DownloadAndLoadDepthAnythingV2Model`
 - `PreviewImage`
 - `DepthAnything_V2`
-- `EmptyLatentImage` ★核心
-- `LoraLoaderModelOnly` ★核心
+- `EmptyLatentImage`
+- `LoraLoaderModelOnly`
 - `CR Text`
 - `Note`
 - `Note`
@@ -62,25 +60,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `seed` = `982041649879483`
-- `steps` = `20`
+- `batch_size` = `1`
 - `cfg` = `1`
+- `denoise` = `1`
+- `height` = `1536`
 - `sampler_name` = `euler`
 - `scheduler` = `simple`
-- `denoise` = `1`
+- `seed` = `982041649879483`
+- `steps` = `20`
 - `width` = `1024`
-- `height` = `1536`
-- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **64%**（21/33）
 
-**有卡**：`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`UNETLoader`、`LoadImage`、`ImageScaleToTotalPixels`、`DWPreprocessor`、`RH_Captioner`、`Flex2Conditioner`、`KSampler`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`EmptyLatentImage`
+**有卡**：`ShowText|pysssss`、`LayerUtility: TextJoin`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`Note`、`GetNode`、`PreviewImage`、`Image Comparer (rgthree)`、`UNETLoader`、`SetNode`、`LoadImage`、`ImageScaleToTotalPixels`、`DWPreprocessor`、`RH_Captioner`、`Flex2Conditioner`、`KSampler`、`CLIPTextEncode`
 
 **缺卡**（2）：`CR Text`、`LayerUtility: TextJoin`
-
-**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、EmptyLatentImage、LoadImage、UNETLoader
 
 ## 学习发现
 
