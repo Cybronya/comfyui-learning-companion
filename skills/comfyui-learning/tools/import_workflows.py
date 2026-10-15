@@ -29,6 +29,9 @@ ROOT = Path(__file__).resolve().parents[3]
 LIBRARY = ROOT / "comfyui_library" / "workflows"
 DEFAULT_SOURCE = ROOT / "download" / "workflows-by-tag"
 
+sys.path.insert(0, str(ROOT))
+from engine.workflow_learning.workflow_scanner import SIDECAR_NAMES  # noqa: E402
+
 WORKFLOW_EXTS = {".json", ".png"}
 
 
@@ -54,11 +57,24 @@ def is_comfyui_workflow(path: Path) -> bool:
 
 
 def is_workflow_file(path: Path) -> bool:
+    """
+    是否算一个待导入的 workflow 文件
+
+    伴生文件判定复用扫描器的 SIDECAR_NAMES（整名匹配），**不要写成
+    `name.startswith("_")`** —— 下载的工作流名本身可能以 `_` 开头
+    （`_开源_minimax_h3*.json`、`_T8_SkyReel*.json`、`_全能图片V1*`），
+    那种一刀切会让真实工作流永远进不了库（2026-10-15 连着踩了三次）。
+    """
     return (
         path.suffix.lower() in WORKFLOW_EXTS
-        and not path.name.startswith("_")
+        and path.name.lower() not in SIDECAR_NAMES
         and "learning" not in path.parts
     )
+
+
+def library_name(path: Path) -> str:
+    """入库文件名：去掉前导下划线（平台给的名字有时带 `_`）"""
+    return path.name.lstrip("_")
 
 
 def existing_hashes() -> set:

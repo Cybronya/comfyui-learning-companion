@@ -20,11 +20,19 @@ from typing import List, Dict, Any, Optional
 from .paths import SKIPPED_DIR_NAMES, relative_to_project
 
 
-# 伴生文件前缀（ComfyUI 导出约定）
-SIDECAR_PREFIX = "_"
-
-# 伴生文件名（即便没有下划线前缀也跳过）
-SIDECAR_NAMES = {"workflow.json", "prompt.json"}
+# 伴生文件名（严格整名匹配，不带扩展名猜测）
+# 只有 ComfyUI 导出的这几个是伴生文件：同名有无下划线两种都算
+# (2026-10-15 修)：早前这里用「stem 以 _ 开头」判定，把
+# `_开源_minimax_h3...json`、`_T8_SkyReel*.json`、`_全能图片V1*.json`
+# 这类**真实工作流**全判成伴生文件，导致它们永远扫不到、永远学不了 ——
+# 同一天里连着踩了三次。改成整名匹配：误判面从「任何 _ 开头」缩到
+# 「恰好叫这 4 个名字之一」。
+SIDECAR_NAMES = {
+    "_workflow.json",
+    "_prompt.json",
+    "workflow.json",
+    "prompt.json",
+}
 
 # 扩展名 → 来源类型
 SOURCE_KIND = {
@@ -142,10 +150,14 @@ class WorkflowScanner:
     def _is_sidecar(file: Path) -> bool:
         """
         判断是否为 ComfyUI 导出的伴生文件
+
+        整名匹配 `_workflow.json` / `_prompt.json`（及无下划线的同名）。
+        不能用「stem 以 _ 开头」判定 —— 下载的工作流名本身就可能以
+        `_` 开头（`_开源_xxx.json`、`_T8_SkyReel*.json`、`_全能图片V1*`），
+        那样会把真实工作流误判成伴生文件，永远学不到。
+        (2026-10-15 一天内连着踩了三次才改)
         """
-        if file.stem.startswith(SIDECAR_PREFIX):
-            return True
-        return file.stem.lower() in SIDECAR_NAMES
+        return file.name.lower() in SIDECAR_NAMES
 
 
 # ============================================================

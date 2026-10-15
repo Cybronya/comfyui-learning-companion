@@ -13,6 +13,7 @@
 """
 
 import json
+import re
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 
@@ -25,6 +26,21 @@ DEFAULT_INDEX_PATH = "engine/retrieval/retrieval_store.json"
 KNOWLEDGE_DIR = "comfyui_library/knowledge"
 EXPERIENCE_STORE = "engine/learning_loop/experience_store.json"
 EVOLUTION_STORE = "engine/knowledge_evolution/evolution_store.json"
+
+
+_DECLARED_TYPE_RE = re.compile(r"^##\s*节点类型\s*\n+\s*`([^`\n]+)`", re.M)
+
+
+def _declared_node_type(content: str):
+    """
+    从知识卡正文里取节点类型（`## 节点类型` 后面反引号包起来的那行）
+
+    卡自己声明的节点类型比「猜文件名」可靠：文件名去掉符号后会撞键
+    （GetImageSize+ / GetImageSize / Get Image Size 归一化后都一样），
+    而卡里写的是原名。
+    """
+    m = _DECLARED_TYPE_RE.search(content)
+    return m.group(1).strip() if m else None
 
 
 class KnowledgeRetriever:
@@ -280,14 +296,18 @@ class KnowledgeRetriever:
             except Exception as e:
                 print(f"读取 node_index.json 失败: {e}")
 
-        # 节点类型（小写） -> 真实节点类型。
-        # 必须去掉下划线再比：文件名是 snake_case（clip_text_encode.md），
-        # 而 node_index.json 的键是 PascalCase（CLIPTextEncode），
-        # 只 lower() 的话 clip_text_encode 匹配不上 CLIPTextEncode，
-        # 知识卡的 node 字段会退化成 snake_case 文件名，
-        # 与工作流里的节点类型对不上，覆盖率统计随之全错。
+        # 节点类型（归一化） -> 真实节点类型。
+        # 归一化必须去掉**所有**非字母数字，不只是下划线：节点类型里
+        # 常见 `:`、空格、`+`、`|`、`(` 等（`LayerUtility: xxx V2`、
+        # `CR Text`、`easy cleanGpuUsed`、`Label (rgthree)`、`SimpleMath+`），
+        # 而卡片文件名是去掉它们之后的纯字母数字。只去下划线时这些
+        # 全部匹配不上，node_type 退化成 snake_case 文件名，
+        # 于是「节点有没有卡」判定全错 —— 4800 多张自动起草的卡
+        # 被当成不存在，覆盖率统计从 95%+ 掉到 72%。
+        # (2026-10-15 实测：4994 张卡里只有名字纯字母数字的能映射，
+        #  其余 4000+ 张全部失真)
         node_type_by_stem = {
-            node_type.replace("_", "").lower(): node_type
+            re.sub(r"[^0-9a-z]", "", node_type.lower()): node_type
             for node_type in meta_by_node
         }
 
@@ -302,11 +322,19 @@ class KnowledgeRetriever:
                 print(f"读取知识卡失败 {card}: {e}")
                 continue
 
-            # 真实节点类型。取不到时退回文件名（小写），
-            # 至少保证 item["node"] 非空
-            node_type = node_type_by_stem.get(
-                card.stem.replace("_", "").lower(), card.stem
-            )
+            # 真实节点类型：优先用卡自己声明的 `## 节点类型`（最权威），
+            # 再退回「文件名归一化 → node_index 键」匹配，最后退回文件名。
+            # 只用文件名会有两类错：
+            #   1. 名字带 `:`/空格/`+` 的节点（LayerUtility: xxx V2、CR Text、
+            #      SimpleMath+、Label (rgthree)）与去掉符号的文件名对不上；
+            #   2. 归一化撞键：GetImageSize+ / GetImageSize / Get Image Size
+            #      归一化后都是 getimagesize，dict 覆盖只会留下一个。
+            #      卡内声明没有歧义，所以优先级最高。
+            node_type = _declared_node_type(content)
+            if node_type is None or node_type not in meta_by_node:
+                node_type = node_type_by_stem.get(
+                    re.sub(r"[^0-9a-z]", "", card.stem.lower()), card.stem
+                )
             meta = meta_by_node.get(node_type, {})
 
             item = {

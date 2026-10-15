@@ -65,12 +65,18 @@ TODO(待验证)：ComfyUI 内置，还是 custom_nodes？
 
 
 def find_workflows(root: Path) -> list[Path]:
-    """递归收集 workflow：PNG（内嵌元数据）+ JSON；排除 _ 开头的提取产物。"""
+    """递归收集 workflow：PNG（内嵌元数据）+ JSON；排除 ComfyUI 伴生文件。
+
+    注意伴生判定是整名匹配（_workflow.json / _prompt.json），
+    不是「任何 _ 开头」—— 后者会把名字带下划线的真实工作流漏掉。
+    """
+    from engine.workflow_learning.workflow_scanner import SIDECAR_NAMES
+
     found: list[Path] = []
     for p in sorted(root.rglob("*")):
         if p.suffix.lower() not in (".json", ".png"):
             continue
-        if p.name.startswith("_"):  # _prompt.json / _workflow.json 等提取产物
+        if p.name.lower() in SIDECAR_NAMES:
             continue
         if p.name.startswith("workflow_index"):
             continue

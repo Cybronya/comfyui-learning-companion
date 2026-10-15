@@ -29,6 +29,11 @@ ROOT = Path(__file__).resolve().parents[4]
 sys.path.insert(0, str(ROOT))
 
 from engine.workflow_learning.ignore_nodes import is_ignored  # noqa: E402
+# 伴生文件判定复用引擎定义（曾在此处写 startswith("_")，
+# 把 _ 开头的真实工作流漏掉，节点永远建不了卡）
+from engine.workflow_learning.workflow_scanner import (  # noqa: E402
+    SIDECAR_NAMES,
+)
 
 WORKFLOW_DIR = ROOT / "comfyui_library" / "workflows"
 NODES_DIR = ROOT / "comfyui_library" / "knowledge" / "nodes"
@@ -97,11 +102,12 @@ def collect_usage(targets, files=None):
 
     paths = files if files is not None else [
         p for p in WORKFLOW_DIR.rglob("*.json")
-        if "learning" not in p.parts and not p.name.startswith("_")
+        if "learning" not in p.parts
+        and p.name.lower() not in SIDECAR_NAMES
     ]
 
     for path in paths:
-        if "learning" in path.parts or path.name.startswith("_"):
+        if "learning" in path.parts or path.name.lower() in SIDECAR_NAMES:
             continue
         try:
             data = json.loads(path.read_text(encoding="utf-8-sig"))

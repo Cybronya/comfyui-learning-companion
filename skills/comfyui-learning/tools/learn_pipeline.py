@@ -37,6 +37,10 @@ IDS_DIR = ROOT / "download" / "ids-by-tag"
 DL_DIR = ROOT / "download" / "workflows-by-tag"
 PY = sys.executable
 
+# 伴生文件判定（与引擎扫描器共用一份定义。别各自写一套：
+# 2026-10-15 一天内因为这个「_ 开头一刀切」连踩三次坑）
+from engine.workflow_learning.workflow_scanner import SIDECAR_NAMES  # noqa: E402
+
 
 def sh(cmd, **kw):
     """跑子进程，继承输出；失败不抛（阶段自行判断成果）"""
@@ -49,7 +53,10 @@ def snapshot_library():
     import hashlib
     snap = {}
     for p in WORKFLOWS.rglob("*.json"):
-        if "learning" in p.parts or p.name.startswith("_"):
+        # 只跳真正的 ComfyUI 伴生文件（整名匹配）。曾写成 startswith("_")，
+        # 把 _ 开头的真实工作流漏在快照外 —— 它们会被判定为「未下载」而
+        # 反复重下（2026-10-15 修）
+        if "learning" in p.parts or p.name.lower() in SIDECAR_NAMES:
             continue
         digest = hashlib.sha256(p.read_bytes()).hexdigest()[:16]
         snap[str(p.relative_to(WORKFLOWS))] = digest
