@@ -168,8 +168,14 @@ def main():
         # 停留在早期 sd1.5 时代，建卡优先级/反向索引全部失真
         db.indexes.save_all()
         db.auto_save = True
+        # 重学走 INSERT OR REPLACE（删旧插新），批量之后空洞能占三成；
+        # vacuum() 自带阈值，空洞不足 10% 直接跳过，不白重写整个库
+        vac = db.vacuum()
     print(f"  学习 {summary['learned']} / 跳过 {summary['skipped']} / "
           f"失败 {summary['failed']}，清理库死键 {stale}")
+    if vac["freed_mb"]:
+        print(f"  库整理: {vac['before_mb']}MB → {vac['after_mb']}MB"
+              f"（回收 {vac['freed_mb']}MB 空洞）")
 
     print("[6/6] 重建知识图谱")
     from engine.knowledge_graph import build_graph

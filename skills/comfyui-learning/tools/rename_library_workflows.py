@@ -22,7 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 LIB = ROOT / "comfyui_library" / "workflows"
 LEARN = LIB / "learning"
-DB_PATH = ROOT / "comfyui_library" / "database" / "storage" / "workflow_database.json"
+# 数据库目录（物理库是 workflow_database.sqlite；派生索引仍是同目录 JSON）
+STORAGE_DIR = ROOT / "comfyui_library" / "database" / "storage"
 GRAPH_PATH = ROOT / "engine" / "knowledge_graph" / "knowledge_graph.json"
 BAD = re.compile("[" + re.escape('\\/:*?"<>|') + "\t\n\r]")
 ID_JSON = re.compile(r"(\d{8,})\.json$")
@@ -124,25 +125,31 @@ def main() -> int:
             rewrite_md(md, old_key, new_key, old_name, new_name)
             md.rename(new_md)
 
-    # --- ③ 数据库 ---
-    db = json.loads(DB_PATH.read_text(encoding="utf-8-sig"))
+    # --- ③ 数据库（2026-10-14 起是 sqlite 后端，走 WorkflowDatabase.rename：
+    #     同一事务内换键并对账节点反向索引与经验键，不会像「删旧建新」丢字段）---
+    from comfyui_library.database.database import WorkflowDatabase
+
     renames = {sub: sub.rsplit("/", 1)[0] + "/" + nn for sub, nn, _ in plan}
+    db = WorkflowDatabase()
+    db.auto_save = False
     n_db = 0
-    for old_key in list(db["workflows"]):
-        if old_key in renames:
-            w = db["workflows"].pop(old_key)
-            new_key = renames[old_key]
-            w["id"] = new_key
-            w["file_path"] = f"comfyui_library/workflows/{new_key}"
-            w["name"] = new_key.rsplit("/", 1)[-1][:-5]
-            db["workflows"][new_key] = w
-            n_db += 1
-    DB_PATH.write_text(json.dumps(db, ensure_ascii=False, indent=4), encoding="utf-8")
+    try:
+        for old_key, new_key in renames.items():
+            if db.workflows.rename(
+                old_key,
+                new_key,
+                file_path=f"comfyui_library/workflows/{new_key}",
+                name=new_key.rsplit("/", 1)[-1][:-5],
+            ):
+                n_db += 1
+    finally:
+        db.save()
+        db.auto_save = True
     print(f"数据库改 key: {n_db}")
 
     # --- ④ 派生索引 ---
     for idx_name in ["node_index", "workflow_index", "pattern_index"]:
-        ip = DB_PATH.parent / f"{idx_name}.json"
+        ip = STORAGE_DIR / f"{idx_name}.json"
         if not ip.exists():
             continue
         idx = json.loads(ip.read_text(encoding="utf-8-sig"))

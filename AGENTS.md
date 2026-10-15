@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-10
+- 最后更新：2026-10-15
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -60,9 +60,15 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
   被测试写脏的 `context_store.json` / `experience_store.json`）混进暂存区。
 - **运行期副产物已在 `.gitignore` 末尾统一忽略**：`context_store.json` /
   `experience_store.json` / `retrieval_store.json` / `knowledge_graph.json` /
-  `learning_queue.md`。它们都能由源码重新生成，不该入库。
+  `learning_queue.md`，以及数据库目录下的 `*.json`（派生索引）/
+  **`*.sqlite`（物理库，~250MB）/ `*.json.bak`（迁移备份，1.3GB）**。
+  它们都能由源码重新生成，不该入库。
   注意 `context_store.json` 与 `experience_store.json` **历史上已被跟踪**，
   加 ignore 规则不会自动取消跟踪 —— 要真正忽略需 `git rm --cached`。
+  **2026-10-15 教训**：sqlite 迁移后新增的 `.sqlite` / `.json.bak` 一开始漏了
+  ignore 规则（`*.json` 盖不到它们），`git add comfyui_library/` 会把 1.5GB
+  塞进暂存区，推送必被 GitHub 100MB 限制拒掉。新增运行期产物时先跑
+  `git check-ignore -v <路径>` 确认。
 
 ### 3.2 网络（最高频的坑）
 
@@ -128,6 +134,25 @@ python -X utf8 -m engine.test_database_integration
 改 `engine/` 下的模块后，18 个测试全跑一遍（6 个在 `engine/` 目录 + 12 个从根目录）。
 
 改动引擎代码后，至少跑一遍相关的 `test_*.py`，确认 exit=0 再提交。
+
+#### ⚠ `test_workflow_learning` 的 D5 是破坏性用例（2026-10-15 加门禁）
+
+D5 会把**真实学习目录 `comfyui_library/workflows/learning/` 全量备份进内存 → 清空
+→ 重学 2.5 万个工作流 → 再还原**。库小的时候单轮 70 秒，库涨到 2 万+ 条后要半小时起步；
+进程被杀（Ctrl-C / 服务重启 / 超时强杀）就留下半残知识库。
+
+因此 D5 **默认跳过**，需要时显式开：
+
+```powershell
+$env:COMFY_TEST_DESTRUCTIVE=1
+python -X utf8 -m engine.test_workflow_learning   # 跑完记得 Remove-Item Env:\COMFY_TEST_DESTRUCTIVE
+```
+
+**2026-10-15 事故**：本项检查时按惯例跑全套测试，第一次后台跑被服务重启打断，
+学习库从 20949 条掉到 1511 条；靠 `git checkout -- comfyui_library/workflows/learning`
+还原（已验证 20949 条齐、git 脏条目 0）。**后台跑测试前先确认这个开关没开。**
+若真遇到半残：`git checkout -- comfyui_library/workflows/learning` 即可回到基线，
+未入库的新记录可用 `learn_pipeline.py` 重学补回。
 
 ---
 
@@ -285,21 +310,20 @@ engine/                       可执行层（v0.5 起）
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
 | 知识卡格式对齐 | 🔶 8 张 v0.2 遗产卡（`skills/comfyui-learning/knowledge/`）内容有效但**格式先于 v0.3.1 规范**，待迁移 |
 
-**数据库层（`comfyui_library/database/`，2026-10-06 新增）**
+**数据库层（`comfyui_library/database/`，2026-10-06 新增，2026-10-14 sqlite 迁移完成）**
 
 | 内容 | 状态 |
 |---|---|
-| `WorkflowDatabase` 持久化核心 | ✅ utf-8-sig 读 / `version` 守卫 / 缺键回填 / 非法 JSON 带文件名报错；默认落 `database/storage/workflow_database.json`，`summary()` 一行摘要 |
-| 四仓库 | ✅ workflow（增删查 + add/delete 对账 used_in + patterns 并集合并 + content_hash）/ node（register 带 category，只填空不覆盖）/ pattern（add 回填 workflow.patterns，悬空成员可见）/ experience（同 workflow_id 最新覆盖 + delete + `data` 结构化载荷） |
-| `IndexManager` | ✅ 三个派生索引构建 + 落盘（workflow_index / node_index / pattern_index，`save_all()` 可重建） |
-| 测试 | ✅ `engine/test_database.py`（23 组）+ 引擎接库集成 `engine/test_database_integration.py`（14 组），均从仓库根跑、全走 TemporaryDirectory |
+| `WorkflowDatabase` 持久化核心 | ✅ **sqlite3 后端**（2026-10-14 迁移，2026-10-15 VACUUM + 删旧 JSON）：逻辑路径仍是 `database/storage/workflow_database.json`，物理库是同名 `.sqlite`；四仓库 / `summary()` / `.data` 兼容视图 / `auto_save` 批量语义全部保持，老调用方无感；`version` 守卫 + 缺键回填 + 超 200MB 的旧 JSON 拒绝自动迁移（提示跑流式迁移工具 `skills/comfyui-learning/tools/migrate_database_sqlite.py`） |
+| 四仓库 | ✅ workflow（增删查 + **rename 换键** + add/delete 对账 used_in + patterns 并集合并 + content_hash）/ node（register 带 category，只填空不覆盖）/ pattern（add 回填 workflow.patterns，悬空成员可见）/ experience（同 workflow_id 最新覆盖 + delete + `iter_items()` 流式 + `data` 结构化载荷，zlib 压缩实测 3.06x） |
+| `IndexManager` | ✅ 三个派生索引构建 + 落盘（workflow_index / node_index / pattern_index，`save_all()` 可重建）；构建改走 SQL 直查，不再经 `.data` 物化全库（那是旧 OOM 路径） |
+| 体积构成 | 1.25GB JSON → 419MB sqlite → **VACUUM 后 235MB**（回收 165MB 空洞，10s）。实测各表占比：`node_used_in` **138.7MB (59%)**（`workflow_id` 长路径文本，表与主键索引各存一份）/ `experiences` 68.4MB (29%) / 其余 27MB —— 再瘦身得上整数外键（待办 22） |
+| 测试 | ✅ `engine/test_database.py`（24 组，含新增 B7 rename 换键）+ 引擎接库集成 `engine/test_database_integration.py`（14 组），均从仓库根跑、全走 TemporaryDirectory；**18 个 test_*.py 全部 exit=0（2026-10-15 复测，D5 已加门禁默认跳过）** |
 
 **引擎层（`engine/`，v0.5 实装）**
 
-14 个子包全部落地并有 `test_*.py` 覆盖；16 个测试脚本全部 exit=0（2026-10-06 复测，
-6 个在 `engine/` 目录 + 10 个从仓库根，见 3.4）；同日新增 `comfyui_library/database/`
-存储底座，配套 `test_database.py`（23 组）与引擎接库集成测试
-`test_database_integration.py`（14 组）：
+14 个子包全部落地并有 `test_*.py` 覆盖；**18 个测试脚本全部 exit=0（2026-10-14 复测）**：
+6 个在 `engine/` 目录（`test_parser.py` / `test_workflow_understanding.py` / `test_workflow_analyzer.py` / `test_diagnostics.py` / `test_context.py` / `test_response.py`）+ 12 个从仓库根（`test_learning_loop` / `test_knowledge_evolution` / `test_retrieval` / `test_agent_core` / `test_answer` / `test_autonomous_learning` / `test_knowledge_consolidation` / `test_learning_scheduler` / `test_knowledge_graph` / `test_database` / `test_database_integration` / `test_workflow_learning`）。
 
 | 模块 | 能力 | 测试 |
 |---|---|---|
@@ -354,15 +378,16 @@ engine/                       可执行层（v0.5 起）
     qy.paths("KSampler", "ControlNetApply")  # 两者什么关系（多跳）
 ```
 
-存储底座（不学习、只存与查；2026-10-06 新增，同日完成引擎接入）：
+存储底座（不学习、只存与查；2026-10-06 新增，2026-10-14 迁 sqlite）：
 
     Workflow Files
       ↓ workflow_learning（LearningStore 记录正身 + database_bridge 镜像）
-    WorkflowDatabase（comfyui_library/database/storage/workflow_database.json）
-      ├─ workflows    WorkflowRepository    workflow 增删查（status + content_hash 判重学）
+    WorkflowDatabase（逻辑路径 .../storage/workflow_database.json，
+                     物理库是同名 .sqlite，见 9.1 数据库层）
+      ├─ workflows    WorkflowRepository    workflow 增删查改名 + 对账 used_in
       ├─ nodes        NodeRepository        节点 → used_in
       ├─ patterns     PatternRepository     模式 ↔ workflow（回填互引）
-      ├─ experiences  ExperienceRepository  学习经验（含 data 结构化载荷，归纳引擎吃它）
+      ├─ experiences  ExperienceRepository  学习经验（data 压缩载荷，iter_items 流式）
       └─ indexes      IndexManager          workflow/node/pattern_index.json（派生，save_all 重建）
       ↓ 消费方
     learning_scheduler（查库判已学）／knowledge_consolidation（读库归纳）
@@ -411,6 +436,90 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-15 学习缺口盘点与修复（库内文件 ↔ 记录 ↔ 数据库三方对账）**：
+- 起因：检查「工作流学到哪了、还有没有没学过的、学习流程在新模式下有没有问题」
+- **发现 1（学习流程 bug，已修）**：`learn_folder` 的 prune 只清 Markdown、不清库镜像
+  → 删源文件后库里留死键。已加 `_prune_database()`，prune 与库同事务清理
+- **发现 2（数据毁灭性隐患，已修）**：`cleanup_stale` 用 `os.path.exists(fp)` 解析
+  **相对仓库根**的 file_path，cwd 不在仓库根时**全库记录会被判失效并删除**。
+  改为按 `PROJECT_ROOT` 解析
+- **发现 3（我造成的数据丢失，已补齐）**：D5 事故连带删掉了 2026-10-14 那批
+  **4765 条从未提交的图生视频记录**（DB 行还在，Markdown 没了）。
+  重新学习 4765 条补齐（4.9 分钟，0 失败）
+- **发现 4（统计口径坑，已修数据）**：3707 条记录的 **frontmatter `key:` 仍是目录
+  搬迁前的平铺键**（2026-10-07 视频分类时文件搬进 `图片生成/文生图` 等子目录，
+  记录没跟着搬）。md 文件本身在正确位置，只是 key 字段是旧值 —— 按 key 统计会
+  误判成「未学 + 记录失效」。已把 key 与 file_path 归位（3707 条），并用
+  `WorkflowRepository.rename()` 同步数据库行
+- **发现 5（库侧重复行，已清）**：同上述搬迁，库里有 3707 条「旧平铺键行」与
+  「新路径键行」两份，另 129 条指向已删文件；清掉 134 条后库与记录完全对齐
+- **发现 6（扫描器老坑，第 2 次踩）**：`_` 开头的文件被当 ComfyUI 伴生文件跳过
+  （`SIDECAR_PREFIX = "_"`）。5 个 `_全能图片V1*` 工作流因此永远学不了 →
+  按库的命名约定去掉前导 `_` 后补学（2026-10-14 的 T8 批次踩过一次，
+  说明这是**重复发生**的问题，建议给扫描器加白名单或入库前置改名检查）
+- **最终状态**：文件 25718 = Markdown 记录 25718 = 数据库 workflow 行 25718，
+  双向零差异，junction 抽样对账一致，派生索引已重建，图谱已重建
+- 隔离式端到端测试 25 项全通过（临时目录 + 临时 sqlite，覆盖学习→写 md→镜像库→
+  index→幂等→改内容重学→删文件→索引对账→关库重开→批量事务→VACUUM）
+
+**2026-10-15 sqlite 迁移收尾 + 瘦身 + 四处修复**（起因：检查最新数据库存储模式）：
+- **旧 JSON 备份已删**：`workflow_database.json.bak`（1250MB）确认 sqlite 无误后删除，
+  数据库目录只剩 `.sqlite` + 三个派生索引 JSON
+- **VACUUM**：399.5MB → **234.8MB**，10s 回收 164.7MB 空洞（空洞来自
+  `INSERT OR REPLACE` 的删旧插新）。新增 `WorkflowDatabase.vacuum()`，
+  `learn_pipeline.py` 学习阶段结束自动调用（空洞不足 10% 直接跳过）
+- **体积归因校正**（此前注释里的数字是错的）：经验载荷不是大头 —— 实测压后
+  3.0KB/条、压前 9.2KB/条、3.06x、30616 条合计 39MB。实测各表占比：
+  `node_used_in` **138.7MB (59%)**、`experiences` 68.4MB (29%)、其余 27MB。
+  已在 database.py / experience_repository.py / experience_loader.py /
+  迁移工具四处改正
+- **gitignore 补漏**：新增 `storage/*.sqlite`（含 -journal/-wal/-shm）与 `*.json.bak`
+  规则。迁移时漏了这两条，`git add comfyui_library/` 会把 1.5GB 塞进暂存区
+- **`WorkflowRepository.rename()`** 新增：换键时字段不丢、junction 与经验随迁，
+  `rename_library_workflows.py` 改走它（此前直读旧 JSON，迁移后必然 FileNotFoundError）；
+  `test_database.py` 加 B7 组覆盖（24 组）
+- **删除 3 个 JSON 时代的一次性分析脚本**（`download/analyze_db*.py`、
+  `analyze_records.py`，文件头自写「跑完即删」）
+- **派生索引重建**：检查时发现三个索引 JSON 停在 2026-10-14 01:50（迁移那一刻），
+  与库已不同步（KSampler：DB 10369 / node_index 9874 / workflow_index 9815）——
+  与 2026-10-07 那次「派生索引失真」同一类问题。`db.indexes.save_all()` 8s 重建，
+  三个来源现已完全一致（待办 20 的「派生索引与检索倒排索引口径统一」仍未做）
+- **D5 加破坏性门禁**：见 3.5 节。按惯例跑测试差点把 2 万条学习库删掉，靠 git 还原
+- 测试：11 个根目录测试 + 6 个 `engine/` 目录测试全部 exit=0（`test_knowledge_graph`
+  在 2 万条真实记录上要跑约 13 分钟，属正常）
+
+**2026-10-14 图生视频收官批次（+4765，learn_pipeline 完成）**：
+- 消化：`--tag 视频生成/图生视频 --skip-collect --skip-download`，
+  指纹去重入库 **4764**（指纹闸门拦 22879 重复——下载 16261 个文件中
+  16260 个为同一工作流多 ID/多版本重复上传），预建卡 **190 张**，
+  学习 4764 / 失败 0 / 死键 0
+- 漏网之鱼：`_T8_SkyReel*.json` 下划线开头被伴生文件规则（防
+  `_workflow.json`/`_prompt.json`）误拦，改名去 `_` 后以无镜像轻量路径
+  （`create_batch_learner` 不带 `database=`）学掉，全库 +1 = **25713 条**
+- 图谱：**37172 顶点 / 892710 边**
+- **图生视频分类增量收官**：库内图生视频 15149 条学习记录，
+  下载目录余量经指纹核验全为重复上传（16260/16261）
+- ⚠ **主库 MemoryError（结构性临界，见待办 21）**：
+  `workflow_database.json` 达 **1250MB**，`WorkflowDatabase()` 全量
+  `json.load` 在 24GB 内存机器崩溃——第一轮流水线踩线跑过，第二轮
+  [5/6] 阶段即崩；T8 走轻量路径绕过，**未镜像进库**，
+  待数据库改造后 `sync_database()` 补
+- 全库 25713 条：平均 72%，深懂（≥80%）10586 个，浅懂（<20%）24
+
+**2026-10-13 图生视频批次 7-10（+3568，全库 20947 条）**：
+- 批次 7-10 累计入库学习 **3568 个**（图谱 32004 顶点 / 699937 边）
+
+**2026-10-13 图生视频批次 4-6（+2749，全库 17379 条）**：
+- 批次 4-6 累计入库学习 **2749 个**（图谱 27850 顶点 / 566695 边）
+
+**2026-10-12 图生视频批次 1-3（+2762，全库 14630 条）**：
+- 批次 1-3 累计入库学习 **2762 个**，知识卡 **4335 张**
+  （图谱 24638 顶点 / 468557 边）
+
+**2026-10-12 collect_by_tag 深翻页（图生视频全量收齐）**：
+- 页数上限 200 → **900**：图生视频平台总量 25835，单排序流 6000 条
+  窗口不足，深翻页后**全量收齐 25832 个 ID（仅差 3）**
 
 **2026-10-10 文生视频 RECOMMEND 增量 + 第十七、十八批次（清单彻底收官）**：
 - 收集：改用 `--sort RECOMMEND` 挖出 NEWEST 200 页窗口外的旧工作流
@@ -1141,6 +1250,33 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
     - `agent_core` 的 retrieve/respond 仍未查库；`knowledge_graph` 建图仍直读
       Markdown，未消费 `database/storage/` 的三个派生索引
     - 三个派生索引与 retrieval 倒排索引的口径统一（同待办 7 的性质）
+21. ~~**⚠ 高优先级：主库 GB 级膨胀致流水线不可用**（2026-10-14 发现）~~
+    `workflow_database.json` 达 1250MB，`WorkflowDatabase()` 全量
+    `json.load` 在 24GB 内存机器 MemoryError，learn_pipeline 的
+    [5/6] 学习阶段与 [6/6] 图谱阶段均依赖库加载，随时全灭。
+    需要拆分存储（按仓库/按 id 分片）或改流式加载（标准库内可行方向：
+    `sqlite3`；或自研分片 JSON + 逐片惰性加载），改造后跑
+    `sync_database()` 补 T8 缺失镜像并验证三索引重建仍正确
+    **✅ 2026-10-14 完成**：流式解析器 + zlib 压缩 + sqlite3 后端，
+    69s 迁移 29553 workflow / 5105 node / 753443 used_in / 29705 experience，
+    1250MB→419MB，18 个 test_*.py 全过，sync_database() 镜像完成；
+    **✅ 2026-10-15 收尾**：VACUUM → 234.8MB，1250MB 旧 JSON 备份已删
+22. **junction 表换整数外键（下一轮瘦身，138.7MB → 约 20MB）**：
+    `node_used_in.workflow_id` 存的是长路径文本（均值 67 字节，中文路径 UTF-8 更长），
+    表与主键索引各存一份 —— VACUUM 后实测占全库 59%（235MB 里的 138.7MB）。
+    改成引用 `workflows.rowid` 的整数列，查询侧
+    （`NodeRepository.workflows_using/get/all`、`IndexManager` 两个构建、
+    `.data` 兼容视图、`_import_payload`、`WorkflowRepository.rename`）
+    改成先取 rowid→id 映射再拼回字符串。代价：`SCHEMA_VERSION` 升 2 +
+    一次迁移（约 6 处查询点），收益是库再砍一半到 ~120MB。
+    不急（磁盘已不是瓶颈），但这是剩下的唯一大头；动手前先 `VACUUM INTO`
+    留一份备份，迁移后比对行数与抽样记录再删
+23. **`INSERT OR REPLACE` 换 rowid 的顺序漂移**（低危，仅记录）：
+    旧 JSON 后端 dict 覆盖保持原插入位，sqlite REPLACE 会换 rowid，
+    于是重学过的记录排到 `workflows.all()` / `iter_items("insertion")` 末尾。
+    目前无消费者依赖插入序（索引都显式排序、归纳走 `order="key"`），暂不修；
+    真要稳定顺序就改 `ON CONFLICT(id) DO UPDATE`（顺带保住 rowid，
+    未来做外键时是必需的）
 
 ### 9.4 维护规则
 

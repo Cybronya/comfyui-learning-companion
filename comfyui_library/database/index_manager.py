@@ -15,6 +15,12 @@ IndexManager —— 从库内容构建三个查询索引并可落盘
 注意：这里的 node_index.json 是「节点使用索引」，
 与 comfyui_library/knowledge/nodes/node_index.json（知识卡索引）
 同名不同物，别混。
+
+sqlite 后端（2026-10-14）：构建改走 SQL 直查，不再物化 db.data ——
+旧实现经 .data 兼容视图会把 29553 条 workflow 全量记录（含 report 与
+nodes_json）拉进内存，正是主库 OOM 的路径。改后 workflow_index 一次
+扫描 junction 表（75 万行），node_index 逐表直查，pattern 直查小表。
+落盘与读回 API 与旧版完全一致（JSON 文件，派生数据可重建）。
 """
 
 import json
@@ -29,38 +35,72 @@ class IndexManager:
     # ---------- 构建 ----------
 
     def build_workflow_index(self):
-        """node → [workflow_id]，按 workflow 记录的 nodes 重建（排序保稳定）"""
-        index = {}
-        for wid, record in self.db.data["workflows"].items():
-            for node in record.get("nodes", []):
-                if wid not in index.setdefault(node, []):
-                    index[node].append(wid)
-        for members in index.values():
-            members.sort()
+        """node → [workflow_id]，从 junction 表直查（按 node, workflow_id
+        排序，与旧版「逐 workflow 收集后排序」结果一致）"""
+        conn = self.db._read()
+        if conn is None:
+            return {}
+        try:
+            index = {}
+            for node, wid in conn.execute(
+                "SELECT node, workflow_id FROM node_used_in"
+                " ORDER BY node, workflow_id"
+            ):
+                index.setdefault(node, []).append(wid)
+        finally:
+            self.db._end_read(conn)
         return index
 
     def build_node_index(self):
-        """node → {category, used_in, usage_count}"""
-        index = {}
-        for node, entry in self.db.data["nodes"].items():
-            used_in = sorted(set(entry.get("used_in", [])))
-            index[node] = {
-                "category": entry.get("category", ""),
-                "used_in": used_in,
-                "usage_count": len(used_in),
-            }
+        """node → {category, used_in, usage_count}
+
+        nodes 表全量条目（含空 used_in 的节点，旧版语义不变），
+        used_in 从 junction 表按序填入（junction 主键去重，
+        排序后与旧版 sorted(set(...)) 一致）。
+        """
+        conn = self.db._read()
+        if conn is None:
+            return {}
+        try:
+            index = {}
+            for row in conn.execute(
+                "SELECT name, category FROM nodes ORDER BY rowid"
+            ):
+                index[row["name"]] = {
+                    "category": row["category"],
+                    "used_in": [],
+                }
+            for node, wid in conn.execute(
+                "SELECT node, workflow_id FROM node_used_in"
+                " ORDER BY node, workflow_id"
+            ):
+                if node in index:
+                    index[node]["used_in"].append(wid)
+            for entry in index.values():
+                entry["usage_count"] = len(entry["used_in"])
+        finally:
+            self.db._end_read(conn)
         return index
 
     def build_pattern_index(self):
         """pattern → {workflows, workflow_count, description}"""
-        index = {}
-        for name, entry in self.db.data["patterns"].items():
-            members = sorted(set(entry.get("workflows", [])))
-            index[name] = {
-                "workflows": members,
-                "workflow_count": len(members),
-                "description": entry.get("description", ""),
-            }
+        conn = self.db._read()
+        if conn is None:
+            return {}
+        try:
+            index = {}
+            for row in conn.execute(
+                "SELECT name, workflows_json, description FROM patterns"
+                " ORDER BY rowid"
+            ):
+                members = sorted(set(json.loads(row["workflows_json"])))
+                index[row["name"]] = {
+                    "workflows": members,
+                    "workflow_count": len(members),
+                    "description": row["description"],
+                }
+        finally:
+            self.db._end_read(conn)
         return index
 
     # ---------- 落盘 ----------

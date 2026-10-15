@@ -24,6 +24,8 @@ LearningRecord → WorkflowDatabase 写入桥
 
 from typing import Optional
 
+from pathlib import Path
+
 from comfyui_library.database import WorkflowDatabase, WorkflowRecord
 
 from .learning_record import (
@@ -203,16 +205,29 @@ def cleanup_stale(database: WorkflowDatabase, wf_root: str = "") -> int:
     """
     清理数据库里指向已不存在文件的 workflow / experience 旧键。
 
-    文件被移动/删除时 learn_folder 只清 Markdown 记录，
-    库侧旧键会永久残留并污染统计——批量学习后调用本函数对账。
+    文件被移动/删除时，库侧旧键会永久残留并污染统计 —— 批量学习后调用
+    本函数对账（learn_folder 自带 prune 也已同步删库，这里是事后兜底，
+    覆盖「库里有、当时没跑批学习」的存量）。
+
+    ⚠ 路径解析：记录里的 file_path 是**相对仓库根**的（相对项目外文件
+    则是绝对路径）。直接 os.path.exists(fp) 会拿进程 cwd 去解析，cwd 不在
+    仓库根时**全部记录都会被判成失效并删除** —— 所以这里统一按仓库根解析。
+
     Returns: 删除的键数
     """
     import os
+    from .paths import PROJECT_ROOT
+
     stale = []
     for w in database.workflows.all():
         fp = w.get("file_path", "") if isinstance(w, dict) else getattr(w, "file_path", "")
         wid = w.get("id") if isinstance(w, dict) else w.id
-        if fp and not os.path.exists(fp):
+        if not fp:
+            continue
+        target = Path(fp)
+        if not target.is_absolute():
+            target = Path(PROJECT_ROOT) / target
+        if not target.exists():
             stale.append(wid)
     for k in stale:
         database.workflows.delete(k)

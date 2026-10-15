@@ -217,11 +217,20 @@ def test_default_path():
     print("测试 A8：默认路径")
     print("=" * 60)
 
-    db = WorkflowDatabase()
-    assert db.path.name == "workflow_database.json"
-    assert db.path.parent.name == "storage"
-    assert db.path.parent.parent.name == "database"
-    print(f"  默认路径: {db.path}")
+    try:
+        db = WorkflowDatabase()
+    except ValueError:
+        # 真实库是超守卫的旧 JSON（1250MB，待迁移工具处理）时构造被
+        # 拒绝——路径属性在守卫之前已赋值，回退验证模块常量
+        from comfyui_library.database.database import DEFAULT_PATH
+
+        db_path = DEFAULT_PATH
+    else:
+        db_path = db.path
+    assert db_path.name == "workflow_database.json"
+    assert db_path.parent.name == "storage"
+    assert db_path.parent.parent.name == "database"
+    print(f"  默认路径: {db_path}")
 
 
 # ============================================================
@@ -363,6 +372,48 @@ def test_delete_cleans_up():
 
         assert db.workflows.delete(wid) is False, "再删应返回 False"
     print("  delete 清理 OK")
+
+
+def test_rename_moves_everything():
+    """测试 rename：换键时字段不丢、反向索引与经验随迁（旧键不残留）"""
+    print("=" * 60)
+    print("测试 B7：rename 换键")
+    print("=" * 60)
+
+    with TemporaryDirectory() as tmp:
+        db = WorkflowDatabase(Path(tmp) / "db.json")
+        old = "2081.wool.json"
+        new = "梦幻配色_2081.json"
+        db.workflows.add(make_wf(old, nodes=["KSampler", "LoraLoader"]))
+        db.patterns.add("sd15-t2i", [old])
+        db.experiences.add(old, "改名前的经验", ["tag"], {"key": old})
+
+        assert db.workflows.rename(
+            old, new, file_path=f"comfyui_library/workflows/{new}",
+            name="梦幻配色",
+        ) is True
+
+        # 旧键彻底消失（含 junction 与经验）
+        assert db.workflows.get(old) is None
+        assert db.nodes.workflows_using("KSampler") == [new]
+        assert db.experiences.get(old) is None
+        assert db.nodes.workflows_using("LoraLoader") == [new]
+
+        # 字段不丢（不能像「删旧建新」那样只剩空壳）
+        rec = db.workflows.get(new)
+        assert rec["name"] == "梦幻配色"
+        assert rec["file_path"] == f"comfyui_library/workflows/{new}"
+        assert rec["nodes"] == ["KSampler", "LoraLoader"]
+        exp = db.experiences.get(new)
+        assert exp["content"] == "改名前的经验"
+        assert exp["tags"] == ["tag"]
+        assert exp["data"]["key"] == old, "载荷原样搬运，不改内容"
+
+        # 派生索引同步跟着新键
+        assert db.indexes.build_workflow_index()["KSampler"] == [new]
+
+        assert db.workflows.rename("不存在的键", "x.json") is False
+    print("  rename 换键 OK")
 
 
 # ============================================================
@@ -666,6 +717,7 @@ def main():
     test_add_reconciles_shrink()
     test_add_patterns_union()
     test_delete_cleans_up()
+    test_rename_moves_everything()
 
     # C Node 仓库
     test_register_dedup_and_category()

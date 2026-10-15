@@ -152,24 +152,19 @@ class ExperienceLoader:
 
         只取 status=completed 的载荷（data 是 LearningRecord.to_dict()，
         含 status 字段）；节点清单为空的同样跳过。
-        """
-        experiences = self.database.experiences.all()
 
+        sqlite 流式（2026-10-14）：旧实现 all() 把 3 万条经验连同
+        data 载荷（压前约 9KB/条，JSON 文本合计约 120MB）全量物化成
+        dict，是主库 MemoryError 的消费端路径。改用 iter_items 逐条取用
+        + 生成器喂 dedupe —— 去重算法仍只在 dedupe.py 一处，
+        物化的只有去重后的列表。
+        """
         from ..workflow_learning.dedupe import dedupe_by_content_hash
 
-        rows = []
-        datas = []
-        for key in sorted(experiences):
-            data = experiences[key].get("data") or {}
-            if data.get("status", "completed") != "completed":
-                continue
-            # 兜底：载荷里没写 key 就用 experiences 的键
-            if not data.get("key"):
-                data["key"] = key
-            datas.append(data)
-
         # 与 Markdown 路径同一口径：内容相同的拷贝只归纳一次
-        datas, _ = dedupe_by_content_hash(datas)
+        datas, _ = dedupe_by_content_hash(self._completed_datas())
+
+        rows = []
         for data in datas:
             nodes = list(data.get("nodes") or [])
             if not nodes:
@@ -187,6 +182,21 @@ class ExperienceLoader:
             ))
 
         return rows
+
+    def _completed_datas(self):
+        """流式产出 completed 载荷（按 workflow_id 排序，key 兜底回填）
+
+        生成器：逐条从库取用，不物化全量经验 ——
+        3 万条 × 约 9KB 载荷物化成 dict 会吃掉 400MB+ 内存。
+        """
+        for key, entry in self.database.experiences.iter_items(order="key"):
+            data = entry.get("data") or {}
+            if data.get("status", "completed") != "completed":
+                continue
+            # 兜底：载荷里没写 key 就用 experiences 的键
+            if not data.get("key"):
+                data["key"] = key
+            yield data
 
     @staticmethod
     def _parameters_of(record: Any) -> Dict:

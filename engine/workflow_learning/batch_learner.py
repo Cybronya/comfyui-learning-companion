@@ -187,8 +187,13 @@ class BatchWorkflowLearner:
             pruned = self.store.prune_missing(
                 [f["key"] for f in files]
             )
-            if pruned and self.verbose:
-                print(f"  清理失效记录 {len(pruned)} 条")
+            if pruned:
+                # prune 只动 Markdown；库侧镜像必须同步删，否则库里攒死键
+                # （learn_pipeline 另有 cleanup_stale 兜底，但那是事后补救，
+                #  这里就地清掉才符合 prune 的语义）
+                self._prune_database(pruned)
+                if self.verbose:
+                    print(f"  清理失效记录 {len(pruned)} 条（含库侧镜像）")
 
         return self._summary(
             folder=folder,
@@ -200,6 +205,25 @@ class BatchWorkflowLearner:
             skipped_keys=skipped,
             pruned=pruned,
         )
+
+    def _prune_database(self, keys: List[str]) -> int:
+        """把被 prune 的键同步从库里删掉（workflow + 经验 + junction）
+
+        批量事务一次提交；没接库时什么都不做。
+        """
+        if self.database is None or not keys:
+            return 0
+        self.database.auto_save = False
+        removed = 0
+        try:
+            for key in keys:
+                if self.database.workflows.delete(key):
+                    removed += 1
+                self.database.experiences.delete(key)
+        finally:
+            self.database.save()
+            self.database.auto_save = True
+        return removed
 
     def learn_file(self, path: str, key: str = "", force: bool = False) -> LearningRecord:
         """

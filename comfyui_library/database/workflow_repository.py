@@ -1,109 +1,239 @@
 r"""
 Workflow 仓库 —— workflow 记录的增删查
 
-设计稿的问题，落地时补上：
+add/delete 自动对账节点反向索引（node_used_in）：
+- add：新节点登记进 nodes 表（条目永不删），junction 增行；
+  删掉的节点从 junction 摘行（条目留空壳，不静默消失）
+- delete：摘除该 workflow 的全部 junction 行，nodes 条目保留
 
-1. 标题说「增删查」但没有 delete。补上，且删除时把该 workflow
-   从各节点的 used_in 里摘掉 —— 反向索引留悬空引用，
-   就是 knowledge_graph 里「悬空边」那类问题。
-2. add() 只写 workflow 自身字段、不管节点反向索引的话，
-   workflow.nodes 与 node.used_in 就是两份各自漂移的状态
-   （learning_scheduler 里 SchedulerState 与 TaskQueue 漂移同款）。
-   这里让 add() 顺手对账：节点增了就登记 used_in，减了就摘除。
-3. workflow.patterns 与 PatternRepository.add 的回填是两个写者，
-   更新 workflow 时不带 patterns 会把回填抹掉 —— 改成并集合并。
+patterns 语义：add 时的 patterns 与库里已有的取并集 ——
+PatternRepository.add 回填进来的模式名不因重学被抹掉。
+
+sqlite 后端（2026-10-14）：每操作短连接（用完即关，Windows 实测
+持久连接会让 TemporaryDirectory 清理 PermissionError）；
+批量模式（auto_save=False）走持有连接累积事务，save() 一次提交。
 """
 
-from .models import WorkflowRecord
+import json
 
 
 class WorkflowRepository:
-    """workflow 记录的增删查 + 节点反向索引对账"""
+    """workflow 记录的存取"""
 
     def __init__(self, database):
         self.db = database
 
-    # ---------- 写 ----------
-
-    def add(self, workflow: WorkflowRecord):
-        """
-        新增或更新一条记录（按 id 覆盖）
-
-        同时做两件对账：
-        - 节点反向索引：workflow.nodes 增了登记 used_in，减了摘除；
-        - patterns 归属：与已有记录并集合并，
-          避免抹掉 PatternRepository 回填的归属。
-
-        Returns:
-            存储后的记录副本 dict
-        """
-        workflows = self.db.data["workflows"]
-        old = workflows.get(workflow.id, {})
-        old_nodes = set(old.get("nodes", []))
-
-        new_nodes = list(dict.fromkeys(workflow.nodes))
-        new_patterns = list(dict.fromkeys(
-            list(old.get("patterns", [])) + list(workflow.patterns)
-        ))
-
-        workflows[workflow.id] = {
+    def _snapshot(self, workflow, nodes, patterns):
+        """写库后回给调用方的全字段 dict（workflow_type 存作 type）"""
+        return {
             "id": workflow.id,
             "name": workflow.name,
             "file_path": workflow.file_path,
             "status": workflow.status,
             "type": workflow.workflow_type,
-            "nodes": new_nodes,
-            "patterns": new_patterns,
+            "nodes": list(nodes),
+            "patterns": list(patterns),
             "report": workflow.report,
             "content_hash": workflow.content_hash,
             "official": bool(workflow.official),
         }
 
-        nodes = self.db.data["nodes"]
-        for node in new_nodes:
-            entry = nodes.setdefault(node, {"category": "", "used_in": []})
-            if workflow.id not in entry["used_in"]:
-                entry["used_in"].append(workflow.id)
-        for node in old_nodes - set(new_nodes):
-            entry = nodes.get(node)
-            if entry and workflow.id in entry["used_in"]:
-                entry["used_in"].remove(workflow.id)
+    def add(self, workflow) -> dict:
+        """
+        新增或更新一个 workflow（同 id 覆盖全字段），并对账节点反向索引
 
-        if self.db.auto_save:
-            self.db.save()
-        return dict(workflows[workflow.id])
+        Args:
+            workflow: WorkflowRecord（models.py）
+        """
+        conn = self.db._begin_write()
+        owned = conn is not self.db._conn
+        try:
+            row = conn.execute(
+                "SELECT nodes_json, patterns_json FROM workflows WHERE id=?",
+                (workflow.id,),
+            ).fetchone()
+            old_nodes = set(json.loads(row["nodes_json"])) if row else set()
+            old_patterns = json.loads(row["patterns_json"]) if row else []
+
+            new_nodes = list(dict.fromkeys(workflow.nodes or []))
+            # patterns 并集合并：模式回填进来的名字不因重学被抹掉
+            new_patterns = list(
+                dict.fromkeys(list(old_patterns) + list(workflow.patterns or []))
+            )
+
+            conn.execute(
+                "INSERT OR REPLACE INTO workflows VALUES (?,?,?,?,?,?,?,?,?,?)",
+                (
+                    workflow.id,
+                    workflow.name,
+                    workflow.file_path,
+                    workflow.status,
+                    workflow.workflow_type,
+                    json.dumps(new_nodes, ensure_ascii=False),
+                    json.dumps(new_patterns, ensure_ascii=False),
+                    workflow.report,
+                    workflow.content_hash,
+                    1 if workflow.official else 0,
+                ),
+            )
+
+            # 节点反向索引对账：新节点登记（category 只填空），减少的摘行
+            for node in new_nodes:
+                conn.execute(
+                    "INSERT INTO nodes(name, category) VALUES (?, '')"
+                    " ON CONFLICT(name) DO NOTHING",
+                    (node,),
+                )
+                conn.execute(
+                    "INSERT OR IGNORE INTO node_used_in(node, workflow_id)"
+                    " VALUES (?,?)",
+                    (node, workflow.id),
+                )
+            for node in old_nodes - set(new_nodes):
+                conn.execute(
+                    "DELETE FROM node_used_in WHERE node=? AND workflow_id=?",
+                    (node, workflow.id),
+                )
+            self.db._end_write(conn)
+        except Exception:
+            if owned:
+                conn.close()  # 短连接失败直接丢弃（未提交自动回滚）
+            raise
+
+        return self._snapshot(workflow, new_nodes, new_patterns)
 
     def delete(self, workflow_id: str) -> bool:
         """
-        删除一条记录，并清理它在节点反向索引里的引用
-
-        注意：patterns / experiences 里对它的引用**不**连带删，
-        悬空保持可见（与 knowledge_graph 对悬空边的处理一致）；
-        要清就显式调对应仓库的 delete。
-
-        Returns:
-            删了返回 True；本来就不存在返回 False
+        删除一个 workflow，连带清节点反向索引；
+        删了返回 True，本来就没有返回 False
         """
-        removed = self.db.data["workflows"].pop(workflow_id, None)
-        if removed is None:
-            return False
-        for entry in self.db.data["nodes"].values():
-            if workflow_id in entry["used_in"]:
-                entry["used_in"].remove(workflow_id)
-        if self.db.auto_save:
-            self.db.save()
-        return True
+        conn = self.db._begin_write()
+        owned = conn is not self.db._conn
+        try:
+            cur = conn.execute(
+                "DELETE FROM workflows WHERE id=?", (workflow_id,)
+            )
+            removed = cur.rowcount > 0
+            # 反向索引清行；nodes 条目永不删（与其他记录解耦）
+            conn.execute(
+                "DELETE FROM node_used_in WHERE workflow_id=?", (workflow_id,)
+            )
+            self.db._end_write(conn)
+        except Exception:
+            if owned:
+                conn.close()
+            raise
+        return removed
 
-    # ---------- 查 ----------
+    def rename(
+        self,
+        old_id: str,
+        new_id: str,
+        file_path: str = None,
+        name: str = None,
+    ) -> bool:
+        """
+        改一条记录的 id（连带对账节点反向索引与经验键）
+
+        库内文件改名 / 归类搬迁后调用，避免「删旧建新」把 nodes_json、
+        report、content_hash 全丢光。同一事务内完成：写新键 → 清旧键
+        的 junction 行 → 按原节点清单重挂 → 经验行换键 → 删旧键。
+
+        Args:
+            old_id: 旧 id（相对路径，如 "视频生成/文生视频/xxx_123.json"）
+            new_id: 新 id
+            file_path: 顺带改文件路径；None 表示沿用旧值
+            name: 顺带改名字；None 表示沿用旧值
+        Returns:
+            改成功 True；旧键不存在 False
+        """
+        conn = self.db._begin_write()
+        owned = conn is not self.db._conn
+        try:
+            row = conn.execute(
+                "SELECT * FROM workflows WHERE id=?", (old_id,)
+            ).fetchone()
+            if row is None:
+                self.db._end_write(conn)  # 提前返回也要收连接（否则泄漏）
+                return False
+            conn.execute(
+                "INSERT OR REPLACE INTO workflows VALUES (?,?,?,?,?,?,?,?,?,?)",
+                (
+                    new_id,
+                    name if name is not None else row["name"],
+                    file_path if file_path is not None else row["file_path"],
+                    row["status"],
+                    row["type"],
+                    row["nodes_json"],
+                    row["patterns_json"],
+                    row["report"],
+                    row["content_hash"],
+                    row["official"],
+                ),
+            )
+            # junction 行随键搬迁：清旧键、按原清单重挂（nodes 条目不动）
+            conn.execute(
+                "DELETE FROM node_used_in WHERE workflow_id=?", (old_id,)
+            )
+            for node in json.loads(row["nodes_json"]):
+                conn.execute(
+                    "INSERT OR IGNORE INTO node_used_in(node, workflow_id)"
+                    " VALUES (?,?)",
+                    (node, new_id),
+                )
+            # 经验按 workflow_id 主键存，一并换键（旧键删掉，不留悬空）
+            exp = conn.execute(
+                "SELECT content, tags_json, data_json FROM experiences"
+                " WHERE workflow_id=?",
+                (old_id,),
+            ).fetchone()
+            if exp is not None:
+                conn.execute(
+                    "INSERT OR REPLACE INTO experiences(workflow_id, content,"
+                    " tags_json, data_json) VALUES (?,?,?,?)",
+                    (new_id, exp["content"], exp["tags_json"], exp["data_json"]),
+                )
+                conn.execute(
+                    "DELETE FROM experiences WHERE workflow_id=?", (old_id,)
+                )
+            # 旧键落地删除（new_id == old_id 时上面 INSERT OR REPLACE 已原地更新）
+            if new_id != old_id:
+                conn.execute(
+                    "DELETE FROM workflows WHERE id=?", (old_id,)
+                )
+            self.db._end_write(conn)
+        except Exception:
+            if owned:
+                conn.close()
+            raise
+        return True
 
     def get(self, workflow_id: str):
         """单条记录副本 dict；不存在返回 None"""
-        record = self.db.data["workflows"].get(workflow_id)
-        return dict(record) if record is not None else None
+        conn = self.db._read()
+        if conn is None:
+            return None
+        try:
+            row = conn.execute(
+                "SELECT * FROM workflows WHERE id=?", (workflow_id,)
+            ).fetchone()
+        finally:
+            self.db._end_read(conn)
+        from .database import _record_dict
 
-    def all(self):
+        return _record_dict(row) if row is not None else None
+
+    def all(self) -> list:
         """全部记录（list[dict]，按插入序）"""
-        return [
-            dict(record)
-            for record in self.db.data["workflows"].values()
-        ]
+        conn = self.db._read()
+        if conn is None:
+            return []
+        try:
+            rows = conn.execute(
+                "SELECT * FROM workflows ORDER BY rowid"
+            ).fetchall()
+        finally:
+            self.db._end_read(conn)
+        from .database import _record_dict
+
+        return [_record_dict(row) for row in rows]

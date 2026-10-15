@@ -10,11 +10,19 @@ Workflow Learning 模块测试
 测试全部在 TemporaryDirectory 里跑，不写脏仓库。
 """
 
+import os
 import sys
 import json
 import shutil
 from pathlib import Path
 from tempfile import TemporaryDirectory
+
+#: D5 会清空真实学习目录（comfyui_library/workflows/learning/，现在是 2 万+
+#: 条记录）再全量重学，单轮半小时起步，中途被杀 = 知识库半残。
+# 默认跳过；确需验证「统一位置端到端」时显式开：
+#   set COMFY_TEST_DESTRUCTIVE=1 && python -X utf8 -m engine.test_workflow_learning
+# 非 Windows：COMFY_TEST_DESTRUCTIVE=1 python -X utf8 -m engine.test_workflow_learning
+RUN_DESTRUCTIVE = os.environ.get("COMFY_TEST_DESTRUCTIVE") == "1"
 
 project_root = Path(__file__).parent.parent
 if str(project_root) not in sys.path:
@@ -763,10 +771,22 @@ def test_grep_friendliness():
 
 
 def test_default_location_end_to_end():
-    """端到端：不传路径，走统一位置（跑完还原）"""
+    """端到端：不传路径，走统一位置（跑完还原）
+
+    ⚠ 破坏性用例：备份整个 learning/ 到内存 → 清空 → 全量重学 → 还原。
+    库已涨到 2 万+ 条，单轮半小时起步；进程被杀（Ctrl-C / 服务重启 /
+    超时强杀）就留下半残知识库，只能 git checkout 还原。
+    因此默认跳过，需 COMFY_TEST_DESTRUCTIVE=1 显式开启。
+    """
     print("=" * 60)
     print("测试 D5：默认位置端到端")
     print("=" * 60)
+
+    if not RUN_DESTRUCTIVE:
+        print("  已跳过（破坏性：会清空 learning/ 全量重学）。\n"
+              "  需要时执行：set COMFY_TEST_DESTRUCTIVE=1 && "
+              "python -X utf8 -m engine.test_workflow_learning\n")
+        return
 
     ensure_state_dir()
 

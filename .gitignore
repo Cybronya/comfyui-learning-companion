@@ -32,3 +32,13 @@ engine/learning_scheduler/learning_queue.md
 # GitHub 100MB 单文件限制被拒推；全部可由学习记录重建（sync_database / save_all）
 comfyui_library/database/storage/*.json
 comfyui_library/knowledge/node_index.json
+# 2026-10-14 sqlite 迁移后新增的两个运行期产物，同样不入库：
+#   workflow_database.sqlite     物理库（~250MB），可由 sync_database() 从学习记录重建
+#   *.json.bak                   迁移前旧 JSON 的改名备份（1.3GB），确认无误即可删
+# 上面的 *.json 规则盖不到这两个（扩展名不是 .json / 带 .bak 后缀），
+# 漏写会导致 git add -A 把 1.5GB 塞进暂存区，推送必被 100MB 限制拒掉。
+comfyui_library/database/storage/*.sqlite
+comfyui_library/database/storage/*.sqlite-journal
+comfyui_library/database/storage/*.sqlite-wal
+comfyui_library/database/storage/*.sqlite-shm
+comfyui_library/database/storage/*.json.bak
