@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax-H3全链参考res_multistep加速｜参考生视频RH版文生视频_2089694071089614850.json
 hash: b25c64148ff64753
 coverage: 0.929577
-learned_at: 2026-10-11 21:19:46
+learned_at: 2026-10-15 22:46:25
 nodes: [RHMiniMaxH3Ref2VATextEncoderLoader, RHMiniMaxH3Ref2VAModelLoader, RHMiniMaxH3Ref2VAVAELoader, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAImageReference, RHMiniMaxH3Ref2VAVideoReference, RHMiniMaxH3Ref2VAAudioReference, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3DecodeAV, CreateVideo, SaveVideo, LoadImage, LoadImage, LoadVideo, RHMiniMaxH3Ref2VATarget, RHMiniMaxH3Ref2VAEncode, LoadAudio, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

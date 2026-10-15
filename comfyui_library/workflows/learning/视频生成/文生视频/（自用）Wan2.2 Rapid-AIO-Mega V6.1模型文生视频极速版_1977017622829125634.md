@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/（自用）Wan2.2 Rapid-AIO-Mega V6.1模型文生视频极速版_1977017622829125634.json
 hash: ee9f7e8a57647e5f
-coverage: 0.75
-learned_at: 2026-10-10 23:14:43
+coverage: 0.8
+learned_at: 2026-10-15 22:49:12
 nodes: [Note, JWInteger, KSampler, CheckpointLoaderSimple, Note, Note, WanVaceToVideo, ModelSamplingSD3, ApplySageAttention, CLIPTextEncode, JWInteger, JWInteger, Note, TT_img_enc, SaveImage, VAEDecode, ImageFromBatch+, LoadImage, SaveImage, CLIPTextEncode]
 patterns: []
-missing: [ImageFromBatch+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v6.1.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 7567358653673, "steps": 4}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/（自用）Wan2.2 Rapid-AIO-Mega V6.1模型文生视频极速版_1977017622829125634.json
@@ -58,11 +58,9 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **75%**（15/20）
+覆盖率 **80%**（16/20）
 
-**有卡**：`JWInteger`、`KSampler`、`CheckpointLoaderSimple`、`WanVaceToVideo`、`ModelSamplingSD3`、`ApplySageAttention`、`CLIPTextEncode`、`TT_img_enc`、`SaveImage`、`VAEDecode`、`LoadImage`
-
-**缺卡**（1）：`ImageFromBatch+`
+**有卡**：`JWInteger`、`KSampler`、`CheckpointLoaderSimple`、`WanVaceToVideo`、`ModelSamplingSD3`、`ApplySageAttention`、`CLIPTextEncode`、`TT_img_enc`、`SaveImage`、`VAEDecode`、`ImageFromBatch+`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、SaveImage、ModelSamplingSD3、JWInteger
 
@@ -73,5 +71,4 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

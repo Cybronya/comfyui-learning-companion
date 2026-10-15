@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.7，wan2.6，WAN系列图片+视频工作流合集_2056287622871474177.json
 hash: d3b0a7a569148fd0
 coverage: 0.944444
-learned_at: 2026-10-11 19:49:45
+learned_at: 2026-10-15 22:47:37
 nodes: [RH_AlibabaWan27VideoEdit, RH_AlibabaWan27VideoExtend, RH_AlibabaWan27ImageEditPro, RH_AlibabaWan27ReferenceToVideo, RH_Wan26_I2V_Flash, RH_Wan26_I2V_Flash_Custom, RH_Wan25_I2V, RH_Wan26_I2V, SaveImage, SaveImage, SaveImage, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, LoadVideo, LoadAudio, SaveVideo, RH_AlibabaWan27TextToImage, RH_AlibabaWan27TextToImagePro, RH_Wan25_T2V, RH_Wan26_T2V, RH_AlibabaWan27TextToVideo, RH_AlibabaWan27ImageEdit, SaveImage, LoadImage, RH_AlibabaWan27ImageToVideo, MarkdownNote, LoadImage, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.5 文生视频_1984991216800600065.json
 hash: 9feba91e985b287d
 coverage: 0.75
-learned_at: 2026-10-11 02:45:02
+learned_at: 2026-10-15 22:47:16
 nodes: [SaveVideo, LoadAudio, RH_Wan25_T2V, MarkdownNote]
 patterns: []
 missing: []

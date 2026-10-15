@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/template_eric_seedance_5_subject_and_outfit_combine.json
 hash: 8708c1b59cc3ffe8
 official: true
-coverage: 0.75
-learned_at: 2026-10-10 22:49:01
+coverage: 0.833333
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, RegexReplace, RegexReplace, PrimitiveStringMultiline, SaveImage, PrimitiveStringMultiline, 51b1c920-4b14-43ae-b339-8fce93d4377b, LoadImage, LoadImage, LoadImage, ByteDanceSeedreamNodeV2, ByteDanceSeedreamNodeV2]
 patterns: []
-missing: [51b1c920-4b14-43ae-b339-8fce93d4377b]
-discoveries: [次要节点 `51b1c920-4b14-43ae-b339-8fce93d4377b` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/template_eric_seedance_5_subject_and_outfit_combine.json
@@ -39,14 +38,8 @@ discoveries: [次要节点 `51b1c920-4b14-43ae-b339-8fce93d4377b` 知识库中�
 
 ## 知识
 
-覆盖率 **75%**（9/12）
+覆盖率 **83%**（10/12）
 
-**有卡**：`SaveImage`、`RegexReplace`、`LoadImage`、`ByteDanceSeedreamNodeV2`
+**有卡**：`SaveImage`、`RegexReplace`、`51b1c920-4b14-43ae-b339-8fce93d4377b`、`LoadImage`、`ByteDanceSeedreamNodeV2`
 
-**缺卡**（1）：`51b1c920-4b14-43ae-b339-8fce93d4377b`
-
-**用到的条目**：LoadImage、ByteDanceSeedreamNodeV2、SaveImage、RegexReplace、sd15-t2i-basic、sd15-t2i-lora、ByteDanceSeedreamNode、Seed
-
-## 学习发现
-
-- 次要节点 `51b1c920-4b14-43ae-b339-8fce93d4377b` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、ByteDanceSeedreamNodeV2、SaveImage、RegexReplace、51b1c920-4b14-43ae-b339-8fce93d4377b、sd15-t2i-basic、sd15-t2i-lora、ByteDanceSeedreamNode

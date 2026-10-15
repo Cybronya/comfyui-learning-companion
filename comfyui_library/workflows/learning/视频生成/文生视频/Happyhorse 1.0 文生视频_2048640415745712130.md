@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Happyhorse 1.0 文生视频_2048640415745712130.json
 hash: 0965c800035c8cc3
 coverage: 1
-learned_at: 2026-10-11 19:49:34
+learned_at: 2026-10-15 22:44:26
 nodes: [RH_AlibabaHappyhorse10TextToVideo, SaveVideo]
 patterns: []
 missing: []

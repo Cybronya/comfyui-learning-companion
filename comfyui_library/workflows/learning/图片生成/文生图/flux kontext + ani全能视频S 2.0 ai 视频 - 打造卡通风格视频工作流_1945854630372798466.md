@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
 hash: d1cf0b3d4e5b3bf4
-coverage: 0.837838
-learned_at: 2026-10-10 20:59:18
+coverage: 0.918919
+learned_at: 2026-10-15 22:27:43
 nodes: [WanVideoExperimentalArgs, WanVideoSLG, VAELoader, FluxKontextImageScale, LayerUtility: PurgeVRAM V2, ImageResizeKJv2, CLIPTextEncode, KSampler, VAEEncode, ReferenceLatent, FluxGuidance, EmptySD3LatentImage, ConditioningZeroOut, WanVideoBlockSwap, ImageResizeKJv2, WanVideoClipVisionEncode, WanVideoDecode, LayerUtility: PurgeVRAM V2, UNETLoader, DualCLIPLoader, LoadImage, WanVideoLoraSelect, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, CLIPVisionLoader, PreviewImage, VAEDecode, SetNode, GetNode, WanVideoImageToVideoEncode, WanVideoTextEncode, Power Lora Loader (rgthree), WanVideoEnhanceAVideo, WanVideoSampler, WanVideoFreeInitArgs, VHS_VideoCombine]
 patterns: [image_to_image]
-missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, Power Lora Loader (rgthree)]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 885189490893767, "steps": 10}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/flux kontext + ani全能视频S 2.0 ai 视频 - 打造卡通风格视频工作流_1945854630372798466.json
@@ -21,6 +20,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（37 个）：
 - `WanVideoExperimentalArgs`
 - `WanVideoSLG`
@@ -28,9 +29,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `FluxKontextImageScale`
 - `LayerUtility: PurgeVRAM V2`
 - `ImageResizeKJv2`
-- `CLIPTextEncode`
-- `KSampler`
-- `VAEEncode`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAEEncode` ★核心
 - `ReferenceLatent`
 - `FluxGuidance`
 - `EmptySD3LatentImage`
@@ -40,7 +41,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `WanVideoClipVisionEncode`
 - `WanVideoDecode`
 - `LayerUtility: PurgeVRAM V2`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `LoadImage`
 - `WanVideoLoraSelect`
@@ -49,14 +50,14 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `WanVideoVAELoader`
 - `CLIPVisionLoader`
 - `PreviewImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetNode`
 - `GetNode`
 - `WanVideoImageToVideoEncode`
 - `WanVideoTextEncode`
 - `Power Lora Loader (rgthree)`
 - `WanVideoEnhanceAVideo`
-- `WanVideoSampler`
+- `WanVideoSampler` ★核心
 - `WanVideoFreeInitArgs`
 - `VHS_VideoCombine`
 
@@ -64,23 +65,17 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `885189490893767`
 - `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **84%**（31/37）
+覆盖率 **92%**（34/37）
 
-**有卡**：`WanVideoExperimentalArgs`、`WanVideoSLG`、`VAELoader`、`FluxKontextImageScale`、`LayerUtility: PurgeVRAM V2`、`ImageResizeKJv2`、`CLIPTextEncode`、`KSampler`、`VAEEncode`、`ReferenceLatent`、`FluxGuidance`、`EmptySD3LatentImage`、`ConditioningZeroOut`、`WanVideoBlockSwap`、`WanVideoClipVisionEncode`、`WanVideoDecode`、`UNETLoader`、`DualCLIPLoader`、`LoadImage`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`CLIPVisionLoader`、`PreviewImage`、`VAEDecode`、`SetNode`、`GetNode`、`WanVideoImageToVideoEncode`
+**有卡**：`WanVideoExperimentalArgs`、`WanVideoSLG`、`VAELoader`、`FluxKontextImageScale`、`LayerUtility: PurgeVRAM V2`、`ImageResizeKJv2`、`CLIPTextEncode`、`KSampler`、`VAEEncode`、`ReferenceLatent`、`FluxGuidance`、`EmptySD3LatentImage`、`ConditioningZeroOut`、`WanVideoBlockSwap`、`WanVideoClipVisionEncode`、`WanVideoDecode`、`UNETLoader`、`DualCLIPLoader`、`LoadImage`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`CLIPVisionLoader`、`VAEDecode`、`WanVideoImageToVideoEncode`、`WanVideoTextEncode`、`Power Lora Loader (rgthree)`、`WanVideoEnhanceAVideo`、`WanVideoSampler`、`WanVideoFreeInitArgs`、`VHS_VideoCombine`
 
-**缺卡**（3）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`Power Lora Loader (rgthree)`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、FluxGuidance

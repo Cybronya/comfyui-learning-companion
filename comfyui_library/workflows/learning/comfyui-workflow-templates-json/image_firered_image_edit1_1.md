@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_firered_image_edit1_1.json
 hash: be0b3d285cf4f746
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:47:32
+coverage: 0.75
+learned_at: 2026-10-15 22:24:53
 nodes: [LoadImage, MarkdownNote, SaveImage, 1db9ada8-0f48-4990-95fc-9df56969dd2d]
 patterns: []
-missing: [1db9ada8-0f48-4990-95fc-9df56969dd2d]
-discoveries: [次要节点 `1db9ada8-0f48-4990-95fc-9df56969dd2d` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_firered_image_edit1_1.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `1db9ada8-0f48-4990-95fc-9df56969dd2d` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（2/4）
+覆盖率 **75%**（3/4）
 
-**有卡**：`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`SaveImage`、`1db9ada8-0f48-4990-95fc-9df56969dd2d`
 
-**缺卡**（1）：`1db9ada8-0f48-4990-95fc-9df56969dd2d`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `1db9ada8-0f48-4990-95fc-9df56969dd2d` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、1db9ada8-0f48-4990-95fc-9df56969dd2d、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput

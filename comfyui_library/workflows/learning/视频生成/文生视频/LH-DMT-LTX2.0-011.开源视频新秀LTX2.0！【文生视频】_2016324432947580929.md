@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LH-DMT-LTX2.0-011.开源视频新秀LTX2.0！【文生视频】_2016324432947580929.json
 hash: 812862f0cd7126f1
-coverage: 0.72
-learned_at: 2026-10-11 03:07:08
+coverage: 0.82
+learned_at: 2026-10-15 22:44:31
 nodes: [easy int, easy int, easy int, CR Text, PrimitiveNode, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, EmptyImage, ImageScaleBy, GetImageSize, PrimitiveInt, PrimitiveFloat, MarkdownNote, LTXVConditioning, CLIPTextEncode, CLIPTextEncode, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, MarkdownNote, MarkdownNote, LoraLoaderModelOnly, LoraLoaderModelOnly, RandomNoise, CFGGuider, KSamplerSelect, LTXVScheduler, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVLatentUpsampler, Reroute, LoraLoaderModelOnly, LatentUpscaleModelLoader, RandomNoise, LTXVSeparateAVLatent, ManualSigmas, LTXVConcatAVLatent, KSamplerSelect, SamplerCustomAdvanced, CFGGuider, CreateVideo, VAEDecodeTiled, VAEDecode, LTXVAudioVAEDecode, SimpleMath+, SaveVideo, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [CR Text, SimpleMath+, easy int, easy int, easy int]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LH-DMT-LTX2.0-011.开源视频新秀LTX2.0！【文生视频】_2016324432947580929.json
@@ -84,18 +83,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **72%**（36/50）
+覆盖率 **82%**（41/50）
 
-**有卡**：`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`EmptyImage`、`ImageScaleBy`、`GetImageSize`、`LTXVConditioning`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LoraLoaderModelOnly`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`LTXVScheduler`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`ManualSigmas`、`CreateVideo`、`VAEDecodeTiled`、`VAEDecode`、`LTXVAudioVAEDecode`、`SaveVideo`
-
-**缺卡**（5）：`CR Text`、`SimpleMath+`、`easy int`、`easy int`、`easy int`
+**有卡**：`easy int`、`CR Text`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`EmptyImage`、`ImageScaleBy`、`GetImageSize`、`LTXVConditioning`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LoraLoaderModelOnly`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`LTXVScheduler`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`ManualSigmas`、`CreateVideo`、`VAEDecodeTiled`、`VAEDecode`、`LTXVAudioVAEDecode`、`SimpleMath+`、`SaveVideo`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

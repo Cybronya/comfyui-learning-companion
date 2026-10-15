@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2_fp8.json
 hash: 8c1135eec9597603
 official: true
-coverage: 0.6
-learned_at: 2026-10-10 22:47:34
+coverage: 0.8
+learned_at: 2026-10-15 22:24:53
 nodes: [SaveImage, LoadImage, LoadImage, MarkdownNote, 406cf93b-f2d9-4ec9-a89b-45c1956ea70a]
 patterns: []
-missing: [406cf93b-f2d9-4ec9-a89b-45c1956ea70a]
-discoveries: [次要节点 `406cf93b-f2d9-4ec9-a89b-45c1956ea70a` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_flux2_fp8.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `406cf93b-f2d9-4ec9-a89b-45c1956ea70a` 知识库中�
 
 ## 知识
 
-覆盖率 **60%**（3/5）
+覆盖率 **80%**（4/5）
 
-**有卡**：`SaveImage`、`LoadImage`
+**有卡**：`SaveImage`、`LoadImage`、`406cf93b-f2d9-4ec9-a89b-45c1956ea70a`
 
-**缺卡**（1）：`406cf93b-f2d9-4ec9-a89b-45c1956ea70a`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `406cf93b-f2d9-4ec9-a89b-45c1956ea70a` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、406cf93b-f2d9-4ec9-a89b-45c1956ea70a、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.0智能提示词动态强化运镜加速低显存版文生视频V1_2009271528722010113.json
 hash: 63973146736e05da
-coverage: 0.7
-learned_at: 2026-10-11 03:07:10
+coverage: 0.75
+learned_at: 2026-10-15 22:44:55
 nodes: [MarkdownNote, LTXVScheduler, ManualSigmas, LatentUpscaleModelLoader, LTXVCropGuides, CFGGuider, ImageScaleBy, GetImageSize, LTXVEmptyLatentAudio, LTXVConditioning, EmptyLTXVLatentVideo, LTXVConcatAVLatent, CLIPTextEncode, EmptyImage, SamplerCustomAdvanced, RandomNoise, RandomNoise, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVLatentUpsampler, SamplerCustomAdvanced, Reroute, CLIPTextEncode, LTXVSeparateAVLatent, VAEDecode, VAEDecodeTiled, LTXVAudioVAEDecode, CFGGuider, PrimitiveFloat, PrimitiveInt, MarkdownNote, LoraLoaderModelOnly, KSamplerSelect, KSamplerSelect, MarkdownNote, MarkdownNote, LTXVAudioVAELoader, LTXAVTextEncoderLoader, Note, Note, Note, Note, Note, PrimitiveInt, easy anythingIndexSwitch, RH_LLMAPI_Pro_Node, JWInteger, JWInteger, JWInteger, CreateVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, VRAMReserver, MarkdownNote, SaveVideo, SaveVideo, Note, CR Prompt Text, CR Prompt Text]
 patterns: []
-missing: [easy anythingIndexSwitch, CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.0智能提示词动态强化运镜加速低显存版文生视频V1_2009271528722010113.json
@@ -94,16 +93,8 @@ discoveries: [次要节点 `easy anythingIndexSwitch` 知识库中没有该节�
 
 ## 知识
 
-覆盖率 **70%**（42/60）
+覆盖率 **75%**（45/60）
 
-**有卡**：`LTXVScheduler`、`ManualSigmas`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`CFGGuider`、`ImageScaleBy`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`EmptyImage`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`KSamplerSelect`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`RH_LLMAPI_Pro_Node`、`JWInteger`、`CreateVideo`、`CheckpointLoaderSimple`、`VRAMReserver`、`SaveVideo`
-
-**缺卡**（3）：`easy anythingIndexSwitch`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LTXVScheduler`、`ManualSigmas`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`CFGGuider`、`ImageScaleBy`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`EmptyImage`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`KSamplerSelect`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`easy anythingIndexSwitch`、`RH_LLMAPI_Pro_Node`、`JWInteger`、`CreateVideo`、`CheckpointLoaderSimple`、`VRAMReserver`、`SaveVideo`、`CR Prompt Text`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

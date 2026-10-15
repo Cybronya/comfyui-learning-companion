@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json
 hash: 42e7e9a91e260ef6
-coverage: 0.744681
-learned_at: 2026-10-12 21:05:48
+coverage: 0.914894
+learned_at: 2026-10-15 22:42:57
 nodes: [JWInteger, JWInteger, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, KSamplerAdvanced, ModelSamplingSD3, WanImageToVideo, CLIPLoader, VAELoader, VAELoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, PathchSageAttentionKJ, CR Text Replace, RH_Captioner, TextBox, UNETLoader, CLIPTextEncode, CLIPTextEncode, TextBox, TextBox, CR Text Concatenate, LayerUtility: PurgeVRAM, TextBox, TextBox, Primitive integer [Crystools], SimpleMath+, Primitive integer [Crystools], PrimitiveBoolean, KSamplerAdvanced, VAEDecode, VHS_VideoCombine, RHHiddenNodes, easy ifElse, TextBox, TextBox, ImageResizeKJ, ImageResizeKJ, VHS_VideoCombine, LoadImage, MarkdownNote, easy showAnything, LoadImage, ImpactSwitch]
 patterns: []
-missing: [CR Text Concatenate, CR Text Replace, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, Primitive integer [Crystools], Primitive integer [Crystools], SimpleMath+]
+missing: []
 parameters: {"cfg": 7, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/图生视频/Wan2.2-高速版-直出720p -自动提示词_1949982975842803713.json
@@ -83,21 +82,8 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **74%**（35/47）
+覆盖率 **91%**（43/47）
 
-**有卡**：`JWInteger`、`KSamplerAdvanced`、`ModelSamplingSD3`、`WanImageToVideo`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`PathchSageAttentionKJ`、`RH_Captioner`、`TextBox`、`CLIPTextEncode`、`PrimitiveBoolean`、`VAEDecode`、`VHS_VideoCombine`、`RHHiddenNodes`、`ImageResizeKJ`、`LoadImage`
-
-**缺卡**（8）：`CR Text Concatenate`、`CR Text Replace`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`SimpleMath+`
+**有卡**：`JWInteger`、`LayerUtility: PurgeVRAM`、`KSamplerAdvanced`、`ModelSamplingSD3`、`WanImageToVideo`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`PathchSageAttentionKJ`、`CR Text Replace`、`RH_Captioner`、`TextBox`、`CLIPTextEncode`、`CR Text Concatenate`、`Primitive integer [Crystools]`、`SimpleMath+`、`PrimitiveBoolean`、`VAEDecode`、`VHS_VideoCombine`、`RHHiddenNodes`、`ImageResizeKJ`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

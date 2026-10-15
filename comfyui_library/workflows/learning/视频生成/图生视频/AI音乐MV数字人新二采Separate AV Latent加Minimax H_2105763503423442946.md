@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H_2105763503423442946.json
 hash: 131d6158ae15200e
 coverage: 0.890411
-learned_at: 2026-10-10 22:51:49
+learned_at: 2026-10-15 22:42:35
 nodes: [MiniMaxChunkFeedForward, CLIPLoader, VAELoader, VAELoader, VAEDecode, MiniMaxLowVRAMAttention, Reroute, SoundFlow_GetLength, ComfyMathExpression, ComfyNumberConvert, PreviewAny, LTXVSeparateAVLatent, ConditioningZeroOut, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, LoadImage, KSamplerSelect, TrimAudioDuration, LoadAudio, PrimitiveFloat, PrimitiveFloat, ResolutionSelector, LoadImage, Textbox, VHS_VideoCombine, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, MiniMaxH3ReferenceToVideo, ModelAttentionBackend, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SelfLiftAvatarH3Sampler, BasicScheduler, LTXVSeparateAVLatent, LTXVAudioVAEEncode, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
 missing: []

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成_2098794614286274562.json
 hash: 2916c8f60d02a529
-coverage: 0.954545
-learned_at: 2026-10-10 23:00:54
+coverage: 0.977273
+learned_at: 2026-10-15 22:45:26
 nodes: [CLIPLoader, VAELoader, LoadImage, LoadImage, Int, RH_Screenwriter, ComfyMathExpression, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, WujiCleaner, MiniMaxH3SemanticBridgeConfigT8, MiniMaxH3HyperVAE2xLoaderEXPT8, VAEDecode, MiniMaxH3OutputTrimT8, WujiCleaner, MiniMaxH3AVDecodeT8, CM_IntToFloat, VAELoader, PrimitiveStringMultiline, List of strings [Crystools], MiniMaxH3AudioConditioningT8, ResolutionSelector, MiniMaxH3SemanticBridgeApplyT8, ConditioningZeroOut, KSamplerSelect, WujiCleaner, SelfLiftAvatarH3Sampler, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, BlockSparseAttention, H3SigmaRefiner, MiniMaxH3SigmaShift, MiniMaxH3ChunkFeedForwardT8Advanced, LoraLoaderBypassModelOnly, MiniMaxH3VDNRuntimeAuditT8Advanced, LoraLoaderModelOnly, BasicScheduler, LoraLoaderModelOnly, WujiH3PromptEnhancer, VHS_VideoCombine, UNETLoader]
 patterns: []
-missing: [List of strings [Crystools]]
-discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成_2098794614286274562.json
@@ -70,14 +69,8 @@ discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该�
 
 ## 知识
 
-覆盖率 **95%**（42/44）
+覆盖率 **98%**（43/44）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`LoadImage`、`Int`、`RH_Screenwriter`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`WujiCleaner`、`MiniMaxH3SemanticBridgeConfigT8`、`MiniMaxH3HyperVAE2xLoaderEXPT8`、`VAEDecode`、`MiniMaxH3OutputTrimT8`、`MiniMaxH3AVDecodeT8`、`CM_IntToFloat`、`MiniMaxH3AudioConditioningT8`、`ResolutionSelector`、`MiniMaxH3SemanticBridgeApplyT8`、`ConditioningZeroOut`、`KSamplerSelect`、`SelfLiftAvatarH3Sampler`、`LoraLoaderModelOnly`、`BlockSparseAttention`、`H3SigmaRefiner`、`MiniMaxH3SigmaShift`、`MiniMaxH3ChunkFeedForwardT8Advanced`、`LoraLoaderBypassModelOnly`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`BasicScheduler`、`WujiH3PromptEnhancer`、`VHS_VideoCombine`、`UNETLoader`
-
-**缺卡**（1）：`List of strings [Crystools]`
+**有卡**：`CLIPLoader`、`VAELoader`、`LoadImage`、`Int`、`RH_Screenwriter`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`WujiCleaner`、`MiniMaxH3SemanticBridgeConfigT8`、`MiniMaxH3HyperVAE2xLoaderEXPT8`、`VAEDecode`、`MiniMaxH3OutputTrimT8`、`MiniMaxH3AVDecodeT8`、`CM_IntToFloat`、`List of strings [Crystools]`、`MiniMaxH3AudioConditioningT8`、`ResolutionSelector`、`MiniMaxH3SemanticBridgeApplyT8`、`ConditioningZeroOut`、`KSamplerSelect`、`SelfLiftAvatarH3Sampler`、`LoraLoaderModelOnly`、`BlockSparseAttention`、`H3SigmaRefiner`、`MiniMaxH3SigmaShift`、`MiniMaxH3ChunkFeedForwardT8Advanced`、`LoraLoaderBypassModelOnly`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`BasicScheduler`、`WujiH3PromptEnhancer`、`VHS_VideoCombine`、`UNETLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `List of strings [Crystools]` 知识库中没有该节点类型的任何知识

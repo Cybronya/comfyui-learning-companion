@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_image_st
 hash: d00b088bdba0d456
 official: true
 coverage: 0.9
-learned_at: 2026-10-10 22:49:46
+learned_at: 2026-10-15 22:24:57
 nodes: [LoadImage, LoadImage, ImageStitch, ResizeImageMaskNode, ImageStitch, ImageStitch, SaveImage, LoadImage, MarkdownNote, LoadImage]
 patterns: []
 missing: []

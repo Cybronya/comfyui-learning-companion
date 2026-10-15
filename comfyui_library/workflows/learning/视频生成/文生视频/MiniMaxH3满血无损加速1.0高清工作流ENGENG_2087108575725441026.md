@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMaxH3满血无损加速1.0高清工作流ENGENG_2087108575725441026.json
 hash: 3b563211c3132691
 coverage: 0.688172
-learned_at: 2026-10-11 20:53:44
+learned_at: 2026-10-15 22:46:28
 nodes: [ResolutionSelector, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, CreateVideo, BasicScheduler, MarkdownNote, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicGuider, RandomNoise, CreateVideo, BasicScheduler, SamplerCustomAdvanced, SaveVideo, MarkdownNote, ComfyMathExpression, ComfyMathExpression, CLIPLoader, KSamplerSelect, BasicGuider, RandomNoise, MiniMaxH3ReferenceToVideo, LoadImage, PrimitiveFloat, ResolutionSelector, PrimitiveFloat, MarkdownNote, MarkdownNote, MarkdownNote, SaveVideo, MiniMaxH3ReferenceToVideo, CLIPLoader, BasicGuider, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, BasicScheduler, ComfyMathExpression, MiniMaxH3ReferenceToVideo, PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Groups Bypasser (rgthree), Note, UniBlockSwap, PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Groups Bypasser (rgthree), Note, UNETLoader, UniBlockSwap, EasyCache, PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Groups Bypasser (rgthree), Note, LoadImage, LoadImage, LoadImage, UNETLoader, Fast Groups Bypasser (rgthree), UNETLoader, MarkdownNote, SamplerCustomAdvanced, VAEDecodeAudio, VAEDecode, PrimitiveFloat, PrimitiveStringMultiline, ResolutionSelector, CLIPLoader, VAELoader, VAELoader, LoadImage, MarkdownNote, UniBlockSwap, EasyCache, EasyCache, PrimitiveStringMultiline, PrimitiveStringMultiline, VHS_VideoCombine, MarkdownNote, Note, Note, Note, Note, Note, Note, Note, Note]
 patterns: []
 missing: []

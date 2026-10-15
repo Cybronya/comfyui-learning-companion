@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen2.1文生图_2104275580962304002.json
 hash: 03e2c7ce7617bebc
 coverage: 0.909091
-learned_at: 2026-10-10 20:59:25
+learned_at: 2026-10-15 22:27:54
 nodes: [ResolutionSelector, EmptyLatentImage, VAEDecode, KSampler, ComfySwitchNode, QwenImage21Cache, TextEncodeQwenImage21, SaveImage, VAELoader, CLIPLoader, UNETLoader]
 patterns: []
 missing: []
@@ -20,33 +20,37 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（11 个）：
 - `ResolutionSelector`
-- `EmptyLatentImage`
-- `VAEDecode`
-- `KSampler`
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `KSampler` ★核心
 - `ComfySwitchNode`
 - `QwenImage21Cache`
 - `TextEncodeQwenImage21`
 - `SaveImage`
 - `VAELoader`
 - `CLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `331652005049054`
 - `steps` = `25`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **91%**（10/11）
 
-**有卡**：`ResolutionSelector`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`ComfySwitchNode`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`SaveImage`、`VAELoader`、`CLIPLoader`
+**有卡**：`ResolutionSelector`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`SaveImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、QwenImage21Cache

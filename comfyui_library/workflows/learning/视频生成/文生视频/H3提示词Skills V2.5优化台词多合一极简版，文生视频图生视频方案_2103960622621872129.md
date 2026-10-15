@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/H3提示词Skills V2.5优化台词多合一极简版，文生视频图生视频方案_2103960622621872129.json
 hash: eaa331fbf413a460
 coverage: 0.892857
-learned_at: 2026-10-11 22:12:32
+learned_at: 2026-10-15 22:44:21
 nodes: [BasicGuider, RandomNoise, KSamplerSelect, MiniMaxH3EasyOutput, LoadVideo, SamplerCustomAdvanced, MiniMaxH3EasyLoader, BasicScheduler, VAEDecode, VAEDecodeAudio, LoraLoaderModelOnly, ModelAttentionBackend, SamplerCustomAdvanced, ModelPreviewOverrideKJ, VHS_VideoCombine, MiniMaxH3EasyMediaLoader, PrimitiveStringMultiline, SplitSigmas, VAEDecodeAudio, VAEDecode, VHS_VideoCombine, LTXVSeparateAVLatent, LTXVConcatAVLatent, MinimaxH3LatentUpscaler3D, PrimitiveStringMultiline, MiniMaxH3Easy, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
 missing: []

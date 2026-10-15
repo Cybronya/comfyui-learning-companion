@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文生视频+图生视频_2034150036669472770.json
 hash: 2cbfe845a13aef40
 coverage: 0.48913
-learned_at: 2026-10-11 03:48:36
+learned_at: 2026-10-15 22:45:10
 nodes: [RandomNoise, CFGGuider, RandomNoise, KSamplerSelect, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, SetNode, LTXVConditioning, GetNode, LTXVImgToVideoConditionOnly, GetNode, GetNode, CFGGuider, GetNode, GetNode, GetNode, GetNode, GetNode, KSamplerSelect, ManualSigmas, GetNode, GetNode, GetNode, ManualSigmas, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVSeparateAVLatent, LTXVAudioVAELoader, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, CheckpointLoaderSimple, LoraLoaderModelOnly, SamplerCustomAdvanced, GetNode, LTXVEmptyLatentAudio, GetNode, LTXVPreprocess, GetNode, math_calculate, CM_FloatToInt, LTXVConcatAVLatent, SetNode, VAEDecodeTiled, LTXVAudioVAEDecode, LoadImage, Note, Note, Note, ImageResizeKJv2, GetNode, EmptyLTXVLatentVideo, GetNode, SetNode, SetNode, SetNode, SetNode, LatentUpscaleModelLoader, SetNode, SetNode, SetNode, CLIPTextEncode, CLIPTextEncode, SetNode, SetNode, LTXAVTextEncoderLoader, GetNode, GetNode, LTXVImgToVideoConditionOnly, GetNode, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVLatentUpsampler, SamplerCustomAdvanced, Int, Float, SetNode, Int, Int, VHS_VideoCombine, Text, VHS_VideoCombine, Bool]
 patterns: []
 missing: []

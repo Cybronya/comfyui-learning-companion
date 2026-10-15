@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json
 hash: 560b00d741105807
-coverage: 0.788462
-learned_at: 2026-10-10 20:58:50
+coverage: 0.807692
+learned_at: 2026-10-15 22:26:56
 nodes: [KSampler, QwenImage21Cache, EmptyLatentImage, TextEncodeQwenImage21, TextGenerate, ComfySwitchNode, PreviewAny, CLIPLoader, PrimitiveStringMultiline, CR Prompt Text, UNETLoader, UNETLoader, ComfySwitchNode, ComfySwitchNode, PrimitiveBoolean, CLIPLoader, CLIPLoader, VAELoader, ResolutionSelector, PrimitiveBoolean, PrimitiveInt, VAEDecode, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen 2.1文生图工作流，高质量文本到图像生成方案_2107183009446326274.json
@@ -22,10 +22,12 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（52 个）：
-- `KSampler`
+- `KSampler` ★核心
 - `QwenImage21Cache`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `TextEncodeQwenImage21`
 - `TextGenerate`
 - `ComfySwitchNode`
@@ -33,8 +35,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `CLIPLoader`
 - `PrimitiveStringMultiline`
 - `CR Prompt Text`
-- `UNETLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 - `ComfySwitchNode`
 - `ComfySwitchNode`
 - `PrimitiveBoolean`
@@ -44,34 +46,34 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `ResolutionSelector`
 - `PrimitiveBoolean`
 - `PrimitiveInt`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `EmptyLatentImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `JjkText`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `solarL_SaveImagesToZip`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -80,23 +82,23 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
-- `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
 - `seed` = `598626327129635`
 - `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 - `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **79%**（41/52）
+覆盖率 **81%**（42/52）
 
-**有卡**：`KSampler`、`QwenImage21Cache`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`TextGenerate`、`ComfySwitchNode`、`PreviewAny`、`CLIPLoader`、`PrimitiveStringMultiline`、`CR Prompt Text`、`UNETLoader`、`PrimitiveBoolean`、`VAELoader`、`ResolutionSelector`、`PrimitiveInt`、`VAEDecode`、`SaveImage`、`孤海注释`、`LoraLoaderModelOnly`
+**有卡**：`KSampler`、`QwenImage21Cache`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`TextGenerate`、`CLIPLoader`、`CR Prompt Text`、`UNETLoader`、`PrimitiveBoolean`、`VAELoader`、`ResolutionSelector`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（1）：`CR Prompt Text`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 
@@ -105,5 +107,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

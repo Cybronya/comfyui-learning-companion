@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 1.5 Pro  文生视频｜支持1080P_2097525926488797186.json
 hash: 4becbc653a9823e6
 coverage: 1
-learned_at: 2026-10-10 23:05:20
+learned_at: 2026-10-15 22:46:57
 nodes: [MuyeTextEditOutput, SaveVideo, RH_SeedanceV15ProTextToVideo]
 patterns: []
 missing: []
@@ -32,4 +32,4 @@ missing: []
 
 **有卡**：`MuyeTextEditOutput`、`SaveVideo`、`RH_SeedanceV15ProTextToVideo`
 
-**用到的条目**：RH_SeedanceV15ProTextToVideo、MuyeTextEditOutput、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Text、sampler_name 调整经验
+**用到的条目**：RH_SeedanceV15ProTextToVideo、MuyeTextEditOutput、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Text

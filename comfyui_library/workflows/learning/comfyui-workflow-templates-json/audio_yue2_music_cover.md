@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_yue2_music_cover.json
 hash: a97b840edaaaf4ef
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:47:02
+coverage: 0.75
+learned_at: 2026-10-15 22:24:52
 nodes: [SaveAudioAdvanced, 59dddde1-2d83-4b6e-9c71-1e5cb2d823d6, LoadAudio, MarkdownNote]
 patterns: []
-missing: [59dddde1-2d83-4b6e-9c71-1e5cb2d823d6]
-discoveries: [次要节点 `59dddde1-2d83-4b6e-9c71-1e5cb2d823d6` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/audio_yue2_music_cover.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `59dddde1-2d83-4b6e-9c71-1e5cb2d823d6` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（2/4）
+覆盖率 **75%**（3/4）
 
-**有卡**：`SaveAudioAdvanced`、`LoadAudio`
+**有卡**：`SaveAudioAdvanced`、`59dddde1-2d83-4b6e-9c71-1e5cb2d823d6`、`LoadAudio`
 
-**缺卡**（1）：`59dddde1-2d83-4b6e-9c71-1e5cb2d823d6`
-
-**用到的条目**：SaveAudioAdvanced、LoadAudio、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `59dddde1-2d83-4b6e-9c71-1e5cb2d823d6` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveAudioAdvanced、LoadAudio、59dddde1-2d83-4b6e-9c71-1e5cb2d823d6、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage、CS_Preview_Any

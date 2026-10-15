@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.1 stand in 人物一致性_1957474365233360898.json
 hash: ce69ef69f9f420e4
 coverage: 0.6
-learned_at: 2026-10-10 23:09:30
+learned_at: 2026-10-15 22:47:34
 nodes: [WanVideoBlockSwap, WanVideoTorchCompileSettings, SetNode, SetNode, SetNode, FaceProcessorLoader, ApplyFaceProcessor, PreviewImage, GetNode, GetNode, WanVideoDecode, WanVideoEncode, WanVideoAddStandInLatent, SetNode, WanVideoLoraSelectMulti, GetNode, GetNode, GetNode, WanVideoVAELoader, WanVideoModelLoader, WanVideoEmptyEmbeds, WanVideoSampler, VHS_VideoCombine, LoadImage, WanVideoTextEncodeCached]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI代码侠土豆-Wan2.2_SmoothMix_T2V_1979789891196325889.json
 hash: 235da0104f7e6da1
-coverage: 0.742857
-learned_at: 2026-10-11 02:44:59
+coverage: 0.8
+learned_at: 2026-10-15 22:43:59
 nodes: [SetNode, SetNode, ImpactInt, SetNode, UnetLoaderGGUF, UnetLoaderGGUF, VAELoader, easy cleanGpuUsed, VAEDecode, Reroute, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, WanImageToVideo, GetNode, GetNode, GetNode, wanBlockSwap, wanBlockSwap, ImpactInt, ImpactInt, VHS_VideoCombine, CLIPLoader, LoraLoaderModelOnly, ModelPatchTorchSettings, PathchSageAttentionKJ, ModelPatchTorchSettings, CLIPTextEncode, CLIPTextEncode, UNETLoader, UnetLoaderGGUF, LoraLoaderModelOnly, WanMoeKSampler, SimpleMath+]
 patterns: []
-missing: [SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"cfg": 8, "denoise": "euler_ancestral", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "fixed"}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/AI代码侠土豆-Wan2.2_SmoothMix_T2V_1979789891196325889.json
@@ -71,15 +70,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **74%**（26/35）
+覆盖率 **80%**（28/35）
 
-**有卡**：`ImpactInt`、`UnetLoaderGGUF`、`VAELoader`、`VAEDecode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`UNETLoader`、`WanImageToVideo`、`wanBlockSwap`、`VHS_VideoCombine`、`CLIPLoader`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`WanMoeKSampler`
-
-**缺卡**（2）：`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`ImpactInt`、`UnetLoaderGGUF`、`VAELoader`、`easy cleanGpuUsed`、`VAEDecode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`UNETLoader`、`WanImageToVideo`、`wanBlockSwap`、`VHS_VideoCombine`、`CLIPLoader`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`WanMoeKSampler`、`SimpleMath+`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、ImpactInt
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_quiver_arrow
 hash: a706b115c58167b6
 official: true
 coverage: 0.75
-learned_at: 2026-10-10 22:45:39
+learned_at: 2026-10-15 22:24:51
 nodes: [SaveSVGNode, QuiverImageToSVGNode, LoadImage, MarkdownNote]
 patterns: []
 missing: []

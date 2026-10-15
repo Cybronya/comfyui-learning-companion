@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0全能参考可真人（图片_视频_音频）短剧_影视视频_短视频_频生成利器_2051207473981341698.json
 hash: 7d62d2c3210ccffc
 coverage: 0.875
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo, LoadImage, LoadImage, LoadVideo, LoadAudio, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []
@@ -37,4 +37,4 @@ missing: []
 
 **有卡**：`LoadImage`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`SaveVideo`、`LoadVideo`、`LoadAudio`
 
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load

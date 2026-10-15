@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/『最优实现』LTX 2.3 双人对话增强版_2048727968108781570.json
 hash: 7f433bc2f86cc0b0
-coverage: 0.928571
-learned_at: 2026-10-11 19:49:45
+coverage: 0.964286
+learned_at: 2026-10-15 22:47:38
 nodes: [CLIPTextEncode, image_scale_pixel_v2, PrimitiveFloat, LayerUtility: PurgeVRAM V2, CheckpointLoaderSimple, LoraLoaderModelOnly, Seed Everywhere, LoadImage, KSamplerSelect, ManualSigmas, KSamplerSelect, ManualSigmas, KSamplerSelect, ManualSigmas, LTXVAudioVAELoader, LatentUpscaleModelLoader, PrimitiveBoolean, RandomNoise, RandomNoise, RandomNoise, LTXAVTextEncoderLoader, CM_FloatToInt, Image_Resize_longsize, LTXVEmptyLatentAudio, LTXVConditioning, LTX2_NAG, LTXVConcatAVLatent, CFGGuider, CFGGuider, CFGGuider, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CreateVideo, DisTorchPurgeVRAMV2, LTXVPreprocess, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, PromptRelayEncode, VRAMReserver, PathchSageAttentionKJ, VAEDecodeTiled, SaveVideo, PrimitiveInt]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, Seed Everywhere]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/『最优实现』LTX 2.3 双人对话增强版_2048727968108781570.json
@@ -90,15 +89,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **93%**（52/56）
+覆盖率 **96%**（54/56）
 
-**有卡**：`CLIPTextEncode`、`image_scale_pixel_v2`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`LoadImage`、`KSamplerSelect`、`ManualSigmas`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`PrimitiveBoolean`、`RandomNoise`、`LTXAVTextEncoderLoader`、`CM_FloatToInt`、`Image_Resize_longsize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTX2_NAG`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVImgToVideoConditionOnly`、`LTXVAudioVAEDecode`、`CreateVideo`、`DisTorchPurgeVRAMV2`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`VRAMReserver`、`PathchSageAttentionKJ`、`VAEDecodeTiled`、`SaveVideo`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`Seed Everywhere`
+**有卡**：`CLIPTextEncode`、`image_scale_pixel_v2`、`LayerUtility: PurgeVRAM V2`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`Seed Everywhere`、`LoadImage`、`KSamplerSelect`、`ManualSigmas`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`PrimitiveBoolean`、`RandomNoise`、`LTXAVTextEncoderLoader`、`CM_FloatToInt`、`Image_Resize_longsize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTX2_NAG`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVImgToVideoConditionOnly`、`LTXVAudioVAEDecode`、`CreateVideo`、`DisTorchPurgeVRAMV2`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`VRAMReserver`、`PathchSageAttentionKJ`、`VAEDecodeTiled`、`SaveVideo`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明

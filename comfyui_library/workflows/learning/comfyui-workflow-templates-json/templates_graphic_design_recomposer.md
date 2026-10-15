@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_graphic_design_recomposer.json
 hash: a32512ac43f8db1d
 official: true
-coverage: 0.666667
-learned_at: 2026-10-10 22:49:30
+coverage: 1
+learned_at: 2026-10-15 22:24:56
 nodes: [LoadImage, SaveImage, 172f1008-9337-4d2f-9212-ee081cb4faf5]
 patterns: []
-missing: [172f1008-9337-4d2f-9212-ee081cb4faf5]
-discoveries: [次要节点 `172f1008-9337-4d2f-9212-ee081cb4faf5` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/templates_graphic_design_recomposer.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `172f1008-9337-4d2f-9212-ee081cb4faf5` 知识库中�
 
 ## 知识
 
-覆盖率 **67%**（2/3）
+覆盖率 **100%**（3/3）
 
-**有卡**：`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`SaveImage`、`172f1008-9337-4d2f-9212-ee081cb4faf5`
 
-**缺卡**（1）：`172f1008-9337-4d2f-9212-ee081cb4faf5`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `172f1008-9337-4d2f-9212-ee081cb4faf5` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、172f1008-9337-4d2f-9212-ee081cb4faf5、sd15-t2i-basic、sd15-t2i-lora、Image Save、CS_Preview_Any、easy_multitrackinfooutput

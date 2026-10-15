@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json
 hash: ecc78a1df1a14ff4
-coverage: 0.684783
-learned_at: 2026-10-10 20:48:06
+coverage: 0.695652
+learned_at: 2026-10-15 22:25:14
 nodes: [ResolutionSelector, LoadImage, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, SeedVR2VideoUpscaler, LoadImage, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, SaveImage, TextEncodeQwenImage21, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, TextInput_, EmptyLatentImage, QwenImage21Cache, TextEncodeQwenImage21, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, TextGenerateLTX2Prompt, SetNode, SetNode, GetNode, GetNode, TextGenerateLTX2Prompt, easy seed, LoraLoaderModelOnly, UNETLoader, CLIPLoader, CLIPLoader, Anything Everywhere3, easy showAnything, LoadImage, TextInput_, KSampler, SaveImage, SaveImageAdvanced, VAEDecode, SaveImageAdvanced, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [easy seed]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1多合一文生图图生图处理工具_2102471938563207170.json
@@ -134,11 +134,9 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 
 ## 知识
 
-覆盖率 **68%**（63/92）
+覆盖率 **70%**（64/92）
 
-**有卡**：`ResolutionSelector`、`LoadImage`、`SeedVR2VideoUpscaler`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`SaveImage`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`TextInput_`、`QwenImage21Cache`、`TextGenerateLTX2Prompt`、`LoraLoaderModelOnly`、`UNETLoader`、`SaveImageAdvanced`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`easy seed`
+**有卡**：`ResolutionSelector`、`LoadImage`、`SeedVR2VideoUpscaler`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`SaveImage`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`TextInput_`、`QwenImage21Cache`、`TextGenerateLTX2Prompt`、`easy seed`、`LoraLoaderModelOnly`、`UNETLoader`、`SaveImageAdvanced`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -149,5 +147,4 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 
 ## 学习发现
 
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

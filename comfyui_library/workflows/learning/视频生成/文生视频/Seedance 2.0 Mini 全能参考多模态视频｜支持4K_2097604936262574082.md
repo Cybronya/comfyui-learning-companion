@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0 Mini 全能参考多模态视频｜支持4K_2097604936262574082.json
 hash: e60c6d7654453555
 coverage: 0.857143
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:57
 nodes: [SaveVideo, LoadAudio, LoadAudio, LoadVideo, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), LoadImage, LoadImage, RH_RhartVideoSparkvideo20MiniMultimodalVideo, MuyeTextEditOutput, LoadImage]
 patterns: []
 missing: []

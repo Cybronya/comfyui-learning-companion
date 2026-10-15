@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039686946766721026.json
 hash: a28e02f72119fd79
-coverage: 0.810811
-learned_at: 2026-10-11 19:49:34
+coverage: 0.918919
+learned_at: 2026-10-15 22:44:31
 nodes: [LoadImage, image_scale_pixel_v2, CLIPTextEncode, CheckpointLoaderSimple, workflow>675, LoadImage, image_scale_pixel_v2, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, workflow>675, LoadImage, image_scale_pixel_v2, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, workflow>675, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SaveVideo, SaveVideo, SaveVideo, CLIPTextEncode, image_scale_pixel_v2, PrimitiveFloat, PrimitiveInt, LoraLoaderModelOnly, SaveVideo, CLIPTextEncode, LoraLoaderModelOnly, CheckpointLoaderSimple, VRAMReserver, LoadImage, workflow>515, Note, CLIPTextEncode]
 patterns: []
-missing: [workflow>515, workflow>675, workflow>675, workflow>675]
+missing: []
 parameters: {"checkpoint": "ltx-2.3-22b-distilled.safetensors"}
-discoveries: [次要节点 `workflow>515` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>675` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>675` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>675` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039686946766721026.json
@@ -68,17 +67,8 @@ discoveries: [次要节点 `workflow>515` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **81%**（30/37）
+覆盖率 **92%**（34/37）
 
-**有卡**：`LoadImage`、`image_scale_pixel_v2`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`SaveVideo`、`VRAMReserver`
+**有卡**：`LoadImage`、`image_scale_pixel_v2`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`workflow>675`、`LoraLoaderModelOnly`、`SaveVideo`、`VRAMReserver`、`workflow>515`
 
-**缺卡**（4）：`workflow>515`、`workflow>675`、`workflow>675`、`workflow>675`
-
-**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、SaveVideo、image_scale_pixel_v2、VRAMReserver、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `workflow>515` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>675` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>675` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>675` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、SaveVideo、image_scale_pixel_v2、VRAMReserver、workflow>515

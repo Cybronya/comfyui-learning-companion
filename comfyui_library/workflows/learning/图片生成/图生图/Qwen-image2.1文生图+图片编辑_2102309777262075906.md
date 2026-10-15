@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1文生图+图片编辑_2102309777262075906.json
 hash: 7acc7a14135204f4
-coverage: 0.675676
-learned_at: 2026-10-10 20:48:09
+coverage: 0.864865
+learned_at: 2026-10-15 22:25:25
 nodes: [KSampler, VAEDecode, QwenImage21Cache, UNETLoader, llama_cpp_instruct_adv, CLIPLoader, VAELoader, LoadImage, Fast Groups Muter (rgthree), ResolutionSelector, CR Text, EmptyLatentImage, easy boolean, CR Text, ComfySwitchNodeV2, llama_cpp_model_loader, INTConstant, INTConstant, ComfySwitchNodeV2, Note, easy cleanGpuUsed, TextEncodeQwenImage21, XB_BatchImages, Image Comparer (rgthree), LoadImage, Fast Groups Bypasser (rgthree), llama_cpp_instruct_adv, ShowText|pysssss, ComfySwitchNodeV2, ComfySwitchNodeV2, SaveImage, CR Text, CR Text, easy boolean, LoadImage, LoadImage, LoadImage]
 patterns: []
-missing: [CR Text, CR Text, CR Text, CR Text, easy boolean, easy boolean, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 105165641583100, "steps": 25, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen-image2.1文生图+图片编辑_2102309777262075906.json
@@ -76,20 +75,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **68%**（25/37）
+覆盖率 **86%**（32/37）
 
-**有卡**：`KSampler`、`VAEDecode`、`QwenImage21Cache`、`UNETLoader`、`llama_cpp_instruct_adv`、`CLIPLoader`、`VAELoader`、`LoadImage`、`ResolutionSelector`、`EmptyLatentImage`、`ComfySwitchNodeV2`、`llama_cpp_model_loader`、`INTConstant`、`TextEncodeQwenImage21`、`XB_BatchImages`、`SaveImage`
-
-**缺卡**（7）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`easy boolean`、`easy boolean`、`easy cleanGpuUsed`
+**有卡**：`KSampler`、`VAEDecode`、`QwenImage21Cache`、`UNETLoader`、`llama_cpp_instruct_adv`、`CLIPLoader`、`VAELoader`、`LoadImage`、`ResolutionSelector`、`CR Text`、`EmptyLatentImage`、`easy boolean`、`ComfySwitchNodeV2`、`llama_cpp_model_loader`、`INTConstant`、`easy cleanGpuUsed`、`TextEncodeQwenImage21`、`XB_BatchImages`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

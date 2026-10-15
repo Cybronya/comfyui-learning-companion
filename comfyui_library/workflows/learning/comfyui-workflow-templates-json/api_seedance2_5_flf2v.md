@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_seedance2_5_
 hash: 62eb1b0312fc0298
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:46:06
+learned_at: 2026-10-15 22:24:51
 nodes: [SaveVideo, ByteDance2FirstLastFrameNode, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`ByteDance2FirstLastFrameNode`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveVideo、ByteDance2FirstLastFrameNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、ByteDance2FirstLastFrameNode、sd15-t2i-basic、sd15-t2i-lora、node、Image Load、SaveImage

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json
 hash: 80d83a3b19478097
-coverage: 0.555556
-learned_at: 2026-10-11 19:49:44
+coverage: 0.666667
+learned_at: 2026-10-15 22:47:31
 nodes: [easy showAnything, LoadImage, LoadAudio, LoadVideo, SaveVideo, easy showAnything, CR Prompt Text, RH_RhartVideoSparkvideo20MultimodalVideo, Note]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/seedance2.0 全能参考生视频---支持真人！--简洁版_2039728172807233537.json
@@ -35,14 +34,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **56%**（5/9）
+覆盖率 **67%**（6/9）
 
-**有卡**：`LoadImage`、`LoadAudio`、`LoadVideo`、`SaveVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`
+**有卡**：`LoadImage`、`LoadAudio`、`LoadVideo`、`SaveVideo`、`CR Prompt Text`、`RH_RhartVideoSparkvideo20MultimodalVideo`
 
-**缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Text
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora

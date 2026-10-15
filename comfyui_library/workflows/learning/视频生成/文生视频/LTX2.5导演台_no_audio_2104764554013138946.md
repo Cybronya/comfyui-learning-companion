@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5导演台_no_audio_2104764554013138946.json
 hash: f9413a11db2a4f46
 coverage: 1
-learned_at: 2026-10-11 22:12:35
+learned_at: 2026-10-15 22:45:17
 nodes: [VAEDecodeTiled, CreateVideo, VAELoader, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVDualCFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVConditioning, LTXVDualCFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVSeparateAVLatent, UNETLoader, VAELoader, SaveVideo, LTXDirectorCropGuides, LTXDirectorCropGuides, LTXDirectorGuide, LTXDirectorGuide, LTX2_NAG, LTX2_NAG, CLIPLoader, RandomNoise, RandomNoise, CLIPTextEncode, LTXDirector]
 patterns: []
 missing: []

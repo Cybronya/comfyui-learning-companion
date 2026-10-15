@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bfl_flux3_im
 hash: 90d015a970ea6c32
 official: true
 coverage: 0.714286
-learned_at: 2026-10-10 22:43:14
+learned_at: 2026-10-15 22:24:48
 nodes: [Flux3ImageNode, LoadImage, CreateBoundingBoxes, PreviewAny, SaveImageAdvanced, ImageCompare, MarkdownNote]
 patterns: []
 missing: []

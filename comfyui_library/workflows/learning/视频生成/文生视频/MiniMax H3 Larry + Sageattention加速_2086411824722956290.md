@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 Larry + Sageattention加速_2086411824722956290.json
 hash: 111703a6c16c355d
 coverage: 0.868132
-learned_at: 2026-10-11 20:53:40
+learned_at: 2026-10-15 22:45:32
 nodes: [VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ComfyMathExpression, PrimitiveFloat, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, ResolutionSelector, LoadImage, PrimitiveStringMultiline, UNETLoader, KSamplerSelect, BasicScheduler, SaveVideo, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, LoadImage, KSamplerSelect, BasicScheduler, SaveVideo, LoraLoaderModelOnly, PrimitiveFloat, ComfyMathExpression, ResolutionSelector, PrimitiveStringMultiline, UNETLoader, LoraLoaderModelOnly, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, LoadImage, KSamplerSelect, BasicScheduler, SaveVideo, PrimitiveFloat, ComfyMathExpression, ResolutionSelector, PrimitiveStringMultiline, UNETLoader, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, LoadImage, KSamplerSelect, BasicScheduler, SaveVideo, PrimitiveFloat, ComfyMathExpression, ResolutionSelector, PrimitiveStringMultiline, UNETLoader, LoraLoaderModelOnly, PatchFlashAttentionKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, SolAttnPatch, Note, Note, Note, Note]
 patterns: []
 missing: []

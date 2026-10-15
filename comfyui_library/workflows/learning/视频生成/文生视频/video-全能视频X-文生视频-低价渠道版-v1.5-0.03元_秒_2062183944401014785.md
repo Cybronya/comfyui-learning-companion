@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/video-全能视频X-文生视频-低价渠道版-v1.5-0.03元_秒_2062183944401014785.json
 hash: fd5943e6c6c578a0
 coverage: 0.8
-learned_at: 2026-10-11 20:21:32
+learned_at: 2026-10-15 22:47:32
 nodes: [VHS_VideoCombine, GetVideoComponents, VHS_VideoCombine, RH_RhartVideoGTextToVideo, JjkText]
 patterns: []
 missing: []

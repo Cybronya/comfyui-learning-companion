@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RuningHub企业版不降智｜Seedance2.0图生视频秒出大片_2090829853393244162.json
 hash: 9c5ddc9ddf78f38e
 coverage: 0.870968
-learned_at: 2026-10-11 21:19:49
+learned_at: 2026-10-15 22:46:54
 nodes: [LoadImage, SaveVideo, LoadImage, RH_RhartVideoSparkvideo20FastImageToVideo, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

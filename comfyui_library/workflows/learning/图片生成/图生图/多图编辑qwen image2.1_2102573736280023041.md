@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/多图编辑qwen image2.1_2102573736280023041.json
 hash: 3f0688b9880d6af8
-coverage: 0.925926
-learned_at: 2026-10-10 20:48:16
+coverage: 0.962963
+learned_at: 2026-10-15 22:25:50
 nodes: [UNETLoader, KSampler, CLIPLoader, VAELoader, CLIPLoader, VAEDecode, easy showAnything, BatchImagesNode, JDCN_StringToList, EmptyLatentImage, SaveImageAdvanced, SaveImage, QwenImage21Cache, TextGenerateLTX2Prompt, LoadImage, TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CR Text]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 2560, "sampler_name": "euler", "scheduler": "simple", "seed": 477611766384635, "steps": 50, "width": 1440}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/多图编辑qwen image2.1_2102573736280023041.json
@@ -66,14 +65,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **93%**（25/27）
+覆盖率 **96%**（26/27）
 
-**有卡**：`UNETLoader`、`KSampler`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`BatchImagesNode`、`JDCN_StringToList`、`EmptyLatentImage`、`SaveImageAdvanced`、`SaveImage`、`QwenImage21Cache`、`TextGenerateLTX2Prompt`、`LoadImage`、`TextEncodeQwenImage21`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`UNETLoader`、`KSampler`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`BatchImagesNode`、`JDCN_StringToList`、`EmptyLatentImage`、`SaveImageAdvanced`、`SaveImage`、`QwenImage21Cache`、`TextGenerateLTX2Prompt`、`LoadImage`、`TextEncodeQwenImage21`、`CR Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

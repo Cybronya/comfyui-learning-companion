@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json
 hash: f6b1217bdb851ea1
-coverage: 0.607143
-learned_at: 2026-10-10 20:59:27
+coverage: 0.714286
+learned_at: 2026-10-15 22:27:58
 nodes: [SetNode, SetNode, ModelPassThrough, GetNode, CLIPTextEncode, LoraLoaderModelOnly, Label (rgthree), Label (rgthree), Anything Everywhere, Anything Everywhere, CLIPTextEncode, KSamplerAdvanced, EmptyLatentImage, ModelPassThrough, GetNode, LoraLoaderModelOnly, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SaveImage, UNETLoader, VAEDecode, PreviewImage, KSamplerAdvanced, Note Plus (mtb)]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), Note Plus (mtb)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 30, "denoise": "bong_tangent", "height": 1088, "sampler_name": 3, "scheduler": "res_2s", "seed": "enable", "steps": "randomize", "width": 1920}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/wan2.2双噪文生图-极致逼真_1951536173342773249.json
@@ -21,58 +20,54 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（28 个）：
 - `SetNode`
 - `SetNode`
 - `ModelPassThrough`
 - `GetNode`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `Label (rgthree)`
 - `Label (rgthree)`
 - `Anything Everywhere`
 - `Anything Everywhere`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `EmptyLatentImage`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `EmptyLatentImage` ★核心
 - `ModelPassThrough`
 - `GetNode`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `MarkdownNote`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `SaveImage`
-- `UNETLoader`
-- `VAEDecode`
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
 - `PreviewImage`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `Note Plus (mtb)`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `30`
-- `denoise` = `bong_tangent`
-- `height` = `1088`
-- `sampler_name` = `3`
-- `scheduler` = `res_2s`
 - `seed` = `enable`
 - `steps` = `randomize`
+- `cfg` = `30`
+- `sampler_name` = `3`
+- `scheduler` = `res_2s`
+- `denoise` = `bong_tangent`
 - `width` = `1920`
+- `height` = `1088`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **61%**（17/28）
+覆盖率 **71%**（20/28）
 
-**有卡**：`SetNode`、`ModelPassThrough`、`GetNode`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`Label (rgthree)`、`Anything Everywhere`、`KSamplerAdvanced`、`EmptyLatentImage`、`MarkdownNote`
+**有卡**：`ModelPassThrough`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`Label (rgthree)`、`KSamplerAdvanced`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`Note Plus (mtb)`
 
-**缺卡**（3）：`Label (rgthree)`、`Label (rgthree)`、`Note Plus (mtb)`
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader、KSamplerAdvanced

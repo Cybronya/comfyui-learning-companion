@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/flex2-preview-redux-controlnet_1917247813162303489.json
 hash: 9b04bb4ae03c68a3
-coverage: 0.78125
-learned_at: 2026-10-10 20:59:18
+coverage: 0.8125
+learned_at: 2026-10-15 22:27:43
 nodes: [SetNode, EmptySD3LatentImage, VAEDecode, LayerUtility: PurgeVRAM, SetNode, SetNode, SetNode, DualCLIPLoader, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CFGZeroStar, UNETLoader, VAELoader, CLIPTextEncode, SetNode, GetImageSizeAndCount, CLIPVisionLoader, StyleModelApply, StyleModelLoader, Florence2Run, Florence2ModelLoader, CLIPVisionEncode, ImageScaleToTotalPixels, DepthAnythingPreprocessor, PreviewImage, ImageScaleToTotalPixels, ImageScaleToTotalPixels, Flex2Conditioner, SaveImage, LoadImage, LoadImage]
 patterns: []
-missing: [LayerUtility: PurgeVRAM]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta", "seed": 851662770584958, "steps": 25}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/flex2-preview-redux-controlnet_1917247813162303489.json
@@ -21,22 +20,24 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（32 个）：
 - `SetNode`
 - `EmptySD3LatentImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `LayerUtility: PurgeVRAM`
 - `SetNode`
 - `SetNode`
 - `SetNode`
 - `DualCLIPLoader`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `CLIPTextEncode`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
 - `CFGZeroStar`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `SetNode`
 - `GetImageSizeAndCount`
 - `CLIPVisionLoader`
@@ -57,21 +58,17 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `deis`
-- `scheduler` = `beta`
 - `seed` = `851662770584958`
 - `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `deis`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **78%**（25/32）
+覆盖率 **81%**（26/32）
 
-**有卡**：`SetNode`、`EmptySD3LatentImage`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CFGZeroStar`、`UNETLoader`、`VAELoader`、`GetImageSizeAndCount`、`CLIPVisionLoader`、`StyleModelApply`、`StyleModelLoader`、`Florence2Run`、`Florence2ModelLoader`、`CLIPVisionEncode`、`ImageScaleToTotalPixels`、`DepthAnythingPreprocessor`
+**有卡**：`EmptySD3LatentImage`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CFGZeroStar`、`UNETLoader`、`VAELoader`、`GetImageSizeAndCount`、`CLIPVisionLoader`、`StyleModelApply`、`StyleModelLoader`、`Florence2Run`、`Florence2ModelLoader`、`CLIPVisionEncode`、`ImageScaleToTotalPixels`、`DepthAnythingPreprocessor`、`Flex2Conditioner`、`SaveImage`、`LoadImage`
 
-**缺卡**（1）：`LayerUtility: PurgeVRAM`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、DepthAnythingPreprocessor

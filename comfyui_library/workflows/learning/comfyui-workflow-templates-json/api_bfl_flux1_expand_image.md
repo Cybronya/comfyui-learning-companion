@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bfl_flux1_ex
 hash: d25664519893d0d9
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:43:12
+learned_at: 2026-10-15 22:24:48
 nodes: [FluxProExpandNode, SaveImage, LoadImage]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`FluxProExpandNode`、`SaveImage`、`LoadImage`
 
-**用到的条目**：LoadImage、FluxProExpandNode、SaveImage、sd15-t2i-basic、sd15-t2i-lora、node、CheckpointLoaderSimple、UNETLoader
+**用到的条目**：LoadImage、FluxProExpandNode、SaveImage、sd15-t2i-basic、sd15-t2i-lora、node、Image Load、CheckpointLoaderSimple

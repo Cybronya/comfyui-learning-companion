@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-AIO-Lite版视频工作流_2034809834549288962.json
 hash: b1d628330aae816e
-coverage: 0.623762
-learned_at: 2026-10-11 03:48:35
+coverage: 0.663366
+learned_at: 2026-10-15 22:45:02
 nodes: [CFGGuider, KSamplerSelect, SamplerCustomAdvanced, RandomNoise, ManualSigmas, Reroute, LTXVSeparateAVLatent, VAELoaderKJ, PrimitiveInt, TrimAudioDuration, LTXVAudioVAEEncode, SetLatentNoiseMask, LTXVEmptyLatentAudio, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, GetNode, GetNode, LTXVPreprocess, LTXVPreprocess, SetNode, SetNode, GetNode, LTXVPreprocess, SetNode, SetNode, GetNode, KSamplerSelect, VAELoaderKJ, easy showAnything, LTXVCropGuides, ResizeImagesByLongerEdge, EmptyLTXVLatentVideo, SetNode, GetNode, GetNode, GetNode, SolidMask, LTXVConcatAVLatent, Note, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ResizeImageMaskNode, ResizeImageMaskNode, ResizeImageMaskNode, LoadAudio, GetNode, CM_IntToFloat, PrimitiveInt, GetNode, math_calculate, math_calculate, GetNode, GetNode, math_calculate, math_calculate, CM_IntToFloat, DualCLIPLoader, SetNode, ManualSigmas, LTXVLatentUpsampler, Fast Groups Bypasser (rgthree), math_calculate, PrimitiveBoolean, PrimitiveBoolean, TextGenerateLTX2Prompt, PreviewAny, VAEDecodeTiled, LTXVAudioVAEDecode, LoadImage, LoadImage, LoadImage, INTConstant, INTConstant, INTConstant, GetNode, CM_IntToFloat, VHS_VideoCombine, INTConstant, GetNode, LatentUpscaleModelLoader, Text Multiline, Switch any [Crystools], CLIPTextEncode, CLIPTextEncode, RandomNoise, Switch any [Crystools], LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, LTXVConditioning, MarkdownNote, LTXVImgToVideoInplaceKJ, LTXVImgToVideoInplaceKJ, UNETLoader, Lora Loader Stack (rgthree)]
 patterns: []
-missing: [Switch any [Crystools], Switch any [Crystools], Text Multiline, Lora Loader Stack (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.3-AIO-Lite版视频工作流_2034809834549288962.json
@@ -134,17 +133,8 @@ discoveries: [次要节点 `Switch any [Crystools]` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **62%**（63/101）
+覆盖率 **66%**（67/101）
 
-**有卡**：`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAELoaderKJ`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`SolidMask`、`LTXVConcatAVLatent`、`ResizeImageMaskNode`、`LoadAudio`、`CM_IntToFloat`、`math_calculate`、`DualCLIPLoader`、`LTXVLatentUpsampler`、`PrimitiveBoolean`、`TextGenerateLTX2Prompt`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LoadImage`、`INTConstant`、`VHS_VideoCombine`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVImgToVideoInplaceKJ`、`UNETLoader`
-
-**缺卡**（4）：`Switch any [Crystools]`、`Switch any [Crystools]`、`Text Multiline`、`Lora Loader Stack (rgthree)`
+**有卡**：`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAELoaderKJ`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`SolidMask`、`LTXVConcatAVLatent`、`ResizeImageMaskNode`、`LoadAudio`、`CM_IntToFloat`、`math_calculate`、`DualCLIPLoader`、`LTXVLatentUpsampler`、`PrimitiveBoolean`、`TextGenerateLTX2Prompt`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LoadImage`、`INTConstant`、`VHS_VideoCombine`、`LatentUpscaleModelLoader`、`Text Multiline`、`Switch any [Crystools]`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVImgToVideoInplaceKJ`、`UNETLoader`、`Lora Loader Stack (rgthree)`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明

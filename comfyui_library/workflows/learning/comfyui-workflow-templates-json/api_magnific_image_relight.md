@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_magnific_ima
 hash: e0dfa600bd580864
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:56
+learned_at: 2026-10-15 22:24:50
 nodes: [MagnificImageRelightNode, SaveImage, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`MagnificImageRelightNode`、`SaveImage`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveImage、MagnificImageRelightNode、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImage、MagnificImageRelightNode、sd15-t2i-basic、sd15-t2i-lora、node、Image Load、CS_Preview_Any

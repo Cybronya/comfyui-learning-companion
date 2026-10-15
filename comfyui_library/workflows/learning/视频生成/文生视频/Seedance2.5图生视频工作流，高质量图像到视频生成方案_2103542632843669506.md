@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5图生视频工作流，高质量图像到视频生成方案_2103542632843669506.json
 hash: 0864135289b934d9
 coverage: 0.882353
-learned_at: 2026-10-11 22:12:47
+learned_at: 2026-10-15 22:46:59
 nodes: [SaveVideo, LoadImage, LoadImage, RH_BytedanceSeedance25TokenImageToVideo, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
 missing: []

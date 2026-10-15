@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json
 hash: 5adf3ee1620b9697
-coverage: 0.625
-learned_at: 2026-10-11 19:49:35
+coverage: 0.725
+learned_at: 2026-10-15 22:44:32
 nodes: [CLIPTextEncode, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, ManualSigmas, KSamplerSelect, CFGGuider, Note, Qwen3_VQA, easy showAnything, Note, ShowText|pysssss, JoinStrings, Note, Note, Note, ComfyMathExpression, Note, SimpleCalculatorKJ, CM_FloatToInt, LTX2_NAG, ComfyMathExpression, LTXVChunkFeedForward, ModelPatchTorchSettings, PathchSageAttentionKJ, PrimitiveFloat, easy cleanGpuUsed, easy cleanGpuUsed, LTXVSeparateAVLatent, Note, MemoryCleaner, easy cleanGpuUsed, PrimitiveFloat, INTConstant, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, ResizeImagesByLongerEdge, LTXVPreprocess, ImageResizeKJv2, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVConcatAVLatent, LTXVEmptyLatentAudio, VAEDecodeTiled, Note, Note, RandomNoise, easy cleanGpuUsed, Note, Note, Note, Note, PrimitiveBoolean, LTXVImgToVideoConditionOnly, LTXVImgToVideoConditionOnly, LTXVConditioning, easy cleanGpuUsed, SamplerCustomAdvanced, SamplerCustomAdvanced, Note, Note, Note, CR Text, ttN concat, Note, MemoryCleaner, Note, SeedGenerator, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, ImageLoader, VHS_VideoCombine, easy imageSize]
 patterns: []
-missing: [CR Text, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, ttN concat, easy imageSize]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX 2.3 复杂动作版｜文生视频 & 图生视频 ｜V1.1版（人脸一致性）+ VBVR 理解复杂_2044309375526899714.json
@@ -114,21 +113,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **62%**（50/80）
+覆盖率 **72%**（58/80）
 
-**有卡**：`CLIPTextEncode`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`Qwen3_VQA`、`JoinStrings`、`ComfyMathExpression`、`SimpleCalculatorKJ`、`CM_FloatToInt`、`LTX2_NAG`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LTXVSeparateAVLatent`、`MemoryCleaner`、`INTConstant`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ImageResizeKJv2`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXVEmptyLatentAudio`、`VAEDecodeTiled`、`PrimitiveBoolean`、`LTXVImgToVideoConditionOnly`、`LTXVConditioning`、`SamplerCustomAdvanced`、`SeedGenerator`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`ImageLoader`、`VHS_VideoCombine`
-
-**缺卡**（8）：`CR Text`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`ttN concat`、`easy imageSize`
+**有卡**：`CLIPTextEncode`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`Qwen3_VQA`、`JoinStrings`、`ComfyMathExpression`、`SimpleCalculatorKJ`、`CM_FloatToInt`、`LTX2_NAG`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`easy cleanGpuUsed`、`LTXVSeparateAVLatent`、`MemoryCleaner`、`INTConstant`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ImageResizeKJv2`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXVEmptyLatentAudio`、`VAEDecodeTiled`、`PrimitiveBoolean`、`LTXVImgToVideoConditionOnly`、`LTXVConditioning`、`SamplerCustomAdvanced`、`CR Text`、`ttN concat`、`SeedGenerator`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`ImageLoader`、`VHS_VideoCombine`、`easy imageSize`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、SeedGenerator
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明

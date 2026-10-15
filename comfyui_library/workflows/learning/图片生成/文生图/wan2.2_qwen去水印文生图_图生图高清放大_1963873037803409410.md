@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2_qwen去水印文生图_图生图高清放大_1963873037803409410.json
 hash: 269d206e80a49298
-coverage: 0.609091
-learned_at: 2026-10-10 20:59:27
+coverage: 0.672727
+learned_at: 2026-10-15 22:27:58
 nodes: [VAELoader, LoadImageOutput, MarkdownNote, CLIPTextEncode, FluxKontextImageScale, PreviewImage, ReferenceLatent, VAEEncode, ConditioningZeroOut, FluxGuidance, EmptySD3LatentImage, KSampler, ModelSamplingSD3, easy clearCacheAll, PurgeVRAM_UTK, PathchSageAttentionKJ, LoraLoaderModelOnly, ModelSamplingSD3, easy clearCacheAll, PurgeVRAM_UTK, LoraLoaderModelOnly, PathchSageAttentionKJ, SetNode, SetNode, SetNode, SetNode, VAELoader, CLIPLoader, GetNode, LoraLoaderModelOnly, UNETLoader, UNETLoader, PurgeVRAM_UTK, SeedVR2ExtraArgs, VAEDecode, easy clearCacheAll, GetNode, PreviewImage, ImageStitch, PreviewImage, VAEDecode, easy clearCacheAll, PurgeVRAM_UTK, ImageStitch, SaveImage, GetNode, CLIPTextEncode, SeedVR2GGUF, SimpleCondition+, GetNode, EmptyHunyuanLatentVideo, ImageResizeKJv2, GetNode, GetNode, GetNode, GetNode, Reroute, LoadImage, SetNode, RH_Captioner, CLIPTextEncode, LoraLoaderModelOnly, GetNode, GetNode, PurgeVRAM_UTK, DualCLIPLoader, NunchakuFluxDiTLoader, VAEDecode, PurgeVRAM_UTK, SeedVR2GGUF, SeedVR2ExtraArgs, KSamplerAdvanced, KSamplerAdvanced, PreviewImage, VAEEncode, GetNode, CLIPTextEncode, MarkdownNote, Note, CLIPLoader, VAELoader, LoraLoaderModelOnly, CLIPTextEncode, UNETLoader, Note, GetNode, EmptySD3LatentImage, GetNode, GetNode, ModelSamplingAuraFlow, ModelSamplingAuraFlow, KSampler, easy clearCacheAll, VAEDecode, easy clearCacheAll, SeedVR2ExtraArgs, PurgeVRAM_UTK, SeedVR2GGUF, PreviewImage, INTConstant, INTConstant, SetNode, SetNode, KSampler, Fast Groups Muter (rgthree), JWStringMultiline, SetNode, PreviewImage, PreviewImage, PreviewImage]
 patterns: [image_to_image]
-missing: [SimpleCondition+, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 0.45000000000000007, "sampler_name": "euler", "scheduler": "kl_optimal", "seed": 305861248366345, "steps": 10}
-discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/wan2.2_qwen去水印文生图_图生图高清放大_1963873037803409410.json
@@ -22,28 +22,30 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（110 个）：
 - `VAELoader`
 - `LoadImageOutput`
 - `MarkdownNote`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `FluxKontextImageScale`
 - `PreviewImage`
 - `ReferenceLatent`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `ConditioningZeroOut`
 - `FluxGuidance`
 - `EmptySD3LatentImage`
-- `KSampler`
+- `KSampler` ★核心
 - `ModelSamplingSD3`
 - `easy clearCacheAll`
 - `PurgeVRAM_UTK`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `ModelSamplingSD3`
 - `easy clearCacheAll`
 - `PurgeVRAM_UTK`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `PathchSageAttentionKJ`
 - `SetNode`
 - `SetNode`
@@ -52,24 +54,24 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 - `VAELoader`
 - `CLIPLoader`
 - `GetNode`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 - `PurgeVRAM_UTK`
 - `SeedVR2ExtraArgs`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy clearCacheAll`
 - `GetNode`
 - `PreviewImage`
 - `ImageStitch`
 - `PreviewImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy clearCacheAll`
 - `PurgeVRAM_UTK`
 - `ImageStitch`
 - `SaveImage`
 - `GetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `SeedVR2GGUF`
 - `SimpleCondition+`
 - `GetNode`
@@ -83,30 +85,30 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 - `LoadImage`
 - `SetNode`
 - `RH_Captioner`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `GetNode`
 - `GetNode`
 - `PurgeVRAM_UTK`
 - `DualCLIPLoader`
 - `NunchakuFluxDiTLoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PurgeVRAM_UTK`
 - `SeedVR2GGUF`
 - `SeedVR2ExtraArgs`
-- `KSamplerAdvanced`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
 - `PreviewImage`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `GetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `MarkdownNote`
 - `Note`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
 - `Note`
 - `GetNode`
 - `EmptySD3LatentImage`
@@ -114,9 +116,9 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 - `GetNode`
 - `ModelSamplingAuraFlow`
 - `ModelSamplingAuraFlow`
-- `KSampler`
+- `KSampler` ★核心
 - `easy clearCacheAll`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy clearCacheAll`
 - `SeedVR2ExtraArgs`
 - `PurgeVRAM_UTK`
@@ -126,7 +128,7 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 - `INTConstant`
 - `SetNode`
 - `SetNode`
-- `KSampler`
+- `KSampler` ★核心
 - `Fast Groups Muter (rgthree)`
 - `JWStringMultiline`
 - `SetNode`
@@ -138,20 +140,20 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `0.45000000000000007`
-- `sampler_name` = `euler`
-- `scheduler` = `kl_optimal`
 - `seed` = `305861248366345`
 - `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `kl_optimal`
+- `denoise` = `0.45000000000000007`
 
 ## 知识
 
-覆盖率 **61%**（67/110）
+覆盖率 **67%**（74/110）
 
-**有卡**：`VAELoader`、`LoadImageOutput`、`MarkdownNote`、`CLIPTextEncode`、`FluxKontextImageScale`、`PreviewImage`、`ReferenceLatent`、`VAEEncode`、`ConditioningZeroOut`、`FluxGuidance`、`EmptySD3LatentImage`、`KSampler`、`ModelSamplingSD3`、`easy clearCacheAll`、`PurgeVRAM_UTK`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`SetNode`、`CLIPLoader`、`GetNode`、`UNETLoader`、`SeedVR2ExtraArgs`、`VAEDecode`、`ImageStitch`、`SaveImage`、`SeedVR2GGUF`、`SimpleCondition+`、`EmptyHunyuanLatentVideo`、`ImageResizeKJv2`、`Reroute`、`LoadImage`、`RH_Captioner`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`
+**有卡**：`VAELoader`、`LoadImageOutput`、`CLIPTextEncode`、`FluxKontextImageScale`、`ReferenceLatent`、`VAEEncode`、`ConditioningZeroOut`、`FluxGuidance`、`EmptySD3LatentImage`、`KSampler`、`ModelSamplingSD3`、`easy clearCacheAll`、`PurgeVRAM_UTK`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`CLIPLoader`、`UNETLoader`、`SeedVR2ExtraArgs`、`VAEDecode`、`ImageStitch`、`SaveImage`、`SeedVR2GGUF`、`SimpleCondition+`、`EmptyHunyuanLatentVideo`、`ImageResizeKJv2`、`LoadImage`、`RH_Captioner`、`DualCLIPLoader`、`NunchakuFluxDiTLoader`、`KSamplerAdvanced`、`ModelSamplingAuraFlow`、`INTConstant`、`JWStringMultiline`
 
-**缺卡**（7）：`SimpleCondition+`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 
@@ -160,11 +162,4 @@ discoveries: [次要节点 `SimpleCondition+` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `SimpleCondition+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

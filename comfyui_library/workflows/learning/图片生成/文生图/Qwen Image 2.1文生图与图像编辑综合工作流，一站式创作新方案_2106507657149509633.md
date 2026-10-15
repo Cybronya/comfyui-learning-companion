@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1文生图与图像编辑综合工作流，一站式创作新方案_2106507657149509633.json
 hash: 42a451db807a3f6c
-coverage: 0.811321
-learned_at: 2026-10-10 20:58:53
+coverage: 0.849057
+learned_at: 2026-10-15 22:27:00
 nodes: [VAELoader, Anything Everywhere, Text Multiline, CLIPLoader, UNETLoader, QwenImage21Cache, GetNode, VAEDecode, SetNode, KSampler, AnySwitch, EmptyLatentImage, ImageScaleToTotalPixels, VAEEncode, TextEncodeQwenImage21, LoadImage, LoadImage, SaveImage, LoadImage, ResolutionSelector, Image Comparer (rgthree), LoadImage, Text Multiline, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image, image_to_image]
-missing: [Text Multiline, Text Multiline]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1文生图与图像编辑综合工作流，一站式创作新方案_2106507657149509633.json
@@ -22,21 +22,23 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（53 个）：
 - `VAELoader`
 - `Anything Everywhere`
 - `Text Multiline`
 - `CLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `QwenImage21Cache`
 - `GetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetNode`
-- `KSampler`
+- `KSampler` ★核心
 - `AnySwitch`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `ImageScaleToTotalPixels`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `TextEncodeQwenImage21`
 - `LoadImage`
 - `LoadImage`
@@ -49,30 +51,30 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `LoadImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `EmptyLatentImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `JjkText`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `solarL_SaveImagesToZip`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -81,23 +83,23 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
-- `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
 - `seed` = `598626327129635`
 - `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 - `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **81%**（43/53）
+覆盖率 **85%**（45/53）
 
-**有卡**：`VAELoader`、`Anything Everywhere`、`Text Multiline`、`CLIPLoader`、`UNETLoader`、`QwenImage21Cache`、`GetNode`、`VAEDecode`、`SetNode`、`KSampler`、`AnySwitch`、`EmptyLatentImage`、`ImageScaleToTotalPixels`、`VAEEncode`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`、`ResolutionSelector`、`Image Comparer (rgthree)`、`孤海注释`、`LoraLoaderModelOnly`
+**有卡**：`VAELoader`、`Text Multiline`、`CLIPLoader`、`UNETLoader`、`QwenImage21Cache`、`VAEDecode`、`KSampler`、`AnySwitch`、`EmptyLatentImage`、`ImageScaleToTotalPixels`、`VAEEncode`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`、`ResolutionSelector`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（2）：`Text Multiline`、`Text Multiline`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 
@@ -106,6 +108,4 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 学习发现
 
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

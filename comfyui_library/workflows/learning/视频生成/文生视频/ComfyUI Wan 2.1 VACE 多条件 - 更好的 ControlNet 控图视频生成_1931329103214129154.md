@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ComfyUI Wan 2.1 VACE 多条件 - 更好的 ControlNet 控图视频生成_1931329103214129154.json
 hash: 0db674c3a56e3bf4
-coverage: 0.41791
-learned_at: 2026-10-10 22:58:48
+coverage: 0.432836
+learned_at: 2026-10-15 22:44:06
 nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LayerUtility: PurgeVRAM, SetNode, GetNode, WanVideoTextEncode, SetNode, SetNode, SetNode, WanVideoDecode, SetNode, DWPreprocessor, INTConstant, INTConstant, ImageResizeKJv2, GetNode, GetNode, GetNode, GetNode, GetNode, INTConstant, WanVideoSampler, WanVideoVACEEncode, VHS_VideoCombine, VHS_VideoCombine, AIO_Preprocessor, WanVideoVACEEncode, StringConstantMultiline, Note, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEModelSelect, WanVideoLoraSelect, Note, VHS_LoadVideo, LoadImage, Fast Groups Bypasser (rgthree), VHS_VideoCombine, SetNode, SetNode, VHS_VideoInfo, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Note, ImageResizeKJv2, Note, PreviewImage, LoadImage, SetNode, GetNode, GetNode, GetNode, SetNode, DWPreprocessor, Note]
 patterns: []
-missing: [LayerUtility: PurgeVRAM]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/ComfyUI Wan 2.1 VACE 多条件 - 更好的 ControlNet 控图视频生成_1931329103214129154.json
@@ -93,14 +92,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **42%**（28/67）
+覆盖率 **43%**（29/67）
 
-**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoTextEncode`、`WanVideoDecode`、`DWPreprocessor`、`INTConstant`、`ImageResizeKJv2`、`WanVideoSampler`、`WanVideoVACEEncode`、`VHS_VideoCombine`、`AIO_Preprocessor`、`StringConstantMultiline`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`VHS_LoadVideo`、`LoadImage`、`VHS_VideoInfo`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM`
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`LayerUtility: PurgeVRAM`、`WanVideoTextEncode`、`WanVideoDecode`、`DWPreprocessor`、`INTConstant`、`ImageResizeKJv2`、`WanVideoSampler`、`WanVideoVACEEncode`、`VHS_VideoCombine`、`AIO_Preprocessor`、`StringConstantMultiline`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`VHS_LoadVideo`、`LoadImage`、`VHS_VideoInfo`
 
 **用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识

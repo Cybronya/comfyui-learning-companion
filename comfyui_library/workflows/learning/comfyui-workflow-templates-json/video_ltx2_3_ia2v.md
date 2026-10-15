@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_3_ia2v.json
 hash: 8da461298c44736c
 official: true
-coverage: 0.666667
-learned_at: 2026-10-10 22:50:16
+coverage: 0.833333
+learned_at: 2026-10-15 22:24:57
 nodes: [MarkdownNote, LoadImage, RecordAudio, SaveVideo, LoadAudio, 98ee9e5b-467b-40aa-a534-36033f27d0b4]
 patterns: []
-missing: [98ee9e5b-467b-40aa-a534-36033f27d0b4]
-discoveries: [次要节点 `98ee9e5b-467b-40aa-a534-36033f27d0b4` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_3_ia2v.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `98ee9e5b-467b-40aa-a534-36033f27d0b4` 知识库中�
 
 ## 知识
 
-覆盖率 **67%**（4/6）
+覆盖率 **83%**（5/6）
 
-**有卡**：`LoadImage`、`RecordAudio`、`SaveVideo`、`LoadAudio`
+**有卡**：`LoadImage`、`RecordAudio`、`SaveVideo`、`LoadAudio`、`98ee9e5b-467b-40aa-a534-36033f27d0b4`
 
-**缺卡**（1）：`98ee9e5b-467b-40aa-a534-36033f27d0b4`
-
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、RecordAudio、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `98ee9e5b-467b-40aa-a534-36033f27d0b4` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、RecordAudio、98ee9e5b-467b-40aa-a534-36033f27d0b4、sd15-t2i-basic、sd15-t2i-lora、SaveImage

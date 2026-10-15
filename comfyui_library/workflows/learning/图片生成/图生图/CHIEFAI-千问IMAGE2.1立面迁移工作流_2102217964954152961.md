@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/CHIEFAI-千问IMAGE2.1立面迁移工作流_2102217964954152961.json
 hash: ad6640acbba68f89
 coverage: 0.909091
-learned_at: 2026-10-10 20:48:02
+learned_at: 2026-10-15 22:25:05
 nodes: [VAELoader, AIO_Preprocessor, LoadImage, LoadImage, CLIPLoader, UNETLoader, VAEDecode, SaveImage, TextEncodeQwenImage21, PrimitiveStringMultiline, KSampler]
 patterns: []
 missing: []

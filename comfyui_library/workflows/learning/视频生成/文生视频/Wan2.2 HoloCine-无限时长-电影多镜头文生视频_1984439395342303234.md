@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 HoloCine-无限时长-电影多镜头文生视频_1984439395342303234.json
 hash: f3040899db54cd0d
-coverage: 0.767442
-learned_at: 2026-10-11 02:45:02
+coverage: 0.860465
+learned_at: 2026-10-15 22:47:09
 nodes: [INTConstant, INTConstant, VHS_VideoCombine, MarkdownNote, easy ifElse, CR Text Replace, TextBox, CLIPLoader, ImageFromBatch+, ImageSharpen, easy cleanGpuUsed, VAELoader, PathchSageAttentionKJ, TorchCompileModel, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, PathchSageAttentionKJ, TorchCompileModel, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, JjkText, SimpleMath+, CLIPTextEncode, EmptyHunyuanLatentVideo, KSamplerAdvanced, VAEDecode, KSamplerAdvanced, MarkdownNote, ShowText, PrimitiveBoolean, JjkText, RH_Prompter, MarkdownNote, CLIPTextEncode, Int, Int, Int]
 patterns: []
-missing: [CR Text Replace, ImageFromBatch+, SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"cfg": 10, "denoise": "simple", "sampler_name": 4, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2 HoloCine-无限时长-电影多镜头文生视频_1984439395342303234.json
@@ -79,17 +78,8 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **77%**（33/43）
+覆盖率 **86%**（37/43）
 
-**有卡**：`INTConstant`、`VHS_VideoCombine`、`TextBox`、`CLIPLoader`、`ImageSharpen`、`VAELoader`、`PathchSageAttentionKJ`、`TorchCompileModel`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSamplerAdvanced`、`VAEDecode`、`ShowText`、`PrimitiveBoolean`、`RH_Prompter`、`Int`
-
-**缺卡**（4）：`CR Text Replace`、`ImageFromBatch+`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`INTConstant`、`VHS_VideoCombine`、`CR Text Replace`、`TextBox`、`CLIPLoader`、`ImageFromBatch+`、`ImageSharpen`、`easy cleanGpuUsed`、`VAELoader`、`PathchSageAttentionKJ`、`TorchCompileModel`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`SimpleMath+`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`KSamplerAdvanced`、`VAEDecode`、`ShowText`、`PrimitiveBoolean`、`RH_Prompter`、`Int`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

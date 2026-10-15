@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/MiniMax-H3音频驱动数字人多人对话加速版长视频处理工具.json
 hash: 26c7082042619de2
-coverage: 0.92
-learned_at: 2026-10-10 22:53:26
+coverage: 0.94
+learned_at: 2026-10-15 22:42:52
 nodes: [CLIPLoader, VAELoader, VAELoader, ComfyMathExpression, UNETLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, BasicGuider, RandomNoise, MiniMaxH3AVDecodeT8, VHS_VideoCombine, SamplerCustomAdvanced, LoraLoaderBypassModelOnly, PrimitiveFloat, ResolutionSelector, LoadImage, LoadImage, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage, MiniMaxH3AudioConditioningT8, MiniMaxH3DualClockSamplerT8, LoadAudio, SolAttnMiniMax]
 patterns: [text_to_image]
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/图生视频/MiniMax-H3音频驱动数字人多人对话加速版长视频处理工具.json
@@ -92,11 +92,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **92%**（46/50）
+覆盖率 **94%**（47/50）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`ComfyMathExpression`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`BasicGuider`、`RandomNoise`、`MiniMaxH3AVDecodeT8`、`VHS_VideoCombine`、`SamplerCustomAdvanced`、`LoraLoaderBypassModelOnly`、`ResolutionSelector`、`LoadImage`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`SaveImage`、`MiniMaxH3AudioConditioningT8`、`MiniMaxH3DualClockSamplerT8`、`LoadAudio`、`SolAttnMiniMax`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`CLIPLoader`、`VAELoader`、`ComfyMathExpression`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`BasicGuider`、`RandomNoise`、`MiniMaxH3AVDecodeT8`、`VHS_VideoCombine`、`SamplerCustomAdvanced`、`LoraLoaderBypassModelOnly`、`ResolutionSelector`、`LoadImage`、`CR Prompt Text`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`SaveImage`、`MiniMaxH3AudioConditioningT8`、`MiniMaxH3DualClockSamplerT8`、`LoadAudio`、`SolAttnMiniMax`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -107,5 +105,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

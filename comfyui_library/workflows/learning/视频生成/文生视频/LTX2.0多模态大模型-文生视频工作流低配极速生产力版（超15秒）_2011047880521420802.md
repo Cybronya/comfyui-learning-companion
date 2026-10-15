@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.0多模态大模型-文生视频工作流低配极速生产力版（超15秒）_2011047880521420802.json
 hash: 8268f5122f632124
 coverage: 0.565789
-learned_at: 2026-10-11 03:07:09
+learned_at: 2026-10-15 22:44:53
 nodes: [ManualSigmas, KSamplerSelect, EmptyImage, LTXVEmptyLatentAudio, ImageScaleBy, GetImageSize, KSamplerSelect, LTXVSeparateAVLatent, Reroute, LTXVAudioVAELoader, Reroute, PrimitiveInt, Reroute, Reroute, Reroute, Reroute, Reroute, CheckpointLoaderSimple, CFGGuider, Reroute, Reroute, Reroute, LTXVConditioning, Reroute, Reroute, EmptyLTXVLatentVideo, Reroute, Reroute, Reroute, LTXVCropGuides, RandomNoise, RandomNoise, LTXVLatentUpsampler, LTXVAudioVAEDecode, LTXVSeparateAVLatent, Reroute, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, JoinStrings, Reroute, Reroute, Reroute, Reroute, Reroute, MarkdownNote, Reroute, LTXVConcatAVLatent, Reroute, Reroute, SamplerCustomAdvanced, LTXVScheduler, Fast Groups Bypasser (rgthree), LatentUpscaleModelLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, MarkdownNote, MarkdownNote, PrimitiveFloat, PrimitiveInt, Int, VHS_VideoCombine, LTXAVTextEncoderLoader, MemoryCleaner, JoinStrings, ShowText|pysssss, Int, Int, VAEDecodeTiled, easy showAnything, MemoryCleaner, CLIPTextEncode, TextInput_, Qwen3_VQA, TextInput_]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LH-DMT-LTX2.0-003.文生视频工作流_2016312568960258049.json
 hash: 10c20d9330827a84
 coverage: 0.9
-learned_at: 2026-10-11 03:07:08
+learned_at: 2026-10-15 22:44:30
 nodes: [INTConstant, INTConstant, INTConstant, PrimitiveInt, PrimitiveInt, PrimitiveFloat, EmptyImage, LatentUpscaleModelLoader, ImageScaleBy, LTXVLatentUpsampler, GetImageSize, LTXVConditioning, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, CLIPTextEncode, CLIPTextEncode, CFGGuider, RandomNoise, KSamplerSelect, LTXVScheduler, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVAudioVAEDecode, RandomNoise, ManualSigmas, KSamplerSelect, LTXVConcatAVLatent, SamplerCustomAdvanced, CFGGuider, VAEDecodeTiled, LTXVSeparateAVLatent, Note, VHS_VideoCombine, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVAudioVAELoader, LTXAVTextEncoderLoader]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 14B文生视频_2053351928163258369.json
 hash: 90ac9a9388b40de1
 coverage: 0.580645
-learned_at: 2026-10-11 19:49:43
+learned_at: 2026-10-15 22:47:08
 nodes: [CLIPLoader, VAELoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, CreateVideo, VAEDecode, KSamplerAdvanced, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveFloat, PrimitiveFloat, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, PrimitiveBoolean, ComfyMathExpression, SaveVideo, CLIPTextEncode, CLIPTextEncode, EmptyHunyuanLatentVideo, PrimitiveFloat, PrimitiveFloat]
 patterns: []
 missing: []

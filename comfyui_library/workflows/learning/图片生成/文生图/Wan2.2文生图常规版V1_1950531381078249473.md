@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图常规版V1_1950531381078249473.json
 hash: 2cbeed63fc22c83c
 coverage: 0.96
-learned_at: 2026-10-10 20:59:14
+learned_at: 2026-10-15 22:27:36
 nodes: [CLIPLoader, VAELoader, Note, CLIPTextEncode, EmptyHunyuanLatentVideo, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, JWInteger, JWInteger, JWInteger, VAEDecode, CLIPTextEncode, KSamplerAdvanced, UNETLoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, KSamplerAdvanced, SaveImage, PMRF, SaveImage]
 patterns: []
 missing: []
@@ -20,44 +20,48 @@ parameters: {"cfg": 12, "denoise": "beta", "sampler_name": 1, "scheduler": "heun
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（25 个）：
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `EmptyHunyuanLatentVideo`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `PathchSageAttentionKJ`
 - `JWInteger`
 - `JWInteger`
 - `JWInteger`
-- `VAEDecode`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `KSamplerAdvanced`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
 - `SaveImage`
 - `PMRF`
 - `SaveImage`
 
 ## 关键参数
 
-- `cfg` = `12`
-- `denoise` = `beta`
-- `sampler_name` = `1`
-- `scheduler` = `heun`
 - `seed` = `enable`
 - `steps` = `fixed`
+- `cfg` = `12`
+- `sampler_name` = `1`
+- `scheduler` = `heun`
+- `denoise` = `beta`
 
 ## 知识
 
 覆盖率 **96%**（24/25）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`Note`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`JWInteger`、`VAEDecode`、`KSamplerAdvanced`、`UNETLoader`、`SaveImage`、`PMRF`
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`JWInteger`、`VAEDecode`、`KSamplerAdvanced`、`UNETLoader`、`SaveImage`、`PMRF`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

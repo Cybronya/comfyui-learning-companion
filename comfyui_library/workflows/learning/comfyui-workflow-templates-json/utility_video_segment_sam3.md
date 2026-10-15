@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_video_segment_sam3.json
 hash: 9b55b678468a98dc
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:50:02
+coverage: 0.6
+learned_at: 2026-10-15 22:24:57
 nodes: [MaskPreview, MarkdownNote, MarkdownNote, a6f60fa7-1c86-4060-bf6f-01a10288e343, LoadVideo]
 patterns: []
-missing: [a6f60fa7-1c86-4060-bf6f-01a10288e343]
-discoveries: [次要节点 `a6f60fa7-1c86-4060-bf6f-01a10288e343` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/utility_video_segment_sam3.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `a6f60fa7-1c86-4060-bf6f-01a10288e343` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`MaskPreview`、`LoadVideo`
+**有卡**：`MaskPreview`、`a6f60fa7-1c86-4060-bf6f-01a10288e343`、`LoadVideo`
 
-**缺卡**（1）：`a6f60fa7-1c86-4060-bf6f-01a10288e343`
-
-**用到的条目**：MaskPreview、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `a6f60fa7-1c86-4060-bf6f-01a10288e343` 知识库中没有该节点类型的任何知识
+**用到的条目**：MaskPreview、LoadVideo、a6f60fa7-1c86-4060-bf6f-01a10288e343、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

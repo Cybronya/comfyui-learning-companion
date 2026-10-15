@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/双bf16满血版8步加速lora 1.0+sage｜MinimaxH3文生图生视频生视频_2088362225546391554.json
 hash: e3d71c38e62665ed
-coverage: 0.87234
-learned_at: 2026-10-11 20:53:52
+coverage: 0.893617
+learned_at: 2026-10-15 22:48:18
 nodes: [LoadImage, PrimitiveFloat, VHS_VideoCombine, RandomNoise, SamplerCustomAdvanced, MiniMaxH3AVDecodeT8, CLIPLoader, VAELoader, BasicGuider, KSamplerSelect, ComfyMathExpression, MiniMaxH3AudioConditioningT8, CR Prompt Text, UNETLoader, UNETLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, ResolutionSelector, BasicScheduler, VAELoader, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/双bf16满血版8步加速lora 1.0+sage｜MinimaxH3文生图生视频生视频_2088362225546391554.json
@@ -89,11 +89,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **87%**（41/47）
+覆盖率 **89%**（42/47）
 
-**有卡**：`LoadImage`、`VHS_VideoCombine`、`RandomNoise`、`SamplerCustomAdvanced`、`MiniMaxH3AVDecodeT8`、`CLIPLoader`、`VAELoader`、`BasicGuider`、`KSamplerSelect`、`ComfyMathExpression`、`MiniMaxH3AudioConditioningT8`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`ResolutionSelector`、`BasicScheduler`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`LoadImage`、`VHS_VideoCombine`、`RandomNoise`、`SamplerCustomAdvanced`、`MiniMaxH3AVDecodeT8`、`CLIPLoader`、`VAELoader`、`BasicGuider`、`KSamplerSelect`、`ComfyMathExpression`、`MiniMaxH3AudioConditioningT8`、`CR Prompt Text`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`ResolutionSelector`、`BasicScheduler`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -104,5 +102,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

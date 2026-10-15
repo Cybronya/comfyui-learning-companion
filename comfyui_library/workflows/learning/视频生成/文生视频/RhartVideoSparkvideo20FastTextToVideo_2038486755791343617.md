@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RhartVideoSparkvideo20FastTextToVideo_2038486755791343617.json
 hash: fe4c84f90726f16a
 coverage: 1
-learned_at: 2026-10-11 03:48:37
+learned_at: 2026-10-15 22:46:53
 nodes: [RH_RhartVideoSparkvideo20FastTextToVideo, SaveVideo]
 patterns: []
 missing: []

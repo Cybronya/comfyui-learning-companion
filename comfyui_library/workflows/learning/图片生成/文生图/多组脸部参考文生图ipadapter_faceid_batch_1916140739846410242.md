@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/多组脸部参考文生图ipadapter_faceid_batch_1916140739846410242.json
 hash: a28bdc6b52da6691
 coverage: 0.9
-learned_at: 2026-10-10 20:59:42
+learned_at: 2026-10-15 22:28:27
 nodes: [CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, EmptyLatentImage, ImageBatch, IPAdapterUnifiedLoader, IPAdapterFaceID, IPAdapter, KSampler, LoadImage, LoadImage, LoadImage, LoadImage, ImageBatch, ImageBatch, IPAdapterUnifiedLoaderFaceID, Note, VAEDecode, SaveImage, PreviewImage]
 patterns: [text_to_image]
 missing: []
@@ -20,16 +20,18 @@ parameters: {"batch_size": 1, "cfg": 6.5, "checkpoint": "majicmixRealistic_v7.sa
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（20 个）：
-- `CheckpointLoaderSimple`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `EmptyLatentImage`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
 - `ImageBatch`
 - `IPAdapterUnifiedLoader`
 - `IPAdapterFaceID`
 - `IPAdapter`
-- `KSampler`
+- `KSampler` ★核心
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
@@ -38,7 +40,7 @@ parameters: {"batch_size": 1, "cfg": 6.5, "checkpoint": "majicmixRealistic_v7.sa
 - `ImageBatch`
 - `IPAdapterUnifiedLoaderFaceID`
 - `Note`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `PreviewImage`
 
@@ -46,19 +48,21 @@ parameters: {"batch_size": 1, "cfg": 6.5, "checkpoint": "majicmixRealistic_v7.sa
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `6.5`
 - `checkpoint` = `majicmixRealistic_v7.safetensors`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `ddpm`
-- `scheduler` = `karras`
+- `batch_size` = `1`
 - `seed` = `1102715810419781`
 - `steps` = `30`
-- `width` = `1024`
+- `cfg` = `6.5`
+- `sampler_name` = `ddpm`
+- `scheduler` = `karras`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **90%**（18/20）
 
-**有卡**：`CheckpointLoaderSimple`、`CLIPTextEncode`、`EmptyLatentImage`、`ImageBatch`、`IPAdapterUnifiedLoader`、`IPAdapterFaceID`、`IPAdapter`、`KSampler`、`LoadImage`、`IPAdapterUnifiedLoaderFaceID`、`Note`、`VAEDecode`
+**有卡**：`CheckpointLoaderSimple`、`CLIPTextEncode`、`EmptyLatentImage`、`ImageBatch`、`IPAdapterUnifiedLoader`、`IPAdapterFaceID`、`IPAdapter`、`KSampler`、`LoadImage`、`IPAdapterUnifiedLoaderFaceID`、`VAEDecode`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、LoadImage、IPAdapterFaceID、IPAdapterUnifiedLoader

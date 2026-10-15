@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json
 hash: 9994e8a8b1fe9418
-coverage: 0.761905
-learned_at: 2026-10-10 20:48:11
+coverage: 0.84127
+learned_at: 2026-10-15 22:25:34
 nodes: [Krea2EditGroundedEncode, EmptySD3LatentImage, Krea2EditModelPatch, Krea2EditGroundedEncode, CLIPLoader, VAELoader, VAEEncode, VAEEncode, CLIPLoader, VAELoader, KSampler, VAEDecode, SaveImage, Seed (rgthree), VAEDecode, VAEEncode, Krea2EditGroundedEncode, EmptySD3LatentImage, VAELoader, Krea2EditModelPatch, Krea2EditGroundedEncode, GetImageSize+, CLIPLoader, Seed (rgthree), DrawMaskOnImage, ImageScaleToTotalPixels, LoadImage, ImageScaleToTotalPixels, ImageScaleToTotalPixels, LoadImage, ResolutionSelector, PrimitiveStringMultiline, Seed (rgthree), VAEEncode, Krea2EditGroundedEncode, Krea2EditGroundedEncode, LoadImage, ImageScaleToTotalPixels, GetImageSize+, EmptySD3LatentImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveStringMultiline, UNETLoader, Note, UNETLoader, UNETLoader, UNETLoader, LoadImage, PreviewImage, KSampler, SaveImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Note, Note, KSampler, VAEDecode, Krea2EditModelPatch, SaveImage, PrimitiveStringMultiline]
 patterns: [image_to_image]
-missing: [GetImageSize+, GetImageSize+, Seed (rgthree), Seed (rgthree), Seed (rgthree)]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 478172831101520, "steps": 10}
-discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/krea2-Single Image _ Dual Image _ Inpainting_2089356156211912706.json
@@ -101,18 +100,8 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 ## 知识
 
-覆盖率 **76%**（48/63）
+覆盖率 **84%**（53/63）
 
-**有卡**：`Krea2EditGroundedEncode`、`EmptySD3LatentImage`、`Krea2EditModelPatch`、`CLIPLoader`、`VAELoader`、`VAEEncode`、`KSampler`、`VAEDecode`、`SaveImage`、`DrawMaskOnImage`、`ImageScaleToTotalPixels`、`LoadImage`、`ResolutionSelector`、`LoraLoaderModelOnly`、`UNETLoader`
-
-**缺卡**（5）：`GetImageSize+`、`GetImageSize+`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`
+**有卡**：`Krea2EditGroundedEncode`、`EmptySD3LatentImage`、`Krea2EditModelPatch`、`CLIPLoader`、`VAELoader`、`VAEEncode`、`KSampler`、`VAEDecode`、`SaveImage`、`Seed (rgthree)`、`GetImageSize+`、`DrawMaskOnImage`、`ImageScaleToTotalPixels`、`LoadImage`、`ResolutionSelector`、`LoraLoaderModelOnly`、`UNETLoader`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

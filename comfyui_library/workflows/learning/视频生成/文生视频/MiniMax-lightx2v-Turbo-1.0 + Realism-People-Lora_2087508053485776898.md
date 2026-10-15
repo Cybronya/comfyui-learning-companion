@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json
 hash: 3308d74521189e86
-coverage: 0.9
-learned_at: 2026-10-11 20:53:43
+coverage: 0.933333
+learned_at: 2026-10-15 22:46:26
 nodes: [MarkdownNote, ComfyMathExpression, CLIPLoader, VAELoader, VAELoader, RandomNoise, KSamplerSelect, BasicGuider, SamplerCustomAdvanced, Text Find and Replace, easy showAnything, KSamplerSelect, BasicGuider, RandomNoise, CreateVideo, BasicScheduler, KSamplerSelect, RandomNoise, BasicScheduler, CreateVideo, VAEDecode, SamplerCustomAdvanced, VAEDecode, KSamplerSelect, RandomNoise, SaveVideo, CreateVideo, BasicGuider, BasicScheduler, VAEDecode, VAEDecode, VAEDecodeAudio, SaveVideo, Seed (rgthree), ImageConcatMulti, SamplerCustomAdvanced, SaveVideo, SamplerCustomAdvanced, BasicScheduler, KSamplerSelect, SaveVideo, CreateVideo, BasicScheduler, VAEDecode, VAEDecodeAudio, SamplerCustomAdvanced, RandomNoise, BasicGuider, BasicGuider, KSamplerSelect, VAEDecodeAudio, CreateVideo, VAEDecode, SaveVideo, BasicGuider, SamplerCustomAdvanced, BasicScheduler, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, UNETLoader, LoraLoaderModelOnly, RandomNoise, SaveVideo, ImageConcatMulti, Reroute, ImageConcatMulti, VAEDecodeAudio, VAEDecodeAudio, CreateVideo, VAEDecodeAudio, PreviewAudio, PreviewAudio, PreviewAudio, PrimitiveFloat, RH_LLMAPI_Pro_Node, MarkdownNote, CR Text, ImageConcatMulti, TextOverlay, TextOverlay, TextOverlay, TextOverlay, TextOverlay, TextOverlay, ResolutionSelector, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, MarkdownNote]
 patterns: []
-missing: [CR Text, Text Find and Replace, Seed (rgthree)]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Text Find and Replace` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/MiniMax-lightx2v-Turbo-1.0 + Realism-People-Lora_2087508053485776898.json
@@ -116,16 +115,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **90%**（81/90）
+覆盖率 **93%**（84/90）
 
-**有卡**：`ComfyMathExpression`、`CLIPLoader`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`SamplerCustomAdvanced`、`CreateVideo`、`BasicScheduler`、`VAEDecode`、`SaveVideo`、`VAEDecodeAudio`、`ImageConcatMulti`、`LoraLoaderModelOnly`、`MiniMaxH3ImageToVideo`、`UNETLoader`、`PreviewAudio`、`RH_LLMAPI_Pro_Node`、`TextOverlay`、`ResolutionSelector`、`VHS_VideoCombine`
-
-**缺卡**（3）：`CR Text`、`Text Find and Replace`、`Seed (rgthree)`
+**有卡**：`ComfyMathExpression`、`CLIPLoader`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`SamplerCustomAdvanced`、`Text Find and Replace`、`CreateVideo`、`BasicScheduler`、`VAEDecode`、`SaveVideo`、`VAEDecodeAudio`、`Seed (rgthree)`、`ImageConcatMulti`、`LoraLoaderModelOnly`、`MiniMaxH3ImageToVideo`、`UNETLoader`、`PreviewAudio`、`RH_LLMAPI_Pro_Node`、`CR Text`、`TextOverlay`、`ResolutionSelector`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、UNETLoader、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Find and Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

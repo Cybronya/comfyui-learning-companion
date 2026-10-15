@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/（贞贞版）Wan2.2 All-in-one 新CLIP V7文生视频（自用）_1958204024900227073.json
 hash: 2dab68f39440579f
 coverage: 0.842105
-learned_at: 2026-10-10 23:14:46
+learned_at: 2026-10-15 22:49:13
 nodes: [CLIPTextEncode, ModelSamplingSD3, VHS_VideoCombine, SaveLatent, EmptyHunyuanLatentVideo, LoadImage, SaveImage, VAEDecode, JWInteger, Note, Note, Note, CLIPLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, CLIPTextEncode, JWInteger, JWInteger, KSampler]
 patterns: []
 missing: []

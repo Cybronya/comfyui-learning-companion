@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx-2.3图生视频单阶段最优_2030348888535732226.json
 hash: 495cf7373395fc49
 coverage: 0.9375
-learned_at: 2026-10-11 03:16:50
+learned_at: 2026-10-15 22:47:21
 nodes: [LTXVAudioVAEDecode, VAEDecodeTiled, LTXVSeparateAVLatent, LTXVImgToVideoConditionOnly, LTXVEmptyLatentAudio, LTXVConditioning, LTXVConcatAVLatent, LTXVPreprocess, SamplerCustomAdvanced, CM_FloatToInt, MultimodalGuider, ClownSampler_Beta, GuiderParameters, GuiderParameters, VHS_VideoCombine, VAELoader, VAELoaderKJ, DualCLIPLoader, UnetLoaderGGUF, PrimitiveFloat, PrimitiveBoolean, CLIPTextEncode, EmptyLTXVLatentVideo, CLIPTextEncode, LoadImage, ResizeImageMaskNode, LTXVScheduler, RandomNoise, PrimitiveInt, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly]
 patterns: []
 missing: []

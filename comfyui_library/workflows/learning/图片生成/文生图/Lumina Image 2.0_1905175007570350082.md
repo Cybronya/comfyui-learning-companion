@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Lumina Image 2.0_1905175007570350082.json
 hash: e005b0a889740164
 coverage: 0.8
-learned_at: 2026-10-10 20:58:46
+learned_at: 2026-10-15 22:26:49
 nodes: [CLIPTextEncode, CheckpointLoaderSimple, ModelSamplingAuraFlow, KSampler, VAEDecode, SaveImage, CLIPTextEncode, EmptySD3LatentImage, Note, Note]
 patterns: []
 missing: []
@@ -20,30 +20,34 @@ parameters: {"cfg": 4, "checkpoint": "lumina_2.safetensors", "denoise": 1, "samp
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（10 个）：
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
 - `ModelSamplingAuraFlow`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `EmptySD3LatentImage`
 - `Note`
 - `Note`
 
 ## 关键参数
 
-- `cfg` = `4`
 - `checkpoint` = `lumina_2.safetensors`
-- `denoise` = `1`
-- `sampler_name` = `res_multistep`
-- `scheduler` = `simple`
 - `seed` = `128496724350906`
 - `steps` = `25`
+- `cfg` = `4`
+- `sampler_name` = `res_multistep`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **80%**（8/10）
 
 **有卡**：`CLIPTextEncode`、`CheckpointLoaderSimple`、`ModelSamplingAuraFlow`、`KSampler`、`VAEDecode`、`SaveImage`、`EmptySD3LatentImage`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、SaveImage、EmptySD3LatentImage、ModelSamplingAuraFlow、sd15-t2i-basic

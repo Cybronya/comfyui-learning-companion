@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/【LTX-2.3唱歌术】输入歌词就能生成MV？SongGeneration2+LTX2.3工作流实测_2033104945955741697.json
 hash: b78c414c0a1e0393
-coverage: 0.822581
-learned_at: 2026-10-11 03:48:39
+coverage: 0.854839
+learned_at: 2026-10-15 22:47:39
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, KSamplerSelect, Reroute, LTXVAudioVAEDecode, CLIPTextEncode, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CLIPTextEncode, CFGGuider, VAEDecodeTiled, LTXVImgToVideoInplace, SolidMask, LTXVAudioVAELoader, ResizeImagesByLongerEdge, LTXVPreprocess, ComfyMathExpression, ComfyMathExpression, EmptyLTXVLatentVideo, TrimAudioDuration, LTXVAudioVAEEncode, LTXVConcatAVLatent, SetLatentNoiseMask, LatentUpscaleModelLoader, LoraLoaderModelOnly, CheckpointLoaderSimple, ResizeImageMaskNode, LoadImage, LTXAVTextEncoderLoader, ComfyMathExpression, ComfyMathExpression, LoadAudio, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveFloat, PrimitiveBoolean, PrimitiveStringMultiline, Label (rgthree), CreateVideo, SaveVideo, Note, SongGeneration_Loader, SongGeneration_Sampler, Note, SaveAudio, SongGeneration_Stage2, PreviewAudio, SongGeneration_Stage1, Label (rgthree), Fast Groups Bypasser (rgthree)]
 patterns: []
-missing: [Label (rgthree), Label (rgthree)]
+missing: []
 parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors"}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/【LTX-2.3唱歌术】输入歌词就能生成MV？SongGeneration2+LTX2.3工作流实测_2033104945955741697.json
@@ -93,15 +92,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **82%**（51/62）
+覆盖率 **85%**（53/62）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`SolidMask`、`LTXVAudioVAELoader`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`ResizeImageMaskNode`、`LoadImage`、`LTXAVTextEncoderLoader`、`LoadAudio`、`PrimitiveBoolean`、`CreateVideo`、`SaveVideo`、`SongGeneration_Loader`、`SongGeneration_Sampler`、`SaveAudio`、`SongGeneration_Stage2`、`PreviewAudio`、`SongGeneration_Stage1`
-
-**缺卡**（2）：`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`SolidMask`、`LTXVAudioVAELoader`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`ResizeImageMaskNode`、`LoadImage`、`LTXAVTextEncoderLoader`、`LoadAudio`、`PrimitiveBoolean`、`Label (rgthree)`、`CreateVideo`、`SaveVideo`、`SongGeneration_Loader`、`SongGeneration_Sampler`、`SaveAudio`、`SongGeneration_Stage2`、`PreviewAudio`、`SongGeneration_Stage1`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

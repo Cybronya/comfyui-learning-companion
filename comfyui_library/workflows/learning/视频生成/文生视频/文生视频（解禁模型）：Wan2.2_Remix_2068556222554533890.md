@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频（解禁模型）：Wan2.2_Remix_2068556222554533890.json
 hash: 954e50f990cde652
 coverage: 1
-learned_at: 2026-10-11 20:21:35
+learned_at: 2026-10-15 22:48:45
 nodes: [UNETLoader, UNETLoader, CLIPLoader, VAELoader, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, ModelSamplingSD3, LoraLoaderModelOnly, ModelSamplingSD3, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, CreateVideo, VAEDecode, SaveVideo, CLIPTextEncode]
 patterns: []
 missing: []

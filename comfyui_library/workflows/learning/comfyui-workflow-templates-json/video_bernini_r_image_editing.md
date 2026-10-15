@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_bernini_r_image_editing.json
 hash: daabd222879fc375
 official: true
-coverage: 0.636364
-learned_at: 2026-10-10 22:50:04
+coverage: 0.727273
+learned_at: 2026-10-15 22:24:57
 nodes: [64670aa5-a932-4e9f-a299-3bfef6ebc043, MarkdownNote, MarkdownNote, BatchImagesNode, MarkdownNote, LoadImage, LoadImage, SaveImage, ResizeImageMaskNode, GetImageSize, ImageCompare]
 patterns: []
-missing: [64670aa5-a932-4e9f-a299-3bfef6ebc043]
-discoveries: [次要节点 `64670aa5-a932-4e9f-a299-3bfef6ebc043` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_bernini_r_image_editing.json
@@ -38,14 +37,8 @@ discoveries: [次要节点 `64670aa5-a932-4e9f-a299-3bfef6ebc043` 知识库中�
 
 ## 知识
 
-覆盖率 **64%**（7/11）
+覆盖率 **73%**（8/11）
 
-**有卡**：`BatchImagesNode`、`LoadImage`、`SaveImage`、`ResizeImageMaskNode`、`GetImageSize`、`ImageCompare`
+**有卡**：`64670aa5-a932-4e9f-a299-3bfef6ebc043`、`BatchImagesNode`、`LoadImage`、`SaveImage`、`ResizeImageMaskNode`、`GetImageSize`、`ImageCompare`
 
-**缺卡**（1）：`64670aa5-a932-4e9f-a299-3bfef6ebc043`
-
-**用到的条目**：LoadImage、GetImageSize、ResizeImageMaskNode、GetImageSize、SaveImage、BatchImagesNode、ImageCompare、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `64670aa5-a932-4e9f-a299-3bfef6ebc043` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、GetImageSize、ResizeImageMaskNode、GetImageSize、SaveImage、BatchImagesNode、ImageCompare、64670aa5-a932-4e9f-a299-3bfef6ebc043

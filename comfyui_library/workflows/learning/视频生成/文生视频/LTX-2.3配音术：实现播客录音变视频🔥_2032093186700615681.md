@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3配音术：实现播客录音变视频🔥_2032093186700615681.json
 hash: e2487fb90f13567f
-coverage: 0.794521
-learned_at: 2026-10-11 03:16:45
+coverage: 0.890411
+learned_at: 2026-10-15 22:44:43
 nodes: [LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CheckpointLoaderSimple, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LoraLoaderModelOnly, LTXVImgToVideoInplace, ResizeImageMaskNode, KSamplerSelect, ComfyMathExpression, Reroute, ComfyMathExpression, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LatentUpscaleModelLoader, CFGGuider, MarkdownNote, MarkdownNote, llama_cpp_parameters, llama_cpp_model_loader, LTXVAudioVAELoader, CLIPTextEncode, LTXAVTextEncoderLoader, PrimitiveInt, RandomNoise, RandomNoise, LTXVAudioVAEDecode, LoadImage, PrimitiveBoolean, ResizeImagesByLongerEdge, LTXVPreprocess, ComfyMathExpression, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, LTXVLatentUpsampler, SaveVideo, VAEDecodeTiled, LTXVConcatAVLatent, LTXVImgToVideoInplace, CreateVideo, PreviewAny, FB_Qwen3TTSRoleBank, PreviewAudio, PreviewAudio, MathExpression|pysssss, Bjornulf_ShowInt, PrimitiveInt, PrimitiveInt, FB_Qwen3TTSVoiceDesign, FB_Qwen3TTSVoiceClonePrompt, CR Text, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceDesign, CLIPTextEncode, llama_cpp_instruct_adv, TextConcatenator, CR Text, PreviewAny, FB_Qwen3TTSDialogueInference, easy cleanGpuUsed, PreviewAudio, LTXVAudioVAEEncode, AudioInfoNode, SolidMask, SetLatentNoiseMask, easy cleanGpuUsed, Label (rgthree), Label (rgthree)]
 patterns: []
-missing: [CR Text, CR Text, Label (rgthree), Label (rgthree), MathExpression|pysssss, easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3配音术：实现播客录音变视频🔥_2032093186700615681.json
@@ -107,20 +106,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **79%**（58/73）
+覆盖率 **89%**（65/73）
 
-**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CheckpointLoaderSimple`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`ComfyMathExpression`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`LTXVAudioVAELoader`、`CLIPTextEncode`、`LTXAVTextEncoderLoader`、`RandomNoise`、`LTXVAudioVAEDecode`、`LoadImage`、`PrimitiveBoolean`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVLatentUpsampler`、`SaveVideo`、`VAEDecodeTiled`、`CreateVideo`、`FB_Qwen3TTSRoleBank`、`PreviewAudio`、`Bjornulf_ShowInt`、`FB_Qwen3TTSVoiceDesign`、`FB_Qwen3TTSVoiceClonePrompt`、`llama_cpp_instruct_adv`、`TextConcatenator`、`FB_Qwen3TTSDialogueInference`、`LTXVAudioVAEEncode`、`AudioInfoNode`、`SolidMask`、`SetLatentNoiseMask`
-
-**缺卡**（7）：`CR Text`、`CR Text`、`Label (rgthree)`、`Label (rgthree)`、`MathExpression|pysssss`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CheckpointLoaderSimple`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`ComfyMathExpression`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`LTXVAudioVAELoader`、`CLIPTextEncode`、`LTXAVTextEncoderLoader`、`RandomNoise`、`LTXVAudioVAEDecode`、`LoadImage`、`PrimitiveBoolean`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVLatentUpsampler`、`SaveVideo`、`VAEDecodeTiled`、`CreateVideo`、`FB_Qwen3TTSRoleBank`、`PreviewAudio`、`MathExpression|pysssss`、`Bjornulf_ShowInt`、`FB_Qwen3TTSVoiceDesign`、`FB_Qwen3TTSVoiceClonePrompt`、`CR Text`、`llama_cpp_instruct_adv`、`TextConcatenator`、`FB_Qwen3TTSDialogueInference`、`easy cleanGpuUsed`、`LTXVAudioVAEEncode`、`AudioInfoNode`、`SolidMask`、`SetLatentNoiseMask`、`Label (rgthree)`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

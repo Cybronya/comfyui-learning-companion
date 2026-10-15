@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图(提示词增强)_2104119059133587458.json
 hash: 33ee7e1917432f21
-coverage: 0.933333
-learned_at: 2026-10-10 20:59:06
+coverage: 1
+learned_at: 2026-10-15 22:27:23
 nodes: [ConditioningZeroOut, VAELoader, CLIPLoader, VAEDecode, EmptyLatentImage, KSampler, TextGenerate, CLIPLoader, easy clearCacheAll, TextEncodeQwenImage21, SaveImage, ResolutionSelector, UNETLoader, LoraLoaderModelOnly, StringConstantMultiline]
 patterns: []
-missing: [easy clearCacheAll]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 1031030167875879, "steps": 40, "width": 1024}
-discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen2.1文生图(提示词增强)_2104119059133587458.json
@@ -21,43 +20,41 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（15 个）：
 - `ConditioningZeroOut`
 - `VAELoader`
 - `CLIPLoader`
-- `VAEDecode`
-- `EmptyLatentImage`
-- `KSampler`
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
 - `TextGenerate`
 - `CLIPLoader`
 - `easy clearCacheAll`
 - `TextEncodeQwenImage21`
 - `SaveImage`
 - `ResolutionSelector`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `StringConstantMultiline`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `1031030167875879`
 - `steps` = `40`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **93%**（14/15）
+覆盖率 **100%**（15/15）
 
-**有卡**：`ConditioningZeroOut`、`VAELoader`、`CLIPLoader`、`VAEDecode`、`EmptyLatentImage`、`KSampler`、`TextGenerate`、`easy clearCacheAll`、`TextEncodeQwenImage21`、`SaveImage`、`ResolutionSelector`、`UNETLoader`、`LoraLoaderModelOnly`
+**有卡**：`ConditioningZeroOut`、`VAELoader`、`CLIPLoader`、`VAEDecode`、`EmptyLatentImage`、`KSampler`、`TextGenerate`、`easy clearCacheAll`、`TextEncodeQwenImage21`、`SaveImage`、`ResolutionSelector`、`UNETLoader`、`LoraLoaderModelOnly`、`StringConstantMultiline`
 
-**缺卡**（1）：`easy clearCacheAll`
-
-## 学习发现
-
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、EmptyLatentImage

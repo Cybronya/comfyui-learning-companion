@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/fluxtopaz RF inverse + controlnet_1958569814094725122.json
 hash: 04a54e3ef026d7c2
 coverage: 0.596491
-learned_at: 2026-10-10 20:59:20
+learned_at: 2026-10-15 22:27:45
 nodes: [SetNode, ImageScale, DisableNoise, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, VAEDecode, GetNode, FluxDeGuidance, FlipSigmas, InFluxModelSamplingPred, GetNode, SamplerCustomAdvanced, GetNode, GetNode, INTConstant, INTConstant, ImageConcatMulti, DualCLIPLoader, UNETLoader, GetNode, LoraLoaderModelOnly, GetNode, GetNode, OutFluxModelSamplingPred, GetNode, GetNode, VAELoader, GetNode, GetNode, BasicGuider, FluxDeGuidance, ControlNetLoader, LoadImage, VAEDecode, PreviewImage, Note, DisableNoise, BasicScheduler, VAEEncode, BasicGuider, FluxForwardODESampler, BasicScheduler, Note, SamplerCustomAdvanced, PreviewImage, SaveImage, LoadImage, CLIPTextEncode, CLIPTextEncode, AIO_Preprocessor, FluxUnionControlNetApply, FluxReverseODESampler]
 patterns: []
 missing: []
@@ -20,6 +20,8 @@ parameters: {"controlnet_strength": "canny"}
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（57 个）：
 - `SetNode`
 - `ImageScale`
@@ -31,22 +33,22 @@ parameters: {"controlnet_strength": "canny"}
 - `SetNode`
 - `GetNode`
 - `GetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `GetNode`
 - `FluxDeGuidance`
 - `FlipSigmas`
 - `InFluxModelSamplingPred`
 - `GetNode`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `GetNode`
 - `GetNode`
 - `INTConstant`
 - `INTConstant`
 - `ImageConcatMulti`
 - `DualCLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `GetNode`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `GetNode`
 - `GetNode`
 - `OutFluxModelSamplingPred`
@@ -59,25 +61,25 @@ parameters: {"controlnet_strength": "canny"}
 - `FluxDeGuidance`
 - `ControlNetLoader`
 - `LoadImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
 - `Note`
 - `DisableNoise`
 - `BasicScheduler`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `BasicGuider`
-- `FluxForwardODESampler`
+- `FluxForwardODESampler` ★核心
 - `BasicScheduler`
 - `Note`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `PreviewImage`
 - `SaveImage`
 - `LoadImage`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `AIO_Preprocessor`
-- `FluxUnionControlNetApply`
-- `FluxReverseODESampler`
+- `FluxUnionControlNetApply` ★核心
+- `FluxReverseODESampler` ★核心
 
 ## 关键参数
 
@@ -87,4 +89,6 @@ parameters: {"controlnet_strength": "canny"}
 
 覆盖率 **60%**（34/57）
 
-**有卡**：`SetNode`、`ImageScale`、`DisableNoise`、`GetNode`、`VAEDecode`、`FluxDeGuidance`、`FlipSigmas`、`InFluxModelSamplingPred`、`SamplerCustomAdvanced`、`INTConstant`、`ImageConcatMulti`、`DualCLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`OutFluxModelSamplingPred`、`VAELoader`
+**有卡**：`ImageScale`、`DisableNoise`、`VAEDecode`、`FluxDeGuidance`、`FlipSigmas`、`InFluxModelSamplingPred`、`SamplerCustomAdvanced`、`INTConstant`、`ImageConcatMulti`、`DualCLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`OutFluxModelSamplingPred`、`VAELoader`、`BasicGuider`、`ControlNetLoader`、`LoadImage`、`BasicScheduler`、`VAEEncode`、`FluxForwardODESampler`、`SaveImage`、`CLIPTextEncode`、`AIO_Preprocessor`、`FluxUnionControlNetApply`、`FluxReverseODESampler`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、LoadImage、ControlNetLoader、FluxUnionControlNetApply

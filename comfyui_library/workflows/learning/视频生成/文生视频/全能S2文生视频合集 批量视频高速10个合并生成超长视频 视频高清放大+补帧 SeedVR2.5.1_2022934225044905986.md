@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能S2文生视频合集 批量视频高速10个合并生成超长视频 视频高清放大+补帧 SeedVR2.5.1_2022934225044905986.json
 hash: 13d25af209585756
-coverage: 0.588235
-learned_at: 2026-10-11 03:16:51
+coverage: 0.941176
+learned_at: 2026-10-15 22:47:51
 nodes: [SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, RH_Sora2_T2V_Batch, easy cleanGpuUsed, RIFE VFI, SeedVR2, SeedVR2BlockSwap, MathExpression_UTK, VHS_VideoInfo, VHS_VideoCombine, VHS_VideoCombine, Int, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), VHS_LoadVideo]
 patterns: []
-missing: [CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, RIFE VFI, easy cleanGpuUsed]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/全能S2文生视频合集 批量视频高速10个合并生成超长视频 视频高清放大+补帧 SeedVR2.5.1_2022934225044905986.json
@@ -60,25 +59,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **59%**（20/34）
+覆盖率 **94%**（32/34）
 
-**有卡**：`SaveVideo`、`RH_Sora2_T2V_Batch`、`SeedVR2`、`SeedVR2BlockSwap`、`MathExpression_UTK`、`VHS_VideoInfo`、`VHS_VideoCombine`、`Int`、`VHS_LoadVideo`
-
-**缺卡**（12）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`RIFE VFI`、`easy cleanGpuUsed`
+**有卡**：`SaveVideo`、`CR Text`、`RH_Sora2_T2V_Batch`、`easy cleanGpuUsed`、`RIFE VFI`、`SeedVR2`、`SeedVR2BlockSwap`、`MathExpression_UTK`、`VHS_VideoInfo`、`VHS_VideoCombine`、`Int`、`VHS_LoadVideo`
 
 **用到的条目**：SeedVR2、SeedVR2BlockSwap、SaveVideo、Int、VHS_LoadVideo、VHS_VideoCombine、VHS_VideoInfo、MathExpression_UTK
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

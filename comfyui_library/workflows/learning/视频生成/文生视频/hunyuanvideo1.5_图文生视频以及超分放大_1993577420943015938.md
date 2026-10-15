@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/hunyuanvideo1.5_图文生视频以及超分放大_1993577420943015938.json
 hash: 556a8807c68225dd
 coverage: 0.875
-learned_at: 2026-10-11 02:57:39
+learned_at: 2026-10-15 22:47:20
 nodes: [PreviewImage, CLIPTextEncode, ImageCrop, HunyuanVideo15ImageToVideo, CLIPTextEncode, EmptyHunyuanVideo15Latent, ModelSamplingSD3, ModelSamplingSD3, KSampler, HunyuanVideo15LatentUpscaleWithModel, LoraLoaderModelOnly, DualCLIPLoader, CLIPVisionLoader, LatentUpscaleModelLoader, LoadImage, VAELoader, VAEDecodeTiled, VHS_VideoCombine, VHS_VideoCombine, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, KSampler, Reroute, VAEDecode, Reroute, Reroute, VAEEncode, VHS_LoadVideo, CLIPVisionEncode, HunyuanVideo15SuperResolution]
 patterns: [image_to_image]
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/图生视频极速版LTX2.3  数字人话 唱歌对口型_2044214545626963970.json
 hash: ab45584739bb4555
 coverage: 0.95
-learned_at: 2026-10-11 19:49:48
+learned_at: 2026-10-15 22:48:24
 nodes: [LTXVImgToVideoInplace, LTXVConcatAVLatent, CheckpointLoaderSimple, LTXVPreprocess, ImageScaleBy, CLIPTextEncode, RandomNoise, LTXVConditioning, LTXVScheduler, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, CFGGuider, LTXVConcatAVLatent, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVImgToVideoInplace, KSampler, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CreateVideo, VAEDecode, LTXVAudioVAELoader, LoraLoaderModelOnly, CLIPTextEncode, PreviewAny, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, GetImageSize, ResizeImagesByLongerEdge, PrimitiveInt, LTXAVTextEncoderLoader, EmptyImage, GetImageSize, TextGenerateLTX2Prompt, LoadImage, SaveVideo, DualCLIPLoader, ResizeImageMaskNode]
 patterns: []
 missing: []

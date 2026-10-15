@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/4G-6G显存文生视频本地部署福音wan2.2aio文生视频工作流_2054422488385376258.json
 hash: 5c92d14b99713fca
 coverage: 0.909091
-learned_at: 2026-10-11 19:49:33
+learned_at: 2026-10-15 22:43:50
 nodes: [ConditioningZeroOut, ModelSamplingSD3, CLIPTextEncode, EmptyHunyuanLatentVideo, VHS_VideoCombine, KSampler, VAEDecode, UnetLoaderGGUF, ClipLoaderGGUF, VaeGGUF, 孤海注释]
 patterns: []
 missing: []

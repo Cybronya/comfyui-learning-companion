@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.1-NAG反向应用_2072999737776971776.json
 hash: 81d123fffb1273df
-coverage: 0.933333
-learned_at: 2026-10-11 20:38:42
+coverage: 1
+learned_at: 2026-10-15 22:47:08
 nodes: [WanVideoTextEncodeSingle, WanVideoTextEncodeSingle, WanVideoDecode, WanVideoBlockSwap, VHS_VideoCombine, WanVideoApplyNAG, WanVideoEmptyEmbeds, LoadWanVideoT5TextEncoder, String Literal, WanVideoEnhanceAVideo, WanVideoTeaCache, WanVideoVAELoader, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoModelLoader]
 patterns: []
-missing: [String Literal]
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Wan2.1-NAG反向应用_2072999737776971776.json
@@ -41,14 +40,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **93%**（14/15）
+覆盖率 **100%**（15/15）
 
-**有卡**：`WanVideoTextEncodeSingle`、`WanVideoDecode`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoApplyNAG`、`WanVideoEmptyEmbeds`、`LoadWanVideoT5TextEncoder`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`
-
-**缺卡**（1）：`String Literal`
+**有卡**：`WanVideoTextEncodeSingle`、`WanVideoDecode`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoApplyNAG`、`WanVideoEmptyEmbeds`、`LoadWanVideoT5TextEncoder`、`String Literal`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`
 
 **用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、VHS_VideoCombine、WanVideoBlockSwap、WanVideoModelLoader
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识

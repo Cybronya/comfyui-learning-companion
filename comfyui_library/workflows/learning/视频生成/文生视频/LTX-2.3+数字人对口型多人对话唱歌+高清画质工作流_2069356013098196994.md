@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3+数字人对口型多人对话唱歌+高清画质工作流_2069356013098196994.json
 hash: 2efa9b1e333e5f07
-coverage: 0.447154
-learned_at: 2026-10-11 20:21:25
+coverage: 0.487805
+learned_at: 2026-10-15 22:44:39
 nodes: [LTXVImgToVideoInplace, LTXVSeparateAVLatent, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVLatentUpsampler, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVSeparateAVLatent, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecodeTiled, GetNode, GetNode, GetNode, SetNode, LTXVPreprocess, GetNode, SetNode, SamplerCustom, SamplerCustom, SetNode, Seed (rgthree), LatentUpscaleModelLoader, DualCLIPLoader, VAELoader, VAELoaderKJ, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, LTXVChunkFeedForward, PathchSageAttentionKJ, SetNode, SetNode, GetNode, LTXVConditioning, LTXVScheduler, CLIPTextEncode, JoinStrings, TextInput_, TextInput_, SetNode, RH_LLMAPI_NODE, GetNode, SetLatentNoiseMask, GetNode, LTXVAudioVAEEncode, GetNode, GetNode, SetNode, SetNode, SimpleMath+, SetNode, MelBandRoFormerModelLoader, Display Any (rgthree), SimpleMath+, AudioInfo, GetNode, SolidMask, SetNode, SetNode, SetNode, SetNode, PrimitiveBoolean, INTConstant, INTConstant, INTConstant, ResizeImagesByLongerEdge, GetNode, GetNode, SetNode, ImageResizeKJv2, SetNode, SetNode, SetNode, JDC_ResizeFactor, GetNode, GetNode, VHS_VideoCombine, SimpleMath+, GetImageSize, ManualSigmas, ManualSigmas, ShowText|pysssss, LTXVScheduler, UNETLoader, LoraLoaderModelOnly, LTX2_NAG, GetNode, GetNode, GetNode, KSamplerSelect, KSamplerSelect, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), CLIPTextEncode, GetNode, LTXVConcatAVLatent, SetNode, GetNode, TextInput_, LoadImage, LoadAudio, PreviewAudio, PreviewAudio, MelBandRoFormerSampler, AudioCrop]
 patterns: []
-missing: [Display Any (rgthree), SimpleMath+, SimpleMath+, SimpleMath+, Seed (rgthree)]
-discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX-2.3+数字人对口型多人对话唱歌+高清画质工作流_2069356013098196994.json
@@ -149,18 +148,8 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **45%**（55/123）
+覆盖率 **49%**（60/123）
 
-**有卡**：`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVPreprocess`、`SamplerCustom`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoader`、`VAELoaderKJ`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`LTXVConditioning`、`LTXVScheduler`、`CLIPTextEncode`、`JoinStrings`、`TextInput_`、`RH_LLMAPI_NODE`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`MelBandRoFormerModelLoader`、`AudioInfo`、`SolidMask`、`PrimitiveBoolean`、`INTConstant`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`JDC_ResizeFactor`、`VHS_VideoCombine`、`GetImageSize`、`ManualSigmas`、`UNETLoader`、`LoraLoaderModelOnly`、`LTX2_NAG`、`KSamplerSelect`、`LoadImage`、`LoadAudio`、`PreviewAudio`、`MelBandRoFormerSampler`、`AudioCrop`
-
-**缺卡**（5）：`Display Any (rgthree)`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`Seed (rgthree)`
+**有卡**：`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVPreprocess`、`SamplerCustom`、`Seed (rgthree)`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoader`、`VAELoaderKJ`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`LTXVConditioning`、`LTXVScheduler`、`CLIPTextEncode`、`JoinStrings`、`TextInput_`、`RH_LLMAPI_NODE`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`SimpleMath+`、`MelBandRoFormerModelLoader`、`Display Any (rgthree)`、`AudioInfo`、`SolidMask`、`PrimitiveBoolean`、`INTConstant`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`JDC_ResizeFactor`、`VHS_VideoCombine`、`GetImageSize`、`ManualSigmas`、`UNETLoader`、`LoraLoaderModelOnly`、`LTX2_NAG`、`KSamplerSelect`、`LoadImage`、`LoadAudio`、`PreviewAudio`、`MelBandRoFormerSampler`、`AudioCrop`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、MelBandRoFormerSampler
-
-## 学习发现
-
-- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

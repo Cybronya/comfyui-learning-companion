@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1文生图2026开源最强模型工作流，高质量文本到图像生成方案_2107157719223455746.json
 hash: b173d2a5f3271b8e
-coverage: 0.761905
-learned_at: 2026-10-10 20:48:07
+coverage: 0.888889
+learned_at: 2026-10-15 22:25:16
 nodes: [LoraLoaderModelOnly, PixaromaGroupSwitch, TextEncodeQwenImage21, KSampler, PixaromaResolution, EmptyLatentImage, KSampler, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), Any Switch (rgthree), VAEDecode, VAEDecode, LoraLoaderModelOnly, CR Text Concatenate, CR Text Concatenate, CR Prompt Text, CR Prompt Text, PixaromaGroupSwitch, Any Switch (rgthree), SaveImage, LoadImage, PreviewAny, QwenPERewriteT8, SaveImageAdvanced, CLIPLoader, UNETLoader, VAELoader, LoraLoaderModelOnly, QwenImage21Cache, PathchSageAttentionKJ, ModelAttentionBackend, QwenPERewriteT8, CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Text Concatenate, CR Text Concatenate, Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), CR Prompt Text, CR Prompt Text, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1文生图2026开源最强模型工作流，高质量文本到图像生成方案_2107157719223455746.json
@@ -105,11 +105,9 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **76%**（48/63）
+覆盖率 **89%**（56/63）
 
-**有卡**：`LoraLoaderModelOnly`、`PixaromaGroupSwitch`、`TextEncodeQwenImage21`、`KSampler`、`PixaromaResolution`、`EmptyLatentImage`、`VAEDecode`、`SaveImage`、`LoadImage`、`QwenPERewriteT8`、`SaveImageAdvanced`、`CLIPLoader`、`UNETLoader`、`VAELoader`、`QwenImage21Cache`、`PathchSageAttentionKJ`、`ModelAttentionBackend`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（8）：`CR Text Concatenate`、`CR Text Concatenate`、`Fast Bypasser (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LoraLoaderModelOnly`、`PixaromaGroupSwitch`、`TextEncodeQwenImage21`、`KSampler`、`PixaromaResolution`、`EmptyLatentImage`、`Mute / Bypass Repeater (rgthree)`、`Fast Bypasser (rgthree)`、`VAEDecode`、`CR Text Concatenate`、`CR Prompt Text`、`SaveImage`、`LoadImage`、`QwenPERewriteT8`、`SaveImageAdvanced`、`CLIPLoader`、`UNETLoader`、`VAELoader`、`QwenImage21Cache`、`PathchSageAttentionKJ`、`ModelAttentionBackend`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -121,13 +119,5 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

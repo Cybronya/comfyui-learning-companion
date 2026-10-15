@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax-H3图生视频工作流.json
 hash: 66048a8cddae14b0
 coverage: 1
-learned_at: 2026-10-10 23:03:49
+learned_at: 2026-10-15 22:46:25
 nodes: [MiniMaxH3IntegrationAdapterGH, UNETLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3DualClockT8GH, BasicGuider, RandomNoise, SamplerCustomAdvanced, MiniMaxH3AVDecodeT8GH, SaveAudioAdvanced, VHS_VideoCombine, MiniMaxH3IntegrationGH]
 patterns: []
 missing: []

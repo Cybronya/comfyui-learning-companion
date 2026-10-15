@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI文生视频工作流｜万相 2.6 一句话生成 1080P 视频_2098232395152576513.json
 hash: 50d13af10211d539
 coverage: 1
-learned_at: 2026-10-11 21:41:33
+learned_at: 2026-10-15 22:43:59
 nodes: [RH_AlibabaWan26TextToVideo, SaveVideo]
 patterns: []
 missing: []

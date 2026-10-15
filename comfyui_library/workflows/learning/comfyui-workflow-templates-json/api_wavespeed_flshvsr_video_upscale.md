@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wavespeed_fl
 hash: 7772906ca99b3fe3
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:46:49
+learned_at: 2026-10-15 22:24:52
 nodes: [SaveVideo, LoadVideo, WavespeedFlashVSRNode]
 patterns: []
 missing: []

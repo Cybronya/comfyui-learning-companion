@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
 hash: 6974e5516fda7c61
-coverage: 0.586957
-learned_at: 2026-10-10 21:25:19
+coverage: 0.73913
+learned_at: 2026-10-15 22:26:08
 nodes: [SetNode, SetNode, GetNode, easy promptLine, ResolutionSelector, EmptyLatentImage, GetNode, VOSR2ModelLoader, SaveImage, SaveImage, SplitImageWithAlpha, SetNode, GetNode, KSamplerAdvanced, SeedVR2Conditioning, JoinImageWithAlpha, KSampler, SeedVR2Preprocess, UNETLoader, VAELoader, ModelAttentionBackend, TextEncodeQwenImage21, Text Multiline, TextGenerateLTX2Prompt, ResizeImageMaskNode, Text Multiline, CLIPLoader, Fast Groups Bypasser (rgthree), ShowText|pysssss, SaveImage, Image Comparer (rgthree), VAELoader, VAEDecodeTiled, VAEEncodeTiled, VOSR2Upscale, easy cleanGpuUsed, VAEDecode, easy cleanGpuUsed, SplitImageWithAlpha, GetNode, easy cleanGpuUsed, UNETLoader, SeedVR2PostProcessing, easy cleanGpuUsed, Image Comparer (rgthree), Image Comparer (rgthree)]
 patterns: []
-missing: [Text Multiline, Text Multiline, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy promptLine]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1344, "sampler_name": "euler", "scheduler": "simple", "seed": 0, "steps": 1, "width": 960}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/001-image_qwen_image2.1-VOSR2-VS-SEEDVR2_2105226191602020353.json
@@ -22,13 +22,15 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（46 个）：
 - `SetNode`
 - `SetNode`
 - `GetNode`
 - `easy promptLine`
 - `ResolutionSelector`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `GetNode`
 - `VOSR2ModelLoader`
 - `SaveImage`
@@ -36,12 +38,12 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `SplitImageWithAlpha`
 - `SetNode`
 - `GetNode`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `SeedVR2Conditioning`
 - `JoinImageWithAlpha`
-- `KSampler`
+- `KSampler` ★核心
 - `SeedVR2Preprocess`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
 - `ModelAttentionBackend`
 - `TextEncodeQwenImage21`
@@ -55,16 +57,16 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `SaveImage`
 - `Image Comparer (rgthree)`
 - `VAELoader`
-- `VAEDecodeTiled`
-- `VAEEncodeTiled`
+- `VAEDecodeTiled` ★核心
+- `VAEEncodeTiled` ★核心
 - `VOSR2Upscale`
 - `easy cleanGpuUsed`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy cleanGpuUsed`
 - `SplitImageWithAlpha`
 - `GetNode`
 - `easy cleanGpuUsed`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `SeedVR2PostProcessing`
 - `easy cleanGpuUsed`
 - `Image Comparer (rgthree)`
@@ -72,23 +74,23 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `960`
 - `height` = `1344`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `0`
 - `steps` = `1`
-- `width` = `960`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **59%**（27/46）
+覆盖率 **74%**（34/46）
 
-**有卡**：`SetNode`、`GetNode`、`easy promptLine`、`ResolutionSelector`、`EmptyLatentImage`、`VOSR2ModelLoader`、`SaveImage`、`SplitImageWithAlpha`、`KSamplerAdvanced`、`SeedVR2Conditioning`、`JoinImageWithAlpha`、`KSampler`、`SeedVR2Preprocess`、`UNETLoader`、`VAELoader`、`ModelAttentionBackend`、`TextEncodeQwenImage21`、`Text Multiline`、`TextGenerateLTX2Prompt`、`ResizeImageMaskNode`、`CLIPLoader`
+**有卡**：`easy promptLine`、`ResolutionSelector`、`EmptyLatentImage`、`VOSR2ModelLoader`、`SaveImage`、`SplitImageWithAlpha`、`KSamplerAdvanced`、`SeedVR2Conditioning`、`JoinImageWithAlpha`、`KSampler`、`SeedVR2Preprocess`、`UNETLoader`、`VAELoader`、`ModelAttentionBackend`、`TextEncodeQwenImage21`、`Text Multiline`、`TextGenerateLTX2Prompt`、`ResizeImageMaskNode`、`CLIPLoader`、`VAEDecodeTiled`、`VAEEncodeTiled`、`VOSR2Upscale`、`easy cleanGpuUsed`、`VAEDecode`、`SeedVR2PostProcessing`
 
-**缺卡**（7）：`Text Multiline`、`Text Multiline`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy promptLine`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
 
 ## 参数体检
 
@@ -97,11 +99,4 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 学习发现
 
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

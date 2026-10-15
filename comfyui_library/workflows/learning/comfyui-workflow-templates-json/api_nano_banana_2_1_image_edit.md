@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_nano_banana_
 hash: 1348890e2f4c6510
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:45:13
+learned_at: 2026-10-15 22:24:50
 nodes: [GeminiNanoBanana2V2, LoadImage, SaveImageAdvanced, ImageCompare, MarkdownNote]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`GeminiNanoBanana2V2`、`LoadImage`、`SaveImageAdvanced`、`ImageCompare`
 
-**用到的条目**：LoadImage、SaveImageAdvanced、GeminiNanoBanana2V2、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、v2
+**用到的条目**：LoadImage、SaveImageAdvanced、GeminiNanoBanana2V2、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Image Save

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3低显存图生视频生成ai漫剧短剧视频 保持人物一致性性价比超高LTX2.3-首尾帧视频_2031606525608857601.json
 hash: e3df090e2d31811f
 coverage: 0.863636
-learned_at: 2026-10-11 03:16:46
+learned_at: 2026-10-15 22:45:05
 nodes: [KSamplerSelect, LTXVScheduler, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetImageSize, CFGGuider, LatentUpscaleModelLoader, EmptyImage, CLIPTextEncode, LTXVImgToVideoInplace, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, MarkdownNote, VAEDecode, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CLIPTextEncode, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVConcatAVLatent, LTXVCropGuides, CreateVideo, LTXVConditioning, RandomNoise, DualCLIPLoader, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, ImageScaleBy, GetImageSize, KSampler, ResizeImageMaskNode, TextGenerateLTX2Prompt, PreviewAny, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveStringMultiline, LoadImage, ResizeImagesByLongerEdge, LTXVPreprocess, SaveVideo]
 patterns: []
 missing: []

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json
 hash: d230a7fd08b834f2
-coverage: 0.6875
-learned_at: 2026-10-11 02:45:02
+coverage: 0.75
+learned_at: 2026-10-15 22:47:14
 nodes: [String Literal, Note, WanVideoSetBlockSwap, Note, WanVideoSetBlockSwap, WanVideoSampler, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoSampler, WanVideoSetRadialAttention, PrimitiveNode, WanVideoSetRadialAttention, WanVideoScheduler, WanVideoBlockSwap, VHS_VideoCombine, WanVideoTextEncode, WanVideoScheduler, WanVideoModelLoader, easy seed, WanVideoTorchCompileSettings, easy globalSeed, WanVideoImageToVideoEncode, WanVideoVAELoader, LoadWanVideoT5TextEncoder, easy showAnything, PreviewImage, easy showAnything, ImageResizeKJv2, WanVideoModelLoader, Int, PrimitiveNode, WanVideoSigmaToStep, WanVideoLoraSelect, PrimitiveNode, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoDecode, LoadImage, GetNode, SetNode, GetNode, WanVideoLoraSelect, Note, Int, Int]
 patterns: []
-missing: [String Literal, easy globalSeed, easy seed]
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy globalSeed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/Wan2.2图生视频性价比极致加速V5-1030-非人_1984904372494680065.json
@@ -74,16 +73,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **69%**（33/48）
+覆盖率 **75%**（36/48）
 
-**有卡**：`WanVideoSetBlockSwap`、`WanVideoSampler`、`WanVideoSetLoRAs`、`WanVideoSetRadialAttention`、`WanVideoScheduler`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoTextEncode`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`ImageResizeKJv2`、`Int`、`WanVideoSigmaToStep`、`WanVideoLoraSelect`、`WanVideoDecode`、`LoadImage`
+**有卡**：`String Literal`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`WanVideoSetLoRAs`、`WanVideoSetRadialAttention`、`WanVideoScheduler`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoTextEncode`、`WanVideoModelLoader`、`easy seed`、`WanVideoTorchCompileSettings`、`easy globalSeed`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`ImageResizeKJv2`、`Int`、`WanVideoSigmaToStep`、`WanVideoLoraSelect`、`WanVideoDecode`、`LoadImage`
 
-**缺卡**（3）：`String Literal`、`easy globalSeed`、`easy seed`
-
-**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy globalSeed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、WanVideoSampler、easy globalSeed、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

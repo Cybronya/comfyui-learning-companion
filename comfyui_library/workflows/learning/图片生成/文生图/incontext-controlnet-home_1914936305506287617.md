@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/incontext-controlnet-home_1914936305506287617.json
 hash: f008fde3c92f5653
 coverage: 0.789474
-learned_at: 2026-10-10 20:59:21
+learned_at: 2026-10-15 22:27:48
 nodes: [VAEDecode, Note, Note, BasicGuider, KSamplerSelect, VAELoader, BasicScheduler, SamplerCustomAdvanced, FluxGuidance, EmptySD3LatentImage, PrimitiveNode, PrimitiveNode, RandomNoise, ModelSamplingFlux, SaveImage, UNETLoader, DualCLIPLoader, CLIPTextEncode, LoraLoader]
 patterns: [lora]
 missing: []
@@ -20,15 +20,17 @@ parameters: {"lora_name": "home-decoration.safetensors", "strength_clip": 1, "st
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（19 个）：
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Note`
 - `Note`
 - `BasicGuider`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `VAELoader`
 - `BasicScheduler`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `FluxGuidance`
 - `EmptySD3LatentImage`
 - `PrimitiveNode`
@@ -36,21 +38,23 @@ parameters: {"lora_name": "home-decoration.safetensors", "strength_clip": 1, "st
 - `RandomNoise`
 - `ModelSamplingFlux`
 - `SaveImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
-- `CLIPTextEncode`
-- `LoraLoader`
+- `CLIPTextEncode` ★核心
+- `LoraLoader` ★核心
 
 **识别到的模式**：lora
 
 ## 关键参数
 
 - `lora_name` = `home-decoration.safetensors`
-- `strength_clip` = `1`
 - `strength_model` = `1`
+- `strength_clip` = `1`
 
 ## 知识
 
 覆盖率 **79%**（15/19）
 
-**有卡**：`VAEDecode`、`Note`、`BasicGuider`、`KSamplerSelect`、`VAELoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`FluxGuidance`、`EmptySD3LatentImage`、`PrimitiveNode`、`RandomNoise`、`ModelSamplingFlux`、`SaveImage`
+**有卡**：`VAEDecode`、`BasicGuider`、`KSamplerSelect`、`VAELoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`FluxGuidance`、`EmptySD3LatentImage`、`RandomNoise`、`ModelSamplingFlux`、`SaveImage`、`UNETLoader`、`DualCLIPLoader`、`CLIPTextEncode`、`LoraLoader`
+
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、LoraLoader

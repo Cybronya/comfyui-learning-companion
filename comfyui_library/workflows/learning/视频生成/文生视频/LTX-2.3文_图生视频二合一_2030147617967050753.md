@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json
 hash: 258d5ba147589c9b
-coverage: 0.769231
-learned_at: 2026-10-11 03:16:45
+coverage: 0.865385
+learned_at: 2026-10-15 22:44:43
 nodes: [RandomNoise, LTXVConcatAVLatent, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVPreprocess, Reroute, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, PrimitiveInt, PrimitiveInt, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LoraLoaderModelOnly, PrimitiveInt, PrimitiveInt, PreviewAny, LTXVConcatAVLatent, KSamplerSelect, RandomNoise, MathExpression|pysssss, MathExpression|pysssss, CreateVideo, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVImgToVideoInplace, ManualSigmas, CFGGuider, CLIPTextEncode, LTXVConditioning, MathExpression|pysssss, LTX2_NAG, CLIPTextEncode, PrimitiveStringMultiline, SaveVideo, SaveVideo, Label (rgthree), Label (rgthree), LoadImage, RH_LLMAPI_Pro_Node, PrimitiveBoolean, KSamplerSelect, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, ManualSigmas]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3文_图生视频二合一_2030147617967050753.json
@@ -86,18 +85,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **77%**（40/52）
+覆盖率 **87%**（45/52）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LoraLoaderModelOnly`、`KSamplerSelect`、`CreateVideo`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`ManualSigmas`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`SaveVideo`、`LoadImage`、`RH_LLMAPI_Pro_Node`、`PrimitiveBoolean`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`
-
-**缺卡**（5）：`Label (rgthree)`、`Label (rgthree)`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LoraLoaderModelOnly`、`KSamplerSelect`、`MathExpression|pysssss`、`CreateVideo`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`ManualSigmas`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`SaveVideo`、`Label (rgthree)`、`LoadImage`、`RH_LLMAPI_Pro_Node`、`PrimitiveBoolean`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

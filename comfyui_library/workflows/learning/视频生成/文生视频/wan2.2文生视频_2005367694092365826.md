@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频_2005367694092365826.json
 hash: abc349cae2f2c4b5
-coverage: 0.705882
-learned_at: 2026-10-11 03:07:13
+coverage: 0.970588
+learned_at: 2026-10-15 22:47:36
 nodes: [KSamplerAdvanced, wanBlockSwap, wanBlockSwap, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Bypasser (rgthree), PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, ModelPatchTorchSettings, ImpactInt, ImpactInt, Seed (rgthree), VAEDecode, RIFE VFI, SimpleMath+, WanImageToVideo, easy cleanGpuUsed, ImageScaleBy, CLIPTextEncode, easy cleanGpuUsed, KSamplerAdvanced, Fast Bypasser (rgthree), Fast Bypasser (rgthree), CLIPTextEncode, VHS_VideoCombine, VHS_VideoCombine, UNETLoader, UNETLoader, CLIPLoader, VAELoader, ImpactInt, PrimitiveStringMultiline]
 patterns: []
-missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), RIFE VFI, SimpleMath+, easy cleanGpuUsed, easy cleanGpuUsed, Seed (rgthree)]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/wan2.2文生视频_2005367694092365826.json
@@ -70,22 +69,8 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **71%**（24/34）
+覆盖率 **97%**（33/34）
 
-**有卡**：`KSamplerAdvanced`、`wanBlockSwap`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`ImpactInt`、`VAEDecode`、`WanImageToVideo`、`ImageScaleBy`、`CLIPTextEncode`、`VHS_VideoCombine`、`UNETLoader`、`CLIPLoader`、`VAELoader`
+**有卡**：`KSamplerAdvanced`、`wanBlockSwap`、`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`Fast Bypasser (rgthree)`、`ModelSamplingSD3`、`ImpactInt`、`Seed (rgthree)`、`VAEDecode`、`RIFE VFI`、`SimpleMath+`、`WanImageToVideo`、`easy cleanGpuUsed`、`ImageScaleBy`、`CLIPTextEncode`、`VHS_VideoCombine`、`UNETLoader`、`CLIPLoader`、`VAELoader`
 
-**缺卡**（9）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`RIFE VFI`、`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`Seed (rgthree)`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、ImageScaleBy、ImpactInt
-
-## 学习发现
-
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、Seed (rgthree)、ImageScaleBy

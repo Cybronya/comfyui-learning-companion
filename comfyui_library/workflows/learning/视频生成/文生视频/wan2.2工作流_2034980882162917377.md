@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2工作流_2034980882162917377.json
 hash: 9c0ee925d2a20ae3
 coverage: 1
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:36
 nodes: [CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, VAELoader, EmptyHunyuanLatentVideo, CLIPTextEncode, UNETLoader, UNETLoader, VAEDecode, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, CLIPTextEncode]
 patterns: []
 missing: []

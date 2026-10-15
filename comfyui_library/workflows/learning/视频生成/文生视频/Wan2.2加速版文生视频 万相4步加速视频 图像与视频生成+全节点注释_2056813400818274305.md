@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json
 hash: be53885301d6bce4
-coverage: 0.484848
-learned_at: 2026-10-11 19:49:43
+coverage: 0.515152
+learned_at: 2026-10-15 22:47:13
 nodes: [WanVideoVAELoader, WanVideoModelLoader, WanVideoModelLoader, easy seed, CreateCFGScheduleFloatList, WanVideoBlockSwap, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, MathExpression|pysssss, WanVideoEmptyEmbeds, JWInteger, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, Int, WanVideoSetLoRAs, ImpactInt, ImpactInt, WanVideoScheduler, WanVideoScheduler, WanVideoSigmaToStep, WanVideoTorchCompileSettings, Float, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, LoadImage, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, VHS_VideoCombine, WanVideoSampler, WanVideoSampler, WanVideoDecode, WanVideoTextEncode, LoadImage]
 patterns: []
-missing: [MathExpression|pysssss, easy seed]
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/Wan2.2加速版文生视频 万相4步加速视频 图像与视频生成+全节点注释_2056813400818274305.json
@@ -92,15 +91,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **48%**（32/66）
+覆盖率 **52%**（34/66）
 
-**有卡**：`WanVideoVAELoader`、`WanVideoModelLoader`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoEmptyEmbeds`、`JWInteger`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`Int`、`ImpactInt`、`WanVideoScheduler`、`WanVideoSigmaToStep`、`WanVideoTorchCompileSettings`、`Float`、`LoadImage`、`WanVideoLoraSelect`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoTextEncode`
+**有卡**：`WanVideoVAELoader`、`WanVideoModelLoader`、`easy seed`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`MathExpression|pysssss`、`WanVideoEmptyEmbeds`、`JWInteger`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`Int`、`ImpactInt`、`WanVideoScheduler`、`WanVideoSigmaToStep`、`WanVideoTorchCompileSettings`、`Float`、`LoadImage`、`WanVideoLoraSelect`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoTextEncode`
 
-**缺卡**（2）：`MathExpression|pysssss`、`easy seed`
-
-**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

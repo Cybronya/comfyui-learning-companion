@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/【LTX2.3-图_文双模式视频】全自动台词设计_2030494259446554626.json
 hash: 2628c5845c2de821
-coverage: 0.682243
-learned_at: 2026-10-11 03:16:51
+coverage: 0.747664
+learned_at: 2026-10-15 22:47:39
 nodes: [RandomNoise, Compare, GetImageSize, ImageScaleBy, Compare, PreviewImage, GetImageSize, PreviewImage, LTXVPreprocess, PreviewImage, EmptyImage, SetNode, GetNode, Seed_, Note, RandomNoise, LTXVLatentUpsampler, GetNode, CFGGuider, LayerUtility: PurgeVRAM V2, PrimitiveNode, AudioSeparation, VAEDecode, LTXVAudioVAEDecode, VideoTranscribe, TranscribeConfig, VHS_VideoCombine, SubtitleOptimizer, easy showAnything, HAIGC_VideoSubtitleTimestampPro, CR Text, HAIGC_TimestampTextReplace, Note, SamplerCustomAdvanced, LTXVCropGuides, easy cleanGpuUsed, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LTXVConcatAVLatent, LTXVAudioVAEDecode, easy ifElse, PreviewImage, Int, MathExpression|pysssss, LatentUpscaleModelLoader, ImageResizeKJv2, ImageResizeKJv2, ResizeImagesByLongerEdge, ImageResizeKJv2, ImageResizeKJv2, LTXVEmptyLatentAudio, LoadImage, Note, LoraLoaderModelOnly, Float, Float, GetImageSize, LayerUtility: PurgeVRAM V2, VAEDecode, GetNode, GetNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, GetImageSize, EmptyLTXVLatentVideo, VHS_VideoCombine, CheckpointLoaderSimple, LTXVConditioning, CLIPTextEncode, LTXVConcatAVLatent, CFGGuider, LTXVSeparateAVLatent, VHS_VideoCombine, KSamplerSelect, easy ifElse, LTXVPreprocess, KSamplerSelect, BasicScheduler, ResizeImagesByLongerEdge, PathchSageAttentionKJ, LTXVScheduler, ManualSigmas, LoraLoaderModelOnly, ModelPatchTorchSettings, LTXVChunkFeedForward, easy cleanGpuUsed, LoraLoaderModelOnly, Note, LTXVFirstLastFrameControl_TTP, LTXVImgToVideoInplace, LTXVFirstLastFrameControl_TTP, GetNode, GetNode, Note, PrimitiveBoolean, Note, SetNode, SetNode, GetNode, LTXVImgToVideoInplace, GetNode, GetNode, GetNode, CLIPTextEncode, LoadImage, CR Text, RHHiddenNodes]
 patterns: []
-missing: [CR Text, CR Text, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 24, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/【LTX2.3-图_文双模式视频】全自动台词设计_2030494259446554626.json
@@ -141,20 +140,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **68%**（73/107）
+覆盖率 **75%**（80/107）
 
-**有卡**：`RandomNoise`、`Compare`、`GetImageSize`、`ImageScaleBy`、`LTXVPreprocess`、`EmptyImage`、`Seed_`、`LTXVLatentUpsampler`、`CFGGuider`、`AudioSeparation`、`VAEDecode`、`LTXVAudioVAEDecode`、`VideoTranscribe`、`TranscribeConfig`、`VHS_VideoCombine`、`SubtitleOptimizer`、`HAIGC_VideoSubtitleTimestampPro`、`HAIGC_TimestampTextReplace`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVConcatAVLatent`、`Int`、`LatentUpscaleModelLoader`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`LTXVEmptyLatentAudio`、`LoadImage`、`LoraLoaderModelOnly`、`Float`、`LTXVSeparateAVLatent`、`EmptyLTXVLatentVideo`、`CheckpointLoaderSimple`、`LTXVConditioning`、`CLIPTextEncode`、`KSamplerSelect`、`BasicScheduler`、`PathchSageAttentionKJ`、`LTXVScheduler`、`ManualSigmas`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LTXVFirstLastFrameControl_TTP`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`RHHiddenNodes`
-
-**缺卡**（7）：`CR Text`、`CR Text`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`MathExpression|pysssss`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`RandomNoise`、`Compare`、`GetImageSize`、`ImageScaleBy`、`LTXVPreprocess`、`EmptyImage`、`Seed_`、`LTXVLatentUpsampler`、`CFGGuider`、`LayerUtility: PurgeVRAM V2`、`AudioSeparation`、`VAEDecode`、`LTXVAudioVAEDecode`、`VideoTranscribe`、`TranscribeConfig`、`VHS_VideoCombine`、`SubtitleOptimizer`、`HAIGC_VideoSubtitleTimestampPro`、`CR Text`、`HAIGC_TimestampTextReplace`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`easy cleanGpuUsed`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVConcatAVLatent`、`Int`、`MathExpression|pysssss`、`LatentUpscaleModelLoader`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`LTXVEmptyLatentAudio`、`LoadImage`、`LoraLoaderModelOnly`、`Float`、`LTXVSeparateAVLatent`、`EmptyLTXVLatentVideo`、`CheckpointLoaderSimple`、`LTXVConditioning`、`CLIPTextEncode`、`KSamplerSelect`、`BasicScheduler`、`PathchSageAttentionKJ`、`LTXVScheduler`、`ManualSigmas`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LTXVFirstLastFrameControl_TTP`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`RHHiddenNodes`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

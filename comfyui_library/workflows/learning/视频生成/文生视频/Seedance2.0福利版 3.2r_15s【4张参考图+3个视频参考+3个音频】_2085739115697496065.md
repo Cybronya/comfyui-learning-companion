@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0福利版 3.2r_15s【4张参考图+3个视频参考+3个音频】_2085739115697496065.json
 hash: 5e7b289f8cab25b9
 coverage: 0.75
-learned_at: 2026-10-11 20:53:47
+learned_at: 2026-10-15 22:46:59
 nodes: [LoadImage, JjkText, SCAISeedance20FuliApiConfig, LoadImage, LoadImage, LoadImage, LoadImage, SaveVideo, LoadVideo, SCAISeedance20FuliModel, JjkText, Note]
 patterns: []
 missing: []

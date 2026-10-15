@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3｜ControlNet Union 2.0 视频控制与局部重绘·音频驱动数字人｜VDN 12步高清版_2106627537043550210.json
 hash: 5a5da10f7adf3c10
 coverage: 0.681818
-learned_at: 2026-10-11 22:12:42
+learned_at: 2026-10-15 22:46:09
 nodes: [PrimitiveFloat, CLIPLoader, VAELoader, VAELoader, UNETLoader, ModelPatchLoader, ImageScale, MiniMaxH3FunControlNetApply, MiniMaxH3VDNModelComposerT8Advanced, MiniMaxH3VDNExecutionPlanT8Advanced, BasicGuider, RandomNoise, SamplerCustomAdvanced, MiniMaxH3VDNModelComposerT8Advanced, MiniMaxH3TwoPassLatentReconcileT8Advanced, MiniMaxH3VDNRefinePlanT8Advanced, BasicGuider, RandomNoise, SamplerCustomAdvanced, MiniMaxH3TwoPassAudioAuditT8Advanced, MiniMaxH3AVDecodeT8, MiniMaxH3OutputTrimT8, MarkdownNote, LoadAudio, MarkdownNote, PrimitiveBoolean, PrimitiveInt, PrimitiveInt, ComfySwitchNode, ComfySwitchNode, MarkdownNote, MarkdownNote, AIO_Preprocessor, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, SeCModelLoader, PointsEditor, SeCVideoSegmentation, GrowMask, MaskPreview, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, MarkdownNote, AudioSeparation, LTXVAudioVAEEncode, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, MarkdownNote, MarkdownNote, MiniMaxH3ReferenceToVideo, ComfySwitchNode, VHS_VideoInfoLoaded, PreviewAny, PrimitiveBoolean, easy showAnything, MiniMaxH3AudioWindowT8, VHS_LoadVideo, PrimitiveStringMultiline, MiniMaxH3SafeAVSaveT8Advanced, PreviewImage, MiniMaxH3LearnedLatentUpscaleT8Advanced, MiniMaxH3ReferenceToVideo, SaveImage]
 patterns: []
 missing: []

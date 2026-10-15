@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1Krea文生图_1951794471434399745.json
 hash: 5a3d181e8f1592ac
 coverage: 1
-learned_at: 2026-10-10 20:58:36
+learned_at: 2026-10-15 22:26:25
 nodes: [SaveImage, CLIPTextEncode, ConditioningZeroOut, VAELoader, DualCLIPLoader, KSampler, EmptyLatentImage, UNETLoader, LoraLoaderModelOnly, VAEDecode, RH_Translator]
 patterns: [text_to_image]
 missing: []
@@ -20,35 +20,39 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_n
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（11 个）：
 - `SaveImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `ConditioningZeroOut`
 - `VAELoader`
 - `DualCLIPLoader`
-- `KSampler`
-- `EmptyLatentImage`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
 - `RH_Translator`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1536`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `294507246359010`
 - `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1536`
+- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`SaveImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`VAELoader`、`DualCLIPLoader`、`KSampler`、`EmptyLatentImage`、`UNETLoader`、`LoraLoaderModelOnly`、`VAEDecode`、`RH_Translator`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、UNETLoader

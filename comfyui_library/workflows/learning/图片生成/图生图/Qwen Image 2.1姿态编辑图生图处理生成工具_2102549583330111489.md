@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json
 hash: 53e3c15f0e5822ad
-coverage: 0.722222
-learned_at: 2026-10-10 20:48:07
+coverage: 0.740741
+learned_at: 2026-10-15 22:25:15
 nodes: [Image Comparer (rgthree), OpenposePreprocessor, Reroute, GetImageSize, NuiKr.OpenPoseEditor, ResolutionSelector, EmptyLatentImage, Reroute, GroupSwitcher, Reroute, PreviewImage, PreviewImage, Reroute, Reroute, SaveImage, PrimitiveStringMultiline, PrimitiveBoolean, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, ComfySwitchNode, KSampler, VAEDecode, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [NuiKr.OpenPoseEditor]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `NuiKr.OpenPoseEditor` 仅有 ControlNet/KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1姿态编辑图生图处理生成工具_2102549583330111489.json
@@ -96,11 +96,9 @@ discoveries: [次要节点 `NuiKr.OpenPoseEditor` 仅有 ControlNet/KSampler 的
 
 ## 知识
 
-覆盖率 **72%**（39/54）
+覆盖率 **74%**（40/54）
 
-**有卡**：`OpenposePreprocessor`、`GetImageSize`、`ResolutionSelector`、`EmptyLatentImage`、`GroupSwitcher`、`SaveImage`、`PrimitiveBoolean`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`LoadImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`NuiKr.OpenPoseEditor`
+**有卡**：`OpenposePreprocessor`、`GetImageSize`、`NuiKr.OpenPoseEditor`、`ResolutionSelector`、`EmptyLatentImage`、`GroupSwitcher`、`SaveImage`、`PrimitiveBoolean`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`LoadImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -111,5 +109,4 @@ discoveries: [次要节点 `NuiKr.OpenPoseEditor` 仅有 ControlNet/KSampler 的
 
 ## 学习发现
 
-- 次要节点 `NuiKr.OpenPoseEditor` 仅有 ControlNet/KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

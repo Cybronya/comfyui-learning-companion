@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/声音克隆IndexTTS2.5情感参考_2102959457717276673.json
 hash: b8a34e1f695e7f73
-coverage: 0.727273
-learned_at: 2026-10-10 20:59:42
+coverage: 0.909091
+learned_at: 2026-10-15 23:02:24
 nodes: [LoadAudio, T8_IndexTTS25_Generate, SaveAudioNode, T8_IndexTTS25_ModelLoader, T8_IndexTTS25_EmotionControl, CR Prompt Text, LoadAudio, Float, SaveAudio, EmptyImage, PreviewImage]
 patterns: []
-missing: [CR Prompt Text, SaveAudioNode]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `SaveAudioNode` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 图片生成/文生图/声音克隆IndexTTS2.5情感参考_2102959457717276673.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/声音克隆IndexTTS2.5情感参考_2102959457717276673.json`
 
 ## 结构
+
+**生成流程**：Model → Process → Output → Other
 
 **节点**（11 个）：
 - `LoadAudio`
@@ -35,13 +36,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **73%**（8/11）
+覆盖率 **91%**（10/11）
 
-**有卡**：`LoadAudio`、`T8_IndexTTS25_Generate`、`SaveAudioNode`、`T8_IndexTTS25_ModelLoader`、`T8_IndexTTS25_EmotionControl`、`CR Prompt Text`、`Float`
+**有卡**：`LoadAudio`、`T8_IndexTTS25_Generate`、`SaveAudioNode`、`T8_IndexTTS25_ModelLoader`、`T8_IndexTTS25_EmotionControl`、`CR Prompt Text`、`Float`、`SaveAudio`、`EmptyImage`
 
-**缺卡**（2）：`CR Prompt Text`、`SaveAudioNode`
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `SaveAudioNode` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+**用到的条目**：CR Prompt Text、SaveAudio、SaveAudioNode、EmptyImage、LoadAudio、Float、T8_IndexTTS25_EmotionControl、T8_IndexTTS25_Generate

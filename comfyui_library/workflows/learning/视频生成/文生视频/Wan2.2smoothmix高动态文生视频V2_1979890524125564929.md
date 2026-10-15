@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json
 hash: d8ca762f894d5c16
-coverage: 0.736842
-learned_at: 2026-10-11 02:45:02
+coverage: 0.894737
+learned_at: 2026-10-15 22:47:13
 nodes: [CLIPLoader, VAELoader, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, UNETLoader, VAEDecode, VHS_VideoCombine, LayerUtility: PurgeVRAM V2, KSamplerAdvanced, KSamplerAdvanced, UNETLoader, EmptyHunyuanLatentVideo, ImageFromBatch+, VHS_VideoCombine, PrimitiveInt, PrimitiveInt, CR Text]
 patterns: []
-missing: [CR Text, ImageFromBatch+, LayerUtility: PurgeVRAM V2]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1.1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2smoothmix高动态文生视频V2_1979890524125564929.json
@@ -55,16 +54,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **74%**（14/19）
+覆盖率 **89%**（17/19）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`UNETLoader`、`VAEDecode`、`VHS_VideoCombine`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`
-
-**缺卡**（3）：`CR Text`、`ImageFromBatch+`、`LayerUtility: PurgeVRAM V2`
+**有卡**：`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`UNETLoader`、`VAEDecode`、`VHS_VideoCombine`、`LayerUtility: PurgeVRAM V2`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`、`ImageFromBatch+`、`CR Text`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo、ModelSamplingSD3
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识

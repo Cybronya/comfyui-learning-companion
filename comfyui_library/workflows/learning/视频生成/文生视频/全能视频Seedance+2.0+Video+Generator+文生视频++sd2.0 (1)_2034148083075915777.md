@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频Seedance+2.0+Video+Generator+文生视频++sd2.0 (1)_2034148083075915777.json
 hash: 2d7f1a57cb37a87f
 coverage: 0.428571
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:56
 nodes: [SaveVideo, Note, Note, Note, Note, RH_CinematicVideoGenerator, LoadImage]
 patterns: []
 missing: []

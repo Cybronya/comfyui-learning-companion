@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI角色姿态导演台｜Character Pose Director_2102626865503625217.json
 hash: ae0fed2e8bdb6f26
 coverage: 0.928571
-learned_at: 2026-10-10 22:58:37
+learned_at: 2026-10-15 22:44:00
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, QwenImage21Cache, TextEncodeQwenImage21, Image Comparer (rgthree), GetImageSize, SaveImage, LoraLoaderModelOnly, LoadImage, VNCCS_PoseStudio]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 PE提示词强化｜官方优化版｜短句也能写出大片感_2102588489098424321.json
 hash: 166a6cc97aa333c6
 coverage: 0.857143
-learned_at: 2026-10-10 20:48:05
+learned_at: 2026-10-15 22:25:11
 nodes: [PreviewAny, PreviewAny, PreviewAny, SaveText, QwenPECanvasT8, QwenPERewriteT8, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []

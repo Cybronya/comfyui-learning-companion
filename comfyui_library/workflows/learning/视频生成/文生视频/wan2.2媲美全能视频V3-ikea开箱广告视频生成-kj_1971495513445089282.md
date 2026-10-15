@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2媲美全能视频V3-ikea开箱广告视频生成-kj_1971495513445089282.json
 hash: f5eaf7037bd11130
-coverage: 0.534884
-learned_at: 2026-10-10 23:09:45
+coverage: 0.837209
+learned_at: 2026-10-15 22:47:36
 nodes: [LoadWanVideoT5TextEncoder, WanVideoSetBlockSwap, WanVideoSampler, WanVideoSampler, WanVideoSetBlockSwap, GetImageSizeAndCount, VHS_VideoCombine, WanVideoDecode, WanVideoSetLoRAs, CreateCFGScheduleFloatList, WanVideoTorchCompileSettings, WanVideoBlockSwap, Note, Note, Note, Primitive integer [Crystools], Primitive integer [Crystools], WanVideoSetLoRAs, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, MathExpression|pysssss, WanVideoVAELoader, WanVideoEmptyEmbeds, LoadImage, Note, Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], Note, Text Multiline, Primitive integer [Crystools], Text Multiline, easy anythingIndexSwitch, easy showAnything, RH_LLMAPI_NODE, Text Multiline, Text Multiline, StringReplace, Note, Text Multiline, WanVideoTextEncode]
 patterns: []
-missing: [MathExpression|pysssss, Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], Text Multiline, Text Multiline, Text Multiline, Text Multiline, Text Multiline, easy anythingIndexSwitch]
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/wan2.2媲美全能视频V3-ikea开箱广告视频生成-kj_1971495513445089282.json
@@ -69,26 +68,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **53%**（23/43）
+覆盖率 **84%**（36/43）
 
-**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`LoadImage`、`RH_LLMAPI_NODE`、`StringReplace`、`WanVideoTextEncode`
-
-**缺卡**（13）：`MathExpression|pysssss`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Text Multiline`、`Text Multiline`、`Text Multiline`、`Text Multiline`、`Text Multiline`、`easy anythingIndexSwitch`
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`Primitive integer [Crystools]`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`MathExpression|pysssss`、`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`LoadImage`、`Text Multiline`、`easy anythingIndexSwitch`、`RH_LLMAPI_NODE`、`StringReplace`、`WanVideoTextEncode`
 
 **用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识

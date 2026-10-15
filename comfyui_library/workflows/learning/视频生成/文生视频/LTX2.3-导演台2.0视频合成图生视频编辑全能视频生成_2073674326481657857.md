@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-导演台2.0视频合成图生视频编辑全能视频生成_2073674326481657857.json
 hash: bb967d313648f25e
 coverage: 0.954545
-learned_at: 2026-10-11 20:38:35
+learned_at: 2026-10-15 22:45:03
 nodes: [BasicScheduler, LTXVConcatAVLatent, LTXVAudioVAEDecode, VisualizeSigmasKJ, UNETLoader, VAELoaderKJ, VAEDecodeTiled, KSamplerSelect, VHS_VideoCombine, Note, LTX2SamplingPreviewOverride, LTXVConditioning, LTX2_NAG, SamplerCustom, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, YusuLTXDirectorGuide, LoraLoaderModelOnly, YusuLTXDirector, LTXVSeparateAVLatent, YusuLTXDirectorCropGuides]
 patterns: []
 missing: []

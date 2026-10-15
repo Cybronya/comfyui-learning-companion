@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openai_chat.
 hash: dd4268e42951df85
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:16
+learned_at: 2026-10-15 22:24:50
 nodes: [OpenAIChatConfig, OpenAIChatNode, LoadImage, SaveText]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`OpenAIChatConfig`、`OpenAIChatNode`、`LoadImage`、`SaveText`
 
-**用到的条目**：LoadImage、SaveText、OpenAIChatConfig、OpenAIChatNode、sd15-t2i-basic、sd15-t2i-lora、node、Text
+**用到的条目**：LoadImage、SaveText、OpenAIChatConfig、OpenAIChatNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

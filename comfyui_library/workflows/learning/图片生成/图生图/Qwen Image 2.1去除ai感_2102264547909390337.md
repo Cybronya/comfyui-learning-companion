@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1去除ai感_2102264547909390337.json
 hash: b72d6332e2dd1251
 coverage: 0.815789
-learned_at: 2026-10-10 20:48:06
+learned_at: 2026-10-15 22:25:13
 nodes: [CLIPLoader, VAELoader, LoadImage, ResolutionSelector, QwenImage21Cache, ComfySwitchNode, EmptyLatentImage, VAEDecode, ImageStitch, KSampler, SaveImage, TextEncodeQwenImage21, LoraLoaderModelOnly, MarkdownNote, Note, CLIPLoader, VAELoader, ResolutionSelector, QwenImage21Cache, ComfySwitchNode, EmptyLatentImage, VAEDecode, ImageStitch, KSampler, SaveImage, LoraLoaderModelOnly, UNETLoader, SaveImage, UNETLoader, ComfySwitchNode, ComfySwitchNode, MarkdownNote, LoadImage, TextEncodeQwenImage21, SaveImage, SaveImage, SaveImage, PrimitiveBoolean]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 Sulphur TI2V 文生图生视频_2075062888326324225.json
 hash: 3cbd468f61b21bdc
-coverage: 0.520408
-learned_at: 2026-10-11 20:38:34
+coverage: 0.530612
+learned_at: 2026-10-15 22:44:58
 nodes: [VAELoaderKJ, LatentUpscaleModelLoader, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SamplerCustomAdvanced, SamplerCustomAdvanced, GetImageSize, CFGGuider, ManualSigmas, GetNode, SetNode, ImageScaleBy, GetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, SimpleMath+, SetNode, GetNode, LTXVAudioVAEDecode, SetNode, GetNode, VAEDecodeTiled, SetNode, GetNode, LTXVImgToVideoInplace, GetNode, GetNode, CFGGuider, KSamplerSelect, LTXVConcatAVLatent, GetNode, GetNode, GetNode, Note, Fast Groups Bypasser (rgthree), SetNode, Note, KSamplerSelect, VAEDecode, PathchSageAttentionKJ, ModelPatchTorchSettings, GetNode, PrimitiveBoolean, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, PrimitiveNode, LTX2SamplingPreviewOverride, LTX2_NAG, GetNode, SetNode, LTXVConditioning, SetNode, SetNode, GetNode, SetNode, LTXVSeparateAVLatent, LTXVLatentUpsampler, GetNode, LTXVCropGuides, LTXVCropGuides, GetNode, LTXVSeparateAVLatent, PrimitiveFloat, SetNode, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, LoadImage, ImageResizeKJv2, LTXVImgToVideoInplace, Fast Groups Bypasser (rgthree), CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, ManualSigmas, LTXVScheduler, RandomNoise, PrimitiveInt, PrimitiveInt, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, PromptRelayEncodeTimeline, CLIPTextEncode, LoadImage, SaveImage]
 patterns: []
-missing: [SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8mixed.safetensors", "height": 24, "width": 481}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 Sulphur TI2V 文生图生视频_2075062888326324225.json
@@ -132,14 +131,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **52%**（51/98）
+覆盖率 **53%**（52/98）
 
-**有卡**：`VAELoaderKJ`、`LatentUpscaleModelLoader`、`SamplerCustomAdvanced`、`GetImageSize`、`CFGGuider`、`ManualSigmas`、`ImageScaleBy`、`LTXVConcatAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVImgToVideoInplace`、`KSamplerSelect`、`VAEDecode`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`PrimitiveBoolean`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`LoadImage`、`ImageResizeKJv2`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVScheduler`、`RandomNoise`、`PromptRelayEncodeTimeline`、`CLIPTextEncode`、`SaveImage`
-
-**缺卡**（1）：`SimpleMath+`
+**有卡**：`VAELoaderKJ`、`LatentUpscaleModelLoader`、`SamplerCustomAdvanced`、`GetImageSize`、`CFGGuider`、`ManualSigmas`、`ImageScaleBy`、`LTXVConcatAVLatent`、`SimpleMath+`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVImgToVideoInplace`、`KSamplerSelect`、`VAEDecode`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`PrimitiveBoolean`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`LoadImage`、`ImageResizeKJv2`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVScheduler`、`RandomNoise`、`PromptRelayEncodeTimeline`、`CLIPTextEncode`、`SaveImage`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

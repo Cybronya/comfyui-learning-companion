@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 图生_文生 数字人整合优化版_2044956920242507777.json
 hash: 0551046d34a7fde0
-coverage: 0.745763
-learned_at: 2026-10-11 19:49:37
+coverage: 0.79661
+learned_at: 2026-10-15 22:44:59
 nodes: [Reroute, LTXVCropGuides, INTConstant, INTConstant, Reroute, INTConstant, SetNode, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVConcatAVLatent, SetNode, SimpleMath+, SimpleMath+, RandomNoise, SetLatentNoiseMask, CM_FloatToInt, SimpleMath+, easy showAnything, SetNode, LTXVAudioVAEEncode, GetNode, SolidMask, PreviewAudio, LTXVImgToVideoInplace, GetNode, LTXVSeparateAVLatent, GetNode, VAEDecode, CheckpointLoaderSimple, CLIPTextEncode, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXAVTextEncoderLoader, SamplerCustomAdvanced, CFGGuider, KSamplerSelect, BasicScheduler, KSampler, LatentUpscaleModelLoader, LTXVImgToVideoInplace, VHS_VideoCombine, INTConstant, INTConstant, VHS_LoadAudioUpload, LoadImage, LTXVPreprocess, ImageResizeKJv2, LTXVConditioning, CLIPTextEncode, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVSeparateAVLatent, LTXVLatentUpsampler, GetNode, GetNode, LTXVAudioVAELoader, Note, PrimitiveBoolean]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.5000000000000001, "sampler_name": "euler_cfg_pp", "scheduler": "simple", "seed": 614846256472314, "steps": 4}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/LTX2.3 图生_文生 数字人整合优化版_2044956920242507777.json
@@ -97,11 +97,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **75%**（44/59）
+覆盖率 **80%**（47/59）
 
-**有卡**：`LTXVCropGuides`、`INTConstant`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`RandomNoise`、`SetLatentNoiseMask`、`CM_FloatToInt`、`LTXVAudioVAEEncode`、`SolidMask`、`PreviewAudio`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`VAEDecode`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`SamplerCustomAdvanced`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`KSampler`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`VHS_LoadAudioUpload`、`LoadImage`、`LTXVPreprocess`、`ImageResizeKJv2`、`LTXVConditioning`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LTXVLatentUpsampler`、`LTXVAudioVAELoader`、`PrimitiveBoolean`
-
-**缺卡**（3）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`LTXVCropGuides`、`INTConstant`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`SimpleMath+`、`RandomNoise`、`SetLatentNoiseMask`、`CM_FloatToInt`、`LTXVAudioVAEEncode`、`SolidMask`、`PreviewAudio`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`VAEDecode`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`SamplerCustomAdvanced`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`KSampler`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`VHS_LoadAudioUpload`、`LoadImage`、`LTXVPreprocess`、`ImageResizeKJv2`、`LTXVConditioning`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LTXVLatentUpsampler`、`LTXVAudioVAELoader`、`PrimitiveBoolean`
 
 **用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect
 
@@ -112,7 +110,4 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

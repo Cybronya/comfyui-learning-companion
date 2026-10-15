@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan 2.2 图生视频 工作流+全节点注释_2077715652751745025.json
 hash: c18c9ae49a714eb5
-coverage: 0.46
-learned_at: 2026-10-11 20:38:44
+coverage: 0.52
+learned_at: 2026-10-15 22:47:34
 nodes: [PathchSageAttentionKJ, wanBlockSwap, wanBlockSwap, PathchSageAttentionKJ, KSamplerAdvanced, VAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, CLIPLoader, UNETLoader, CLIPTextEncode, WanImageToVideo, ImageResize+, KSamplerAdvanced, VHS_VideoCombine, VAELoader, SimpleMath+, LoadImage, Int, CR Text, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, LoadImage, LoadImage, CLIPTextEncode, Note]
 patterns: []
-missing: [CR Text, SimpleMath+, ImageResize+]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "uni_pc", "seed": "enable", "steps": "increment"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/wan 2.2 图生视频 工作流+全节点注释_2077715652751745025.json
@@ -86,16 +85,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **46%**（23/50）
+覆盖率 **52%**（26/50）
 
-**有卡**：`PathchSageAttentionKJ`、`wanBlockSwap`、`KSamplerAdvanced`、`VAEDecode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`WanImageToVideo`、`VHS_VideoCombine`、`VAELoader`、`LoadImage`、`Int`
-
-**缺卡**（3）：`CR Text`、`SimpleMath+`、`ImageResize+`
+**有卡**：`PathchSageAttentionKJ`、`wanBlockSwap`、`KSamplerAdvanced`、`VAEDecode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`WanImageToVideo`、`ImageResize+`、`VHS_VideoCombine`、`VAELoader`、`SimpleMath+`、`LoadImage`、`Int`、`CR Text`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明

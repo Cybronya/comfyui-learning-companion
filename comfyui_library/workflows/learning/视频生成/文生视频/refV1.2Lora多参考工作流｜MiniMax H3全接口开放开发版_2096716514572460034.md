@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/refV1.2Lora多参考工作流｜MiniMax H3全接口开放开发版_2096716514572460034.json
 hash: d1ce35cb93874fa9
 coverage: 0.847222
-learned_at: 2026-10-11 21:41:54
+learned_at: 2026-10-15 22:47:30
 nodes: [KSamplerSelect, BasicGuider, ComfyMathExpression, SetNode, GetNode, VAEDecodeAudio, SetNode, PathchSageAttentionKJ, MiniMaxH3SigmaShift, RandomNoise, CLIPLoader, VAELoader, VAELoader, SamplerCustomAdvanced, UNETLoader, VHS_LoadVideo, SetNode, VAEDecode, BasicScheduler, VHS_LoadVideo, ResolutionSelector, PrimitiveFloat, MiniMaxH3ReferenceToVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VHS_LoadVideo, VHS_LoadVideo, VHS_LoadVideo, LoadAudio, LoadAudio, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, LoadImage, LoadImage, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveStringMultiline, LoadImage, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
 patterns: [text_to_image]
 missing: []

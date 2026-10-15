@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/SD1.5官方文生图工作流_1989688004904185857.json
 hash: 2292e502142766cb
 coverage: 1
-learned_at: 2026-10-10 20:59:10
+learned_at: 2026-10-15 22:27:30
 nodes: [CLIPTextEncode, KSampler, VAEDecode, SaveImage, EmptyLatentImage, CLIPTextEncode, CheckpointLoaderSimple]
 patterns: [text_to_image]
 missing: []
@@ -20,32 +20,36 @@ parameters: {"batch_size": 1, "cfg": 8, "checkpoint": "v1-5-pruned-emaonly.ckpt"
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output
+
 **节点**（7 个）：
-- `CLIPTextEncode`
-- `KSampler`
-- `VAEDecode`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
-- `EmptyLatentImage`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `8`
-- `checkpoint` = `v1-5-pruned-emaonly.ckpt`
-- `denoise` = `1`
-- `height` = `512`
-- `sampler_name` = `euler`
-- `scheduler` = `normal`
 - `seed` = `565855587383452`
 - `steps` = `20`
+- `cfg` = `8`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
 - `width` = `512`
+- `height` = `512`
+- `batch_size` = `1`
+- `checkpoint` = `v1-5-pruned-emaonly.ckpt`
 
 ## 知识
 
 覆盖率 **100%**（7/7）
 
 **有卡**：`CLIPTextEncode`、`KSampler`、`VAEDecode`、`SaveImage`、`EmptyLatentImage`、`CheckpointLoaderSimple`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora

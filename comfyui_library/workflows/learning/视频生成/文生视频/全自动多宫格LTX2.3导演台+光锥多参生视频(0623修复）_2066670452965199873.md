@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json
 hash: 42ef8a99790d513a
-coverage: 0.552632
-learned_at: 2026-10-11 20:21:34
+coverage: 0.631579
+learned_at: 2026-10-15 22:48:01
 nodes: [VAELoaderKJ, VAELoaderKJ, SetNode, GetNode, GetNode, GetNode, LTXVConditioning, ConditioningZeroOut, SetNode, GetNode, LTXVConcatAVLatent, RandomNoise, CFGGuider, KSamplerSelect, BasicScheduler, LTXVCropGuides, LTXVSeparateAVLatent, LTXVAudioVAEDecode, GetNode, GetNode, VAEDecodeTiled, easy cleanGpuUsed, GetNode, SamplerCustomAdvanced, SetNode, SetNode, SetNode, DualCLIPLoader, VHS_VideoCombine, UNETLoader, RH_LLMAPI_Pro_Node, MarkdownNote, PreviewAny, TTResolutionSelector, LoadImage, LoraLoaderModelOnly, CS-LTXGridDirector, CS-LTXDirectorGuide]
 patterns: []
-missing: [CS-LTXDirectorGuide, CS-LTXGridDirector, easy cleanGpuUsed]
-discoveries: [次要节点 `CS-LTXDirectorGuide` 知识库中没有该节点类型的任何知识, 次要节点 `CS-LTXGridDirector` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/全自动多宫格LTX2.3导演台+光锥多参生视频(0623修复）_2066670452965199873.json
@@ -64,16 +63,8 @@ discoveries: [次要节点 `CS-LTXDirectorGuide` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **55%**（21/38）
+覆盖率 **63%**（24/38）
 
-**有卡**：`VAELoaderKJ`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`SamplerCustomAdvanced`、`DualCLIPLoader`、`VHS_VideoCombine`、`UNETLoader`、`RH_LLMAPI_Pro_Node`、`TTResolutionSelector`、`LoadImage`、`LoraLoaderModelOnly`
-
-**缺卡**（3）：`CS-LTXDirectorGuide`、`CS-LTXGridDirector`、`easy cleanGpuUsed`
+**有卡**：`VAELoaderKJ`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`SamplerCustomAdvanced`、`DualCLIPLoader`、`VHS_VideoCombine`、`UNETLoader`、`RH_LLMAPI_Pro_Node`、`TTResolutionSelector`、`LoadImage`、`LoraLoaderModelOnly`、`CS-LTXGridDirector`、`CS-LTXDirectorGuide`
 
 **用到的条目**：LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CS-LTXDirectorGuide` 知识库中没有该节点类型的任何知识
-- 次要节点 `CS-LTXGridDirector` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

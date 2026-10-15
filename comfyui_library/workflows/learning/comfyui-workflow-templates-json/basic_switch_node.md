@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/basic_switch_node.json
 hash: 2e07f9d49517e675
 official: true
-coverage: 0.210526
-learned_at: 2026-10-10 22:47:06
+coverage: 0.263158
+learned_at: 2026-10-15 22:24:53
 nodes: [LoraLoaderModelOnly, SaveImage, UNETLoader, ComfySwitchNode, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveBoolean, ComfySwitchNode, MarkdownNote, MarkdownNote, 0f79b7f9-d214-4587-b475-bc429519b976, PrimitiveString, PrimitiveString, PrimitiveString, ComfySwitchNode, PreviewAny, ComfySwitchNode, PrimitiveString, PreviewAny]
 patterns: []
-missing: [0f79b7f9-d214-4587-b475-bc429519b976]
-discoveries: [次要节点 `0f79b7f9-d214-4587-b475-bc429519b976` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/basic_switch_node.json
@@ -46,14 +45,8 @@ discoveries: [次要节点 `0f79b7f9-d214-4587-b475-bc429519b976` 知识库中�
 
 ## 知识
 
-覆盖率 **21%**（4/19）
+覆盖率 **26%**（5/19）
 
-**有卡**：`LoraLoaderModelOnly`、`SaveImage`、`UNETLoader`、`PrimitiveBoolean`
+**有卡**：`LoraLoaderModelOnly`、`SaveImage`、`UNETLoader`、`PrimitiveBoolean`、`0f79b7f9-d214-4587-b475-bc429519b976`
 
-**缺卡**（1）：`0f79b7f9-d214-4587-b475-bc429519b976`
-
-**用到的条目**：LoraLoaderModelOnly、UNETLoader、SaveImage、PrimitiveBoolean、sd15-t2i-basic、sd15-t2i-lora、LoraLoader、LoraLoader
-
-## 学习发现
-
-- 次要节点 `0f79b7f9-d214-4587-b475-bc429519b976` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoraLoaderModelOnly、UNETLoader、SaveImage、PrimitiveBoolean、0f79b7f9-d214-4587-b475-bc429519b976、sd15-t2i-basic、sd15-t2i-lora、LoraLoader

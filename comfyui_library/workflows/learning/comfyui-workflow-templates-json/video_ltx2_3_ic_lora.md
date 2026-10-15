@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_3_ic_lora.json
 hash: e0338ea7c9046b18
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:50:16
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:57
 nodes: [SaveVideo, MarkdownNote, f9f61b10-b689-4d67-b4fa-0acc1d9b5390, LoadVideo, LoadImage, Video Slice, ed545fa5-009c-4ccc-b318-4c00dd239751, MarkdownNote, PreviewImage]
 patterns: []
-missing: [Video Slice, ed545fa5-009c-4ccc-b318-4c00dd239751, f9f61b10-b689-4d67-b4fa-0acc1d9b5390]
-discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任何知识, 次要节点 `ed545fa5-009c-4ccc-b318-4c00dd239751` 知识库中没有该节点类型的任何知识, 次要节点 `f9f61b10-b689-4d67-b4fa-0acc1d9b5390` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_3_ic_lora.json
@@ -36,16 +35,8 @@ discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **33%**（3/9）
+覆盖率 **67%**（6/9）
 
-**有卡**：`SaveVideo`、`LoadVideo`、`LoadImage`
+**有卡**：`SaveVideo`、`f9f61b10-b689-4d67-b4fa-0acc1d9b5390`、`LoadVideo`、`LoadImage`、`Video Slice`、`ed545fa5-009c-4ccc-b318-4c00dd239751`
 
-**缺卡**（3）：`Video Slice`、`ed545fa5-009c-4ccc-b318-4c00dd239751`、`f9f61b10-b689-4d67-b4fa-0acc1d9b5390`
-
-**用到的条目**：LoadImage、SaveVideo、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识
-- 次要节点 `ed545fa5-009c-4ccc-b318-4c00dd239751` 知识库中没有该节点类型的任何知识
-- 次要节点 `f9f61b10-b689-4d67-b4fa-0acc1d9b5390` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、ed545fa5-009c-4ccc-b318-4c00dd239751、f9f61b10-b689-4d67-b4fa-0acc1d9b5390、Video Slice、sd15-t2i-basic、sd15-t2i-lora

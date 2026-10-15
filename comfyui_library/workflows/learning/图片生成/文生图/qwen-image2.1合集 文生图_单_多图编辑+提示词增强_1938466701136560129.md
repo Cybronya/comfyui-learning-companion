@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json
 hash: 1c90cc442de85b72
-coverage: 0.320755
-learned_at: 2026-10-10 20:59:25
+coverage: 0.424528
+learned_at: 2026-10-15 22:27:54
 nodes: [SetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, SetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, LoadImage, LoadImage, SetNode, LoadImage, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, GetNode, BatchImagesNode, GetNode, LoadImage, GetNode, EmptyLatentImage, PreviewAny, ComfySwitchNode, QwenImage21Cache, PrimitiveInt, UNETLoader, TextEncodeQwenImage21, ResolutionSelector, SetNode, easy seed, GetNode, LoadImage, LoadImage, PrimitiveBoolean, VAEDecode, SetNode, GetNode, SetNode, CLIPLoader, GetNode, GetNode, TextGenerateLTX2Prompt, KSampler, SaveImageAdvanced, SetNode, SetNode, CLIPLoader, CLIPLoader, JjkText, SetNode, SetNode, SetNode, SetNode, ResolutionSelector, PrimitiveBoolean, GetNode, GetNode, EmptyLatentImage, SetNode, easy seed, JjkText, GetNode, GetNode, GetNode, easy showAnything, TextGenerateLTX2Prompt, GetNode, TextEncodeQwenImage21, GetNode, VAEDecode, KSampler, SetNode, SaveImage, MarkdownNote, LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), SaveImage]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, easy seed, easy seed]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 401379519546083, "steps": 25, "width": 1024}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/qwen-image2.1合集 文生图_单_多图编辑+提示词增强_1938466701136560129.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
 
 **节点**（106 个）：
 - `SetNode`
@@ -70,12 +71,12 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `GetNode`
 - `LoadImage`
 - `GetNode`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `PreviewAny`
 - `ComfySwitchNode`
 - `QwenImage21Cache`
 - `PrimitiveInt`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `TextEncodeQwenImage21`
 - `ResolutionSelector`
 - `SetNode`
@@ -84,7 +85,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `LoadImage`
 - `LoadImage`
 - `PrimitiveBoolean`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetNode`
 - `GetNode`
 - `SetNode`
@@ -92,7 +93,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `GetNode`
 - `GetNode`
 - `TextGenerateLTX2Prompt`
-- `KSampler`
+- `KSampler` ★核心
 - `SaveImageAdvanced`
 - `SetNode`
 - `SetNode`
@@ -107,7 +108,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `PrimitiveBoolean`
 - `GetNode`
 - `GetNode`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `SetNode`
 - `easy seed`
 - `JjkText`
@@ -119,8 +120,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `GetNode`
 - `TextEncodeQwenImage21`
 - `GetNode`
-- `VAEDecode`
-- `KSampler`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
 - `SetNode`
 - `SaveImage`
 - `MarkdownNote`
@@ -131,34 +132,20 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `401379519546083`
 - `steps` = `25`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **32%**（34/106）
+覆盖率 **42%**（45/106）
 
-**有卡**：`SetNode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`GetNode`、`VAELoader`
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`VAELoader`、`BatchImagesNode`、`EmptyLatentImage`、`QwenImage21Cache`、`UNETLoader`、`TextEncodeQwenImage21`、`ResolutionSelector`、`easy seed`、`PrimitiveBoolean`、`VAEDecode`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`KSampler`、`SaveImageAdvanced`、`SaveImage`
 
-**缺卡**（11）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy seed`、`easy seed`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage

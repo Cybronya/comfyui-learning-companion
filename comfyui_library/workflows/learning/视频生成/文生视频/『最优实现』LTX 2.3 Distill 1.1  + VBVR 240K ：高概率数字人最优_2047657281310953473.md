@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/『最优实现』LTX 2.3 Distill 1.1  + VBVR 240K ：高概率数字人最优_2047657281310953473.json
 hash: 29c2dd7865e95629
-coverage: 0.915493
-learned_at: 2026-10-11 19:49:45
+coverage: 0.957746
+learned_at: 2026-10-15 22:47:38
 nodes: [LayerUtility: PurgeVRAM V2, VRAMReserver, LoraLoaderModelOnly, CLIPTextEncode, SaveVideo, PrimitiveBoolean, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, LTXVAudioVAELoader, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, CM_FloatToInt, JWImageResizeByLongerSide, LTXVConditioning, LTXVPreprocess, SolidMask, LTXVAudioVAEEncode, LTX2_NAG, SetLatentNoiseMask, LoraLoaderModelOnly, PrimitiveInt, CFGGuider, CFGGuider, CFGGuider, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, LTXVImgToVideoConditionOnly, SamplerCustomAdvanced, LTXVLatentUpsampler, GetLatentSizeAndCount, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SamplerCustomAdvanced, image_scale_pixel_v2, MelBandRoFormerSampler, MelBandRoFormerModelLoader, Audio Duration (mtb), SimpleMath+, easy showAnything, TrimAudioDuration, Float, Float, LoraLoaderModelOnly, PrimitiveFloat, GetLatentSizeAndCount, LTXVConcatAVLatent, LTXVSeparateAVLatent, LoadImage, LoadAudio, CLIPTextEncode, CheckpointLoaderSimple]
 patterns: []
-missing: [Audio Duration (mtb), LayerUtility: PurgeVRAM V2, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/『最优实现』LTX 2.3 Distill 1.1  + VBVR 240K ：高概率数字人最优_2047657281310953473.json
@@ -105,16 +104,8 @@ discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **92%**（65/71）
+覆盖率 **96%**（68/71）
 
-**有卡**：`VRAMReserver`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`SaveVideo`、`PrimitiveBoolean`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`CM_FloatToInt`、`JWImageResizeByLongerSide`、`LTXVConditioning`、`LTXVPreprocess`、`SolidMask`、`LTXVAudioVAEEncode`、`LTX2_NAG`、`SetLatentNoiseMask`、`CFGGuider`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoConditionOnly`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`GetLatentSizeAndCount`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`image_scale_pixel_v2`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`TrimAudioDuration`、`Float`、`LoadImage`、`LoadAudio`、`CheckpointLoaderSimple`
-
-**缺卡**（3）：`Audio Duration (mtb)`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`
+**有卡**：`LayerUtility: PurgeVRAM V2`、`VRAMReserver`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`SaveVideo`、`PrimitiveBoolean`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`CM_FloatToInt`、`JWImageResizeByLongerSide`、`LTXVConditioning`、`LTXVPreprocess`、`SolidMask`、`LTXVAudioVAEEncode`、`LTX2_NAG`、`SetLatentNoiseMask`、`CFGGuider`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoConditionOnly`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`GetLatentSizeAndCount`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`image_scale_pixel_v2`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`Audio Duration (mtb)`、`SimpleMath+`、`TrimAudioDuration`、`Float`、`LoadImage`、`LoadAudio`、`CheckpointLoaderSimple`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
-
-## 学习发现
-
-- 次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

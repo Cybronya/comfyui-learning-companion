@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3+图生视频 提示词自动优化版 数字人说话唱歌_2063795562855624705.json
 hash: eab402991288be5d
-coverage: 0.761905
-learned_at: 2026-10-11 20:21:26
+coverage: 0.952381
+learned_at: 2026-10-15 22:45:02
 nodes: [CFGGuider, KSamplerSelect, easy int, easy int, easy int, SimpleMath+, ModelPatchTorchSettings, LTXVImgToVideoConditionOnly, LTXVChunkFeedForward, LTXVPreprocess, EmptyLTXVLatentVideo, CLIPTextEncode, LTXVConditioning, PrimitiveFloat, CM_FloatToInt, LTXVEmptyLatentAudio, PrimitiveBoolean, LTXVConcatAVLatent, LTXVAudioVAELoader, easy cleanGpuUsed, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVSeparateAVLatent, SamplerCustomAdvanced, RandomNoise, Seed (rgthree), ManualSigmas, CR Text, CheckpointLoaderSimple, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, CR Text, CLIPTextEncode, LoraLoaderModelOnly, LTXAVTextEncoderLoader, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, DapaoImageAspectRatioResizeNode, VHS_VideoCombine, Note, LoadImage]
 patterns: []
-missing: [CR Text, CR Text, SimpleMath+, easy cleanGpuUsed, easy int, easy int, easy int, Seed (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.3+图生视频 提示词自动优化版 数字人说话唱歌_2063795562855624705.json
@@ -76,21 +75,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **76%**（32/42）
+覆盖率 **95%**（40/42）
 
-**有卡**：`CFGGuider`、`KSamplerSelect`、`ModelPatchTorchSettings`、`LTXVImgToVideoConditionOnly`、`LTXVChunkFeedForward`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`CLIPTextEncode`、`LTXVConditioning`、`CM_FloatToInt`、`LTXVEmptyLatentAudio`、`PrimitiveBoolean`、`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`RandomNoise`、`ManualSigmas`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`RH_LLMAPI_Pro_Node`、`LTXAVTextEncoderLoader`、`PathchSageAttentionKJ`、`DapaoImageAspectRatioResizeNode`、`VHS_VideoCombine`、`LoadImage`
+**有卡**：`CFGGuider`、`KSamplerSelect`、`easy int`、`SimpleMath+`、`ModelPatchTorchSettings`、`LTXVImgToVideoConditionOnly`、`LTXVChunkFeedForward`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`CLIPTextEncode`、`LTXVConditioning`、`CM_FloatToInt`、`LTXVEmptyLatentAudio`、`PrimitiveBoolean`、`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`easy cleanGpuUsed`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`RandomNoise`、`Seed (rgthree)`、`ManualSigmas`、`CR Text`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`RH_LLMAPI_Pro_Node`、`LTXAVTextEncoderLoader`、`PathchSageAttentionKJ`、`DapaoImageAspectRatioResizeNode`、`VHS_VideoCombine`、`LoadImage`
 
-**缺卡**（8）：`CR Text`、`CR Text`、`SimpleMath+`、`easy cleanGpuUsed`、`easy int`、`easy int`、`easy int`、`Seed (rgthree)`
-
-**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、Seed (rgthree)

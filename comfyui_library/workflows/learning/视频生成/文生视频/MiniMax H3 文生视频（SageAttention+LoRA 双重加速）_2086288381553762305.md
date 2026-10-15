@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 文生视频（SageAttention+LoRA 双重加速）_2086288381553762305.json
 hash: 67743b70f24a8b3b
 coverage: 0.846154
-learned_at: 2026-10-10 23:01:47
+learned_at: 2026-10-15 22:45:42
 nodes: [VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, VAELoader, VAELoader, CLIPLoader, ComfyMathExpression, ResolutionSelector, SaveVideo, MiniMaxH3ImageToVideo, MarkdownNote, MarkdownNote, PrimitiveFloat, MarkdownNote, UNETLoader, KSamplerSelect, BasicScheduler, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderBypassModelOnly, LoraLoaderBypassModelOnly, LoraLoaderBypassModelOnly, LoraLoaderBypassModelOnly, LoraLoaderBypassModelOnly]
 patterns: []
 missing: []

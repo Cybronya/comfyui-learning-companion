@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/首尾帧视频-WAN2.2高质量版_1980937502708158465.json
 hash: f475e97acc1ab343
-coverage: 0.777778
-learned_at: 2026-10-11 02:45:05
+coverage: 0.972222
+learned_at: 2026-10-15 22:49:07
 nodes: [ImageResize+, ImageResize+, WanVideoClipVisionEncode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, PrimitiveNode, JWInteger, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, INTConstant, easy cleanGpuUsed, LoadWanVideoClipTextEncoder, WanVideoBlockSwap, WanVideoSampler, WanVideoDecode, WanVideoModelLoader, WanVideoSampler, WanVideoImageToVideoEncode, SimpleMath+, JWInteger, JWInteger, JWInteger, LoadImage, LoadImage, CreateCFGScheduleFloatList, VHS_VideoCombine, CR Prompt Text, WanVideoTextEncode]
 patterns: []
-missing: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, CR Prompt Text, ImageResize+, ImageResize+]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/首尾帧视频-WAN2.2高质量版_1980937502708158465.json
@@ -62,20 +61,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **78%**（28/36）
+覆盖率 **97%**（35/36）
 
-**有卡**：`WanVideoClipVisionEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`JWInteger`、`INTConstant`、`LoadWanVideoClipTextEncoder`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoImageToVideoEncode`、`LoadImage`、`CreateCFGScheduleFloatList`、`VHS_VideoCombine`、`WanVideoTextEncode`
-
-**缺卡**（7）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`SimpleMath+`、`easy cleanGpuUsed`、`CR Prompt Text`、`ImageResize+`、`ImageResize+`
+**有卡**：`ImageResize+`、`WanVideoClipVisionEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`JWInteger`、`LayerUtility: PurgeVRAM`、`INTConstant`、`easy cleanGpuUsed`、`LoadWanVideoClipTextEncoder`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoImageToVideoEncode`、`SimpleMath+`、`LoadImage`、`CreateCFGScheduleFloatList`、`VHS_VideoCombine`、`CR Prompt Text`、`WanVideoTextEncode`
 
 **用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明

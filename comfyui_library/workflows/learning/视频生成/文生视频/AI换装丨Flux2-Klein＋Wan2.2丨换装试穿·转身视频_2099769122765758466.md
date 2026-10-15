@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI换装丨Flux2-Klein＋Wan2.2丨换装试穿·转身视频_2099769122765758466.json
 hash: 2c2a6f3669c4d7b9
-coverage: 0.779221
-learned_at: 2026-10-11 22:12:30
+coverage: 0.883117
+learned_at: 2026-10-15 22:43:59
 nodes: [PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, PrimitiveInt, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, CLIPTextEncode, CLIPTextEncode, SimpleMath+, VHS_VideoCombine, INTConstant, UNETLoader, UNETLoader, LoraLoaderModelOnly, DownloadAndLoadGIMMVFIModel, VAELoader, GetImageSize, KSamplerSelect, Flux2Scheduler, EmptyFlux2LatentImage, SamplerCustomAdvanced, RandomNoise, LoraLoaderModelOnly, UNETLoader, easy ifElse, easy ifElse, easy ifElse, ZML_AnyTypeSwitchFive, ZML_AnyTypeSwitchFive, Logic Comparison AND, ImpactNeg, ImpactNeg, Logic Comparison AND, Text Multiline, Text Multiline, SaveImage, VAELoader, CLIPTextEncode, CLIPTextEncode, VAEDecode, CFGGuider, AnyBooleanSwitch, AnyBooleanSwitch, WanImageToVideo, GIMMVFI_interpolate, CLIPLoader, CLIPLoader, PainterVRAM, ImageConcatMulti, ImpactControlBridge, ImageConcatMulti, VHS_VideoCombine, workflow>load image03, PainterVRAM, PreviewAny, ImpactControlBridge, VAEEncode, ReferenceLatent, ReferenceLatent, Int, Int, Int, Int, ImageScaleToTotalPixels, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, Fast Groups Bypasser (rgthree), 1hew_StringJoinMulti, Note, Note, Note, workflow>load image02, workflow>load image01]
 patterns: []
-missing: [Logic Comparison AND, Logic Comparison AND, SimpleMath+, Text Multiline, Text Multiline, workflow>load image01, workflow>load image02, workflow>load image03]
+missing: []
 parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `Logic Comparison AND` 知识库中没有该节点类型的任何知识, 次要节点 `Logic Comparison AND` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>load image01` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>load image02` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>load image03` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/AI换装丨Flux2-Klein＋Wan2.2丨换装试穿·转身视频_2099769122765758466.json
@@ -113,21 +112,8 @@ discoveries: [次要节点 `Logic Comparison AND` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **78%**（60/77）
+覆盖率 **88%**（68/77）
 
-**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`CLIPTextEncode`、`VHS_VideoCombine`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`、`DownloadAndLoadGIMMVFIModel`、`VAELoader`、`GetImageSize`、`KSamplerSelect`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`SamplerCustomAdvanced`、`RandomNoise`、`ZML_AnyTypeSwitchFive`、`ImpactNeg`、`SaveImage`、`CFGGuider`、`AnyBooleanSwitch`、`WanImageToVideo`、`GIMMVFI_interpolate`、`CLIPLoader`、`PainterVRAM`、`ImageConcatMulti`、`ImpactControlBridge`、`VAEEncode`、`ReferenceLatent`、`Int`、`ImageScaleToTotalPixels`、`PrimitiveBoolean`、`1hew_StringJoinMulti`
-
-**缺卡**（8）：`Logic Comparison AND`、`Logic Comparison AND`、`SimpleMath+`、`Text Multiline`、`Text Multiline`、`workflow>load image01`、`workflow>load image02`、`workflow>load image03`
+**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`CLIPTextEncode`、`SimpleMath+`、`VHS_VideoCombine`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`、`DownloadAndLoadGIMMVFIModel`、`VAELoader`、`GetImageSize`、`KSamplerSelect`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`SamplerCustomAdvanced`、`RandomNoise`、`ZML_AnyTypeSwitchFive`、`Logic Comparison AND`、`ImpactNeg`、`Text Multiline`、`SaveImage`、`CFGGuider`、`AnyBooleanSwitch`、`WanImageToVideo`、`GIMMVFI_interpolate`、`CLIPLoader`、`PainterVRAM`、`ImageConcatMulti`、`ImpactControlBridge`、`workflow>load image03`、`VAEEncode`、`ReferenceLatent`、`Int`、`ImageScaleToTotalPixels`、`PrimitiveBoolean`、`1hew_StringJoinMulti`、`workflow>load image02`、`workflow>load image01`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、CFGGuider、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `Logic Comparison AND` 知识库中没有该节点类型的任何知识
-- 次要节点 `Logic Comparison AND` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>load image01` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>load image02` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>load image03` 知识库中没有该节点类型的任何知识

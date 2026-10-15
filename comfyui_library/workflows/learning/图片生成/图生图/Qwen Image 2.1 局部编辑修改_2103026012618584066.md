@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 局部编辑修改_2103026012618584066.json
 hash: 5617a354ae6386f6
-coverage: 0.653846
-learned_at: 2026-10-10 20:48:05
+coverage: 0.846154
+learned_at: 2026-10-15 22:25:11
 nodes: [VAELoader, QwenImage21Cache, CLIPLoader, easy showAnything, Reroute, GrowMaskWithBlur, LayerUtility: CropByMask V2, GrowMaskWithBlur, LayerUtility: RestoreCropBox, ColorMatch, LayerUtility: ImageScaleRestore V2, VAEDecode, LoadImage, Image Comparer (rgthree), SaveImage, QwenPERewriteT8, LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text, TextEncodeQwenImage21, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, UNETLoader, QwenImage21SpectrumT8, KSampler, EmptyLatentImage, ComfySwitchNode]
 patterns: []
-missing: [LayerUtility: CropByMask V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleRestore V2, LayerUtility: RestoreCropBox, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 19960422, "steps": 40, "width": 1024}
-discoveries: [次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: RestoreCropBox` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 局部编辑修改_2103026012618584066.json
@@ -65,18 +64,8 @@ discoveries: [次要节点 `LayerUtility: CropByMask V2` 知识库中没有该�
 
 ## 知识
 
-覆盖率 **65%**（17/26）
+覆盖率 **85%**（22/26）
 
-**有卡**：`VAELoader`、`QwenImage21Cache`、`CLIPLoader`、`GrowMaskWithBlur`、`ColorMatch`、`VAEDecode`、`LoadImage`、`SaveImage`、`QwenPERewriteT8`、`TextEncodeQwenImage21`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`UNETLoader`、`QwenImage21SpectrumT8`、`KSampler`、`EmptyLatentImage`
-
-**缺卡**（5）：`LayerUtility: CropByMask V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleRestore V2`、`LayerUtility: RestoreCropBox`、`CR Prompt Text`
+**有卡**：`VAELoader`、`QwenImage21Cache`、`CLIPLoader`、`GrowMaskWithBlur`、`LayerUtility: CropByMask V2`、`LayerUtility: RestoreCropBox`、`ColorMatch`、`LayerUtility: ImageScaleRestore V2`、`VAEDecode`、`LoadImage`、`SaveImage`、`QwenPERewriteT8`、`LayerUtility: ImageScaleByAspectRatio V2`、`CR Prompt Text`、`TextEncodeQwenImage21`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`UNETLoader`、`QwenImage21SpectrumT8`、`KSampler`、`EmptyLatentImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `LayerUtility: CropByMask V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleRestore V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: RestoreCropBox` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

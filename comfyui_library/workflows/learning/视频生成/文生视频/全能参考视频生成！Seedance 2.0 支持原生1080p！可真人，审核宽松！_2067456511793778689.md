@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json
 hash: 17f01e703df1acaf
-coverage: 0.619048
-learned_at: 2026-10-11 20:21:33
+coverage: 0.809524
+learned_at: 2026-10-15 22:47:52
 nodes: [ShowAnything|Mie, ShowAnything|Mie, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, MarkdownNote, LoadImage, LoadImage, LoadVideo, LoadAudio, 忽略多组孤海, MarkdownNote, MarkdownNote, CR Prompt Text, RH_RhartVideoSparkvideo20MultimodalVideo, MarkdownNote, SaveVideo, LoadAudio]
 patterns: []
-missing: [ShowAnything|Mie, ShowAnything|Mie, 忽略多组孤海, CR Prompt Text]
-discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/全能参考视频生成！Seedance 2.0 支持原生1080p！可真人，审核宽松！_2067456511793778689.json
@@ -47,17 +46,8 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **62%**（13/21）
+覆盖率 **81%**（17/21）
 
-**有卡**：`LoadImage`、`LoadVideo`、`LoadAudio`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`SaveVideo`
+**有卡**：`ShowAnything|Mie`、`LoadImage`、`LoadVideo`、`LoadAudio`、`忽略多组孤海`、`CR Prompt Text`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`SaveVideo`
 
-**缺卡**（4）：`ShowAnything|Mie`、`ShowAnything|Mie`、`忽略多组孤海`、`CR Prompt Text`
-
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Text
-
-## 学习发现
-
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、ShowAnything|Mie、忽略多组孤海

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3+图生视频（四宫格剧情版）_2039691601596911617.json
 hash: 35280ac8d21c62eb
-coverage: 0.494382
-learned_at: 2026-10-11 19:49:36
+coverage: 0.550562
+learned_at: 2026-10-15 22:44:39
 nodes: [LTXVAudioVAEDecode, PrimitiveFloat, LTXAVTextEncoderLoader, GetNode, SimpleMath+, SetNode, SetNode, GetNode, GetNode, CheckpointLoaderSimple, SetNode, LTXVAudioVAELoader, SetNode, GetNode, SamplerCustomAdvanced, CFGGuider, KSamplerSelect, GetNode, GetNode, SetNode, LTXVLatentUpsampler, GetNode, GetNode, GetNode, CFGGuider, KSamplerSelect, ManualSigmas, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, LTXVConcatAVLatent, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, GetNode, GetNode, GetNode, GetNode, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, LTXVConcatAVLatent, LTXVEmptyLatentAudio, ImageScaleBy, RandomNoise, CLIPTextEncode, CLIPTextEncode, ManualSigmas, LoraLoaderModelOnly, SetNode, VAEDecodeTiled, GetNode, FloatConstant, LTXVConditioning, easy showAnything, GetNode, GetNode, GetNode, GetNode, Int, PreviewImage, GuHaiAutoImageSplit, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageResizeKJv2, ImageFromBatch+, ImageResizeKJv2, ImageResizeKJv2, SetNode, SetNode, SetNode, ImageResizeKJv2, Reroute, Reroute, SetNode, SetNode, SetNode, RH_LLMAPI_Pro_Node, Text, VHS_VideoCombine, CM_FloatToInt, ComfyMathExpression, LTXVImgToVideoInplaceKJ, TTResolutionSelector, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, LoadImage]
 patterns: []
-missing: [ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3+图生视频（四宫格剧情版）_2039691601596911617.json
@@ -123,18 +122,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **49%**（44/89）
+覆盖率 **55%**（49/89）
 
-**有卡**：`LTXVAudioVAEDecode`、`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`SamplerCustomAdvanced`、`CFGGuider`、`KSamplerSelect`、`LTXVLatentUpsampler`、`ManualSigmas`、`LTXVImgToVideoConditionOnly`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`LTXVEmptyLatentAudio`、`ImageScaleBy`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`FloatConstant`、`LTXVConditioning`、`Int`、`GuHaiAutoImageSplit`、`ImageResizeKJv2`、`RH_LLMAPI_Pro_Node`、`Text`、`VHS_VideoCombine`、`CM_FloatToInt`、`ComfyMathExpression`、`LTXVImgToVideoInplaceKJ`、`TTResolutionSelector`、`LoadImage`
-
-**缺卡**（5）：`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`SimpleMath+`
+**有卡**：`LTXVAudioVAEDecode`、`LTXAVTextEncoderLoader`、`SimpleMath+`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`SamplerCustomAdvanced`、`CFGGuider`、`KSamplerSelect`、`LTXVLatentUpsampler`、`ManualSigmas`、`LTXVImgToVideoConditionOnly`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`LTXVEmptyLatentAudio`、`ImageScaleBy`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`FloatConstant`、`LTXVConditioning`、`Int`、`GuHaiAutoImageSplit`、`ImageFromBatch+`、`ImageResizeKJv2`、`RH_LLMAPI_Pro_Node`、`Text`、`VHS_VideoCombine`、`CM_FloatToInt`、`ComfyMathExpression`、`LTXVImgToVideoInplaceKJ`、`TTResolutionSelector`、`LoadImage`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

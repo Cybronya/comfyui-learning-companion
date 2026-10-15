@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】Minimax H3 的lightx2v正式版1.0加速lora，4步8步_2087808921359699970.json
 hash: a4f0dae8e9309eca
 coverage: 0.84
-learned_at: 2026-10-11 20:53:51
+learned_at: 2026-10-15 22:47:42
 nodes: [ResolutionSelector, KSamplerSelect, BasicGuider, SamplerCustomAdvanced, ComfyMathExpression, VAEDecodeAudio, VAEDecode, PathchSageAttentionKJ, PrimitiveFloat, RandomNoise, ModelAttentionBackend, BasicScheduler, MiniMaxH3ImageToVideo, MarkdownNote, MarkdownNote, SaveVideo, CreateVideo, LoadImage, MarkdownNote, LoadImage, UNETLoader, CLIPLoader, VAELoader, VAELoader, LoraLoaderModelOnly]
 patterns: []
 missing: []

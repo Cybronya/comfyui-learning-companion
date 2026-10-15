@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_qwen3_image_
 hash: 3e854be6fdf5c1de
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:42
+learned_at: 2026-10-15 22:24:51
 nodes: [SaveImage, LoadImage, QwenImageEditApi]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`QwenImageEditApi`
 
-**用到的条目**：LoadImage、SaveImage、QwenImageEditApi、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+**用到的条目**：LoadImage、SaveImage、QwenImageEditApi、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput

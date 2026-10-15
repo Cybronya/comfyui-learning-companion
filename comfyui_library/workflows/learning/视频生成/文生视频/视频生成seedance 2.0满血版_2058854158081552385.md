@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/视频生成seedance 2.0满血版_2058854158081552385.json
 hash: 4674a52785978eff
-coverage: 0.964286
-learned_at: 2026-10-11 19:49:51
+coverage: 1
+learned_at: 2026-10-15 22:49:01
 nodes: [RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, LoadImage, LoadImage, LoadImage, LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, SaveVideo, LoadImage, CR Prompt Text, LoadVideo, LoadVideo, LoadVideo, LoadAudio, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/视频生成seedance 2.0满血版_2058854158081552385.json
@@ -54,14 +53,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **96%**（27/28）
+覆盖率 **100%**（28/28）
 
-**有卡**：`RH_SparkVideoAssetCreate`、`LoadImage`、`RH_SparkVideoAssetIdsMerge`、`SaveVideo`、`LoadVideo`、`LoadAudio`、`RH_RhartVideoSparkvideo20MultimodalVideo`
+**有卡**：`RH_SparkVideoAssetCreate`、`LoadImage`、`RH_SparkVideoAssetIdsMerge`、`SaveVideo`、`CR Prompt Text`、`LoadVideo`、`LoadAudio`、`RH_RhartVideoSparkvideo20MultimodalVideo`
 
-**缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、RH_SparkVideoAssetCreate、RH_SparkVideoAssetIdsMerge、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、RH_SparkVideoAssetCreate、RH_SparkVideoAssetIdsMerge

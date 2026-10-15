@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2 首尾帧视频_1957693851249078273.json
 hash: 380bd58a74242bc0
-coverage: 0.837838
-learned_at: 2026-10-10 23:09:37
+coverage: 0.918919
+learned_at: 2026-10-15 22:47:34
 nodes: [CLIPLoader, VAELoader, VAEDecode, CreateVideo, CLIPVisionLoader, LayerUtility: ImageMaskScaleAs, WanFirstLastFrameToVideo, RH_Translator, easy showAnything, easy ifElse, CLIPVisionEncode, CLIPVisionEncode, DF_Integer, SimpleMath+, LoraLoaderModelOnly, UNETLoader, ModelSamplingSD3, UNETLoader, PrimitiveBoolean, KSamplerAdvanced, ImageStitch, PathchSageAttentionKJ, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, LayerUtility: ImageScaleByAspectRatio V2, SaveVideo, KSamplerAdvanced, easy showAnything, ModelSamplingSD3, WanVideoNAG, WanVideoNAG, RH_Captioner, Textbox, LoadImage, LoadImage]
 patterns: []
-missing: [LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 4, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `LayerUtility: ImageMaskScaleAs` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2 首尾帧视频_1957693851249078273.json
@@ -73,16 +72,8 @@ discoveries: [次要节点 `LayerUtility: ImageMaskScaleAs` 知识库中没有�
 
 ## 知识
 
-覆盖率 **84%**（31/37）
+覆盖率 **92%**（34/37）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`VAEDecode`、`CreateVideo`、`CLIPVisionLoader`、`WanFirstLastFrameToVideo`、`RH_Translator`、`CLIPVisionEncode`、`DF_Integer`、`LoraLoaderModelOnly`、`UNETLoader`、`ModelSamplingSD3`、`PrimitiveBoolean`、`KSamplerAdvanced`、`ImageStitch`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`SaveVideo`、`WanVideoNAG`、`RH_Captioner`、`Textbox`、`LoadImage`
-
-**缺卡**（3）：`LayerUtility: ImageMaskScaleAs`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`
+**有卡**：`CLIPLoader`、`VAELoader`、`VAEDecode`、`CreateVideo`、`CLIPVisionLoader`、`LayerUtility: ImageMaskScaleAs`、`WanFirstLastFrameToVideo`、`RH_Translator`、`CLIPVisionEncode`、`DF_Integer`、`SimpleMath+`、`LoraLoaderModelOnly`、`UNETLoader`、`ModelSamplingSD3`、`PrimitiveBoolean`、`KSamplerAdvanced`、`ImageStitch`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`SaveVideo`、`WanVideoNAG`、`RH_Captioner`、`Textbox`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageMaskScaleAs` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

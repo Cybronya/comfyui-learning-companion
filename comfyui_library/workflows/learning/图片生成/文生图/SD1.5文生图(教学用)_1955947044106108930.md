@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SD1.5文生图(教学用)_1955947044106108930.json
 hash: 52fe8eec849e9291
-coverage: 0.875
-learned_at: 2026-10-10 20:59:10
+coverage: 1
+learned_at: 2026-10-15 22:27:30
 nodes: [CLIPTextEncode, CLIPTextEncode, EmptyLatentImage, easy positive, CheckpointLoaderSimple, KSampler, VAEDecode, SaveImage]
 patterns: [text_to_image]
-missing: [easy positive]
+missing: []
 parameters: {"batch_size": 1, "cfg": 7, "checkpoint": "epicrealism_pureEvolutionV5-inpainting.safetensors", "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "normal", "seed": 173655344067579, "steps": 25, "width": 1024}
-discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/SD1.5文生图(教学用)_1955947044106108930.json
@@ -21,39 +20,37 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（8 个）：
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `EmptyLatentImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
 - `easy positive`
-- `CheckpointLoaderSimple`
-- `KSampler`
-- `VAEDecode`
+- `CheckpointLoaderSimple` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `7`
-- `checkpoint` = `epicrealism_pureEvolutionV5-inpainting.safetensors`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `normal`
+- `batch_size` = `1`
+- `checkpoint` = `epicrealism_pureEvolutionV5-inpainting.safetensors`
 - `seed` = `173655344067579`
 - `steps` = `25`
-- `width` = `1024`
+- `cfg` = `7`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **88%**（7/8）
+覆盖率 **100%**（8/8）
 
-**有卡**：`CLIPTextEncode`、`EmptyLatentImage`、`easy positive`、`CheckpointLoaderSimple`、`KSampler`、`VAEDecode`
+**有卡**：`CLIPTextEncode`、`EmptyLatentImage`、`easy positive`、`CheckpointLoaderSimple`、`KSampler`、`VAEDecode`、`SaveImage`
 
-**缺卡**（1）：`easy positive`
-
-## 学习发现
-
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、SaveImage、easy positive、sd15-t2i-basic

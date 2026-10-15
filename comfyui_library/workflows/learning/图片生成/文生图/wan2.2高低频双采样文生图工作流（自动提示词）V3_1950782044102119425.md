@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json
 hash: 981c690097312bcd
-coverage: 0.771429
-learned_at: 2026-10-10 20:59:27
+coverage: 0.885714
+learned_at: 2026-10-15 22:27:59
 nodes: [LoraLoaderModelOnly, UNETLoader, UNETLoader, LoraLoaderModelOnly, CFGZeroStarAndInit, PathchSageAttentionKJ, PathchSageAttentionKJ, KSamplerAdvanced, ModelSamplingSD3, KSamplerAdvanced, ModelSamplingSD3, KSamplerAdvanced, VAELoader, VAEDecode, VAEDecode, EmptyHunyuanLatentVideo, ImpactInt, ImpactInt, ShowText|pysssss, Wan_video_prompt_generator, RH_LLMAPI_NODE, CLIPTextEncode, CLIPTextEncode, CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CR Text Concatenate, CR Text, ShowText|pysssss, easy showAnything, PreviewImage, SaveImage, Text Multiline, SaveImage, CR Simple Image Compare]
 patterns: []
-missing: [CR Simple Image Compare, CR Text, CR Text Concatenate, Text Multiline]
+missing: []
 parameters: {"cfg": 10, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/wan2.2高低频双采样文生图工作流（自动提示词）V3_1950782044102119425.json
@@ -21,33 +20,35 @@ discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（35 个）：
-- `LoraLoaderModelOnly`
-- `UNETLoader`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `CFGZeroStarAndInit`
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `ModelSamplingSD3`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `ModelSamplingSD3`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `VAELoader`
-- `VAEDecode`
-- `VAEDecode`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
 - `EmptyHunyuanLatentVideo`
 - `ImpactInt`
 - `ImpactInt`
 - `ShowText|pysssss`
 - `Wan_video_prompt_generator`
 - `RH_LLMAPI_NODE`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `CLIPLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `CR Text Concatenate`
 - `CR Text`
 - `ShowText|pysssss`
@@ -60,24 +61,17 @@ discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点
 
 ## 关键参数
 
-- `cfg` = `10`
-- `denoise` = `simple`
-- `sampler_name` = `1`
-- `scheduler` = `euler`
 - `seed` = `disable`
 - `steps` = `fixed`
+- `cfg` = `10`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
 
 ## 知识
 
-覆盖率 **77%**（27/35）
+覆盖率 **89%**（31/35）
 
-**有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`ModelSamplingSD3`、`VAELoader`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`ShowText|pysssss`、`Wan_video_prompt_generator`、`RH_LLMAPI_NODE`、`CLIPTextEncode`、`CLIPLoader`、`CR Text Concatenate`
+**有卡**：`LoraLoaderModelOnly`、`UNETLoader`、`CFGZeroStarAndInit`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`ModelSamplingSD3`、`VAELoader`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`Wan_video_prompt_generator`、`RH_LLMAPI_NODE`、`CLIPTextEncode`、`CLIPLoader`、`CR Text Concatenate`、`CR Text`、`SaveImage`、`Text Multiline`、`CR Simple Image Compare`
 
-**缺卡**（4）：`CR Simple Image Compare`、`CR Text`、`CR Text Concatenate`、`Text Multiline`
-
-## 学习发现
-
-- 次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、CFGZeroStarAndInit

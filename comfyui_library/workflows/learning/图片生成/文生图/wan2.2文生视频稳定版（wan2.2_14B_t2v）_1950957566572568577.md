@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生视频稳定版（wan2.2_14B_t2v）_1950957566572568577.json
 hash: bc5e65a10ca2d964
-coverage: 0.809524
-learned_at: 2026-10-10 20:59:27
+coverage: 0.952381
+learned_at: 2026-10-15 22:27:58
 nodes: [MathExpression|pysssss, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, INTConstant, EmptyHunyuanLatentVideo, easy cleanGpuUsed, KSamplerAdvanced, VAEDecode, easy cleanGpuUsed, CreateVideo, KSamplerAdvanced, Note, INTConstant, INTConstant, CLIPTextEncode, UNETLoader, UNETLoader, CLIPLoader, VAELoader, SaveVideo]
 patterns: []
-missing: [MathExpression|pysssss, easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/wan2.2文生视频稳定版（wan2.2_14B_t2v）_1950957566572568577.json
@@ -21,48 +20,44 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（21 个）：
 - `MathExpression|pysssss`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `INTConstant`
 - `EmptyHunyuanLatentVideo`
 - `easy cleanGpuUsed`
-- `KSamplerAdvanced`
-- `VAEDecode`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
 - `easy cleanGpuUsed`
 - `CreateVideo`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `Note`
 - `INTConstant`
 - `INTConstant`
-- `CLIPTextEncode`
-- `UNETLoader`
-- `UNETLoader`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `SaveVideo`
 
 ## 关键参数
 
-- `cfg` = `20`
-- `denoise` = `simple`
-- `sampler_name` = `3.5`
-- `scheduler` = `euler`
 - `seed` = `disable`
 - `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
 
 ## 知识
 
-覆盖率 **81%**（17/21）
+覆盖率 **95%**（20/21）
 
-**有卡**：`MathExpression|pysssss`、`ModelSamplingSD3`、`CLIPTextEncode`、`INTConstant`、`EmptyHunyuanLatentVideo`、`easy cleanGpuUsed`、`KSamplerAdvanced`、`VAEDecode`、`CreateVideo`、`Note`、`UNETLoader`
+**有卡**：`MathExpression|pysssss`、`ModelSamplingSD3`、`CLIPTextEncode`、`INTConstant`、`EmptyHunyuanLatentVideo`、`easy cleanGpuUsed`、`KSamplerAdvanced`、`VAEDecode`、`CreateVideo`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SaveVideo`
 
-**缺卡**（3）：`MathExpression|pysssss`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo、SaveVideo

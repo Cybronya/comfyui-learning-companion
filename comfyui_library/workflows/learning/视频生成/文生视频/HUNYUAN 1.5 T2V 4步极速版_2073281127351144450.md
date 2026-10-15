@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/HUNYUAN 1.5 T2V 4步极速版_2073281127351144450.json
 hash: aee79676402355cb
 coverage: 0.966667
-learned_at: 2026-10-11 20:38:33
+learned_at: 2026-10-15 22:44:26
 nodes: [CLIPTextEncode, HunyuanVideo15LatentUpscaleWithModel, BasicScheduler, CFGGuider, ModelSamplingSD3, KSamplerSelect, VAELoader, CFGGuider, PathchSageAttentionKJ, HunyuanVideo15SuperResolution, KSamplerSelect, VHS_VideoCombine, LatentUpscaleModelLoader, RandomNoise, RandomNoise, UNETLoader, MarkdownNote, SamplerCustomAdvanced, VAEDecode, SamplerCustomAdvanced, VAEDecode, PathchSageAttentionKJ, DualCLIPLoader, UNETLoader, EmptyHunyuanVideo15Latent, VHS_VideoCombine, BasicScheduler, LoraLoader, CLIPTextEncode, ModelSamplingSD3]
 patterns: [lora]
 missing: []

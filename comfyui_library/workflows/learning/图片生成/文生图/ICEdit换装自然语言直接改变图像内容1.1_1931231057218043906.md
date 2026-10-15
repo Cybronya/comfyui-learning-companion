@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
 hash: 1ef19c537e2cb55f
-coverage: 0.684211
-learned_at: 2026-10-10 20:58:40
+coverage: 0.894737
+learned_at: 2026-10-15 22:26:33
 nodes: [Evaluate Strings, CLIPTextEncode, FluxGuidance, ConditioningZeroOut, InpaintModelConditioning, Text Multiline, Seed Everywhere, EmptyImage, ImageToMask, LayerUtility: ImageScaleByAspectRatio V2, DifferentialDiffusion, FaceAnalysisModels, FaceBoundingBox, ImageResize+, easy makeImageForICLora, PreviewImage, MaskPreview+, VAEDecode, easy imageInsetCrop, PreviewImage, SaveImage, Image Comparer (rgthree), BaiduTranslateNode, UpscaleModelLoader, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PreviewImage, ApplyPulidFlux, UltimateSDUpscale, LoadImage, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, DualCLIPLoader, UNETLoader, PulidFluxModelLoader, KSampler]
 patterns: []
-missing: [Evaluate Strings, LayerUtility: ImageScaleByAspectRatio V2, Text Multiline, easy imageInsetCrop, ImageResize+, MaskPreview+, Seed Everywhere, easy makeImageForICLora]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 975732478488269, "steps": 35}
-discoveries: [次要节点 `Evaluate Strings` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageInsetCrop` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy makeImageForICLora` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/ICEdit换装自然语言直接改变图像内容1.1_1931231057218043906.json
@@ -21,9 +20,11 @@ discoveries: [次要节点 `Evaluate Strings` 知识库中没有该节点类型�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（38 个）：
 - `Evaluate Strings`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `FluxGuidance`
 - `ConditioningZeroOut`
 - `InpaintModelConditioning`
@@ -39,7 +40,7 @@ discoveries: [次要节点 `Evaluate Strings` 知识库中没有该节点类型�
 - `easy makeImageForICLora`
 - `PreviewImage`
 - `MaskPreview+`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy imageInsetCrop`
 - `PreviewImage`
 - `SaveImage`
@@ -53,38 +54,27 @@ discoveries: [次要节点 `Evaluate Strings` 知识库中没有该节点类型�
 - `UltimateSDUpscale`
 - `LoadImage`
 - `VAELoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `DualCLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `PulidFluxModelLoader`
-- `KSampler`
+- `KSampler` ★核心
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `beta`
 - `seed` = `975732478488269`
 - `steps` = `35`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **68%**（26/38）
+覆盖率 **89%**（34/38）
 
-**有卡**：`Evaluate Strings`、`CLIPTextEncode`、`FluxGuidance`、`ConditioningZeroOut`、`InpaintModelConditioning`、`Text Multiline`、`Seed Everywhere`、`EmptyImage`、`ImageToMask`、`LayerUtility: ImageScaleByAspectRatio V2`、`DifferentialDiffusion`、`FaceAnalysisModels`、`FaceBoundingBox`、`ImageResize+`、`easy makeImageForICLora`、`PreviewImage`、`MaskPreview+`、`VAEDecode`、`easy imageInsetCrop`、`SaveImage`、`Image Comparer (rgthree)`、`BaiduTranslateNode`、`UpscaleModelLoader`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`
+**有卡**：`Evaluate Strings`、`CLIPTextEncode`、`FluxGuidance`、`ConditioningZeroOut`、`InpaintModelConditioning`、`Text Multiline`、`Seed Everywhere`、`EmptyImage`、`ImageToMask`、`LayerUtility: ImageScaleByAspectRatio V2`、`DifferentialDiffusion`、`FaceAnalysisModels`、`FaceBoundingBox`、`ImageResize+`、`easy makeImageForICLora`、`MaskPreview+`、`VAEDecode`、`easy imageInsetCrop`、`SaveImage`、`BaiduTranslateNode`、`UpscaleModelLoader`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`ApplyPulidFlux`、`UltimateSDUpscale`、`LoadImage`、`VAELoader`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`UNETLoader`、`PulidFluxModelLoader`、`KSampler`
 
-**缺卡**（8）：`Evaluate Strings`、`LayerUtility: ImageScaleByAspectRatio V2`、`Text Multiline`、`easy imageInsetCrop`、`ImageResize+`、`MaskPreview+`、`Seed Everywhere`、`easy makeImageForICLora`
-
-## 学习发现
-
-- 次要节点 `Evaluate Strings` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageInsetCrop` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy makeImageForICLora` 仅有 LoRA 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage

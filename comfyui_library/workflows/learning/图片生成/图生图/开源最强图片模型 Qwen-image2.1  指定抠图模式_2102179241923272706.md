@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json
 hash: f69ba5cf2ef4eb86
-coverage: 0.666667
-learned_at: 2026-10-10 20:48:17
+coverage: 0.8
+learned_at: 2026-10-15 22:25:52
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, ComfySwitchNode, QwenImage21Cache, 孤海注释, MarkdownNote, Note Plus (mtb), LoadImage, VAEDecode, CR Text, SaveImage, TextEncodeQwenImage21]
 patterns: []
-missing: [CR Text, Note Plus (mtb)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 739076692602264, "steps": 25, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/开源最强图片模型 Qwen-image2.1  指定抠图模式_2102179241923272706.json
@@ -54,15 +53,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **67%**（10/15）
+覆盖率 **80%**（12/15）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`QwenImage21Cache`、`LoadImage`、`VAEDecode`、`SaveImage`、`TextEncodeQwenImage21`
-
-**缺卡**（2）：`CR Text`、`Note Plus (mtb)`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`QwenImage21Cache`、`Note Plus (mtb)`、`LoadImage`、`VAEDecode`、`CR Text`、`SaveImage`、`TextEncodeQwenImage21`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识

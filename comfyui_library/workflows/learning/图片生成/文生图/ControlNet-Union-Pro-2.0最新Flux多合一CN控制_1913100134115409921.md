@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json
 hash: 1c926c8397285146
-coverage: 0.810811
-learned_at: 2026-10-10 21:27:02
+coverage: 0.918919
+learned_at: 2026-10-15 22:26:14
 nodes: [BasicGuider, RandomNoise, KSamplerSelect, BasicScheduler, easy cleanGpuUsed, ControlNetLoader, DualCLIPLoader, VAELoader, SaveImage, VAEDecode, SaveImage, PreviewImage, UNETLoader, CLIPTextEncode, CLIPTextEncode, FluxGuidance, SamplerCustomAdvanced, Text Concatenate, LoraLoaderModelOnly, LayerUtility: ImageScaleByAspectRatio V2, ImageConcanate, ImageConcanate, ShowText|pysssss, LoadImage, LoraLoaderModelOnly, AIO_Preprocessor, SetUnionControlNetType, Note, LoadImage, DownloadAndLoadFlorence2Model, Florence2Run, Text Multiline, RH_Captioner, ControlNetApplyAdvanced, ApplyFBCacheOnModel, VAEEncode, RepeatLatentBatch]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, Text Concatenate, Text Multiline, easy cleanGpuUsed]
+missing: []
 parameters: {"controlnet_strength": 0.8000000000000002}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/ControlNet-Union-Pro-2.0最新Flux多合一CN控制_1913100134115409921.json
@@ -21,32 +20,34 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（37 个）：
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `BasicScheduler`
 - `easy cleanGpuUsed`
 - `ControlNetLoader`
 - `DualCLIPLoader`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `PreviewImage`
-- `UNETLoader`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `FluxGuidance`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `Text Concatenate`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `ImageConcanate`
 - `ImageConcanate`
 - `ShowText|pysssss`
 - `LoadImage`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `AIO_Preprocessor`
 - `SetUnionControlNetType`
 - `Note`
@@ -55,9 +56,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `Florence2Run`
 - `Text Multiline`
 - `RH_Captioner`
-- `ControlNetApplyAdvanced`
+- `ControlNetApplyAdvanced` ★核心
 - `ApplyFBCacheOnModel`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `RepeatLatentBatch`
 
 ## 关键参数
@@ -66,15 +67,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **81%**（30/37）
+覆盖率 **92%**（34/37）
 
-**有卡**：`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`easy cleanGpuUsed`、`ControlNetLoader`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`PreviewImage`、`UNETLoader`、`CLIPTextEncode`、`FluxGuidance`、`SamplerCustomAdvanced`、`Text Concatenate`、`LoraLoaderModelOnly`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageConcanate`、`ShowText|pysssss`、`LoadImage`、`AIO_Preprocessor`、`SetUnionControlNetType`、`Note`、`DownloadAndLoadFlorence2Model`
+**有卡**：`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`easy cleanGpuUsed`、`ControlNetLoader`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`UNETLoader`、`CLIPTextEncode`、`FluxGuidance`、`SamplerCustomAdvanced`、`Text Concatenate`、`LoraLoaderModelOnly`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageConcanate`、`LoadImage`、`AIO_Preprocessor`、`SetUnionControlNetType`、`DownloadAndLoadFlorence2Model`、`Florence2Run`、`Text Multiline`、`RH_Captioner`、`ControlNetApplyAdvanced`、`ApplyFBCacheOnModel`、`VAEEncode`、`RepeatLatentBatch`
 
-**缺卡**（4）：`LayerUtility: ImageScaleByAspectRatio V2`、`Text Concatenate`、`Text Multiline`、`easy cleanGpuUsed`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、LoadImage、ControlNetApplyAdvanced、ControlNetLoader

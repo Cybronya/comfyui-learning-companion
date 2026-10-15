@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 Dasiwa Vdieo Gen 大丝袜 ltx2.3视频生成_2075063498681442305.json
 hash: 26daf72818410762
-coverage: 0.566667
-learned_at: 2026-10-11 20:38:34
+coverage: 0.588889
+learned_at: 2026-10-15 22:44:57
 nodes: [PathchSageAttentionKJ, LTX2_NAG, LTX2SamplingPreviewOverride, GetNode, GetNode, SetNode, VAELoaderKJ, VAELoader, VAELoaderKJ, SetNode, SetNode, SetNode, SetNode, SetNode, LatentUpscaleModelLoader, ModelPatchTorchSettings, SamplerCustomAdvanced, ModelSamplingSD3, KSamplerSelect, BasicScheduler, EmptyLTXVLatentVideo, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, LTXVConditioning, GetNode, GetNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, GetNode, LTXVSeparateAVLatent, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, CLIPTextEncode, SetNode, SetNode, GetNode, VAEDecode, ManualSigmas, LTXVEmptyLatentAudio, SimpleCalculatorKJ, GetNode, GetNode, GetNode, LTXVCropGuides, CFGGuider, CFGGuider, GetNode, LTXVConcatAVLatent, LTXVImgToVideoInplace, Note, UNETLoader, DualCLIPLoader, SetNode, Fast Groups Bypasser (rgthree), Note, easy cleanGpuUsed, llama_cpp_instruct_adv, Note, CLIPTextEncode, Fast Groups Bypasser (rgthree), RandomNoise, GetNode, LTXVLatentUpsampler, llama_cpp_model_loader, ImageResizeKJv2, PrimitiveInt, PrimitiveInt, PrimitiveStringMultiline, VHS_VideoCombine, VHS_VideoCombine, PrimitiveStringMultiline, PrimitiveStringMultiline, ShowText|pysssss, PrimitiveBoolean, LoadImage, PrimitiveStringMultiline, ImageScaleBy, GetImageSize, SetNode, PrimitiveFloat, INTConstant, SimpleCalculatorKJ, SimpleMath+, LoadImage, SaveImage]
 patterns: []
-missing: [SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "height": 24, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 Dasiwa Vdieo Gen 大丝袜 ltx2.3视频生成_2075063498681442305.json
@@ -123,15 +122,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **57%**（51/90）
+覆盖率 **59%**（53/90）
 
-**有卡**：`PathchSageAttentionKJ`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`VAELoaderKJ`、`VAELoader`、`LatentUpscaleModelLoader`、`ModelPatchTorchSettings`、`SamplerCustomAdvanced`、`ModelSamplingSD3`、`KSamplerSelect`、`BasicScheduler`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`ManualSigmas`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`VAEDecode`、`LTXVEmptyLatentAudio`、`SimpleCalculatorKJ`、`LTXVCropGuides`、`CFGGuider`、`UNETLoader`、`DualCLIPLoader`、`llama_cpp_instruct_adv`、`RandomNoise`、`LTXVLatentUpsampler`、`llama_cpp_model_loader`、`ImageResizeKJv2`、`VHS_VideoCombine`、`PrimitiveBoolean`、`LoadImage`、`ImageScaleBy`、`GetImageSize`、`INTConstant`、`SaveImage`
-
-**缺卡**（2）：`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`PathchSageAttentionKJ`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`VAELoaderKJ`、`VAELoader`、`LatentUpscaleModelLoader`、`ModelPatchTorchSettings`、`SamplerCustomAdvanced`、`ModelSamplingSD3`、`KSamplerSelect`、`BasicScheduler`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`ManualSigmas`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`VAEDecode`、`LTXVEmptyLatentAudio`、`SimpleCalculatorKJ`、`LTXVCropGuides`、`CFGGuider`、`UNETLoader`、`DualCLIPLoader`、`easy cleanGpuUsed`、`llama_cpp_instruct_adv`、`RandomNoise`、`LTXVLatentUpsampler`、`llama_cpp_model_loader`、`ImageResizeKJv2`、`VHS_VideoCombine`、`PrimitiveBoolean`、`LoadImage`、`ImageScaleBy`、`GetImageSize`、`INTConstant`、`SimpleMath+`、`SaveImage`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5 首尾帧图生视频+全节点注释_2087729834381373441.json
 hash: 58a1eb7fe598be76
-coverage: 0.434211
-learned_at: 2026-10-11 20:53:38
+coverage: 0.460526
+learned_at: 2026-10-15 22:45:16
 nodes: [SamplerEulerAncestral, LTXVCropGuides, VAEDecodeTiled, LTXVAudioVAEDecode, ComfyMathExpression, ComfyMathExpression, CLIPTextEncode, UNETLoader, VAELoader, VAELoader, CLIPLoader, LTXVSeparateAVLatent, ManualSigmas, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConditioning, LTXVAddGuide, LTXVAddGuide, PrimitiveInt, PrimitiveInt, PrimitiveInt, ResizeImageMaskNode, ResizeImageMaskNode, LTXVPreprocess, VHS_VideoCombine, RandomNoise, LTXVDualCFGGuider, SamplerCustomAdvanced, GetImageSize, LTXVPreprocess, PrimitiveInt, CLIPTextEncode, CR Text, LoadImage, LoadImage, CR Text, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, LoadImage, LoadImage, Note]
 patterns: []
-missing: [CR Text, CR Text]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.5 首尾帧图生视频+全节点注释_2087729834381373441.json
@@ -109,15 +108,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **43%**（33/76）
+覆盖率 **46%**（35/76）
 
-**有卡**：`SamplerEulerAncestral`、`LTXVCropGuides`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ComfyMathExpression`、`CLIPTextEncode`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`LTXVSeparateAVLatent`、`ManualSigmas`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVAddGuide`、`ResizeImageMaskNode`、`LTXVPreprocess`、`VHS_VideoCombine`、`RandomNoise`、`LTXVDualCFGGuider`、`SamplerCustomAdvanced`、`GetImageSize`、`LoadImage`
-
-**缺卡**（2）：`CR Text`、`CR Text`
+**有卡**：`SamplerEulerAncestral`、`LTXVCropGuides`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ComfyMathExpression`、`CLIPTextEncode`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`LTXVSeparateAVLatent`、`ManualSigmas`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVAddGuide`、`ResizeImageMaskNode`、`LTXVPreprocess`、`VHS_VideoCombine`、`RandomNoise`、`LTXVDualCFGGuider`、`SamplerCustomAdvanced`、`GetImageSize`、`CR Text`、`LoadImage`
 
 **用到的条目**：VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、SamplerCustomAdvanced、SamplerEulerAncestral、LTXVDualCFGGuider
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

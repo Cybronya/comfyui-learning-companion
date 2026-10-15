@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan 2.2-Fun-VACE-参考编辑主体替换_1967629207792738305.json
 hash: a2bf3c5dc1ecc5a0
-coverage: 0.942857
-learned_at: 2026-10-10 23:06:08
+coverage: 0.971429
+learned_at: 2026-10-15 22:47:05
 nodes: [TrimVideoLatent, VAEDecode, CLIPTextEncode, VHS_VideoCombine, WanVaceToVideo, ModelSamplingSD3, ModelSamplingSD3, CLIPLoader, InvertMask, MaskToImage, GetImageSize+, VHS_DuplicateMasks, GrowMaskWithBlur, SolidMask, VHS_VideoCombine, PreviewImage, INTConstant, InspyrenetRembg, ImageCompositeMasked, ImageResizeKJv2, KSamplerAdvanced, VAELoader, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_LoadVideo, CLIPTextEncode, LoadImage, Miaoshouai_Tagger]
 patterns: []
-missing: [GetImageSize+]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "sa_solver_pece", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Wan 2.2-Fun-VACE-参考编辑主体替换_1967629207792738305.json
@@ -71,14 +70,8 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 ## 知识
 
-覆盖率 **94%**（33/35）
+覆盖率 **97%**（34/35）
 
-**有卡**：`TrimVideoLatent`、`VAEDecode`、`CLIPTextEncode`、`VHS_VideoCombine`、`WanVaceToVideo`、`ModelSamplingSD3`、`CLIPLoader`、`InvertMask`、`MaskToImage`、`VHS_DuplicateMasks`、`GrowMaskWithBlur`、`SolidMask`、`INTConstant`、`InspyrenetRembg`、`ImageCompositeMasked`、`ImageResizeKJv2`、`KSamplerAdvanced`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`VHS_LoadVideo`、`LoadImage`、`Miaoshouai_Tagger`
-
-**缺卡**（1）：`GetImageSize+`
+**有卡**：`TrimVideoLatent`、`VAEDecode`、`CLIPTextEncode`、`VHS_VideoCombine`、`WanVaceToVideo`、`ModelSamplingSD3`、`CLIPLoader`、`InvertMask`、`MaskToImage`、`GetImageSize+`、`VHS_DuplicateMasks`、`GrowMaskWithBlur`、`SolidMask`、`INTConstant`、`InspyrenetRembg`、`ImageCompositeMasked`、`ImageResizeKJv2`、`KSamplerAdvanced`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`VHS_LoadVideo`、`LoadImage`、`Miaoshouai_Tagger`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_2K高清放大工作流-可在线或线下运行_1951953561489977345.json
 hash: dc3c0ba30a245f00
-coverage: 0.741935
-learned_at: 2026-10-10 20:58:30
+coverage: 0.83871
+learned_at: 2026-10-15 22:26:15
 nodes: [ConditioningZeroOut, VAEDecode, CLIPTextEncode, ImageResizeKJ, Reroute, easy imageListToImageBatch, VAEEncode, TTP_Image_Assy, easy imageBatchToImageList, TTP_Image_Tile_Batch, ImageUpscaleWithModel, SaveImage, CLIPTextEncode, PreviewImage, ImageSmartSharpen+, Image Comparer (rgthree), SaveImage, Image Comparer (rgthree), EmptySD3LatentImage, Fast Groups Muter (rgthree), KSampler, CLIPTextEncode, VAEDecodeTiled, KSampler, TTP_Tile_image_size, UNETLoader, DualCLIPLoader, VAELoader, LoraLoaderModelOnly, UpscaleModelLoader, LoraLoaderModelOnly]
 patterns: []
-missing: [ImageSmartSharpen+, easy imageBatchToImageList, easy imageListToImageBatch]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 2.5, "denoise": 0.30000000000000004, "sampler_name": "euler", "scheduler": "sgm_uniform", "seed": 328338393162286, "steps": 4}
-discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/F.1 Krea [dev] 文生图Lora_TTD极速版_2K高清放大工作流-可在线或线下运行_1951953561489977345.json
@@ -22,20 +22,22 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（31 个）：
 - `ConditioningZeroOut`
-- `VAEDecode`
-- `CLIPTextEncode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `ImageResizeKJ`
 - `Reroute`
 - `easy imageListToImageBatch`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `TTP_Image_Assy`
 - `easy imageBatchToImageList`
 - `TTP_Image_Tile_Batch`
 - `ImageUpscaleWithModel`
 - `SaveImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `PreviewImage`
 - `ImageSmartSharpen+`
 - `Image Comparer (rgthree)`
@@ -43,34 +45,34 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 - `Image Comparer (rgthree)`
 - `EmptySD3LatentImage`
 - `Fast Groups Muter (rgthree)`
-- `KSampler`
-- `CLIPTextEncode`
-- `VAEDecodeTiled`
-- `KSampler`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecodeTiled` ★核心
+- `KSampler` ★核心
 - `TTP_Tile_image_size`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `UpscaleModelLoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 
 ## 关键参数
 
-- `cfg` = `2.5`
-- `denoise` = `0.30000000000000004`
-- `sampler_name` = `euler`
-- `scheduler` = `sgm_uniform`
 - `seed` = `328338393162286`
 - `steps` = `4`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `0.30000000000000004`
 
 ## 知识
 
-覆盖率 **74%**（23/31）
+覆盖率 **84%**（26/31）
 
-**有卡**：`ConditioningZeroOut`、`VAEDecode`、`CLIPTextEncode`、`ImageResizeKJ`、`Reroute`、`easy imageListToImageBatch`、`VAEEncode`、`TTP_Image_Assy`、`easy imageBatchToImageList`、`TTP_Image_Tile_Batch`、`ImageUpscaleWithModel`、`SaveImage`、`PreviewImage`、`ImageSmartSharpen+`、`Image Comparer (rgthree)`、`EmptySD3LatentImage`、`Fast Groups Muter (rgthree)`、`KSampler`、`VAEDecodeTiled`
+**有卡**：`ConditioningZeroOut`、`VAEDecode`、`CLIPTextEncode`、`ImageResizeKJ`、`easy imageListToImageBatch`、`VAEEncode`、`TTP_Image_Assy`、`easy imageBatchToImageList`、`TTP_Image_Tile_Batch`、`ImageUpscaleWithModel`、`SaveImage`、`ImageSmartSharpen+`、`EmptySD3LatentImage`、`KSampler`、`VAEDecodeTiled`、`TTP_Tile_image_size`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UpscaleModelLoader`
 
-**缺卡**（3）：`ImageSmartSharpen+`、`easy imageBatchToImageList`、`easy imageListToImageBatch`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、UNETLoader、VAEDecodeTiled
 
 ## 参数体检
 
@@ -79,7 +81,4 @@ discoveries: [次要节点 `ImageSmartSharpen+` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

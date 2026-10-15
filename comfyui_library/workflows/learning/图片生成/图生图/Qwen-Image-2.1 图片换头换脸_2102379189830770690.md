@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-Image-2.1 图片换头换脸_2102379189830770690.json
 hash: 9d5014d9dda87cca
 coverage: 0.882353
-learned_at: 2026-10-10 20:48:09
+learned_at: 2026-10-15 22:25:23
 nodes: [QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, EmptyLatentImage, TextGenerateLTX2Prompt, BatchImagesNode, ComfySwitchNode, VAEDecode, LoadImage, LoadImage, KSampler, VAELoader, CLIPLoader, UNETLoader, SaveImage, ResolutionSelector, JjkText]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-image +Controlnet-union加速工作流_1966880594737106946.json
 hash: 0cfccb6c08b51133
 coverage: 0.941176
-learned_at: 2026-10-10 20:58:48
+learned_at: 2026-10-15 22:26:52
 nodes: [VAEDecode, SetUnionControlNetType, CLIPTextEncode, ControlNetApplyAdvanced, CLIPLoader, CLIPTextEncode, EmptySD3LatentImage, VAELoader, SaveImage, ControlNetLoader, AIO_Preprocessor, NunchakuQwenImageDiTLoader, GLM_Vision_ImageToPrompt, ModelSamplingAuraFlow, KSampler, PreviewImage, LoadImage]
 patterns: []
 missing: []
@@ -22,13 +22,15 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（17 个）：
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetUnionControlNetType`
-- `CLIPTextEncode`
-- `ControlNetApplyAdvanced`
+- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced` ★核心
 - `CLIPLoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `EmptySD3LatentImage`
 - `VAELoader`
 - `SaveImage`
@@ -37,25 +39,27 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `NunchakuQwenImageDiTLoader`
 - `GLM_Vision_ImageToPrompt`
 - `ModelSamplingAuraFlow`
-- `KSampler`
+- `KSampler` ★核心
 - `PreviewImage`
 - `LoadImage`
 
 ## 关键参数
 
-- `cfg` = `1`
 - `controlnet_strength` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `710000615240506`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **94%**（16/17）
 
-**有卡**：`VAEDecode`、`SetUnionControlNetType`、`CLIPTextEncode`、`ControlNetApplyAdvanced`、`CLIPLoader`、`EmptySD3LatentImage`、`VAELoader`、`SaveImage`、`ControlNetLoader`、`AIO_Preprocessor`、`NunchakuQwenImageDiTLoader`、`GLM_Vision_ImageToPrompt`、`ModelSamplingAuraFlow`、`KSampler`、`PreviewImage`
+**有卡**：`VAEDecode`、`SetUnionControlNetType`、`CLIPTextEncode`、`ControlNetApplyAdvanced`、`CLIPLoader`、`EmptySD3LatentImage`、`VAELoader`、`SaveImage`、`ControlNetLoader`、`AIO_Preprocessor`、`NunchakuQwenImageDiTLoader`、`GLM_Vision_ImageToPrompt`、`ModelSamplingAuraFlow`、`KSampler`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
 
 ## 参数体检
 

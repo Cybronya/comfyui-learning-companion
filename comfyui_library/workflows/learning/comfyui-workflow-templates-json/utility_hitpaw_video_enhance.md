@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_hitpaw_v
 hash: 47308327badbdd4b
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:44
+learned_at: 2026-10-15 22:24:57
 nodes: [SaveVideo, LoadVideo, HitPawVideoEnhance]
 patterns: []
 missing: []

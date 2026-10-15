@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/最新LTX 2.3  文生视频工作流 智能自动扩写提示词_2031229319539859458.json
 hash: b4eb5c70d2073fc2
-coverage: 0.823529
-learned_at: 2026-10-11 03:16:52
+coverage: 0.862745
+learned_at: 2026-10-15 22:48:48
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, LTXVCropGuides, ComfyMathExpression, EmptyLTXVLatentVideo, ComfyMathExpression, PrimitiveBoolean, LTXVConcatAVLatent, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LTXVLatentUpsampler, Reroute, CLIPTextEncode, VAELoader, VAELoaderKJ, DualCLIPLoader, UNETLoader, CFGGuider, KSamplerSelect, Display Any (rgthree), ComfyMathExpression, LTXVPreprocess, LTXVImgToVideoInplace, LTXVImgToVideoInplace, PrimitiveInt, SamplerCustomAdvanced, LTXVSeparateAVLatent, CreateVideo, LatentUpscaleModelLoader, ManualSigmas, ResizeImagesByLongerEdge, ResizeImageMaskNode, SimpleMath+, PrimitiveInt, PrimitiveInt, LTXVAudioVAEDecode, LoraLoaderModelOnly, PathchSageAttentionKJ, LTXVConditioning, SamplerCustomAdvanced, VAEDecodeTiled, PrimitiveStringMultiline, ShowText|pysssss, PrimitiveInt, RH_LLMAPI_Pro_Node, CLIPTextEncode, VHS_VideoCombine]
 patterns: []
-missing: [Display Any (rgthree), SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/最新LTX 2.3  文生视频工作流 智能自动扩写提示词_2031229319539859458.json
@@ -84,15 +83,8 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **82%**（42/51）
+覆盖率 **86%**（44/51）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVCropGuides`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`PrimitiveBoolean`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CLIPTextEncode`、`VAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`LTXVPreprocess`、`LTXVImgToVideoInplace`、`SamplerCustomAdvanced`、`CreateVideo`、`LatentUpscaleModelLoader`、`ResizeImagesByLongerEdge`、`ResizeImageMaskNode`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LTXVConditioning`、`VAEDecodeTiled`、`RH_LLMAPI_Pro_Node`、`VHS_VideoCombine`
-
-**缺卡**（2）：`Display Any (rgthree)`、`SimpleMath+`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVCropGuides`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`PrimitiveBoolean`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CLIPTextEncode`、`VAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`Display Any (rgthree)`、`LTXVPreprocess`、`LTXVImgToVideoInplace`、`SamplerCustomAdvanced`、`CreateVideo`、`LatentUpscaleModelLoader`、`ResizeImagesByLongerEdge`、`ResizeImageMaskNode`、`SimpleMath+`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LTXVConditioning`、`VAEDecodeTiled`、`RH_LLMAPI_Pro_Node`、`VHS_VideoCombine`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

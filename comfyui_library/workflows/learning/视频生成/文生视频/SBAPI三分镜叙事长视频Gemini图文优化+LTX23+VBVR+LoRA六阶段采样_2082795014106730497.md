@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json
 hash: 3ee5a201c19a9eeb
-coverage: 0.781095
-learned_at: 2026-10-10 23:05:14
+coverage: 0.840796
+learned_at: 2026-10-15 22:46:54
 nodes: [KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RandomNoise, CFGGuider, SamplerCustomAdvanced, KSamplerSelect, CFGGuider, ManualSigmas, LTXVConcatAVLatent, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXAVTextEncoderLoader, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSeparateAVLatent, LTXVConcatAVLatent, RandomNoise, easy showAnything, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LTXVPreprocess, LTXVPreprocess, LTXVPreprocess, LTXVAddGuideMulti, VAEDecodeTiled, PrimitiveNode, PrimitiveNode, PrimitiveNode, easy mathInt, CFGGuider, VAEDecodeTiled, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVConcatAVLatent, ManualSigmas, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, RandomNoise, LTXVEmptyLatentAudio, CFGGuider, LTXVSeparateAVLatent, RandomNoise, EmptyLTXVLatentVideo, LTXVPreprocess, ResizeLongestToNode, image_scale_pixel_v2, LTXAVTextEncoderLoader, CM_FloatToInt, ImageResizeKJv2, PrimitiveFloat, CM_FloatToInt, EmptyLTXVLatentVideo, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVConditioning, LTXVAddGuideMulti, LTXVAddGuideMulti, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, LTXVAudioVAEDecode, VHS_MergeImages, AudioConcat, SamplerCustomAdvanced, ImageResizeKJv2, PrimitiveInt, LTXVAddGuideMulti, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, JWStringGetLine, 1hew_ImageGridSplit, 1hew_ImageGridSplit, 1hew_ImageGridSplit, 1hew_ImageGridSplit, JWStringGetLine, ShowText, JjkConcat, ShowText, easy saveText, RH_LLMAPI_Pro_Node, easy saveText, ShowText, ShowText, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, JWImageSequenceExtractFromBatch, easy mathInt, easy mathInt, 1hew_ImageGridSplit, JWImageSequenceExtractFromBatch, LTXVAudioVAEDecode, LoadImage, PrimitiveNode, PrimitiveNode, LTXVAddGuideMulti, PrimitiveFloat, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, RandomNoise, LTXVConditioning, LTXVPreprocess, LTXVPreprocess, ImageResizeKJv2, LTXVPreprocess, LTXVPreprocess, ImageResizeKJv2, LTXVPreprocess, LTXVLatentUpsampler, LTXVSeparateAVLatent, PreviewImage, 1hew_ImageGridSplit, 1hew_ImageGridSplit, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, LTXVLatentUpsampler, DisTorchPurgeVRAMV2, DisTorchPurgeVRAMV2, LTXVLatentUpsampler, ResizeLongestToNode, LTXVSeparateAVLatent, PrimitiveInt, DF_Integer, DF_Integer, PrimitiveFloat, easy mathInt, GetImageSize+, GetImageSize+, LTXVAddGuideMulti, LTXVConcatAVLatent, LTXVLatentUpsampler, image_scale_pixel_v2, PrimitiveNode, LTXVEmptyLatentAudio, easy showAnything, ShowText, VHS_VideoCombine, LoraLoaderModelOnly, PrimitiveNode, LTXVAddGuideMulti, easy mathInt, JWInteger, RH_Nano_Banana2_Gemini31Flash, JWInteger, easy mathInt, easy mathInt, CLIPTextEncode, RH_LLMAPI_Pro_Node, PreviewImage, string_util_StrFind, JjkConcat, If ANY execute A else B, JWStringGetLine, JWStringSplit, RH_LLMAPI_Pro_Node, TextBoxMira, TextBoxMira, PrimitiveNode, PrimitiveNode, PrimitiveFloat, PrimitiveFloat, LTXVAudioVAELoader, LatentUpscaleModelLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, VHS_VideoCombine, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: []
-missing: [If ANY execute A else B, easy mathInt, easy mathInt, easy mathInt, easy mathInt, easy mathInt, easy mathInt, easy mathInt, GetImageSize+, GetImageSize+, easy saveText, easy saveText]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `If ANY execute A else B` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/SBAPI三分镜叙事长视频Gemini图文优化+LTX23+VBVR+LoRA六阶段采样_2082795014106730497.json
@@ -235,25 +234,8 @@ discoveries: [次要节点 `If ANY execute A else B` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **78%**（157/201）
+覆盖率 **84%**（169/201）
 
-**有卡**：`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXAVTextEncoderLoader`、`LTXVLatentUpsampler`、`ImageResizeKJv2`、`LTXVPreprocess`、`LTXVAddGuideMulti`、`VAEDecodeTiled`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ResizeLongestToNode`、`image_scale_pixel_v2`、`CM_FloatToInt`、`LTXVConditioning`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`VHS_MergeImages`、`AudioConcat`、`JWStringGetLine`、`1hew_ImageGridSplit`、`ShowText`、`JjkConcat`、`RH_LLMAPI_Pro_Node`、`ImageSizeInfo`、`JWImageSequenceExtractFromBatch`、`LoadImage`、`DisTorchPurgeVRAMV2`、`DF_Integer`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`JWInteger`、`RH_Nano_Banana2_Gemini31Flash`、`string_util_StrFind`、`JWStringSplit`、`TextBoxMira`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`
-
-**缺卡**（12）：`If ANY execute A else B`、`easy mathInt`、`easy mathInt`、`easy mathInt`、`easy mathInt`、`easy mathInt`、`easy mathInt`、`easy mathInt`、`GetImageSize+`、`GetImageSize+`、`easy saveText`、`easy saveText`
+**有卡**：`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXAVTextEncoderLoader`、`LTXVLatentUpsampler`、`ImageResizeKJv2`、`LTXVPreprocess`、`LTXVAddGuideMulti`、`VAEDecodeTiled`、`easy mathInt`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ResizeLongestToNode`、`image_scale_pixel_v2`、`CM_FloatToInt`、`LTXVConditioning`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`VHS_MergeImages`、`AudioConcat`、`JWStringGetLine`、`1hew_ImageGridSplit`、`ShowText`、`JjkConcat`、`easy saveText`、`RH_LLMAPI_Pro_Node`、`ImageSizeInfo`、`JWImageSequenceExtractFromBatch`、`LoadImage`、`DisTorchPurgeVRAMV2`、`DF_Integer`、`GetImageSize+`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`JWInteger`、`RH_Nano_Banana2_Gemini31Flash`、`string_util_StrFind`、`If ANY execute A else B`、`JWStringSplit`、`TextBoxMira`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `If ANY execute A else B` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明

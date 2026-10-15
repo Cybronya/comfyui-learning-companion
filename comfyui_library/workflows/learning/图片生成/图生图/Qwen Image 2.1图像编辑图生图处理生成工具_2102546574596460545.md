@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json
 hash: 5cefc1350d27200f
-coverage: 0.758621
-learned_at: 2026-10-10 20:48:06
+coverage: 0.775862
+learned_at: 2026-10-15 22:25:13
 nodes: [VAEDecode, Reroute, LoadImage, 图像缩放V2_孤海, UNETLoader, CLIPLoader, VAELoader, DF_Text_Box, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, GH_ImageVideoComparer, Reroute, Reroute, Reroute, Reroute, EmptyLatentImage, ImpactMinMax, QwenImage21Cache, KSampler, Reroute, Reroute, Reroute, Reroute, GoohaiRatioAndResolution, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [图像缩放V2_孤海]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1图像编辑图生图处理生成工具_2102546574596460545.json
@@ -100,11 +100,9 @@ discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **76%**（44/58）
+覆盖率 **78%**（45/58）
 
-**有卡**：`VAEDecode`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`DF_Text_Box`、`TextEncodeQwenImage21`、`GH_ImageVideoComparer`、`EmptyLatentImage`、`ImpactMinMax`、`QwenImage21Cache`、`KSampler`、`GoohaiRatioAndResolution`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`图像缩放V2_孤海`
+**有卡**：`VAEDecode`、`LoadImage`、`图像缩放V2_孤海`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`DF_Text_Box`、`TextEncodeQwenImage21`、`GH_ImageVideoComparer`、`EmptyLatentImage`、`ImpactMinMax`、`QwenImage21Cache`、`KSampler`、`GoohaiRatioAndResolution`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -115,5 +113,4 @@ discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点�
 
 ## 学习发现
 
-- 次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

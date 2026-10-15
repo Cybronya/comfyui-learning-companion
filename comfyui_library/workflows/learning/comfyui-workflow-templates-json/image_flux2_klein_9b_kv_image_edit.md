@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json
 hash: 23cb1b1d9a0f7851
 official: true
-coverage: 0.826087
-learned_at: 2026-10-10 22:47:35
+coverage: 0.913043
+learned_at: 2026-10-15 22:24:53
 nodes: [KSamplerSelect, UNETLoader, CLIPLoader, CFGGuider, VAELoader, CLIPTextEncode, FluxKVCache, SamplerCustomAdvanced, RandomNoise, VAEDecode, SaveImage, ConditioningZeroOut, Flux2Scheduler, EmptyFlux2LatentImage, GetImageSize, ImageScaleToTotalPixels, ImageScaleToTotalPixels, LoadImage, LoadImage, 27eacb9f-0da2-421d-a0bf-b4b4e5fe5709, MarkdownNote, MarkdownNote, 93041a64-452a-477a-9447-40330b7c1136]
 patterns: []
-missing: [27eacb9f-0da2-421d-a0bf-b4b4e5fe5709, 93041a64-452a-477a-9447-40330b7c1136]
-discoveries: [次要节点 `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` 知识库中没有该节点类型的任何知识, 次要节点 `93041a64-452a-477a-9447-40330b7c1136` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_flux2_klein_9b_kv_image_edit.json
@@ -50,15 +49,8 @@ discoveries: [次要节点 `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` 知识库中�
 
 ## 知识
 
-覆盖率 **83%**（19/23）
+覆盖率 **91%**（21/23）
 
-**有卡**：`KSamplerSelect`、`UNETLoader`、`CLIPLoader`、`CFGGuider`、`VAELoader`、`CLIPTextEncode`、`FluxKVCache`、`SamplerCustomAdvanced`、`RandomNoise`、`VAEDecode`、`SaveImage`、`ConditioningZeroOut`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`GetImageSize`、`ImageScaleToTotalPixels`、`LoadImage`
-
-**缺卡**（2）：`27eacb9f-0da2-421d-a0bf-b4b4e5fe5709`、`93041a64-452a-477a-9447-40330b7c1136`
+**有卡**：`KSamplerSelect`、`UNETLoader`、`CLIPLoader`、`CFGGuider`、`VAELoader`、`CLIPTextEncode`、`FluxKVCache`、`SamplerCustomAdvanced`、`RandomNoise`、`VAEDecode`、`SaveImage`、`ConditioningZeroOut`、`Flux2Scheduler`、`EmptyFlux2LatentImage`、`GetImageSize`、`ImageScaleToTotalPixels`、`LoadImage`、`27eacb9f-0da2-421d-a0bf-b4b4e5fe5709`、`93041a64-452a-477a-9447-40330b7c1136`
 
 **用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage、CFGGuider
-
-## 学习发现
-
-- 次要节点 `27eacb9f-0da2-421d-a0bf-b4b4e5fe5709` 知识库中没有该节点类型的任何知识
-- 次要节点 `93041a64-452a-477a-9447-40330b7c1136` 知识库中没有该节点类型的任何知识

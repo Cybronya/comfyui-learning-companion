@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2 T2V 超级加速文生图工作流_1969678776999288833.json
 hash: b26559ffb51e315e
-coverage: 0.875
-learned_at: 2026-10-10 20:59:27
+coverage: 1
+learned_at: 2026-10-15 22:27:57
 nodes: [UNETLoader, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, LoraLoaderModelOnly, KSamplerAdvanced, LoraLoaderModelOnly, KSamplerAdvanced, CR Text Concatenate, LoraLoaderModelOnly, ImpactInt, ImpactInt, CLIPTextEncode, CLIPTextEncode, EmptyHunyuanLatentVideo, CLIPLoader, VAELoader, VAEDecode, CR Text, CR Text, SaveImage]
 patterns: []
-missing: [CR Text, CR Text, CR Text Concatenate]
+missing: []
 parameters: {"cfg": 12, "denoise": "bong_tangent", "sampler_name": 1, "scheduler": "res_2s", "seed": "disable", "steps": "randomize"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/wan2.2 T2V 超级加速文生图工作流_1969678776999288833.json
@@ -21,51 +20,47 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（24 个）：
-- `UNETLoader`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `LoraLoaderModelOnly`
-- `KSamplerAdvanced`
-- `LoraLoaderModelOnly`
-- `KSamplerAdvanced`
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
 - `CR Text Concatenate`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `ImpactInt`
 - `ImpactInt`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `EmptyHunyuanLatentVideo`
 - `CLIPLoader`
 - `VAELoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CR Text`
 - `CR Text`
 - `SaveImage`
 
 ## 关键参数
 
-- `cfg` = `12`
-- `denoise` = `bong_tangent`
-- `sampler_name` = `1`
-- `scheduler` = `res_2s`
 - `seed` = `disable`
 - `steps` = `randomize`
+- `cfg` = `12`
+- `sampler_name` = `1`
+- `scheduler` = `res_2s`
+- `denoise` = `bong_tangent`
 
 ## 知识
 
-覆盖率 **88%**（21/24）
+覆盖率 **100%**（24/24）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`CR Text Concatenate`、`ImpactInt`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`CLIPLoader`、`VAELoader`、`VAEDecode`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`CR Text Concatenate`、`ImpactInt`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`CR Text`、`SaveImage`
 
-**缺卡**（3）：`CR Text`、`CR Text`、`CR Text Concatenate`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

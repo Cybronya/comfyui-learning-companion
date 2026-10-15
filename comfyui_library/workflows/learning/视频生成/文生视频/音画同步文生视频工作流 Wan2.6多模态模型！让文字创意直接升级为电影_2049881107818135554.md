@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/音画同步文生视频工作流 Wan2.6多模态模型！让文字创意直接升级为电影_2049881107818135554.json
 hash: d00dc0f7d403dd5b
 coverage: 0.666667
-learned_at: 2026-10-11 19:49:51
+learned_at: 2026-10-15 22:49:06
 nodes: [JjkText, RH_Wan26_T2V, SaveVideo]
 patterns: []
 missing: []

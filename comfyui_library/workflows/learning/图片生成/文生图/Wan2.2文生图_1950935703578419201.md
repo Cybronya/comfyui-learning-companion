@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图_1950935703578419201.json
 hash: 13d22196a250a100
 coverage: 0.944444
-learned_at: 2026-10-10 20:59:14
+learned_at: 2026-10-15 22:27:36
 nodes: [VAEDecode, CLIPLoader, VAELoader, KSamplerAdvanced, KSamplerAdvanced, LoraLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoader, LoraLoader, LoraLoaderModelOnly, SaveImage, CLIPTextEncode, CLIPTextEncode, EmptyHunyuanLatentVideo, Note, UNETLoader, UNETLoader]
 patterns: [lora]
 missing: []
@@ -20,42 +20,46 @@ parameters: {"cfg": 8, "denoise": "simple", "lora_name": "Wan21_T2V_14B_lightx2v
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（18 个）：
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `KSamplerAdvanced`
-- `KSamplerAdvanced`
-- `LoraLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoader`
-- `LoraLoader`
-- `LoraLoaderModelOnly`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoraLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `SaveImage`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `EmptyHunyuanLatentVideo`
 - `Note`
-- `UNETLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `cfg` = `8`
-- `denoise` = `simple`
-- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
-- `sampler_name` = `1`
-- `scheduler` = `euler`
 - `seed` = `enable`
 - `steps` = `fixed`
-- `strength_clip` = `0.6000000000000001`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+- `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
 - `strength_model` = `0.6000000000000001`
+- `strength_clip` = `0.6000000000000001`
 
 ## 知识
 
 覆盖率 **94%**（17/18）
 
-**有卡**：`VAEDecode`、`CLIPLoader`、`VAELoader`、`KSamplerAdvanced`、`LoraLoader`、`LoraLoaderModelOnly`、`SaveImage`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`Note`、`UNETLoader`
+**有卡**：`VAEDecode`、`CLIPLoader`、`VAELoader`、`KSamplerAdvanced`、`LoraLoader`、`LoraLoaderModelOnly`、`SaveImage`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`UNETLoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

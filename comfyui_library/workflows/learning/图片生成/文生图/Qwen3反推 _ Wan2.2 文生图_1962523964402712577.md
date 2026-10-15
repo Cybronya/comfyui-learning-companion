@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
 hash: 0843f43be4527d7c
-coverage: 0.714286
-learned_at: 2026-10-10 20:59:07
+coverage: 0.857143
+learned_at: 2026-10-15 22:27:24
 nodes: [UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, VAEDecode, SaveImage, SaveImage, SaveImage, VAEDecode, VAEDecode, VAEDecode, KSampler, KSampler, KSampler, KSampler, LoraLoaderModelOnly, SaveImage, Text Concatenate (JPS), Anything Everywhere, CLIPLoader, VAELoader, EmptyLatentImage, Anything Everywhere3, Mute / Bypass Repeater (rgthree), JjkText, Reroute, CLIPTextEncode, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), ShowText|pysssss, RH_Captioner_Pro, CLIPTextEncode, Fast Bypasser (rgthree), LoadImage]
 patterns: [text_to_image]
-missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Text Concatenate (JPS)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 510662276037286, "steps": 8, "width": 1024}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen3反推 _ Wan2.2 文生图_1962523964402712577.json
@@ -22,40 +22,42 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（35 个）：
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode`
-- `VAEDecode`
-- `VAEDecode`
-- `KSampler`
-- `KSampler`
-- `KSampler`
-- `KSampler`
-- `LoraLoaderModelOnly`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `SaveImage`
 - `Text Concatenate (JPS)`
 - `Anything Everywhere`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `Anything Everywhere3`
 - `Mute / Bypass Repeater (rgthree)`
 - `JjkText`
 - `Reroute`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Mute / Bypass Repeater (rgthree)`
 - `Fast Bypasser (rgthree)`
 - `ShowText|pysssss`
 - `RH_Captioner_Pro`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Fast Bypasser (rgthree)`
 - `LoadImage`
 
@@ -63,23 +65,23 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1536`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
 - `seed` = `510662276037286`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1536`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **71%**（25/35）
+覆盖率 **86%**（30/35）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`Text Concatenate (JPS)`、`Anything Everywhere`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`Anything Everywhere3`、`Mute / Bypass Repeater (rgthree)`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`Text Concatenate (JPS)`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`Mute / Bypass Repeater (rgthree)`、`CLIPTextEncode`、`Fast Bypasser (rgthree)`、`RH_Captioner_Pro`、`LoadImage`
 
-**缺卡**（5）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Text Concatenate (JPS)`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 
@@ -91,11 +93,6 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 学习发现
 
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

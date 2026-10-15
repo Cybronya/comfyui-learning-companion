@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3数字人文生图生+高清放大_2039963424049860609.json
 hash: f2b29c7c1d1825e1
-coverage: 0.723684
-learned_at: 2026-10-11 19:49:39
+coverage: 0.789474
+learned_at: 2026-10-15 22:45:09
 nodes: [KSamplerSelect, Reroute, INTConstant, INTConstant, Reroute, CFGGuider, RandomNoise, INTConstant, INTConstant, SetNode, PreviewAudio, LTXVAudioVAEEncode, GetNode, SolidMask, SamplerCustomAdvanced, LTXVCropGuides, PrimitiveBoolean, LoadImage, CR Text, SetNode, CheckpointLoaderSimple, LTXVAudioVAELoader, SetNode, SetLatentNoiseMask, LTX2SamplingPreviewOverride, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, BasicScheduler, LTXVConditioning, PathchSageAttentionKJ, CLIPTextEncode, LTXVConcatAVLatent, GetNode, LTXVImgToVideoInplace, LTXVPreprocess, LTX2_NAG, LTXVSeparateAVLatent, LTXVLatentUpsampler, GetNode, LatentUpscaleModelLoader, LTXVImgToVideoInplace, LTXVConcatAVLatent, KSampler, LTXVSeparateAVLatent, GetNode, VAEDecodeTiled, ImageSharpen, GetNode, SimpleMath+, SimpleMath+, easy showAnything, INTConstant, SimpleMath+, ResizeImageMaskNode, ResizeImagesByLongerEdge, VHS_VideoCombine, EmptyLTXVLatentVideo, SetNode, SeedVR2LoadVAEModel, VHS_VideoInfo, INTConstant, ImageScaleToTotalPixels, Note, Note, SeedVR2LoadDiTModel, VHS_VideoCombine, VHS_LoadVideo, Note, SeedVR2VideoUpscaler, MemoryCleaner, CM_FloatToInt, VHS_LoadAudioUpload, LTXAVTextEncoderLoader, easy cleanGpuUsed, Fast Groups Bypasser (rgthree)]
 patterns: []
-missing: [CR Text, SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 parameters: {"cfg": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "denoise": 0.4, "sampler_name": "euler", "scheduler": "simple", "seed": 868703346938759, "steps": 4}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
 # 视频生成/文生视频/LTX2.3数字人文生图生+高清放大_2039963424049860609.json
@@ -114,11 +114,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **72%**（55/76）
+覆盖率 **79%**（60/76）
 
-**有卡**：`KSamplerSelect`、`INTConstant`、`CFGGuider`、`RandomNoise`、`PreviewAudio`、`LTXVAudioVAEEncode`、`SolidMask`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`PrimitiveBoolean`、`LoadImage`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`SetLatentNoiseMask`、`LTX2SamplingPreviewOverride`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`BasicScheduler`、`LTXVConditioning`、`PathchSageAttentionKJ`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`LTX2_NAG`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`KSampler`、`VAEDecodeTiled`、`ImageSharpen`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`VHS_VideoCombine`、`EmptyLTXVLatentVideo`、`SeedVR2LoadVAEModel`、`VHS_VideoInfo`、`ImageScaleToTotalPixels`、`SeedVR2LoadDiTModel`、`VHS_LoadVideo`、`SeedVR2VideoUpscaler`、`MemoryCleaner`、`CM_FloatToInt`、`VHS_LoadAudioUpload`、`LTXAVTextEncoderLoader`
-
-**缺卡**（5）：`CR Text`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`KSamplerSelect`、`INTConstant`、`CFGGuider`、`RandomNoise`、`PreviewAudio`、`LTXVAudioVAEEncode`、`SolidMask`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`PrimitiveBoolean`、`LoadImage`、`CR Text`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`SetLatentNoiseMask`、`LTX2SamplingPreviewOverride`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`BasicScheduler`、`LTXVConditioning`、`PathchSageAttentionKJ`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`LTX2_NAG`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`KSampler`、`VAEDecodeTiled`、`ImageSharpen`、`SimpleMath+`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`VHS_VideoCombine`、`EmptyLTXVLatentVideo`、`SeedVR2LoadVAEModel`、`VHS_VideoInfo`、`ImageScaleToTotalPixels`、`SeedVR2LoadDiTModel`、`VHS_LoadVideo`、`SeedVR2VideoUpscaler`、`MemoryCleaner`、`CM_FloatToInt`、`VHS_LoadAudioUpload`、`LTXAVTextEncoderLoader`、`easy cleanGpuUsed`
 
 **用到的条目**：KSampler、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
 
@@ -130,10 +128,5 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

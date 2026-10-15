@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_interpol
 hash: 65493061d970f172
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:49:47
+learned_at: 2026-10-15 22:24:57
 nodes: [LoadImage, ImageScaleBy, SaveImage, ImageCompare, MarkdownNote]
 patterns: []
 missing: []

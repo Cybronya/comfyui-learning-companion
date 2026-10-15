@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Bernini+Ltx2.3+PR导演短剧分镜台 多参考 对话时序控制 分镜扩展_2076389200764694530.json
 hash: 24ce32d332671464
-coverage: 0.507812
-learned_at: 2026-10-11 20:38:32
+coverage: 0.578125
+learned_at: 2026-10-15 22:44:04
 nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTX2AttentionTunerPatch, GetNode, SetNode, GetNode, GetNode, VAELoader, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, GetNode, GetNode, LTXVCropGuides, GetNode, SetNode, SetNode, CFGGuider, ManualSigmas, RandomNoise, GetNode, GetNode, GetNode, PathchSageAttentionKJ, LTXVSetAudioRefTokens, LTXVCropGuides, LTXVLatentUpsampler, LatentUpscaleModelLoader, DualCLIPLoader, VAELoaderKJ, VAELoader, PrimitiveStringMultiline, GetNode, LTXVSeparateAVLatent, GetNode, VAEDecodeTiled, LTXVAudioVAEDecode, GetNode, SetNode, VAEDecode, CLIPTextEncode, VAELoader, Reroute, CreateVideo, LTXVSeparateAVLatent, SetNode, GetNode, GetNode, ComfyMathExpression, SetNode, SetNode, SetNode, SetNode, CLIPTextEncode, LTXVAudioVAEDecode, VAEDecodeTiled, easy batchAnything, RandomNoise, GetNode, GetNode, LTXVPreprocess, SetNode, LazySwitchKJ, GetImageSizeAndCount, SetNode, SetNode, LoraLoaderModelOnly, KSamplerSelect, ResizeImagesByLongerEdge, GetNode, ComfyMathExpression, SetNode, GetNode, SetNode, SetNode, GetImageRangeFromBatch, easy cleanGpuUsed, MathExpression|pysssss, VHS_GetImageCount, SimpleCalculatorKJ, GetVideoComponents, ImageScaleToTotalPixels, easy batchAnything, GetNode, CreateVideo, easy forLoopStart, easy showAnything, easy imagesSplitImage, ComfySwitchNode, SetNode, PrimitiveFloat, SetNode, SetNode, INTConstant, PrimitiveBoolean, EmptyAudio, SetNode, GetNode, BatchImagesNode, BerniniPromptEnhancer, Remove Text, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, StringReplace, StringReplace, EmptyAudio, StringReplace, SaveVideo, UNETLoader, PreviewAny, UNETLoader, KSamplerSelect, LTXVChunkFeedForward, SetNode, AudioConcat, easy forLoopEnd, PreviewAny, TTP_text_mix, RH_LLMAPI_NODE, easy timelineSegmentCount, KSamplerAdvanced, KSamplerAdvanced, Remove Text, BerniniConditioning, GetNode, VAEEncode, GetNode, SetNode, GetNode, ComfyMathExpression, SetNode, GetImageSizeAndCount, ResizeImageMaskNode, GetImageSizeAndCount, ResizeImageMaskNode, Reroute, Reroute, Reroute, Reroute, Reroute, Bool, SamplerCustomAdvanced, LTX2_NAG, GetNode, BasicScheduler, GetNode, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, SetNode, SetNode, LoraLoaderModelOnly, SetNode, VAELoader, MathExpression|pysssss, MathExpression|pysssss, MaxNode, TextInput_, CLIPLoader, TTP_text_mix, PromptRelayEncode, ConditioningZeroOut, EmptyHunyuanLatentVideo, GetNode, Reroute, GetNode, CLIPTextEncode, Reroute, CLIPTextEncode, Reroute, TextGenerateLTX2Prompt, GetNode, StringConcatenate, GetNode, GetNode, LTXAddVideoICLoRAGuide, CFGGuider, GetNode, ConditioningZeroOut, ComfySwitchNode, Reroute, PreviewAny, LTXVConditioning, GetImageRangeFromBatch, SetNode, easy showAnything, LTXAddVideoICLoRAGuide, Reroute, SetNode, Reroute, SamplerCustomAdvanced, Any To Any, GetImageSize, SimpleCalculatorKJ, VHS_VideoCombine, StringReplace, Remove Text, CR Prompt Text, VHS_SelectFilename, Qwen3_VQA, PreviewAny, easy timelineSegmentOutput, VHS_VideoCombine, VHS_VideoCombine, PromptRelayEncode, VHS_VideoCombine, SaveVideo, Note, LTXAddVideoICLoRAGuide, LoraLoaderModelOnly, GetNode, GetImageSizeAndCount, ResizeImageMaskNode, GetNode, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVAddLatentGuide, GetImageSizeAndCount, ComfyMathExpression, ComfyMathExpression, LTXVAudioVideoMask, SetNode, ResizeImagesByLongerEdge, INTConstant, LTXVSetAudioRefTokens, PromptRelayEncode, ImageResizeKJv2, SetNode, LTX2SamplingPreviewOverride, LoraLoaderModelOnly, LoraLoaderModelOnly, TextInput_, PreviewAudio, PreviewImage, easy timelineEditor, PreviewAny, easy timelineInfoOutput]
 patterns: []
-missing: [Any To Any, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, Remove Text, Remove Text, Remove Text, easy batchAnything, easy batchAnything, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imagesSplitImage, easy timelineEditor, easy timelineSegmentCount, CR Prompt Text, easy timelineInfoOutput, easy timelineSegmentOutput]
+missing: []
 parameters: {"batch_size": 1, "cfg": 10, "denoise": "simple", "height": 25, "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize", "width": 97}
-discoveries: [次要节点 `Any To Any` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Remove Text` 知识库中没有该节点类型的任何知识, 次要节点 `Remove Text` 知识库中没有该节点类型的任何知识, 次要节点 `Remove Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy imagesSplitImage` 知识库中没有该节点类型的任何知识, 次要节点 `easy timelineEditor` 知识库中没有该节点类型的任何知识, 次要节点 `easy timelineSegmentCount` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy timelineInfoOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy timelineSegmentOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Bernini+Ltx2.3+PR导演短剧分镜台 多参考 对话时序控制 分镜扩展_2076389200764694530.json
@@ -295,31 +294,8 @@ discoveries: [次要节点 `Any To Any` 知识库中没有该节点类型的任�
 
 ## 知识
 
-覆盖率 **51%**（130/256）
+覆盖率 **58%**（148/256）
 
-**有卡**：`LTX2AttentionTunerPatch`、`VAELoader`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`CFGGuider`、`ManualSigmas`、`RandomNoise`、`PathchSageAttentionKJ`、`LTXVSetAudioRefTokens`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`VAEDecode`、`CLIPTextEncode`、`CreateVideo`、`ComfyMathExpression`、`LTXVPreprocess`、`LazySwitchKJ`、`GetImageSizeAndCount`、`LoraLoaderModelOnly`、`KSamplerSelect`、`ResizeImagesByLongerEdge`、`GetImageRangeFromBatch`、`VHS_GetImageCount`、`SimpleCalculatorKJ`、`GetVideoComponents`、`ImageScaleToTotalPixels`、`INTConstant`、`PrimitiveBoolean`、`EmptyAudio`、`BatchImagesNode`、`BerniniPromptEnhancer`、`UNETLoader`、`StringReplace`、`SaveVideo`、`LTXVChunkFeedForward`、`AudioConcat`、`TTP_text_mix`、`RH_LLMAPI_NODE`、`KSamplerAdvanced`、`BerniniConditioning`、`VAEEncode`、`ResizeImageMaskNode`、`Bool`、`SamplerCustomAdvanced`、`LTX2_NAG`、`BasicScheduler`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`MaxNode`、`TextInput_`、`CLIPLoader`、`PromptRelayEncode`、`ConditioningZeroOut`、`EmptyHunyuanLatentVideo`、`TextGenerateLTX2Prompt`、`StringConcatenate`、`LTXAddVideoICLoRAGuide`、`LTXVConditioning`、`GetImageSize`、`VHS_VideoCombine`、`VHS_SelectFilename`、`Qwen3_VQA`、`LTXVAddLatentGuide`、`LTXVAudioVideoMask`、`ImageResizeKJv2`、`LTX2SamplingPreviewOverride`、`PreviewAudio`
-
-**缺卡**（18）：`Any To Any`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`Remove Text`、`Remove Text`、`Remove Text`、`easy batchAnything`、`easy batchAnything`、`easy cleanGpuUsed`、`easy forLoopEnd`、`easy forLoopStart`、`easy imagesSplitImage`、`easy timelineEditor`、`easy timelineSegmentCount`、`CR Prompt Text`、`easy timelineInfoOutput`、`easy timelineSegmentOutput`
+**有卡**：`LTX2AttentionTunerPatch`、`VAELoader`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`CFGGuider`、`ManualSigmas`、`RandomNoise`、`PathchSageAttentionKJ`、`LTXVSetAudioRefTokens`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`VAEDecode`、`CLIPTextEncode`、`CreateVideo`、`ComfyMathExpression`、`easy batchAnything`、`LTXVPreprocess`、`LazySwitchKJ`、`GetImageSizeAndCount`、`LoraLoaderModelOnly`、`KSamplerSelect`、`ResizeImagesByLongerEdge`、`GetImageRangeFromBatch`、`easy cleanGpuUsed`、`MathExpression|pysssss`、`VHS_GetImageCount`、`SimpleCalculatorKJ`、`GetVideoComponents`、`ImageScaleToTotalPixels`、`easy forLoopStart`、`easy imagesSplitImage`、`INTConstant`、`PrimitiveBoolean`、`EmptyAudio`、`BatchImagesNode`、`BerniniPromptEnhancer`、`Remove Text`、`UNETLoader`、`StringReplace`、`SaveVideo`、`LTXVChunkFeedForward`、`AudioConcat`、`easy forLoopEnd`、`TTP_text_mix`、`RH_LLMAPI_NODE`、`easy timelineSegmentCount`、`KSamplerAdvanced`、`BerniniConditioning`、`VAEEncode`、`ResizeImageMaskNode`、`Bool`、`SamplerCustomAdvanced`、`LTX2_NAG`、`BasicScheduler`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`MaxNode`、`TextInput_`、`CLIPLoader`、`PromptRelayEncode`、`ConditioningZeroOut`、`EmptyHunyuanLatentVideo`、`TextGenerateLTX2Prompt`、`StringConcatenate`、`LTXAddVideoICLoRAGuide`、`LTXVConditioning`、`Any To Any`、`GetImageSize`、`VHS_VideoCombine`、`CR Prompt Text`、`VHS_SelectFilename`、`Qwen3_VQA`、`easy timelineSegmentOutput`、`LTXVAddLatentGuide`、`LTXVAudioVideoMask`、`ImageResizeKJv2`、`LTX2SamplingPreviewOverride`、`PreviewAudio`、`easy timelineEditor`、`easy timelineInfoOutput`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、UNETLoader、CFGGuider
-
-## 学习发现
-
-- 次要节点 `Any To Any` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `Remove Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Remove Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Remove Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imagesSplitImage` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy timelineEditor` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy timelineSegmentCount` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy timelineInfoOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `easy timelineSegmentOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明

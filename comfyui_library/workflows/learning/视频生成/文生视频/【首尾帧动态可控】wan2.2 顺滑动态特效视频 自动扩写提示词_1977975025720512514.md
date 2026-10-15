@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/【首尾帧动态可控】wan2.2 顺滑动态特效视频 自动扩写提示词_1977975025720512514.json
 hash: f8c1587e3afdeb24
-coverage: 0.790698
-learned_at: 2026-10-10 23:10:22
+coverage: 0.906977
+learned_at: 2026-10-15 22:47:43
 nodes: [WanVideoVACEModelSelect, WanVideoExperimentalArgs, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, PrimitiveFloat, LayerUtility: ImageScaleByAspectRatio V2, WanVideoDecode, ImageResizeKJv2, WanVideoVACEStartToEndFrame, WanVideoVACEEncode, Int, WanVideoEnhanceAVideo, LayerUtility: PurgeVRAM V2, WanVideoBlockSwap, WanVideoModelLoader, WanVideoModelLoader, INTConstant, VHS_VideoCombine, WanVideoSampler, WanVideoSampler, WanVideoSLG, PrimitiveInt, WanVideoSigmaToStep, CreateCFGScheduleFloatList, Float, LoadWanVideoT5TextEncoder, easy anythingIndexSwitch, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, PrimitiveString, SimpleMath+, RHHiddenNodes, Note, WanVideoScheduler, WanVideoScheduler, LoadImage, LoadImage, WanVideoTextEncode, CR Prompt Text]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, SimpleMath+, easy anythingIndexSwitch, CR Prompt Text]
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/【首尾帧动态可控】wan2.2 顺滑动态特效视频 自动扩写提示词_1977975025720512514.json
@@ -69,18 +68,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **79%**（34/43）
+覆盖率 **91%**（39/43）
 
-**有卡**：`WanVideoVACEModelSelect`、`WanVideoExperimentalArgs`、`WanVideoVAELoader`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`ImageResizeKJv2`、`WanVideoVACEStartToEndFrame`、`WanVideoVACEEncode`、`Int`、`WanVideoEnhanceAVideo`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`INTConstant`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoSLG`、`WanVideoSigmaToStep`、`CreateCFGScheduleFloatList`、`Float`、`LoadWanVideoT5TextEncoder`、`WanVideoLoraSelectMulti`、`RHHiddenNodes`、`WanVideoScheduler`、`LoadImage`、`WanVideoTextEncode`
+**有卡**：`WanVideoVACEModelSelect`、`WanVideoExperimentalArgs`、`WanVideoVAELoader`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoDecode`、`ImageResizeKJv2`、`WanVideoVACEStartToEndFrame`、`WanVideoVACEEncode`、`Int`、`WanVideoEnhanceAVideo`、`LayerUtility: PurgeVRAM V2`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`INTConstant`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoSLG`、`WanVideoSigmaToStep`、`CreateCFGScheduleFloatList`、`Float`、`LoadWanVideoT5TextEncoder`、`easy anythingIndexSwitch`、`WanVideoLoraSelectMulti`、`SimpleMath+`、`RHHiddenNodes`、`WanVideoScheduler`、`LoadImage`、`WanVideoTextEncode`、`CR Prompt Text`
 
-**缺卡**（5）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`easy anythingIndexSwitch`、`CR Prompt Text`
-
-**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

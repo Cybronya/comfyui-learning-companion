@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
 hash: 541eb4554748d8bc
-coverage: 0.75
-learned_at: 2026-10-10 20:59:57
+coverage: 1
+learned_at: 2026-10-15 22:29:05
 nodes: [RH_Nano_Banana_Image2Image, LoadImage, SaveImage, easy imageConcat, SaveImage, easy imageConcat, RH_Nano_Banana_Image2Image, LoadImage, SaveImage, easy imageConcat, RH_Nano_Banana_Image2Image, LoadImage]
 patterns: []
-missing: [easy imageConcat, easy imageConcat, easy imageConcat]
-discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/谷歌 AI 图片编辑“新玩具”纳米香蕉 来了！Gemini 2.5 Flash Image_1960512200576331778.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（12 个）：
 - `RH_Nano_Banana_Image2Image`
@@ -36,14 +37,8 @@ discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **75%**（9/12）
+覆盖率 **100%**（12/12）
 
 **有卡**：`RH_Nano_Banana_Image2Image`、`LoadImage`、`SaveImage`、`easy imageConcat`
 
-**缺卡**（3）：`easy imageConcat`、`easy imageConcat`、`easy imageConcat`
-
-## 学习发现
-
-- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、RH_Nano_Banana_Image2Image、easy imageConcat、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load

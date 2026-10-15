@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
 hash: ac984d1c055b83a3
-coverage: 0.472222
-learned_at: 2026-10-10 20:59:22
+coverage: 0.666667
+learned_at: 2026-10-15 22:27:51
 nodes: [MatAnyoneVideoMatting, GroundingDinoSAMSegment (segment anything), SAMModelLoader (segment anything), GroundingDinoModelLoader (segment anything), MaskPreview+, Reroute, MaskToImage, GetImagesFromBatchIndexed, TransparentBGSession+, ImageRemoveBackground+, LayerUtility: PurgeVRAM, CLIPVisionLoader, WanImageToVideo, PrimitiveNode, Reroute (rgthree), Reroute (rgthree), PathchSageAttentionKJ, Reroute (rgthree), EmptyHunyuanLatentVideo, KSamplerSelect, BasicScheduler, CFGGuider, VAEDecodeTiled, Reroute (rgthree), VAEDecodeTiled, Reroute (rgthree), Reroute (rgthree), MathExpression|pysssss, SplitSigmas, CLIPTextEncode, CLIPTextEncode, CLIPVisionEncode, ImageScale, Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), Reroute (rgthree), GetLatentRangeFromBatch, Reroute (rgthree), ScheduledCFGGuidance, Reroute (rgthree), MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, Reroute, Reroute, ImageUpscaleWithModel, UpscaleModelLoader, SamplerCustomAdvanced, SamplerCustomAdvanced, VHS_VideoCombine, RandomNoise, CLIPLoader, VAELoader, VHS_VideoCombine, MaskPreview+, PreviewImage, LoraLoaderModelOnly, VHS_VideoCombine, RHHiddenNodes, UnetLoaderGGUF, VHS_VideoCombine, PreviewImage, Image Crop Face, LoadImage, PrimitiveNode, Note]
 patterns: []
-missing: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), Image Crop Face, ImageRemoveBackground+, LayerUtility: PurgeVRAM, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, SAMModelLoader (segment anything), TransparentBGSession+, MaskPreview+, MaskPreview+]
-discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `Image Crop Face` 知识库中没有该节点类型的任何知识, 次要节点 `ImageRemoveBackground+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SAMModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `TransparentBGSession+` 知识库中没有该节点类型的任何知识, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/lora训练工具之四：一张图生成人像lora数据集工作流V1.1_1954537986593583106.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（72 个）：
 - `MatAnyoneVideoMatting`
@@ -40,18 +41,18 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `PathchSageAttentionKJ`
 - `Reroute (rgthree)`
 - `EmptyHunyuanLatentVideo`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `BasicScheduler`
 - `CFGGuider`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `Reroute (rgthree)`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `Reroute (rgthree)`
 - `Reroute (rgthree)`
 - `MathExpression|pysssss`
 - `SplitSigmas`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `CLIPVisionEncode`
 - `ImageScale`
 - `Reroute (rgthree)`
@@ -74,8 +75,8 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `Reroute`
 - `ImageUpscaleWithModel`
 - `UpscaleModelLoader`
-- `SamplerCustomAdvanced`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
 - `VHS_VideoCombine`
 - `RandomNoise`
 - `CLIPLoader`
@@ -83,10 +84,10 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `VHS_VideoCombine`
 - `MaskPreview+`
 - `PreviewImage`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `VHS_VideoCombine`
 - `RHHiddenNodes`
-- `UnetLoaderGGUF`
+- `UnetLoaderGGUF` ★核心
 - `VHS_VideoCombine`
 - `PreviewImage`
 - `Image Crop Face`
@@ -96,25 +97,8 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 
 ## 知识
 
-覆盖率 **47%**（34/72）
+覆盖率 **67%**（48/72）
 
-**有卡**：`MatAnyoneVideoMatting`、`GroundingDinoSAMSegment (segment anything)`、`SAMModelLoader (segment anything)`、`GroundingDinoModelLoader (segment anything)`、`MaskPreview+`、`Reroute`、`MaskToImage`、`GetImagesFromBatchIndexed`、`TransparentBGSession+`、`ImageRemoveBackground+`、`LayerUtility: PurgeVRAM`、`CLIPVisionLoader`、`WanImageToVideo`、`PrimitiveNode`、`Reroute (rgthree)`、`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`VAEDecodeTiled`、`MathExpression|pysssss`、`SplitSigmas`、`CLIPTextEncode`、`CLIPVisionEncode`、`ImageScale`
+**有卡**：`MatAnyoneVideoMatting`、`GroundingDinoSAMSegment (segment anything)`、`SAMModelLoader (segment anything)`、`GroundingDinoModelLoader (segment anything)`、`MaskPreview+`、`MaskToImage`、`GetImagesFromBatchIndexed`、`TransparentBGSession+`、`ImageRemoveBackground+`、`LayerUtility: PurgeVRAM`、`CLIPVisionLoader`、`WanImageToVideo`、`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`VAEDecodeTiled`、`MathExpression|pysssss`、`SplitSigmas`、`CLIPTextEncode`、`CLIPVisionEncode`、`ImageScale`、`GetLatentRangeFromBatch`、`ScheduledCFGGuidance`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`SamplerCustomAdvanced`、`VHS_VideoCombine`、`RandomNoise`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`RHHiddenNodes`、`UnetLoaderGGUF`、`Image Crop Face`、`LoadImage`
 
-**缺卡**（14）：`GroundingDinoModelLoader (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`Image Crop Face`、`ImageRemoveBackground+`、`LayerUtility: PurgeVRAM`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`SAMModelLoader (segment anything)`、`TransparentBGSession+`、`MaskPreview+`、`MaskPreview+`
-
-## 学习发现
-
-- 次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image Crop Face` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageRemoveBackground+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SAMModelLoader (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `TransparentBGSession+` 知识库中没有该节点类型的任何知识
-- 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

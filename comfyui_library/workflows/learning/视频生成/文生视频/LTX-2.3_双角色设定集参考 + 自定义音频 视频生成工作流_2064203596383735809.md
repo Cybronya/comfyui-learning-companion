@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3_双角色设定集参考 + 自定义音频 视频生成工作流_2064203596383735809.json
 hash: 406d142c33cf668a
-coverage: 0.481928
-learned_at: 2026-10-10 23:00:13
+coverage: 0.506024
+learned_at: 2026-10-15 22:44:42
 nodes: [LTXVCropGuides, LTXVConditioning, GetNode, GetNode, SolidMask, GetNode, SetNode, SetNode, PathchSageAttentionKJ, SetNode, SetNode, LTXVConcatAVLatent, GetNode, SetLatentNoiseMask, SetNode, Any Switch (rgthree), GetNode, GetNode, GetNode, Fast Groups Bypasser (rgthree), GetNode, LTXAddVideoICLoRAGuide, GetNode, GetNode, SetNode, PrimitiveInt, SetNode, CR Float To Integer, PrimitiveFloat, GetNode, SetNode, EmptyLTXVLatentVideo, SetNode, GetImageSize, ResizeImageMaskNode, KSamplerSelect, SamplerCustomAdvanced, CFGGuider, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecode, MathExpression|pysssss, LiconMSR, ResizeImageMaskNode, SetNode, SetNode, RandomNoise, PrimitiveInt, ResizeImageMaskNode, VHS_VideoCombine, GetNode, CLIPTextEncode, SetNode, SetNode, SetNode, LTXVAudioVAEEncode, VHS_LoadAudio, PromptRelayEncode, VAELoader, LTXVAudioVAELoader, DualCLIPLoader, LTXVEmptyLatentAudio, GetNode, LoadImage, LoadImage, LoadImage, Note, ManualSigmas, Note, GetNode, GetImageSize, GetNode, GetNode, ComfyNumberConvert, Note, Note, PrimitiveStringMultiline, PrimitiveStringMultiline, LoadAudio, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [CR Float To Integer, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 505}
-discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3_双角色设定集参考 + 自定义音频 视频生成工作流_2064203596383735809.json
@@ -116,15 +115,8 @@ discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **48%**（40/83）
+覆盖率 **51%**（42/83）
 
-**有卡**：`LTXVCropGuides`、`LTXVConditioning`、`SolidMask`、`PathchSageAttentionKJ`、`LTXVConcatAVLatent`、`SetLatentNoiseMask`、`LTXAddVideoICLoRAGuide`、`EmptyLTXVLatentVideo`、`GetImageSize`、`ResizeImageMaskNode`、`KSamplerSelect`、`SamplerCustomAdvanced`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`LiconMSR`、`RandomNoise`、`VHS_VideoCombine`、`CLIPTextEncode`、`LTXVAudioVAEEncode`、`VHS_LoadAudio`、`PromptRelayEncode`、`VAELoader`、`LTXVAudioVAELoader`、`DualCLIPLoader`、`LTXVEmptyLatentAudio`、`LoadImage`、`ManualSigmas`、`ComfyNumberConvert`、`LoadAudio`、`LoraLoaderModelOnly`、`UNETLoader`
-
-**缺卡**（2）：`CR Float To Integer`、`MathExpression|pysssss`
+**有卡**：`LTXVCropGuides`、`LTXVConditioning`、`SolidMask`、`PathchSageAttentionKJ`、`LTXVConcatAVLatent`、`SetLatentNoiseMask`、`LTXAddVideoICLoRAGuide`、`CR Float To Integer`、`EmptyLTXVLatentVideo`、`GetImageSize`、`ResizeImageMaskNode`、`KSamplerSelect`、`SamplerCustomAdvanced`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`MathExpression|pysssss`、`LiconMSR`、`RandomNoise`、`VHS_VideoCombine`、`CLIPTextEncode`、`LTXVAudioVAEEncode`、`VHS_LoadAudio`、`PromptRelayEncode`、`VAELoader`、`LTXVAudioVAELoader`、`DualCLIPLoader`、`LTXVEmptyLatentAudio`、`LoadImage`、`ManualSigmas`、`ComfyNumberConvert`、`LoadAudio`、`LoraLoaderModelOnly`、`UNETLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

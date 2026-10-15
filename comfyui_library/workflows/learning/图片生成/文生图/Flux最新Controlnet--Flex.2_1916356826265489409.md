@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
 hash: 5645c3abd11d58eb
-coverage: 0.636364
-learned_at: 2026-10-10 20:58:38
+coverage: 0.69697
+learned_at: 2026-10-15 22:26:29
 nodes: [ShowText|pysssss, LayerUtility: TextJoin, DualCLIPLoader, VAELoader, SaveImage, VAEDecode, Note, GetNode, PreviewImage, PreviewImage, Image Comparer (rgthree), UNETLoader, SetNode, LoadImage, ImageScaleToTotalPixels, DWPreprocessor, RH_Captioner, Flex2Conditioner, KSampler, Flex2Conditioner, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, ImageScaleToTotalPixels, ImageScaleToTotalPixels, DownloadAndLoadDepthAnythingV2Model, PreviewImage, DepthAnything_V2, EmptyLatentImage, LoraLoaderModelOnly, CR Text, Note, Note]
 patterns: [text_to_image]
-missing: [CR Text, LayerUtility: TextJoin]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 982041649879483, "steps": 20, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Flux最新Controlnet--Flex.2_1916356826265489409.json
@@ -21,37 +20,39 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（33 个）：
 - `ShowText|pysssss`
 - `LayerUtility: TextJoin`
 - `DualCLIPLoader`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Note`
 - `GetNode`
 - `PreviewImage`
 - `PreviewImage`
 - `Image Comparer (rgthree)`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `SetNode`
 - `LoadImage`
 - `ImageScaleToTotalPixels`
 - `DWPreprocessor`
 - `RH_Captioner`
 - `Flex2Conditioner`
-- `KSampler`
+- `KSampler` ★核心
 - `Flex2Conditioner`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `ImageScaleToTotalPixels`
 - `ImageScaleToTotalPixels`
 - `DownloadAndLoadDepthAnythingV2Model`
 - `PreviewImage`
 - `DepthAnything_V2`
-- `EmptyLatentImage`
-- `LoraLoaderModelOnly`
+- `EmptyLatentImage` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `CR Text`
 - `Note`
 - `Note`
@@ -60,25 +61,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1536`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `982041649879483`
 - `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1536`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **64%**（21/33）
+覆盖率 **70%**（23/33）
 
-**有卡**：`ShowText|pysssss`、`LayerUtility: TextJoin`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`Note`、`GetNode`、`PreviewImage`、`Image Comparer (rgthree)`、`UNETLoader`、`SetNode`、`LoadImage`、`ImageScaleToTotalPixels`、`DWPreprocessor`、`RH_Captioner`、`Flex2Conditioner`、`KSampler`、`CLIPTextEncode`
+**有卡**：`LayerUtility: TextJoin`、`DualCLIPLoader`、`VAELoader`、`SaveImage`、`VAEDecode`、`UNETLoader`、`LoadImage`、`ImageScaleToTotalPixels`、`DWPreprocessor`、`RH_Captioner`、`Flex2Conditioner`、`KSampler`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`EmptyLatentImage`、`CR Text`
 
-**缺卡**（2）：`CR Text`、`LayerUtility: TextJoin`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、EmptyLatentImage、LoadImage、UNETLoader

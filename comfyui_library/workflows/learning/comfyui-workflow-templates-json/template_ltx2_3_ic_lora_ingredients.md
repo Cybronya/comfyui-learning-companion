@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/template_ltx2_3_ic_lora_ingredients.json
 hash: a829cc49ea8baedd
 official: true
-coverage: 0.538462
-learned_at: 2026-10-10 22:49:03
+coverage: 0.615385
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveVideo, MarkdownNote, f9f61b10-b689-4d67-b4fa-0acc1d9b5390, MarkdownNote, RepeatImageBatch, EmptyImage, PrimitiveInt, PrimitiveInt, ComfyMathExpression, GetImageSize, ResizeAndPadImage, PreviewImage, LoadImage]
 patterns: []
-missing: [f9f61b10-b689-4d67-b4fa-0acc1d9b5390]
-discoveries: [次要节点 `f9f61b10-b689-4d67-b4fa-0acc1d9b5390` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/template_ltx2_3_ic_lora_ingredients.json
@@ -40,14 +39,8 @@ discoveries: [次要节点 `f9f61b10-b689-4d67-b4fa-0acc1d9b5390` 知识库中�
 
 ## 知识
 
-覆盖率 **54%**（7/13）
+覆盖率 **62%**（8/13）
 
-**有卡**：`SaveVideo`、`RepeatImageBatch`、`EmptyImage`、`ComfyMathExpression`、`GetImageSize`、`ResizeAndPadImage`、`LoadImage`
-
-**缺卡**（1）：`f9f61b10-b689-4d67-b4fa-0acc1d9b5390`
+**有卡**：`SaveVideo`、`f9f61b10-b689-4d67-b4fa-0acc1d9b5390`、`RepeatImageBatch`、`EmptyImage`、`ComfyMathExpression`、`GetImageSize`、`ResizeAndPadImage`、`LoadImage`
 
 **用到的条目**：LoadImage、GetImageSize、ResizeAndPadImage、GetImageSize、SaveVideo、ComfyMathExpression、EmptyImage、RepeatImageBatch
-
-## 学习发现
-
-- 次要节点 `f9f61b10-b689-4d67-b4fa-0acc1d9b5390` 知识库中没有该节点类型的任何知识

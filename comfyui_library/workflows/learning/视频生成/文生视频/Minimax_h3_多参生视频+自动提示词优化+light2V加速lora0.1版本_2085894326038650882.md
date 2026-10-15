@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax_h3_多参生视频+自动提示词优化+light2V加速lora0.1版本_2085894326038650882.json
 hash: e6f3d331592a5d90
-coverage: 0.813953
-learned_at: 2026-10-11 20:53:46
+coverage: 0.883721
+learned_at: 2026-10-15 22:46:47
 nodes: [LoadAudio, CLIPLoader, VAELoader, LoadImage, LoadImage, LoadImage, UNETLoader, RandomNoise, VAELoader, BasicGuider, SamplerCustomAdvanced, MiniMaxH3AVDecodeT8, LoraLoaderBypassModelOnly, EasyCache, PathchSageAttentionKJ, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, GetImageRangeFromBatch, LoadImage, MarkdownNote, ComfyMathExpression, MiniMaxH3MultiRateSamplerEXPT8, easy showAnything, StringFunction|pysssss, StringFunction|pysssss, ResolutionSelector, PrimitiveFloat, RHLLMChatNode, PrimitiveStringMultiline, ImageResizeKJv2, CreateVideo, LoadAudio, LoadAudio, VHS_LoadVideo, MiniMaxH3ReferenceToVideo, easy clearCacheAll, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, easy showAnything, VHS_VideoCombine]
 patterns: []
-missing: [StringFunction|pysssss, StringFunction|pysssss, easy clearCacheAll]
-discoveries: [次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Minimax_h3_多参生视频+自动提示词优化+light2V加速lora0.1版本_2085894326038650882.json
@@ -69,16 +68,8 @@ discoveries: [次要节点 `StringFunction|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **81%**（35/43）
+覆盖率 **88%**（38/43）
 
-**有卡**：`LoadAudio`、`CLIPLoader`、`VAELoader`、`LoadImage`、`UNETLoader`、`RandomNoise`、`BasicGuider`、`SamplerCustomAdvanced`、`MiniMaxH3AVDecodeT8`、`LoraLoaderBypassModelOnly`、`EasyCache`、`PathchSageAttentionKJ`、`GetImageRangeFromBatch`、`ComfyMathExpression`、`MiniMaxH3MultiRateSamplerEXPT8`、`ResolutionSelector`、`RHLLMChatNode`、`ImageResizeKJv2`、`CreateVideo`、`VHS_LoadVideo`、`MiniMaxH3ReferenceToVideo`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`VHS_VideoCombine`
-
-**缺卡**（3）：`StringFunction|pysssss`、`StringFunction|pysssss`、`easy clearCacheAll`
+**有卡**：`LoadAudio`、`CLIPLoader`、`VAELoader`、`LoadImage`、`UNETLoader`、`RandomNoise`、`BasicGuider`、`SamplerCustomAdvanced`、`MiniMaxH3AVDecodeT8`、`LoraLoaderBypassModelOnly`、`EasyCache`、`PathchSageAttentionKJ`、`GetImageRangeFromBatch`、`ComfyMathExpression`、`MiniMaxH3MultiRateSamplerEXPT8`、`StringFunction|pysssss`、`ResolutionSelector`、`RHLLMChatNode`、`ImageResizeKJv2`、`CreateVideo`、`VHS_LoadVideo`、`MiniMaxH3ReferenceToVideo`、`easy clearCacheAll`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`VHS_VideoCombine`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、SamplerCustomAdvanced、MiniMaxH3MultiRateSamplerEXPT8
-
-## 学习发现
-
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识

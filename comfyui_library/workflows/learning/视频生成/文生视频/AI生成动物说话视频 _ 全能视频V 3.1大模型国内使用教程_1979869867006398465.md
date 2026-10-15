@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI生成动物说话视频 _ 全能视频V 3.1大模型国内使用教程_1979869867006398465.json
 hash: 3e34194d36380225
-coverage: 0.714286
-learned_at: 2026-10-11 02:44:59
+coverage: 0.857143
+learned_at: 2026-10-15 22:43:59
 nodes: [SaveVideo, SaveVideo, LoadImage, RH_Veo3_Text2Video, RH_Veo3_Image2Video, Fast Groups Bypasser (rgthree), Label (rgthree)]
 patterns: []
-missing: [Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/AI生成动物说话视频 _ 全能视频V 3.1大模型国内使用教程_1979869867006398465.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **71%**（5/7）
+覆盖率 **86%**（6/7）
 
-**有卡**：`SaveVideo`、`LoadImage`、`RH_Veo3_Text2Video`、`RH_Veo3_Image2Video`
+**有卡**：`SaveVideo`、`LoadImage`、`RH_Veo3_Text2Video`、`RH_Veo3_Image2Video`、`Label (rgthree)`
 
-**缺卡**（1）：`Label (rgthree)`
-
-**用到的条目**：LoadImage、SaveVideo、RH_Veo3_Image2Video、RH_Veo3_Text2Video、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、RH_Veo3_Image2Video、RH_Veo3_Text2Video、Label (rgthree)、sd15-t2i-basic、sd15-t2i-lora、Text

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-首尾帧_2031929637428793346.json
 hash: 42b1224e12ccab5c
-coverage: 0.829787
-learned_at: 2026-10-11 03:16:46
+coverage: 0.93617
+learned_at: 2026-10-15 22:45:05
 nodes: [RandomNoise, CFGGuider, KSamplerSelect, DualCLIPLoader, UNETLoader, VAELoaderKJ, LatentUpscaleModelLoader, CLIPTextEncode, VAELoaderKJ, LTXVConditioning, LTXVSeparateAVLatent, VAEDecodeTiled, RandomNoise, CFGGuider, KSamplerSelect, CreateVideo, LTXVAudioVAEDecode, ManualSigmas, ImageResizeKJv2, SimpleMath+, SimpleMath+, LTXVPreprocess, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVLatentUpsampler, LTXVCropGuides, LTXVImgToVideoInplace, LTXVConcatAVLatent, ManualSigmas, ImageResizeKJv2, LTXVSeparateAVLatent, LTXVConcatAVLatent, LoadImage, LoadImage, CLIPTextEncode, SimpleMath+, Primitive float [Crystools], PrimitiveNode, PrimitiveNode, PrimitiveInt, SamplerCustomAdvanced, LTXVImgToVideoInplaceKJ, SimpleMath+, LTXVPreprocess, SaveImage, 1hew_SaveVideo]
 patterns: []
-missing: [Primitive float [Crystools], SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 121}
-discoveries: [次要节点 `Primitive float [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3-首尾帧_2031929637428793346.json
@@ -80,18 +79,8 @@ discoveries: [次要节点 `Primitive float [Crystools]` 知识库中没有该�
 
 ## 知识
 
-覆盖率 **83%**（39/47）
+覆盖率 **94%**（44/47）
 
-**有卡**：`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`DualCLIPLoader`、`UNETLoader`、`VAELoaderKJ`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`LTXVAudioVAEDecode`、`ManualSigmas`、`ImageResizeKJv2`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`LoadImage`、`LTXVImgToVideoInplaceKJ`、`SaveImage`、`1hew_SaveVideo`
-
-**缺卡**（5）：`Primitive float [Crystools]`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`DualCLIPLoader`、`UNETLoader`、`VAELoaderKJ`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`LTXVAudioVAEDecode`、`ManualSigmas`、`ImageResizeKJv2`、`SimpleMath+`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`LoadImage`、`Primitive float [Crystools]`、`LTXVImgToVideoInplaceKJ`、`SaveImage`、`1hew_SaveVideo`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `Primitive float [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

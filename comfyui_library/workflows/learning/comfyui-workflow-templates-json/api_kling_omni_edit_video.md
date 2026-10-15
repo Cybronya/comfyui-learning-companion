@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_omni_edit_video.json
 hash: 9a7768393e54fe55
 official: true
-coverage: 0.714286
-learned_at: 2026-10-10 22:44:40
+coverage: 0.857143
+learned_at: 2026-10-15 22:24:49
 nodes: [SaveVideo, Note, LoadVideo, LoadImage, KlingOmniProEditVideoNode, Video Slice, BatchImagesNode]
 patterns: []
-missing: [Video Slice]
-discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_kling_omni_edit_video.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **71%**（5/7）
+覆盖率 **86%**（6/7）
 
-**有卡**：`SaveVideo`、`LoadVideo`、`LoadImage`、`KlingOmniProEditVideoNode`、`BatchImagesNode`
+**有卡**：`SaveVideo`、`LoadVideo`、`LoadImage`、`KlingOmniProEditVideoNode`、`Video Slice`、`BatchImagesNode`
 
-**缺卡**（1）：`Video Slice`
-
-**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、LoadVideo、KlingOmniProEditVideoNode、sd15-t2i-basic、sd15-t2i-lora、node
-
-## 学习发现
-
-- 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、LoadVideo、KlingOmniProEditVideoNode、Video Slice、sd15-t2i-basic、sd15-t2i-lora

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_fastvideo_fasth3_i2v.json
 hash: 5a9d8d03bd9215f4
 official: true
-coverage: 0.571429
-learned_at: 2026-10-10 22:50:08
+coverage: 0.714286
+learned_at: 2026-10-15 22:24:57
 nodes: [SaveVideo, 4c314f31-ecda-4b08-ae98-faaba1bf613f, LoadImage, MarkdownNote, MarkdownNote, GetImageSize, ImageScaleToTotalPixels]
 patterns: []
-missing: [4c314f31-ecda-4b08-ae98-faaba1bf613f]
-discoveries: [次要节点 `4c314f31-ecda-4b08-ae98-faaba1bf613f` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_fastvideo_fasth3_i2v.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `4c314f31-ecda-4b08-ae98-faaba1bf613f` 知识库中�
 
 ## 知识
 
-覆盖率 **57%**（4/7）
+覆盖率 **71%**（5/7）
 
-**有卡**：`SaveVideo`、`LoadImage`、`GetImageSize`、`ImageScaleToTotalPixels`
+**有卡**：`SaveVideo`、`4c314f31-ecda-4b08-ae98-faaba1bf613f`、`LoadImage`、`GetImageSize`、`ImageScaleToTotalPixels`
 
-**缺卡**（1）：`4c314f31-ecda-4b08-ae98-faaba1bf613f`
-
-**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveVideo、ImageScaleToTotalPixels、sd15-t2i-basic、sd15-t2i-lora、ImageScale
-
-## 学习发现
-
-- 次要节点 `4c314f31-ecda-4b08-ae98-faaba1bf613f` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveVideo、ImageScaleToTotalPixels、4c314f31-ecda-4b08-ae98-faaba1bf613f、sd15-t2i-basic、sd15-t2i-lora

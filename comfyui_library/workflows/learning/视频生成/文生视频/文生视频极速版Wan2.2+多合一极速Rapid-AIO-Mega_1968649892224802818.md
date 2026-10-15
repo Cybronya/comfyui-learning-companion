@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频极速版Wan2.2+多合一极速Rapid-AIO-Mega_1968649892224802818.json
 hash: 18ae0af3c35d4c91
-coverage: 0.6
-learned_at: 2026-10-10 23:13:13
+coverage: 0.85
+learned_at: 2026-10-15 22:48:44
 nodes: [Note, WanVaceToVideo, Primitive integer [Crystools], Primitive integer [Crystools], CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, INTConstant, MathExpression|pysssss, INTConstant, SetNode, GetNode, DF_Int_to_Float, VHS_VideoCombine, VAEDecode, KSampler, LayerUtility: PurgeVRAM V2, ModelSamplingSD3, LayerUtility: PurgeVRAM V2, Int]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, Primitive integer [Crystools], Primitive integer [Crystools]]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "denoise": 1, "sampler_name": "ipndm", "scheduler": "sgm_uniform", "seed": 7567358653673, "steps": 4}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/文生视频极速版Wan2.2+多合一极速Rapid-AIO-Mega_1968649892224802818.json
@@ -58,11 +58,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **60%**（12/20）
+覆盖率 **85%**（17/20）
 
-**有卡**：`WanVaceToVideo`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`INTConstant`、`DF_Int_to_Float`、`VHS_VideoCombine`、`VAEDecode`、`KSampler`、`ModelSamplingSD3`、`Int`
-
-**缺卡**（5）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`MathExpression|pysssss`、`Primitive integer [Crystools]`、`Primitive integer [Crystools]`
+**有卡**：`WanVaceToVideo`、`Primitive integer [Crystools]`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`INTConstant`、`MathExpression|pysssss`、`DF_Int_to_Float`、`VHS_VideoCombine`、`VAEDecode`、`KSampler`、`LayerUtility: PurgeVRAM V2`、`ModelSamplingSD3`、`Int`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、Int、INTConstant、ModelSamplingSD3、VHS_VideoCombine
 
@@ -73,9 +71,4 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

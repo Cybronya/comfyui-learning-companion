@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/FLUX.SRPO美学文生图（wan2.2+qwen二次美学去噪）_1971466951908343810.json
 hash: 0a7ae90f43ba82da
-coverage: 0.807018
-learned_at: 2026-10-10 20:58:32
+coverage: 0.877193
+learned_at: 2026-10-15 22:26:18
 nodes: [DualCLIPLoader, VAELoader, ModelSamplingFlux, ConditioningZeroOut, CLIPLoader, UNETLoader, RH_Translator, LoraLoaderModelOnly, UNETLoader, VAELoader, CLIPTextEncode, LoraLoaderModelOnly, ModelSamplingSD3, KSampler, VAEEncode, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, VAEEncode, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, CLIPTextEncodeFlux, EmptyLatentImage, CLIPTextEncode, CLIPLoader, CLIPTextEncode, CLIPTextEncode, ModelSamplingAuraFlow, LoraLoaderModelOnly, KSampler, KSampler, LayerUtility: PurgeVRAM V2, PreviewImage, PreviewImage, ImageScaleToMegapixels, PreviewImage, VAEDecode, PreviewImage, PreviewImage, LoraLoaderModelOnly, LoraLoaderModelOnly, NunchakuQwenImageDiTLoader, PreviewImage, CR Text, Int, Int, ImageConcatMulti, PreviewImage, SaveImage, SaveImage, SaveImage, VAEDecode, SaveImage, SeedVR2, SeedVR2, SeedVR2]
 patterns: [text_to_image]
-missing: [CR Text, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 675660653212283, "steps": 12, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/FLUX.SRPO美学文生图（wan2.2+qwen二次美学去噪）_1971466951908343810.json
@@ -22,49 +22,51 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（57 个）：
 - `DualCLIPLoader`
 - `VAELoader`
 - `ModelSamplingFlux`
 - `ConditioningZeroOut`
 - `CLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `RH_Translator`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
 - `VAELoader`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `ModelSamplingSD3`
-- `KSampler`
-- `VAEEncode`
+- `KSampler` ★核心
+- `VAEEncode` ★核心
 - `LayerUtility: PurgeVRAM V2`
 - `LayerUtility: PurgeVRAM V2`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `VAELoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
-- `CLIPTextEncodeFlux`
-- `EmptyLatentImage`
-- `CLIPTextEncode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
+- `CLIPTextEncodeFlux` ★核心
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `ModelSamplingAuraFlow`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `KSampler`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `LayerUtility: PurgeVRAM V2`
 - `PreviewImage`
 - `PreviewImage`
 - `ImageScaleToMegapixels`
 - `PreviewImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
 - `PreviewImage`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `NunchakuQwenImageDiTLoader`
 - `PreviewImage`
 - `CR Text`
@@ -75,7 +77,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `SeedVR2`
 - `SeedVR2`
@@ -85,23 +87,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1536`
-- `sampler_name` = `uni_pc`
-- `scheduler` = `simple`
 - `seed` = `675660653212283`
 - `steps` = `12`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1536`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **81%**（46/57）
+覆盖率 **88%**（50/57）
 
-**有卡**：`DualCLIPLoader`、`VAELoader`、`ModelSamplingFlux`、`ConditioningZeroOut`、`CLIPLoader`、`UNETLoader`、`RH_Translator`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`ModelSamplingSD3`、`KSampler`、`VAEEncode`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`CLIPTextEncodeFlux`、`EmptyLatentImage`、`ModelSamplingAuraFlow`、`PreviewImage`、`ImageScaleToMegapixels`、`NunchakuQwenImageDiTLoader`、`CR Text`、`Int`
+**有卡**：`DualCLIPLoader`、`VAELoader`、`ModelSamplingFlux`、`ConditioningZeroOut`、`CLIPLoader`、`UNETLoader`、`RH_Translator`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`ModelSamplingSD3`、`KSampler`、`VAEEncode`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`CLIPTextEncodeFlux`、`EmptyLatentImage`、`ModelSamplingAuraFlow`、`ImageScaleToMegapixels`、`NunchakuQwenImageDiTLoader`、`CR Text`、`Int`、`ImageConcatMulti`、`SaveImage`、`SeedVR2`
 
-**缺卡**（4）：`CR Text`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 
@@ -111,9 +113,5 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

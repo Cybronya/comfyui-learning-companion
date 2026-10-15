@@ -7,7 +7,7 @@ source: png
 file: comfyui_library/workflows/sd1.5/text-to-image-workflow.png
 hash: d154255b8120e645
 coverage: 1
-learned_at: 2026-10-10 20:47:59
+learned_at: 2026-10-15 22:24:59
 nodes: [EmptyLatentImage, KSampler, VAEDecode, SaveImage, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode]
 patterns: [text_to_image]
 missing: []

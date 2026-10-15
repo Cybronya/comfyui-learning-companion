@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0 Mini 文生视频｜支持4K_2097602732109688833.json
 hash: 063ca98574520994
 coverage: 1
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:57
 nodes: [SaveVideo, MuyeTextEditOutput, RH_RhartVideoSparkvideo20MiniTextToVideo]
 patterns: []
 missing: []

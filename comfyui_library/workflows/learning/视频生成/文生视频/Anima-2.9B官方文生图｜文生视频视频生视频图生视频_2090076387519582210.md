@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Anima-2.9B官方文生图｜文生视频视频生视频图生视频_2090076387519582210.json
 hash: 47ed7c1aca66f427
-coverage: 0.863636
-learned_at: 2026-10-11 21:19:36
+coverage: 0.886364
+learned_at: 2026-10-15 22:44:02
 nodes: [SaveImage, SamplerCustomAdvanced, KSamplerSelect, BasicScheduler, CFGGuider, RandomNoise, KSampler Config (rgthree), CLIPLoader, VAEDecode, ImpactSwitch, UNETLoader, CLIPTextEncode, CLIPTextEncode, VAELoaderKJ, EmptyLatentImage, EmptyLatentImage, PathchSageAttentionKJ, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
-missing: [KSampler Config (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Anima-2.9B官方文生图｜文生视频视频生视频图生视频_2090076387519582210.json
@@ -86,11 +86,9 @@ discoveries: [核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用
 
 ## 知识
 
-覆盖率 **86%**（38/44）
+覆盖率 **89%**（39/44）
 
-**有卡**：`SaveImage`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`RandomNoise`、`CLIPLoader`、`VAEDecode`、`UNETLoader`、`CLIPTextEncode`、`VAELoaderKJ`、`EmptyLatentImage`、`PathchSageAttentionKJ`、`VAELoader`、`KSampler`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
-
-**缺卡**（1）：`KSampler Config (rgthree)`
+**有卡**：`SaveImage`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`RandomNoise`、`KSampler Config (rgthree)`、`CLIPLoader`、`VAEDecode`、`UNETLoader`、`CLIPTextEncode`、`VAELoaderKJ`、`EmptyLatentImage`、`PathchSageAttentionKJ`、`VAELoader`、`KSampler`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader
 
@@ -101,5 +99,4 @@ discoveries: [核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用
 
 ## 学习发现
 
-- 核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

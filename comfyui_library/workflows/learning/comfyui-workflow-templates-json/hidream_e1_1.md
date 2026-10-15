@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/hidream_e1_1.jso
 hash: e9fc13b458ef2ec9
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:47:17
+learned_at: 2026-10-15 22:24:53
 nodes: [CLIPTextEncode, SaveImage, BasicScheduler, KSamplerSelect, DualCFGGuider, RandomNoise, VAEDecode, SamplerCustomAdvanced, InstructPixToPixConditioning, PrimitiveNode, PrimitiveNode, Reroute, LoadImage, CLIPTextEncode, CFGNorm, ImageScaleToTotalPixels, UNETLoader, QuadrupleCLIPLoader, VAELoader, MarkdownNote]
 patterns: []
 missing: []

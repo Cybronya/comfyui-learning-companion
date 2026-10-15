@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json
 hash: 645fee60487a3a3e
-coverage: 0.714286
-learned_at: 2026-10-10 20:59:29
+coverage: 0.738095
+learned_at: 2026-10-15 22:28:02
 nodes: [GetNode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, Note, WanVideoSampler, WanVideoBlockSwap, SetNode, SetNode, Reroute, PrimitiveNode, SetNode, WanVideoScheduler, SetNode, ImageConcatMulti, WanVideoDecode, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoVACEModelSelect, WanVideoModelLoader, WanVideoVACEModelSelect, INTConstant, INTConstant, WanVideoSampler, GetNode, GetNode, WanVideoTextEncodeCached, VHS_VideoCombine, VHS_VideoCombine, WanVideoVAELoader, WanVideoVACEEncode, GetNode, INTConstant, INTConstant, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, INTConstant, ImageResizeKJv2, WanVideoVACEStartToEndFrame, LoadImage, Text Multiline]
 patterns: []
-missing: [Text Multiline]
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/【KJ加速版】wan2.2 Fun VACE图生视频_1967859229505761281.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Sampling → Process → Other
+
 **节点**（42 个）：
 - `GetNode`
 - `WanVideoSetBlockSwap`
@@ -27,7 +28,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `WanVideoSetBlockSwap`
 - `WanVideoSetLoRAs`
 - `Note`
-- `WanVideoSampler`
+- `WanVideoSampler` ★核心
 - `WanVideoBlockSwap`
 - `SetNode`
 - `SetNode`
@@ -45,7 +46,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `WanVideoVACEModelSelect`
 - `INTConstant`
 - `INTConstant`
-- `WanVideoSampler`
+- `WanVideoSampler` ★核心
 - `GetNode`
 - `GetNode`
 - `WanVideoTextEncodeCached`
@@ -66,12 +67,8 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **71%**（30/42）
+覆盖率 **74%**（31/42）
 
-**有卡**：`GetNode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`Note`、`WanVideoSampler`、`WanVideoBlockSwap`、`SetNode`、`Reroute`、`PrimitiveNode`、`WanVideoScheduler`、`ImageConcatMulti`、`WanVideoDecode`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncodeCached`、`VHS_VideoCombine`
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSampler`、`WanVideoBlockSwap`、`WanVideoScheduler`、`ImageConcatMulti`、`WanVideoDecode`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncodeCached`、`VHS_VideoCombine`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`WanVideoLoraSelectMulti`、`ImageResizeKJv2`、`WanVideoVACEStartToEndFrame`、`LoadImage`、`Text Multiline`
 
-**缺卡**（1）：`Text Multiline`
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

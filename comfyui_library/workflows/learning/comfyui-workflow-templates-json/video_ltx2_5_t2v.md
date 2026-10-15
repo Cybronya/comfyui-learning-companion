@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_5_t2v.json
 hash: eb1a415a467a2ef1
 official: true
-coverage: 0.285714
-learned_at: 2026-10-10 22:50:20
+coverage: 0.428571
+learned_at: 2026-10-15 22:24:57
 nodes: [SaveVideo, 8b4f085c-1bb3-4ecd-aeed-603a8d6d3970, MarkdownNote, MarkdownNote, ResolutionSelector, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [8b4f085c-1bb3-4ecd-aeed-603a8d6d3970]
-discoveries: [次要节点 `8b4f085c-1bb3-4ecd-aeed-603a8d6d3970` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_5_t2v.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `8b4f085c-1bb3-4ecd-aeed-603a8d6d3970` 知识库中�
 
 ## 知识
 
-覆盖率 **29%**（2/7）
+覆盖率 **43%**（3/7）
 
-**有卡**：`SaveVideo`、`ResolutionSelector`
+**有卡**：`SaveVideo`、`8b4f085c-1bb3-4ecd-aeed-603a8d6d3970`、`ResolutionSelector`
 
-**缺卡**（1）：`8b4f085c-1bb3-4ecd-aeed-603a8d6d3970`
-
-**用到的条目**：ResolutionSelector、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验、easy_imagesize
-
-## 学习发现
-
-- 次要节点 `8b4f085c-1bb3-4ecd-aeed-603a8d6d3970` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、SaveVideo、8b4f085c-1bb3-4ecd-aeed-603a8d6d3970、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验

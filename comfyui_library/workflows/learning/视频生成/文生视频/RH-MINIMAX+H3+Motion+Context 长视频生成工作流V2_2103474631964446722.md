@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH-MINIMAX+H3+Motion+Context 长视频生成工作流V2_2103474631964446722.json
 hash: 809bdc6b2dee0abc
-coverage: 0.65
-learned_at: 2026-10-11 22:12:46
+coverage: 0.9
+learned_at: 2026-10-15 22:46:52
 nodes: [ModelPreviewOverrideKJ, easy modelLoaderPack, Note, Note, ModelAttentionBackend, VAELoader, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, easy multitrackProject, ManualSigmas, KSamplerSelect, KSamplerSelect, BasicScheduler, easy multiTrackEditor, VAELoader, UNETLoader, CLIPLoader, easy multitrackProjectVideoCombine, SaveVideo, easy saveVideo]
 patterns: []
-missing: [easy modelLoaderPack, easy multiTrackEditor, easy multitrackProject, easy multitrackProjectVideoCombine, easy saveVideo]
-discoveries: [次要节点 `easy modelLoaderPack` 知识库中没有该节点类型的任何知识, 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识, 次要节点 `easy multitrackProject` 知识库中没有该节点类型的任何知识, 次要节点 `easy multitrackProjectVideoCombine` 知识库中没有该节点类型的任何知识, 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/RH-MINIMAX+H3+Motion+Context 长视频生成工作流V2_2103474631964446722.json
@@ -46,18 +45,8 @@ discoveries: [次要节点 `easy modelLoaderPack` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **65%**（13/20）
+覆盖率 **90%**（18/20）
 
-**有卡**：`ModelPreviewOverrideKJ`、`ModelAttentionBackend`、`VAELoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`UNETLoader`、`CLIPLoader`、`SaveVideo`
+**有卡**：`ModelPreviewOverrideKJ`、`easy modelLoaderPack`、`ModelAttentionBackend`、`VAELoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`easy multitrackProject`、`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`easy multiTrackEditor`、`UNETLoader`、`CLIPLoader`、`easy multitrackProjectVideoCombine`、`SaveVideo`、`easy saveVideo`
 
-**缺卡**（5）：`easy modelLoaderPack`、`easy multiTrackEditor`、`easy multitrackProject`、`easy multitrackProjectVideoCombine`、`easy saveVideo`
-
-**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPLoader、UNETLoader、KSamplerSelect、ModelPreviewOverrideKJ、SaveVideo、BasicScheduler
-
-## 学习发现
-
-- 次要节点 `easy modelLoaderPack` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multitrackProject` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multitrackProjectVideoCombine` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPLoader、UNETLoader、KSamplerSelect、ModelPreviewOverrideKJ、SaveVideo、easy saveVideo

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/最强MiniMax H3提示词增强器｜Qwen3.8本地版_2095652482700627969.json
 hash: a311045179b2caae
 coverage: 0.888889
-learned_at: 2026-10-11 21:30:40
+learned_at: 2026-10-15 22:48:47
 nodes: [easy showAnything, ShellAgentPluginOutputText, LoadImage, LoadImage, LoadImage, SaveImage, LoadVideo, MiniMaxH3PromptEnhancerT8, MuyeTextEditOutput]
 patterns: []
 missing: []

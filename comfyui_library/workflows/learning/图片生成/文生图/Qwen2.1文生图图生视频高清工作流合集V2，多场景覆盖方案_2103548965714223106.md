@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
 hash: c91c481d77e6b31e
-coverage: 0.797468
-learned_at: 2026-10-10 20:59:07
+coverage: 0.848101
+learned_at: 2026-10-15 22:27:23
 nodes: [VAELoader, SetNode, EmptyLatentImage, SetNode, TTP_Image_Assy, TTP_Image_Tile_Batch, TTP_Tile_image_size, easy imageSize, SeedVR2VideoUpscaler, ImageScaleBy, ImageResize+, ImageResize+, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, easy imageSize, GetNode, Any Switch (rgthree), Image Comparer (rgthree), LoadImage, LoadImage, LoadImage, ComfySwitchNode, GetNode, ImageScaleBy, CLIPLoader, ResolutionSelector, TextEncodeQwenImage21, UNETLoader, VAEDecode, SaveImage, QwenImage21Cache, ResolutionSelector, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, VAEDecode, ImageConcatMulti, SaveImage, SaveImage, LoraLoaderModelOnly, KSampler, KSampler, Fast Groups Bypasser (rgthree), SaveImage, LoraLoaderModelOnly, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [ImageResize+, ImageResize+, easy imageSize, easy imageSize]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen2.1文生图图生视频高清工作流合集V2，多场景覆盖方案_2103548965714223106.json
@@ -22,10 +22,12 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（79 个）：
 - `VAELoader`
 - `SetNode`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `SetNode`
 - `TTP_Image_Assy`
 - `TTP_Image_Tile_Batch`
@@ -50,55 +52,55 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 - `CLIPLoader`
 - `ResolutionSelector`
 - `TextEncodeQwenImage21`
-- `UNETLoader`
-- `VAEDecode`
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `QwenImage21Cache`
 - `ResolutionSelector`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `LoadImage`
 - `LoadImage`
 - `LoadImage`
 - `TextEncodeQwenImage21`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `ImageConcatMulti`
 - `SaveImage`
 - `SaveImage`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `KSampler`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `SaveImage`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `EmptyLatentImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `JjkText`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `solarL_SaveImagesToZip`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -107,23 +109,23 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
+- `width` = `80`
 - `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
+- `batch_size` = `1`
 - `seed` = `598626327129635`
 - `steps` = `4`
-- `width` = `80`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **80%**（63/79）
+覆盖率 **85%**（67/79）
 
-**有卡**：`VAELoader`、`SetNode`、`EmptyLatentImage`、`TTP_Image_Assy`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`easy imageSize`、`SeedVR2VideoUpscaler`、`ImageScaleBy`、`ImageResize+`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`GetNode`、`Any Switch (rgthree)`、`Image Comparer (rgthree)`、`LoadImage`、`ComfySwitchNode`、`CLIPLoader`、`ResolutionSelector`、`TextEncodeQwenImage21`、`UNETLoader`、`VAEDecode`、`SaveImage`、`QwenImage21Cache`、`ImageConcatMulti`、`LoraLoaderModelOnly`、`KSampler`、`Fast Groups Bypasser (rgthree)`、`孤海注释`
+**有卡**：`VAELoader`、`EmptyLatentImage`、`TTP_Image_Assy`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`easy imageSize`、`SeedVR2VideoUpscaler`、`ImageScaleBy`、`ImageResize+`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`LoadImage`、`CLIPLoader`、`ResolutionSelector`、`TextEncodeQwenImage21`、`UNETLoader`、`VAEDecode`、`SaveImage`、`QwenImage21Cache`、`ImageConcatMulti`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（4）：`ImageResize+`、`ImageResize+`、`easy imageSize`、`easy imageSize`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 
@@ -134,10 +136,6 @@ discoveries: [次要节点 `ImageResize+` 仅有 Resolution 的通用知识，�
 
 ## 学习发现
 
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax H3 selflift 速度质量完美平衡，内置自动提示词skill、光流补帧_2108105415606226946.json
 hash: 590cafa22ab879b7
-coverage: 0.418605
-learned_at: 2026-10-10 23:04:08
+coverage: 0.465116
+learned_at: 2026-10-15 22:46:32
 nodes: [VAELoader, VAELoader, VAEDecode, VAEDecodeAudio, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, MiniMaxH3SigmaShift, ModelAttentionBackend, UNETLoader, CLIPLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, SetNode, SetNode, SetNode, LoraLoaderModelOnly, SetNode, GetNode, GetNode, ConditioningZeroOut, KSamplerSelect, LTXVSeparateAVLatent, SetNode, GetNode, GetNode, SetNode, ModelPreviewOverrideKJ, LoraLoaderModelOnly, SetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, VHS_LoadVideo, SetNode, LoadAudio, LoadAudio, LoadAudio, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ComfyMathExpression, PrimitiveFloat, QwenH3PromptLocal, MarkdownNote, ResolutionSelector, ExtendIntermediateSigmas, BasicScheduler, LoadImage, LoadImage, SelfLiftH3Sampler, GetNode, GetNode, RIFE VFI, easy textSwitch, MiniMaxH3AudioConditioningT8, 忽略多组孤海, 忽略多组孤海, MuyeTextEditOutput, VHS_VideoCombine]
 patterns: []
-missing: [RIFE VFI, easy textSwitch, 忽略多组孤海, 忽略多组孤海]
-discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Minimax H3 selflift 速度质量完美平衡，内置自动提示词skill、光流补帧_2108105415606226946.json
@@ -112,17 +111,8 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **42%**（36/86）
+覆盖率 **47%**（40/86）
 
-**有卡**：`VAELoader`、`VAEDecode`、`VAEDecodeAudio`、`VHS_VideoCombine`、`MiniMaxH3SigmaShift`、`ModelAttentionBackend`、`UNETLoader`、`CLIPLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`ConditioningZeroOut`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`ModelPreviewOverrideKJ`、`LoadImage`、`VHS_LoadVideo`、`LoadAudio`、`ComfyMathExpression`、`QwenH3PromptLocal`、`ResolutionSelector`、`ExtendIntermediateSigmas`、`BasicScheduler`、`SelfLiftH3Sampler`、`MiniMaxH3AudioConditioningT8`、`MuyeTextEditOutput`
-
-**缺卡**（4）：`RIFE VFI`、`easy textSwitch`、`忽略多组孤海`、`忽略多组孤海`
+**有卡**：`VAELoader`、`VAEDecode`、`VAEDecodeAudio`、`VHS_VideoCombine`、`MiniMaxH3SigmaShift`、`ModelAttentionBackend`、`UNETLoader`、`CLIPLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`ConditioningZeroOut`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`ModelPreviewOverrideKJ`、`LoadImage`、`VHS_LoadVideo`、`LoadAudio`、`ComfyMathExpression`、`QwenH3PromptLocal`、`ResolutionSelector`、`ExtendIntermediateSigmas`、`BasicScheduler`、`SelfLiftH3Sampler`、`RIFE VFI`、`easy textSwitch`、`MiniMaxH3AudioConditioningT8`、`忽略多组孤海`、`MuyeTextEditOutput`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识

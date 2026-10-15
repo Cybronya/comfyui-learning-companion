@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Image_capybara_v0_1_text_to_video_fast_2027049393966292993.json
 hash: 74969e5d4c64bb58
 coverage: 0.842105
-learned_at: 2026-10-11 03:16:44
+learned_at: 2026-10-15 22:44:28
 nodes: [SamplerCustomAdvanced, ModelSamplingSD3, DualCLIPLoader, VAELoader, CLIPTextEncode, KSamplerSelect, RandomNoise, MarkdownNote, MarkdownNote, MarkdownNote, UNETLoader, BasicScheduler, CFGGuider, EmptyHunyuanVideo15Latent, VAEDecode, CreateVideo, SaveVideo, CLIPTextEncode, LoraLoaderModelOnly]
 patterns: []
 missing: []

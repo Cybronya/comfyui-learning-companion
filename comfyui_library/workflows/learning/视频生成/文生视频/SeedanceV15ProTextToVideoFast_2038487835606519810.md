@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/SeedanceV15ProTextToVideoFast_2038487835606519810.json
 hash: 0a29632305f09cd8
 coverage: 1
-learned_at: 2026-10-11 03:48:37
+learned_at: 2026-10-15 22:47:00
 nodes: [RH_SeedanceV15ProTextToVideoFast, SaveVideo]
 patterns: []
 missing: []
@@ -31,4 +31,4 @@ missing: []
 
 **有卡**：`RH_SeedanceV15ProTextToVideoFast`、`SaveVideo`
 
-**用到的条目**：RH_SeedanceV15ProTextToVideoFast、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、RH_SeedanceV15ProTextToVideo、Text、sampler_name 调整经验
+**用到的条目**：RH_SeedanceV15ProTextToVideoFast、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、RH_SeedanceV15ProTextToVideo、Seed、Text

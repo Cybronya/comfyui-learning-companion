@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_mage_flow_edit_int8.json
 hash: 3637204909edb227
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:48:13
+coverage: 0.6
+learned_at: 2026-10-15 22:24:54
 nodes: [LoadImage, SaveImageAdvanced, d069257b-0abc-4d5a-9a19-579e0fe5bd8d, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [d069257b-0abc-4d5a-9a19-579e0fe5bd8d]
-discoveries: [次要节点 `d069257b-0abc-4d5a-9a19-579e0fe5bd8d` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_mage_flow_edit_int8.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `d069257b-0abc-4d5a-9a19-579e0fe5bd8d` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`LoadImage`、`SaveImageAdvanced`
+**有卡**：`LoadImage`、`SaveImageAdvanced`、`d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
 
-**缺卡**（1）：`d069257b-0abc-4d5a-9a19-579e0fe5bd8d`
-
-**用到的条目**：LoadImage、SaveImageAdvanced、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `d069257b-0abc-4d5a-9a19-579e0fe5bd8d` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImageAdvanced、d069257b-0abc-4d5a-9a19-579e0fe5bd8d、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Image Save、CS_Preview_Any

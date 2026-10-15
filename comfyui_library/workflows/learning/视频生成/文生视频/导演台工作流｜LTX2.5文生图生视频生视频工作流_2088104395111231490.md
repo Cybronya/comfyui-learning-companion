@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/导演台工作流｜LTX2.5文生图生视频生视频工作流_2088104395111231490.json
 hash: 4e107af585e99bf8
-coverage: 0.875
-learned_at: 2026-10-11 20:53:53
+coverage: 0.921875
+learned_at: 2026-10-15 22:48:33
 nodes: [AudioCrop, MelBandRoFormerModelLoader, LoadImage, LoadImage, LiconMSR, LoadImage, CFGGuider, RandomNoise, LoadImage, VHS_VideoCombine, TTResolutionSelector, LTXVConcatAVLatent, LoadAudio, PreviewAudio, MelBandRoFormerSampler, YusuLTXDirectorGuide, ConditioningZeroOut, LTXVConditioning, LTXVSeparateAVLatent, YusuLTXDirectorCropGuides, BasicScheduler, CreateVideo, LTXVAudioVAEDecode, VAEDecodeTiled, YusuLTXDirector, CLIPLoader, VAELoaderKJ, VAELoaderKJ, TTResolutionSelector, SamplerCustomAdvanced, KSamplerSelect, Label (rgthree), Label (rgthree), Label (rgthree), DiffusionModelLoaderKJ, Fast Groups Bypasser (rgthree), SaveVideo, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
-missing: [Label (rgthree), Label (rgthree), Label (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/导演台工作流｜LTX2.5文生图生视频生视频工作流_2088104395111231490.json
@@ -106,11 +106,9 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **88%**（56/64）
+覆盖率 **92%**（59/64）
 
-**有卡**：`AudioCrop`、`MelBandRoFormerModelLoader`、`LoadImage`、`LiconMSR`、`CFGGuider`、`RandomNoise`、`VHS_VideoCombine`、`TTResolutionSelector`、`LTXVConcatAVLatent`、`LoadAudio`、`PreviewAudio`、`MelBandRoFormerSampler`、`YusuLTXDirectorGuide`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`YusuLTXDirectorCropGuides`、`BasicScheduler`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`YusuLTXDirector`、`CLIPLoader`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`KSamplerSelect`、`DiffusionModelLoaderKJ`、`SaveVideo`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
-
-**缺卡**（3）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`AudioCrop`、`MelBandRoFormerModelLoader`、`LoadImage`、`LiconMSR`、`CFGGuider`、`RandomNoise`、`VHS_VideoCombine`、`TTResolutionSelector`、`LTXVConcatAVLatent`、`LoadAudio`、`PreviewAudio`、`MelBandRoFormerSampler`、`YusuLTXDirectorGuide`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`YusuLTXDirectorCropGuides`、`BasicScheduler`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`YusuLTXDirector`、`CLIPLoader`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`KSamplerSelect`、`Label (rgthree)`、`DiffusionModelLoaderKJ`、`SaveVideo`、`UNETLoader`、`CLIPTextEncode`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
@@ -121,7 +119,4 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

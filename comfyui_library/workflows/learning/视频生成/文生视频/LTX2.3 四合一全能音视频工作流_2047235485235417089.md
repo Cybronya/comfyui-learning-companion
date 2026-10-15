@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 四合一全能音视频工作流_2047235485235417089.json
 hash: e906bb5d4d674669
-coverage: 0.809524
-learned_at: 2026-10-11 19:49:37
+coverage: 0.833333
+learned_at: 2026-10-15 22:44:59
 nodes: [KSamplerSelect, KSamplerSelect, ComfyMathExpression, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, Reroute, LTXVConcatAVLatent, ComfyMathExpression, ManualSigmas, CFGGuider, LTXVLatentUpsampler, LTXVImgToVideoInplace, Note, Note, Note, Note, LTXVAudioVAEDecode, VAEDecodeTiled, PlaySound|pysssss, VAEDecodeTiled, PlaySound|pysssss, ComfyMathExpression, ComfyMathExpression, LTXVSeparateAVLatent, LTXVAudioVAEDecode, SamplerCustomAdvanced, CFGGuider, ImpactConditionalBranch, Note, LTXVCropGuides, ManualSigmas, CLIPTextEncode, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTX2SamplingPreviewOverride, LTXVReferenceAudio, Note, DualCLIPLoaderGGUF, LatentUpscaleModelLoader, CLIPTextEncode, UnetLoaderGGUF, ImpactConditionalBranch, LoraLoaderModelOnly, ImpactConditionalBranch, ImpactConditionalBranch, ImpactConditionalBranch, PrimitiveInt, LoadImage, Note, Note, VHS_VideoCombine, RandomNoise, RandomNoise, PrimitiveStringMultiline, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVAudioVAEEncode, SetLatentNoiseMask, LTXVEmptyLatentAudio, SolidMask, LoraLoaderModelOnly, VAELoaderKJ, VAELoaderKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, LTX2_NAG, LTXVConditioning, LoraLoaderModelOnly, VHS_VideoCombine, PrimitiveInt, PrimitiveInt, PreviewAudio, ResizeImagesByLongerEdge, LTXVPreprocess, TrimAudioDuration, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, LoadAudio, PrimitiveInt, ComfyMathExpression, LTXVEnhanceAVideoKJ]
 patterns: []
-missing: [PlaySound|pysssss, PlaySound|pysssss]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 四合一全能音视频工作流_2047235485235417089.json
@@ -117,15 +116,8 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **81%**（68/84）
+覆盖率 **83%**（70/84）
 
-**有卡**：`KSamplerSelect`、`ComfyMathExpression`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`ManualSigmas`、`CFGGuider`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`ImpactConditionalBranch`、`LTXVCropGuides`、`CLIPTextEncode`、`LTX2SamplingPreviewOverride`、`LTXVReferenceAudio`、`DualCLIPLoaderGGUF`、`LatentUpscaleModelLoader`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`LoadImage`、`VHS_VideoCombine`、`RandomNoise`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`SolidMask`、`VAELoaderKJ`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LTX2_NAG`、`LTXVConditioning`、`PreviewAudio`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`TrimAudioDuration`、`PrimitiveBoolean`、`LoadAudio`、`LTXVEnhanceAVideoKJ`
-
-**缺卡**（2）：`PlaySound|pysssss`、`PlaySound|pysssss`
+**有卡**：`KSamplerSelect`、`ComfyMathExpression`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`ManualSigmas`、`CFGGuider`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`PlaySound|pysssss`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`ImpactConditionalBranch`、`LTXVCropGuides`、`CLIPTextEncode`、`LTX2SamplingPreviewOverride`、`LTXVReferenceAudio`、`DualCLIPLoaderGGUF`、`LatentUpscaleModelLoader`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`LoadImage`、`VHS_VideoCombine`、`RandomNoise`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`SolidMask`、`VAELoaderKJ`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LTX2_NAG`、`LTXVConditioning`、`PreviewAudio`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`TrimAudioDuration`、`PrimitiveBoolean`、`LoadAudio`、`LTXVEnhanceAVideoKJ`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识

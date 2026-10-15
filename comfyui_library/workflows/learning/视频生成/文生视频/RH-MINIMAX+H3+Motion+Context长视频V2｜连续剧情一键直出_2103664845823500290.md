@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH-MINIMAX+H3+Motion+Context长视频V2｜连续剧情一键直出_2103664845823500290.json
 hash: 147463aa123c0970
-coverage: 0.852459
-learned_at: 2026-10-11 22:12:46
+coverage: 0.934426
+learned_at: 2026-10-15 22:46:52
 nodes: [ModelPreviewOverrideKJ, easy modelLoaderPack, ModelAttentionBackend, VAELoader, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, easy multitrackProject, ManualSigmas, KSamplerSelect, KSamplerSelect, BasicScheduler, easy multiTrackEditor, VAELoader, UNETLoader, CLIPLoader, easy multitrackProjectVideoCombine, SaveVideo, easy saveVideo, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [easy modelLoaderPack, easy multiTrackEditor, easy multitrackProject, easy multitrackProjectVideoCombine, easy saveVideo]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `easy modelLoaderPack` 知识库中没有该节点类型的任何知识, 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识, 次要节点 `easy multitrackProject` 知识库中没有该节点类型的任何知识, 次要节点 `easy multitrackProjectVideoCombine` 知识库中没有该节点类型的任何知识, 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/RH-MINIMAX+H3+Motion+Context长视频V2｜连续剧情一键直出_2103664845823500290.json
@@ -103,11 +103,9 @@ discoveries: [次要节点 `easy modelLoaderPack` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **85%**（52/61）
+覆盖率 **93%**（57/61）
 
-**有卡**：`ModelPreviewOverrideKJ`、`ModelAttentionBackend`、`VAELoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`UNETLoader`、`CLIPLoader`、`SaveVideo`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`
-
-**缺卡**（5）：`easy modelLoaderPack`、`easy multiTrackEditor`、`easy multitrackProject`、`easy multitrackProjectVideoCombine`、`easy saveVideo`
+**有卡**：`ModelPreviewOverrideKJ`、`easy modelLoaderPack`、`ModelAttentionBackend`、`VAELoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoraLoaderModelOnly`、`easy multitrackProject`、`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`easy multiTrackEditor`、`UNETLoader`、`CLIPLoader`、`easy multitrackProjectVideoCombine`、`SaveVideo`、`easy saveVideo`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader
 
@@ -118,9 +116,4 @@ discoveries: [次要节点 `easy modelLoaderPack` 知识库中没有该节点类
 
 ## 学习发现
 
-- 次要节点 `easy modelLoaderPack` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multitrackProject` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multitrackProjectVideoCombine` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

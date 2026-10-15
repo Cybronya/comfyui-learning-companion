@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
 hash: 59bacec04f6d6ffc
-coverage: 0.764706
-learned_at: 2026-10-10 20:58:39
+coverage: 0.794118
+learned_at: 2026-10-15 22:26:31
 nodes: [EmptyLatentImage, CLIPTextEncode, ConditioningZeroOut, SaveImage, ImageMergeTileList, SeedVR2PostProcessing, SeedVR2Conditioning, VAEEncodeTiled, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, SeedVR2Preprocess, KSampler, GetImageSize, VAEDecodeTiled, SplitImageToTileList, PrimitiveInt, PrimitiveInt, ResizeImageMaskNode, PrimitiveFloat, VAEDecode, Seed (rgthree), ResolutionSelector, Fast Groups Bypasser (rgthree), KSamplerAdvanced, MarkdownNote, VAELoader, CLIPLoader, LoraLoaderModelOnly, UNETLoader, VAELoader, PreviewImage, UNETLoader, PrimitiveStringMultiline]
 patterns: [text_to_image]
-missing: [Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 8, "denoise": "beta", "height": 512, "sampler_name": 1, "scheduler": "ddim", "seed": "enable", "steps": "randomize", "width": 512}
-discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/HerRAW-v0.1 配套工作流_2105122285165301761.json
@@ -22,63 +22,65 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（34 个）：
-- `EmptyLatentImage`
-- `CLIPTextEncode`
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
 - `ConditioningZeroOut`
 - `SaveImage`
 - `ImageMergeTileList`
 - `SeedVR2PostProcessing`
 - `SeedVR2Conditioning`
-- `VAEEncodeTiled`
+- `VAEEncodeTiled` ★核心
 - `ComfyMathExpression`
 - `ComfyMathExpression`
 - `ComfyMathExpression`
 - `SeedVR2Preprocess`
-- `KSampler`
+- `KSampler` ★核心
 - `GetImageSize`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `SplitImageToTileList`
 - `PrimitiveInt`
 - `PrimitiveInt`
 - `ResizeImageMaskNode`
 - `PrimitiveFloat`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Seed (rgthree)`
 - `ResolutionSelector`
 - `Fast Groups Bypasser (rgthree)`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `MarkdownNote`
 - `VAELoader`
 - `CLIPLoader`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
 - `VAELoader`
 - `PreviewImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `PrimitiveStringMultiline`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `8`
-- `denoise` = `beta`
+- `width` = `512`
 - `height` = `512`
-- `sampler_name` = `1`
-- `scheduler` = `ddim`
+- `batch_size` = `1`
 - `seed` = `enable`
 - `steps` = `randomize`
-- `width` = `512`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `ddim`
+- `denoise` = `beta`
 
 ## 知识
 
-覆盖率 **76%**（26/34）
+覆盖率 **79%**（27/34）
 
-**有卡**：`EmptyLatentImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`SaveImage`、`ImageMergeTileList`、`SeedVR2PostProcessing`、`SeedVR2Conditioning`、`VAEEncodeTiled`、`ComfyMathExpression`、`SeedVR2Preprocess`、`KSampler`、`GetImageSize`、`VAEDecodeTiled`、`SplitImageToTileList`、`PrimitiveInt`、`ResizeImageMaskNode`、`PrimitiveFloat`、`VAEDecode`、`Seed (rgthree)`、`ResolutionSelector`、`Fast Groups Bypasser (rgthree)`、`KSamplerAdvanced`、`MarkdownNote`
+**有卡**：`EmptyLatentImage`、`CLIPTextEncode`、`ConditioningZeroOut`、`SaveImage`、`ImageMergeTileList`、`SeedVR2PostProcessing`、`SeedVR2Conditioning`、`VAEEncodeTiled`、`ComfyMathExpression`、`SeedVR2Preprocess`、`KSampler`、`GetImageSize`、`VAEDecodeTiled`、`SplitImageToTileList`、`ResizeImageMaskNode`、`VAEDecode`、`Seed (rgthree)`、`ResolutionSelector`、`KSamplerAdvanced`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`
 
-**缺卡**（1）：`Seed (rgthree)`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
 ## 参数体检
 
@@ -87,5 +89,4 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 
 ## 学习发现
 
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

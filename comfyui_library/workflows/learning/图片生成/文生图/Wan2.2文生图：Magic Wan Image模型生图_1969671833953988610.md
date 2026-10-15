@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图：Magic Wan Image模型生图_1969671833953988610.json
 hash: 5af0b8fbcd83e336
 coverage: 0.916667
-learned_at: 2026-10-10 20:59:14
+learned_at: 2026-10-15 22:27:37
 nodes: [ModelSamplingSD3, EmptyLatentImage, CLIPLoader, KSampler, VAEDecode, FluxResolutionNode, PrimitiveStringMultiline, CLIPTextEncode, CLIPTextEncode, VAELoader, UNETLoader, SaveImage]
 patterns: [text_to_image]
 missing: []
@@ -20,36 +20,40 @@ parameters: {"batch_size": 1, "cfg": 3, "denoise": 1, "height": 1376, "sampler_n
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（12 个）：
 - `ModelSamplingSD3`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `CLIPLoader`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `FluxResolutionNode`
 - `PrimitiveStringMultiline`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `SaveImage`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `3`
-- `denoise` = `1`
+- `width` = `768`
 - `height` = `1376`
-- `sampler_name` = `deis`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `969272243003471`
 - `steps` = `30`
-- `width` = `768`
+- `cfg` = `3`
+- `sampler_name` = `deis`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **92%**（11/12）
 
-**有卡**：`ModelSamplingSD3`、`EmptyLatentImage`、`CLIPLoader`、`KSampler`、`VAEDecode`、`FluxResolutionNode`、`PrimitiveStringMultiline`、`CLIPTextEncode`、`VAELoader`、`UNETLoader`
+**有卡**：`ModelSamplingSD3`、`EmptyLatentImage`、`CLIPLoader`、`KSampler`、`VAEDecode`、`FluxResolutionNode`、`CLIPTextEncode`、`VAELoader`、`UNETLoader`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、FluxResolutionNode

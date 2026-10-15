@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json
 hash: db55e2654a101243
-coverage: 0.868852
-learned_at: 2026-10-10 23:04:54
+coverage: 0.901639
+learned_at: 2026-10-15 22:46:51
 nodes: [ImageCropper, VAELoader, CLIPLoader, KSamplerAdvanced, TTP_Expand_And_Mask, Image Rembg (Remove Background), TextEncodeQwenImage21, UNETLoader, UpscaleModelLoader, ImageUpscaleWithModel, ImageScaleToTotalPixels, FastCanvasTool, LoadImage, LoadImage, FastCanvas, PreviewImage, LoraLoaderModelOnly, KSamplerAdvanced, LoraLoaderModelOnly, FluxGuidance, KSamplerAdvanced, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, SaveImageAdvanced, LoadImage, SaveImageAdvanced, VAEDecode, VAEDecode, SaveImage, Image Comparer (rgthree), SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [Image Rembg (Remove Background), CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Image Rembg (Remove Background)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Qwen Image 2.1商品主体任意溶图40步质量加Viggle加速双路线工作流，图生视频_2108276276401360897.json
@@ -103,11 +103,9 @@ discoveries: [次要节点 `Image Rembg (Remove Background)` 知识库中没有�
 
 ## 知识
 
-覆盖率 **87%**（53/61）
+覆盖率 **90%**（55/61）
 
-**有卡**：`ImageCropper`、`VAELoader`、`CLIPLoader`、`KSamplerAdvanced`、`TTP_Expand_And_Mask`、`TextEncodeQwenImage21`、`UNETLoader`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`ImageScaleToTotalPixels`、`FastCanvasTool`、`LoadImage`、`FastCanvas`、`LoraLoaderModelOnly`、`FluxGuidance`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（2）：`Image Rembg (Remove Background)`、`CR Prompt Text`
+**有卡**：`ImageCropper`、`VAELoader`、`CLIPLoader`、`KSamplerAdvanced`、`TTP_Expand_And_Mask`、`Image Rembg (Remove Background)`、`TextEncodeQwenImage21`、`UNETLoader`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`ImageScaleToTotalPixels`、`FastCanvasTool`、`LoadImage`、`FastCanvas`、`LoraLoaderModelOnly`、`FluxGuidance`、`CR Prompt Text`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader
 
@@ -118,6 +116,4 @@ discoveries: [次要节点 `Image Rembg (Remove Background)` 知识库中没有�
 
 ## 学习发现
 
-- 次要节点 `Image Rembg (Remove Background)` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

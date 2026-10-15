@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json
 hash: 45a9981ce8ba6ca9
-coverage: 0.535714
-learned_at: 2026-10-10 20:48:12
+coverage: 0.678571
+learned_at: 2026-10-15 22:25:36
 nodes: [VAELoader, CLIPLoader, TextGenerateLTX2Prompt, TextEncodeQwenImage21, KSampler, easy setNode, VAEDecode, ShowText|pysssss, EmptyLatentImage, ComfySwitchNode, LoadImage, CLIPLoader, CLIPLoader, SetNode, SetNode, GetNode, ResolutionSelector, LayerUtility: ImageReelComposit, LayerUtility: ImageReel, UNETLoader, SaveImage, PreviewImage, Image Comparer (rgthree), CR Prompt Text, Note, LoraLoaderModelOnly, QwenImage21Cache, Anything Everywhere3]
 patterns: []
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReelComposit, easy setNode, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 783330575672886, "steps": 40, "width": 1024}
-discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/qwen image2.1产品细节图_2102470856244031490.json
@@ -67,17 +66,8 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **54%**（15/28）
+覆盖率 **68%**（19/28）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`LoadImage`、`ResolutionSelector`、`UNETLoader`、`SaveImage`、`LoraLoaderModelOnly`、`QwenImage21Cache`
-
-**缺卡**（4）：`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`easy setNode`、`CR Prompt Text`
+**有卡**：`VAELoader`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`TextEncodeQwenImage21`、`KSampler`、`easy setNode`、`VAEDecode`、`EmptyLatentImage`、`LoadImage`、`ResolutionSelector`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReel`、`UNETLoader`、`SaveImage`、`CR Prompt Text`、`LoraLoaderModelOnly`、`QwenImage21Cache`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

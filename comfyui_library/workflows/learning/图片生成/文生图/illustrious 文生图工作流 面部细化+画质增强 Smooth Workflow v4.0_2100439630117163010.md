@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
 hash: 0ae5cca1dc38d4d2
-coverage: 0.5
-learned_at: 2026-10-10 20:59:21
+coverage: 0.583333
+learned_at: 2026-10-15 22:27:48
 nodes: [SetNode, SetNode, SetNode, KSampler, GetNode, VAEDecode, VAELoader, GetNode, CheckpointLoaderSimple, EmptyLatentImage, GetNode, GetNode, easy hiresFix, SaveImage, SAMLoader, GetNode, UltralyticsDetectorProvider, FaceDetailer, SaveImage, CLIPTextEncode, CLIPTextEncode, MarkdownNote, GetNode, Lora Loader Stack (rgthree)]
 patterns: [text_to_image]
-missing: [Lora Loader Stack (rgthree), easy hiresFix]
+missing: []
 parameters: {"batch_size": 1, "cfg": 4, "checkpoint": "silvermoonmix_v60VPred.safetensors", "denoise": 1, "height": 2080, "sampler_name": "euler", "scheduler": "simple", "seed": 1020876831251013, "steps": 20, "width": 1088}
-discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy hiresFix` 仅有 Upscale 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/illustrious 文生图工作流 面部细化+画质增强 Smooth Workflow v4.0_2100439630117163010.json
@@ -21,17 +20,19 @@ discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（24 个）：
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `KSampler`
+- `KSampler` ★核心
 - `GetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `VAELoader`
 - `GetNode`
-- `CheckpointLoaderSimple`
-- `EmptyLatentImage`
+- `CheckpointLoaderSimple` ★核心
+- `EmptyLatentImage` ★核心
 - `GetNode`
 - `GetNode`
 - `easy hiresFix`
@@ -41,8 +42,8 @@ discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用�
 - `UltralyticsDetectorProvider`
 - `FaceDetailer`
 - `SaveImage`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `MarkdownNote`
 - `GetNode`
 - `Lora Loader Stack (rgthree)`
@@ -51,26 +52,21 @@ discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4`
-- `checkpoint` = `silvermoonmix_v60VPred.safetensors`
-- `denoise` = `1`
-- `height` = `2080`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `1020876831251013`
 - `steps` = `20`
+- `cfg` = `4`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `checkpoint` = `silvermoonmix_v60VPred.safetensors`
 - `width` = `1088`
+- `height` = `2080`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **50%**（12/24）
+覆盖率 **58%**（14/24）
 
-**有卡**：`SetNode`、`KSampler`、`GetNode`、`VAEDecode`、`VAELoader`、`CheckpointLoaderSimple`、`EmptyLatentImage`
+**有卡**：`KSampler`、`VAEDecode`、`VAELoader`、`CheckpointLoaderSimple`、`EmptyLatentImage`、`easy hiresFix`、`SaveImage`、`SAMLoader`、`UltralyticsDetectorProvider`、`FaceDetailer`、`CLIPTextEncode`、`Lora Loader Stack (rgthree)`
 
-**缺卡**（2）：`Lora Loader Stack (rgthree)`、`easy hiresFix`
-
-## 学习发现
-
-- 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `easy hiresFix` 仅有 Upscale 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、Lora Loader Stack (rgthree)、easy hiresFix

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3-T2V-文生音视频_2029816055798964226.json
 hash: 0d65e99fa88a7ef6
-coverage: 0.795455
-learned_at: 2026-10-11 03:16:45
+coverage: 0.818182
+learned_at: 2026-10-15 22:44:40
 nodes: [LTXVScheduler, ManualSigmas, LatentUpscaleModelLoader, LTXVCropGuides, CFGGuider, ImageScaleBy, GetImageSize, LTXVEmptyLatentAudio, LTXVConditioning, EmptyLTXVLatentVideo, LTXVConcatAVLatent, CLIPTextEncode, PrimitiveInt, SamplerCustomAdvanced, RandomNoise, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVLatentUpsampler, SamplerCustomAdvanced, CLIPTextEncode, CreateVideo, LTXVAudioVAELoader, LTXVSeparateAVLatent, VAEDecode, VAEDecodeTiled, LTXVAudioVAEDecode, CFGGuider, PrimitiveFloat, PrimitiveInt, MarkdownNote, KSamplerSelect, KSamplerSelect, RandomNoise, Reroute, CheckpointLoaderSimple, LTXAVTextEncoderLoader, MarkdownNote, MarkdownNote, SaveVideo, LoraLoaderModelOnly, PreviewAny, EmptyImage, TextGenerateLTX2Prompt, CR Prompt Text]
 patterns: []
-missing: [CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX-2.3-T2V-文生音视频_2029816055798964226.json
@@ -78,14 +77,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **80%**（35/44）
+覆盖率 **82%**（36/44）
 
-**有卡**：`LTXVScheduler`、`ManualSigmas`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`CFGGuider`、`ImageScaleBy`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CreateVideo`、`LTXVAudioVAELoader`、`VAEDecode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`KSamplerSelect`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`SaveVideo`、`LoraLoaderModelOnly`、`EmptyImage`、`TextGenerateLTX2Prompt`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`LTXVScheduler`、`ManualSigmas`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`CFGGuider`、`ImageScaleBy`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CreateVideo`、`LTXVAudioVAELoader`、`VAEDecode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`KSamplerSelect`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`SaveVideo`、`LoraLoaderModelOnly`、`EmptyImage`、`TextGenerateLTX2Prompt`、`CR Prompt Text`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

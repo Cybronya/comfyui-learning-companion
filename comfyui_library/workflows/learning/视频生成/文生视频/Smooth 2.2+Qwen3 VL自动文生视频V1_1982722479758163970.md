@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json
 hash: c1b1f4ecac193dd4
-coverage: 0.78125
-learned_at: 2026-10-11 02:45:01
+coverage: 0.9375
+learned_at: 2026-10-15 22:47:00
 nodes: [PathchSageAttentionKJ, EmptyHunyuanLatentVideo, VAELoader, CLIPLoader, JWInteger, JWInteger, INTConstant, INTConstant, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, TextConcat, CR Prompt Text, easy showAnything, JWInteger, CLIPTextEncode, easy showAnything, SDVN Any Show, CLIPTextEncode, PathchSageAttentionKJ, Qwen3_VQA, CR Prompt Text, LoraLoaderModelOnly, UNETLoader, VAEDecode, ImageFromBatch+, CR Prompt Text, VHS_VideoCombine]
 patterns: []
-missing: [ImageFromBatch+, SDVN Any Show, CR Prompt Text, CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"cfg": 12, "denoise": "beta", "sampler_name": 1, "scheduler": "uni_pc", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `SDVN Any Show` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Smooth 2.2+Qwen3 VL自动文生视频V1_1982722479758163970.json
@@ -68,18 +67,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **78%**（25/32）
+覆盖率 **94%**（30/32）
 
-**有卡**：`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`VAELoader`、`CLIPLoader`、`JWInteger`、`INTConstant`、`ModelSamplingSD3`、`KSamplerAdvanced`、`LoraLoaderModelOnly`、`UNETLoader`、`TextConcat`、`CLIPTextEncode`、`Qwen3_VQA`、`VAEDecode`、`VHS_VideoCombine`
-
-**缺卡**（5）：`ImageFromBatch+`、`SDVN Any Show`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`VAELoader`、`CLIPLoader`、`JWInteger`、`INTConstant`、`ModelSamplingSD3`、`KSamplerAdvanced`、`LoraLoaderModelOnly`、`UNETLoader`、`TextConcat`、`CR Prompt Text`、`CLIPTextEncode`、`SDVN Any Show`、`Qwen3_VQA`、`VAEDecode`、`ImageFromBatch+`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SDVN Any Show` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

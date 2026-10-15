@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频S.0 文生视频_1977617170953850882.json
 hash: 83893af2c2b763d9
 coverage: 0.666667
-learned_at: 2026-10-10 23:10:49
+learned_at: 2026-10-15 22:47:56
 nodes: [RH_Sora2_T2V, MarkdownNote, SaveVideo]
 patterns: []
 missing: []

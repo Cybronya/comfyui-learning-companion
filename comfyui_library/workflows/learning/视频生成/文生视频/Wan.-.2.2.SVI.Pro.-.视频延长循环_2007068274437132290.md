@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan.-.2.2.SVI.Pro.-.视频延长循环_2007068274437132290.json
 hash: 0f55dbdc1364ad24
-coverage: 0.576471
-learned_at: 2026-10-11 03:07:12
+coverage: 0.658824
+learned_at: 2026-10-15 22:47:07
 nodes: [WanVideoSamplerv2, WanVideoSchedulerv2, SetNode, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, SetNode, SetNode, WanVideoSVIProEmbeds, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoSchedulerv2, WanVideoSigmaToStep, WanVideoTorchCompileSettings, WanVideoVAELoader, GetNode, GetNode, SetNode, VHS_VideoCombine, GetNode, WanVideoSamplerv2, SetNode, GetNode, GetNode, Note, GetNode, WanVideoTextEncode, GetNode, SetNode, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, WanVideoDecode, VHS_VideoCombine, SetNode, Text Load Line From File, GetNode, easy batchAnything, easy forLoopEnd, VHS_VideoCombine, VHS_VideoCombine, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, INTConstant, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, SetNode, VHS_VideoInfo, SimpleMath+, GetImageRangeFromBatch, INTConstant, INTConstant, WanVideoSVIProEmbeds, WanVideoEncode, easy forLoopStart, GetNode, WanVideoSamplerv2, WanVideoSamplerv2, easy seed, ImageResizeKJv2, WanVideoBlockSwap, LoadImage, SimpleMath+, WanVideoEncode, GetImageRangeFromBatch, ImageBatchExtendWithOverlap, WanVideoDecode, SetNode, ImageBatchExtendWithOverlap, WanVideoTextEncode, PrimitiveStringMultiline, VHS_LoadVideo, PreviewImage, easy ifElse]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, Text Load Line From File, easy batchAnything, easy forLoopEnd, easy forLoopStart, easy seed]
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/Wan.-.2.2.SVI.Pro.-.视频延长循环_2007068274437132290.json
@@ -111,20 +110,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **58%**（49/85）
+覆盖率 **66%**（56/85）
 
-**有卡**：`WanVideoSamplerv2`、`WanVideoSchedulerv2`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSVIProEmbeds`、`WanVideoSigmaToStep`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`VHS_VideoCombine`、`WanVideoTextEncode`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoModelLoader`、`INTConstant`、`VHS_VideoInfo`、`GetImageRangeFromBatch`、`WanVideoEncode`、`ImageResizeKJv2`、`WanVideoBlockSwap`、`LoadImage`、`ImageBatchExtendWithOverlap`、`VHS_LoadVideo`
+**有卡**：`WanVideoSamplerv2`、`WanVideoSchedulerv2`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSVIProEmbeds`、`WanVideoSigmaToStep`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`VHS_VideoCombine`、`WanVideoTextEncode`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`Text Load Line From File`、`easy batchAnything`、`easy forLoopEnd`、`WanVideoModelLoader`、`INTConstant`、`VHS_VideoInfo`、`SimpleMath+`、`GetImageRangeFromBatch`、`WanVideoEncode`、`easy forLoopStart`、`easy seed`、`ImageResizeKJv2`、`WanVideoBlockSwap`、`LoadImage`、`ImageBatchExtendWithOverlap`、`VHS_LoadVideo`
 
-**缺卡**（7）：`SimpleMath+`、`SimpleMath+`、`Text Load Line From File`、`easy batchAnything`、`easy forLoopEnd`、`easy forLoopStart`、`easy seed`
-
-**用到的条目**：LoadImage、WanVideoSamplerv2、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoEncode、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、WanVideoSamplerv2、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoEncode

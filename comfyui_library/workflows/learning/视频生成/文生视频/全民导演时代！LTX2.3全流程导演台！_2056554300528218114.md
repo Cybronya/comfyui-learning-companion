@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全民导演时代！LTX2.3全流程导演台！_2056554300528218114.json
 hash: bc14bebc780a497e
-coverage: 0.888889
-learned_at: 2026-10-11 19:49:46
+coverage: 1
+learned_at: 2026-10-15 22:47:50
 nodes: [LTXVCropGuides, ConditioningZeroOut, RandomNoise, SamplerCustomAdvanced, LTXVConcatAVLatent, LTXVSeparateAVLatent, VAEDecodeTiled, CreateVideo, TTResolutionSelector, BasicScheduler, CFGGuider, LTXDirectorGuide, LTXVConditioning, KSamplerSelect, SaveVideo, LTXVAudioVAEDecode, Label (rgthree), Label (rgthree), DiffusionModelLoaderKJ, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LoraLoaderModelOnly, LTXDirector, Label (rgthree), LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/全民导演时代！LTX2.3全流程导演台！_2056554300528218114.json
@@ -53,16 +52,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **89%**（24/27）
+覆盖率 **100%**（27/27）
 
-**有卡**：`LTXVCropGuides`、`ConditioningZeroOut`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`TTResolutionSelector`、`BasicScheduler`、`CFGGuider`、`LTXDirectorGuide`、`LTXVConditioning`、`KSamplerSelect`、`SaveVideo`、`LTXVAudioVAEDecode`、`DiffusionModelLoaderKJ`、`DualCLIPLoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXDirector`
-
-**缺卡**（3）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`LTXVCropGuides`、`ConditioningZeroOut`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`TTResolutionSelector`、`BasicScheduler`、`CFGGuider`、`LTXDirectorGuide`、`LTXVConditioning`、`KSamplerSelect`、`SaveVideo`、`LTXVAudioVAEDecode`、`Label (rgthree)`、`DiffusionModelLoaderKJ`、`DualCLIPLoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXDirector`
 
 **用到的条目**：LoraLoaderModelOnly、ConditioningZeroOut、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent、VAEDecodeTiled
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

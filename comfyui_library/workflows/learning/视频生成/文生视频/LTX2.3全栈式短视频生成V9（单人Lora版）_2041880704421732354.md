@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3全栈式短视频生成V9（单人Lora版）_2041880704421732354.json
 hash: 45c972ac49fe3d02
-coverage: 0.666667
-learned_at: 2026-10-11 19:49:38
+coverage: 0.74359
+learned_at: 2026-10-15 22:45:06
 nodes: [PrimitiveStringMultiline, SetNode, SetNode, easy promptLine, easy convertAnything, easy batchAnything, easy forLoopEnd, RegexExtract, ManualSigmas, CLIPTextEncode, CLIPTextEncode, ComfyMathExpression, LTXVConditioning, LTXVSeparateAVLatent, ManualSigmas, LTXVConcatAVLatent, LTXVSeparateAVLatent, CFGGuider, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, easy forLoopStart, GetNode, GetNode, GetNode, GetNode, SamplerCustomAdvanced, SamplerCustomAdvanced, CFGGuider, ComfyMathExpression, ComfyMathExpression, LTXVCropGuides, LTXVCropGuides, GetNode, LTXVAudioVAEDecode, GetNode, INTConstant, INTConstant, VAEDecodeTiled, TrimVideoLatent, RandomNoise, RandomNoise, KSamplerSelect, KSamplerSelect, KSamplerSelect, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVLatentUpsampler, GetNode, PrimitiveInt, EmptyLTXVLatentVideo, RandomNoise, LTXVEmptyLatentAudio, CFGGuider, GetNode, INTConstant, SetNode, VAELoaderKJ, SetNode, DualCLIPLoader, SetNode, PathchSageAttentionKJ, ModelPatchTorchSettings, VAELoaderKJ, SetNode, LatentUpscaleModelLoader, SetNode, LTXVChunkFeedForward, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, ComfyMathExpression, PrimitiveInt, PrimitiveInt, easy positive]
 patterns: []
-missing: [easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy positive, easy promptLine]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.3全栈式短视频生成V9（单人Lora版）_2041880704421732354.json
@@ -111,19 +110,8 @@ discoveries: [次要节点 `easy batchAnything` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **67%**（52/78）
+覆盖率 **74%**（58/78）
 
-**有卡**：`RegexExtract`、`ManualSigmas`、`CLIPTextEncode`、`ComfyMathExpression`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`INTConstant`、`VAEDecodeTiled`、`TrimVideoLatent`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`VAELoaderKJ`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LatentUpscaleModelLoader`、`LTXVChunkFeedForward`、`UNETLoader`、`LoraLoaderModelOnly`、`VHS_VideoCombine`
-
-**缺卡**（6）：`easy batchAnything`、`easy convertAnything`、`easy forLoopEnd`、`easy forLoopStart`、`easy positive`、`easy promptLine`
+**有卡**：`easy promptLine`、`easy convertAnything`、`easy batchAnything`、`easy forLoopEnd`、`RegexExtract`、`ManualSigmas`、`CLIPTextEncode`、`ComfyMathExpression`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`easy forLoopStart`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`INTConstant`、`VAEDecodeTiled`、`TrimVideoLatent`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`VAELoaderKJ`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LatentUpscaleModelLoader`、`LTXVChunkFeedForward`、`UNETLoader`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`easy positive`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

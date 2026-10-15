@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5导演台+文生数字人_2087538824678301697.json
 hash: ef7bf10abc116a2e
-coverage: 0.954545
-learned_at: 2026-10-11 20:53:38
+coverage: 1
+learned_at: 2026-10-15 22:45:16
 nodes: [RandomNoise, BasicScheduler, KSamplerSelect, VAELoaderKJ, DiffusionModelLoaderKJ, VAELoaderKJ, LTXVConcatAVLatent, VAEDecodeTiled, LTXVSeparateAVLatent, YusuLTXDirectorCropGuides, TTResolutionSelector, SamplerCustomAdvanced, Label (rgthree), CFGGuider, YusuLTXDirectorGuide, LTXVConditioning, CLIPLoader, SaveVideo, LTXVAudioVAEDecode, CreateVideo, YusuLTXDirector, CLIPTextEncode]
 patterns: []
-missing: [Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.5导演台+文生数字人_2087538824678301697.json
@@ -48,14 +47,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **95%**（21/22）
+覆盖率 **100%**（22/22）
 
-**有卡**：`RandomNoise`、`BasicScheduler`、`KSamplerSelect`、`VAELoaderKJ`、`DiffusionModelLoaderKJ`、`LTXVConcatAVLatent`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`YusuLTXDirectorCropGuides`、`TTResolutionSelector`、`SamplerCustomAdvanced`、`CFGGuider`、`YusuLTXDirectorGuide`、`LTXVConditioning`、`CLIPLoader`、`SaveVideo`、`LTXVAudioVAEDecode`、`CreateVideo`、`YusuLTXDirector`、`CLIPTextEncode`
-
-**缺卡**（1）：`Label (rgthree)`
+**有卡**：`RandomNoise`、`BasicScheduler`、`KSamplerSelect`、`VAELoaderKJ`、`DiffusionModelLoaderKJ`、`LTXVConcatAVLatent`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`YusuLTXDirectorCropGuides`、`TTResolutionSelector`、`SamplerCustomAdvanced`、`Label (rgthree)`、`CFGGuider`、`YusuLTXDirectorGuide`、`LTXVConditioning`、`CLIPLoader`、`SaveVideo`、`LTXVAudioVAEDecode`、`CreateVideo`、`YusuLTXDirector`、`CLIPTextEncode`
 
 **用到的条目**：CLIPTextEncode、CLIPLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent、VAEDecodeTiled
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3音图生视频工作流_2031546661310308354.json
 hash: ef5cb413a4e8c7fe
-coverage: 0.881356
-learned_at: 2026-10-11 03:16:47
+coverage: 0.915254
+learned_at: 2026-10-15 22:45:15
 nodes: [LoraLoaderModelOnly, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LTXVLatentUpsampler, RandomNoise, ManualSigmas, LTXVConcatAVLatent, CLIPTextEncode, LTXVConditioning, PathchSageAttentionKJ, RandomNoise, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, ManualSigmas, Reroute, CLIPTextEncode, VAEDecodeTiled, LTXVAudioVAEDecode, LTXVSeparateAVLatent, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, RIFEInterpolation, VHS_VideoCombine, LTXVImgToVideoInplace, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, PrimitiveInt, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, easy showAnything, TrimAudioDuration, EmptyLTXVLatentVideo, LTXVAudioVAEEncode, SetLatentNoiseMask, LTXVImgToVideoInplace, LTXVConcatAVLatent, SolidMask, LTXVEmptyLatentAudio, easy anythingIndexSwitch, PrimitiveBoolean, UNETLoader, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LatentUpscaleModelLoader, INTConstant, INTConstant, INTConstant, LoadImage, LoadAudio, Text Multiline, MarkdownNote]
 patterns: []
-missing: [Text Multiline, easy anythingIndexSwitch]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3音图生视频工作流_2031546661310308354.json
@@ -92,15 +91,8 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **88%**（52/59）
+覆盖率 **92%**（54/59）
 
-**有卡**：`LoraLoaderModelOnly`、`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`RandomNoise`、`ManualSigmas`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`LTXVConditioning`、`PathchSageAttentionKJ`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`RIFEInterpolation`、`VHS_VideoCombine`、`LTXVImgToVideoInplace`、`ComfyMathExpression`、`TrimAudioDuration`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`SolidMask`、`LTXVEmptyLatentAudio`、`PrimitiveBoolean`、`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`INTConstant`、`LoadImage`、`LoadAudio`
-
-**缺卡**（2）：`Text Multiline`、`easy anythingIndexSwitch`
+**有卡**：`LoraLoaderModelOnly`、`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`RandomNoise`、`ManualSigmas`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`LTXVConditioning`、`PathchSageAttentionKJ`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`RIFEInterpolation`、`VHS_VideoCombine`、`LTXVImgToVideoInplace`、`ComfyMathExpression`、`TrimAudioDuration`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`SolidMask`、`LTXVEmptyLatentAudio`、`easy anythingIndexSwitch`、`PrimitiveBoolean`、`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`INTConstant`、`LoadImage`、`LoadAudio`、`Text Multiline`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.0多模态大模型16秒生文生视频工作流_2010893175543570433.json
 hash: 6c8caf93d169b9b6
 coverage: 0.551282
-learned_at: 2026-10-11 03:07:10
+learned_at: 2026-10-15 22:44:53
 nodes: [ManualSigmas, KSamplerSelect, EmptyImage, LTXVEmptyLatentAudio, ImageScaleBy, GetImageSize, KSamplerSelect, LTXVSeparateAVLatent, Reroute, LTXVAudioVAELoader, Reroute, PrimitiveInt, Reroute, Reroute, Reroute, Reroute, Reroute, CheckpointLoaderSimple, CFGGuider, Reroute, Reroute, Reroute, LTXVConditioning, Reroute, Reroute, EmptyLTXVLatentVideo, Reroute, Reroute, Reroute, LTXVCropGuides, RandomNoise, RandomNoise, LTXVLatentUpsampler, LTXVAudioVAEDecode, LTXVSeparateAVLatent, Reroute, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, Reroute, Reroute, Reroute, Reroute, Reroute, MarkdownNote, Reroute, LTXVConcatAVLatent, Reroute, Reroute, SamplerCustomAdvanced, LTXVScheduler, LatentUpscaleModelLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, MarkdownNote, MarkdownNote, Note, PrimitiveFloat, PrimitiveInt, Int, LTXAVTextEncoderLoader, Note, MemoryCleaner, JoinStrings, ShowText|pysssss, VAEDecodeTiled, easy showAnything, MemoryCleaner, CLIPTextEncode, Fast Groups Bypasser (rgthree), Int, Int, Qwen3_VQA, JoinStrings, TextInput_, VHS_VideoCombine, TextInput_]
 patterns: []
 missing: []

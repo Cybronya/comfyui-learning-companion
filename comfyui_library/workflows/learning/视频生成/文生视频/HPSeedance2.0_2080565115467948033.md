@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/HPSeedance2.0_2080565115467948033.json
 hash: 619cb17b17e214cd
 coverage: 1
-learned_at: 2026-10-11 20:38:33
+learned_at: 2026-10-15 22:44:26
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20FastMultimodalVideo, LoadVideo, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`RH_RhartVideoSparkvideo20FastMultimodalVideo`、`LoadVideo`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20FastMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20FastMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage

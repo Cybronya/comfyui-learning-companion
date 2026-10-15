@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生图和视频美女lora工作流-美女保持完美一致性_1961428825634750466.json
 hash: 7482a64ff6f8b700
 coverage: 0.605263
-learned_at: 2026-10-10 20:59:27
+learned_at: 2026-10-15 22:27:58
 nodes: [SetNode, GetNode, GetNode, GetNode, CFGZeroStar, UNETLoader, VAELoader, SetNode, LoraLoaderModelOnly, VAEDecode, GetNode, SetNode, LoraLoaderModelOnly, UNETLoader, SetNode, WanVideoNAG, SetNode, CLIPLoader, ModelSamplingSD3, GetNode, ModelSamplingSD3, PathchSageAttentionKJ, GetNode, VHS_VideoCombine, EmptyHunyuanLatentVideo, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, PreviewImage, String, SetNode, CLIPTextEncode, JoinStringMulti, LoraLoaderModelOnly, LoraLoaderModelOnly, JWStringMultiline, MarkdownNote, Note]
 patterns: []
 missing: []
@@ -20,21 +20,23 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 2.5, "scheduler": "d
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（38 个）：
 - `SetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
 - `CFGZeroStar`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
 - `SetNode`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
 - `GetNode`
 - `SetNode`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
 - `SetNode`
 - `WanVideoNAG`
 - `SetNode`
@@ -46,31 +48,33 @@ parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 2.5, "scheduler": "d
 - `GetNode`
 - `VHS_VideoCombine`
 - `EmptyHunyuanLatentVideo`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
-- `KSamplerAdvanced`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
 - `PreviewImage`
 - `String`
 - `SetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `JoinStringMulti`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `JWStringMultiline`
 - `MarkdownNote`
 - `Note`
 
 ## 关键参数
 
-- `cfg` = `8`
-- `denoise` = `simple`
-- `sampler_name` = `2.5`
-- `scheduler` = `ddim`
 - `seed` = `enable`
 - `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `2.5`
+- `scheduler` = `ddim`
+- `denoise` = `simple`
 
 ## 知识
 
 覆盖率 **61%**（23/38）
 
-**有卡**：`SetNode`、`GetNode`、`CFGZeroStar`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`WanVideoNAG`、`CLIPLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`
+**有卡**：`CFGZeroStar`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`VAEDecode`、`WanVideoNAG`、`CLIPLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`EmptyHunyuanLatentVideo`、`CLIPTextEncode`、`KSamplerAdvanced`、`String`、`JoinStringMulti`、`JWStringMultiline`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、CFGZeroStar

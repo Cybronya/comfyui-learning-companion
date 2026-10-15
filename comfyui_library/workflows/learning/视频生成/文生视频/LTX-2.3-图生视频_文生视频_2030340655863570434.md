@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3-图生视频_文生视频_2030340655863570434.json
 hash: 20ecbc2b2e699f93
 coverage: 0.853659
-learned_at: 2026-10-11 03:16:45
+learned_at: 2026-10-15 22:44:40
 nodes: [LTXVScheduler, LatentUpscaleModelLoader, ImageScaleBy, LTXVEmptyLatentAudio, LTXVConditioning, EmptyLTXVLatentVideo, LTXVConcatAVLatent, CLIPTextEncode, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, CLIPTextEncode, CreateVideo, VAEDecode, VAEDecodeTiled, LTXVAudioVAEDecode, CFGGuider, PrimitiveFloat, PrimitiveInt, MarkdownNote, KSamplerSelect, Reroute, EmptyImage, CheckpointLoaderSimple, LTXVAudioVAELoader, PreviewAny, KSampler, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVCropGuides, SaveVideo, LTXAVTextEncoderLoader, LoraLoaderModelOnly, DualCLIPLoader, TextGenerateLTX2Prompt, RandomNoise, MarkdownNote, MarkdownNote, KSamplerSelect, LTXVScheduler, SamplerCustomAdvanced, LTXVSeparateAVLatent, ImageScaleBy, GetImageSize, GetImageSize, LTXVPreprocess, CFGGuider, EmptyImage, CLIPTextEncode, LTXVImgToVideoInplace, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, MarkdownNote, MarkdownNote, VAEDecode, ResizeImagesByLongerEdge, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LoadImage, CLIPTextEncode, PreviewAny, KSampler, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVConcatAVLatent, ResizeImageMaskNode, LTXVCropGuides, CreateVideo, LTXVConditioning, RandomNoise, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, LatentUpscaleModelLoader, TextGenerateLTX2Prompt, SaveVideo, DualCLIPLoader, GetImageSize, PrimitiveInt, PrimitiveInt]
 patterns: []
 missing: []

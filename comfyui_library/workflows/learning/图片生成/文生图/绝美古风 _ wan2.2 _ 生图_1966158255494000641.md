@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
 hash: 7b85dc39817066d6
-coverage: 0.638889
-learned_at: 2026-10-10 20:59:56
+coverage: 0.861111
+learned_at: 2026-10-15 22:29:02
 nodes: [UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, VAEDecode, SaveImage, SaveImage, SaveImage, VAEDecode, VAEDecode, VAEDecode, KSampler, KSampler, KSampler, KSampler, SaveImage, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, Text Concatenate (JPS), Anything Everywhere, CLIPLoader, VAELoader, EmptyLatentImage, Mute / Bypass Repeater (rgthree), JjkText, CLIPTextEncode, Reroute, CLIPTextEncode, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), LayerUtility: JoyCaptionBeta1, ShowText|pysssss, Fast Bypasser (rgthree), LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, Anything Everywhere3]
 patterns: [text_to_image]
-missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Text Concatenate (JPS)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 267456121467219, "steps": 8, "width": 1024}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/绝美古风 _ wan2.2 _ 生图_1966158255494000641.json
@@ -22,21 +22,23 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（36 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `SaveImage`
 - `SaveImage`
-- `VAEDecode`
-- `VAEDecode`
-- `VAEDecode`
-- `KSampler`
-- `KSampler`
-- `KSampler`
-- `KSampler`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `SaveImage`
 - `LayerUtility: JoyCaptionBeta1ExtraOptions`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
@@ -44,19 +46,19 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 - `Anything Everywhere`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `Mute / Bypass Repeater (rgthree)`
 - `JjkText`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Reroute`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Mute / Bypass Repeater (rgthree)`
 - `Fast Bypasser (rgthree)`
 - `LayerUtility: JoyCaptionBeta1`
 - `ShowText|pysssss`
 - `Fast Bypasser (rgthree)`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `LoadImage`
 - `Anything Everywhere3`
 
@@ -64,23 +66,23 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1536`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
 - `seed` = `267456121467219`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1536`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **64%**（23/36）
+覆盖率 **86%**（31/36）
 
-**有卡**：`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Text Concatenate (JPS)`、`Anything Everywhere`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`Mute / Bypass Repeater (rgthree)`
+**有卡**：`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`KSampler`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Text Concatenate (JPS)`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`Mute / Bypass Repeater (rgthree)`、`CLIPTextEncode`、`Fast Bypasser (rgthree)`、`LayerUtility: JoyCaptionBeta1`、`LoraLoaderModelOnly`、`LoadImage`
 
-**缺卡**（8）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Text Concatenate (JPS)`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 
@@ -92,14 +94,6 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 学习发现
 
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate (JPS)` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

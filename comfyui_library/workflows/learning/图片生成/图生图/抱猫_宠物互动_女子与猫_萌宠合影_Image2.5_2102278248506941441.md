@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/抱猫_宠物互动_女子与猫_萌宠合影_Image2.5_2102278248506941441.json
 hash: 48131c482be1f482
 coverage: 0.6
-learned_at: 2026-10-10 20:48:17
+learned_at: 2026-10-15 22:25:53
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -39,4 +39,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveImage`、`RH_RhartImageG25FlareImageToImage`
 
-**用到的条目**：LoadImage、SaveImage、RH_RhartImageG25FlareImageToImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
+**用到的条目**：LoadImage、SaveImage、RH_RhartImageG25FlareImageToImage、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load、CS_Preview_Any

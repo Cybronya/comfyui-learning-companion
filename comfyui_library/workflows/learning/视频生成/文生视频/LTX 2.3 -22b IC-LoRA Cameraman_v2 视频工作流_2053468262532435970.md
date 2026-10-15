@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json
 hash: b42e8eaad59f95c3
-coverage: 0.836735
-learned_at: 2026-10-10 23:00:07
+coverage: 0.877551
+learned_at: 2026-10-15 22:44:31
 nodes: [PrimitiveInt, PrimitiveInt, KSamplerSelect, CreateVideo, ImageResizeKJv2, ResizeImagesByLongerEdge, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, CLIPTextEncode, LTXVConditioning, EmptyLTXVLatentVideo, ManualSigmas, LTXVPreprocess, KSamplerSelect, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, Reroute, RandomNoise, CFGGuider, ManualSigmas, LTXVLatentUpsampler, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVImgToVideoInplace, LTXVConcatAVLatent, LTXVAudioVAEDecode, RandomNoise, VAEDecode, easy cleanGpuUsed, easy clearCacheAll, Note, SaveVideo, PrimitiveInt, PrimitiveInt, LTXVImgToVideoInplace, LTXVEmptyLatentAudio, VAELoader, VAELoader, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, LoraLoaderModelOnly, LoadImage, CLIPTextEncode, PrimitiveBoolean, UNETLoader]
 patterns: []
-missing: [easy cleanGpuUsed, easy clearCacheAll]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX 2.3 -22b IC-LoRA Cameraman_v2 视频工作流_2053468262532435970.json
@@ -82,15 +81,8 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **84%**（41/49）
+覆盖率 **88%**（43/49）
 
-**有卡**：`KSamplerSelect`、`CreateVideo`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`ComfyMathExpression`、`CLIPTextEncode`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVPreprocess`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`RandomNoise`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`VAEDecode`、`SaveVideo`、`LTXVEmptyLatentAudio`、`VAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LoadImage`、`PrimitiveBoolean`、`UNETLoader`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`easy clearCacheAll`
+**有卡**：`KSamplerSelect`、`CreateVideo`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`ComfyMathExpression`、`CLIPTextEncode`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVPreprocess`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`RandomNoise`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`VAEDecode`、`easy cleanGpuUsed`、`easy clearCacheAll`、`SaveVideo`、`LTXVEmptyLatentAudio`、`VAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LoadImage`、`PrimitiveBoolean`、`UNETLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识

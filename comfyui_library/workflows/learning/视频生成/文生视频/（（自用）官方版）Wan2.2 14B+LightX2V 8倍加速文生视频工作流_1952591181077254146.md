@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/（（自用）官方版）Wan2.2 14B+LightX2V 8倍加速文生视频工作流_1952591181077254146.json
 hash: a330866e8f6a4a89
 coverage: 0.933333
-learned_at: 2026-10-10 23:14:47
+learned_at: 2026-10-15 22:49:13
 nodes: [CLIPLoader, VAELoader, Note, CLIPTextEncode, CLIPTextEncode, VAEDecode, EmptyHunyuanLatentVideo, JWInteger, JWInteger, JWInteger, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, VHS_VideoCombine, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, LoadLatent, VAELoader, VAEDecode, SaveImage, LoadImage, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
 missing: []

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2文生视频性价比极致加速V5+lynx_2072999499213348864.json
 hash: 4b67a5488e006aca
-coverage: 0.684211
-learned_at: 2026-10-11 20:21:31
+coverage: 0.859649
+learned_at: 2026-10-15 22:47:16
 nodes: [WanVideoTextEncodeCached, LynxEncodeFaceIP, RH_Captioner, LoadLynxResampler, LynxInsightFaceCrop, WanVideoVACEModelSelect, WanVideoExtraModelSelect, LoadImage, String Literal, SetNode, Note, WanVideoSetBlockSwap, Note, WanVideoDecode, WanVideoSampler, WanVideoSetLoRAs, WanVideoSetRadialAttention, WanVideoSetRadialAttention, WanVideoBlockSwap, WanVideoTorchCompileSettings, WanVideoSampler, WanVideoSetLoRAs, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoTextEncode, WanVideoEmptyEmbeds, WanVideoScheduler, PrimitiveNode, PrimitiveNode, easy seed, WanVideoScheduler, easy globalSeed, easy int, easy int, easy int, VHS_VideoCombine, Note, PrimitiveNode, easy float, easy float, WanVideoVACEEncode, WanVideoSigmaToStep, WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoLoraSelect, WanVideoLoraSelect, GetNode, WanVideoLoraSelect, WanVideoModelLoader, WanVideoVACEEncode, WanVideoExtraModelSelect, easy float, WanVideoAddLynxEmbeds, WanVideoVACEModelSelect, String Literal, WanVideoLoraSelect, WanVideoModelLoader]
 patterns: []
-missing: [String Literal, String Literal, easy float, easy float, easy float, easy int, easy int, easy int, easy globalSeed, easy seed]
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy globalSeed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/Wan2.2文生视频性价比极致加速V5+lynx_2072999499213348864.json
@@ -83,23 +82,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **68%**（39/57）
+覆盖率 **86%**（49/57）
 
-**有卡**：`WanVideoTextEncodeCached`、`LynxEncodeFaceIP`、`RH_Captioner`、`LoadLynxResampler`、`LynxInsightFaceCrop`、`WanVideoVACEModelSelect`、`WanVideoExtraModelSelect`、`LoadImage`、`WanVideoSetBlockSwap`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoSetLoRAs`、`WanVideoSetRadialAttention`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoTextEncode`、`WanVideoEmptyEmbeds`、`WanVideoScheduler`、`VHS_VideoCombine`、`WanVideoVACEEncode`、`WanVideoSigmaToStep`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoAddLynxEmbeds`
+**有卡**：`WanVideoTextEncodeCached`、`LynxEncodeFaceIP`、`RH_Captioner`、`LoadLynxResampler`、`LynxInsightFaceCrop`、`WanVideoVACEModelSelect`、`WanVideoExtraModelSelect`、`LoadImage`、`String Literal`、`WanVideoSetBlockSwap`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoSetLoRAs`、`WanVideoSetRadialAttention`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoTextEncode`、`WanVideoEmptyEmbeds`、`WanVideoScheduler`、`easy seed`、`easy globalSeed`、`easy int`、`VHS_VideoCombine`、`easy float`、`WanVideoVACEEncode`、`WanVideoSigmaToStep`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoAddLynxEmbeds`
 
-**缺卡**（10）：`String Literal`、`String Literal`、`easy float`、`easy float`、`easy float`、`easy int`、`easy int`、`easy int`、`easy globalSeed`、`easy seed`
-
-**用到的条目**：LoadImage、WanVideoSampler、LoadLynxResampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy globalSeed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、WanVideoSampler、LoadLynxResampler、easy globalSeed、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode

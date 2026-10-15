@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-文生视频_2066069178989240321.json
 hash: e5f402116fb57d53
-coverage: 0.780488
-learned_at: 2026-10-11 20:21:26
+coverage: 0.804878
+learned_at: 2026-10-15 22:45:04
 nodes: [MarkdownNote, MarkdownNote, LTXVScheduler, ImageScaleBy, LTXVEmptyLatentAudio, LTXVConditioning, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, VAEDecodeTiled, CFGGuider, PrimitiveFloat, PrimitiveInt, MarkdownNote, KSamplerSelect, RandomNoise, Reroute, LTXVSeparateAVLatent, LTXVCropGuides, LoraLoaderModelOnly, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LatentUpscaleModelLoader, LTXVConcatAVLatent, CheckpointLoaderSimple, CLIPTextEncode, EmptyLTXVLatentVideo, EmptyImage, PrimitiveInt, GetImageSize, CreateVideo, LTXVAudioVAEDecode, VAEDecode, KSampler, DualCLIPLoader, PreviewAny, Seed (rgthree), SaveVideo, TextGenerateLTX2Prompt, CLIPTextEncode]
 patterns: []
-missing: [Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 797985848768046, "steps": 4, "width": 97}
-discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/LTX2.3-文生视频_2066069178989240321.json
@@ -82,11 +82,9 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 
 ## 知识
 
-覆盖率 **78%**（32/41）
+覆盖率 **80%**（33/41）
 
-**有卡**：`LTXVScheduler`、`ImageScaleBy`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`CFGGuider`、`KSamplerSelect`、`RandomNoise`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`EmptyImage`、`GetImageSize`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecode`、`KSampler`、`DualCLIPLoader`、`SaveVideo`、`TextGenerateLTX2Prompt`
-
-**缺卡**（1）：`Seed (rgthree)`
+**有卡**：`LTXVScheduler`、`ImageScaleBy`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`CFGGuider`、`KSamplerSelect`、`RandomNoise`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`EmptyImage`、`GetImageSize`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecode`、`KSampler`、`DualCLIPLoader`、`Seed (rgthree)`、`SaveVideo`、`TextGenerateLTX2Prompt`
 
 **用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
 
@@ -97,5 +95,4 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 
 ## 学习发现
 
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

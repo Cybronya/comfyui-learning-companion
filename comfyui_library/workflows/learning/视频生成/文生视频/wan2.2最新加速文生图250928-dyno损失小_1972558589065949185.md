@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2最新加速文生图250928-dyno损失小_1972558589065949185.json
 hash: 1d183a7856700560
 coverage: 0.833333
-learned_at: 2026-10-10 23:09:49
+learned_at: 2026-10-15 22:47:36
 nodes: [CLIPTextEncode, Note, VAEDecode, ModelSamplingSD3, EmptyHunyuanLatentVideo, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, UNETLoader, ModelSamplingSD3, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, MarkdownNote, Note, CreateVideo, SaveVideo]
 patterns: []
 missing: []

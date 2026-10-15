@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json
 hash: 05b206a284ec86e2
 coverage: 0.818182
-learned_at: 2026-10-10 20:59:57
+learned_at: 2026-10-15 22:29:05
 nodes: [LoadImage, LoadImage, LoadImage, Note, PreviewImage, DoubaoSizePreset, LoadImage, DoubaoSizePreset, SaveImage, DoubaoImageGenerator, DoubaoImageGenerator]
 patterns: []
 missing: []
@@ -18,6 +18,8 @@ missing: []
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/调用豆包 Doubao-Seedream-4.0工作流_1965676384628654081.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（11 个）：
 - `LoadImage`
@@ -36,4 +38,6 @@ missing: []
 
 覆盖率 **82%**（9/11）
 
-**有卡**：`LoadImage`、`Note`、`PreviewImage`、`DoubaoSizePreset`、`SaveImage`
+**有卡**：`LoadImage`、`DoubaoSizePreset`、`SaveImage`、`DoubaoImageGenerator`
+
+**用到的条目**：LoadImage、DoubaoSizePreset、SaveImage、DoubaoImageGenerator、sd15-t2i-basic、sd15-t2i-lora、Image Load、height 调整经验

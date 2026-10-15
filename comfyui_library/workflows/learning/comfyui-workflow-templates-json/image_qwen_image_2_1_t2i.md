@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_image_2_1_t2i.json
 hash: 5f2b50eeaf27e56a
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:48:30
+coverage: 0.5
+learned_at: 2026-10-15 22:24:54
 nodes: [ResolutionSelector, c291ceec-b98f-4751-9d0b-7bc288f27b30, SaveImageAdvanced, MarkdownNote, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [c291ceec-b98f-4751-9d0b-7bc288f27b30]
-discoveries: [次要节点 `c291ceec-b98f-4751-9d0b-7bc288f27b30` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_qwen_image_2_1_t2i.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `c291ceec-b98f-4751-9d0b-7bc288f27b30` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（2/6）
+覆盖率 **50%**（3/6）
 
-**有卡**：`ResolutionSelector`、`SaveImageAdvanced`
+**有卡**：`ResolutionSelector`、`c291ceec-b98f-4751-9d0b-7bc288f27b30`、`SaveImageAdvanced`
 
-**缺卡**（1）：`c291ceec-b98f-4751-9d0b-7bc288f27b30`
-
-**用到的条目**：ResolutionSelector、SaveImageAdvanced、sd15-t2i-basic、sd15-t2i-lora、SaveImage、EmptyLatentImage、height 调整经验、width 调整经验
-
-## 学习发现
-
-- 次要节点 `c291ceec-b98f-4751-9d0b-7bc288f27b30` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、SaveImageAdvanced、c291ceec-b98f-4751-9d0b-7bc288f27b30、sd15-t2i-basic、sd15-t2i-lora、SaveImage、EmptyLatentImage、height 调整经验

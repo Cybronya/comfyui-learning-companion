@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3多合一｜V6_LightX2V官方Turbo4加速版｜B站UP主@好奇漫步_2086676399020142594.json
 hash: 159fd0a6535c2ec2
 coverage: 0.841463
-learned_at: 2026-10-11 20:53:42
+learned_at: 2026-10-15 22:45:55
 nodes: [SaveVideo, MiniMaxH3ImageToVideo, SaveVideo, SaveVideo, LoadImage, UNETLoader, UNETLoader, BasicGuider, VAEDecode, RandomNoise, BasicGuider, MiniMaxH3ImageToVideo, BasicGuider, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, CreateVideo, SamplerCustomAdvanced, VAELoader, VAELoader, ComfyMathExpression, MarkdownNote, ResolutionSelector, MarkdownNote, MarkdownNote, SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadVideo, LoadVideo, LoadImage, LoadVideo, LoadImage, CLIPLoader, GetVideoComponents, GetVideoComponents, GetVideoComponents, LoadAudio, LoadAudio, LoadAudio, BasicGuider, RandomNoise, VAEDecode, VAEDecodeAudio, SamplerCustomAdvanced, CreateVideo, VAEDecode, VAEDecodeAudio, CreateVideo, LoadImage, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, LoadImage, MiniMaxH3ReferenceToVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, KSamplerSelect, MiniMaxH3ImageToVideo, LoraLoaderBypassModelOnly, RandomNoise, VAEDecodeAudio, CreateVideo, BasicScheduler, SamplerCustomAdvanced, MiniMaxH3DualClockSamplerT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3DualClockSamplerT8, PrimitiveInt, PrimitiveStringMultiline, PrimitiveFloat]
 patterns: []
 missing: []

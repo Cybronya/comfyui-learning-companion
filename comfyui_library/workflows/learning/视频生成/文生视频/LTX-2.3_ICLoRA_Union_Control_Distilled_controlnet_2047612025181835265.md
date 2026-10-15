@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_controlnet_2047612025181835265.json
 hash: 6ea8f965c8d16f96
-coverage: 0.652632
-learned_at: 2026-10-11 19:49:36
+coverage: 0.694737
+learned_at: 2026-10-15 22:44:41
 nodes: [LTXVEmptyLatentAudio, CFGGuider, SamplerCustomAdvanced, KSamplerSelect, LTXVAudioVAEDecode, VAEDecodeTiled, CannyEdgePreprocessor, DWPreprocessor, DepthAnythingPreprocessor, RandomNoise, LTXVImgToVideoConditionOnly, SetNode, SetNode, ImageResizeKJv2, EmptyLTXVLatentVideo, SimpleMath+, PrimitiveBoolean, GetNode, GetNode, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, CFGGuider, GetNode, GetNode, LTXVImgToVideoInplace, LTXVSeparateAVLatent, GetNode, GetNode, GetNode, GetNode, SetNode, VAELoaderKJ, VAELoaderKJ, SetNode, SetNode, DualCLIPLoader, GetNode, SetNode, ImageResizeKJv2, SetNode, VHS_VideoInfo, SetNode, CLIPTextEncode, CLIPTextEncode, CFGGuider, RandomNoise, VHS_VideoCombine, LTXVConcatAVLatent, GetNode, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSeparateAVLatent, LTXVCropGuides, INTConstant, INTConstant, SetNode, LTXVConcatAVLatent, LTXVConditioning, GetImageSize, ImageResizeKJv2, SetNode, SetNode, SimpleMath+, GetNode, GetNode, LTXICLoRALoaderModelOnly, SetNode, ManualSigmas, SetNode, LTXAddVideoICLoRAGuide, SetNode, UNETLoader, LTXVCropGuides, GetNode, GetNode, GetNode, VHS_VideoCombine, VAEDecodeTiled, RTXVideoSuperResolution, ComfyMathExpression, LTXVAudioVAEDecode, LoadImage, VHS_LoadVideo, VHS_VideoCombine, SimpleMath+, SimpleMath+, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVImgToVideoInplace, SamplerCustomAdvanced]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_controlnet_2047612025181835265.json
@@ -128,17 +127,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **65%**（62/95）
+覆盖率 **69%**（66/95）
 
-**有卡**：`LTXVEmptyLatentAudio`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CannyEdgePreprocessor`、`DWPreprocessor`、`DepthAnythingPreprocessor`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`PrimitiveBoolean`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`VAELoaderKJ`、`DualCLIPLoader`、`VHS_VideoInfo`、`CLIPTextEncode`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`INTConstant`、`LTXVConditioning`、`GetImageSize`、`LTXICLoRALoaderModelOnly`、`LTXAddVideoICLoRAGuide`、`UNETLoader`、`RTXVideoSuperResolution`、`ComfyMathExpression`、`LoadImage`、`VHS_LoadVideo`、`LatentUpscaleModelLoader`
-
-**缺卡**（4）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`LTXVEmptyLatentAudio`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CannyEdgePreprocessor`、`DWPreprocessor`、`DepthAnythingPreprocessor`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`SimpleMath+`、`PrimitiveBoolean`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`VAELoaderKJ`、`DualCLIPLoader`、`VHS_VideoInfo`、`CLIPTextEncode`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`INTConstant`、`LTXVConditioning`、`GetImageSize`、`LTXICLoRALoaderModelOnly`、`LTXAddVideoICLoRAGuide`、`UNETLoader`、`RTXVideoSuperResolution`、`ComfyMathExpression`、`LoadImage`、`VHS_LoadVideo`、`LatentUpscaleModelLoader`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、DepthAnythingPreprocessor、CannyEdgePreprocessor、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

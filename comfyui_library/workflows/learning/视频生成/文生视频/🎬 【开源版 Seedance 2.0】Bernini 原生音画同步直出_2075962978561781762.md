@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/🎬 【开源版 Seedance 2.0】Bernini 原生音画同步直出_2075962978561781762.json
 hash: 34d80626dedbdfb6
 coverage: 0.882353
-learned_at: 2026-10-11 20:38:49
+learned_at: 2026-10-15 22:49:13
 nodes: [Reroute, CLIPLoader, VAELoader, LoraLoaderModelOnly, AudioEncoderLoader, UNETLoader, UNETLoader, AudioConcat, LoraLoaderModelOnly, AudioSeparation, ComfyNumberConvert, SoundFlow_GetLength, ComfyMathExpression, AudioEncoderEncode, VAEDecode, CLIPTextEncode, RIFEInterpolation, Reroute, LoadAudio, TrimAudioDuration, INTConstant, INTConstant, CLIPTextEncode, LoadImage, PrimitiveStringMultiline, PrimitiveFloat, KSamplerAdvanced, KSamplerAdvanced, TrimAudioDuration, LoadAudio, VHS_VideoCombine, BerniniS2VConditioning, BerniniS2VConditioningV2, LoadImage]
 patterns: []
 missing: []

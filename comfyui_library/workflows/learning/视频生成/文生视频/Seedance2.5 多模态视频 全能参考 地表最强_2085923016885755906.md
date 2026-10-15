@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5 多模态视频 全能参考 地表最强_2085923016885755906.json
 hash: a9d5ab046a2a584d
 coverage: 1
-learned_at: 2026-10-11 20:53:47
+learned_at: 2026-10-15 22:46:59
 nodes: [LoadImage, SaveVideo, RH_BytedanceSeedance25TokenMultimodalVideo]
 patterns: []
 missing: []
@@ -32,4 +32,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveVideo`、`RH_BytedanceSeedance25TokenMultimodalVideo`
 
-**用到的条目**：LoadImage、RH_BytedanceSeedance25TokenMultimodalVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、sampler_name 调整经验、steps 调整经验
+**用到的条目**：LoadImage、RH_BytedanceSeedance25TokenMultimodalVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Image Save

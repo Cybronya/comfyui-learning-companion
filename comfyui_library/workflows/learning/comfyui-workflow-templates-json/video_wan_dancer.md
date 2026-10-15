@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_dancer.json
 hash: 17e4d2a493de0a47
 official: true
-coverage: 0.571429
-learned_at: 2026-10-10 22:50:48
+coverage: 0.714286
+learned_at: 2026-10-15 22:24:59
 nodes: [LoadImage, LoadAudio, f7467834-35a6-42fe-b525-7f17383beb4f, SaveVideo, SaveVideo, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [f7467834-35a6-42fe-b525-7f17383beb4f]
-discoveries: [次要节点 `f7467834-35a6-42fe-b525-7f17383beb4f` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_wan_dancer.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `f7467834-35a6-42fe-b525-7f17383beb4f` 知识库中�
 
 ## 知识
 
-覆盖率 **57%**（4/7）
+覆盖率 **71%**（5/7）
 
-**有卡**：`LoadImage`、`LoadAudio`、`SaveVideo`
+**有卡**：`LoadImage`、`LoadAudio`、`f7467834-35a6-42fe-b525-7f17383beb4f`、`SaveVideo`
 
-**缺卡**（1）：`f7467834-35a6-42fe-b525-7f17383beb4f`
-
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `f7467834-35a6-42fe-b525-7f17383beb4f` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、f7467834-35a6-42fe-b525-7f17383beb4f、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage

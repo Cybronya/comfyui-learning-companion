@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文生音画同步视频竖屏场景11秒_2030427600178384898.json
 hash: 51ef568b8454a788
 coverage: 0.861111
-learned_at: 2026-10-11 03:16:47
+learned_at: 2026-10-15 22:45:14
 nodes: [LTXVScheduler, ImageScaleBy, GetImageSize, LTXVEmptyLatentAudio, LTXVConditioning, EmptyLTXVLatentVideo, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, CreateVideo, VAEDecodeTiled, LTXVAudioVAEDecode, CFGGuider, PrimitiveFloat, PrimitiveInt, KSamplerSelect, RandomNoise, Reroute, PreviewAny, KSampler, LTXVSeparateAVLatent, LTXVCropGuides, SaveVideo, LoraLoaderModelOnly, CLIPTextEncode, DualCLIPLoader, CLIPTextEncode, LTXAVTextEncoderLoader, CheckpointLoaderSimple, LTXVAudioVAELoader, LatentUpscaleModelLoader, LTXVConcatAVLatent, PrimitiveInt, TextGenerateLTX2Prompt, EmptyImage]
 patterns: []
 missing: []

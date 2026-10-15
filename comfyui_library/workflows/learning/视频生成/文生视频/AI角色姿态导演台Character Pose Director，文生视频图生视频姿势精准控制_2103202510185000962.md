@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI角色姿态导演台Character Pose Director，文生视频图生视频姿势精准控制_2103202510185000962.json
 hash: e9937c29038f8894
 coverage: 0.883721
-learned_at: 2026-10-10 22:58:36
+learned_at: 2026-10-15 22:44:00
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, QwenImage21Cache, TextEncodeQwenImage21, Image Comparer (rgthree), GetImageSize, SaveImage, LoraLoaderModelOnly, LoadImage, VNCCS_PoseStudio, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []

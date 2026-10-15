@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/最强优化—LTX2.3全自动文生视频_2044381949787115521.json
 hash: 4c9f5d5843647495
-coverage: 0.755102
-learned_at: 2026-10-11 19:49:50
+coverage: 0.918367
+learned_at: 2026-10-15 22:48:47
 nodes: [LTXVConcatAVLatent, KSamplerSelect, CFGGuider, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, ManualSigmas, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LTXVChunkFeedForward, PathchSageAttentionKJ, ModelPatchTorchSettings, LoraLoaderModelOnly, LTXVAudioVAELoader, CheckpointLoaderSimple, LTXVEmptyLatentAudio, ManualSigmas, LTXAVTextEncoderLoader, PrimitiveFloat, PrimitiveInt, LTXVConditioning, CM_FloatToInt, EmptyLTXVLatentVideo, RandomNoise, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, LTXVLatentUpsampler, RandomNoise, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecodeTiled, INTConstant, INTConstant, easy setNode, easy setNode, easy getNode, Float, INTConstant, VHS_VideoCombine, easy getNode, CLIPTextEncode, CLIPTextEncode, RH_LLMAPI_Pro_Node, PreviewAny, CR Text, PreviewAny]
 patterns: []
-missing: [CR Text, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, easy getNode, easy getNode, easy setNode, easy setNode]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/最强优化—LTX2.3全自动文生视频_2044381949787115521.json
@@ -83,21 +82,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **76%**（37/49）
+覆盖率 **92%**（45/49）
 
-**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`LTXVEmptyLatentAudio`、`LTXAVTextEncoderLoader`、`LTXVConditioning`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`RandomNoise`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`INTConstant`、`Float`、`VHS_VideoCombine`、`CLIPTextEncode`、`RH_LLMAPI_Pro_Node`
-
-**缺卡**（8）：`CR Text`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`easy getNode`、`easy getNode`、`easy setNode`、`easy setNode`
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`LTXVEmptyLatentAudio`、`LTXAVTextEncoderLoader`、`LTXVConditioning`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`RandomNoise`、`MathExpression|pysssss`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`INTConstant`、`easy setNode`、`easy getNode`、`Float`、`VHS_VideoCombine`、`CLIPTextEncode`、`RH_LLMAPI_Pro_Node`、`CR Text`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识

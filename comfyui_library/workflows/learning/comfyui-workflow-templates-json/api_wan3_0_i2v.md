@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wan3_0_i2v.j
 hash: 7ad9ed6ea16d395e
 official: true
 coverage: 0.75
-learned_at: 2026-10-10 22:46:44
+learned_at: 2026-10-15 22:24:52
 nodes: [Wan3ImageToVideoApi, LoadImage, SaveVideo, MarkdownNote]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`Wan3ImageToVideoApi`、`LoadImage`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、Wan3ImageToVideoApi、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、Wan3ImageToVideoApi、sd15-t2i-basic、sd15-t2i-lora、Image Save、SaveImage、CS_Preview_Any

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/工作流视频篇1-阿里万相Wan2.2Al视频创作实战_2016870256769245185.json
 hash: 27183f9b73604e97
 coverage: 1
-learned_at: 2026-10-11 03:07:15
+learned_at: 2026-10-15 22:48:35
 nodes: [KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, VAELoader, UNETLoader, PathchSageAttentionKJ, CLIPTextEncode, UNETLoader, KSamplerAdvanced, VAEDecode, CLIPLoader, EmptyHunyuanLatentVideo, VHS_VideoCombine, CLIPTextEncode]
 patterns: []
 missing: []

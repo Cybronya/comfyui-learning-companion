@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑图生图处理生成工具_2102506921529004033.json
 hash: a76fc65179c853f1
 coverage: 0.902439
-learned_at: 2026-10-10 20:48:07
+learned_at: 2026-10-15 22:25:14
 nodes: [CLIPLoader, VAELoader, LoadImage, LoadImage, UNETLoader, TextEncodeQwenImage21, QwenImage21Cache, KSampler, VAEDecode, SaveImage, SaveImageAdvanced, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []

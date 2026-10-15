@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM高清图生视频文戏专用_2101670540900651009.json
 hash: 8361af4d47602121
-coverage: 0.916667
-learned_at: 2026-10-10 22:53:28
+coverage: 0.944444
+learned_at: 2026-10-15 22:42:52
 nodes: [VAELoader, VAELoader, RandomNoise, KSamplerSelect, CLIPLoader, MiniMaxH3SigmaShift, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, BasicScheduler, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, CLIPTextEncode, PrimitiveStringMultiline, LoraLoaderModelOnly, LoraLoaderModelOnly, ImageResizeKJv2, RH_Screenwriter, MiniMaxH3SemanticBridgeApplyT8, MiniMaxH3SemanticBridgeConfigT8, H3SigmaRefiner, CFGGuider, ResolutionSelector, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, WujiCleaner, VHS_VideoCombine, Int, PrimitiveStringMultiline, WujiH3PromptEnhancer, easy promptConcat, ComfyMathExpression, MiniMaxH3AudioConditioningT8]
 patterns: []
-missing: [easy promptConcat]
-discoveries: [次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/图生视频/MiniMaxH3+Semantic Bridge+LCM高清图生视频文戏专用_2101670540900651009.json
@@ -62,14 +61,8 @@ discoveries: [次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用�
 
 ## 知识
 
-覆盖率 **92%**（33/36）
+覆盖率 **94%**（34/36）
 
-**有卡**：`VAELoader`、`RandomNoise`、`KSamplerSelect`、`CLIPLoader`、`MiniMaxH3SigmaShift`、`LoraLoaderModelOnly`、`UNETLoader`、`BasicScheduler`、`LoadImage`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`CLIPTextEncode`、`ImageResizeKJv2`、`RH_Screenwriter`、`MiniMaxH3SemanticBridgeApplyT8`、`MiniMaxH3SemanticBridgeConfigT8`、`H3SigmaRefiner`、`CFGGuider`、`ResolutionSelector`、`VAEDecodeAudio`、`VAEDecode`、`SamplerCustomAdvanced`、`WujiCleaner`、`VHS_VideoCombine`、`Int`、`WujiH3PromptEnhancer`、`ComfyMathExpression`、`MiniMaxH3AudioConditioningT8`
-
-**缺卡**（1）：`easy promptConcat`
+**有卡**：`VAELoader`、`RandomNoise`、`KSamplerSelect`、`CLIPLoader`、`MiniMaxH3SigmaShift`、`LoraLoaderModelOnly`、`UNETLoader`、`BasicScheduler`、`LoadImage`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`CLIPTextEncode`、`ImageResizeKJv2`、`RH_Screenwriter`、`MiniMaxH3SemanticBridgeApplyT8`、`MiniMaxH3SemanticBridgeConfigT8`、`H3SigmaRefiner`、`CFGGuider`、`ResolutionSelector`、`VAEDecodeAudio`、`VAEDecode`、`SamplerCustomAdvanced`、`WujiCleaner`、`VHS_VideoCombine`、`Int`、`WujiH3PromptEnhancer`、`easy promptConcat`、`ComfyMathExpression`、`MiniMaxH3AudioConditioningT8`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `easy promptConcat` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

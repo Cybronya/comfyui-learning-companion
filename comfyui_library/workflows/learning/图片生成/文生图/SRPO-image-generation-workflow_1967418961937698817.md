@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
 hash: cb3ad7d830ae66e7
-coverage: 0.842105
-learned_at: 2026-10-10 20:59:11
+coverage: 0.894737
+learned_at: 2026-10-15 22:27:32
 nodes: [PrimitiveNode, PrimitiveNode, SeedVR2, VAEDecode, SaveImage, BasicGuider, UNETLoader, DualCLIPLoader, VAELoader, FluxGuidance, SamplerCustomAdvanced, EmptySD3LatentImage, RandomNoise, KSamplerSelect, BasicScheduler, ModelSamplingFlux, SaveImage, LayerUtility: PurgeVRAM V2, CLIPTextEncode]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/SRPO-image-generation-workflow_1967418961937698817.json
@@ -20,35 +19,33 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（19 个）：
 - `PrimitiveNode`
 - `PrimitiveNode`
 - `SeedVR2`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `BasicGuider`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `VAELoader`
 - `FluxGuidance`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `EmptySD3LatentImage`
 - `RandomNoise`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `BasicScheduler`
 - `ModelSamplingFlux`
 - `SaveImage`
 - `LayerUtility: PurgeVRAM V2`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 
 ## 知识
 
-覆盖率 **84%**（16/19）
+覆盖率 **89%**（17/19）
 
-**有卡**：`PrimitiveNode`、`SeedVR2`、`VAEDecode`、`SaveImage`、`BasicGuider`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`SamplerCustomAdvanced`、`EmptySD3LatentImage`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`ModelSamplingFlux`
+**有卡**：`SeedVR2`、`VAEDecode`、`SaveImage`、`BasicGuider`、`UNETLoader`、`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`SamplerCustomAdvanced`、`EmptySD3LatentImage`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`ModelSamplingFlux`、`LayerUtility: PurgeVRAM V2`、`CLIPTextEncode`
 
-**缺卡**（1）：`LayerUtility: PurgeVRAM V2`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、SeedVR2

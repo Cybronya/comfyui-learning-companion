@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/text_to_video_wa
 hash: 6cfcb2bcc842926d
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:35
+learned_at: 2026-10-15 22:24:56
 nodes: [CLIPLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, UNETLoader, EmptyHunyuanLatentVideo, VAEDecode, CreateVideo, KSampler, SaveVideo, ModelSamplingSD3]
 patterns: []
 missing: []

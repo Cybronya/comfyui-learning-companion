@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/Qwen Image 2.1 一键4图+Minimax H3 SelfLift 超高清4条视频生成_2105768139874201602.json
 hash: ef347a07d19eada5
-coverage: 0.631356
-learned_at: 2026-10-10 22:53:58
+coverage: 0.724576
+learned_at: 2026-10-15 22:42:54
 nodes: [SetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, GetNode, GetNode, GetNode, PathchSageAttentionKJ, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ShowText|pysssss, Any Switch (rgthree), GetNode, EmptyLatentImage, KSampler, QwenImage21Cache, ModelAttentionBackend, MarkdownNote, ResolutionSelector, PixaromaGroupSwitch, CR Prompt Text, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, ConditioningZeroOut, KSamplerSelect, PixaromaGetNode, PixaromaGetNode, KSamplerSelect, PixaromaSetNode, PixaromaGetNode, PixaromaGetNode, KSamplerSelect, PixaromaSetNode, PixaromaSetNode, VAEDecode, easy imageListToImageBatch, easy imageSplitGrid, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, SaveImage, SaveImage, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, PixaromaGetNode, PixaromaSetNode, PixaromaSetNode, ModelPreviewOverrideKJ, ModelPreviewOverrideKJ, PixaromaSetNode, PixaromaSetNode, VAEDecode, ModelPreviewOverrideKJ, ModelPreviewOverrideKJ, GetNode, GetNode, VRAM_Debug, VRAM_Debug, GetNode, GetNode, MarkdownNote, PixaromaSetNode, PrimitiveFloat, PixaromaLabel, LayerUtility: PurgeVRAM V2, GetNode, GetNode, GetNode, BasicScheduler, ExtendIntermediateSigmas, KSamplerSelect, ConditioningZeroOut, BasicScheduler, ExtendIntermediateSigmas, ConditioningZeroOut, BasicScheduler, ExtendIntermediateSigmas, VAEDecodeAudio, ConditioningZeroOut, BasicScheduler, ExtendIntermediateSigmas, VAEDecodeAudio, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LayerUtility: PurgeVRAM V2, ResolutionSelector, SetNode, SetNode, ComfyMathExpression, MiniMaxH3ReferenceToVideo, MiniMaxH3ReferenceToVideo, MiniMaxH3ReferenceToVideo, GetNode, PixaromaGetNode, GetNode, GetNode, PixaromaGetNode, GetNode, PixaromaGetNode, GetNode, PixaromaGetNode, VRAM_Debug, GetNode, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, PixaromaLabel, llama_cpp_parameters, llama_cpp_parameters, llama_cpp_parameters, VRAM_Debug, MiniMaxH3ReferenceToVideo, GetNode, GetNode, GetNode, GetNode, VRAM_Debug, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, LayerUtility: PurgeVRAM V2, CLIPLoader, VAELoader, SetNode, SetNode, llama_cpp_parameters, SetNode, ImageRGBA2RGB, SetNode, ImageRGBA2RGB, ImageRGBA2RGB, SetNode, ImageRGBA2RGB, ImageResizeKJv2, ImageResizeKJv2, VHS_VideoCombine, PixaromaLabel, TextEncodeQwenImage21, llama_cpp_instruct_adv, llama_cpp_instruct_adv, llama_cpp_instruct_adv, VAELoader, PixaromaSetNode, SetNode, PixaromaLabel, VHS_VideoCombine, VHS_VideoCombine, PixaromaGetNode, PixaromaGetNode, VHS_VideoCombine, PixaromaSetNode, VAEDecode, SetNode, GetNode, llama_cpp_instruct_adv, GetNode, PixaromaGroupSwitch, LoadImage, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadImage, ImageResizeKJv2, ImageResizeKJv2, PixaromaResolution, LoadImage, LoadImage, MarkdownNote, PixaromaLabel, CR Text Concatenate, Text, Text, Text, llama_cpp_model_loader, llama_cpp_model_loader, llama_cpp_model_loader, llama_cpp_model_loader, UNETLoader, LoraLoaderModelOnly, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3Sampler, SelfLiftAvatarH3Sampler, CLIPLoader, VAELoader, QwenPERewriteT8, MiniMaxLowVRAMAttention, MiniMaxChunkFeedForward, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LoadImage, VAEDecode, SaveImage, SaveImage, SaveImage, UNETLoader, VAEDecode, CR Prompt Text, Text, VAEDecodeAudio, VAEDecodeAudio, CR Prompt Text, CR Text, CR Text, CR Text, CR Text, PixaromaLabel, PixaromaLabel]
 patterns: []
-missing: [CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageSplitGrid, CR Prompt Text, CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 806382002299618, "steps": 40, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSplitGrid` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/图生视频/Qwen Image 2.1 一键4图+Minimax H3 SelfLift 超高清4条视频生成_2105768139874201602.json
@@ -275,35 +274,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **63%**（149/236）
+覆盖率 **72%**（171/236）
 
-**有卡**：`PathchSageAttentionKJ`、`EmptyLatentImage`、`KSampler`、`QwenImage21Cache`、`ModelAttentionBackend`、`ResolutionSelector`、`PixaromaGroupSwitch`、`PixaromaGetNode`、`ConditioningZeroOut`、`KSamplerSelect`、`PixaromaSetNode`、`VAEDecode`、`SaveImage`、`ImageFromBatch`、`ModelPreviewOverrideKJ`、`VRAM_Debug`、`PixaromaLabel`、`BasicScheduler`、`ExtendIntermediateSigmas`、`VAEDecodeAudio`、`ComfyMathExpression`、`MiniMaxH3ReferenceToVideo`、`llama_cpp_parameters`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`CLIPLoader`、`VAELoader`、`ImageRGBA2RGB`、`ImageResizeKJv2`、`VHS_VideoCombine`、`TextEncodeQwenImage21`、`llama_cpp_instruct_adv`、`LoadImage`、`PixaromaResolution`、`Text`、`llama_cpp_model_loader`、`UNETLoader`、`LoraLoaderModelOnly`、`SelfLiftAvatarH3Sampler`、`QwenPERewriteT8`、`MiniMaxLowVRAMAttention`、`MiniMaxChunkFeedForward`
-
-**缺卡**（22）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`easy imageListToImageBatch`、`easy imageListToImageBatch`、`easy imageListToImageBatch`、`easy imageListToImageBatch`、`easy imageSplitGrid`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`PathchSageAttentionKJ`、`EmptyLatentImage`、`KSampler`、`QwenImage21Cache`、`ModelAttentionBackend`、`ResolutionSelector`、`PixaromaGroupSwitch`、`CR Prompt Text`、`PixaromaGetNode`、`ConditioningZeroOut`、`KSamplerSelect`、`PixaromaSetNode`、`VAEDecode`、`easy imageListToImageBatch`、`easy imageSplitGrid`、`SaveImage`、`ImageFromBatch`、`ModelPreviewOverrideKJ`、`VRAM_Debug`、`PixaromaLabel`、`LayerUtility: PurgeVRAM V2`、`BasicScheduler`、`ExtendIntermediateSigmas`、`VAEDecodeAudio`、`ComfyMathExpression`、`MiniMaxH3ReferenceToVideo`、`llama_cpp_parameters`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`CLIPLoader`、`VAELoader`、`ImageRGBA2RGB`、`ImageResizeKJv2`、`VHS_VideoCombine`、`TextEncodeQwenImage21`、`llama_cpp_instruct_adv`、`LoadImage`、`PixaromaResolution`、`CR Text Concatenate`、`Text`、`llama_cpp_model_loader`、`UNETLoader`、`LoraLoaderModelOnly`、`SelfLiftAvatarH3Sampler`、`QwenPERewriteT8`、`MiniMaxLowVRAMAttention`、`MiniMaxChunkFeedForward`、`CR Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSplitGrid` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

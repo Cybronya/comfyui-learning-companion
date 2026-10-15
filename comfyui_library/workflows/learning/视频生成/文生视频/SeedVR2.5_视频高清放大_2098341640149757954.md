@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/SeedVR2.5_视频高清放大_2098341640149757954.json
 hash: 791e53360dfd6763
 coverage: 0.533333
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:57
 nodes: [Reroute, Reroute, Reroute, SeedVR2LoadDiTModel, Reroute, VHS_LoadVideo, ImageScaleToTotalPixels, VHS_VideoInfo, VHS_VideoCombine, Note, INTConstant, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, Note, SetNode]
 patterns: []
 missing: []

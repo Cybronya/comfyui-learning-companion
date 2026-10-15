@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-assemb
 hash: 271cb21b1e3e244c
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:19
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, LoadImage, GeminiImage2Node]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`GeminiImage2Node`
 
-**用到的条目**：LoadImage、SaveImage、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImage、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node、Image Load、CS_Preview_Any

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_pixverse6_r2
 hash: 743498fabe0ed776
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:45:34
+learned_at: 2026-10-15 22:24:50
 nodes: [PixverseV6FusionVideoNode, LoadImage, LoadImage, SaveVideo, MarkdownNote]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`PixverseV6FusionVideoNode`、`LoadImage`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、PixverseV6FusionVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、PixverseV6FusionVideoNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、Image Load

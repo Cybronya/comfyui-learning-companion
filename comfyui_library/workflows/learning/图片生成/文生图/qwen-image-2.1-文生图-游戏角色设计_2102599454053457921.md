@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
 hash: 30df76452dd36c50
-coverage: 0.823529
-learned_at: 2026-10-10 20:59:24
+coverage: 0.882353
+learned_at: 2026-10-15 22:27:54
 nodes: [QwenImage21Cache, CLIPLoader, SamplerCustomAdvanced, KSamplerSelect, BasicGuider, VAELoader, ReferenceLatent, CLIPLoader, VAEDecode, VAEEncode, UNETLoader, TextGenerateLTX2Prompt, KSampler, RandomNoise, SaveImage, VAEDecode, PreviewImage, PreviewImage, CLIPTextEncode, VAELoader, BasicScheduler, ResolutionSelector, easy positive, Seed (rgthree), easy showAnything, CLIPLoader, TextEncodeQwenImage21, EmptyLatentImage, ImageScaleToTotalPixelsX, UNETLoader, ColorMatchV2, VOSR2ModelLoader, VOSR2Upscale, PreviewImage]
 patterns: [text_to_image]
-missing: [easy positive, Seed (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 486426918943366, "steps": 25, "width": 1024}
-discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/qwen-image-2.1-文生图-游戏角色设计_2102599454053457921.json
@@ -21,26 +20,28 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（34 个）：
 - `QwenImage21Cache`
 - `CLIPLoader`
-- `SamplerCustomAdvanced`
-- `KSamplerSelect`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
 - `BasicGuider`
 - `VAELoader`
 - `ReferenceLatent`
 - `CLIPLoader`
-- `VAEDecode`
-- `VAEEncode`
-- `UNETLoader`
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `UNETLoader` ★核心
 - `TextGenerateLTX2Prompt`
-- `KSampler`
+- `KSampler` ★核心
 - `RandomNoise`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
 - `PreviewImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `VAELoader`
 - `BasicScheduler`
 - `ResolutionSelector`
@@ -49,9 +50,9 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 - `easy showAnything`
 - `CLIPLoader`
 - `TextEncodeQwenImage21`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `ImageScaleToTotalPixelsX`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `ColorMatchV2`
 - `VOSR2ModelLoader`
 - `VOSR2Upscale`
@@ -61,25 +62,20 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `486426918943366`
 - `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **82%**（28/34）
+覆盖率 **88%**（30/34）
 
-**有卡**：`QwenImage21Cache`、`CLIPLoader`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicGuider`、`VAELoader`、`ReferenceLatent`、`VAEDecode`、`VAEEncode`、`UNETLoader`、`TextGenerateLTX2Prompt`、`KSampler`、`RandomNoise`、`SaveImage`、`PreviewImage`、`CLIPTextEncode`、`BasicScheduler`、`ResolutionSelector`、`easy positive`、`Seed (rgthree)`、`easy showAnything`、`TextEncodeQwenImage21`、`EmptyLatentImage`
+**有卡**：`QwenImage21Cache`、`CLIPLoader`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicGuider`、`VAELoader`、`ReferenceLatent`、`VAEDecode`、`VAEEncode`、`UNETLoader`、`TextGenerateLTX2Prompt`、`KSampler`、`RandomNoise`、`SaveImage`、`CLIPTextEncode`、`BasicScheduler`、`ResolutionSelector`、`easy positive`、`Seed (rgthree)`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`ImageScaleToTotalPixelsX`、`ColorMatchV2`、`VOSR2ModelLoader`、`VOSR2Upscale`
 
-**缺卡**（2）：`easy positive`、`Seed (rgthree)`
-
-## 学习发现
-
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector

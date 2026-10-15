@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/腾讯flux.1-dev-SRPO文生图_1966306088582811649.json
 hash: 992ece76e5bfca07
-coverage: 0.75
-learned_at: 2026-10-10 20:59:56
+coverage: 0.875
+learned_at: 2026-10-15 22:29:03
 nodes: [DualCLIPLoader, BasicScheduler, KSamplerSelect, SamplerCustomAdvanced, RandomNoise, ModelSamplingFlux, EmptySD3LatentImage, Note, VAELoader, BasicGuider, FluxGuidance, CLIPTextEncode, RH_Translator, Note, UNETLoader, SeedVR2ExtraArgs, CR SDXL Aspect Ratio, SaveImage, VAEDecode, easy clearCacheAll, PreviewImage, SeedVR2BlockSwap, SeedVR2GGUF, MathExpression|pysssss]
 patterns: []
-missing: [MathExpression|pysssss, easy clearCacheAll, CR SDXL Aspect Ratio]
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 图片生成/文生图/腾讯flux.1-dev-SRPO文生图_1966306088582811649.json
@@ -20,11 +19,13 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（24 个）：
 - `DualCLIPLoader`
 - `BasicScheduler`
-- `KSamplerSelect`
-- `SamplerCustomAdvanced`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
 - `RandomNoise`
 - `ModelSamplingFlux`
 - `EmptySD3LatentImage`
@@ -32,14 +33,14 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 - `VAELoader`
 - `BasicGuider`
 - `FluxGuidance`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `RH_Translator`
 - `Note`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `SeedVR2ExtraArgs`
 - `CR SDXL Aspect Ratio`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy clearCacheAll`
 - `PreviewImage`
 - `SeedVR2BlockSwap`
@@ -48,14 +49,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **75%**（18/24）
+覆盖率 **88%**（21/24）
 
-**有卡**：`DualCLIPLoader`、`BasicScheduler`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`ModelSamplingFlux`、`EmptySD3LatentImage`、`Note`、`VAELoader`、`BasicGuider`、`FluxGuidance`、`CLIPTextEncode`、`RH_Translator`、`UNETLoader`、`SeedVR2ExtraArgs`、`CR SDXL Aspect Ratio`、`SaveImage`
+**有卡**：`DualCLIPLoader`、`BasicScheduler`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`ModelSamplingFlux`、`EmptySD3LatentImage`、`VAELoader`、`BasicGuider`、`FluxGuidance`、`CLIPTextEncode`、`RH_Translator`、`UNETLoader`、`SeedVR2ExtraArgs`、`CR SDXL Aspect Ratio`、`SaveImage`、`VAEDecode`、`easy clearCacheAll`、`SeedVR2BlockSwap`、`SeedVR2GGUF`、`MathExpression|pysssss`
 
-**缺卡**（3）：`MathExpression|pysssss`、`easy clearCacheAll`、`CR SDXL Aspect Ratio`
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、SeedVR2BlockSwap

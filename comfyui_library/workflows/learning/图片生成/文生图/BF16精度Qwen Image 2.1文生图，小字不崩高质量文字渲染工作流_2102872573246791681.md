@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/BF16精度Qwen Image 2.1文生图，小字不崩高质量文字渲染工作流_2102872573246791681.json
 hash: 55772c00e7468215
-coverage: 0.875
-learned_at: 2026-10-10 21:26:23
+coverage: 0.9
+learned_at: 2026-10-15 22:26:12
 nodes: [VAEDecode, EmptyLatentImage, KSampler, TextEncodeQwenImage21, VAELoader, ResolutionSelector, CR Prompt Text, SaveImage, SaveImageAdvanced, CLIPLoader, UNETLoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/BF16精度Qwen Image 2.1文生图，小字不崩高质量文字渲染工作流_2102872573246791681.json
@@ -22,10 +22,12 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（40 个）：
-- `VAEDecode`
-- `EmptyLatentImage`
-- `KSampler`
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
 - `TextEncodeQwenImage21`
 - `VAELoader`
 - `ResolutionSelector`
@@ -33,33 +35,33 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 - `SaveImage`
 - `SaveImageAdvanced`
 - `CLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `EmptyLatentImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `JjkText`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `solarL_SaveImagesToZip`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -68,23 +70,23 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
+- `width` = `80`
 - `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
+- `batch_size` = `1`
 - `seed` = `598626327129635`
 - `steps` = `4`
-- `width` = `80`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **88%**（35/40）
+覆盖率 **90%**（36/40）
 
-**有卡**：`VAEDecode`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImage21`、`VAELoader`、`ResolutionSelector`、`CR Prompt Text`、`SaveImage`、`SaveImageAdvanced`、`CLIPLoader`、`UNETLoader`、`孤海注释`、`LoraLoaderModelOnly`、`JjkText`、`CLIPTextEncode`
+**有卡**：`VAEDecode`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImage21`、`VAELoader`、`ResolutionSelector`、`CR Prompt Text`、`SaveImage`、`SaveImageAdvanced`、`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（1）：`CR Prompt Text`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 
@@ -93,5 +95,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

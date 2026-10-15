@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/EverAnimate Long Video Consistent Editing_2072998873179922432.json
 hash: 7619ac6d675dcfa4
-coverage: 0.759494
-learned_at: 2026-10-11 20:21:24
+coverage: 0.822785
+learned_at: 2026-10-15 22:44:08
 nodes: [BlockifyMask, GrowMaskWithBlur, PoseAndFaceDetection, OnnxDetectionModelLoader, DrawViTPose, CLIPTextEncode, VAELoader, Reroute, ComfyEverAnimateTrimImages, TrimVideoLatent, VAEDecode, ComfyEverAnimate, ModelSamplingSD3, KSampler, ModelPatchTorchSettings, PathchSageAttentionKJ, ComfyEverAnimate, KSampler, TrimVideoLatent, VAEDecode, ComfyEverAnimateTrimImages, easy forLoopEnd, VHS_VideoInfo, CheckpointLoaderSimple, YOLOModelLoader, BBoxYOLO, SDPoseKeypointExtractor, YOLOModelLoader, BBoxYOLO, SDPoseKeypointExtractor, BodyRatioMapperProportionTransfer, BodyRatioMapperSDPoseRender, INTConstant, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, ImageResizeKJv2, ComfyMathExpression, VHS_VideoCombine, WD14Tagger|pysssss, LoadImage, DrawMaskOnImage, GetImageSizeAndCount, LayerMask: SAM2VideoUltra, LoadImage, SDPoseDrawKeypoints, easy imageIndexSwitch, LoraLoaderModelOnly, WanChunkFeedForward, ModelMemoryUsageFactorOverride, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, easy forLoopStart, ImageBatch, Note, Note, Note, Note, VHS_LoadVideo, CLIPTextEncode, CLIPTextEncode, INTConstant, INTConstant, INTConstant, INTConstant]
 patterns: []
-missing: [LayerMask: SAM2VideoUltra, WD14Tagger|pysssss, easy forLoopEnd, easy forLoopStart, easy imageIndexSwitch]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "sdpose_wholebody_fp16.safetensors", "denoise": 1, "sampler_name": "lcm", "scheduler": "normal", "seed": 42, "steps": 4}
-discoveries: [次要节点 `LayerMask: SAM2VideoUltra` 知识库中没有该节点类型的任何知识, 次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageIndexSwitch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/EverAnimate Long Video Consistent Editing_2072998873179922432.json
@@ -117,11 +117,9 @@ discoveries: [次要节点 `LayerMask: SAM2VideoUltra` 知识库中没有该节�
 
 ## 知识
 
-覆盖率 **76%**（60/79）
+覆盖率 **82%**（65/79）
 
-**有卡**：`BlockifyMask`、`GrowMaskWithBlur`、`PoseAndFaceDetection`、`OnnxDetectionModelLoader`、`DrawViTPose`、`CLIPTextEncode`、`VAELoader`、`ComfyEverAnimateTrimImages`、`TrimVideoLatent`、`VAEDecode`、`ComfyEverAnimate`、`ModelSamplingSD3`、`KSampler`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`VHS_VideoInfo`、`CheckpointLoaderSimple`、`YOLOModelLoader`、`BBoxYOLO`、`SDPoseKeypointExtractor`、`BodyRatioMapperProportionTransfer`、`BodyRatioMapperSDPoseRender`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`ImageResizeKJv2`、`ComfyMathExpression`、`VHS_VideoCombine`、`LoadImage`、`DrawMaskOnImage`、`GetImageSizeAndCount`、`SDPoseDrawKeypoints`、`WanChunkFeedForward`、`ModelMemoryUsageFactorOverride`、`ImageBatch`、`VHS_LoadVideo`
-
-**缺卡**（5）：`LayerMask: SAM2VideoUltra`、`WD14Tagger|pysssss`、`easy forLoopEnd`、`easy forLoopStart`、`easy imageIndexSwitch`
+**有卡**：`BlockifyMask`、`GrowMaskWithBlur`、`PoseAndFaceDetection`、`OnnxDetectionModelLoader`、`DrawViTPose`、`CLIPTextEncode`、`VAELoader`、`ComfyEverAnimateTrimImages`、`TrimVideoLatent`、`VAEDecode`、`ComfyEverAnimate`、`ModelSamplingSD3`、`KSampler`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`easy forLoopEnd`、`VHS_VideoInfo`、`CheckpointLoaderSimple`、`YOLOModelLoader`、`BBoxYOLO`、`SDPoseKeypointExtractor`、`BodyRatioMapperProportionTransfer`、`BodyRatioMapperSDPoseRender`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`ImageResizeKJv2`、`ComfyMathExpression`、`VHS_VideoCombine`、`WD14Tagger|pysssss`、`LoadImage`、`DrawMaskOnImage`、`GetImageSizeAndCount`、`LayerMask: SAM2VideoUltra`、`SDPoseDrawKeypoints`、`easy imageIndexSwitch`、`WanChunkFeedForward`、`ModelMemoryUsageFactorOverride`、`easy forLoopStart`、`ImageBatch`、`VHS_LoadVideo`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
 
@@ -133,10 +131,5 @@ discoveries: [次要节点 `LayerMask: SAM2VideoUltra` 知识库中没有该节�
 
 ## 学习发现
 
-- 次要节点 `LayerMask: SAM2VideoUltra` 知识库中没有该节点类型的任何知识
-- 次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageIndexSwitch` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

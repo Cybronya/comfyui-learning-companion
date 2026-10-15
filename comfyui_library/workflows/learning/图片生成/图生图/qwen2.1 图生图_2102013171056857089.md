@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen2.1 图生图_2102013171056857089.json
 hash: 9b5fb25e3c3f4de3
-coverage: 0.8
-learned_at: 2026-10-10 20:48:12
+coverage: 0.9
+learned_at: 2026-10-15 22:25:36
 nodes: [VAELoader, CLIPLoader, UNETLoader, LoadImage, LoadImage, LoadImage, Image Comparer (rgthree), Int, TextEncodeQwenImage21, KSampler, VAEDecode, EmptyLatentImage, LayerUtility: ImageScaleByAspectRatio V2, ResolutionSelector, EmptyLatentImage, ComfySwitchNode, LoadImage, SaveImage, LoadImage, Text Multiline]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 641504827726597, "steps": 50, "width": 1024}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/qwen2.1 图生图_2102013171056857089.json
@@ -59,15 +58,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **80%**（16/20）
+覆盖率 **90%**（18/20）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoadImage`、`Int`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`SaveImage`
-
-**缺卡**（2）：`LayerUtility: ImageScaleByAspectRatio V2`、`Text Multiline`
+**有卡**：`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoadImage`、`Int`、`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`ResolutionSelector`、`SaveImage`、`Text Multiline`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

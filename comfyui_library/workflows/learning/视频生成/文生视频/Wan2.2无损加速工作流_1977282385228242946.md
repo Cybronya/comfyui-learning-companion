@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2无损加速工作流_1977282385228242946.json
 hash: f85fa77df483cffd
-coverage: 0.941176
-learned_at: 2026-10-10 23:08:06
+coverage: 1
+learned_at: 2026-10-15 22:47:16
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, BasicScheduler, SplitSigmas, TorchCompileModelWanVideoV2, TorchCompileModelWanVideoV2, PathchSageAttentionKJ, PathchSageAttentionKJ, SamplerCustom, LoraLoaderModelOnly, EmptyHunyuanLatentVideo, CLIPTextEncode, CLIPTextEncode, VAEDecode, VAEDecode, LoraLoaderModelOnly, Label (rgthree), Label (rgthree), VHS_VideoCombine, VHS_VideoCombine, FSampler, FSampler, wanBlockSwap, wanBlockSwap, ModelSamplingSD3, ModelSamplingSD3, SamplerCustom, KSamplerSelect, VAELoader, DiffusionModelLoaderKJ, DiffusionModelLoaderKJ, CLIPLoader]
 patterns: []
-missing: [Label (rgthree), Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Wan2.2无损加速工作流_1977282385228242946.json
@@ -60,15 +59,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **94%**（32/34）
+覆盖率 **100%**（34/34）
 
-**有卡**：`LoraLoaderModelOnly`、`BasicScheduler`、`SplitSigmas`、`TorchCompileModelWanVideoV2`、`PathchSageAttentionKJ`、`SamplerCustom`、`EmptyHunyuanLatentVideo`、`CLIPTextEncode`、`VAEDecode`、`VHS_VideoCombine`、`FSampler`、`wanBlockSwap`、`ModelSamplingSD3`、`KSamplerSelect`、`VAELoader`、`DiffusionModelLoaderKJ`、`CLIPLoader`
-
-**缺卡**（2）：`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`LoraLoaderModelOnly`、`BasicScheduler`、`SplitSigmas`、`TorchCompileModelWanVideoV2`、`PathchSageAttentionKJ`、`SamplerCustom`、`EmptyHunyuanLatentVideo`、`CLIPTextEncode`、`VAEDecode`、`Label (rgthree)`、`VHS_VideoCombine`、`FSampler`、`wanBlockSwap`、`ModelSamplingSD3`、`KSamplerSelect`、`VAELoader`、`DiffusionModelLoaderKJ`、`CLIPLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、KSamplerSelect、SamplerCustom、FSampler
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

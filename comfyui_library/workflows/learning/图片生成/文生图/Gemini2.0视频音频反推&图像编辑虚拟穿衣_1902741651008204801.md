@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
 hash: d824d9137e626446
-coverage: 0.636364
-learned_at: 2026-10-10 20:58:39
+coverage: 0.666667
+learned_at: 2026-10-15 22:26:31
 nodes: [LoadAudio, Gemini_Flash_200_Exp, ShowText|pysssss, LoadImage, LoadImage, PreviewImage, LoadImage, PreviewImage, LoadImage, Gemini_Flash_200_Exp, LoadImage, PreviewImage, Gemini_Flash_200_Exp, Gemini_Flash_200_Exp, LoadImage, PreviewImage, LoadImage, Gemini_Flash_200_Exp, LoadImage, ShowText|pysssss, Gemini_Flash_200_Exp, VHS_LoadVideo, ShowText|pysssss, Gemini_Flash_200_Exp, PreviewImage, ImageConcanate, ImageConcanate, PreviewImage, ImageConcanate, PreviewImage, Fast Groups Bypasser (rgthree), Note _O, VHS_VideoCombine]
 patterns: []
-missing: [Note _O]
-discoveries: [次要节点 `Note _O` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `Note _O` 知识库中没有该节点类型的任何�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Gemini2.0视频音频反推&图像编辑虚拟穿衣_1902741651008204801.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（33 个）：
 - `LoadAudio`
@@ -57,12 +58,8 @@ discoveries: [次要节点 `Note _O` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **64%**（21/33）
+覆盖率 **67%**（22/33）
 
-**有卡**：`LoadAudio`、`Gemini_Flash_200_Exp`、`ShowText|pysssss`、`LoadImage`、`PreviewImage`
+**有卡**：`LoadAudio`、`Gemini_Flash_200_Exp`、`LoadImage`、`VHS_LoadVideo`、`ImageConcanate`、`Note _O`、`VHS_VideoCombine`
 
-**缺卡**（1）：`Note _O`
-
-## 学习发现
-
-- 次要节点 `Note _O` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、ImageConcanate、LoadAudio、VHS_LoadVideo、VHS_VideoCombine、Gemini_Flash_200_Exp、Note _O、sd15-t2i-basic

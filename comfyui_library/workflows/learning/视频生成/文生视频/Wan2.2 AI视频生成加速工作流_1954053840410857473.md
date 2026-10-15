@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 AI视频生成加速工作流_1954053840410857473.json
 hash: dae7debab5471359
 coverage: 0.95
-learned_at: 2026-10-10 23:06:38
+learned_at: 2026-10-15 22:47:08
 nodes: [MarkdownNote, ModelSamplingSD3, CreateVideo, CLIPTextEncode, VAEDecode, ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, SaveVideo, WanImageToVideo, UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, KSamplerAdvanced, LoadImage, CLIPTextEncode]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
 hash: 2841b4a0ddbd4e88
-coverage: 0.517241
-learned_at: 2026-10-10 20:59:13
+coverage: 0.586207
+learned_at: 2026-10-15 22:27:34
 nodes: [VAELoader, VAEDecode, VAEDecode, CLIPLoader, MarkdownNote, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, CLIPTextEncode, LoraLoaderModelOnly, MarkdownNote, MarkdownNote, PreviewImage, SaveImage, MarkdownNote, MarkdownNote, PreviewImage, KSamplerAdvanced, CLIPTextEncode, MarkdownNote, UNETLoader, MarkdownNote, KSamplerAdvanced, Note Plus (mtb), Label (rgthree), EmptyHunyuanLatentVideo, PrimitiveInt, PrimitiveInt, MarkdownNote]
 patterns: []
-missing: [Label (rgthree), Note Plus (mtb)]
+missing: []
 parameters: {"cfg": 30, "denoise": "bong_tangent", "sampler_name": 1, "scheduler": "res_2s", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/WAN2.2提升画质的10个窍门_1952624573403607042.json
@@ -21,17 +20,19 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（29 个）：
 - `VAELoader`
-- `VAEDecode`
-- `VAEDecode`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `MarkdownNote`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `MarkdownNote`
 - `MarkdownNote`
 - `PreviewImage`
@@ -39,12 +40,12 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `MarkdownNote`
 - `MarkdownNote`
 - `PreviewImage`
-- `KSamplerAdvanced`
-- `CLIPTextEncode`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
 - `MarkdownNote`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `MarkdownNote`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `Note Plus (mtb)`
 - `Label (rgthree)`
 - `EmptyHunyuanLatentVideo`
@@ -54,22 +55,17 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `cfg` = `30`
-- `denoise` = `bong_tangent`
-- `sampler_name` = `1`
-- `scheduler` = `res_2s`
 - `seed` = `enable`
 - `steps` = `fixed`
+- `cfg` = `30`
+- `sampler_name` = `1`
+- `scheduler` = `res_2s`
+- `denoise` = `bong_tangent`
 
 ## 知识
 
-覆盖率 **52%**（15/29）
+覆盖率 **59%**（17/29）
 
-**有卡**：`VAELoader`、`VAEDecode`、`CLIPLoader`、`MarkdownNote`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`PreviewImage`、`SaveImage`
+**有卡**：`VAELoader`、`VAEDecode`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`SaveImage`、`KSamplerAdvanced`、`Note Plus (mtb)`、`Label (rgthree)`、`EmptyHunyuanLatentVideo`
 
-**缺卡**（2）：`Label (rgthree)`、`Note Plus (mtb)`
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

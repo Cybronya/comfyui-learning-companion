@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【3D白模转真实】LTX-2.3 真实物理渲染与驱动_2073385860002832386.json
 hash: 3f2f454bdb670ffc
 coverage: 1
-learned_at: 2026-10-11 20:38:45
+learned_at: 2026-10-15 22:47:38
 nodes: [LTXDirectorCropGuides, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, LTXVLatentUpsampler, LTXVConditioning, CFGGuider, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, VAEDecode, CreateVideo, RandomNoise, CFGGuider, LTXVSeparateAVLatent, LTXDirectorCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVAudioVAEDecode, VAELoaderKJ, DualCLIPLoader, VAELoader, VAELoader, LatentUpscaleModelLoader, LTXDirectorGuide, LTXDirectorGuide, ConditioningZeroOut, SamplerCustomAdvanced, SaveVideo, ModelPreviewOverrideKJ, Mesh2MotionExplore, LTXDirector, SaveVideo, UNETLoader]
 patterns: []
 missing: []

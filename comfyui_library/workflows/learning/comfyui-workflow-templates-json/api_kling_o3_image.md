@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_o3_ima
 hash: 5819d6d98614d1e7
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:38
+learned_at: 2026-10-15 22:24:49
 nodes: [BatchImagesNode, LoadImage, LoadImage, SaveImage, KlingOmniProImageNode]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`BatchImagesNode`、`LoadImage`、`SaveImage`、`KlingOmniProImageNode`
 
-**用到的条目**：LoadImage、SaveImage、BatchImagesNode、KlingOmniProImageNode、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、BatchImagesNode、KlingOmniProImageNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

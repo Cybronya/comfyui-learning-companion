@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_recraft_
 hash: bb713b96ebbb564f
 official: true
 coverage: 0.666667
-learned_at: 2026-10-10 22:49:52
+learned_at: 2026-10-15 22:24:57
 nodes: [MarkdownNote, MarkdownNote, SaveImage, ImageCompare, LoadImage, RecraftCreativeUpscaleNode]
 patterns: []
 missing: []

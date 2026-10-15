@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生图--高质量极简流_1968282023137824769.json
 hash: ad74e9c947722aa8
-coverage: 0.666667
-learned_at: 2026-10-10 20:59:27
+coverage: 0.777778
+learned_at: 2026-10-15 22:27:58
 nodes: [CLIPTextEncode, EmptyHunyuanLatentVideo, PathchSageAttentionKJ, CLIPLoader, VAELoader, Note, MarkdownNote, Note, LoraLoader, UNETLoader, KSampler, LoraLoader, SaveImage, VAEDecode, PreviewImage, CLIPTextEncode, easy int, easy int]
 patterns: [lora]
-missing: [easy int, easy int]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "lora_name": "FastWan_T2V_14B_480p_lora_rank_128_bf16.safetensors", "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 614644988664074, "steps": 5, "strength_clip": 1.0000000000000002, "strength_model": 1.0000000000000002}
-discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/wan2.2文生图--高质量极简流_1968282023137824769.json
@@ -22,8 +22,10 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（18 个）：
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `EmptyHunyuanLatentVideo`
 - `PathchSageAttentionKJ`
 - `CLIPLoader`
@@ -31,14 +33,14 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 - `Note`
 - `MarkdownNote`
 - `Note`
-- `LoraLoader`
-- `UNETLoader`
-- `KSampler`
-- `LoraLoader`
+- `LoraLoader` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `LoraLoader` ★核心
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `easy int`
 - `easy int`
 
@@ -46,23 +48,23 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
 - `lora_name` = `FastWan_T2V_14B_480p_lora_rank_128_bf16.safetensors`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
+- `strength_model` = `1.0000000000000002`
+- `strength_clip` = `1.0000000000000002`
 - `seed` = `614644988664074`
 - `steps` = `5`
-- `strength_clip` = `1.0000000000000002`
-- `strength_model` = `1.0000000000000002`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **67%**（12/18）
+覆盖率 **78%**（14/18）
 
-**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`Note`、`MarkdownNote`、`LoraLoader`、`UNETLoader`、`KSampler`
+**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`LoraLoader`、`UNETLoader`、`KSampler`、`SaveImage`、`VAEDecode`、`easy int`
 
-**缺卡**（2）：`easy int`、`easy int`
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo、LoraLoader
 
 ## 参数体检
 
@@ -71,6 +73,4 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 学习发现
 
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

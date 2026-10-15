@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968252590028926977.json
 hash: 57955a7d92342943
-coverage: 0.916667
-learned_at: 2026-10-10 23:00:41
+coverage: 0.958333
+learned_at: 2026-10-15 22:45:22
 nodes: [TrimVideoLatent, VAEDecode, KSampler, ModelSamplingSD3, InvertMask, MaskToImage, GetImageSize+, VHS_DuplicateMasks, GrowMaskWithBlur, SolidMask, VHS_VideoCombine, PreviewImage, INTConstant, InspyrenetRembg, ImageCompositeMasked, ImageResizeKJv2, VHS_LoadVideo, LoadImage, Miaoshouai_Tagger, VHS_VideoCombine, WanVaceToVideo, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple]
 patterns: []
-missing: [GetImageSize+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 192054346835137, "steps": 6}
-discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968252590028926977.json
@@ -62,13 +62,11 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 ## 知识
 
-覆盖率 **92%**（22/24）
+覆盖率 **96%**（23/24）
 
-**有卡**：`TrimVideoLatent`、`VAEDecode`、`KSampler`、`ModelSamplingSD3`、`InvertMask`、`MaskToImage`、`VHS_DuplicateMasks`、`GrowMaskWithBlur`、`SolidMask`、`VHS_VideoCombine`、`INTConstant`、`InspyrenetRembg`、`ImageCompositeMasked`、`ImageResizeKJv2`、`VHS_LoadVideo`、`LoadImage`、`Miaoshouai_Tagger`、`WanVaceToVideo`、`CLIPTextEncode`、`CheckpointLoaderSimple`
+**有卡**：`TrimVideoLatent`、`VAEDecode`、`KSampler`、`ModelSamplingSD3`、`InvertMask`、`MaskToImage`、`GetImageSize+`、`VHS_DuplicateMasks`、`GrowMaskWithBlur`、`SolidMask`、`VHS_VideoCombine`、`INTConstant`、`InspyrenetRembg`、`ImageCompositeMasked`、`ImageResizeKJv2`、`VHS_LoadVideo`、`LoadImage`、`Miaoshouai_Tagger`、`WanVaceToVideo`、`CLIPTextEncode`、`CheckpointLoaderSimple`
 
-**缺卡**（1）：`GetImageSize+`
-
-**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、TrimVideoLatent、ImageResizeKJv2、INTConstant
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、TrimVideoLatent、ImageResizeKJv2、GetImageSize+
 
 ## 参数体检
 
@@ -77,5 +75,4 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 ## 学习发现
 
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

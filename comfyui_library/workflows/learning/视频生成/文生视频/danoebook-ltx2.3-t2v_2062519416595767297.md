@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/danoebook-ltx2.3-t2v_2062519416595767297.json
 hash: 418e57b46ca89ebf
 coverage: 0.871795
-learned_at: 2026-10-11 20:21:31
+learned_at: 2026-10-15 22:47:18
 nodes: [LoraLoaderModelOnly, LTXVAudioVAEDecode, VAEDecodeTiled, CheckpointLoaderSimple, LTXVAudioVAELoader, LatentUpscaleModelLoader, CreateVideo, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, LTXVCropGuides, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, Reroute, RandomNoise, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, ManualSigmas, LTXVConditioning, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXAVTextEncoderLoader, CLIPTextEncode, CLIPTextEncode, SaveVideo]
 patterns: []
 missing: []

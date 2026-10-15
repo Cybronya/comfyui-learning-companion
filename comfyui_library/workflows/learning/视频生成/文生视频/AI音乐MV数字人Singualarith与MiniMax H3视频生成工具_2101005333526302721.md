@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI音乐MV数字人Singualarith与MiniMax H3视频生成工具_2101005333526302721.json
 hash: d740f617ab3b3cd4
-coverage: 0.885246
-learned_at: 2026-10-10 22:58:38
+coverage: 0.901639
+learned_at: 2026-10-15 22:44:00
 nodes: [ModelAttentionBackend, MiniMaxLowVRAMAttention, LTXVSeparateAVLatent, SetLatentNoiseMask, LTXVAudioVAEEncode, MiniMaxH3ReferenceToVideo, BasicScheduler, SolidMask, KSamplerSelect, MiniMaxChunkFeedForward, LTXVConcatAVLatent, UNETLoader, CLIPLoader, VAELoader, VAELoader, ConditioningZeroOut, LoraLoaderModelOnly, PreviewAny, Reroute, LoadImage, SelfLiftAvatarH3Sampler, ResolutionSelector, Text Multiline, TrimAudioDuration, ComfyNumberConvert, SoundFlow_GetLength, ComfyMathExpression, VHS_VideoCombine, LTXVSeparateAVLatent, VAEDecode, LoadAudio, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
-missing: [Text Multiline]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/AI音乐MV数字人Singualarith与MiniMax H3视频生成工具_2101005333526302721.json
@@ -103,11 +103,9 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **89%**（54/61）
+覆盖率 **90%**（55/61）
 
-**有卡**：`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`MiniMaxH3ReferenceToVideo`、`BasicScheduler`、`SolidMask`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`LTXVConcatAVLatent`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`LoadImage`、`SelfLiftAvatarH3Sampler`、`ResolutionSelector`、`TrimAudioDuration`、`ComfyNumberConvert`、`SoundFlow_GetLength`、`ComfyMathExpression`、`VHS_VideoCombine`、`VAEDecode`、`LoadAudio`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
-
-**缺卡**（1）：`Text Multiline`
+**有卡**：`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`MiniMaxH3ReferenceToVideo`、`BasicScheduler`、`SolidMask`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`LTXVConcatAVLatent`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`LoadImage`、`SelfLiftAvatarH3Sampler`、`ResolutionSelector`、`Text Multiline`、`TrimAudioDuration`、`ComfyNumberConvert`、`SoundFlow_GetLength`、`ComfyMathExpression`、`VHS_VideoCombine`、`VAEDecode`、`LoadAudio`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
@@ -118,5 +116,4 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 学习发现
 
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

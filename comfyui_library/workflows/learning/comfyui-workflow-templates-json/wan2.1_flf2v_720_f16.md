@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/wan2.1_flf2v_720
 hash: 01f100c0ed6a8bc5
 official: true
 coverage: 0.941176
-learned_at: 2026-10-10 22:50:54
+learned_at: 2026-10-15 22:24:59
 nodes: [VAELoader, CLIPVisionEncode, CLIPVisionLoader, CLIPVisionEncode, ModelSamplingSD3, WanFirstLastFrameToVideo, KSampler, CLIPTextEncode, LoadImage, UNETLoader, CLIPLoader, CLIPTextEncode, VAEDecode, CreateVideo, SaveVideo, LoadImage, MarkdownNote]
 patterns: []
 missing: []

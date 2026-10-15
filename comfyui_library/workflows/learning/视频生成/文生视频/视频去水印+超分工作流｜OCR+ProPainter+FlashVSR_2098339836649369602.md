@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/视频去水印+超分工作流｜OCR+ProPainter+FlashVSR_2098339836649369602.json
 hash: 44d7177666967720
 coverage: 1
-learned_at: 2026-10-11 21:42:03
+learned_at: 2026-10-15 22:49:01
 nodes: [VHS_LoadVideo, SubtitleDetectorRapidOCR, SubtitleEraserProPainter, FlashVSRNode, CreateVideo, SaveVideo]
 patterns: []
 missing: []

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json
 hash: 99bc65a02887ca23
-coverage: 0.8
-learned_at: 2026-10-10 20:59:13
+coverage: 0.92
+learned_at: 2026-10-15 22:27:35
 nodes: [ModelSamplingSD3, Note, ImageResizeKJ, VAEDecode, CLIPTextEncode, LoadImage, ImageResizeKJ, LoadImage, VHS_VideoCombine, KSampler, WanVaceToVideo, VHS_LoadVideo, DWPreprocessor, Zoe-DepthMapPreprocessor, ImageBlend, VHS_VideoCombine, VHS_VideoCombine, CheckpointLoaderSimple, CLIPTextEncode, Fast Groups Bypasser (rgthree), Primitive integer [Crystools], INTConstant, Primitive integer [Crystools], ImageResizeKJ, WanVideoVACEStartToEndFrame]
 patterns: []
-missing: [Primitive integer [Crystools], Primitive integer [Crystools], Zoe-DepthMapPreprocessor]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "denoise": 1, "sampler_name": "ipndm", "scheduler": "sgm_uniform", "seed": 7567358653673, "steps": 4}
-discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Zoe-DepthMapPreprocessor` 仅有 ControlNet 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Wan2.2 多合一极速Rapid-AIO-Mega 【VACE动作迁移】_1968219641325715457.json
@@ -22,17 +22,19 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
 **节点**（25 个）：
 - `ModelSamplingSD3`
 - `Note`
 - `ImageResizeKJ`
-- `VAEDecode`
-- `CLIPTextEncode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `LoadImage`
 - `ImageResizeKJ`
 - `LoadImage`
 - `VHS_VideoCombine`
-- `KSampler`
+- `KSampler` ★核心
 - `WanVaceToVideo`
 - `VHS_LoadVideo`
 - `DWPreprocessor`
@@ -40,8 +42,8 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 - `ImageBlend`
 - `VHS_VideoCombine`
 - `VHS_VideoCombine`
-- `CheckpointLoaderSimple`
-- `CLIPTextEncode`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `Primitive integer [Crystools]`
 - `INTConstant`
@@ -51,21 +53,21 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 
 ## 关键参数
 
-- `cfg` = `1`
-- `checkpoint` = `wan2.2-rapid-mega-aio-v1.safetensors`
-- `denoise` = `1`
-- `sampler_name` = `ipndm`
-- `scheduler` = `sgm_uniform`
 - `seed` = `7567358653673`
 - `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `ipndm`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-rapid-mega-aio-v1.safetensors`
 
 ## 知识
 
-覆盖率 **80%**（20/25）
+覆盖率 **92%**（23/25）
 
-**有卡**：`ModelSamplingSD3`、`Note`、`ImageResizeKJ`、`VAEDecode`、`CLIPTextEncode`、`LoadImage`、`VHS_VideoCombine`、`KSampler`、`WanVaceToVideo`、`VHS_LoadVideo`、`DWPreprocessor`、`Zoe-DepthMapPreprocessor`、`ImageBlend`、`CheckpointLoaderSimple`、`Fast Groups Bypasser (rgthree)`
+**有卡**：`ModelSamplingSD3`、`ImageResizeKJ`、`VAEDecode`、`CLIPTextEncode`、`LoadImage`、`VHS_VideoCombine`、`KSampler`、`WanVaceToVideo`、`VHS_LoadVideo`、`DWPreprocessor`、`Zoe-DepthMapPreprocessor`、`ImageBlend`、`CheckpointLoaderSimple`、`Primitive integer [Crystools]`、`INTConstant`、`WanVideoVACEStartToEndFrame`
 
-**缺卡**（3）：`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Zoe-DepthMapPreprocessor`
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、Zoe-DepthMapPreprocessor、ImageResizeKJ、ImageBlend
 
 ## 参数体检
 
@@ -74,7 +76,4 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 
 ## 学习发现
 
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Zoe-DepthMapPreprocessor` 仅有 ControlNet 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

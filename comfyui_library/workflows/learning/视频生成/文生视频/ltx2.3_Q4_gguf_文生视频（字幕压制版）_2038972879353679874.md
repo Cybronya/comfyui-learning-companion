@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3_Q4_gguf_文生视频（字幕压制版）_2038972879353679874.json
 hash: 75bf470be72a5654
-coverage: 0.843137
-learned_at: 2026-10-11 19:49:44
+coverage: 0.921569
+learned_at: 2026-10-15 22:47:22
 nodes: [LTXVLatentUpsampler, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, SimpleMath+, Int, Note, LTXVSeparateAVLatent, Note, PathchSageAttentionKJ, ModelPatchTorchSettings, CLIPTextEncode, RH_LLMAPI_Pro_Node, StringToAnyNode, easy showAnything, Int, Int, Int, easy boolean, ComfySwitchNode, VAEDecodeTiled, LTXVAudioVAEDecode, CM_IntToFloat, RandomNoise, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, SaveVideo, CreateVideo, LTXVChunkFeedForward, LTXVConditioning, UnetLoaderGGUF, LatentUpscaleModelLoader, VAELoaderKJ, LTXVSeparateAVLatent, VAELoaderKJ, LTXVConcatAVLatent, LTX2_NAG, CR Text, LTX2SamplingPreviewOverride, CLIPTextEncode, SamplerCustomAdvanced, LayerUtility: PurgeVRAM V2, DualCLIPLoader, DualCLIPLoaderGGUF, SamplerCustomAdvanced, CFGGuider, LTX2SamplingPreviewOverride, CFGGuider]
 patterns: []
-missing: [CR Text, LayerUtility: PurgeVRAM V2, SimpleMath+, easy boolean]
+missing: []
 parameters: {"batch_size": 1, "height": 24, "width": 241}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/ltx2.3_Q4_gguf_文生视频（字幕压制版）_2038972879353679874.json
@@ -84,17 +83,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **84%**（43/51）
+覆盖率 **92%**（47/51）
 
-**有卡**：`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`Int`、`LTXVSeparateAVLatent`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`RH_LLMAPI_Pro_Node`、`StringToAnyNode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CM_IntToFloat`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`SaveVideo`、`CreateVideo`、`LTXVChunkFeedForward`、`LTXVConditioning`、`UnetLoaderGGUF`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`SamplerCustomAdvanced`、`DualCLIPLoader`、`DualCLIPLoaderGGUF`、`CFGGuider`
-
-**缺卡**（4）：`CR Text`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`easy boolean`
+**有卡**：`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`SimpleMath+`、`Int`、`LTXVSeparateAVLatent`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`RH_LLMAPI_Pro_Node`、`StringToAnyNode`、`easy boolean`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CM_IntToFloat`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`SaveVideo`、`CreateVideo`、`LTXVChunkFeedForward`、`LTXVConditioning`、`UnetLoaderGGUF`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`LTX2_NAG`、`CR Text`、`LTX2SamplingPreviewOverride`、`SamplerCustomAdvanced`、`LayerUtility: PurgeVRAM V2`、`DualCLIPLoader`、`DualCLIPLoaderGGUF`、`CFGGuider`
 
 **用到的条目**：CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent、LTXVSeparateAVLatent、VAEDecodeTiled
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识

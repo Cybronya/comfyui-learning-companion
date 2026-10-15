@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
 hash: b0249ba8e84241f6
-coverage: 0.692308
-learned_at: 2026-10-10 20:59:39
+coverage: 0.820513
+learned_at: 2026-10-15 22:28:18
 nodes: [KSampler, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, FluxGuidance, ConditioningZeroOut, SDXL Empty Latent Image (rgthree), CLIPTextEncode, CR Text, VAEDecodeTiled, ImageScaleBy, ImageUpscaleWithModel, TTP_Image_Tile_Batch, TTP_Tile_image_size, VAEEncode, ImpactImageBatchToImageList, Reroute, ImageListToImageBatch, TTP_Image_Assy, VAEDecode, DualCLIPLoader, VAELoader, Reroute, CLIPTextEncode, CLIPTextEncode, KSampler, Reroute, Reroute, UpscaleModelLoader, LoadImage, UNETLoader, LoraLoaderModelOnly, Note, LoadImage, ShowText|pysssss, Note, SaveImage, LoadImage, CR Text Concatenate, SaveImage]
 patterns: [image_to_image]
-missing: [CR Text, CR Text Concatenate, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model, SDXL Empty Latent Image (rgthree)]
+missing: []
 parameters: {"cfg": 1, "denoise": 0.9, "sampler_name": "euler", "scheduler": "exponential", "seed": 507969931516150, "steps": 20}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, 次要节点 `SDXL Empty Latent Image (rgthree)` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_1951105950621048833.json
@@ -21,38 +20,40 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（39 个）：
-- `KSampler`
+- `KSampler` ★核心
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `LayerUtility: JoyCaptionBeta1`
 - `FluxGuidance`
 - `ConditioningZeroOut`
 - `SDXL Empty Latent Image (rgthree)`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `CR Text`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `ImageScaleBy`
 - `ImageUpscaleWithModel`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `ImpactImageBatchToImageList`
 - `Reroute`
 - `ImageListToImageBatch`
 - `TTP_Image_Assy`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `DualCLIPLoader`
 - `VAELoader`
 - `Reroute`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `KSampler`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
 - `Reroute`
 - `Reroute`
 - `UpscaleModelLoader`
 - `LoadImage`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `Note`
 - `LoadImage`
 - `ShowText|pysssss`
@@ -66,25 +67,17 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `0.9`
-- `sampler_name` = `euler`
-- `scheduler` = `exponential`
 - `seed` = `507969931516150`
 - `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `exponential`
+- `denoise` = `0.9`
 
 ## 知识
 
-覆盖率 **69%**（27/39）
+覆盖率 **82%**（32/39）
 
-**有卡**：`KSampler`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: JoyCaptionBeta1`、`FluxGuidance`、`ConditioningZeroOut`、`SDXL Empty Latent Image (rgthree)`、`CLIPTextEncode`、`CR Text`、`VAEDecodeTiled`、`ImageScaleBy`、`ImageUpscaleWithModel`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`VAEEncode`、`ImpactImageBatchToImageList`、`Reroute`、`ImageListToImageBatch`、`TTP_Image_Assy`、`VAEDecode`、`DualCLIPLoader`、`VAELoader`
+**有卡**：`KSampler`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: JoyCaptionBeta1`、`FluxGuidance`、`ConditioningZeroOut`、`SDXL Empty Latent Image (rgthree)`、`CLIPTextEncode`、`CR Text`、`VAEDecodeTiled`、`ImageScaleBy`、`ImageUpscaleWithModel`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`VAEEncode`、`ImpactImageBatchToImageList`、`ImageListToImageBatch`、`TTP_Image_Assy`、`VAEDecode`、`DualCLIPLoader`、`VAELoader`、`UpscaleModelLoader`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`SaveImage`、`CR Text Concatenate`
 
-**缺卡**（5）：`CR Text`、`CR Text Concatenate`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: LoadJoyCaptionBeta1Model`、`SDXL Empty Latent Image (rgthree)`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识
-- 次要节点 `SDXL Empty Latent Image (rgthree)` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_omni_i
 hash: 0fb27f206cba2bde
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:41
+learned_at: 2026-10-15 22:24:49
 nodes: [LoadImage, LoadImage, LoadImage, BatchImagesNode, SaveVideo, KlingOmniProImageToVideoNode]
 patterns: []
 missing: []
@@ -36,4 +36,4 @@ missing: []
 
 **有卡**：`LoadImage`、`BatchImagesNode`、`SaveVideo`、`KlingOmniProImageToVideoNode`
 
-**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、KlingOmniProImageToVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage
+**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、KlingOmniProImageToVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、Image Batch

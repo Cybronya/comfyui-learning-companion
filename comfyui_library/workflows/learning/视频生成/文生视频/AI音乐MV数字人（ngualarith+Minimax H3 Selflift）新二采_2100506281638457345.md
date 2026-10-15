@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AI音乐MV数字人（ngualarith+Minimax H3 Selflift）新二采_2100506281638457345.json
 hash: 3da493703028ce80
-coverage: 0.903226
-learned_at: 2026-10-11 22:12:30
+coverage: 0.935484
+learned_at: 2026-10-15 22:44:00
 nodes: [ModelAttentionBackend, MiniMaxLowVRAMAttention, LTXVSeparateAVLatent, SetLatentNoiseMask, LTXVAudioVAEEncode, MiniMaxH3ReferenceToVideo, BasicScheduler, SolidMask, KSamplerSelect, MiniMaxChunkFeedForward, LTXVConcatAVLatent, UNETLoader, CLIPLoader, VAELoader, VAELoader, ConditioningZeroOut, LoraLoaderModelOnly, PreviewAny, Reroute, LoadImage, SelfLiftAvatarH3Sampler, ResolutionSelector, Text Multiline, TrimAudioDuration, ComfyNumberConvert, SoundFlow_GetLength, ComfyMathExpression, VHS_VideoCombine, LTXVSeparateAVLatent, VAEDecode, LoadAudio]
 patterns: []
-missing: [Text Multiline]
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/AI音乐MV数字人（ngualarith+Minimax H3 Selflift）新二采_2100506281638457345.json
@@ -57,14 +56,8 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **90%**（28/31）
+覆盖率 **94%**（29/31）
 
-**有卡**：`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`MiniMaxH3ReferenceToVideo`、`BasicScheduler`、`SolidMask`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`LTXVConcatAVLatent`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`LoadImage`、`SelfLiftAvatarH3Sampler`、`ResolutionSelector`、`TrimAudioDuration`、`ComfyNumberConvert`、`SoundFlow_GetLength`、`ComfyMathExpression`、`VHS_VideoCombine`、`VAEDecode`、`LoadAudio`
-
-**缺卡**（1）：`Text Multiline`
+**有卡**：`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`MiniMaxH3ReferenceToVideo`、`BasicScheduler`、`SolidMask`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`LTXVConcatAVLatent`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`LoadImage`、`SelfLiftAvatarH3Sampler`、`ResolutionSelector`、`Text Multiline`、`TrimAudioDuration`、`ComfyNumberConvert`、`SoundFlow_GetLength`、`ComfyMathExpression`、`VHS_VideoCombine`、`VAEDecode`、`LoadAudio`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

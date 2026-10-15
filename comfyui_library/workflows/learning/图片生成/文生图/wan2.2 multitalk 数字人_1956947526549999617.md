@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json
 hash: 352318c79dfe2ff5
-coverage: 0.591837
-learned_at: 2026-10-10 20:59:27
+coverage: 0.612245
+learned_at: 2026-10-15 22:27:57
 nodes: [WanVideoBlockSwap, WanVideoTorchCompileSettings, MultiTalkModelLoader, WanVideoBlockSwap, SetNode, SetNode, GetNode, SetNode, SetNode, DownloadAndLoadWav2VecModel, SetNode, GetNode, GetNode, WanVideoDecode, GetNode, LoadWanVideoT5TextEncoder, GetNode, GetNode, GetNode, WanVideoModelLoader, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, SimpleMath+, GetNode, CLIPVisionLoader, SetNode, WanVideoVAELoader, MultiTalkWav2VecEmbeds, AudioCrop, RH_GetAudioDuration, GetNode, WanVideoClipVisionEncode, WanVideoSampler, ImageResizeKJv2, WanVideoImageToVideoEncode, LoadImage, WanVideoTextEncode, LoadAudio, VHS_VideoCombine, Int, Int, SetNode, SetNode, SetNode, WanVideoSampler, MultiTalkModelLoader, GetNode]
 patterns: []
-missing: [SimpleMath+]
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.2 multitalk 数字人_1956947526549999617.json`
 
 ## 结构
+
+**生成流程**：Model → Sampling → Process → Other
 
 **节点**（49 个）：
 - `WanVideoBlockSwap`
@@ -55,7 +56,7 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 - `RH_GetAudioDuration`
 - `GetNode`
 - `WanVideoClipVisionEncode`
-- `WanVideoSampler`
+- `WanVideoSampler` ★核心
 - `ImageResizeKJv2`
 - `WanVideoImageToVideoEncode`
 - `LoadImage`
@@ -67,18 +68,14 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 - `SetNode`
 - `SetNode`
 - `SetNode`
-- `WanVideoSampler`
+- `WanVideoSampler` ★核心
 - `MultiTalkModelLoader`
 - `GetNode`
 
 ## 知识
 
-覆盖率 **59%**（29/49）
+覆盖率 **61%**（30/49）
 
-**有卡**：`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`MultiTalkModelLoader`、`SetNode`、`GetNode`、`DownloadAndLoadWav2VecModel`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`SimpleMath+`、`CLIPVisionLoader`、`WanVideoVAELoader`
+**有卡**：`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`MultiTalkModelLoader`、`DownloadAndLoadWav2VecModel`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`SimpleMath+`、`CLIPVisionLoader`、`WanVideoVAELoader`、`MultiTalkWav2VecEmbeds`、`AudioCrop`、`RH_GetAudioDuration`、`WanVideoClipVisionEncode`、`WanVideoSampler`、`ImageResizeKJv2`、`WanVideoImageToVideoEncode`、`LoadImage`、`WanVideoTextEncode`、`LoadAudio`、`VHS_VideoCombine`、`Int`
 
-**缺卡**（1）：`SimpleMath+`
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

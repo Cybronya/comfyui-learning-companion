@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Anima-2.9B｜1.5倍高清放大_2089343554559758337.json
 hash: 3a61887323759ece
 coverage: 1
-learned_at: 2026-10-11 21:19:37
+learned_at: 2026-10-15 22:44:02
 nodes: [CLIPTextEncode, EmptyLatentImage, KSampler, SaveImage, PathchSageAttentionKJ, UNETLoader, FluxResolutionNode, VAELoaderKJ, CLIPLoader, KSampler, CLIPTextEncode, LatentUpscaleBy, VAEDecode]
 patterns: [text_to_image]
 missing: []

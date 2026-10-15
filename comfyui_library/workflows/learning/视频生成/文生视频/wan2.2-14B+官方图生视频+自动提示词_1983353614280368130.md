@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2-14B+官方图生视频+自动提示词_1983353614280368130.json
 hash: 7a39db998d6035ff
-coverage: 0.735294
-learned_at: 2026-10-11 02:45:03
+coverage: 0.911765
+learned_at: 2026-10-15 22:47:35
 nodes: [DF_Integer, easy int, UNETLoader, UNETLoader, RH_Captioner, easy showAnything, easy showAnything, CR Text Replace, easy ifElse, TextBox, TextBox, PrimitiveBoolean, LayerUtility: ImageScaleByAspectRatio V2, PatchModelPatcherOrder, PathchSageAttentionKJ, TorchCompileModelWanVideoV2, CLIPLoader, easy cleanGpuUsed, CLIPVisionLoader, CLIPTextEncode, CLIPTextEncode, CLIPVisionEncode, VAELoader, SimpleMath+, WanImageToVideo, KSamplerAdvanced, ModelSamplingSD3, VHS_VideoCombine, LayerUtility: PurgeVRAM, KSamplerAdvanced, VAEDecode, ModelSamplingSD3, LoadImage, TextBox]
 patterns: []
-missing: [CR Text Replace, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, SimpleMath+, easy cleanGpuUsed, easy int]
+missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2-14B+官方图生视频+自动提示词_1983353614280368130.json
@@ -70,19 +69,8 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **74%**（25/34）
+覆盖率 **91%**（31/34）
 
-**有卡**：`DF_Integer`、`UNETLoader`、`RH_Captioner`、`TextBox`、`PrimitiveBoolean`、`PatchModelPatcherOrder`、`PathchSageAttentionKJ`、`TorchCompileModelWanVideoV2`、`CLIPLoader`、`CLIPVisionLoader`、`CLIPTextEncode`、`CLIPVisionEncode`、`VAELoader`、`WanImageToVideo`、`KSamplerAdvanced`、`ModelSamplingSD3`、`VHS_VideoCombine`、`VAEDecode`、`LoadImage`
-
-**缺卡**（6）：`CR Text Replace`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM`、`SimpleMath+`、`easy cleanGpuUsed`、`easy int`
+**有卡**：`DF_Integer`、`easy int`、`UNETLoader`、`RH_Captioner`、`CR Text Replace`、`TextBox`、`PrimitiveBoolean`、`LayerUtility: ImageScaleByAspectRatio V2`、`PatchModelPatcherOrder`、`PathchSageAttentionKJ`、`TorchCompileModelWanVideoV2`、`CLIPLoader`、`easy cleanGpuUsed`、`CLIPVisionLoader`、`CLIPTextEncode`、`CLIPVisionEncode`、`VAELoader`、`SimpleMath+`、`WanImageToVideo`、`KSamplerAdvanced`、`ModelSamplingSD3`、`VHS_VideoCombine`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode
-
-## 学习发现
-
-- 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

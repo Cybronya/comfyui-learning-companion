@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MinimaxH3_t2v_i2v-2S-Singularity 融合模型视频生成工作流_2097922284819410945.json
 hash: ae726355646a1090
-coverage: 0.623188
-learned_at: 2026-10-11 21:41:50
+coverage: 0.666667
+learned_at: 2026-10-15 22:46:44
 nodes: [BasicGuider, GetNode, ComfyMathExpression, SetNode, PrimitiveFloat, SetNode, KSamplerSelect, SamplerCustomAdvanced, SamplerCustomAdvanced, ModelPatchTorchSettings, MiniMaxH3ImageToVideo, SetNode, SetNode, GetNode, GetNode, VAEDecode, GetNode, VAEDecodeAudio, GetNode, GetNode, GetNode, RandomNoise, VAEDecode, easy cleanGpuUsed, easy clearCacheAll, GetNode, MathExpression|pysssss, RandomNoise, BasicGuider, KSamplerSelect, SetNode, PrimitiveFloat, MiniMaxChunkFeedForward, PathchSageAttentionKJ, MiniMaxH3SigmaShift, MarkdownNote, ImageResizeKJv2, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, FrameInterpolate, SeedNode, UNETLoader, CLIPLoader, VAELoader, VAELoader, ImageResizeKJv2, PrimitiveStringMultiline, ResolutionSelector, PrimitiveFloat, SetNode, BasicScheduler, FrameInterpolationModelLoader, BasicScheduler, Note, LoraLoaderModelOnly, Reroute, MiniMaxH3MemoryEfficientSageAttentionPatch, VHS_VideoCombine, LoadImage, VHS_VideoCombine, LoadImage, DLSS5Settings, RH_DLSS5FrameInterpolation, DLSS5EnhanceImages, ApplyVDNH3Advanced, Note, Note]
 patterns: []
-missing: [MathExpression|pysssss, easy cleanGpuUsed, easy clearCacheAll]
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/MinimaxH3_t2v_i2v-2S-Singularity 融合模型视频生成工作流_2097922284819410945.json
@@ -95,16 +94,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **62%**（43/69）
+覆盖率 **67%**（46/69）
 
-**有卡**：`BasicGuider`、`ComfyMathExpression`、`KSamplerSelect`、`SamplerCustomAdvanced`、`ModelPatchTorchSettings`、`MiniMaxH3ImageToVideo`、`VAEDecode`、`VAEDecodeAudio`、`RandomNoise`、`MiniMaxChunkFeedForward`、`PathchSageAttentionKJ`、`MiniMaxH3SigmaShift`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`UNETLoader`、`FrameInterpolate`、`SeedNode`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`BasicScheduler`、`FrameInterpolationModelLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`VHS_VideoCombine`、`LoadImage`、`DLSS5Settings`、`RH_DLSS5FrameInterpolation`、`DLSS5EnhanceImages`、`ApplyVDNH3Advanced`
-
-**缺卡**（3）：`MathExpression|pysssss`、`easy cleanGpuUsed`、`easy clearCacheAll`
+**有卡**：`BasicGuider`、`ComfyMathExpression`、`KSamplerSelect`、`SamplerCustomAdvanced`、`ModelPatchTorchSettings`、`MiniMaxH3ImageToVideo`、`VAEDecode`、`VAEDecodeAudio`、`RandomNoise`、`easy cleanGpuUsed`、`easy clearCacheAll`、`MathExpression|pysssss`、`MiniMaxChunkFeedForward`、`PathchSageAttentionKJ`、`MiniMaxH3SigmaShift`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`UNETLoader`、`FrameInterpolate`、`SeedNode`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`BasicScheduler`、`FrameInterpolationModelLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`VHS_VideoCombine`、`LoadImage`、`DLSS5Settings`、`RH_DLSS5FrameInterpolation`、`DLSS5EnhanceImages`、`ApplyVDNH3Advanced`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识

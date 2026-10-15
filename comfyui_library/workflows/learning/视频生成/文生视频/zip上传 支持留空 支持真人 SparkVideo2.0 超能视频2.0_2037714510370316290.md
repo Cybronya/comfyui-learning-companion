@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/zip上传 支持留空 支持真人 SparkVideo2.0 超能视频2.0_2037714510370316290.json
 hash: 24c1038ec098b44f
 coverage: 1
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:38
 nodes: [RHExtractImage, RHExtractAudio, RHExtractImage, RHExtractImage, RHExtractImage, RHExtractImage, RHExtractImage, RHExtractImage, RHExtractImage, RHExtractVideo, RHExtractVideo, RHExtractVideo, RHExtractAudio, RHExtractAudio, RHExtractImage, SaveVideo, HAIGC_LoadImagesFromZip, RH_RhartVideoSparkvideo20MultimodalVideo]
 patterns: []
 missing: []

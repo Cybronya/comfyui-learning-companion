@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Anima-2.9B｜三阶高质量渲染_2089668746540572673.json
 hash: 2b67786cadb3e7b0
 coverage: 1
-learned_at: 2026-10-11 21:19:37
+learned_at: 2026-10-15 22:44:02
 nodes: [SaveImage, LoadImage]
 patterns: []
 missing: []
@@ -31,4 +31,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
+**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput

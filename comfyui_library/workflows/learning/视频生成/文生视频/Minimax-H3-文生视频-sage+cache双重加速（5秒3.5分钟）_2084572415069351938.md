@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax-H3-文生视频-sage+cache双重加速（5秒3.5分钟）_2084572415069351938.json
 hash: c3f8aafa6b185340
-coverage: 0.818182
-learned_at: 2026-10-11 20:38:40
+coverage: 0.863636
+learned_at: 2026-10-15 22:46:41
 nodes: [VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicScheduler, BasicGuider, ResolutionSelector, PathchSageAttentionKJ, EasyCache, CLIPLoader, VAELoader, VAELoader, ComfyMathExpression, SamplerCustomAdvanced, RandomNoise, UNETLoader, MiniMaxH3ImageToVideo, SaveVideo, PrimitiveFloat, PrimitiveFloat, CreateVideo, CR Prompt Text, MarkdownNote]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/Minimax-H3-文生视频-sage+cache双重加速（5秒3.5分钟）_2084572415069351938.json
@@ -48,14 +47,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **82%**（18/22）
+覆盖率 **86%**（19/22）
 
-**有卡**：`VAEDecodeAudio`、`VAEDecode`、`KSamplerSelect`、`BasicScheduler`、`BasicGuider`、`ResolutionSelector`、`PathchSageAttentionKJ`、`EasyCache`、`CLIPLoader`、`VAELoader`、`ComfyMathExpression`、`SamplerCustomAdvanced`、`RandomNoise`、`UNETLoader`、`MiniMaxH3ImageToVideo`、`SaveVideo`、`CreateVideo`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`VAEDecodeAudio`、`VAEDecode`、`KSamplerSelect`、`BasicScheduler`、`BasicGuider`、`ResolutionSelector`、`PathchSageAttentionKJ`、`EasyCache`、`CLIPLoader`、`VAELoader`、`ComfyMathExpression`、`SamplerCustomAdvanced`、`RandomNoise`、`UNETLoader`、`MiniMaxH3ImageToVideo`、`SaveVideo`、`CreateVideo`、`CR Prompt Text`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPLoader、ResolutionSelector、UNETLoader、KSamplerSelect、SamplerCustomAdvanced、VAEDecodeAudio
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

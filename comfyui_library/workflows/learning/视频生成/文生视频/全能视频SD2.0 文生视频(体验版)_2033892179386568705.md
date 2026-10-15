@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频SD2.0 文生视频(体验版)_2033892179386568705.json
 hash: 65c4a6953afed2ad
 coverage: 1
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:56
 nodes: [SaveVideo, RH_CinematicVideoGenerator]
 patterns: []
 missing: []

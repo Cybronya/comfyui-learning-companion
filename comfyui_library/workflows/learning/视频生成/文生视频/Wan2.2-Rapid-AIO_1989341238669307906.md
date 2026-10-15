@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-Rapid-AIO_1989341238669307906.json
 hash: fe7718412e3b2a2a
-coverage: 0.904762
-learned_at: 2026-10-11 02:57:38
+coverage: 0.952381
+learned_at: 2026-10-15 22:47:12
 nodes: [DownloadAndLoadGIMMVFIModel, LayerUtility: PurgeVRAM V2, GIMMVFI_interpolate, WanVaceToVideo, INTConstant, VHS_VideoCombine, ModelSamplingSD3, PathchSageAttentionKJ, CLIPTextEncode, VAEDecode, INTConstant, CLIPTextEncode, WanVideoVACEStartToEndFrame, CLIPLoader, VAELoader, KSampler, Note, LoadImage, UnetLoaderGGUF, LoadImage, INTConstant]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 677960728391576, "steps": 6}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Wan2.2-Rapid-AIO_1989341238669307906.json
@@ -58,11 +58,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **90%**（19/21）
+覆盖率 **95%**（20/21）
 
-**有卡**：`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`WanVaceToVideo`、`INTConstant`、`VHS_VideoCombine`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`VAEDecode`、`WanVideoVACEStartToEndFrame`、`CLIPLoader`、`VAELoader`、`KSampler`、`LoadImage`、`UnetLoaderGGUF`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM V2`
+**有卡**：`DownloadAndLoadGIMMVFIModel`、`LayerUtility: PurgeVRAM V2`、`GIMMVFI_interpolate`、`WanVaceToVideo`、`INTConstant`、`VHS_VideoCombine`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`VAEDecode`、`WanVideoVACEStartToEndFrame`、`CLIPLoader`、`VAELoader`、`KSampler`、`LoadImage`、`UnetLoaderGGUF`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、INTConstant、ModelSamplingSD3
 
@@ -73,5 +71,4 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

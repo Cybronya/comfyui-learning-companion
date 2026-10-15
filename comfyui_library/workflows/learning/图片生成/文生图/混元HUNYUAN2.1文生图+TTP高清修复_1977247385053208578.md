@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/混元HUNYUAN2.1文生图+TTP高清修复_1977247385053208578.json
 hash: 1775405b74b87242
-coverage: 0.782609
-learned_at: 2026-10-10 20:59:52
+coverage: 0.869565
+learned_at: 2026-10-15 22:28:56
 nodes: [UNETLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, VAEEncode, HunyuanRefinerLatent, LayerUtility: PurgeVRAM V2, VAEDecode, KSampler, Note, ImageScaleBy, UpscaleModelLoader, SaveImage, Note, UNETLoader, CLIPTextEncode, CLIPTextEncode, DualCLIPLoader, KSampler, VAEDecode, ImageCASharpening+, VAELoader, EmptyHunyuanImageLatent, FluxResolutionNode, SaveImage, Anything Everywhere3, UNETLoader, DualCLIPLoader, VAELoader, LoraLoaderModelOnly, CLIPTextEncode, ConditioningZeroOut, KSampler, VAEDecodeTiled, easy imageListToImageBatch, PreviewImage, Note, TTP_Image_Tile_Batch, TTP_Tile_image_size, ImageUpscaleWithModel, VAEEncodeTiled, easy imageBatchToImageList, TTP_Image_Assy, SaveImage, Image Comparer (rgthree), RH_Translator]
 patterns: []
-missing: [ImageCASharpening+, LayerUtility: PurgeVRAM V2, easy imageBatchToImageList, easy imageListToImageBatch]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 0.30000000000000004, "sampler_name": "euler", "scheduler": "karras", "seed": 842656240405713, "steps": 2}
-discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/混元HUNYUAN2.1文生图+TTP高清修复_1977247385053208578.json
@@ -22,48 +22,50 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（46 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `VAEEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEEncode` ★核心
 - `HunyuanRefinerLatent`
 - `LayerUtility: PurgeVRAM V2`
-- `VAEDecode`
-- `KSampler`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
 - `Note`
 - `ImageScaleBy`
 - `UpscaleModelLoader`
 - `SaveImage`
 - `Note`
-- `UNETLoader`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `DualCLIPLoader`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `ImageCASharpening+`
 - `VAELoader`
 - `EmptyHunyuanImageLatent`
 - `FluxResolutionNode`
 - `SaveImage`
 - `Anything Everywhere3`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
 - `ConditioningZeroOut`
-- `KSampler`
-- `VAEDecodeTiled`
+- `KSampler` ★核心
+- `VAEDecodeTiled` ★核心
 - `easy imageListToImageBatch`
 - `PreviewImage`
 - `Note`
 - `TTP_Image_Tile_Batch`
 - `TTP_Tile_image_size`
 - `ImageUpscaleWithModel`
-- `VAEEncodeTiled`
+- `VAEEncodeTiled` ★核心
 - `easy imageBatchToImageList`
 - `TTP_Image_Assy`
 - `SaveImage`
@@ -72,20 +74,20 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `0.30000000000000004`
-- `sampler_name` = `euler`
-- `scheduler` = `karras`
 - `seed` = `842656240405713`
 - `steps` = `2`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `karras`
+- `denoise` = `0.30000000000000004`
 
 ## 知识
 
-覆盖率 **78%**（36/46）
+覆盖率 **87%**（40/46）
 
-**有卡**：`UNETLoader`、`VAELoader`、`CLIPTextEncode`、`VAEEncode`、`HunyuanRefinerLatent`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`KSampler`、`Note`、`ImageScaleBy`、`UpscaleModelLoader`、`SaveImage`、`DualCLIPLoader`、`ImageCASharpening+`、`EmptyHunyuanImageLatent`、`FluxResolutionNode`、`Anything Everywhere3`、`LoraLoaderModelOnly`、`ConditioningZeroOut`、`VAEDecodeTiled`、`easy imageListToImageBatch`、`PreviewImage`
+**有卡**：`UNETLoader`、`VAELoader`、`CLIPTextEncode`、`VAEEncode`、`HunyuanRefinerLatent`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`KSampler`、`ImageScaleBy`、`UpscaleModelLoader`、`SaveImage`、`DualCLIPLoader`、`ImageCASharpening+`、`EmptyHunyuanImageLatent`、`FluxResolutionNode`、`LoraLoaderModelOnly`、`ConditioningZeroOut`、`VAEDecodeTiled`、`easy imageListToImageBatch`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`ImageUpscaleWithModel`、`VAEEncodeTiled`、`easy imageBatchToImageList`、`TTP_Image_Assy`、`RH_Translator`
 
-**缺卡**（4）：`ImageCASharpening+`、`LayerUtility: PurgeVRAM V2`、`easy imageBatchToImageList`、`easy imageListToImageBatch`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、VAEDecodeTiled
 
 ## 参数体检
 
@@ -95,9 +97,5 @@ discoveries: [次要节点 `ImageCASharpening+` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `ImageCASharpening+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

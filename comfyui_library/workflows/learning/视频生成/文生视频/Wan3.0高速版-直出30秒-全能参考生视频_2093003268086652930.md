@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan3.0高速版-直出30秒-全能参考生视频_2093003268086652930.json
 hash: 4f096a3cca261710
 coverage: 1
-learned_at: 2026-10-11 21:30:30
+learned_at: 2026-10-15 22:47:16
 nodes: [LoadImage, LoadImage, LoadVideo, LoadAudio, SaveVideo, Text, RH_AlibabaWan30PrimeReferenceToVideo]
 patterns: []
 missing: []

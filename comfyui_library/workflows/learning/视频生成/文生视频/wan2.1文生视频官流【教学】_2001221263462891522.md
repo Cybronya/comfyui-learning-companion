@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.1文生视频官流【教学】_2001221263462891522.json
 hash: 0fa59e34b2312197
-coverage: 0.866667
-learned_at: 2026-10-11 02:57:39
+coverage: 0.933333
+learned_at: 2026-10-15 22:47:34
 nodes: [VHS_VideoCombine, LoraLoaderModelOnly, ApplySageAttention, Int, ModelSamplingSD3, CLIPLoader, CLIPTextEncode, CLIPTextEncode, KSampler, EmptyHunyuanLatentVideo, SimpleMath+, VAELoader, UNETLoader, VAEDecode, PreviewImage]
 patterns: []
-missing: [SimpleMath+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 946223056963374, "steps": 6}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/wan2.1文生视频官流【教学】_2001221263462891522.json
@@ -52,11 +52,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **87%**（13/15）
+覆盖率 **93%**（14/15）
 
-**有卡**：`VHS_VideoCombine`、`LoraLoaderModelOnly`、`ApplySageAttention`、`Int`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`KSampler`、`EmptyHunyuanLatentVideo`、`VAELoader`、`UNETLoader`、`VAEDecode`
-
-**缺卡**（1）：`SimpleMath+`
+**有卡**：`VHS_VideoCombine`、`LoraLoaderModelOnly`、`ApplySageAttention`、`Int`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`KSampler`、`EmptyHunyuanLatentVideo`、`SimpleMath+`、`VAELoader`、`UNETLoader`、`VAEDecode`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo
 
@@ -67,5 +65,4 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

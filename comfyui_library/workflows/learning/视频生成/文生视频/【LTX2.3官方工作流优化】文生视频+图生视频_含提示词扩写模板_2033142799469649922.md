@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/【LTX2.3官方工作流优化】文生视频+图生视频_含提示词扩写模板_2033142799469649922.json
 hash: 560765a9aa1ab0b2
-coverage: 0.75
-learned_at: 2026-10-11 03:48:39
+coverage: 0.767857
+learned_at: 2026-10-15 22:47:39
 nodes: [RandomNoise, KSamplerSelect, ManualSigmas, CFGGuider, CLIPTextEncode, SamplerCustomAdvanced, LatentUpscaleModelLoader, LoraLoaderModelOnly, LTXVAudioVAELoader, RandomNoise, CFGGuider, KSamplerSelect, LTXVConcatAVLatent, LTXVEmptyLatentAudio, ComfyMathExpression, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, LTXVImgToVideoInplace, LTXVConcatAVLatent, Note, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, LTXAVTextEncoderLoader, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, CLIPTextEncode, LTXVConditioning, Reroute, LTXVSeparateAVLatent, LTXVCropGuides, SamplerCustomAdvanced, ManualSigmas, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, MarkdownNote, Note, Note, CheckpointLoaderSimple, PrimitiveBoolean, Note, RH_LLMAPI_Pro_Node, LoadImage, CreateVideo, PlaySound|pysssss, Text, easy showAnything, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, SaveVideo]
 patterns: []
-missing: [PlaySound|pysssss]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/【LTX2.3官方工作流优化】文生视频+图生视频_含提示词扩写模板_2033142799469649922.json
@@ -90,14 +89,8 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **75%**（42/56）
+覆盖率 **77%**（43/56）
 
-**有卡**：`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LTXAVTextEncoderLoader`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`CreateVideo`、`Text`、`SaveVideo`
-
-**缺卡**（1）：`PlaySound|pysssss`
+**有卡**：`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LTXAVTextEncoderLoader`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`CreateVideo`、`PlaySound|pysssss`、`Text`、`SaveVideo`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识

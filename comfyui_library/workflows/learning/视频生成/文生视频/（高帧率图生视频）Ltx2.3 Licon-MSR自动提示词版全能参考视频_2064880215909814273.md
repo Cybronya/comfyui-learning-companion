@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/（高帧率图生视频）Ltx2.3 Licon-MSR自动提示词版全能参考视频_2064880215909814273.json
 hash: 64ac96ead04027aa
-coverage: 0.916667
-learned_at: 2026-10-11 20:21:36
+coverage: 0.972222
+learned_at: 2026-10-15 22:49:13
 nodes: [LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXAddVideoICLoRAGuide, CFGGuider, LowVRAMCheckpointLoader, LTXAVTextEncoderLoader, LiconMSR, INTConstant, INTConstant, INTConstant, LTXVCropGuides, CLIPTextEncode, LTXVAudioVAELoader, LTXVConditioning, EmptyLTXVLatentVideo, RandomNoise, KSamplerSelect, LTXVEmptyLatentAudio, SaveVideo, ShowText|pysssss, LoadImage, CLIPTextEncode, RH_LLMAPI_Pro_Node, LoadImage, LoadImage, LoadImage, CR Prompt Text, CR Prompt Text, LTXICLoRALoaderModelOnly, ManualSigmas, SamplerCustomAdvanced, TT_img_enc, SaveImage, VAEDecode, CreateVideo, LTXVAudioVAEDecode]
 patterns: []
-missing: [CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 50, "width": 241}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/（高帧率图生视频）Ltx2.3 Licon-MSR自动提示词版全能参考视频_2064880215909814273.json
@@ -70,15 +69,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **92%**（33/36）
+覆盖率 **97%**（35/36）
 
-**有卡**：`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`LTXAddVideoICLoRAGuide`、`CFGGuider`、`LowVRAMCheckpointLoader`、`LTXAVTextEncoderLoader`、`LiconMSR`、`INTConstant`、`LTXVCropGuides`、`CLIPTextEncode`、`LTXVAudioVAELoader`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`RandomNoise`、`KSamplerSelect`、`LTXVEmptyLatentAudio`、`SaveVideo`、`LoadImage`、`RH_LLMAPI_Pro_Node`、`LTXICLoRALoaderModelOnly`、`ManualSigmas`、`SamplerCustomAdvanced`、`TT_img_enc`、`SaveImage`、`VAEDecode`、`CreateVideo`、`LTXVAudioVAEDecode`
-
-**缺卡**（2）：`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`LTXAddVideoICLoRAGuide`、`CFGGuider`、`LowVRAMCheckpointLoader`、`LTXAVTextEncoderLoader`、`LiconMSR`、`INTConstant`、`LTXVCropGuides`、`CLIPTextEncode`、`LTXVAudioVAELoader`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`RandomNoise`、`KSamplerSelect`、`LTXVEmptyLatentAudio`、`SaveVideo`、`LoadImage`、`RH_LLMAPI_Pro_Node`、`CR Prompt Text`、`LTXICLoRALoaderModelOnly`、`ManualSigmas`、`SamplerCustomAdvanced`、`TT_img_enc`、`SaveImage`、`VAEDecode`、`CreateVideo`、`LTXVAudioVAEDecode`
 
 **用到的条目**：VAEDecode、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

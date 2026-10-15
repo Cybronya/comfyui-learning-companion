@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2文生视频加速版（4步加速lora+官方版）_2019642699384627202.json
 hash: 1e645f28cf2c1138
-coverage: 0.88
-learned_at: 2026-10-11 03:16:50
+coverage: 0.96
+learned_at: 2026-10-15 22:47:15
 nodes: [Reroute, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, CLIPLoader, VAELoader, VAEDecode, VHS_VideoCombine, KSamplerAdvanced, EmptyHunyuanLatentVideo, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, CLIPTextEncode, CLIPTextEncode, CR Text, JWInteger, JWInteger, JWInteger, MathExpression|pysssss]
 patterns: []
-missing: [CR Text, MathExpression|pysssss]
+missing: []
 parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2文生视频加速版（4步加速lora+官方版）_2019642699384627202.json
@@ -61,15 +60,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **88%**（22/25）
+覆盖率 **96%**（24/25）
 
-**有卡**：`KSamplerAdvanced`、`ModelSamplingSD3`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`VHS_VideoCombine`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`JWInteger`
-
-**缺卡**（2）：`CR Text`、`MathExpression|pysssss`
+**有卡**：`KSamplerAdvanced`、`ModelSamplingSD3`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`VHS_VideoCombine`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`CR Text`、`JWInteger`、`MathExpression|pysssss`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

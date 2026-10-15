@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1文生图2609_2106041124522643458.json
 hash: eba2e077a12a6aa2
-coverage: 0.75
-learned_at: 2026-10-10 20:58:55
+coverage: 0.833333
+learned_at: 2026-10-15 22:27:05
 nodes: [MarkdownNote, MarkdownNote, TextEncodeQwenImage21, SaveImage, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, VAEDecode, Text Multiline, ResolutionSelector]
 patterns: []
-missing: [Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 831376256341051, "steps": 25, "width": 1024}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen Image2.1文生图2609_2106041124522643458.json
@@ -21,40 +20,38 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（12 个）：
 - `MarkdownNote`
 - `MarkdownNote`
 - `TextEncodeQwenImage21`
 - `SaveImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `VAEDecode`
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `Text Multiline`
 - `ResolutionSelector`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `831376256341051`
 - `steps` = `25`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **75%**（9/12）
+覆盖率 **83%**（10/12）
 
-**有卡**：`MarkdownNote`、`TextEncodeQwenImage21`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`
+**有卡**：`TextEncodeQwenImage21`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`Text Multiline`、`ResolutionSelector`
 
-**缺卡**（1）：`Text Multiline`
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader

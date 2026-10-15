@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltx 2.3图生视频 一次采样（新sigmas30step）_2033139562045771778.json
 hash: 9bcea08732566a33
-coverage: 0.884615
-learned_at: 2026-10-11 03:48:36
+coverage: 0.948718
+learned_at: 2026-10-15 22:45:21
 nodes: [KSamplerSelect, CFGGuider, KSamplerSelect, RandomNoise, LTXVLatentUpsampler, CheckpointLoaderSimple, LTXVSeparateAVLatent, VAEDecodeTiled, ManualSigmas, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, JWInteger, FlashVSR_SM_Model, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, LTXVSeparateAVLatent, LTXVAudioVAEDecode, Float, VHS_VideoCombine, VHS_VideoCombine, VAEDecodeTiled, easy cleanGpuUsed, PrimitiveBoolean, JWInteger, Note, Note, Note, VHS_VideoCombine, VHS_VideoCombine, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, TextPreview, LTXVAudioVAEDecode, JWInteger, SamplerCustomAdvanced, DuckHideNode, SaveImage, LTXAVTextEncoderLoader, RH_LLMAPI_Pro_Node, VideoInfoSource, CR Text, FlashVSR_SM_KSampler, DuckHideNode, CreateVideo, SaveVideo, SaveImage, LTXVConcatAVLatent, ManualSigmas, RandomNoise, LTXVAudioVAELoader, LatentUpscaleModelLoader, LoraLoaderModelOnly, LTXVEmptyLatentAudio, SamplerCustomAdvanced, SigmasPreview, CM_FloatToInt, LTXVImgToVideoConditionOnly, PrimitiveFloat, CLIPTextEncode, LTXVChunkFeedForward, CFGGuider, LTX2_NAG, LTXVConditioning, LTXVPreprocess, EmptyLTXVLatentVideo, VHS_VideoCombine, ResizeImageMaskNode, ModelPatchTorchSettings, CLIPTextEncode, CR Text, VHS_LoadVideo, LoadImage, JWInteger, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [CR Text, CR Text, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "cfg": "fixed", "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "denoise": 11, "height": 25, "sampler_name": 2, "scheduler": 3.5, "seed": 1280, "steps": 2102623004, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Ltx 2.3图生视频 一次采样（新sigmas30step）_2033139562045771778.json
@@ -118,18 +117,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **88%**（69/78）
+覆盖率 **95%**（74/78）
 
-**有卡**：`KSamplerSelect`、`CFGGuider`、`RandomNoise`、`LTXVLatentUpsampler`、`CheckpointLoaderSimple`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`ManualSigmas`、`VHS_VideoCombine`、`JWInteger`、`FlashVSR_SM_Model`、`LTXVAudioVAEDecode`、`Float`、`PrimitiveBoolean`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`TextPreview`、`SamplerCustomAdvanced`、`DuckHideNode`、`SaveImage`、`LTXAVTextEncoderLoader`、`RH_LLMAPI_Pro_Node`、`VideoInfoSource`、`FlashVSR_SM_KSampler`、`CreateVideo`、`SaveVideo`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LTXVEmptyLatentAudio`、`SigmasPreview`、`CM_FloatToInt`、`CLIPTextEncode`、`LTXVChunkFeedForward`、`LTX2_NAG`、`LTXVConditioning`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`ResizeImageMaskNode`、`ModelPatchTorchSettings`、`VHS_LoadVideo`、`LoadImage`、`PathchSageAttentionKJ`
+**有卡**：`KSamplerSelect`、`CFGGuider`、`RandomNoise`、`LTXVLatentUpsampler`、`CheckpointLoaderSimple`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`ManualSigmas`、`VHS_VideoCombine`、`JWInteger`、`FlashVSR_SM_Model`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVAudioVAEDecode`、`Float`、`easy cleanGpuUsed`、`PrimitiveBoolean`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`TextPreview`、`SamplerCustomAdvanced`、`DuckHideNode`、`SaveImage`、`LTXAVTextEncoderLoader`、`RH_LLMAPI_Pro_Node`、`VideoInfoSource`、`CR Text`、`FlashVSR_SM_KSampler`、`CreateVideo`、`SaveVideo`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LTXVEmptyLatentAudio`、`SigmasPreview`、`CM_FloatToInt`、`CLIPTextEncode`、`LTXVChunkFeedForward`、`LTX2_NAG`、`LTXVConditioning`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`ResizeImageMaskNode`、`ModelPatchTorchSettings`、`VHS_LoadVideo`、`LoadImage`、`PathchSageAttentionKJ`
 
-**缺卡**（5）：`CR Text`、`CR Text`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy cleanGpuUsed`
-
-**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、FlashVSR_SM_KSampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

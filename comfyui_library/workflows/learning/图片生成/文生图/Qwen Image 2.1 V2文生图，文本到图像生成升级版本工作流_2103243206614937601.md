@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 V2文生图，文本到图像生成升级版本工作流_2103243206614937601.json
 hash: 81ac07490903f0b6
 coverage: 0.844444
-learned_at: 2026-10-10 20:58:51
+learned_at: 2026-10-15 22:26:57
 nodes: [UNETLoader, TextEncodeQwenImage21, VAELoader, EmptyLatentImage, PreviewAny, StringConcatenate, TextGenerate, VAEDecode, KSampler, SaveImage, SaveImageAdvanced, CLIPLoader, PrimitiveStringMultiline, ResolutionSelector, RegexExtract, PrimitiveStringMultiline, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []
@@ -22,16 +22,18 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（45 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `TextEncodeQwenImage21`
 - `VAELoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `PreviewAny`
 - `StringConcatenate`
 - `TextGenerate`
-- `VAEDecode`
-- `KSampler`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
 - `SaveImage`
 - `SaveImageAdvanced`
 - `CLIPLoader`
@@ -41,30 +43,30 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `PrimitiveStringMultiline`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `EmptyLatentImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `JjkText`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `solarL_SaveImagesToZip`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -73,21 +75,23 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
+- `width` = `80`
 - `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
+- `batch_size` = `1`
 - `seed` = `598626327129635`
 - `steps` = `4`
-- `width` = `80`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **84%**（38/45）
 
-**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`PreviewAny`、`StringConcatenate`、`TextGenerate`、`VAEDecode`、`KSampler`、`SaveImage`、`SaveImageAdvanced`、`CLIPLoader`、`PrimitiveStringMultiline`、`ResolutionSelector`、`RegexExtract`、`孤海注释`、`LoraLoaderModelOnly`、`JjkText`
+**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`StringConcatenate`、`TextGenerate`、`VAEDecode`、`KSampler`、`SaveImage`、`SaveImageAdvanced`、`CLIPLoader`、`ResolutionSelector`、`RegexExtract`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 

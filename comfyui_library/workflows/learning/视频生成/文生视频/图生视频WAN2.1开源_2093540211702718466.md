@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/图生视频WAN2.1开源_2093540211702718466.json
 hash: de9a75954aa071e9
 coverage: 1
-learned_at: 2026-10-11 21:30:37
+learned_at: 2026-10-15 22:48:24
 nodes: [CLIPVisionLoader, UNETLoader, CLIPTextEncode, VAELoader, VAEDecode, KSampler, CLIPVisionEncode, LoadImage, WanImageToVideo, CLIPTextEncode, CLIPLoader, SaveAnimatedWEBP, SaveImage]
 patterns: []
 missing: []

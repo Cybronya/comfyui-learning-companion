@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Fish-Wan2.2-AIO-首尾帧15秒连续长视频版_1959961684356050946.json
 hash: 882befcbd6c36c5e
-coverage: 0.601695
-learned_at: 2026-10-10 22:59:02
+coverage: 0.762712
+learned_at: 2026-10-15 22:44:11
 nodes: [PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, CLIPTextEncode, CLIPTextEncode, ShowText|pysssss, CheckpointLoaderSimple, DeepTranslatorTextNode, TorchCompileModel, TorchCompileModelWanVideoV2, TorchCompileModel, PathchSageAttentionKJ, TorchCompileModelWanVideoV2, WanMoeKSampler, TextInput_, workflow>加速节点, workflow>加速节点, CLIPVisionEncode, PreviewImage, StringLength, VHS_PruneOutputs, SimpleMath+, workflow>加速节点, WanImageToVideo, workflow>加速节点, CLIPVisionEncode, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, WanMoeKSampler, SaveImage, VHS_SplitImages, PrimitiveInt, SimpleMath+, VHS_PruneOutputs, SaveImage, VHS_SelectFilename, StringLength, WanImageToVideo, GetNode, GetNode, GetNode, Int, Int, SetNode, Int, SetNode, GetNode, GetNode, GetNode, workflow>加速节点, workflow>加速节点, Note, CLIPVisionEncode, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, WanMoeKSampler, VHS_SplitImages, PrimitiveInt, SimpleMath+, VHS_SplitImages, VHS_PruneOutputs, SaveImage, StringLength, GetNode, GetNode, GetNode, VHS_SelectFilename, VHS_SplitImages, VHS_SelectFilename, Note, SimpleMath+, VHS_PruneOutputs, EmptyHunyuanLatentVideo, VAEDecode, CLIPVisionLoader, VAEDecodeTiled, SetNode, WanImageToVideo, CheckpointLoaderSimple, Note, Fast Groups Bypasser (rgthree), SetNode, Int, GetNode, GetNode, GetNode, VAEDecodeTiled, VHS_SplitImages, VAEDecodeTiled, VHS_SplitImages, ImageBatch, PlaySound|pysssss, VHS_GetImageCount, ImageBatch, VHS_LoadVideoPath, VHS_LoadVideoPath, VHS_GetImageCount, VHS_LoadVideoPath, RIFE VFI, Seed Everywhere, WanMoeKSampler, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LayerUtility: ImageScaleByAspectRatio V2, Note, Note, VHS_VideoCombine, LoadImage, workflow>Clip Text, workflow>Clip Text, workflow>Clip Text]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PlaySound|pysssss, RIFE VFI, SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+, workflow>加速节点, workflow>加速节点, workflow>加速节点, workflow>加速节点, workflow>加速节点, workflow>加速节点, Seed Everywhere, workflow>Clip Text, workflow>Clip Text, workflow>Clip Text]
+missing: []
 parameters: {"cfg": 4, "checkpoint": "wan2.2-i2v-rapid-aio-nsfw-v9.1.safetensors", "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `workflow>Clip Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `workflow>Clip Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `workflow>Clip Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Fish-Wan2.2-AIO-首尾帧15秒连续长视频版_1959961684356050946.json
@@ -155,32 +154,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **60%**（71/118）
+覆盖率 **76%**（90/118）
 
-**有卡**：`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`DeepTranslatorTextNode`、`TorchCompileModel`、`TorchCompileModelWanVideoV2`、`WanMoeKSampler`、`TextInput_`、`CLIPVisionEncode`、`StringLength`、`VHS_PruneOutputs`、`WanImageToVideo`、`SaveImage`、`VHS_SplitImages`、`VHS_SelectFilename`、`Int`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`CLIPVisionLoader`、`VAEDecodeTiled`、`ImageBatch`、`VHS_GetImageCount`、`VHS_LoadVideoPath`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`LoadImage`
+**有卡**：`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`DeepTranslatorTextNode`、`TorchCompileModel`、`TorchCompileModelWanVideoV2`、`WanMoeKSampler`、`TextInput_`、`workflow>加速节点`、`CLIPVisionEncode`、`StringLength`、`VHS_PruneOutputs`、`SimpleMath+`、`WanImageToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`SaveImage`、`VHS_SplitImages`、`VHS_SelectFilename`、`Int`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`CLIPVisionLoader`、`VAEDecodeTiled`、`ImageBatch`、`PlaySound|pysssss`、`VHS_GetImageCount`、`VHS_LoadVideoPath`、`RIFE VFI`、`Seed Everywhere`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`LoadImage`、`workflow>Clip Text`
 
-**缺卡**（19）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`PlaySound|pysssss`、`RIFE VFI`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`workflow>加速节点`、`workflow>加速节点`、`workflow>加速节点`、`workflow>加速节点`、`workflow>加速节点`、`workflow>加速节点`、`Seed Everywhere`、`workflow>Clip Text`、`workflow>Clip Text`、`workflow>Clip Text`
-
-**用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、SaveImage、LoadImage、WanMoeKSampler、VAEDecodeTiled
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>加速节点` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `workflow>Clip Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `workflow>Clip Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `workflow>Clip Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、SaveImage、LoadImage、WanMoeKSampler、Seed Everywhere

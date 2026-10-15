@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMaxH3_LTX2.5放大_2096200687985192962.json
 hash: 075352824d7a96fa
 coverage: 0.888889
-learned_at: 2026-10-11 21:41:48
+learned_at: 2026-10-15 22:46:27
 nodes: [VAELoader, VAELoader, VAEDecodeAudio, KSamplerSelect, BasicScheduler, BasicGuider, MarkdownNote, VAELoader, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVLatentUpsampler, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, CreateVideo, UNETLoader, VAEDecode, LTXVImgToVideoInplace, LTXAddVideoICLoRAGuide, ImageFromBatch, CreateVideo, GetVideoComponents, RandomNoise, LoadImage, LTXVImgToVideoInplace, LTXVCropGuides, SamplerCustomAdvanced, SaveAudio, VAEDecodeTiled, ComfyMathExpression, MiniMaxH3ReferenceToVideo, SamplerCustomAdvanced, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveFloat, LoraLoaderModelOnly, CLIPLoader, CLIPLoader, UNETLoader, LTXICLoRALoaderModelOnly, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, MarkdownNote, SaveVideo, SaveVideo, LoadAudio, MiniMaxH3MemoryEfficientSageAttentionPatch, PerturbedAttention, LoadImage, PrimitiveStringMultiline, MarkdownNote, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

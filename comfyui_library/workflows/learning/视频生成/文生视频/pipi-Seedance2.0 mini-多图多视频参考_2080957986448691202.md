@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json
 hash: 807337ed9a81da9e
-coverage: 0.875
-learned_at: 2026-10-11 20:38:44
+coverage: 1
+learned_at: 2026-10-15 22:47:30
 nodes: [SaveVideo, CR Text, LoadImage, LoadImage, LoadVideo, LoadVideo, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, LoadAudio]
 patterns: []
-missing: [CR Text]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/pipi-Seedance2.0 mini-多图多视频参考_2080957986448691202.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **88%**（7/8）
+覆盖率 **100%**（8/8）
 
-**有卡**：`SaveVideo`、`LoadImage`、`LoadVideo`、`RH_BytedanceSeedance20GlobalMiniMultimodalVideo`、`LoadAudio`
+**有卡**：`SaveVideo`、`CR Text`、`LoadImage`、`LoadVideo`、`RH_BytedanceSeedance20GlobalMiniMultimodalVideo`、`LoadAudio`
 
-**缺卡**（1）：`CR Text`
-
-**用到的条目**：LoadImage、RH_BytedanceSeedance20GlobalMiniMultimodalVideo、SaveVideo、LoadAudio、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、Seed
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、RH_BytedanceSeedance20GlobalMiniMultimodalVideo、SaveVideo、LoadAudio、LoadVideo、CR Text、sd15-t2i-basic、sd15-t2i-lora

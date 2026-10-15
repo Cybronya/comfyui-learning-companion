@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/加速视频生成｜Wan2.2文生图生视频人物特效_2091227342952812546.json
 hash: ff5c7e8d637ce536
 coverage: 0.913043
-learned_at: 2026-10-11 21:19:55
+learned_at: 2026-10-15 22:48:12
 nodes: [ModelSamplingSD3, CreateVideo, CLIPTextEncode, VAEDecode, ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, SaveVideo, WanImageToVideo, UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, KSamplerAdvanced, LoadImage, CLIPTextEncode, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

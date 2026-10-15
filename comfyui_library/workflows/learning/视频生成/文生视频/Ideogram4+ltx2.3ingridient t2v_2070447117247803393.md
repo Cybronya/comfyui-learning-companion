@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ideogram4+ltx2.3ingridient t2v_2070447117247803393.json
 hash: 5bbd00c6170f5c23
-coverage: 0.8
-learned_at: 2026-10-11 20:21:24
+coverage: 0.91
+learned_at: 2026-10-15 22:44:28
 nodes: [ConditioningZeroOut, EmptyFlux2LatentImage, RandomNoise, PrimitiveInt, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, ComfyNumberConvert, JsonExtractString, ComfyNumberConvert, StringReplace, JsonExtractString, CustomCombo, DualModelGuider, KSamplerSelect, Ideogram4OptimizationsKJ, Ideogram4OptimizationsKJ, GetVideoComponents, ResizeImageMaskNode, PrimitiveFloat, RepeatImageBatch, RandomNoise, GetImageSize, KSamplerSelect, CFGGuider, ManualSigmas, LTXVAudioVAEDecode, SamplerCustomAdvanced, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, LTXVPreprocess, LTXVEmptyLatentAudio, LTXFloatToInt, easy cleanGpuUsed, LTXVTiledVAEDecode, LTXVConditioning, LTXVConcatAVLatent, KSamplerSelect, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, RandomNoise, LTXVAudioVAEDecode, VAEDecode, LTXVConcatAVLatent, easy cleanGpuUsed, easy cleanGpuUsed, PrimitiveInt, CFGGuider, BasicScheduler, PrimitiveBoolean, easy cleanGpuUsed, LTXVCropGuides, LTXVCropGuides, LTXVLatentUpsampler, LTXAddVideoICLoRAGuide, easy cleanGpuUsed, Label (rgthree), CLIPTextEncode, CLIPTextEncode, Fast Groups Bypasser (rgthree), ComfyNumberConvert, JsonExtractString, SamplerCustomAdvanced, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, LTXAddVideoICLoRAGuide, UNETLoader, CFGOverride, UNETLoader, VAELoader, LatentUpscaleModelLoader, easy cleanGpuUsed, CreateVideo, VAELoaderKJ, VAELoaderKJ, DualCLIPLoaderGGUF, LTXICLoRALoaderModelOnly, JsonExtractString, VAEDecode, CreateVideo, Fast Groups Bypasser (rgthree), CLIPTextEncode, ShowText|pysssss, Ideogram4PromptBuilderKJ, CLIPLoader, RH_LLMAPI_NODE, ImageScaleBy, StringReplace, StringReplace, JWStringMultiline, Ideogram4Scheduler, PreviewImage, VHS_VideoCombine, SaveVideo, TextInput_, Label (rgthree), PreviewAny, UnetLoaderGGUF]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "height": 24, "width": 97}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Ideogram4+ltx2.3ingridient t2v_2070447117247803393.json
@@ -133,24 +132,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **80%**（80/100）
+覆盖率 **91%**（91/100）
 
-**有卡**：`ConditioningZeroOut`、`EmptyFlux2LatentImage`、`RandomNoise`、`ComfyMathExpression`、`ComfyNumberConvert`、`JsonExtractString`、`StringReplace`、`CustomCombo`、`DualModelGuider`、`KSamplerSelect`、`Ideogram4OptimizationsKJ`、`GetVideoComponents`、`ResizeImageMaskNode`、`RepeatImageBatch`、`GetImageSize`、`CFGGuider`、`ManualSigmas`、`LTXVAudioVAEDecode`、`SamplerCustomAdvanced`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`LTXFloatToInt`、`LTXVTiledVAEDecode`、`LTXVConditioning`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecode`、`BasicScheduler`、`PrimitiveBoolean`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXAddVideoICLoRAGuide`、`CLIPTextEncode`、`UNETLoader`、`CFGOverride`、`VAELoader`、`LatentUpscaleModelLoader`、`CreateVideo`、`VAELoaderKJ`、`DualCLIPLoaderGGUF`、`LTXICLoRALoaderModelOnly`、`Ideogram4PromptBuilderKJ`、`CLIPLoader`、`RH_LLMAPI_NODE`、`ImageScaleBy`、`JWStringMultiline`、`Ideogram4Scheduler`、`VHS_VideoCombine`、`SaveVideo`、`TextInput_`、`UnetLoaderGGUF`
-
-**缺卡**（11）：`Label (rgthree)`、`Label (rgthree)`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`ConditioningZeroOut`、`EmptyFlux2LatentImage`、`RandomNoise`、`ComfyMathExpression`、`ComfyNumberConvert`、`JsonExtractString`、`StringReplace`、`CustomCombo`、`DualModelGuider`、`KSamplerSelect`、`Ideogram4OptimizationsKJ`、`GetVideoComponents`、`ResizeImageMaskNode`、`RepeatImageBatch`、`GetImageSize`、`CFGGuider`、`ManualSigmas`、`LTXVAudioVAEDecode`、`SamplerCustomAdvanced`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`LTXFloatToInt`、`easy cleanGpuUsed`、`LTXVTiledVAEDecode`、`LTXVConditioning`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecode`、`BasicScheduler`、`PrimitiveBoolean`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXAddVideoICLoRAGuide`、`Label (rgthree)`、`CLIPTextEncode`、`UNETLoader`、`CFGOverride`、`VAELoader`、`LatentUpscaleModelLoader`、`CreateVideo`、`VAELoaderKJ`、`DualCLIPLoaderGGUF`、`LTXICLoRALoaderModelOnly`、`Ideogram4PromptBuilderKJ`、`CLIPLoader`、`RH_LLMAPI_NODE`、`ImageScaleBy`、`JWStringMultiline`、`Ideogram4Scheduler`、`VHS_VideoCombine`、`SaveVideo`、`TextInput_`、`UnetLoaderGGUF`
 
 **用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、CFGGuider、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

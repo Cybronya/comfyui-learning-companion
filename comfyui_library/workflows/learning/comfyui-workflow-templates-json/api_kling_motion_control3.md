@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_kling_motion
 hash: 0d978dbb74ff24f3
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:36
+learned_at: 2026-10-15 22:24:49
 nodes: [LoadImage, LoadVideo, KlingMotionControl, SaveVideo]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`LoadImage`、`LoadVideo`、`KlingMotionControl`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、LoadVideo、KlingMotionControl、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、KlingMotionControl、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage

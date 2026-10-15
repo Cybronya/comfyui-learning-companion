@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_Image_2512.json
 hash: 748b823a81cb2cea
 official: true
-coverage: 0.25
-learned_at: 2026-10-10 22:48:25
+coverage: 0.5
+learned_at: 2026-10-15 22:24:54
 nodes: [MarkdownNote, SaveImage, MarkdownNote, c3c58f7e-2004-43ae-8b06-a956294bf7f4]
 patterns: []
-missing: [c3c58f7e-2004-43ae-8b06-a956294bf7f4]
-discoveries: [次要节点 `c3c58f7e-2004-43ae-8b06-a956294bf7f4` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_qwen_Image_2512.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `c3c58f7e-2004-43ae-8b06-a956294bf7f4` 知识库中�
 
 ## 知识
 
-覆盖率 **25%**（1/4）
+覆盖率 **50%**（2/4）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`c3c58f7e-2004-43ae-8b06-a956294bf7f4`
 
-**缺卡**（1）：`c3c58f7e-2004-43ae-8b06-a956294bf7f4`
-
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext、easy_savevideo
-
-## 学习发现
-
-- 次要节点 `c3c58f7e-2004-43ae-8b06-a956294bf7f4` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、c3c58f7e-2004-43ae-8b06-a956294bf7f4、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext

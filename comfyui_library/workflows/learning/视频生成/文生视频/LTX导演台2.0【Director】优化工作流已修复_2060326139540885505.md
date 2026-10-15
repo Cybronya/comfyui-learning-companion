@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX导演台2.0【Director】优化工作流已修复_2060326139540885505.json
 hash: 44299e19be9f890c
 coverage: 0.904762
-learned_at: 2026-10-11 19:49:40
+learned_at: 2026-10-15 22:45:19
 nodes: [LTXDirectorCropGuides, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConditioning, ConditioningZeroOut, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, CFGGuider, LTXVSeparateAVLatent, LTXDirectorCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, VAELoader, VAELoader, MarkdownNote, SamplerCustomAdvanced, RandomNoise, VAEDecode, CLIPTextEncode, LTX2_NAG, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGGuider, LoraLoaderModelOnly, UNETLoader, DualCLIPLoader, ModelPreviewOverrideKJ, VAELoaderKJ, LoraLoaderModelOnly, LTXDirector, VHS_VideoCombine, LoadImage, LTXVAudioVAEDecode, LTXDirectorGuide, LTXDirectorGuide, Note, Reroute, MarkdownNote]
 patterns: []
 missing: []

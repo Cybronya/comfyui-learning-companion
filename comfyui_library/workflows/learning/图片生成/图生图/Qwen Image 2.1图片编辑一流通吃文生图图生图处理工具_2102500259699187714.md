@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json
 hash: 7fa79105d3c66f28
-coverage: 0.717949
-learned_at: 2026-10-10 20:48:06
+coverage: 0.794872
+learned_at: 2026-10-15 22:25:13
 nodes: [UNETLoader, ModelAttentionBackend, llama_cpp_model_loader, QwenImage21Cache, easy ifElse, llama_cpp_instruct_adv, CLIPLoader, easy lengthAnything, easy forLoopStart, VAELoader, ResolutionSelector, EmptyLatentImage, easy forLoopEnd, PreviewAny, PrimitiveStringMultiline, RepeatLatentBatch, ConditioningZeroOut, CropWithPadInfo_EditUtils, VAEDecode, EditTextEncode_EditUtils, RepeatLatentBatch, CropWithPadInfo_EditUtils, Image Comparer (rgthree), SaveImage, QwenImage21ConfigPreparer_EditUtils, easy ifElse, PrimitiveInt, TextEncodeQwenImage21, KSampler, easy imageSizeByLongerSide, easy indexAnything, QwenImage21ModelConfig_EditUtils, easy ifElse, easy ifElse, easy ifElse, easy ifElse, LoadImage, LoadImage, LoadImage, ComfyMathExpression, easy ifElse, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, easy makeImageList, LoadImage, LoadImage, LoadImage, PrimitiveInt, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [easy forLoopEnd, easy forLoopStart, easy indexAnything, easy lengthAnything, easy makeImageList, easy imageSizeByLongerSide]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy makeImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSizeByLongerSide` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1图片编辑一流通吃文生图图生图处理工具_2102500259699187714.json
@@ -120,11 +120,9 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **72%**（56/78）
+覆盖率 **79%**（62/78）
 
-**有卡**：`UNETLoader`、`ModelAttentionBackend`、`llama_cpp_model_loader`、`QwenImage21Cache`、`llama_cpp_instruct_adv`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`RepeatLatentBatch`、`ConditioningZeroOut`、`CropWithPadInfo_EditUtils`、`VAEDecode`、`EditTextEncode_EditUtils`、`SaveImage`、`QwenImage21ConfigPreparer_EditUtils`、`TextEncodeQwenImage21`、`KSampler`、`QwenImage21ModelConfig_EditUtils`、`LoadImage`、`ComfyMathExpression`、`PrimitiveBoolean`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（6）：`easy forLoopEnd`、`easy forLoopStart`、`easy indexAnything`、`easy lengthAnything`、`easy makeImageList`、`easy imageSizeByLongerSide`
+**有卡**：`UNETLoader`、`ModelAttentionBackend`、`llama_cpp_model_loader`、`QwenImage21Cache`、`llama_cpp_instruct_adv`、`CLIPLoader`、`easy lengthAnything`、`easy forLoopStart`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`easy forLoopEnd`、`RepeatLatentBatch`、`ConditioningZeroOut`、`CropWithPadInfo_EditUtils`、`VAEDecode`、`EditTextEncode_EditUtils`、`SaveImage`、`QwenImage21ConfigPreparer_EditUtils`、`TextEncodeQwenImage21`、`KSampler`、`easy imageSizeByLongerSide`、`easy indexAnything`、`QwenImage21ModelConfig_EditUtils`、`LoadImage`、`ComfyMathExpression`、`PrimitiveBoolean`、`easy makeImageList`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
@@ -135,10 +133,4 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy makeImageList` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSizeByLongerSide` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

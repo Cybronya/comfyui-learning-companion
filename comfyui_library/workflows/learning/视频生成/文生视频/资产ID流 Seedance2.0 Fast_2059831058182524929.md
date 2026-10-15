@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/资产ID流 Seedance2.0 Fast_2059831058182524929.json
 hash: 02f1155fd4a4e869
 coverage: 0.2
-learned_at: 2026-10-11 19:49:51
+learned_at: 2026-10-15 22:49:02
 nodes: [SaveVideo, PreviewAny, PreviewAny, RH_SparkVideoAssetIdsMerge, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, RH_RhartVideoSparkvideo20FastMultimodalVideo, JjkText]
 patterns: []
 missing: []

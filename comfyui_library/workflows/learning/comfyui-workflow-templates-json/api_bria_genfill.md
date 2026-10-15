@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_genfill
 hash: fdf67e9bf2ba0ae9
 official: true
 coverage: 0.833333
-learned_at: 2026-10-10 22:43:22
+learned_at: 2026-10-15 22:24:48
 nodes: [BriaGenFill, LoadImage, Painter, SaveImageAdvanced, ImageCompare, MarkdownNote]
 patterns: []
 missing: []

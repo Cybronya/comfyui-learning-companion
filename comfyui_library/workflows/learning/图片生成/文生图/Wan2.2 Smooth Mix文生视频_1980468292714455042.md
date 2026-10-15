@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json
 hash: 1ed6c41a0fb55830
-coverage: 0.393939
-learned_at: 2026-10-10 20:59:13
+coverage: 0.590909
+learned_at: 2026-10-15 22:27:35
 nodes: [SetNode, SetNode, SetNode, INTConstant, SetNode, SimpleMath+, SetNode, CLIPLoader, easy cleanGpuUsed, GetNode, VAEDecode, easy cleanGpuUsed, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, easy cleanGpuUsed, GetNode, GetNode, GetNode, SetNode, VAELoader, WanImageToVideo, CLIPTextEncode, SetNode, SetNode, GetNode, ImageFromBatch+, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, SetNode, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, PathchSageAttentionKJ, FloatConstant, CLIPTextEncode, easy seed, SetNode, UNETLoader, INTConstant, INTConstant, UNETLoader, VHS_VideoCombine, easy clearCacheAll, GIMMVFI_interpolate, easy cleanGpuUsed, easy clearCacheAll, DownloadAndLoadGIMMVFIModel, Int, SimpleMath+, GetNode, Primitive string multiline [Crystools], VHS_VideoCombine, SimpleCondition+, GetNode, JjkShowText, RH_LLMAPI_NODE, SetNode, VHS_VideoCombine]
 patterns: []
-missing: [ImageFromBatch+, Primitive string multiline [Crystools], SimpleCondition+, SimpleMath+, SimpleMath+, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy clearCacheAll, easy clearCacheAll, easy seed]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive string multiline [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleCondition+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Wan2.2 Smooth Mix文生视频_1980468292714455042.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
 
 **节点**（66 个）：
 - `SetNode`
@@ -32,7 +33,7 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 - `CLIPLoader`
 - `easy cleanGpuUsed`
 - `GetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy cleanGpuUsed`
 - `GetNode`
 - `GetNode`
@@ -48,7 +49,7 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 - `SetNode`
 - `VAELoader`
 - `WanImageToVideo`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `SetNode`
 - `SetNode`
 - `GetNode`
@@ -58,19 +59,19 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 - `ModelSamplingSD3`
 - `easy cleanGpuUsed`
 - `SetNode`
-- `KSamplerAdvanced`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
 - `GetNode`
 - `GetNode`
 - `PathchSageAttentionKJ`
 - `FloatConstant`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `easy seed`
 - `SetNode`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `INTConstant`
 - `INTConstant`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VHS_VideoCombine`
 - `easy clearCacheAll`
 - `GIMMVFI_interpolate`
@@ -91,33 +92,17 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `cfg` = `6`
-- `denoise` = `simple`
-- `sampler_name` = `1`
-- `scheduler` = `euler_ancestral`
 - `seed` = `disable`
 - `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
 
 ## 知识
 
-覆盖率 **39%**（26/66）
+覆盖率 **59%**（39/66）
 
-**有卡**：`SetNode`、`INTConstant`、`SimpleMath+`、`CLIPLoader`、`easy cleanGpuUsed`、`GetNode`、`VAEDecode`、`VAELoader`、`WanImageToVideo`
+**有卡**：`INTConstant`、`SimpleMath+`、`CLIPLoader`、`easy cleanGpuUsed`、`VAEDecode`、`VAELoader`、`WanImageToVideo`、`CLIPTextEncode`、`ImageFromBatch+`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`FloatConstant`、`easy seed`、`UNETLoader`、`VHS_VideoCombine`、`easy clearCacheAll`、`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`Int`、`Primitive string multiline [Crystools]`、`SimpleCondition+`、`JjkShowText`、`RH_LLMAPI_NODE`
 
-**缺卡**（13）：`ImageFromBatch+`、`Primitive string multiline [Crystools]`、`SimpleCondition+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy clearCacheAll`、`easy clearCacheAll`、`easy seed`
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive string multiline [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleCondition+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、easy seed、FloatConstant

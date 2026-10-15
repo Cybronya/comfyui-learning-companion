@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/5倍加速优化Wan 2.1 VACE高质量GGUF量化版模型AI视频生成工作流_2088431127513096194.json
 hash: ae41217652281fb3
-coverage: 0.658824
-learned_at: 2026-10-11 20:53:34
+coverage: 0.835294
+learned_at: 2026-10-15 22:43:52
 nodes: [Any Switch (rgthree), ModelPatchTorchSettings, PathchSageAttentionKJ, UnetLoaderGGUF, CLIPLoader, ClipLoaderGGUF, RH_Translator, easy textSwitch, CLIPTextEncode, CLIPTextEncode, SetNode, PrimitiveInt, ImageUpscaleWithModel, UpscaleModelLoader, RIFE VFI, RIFE VFI, SetNode, LoraLoaderVanilla, SaveAnimatedWEBP, VHS_VideoCombine, ModelSamplingSD3, easy clearCacheAll, easy cleanGpuUsed, GetNode, GetNode, easy clearCacheAll, easy cleanGpuUsed, easy cleanGpuUsed, easy clearCacheAll, WanVaceToVideo, easy clearCacheAll, easy clearCacheAll, KSampler, SetNode, GetNode, CR Text, VHS_LoadVideo, DisplayText_Zho, DisplayText_Zho, Fast Groups Bypasser (rgthree), VAELoader, VAEDecode, Primitive integer [Crystools], TrimVideoLatent, RH_Captioner, LoadImage, ImageResize+, VHS_VideoCombine, VHS_VideoCombine, DWPreprocessor, ImpactSwitch, VHS_VideoCombine, VRAM_Debug, VRAM_Debug, ImageResize+, Canny, 孤海注释, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
-missing: [CR Text, Primitive integer [Crystools], RIFE VFI, RIFE VFI, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy textSwitch, ImageResize+, ImageResize+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "lora_name": "Wan21_CausVid_14B_T2V_lora_rank32-1.safetensors", "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "strength_clip": 1, "strength_model": 1, "width": 80}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/5倍加速优化Wan 2.1 VACE高质量GGUF量化版模型AI视频生成工作流_2088431127513096194.json
@@ -130,11 +130,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **66%**（56/85）
+覆盖率 **84%**（71/85）
 
-**有卡**：`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`UnetLoaderGGUF`、`CLIPLoader`、`ClipLoaderGGUF`、`RH_Translator`、`CLIPTextEncode`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`LoraLoaderVanilla`、`SaveAnimatedWEBP`、`VHS_VideoCombine`、`ModelSamplingSD3`、`WanVaceToVideo`、`KSampler`、`VHS_LoadVideo`、`DisplayText_Zho`、`VAELoader`、`VAEDecode`、`TrimVideoLatent`、`RH_Captioner`、`LoadImage`、`DWPreprocessor`、`VRAM_Debug`、`Canny`、`LoraLoaderModelOnly`、`UNETLoader`、`solarL_SaveImagesToZip`、`EmptyLatentImage`
-
-**缺卡**（15）：`CR Text`、`Primitive integer [Crystools]`、`RIFE VFI`、`RIFE VFI`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy textSwitch`、`ImageResize+`、`ImageResize+`
+**有卡**：`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`UnetLoaderGGUF`、`CLIPLoader`、`ClipLoaderGGUF`、`RH_Translator`、`easy textSwitch`、`CLIPTextEncode`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`RIFE VFI`、`LoraLoaderVanilla`、`SaveAnimatedWEBP`、`VHS_VideoCombine`、`ModelSamplingSD3`、`easy clearCacheAll`、`easy cleanGpuUsed`、`WanVaceToVideo`、`KSampler`、`CR Text`、`VHS_LoadVideo`、`DisplayText_Zho`、`VAELoader`、`VAEDecode`、`Primitive integer [Crystools]`、`TrimVideoLatent`、`RH_Captioner`、`LoadImage`、`ImageResize+`、`DWPreprocessor`、`VRAM_Debug`、`Canny`、`LoraLoaderModelOnly`、`UNETLoader`、`solarL_SaveImagesToZip`、`EmptyLatentImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -146,20 +144,5 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

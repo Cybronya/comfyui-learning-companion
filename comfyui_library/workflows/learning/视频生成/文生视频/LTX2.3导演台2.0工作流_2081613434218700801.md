@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3导演台2.0工作流_2081613434218700801.json
 hash: 9f526b244b126fd4
-coverage: 0.918919
-learned_at: 2026-10-11 20:38:35
+coverage: 0.972973
+learned_at: 2026-10-15 22:45:08
 nodes: [BasicScheduler, KSamplerSelect, LTXVConcatAVLatent, KSamplerSelect, LTXVCropGuides, MarkdownNote, LTX2SamplingPreviewOverride, CFGGuider, LTXVConcatAVLatent, BasicScheduler, LTXVSeparateAVLatent, ImageFromBatch, RandomNoise, CLIPTextEncode, LTXDirectorGuide, LTXVConditioning, LTX2_NAG, CFGGuider, LTXVAudioVAEDecode, LTXVLatentUpsampler, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, SamplerCustomAdvanced, BatchCount+, SimpleMath+, UNETLoader, VAELoaderKJ, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LatentUpscaleModelLoader, LTXDirectorGuide, VAEDecode, LoraLoaderModelOnly, LTXDirector, VHS_VideoCombine]
 patterns: []
-missing: [BatchCount+, SimpleMath+]
-discoveries: [次要节点 `BatchCount+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3导演台2.0工作流_2081613434218700801.json
@@ -63,15 +62,8 @@ discoveries: [次要节点 `BatchCount+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **92%**（34/37）
+覆盖率 **97%**（36/37）
 
-**有卡**：`BasicScheduler`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`LTX2SamplingPreviewOverride`、`CFGGuider`、`LTXVSeparateAVLatent`、`ImageFromBatch`、`RandomNoise`、`CLIPTextEncode`、`LTXDirectorGuide`、`LTXVConditioning`、`LTX2_NAG`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`VAEDecode`、`LoraLoaderModelOnly`、`LTXDirector`、`VHS_VideoCombine`
-
-**缺卡**（2）：`BatchCount+`、`SimpleMath+`
+**有卡**：`BasicScheduler`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`LTX2SamplingPreviewOverride`、`CFGGuider`、`LTXVSeparateAVLatent`、`ImageFromBatch`、`RandomNoise`、`CLIPTextEncode`、`LTXDirectorGuide`、`LTXVConditioning`、`LTX2_NAG`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`BatchCount+`、`SimpleMath+`、`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`VAEDecode`、`LoraLoaderModelOnly`、`LTXDirector`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `BatchCount+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

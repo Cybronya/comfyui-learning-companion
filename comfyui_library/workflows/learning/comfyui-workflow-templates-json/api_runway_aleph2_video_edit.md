@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_runway_aleph
 hash: ee7590c9fe5a1580
 official: true
 coverage: 0.875
-learned_at: 2026-10-10 22:45:55
+learned_at: 2026-10-15 22:24:51
 nodes: [RunwayAleph2VideoToVideoNode, RunwayAleph2PromptImageNode, LoadImage, LoadVideo, RunwayAleph2KeyframeNode, LoadImage, SaveVideo, MarkdownNote]
 patterns: []
 missing: []

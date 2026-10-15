@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax参考输入Depth与OpenPose图生视频处理工具_2102111412842749953.json
 hash: b4151c511788dccf
 coverage: 0.871795
-learned_at: 2026-10-11 22:12:44
+learned_at: 2026-10-15 22:46:31
 nodes: [VHS_VideoCombine, VHS_VideoCombine, MuyeImageBlendingMode, VHS_VideoInfo, PreviewAny, VHS_VideoCombine, DepthAnythingV2Preprocessor, DWPreprocessor, VHS_LoadVideo, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []

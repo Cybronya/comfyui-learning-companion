@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_triposplat_image_to_gaussian_splat.json
 hash: 25d9256b082e2eed
 official: true
-coverage: 0.75
-learned_at: 2026-10-10 22:43:04
+coverage: 0.833333
+learned_at: 2026-10-15 22:24:47
 nodes: [SaveGLB, CreateCameraInfo, SplatToMesh, SaveVideo, RenderSplat, CreateVideo, SaveGLB, SplatToFile3D, MarkdownNote, MarkdownNote, b64333d5-4e6f-4e99-9506-2ec4f63259fe, LoadImage]
 patterns: []
-missing: [b64333d5-4e6f-4e99-9506-2ec4f63259fe]
-discoveries: [次要节点 `b64333d5-4e6f-4e99-9506-2ec4f63259fe` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/3d_triposplat_image_to_gaussian_splat.json
@@ -39,14 +38,8 @@ discoveries: [次要节点 `b64333d5-4e6f-4e99-9506-2ec4f63259fe` 知识库中�
 
 ## 知识
 
-覆盖率 **75%**（9/12）
+覆盖率 **83%**（10/12）
 
-**有卡**：`SaveGLB`、`CreateCameraInfo`、`SplatToMesh`、`SaveVideo`、`RenderSplat`、`CreateVideo`、`SplatToFile3D`、`LoadImage`
-
-**缺卡**（1）：`b64333d5-4e6f-4e99-9506-2ec4f63259fe`
+**有卡**：`SaveGLB`、`CreateCameraInfo`、`SplatToMesh`、`SaveVideo`、`RenderSplat`、`CreateVideo`、`SplatToFile3D`、`b64333d5-4e6f-4e99-9506-2ec4f63259fe`、`LoadImage`
 
 **用到的条目**：LoadImage、SaveVideo、SaveGLB、CreateVideo、CreateCameraInfo、RenderSplat、SplatToFile3D、SplatToMesh
-
-## 学习发现
-
-- 次要节点 `b64333d5-4e6f-4e99-9506-2ec4f63259fe` 知识库中没有该节点类型的任何知识

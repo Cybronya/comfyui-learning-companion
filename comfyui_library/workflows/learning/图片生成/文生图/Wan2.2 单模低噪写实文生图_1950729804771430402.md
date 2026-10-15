@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
 hash: 9973aa3d98d7d37d
-coverage: 0.615385
-learned_at: 2026-10-10 20:59:13
+coverage: 0.730769
+learned_at: 2026-10-15 22:27:35
 nodes: [CLIPTextEncode, VAEDecode, LoraLoader, LoraLoader, MarkdownNote, MarkdownNote, CLIPLoader, VAELoader, LoraLoader, MarkdownNote, KSampler, CLIPTextEncode, EmptyHunyuanLatentVideo, ImpactInt, CFGZeroStarAndInit, CR Text, ImpactSwitch, ImpactInt, CR Text Concatenate, easy showAnything, Note, SaveImage, CR Text, UNETLoader, RH_LLMAPI_NODE, MarkdownNote]
 patterns: [lora]
-missing: [CR Text, CR Text, CR Text Concatenate]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors", "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 66067103546342, "steps": 8, "strength_clip": 0.4000000000000001, "strength_model": 0.4000000000000001}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Wan2.2 单模低噪写实文生图_1950729804771430402.json
@@ -22,19 +22,21 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（26 个）：
-- `CLIPTextEncode`
-- `VAEDecode`
-- `LoraLoader`
-- `LoraLoader`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
 - `MarkdownNote`
 - `MarkdownNote`
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `MarkdownNote`
-- `KSampler`
-- `CLIPTextEncode`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
 - `EmptyHunyuanLatentVideo`
 - `ImpactInt`
 - `CFGZeroStarAndInit`
@@ -46,7 +48,7 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `Note`
 - `SaveImage`
 - `CR Text`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `RH_LLMAPI_NODE`
 - `MarkdownNote`
 
@@ -54,23 +56,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
 - `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
+- `strength_model` = `0.4000000000000001`
+- `strength_clip` = `0.4000000000000001`
 - `seed` = `66067103546342`
 - `steps` = `8`
-- `strength_clip` = `0.4000000000000001`
-- `strength_model` = `0.4000000000000001`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **62%**（16/26）
+覆盖率 **73%**（19/26）
 
-**有卡**：`CLIPTextEncode`、`VAEDecode`、`LoraLoader`、`MarkdownNote`、`CLIPLoader`、`VAELoader`、`KSampler`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CFGZeroStarAndInit`、`CR Text`
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`LoraLoader`、`CLIPLoader`、`VAELoader`、`KSampler`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CFGZeroStarAndInit`、`CR Text`、`CR Text Concatenate`、`SaveImage`、`UNETLoader`、`RH_LLMAPI_NODE`
 
-**缺卡**（3）：`CR Text`、`CR Text`、`CR Text Concatenate`
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、CFGZeroStarAndInit、EmptyHunyuanLatentVideo
 
 ## 参数体检
 
@@ -79,7 +81,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

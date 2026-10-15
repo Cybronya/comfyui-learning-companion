@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/怪獸出品Qwen Image 2.1工作流合集｜文生图图生图双模式打包_2103663285953458177.json
 hash: 32b355063ca5fd0e
-coverage: 0.740741
-learned_at: 2026-10-10 20:59:44
+coverage: 0.777778
+learned_at: 2026-10-15 22:28:34
 nodes: [VAEDecode, easy showAnything, SaveImage, JjkText, PreviewImage, VAEDecode, SaveImage, ComfySwitchNode, GetNode, ResolutionSelector, UNETLoader, SetNode, SetNode, CLIPLoader, VAELoader, CLIPLoader, Anything Everywhere3, AIO_Preprocessor, KSampler, LoadImage, BatchImagesNode, QwenImage21Cache, GetNode, PreviewAny, EmptyLatentImage, Image Comparer (rgthree), KSampler, GetNode, EmptyLatentImage, ComfySwitchNode, TextEncodeQwenImage21, ShowText|pysssss, LoadImage, ResolutionSelector, EmptyLatentImage, TextEncodeQwenImage21, TextGenerateLTX2Prompt, FastGroupsBypassSwitch, KSampler, TextGenerateLTX2Prompt, ResolutionSelector, CR Text, SaveImage, VAEDecode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, easy showAnything, easy sleep, PreviewImage, CLIPLoader, TextEncodeQwenImage21, TextGenerateLTX2Prompt, PreviewAny, LoadImage, LoadImage, CR Prompt Text, CR Text Concatenate, Qwen3VL_Advanced, DWPreprocessor, DepthAnythingPreprocessor, ImageBlend, PreviewImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [CR Text, CR Text Concatenate, easy sleep, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy sleep` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/怪獸出品Qwen Image 2.1工作流合集｜文生图图生图双模式打包_2103663285953458177.json
@@ -22,18 +22,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（108 个）：
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `easy showAnything`
 - `SaveImage`
 - `JjkText`
 - `PreviewImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `ComfySwitchNode`
 - `GetNode`
 - `ResolutionSelector`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `SetNode`
 - `SetNode`
 - `CLIPLoader`
@@ -41,32 +43,32 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `CLIPLoader`
 - `Anything Everywhere3`
 - `AIO_Preprocessor`
-- `KSampler`
+- `KSampler` ★核心
 - `LoadImage`
 - `BatchImagesNode`
 - `QwenImage21Cache`
 - `GetNode`
 - `PreviewAny`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `Image Comparer (rgthree)`
-- `KSampler`
+- `KSampler` ★核心
 - `GetNode`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `ComfySwitchNode`
 - `TextEncodeQwenImage21`
 - `ShowText|pysssss`
 - `LoadImage`
 - `ResolutionSelector`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `TextEncodeQwenImage21`
 - `TextGenerateLTX2Prompt`
 - `FastGroupsBypassSwitch`
-- `KSampler`
+- `KSampler` ★核心
 - `TextGenerateLTX2Prompt`
 - `ResolutionSelector`
 - `CR Text`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
@@ -90,69 +92,69 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `PreviewImage`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `VAELoader`
-- `EmptyLatentImage`
-- `KSampler`
-- `VAEDecode`
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `solarL_SaveImagesToZip`
 - `JjkText`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
 - `Note`
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
-- `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
 - `seed` = `598626327129635`
 - `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 - `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **74%**（80/108）
+覆盖率 **78%**（84/108）
 
-**有卡**：`VAEDecode`、`easy showAnything`、`SaveImage`、`JjkText`、`PreviewImage`、`ComfySwitchNode`、`GetNode`、`ResolutionSelector`、`UNETLoader`、`SetNode`、`CLIPLoader`、`VAELoader`、`Anything Everywhere3`、`AIO_Preprocessor`、`KSampler`、`LoadImage`、`BatchImagesNode`、`QwenImage21Cache`、`PreviewAny`、`EmptyLatentImage`、`Image Comparer (rgthree)`、`TextEncodeQwenImage21`、`ShowText|pysssss`、`TextGenerateLTX2Prompt`、`FastGroupsBypassSwitch`、`CR Text`、`Fast Groups Bypasser (rgthree)`、`easy sleep`、`CR Prompt Text`、`CR Text Concatenate`、`Qwen3VL_Advanced`、`DWPreprocessor`、`DepthAnythingPreprocessor`、`ImageBlend`、`孤海注释`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
+**有卡**：`VAEDecode`、`SaveImage`、`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`AIO_Preprocessor`、`KSampler`、`LoadImage`、`BatchImagesNode`、`QwenImage21Cache`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`TextGenerateLTX2Prompt`、`FastGroupsBypassSwitch`、`CR Text`、`easy sleep`、`CR Prompt Text`、`CR Text Concatenate`、`Qwen3VL_Advanced`、`DWPreprocessor`、`DepthAnythingPreprocessor`、`ImageBlend`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
 
-**缺卡**（4）：`CR Text`、`CR Text Concatenate`、`easy sleep`、`CR Prompt Text`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
 ## 参数体检
 
@@ -161,8 +163,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy sleep` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

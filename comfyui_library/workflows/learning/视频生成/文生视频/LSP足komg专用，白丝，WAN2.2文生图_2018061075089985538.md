@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LSP足komg专用，白丝，WAN2.2文生图_2018061075089985538.json
 hash: 496d7aa42de3ed7a
 coverage: 0.933333
-learned_at: 2026-10-11 03:16:44
+learned_at: 2026-10-15 22:44:31
 nodes: [WanVideoDecode, Note, WanVideoSampler, WanVideoSampler, WanVideoEmptyEmbeds, LoadWanVideoT5TextEncoder, VHS_VideoCombine, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoLoraSelect, WanVideoModelLoader, WanVideoLoraSelect, WanVideoVAELoader, WanVideoTextEncode]
 patterns: []
 missing: []

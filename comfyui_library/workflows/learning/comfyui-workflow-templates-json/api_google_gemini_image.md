@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_google_gemin
 hash: 0c15fa06fd1eaf95
 official: true
 coverage: 0.666667
-learned_at: 2026-10-10 22:43:55
+learned_at: 2026-10-15 22:24:49
 nodes: [GeminiInputFiles, GeminiInputFiles, MarkdownNote, PreviewAny, LoadImage, SaveImage, GeminiImageNode, MarkdownNote, BatchImagesNode]
 patterns: []
 missing: []
@@ -39,4 +39,4 @@ missing: []
 
 **有卡**：`GeminiInputFiles`、`LoadImage`、`SaveImage`、`GeminiImageNode`、`BatchImagesNode`
 
-**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiImageNode、GeminiInputFiles、sd15-t2i-basic、sd15-t2i-lora、node
+**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiImageNode、GeminiInputFiles、sd15-t2i-basic、sd15-t2i-lora、Image Save

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3导演台_原生音视频_修复版_2073961723706560514.json
 hash: bd948218a06ceb62
 coverage: 1
-learned_at: 2026-10-11 20:38:35
+learned_at: 2026-10-15 22:45:08
 nodes: [VAEDecode, CreateVideo, VAELoaderKJ, VAELoader, ModelPreviewOverrideKJ, LatentUpscaleModelLoader, LTXVLatentUpsampler, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, KSamplerSelect, BasicScheduler, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVConditioning, CFGGuider, LTXVConcatAVLatent, RandomNoise, SamplerCustomAdvanced, KSamplerSelect, BasicScheduler, LTXVSeparateAVLatent, UNETLoader, VAELoader, LTXDirectorCropGuides, LTXDirectorCropGuides, ConditioningZeroOut, LTXDirectorGuide, DualCLIPLoader, CLIPTextEncode, SaveVideo, LTXDirectorGuide, LTX2_NAG, LTX2_NAG, LTXDirector]
 patterns: []
 missing: []

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_openai_fashi
 hash: 70f01c8294907b38
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:17
+learned_at: 2026-10-15 22:24:50
 nodes: [SaveImage, SaveImage, LoadImage, OpenAIGPTImageNodeV2, OpenAIGPTImageNodeV2]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`OpenAIGPTImageNodeV2`
 
-**用到的条目**：LoadImage、SaveImage、OpenAIGPTImageNodeV2、sd15-t2i-basic、sd15-t2i-lora、node、v2、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、OpenAIGPTImageNodeV2、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、v2

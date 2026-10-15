@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3参考声纹+ 文生视频（声音参考文生视频）_2047943915977842690.json
 hash: 6a3bb5b8426dad36
-coverage: 0.519481
-learned_at: 2026-10-11 19:49:44
+coverage: 0.636364
+learned_at: 2026-10-15 22:47:23
 nodes: [MarkdownNote, Bjornulf_ShowInt, PainterAudioLength, FishS2VoiceCloneTTS, CM_FloatToInt, PlaySound|pysssss, Load Whisper (mtb), Audio To Text (mtb), ShowText|pysssss, SetLatentNoiseMask, LTXVAudioVAEEncode, SolidMask, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVConcatAVLatent, GetNode, RandomNoise, LTXVCropGuides, LatentUpscaleModelLoader, PrimitiveFloat, INTConstant, SimpleMath+, Reroute, LoadAudio, LTXVSeparateAVLatent, VAEDecodeTiled, MarkdownNote, Reroute, LayerUtility: PurgeVRAM, easy mathInt, easy mathInt, GetNode, GetNode, SetNode, SetNode, SetNode, MarkdownNote, CR Text, TTResolutionSelector, LoadImage, MarkdownNote, MarkdownNote, MarkdownNote, PreviewAudio, PreviewAny, LTXAVTextEncoderLoader, GetNode, CombinationText, TextGenerateLTX2Prompt, GetNode, SetNode, RH_Translator, Reroute, PreviewAny, DualCLIPLoader, SetNode, CheckpointLoaderSimple, LTXVAudioVAELoader, SetNode, EmptyLTXVLatentVideo, GetNode, CFGGuider, SamplerCustomAdvanced, KSamplerSelect, LTXVSeparateAVLatent, GetNode, GetNode, LTXVAudioVAEDecode, CLIPTextEncode, CLIPTextEncode, KSampler, LTXVConditioning, CR Prompt Text, JjkText, LTXVScheduler, RHHiddenNodes, VHS_VideoCombine]
 patterns: []
-missing: [Audio To Text (mtb), CR Text, LayerUtility: PurgeVRAM, Load Whisper (mtb), PlaySound|pysssss, SimpleMath+, easy mathInt, easy mathInt, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 parameters: {"cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "sampler_name": "euler", "scheduler": "simple", "seed": 216654308440775, "steps": 4}
-discoveries: [次要节点 `Audio To Text (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `Load Whisper (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
 # 视频生成/文生视频/ltx2.3参考声纹+ 文生视频（声音参考文生视频）_2047943915977842690.json
@@ -115,11 +115,9 @@ discoveries: [次要节点 `Audio To Text (mtb)` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **52%**（40/77）
+覆盖率 **64%**（49/77）
 
-**有卡**：`Bjornulf_ShowInt`、`PainterAudioLength`、`FishS2VoiceCloneTTS`、`CM_FloatToInt`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`SolidMask`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`INTConstant`、`LoadAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`TTResolutionSelector`、`LoadImage`、`PreviewAudio`、`LTXAVTextEncoderLoader`、`CombinationText`、`TextGenerateLTX2Prompt`、`RH_Translator`、`DualCLIPLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`EmptyLTXVLatentVideo`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`KSampler`、`LTXVConditioning`、`LTXVScheduler`、`RHHiddenNodes`、`VHS_VideoCombine`
-
-**缺卡**（9）：`Audio To Text (mtb)`、`CR Text`、`LayerUtility: PurgeVRAM`、`Load Whisper (mtb)`、`PlaySound|pysssss`、`SimpleMath+`、`easy mathInt`、`easy mathInt`、`CR Prompt Text`
+**有卡**：`Bjornulf_ShowInt`、`PainterAudioLength`、`FishS2VoiceCloneTTS`、`CM_FloatToInt`、`PlaySound|pysssss`、`Load Whisper (mtb)`、`Audio To Text (mtb)`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`SolidMask`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`INTConstant`、`SimpleMath+`、`LoadAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LayerUtility: PurgeVRAM`、`easy mathInt`、`CR Text`、`TTResolutionSelector`、`LoadImage`、`PreviewAudio`、`LTXAVTextEncoderLoader`、`CombinationText`、`TextGenerateLTX2Prompt`、`RH_Translator`、`DualCLIPLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`EmptyLTXVLatentVideo`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`KSampler`、`LTXVConditioning`、`CR Prompt Text`、`LTXVScheduler`、`RHHiddenNodes`、`VHS_VideoCombine`
 
 **用到的条目**：KSampler、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
 
@@ -131,14 +129,5 @@ discoveries: [次要节点 `Audio To Text (mtb)` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `Audio To Text (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `Load Whisper (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

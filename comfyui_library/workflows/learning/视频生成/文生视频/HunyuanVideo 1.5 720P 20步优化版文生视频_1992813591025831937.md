@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/HunyuanVideo 1.5 720P 20步优化版文生视频_1992813591025831937.json
 hash: e1f8fff18a630922
 coverage: 0.863636
-learned_at: 2026-10-11 02:57:35
+learned_at: 2026-10-15 22:44:28
 nodes: [DualCLIPLoader, VAELoader, EasyCache, CLIPTextEncode, Note, Note, EmptyHunyuanVideo15Latent, UNETLoader, MarkdownNote, BasicScheduler, RandomNoise, KSamplerSelect, CFGGuider, SaveVideo, SamplerCustomAdvanced, CreateVideo, VAEDecodeTiled, VAEDecode, ModelSamplingSD3, CLIPTextEncode, JWInteger, JWInteger]
 patterns: []
 missing: []

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/flux_fill_inpaint_example.json
 hash: ca742145b8194dea
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:47:11
+coverage: 0.75
+learned_at: 2026-10-15 22:24:53
 nodes: [MarkdownNote, SaveImage, LoadImage, 42bcb419-1e9f-48eb-a6d6-c22e0625db3a]
 patterns: []
-missing: [42bcb419-1e9f-48eb-a6d6-c22e0625db3a]
-discoveries: [次要节点 `42bcb419-1e9f-48eb-a6d6-c22e0625db3a` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/flux_fill_inpaint_example.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `42bcb419-1e9f-48eb-a6d6-c22e0625db3a` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（2/4）
+覆盖率 **75%**（3/4）
 
-**有卡**：`SaveImage`、`LoadImage`
+**有卡**：`SaveImage`、`LoadImage`、`42bcb419-1e9f-48eb-a6d6-c22e0625db3a`
 
-**缺卡**（1）：`42bcb419-1e9f-48eb-a6d6-c22e0625db3a`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `42bcb419-1e9f-48eb-a6d6-c22e0625db3a` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、42bcb419-1e9f-48eb-a6d6-c22e0625db3a、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput

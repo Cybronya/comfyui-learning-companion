@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_ohneis_i2v.json
 hash: f59f197414287a9a
 official: true
-coverage: 0.833333
-learned_at: 2026-10-10 22:49:33
+coverage: 1
+learned_at: 2026-10-15 22:24:56
 nodes: [f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1, SaveImage, GeminiImage2Node, KlingImageToVideoWithAudio, SaveVideo, SaveImage]
 patterns: []
-missing: [f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1]
-discoveries: [次要节点 `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/templates_ohneis_i2v.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1` 知识库中�
 
 ## 知识
 
-覆盖率 **83%**（5/6）
+覆盖率 **100%**（6/6）
 
-**有卡**：`SaveImage`、`GeminiImage2Node`、`KlingImageToVideoWithAudio`、`SaveVideo`
+**有卡**：`f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1`、`SaveImage`、`GeminiImage2Node`、`KlingImageToVideoWithAudio`、`SaveVideo`
 
-**缺卡**（1）：`f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1`
-
-**用到的条目**：SaveImage、SaveVideo、GeminiImage2Node、KlingImageToVideoWithAudio、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、SaveVideo、GeminiImage2Node、KlingImageToVideoWithAudio、f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1、sd15-t2i-basic、sd15-t2i-lora、node

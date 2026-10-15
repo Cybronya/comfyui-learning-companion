@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3_MSR（多参图生视频）_2080284714388246530.json
 hash: 35c065a999be552b
-coverage: 0.705882
-learned_at: 2026-10-11 20:38:33
+coverage: 0.764706
+learned_at: 2026-10-15 22:44:35
 nodes: [LTXVAudioVAELoader, CLIPTextEncode, LTXVConditioning, LTXAddVideoICLoRAGuide, EmptyLTXVLatentVideo, LTX2_NAG, LTXVConcatAVLatent, CFGGuider, ManualSigmas, KSamplerSelect, SamplerCustomAdvanced, LowVRAMCheckpointLoader, LTXICLoRALoaderModelOnly, RandomNoise, LTXVSeparateAVLatent, LTXVCropGuides, LiconMSR, INTConstant, INTConstant, SetNode, ImageScale, ImageScale, SetNode, SetNode, GetNode, GetNode, GetNode, ImageScale, LoadImage, ImageScale, SetNode, LoadImage, LoadImage, LoadImage, PromptRelayEncode, LTXAVTextEncoderLoader, SetNode, SetNode, CR Prompt Text, FloatConstant, VAEDecode, GetNode, INTConstant, VHS_VideoCombine, LTXVAudioVAEDecode, GetNode, SimpleMath+, GetNode, CM_FloatToInt, LTXVEmptyLatentAudio, CR Prompt Text]
 patterns: []
-missing: [SimpleMath+, CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 50, "width": 241}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX 2.3_MSR（多参图生视频）_2080284714388246530.json
@@ -85,16 +84,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **71%**（36/51）
+覆盖率 **76%**（39/51）
 
-**有卡**：`LTXVAudioVAELoader`、`CLIPTextEncode`、`LTXVConditioning`、`LTXAddVideoICLoRAGuide`、`EmptyLTXVLatentVideo`、`LTX2_NAG`、`LTXVConcatAVLatent`、`CFGGuider`、`ManualSigmas`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LowVRAMCheckpointLoader`、`LTXICLoRALoaderModelOnly`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LiconMSR`、`INTConstant`、`ImageScale`、`LoadImage`、`PromptRelayEncode`、`LTXAVTextEncoderLoader`、`FloatConstant`、`VAEDecode`、`VHS_VideoCombine`、`LTXVAudioVAEDecode`、`CM_FloatToInt`、`LTXVEmptyLatentAudio`
-
-**缺卡**（3）：`SimpleMath+`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LTXVAudioVAELoader`、`CLIPTextEncode`、`LTXVConditioning`、`LTXAddVideoICLoRAGuide`、`EmptyLTXVLatentVideo`、`LTX2_NAG`、`LTXVConcatAVLatent`、`CFGGuider`、`ManualSigmas`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LowVRAMCheckpointLoader`、`LTXICLoRALoaderModelOnly`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LiconMSR`、`INTConstant`、`ImageScale`、`LoadImage`、`PromptRelayEncode`、`LTXAVTextEncoderLoader`、`CR Prompt Text`、`FloatConstant`、`VAEDecode`、`VHS_VideoCombine`、`LTXVAudioVAEDecode`、`SimpleMath+`、`CM_FloatToInt`、`LTXVEmptyLatentAudio`
 
 **用到的条目**：VAEDecode、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
 hash: 97e738235cdd5cdf
-coverage: 0.588235
-learned_at: 2026-10-10 20:58:37
+coverage: 0.617647
+learned_at: 2026-10-15 22:26:27
 nodes: [TextCombinerTwo, RH_Prompter, TextCombinerTwo, RH_Prompter, CR Text Input Switch (4 way), SetNode, GetNode, CLIPTextEncode, BasicGuider, GetNode, GetNode, SamplerCustomAdvanced, BasicScheduler, GetNode, KSamplerSelect, VAELoader, DualCLIPLoader, SetNode, UNETLoader, SetNode, SetNode, RandomNoise, VAEDecode, SetNode, GetNode, SaveImage, JjkText, FluxResolutionNode, EmptyLatentImage, JjkText, ShowText, GetNode, ArgosTranslateTextNode, ShowText]
 patterns: []
-missing: [CR Text Input Switch (4 way)]
+missing: []
 parameters: {"batch_size": 1, "height": 1280, "width": 1024}
-discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux文生图(超级简化_带备注)V1.0_1920028263266324482.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（34 个）：
 - `TextCombinerTwo`
@@ -29,28 +30,28 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 - `CR Text Input Switch (4 way)`
 - `SetNode`
 - `GetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `BasicGuider`
 - `GetNode`
 - `GetNode`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `BasicScheduler`
 - `GetNode`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `VAELoader`
 - `DualCLIPLoader`
 - `SetNode`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `SetNode`
 - `SetNode`
 - `RandomNoise`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetNode`
 - `GetNode`
 - `SaveImage`
 - `JjkText`
 - `FluxResolutionNode`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `JjkText`
 - `ShowText`
 - `GetNode`
@@ -59,18 +60,14 @@ discoveries: [次要节点 `CR Text Input Switch (4 way)` 知识库中没有该�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `height` = `1280`
 - `width` = `1024`
+- `height` = `1280`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **59%**（20/34）
+覆盖率 **62%**（21/34）
 
-**有卡**：`TextCombinerTwo`、`RH_Prompter`、`CR Text Input Switch (4 way)`、`SetNode`、`GetNode`、`CLIPTextEncode`、`BasicGuider`、`SamplerCustomAdvanced`、`BasicScheduler`、`KSamplerSelect`、`VAELoader`、`DualCLIPLoader`、`UNETLoader`
+**有卡**：`TextCombinerTwo`、`RH_Prompter`、`CR Text Input Switch (4 way)`、`CLIPTextEncode`、`BasicGuider`、`SamplerCustomAdvanced`、`BasicScheduler`、`KSamplerSelect`、`VAELoader`、`DualCLIPLoader`、`UNETLoader`、`RandomNoise`、`VAEDecode`、`SaveImage`、`FluxResolutionNode`、`EmptyLatentImage`、`ShowText`、`ArgosTranslateTextNode`
 
-**缺卡**（1）：`CR Text Input Switch (4 way)`
-
-## 学习发现
-
-- 次要节点 `CR Text Input Switch (4 way)` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced、DualCLIPLoader

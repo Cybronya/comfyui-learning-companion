@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 + VBVR 多图首尾帧_2043983802795560961.json
 hash: aebf7476ebaa93c6
-coverage: 0.858974
-learned_at: 2026-10-11 19:49:34
+coverage: 0.884615
+learned_at: 2026-10-15 22:44:31
 nodes: [PrimitiveInt, LoadImage, LoadImage, LayerUtility: PurgeVRAM V2, CheckpointLoaderSimple, VRAMReserver, LoraLoaderModelOnly, LoadImage, LoadImage, PrimitiveFloat, image_scale_pixel_v2, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, VHS_VideoCombine, KSamplerSelect, ManualSigmas, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, LTXVAudioVAELoader, PrimitiveBoolean, RandomNoise, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, ResizeLongestToNode, CM_FloatToInt, EmptyLTXVLatentVideo, LTXVPreprocess, GetImageSize+, LTXVEmptyLatentAudio, LTXVConditioning, LTXVImgToVideoConditionOnly, ImageResizeKJv2, LTXVPreprocess, ImageResizeKJv2, LTX2_NAG, LTXVPreprocess, ImageResizeKJv2, LTXVPreprocess, LTXVAddGuideMulti, CFGGuider, LTXVConcatAVLatent, easy showAnything, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, VAEDecodeTiled, PreviewImage, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, VAEDecodeTiled, LTXVImgToVideoConditionOnly, LTXVAddGuideMulti, PreviewImage, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, JWImageSequenceExtractFromBatch, CreateVideo, LTXVAddGuideMulti, Int, Int, Int, Int, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, GetImageSize+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX 2.3 + VBVR 多图首尾帧_2043983802795560961.json
@@ -112,15 +111,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **86%**（67/78）
+覆盖率 **88%**（69/78）
 
-**有卡**：`LoadImage`、`CheckpointLoaderSimple`、`VRAMReserver`、`LoraLoaderModelOnly`、`image_scale_pixel_v2`、`CLIPTextEncode`、`VHS_VideoCombine`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`LTXVAudioVAELoader`、`PrimitiveBoolean`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`ResizeLongestToNode`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVImgToVideoConditionOnly`、`ImageResizeKJv2`、`LTX2_NAG`、`LTXVAddGuideMulti`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`JWImageSequenceExtractFromBatch`、`CreateVideo`、`Int`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`GetImageSize+`
+**有卡**：`LoadImage`、`LayerUtility: PurgeVRAM V2`、`CheckpointLoaderSimple`、`VRAMReserver`、`LoraLoaderModelOnly`、`image_scale_pixel_v2`、`CLIPTextEncode`、`VHS_VideoCombine`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`LTXVAudioVAELoader`、`PrimitiveBoolean`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`ResizeLongestToNode`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`GetImageSize+`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVImgToVideoConditionOnly`、`ImageResizeKJv2`、`LTX2_NAG`、`LTXVAddGuideMulti`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`JWImageSequenceExtractFromBatch`、`CreateVideo`、`Int`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明

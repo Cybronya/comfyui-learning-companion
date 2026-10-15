@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json
 hash: fefae22ca0cd4c49
-coverage: 0.747253
-learned_at: 2026-10-11 21:30:38
+coverage: 0.769231
+learned_at: 2026-10-15 22:48:33
 nodes: [KSamplerSelect, BasicGuider, ComfyMathExpression, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, easy clearCacheAll, SetNode, RandomNoise, VAEDecodeAudio, VAEDecode, easy cleanGpuUsed, GetNode, GetNode, SetNode, MiniMaxH3ImageToVideo, ImageScaleToMaxDimension, PrimitiveFloat, PrimitiveFloat, SamplerCustomAdvanced, MiniMaxH3SigmaShift, CLIPTextEncode, BasicScheduler, VisualizeSigmasKJ, RandomNoise, KSamplerSelect, LoadImage, VAELoader, VAELoader, CLIPLoader, VAELoader, VAELoader, SetNode, SetNode, LoraLoaderModelOnly, LTXAVTextEncoderLoader, VHS_VideoCombine, VHS_VideoCombine, SpectrumApplyMiniMaxH3, SolAttnPatch, UNETLoader, UNETLoader, LoraLoaderModelOnly, LTXVSpatioTemporalTiledVAEDecode, LTXVLoopingSampler, VAEEncodeTiled, LTXVConditioning, CFGGuider, ManualSigmas, LoraLoaderModelOnly, BasicScheduler, PathchSageAttentionKJ, LoadImage, ResizeImageMaskNode, ResizeImageMaskNode, SetNode, SetNode, ResolutionSelector, PrimitiveStringMultiline, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
 patterns: [text_to_image]
-missing: [easy cleanGpuUsed, easy clearCacheAll]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/导演台双采SLA加速｜MiniMax H3 Latent Upscaler视频生成_2093122877859127297.json
@@ -133,11 +133,9 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **75%**（68/91）
+覆盖率 **77%**（70/91）
 
-**有卡**：`KSamplerSelect`、`BasicGuider`、`ComfyMathExpression`、`RandomNoise`、`VAEDecodeAudio`、`VAEDecode`、`MiniMaxH3ImageToVideo`、`ImageScaleToMaxDimension`、`SamplerCustomAdvanced`、`MiniMaxH3SigmaShift`、`CLIPTextEncode`、`BasicScheduler`、`VisualizeSigmasKJ`、`LoadImage`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`VHS_VideoCombine`、`SpectrumApplyMiniMaxH3`、`SolAttnPatch`、`UNETLoader`、`LTXVSpatioTemporalTiledVAEDecode`、`LTXVLoopingSampler`、`VAEEncodeTiled`、`LTXVConditioning`、`CFGGuider`、`ManualSigmas`、`PathchSageAttentionKJ`、`ResizeImageMaskNode`、`ResolutionSelector`、`KSampler`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`easy clearCacheAll`
+**有卡**：`KSamplerSelect`、`BasicGuider`、`ComfyMathExpression`、`easy clearCacheAll`、`RandomNoise`、`VAEDecodeAudio`、`VAEDecode`、`easy cleanGpuUsed`、`MiniMaxH3ImageToVideo`、`ImageScaleToMaxDimension`、`SamplerCustomAdvanced`、`MiniMaxH3SigmaShift`、`CLIPTextEncode`、`BasicScheduler`、`VisualizeSigmasKJ`、`LoadImage`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`VHS_VideoCombine`、`SpectrumApplyMiniMaxH3`、`SolAttnPatch`、`UNETLoader`、`LTXVSpatioTemporalTiledVAEDecode`、`LTXVLoopingSampler`、`VAEEncodeTiled`、`LTXVConditioning`、`CFGGuider`、`ManualSigmas`、`PathchSageAttentionKJ`、`ResizeImageMaskNode`、`ResolutionSelector`、`KSampler`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -148,6 +146,4 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 学习发现
 
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

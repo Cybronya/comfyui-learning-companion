@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json
 hash: 6cbef2f25e306f87
-coverage: 0.645161
-learned_at: 2026-10-10 20:59:00
+coverage: 0.806452
+learned_at: 2026-10-15 22:27:12
 nodes: [UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, ResolutionSelector, EmptyLatentImage, PrimitiveBoolean, PrimitiveStringMultiline, StringFormat, TextGenerate, JsonExtractString, StringCompare, ComfySwitchNode, ComfySwitchNode, TextEncodeQwenImage21, BasicGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, VAEDecode, SaveImage, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, StringFormat, MathExpression|pysssss, MarkdownNote, PreviewAny, PrimitiveStringMultiline]
 patterns: []
-missing: [MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "height": 1024, "width": 1024}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen-Image-2.1-viggle-turbo-t2i-auto-sigma_2104764845521461250.json
@@ -21,13 +20,15 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（31 个）：
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `ResolutionSelector`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `PrimitiveBoolean`
 - `PrimitiveStringMultiline`
 - `StringFormat`
@@ -39,10 +40,10 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 - `TextEncodeQwenImage21`
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `ManualSigmas`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `MathExpression|pysssss`
 - `MathExpression|pysssss`
@@ -56,22 +57,14 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `height` = `1024`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **65%**（20/31）
+覆盖率 **81%**（25/31）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`PrimitiveBoolean`、`PrimitiveStringMultiline`、`StringFormat`、`TextGenerate`、`JsonExtractString`、`StringCompare`、`ComfySwitchNode`、`TextEncodeQwenImage21`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`、`PrimitiveBoolean`、`StringFormat`、`TextGenerate`、`JsonExtractString`、`StringCompare`、`TextEncodeQwenImage21`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`VAEDecode`、`SaveImage`、`MathExpression|pysssss`
 
-**缺卡**（5）：`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader

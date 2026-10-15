@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0全能参考视频-真人满血4K超清生成_2045195193044963330.json
 hash: 2a36875d61ab2ed9
 coverage: 1
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [LoadImage, LoadImage, SaveVideo, LoadImage, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, LoadAudio]
 patterns: []
 missing: []
@@ -36,4 +36,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveVideo`、`LoadVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`LoadAudio`
 
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Save

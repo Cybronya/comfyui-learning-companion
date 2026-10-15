@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/全能视频sd2.0体验版超能视频2.0体验版本SD2.0不排队工作流sd2.0工作流_2034648366897963009.json
 hash: 14da6ec07fdc9280
 coverage: 1
-learned_at: 2026-10-13 01:36:55
+learned_at: 2026-10-15 22:43:01
 nodes: [SaveVideo, RH_CinematicVideoGenerator, LoadImage, SaveImage, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -36,4 +36,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`RH_CinematicVideoGenerator`、`LoadImage`、`SaveImage`
 
-**用到的条目**：LoadImage、SaveImage、SaveVideo、RH_CinematicVideoGenerator、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImage、SaveVideo、RH_CinematicVideoGenerator、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load

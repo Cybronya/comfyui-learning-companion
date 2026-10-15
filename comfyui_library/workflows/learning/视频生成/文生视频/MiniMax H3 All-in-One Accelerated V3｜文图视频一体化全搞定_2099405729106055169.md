@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3｜文图视频一体化全搞定_2099405729106055169.json
 hash: 8b0357ffb3ca45d3
-coverage: 0.918033
-learned_at: 2026-10-11 21:41:40
+coverage: 0.934426
+learned_at: 2026-10-15 22:45:29
 nodes: [SamplerCustomAdvanced, ResolutionSelector, KSamplerSelect, BasicScheduler, H3SigmaRefiner, ModelPreviewOverrideKJ, MiniMaxH3AVDecodeT8, VHS_VideoCombine, ModelAttentionBackend, CLIPLoader, VAELoader, VAELoader, CR Text, MiniMaxH3Unified, RandomNoise, BasicGuider, UNETLoader, LoraLoaderModelOnly, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [CR Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MiniMax H3 All-in-One Accelerated V3｜文图视频一体化全搞定_2099405729106055169.json
@@ -103,11 +103,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **92%**（56/61）
+覆盖率 **93%**（57/61）
 
-**有卡**：`SamplerCustomAdvanced`、`ResolutionSelector`、`KSamplerSelect`、`BasicScheduler`、`H3SigmaRefiner`、`ModelPreviewOverrideKJ`、`MiniMaxH3AVDecodeT8`、`VHS_VideoCombine`、`ModelAttentionBackend`、`CLIPLoader`、`VAELoader`、`MiniMaxH3Unified`、`RandomNoise`、`BasicGuider`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`SamplerCustomAdvanced`、`ResolutionSelector`、`KSamplerSelect`、`BasicScheduler`、`H3SigmaRefiner`、`ModelPreviewOverrideKJ`、`MiniMaxH3AVDecodeT8`、`VHS_VideoCombine`、`ModelAttentionBackend`、`CLIPLoader`、`VAELoader`、`CR Text`、`MiniMaxH3Unified`、`RandomNoise`、`BasicGuider`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -118,5 +116,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

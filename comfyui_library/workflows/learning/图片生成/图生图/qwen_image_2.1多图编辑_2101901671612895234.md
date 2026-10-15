@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen_image_2.1多图编辑_2101901671612895234.json
 hash: 32cd7cc2926daa0e
-coverage: 0.821429
-learned_at: 2026-10-10 20:48:13
+coverage: 0.892857
+learned_at: 2026-10-15 22:25:37
 nodes: [SaveImage, SaveImage, UNETLoader, LoadImage, ImpactInt, easy imageScaleDownToSize, GetImageSize, EmptyLatentImage, CLIPLoader, VAELoader, ComfySwitchNode, TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CR Text, ImageConcatMulti, ImageConcatMulti, KSampler, QwenPERewriteT8, ShowText|pysssss, VAEDecode, XinbaoImageStandardizer, Image Comparer (rgthree)]
 patterns: []
-missing: [CR Text, easy imageScaleDownToSize]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 2048, "sampler_name": "euler", "scheduler": "simple", "seed": 36496774754364, "steps": 25, "width": 1088}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageScaleDownToSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/qwen_image_2.1多图编辑_2101901671612895234.json
@@ -67,15 +66,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **82%**（23/28）
+覆盖率 **89%**（25/28）
 
-**有卡**：`SaveImage`、`UNETLoader`、`LoadImage`、`ImpactInt`、`GetImageSize`、`EmptyLatentImage`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`ImageConcatMulti`、`KSampler`、`QwenPERewriteT8`、`VAEDecode`、`XinbaoImageStandardizer`
-
-**缺卡**（2）：`CR Text`、`easy imageScaleDownToSize`
+**有卡**：`SaveImage`、`UNETLoader`、`LoadImage`、`ImpactInt`、`easy imageScaleDownToSize`、`GetImageSize`、`EmptyLatentImage`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`CR Text`、`ImageConcatMulti`、`KSampler`、`QwenPERewriteT8`、`VAEDecode`、`XinbaoImageStandardizer`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageScaleDownToSize` 仅有 Resolution 的通用知识，没有该节点自己的说明

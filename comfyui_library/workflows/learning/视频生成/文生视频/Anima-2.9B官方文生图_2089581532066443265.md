@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Anima-2.9B官方文生图_2089581532066443265.json
 hash: f59156a88f1669c3
-coverage: 0.882353
-learned_at: 2026-10-11 21:19:36
+coverage: 0.941176
+learned_at: 2026-10-15 22:44:02
 nodes: [SaveImage, SamplerCustomAdvanced, KSamplerSelect, BasicScheduler, CFGGuider, RandomNoise, KSampler Config (rgthree), CLIPLoader, VAEDecode, ImpactSwitch, UNETLoader, CLIPTextEncode, CLIPTextEncode, VAELoaderKJ, EmptyLatentImage, EmptyLatentImage, PathchSageAttentionKJ]
 patterns: []
-missing: [KSampler Config (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "height": 1536, "width": 1152}
-discoveries: [核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Anima-2.9B官方文生图_2089581532066443265.json
@@ -50,14 +49,8 @@ discoveries: [核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用
 
 ## 知识
 
-覆盖率 **88%**（15/17）
+覆盖率 **94%**（16/17）
 
-**有卡**：`SaveImage`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`RandomNoise`、`CLIPLoader`、`VAEDecode`、`UNETLoader`、`CLIPTextEncode`、`VAELoaderKJ`、`EmptyLatentImage`、`PathchSageAttentionKJ`
-
-**缺卡**（1）：`KSampler Config (rgthree)`
+**有卡**：`SaveImage`、`SamplerCustomAdvanced`、`KSamplerSelect`、`BasicScheduler`、`CFGGuider`、`RandomNoise`、`KSampler Config (rgthree)`、`CLIPLoader`、`VAEDecode`、`UNETLoader`、`CLIPTextEncode`、`VAELoaderKJ`、`EmptyLatentImage`、`PathchSageAttentionKJ`
 
 **用到的条目**：VAEDecode、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 核心节点 `KSampler Config (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

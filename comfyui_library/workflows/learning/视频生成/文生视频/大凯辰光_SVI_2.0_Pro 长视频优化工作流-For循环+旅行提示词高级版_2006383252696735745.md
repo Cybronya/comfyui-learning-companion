@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/大凯辰光_SVI_2.0_Pro 长视频优化工作流-For循环+旅行提示词高级版_2006383252696735745.json
 hash: 3ff74218e8e00552
-coverage: 0.397959
-learned_at: 2026-10-10 23:12:18
+coverage: 0.5
+learned_at: 2026-10-15 22:48:31
 nodes: [PathchSageAttentionKJ, SetNode, GetNode, SetNode, SetNode, WanImageToVideoSVIPro, ModelSamplingSD3, VAEEncode, easy forLoopStart, GetNode, GetNode, GetNode, GetNode, Display Any (rgthree), GetNode, GetNode, GetNode, ModelSamplingSD3, ModelSamplingSD3, GetNode, WanVideoNAG, SetNode, LoraLoaderModelOnly, CFGZeroStar, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, VAELoader, CLIPVisionLoader, SetNode, INTConstant, INTConstant, SetNode, SetNode, ImageResizeKJv2, SetNode, GetImageRangeFromBatch, UNETLoader, UNETLoader, KSamplerAdvanced, easy cleanGpuUsed, easy clearCacheAll, SetNode, ModelSamplingSD3, Note, CLIPTextEncode, GetNode, GetNode, KSamplerAdvanced, GetNode, GetNode, WanVideoNAG, VAEDecode, GetNode, GetNode, GetNode, easy cleanGpuUsed, easy clearCacheAll, SetNode, Text Load Line From File, SetNode, PrimitiveStringMultiline, GetNode, SetNode, SetNode, ImageBatchExtendWithOverlap, GetNode, easy forLoopEnd, WanImageToVideoSVIPro, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, VAEEncode, GetNode, VHS_VideoCombine, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, CLIPTextEncode, SetNode, GetNode, SetNode, CLIPTextEncode, easy cleanGpuUsed, easy clearCacheAll, SetNode, VAEDecode, KSamplerAdvanced, KSamplerAdvanced, GetNode, SetNode, LoadImage]
 patterns: []
-missing: [Display Any (rgthree), Text Load Line From File, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy forLoopEnd, easy forLoopStart]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/大凯辰光_SVI_2.0_Pro 长视频优化工作流-For循环+旅行提示词高级版_2006383252696735745.json
@@ -134,23 +133,8 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **40%**（39/98）
+覆盖率 **50%**（49/98）
 
-**有卡**：`PathchSageAttentionKJ`、`WanImageToVideoSVIPro`、`ModelSamplingSD3`、`VAEEncode`、`WanVideoNAG`、`LoraLoaderModelOnly`、`CFGZeroStar`、`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`INTConstant`、`ImageResizeKJv2`、`GetImageRangeFromBatch`、`UNETLoader`、`KSamplerAdvanced`、`CLIPTextEncode`、`VAEDecode`、`ImageBatchExtendWithOverlap`、`VHS_VideoCombine`、`LoadImage`
-
-**缺卡**（10）：`Display Any (rgthree)`、`Text Load Line From File`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy forLoopEnd`、`easy forLoopStart`
+**有卡**：`PathchSageAttentionKJ`、`WanImageToVideoSVIPro`、`ModelSamplingSD3`、`VAEEncode`、`easy forLoopStart`、`Display Any (rgthree)`、`WanVideoNAG`、`LoraLoaderModelOnly`、`CFGZeroStar`、`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`INTConstant`、`ImageResizeKJv2`、`GetImageRangeFromBatch`、`UNETLoader`、`KSamplerAdvanced`、`easy cleanGpuUsed`、`easy clearCacheAll`、`CLIPTextEncode`、`VAEDecode`、`Text Load Line From File`、`ImageBatchExtendWithOverlap`、`easy forLoopEnd`、`VHS_VideoCombine`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识

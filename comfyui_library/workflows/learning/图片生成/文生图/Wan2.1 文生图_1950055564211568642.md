@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.1 文生图_1950055564211568642.json
 hash: e7fa7219df2c3cee
-coverage: 0.8
-learned_at: 2026-10-10 20:59:13
+coverage: 0.933333
+learned_at: 2026-10-15 22:27:34
 nodes: [LoraLoaderModelOnly, VAELoader, EmptyHunyuanLatentVideo, KSampler, CLIPTextEncode, LoraLoaderModelOnly, LayerUtility: JoyCaptionBeta1, LoadImage, LayerUtility: LoadJoyCaptionBeta1Model, ShowText|pysssss, CLIPTextEncode, UNETLoader, CLIPLoader, VAEDecode, SaveImage]
 patterns: []
-missing: [LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 636156977862286, "steps": 8}
-discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Wan2.1 文生图_1950055564211568642.json
@@ -22,39 +22,41 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（15 个）：
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `VAELoader`
 - `EmptyHunyuanLatentVideo`
-- `KSampler`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `LayerUtility: JoyCaptionBeta1`
 - `LoadImage`
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `ShowText|pysssss`
-- `CLIPTextEncode`
-- `UNETLoader`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
 - `CLIPLoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
 - `seed` = `636156977862286`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **80%**（12/15）
+覆盖率 **93%**（14/15）
 
-**有卡**：`LoraLoaderModelOnly`、`VAELoader`、`EmptyHunyuanLatentVideo`、`KSampler`、`CLIPTextEncode`、`LayerUtility: JoyCaptionBeta1`、`LoadImage`、`LayerUtility: LoadJoyCaptionBeta1Model`、`ShowText|pysssss`、`UNETLoader`
+**有卡**：`LoraLoaderModelOnly`、`VAELoader`、`EmptyHunyuanLatentVideo`、`KSampler`、`CLIPTextEncode`、`LayerUtility: JoyCaptionBeta1`、`LoadImage`、`LayerUtility: LoadJoyCaptionBeta1Model`、`UNETLoader`、`CLIPLoader`、`VAEDecode`、`SaveImage`
 
-**缺卡**（2）：`LayerUtility: JoyCaptionBeta1`、`LayerUtility: LoadJoyCaptionBeta1Model`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 
@@ -63,6 +65,4 @@ discoveries: [次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

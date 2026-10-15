@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2 图生视频+全节点注释_2060385650007957506.json
 hash: 8d22720047a9b259
-coverage: 0.4375
-learned_at: 2026-10-11 19:49:45
+coverage: 0.5
+learned_at: 2026-10-15 22:47:34
 nodes: [UNETLoader, UNETLoader, CLIPLoader, CLIPTextEncode, CreateVideo, VAEDecode, VAELoader, SaveVideo, KSamplerAdvanced, INTConstant, PrimitiveFloat, MathExpression|pysssss, PathchSageAttentionKJ, CFGZeroStar, LayerUtility: ImageScaleByAspectRatio V2, INTConstant, ModelSamplingSD3, WanImageToVideo, KSamplerAdvanced, ModelSamplingSD3, LoadImage, CR Text, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, LoadImage, LoadImage, CLIPTextEncode]
 patterns: []
-missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss]
+missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2 图生视频+全节点注释_2060385650007957506.json
@@ -84,16 +83,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **44%**（21/48）
+覆盖率 **50%**（24/48）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`CreateVideo`、`VAEDecode`、`VAELoader`、`SaveVideo`、`KSamplerAdvanced`、`INTConstant`、`PathchSageAttentionKJ`、`CFGZeroStar`、`ModelSamplingSD3`、`WanImageToVideo`、`LoadImage`
-
-**缺卡**（3）：`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`
+**有卡**：`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`CreateVideo`、`VAEDecode`、`VAELoader`、`SaveVideo`、`KSamplerAdvanced`、`INTConstant`、`MathExpression|pysssss`、`PathchSageAttentionKJ`、`CFGZeroStar`、`LayerUtility: ImageScaleByAspectRatio V2`、`ModelSamplingSD3`、`WanImageToVideo`、`LoadImage`、`CR Text`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CFGZeroStar
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

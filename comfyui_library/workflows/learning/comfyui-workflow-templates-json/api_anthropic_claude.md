@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_anthropic_cl
 hash: 6f59c16e4d0feef0
 official: true
 coverage: 0.666667
-learned_at: 2026-10-10 22:43:06
+learned_at: 2026-10-15 22:24:47
 nodes: [LoadImage, PreviewAny, ClaudeNode]
 patterns: []
 missing: []

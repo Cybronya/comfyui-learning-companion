@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/首尾帧视频生成｜LTX 2.5文生图生视频工作流_2088155779974127617.json
 hash: 24146d52f511bdff
 coverage: 0.838235
-learned_at: 2026-10-11 20:53:56
+learned_at: 2026-10-15 22:49:07
 nodes: [LTXVConcatAVLatent, LTXVAudioVAEDecode, LTXVSeparateAVLatent, LTXVAddGuide, ManualSigmas, LTXVAddGuide, LTXVEmptyLatentAudio, LTXVCropGuides, EmptyLTXVLatentVideo, SamplerCustomAdvanced, LTXVConditioning, SamplerEulerAncestral, RandomNoise, CLIPTextEncode, GetImageSize, LTXVDualCFGGuider, PrimitiveInt, PrimitiveInt, PrimitiveInt, TextGenerateLTX2Prompt, PrimitiveBoolean, UNETLoader, VAELoader, VAELoader, CLIPTextEncode, LTXVPreprocess, ResizeImageMaskNode, ResizeImageMaskNode, LTXVPreprocess, VHS_VideoCombine, ComfyMathExpression, ComfyMathExpression, VAEDecodeTiled, ComfySwitchNode, PreviewAny, PrimitiveStringMultiline, LoadImage, LoadImage, CLIPLoader, CLIPLoader, PrimitiveInt, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

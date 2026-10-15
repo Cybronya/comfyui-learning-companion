@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/（自用）Wan2.2 All-in-one V9.1+CineScale文生视频_1959492706500292610.json
 hash: c622e8a79138b4ec
-coverage: 0.826087
-learned_at: 2026-10-10 23:14:40
+coverage: 0.869565
+learned_at: 2026-10-15 22:49:12
 nodes: [ModelSamplingSD3, VHS_VideoCombine, SaveLatent, EmptyHunyuanLatentVideo, LoadImage, SaveImage, VAEDecode, Note, Note, Note, CLIPLoader, JWInteger, CheckpointLoaderSimple, LoraLoaderModelOnly, PathchSageAttentionKJ, KSampler, LoraLoaderModelOnly, JWInteger, JWInteger, CLIPTextEncode, CLIPTextEncode, CR Prompt Text, JWInteger]
 patterns: []
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-t2v-rapid-aio-nsfw-v7.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 620183626160808, "steps": 4}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/（自用）Wan2.2 All-in-one V9.1+CineScale文生视频_1959492706500292610.json
@@ -61,11 +61,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **83%**（19/23）
+覆盖率 **87%**（20/23）
 
-**有卡**：`ModelSamplingSD3`、`VHS_VideoCombine`、`SaveLatent`、`EmptyHunyuanLatentVideo`、`LoadImage`、`SaveImage`、`VAEDecode`、`CLIPLoader`、`JWInteger`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`KSampler`、`CLIPTextEncode`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`ModelSamplingSD3`、`VHS_VideoCombine`、`SaveLatent`、`EmptyHunyuanLatentVideo`、`LoadImage`、`SaveImage`、`VAEDecode`、`CLIPLoader`、`JWInteger`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`KSampler`、`CLIPTextEncode`、`CR Prompt Text`
 
 **用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、SaveLatent
 
@@ -76,5 +74,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

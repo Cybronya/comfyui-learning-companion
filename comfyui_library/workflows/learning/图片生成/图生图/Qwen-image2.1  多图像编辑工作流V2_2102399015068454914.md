@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1  多图像编辑工作流V2_2102399015068454914.json
 hash: d91eec86807c1bc3
-coverage: 0.863636
-learned_at: 2026-10-10 20:48:09
+coverage: 0.909091
+learned_at: 2026-10-15 22:25:24
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, ComfySwitchNode, QwenImage21Cache, VAEDecode, TextEncodeQwenImage21, SaveImage, CLIPLoader, BatchImagesNode, KSampler, PreviewAny, TextGenerateLTX2Prompt, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CR Text, ResolutionSelector]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 278486116395680, "steps": 25, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen-image2.1  多图像编辑工作流V2_2102399015068454914.json
@@ -61,14 +60,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **86%**（19/22）
+覆盖率 **91%**（20/22）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`QwenImage21Cache`、`VAEDecode`、`TextEncodeQwenImage21`、`SaveImage`、`BatchImagesNode`、`KSampler`、`TextGenerateLTX2Prompt`、`LoadImage`、`ResolutionSelector`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`QwenImage21Cache`、`VAEDecode`、`TextEncodeQwenImage21`、`SaveImage`、`BatchImagesNode`、`KSampler`、`TextGenerateLTX2Prompt`、`LoadImage`、`CR Text`、`ResolutionSelector`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

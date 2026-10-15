@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/seedance1.0_2044609453537890306.json
 hash: 6bfaab22c491de00
 coverage: 1
-learned_at: 2026-10-11 19:49:44
+learned_at: 2026-10-15 22:47:31
 nodes: [LoadImage, RH_Jimeng_Image2Video_V2, SaveVideo, LoadImage, RH_Jimeng_Image2Video_V2, SaveVideo, RH_SeedanceV15ProImageToVideo, RH_Doubao_Seedance_1_5_Pro_Fast, LoadImage, LoadImage, SaveVideo, LoadImage, RH_Jimeng_Image2Video_V2, SaveVideo]
 patterns: []
 missing: []

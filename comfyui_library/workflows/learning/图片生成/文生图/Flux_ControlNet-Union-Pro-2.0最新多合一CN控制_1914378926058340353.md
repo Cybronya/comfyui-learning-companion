@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json
 hash: 92d0233540184726
-coverage: 0.787879
-learned_at: 2026-10-10 20:58:36
+coverage: 0.909091
+learned_at: 2026-10-15 22:26:26
 nodes: [UNETLoader, DualCLIPLoader, FluxGuidance, CLIPTextEncode, KSampler, VAEDecode, ImageScaleBy, VAEEncode, VAELoader, VAEDecode, SaveImage, ImageResizeKJ, UpscaleModelLoader, UltimateSDUpscale, HEDPreprocessor, MiDaS-DepthMapPreprocessor, CannyEdgePreprocessor, ControlNetLoader, ControlNetApplyAdvanced, CLIPTextEncode, Image Switch (JPS), PreviewImage, SaveImage, SaveImage, EmptySD3LatentImage, DWPreprocessor, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, KSampler, LayerUtility: TextBox, SetUnionControlNetType, Note, Note]
 patterns: [image_to_image]
-missing: [Image Switch (JPS), LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextBox, MiDaS-DepthMapPreprocessor]
+missing: []
 parameters: {"cfg": 1, "controlnet_strength": 0.8000000000000002, "denoise": 0.4000000000000001, "sampler_name": "euler", "scheduler": "beta", "seed": 378813125626722, "steps": 20}
-discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `MiDaS-DepthMapPreprocessor` 仅有 ControlNet 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Flux_ControlNet-Union-Pro-2.0最新多合一CN控制_1914378926058340353.json
@@ -21,17 +20,19 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（33 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `FluxGuidance`
-- `CLIPTextEncode`
-- `KSampler`
-- `VAEDecode`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `ImageScaleBy`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `VAELoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `ImageResizeKJ`
 - `UpscaleModelLoader`
@@ -40,8 +41,8 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 - `MiDaS-DepthMapPreprocessor`
 - `CannyEdgePreprocessor`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced`
-- `CLIPTextEncode`
+- `ControlNetApplyAdvanced` ★核心
+- `CLIPTextEncode` ★核心
 - `Image Switch (JPS)`
 - `PreviewImage`
 - `SaveImage`
@@ -50,7 +51,7 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 - `DWPreprocessor`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `LoadImage`
-- `KSampler`
+- `KSampler` ★核心
 - `LayerUtility: TextBox`
 - `SetUnionControlNetType`
 - `Note`
@@ -60,25 +61,18 @@ discoveries: [次要节点 `Image Switch (JPS)` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `controlnet_strength` = `0.8000000000000002`
-- `denoise` = `0.4000000000000001`
-- `sampler_name` = `euler`
-- `scheduler` = `beta`
 - `seed` = `378813125626722`
 - `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `0.4000000000000001`
+- `controlnet_strength` = `0.8000000000000002`
 
 ## 知识
 
-覆盖率 **79%**（26/33）
+覆盖率 **91%**（30/33）
 
-**有卡**：`UNETLoader`、`DualCLIPLoader`、`FluxGuidance`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`ImageScaleBy`、`VAEEncode`、`VAELoader`、`SaveImage`、`ImageResizeKJ`、`UpscaleModelLoader`、`UltimateSDUpscale`、`HEDPreprocessor`、`MiDaS-DepthMapPreprocessor`、`CannyEdgePreprocessor`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`Image Switch (JPS)`、`PreviewImage`、`EmptySD3LatentImage`、`DWPreprocessor`
+**有卡**：`UNETLoader`、`DualCLIPLoader`、`FluxGuidance`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`ImageScaleBy`、`VAEEncode`、`VAELoader`、`SaveImage`、`ImageResizeKJ`、`UpscaleModelLoader`、`UltimateSDUpscale`、`HEDPreprocessor`、`MiDaS-DepthMapPreprocessor`、`CannyEdgePreprocessor`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`Image Switch (JPS)`、`EmptySD3LatentImage`、`DWPreprocessor`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`LayerUtility: TextBox`、`SetUnionControlNetType`
 
-**缺卡**（4）：`Image Switch (JPS)`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: TextBox`、`MiDaS-DepthMapPreprocessor`
-
-## 学习发现
-
-- 次要节点 `Image Switch (JPS)` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
-- 次要节点 `MiDaS-DepthMapPreprocessor` 仅有 ControlNet 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、ControlNetApplyAdvanced

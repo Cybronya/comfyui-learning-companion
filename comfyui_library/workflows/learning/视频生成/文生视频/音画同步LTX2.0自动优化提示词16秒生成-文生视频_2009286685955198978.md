@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/音画同步LTX2.0自动优化提示词16秒生成-文生视频_2009286685955198978.json
 hash: 77e4a1a994aa9b89
 coverage: 0.551282
-learned_at: 2026-10-11 03:07:16
+learned_at: 2026-10-15 22:49:05
 nodes: [ManualSigmas, KSamplerSelect, EmptyImage, LTXVEmptyLatentAudio, ImageScaleBy, GetImageSize, KSamplerSelect, LTXVSeparateAVLatent, Reroute, LTXVAudioVAELoader, Reroute, PrimitiveInt, Reroute, Reroute, Reroute, Reroute, Reroute, CheckpointLoaderSimple, CFGGuider, Reroute, Reroute, Reroute, LTXVConditioning, Reroute, Reroute, EmptyLTXVLatentVideo, Reroute, Reroute, Reroute, LTXVCropGuides, RandomNoise, RandomNoise, LTXVLatentUpsampler, LTXVAudioVAEDecode, LTXVSeparateAVLatent, Reroute, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, JoinStrings, Reroute, Reroute, Reroute, Reroute, Reroute, LTXVConcatAVLatent, Reroute, Reroute, SamplerCustomAdvanced, LTXVScheduler, Fast Groups Bypasser (rgthree), LTXAVTextEncoderLoader, LatentUpscaleModelLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, MarkdownNote, Note, PrimitiveFloat, PrimitiveInt, Int, VHS_VideoCombine, Note, TextInput_, ShowText|pysssss, Qwen3_VQA, MemoryCleaner, easy showAnything, JoinStrings, MemoryCleaner, Int, Int, VAEDecodeTiled, CLIPTextEncode, Reroute, MarkdownNote, TextInput_, MarkdownNote]
 patterns: []
 missing: []

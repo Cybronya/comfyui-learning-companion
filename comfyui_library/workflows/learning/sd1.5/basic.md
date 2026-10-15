@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/sd1.5/basic.json
 hash: a95cceecfb5d5225
 coverage: 1
-learned_at: 2026-10-10 20:47:58
+learned_at: 2026-10-15 22:24:59
 nodes: [CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, EmptyLatentImage, KSampler, VAEDecode, SaveImage]
 patterns: [text_to_image]
 missing: []

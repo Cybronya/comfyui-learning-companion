@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2视频工作流_2013120474653401089.json
 hash: 7832db3c04bb8174
-coverage: 0.944444
-learned_at: 2026-10-11 03:07:13
+coverage: 1
+learned_at: 2026-10-15 22:47:36
 nodes: [CLIPLoader, VAEDecode, CLIPTextEncode, VAELoader, RIFE VFI, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, WanImageToVideo, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, VHS_VideoCombine, UNETLoader, UNETLoader, LoadImage]
 patterns: []
-missing: [RIFE VFI]
+missing: []
 parameters: {"cfg": 12, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2视频工作流_2013120474653401089.json
@@ -54,14 +53,8 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **94%**（17/18）
+覆盖率 **100%**（18/18）
 
-**有卡**：`CLIPLoader`、`VAEDecode`、`CLIPTextEncode`、`VAELoader`、`ModelSamplingSD3`、`KSamplerAdvanced`、`WanImageToVideo`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`UNETLoader`、`LoadImage`
-
-**缺卡**（1）：`RIFE VFI`
+**有卡**：`CLIPLoader`、`VAEDecode`、`CLIPTextEncode`、`VAELoader`、`RIFE VFI`、`ModelSamplingSD3`、`KSamplerAdvanced`、`WanImageToVideo`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`UNETLoader`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识

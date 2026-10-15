@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_pruna_p_vide
 hash: d76db40617604d0a
 official: true
 coverage: 0.75
-learned_at: 2026-10-10 22:45:38
+learned_at: 2026-10-15 22:24:51
 nodes: [PrunaImageToVideoNode, LoadImage, SaveVideo, MarkdownNote]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`PrunaImageToVideoNode`、`LoadImage`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、PrunaImageToVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、PrunaImageToVideoNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、SaveImage

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 终极导演控制台：时间轴多帧与音视频同步全能工作流_2059175869138165762.json
 hash: 55c287988fc76841
 coverage: 1
-learned_at: 2026-10-11 19:49:35
+learned_at: 2026-10-15 22:44:33
 nodes: [LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVCropGuides, LoraLoaderModelOnly, LTXVSeparateAVLatent, DualCLIPLoader, VAELoader, VAELoaderKJ, LatentUpscaleModelLoader, VAELoader, LoraLoaderModelOnly, LTXVChunkFeedForward, LTX2SamplingPreviewOverride, UnetLoaderGGUF, PreviewAudio, LTXVConcatAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, LTXVCropGuides, ConditioningZeroOut, LTXVConditioning, CFGGuider, KSamplerSelect, ManualSigmas, LTXDirectorGuide, SamplerCustomAdvanced, SamplerCustomAdvanced, RandomNoise, CFGGuider, ManualSigmas, KSamplerSelect, LTXDirectorGuide, RandomNoise, LTXDirector, SaveVideo]
 patterns: []
 missing: []

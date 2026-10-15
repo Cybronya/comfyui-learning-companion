@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/WAI Illustrious 随机生图工作流 [SakuragiKiri]_1936438352520581121.json
 hash: 36a814a0d5110e03
-coverage: 0.585366
-learned_at: 2026-10-10 20:59:13
+coverage: 0.878049
+learned_at: 2026-10-15 22:27:33
 nodes: [ttN text, TextRandomMultiline, TextRandomMultiline, TextRandomMultiline, OneButtonPrompt, ttN concat, ImpactStringSelector, TextRandomMultiline, KSampler, LatentUpscaleBy, KSampler, VAEDecode, CR Split String, ttN concat, ttN concat, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, CLIPSetLastLayer, Note, Note, TextInput_, TextInput_, ttN text, Note, TextRandomMultiline, SaveImage, Note, easy showAnything, CR SDXL Aspect Ratio, Int, easy textSwitch, Int, easy textSwitch, easy textSwitch, easy textSwitch, easy textSwitch, Int, Int, Int, Int]
 patterns: []
-missing: [CR Split String, easy textSwitch, easy textSwitch, easy textSwitch, easy textSwitch, easy textSwitch, ttN concat, ttN concat, ttN concat, ttN text, ttN text, CR SDXL Aspect Ratio]
+missing: []
 parameters: {"cfg": 6, "checkpoint": "waiNSFWIllustrious_v140.safetensors", "denoise": 0.7, "sampler_name": "euler_ancestral", "scheduler": "normal", "seed": 888209480784980, "steps": 20}
-discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN text` 知识库中没有该节点类型的任何知识, 次要节点 `ttN text` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/WAI Illustrious 随机生图工作流 [SakuragiKiri]_1936438352520581121.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/WAI Illustrious 随机生图工作流 [SakuragiKiri]_1936438352520581121.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（41 个）：
 - `ttN text`
@@ -30,16 +31,16 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 - `ttN concat`
 - `ImpactStringSelector`
 - `TextRandomMultiline`
-- `KSampler`
+- `KSampler` ★核心
 - `LatentUpscaleBy`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `CR Split String`
 - `ttN concat`
 - `ttN concat`
-- `CheckpointLoaderSimple`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `CLIPSetLastLayer`
 - `Note`
 - `Note`
@@ -66,33 +67,18 @@ discoveries: [次要节点 `CR Split String` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `cfg` = `6`
-- `checkpoint` = `waiNSFWIllustrious_v140.safetensors`
-- `denoise` = `0.7`
-- `sampler_name` = `euler_ancestral`
-- `scheduler` = `normal`
 - `seed` = `888209480784980`
 - `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `normal`
+- `denoise` = `0.7`
+- `checkpoint` = `waiNSFWIllustrious_v140.safetensors`
 
 ## 知识
 
-覆盖率 **59%**（24/41）
+覆盖率 **88%**（36/41）
 
-**有卡**：`ttN text`、`TextRandomMultiline`、`OneButtonPrompt`、`ttN concat`、`ImpactStringSelector`、`KSampler`、`LatentUpscaleBy`、`VAEDecode`、`CR Split String`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`CLIPSetLastLayer`、`Note`、`TextInput_`
+**有卡**：`ttN text`、`TextRandomMultiline`、`OneButtonPrompt`、`ttN concat`、`ImpactStringSelector`、`KSampler`、`LatentUpscaleBy`、`VAEDecode`、`CR Split String`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`CLIPSetLastLayer`、`TextInput_`、`SaveImage`、`CR SDXL Aspect Ratio`、`Int`、`easy textSwitch`
 
-**缺卡**（12）：`CR Split String`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`easy textSwitch`、`ttN concat`、`ttN concat`、`ttN concat`、`ttN text`、`ttN text`、`CR SDXL Aspect Ratio`
-
-## 学习发现
-
-- 次要节点 `CR Split String` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy textSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LatentUpscaleBy、CR SDXL Aspect Ratio、CLIPSetLastLayer、OneButtonPrompt

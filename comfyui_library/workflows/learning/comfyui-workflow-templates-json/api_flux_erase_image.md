@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_flux_erase_i
 hash: f026370a5b1a3756
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:43:51
+learned_at: 2026-10-15 22:24:48
 nodes: [SaveImage, ImageCompare, MarkdownNote, FluxEraseNode, LoadImage]
 patterns: []
 missing: []

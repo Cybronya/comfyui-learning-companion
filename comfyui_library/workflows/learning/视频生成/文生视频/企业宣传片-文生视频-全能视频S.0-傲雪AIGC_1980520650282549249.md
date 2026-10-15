@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/企业宣传片-文生视频-全能视频S.0-傲雪AIGC_1980520650282549249.json
 hash: 231b0c504166f031
 coverage: 0.666667
-learned_at: 2026-10-11 02:45:03
+learned_at: 2026-10-15 22:47:49
 nodes: [RH_Sora2_T2V, LoadImage, PrimitiveStringMultiline, VHS_LoadVideo, SaveVideo, MarkdownNote]
 patterns: []
 missing: []

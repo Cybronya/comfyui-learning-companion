@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
 hash: 5242649755fcadee
-coverage: 0.601093
-learned_at: 2026-10-10 20:58:49
+coverage: 0.715847
+learned_at: 2026-10-15 22:26:54
 nodes: [PreviewImage, ImageCrop, Reroute, PreviewImage, ImageCrop, PreviewImage, PreviewImage, ImageCrop, Reroute, GetNode, SaveImage, SaveImage, SaveImage, SaveImage, String Literal, GetNode, JoinStrings, JoinStrings, GetNode, String Literal, SaveImage, Anything Everywhere, String Literal, JoinStrings, GetNode, JoinStrings, String Literal, Anything Everywhere, Anything Everywhere, JoinStrings, SaveImage, SaveImage, JoinStrings, JoinStrings, SetNode, CLIPTextEncode, CLIPTextEncode, JoinStrings, JoinStrings, SetNode, SamplerCustomAdvanced, SamplerCustomAdvanced, EmptyLatentImage, SetUnionControlNetType, SetUnionControlNetType, SetUnionControlNetType, SetUnionControlNetType, GetNode, SamplerCustomAdvanced, CFGGuider, CFGGuider, CFGGuider, FluxGuidance, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, JoinStrings, ImageCrop, Anything Everywhere, ImageCrop, ImageCrop, ImageResize+, ImageCrop, GetNode, ToDetailerPipe, CFGGuider, VAEDecode, VAEDecode, VAEDecode, VAEDecode, ImageCrop, GetNode, ImageResize+, RandomNoise, CLIPTextEncode, PreviewImage, SamplerCustomAdvanced, String Literal, SetNode, SetNode, SetNode, SetNode, ImageResize+, ImageResize+, AnyLineArtPreprocessor_aux, AnyLineArtPreprocessor_aux, AnyLineArtPreprocessor_aux, AnyLineArtPreprocessor_aux, String Literal, String Literal, String Literal, GetNode, String Literal, GetNode, ModelPassThrough, Anything Everywhere, ControlNetApplySD3, ControlNetApplySD3, ControlNetApplySD3, ControlNetApplySD3, SetNode, Anything Everywhere, BasicScheduler, SetNode, RandomNoise, Anything Everywhere, Note, BasicGuider, FromBasicPipe_v2, UltimateSDUpscale, JoinStrings, SetNode, SaveImage, GetNode, String Literal, SaveImage, SaveImage, SaveImage, JoinStrings, SaveImage, SaveImage, SaveImage, ExpressionEditor, ExpressionEditor, ExpressionEditor, ExpressionEditor, GetNode, String Literal, String Literal, KSamplerSelect, ImageScale, SetUnionControlNetType, VAEDecode, CFGGuider, SetNode, EmptySD3LatentImage, ToBasicPipe, String Literal, LoadImage, GetNode, GetNode, LoraLoader, LoraLoader, Anything Everywhere, PulidFluxEvaClipLoader, Anything Everywhere, SaveImage, String Literal, JoinStrings, SamplerCustomAdvanced, PreviewImage, FaceDetailerPipe, GetNode, SaveImage, Note, SetNode, PrimitiveNode, PrimitiveNode, Note, LoadImage, VAELoader, PrimitiveNode, PrimitiveNode, DualCLIPLoader, ControlNetLoader, Fast Groups Bypasser (rgthree), UpscaleModelLoader, UltralyticsDetectorProvider, ImageScale, ApplyPulidFlux, easy cleanGpuUsed, ModelSamplingFlux, GetNode, PulidFluxInsightFaceLoader, PulidFluxModelLoader, Int Literal, ModelSamplingFlux, ControlNetApplySD3, UNETLoader, easy cleanGpuUsed, ApplyPulidFlux, Anything Everywhere, ImageCrop]
 patterns: [lora]
-missing: [Int Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, easy cleanGpuUsed, easy cleanGpuUsed, ImageResize+, ImageResize+, ImageResize+, ImageResize+]
+missing: []
 parameters: {"batch_size": 1, "controlnet_strength": 0.6300000000000001, "height": 720, "lora_name": "None", "strength_clip": 1, "strength_model": 1, "width": 1280}
-discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/PuLID角色一致性+姿态控制+表情调整在线运行版V2.5s_1906720124529782785.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
 
 **节点**（183 个）：
 - `PreviewImage`
@@ -57,27 +58,27 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `JoinStrings`
 - `JoinStrings`
 - `SetNode`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `JoinStrings`
 - `JoinStrings`
 - `SetNode`
-- `SamplerCustomAdvanced`
-- `SamplerCustomAdvanced`
-- `EmptyLatentImage`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `EmptyLatentImage` ★核心
 - `SetUnionControlNetType`
 - `SetUnionControlNetType`
 - `SetUnionControlNetType`
 - `SetUnionControlNetType`
 - `GetNode`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `CFGGuider`
 - `CFGGuider`
 - `CFGGuider`
 - `FluxGuidance`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `JoinStrings`
 - `ImageCrop`
 - `Anything Everywhere`
@@ -88,17 +89,17 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `GetNode`
 - `ToDetailerPipe`
 - `CFGGuider`
-- `VAEDecode`
-- `VAEDecode`
-- `VAEDecode`
-- `VAEDecode`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
 - `ImageCrop`
 - `GetNode`
 - `ImageResize+`
 - `RandomNoise`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `PreviewImage`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `String Literal`
 - `SetNode`
 - `SetNode`
@@ -118,10 +119,10 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `GetNode`
 - `ModelPassThrough`
 - `Anything Everywhere`
-- `ControlNetApplySD3`
-- `ControlNetApplySD3`
-- `ControlNetApplySD3`
-- `ControlNetApplySD3`
+- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3` ★核心
+- `ControlNetApplySD3` ★核心
 - `SetNode`
 - `Anything Everywhere`
 - `BasicScheduler`
@@ -151,10 +152,10 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `GetNode`
 - `String Literal`
 - `String Literal`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `ImageScale`
 - `SetUnionControlNetType`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CFGGuider`
 - `SetNode`
 - `EmptySD3LatentImage`
@@ -163,15 +164,15 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `LoadImage`
 - `GetNode`
 - `GetNode`
-- `LoraLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
 - `Anything Everywhere`
 - `PulidFluxEvaClipLoader`
 - `Anything Everywhere`
 - `SaveImage`
 - `String Literal`
 - `JoinStrings`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `PreviewImage`
 - `FaceDetailerPipe`
 - `GetNode`
@@ -199,8 +200,8 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 - `PulidFluxModelLoader`
 - `Int Literal`
 - `ModelSamplingFlux`
-- `ControlNetApplySD3`
-- `UNETLoader`
+- `ControlNetApplySD3` ★核心
+- `UNETLoader` ★核心
 - `easy cleanGpuUsed`
 - `ApplyPulidFlux`
 - `Anything Everywhere`
@@ -210,42 +211,18 @@ discoveries: [次要节点 `Int Literal` 知识库中没有该节点类型的任
 
 ## 关键参数
 
+- `width` = `1280`
+- `height` = `720`
 - `batch_size` = `1`
 - `controlnet_strength` = `0.6300000000000001`
-- `height` = `720`
 - `lora_name` = `None`
-- `strength_clip` = `1`
 - `strength_model` = `1`
-- `width` = `1280`
+- `strength_clip` = `1`
 
 ## 知识
 
-覆盖率 **60%**（110/183）
+覆盖率 **72%**（131/183）
 
-**有卡**：`PreviewImage`、`ImageCrop`、`Reroute`、`GetNode`、`SaveImage`、`String Literal`、`JoinStrings`、`Anything Everywhere`、`SetNode`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`SetUnionControlNetType`、`CFGGuider`、`FluxGuidance`、`ImageResize+`、`ToDetailerPipe`、`VAEDecode`、`RandomNoise`、`AnyLineArtPreprocessor_aux`、`ModelPassThrough`、`ControlNetApplySD3`、`BasicScheduler`、`Note`、`BasicGuider`、`FromBasicPipe_v2`、`UltimateSDUpscale`
+**有卡**：`ImageCrop`、`SaveImage`、`String Literal`、`JoinStrings`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`SetUnionControlNetType`、`CFGGuider`、`FluxGuidance`、`ImageResize+`、`ToDetailerPipe`、`VAEDecode`、`RandomNoise`、`AnyLineArtPreprocessor_aux`、`ModelPassThrough`、`ControlNetApplySD3`、`BasicScheduler`、`BasicGuider`、`FromBasicPipe_v2`、`UltimateSDUpscale`、`ExpressionEditor`、`KSamplerSelect`、`ImageScale`、`EmptySD3LatentImage`、`ToBasicPipe`、`LoadImage`、`LoraLoader`、`PulidFluxEvaClipLoader`、`FaceDetailerPipe`、`VAELoader`、`DualCLIPLoader`、`ControlNetLoader`、`UpscaleModelLoader`、`UltralyticsDetectorProvider`、`ApplyPulidFlux`、`easy cleanGpuUsed`、`ModelSamplingFlux`、`PulidFluxInsightFaceLoader`、`PulidFluxModelLoader`、`Int Literal`、`UNETLoader`
 
-**缺卡**（21）：`Int Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`ImageResize+`、`ImageResize+`、`ImageResize+`、`ImageResize+`
-
-## 学习发现
-
-- 次要节点 `Int Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetLoader、SetUnionControlNetType

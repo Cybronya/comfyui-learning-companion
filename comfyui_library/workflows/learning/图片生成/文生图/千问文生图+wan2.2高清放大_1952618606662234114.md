@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
 hash: bf9ec881ea959f0a
-coverage: 0.866667
-learned_at: 2026-10-10 20:59:38
+coverage: 0.911111
+learned_at: 2026-10-15 22:28:17
 nodes: [CLIPTextEncode, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoader, KSampler, LoraLoader, UNETLoader, VAEEncode, CLIPLoader, VAELoader, ModelSamplingAuraFlow, CLIPTextEncode, EmptySD3LatentImage, CLIPTextEncode, Reroute, CLIPTextEncode, SaveImage, Image Comparer (rgthree), VAEDecode, CLIPLoader, VAELoader, LoraLoader, UNETLoader, ImageUpscaleWithModel, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, ImageFromBatch, Image Tiled, ImageConcanateOfUtils, KSampler, VAEDecode, ImageConcanateOfUtils, ImageFromBatch, ImageFromBatch, PreviewImage, ImageScaleToTotalPixels, Reroute, SaveImage, UpscaleModelLoader, CR Text]
 patterns: [lora]
-missing: [CR Text, Image Tiled]
+missing: []
 parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors", "sampler_name": "euler", "scheduler": "normal", "seed": 917067538790824, "steps": 20, "strength_clip": 0.4000000000000001, "strength_model": 0.4000000000000001}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/千问文生图+wan2.2高清放大_1952618606662234114.json
@@ -21,31 +20,33 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（45 个）：
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `CFGZeroStarAndInit`
-- `LoraLoader`
-- `KSampler`
-- `LoraLoader`
-- `UNETLoader`
-- `VAEEncode`
+- `LoraLoader` ★核心
+- `KSampler` ★核心
+- `LoraLoader` ★核心
+- `UNETLoader` ★核心
+- `VAEEncode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `EmptySD3LatentImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Reroute`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `SaveImage`
 - `Image Comparer (rgthree)`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoader`
-- `UNETLoader`
+- `LoraLoader` ★核心
+- `UNETLoader` ★核心
 - `ImageUpscaleWithModel`
 - `ImageFromBatch`
 - `ImageFromBatch`
@@ -56,8 +57,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `ImageFromBatch`
 - `Image Tiled`
 - `ImageConcanateOfUtils`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `ImageConcanateOfUtils`
 - `ImageFromBatch`
 - `ImageFromBatch`
@@ -72,25 +73,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `cfg` = `3.5`
-- `denoise` = `1`
 - `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
-- `sampler_name` = `euler`
-- `scheduler` = `normal`
+- `strength_model` = `0.4000000000000001`
+- `strength_clip` = `0.4000000000000001`
 - `seed` = `917067538790824`
 - `steps` = `20`
-- `strength_clip` = `0.4000000000000001`
-- `strength_model` = `0.4000000000000001`
+- `cfg` = `3.5`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **87%**（39/45）
+覆盖率 **91%**（41/45）
 
-**有卡**：`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CFGZeroStarAndInit`、`LoraLoader`、`KSampler`、`UNETLoader`、`VAEEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`Reroute`、`SaveImage`、`Image Comparer (rgthree)`、`VAEDecode`、`ImageUpscaleWithModel`、`ImageFromBatch`、`ImageConcanateOfUtils`、`Image Tiled`
+**有卡**：`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CFGZeroStarAndInit`、`LoraLoader`、`KSampler`、`UNETLoader`、`VAEEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`SaveImage`、`VAEDecode`、`ImageUpscaleWithModel`、`ImageFromBatch`、`ImageConcanateOfUtils`、`Image Tiled`、`ImageScaleToTotalPixels`、`UpscaleModelLoader`、`CR Text`
 
-**缺卡**（2）：`CR Text`、`Image Tiled`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image Tiled` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、CFGZeroStarAndInit、VAEEncode

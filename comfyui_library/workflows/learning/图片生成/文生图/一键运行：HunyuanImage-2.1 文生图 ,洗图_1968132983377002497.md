@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
 hash: 88a5cb694ce73314
-coverage: 0.615385
-learned_at: 2026-10-10 20:59:33
+coverage: 0.846154
+learned_at: 2026-10-15 22:28:08
 nodes: [PreviewImage, KSampler (Efficient), UnetLoaderGGUF, Prompts Everywhere, CLIPTextEncode, CLIPTextEncode, EasyCache, DualCLIPLoader, VAELoader, EmptyHunyuanImageLatent, Note, SaveImage, LayerFilter: HDREffects]
 patterns: []
-missing: [LayerFilter: HDREffects, KSampler (Efficient), Prompts Everywhere]
+missing: []
 parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 472575738928418, "steps": 20}
-discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/一键运行：HunyuanImage-2.1 文生图 ,洗图_1968132983377002497.json
@@ -21,13 +20,15 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
 **节点**（13 个）：
 - `PreviewImage`
-- `KSampler (Efficient)`
-- `UnetLoaderGGUF`
+- `KSampler (Efficient)` ★核心
+- `UnetLoaderGGUF` ★核心
 - `Prompts Everywhere`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `EasyCache`
 - `DualCLIPLoader`
 - `VAELoader`
@@ -38,23 +39,17 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 关键参数
 
-- `cfg` = `3.5`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `472575738928418`
 - `steps` = `20`
+- `cfg` = `3.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **62%**（8/13）
+覆盖率 **85%**（11/13）
 
-**有卡**：`PreviewImage`、`KSampler (Efficient)`、`UnetLoaderGGUF`、`Prompts Everywhere`、`CLIPTextEncode`、`EasyCache`、`DualCLIPLoader`
+**有卡**：`KSampler (Efficient)`、`UnetLoaderGGUF`、`Prompts Everywhere`、`CLIPTextEncode`、`EasyCache`、`DualCLIPLoader`、`VAELoader`、`EmptyHunyuanImageLatent`、`SaveImage`、`LayerFilter: HDREffects`
 
-**缺卡**（3）：`LayerFilter: HDREffects`、`KSampler (Efficient)`、`Prompts Everywhere`
-
-## 学习发现
-
-- 次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识
-- 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：VAELoader、CLIPTextEncode、KSampler (Efficient)、EmptyHunyuanImageLatent、Prompts Everywhere、SaveImage、DualCLIPLoader、UnetLoaderGGUF

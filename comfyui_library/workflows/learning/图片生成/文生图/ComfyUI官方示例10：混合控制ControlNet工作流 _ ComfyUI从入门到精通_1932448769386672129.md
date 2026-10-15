@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/ComfyUI官方示例10：混合控制ControlNet工作流 _ ComfyUI从入门到精通_1932448769386672129.json
 hash: 004aaed7376c8915
 coverage: 1
-learned_at: 2026-10-10 21:26:53
+learned_at: 2026-10-15 22:26:14
 nodes: [ControlNetApplyAdvanced, CLIPTextEncode, CLIPTextEncode, VAEDecode, SaveImage, ControlNetApplyAdvanced, EmptyLatentImage, ControlNetLoader, CheckpointLoaderSimple, VAELoader, ControlNetLoader, LoadImage, LoadImage, KSampler]
 patterns: [text_to_image]
 missing: []
@@ -20,40 +20,44 @@ parameters: {"batch_size": 1, "cfg": 6, "checkpoint": "awpainting_v14.safetensor
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Output → Other
+
 **节点**（14 个）：
-- `ControlNetApplyAdvanced`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `VAEDecode`
+- `ControlNetApplyAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
-- `ControlNetApplyAdvanced`
-- `EmptyLatentImage`
+- `ControlNetApplyAdvanced` ★核心
+- `EmptyLatentImage` ★核心
 - `ControlNetLoader`
-- `CheckpointLoaderSimple`
+- `CheckpointLoaderSimple` ★核心
 - `VAELoader`
 - `ControlNetLoader`
 - `LoadImage`
 - `LoadImage`
-- `KSampler`
+- `KSampler` ★核心
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `6`
-- `checkpoint` = `awpainting_v14.safetensors`
 - `controlnet_strength` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `dpmpp_sde`
-- `scheduler` = `karras`
+- `batch_size` = `1`
+- `checkpoint` = `awpainting_v14.safetensors`
 - `seed` = `498215374689016`
 - `steps` = `20`
-- `width` = `1024`
+- `cfg` = `6`
+- `sampler_name` = `dpmpp_sde`
+- `scheduler` = `karras`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **100%**（14/14）
 
 **有卡**：`ControlNetApplyAdvanced`、`CLIPTextEncode`、`VAEDecode`、`SaveImage`、`EmptyLatentImage`、`ControlNetLoader`、`CheckpointLoaderSimple`、`VAELoader`、`LoadImage`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced

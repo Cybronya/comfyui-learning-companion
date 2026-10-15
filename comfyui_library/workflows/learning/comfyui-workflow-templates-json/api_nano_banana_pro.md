@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_nano_banana_
 hash: 9563f4a1c2cf7d50
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:16
+learned_at: 2026-10-15 22:24:50
 nodes: [GeminiImage2Node, LoadImage, BatchImagesNode, LoadImage, SaveImage]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`GeminiImage2Node`、`LoadImage`、`BatchImagesNode`、`SaveImage`
 
-**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

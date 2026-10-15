@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2056630627348336641.json
 hash: 4b9cde85f70e5e4b
-coverage: 0.515152
-learned_at: 2026-10-10 20:48:11
+coverage: 0.69697
+learned_at: 2026-10-15 22:25:33
 nodes: [SetNode, SetNode, SetNode, easy promptLine, GetNode, GetNode, ModelSamplingAuraFlow, CFGNorm, PlaySound|pysssss, PlaySound|pysssss, INTConstant, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, VAELoader, GetNode, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, VAEEncode, JjkText, SaveImage, FluxKontextMultiReferenceLatentMethod, FluxKontextMultiReferenceLatentMethod, UNETLoader, KSampler, VAEDecode, LayerUtility: PurgeVRAM, SetNode, PlaySound|pysssss, JjkText, LoadImage]
 patterns: [image_to_image]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, easy promptLine]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 195576003938438, "steps": 4}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/ai动漫短剧ai短12种镜头场景生成多角度人物多角度多场景Qwen-multiple-angles版_2056630627348336641.json
@@ -72,11 +72,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **52%**（17/33）
+覆盖率 **70%**（23/33）
 
-**有卡**：`ModelSamplingAuraFlow`、`CFGNorm`、`INTConstant`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`SaveImage`、`FluxKontextMultiReferenceLatentMethod`、`UNETLoader`、`KSampler`、`VAEDecode`、`LoadImage`
-
-**缺卡**（6）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`easy promptLine`
+**有卡**：`easy promptLine`、`ModelSamplingAuraFlow`、`CFGNorm`、`PlaySound|pysssss`、`INTConstant`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`SaveImage`、`FluxKontextMultiReferenceLatentMethod`、`UNETLoader`、`KSampler`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPLoader、LoadImage、CFGNorm
 
@@ -87,10 +85,4 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

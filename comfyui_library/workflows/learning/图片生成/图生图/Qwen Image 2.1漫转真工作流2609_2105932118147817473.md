@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1漫转真工作流2609_2105932118147817473.json
 hash: 790c647ea95280e9
-coverage: 0.73913
-learned_at: 2026-10-10 20:48:08
+coverage: 0.869565
+learned_at: 2026-10-15 22:25:18
 nodes: [孤海注释, JoinStrings, PrimitiveBoolean, ComfySwitchNode, CLIPLoader, VAELoader, LoraLoaderModelOnly, UNETLoader, CLIPLoader, TextEncodeQwenImage21, QwenImage21Cache, VAEDecode, EmptyLatentImage, BatchImagesNode, easy positive, TextGenerate, ShowText|pysssss, SaveImage, LayerUtility: ImageScaleByAspectRatio V2, easy positive, KSampler, LoadImage, ResolutionSelector]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, easy positive, easy positive]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "FlowMatchEulerDiscreteScheduler", "seed": 535254766028910, "steps": 25, "width": 1024}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1漫转真工作流2609_2105932118147817473.json
@@ -62,16 +61,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **74%**（17/23）
+覆盖率 **87%**（20/23）
 
-**有卡**：`JoinStrings`、`PrimitiveBoolean`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`VAEDecode`、`EmptyLatentImage`、`BatchImagesNode`、`TextGenerate`、`SaveImage`、`KSampler`、`LoadImage`、`ResolutionSelector`
-
-**缺卡**（3）：`LayerUtility: ImageScaleByAspectRatio V2`、`easy positive`、`easy positive`
+**有卡**：`JoinStrings`、`PrimitiveBoolean`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`VAEDecode`、`EmptyLatentImage`、`BatchImagesNode`、`easy positive`、`TextGenerate`、`SaveImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSampler`、`LoadImage`、`ResolutionSelector`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识

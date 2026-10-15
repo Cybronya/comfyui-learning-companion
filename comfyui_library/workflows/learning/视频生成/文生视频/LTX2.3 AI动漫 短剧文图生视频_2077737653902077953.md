@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 AI动漫 短剧文图生视频_2077737653902077953.json
 hash: cb188bb208a301aa
-coverage: 0.779412
-learned_at: 2026-10-11 20:38:34
+coverage: 0.867647
+learned_at: 2026-10-15 22:44:57
 nodes: [CFGGuider, KSamplerSelect, SamplerCustomAdvanced, VAELoaderKJ, VAELoader, CLIPTextEncode, CFGGuider, LTX2SamplingPreviewOverride, LTXVConditioning, LTX2_NAG, ImageScaleBy, SimpleMath+, SimpleMath+, CLIPTextEncode, GetImageSize, VAELoader, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVImgToVideoInplace, LTXVImgToVideoInplace, ManualSigmas, KSamplerSelect, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVAudioVAEDecode, LTXVAudioVAEDecode, VAEDecode, VHS_VideoCombine, VAEDecode, Reroute, ComfySwitchNode, VHS_VideoCombine, ManualSigmas, LTXVScheduler, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM V2, LTXVCropGuides, LayerUtility: PurgeVRAM V2, LTXVLatentUpsampler, JoinStrings, RandomNoise, PrimitiveBoolean, ImageScaleToTotalPixels, PrimitiveInt, PrimitiveInt, PrimitiveStringMultiline, EmptyImage, PrimitiveInt, UNETLoader, DualCLIPLoader, LatentUpscaleModelLoader, LoraLoaderModelOnly, PrimitiveBoolean, easy int, easy int, Reroute, ResolutionSelector, GetImageSize, ComfySwitchNode, ImageResizeKJv2, ResizeImagesByLongerEdge, LTXVPreprocess, RandomNoise, LoadImage, PrimitiveStringMultiline]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, SimpleMath+, SimpleMath+, easy int, easy int]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 AI动漫 短剧文图生视频_2077737653902077953.json
@@ -101,19 +100,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **78%**（53/68）
+覆盖率 **87%**（59/68）
 
-**有卡**：`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`VAELoaderKJ`、`VAELoader`、`CLIPTextEncode`、`LTX2SamplingPreviewOverride`、`LTXVConditioning`、`LTX2_NAG`、`ImageScaleBy`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoInplace`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`VHS_VideoCombine`、`LTXVScheduler`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`JoinStrings`、`RandomNoise`、`PrimitiveBoolean`、`ImageScaleToTotalPixels`、`EmptyImage`、`UNETLoader`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`ResolutionSelector`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LoadImage`
-
-**缺卡**（6）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`SimpleMath+`、`easy int`、`easy int`
+**有卡**：`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`VAELoaderKJ`、`VAELoader`、`CLIPTextEncode`、`LTX2SamplingPreviewOverride`、`LTXVConditioning`、`LTX2_NAG`、`ImageScaleBy`、`SimpleMath+`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoInplace`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`VHS_VideoCombine`、`LTXVScheduler`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LayerUtility: PurgeVRAM V2`、`LTXVLatentUpsampler`、`JoinStrings`、`RandomNoise`、`PrimitiveBoolean`、`ImageScaleToTotalPixels`、`EmptyImage`、`UNETLoader`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`easy int`、`ResolutionSelector`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ResolutionSelector、LoadImage、UNETLoader、CFGGuider
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

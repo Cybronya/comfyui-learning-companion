@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA｜极速高动态武戏文戏生成_2106954882283560961.json
 hash: 25b9d634ecd3ee55
-coverage: 0.931034
-learned_at: 2026-10-10 23:00:55
+coverage: 0.942529
+learned_at: 2026-10-15 22:45:26
 nodes: [CLIPLoader, VAELoader, LoadImage, LoadImage, Int, RH_Screenwriter, ComfyMathExpression, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, WujiCleaner, MiniMaxH3SemanticBridgeConfigT8, MiniMaxH3HyperVAE2xLoaderEXPT8, VAEDecode, MiniMaxH3OutputTrimT8, WujiCleaner, MiniMaxH3AVDecodeT8, CM_IntToFloat, VAELoader, PrimitiveStringMultiline, List of strings [Crystools], MiniMaxH3AudioConditioningT8, ResolutionSelector, MiniMaxH3SemanticBridgeApplyT8, ConditioningZeroOut, KSamplerSelect, WujiCleaner, SelfLiftAvatarH3Sampler, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, BlockSparseAttention, H3SigmaRefiner, MiniMaxH3SigmaShift, MiniMaxH3ChunkFeedForwardT8Advanced, LoraLoaderBypassModelOnly, MiniMaxH3VDNRuntimeAuditT8Advanced, LoraLoaderModelOnly, BasicScheduler, LoraLoaderModelOnly, WujiH3PromptEnhancer, VHS_VideoCombine, UNETLoader, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [List of strings [Crystools]]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MIniMax-H3+DSW+LMS+SelfLift+VDN+SLA｜极速高动态武戏文戏生成_2106954882283560961.json
@@ -129,11 +129,9 @@ discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该�
 
 ## 知识
 
-覆盖率 **93%**（81/87）
+覆盖率 **94%**（82/87）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`LoadImage`、`Int`、`RH_Screenwriter`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`WujiCleaner`、`MiniMaxH3SemanticBridgeConfigT8`、`MiniMaxH3HyperVAE2xLoaderEXPT8`、`VAEDecode`、`MiniMaxH3OutputTrimT8`、`MiniMaxH3AVDecodeT8`、`CM_IntToFloat`、`MiniMaxH3AudioConditioningT8`、`ResolutionSelector`、`MiniMaxH3SemanticBridgeApplyT8`、`ConditioningZeroOut`、`KSamplerSelect`、`SelfLiftAvatarH3Sampler`、`LoraLoaderModelOnly`、`BlockSparseAttention`、`H3SigmaRefiner`、`MiniMaxH3SigmaShift`、`MiniMaxH3ChunkFeedForwardT8Advanced`、`LoraLoaderBypassModelOnly`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`BasicScheduler`、`WujiH3PromptEnhancer`、`VHS_VideoCombine`、`UNETLoader`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`List of strings [Crystools]`
+**有卡**：`CLIPLoader`、`VAELoader`、`LoadImage`、`Int`、`RH_Screenwriter`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`WujiCleaner`、`MiniMaxH3SemanticBridgeConfigT8`、`MiniMaxH3HyperVAE2xLoaderEXPT8`、`VAEDecode`、`MiniMaxH3OutputTrimT8`、`MiniMaxH3AVDecodeT8`、`CM_IntToFloat`、`List of strings [Crystools]`、`MiniMaxH3AudioConditioningT8`、`ResolutionSelector`、`MiniMaxH3SemanticBridgeApplyT8`、`ConditioningZeroOut`、`KSamplerSelect`、`SelfLiftAvatarH3Sampler`、`LoraLoaderModelOnly`、`BlockSparseAttention`、`H3SigmaRefiner`、`MiniMaxH3SigmaShift`、`MiniMaxH3ChunkFeedForwardT8Advanced`、`LoraLoaderBypassModelOnly`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`BasicScheduler`、`WujiH3PromptEnhancer`、`VHS_VideoCombine`、`UNETLoader`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
@@ -144,5 +142,4 @@ discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该�
 
 ## 学习发现
 
-- 次要节点 `List of strings [Crystools]` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

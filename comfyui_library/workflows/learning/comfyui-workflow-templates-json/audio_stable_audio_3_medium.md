@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_stable_audio_3_medium.json
 hash: 08a9807262a0cf1a
 official: true
-coverage: 0.25
-learned_at: 2026-10-10 22:47:00
+coverage: 0.5
+learned_at: 2026-10-15 22:24:52
 nodes: [8b66c757-fe2f-4184-91f3-479a19deb565, MarkdownNote, MarkdownNote, SaveAudioAdvanced]
 patterns: []
-missing: [8b66c757-fe2f-4184-91f3-479a19deb565]
-discoveries: [次要节点 `8b66c757-fe2f-4184-91f3-479a19deb565` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/audio_stable_audio_3_medium.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `8b66c757-fe2f-4184-91f3-479a19deb565` 知识库中�
 
 ## 知识
 
-覆盖率 **25%**（1/4）
+覆盖率 **50%**（2/4）
 
-**有卡**：`SaveAudioAdvanced`
+**有卡**：`8b66c757-fe2f-4184-91f3-479a19deb565`、`SaveAudioAdvanced`
 
-**缺卡**（1）：`8b66c757-fe2f-4184-91f3-479a19deb565`
-
-**用到的条目**：SaveAudioAdvanced、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `8b66c757-fe2f-4184-91f3-479a19deb565` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveAudioAdvanced、8b66c757-fe2f-4184-91f3-479a19deb565、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

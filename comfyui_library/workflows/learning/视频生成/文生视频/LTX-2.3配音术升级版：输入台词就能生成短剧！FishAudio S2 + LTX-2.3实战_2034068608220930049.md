@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3配音术升级版：输入台词就能生成短剧！FishAudio S2 + LTX-2.3实战_2034068608220930049.json
 hash: 74c6c505e77e94f2
 coverage: 0.844828
-learned_at: 2026-10-11 03:48:35
+learned_at: 2026-10-15 22:44:43
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, KSamplerSelect, Reroute, CLIPTextEncode, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CLIPTextEncode, CFGGuider, LTXVImgToVideoInplace, PrimitiveInt, SolidMask, LTXVAudioVAELoader, PrimitiveBoolean, ResizeImagesByLongerEdge, LTXVPreprocess, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, PrimitiveInt, TrimAudioDuration, LTXVAudioVAEEncode, LTXVConcatAVLatent, SetLatentNoiseMask, LoraLoaderModelOnly, CheckpointLoaderSimple, ResizeImageMaskNode, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, PrimitiveInt, ComfyMathExpression, PrimitiveFloat, VAEDecodeTiled, LTXVAudioVAEDecode, SaveVideo, MarkdownNote, MarkdownNote, LoadAudio, LoadAudio, LoadImage, LoadAudio, PrimitiveStringMultiline, SaveAudio, FishS2MultiSpeakerTTS, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []

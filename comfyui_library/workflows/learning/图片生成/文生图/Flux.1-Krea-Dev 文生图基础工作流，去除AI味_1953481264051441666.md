@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
 hash: a8b3d237a3f61558
-coverage: 0.733333
-learned_at: 2026-10-10 20:58:36
+coverage: 0.8
+learned_at: 2026-10-15 22:26:25
 nodes: [MarkdownNote, MarkdownNote, EmptyLatentImage, VAELoader, DualCLIPLoader, UNETLoader, ConditioningZeroOut, easy showAnything, CLIPTextEncode, RH_Translator, KSampler, LoraLoaderModelOnly, VAEDecode, SaveImage, Text Multiline]
 patterns: [text_to_image]
-missing: [Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 1047313144882271, "steps": 30, "width": 1024}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Flux.1-Krea-Dev 文生图基础工作流，去除AI味_1953481264051441666.json
@@ -21,20 +20,22 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（15 个）：
 - `MarkdownNote`
 - `MarkdownNote`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `VAELoader`
 - `DualCLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `ConditioningZeroOut`
 - `easy showAnything`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `RH_Translator`
-- `KSampler`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
+- `KSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `Text Multiline`
 
@@ -42,24 +43,20 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1536`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `1047313144882271`
 - `steps` = `30`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **73%**（11/15）
+覆盖率 **80%**（12/15）
 
-**有卡**：`MarkdownNote`、`EmptyLatentImage`、`VAELoader`、`DualCLIPLoader`、`UNETLoader`、`ConditioningZeroOut`、`easy showAnything`、`CLIPTextEncode`、`RH_Translator`、`KSampler`
+**有卡**：`EmptyLatentImage`、`VAELoader`、`DualCLIPLoader`、`UNETLoader`、`ConditioningZeroOut`、`CLIPTextEncode`、`RH_Translator`、`KSampler`、`LoraLoaderModelOnly`、`VAEDecode`、`SaveImage`、`Text Multiline`
 
-**缺卡**（1）：`Text Multiline`
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、UNETLoader

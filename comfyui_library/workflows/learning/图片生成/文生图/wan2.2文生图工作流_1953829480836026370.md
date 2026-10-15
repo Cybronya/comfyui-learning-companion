@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2文生图工作流_1953829480836026370.json
 hash: ec1af5b27ac967a6
 coverage: 1
-learned_at: 2026-10-10 20:59:27
+learned_at: 2026-10-15 22:27:58
 nodes: [VAELoader, UNETLoader, UNETLoader, CLIPLoader, KSamplerAdvanced, EmptyHunyuanLatentVideo, ModelSamplingSD3, ModelSamplingSD3, VAEDecode, SaveImage, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced]
 patterns: []
 missing: []
@@ -20,32 +20,36 @@ parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（13 个）：
 - `VAELoader`
-- `UNETLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 - `CLIPLoader`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `EmptyHunyuanLatentVideo`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `KSamplerAdvanced`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
 
 ## 关键参数
 
-- `cfg` = `20`
-- `denoise` = `simple`
-- `sampler_name` = `3.5`
-- `scheduler` = `euler`
 - `seed` = `disable`
 - `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`VAELoader`、`UNETLoader`、`CLIPLoader`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo、SaveImage

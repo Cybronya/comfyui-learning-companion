@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax_h3_i2v_latent+upscale+去油光Lora工作流_2093179059550380034.json
 hash: f5f35fae6290305a
-coverage: 0.809524
-learned_at: 2026-10-11 21:30:27
+coverage: 0.833333
+learned_at: 2026-10-15 22:46:47
 nodes: [VAEDecode, ManualSigmas, KSamplerSelect, ManualSigmas, MarkdownNote, BasicGuider, BasicGuider, VAEDecodeAudio, SamplerCustomAdvanced, ComfyMathExpression, ManualSigmas, VHS_VideoCombine, RandomNoise, MiniMaxH3ImageToVideo, SamplerCustomAdvanced, ResolutionSelector, PrimitiveFloat, MarkdownNote, SplitSigmas, BasicScheduler, MiniMaxH3ImageToVideo, LTXVSeparateAVLatent, ModelPreviewOverrideKJ, MarkdownNote, LoraLoaderModelOnly, UNETLoader, PrimitiveStringMultiline, CLIPLoader, VAELoader, VAELoader, ResolutionSelector, PrimitiveFloat, MinimaxH3LatentUpscaler3D, LTXVConcatAVLatent, Note, Label (rgthree), LoadImage, ImageResizeKJv2, VAEDecodeAudio, LoraLoaderModelOnly, MiniMaxH3SigmaShift, ModelAttentionBackend]
 patterns: []
-missing: [Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Minimax_h3_i2v_latent+upscale+去油光Lora工作流_2093179059550380034.json
@@ -68,14 +67,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **81%**（34/42）
+覆盖率 **83%**（35/42）
 
-**有卡**：`VAEDecode`、`ManualSigmas`、`KSamplerSelect`、`BasicGuider`、`VAEDecodeAudio`、`SamplerCustomAdvanced`、`ComfyMathExpression`、`VHS_VideoCombine`、`RandomNoise`、`MiniMaxH3ImageToVideo`、`ResolutionSelector`、`SplitSigmas`、`BasicScheduler`、`LTXVSeparateAVLatent`、`ModelPreviewOverrideKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`MinimaxH3LatentUpscaler3D`、`LTXVConcatAVLatent`、`LoadImage`、`ImageResizeKJv2`、`MiniMaxH3SigmaShift`、`ModelAttentionBackend`
-
-**缺卡**（1）：`Label (rgthree)`
+**有卡**：`VAEDecode`、`ManualSigmas`、`KSamplerSelect`、`BasicGuider`、`VAEDecodeAudio`、`SamplerCustomAdvanced`、`ComfyMathExpression`、`VHS_VideoCombine`、`RandomNoise`、`MiniMaxH3ImageToVideo`、`ResolutionSelector`、`SplitSigmas`、`BasicScheduler`、`LTXVSeparateAVLatent`、`ModelPreviewOverrideKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`MinimaxH3LatentUpscaler3D`、`LTXVConcatAVLatent`、`Label (rgthree)`、`LoadImage`、`ImageResizeKJv2`、`MiniMaxH3SigmaShift`、`ModelAttentionBackend`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

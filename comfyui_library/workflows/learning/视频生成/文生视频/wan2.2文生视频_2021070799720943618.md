@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频_2021070799720943618.json
 hash: 09c941e65e00ef90
 coverage: 0.923077
-learned_at: 2026-10-11 03:16:51
+learned_at: 2026-10-15 22:47:36
 nodes: [LoadImage, CLIPTextEncode, LoadImage, WanVideoVACEStartToEndFrame, ModelSamplingSD3, PrimitiveInt, WanVaceToVideo, CheckpointLoaderSimple, KSampler, VAEDecode, SaveImage, CLIPTextEncode, DuckHideNode]
 patterns: []
 missing: []

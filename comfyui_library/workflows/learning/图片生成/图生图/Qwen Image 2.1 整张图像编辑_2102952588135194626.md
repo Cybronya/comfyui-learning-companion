@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json
 hash: e1e836ae176c978e
-coverage: 0.789474
-learned_at: 2026-10-10 20:48:05
+coverage: 0.894737
+learned_at: 2026-10-15 22:25:11
 nodes: [VAELoader, QwenPERewriteT8, easy showAnything, QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, VAEDecode, easy cleanGpuUsed, EmptyLatentImage, ComfySwitchNode, LoadImage, ResolutionSelector, CR Prompt Text, SaveImage, QwenImage21BlockCacheT8, QwenImage21SageAttentionT8, UNETLoader, QwenImage21SpectrumT8, KSampler]
 patterns: []
-missing: [easy cleanGpuUsed, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 19960422, "steps": 4, "width": 1024}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 整张图像编辑_2102952588135194626.json
@@ -59,11 +59,9 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **79%**（15/19）
+覆盖率 **89%**（17/19）
 
-**有卡**：`VAELoader`、`QwenPERewriteT8`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAEDecode`、`EmptyLatentImage`、`LoadImage`、`ResolutionSelector`、`SaveImage`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`UNETLoader`、`QwenImage21SpectrumT8`、`KSampler`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
+**有卡**：`VAELoader`、`QwenPERewriteT8`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAEDecode`、`easy cleanGpuUsed`、`EmptyLatentImage`、`LoadImage`、`ResolutionSelector`、`CR Prompt Text`、`SaveImage`、`QwenImage21BlockCacheT8`、`QwenImage21SageAttentionT8`、`UNETLoader`、`QwenImage21SpectrumT8`、`KSampler`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
@@ -74,6 +72,4 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 学习发现
 
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

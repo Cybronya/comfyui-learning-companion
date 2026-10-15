@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax H3多参 Taomate 3 steplora 二采生视频_2100938444443832322.json
 hash: 176203c9bc4860a8
 coverage: 0.85
-learned_at: 2026-10-11 22:12:44
+learned_at: 2026-10-15 22:46:36
 nodes: [VAELoader, VAELoader, VAEDecode, VAEDecodeAudio, LTXVConcatAVLatent, ModelPreviewOverrideKJ, VAEDecodeAudio, SamplerCustomAdvanced, KSamplerSelect, VAEDecode, MarkdownNote, MarkdownNote, UNETLoader, RandomNoise, ComfyMathExpression, CreateVideo, SaveVideo, LoadImage, PrimitiveFloat, MiniMaxH3SigmaShift, ModelAttentionBackend, BasicGuider, ManualSigmas, MinimaxH3LatentUpscaler3D, ClownsharKSampler_Beta, ClownsharKSampler_Beta, MarkdownNote, MarkdownNote, SeedGenerator, ConditioningZeroOut, LTXVSeparateAVLatent, MiniMaxH3ReferenceToVideo, Text, PrimitiveFloat, ResolutionSelector, LoraLoaderModelOnly, LoraLoaderModelOnly, CreateVideo, SaveVideo, CLIPLoader]
 patterns: []
 missing: []

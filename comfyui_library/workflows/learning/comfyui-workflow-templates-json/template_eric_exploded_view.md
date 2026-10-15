@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_eric_ex
 hash: ebd7f393a99d4fd1
 official: true
 coverage: 0.875
-learned_at: 2026-10-10 22:49:00
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, LoadImage, SaveImage, ByteDanceFirstLastFrameNode, SaveVideo, ByteDanceFirstLastFrameNode, SaveVideo, Note, SaveVideo, GetVideoComponents, GetVideoComponents, Note, BatchImagesNode, CreateVideo, GeminiNanoBanana2V2, GeminiNanoBanana2V2]
 patterns: []
 missing: []

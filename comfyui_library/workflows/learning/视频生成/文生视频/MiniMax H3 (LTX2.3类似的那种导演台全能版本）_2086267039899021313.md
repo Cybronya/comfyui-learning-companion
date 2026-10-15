@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 (LTX2.3类似的那种导演台全能版本）_2086267039899021313.json
 hash: 1f84aadf1e62dcb9
 coverage: 0.75
-learned_at: 2026-10-11 20:53:39
+learned_at: 2026-10-15 22:45:28
 nodes: [CLIPLoader, VAELoader, VAELoader, PreviewAny, CreateVideo, MarkdownNote, SaveVideo, UNETLoader, PathchSageAttentionKJ, MiniMaxH3MemoryEfficientSageAttentionPatch, MarkdownNote, MiniMaxH3Director]
 patterns: []
 missing: []

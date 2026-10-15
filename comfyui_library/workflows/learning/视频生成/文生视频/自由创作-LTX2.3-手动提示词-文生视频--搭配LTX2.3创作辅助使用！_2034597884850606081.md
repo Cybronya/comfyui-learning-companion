@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/自由创作-LTX2.3-手动提示词-文生视频--搭配LTX2.3创作辅助使用！_2034597884850606081.json
 hash: e6175f46060cd079
-coverage: 0.755556
-learned_at: 2026-10-11 03:48:40
+coverage: 0.822222
+learned_at: 2026-10-15 22:49:00
 nodes: [LTXVAudioVAELoader, CLIPTextEncode, PreviewAny, CFGGuider, LTXVScheduler, LTXVCropGuides, LTXVConcatAVLatent, KSampler, LTXVSeparateAVLatent, CreateVideo, LTXVLatentUpsampler, LatentUpscaleModelLoader, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, KSamplerSelect, LTXVConcatAVLatent, LTXVConditioning, RandomNoise, VAEDecodeTiled, VAEDecode, LTXVAudioVAEDecode, DualCLIPLoader, PrimitiveInt, PrimitiveFloat, ImageScaleBy, GetImageSize, SaveVideo, LoraLoaderModelOnly, CheckpointLoaderSimple, Note, Note, LTXAVTextEncoderLoader, RH_LLMAPI_Pro_Node, easy showAnything, EmptyImage, CR Prompt Text, CR Prompt Text, TextGenerateLTX2Prompt, CR Prompt Text, PrimitiveInt, LoraLoaderModelOnly, CLIPTextEncode, EmptyLTXVLatentVideo, Note]
 patterns: []
-missing: [CR Prompt Text, CR Prompt Text, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 259213581619276, "steps": 4, "width": 97}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/自由创作-LTX2.3-手动提示词-文生视频--搭配LTX2.3创作辅助使用！_2034597884850606081.json
@@ -86,11 +86,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **76%**（34/45）
+覆盖率 **82%**（37/45）
 
-**有卡**：`LTXVAudioVAELoader`、`CLIPTextEncode`、`CFGGuider`、`LTXVScheduler`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`KSampler`、`LTXVSeparateAVLatent`、`CreateVideo`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVConditioning`、`RandomNoise`、`VAEDecodeTiled`、`VAEDecode`、`LTXVAudioVAEDecode`、`DualCLIPLoader`、`ImageScaleBy`、`GetImageSize`、`SaveVideo`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`RH_LLMAPI_Pro_Node`、`EmptyImage`、`TextGenerateLTX2Prompt`、`EmptyLTXVLatentVideo`
-
-**缺卡**（3）：`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LTXVAudioVAELoader`、`CLIPTextEncode`、`CFGGuider`、`LTXVScheduler`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`KSampler`、`LTXVSeparateAVLatent`、`CreateVideo`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVConditioning`、`RandomNoise`、`VAEDecodeTiled`、`VAEDecode`、`LTXVAudioVAEDecode`、`DualCLIPLoader`、`ImageScaleBy`、`GetImageSize`、`SaveVideo`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`RH_LLMAPI_Pro_Node`、`EmptyImage`、`CR Prompt Text`、`TextGenerateLTX2Prompt`、`EmptyLTXVLatentVideo`
 
 **用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
 
@@ -101,7 +99,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

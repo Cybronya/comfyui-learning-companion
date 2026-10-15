@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/高质量高速度Minimax+H3-self-lift双采-BF16+sage+4步加速lora_2098043805441286146.json
 hash: 8b947c2b69862952
-coverage: 0.826087
-learned_at: 2026-10-11 21:42:03
+coverage: 0.869565
+learned_at: 2026-10-15 22:49:09
 nodes: [ConditioningZeroOut, MiniMaxH3AVDecodeT8, LayerUtility: PurgeVRAM V2, H3SigmaRefiner, CLIPLoader, ComfyMathExpression, KSamplerSelect, MiniMaxChunkFeedForward, VAELoader, VAELoader, LoraLoaderModelOnly, LoadImage, MarkdownNote, PrimitiveStringMultiline, VHS_VideoCombine, MiniMaxH3MemoryEfficientSageAttentionPatch, BasicScheduler, SelfLiftH3Sampler, ResolutionSelector, PrimitiveFloat, UNETLoader, MiniMaxLowVRAMAttention, MiniMaxH3AudioConditioningT8]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/高质量高速度Minimax+H3-self-lift双采-BF16+sage+4步加速lora_2098043805441286146.json
@@ -49,14 +48,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **83%**（19/23）
+覆盖率 **87%**（20/23）
 
-**有卡**：`ConditioningZeroOut`、`MiniMaxH3AVDecodeT8`、`H3SigmaRefiner`、`CLIPLoader`、`ComfyMathExpression`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`VAELoader`、`LoraLoaderModelOnly`、`LoadImage`、`VHS_VideoCombine`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`BasicScheduler`、`SelfLiftH3Sampler`、`ResolutionSelector`、`UNETLoader`、`MiniMaxLowVRAMAttention`、`MiniMaxH3AudioConditioningT8`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM V2`
+**有卡**：`ConditioningZeroOut`、`MiniMaxH3AVDecodeT8`、`LayerUtility: PurgeVRAM V2`、`H3SigmaRefiner`、`CLIPLoader`、`ComfyMathExpression`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`VAELoader`、`LoraLoaderModelOnly`、`LoadImage`、`VHS_VideoCombine`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`BasicScheduler`、`SelfLiftH3Sampler`、`ResolutionSelector`、`UNETLoader`、`MiniMaxLowVRAMAttention`、`MiniMaxH3AudioConditioningT8`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识

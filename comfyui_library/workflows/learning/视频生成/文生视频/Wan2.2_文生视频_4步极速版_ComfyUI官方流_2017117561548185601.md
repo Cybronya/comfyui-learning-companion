@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_文生视频_4步极速版_ComfyUI官方流_2017117561548185601.json
 hash: 9c5434dbb4f2fdd8
 coverage: 0.9375
-learned_at: 2026-10-11 03:07:12
+learned_at: 2026-10-15 22:47:13
 nodes: [ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, VAEDecode, CLIPTextEncode, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoader, CLIPLoader, VHS_VideoCombine, EmptyHunyuanLatentVideo, KSamplerAdvanced, KSamplerAdvanced, MarkdownNote]
 patterns: []
 missing: []

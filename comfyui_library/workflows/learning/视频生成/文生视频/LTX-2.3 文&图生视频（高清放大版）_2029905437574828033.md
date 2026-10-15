@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3 文&图生视频（高清放大版）_2029905437574828033.json
 hash: 4b43d1c212c9d542
-coverage: 0.56
-learned_at: 2026-10-11 03:16:45
+coverage: 0.586667
+learned_at: 2026-10-15 22:44:39
 nodes: [LTXVAudioVAEDecode, PrimitiveFloat, LTXAVTextEncoderLoader, CLIPTextEncode, GetNode, CLIPTextEncode, SimpleMath+, SetNode, SetNode, GetNode, GetNode, LTXVPreprocess, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, GetNode, GetNode, CM_FloatToInt, CheckpointLoaderSimple, SetNode, LTXVAudioVAELoader, SetNode, GetNode, GetNode, easy cleanGpuUsed, GetNode, GetNode, LTXVConditioning, SamplerCustomAdvanced, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, GetNode, GetNode, ImageResizeKJv2, SetNode, SetNode, PrimitiveBoolean, SetNode, LoraLoaderModelOnly, SetNode, LatentUpscaleModelLoader, SetNode, LTXVLatentUpsampler, GetNode, SetNode, GetNode, ImageScaleBy, VAEDecodeTiled, TTResolutionSelector, GetNode, CFGGuider, KSamplerSelect, ManualSigmas, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, LTXVConcatAVLatent, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, GetNode, GetNode, easy showAnything, RH_LLMAPI_Pro_Node, Int, VHS_VideoCombine, Text, LoadImage, TextGenerateLTX2Prompt, PreviewAny, DualCLIPLoader, Note]
 patterns: []
-missing: [SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3 文&图生视频（高清放大版）_2029905437574828033.json
@@ -109,15 +108,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **56%**（42/75）
+覆盖率 **59%**（44/75）
 
-**有卡**：`LTXVAudioVAEDecode`、`LTXAVTextEncoderLoader`、`CLIPTextEncode`、`LTXVPreprocess`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`CM_FloatToInt`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXVConditioning`、`SamplerCustomAdvanced`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`ImageResizeKJv2`、`PrimitiveBoolean`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`ImageScaleBy`、`VAEDecodeTiled`、`TTResolutionSelector`、`LTXVSeparateAVLatent`、`RH_LLMAPI_Pro_Node`、`Int`、`VHS_VideoCombine`、`Text`、`LoadImage`、`TextGenerateLTX2Prompt`、`DualCLIPLoader`
-
-**缺卡**（2）：`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`LTXVAudioVAEDecode`、`LTXAVTextEncoderLoader`、`CLIPTextEncode`、`SimpleMath+`、`LTXVPreprocess`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`CM_FloatToInt`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`easy cleanGpuUsed`、`LTXVConditioning`、`SamplerCustomAdvanced`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`ImageResizeKJv2`、`PrimitiveBoolean`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`ImageScaleBy`、`VAEDecodeTiled`、`TTResolutionSelector`、`LTXVSeparateAVLatent`、`RH_LLMAPI_Pro_Node`、`Int`、`VHS_VideoCombine`、`Text`、`LoadImage`、`TextGenerateLTX2Prompt`、`DualCLIPLoader`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

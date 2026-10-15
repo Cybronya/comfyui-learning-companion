@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/UnifiedReward-Flex LoRA：Wan2.2动作逻辑与物理表现升级_2029392351566766081.json
 hash: e52292205d264ae0
 coverage: 0.9
-learned_at: 2026-10-11 03:16:49
+learned_at: 2026-10-15 22:47:02
 nodes: [VAELoader, SaveVideo, VAEDecode, MarkdownNote, UNETLoader, UNETLoader, CLIPLoader, CLIPTextEncode, KSamplerAdvanced, LoraLoaderModelOnly, EmptyHunyuanLatentVideo, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, MarkdownNote, ModelSamplingSD3, ModelSamplingSD3, CreateVideo, CLIPTextEncode, LoraLoaderModelOnly]
 patterns: []
 missing: []

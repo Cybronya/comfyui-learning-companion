@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_hunyuan3d_im
 hash: 5f4d9e4f3cef77fe
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:25
+learned_at: 2026-10-15 22:24:49
 nodes: [LoadImage, LoadImage, SaveGLB, TencentImageToModelNode, SaveGLB, Preview3D, SaveImage, SaveImage, SaveImage, SaveImage]
 patterns: []
 missing: []
@@ -40,4 +40,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveGLB`、`TencentImageToModelNode`、`Preview3D`、`SaveImage`
 
-**用到的条目**：LoadImage、SaveImage、SaveGLB、Preview3D、TencentImageToModelNode、sd15-t2i-basic、sd15-t2i-lora、node
+**用到的条目**：LoadImage、SaveImage、SaveGLB、Preview3D、TencentImageToModelNode、sd15-t2i-basic、sd15-t2i-lora、Image Save

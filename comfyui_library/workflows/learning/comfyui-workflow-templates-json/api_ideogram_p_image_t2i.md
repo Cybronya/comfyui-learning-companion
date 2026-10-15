@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_ideogram_p_i
 hash: fd20cd8b658e08a3
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:44:30
+learned_at: 2026-10-15 22:24:49
 nodes: [PreviewAny, CreateBoundingBoxes, IdeogramPImage, BuildJsonPromptIdeogram, SaveImageAdvanced]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`CreateBoundingBoxes`、`IdeogramPImage`、`BuildJsonPromptIdeogram`、`SaveImageAdvanced`
 
-**用到的条目**：BuildJsonPromptIdeogram、SaveImageAdvanced、CreateBoundingBoxes、IdeogramPImage、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CLIPTextEncode
+**用到的条目**：BuildJsonPromptIdeogram、SaveImageAdvanced、CreateBoundingBoxes、IdeogramPImage、sd15-t2i-basic、sd15-t2i-lora、SaveImage、json

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3动作模仿+图片跳舞+动作迁移单人跳舞_2049451413046042625.json
 hash: d2df6f2a783e512b
-coverage: 0.571429
-learned_at: 2026-10-13 01:36:52
+coverage: 0.632653
+learned_at: 2026-10-15 22:42:42
 nodes: [LTXVEmptyLatentAudio, CFGGuider, KSamplerSelect, RandomNoise, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, KSamplerSelect, ManualSigmas, GetNode, GetNode, CFGGuider, RandomNoise, LTXVConcatAVLatent, GetNode, LTXVLatentUpsampler, SetNode, SetNode, LTXAddVideoICLoRAGuide, GetNode, SamplerCustomAdvanced, LTXVImgToVideoInplace, GetNode, PrimitiveBoolean, LTXVConditioning, ManualSigmas, ImageResizeKJv2, GetNode, GetNode, SimpleMath+, SimpleMath+, CLIPTextEncode, SetNode, SetNode, SetNode, SetNode, SetNode, LatentUpscaleModelLoader, LTXVSeparateAVLatent, LTXVImgToVideoInplace, GetNode, DWPreprocessor, ImageResizeKJv2, GetImageSize, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, VHS_VideoCombine, VAEDecodeTiled, LTXVSeparateAVLatent, SamplerCustomAdvanced, RandomNoise, SetNode, SimpleMath+, INTConstant, INTConstant, GetNode, GetNode, CLIPTextEncode, UNETLoader, VAELoaderKJ, VAELoaderKJ, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, DualCLIPLoader, LTXICLoRALoaderModelOnly, SetNode, SetNode, VHS_VideoInfo, SetNode, ComfyMathExpression, GetNode, GetNode, ImageResizeKJv2, GetNode, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RTXVideoSuperResolution, SetNode, SetNode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVCropGuides, SamplerCustomAdvanced, LTXVLatentUpsampler, GetNode, JjkText, VHS_LoadVideo, INTConstant, SimpleMath+, LTXVCropGuides, GetNode, LoadImage]
 patterns: []
-missing: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/图生视频/Ltx2.3动作模仿+图片跳舞+动作迁移单人跳舞_2049451413046042625.json
@@ -131,19 +130,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **57%**（56/98）
+覆盖率 **63%**（62/98）
 
-**有卡**：`LTXVEmptyLatentAudio`、`CFGGuider`、`KSamplerSelect`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXAddVideoICLoRAGuide`、`SamplerCustomAdvanced`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`LTXVConditioning`、`ImageResizeKJv2`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LTXVSeparateAVLatent`、`DWPreprocessor`、`GetImageSize`、`VHS_VideoCombine`、`VAEDecodeTiled`、`INTConstant`、`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LTXICLoRALoaderModelOnly`、`VHS_VideoInfo`、`ComfyMathExpression`、`RTXVideoSuperResolution`、`LTXVCropGuides`、`VHS_LoadVideo`、`LoadImage`
-
-**缺卡**（6）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`LTXVEmptyLatentAudio`、`CFGGuider`、`KSamplerSelect`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXAddVideoICLoRAGuide`、`SamplerCustomAdvanced`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`LTXVConditioning`、`ImageResizeKJv2`、`SimpleMath+`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LTXVSeparateAVLatent`、`DWPreprocessor`、`GetImageSize`、`VHS_VideoCombine`、`VAEDecodeTiled`、`INTConstant`、`UNETLoader`、`VAELoaderKJ`、`LayerUtility: PurgeVRAM`、`DualCLIPLoader`、`LTXICLoRALoaderModelOnly`、`VHS_VideoInfo`、`ComfyMathExpression`、`RTXVideoSuperResolution`、`LTXVCropGuides`、`VHS_LoadVideo`、`LoadImage`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

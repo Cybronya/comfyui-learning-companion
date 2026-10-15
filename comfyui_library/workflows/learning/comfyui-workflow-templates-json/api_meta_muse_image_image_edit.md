@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_meta_muse_im
 hash: a2be10963d408937
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:45:05
+learned_at: 2026-10-15 22:24:50
 nodes: [SaveImageAdvanced, MetaMuseImageEditApi, LoadImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveImageAdvanced`、`MetaMuseImageEditApi`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveImageAdvanced、MetaMuseImageEditApi、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImageAdvanced、MetaMuseImageEditApi、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Image Load、CS_Preview_Any

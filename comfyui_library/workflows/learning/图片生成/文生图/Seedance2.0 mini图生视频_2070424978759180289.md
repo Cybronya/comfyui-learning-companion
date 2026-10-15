@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedance2.0 mini图生视频_2070424978759180289.json
 hash: 8e7522a9a85b8cc6
-coverage: 0.75
-learned_at: 2026-10-10 23:16:06
+coverage: 1
+learned_at: 2026-10-15 22:27:32
 nodes: [RH_RhartVideoSparkvideo20MiniImageToVideo, LoadImage, CR Text, SaveVideo]
 patterns: []
-missing: [CR Text]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/Seedance2.0 mini图生视频_2070424978759180289.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **75%**（3/4）
+覆盖率 **100%**（4/4）
 
-**有卡**：`RH_RhartVideoSparkvideo20MiniImageToVideo`、`LoadImage`、`SaveVideo`
+**有卡**：`RH_RhartVideoSparkvideo20MiniImageToVideo`、`LoadImage`、`CR Text`、`SaveVideo`
 
-**缺卡**（1）：`CR Text`
-
-**用到的条目**：LoadImage、SaveVideo、RH_RhartVideoSparkvideo20MiniImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、RH_RhartVideoSparkvideo20MiniImageToVideo、CR Text、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage

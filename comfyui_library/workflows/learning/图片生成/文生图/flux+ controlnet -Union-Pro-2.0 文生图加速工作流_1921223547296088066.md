@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
 hash: cb1698c9a2f86f32
-coverage: 0.724138
-learned_at: 2026-10-10 20:59:18
+coverage: 0.793103
+learned_at: 2026-10-15 22:27:44
 nodes: [CLIPTextEncode, PreviewImage, EmptySD3LatentImage, Note, ApplyFBCacheOnModel, Florence2Run, ShowText|pysssss, ImageResize+, easy cleanGpuUsed, Reroute, Reroute, VAEDecode, UNETLoader, DualCLIPLoader, EnhancedCompileModel, VAELoader, Florence2ModelLoader, CLIPTextEncodeFlux, KSampler, ApplyFBCacheOnModel, EnhancedCompileModel, SetUnionControlNetType, AIO_Preprocessor, LoraLoader, ControlNetApplySD3, ControlNetLoader, Fast Groups Bypasser (rgthree), LoadImage, SaveImage]
 patterns: [lora]
-missing: [easy cleanGpuUsed, ImageResize+]
+missing: []
 parameters: {"cfg": 1, "controlnet_strength": 0.8000000000000002, "denoise": 1, "lora_name": "AWPortraitCN.safetensors", "sampler_name": "euler", "scheduler": "normal", "seed": 824497853205778, "steps": 25, "strength_clip": 1, "strength_model": 0.5000000000000001}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/flux+ controlnet -Union-Pro-2.0 文生图加速工作流_1921223547296088066.json
@@ -21,8 +20,10 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 结构
 
+**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（29 个）：
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `PreviewImage`
 - `EmptySD3LatentImage`
 - `Note`
@@ -33,20 +34,20 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `easy cleanGpuUsed`
 - `Reroute`
 - `Reroute`
-- `VAEDecode`
-- `UNETLoader`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `EnhancedCompileModel`
 - `VAELoader`
 - `Florence2ModelLoader`
-- `CLIPTextEncodeFlux`
-- `KSampler`
+- `CLIPTextEncodeFlux` ★核心
+- `KSampler` ★核心
 - `ApplyFBCacheOnModel`
 - `EnhancedCompileModel`
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
-- `LoraLoader`
-- `ControlNetApplySD3`
+- `LoraLoader` ★核心
+- `ControlNetApplySD3` ★核心
 - `ControlNetLoader`
 - `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
@@ -56,26 +57,21 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `cfg` = `1`
-- `controlnet_strength` = `0.8000000000000002`
-- `denoise` = `1`
-- `lora_name` = `AWPortraitCN.safetensors`
-- `sampler_name` = `euler`
-- `scheduler` = `normal`
 - `seed` = `824497853205778`
 - `steps` = `25`
-- `strength_clip` = `1`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
+- `lora_name` = `AWPortraitCN.safetensors`
 - `strength_model` = `0.5000000000000001`
+- `strength_clip` = `1`
+- `controlnet_strength` = `0.8000000000000002`
 
 ## 知识
 
-覆盖率 **72%**（21/29）
+覆盖率 **79%**（23/29）
 
-**有卡**：`CLIPTextEncode`、`PreviewImage`、`EmptySD3LatentImage`、`Note`、`ApplyFBCacheOnModel`、`Florence2Run`、`ShowText|pysssss`、`ImageResize+`、`easy cleanGpuUsed`、`Reroute`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`EnhancedCompileModel`、`VAELoader`、`Florence2ModelLoader`、`CLIPTextEncodeFlux`、`KSampler`
+**有卡**：`CLIPTextEncode`、`EmptySD3LatentImage`、`ApplyFBCacheOnModel`、`Florence2Run`、`ImageResize+`、`easy cleanGpuUsed`、`VAEDecode`、`UNETLoader`、`DualCLIPLoader`、`EnhancedCompileModel`、`VAELoader`、`Florence2ModelLoader`、`CLIPTextEncodeFlux`、`KSampler`、`SetUnionControlNetType`、`AIO_Preprocessor`、`LoraLoader`、`ControlNetApplySD3`、`ControlNetLoader`、`LoadImage`、`SaveImage`
 
-**缺卡**（2）：`easy cleanGpuUsed`、`ImageResize+`
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、LoadImage、ControlNetLoader、SetUnionControlNetType

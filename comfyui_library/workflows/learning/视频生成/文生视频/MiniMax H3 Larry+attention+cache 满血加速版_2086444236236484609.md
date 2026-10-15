@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 Larry+attention+cache 满血加速版_2086444236236484609.json
 hash: a8d596dc13cb908c
 coverage: 0.873239
-learned_at: 2026-10-11 20:53:40
+learned_at: 2026-10-15 22:45:32
 nodes: [VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, KSamplerSelect, BasicScheduler, PrimitiveFloat, ComfyMathExpression, ResolutionSelector, UNETLoader, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, KSamplerSelect, BasicScheduler, SaveVideo, PrimitiveFloat, ComfyMathExpression, ResolutionSelector, UNETLoader, Note, LoraLoaderModelOnly, PathchSageAttentionKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, BasicGuider, RandomNoise, CreateVideo, ImageResizeKJv2, MiniMaxH3ImageToVideo, CLIPLoader, KSamplerSelect, BasicScheduler, SaveVideo, PrimitiveFloat, ComfyMathExpression, ResolutionSelector, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, EasyCache, SpectrumApplyMiniMaxH3, Note, LoadImage, PrimitiveStringMultiline, PrimitiveStringMultiline, LoadImage, PrimitiveStringMultiline, LoadImage, Note, SaveVideo]
 patterns: []
 missing: []

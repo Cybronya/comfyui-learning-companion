@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频Seedance 2.0 Video Generator 图生视频  sd2.0_2034120645298098177.json
 hash: 61cb9d9431f91501
 coverage: 0.583333
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:56
 nodes: [LoadImage, LoadImage, LoadImage, SaveVideo, LoadImage, RH_CinematicVideoGenerator, Note, Note, Note, Note, LoadImage, Note]
 patterns: []
 missing: []
@@ -41,4 +41,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveVideo`、`RH_CinematicVideoGenerator`
 
-**用到的条目**：LoadImage、SaveVideo、RH_CinematicVideoGenerator、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、RH_CinematicVideoGenerator、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load、SaveImage

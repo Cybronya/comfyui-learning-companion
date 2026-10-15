@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Lucy Edit视频编辑（全局改变-概率抽卡）V1.1_1969954015096283137.json
 hash: c83ff94c6f9928f3
-coverage: 0.888889
-learned_at: 2026-10-10 23:00:34
+coverage: 0.944444
+learned_at: 2026-10-15 22:45:22
 nodes: [CLIPTextEncode, CLIPLoader, VAELoader, ModelSamplingSD3, LucyConditionConcatNode, VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, VAEDecode, VHS_VideoCombine, PrimitiveInt, CLIPTextEncode, VHS_VideoCombine, JWInteger, ImageConcanate, VHS_VideoInfo, VHS_LoadVideo, UNETLoader, KSampler]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 parameters: {"cfg": 5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 1043588155084840, "steps": 50}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Lucy Edit视频编辑（全局改变-概率抽卡）V1.1_1969954015096283137.json
@@ -54,14 +53,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **89%**（16/18）
+覆盖率 **94%**（17/18）
 
-**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`LucyConditionConcatNode`、`VAEEncode`、`VAEDecode`、`VHS_VideoCombine`、`JWInteger`、`ImageConcanate`、`VHS_VideoInfo`、`VHS_LoadVideo`、`UNETLoader`、`KSampler`
-
-**缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
+**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`LucyConditionConcatNode`、`VAEEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAEDecode`、`VHS_VideoCombine`、`JWInteger`、`ImageConcanate`、`VHS_VideoInfo`、`VHS_LoadVideo`、`UNETLoader`、`KSampler`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、VAEEncode、ImageConcanate
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识

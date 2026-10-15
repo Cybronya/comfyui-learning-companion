@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/SPARK.Chroma_preview 反推文生图_1984856656842473473.json
 hash: 23b278d5848cceb1
 coverage: 1
-learned_at: 2026-10-10 20:59:11
+learned_at: 2026-10-15 22:27:32
 nodes: [CLIPLoader, VAELoader, T5TokenizerOptions, CFGGuider, KSamplerSelect, CLIPTextEncode, CLIPTextEncode, VAEDecode, BasicScheduler, SamplerCustomAdvanced, SaveImage, RandomNoise, UNETLoader, EmptySD3LatentImage, AILab_QwenVL, LoadImage]
 patterns: []
 missing: []
@@ -19,20 +19,22 @@ missing: []
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（16 个）：
 - `CLIPLoader`
 - `VAELoader`
 - `T5TokenizerOptions`
 - `CFGGuider`
-- `KSamplerSelect`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `VAEDecode`
+- `KSamplerSelect` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
 - `BasicScheduler`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `SaveImage`
 - `RandomNoise`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `EmptySD3LatentImage`
 - `AILab_QwenVL`
 - `LoadImage`
@@ -42,3 +44,5 @@ missing: []
 覆盖率 **100%**（16/16）
 
 **有卡**：`CLIPLoader`、`VAELoader`、`T5TokenizerOptions`、`CFGGuider`、`KSamplerSelect`、`CLIPTextEncode`、`VAEDecode`、`BasicScheduler`、`SamplerCustomAdvanced`、`SaveImage`、`RandomNoise`、`UNETLoader`、`EmptySD3LatentImage`、`AILab_QwenVL`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGGuider、KSamplerSelect

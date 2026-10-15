@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2+MoeKSampler+lightx2v加速_1955923712228950018.json
 hash: 6d7da1887ea63573
 coverage: 0.806452
-learned_at: 2026-10-10 23:07:06
+learned_at: 2026-10-15 22:47:11
 nodes: [Note, Note, CLIPTextEncode, VAELoader, UNETLoader, Note, UNETLoader, CLIPTextEncode, CLIPLoader, VAELoader, Note, Note, UNETLoader, WanImageToVideo, Note, UNETLoader, VAEDecode, WanMoeKSampler, CLIPTextEncode, CLIPLoader, VAEDecode, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageResizeKJv2, VHS_VideoCombine, CLIPTextEncode, CLIPLoader, VAELoader, Note, Note, WanImageToVideo, Note, UNETLoader, VAEDecode, CLIPTextEncode, ImageResizeKJv2, Note, Note, CLIPTextEncode, VAELoader, Note, UNETLoader, CLIPTextEncode, CLIPLoader, VAEDecode, EmptyHunyuanLatentVideo, WanMoeKSampler, WanMoeKSampler, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, LoadImage, LoraLoaderModelOnly, WanMoeKSampler, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, LoadImage, VHS_VideoCombine]
 patterns: []
 missing: []

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 自用优化版 T2V customer Audio_2063969507642798081.json
 hash: 73c4c106f3c8c4a0
-coverage: 0.825397
-learned_at: 2026-10-11 20:21:26
+coverage: 0.873016
+learned_at: 2026-10-15 22:45:01
 nodes: [RandomNoise, KSamplerSelect, PrimitiveInt, LTXVSeparateAVLatent, MarkdownNote, LTXVConcatAVLatent, LTXVConditioning, PrimitiveBoolean, ComfyMathExpression, LatentUpscaleModelLoader, CFGGuider, BasicScheduler, CFGGuider, ManualSigmas, Reroute, LTXVLatentUpsampler, LTXVLatentUpsampler, SamplerCustomAdvanced, LTXVCropGuides, LTXVSeparateAVLatent, KSamplerSelect, VAEDecodeTiled, PrimitiveInt, PrimitiveInt, EmptyLTXVLatentVideo, Note, ManualSigmas, LatentUpscaleModelLoader, SimpleMath+, RandomNoise, PromptRelayEncode, LTXTiledSampler, LTXVConcatAVLatent, ComfyMathExpression, ComfyMathExpression, VHS_VideoCombine, CLIPTextEncode, TrimAudioDuration, TrimAudioDuration, AudioConcat, MelBandRoFormerSampler, TrimAudioDuration, LTXVAudioVAEEncode, SolidMask, PreviewAudio, SetLatentNoiseMask, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LTX2_NAG, LoraLoaderModelOnly, LoraLoaderModelOnly, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, MelBandRoFormerModelLoader, LoadAudio, LoadAudio, PrimitiveStringMultiline, LoraLoaderModelOnly, UNETLoader]
 patterns: []
-missing: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SimpleMath+]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3 自用优化版 T2V customer Audio_2063969507642798081.json
@@ -89,16 +88,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **83%**（52/63）
+覆盖率 **87%**（55/63）
 
-**有卡**：`RandomNoise`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`LTXVConditioning`、`PrimitiveBoolean`、`ComfyMathExpression`、`LatentUpscaleModelLoader`、`CFGGuider`、`BasicScheduler`、`ManualSigmas`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`VAEDecodeTiled`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`LTXTiledSampler`、`VHS_VideoCombine`、`CLIPTextEncode`、`TrimAudioDuration`、`AudioConcat`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`SolidMask`、`PreviewAudio`、`SetLatentNoiseMask`、`LTX2_NAG`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`VAELoaderKJ`、`MelBandRoFormerModelLoader`、`LoadAudio`、`UNETLoader`
-
-**缺卡**（3）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`SimpleMath+`
+**有卡**：`RandomNoise`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`LTXVConditioning`、`PrimitiveBoolean`、`ComfyMathExpression`、`LatentUpscaleModelLoader`、`CFGGuider`、`BasicScheduler`、`ManualSigmas`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`VAEDecodeTiled`、`EmptyLTXVLatentVideo`、`SimpleMath+`、`PromptRelayEncode`、`LTXTiledSampler`、`VHS_VideoCombine`、`CLIPTextEncode`、`TrimAudioDuration`、`AudioConcat`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`SolidMask`、`PreviewAudio`、`SetLatentNoiseMask`、`LayerUtility: PurgeVRAM`、`LTX2_NAG`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`VAELoaderKJ`、`MelBandRoFormerModelLoader`、`LoadAudio`、`UNETLoader`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

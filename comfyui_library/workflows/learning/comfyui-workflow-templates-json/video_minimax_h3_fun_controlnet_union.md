@@ -7,13 +7,12 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_minimax_h3_fun_controlnet_union.json
 hash: 8f6c8f1bbc732b9b
 official: true
-coverage: 0.615385
-learned_at: 2026-10-10 22:50:27
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:58
 nodes: [ResolutionSelector, MarkdownNote, MarkdownNote, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, BasicGuider, UNETLoader, CLIPLoader, RandomNoise, CreateVideo, ComfyMathExpression, PrimitiveFloat, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, MarkdownNote, ComfySwitchNode, ComfySwitchNode, PrimitiveInt, PrimitiveInt, LoraLoaderModelOnly, PrimitiveBoolean, MiniMaxH3FunControlNetApply, ModelPatchLoader, LoadVideo, 622cceeb-7ba3-4dd9-b0e8-00066c5222a4, PreviewImage, Video Slice, SaveVideo, MarkdownNote, GetVideoComponents, GetImageSize, PrimitiveBoolean, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [622cceeb-7ba3-4dd9-b0e8-00066c5222a4, Video Slice]
+missing: []
 parameters: {"controlnet_strength": 1}
-discoveries: [次要节点 `622cceeb-7ba3-4dd9-b0e8-00066c5222a4` 知识库中没有该节点类型的任何知识, 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识]
 ---
 
 # comfyui-workflow-templates-json/video_minimax_h3_fun_controlnet_union.json
@@ -71,15 +70,8 @@ discoveries: [次要节点 `622cceeb-7ba3-4dd9-b0e8-00066c5222a4` 知识库中�
 
 ## 知识
 
-覆盖率 **62%**（24/39）
+覆盖率 **67%**（26/39）
 
-**有卡**：`ResolutionSelector`、`VAELoader`、`VAEDecodeAudio`、`VAEDecode`、`KSamplerSelect`、`BasicScheduler`、`SamplerCustomAdvanced`、`BasicGuider`、`UNETLoader`、`CLIPLoader`、`RandomNoise`、`CreateVideo`、`ComfyMathExpression`、`MiniMaxH3ReferenceToVideo`、`LoraLoaderModelOnly`、`PrimitiveBoolean`、`MiniMaxH3FunControlNetApply`、`ModelPatchLoader`、`LoadVideo`、`SaveVideo`、`GetVideoComponents`、`GetImageSize`
-
-**缺卡**（2）：`622cceeb-7ba3-4dd9-b0e8-00066c5222a4`、`Video Slice`
+**有卡**：`ResolutionSelector`、`VAELoader`、`VAEDecodeAudio`、`VAEDecode`、`KSamplerSelect`、`BasicScheduler`、`SamplerCustomAdvanced`、`BasicGuider`、`UNETLoader`、`CLIPLoader`、`RandomNoise`、`CreateVideo`、`ComfyMathExpression`、`MiniMaxH3ReferenceToVideo`、`LoraLoaderModelOnly`、`PrimitiveBoolean`、`MiniMaxH3FunControlNetApply`、`ModelPatchLoader`、`LoadVideo`、`622cceeb-7ba3-4dd9-b0e8-00066c5222a4`、`Video Slice`、`SaveVideo`、`GetVideoComponents`、`GetImageSize`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、UNETLoader、MiniMaxH3FunControlNetApply、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `622cceeb-7ba3-4dd9-b0e8-00066c5222a4` 知识库中没有该节点类型的任何知识
-- 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识

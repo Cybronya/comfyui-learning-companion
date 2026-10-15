@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bytedance_se
 hash: 5bfb9028f29fadcc
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:43:33
+learned_at: 2026-10-15 22:24:48
 nodes: [SaveVideo, LoadImage, ByteDanceImageToVideoNode]
 patterns: []
 missing: []

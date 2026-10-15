@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 + lightx2v_T2V + Instagirl Lora 打造逼真网红照片_1956341559652483073.json
 hash: 4fe9796acb7138fa
-coverage: 0.52
-learned_at: 2026-10-10 23:06:37
+coverage: 0.76
+learned_at: 2026-10-15 22:47:08
 nodes: [CLIPTextEncode, SetNode, CLIPTextEncode, SetNode, SetNode, SetNode, VAEDecode, SaveImage, ttN seed, GetNode, LoraLoaderModelOnly, ttN text, GetNode, Text Concatenate, UnetLoaderGGUF, UnetLoaderGGUF, VAELoader, CLIPLoaderGGUF, KSamplerAdvanced, LoraLoaderModelOnly, ttN text, EmptyHunyuanLatentVideo, KSamplerAdvanced, ttN text, Power Lora Loader (rgthree)]
 patterns: []
-missing: [Text Concatenate, ttN text, ttN text, ttN text, Power Lora Loader (rgthree), ttN seed]
+missing: []
 parameters: {"cfg": 10, "denoise": "beta57", "sampler_name": 1, "scheduler": "res_2s", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `ttN text` 知识库中没有该节点类型的任何知识, 次要节点 `ttN text` 知识库中没有该节点类型的任何知识, 次要节点 `ttN text` 知识库中没有该节点类型的任何知识, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `ttN seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Wan2.2 + lightx2v_T2V + Instagirl Lora 打造逼真网红照片_1956341559652483073.json
@@ -61,19 +60,8 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **52%**（13/25）
+覆盖率 **76%**（19/25）
 
-**有卡**：`CLIPTextEncode`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`、`UnetLoaderGGUF`、`VAELoader`、`CLIPLoaderGGUF`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`SaveImage`、`ttN seed`、`LoraLoaderModelOnly`、`ttN text`、`Text Concatenate`、`UnetLoaderGGUF`、`VAELoader`、`CLIPLoaderGGUF`、`KSamplerAdvanced`、`EmptyHunyuanLatentVideo`、`Power Lora Loader (rgthree)`
 
-**缺卡**（6）：`Text Concatenate`、`ttN text`、`ttN text`、`ttN text`、`Power Lora Loader (rgthree)`、`ttN seed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、KSamplerAdvanced、EmptyHunyuanLatentVideo、CLIPLoaderGGUF、ClipLoaderGGUF
-
-## 学习发现
-
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `ttN seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、KSamplerAdvanced、ttN seed、EmptyHunyuanLatentVideo、Power Lora Loader (rgthree)

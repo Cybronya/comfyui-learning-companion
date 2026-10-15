@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
 hash: 765fa05f001cfe48
-coverage: 0.666667
-learned_at: 2026-10-10 20:59:08
+coverage: 0.74359
+learned_at: 2026-10-15 22:27:26
 nodes: [SetNode, SetNode, GetNode, GetNode, GetNode, VAEEncode, VAEEncode, VAEDecode, KSampler, KSampler, CR Image Grid Panel, PreviewImage, LoadImage, ImageListToImageBatch, SaveImage, UNETLoader, VAELoader, CLIPLoader, UpscaleModelLoader, SetNode, SetNode, Lora Loader Stack (rgthree), ModelPassThrough, ImageScaleToTotalPixels, CR Prompt List, TextEncodeQwenImageEdit, GetNode, ModelSamplingAuraFlow, CLIPTextEncode, CFGNorm, VAEDecode, PreviewImage, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, ImageScaleBy, ImageScaleToTotalPixels, UpscaleModelLoader, ImageUpscaleWithModel]
 patterns: [image_to_image]
-missing: [CR Image Grid Panel, CR Prompt List, Lora Loader Stack (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "epicrealismXL_vxviiCrystalclear.safetensors", "denoise": 1, "sampler_name": "res_2s", "scheduler": "simple", "seed": 5834920396131, "steps": 8}
-discoveries: [次要节点 `CR Image Grid Panel` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt List` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen_Image_To_Dateset_Workflow_1958778756431241218.json
@@ -22,23 +22,25 @@ discoveries: [次要节点 `CR Image Grid Panel` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（39 个）：
 - `SetNode`
 - `SetNode`
 - `GetNode`
 - `GetNode`
 - `GetNode`
-- `VAEEncode`
-- `VAEEncode`
-- `VAEDecode`
-- `KSampler`
-- `KSampler`
+- `VAEEncode` ★核心
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `CR Image Grid Panel`
 - `PreviewImage`
 - `LoadImage`
 - `ImageListToImageBatch`
 - `SaveImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
 - `CLIPLoader`
 - `UpscaleModelLoader`
@@ -51,13 +53,13 @@ discoveries: [次要节点 `CR Image Grid Panel` 知识库中没有该节点类�
 - `TextEncodeQwenImageEdit`
 - `GetNode`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `CFGNorm`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
-- `CheckpointLoaderSimple`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `ImageScaleBy`
 - `ImageScaleToTotalPixels`
 - `UpscaleModelLoader`
@@ -67,21 +69,21 @@ discoveries: [次要节点 `CR Image Grid Panel` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `checkpoint` = `epicrealismXL_vxviiCrystalclear.safetensors`
-- `denoise` = `1`
-- `sampler_name` = `res_2s`
-- `scheduler` = `simple`
 - `seed` = `5834920396131`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `checkpoint` = `epicrealismXL_vxviiCrystalclear.safetensors`
 
 ## 知识
 
-覆盖率 **67%**（26/39）
+覆盖率 **74%**（29/39）
 
-**有卡**：`SetNode`、`GetNode`、`VAEEncode`、`VAEDecode`、`KSampler`、`CR Image Grid Panel`、`PreviewImage`、`LoadImage`、`ImageListToImageBatch`、`SaveImage`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`UpscaleModelLoader`、`Lora Loader Stack (rgthree)`、`ModelPassThrough`、`ImageScaleToTotalPixels`、`CR Prompt List`、`TextEncodeQwenImageEdit`
+**有卡**：`VAEEncode`、`VAEDecode`、`KSampler`、`CR Image Grid Panel`、`LoadImage`、`ImageListToImageBatch`、`SaveImage`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`UpscaleModelLoader`、`Lora Loader Stack (rgthree)`、`ModelPassThrough`、`ImageScaleToTotalPixels`、`CR Prompt List`、`TextEncodeQwenImageEdit`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`CFGNorm`、`CheckpointLoaderSimple`、`ImageScaleBy`、`ImageUpscaleWithModel`
 
-**缺卡**（3）：`CR Image Grid Panel`、`CR Prompt List`、`Lora Loader Stack (rgthree)`
+**用到的条目**：KSampler、VAEDecode、VAELoader、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage
 
 ## 参数体检
 
@@ -90,7 +92,4 @@ discoveries: [次要节点 `CR Image Grid Panel` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `CR Image Grid Panel` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt List` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

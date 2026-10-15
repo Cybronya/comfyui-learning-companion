@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3 MSR 多图参考视频生成｜三阶渲染增强版_2065743626793209857.json
 hash: 94bff4ed95e1babb
 coverage: 1
-learned_at: 2026-10-11 20:21:25
+learned_at: 2026-10-15 22:44:37
 nodes: [LTXICLoRALoaderModelOnly, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConcatAVLatent, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConcatAVLatent, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, VAEDecodeTiled, LTXVAudioVAEDecode, LTXAddVideoICLoRAGuide, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXAddVideoICLoRAGuide, CreateVideo, LTXAddVideoICLoRAGuide, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SaveVideo, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SaveVideo, LTXVEmptyLatentAudio, CLIPTextEncode, ImageResizeKJv2, GetImageSize, ImageResizeKJv2, LiconMSR, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LowVRAMCheckpointLoader, LTXAVTextEncoderLoader, LTXVAudioVAELoader, INTConstant, SaveVideo, CLIPTextEncode, LoraLoaderModelOnly, image_scale_pixel_v2]
 patterns: []
 missing: []

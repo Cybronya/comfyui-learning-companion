@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Alan测LTX2.3--高动态图生视频_2041500926397128706.json
 hash: d21d3a7b095face9
 coverage: 0.52381
-learned_at: 2026-10-11 19:49:33
+learned_at: 2026-10-15 22:44:02
 nodes: [RandomNoise, KSamplerSelect, ManualSigmas, SetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, LTXVPreprocess, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, SetNode, MarkdownNote, MarkdownNote, SetNode, PreviewImage, LTXVConditioning, GetNode, LTXVImgToVideoInplace, GetNode, GetNode, GetNode, GetNode, CFGGuider, CLIPTextEncode, ComfyMathExpression, CLIPTextEncode, ComfyMathExpression, ResizeImagesByLongerEdge, GetNode, LTXVEmptyLatentAudio, LTXVConcatAVLatent, SetNode, GetNode, LoraLoader, SetNode, GetNode, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, CFGGuider, GetNode, GetNode, GetNode, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, GetNode, GetNode, VAEDecodeTiled, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, UNETLoader, LTXVImgToVideoInplace, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVLatentUpsampler, ManualSigmas, SetNode, Note, Note, Note, Note, LTXVAudioVAEDecode, VHS_VideoCombine, ImageResizeKJv2, EmptyLTXVLatentVideo, Int, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, ComfyMathExpression, ComfyMathExpression, Int, Int, Int, LoadImage, PrimitiveStringMultiline]
 patterns: [lora]
 missing: []

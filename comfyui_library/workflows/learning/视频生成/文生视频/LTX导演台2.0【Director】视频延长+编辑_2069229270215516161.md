@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX导演台2.0【Director】视频延长+编辑_2069229270215516161.json
 hash: c6559cdc9695e7e4
 coverage: 0.863636
-learned_at: 2026-10-11 20:21:28
+learned_at: 2026-10-15 22:45:19
 nodes: [LTXDirectorCropGuides, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConditioning, ConditioningZeroOut, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, CFGGuider, LTXVSeparateAVLatent, LTXDirectorCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, VAELoader, VAELoader, MarkdownNote, SamplerCustomAdvanced, RandomNoise, VAEDecode, CLIPTextEncode, LTX2_NAG, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGGuider, LoraLoaderModelOnly, UNETLoader, DualCLIPLoader, ModelPreviewOverrideKJ, VAELoaderKJ, LoraLoaderModelOnly, VHS_VideoCombine, LoadImage, LTXVAudioVAEDecode, Note, Reroute, Note, Note, LTXDirectorGuide, LTXDirectorGuide, LTXDirector, MarkdownNote]
 patterns: []
 missing: []

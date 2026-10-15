@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 Singularity VDN加速双采高步数图生视频处理工具_2102458025251532801.json
 hash: 34a9a3aa3b29b519
-coverage: 0.891892
-learned_at: 2026-10-11 22:12:36
+coverage: 0.918919
+learned_at: 2026-10-15 22:45:34
 nodes: [DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, ShowAnything|Mie, ShowAnything|Mie, PrimitiveFloat, CLIPLoader, VAELoader, VAELoader, VAEEncodeAudio, ImpactSwitch, ImpactSwitch, KSamplerSelect, ResolutionSelector, LoadImage, LoadImage, LoadImage, GetVideoComponents, GetVideoComponents, LoadVideo, LoadVideo, LoadVideo, LoadAudio, LoadAudio, LoadAudio, LTXVConcatAVLatent, SamplerCustomAdvanced, BasicGuider, VAEDecode, UNETLoader, RandomNoise, BasicGuider, KSamplerSelect, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, ComfyMathExpression, MiniMaxH3ReferenceToVideo, SeedVR2VideoUpscaler, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, VAEEncode, RandomSeedNoise, ResolutionSelector, ImageResizeKJv2, PrimitiveFloat, GetVideoComponents, ModelPreviewOverrideKJ, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CR Prompt Text, ModelPreviewOverrideKJ, CreateVideo, CreateVideo, CreateVideo, Fast Groups Bypasser (rgthree), BasicScheduler, BasicScheduler, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, SolAttnMiniMax, EasyCache, MiniMaxH3VDNRuntimeAuditT8Advanced, LoraLoaderModelOnly, LoraLoaderModelOnly, SaveVideo, SaveVideo, SaveVideo, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image, image_to_image]
-missing: [ShowAnything|Mie, ShowAnything|Mie, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MiniMax H3 Singularity VDN加速双采高步数图生视频处理工具_2102458025251532801.json
@@ -153,11 +153,9 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **89%**（99/111）
+覆盖率 **92%**（102/111）
 
-**有卡**：`DF_Int_to_Float`、`CLIPLoader`、`VAELoader`、`VAEEncodeAudio`、`KSamplerSelect`、`ResolutionSelector`、`LoadImage`、`GetVideoComponents`、`LoadVideo`、`LoadAudio`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`BasicGuider`、`VAEDecode`、`UNETLoader`、`RandomNoise`、`VAEDecodeAudio`、`ComfyMathExpression`、`MiniMaxH3ReferenceToVideo`、`SeedVR2VideoUpscaler`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`VAEEncode`、`RandomSeedNoise`、`ImageResizeKJv2`、`ModelPreviewOverrideKJ`、`CreateVideo`、`BasicScheduler`、`LoraLoaderModelOnly`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`SolAttnMiniMax`、`EasyCache`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`SaveVideo`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
-
-**缺卡**（3）：`ShowAnything|Mie`、`ShowAnything|Mie`、`CR Prompt Text`
+**有卡**：`DF_Int_to_Float`、`ShowAnything|Mie`、`CLIPLoader`、`VAELoader`、`VAEEncodeAudio`、`KSamplerSelect`、`ResolutionSelector`、`LoadImage`、`GetVideoComponents`、`LoadVideo`、`LoadAudio`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`BasicGuider`、`VAEDecode`、`UNETLoader`、`RandomNoise`、`VAEDecodeAudio`、`ComfyMathExpression`、`MiniMaxH3ReferenceToVideo`、`SeedVR2VideoUpscaler`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`VAEEncode`、`RandomSeedNoise`、`ImageResizeKJv2`、`ModelPreviewOverrideKJ`、`CR Prompt Text`、`CreateVideo`、`BasicScheduler`、`LoraLoaderModelOnly`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`SolAttnMiniMax`、`EasyCache`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`SaveVideo`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -168,7 +166,4 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_seedvr2_3b_int8_upscale_video.json
 hash: 4db5e31ddbbc4152
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:49:59
+coverage: 0.6
+learned_at: 2026-10-15 22:24:57
 nodes: [1970dcb4-982a-4c01-a373-4d239a3041e4, LoadVideo, SaveVideo, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [1970dcb4-982a-4c01-a373-4d239a3041e4]
-discoveries: [次要节点 `1970dcb4-982a-4c01-a373-4d239a3041e4` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/utility_seedvr2_3b_int8_upscale_video.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `1970dcb4-982a-4c01-a373-4d239a3041e4` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`LoadVideo`、`SaveVideo`
+**有卡**：`1970dcb4-982a-4c01-a373-4d239a3041e4`、`LoadVideo`、`SaveVideo`
 
-**缺卡**（1）：`1970dcb4-982a-4c01-a373-4d239a3041e4`
-
-**用到的条目**：SaveVideo、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `1970dcb4-982a-4c01-a373-4d239a3041e4` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、LoadVideo、1970dcb4-982a-4c01-a373-4d239a3041e4、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

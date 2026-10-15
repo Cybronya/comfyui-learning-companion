@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/▶Wan2.2-AllInOne-Mega-V12首尾帧、文生视频、图生视频工作流【好奇漫步】_1970121529851867137.json
 hash: 2e2b7a0390877543
 coverage: 0.857143
-learned_at: 2026-10-10 23:10:01
+learned_at: 2026-10-15 22:47:38
 nodes: [CLIPTextEncode, KSampler, VHS_VideoCombine, ModelSamplingSD3, PrimitiveInt, VAEDecode, WanVaceToVideo, LoadImage, LoadImage, WanVideoVACEStartToEndFrame, CLIPTextEncode, CheckpointLoaderSimple, LoadImage, MarkdownNote]
 patterns: []
 missing: []

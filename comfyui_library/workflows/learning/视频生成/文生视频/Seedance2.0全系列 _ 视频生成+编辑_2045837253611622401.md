@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0全系列 _ 视频生成+编辑_2045837253611622401.json
 hash: b371cd4c0fadc7b7
 coverage: 0.807692
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [RH_SparkVideoAssetIdsMerge, SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, SaveVideo, SaveVideo, SaveVideo, LoadImage, LoadImage, RH_RhartVideoSparkvideo20ImageToVideo, RH_RhartVideoSparkvideo20TextToVideo, RH_RhartVideoSparkvideo20MultimodalVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), RH_RhartVideoSparkvideo20MultimodalVideo, LoadVideo, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []

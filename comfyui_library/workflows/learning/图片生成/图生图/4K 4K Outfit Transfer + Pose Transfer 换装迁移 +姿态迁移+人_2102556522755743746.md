@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json
 hash: 1744e3b6a536a200
-coverage: 0.745098
-learned_at: 2026-10-10 20:48:02
+coverage: 0.784314
+learned_at: 2026-10-15 22:25:05
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SDPoseOODProcessor, PreviewImage, KSampler, SDPoseOODLoader, YOLOModelLoader, GroundingDinoModelLoader_SDPose, Note, CheckpointLoaderSimple, Note, TextEncodeQwenImageEditPlus, GetNode, VAEEncode, SetNode, TextEncodeQwenImageEditPlus, ConditioningZeroOut, CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, LoraLoaderModelOnly, TextEncodeQwenImageEditPlus, PreviewImage, UNETLoader, MemoryCleaner, MemoryCleaner, MemoryCleaner, SeedVR2LoadVAEModel, SeedVR2LoadDiTModel, Note, ImageScaleToTotalPixels, PreviewImage, VAEDecode, SaveImage, SaveImage, LoadImage, ModelSamplingAuraFlow, CFGNorm, EmptySD3LatentImage, VAELoader, INTConstant, KSampler, TextEncodeQwenImageEditPlus, CR Text, LoadImage, Image Comparer (rgthree), LoadImage, Fast Groups Bypasser (rgthree), SeedVR2VideoUpscaler, VAEDecode, Image Comparer (rgthree)]
 patterns: [image_to_image]
-missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "Qwen-Rapid-AIO-NSFW-v20.0.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 845884622820324, "steps": 6}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/4K 4K Outfit Transfer + Pose Transfer 换装迁移 +姿态迁移+人_2102556522755743746.json
@@ -91,11 +91,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **75%**（38/51）
+覆盖率 **78%**（40/51）
 
-**有卡**：`LoraLoaderModelOnly`、`SDPoseOODProcessor`、`KSampler`、`SDPoseOODLoader`、`YOLOModelLoader`、`GroundingDinoModelLoader_SDPose`、`CheckpointLoaderSimple`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`ConditioningZeroOut`、`CLIPLoader`、`UNETLoader`、`MemoryCleaner`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`ImageScaleToTotalPixels`、`VAEDecode`、`SaveImage`、`LoadImage`、`ModelSamplingAuraFlow`、`CFGNorm`、`EmptySD3LatentImage`、`VAELoader`、`INTConstant`、`SeedVR2VideoUpscaler`
-
-**缺卡**（2）：`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`
+**有卡**：`LoraLoaderModelOnly`、`SDPoseOODProcessor`、`KSampler`、`SDPoseOODLoader`、`YOLOModelLoader`、`GroundingDinoModelLoader_SDPose`、`CheckpointLoaderSimple`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`ConditioningZeroOut`、`CLIPLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`UNETLoader`、`MemoryCleaner`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`ImageScaleToTotalPixels`、`VAEDecode`、`SaveImage`、`LoadImage`、`ModelSamplingAuraFlow`、`CFGNorm`、`EmptySD3LatentImage`、`VAELoader`、`INTConstant`、`CR Text`、`SeedVR2VideoUpscaler`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPLoader、ConditioningZeroOut
 
@@ -107,7 +105,5 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

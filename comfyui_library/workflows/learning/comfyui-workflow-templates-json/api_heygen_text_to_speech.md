@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_heygen_text_
 hash: 1c802c8f1e4612e8
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:21
+learned_at: 2026-10-15 22:24:49
 nodes: [HeyGenTextToSpeechNode, SaveAudioAdvanced]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.5 文生视频｜支持4K｜支持30S视频_2097521959767732226.json
 hash: 869b1f2c26680c90
 coverage: 1
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:58
 nodes: [MuyeTextEditOutput, SaveVideo, RH_BytedanceSeedance25TokenTextToVideo]
 patterns: []
 missing: []
@@ -32,4 +32,4 @@ missing: []
 
 **有卡**：`MuyeTextEditOutput`、`SaveVideo`、`RH_BytedanceSeedance25TokenTextToVideo`
 
-**用到的条目**：RH_BytedanceSeedance25TokenTextToVideo、MuyeTextEditOutput、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Text、sampler_name 调整经验
+**用到的条目**：RH_BytedanceSeedance25TokenTextToVideo、MuyeTextEditOutput、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Text

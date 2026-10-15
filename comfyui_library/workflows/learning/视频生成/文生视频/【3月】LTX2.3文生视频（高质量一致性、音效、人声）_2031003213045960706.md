@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/【3月】LTX2.3文生视频（高质量一致性、音效、人声）_2031003213045960706.json
 hash: b0f4a381adfe53ce
-coverage: 0.888889
-learned_at: 2026-10-11 03:16:51
+coverage: 0.944444
+learned_at: 2026-10-15 22:47:39
 nodes: [CheckpointLoaderSimple, LTXVAudioVAELoader, LoraLoaderModelOnly, LTXVChunkFeedForward, ModelPatchTorchSettings, PathchSageAttentionKJ, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, EmptyLTXVLatentVideo, CM_FloatToInt, LTXVEmptyLatentAudio, LTXVConcatAVLatent, ManualSigmas, RandomNoise, SamplerCustomAdvanced, CFGGuider, KSamplerSelect, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, ImpactSwitch, JWInteger, JWInteger, JWInteger, ImpactSwitch, MathExpression|pysssss, CR Text, JWInteger, JWInteger, JWInteger, JWInteger, DF_Int_to_Float, VHS_VideoCombine]
 patterns: []
-missing: [CR Text, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/【3月】LTX2.3文生视频（高质量一致性、音效、人声）_2031003213045960706.json
@@ -70,15 +69,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **89%**（32/36）
+覆盖率 **94%**（34/36）
 
-**有卡**：`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`CLIPTextEncode`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`CM_FloatToInt`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`ManualSigmas`、`RandomNoise`、`SamplerCustomAdvanced`、`CFGGuider`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`JWInteger`、`DF_Int_to_Float`、`VHS_VideoCombine`
-
-**缺卡**（2）：`CR Text`、`MathExpression|pysssss`
+**有卡**：`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`CLIPTextEncode`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`CM_FloatToInt`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`ManualSigmas`、`RandomNoise`、`SamplerCustomAdvanced`、`CFGGuider`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`JWInteger`、`MathExpression|pysssss`、`CR Text`、`DF_Int_to_Float`、`VHS_VideoCombine`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

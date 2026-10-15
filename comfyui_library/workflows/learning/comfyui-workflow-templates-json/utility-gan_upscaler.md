@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility-gan_upsc
 hash: 7df9fb1b355252bc
 official: true
 coverage: 0.857143
-learned_at: 2026-10-10 22:49:38
+learned_at: 2026-10-15 22:24:56
 nodes: [LoadVideo, ImageUpscaleWithModel, CreateVideo, GetVideoComponents, UpscaleModelLoader, SaveVideo, MarkdownNote]
 patterns: []
 missing: []

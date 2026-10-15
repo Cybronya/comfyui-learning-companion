@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文生视频-汉服古风版-MV短视频_2046587712806850562.json
 hash: 7c6444f0045693db
-coverage: 0.767857
-learned_at: 2026-10-11 19:49:39
+coverage: 0.839286
+learned_at: 2026-10-15 22:45:10
 nodes: [INTConstant, SetLatentNoiseMask, SolidMask, SimpleMath+, easy showAnything, LTXVConditioning, CFGGuider, KSamplerSelect, BasicScheduler, LTXVConcatAVLatent, LTXVSeparateAVLatent, CM_FloatToInt, SoundFlow_GetLength, SetNode, SimpleMath+, SimpleMath+, Reroute, Reroute, INTConstant, INTConstant, LoraLoaderModelOnly, LTXVAudioVAELoader, LTXAVTextEncoderLoader, SetNode, SetNode, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, easy cleanGpuUsed, ImageSharpen, GetNode, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVCropGuides, GetNode, KSampler, EmptyLTXVLatentVideo, LTX2SamplingPreviewOverride, GetNode, MelBandRoFormerModelLoader, MelBandRoFormerSampler, PathchSageAttentionKJ, CLIPTextEncode, CheckpointLoaderSimple, LatentUpscaleModelLoader, LoadAudio, LTXVAudioVAEEncode, CLIPTextEncode, VHS_VideoCombine, Int, Int, LoraLoaderModelOnly, LoraLoaderModelOnly, TextInputNode, TrimAudioDuration]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 parameters: {"cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "sampler_name": "euler", "scheduler": "simple", "seed": 1030910731046630, "steps": 4}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
 # 视频生成/文生视频/LTX2.3文生视频-汉服古风版-MV短视频_2046587712806850562.json
@@ -94,11 +94,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **77%**（43/56）
+覆盖率 **84%**（47/56）
 
-**有卡**：`INTConstant`、`SetLatentNoiseMask`、`SolidMask`、`LTXVConditioning`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`CM_FloatToInt`、`SoundFlow_GetLength`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`RandomNoise`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`ImageSharpen`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`KSampler`、`EmptyLTXVLatentVideo`、`LTX2SamplingPreviewOverride`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`LoadAudio`、`LTXVAudioVAEEncode`、`VHS_VideoCombine`、`Int`、`TextInputNode`、`TrimAudioDuration`
-
-**缺卡**（4）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`INTConstant`、`SetLatentNoiseMask`、`SolidMask`、`SimpleMath+`、`LTXVConditioning`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`CM_FloatToInt`、`SoundFlow_GetLength`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`RandomNoise`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`ImageSharpen`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`KSampler`、`EmptyLTXVLatentVideo`、`LTX2SamplingPreviewOverride`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`LoadAudio`、`LTXVAudioVAEEncode`、`VHS_VideoCombine`、`Int`、`TextInputNode`、`TrimAudioDuration`
 
 **用到的条目**：KSampler、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
 
@@ -110,9 +108,5 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

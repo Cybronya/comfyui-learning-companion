@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltxv 2.3图生视频自动提示词版+顶级放大（最强一致性稳定版）_2030537820573540354.json
 hash: b73f60b0fdce04d4
-coverage: 0.823529
-learned_at: 2026-10-11 03:16:48
+coverage: 0.921569
+learned_at: 2026-10-15 22:45:21
 nodes: [JWInteger, MuyeSizeSelector, JWInteger, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, ImageFromBatch+, Float, SaveVideo, CreateVideo, easy cleanGpuUsed, LTXVAudioVAEDecode, FlashVSR_SM_Model, Note, LTXVAudioVAELoader, RandomNoise, VHS_VideoCombine, FlashVSR_SM_KSampler, LTXAVTextEncoderLoader, ResizeImageMaskNode, LTXVImgToVideoConditionOnly, CFGGuider, LTXVSeparateAVLatent, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVEmptyLatentAudio, CR Text, CR Text, Note, Note, JWInteger, JWInteger, PrimitiveFloat, LoadImage, RH_LLMAPI_Pro_Node, LTXVPreprocess, CM_FloatToInt, EmptyLTXVLatentVideo, PrimitiveBoolean, CLIPTextEncode, CLIPTextEncode, LTXVConcatAVLatent, PathchSageAttentionKJ, LTXVChunkFeedForward, ModelPatchTorchSettings, LoraLoaderModelOnly, VAEDecodeTiled, LatentUpscaleModelLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LTXVConditioning]
 patterns: []
-missing: [CR Text, CR Text, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "cfg": "randomize", "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "denoise": 11, "height": 25, "sampler_name": 2, "scheduler": 3.5, "seed": 1280, "steps": 718880462, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Ltxv 2.3图生视频自动提示词版+顶级放大（最强一致性稳定版）_2030537820573540354.json
@@ -91,18 +90,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **82%**（42/51）
+覆盖率 **92%**（47/51）
 
-**有卡**：`JWInteger`、`MuyeSizeSelector`、`Float`、`SaveVideo`、`CreateVideo`、`LTXVAudioVAEDecode`、`FlashVSR_SM_Model`、`LTXVAudioVAELoader`、`RandomNoise`、`VHS_VideoCombine`、`FlashVSR_SM_KSampler`、`LTXAVTextEncoderLoader`、`ResizeImageMaskNode`、`LTXVImgToVideoConditionOnly`、`CFGGuider`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`ManualSigmas`、`LTXVEmptyLatentAudio`、`LoadImage`、`RH_LLMAPI_Pro_Node`、`LTXVPreprocess`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`PrimitiveBoolean`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`LTXVConditioning`
+**有卡**：`JWInteger`、`MuyeSizeSelector`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageFromBatch+`、`Float`、`SaveVideo`、`CreateVideo`、`easy cleanGpuUsed`、`LTXVAudioVAEDecode`、`FlashVSR_SM_Model`、`LTXVAudioVAELoader`、`RandomNoise`、`VHS_VideoCombine`、`FlashVSR_SM_KSampler`、`LTXAVTextEncoderLoader`、`ResizeImageMaskNode`、`LTXVImgToVideoConditionOnly`、`CFGGuider`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`ManualSigmas`、`LTXVEmptyLatentAudio`、`CR Text`、`LoadImage`、`RH_LLMAPI_Pro_Node`、`LTXVPreprocess`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`PrimitiveBoolean`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`LTXVConditioning`
 
-**缺卡**（5）：`CR Text`、`CR Text`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy cleanGpuUsed`
-
-**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、FlashVSR_SM_KSampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

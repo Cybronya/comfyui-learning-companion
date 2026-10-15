@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json
 hash: 9d51405c3cccc408
-coverage: 0.853659
-learned_at: 2026-10-10 20:48:05
+coverage: 0.926829
+learned_at: 2026-10-15 22:25:11
 nodes: [ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, ImageScaleToTotalPixels, PrimitiveBoolean, 孤海注释, JoinStrings, EmptyLatentImage, ComfySwitchNode, TextGenerate, easy positive, BatchImagesNode, SaveImage, QwenImage21Cache, TextEncodeQwenImage21, UNETLoader, CLIPLoader, VAELoader, CLIPLoader, ShowText|pysssss, 忽略多组孤海, VAEDecode, KSampler, ResolutionSelector, easy positive, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: []
-missing: [easy positive, easy positive, 忽略多组孤海]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 795189855916023, "steps": 25, "width": 1024}
-discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 图片编辑工作流（官流） 2609_2105934523547602945.json
@@ -80,16 +79,8 @@ discoveries: [次要节点 `easy positive` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **85%**（35/41）
+覆盖率 **93%**（38/41）
 
-**有卡**：`ImageScaleToTotalPixels`、`PrimitiveBoolean`、`JoinStrings`、`EmptyLatentImage`、`TextGenerate`、`BatchImagesNode`、`SaveImage`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`KSampler`、`ResolutionSelector`、`LoadImage`
-
-**缺卡**（3）：`easy positive`、`easy positive`、`忽略多组孤海`
+**有卡**：`ImageScaleToTotalPixels`、`PrimitiveBoolean`、`JoinStrings`、`EmptyLatentImage`、`TextGenerate`、`easy positive`、`BatchImagesNode`、`SaveImage`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`忽略多组孤海`、`VAEDecode`、`KSampler`、`ResolutionSelector`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/地表最强-全能图片G2-GP-T-Image-2-图生图-0.1元_次_2047343738472636417.json
 hash: 351c7b4594623343
 coverage: 0.714286
-learned_at: 2026-10-10 20:48:16
+learned_at: 2026-10-15 22:25:49
 nodes: [JjkText, SaveImage, Float, RTXVideoSuperResolution, LoadImage, PrimitiveNode, RH_RhartImageG2ImageToImage]
 patterns: []
 missing: []

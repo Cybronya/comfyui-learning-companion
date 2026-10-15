@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 图生视频ComfyUI工作流【非导演工作台】_2066741149947219969.json
 hash: 3260ade04568f6aa
-coverage: 0.84
-learned_at: 2026-10-10 23:00:22
+coverage: 0.86
+learned_at: 2026-10-15 22:44:59
 nodes: [MarkdownNote, RandomNoise, RandomNoise, LTXVConcatAVLatent, ManualSigmas, CFGGuider, ResizeImagesByLongerEdge, LTXVPreprocess, ResizeImageMaskNode, EmptyLTXVLatentVideo, ComfyMathExpression, PrimitiveInt, PrimitiveInt, PrimitiveInt, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, PrimitiveInt, PrimitiveStringMultiline, LTXVSeparateAVLatent, SamplerCustomAdvanced, KSamplerSelect, KSamplerSelect, LTXVImgToVideoInplace, CFGGuider, PrimitiveBoolean, LTXVLatentUpsampler, LTXVImgToVideoInplace, Reroute, LTXVCropGuides, SamplerCustomAdvanced, ManualSigmas, CLIPTextEncode, LTXVConditioning, CLIPTextEncode, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SaveVideo, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, CheckpointLoaderSimple, LTXVAudioVAELoader, LoraLoaderModelOnly, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, LoadImage, TTResolutionSelector, ComfyMathExpression, ttN text]
 patterns: []
-missing: [ttN text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `ttN text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 图生视频ComfyUI工作流【非导演工作台】_2066741149947219969.json
@@ -84,14 +83,8 @@ discoveries: [次要节点 `ttN text` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **84%**（42/50）
+覆盖率 **86%**（43/50）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`ManualSigmas`、`CFGGuider`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ResizeImageMaskNode`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`CLIPTextEncode`、`LTXVConditioning`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`SaveVideo`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LoadImage`、`TTResolutionSelector`
-
-**缺卡**（1）：`ttN text`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`ManualSigmas`、`CFGGuider`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ResizeImageMaskNode`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`CLIPTextEncode`、`LTXVConditioning`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`SaveVideo`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LoadImage`、`TTResolutionSelector`、`ttN text`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识

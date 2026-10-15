@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0全能参考视频（3张图片+1个参考视频+1条音频）支持真人_2101580146510749698.json
 hash: d95f2b87857faa89
 coverage: 0.846154
-learned_at: 2026-10-11 22:12:47
+learned_at: 2026-10-15 22:46:58
 nodes: [LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, LoadImage, SaveVideo, LoadImage, RH_SparkVideoAssetCreate, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, LoadAudio, RH_SparkVideoAssetIdsMerge, MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

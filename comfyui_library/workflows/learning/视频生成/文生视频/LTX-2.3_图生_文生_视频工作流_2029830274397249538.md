@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3_图生_文生_视频工作流_2029830274397249538.json
 hash: a01daf3ee62cc6f2
-coverage: 0.464646
-learned_at: 2026-10-11 03:16:45
+coverage: 0.474747
+learned_at: 2026-10-15 22:44:42
 nodes: [GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, EmptyLTXVLatentVideo, SetNode, SetNode, SetNode, PrimitiveFloat, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, VAEDecodeTiled, LTXVConcatAVLatent, GetNode, GetNode, KSamplerSelect, GetNode, GetNode, GetNode, SimpleCalculatorKJ, GetNode, GetNode, SetNode, GetNode, GetNode, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, INTConstant, INTConstant, SetNode, ResizeImageMaskNode, SetNode, SetNode, GetImageSize, ResizeImagesByLongerEdge, SetNode, GetNode, GetNode, ImageResizeKJv2, SetNode, SetNode, SetNode, LTXVPreprocess, ManualSigmas, LTXVScheduler, GetNode, GetNode, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, LTXVAudioVAEDecode, SimpleCalculatorKJ, INTConstant, RandomNoise, GetNode, CFGGuider, SamplerCustomAdvanced, RandomNoise, LoraLoaderModelOnly, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, PrimitiveBoolean, MuyeTextEditOutput, LatentUpscaleModelLoader, DualCLIPLoader, VAELoader, VAELoaderKJ, SetNode, SetNode, SetNode, SetNode, GetNode, LTXVConditioning, CLIPTextEncode, GetNode, DualCLIPLoaderGGUF, LoadImage, CLIPTextEncode, Power Lora Loader (rgthree), UNETLoader, GetNode, CFGGuider, SaveImage, SamplerCustomAdvanced, VHS_VideoCombine]
 patterns: []
-missing: [Power Lora Loader (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "height": 24, "width": 121}
-discoveries: [次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX-2.3_图生_文生_视频工作流_2029830274397249538.json
@@ -132,14 +131,8 @@ discoveries: [次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用�
 
 ## 知识
 
-覆盖率 **46%**（46/99）
+覆盖率 **47%**（47/99）
 
-**有卡**：`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`LTXVConcatAVLatent`、`KSamplerSelect`、`SimpleCalculatorKJ`、`LTXVImgToVideoInplace`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`INTConstant`、`ResizeImageMaskNode`、`GetImageSize`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`LTXVPreprocess`、`ManualSigmas`、`LTXVScheduler`、`LTXVEmptyLatentAudio`、`LTXVAudioVAEDecode`、`RandomNoise`、`CFGGuider`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`PrimitiveBoolean`、`MuyeTextEditOutput`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoader`、`VAELoaderKJ`、`LTXVConditioning`、`CLIPTextEncode`、`DualCLIPLoaderGGUF`、`LoadImage`、`UNETLoader`、`SaveImage`、`VHS_VideoCombine`
-
-**缺卡**（1）：`Power Lora Loader (rgthree)`
+**有卡**：`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`LTXVConcatAVLatent`、`KSamplerSelect`、`SimpleCalculatorKJ`、`LTXVImgToVideoInplace`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`INTConstant`、`ResizeImageMaskNode`、`GetImageSize`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`LTXVPreprocess`、`ManualSigmas`、`LTXVScheduler`、`LTXVEmptyLatentAudio`、`LTXVAudioVAEDecode`、`RandomNoise`、`CFGGuider`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`PrimitiveBoolean`、`MuyeTextEditOutput`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoader`、`VAELoaderKJ`、`LTXVConditioning`、`CLIPTextEncode`、`DualCLIPLoaderGGUF`、`LoadImage`、`Power Lora Loader (rgthree)`、`UNETLoader`、`SaveImage`、`VHS_VideoCombine`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、SaveImage、LoadImage、UNETLoader、CFGGuider、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明

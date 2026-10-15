@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx-2.3-文生视频_2030526205614624769.json
 hash: f9a4d213cf70052a
-coverage: 0.75
-learned_at: 2026-10-11 03:16:50
+coverage: 0.931818
+learned_at: 2026-10-15 22:47:21
 nodes: [MathExpression|pysssss, CLIPTextEncode, RandomNoise, PathchSageAttentionKJ, CR Text, RandomNoise, CFGGuider, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CR Text Concatenate, LTXVEmptyLatentAudio, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, EmptyLTXVLatentVideo, PrimitiveInt, LTX2_NAG, easy convertAnything, CFGGuider, LTXVAudioVAELoader, PreviewAny, easy int, easy int, easy convertAnything, CR Text, KSamplerSelect, DualCLIPLoader, KSamplerSelect, VHS_VideoCombine, ManualSigmas, CLIPTextEncode, LTXVConditioning, RH_LLMAPI_Pro_Node, RH_LLMAPI_NODE, CheckpointLoaderSimple, LoraLoaderModelOnly, LatentUpscaleModelLoader, VAEDecodeTiled, RTXVideoSuperResolution, PrimitiveInt]
 patterns: []
-missing: [CR Text, CR Text, CR Text Concatenate, MathExpression|pysssss, easy convertAnything, easy convertAnything, easy int, easy int]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 20, "width": 93}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/ltx-2.3-文生视频_2030526205614624769.json
@@ -78,21 +77,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **75%**（33/44）
+覆盖率 **93%**（41/44）
 
-**有卡**：`CLIPTextEncode`、`RandomNoise`、`PathchSageAttentionKJ`、`CFGGuider`、`ManualSigmas`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTX2_NAG`、`LTXVAudioVAELoader`、`KSamplerSelect`、`DualCLIPLoader`、`VHS_VideoCombine`、`LTXVConditioning`、`RH_LLMAPI_Pro_Node`、`RH_LLMAPI_NODE`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`RTXVideoSuperResolution`
-
-**缺卡**（8）：`CR Text`、`CR Text`、`CR Text Concatenate`、`MathExpression|pysssss`、`easy convertAnything`、`easy convertAnything`、`easy int`、`easy int`
+**有卡**：`MathExpression|pysssss`、`CLIPTextEncode`、`RandomNoise`、`PathchSageAttentionKJ`、`CR Text`、`CFGGuider`、`ManualSigmas`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`CR Text Concatenate`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTX2_NAG`、`easy convertAnything`、`LTXVAudioVAELoader`、`easy int`、`KSamplerSelect`、`DualCLIPLoader`、`VHS_VideoCombine`、`LTXVConditioning`、`RH_LLMAPI_Pro_Node`、`RH_LLMAPI_NODE`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`RTXVideoSuperResolution`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

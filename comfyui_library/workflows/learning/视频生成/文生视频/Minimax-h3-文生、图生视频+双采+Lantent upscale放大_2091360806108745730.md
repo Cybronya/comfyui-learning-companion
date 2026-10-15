@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax-h3-文生、图生视频+双采+Lantent upscale放大_2091360806108745730.json
 hash: 8ed8d39d529d6e2e
 coverage: 0.837838
-learned_at: 2026-10-11 21:19:48
+learned_at: 2026-10-15 22:46:42
 nodes: [VAEDecode, VAEDecodeAudio, ResolutionSelector, KSamplerSelect, MarkdownNote, MarkdownNote, BasicGuider, MarkdownNote, PrimitiveFloat, LoraLoaderModelOnly, UNETLoader, VAELoader, VAELoader, CLIPLoader, ModelPreviewOverrideKJ, LTXVConcatAVLatent, RandomNoise, SamplerCustomAdvanced, PrimitiveStringMultiline, LTXVSeparateAVLatent, SamplerCustomAdvanced, BasicGuider, ModelAttentionBackend, ManualSigmas, CreateVideo, SaveVideo, ManualSigmas, ManualSigmas, BasicScheduler, SplitSigmas, LoadImage, LoadImage, ComfyMathExpression, PrimitiveFloat, MinimaxH3LatentUpscaler3D, MiniMaxH3ImageToVideo, MiniMaxH3SigmaShift]
 patterns: []
 missing: []

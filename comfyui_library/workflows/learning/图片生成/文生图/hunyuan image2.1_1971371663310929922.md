@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/hunyuan image2.1_1971371663310929922.json
 hash: 77f36881e8cd5b84
 coverage: 1
-learned_at: 2026-10-10 20:59:21
+learned_at: 2026-10-15 22:27:47
 nodes: [CLIPTextEncode, DualCLIPLoader, UNETLoader, ModelSamplingSD3, VAEDecode, SaveImage, VAELoader, EmptyHunyuanImageLatent, KSampler, CLIPTextEncode]
 patterns: []
 missing: []
@@ -20,29 +20,33 @@ parameters: {"cfg": 3, "denoise": 1, "sampler_name": "euler", "scheduler": "beta
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（10 个）：
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `DualCLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `ModelSamplingSD3`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `VAELoader`
 - `EmptyHunyuanImageLatent`
-- `KSampler`
-- `CLIPTextEncode`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
 
 ## 关键参数
 
-- `cfg` = `3`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `beta`
 - `seed` = `210500120531898`
 - `steps` = `20`
+- `cfg` = `3`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **100%**（10/10）
 
 **有卡**：`CLIPTextEncode`、`DualCLIPLoader`、`UNETLoader`、`ModelSamplingSD3`、`VAEDecode`、`SaveImage`、`VAELoader`、`EmptyHunyuanImageLatent`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、UNETLoader、EmptyHunyuanImageLatent、SaveImage、DualCLIPLoader

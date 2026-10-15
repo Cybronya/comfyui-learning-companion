@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-Image 2.1 重磅升级：一键抠图直出 PNG，无缝重塑图像工作流！_2106021474862723074.json
 hash: ce5681c701ca5d0e
 coverage: 1
-learned_at: 2026-10-10 20:48:09
+learned_at: 2026-10-15 22:25:22
 nodes: [CLIPLoader, VAELoader, QwenImage21Cache, VAEDecode, SaveImage, SaveImageAdvanced, KSampler, UNETLoader, TextEncodeQwenImage21, LoadImage]
 patterns: []
 missing: []

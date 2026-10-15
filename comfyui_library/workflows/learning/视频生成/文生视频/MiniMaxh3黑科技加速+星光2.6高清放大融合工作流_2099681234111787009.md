@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2099681234111787009.json
 hash: 569e71ccb7d88ba1
-coverage: 0.705882
-learned_at: 2026-10-11 22:12:44
+coverage: 0.745098
+learned_at: 2026-10-15 22:46:31
 nodes: [ModelAttentionBackend, KSamplerSelect, MarkdownNote, MiniMaxChunkFeedForward, H3SigmaRefiner, MiniMaxLowVRAMAttention, ConditioningZeroOut, CLIPLoader, ComfyMathExpression, ModelPreviewOverrideKJ, VAELoader, VAELoader, BasicScheduler, SelfLiftH3Sampler, Reroute, Reroute, Reroute, easy MiniMaxH3ReferenceToVideoBridge, UNETLoader, LoraLoaderModelOnly, VAEDecode, MarkdownNote, MarkdownNote, JWInteger, JWInteger, RH_Astra, easy cleanGpuUsed, Reroute, Reroute, Reroute, Reroute, PrimitiveFloat, Reroute, PrimitiveStringMultiline, LoadAudio, LoadAudio, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ResolutionSelector, SaveVideoNode, RH_Astra, SaveVideoNode, SaveVideoNode, CreateVideo, SaveVideo, VAEDecodeAudio]
 patterns: []
-missing: [easy MiniMaxH3ReferenceToVideoBridge, easy cleanGpuUsed]
-discoveries: [次要节点 `easy MiniMaxH3ReferenceToVideoBridge` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/MiniMaxh3黑科技加速+星光2.6高清放大融合工作流_2099681234111787009.json
@@ -77,15 +76,8 @@ discoveries: [次要节点 `easy MiniMaxH3ReferenceToVideoBridge` 知识库中�
 
 ## 知识
 
-覆盖率 **71%**（36/51）
+覆盖率 **75%**（38/51）
 
-**有卡**：`ModelAttentionBackend`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`H3SigmaRefiner`、`MiniMaxLowVRAMAttention`、`ConditioningZeroOut`、`CLIPLoader`、`ComfyMathExpression`、`ModelPreviewOverrideKJ`、`VAELoader`、`BasicScheduler`、`SelfLiftH3Sampler`、`UNETLoader`、`LoraLoaderModelOnly`、`VAEDecode`、`JWInteger`、`RH_Astra`、`LoadAudio`、`LoadImage`、`ResolutionSelector`、`SaveVideoNode`、`CreateVideo`、`SaveVideo`、`VAEDecodeAudio`
-
-**缺卡**（2）：`easy MiniMaxH3ReferenceToVideoBridge`、`easy cleanGpuUsed`
+**有卡**：`ModelAttentionBackend`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`H3SigmaRefiner`、`MiniMaxLowVRAMAttention`、`ConditioningZeroOut`、`CLIPLoader`、`ComfyMathExpression`、`ModelPreviewOverrideKJ`、`VAELoader`、`BasicScheduler`、`SelfLiftH3Sampler`、`easy MiniMaxH3ReferenceToVideoBridge`、`UNETLoader`、`LoraLoaderModelOnly`、`VAEDecode`、`JWInteger`、`RH_Astra`、`easy cleanGpuUsed`、`LoadAudio`、`LoadImage`、`ResolutionSelector`、`SaveVideoNode`、`CreateVideo`、`SaveVideo`、`VAEDecodeAudio`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `easy MiniMaxH3ReferenceToVideoBridge` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

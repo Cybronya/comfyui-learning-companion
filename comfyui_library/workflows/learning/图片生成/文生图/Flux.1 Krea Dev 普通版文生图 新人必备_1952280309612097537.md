@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
 hash: 027d9253e29dd3cd
-coverage: 0.521739
-learned_at: 2026-10-10 20:58:35
+coverage: 0.695652
+learned_at: 2026-10-15 22:26:25
 nodes: [ShowText|pysssss, DeepTranslatorTextNode, Anything Everywhere, Seed Everywhere, ShowText|pysssss, StringFunction|pysssss, CLIPTextEncode, EmptyLatentImage, Anything Everywhere, ConditioningZeroOut, VAELoader, PreviewImage, DualCLIPLoader, Anything Everywhere3, ModelSamplingFlux, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler (Efficient), UNETLoader, SaveImage, LayerFilter: HDREffects, DeepTranslatorTextNode, Note]
 patterns: []
-missing: [LayerFilter: HDREffects, StringFunction|pysssss, KSampler (Efficient), Seed Everywhere]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 535577283025654, "steps": 20, "width": 800}
-discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Flux.1 Krea Dev 普通版文生图 新人必备_1952280309612097537.json
@@ -21,6 +20,8 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Output → Other
+
 **节点**（23 个）：
 - `ShowText|pysssss`
 - `DeepTranslatorTextNode`
@@ -28,8 +29,8 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `Seed Everywhere`
 - `ShowText|pysssss`
 - `StringFunction|pysssss`
-- `CLIPTextEncode`
-- `EmptyLatentImage`
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
 - `Anything Everywhere`
 - `ConditioningZeroOut`
 - `VAELoader`
@@ -37,10 +38,10 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `DualCLIPLoader`
 - `Anything Everywhere3`
 - `ModelSamplingFlux`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler (Efficient)`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler (Efficient)` ★核心
+- `UNETLoader` ★核心
 - `SaveImage`
 - `LayerFilter: HDREffects`
 - `DeepTranslatorTextNode`
@@ -48,27 +49,20 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `800`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `535577283025654`
 - `steps` = `20`
-- `width` = `800`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **52%**（12/23）
+覆盖率 **70%**（16/23）
 
-**有卡**：`ShowText|pysssss`、`DeepTranslatorTextNode`、`Anything Everywhere`、`Seed Everywhere`、`StringFunction|pysssss`、`CLIPTextEncode`、`EmptyLatentImage`、`ConditioningZeroOut`、`VAELoader`、`PreviewImage`
+**有卡**：`DeepTranslatorTextNode`、`Seed Everywhere`、`StringFunction|pysssss`、`CLIPTextEncode`、`EmptyLatentImage`、`ConditioningZeroOut`、`VAELoader`、`DualCLIPLoader`、`ModelSamplingFlux`、`LoraLoaderModelOnly`、`KSampler (Efficient)`、`UNETLoader`、`SaveImage`、`LayerFilter: HDREffects`
 
-**缺卡**（4）：`LayerFilter: HDREffects`、`StringFunction|pysssss`、`KSampler (Efficient)`、`Seed Everywhere`
-
-## 学习发现
-
-- 次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、KSampler (Efficient)、Seed Everywhere

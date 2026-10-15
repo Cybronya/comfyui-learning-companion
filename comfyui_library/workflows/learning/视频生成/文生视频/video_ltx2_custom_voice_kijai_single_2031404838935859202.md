@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/video_ltx2_custom_voice_kijai_single_2031404838935859202.json
 hash: 3755ac10ee6818a8
 coverage: 0.854545
-learned_at: 2026-10-11 03:16:51
+learned_at: 2026-10-15 22:47:32
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, ComfyMathExpression, Reroute, ComfyMathExpression, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, ComfyMathExpression, PrimitiveBoolean, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LatentUpscaleModelLoader, VAEDecodeTiled, MarkdownNote, MarkdownNote, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, KSamplerSelect, LTXVSeparateAVLatent, LTXVImgToVideoInplace, LTXVConditioning, CLIPTextEncode, CFGGuider, LTXVLatentUpsampler, LTXVConcatAVLatent, LTXVImgToVideoInplace, CLIPTextEncode, VAELoaderKJ, DualCLIPLoader, MelBandRoFormerSampler, LTXVAudioVAEEncode, MelBandRoFormerModelLoader, PrimitiveInt, PrimitiveInt, SimpleCalculatorKJ, PrimitiveInt, SolidMask, TrimAudioDuration, CreateVideo, PrimitiveStringMultiline, SetLatentNoiseMask, VAELoaderKJ, LoadAudio, UNETLoader, LoadImage, PrimitiveInt, SaveVideo]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH_万相3.0-图生视频_2098945972377309186.json
 hash: 94fd9196800a381b
 coverage: 0.75
-learned_at: 2026-10-10 23:05:08
+learned_at: 2026-10-15 22:46:52
 nodes: [SaveImage, RH_RhartImageG2TextToImage, EmptyImage, PreviewImage]
 patterns: []
 missing: []

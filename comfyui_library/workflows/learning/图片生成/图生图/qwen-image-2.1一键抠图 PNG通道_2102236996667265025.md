@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1一键抠图 PNG通道_2102236996667265025.json
 hash: 386713589d08dd91
 coverage: 1
-learned_at: 2026-10-10 20:48:12
+learned_at: 2026-10-15 22:25:36
 nodes: [CLIPLoader, VAELoader, QwenImage21Cache, SaveImageAdvanced, KSampler, UNETLoader, TextEncodeQwenImage21, LoadImage, SaveImage, VAEDecode]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030491852985606146.json
 hash: 806c2459c18964b3
-coverage: 0.851852
-learned_at: 2026-10-13 01:36:51
+coverage: 0.907407
+learned_at: 2026-10-15 22:42:40
 nodes: [LTXVConcatAVLatent, KSamplerSelect, CFGGuider, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CLIPTextEncode, LTXVConditioning, CLIPTextEncode, LTXVChunkFeedForward, PathchSageAttentionKJ, ModelPatchTorchSettings, PrimitiveFloat, PrimitiveInt, VHS_VideoCombine, LTXVLatentUpsampler, RandomNoise, RandomNoise, LTXVImgToVideoConditionOnly, LatentUpscaleModelLoader, LTXVSeparateAVLatent, ManualSigmas, INTConstant, ManualSigmas, VAEDecodeTiled, LTXVAudioVAEDecode, CheckpointLoaderSimple, LTXVAudioVAELoader, LoraLoaderModelOnly, LTXAVTextEncoderLoader, CM_FloatToInt, EmptyLTXVLatentVideo, LTXVPreprocess, LTXVPreprocess, LTXVFirstLastFrameControl_TTP, LTXVEmptyLatentAudio, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, MarkdownNote, MarkdownNote, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveBoolean, VHS_VideoCombine, CR Text, INTConstant, INTConstant]
 patterns: []
-missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030491852985606146.json
@@ -88,16 +87,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **85%**（46/54）
+覆盖率 **91%**（49/54）
 
-**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`LatentUpscaleModelLoader`、`INTConstant`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVFirstLastFrameControl_TTP`、`LTXVEmptyLatentAudio`、`LoadImage`、`PrimitiveBoolean`
-
-**缺卡**（3）：`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`LatentUpscaleModelLoader`、`INTConstant`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVFirstLastFrameControl_TTP`、`LTXVEmptyLatentAudio`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`PrimitiveBoolean`、`CR Text`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识

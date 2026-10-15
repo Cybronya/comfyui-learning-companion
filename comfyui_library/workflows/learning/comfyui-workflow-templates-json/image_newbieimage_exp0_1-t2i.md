@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_newbieimage_exp0_1-t2i.json
 hash: 7bd2979e303896d5
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:48:21
+coverage: 0.444444
+learned_at: 2026-10-15 22:24:54
 nodes: [SaveImage, PrimitiveStringMultiline, StringReplace, PrimitiveStringMultiline, StringReplace, PrimitiveStringMultiline, MarkdownNote, MarkdownNote, 200c18f2-7c51-4b4a-bf17-293f2f691b1b]
 patterns: []
-missing: [200c18f2-7c51-4b4a-bf17-293f2f691b1b]
-discoveries: [次要节点 `200c18f2-7c51-4b4a-bf17-293f2f691b1b` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_newbieimage_exp0_1-t2i.json
@@ -36,14 +35,8 @@ discoveries: [次要节点 `200c18f2-7c51-4b4a-bf17-293f2f691b1b` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（3/9）
+覆盖率 **44%**（4/9）
 
-**有卡**：`SaveImage`、`StringReplace`
+**有卡**：`SaveImage`、`StringReplace`、`200c18f2-7c51-4b4a-bf17-293f2f691b1b`
 
-**缺卡**（1）：`200c18f2-7c51-4b4a-bf17-293f2f691b1b`
-
-**用到的条目**：SaveImage、StringReplace、sd15-t2i-basic、sd15-t2i-lora、String、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `200c18f2-7c51-4b4a-bf17-293f2f691b1b` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、StringReplace、200c18f2-7c51-4b4a-bf17-293f2f691b1b、sd15-t2i-basic、sd15-t2i-lora、String、CS_Preview_Any、easy_multitrackinfooutput

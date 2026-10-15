@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频Wan2.2 - T2V-rapid-aio AI 文生视频_2009171871626960898.json
 hash: fe58b7992343f7df
 coverage: 1
-learned_at: 2026-10-11 03:07:15
+learned_at: 2026-10-15 22:48:43
 nodes: [ModelSamplingSD3, VAEDecode, CLIPTextEncode, KSampler, CheckpointLoaderSimple, EmptyHunyuanLatentVideo, CLIPTextEncode, VHS_VideoCombine]
 patterns: []
 missing: []

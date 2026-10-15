@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2 lora最好用的林黛玉妹妹工作流和模型-可生成该人物任意写实风-可用于抖音快手等自媒体_1989283451264225282.json
 hash: b15fe90a0b96a6e3
 coverage: 0.615385
-learned_at: 2026-10-11 02:57:39
+learned_at: 2026-10-15 22:47:34
 nodes: [SetNode, GetNode, GetNode, GetNode, CFGZeroStar, UNETLoader, VAELoader, SetNode, LoraLoaderModelOnly, GetNode, SetNode, LoraLoaderModelOnly, UNETLoader, SetNode, WanVideoNAG, CLIPLoader, ModelSamplingSD3, GetNode, ModelSamplingSD3, PathchSageAttentionKJ, GetNode, MarkdownNote, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, SetNode, CLIPTextEncode, JoinStringMulti, VAEDecode, SetNode, GetNode, VHS_VideoCombine, SetNode, SaveImage, String, LoraLoaderModelOnly, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, JWStringMultiline]
 patterns: []
 missing: []

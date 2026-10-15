@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.0文生视频gguf版本_2012499867683262466.json
 hash: 4be3d045dc9f8841
 coverage: 0.576923
-learned_at: 2026-10-11 03:07:10
+learned_at: 2026-10-15 22:44:54
 nodes: [ManualSigmas, KSamplerSelect, EmptyImage, LTXVEmptyLatentAudio, ImageScaleBy, GetImageSize, KSamplerSelect, LTXVSeparateAVLatent, PrimitiveInt, Reroute, Reroute, Reroute, Reroute, CFGGuider, Reroute, Reroute, LTXVConditioning, Reroute, Reroute, EmptyLTXVLatentVideo, Reroute, LTXVCropGuides, RandomNoise, RandomNoise, LTXVAudioVAEDecode, LTXVSeparateAVLatent, Reroute, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, JoinStrings, Reroute, Reroute, Reroute, Reroute, MarkdownNote, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVScheduler, PrimitiveInt, PrimitiveFloat, VHS_VideoCombine, Note, Note, CLIPTextEncode, CLIPTextEncode, Reroute, Reroute, Reroute, INTConstant, INTConstant, INTConstant, Reroute, LTXVLatentUpsampler, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, MarkdownNote, MarkdownNote, ShowText|pysssss, PurgeVRAM_UTK, VAELoader, VAELoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LatentUpscaleModelLoader, TextInput_, VAEDecodeTiled, PurgeVRAM_UTK, UnetLoaderGGUF, Qwen3_VQA, DualCLIPLoader, DualCLIPLoaderGGUF, TextInput_, SomethingToString]
 patterns: []
 missing: []

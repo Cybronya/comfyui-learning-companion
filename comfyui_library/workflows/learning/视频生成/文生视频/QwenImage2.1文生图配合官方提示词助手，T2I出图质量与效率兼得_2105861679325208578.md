@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2105861679325208578.json
 hash: 3851008709c6fecd
-coverage: 0.833333
-learned_at: 2026-10-10 23:04:58
+coverage: 0.854167
+learned_at: 2026-10-15 22:46:51
 nodes: [UNETLoader, TextEncodeQwenImage21, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, ResolutionSelector, Any Switch (rgthree), Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, PrimitiveStringMultiline, TextGenerate, TextConcatenator, JsonExtractString, CLIPLoader, ShowAnything|Mie, SaveImageAdvanced, VAEDecode, SaveImage, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
-missing: [ShowAnything|Mie]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/QwenImage2.1文生图配合官方提示词助手，T2I出图质量与效率兼得_2105861679325208578.json
@@ -90,11 +90,9 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **83%**（40/48）
+覆盖率 **85%**（41/48）
 
-**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`TextGenerate`、`TextConcatenator`、`JsonExtractString`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`EmptyImage`
-
-**缺卡**（1）：`ShowAnything|Mie`
+**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`TextGenerate`、`TextConcatenator`、`JsonExtractString`、`ShowAnything|Mie`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`EmptyImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -105,5 +103,4 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

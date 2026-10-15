@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 PE 图像编辑2609_2106042591421747201.json
 hash: 38d714a165f41e3f
-coverage: 0.821429
-learned_at: 2026-10-10 20:48:05
+coverage: 0.892857
+learned_at: 2026-10-15 22:25:11
 nodes: [VAELoader, CR Prompt Text, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, QwenPERewriteT8, LoadImage, UNETLoader, easy showAnything, CLIPLoader, QwenImage21SageAttentionT8, QwenImage21BlockCacheT8, QwenImage21SpectrumT8, QwenImage21Cache, KSampler, easy cleanGpuUsed, SaveImage, VAEDecode, Note, TextEncodeQwenImage21, ComfySwitchNode, ResolutionSelector, EmptyLatentImage, LoadImage]
 patterns: []
-missing: [easy cleanGpuUsed, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 19960422, "steps": 40, "width": 1024}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 PE 图像编辑2609_2106042591421747201.json
@@ -67,15 +66,8 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **82%**（23/28）
+覆盖率 **89%**（25/28）
 
-**有卡**：`VAELoader`、`LoadImage`、`QwenPERewriteT8`、`UNETLoader`、`CLIPLoader`、`QwenImage21SageAttentionT8`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`QwenImage21Cache`、`KSampler`、`SaveImage`、`VAEDecode`、`TextEncodeQwenImage21`、`ResolutionSelector`、`EmptyLatentImage`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
+**有卡**：`VAELoader`、`CR Prompt Text`、`LoadImage`、`QwenPERewriteT8`、`UNETLoader`、`CLIPLoader`、`QwenImage21SageAttentionT8`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`QwenImage21Cache`、`KSampler`、`easy cleanGpuUsed`、`SaveImage`、`VAEDecode`、`TextEncodeQwenImage21`、`ResolutionSelector`、`EmptyLatentImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

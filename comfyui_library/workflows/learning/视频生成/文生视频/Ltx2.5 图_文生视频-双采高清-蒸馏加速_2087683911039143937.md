@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltx2.5 图_文生视频-双采高清-蒸馏加速_2087683911039143937.json
 hash: 0cce9529077dc66e
-coverage: 0.785714
-learned_at: 2026-10-11 20:53:39
+coverage: 0.803571
+learned_at: 2026-10-15 22:45:21
 nodes: [LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVLatentUpsampler, ComfyMathExpression, ComfyMathExpression, CLIPTextEncode, CLIPTextEncode, PrimitiveBoolean, CLIPLoader, TextGenerateLTX2Prompt, ComfySwitchNode, PreviewAny, ResizeImageMaskNode, PrimitiveInt, PrimitiveInt, LTXVPreprocess, LTXVConditioning, SamplerCustomAdvanced, RandomNoise, KSamplerSelect, LTXVSeparateAVLatent, RandomNoise, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVConcatAVLatent, LTXVDualCFGGuider, LTXVSeparateAVLatent, LatentUpscaleModelLoader, UNETLoader, CLIPLoader, VAELoader, VAELoader, LTXVImgToVideoInplace, PurgeVRAM_UTK, PrimitiveStringMultiline, LoadImage, PrimitiveBoolean, PrimitiveInt, PrimitiveInt, MarkdownNote, Note Plus (mtb), MarkdownNote, SaveVideo, CreateVideo, MarkdownNote, MarkdownNote, LTXVDualCFGGuider, KSamplerSelect, SamplerCustomAdvanced, ManualSigmas, ManualSigmas, ResolutionSelector]
 patterns: []
-missing: [Note Plus (mtb)]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Ltx2.5 图_文生视频-双采高清-蒸馏加速_2087683911039143937.json
@@ -89,14 +88,8 @@ discoveries: [次要节点 `Note Plus (mtb)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **79%**（44/56）
+覆盖率 **80%**（45/56）
 
-**有卡**：`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVLatentUpsampler`、`CLIPTextEncode`、`PrimitiveBoolean`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`ResizeImageMaskNode`、`LTXVPreprocess`、`LTXVConditioning`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVDualCFGGuider`、`LatentUpscaleModelLoader`、`UNETLoader`、`VAELoader`、`PurgeVRAM_UTK`、`LoadImage`、`SaveVideo`、`CreateVideo`、`ManualSigmas`、`ResolutionSelector`
-
-**缺卡**（1）：`Note Plus (mtb)`
+**有卡**：`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVLatentUpsampler`、`CLIPTextEncode`、`PrimitiveBoolean`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`ResizeImageMaskNode`、`LTXVPreprocess`、`LTXVConditioning`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVDualCFGGuider`、`LatentUpscaleModelLoader`、`UNETLoader`、`VAELoader`、`PurgeVRAM_UTK`、`LoadImage`、`Note Plus (mtb)`、`SaveVideo`、`CreateVideo`、`ManualSigmas`、`ResolutionSelector`
 
 **用到的条目**：VAELoader、CLIPTextEncode、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AA--LTX2.0自动提示词--文生视频-文生MV(对口型)-黄蝉lora_2017202468442087426.json
 hash: 141af2c9fb6e582c
-coverage: 0.714286
-learned_at: 2026-10-11 03:07:08
+coverage: 0.728571
+learned_at: 2026-10-15 22:43:58
 nodes: [LTXVCropGuides, LTXVSeparateAVLatent, KSamplerSelect, LTXAVTextEncoderLoader, LTXVConcatAVLatent, ManualSigmas, KSamplerSelect, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, RandomNoise, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, VAEDecodeTiled, GetImageSize, ImageScaleBy, LTXVConditioning, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVScheduler, CreateVideo, SaveVideo, VAEDecode, MarkdownNote, MarkdownNote, Note, LTXVEmptyLatentAudio, CFGGuider, Note, PrimitiveNode, CheckpointLoaderSimple, CFGGuider, SamplerCustomAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, EmptyImage, RandomNoise, LTXVAudioVAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Qwen3_VQA, easy showAnything, JoinStrings, TextInput_, easy showAnything, CLIPTextEncode, JoinStrings, CLIPTextEncode, LoraLoaderModelOnly, PrimitiveInt, PrimitiveFloat, PrimitiveInt, Note, Note, Note, RandomNoise, SamplerCustomAdvanced, VAEDecodeTiled, MelBandRoFormerModelLoader, SolidMask, LTXVAudioVAEEncode, SetLatentNoiseMask, MelBandRoFormerSampler, LatentUpscaleModelLoader, SetNode, SetNode, SetNode, LTXVSeparateAVLatent, TrimAudioDuration, VAELoaderKJ, LTXVSeparateAVLatent, LTXVLatentUpsampler, ManualSigmas, KSamplerSelect, LTXVConcatAVLatent, SamplerCustomAdvanced, EmptyImage, ImageScaleBy, GetImageSize, EmptyLTXVLatentVideo, LTXVConcatAVLatent, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVConditioning, SetNode, CLIPTextEncode, RandomNoise, KSamplerSelect, LTXVScheduler, CFGGuider, CFGGuider, GetNode, INTConstant, PrimitiveFloat, CM_FloatBinaryOperation, easy showAnything, CM_FloatToInt, CM_FloatBinaryOperation, INTConstant, PathchSageAttentionKJ, Note, DualCLIPLoaderGGUF, VAELoader, SetNode, SetNode, GetNode, VHS_VideoCombine, UnetLoaderGGUF, UNETLoader, LoraLoaderModelOnly, GetNode, LoraLoaderModelOnly, LTXVChunkFeedForward, INTConstant, CM_FloatBinaryOperation, LoadAudio, easy float, easy float, Qwen3_VQA, easy showAnything, JoinStrings, TextInput_, JoinStrings, TextInput_, TextInput_, TextInput_, easy showAnything, CLIPTextEncode, LoraLoaderModelOnly, SetNode, Note, Note, Note, Fast Groups Bypasser (rgthree), TextInput_]
 patterns: []
-missing: [easy float, easy float]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/AA--LTX2.0自动提示词--文生视频-文生MV(对口型)-黄蝉lora_2017202468442087426.json
@@ -174,15 +173,8 @@ discoveries: [次要节点 `easy float` 知识库中没有该节点类型的任�
 
 ## 知识
 
-覆盖率 **71%**（100/140）
+覆盖率 **73%**（102/140）
 
-**有卡**：`LTXVCropGuides`、`LTXVSeparateAVLatent`、`KSamplerSelect`、`LTXAVTextEncoderLoader`、`LTXVConcatAVLatent`、`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`GetImageSize`、`ImageScaleBy`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVScheduler`、`CreateVideo`、`SaveVideo`、`VAEDecode`、`LTXVEmptyLatentAudio`、`CFGGuider`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`EmptyImage`、`LTXVAudioVAELoader`、`Qwen3_VQA`、`JoinStrings`、`TextInput_`、`CLIPTextEncode`、`MelBandRoFormerModelLoader`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`MelBandRoFormerSampler`、`TrimAudioDuration`、`VAELoaderKJ`、`INTConstant`、`CM_FloatBinaryOperation`、`CM_FloatToInt`、`PathchSageAttentionKJ`、`DualCLIPLoaderGGUF`、`VAELoader`、`VHS_VideoCombine`、`UnetLoaderGGUF`、`UNETLoader`、`LTXVChunkFeedForward`、`LoadAudio`
-
-**缺卡**（2）：`easy float`、`easy float`
+**有卡**：`LTXVCropGuides`、`LTXVSeparateAVLatent`、`KSamplerSelect`、`LTXAVTextEncoderLoader`、`LTXVConcatAVLatent`、`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`GetImageSize`、`ImageScaleBy`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVScheduler`、`CreateVideo`、`SaveVideo`、`VAEDecode`、`LTXVEmptyLatentAudio`、`CFGGuider`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`EmptyImage`、`LTXVAudioVAELoader`、`Qwen3_VQA`、`JoinStrings`、`TextInput_`、`CLIPTextEncode`、`MelBandRoFormerModelLoader`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`MelBandRoFormerSampler`、`TrimAudioDuration`、`VAELoaderKJ`、`INTConstant`、`CM_FloatBinaryOperation`、`CM_FloatToInt`、`PathchSageAttentionKJ`、`DualCLIPLoaderGGUF`、`VAELoader`、`VHS_VideoCombine`、`UnetLoaderGGUF`、`UNETLoader`、`LTXVChunkFeedForward`、`LoadAudio`、`easy float`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CFGGuider、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识

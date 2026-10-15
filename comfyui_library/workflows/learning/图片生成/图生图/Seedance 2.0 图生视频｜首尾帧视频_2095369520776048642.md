@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedance 2.0 图生视频｜首尾帧视频_2095369520776048642.json
 hash: 584211a1011580a8
 coverage: 1
-learned_at: 2026-10-10 20:48:10
+learned_at: 2026-10-15 22:25:30
 nodes: [MuyeTextEditOutput, SaveVideo, LoadImage, LoadImage, RH_RhartVideoSparkvideo20ImageToVideo]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`MuyeTextEditOutput`、`SaveVideo`、`LoadImage`、`RH_RhartVideoSparkvideo20ImageToVideo`
 
-**用到的条目**：LoadImage、MuyeTextEditOutput、SaveVideo、RH_RhartVideoSparkvideo20ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage
+**用到的条目**：LoadImage、MuyeTextEditOutput、SaveVideo、RH_RhartVideoSparkvideo20ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、Image Load

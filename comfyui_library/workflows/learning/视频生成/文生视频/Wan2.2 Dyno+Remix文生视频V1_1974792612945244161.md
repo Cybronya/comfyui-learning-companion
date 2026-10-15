@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 Dyno+Remix文生视频V1_1974792612945244161.json
 hash: 4de1a59318687705
 coverage: 1
-learned_at: 2026-10-10 23:06:48
+learned_at: 2026-10-15 22:47:09
 nodes: [CLIPTextEncode, PathchSageAttentionKJ, EmptyHunyuanLatentVideo, INTConstant, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, VAELoader, CLIPLoader, INTConstant, VAEDecode, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, JWInteger, JWInteger, JWInteger, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, TT_img_enc, SaveImage]
 patterns: []
 missing: []

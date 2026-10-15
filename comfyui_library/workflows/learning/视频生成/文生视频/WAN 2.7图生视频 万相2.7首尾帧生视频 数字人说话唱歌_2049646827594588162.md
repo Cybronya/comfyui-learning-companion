@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN 2.7图生视频 万相2.7首尾帧生视频 数字人说话唱歌_2049646827594588162.json
 hash: 683d674685c06ea7
 coverage: 1
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:47:03
 nodes: [SaveVideo, RH_AlibabaWan27ImageToVideo, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`RH_AlibabaWan27ImageToVideo`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveVideo、RH_AlibabaWan27ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、RH_AlibabaWan27ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage、CS_Preview_Any

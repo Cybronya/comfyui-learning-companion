@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3 +fish audio 多人对话 工作流_2039992569207201794.json
 hash: 5a6fbb5f7173e3e4
-coverage: 0.75
-learned_at: 2026-10-11 19:49:44
+coverage: 0.868421
+learned_at: 2026-10-15 22:47:22
 nodes: [ManualSigmas, SamplerCustomAdvanced, RandomNoise, RandomNoise, KSamplerSelect, LatentUpscaleModelLoader, CFGGuider, CFGGuider, Reroute, SamplerCustomAdvanced, LTXVLatentUpsampler, SetNode, DualCLIPLoader, LTXVConditioning, VAELoaderKJ, ManualSigmas, Int, PrimitiveInt, SimpleMath+, MelBandRoFormerSampler, LTXVAudioVAEEncode, CLIPTextEncode, LTXVAudioVAEDecode, UNETLoader, SetLatentNoiseMask, ComfyMathExpression, MelBandRoFormerModelLoader, GetNode, SoundFlow_GetLength, SimpleMath+, SimpleMath+, QZ_ResolutionPreset, VAELoaderKJ, ConcatTextOfUtils, LTXVSeparateAVLatent, VAEDecodeTiled, CreateVideo, easy cleanGpuUsed, ConcatTextOfUtils, LTXVSeparateAVLatent, LTXVImgToVideoInplace, LTXVCropGuides, KSamplerSelect, LTXVConcatAVLatent, LTXVConcatAVLatent, SolidMask, CM_FloatToInt, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, ImageResizeKJv2, RH_LLMAPI_Pro_Node, LoadImage, ShowAnything|Mie, CLIPTextEncode, SaveVideo, FishS2MultiSpeakerTTS, LoadAudio, PreviewAudio, TrimAudio, Audio To Text (mtb), easy showAnything, LoadAudio, TrimAudio, Load Whisper (mtb), Audio To Text (mtb), MelBandRoFormerModelLoader, MelBandRoFormerSampler, PrimitiveNode, CR Text, easy showAnything, easy showAnything, PreviewAudio, TrimAudioDuration, easy showAnything, easy showAnything, RH_LLMAPI_Pro_Node]
 patterns: []
-missing: [Audio To Text (mtb), Audio To Text (mtb), CR Text, Load Whisper (mtb), ShowAnything|Mie, SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed]
-discoveries: [次要节点 `Audio To Text (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `Audio To Text (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Load Whisper (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/ltx2.3 +fish audio 多人对话 工作流_2039992569207201794.json
@@ -102,22 +101,8 @@ discoveries: [次要节点 `Audio To Text (mtb)` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **75%**（57/76）
+覆盖率 **87%**（66/76）
 
-**有卡**：`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`LatentUpscaleModelLoader`、`CFGGuider`、`LTXVLatentUpsampler`、`DualCLIPLoader`、`LTXVConditioning`、`VAELoaderKJ`、`Int`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`UNETLoader`、`SetLatentNoiseMask`、`ComfyMathExpression`、`MelBandRoFormerModelLoader`、`SoundFlow_GetLength`、`QZ_ResolutionPreset`、`ConcatTextOfUtils`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`LTXVImgToVideoInplace`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`SolidMask`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`ImageResizeKJv2`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`SaveVideo`、`FishS2MultiSpeakerTTS`、`LoadAudio`、`PreviewAudio`、`TrimAudio`、`TrimAudioDuration`
-
-**缺卡**（9）：`Audio To Text (mtb)`、`Audio To Text (mtb)`、`CR Text`、`Load Whisper (mtb)`、`ShowAnything|Mie`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`LatentUpscaleModelLoader`、`CFGGuider`、`LTXVLatentUpsampler`、`DualCLIPLoader`、`LTXVConditioning`、`VAELoaderKJ`、`Int`、`SimpleMath+`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`UNETLoader`、`SetLatentNoiseMask`、`ComfyMathExpression`、`MelBandRoFormerModelLoader`、`SoundFlow_GetLength`、`QZ_ResolutionPreset`、`ConcatTextOfUtils`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`easy cleanGpuUsed`、`LTXVImgToVideoInplace`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`SolidMask`、`CM_FloatToInt`、`EmptyLTXVLatentVideo`、`ImageResizeKJv2`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`ShowAnything|Mie`、`SaveVideo`、`FishS2MultiSpeakerTTS`、`LoadAudio`、`PreviewAudio`、`TrimAudio`、`Audio To Text (mtb)`、`Load Whisper (mtb)`、`CR Text`、`TrimAudioDuration`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Audio To Text (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Audio To Text (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Load Whisper (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

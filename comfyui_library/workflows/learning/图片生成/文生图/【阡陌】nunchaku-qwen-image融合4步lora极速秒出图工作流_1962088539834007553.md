@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/【阡陌】nunchaku-qwen-image融合4步lora极速秒出图工作流_1962088539834007553.json
 hash: 2ceda04c63caee08
 coverage: 1
-learned_at: 2026-10-10 20:59:32
+learned_at: 2026-10-15 22:28:06
 nodes: [SaveImage, VAEDecode, LoadImage, ModelSamplingAuraFlow, KSampler, EmptyLatentImage, LoraLoaderModelOnly, NunchakuQwenImageDiTLoader, UNETLoader, CLIPTextEncode, CLIPTextEncode, CLIPLoader, VAELoader]
 patterns: [text_to_image]
 missing: []
@@ -22,18 +22,20 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（13 个）：
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `LoadImage`
 - `ModelSamplingAuraFlow`
-- `KSampler`
-- `EmptyLatentImage`
-- `LoraLoaderModelOnly`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `NunchakuQwenImageDiTLoader`
-- `UNETLoader`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 
@@ -41,21 +43,23 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `248921332779208`
 - `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `768`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`SaveImage`、`VAEDecode`、`LoadImage`、`ModelSamplingAuraFlow`、`KSampler`、`EmptyLatentImage`、`LoraLoaderModelOnly`、`NunchakuQwenImageDiTLoader`、`UNETLoader`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
 ## 参数体检
 

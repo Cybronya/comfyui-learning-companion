@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1｜文生图图生图二合一整合流｜抠图也能一键搞定_2102568018860666881.json
 hash: 70a9400cd97d59e5
-coverage: 0.788235
-learned_at: 2026-10-10 20:48:08
+coverage: 0.835294
+learned_at: 2026-10-15 22:25:18
 nodes: [LoadImage, LoadImage, SaveImage, PreviewImage, VAELoader, CLIPLoader, EmptyLatentImage, PlaySound|pysssss, VAEDecode, TextEncodeQwenImage21, KSampler, JjkText, JjkText, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, KSampler, CLIPLoader, VAELoader, EmptyLatentImage, UNETLoader, QwenImage21Cache, PlaySound|pysssss, ComfySwitchNode, UNETLoader, ResolutionSelector, TextEncodeQwenImage21, VAEDecode, easy int, easy int, LoadImage, JjkText, JjkText, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), PreviewImage, SaveImage, Image Comparer (rgthree), 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [PlaySound|pysssss, PlaySound|pysssss, easy int, easy int]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1｜文生图图生图二合一整合流｜抠图也能一键搞定_2102568018860666881.json
@@ -127,11 +127,9 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **79%**（67/85）
+覆盖率 **84%**（71/85）
 
-**有卡**：`LoadImage`、`SaveImage`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`VAEDecode`、`TextEncodeQwenImage21`、`KSampler`、`ResolutionSelector`、`UNETLoader`、`QwenImage21Cache`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
-
-**缺卡**（4）：`PlaySound|pysssss`、`PlaySound|pysssss`、`easy int`、`easy int`
+**有卡**：`LoadImage`、`SaveImage`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`PlaySound|pysssss`、`VAEDecode`、`TextEncodeQwenImage21`、`KSampler`、`ResolutionSelector`、`UNETLoader`、`QwenImage21Cache`、`easy int`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -142,8 +140,4 @@ discoveries: [次要节点 `PlaySound|pysssss` 知识库中没有该节点类型
 
 ## 学习发现
 
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

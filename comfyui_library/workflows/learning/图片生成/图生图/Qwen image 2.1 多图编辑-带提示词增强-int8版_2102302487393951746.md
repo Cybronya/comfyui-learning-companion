@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1 多图编辑-带提示词增强-int8版_2102302487393951746.json
 hash: d615f943b9ffcbb7
 coverage: 0.793103
-learned_at: 2026-10-10 20:48:08
+learned_at: 2026-10-15 22:25:19
 nodes: [UNETLoader, CLIPLoader, easy showAnything, EmptyLatentImage, ComfySwitchNode, 孤海注释, SaveImage, VAEDecode, TextEncodeQwenImage21, KSampler, CLIPLoader, TextGenerateLTX2Prompt, VAELoader, PrimitiveBoolean, ResolutionSelector, BatchImagesNode, 孤海注释, PrimitiveStringMultiline, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []

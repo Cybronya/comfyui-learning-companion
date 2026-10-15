@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/自用版  Minimax H3 文生+图参生视频二采高清放大工作流（支持数字人）V4.1_2095775074598088705.json
 hash: 02ac84dd802a5304
-coverage: 0.412214
-learned_at: 2026-10-11 21:30:41
+coverage: 0.427481
+learned_at: 2026-10-15 22:48:59
 nodes: [SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, 孤海注释, 孤海注释, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, MiniMaxLowVRAMAttention, SetNode, SetNode, VAEDecodeAudio, GetNode, SetNode, GetNode, CreateVideo, GetNode, GetNode, VAEDecode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VHS_LoadVideo, 忽略多组孤海, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, Fast Groups Bypasser (rgthree), SamplerCustomAdvanced, GetNode, SolAttnPatch, ResolutionSelector, PrimitiveFloat, 忽略多组孤海, MarkdownNote, 孤海注释, GetNode, SetNode, Any Switch (rgthree), GetNode, BasicScheduler, KSamplerSelect, MiniMaxH3SigmaShift, GetNode, LoraLoaderModelOnly, CLIPLoader, VAELoader, VAELoader, SetNode, RandomNoise, ModelAttentionBackend, GetNode, SetNode, GetNode, Int, PrimitiveStringMultiline, PrimitiveFloat, MiniMaxH3ImageToVideo, 孤海注释, GetNode, GetNode, Any Switch (rgthree), Any Switch (rgthree), VAEDecodeAudio, MiniMaxH3ReferenceToVideo, SetNode, GetNode, GetNode, VAEDecode, BasicGuider, SetNode, BasicGuider, BasicScheduler, VAEDecode, VAEDecodeAudio, SetNode, SetNode, GetNode, GetNode, SaveVideo, GetNode, GetNode, Any Switch (rgthree), GetNode, BasicGuider, SamplerCustomAdvanced, CreateVideo, MinimaxH3LatentUpscaler3D, LTXVSeparateAVLatent, CreateVideo, LTXVConcatAVLatent, SamplerCustomAdvanced, BasicScheduler, 孤海注释, Any Switch (rgthree), SaveVideo, SetNode, SetNode, VRGDG_MiniMaxH3AudioDrive, LoadAudio, UNETLoader, LoadImage]
 patterns: []
-missing: [忽略多组孤海, 忽略多组孤海]
-discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/自用版  Minimax H3 文生+图参生视频二采高清放大工作流（支持数字人）V4.1_2095775074598088705.json
@@ -157,15 +156,8 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **41%**（54/131）
+覆盖率 **43%**（56/131）
 
-**有卡**：`ComfyMathExpression`、`MiniMaxLowVRAMAttention`、`VAEDecodeAudio`、`CreateVideo`、`VAEDecode`、`LoadImage`、`VHS_LoadVideo`、`MiniMaxChunkFeedForward`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`PathchSageAttentionKJ`、`SamplerCustomAdvanced`、`SolAttnPatch`、`ResolutionSelector`、`BasicScheduler`、`KSamplerSelect`、`MiniMaxH3SigmaShift`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`RandomNoise`、`ModelAttentionBackend`、`Int`、`MiniMaxH3ImageToVideo`、`MiniMaxH3ReferenceToVideo`、`BasicGuider`、`SaveVideo`、`MinimaxH3LatentUpscaler3D`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`VRGDG_MiniMaxH3AudioDrive`、`LoadAudio`、`UNETLoader`
-
-**缺卡**（2）：`忽略多组孤海`、`忽略多组孤海`
+**有卡**：`ComfyMathExpression`、`MiniMaxLowVRAMAttention`、`VAEDecodeAudio`、`CreateVideo`、`VAEDecode`、`LoadImage`、`VHS_LoadVideo`、`忽略多组孤海`、`MiniMaxChunkFeedForward`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`PathchSageAttentionKJ`、`SamplerCustomAdvanced`、`SolAttnPatch`、`ResolutionSelector`、`BasicScheduler`、`KSamplerSelect`、`MiniMaxH3SigmaShift`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`RandomNoise`、`ModelAttentionBackend`、`Int`、`MiniMaxH3ImageToVideo`、`MiniMaxH3ReferenceToVideo`、`BasicGuider`、`SaveVideo`、`MinimaxH3LatentUpscaler3D`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`VRGDG_MiniMaxH3AudioDrive`、`LoadAudio`、`UNETLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识

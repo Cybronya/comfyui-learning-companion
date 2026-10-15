@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 3.0图像编辑工作流｜多图融合一句话改图_2103056580613857281.json
 hash: 6dfb29984acf4e90
 coverage: 0.857143
-learned_at: 2026-10-10 20:48:08
+learned_at: 2026-10-15 22:25:18
 nodes: [LoadImage, LoadImage, SaveImage, Note, PrimitiveStringMultiline, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, TextEncodeQwenImageEditPlus, ImageScaleToTotalPixels, VAEEncode, KSampler, VAEDecode]
 patterns: [image_to_image]
 missing: []

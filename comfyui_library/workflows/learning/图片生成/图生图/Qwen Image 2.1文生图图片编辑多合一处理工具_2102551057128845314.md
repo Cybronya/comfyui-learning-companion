@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json
 hash: 1e76590741557f2e
-coverage: 0.481481
-learned_at: 2026-10-10 20:48:07
+coverage: 0.546296
+learned_at: 2026-10-15 22:25:17
 nodes: [VAELoader, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, LoadImage, UNETLoader, CLIPLoader, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, GetNode, GetNode, GetNode, EmptyLatentImage, GetNode, easy boolean, SetNode, easy boolean, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LoadImage, GetNode, Any To String (mtb), llama_cpp_model_loader, ImpactConditionalBranch, ImpactConditionalBranch, GetNode, llama_cpp_instruct_adv, XB_BatchImages, ShowText|pysssss, SetNode, CR Text, CR Text, Fast Groups Muter (rgthree), ResolutionSelector, SetNode, SetNode, QwenImage21Cache, KSampler, GetNode, ComfySwitchNode, CR Text, SetNode, SetNode, TextEncodeQwenImage21, easy cleanGpuUsed, VAEDecode, SaveImage, SaveImageAdvanced, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [Any To String (mtb), CR Text, CR Text, CR Text, easy boolean, easy boolean, easy cleanGpuUsed]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1文生图图片编辑多合一处理工具_2102551057128845314.json
@@ -150,11 +150,9 @@ discoveries: [次要节点 `Any To String (mtb)` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **48%**（52/108）
+覆盖率 **55%**（59/108）
 
-**有卡**：`VAELoader`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`EmptyLatentImage`、`llama_cpp_model_loader`、`ImpactConditionalBranch`、`llama_cpp_instruct_adv`、`XB_BatchImages`、`ResolutionSelector`、`QwenImage21Cache`、`KSampler`、`TextEncodeQwenImage21`、`VAEDecode`、`SaveImage`、`SaveImageAdvanced`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（7）：`Any To String (mtb)`、`CR Text`、`CR Text`、`CR Text`、`easy boolean`、`easy boolean`、`easy cleanGpuUsed`
+**有卡**：`VAELoader`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`EmptyLatentImage`、`easy boolean`、`Any To String (mtb)`、`llama_cpp_model_loader`、`ImpactConditionalBranch`、`llama_cpp_instruct_adv`、`XB_BatchImages`、`CR Text`、`ResolutionSelector`、`QwenImage21Cache`、`KSampler`、`TextEncodeQwenImage21`、`easy cleanGpuUsed`、`VAEDecode`、`SaveImage`、`SaveImageAdvanced`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -165,11 +163,4 @@ discoveries: [次要节点 `Any To String (mtb)` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

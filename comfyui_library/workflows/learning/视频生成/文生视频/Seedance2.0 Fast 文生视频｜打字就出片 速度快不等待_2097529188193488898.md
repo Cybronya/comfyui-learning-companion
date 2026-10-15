@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0 Fast 文生视频｜打字就出片 速度快不等待_2097529188193488898.json
 hash: 8c0d213359cbb255
 coverage: 1
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20FastTextToVideo]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0 Fast 全素材+ID工作流_2059887943552167937.json
 hash: 59d6bd6a7480fb6f
 coverage: 0.6
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, PreviewAny, PreviewAny, LoadVideo, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadAudio, LoadVideo, LoadVideo, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, RH_SparkVideoAssetIdsMerge, RH_RhartVideoSparkvideo20FastMultimodalVideo]
 patterns: []
 missing: []

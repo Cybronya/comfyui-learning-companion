@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/templates_rob_portrait_light_migration.app.json
 hash: ca6dc58fdfc30736
 official: true
-coverage: 0.428571
-learned_at: 2026-10-10 22:49:34
+coverage: 0.571429
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, Note, MarkdownNote, LoadImage, LoadImage, Note, d878efb6-f575-4da6-bf2d-d9f32b55643c]
 patterns: []
-missing: [d878efb6-f575-4da6-bf2d-d9f32b55643c]
-discoveries: [次要节点 `d878efb6-f575-4da6-bf2d-d9f32b55643c` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/templates_rob_portrait_light_migration.app.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `d878efb6-f575-4da6-bf2d-d9f32b55643c` 知识库中�
 
 ## 知识
 
-覆盖率 **43%**（3/7）
+覆盖率 **57%**（4/7）
 
-**有卡**：`SaveImage`、`LoadImage`
+**有卡**：`SaveImage`、`LoadImage`、`d878efb6-f575-4da6-bf2d-d9f32b55643c`
 
-**缺卡**（1）：`d878efb6-f575-4da6-bf2d-d9f32b55643c`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `d878efb6-f575-4da6-bf2d-d9f32b55643c` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、d878efb6-f575-4da6-bf2d-d9f32b55643c、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput

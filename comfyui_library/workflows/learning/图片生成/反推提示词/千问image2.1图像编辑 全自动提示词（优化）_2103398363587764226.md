@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json
 hash: 53cae23ad9dba930
-coverage: 0.305085
-learned_at: 2026-10-10 20:48:01
+coverage: 0.372881
+learned_at: 2026-10-15 22:25:03
 nodes: [CLIPLoader, GetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, QwenImage21Cache, Seed (rgthree), EmptyLatentImage, GetNode, SetNode, VAELoader, UNETLoader, SetNode, GetNode, 忽略多组孤海, QwenPERewriteT8, ShowText|pysssss, Note, GetNode, GetNode, SetNode, SaveImageAdvanced, VAEDecode, SaveImage, KSampler, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, TextEncodeQwenImage21, SetNode, SetNode, SetNode, SetNode, LoadImage, 忽略多组孤海, ComfySwitchNode, ResolutionSelector, Note, SetNode, Note, Text Multiline, Image Comparer (rgthree), LoadImage, LoadImage, Note, XinbaoImageStandardizer]
 patterns: []
-missing: [Text Multiline, 忽略多组孤海, 忽略多组孤海, Seed (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 153481661071141, "steps": 25, "width": 1024}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/反推提示词/千问image2.1图像编辑 全自动提示词（优化）_2103398363587764226.json
@@ -98,17 +97,8 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **31%**（18/59）
+覆盖率 **37%**（22/59）
 
-**有卡**：`CLIPLoader`、`LoadImage`、`QwenImage21Cache`、`EmptyLatentImage`、`VAELoader`、`UNETLoader`、`QwenPERewriteT8`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`KSampler`、`TextEncodeQwenImage21`、`ResolutionSelector`、`XinbaoImageStandardizer`
-
-**缺卡**（4）：`Text Multiline`、`忽略多组孤海`、`忽略多组孤海`、`Seed (rgthree)`
+**有卡**：`CLIPLoader`、`LoadImage`、`QwenImage21Cache`、`Seed (rgthree)`、`EmptyLatentImage`、`VAELoader`、`UNETLoader`、`忽略多组孤海`、`QwenPERewriteT8`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`KSampler`、`TextEncodeQwenImage21`、`ResolutionSelector`、`Text Multiline`、`XinbaoImageStandardizer`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

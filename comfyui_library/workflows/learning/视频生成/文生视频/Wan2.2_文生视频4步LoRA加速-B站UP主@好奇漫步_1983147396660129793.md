@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_文生视频4步LoRA加速-B站UP主@好奇漫步_1983147396660129793.json
 hash: 1185b17f308897dd
 coverage: 0.868421
-learned_at: 2026-10-11 02:45:02
+learned_at: 2026-10-15 22:47:13
 nodes: [CLIPLoader, VAELoader, ModelSamplingSD3, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, CreateVideo, SaveVideo, MarkdownNote, VAEDecode, ModelSamplingSD3, CLIPTextEncode, CreateVideo, KSamplerAdvanced, CLIPTextEncode, CLIPTextEncode, VAEDecode, KSamplerAdvanced, SaveImage, EmptyHunyuanLatentVideo, Note, SaveVideo, SaveImage, KSamplerAdvanced, UNETLoader, UNETLoader, MarkdownNote, MarkdownNote, Note, CLIPTextEncode, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoadImage]
 patterns: []
 missing: []

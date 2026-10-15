@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.2-AllInOne单图参考_2072999602976235520.json
 hash: e158098893515011
-coverage: 0.689655
-learned_at: 2026-10-11 20:38:42
+coverage: 0.896552
+learned_at: 2026-10-15 22:47:04
 nodes: [GetImageSize, Image Blank, WanVideoVAELoader, PreviewImage, LayerMask: SAM2Ultra, easy ifElse, PreviewImage, LayerMask: ObjectDetectorFL2, LayerMask: LoadFlorence2Model, ImageCompositeMasked, LayerUtility: PurgeVRAM, INTConstant, VHS_VideoCombine, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoLoraSelect, WanVideoSetLoRAs, WanVideoTextEncode, WanVideoDecode, LoadWanVideoT5TextEncoder, INTConstant, INTConstant, WanVideoVACEEncode, ImageResizeKJv2, WanVideoBlockSwap, WanVideoModelLoader, WanVideoSampler, String Literal, LoadImage]
 patterns: []
-missing: [Image Blank, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM, String Literal]
-discoveries: [次要节点 `Image Blank` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/WAN2.2-AllInOne单图参考_2072999602976235520.json
@@ -55,19 +54,8 @@ discoveries: [次要节点 `Image Blank` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **69%**（20/29）
+覆盖率 **90%**（26/29）
 
-**有卡**：`GetImageSize`、`WanVideoVAELoader`、`ImageCompositeMasked`、`INTConstant`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`WanVideoTextEncode`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoVACEEncode`、`ImageResizeKJv2`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoSampler`、`LoadImage`
-
-**缺卡**（6）：`Image Blank`、`LayerMask: LoadFlorence2Model`、`LayerMask: ObjectDetectorFL2`、`LayerMask: SAM2Ultra`、`LayerUtility: PurgeVRAM`、`String Literal`
+**有卡**：`GetImageSize`、`Image Blank`、`WanVideoVAELoader`、`LayerMask: SAM2Ultra`、`LayerMask: ObjectDetectorFL2`、`LayerMask: LoadFlorence2Model`、`ImageCompositeMasked`、`LayerUtility: PurgeVRAM`、`INTConstant`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`WanVideoTextEncode`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoVACEEncode`、`ImageResizeKJv2`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoSampler`、`String Literal`、`LoadImage`
 
 **用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识

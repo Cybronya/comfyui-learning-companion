@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Worker T2V V1.1_1988451831963672577.json
 hash: 246699cbb71142c2
-coverage: 0.8
-learned_at: 2026-10-11 02:57:39
+coverage: 0.971429
+learned_at: 2026-10-15 22:47:17
 nodes: [CR Text, RH_LLMAPI_NODE, CLIPTextEncode, UNETLoader, LoraLoaderModelOnly, JWInteger, JWInteger, easy showAnything, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, INTConstant, INTConstant, CLIPTextEncode, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, INTConstant, EmptyHunyuanLatentVideo, MathExpression|pysssss, CR Text, JWInteger, ImageFromBatch+, LayerUtility: PurgeVRAM V2, FlashVSRNode, RIFE VFI, VHS_VideoCombine]
 patterns: []
-missing: [CR Text, CR Text, ImageFromBatch+, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, RIFE VFI]
+missing: []
 parameters: {"cfg": 10, "denoise": "beta", "sampler_name": 1, "scheduler": "uni_pc", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Worker T2V V1.1_1988451831963672577.json
@@ -71,19 +70,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **80%**（28/35）
+覆盖率 **97%**（34/35）
 
-**有卡**：`RH_LLMAPI_NODE`、`CLIPTextEncode`、`UNETLoader`、`LoraLoaderModelOnly`、`JWInteger`、`CLIPLoader`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`INTConstant`、`KSamplerAdvanced`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`FlashVSRNode`、`VHS_VideoCombine`
-
-**缺卡**（6）：`CR Text`、`CR Text`、`ImageFromBatch+`、`LayerUtility: PurgeVRAM V2`、`MathExpression|pysssss`、`RIFE VFI`
+**有卡**：`CR Text`、`RH_LLMAPI_NODE`、`CLIPTextEncode`、`UNETLoader`、`LoraLoaderModelOnly`、`JWInteger`、`CLIPLoader`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`INTConstant`、`KSamplerAdvanced`、`VAEDecode`、`EmptyHunyuanLatentVideo`、`MathExpression|pysssss`、`ImageFromBatch+`、`LayerUtility: PurgeVRAM V2`、`FlashVSRNode`、`RIFE VFI`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识

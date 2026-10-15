@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-T2V-A14B-4steps-250928-dyno-NativeComfy_1974515256741507074.json
 hash: a9ade7d350da21cc
 coverage: 0.823529
-learned_at: 2026-10-10 23:07:16
+learned_at: 2026-10-15 22:47:12
 nodes: [CLIPTextEncode, Note, MarkdownNote, ModelSamplingSD3, Note, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, CLIPTextEncode, UNETLoader, CLIPLoader, VAELoader, UNETLoader, LoraLoaderModelOnly, EmptyHunyuanLatentVideo, VAEDecode]
 patterns: []
 missing: []

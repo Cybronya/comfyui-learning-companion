@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 t2v 2.5D 奶油风格文生视频_2055255391927324673.json
 hash: 5924221fb588306e
 coverage: 0.84
-learned_at: 2026-10-11 19:49:36
+learned_at: 2026-10-15 22:44:58
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, KSamplerSelect, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, PrimitiveInt, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, MarkdownNote, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveBoolean, CFGGuider, CLIPTextEncode, LTXVConditioning, ManualSigmas, SaveVideo, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, Fast Groups Bypasser (rgthree), llama_cpp_parameters, llama_cpp_model_loader, llama_cpp_instruct_adv, CLIPTextEncode, LTX2_NAG, Reroute, CreateVideo, LTXVAudioVAELoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVLatentUpsampler, LatentUpscaleModelLoader, LTXVLatentUpsampler, PrimitiveStringMultiline]
 patterns: []
 missing: []

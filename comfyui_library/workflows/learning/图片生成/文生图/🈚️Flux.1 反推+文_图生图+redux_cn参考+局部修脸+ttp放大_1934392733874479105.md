@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/🈚️Flux.1 反推+文_图生图+redux_cn参考+局部修脸+ttp放大_1934392733874479105.json
 hash: b6a84278d4eb9bca
-coverage: 0.353909
-learned_at: 2026-10-10 21:00:01
+coverage: 0.440329
+learned_at: 2026-10-15 22:29:11
 nodes: [BasicGuider, BasicGuider, SetNode, SetNode, KSamplerSelect, BasicGuider, RandomNoise, VAEEncode, BasicScheduler, SetNode, GetNode, GetNode, ModelSamplingFlux, GetNode, GetNode, GetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, GetNode, GetNode, VAELoader, Anything Everywhere, FluxGuidance, ConditioningZeroOut, FaceSegmentation, MaskToSEGS, VAEDecodeTiled, easy imageListToImageBatch, PreviewImage, AIO_Preprocessor, AIO_Preprocessor, SetNode, PreviewImage, SetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, SetNode, SamplerCustomAdvanced, VAEDecode, Fast Groups Bypasser (rgthree), VAEEncode, GetNode, GetNode, SetNode, RebatchLatents, RepeatLatentBatch, InjectLatentNoise+, GetNode, SetNode, SetNode, SetNode, NunchakuFluxDiTLoader, Reroute, ControlNetLoader, LoraLoaderModelOnly, SetNode, SetNode, SetNode, SetNode, easy cleanGpuUsed, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Any Switch (rgthree), GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), Reroute, ImageUpscaleWithModel, TTP_Tile_image_size, ImageScaleToTotalPixels, SamplerCustomAdvanced, FaceAnalysisModels, SetNode, Any Switch (rgthree), GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, easy cleanGpuUsed, SetNode, GetNode, LayerUtility: TextJoin, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), GetNode, Int, SimpleMathSlider+, FluxGuidance, PreviewImage, PreviewImage, GetNode, SetNode, UpscaleModelLoader, ImageResizeKJ, GetNode, SetNode, ImageFromBatch+, easy imageCount, Text, Display Any (rgthree), GetNode, Any Switch (rgthree), TTP_Image_Assy, TTP_Image_Tile_Batch, PreviewImage, easy imageBatchToImageList, easy forLoopEnd, ImageListToBatch+, easy forLoopStart, ImageFromBatch, Text, RH_Translator, ApplySageAttention, easy batchAnything, DualCLIPLoader, SetNode, GetNode, GetNode, CLIPTextEncode, BasicScheduler, BasicScheduler, FluxGuidance, FluxGuidance, PreviewImage, PreviewImage, SaveImage, Fast Groups Bypasser (rgthree), SetNode, CLIPVisionLoader, StyleModelLoader, SetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), ControlNetApplySD3, SetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), SetUnionControlNetType, Reroute, SetNode, CLIPTextEncode, ConditioningZeroOut, SetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), GetNode, GetNode, GetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), easy int, PreviewImage, GetNode, PreviewImage, LoadImage, SetNode, LoadImage, SetNode, Fast Groups Bypasser (rgthree), Reroute, Anything Everywhere, ModelSamplingFlux, GetNode, GetNode, SetNode, ModelSamplingFlux, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, GetNode, GetNode, GetNode, EasyCache, RandomNoise, GetNode, SetNode, GetNode, GetNode, RandomNoise, DetailerForEachDebug, InjectLatentNoise+, SetNode, ControlNetApplySD3, Fast Groups Bypasser (rgthree), easy seed, LoraLoaderModelOnly, GetNode, SetNode, SetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Any Switch (rgthree), SaveImage, SamplerCustomAdvanced, VAEDecode, GetNode, GetNode, ImageSmartSharpen+, GetNode, LatentPixelScale, GetNode, UpscaleModelLoader, Any Switch (rgthree), GetNode, Reroute, Any Switch (rgthree), GetNode, Float, SimpleMathSlider+, Bjornulf_ShowStringText, PreviewAny, AILab_QwenVL, GetNode, LoadImage, Fast Groups Bypasser (rgthree), LoadImage, Fast Groups Bypasser (rgthree), ImpactSwitch, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), ReduxAdvanced, ReduxAdvanced, SaveImage, SaveImage, Note, KSamplerSelect, DetailDaemonSamplerNode, KSamplerSelect, DetailDaemonSamplerNode, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [Display Any (rgthree), ImageFromBatch+, ImageListToBatch+, ImageSmartSharpen+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: TextJoin, SimpleMathSlider+, SimpleMathSlider+, easy batchAnything, easy cleanGpuUsed, easy cleanGpuUsed, easy forLoopEnd, easy forLoopStart, easy imageBatchToImageList, easy imageCount, easy imageListToImageBatch, easy int, InjectLatentNoise+, InjectLatentNoise+, easy seed]
+missing: []
 parameters: {"controlnet_strength": 0.8000000000000002}
-discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageListToBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMathSlider+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMathSlider+` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageCount` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `InjectLatentNoise+` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `InjectLatentNoise+` 仅有 VAE 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/🈚️Flux.1 反推+文_图生图+redux_cn参考+局部修脸+ttp放大_1934392733874479105.json
@@ -21,15 +20,17 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（243 个）：
 - `BasicGuider`
 - `BasicGuider`
 - `SetNode`
 - `SetNode`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `BasicGuider`
 - `RandomNoise`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `BasicScheduler`
 - `SetNode`
 - `GetNode`
@@ -49,7 +50,7 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `ConditioningZeroOut`
 - `FaceSegmentation`
 - `MaskToSEGS`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `easy imageListToImageBatch`
 - `PreviewImage`
 - `AIO_Preprocessor`
@@ -61,10 +62,10 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `GetNode`
 - `GetNode`
 - `SetNode`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
 - `Fast Groups Bypasser (rgthree)`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `GetNode`
 - `GetNode`
 - `SetNode`
@@ -78,7 +79,7 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `NunchakuFluxDiTLoader`
 - `Reroute`
 - `ControlNetLoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `SetNode`
 - `SetNode`
 - `SetNode`
@@ -96,7 +97,7 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `ImageUpscaleWithModel`
 - `TTP_Tile_image_size`
 - `ImageScaleToTotalPixels`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `FaceAnalysisModels`
 - `SetNode`
 - `Any Switch (rgthree)`
@@ -146,7 +147,7 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `SetNode`
 - `GetNode`
 - `GetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `BasicScheduler`
 - `BasicScheduler`
 - `FluxGuidance`
@@ -161,7 +162,7 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `SetNode`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
-- `ControlNetApplySD3`
+- `ControlNetApplySD3` ★核心
 - `SetNode`
 - `Fast Groups Bypasser (rgthree)`
 - `Fast Groups Bypasser (rgthree)`
@@ -169,7 +170,7 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `SetUnionControlNetType`
 - `Reroute`
 - `SetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `ConditioningZeroOut`
 - `SetNode`
 - `GetNode`
@@ -198,9 +199,9 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `SetNode`
 - `ModelSamplingFlux`
 - `SetNode`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
 - `GetNode`
 - `GetNode`
 - `GetNode`
@@ -214,10 +215,10 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `DetailerForEachDebug`
 - `InjectLatentNoise+`
 - `SetNode`
-- `ControlNetApplySD3`
+- `ControlNetApplySD3` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `easy seed`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `GetNode`
 - `SetNode`
 - `SetNode`
@@ -225,8 +226,8 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `Fast Groups Bypasser (rgthree)`
 - `Any Switch (rgthree)`
 - `SaveImage`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
 - `GetNode`
 - `GetNode`
 - `ImageSmartSharpen+`
@@ -259,12 +260,12 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 - `SaveImage`
 - `SaveImage`
 - `Note`
-- `KSamplerSelect`
-- `DetailDaemonSamplerNode`
-- `KSamplerSelect`
-- `DetailDaemonSamplerNode`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `KSamplerSelect` ★核心
+- `DetailDaemonSamplerNode` ★核心
+- `KSamplerSelect` ★核心
+- `DetailDaemonSamplerNode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 
 ## 关键参数
 
@@ -272,32 +273,8 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **35%**（86/243）
+覆盖率 **44%**（107/243）
 
-**有卡**：`BasicGuider`、`SetNode`、`KSamplerSelect`、`RandomNoise`、`VAEEncode`、`BasicScheduler`、`GetNode`、`ModelSamplingFlux`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAELoader`、`Anything Everywhere`、`FluxGuidance`、`ConditioningZeroOut`、`FaceSegmentation`、`MaskToSEGS`、`VAEDecodeTiled`、`easy imageListToImageBatch`、`PreviewImage`、`AIO_Preprocessor`、`SamplerCustomAdvanced`、`VAEDecode`、`Fast Groups Bypasser (rgthree)`、`RebatchLatents`、`RepeatLatentBatch`、`InjectLatentNoise+`、`NunchakuFluxDiTLoader`、`Reroute`、`ControlNetLoader`、`LoraLoaderModelOnly`、`easy cleanGpuUsed`、`Any Switch (rgthree)`、`ImageUpscaleWithModel`、`TTP_Tile_image_size`、`ImageScaleToTotalPixels`、`FaceAnalysisModels`
+**有卡**：`BasicGuider`、`KSamplerSelect`、`RandomNoise`、`VAEEncode`、`BasicScheduler`、`ModelSamplingFlux`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAELoader`、`FluxGuidance`、`ConditioningZeroOut`、`FaceSegmentation`、`MaskToSEGS`、`VAEDecodeTiled`、`easy imageListToImageBatch`、`AIO_Preprocessor`、`SamplerCustomAdvanced`、`VAEDecode`、`RebatchLatents`、`RepeatLatentBatch`、`InjectLatentNoise+`、`NunchakuFluxDiTLoader`、`ControlNetLoader`、`LoraLoaderModelOnly`、`easy cleanGpuUsed`、`ImageUpscaleWithModel`、`TTP_Tile_image_size`、`ImageScaleToTotalPixels`、`FaceAnalysisModels`、`LayerUtility: TextJoin`、`Int`、`SimpleMathSlider+`、`UpscaleModelLoader`、`ImageResizeKJ`、`ImageFromBatch+`、`easy imageCount`、`Text`、`Display Any (rgthree)`、`TTP_Image_Assy`、`TTP_Image_Tile_Batch`、`easy imageBatchToImageList`、`easy forLoopEnd`、`ImageListToBatch+`、`easy forLoopStart`、`ImageFromBatch`、`RH_Translator`、`ApplySageAttention`、`easy batchAnything`、`DualCLIPLoader`、`CLIPTextEncode`、`SaveImage`、`CLIPVisionLoader`、`StyleModelLoader`、`ControlNetApplySD3`、`SetUnionControlNetType`、`easy int`、`LoadImage`、`UNETLoader`、`EasyCache`、`DetailerForEachDebug`、`easy seed`、`ImageSmartSharpen+`、`LatentPixelScale`、`Float`、`Bjornulf_ShowStringText`、`AILab_QwenVL`、`ReduxAdvanced`、`DetailDaemonSamplerNode`
 
-**缺卡**（21）：`Display Any (rgthree)`、`ImageFromBatch+`、`ImageListToBatch+`、`ImageSmartSharpen+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: TextJoin`、`SimpleMathSlider+`、`SimpleMathSlider+`、`easy batchAnything`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy forLoopEnd`、`easy forLoopStart`、`easy imageBatchToImageList`、`easy imageCount`、`easy imageListToImageBatch`、`easy int`、`InjectLatentNoise+`、`InjectLatentNoise+`、`easy seed`
-
-## 学习发现
-
-- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageListToBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageSmartSharpen+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMathSlider+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMathSlider+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageCount` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `InjectLatentNoise+` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `InjectLatentNoise+` 仅有 VAE 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、LayerUtility: ImageScaleByAspectRatio V2

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-S2V对口型-文本+音频+图片+控制视频生视频_1961064966939983873.json
 hash: 437758e8fa258819
 coverage: 1
-learned_at: 2026-10-10 23:07:13
+learned_at: 2026-10-15 22:47:12
 nodes: [CLIPTextEncode, ModelSamplingSD3, AudioEncoderEncode, WanSoundImageToVideo, AudioSeparation, UNETLoader, LoraLoaderModelOnly, AudioEncoderLoader, CLIPLoader, VAEDecode, VHS_VideoCombine, AudioCrop, KSampler, VAELoader, ImageResizeKJv2, ImageResizeKJv2, INTConstant, VHS_LoadVideo, LoadImage, LoadAudio, CLIPTextEncode, DWPreprocessor]
 patterns: []
 missing: []

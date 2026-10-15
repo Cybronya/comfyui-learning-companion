@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flex.2无CN深度控制文生图工作流V1_1916415071411703809.json
 hash: 9e6257fbe54cc838
-coverage: 0.884615
-learned_at: 2026-10-10 20:58:33
+coverage: 0.961538
+learned_at: 2026-10-15 22:26:21
 nodes: [Note Plus (mtb), DepthAnythingPreprocessor, DF_Get_image_size, CLIPTextEncode, CLIPTextEncode, UNETLoader, Flex2Conditioner, ApplyFBCacheOnModel, DualCLIPLoader, EmptyLatentImage, PreviewImage, VAELoader, GroundingDinoModelLoader (segment anything2), ImageScaleToTotalPixels, KSampler, VAEEncode, Flex2Conditioner, LoadImage, ImageScaleToTotalPixels, ImageConcanate, JWImageResizeByLongerSide, VAEDecode, SaveImage, SaveImage, JWImageResizeByLongerSide, ImageConcanate]
 patterns: [text_to_image, image_to_image]
-missing: [GroundingDinoModelLoader (segment anything2), Note Plus (mtb)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1256, "sampler_name": "deis", "scheduler": "beta", "seed": 726210541184116, "steps": 30, "width": 840}
-discoveries: [次要节点 `GroundingDinoModelLoader (segment anything2)` 知识库中没有该节点类型的任何知识, 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Flex.2无CN深度控制文生图工作流V1_1916415071411703809.json
@@ -21,29 +20,31 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything2)` 知识
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（26 个）：
 - `Note Plus (mtb)`
 - `DepthAnythingPreprocessor`
 - `DF_Get_image_size`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `UNETLoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
 - `Flex2Conditioner`
 - `ApplyFBCacheOnModel`
 - `DualCLIPLoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `PreviewImage`
 - `VAELoader`
 - `GroundingDinoModelLoader (segment anything2)`
 - `ImageScaleToTotalPixels`
-- `KSampler`
-- `VAEEncode`
+- `KSampler` ★核心
+- `VAEEncode` ★核心
 - `Flex2Conditioner`
 - `LoadImage`
 - `ImageScaleToTotalPixels`
 - `ImageConcanate`
 - `JWImageResizeByLongerSide`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `SaveImage`
 - `JWImageResizeByLongerSide`
@@ -53,25 +54,20 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything2)` 知识
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `840`
 - `height` = `1256`
-- `sampler_name` = `deis`
-- `scheduler` = `beta`
+- `batch_size` = `1`
 - `seed` = `726210541184116`
 - `steps` = `30`
-- `width` = `840`
+- `cfg` = `1`
+- `sampler_name` = `deis`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **88%**（23/26）
+覆盖率 **96%**（25/26）
 
-**有卡**：`Note Plus (mtb)`、`DepthAnythingPreprocessor`、`DF_Get_image_size`、`CLIPTextEncode`、`UNETLoader`、`Flex2Conditioner`、`ApplyFBCacheOnModel`、`DualCLIPLoader`、`EmptyLatentImage`、`PreviewImage`、`VAELoader`、`GroundingDinoModelLoader (segment anything2)`、`ImageScaleToTotalPixels`、`KSampler`、`VAEEncode`、`LoadImage`、`ImageConcanate`、`JWImageResizeByLongerSide`、`VAEDecode`、`SaveImage`
+**有卡**：`Note Plus (mtb)`、`DepthAnythingPreprocessor`、`DF_Get_image_size`、`CLIPTextEncode`、`UNETLoader`、`Flex2Conditioner`、`ApplyFBCacheOnModel`、`DualCLIPLoader`、`EmptyLatentImage`、`VAELoader`、`GroundingDinoModelLoader (segment anything2)`、`ImageScaleToTotalPixels`、`KSampler`、`VAEEncode`、`LoadImage`、`ImageConcanate`、`JWImageResizeByLongerSide`、`VAEDecode`、`SaveImage`
 
-**缺卡**（2）：`GroundingDinoModelLoader (segment anything2)`、`Note Plus (mtb)`
-
-## 学习发现
-
-- 次要节点 `GroundingDinoModelLoader (segment anything2)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Note Plus (mtb)` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、LoadImage、UNETLoader、DepthAnythingPreprocessor

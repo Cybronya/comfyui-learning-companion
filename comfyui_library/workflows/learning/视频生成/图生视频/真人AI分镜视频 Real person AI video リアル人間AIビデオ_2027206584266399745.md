@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206584266399745.json
 hash: a3902cead9b827f4
-coverage: 0.648148
-learned_at: 2026-10-10 22:55:17
+coverage: 0.740741
+learned_at: 2026-10-15 22:43:06
 nodes: [GetNode, GetNode, KSamplerAdvanced, DiffusionModelLoaderKJ, LoraLoaderModelOnly, SetNode, DiffusionModelLoaderKJ, LoraLoaderModelOnly, SetNode, GetNode, GetNode, VAEDecode, LoraLoaderModelOnly, SetNode, SetNode, LayerUtility: PurgeVRAM V2, GetNode, KSamplerAdvanced, VAEEncode, GetNode, VAEEncode, PreviewImage, CLIPTextEncode, PrimitiveFloat, VHS_VideoCombine, JDCN_StringToList, Reroute, easy indexAnything, easy indexAnything, CLIPTextEncode, KSamplerAdvanced, WanImageToVideoSVIPro, CLIPTextEncode, WanImageToVideoSVIPro, KSamplerAdvanced, PreviewImage, VAEDecode, JWInteger, ImageBatchExtendWithOverlap, VHS_VideoCombine, VAELoader, CLIPLoader, LoadImage, Text, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, Loader, Loader, Loader, Loader, Loader, Loader, Loader, VHS_VideoCombine]
 patterns: []
-missing: [ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, easy indexAnything, easy indexAnything]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027206584266399745.json
@@ -90,18 +89,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **65%**（35/54）
+覆盖率 **74%**（40/54）
 
-**有卡**：`KSamplerAdvanced`、`DiffusionModelLoaderKJ`、`LoraLoaderModelOnly`、`VAEDecode`、`VAEEncode`、`CLIPTextEncode`、`VHS_VideoCombine`、`JDCN_StringToList`、`WanImageToVideoSVIPro`、`JWInteger`、`ImageBatchExtendWithOverlap`、`VAELoader`、`CLIPLoader`、`LoadImage`、`Text`、`Loader`
-
-**缺卡**（5）：`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM V2`、`easy indexAnything`、`easy indexAnything`
+**有卡**：`KSamplerAdvanced`、`DiffusionModelLoaderKJ`、`LoraLoaderModelOnly`、`VAEDecode`、`LayerUtility: PurgeVRAM V2`、`VAEEncode`、`CLIPTextEncode`、`VHS_VideoCombine`、`JDCN_StringToList`、`easy indexAnything`、`WanImageToVideoSVIPro`、`JWInteger`、`ImageBatchExtendWithOverlap`、`VAELoader`、`CLIPLoader`、`LoadImage`、`Text`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`Loader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、VAEEncode
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识

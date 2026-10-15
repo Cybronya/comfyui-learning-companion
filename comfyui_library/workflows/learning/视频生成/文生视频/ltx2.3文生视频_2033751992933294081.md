@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3文生视频_2033751992933294081.json
 hash: cdc9fb437350b62c
-coverage: 0.829787
-learned_at: 2026-10-11 03:48:38
+coverage: 0.914894
+learned_at: 2026-10-15 22:47:23
 nodes: [LTXAVTextEncoderLoader, LatentUpscaleModelLoader, LTXVAudioVAELoader, LTXVLatentUpsampler, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, SimpleMath+, Int, Note, LTXVSeparateAVLatent, LTXVConditioning, CLIPTextEncode, Note, CFGGuider, LTXVSeparateAVLatent, CheckpointLoaderSimple, PathchSageAttentionKJ, ModelPatchTorchSettings, CFGGuider, CLIPTextEncode, RH_LLMAPI_Pro_Node, StringToAnyNode, easy showAnything, Int, LTXVConcatAVLatent, SamplerCustomAdvanced, Int, Int, easy boolean, ComfySwitchNode, VAEDecodeTiled, LTXVAudioVAEDecode, CM_IntToFloat, CreateVideo, SaveVideo, KSamplerSelect, RandomNoise, RandomNoise, KSamplerSelect, LTXVChunkFeedForward, ManualSigmas, LTXVConcatAVLatent, LayerUtility: PurgeVRAM V2, CR Text, SamplerCustomAdvanced, LTXVScheduler, LoraLoaderModelOnly]
 patterns: []
-missing: [CR Text, LayerUtility: PurgeVRAM V2, SimpleMath+, easy boolean]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 24, "width": 241}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/ltx2.3文生视频_2033751992933294081.json
@@ -81,17 +80,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **83%**（39/47）
+覆盖率 **91%**（43/47）
 
-**有卡**：`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`Int`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`CLIPTextEncode`、`CFGGuider`、`CheckpointLoaderSimple`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`RH_LLMAPI_Pro_Node`、`StringToAnyNode`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CM_IntToFloat`、`CreateVideo`、`SaveVideo`、`KSamplerSelect`、`RandomNoise`、`LTXVChunkFeedForward`、`ManualSigmas`、`LTXVScheduler`、`LoraLoaderModelOnly`
-
-**缺卡**（4）：`CR Text`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`easy boolean`
+**有卡**：`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`SimpleMath+`、`Int`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`CLIPTextEncode`、`CFGGuider`、`CheckpointLoaderSimple`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`RH_LLMAPI_Pro_Node`、`StringToAnyNode`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`easy boolean`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CM_IntToFloat`、`CreateVideo`、`SaveVideo`、`KSamplerSelect`、`RandomNoise`、`LTXVChunkFeedForward`、`ManualSigmas`、`LayerUtility: PurgeVRAM V2`、`CR Text`、`LTXVScheduler`、`LoraLoaderModelOnly`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识

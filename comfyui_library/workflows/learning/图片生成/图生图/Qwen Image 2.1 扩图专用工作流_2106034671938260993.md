@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json
 hash: 44670bbd70c2bb14
-coverage: 0.833333
-learned_at: 2026-10-10 20:48:05
+coverage: 0.916667
+learned_at: 2026-10-15 22:25:11
 nodes: [PixaromaLabel, PathchSageAttentionKJ, LayerUtility: ImageScaleByAspectRatio V2, TextEncodeQwenImage21, QwenImage21Cache, PreviewImage, LoadImage, LoadImage, PixaromaLabel, MarkdownNote, VAEDecode, KSampler, SaveImage, CR Prompt Text, ImagePadKJ, GetImageSize, EmptyLatentImage, ModelAttentionBackend, TextGenerateLTX2Prompt, LoadImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 202954546112106, "steps": 40, "width": 1024}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 扩图专用工作流_2106034671938260993.json
@@ -63,15 +62,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **83%**（20/24）
+覆盖率 **92%**（22/24）
 
-**有卡**：`PixaromaLabel`、`PathchSageAttentionKJ`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`LoadImage`、`VAEDecode`、`KSampler`、`SaveImage`、`ImagePadKJ`、`GetImageSize`、`EmptyLatentImage`、`ModelAttentionBackend`、`TextGenerateLTX2Prompt`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`
-
-**缺卡**（2）：`LayerUtility: ImageScaleByAspectRatio V2`、`CR Prompt Text`
+**有卡**：`PixaromaLabel`、`PathchSageAttentionKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`LoadImage`、`VAEDecode`、`KSampler`、`SaveImage`、`CR Prompt Text`、`ImagePadKJ`、`GetImageSize`、`EmptyLatentImage`、`ModelAttentionBackend`、`TextGenerateLTX2Prompt`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、LoadImage
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

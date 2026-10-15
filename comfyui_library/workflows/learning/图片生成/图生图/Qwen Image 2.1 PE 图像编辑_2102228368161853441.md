@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 PE 图像编辑_2102228368161853441.json
 hash: aa948498befb77b4
-coverage: 0.769231
-learned_at: 2026-10-10 20:48:05
+coverage: 0.846154
+learned_at: 2026-10-15 22:25:11
 nodes: [Note, UNETLoader, CLIPLoader, VAELoader, VAEDecode, QwenImage21Cache, Note, SaveImage, easy cleanGpuUsed, KSampler, LoadImage, easy showAnything, EmptyLatentImage, ResolutionSelector, ComfySwitchNode, QwenPERewriteT8, CR Prompt Text, TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: []
-missing: [easy cleanGpuUsed, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 19960422, "steps": 40, "width": 1024}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 PE 图像编辑_2102228368161853441.json
@@ -65,15 +64,8 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **77%**（20/26）
+覆盖率 **85%**（22/26）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`QwenImage21Cache`、`SaveImage`、`KSampler`、`LoadImage`、`EmptyLatentImage`、`ResolutionSelector`、`QwenPERewriteT8`、`TextEncodeQwenImage21`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`QwenImage21Cache`、`SaveImage`、`easy cleanGpuUsed`、`KSampler`、`LoadImage`、`EmptyLatentImage`、`ResolutionSelector`、`QwenPERewriteT8`、`CR Prompt Text`、`TextEncodeQwenImage21`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

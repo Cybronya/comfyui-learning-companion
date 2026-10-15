@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 lightx2v 1217文生视频V1_2001672195485122562.json
 hash: 7a44531dfc3218d2
-coverage: 0.848485
-learned_at: 2026-10-11 02:57:38
+coverage: 0.969697
+learned_at: 2026-10-15 22:47:11
 nodes: [TT_img_enc, SaveImage, VAEDecode, CLIPTextEncode, LayerUtility: PurgeVRAM, VAELoader, KSamplerAdvanced, KSamplerAdvanced, INTConstant, JWInteger, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, INTConstant, VHS_VideoCombine, ImageFromBatch+, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, CLIPTextEncode, easy seed, VHS_VideoCombine, CLIPLoader, UNETLoader, JWInteger, JWInteger, CR Prompt Text, UNETLoader, LoraLoaderModelOnly, easy showAnything]
 patterns: []
-missing: [ImageFromBatch+, LayerUtility: PurgeVRAM, CR Prompt Text, easy seed]
+missing: []
 parameters: {"cfg": 12, "denoise": "beta", "sampler_name": 1, "scheduler": "uni_pc", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Wan2.2 lightx2v 1217文生视频V1_2001672195485122562.json
@@ -69,17 +68,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **85%**（28/33）
+覆盖率 **97%**（32/33）
 
-**有卡**：`TT_img_enc`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`VAELoader`、`KSamplerAdvanced`、`INTConstant`、`JWInteger`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`VHS_VideoCombine`、`PathchSageAttentionKJ`、`CLIPLoader`、`UNETLoader`
+**有卡**：`TT_img_enc`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`LayerUtility: PurgeVRAM`、`VAELoader`、`KSamplerAdvanced`、`INTConstant`、`JWInteger`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`VHS_VideoCombine`、`ImageFromBatch+`、`PathchSageAttentionKJ`、`easy seed`、`CLIPLoader`、`UNETLoader`、`CR Prompt Text`
 
-**缺卡**（4）：`ImageFromBatch+`、`LayerUtility: PurgeVRAM`、`CR Prompt Text`、`easy seed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、easy seed

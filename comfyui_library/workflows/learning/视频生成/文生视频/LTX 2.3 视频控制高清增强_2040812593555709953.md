@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 视频控制高清增强_2040812593555709953.json
 hash: b67f3f38fd22c04f
-coverage: 0.925
-learned_at: 2026-10-11 19:49:35
+coverage: 0.95
+learned_at: 2026-10-15 22:44:33
 nodes: [LTXVEmptyLatentAudio, LTXVPreprocess, DownloadAndLoadDepthCrafterModel, easy showAnything, easy showAnything, CM_FloatToInt, VHS_VideoInfoLoaded, CannyEdgePreprocessor, DepthCrafter, EmptyLTXVLatentVideo, GetImageSize, SimpleMath+, PreviewImage, SamplerCustomAdvanced, LTXVSeparateAVLatent, ImageResizeKJv2, DualCLIPLoader, VAELoader, UNETLoader, VAELoaderKJ, LTXVConcatAVLatent, SamplerCustomAdvanced, RandomNoise, KSamplerSelect, LTXVLatentUpsampler, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVConcatAVLatent, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVAudioVAEDecode, DWPreprocessor, ManualSigmas, LoraLoaderModelOnly, LTXVConditioning, VHS_VideoCombine, LTXVSeparateAVLatent, CreateVideo, LTXICLoRALoaderModelOnly, LoraLoaderModelOnly, RandomNoise, LTXVImgToVideoConditionOnly, CFGGuider, CFGGuider, ImageResizeKJv2, VHS_VideoCombine, ImageResizeKJv2, SDPoseOODLoader, VRAMReserver, LayerUtility: PurgeVRAM V2, PreviewImage, SDPoseOODProcessor, KSamplerSelect, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVCropGuides, LTXVAudioVAEDecode, VAEDecodeTiled, LoadImage, CLIPTextEncode, SaveVideo, VHS_VideoCombine, CLIPTextEncode, VHS_LoadVideo, LatentUpscaleModelLoader, LTX2_NAG, LTXVImgToVideoConditionOnly, LTXAddVideoICLoRAGuide, PrimitiveBoolean, LTXVImgToVideoConditionOnly, ManualSigmas]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX 2.3 视频控制高清增强_2040812593555709953.json
@@ -114,15 +113,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **92%**（74/80）
+覆盖率 **95%**（76/80）
 
-**有卡**：`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`DownloadAndLoadDepthCrafterModel`、`CM_FloatToInt`、`VHS_VideoInfoLoaded`、`CannyEdgePreprocessor`、`DepthCrafter`、`EmptyLTXVLatentVideo`、`GetImageSize`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`ImageResizeKJv2`、`DualCLIPLoader`、`VAELoader`、`UNETLoader`、`VAELoaderKJ`、`LTXVConcatAVLatent`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`DWPreprocessor`、`ManualSigmas`、`LoraLoaderModelOnly`、`LTXVConditioning`、`VHS_VideoCombine`、`CreateVideo`、`LTXICLoRALoaderModelOnly`、`LTXVImgToVideoConditionOnly`、`CFGGuider`、`SDPoseOODLoader`、`VRAMReserver`、`SDPoseOODProcessor`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVCropGuides`、`LoadImage`、`CLIPTextEncode`、`SaveVideo`、`VHS_LoadVideo`、`LatentUpscaleModelLoader`、`LTX2_NAG`、`LTXAddVideoICLoRAGuide`、`PrimitiveBoolean`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`SimpleMath+`
+**有卡**：`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`DownloadAndLoadDepthCrafterModel`、`CM_FloatToInt`、`VHS_VideoInfoLoaded`、`CannyEdgePreprocessor`、`DepthCrafter`、`EmptyLTXVLatentVideo`、`GetImageSize`、`SimpleMath+`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`ImageResizeKJv2`、`DualCLIPLoader`、`VAELoader`、`UNETLoader`、`VAELoaderKJ`、`LTXVConcatAVLatent`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`DWPreprocessor`、`ManualSigmas`、`LoraLoaderModelOnly`、`LTXVConditioning`、`VHS_VideoCombine`、`CreateVideo`、`LTXICLoRALoaderModelOnly`、`LTXVImgToVideoConditionOnly`、`CFGGuider`、`SDPoseOODLoader`、`VRAMReserver`、`LayerUtility: PurgeVRAM V2`、`SDPoseOODProcessor`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVCropGuides`、`LoadImage`、`CLIPTextEncode`、`SaveVideo`、`VHS_LoadVideo`、`LatentUpscaleModelLoader`、`LTX2_NAG`、`LTXAddVideoICLoRAGuide`、`PrimitiveBoolean`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、CannyEdgePreprocessor、DepthCrafter
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

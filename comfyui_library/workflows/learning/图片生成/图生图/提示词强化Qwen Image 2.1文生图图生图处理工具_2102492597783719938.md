@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json
 hash: 73c1821099bace73
-coverage: 0.623529
-learned_at: 2026-10-10 20:48:18
+coverage: 0.670588
+learned_at: 2026-10-15 22:25:55
 nodes: [SetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, JsonExtractString, llama_cpp_model_loader, llama_cpp_parameters, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, PrimitiveBoolean, PrimitiveBoolean, GetNode, GetNode, GetNode, ExecutionBlocker, PrimitiveInt, ImpactNeg, ImpactNeg, ExecutionBlocker, ExecutionBlocker, CR Text Replace, PrimitiveBoolean, PrimitiveBoolean, MathExpression_UTK, llama_cpp_instruct_adv, RHLLMChatNode, easy anythingIndexSwitch, DapaoMakeImageBatchNode, llama_cpp_instruct_adv, RHLLMChatNode, 1hew_SaveTxt, easy anythingIndexSwitch, easy anythingIndexSwitch, JjkText, SetNode, PrimitiveInt, ExecutionBlocker, SaveImage, ExecutionBlocker, LoadImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Text Replace, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/提示词强化Qwen Image 2.1文生图图生图处理工具_2102492597783719938.json
@@ -127,11 +127,9 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **62%**（53/85）
+覆盖率 **67%**（57/85）
 
-**有卡**：`LoadImage`、`JsonExtractString`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`PrimitiveBoolean`、`ExecutionBlocker`、`ImpactNeg`、`MathExpression_UTK`、`llama_cpp_instruct_adv`、`RHLLMChatNode`、`DapaoMakeImageBatchNode`、`1hew_SaveTxt`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`CLIPLoader`、`VAELoader`
-
-**缺卡**（4）：`CR Text Replace`、`easy anythingIndexSwitch`、`easy anythingIndexSwitch`、`easy anythingIndexSwitch`
+**有卡**：`LoadImage`、`JsonExtractString`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`PrimitiveBoolean`、`ExecutionBlocker`、`ImpactNeg`、`CR Text Replace`、`MathExpression_UTK`、`llama_cpp_instruct_adv`、`RHLLMChatNode`、`easy anythingIndexSwitch`、`DapaoMakeImageBatchNode`、`1hew_SaveTxt`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`CLIPLoader`、`VAELoader`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -142,8 +140,4 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

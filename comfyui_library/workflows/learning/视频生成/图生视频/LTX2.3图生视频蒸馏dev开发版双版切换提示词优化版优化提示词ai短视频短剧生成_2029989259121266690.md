@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版双版切换提示词优化版优化提示词ai短视频短剧生成_2029989259121266690.json
 hash: fdac17792b522639
-coverage: 0.35249
-learned_at: 2026-10-13 01:36:52
+coverage: 0.570881
+learned_at: 2026-10-15 22:42:42
 nodes: [SetNode, SetNode, SetNode, CR Text, GetNode, GetNode, GetNode, EmptyImage, LTXVConcatAVLatent, GetNode, GetNode, easy cleanGpuUsed, LTXVConditioning, SetNode, SetNode, GetNode, easy cleanGpuUsed, SetNode, GetNode, SetNode, LTXVPreprocess, LayerUtility: ImageScaleByAspectRatio V2, GetNode, LayerUtility: ImageScaleByAspectRatio V2, CR Text, CR Text, SetNode, GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, ImageScaleBy, SetNode, SetNode, LTXVImgToVideoInplace, Int, SetNode, CR Text, easy cleanGpuUsed, easy cleanGpuUsed, CR Text, CR Text, SetNode, VAELoaderKJ, VAELoaderKJ, SetNode, CLIPTextEncode, GetNode, LTXVCropGuides, CFGGuider, RandomNoise, easy cleanGpuUsed, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVLatentUpsampler, SamplerCustomAdvanced, CR Text, SetNode, easy cleanGpuUsed, Any To String (mtb), GetNode, llama_cpp_instruct_adv, SetNode, GetNode, GetNode, GetNode, GetNode, CR Text, CR Text, Any To String (mtb), CR Text, Any To String (mtb), Any To String (mtb), SetNode, GetNode, easy convertAnything, ttN concat, CR Text Concatenate, SetNode, CR Text, LoraLoaderModelOnly, ResizeImagesByLongerEdge, DualCLIPLoader, SetNode, PrimitiveInt, Int, GetNode, MathExpression|pysssss, LTXVEmptyLatentAudio, GetNode, GetNode, GetNode, ManualSigmas, CFGGuider, GetNode, GetNode, GetNode, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, KSamplerSelect, GetNode, LTXVScheduler, ManualSigmas, GetNode, CR Text, CR Value, easy convertAnything, SetNode, SetNode, SetNode, SetNode, SetNode, LTXVChunkFeedForward, VRAMReserver, CR Text, easy cleanGpuUsed, LTXVSeparateAVLatent, GetNode, LTXVAudioVAEDecode, GetNode, GetNode, VAEDecodeTiled, SaveVideo, LatentUpscaleModelLoader, SetNode, SetNode, SetNode, CR Text, EmptyImage, GetImageSize, LTXVConcatAVLatent, easy cleanGpuUsed, LTXVConditioning, SetNode, SetNode, GetNode, easy cleanGpuUsed, CR Text, CR Text, GetNode, GetNode, ImageScaleBy, SetNode, LTXVImgToVideoInplace, GetNode, SetNode, CR Text, easy cleanGpuUsed, easy cleanGpuUsed, CLIPTextEncode, CR Text, CLIPTextEncode, GetNode, LTXVCropGuides, CFGGuider, RandomNoise, easy cleanGpuUsed, KSamplerSelect, LTXVConcatAVLatent, LTXVLatentUpsampler, CR Text, LoraLoaderModelOnly, SetNode, PrimitiveInt, GetNode, MathExpression|pysssss, LTXVEmptyLatentAudio, GetNode, GetNode, RandomNoise, LTXVSeparateAVLatent, KSamplerSelect, CR Text, easy cleanGpuUsed, LTXVSeparateAVLatent, LTXVAudioVAEDecode, GetNode, VAEDecodeTiled, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Any To String (mtb), SetNode, GetNode, SaveVideo, GetImageSize, CR Text, LTXVAudioVAELoader, LTXAVTextEncoderLoader, SetNode, GetNode, GetNode, LoraLoaderModelOnly, SetNode, SetNode, CR Text, CR String To Combo, SetNode, CR String To Combo, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, CreateVideo, CreateVideo, UNETLoader, CheckpointLoaderSimple, GetNode, CFGGuider, GetNode, GetNode, CLIPTextEncode, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, GetNode, SetNode, CR Text, ManualSigmas, LTXVImgToVideoInplace, SamplerCustomAdvanced, SamplerCustomAdvanced, ManualSigmas, GetNode, LTXVChunkFeedForward, VRAMReserver, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, ShowText|pysssss, llama_cpp_model_loader, LTXVScheduler, ManualSigmas, ManualSigmas, Fast Groups Muter (rgthree), ImpactSwitch, ImpactSwitch, ImpactSwitch, CR Text, CR Text, ImpactSwitch, LoadImage, CR Text, easy int, Display Any (rgthree)]
 patterns: []
-missing: [Any To String (mtb), Any To String (mtb), Any To String (mtb), Any To String (mtb), Any To String (mtb), CR String To Combo, CR String To Combo, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, CR Value, Display Any (rgthree), LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, MathExpression|pysssss, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy convertAnything, easy convertAnything, easy int, ttN concat]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 24, "width": 97}
-discoveries: [次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识, 次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Value` 知识库中没有该节点类型的任何知识, 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版双版切换提示词优化版优化提示词ai短视频短剧生成_2029989259121266690.json
@@ -295,70 +294,8 @@ discoveries: [次要节点 `Any To String (mtb)` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **35%**（92/261）
+覆盖率 **57%**（149/261）
 
-**有卡**：`EmptyImage`、`LTXVConcatAVLatent`、`LTXVConditioning`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`ImageScaleBy`、`LTXVImgToVideoInplace`、`Int`、`VAELoaderKJ`、`CLIPTextEncode`、`LTXVCropGuides`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`llama_cpp_instruct_adv`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`DualCLIPLoader`、`LTXVEmptyLatentAudio`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTXVScheduler`、`LTXVChunkFeedForward`、`VRAMReserver`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`SaveVideo`、`LatentUpscaleModelLoader`、`GetImageSize`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CreateVideo`、`UNETLoader`、`CheckpointLoaderSimple`、`llama_cpp_model_loader`、`LoadImage`
+**有卡**：`CR Text`、`EmptyImage`、`LTXVConcatAVLatent`、`easy cleanGpuUsed`、`LTXVConditioning`、`LTXVPreprocess`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLTXVLatentVideo`、`ImageScaleBy`、`LTXVImgToVideoInplace`、`Int`、`VAELoaderKJ`、`CLIPTextEncode`、`LTXVCropGuides`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`Any To String (mtb)`、`llama_cpp_instruct_adv`、`easy convertAnything`、`ttN concat`、`CR Text Concatenate`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`DualCLIPLoader`、`MathExpression|pysssss`、`LTXVEmptyLatentAudio`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTXVScheduler`、`CR Value`、`LTXVChunkFeedForward`、`VRAMReserver`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`SaveVideo`、`LatentUpscaleModelLoader`、`GetImageSize`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CR String To Combo`、`CreateVideo`、`UNETLoader`、`CheckpointLoaderSimple`、`llama_cpp_model_loader`、`LoadImage`、`easy int`、`Display Any (rgthree)`
 
-**缺卡**（57）：`Any To String (mtb)`、`Any To String (mtb)`、`Any To String (mtb)`、`Any To String (mtb)`、`Any To String (mtb)`、`CR String To Combo`、`CR String To Combo`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`、`CR Value`、`Display Any (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`MathExpression|pysssss`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy convertAnything`、`easy convertAnything`、`easy int`、`ttN concat`
-
-**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Any To String (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Value` 知识库中没有该节点类型的任何知识
-- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

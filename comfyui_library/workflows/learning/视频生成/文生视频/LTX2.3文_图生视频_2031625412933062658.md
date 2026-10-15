@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文_图生视频_2031625412933062658.json
 hash: 4be1b1837c9ab479
-coverage: 0.880952
-learned_at: 2026-10-11 03:16:47
+coverage: 0.904762
+learned_at: 2026-10-15 22:45:09
 nodes: [VAEDecode, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CLIPTextEncode, PreviewAny, LTXVImgToVideoInplace, LTXVConcatAVLatent, CreateVideo, ImageScaleBy, KSampler, SaveVideo, MarkdownNote, MarkdownNote, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, RH_LLMAPI_NODE, LTX2_NAG, EmptyLTXVLatentVideo, LoadImage, GetImageSize, EmptyImage, PrimitiveInt, CheckpointLoaderSimple, LTXAVTextEncoderLoader, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, LTXVScheduler, LoraLoaderModelOnly, LTXVSeparateAVLatent, LTXVLatentUpsampler, LatentUpscaleModelLoader, LTXVCropGuides, GetImageSize, LTXVAudioVAELoader, LTXVConditioning, LTXVImgToVideoInplace, LTXVConcatAVLatent, LTXVEmptyLatentAudio, ResizeImagesByLongerEdge, LTXVPreprocess]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.35, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 766044084899970, "steps": 4, "width": 97}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/LTX2.3文_图生视频_2031625412933062658.json
@@ -83,13 +83,11 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **88%**（37/42）
+覆盖率 **90%**（38/42）
 
-**有卡**：`VAEDecode`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`CreateVideo`、`ImageScaleBy`、`KSampler`、`SaveVideo`、`RH_LLMAPI_NODE`、`LTX2_NAG`、`EmptyLTXVLatentVideo`、`LoadImage`、`GetImageSize`、`EmptyImage`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`LTXVScheduler`、`LoraLoaderModelOnly`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`LTXVAudioVAELoader`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`
+**有卡**：`VAEDecode`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`CreateVideo`、`ImageScaleBy`、`KSampler`、`SaveVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`RH_LLMAPI_NODE`、`LTX2_NAG`、`EmptyLTXVLatentVideo`、`LoadImage`、`GetImageSize`、`EmptyImage`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`LTXVScheduler`、`LoraLoaderModelOnly`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`LTXVAudioVAELoader`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`
 
-**缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
-
-**用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect
+**用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider
 
 ## 参数体检
 
@@ -98,5 +96,4 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

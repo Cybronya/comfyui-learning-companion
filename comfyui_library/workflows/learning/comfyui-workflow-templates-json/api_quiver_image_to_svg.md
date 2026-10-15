@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_quiver_image
 hash: 516d6219b353f820
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:41
+learned_at: 2026-10-15 22:24:51
 nodes: [QuiverImageToSVGNode, LoadImage, SaveSVGNode]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`QuiverImageToSVGNode`、`LoadImage`、`SaveSVGNode`
 
-**用到的条目**：LoadImage、SaveSVGNode、QuiverImageToSVGNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveSVGNode、QuiverImageToSVGNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、SaveImage

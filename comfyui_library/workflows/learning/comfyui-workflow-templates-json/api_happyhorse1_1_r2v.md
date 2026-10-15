@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_happyhorse1_
 hash: f0ca426b47b40b57
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:18
+learned_at: 2026-10-15 22:24:49
 nodes: [HappyHorseReferenceVideoApi, LoadImage, LoadImage, SaveVideo]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`HappyHorseReferenceVideoApi`、`LoadImage`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、HappyHorseReferenceVideoApi、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、HappyHorseReferenceVideoApi、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load、SaveImage

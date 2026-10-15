@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3导演台 数字人唱歌 短剧自动切分镜 对口型工作流_2057085762369314818.json
 hash: 3cd29846fa5ff8d7
 coverage: 0.945946
-learned_at: 2026-10-11 19:49:39
+learned_at: 2026-10-15 22:45:08
 nodes: [CFGGuider, LTXDirectorGuide, LTXVConditioning, ConditioningZeroOut, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, CFGGuider, KSamplerSelect, BasicScheduler, LTXDirectorGuide, LTXVConcatAVLatent, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConcatAVLatent, RandomNoise, KSamplerSelect, BasicScheduler, LTX2SamplingPreviewOverride, VAELoaderKJ, CheckpointLoaderSimple, VAEDecodeTiled, CreateVideo, SaveVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LTXDirector, ImpactSwitch]
 patterns: []
 missing: []

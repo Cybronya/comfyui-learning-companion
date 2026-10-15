@@ -7,13 +7,12 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_hidream_o1.json
 hash: c8febb2f631692b7
 official: true
-coverage: 0.666667
-learned_at: 2026-10-10 22:48:02
+coverage: 0.7
+learned_at: 2026-10-15 22:24:54
 nodes: [SamplerCustom, BasicScheduler, CheckpointLoaderSimple, ModelNoiseScale, HiDreamO1ReferenceImages, CLIPTextEncode, VAEDecode, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, GetImageSize, PrimitiveBoolean, fa7296b5-c974-4466-bfe3-a1f05f43b880, ComfySwitchNode, PrimitiveBoolean, CLIPTextEncode, MarkdownNote, ImageScaleToTotalPixels, MarkdownNote, LoadImage, ComfyMathExpression, ComfyMathExpression, PreviewAny, EmptyHiDreamO1LatentImage, EmptyHiDreamO1LatentImage, MarkdownNote, PrimitiveStringMultiline, SaveImage, KSamplerSelect, HiDreamO1PatchSeamSmoothing]
 patterns: []
-missing: [fa7296b5-c974-4466-bfe3-a1f05f43b880]
+missing: []
 parameters: {"checkpoint": "hidream_o1_image_bf16.safetensors"}
-discoveries: [次要节点 `fa7296b5-c974-4466-bfe3-a1f05f43b880` 知识库中没有该节点类型的任何知识]
 ---
 
 # comfyui-workflow-templates-json/image_hidream_o1.json
@@ -62,14 +61,8 @@ discoveries: [次要节点 `fa7296b5-c974-4466-bfe3-a1f05f43b880` 知识库中�
 
 ## 知识
 
-覆盖率 **67%**（20/30）
+覆盖率 **70%**（21/30）
 
-**有卡**：`SamplerCustom`、`BasicScheduler`、`CheckpointLoaderSimple`、`ModelNoiseScale`、`HiDreamO1ReferenceImages`、`CLIPTextEncode`、`VAEDecode`、`GetImageSize`、`PrimitiveBoolean`、`ImageScaleToTotalPixels`、`LoadImage`、`ComfyMathExpression`、`EmptyHiDreamO1LatentImage`、`SaveImage`、`KSamplerSelect`、`HiDreamO1PatchSeamSmoothing`
-
-**缺卡**（1）：`fa7296b5-c974-4466-bfe3-a1f05f43b880`
+**有卡**：`SamplerCustom`、`BasicScheduler`、`CheckpointLoaderSimple`、`ModelNoiseScale`、`HiDreamO1ReferenceImages`、`CLIPTextEncode`、`VAEDecode`、`GetImageSize`、`PrimitiveBoolean`、`fa7296b5-c974-4466-bfe3-a1f05f43b880`、`ImageScaleToTotalPixels`、`LoadImage`、`ComfyMathExpression`、`EmptyHiDreamO1LatentImage`、`SaveImage`、`KSamplerSelect`、`HiDreamO1PatchSeamSmoothing`
 
 **用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、KSamplerSelect、SamplerCustom、EmptyHiDreamO1LatentImage、GetImageSize
-
-## 学习发现
-
-- 次要节点 `fa7296b5-c974-4466-bfe3-a1f05f43b880` 知识库中没有该节点类型的任何知识

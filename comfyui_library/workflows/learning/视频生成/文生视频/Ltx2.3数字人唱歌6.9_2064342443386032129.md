@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltx2.3数字人唱歌6.9_2064342443386032129.json
 hash: c0e95b0ac975d3a1
-coverage: 0.839286
-learned_at: 2026-10-11 20:21:28
+coverage: 0.910714
+learned_at: 2026-10-15 22:45:21
 nodes: [ManualSigmas, SamplerCustomAdvanced, RandomNoise, KSamplerSelect, RandomNoise, KSamplerSelect, CFGGuider, Reroute, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, SetNode, LTXVConditioning, VAELoaderKJ, ManualSigmas, LTXVAudioVAEEncode, VAELoaderKJ, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, LTXVCropGuides, LTXVConcatAVLatent, easy cleanGpuUsed, LTXVSeparateAVLatent, SimpleMath+, QZ_ResolutionPreset, SimpleMath+, LTXVImgToVideoInplace, PrimitiveNode, SaveVideo, CLIPTextEncode, LatentUpscaleModelLoader, DualCLIPLoader, CFGGuider, CLIPTextEncode, SoundFlow_GetLength, ComfyMathExpression, Int, CM_FloatToInt, GetNode, SolidMask, SimpleMath+, LoadImage, ImageResizeKJv2, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, SetLatentNoiseMask, LTXVConcatAVLatent, LoadAudio, MelBandRoFormerModelLoader, UNETLoader, LoraLoaderModelOnly, LTX2_NAG, MelBandRoFormerSampler, TrimAudioDuration, PrimitiveInt]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed]
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Ltx2.3数字人唱歌6.9_2064342443386032129.json
@@ -82,17 +81,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **84%**（47/56）
+覆盖率 **91%**（51/56）
 
-**有卡**：`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVConditioning`、`VAELoaderKJ`、`LTXVAudioVAEEncode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`QZ_ResolutionPreset`、`LTXVImgToVideoInplace`、`SaveVideo`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`SoundFlow_GetLength`、`ComfyMathExpression`、`Int`、`CM_FloatToInt`、`SolidMask`、`LoadImage`、`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`SetLatentNoiseMask`、`LoadAudio`、`MelBandRoFormerModelLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`LTX2_NAG`、`MelBandRoFormerSampler`、`TrimAudioDuration`
-
-**缺卡**（4）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVConditioning`、`VAELoaderKJ`、`LTXVAudioVAEEncode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`easy cleanGpuUsed`、`SimpleMath+`、`QZ_ResolutionPreset`、`LTXVImgToVideoInplace`、`SaveVideo`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`SoundFlow_GetLength`、`ComfyMathExpression`、`Int`、`CM_FloatToInt`、`SolidMask`、`LoadImage`、`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`SetLatentNoiseMask`、`LoadAudio`、`MelBandRoFormerModelLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`LTX2_NAG`、`MelBandRoFormerSampler`、`TrimAudioDuration`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

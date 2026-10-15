@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx-2.3图生视频单阶段蒸馏生产最优_2030352240698986497.json
 hash: 1c0f8a231c75e79b
 coverage: 0.933333
-learned_at: 2026-10-11 03:16:50
+learned_at: 2026-10-15 22:47:22
 nodes: [LTXVAudioVAEDecode, VAEDecodeTiled, LTXVImgToVideoConditionOnly, LTXVEmptyLatentAudio, LTXVConditioning, LTXVConcatAVLatent, LTXVPreprocess, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, CM_FloatToInt, KSamplerSelect, CFGGuider, RandomNoise, LoraLoaderModelOnly, VAELoaderKJ, DualCLIPLoader, PrimitiveFloat, PrimitiveBoolean, CLIPTextEncode, PrimitiveInt, EmptyLTXVLatentVideo, CLIPTextEncode, UnetLoaderGGUF, LoraLoaderModelOnly, VHS_VideoCombine, LoadImage, ResizeImageMaskNode, UNETLoader, VAELoader]
 patterns: []
 missing: []

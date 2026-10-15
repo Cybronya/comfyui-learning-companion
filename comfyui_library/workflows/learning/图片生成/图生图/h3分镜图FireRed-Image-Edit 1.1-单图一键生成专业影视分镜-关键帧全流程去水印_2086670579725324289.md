@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/h3分镜图FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程去水印_2086670579725324289.json
 hash: 27806353095333bd
-coverage: 0.541667
-learned_at: 2026-10-10 20:48:11
+coverage: 0.625
+learned_at: 2026-10-15 22:25:33
 nodes: [SaveImage, LoadImage, JjkText, MultiTextConcatenate, MultiTextConcatenate, JjkText, JjkText, ttN concat, JjkText, MultiTextConcatenate, ttN concat, JjkText, TextEncodeQwenImageEditPlusAdvance_lrzjason, ModelSamplingAuraFlow, LoraLoaderModelOnly, GetNode, JDCN_StringToList, TextEncodeQwenImageEditPlus, UNETLoader, KSampler, ProcessString, LoraLoaderModelOnly, CFGNorm, VAELoader, CLIPLoader, Anything Everywhere3, GetNode, RH_LLMAPI_NODE, Note, Note, SetNode, SetNode, llama_cpp_instruct_adv, easy showAnything, llama_cpp_model_loader, ttN concat, llama_cpp_parameters, JjkText, JjkText, CR Text, LoadImage, JjkText, GetNode, SaveImage, CustomAddLabel, SaveImage, SetNode, VAEDecode]
 patterns: []
-missing: [CR Text, ttN concat, ttN concat, ttN concat]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "er_sde", "scheduler": "FlowMatchEulerDiscreteScheduler", "seed": 163934655761955, "steps": 6}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/h3分镜图FireRed-Image-Edit 1.1-单图一键生成专业影视分镜-关键帧全流程去水印_2086670579725324289.json
@@ -85,11 +85,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **54%**（26/48）
+覆盖率 **62%**（30/48）
 
-**有卡**：`SaveImage`、`LoadImage`、`MultiTextConcatenate`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`JDCN_StringToList`、`TextEncodeQwenImageEditPlus`、`UNETLoader`、`KSampler`、`ProcessString`、`CFGNorm`、`VAELoader`、`CLIPLoader`、`RH_LLMAPI_NODE`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`CustomAddLabel`、`VAEDecode`
-
-**缺卡**（4）：`CR Text`、`ttN concat`、`ttN concat`、`ttN concat`
+**有卡**：`SaveImage`、`LoadImage`、`MultiTextConcatenate`、`ttN concat`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`JDCN_StringToList`、`TextEncodeQwenImageEditPlus`、`UNETLoader`、`KSampler`、`ProcessString`、`CFGNorm`、`VAELoader`、`CLIPLoader`、`RH_LLMAPI_NODE`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`CR Text`、`CustomAddLabel`、`VAEDecode`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、UNETLoader、CFGNorm
 
@@ -100,8 +98,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

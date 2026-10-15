@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 超长时间15秒图生视频 氛围感长镜头 自动提示词 高清1K 舒缓的节奏，平和的运镜_2053284080829116417.json
 hash: 135aef7fdc440d41
-coverage: 0.714286
-learned_at: 2026-10-11 19:49:37
+coverage: 0.918367
+learned_at: 2026-10-15 22:45:01
 nodes: [LTXVAudioVAELoader, LTXAVTextEncoderLoader, EmptyImage, ImageScaleBy, KSamplerSelect, LTXVConcatAVLatent, KSampler, GetImageSize, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVConditioning, VAEDecode, LTXVAudioVAEDecode, LTXVSeparateAVLatent, LTXVLatentUpsampler, RandomNoise, LTXVScheduler, easy int, easy float, PrimitiveInt, MathExpression|pysssss, CLIPTextEncode, CFGGuider, LoraLoaderModelOnly, CheckpointLoaderSimple, RH_LLMAPI_Pro_Node, Int, LTXVImgToVideoInplace, GetImageSize, CLIPTextEncode, CR Prompt Text, easy showAnything, CR Prompt Text, MathExpression|pysssss, LatentUpscaleModelLoader, easy float, CreateVideo, LayerUtility: ImageScaleByAspectRatio V2, Note, Note, LoadImage, CR Prompt Text, SaveVideo, easy int]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, MathExpression|pysssss, easy float, easy float, easy int, easy int, CR Prompt Text, CR Prompt Text, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.35, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 217768208537179, "steps": 4, "width": 97}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/LTX2.3 超长时间15秒图生视频 氛围感长镜头 自动提示词 高清1K 舒缓的节奏，平和的运镜_2053284080829116417.json
@@ -90,11 +90,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **71%**（35/49）
+覆盖率 **92%**（45/49）
 
-**有卡**：`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`EmptyImage`、`ImageScaleBy`、`KSamplerSelect`、`LTXVConcatAVLatent`、`KSampler`、`GetImageSize`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`LTXVConditioning`、`VAEDecode`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVScheduler`、`CLIPTextEncode`、`CFGGuider`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`RH_LLMAPI_Pro_Node`、`Int`、`LatentUpscaleModelLoader`、`CreateVideo`、`LoadImage`、`SaveVideo`
-
-**缺卡**（10）：`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`MathExpression|pysssss`、`easy float`、`easy float`、`easy int`、`easy int`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`EmptyImage`、`ImageScaleBy`、`KSamplerSelect`、`LTXVConcatAVLatent`、`KSampler`、`GetImageSize`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`LTXVConditioning`、`VAEDecode`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVScheduler`、`easy int`、`easy float`、`MathExpression|pysssss`、`CLIPTextEncode`、`CFGGuider`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`RH_LLMAPI_Pro_Node`、`Int`、`CR Prompt Text`、`LatentUpscaleModelLoader`、`CreateVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`SaveVideo`
 
 **用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect
 
@@ -105,14 +103,4 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

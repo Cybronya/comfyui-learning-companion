@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3 多人对话工作流-宠物对话_2039689143625719809.json
 hash: b076c3c6c80faecf
-coverage: 0.791667
-learned_at: 2026-10-11 19:49:44
+coverage: 0.888889
+learned_at: 2026-10-15 22:47:22
 nodes: [ManualSigmas, SamplerCustomAdvanced, RandomNoise, RandomNoise, KSamplerSelect, LatentUpscaleModelLoader, CFGGuider, CFGGuider, Reroute, SamplerCustomAdvanced, LTXVLatentUpsampler, SetNode, DualCLIPLoader, LTXVConditioning, VAELoaderKJ, ManualSigmas, Int, PrimitiveInt, SimpleMath+, MelBandRoFormerSampler, LTXVAudioVAEEncode, CLIPTextEncode, LTXVAudioVAEDecode, UNETLoader, SetLatentNoiseMask, ComfyMathExpression, MelBandRoFormerModelLoader, PrimitiveNode, ImageResizeKJv2, GetNode, SoundFlow_GetLength, TrimAudioDuration, SimpleMath+, SimpleMath+, QZ_ResolutionPreset, CM_FloatToInt, PreviewAudio, FB_Qwen3TTSDialogueInference, PreviewAudio, VAELoaderKJ, ShowAnything|Mie, ConcatTextOfUtils, LTXVSeparateAVLatent, VAEDecodeTiled, CreateVideo, easy cleanGpuUsed, ConcatTextOfUtils, RH_LLMAPI_Pro_Node, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, LTXVSeparateAVLatent, LTXVImgToVideoInplace, LTXVCropGuides, KSamplerSelect, LTXVConcatAVLatent, FB_Qwen3TTSVoiceClonePrompt, FB_Qwen3TTSVoiceClonePrompt, CLIPTextEncode, LTXVConcatAVLatent, easy showAnything, FB_Qwen3TTSVoiceDesign, FB_Qwen3TTSVoiceDesign, easy showAnything, FB_Qwen3TTSRoleBank, LoadImage, ttN text, PreviewAudio, SolidMask, CR Text, easy showAnything, RH_LLMAPI_Pro_Node, SaveVideo]
 patterns: []
-missing: [CR Text, ShowAnything|Mie, SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed, ttN text]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ttN text` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/ltx2.3 多人对话工作流-宠物对话_2039689143625719809.json
@@ -98,20 +97,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **79%**（57/72）
+覆盖率 **89%**（64/72）
 
-**有卡**：`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`LatentUpscaleModelLoader`、`CFGGuider`、`LTXVLatentUpsampler`、`DualCLIPLoader`、`LTXVConditioning`、`VAELoaderKJ`、`Int`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`UNETLoader`、`SetLatentNoiseMask`、`ComfyMathExpression`、`MelBandRoFormerModelLoader`、`ImageResizeKJv2`、`SoundFlow_GetLength`、`TrimAudioDuration`、`QZ_ResolutionPreset`、`CM_FloatToInt`、`PreviewAudio`、`FB_Qwen3TTSDialogueInference`、`ConcatTextOfUtils`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`RH_LLMAPI_Pro_Node`、`LTXVImgToVideoInplace`、`EmptyLTXVLatentVideo`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`FB_Qwen3TTSVoiceClonePrompt`、`FB_Qwen3TTSVoiceDesign`、`FB_Qwen3TTSRoleBank`、`LoadImage`、`SolidMask`、`SaveVideo`
-
-**缺卡**（7）：`CR Text`、`ShowAnything|Mie`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`、`ttN text`
+**有卡**：`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`KSamplerSelect`、`LatentUpscaleModelLoader`、`CFGGuider`、`LTXVLatentUpsampler`、`DualCLIPLoader`、`LTXVConditioning`、`VAELoaderKJ`、`Int`、`SimpleMath+`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`UNETLoader`、`SetLatentNoiseMask`、`ComfyMathExpression`、`MelBandRoFormerModelLoader`、`ImageResizeKJv2`、`SoundFlow_GetLength`、`TrimAudioDuration`、`QZ_ResolutionPreset`、`CM_FloatToInt`、`PreviewAudio`、`FB_Qwen3TTSDialogueInference`、`ShowAnything|Mie`、`ConcatTextOfUtils`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`easy cleanGpuUsed`、`RH_LLMAPI_Pro_Node`、`LTXVImgToVideoInplace`、`EmptyLTXVLatentVideo`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`FB_Qwen3TTSVoiceClonePrompt`、`FB_Qwen3TTSVoiceDesign`、`FB_Qwen3TTSRoleBank`、`LoadImage`、`ttN text`、`SolidMask`、`CR Text`、`SaveVideo`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN text` 知识库中没有该节点类型的任何知识

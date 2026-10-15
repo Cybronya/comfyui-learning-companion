@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-双图参考_1968254465616826370.json
 hash: a96f590928314795
-coverage: 0.894737
-learned_at: 2026-10-10 23:00:42
+coverage: 1
+learned_at: 2026-10-15 22:45:22
 nodes: [TrimVideoLatent, VAEDecode, KSampler, ModelSamplingSD3, CheckpointLoaderSimple, VHS_VideoCombine, CLIPTextEncode, INTConstant, WanVaceToVideo, CLIPTextEncode, ImageConcanate, INTConstant, INTConstant, Image Rembg (Remove Background), Image Rembg (Remove Background), TTP_Expand_And_Mask, TTP_Expand_And_Mask, LoadImage, LoadImage]
 patterns: []
-missing: [Image Rembg (Remove Background), Image Rembg (Remove Background)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 192054346835137, "steps": 6}
-discoveries: [次要节点 `Image Rembg (Remove Background)` 知识库中没有该节点类型的任何知识, 次要节点 `Image Rembg (Remove Background)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-双图参考_1968254465616826370.json
@@ -57,11 +57,9 @@ discoveries: [次要节点 `Image Rembg (Remove Background)` 知识库中没有�
 
 ## 知识
 
-覆盖率 **89%**（17/19）
+覆盖率 **100%**（19/19）
 
-**有卡**：`TrimVideoLatent`、`VAEDecode`、`KSampler`、`ModelSamplingSD3`、`CheckpointLoaderSimple`、`VHS_VideoCombine`、`CLIPTextEncode`、`INTConstant`、`WanVaceToVideo`、`ImageConcanate`、`TTP_Expand_And_Mask`、`LoadImage`
-
-**缺卡**（2）：`Image Rembg (Remove Background)`、`Image Rembg (Remove Background)`
+**有卡**：`TrimVideoLatent`、`VAEDecode`、`KSampler`、`ModelSamplingSD3`、`CheckpointLoaderSimple`、`VHS_VideoCombine`、`CLIPTextEncode`、`INTConstant`、`WanVaceToVideo`、`ImageConcanate`、`Image Rembg (Remove Background)`、`TTP_Expand_And_Mask`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、TrimVideoLatent、ImageConcanate、INTConstant
 
@@ -72,6 +70,4 @@ discoveries: [次要节点 `Image Rembg (Remove Background)` 知识库中没有�
 
 ## 学习发现
 
-- 次要节点 `Image Rembg (Remove Background)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image Rembg (Remove Background)` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

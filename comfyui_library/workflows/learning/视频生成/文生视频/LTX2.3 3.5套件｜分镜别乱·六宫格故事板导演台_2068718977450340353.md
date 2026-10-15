@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 3.5套件｜分镜别乱·六宫格故事板导演台_2068718977450340353.json
 hash: 3b5b16a60e4128f5
-coverage: 0.970297
-learned_at: 2026-10-11 20:21:25
+coverage: 0.990099
+learned_at: 2026-10-15 22:44:56
 nodes: [ManualSigmas, KSamplerSelect, KSamplerSelect, BasicScheduler, LTXVConcatAVLatent, LatentUpscaleModelLoader, LTXVConditioning, ConditioningZeroOut, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGGuider, LTXDirectorGuide, LTXDirectorGuide, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVLatentUpsampler, FluxResolutionNode, LTXDirectorGuide, SamplerCustomAdvanced, LTXVConcatAVLatent, SamplerCustomAdvanced, VAEDecodeTiled, LTXVAudioVAEDecode, LatentUpscaleModelLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, LTX2_NAG, LoraLoaderModelOnly, LTX2_NAG, CFGGuider, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Sigmas Easing, STGGuiderAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, LTXICLoRALoaderModelOnly, VAEDecodeTiled, CreateVideo, SaveVideo, VAEDecodeTiled, LTXVAudioVAEDecode, SaveVideo, CreateVideo, SaveVideo, LTXVSeparateAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVCropGuides, CreateVideo, VAEDecodeTiled, SetLatentNoiseMask, LTXVSeparateAVLatent, SolidMask, ManualSigmas, KSamplerSelect, LTXVLatentUpsampler, LTXVCropGuides, LTXVCropGuides, RandomNoise, VAEDecodeTiled, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, image_scale_pixel_v2, EmptyImage, LTXDirector, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVAudioVAEDecode, LTXVAudioVAEDecode, LoadImage, PrimitiveInt, ImageFromBatch, ImageFromBatch, ImageFromBatch, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTX2_NAG, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTX2_NAG, CS-LTXGridDirector]
 patterns: []
-missing: [CS-LTXGridDirector, Sigmas Easing]
+missing: []
 parameters: {"checkpoint": "ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors"}
-discoveries: [次要节点 `CS-LTXGridDirector` 知识库中没有该节点类型的任何知识, 次要节点 `Sigmas Easing` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 3.5套件｜分镜别乱·六宫格故事板导演台_2068718977450340353.json
@@ -132,15 +131,8 @@ discoveries: [次要节点 `CS-LTXGridDirector` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **97%**（98/101）
+覆盖率 **99%**（100/101）
 
-**有卡**：`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXDirectorGuide`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTX2_NAG`、`STGGuiderAdvanced`、`LTXICLoRALoaderModelOnly`、`CreateVideo`、`SaveVideo`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`SetLatentNoiseMask`、`SolidMask`、`RandomNoise`、`image_scale_pixel_v2`、`EmptyImage`、`LTXDirector`、`LoadImage`、`ImageFromBatch`
-
-**缺卡**（2）：`CS-LTXGridDirector`、`Sigmas Easing`
+**有卡**：`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXDirectorGuide`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTX2_NAG`、`Sigmas Easing`、`STGGuiderAdvanced`、`LTXICLoRALoaderModelOnly`、`CreateVideo`、`SaveVideo`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`SetLatentNoiseMask`、`SolidMask`、`RandomNoise`、`image_scale_pixel_v2`、`EmptyImage`、`LTXDirector`、`LoadImage`、`ImageFromBatch`、`CS-LTXGridDirector`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、ConditioningZeroOut、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `CS-LTXGridDirector` 知识库中没有该节点类型的任何知识
-- 次要节点 `Sigmas Easing` 知识库中没有该节点类型的任何知识

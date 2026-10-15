@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1 高速飘移动态特效_1936223818082062337.json
 hash: aeae8b5f1f8c7143
-coverage: 0.857143
-learned_at: 2026-10-10 20:59:26
+coverage: 1
+learned_at: 2026-10-15 22:27:57
 nodes: [LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoBlockSwap, WanVideoModelLoader, WanVideoVACEModelSelect, WanVideoTorchCompileSettings, CLIPVisionLoader, WanVideoClipVisionEncode, ImageResizeKJ, WanVideoTextEncode, WanVideoTeaCache, WanVideoEnhanceAVideo, WanVideoSampler, WanVideoImageToVideoEncode, WanVideoDecode, VHS_VideoCombine, Text Multiline, WanVideoLoraSelect, Primitive integer [Crystools], Primitive integer [Crystools], LoadImage]
 patterns: []
-missing: [Primitive integer [Crystools], Primitive integer [Crystools], Text Multiline]
-discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/wan2.1 高速飘移动态特效_1936223818082062337.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1 高速飘移动态特效_1936223818082062337.json`
 
 ## 结构
+
+**生成流程**：Model → Sampling → Process → Other
 
 **节点**（21 个）：
 - `LoadWanVideoT5TextEncoder`
@@ -33,7 +34,7 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 - `WanVideoTextEncode`
 - `WanVideoTeaCache`
 - `WanVideoEnhanceAVideo`
-- `WanVideoSampler`
+- `WanVideoSampler` ★核心
 - `WanVideoImageToVideoEncode`
 - `WanVideoDecode`
 - `VHS_VideoCombine`
@@ -45,14 +46,8 @@ discoveries: [次要节点 `Primitive integer [Crystools]` 知识库中没有该
 
 ## 知识
 
-覆盖率 **86%**（18/21）
+覆盖率 **100%**（21/21）
 
-**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`WanVideoTorchCompileSettings`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`ImageResizeKJ`、`WanVideoTextEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`VHS_VideoCombine`、`Text Multiline`、`WanVideoLoraSelect`
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`WanVideoTorchCompileSettings`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`ImageResizeKJ`、`WanVideoTextEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`VHS_VideoCombine`、`Text Multiline`、`WanVideoLoraSelect`、`Primitive integer [Crystools]`、`LoadImage`
 
-**缺卡**（3）：`Primitive integer [Crystools]`、`Primitive integer [Crystools]`、`Text Multiline`
-
-## 学习发现
-
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Primitive integer [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_product
 hash: 013bbca546662fbe
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:49:05
+learned_at: 2026-10-15 22:24:56
 nodes: [LoadImage, LoadImage, LoadImage, KlingVideoNode, GeminiNode, PreviewAny, LoadImage, SaveVideo, PreviewImage, GeminiNanoBanana2V2]
 patterns: []
 missing: []
@@ -40,4 +40,4 @@ missing: []
 
 **有卡**：`LoadImage`、`KlingVideoNode`、`GeminiNode`、`SaveVideo`、`GeminiNanoBanana2V2`
 
-**用到的条目**：LoadImage、SaveVideo、GeminiNanoBanana2V2、GeminiNode、KlingVideoNode、sd15-t2i-basic、sd15-t2i-lora、node
+**用到的条目**：LoadImage、SaveVideo、GeminiNanoBanana2V2、GeminiNode、KlingVideoNode、sd15-t2i-basic、sd15-t2i-lora、Image Save

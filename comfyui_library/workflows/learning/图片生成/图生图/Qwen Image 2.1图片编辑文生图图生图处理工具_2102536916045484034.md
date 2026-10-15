@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json
 hash: 4e40cfb3d2279f33
-coverage: 0.639175
-learned_at: 2026-10-10 20:48:06
+coverage: 0.71134
+learned_at: 2026-10-15 22:25:13
 nodes: [QwenImage21Cache, VAEDecode, ResolutionSelector, TextEncodeQwenImage21, ModelAttentionBackend, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, BasicScheduler, easy cleanGpuUsed, PrimitiveStringMultiline, PrimitiveBoolean, Seed (rgthree), GetImageSizeAndCount, ResizeImageMaskNode, VOSR2ModelLoader, VOSR2Upscale, Images to RGB, Reroute, Reroute, Reroute, Reroute, Reroute, easy cleanGpuUsed, ResizeImageMaskNode, Reroute, Reroute, StringConcatenate, SeedVR2LoadVAEModel, PreviewImage, SeedVR2LoadDiTModel, easy cleanGpuUsed, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, ComfySwitchNode, StringConcatenate, TextGenerate, TextGenerate, UNETLoader, CLIPLoader, VAELoader, Reroute, Reroute, ShowText|pysssss, Image Comparer (rgthree), Reroute, Reroute, Image Comparer (rgthree), PreviewImage, SaveImage, ComfyOrNode, ComfySwitchNode, EmptyLatentImage, LoadImage, ImageResizeKJv2, ImageScaleToMaxDimension, easy cleanGpuUsed, SeedVR2VideoUpscaler, Reroute, easy cleanGpuUsed, INTConstant, JsonExtractString, PrimitiveStringMultiline, PrimitiveBoolean, CLIPLoader, CLIPLoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [Images to RGB, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Images to RGB` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1图片编辑文生图图生图处理工具_2102536916045484034.json
@@ -139,11 +139,9 @@ discoveries: [次要节点 `Images to RGB` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **64%**（62/97）
+覆盖率 **71%**（69/97）
 
-**有卡**：`QwenImage21Cache`、`VAEDecode`、`ResolutionSelector`、`TextEncodeQwenImage21`、`ModelAttentionBackend`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`PrimitiveBoolean`、`GetImageSizeAndCount`、`ResizeImageMaskNode`、`VOSR2ModelLoader`、`VOSR2Upscale`、`StringConcatenate`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`TextGenerate`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SaveImage`、`ComfyOrNode`、`EmptyLatentImage`、`LoadImage`、`ImageResizeKJv2`、`ImageScaleToMaxDimension`、`SeedVR2VideoUpscaler`、`INTConstant`、`JsonExtractString`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（7）：`Images to RGB`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`Seed (rgthree)`
+**有卡**：`QwenImage21Cache`、`VAEDecode`、`ResolutionSelector`、`TextEncodeQwenImage21`、`ModelAttentionBackend`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`easy cleanGpuUsed`、`PrimitiveBoolean`、`Seed (rgthree)`、`GetImageSizeAndCount`、`ResizeImageMaskNode`、`VOSR2ModelLoader`、`VOSR2Upscale`、`Images to RGB`、`StringConcatenate`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`TextGenerate`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SaveImage`、`ComfyOrNode`、`EmptyLatentImage`、`LoadImage`、`ImageResizeKJv2`、`ImageScaleToMaxDimension`、`SeedVR2VideoUpscaler`、`INTConstant`、`JsonExtractString`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -154,11 +152,4 @@ discoveries: [次要节点 `Images to RGB` 知识库中没有该节点类型的�
 
 ## 学习发现
 
-- 次要节点 `Images to RGB` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/MiniMax-H3-超自然服装细节展示-自动优化提示词-.json
 hash: 00f1ff5c4351f6a3
-coverage: 0.837838
-learned_at: 2026-10-10 22:53:21
+coverage: 0.864865
+learned_at: 2026-10-15 22:42:52
 nodes: [CLIPLoader, VAELoader, VAELoader, LoraLoaderBypassModelOnly, LoraLoaderModelOnly, RandomNoise, KSamplerSelect, BasicGuider, BasicScheduler, VAEDecode, VAEDecodeAudio, CreateVideo, LoraLoaderModelOnly, ModelPreviewOverrideKJ, UNETLoader, MiniMaxH3ReferenceToVideo, LoadImage, LoadImage, MarkdownNote, SamplerCustomAdvanced, LoadImage, ComfyMathExpression, BlockSparseAttention, ModelAttentionBackend, MiniMaxH3SigmaShift, MiniMaxChunkFeedForward, PrimitiveStringMultiline, SaveVideo, LoadImage, LoadImage, INTConstant, ResolutionSelector, easy seed, ShowText|pysssss, PrimitiveStringMultiline, PrimitiveStringMultiline, MiniMaxH3PromptEnhancerT8]
 patterns: []
-missing: [easy seed]
-discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/图生视频/MiniMax-H3-超自然服装细节展示-自动优化提示词-.json
@@ -63,14 +62,8 @@ discoveries: [次要节点 `easy seed` 仅有 KSampler 的通用知识，没有�
 
 ## 知识
 
-覆盖率 **84%**（31/37）
+覆盖率 **86%**（32/37）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`LoraLoaderBypassModelOnly`、`LoraLoaderModelOnly`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`BasicScheduler`、`VAEDecode`、`VAEDecodeAudio`、`CreateVideo`、`ModelPreviewOverrideKJ`、`UNETLoader`、`MiniMaxH3ReferenceToVideo`、`LoadImage`、`SamplerCustomAdvanced`、`ComfyMathExpression`、`BlockSparseAttention`、`ModelAttentionBackend`、`MiniMaxH3SigmaShift`、`MiniMaxChunkFeedForward`、`SaveVideo`、`INTConstant`、`ResolutionSelector`、`MiniMaxH3PromptEnhancerT8`
-
-**缺卡**（1）：`easy seed`
+**有卡**：`CLIPLoader`、`VAELoader`、`LoraLoaderBypassModelOnly`、`LoraLoaderModelOnly`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`BasicScheduler`、`VAEDecode`、`VAEDecodeAudio`、`CreateVideo`、`ModelPreviewOverrideKJ`、`UNETLoader`、`MiniMaxH3ReferenceToVideo`、`LoadImage`、`SamplerCustomAdvanced`、`ComfyMathExpression`、`BlockSparseAttention`、`ModelAttentionBackend`、`MiniMaxH3SigmaShift`、`MiniMaxChunkFeedForward`、`SaveVideo`、`INTConstant`、`ResolutionSelector`、`easy seed`、`MiniMaxH3PromptEnhancerT8`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明

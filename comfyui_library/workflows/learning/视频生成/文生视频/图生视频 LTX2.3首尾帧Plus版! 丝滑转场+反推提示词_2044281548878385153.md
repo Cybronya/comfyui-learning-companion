@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/图生视频 LTX2.3首尾帧Plus版! 丝滑转场+反推提示词_2044281548878385153.json
 hash: c83059d7b791efbb
-coverage: 0.561798
-learned_at: 2026-10-11 19:49:48
+coverage: 0.640449
+learned_at: 2026-10-15 22:48:23
 nodes: [LTXVConcatAVLatent, CFGGuider, LTXVConditioning, LTXVLatentUpsampler, LatentUpscaleModelLoader, VAELoaderKJ, LTXVSeparateAVLatent, LTXVImgToVideoInplace, CFGGuider, VAELoaderKJ, KSamplerSelect, KSamplerSelect, GetNode, ComfyMathExpression, SetNode, SetNode, SetNode, SetNode, LTX2SamplingPreviewOverride, LoraLoaderModelOnly, ImageResizeKJv2, ResizeImagesByLongerEdge, LayerUtility: BooleanOperator, PrimitiveBoolean, SetNode, SetNode, PrimitiveInt, ComfyMathExpression, LTXVConcatAVLatent, Image Stitch, GetNode, GetNode, SimpleMath+, ImageResizeKJv2, ImageResizeKJv2, GetNode, GetNode, GetNode, SetNode, LayerUtility: If , SetNode, GetNode, GetNode, ManualSigmas, ManualSigmas, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, ResizeImagesByLongerEdge, GetNode, ShowText|pysssss, VAEDecodeTiled, SetNode, SetNode, LTXVAudioVAEDecode, GetNode, GetNode, ComfyMathExpression, PrimitiveInt, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, ResizeImageMaskNode, LTXVCropGuides, RandomNoise, CLIPTextEncode, CLIPTextEncode, easy positive, ImageScaleDownToSize, LTXVPreprocess, LTXVPreprocess, SamplerCustomAdvanced, PrimitiveInt, SetNode, LTX2_NAG, LTXVAddGuideMulti, SimpleMath+, GetNode, GetNode, LayerUtility: PurgeVRAM, AILab_QwenVL_Advanced, DualCLIPLoader, UNETLoader, PrimitiveInt, PrimitiveInt, VHS_VideoCombine, LoadImage, LoadImage, PrimitiveStringMultiline, Note]
 patterns: []
-missing: [Image Stitch, LayerUtility: BooleanOperator, LayerUtility: If , LayerUtility: PurgeVRAM, SimpleMath+, SimpleMath+, easy positive]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: BooleanOperator` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: If ` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/图生视频 LTX2.3首尾帧Plus版! 丝滑转场+反推提示词_2044281548878385153.json
@@ -122,20 +121,8 @@ discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **56%**（50/89）
+覆盖率 **64%**（57/89）
 
-**有卡**：`LTXVConcatAVLatent`、`CFGGuider`、`LTXVConditioning`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`LTXVSeparateAVLatent`、`LTXVImgToVideoInplace`、`KSamplerSelect`、`ComfyMathExpression`、`LTX2SamplingPreviewOverride`、`LoraLoaderModelOnly`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`PrimitiveBoolean`、`ManualSigmas`、`RandomNoise`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`ResizeImageMaskNode`、`LTXVCropGuides`、`CLIPTextEncode`、`ImageScaleDownToSize`、`LTXVPreprocess`、`LTX2_NAG`、`LTXVAddGuideMulti`、`AILab_QwenVL_Advanced`、`DualCLIPLoader`、`UNETLoader`、`VHS_VideoCombine`、`LoadImage`
-
-**缺卡**（7）：`Image Stitch`、`LayerUtility: BooleanOperator`、`LayerUtility: If `、`LayerUtility: PurgeVRAM`、`SimpleMath+`、`SimpleMath+`、`easy positive`
+**有卡**：`LTXVConcatAVLatent`、`CFGGuider`、`LTXVConditioning`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`LTXVSeparateAVLatent`、`LTXVImgToVideoInplace`、`KSamplerSelect`、`ComfyMathExpression`、`LTX2SamplingPreviewOverride`、`LoraLoaderModelOnly`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`LayerUtility: BooleanOperator`、`PrimitiveBoolean`、`Image Stitch`、`SimpleMath+`、`LayerUtility: If `、`ManualSigmas`、`RandomNoise`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`ResizeImageMaskNode`、`LTXVCropGuides`、`CLIPTextEncode`、`easy positive`、`ImageScaleDownToSize`、`LTXVPreprocess`、`LTX2_NAG`、`LTXVAddGuideMulti`、`LayerUtility: PurgeVRAM`、`AILab_QwenVL_Advanced`、`DualCLIPLoader`、`UNETLoader`、`VHS_VideoCombine`、`LoadImage`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Image Stitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: BooleanOperator` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: If ` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识

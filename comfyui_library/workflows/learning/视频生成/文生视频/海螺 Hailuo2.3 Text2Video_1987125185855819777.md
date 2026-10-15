@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/海螺 Hailuo2.3 Text2Video_1987125185855819777.json
 hash: ee8c46f510bf6891
 coverage: 1
-learned_at: 2026-10-11 02:45:04
+learned_at: 2026-10-15 22:48:51
 nodes: [SaveVideo, RH_Hailuo_Text2Video]
 patterns: []
 missing: []

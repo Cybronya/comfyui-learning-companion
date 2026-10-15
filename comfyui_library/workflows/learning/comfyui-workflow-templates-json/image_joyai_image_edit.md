@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_joyai_image_edit.json
 hash: 2a3261bfaba39ddd
 official: true
-coverage: 0.714286
-learned_at: 2026-10-10 22:48:05
+coverage: 0.857143
+learned_at: 2026-10-15 22:24:54
 nodes: [LoadImage, 7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01, GetImageSize, ImageScaleToTotalPixels, MarkdownNote, ImageCompare, SaveImageAdvanced]
 patterns: []
-missing: [7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01]
-discoveries: [次要节点 `7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_joyai_image_edit.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01` 知识库中�
 
 ## 知识
 
-覆盖率 **71%**（5/7）
+覆盖率 **86%**（6/7）
 
-**有卡**：`LoadImage`、`GetImageSize`、`ImageScaleToTotalPixels`、`ImageCompare`、`SaveImageAdvanced`
+**有卡**：`LoadImage`、`7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01`、`GetImageSize`、`ImageScaleToTotalPixels`、`ImageCompare`、`SaveImageAdvanced`
 
-**缺卡**（1）：`7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01`
-
-**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveImageAdvanced、ImageScaleToTotalPixels、ImageCompare、sd15-t2i-basic、sd15-t2i-lora
-
-## 学习发现
-
-- 次要节点 `7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveImageAdvanced、ImageScaleToTotalPixels、ImageCompare、7f6dd18d-96db-4ad7-a173-6f6d8a0c3d01、sd15-t2i-basic

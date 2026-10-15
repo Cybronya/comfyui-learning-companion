@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3_四宫格漫剧视频_2064675254458474498.json
 hash: da9af30493ed4014
-coverage: 0.755556
-learned_at: 2026-10-11 20:21:26
+coverage: 0.933333
+learned_at: 2026-10-15 22:45:05
 nodes: [LatentUpscaleModelLoader, KSamplerSelect, RandomNoise, DualCLIPLoader, VAELoader, VAELoaderKJ, ManualSigmas, UNETLoader, CLIPTextEncode, GuHaiAutoImageSplit, SimpleMath+, CR Float To Integer, PreviewImage, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, easy showAnything, easy cleanGpuUsed, CLIPTextEncode, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LTXVConditioning, EmptyLTXVLatentVideo, LTXVAddGuideMulti, CFGGuider, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVCropGuides, VAEDecodeTiled, LoadImage, PrimitiveFloat, easy cleanGpuUsed, TTResolutionSelector, INTConstant, INTConstant, INTConstant, VHS_VideoCombine, LTXVEmptyLatentAudio, RH_LLMAPI_Pro_Node, Text]
 patterns: []
-missing: [CR Float To Integer, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SimpleMath+, easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 401, "height": 25, "width": 97}
-discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3_四宫格漫剧视频_2064675254458474498.json
@@ -78,21 +77,8 @@ discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **76%**（34/45）
+覆盖率 **93%**（42/45）
 
-**有卡**：`LatentUpscaleModelLoader`、`KSamplerSelect`、`RandomNoise`、`DualCLIPLoader`、`VAELoader`、`VAELoaderKJ`、`ManualSigmas`、`UNETLoader`、`CLIPTextEncode`、`GuHaiAutoImageSplit`、`ImageResizeKJv2`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVAddGuideMulti`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVCropGuides`、`VAEDecodeTiled`、`LoadImage`、`TTResolutionSelector`、`INTConstant`、`VHS_VideoCombine`、`LTXVEmptyLatentAudio`、`RH_LLMAPI_Pro_Node`、`Text`
-
-**缺卡**（8）：`CR Float To Integer`、`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`LatentUpscaleModelLoader`、`KSamplerSelect`、`RandomNoise`、`DualCLIPLoader`、`VAELoader`、`VAELoaderKJ`、`ManualSigmas`、`UNETLoader`、`CLIPTextEncode`、`GuHaiAutoImageSplit`、`SimpleMath+`、`CR Float To Integer`、`ImageFromBatch+`、`easy cleanGpuUsed`、`ImageResizeKJv2`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVAddGuideMulti`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVCropGuides`、`VAEDecodeTiled`、`LoadImage`、`TTResolutionSelector`、`INTConstant`、`VHS_VideoCombine`、`LTXVEmptyLatentAudio`、`RH_LLMAPI_Pro_Node`、`Text`
 
 **用到的条目**：VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

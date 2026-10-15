@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json
 hash: 7e830f00e58ae92f
-coverage: 0.785714
-learned_at: 2026-10-10 20:48:08
+coverage: 0.857143
+learned_at: 2026-10-15 22:25:20
 nodes: [TextEncodeQwenImage21, ComfySwitchNode, LoadImage, LoadImage, Image Comparer (rgthree), KSampler, SaveImage, VOSR2ModelLoader, Change Channel Count, VOSR2Upscale, SaveImage, LoadImage, QwenImage21Cache, VAEDecode, QwenPERewriteT8, easy showAnything, EmptyLatentImage, Fast Groups Bypasser (rgthree), PrimitiveBoolean, PrimitiveBoolean, SaveImageAdvanced, LoadImage, ResolutionSelector, CR Text, VAELoader, CLIPLoader, UNETLoader, LoraLoaderModelOnly]
 patterns: []
-missing: [CR Text, Change Channel Count]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 19940424, "steps": 50, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Change Channel Count` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen image 2.1文生_编辑_抠图_透明图像_2105237147488972801.json
@@ -67,15 +66,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **79%**（22/28）
+覆盖率 **86%**（24/28）
 
-**有卡**：`TextEncodeQwenImage21`、`LoadImage`、`KSampler`、`SaveImage`、`VOSR2ModelLoader`、`VOSR2Upscale`、`QwenImage21Cache`、`VAEDecode`、`QwenPERewriteT8`、`EmptyLatentImage`、`PrimitiveBoolean`、`SaveImageAdvanced`、`ResolutionSelector`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`
-
-**缺卡**（2）：`CR Text`、`Change Channel Count`
+**有卡**：`TextEncodeQwenImage21`、`LoadImage`、`KSampler`、`SaveImage`、`VOSR2ModelLoader`、`Change Channel Count`、`VOSR2Upscale`、`QwenImage21Cache`、`VAEDecode`、`QwenPERewriteT8`、`EmptyLatentImage`、`PrimitiveBoolean`、`SaveImageAdvanced`、`ResolutionSelector`、`CR Text`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Change Channel Count` 知识库中没有该节点类型的任何知识

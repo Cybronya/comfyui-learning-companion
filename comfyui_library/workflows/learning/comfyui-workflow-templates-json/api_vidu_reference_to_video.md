@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_vidu_referen
 hash: e1df24ea1dbe3b56
 official: true
 coverage: 0.75
-learned_at: 2026-10-10 22:46:36
+learned_at: 2026-10-15 22:24:52
 nodes: [LoadImage, LoadImage, LoadImage, SaveVideo, MarkdownNote, MarkdownNote, ViduReferenceVideoNode, BatchImagesNode]
 patterns: []
 missing: []
@@ -38,4 +38,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveVideo`、`ViduReferenceVideoNode`、`BatchImagesNode`
 
-**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、ViduReferenceVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage
+**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、ViduReferenceVideoNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

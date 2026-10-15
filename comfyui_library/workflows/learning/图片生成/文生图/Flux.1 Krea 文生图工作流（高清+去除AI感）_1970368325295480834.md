@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
 hash: 6ee9d3de1287178c
-coverage: 0.941176
-learned_at: 2026-10-10 20:58:36
+coverage: 1
+learned_at: 2026-10-15 22:26:25
 nodes: [EmptyLatentImage, BasicScheduler, RandomNoise, SamplerCustomAdvanced, KSamplerAdvanced, KSamplerSelect, BasicGuider, CLIPTextEncodeFlux, CFGZeroStar, VAEDecode, CLIPTextEncode, StringConstantMultiline, UNETLoader, Lora Loader Stack (rgthree), SaveImage, VAELoader, DualCLIPLoader]
 patterns: []
-missing: [Lora Loader Stack (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 31, "denoise": "normal", "height": 1920, "sampler_name": 2, "scheduler": "euler", "seed": "enable", "steps": "randomize", "width": 1080}
-discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Flux.1 Krea 文生图工作流（高清+去除AI感）_1970368325295480834.json
@@ -21,20 +20,22 @@ discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（17 个）：
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `BasicScheduler`
 - `RandomNoise`
-- `SamplerCustomAdvanced`
-- `KSamplerAdvanced`
-- `KSamplerSelect`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerSelect` ★核心
 - `BasicGuider`
-- `CLIPTextEncodeFlux`
+- `CLIPTextEncodeFlux` ★核心
 - `CFGZeroStar`
-- `VAEDecode`
-- `CLIPTextEncode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `StringConstantMultiline`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `Lora Loader Stack (rgthree)`
 - `SaveImage`
 - `VAELoader`
@@ -42,24 +43,20 @@ discoveries: [次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `31`
-- `denoise` = `normal`
+- `width` = `1080`
 - `height` = `1920`
-- `sampler_name` = `2`
-- `scheduler` = `euler`
+- `batch_size` = `1`
 - `seed` = `enable`
 - `steps` = `randomize`
-- `width` = `1080`
+- `cfg` = `31`
+- `sampler_name` = `2`
+- `scheduler` = `euler`
+- `denoise` = `normal`
 
 ## 知识
 
-覆盖率 **94%**（16/17）
+覆盖率 **100%**（17/17）
 
-**有卡**：`EmptyLatentImage`、`BasicScheduler`、`RandomNoise`、`SamplerCustomAdvanced`、`KSamplerAdvanced`、`KSamplerSelect`、`BasicGuider`、`CLIPTextEncodeFlux`、`CFGZeroStar`、`VAEDecode`、`CLIPTextEncode`、`StringConstantMultiline`、`UNETLoader`、`Lora Loader Stack (rgthree)`、`SaveImage`、`VAELoader`
+**有卡**：`EmptyLatentImage`、`BasicScheduler`、`RandomNoise`、`SamplerCustomAdvanced`、`KSamplerAdvanced`、`KSamplerSelect`、`BasicGuider`、`CLIPTextEncodeFlux`、`CFGZeroStar`、`VAEDecode`、`CLIPTextEncode`、`StringConstantMultiline`、`UNETLoader`、`Lora Loader Stack (rgthree)`、`SaveImage`、`VAELoader`、`DualCLIPLoader`
 
-**缺卡**（1）：`Lora Loader Stack (rgthree)`
-
-## 学习发现
-
-- 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、KSamplerAdvanced、KSamplerSelect、SamplerCustomAdvanced

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Z-image+Wan2.2高动态真实感视频动漫视频生成_1993930128591880194.json
 hash: b8b8004004edb4ed
-coverage: 0.823529
-learned_at: 2026-10-11 02:57:39
+coverage: 0.941176
+learned_at: 2026-10-15 22:47:17
 nodes: [UNETLoader, CLIPLoader, ConditioningZeroOut, VAELoader, CLIPTextEncode, KSampler, EmptyLatentImage, VAEDecode, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, PrimitiveInt, ApplySageAttention, ApplySageAttention, WanMoeKSampler, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, VAELoader, CLIPVisionLoader, LoraLoaderModelOnly, SimpleMath+, CLIPVisionEncode, UNETLoader, PainterI2V, CR Text, PrimitiveInt, VHS_VideoCombine, VAEDecode, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2]
 patterns: [text_to_image]
-missing: [CR Text, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "cfg": 8, "denoise": "euler", "height": 1536, "sampler_name": 1, "scheduler": 1, "seed": 0.875, "steps": "randomize", "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Z-image+Wan2.2高动态真实感视频动漫视频生成_1993930128591880194.json
@@ -75,17 +74,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **82%**（28/34）
+覆盖率 **94%**（32/34）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`ConditioningZeroOut`、`VAELoader`、`CLIPTextEncode`、`KSampler`、`EmptyLatentImage`、`VAEDecode`、`ModelSamplingSD3`、`ApplySageAttention`、`WanMoeKSampler`、`LoraLoaderModelOnly`、`CLIPVisionLoader`、`CLIPVisionEncode`、`PainterI2V`、`VHS_VideoCombine`
-
-**缺卡**（4）：`CR Text`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`
+**有卡**：`UNETLoader`、`CLIPLoader`、`ConditioningZeroOut`、`VAELoader`、`CLIPTextEncode`、`KSampler`、`EmptyLatentImage`、`VAEDecode`、`ModelSamplingSD3`、`ApplySageAttention`、`WanMoeKSampler`、`LoraLoaderModelOnly`、`CLIPVisionLoader`、`SimpleMath+`、`CLIPVisionEncode`、`PainterI2V`、`CR Text`、`VHS_VideoCombine`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

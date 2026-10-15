@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json
 hash: 7f268cc3bd406dbb
 official: true
-coverage: 0.571429
-learned_at: 2026-10-10 22:43:59
+coverage: 0.714286
+learned_at: 2026-10-15 22:24:49
 nodes: [SaveVideo, PreviewAny, LoadImage, LoadImage, MarkdownNote, b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5, GeminiVideoOmniV2]
 patterns: []
-missing: [b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5]
-discoveries: [次要节点 `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_google_gemini_omni_flash_i2v.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` 知识库中�
 
 ## 知识
 
-覆盖率 **57%**（4/7）
+覆盖率 **71%**（5/7）
 
-**有卡**：`SaveVideo`、`LoadImage`、`GeminiVideoOmniV2`
+**有卡**：`SaveVideo`、`LoadImage`、`b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5`、`GeminiVideoOmniV2`
 
-**缺卡**（1）：`b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5`
-
-**用到的条目**：LoadImage、SaveVideo、GeminiVideoOmniV2、sd15-t2i-basic、sd15-t2i-lora、v2、SaveImage、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、GeminiVideoOmniV2、b83478ba-1f3e-4e62-9869-c8a0c8e9a5f5、sd15-t2i-basic、sd15-t2i-lora、v2、Image Load

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】Minimax H3 长视频连续衔接插件 H3 Motion Context FL2VA_2090325146975424514.json
 hash: c92a81b43334a12b
 coverage: 0.888889
-learned_at: 2026-10-11 21:19:52
+learned_at: 2026-10-15 22:47:42
 nodes: [BasicGuider, KSamplerSelect, RandomNoise, SamplerCustomAdvanced, MiniMaxH3MemoryEfficientSageAttentionPatch, BasicScheduler, ResolutionSelector, PrimitiveFloat, MarkdownNote, VAEDecode, CreateVideo, SaveVideo, ComfyMathExpression, MiniMaxH3MotionContext, MiniMaxH3MotionContextTrim, MiniMaxH3MotionContextLoadLatent, MarkdownNote, LoadImage, LoadImage, UNETLoader, CLIPLoader, LoraLoaderModelOnly, MiniMaxH3MotionContextSaveLatent, VAEDecodeAudio, MiniMaxH3ImageToVideo, VAELoader, VAELoader]
 patterns: []
 missing: []

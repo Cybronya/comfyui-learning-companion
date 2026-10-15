@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_vidu_text_to
 hash: 11c4cd956a073ffb
 official: true
 coverage: 0.666667
-learned_at: 2026-10-10 22:46:38
+learned_at: 2026-10-15 22:24:52
 nodes: [SaveVideo, ViduTextToVideoNode, MarkdownNote]
 patterns: []
 missing: []

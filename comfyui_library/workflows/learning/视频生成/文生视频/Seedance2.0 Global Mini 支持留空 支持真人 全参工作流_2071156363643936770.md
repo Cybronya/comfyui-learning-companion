@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0 Global Mini 支持留空 支持真人 全参工作流_2071156363643936770.json
 hash: 6ec14800dd6213ed
 coverage: 0.894737
-learned_at: 2026-10-11 20:21:30
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, PreviewAny, PreviewAny, LoadVideo, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadAudio, LoadVideo, LoadVideo, RH_BytedanceSeedance20GlobalMiniMultimodalVideo]
 patterns: []
 missing: []

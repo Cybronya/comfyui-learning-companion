@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku-flux.1-Krea-dev-文生图-自动提示词-8步出图_1954524753786761217.json
 hash: 34d27ead8c4cdc86
 coverage: 0.772727
-learned_at: 2026-10-10 20:58:48
+learned_at: 2026-10-15 22:26:52
 nodes: [ModelSamplingFlux, NunchakuTextEncoderLoader, KSamplerSelect, RandomNoise, NunchakuFluxLoraLoader, ShowText|pysssss, RH_LLMAPI_NODE, NunchakuFluxDiTLoader, PrimitiveNode, CLIPTextEncode, FluxGuidance, EmptyLatentImage, SaveImage, PreviewImage, VAEDecode, SamplerCustomAdvanced, BasicGuider, VAELoader, RH_Translator, BasicScheduler, PrimitiveNode, PrimitiveNode]
 patterns: []
 missing: []
@@ -20,23 +20,25 @@ parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（22 个）：
 - `ModelSamplingFlux`
 - `NunchakuTextEncoderLoader`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `RandomNoise`
-- `NunchakuFluxLoraLoader`
+- `NunchakuFluxLoraLoader` ★核心
 - `ShowText|pysssss`
 - `RH_LLMAPI_NODE`
 - `NunchakuFluxDiTLoader`
 - `PrimitiveNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `FluxGuidance`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `SaveImage`
 - `PreviewImage`
-- `VAEDecode`
-- `SamplerCustomAdvanced`
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
 - `BasicGuider`
 - `VAELoader`
 - `RH_Translator`
@@ -46,12 +48,14 @@ parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `height` = `1024`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **77%**（17/22）
 
-**有卡**：`ModelSamplingFlux`、`NunchakuTextEncoderLoader`、`KSamplerSelect`、`RandomNoise`、`NunchakuFluxLoraLoader`、`ShowText|pysssss`、`RH_LLMAPI_NODE`、`NunchakuFluxDiTLoader`、`PrimitiveNode`、`CLIPTextEncode`、`FluxGuidance`、`EmptyLatentImage`、`SaveImage`、`PreviewImage`、`VAEDecode`、`SamplerCustomAdvanced`、`BasicGuider`
+**有卡**：`ModelSamplingFlux`、`NunchakuTextEncoderLoader`、`KSamplerSelect`、`RandomNoise`、`NunchakuFluxLoraLoader`、`RH_LLMAPI_NODE`、`NunchakuFluxDiTLoader`、`CLIPTextEncode`、`FluxGuidance`、`EmptyLatentImage`、`SaveImage`、`VAEDecode`、`SamplerCustomAdvanced`、`BasicGuider`、`VAELoader`、`RH_Translator`、`BasicScheduler`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、NunchakuTextEncoderLoader

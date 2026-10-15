@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan_animate2.json
 hash: c7e67adc03ce0414
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:50:45
+coverage: 0.75
+learned_at: 2026-10-15 22:24:58
 nodes: [LoadImage, LoadVideo, 79280513-53b2-4417-93f8-f3e116bb6736, SaveVideo, SaveVideo, MarkdownNote, MarkdownNote, 04554b7f-9d5a-4160-a710-20673bc4782d]
 patterns: []
-missing: [04554b7f-9d5a-4160-a710-20673bc4782d, 79280513-53b2-4417-93f8-f3e116bb6736]
-discoveries: [次要节点 `04554b7f-9d5a-4160-a710-20673bc4782d` 知识库中没有该节点类型的任何知识, 次要节点 `79280513-53b2-4417-93f8-f3e116bb6736` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_wan_animate2.json
@@ -35,15 +34,8 @@ discoveries: [次要节点 `04554b7f-9d5a-4160-a710-20673bc4782d` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（4/8）
+覆盖率 **75%**（6/8）
 
-**有卡**：`LoadImage`、`LoadVideo`、`SaveVideo`
+**有卡**：`LoadImage`、`LoadVideo`、`79280513-53b2-4417-93f8-f3e116bb6736`、`SaveVideo`、`04554b7f-9d5a-4160-a710-20673bc4782d`
 
-**缺卡**（2）：`04554b7f-9d5a-4160-a710-20673bc4782d`、`79280513-53b2-4417-93f8-f3e116bb6736`
-
-**用到的条目**：LoadImage、SaveVideo、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `04554b7f-9d5a-4160-a710-20673bc4782d` 知识库中没有该节点类型的任何知识
-- 次要节点 `79280513-53b2-4417-93f8-f3e116bb6736` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、04554b7f-9d5a-4160-a710-20673bc4782d、79280513-53b2-4417-93f8-f3e116bb6736、sd15-t2i-basic、sd15-t2i-lora、Image Load

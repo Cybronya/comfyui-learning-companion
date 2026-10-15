@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 图生视频 2.0｜Dev-Dare 三阶渲染增强版_2051714465686667266.json
 hash: 3158579ed2747262
-coverage: 0.929825
-learned_at: 2026-10-11 19:49:35
+coverage: 0.964912
+learned_at: 2026-10-15 22:44:32
 nodes: [PrimitiveInt, KSamplerSelect, ManualSigmas, KSamplerSelect, ManualSigmas, KSamplerSelect, ManualSigmas, PrimitiveBoolean, RandomNoise, RandomNoise, RandomNoise, CM_FloatToInt, Image_Resize_longsize, LTXVEmptyLatentAudio, LTXVPreprocess, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, CFGGuider, CFGGuider, CFGGuider, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, DisTorchPurgeVRAMV2, LTXVImgToVideoConditionOnly, SaveVideo, EmptyLTXVLatentVideo, PromptRelayEncode, LTXVConditioning, LTX2_NAG, VRAMReserver, Seed Everywhere, LoadImage, image_scale_pixel_v2, PrimitiveFloat, LoraLoaderModelOnly, LoraLoaderModelOnly, LayerUtility: PurgeVRAM V2, LatentUpscaleModelLoader, CLIPTextEncode, Text, Text, Text, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAELoader]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, Seed Everywhere]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-dare-merged-distilled-1.1.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX 2.3 图生视频 2.0｜Dev-Dare 三阶渲染增强版_2051714465686667266.json
@@ -91,15 +90,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **93%**（53/57）
+覆盖率 **96%**（55/57）
 
-**有卡**：`KSamplerSelect`、`ManualSigmas`、`PrimitiveBoolean`、`RandomNoise`、`CM_FloatToInt`、`Image_Resize_longsize`、`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`DisTorchPurgeVRAMV2`、`SaveVideo`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`LTXVConditioning`、`LTX2_NAG`、`VRAMReserver`、`LoadImage`、`image_scale_pixel_v2`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`Text`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`Seed Everywhere`
+**有卡**：`KSamplerSelect`、`ManualSigmas`、`PrimitiveBoolean`、`RandomNoise`、`CM_FloatToInt`、`Image_Resize_longsize`、`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`DisTorchPurgeVRAMV2`、`SaveVideo`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`LTXVConditioning`、`LTX2_NAG`、`VRAMReserver`、`Seed Everywhere`、`LoadImage`、`image_scale_pixel_v2`、`LoraLoaderModelOnly`、`LayerUtility: PurgeVRAM V2`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`Text`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明

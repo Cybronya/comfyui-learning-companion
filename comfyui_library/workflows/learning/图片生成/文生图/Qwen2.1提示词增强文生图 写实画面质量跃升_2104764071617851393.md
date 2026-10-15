@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen2.1提示词增强文生图 写实画面质量跃升_2104764071617851393.json
 hash: a3e241637b664152
-coverage: 0.886364
-learned_at: 2026-10-10 20:59:06
+coverage: 0.909091
+learned_at: 2026-10-15 22:27:23
 nodes: [ConditioningZeroOut, VAELoader, CLIPLoader, VAEDecode, EmptyLatentImage, KSampler, CLIPLoader, easy clearCacheAll, TextEncodeQwenImage21, SaveImage, UNETLoader, StringConstantMultiline, LoraLoaderModelOnly, TextGenerate, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [easy clearCacheAll]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen2.1提示词增强文生图 写实画面质量跃升_2104764071617851393.json
@@ -22,48 +22,50 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（44 个）：
 - `ConditioningZeroOut`
 - `VAELoader`
 - `CLIPLoader`
-- `VAEDecode`
-- `EmptyLatentImage`
-- `KSampler`
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
 - `CLIPLoader`
 - `easy clearCacheAll`
 - `TextEncodeQwenImage21`
 - `SaveImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `StringConstantMultiline`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `TextGenerate`
 - `ResolutionSelector`
 - `孤海注释`
 - `孤海注释`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `KSampler`
-- `EmptyLatentImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `JjkText`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `solarL_SaveImagesToZip`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `Note`
@@ -72,23 +74,23 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `4.5`
-- `denoise` = `1`
+- `width` = `80`
 - `height` = `80`
-- `sampler_name` = `er_sde`
-- `scheduler` = `beta`
+- `batch_size` = `1`
 - `seed` = `598626327129635`
 - `steps` = `4`
-- `width` = `80`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **89%**（39/44）
+覆盖率 **91%**（40/44）
 
-**有卡**：`ConditioningZeroOut`、`VAELoader`、`CLIPLoader`、`VAEDecode`、`EmptyLatentImage`、`KSampler`、`easy clearCacheAll`、`TextEncodeQwenImage21`、`SaveImage`、`UNETLoader`、`StringConstantMultiline`、`LoraLoaderModelOnly`、`TextGenerate`、`ResolutionSelector`、`孤海注释`、`JjkText`、`CLIPTextEncode`
+**有卡**：`ConditioningZeroOut`、`VAELoader`、`CLIPLoader`、`VAEDecode`、`EmptyLatentImage`、`KSampler`、`easy clearCacheAll`、`TextEncodeQwenImage21`、`SaveImage`、`UNETLoader`、`StringConstantMultiline`、`LoraLoaderModelOnly`、`TextGenerate`、`ResolutionSelector`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
-**缺卡**（1）：`easy clearCacheAll`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
 ## 参数体检
 
@@ -97,5 +99,4 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

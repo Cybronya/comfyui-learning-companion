@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json
 hash: d51a122633a0a51a
-coverage: 0.661017
-learned_at: 2026-10-10 20:48:16
+coverage: 0.864407
+learned_at: 2026-10-15 22:25:51
 nodes: [ImageConcanate, ConditioningZeroOut, VAEDecode, VAEEncode, KSampler, UnetLoaderGGUF, LayerUtility: PurgeVRAM, ImageScaleToTotalPixels, ModelSamplingAuraFlow, CFGNorm, PathchSageAttentionKJ, ConditioningZeroOut, EmptySD3LatentImage, easy imageSize, LoadImage, ShowText|pysssss, LayerUtility: PurgeVRAM, ImageScaleToTotalPixels, ImageScaleToTotalPixels, CLIPLoader, VAELoader, VAELoader, CLIPLoader, CR Text, CR Text, SDPoseOODLoader, LoadImage, CLIPTextEncode, UNETLoader, UNETLoader, VAEDecode, LayerUtility: PurgeVRAM, SaveImage, PreviewImage, Image Comparer (rgthree), ImageConcanate, SaveImageJPG_GH, PreviewImage, VAEDecode, LayerColor: ColorAdapter, KSampler, LoraLoaderModelOnly, workflow>123, LoraLoaderModelOnly, KSampler, SDPoseOODProcessor, PreviewImage, easy ifElse, PrimitiveBoolean, TextEncodeQwenImageEditPlus, ShowText|pysssss, Qwen3_VQA, SomethingToString, PrimitiveBoolean, easy ifElse, CR Text Concatenate, CR Text Concatenate, CR Text, CR Text]
 patterns: [image_to_image]
-missing: [CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, CR Text Concatenate, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, workflow>123, LayerColor: ColorAdapter, easy imageSize]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 668453903638432, "steps": 4}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>123` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/姿势迁移—FireRed-Image-Edit-1.1_2032383512262742018.json
@@ -98,11 +98,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **66%**（39/59）
+覆盖率 **86%**（51/59）
 
-**有卡**：`ImageConcanate`、`ConditioningZeroOut`、`VAEDecode`、`VAEEncode`、`KSampler`、`UnetLoaderGGUF`、`ImageScaleToTotalPixels`、`ModelSamplingAuraFlow`、`CFGNorm`、`PathchSageAttentionKJ`、`EmptySD3LatentImage`、`LoadImage`、`CLIPLoader`、`VAELoader`、`SDPoseOODLoader`、`CLIPTextEncode`、`UNETLoader`、`SaveImage`、`SaveImageJPG_GH`、`LoraLoaderModelOnly`、`SDPoseOODProcessor`、`PrimitiveBoolean`、`TextEncodeQwenImageEditPlus`、`Qwen3_VQA`、`SomethingToString`
-
-**缺卡**（12）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`、`CR Text Concatenate`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`workflow>123`、`LayerColor: ColorAdapter`、`easy imageSize`
+**有卡**：`ImageConcanate`、`ConditioningZeroOut`、`VAEDecode`、`VAEEncode`、`KSampler`、`UnetLoaderGGUF`、`LayerUtility: PurgeVRAM`、`ImageScaleToTotalPixels`、`ModelSamplingAuraFlow`、`CFGNorm`、`PathchSageAttentionKJ`、`EmptySD3LatentImage`、`easy imageSize`、`LoadImage`、`CLIPLoader`、`VAELoader`、`CR Text`、`SDPoseOODLoader`、`CLIPTextEncode`、`UNETLoader`、`SaveImage`、`SaveImageJPG_GH`、`LayerColor: ColorAdapter`、`LoraLoaderModelOnly`、`workflow>123`、`SDPoseOODProcessor`、`PrimitiveBoolean`、`TextEncodeQwenImageEditPlus`、`Qwen3_VQA`、`SomethingToString`、`CR Text Concatenate`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage
 
@@ -115,18 +113,6 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>123` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

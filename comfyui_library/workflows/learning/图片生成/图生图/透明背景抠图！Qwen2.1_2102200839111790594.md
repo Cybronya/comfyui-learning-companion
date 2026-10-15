@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/透明背景抠图！Qwen2.1_2102200839111790594.json
 hash: b7d8f3b98ec04c26
 coverage: 0.522727
-learned_at: 2026-10-10 21:23:07
+learned_at: 2026-10-15 22:26:02
 nodes: [CLIPLoader, VAELoader, EmptyLatentImage, QwenImage21Cache, SetNode, SetNode, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, LoadImage, SetNode, LoadImage, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPLoader, FastGroupsBypassSwitch, ResolutionSelector, Fast Groups Bypasser (rgthree), UNETLoader, easy showAnything, KSampler, TextEncodeQwenImage21, BatchImagesNode, TextCombinerTwo, JjkText, SaveImage, LoadImage, LoadImage, JjkText, GH_ImageVideoComparer, VAEDecode, PreviewImage, GetNode]
 patterns: []
 missing: []
@@ -20,10 +20,12 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（44 个）：
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `QwenImage21Cache`
 - `SetNode`
 - `SetNode`
@@ -50,9 +52,9 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 - `FastGroupsBypassSwitch`
 - `ResolutionSelector`
 - `Fast Groups Bypasser (rgthree)`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `easy showAnything`
-- `KSampler`
+- `KSampler` ★核心
 - `TextEncodeQwenImage21`
 - `BatchImagesNode`
 - `TextCombinerTwo`
@@ -62,24 +64,26 @@ parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_n
 - `LoadImage`
 - `JjkText`
 - `GH_ImageVideoComparer`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
 - `GetNode`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `999`
 - `steps` = `45`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **52%**（23/44）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`QwenImage21Cache`、`SetNode`、`LoadImage`、`GetNode`
+**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`QwenImage21Cache`、`LoadImage`、`FastGroupsBypassSwitch`、`ResolutionSelector`、`UNETLoader`、`KSampler`、`TextEncodeQwenImage21`、`BatchImagesNode`、`TextCombinerTwo`、`SaveImage`、`GH_ImageVideoComparer`、`VAEDecode`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage

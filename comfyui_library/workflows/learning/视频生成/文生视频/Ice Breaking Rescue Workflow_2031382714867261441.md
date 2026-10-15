@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ice Breaking Rescue Workflow_2031382714867261441.json
 hash: 52999a8c283684fb
 coverage: 0.714286
-learned_at: 2026-10-11 03:16:44
+learned_at: 2026-10-15 22:44:28
 nodes: [RH_Veo3_Text2Video, JjkText, RH_LLMAPI_Pro_Node, SaveVideo, RH_Veo3_Text2Video, JjkText, SaveVideo]
 patterns: []
 missing: []

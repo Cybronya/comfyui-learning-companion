@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/❸「合集」Klein All In One「9.19」_2020469763079675906.json
 hash: 0e6feee5a0bf5e12
-coverage: 0.341629
-learned_at: 2026-10-10 20:48:13
+coverage: 0.420814
+learned_at: 2026-10-15 22:25:37
 nodes: [GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, ReferenceLatent, ReferenceLatent, GetNode, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, SetNode, GetNode, SetNode, GetNode, SetNode, SetNode, SetNode, GetNode, ConditioningZeroOut, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ConditioningZeroOut, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, VAEEncode, ReferenceLatent, SetNode, SetNode, SetNode, GetNode, GetNode, ConditioningZeroOut, SetNode, GetNode, VAEEncode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, VAEDecode, easy cleanGpuUsed, SetNode, ReferenceLatent, ReferenceLatent, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, EmptyFlux2LatentImage, SetNode, EmptyFlux2LatentImage, SetNode, GetNode, GetNode, EmptyFlux2LatentImage, SetNode, easy cleanGpuUsed, ImageStitch, GetNode, GetNode, GetNode, GetNode, easy cleanGpuUsed, SetNode, GetNode, GetNode, SetNode, SetNode, EmptyFlux2LatentImage, SetNode, GetNode, GetNode, VAEEncode, GetNode, GetNode, GetNode, easy cleanGpuUsed, ReferenceLatent, ReferenceLatent, GetNode, VAEDecode, SetNode, easy cleanGpuUsed, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, ImageUpscaleWithModel, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy cleanGpuUsed, GetNode, VAEDecode, SetNode, EmptyFlux2LatentImage, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, easy cleanGpuUsed, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, Image Comparer (rgthree), SetNode, SetNode, ImageScaleToTotalPixels, GetNode, SetNode, GetNode, VAELoader, VAELoader, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, INTConstant, SetNode, CR Text Concatenate, SetNode, SetNode, CR Text Concatenate, SetNode, SetNode, SaveImage, SetNode, SaveImage, Image Comparer (rgthree), SetNode, DifferentialDiffusion, Image Comparer (rgthree), GetNode, llama_cpp_parameters, SomethingToString, GetNode, WanMoeKSampler, GetNode, SetNode, SetNode, SetNode, SetNode, PlaySound|pysssss, easy cleanGpuUsed, GetNode, SetNode, GetNode, ModelPassThrough, ModelPassThrough, SetNode, ModelPassThrough, GetNode, SetNode, ModelPassThrough, CLIPTextEncode, ConditioningZeroOut, CLIPTextEncode, GetNode, SetNode, CLIPTextEncode, ConditioningZeroOut, SetNode, SetNode, GetNode, CR Text Concatenate, GetNode, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, LoadImage, easy bookmark, LoadImage, easy bookmark, CR Prompt Text, CR Prompt Text, GetNode, GetNode, easy bookmark, Any Switch (rgthree), SetNode, Any Switch (rgthree), SetNode, CLIPLoader, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, SaveImage, Int, Int, Int, CLIPTextEncode, SaveImage, SetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, ModelPassThrough, GetNode, ModelPassThrough, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, MarkdownNote, LayerUtility: ImageScaleByAspectRatio V2, SetNode, GetNode, GetNode, GetNode, INTConstant, INTConstant, KSampler, KSampler, SeedVR2VideoUpscaler, GetNode, GetNode, ReferenceLatent, SetNode, ReferenceLatent, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, ImageScaleToTotalPixels, VAEDecode, SetNode, KSampler, GetNode, GetNode, SetNode, ColorMatch, GetNode, SaveImage, Image Comparer (rgthree), ReferenceLatent, DrawMaskOnImage, EmptyFlux2LatentImage, ColorMatch, ColorMatch, ColorMatch, DrawMaskOnImage, SetNode, GetNode, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, CLIPTextEncode, ImageResizeKJv2, PlaySound|pysssss, VHS_VideoCombine, MarkdownNote, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, MarkdownNote, MarkdownNote, PlaySound|pysssss, SetNode, PlaySound|pysssss, ImagePadForOutpaint, PreviewImage, QwenMultiangleCameraNode, CR Prompt Text, UpscaleModelLoader, UNETLoader, CLIPLoader, UNETLoader, LoadAudio, ImageResizeKJv2, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, ModelPatchTorchSettings, ModelSamplingSD3, ModelSamplingSD3, ModelPatchTorchSettings, PathchSageAttentionKJ, PathchSageAttentionKJ, PainterI2V, GetNode, SetNode, GetNode, SetNode, Fast Groups Bypasser (rgthree), easy showAnything, LoadImage, SaveImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ColorMatch, ConditioningZeroOut, LoadImage, PreviewImage, GetNode, ReferenceLatent, ReferenceLatent, ReferenceLatent, ReferenceLatent, VAEEncode, VAEEncode, ImageScaleToTotalPixels, GetNode, GetNode, GetNode, ImageScaleToTotalPixels, LoadImage, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, MarkdownNote, MarkdownNote, LayerUtility: ImageScaleByAspectRatio V2, ColorMatch, KSampler, Mask Fill Holes, INPAINT_ExpandMask, ImageCompositeMasked, InpaintModelConditioning, LoadImage, MarkdownNote, CLIPTextEncode, LoadImage, ImageAndMaskPreview, SaveImage, Image Comparer (rgthree), MarkdownNote, KSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, MarkdownNote, CLIPTextEncode, SaveImage, llama_cpp_instruct_adv, Fast Groups Bypasser (rgthree), KSampler, easy showAnything, CR Prompt Text, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), UNETLoader, Fast Groups Bypasser (rgthree), llama_cpp_model_loader]
 patterns: [image_to_image]
-missing: [CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, Mask Fill Holes, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, PlaySound|pysssss, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy bookmark, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "sgm_uniform", "seed": 350858018198861, "steps": 4}
-discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/❸「合集」Klein All In One「9.19」_2020469763079675906.json
@@ -481,11 +481,9 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **34%**（151/442）
+覆盖率 **42%**（186/442）
 
-**有卡**：`ReferenceLatent`、`VAEEncode`、`VAEDecode`、`ConditioningZeroOut`、`EmptyFlux2LatentImage`、`ImageStitch`、`ImageUpscaleWithModel`、`ImageScaleToTotalPixels`、`VAELoader`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`INTConstant`、`SaveImage`、`DifferentialDiffusion`、`llama_cpp_parameters`、`SomethingToString`、`WanMoeKSampler`、`ModelPassThrough`、`CLIPTextEncode`、`LoadImage`、`CLIPLoader`、`Int`、`VHS_VideoCombine`、`KSampler`、`SeedVR2VideoUpscaler`、`ColorMatch`、`DrawMaskOnImage`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`ImagePadForOutpaint`、`QwenMultiangleCameraNode`、`UpscaleModelLoader`、`UNETLoader`、`LoadAudio`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`PainterI2V`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`INPAINT_ExpandMask`、`ImageCompositeMasked`、`InpaintModelConditioning`、`ImageAndMaskPreview`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`
-
-**缺卡**（35）：`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`Mask Fill Holes`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`PlaySound|pysssss`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy bookmark`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`ReferenceLatent`、`VAEEncode`、`VAEDecode`、`ConditioningZeroOut`、`easy cleanGpuUsed`、`EmptyFlux2LatentImage`、`ImageStitch`、`ImageUpscaleWithModel`、`ImageScaleToTotalPixels`、`VAELoader`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`、`INTConstant`、`CR Text Concatenate`、`SaveImage`、`DifferentialDiffusion`、`llama_cpp_parameters`、`SomethingToString`、`WanMoeKSampler`、`PlaySound|pysssss`、`ModelPassThrough`、`CLIPTextEncode`、`easy bookmark`、`LoadImage`、`CR Prompt Text`、`CLIPLoader`、`Int`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSampler`、`SeedVR2VideoUpscaler`、`ColorMatch`、`DrawMaskOnImage`、`ImageResizeKJv2`、`LoraLoaderModelOnly`、`ImagePadForOutpaint`、`QwenMultiangleCameraNode`、`UpscaleModelLoader`、`UNETLoader`、`LoadAudio`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`PainterI2V`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`Mask Fill Holes`、`INPAINT_ExpandMask`、`ImageCompositeMasked`、`InpaintModelConditioning`、`ImageAndMaskPreview`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
@@ -501,41 +499,6 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mask Fill Holes` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy bookmark` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

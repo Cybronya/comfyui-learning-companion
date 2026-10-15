@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/HunyuanVideo_1.5加速文生视频1080p_1993277000070660097.json
 hash: 6a636abcb731d7cf
 coverage: 0.878049
-learned_at: 2026-10-11 02:57:36
+learned_at: 2026-10-15 22:44:28
 nodes: [DualCLIPLoader, UNETLoader, CreateVideo, VAEDecodeTiled, SaveVideo, HunyuanVideo15LatentUpscaleWithModel, CreateVideo, VAELoader, VAEDecode, VAEDecodeTiled, VAEDecode, MarkdownNote, HunyuanVideo15SuperResolution, Note, Note, EmptyHunyuanVideo15Latent, MarkdownNote, LatentUpscaleModelLoader, CLIPTextEncode, RandomNoise, KSamplerSelect, ModelSamplingSD3, RandomNoise, KSamplerSelect, ModelSamplingSD3, BasicScheduler, SplitSigmas, Note, DisableNoise, SamplerCustomAdvanced, CFGGuider, CFGGuider, SamplerCustomAdvanced, BasicScheduler, CLIPTextEncode, SamplerCustomAdvanced, LoraLoaderModelOnly, CFGGuider, UNETLoader, PathchSageAttentionKJ, SaveVideo]
 patterns: []
 missing: []

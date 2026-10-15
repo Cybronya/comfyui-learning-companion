@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Holocine——Wan2.2连续多分镜长视频生成_1982455092706197505.json
 hash: 0e5c60e3ce489c7e
-coverage: 0.863636
-learned_at: 2026-10-11 02:44:59
+coverage: 0.954545
+learned_at: 2026-10-15 22:44:27
 nodes: [ModelSamplingSD3, easy cleanGpuUsed, MarkdownNote, VAEDecode, easy cleanGpuUsed, ModelSamplingSD3, PathchSageAttentionKJ, CLIPTextEncode, PathchSageAttentionKJ, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, INTConstant, INTConstant, LoraLoaderModelOnly, CLIPTextEncode, UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, EmptyHunyuanLatentVideo]
 patterns: []
-missing: [easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Holocine——Wan2.2连续多分镜长视频生成_1982455092706197505.json
@@ -58,15 +57,8 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **86%**（19/22）
+覆盖率 **95%**（21/22）
 
-**有卡**：`ModelSamplingSD3`、`VAEDecode`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`KSamplerAdvanced`、`VHS_VideoCombine`、`INTConstant`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyHunyuanLatentVideo`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`ModelSamplingSD3`、`easy cleanGpuUsed`、`VAEDecode`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`KSamplerAdvanced`、`VHS_VideoCombine`、`INTConstant`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyHunyuanLatentVideo`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

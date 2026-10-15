@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/flux klein4B 工作流 浮云1.17_2012350472430034946.json
 hash: 9b3e390513d7aaff
 coverage: 0.8125
-learned_at: 2026-10-11 03:07:13
+learned_at: 2026-10-15 22:47:19
 nodes: [KSamplerSelect, SamplerCustomAdvanced, EmptyFlux2LatentImage, UNETLoader, CLIPLoader, VAELoader, CFGGuider, ConditioningZeroOut, CLIPTextEncode, Flux2Scheduler, VAEDecode, PrimitiveInt, PrimitiveInt, RandomNoise, PrimitiveStringMultiline, SaveImage]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json
 hash: a00463fd04841900
-coverage: 0.628571
-learned_at: 2026-10-10 20:48:04
+coverage: 0.714286
+learned_at: 2026-10-15 22:25:10
 nodes: [Image Comparer (rgthree), LoadImage, GoohaiUniversalSlider, LoadImage, ComfySwitchNode, ResolutionSelector, QwenImage21ConfigPreparer_EditUtils, QwenImage21ConfigPreparer_EditUtils, QwenImage21ModelConfig_EditUtils, PathchSageAttentionKJ, QwenImage21EditApply_EditUtils, ConditioningZeroOut, VAEDecode, EmptyLatentImage, CropWithPadInfo_EditUtils, KSampler, CropWithPadInfo_EditUtils, Fast Bypasser (rgthree), 布尔孤海, SaveImage, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, VAELoader, EditTextEncode_EditUtils, LoadImage, workflow>遮罩逻辑, QwenImage21ConfigPreparer_EditUtils, PrimitiveStringMultiline, 孤海注释]
 patterns: []
-missing: [Fast Bypasser (rgthree), workflow>遮罩逻辑, 布尔孤海]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 392705312548116, "steps": 25, "width": 1024}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `workflow>遮罩逻辑` 知识库中没有该节点类型的任何知识, 次要节点 `布尔孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen 2.1 多图编辑（支持遮罩）_2102316925333360641.json
@@ -74,16 +73,8 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **63%**（22/35）
+覆盖率 **71%**（25/35）
 
-**有卡**：`LoadImage`、`GoohaiUniversalSlider`、`ResolutionSelector`、`QwenImage21ConfigPreparer_EditUtils`、`QwenImage21ModelConfig_EditUtils`、`PathchSageAttentionKJ`、`QwenImage21EditApply_EditUtils`、`ConditioningZeroOut`、`VAEDecode`、`EmptyLatentImage`、`CropWithPadInfo_EditUtils`、`KSampler`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EditTextEncode_EditUtils`
-
-**缺卡**（3）：`Fast Bypasser (rgthree)`、`workflow>遮罩逻辑`、`布尔孤海`
+**有卡**：`LoadImage`、`GoohaiUniversalSlider`、`ResolutionSelector`、`QwenImage21ConfigPreparer_EditUtils`、`QwenImage21ModelConfig_EditUtils`、`PathchSageAttentionKJ`、`QwenImage21EditApply_EditUtils`、`ConditioningZeroOut`、`VAEDecode`、`EmptyLatentImage`、`CropWithPadInfo_EditUtils`、`KSampler`、`Fast Bypasser (rgthree)`、`布尔孤海`、`SaveImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EditTextEncode_EditUtils`、`workflow>遮罩逻辑`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPLoader、ConditioningZeroOut、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow>遮罩逻辑` 知识库中没有该节点类型的任何知识
-- 次要节点 `布尔孤海` 知识库中没有该节点类型的任何知识

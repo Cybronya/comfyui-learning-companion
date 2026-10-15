@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax+H3+Multi-parameter+Reference+Raw+Video_2084191041938345986.json
 hash: f6ec81b724fc061b
 coverage: 0.8
-learned_at: 2026-10-11 20:38:40
+learned_at: 2026-10-15 22:46:40
 nodes: [MarkdownNote, MarkdownNote, VAELoader, VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, BasicGuider, UNETLoader, CLIPLoader, RandomNoise, CreateVideo, ComfyMathExpression, VAELoader, SaveVideo, MarkdownNote, ResolutionSelector, LoadVideo, MiniMaxH3ReferenceToVideo, VHS_LoadVideo, LoadImage, LoadImage, PrimitiveStringMultiline, PrimitiveFloat]
 patterns: []
 missing: []

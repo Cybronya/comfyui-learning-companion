@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MinimaxH3_R2V-FaceRefinement-Basic （面部精修）图生视频工作流_2099479595887190018.json
 hash: 492dc0dc5fdbdf11
 coverage: 0.557143
-learned_at: 2026-10-11 21:41:50
+learned_at: 2026-10-15 22:46:44
 nodes: [MarkdownNote, PrimitiveFloat, SetNode, SetNode, SetNode, SetNode, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, MiniMaxH3SigmaShift, SetNode, SeedNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, BasicGuider, GetNode, BasicScheduler, GetNode, RandomNoise, KSamplerSelect, GetNode, VAEDecodeAudio, SamplerCustomAdvanced, SetNode, GetNode, GetNode, GetNode, H3PerFrameDenoise, GetNode, RandomNoise, GetNode, BasicGuider, KSamplerSelect, SamplerCustomAdvanced, GetNode, GetNode, GetNode, VAEDecode, ResolutionSelector, VAEDecode, MiniMaxH3ReferenceToVideo, H3InjectVideoLatent, BasicScheduler, H3FaceStitch, VHS_VideoCombine, VHS_VideoCombine, PrimitiveFloat, ComfyMathExpression, PrimitiveFloat, VHS_VideoCombine, StringConcatenate, MiniMaxH3ReferenceToVideo, LoadAudio, UNETLoader, CLIPLoader, SetNode, VAELoader, SetNode, VAELoader, LoraLoaderModelOnly, ModelPatchTorchSettings, H3FaceTrackCrop, ImageResizeKJv2, PrimitiveStringMultiline, LoadImage]
 patterns: []
 missing: []

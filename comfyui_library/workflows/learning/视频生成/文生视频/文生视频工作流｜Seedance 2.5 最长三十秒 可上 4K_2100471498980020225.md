@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频工作流｜Seedance 2.5 最长三十秒 可上 4K_2100471498980020225.json
 hash: 059fb83068bff012
 coverage: 0.666667
-learned_at: 2026-10-11 22:12:54
+learned_at: 2026-10-15 22:48:44
 nodes: [PrimitiveStringMultiline, RH_BytedanceSeedance25GlobalTokenTextToVideo, SaveVideo]
 patterns: []
 missing: []
@@ -32,4 +32,4 @@ missing: []
 
 **有卡**：`RH_BytedanceSeedance25GlobalTokenTextToVideo`、`SaveVideo`
 
-**用到的条目**：RH_BytedanceSeedance25GlobalTokenTextToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Text、String、sampler_name 调整经验
+**用到的条目**：RH_BytedanceSeedance25GlobalTokenTextToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Text、String

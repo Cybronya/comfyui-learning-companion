@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3-Text-Audio-Video-GGUF_2031898345630863362.json
 hash: 1c269f871af13a74
 coverage: 0.808511
-learned_at: 2026-10-11 03:16:45
+learned_at: 2026-10-15 22:44:40
 nodes: [CFGGuider, ManualSigmas, GetNode, SetLatentNoiseMask, SetNode, SetNode, ImageScaleBy, GetImageSize, EmptyLTXVLatentVideo, RandomNoise, SolidMask, LTXVAudioVAEEncode, LTXVSeparateAVLatent, CreateVideo, GetNode, KSamplerSelect, SetNode, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, SamplerCustomAdvanced, LTXVConcatAVLatent, LTXVConditioning, Float, LTXVSeparateAVLatent, LTXVLatentUpsampler, GetNode, LTXVConcatAVLatent, GetNode, MarkdownNote, EmptyImage, SaveVideo, AudioCrop, PrimitiveInt, VAEDecodeTiled, CLIPTextEncode, LoraLoaderModelOnly, UnetLoaderGGUF, VAELoaderKJ, VAELoaderKJ, LatentUpscaleModelLoader, DualCLIPLoader, LoadAudio, CLIPTextEncode, LoraLoaderModelOnly]
 patterns: []
 missing: []

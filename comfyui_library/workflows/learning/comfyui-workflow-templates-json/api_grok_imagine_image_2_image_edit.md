@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_grok_imagine
 hash: 028f7e11c500c5b1
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:06
+learned_at: 2026-10-15 22:24:49
 nodes: [GrokImageEditNodeV2, LoadImage, SaveImage, LoadImage]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`GrokImageEditNodeV2`、`LoadImage`、`SaveImage`
 
-**用到的条目**：LoadImage、SaveImage、GrokImageEditNodeV2、sd15-t2i-basic、sd15-t2i-lora、node、ki、v2
+**用到的条目**：LoadImage、SaveImage、GrokImageEditNodeV2、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、ki

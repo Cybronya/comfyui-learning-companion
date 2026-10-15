@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
 hash: 76a83a29282e01ec
-coverage: 0.785714
-learned_at: 2026-10-10 20:58:41
+coverage: 0.821429
+learned_at: 2026-10-15 22:26:34
 nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, UNETLoader, UNETLoader, VAELoader, LoraLoader, CLIPLoader, LoadImage, Note, LoadImage, Note, LoadImage, LoadImage, Note, easy cleanGpuUsed, KSamplerAdvanced, KSamplerAdvanced, CLIPTextEncode, LoraLoaderModelOnly, EmptyHunyuanLatentVideo, Note, SaveImage, CLIPTextEncode, Note, Int, Int, Int]
 patterns: [lora]
-missing: [easy cleanGpuUsed]
+missing: []
 parameters: {"cfg": 10, "denoise": "beta57", "lora_name": "Instagirlv2.0_hinoise.safetensors", "sampler_name": 1, "scheduler": "res_2s", "seed": "enable", "steps": "fixed", "strength_clip": 1, "strength_model": 1}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Instagirl Wan2.2_1954740605987504129.json
@@ -21,14 +20,16 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（28 个）：
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
-- `UNETLoader`
-- `UNETLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 - `VAELoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `CLIPLoader`
 - `LoadImage`
 - `Note`
@@ -38,14 +39,14 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 - `LoadImage`
 - `Note`
 - `easy cleanGpuUsed`
-- `KSamplerAdvanced`
-- `KSamplerAdvanced`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `EmptyHunyuanLatentVideo`
 - `Note`
 - `SaveImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Note`
 - `Int`
 - `Int`
@@ -55,24 +56,20 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 关键参数
 
-- `cfg` = `10`
-- `denoise` = `beta57`
 - `lora_name` = `Instagirlv2.0_hinoise.safetensors`
-- `sampler_name` = `1`
-- `scheduler` = `res_2s`
+- `strength_model` = `1`
+- `strength_clip` = `1`
 - `seed` = `enable`
 - `steps` = `fixed`
-- `strength_clip` = `1`
-- `strength_model` = `1`
+- `cfg` = `10`
+- `sampler_name` = `1`
+- `scheduler` = `res_2s`
+- `denoise` = `beta57`
 
 ## 知识
 
-覆盖率 **79%**（22/28）
+覆盖率 **82%**（23/28）
 
-**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`UNETLoader`、`VAELoader`、`LoraLoader`、`CLIPLoader`、`LoadImage`、`Note`、`easy cleanGpuUsed`、`KSamplerAdvanced`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`
+**有卡**：`LoraLoaderModelOnly`、`VAEDecode`、`UNETLoader`、`VAELoader`、`LoraLoader`、`CLIPLoader`、`LoadImage`、`easy cleanGpuUsed`、`KSamplerAdvanced`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`SaveImage`、`Int`
 
-**缺卡**（1）：`easy cleanGpuUsed`
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

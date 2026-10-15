@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/WAN2.2高质量真实照片生成v2_1963603441133375490.json
 hash: 03c2db234adceca3
-coverage: 0.694915
-learned_at: 2026-10-10 20:59:13
+coverage: 0.745763
+learned_at: 2026-10-15 22:27:34
 nodes: [CLIPTextEncode, CLIPTextEncode, VAEDecode, CLIPLoader, CLIPTextEncode, LoraLoaderModelOnly, CLIPLoader, CLIPTextEncode, Note, VAEDecode, VAELoader, LoraLoaderModelOnly, Note, KSampler, KSampler, Note, Text Concatenate, Note, Note, VAELoader, EmptyHunyuanLatentVideo, CLIPLoader, Note, VAEDecode, VAEDecode, PreviewImage, PreviewImage, Note, Note, ClownsharKSampler_Beta, PreviewImage, Image Comparer (rgthree), SaveImage, PreviewImage, Image Sharpen FS, Image Sharpen FS, SaveImage, LoraLoaderModelOnly, UnetLoaderGGUF, LatentUpscaleBy, UnetLoaderGGUF, ClownsharKSampler_Beta, CLIPTextEncode, easy showAnything, Image Comparer (rgthree), UnetLoaderGGUF, CLIPTextEncode, String, Text, Text, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LatentUpscaleBy, UnetLoaderGGUF, UNETLoader, UNETLoader, UNETLoader]
 patterns: []
-missing: [Image Sharpen FS, Image Sharpen FS, Text Concatenate]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 20, "denoise": 1.0000000000000002, "sampler_name": 10, "scheduler": 1, "seed": 0.30000000000000004, "steps": "bong_tangent"}
-discoveries: [次要节点 `Image Sharpen FS` 知识库中没有该节点类型的任何知识, 次要节点 `Image Sharpen FS` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/WAN2.2高质量真实照片生成v2_1963603441133375490.json
@@ -22,22 +22,24 @@ discoveries: [次要节点 `Image Sharpen FS` 知识库中没有该节点类型�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（59 个）：
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `VAEDecode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `CLIPLoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `Note`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `VAELoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `Note`
-- `KSampler`
-- `KSampler`
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `Note`
 - `Text Concatenate`
 - `Note`
@@ -46,13 +48,13 @@ discoveries: [次要节点 `Image Sharpen FS` 知识库中没有该节点类型�
 - `EmptyHunyuanLatentVideo`
 - `CLIPLoader`
 - `Note`
-- `VAEDecode`
-- `VAEDecode`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
 - `PreviewImage`
 - `PreviewImage`
 - `Note`
 - `Note`
-- `ClownsharKSampler_Beta`
+- `ClownsharKSampler_Beta` ★核心
 - `PreviewImage`
 - `Image Comparer (rgthree)`
 - `SaveImage`
@@ -60,45 +62,45 @@ discoveries: [次要节点 `Image Sharpen FS` 知识库中没有该节点类型�
 - `Image Sharpen FS`
 - `Image Sharpen FS`
 - `SaveImage`
-- `LoraLoaderModelOnly`
-- `UnetLoaderGGUF`
+- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF` ★核心
 - `LatentUpscaleBy`
-- `UnetLoaderGGUF`
-- `ClownsharKSampler_Beta`
-- `CLIPTextEncode`
+- `UnetLoaderGGUF` ★核心
+- `ClownsharKSampler_Beta` ★核心
+- `CLIPTextEncode` ★核心
 - `easy showAnything`
 - `Image Comparer (rgthree)`
-- `UnetLoaderGGUF`
-- `CLIPTextEncode`
+- `UnetLoaderGGUF` ★核心
+- `CLIPTextEncode` ★核心
 - `String`
 - `Text`
 - `Text`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `LatentUpscaleBy`
-- `UnetLoaderGGUF`
-- `UNETLoader`
-- `UNETLoader`
-- `UNETLoader`
+- `UnetLoaderGGUF` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 
 ## 关键参数
 
-- `cfg` = `20`
-- `denoise` = `1.0000000000000002`
-- `sampler_name` = `10`
-- `scheduler` = `1`
 - `seed` = `0.30000000000000004`
 - `steps` = `bong_tangent`
+- `cfg` = `20`
+- `sampler_name` = `10`
+- `scheduler` = `1`
+- `denoise` = `1.0000000000000002`
 
 ## 知识
 
-覆盖率 **69%**（41/59）
+覆盖率 **75%**（44/59）
 
-**有卡**：`CLIPTextEncode`、`VAEDecode`、`CLIPLoader`、`LoraLoaderModelOnly`、`Note`、`VAELoader`、`KSampler`、`Text Concatenate`、`EmptyHunyuanLatentVideo`、`PreviewImage`、`ClownsharKSampler_Beta`、`Image Comparer (rgthree)`、`SaveImage`、`Image Sharpen FS`、`UnetLoaderGGUF`、`LatentUpscaleBy`
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`CLIPLoader`、`LoraLoaderModelOnly`、`VAELoader`、`KSampler`、`Text Concatenate`、`EmptyHunyuanLatentVideo`、`ClownsharKSampler_Beta`、`SaveImage`、`Image Sharpen FS`、`UnetLoaderGGUF`、`LatentUpscaleBy`、`String`、`Text`、`UNETLoader`
 
-**缺卡**（3）：`Image Sharpen FS`、`Image Sharpen FS`、`Text Concatenate`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、ClownsharKSampler_Beta
 
 ## 参数体检
 
@@ -108,8 +110,5 @@ discoveries: [次要节点 `Image Sharpen FS` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `Image Sharpen FS` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image Sharpen FS` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

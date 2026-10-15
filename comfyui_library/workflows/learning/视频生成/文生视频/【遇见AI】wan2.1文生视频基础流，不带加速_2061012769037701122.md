@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】wan2.1文生视频基础流，不带加速_2061012769037701122.json
 hash: 12d0582d9c08762f
 coverage: 1
-learned_at: 2026-10-11 19:49:46
+learned_at: 2026-10-15 22:47:43
 nodes: [WanVideoSampler, WanVideoDecode, WanVideoTextEncode, WanVideoEmptyEmbeds, VHS_VideoCombine, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.2 文生视频、图生视频工作流_1949440813809467394.json
 hash: 434c7c424b159754
 coverage: 0.840909
-learned_at: 2026-10-10 23:05:54
+learned_at: 2026-10-15 22:47:03
 nodes: [CLIPLoader, VAEDecode, VAELoader, CLIPLoader, VAELoader, VHS_VideoCombine, Note, Note, CLIPTextEncode, UNETLoader, UNETLoader, UNETLoader, UNETLoader, WanImageToVideo, EmptyHunyuanLatentVideo, KSamplerAdvanced, KSamplerAdvanced, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, Note, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, Note, PathchSageAttentionKJ, ModelPatchTorchSettings, VHS_VideoCombine, VAEDecode, KSamplerAdvanced, PathchSageAttentionKJ, ModelPatchTorchSettings, Note, ModelSamplingSD3, ModelSamplingSD3, LoadImage, Note, Note, CLIPTextEncode, LoadVideo, LoadImage]
 patterns: []
 missing: []

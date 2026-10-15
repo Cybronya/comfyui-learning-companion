@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/Seedance2.5图生视频工作流｜一张图动起来最长30秒_2095480606539997185.json
 hash: a42018bb5a3361f0
 coverage: 0.875
-learned_at: 2026-10-10 22:54:17
+learned_at: 2026-10-15 22:42:56
 nodes: [LoadImage, PrimitiveStringMultiline, SaveVideo, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, CreateVideo, RHMiniMaxH3VideoGen]
 patterns: []
 missing: []

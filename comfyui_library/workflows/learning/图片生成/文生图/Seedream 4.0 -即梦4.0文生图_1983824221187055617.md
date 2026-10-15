@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json
 hash: e6fda17393158bf9
-coverage: 0.166667
-learned_at: 2026-10-10 20:59:12
+coverage: 0.333333
+learned_at: 2026-10-15 22:27:32
 nodes: [SaveImage, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, JjkText, InversionDemoLazyIndexSwitch, JjkText, RH_Jimeng4_Image2Image, SetNode, easy int, Note, CR Text Concatenate, GetNode, CR Text, ShowText|pysssss]
 patterns: []
-missing: [CR Text, CR Text Concatenate, easy int]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Seedream 4.0 -即梦4.0文生图_1983824221187055617.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（18 个）：
 - `SaveImage`
@@ -42,14 +43,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **17%**（3/18）
+覆盖率 **33%**（6/18）
 
-**有卡**：`SaveImage`、`JjkText`
+**有卡**：`SaveImage`、`InversionDemoLazyIndexSwitch`、`RH_Jimeng4_Image2Image`、`easy int`、`CR Text Concatenate`、`CR Text`
 
-**缺卡**（3）：`CR Text`、`CR Text Concatenate`、`easy int`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、InversionDemoLazyIndexSwitch、RH_Jimeng4_Image2Image、CR Text、CR Text Concatenate、easy int、sd15-t2i-basic、sd15-t2i-lora

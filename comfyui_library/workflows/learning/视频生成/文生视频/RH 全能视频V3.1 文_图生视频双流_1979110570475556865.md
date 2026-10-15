@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH 全能视频V3.1 文_图生视频双流_1979110570475556865.json
 hash: 75c68d42a2e76a4a
 coverage: 0.75
-learned_at: 2026-10-10 23:05:07
+learned_at: 2026-10-15 22:46:52
 nodes: [SaveVideo, ShellAgentPluginOutputText, PreviewAny, RH_Veo3_Text2Video]
 patterns: []
 missing: []

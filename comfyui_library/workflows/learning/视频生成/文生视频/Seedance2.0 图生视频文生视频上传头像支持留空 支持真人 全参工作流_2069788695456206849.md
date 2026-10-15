@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0 图生视频文生视频上传头像支持留空 支持真人 全参工作流_2069788695456206849.json
 hash: 113c6c83d1cf9233
 coverage: 1
-learned_at: 2026-10-11 20:21:30
+learned_at: 2026-10-15 22:46:58
 nodes: [LoadImage, LoadVideo, SaveVideo, RH_RhartVideoSparkvideo20MiniMultimodalVideo]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`LoadImage`、`LoadVideo`、`SaveVideo`、`RH_RhartVideoSparkvideo20MiniMultimodalVideo`
 
-**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20MiniMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20MiniMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/latent upscale潜空间放大｜Minimax H3 FL2VA版_2091024845919313921.json
 hash: 0324e6bd6a406caa
 coverage: 0.920635
-learned_at: 2026-10-11 21:19:51
+learned_at: 2026-10-15 22:47:20
 nodes: [VAEDecodeAudio, VAEDecodeAudio, ComfyMathExpression, VAEDecode, KSamplerSelect, BasicGuider, CreateVideo, LTXVConcatAVLatent, BasicGuider, LTXVSeparateAVLatent, RandomNoise, RandomNoise, ManualSigmas, ManualSigmas, VAEDecode, SamplerCustomAdvanced, ModelAttentionBackend, SplitSigmas, BasicScheduler, ManualSigmas, SamplerCustomAdvanced, MiniMaxH3ImageToVideo, ResolutionSelector, MiniMaxH3SigmaShift, PrimitiveFloat, VHS_VideoCombine, LoadImage, LoadImage, UNETLoader, CLIPLoader, VAELoader, VAELoader, LoraLoaderModelOnly, SaveVideo, 孤海注释, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

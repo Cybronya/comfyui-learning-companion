@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json
 hash: dfcf322c7843861e
-coverage: 0.769231
-learned_at: 2026-10-10 23:16:21
+coverage: 0.923077
+learned_at: 2026-10-15 22:27:42
 nodes: [MarkdownNote, EmptyHunyuanLatentVideo, KSamplerSelect, RandomNoise, CFGGuider, BasicScheduler, SplitSigmas, SamplerCustomAdvanced, DisableNoise, SamplerCustomAdvanced, ModelSamplingSD3, WanVideoNAG, CLIPTextEncode, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1ExtraOptions, VAEDecode, SaveImage, LayerUtility: JoyCaptionBeta1, VAELoader, CLIPLoader, UNETLoader, LoraLoaderModelOnly, LayerUtility: LoadJoyCaptionBeta1Model, LoadImage, ShowText|pysssss]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: JoyCaptionBeta1ExtraOptions, LayerUtility: LoadJoyCaptionBeta1Model]
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/[🛫书墨]wan2.2图像反推文生图_1952356133568745474.json
@@ -52,17 +51,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **77%**（20/26）
+覆盖率 **92%**（24/26）
 
-**有卡**：`EmptyHunyuanLatentVideo`、`KSamplerSelect`、`RandomNoise`、`CFGGuider`、`BasicScheduler`、`SplitSigmas`、`SamplerCustomAdvanced`、`DisableNoise`、`ModelSamplingSD3`、`WanVideoNAG`、`CLIPTextEncode`、`VAEDecode`、`SaveImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`LoadImage`
-
-**缺卡**（4）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`LayerUtility: LoadJoyCaptionBeta1Model`
+**有卡**：`EmptyHunyuanLatentVideo`、`KSamplerSelect`、`RandomNoise`、`CFGGuider`、`BasicScheduler`、`SplitSigmas`、`SamplerCustomAdvanced`、`DisableNoise`、`ModelSamplingSD3`、`WanVideoNAG`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: JoyCaptionBeta1ExtraOptions`、`VAEDecode`、`SaveImage`、`LayerUtility: JoyCaptionBeta1`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGGuider
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: JoyCaptionBeta1ExtraOptions` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识

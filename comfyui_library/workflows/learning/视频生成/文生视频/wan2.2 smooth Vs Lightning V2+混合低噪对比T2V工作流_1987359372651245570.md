@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2 smooth Vs Lightning V2+混合低噪对比T2V工作流_1987359372651245570.json
 hash: 0da28c7deecdbad1
-coverage: 0.9
-learned_at: 2026-10-11 02:45:03
+coverage: 1
+learned_at: 2026-10-15 22:47:34
 nodes: [PathchSageAttentionKJ, CLIPTextEncode, PathchSageAttentionKJ, TorchCompileModel, TorchCompileModel, ModelSamplingSD3, EmptyHunyuanLatentVideo, easy cleanGpuUsed, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, CLIPTextEncode, TT_img_enc, SaveImage, VAEDecode, CLIPTextEncode, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, INTConstant, INTConstant, CLIPTextEncode, TT_img_enc, SaveImage, VAEDecode, LoraLoaderModelOnly, PathchSageAttentionKJ, ImageSharpen, DownloadAndLoadGIMMVFIModel, ImageFromBatch+, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, CLIPTextEncode, KSamplerAdvanced, INTConstant, INTConstant, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, GIMMVFI_interpolate, ImageFromBatch+, ImageConcanate, ImageFromBatch+, LoraLoaderModelOnly, UNETLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, KSamplerAdvanced, PathchSageAttentionKJ, PathchSageAttentionKJ, INTConstant, JWInteger, EmptyHunyuanLatentVideo, JWInteger, JWInteger, VHS_VideoCombine, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, Text Multiline, LoraLoaderModelOnly, ImageConcanate, VHS_VideoCombine, VHS_VideoCombine, CLIPTextEncode, CLIPLoader, EmptyHunyuanLatentVideo, ModelSamplingSD3, ModelSamplingSD3, ModelSamplingSD3, INTConstant]
 patterns: []
-missing: [ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, Text Multiline, easy cleanGpuUsed]
+missing: []
 parameters: {"cfg": 12, "denoise": "beta", "sampler_name": 1, "scheduler": "uni_pc", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2 smooth Vs Lightning V2+混合低噪对比T2V工作流_1987359372651245570.json
@@ -116,21 +115,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **90%**（72/80）
+覆盖率 **100%**（80/80）
 
-**有卡**：`PathchSageAttentionKJ`、`CLIPTextEncode`、`TorchCompileModel`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`VAEDecode`、`TT_img_enc`、`SaveImage`、`UNETLoader`、`INTConstant`、`ImageSharpen`、`DownloadAndLoadGIMMVFIModel`、`KSamplerAdvanced`、`GIMMVFI_interpolate`、`ImageConcanate`、`VAELoader`、`JWInteger`、`VHS_VideoCombine`、`CLIPLoader`
-
-**缺卡**（8）：`ImageFromBatch+`、`ImageFromBatch+`、`ImageFromBatch+`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`Text Multiline`、`easy cleanGpuUsed`
+**有卡**：`PathchSageAttentionKJ`、`CLIPTextEncode`、`TorchCompileModel`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`easy cleanGpuUsed`、`LoraLoaderModelOnly`、`VAEDecode`、`TT_img_enc`、`SaveImage`、`UNETLoader`、`INTConstant`、`ImageSharpen`、`DownloadAndLoadGIMMVFIModel`、`ImageFromBatch+`、`LayerUtility: PurgeVRAM`、`KSamplerAdvanced`、`GIMMVFI_interpolate`、`ImageConcanate`、`VAELoader`、`JWInteger`、`VHS_VideoCombine`、`Text Multiline`、`CLIPLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

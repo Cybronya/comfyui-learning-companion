@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LH-DMT-LTX2.0-004.自动扩写文生视频_2016319047557718017.json
 hash: 740b72b7114684c4
-coverage: 0.829787
-learned_at: 2026-10-11 03:07:08
+coverage: 0.87234
+learned_at: 2026-10-15 22:44:31
 nodes: [Note, Note, CR Text, CR Text, JoinStrings, Qwen3_VQA, CLIPTextEncode, INTConstant, INTConstant, INTConstant, EmptyImage, SomethingToString, ShowText|pysssss, PrimitiveInt, PrimitiveInt, PrimitiveFloat, LatentUpscaleModelLoader, CLIPTextEncode, ImageScaleBy, GetImageSize, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVConditioning, RandomNoise, LTXVScheduler, KSamplerSelect, LTXVSeparateAVLatent, CFGGuider, LTXVCropGuides, LTXVAudioVAEDecode, LTXVLatentUpsampler, RandomNoise, CFGGuider, SamplerCustomAdvanced, ManualSigmas, SamplerCustomAdvanced, KSamplerSelect, LTXVConcatAVLatent, VAEDecodeTiled, LTXVSeparateAVLatent, VHS_VideoCombine, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [CR Text, CR Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LH-DMT-LTX2.0-004.自动扩写文生视频_2016319047557718017.json
@@ -81,15 +80,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **83%**（39/47）
+覆盖率 **87%**（41/47）
 
-**有卡**：`JoinStrings`、`Qwen3_VQA`、`CLIPTextEncode`、`INTConstant`、`EmptyImage`、`SomethingToString`、`LatentUpscaleModelLoader`、`ImageScaleBy`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVConditioning`、`RandomNoise`、`LTXVScheduler`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`CFGGuider`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`ManualSigmas`、`VAEDecodeTiled`、`VHS_VideoCombine`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`
-
-**缺卡**（2）：`CR Text`、`CR Text`
+**有卡**：`CR Text`、`JoinStrings`、`Qwen3_VQA`、`CLIPTextEncode`、`INTConstant`、`EmptyImage`、`SomethingToString`、`LatentUpscaleModelLoader`、`ImageScaleBy`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVConditioning`、`RandomNoise`、`LTXVScheduler`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`CFGGuider`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`ManualSigmas`、`VAEDecodeTiled`、`VHS_VideoCombine`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

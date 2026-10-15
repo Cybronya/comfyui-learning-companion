@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Work-Fisher_Wan2.2增强版合集_1972651753634242561.json
 hash: 9068bdb9d91f9ff7
-coverage: 0.765957
-learned_at: 2026-10-10 23:08:22
+coverage: 0.808511
+learned_at: 2026-10-15 22:47:17
 nodes: [WanVideoModelLoader, WanVideoLoraSelect, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoLoraSelect, WanVideoVAELoader, Note, Note, Note, Note, INTConstant, WanVideoSampler, WanVideoEmptyEmbeds, WanVideoSampler, WanVideoDecode, RIFE VFI, VHS_VideoCombine, RIFE VFI, MarkdownNote, MarkdownNote, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoSampler, LoadImage, WanVideoTorchCompileSettings, MarkdownNote, CreateCFGScheduleFloatList, WanVideoBlockSwap, VHS_VideoCombine, Int, Int, Int, INTConstant, INTConstant, WanVideoImageToVideoEncode, GetImageSizeAndCount, WanVideoSampler, CreateCFGScheduleFloatList, ImageResizeKJv2, VHS_VideoCombine, WanVideoDecode, WanVideoTextEncode, GetImageSizeAndCount, VHS_VideoCombine]
 patterns: []
-missing: [RIFE VFI, RIFE VFI]
-discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Work-Fisher_Wan2.2增强版合集_1972651753634242561.json
@@ -73,15 +72,8 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **77%**（36/47）
+覆盖率 **81%**（38/47）
 
-**有卡**：`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`INTConstant`、`WanVideoSampler`、`WanVideoEmptyEmbeds`、`WanVideoDecode`、`VHS_VideoCombine`、`LoadWanVideoT5TextEncoder`、`LoadImage`、`WanVideoTorchCompileSettings`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`Int`、`WanVideoImageToVideoEncode`、`GetImageSizeAndCount`、`ImageResizeKJv2`、`WanVideoTextEncode`
-
-**缺卡**（2）：`RIFE VFI`、`RIFE VFI`
+**有卡**：`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`INTConstant`、`WanVideoSampler`、`WanVideoEmptyEmbeds`、`WanVideoDecode`、`RIFE VFI`、`VHS_VideoCombine`、`LoadWanVideoT5TextEncoder`、`LoadImage`、`WanVideoTorchCompileSettings`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`Int`、`WanVideoImageToVideoEncode`、`GetImageSizeAndCount`、`ImageResizeKJv2`、`WanVideoTextEncode`
 
 **用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode
-
-## 学习发现
-
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识

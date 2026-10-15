@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_anthropic_claude_fable5.json
 hash: 31c312419aacb8e8
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:43:07
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:47
 nodes: [ClaudeNode, LoadImage, SaveText, PrimitiveStringMultiline, PreviewAny, 70bc0003-66ee-48a5-bea3-7a0949fc30b5]
 patterns: []
-missing: [70bc0003-66ee-48a5-bea3-7a0949fc30b5]
-discoveries: [次要节点 `70bc0003-66ee-48a5-bea3-7a0949fc30b5` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_anthropic_claude_fable5.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `70bc0003-66ee-48a5-bea3-7a0949fc30b5` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（3/6）
+覆盖率 **67%**（4/6）
 
-**有卡**：`ClaudeNode`、`LoadImage`、`SaveText`
+**有卡**：`ClaudeNode`、`LoadImage`、`SaveText`、`70bc0003-66ee-48a5-bea3-7a0949fc30b5`
 
-**缺卡**（1）：`70bc0003-66ee-48a5-bea3-7a0949fc30b5`
-
-**用到的条目**：LoadImage、SaveText、ClaudeNode、sd15-t2i-basic、sd15-t2i-lora、node、Text、String
-
-## 学习发现
-
-- 次要节点 `70bc0003-66ee-48a5-bea3-7a0949fc30b5` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveText、ClaudeNode、70bc0003-66ee-48a5-bea3-7a0949fc30b5、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

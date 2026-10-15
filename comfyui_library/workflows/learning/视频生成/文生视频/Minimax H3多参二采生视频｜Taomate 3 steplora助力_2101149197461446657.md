@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax H3多参二采生视频｜Taomate 3 steplora助力_2101149197461446657.json
 hash: 1484f4de08e021f9
 coverage: 0.924051
-learned_at: 2026-10-11 22:12:44
+learned_at: 2026-10-15 22:46:36
 nodes: [VAELoader, VAELoader, VAEDecode, VAEDecodeAudio, LTXVConcatAVLatent, ModelPreviewOverrideKJ, VAEDecodeAudio, SamplerCustomAdvanced, KSamplerSelect, VAEDecode, UNETLoader, RandomNoise, ComfyMathExpression, CreateVideo, SaveVideo, LoadImage, PrimitiveFloat, MiniMaxH3SigmaShift, ModelAttentionBackend, BasicGuider, ManualSigmas, MinimaxH3LatentUpscaler3D, ClownsharKSampler_Beta, ClownsharKSampler_Beta, SeedGenerator, ConditioningZeroOut, LTXVSeparateAVLatent, MiniMaxH3ReferenceToVideo, Text, PrimitiveFloat, ResolutionSelector, LoraLoaderModelOnly, LoraLoaderModelOnly, CreateVideo, SaveVideo, CLIPLoader, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
 missing: []

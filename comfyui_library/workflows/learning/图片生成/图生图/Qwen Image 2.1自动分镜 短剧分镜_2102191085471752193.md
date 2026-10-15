@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1自动分镜 短剧分镜_2102191085471752193.json
 hash: a89236a22380f73e
 coverage: 0.736842
-learned_at: 2026-10-10 20:48:08
+learned_at: 2026-10-15 22:25:18
 nodes: [MarkdownNote, Note, CLIPLoader, VAELoader, VAEDecode, QwenImage21Cache, SaveImageAdvanced, ComfySwitchNode, UNETLoader, LoadImage, TextEncodeQwenImage21, SaveImage, EmptyLatentImage, KSampler, LoadImage, LoadImage, PrimitiveStringMultiline, ResolutionSelector, PrimitiveStringMultiline]
 patterns: []
 missing: []

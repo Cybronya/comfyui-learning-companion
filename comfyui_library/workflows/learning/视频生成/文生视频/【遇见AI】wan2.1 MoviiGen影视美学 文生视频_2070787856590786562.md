@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 文生视频_2070787856590786562.json
 hash: 8c43d573e5d89d89
 coverage: 0.95
-learned_at: 2026-10-11 20:21:33
+learned_at: 2026-10-15 22:47:43
 nodes: [WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoDecode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVRAMManagement, WanVideoVAELoader, WanVideoEnhanceAVideo, WanVideoSampler, WanVideoModelLoader, WanVideoTextEncodeCached, WanVideoEmptyEmbeds, WanVideoLoraSelect, VHS_VideoCombine, MarkdownNote, LoadImage, LoadImage]
 patterns: []
 missing: []

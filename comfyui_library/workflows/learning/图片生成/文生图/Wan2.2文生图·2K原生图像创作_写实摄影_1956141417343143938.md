@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1956141417343143938.json
 hash: e938ce1cf5472bcb
-coverage: 0.909091
-learned_at: 2026-10-10 20:59:14
+coverage: 1
+learned_at: 2026-10-15 22:27:36
 nodes: [CLIPLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, GetImageRangeFromBatch, VAEDecode, KSamplerAdvanced, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, easy int, SaveImage, EmptyHunyuanLatentVideo, easy int, Text, Wan_video_prompt_generator]
 patterns: []
-missing: [easy int, easy int]
+missing: []
 parameters: {"cfg": 14, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Wan2.2文生图·2K原生图像创作_写实摄影_1956141417343143938.json
@@ -21,23 +20,25 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（22 个）：
 - `CLIPLoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `VAELoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `PathchSageAttentionKJ`
 - `PathchSageAttentionKJ`
 - `ModelSamplingSD3`
 - `ModelSamplingSD3`
-- `KSamplerAdvanced`
+- `KSamplerAdvanced` ★核心
 - `GetImageRangeFromBatch`
-- `VAEDecode`
-- `KSamplerAdvanced`
-- `UNETLoader`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `easy int`
 - `SaveImage`
 - `EmptyHunyuanLatentVideo`
@@ -47,22 +48,17 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 关键参数
 
-- `cfg` = `14`
-- `denoise` = `simple`
-- `sampler_name` = `3.5`
-- `scheduler` = `euler`
 - `seed` = `enable`
 - `steps` = `randomize`
+- `cfg` = `14`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
 
 ## 知识
 
-覆盖率 **91%**（20/22）
+覆盖率 **100%**（22/22）
 
-**有卡**：`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`GetImageRangeFromBatch`、`VAEDecode`、`UNETLoader`、`LoraLoaderModelOnly`、`easy int`、`SaveImage`、`EmptyHunyuanLatentVideo`
+**有卡**：`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`GetImageRangeFromBatch`、`VAEDecode`、`UNETLoader`、`LoraLoaderModelOnly`、`easy int`、`SaveImage`、`EmptyHunyuanLatentVideo`、`Text`、`Wan_video_prompt_generator`
 
-**缺卡**（2）：`easy int`、`easy int`
-
-## 学习发现
-
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

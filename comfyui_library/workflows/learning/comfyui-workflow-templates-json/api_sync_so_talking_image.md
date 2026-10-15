@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_sync_so_talk
 hash: 8d9211f9a2fbb6e9
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:46:14
+learned_at: 2026-10-15 22:24:51
 nodes: [LoadAudio, RecordAudio, SaveVideo, SyncTalkingImageNode, LoadImage]
 patterns: []
 missing: []

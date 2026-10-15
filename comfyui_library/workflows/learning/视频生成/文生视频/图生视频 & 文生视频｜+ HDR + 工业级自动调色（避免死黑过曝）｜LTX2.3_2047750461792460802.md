@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json
 hash: ca939741c285b896
-coverage: 0.586207
-learned_at: 2026-10-11 19:49:48
+coverage: 0.678161
+learned_at: 2026-10-15 22:48:22
 nodes: [LTXVPreprocess, ResizeImagesByLongerEdge, LTXVEmptyLatentAudio, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RandomNoise, EmptyLTXVLatentVideo, LTXVSeparateAVLatent, LTXVCropGuides, LTXVImgToVideoInplace, CFGGuider, LTXVConcatAVLatent, Note, Note, PrimitiveFloat, Note, Note, Note, ComfyMathExpression, SimpleCalculatorKJ, Note, ComfyMathExpression, Note, easy showAnything, SimpleCalculatorKJ, easy cleanGpuUsed, LTX2SamplingPreviewOverride, Note, RandomNoise, easy showAnything, Note, Note, Qwen3_VQA, Note, Note, Note, Note, ttN concat, Note, ShowText|pysssss, MemoryCleaner, JoinStrings, Note, CreateVideo, easy cleanGpuUsed, easy cleanGpuUsed, LTXVConditioning, Note, CLIPTextEncode, LatentUpscaleModelLoader, ManualSigmas, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTX2_NAG, LTXVEnhanceAVideoKJ, KSamplerSelect, ResizeImageMaskNode, SamplerCustomAdvanced, SamplerCustomAdvanced, PrimitiveFloat, PrimitiveInt, PrimitiveInt, LoadImage, LTXVSeparateAVLatent, VAEDecodeTiled, easy cleanGpuUsed, LTXVAudioVAEDecode, SeedGenerator, SaveVideo, Note, Note, Note, PrimitiveBoolean, CR Text, easy cleanGpuUsed, CLIPTextEncode, ImageSharpen, Image Levels Adjustment, LTXVHDRDecodePostprocess, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, Note]
 patterns: []
-missing: [CR Text, Image Levels Adjustment, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, ttN concat]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image Levels Adjustment` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/图生视频 & 文生视频｜+ HDR + 工业级自动调色（避免死黑过曝）｜LTX2.3_2047750461792460802.json
@@ -121,21 +120,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **59%**（51/87）
+覆盖率 **68%**（59/87）
 
-**有卡**：`LTXVPreprocess`、`ResizeImagesByLongerEdge`、`LTXVEmptyLatentAudio`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVImgToVideoInplace`、`ComfyMathExpression`、`SimpleCalculatorKJ`、`LTX2SamplingPreviewOverride`、`Qwen3_VQA`、`MemoryCleaner`、`JoinStrings`、`CreateVideo`、`LTXVConditioning`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTX2_NAG`、`LTXVEnhanceAVideoKJ`、`ResizeImageMaskNode`、`SamplerCustomAdvanced`、`LoadImage`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`SeedGenerator`、`SaveVideo`、`PrimitiveBoolean`、`ImageSharpen`、`LTXVHDRDecodePostprocess`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`
-
-**缺卡**（8）：`CR Text`、`Image Levels Adjustment`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`ttN concat`
+**有卡**：`LTXVPreprocess`、`ResizeImagesByLongerEdge`、`LTXVEmptyLatentAudio`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVImgToVideoInplace`、`ComfyMathExpression`、`SimpleCalculatorKJ`、`easy cleanGpuUsed`、`LTX2SamplingPreviewOverride`、`Qwen3_VQA`、`ttN concat`、`MemoryCleaner`、`JoinStrings`、`CreateVideo`、`LTXVConditioning`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTX2_NAG`、`LTXVEnhanceAVideoKJ`、`ResizeImageMaskNode`、`SamplerCustomAdvanced`、`LoadImage`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`SeedGenerator`、`SaveVideo`、`PrimitiveBoolean`、`CR Text`、`ImageSharpen`、`Image Levels Adjustment`、`LTXVHDRDecodePostprocess`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image Levels Adjustment` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `ttN concat` 知识库中没有该节点类型的任何知识

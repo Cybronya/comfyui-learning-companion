@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0：解锁人脸特效自由，无需审核即享_2040003975717593089.json
 hash: dba23a45b7d2eb5c
 coverage: 1
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [RH_SparkVideoAssetCreate, LoadImage, LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetIdsMerge, LoadAudio, RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo, LoadImage]
 patterns: []
 missing: []

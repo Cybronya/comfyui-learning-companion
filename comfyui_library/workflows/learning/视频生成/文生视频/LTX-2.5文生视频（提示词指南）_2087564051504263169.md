@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.5文生视频（提示词指南）_2087564051504263169.json
 hash: 41b5c8559c889e7b
 coverage: 0.75
-learned_at: 2026-10-11 20:53:37
+learned_at: 2026-10-15 22:44:44
 nodes: [PrimitiveFloat, PrimitiveFloat, LTXVAudioVAEDecode, CreateVideo, SaveVideo, ComfyMathExpression, PrimitiveFloat, PrimitiveFloat, CLIPTextEncode, CLIPTextEncode, VAELoader, LTXFloatToInt, CLIPLoader, VAEDecodeTiled, RandomNoise, PrimitiveStringMultiline, PrimitiveInt, KSamplerSelect, SamplerCustomAdvanced, UNETLoader, PrimitiveStringMultiline, LTXVConditioning, LTXVSeparateAVLatent, VAELoader, ManualSigmas, CFGGuider, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, Int, Int, LTXVConcatAVLatent, MarkdownNote]
 patterns: []
 missing: []

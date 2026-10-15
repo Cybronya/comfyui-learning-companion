@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频30秒长片｜seedance2.5人物场景特效生成_2093091371698704385.json
 hash: 9ca003a924fc69fa
-coverage: 0.683544
-learned_at: 2026-10-11 21:30:39
+coverage: 0.708861
+learned_at: 2026-10-15 22:48:43
 nodes: [GetNode, GetNode, DrawViTPose, SetNode, SetNode, SetNode, WanVideoVAELoader, WanVideoTextEncodeCached, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, GetNode, GetNode, GetNode, GetNode, WanVideoBlockSwap, GetNode, WanVideoDecode, VHS_VideoCombine, FlashVSR_SM_KSampler, CLIPVisionLoader, SetNode, OnnxDetectionModelLoader, SetNode, FlashVSR_SM_Model, GetImageSize, JWInteger, LayerUtility: PurgeVRAM V2, WanVideoSampler, WanVideoModelLoader, WanVideoAnimateEmbeds, GetNode, SetNode, SetNode, WanVideoClipVisionEncode, SetNode, PoseAndFaceDetection, PreviewImage, JWInteger, JWInteger, VHS_VideoInfoSource, easy showAnything, WanVideoLoraSelectMulti, GetImageRangeFromBatch, Reroute, CR Prompt Text, VHS_LoadVideo, LoadImage, JWInteger, ImageResizeKJv2, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
 patterns: [text_to_image]
-missing: [LayerUtility: PurgeVRAM V2, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/文生视频30秒长片｜seedance2.5人物场景特效生成_2093091371698704385.json
@@ -121,11 +121,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **68%**（54/79）
+覆盖率 **71%**（56/79）
 
-**有卡**：`DrawViTPose`、`WanVideoVAELoader`、`WanVideoTextEncodeCached`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoDecode`、`VHS_VideoCombine`、`FlashVSR_SM_KSampler`、`CLIPVisionLoader`、`OnnxDetectionModelLoader`、`FlashVSR_SM_Model`、`GetImageSize`、`JWInteger`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoAnimateEmbeds`、`WanVideoClipVisionEncode`、`PoseAndFaceDetection`、`VHS_VideoInfoSource`、`WanVideoLoraSelectMulti`、`GetImageRangeFromBatch`、`VHS_LoadVideo`、`LoadImage`、`ImageResizeKJv2`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CLIPLoader`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`CR Prompt Text`
+**有卡**：`DrawViTPose`、`WanVideoVAELoader`、`WanVideoTextEncodeCached`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoDecode`、`VHS_VideoCombine`、`FlashVSR_SM_KSampler`、`CLIPVisionLoader`、`OnnxDetectionModelLoader`、`FlashVSR_SM_Model`、`GetImageSize`、`JWInteger`、`LayerUtility: PurgeVRAM V2`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoAnimateEmbeds`、`WanVideoClipVisionEncode`、`PoseAndFaceDetection`、`VHS_VideoInfoSource`、`WanVideoLoraSelectMulti`、`GetImageRangeFromBatch`、`CR Prompt Text`、`VHS_LoadVideo`、`LoadImage`、`ImageResizeKJv2`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CLIPLoader`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -136,6 +134,4 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1 多图编辑工作流_2102302931948228610.json
 hash: f971d0d8a40580cc
 coverage: 0.8
-learned_at: 2026-10-10 20:48:08
+learned_at: 2026-10-15 22:25:19
 nodes: [VAEDecode, CLIPLoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy showAnything, VAELoader, UNETLoader, LoadImage, PrimitiveBoolean, CLIPLoader, BatchImagesNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, TextGenerateLTX2Prompt, LoadImage, SaveImage, ResolutionSelector, Fast Groups Muter (rgthree), ImageMergeNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, KSampler, QwenImage21Cache, ComfySwitchNode, EmptyLatentImage, TextEncodeQwenImage21, LoraLoaderModelOnly, MarkdownNote, Note, Fast Groups Muter (rgthree), LoadImage, SaveImage, Note]
 patterns: []
 missing: []

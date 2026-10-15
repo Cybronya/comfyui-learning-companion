@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/qwen3.8-27B反推图片提示词_2103825737462673409.json
 hash: 596bb86b5e048cc4
-coverage: 0.666667
-learned_at: 2026-10-10 20:48:00
+coverage: 0.833333
+learned_at: 2026-10-15 22:25:03
 nodes: [llama_cpp_model_loader, SaveImage, PreviewAny, easy saveText, llama_cpp_instruct_adv, LoadImage]
 patterns: []
-missing: [easy saveText]
-discoveries: [次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 图片生成/反推提示词/qwen3.8-27B反推图片提示词_2103825737462673409.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `easy saveText` 仅有 SaveImage 的通用知识，�
 
 ## 知识
 
-覆盖率 **67%**（4/6）
+覆盖率 **83%**（5/6）
 
-**有卡**：`llama_cpp_model_loader`、`SaveImage`、`llama_cpp_instruct_adv`、`LoadImage`
+**有卡**：`llama_cpp_model_loader`、`SaveImage`、`easy saveText`、`llama_cpp_instruct_adv`、`LoadImage`
 
-**缺卡**（1）：`easy saveText`
-
-**用到的条目**：LoadImage、SaveImage、llama_cpp_instruct_adv、llama_cpp_model_loader、sd15-t2i-basic、sd15-t2i-lora、SaveText、Text
-
-## 学习发现
-
-- 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、SaveImage、easy saveText、llama_cpp_instruct_adv、llama_cpp_model_loader、sd15-t2i-basic、sd15-t2i-lora、SaveText

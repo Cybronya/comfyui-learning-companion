@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility-bria_rem
 hash: 48bcd3e027990c14
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:37
+learned_at: 2026-10-15 22:24:56
 nodes: [BriaRemoveVideoBackground, LoadVideo, SaveVideo]
 patterns: []
 missing: []

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/阿里巴巴最新免费数字人 Fantasy Talking for comfyUI工作流_1917812826264502273.json
 hash: 7e4c3d344658ebc2
-coverage: 0.370968
-learned_at: 2026-10-10 23:14:17
+coverage: 0.467742
+learned_at: 2026-10-15 22:49:05
 nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoVRAMManagement, SetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, easy clearCacheAll, easy clearCacheAll, GetNode, WanVideoDecode, CreateCFGScheduleFloatList, SetNode, Note, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, GetNode, easy clearCacheAll, SetNode, DownloadAndLoadWav2VecModel, FantasyTalkingModelLoader, SetNode, WanVideoVAELoader, LoadWanVideoT5TextEncoder, GetNode, GetNode, GetNode, GetNode, GetNode, easy clearCacheAll, FantasyTalkingWav2VecEmbeds, VHS_VideoCombine, WanVideoModelLoader, CLIPVisionLoader, Note, Note, MarkdownNote, Note, Note, Note, WanVideoSampler, SetNode, GetNode, easy clearCacheAll, GetNode, easy clearCacheAll, Note, SetNode, INTConstant, SetNode, SetNode, Note, Note, WanVideoTeaCache, WanVideoTextEncode, ImageResizeKJ, INTConstant, LoadAudio, LoadImage]
 patterns: []
-missing: [easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll, easy clearCacheAll]
-discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/阿里巴巴最新免费数字人 Fantasy Talking for comfyUI工作流_1917812826264502273.json
@@ -88,19 +87,8 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **37%**（23/62）
+覆盖率 **47%**（29/62）
 
-**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoVRAMManagement`、`WanVideoDecode`、`CreateCFGScheduleFloatList`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`DownloadAndLoadWav2VecModel`、`FantasyTalkingModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`FantasyTalkingWav2VecEmbeds`、`VHS_VideoCombine`、`WanVideoModelLoader`、`CLIPVisionLoader`、`WanVideoSampler`、`INTConstant`、`WanVideoTeaCache`、`WanVideoTextEncode`、`ImageResizeKJ`、`LoadAudio`、`LoadImage`
-
-**缺卡**（6）：`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`、`easy clearCacheAll`
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoVRAMManagement`、`easy clearCacheAll`、`WanVideoDecode`、`CreateCFGScheduleFloatList`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`DownloadAndLoadWav2VecModel`、`FantasyTalkingModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`FantasyTalkingWav2VecEmbeds`、`VHS_VideoCombine`、`WanVideoModelLoader`、`CLIPVisionLoader`、`WanVideoSampler`、`INTConstant`、`WanVideoTeaCache`、`WanVideoTextEncode`、`ImageResizeKJ`、`LoadAudio`、`LoadImage`
 
 **用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode
-
-## 学习发现
-
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识

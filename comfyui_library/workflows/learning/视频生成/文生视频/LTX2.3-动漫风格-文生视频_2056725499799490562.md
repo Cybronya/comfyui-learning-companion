@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-动漫风格-文生视频_2056725499799490562.json
 hash: f7bf8188405408bb
-coverage: 0.888889
-learned_at: 2026-10-11 19:49:37
+coverage: 0.955556
+learned_at: 2026-10-15 22:45:03
 nodes: [EmptyLTXVLatentVideo, LTXVAudioVAEDecode, LTXVConcatAVLatent, PathchSageAttentionKJ, ManualSigmas, VHS_VideoCombine, LatentUpscaleModelLoader, KSamplerSelect, LTXVEmptyLatentAudio, easy int, LTXVSeparateAVLatent, LTXVScheduler, easy showAnything, VAEDecodeTiled, RandomNoise, LTXVLatentUpsampler, KSamplerSelect, LTXVConcatAVLatent, VAEDecodeTiled, VHS_VideoCombine, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVAudioVAEDecode, easy int, easy int, CheckpointLoaderSimple, LoraLoaderModelOnly, ModelPatchTorchSettings, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, SamplerCustomAdvanced, CFGGuider, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, LTX2_NAG, LoraLoaderModelOnly, PrimitiveInt, ManualSigmas, RandomNoise, CFGGuider, LTXVChunkFeedForward, LoraLoaderModelOnly]
 patterns: []
-missing: [easy int, easy int, easy int]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 24, "width": 97}
-discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3-动漫风格-文生视频_2056725499799490562.json
@@ -79,16 +78,8 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **89%**（40/45）
+覆盖率 **96%**（43/45）
 
-**有卡**：`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`ManualSigmas`、`VHS_VideoCombine`、`LatentUpscaleModelLoader`、`KSamplerSelect`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LTXVScheduler`、`VAEDecodeTiled`、`RandomNoise`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CFGGuider`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`LTXVChunkFeedForward`
-
-**缺卡**（3）：`easy int`、`easy int`、`easy int`
+**有卡**：`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`ManualSigmas`、`VHS_VideoCombine`、`LatentUpscaleModelLoader`、`KSamplerSelect`、`LTXVEmptyLatentAudio`、`easy int`、`LTXVSeparateAVLatent`、`LTXVScheduler`、`VAEDecodeTiled`、`RandomNoise`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CFGGuider`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`LTXVChunkFeedForward`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

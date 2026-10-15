@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/llm_qwen3_text_g
 hash: a63fe6fb7583ed0c
 official: true
 coverage: 0.4
-learned_at: 2026-10-10 22:48:47
+learned_at: 2026-10-15 22:24:55
 nodes: [TextGenerate, PreviewAny, MarkdownNote, CLIPLoader, MarkdownNote]
 patterns: []
 missing: []

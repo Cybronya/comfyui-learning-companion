@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/comfyui官方工作流-video_minimax_h3_t2v_2084148000615657474.json
 hash: cd58226f6a97ca3d
 coverage: 0.761905
-learned_at: 2026-10-11 20:38:43
+learned_at: 2026-10-15 22:47:18
 nodes: [SaveVideo, ResolutionSelector, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, BasicGuider, UNETLoader, CLIPLoader, RandomNoise, ComfyMathExpression, PrimitiveFloat, MarkdownNote, MarkdownNote, MarkdownNote, CreateVideo, MiniMaxH3ImageToVideo, JjkText]
 patterns: []
 missing: []

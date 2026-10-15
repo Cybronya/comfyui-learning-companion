@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/开源最强图片模型 Qwen-image2.1  文生图带优化_2104611822878941185.json
 hash: 75381f88a2be61a4
-coverage: 0.75
-learned_at: 2026-10-10 20:59:43
+coverage: 0.875
+learned_at: 2026-10-15 22:28:32
 nodes: [UNETLoader, TextEncodeQwenImage21, CLIPLoader, VAELoader, EmptyLatentImage, VAEDecode, KSampler, easy showAnything, Seed (rgthree), ImpactInt, ImpactInt, TextGenerateLTX2Prompt, CLIPLoader, SaveImage, 孤海注释, CR Text]
 patterns: []
-missing: [CR Text, Seed (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 761864581797680, "steps": 50, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/开源最强图片模型 Qwen-image2.1  文生图带优化_2104611822878941185.json
@@ -21,14 +20,16 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（16 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `TextEncodeQwenImage21`
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
-- `VAEDecode`
-- `KSampler`
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `KSampler` ★核心
 - `easy showAnything`
 - `Seed (rgthree)`
 - `ImpactInt`
@@ -41,25 +42,20 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `761864581797680`
 - `steps` = `50`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **75%**（12/16）
+覆盖率 **88%**（14/16）
 
-**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`easy showAnything`、`Seed (rgthree)`、`ImpactInt`、`TextGenerateLTX2Prompt`
+**有卡**：`UNETLoader`、`TextEncodeQwenImage21`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`VAEDecode`、`KSampler`、`Seed (rgthree)`、`ImpactInt`、`TextGenerateLTX2Prompt`、`SaveImage`、`CR Text`
 
-**缺卡**（2）：`CR Text`、`Seed (rgthree)`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、UNETLoader、Seed (rgthree)

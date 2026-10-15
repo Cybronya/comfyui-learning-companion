@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3  首中尾三图+多图_2035272794954539010.json
 hash: b4e87a2457a4ffe2
-coverage: 0.8
-learned_at: 2026-10-11 03:48:34
+coverage: 0.8875
+learned_at: 2026-10-15 22:44:31
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVImgToVideoInplace, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAELoader, VAELoaderKJ, DualCLIPLoader, KSamplerSelect, CFGGuider, LTXVConditioning, ManualSigmas, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVEmptyLatentAudio, LTXVLatentUpsampler, LTX2_NAG, CreateVideo, Reroute, Label (rgthree), Label (rgthree), Label (rgthree), LatentUpscaleModelLoader, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, PrimitiveInt, CLIPTextEncode, INTConstant, ResizeImagesByLongerEdge, LTXVPreprocess, LTXVPreprocess, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, LTXVPreprocess, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, ComfyMathExpression, LTXVPreprocess, LTXVPreprocess, LTXVImgToVideoInplace, PrimitiveStringMultiline, MarkdownNote, MarkdownNote, FloatConstant, easy showAnything, LTXVImgToVideoInplaceKJ, SimpleCalculatorKJ, LTXVConcatAVLatent, CLIPTextEncode, SaveVideo, UNETLoader, LTXVChunkFeedForward, ModelPatchTorchSettings, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, ResizeImageMaskNode, PrimitiveInt, PrimitiveInt, easy imageScaleDown, easy imageScaleDown, easy imageScaleDown, LoadImage, PrimitiveBoolean, PrimitiveStringMultiline, easy imageScaleDown, LoadImage, LoadImage, LoadImage, RH_LLMAPI_Pro_Node]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), Label (rgthree), easy imageScaleDown, easy imageScaleDown, easy imageScaleDown, easy imageScaleDown]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX 2.3  首中尾三图+多图_2035272794954539010.json
@@ -113,20 +112,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **80%**（64/80）
+覆盖率 **89%**（71/80）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`VAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LTXVConditioning`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`LTX2_NAG`、`CreateVideo`、`LatentUpscaleModelLoader`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`CLIPTextEncode`、`INTConstant`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`FloatConstant`、`LTXVImgToVideoInplaceKJ`、`SimpleCalculatorKJ`、`SaveVideo`、`UNETLoader`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`LoadImage`、`ResizeImageMaskNode`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`
-
-**缺卡**（7）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`easy imageScaleDown`、`easy imageScaleDown`、`easy imageScaleDown`、`easy imageScaleDown`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`VAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LTXVConditioning`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`LTX2_NAG`、`CreateVideo`、`Label (rgthree)`、`LatentUpscaleModelLoader`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`CLIPTextEncode`、`INTConstant`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`FloatConstant`、`LTXVImgToVideoInplaceKJ`、`SimpleCalculatorKJ`、`SaveVideo`、`UNETLoader`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`LoadImage`、`ResizeImageMaskNode`、`easy imageScaleDown`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageScaleDown` 知识库中没有该节点类型的任何知识

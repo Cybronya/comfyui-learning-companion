@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.2GGUF终极加速_1982992575873331201.json
 hash: c71abf6dc40952c9
-coverage: 0.884615
-learned_at: 2026-10-11 02:45:02
+coverage: 0.961538
+learned_at: 2026-10-15 22:47:04
 nodes: [SimpleMath+, Note, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, VAEDecode, LoadImage, WanMoeKSampler, VHS_VideoCombine, FILM VFI, VHS_VideoCombine, wanBlockSwap, PathchSageAttentionKJ, PathchSageAttentionKJ, wanBlockSwap, WanImageToVideo, ModelPatchTorchSettings, ModelPatchTorchSettings, DF_Integer, CLIPTextEncode, UnetLoaderGGUF, UnetLoaderGGUF, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [FILM VFI, SimpleMath+]
+missing: []
 parameters: {"cfg": 4, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "randomize"}
-discoveries: [次要节点 `FILM VFI` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/WAN2.2GGUF终极加速_1982992575873331201.json
@@ -62,15 +61,8 @@ discoveries: [次要节点 `FILM VFI` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **88%**（23/26）
+覆盖率 **96%**（25/26）
 
-**有卡**：`CLIPTextEncode`、`LoraLoaderModelOnly`、`VAEDecode`、`LoadImage`、`WanMoeKSampler`、`VHS_VideoCombine`、`wanBlockSwap`、`PathchSageAttentionKJ`、`WanImageToVideo`、`ModelPatchTorchSettings`、`DF_Integer`、`UnetLoaderGGUF`、`CLIPLoader`、`VAELoader`
-
-**缺卡**（2）：`FILM VFI`、`SimpleMath+`
+**有卡**：`SimpleMath+`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`VAEDecode`、`LoadImage`、`WanMoeKSampler`、`VHS_VideoCombine`、`FILM VFI`、`wanBlockSwap`、`PathchSageAttentionKJ`、`WanImageToVideo`、`ModelPatchTorchSettings`、`DF_Integer`、`UnetLoaderGGUF`、`CLIPLoader`、`VAELoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、WanMoeKSampler、DF_Integer
-
-## 学习发现
-
-- 次要节点 `FILM VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Krea文生图_1951132199200432130.json
 hash: bb8696c901bd76d5
 coverage: 1
-learned_at: 2026-10-10 20:58:36
+learned_at: 2026-10-15 22:26:25
 nodes: [UNETLoader, DualCLIPLoader, FluxGuidance, BasicScheduler, BasicGuider, RandomNoise, KSamplerSelect, VAELoader, SamplerCustomAdvanced, VAEDecode, CLIPTextEncode, SaveImage, EmptyLatentImage]
 patterns: []
 missing: []
@@ -20,29 +20,33 @@ parameters: {"batch_size": 1, "height": 1024, "width": 1024}
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（13 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `FluxGuidance`
 - `BasicScheduler`
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `VAELoader`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
-- `CLIPTextEncode`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `SaveImage`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `height` = `1024`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
 覆盖率 **100%**（13/13）
 
 **有卡**：`UNETLoader`、`DualCLIPLoader`、`FluxGuidance`、`BasicScheduler`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`VAELoader`、`SamplerCustomAdvanced`、`VAEDecode`、`CLIPTextEncode`、`SaveImage`、`EmptyLatentImage`
+
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、EmptyLatentImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced

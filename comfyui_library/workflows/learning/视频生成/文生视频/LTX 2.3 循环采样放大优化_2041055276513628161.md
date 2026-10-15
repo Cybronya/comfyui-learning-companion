@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 循环采样放大优化_2041055276513628161.json
 hash: 84edc068373ae4ce
 coverage: 1
-learned_at: 2026-10-11 19:49:35
+learned_at: 2026-10-15 22:44:32
 nodes: [CFGGuider, GetVideoComponents, CreateVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEEncodeTiled, RandomNoise, CLIPTextEncode, LTXVConditioning, LTXVLoopingSampler, LTXVSpatioTemporalTiledVAEDecode, ImageScaleToMaxDimension, LTXAVTextEncoderLoader, CheckpointLoaderSimple, VRAMReserver, LoadImage, KSamplerSelect, LoraLoaderModelOnly, RandomNoise, LTXVLoopingSampler, ImageScaleToMaxDimension, KSamplerSelect, VRAMReserver, ManualSigmas, ManualSigmas, ManualSigmas, ManualSigmas, SaveVideo, CLIPTextEncode, CLIPTextEncode, AILab_QwenVL, DisTorchPurgeVRAMV2, VHS_VideoInfoLoaded, LTXVSpatioTemporalTiledVAEDecode, LTXAVTextEncoderLoader, CheckpointLoaderSimple, VHS_LoadVideo, LoadImage, LTX2_NAG, LTXVConditioning, LoraLoaderModelOnly, CFGGuider, VAEEncodeTiled, VHS_VideoCombine, LoadVideo]
 patterns: []
 missing: []

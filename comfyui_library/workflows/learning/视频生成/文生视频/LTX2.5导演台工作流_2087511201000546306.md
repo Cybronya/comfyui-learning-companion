@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5导演台工作流_2087511201000546306.json
 hash: 62e9a76352ddc033
-coverage: 0.891892
-learned_at: 2026-10-11 20:53:38
+coverage: 0.972973
+learned_at: 2026-10-15 22:45:17
 nodes: [AudioCrop, MelBandRoFormerModelLoader, LoadImage, LoadImage, LiconMSR, LoadImage, CFGGuider, RandomNoise, LoadImage, VHS_VideoCombine, TTResolutionSelector, LTXVConcatAVLatent, LoadAudio, PreviewAudio, MelBandRoFormerSampler, YusuLTXDirectorGuide, ConditioningZeroOut, LTXVConditioning, LTXVSeparateAVLatent, YusuLTXDirectorCropGuides, BasicScheduler, CreateVideo, LTXVAudioVAEDecode, VAEDecodeTiled, YusuLTXDirector, CLIPLoader, VAELoaderKJ, VAELoaderKJ, TTResolutionSelector, SamplerCustomAdvanced, KSamplerSelect, Label (rgthree), Label (rgthree), Label (rgthree), DiffusionModelLoaderKJ, Fast Groups Bypasser (rgthree), SaveVideo]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.5导演台工作流_2087511201000546306.json
@@ -63,16 +62,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **89%**（33/37）
+覆盖率 **97%**（36/37）
 
-**有卡**：`AudioCrop`、`MelBandRoFormerModelLoader`、`LoadImage`、`LiconMSR`、`CFGGuider`、`RandomNoise`、`VHS_VideoCombine`、`TTResolutionSelector`、`LTXVConcatAVLatent`、`LoadAudio`、`PreviewAudio`、`MelBandRoFormerSampler`、`YusuLTXDirectorGuide`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`YusuLTXDirectorCropGuides`、`BasicScheduler`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`YusuLTXDirector`、`CLIPLoader`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`KSamplerSelect`、`DiffusionModelLoaderKJ`、`SaveVideo`
-
-**缺卡**（3）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`AudioCrop`、`MelBandRoFormerModelLoader`、`LoadImage`、`LiconMSR`、`CFGGuider`、`RandomNoise`、`VHS_VideoCombine`、`TTResolutionSelector`、`LTXVConcatAVLatent`、`LoadAudio`、`PreviewAudio`、`MelBandRoFormerSampler`、`YusuLTXDirectorGuide`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`YusuLTXDirectorCropGuides`、`BasicScheduler`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`YusuLTXDirector`、`CLIPLoader`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`KSamplerSelect`、`Label (rgthree)`、`DiffusionModelLoaderKJ`、`SaveVideo`
 
 **用到的条目**：CLIPLoader、ConditioningZeroOut、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

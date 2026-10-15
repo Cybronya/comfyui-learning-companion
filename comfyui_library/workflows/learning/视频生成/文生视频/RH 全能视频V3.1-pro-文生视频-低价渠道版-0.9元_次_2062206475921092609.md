@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH 全能视频V3.1-pro-文生视频-低价渠道版-0.9元_次_2062206475921092609.json
 hash: 4b03fce61325aaf2
-coverage: 0.8
-learned_at: 2026-10-11 20:21:29
+coverage: 1
+learned_at: 2026-10-15 22:46:52
 nodes: [VHS_VideoCombine, VHS_VideoCombine, GetVideoComponents, RH_RhartVideoV31ProTextToVideo, CR Prompt Text]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/RH 全能视频V3.1-pro-文生视频-低价渠道版-0.9元_次_2062206475921092609.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **80%**（4/5）
+覆盖率 **100%**（5/5）
 
-**有卡**：`VHS_VideoCombine`、`GetVideoComponents`、`RH_RhartVideoV31ProTextToVideo`
+**有卡**：`VHS_VideoCombine`、`GetVideoComponents`、`RH_RhartVideoV31ProTextToVideo`、`CR Prompt Text`
 
-**缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：GetVideoComponents、VHS_VideoCombine、RH_RhartVideoV31ProTextToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、CLIPTextEncode、CLIPLoader
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：CR Prompt Text、GetVideoComponents、VHS_VideoCombine、RH_RhartVideoV31ProTextToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、CLIPTextEncode

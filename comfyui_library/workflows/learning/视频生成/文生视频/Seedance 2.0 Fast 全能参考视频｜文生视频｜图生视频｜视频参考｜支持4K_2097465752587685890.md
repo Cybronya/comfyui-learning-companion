@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0 Fast 全能参考视频｜文生视频｜图生视频｜视频参考｜支持4K_2097465752587685890.json
 hash: 088b4db2902f455f
 coverage: 0.857143
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:57
 nodes: [SaveVideo, LoadAudio, LoadAudio, MuyeTextEditOutput, LoadVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []

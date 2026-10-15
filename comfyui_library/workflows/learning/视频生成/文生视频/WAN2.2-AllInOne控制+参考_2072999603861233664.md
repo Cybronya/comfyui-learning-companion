@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.2-AllInOne控制+参考_2072999603861233664.json
 hash: c69ed71078952a24
 coverage: 1
-learned_at: 2026-10-11 20:38:42
+learned_at: 2026-10-15 22:47:04
 nodes: [WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoVAELoader, LoadWanVideoT5TextEncoder, VHS_LoadVideo, AIO_Preprocessor, INTConstant, WanVideoVACEEncode, GetImageSizeAndCount, WanVideoDecode, VHS_VideoCombine, ImageResizeKJv2, WanVideoSetLoRAs, WanVideoLoraSelect, INTConstant, LoadImage, WanVideoTextEncode, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSampler]
 patterns: []
 missing: []

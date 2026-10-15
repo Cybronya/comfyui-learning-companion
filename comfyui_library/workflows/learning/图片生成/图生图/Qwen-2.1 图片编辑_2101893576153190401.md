@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-2.1 图片编辑_2101893576153190401.json
 hash: b9483ef1027b2019
-coverage: 0.684211
-learned_at: 2026-10-10 20:48:09
+coverage: 0.736842
+learned_at: 2026-10-15 22:25:21
 nodes: [MarkdownNote, MarkdownNote, MarkdownNote, Label (rgthree), LoadImage, LoadImage, ResolutionSelector, UNETLoader, VAELoader, TextEncodeQwenImage21, QwenImage21Cache, KSampler, EmptyLatentImage, MultiTextConcatenate, JjkText, JjkText, VAEDecode, SaveImage, CLIPLoader]
 patterns: []
-missing: [Label (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 249413519482856, "steps": 25, "width": 1024}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen-2.1 图片编辑_2101893576153190401.json
@@ -58,14 +57,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **68%**（13/19）
+覆盖率 **74%**（14/19）
 
-**有卡**：`LoadImage`、`ResolutionSelector`、`UNETLoader`、`VAELoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`KSampler`、`EmptyLatentImage`、`MultiTextConcatenate`、`VAEDecode`、`SaveImage`、`CLIPLoader`
-
-**缺卡**（1）：`Label (rgthree)`
+**有卡**：`Label (rgthree)`、`LoadImage`、`ResolutionSelector`、`UNETLoader`、`VAELoader`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`KSampler`、`EmptyLatentImage`、`MultiTextConcatenate`、`VAEDecode`、`SaveImage`、`CLIPLoader`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

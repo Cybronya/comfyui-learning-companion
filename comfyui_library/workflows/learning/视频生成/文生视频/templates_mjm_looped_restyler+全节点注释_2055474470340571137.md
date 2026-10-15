@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/templates_mjm_looped_restyler+全节点注释_2055474470340571137.json
 hash: 710d35082f432714
 coverage: 0.511111
-learned_at: 2026-10-11 19:49:45
+learned_at: 2026-10-15 22:47:32
 nodes: [SaveVideo, SplitImageWithAlpha, ImageBatch, GetVideoComponents, CreateVideo, GetVideoComponents, CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, WanFirstLastFrameToVideo, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, CLIPTextEncode, CreateVideo, GetImageSizeAndCount, ImageScaleToTotalPixels, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, WanFirstLastFrameToVideo, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, UNETLoader, CreateVideo, RH_LLMAPI_Pro_Node, ImageStitch, RH_LLMAPI_Pro_Node, ImageScaleToTotalPixels, RH_RhartImageG2ImageToImage, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, LoadImage, LoadImage, LoadImage]
 patterns: []
 missing: []

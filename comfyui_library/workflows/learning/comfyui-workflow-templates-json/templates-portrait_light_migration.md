@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-portrait_light_migration.json
 hash: 759bba6fe1035bf2
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:49:23
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, Note, MarkdownNote, LoadImage, LoadImage, 9e3c3756-d15f-4361-8e99-c35673036e68]
 patterns: []
-missing: [9e3c3756-d15f-4361-8e99-c35673036e68]
-discoveries: [次要节点 `9e3c3756-d15f-4361-8e99-c35673036e68` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/templates-portrait_light_migration.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `9e3c3756-d15f-4361-8e99-c35673036e68` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（3/6）
+覆盖率 **67%**（4/6）
 
-**有卡**：`SaveImage`、`LoadImage`
+**有卡**：`SaveImage`、`LoadImage`、`9e3c3756-d15f-4361-8e99-c35673036e68`
 
-**缺卡**（1）：`9e3c3756-d15f-4361-8e99-c35673036e68`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `9e3c3756-d15f-4361-8e99-c35673036e68` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、9e3c3756-d15f-4361-8e99-c35673036e68、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput

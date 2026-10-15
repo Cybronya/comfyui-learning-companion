@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/QwenImage2.1 I2I + 官方提示词助手_2102348928711741442.json
 hash: 6fa58af1f3d29672
 coverage: 0.492754
-learned_at: 2026-10-10 20:48:10
+learned_at: 2026-10-15 22:25:28
 nodes: [ResolutionSelector, SaveImageAdvanced, ImageScaleToTotalPixels, ImageScaleToTotalPixels, TextGenerate, JsonExtractString, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, KSampler, ComfySwitchNode, QwenImage21Cache, Fast Groups Bypasser (rgthree), LoadImage, ImageScaleToTotalPixels, LoadImage, ImageScaleToTotalPixels, SetNode, SetNode, SetNode, SetNode, LoadImage, ImageScaleToTotalPixels, LoadImage, ImageScaleToTotalPixels, SetNode, LoadImage, LoadImage, SetNode, ImageScaleToTotalPixels, ImageScaleToTotalPixels, SetNode, SetNode, LoadImage, ImageScaleToTotalPixels, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPLoader, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, TextConcatenator, PrimitiveStringMultiline, easy showAnything, easy showAnything, LoadImage, LoadImage, SaveImage, VAEDecode, ImageBatchMulti, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), TextEncodeQwenImage21]
 patterns: []
 missing: []

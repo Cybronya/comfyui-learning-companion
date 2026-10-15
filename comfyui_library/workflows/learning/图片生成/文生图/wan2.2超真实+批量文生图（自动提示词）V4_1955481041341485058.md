@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2超真实+批量文生图（自动提示词）V4_1955481041341485058.json
 hash: 7cb6f35f68a1d5e8
-coverage: 0.791667
-learned_at: 2026-10-10 20:59:27
+coverage: 0.875
+learned_at: 2026-10-15 22:27:59
 nodes: [LoraLoader, CLIPTextEncode, CLIPLoader, VAELoader, CFGZeroStarAndInit, CR Text Concatenate, EmptyLatentImage, KSampler, VAEDecode, RH_LLMAPI_NODE, ShowText|pysssss, UNETLoader, ShowText|pysssss, LoraLoader, CLIPTextEncode, LoraLoader, Wan_video_prompt_generator, RHHiddenNodes, Text Multiline, JWInteger, JWInteger, RHHiddenNodes, Note, SaveImage]
 patterns: [text_to_image, lora]
-missing: [CR Text Concatenate, Text Multiline]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 4, "cfg": 1, "denoise": 1, "height": 512, "lora_name": "Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors", "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 848384452844142, "steps": 8, "strength_clip": 0.4000000000000001, "strength_model": 0.4000000000000001, "width": 512}
-discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/wan2.2超真实+批量文生图（自动提示词）V4_1955481041341485058.json
@@ -22,23 +22,25 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（24 个）：
-- `LoraLoader`
-- `CLIPTextEncode`
+- `LoraLoader` ★核心
+- `CLIPTextEncode` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `CFGZeroStarAndInit`
 - `CR Text Concatenate`
-- `EmptyLatentImage`
-- `KSampler`
-- `VAEDecode`
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `RH_LLMAPI_NODE`
 - `ShowText|pysssss`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `ShowText|pysssss`
-- `LoraLoader`
-- `CLIPTextEncode`
-- `LoraLoader`
+- `LoraLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoader` ★核心
 - `Wan_video_prompt_generator`
 - `RHHiddenNodes`
 - `Text Multiline`
@@ -52,26 +54,26 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `batch_size` = `4`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `512`
 - `lora_name` = `Wan21_T2V_14B_lightx2v_cfg_step_distill_lora_rank32.safetensors`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
+- `strength_model` = `0.4000000000000001`
+- `strength_clip` = `0.4000000000000001`
+- `width` = `512`
+- `height` = `512`
+- `batch_size` = `4`
 - `seed` = `848384452844142`
 - `steps` = `8`
-- `strength_clip` = `0.4000000000000001`
-- `strength_model` = `0.4000000000000001`
-- `width` = `512`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **79%**（19/24）
+覆盖率 **88%**（21/24）
 
-**有卡**：`LoraLoader`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`CFGZeroStarAndInit`、`CR Text Concatenate`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`RH_LLMAPI_NODE`、`ShowText|pysssss`、`UNETLoader`、`Wan_video_prompt_generator`、`RHHiddenNodes`、`Text Multiline`
+**有卡**：`LoraLoader`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`CFGZeroStarAndInit`、`CR Text Concatenate`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`RH_LLMAPI_NODE`、`UNETLoader`、`Wan_video_prompt_generator`、`RHHiddenNodes`、`Text Multiline`、`JWInteger`、`SaveImage`
 
-**缺卡**（2）：`CR Text Concatenate`、`Text Multiline`
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader、CFGZeroStarAndInit
 
 ## 参数体检
 
@@ -80,6 +82,4 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/视频-文生视频自动扩写-wan2.2-KJ_1972719438250332161.json
 hash: e7f987344779f1bb
-coverage: 0.484848
-learned_at: 2026-10-10 23:13:53
+coverage: 0.666667
+learned_at: 2026-10-15 22:49:00
 nodes: [easy showAnything, easy imageSize, GetImageSizeAndCount, GetImageSizeAndCount, GetNode, WanVideoDecode, VHS_VideoCombine, WanVideoSetBlockSwap, WanVideoSetLoRAs, GetNode, Reroute, SetNode, QwenLoader, WanVideoSampler, ImpactFloat, CreateCFGScheduleFloatList, GetNode, WanVideoEmptyEmbeds, WanVideoSampler, WanVideoSigmaToStep, easy showAnything, easy showAnything, GetNode, SetNode, StringFunction|pysssss, GetNode, SetNode, GetNode, GetImageSizeAndCount, GetNode, StringFunction|pysssss, GetNode, GetImageSizeAndCount, WanVideoPromptExtender, SetNode, StringFunction|pysssss, GetImageSizeAndCount, GetNode, GetImageSizeAndCount, VHS_VideoCombine, WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoLoraSelect, INTConstant, WanVideoVAELoader, WanVideoTextEncodeCached, WanVideoLoraSelectMulti, WanVideoScheduler, WanVideoScheduler, WanVideoModelLoader, WanVideoModelLoader, easy anythingIndexSwitch, easy positive, easy int, easy int, easy positive, easy int, ImpactFloat, SetNode, easy seed, SetNode, PrimitiveFloat, SetNode, EmptyImage, SetNode, MathExpression|pysssss]
 patterns: []
-missing: [MathExpression|pysssss, StringFunction|pysssss, StringFunction|pysssss, StringFunction|pysssss, easy anythingIndexSwitch, easy int, easy int, easy int, easy positive, easy positive, easy imageSize, easy seed]
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/视频-文生视频自动扩写-wan2.2-KJ_1972719438250332161.json
@@ -92,25 +91,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **48%**（32/66）
+覆盖率 **67%**（44/66）
 
-**有卡**：`GetImageSizeAndCount`、`WanVideoDecode`、`VHS_VideoCombine`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`QwenLoader`、`WanVideoSampler`、`ImpactFloat`、`CreateCFGScheduleFloatList`、`WanVideoEmptyEmbeds`、`WanVideoSigmaToStep`、`WanVideoPromptExtender`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`INTConstant`、`WanVideoVAELoader`、`WanVideoTextEncodeCached`、`WanVideoLoraSelectMulti`、`WanVideoScheduler`、`WanVideoModelLoader`、`EmptyImage`
+**有卡**：`easy imageSize`、`GetImageSizeAndCount`、`WanVideoDecode`、`VHS_VideoCombine`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`QwenLoader`、`WanVideoSampler`、`ImpactFloat`、`CreateCFGScheduleFloatList`、`WanVideoEmptyEmbeds`、`WanVideoSigmaToStep`、`StringFunction|pysssss`、`WanVideoPromptExtender`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`INTConstant`、`WanVideoVAELoader`、`WanVideoTextEncodeCached`、`WanVideoLoraSelectMulti`、`WanVideoScheduler`、`WanVideoModelLoader`、`easy anythingIndexSwitch`、`easy positive`、`easy int`、`easy seed`、`EmptyImage`、`MathExpression|pysssss`
 
-**缺卡**（12）：`MathExpression|pysssss`、`StringFunction|pysssss`、`StringFunction|pysssss`、`StringFunction|pysssss`、`easy anythingIndexSwitch`、`easy int`、`easy int`、`easy int`、`easy positive`、`easy positive`、`easy imageSize`、`easy seed`
-
-**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs、WanVideoLoraSelectMulti
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、easy seed、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/反推提示词/全自动提示词图像编辑 千问image2.1海报改图优化_2104340100669857794.json
 hash: 07b41ddeb662fb71
-coverage: 0.52439
-learned_at: 2026-10-10 20:48:01
+coverage: 0.54878
+learned_at: 2026-10-15 22:25:03
 nodes: [CLIPLoader, GetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, QwenImage21Cache, Seed (rgthree), EmptyLatentImage, GetNode, SetNode, VAELoader, UNETLoader, SetNode, GetNode, QwenPERewriteT8, ShowText|pysssss, GetNode, GetNode, SetNode, SaveImageAdvanced, VAEDecode, SaveImage, KSampler, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, TextEncodeQwenImage21, SetNode, SetNode, SetNode, SetNode, LoadImage, ComfySwitchNode, ResolutionSelector, SetNode, Text Multiline, Image Comparer (rgthree), LoadImage, LoadImage, XinbaoImageStandardizer, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [Text Multiline, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/反推提示词/全自动提示词图像编辑 千问image2.1海报改图优化_2104340100669857794.json
@@ -124,11 +124,9 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **52%**（43/82）
+覆盖率 **55%**（45/82）
 
-**有卡**：`CLIPLoader`、`LoadImage`、`QwenImage21Cache`、`EmptyLatentImage`、`VAELoader`、`UNETLoader`、`QwenPERewriteT8`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`KSampler`、`TextEncodeQwenImage21`、`ResolutionSelector`、`XinbaoImageStandardizer`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（2）：`Text Multiline`、`Seed (rgthree)`
+**有卡**：`CLIPLoader`、`LoadImage`、`QwenImage21Cache`、`Seed (rgthree)`、`EmptyLatentImage`、`VAELoader`、`UNETLoader`、`QwenPERewriteT8`、`SaveImageAdvanced`、`VAEDecode`、`SaveImage`、`KSampler`、`TextEncodeQwenImage21`、`ResolutionSelector`、`Text Multiline`、`XinbaoImageStandardizer`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -139,6 +137,4 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 学习发现
 
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

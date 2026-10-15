@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Z-Image-i2L (Image to LoRA)快速lora训练+联合CN测试+放大_2023308180264067074.json
 hash: 4909bc07f785fc0d
-coverage: 0.806452
-learned_at: 2026-10-11 03:16:50
+coverage: 0.887097
+learned_at: 2026-10-15 22:47:17
 nodes: [RandomNoise, DetailDaemonSamplerNode, LoraLoaderModelOnly, ModelPatchLoader, VAELoader, SamplerEulerAncestral, UNETLoader, SamplerCustomAdvanced, EmptyLatentImage, image_scale_pixel_v2, ZImageFunControlnet, AIO_Preprocessor, BasicScheduler, SamplerEulerAncestral, VAELoader, CLIPTextEncode, easy int, SplitSigmas, CFGGuider, PreviewImage, SamplerCustomAdvanced, RandomNoise, CFGGuider, easy cleanGpuUsed, RunningHub_ZImageI2L_Loader, VAEEncode, Reroute, TTP_Image_Tile_Batch, easy imageListToImageBatch, TTP_Image_Assy, TTP_Tile_image_size, easy imageBatchToImageList, ImageUpscaleWithModel, Seed (rgthree), ImageScaleToTotalPixels, ShowText|pysssss, VAEDecodeTiled, Florence2Run, Florence2ModelLoader, SaveImage, Reroute, KSampler, VAEDecode, CLIPLoader, LoraLoader, CLIPTextEncode, UpscaleModelLoader, SaveImage, Image Comparer (rgthree), ImageBatchMulti, PreviewAny, RunningHub_ZImageI2L_Saver, RunningHub_ZImageI2L_LoraGenerator, ModelSamplingAuraFlow, PrimitiveStringMultiline, CLIPTextEncode, CLIPTextEncode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
 patterns: [text_to_image, image_to_image, lora]
-missing: [easy cleanGpuUsed, easy imageBatchToImageList, easy imageListToImageBatch, easy int, Seed (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 3, "denoise": 0.25000000000000006, "height": 472, "lora_name": null, "sampler_name": "euler", "scheduler": "simple", "seed": 1067213692497413, "steps": 20, "strength_clip": 1.0000000000000002, "strength_model": 1.1000000000000003, "width": 512}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Z-Image-i2L (Image to LoRA)快速lora训练+联合CN测试+放大_2023308180264067074.json
@@ -106,18 +105,8 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **81%**（50/62）
+覆盖率 **89%**（55/62）
 
-**有卡**：`RandomNoise`、`DetailDaemonSamplerNode`、`LoraLoaderModelOnly`、`ModelPatchLoader`、`VAELoader`、`SamplerEulerAncestral`、`UNETLoader`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`image_scale_pixel_v2`、`ZImageFunControlnet`、`AIO_Preprocessor`、`BasicScheduler`、`CLIPTextEncode`、`SplitSigmas`、`CFGGuider`、`RunningHub_ZImageI2L_Loader`、`VAEEncode`、`TTP_Image_Tile_Batch`、`TTP_Image_Assy`、`TTP_Tile_image_size`、`ImageUpscaleWithModel`、`ImageScaleToTotalPixels`、`VAEDecodeTiled`、`Florence2Run`、`Florence2ModelLoader`、`SaveImage`、`KSampler`、`VAEDecode`、`CLIPLoader`、`LoraLoader`、`UpscaleModelLoader`、`ImageBatchMulti`、`RunningHub_ZImageI2L_Saver`、`RunningHub_ZImageI2L_LoraGenerator`、`ModelSamplingAuraFlow`、`LoadImage`
-
-**缺卡**（5）：`easy cleanGpuUsed`、`easy imageBatchToImageList`、`easy imageListToImageBatch`、`easy int`、`Seed (rgthree)`
+**有卡**：`RandomNoise`、`DetailDaemonSamplerNode`、`LoraLoaderModelOnly`、`ModelPatchLoader`、`VAELoader`、`SamplerEulerAncestral`、`UNETLoader`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`image_scale_pixel_v2`、`ZImageFunControlnet`、`AIO_Preprocessor`、`BasicScheduler`、`CLIPTextEncode`、`easy int`、`SplitSigmas`、`CFGGuider`、`easy cleanGpuUsed`、`RunningHub_ZImageI2L_Loader`、`VAEEncode`、`TTP_Image_Tile_Batch`、`easy imageListToImageBatch`、`TTP_Image_Assy`、`TTP_Tile_image_size`、`easy imageBatchToImageList`、`ImageUpscaleWithModel`、`Seed (rgthree)`、`ImageScaleToTotalPixels`、`VAEDecodeTiled`、`Florence2Run`、`Florence2ModelLoader`、`SaveImage`、`KSampler`、`VAEDecode`、`CLIPLoader`、`LoraLoader`、`UpscaleModelLoader`、`ImageBatchMulti`、`RunningHub_ZImageI2L_Saver`、`RunningHub_ZImageI2L_LoraGenerator`、`ModelSamplingAuraFlow`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageBatchToImageList` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

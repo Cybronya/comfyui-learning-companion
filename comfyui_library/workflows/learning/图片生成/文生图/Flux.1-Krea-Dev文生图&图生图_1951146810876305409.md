@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1-Krea-Dev文生图&图生图_1951146810876305409.json
 hash: 1eff3e074f219010
-coverage: 0.774194
-learned_at: 2026-10-10 20:58:36
+coverage: 0.903226
+learned_at: 2026-10-15 22:26:25
 nodes: [DualCLIPLoader, VAELoader, FluxGuidance, ConditioningZeroOut, CLIPTextEncode, VAEDecode, easy showAnything, UNETLoader, RH_Translator, DualCLIPLoader, VAELoader, VAEDecode, UNETLoader, KSampler, SDXL Empty Latent Image (rgthree), RepeatLatentBatch, VAEEncode, RH_Translator, RH_Captioner, Text Concatenate, easy showAnything, LoadImage, LayerUtility: TextBox, KSampler, ConditioningZeroOut, FluxGuidance, CLIPTextEncode, LayerUtility: TextBox, SaveImage, SaveImage, Fast Groups Bypasser (rgthree)]
 patterns: [image_to_image]
-missing: [LayerUtility: TextBox, LayerUtility: TextBox, Text Concatenate, SDXL Empty Latent Image (rgthree)]
+missing: []
 parameters: {"cfg": 1, "denoise": 0.8000000000000002, "sampler_name": "euler", "scheduler": "simple", "seed": 202412543674784, "steps": 20}
-discoveries: [次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `SDXL Empty Latent Image (rgthree)` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Flux.1-Krea-Dev文生图&图生图_1951146810876305409.json
@@ -21,34 +20,36 @@ discoveries: [次要节点 `LayerUtility: TextBox` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（31 个）：
 - `DualCLIPLoader`
 - `VAELoader`
 - `FluxGuidance`
 - `ConditioningZeroOut`
-- `CLIPTextEncode`
-- `VAEDecode`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
 - `easy showAnything`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `RH_Translator`
 - `DualCLIPLoader`
 - `VAELoader`
-- `VAEDecode`
-- `UNETLoader`
-- `KSampler`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
 - `SDXL Empty Latent Image (rgthree)`
 - `RepeatLatentBatch`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `RH_Translator`
 - `RH_Captioner`
 - `Text Concatenate`
 - `easy showAnything`
 - `LoadImage`
 - `LayerUtility: TextBox`
-- `KSampler`
+- `KSampler` ★核心
 - `ConditioningZeroOut`
 - `FluxGuidance`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `LayerUtility: TextBox`
 - `SaveImage`
 - `SaveImage`
@@ -58,24 +59,17 @@ discoveries: [次要节点 `LayerUtility: TextBox` 知识库中没有该节点�
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `0.8000000000000002`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `202412543674784`
 - `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.8000000000000002`
 
 ## 知识
 
-覆盖率 **77%**（24/31）
+覆盖率 **90%**（28/31）
 
-**有卡**：`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`ConditioningZeroOut`、`CLIPTextEncode`、`VAEDecode`、`easy showAnything`、`UNETLoader`、`RH_Translator`、`KSampler`、`SDXL Empty Latent Image (rgthree)`、`RepeatLatentBatch`、`VAEEncode`、`RH_Captioner`、`Text Concatenate`、`LoadImage`、`LayerUtility: TextBox`
+**有卡**：`DualCLIPLoader`、`VAELoader`、`FluxGuidance`、`ConditioningZeroOut`、`CLIPTextEncode`、`VAEDecode`、`UNETLoader`、`RH_Translator`、`KSampler`、`SDXL Empty Latent Image (rgthree)`、`RepeatLatentBatch`、`VAEEncode`、`RH_Captioner`、`Text Concatenate`、`LoadImage`、`LayerUtility: TextBox`、`SaveImage`
 
-**缺卡**（4）：`LayerUtility: TextBox`、`LayerUtility: TextBox`、`Text Concatenate`、`SDXL Empty Latent Image (rgthree)`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: TextBox` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `SDXL Empty Latent Image (rgthree)` 仅有 VAE/Checkpoint/Resolution 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、FluxGuidance

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/【Auto-Generate-Goods-Detail】单图生成-API调用_2064943676937297921.json
 hash: 9b8b02274d2b79c8
-coverage: 0.692308
-learned_at: 2026-10-10 20:48:13
+coverage: 0.769231
+learned_at: 2026-10-15 22:25:38
 nodes: [LoadImagesFromURL, LoadImagesFromURL, LoadImagesFromURL, LoadImagesFromURL, LoadImagesFromURL, LoadImagesFromURL, Note, PrimitiveString, CR String To Combo, PrimitiveStringMultiline, LoadMultiImage, RH_RhartImageG2ImageToImage, SaveImage]
 patterns: []
-missing: [CR String To Combo]
-discoveries: [次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/图生图/【Auto-Generate-Goods-Detail】单图生成-API调用_2064943676937297921.json
@@ -39,14 +38,8 @@ discoveries: [次要节点 `CR String To Combo` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **69%**（9/13）
+覆盖率 **77%**（10/13）
 
-**有卡**：`LoadImagesFromURL`、`LoadMultiImage`、`RH_RhartImageG2ImageToImage`、`SaveImage`
+**有卡**：`LoadImagesFromURL`、`CR String To Combo`、`LoadMultiImage`、`RH_RhartImageG2ImageToImage`、`SaveImage`
 
-**缺卡**（1）：`CR String To Combo`
-
-**用到的条目**：SaveImage、RH_RhartImageG2ImageToImage、LoadImagesFromURL、LoadMultiImage、sd15-t2i-basic、sd15-t2i-lora、LoadImage、String
-
-## 学习发现
-
-- 次要节点 `CR String To Combo` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、RH_RhartImageG2ImageToImage、LoadImagesFromURL、LoadMultiImage、CR String To Combo、sd15-t2i-basic、sd15-t2i-lora、LoadImage

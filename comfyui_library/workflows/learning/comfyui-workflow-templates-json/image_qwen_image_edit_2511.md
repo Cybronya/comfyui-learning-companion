@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_qwen_image_edit_2511.json
 hash: b23103935f437e1f
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:48:34
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:55
 nodes: [MarkdownNote, MarkdownNote, LoadImage, LoadImage, cdb2cf24-c432-439b-b5c8-5f69838580c9, SaveImage]
 patterns: []
-missing: [cdb2cf24-c432-439b-b5c8-5f69838580c9]
-discoveries: [次要节点 `cdb2cf24-c432-439b-b5c8-5f69838580c9` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_qwen_image_edit_2511.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `cdb2cf24-c432-439b-b5c8-5f69838580c9` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（3/6）
+覆盖率 **67%**（4/6）
 
-**有卡**：`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`cdb2cf24-c432-439b-b5c8-5f69838580c9`、`SaveImage`
 
-**缺卡**（1）：`cdb2cf24-c432-439b-b5c8-5f69838580c9`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `cdb2cf24-c432-439b-b5c8-5f69838580c9` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、cdb2cf24-c432-439b-b5c8-5f69838580c9、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput

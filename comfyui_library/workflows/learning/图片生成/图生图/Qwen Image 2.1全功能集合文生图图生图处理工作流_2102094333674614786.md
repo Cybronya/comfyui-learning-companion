@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1全功能集合文生图图生图处理工作流_2102094333674614786.json
 hash: a40ffa74271aaf79
-coverage: 0.626263
-learned_at: 2026-10-10 20:48:06
+coverage: 0.777778
+learned_at: 2026-10-15 22:25:12
 nodes: [LayerUtility: ImageReelComposit, VAEDecode, easy setNode, easy getNode, Image Comparer (rgthree), SeedVR2LoadVAEModel, VAEDecode, SeedVR2LoadDiTModel, Seed (rgthree), Image Comparer (rgthree), Fast Groups Bypasser (rgthree), Any Switch (rgthree), SaveImage, SeedVR2VideoUpscaler, LoraLoaderModelOnly, PreviewImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), LayerUtility: ImageReel, TextEncodeQwenImage21, EmptyLatentImage, TextEncodeQwenImage21, KSampler, ResolutionSelector, EmptyLatentImage, ComfySwitchNode, Image Comparer (rgthree), PreviewImage, KSampler, Seed (rgthree), ComfySwitchNode, LoadImage, LayerUtility: ImageReel, EmptyLatentImage, LayerUtility: ImageReelComposit, ResolutionSelector, easy setNode, VAEDecode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ShowText|pysssss, ShowText|pysssss, SaveImage, SaveImage, CR Prompt Text, LoadImage, KSampler, ResolutionSelector, UNETLoader, VAELoader, RHLLMChatNode, easy getNode, easy getNode, easy setNode, Anything Everywhere3, QwenImage21Cache, CLIPLoader, ResizeLongestToNode, RHLLMChatNode, Seed (rgthree), Fast Groups Bypasser (rgthree), CR Prompt Text, TextEncodeQwenImage21, SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [LayerUtility: ImageReel, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, LayerUtility: ImageReelComposit, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, CR Prompt Text, CR Prompt Text, Seed (rgthree), Seed (rgthree), Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1全功能集合文生图图生图处理工作流_2102094333674614786.json
@@ -141,11 +141,9 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **63%**（62/99）
+覆盖率 **78%**（77/99）
 
-**有卡**：`VAEDecode`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`SaveImage`、`SeedVR2VideoUpscaler`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`LoadImage`、`UNETLoader`、`VAELoader`、`RHLLMChatNode`、`QwenImage21Cache`、`CLIPLoader`、`ResizeLongestToNode`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（15）：`LayerUtility: ImageReel`、`LayerUtility: ImageReel`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReelComposit`、`easy getNode`、`easy getNode`、`easy getNode`、`easy setNode`、`easy setNode`、`easy setNode`、`CR Prompt Text`、`CR Prompt Text`、`Seed (rgthree)`、`Seed (rgthree)`、`Seed (rgthree)`
+**有卡**：`LayerUtility: ImageReelComposit`、`VAEDecode`、`easy setNode`、`easy getNode`、`SeedVR2LoadVAEModel`、`SeedVR2LoadDiTModel`、`Seed (rgthree)`、`SaveImage`、`SeedVR2VideoUpscaler`、`LoraLoaderModelOnly`、`LayerUtility: ImageReel`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`ResolutionSelector`、`LoadImage`、`CR Prompt Text`、`UNETLoader`、`VAELoader`、`RHLLMChatNode`、`QwenImage21Cache`、`CLIPLoader`、`ResizeLongestToNode`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -156,19 +154,4 @@ discoveries: [次要节点 `LayerUtility: ImageReel` 知识库中没有该节点
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageReel` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageReelComposit` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

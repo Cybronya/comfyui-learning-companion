@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/（自用）Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1952587209671159809.json
 hash: 44685c9d8b916163
-coverage: 0.734694
-learned_at: 2026-10-10 23:14:45
+coverage: 0.795918
+learned_at: 2026-10-15 22:49:12
 nodes: [Note, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoBlockSwap, PrimitiveNode, LoadWanVideoT5TextEncoder, WanVideoEmptyEmbeds, CreateCFGScheduleFloatList, INTConstant, INTConstant, JWInteger, JWInteger, Note, Note, Note, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoBlockSwap, WanVideoBlockSwap, WanVideoModelLoader, WanVideoTextEncode, Note, CR Prompt Text, Wan22PromptSelector, easy showAnything, CR Prompt Text, CR Prompt Text, TextConcat, ShowText|pysssss, JWStringConcat, easy showAnything, JWInteger, RH_LLMAPI_NODE, WanVideoSampler, WanVideoVAELoader, LoadLatent, VHS_VideoCombine, WanVideoDecode, SaveLatent, WanVideoSampler, easy showAnything, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, SaveImage, LoadImage]
 patterns: []
-missing: [CR Prompt Text, CR Prompt Text, CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/（自用）Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1952587209671159809.json
@@ -75,16 +74,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **73%**（36/49）
+覆盖率 **80%**（39/49）
 
-**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoEmptyEmbeds`、`CreateCFGScheduleFloatList`、`INTConstant`、`JWInteger`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoTextEncode`、`Wan22PromptSelector`、`TextConcat`、`JWStringConcat`、`RH_LLMAPI_NODE`、`WanVideoSampler`、`WanVideoVAELoader`、`LoadLatent`、`VHS_VideoCombine`、`WanVideoDecode`、`SaveLatent`、`WanVideoLoraSelect`、`SaveImage`、`LoadImage`
-
-**缺卡**（3）：`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoEmptyEmbeds`、`CreateCFGScheduleFloatList`、`INTConstant`、`JWInteger`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoTextEncode`、`CR Prompt Text`、`Wan22PromptSelector`、`TextConcat`、`JWStringConcat`、`RH_LLMAPI_NODE`、`WanVideoSampler`、`WanVideoVAELoader`、`LoadLatent`、`VHS_VideoCombine`、`WanVideoDecode`、`SaveLatent`、`WanVideoLoraSelect`、`SaveImage`、`LoadImage`
 
 **用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、SaveLatent、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

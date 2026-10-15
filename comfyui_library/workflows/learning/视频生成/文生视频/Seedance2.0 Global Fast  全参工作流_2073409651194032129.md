@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0 Global Fast  全参工作流_2073409651194032129.json
 hash: 7503c6b642f08e43
 coverage: 0.894737
-learned_at: 2026-10-11 20:38:42
+learned_at: 2026-10-15 22:46:58
 nodes: [PreviewAny, PreviewAny, LoadVideo, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadAudio, LoadVideo, LoadVideo, RH_BytedanceSeedance20GlobalFastMultimodalVideo, SaveVideo]
 patterns: []
 missing: []

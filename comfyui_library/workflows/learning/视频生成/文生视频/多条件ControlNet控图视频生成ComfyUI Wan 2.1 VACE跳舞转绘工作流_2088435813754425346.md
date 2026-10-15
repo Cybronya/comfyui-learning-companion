@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/多条件ControlNet控图视频生成ComfyUI Wan 2.1 VACE跳舞转绘工作流_2088435813754425346.json
 hash: 96653af6d29763c3
-coverage: 0.582418
-learned_at: 2026-10-11 20:53:53
+coverage: 0.593407
+learned_at: 2026-10-15 22:48:31
 nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LayerUtility: PurgeVRAM, SetNode, GetNode, WanVideoTextEncode, SetNode, SetNode, SetNode, WanVideoDecode, SetNode, DWPreprocessor, INTConstant, INTConstant, ImageResizeKJv2, GetNode, GetNode, GetNode, GetNode, GetNode, INTConstant, WanVideoSampler, WanVideoVACEEncode, VHS_VideoCombine, VHS_VideoCombine, AIO_Preprocessor, WanVideoVACEEncode, StringConstantMultiline, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEModelSelect, WanVideoLoraSelect, VHS_LoadVideo, LoadImage, Fast Groups Bypasser (rgthree), VHS_VideoCombine, SetNode, SetNode, VHS_VideoInfo, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageResizeKJv2, PreviewImage, LoadImage, SetNode, GetNode, GetNode, GetNode, SetNode, DWPreprocessor, 孤海注释, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
-missing: [LayerUtility: PurgeVRAM]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/多条件ControlNet控图视频生成ComfyUI Wan 2.1 VACE跳舞转绘工作流_2088435813754425346.json
@@ -133,11 +133,9 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **58%**（53/91）
+覆盖率 **59%**（54/91）
 
-**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoTextEncode`、`WanVideoDecode`、`DWPreprocessor`、`INTConstant`、`ImageResizeKJv2`、`WanVideoSampler`、`WanVideoVACEEncode`、`VHS_VideoCombine`、`AIO_Preprocessor`、`StringConstantMultiline`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`VHS_LoadVideo`、`LoadImage`、`VHS_VideoInfo`、`LoraLoaderModelOnly`、`UNETLoader`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM`
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`LayerUtility: PurgeVRAM`、`WanVideoTextEncode`、`WanVideoDecode`、`DWPreprocessor`、`INTConstant`、`ImageResizeKJv2`、`WanVideoSampler`、`WanVideoVACEEncode`、`VHS_VideoCombine`、`AIO_Preprocessor`、`StringConstantMultiline`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`VHS_LoadVideo`、`LoadImage`、`VHS_VideoInfo`、`LoraLoaderModelOnly`、`UNETLoader`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -148,5 +146,4 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

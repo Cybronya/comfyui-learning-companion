@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/机器人入景_毛坯空间_大门走向_空间保持_Image2.5_2102673686330429441.json
 hash: 2ebfc0e238fed665
 coverage: 0.6
-learned_at: 2026-10-10 20:59:51
+learned_at: 2026-10-15 22:28:54
 nodes: [LoadImage, LoadImage, SaveImage, RH_RhartImageG25FlareImageToImage, Note, Note, Note, Note, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -18,6 +18,8 @@ missing: []
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/机器人入景_毛坯空间_大门走向_空间保持_Image2.5_2102673686330429441.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（10 个）：
 - `LoadImage`
@@ -35,4 +37,6 @@ missing: []
 
 覆盖率 **60%**（6/10）
 
-**有卡**：`LoadImage`、`SaveImage`、`RH_RhartImageG25FlareImageToImage`、`Note`
+**有卡**：`LoadImage`、`SaveImage`、`RH_RhartImageG25FlareImageToImage`
+
+**用到的条目**：LoadImage、SaveImage、RH_RhartImageG25FlareImageToImage、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load、CS_Preview_Any

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 文生图 _ 6步加速（无PE）_2103300108006805505.json
 hash: 0b1190cc623fa661
 coverage: 0.909091
-learned_at: 2026-10-10 20:58:51
+learned_at: 2026-10-15 22:26:58
 nodes: [UNETLoader, LoraLoaderModelOnly, VAELoader, CLIPLoader, EmptyLatentImage, TextEncodeQwenImage21, SaveImage, KSampler, VAEDecode, PrimitiveStringMultiline, ResolutionSelector]
 patterns: []
 missing: []
@@ -22,36 +22,40 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（11 个）：
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `VAELoader`
 - `CLIPLoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `TextEncodeQwenImage21`
 - `SaveImage`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `PrimitiveStringMultiline`
 - `ResolutionSelector`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `1001138963381157`
 - `steps` = `6`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **91%**（10/11）
 
-**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`SaveImage`、`KSampler`、`VAEDecode`、`PrimitiveStringMultiline`
+**有卡**：`UNETLoader`、`LoraLoaderModelOnly`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`SaveImage`、`KSampler`、`VAEDecode`、`ResolutionSelector`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
 ## 参数体检
 

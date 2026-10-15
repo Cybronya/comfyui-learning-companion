@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen_Image_2.1图像编辑｜图生图实操经验版｜稳定可靠_2102313763641847810.json
 hash: 457637b1de16cdd1
-coverage: 0.901639
-learned_at: 2026-10-10 20:48:10
+coverage: 0.934426
+learned_at: 2026-10-15 22:25:28
 nodes: [CLIPLoader, VAELoader, QwenImage21Cache, VAEDecode, KSampler, Reroute, EmptyLatentImage, easy ifElse, LoadImage, LoadImage, 图像缩放V2_孤海, LoadImage, UNETLoader, TextEncodeQwenImage21, DF_Text_Box, 布尔孤海, GoohaiUniversalSlider, SaveImage, ResolutionSelector, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note, GH_ImageVideoComparer]
 patterns: [text_to_image]
-missing: [图像缩放V2_孤海, 布尔孤海]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识, 次要节点 `布尔孤海` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen_Image_2.1图像编辑｜图生图实操经验版｜稳定可靠_2102313763641847810.json
@@ -103,11 +103,9 @@ discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **90%**（55/61）
+覆盖率 **93%**（57/61）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`VAEDecode`、`KSampler`、`EmptyLatentImage`、`LoadImage`、`UNETLoader`、`TextEncodeQwenImage21`、`DF_Text_Box`、`GoohaiUniversalSlider`、`SaveImage`、`ResolutionSelector`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`、`GH_ImageVideoComparer`
-
-**缺卡**（2）：`图像缩放V2_孤海`、`布尔孤海`
+**有卡**：`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`VAEDecode`、`KSampler`、`EmptyLatentImage`、`LoadImage`、`图像缩放V2_孤海`、`UNETLoader`、`TextEncodeQwenImage21`、`DF_Text_Box`、`布尔孤海`、`GoohaiUniversalSlider`、`SaveImage`、`ResolutionSelector`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`、`GH_ImageVideoComparer`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -118,6 +116,4 @@ discoveries: [次要节点 `图像缩放V2_孤海` 知识库中没有该节点�
 
 ## 学习发现
 
-- 次要节点 `图像缩放V2_孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `布尔孤海` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3+GGUF量化版生视频_2033507189314297858.json
 hash: c8d9a927d5c65a4b
-coverage: 0.765957
-learned_at: 2026-10-11 03:48:34
+coverage: 0.93617
+learned_at: 2026-10-15 22:44:39
 nodes: [KSamplerSelect, RandomNoise, CFGGuider, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, ComfyMathExpression, CR Text, LTXVPreprocess, LTXVImgToVideoConditionOnly, VAELoader, Fast Groups Bypasser (rgthree), CR Text, LTXVScheduler, LTXVConcatAVLatent, easy cleanGpuUsed, LTXVLatentUpsampler, easy cleanGpuUsed, INTConstant, PrimitiveInt, VAELoaderKJ, PrimitiveInt, LTXVSeparateAVLatent, easy cleanGpuUsed, LatentUpscaleModelLoader, LTXVConcatAVLatent, easy cleanGpuUsed, SamplerCustomAdvanced, ManualSigmas, KSamplerSelect, CFGGuider, RandomNoise, LTXVAudioVAEDecode, LTXVConditioning, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, INTConstant, INTConstant, CR Prompt Text, PrimitiveBoolean, CLIPTextEncode, CLIPTextEncode, UnetLoaderGGUF, DualCLIPLoaderGGUF, SamplerCustomAdvanced, LTXVSeparateAVLatent, VHS_VideoCombine, VAEDecodeTiled]
 patterns: []
-missing: [CR Text, CR Text, LayerUtility: ImageScaleByAspectRatio V2, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX-2.3+GGUF量化版生视频_2033507189314297858.json
@@ -80,21 +79,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **77%**（36/47）
+覆盖率 **94%**（44/47）
 
-**有卡**：`KSamplerSelect`、`RandomNoise`、`CFGGuider`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`LTXVPreprocess`、`LTXVImgToVideoConditionOnly`、`VAELoader`、`LTXVScheduler`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`INTConstant`、`VAELoaderKJ`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`LoadImage`、`PrimitiveBoolean`、`CLIPTextEncode`、`UnetLoaderGGUF`、`DualCLIPLoaderGGUF`、`VHS_VideoCombine`、`VAEDecodeTiled`
-
-**缺卡**（8）：`CR Text`、`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`CR Prompt Text`
+**有卡**：`KSamplerSelect`、`RandomNoise`、`CFGGuider`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ComfyMathExpression`、`CR Text`、`LTXVPreprocess`、`LTXVImgToVideoConditionOnly`、`VAELoader`、`LTXVScheduler`、`LTXVConcatAVLatent`、`easy cleanGpuUsed`、`LTXVLatentUpsampler`、`INTConstant`、`VAELoaderKJ`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`CR Prompt Text`、`PrimitiveBoolean`、`CLIPTextEncode`、`UnetLoaderGGUF`、`DualCLIPLoaderGGUF`、`VHS_VideoCombine`、`VAEDecodeTiled`
 
 **用到的条目**：VAELoader、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

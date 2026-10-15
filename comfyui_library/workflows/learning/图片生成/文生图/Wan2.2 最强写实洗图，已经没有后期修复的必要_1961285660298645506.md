@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Wan2.2 最强写实洗图，已经没有后期修复的必要_1961285660298645506.json
 hash: f19bfc3978f8e6cd
-coverage: 0.694444
-learned_at: 2026-10-10 20:59:14
+coverage: 0.833333
+learned_at: 2026-10-15 22:27:35
 nodes: [CLIPTextEncode, CLIPLoader, VAELoader, UNETLoader, LoraLoader, LoraLoader, CLIPTextEncode, ModelSamplingSD3, PathchSageAttentionKJ, LoadImage, GetImageSize, KSampler, VAEDecode, EmptyLatentImage, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, PathchSageAttentionKJ, VAEEncode, VAEDecode, LayerUtility: LoadJoyCaptionBeta1Model, CR Text Concatenate, ShowText|pysssss, Note, SaveImage, SaveImage, PreviewImage, PreviewImage, CR Text, LayerUtility: JoyCaptionBeta1, KSampler, Fast Groups Bypasser (rgthree), Note, LoraLoader, LoadImage, LayerUtility: ImageScaleByAspectRatio V2]
 patterns: [text_to_image, image_to_image, lora]
-missing: [CR Text, CR Text Concatenate, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: JoyCaptionBeta1, LayerUtility: LoadJoyCaptionBeta1Model]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.5000000000000001, "height": 512, "lora_name": "Wan2.1_T2V_14B_FusionX_LoRA.safetensors", "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 915923548774129, "steps": 20, "strength_clip": 0.4000000000000001, "strength_model": 0.4000000000000001, "width": 512}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Wan2.2 最强写实洗图，已经没有后期修复的必要_1961285660298645506.json
@@ -21,27 +20,29 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（36 个）：
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader`
-- `LoraLoader`
-- `LoraLoader`
-- `CLIPTextEncode`
+- `UNETLoader` ★核心
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
+- `CLIPTextEncode` ★核心
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
 - `LoadImage`
 - `GetImageSize`
-- `KSampler`
-- `VAEDecode`
-- `EmptyLatentImage`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `ModelSamplingSD3`
 - `PathchSageAttentionKJ`
-- `VAEEncode`
-- `VAEDecode`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
 - `LayerUtility: LoadJoyCaptionBeta1Model`
 - `CR Text Concatenate`
 - `ShowText|pysssss`
@@ -52,10 +53,10 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 - `PreviewImage`
 - `CR Text`
 - `LayerUtility: JoyCaptionBeta1`
-- `KSampler`
+- `KSampler` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `Note`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `LoadImage`
 - `LayerUtility: ImageScaleByAspectRatio V2`
 
@@ -63,31 +64,23 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `0.5000000000000001`
-- `height` = `512`
 - `lora_name` = `Wan2.1_T2V_14B_FusionX_LoRA.safetensors`
-- `sampler_name` = `res_2s`
-- `scheduler` = `bong_tangent`
+- `strength_model` = `0.4000000000000001`
+- `strength_clip` = `0.4000000000000001`
 - `seed` = `915923548774129`
 - `steps` = `20`
-- `strength_clip` = `0.4000000000000001`
-- `strength_model` = `0.4000000000000001`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `bong_tangent`
+- `denoise` = `0.5000000000000001`
 - `width` = `512`
+- `height` = `512`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **69%**（25/36）
+覆盖率 **83%**（30/36）
 
-**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`LoraLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`LoadImage`、`GetImageSize`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`VAEEncode`、`LayerUtility: LoadJoyCaptionBeta1Model`、`CR Text Concatenate`、`ShowText|pysssss`、`Note`、`SaveImage`
+**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`LoraLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`LoadImage`、`GetImageSize`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`VAEEncode`、`LayerUtility: LoadJoyCaptionBeta1Model`、`CR Text Concatenate`、`SaveImage`、`CR Text`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: ImageScaleByAspectRatio V2`
 
-**缺卡**（5）：`CR Text`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: LoadJoyCaptionBeta1Model`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: JoyCaptionBeta1` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: LoadJoyCaptionBeta1Model` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage、UNETLoader

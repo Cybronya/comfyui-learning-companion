@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltx2.3 导演流_2059463273585664002.json
 hash: 3eb4e357d0b26f1e
-coverage: 0.926829
-learned_at: 2026-10-11 19:49:40
+coverage: 0.95122
+learned_at: 2026-10-15 22:45:21
 nodes: [VAELoaderKJ, VAELoaderKJ, VAELoaderKJ, LTX2SamplingPreviewOverride, DualCLIPLoader, BasicScheduler, SamplerCustomAdvanced, KSamplerSelect, LTXVConcatAVLatent, LTXDirectorGuide, CFGGuider, LTXVConditioning, ConditioningZeroOut, LTXVSeparateAVLatent, RandomNoise, LTXVCropGuides, LTXDirectorGuide, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LatentUpscaleModelLoader, LTXVSeparateAVLatent, LTXVLatentUpsampler, BasicScheduler, LTXVConcatAVLatent, LTXVCropGuides, LTXVAudioVAEDecode, LayerUtility: PurgeVRAM, ComfyMathExpression, VAEDecodeTiled, VHS_VideoCombine, Reroute, LTX2_NAG, CLIPTextEncode, Note, ManualSigmas, LTXDirector, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [LayerUtility: PurgeVRAM]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Ltx2.3 导演流_2059463273585664002.json
@@ -67,14 +66,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **93%**（38/41）
+覆盖率 **95%**（39/41）
 
-**有卡**：`VAELoaderKJ`、`LTX2SamplingPreviewOverride`、`DualCLIPLoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXDirectorGuide`、`CFGGuider`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVSeparateAVLatent`、`RandomNoise`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`ComfyMathExpression`、`VAEDecodeTiled`、`VHS_VideoCombine`、`LTX2_NAG`、`CLIPTextEncode`、`ManualSigmas`、`LTXDirector`、`UNETLoader`、`LoraLoaderModelOnly`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM`
+**有卡**：`VAELoaderKJ`、`LTX2SamplingPreviewOverride`、`DualCLIPLoader`、`BasicScheduler`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXDirectorGuide`、`CFGGuider`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVSeparateAVLatent`、`RandomNoise`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`LayerUtility: PurgeVRAM`、`ComfyMathExpression`、`VAEDecodeTiled`、`VHS_VideoCombine`、`LTX2_NAG`、`CLIPTextEncode`、`ManualSigmas`、`LTXDirector`、`UNETLoader`、`LoraLoaderModelOnly`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识

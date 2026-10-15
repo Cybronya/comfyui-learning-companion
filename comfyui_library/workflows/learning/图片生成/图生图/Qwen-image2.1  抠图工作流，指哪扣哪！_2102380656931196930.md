@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json
 hash: 59411a240e558f9c
-coverage: 0.769231
-learned_at: 2026-10-10 20:48:09
+coverage: 0.846154
+learned_at: 2026-10-15 22:25:24
 nodes: [UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, SaveImage, KSampler, 孤海注释, VAEDecode, CR Text, LoadImage, EmptyLatentImage, ComfySwitchNode]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 560, "sampler_name": "euler", "scheduler": "simple", "seed": 766356591687185, "steps": 25, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen-image2.1  抠图工作流，指哪扣哪！_2102380656931196930.json
@@ -52,14 +51,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **77%**（10/13）
+覆盖率 **85%**（11/13）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`SaveImage`、`KSampler`、`VAEDecode`、`LoadImage`、`EmptyLatentImage`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`SaveImage`、`KSampler`、`VAEDecode`、`CR Text`、`LoadImage`、`EmptyLatentImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

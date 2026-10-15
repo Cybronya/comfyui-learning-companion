@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MIniMax H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成方案_2105105571027443713.json
 hash: 830352d2cd26c89c
-coverage: 0.916667
-learned_at: 2026-10-11 22:12:36
+coverage: 0.930556
+learned_at: 2026-10-15 22:45:26
 nodes: [CLIPLoader, BasicScheduler, VAELoader, LoadImage, LoadImage, Int, RH_Screenwriter, MiniMaxH3VDNRuntimeAuditT8Advanced, ComfyMathExpression, MiniMaxH3MemoryEfficientSageAttentionPatch, ModelAttentionBackend, WujiCleaner, MiniMaxH3SemanticBridgeConfigT8, WujiH3PromptEnhancer, MiniMaxH3HyperVAE2xLoaderEXPT8, VAEDecode, MiniMaxH3OutputTrimT8, WujiCleaner, MiniMaxH3AVDecodeT8, LoraLoaderModelOnly, CM_IntToFloat, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveStringMultiline, List of strings [Crystools], LoraLoaderModelOnly, MiniMaxH3AudioConditioningT8, VHS_VideoCombine, BlockSparseAttention, ResolutionSelector, MiniMaxH3SemanticBridgeApplyT8, ConditioningZeroOut, KSamplerSelect, H3SigmaRefiner, WujiCleaner, MiniMaxH3ChunkFeedForwardT8Advanced, LoraLoaderBypassModelOnly, SelfLiftAvatarH3Sampler, UNETLoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
-missing: [List of strings [Crystools]]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MIniMax H3+DSW+LMS+SelfLift+VDN+SLA极速高动态武戏文戏视频生成方案_2105105571027443713.json
@@ -114,11 +114,9 @@ discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该�
 
 ## 知识
 
-覆盖率 **92%**（66/72）
+覆盖率 **93%**（67/72）
 
-**有卡**：`CLIPLoader`、`BasicScheduler`、`VAELoader`、`LoadImage`、`Int`、`RH_Screenwriter`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`WujiCleaner`、`MiniMaxH3SemanticBridgeConfigT8`、`WujiH3PromptEnhancer`、`MiniMaxH3HyperVAE2xLoaderEXPT8`、`VAEDecode`、`MiniMaxH3OutputTrimT8`、`MiniMaxH3AVDecodeT8`、`LoraLoaderModelOnly`、`CM_IntToFloat`、`MiniMaxH3AudioConditioningT8`、`VHS_VideoCombine`、`BlockSparseAttention`、`ResolutionSelector`、`MiniMaxH3SemanticBridgeApplyT8`、`ConditioningZeroOut`、`KSamplerSelect`、`H3SigmaRefiner`、`MiniMaxH3ChunkFeedForwardT8Advanced`、`LoraLoaderBypassModelOnly`、`SelfLiftAvatarH3Sampler`、`UNETLoader`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
-
-**缺卡**（1）：`List of strings [Crystools]`
+**有卡**：`CLIPLoader`、`BasicScheduler`、`VAELoader`、`LoadImage`、`Int`、`RH_Screenwriter`、`MiniMaxH3VDNRuntimeAuditT8Advanced`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`WujiCleaner`、`MiniMaxH3SemanticBridgeConfigT8`、`WujiH3PromptEnhancer`、`MiniMaxH3HyperVAE2xLoaderEXPT8`、`VAEDecode`、`MiniMaxH3OutputTrimT8`、`MiniMaxH3AVDecodeT8`、`LoraLoaderModelOnly`、`CM_IntToFloat`、`List of strings [Crystools]`、`MiniMaxH3AudioConditioningT8`、`VHS_VideoCombine`、`BlockSparseAttention`、`ResolutionSelector`、`MiniMaxH3SemanticBridgeApplyT8`、`ConditioningZeroOut`、`KSamplerSelect`、`H3SigmaRefiner`、`MiniMaxH3ChunkFeedForwardT8Advanced`、`LoraLoaderBypassModelOnly`、`SelfLiftAvatarH3Sampler`、`UNETLoader`、`KSampler`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
 
@@ -129,5 +127,4 @@ discoveries: [次要节点 `List of strings [Crystools]` 知识库中没有该�
 
 ## 学习发现
 
-- 次要节点 `List of strings [Crystools]` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

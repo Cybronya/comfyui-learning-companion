@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑文生图图生图处理工作流_2102089735173926914.json
 hash: 74536be18f21f04b
-coverage: 0.860465
-learned_at: 2026-10-10 20:48:07
+coverage: 0.906977
+learned_at: 2026-10-15 22:25:15
 nodes: [KSampler, QwenImage21Cache, UNETLoader, VAEDecode, LoadImage, LoadImage, CLIPLoader, LoadImage, TextEncodeQwenImage21, LoadImage, SaveImage, CR Text, CR Text, VAELoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Text, CR Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1多图编辑文生图图生图处理工作流_2102089735173926914.json
@@ -85,11 +85,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **86%**（37/43）
+覆盖率 **91%**（39/43）
 
-**有卡**：`KSampler`、`QwenImage21Cache`、`UNETLoader`、`VAEDecode`、`LoadImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`SaveImage`、`VAELoader`、`LoraLoaderModelOnly`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（2）：`CR Text`、`CR Text`
+**有卡**：`KSampler`、`QwenImage21Cache`、`UNETLoader`、`VAEDecode`、`LoadImage`、`CLIPLoader`、`TextEncodeQwenImage21`、`SaveImage`、`CR Text`、`VAELoader`、`LoraLoaderModelOnly`、`EmptyLatentImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -100,6 +98,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

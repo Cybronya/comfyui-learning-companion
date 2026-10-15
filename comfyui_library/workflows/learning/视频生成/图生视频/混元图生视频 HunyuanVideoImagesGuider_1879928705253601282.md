@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/混元图生视频 HunyuanVideoImagesGuider_1879928705253601282.json
 hash: f07b410e30f40f4e
-coverage: 0.75
-learned_at: 2026-10-12 20:12:51
+coverage: 0.875
+learned_at: 2026-10-15 22:43:05
 nodes: [CR Text Replace, Reroute, RandomNoise, CLIPTextEncode, VAEDecodeTiled, KSamplerSelect, Note, Florence2Run, Florence2ModelLoader, SamplerCustomAdvanced, VAEEncodeTiled, FluxGuidance, UNETLoader, VAELoader, DualCLIPLoader, BasicScheduler, BasicGuider, StringFunction|pysssss, ModelSamplingSD3, LoadImage, RH_Captioner, ShowText|pysssss, VHS_VideoCombine, Hunyuan Video Image To Guider]
 patterns: []
-missing: [CR Text Replace, Hunyuan Video Image To Guider, StringFunction|pysssss]
-discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `Hunyuan Video Image To Guider` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/图生视频/混元图生视频 HunyuanVideoImagesGuider_1879928705253601282.json
@@ -50,16 +49,8 @@ discoveries: [次要节点 `CR Text Replace` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **75%**（18/24）
+覆盖率 **88%**（21/24）
 
-**有卡**：`RandomNoise`、`CLIPTextEncode`、`VAEDecodeTiled`、`KSamplerSelect`、`Florence2Run`、`Florence2ModelLoader`、`SamplerCustomAdvanced`、`VAEEncodeTiled`、`FluxGuidance`、`UNETLoader`、`VAELoader`、`DualCLIPLoader`、`BasicScheduler`、`BasicGuider`、`ModelSamplingSD3`、`LoadImage`、`RH_Captioner`、`VHS_VideoCombine`
-
-**缺卡**（3）：`CR Text Replace`、`Hunyuan Video Image To Guider`、`StringFunction|pysssss`
+**有卡**：`CR Text Replace`、`RandomNoise`、`CLIPTextEncode`、`VAEDecodeTiled`、`KSamplerSelect`、`Florence2Run`、`Florence2ModelLoader`、`SamplerCustomAdvanced`、`VAEEncodeTiled`、`FluxGuidance`、`UNETLoader`、`VAELoader`、`DualCLIPLoader`、`BasicScheduler`、`BasicGuider`、`StringFunction|pysssss`、`ModelSamplingSD3`、`LoadImage`、`RH_Captioner`、`VHS_VideoCombine`、`Hunyuan Video Image To Guider`
 
 **用到的条目**：VAELoader、UNETLoader、CLIPTextEncode、LoadImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced、VAEDecodeTiled
-
-## 学习发现
-
-- 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `Hunyuan Video Image To Guider` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识

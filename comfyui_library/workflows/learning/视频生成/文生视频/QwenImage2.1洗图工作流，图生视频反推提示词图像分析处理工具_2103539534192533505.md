@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505.json
 hash: 2e3d017f568891e5
-coverage: 0.829787
-learned_at: 2026-10-11 22:12:46
+coverage: 0.87234
+learned_at: 2026-10-15 22:46:51
 nodes: [CLIPLoader, VAELoader, EmptyLatentImage, GetImageSize, MathExpression|pysssss, MathExpression|pysssss, UNETLoader, LoraLoaderModelOnly, TextEncodeQwenImage21, JWStringConcat, easy showAnything, JWString, RHLLMChatNode, KSampler, LoadImage, VAEDecode, Image Comparer (rgthree), SaveImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [MathExpression|pysssss, MathExpression|pysssss]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/QwenImage2.1洗图工作流，图生视频反推提示词图像分析处理工具_2103539534192533505.json
@@ -89,11 +89,9 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **83%**（39/47）
+覆盖率 **87%**（41/47）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`GetImageSize`、`UNETLoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`JWStringConcat`、`JWString`、`RHLLMChatNode`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（2）：`MathExpression|pysssss`、`MathExpression|pysssss`
+**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`GetImageSize`、`MathExpression|pysssss`、`UNETLoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`JWStringConcat`、`JWString`、`RHLLMChatNode`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -104,6 +102,4 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 学习发现
 
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

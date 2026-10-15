@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan 2.1 ComfyUI 首尾帧+故事版驱动工作流_1926598014440251394.json
 hash: 61e3c34a8caec0a8
-coverage: 0.576923
-learned_at: 2026-10-10 23:06:06
+coverage: 0.730769
+learned_at: 2026-10-15 22:47:05
 nodes: [CLIPVisionEncode, VHS_VideoCombine, Reroute, CLIPVisionEncode, LoadImage, LoadImage, Reroute, VAELoader, Anything Everywhere, VAEDecode, ImageResize+, ImageResize+, UNETLoader, CLIPLoader, CLIPTextEncode, CLIPTextEncode, Note, Note, Note, WanFirstLastFrameToVideo, ModelSamplingSD3, Note, easy clearCacheAll, CLIPVisionLoader, Load Lora, KSampler]
 patterns: []
-missing: [easy clearCacheAll, ImageResize+, ImageResize+, Load Lora]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 666670, "steps": 8}
-discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `Load Lora` 仅有 LoRA 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Wan 2.1 ComfyUI 首尾帧+故事版驱动工作流_1926598014440251394.json
@@ -63,11 +63,9 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **58%**（15/26）
+覆盖率 **73%**（19/26）
 
-**有卡**：`CLIPVisionEncode`、`VHS_VideoCombine`、`LoadImage`、`VAELoader`、`VAEDecode`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`WanFirstLastFrameToVideo`、`ModelSamplingSD3`、`CLIPVisionLoader`、`KSampler`
-
-**缺卡**（4）：`easy clearCacheAll`、`ImageResize+`、`ImageResize+`、`Load Lora`
+**有卡**：`CLIPVisionEncode`、`VHS_VideoCombine`、`LoadImage`、`VAELoader`、`VAEDecode`、`ImageResize+`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`WanFirstLastFrameToVideo`、`ModelSamplingSD3`、`easy clearCacheAll`、`CLIPVisionLoader`、`Load Lora`、`KSampler`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CLIPVisionEncode
 
@@ -78,8 +76,4 @@ discoveries: [次要节点 `easy clearCacheAll` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `Load Lora` 仅有 LoRA 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

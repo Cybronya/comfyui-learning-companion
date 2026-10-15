@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AA--音画同步视频-LTX2.0文生视频+放大+插帧_2008918263912206338.json
 hash: c3d467c8eb8c3180
-coverage: 0.714286
-learned_at: 2026-10-11 03:07:08
+coverage: 0.730159
+learned_at: 2026-10-15 22:43:58
 nodes: [LTXVCropGuides, LTXVSeparateAVLatent, KSamplerSelect, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LTXVConcatAVLatent, SamplerCustomAdvanced, ManualSigmas, KSamplerSelect, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, RandomNoise, PrimitiveNode, EmptyLTXVLatentVideo, LoraLoaderModelOnly, LTXVAudioVAEDecode, VAEDecodeTiled, PrimitiveInt, GetImageSize, ImageScaleBy, CLIPTextEncode, LTXVConditioning, RandomNoise, LatentUpscaleModelLoader, LTXVLatentUpsampler, CFGGuider, LTXVScheduler, CreateVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SaveVideo, VAEDecode, MarkdownNote, Note, MarkdownNote, Note, RIFE VFI, JWInteger, JWInteger, VHS_VideoInfo, FlashVSRNode, easy showAnything, easy showAnything, easy showAnything, easy showAnything, CM_IntToFloat, CM_FloatBinaryOperation, VHS_LoadVideo, VHS_VideoCombine, MarkdownNote, Note, EmptyImage, LTXVEmptyLatentAudio, PrimitiveFloat, PrimitiveInt, Fast Groups Bypasser (rgthree), CFGGuider, Note, Note, CLIPTextEncode]
 patterns: []
-missing: [RIFE VFI]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/AA--音画同步视频-LTX2.0文生视频+放大+插帧_2008918263912206338.json
@@ -97,14 +96,8 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **71%**（45/63）
+覆盖率 **73%**（46/63）
 
-**有卡**：`LTXVCropGuides`、`LTXVSeparateAVLatent`、`KSamplerSelect`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`ManualSigmas`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LoraLoaderModelOnly`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`GetImageSize`、`ImageScaleBy`、`CLIPTextEncode`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`CFGGuider`、`LTXVScheduler`、`CreateVideo`、`SaveVideo`、`VAEDecode`、`JWInteger`、`VHS_VideoInfo`、`FlashVSRNode`、`CM_IntToFloat`、`CM_FloatBinaryOperation`、`VHS_LoadVideo`、`VHS_VideoCombine`、`EmptyImage`、`LTXVEmptyLatentAudio`
-
-**缺卡**（1）：`RIFE VFI`
+**有卡**：`LTXVCropGuides`、`LTXVSeparateAVLatent`、`KSamplerSelect`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`ManualSigmas`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LoraLoaderModelOnly`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`GetImageSize`、`ImageScaleBy`、`CLIPTextEncode`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`CFGGuider`、`LTXVScheduler`、`CreateVideo`、`SaveVideo`、`VAEDecode`、`RIFE VFI`、`JWInteger`、`VHS_VideoInfo`、`FlashVSRNode`、`CM_IntToFloat`、`CM_FloatBinaryOperation`、`VHS_LoadVideo`、`VHS_VideoCombine`、`EmptyImage`、`LTXVEmptyLatentAudio`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识

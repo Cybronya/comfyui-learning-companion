@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0全能参考视频9参考图真人版_2045156400086650881.json
 hash: ce95c6cedc1fb692
 coverage: 1
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadVideo, RH_RhartVideoSparkvideo20MultimodalVideo, LoadAudio, LoadAudio]
 patterns: []
 missing: []
@@ -43,4 +43,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`LoadVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`LoadAudio`
 
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load

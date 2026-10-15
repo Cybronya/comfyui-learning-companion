@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.5 Director 2.0 导演台视频生成工作流_2092109248682618881.json
 hash: d5f9e8d1ad8e80eb
-coverage: 0.740741
-learned_at: 2026-10-11 21:19:41
+coverage: 0.814815
+learned_at: 2026-10-15 22:44:35
 nodes: [LTXVCropGuides, MarkdownNote, MarkdownNote, RandomNoise, SamplerCustomAdvanced, LTXVAudioVAEDecode, LTXVSeparateAVLatent, LTXVConditioning, ConditioningZeroOut, LTXVConcatAVLatent, KSamplerSelect, Power Lora Loader (rgthree), MarkdownNote, MarkdownNote, LTXVChunkFeedForward, BasicScheduler, CFGGuider, LTXDirectorGuide, VAEDecodeTiled, MarkdownNote, DiffusionModelLoaderKJ, CLIPLoader, VAELoader, VAELoader, LTXDirector, Label (rgthree), VHS_VideoCombine]
 patterns: []
-missing: [Label (rgthree), Power Lora Loader (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX 2.5 Director 2.0 导演台视频生成工作流_2092109248682618881.json
@@ -53,15 +52,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **74%**（20/27）
+覆盖率 **81%**（22/27）
 
-**有卡**：`LTXVCropGuides`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVConcatAVLatent`、`KSamplerSelect`、`LTXVChunkFeedForward`、`BasicScheduler`、`CFGGuider`、`LTXDirectorGuide`、`VAEDecodeTiled`、`DiffusionModelLoaderKJ`、`CLIPLoader`、`VAELoader`、`LTXDirector`、`VHS_VideoCombine`
-
-**缺卡**（2）：`Label (rgthree)`、`Power Lora Loader (rgthree)`
+**有卡**：`LTXVCropGuides`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVConcatAVLatent`、`KSamplerSelect`、`Power Lora Loader (rgthree)`、`LTXVChunkFeedForward`、`BasicScheduler`、`CFGGuider`、`LTXDirectorGuide`、`VAEDecodeTiled`、`DiffusionModelLoaderKJ`、`CLIPLoader`、`VAELoader`、`LTXDirector`、`Label (rgthree)`、`VHS_VideoCombine`
 
 **用到的条目**：VAELoader、CLIPLoader、ConditioningZeroOut、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/qwen_image_edit_plus_Miniature_Worlds_1977407979249127426.json
 hash: f52f0fa815518007
 coverage: 0.923077
-learned_at: 2026-10-10 20:59:25
+learned_at: 2026-10-15 22:27:55
 nodes: [VAEDecode, PreviewAny, SaveImage, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, CLIPTextEncode, EmptyLatentImage, KSampler, TextEncodeQwenImageEditPlus, AILab_QwenVL, LoraLoaderModelOnly]
 patterns: [text_to_image]
 missing: []
@@ -22,40 +22,44 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（13 个）：
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewAny`
 - `SaveImage`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `CLIPTextEncode`
-- `EmptyLatentImage`
-- `KSampler`
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
 - `TextEncodeQwenImageEditPlus`
 - `AILab_QwenVL`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1920`
 - `height` = `1080`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `1092637010212909`
 - `steps` = `8`
-- `width` = `1920`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **92%**（12/13）
 
-**有卡**：`VAEDecode`、`PreviewAny`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImageEditPlus`、`AILab_QwenVL`
+**有卡**：`VAEDecode`、`SaveImage`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`TextEncodeQwenImageEditPlus`、`AILab_QwenVL`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader
 
 ## 参数体检
 

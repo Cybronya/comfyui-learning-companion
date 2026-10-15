@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/OCR定位结合ProPainter光流修复_视频去水印后FlashVSR超分翻倍_2098208580662026241.json
 hash: b872d7c620c9a6fb
 coverage: 0.888889
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:50
 nodes: [VHS_LoadVideo, SubtitleDetectorRapidOCR, SubtitleEraserProPainter, FlashVSRNode, CreateVideo, SaveVideo, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
 missing: []

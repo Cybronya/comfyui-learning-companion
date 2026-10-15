@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/视频生视频/MiniMax-H3-视频换背景-视频编辑-AI短剧创作.json
 hash: d1052c5f03db2d37
-coverage: 0.758621
-learned_at: 2026-10-10 22:56:34
+coverage: 0.793103
+learned_at: 2026-10-15 22:49:16
 nodes: [PrimitiveFloat, SamplerCustomAdvanced, GetNode, ImageConcanate, LayerUtility: PurgeVRAM V2, BasicScheduler, VAEDecode, VAEDecodeAudio, VHS_VideoCombine, VHS_VideoCombine, SetNode, VRAM_Debug, RandomNoise, SetNode, GetNode, VAELoader, CLIPLoader, BasicGuider, KSamplerSelect, ComfyMathExpression, PathchSageAttentionKJ, LoraLoaderModelOnly, UNETLoader, ResolutionSelector, MiniMaxH3MemoryEfficientSageAttentionPatch, VAELoader, MiniMaxH3ReferenceToVideo, VHS_LoadVideo, PrimitiveStringMultiline]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/视频生视频/MiniMax-H3-视频换背景-视频编辑-AI短剧创作.json
@@ -55,14 +54,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **76%**（22/29）
+覆盖率 **79%**（23/29）
 
-**有卡**：`SamplerCustomAdvanced`、`ImageConcanate`、`BasicScheduler`、`VAEDecode`、`VAEDecodeAudio`、`VHS_VideoCombine`、`VRAM_Debug`、`RandomNoise`、`VAELoader`、`CLIPLoader`、`BasicGuider`、`KSamplerSelect`、`ComfyMathExpression`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`ResolutionSelector`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxH3ReferenceToVideo`、`VHS_LoadVideo`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM V2`
+**有卡**：`SamplerCustomAdvanced`、`ImageConcanate`、`LayerUtility: PurgeVRAM V2`、`BasicScheduler`、`VAEDecode`、`VAEDecodeAudio`、`VHS_VideoCombine`、`VRAM_Debug`、`RandomNoise`、`VAELoader`、`CLIPLoader`、`BasicGuider`、`KSamplerSelect`、`ComfyMathExpression`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`ResolutionSelector`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxH3ReferenceToVideo`、`VHS_LoadVideo`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、UNETLoader、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识

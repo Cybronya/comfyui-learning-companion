@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3视频扩展_2050800965619601409.json
 hash: 317f1e661b80b0ff
-coverage: 0.730769
-learned_at: 2026-10-11 19:49:40
+coverage: 0.942308
+learned_at: 2026-10-15 22:45:14
 nodes: [VAELoaderKJ, LTX2_NAG, VisualizeSigmasKJ, VAELoader, LTX2SamplingPreviewOverride, KSamplerSelect, LTXVConditioning, easy getNode, LTXVSeparateAVLatent, easy getNode, LTXVAudioVAEDecode, VAEDecode, DualCLIPLoader, ConditioningZeroOut, easy getNode, BasicScheduler, VAELoaderKJ, VHS_VideoCombine, SamplerCustom, MarkdownNote, UNETLoader, easy getNode, easy setNode, easy setNode, easy setNode, easy setNode, CLIPTextEncode, PathchSageAttentionKJ, ModelSamplingSD3, LoadImage, LTXVConcatAVLatent, VRAMReserver, CLIPTextEncode, LTXVAudioVideoMask, CM_IntToFloat, DF_Int_to_Float, VAEEncodeTiled, LTXVAudioVAEEncode, easy getNode, easy getNode, VHS_VideoInfoLoaded, easy showAnything, SimpleMath+, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveInt, VHS_LoadVideo, Int, Int, Int, LoadImage, LoadImage]
 patterns: []
-missing: [SimpleMath+, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, easy setNode]
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3视频扩展_2050800965619601409.json
@@ -78,24 +77,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **73%**（38/52）
+覆盖率 **94%**（49/52）
 
-**有卡**：`VAELoaderKJ`、`LTX2_NAG`、`VisualizeSigmasKJ`、`VAELoader`、`LTX2SamplingPreviewOverride`、`KSamplerSelect`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`DualCLIPLoader`、`ConditioningZeroOut`、`BasicScheduler`、`VHS_VideoCombine`、`SamplerCustom`、`UNETLoader`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoadImage`、`LTXVConcatAVLatent`、`VRAMReserver`、`LTXVAudioVideoMask`、`CM_IntToFloat`、`DF_Int_to_Float`、`VAEEncodeTiled`、`LTXVAudioVAEEncode`、`VHS_VideoInfoLoaded`、`LoraLoaderModelOnly`、`VHS_LoadVideo`、`Int`
-
-**缺卡**（11）：`SimpleMath+`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`
+**有卡**：`VAELoaderKJ`、`LTX2_NAG`、`VisualizeSigmasKJ`、`VAELoader`、`LTX2SamplingPreviewOverride`、`KSamplerSelect`、`LTXVConditioning`、`easy getNode`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`DualCLIPLoader`、`ConditioningZeroOut`、`BasicScheduler`、`VHS_VideoCombine`、`SamplerCustom`、`UNETLoader`、`easy setNode`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoadImage`、`LTXVConcatAVLatent`、`VRAMReserver`、`LTXVAudioVideoMask`、`CM_IntToFloat`、`DF_Int_to_Float`、`VAEEncodeTiled`、`LTXVAudioVAEEncode`、`VHS_VideoInfoLoaded`、`SimpleMath+`、`LoraLoaderModelOnly`、`VHS_LoadVideo`、`Int`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识

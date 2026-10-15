@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3 +ID LORA 自定义音频工作流-v2_2040424730452303873.json
 hash: 4a4063284bec53be
-coverage: 0.877193
-learned_at: 2026-10-11 19:49:44
+coverage: 0.929825
+learned_at: 2026-10-15 22:47:22
 nodes: [VAELoaderKJ, VAELoaderKJ, Reroute, CLIPTextEncode, RandomNoise, CFGGuider, SamplerCustomAdvanced, LTXVConditioning, SamplerCustomAdvanced, PrimitiveInt, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, RandomNoise, CFGGuider, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVCropGuides, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, LTXVSeparateAVLatent, ComfyMathExpression, LTXVImgToVideoInplace, SimpleMath+, SimpleMath+, SimpleMath+, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, ResizeImageMaskNode, ImageResizeKJv2, QZ_ResolutionPreset, MelBandRoFormerModelLoader, MelBandRoFormerSampler, TrimAudioDuration, CLIPTextEncode, ManualSigmas, KSamplerSelect, LoadImage, ModelMemoryUsageFactorOverride, LoraLoaderModelOnly, DualCLIPLoader, UNETLoader, LatentUpscaleModelLoader, LTX2_NAG, LoadAudio, PreviewAudio, Int, PreviewAudio, easy showAnything, RH_LLMAPI_Pro_Node, SetNode, SaveVideo, LoraLoaderModelOnly, LTXVReferenceAudio]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/ltx2.3 +ID LORA 自定义音频工作流-v2_2040424730452303873.json
@@ -90,16 +89,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **88%**（50/57）
+覆盖率 **93%**（53/57）
 
-**有卡**：`VAELoaderKJ`、`CLIPTextEncode`、`RandomNoise`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVCropGuides`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`ResizeImageMaskNode`、`ImageResizeKJv2`、`QZ_ResolutionPreset`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`TrimAudioDuration`、`LoadImage`、`ModelMemoryUsageFactorOverride`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`UNETLoader`、`LatentUpscaleModelLoader`、`LTX2_NAG`、`LoadAudio`、`PreviewAudio`、`Int`、`RH_LLMAPI_Pro_Node`、`SaveVideo`、`LTXVReferenceAudio`
-
-**缺卡**（3）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`VAELoaderKJ`、`CLIPTextEncode`、`RandomNoise`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVCropGuides`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`ComfyMathExpression`、`SimpleMath+`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`ResizeImageMaskNode`、`ImageResizeKJv2`、`QZ_ResolutionPreset`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`TrimAudioDuration`、`LoadImage`、`ModelMemoryUsageFactorOverride`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`UNETLoader`、`LatentUpscaleModelLoader`、`LTX2_NAG`、`LoadAudio`、`PreviewAudio`、`Int`、`RH_LLMAPI_Pro_Node`、`SaveVideo`、`LTXVReferenceAudio`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

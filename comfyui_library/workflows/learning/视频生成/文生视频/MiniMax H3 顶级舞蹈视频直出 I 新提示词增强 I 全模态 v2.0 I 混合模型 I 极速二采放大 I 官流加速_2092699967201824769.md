@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3 顶级舞蹈视频直出 I 新提示词增强 I 全模态 v2.0 I 混合模型 I 极速二采放大 I 官流加速_2092699967201824769.json
 hash: 1d908fd462cd369b
-coverage: 0.392857
-learned_at: 2026-10-11 21:30:22
+coverage: 0.442857
+learned_at: 2026-10-15 22:45:43
 nodes: [Note, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSamplerSelect, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_LoadVideo, VHS_LoadVideo, VHS_LoadVideo, SetNode, LoadImage, LoadImage, LoadImage, LoadImage, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, ComfyMathExpression, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, BasicGuider, KSamplerSelect, VAEDecodeAudio, SetNode, SetNode, BasicGuider, SetNode, SetNode, VAELoader, SetNode, Note, SamplerCustomAdvanced, VAEDecode, GetImageSize, ComfyMathExpression, SeedVR2, SeedVR2ExtraArgs, SeedVR2BlockSwap, UNETLoader, SplitSigmas, SetNode, easy clearCacheAll, ModelAttentionBackend, SetNode, LTXVConcatAVLatent, LTXVSeparateAVLatent, easy clearCacheAll, SetNode, MarkdownNote, SetNode, SetNode, RTXVideoSuperResolution, GetNode, GetNode, GetNode, GetNode, MarkdownNote, SetNode, SetNode, GetNode, MinimaxH3LatentUpscaler3D, MathExpression|pysssss, LoraLoaderModelOnly, Int, Int, BasicScheduler, RandomNoise, Note, SetNode, GetNode, Fast Groups Bypasser (rgthree), CLIPLoader, llama_cpp_parameters, LoadImage, LoadImage, String Literal, SamplerCustomAdvanced, LoadImage, KepStringLiteral, LoadImage, MiniMaxH3MemoryEfficientSageAttentionPatch, MarkdownNote, MiniMaxChunkFeedForward, MiniMaxLowVRAMAttention, VHS_VideoCombine, LoadImage, Label (rgthree), ResolutionSelector, Float, PrimitiveFloat, Fast Groups Bypasser (rgthree), llama_cpp_instruct_adv, easy showAnything, Label (rgthree), llama_cpp_model_loader, LoadAudioUI, LoadAudioUI, MiniMaxH3ReferenceToVideo, PrimitiveStringMultiline, String Literal, VHS_LoadAudioUpload]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), MathExpression|pysssss, String Literal, String Literal, easy clearCacheAll, easy clearCacheAll]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/MiniMax H3 顶级舞蹈视频直出 I 新提示词增强 I 全模态 v2.0 I 混合模型 I 极速二采放大 I 官流加速_2092699967201824769.json
@@ -166,20 +165,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **39%**（55/140）
+覆盖率 **44%**（62/140）
 
-**有卡**：`VAELoader`、`KSamplerSelect`、`VHS_LoadVideo`、`LoadImage`、`ComfyMathExpression`、`BasicGuider`、`VAEDecodeAudio`、`SamplerCustomAdvanced`、`VAEDecode`、`GetImageSize`、`SeedVR2`、`SeedVR2ExtraArgs`、`SeedVR2BlockSwap`、`UNETLoader`、`SplitSigmas`、`ModelAttentionBackend`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`RTXVideoSuperResolution`、`MinimaxH3LatentUpscaler3D`、`LoraLoaderModelOnly`、`Int`、`BasicScheduler`、`RandomNoise`、`CLIPLoader`、`llama_cpp_parameters`、`KepStringLiteral`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxChunkFeedForward`、`MiniMaxLowVRAMAttention`、`VHS_VideoCombine`、`ResolutionSelector`、`Float`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`LoadAudioUI`、`MiniMaxH3ReferenceToVideo`、`VHS_LoadAudioUpload`
-
-**缺卡**（7）：`Label (rgthree)`、`Label (rgthree)`、`MathExpression|pysssss`、`String Literal`、`String Literal`、`easy clearCacheAll`、`easy clearCacheAll`
+**有卡**：`VAELoader`、`KSamplerSelect`、`VHS_LoadVideo`、`LoadImage`、`ComfyMathExpression`、`BasicGuider`、`VAEDecodeAudio`、`SamplerCustomAdvanced`、`VAEDecode`、`GetImageSize`、`SeedVR2`、`SeedVR2ExtraArgs`、`SeedVR2BlockSwap`、`UNETLoader`、`SplitSigmas`、`easy clearCacheAll`、`ModelAttentionBackend`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`RTXVideoSuperResolution`、`MinimaxH3LatentUpscaler3D`、`MathExpression|pysssss`、`LoraLoaderModelOnly`、`Int`、`BasicScheduler`、`RandomNoise`、`CLIPLoader`、`llama_cpp_parameters`、`String Literal`、`KepStringLiteral`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxChunkFeedForward`、`MiniMaxLowVRAMAttention`、`VHS_VideoCombine`、`Label (rgthree)`、`ResolutionSelector`、`Float`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`LoadAudioUI`、`MiniMaxH3ReferenceToVideo`、`VHS_LoadAudioUpload`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识

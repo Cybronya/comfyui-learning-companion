@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0 多模态参考生成视频・多镜头・音画同步_2039923762027565057.json
 hash: 1ba7fb8782066126
 coverage: 1
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:57
 nodes: [SaveVideo, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo, LoadImage, LoadImage]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`RH_RhartVideoSparkvideo20MultimodalVideo`
 
-**用到的条目**：LoadImage、SaveVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage、CS_Preview_Any

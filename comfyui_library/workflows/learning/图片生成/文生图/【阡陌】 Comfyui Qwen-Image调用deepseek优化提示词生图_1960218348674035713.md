@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json
 hash: 74e217fd6e668fdb
 coverage: 0.5
-learned_at: 2026-10-10 20:59:32
+learned_at: 2026-10-15 22:28:06
 nodes: [Note, LoadImage, SaveImage, Note, Note, ShowText|pysssss, QwenImageNode, RH_LLMAPI_NODE]
 patterns: []
 missing: []
@@ -18,6 +18,8 @@ missing: []
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/【阡陌】 Comfyui Qwen-Image调用deepseek优化提示词生图_1960218348674035713.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（8 个）：
 - `Note`
@@ -33,4 +35,6 @@ missing: []
 
 覆盖率 **50%**（4/8）
 
-**有卡**：`Note`、`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`SaveImage`、`QwenImageNode`、`RH_LLMAPI_NODE`
+
+**用到的条目**：LoadImage、SaveImage、RH_LLMAPI_NODE、QwenImageNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/video_humo.json
 hash: a262fae454036848
 official: true
 coverage: 0.85
-learned_at: 2026-10-10 22:50:10
+learned_at: 2026-10-15 22:24:57
 nodes: [CLIPLoader, VAELoader, CreateVideo, VAEDecode, LoraLoaderModelOnly, UNETLoader, WanHuMoImageToVideo, AudioEncoderEncode, AudioEncoderLoader, MarkdownNote, CLIPTextEncode, KSampler, ModelSamplingSD3, MarkdownNote, MarkdownNote, CLIPTextEncode, SaveVideo, RecordAudio, LoadImage, LoadAudio]
 patterns: []
 missing: []

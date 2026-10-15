@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/海螺 Hailuo2.3  文生视频 图生视频二合一工作流 无水印版_1994702120039424001.json
 hash: 774716692dffae9a
 coverage: 0.833333
-learned_at: 2026-10-11 02:57:41
+learned_at: 2026-10-15 22:48:51
 nodes: [SaveVideo, SaveVideo, LoadImage, RH_Hailuo_Image2Video, RH_Hailuo_Text2Video, Fast Groups Bypasser (rgthree)]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`RH_Hailuo_Image2Video`、`RH_Hailuo_Text2Video`
 
-**用到的条目**：LoadImage、SaveVideo、RH_Hailuo_Text2Video、RH_Hailuo_Image2Video、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage
+**用到的条目**：LoadImage、SaveVideo、RH_Hailuo_Text2Video、RH_Hailuo_Image2Video、sd15-t2i-basic、sd15-t2i-lora、Text、Image2Video

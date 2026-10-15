@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5-智能内容创作分镜助手-JSON输出版V3.4.0_2087546653434802178.json
 hash: 42d6926a0096b06e
 coverage: 0.571429
-learned_at: 2026-10-11 20:53:38
+learned_at: 2026-10-15 22:45:16
 nodes: [llama_cpp_model_loader, llama_cpp_parameters, SaveText, easy showAnything, PrimitiveStringMultiline, llama_cpp_instruct_adv, Note]
 patterns: []
 missing: []

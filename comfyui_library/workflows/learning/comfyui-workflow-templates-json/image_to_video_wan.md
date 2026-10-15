@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/image_to_video_w
 hash: 2dfc90d0972c850e
 official: true
 coverage: 0.933333
-learned_at: 2026-10-10 22:48:40
+learned_at: 2026-10-15 22:24:55
 nodes: [UNETLoader, CLIPLoader, VAELoader, CLIPVisionLoader, CLIPTextEncode, ModelSamplingSD3, CreateVideo, KSampler, VAEDecode, SaveVideo, WanImageToVideo, CLIPVisionEncode, CLIPTextEncode, MarkdownNote, LoadImage]
 patterns: []
 missing: []

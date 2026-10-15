@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
 hash: d82c87d1de120565
-coverage: 0.764706
-learned_at: 2026-10-10 20:59:10
+coverage: 0.882353
+learned_at: 2026-10-15 22:27:29
 nodes: [KSampler, SaveImage, VAELoader, VAEDecode, CLIPLoader, CLIPTextEncode, UNETLoader, CFGNorm, ModelSamplingAuraFlow, LoraLoaderModelOnly, CLIPTextEncode, PrimitiveString, RH_Captioner, Text Concatenate, easy showAnything, LoadImage, CR SDXL Aspect Ratio]
 patterns: []
-missing: [Text Concatenate, CR SDXL Aspect Ratio]
+missing: []
 parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 260801771094525, "steps": 20}
-discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Reality-Simulator真实摄影-QWen-Image_1959596933876756481.json
@@ -21,18 +20,20 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（17 个）：
-- `KSampler`
+- `KSampler` ★核心
 - `SaveImage`
 - `VAELoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CLIPLoader`
-- `CLIPTextEncode`
-- `UNETLoader`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
 - `CFGNorm`
 - `ModelSamplingAuraFlow`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
 - `PrimitiveString`
 - `RH_Captioner`
 - `Text Concatenate`
@@ -42,22 +43,17 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 ## 关键参数
 
-- `cfg` = `2.5`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `260801771094525`
 - `steps` = `20`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **76%**（13/17）
+覆盖率 **88%**（15/17）
 
-**有卡**：`KSampler`、`SaveImage`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`CFGNorm`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`PrimitiveString`、`RH_Captioner`
+**有卡**：`KSampler`、`SaveImage`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`CLIPTextEncode`、`UNETLoader`、`CFGNorm`、`ModelSamplingAuraFlow`、`LoraLoaderModelOnly`、`RH_Captioner`、`Text Concatenate`、`LoadImage`、`CR SDXL Aspect Ratio`
 
-**缺卡**（2）：`Text Concatenate`、`CR SDXL Aspect Ratio`
-
-## 学习发现
-
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage

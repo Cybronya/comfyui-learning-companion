@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3 文生视频_2042444641810784257.json
 hash: b20ed5d563b2453e
-coverage: 0.809524
-learned_at: 2026-10-11 19:49:44
+coverage: 0.857143
+learned_at: 2026-10-15 22:47:22
 nodes: [LTXVScheduler, LTXVConditioning, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, KSamplerSelect, KSampler, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, DualCLIPLoader, PrimitiveFloat, MarkdownNote, CLIPTextEncode, RandomNoise, CLIPTextEncode, LTXVLatentUpsampler, LoraLoaderModelOnly, Reroute, CreateVideo, easy mathInt, easy mathInt, SaveVideo, LTXVCropGuides, CombinationText, PrimitiveInt, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, JjkText, CheckpointLoaderSimple, LoraLoaderModelOnly, LatentUpscaleModelLoader, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, Int, MathExpression_UTK, Int, TextGenerateLTX2Prompt, JjkText, Int]
 patterns: []
-missing: [easy mathInt, easy mathInt]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 628611078184540, "steps": 4, "width": 97}
-discoveries: [次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
 # 视频生成/文生视频/ltx2.3 文生视频_2042444641810784257.json
@@ -83,11 +83,9 @@ discoveries: [次要节点 `easy mathInt` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **81%**（34/42）
+覆盖率 **86%**（36/42）
 
-**有卡**：`LTXVScheduler`、`LTXVConditioning`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`CFGGuider`、`KSamplerSelect`、`KSampler`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVConcatAVLatent`、`DualCLIPLoader`、`CLIPTextEncode`、`RandomNoise`、`LTXVLatentUpsampler`、`LoraLoaderModelOnly`、`CreateVideo`、`SaveVideo`、`LTXVCropGuides`、`CombinationText`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`Int`、`MathExpression_UTK`、`TextGenerateLTX2Prompt`
-
-**缺卡**（2）：`easy mathInt`、`easy mathInt`
+**有卡**：`LTXVScheduler`、`LTXVConditioning`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`CFGGuider`、`KSamplerSelect`、`KSampler`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVConcatAVLatent`、`DualCLIPLoader`、`CLIPTextEncode`、`RandomNoise`、`LTXVLatentUpsampler`、`LoraLoaderModelOnly`、`CreateVideo`、`easy mathInt`、`SaveVideo`、`LTXVCropGuides`、`CombinationText`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`Int`、`MathExpression_UTK`、`TextGenerateLTX2Prompt`
 
 **用到的条目**：KSampler、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
 
@@ -99,7 +97,5 @@ discoveries: [次要节点 `easy mathInt` 知识库中没有该节点类型的�
 
 ## 学习发现
 
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mathInt` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-charac
 hash: 9ca4789954af4432
 official: true
 coverage: 0.777778
-learned_at: 2026-10-10 22:49:20
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, SaveImage, LoadImage, GeminiImage2Node, Reroute, Reroute, ImageStitch, SaveImage, GeminiImage2Node]
 patterns: []
 missing: []
@@ -39,4 +39,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`GeminiImage2Node`、`ImageStitch`
 
-**用到的条目**：LoadImage、SaveImage、ImageStitch、ImageStitch、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node
+**用到的条目**：LoadImage、SaveImage、ImageStitch、ImageStitch、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、Image Save

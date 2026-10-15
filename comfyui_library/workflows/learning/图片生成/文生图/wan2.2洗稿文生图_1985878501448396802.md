@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2洗稿文生图_1985878501448396802.json
 hash: facd291d9dc2fd97
 coverage: 0.904762
-learned_at: 2026-10-10 20:59:27
+learned_at: 2026-10-15 22:27:59
 nodes: [CLIPTextEncode, CLIPTextEncode, VAEDecode, VAELoader, ModelSamplingSD3, SamplerCustomAdvanced, RandomNoise, CFGGuider, BasicScheduler, KSamplerSelect, SamplerCustomAdvanced, DisableNoise, SplitSigmas, WanVideoNAG, SaveImage, EmptyHunyuanLatentVideo, Note, CLIPLoader, LoraLoaderModelOnly, Note, UNETLoader]
 patterns: []
 missing: []
@@ -19,18 +19,20 @@ missing: []
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（21 个）：
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `VAEDecode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
 - `VAELoader`
 - `ModelSamplingSD3`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `RandomNoise`
 - `CFGGuider`
 - `BasicScheduler`
-- `KSamplerSelect`
-- `SamplerCustomAdvanced`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
 - `DisableNoise`
 - `SplitSigmas`
 - `WanVideoNAG`
@@ -38,12 +40,14 @@ missing: []
 - `EmptyHunyuanLatentVideo`
 - `Note`
 - `CLIPLoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `Note`
-- `UNETLoader`
+- `UNETLoader` ★核心
 
 ## 知识
 
 覆盖率 **90%**（19/21）
 
-**有卡**：`CLIPTextEncode`、`VAEDecode`、`VAELoader`、`ModelSamplingSD3`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`BasicScheduler`、`KSamplerSelect`、`DisableNoise`、`SplitSigmas`、`WanVideoNAG`、`SaveImage`、`EmptyHunyuanLatentVideo`、`Note`、`CLIPLoader`、`LoraLoaderModelOnly`
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`VAELoader`、`ModelSamplingSD3`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`BasicScheduler`、`KSamplerSelect`、`DisableNoise`、`SplitSigmas`、`WanVideoNAG`、`SaveImage`、`EmptyHunyuanLatentVideo`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、CFGGuider、KSamplerSelect

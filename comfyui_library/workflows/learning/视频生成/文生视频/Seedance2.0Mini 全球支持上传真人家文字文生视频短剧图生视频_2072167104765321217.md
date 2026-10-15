@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0Mini 全球支持上传真人家文字文生视频短剧图生视频_2072167104765321217.json
 hash: 14a5366ec9d8ff0e
 coverage: 0.894737
-learned_at: 2026-10-11 20:21:30
+learned_at: 2026-10-15 22:46:58
 nodes: [PreviewAny, PreviewAny, LoadVideo, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadAudio, LoadVideo, LoadVideo, LoadImage, SaveVideo, RH_BytedanceSeedance20GlobalMiniMultimodalVideo, LoadImage]
 patterns: []
 missing: []

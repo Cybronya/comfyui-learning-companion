@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1图片编辑_2101946565576454146.json
 hash: 518beb89eb46237e
 coverage: 0.923077
-learned_at: 2026-10-10 20:48:08
+learned_at: 2026-10-15 22:25:20
 nodes: [UNETLoader, VAELoader, EmptyLatentImage, VAEDecode, QwenImage21Cache, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CLIPLoader, ResolutionSelector, easy showAnything, SaveImage, TextGenerateLTX2Prompt, CLIPLoader, BatchImagesNode, TextEncodeQwenImage21, KSampler, SaveImageAdvanced, ComfySwitchNode]
 patterns: []
 missing: []

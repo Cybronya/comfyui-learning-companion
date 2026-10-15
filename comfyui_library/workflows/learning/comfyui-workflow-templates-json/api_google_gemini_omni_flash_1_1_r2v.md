@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_google_gemin
 hash: bb7fdbe1406ee2a0
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:43:58
+learned_at: 2026-10-15 22:24:49
 nodes: [GeminiVideoOmniV2, SaveVideo, LoadImage, MarkdownNote, LoadImage]
 patterns: []
 missing: []

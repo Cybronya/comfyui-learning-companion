@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
 hash: a6989a66b6ce490f
-coverage: 0.736842
-learned_at: 2026-10-10 20:59:08
+coverage: 0.763158
+learned_at: 2026-10-15 22:27:26
 nodes: [MarkdownNote, MarkdownNote, TextEncodeQwenImage21, QwenImage21Cache, PreviewAny, SaveImageAdvanced, SaveImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Label (rgthree), TextGenerate, PrimitiveStringMultiline, EmptyLatentImage, UNETLoader, CLIPLoader, PrimitiveStringMultiline, ComfySwitchNode, SeedNode, CLIPLoader, PrimitiveBoolean, StringConcatenate, Textbox, VAEDecode, ResolutionSelector, ComfySwitchNode, Note, Note, PrimitiveBoolean, VAELoader, KSampler]
 patterns: []
-missing: [Label (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "euler", "scheduler": "simple", "seed": 739404592123668, "steps": 35, "width": 1024}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1全能图像（二合一）+ 提示增强工作流_2102656831150710786.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（38 个）：
 - `MarkdownNote`
@@ -42,8 +43,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `Label (rgthree)`
 - `TextGenerate`
 - `PrimitiveStringMultiline`
-- `EmptyLatentImage`
-- `UNETLoader`
+- `EmptyLatentImage` ★核心
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `PrimitiveStringMultiline`
 - `ComfySwitchNode`
@@ -52,35 +53,31 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 - `PrimitiveBoolean`
 - `StringConcatenate`
 - `Textbox`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `ResolutionSelector`
 - `ComfySwitchNode`
 - `Note`
 - `Note`
 - `PrimitiveBoolean`
 - `VAELoader`
-- `KSampler`
+- `KSampler` ★核心
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1536`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `739404592123668`
 - `steps` = `35`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **74%**（28/38）
+覆盖率 **76%**（29/38）
 
-**有卡**：`MarkdownNote`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`PreviewAny`、`SaveImageAdvanced`、`SaveImage`、`LoadImage`、`Label (rgthree)`、`TextGenerate`、`PrimitiveStringMultiline`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`ComfySwitchNode`、`SeedNode`、`PrimitiveBoolean`
+**有卡**：`TextEncodeQwenImage21`、`QwenImage21Cache`、`SaveImageAdvanced`、`SaveImage`、`LoadImage`、`Label (rgthree)`、`TextGenerate`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`SeedNode`、`PrimitiveBoolean`、`StringConcatenate`、`Textbox`、`VAEDecode`、`ResolutionSelector`、`VAELoader`、`KSampler`
 
-**缺卡**（1）：`Label (rgthree)`
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage

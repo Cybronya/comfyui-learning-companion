@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wanvideo_multitalk_test_01g_1978251602106703873.json
 hash: 447607b3ecb91077
 coverage: 0.933333
-learned_at: 2026-10-10 23:09:59
+learned_at: 2026-10-15 22:47:38
 nodes: [WanVideoDecode, CreateCFGScheduleFloatList, WanVideoSampler, WanVideoImageToVideoEncode, WanVideoModelLoader, VHS_DuplicateImages, WanVideoVAELoader, CLIPVisionLoader, WanVideoContextOptions, WanVideoLoraSelect, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoClipVisionEncode, MultiTalkModelLoader, WanVideoEncode, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, MultiTalkWav2VecEmbeds, DownloadAndLoadWav2VecModel, LoadWanVideoT5TextEncoder, AudioCrop, VHS_VideoCombine, AudioSeparation, Note, INTConstant, WanVideoTextEncode, LoadAudio, LoadImage, ImageResizeKJv2, Note]
 patterns: []
 missing: []

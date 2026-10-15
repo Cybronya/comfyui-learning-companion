@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wanmove_480p.json
 hash: f940baa64b76e110
 official: true
-coverage: 0.75
-learned_at: 2026-10-10 22:50:53
+coverage: 0.8125
+learned_at: 2026-10-15 22:24:59
 nodes: [CreateVideo, SaveVideo, WanMoveVisualizeTracks, GenerateTracks, GenerateTracks, GenerateTracks, WanMoveConcatTrack, WanMoveConcatTrack, ImageScale, SaveVideo, MarkdownNote, LoadImage, PreviewImage, MarkdownNote, WanMoveTracksFromCoords, 0ad975d5-38e9-46ed-a943-85b7c5594051]
 patterns: []
-missing: [0ad975d5-38e9-46ed-a943-85b7c5594051]
-discoveries: [次要节点 `0ad975d5-38e9-46ed-a943-85b7c5594051` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_wanmove_480p.json
@@ -43,14 +42,8 @@ discoveries: [次要节点 `0ad975d5-38e9-46ed-a943-85b7c5594051` 知识库中�
 
 ## 知识
 
-覆盖率 **75%**（12/16）
+覆盖率 **81%**（13/16）
 
-**有卡**：`CreateVideo`、`SaveVideo`、`WanMoveVisualizeTracks`、`GenerateTracks`、`WanMoveConcatTrack`、`ImageScale`、`LoadImage`、`WanMoveTracksFromCoords`
-
-**缺卡**（1）：`0ad975d5-38e9-46ed-a943-85b7c5594051`
+**有卡**：`CreateVideo`、`SaveVideo`、`WanMoveVisualizeTracks`、`GenerateTracks`、`WanMoveConcatTrack`、`ImageScale`、`LoadImage`、`WanMoveTracksFromCoords`、`0ad975d5-38e9-46ed-a943-85b7c5594051`
 
 **用到的条目**：LoadImage、SaveVideo、CreateVideo、ImageScale、GenerateTracks、WanMoveConcatTrack、WanMoveTracksFromCoords、WanMoveVisualizeTracks
-
-## 学习发现
-
-- 次要节点 `0ad975d5-38e9-46ed-a943-85b7c5594051` 知识库中没有该节点类型的任何知识

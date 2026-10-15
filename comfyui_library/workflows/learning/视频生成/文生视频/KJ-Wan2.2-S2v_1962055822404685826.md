@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/KJ-Wan2.2-S2v_1962055822404685826.json
 hash: eb8932e00f7711b2
 coverage: 0.6
-learned_at: 2026-10-10 23:00:04
+learned_at: 2026-10-15 22:44:29
 nodes: [WanVideoDecode, WanVideoTorchCompileSettings, Note, Note, MarkdownNote, WanVideoSetLoRAs, Note, WanVideoSetBlockSwap, SetNode, GetNode, WanVideoEncode, Note, WanVideoEmptyEmbeds, WanVideoEncode, GetNode, VHS_LoadAudio, AudioEncoderEncode, MarkdownNote, ImageResizeKJv2, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, WanVideoAddS2VEmbeds, PreviewAny, ImageResizeKJv2, GetImageSizeAndCount, Reroute, WanVideoSampler, ColorMatch, GetNode, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoVAELoader, WanVideoBlockSwap, MergeAudioMW, Reroute, LoadAudio, PrimitiveNode, VHS_LoadVideo, VHS_LoadVideo, LoadImage, ImageResizeKJv2, GetNode, GetNode, DWPreprocessor, WanVideoTextEncodeCached, INTConstant, INTConstant, VHS_VideoCombine, MelBandRoFormerSampler, MelBandRoFormerModelLoader, NormalizeAudioLoudness, AudioEncoderLoader, GetImageRangeFromBatch, VHS_VideoCombine]
 patterns: []
 missing: []

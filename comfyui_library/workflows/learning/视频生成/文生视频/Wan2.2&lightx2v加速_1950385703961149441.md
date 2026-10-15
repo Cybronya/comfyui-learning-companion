@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2&lightx2v加速_1950385703961149441.json
 hash: da8b0d8daaea6c48
 coverage: 0.947368
-learned_at: 2026-10-10 23:07:05
+learned_at: 2026-10-15 22:47:11
 nodes: [CLIPLoader, CLIPTextEncode, VAELoader, ModelSamplingSD3, ModelSamplingSD3, MarkdownNote, VAEDecode, VHS_VideoCombine, UNETLoader, UNETLoader, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, WanImageToVideo, KSamplerAdvanced, KSamplerAdvanced, CLIPLoader, CLIPTextEncode, VAELoader, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, MarkdownNote, EmptyHunyuanLatentVideo, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, VHS_VideoCombine, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, MarkdownNote, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, UNETLoader, CFGZeroStarAndInit, EmptyHunyuanLatentVideo, WanVideoEnhanceAVideoKJ, KSamplerAdvanced, PathchSageAttentionKJ, PathchSageAttentionKJ, WanVideoEnhanceAVideoKJ, CFGZeroStarAndInit, VAEDecode, VHS_VideoCombine, LoadImage, CLIPTextEncode]
 patterns: []
 missing: []

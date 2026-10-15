@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/自用版 LTX2.5 文生+图生视频多功能整合工作流_2087437987343855618.json
 hash: 945c2c40edcc95f3
-coverage: 0.45098
-learned_at: 2026-10-11 20:53:56
+coverage: 0.5
+learned_at: 2026-10-15 22:48:59
 nodes: [SetNode, SetNode, SetNode, SimpleMath+, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, easy convertAnything, GetNode, GetNode, KSamplerSelect, ManualSigmas, CLIPTextEncode, CLIPTextEncode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, LTXVConcatAVLatent, GetNode, GetNode, GetNode, GetNode, LTXVDualCFGGuider, GetNode, LTXVConditioning, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, RandomNoise, LTXVLatentUpsampler, SamplerCustomAdvanced, RandomNoise, LTXVEmptyLatentAudio, easy convertAnything, GetNode, LTXVAudioVAEDecode, SaveVideo, CreateVideo, SetNode, LTX2SamplingPreviewOverride, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, CreateVideo, RepeatImageBatch, SetNode, RepeatImageBatch, SetNode, GetNode, GetNode, ImageResizeKJv2, GetNode, GetNode, ImageResizeKJv2, Int, Int, SetNode, 忽略多组孤海, 忽略多组孤海, 孤海注释, MarkdownNote, SamplerCustomAdvanced, SetNode, SetNode, LTXVSeparateAVLatent, Seed_, 孤海注释, 孤海注释, UNETLoader, VAELoader, VAELoader, LatentUpscaleModelLoader, PrimitiveStringMultiline, LTXVSeparateAVLatent, VAEDecodeTiled, ResolutionSelector, SetNode, SaveVideo, LTXVConcatAVLatent, ManualSigmas, KSamplerSelect, LTXVDualCFGGuider, LTXVAddGuideMulti, LoadImage, GetNode, CLIPLoader, VAEDecodeTiled, LoadImage, LoraLoaderModelOnly]
 patterns: []
-missing: [SimpleMath+, easy convertAnything, easy convertAnything, 忽略多组孤海, 忽略多组孤海]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/自用版 LTX2.5 文生+图生视频多功能整合工作流_2087437987343855618.json
@@ -135,18 +134,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **45%**（46/102）
+覆盖率 **50%**（51/102）
 
-**有卡**：`KSamplerSelect`、`ManualSigmas`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`LTXVDualCFGGuider`、`LTXVConditioning`、`RandomNoise`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVEmptyLatentAudio`、`LTXVAudioVAEDecode`、`SaveVideo`、`CreateVideo`、`LTX2SamplingPreviewOverride`、`EmptyLTXVLatentVideo`、`RepeatImageBatch`、`ImageResizeKJv2`、`Int`、`LTXVSeparateAVLatent`、`Seed_`、`UNETLoader`、`VAELoader`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`ResolutionSelector`、`LTXVAddGuideMulti`、`LoadImage`、`CLIPLoader`、`LoraLoaderModelOnly`
-
-**缺卡**（5）：`SimpleMath+`、`easy convertAnything`、`easy convertAnything`、`忽略多组孤海`、`忽略多组孤海`
+**有卡**：`SimpleMath+`、`easy convertAnything`、`KSamplerSelect`、`ManualSigmas`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`LTXVDualCFGGuider`、`LTXVConditioning`、`RandomNoise`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVEmptyLatentAudio`、`LTXVAudioVAEDecode`、`SaveVideo`、`CreateVideo`、`LTX2SamplingPreviewOverride`、`EmptyLTXVLatentVideo`、`RepeatImageBatch`、`ImageResizeKJv2`、`Int`、`忽略多组孤海`、`LTXVSeparateAVLatent`、`Seed_`、`UNETLoader`、`VAELoader`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`ResolutionSelector`、`LTXVAddGuideMulti`、`LoadImage`、`CLIPLoader`、`LoraLoaderModelOnly`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识

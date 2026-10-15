@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5多模态视频_2095476090239275009.json
 hash: 29bd6819dcc74f41
 coverage: 0.9
-learned_at: 2026-10-11 21:30:29
+learned_at: 2026-10-15 22:46:59
 nodes: [SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, RH_BytedanceSeedance25TokenMultimodalVideo, LoadAudio, LoadVideo, JjkText]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax 文生视频-Sage Attention 加速版工作流_2084924005185843201.json
 hash: bb79743e4f223f7b
 coverage: 0.809524
-learned_at: 2026-10-10 23:03:38
+learned_at: 2026-10-15 22:46:14
 nodes: [VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, BasicGuider, CLIPLoader, RandomNoise, CreateVideo, ComfyMathExpression, MarkdownNote, MarkdownNote, MarkdownNote, UNETLoader, ResolutionSelector, PrimitiveFloat, SaveVideo, MiniMaxH3ImageToVideo, PathchSageAttentionKJ]
 patterns: []
 missing: []

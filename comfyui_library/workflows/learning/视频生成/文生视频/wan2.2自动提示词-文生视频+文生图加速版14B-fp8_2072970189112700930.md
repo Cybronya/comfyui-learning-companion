@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2自动提示词-文生视频+文生图加速版14B-fp8_2072970189112700930.json
 hash: 518219824b4b3b27
-coverage: 0.632653
-learned_at: 2026-10-11 20:21:32
+coverage: 0.979592
+learned_at: 2026-10-15 22:47:36
 nodes: [SimpleMath+, easy getNode, easy getNode, easy getNode, DF_Integer, easy getNode, easy getNode, easy getNode, KSampler, ImageUpscaleWithModel, VAEEncode, ImageScaleBy, VAEDecode, VAEDecode, ModelPatchTorchSettings, PathchSageAttentionKJ, CLIPTextEncode, easy setNode, easy setNode, easy setNode, easy getNode, SaveImage, WanMoeKSampler, WanMoeKSampler, LoraLoaderModelOnly, CLIPLoader, EmptyHunyuanLatentVideo, easy setNode, VAELoader, easy setNode, EmptyHunyuanLatentVideo, easy getNode, easy getNode, ModelPatchTorchSettings, PathchSageAttentionKJ, LoraLoaderModelOnly, UpscaleModelLoader, CLIPTextEncode, Text Multiline, MuyeTextEditOutput, VAEDecode, VHS_VideoCombine, easy getNode, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, easy showAnything, RH_LLMAPI_NODE]
 patterns: []
-missing: [SimpleMath+, Text Multiline, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, easy setNode, easy setNode]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 4, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.875, "steps": "fixed"}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/wan2.2自动提示词-文生视频+文生图加速版14B-fp8_2072970189112700930.json
@@ -86,11 +86,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **63%**（31/49）
+覆盖率 **98%**（48/49）
 
-**有卡**：`DF_Integer`、`KSampler`、`ImageUpscaleWithModel`、`VAEEncode`、`ImageScaleBy`、`VAEDecode`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`SaveImage`、`WanMoeKSampler`、`LoraLoaderModelOnly`、`CLIPLoader`、`EmptyHunyuanLatentVideo`、`VAELoader`、`UpscaleModelLoader`、`MuyeTextEditOutput`、`VHS_VideoCombine`、`UNETLoader`、`RH_LLMAPI_NODE`
-
-**缺卡**（17）：`SimpleMath+`、`Text Multiline`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`
+**有卡**：`SimpleMath+`、`easy getNode`、`DF_Integer`、`KSampler`、`ImageUpscaleWithModel`、`VAEEncode`、`ImageScaleBy`、`VAEDecode`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`easy setNode`、`SaveImage`、`WanMoeKSampler`、`LoraLoaderModelOnly`、`CLIPLoader`、`EmptyHunyuanLatentVideo`、`VAELoader`、`UpscaleModelLoader`、`Text Multiline`、`MuyeTextEditOutput`、`VHS_VideoCombine`、`UNETLoader`、`RH_LLMAPI_NODE`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、SaveImage、UNETLoader
 
@@ -101,21 +99,4 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

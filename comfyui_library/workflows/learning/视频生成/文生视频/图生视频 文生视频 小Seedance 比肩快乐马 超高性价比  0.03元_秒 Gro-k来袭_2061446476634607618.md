@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/图生视频 文生视频 小Seedance 比肩快乐马 超高性价比  0.03元_秒 Gro-k来袭_2061446476634607618.json
 hash: 9af70faf0bfd17cf
 coverage: 0.636364
-learned_at: 2026-10-11 20:21:35
+learned_at: 2026-10-15 22:48:23
 nodes: [VHS_VideoCombine, LoadImage, GetVideoComponents, easy showAnything, easy showAnything, easy showAnything, RH_RhartVideoGImageToVideo, LoadImage, LoadImage, SaveVideo, JjkText]
 patterns: []
 missing: []
@@ -40,4 +40,4 @@ missing: []
 
 **有卡**：`VHS_VideoCombine`、`LoadImage`、`GetVideoComponents`、`RH_RhartVideoGImageToVideo`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、GetVideoComponents、VHS_VideoCombine、RH_RhartVideoGImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Text
+**用到的条目**：LoadImage、SaveVideo、GetVideoComponents、VHS_VideoCombine、RH_RhartVideoGImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Image Save

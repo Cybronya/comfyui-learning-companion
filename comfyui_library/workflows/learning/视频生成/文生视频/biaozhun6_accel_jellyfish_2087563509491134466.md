@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/biaozhun6_accel_jellyfish_2087563509491134466.json
 hash: a4b7ac99c5a22385
-coverage: 0.819672
-learned_at: 2026-10-11 20:53:49
+coverage: 0.868852
+learned_at: 2026-10-15 22:47:18
 nodes: [VAEDecodeAudio, KSamplerSelect, BasicScheduler, BasicGuider, RandomNoise, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, DF_Int_to_Float, CreateVideo, LoadImage, UNETLoader, VAEDecode, MarkdownNote, MarkdownNote, PrimitiveFloat, ShowAnything|Mie, ShowAnything|Mie, LoadImage, LoadImage, SaveVideo, Note, ImpactSwitch, EasyCache, ResolutionSelector, ComfyMathExpression, LoadAudio, LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, SamplerCustomAdvanced, PathchSageAttentionKJ, CLIPLoader, VAELoader, VAELoader, PrimitiveFloat, Note, MiniMaxH3ReferenceToVideo, GetVideoComponents, GetVideoComponents, GetVideoComponents, LoadVideo, LoadVideo, LoadVideo, ImpactSwitch, CR Prompt Text]
 patterns: []
-missing: [ShowAnything|Mie, ShowAnything|Mie, CR Prompt Text]
-discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/biaozhun6_accel_jellyfish_2087563509491134466.json
@@ -87,16 +86,8 @@ discoveries: [次要节点 `ShowAnything|Mie` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **82%**（50/61）
+覆盖率 **87%**（53/61）
 
-**有卡**：`VAEDecodeAudio`、`KSamplerSelect`、`BasicScheduler`、`BasicGuider`、`RandomNoise`、`DF_Int_to_Float`、`CreateVideo`、`LoadImage`、`UNETLoader`、`VAEDecode`、`SaveVideo`、`EasyCache`、`ResolutionSelector`、`ComfyMathExpression`、`LoadAudio`、`SamplerCustomAdvanced`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`MiniMaxH3ReferenceToVideo`、`GetVideoComponents`、`LoadVideo`
-
-**缺卡**（3）：`ShowAnything|Mie`、`ShowAnything|Mie`、`CR Prompt Text`
+**有卡**：`VAEDecodeAudio`、`KSamplerSelect`、`BasicScheduler`、`BasicGuider`、`RandomNoise`、`DF_Int_to_Float`、`CreateVideo`、`LoadImage`、`UNETLoader`、`VAEDecode`、`ShowAnything|Mie`、`SaveVideo`、`EasyCache`、`ResolutionSelector`、`ComfyMathExpression`、`LoadAudio`、`SamplerCustomAdvanced`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`MiniMaxH3ReferenceToVideo`、`GetVideoComponents`、`LoadVideo`、`CR Prompt Text`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

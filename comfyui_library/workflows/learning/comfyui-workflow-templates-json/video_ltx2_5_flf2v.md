@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_5_flf2v.json
 hash: d8107deef9a9b005
 official: true
-coverage: 0.428571
-learned_at: 2026-10-10 22:50:19
+coverage: 0.571429
+learned_at: 2026-10-15 22:24:57
 nodes: [LoadImage, SaveVideo, cf70afc4-5a03-47ce-8210-734b1de6c6bc, MarkdownNote, MarkdownNote, MarkdownNote, LoadImage]
 patterns: []
-missing: [cf70afc4-5a03-47ce-8210-734b1de6c6bc]
-discoveries: [次要节点 `cf70afc4-5a03-47ce-8210-734b1de6c6bc` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_5_flf2v.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `cf70afc4-5a03-47ce-8210-734b1de6c6bc` 知识库中�
 
 ## 知识
 
-覆盖率 **43%**（3/7）
+覆盖率 **57%**（4/7）
 
-**有卡**：`LoadImage`、`SaveVideo`
+**有卡**：`LoadImage`、`SaveVideo`、`cf70afc4-5a03-47ce-8210-734b1de6c6bc`
 
-**缺卡**（1）：`cf70afc4-5a03-47ce-8210-734b1de6c6bc`
-
-**用到的条目**：LoadImage、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `cf70afc4-5a03-47ce-8210-734b1de6c6bc` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、cf70afc4-5a03-47ce-8210-734b1de6c6bc、sd15-t2i-basic、sd15-t2i-lora、Image Save、SaveImage、CS_Preview_Any

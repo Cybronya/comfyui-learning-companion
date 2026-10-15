@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wavespeed_im
 hash: 7169cc19c05400f5
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:46:50
+learned_at: 2026-10-15 22:24:52
 nodes: [MarkdownNote, ImageCompare, SaveImage, LoadImage, WavespeedImageUpscaleNode]
 patterns: []
 missing: []

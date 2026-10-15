@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 t2v 丝滑过度转场+变身效果_2037115919574507522.json
 hash: d94fbd5e39c79fe9
 coverage: 0.833333
-learned_at: 2026-10-11 03:48:35
+learned_at: 2026-10-15 22:44:58
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, KSamplerSelect, Reroute, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, PrimitiveInt, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAELoader, MarkdownNote, CreateVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveBoolean, CFGGuider, CLIPTextEncode, LTXVConditioning, ManualSigmas, SaveVideo, LoraLoaderModelOnly, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, Fast Groups Bypasser (rgthree), CLIPTextEncode, LTX2_NAG, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_instruct_adv, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveStringMultiline]
 patterns: []
 missing: []

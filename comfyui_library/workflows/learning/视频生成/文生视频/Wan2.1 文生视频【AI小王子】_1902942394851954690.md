@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 文生视频【AI小王子】_1902942394851954690.json
 hash: 3658650d5119bdeb
 coverage: 1
-learned_at: 2026-10-10 23:06:30
+learned_at: 2026-10-15 22:47:08
 nodes: [CLIPTextEncode, VAEDecode, VHS_VideoCombine, KSampler, WanVideoTeaCacheKJ, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, EmptyHunyuanLatentVideo]
 patterns: []
 missing: []

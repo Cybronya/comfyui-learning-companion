@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3+PromptRelay+四图参考_2056629366276321282.json
 hash: b818d4f5625837b1
-coverage: 0.702128
-learned_at: 2026-10-11 19:49:37
+coverage: 0.765957
+learned_at: 2026-10-15 22:45:01
 nodes: [SetNode, GetNode, GetNode, VAELoaderKJ, SetNode, DualCLIPLoader, LTXVConcatAVLatent, RandomNoise, CFGGuider, ManualSigmas, LTXVSeparateAVLatent, VAEDecode, GetNode, LTXVAudioVAEDecode, VAELoaderKJ, UNETLoader, GetNode, EmptyLTXVLatentVideo, MathExpression|pysssss, CLIPTextEncode, LTXVConditioning, MathExpression|pysssss, PrimitiveInt, LTX2_NAG, PathchSageAttentionKJ, MathExpression|pysssss, LoadImage, LoadImage, Reroute, LoraLoaderModelOnly, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, PrimitiveInt, PrimitiveInt, LTXVAddGuideMulti, PromptRelayEncodeTimeline, SamplerCustomAdvanced, LTXVEmptyLatentAudio, LoadImage, PrimitiveNode, LoadImage, LoraLoaderModelOnly, ImageResizeKJv2, KSamplerSelect, GetImageRangeFromBatch, VHS_VideoCombine]
 patterns: []
-missing: [MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "height": 24, "width": 361}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3+PromptRelay+四图参考_2056629366276321282.json
@@ -80,16 +79,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **70%**（33/47）
+覆盖率 **77%**（36/47）
 
-**有卡**：`VAELoaderKJ`、`DualCLIPLoader`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVAudioVAEDecode`、`UNETLoader`、`EmptyLTXVLatentVideo`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`PathchSageAttentionKJ`、`LoadImage`、`LoraLoaderModelOnly`、`ImageResizeKJv2`、`LTXVAddGuideMulti`、`PromptRelayEncodeTimeline`、`SamplerCustomAdvanced`、`LTXVEmptyLatentAudio`、`KSamplerSelect`、`GetImageRangeFromBatch`、`VHS_VideoCombine`
-
-**缺卡**（3）：`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`
+**有卡**：`VAELoaderKJ`、`DualCLIPLoader`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVAudioVAEDecode`、`UNETLoader`、`EmptyLTXVLatentVideo`、`MathExpression|pysssss`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`PathchSageAttentionKJ`、`LoadImage`、`LoraLoaderModelOnly`、`ImageResizeKJv2`、`LTXVAddGuideMulti`、`PromptRelayEncodeTimeline`、`SamplerCustomAdvanced`、`LTXVEmptyLatentAudio`、`KSamplerSelect`、`GetImageRangeFromBatch`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

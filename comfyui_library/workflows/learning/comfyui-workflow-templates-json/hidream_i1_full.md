@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/hidream_i1_full.
 hash: 0992df685679cf0a
 official: true
 coverage: 0.833333
-learned_at: 2026-10-10 22:47:20
+learned_at: 2026-10-15 22:24:53
 nodes: [VAEDecode, CLIPTextEncode, EmptySD3LatentImage, CLIPTextEncode, KSampler, ModelSamplingSD3, QuadrupleCLIPLoader, VAELoader, UNETLoader, MarkdownNote, SaveImage, MarkdownNote]
 patterns: []
 missing: []

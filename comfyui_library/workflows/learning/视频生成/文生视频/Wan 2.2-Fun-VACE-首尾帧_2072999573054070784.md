@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan 2.2-Fun-VACE-首尾帧_2072999573054070784.json
 hash: d58ffbc21bb1009b
 coverage: 1
-learned_at: 2026-10-11 20:21:30
+learned_at: 2026-10-15 22:47:05
 nodes: [TrimVideoLatent, VAEDecode, CLIPTextEncode, VHS_VideoCombine, WanVaceToVideo, ModelSamplingSD3, ModelSamplingSD3, CLIPLoader, VAELoader, INTConstant, ImageResizeKJv2, GetImageSizeAndCount, WanVideoVACEStartToEndFrame, INTConstant, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, KSamplerAdvanced, CLIPTextEncode, LoadImage, ImageResizeKJv2, LoadImage]
 patterns: []
 missing: []

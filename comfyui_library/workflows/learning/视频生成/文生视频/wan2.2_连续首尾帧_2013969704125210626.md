@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2_连续首尾帧_2013969704125210626.json
 hash: 2e67d2bd39d79072
-coverage: 0.516129
-learned_at: 2026-10-11 03:07:13
+coverage: 0.548387
+learned_at: 2026-10-15 22:47:35
 nodes: [SetNode, SetNode, ImpactInt, PathchSageAttentionKJ, PathchSageAttentionKJ, UNETLoader, CLIPLoader, CLIPVisionLoader, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, SetNode, SetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CLIPVisionEncode, GetNode, GetNode, UNETLoader, ModelSamplingSD3, GetNode, GetNode, KSamplerAdvanced, GetNode, GetNode, GetNode, SetNode, CLIPVisionEncode, GetNode, CLIPVisionEncode, GetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, GetNode, CLIPVisionEncode, GetNode, CLIPVisionEncode, GetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, GetNode, CLIPVisionEncode, GetNode, CLIPVisionEncode, GetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, GetNode, CLIPVisionEncode, GetNode, CLIPVisionEncode, GetNode, GetNode, GetNode, CLIPVisionEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, SetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, KSamplerAdvanced, WanFirstLastFrameToVideo, KSamplerAdvanced, WanFirstLastFrameToVideo, KSamplerAdvanced, KSamplerAdvanced, WanFirstLastFrameToVideo, KSamplerAdvanced, WanFirstLastFrameToVideo, VAEDecode, Anything Everywhere?, CLIPTextEncode, Anything Everywhere?, Anything Everywhere?, ModelSamplingSD3, ImpactInt, Anything Everywhere?, SetNode, WanFirstLastFrameToVideo, VAEDecode, VAEDecode, VAEDecode, ImageBatchJoin, VAEDecode, ImageBatchJoin, ImageBatchJoin, ImageBatchJoin, CreateVideo, SaveVideo, VHS_VideoCombine, ImpactInt, MuyeMathCalculator, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode]
 patterns: []
-missing: [Anything Everywhere?, Anything Everywhere?, Anything Everywhere?, Anything Everywhere?]
+missing: []
 parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识, 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识, 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识, 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2_连续首尾帧_2013969704125210626.json
@@ -160,17 +159,8 @@ discoveries: [次要节点 `Anything Everywhere?` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **52%**（64/124）
+覆盖率 **55%**（68/124）
 
-**有卡**：`ImpactInt`、`PathchSageAttentionKJ`、`UNETLoader`、`CLIPLoader`、`CLIPVisionLoader`、`LoadImage`、`CLIPVisionEncode`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAELoader`、`LoraLoaderModelOnly`、`WanFirstLastFrameToVideo`、`VAEDecode`、`CLIPTextEncode`、`ImageBatchJoin`、`CreateVideo`、`SaveVideo`、`VHS_VideoCombine`、`MuyeMathCalculator`
-
-**缺卡**（4）：`Anything Everywhere?`、`Anything Everywhere?`、`Anything Everywhere?`、`Anything Everywhere?`
+**有卡**：`ImpactInt`、`PathchSageAttentionKJ`、`UNETLoader`、`CLIPLoader`、`CLIPVisionLoader`、`LoadImage`、`CLIPVisionEncode`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAELoader`、`LoraLoaderModelOnly`、`WanFirstLastFrameToVideo`、`VAEDecode`、`Anything Everywhere?`、`CLIPTextEncode`、`ImageBatchJoin`、`CreateVideo`、`SaveVideo`、`VHS_VideoCombine`、`MuyeMathCalculator`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识
-- 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识
-- 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识
-- 次要节点 `Anything Everywhere?` 知识库中没有该节点类型的任何知识

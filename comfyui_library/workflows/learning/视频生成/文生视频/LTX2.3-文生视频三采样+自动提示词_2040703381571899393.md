@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-文生视频三采样+自动提示词_2040703381571899393.json
 hash: 83d2391b0fef216d
-coverage: 0.875
-learned_at: 2026-10-11 19:49:38
+coverage: 0.910714
+learned_at: 2026-10-15 22:45:04
 nodes: [DualCLIPLoader, ManualSigmas, KSamplerSelect, KSamplerSelect, PrimitiveInt, ManualSigmas, CFGGuider, UNETLoader, easy cleanGpuUsed, llama_cpp_instruct_adv, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, CFGGuider, VAELoaderKJ, SamplerCustomAdvanced, RandomNoise, SamplerCustomAdvanced, LoraLoaderModelOnly, RandomNoise, LTXVSeparateAVLatent, VAELoaderKJ, LatentUpscaleModelLoader, ShowText|pysssss, LTXVConditioning, SimpleMath+, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, EmptyImage, GetImageSize, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, CLIPTextEncode, CLIPTextEncode, LTXVCropGuides, LTXVLatentUpsampler, LTXVCropGuides, LTXVLatentUpsampler, LTXVSeparateAVLatent, llama_cpp_model_loader, PrimitiveInt, PrimitiveInt, PrimitiveInt, VAEDecodeTiled, CreateVideo, LTXVAudioVAEDecode, Text, Text, LTXVConcatAVLatent, SaveVideo]
 patterns: []
-missing: [SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3-文生视频三采样+自动提示词_2040703381571899393.json
@@ -89,15 +88,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **88%**（49/56）
+覆盖率 **91%**（51/56）
 
-**有卡**：`DualCLIPLoader`、`ManualSigmas`、`KSamplerSelect`、`CFGGuider`、`UNETLoader`、`llama_cpp_instruct_adv`、`SamplerCustomAdvanced`、`RandomNoise`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`EmptyImage`、`GetImageSize`、`ComfyMathExpression`、`CLIPTextEncode`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`llama_cpp_model_loader`、`VAEDecodeTiled`、`CreateVideo`、`LTXVAudioVAEDecode`、`Text`、`SaveVideo`
-
-**缺卡**（2）：`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`DualCLIPLoader`、`ManualSigmas`、`KSamplerSelect`、`CFGGuider`、`UNETLoader`、`easy cleanGpuUsed`、`llama_cpp_instruct_adv`、`SamplerCustomAdvanced`、`RandomNoise`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`SimpleMath+`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`EmptyImage`、`GetImageSize`、`ComfyMathExpression`、`CLIPTextEncode`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`llama_cpp_model_loader`、`VAEDecodeTiled`、`CreateVideo`、`LTXVAudioVAEDecode`、`Text`、`SaveVideo`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

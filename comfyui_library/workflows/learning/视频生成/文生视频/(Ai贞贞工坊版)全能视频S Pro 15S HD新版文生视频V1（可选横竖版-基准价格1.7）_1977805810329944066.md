@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新版文生视频V1（可选横竖版-基准价格1.7）_1977805810329944066.json
 hash: b14d8ef0614bd74c
-coverage: 0.4
-learned_at: 2026-10-10 22:57:59
+coverage: 0.5
+learned_at: 2026-10-15 22:43:12
 nodes: [LoadImage, easy showAnything, SaveVideo, easy showAnything, Note, Note, CR Prompt Text, Comfly_sora2, Note, Comfly_api_set]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/(Ai贞贞工坊版)全能视频S Pro 15S HD新版文生视频V1（可选横竖版-基准价格1.7）_1977805810329944066.json
@@ -36,14 +35,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **40%**（4/10）
+覆盖率 **50%**（5/10）
 
-**有卡**：`LoadImage`、`SaveVideo`、`Comfly_sora2`、`Comfly_api_set`
+**有卡**：`LoadImage`、`SaveVideo`、`CR Prompt Text`、`Comfly_sora2`、`Comfly_api_set`
 
-**缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：LoadImage、SaveVideo、Comfly_api_set、Comfly_sora2、sd15-t2i-basic、sd15-t2i-lora、Text、CLIPTextEncode
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、Comfly_api_set、Comfly_sora2、sd15-t2i-basic、sd15-t2i-lora、Text

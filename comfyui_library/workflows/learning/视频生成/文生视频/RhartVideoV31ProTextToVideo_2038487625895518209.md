@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RhartVideoV31ProTextToVideo_2038487625895518209.json
 hash: 10a6f07d66cc4ebc
 coverage: 1
-learned_at: 2026-10-11 03:48:37
+learned_at: 2026-10-15 22:46:53
 nodes: [RH_RhartVideoV31ProTextToVideo, SaveVideo]
 patterns: []
 missing: []

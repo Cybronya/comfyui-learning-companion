@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Anima-2.9B智能图生图Qwen3VL反推｜文生视频视频生视频图生视频_2090074818287849473.json
 hash: 743c9898dc5703aa
 coverage: 0.878049
-learned_at: 2026-10-11 21:19:36
+learned_at: 2026-10-15 22:44:02
 nodes: [Qwen3VLProcessor, KSampler, VAEDecode, image_scale_pixel_v2, SaveImage, UNETLoader, CLIPTextEncode, CLIPTextEncode, VAEEncode, VAELoaderKJ, CLIPLoader, PathchSageAttentionKJ, LoadImage, PreviewImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image, image_to_image]
 missing: []

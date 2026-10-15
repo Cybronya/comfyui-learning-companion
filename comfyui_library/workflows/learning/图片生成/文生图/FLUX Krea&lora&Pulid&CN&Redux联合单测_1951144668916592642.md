@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/FLUX Krea&lora&Pulid&CN&Redux联合单测_1951144668916592642.json
 hash: a320e725f9112e16
 coverage: 0.973333
-learned_at: 2026-10-10 20:58:31
+learned_at: 2026-10-15 22:26:17
 nodes: [LoraLoader, LoraLoader, SetUnionControlNetType, AIO_Preprocessor, BasicScheduler, KSamplerSelect, VAEEncode, RandomNoise, VAEDecode, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, ApplyPulidFlux, LoraLoader, CFGGuider, LoraLoader, StyleModelLoader, CLIPVisionLoader, CLIPVisionEncode, StyleModelApply, DualCLIPLoader, ImageResizeKJ, VAELoader, SamplerCustomAdvanced, UNETLoader, AIO_Preprocessor, ControlNetLoader, CLIPTextEncode, CLIPSetLastLayer, CLIPTextEncode, ControlNetApplyAdvanced, ControlNetApplyAdvanced, SetUnionControlNetType, LoraLoader, LoraLoader, SetUnionControlNetType, AIO_Preprocessor, BasicScheduler, KSamplerSelect, RandomNoise, VAEDecode, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, CFGGuider, LoraLoader, StyleModelLoader, CLIPVisionLoader, CLIPVisionEncode, StyleModelApply, DualCLIPLoader, ImageResizeKJ, VAELoader, SamplerCustomAdvanced, UNETLoader, AIO_Preprocessor, ControlNetLoader, ControlNetApplyAdvanced, SetUnionControlNetType, PreviewImage, ApplyPulidFlux, LoadImage, CLIPTextEncode, LoraLoader, LoraLoader, SetUnionControlNetType, AIO_Preprocessor, BasicScheduler, KSamplerSelect, VAEEncode, RandomNoise, VAEDecode, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, LoraLoader, CFGGuider, LoraLoader, StyleModelLoader, DualCLIPLoader, ImageResizeKJ, VAELoader, UNETLoader, AIO_Preprocessor, ControlNetLoader, CLIPTextEncode, ControlNetApplyAdvanced, ControlNetApplyAdvanced, SetUnionControlNetType, PreviewImage, ApplyPulidFlux, LoadImage, CLIPTextEncode, CLIPVisionEncode, LoadImage, StyleModelApply, CLIPVisionLoader, LoraLoader, SetUnionControlNetType, AIO_Preprocessor, BasicScheduler, KSamplerSelect, VAEEncode, RandomNoise, VAEDecode, PulidFluxEvaClipLoader, PulidFluxInsightFaceLoader, PulidFluxModelLoader, LoraLoader, CFGGuider, LoraLoader, StyleModelLoader, DualCLIPLoader, ImageResizeKJ, VAELoader, SamplerCustomAdvanced, UNETLoader, AIO_Preprocessor, ControlNetLoader, CLIPTextEncode, ControlNetApplyAdvanced, ControlNetApplyAdvanced, SetUnionControlNetType, PreviewImage, ApplyPulidFlux, LoadImage, CLIPVisionEncode, LoadImage, StyleModelApply, CLIPVisionLoader, SamplerCustomAdvanced, LoraLoader, CLIPTextEncode, LoadImage, PreviewImage, NAGCFGGuider, LoraLoader, VAEEncode, ControlNetApplyAdvanced, CLIPTextEncode, CLIPTextEncode, UNETLoader, DualCLIPLoader, VAELoader, EmptySD3LatentImage, ConditioningZeroOut, KSampler, VAEDecode, SaveImage, CLIPTextEncode]
 patterns: [image_to_image, lora]
 missing: []
@@ -20,23 +20,25 @@ parameters: {"cfg": 1, "controlnet_strength": 0.6000000000000001, "denoise": 1, 
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（150 个）：
-- `LoraLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
 - `BasicScheduler`
-- `KSamplerSelect`
-- `VAEEncode`
+- `KSamplerSelect` ★核心
+- `VAEEncode` ★核心
 - `RandomNoise`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PulidFluxEvaClipLoader`
 - `PulidFluxInsightFaceLoader`
 - `PulidFluxModelLoader`
 - `ApplyPulidFlux`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `CFGGuider`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `StyleModelLoader`
 - `CLIPVisionLoader`
 - `CLIPVisionEncode`
@@ -44,29 +46,29 @@ parameters: {"cfg": 1, "controlnet_strength": 0.6000000000000001, "denoise": 1, 
 - `DualCLIPLoader`
 - `ImageResizeKJ`
 - `VAELoader`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `SamplerCustomAdvanced` ★核心
+- `UNETLoader` ★核心
 - `AIO_Preprocessor`
 - `ControlNetLoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `CLIPSetLastLayer`
-- `CLIPTextEncode`
-- `ControlNetApplyAdvanced`
-- `ControlNetApplyAdvanced`
+- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced` ★核心
 - `SetUnionControlNetType`
-- `LoraLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
 - `BasicScheduler`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `RandomNoise`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PulidFluxEvaClipLoader`
 - `PulidFluxInsightFaceLoader`
 - `PulidFluxModelLoader`
 - `CFGGuider`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `StyleModelLoader`
 - `CLIPVisionLoader`
 - `CLIPVisionEncode`
@@ -74,75 +76,75 @@ parameters: {"cfg": 1, "controlnet_strength": 0.6000000000000001, "denoise": 1, 
 - `DualCLIPLoader`
 - `ImageResizeKJ`
 - `VAELoader`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `SamplerCustomAdvanced` ★核心
+- `UNETLoader` ★核心
 - `AIO_Preprocessor`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced`
+- `ControlNetApplyAdvanced` ★核心
 - `SetUnionControlNetType`
 - `PreviewImage`
 - `ApplyPulidFlux`
 - `LoadImage`
-- `CLIPTextEncode`
-- `LoraLoader`
-- `LoraLoader`
+- `CLIPTextEncode` ★核心
+- `LoraLoader` ★核心
+- `LoraLoader` ★核心
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
 - `BasicScheduler`
-- `KSamplerSelect`
-- `VAEEncode`
+- `KSamplerSelect` ★核心
+- `VAEEncode` ★核心
 - `RandomNoise`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PulidFluxEvaClipLoader`
 - `PulidFluxInsightFaceLoader`
 - `PulidFluxModelLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `CFGGuider`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `StyleModelLoader`
 - `DualCLIPLoader`
 - `ImageResizeKJ`
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `AIO_Preprocessor`
 - `ControlNetLoader`
-- `CLIPTextEncode`
-- `ControlNetApplyAdvanced`
-- `ControlNetApplyAdvanced`
+- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced` ★核心
 - `SetUnionControlNetType`
 - `PreviewImage`
 - `ApplyPulidFlux`
 - `LoadImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `CLIPVisionEncode`
 - `LoadImage`
 - `StyleModelApply`
 - `CLIPVisionLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `SetUnionControlNetType`
 - `AIO_Preprocessor`
 - `BasicScheduler`
-- `KSamplerSelect`
-- `VAEEncode`
+- `KSamplerSelect` ★核心
+- `VAEEncode` ★核心
 - `RandomNoise`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PulidFluxEvaClipLoader`
 - `PulidFluxInsightFaceLoader`
 - `PulidFluxModelLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `CFGGuider`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `StyleModelLoader`
 - `DualCLIPLoader`
 - `ImageResizeKJ`
 - `VAELoader`
-- `SamplerCustomAdvanced`
-- `UNETLoader`
+- `SamplerCustomAdvanced` ★核心
+- `UNETLoader` ★核心
 - `AIO_Preprocessor`
 - `ControlNetLoader`
-- `CLIPTextEncode`
-- `ControlNetApplyAdvanced`
-- `ControlNetApplyAdvanced`
+- `CLIPTextEncode` ★核心
+- `ControlNetApplyAdvanced` ★核心
+- `ControlNetApplyAdvanced` ★核心
 - `SetUnionControlNetType`
 - `PreviewImage`
 - `ApplyPulidFlux`
@@ -151,44 +153,46 @@ parameters: {"cfg": 1, "controlnet_strength": 0.6000000000000001, "denoise": 1, 
 - `LoadImage`
 - `StyleModelApply`
 - `CLIPVisionLoader`
-- `SamplerCustomAdvanced`
-- `LoraLoader`
-- `CLIPTextEncode`
+- `SamplerCustomAdvanced` ★核心
+- `LoraLoader` ★核心
+- `CLIPTextEncode` ★核心
 - `LoadImage`
 - `PreviewImage`
 - `NAGCFGGuider`
-- `LoraLoader`
-- `VAEEncode`
-- `ControlNetApplyAdvanced`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `UNETLoader`
+- `LoraLoader` ★核心
+- `VAEEncode` ★核心
+- `ControlNetApplyAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `VAELoader`
 - `EmptySD3LatentImage`
 - `ConditioningZeroOut`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 
 **识别到的模式**：image_to_image、lora
 
 ## 关键参数
 
-- `cfg` = `1`
-- `controlnet_strength` = `0.6000000000000001`
-- `denoise` = `1`
 - `lora_name` = `Shingeki no Kyojin (Attack on Titan) Anime Style LoRA-v1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `strength_model` = `0.8`
+- `strength_clip` = `0.8`
+- `controlnet_strength` = `0.6000000000000001`
 - `seed` = `82480346685211`
 - `steps` = `20`
-- `strength_clip` = `0.8`
-- `strength_model` = `0.8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **97%**（146/150）
 
-**有卡**：`LoraLoader`、`SetUnionControlNetType`、`AIO_Preprocessor`、`BasicScheduler`、`KSamplerSelect`、`VAEEncode`、`RandomNoise`、`VAEDecode`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`PulidFluxModelLoader`、`ApplyPulidFlux`、`CFGGuider`、`StyleModelLoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`StyleModelApply`、`DualCLIPLoader`、`ImageResizeKJ`、`VAELoader`、`SamplerCustomAdvanced`、`UNETLoader`、`ControlNetLoader`、`CLIPTextEncode`、`CLIPSetLastLayer`、`ControlNetApplyAdvanced`、`PreviewImage`、`LoadImage`、`NAGCFGGuider`、`EmptySD3LatentImage`、`ConditioningZeroOut`
+**有卡**：`LoraLoader`、`SetUnionControlNetType`、`AIO_Preprocessor`、`BasicScheduler`、`KSamplerSelect`、`VAEEncode`、`RandomNoise`、`VAEDecode`、`PulidFluxEvaClipLoader`、`PulidFluxInsightFaceLoader`、`PulidFluxModelLoader`、`ApplyPulidFlux`、`CFGGuider`、`StyleModelLoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`StyleModelApply`、`DualCLIPLoader`、`ImageResizeKJ`、`VAELoader`、`SamplerCustomAdvanced`、`UNETLoader`、`ControlNetLoader`、`CLIPTextEncode`、`CLIPSetLastLayer`、`ControlNetApplyAdvanced`、`LoadImage`、`NAGCFGGuider`、`EmptySD3LatentImage`、`ConditioningZeroOut`、`KSampler`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、ControlNetApplyAdvanced

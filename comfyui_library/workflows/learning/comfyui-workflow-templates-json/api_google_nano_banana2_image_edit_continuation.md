@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_google_nano_banana2_image_edit_continuation.json
 hash: 56b9460d0fef0d50
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:44:02
+coverage: 0.75
+learned_at: 2026-10-15 22:24:49
 nodes: [LoadImage, 4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d, SaveImage, MarkdownNote]
 patterns: []
-missing: [4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d]
-discoveries: [次要节点 `4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_google_nano_banana2_image_edit_continuation.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（2/4）
+覆盖率 **75%**（3/4）
 
-**有卡**：`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d`、`SaveImage`
 
-**缺卡**（1）：`4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、4d2ab4f5-8f54-4b5b-a4e2-49b35a60ad9d、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput

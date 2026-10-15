@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/内置sd2.0，原生4K 文生视频工作流_2046658693634199553.json
 hash: 33be70483df163ba
 coverage: 0.818182
-learned_at: 2026-10-11 19:49:47
+learned_at: 2026-10-15 22:48:04
 nodes: [LTXVScheduler, LTXAVTextEncoderLoader, ManualSigmas, CFGGuider, LTXVConcatAVLatent, RandomNoise, SamplerCustomAdvanced, LTXVAudioVAELoader, CFGGuider, KSamplerSelect, KSamplerSelect, CheckpointLoaderSimple, RandomNoise, CLIPTextEncode, VAEDecodeTiled, VAEDecode, LTXVAudioVAEDecode, MarkdownNote, MarkdownNote, SaveVideo, PrimitiveInt, LoraLoaderModelOnly, LTXVConcatAVLatent, PrimitiveFloat, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVCropGuides, LTXVSeparateAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVLatentUpsampler, Reroute, CreateVideo, LatentUpscaleModelLoader, LoraLoaderModelOnly, LTXVConditioning, GetImageSize, ImageScaleBy, EmptyImage, PrimitiveInt, MarkdownNote, MarkdownNote, LoraLoaderModelOnly, CLIPTextEncode]
 patterns: []
 missing: []

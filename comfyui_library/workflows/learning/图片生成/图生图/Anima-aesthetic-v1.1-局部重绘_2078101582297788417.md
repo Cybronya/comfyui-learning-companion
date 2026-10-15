@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json
 hash: 59b8db70dac81c7f
-coverage: 0.882353
-learned_at: 2026-10-10 20:48:02
+coverage: 0.941176
+learned_at: 2026-10-15 22:25:05
 nodes: [UNETLoader, MaskFillHoles, LayerUtility: ImageScaleByAspectRatio V2, KSampler, VAEDecode, PreviewImage, SaveImage, LoadImage, CLIPLoader, VAELoader, VAEEncode, SetLatentNoiseMask, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, ModelPatchLoader, AnimaLLLiteApply]
 patterns: [image_to_image]
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "er_sde", "scheduler": "beta", "seed": 864435812893963, "steps": 8}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Anima-aesthetic-v1.1-局部重绘_2078101582297788417.json
@@ -56,11 +56,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **88%**（15/17）
+覆盖率 **94%**（16/17）
 
-**有卡**：`UNETLoader`、`MaskFillHoles`、`KSampler`、`VAEDecode`、`SaveImage`、`LoadImage`、`CLIPLoader`、`VAELoader`、`VAEEncode`、`SetLatentNoiseMask`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`ModelPatchLoader`、`AnimaLLLiteApply`
-
-**缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
+**有卡**：`UNETLoader`、`MaskFillHoles`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSampler`、`VAEDecode`、`SaveImage`、`LoadImage`、`CLIPLoader`、`VAELoader`、`VAEEncode`、`SetLatentNoiseMask`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`ModelPatchLoader`、`AnimaLLLiteApply`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
@@ -71,5 +69,4 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json
 hash: 2c2473b8006ee695
-coverage: 0.904762
-learned_at: 2026-10-10 20:48:02
+coverage: 0.952381
+learned_at: 2026-10-15 22:25:05
 nodes: [VAELoader, SamplerCustom, DF_Get_image_size, ImageScaleToTotalPixels, KSamplerSelect, ModelSamplingAuraFlow, BasicScheduler, SeedVR2LoadDiTModel, TextEncodeBooguEdit, UNETLoader, CLIPLoader, LoraLoaderModelOnly, SaveImage, SeedVR2LoadVAEModel, LoadImage, EmptyLatentImage, CR Prompt Text, SaveImage, VAEDecode, SeedVR2VideoUpscaler, PrimitiveInt]
 patterns: []
-missing: [CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "height": 1024, "width": 1024}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/Boogu+vr2.5_光学眼镜场景 opticscene_2100503999580565506.json
@@ -54,14 +53,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **90%**（19/21）
+覆盖率 **95%**（20/21）
 
-**有卡**：`VAELoader`、`SamplerCustom`、`DF_Get_image_size`、`ImageScaleToTotalPixels`、`KSamplerSelect`、`ModelSamplingAuraFlow`、`BasicScheduler`、`SeedVR2LoadDiTModel`、`TextEncodeBooguEdit`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`SaveImage`、`SeedVR2LoadVAEModel`、`LoadImage`、`EmptyLatentImage`、`VAEDecode`、`SeedVR2VideoUpscaler`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`VAELoader`、`SamplerCustom`、`DF_Get_image_size`、`ImageScaleToTotalPixels`、`KSamplerSelect`、`ModelSamplingAuraFlow`、`BasicScheduler`、`SeedVR2LoadDiTModel`、`TextEncodeBooguEdit`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`SaveImage`、`SeedVR2LoadVAEModel`、`LoadImage`、`EmptyLatentImage`、`CR Prompt Text`、`VAEDecode`、`SeedVR2VideoUpscaler`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

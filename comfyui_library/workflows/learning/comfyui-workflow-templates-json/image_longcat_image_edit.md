@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_longcat_image_edit.json
 hash: 084d0e9d674f1f2e
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:48:11
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:54
 nodes: [SaveImage, LoadImage, ImageCompare, 338a94d3-1c81-48c8-9edd-9907114ba7e7, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [338a94d3-1c81-48c8-9edd-9907114ba7e7]
-discoveries: [次要节点 `338a94d3-1c81-48c8-9edd-9907114ba7e7` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_longcat_image_edit.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `338a94d3-1c81-48c8-9edd-9907114ba7e7` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（3/6）
+覆盖率 **67%**（4/6）
 
-**有卡**：`SaveImage`、`LoadImage`、`ImageCompare`
+**有卡**：`SaveImage`、`LoadImage`、`ImageCompare`、`338a94d3-1c81-48c8-9edd-9907114ba7e7`
 
-**缺卡**（1）：`338a94d3-1c81-48c8-9edd-9907114ba7e7`
-
-**用到的条目**：LoadImage、SaveImage、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、Compare、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `338a94d3-1c81-48c8-9edd-9907114ba7e7` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、ImageCompare、338a94d3-1c81-48c8-9edd-9907114ba7e7、sd15-t2i-basic、sd15-t2i-lora、Compare、Image Load

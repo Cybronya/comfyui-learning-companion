@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json
 hash: c1d661ba79be1dd4
-coverage: 0.628571
-learned_at: 2026-10-10 20:48:05
+coverage: 0.657143
+learned_at: 2026-10-15 22:25:11
 nodes: [LoadImage, LoadImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, SetNode, VAEDecode, CLIPLoader, VAELoader, Reroute, LoadImage, LoadImage, UNETLoader, GoohaiRouteBlocker, 忽略多组孤海, QwenImage21SageAttentionT8, GetNode, KSampler, GoohaiRouteBlocker, 孤海注释, ShowText|pysssss, Image Comparer (rgthree), QwenImage21BlockCacheT8, QwenImage21SpectrumT8, RestoreQwenImage21GH, TextEncodeQwenImage21GH, LoadImageGoohai, SaveImage, GoohaiRatioAndResolution, DF_Text_Box, QwenImagePromptOptimizer, LoadImage]
 patterns: []
-missing: [忽略多组孤海]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 721893050101110, "steps": 30}
-discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1 文生、图像编辑一体化工作台_2105131610982141954.json
@@ -71,14 +70,8 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **63%**（22/35）
+覆盖率 **66%**（23/35）
 
-**有卡**：`LoadImage`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`GoohaiRouteBlocker`、`QwenImage21SageAttentionT8`、`KSampler`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`TextEncodeQwenImage21GH`、`LoadImageGoohai`、`SaveImage`、`GoohaiRatioAndResolution`、`DF_Text_Box`、`QwenImagePromptOptimizer`
-
-**缺卡**（1）：`忽略多组孤海`
+**有卡**：`LoadImage`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`GoohaiRouteBlocker`、`忽略多组孤海`、`QwenImage21SageAttentionT8`、`KSampler`、`QwenImage21BlockCacheT8`、`QwenImage21SpectrumT8`、`RestoreQwenImage21GH`、`TextEncodeQwenImage21GH`、`LoadImageGoohai`、`SaveImage`、`GoohaiRatioAndResolution`、`DF_Text_Box`、`QwenImagePromptOptimizer`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPLoader、LoadImage、UNETLoader、TextEncodeQwenImage21GH、QwenImagePromptOptimizer
-
-## 学习发现
-
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识

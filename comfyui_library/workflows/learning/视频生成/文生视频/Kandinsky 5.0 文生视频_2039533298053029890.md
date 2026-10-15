@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Kandinsky 5.0 文生视频_2039533298053029890.json
 hash: edacc08810e7d69b
 coverage: 0.846154
-learned_at: 2026-10-11 19:49:34
+learned_at: 2026-10-15 22:44:29
 nodes: [DualCLIPLoader, VAELoader, VAEDecode, ModelSamplingSD3, KSampler, Kandinsky5ImageToVideo, CreateVideo, UNETLoader, MarkdownNote, MarkdownNote, SaveVideo, CLIPTextEncode, CLIPTextEncode]
 patterns: []
 missing: []

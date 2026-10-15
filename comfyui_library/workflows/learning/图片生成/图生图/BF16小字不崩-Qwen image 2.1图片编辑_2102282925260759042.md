@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json
 hash: 130015e8eb506cf0
-coverage: 0.857143
-learned_at: 2026-10-10 20:48:02
+coverage: 0.928571
+learned_at: 2026-10-15 22:25:05
 nodes: [VAELoader, VAEDecode, QwenImage21Cache, TextEncodeQwenImage21, KSampler, ComfySwitchNode, CLIPLoader, LoadImage, ResolutionSelector, CR Prompt Text, EmptyLatentImage, SaveImageAdvanced, UNETLoader, SaveImage]
 patterns: []
-missing: [CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 999, "steps": 50, "width": 1024}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/BF16小字不崩-Qwen image 2.1图片编辑_2102282925260759042.json
@@ -53,14 +52,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **86%**（12/14）
+覆盖率 **93%**（13/14）
 
-**有卡**：`VAELoader`、`VAEDecode`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`KSampler`、`CLIPLoader`、`LoadImage`、`ResolutionSelector`、`EmptyLatentImage`、`SaveImageAdvanced`、`UNETLoader`、`SaveImage`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`VAELoader`、`VAEDecode`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`KSampler`、`CLIPLoader`、`LoadImage`、`ResolutionSelector`、`CR Prompt Text`、`EmptyLatentImage`、`SaveImageAdvanced`、`UNETLoader`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

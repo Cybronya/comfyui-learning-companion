@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/飞行少女飞行滑板多图首尾帧首尾帧图生视频Wan2.2-Smooth Mix 超丝滑首尾帧工作流_2011515988684050433.json
 hash: 8d9950e62c9ef2ad
-coverage: 0.76
-learned_at: 2026-10-13 01:36:56
+coverage: 0.986667
+learned_at: 2026-10-15 22:43:08
 nodes: [Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, Fast Bypasser (rgthree), PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, UNETLoader, UNETLoader, wanBlockSwap, wanBlockSwap, Fast Bypasser (rgthree), Fast Bypasser (rgthree), SimpleMath+, ImageScaleBy, RIFE VFI, easy cleanGpuUsed, LoadImage, CLIPVisionEncode, WanFirstLastFrameToVideo, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, SimpleMath+, ImageScaleBy, RIFE VFI, easy cleanGpuUsed, KSamplerAdvanced, CLIPVisionEncode, CLIPVisionEncode, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, ImageResizeKJv2, SimpleMath+, ImageScaleBy, RIFE VFI, easy cleanGpuUsed, KSamplerAdvanced, CLIPVisionEncode, CLIPTextEncode, CLIPTextEncode, CLIPLoader, ImageResizeKJv2, LoadImage, LoadImage, LoadImage, ImageResizeKJv2, ImpactInt, ImpactInt, ImpactInt, VAEDecode, VAEDecode, VAEDecode, VAELoader, ImageResizeKJv2, CLIPVisionEncode, CLIPVisionEncode, CLIPVisionLoader, KSamplerAdvanced, ModelPatchTorchSettings, ModelPatchTorchSettings, PrimitiveStringMultiline, ImageResizeKJv2, ImageResizeKJv2, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, Seed (rgthree), KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, VHS_VideoCombine]
 patterns: []
-missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), RIFE VFI, RIFE VFI, RIFE VFI, SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, Seed (rgthree)]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/图生视频/飞行少女飞行滑板多图首尾帧首尾帧图生视频Wan2.2-Smooth Mix 超丝滑首尾帧工作流_2011515988684050433.json
@@ -111,30 +110,8 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **76%**（57/75）
+覆盖率 **99%**（74/75）
 
-**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`UNETLoader`、`wanBlockSwap`、`ImageScaleBy`、`LoadImage`、`CLIPVisionEncode`、`WanFirstLastFrameToVideo`、`CLIPTextEncode`、`KSamplerAdvanced`、`ImageResizeKJv2`、`CLIPLoader`、`ImpactInt`、`VAEDecode`、`VAELoader`、`CLIPVisionLoader`、`ModelPatchTorchSettings`、`WanAdvancedI2V`、`ImageBatchExtendWithOverlap`、`VHS_VideoCombine`
+**有卡**：`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`Fast Bypasser (rgthree)`、`ModelSamplingSD3`、`easy cleanGpuUsed`、`UNETLoader`、`wanBlockSwap`、`SimpleMath+`、`ImageScaleBy`、`RIFE VFI`、`LoadImage`、`CLIPVisionEncode`、`WanFirstLastFrameToVideo`、`CLIPTextEncode`、`KSamplerAdvanced`、`ImageResizeKJv2`、`CLIPLoader`、`ImpactInt`、`VAEDecode`、`VAELoader`、`CLIPVisionLoader`、`ModelPatchTorchSettings`、`WanAdvancedI2V`、`Seed (rgthree)`、`ImageBatchExtendWithOverlap`、`VHS_VideoCombine`
 
-**缺卡**（17）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`RIFE VFI`、`RIFE VFI`、`RIFE VFI`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`Seed (rgthree)`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode
-
-## 学习发现
-
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、Seed (rgthree)

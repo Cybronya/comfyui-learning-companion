@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Character Costume Changes Qwen Image 2.1 人物换装_2102208875008184321.json
 hash: 3cef85b735f20eae
 coverage: 0.833333
-learned_at: 2026-10-10 20:48:02
+learned_at: 2026-10-15 22:25:05
 nodes: [CLIPLoader, CLIPLoader, BatchImagesNode, VAELoader, EmptyLatentImage, ComfySwitchNode, VAEDecode, KSampler, QwenImage21Cache, TextGenerateLTX2Prompt, TextEncodeQwenImage21, UNETLoader, ResolutionSelector, LoadImage, LoadImage, JjkText, Note, SaveImage]
 patterns: []
 missing: []

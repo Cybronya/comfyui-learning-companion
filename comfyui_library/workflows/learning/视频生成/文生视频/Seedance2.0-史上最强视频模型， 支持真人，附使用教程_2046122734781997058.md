@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0-史上最强视频模型， 支持真人，附使用教程_2046122734781997058.json
 hash: ee1b5d59775a5bdb
 coverage: 0.73913
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [LoadAudio, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadAudio, LoadVideo, LoadVideo, LoadVideo, LoadImage, LoadImage, LoadImage, Note, Note, Note, PreviewAny, PreviewAny, SaveVideo, RH_RhartVideoSparkvideo20MultimodalVideo, Note]
 patterns: []
 missing: []
@@ -52,4 +52,4 @@ missing: []
 
 **有卡**：`LoadAudio`、`LoadImage`、`LoadVideo`、`SaveVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`
 
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load

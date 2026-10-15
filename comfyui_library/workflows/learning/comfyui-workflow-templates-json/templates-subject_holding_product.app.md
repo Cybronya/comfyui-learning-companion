@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-subject_holding_product.app.json
 hash: f690d88af21e676b
 official: true
-coverage: 0.8
-learned_at: 2026-10-10 22:49:26
+coverage: 1
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, GeminiImage2Node, LoadImage, LoadImage, e20a7fb5-3d72-41c9-a78c-fdf287ec46ec]
 patterns: []
-missing: [e20a7fb5-3d72-41c9-a78c-fdf287ec46ec]
-discoveries: [次要节点 `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/templates-subject_holding_product.app.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` 知识库中�
 
 ## 知识
 
-覆盖率 **80%**（4/5）
+覆盖率 **100%**（5/5）
 
-**有卡**：`SaveImage`、`GeminiImage2Node`、`LoadImage`
+**有卡**：`SaveImage`、`GeminiImage2Node`、`LoadImage`、`e20a7fb5-3d72-41c9-a78c-fdf287ec46ec`
 
-**缺卡**（1）：`e20a7fb5-3d72-41c9-a78c-fdf287ec46ec`
-
-**用到的条目**：LoadImage、SaveImage、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `e20a7fb5-3d72-41c9-a78c-fdf287ec46ec` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、GeminiImage2Node、e20a7fb5-3d72-41c9-a78c-fdf287ec46ec、sd15-t2i-basic、sd15-t2i-lora、node、Image Load

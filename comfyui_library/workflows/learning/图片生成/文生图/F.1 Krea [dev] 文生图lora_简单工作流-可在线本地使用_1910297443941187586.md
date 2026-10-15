@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/F.1 Krea [dev] 文生图lora_简单工作流-可在线本地使用_1910297443941187586.json
 hash: f1595d7928c81196
 coverage: 1
-learned_at: 2026-10-10 20:58:30
+learned_at: 2026-10-15 22:26:16
 nodes: [SaveImage, ConditioningZeroOut, VAEDecode, CLIPTextEncode, VAELoader, KSampler, EmptySD3LatentImage, DualCLIPLoader, UNETLoader, LoraLoaderModelOnly]
 patterns: []
 missing: []
@@ -20,29 +20,33 @@ parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "si
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output
+
 **节点**（10 个）：
 - `SaveImage`
 - `ConditioningZeroOut`
-- `VAEDecode`
-- `CLIPTextEncode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `VAELoader`
-- `KSampler`
+- `KSampler` ★核心
 - `EmptySD3LatentImage`
 - `DualCLIPLoader`
-- `UNETLoader`
-- `LoraLoaderModelOnly`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
 
 ## 关键参数
 
-- `cfg` = `2.5`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `949835274990178`
 - `steps` = `30`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **100%**（10/10）
 
 **有卡**：`SaveImage`、`ConditioningZeroOut`、`VAEDecode`、`CLIPTextEncode`、`VAELoader`、`KSampler`、`EmptySD3LatentImage`、`DualCLIPLoader`、`UNETLoader`、`LoraLoaderModelOnly`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、UNETLoader、SaveImage

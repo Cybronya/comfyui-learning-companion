@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5文生视频-自动扩写提示词-高质量直出1K_2087739530110660610.json
 hash: fa935d6cc4d76dde
-coverage: 0.804348
-learned_at: 2026-10-11 20:53:38
+coverage: 0.847826
+learned_at: 2026-10-15 22:45:17
 nodes: [ComfyMathExpression, LTXVDualCFGGuider, KSamplerSelect, LTXVConcatAVLatent, ComfyMathExpression, RandomNoise, ComfyMathExpression, CreateVideo, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, VAEDecodeTiled, LTXVSeparateAVLatent, SamplerCustomAdvanced, ManualSigmas, LTXVAudioVAEDecode, LTXVLatentUpsampler, VAELoader, SamplerCustomAdvanced, LTXVDualCFGGuider, LTXVConditioning, KSamplerSelect, ManualSigmas, CLIPTextEncode, PrimitiveInt, LTXVSeparateAVLatent, CLIPTextEncode, ComfyMathExpression, RandomNoise, LTXVConcatAVLatent, PrimitiveInt, ResolutionSelector, PrimitiveInt, PrimitiveInt, SaveVideo, CLIPLoader, LatentUpscaleModelLoader, MarkdownNote, MarkdownNote, CR Prompt Text, ShellAgentPluginOutputText, easy showAnything, RH_LLMAPI_Pro_Node, CR Prompt Text, UNETLoader, VAELoader, LoraLoaderModelOnly]
 patterns: []
-missing: [CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.5文生视频-自动扩写提示词-高质量直出1K_2087739530110660610.json
@@ -79,15 +78,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **80%**（37/46）
+覆盖率 **85%**（39/46）
 
-**有卡**：`ComfyMathExpression`、`LTXVDualCFGGuider`、`KSamplerSelect`、`LTXVConcatAVLatent`、`RandomNoise`、`CreateVideo`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`VAELoader`、`LTXVConditioning`、`CLIPTextEncode`、`ResolutionSelector`、`SaveVideo`、`CLIPLoader`、`LatentUpscaleModelLoader`、`ShellAgentPluginOutputText`、`RH_LLMAPI_Pro_Node`、`UNETLoader`、`LoraLoaderModelOnly`
-
-**缺卡**（2）：`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`ComfyMathExpression`、`LTXVDualCFGGuider`、`KSamplerSelect`、`LTXVConcatAVLatent`、`RandomNoise`、`CreateVideo`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`VAELoader`、`LTXVConditioning`、`CLIPTextEncode`、`ResolutionSelector`、`SaveVideo`、`CLIPLoader`、`LatentUpscaleModelLoader`、`CR Prompt Text`、`ShellAgentPluginOutputText`、`RH_LLMAPI_Pro_Node`、`UNETLoader`、`LoraLoaderModelOnly`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ResolutionSelector、UNETLoader、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

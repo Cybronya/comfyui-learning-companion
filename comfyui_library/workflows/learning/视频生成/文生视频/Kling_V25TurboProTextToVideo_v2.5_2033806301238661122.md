@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Kling_V25TurboProTextToVideo_v2.5_2033806301238661122.json
 hash: e0818d84b28a9b0d
 coverage: 1
-learned_at: 2026-10-11 03:48:34
+learned_at: 2026-10-15 22:44:30
 nodes: [SaveVideo, RH_KlingV25TurboProTextToVideo]
 patterns: []
 missing: []

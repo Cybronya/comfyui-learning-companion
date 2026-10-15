@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.6：文生视频，指令即电影，解锁专业叙事新维度！_2000759216078024705.json
 hash: 36dd52e761354232
 coverage: 0.6
-learned_at: 2026-10-11 02:57:38
+learned_at: 2026-10-15 22:47:16
 nodes: [RHHiddenNodes, PreviewAny, RH_Wan26_T2V, SaveVideo, JjkText]
 patterns: []
 missing: []

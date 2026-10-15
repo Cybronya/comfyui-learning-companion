@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 IC-LoRA 视频上色工作流_2035010437032448002.json
 hash: 9e6d998c853f5f9e
-coverage: 0.901235
-learned_at: 2026-10-11 03:48:34
+coverage: 0.938272
+learned_at: 2026-10-15 22:44:31
 nodes: [LTXVAudioVAEDecode, VAEDecodeTiled, KSamplerSelect, LTXVConditioning, LTXAddVideoICLoRAGuide, LTXVConcatAVLatent, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, SamplerCustomAdvanced, LTXVCropGuides, LTXVSeparateAVLatent, DWPreprocessor, LTXVAudioVAELoader, CheckpointLoaderSimple, GemmaAPITextEncode, PrimitiveString, CLIPTextEncode, LTXVPreprocess, CFGGuider, ResizeImageMaskNode, GetImageSize, ManualSigmas, GemmaAPITextEncode, RandomNoise, CannyEdgePreprocessor, DepthCrafter, DownloadAndLoadDepthCrafterModel, LoraLoaderModelOnly, LTXAVTextEncoderLoader, CLIPTextEncode, SaveVideo, CreateVideo, CM_FloatToInt, LTXICLoRALoaderModelOnly, SimpleMath+, ResizeImageMaskNode, image_scale_pixel_v2, VHS_VideoInfoLoaded, CLIPLoader, ModelSamplingAuraFlow, CFGNorm, MarkdownNote, VAELoader, VAEDecode, GetImageSize+, KSampler, EmptySD3LatentImage, ImageScaleToTotalPixels, ImageScaleToTotalPixels, UNETLoader, TextEncodeQwenImageEditPlus, ReferenceLatent, VAEEncode, ReferenceLatent, LoadImage, LoadImage, Note, LoraLoaderModelOnly, LoraLoaderModelOnly, SaveImage, VHS_LoadVideo, LoadImage, Image Comparer (rgthree), Image_Resize_longsize, LoadImage, ImageScaleToTotalPixels, JWImageExtractFromBatch, TextEncodeQwenImageEditPlus, PrimitiveBoolean, PreviewImage, DisTorchPurgeVRAMV2, VAEDecodeTiled, WD14Tagger|pysssss, VHS_VideoCombine, VHS_VideoCombine, VHS_LoadVideo, VHS_LoadVideo, VHS_VideoCombine, VHS_LoadVideo, VHS_VideoCombine]
 patterns: [image_to_image]
-missing: [SimpleMath+, WD14Tagger|pysssss, GetImageSize+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 1, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 794792336549169, "steps": 4, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/LTX 2.3 IC-LoRA 视频上色工作流_2035010437032448002.json
@@ -124,11 +124,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **90%**（73/81）
+覆盖率 **94%**（76/81）
 
-**有卡**：`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`KSamplerSelect`、`LTXVConditioning`、`LTXAddVideoICLoRAGuide`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`DWPreprocessor`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`GemmaAPITextEncode`、`CLIPTextEncode`、`LTXVPreprocess`、`CFGGuider`、`ResizeImageMaskNode`、`GetImageSize`、`ManualSigmas`、`RandomNoise`、`CannyEdgePreprocessor`、`DepthCrafter`、`DownloadAndLoadDepthCrafterModel`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`SaveVideo`、`CreateVideo`、`CM_FloatToInt`、`LTXICLoRALoaderModelOnly`、`image_scale_pixel_v2`、`VHS_VideoInfoLoaded`、`CLIPLoader`、`ModelSamplingAuraFlow`、`CFGNorm`、`VAELoader`、`VAEDecode`、`KSampler`、`EmptySD3LatentImage`、`ImageScaleToTotalPixels`、`UNETLoader`、`TextEncodeQwenImageEditPlus`、`ReferenceLatent`、`VAEEncode`、`LoadImage`、`SaveImage`、`VHS_LoadVideo`、`Image_Resize_longsize`、`JWImageExtractFromBatch`、`PrimitiveBoolean`、`DisTorchPurgeVRAMV2`、`VHS_VideoCombine`
-
-**缺卡**（3）：`SimpleMath+`、`WD14Tagger|pysssss`、`GetImageSize+`
+**有卡**：`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`KSamplerSelect`、`LTXVConditioning`、`LTXAddVideoICLoRAGuide`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`DWPreprocessor`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`GemmaAPITextEncode`、`CLIPTextEncode`、`LTXVPreprocess`、`CFGGuider`、`ResizeImageMaskNode`、`GetImageSize`、`ManualSigmas`、`RandomNoise`、`CannyEdgePreprocessor`、`DepthCrafter`、`DownloadAndLoadDepthCrafterModel`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`SaveVideo`、`CreateVideo`、`CM_FloatToInt`、`LTXICLoRALoaderModelOnly`、`SimpleMath+`、`image_scale_pixel_v2`、`VHS_VideoInfoLoaded`、`CLIPLoader`、`ModelSamplingAuraFlow`、`CFGNorm`、`VAELoader`、`VAEDecode`、`GetImageSize+`、`KSampler`、`EmptySD3LatentImage`、`ImageScaleToTotalPixels`、`UNETLoader`、`TextEncodeQwenImageEditPlus`、`ReferenceLatent`、`VAEEncode`、`LoadImage`、`SaveImage`、`VHS_LoadVideo`、`Image_Resize_longsize`、`JWImageExtractFromBatch`、`PrimitiveBoolean`、`DisTorchPurgeVRAMV2`、`WD14Tagger|pysssss`、`VHS_VideoCombine`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
 
@@ -139,7 +137,4 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

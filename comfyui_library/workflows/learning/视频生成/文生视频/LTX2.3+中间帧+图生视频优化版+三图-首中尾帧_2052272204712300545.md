@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3+中间帧+图生视频优化版+三图-首中尾帧_2052272204712300545.json
 hash: e3c514711e62f97d
-coverage: 0.818182
-learned_at: 2026-10-11 19:49:37
+coverage: 0.833333
+learned_at: 2026-10-15 22:45:01
 nodes: [LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, LTXVCropGuides, KSamplerSelect, Reroute, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, LTXVConditioning, RandomNoise, RandomNoise, CLIPTextEncode, LTXVPreprocess, LatentUpscaleModelLoader, PrimitiveInt, CheckpointLoaderSimple, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVImgToVideoInplace, FloatConstant, ModelPatchTorchSettings, SimpleMath+, ComfyMathExpression, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVAudioVAEDecode, ResizeImagesByLongerEdge, PrimitiveInt, PrimitiveInt, LTXVPreprocess, LTXVImgToVideoInplaceKJ, LTXVPreprocess, ResizeImagesByLongerEdge, PrimitiveInt, VAEDecodeTiled, ImageResizeKJv2, MarkdownNote, ManualSigmas, ResizeImagesByLongerEdge, ResizeImageMaskNode, ImageResizeKJv2, SamplerCustomAdvanced, Fast Groups Bypasser (rgthree), CLIPTextEncode, LTXAVTextEncoderLoader, PathchSageAttentionKJ, LTXVChunkFeedForward, LTXVAudioVAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, MarkdownNote, easy showAnything, Fast Groups Bypasser (rgthree), RH_LLMAPI_Pro_Node, TextCombinerTwo, PrimitiveStringMultiline, VHS_VideoCombine, LoadImage, LoadImage, LoadImage]
 patterns: []
-missing: [SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3+中间帧+图生视频优化版+三图-首中尾帧_2052272204712300545.json
@@ -100,14 +99,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **82%**（54/66）
+覆盖率 **83%**（55/66）
 
-**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVCropGuides`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVConditioning`、`RandomNoise`、`CLIPTextEncode`、`LTXVPreprocess`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`FloatConstant`、`ModelPatchTorchSettings`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`ResizeImagesByLongerEdge`、`LTXVImgToVideoInplaceKJ`、`VAEDecodeTiled`、`ImageResizeKJv2`、`ResizeImageMaskNode`、`LTXAVTextEncoderLoader`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`RH_LLMAPI_Pro_Node`、`TextCombinerTwo`、`VHS_VideoCombine`、`LoadImage`
-
-**缺卡**（1）：`SimpleMath+`
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVCropGuides`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVConditioning`、`RandomNoise`、`CLIPTextEncode`、`LTXVPreprocess`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`FloatConstant`、`ModelPatchTorchSettings`、`SimpleMath+`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`ResizeImagesByLongerEdge`、`LTXVImgToVideoInplaceKJ`、`VAEDecodeTiled`、`ImageResizeKJv2`、`ResizeImageMaskNode`、`LTXAVTextEncoderLoader`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`RH_LLMAPI_Pro_Node`、`TextCombinerTwo`、`VHS_VideoCombine`、`LoadImage`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

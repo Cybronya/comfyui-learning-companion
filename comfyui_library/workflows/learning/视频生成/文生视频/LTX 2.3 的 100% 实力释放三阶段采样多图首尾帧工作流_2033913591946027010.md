@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 的 100% 实力释放三阶段采样多图首尾帧工作流_2033913591946027010.json
 hash: 4e016cdace9fa988
-coverage: 0.815789
-learned_at: 2026-10-11 03:48:34
+coverage: 0.828947
+learned_at: 2026-10-15 22:44:33
 nodes: [CLIPTextEncode, LTXVEmptyLatentAudio, CM_FloatToInt, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RandomNoise, CFGGuider, SamplerCustomAdvanced, KSamplerSelect, CFGGuider, ManualSigmas, LTXVConcatAVLatent, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, LoraLoaderModelOnly, LTXVAudioVAELoader, LTXAVTextEncoderLoader, CheckpointLoaderSimple, LTXVImgToVideoConditionOnly, GetImageSize+, LTXVLatentUpsampler, LoadImage, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, PrimitiveBoolean, LTXVSeparateAVLatent, VAEDecodeTiled, VAEDecodeTiled, PreviewImage, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVConditioning, RandomNoise, PreviewImage, EmptyLTXVLatentVideo, easy showAnything, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LTXVPreprocess, LTXVPreprocess, LTXVPreprocess, LTXVPreprocess, LTXVAddGuideMulti, LTXVAddGuideMulti, LTXVAddGuideMulti, LTXVAudioVAEDecode, CreateVideo, VHS_VideoCombine, VAEDecodeTiled, PrimitiveInt, PrimitiveFloat, JWImageSequenceExtractFromBatch, ResizeImageMaskNode, ResizeLongestToNode, LatentUpscaleModelLoader, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, image_scale_pixel_v2, PrimitiveNode, PrimitiveNode, PrimitiveNode, PrimitiveNode, CLIPTextEncode]
 patterns: []
-missing: [GetImageSize+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX 2.3 的 100% 实力释放三阶段采样多图首尾帧工作流_2033913591946027010.json
@@ -110,14 +109,8 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 ## 知识
 
-覆盖率 **82%**（62/76）
+覆盖率 **83%**（63/76）
 
-**有卡**：`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`CM_FloatToInt`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`RandomNoise`、`LTXVSeparateAVLatent`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`LTXVImgToVideoConditionOnly`、`LTXVLatentUpsampler`、`LoadImage`、`PrimitiveBoolean`、`VAEDecodeTiled`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`ImageResizeKJv2`、`LTXVPreprocess`、`LTXVAddGuideMulti`、`LTXVAudioVAEDecode`、`CreateVideo`、`VHS_VideoCombine`、`JWImageSequenceExtractFromBatch`、`ResizeImageMaskNode`、`ResizeLongestToNode`、`LatentUpscaleModelLoader`、`image_scale_pixel_v2`
-
-**缺卡**（1）：`GetImageSize+`
+**有卡**：`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`CM_FloatToInt`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`RandomNoise`、`LTXVSeparateAVLatent`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`LTXVImgToVideoConditionOnly`、`GetImageSize+`、`LTXVLatentUpsampler`、`LoadImage`、`PrimitiveBoolean`、`VAEDecodeTiled`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`ImageResizeKJv2`、`LTXVPreprocess`、`LTXVAddGuideMulti`、`LTXVAudioVAEDecode`、`CreateVideo`、`VHS_VideoCombine`、`JWImageSequenceExtractFromBatch`、`ResizeImageMaskNode`、`ResizeLongestToNode`、`LatentUpscaleModelLoader`、`image_scale_pixel_v2`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RhartVideoSparkvideo20FastMultimodalVideo+全节点注释_2052012439998345217.json
 hash: c8dc88deb666ce12
 coverage: 0.529412
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:53
 nodes: [LoadImage, LoadVideo, RH_SparkVideoAssetCreate, RH_SparkVideoAssetQuery, RH_SparkVideoAssetIdsMerge, RH_RhartVideoSparkvideo20FastMultimodalVideo, SaveVideo, LoadAudio, Note, Note, Note, Note, Note, Note, Note, Note, LoadImage]
 patterns: []
 missing: []

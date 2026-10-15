@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/HunyuanVideo-1.5-Rapid-AIO工作流_1993380962350333954.json
 hash: 0471e0d6a73e046f
 coverage: 0.916667
-learned_at: 2026-10-11 02:57:35
+learned_at: 2026-10-15 22:44:28
 nodes: [ModelSamplingSD3, VAEDecodeTiled, CLIPTextEncode, KSampler, LoadImage, CLIPTextEncode, CheckpointLoaderSimple, VHS_VideoCombine, HunyuanVideo15ImageToVideo, CLIPVisionLoader, CLIPVisionEncode, Note]
 patterns: []
 missing: []

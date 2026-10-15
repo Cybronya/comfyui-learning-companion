@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5-多参考图视频工作流_2092147662144491522.json
 hash: 9b1e4bb318c4be97
-coverage: 0.485507
-learned_at: 2026-10-11 21:19:42
+coverage: 0.543478
+learned_at: 2026-10-15 22:45:16
 nodes: [TrimAudioDuration, LTXVAudioVAEEncode, GetNode, SetNode, SetNode, GetNode, SetNode, INTConstant, INTConstant, LTXVEmptyLatentAudio, GetNode, GetNode, EmptyLTXVLatentVideo, LTXVConditioning, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVCropGuides, LTXVConcatAVLatent, PathchSageAttentionKJ, SetNode, SetNode, CLIPLoader, SetNode, VAELoaderKJ, SetNode, VAELoaderKJ, SetNode, SetNode, INTConstant, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, LoadAudio, PrimitiveBoolean, SetNode, GetNode, ComfyMathExpression, CM_IntToFloat, GetNode, GetNode, GetNode, ComfyMathExpression, ComfyMathExpression, CM_IntToFloat, CLIPTextEncode, CLIPTextEncode, SetNode, SetNode, LatentUpscaleModelLoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CM_IntToFloat, GetNode, VHS_VideoCombine, GetNode, LTXVConditioning, CFGGuider, RandomNoise, KSamplerSelect, LTXVConcatAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, LTXVAudioVAEDecode, VAEDecodeTiled, SetNode, VHS_VideoCombine, SamplerCustomAdvanced, GetNode, GetNode, SetLatentNoiseMask, Switch any [Crystools], SolidMask, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, LTXVPreprocess, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LTXVPreprocess, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LTXVPreprocess, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LTXVPreprocess, LoadImage, SetNode, LayerUtility: ImageScaleByAspectRatio V2, LTXVPreprocess, LoadImage, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), TextGenerateLTX2Prompt, CLIPLoader, GetNode, GetNode, GetNode, RH_Captioner, ImageConcanate, PrimitiveString, PreviewAny, SetNode, Fast Groups Bypasser (rgthree), ManualSigmas, UNETLoader, StringFunction|pysssss, ComfyUILTX25MSRMultiReferenceGuide, ComfyUILTX25MSRMultiReferenceGuide, MarkdownNote, GetNode, GetNode, ComfyUILTX25MSRICLoRALoader, LoadImage, LoadImage, Text Multiline, INTConstant]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, StringFunction|pysssss, Switch any [Crystools], Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.5-多参考图视频工作流_2092147662144491522.json
@@ -171,21 +170,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **49%**（67/138）
+覆盖率 **54%**（75/138）
 
-**有卡**：`TrimAudioDuration`、`LTXVAudioVAEEncode`、`INTConstant`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoaderKJ`、`LoadAudio`、`PrimitiveBoolean`、`ComfyMathExpression`、`CM_IntToFloat`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`SetLatentNoiseMask`、`SolidMask`、`LTXVPreprocess`、`LoadImage`、`TextGenerateLTX2Prompt`、`RH_Captioner`、`ImageConcanate`、`UNETLoader`、`ComfyUILTX25MSRMultiReferenceGuide`、`ComfyUILTX25MSRICLoRALoader`
-
-**缺卡**（8）：`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`StringFunction|pysssss`、`Switch any [Crystools]`、`Text Multiline`
+**有卡**：`TrimAudioDuration`、`LTXVAudioVAEEncode`、`INTConstant`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoaderKJ`、`LoadAudio`、`PrimitiveBoolean`、`ComfyMathExpression`、`CM_IntToFloat`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`SetLatentNoiseMask`、`Switch any [Crystools]`、`SolidMask`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVPreprocess`、`LoadImage`、`TextGenerateLTX2Prompt`、`RH_Captioner`、`ImageConcanate`、`UNETLoader`、`StringFunction|pysssss`、`ComfyUILTX25MSRMultiReferenceGuide`、`ComfyUILTX25MSRICLoRALoader`、`Text Multiline`
 
 **用到的条目**：CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

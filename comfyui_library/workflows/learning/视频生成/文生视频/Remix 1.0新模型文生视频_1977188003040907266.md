@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Remix 1.0新模型文生视频_1977188003040907266.json
 hash: 4b5354313dfb420c
 coverage: 1
-learned_at: 2026-10-10 23:05:10
+learned_at: 2026-10-15 22:46:53
 nodes: [WanVideoSampler, WanVideoSampler, WanVideoSetRadialAttention, WanVideoSetRadialAttention, WanVideoBlockSwap, WanVideoTorchCompileSettings, WanVideoDecode, INTConstant, INTConstant, CreateCFGScheduleFloatList, WanVideoEmptyEmbeds, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, WanVideoModelLoader, WanVideoModelLoader, WanVideoVAELoader, WanVideoTextEncodeCached]
 patterns: []
 missing: []

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5多模态满血版 超低价格视频生成_2098267753768636418.json
 hash: 78bbac93e466e23b
-coverage: 0.854545
-learned_at: 2026-10-11 21:41:52
+coverage: 0.872727
+learned_at: 2026-10-15 22:46:59
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, PreviewAny, PreviewAny, SaveVideo, LoadVideo, LoadVideo, LoadAudio, LoadAudio, RH_BytedanceSeedance25GlobalTokenMultimodalVideo, LoadImage, LoadImage, LoadImage, LoadVideo, LoadVideo, LoadVideo, LoadImage, LoadImage, LoadAudio, LoadAudio, LoadAudio, CR Prompt Text, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note, SaveImage]
 patterns: [text_to_image]
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Seedance2.5多模态满血版 超低价格视频生成_2098267753768636418.json
@@ -97,11 +97,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **85%**（47/55）
+覆盖率 **87%**（48/55）
 
-**有卡**：`LoadImage`、`SaveVideo`、`LoadVideo`、`LoadAudio`、`RH_BytedanceSeedance25GlobalTokenMultimodalVideo`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CLIPLoader`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`SaveImage`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`LoadImage`、`SaveVideo`、`LoadVideo`、`LoadAudio`、`RH_BytedanceSeedance25GlobalTokenMultimodalVideo`、`CR Prompt Text`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`CLIPLoader`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -112,5 +110,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

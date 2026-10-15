@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json
 hash: bf73fdd35c4d96e1
-coverage: 0.846154
-learned_at: 2026-10-11 19:49:39
+coverage: 0.903846
+learned_at: 2026-10-15 22:45:08
 nodes: [PlaySound|pysssss, PathchSageAttentionKJ, Label (rgthree), PlaySound|pysssss, ModelPatchTorchSettings, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVAudioVAEDecode, VHS_VideoCombine, CLIPTextEncode, LTXDirectorGuide, LTXVConcatAVLatent, LTXVConditioning, CFGGuider, KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, SamplerCustomAdvanced, CFGGuider, LTXVConcatAVLatent, LTXVChunkFeedForward, LTX2SamplingPreviewOverride, LTX2_NAG, LTXVEnhanceAVideoKJ, Note, Note, Note, VAEDecodeTiled, Reroute, VHS_VideoCombine, LTXVSeparateAVLatent, LTXVCropGuides, LTXDirectorGuide, LTXVLatentUpsampler, BasicScheduler, KSamplerSelect, DualCLIPLoaderGGUF, LatentUpscaleModelLoader, VAELoaderKJ, VAELoaderKJ, VAELoaderKJ, UnetLoaderGGUF, LoraLoaderModelOnly, LTXDirector, LoraLoaderModelOnly, LoraLoaderModelOnly, RandomNoise, RandomNoise, LoraLoaderModelOnly, Note]
 patterns: []
-missing: [Label (rgthree), PlaySound|pysssss, PlaySound|pysssss]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3导演节点全功能+清晰度增强工作流_2058746144511062018.json
@@ -78,16 +77,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **85%**（44/52）
+覆盖率 **90%**（47/52）
 
-**有卡**：`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`VHS_VideoCombine`、`CLIPTextEncode`、`LTXDirectorGuide`、`LTXVConcatAVLatent`、`LTXVConditioning`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVChunkFeedForward`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LTXVEnhanceAVideoKJ`、`LTXVLatentUpsampler`、`DualCLIPLoaderGGUF`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`LTXDirector`、`RandomNoise`
-
-**缺卡**（3）：`Label (rgthree)`、`PlaySound|pysssss`、`PlaySound|pysssss`
+**有卡**：`PlaySound|pysssss`、`PathchSageAttentionKJ`、`Label (rgthree)`、`ModelPatchTorchSettings`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`VHS_VideoCombine`、`CLIPTextEncode`、`LTXDirectorGuide`、`LTXVConcatAVLatent`、`LTXVConditioning`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVChunkFeedForward`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LTXVEnhanceAVideoKJ`、`LTXVLatentUpsampler`、`DualCLIPLoaderGGUF`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`LTXDirector`、`RandomNoise`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `PlaySound|pysssss` 知识库中没有该节点类型的任何知识

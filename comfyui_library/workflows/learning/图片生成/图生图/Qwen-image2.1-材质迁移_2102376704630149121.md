@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen-image2.1-材质迁移_2102376704630149121.json
 hash: 3cacec5573ee7cd4
 coverage: 0.818182
-learned_at: 2026-10-10 20:48:09
+learned_at: 2026-10-15 22:25:25
 nodes: [PreviewImage, UNETLoader, CLIPLoader, VAELoader, KSampler, SaveImage, VAEDecode, TextEncodeQwenImage21, Image Comparer (rgthree), LoadImage, LoadImage]
 patterns: []
 missing: []

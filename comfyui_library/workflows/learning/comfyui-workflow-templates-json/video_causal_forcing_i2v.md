@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_causal_forcing_i2v.json
 hash: 150c6ecc976a9dcd
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:50:07
+coverage: 0.6
+learned_at: 2026-10-15 22:24:57
 nodes: [SaveVideo, LoadImage, 96ba6b5d-dd48-49b3-84c3-5b86eafc2a07, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [96ba6b5d-dd48-49b3-84c3-5b86eafc2a07]
-discoveries: [次要节点 `96ba6b5d-dd48-49b3-84c3-5b86eafc2a07` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_causal_forcing_i2v.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `96ba6b5d-dd48-49b3-84c3-5b86eafc2a07` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`SaveVideo`、`LoadImage`
+**有卡**：`SaveVideo`、`LoadImage`、`96ba6b5d-dd48-49b3-84c3-5b86eafc2a07`
 
-**缺卡**（1）：`96ba6b5d-dd48-49b3-84c3-5b86eafc2a07`
-
-**用到的条目**：LoadImage、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `96ba6b5d-dd48-49b3-84c3-5b86eafc2a07` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、96ba6b5d-dd48-49b3-84c3-5b86eafc2a07、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

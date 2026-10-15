@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2-多图首尾帧（待更新）_1985625491241672705.json
 hash: b55c5197011c9188
-coverage: 0.885714
-learned_at: 2026-10-11 02:45:03
+coverage: 0.942857
+learned_at: 2026-10-15 22:47:35
 nodes: [CLIPLoader, CLIPTextEncode, VAELoader, ModelSamplingSD3, ModelSamplingSD3, MarkdownNote, VAEDecode, VHS_VideoCombine, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ApplySageAttention, LoraLoaderModelOnly, ApplySageAttention, ImageResizeKJ, ImageResizeKJ, LayerUtility: PurgeVRAM V2, KSamplerAdvanced, ImageBatchMulti, INTConstant, INTConstant, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, ImageResizeKJ, LoadImage, LoadImage, LoadImage, CLIPTextEncode, AILab_QwenVL, LoraLoaderModelOnly, easy showAnything, WanFirstMiddleLastFrameToVideo]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2]
+missing: []
 parameters: {"cfg": 4, "denoise": "beta57", "sampler_name": 1, "scheduler": "deis_3m_ode", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2-多图首尾帧（待更新）_1985625491241672705.json
@@ -71,15 +70,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **89%**（31/35）
+覆盖率 **94%**（33/35）
 
-**有卡**：`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`ModelSamplingSD3`、`VAEDecode`、`VHS_VideoCombine`、`UNETLoader`、`LoraLoaderModelOnly`、`ApplySageAttention`、`ImageResizeKJ`、`KSamplerAdvanced`、`ImageBatchMulti`、`INTConstant`、`LoadImage`、`AILab_QwenVL`、`WanFirstMiddleLastFrameToVideo`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`
+**有卡**：`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`ModelSamplingSD3`、`VAEDecode`、`VHS_VideoCombine`、`UNETLoader`、`LoraLoaderModelOnly`、`ApplySageAttention`、`ImageResizeKJ`、`LayerUtility: PurgeVRAM V2`、`KSamplerAdvanced`、`ImageBatchMulti`、`INTConstant`、`LoadImage`、`AILab_QwenVL`、`WanFirstMiddleLastFrameToVideo`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识

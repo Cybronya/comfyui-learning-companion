@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/AA-LTX2.0-huanhuan-手动提示词-独立放大插帧_2012426083651555329.json
 hash: a0a67dfa20fc65c8
-coverage: 0.657895
-learned_at: 2026-10-11 03:07:08
+coverage: 0.842105
+learned_at: 2026-10-15 22:43:58
 nodes: [CLIPTextEncode, JWInteger, JWInteger, PainterLTXVtoVideo, ManualSigmas, easy cleanGpuUsed, PainterSamplerLTXV, LTXVAudioVAEDecode, VAEDecode, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, CLIPTextEncode, CR Prompt Text, CR Prompt Text, RH_Translator, Note, Note, VHS_VideoCombine, ShowAnything|Mie, LayerUtility: TextJoin, ShowAnything|Mie, Float, JWInteger, RIFE VFI, JWInteger, JWInteger, VHS_VideoInfo, FlashVSRNode, easy showAnything, easy showAnything, easy showAnything, easy showAnything, CM_IntToFloat, CM_FloatBinaryOperation, VHS_LoadVideo, VHS_VideoCombine]
 patterns: []
-missing: [LayerUtility: TextJoin, RIFE VFI, ShowAnything|Mie, ShowAnything|Mie, easy cleanGpuUsed, CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"checkpoint": "ltx-2-19b-distilled-fp8.safetensors"}
-discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/AA-LTX2.0-huanhuan-手动提示词-独立放大插帧_2012426083651555329.json
@@ -69,20 +68,8 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **66%**（25/38）
+覆盖率 **84%**（32/38）
 
-**有卡**：`CLIPTextEncode`、`JWInteger`、`PainterLTXVtoVideo`、`ManualSigmas`、`PainterSamplerLTXV`、`LTXVAudioVAEDecode`、`VAEDecode`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`RH_Translator`、`VHS_VideoCombine`、`Float`、`VHS_VideoInfo`、`FlashVSRNode`、`CM_IntToFloat`、`CM_FloatBinaryOperation`、`VHS_LoadVideo`
-
-**缺卡**（7）：`LayerUtility: TextJoin`、`RIFE VFI`、`ShowAnything|Mie`、`ShowAnything|Mie`、`easy cleanGpuUsed`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`CLIPTextEncode`、`JWInteger`、`PainterLTXVtoVideo`、`ManualSigmas`、`easy cleanGpuUsed`、`PainterSamplerLTXV`、`LTXVAudioVAEDecode`、`VAEDecode`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`CR Prompt Text`、`RH_Translator`、`VHS_VideoCombine`、`ShowAnything|Mie`、`LayerUtility: TextJoin`、`Float`、`RIFE VFI`、`VHS_VideoInfo`、`FlashVSRNode`、`CM_IntToFloat`、`CM_FloatBinaryOperation`、`VHS_LoadVideo`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、PainterSamplerLTXV、LTXVAudioVAEDecode、LTXAVTextEncoderLoader、LTXVAudioVAELoader
-
-## 学习发现
-
-- 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

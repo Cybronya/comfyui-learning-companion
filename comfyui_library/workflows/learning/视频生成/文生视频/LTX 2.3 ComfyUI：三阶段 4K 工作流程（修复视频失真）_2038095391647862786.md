@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 ComfyUI：三阶段 4K 工作流程（修复视频失真）_2038095391647862786.json
 hash: 87236d5e2efe6336
 coverage: 0.912281
-learned_at: 2026-10-10 23:00:08
+learned_at: 2026-10-15 22:44:31
 nodes: [LoraLoaderModelOnly, ManualSigmas, RandomNoise, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVConditioning, LTXVConcatAVLatent, KSamplerSelect, CFGGuider, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVPreprocess, LTXVEmptyLatentAudio, CM_FloatToInt, GuiderParameters, GuiderParameters, MultimodalGuider, ManualSigmas, KSamplerSelect, CFGGuider, LTXVImgToVideoConditionOnly, SamplerCustomAdvanced, LTXVConcatAVLatent, RandomNoise, Note, Note, LoraLoaderModelOnly, LTXVAudioVAELoader, CheckpointLoaderSimple, LatentUpscaleModelLoader, LoraLoaderModelOnly, ResizeImageMaskNode, LTXAVTextEncoderLoader, Note, VAEDecodeTiled, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CreateVideo, SaveVideo, LoadImage, CLIPTextEncode, CLIPTextEncode, PrimitiveFloat, PrimitiveBoolean, PrimitiveInt, EmptyLTXVLatentVideo, INTConstant, INTConstant]
 patterns: []
 missing: []

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_wan2_1_infinitetalk.json
 hash: 3b7f7029adb969b5
 official: true
-coverage: 0.611111
-learned_at: 2026-10-10 22:50:36
+coverage: 0.722222
+learned_at: 2026-10-15 22:24:58
 nodes: [CreateVideo, LoadAudio, PrimitiveInt, PrimitiveInt, AudioConcat, CreateVideo, SaveVideo, MarkdownNote, SaveVideo, LoadImage, LoadAudio, MarkdownNote, MarkdownNote, BatchImagesNode, Painter, Painter, f94665ea-d4c0-44ce-b3fb-9af101983ff5, dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55]
 patterns: []
-missing: [dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55, f94665ea-d4c0-44ce-b3fb-9af101983ff5]
-discoveries: [次要节点 `dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55` 知识库中没有该节点类型的任何知识, 次要节点 `f94665ea-d4c0-44ce-b3fb-9af101983ff5` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_wan2_1_infinitetalk.json
@@ -45,15 +44,8 @@ discoveries: [次要节点 `dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55` 知识库中�
 
 ## 知识
 
-覆盖率 **61%**（11/18）
+覆盖率 **72%**（13/18）
 
-**有卡**：`CreateVideo`、`LoadAudio`、`AudioConcat`、`SaveVideo`、`LoadImage`、`BatchImagesNode`、`Painter`
+**有卡**：`CreateVideo`、`LoadAudio`、`AudioConcat`、`SaveVideo`、`LoadImage`、`BatchImagesNode`、`Painter`、`f94665ea-d4c0-44ce-b3fb-9af101983ff5`、`dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55`
 
-**缺卡**（2）：`dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55`、`f94665ea-d4c0-44ce-b3fb-9af101983ff5`
-
-**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、CreateVideo、LoadAudio、AudioConcat、Painter、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55` 知识库中没有该节点类型的任何知识
-- 次要节点 `f94665ea-d4c0-44ce-b3fb-9af101983ff5` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveVideo、BatchImagesNode、CreateVideo、LoadAudio、AudioConcat、Painter、dbb8b58f-7b4a-479d-bfc2-9edf7fce7a55

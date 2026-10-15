@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/真人视频终于不崩了！Seedance2.0单帧就能生成｜全参可调工作流，拿过去直接改_2065000646234951681.json
 hash: e2ce2aa9f78d20cf
 coverage: 0.9
-learned_at: 2026-10-11 20:21:36
+learned_at: 2026-10-15 22:48:56
 nodes: [SaveVideo, LoadVideo, LoadVideo, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadAudio, LoadVideo, LoadImage, LoadImage, LoadAudio, PreviewAny, SaveImage, PreviewAny, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo]
 patterns: []
 missing: []

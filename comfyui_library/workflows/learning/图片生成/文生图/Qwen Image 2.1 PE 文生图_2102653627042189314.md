@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 PE 文生图_2102653627042189314.json
 hash: 59082f566bc67fd0
-coverage: 0.736842
-learned_at: 2026-10-10 20:58:50
+coverage: 0.842105
+learned_at: 2026-10-15 22:26:57
 nodes: [QwenImage21Cache, QwenPERewriteT8, CLIPLoader, easy showAnything, VAEDecode, CR Prompt Text, easy cleanGpuUsed, SaveImage, TextEncodeQwenImage21, QwenImage21SageAttentionT8, QwenImage21BlockCacheT8, UNETLoader, QwenImage21SpectrumT8, KSampler, Note, VAELoader, ResolutionSelector, EmptyLatentImage, ComfySwitchNode]
 patterns: []
-missing: [easy cleanGpuUsed, CR Prompt Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 19960422, "steps": 40, "width": 1024}
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Qwen Image 2.1 PE 文生图_2102653627042189314.json
@@ -21,48 +20,45 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（19 个）：
 - `QwenImage21Cache`
 - `QwenPERewriteT8`
 - `CLIPLoader`
 - `easy showAnything`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `CR Prompt Text`
 - `easy cleanGpuUsed`
 - `SaveImage`
 - `TextEncodeQwenImage21`
 - `QwenImage21SageAttentionT8`
 - `QwenImage21BlockCacheT8`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `QwenImage21SpectrumT8`
-- `KSampler`
+- `KSampler` ★核心
 - `Note`
 - `VAELoader`
 - `ResolutionSelector`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `ComfySwitchNode`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `19960422`
 - `steps` = `40`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **74%**（14/19）
+覆盖率 **84%**（16/19）
 
-**有卡**：`QwenImage21Cache`、`QwenPERewriteT8`、`CLIPLoader`、`easy showAnything`、`VAEDecode`、`CR Prompt Text`、`easy cleanGpuUsed`、`SaveImage`、`TextEncodeQwenImage21`、`QwenImage21SageAttentionT8`、`QwenImage21BlockCacheT8`、`UNETLoader`、`QwenImage21SpectrumT8`、`KSampler`
+**有卡**：`QwenImage21Cache`、`QwenPERewriteT8`、`CLIPLoader`、`VAEDecode`、`CR Prompt Text`、`easy cleanGpuUsed`、`SaveImage`、`TextEncodeQwenImage21`、`QwenImage21SageAttentionT8`、`QwenImage21BlockCacheT8`、`UNETLoader`、`QwenImage21SpectrumT8`、`KSampler`、`VAELoader`、`ResolutionSelector`、`EmptyLatentImage`
 
-**缺卡**（2）：`easy cleanGpuUsed`、`CR Prompt Text`
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、QwenImage21Cache

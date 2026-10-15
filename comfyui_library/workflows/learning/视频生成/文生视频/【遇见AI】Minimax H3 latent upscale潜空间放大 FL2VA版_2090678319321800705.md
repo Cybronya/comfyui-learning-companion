@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】Minimax H3 latent upscale潜空间放大 FL2VA版_2090678319321800705.json
 hash: 381765e73e2ff586
 coverage: 0.944444
-learned_at: 2026-10-11 21:19:52
+learned_at: 2026-10-15 22:47:42
 nodes: [VAEDecodeAudio, VAEDecodeAudio, ComfyMathExpression, VAEDecode, KSamplerSelect, BasicGuider, CreateVideo, LTXVConcatAVLatent, BasicGuider, LTXVSeparateAVLatent, RandomNoise, RandomNoise, ManualSigmas, ManualSigmas, VAEDecode, SamplerCustomAdvanced, ModelAttentionBackend, SplitSigmas, BasicScheduler, ManualSigmas, SamplerCustomAdvanced, MiniMaxH3ImageToVideo, ResolutionSelector, MiniMaxH3SigmaShift, PrimitiveFloat, VHS_VideoCombine, MarkdownNote, LoadImage, LoadImage, UNETLoader, CLIPLoader, VAELoader, VAELoader, LoraLoaderModelOnly, SaveVideo, MinimaxH3LatentUpscaler3D]
 patterns: []
 missing: []

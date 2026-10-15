@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Kling_VideoO1TextToVideo_v1.0_2033816465194885121.json
 hash: 1bdc2d5fb7c03929
 coverage: 1
-learned_at: 2026-10-11 03:48:34
+learned_at: 2026-10-15 22:44:30
 nodes: [SaveVideo, RH_KlingVideoO1TextToVideo]
 patterns: []
 missing: []

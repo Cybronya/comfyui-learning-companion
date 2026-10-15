@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频S文生视频V2（支持横版及HD-RH API版-国庆0.05元_10秒）_1973424611855568897.json
 hash: 466f1cd05483312f
-coverage: 0.333333
-learned_at: 2026-10-10 23:11:28
+coverage: 0.5
+learned_at: 2026-10-15 22:47:58
 nodes: [easy showAnything, SaveVideo, CR Prompt Text, RH_Sora2_T2V, PrimitiveNode, easy showAnything]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/全能视频S文生视频V2（支持横版及HD-RH API版-国庆0.05元_10秒）_1973424611855568897.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **33%**（2/6）
+覆盖率 **50%**（3/6）
 
-**有卡**：`SaveVideo`、`RH_Sora2_T2V`
+**有卡**：`SaveVideo`、`CR Prompt Text`、`RH_Sora2_T2V`
 
-**缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：SaveVideo、RH_Sora2_T2V、sd15-t2i-basic、sd15-t2i-lora、node、Text、CLIPTextEncode、CLIPLoader
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：CR Prompt Text、SaveVideo、RH_Sora2_T2V、sd15-t2i-basic、sd15-t2i-lora、node、Text、CLIPTextEncode

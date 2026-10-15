@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.1-720P-SLG-文生视频_1902680529605668865.json
 hash: 22320e6e62600b73
 coverage: 0.9375
-learned_at: 2026-10-10 23:06:32
+learned_at: 2026-10-15 22:47:08
 nodes: [CLIPLoader, CLIPTextEncode, VAEDecode, KSampler, PathchSageAttentionKJ, ModelSamplingSD3, TorchCompileModelWanVideo, VHS_VideoCombine, WanVideoEnhanceAVideoKJ, CLIPTextEncode, SkipLayerGuidanceWanVideo, Note, VAELoader, UNETLoader, WanVideoTeaCacheKJ, EmptyHunyuanLatentVideo]
 patterns: []
 missing: []

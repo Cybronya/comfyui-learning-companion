@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/四人多人音色剧本对话VibeVoice Multiple Speakers_2058126119005679618.json
 hash: ea101cb89df1f7b5
 coverage: 0.833333
-learned_at: 2026-10-11 19:49:47
+learned_at: 2026-10-15 22:48:21
 nodes: [LoadAudio, LoadAudio, LoadAudio, VibeVoiceMultipleSpeakersNode, SaveAudio, Note]
 patterns: []
 missing: []

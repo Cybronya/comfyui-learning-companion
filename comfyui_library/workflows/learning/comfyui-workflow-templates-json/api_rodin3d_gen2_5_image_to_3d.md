@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_rodin3d_gen2
 hash: 4b9ae772a38c94ba
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:51
+learned_at: 2026-10-15 22:24:51
 nodes: [Rodin3D_Gen25_Image, LoadImage, SaveGLB]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`Rodin3D_Gen25_Image`、`LoadImage`、`SaveGLB`
 
-**用到的条目**：LoadImage、SaveGLB、Rodin3D_Gen25_Image、sd15-t2i-basic、sd15-t2i-lora、Rodin3D_Gen2、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveGLB、Rodin3D_Gen25_Image、sd15-t2i-basic、sd15-t2i-lora、Image Save、Rodin3D_Gen2、Image Load

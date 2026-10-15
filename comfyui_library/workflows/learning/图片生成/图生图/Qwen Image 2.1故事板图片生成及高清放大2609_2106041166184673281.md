@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json
 hash: 614e6023fef7cc8f
-coverage: 0.647059
-learned_at: 2026-10-10 20:48:07
+coverage: 0.735294
+learned_at: 2026-10-15 22:25:16
 nodes: [MarkdownNote, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, VAEDecode, easy imageSplitGrid, GetImageSize, EmptyLatentImage, ResolutionSelector, EmptyImage, easy forLoopStart, ImageFromBatch, GetNode, GetNode, Note, KSampler, KSampler, VAEDecode, ImageScaleBy, GetImageSize, CenterCropImages, BatchImagesNode, easy forLoopEnd, GetNode, ImageFromBatch, LoadImage, SaveImage, TextEncodeQwenImage21, TextEncodeQwenImage21, SaveImage, SetNode, SetNode, PreviewImage]
 patterns: []
-missing: [easy forLoopEnd, easy forLoopStart, easy imageSplitGrid]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 379815079493169, "steps": 25, "width": 1024}
-discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSplitGrid` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1故事板图片生成及高清放大2609_2106041166184673281.json
@@ -73,16 +72,8 @@ discoveries: [次要节点 `easy forLoopEnd` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **65%**（22/34）
+覆盖率 **74%**（25/34）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`GetImageSize`、`EmptyLatentImage`、`ResolutionSelector`、`EmptyImage`、`ImageFromBatch`、`KSampler`、`ImageScaleBy`、`CenterCropImages`、`BatchImagesNode`、`LoadImage`、`SaveImage`、`TextEncodeQwenImage21`
-
-**缺卡**（3）：`easy forLoopEnd`、`easy forLoopStart`、`easy imageSplitGrid`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`easy imageSplitGrid`、`GetImageSize`、`EmptyLatentImage`、`ResolutionSelector`、`EmptyImage`、`easy forLoopStart`、`ImageFromBatch`、`KSampler`、`ImageScaleBy`、`CenterCropImages`、`BatchImagesNode`、`easy forLoopEnd`、`LoadImage`、`SaveImage`、`TextEncodeQwenImage21`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSplitGrid` 知识库中没有该节点类型的任何知识

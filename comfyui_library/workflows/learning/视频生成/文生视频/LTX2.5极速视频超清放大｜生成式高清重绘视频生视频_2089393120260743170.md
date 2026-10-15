@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5极速视频超清放大｜生成式高清重绘视频生视频_2089393120260743170.json
 hash: b80e72ae3c888fb8
 coverage: 0.911111
-learned_at: 2026-10-11 21:19:42
+learned_at: 2026-10-15 22:45:18
 nodes: [LTXVLoopingSampler, CFGGuider, LTXVConditioning, VAEEncodeTiled, CreateVideo, LTXVSpatioTemporalTiledVAEDecode, UNETLoader, RandomNoise, KSamplerSelect, VAELoader, CLIPLoader, GetVideoComponents, LoadVideo, SaveVideo, Yuan_RTXVideoUpscaleH3, CLIPTextEncode, LoraLoaderModelOnly, ManualSigmas, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json
 hash: 6db4572f1fe9ca40
-coverage: 0.909091
-learned_at: 2026-10-11 03:07:08
+coverage: 1
+learned_at: 2026-10-15 22:44:26
 nodes: [VHS_VideoCombine, HYMotionLoadNetwork, HYMotionPreview, HYMotionLoadLLM, HYMotionExportFBX, HYMotionGenerate, HYMotionPreviewAnimation, Preview3D, HYMotionEncodeText, CR Prompt Text, Float]
 patterns: []
-missing: [CR Prompt Text]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/HY-motion 1.0骨骼动画V1_2007835675105693697.json
@@ -37,14 +36,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **91%**（10/11）
+覆盖率 **100%**（11/11）
 
-**有卡**：`VHS_VideoCombine`、`HYMotionLoadNetwork`、`HYMotionPreview`、`HYMotionLoadLLM`、`HYMotionExportFBX`、`HYMotionGenerate`、`HYMotionPreviewAnimation`、`Preview3D`、`HYMotionEncodeText`、`Float`
+**有卡**：`VHS_VideoCombine`、`HYMotionLoadNetwork`、`HYMotionPreview`、`HYMotionLoadLLM`、`HYMotionExportFBX`、`HYMotionGenerate`、`HYMotionPreviewAnimation`、`Preview3D`、`HYMotionEncodeText`、`CR Prompt Text`、`Float`
 
-**缺卡**（1）：`CR Prompt Text`
-
-**用到的条目**：HYMotionEncodeText、Preview3D、HYMotionPreview、HYMotionPreviewAnimation、VHS_VideoCombine、Float、HYMotionExportFBX、HYMotionGenerate
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：HYMotionEncodeText、CR Prompt Text、Preview3D、HYMotionPreview、HYMotionPreviewAnimation、VHS_VideoCombine、Float、HYMotionExportFBX

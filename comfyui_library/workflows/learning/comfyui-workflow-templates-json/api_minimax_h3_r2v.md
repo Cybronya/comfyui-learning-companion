@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_minimax_h3_r
 hash: 09b7e7e63a3a765f
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:45:11
+learned_at: 2026-10-15 22:24:50
 nodes: [LoadImage, SaveVideo, MinimaxHailuo03ReferenceNode]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveVideo`、`MinimaxHailuo03ReferenceNode`
 
-**用到的条目**：LoadImage、SaveVideo、MinimaxHailuo03ReferenceNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、MinimaxHailuo03ReferenceNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、SaveImage

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-T2V-250928-dyno-动效丝滑+速度提升-强烈推荐_1975738907180576770.json
 hash: d7b7a014e43394a2
-coverage: 0.777778
-learned_at: 2026-10-10 23:07:15
+coverage: 0.833333
+learned_at: 2026-10-15 22:47:12
 nodes: [CLIPTextEncode, Note, MarkdownNote, ModelSamplingSD3, EmptyHunyuanLatentVideo, VAEDecode, ModelSamplingSD3, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, Note, easy int, UNETLoader, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, VHS_VideoCombine]
 patterns: []
-missing: [easy int]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2-T2V-250928-dyno-动效丝滑+速度提升-强烈推荐_1975738907180576770.json
@@ -54,14 +53,8 @@ discoveries: [次要节点 `easy int` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **78%**（14/18）
+覆盖率 **83%**（15/18）
 
-**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`VHS_VideoCombine`
-
-**缺卡**（1）：`easy int`
+**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`KSamplerAdvanced`、`easy int`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

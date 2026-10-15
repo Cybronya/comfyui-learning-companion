@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
 hash: 225bc956f4a7f18f
-coverage: 0.666667
-learned_at: 2026-10-10 20:59:12
+coverage: 1
+learned_at: 2026-10-15 22:27:32
 nodes: [MuyeTextEditOutput, SaveVideo, RH_SeedanceV15ProTextToVideoFast]
 patterns: []
-missing: [RH_SeedanceV15ProTextToVideoFast]
-discoveries: [次要节点 `RH_SeedanceV15ProTextToVideoFast` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 图片生成/文生图/Seedance 1.5 Pro Fast｜文生视频｜支持1080P_2097534454628700162.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `RH_SeedanceV15ProTextToVideoFast` 仅有 KSampler �
 
 ## 结构
 
+**生成流程**：Output → Other
+
 **节点**（3 个）：
 - `MuyeTextEditOutput`
 - `SaveVideo`
@@ -27,12 +28,8 @@ discoveries: [次要节点 `RH_SeedanceV15ProTextToVideoFast` 仅有 KSampler �
 
 ## 知识
 
-覆盖率 **67%**（2/3）
+覆盖率 **100%**（3/3）
 
-**有卡**：`MuyeTextEditOutput`、`SaveVideo`
+**有卡**：`MuyeTextEditOutput`、`SaveVideo`、`RH_SeedanceV15ProTextToVideoFast`
 
-**缺卡**（1）：`RH_SeedanceV15ProTextToVideoFast`
-
-## 学习发现
-
-- 次要节点 `RH_SeedanceV15ProTextToVideoFast` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：RH_SeedanceV15ProTextToVideoFast、MuyeTextEditOutput、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、RH_SeedanceV15ProTextToVideo、Seed

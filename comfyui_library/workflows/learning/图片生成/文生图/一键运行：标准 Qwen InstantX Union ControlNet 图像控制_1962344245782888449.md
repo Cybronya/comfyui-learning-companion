@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json
 hash: ba5c0e6b613dd3a1
-coverage: 0.555556
-learned_at: 2026-10-10 20:59:33
+coverage: 0.740741
+learned_at: 2026-10-15 22:28:08
 nodes: [LayerFilter: HDREffects, Anything Everywhere, Anything Everywhere, Anything Everywhere, SetUnionControlNetType, Seed Everywhere, UNETLoader, ModelSamplingAuraFlow, Prompts Everywhere, AIO_Preprocessor, PreviewImage, ControlNetApplySD3, LoadImage, LoraLoaderModelOnly, VAEEncode, ControlNetLoader, CLIPLoader, CLIPTextEncode, ConditioningZeroOut, StringConstantMultiline, PreviewImage, VAELoader, PreviewImage, KSampler (Efficient), KSampler (Efficient), SaveImage, MarkdownNote]
 patterns: []
-missing: [LayerFilter: HDREffects, KSampler (Efficient), KSampler (Efficient), Prompts Everywhere, Seed Everywhere]
+missing: []
 parameters: {"cfg": 2.5, "controlnet_strength": 1, "denoise": 0.5000000000000001, "sampler_name": "euler", "scheduler": "simple", "seed": 451677997825500, "steps": 20}
-discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/一键运行：标准 Qwen InstantX Union ControlNet 图像控制_1962344245782888449.json
@@ -21,6 +20,8 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Output → Other
+
 **节点**（27 个）：
 - `LayerFilter: HDREffects`
 - `Anything Everywhere`
@@ -28,50 +29,42 @@ discoveries: [次要节点 `LayerFilter: HDREffects` 知识库中没有该节点
 - `Anything Everywhere`
 - `SetUnionControlNetType`
 - `Seed Everywhere`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `ModelSamplingAuraFlow`
 - `Prompts Everywhere`
 - `AIO_Preprocessor`
 - `PreviewImage`
-- `ControlNetApplySD3`
+- `ControlNetApplySD3` ★核心
 - `LoadImage`
-- `LoraLoaderModelOnly`
-- `VAEEncode`
+- `LoraLoaderModelOnly` ★核心
+- `VAEEncode` ★核心
 - `ControlNetLoader`
 - `CLIPLoader`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `ConditioningZeroOut`
 - `StringConstantMultiline`
 - `PreviewImage`
 - `VAELoader`
 - `PreviewImage`
-- `KSampler (Efficient)`
-- `KSampler (Efficient)`
+- `KSampler (Efficient)` ★核心
+- `KSampler (Efficient)` ★核心
 - `SaveImage`
 - `MarkdownNote`
 
 ## 关键参数
 
-- `cfg` = `2.5`
 - `controlnet_strength` = `1`
-- `denoise` = `0.5000000000000001`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `451677997825500`
 - `steps` = `20`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.5000000000000001`
 
 ## 知识
 
-覆盖率 **56%**（15/27）
+覆盖率 **74%**（20/27）
 
-**有卡**：`LayerFilter: HDREffects`、`Anything Everywhere`、`SetUnionControlNetType`、`Seed Everywhere`、`UNETLoader`、`ModelSamplingAuraFlow`、`Prompts Everywhere`、`AIO_Preprocessor`、`PreviewImage`、`ControlNetApplySD3`、`LoadImage`、`LoraLoaderModelOnly`、`VAEEncode`
+**有卡**：`LayerFilter: HDREffects`、`SetUnionControlNetType`、`Seed Everywhere`、`UNETLoader`、`ModelSamplingAuraFlow`、`Prompts Everywhere`、`AIO_Preprocessor`、`ControlNetApplySD3`、`LoadImage`、`LoraLoaderModelOnly`、`VAEEncode`、`ControlNetLoader`、`CLIPLoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`StringConstantMultiline`、`VAELoader`、`KSampler (Efficient)`、`SaveImage`
 
-**缺卡**（5）：`LayerFilter: HDREffects`、`KSampler (Efficient)`、`KSampler (Efficient)`、`Prompts Everywhere`、`Seed Everywhere`
-
-## 学习发现
-
-- 次要节点 `LayerFilter: HDREffects` 知识库中没有该节点类型的任何知识
-- 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 核心节点 `KSampler (Efficient)` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `Prompts Everywhere` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader、ControlNetLoader

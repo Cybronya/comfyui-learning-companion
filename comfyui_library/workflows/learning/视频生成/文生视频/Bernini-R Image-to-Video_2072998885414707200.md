@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Bernini-R Image-to-Video_2072998885414707200.json
 hash: 135386c8ccb7023e
 coverage: 0.692308
-learned_at: 2026-10-11 20:21:23
+learned_at: 2026-10-15 22:44:04
 nodes: [Note, UNETLoader, UNETLoader, MarkdownNote, Note, PreviewAny, VAELoader, CLIPTextEncode, CLIPLoader, KSamplerAdvanced, CLIPTextEncode, VAEDecode, StringReplace, StringReplace, PreviewAny, RHLLMChatNode, PrimitiveInt, easy showAnything, easy showAnything, KSamplerAdvanced, easy showAnything, image_scale_pixel_v2, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveInt, PrimitiveInt, PathchSageAttentionKJ, PathchSageAttentionKJ, SaveVideo, LoadImage, BerniniConditioning, BerniniPromptEnhancer, Text, CreateVideo, PrimitiveFloat]
 patterns: []
 missing: []

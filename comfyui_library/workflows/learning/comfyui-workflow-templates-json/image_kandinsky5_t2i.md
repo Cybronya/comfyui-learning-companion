@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_kandinsky5_t2i.json
 hash: f542cd9150f8b2e0
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:48:06
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:54
 nodes: [MarkdownNote, SaveImage, 7aad998c-49e7-433f-bfb9-b1ac2680aa9e]
 patterns: []
-missing: [7aad998c-49e7-433f-bfb9-b1ac2680aa9e]
-discoveries: [次要节点 `7aad998c-49e7-433f-bfb9-b1ac2680aa9e` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_kandinsky5_t2i.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `7aad998c-49e7-433f-bfb9-b1ac2680aa9e` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（1/3）
+覆盖率 **67%**（2/3）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`7aad998c-49e7-433f-bfb9-b1ac2680aa9e`
 
-**缺卡**（1）：`7aad998c-49e7-433f-bfb9-b1ac2680aa9e`
-
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext、easy_savevideo
-
-## 学习发现
-
-- 次要节点 `7aad998c-49e7-433f-bfb9-b1ac2680aa9e` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、7aad998c-49e7-433f-bfb9-b1ac2680aa9e、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext

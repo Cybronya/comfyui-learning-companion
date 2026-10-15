@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/qwen_image_2.1提示词扩写｜一句话自动扩成专业描述｜文生图更省心_2102309278647406593.json
 hash: 0d427958ec77af70
 coverage: 0.761194
-learned_at: 2026-10-11 22:12:49
+learned_at: 2026-10-15 22:47:30
 nodes: [SaveImage, CLIPLoader, EmptyLatentImage, Reroute, UNETLoader, CLIPLoader, Reroute, easy showAnything, Reroute, Reroute, VAELoader, Reroute, Reroute, TextGenerate, Reroute, VAEDecode, Reroute, Reroute, Reroute, Reroute, TextEncodeQwenImage21, ResolutionSelector, KSampler, PrimitiveStringMultiline, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: []

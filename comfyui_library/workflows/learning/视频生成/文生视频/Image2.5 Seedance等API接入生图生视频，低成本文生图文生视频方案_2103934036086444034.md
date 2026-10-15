@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Image2.5 Seedance等API接入生图生视频，低成本文生图文生视频方案_2103934036086444034.json
 hash: 28b953aee03d9a77
 coverage: 0.885714
-learned_at: 2026-10-11 22:12:33
+learned_at: 2026-10-15 22:44:28
 nodes: [RH_Screenwriter, LoadImage, SaveImage, WujiUpscaler2, WujiAPI, WujiClosedSourceGenerator, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
 hash: 057736a357757742
-coverage: 0.666667
-learned_at: 2026-10-10 20:58:48
+coverage: 0.8
+learned_at: 2026-10-15 22:26:53
 nodes: [VAELoader, DualCLIPLoader, SaveImage, VAEDecode, KSampler, ConditioningZeroOut, easy showAnything, RH_Translator, CLIPTextEncode, CR SDXL Aspect Ratio, MarkdownNote, MarkdownNote, UNETLoader, NunchakuFluxDiTLoader, Text Multiline]
 patterns: []
-missing: [Text Multiline, CR SDXL Aspect Ratio]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 299977613053003, "steps": 20}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Nunchaku极速版本-Flux.1-Krea-Dev文生图-无AI味逼真质感_1951205710673719298.json
@@ -21,41 +20,38 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（15 个）：
 - `VAELoader`
 - `DualCLIPLoader`
 - `SaveImage`
-- `VAEDecode`
-- `KSampler`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
 - `ConditioningZeroOut`
 - `easy showAnything`
 - `RH_Translator`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `CR SDXL Aspect Ratio`
 - `MarkdownNote`
 - `MarkdownNote`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `NunchakuFluxDiTLoader`
 - `Text Multiline`
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `299977613053003`
 - `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **67%**（10/15）
+覆盖率 **80%**（12/15）
 
-**有卡**：`VAELoader`、`DualCLIPLoader`、`SaveImage`、`VAEDecode`、`KSampler`、`ConditioningZeroOut`、`easy showAnything`、`RH_Translator`、`CLIPTextEncode`、`CR SDXL Aspect Ratio`
+**有卡**：`VAELoader`、`DualCLIPLoader`、`SaveImage`、`VAEDecode`、`KSampler`、`ConditioningZeroOut`、`RH_Translator`、`CLIPTextEncode`、`CR SDXL Aspect Ratio`、`UNETLoader`、`NunchakuFluxDiTLoader`、`Text Multiline`
 
-**缺卡**（2）：`Text Multiline`、`CR SDXL Aspect Ratio`
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、ConditioningZeroOut、DualCLIPLoader、NunchakuFluxDiTLoader

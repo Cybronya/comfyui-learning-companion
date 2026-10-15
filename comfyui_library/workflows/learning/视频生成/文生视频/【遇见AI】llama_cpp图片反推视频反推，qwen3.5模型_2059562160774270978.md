@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】llama_cpp图片反推视频反推，qwen3.5模型_2059562160774270978.json
 hash: 9deb1e681f49389b
 coverage: 0.777778
-learned_at: 2026-10-11 19:49:46
+learned_at: 2026-10-15 22:47:43
 nodes: [ShowText|pysssss, llama_cpp_instruct_adv, llama_cpp_parameters, LoadImage, MarkdownNote, LoadImage, llama_cpp_model_loader, LoadImage, SaveImage]
 patterns: []
 missing: []
@@ -38,4 +38,4 @@ missing: []
 
 **有卡**：`llama_cpp_instruct_adv`、`llama_cpp_parameters`、`LoadImage`、`llama_cpp_model_loader`、`SaveImage`
 
-**用到的条目**：LoadImage、SaveImage、llama_cpp_instruct_adv、llama_cpp_model_loader、llama_cpp_parameters、sd15-t2i-basic、sd15-t2i-lora、ShowText
+**用到的条目**：LoadImage、SaveImage、llama_cpp_instruct_adv、llama_cpp_model_loader、llama_cpp_parameters、sd15-t2i-basic、sd15-t2i-lora、Image Save

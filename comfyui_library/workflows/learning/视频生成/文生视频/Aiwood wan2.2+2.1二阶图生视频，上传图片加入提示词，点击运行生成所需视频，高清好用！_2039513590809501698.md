@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Aiwood wan2.2+2.1二阶图生视频，上传图片加入提示词，点击运行生成所需视频，高清好用！_2039513590809501698.json
 hash: c32e95cfc8110684
 coverage: 0.9375
-learned_at: 2026-10-11 19:49:33
+learned_at: 2026-10-15 22:44:02
 nodes: [CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, MarkdownNote, CLIPTextEncode, KSamplerAdvanced, VAEDecode, KSamplerAdvanced, VHS_VideoCombine, UNETLoader, CLIPLoader, VAELoader, WanImageToVideo, LoraLoaderModelOnly, UNETLoader, LoadImage]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.1图生图单帧细节增强洗图(TTP)_2034438567707021314.json
 hash: d43877e709ae6693
-coverage: 0.76
-learned_at: 2026-10-11 03:48:38
+coverage: 0.86
+learned_at: 2026-10-15 22:47:03
 nodes: [UNETLoader, CLIPLoader, MarkdownNote, Note, Text Concatenate, easy showAnything, Text Multiline, RH_Captioner, Note, LoraLoader, LoraLoader, VAEDecode, ImageSharpen, MarkdownNote, VAEEncode, BetterFilmGrain, Text Multiline, CLIPTextEncode, VAELoader, PathchSageAttentionKJ, CLIPTextEncode, EsesImageEffectBloom, VAEDecodeTiled, KSampler, VAEEncode, ImpactImageBatchToImageList, ImageListToImageBatch, TTP_Tile_image_size, TTP_Image_Tile_Batch, UpscaleModelLoader, ImageUpscaleWithModel, ImageScaleBy, CLIPTextEncode, CLIPTextEncode, VAELoader, DualCLIPLoader, PreviewImage, CR Simple Image Compare, SaveImage, LayerFilter: FilmV2, ImageScaleDownToSize, PreviewImage, UNETLoader, SaveImage, SaveImage, ImageScaleDownToSize, TTP_Image_Assy, KSampler, LoraLoader, LoadImage]
 patterns: [image_to_image, lora]
-missing: [CR Simple Image Compare, LayerFilter: FilmV2, Text Concatenate, Text Multiline, Text Multiline]
+missing: []
 parameters: {"cfg": 1, "denoise": 0.20000000000000004, "lora_name": "WAN2.1_SmartphoneSnapshotPhotoReality_v1_by-AI_Characters.safetensors", "sampler_name": "res_2s", "scheduler": "bong_tangent", "seed": 752135304196987, "steps": 10, "strength_clip": 1.0000000000000002, "strength_model": 1.0000000000000002}
-discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识, 次要节点 `LayerFilter: FilmV2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/WAN2.1图生图单帧细节增强洗图(TTP)_2034438567707021314.json
@@ -91,18 +90,8 @@ discoveries: [次要节点 `CR Simple Image Compare` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **76%**（38/50）
+覆盖率 **86%**（43/50）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`RH_Captioner`、`LoraLoader`、`VAEDecode`、`ImageSharpen`、`VAEEncode`、`BetterFilmGrain`、`CLIPTextEncode`、`VAELoader`、`PathchSageAttentionKJ`、`EsesImageEffectBloom`、`VAEDecodeTiled`、`KSampler`、`ImpactImageBatchToImageList`、`ImageListToImageBatch`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`ImageScaleBy`、`DualCLIPLoader`、`SaveImage`、`ImageScaleDownToSize`、`TTP_Image_Assy`、`LoadImage`
-
-**缺卡**（5）：`CR Simple Image Compare`、`LayerFilter: FilmV2`、`Text Concatenate`、`Text Multiline`、`Text Multiline`
+**有卡**：`UNETLoader`、`CLIPLoader`、`Text Concatenate`、`Text Multiline`、`RH_Captioner`、`LoraLoader`、`VAEDecode`、`ImageSharpen`、`VAEEncode`、`BetterFilmGrain`、`CLIPTextEncode`、`VAELoader`、`PathchSageAttentionKJ`、`EsesImageEffectBloom`、`VAEDecodeTiled`、`KSampler`、`ImpactImageBatchToImageList`、`ImageListToImageBatch`、`TTP_Tile_image_size`、`TTP_Image_Tile_Batch`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`ImageScaleBy`、`DualCLIPLoader`、`CR Simple Image Compare`、`SaveImage`、`LayerFilter: FilmV2`、`ImageScaleDownToSize`、`TTP_Image_Assy`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、VAEDecodeTiled
-
-## 学习发现
-
-- 次要节点 `CR Simple Image Compare` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerFilter: FilmV2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

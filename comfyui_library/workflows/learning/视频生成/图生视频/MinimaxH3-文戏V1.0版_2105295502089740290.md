@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json
 hash: 39c9bf4497a265b5
-coverage: 0.571429
-learned_at: 2026-10-10 22:53:50
+coverage: 0.685714
+learned_at: 2026-10-15 22:42:54
 nodes: [SetNode, SetNode, SetNode, SetNode, KSamplerSelect, easy clearCacheAll, ConditioningZeroOut, GetNode, GetNode, H3SigmaRefiner, BasicScheduler, FeiHouEasyH3RHLoader, SetNode, LoraLoaderModelOnly, FeiHouEasyH3RHLoader, FeiHouEasyH3RHOutput, GetNode, MiniMaxH3SemanticBridgeApplyT8, LoraLoaderModelOnly, ModelAttentionBackend, LoraLoaderModelOnly, ModelPreviewOverrideKJ, MarkdownNote, MiniMaxH3SemanticBridgeConfigT8, GetNode, VAEDecodeAudio, GetNode, SelfLiftAvatarH3Sampler, VAEDecode, VHS_VideoCombine, FeiHouEasyH3RH, RunningHub Deepcleaner, VRAM_Debug, Label (rgthree), Label (rgthree)]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), RunningHub Deepcleaner, easy clearCacheAll]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `RunningHub Deepcleaner` 知识库中没有该节点类型的任何知识, 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/图生视频/MinimaxH3-文戏V1.0版_2105295502089740290.json
@@ -61,17 +60,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **57%**（20/35）
+覆盖率 **69%**（24/35）
 
-**有卡**：`KSamplerSelect`、`ConditioningZeroOut`、`H3SigmaRefiner`、`BasicScheduler`、`FeiHouEasyH3RHLoader`、`LoraLoaderModelOnly`、`FeiHouEasyH3RHOutput`、`MiniMaxH3SemanticBridgeApplyT8`、`ModelAttentionBackend`、`ModelPreviewOverrideKJ`、`MiniMaxH3SemanticBridgeConfigT8`、`VAEDecodeAudio`、`SelfLiftAvatarH3Sampler`、`VAEDecode`、`VHS_VideoCombine`、`FeiHouEasyH3RH`、`VRAM_Debug`
-
-**缺卡**（4）：`Label (rgthree)`、`Label (rgthree)`、`RunningHub Deepcleaner`、`easy clearCacheAll`
+**有卡**：`KSamplerSelect`、`easy clearCacheAll`、`ConditioningZeroOut`、`H3SigmaRefiner`、`BasicScheduler`、`FeiHouEasyH3RHLoader`、`LoraLoaderModelOnly`、`FeiHouEasyH3RHOutput`、`MiniMaxH3SemanticBridgeApplyT8`、`ModelAttentionBackend`、`ModelPreviewOverrideKJ`、`MiniMaxH3SemanticBridgeConfigT8`、`VAEDecodeAudio`、`SelfLiftAvatarH3Sampler`、`VAEDecode`、`VHS_VideoCombine`、`FeiHouEasyH3RH`、`RunningHub Deepcleaner`、`VRAM_Debug`、`Label (rgthree)`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、KSamplerSelect、SelfLiftAvatarH3Sampler、VAEDecodeAudio、ModelPreviewOverrideKJ、FeiHouEasyH3RHOutput
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `RunningHub Deepcleaner` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy clearCacheAll` 知识库中没有该节点类型的任何知识

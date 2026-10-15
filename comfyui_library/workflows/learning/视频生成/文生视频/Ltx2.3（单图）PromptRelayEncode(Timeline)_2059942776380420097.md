@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltx2.3（单图）PromptRelayEncode(Timeline)_2059942776380420097.json
 hash: 0bee4bc4dd00c680
-coverage: 0.54
-learned_at: 2026-10-11 19:49:40
+coverage: 0.74
+learned_at: 2026-10-15 22:45:21
 nodes: [SetNode, SetNode, LTXVAudioVAEDecode, easy getNode, easy getNode, easy getNode, LoraLoaderModelOnly, LTXVPreprocess, Int, GetNode, DualCLIPLoader, GetNode, VAELoaderKJ, VAELoaderKJ, SetNode, SetNode, GetNode, easy setNode, EmptyLTXVLatentVideo, Float, easy setNode, LayerUtility: ImageScaleByAspectRatio V2, PathchSageAttentionKJ, SetNode, UNETLoader, easy getNode, GetNode, LTXVSeparateAVLatent, GetNode, VAEDecode, easy setNode, easy setNode, LTXVConditioning, KSamplerSelect, BasicScheduler, LTXVConcatAVLatent, GetNode, LTXVImgToVideoInplaceKJ, LTX2SamplingPreviewOverride, PreviewImage, Int, ConditioningZeroOut, VHS_VideoCombine, VisualizeSigmasKJ, SamplerCustom, Float to Int, LTXVEmptyLatentAudio, GetNode, LoadImage, PromptRelayEncodeTimeline]
 patterns: []
-missing: [Float to Int, LayerUtility: ImageScaleByAspectRatio V2, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, easy setNode]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 489}
-discoveries: [次要节点 `Float to Int` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识, 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Ltx2.3（单图）PromptRelayEncode(Timeline)_2059942776380420097.json
@@ -83,23 +82,8 @@ discoveries: [次要节点 `Float to Int` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **54%**（27/50）
+覆盖率 **74%**（37/50）
 
-**有卡**：`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`LTXVPreprocess`、`Int`、`DualCLIPLoader`、`VAELoaderKJ`、`EmptyLTXVLatentVideo`、`Float`、`PathchSageAttentionKJ`、`UNETLoader`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVConditioning`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplaceKJ`、`LTX2SamplingPreviewOverride`、`ConditioningZeroOut`、`VHS_VideoCombine`、`VisualizeSigmasKJ`、`SamplerCustom`、`LTXVEmptyLatentAudio`、`LoadImage`、`PromptRelayEncodeTimeline`
-
-**缺卡**（10）：`Float to Int`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy getNode`、`easy getNode`、`easy getNode`、`easy getNode`、`easy setNode`、`easy setNode`、`easy setNode`、`easy setNode`
+**有卡**：`LTXVAudioVAEDecode`、`easy getNode`、`LoraLoaderModelOnly`、`LTXVPreprocess`、`Int`、`DualCLIPLoader`、`VAELoaderKJ`、`easy setNode`、`EmptyLTXVLatentVideo`、`Float`、`LayerUtility: ImageScaleByAspectRatio V2`、`PathchSageAttentionKJ`、`UNETLoader`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVConditioning`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplaceKJ`、`LTX2SamplingPreviewOverride`、`ConditioningZeroOut`、`VHS_VideoCombine`、`VisualizeSigmasKJ`、`SamplerCustom`、`Float to Int`、`LTXVEmptyLatentAudio`、`LoadImage`、`PromptRelayEncodeTimeline`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `Float to Int` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy getNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy setNode` 知识库中没有该节点类型的任何知识

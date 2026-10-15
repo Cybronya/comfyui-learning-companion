@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMaxH3与LTX2.5二次采样放大｜长视频画质增强_2096325490230521857.json
 hash: 360e8c66c61be05f
 coverage: 0.931034
-learned_at: 2026-10-11 21:41:48
+learned_at: 2026-10-15 22:46:27
 nodes: [VAELoader, VAELoader, VAEDecodeAudio, KSamplerSelect, BasicScheduler, BasicGuider, VAELoader, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVLatentUpsampler, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, CreateVideo, UNETLoader, VAEDecode, LTXVImgToVideoInplace, LTXAddVideoICLoRAGuide, ImageFromBatch, CreateVideo, GetVideoComponents, RandomNoise, LoadImage, LTXVImgToVideoInplace, LTXVCropGuides, SamplerCustomAdvanced, SaveAudio, VAEDecodeTiled, ComfyMathExpression, MiniMaxH3ReferenceToVideo, SamplerCustomAdvanced, ResolutionSelector, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveFloat, LoraLoaderModelOnly, CLIPLoader, CLIPLoader, UNETLoader, LTXICLoRALoaderModelOnly, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, SaveVideo, SaveVideo, LoadAudio, MiniMaxH3MemoryEfficientSageAttentionPatch, PerturbedAttention, LoadImage, PrimitiveStringMultiline, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
 patterns: [text_to_image]
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Image2.5、Seedance等API接入生图生视频（生图仅需1分钱）_2103047302528192513.json
 hash: f5100d7976a3c7b1
 coverage: 0.857143
-learned_at: 2026-10-11 22:12:33
+learned_at: 2026-10-15 22:44:28
 nodes: [RH_Screenwriter, Note, LoadImage, SaveImage, WujiUpscaler2, WujiAPI, WujiClosedSourceGenerator]
 patterns: []
 missing: []

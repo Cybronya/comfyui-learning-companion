@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文生视频_2029929479480545282.json
 hash: 3e4e6a7433b706bb
-coverage: 0.861111
-learned_at: 2026-10-11 03:16:47
+coverage: 0.888889
+learned_at: 2026-10-15 22:45:10
 nodes: [LTXVScheduler, LatentUpscaleModelLoader, LTXVCropGuides, ImageScaleBy, GetImageSize, LTXVEmptyLatentAudio, LTXVConditioning, EmptyLTXVLatentVideo, LTXVConcatAVLatent, CLIPTextEncode, PrimitiveInt, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVLatentUpsampler, CLIPTextEncode, CreateVideo, LTXVAudioVAELoader, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CFGGuider, PrimitiveFloat, PrimitiveInt, LoraLoaderModelOnly, KSamplerSelect, DualCLIPLoader, PreviewAny, RandomNoise, EmptyImage, LTXAVTextEncoderLoader, CheckpointLoaderSimple, KSampler, SaveVideo, TextGenerateLTX2Prompt, CR Text]
 patterns: []
-missing: [CR Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4000000000000001, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 182620311649531, "steps": 4, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
 # 视频生成/文生视频/LTX2.3文生视频_2029929479480545282.json
@@ -77,11 +77,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **86%**（31/36）
+覆盖率 **89%**（32/36）
 
-**有卡**：`LTXVScheduler`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`ImageScaleBy`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CreateVideo`、`LTXVAudioVAELoader`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CFGGuider`、`LoraLoaderModelOnly`、`KSamplerSelect`、`DualCLIPLoader`、`RandomNoise`、`EmptyImage`、`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`KSampler`、`SaveVideo`、`TextGenerateLTX2Prompt`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`LTXVScheduler`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`ImageScaleBy`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CreateVideo`、`LTXVAudioVAELoader`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CFGGuider`、`LoraLoaderModelOnly`、`KSamplerSelect`、`DualCLIPLoader`、`RandomNoise`、`EmptyImage`、`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`KSampler`、`SaveVideo`、`TextGenerateLTX2Prompt`、`CR Text`
 
 **用到的条目**：KSampler、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
 
@@ -93,6 +91,5 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

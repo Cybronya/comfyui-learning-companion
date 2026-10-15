@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json
 hash: f9a7baf356457704
 official: true
-coverage: 0.833333
-learned_at: 2026-10-10 22:49:09
+coverage: 0.916667
+learned_at: 2026-10-15 22:24:56
 nodes: [LoadVideo, PreviewAny, Video Slice, OpenAIGPTImageNodeV2, ImageFromBatch, GetVideoComponents, LoadImage, SaveVideo, SaveImage, StringConcatenate, ByteDance2ReferenceNodeV2, GeminiNodeV3]
 patterns: []
-missing: [Video Slice]
-discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/template_seedance2_0_viral_videos_character_swap.json
@@ -39,14 +38,8 @@ discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **83%**（10/12）
+覆盖率 **92%**（11/12）
 
-**有卡**：`LoadVideo`、`OpenAIGPTImageNodeV2`、`ImageFromBatch`、`GetVideoComponents`、`LoadImage`、`SaveVideo`、`SaveImage`、`StringConcatenate`、`ByteDance2ReferenceNodeV2`、`GeminiNodeV3`
-
-**缺卡**（1）：`Video Slice`
+**有卡**：`LoadVideo`、`Video Slice`、`OpenAIGPTImageNodeV2`、`ImageFromBatch`、`GetVideoComponents`、`LoadImage`、`SaveVideo`、`SaveImage`、`StringConcatenate`、`ByteDance2ReferenceNodeV2`、`GeminiNodeV3`
 
 **用到的条目**：LoadImage、SaveImage、SaveVideo、GetVideoComponents、ImageFromBatch、LoadVideo、StringConcatenate、ByteDance2ReferenceNodeV2
-
-## 学习发现
-
-- 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识

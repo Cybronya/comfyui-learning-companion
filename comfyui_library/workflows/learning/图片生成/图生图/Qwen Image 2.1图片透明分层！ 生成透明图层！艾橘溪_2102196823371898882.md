@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json
 hash: 68ad9a3778b07c85
-coverage: 0.75
-learned_at: 2026-10-10 20:48:06
+coverage: 0.8
+learned_at: 2026-10-15 22:25:13
 nodes: [MarkdownNote, CLIPLoader, CLIPLoader, BatchImagesNode, EmptyLatentImage, ComfySwitchNode, VAEDecode, QwenImage21Cache, UNETLoader, VAELoader, SaveImage, ResolutionSelector, LoadImage, TextEncodeQwenImage21, Text Multiline, TextCombinerSix, PreviewAny, KSampler, TextGenerateLTX2Prompt, JjkText]
 patterns: []
-missing: [Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 636737422437890, "steps": 50, "width": 1024}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1图片透明分层！ 生成透明图层！艾橘溪_2102196823371898882.json
@@ -59,14 +58,8 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **75%**（15/20）
+覆盖率 **80%**（16/20）
 
-**有卡**：`CLIPLoader`、`BatchImagesNode`、`EmptyLatentImage`、`VAEDecode`、`QwenImage21Cache`、`UNETLoader`、`VAELoader`、`SaveImage`、`ResolutionSelector`、`LoadImage`、`TextEncodeQwenImage21`、`TextCombinerSix`、`KSampler`、`TextGenerateLTX2Prompt`
-
-**缺卡**（1）：`Text Multiline`
+**有卡**：`CLIPLoader`、`BatchImagesNode`、`EmptyLatentImage`、`VAEDecode`、`QwenImage21Cache`、`UNETLoader`、`VAELoader`、`SaveImage`、`ResolutionSelector`、`LoadImage`、`TextEncodeQwenImage21`、`Text Multiline`、`TextCombinerSix`、`KSampler`、`TextGenerateLTX2Prompt`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

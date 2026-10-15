@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_wan2_7_i2v.j
 hash: 8ef289ae571b6248
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:46:41
+learned_at: 2026-10-15 22:24:52
 nodes: [LoadImage, SaveVideo, Wan2ImageToVideoApi]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveVideo`、`Wan2ImageToVideoApi`
 
-**用到的条目**：LoadImage、SaveVideo、Wan2ImageToVideoApi、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、Wan2ImageToVideoApi、sd15-t2i-basic、sd15-t2i-lora、Image Save、SaveImage、CS_Preview_Any

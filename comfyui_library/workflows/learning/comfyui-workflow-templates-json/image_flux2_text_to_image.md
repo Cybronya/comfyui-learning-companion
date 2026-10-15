@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2_text_to_image.json
 hash: 58592f46e85b5b4b
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:48:01
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:54
 nodes: [SaveImage, MarkdownNote, e3a57dc6-b2bf-4d05-927d-3715b40d2a77]
 patterns: []
-missing: [e3a57dc6-b2bf-4d05-927d-3715b40d2a77]
-discoveries: [次要节点 `e3a57dc6-b2bf-4d05-927d-3715b40d2a77` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_flux2_text_to_image.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `e3a57dc6-b2bf-4d05-927d-3715b40d2a77` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（1/3）
+覆盖率 **67%**（2/3）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`e3a57dc6-b2bf-4d05-927d-3715b40d2a77`
 
-**缺卡**（1）：`e3a57dc6-b2bf-4d05-927d-3715b40d2a77`
-
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext、easy_savevideo
-
-## 学习发现
-
-- 次要节点 `e3a57dc6-b2bf-4d05-927d-3715b40d2a77` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、e3a57dc6-b2bf-4d05-927d-3715b40d2a77、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext

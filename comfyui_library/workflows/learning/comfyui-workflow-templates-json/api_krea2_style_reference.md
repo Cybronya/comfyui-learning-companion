@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_krea2_style_
 hash: ea21962fbedc0d3b
 official: true
 coverage: 0.857143
-learned_at: 2026-10-10 22:44:46
+learned_at: 2026-10-15 22:24:49
 nodes: [Krea2ImageNode, SaveImage, Krea2StyleReferenceNode, Krea2StyleReferenceNode, LoadImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []

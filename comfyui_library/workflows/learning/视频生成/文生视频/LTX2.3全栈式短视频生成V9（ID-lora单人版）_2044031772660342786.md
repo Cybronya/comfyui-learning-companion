@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3全栈式短视频生成V9（ID-lora单人版）_2044031772660342786.json
 hash: 620c5fa8b4c4956d
-coverage: 0.636364
-learned_at: 2026-10-11 19:49:38
+coverage: 0.727273
+learned_at: 2026-10-15 22:45:06
 nodes: [PrimitiveStringMultiline, SetNode, SetNode, easy promptLine, easy convertAnything, RegexExtract, ManualSigmas, ComfyMathExpression, LTXVSeparateAVLatent, ManualSigmas, LTXVConcatAVLatent, LTXVSeparateAVLatent, CFGGuider, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, GetNode, GetNode, GetNode, SamplerCustomAdvanced, SamplerCustomAdvanced, CFGGuider, ComfyMathExpression, ComfyMathExpression, LTXVCropGuides, LTXVCropGuides, easy indexAnything, GetNode, LTXVAudioVAEDecode, GetNode, VAEDecodeTiled, TrimVideoLatent, KSamplerSelect, KSamplerSelect, KSamplerSelect, LTXVConcatAVLatent, PrimitiveInt, GetNode, ComfyMathExpression, LTXVLatentUpsampler, LTXVLatentUpsampler, PrimitiveInt, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, CFGGuider, easy forLoopStart, easy forLoopEnd, easy batchAnything, LTXVConditioning, GetNode, LTXVReferenceAudio, INTConstant, INTConstant, GetNode, GetNode, CLIPTextEncode, CLIPTextEncode, easy positive, SetNode, easy positive, LongTextToList, GetNode, GetNode, ShowText|pysssss, SetNode, VAELoaderKJ, DualCLIPLoader, VAELoaderKJ, SetNode, LatentUpscaleModelLoader, SetNode, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, SetNode, LoraLoaderModelOnly, LoadAudio, RandomNoise, RandomNoise, UNETLoader, RandomNoise, VHS_VideoCombine, INTConstant]
 patterns: []
-missing: [easy batchAnything, easy convertAnything, easy forLoopEnd, easy forLoopStart, easy indexAnything, easy positive, easy positive, easy promptLine]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.3全栈式短视频生成V9（ID-lora单人版）_2044031772660342786.json
@@ -121,21 +120,8 @@ discoveries: [次要节点 `easy batchAnything` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **64%**（56/88）
+覆盖率 **73%**（64/88）
 
-**有卡**：`RegexExtract`、`ManualSigmas`、`ComfyMathExpression`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`TrimVideoLatent`、`KSamplerSelect`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`LTXVReferenceAudio`、`INTConstant`、`CLIPTextEncode`、`LongTextToList`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LoadAudio`、`RandomNoise`、`UNETLoader`、`VHS_VideoCombine`
-
-**缺卡**（8）：`easy batchAnything`、`easy convertAnything`、`easy forLoopEnd`、`easy forLoopStart`、`easy indexAnything`、`easy positive`、`easy positive`、`easy promptLine`
+**有卡**：`easy promptLine`、`easy convertAnything`、`RegexExtract`、`ManualSigmas`、`ComfyMathExpression`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`easy indexAnything`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`TrimVideoLatent`、`KSamplerSelect`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`easy forLoopStart`、`easy forLoopEnd`、`easy batchAnything`、`LTXVConditioning`、`LTXVReferenceAudio`、`INTConstant`、`CLIPTextEncode`、`easy positive`、`LongTextToList`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LoadAudio`、`RandomNoise`、`UNETLoader`、`VHS_VideoCombine`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy convertAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

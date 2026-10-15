@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/HUNYUAN 1.5 T2V SR_2073280317422661634.json
 hash: bdf4734ded88d86c
 coverage: 0.965517
-learned_at: 2026-10-11 20:38:33
+learned_at: 2026-10-15 22:44:26
 nodes: [CLIPTextEncode, HunyuanVideo15LatentUpscaleWithModel, BasicScheduler, CFGGuider, ModelSamplingSD3, KSamplerSelect, ModelSamplingSD3, DualCLIPLoader, VAELoader, CFGGuider, PathchSageAttentionKJ, HunyuanVideo15SuperResolution, KSamplerSelect, VHS_VideoCombine, LatentUpscaleModelLoader, RandomNoise, RandomNoise, UNETLoader, PathchSageAttentionKJ, BasicScheduler, CLIPTextEncode, UNETLoader, EmptyHunyuanVideo15Latent, MarkdownNote, SamplerCustomAdvanced, VHS_VideoCombine, VAEDecode, SamplerCustomAdvanced, VAEDecode]
 patterns: []
 missing: []

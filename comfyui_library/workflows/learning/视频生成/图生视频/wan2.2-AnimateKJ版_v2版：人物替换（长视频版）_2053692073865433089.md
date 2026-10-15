@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/wan2.2-AnimateKJ版_v2版：人物替换（长视频版）_2053692073865433089.json
 hash: 736c38112fff58e7
-coverage: 0.7
-learned_at: 2026-10-15 02:41:29
+coverage: 0.86
+learned_at: 2026-10-15 22:42:59
 nodes: [WanVideoTorchCompileSettings, PoseAndFaceDetection, DrawViTPose, WanVideoDecode, LayerUtility: ImageMaskScaleAsV2, WanVideoClipVisionEncode, WanVideoAnimateEmbeds, WanVideoLoraSelectMulti, WanVideoVAELoader, CLIPVisionLoader, WanVideoSetLoRAs, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoSampler, WanVideoTextEncodeCached, Evaluate Integers, easy int, WanVideoContextOptions, GetImageSizeAndCount, WanVideoBlockSwap, easy int, LayerUtility: ImageScaleByAspectRatio V2, DrawMaskOnImage, BlockifyMask, GrowMask, Note, VHS_VideoInfoLoaded, ImageFromBatch, easy int, VHS_VideoCombine, ImageConcatMulti, ImageConcatMulti, PreviewImage, ClothesSegment, Evaluate Integers, OnnxDetectionModelLoader, SeCVideoSegmentation, SeCModelLoader, ImageBlend, easy showAnything, VHS_VideoCombine, VHS_LoadVideo, easy int, PrimitiveStringMultiline, LoadImage, VHS_VideoCombine, MarkdownNote, 孤海注释, PreviewImage, VHS_VideoCombine]
 patterns: []
-missing: [Evaluate Integers, Evaluate Integers, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, easy int, easy int, easy int, easy int]
-discoveries: [次要节点 `Evaluate Integers` 知识库中没有该节点类型的任何知识, 次要节点 `Evaluate Integers` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageMaskScaleAsV2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/图生视频/wan2.2-AnimateKJ版_v2版：人物替换（长视频版）_2053692073865433089.json
@@ -76,21 +75,8 @@ discoveries: [次要节点 `Evaluate Integers` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **70%**（35/50）
+覆盖率 **86%**（43/50）
 
-**有卡**：`WanVideoTorchCompileSettings`、`PoseAndFaceDetection`、`DrawViTPose`、`WanVideoDecode`、`WanVideoClipVisionEncode`、`WanVideoAnimateEmbeds`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`CLIPVisionLoader`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`WanVideoTextEncodeCached`、`WanVideoContextOptions`、`GetImageSizeAndCount`、`WanVideoBlockSwap`、`DrawMaskOnImage`、`BlockifyMask`、`GrowMask`、`VHS_VideoInfoLoaded`、`ImageFromBatch`、`VHS_VideoCombine`、`ImageConcatMulti`、`ClothesSegment`、`OnnxDetectionModelLoader`、`SeCVideoSegmentation`、`SeCModelLoader`、`ImageBlend`、`VHS_LoadVideo`、`LoadImage`
-
-**缺卡**（8）：`Evaluate Integers`、`Evaluate Integers`、`LayerUtility: ImageMaskScaleAsV2`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy int`、`easy int`、`easy int`、`easy int`
+**有卡**：`WanVideoTorchCompileSettings`、`PoseAndFaceDetection`、`DrawViTPose`、`WanVideoDecode`、`LayerUtility: ImageMaskScaleAsV2`、`WanVideoClipVisionEncode`、`WanVideoAnimateEmbeds`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`CLIPVisionLoader`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`WanVideoTextEncodeCached`、`Evaluate Integers`、`easy int`、`WanVideoContextOptions`、`GetImageSizeAndCount`、`WanVideoBlockSwap`、`LayerUtility: ImageScaleByAspectRatio V2`、`DrawMaskOnImage`、`BlockifyMask`、`GrowMask`、`VHS_VideoInfoLoaded`、`ImageFromBatch`、`VHS_VideoCombine`、`ImageConcatMulti`、`ClothesSegment`、`OnnxDetectionModelLoader`、`SeCVideoSegmentation`、`SeCModelLoader`、`ImageBlend`、`VHS_LoadVideo`、`LoadImage`
 
 **用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti
-
-## 学习发现
-
-- 次要节点 `Evaluate Integers` 知识库中没有该节点类型的任何知识
-- 次要节点 `Evaluate Integers` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageMaskScaleAsV2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

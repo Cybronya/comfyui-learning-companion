@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_eric_th
 hash: 6a111f151631a4cd
 official: true
 coverage: 0.666667
-learned_at: 2026-10-10 22:49:02
+learned_at: 2026-10-15 22:24:56
 nodes: [MarkdownNote, SaveImage, LoadImage, BatchImagesNode, GeminiNanoBanana2, Note]
 patterns: []
 missing: []
@@ -36,4 +36,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`BatchImagesNode`、`GeminiNanoBanana2`
 
-**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiNanoBanana2、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiNanoBanana2、sd15-t2i-basic、sd15-t2i-lora、node、Image Batch

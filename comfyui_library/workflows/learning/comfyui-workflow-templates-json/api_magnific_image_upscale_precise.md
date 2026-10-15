@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_magnific_ima
 hash: d5fc09965dae84c6
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:58
+learned_at: 2026-10-15 22:24:50
 nodes: [LoadImage, ImageCompare, MagnificImageUpscalerPreciseV2Node, SaveImage]
 patterns: []
 missing: []

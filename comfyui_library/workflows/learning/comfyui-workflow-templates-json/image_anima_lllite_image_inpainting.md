@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_anima_lllite_image_inpainting.json
 hash: 3707099547db43e7
 official: true
-coverage: 0.6
-learned_at: 2026-10-10 22:47:24
+coverage: 0.7
+learned_at: 2026-10-15 22:24:53
 nodes: [MarkdownNote, SaveImage, ImageCompare, 147b517e-5ea6-4fba-84f7-46851be6e4ce, LoadImage, Painter, MaskPreview, ResizeImageMaskNode, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [147b517e-5ea6-4fba-84f7-46851be6e4ce]
-discoveries: [次要节点 `147b517e-5ea6-4fba-84f7-46851be6e4ce` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_anima_lllite_image_inpainting.json
@@ -37,14 +36,8 @@ discoveries: [次要节点 `147b517e-5ea6-4fba-84f7-46851be6e4ce` 知识库中�
 
 ## 知识
 
-覆盖率 **60%**（6/10）
+覆盖率 **70%**（7/10）
 
-**有卡**：`SaveImage`、`ImageCompare`、`LoadImage`、`Painter`、`MaskPreview`、`ResizeImageMaskNode`
+**有卡**：`SaveImage`、`ImageCompare`、`147b517e-5ea6-4fba-84f7-46851be6e4ce`、`LoadImage`、`Painter`、`MaskPreview`、`ResizeImageMaskNode`
 
-**缺卡**（1）：`147b517e-5ea6-4fba-84f7-46851be6e4ce`
-
-**用到的条目**：LoadImage、ResizeImageMaskNode、SaveImage、MaskPreview、ImageCompare、Painter、sd15-t2i-basic、sd15-t2i-lora
-
-## 学习发现
-
-- 次要节点 `147b517e-5ea6-4fba-84f7-46851be6e4ce` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、ResizeImageMaskNode、SaveImage、MaskPreview、ImageCompare、Painter、147b517e-5ea6-4fba-84f7-46851be6e4ce、sd15-t2i-basic

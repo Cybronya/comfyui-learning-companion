@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_google_nano_
 hash: be0f846e06531f6a
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:02
+learned_at: 2026-10-15 22:24:49
 nodes: [SaveImage, LoadImage, GeminiNanoBanana2V2]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`GeminiNanoBanana2V2`
 
-**用到的条目**：LoadImage、SaveImage、GeminiNanoBanana2V2、sd15-t2i-basic、sd15-t2i-lora、v2、GeminiNanoBanana2、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、GeminiNanoBanana2V2、sd15-t2i-basic、sd15-t2i-lora、v2、GeminiNanoBanana2、Image Load

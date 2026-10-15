@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.5-AIO视频工作流_2087430308756017153.json
 hash: 467dbe70196fc091
-coverage: 0.655556
-learned_at: 2026-10-11 20:53:38
+coverage: 0.677778
+learned_at: 2026-10-15 22:45:16
 nodes: [CFGGuider, KSamplerSelect, SamplerCustomAdvanced, RandomNoise, Reroute, LTXVAudioVAEDecode, LTXVSeparateAVLatent, PrimitiveInt, ComfyMathExpression, TrimAudioDuration, LTXVAudioVAEEncode, SetLatentNoiseMask, LTXVEmptyLatentAudio, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, CFGGuider, CLIPTextEncode, CLIPTextEncode, PathchSageAttentionKJ, RandomNoise, KSamplerSelect, VAELoaderKJ, easy showAnything, ComfyMathExpression, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVLatentUpsampler, LTXVCropGuides, LTXVSeparateAVLatent, SetNode, GetNode, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, LTXVConditioning, SetNode, GetNode, GetNode, GetNode, GetNode, SolidMask, LTXVConcatAVLatent, ComfyMathExpression, ComfyMathExpression, LTXVImgToVideoInplaceKJ, VAEDecodeTiled, PrimitiveInt, ComfyMathExpression, LoadAudio, Note, Switch any [Crystools], LTXVImgToVideoInplaceKJ, UNETLoader, VAELoaderKJ, LatentUpscaleModelLoader, VHS_VideoCombine, ManualSigmas, ManualSigmas, CLIPLoader, CLIPLoader, PrimitiveString, PreviewAny, GetNode, TextGenerateLTX2Prompt, ResizeImageMaskNode, LTXVPreprocess, SetNode, LoadImage, ResizeImageMaskNode, LTXVPreprocess, SetNode, LoadImage, ResizeImageMaskNode, LTXVPreprocess, SetNode, Fast Groups Bypasser (rgthree), INTConstant, LoadImage, PrimitiveBoolean, INTConstant, INTConstant, Text Multiline, MarkdownNote]
 patterns: []
-missing: [Switch any [Crystools], Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.5-AIO视频工作流_2087430308756017153.json
@@ -123,15 +122,8 @@ discoveries: [次要节点 `Switch any [Crystools]` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **66%**（59/90）
+覆盖率 **68%**（61/90）
 
-**有卡**：`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`ComfyMathExpression`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`VAELoaderKJ`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`SolidMask`、`LTXVImgToVideoInplaceKJ`、`VAEDecodeTiled`、`LoadAudio`、`UNETLoader`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`ManualSigmas`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`ResizeImageMaskNode`、`LTXVPreprocess`、`LoadImage`、`INTConstant`、`PrimitiveBoolean`
-
-**缺卡**（2）：`Switch any [Crystools]`、`Text Multiline`
+**有卡**：`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`ComfyMathExpression`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`VAELoaderKJ`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`SolidMask`、`LTXVImgToVideoInplaceKJ`、`VAEDecodeTiled`、`LoadAudio`、`Switch any [Crystools]`、`UNETLoader`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`ManualSigmas`、`CLIPLoader`、`TextGenerateLTX2Prompt`、`ResizeImageMaskNode`、`LTXVPreprocess`、`LoadImage`、`INTConstant`、`PrimitiveBoolean`、`Text Multiline`
 
 **用到的条目**：CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

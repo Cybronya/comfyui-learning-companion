@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_heygen_video
 hash: 5d880ade46f01c86
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:44:23
+learned_at: 2026-10-15 22:24:49
 nodes: [SaveVideo, HeyGenReferenceToVideoNode, LoadImage, LoadImage, MarkdownNote]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`HeyGenReferenceToVideoNode`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveVideo、HeyGenReferenceToVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、HeyGenReferenceToVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、Image Load、SaveImage

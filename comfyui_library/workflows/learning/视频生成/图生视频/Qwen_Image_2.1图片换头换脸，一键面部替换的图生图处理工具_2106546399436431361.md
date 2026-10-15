@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/Qwen_Image_2.1图片换头换脸，一键面部替换的图生图处理工具_2106546399436431361.json
 hash: 9e76c4dc80af090c
 coverage: 0.891304
-learned_at: 2026-10-10 22:53:59
+learned_at: 2026-10-15 22:42:54
 nodes: [QwenImage21Cache, TextEncodeQwenImage21, CLIPLoader, EmptyLatentImage, TextGenerateLTX2Prompt, BatchImagesNode, ComfySwitchNode, VAEDecode, LoadImage, LoadImage, KSampler, VAELoader, CLIPLoader, UNETLoader, SaveImage, ResolutionSelector, JjkText, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
 patterns: [text_to_image]
 missing: []

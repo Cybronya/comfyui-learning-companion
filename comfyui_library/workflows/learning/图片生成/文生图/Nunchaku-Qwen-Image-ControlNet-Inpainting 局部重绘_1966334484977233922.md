@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Nunchaku-Qwen-Image-ControlNet-Inpainting 局部重绘_1966334484977233922.json
 hash: 7c1c0ca1ee3d9f16
 coverage: 0.842105
-learned_at: 2026-10-10 20:58:48
+learned_at: 2026-10-15 22:26:52
 nodes: [VAELoader, VAEEncode, ModelSamplingAuraFlow, ImagePadForOutpaint, PreviewImage, ControlNetLoader, Image Comparer (rgthree), CLIPTextEncode, LoadImage, ImageScaleToTotalPixels, VAEEncode, PreviewImage, CLIPLoader, NunchakuQwenImageDiTLoader, KSampler, CLIPTextEncode, ControlNetInpaintingAliMamaApply, VAEDecode, SaveImage]
 patterns: [image_to_image]
 missing: []
@@ -22,43 +22,47 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（19 个）：
 - `VAELoader`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `ModelSamplingAuraFlow`
 - `ImagePadForOutpaint`
 - `PreviewImage`
 - `ControlNetLoader`
 - `Image Comparer (rgthree)`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `LoadImage`
 - `ImageScaleToTotalPixels`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `PreviewImage`
 - `CLIPLoader`
 - `NunchakuQwenImageDiTLoader`
-- `KSampler`
-- `CLIPTextEncode`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
 - `ControlNetInpaintingAliMamaApply`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 
 **识别到的模式**：image_to_image
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `512928016638163`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **84%**（16/19）
 
-**有卡**：`VAELoader`、`VAEEncode`、`ModelSamplingAuraFlow`、`ImagePadForOutpaint`、`PreviewImage`、`ControlNetLoader`、`Image Comparer (rgthree)`、`CLIPTextEncode`、`LoadImage`、`ImageScaleToTotalPixels`、`CLIPLoader`、`NunchakuQwenImageDiTLoader`、`KSampler`
+**有卡**：`VAELoader`、`VAEEncode`、`ModelSamplingAuraFlow`、`ImagePadForOutpaint`、`ControlNetLoader`、`CLIPTextEncode`、`LoadImage`、`ImageScaleToTotalPixels`、`CLIPLoader`、`NunchakuQwenImageDiTLoader`、`KSampler`、`ControlNetInpaintingAliMamaApply`、`VAEDecode`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、ControlNetInpaintingAliMamaApply、ControlNetLoader
 
 ## 参数体检
 

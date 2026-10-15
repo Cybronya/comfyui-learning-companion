@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Minimax H3-self lift-五图音频数字人-15秒广告v0.1版_2098822905328128001.json
 hash: 1a62b86e6d7cc9ba
-coverage: 0.851852
-learned_at: 2026-10-11 21:41:49
+coverage: 0.888889
+learned_at: 2026-10-15 22:46:34
 nodes: [ConditioningZeroOut, MiniMaxH3AVDecodeT8, LayerUtility: PurgeVRAM V2, H3SigmaRefiner, ComfyMathExpression, KSamplerSelect, MiniMaxChunkFeedForward, VAELoader, VAELoader, MarkdownNote, VHS_VideoCombine, MiniMaxLowVRAMAttention, BasicScheduler, SelfLiftH3Sampler, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, CLIPLoader, MiniMaxH3AudioConditioningT8, PrimitiveFloat, ResolutionSelector, LoadImage, LoadAudio, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveStringMultiline]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2]
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Minimax H3-self lift-五图音频数字人-15秒广告v0.1版_2098822905328128001.json
@@ -53,14 +52,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **85%**（23/27）
+覆盖率 **89%**（24/27）
 
-**有卡**：`ConditioningZeroOut`、`MiniMaxH3AVDecodeT8`、`H3SigmaRefiner`、`ComfyMathExpression`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`VAELoader`、`VHS_VideoCombine`、`MiniMaxLowVRAMAttention`、`BasicScheduler`、`SelfLiftH3Sampler`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`UNETLoader`、`CLIPLoader`、`MiniMaxH3AudioConditioningT8`、`ResolutionSelector`、`LoadImage`、`LoadAudio`
-
-**缺卡**（1）：`LayerUtility: PurgeVRAM V2`
+**有卡**：`ConditioningZeroOut`、`MiniMaxH3AVDecodeT8`、`LayerUtility: PurgeVRAM V2`、`H3SigmaRefiner`、`ComfyMathExpression`、`KSamplerSelect`、`MiniMaxChunkFeedForward`、`VAELoader`、`VHS_VideoCombine`、`MiniMaxLowVRAMAttention`、`BasicScheduler`、`SelfLiftH3Sampler`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`UNETLoader`、`CLIPLoader`、`MiniMaxH3AudioConditioningT8`、`ResolutionSelector`、`LoadImage`、`LoadAudio`
 
 **用到的条目**：VAELoader、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect、SelfLiftH3Sampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识

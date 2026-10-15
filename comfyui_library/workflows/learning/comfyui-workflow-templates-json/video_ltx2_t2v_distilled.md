@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_t2v_distilled.json
 hash: 69af237c3b3bb9d0
 official: true
-coverage: 0.25
-learned_at: 2026-10-10 22:50:26
+coverage: 0.5
+learned_at: 2026-10-15 22:24:58
 nodes: [SaveVideo, MarkdownNote, MarkdownNote, 9b0e709c-82c7-46c0-a2e4-5e96b6f16090]
 patterns: []
-missing: [9b0e709c-82c7-46c0-a2e4-5e96b6f16090]
-discoveries: [次要节点 `9b0e709c-82c7-46c0-a2e4-5e96b6f16090` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_t2v_distilled.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `9b0e709c-82c7-46c0-a2e4-5e96b6f16090` 知识库中�
 
 ## 知识
 
-覆盖率 **25%**（1/4）
+覆盖率 **50%**（2/4）
 
-**有卡**：`SaveVideo`
+**有卡**：`SaveVideo`、`9b0e709c-82c7-46c0-a2e4-5e96b6f16090`
 
-**缺卡**（1）：`9b0e709c-82c7-46c0-a2e4-5e96b6f16090`
-
-**用到的条目**：SaveVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `9b0e709c-82c7-46c0-a2e4-5e96b6f16090` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、9b0e709c-82c7-46c0-a2e4-5e96b6f16090、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput

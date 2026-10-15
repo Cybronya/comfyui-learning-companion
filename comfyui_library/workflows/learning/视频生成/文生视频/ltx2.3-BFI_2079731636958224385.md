@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3-BFI_2079731636958224385.json
 hash: e6f14a204b07666f
 coverage: 0.353535
-learned_at: 2026-10-11 20:38:44
+learned_at: 2026-10-15 22:47:22
 nodes: [GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, StringConcatenate, GetNode, GetNode, SetNode, GetNode, CLIPTextEncode, GetNode, SetNode, CLIPTextEncode, SetNode, SimpleCalculatorKJ, SetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVConditioning, Reroute, Reroute, Reroute, Reroute, RandomNoise, SetNode, SetNode, LTXVSeparateAVLatent, SetNode, SetNode, SetNode, GetNode, VAEDecode, GetNode, SetNode, SetNode, SetNode, SetNode, LTX2SamplingPreviewOverride, CFGGuider, KSamplerSelect, BasicScheduler, GetNode, GetNode, GetNode, ComfyNumberConvert, LTXVEmptyLatentAudio, SetNode, SetNode, GetNode, SamplerCustomAdvanced, GetNode, GetNode, GetNode, LTXVCropGuides, LTXVAudioVAEDecode, LTXVConcatAVLatent, EmptyLTXVLatentVideo, SetNode, GetNode, GetNode, GetNode, MarkdownNote, VHS_VideoCombine, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SetReserveVRAM, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, ImageResizeKJv2, PreviewImage, TextGenerate, StringConcatenate, PreviewAny, PrimitiveFloat, PrimitiveFloat, PrimitiveInt, PrimitiveInt, MarkdownNote, VAELoader, LoadImage, LoadImage, LoraLoaderModelOnly, LTXIdentityOverlapConditioning, PrimitiveStringMultiline]
 patterns: []
 missing: []

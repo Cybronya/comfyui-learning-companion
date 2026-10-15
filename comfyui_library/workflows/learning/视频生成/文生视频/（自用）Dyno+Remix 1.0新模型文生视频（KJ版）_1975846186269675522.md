@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/（自用）Dyno+Remix 1.0新模型文生视频（KJ版）_1975846186269675522.json
 hash: f21bc678658a896f
-coverage: 0.888889
-learned_at: 2026-10-10 23:14:30
+coverage: 0.962963
+learned_at: 2026-10-15 22:49:12
 nodes: [WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader, WanVideoEmptyEmbeds, WanVideoSetLoRAs, WanVideoSampler, WanVideoSampler, Seed (rgthree), INTConstant, INTConstant, CreateCFGScheduleFloatList, PrimitiveFloat, TT_img_enc, SaveImage, WanVideoDecode, FastUnsharpSharpen, JWInteger, JWInteger, JWInteger, WanVideoModelLoader, WanVideoModelLoader, WanVideoTextEncodeCached, CR Prompt Text, LoadImage, SaveImage]
 patterns: []
-missing: [CR Prompt Text, Seed (rgthree)]
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/（自用）Dyno+Remix 1.0新模型文生视频（KJ版）_1975846186269675522.json
@@ -53,15 +52,8 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **89%**（24/27）
+覆盖率 **96%**（26/27）
 
-**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`WanVideoSampler`、`INTConstant`、`CreateCFGScheduleFloatList`、`TT_img_enc`、`SaveImage`、`WanVideoDecode`、`FastUnsharpSharpen`、`JWInteger`、`WanVideoModelLoader`、`WanVideoTextEncodeCached`、`LoadImage`
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`WanVideoSampler`、`Seed (rgthree)`、`INTConstant`、`CreateCFGScheduleFloatList`、`TT_img_enc`、`SaveImage`、`WanVideoDecode`、`FastUnsharpSharpen`、`JWInteger`、`WanVideoModelLoader`、`WanVideoTextEncodeCached`、`CR Prompt Text`、`LoadImage`
 
-**缺卡**（2）：`CR Prompt Text`、`Seed (rgthree)`
-
-**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoSetLoRAs、SaveImage
-
-## 学习发现
-
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、Seed (rgthree)、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoSetLoRAs

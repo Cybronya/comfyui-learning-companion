@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_flux2.json
 hash: ef18a06a5974c73f
 official: true
-coverage: 0.6
-learned_at: 2026-10-10 22:47:33
+coverage: 0.8
+learned_at: 2026-10-15 22:24:53
 nodes: [LoadImage, ImageScaleToTotalPixels, SaveImage, MarkdownNote, 7651d2ae-5471-47b0-b064-b34ee62343c1]
 patterns: []
-missing: [7651d2ae-5471-47b0-b064-b34ee62343c1]
-discoveries: [次要节点 `7651d2ae-5471-47b0-b064-b34ee62343c1` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_flux2.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `7651d2ae-5471-47b0-b064-b34ee62343c1` 知识库中�
 
 ## 知识
 
-覆盖率 **60%**（3/5）
+覆盖率 **80%**（4/5）
 
-**有卡**：`LoadImage`、`ImageScaleToTotalPixels`、`SaveImage`
+**有卡**：`LoadImage`、`ImageScaleToTotalPixels`、`SaveImage`、`7651d2ae-5471-47b0-b064-b34ee62343c1`
 
-**缺卡**（1）：`7651d2ae-5471-47b0-b064-b34ee62343c1`
-
-**用到的条目**：LoadImage、SaveImage、ImageScaleToTotalPixels、sd15-t2i-basic、sd15-t2i-lora、ImageScale、scale、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `7651d2ae-5471-47b0-b064-b34ee62343c1` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、ImageScaleToTotalPixels、7651d2ae-5471-47b0-b064-b34ee62343c1、sd15-t2i-basic、sd15-t2i-lora、ImageScale、scale

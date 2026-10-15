@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0 Global Fast 文生视频｜支持4K_2097617488132530178.json
 hash: d5d6ae8a85c83698
 coverage: 1
-learned_at: 2026-10-11 21:41:51
+learned_at: 2026-10-15 22:46:57
 nodes: [SaveVideo, RH_BytedanceSeedance20GlobalFastTextToVideo]
 patterns: []
 missing: []
@@ -31,4 +31,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`RH_BytedanceSeedance20GlobalFastTextToVideo`
 
-**用到的条目**：RH_BytedanceSeedance20GlobalFastTextToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Text、sampler_name 调整经验、steps 调整经验
+**用到的条目**：RH_BytedanceSeedance20GlobalFastTextToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Text、sampler_name 调整经验

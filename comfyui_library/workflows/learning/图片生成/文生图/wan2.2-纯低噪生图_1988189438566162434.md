@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2-纯低噪生图_1988189438566162434.json
 hash: 277777782df06c53
-coverage: 0.390244
-learned_at: 2026-10-10 20:59:27
+coverage: 0.463415
+learned_at: 2026-10-15 22:27:58
 nodes: [PreviewAny, RH_Translator, RH_Captioner, CLIPLoader, VAELoader, UNETLoader, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, SetNode, SetNode, SaveImage, SetNode, VAEDecode, SetNode, CLIPTextEncode, GetNode, GetNode, CLIPTextEncode, GetNode, GetNode, LoadImage, GetNode, GetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Text Multiline, ModelSamplingSD3, easy seed, SetNode, SetNode, DF_Float, PreviewAny, Text Multiline, INTConstant, KSampler, GetNode, GetNode, SetNode, SetNode, PrimitiveInt, PrimitiveInt]
 patterns: []
-missing: [Text Multiline, Text Multiline, easy seed]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 95494355540032, "steps": 6}
-discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/wan2.2-纯低噪生图_1988189438566162434.json
@@ -22,25 +22,27 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（41 个）：
 - `PreviewAny`
 - `RH_Translator`
 - `RH_Captioner`
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `EmptyHunyuanLatentVideo`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `SetNode`
 - `SetNode`
 - `SaveImage`
 - `SetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `GetNode`
 - `GetNode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `GetNode`
 - `GetNode`
 - `LoadImage`
@@ -57,7 +59,7 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 - `PreviewAny`
 - `Text Multiline`
 - `INTConstant`
-- `KSampler`
+- `KSampler` ★核心
 - `GetNode`
 - `GetNode`
 - `SetNode`
@@ -67,20 +69,20 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `95494355540032`
 - `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **39%**（16/41）
+覆盖率 **46%**（19/41）
 
-**有卡**：`PreviewAny`、`RH_Translator`、`RH_Captioner`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`SetNode`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`GetNode`
+**有卡**：`RH_Translator`、`RH_Captioner`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`LoadImage`、`Text Multiline`、`ModelSamplingSD3`、`easy seed`、`DF_Float`、`INTConstant`、`KSampler`
 
-**缺卡**（3）：`Text Multiline`、`Text Multiline`、`easy seed`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 
@@ -89,7 +91,4 @@ discoveries: [次要节点 `Text Multiline` 知识库中没有该节点类型的
 
 ## 学习发现
 
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

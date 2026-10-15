@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json
 hash: f55a8ecf8e284627
-coverage: 0.346032
-learned_at: 2026-10-11 21:41:45
+coverage: 0.460317
+learned_at: 2026-10-15 22:46:05
 nodes: [BasicGuider, RandomNoise, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, easy multiTrackInfoOutput, VAELoader, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, Note, GetNode, GetNode, ConditioningZeroOut, GetNode, easy mergeVideosFromPaths, ComfyMathExpression, Note, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, easy ifElse, SetNode, SetNode, easy string, GetNode, GetNode, ComfyMathExpression, SetNode, SetNode, easy ifElse, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, StringReplace, easy promptLine, easy lengthAnything, easy string, easy forLoopStart, Text Concatenate, easy forLoopEnd, GetNode, easy promptLine, ComfyMathExpression, easy indexAnything, easy mergeVideosFromPaths, VideoFrameSample, GetNode, GetNode, GetNode, SetNode, SetNode, easy lengthAnything, easy forLoopStart, easy promptLine, easy indexAnything, SetNode, SetNode, GetNode, easy forLoopEnd, easy batchAnything, MarkdownNote, MarkdownNote, ComfyMathExpression, easy mergeVideosFromPaths, easy ifElse, VideoFrameSample, ComfyMathExpression, easy indexAnything, easy lengthAnything, ComfyMathExpression, easy indexAnything, GetNode, easy ifElse, easy saveVideo, PrimitiveBoolean, SetNode, Note, PrimitiveInt, SetNode, SetNode, SetNode, Note, Note, SetNode, GetNode, GetNode, GetNode, GetNode, SamplerCustomAdvanced, ComfyMathExpression, ComfyMathExpression, SetNode, GetNode, easy ifElse, ComfyMathExpression, SetNode, GetNode, SetNode, GetNode, ComfyMathExpression, GetNode, GetNode, easy promptLine, PathchSageAttentionKJ, SetNode, SetNode, GetNode, GetNode, easy mergeVideosFromPaths, easy multiTrackTaskOutput, GetNode, MarkdownNote, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, Reroute, SetNode, SetNode, PrimitiveInt, easy ifElse, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy batchAnything, SetNode, Reroute, Reroute, GetNode, Reroute, GetNode, GetNode, Reroute, Reroute, GetNode, Reroute, Reroute, easy forLoopStart, Reroute, Reroute, SetNode, PreviewAny, Reroute, GetNode, easy saveVideo, Note, VAEDecode, VAEDecodeAudio, CreateVideo, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, PreviewAny, easy forLoopEnd, LTXVSeparateAVLatent, MinimaxH3LatentUpscaler3D, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, easy ifElse, VideoFrameSample, SetNode, GetNode, SetNode, VideoFrameSample, GetNode, GetNode, LTXVConcatAVLatent, GetVideoComponents, GetVideoComponents, PreviewAny, easy mergeVideosFromPaths, GetVideoComponents, BatchCount+, ComfyMathExpression, GetNode, VideoTemporalCrop, SaveVideo, KSamplerSelect, BasicScheduler, PreviewAny, SaveVideo, ComfyMathExpression, ImageAddNoise, SplitSigmas, ExtendIntermediateSigmas, GetImageRangeFromBatch, GetImageRangeFromBatch, CLIPLoader, ImageAddNoise, GetImageRangeFromBatch, GetNode, GetNode, ImageBatchMulti, GetVideoComponents, MiniMaxH3AddGuide, GetImageRangeFromBatch, ImageAddNoise, ComfyMathExpression, GetImageRangeFromBatch, ImageBatchMulti, ImageAddNoise, GetImageRangeFromBatch, MiniMaxH3AddGuide, GetNode, GetVideoComponents, ImageBatchMulti, GetImageRangeFromBatch, ImageAddNoise, GetImageRangeFromBatch, ImageAddNoise, ImageAddNoise, ComfyMathExpression, ComfyMathExpression, GetNode, SetNode, ComfyMathExpression, GetVideoComponents, GetVideoComponents, ImageAddNoise, ImageBatchMulti, VideoFrameSample, easy mergeVideosFromPaths, easy ifElse, Note, ComfyMathExpression, VideoFrameSample, easy ifElse, MiniMaxH3AddGuide, easy ifElse, easy ifElse, MiniMaxH3AddGuide, MiniMaxH3AddGuide, ManualSigmas, Note, easy ifElse, easy ifElse, GetNode, easy ifElse, SamplerCustomAdvanced, Note, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxLowVRAMAttention, Note, ModelAttentionBackend, LoraLoaderBypassModelOnly, MiniMaxH3AudioGuideFeather, MiniMaxH3AudioGuideFeather, MiniMaxH3AudioGuideFeather, PrimitiveFloat, easy minimaxH3ToVideo, UNETLoader, SetNode, BasicGuider, GetNode, GetNode, GetImageRangeFromBatch, ImageAddNoise, easy float, ImageAddNoise, LoadVideo, Note, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, SetNode, PrimitiveBoolean, PrimitiveBoolean, PrimitiveInt, PrimitiveBoolean, PrimitiveBoolean, PrimitiveFloat, PrimitiveInt, PreviewAny, H3FrozenVideoCache, H3AudioRefineSampler, GetImageRangeFromBatch, MiniMaxH3AddGuide, MiniMaxH3AudioGuideFeather, easy multiTrackEditor, PrimitiveStringMultiline, PrimitiveInt]
 patterns: []
-missing: [BatchCount+, Text Concatenate, easy batchAnything, easy batchAnything, easy float, easy forLoopEnd, easy forLoopEnd, easy forLoopEnd, easy forLoopStart, easy forLoopStart, easy forLoopStart, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, easy lengthAnything, easy lengthAnything, easy lengthAnything, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy mergeVideosFromPaths, easy minimaxH3ToVideo, easy multiTrackEditor, easy string, easy string, easy multiTrackInfoOutput, easy multiTrackTaskOutput, easy promptLine, easy promptLine, easy promptLine, easy promptLine, easy saveVideo, easy saveVideo]
-discoveries: [次要节点 `BatchCount+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识, 次要节点 `easy minimaxH3ToVideo` 知识库中没有该节点类型的任何知识, 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识, 次要节点 `easy string` 知识库中没有该节点类型的任何知识, 次要节点 `easy string` 知识库中没有该节点类型的任何知识, 次要节点 `easy multiTrackInfoOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy multiTrackTaskOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/MiniMax H3超灵活的导演台，双采、无缝衔接超长视频，音频修复(无缝1.0)_2096611262351364097.json
@@ -341,49 +340,8 @@ discoveries: [次要节点 `BatchCount+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **35%**（109/315）
+覆盖率 **46%**（145/315）
 
-**有卡**：`BasicGuider`、`RandomNoise`、`VAELoader`、`ConditioningZeroOut`、`ComfyMathExpression`、`StringReplace`、`VideoFrameSample`、`PrimitiveBoolean`、`SamplerCustomAdvanced`、`PathchSageAttentionKJ`、`VAEDecode`、`VAEDecodeAudio`、`CreateVideo`、`LTXVSeparateAVLatent`、`MinimaxH3LatentUpscaler3D`、`LTXVConcatAVLatent`、`GetVideoComponents`、`VideoTemporalCrop`、`SaveVideo`、`KSamplerSelect`、`BasicScheduler`、`ImageAddNoise`、`SplitSigmas`、`ExtendIntermediateSigmas`、`GetImageRangeFromBatch`、`CLIPLoader`、`ImageBatchMulti`、`MiniMaxH3AddGuide`、`ManualSigmas`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxLowVRAMAttention`、`ModelAttentionBackend`、`LoraLoaderBypassModelOnly`、`MiniMaxH3AudioGuideFeather`、`UNETLoader`、`LoadVideo`、`LoraLoaderModelOnly`、`H3FrozenVideoCache`、`H3AudioRefineSampler`
-
-**缺卡**（36）：`BatchCount+`、`Text Concatenate`、`easy batchAnything`、`easy batchAnything`、`easy float`、`easy forLoopEnd`、`easy forLoopEnd`、`easy forLoopEnd`、`easy forLoopStart`、`easy forLoopStart`、`easy forLoopStart`、`easy indexAnything`、`easy indexAnything`、`easy indexAnything`、`easy indexAnything`、`easy lengthAnything`、`easy lengthAnything`、`easy lengthAnything`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy mergeVideosFromPaths`、`easy minimaxH3ToVideo`、`easy multiTrackEditor`、`easy string`、`easy string`、`easy multiTrackInfoOutput`、`easy multiTrackTaskOutput`、`easy promptLine`、`easy promptLine`、`easy promptLine`、`easy promptLine`、`easy saveVideo`、`easy saveVideo`
+**有卡**：`BasicGuider`、`RandomNoise`、`easy multiTrackInfoOutput`、`VAELoader`、`ConditioningZeroOut`、`easy mergeVideosFromPaths`、`ComfyMathExpression`、`easy string`、`StringReplace`、`easy promptLine`、`easy lengthAnything`、`easy forLoopStart`、`Text Concatenate`、`easy forLoopEnd`、`easy indexAnything`、`VideoFrameSample`、`easy batchAnything`、`easy saveVideo`、`PrimitiveBoolean`、`SamplerCustomAdvanced`、`PathchSageAttentionKJ`、`easy multiTrackTaskOutput`、`VAEDecode`、`VAEDecodeAudio`、`CreateVideo`、`LTXVSeparateAVLatent`、`MinimaxH3LatentUpscaler3D`、`LTXVConcatAVLatent`、`GetVideoComponents`、`BatchCount+`、`VideoTemporalCrop`、`SaveVideo`、`KSamplerSelect`、`BasicScheduler`、`ImageAddNoise`、`SplitSigmas`、`ExtendIntermediateSigmas`、`GetImageRangeFromBatch`、`CLIPLoader`、`ImageBatchMulti`、`MiniMaxH3AddGuide`、`ManualSigmas`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`MiniMaxLowVRAMAttention`、`ModelAttentionBackend`、`LoraLoaderBypassModelOnly`、`MiniMaxH3AudioGuideFeather`、`easy minimaxH3ToVideo`、`UNETLoader`、`easy float`、`LoadVideo`、`LoraLoaderModelOnly`、`H3FrozenVideoCache`、`H3AudioRefineSampler`、`easy multiTrackEditor`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、UNETLoader、H3AudioRefineSampler、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `BatchCount+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy batchAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy indexAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy lengthAnything` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy mergeVideosFromPaths` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy minimaxH3ToVideo` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multiTrackEditor` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy string` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy string` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy multiTrackInfoOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `easy multiTrackTaskOutput` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `easy saveVideo` 仅有 SaveImage 的通用知识，没有该节点自己的说明

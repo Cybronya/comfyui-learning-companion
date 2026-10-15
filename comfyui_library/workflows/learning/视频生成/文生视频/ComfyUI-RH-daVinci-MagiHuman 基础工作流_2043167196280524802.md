@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/ComfyUI-RH-daVinci-MagiHuman 基础工作流_2043167196280524802.json
 hash: 70c60418ac8cff4c
 coverage: 0.714286
-learned_at: 2026-10-11 19:49:34
+learned_at: 2026-10-15 22:44:06
 nodes: [SaveVideo, RH_MagiHumanGenerate, RH_LLMAPI_Pro_Node, JjkText, LoadImage, PreviewAny, RH_MagiHumanModelLoader]
 patterns: []
 missing: []

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan 2.2 Animate无限循环自动分割 TikTok舞蹈视频原生支持_2091762747024433154.json
 hash: b6873ca4ae575d1f
-coverage: 0.496124
-learned_at: 2026-10-11 21:19:50
+coverage: 0.542636
+learned_at: 2026-10-15 22:47:05
 nodes: [CLIPTextEncode, TrimVideoLatent, VAEDecode, ModelSamplingSD3, WanAnimateToVideo, KSampler, ImageFromBatch, VAEDecode, WanAnimateToVideo, KSampler, TrimVideoLatent, GrowMask, BlockifyMask, DrawMaskOnImage, PreviewImage, MaskPreview, PixelPerfectResolution, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, Reroute, VHS_VideoCombine, easy showAnything, PathchSageAttentionKJ, TorchCompileModel, GroundingDinoSAMSegment (segment anything), SetNode, SetNode, easy forLoopStart, VHS_VideoCombine, GetNode, GetNode, GetNode, MathExpression|pysssss, easy showAnything, easy showAnything, easy showAnything, easy showAnything, ModelSamplingSD3, VHS_GetImageCount, easy showAnything, ImageCropByMaskAndResize, FaceMaskFromPoseKeypoints, easy showAnything, ImageResizeKJv2, PreviewImage, LoadImageFromPath, CLIPVisionEncode, SetNode, SetNode, LoadImage, VHS_LoadVideoPath, GetNode, SetNode, VHS_VideoInfoLoaded, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, CLIPLoader, CLIPVisionLoader, VAELoader, GroundingDinoModelLoader (segment anything), SAMModelLoader (segment anything), ImageBatch, easy forLoopEnd, GetNode, GetNode, VHS_VideoCombine, DWPreprocessor, VHS_LoadVideo, PrimitiveInt, PrimitiveInt, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: [text_to_image]
-missing: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), MathExpression|pysssss, SAMModelLoader (segment anything), easy forLoopEnd, easy forLoopStart]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SAMModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Wan 2.2 Animate无限循环自动分割 TikTok舞蹈视频原生支持_2091762747024433154.json
@@ -171,11 +171,9 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 
 ## 知识
 
-覆盖率 **50%**（64/129）
+覆盖率 **54%**（70/129）
 
-**有卡**：`CLIPTextEncode`、`TrimVideoLatent`、`VAEDecode`、`ModelSamplingSD3`、`WanAnimateToVideo`、`KSampler`、`ImageFromBatch`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`MaskPreview`、`PixelPerfectResolution`、`VHS_VideoCombine`、`PathchSageAttentionKJ`、`TorchCompileModel`、`VHS_GetImageCount`、`ImageCropByMaskAndResize`、`FaceMaskFromPoseKeypoints`、`ImageResizeKJv2`、`LoadImageFromPath`、`CLIPVisionEncode`、`LoadImage`、`VHS_LoadVideoPath`、`VHS_VideoInfoLoaded`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`CLIPVisionLoader`、`VAELoader`、`ImageBatch`、`DWPreprocessor`、`VHS_LoadVideo`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
-
-**缺卡**（6）：`GroundingDinoModelLoader (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`MathExpression|pysssss`、`SAMModelLoader (segment anything)`、`easy forLoopEnd`、`easy forLoopStart`
+**有卡**：`CLIPTextEncode`、`TrimVideoLatent`、`VAEDecode`、`ModelSamplingSD3`、`WanAnimateToVideo`、`KSampler`、`ImageFromBatch`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`MaskPreview`、`PixelPerfectResolution`、`VHS_VideoCombine`、`PathchSageAttentionKJ`、`TorchCompileModel`、`GroundingDinoSAMSegment (segment anything)`、`easy forLoopStart`、`MathExpression|pysssss`、`VHS_GetImageCount`、`ImageCropByMaskAndResize`、`FaceMaskFromPoseKeypoints`、`ImageResizeKJv2`、`LoadImageFromPath`、`CLIPVisionEncode`、`LoadImage`、`VHS_LoadVideoPath`、`VHS_VideoInfoLoaded`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`CLIPVisionLoader`、`VAELoader`、`GroundingDinoModelLoader (segment anything)`、`SAMModelLoader (segment anything)`、`ImageBatch`、`easy forLoopEnd`、`DWPreprocessor`、`VHS_LoadVideo`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -188,12 +186,6 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 
 ## 学习发现
 
-- 次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SAMModelLoader (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

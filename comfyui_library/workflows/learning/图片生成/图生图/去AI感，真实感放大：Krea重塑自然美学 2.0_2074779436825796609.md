@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json
 hash: 29db156649052a53
-coverage: 0.5
-learned_at: 2026-10-10 20:48:16
+coverage: 0.685185
+learned_at: 2026-10-15 22:25:47
 nodes: [Image Comparer (rgthree), Note, Note, Note, Note, Note, Note, VAELoader, SaveImage, PrimitiveFloat, PrimitiveFloat, Int, UNETLoader_Any, KSampler, SaveImage, PreviewImage, PreviewImage, PreviewImage, SaveImage, PreviewImage, SaveImage, easy boolean, Int, PrimitiveFloat, RHHiddenNodes, easy ifElse, RHHiddenNodes, Int, Int, PrimitiveFloat, VAEEncode, CLIPTextEncode, VAEDecode, KuwaharaBlur, VAEDecode, easy cleanGpuUsed, CLIPLoader, easy cleanGpuUsed, DisTorchPurgeVRAMV2, llama_cpp_instruct_adv, easy showAnything, llama_cpp_model_loader, GroupExecutor, CR Text, CLIPTextEncode, LoraLoaderModelOnly, ImageResize+, LoadImage, KSamplerAdvanced, easy imageColorMatch, LayerColor: RGB, LayerColor: Color of Shadow & Highlight, LayerColor: Color of Shadow & Highlight, easy imageColorMatch]
 patterns: [image_to_image]
-missing: [CR Text, LayerColor: Color of Shadow & Highlight, LayerColor: Color of Shadow & Highlight, LayerColor: RGB, easy boolean, easy cleanGpuUsed, easy cleanGpuUsed, easy imageColorMatch, easy imageColorMatch, ImageResize+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 8, "denoise": "sgm_uniform", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: Color of Shadow & Highlight` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: Color of Shadow & Highlight` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: RGB` 知识库中没有该节点类型的任何知识, 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/去AI感，真实感放大：Krea重塑自然美学 2.0_2074779436825796609.json
@@ -93,11 +93,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **50%**（27/54）
+覆盖率 **69%**（37/54）
 
-**有卡**：`VAELoader`、`SaveImage`、`Int`、`UNETLoader_Any`、`KSampler`、`RHHiddenNodes`、`VAEEncode`、`CLIPTextEncode`、`VAEDecode`、`KuwaharaBlur`、`CLIPLoader`、`DisTorchPurgeVRAMV2`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`GroupExecutor`、`LoraLoaderModelOnly`、`LoadImage`、`KSamplerAdvanced`
-
-**缺卡**（10）：`CR Text`、`LayerColor: Color of Shadow & Highlight`、`LayerColor: Color of Shadow & Highlight`、`LayerColor: RGB`、`easy boolean`、`easy cleanGpuUsed`、`easy cleanGpuUsed`、`easy imageColorMatch`、`easy imageColorMatch`、`ImageResize+`
+**有卡**：`VAELoader`、`SaveImage`、`Int`、`UNETLoader_Any`、`KSampler`、`easy boolean`、`RHHiddenNodes`、`VAEEncode`、`CLIPTextEncode`、`VAEDecode`、`KuwaharaBlur`、`easy cleanGpuUsed`、`CLIPLoader`、`DisTorchPurgeVRAMV2`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`GroupExecutor`、`CR Text`、`LoraLoaderModelOnly`、`ImageResize+`、`LoadImage`、`KSamplerAdvanced`、`easy imageColorMatch`、`LayerColor: RGB`、`LayerColor: Color of Shadow & Highlight`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced
 
@@ -108,14 +106,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerColor: Color of Shadow & Highlight` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerColor: Color of Shadow & Highlight` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerColor: RGB` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageColorMatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

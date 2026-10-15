@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2Remix高质量文生视频_1988716572640423937.json
 hash: dd60dd6889bbb50a
 coverage: 1
-learned_at: 2026-10-11 02:57:38
+learned_at: 2026-10-15 22:47:13
 nodes: [PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, KSamplerAdvanced, CLIPLoader, VAELoader, CLIPTextEncode, UNETLoader, UNETLoader, INTConstant, INTConstant, EmptyHunyuanLatentVideo, Int, Int, Int, KSamplerAdvanced, VAEDecode, CLIPTextEncode, VHS_VideoCombine]
 patterns: []
 missing: []

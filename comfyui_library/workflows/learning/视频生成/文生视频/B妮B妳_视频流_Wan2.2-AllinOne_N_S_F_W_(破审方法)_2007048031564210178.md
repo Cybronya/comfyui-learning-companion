@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/B妮B妳_视频流_Wan2.2-AllinOne_N_S_F_W_(破审方法)_2007048031564210178.json
 hash: 7b33bdb3cd4f6347
-coverage: 0.654545
-learned_at: 2026-10-11 03:07:08
+coverage: 0.872727
+learned_at: 2026-10-15 22:44:05
 nodes: [CLIPVisionLoader, WanVideoVAELoader, LayerUtility: PurgeVRAM, WanVideoDecode, CLIPTextEncode, Note, PreviewImage, KSampler, CLIPVisionEncode, LayerUtility: ImageScaleByAspectRatio V2, CheckpointLoaderSimple, VHS_VideoCombine, PreviewBridge, CR Load Image List, VHS_VideoCombine, SaveLatent, Reroute, Mute / Bypass Repeater (rgthree), WanImageToVideo, Note, CLIPTextEncode, VHS_VideoCombine, LayerUtility: PurgeVRAM, ModelSamplingSD3, Mute / Bypass Repeater (rgthree), PreviewBridge, CLIPVisionLoader, CLIPVisionEncode, LoadImage, WanImageToVideo, EmptyLatentImage, LayerUtility: ImageScaleByAspectRatio V2, CheckpointLoaderSimple, LoadLatent, VHS_VideoCombine, CheckpointLoaderSimple, LoadLatent, VAEDecode, PreviewImage, VHS_VideoCombine, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Note, Note, LoadImage, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, LayerUtility: PurgeVRAM, Mute / Bypass Repeater (rgthree), HAIGC_SaveImagesToZip, VAEDecode, VAEDecode, KSampler, Mute / Bypass Repeater (rgthree)]
 patterns: [text_to_image]
-missing: [CR Load Image List, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree), Mute / Bypass Repeater (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "wan2.2-i2v-rapid-aio-v10-nsfw.safetensors", "denoise": 1, "height": 832, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 192054346835137, "steps": 4, "width": 480}
-discoveries: [次要节点 `CR Load Image List` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/B妮B妳_视频流_Wan2.2-AllinOne_N_S_F_W_(破审方法)_2007048031564210178.json
@@ -98,11 +98,9 @@ discoveries: [次要节点 `CR Load Image List` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **65%**（36/55）
+覆盖率 **87%**（48/55）
 
-**有卡**：`CLIPVisionLoader`、`WanVideoVAELoader`、`WanVideoDecode`、`CLIPTextEncode`、`KSampler`、`CLIPVisionEncode`、`CheckpointLoaderSimple`、`VHS_VideoCombine`、`PreviewBridge`、`SaveLatent`、`WanImageToVideo`、`ModelSamplingSD3`、`LoadImage`、`EmptyLatentImage`、`LoadLatent`、`VAEDecode`、`HAIGC_SaveImagesToZip`
-
-**缺卡**（12）：`CR Load Image List`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`Mute / Bypass Repeater (rgthree)`
+**有卡**：`CLIPVisionLoader`、`WanVideoVAELoader`、`LayerUtility: PurgeVRAM`、`WanVideoDecode`、`CLIPTextEncode`、`KSampler`、`CLIPVisionEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`CheckpointLoaderSimple`、`VHS_VideoCombine`、`PreviewBridge`、`CR Load Image List`、`SaveLatent`、`Mute / Bypass Repeater (rgthree)`、`WanImageToVideo`、`ModelSamplingSD3`、`LoadImage`、`EmptyLatentImage`、`LoadLatent`、`VAEDecode`、`HAIGC_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、LoadImage、SaveLatent、CLIPVisionEncode
 
@@ -114,17 +112,5 @@ discoveries: [次要节点 `CR Load Image List` 知识库中没有该节点类�
 
 ## 学习发现
 
-- 次要节点 `CR Load Image List` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

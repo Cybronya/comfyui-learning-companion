@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 3.5套件｜角色别散·分镜导演角色动作场景控制_2068718478793728001.json
 hash: da2306cac2e40999
-coverage: 0.98
-learned_at: 2026-10-11 20:21:25
+coverage: 0.99
+learned_at: 2026-10-15 22:44:57
 nodes: [ManualSigmas, KSamplerSelect, KSamplerSelect, BasicScheduler, LTXVConcatAVLatent, LatentUpscaleModelLoader, LTXVConditioning, ConditioningZeroOut, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGGuider, LTXDirectorGuide, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVLatentUpsampler, FluxResolutionNode, LTXDirectorGuide, SamplerCustomAdvanced, SamplerCustomAdvanced, VAEDecodeTiled, LatentUpscaleModelLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, LTX2_NAG, LoraLoaderModelOnly, LTX2_NAG, CFGGuider, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Sigmas Easing, STGGuiderAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, LTXICLoRALoaderModelOnly, VAEDecodeTiled, LTXVAudioVAEDecode, SaveVideo, CreateVideo, SaveVideo, LTXVSeparateAVLatent, CreateVideo, VAEDecodeTiled, SetLatentNoiseMask, LTXVSeparateAVLatent, SolidMask, ManualSigmas, KSamplerSelect, LTXVLatentUpsampler, LTXVCropGuides, LTXVCropGuides, RandomNoise, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, image_scale_pixel_v2, EmptyImage, LTXVAudioVAEDecode, SamplerCustomAdvanced, LTXDirectorGuide, LTXVConcatAVLatent, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVCropGuides, LTXVAudioVAEDecode, LTXVAudioVAEDecode, VHS_VideoCombine, PrimitiveInt, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTX2_NAG, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTX2_NAG, ImageFromBatch, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXDirector]
 patterns: []
-missing: [Sigmas Easing]
+missing: []
 parameters: {"checkpoint": "ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors"}
-discoveries: [次要节点 `Sigmas Easing` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 3.5套件｜角色别散·分镜导演角色动作场景控制_2068718478793728001.json
@@ -131,14 +130,8 @@ discoveries: [次要节点 `Sigmas Easing` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **98%**（98/100）
+覆盖率 **99%**（99/100）
 
-**有卡**：`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXDirectorGuide`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTX2_NAG`、`STGGuiderAdvanced`、`LTXICLoRALoaderModelOnly`、`LTXVAudioVAEDecode`、`SaveVideo`、`CreateVideo`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`SolidMask`、`LTXVCropGuides`、`RandomNoise`、`image_scale_pixel_v2`、`EmptyImage`、`VHS_VideoCombine`、`ImageFromBatch`、`LTXDirector`
-
-**缺卡**（1）：`Sigmas Easing`
+**有卡**：`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXDirectorGuide`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTX2_NAG`、`Sigmas Easing`、`STGGuiderAdvanced`、`LTXICLoRALoaderModelOnly`、`LTXVAudioVAEDecode`、`SaveVideo`、`CreateVideo`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`SolidMask`、`LTXVCropGuides`、`RandomNoise`、`image_scale_pixel_v2`、`EmptyImage`、`VHS_VideoCombine`、`ImageFromBatch`、`LTXDirector`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、ConditioningZeroOut、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Sigmas Easing` 知识库中没有该节点类型的任何知识

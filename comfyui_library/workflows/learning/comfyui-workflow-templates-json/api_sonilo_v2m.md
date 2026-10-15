@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_sonilo_v2m.json
 hash: afbdca2429d8db99
 official: true
-coverage: 0.666667
-learned_at: 2026-10-10 22:46:12
+coverage: 0.833333
+learned_at: 2026-10-15 22:24:51
 nodes: [SoniloVideoToMusic, LoadVideo, SaveVideo, bb615e2f-2ea7-40b8-9419-f0206c2d60dd, MarkdownNote, SaveAudioAdvanced]
 patterns: []
-missing: [bb615e2f-2ea7-40b8-9419-f0206c2d60dd]
-discoveries: [次要节点 `bb615e2f-2ea7-40b8-9419-f0206c2d60dd` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_sonilo_v2m.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `bb615e2f-2ea7-40b8-9419-f0206c2d60dd` 知识库中�
 
 ## 知识
 
-覆盖率 **67%**（4/6）
+覆盖率 **83%**（5/6）
 
-**有卡**：`SoniloVideoToMusic`、`LoadVideo`、`SaveVideo`、`SaveAudioAdvanced`
+**有卡**：`SoniloVideoToMusic`、`LoadVideo`、`SaveVideo`、`bb615e2f-2ea7-40b8-9419-f0206c2d60dd`、`SaveAudioAdvanced`
 
-**缺卡**（1）：`bb615e2f-2ea7-40b8-9419-f0206c2d60dd`
-
-**用到的条目**：SaveVideo、SaveAudioAdvanced、LoadVideo、SoniloVideoToMusic、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage
-
-## 学习发现
-
-- 次要节点 `bb615e2f-2ea7-40b8-9419-f0206c2d60dd` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、SaveAudioAdvanced、LoadVideo、SoniloVideoToMusic、bb615e2f-2ea7-40b8-9419-f0206c2d60dd、sd15-t2i-basic、sd15-t2i-lora、SaveAudio

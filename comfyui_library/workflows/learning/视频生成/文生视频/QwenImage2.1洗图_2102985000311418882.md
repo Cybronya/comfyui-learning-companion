@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/QwenImage2.1洗图_2102985000311418882.json
 hash: ad516363f95209f8
-coverage: 0.777778
-learned_at: 2026-10-11 22:12:46
+coverage: 0.888889
+learned_at: 2026-10-15 22:46:51
 nodes: [CLIPLoader, VAELoader, EmptyLatentImage, GetImageSize, MathExpression|pysssss, MathExpression|pysssss, UNETLoader, LoraLoaderModelOnly, TextEncodeQwenImage21, JWStringConcat, easy showAnything, JWString, RHLLMChatNode, KSampler, LoadImage, VAEDecode, Image Comparer (rgthree), SaveImage]
 patterns: []
-missing: [MathExpression|pysssss, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 266040665031946, "steps": 25, "width": 1024}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/QwenImage2.1洗图_2102985000311418882.json
@@ -57,15 +56,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **78%**（14/18）
+覆盖率 **89%**（16/18）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`GetImageSize`、`UNETLoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`JWStringConcat`、`JWString`、`RHLLMChatNode`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`
-
-**缺卡**（2）：`MathExpression|pysssss`、`MathExpression|pysssss`
+**有卡**：`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`GetImageSize`、`MathExpression|pysssss`、`UNETLoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`JWStringConcat`、`JWString`、`RHLLMChatNode`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、LoadImage
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

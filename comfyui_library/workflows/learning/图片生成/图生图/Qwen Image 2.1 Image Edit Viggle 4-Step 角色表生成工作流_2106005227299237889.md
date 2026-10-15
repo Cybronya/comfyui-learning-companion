@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1 Image Edit Viggle 4-Step 角色表生成工作流_2106005227299237889.json
 hash: 65e0a521d9d9b555
 coverage: 0.833333
-learned_at: 2026-10-10 20:48:05
+learned_at: 2026-10-15 22:25:11
 nodes: [ImageScale, MarkdownNote, PrimitiveInt, ImageScaleToTotalPixels, ComfyMathExpression, ComfySwitchNode, ImageScaleToTotalPixels, ComfyMathExpression, ComfySwitchNode, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, TextEncodeQwenImage21, LoadImage, LoadImage, LoadImage, SaveImage, KSampler, ModelSamplingFlux, QwenImage21Cache, ModelAttentionBackend, VAEDecode, ResolutionSelector]
 patterns: []
 missing: []

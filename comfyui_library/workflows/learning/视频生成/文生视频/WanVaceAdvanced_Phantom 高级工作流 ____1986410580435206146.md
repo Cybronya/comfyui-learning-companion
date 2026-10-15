@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/WanVaceAdvanced_Phantom 高级工作流 ____1986410580435206146.json
 hash: 9971a90de23b067a
 coverage: 0.714286
-learned_at: 2026-10-10 23:08:13
+learned_at: 2026-10-15 22:47:16
 nodes: [VAEDecode, ModelSamplingSD3, CLIPTextEncode, ImageResizeKJv2, ConditioningCombine, ImageResizeKJv2, TrimVideoLatent, SplineEditor, PrimitiveInt, VHS_VideoInfoLoaded, VHS_LoadVideo, Fast Groups Bypasser (rgthree), CreateShapeImageOnPath, Any Switch (rgthree), VHS_VideoCombine, LoadImage, LoadImage, LoadImage, CLIPTextEncode, CLIPLoader, DiffusionModelSelector, Note, DiffusionModelLoaderKJ, Note, LoraLoaderModelOnly, Note, Note, LoraLoaderModelOnly, VAELoader, WanVacePhantomSimpleV2, ImageResizeKJv2, PreviewImage, ImageBatch, PrimitiveInt, PrimitiveInt, MarkdownNote, DWPreprocessor, VHS_VideoCombine, SetNode, ImageResizeKJv2, KSampler, VHS_VideoCombine]
 patterns: []
 missing: []

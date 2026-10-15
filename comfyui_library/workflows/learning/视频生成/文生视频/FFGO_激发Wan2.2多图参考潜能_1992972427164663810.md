@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/FFGO_激发Wan2.2多图参考潜能_1992972427164663810.json
 hash: f1b467f9f103ba86
-coverage: 0.886792
-learned_at: 2026-10-11 02:57:35
+coverage: 0.962264
+learned_at: 2026-10-15 22:44:08
 nodes: [GetImageRangeFromBatch, SimpleMath+, ImageSharpen, VHS_VideoCombine, LoraLoaderModelOnly, CLIPTextEncode, LoadImage, LoadImage, InspyrenetRembg, InspyrenetRembg, InspyrenetRembg, PreviewImage, CompositorConfig3, LoadImage, INTConstant, INTConstant, CLIPTextEncode, WanImageToVideo, KSamplerAdvanced, KSamplerAdvanced, GetImageSizeAndCount, VAEDecode, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, UNETLoader, UNETLoader, CLIPLoader, VAELoader, ImageResizeKJv2, easy imageRemBg, ImageConcanate, easy imageRemBg, easy imageRemBg, ImageResizeKJv2, ImageConcanate, LoadImage, ImageResizeKJv2, ImageResizeKJv2, LoadImage, LoadImage, PreviewImage, SaveImage, Compositor3, LoadImage]
 patterns: []
-missing: [SimpleMath+, easy imageRemBg, easy imageRemBg, easy imageRemBg]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "deis", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/FFGO_激发Wan2.2多图参考潜能_1992972427164663810.json
@@ -89,17 +88,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **89%**（47/53）
+覆盖率 **96%**（51/53）
 
-**有卡**：`GetImageRangeFromBatch`、`ImageSharpen`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LoadImage`、`InspyrenetRembg`、`CompositorConfig3`、`INTConstant`、`WanImageToVideo`、`KSamplerAdvanced`、`GetImageSizeAndCount`、`VAEDecode`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ImageResizeKJv2`、`ImageConcanate`、`SaveImage`、`Compositor3`
-
-**缺卡**（4）：`SimpleMath+`、`easy imageRemBg`、`easy imageRemBg`、`easy imageRemBg`
+**有卡**：`GetImageRangeFromBatch`、`SimpleMath+`、`ImageSharpen`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LoadImage`、`InspyrenetRembg`、`CompositorConfig3`、`INTConstant`、`WanImageToVideo`、`KSamplerAdvanced`、`GetImageSizeAndCount`、`VAEDecode`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ImageResizeKJv2`、`easy imageRemBg`、`ImageConcanate`、`SaveImage`、`Compositor3`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识

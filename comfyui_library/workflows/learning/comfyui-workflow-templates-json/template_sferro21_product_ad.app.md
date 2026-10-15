@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/template_sferro2
 hash: f79a55c06fa5bfb5
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:11
+learned_at: 2026-10-15 22:24:56
 nodes: [LoadImage, BatchImagesNode, GeminiImage2Node, SaveImage, LoadImage]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`LoadImage`、`BatchImagesNode`、`GeminiImage2Node`、`SaveImage`
 
-**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node、CS_Preview_Any
+**用到的条目**：LoadImage、SaveImage、BatchImagesNode、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node、Image Batch

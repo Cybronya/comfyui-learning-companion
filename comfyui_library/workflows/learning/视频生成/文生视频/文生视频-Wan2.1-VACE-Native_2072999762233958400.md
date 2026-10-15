@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频-Wan2.1-VACE-Native_2072999762233958400.json
 hash: fafd0b9e539f0ed9
 coverage: 1
-learned_at: 2026-10-11 20:38:47
+learned_at: 2026-10-15 22:48:42
 nodes: [VAEDecode, TrimVideoLatent, CLIPLoader, CLIPTextEncode, VAELoader, INTConstant, INTConstant, UNETLoader, WanVaceToVideo, KSampler, INTConstant, ModelSamplingSD3, CFGZeroStarAndInit, WanVideoEnhanceAVideoKJ, TorchCompileModelWanVideo, PatchModelPatcherOrder, VHS_VideoCombine, LoraLoaderModelOnly, CLIPTextEncode]
 patterns: []
 missing: []

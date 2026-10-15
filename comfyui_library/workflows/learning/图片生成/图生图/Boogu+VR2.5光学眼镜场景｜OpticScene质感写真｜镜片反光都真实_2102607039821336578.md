@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Boogu+VR2.5光学眼镜场景｜OpticScene质感写真｜镜片反光都真实_2102607039821336578.json
 hash: 642386051e14ac31
-coverage: 0.90625
-learned_at: 2026-10-10 20:48:02
+coverage: 0.921875
+learned_at: 2026-10-15 22:25:05
 nodes: [VAELoader, SamplerCustom, DF_Get_image_size, ImageScaleToTotalPixels, KSamplerSelect, ModelSamplingAuraFlow, BasicScheduler, SeedVR2LoadDiTModel, TextEncodeBooguEdit, UNETLoader, CLIPLoader, LoraLoaderModelOnly, SaveImage, SeedVR2LoadVAEModel, LoadImage, EmptyLatentImage, CR Prompt Text, SaveImage, VAEDecode, SeedVR2VideoUpscaler, PrimitiveInt, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Boogu+VR2.5光学眼镜场景｜OpticScene质感写真｜镜片反光都真实_2102607039821336578.json
@@ -106,11 +106,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **91%**（58/64）
+覆盖率 **92%**（59/64）
 
-**有卡**：`VAELoader`、`SamplerCustom`、`DF_Get_image_size`、`ImageScaleToTotalPixels`、`KSamplerSelect`、`ModelSamplingAuraFlow`、`BasicScheduler`、`SeedVR2LoadDiTModel`、`TextEncodeBooguEdit`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`SaveImage`、`SeedVR2LoadVAEModel`、`LoadImage`、`EmptyLatentImage`、`VAEDecode`、`SeedVR2VideoUpscaler`、`CLIPTextEncode`、`KSampler`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`CR Prompt Text`
+**有卡**：`VAELoader`、`SamplerCustom`、`DF_Get_image_size`、`ImageScaleToTotalPixels`、`KSamplerSelect`、`ModelSamplingAuraFlow`、`BasicScheduler`、`SeedVR2LoadDiTModel`、`TextEncodeBooguEdit`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`SaveImage`、`SeedVR2LoadVAEModel`、`LoadImage`、`EmptyLatentImage`、`CR Prompt Text`、`VAEDecode`、`SeedVR2VideoUpscaler`、`CLIPTextEncode`、`KSampler`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
 
@@ -121,5 +119,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

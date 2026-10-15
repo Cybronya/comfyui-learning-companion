@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/res_multistep 2.46倍加速零质量损｜MiniMax-H3文生视频RH版含音频_2088688872459952130.json
 hash: 09cf9889ec6db026
 coverage: 0.897436
-learned_at: 2026-10-11 20:53:50
+learned_at: 2026-10-15 22:47:30
 nodes: [RHMiniMaxH3DirectTextEncoderLoader, RHMiniMaxH3DirectModelLoader, RHMiniMaxH3DirectVAELoader, RHMiniMaxH3EmptyAVLatent, RHMiniMaxH3DualSigmaSampler, RHMiniMaxH3DecodeAV, CreateVideo, SaveVideo, RHMiniMaxH3T2VATarget, RHMiniMaxH3T2VATextEncode, 孤海注释, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

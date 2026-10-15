@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.6文生视频T2V_2007711298678693889.json
 hash: e9ace1d8a740f3d8
 coverage: 1
-learned_at: 2026-10-11 03:07:13
+learned_at: 2026-10-15 22:47:16
 nodes: [SaveVideo, RH_Wan26_T2V]
 patterns: []
 missing: []

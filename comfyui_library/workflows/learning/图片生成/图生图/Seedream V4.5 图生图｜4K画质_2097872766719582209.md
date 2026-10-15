@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Seedream V4.5 图生图｜4K画质_2097872766719582209.json
 hash: 03adf25971582c79
 coverage: 0.833333
-learned_at: 2026-10-10 20:48:10
+learned_at: 2026-10-15 22:25:31
 nodes: [SaveImage, LoadImage, LoadImage, RH_SeedreamV45ImageToImage, PreviewImage, LoadImage]
 patterns: []
 missing: []
@@ -35,4 +35,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`、`RH_SeedreamV45ImageToImage`
 
-**用到的条目**：LoadImage、RH_SeedreamV45ImageToImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Seed、sampler_name 调整经验、steps 调整经验
+**用到的条目**：LoadImage、RH_SeedreamV45ImageToImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Image Load

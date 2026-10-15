@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ovis_text_to_image.json
 hash: 6e9dd1168c854573
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:48:24
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:54
 nodes: [SaveImage, MarkdownNote, 5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1]
 patterns: []
-missing: [5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1]
-discoveries: [次要节点 `5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_ovis_text_to_image.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（1/3）
+覆盖率 **67%**（2/3）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1`
 
-**缺卡**（1）：`5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1`
-
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext、easy_savevideo
-
-## 学习发现
-
-- 次要节点 `5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、5a9f8bf0-ed77-40e3-aca8-c7c1a0bf54e1、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext

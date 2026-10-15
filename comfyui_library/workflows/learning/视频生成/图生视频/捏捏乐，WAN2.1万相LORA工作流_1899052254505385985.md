@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/捏捏乐，WAN2.1万相LORA工作流_1899052254505385985.json
 hash: 795e4b33063670dc
 coverage: 1
-learned_at: 2026-10-12 20:12:51
+learned_at: 2026-10-15 22:43:03
 nodes: [WanVideoTextEncode, WanVideoImageClipEncode, WanVideoVAELoader, WanVideoDecode, WanVideoBlockSwap, WanVideoTorchCompileSettings, LoraLoaderModelOnly, WanVideoModelLoader, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, LoadImage, WanVideoSampler, VHS_VideoCombine]
 patterns: []
 missing: []

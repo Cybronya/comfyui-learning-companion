@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH Google 全能视频V3.1 文生视频，效果炸裂_1979517313265340417.json
 hash: b2dd2f89c4e3f71a
 coverage: 0.75
-learned_at: 2026-10-10 23:05:03
+learned_at: 2026-10-15 22:46:52
 nodes: [ShellAgentPluginOutputText, PreviewAny, SaveVideo, RH_Veo3_Text2Video]
 patterns: []
 missing: []

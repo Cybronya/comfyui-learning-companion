@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
 hash: a689aae4e99ee909
-coverage: 0.944444
-learned_at: 2026-10-10 20:59:27
+coverage: 1
+learned_at: 2026-10-15 22:27:57
 nodes: [UNETLoader, CLIPLoader, VAELoader, EmptyHunyuanLatentVideo, UNETLoader, ImpactInt, ImpactInt, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, VAEDecode, WanMoeKSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, SaveImage, CR Text]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"cfg": 12, "denoise": "res_2s", "sampler_name": 3, "scheduler": 1, "seed": 0.875, "steps": "randomize"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/wan2.2 WanMoeKsampler 文生图_1955849490886479874.json
@@ -21,43 +20,41 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（18 个）：
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `EmptyHunyuanLatentVideo`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `ImpactInt`
 - `ImpactInt`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `PathchSageAttentionKJ`
-- `VAEDecode`
-- `WanMoeKSampler`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `VAEDecode` ★核心
+- `WanMoeKSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `PathchSageAttentionKJ`
 - `SaveImage`
 - `CR Text`
 
 ## 关键参数
 
-- `cfg` = `12`
-- `denoise` = `res_2s`
-- `sampler_name` = `3`
-- `scheduler` = `1`
 - `seed` = `0.875`
 - `steps` = `randomize`
+- `cfg` = `12`
+- `sampler_name` = `3`
+- `scheduler` = `1`
+- `denoise` = `res_2s`
 
 ## 知识
 
-覆盖率 **94%**（17/18）
+覆盖率 **100%**（18/18）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAEDecode`、`WanMoeKSampler`、`SaveImage`
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyHunyuanLatentVideo`、`ImpactInt`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAEDecode`、`WanMoeKSampler`、`SaveImage`、`CR Text`
 
-**缺卡**（1）：`CR Text`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、EmptyHunyuanLatentVideo

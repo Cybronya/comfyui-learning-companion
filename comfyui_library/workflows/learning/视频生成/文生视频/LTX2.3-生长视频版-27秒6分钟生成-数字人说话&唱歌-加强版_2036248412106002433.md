@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-生长视频版-27秒6分钟生成-数字人说话&唱歌-加强版_2036248412106002433.json
 hash: dcec8bbedeb43d0e
-coverage: 0.447619
-learned_at: 2026-10-11 03:48:35
+coverage: 0.495238
+learned_at: 2026-10-15 22:45:05
 nodes: [SetNode, SamplerCustomAdvanced, GetNode, CFGGuider, GetNode, GetNode, GetNode, LTXVLatentUpsampler, CFGGuider, KSamplerSelect, SetNode, SetNode, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, GetNode, GetNode, SetNode, GetNode, GetNode, VAELoaderKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, UNETLoader, SetNode, VAELoaderKJ, SetNode, SetNode, Anything Everywhere, SetNode, LatentUpscaleModelLoader, LTXVPreprocess, SetNode, GetNode, KSamplerSelect, RandomNoise, PathchSageAttentionKJ, VHS_VideoCombine, LTXVImgToVideoInplace, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, Note, PrimitiveBoolean, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, SetNode, SetNode, Note, MathExpression|pysssss, MathExpression|pysssss, PrimitiveInt, SetNode, SetNode, SetNode, GetNode, GetNode, easy cleanGpuUsed, GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, GetNode, SetLatentNoiseMask, MelBandRoFormerSampler, GetNode, GetNode, SolidMask, CLIPTextEncode, PrimitiveInt, SetNode, ComfyMathExpression, CR Float To Integer, LTXVConcatAVLatent, LTXVImgToVideoInplace, SetNode, SetNode, SetNode, ComfyMathExpression, easy showAnything, GetNode, LTXVSeparateAVLatent, GetNode, GetNode, LTXVCropGuides, RandomNoise, MelBandRoFormerModelLoader, DualCLIPLoader, ManualSigmas, LoadImage, PrimitiveInt, PrimitiveInt, LTXVAudioVAEEncode, WujiCleaner, LTXVConditioning, WujiCleaner, WujiCleaner, VHS_LoadAudioUpload, PrimitiveStringMultiline, LTX2_NAG]
 patterns: []
-missing: [CR Float To Integer, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, MathExpression|pysssss, easy cleanGpuUsed]
-discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3-生长视频版-27秒6分钟生成-数字人说话&唱歌-加强版_2036248412106002433.json
@@ -131,18 +130,8 @@ discoveries: [次要节点 `CR Float To Integer` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **45%**（47/105）
+覆盖率 **50%**（52/105）
 
-**有卡**：`SamplerCustomAdvanced`、`CFGGuider`、`LTXVLatentUpsampler`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`VAELoaderKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`UNETLoader`、`LatentUpscaleModelLoader`、`LTXVPreprocess`、`RandomNoise`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`LTXVImgToVideoInplace`、`CLIPTextEncode`、`PrimitiveBoolean`、`EmptyLTXVLatentVideo`、`SetLatentNoiseMask`、`MelBandRoFormerSampler`、`SolidMask`、`ComfyMathExpression`、`LTXVCropGuides`、`MelBandRoFormerModelLoader`、`DualCLIPLoader`、`LoadImage`、`LTXVAudioVAEEncode`、`WujiCleaner`、`LTXVConditioning`、`VHS_LoadAudioUpload`、`LTX2_NAG`
-
-**缺卡**（5）：`CR Float To Integer`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`MathExpression|pysssss`、`easy cleanGpuUsed`
+**有卡**：`SamplerCustomAdvanced`、`CFGGuider`、`LTXVLatentUpsampler`、`KSamplerSelect`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`VAELoaderKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`UNETLoader`、`LatentUpscaleModelLoader`、`LTXVPreprocess`、`RandomNoise`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`LTXVImgToVideoInplace`、`CLIPTextEncode`、`PrimitiveBoolean`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`easy cleanGpuUsed`、`EmptyLTXVLatentVideo`、`SetLatentNoiseMask`、`MelBandRoFormerSampler`、`SolidMask`、`ComfyMathExpression`、`CR Float To Integer`、`LTXVCropGuides`、`MelBandRoFormerModelLoader`、`DualCLIPLoader`、`LoadImage`、`LTXVAudioVAEEncode`、`WujiCleaner`、`LTXVConditioning`、`VHS_LoadAudioUpload`、`LTX2_NAG`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Float To Integer` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

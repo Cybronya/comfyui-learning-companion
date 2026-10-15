@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3全能参考_2066712542273163265.json
 hash: 9eacfdc4572dd778
-coverage: 0.390805
-learned_at: 2026-10-11 20:21:26
+coverage: 0.471264
+learned_at: 2026-10-15 22:45:06
 nodes: [GetNode, GetNode, CLIPTextEncode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ComfyMathExpression, LTXVConditioning, SetNode, SetNode, GetNode, GetNode, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, CFGGuider, LTXVConcatAVLatent, ManualSigmas, KSamplerSelect, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVCropGuides, GetNode, VAEDecode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, ShowAnything|Mie, VHS_VideoCombine, GetNode, LoadImage, RandomNoise, LoadImage, SetNode, SetNode, easy imageRemBg, easy imageRemBg, easy imageRemBg, LoadImage, LoadImage, LoadImage, easy imageRemBg, Note, CLIPTextEncode, GetNode, SetNode, INTConstant, INTConstant, INTConstant, INTConstant, SimpleMath+, Fast Groups Bypasser (rgthree), CR Text, SetNode, SetNode, GetNode, GetNode, GetNode, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXAVTextEncoderLoader, LTXVAudioVAELoader, EmptyLTXVLatentVideo, LTXAddVideoICLoRAGuide, GetNode, VHS_VideoCombine, LiconMSR, LowVRAMCheckpointLoader, LTXICLoRALoaderModelOnly]
 patterns: []
-missing: [CR Text, ShowAnything|Mie, SimpleMath+, easy imageRemBg, easy imageRemBg, easy imageRemBg, easy imageRemBg]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 24, "width": 145}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3全能参考_2066712542273163265.json
@@ -121,20 +120,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **39%**（34/87）
+覆盖率 **47%**（41/87）
 
-**有卡**：`CLIPTextEncode`、`ComfyMathExpression`、`LTXVConditioning`、`CFGGuider`、`LTXVConcatAVLatent`、`ManualSigmas`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVCropGuides`、`VAEDecode`、`VHS_VideoCombine`、`LoadImage`、`RandomNoise`、`INTConstant`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`EmptyLTXVLatentVideo`、`LTXAddVideoICLoRAGuide`、`LiconMSR`、`LowVRAMCheckpointLoader`、`LTXICLoRALoaderModelOnly`
-
-**缺卡**（7）：`CR Text`、`ShowAnything|Mie`、`SimpleMath+`、`easy imageRemBg`、`easy imageRemBg`、`easy imageRemBg`、`easy imageRemBg`
+**有卡**：`CLIPTextEncode`、`ComfyMathExpression`、`LTXVConditioning`、`CFGGuider`、`LTXVConcatAVLatent`、`ManualSigmas`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVCropGuides`、`VAEDecode`、`ShowAnything|Mie`、`VHS_VideoCombine`、`LoadImage`、`RandomNoise`、`easy imageRemBg`、`INTConstant`、`SimpleMath+`、`CR Text`、`LTXVEmptyLatentAudio`、`SamplerCustomAdvanced`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`EmptyLTXVLatentVideo`、`LTXAddVideoICLoRAGuide`、`LiconMSR`、`LowVRAMCheckpointLoader`、`LTXICLoRALoaderModelOnly`
 
 **用到的条目**：VAEDecode、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `ShowAnything|Mie` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageRemBg` 知识库中没有该节点类型的任何知识

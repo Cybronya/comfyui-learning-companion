@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_bria_rem
 hash: 9073e45deb887912
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:41
+learned_at: 2026-10-15 22:24:57
 nodes: [SaveImage, ImageCompare, LoadImage, BriaRemoveImageBackground]
 patterns: []
 missing: []

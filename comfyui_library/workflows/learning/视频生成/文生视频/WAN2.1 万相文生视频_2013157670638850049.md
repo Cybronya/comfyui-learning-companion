@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json
 hash: a87e79e5fbfdc747
-coverage: 0.8125
-learned_at: 2026-10-11 03:07:12
+coverage: 1
+learned_at: 2026-10-15 22:47:03
 nodes: [WanVideoVAELoader, WanVideoEmptyEmbeds, easy cleanGpuUsed, WanVideoModelLoader, WanVideoSampler, WanVideoDecode, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoTorchCompileSettings, easy cleanGpuUsed, ImageUpscaleWithModel, UpscaleModelLoader, RIFE VFI, VHS_VideoCombine, WanVideoTextEncode, SeargePromptText]
 patterns: []
-missing: [RIFE VFI, easy cleanGpuUsed, easy cleanGpuUsed]
-discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/WAN2.1 万相文生视频_2013157670638850049.json
@@ -42,16 +41,8 @@ discoveries: [次要节点 `RIFE VFI` 知识库中没有该节点类型的任何
 
 ## 知识
 
-覆盖率 **81%**（13/16）
+覆盖率 **100%**（16/16）
 
-**有卡**：`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoTorchCompileSettings`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`VHS_VideoCombine`、`WanVideoTextEncode`、`SeargePromptText`
-
-**缺卡**（3）：`RIFE VFI`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`easy cleanGpuUsed`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoTorchCompileSettings`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`RIFE VFI`、`VHS_VideoCombine`、`WanVideoTextEncode`、`SeargePromptText`
 
 **用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、ImageUpscaleWithModel、UpscaleModelLoader、UpscaleModelLoader
-
-## 学习发现
-
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image+Lightning4StepsLora-文生图工作流_1956201968337342466.json
 hash: f8ec11fa75314b05
 coverage: 1
-learned_at: 2026-10-10 20:58:58
+learned_at: 2026-10-15 22:27:09
 nodes: [VAEDecode, CLIPTextEncode, VAELoader, SaveImage, ModelSamplingAuraFlow, EmptyLatentImage, UNETLoader, CLIPLoader, LoraLoaderModelOnly, CLIPTextEncode, KSampler]
 patterns: [text_to_image]
 missing: []
@@ -22,38 +22,42 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（11 个）：
-- `VAEDecode`
-- `CLIPTextEncode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `VAELoader`
 - `SaveImage`
 - `ModelSamplingAuraFlow`
-- `EmptyLatentImage`
-- `UNETLoader`
+- `EmptyLatentImage` ★核心
+- `UNETLoader` ★核心
 - `CLIPLoader`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
-- `KSampler`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
 
 **识别到的模式**：text_to_image
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1248`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `527660888760163`
 - `steps` = `4`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **100%**（11/11）
 
 **有卡**：`VAEDecode`、`CLIPTextEncode`、`VAELoader`、`SaveImage`、`ModelSamplingAuraFlow`、`EmptyLatentImage`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、UNETLoader
 
 ## 参数体检
 

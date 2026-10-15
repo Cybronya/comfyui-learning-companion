@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 自用版 T2V_2063969490962042881.json
 hash: 95386739a1dfe5e9
-coverage: 0.78
-learned_at: 2026-10-11 20:21:26
+coverage: 0.84
+learned_at: 2026-10-15 22:45:01
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, EmptyLTXVLatentVideo, PrimitiveInt, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, MarkdownNote, ComfyMathExpression, LTXVConcatAVLatent, LTXVConditioning, ComfyMathExpression, ComfyMathExpression, LatentUpscaleModelLoader, CFGGuider, BasicScheduler, CLIPTextEncode, CFGGuider, ManualSigmas, LatentUpscaleModelLoader, Reroute, LTXVLatentUpsampler, LTXVLatentUpsampler, SamplerCustomAdvanced, LTXVCropGuides, LTXVSeparateAVLatent, KSamplerSelect, VAEDecodeTiled, SimpleMath+, LTXVAudioVAEDecode, PrimitiveInt, PrimitiveInt, PrimitiveInt, VHS_VideoCombine, PromptRelayEncode, Note, LTXTiledSampler, ManualSigmas, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LTX2_NAG, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LoraLoaderModelOnly, PrimitiveStringMultiline, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
-missing: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 自用版 T2V_2063969490962042881.json
@@ -83,16 +82,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **78%**（39/50）
+覆盖率 **84%**（42/50）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`ComfyMathExpression`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`CFGGuider`、`BasicScheduler`、`CLIPTextEncode`、`ManualSigmas`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`VHS_VideoCombine`、`PromptRelayEncode`、`LTXTiledSampler`、`LTX2_NAG`、`DualCLIPLoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`UNETLoader`
-
-**缺卡**（3）：`LayerUtility: PurgeVRAM`、`LayerUtility: PurgeVRAM`、`SimpleMath+`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`ComfyMathExpression`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`CFGGuider`、`BasicScheduler`、`CLIPTextEncode`、`ManualSigmas`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`VAEDecodeTiled`、`SimpleMath+`、`LTXVAudioVAEDecode`、`VHS_VideoCombine`、`PromptRelayEncode`、`LTXTiledSampler`、`LayerUtility: PurgeVRAM`、`LTX2_NAG`、`DualCLIPLoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`UNETLoader`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXTiledSampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

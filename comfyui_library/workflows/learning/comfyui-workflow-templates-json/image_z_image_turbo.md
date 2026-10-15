@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_z_image_turbo.json
 hash: baaf937ff071970c
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:48:43
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:55
 nodes: [MarkdownNote, SaveImage, f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1]
 patterns: []
-missing: [f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1]
-discoveries: [次要节点 `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_z_image_turbo.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（1/3）
+覆盖率 **67%**（2/3）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1`
 
-**缺卡**（1）：`f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1`
-
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext、easy_savevideo
-
-## 学习发现
-
-- 次要节点 `f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、f2fdebf6-dfaf-43b6-9eb2-7f70613cfdc1、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext

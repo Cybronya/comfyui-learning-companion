@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频wan2.2最新加速dyno_1972639381158862850.json
 hash: 939c48b65a6a05a2
-coverage: 0.833333
-learned_at: 2026-10-10 23:13:11
+coverage: 0.875
+learned_at: 2026-10-15 22:48:44
 nodes: [VAEDecode, EmptyHunyuanLatentVideo, KSamplerAdvanced, KSamplerAdvanced, UNETLoader, UNETLoader, CLIPLoader, VAELoader, MarkdownNote, Note, Note, CLIPTextEncode, ModelSamplingSD3, LoraLoaderModelOnly, ModelSamplingSD3, CLIPTextEncode, SaveVideo, CreateVideo, Int, DF_Int_to_Float, MathExpression|pysssss, Int, Int, Int]
 patterns: []
-missing: [MathExpression|pysssss]
+missing: []
 parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/文生视频wan2.2最新加速dyno_1972639381158862850.json
@@ -60,14 +59,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **83%**（20/24）
+覆盖率 **88%**（21/24）
 
-**有卡**：`VAEDecode`、`EmptyHunyuanLatentVideo`、`KSamplerAdvanced`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`SaveVideo`、`CreateVideo`、`Int`、`DF_Int_to_Float`
-
-**缺卡**（1）：`MathExpression|pysssss`
+**有卡**：`VAEDecode`、`EmptyHunyuanLatentVideo`、`KSamplerAdvanced`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`SaveVideo`、`CreateVideo`、`Int`、`DF_Int_to_Float`、`MathExpression|pysssss`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

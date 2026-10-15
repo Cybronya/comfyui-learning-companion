@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_video_frame_interpolation.json
 hash: d7d790eb45ac6ed0
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:50:01
+coverage: 0.75
+learned_at: 2026-10-15 22:24:57
 nodes: [LoadVideo, SaveVideo, MarkdownNote, 022693be-2baa-4009-870a-28921508a7ef]
 patterns: []
-missing: [022693be-2baa-4009-870a-28921508a7ef]
-discoveries: [次要节点 `022693be-2baa-4009-870a-28921508a7ef` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/utility_video_frame_interpolation.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `022693be-2baa-4009-870a-28921508a7ef` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（2/4）
+覆盖率 **75%**（3/4）
 
-**有卡**：`LoadVideo`、`SaveVideo`
+**有卡**：`LoadVideo`、`SaveVideo`、`022693be-2baa-4009-870a-28921508a7ef`
 
-**缺卡**（1）：`022693be-2baa-4009-870a-28921508a7ef`
-
-**用到的条目**：SaveVideo、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `022693be-2baa-4009-870a-28921508a7ef` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、LoadVideo、022693be-2baa-4009-870a-28921508a7ef、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax+H3+新ref V1.0 Lora 阿里8步版本-多参考工作流_2096537181975310338.json
 hash: 7b244b62a63b37d8
 coverage: 0.782609
-learned_at: 2026-10-11 21:41:46
+learned_at: 2026-10-15 22:46:15
 nodes: [KSamplerSelect, BasicGuider, ComfyMathExpression, SetNode, GetNode, VAEDecodeAudio, SetNode, MarkdownNote, PathchSageAttentionKJ, MiniMaxH3SigmaShift, RandomNoise, MarkdownNote, CLIPLoader, VAELoader, VAELoader, SamplerCustomAdvanced, UNETLoader, VHS_LoadVideo, SetNode, VAEDecode, VHS_LoadVideo, PrimitiveFloat, MiniMaxH3ReferenceToVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VHS_LoadVideo, VHS_LoadVideo, VHS_LoadVideo, LoadAudio, LoadAudio, LoadAudio, VHS_LoadVideo, VHS_VideoCombine, LoadImage, PrimitiveFloat, PrimitiveStringMultiline, LoadImage, LoadImage, LoadImage, BasicScheduler, MarkdownNote, ResolutionSelector, LoraLoaderModelOnly]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3｜SageAttention｜首尾帧+参考生视频_2098331656624107522.json
 hash: f3e20f90e3272069
 coverage: 0.9
-learned_at: 2026-10-11 21:41:46
+learned_at: 2026-10-15 22:46:11
 nodes: [MarkdownNote, MarkdownNote, BasicScheduler, VAEDecode, VAELoader, CLIPLoader, SamplerCustomAdvanced, RandomNoise, BasicGuider, KSamplerSelect, VAEDecodeAudio, VAELoader, MiniMaxH3AudioConditioningT8, SaveVideo, CreateVideo, LoadImage, LoadImage, UNETLoader, UNETLoader, PathchSageAttentionKJ]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.1+2.2 基础综合版_2001569276173664257.json
 hash: 5bc405bc2f28f5a0
 coverage: 0.678571
-learned_at: 2026-10-11 02:57:39
+learned_at: 2026-10-15 22:47:34
 nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, FantasyTalkingModelLoader, MultiTalkModelLoader, FantasyPortraitModelLoader, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoTeaCache, WanVideoSLG, WanVideoApplyNAG, WanVideoClipVisionEncode, WanVideoEmptyEmbeds, CLIPVisionLoader, ImageResizeKJv2, LoadImage, LoadImage, Note, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, Note, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoImageToVideoEncode, Anything Everywhere, Anything Everywhere, WanVideoLoraSelectMulti, Note, Anything Everywhere, INTConstant, INTConstant, Note, Note, Note, Note, WanVideoSampler, Note, WanVideoSampler, Note, WanVideoDecode, WanVideoVAELoader, WanVideoLoraSelectMulti, ImageResizeKJv2, Note, CreateCFGScheduleFloatList, VHS_VideoCombine, WanVideoTextEncodeCached, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoModelLoader, Note, WanVideoVACEModelSelect, Note, Note, Note, Note]
 patterns: []
 missing: []

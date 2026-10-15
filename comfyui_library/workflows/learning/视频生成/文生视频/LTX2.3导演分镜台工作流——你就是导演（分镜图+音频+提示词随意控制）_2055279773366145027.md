@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3导演分镜台工作流——你就是导演（分镜图+音频+提示词随意控制）_2055279773366145027.json
 hash: 1be2016b62dacc17
 coverage: 0.972973
-learned_at: 2026-10-11 19:49:39
+learned_at: 2026-10-15 22:45:08
 nodes: [VAELoaderKJ, VAELoaderKJ, BasicScheduler, KSamplerSelect, SamplerCustomAdvanced, LTXVConcatAVLatent, VAELoaderKJ, KSamplerSelect, BasicScheduler, CFGGuider, LTXVConcatAVLatent, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LTXDirectorGuide, CFGGuider, LTXVCropGuides, LTXDirectorGuide, LTXVCropGuides, LTXVConditioning, ConditioningZeroOut, MarkdownNote, RandomNoise, LTXVLatentUpsampler, LTX2SamplingPreviewOverride, LoraLoaderModelOnly, LoraLoaderModelOnly, DualCLIPLoader, LoraLoaderModelOnly, CheckpointLoaderSimple, CreateVideo, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXDirector, SaveVideo, LoadVideo]
 patterns: []
 missing: []

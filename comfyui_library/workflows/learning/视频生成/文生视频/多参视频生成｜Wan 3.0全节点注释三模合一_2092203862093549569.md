@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/多参视频生成｜Wan 3.0全节点注释三模合一_2092203862093549569.json
 hash: 7e5f3362e603b7e1
 coverage: 0.878788
-learned_at: 2026-10-11 21:19:57
+learned_at: 2026-10-15 22:48:28
 nodes: [LoadImage, LoadImage, SaveVideo, LoadAudio, LoadAudio, RH_AlibabaWan30ReferenceToVideo, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
 missing: []

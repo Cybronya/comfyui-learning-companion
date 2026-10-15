@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/minimax参考输入depth与openpose_2101320036567834625.json
 hash: 5262fb29383f4102
 coverage: 0.9
-learned_at: 2026-10-11 22:12:49
+learned_at: 2026-10-15 22:47:29
 nodes: [VHS_VideoCombine, VHS_VideoCombine, MuyeImageBlendingMode, VHS_VideoInfo, PreviewAny, VHS_VideoCombine, DepthAnythingV2Preprocessor, DWPreprocessor, VHS_LoadVideo, SaveImage]
 patterns: []
 missing: []

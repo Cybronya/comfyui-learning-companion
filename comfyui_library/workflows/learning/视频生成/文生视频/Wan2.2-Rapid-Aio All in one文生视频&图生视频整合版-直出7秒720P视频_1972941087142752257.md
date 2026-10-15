@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-Rapid-Aio All in one文生视频&图生视频整合版-直出7秒720P视频_1972941087142752257.json
 hash: fec0a7d7de6ea953
-coverage: 0.809524
-learned_at: 2026-10-10 23:07:09
+coverage: 0.928571
+learned_at: 2026-10-15 22:47:12
 nodes: [CLIPTextEncode, LoadImage, CLIPTextEncode, LoraLoader, Fast Groups Bypasser (rgthree), Lora Loader Stack (rgthree), Int, Int, MathExpression_UTK, Int, ModelSamplingSD3, RHHiddenNodes, EmptyHunyuanLatentVideo, LayerUtility: PurgeVRAM, Int, Int, MathExpression_UTK, Int, CLIPVisionLoader, RHHiddenNodes, TorchCompileModelWanVideoV2, CLIPVisionEncode, ModelSamplingSD3, VAEDecode, WanImageToVideo, ColorMatch, VHS_VideoCombine, CLIPTextEncode, CLIPTextEncode, CR Text Concatenate, CR Text, CR Text, Note, KSampler, SaveLatent, Note, KSampler, VAEDecode, SaveLatent, CheckpointLoaderSimple, CheckpointLoaderSimple, VHS_VideoCombine]
 patterns: [lora]
-missing: [CR Text, CR Text, CR Text Concatenate, LayerUtility: PurgeVRAM, Lora Loader Stack (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-i2v-rapid-aio-v10.safetensors", "denoise": 1, "lora_name": "Wan2.1_I2V_14B_FusionX_LoRA.safetensors", "sampler_name": "sa_solver", "scheduler": "beta", "seed": 641247312301013, "steps": 6, "strength_clip": 1, "strength_model": 0.8}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Wan2.2-Rapid-Aio All in one文生视频&图生视频整合版-直出7秒720P视频_1972941087142752257.json
@@ -85,11 +85,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **81%**（34/42）
+覆盖率 **93%**（39/42）
 
-**有卡**：`CLIPTextEncode`、`LoadImage`、`LoraLoader`、`Int`、`MathExpression_UTK`、`ModelSamplingSD3`、`RHHiddenNodes`、`EmptyHunyuanLatentVideo`、`CLIPVisionLoader`、`TorchCompileModelWanVideoV2`、`CLIPVisionEncode`、`VAEDecode`、`WanImageToVideo`、`ColorMatch`、`VHS_VideoCombine`、`KSampler`、`SaveLatent`、`CheckpointLoaderSimple`
-
-**缺卡**（5）：`CR Text`、`CR Text`、`CR Text Concatenate`、`LayerUtility: PurgeVRAM`、`Lora Loader Stack (rgthree)`
+**有卡**：`CLIPTextEncode`、`LoadImage`、`LoraLoader`、`Lora Loader Stack (rgthree)`、`Int`、`MathExpression_UTK`、`ModelSamplingSD3`、`RHHiddenNodes`、`EmptyHunyuanLatentVideo`、`LayerUtility: PurgeVRAM`、`CLIPVisionLoader`、`TorchCompileModelWanVideoV2`、`CLIPVisionEncode`、`VAEDecode`、`WanImageToVideo`、`ColorMatch`、`VHS_VideoCombine`、`CR Text Concatenate`、`CR Text`、`KSampler`、`SaveLatent`、`CheckpointLoaderSimple`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、SaveLatent、CLIPVisionEncode、EmptyHunyuanLatentVideo
 
@@ -101,10 +99,5 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `Lora Loader Stack (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

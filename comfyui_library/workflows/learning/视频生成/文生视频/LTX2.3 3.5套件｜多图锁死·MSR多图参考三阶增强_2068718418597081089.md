@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 3.5套件｜多图锁死·MSR多图参考三阶增强_2068718418597081089.json
 hash: 1b0004b409962dec
-coverage: 0.974359
-learned_at: 2026-10-11 20:21:25
+coverage: 1
+learned_at: 2026-10-15 22:44:56
 nodes: [RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConcatAVLatent, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVConcatAVLatent, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, VAEDecodeTiled, LTXVAudioVAEDecode, LTXAddVideoICLoRAGuide, LTXVConcatAVLatent, LTXAddVideoICLoRAGuide, LTXAddVideoICLoRAGuide, LTXVEmptyLatentAudio, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LTXAVTextEncoderLoader, LTXVAudioVAELoader, INTConstant, LoraLoaderModelOnly, CLIPTextEncode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, SimpleMath+, SimpleMath+, Text, LTXICLoRALoaderModelOnly, LTXICLoRALoaderModelOnly, Text, Text, Text, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, INTConstant, INTConstant, LiconMSR, Text, ImageFromBatch, CFGGuider, LowVRAMCheckpointLoader, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, EmptyLTXVLatentVideo, Text, CLIPTextEncode]
 patterns: []
-missing: [SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors", "height": 24, "width": 751}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 3.5套件｜多图锁死·MSR多图参考三阶增强_2068718418597081089.json
@@ -112,15 +111,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **97%**（76/78）
+覆盖率 **100%**（78/78）
 
-**有卡**：`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVConcatAVLatent`、`CFGGuider`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LTXAddVideoICLoRAGuide`、`LTXVEmptyLatentAudio`、`ImageResizeKJv2`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`INTConstant`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LoadImage`、`Text`、`LTXICLoRALoaderModelOnly`、`VHS_VideoCombine`、`LiconMSR`、`ImageFromBatch`、`LowVRAMCheckpointLoader`、`EmptyLTXVLatentVideo`
-
-**缺卡**（2）：`SimpleMath+`、`SimpleMath+`
+**有卡**：`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVConcatAVLatent`、`CFGGuider`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LTXAddVideoICLoRAGuide`、`LTXVEmptyLatentAudio`、`ImageResizeKJv2`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`INTConstant`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LoadImage`、`SimpleMath+`、`Text`、`LTXICLoRALoaderModelOnly`、`VHS_VideoCombine`、`LiconMSR`、`ImageFromBatch`、`LowVRAMCheckpointLoader`、`EmptyLTXVLatentVideo`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Happyhorse 1.0 快乐小马上线，图生视频，文生视频_2049488676387819522.json
 hash: 9ee6ba85ed0563af
 coverage: 1
-learned_at: 2026-10-11 19:49:34
+learned_at: 2026-10-15 22:44:26
 nodes: [SaveVideo, LoadImage, RH_AlibabaHappyhorse10ImageToVideo]
 patterns: []
 missing: []

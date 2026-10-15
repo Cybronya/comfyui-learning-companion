@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.2-AllInOne首尾帧_2072999603420831744.json
 hash: d594ebd0a80f6508
-coverage: 0.956522
-learned_at: 2026-10-11 20:38:42
+coverage: 1
+learned_at: 2026-10-15 22:47:04
 nodes: [LoadWanVideoT5TextEncoder, WanVideoVAELoader, GetImageSizeAndCount, WanVideoVACEEncode, INTConstant, WanVideoVACEStartToEndFrame, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoLoraSelect, WanVideoSetLoRAs, INTConstant, INTConstant, ImageResizeKJv2, ImageResizeKJv2, WanVideoTextEncode, WanVideoSampler, WanVideoDecode, VHS_VideoCombine, String Literal, LoadImage, LoadImage, WanVideoBlockSwap, WanVideoModelLoader]
 patterns: []
-missing: [String Literal]
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/WAN2.2-AllInOne首尾帧_2072999603420831744.json
@@ -49,14 +48,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **96%**（22/23）
+覆盖率 **100%**（23/23）
 
-**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`GetImageSizeAndCount`、`WanVideoVACEEncode`、`INTConstant`、`WanVideoVACEStartToEndFrame`、`WanVideoTorchCompileSettings`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`ImageResizeKJv2`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`VHS_VideoCombine`、`LoadImage`、`WanVideoBlockSwap`、`WanVideoModelLoader`
-
-**缺卡**（1）：`String Literal`
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`GetImageSizeAndCount`、`WanVideoVACEEncode`、`INTConstant`、`WanVideoVACEStartToEndFrame`、`WanVideoTorchCompileSettings`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`ImageResizeKJv2`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`VHS_VideoCombine`、`String Literal`、`LoadImage`、`WanVideoBlockSwap`、`WanVideoModelLoader`
 
 **用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/万象AI+Minimax_h3_导演台插件3.0+4步lora加速版（批量短剧专用）_2085626169877155842.json
 hash: b0a74ccae3451326
 coverage: 0.944444
-learned_at: 2026-10-11 20:53:51
+learned_at: 2026-10-15 22:47:46
 nodes: [VAEDecodeAudio, VAEDecode, BasicScheduler, SamplerCustomAdvanced, VHS_VideoCombine, BasicGuider, KSamplerSelect, VAELoader, VAELoader, CLIPLoader, RandomNoise, LoadImage, PrimitiveStringMultiline, SFH3MultimodalDirector, UNETLoader, UNETLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderBypassModelOnly]
 patterns: []
 missing: []

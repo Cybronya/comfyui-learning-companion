@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
 hash: 5b4796eaac96c805
-coverage: 0.607143
-learned_at: 2026-10-10 21:25:28
+coverage: 0.75
+learned_at: 2026-10-15 22:26:09
 nodes: [TextEncodeQwenImage21, KSampler, VAEDecode, EmptyLatentImage, ResolutionSelector, 孤海注释, MarkdownNote, 孤海注释, PreviewImage, ModelPreviewOverrideKJ, 孤海注释, VOSR2Upscale, SaveImage, VOSR2ModelLoader, SplitImageWithAlpha, 忽略多组孤海, UNETLoader, CLIPLoader, VAELoader, easy positive, LayerUtility: PurgeVRAM V2, ShowText|pysssss, CLIPLoader, easy positive, JoinStrings, StringFormat, Image Comparer (rgthree), TextGenerate]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, easy positive, easy positive, 忽略多组孤海]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 210, "steps": 25, "width": 1024}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/1-Aiden-Qwen2.1文生图测试工作流！_2103121962439634945.json
@@ -21,11 +20,13 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（28 个）：
 - `TextEncodeQwenImage21`
-- `KSampler`
-- `VAEDecode`
-- `EmptyLatentImage`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
 - `ResolutionSelector`
 - `孤海注释`
 - `MarkdownNote`
@@ -38,7 +39,7 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 - `VOSR2ModelLoader`
 - `SplitImageWithAlpha`
 - `忽略多组孤海`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `easy positive`
@@ -53,27 +54,20 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `210`
 - `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **61%**（17/28）
+覆盖率 **75%**（21/28）
 
-**有卡**：`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`孤海注释`、`MarkdownNote`、`PreviewImage`、`ModelPreviewOverrideKJ`、`VOSR2Upscale`、`SaveImage`、`VOSR2ModelLoader`、`SplitImageWithAlpha`、`忽略多组孤海`、`UNETLoader`
+**有卡**：`TextEncodeQwenImage21`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`ModelPreviewOverrideKJ`、`VOSR2Upscale`、`SaveImage`、`VOSR2ModelLoader`、`SplitImageWithAlpha`、`忽略多组孤海`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`easy positive`、`LayerUtility: PurgeVRAM V2`、`JoinStrings`、`StringFormat`、`TextGenerate`
 
-**缺卡**（4）：`LayerUtility: PurgeVRAM V2`、`easy positive`、`easy positive`、`忽略多组孤海`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader

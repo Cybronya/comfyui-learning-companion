@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/黑森林- Flux kontext 一句话图像编辑 _ RunningHub专用节点工作流_1928512876661841921.json
 hash: 224ba438e9d7e608
 coverage: 0.538462
-learned_at: 2026-10-11 03:48:32
+learned_at: 2026-10-15 22:29:10
 nodes: [SetNode, GetNode, SaveImage, LoadImage, Bjornulf_ShowStringText, RH_Translator, MarkdownNote, ShowText|pysssss, Bjornulf_ShowStringText, SetNode, GetNode, RH_ComfyFluxKontext, Comfly_Flux_Kontext]
 patterns: []
 missing: []

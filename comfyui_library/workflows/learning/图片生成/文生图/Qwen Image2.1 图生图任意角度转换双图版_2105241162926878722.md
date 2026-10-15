@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image2.1 图生图任意角度转换双图版_2105241162926878722.json
 hash: 2040524950a0b018
 coverage: 0.846154
-learned_at: 2026-10-10 20:58:55
+learned_at: 2026-10-15 22:27:04
 nodes: [LoadImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, TextEncodeQwenImage21, QwenImage21Cache, KSampler, VAEDecode, SaveImage, MarkdownNote, MarkdownNote, LoadImage]
 patterns: []
 missing: []
@@ -20,16 +20,18 @@ parameters: {"cfg": 3, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（13 个）：
 - `LoadImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `TextEncodeQwenImage21`
 - `QwenImage21Cache`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `MarkdownNote`
 - `MarkdownNote`
@@ -37,15 +39,17 @@ parameters: {"cfg": 3, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 ## 关键参数
 
-- `cfg` = `3`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `20260930`
 - `steps` = `24`
+- `cfg` = `3`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **85%**（11/13）
 
-**有卡**：`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`KSampler`、`VAEDecode`、`SaveImage`、`MarkdownNote`
+**有卡**：`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`KSampler`、`VAEDecode`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、QwenImage21Cache

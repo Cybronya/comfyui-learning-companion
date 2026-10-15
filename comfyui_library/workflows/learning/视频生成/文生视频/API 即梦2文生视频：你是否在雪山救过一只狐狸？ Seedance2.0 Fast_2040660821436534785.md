@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/API 即梦2文生视频：你是否在雪山救过一只狐狸？ Seedance2.0 Fast_2040660821436534785.json
 hash: d928d8019c62824d
 coverage: 0.5
-learned_at: 2026-10-11 19:49:33
+learned_at: 2026-10-15 22:44:01
 nodes: [JjkText, RH_RhartVideoSparkvideo20FastTextToVideo, JjkText, SaveVideo]
 patterns: []
 missing: []

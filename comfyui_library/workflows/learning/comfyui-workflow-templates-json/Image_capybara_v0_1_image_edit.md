@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json
 hash: 01f3442d67b2b2c5
 official: true
-coverage: 0.333333
-learned_at: 2026-10-10 22:43:04
+coverage: 0.5
+learned_at: 2026-10-15 22:24:47
 nodes: [MarkdownNote, MarkdownNote, LoadImage, MarkdownNote, SaveImage, 4f4ddf39-1508-4d34-a35c-ff10e6ce995b]
 patterns: []
-missing: [4f4ddf39-1508-4d34-a35c-ff10e6ce995b]
-discoveries: [次要节点 `4f4ddf39-1508-4d34-a35c-ff10e6ce995b` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/Image_capybara_v0_1_image_edit.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `4f4ddf39-1508-4d34-a35c-ff10e6ce995b` 知识库中�
 
 ## 知识
 
-覆盖率 **33%**（2/6）
+覆盖率 **50%**（3/6）
 
-**有卡**：`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`SaveImage`、`4f4ddf39-1508-4d34-a35c-ff10e6ce995b`
 
-**缺卡**（1）：`4f4ddf39-1508-4d34-a35c-ff10e6ce995b`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `4f4ddf39-1508-4d34-a35c-ff10e6ce995b` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、4f4ddf39-1508-4d34-a35c-ff10e6ce995b、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput

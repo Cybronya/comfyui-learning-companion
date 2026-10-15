@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Seedream V4.5 文生图｜4K画质_2097885433970647042.json
 hash: 56ab38b0c8ee806f
-coverage: 0.333333
-learned_at: 2026-10-10 20:59:12
+coverage: 0.666667
+learned_at: 2026-10-15 23:01:00
 nodes: [SaveImage, RH_SeedreamV45TextToImage, PreviewImage]
 patterns: []
-missing: [RH_SeedreamV45TextToImage]
-discoveries: [次要节点 `RH_SeedreamV45TextToImage` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 图片生成/文生图/Seedream V4.5 文生图｜4K画质_2097885433970647042.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `RH_SeedreamV45TextToImage` 仅有 KSampler 的通用
 
 ## 结构
 
+**生成流程**：Output → Other
+
 **节点**（3 个）：
 - `SaveImage`
 - `RH_SeedreamV45TextToImage`
@@ -27,12 +28,8 @@ discoveries: [次要节点 `RH_SeedreamV45TextToImage` 仅有 KSampler 的通用
 
 ## 知识
 
-覆盖率 **33%**（1/3）
+覆盖率 **67%**（2/3）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`RH_SeedreamV45TextToImage`
 
-**缺卡**（1）：`RH_SeedreamV45TextToImage`
-
-## 学习发现
-
-- 次要节点 `RH_SeedreamV45TextToImage` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：RH_SeedreamV45TextToImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Text、sampler_name 调整经验

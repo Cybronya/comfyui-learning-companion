@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan_alpha_t2v_14B create transparent video_1973778662703108098.json
 hash: 7f24adc328958401
 coverage: 1
-learned_at: 2026-10-10 23:09:58
+learned_at: 2026-10-15 22:47:37
 nodes: [UNETLoader, EmptyHunyuanLatentVideo, CLIPLoader, VAELoader, ImageToMask, ImageCompositeMasked, INTConstant, INTConstant, VHS_VideoCombine, VHS_LoadVideo, INTConstant, CLIPTextEncode, VAELoader, LoraLoaderModelOnly, ModelSamplingSD3, LoraLoaderModelOnly, KSampler, VAEDecode, SavePNGZIP_and_Preview_RGBA_AnimatedWEBP, VHS_VideoCombine, LoraLoaderModelOnly, VHS_VideoCombine, VAEDecode, CLIPTextEncode]
 patterns: []
 missing: []

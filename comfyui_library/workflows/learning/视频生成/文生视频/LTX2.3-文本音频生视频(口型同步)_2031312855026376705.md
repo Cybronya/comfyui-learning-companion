@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-文本音频生视频(口型同步)_2031312855026376705.json
 hash: 25cd682eeccd8b68
-coverage: 0.821429
-learned_at: 2026-10-11 03:16:46
+coverage: 0.875
+learned_at: 2026-10-15 22:45:04
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVImgToVideoInplace, KSamplerSelect, Reroute, LTXVAudioVAEDecode, LTXVConditioning, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, VAEDecodeTiled, LTXVImgToVideoInplace, SolidMask, LTXVAudioVAELoader, CreateVideo, EmptyLTXVLatentVideo, LTXVAudioVAEEncode, LoraLoaderModelOnly, CheckpointLoaderSimple, LatentUpscaleModelLoader, LTXVCropGuides, LTXVLatentUpsampler, LTXVConcatAVLatent, SetLatentNoiseMask, ResizeImagesByLongerEdge, LTXVPreprocess, SimpleMath+, SimpleMath+, ComfyMathExpression, SimpleMath+, ManualSigmas, ResizeImageMaskNode, LoadImage, LoadImage, PrimitiveInt, TrimAudioDuration, LoadImage, PrimitiveFloat, LTXAVTextEncoderLoader, PrimitiveBoolean, CLIPTextEncode, PreviewAny, PrimitiveInt, PrimitiveInt, SaveVideo, PrimitiveStringMultiline, LoraLoader, CLIPTextEncode, TextGenerateLTX2Prompt, LoadAudio]
 patterns: [lora]
-missing: [SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "lora_name": "gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors", "strength_clip": 1, "strength_model": 1}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3-文本音频生视频(口型同步)_2031312855026376705.json
@@ -92,16 +91,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **82%**（46/56）
+覆盖率 **88%**（49/56）
 
-**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`SolidMask`、`LTXVAudioVAELoader`、`CreateVideo`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEEncode`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`SetLatentNoiseMask`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ComfyMathExpression`、`ResizeImageMaskNode`、`LoadImage`、`TrimAudioDuration`、`LTXAVTextEncoderLoader`、`PrimitiveBoolean`、`CLIPTextEncode`、`SaveVideo`、`LoraLoader`、`TextGenerateLTX2Prompt`、`LoadAudio`
-
-**缺卡**（3）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`SolidMask`、`LTXVAudioVAELoader`、`CreateVideo`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEEncode`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`SetLatentNoiseMask`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`SimpleMath+`、`ComfyMathExpression`、`ResizeImageMaskNode`、`LoadImage`、`TrimAudioDuration`、`LTXAVTextEncoderLoader`、`PrimitiveBoolean`、`CLIPTextEncode`、`SaveVideo`、`LoraLoader`、`TextGenerateLTX2Prompt`、`LoadAudio`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

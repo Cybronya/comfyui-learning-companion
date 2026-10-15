@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2-aio-v7-文生视频_1982741566634762241.json
 hash: dda2fdc62c02d85d
-coverage: 0.652174
-learned_at: 2026-10-11 02:45:03
+coverage: 0.73913
+learned_at: 2026-10-15 22:47:35
 nodes: [WanVaceToVideo, JWInteger, CLIPTextEncode, MathExpression|pysssss, Note, Note, CLIPTextEncode, ModelSamplingSD3, KSampler, ImageFromBatch+, ApplySageAttention, GetNode, Note, JWInteger, CheckpointLoaderSimple, JWInteger, DeepTranslatorTextNode, VAEDecode, TT_img_enc_v2, SetNode, VHS_VideoCombine, Note, SaveImage]
 patterns: []
-missing: [ImageFromBatch+, MathExpression|pysssss]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v7-nsfw.safetensors", "denoise": 1, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 7567358653673, "steps": 4}
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/wan2.2-aio-v7-文生视频_1982741566634762241.json
@@ -61,11 +61,9 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **65%**（15/23）
+覆盖率 **74%**（17/23）
 
-**有卡**：`WanVaceToVideo`、`JWInteger`、`CLIPTextEncode`、`ModelSamplingSD3`、`KSampler`、`ApplySageAttention`、`CheckpointLoaderSimple`、`DeepTranslatorTextNode`、`VAEDecode`、`TT_img_enc_v2`、`VHS_VideoCombine`、`SaveImage`
-
-**缺卡**（2）：`ImageFromBatch+`、`MathExpression|pysssss`
+**有卡**：`WanVaceToVideo`、`JWInteger`、`CLIPTextEncode`、`MathExpression|pysssss`、`ModelSamplingSD3`、`KSampler`、`ImageFromBatch+`、`ApplySageAttention`、`CheckpointLoaderSimple`、`DeepTranslatorTextNode`、`VAEDecode`、`TT_img_enc_v2`、`VHS_VideoCombine`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、SaveImage、ModelSamplingSD3、VHS_VideoCombine、DeepTranslatorTextNode
 
@@ -76,6 +74,4 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 学习发现
 
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

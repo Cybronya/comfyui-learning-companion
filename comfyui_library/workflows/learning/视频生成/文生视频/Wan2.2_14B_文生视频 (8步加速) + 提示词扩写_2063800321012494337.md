@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_2063800321012494337.json
 hash: 39a8e8970774b334
-coverage: 0.769231
-learned_at: 2026-10-11 20:21:31
+coverage: 1
+learned_at: 2026-10-15 22:47:13
 nodes: [ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, CLIPLoader, VAELoader, easy int, LayerUtility: PurgeVRAM V2, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, SimpleMath+, easy int, easy int, VAEDecode, VHS_VideoCombine, CLIPTextEncode, CLIPTextEncode, EmptyHunyuanLatentVideo, TextBox, WanVideoPromptExtender, QwenLoader]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, SimpleMath+, easy int, easy int, easy int]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_2063800321012494337.json
@@ -62,19 +61,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **77%**（20/26）
+覆盖率 **100%**（26/26）
 
-**有卡**：`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`VAEDecode`、`VHS_VideoCombine`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`TextBox`、`WanVideoPromptExtender`、`QwenLoader`
-
-**缺卡**（6）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`easy int`、`easy int`、`easy int`
+**有卡**：`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`easy int`、`LayerUtility: PurgeVRAM V2`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`SimpleMath+`、`VAEDecode`、`VHS_VideoCombine`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`TextBox`、`WanVideoPromptExtender`、`QwenLoader`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

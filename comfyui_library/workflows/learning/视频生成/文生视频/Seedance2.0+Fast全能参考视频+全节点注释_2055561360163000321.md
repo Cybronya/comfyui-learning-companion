@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0+Fast全能参考视频+全节点注释_2055561360163000321.json
 hash: a07e78c64380b1e1
 coverage: 0.6
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, Note, Note, Note, LoadImage, LoadImage, LoadVideo, LoadImage, Note, RH_RhartVideoSparkvideo20FastMultimodalVideo]
 patterns: []
 missing: []
@@ -39,4 +39,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`LoadVideo`、`RH_RhartVideoSparkvideo20FastMultimodalVideo`
 
-**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20FastMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20FastMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage

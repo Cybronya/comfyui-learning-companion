@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/video_ltx2_3_i2v图生视频，音画同步视频生成，qwen3.5文本反推，_2042515888879968257.json
 hash: 2049642b4bf2763a
 coverage: 0.877551
-learned_at: 2026-10-11 19:49:45
+learned_at: 2026-10-15 22:47:32
 nodes: [RandomNoise, LTXVCropGuides, LTXVLatentUpsampler, Reroute, ComfyMathExpression, LTXVConcatAVLatent, LTXVConditioning, KSamplerSelect, LTXVImgToVideoInplace, KSamplerSelect, CFGGuider, llama_cpp_parameters, ShowText|pysssss, LTXVImgToVideoInplace, LTXVEmptyLatentAudio, SamplerCustomAdvanced, SamplerCustomAdvanced, ManualSigmas, EmptyLTXVLatentVideo, ComfyMathExpression, LTXVPreprocess, PrimitiveInt, LatentUpscaleModelLoader, ManualSigmas, LTXVConcatAVLatent, PrimitiveInt, PrimitiveInt, ResizeImageMaskNode, CLIPTextEncode, ResizeImagesByLongerEdge, CLIPTextEncode, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CreateVideo, LTXVSeparateAVLatent, VAEDecode, RandomNoise, CFGGuider, PrimitiveInt, ComfyMathExpression, SaveVideo, LTXAVTextEncoderLoader, LoraLoaderModelOnly, PrimitiveBoolean, CheckpointLoaderSimple, LTXVAudioVAELoader, LoadImage, llama_cpp_model_loader, llama_cpp_instruct_adv]
 patterns: []
 missing: []

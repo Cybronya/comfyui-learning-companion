@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
 hash: 5c31f2f2d34c2415
-coverage: 0.608696
-learned_at: 2026-10-10 20:58:57
+coverage: 0.695652
+learned_at: 2026-10-15 22:27:07
 nodes: [Seed (rgthree), EmptyLatentImage, VAELoader, CLIPLoader, UNETLoader, VAEDecode, SaveImage, LoadImage, ResolutionSelector, llama_cpp_model_loader, LayerUtility: TextJoin, llama_cpp_parameters, PrimitiveStringMultiline, MarkdownNote, KSampler, LoraLoaderModelOnly, PrimitiveStringMultiline, MarkdownNote, TextEncodeQwenImage21, PreviewAny, llama_cpp_instruct_adv, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline]
 patterns: []
-missing: [LayerUtility: TextJoin, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 256206046827805, "steps": 8, "width": 1024}
-discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen image2.1角色设定卡，1分钟出图！！！_2106588771755061250.json
@@ -22,13 +22,15 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（23 个）：
 - `Seed (rgthree)`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `VAELoader`
 - `CLIPLoader`
-- `UNETLoader`
-- `VAEDecode`
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `LoadImage`
 - `ResolutionSelector`
@@ -37,8 +39,8 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 - `llama_cpp_parameters`
 - `PrimitiveStringMultiline`
 - `MarkdownNote`
-- `KSampler`
-- `LoraLoaderModelOnly`
+- `KSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `PrimitiveStringMultiline`
 - `MarkdownNote`
 - `TextEncodeQwenImage21`
@@ -49,23 +51,23 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `256206046827805`
 - `steps` = `8`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **61%**（14/23）
+覆盖率 **70%**（16/23）
 
-**有卡**：`Seed (rgthree)`、`EmptyLatentImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`VAEDecode`、`SaveImage`、`LoadImage`、`ResolutionSelector`、`llama_cpp_model_loader`、`LayerUtility: TextJoin`、`llama_cpp_parameters`、`PrimitiveStringMultiline`、`MarkdownNote`
+**有卡**：`Seed (rgthree)`、`EmptyLatentImage`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`VAEDecode`、`SaveImage`、`LoadImage`、`ResolutionSelector`、`llama_cpp_model_loader`、`LayerUtility: TextJoin`、`llama_cpp_parameters`、`KSampler`、`LoraLoaderModelOnly`、`TextEncodeQwenImage21`、`llama_cpp_instruct_adv`
 
-**缺卡**（2）：`LayerUtility: TextJoin`、`Seed (rgthree)`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
 ## 参数体检
 
@@ -74,6 +76,4 @@ discoveries: [次要节点 `LayerUtility: TextJoin` 知识库中没有该节点�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: TextJoin` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

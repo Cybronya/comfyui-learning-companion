@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3生成电影公司厂标视频_2030534215535693825.json
 hash: db4db9b5a56a1270
-coverage: 0.769231
-learned_at: 2026-10-11 03:16:45
+coverage: 0.846154
+learned_at: 2026-10-15 22:44:43
 nodes: [LTXVConcatAVLatent, LTXVAudioVAELoader, KSamplerSelect, ManualSigmas, CheckpointLoaderSimple, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LoraLoaderModelOnly, ResizeImagesByLongerEdge, LTXVLatentUpsampler, LTXVImgToVideoInplace, ResizeImageMaskNode, KSamplerSelect, Reroute, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVAudioVAEDecode, CLIPTextEncode, LTXVConditioning, LTXVConcatAVLatent, LTXVEmptyLatentAudio, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LatentUpscaleModelLoader, CLIPTextEncode, CFGGuider, VAEDecodeTiled, LTXVPreprocess, MarkdownNote, CreateVideo, MarkdownNote, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXAVTextEncoderLoader, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, SaveVideo, PrimitiveBoolean, CR Text, CR Text Replace, LoadImage, RandomNoise, RandomNoise, PrimitiveStringMultiline, Label (rgthree), Label (rgthree)]
 patterns: []
-missing: [CR Text, CR Text Replace, Label (rgthree), Label (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3生成电影公司厂标视频_2030534215535693825.json
@@ -86,17 +85,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **77%**（40/52）
+覆盖率 **85%**（44/52）
 
-**有卡**：`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`KSamplerSelect`、`ManualSigmas`、`CheckpointLoaderSimple`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`LTXVPreprocess`、`CreateVideo`、`ComfyMathExpression`、`LTXAVTextEncoderLoader`、`SaveVideo`、`PrimitiveBoolean`、`LoadImage`、`RandomNoise`
-
-**缺卡**（4）：`CR Text`、`CR Text Replace`、`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`KSamplerSelect`、`ManualSigmas`、`CheckpointLoaderSimple`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`LTXVPreprocess`、`CreateVideo`、`ComfyMathExpression`、`LTXAVTextEncoderLoader`、`SaveVideo`、`PrimitiveBoolean`、`CR Text`、`CR Text Replace`、`LoadImage`、`RandomNoise`、`Label (rgthree)`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

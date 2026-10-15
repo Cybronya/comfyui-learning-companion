@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance 2.0 复刻爆款视频 (提示词反推)_2084855657118916609.json
 hash: ac8ae46c34bba1e3
-coverage: 0.294118
-learned_at: 2026-10-11 20:38:41
+coverage: 0.823529
+learned_at: 2026-10-15 22:46:57
 nodes: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), RH_LLMAPI_Pro_Node, easy showAnything, RH_LLMAPI_Pro_Node, Fast Groups Bypasser (rgthree), easy saveText, MarkdownNote, SaveVideoNode, LoadVideo, Label (rgthree), MarkdownNote, SaveVideoNode, RH_RhartVideoSparkvideo20MiniMultimodalVideo, RH_RhartVideoSparkvideo20MultimodalVideo, Fast Groups Bypasser (rgthree), Label (rgthree), easy showAnything, VHS_LoadVideo, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), LoadImage, LoadImage, Label (rgthree), Label (rgthree), easy saveText]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), easy saveText, easy saveText]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明, 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/Seedance 2.0 复刻爆款视频 (提示词反推)_2084855657118916609.json
@@ -60,31 +59,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **29%**（10/34）
+覆盖率 **82%**（28/34）
 
-**有卡**：`RH_LLMAPI_Pro_Node`、`SaveVideoNode`、`LoadVideo`、`RH_RhartVideoSparkvideo20MiniMultimodalVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`VHS_LoadVideo`、`LoadImage`
+**有卡**：`Label (rgthree)`、`RH_LLMAPI_Pro_Node`、`easy saveText`、`SaveVideoNode`、`LoadVideo`、`RH_RhartVideoSparkvideo20MiniMultimodalVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`VHS_LoadVideo`、`LoadImage`
 
-**缺卡**（18）：`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`Label (rgthree)`、`easy saveText`、`easy saveText`
-
-**用到的条目**：LoadImage、SaveVideoNode、LoadVideo、RH_LLMAPI_Pro_Node、VHS_LoadVideo、RH_RhartVideoSparkvideo20MiniMultimodalVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明
-- 次要节点 `easy saveText` 仅有 SaveImage 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、SaveVideoNode、easy saveText、LoadVideo、RH_LLMAPI_Pro_Node、VHS_LoadVideo、RH_RhartVideoSparkvideo20MiniMultimodalVideo、RH_RhartVideoSparkvideo20MultimodalVideo

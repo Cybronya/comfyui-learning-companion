@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_ernie_image.json
 hash: 6713587397dd7f5a
 official: true
-coverage: 0.25
-learned_at: 2026-10-10 22:47:30
+coverage: 0.5
+learned_at: 2026-10-15 22:24:53
 nodes: [SaveImage, 03921aea-a70e-44b4-bc77-f6bda10f2120, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [03921aea-a70e-44b4-bc77-f6bda10f2120]
-discoveries: [次要节点 `03921aea-a70e-44b4-bc77-f6bda10f2120` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_ernie_image.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `03921aea-a70e-44b4-bc77-f6bda10f2120` 知识库中�
 
 ## 知识
 
-覆盖率 **25%**（1/4）
+覆盖率 **50%**（2/4）
 
-**有卡**：`SaveImage`
+**有卡**：`SaveImage`、`03921aea-a70e-44b4-bc77-f6bda10f2120`
 
-**缺卡**（1）：`03921aea-a70e-44b4-bc77-f6bda10f2120`
-
-**用到的条目**：SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext、easy_savevideo
-
-## 学习发现
-
-- 次要节点 `03921aea-a70e-44b4-bc77-f6bda10f2120` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveImage、03921aea-a70e-44b4-bc77-f6bda10f2120、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext

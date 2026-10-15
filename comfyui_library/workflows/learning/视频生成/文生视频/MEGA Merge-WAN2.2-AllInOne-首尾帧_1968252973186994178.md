@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MEGA Merge-WAN2.2-AllInOne-首尾帧_1968252973186994178.json
 hash: ecdd95c4b622044b
 coverage: 1
-learned_at: 2026-10-10 23:00:45
+learned_at: 2026-10-15 22:45:23
 nodes: [TrimVideoLatent, VAEDecode, KSampler, ModelSamplingSD3, CheckpointLoaderSimple, INTConstant, ImageResizeKJv2, GetImageSizeAndCount, WanVideoVACEStartToEndFrame, INTConstant, LoadImage, ImageResizeKJv2, LoadImage, VHS_VideoCombine, WanVaceToVideo, CLIPTextEncode, CLIPTextEncode]
 patterns: []
 missing: []

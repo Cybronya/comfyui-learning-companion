@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH 万相3.0-参考生视频_2091965985447301121.json
 hash: 1537e5a20ee5014e
 coverage: 0.9
-learned_at: 2026-10-11 21:19:49
+learned_at: 2026-10-15 22:46:52
 nodes: [SaveVideo, Note, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Note, LoadImage, LoadAudio, LoadAudio, LoadAudio, LoadImage, LoadVideo, LoadVideo, LoadVideo, LoadImage, LoadImage, RH_AlibabaWan30ReferenceToVideo]
 patterns: []
 missing: []
@@ -49,4 +49,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`LoadAudio`、`LoadVideo`、`RH_AlibabaWan30ReferenceToVideo`
 
-**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_AlibabaWan30ReferenceToVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_AlibabaWan30ReferenceToVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load

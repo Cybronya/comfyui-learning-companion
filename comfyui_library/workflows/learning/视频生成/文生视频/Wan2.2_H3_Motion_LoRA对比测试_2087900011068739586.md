@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_H3_Motion_LoRA对比测试_2087900011068739586.json
 hash: bef35c0e2c61cdab
 coverage: 0.95122
-learned_at: 2026-10-11 20:53:48
+learned_at: 2026-10-15 22:47:13
 nodes: [VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, CreateVideo, ComfyMathExpression, CLIPLoader, BasicGuider, MiniMaxH3SigmaShift, PathchSageAttentionKJ, LoraLoaderModelOnly, BasicScheduler, KSamplerSelect, RandomNoise, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, CreateVideo, ComfyMathExpression, CLIPLoader, BasicGuider, MiniMaxH3SigmaShift, PathchSageAttentionKJ, LoraLoaderModelOnly, BasicScheduler, KSamplerSelect, MiniMaxH3ImageToVideo, UNETLoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, CreateVideo, ComfyMathExpression, CLIPLoader, BasicGuider, MiniMaxH3SigmaShift, PathchSageAttentionKJ, LoraLoaderModelOnly, KSamplerSelect, RandomNoise, UNETLoader, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, VAELoader, VAELoader, VAEDecodeAudio, VAEDecode, SamplerCustomAdvanced, CreateVideo, ComfyMathExpression, CLIPLoader, BasicGuider, MiniMaxH3SigmaShift, PathchSageAttentionKJ, LoraLoaderModelOnly, KSamplerSelect, UNETLoader, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, ImageResizeKJv2, PrimitiveFloat, ResolutionSelector, JjkText, PrimitiveFloat, SaveVideo, SaveVideo, SaveVideo, SaveVideo, JjkText, LoadImage, ResolutionSelector, BasicScheduler, BasicScheduler]
 patterns: []
 missing: []

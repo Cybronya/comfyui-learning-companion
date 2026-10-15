@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTXV2.0文生视频-点PLUS运行_2009517391662813186.json
 hash: 6c7a1ab845937916
-coverage: 0.735849
-learned_at: 2026-10-11 03:07:10
+coverage: 0.773585
+learned_at: 2026-10-15 22:45:18
 nodes: [GetImageSize, MarkdownNote, KSamplerSelect, LTXVConditioning, SamplerCustomAdvanced, KSamplerSelect, Reroute, Reroute, LTXVScheduler, LTXVConcatAVLatent, MarkdownNote, CLIPTextEncode, LTXVSeparateAVLatent, Reroute, Reroute, Reroute, VAEDecodeTiled, LTXVAudioVAEDecode, RandomNoise, CFGGuider, CFGGuider, ImageScaleBy, EmptyImage, PrimitiveInt, PrimitiveFloat, EmptyLTXVLatentVideo, PrimitiveInt, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVConcatAVLatent, LTXVCropGuides, LTXVLatentUpsampler, LatentUpscaleModelLoader, ManualSigmas, RandomNoise, LTXVAudioVAEDecode, VAEDecodeTiled, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, LTXVAudioVAELoader, CLIPTextEncode, VHS_VideoCombine, VRAMReserver, LTXAVTextEncoderLoader, CR Text, CR Text, easy showAnything, RH_LLMAPI_NODE, MarkdownNote]
 patterns: []
-missing: [CR Text, CR Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTXV2.0文生视频-点PLUS运行_2009517391662813186.json
@@ -87,15 +86,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **74%**（39/53）
+覆盖率 **77%**（41/53）
 
-**有卡**：`GetImageSize`、`KSamplerSelect`、`LTXVConditioning`、`SamplerCustomAdvanced`、`LTXVScheduler`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`RandomNoise`、`CFGGuider`、`ImageScaleBy`、`EmptyImage`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`ManualSigmas`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`VRAMReserver`、`LTXAVTextEncoderLoader`、`RH_LLMAPI_NODE`
-
-**缺卡**（2）：`CR Text`、`CR Text`
+**有卡**：`GetImageSize`、`KSamplerSelect`、`LTXVConditioning`、`SamplerCustomAdvanced`、`LTXVScheduler`、`LTXVConcatAVLatent`、`CLIPTextEncode`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`RandomNoise`、`CFGGuider`、`ImageScaleBy`、`EmptyImage`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`ManualSigmas`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`VRAMReserver`、`LTXAVTextEncoderLoader`、`CR Text`、`RH_LLMAPI_NODE`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

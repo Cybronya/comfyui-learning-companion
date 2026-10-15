@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0  文生视频-不用排队_2048435469758767106.json
 hash: af3ebb2250c03071
 coverage: 1
-learned_at: 2026-10-11 19:49:42
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, CustomAddLabel, RH_RhartVideoSparkvideo20TextToVideo, GetVideoComponents, VHS_VideoCombine]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json
 hash: c9203bfdb5b4dc6e
 coverage: 1
-learned_at: 2026-10-10 20:58:32
+learned_at: 2026-10-15 22:26:18
 nodes: [SaveImage, RH_ComfyFluxKontext, DeepTranslatorTextNode, LoadImage]
 patterns: []
 missing: []
@@ -18,6 +18,8 @@ missing: []
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX.1 Kontext最强图像编辑技术_1934184542896877570.json`
 
 ## 结构
+
+**生成流程**：Output → Other
 
 **节点**（4 个）：
 - `SaveImage`
@@ -30,3 +32,5 @@ missing: []
 覆盖率 **100%**（4/4）
 
 **有卡**：`SaveImage`、`RH_ComfyFluxKontext`、`DeepTranslatorTextNode`、`LoadImage`
+
+**用到的条目**：LoadImage、RH_ComfyFluxKontext、SaveImage、DeepTranslatorTextNode、sd15-t2i-basic、sd15-t2i-lora、node、Text

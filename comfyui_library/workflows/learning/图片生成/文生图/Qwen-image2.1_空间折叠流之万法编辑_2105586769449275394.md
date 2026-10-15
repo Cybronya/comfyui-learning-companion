@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
 hash: eb4c449807f36cd8
-coverage: 0.447368
-learned_at: 2026-10-10 20:59:05
+coverage: 0.473684
+learned_at: 2026-10-15 22:27:20
 nodes: [SetNode, SetNode, SetNode, LoadImage, GetNode, SetNode, LoadImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, LoadImage, VAELoader, GetNode, LoadImage, UNETLoader, CLIPLoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, SetNode, GetNode, SetNode, GetNode, ComfySwitchNode, EmptyLatentImage, GetNode, KSampler, VAEDecode, SaveImage, SetNode, SetNode, LoadImage, Text, ResolutionSelector, 忽略多组孤海]
 patterns: []
-missing: [忽略多组孤海]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 286759499462852, "steps": 35, "width": 1024}
-discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json
@@ -20,6 +19,8 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image2.1_空间折叠流之万法编辑_2105586769449275394.json`
 
 ## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
 
 **节点**（38 个）：
 - `SetNode`
@@ -39,7 +40,7 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `VAELoader`
 - `GetNode`
 - `LoadImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `QwenImage21Cache`
 - `LoadImage`
@@ -49,10 +50,10 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 - `SetNode`
 - `GetNode`
 - `ComfySwitchNode`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `GetNode`
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `SetNode`
 - `SetNode`
@@ -63,24 +64,20 @@ discoveries: [次要节点 `忽略多组孤海` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `286759499462852`
 - `steps` = `35`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **45%**（17/38）
+覆盖率 **47%**（18/38）
 
-**有卡**：`SetNode`、`LoadImage`、`GetNode`、`VAELoader`
+**有卡**：`LoadImage`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`EmptyLatentImage`、`KSampler`、`VAEDecode`、`SaveImage`、`Text`、`ResolutionSelector`、`忽略多组孤海`
 
-**缺卡**（1）：`忽略多组孤海`
-
-## 学习发现
-
-- 次要节点 `忽略多组孤海` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage

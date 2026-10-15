@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_sdpose_multi_person_video.json
 hash: 83c66c8fa40a778e
 official: true
-coverage: 0.583333
-learned_at: 2026-10-10 22:49:55
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:57
 nodes: [MarkdownNote, 01b6a731-fb78-4070-9a38-c87146da9604, DrawBBoxes, ResizeImageMaskNode, PrimitiveInt, MarkdownNote, ImageBlend, LoadVideo, CreateVideo, SaveVideo, GetVideoComponents, PreviewImage]
 patterns: []
-missing: [01b6a731-fb78-4070-9a38-c87146da9604]
-discoveries: [次要节点 `01b6a731-fb78-4070-9a38-c87146da9604` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/utility_sdpose_multi_person_video.json
@@ -39,14 +38,8 @@ discoveries: [次要节点 `01b6a731-fb78-4070-9a38-c87146da9604` 知识库中�
 
 ## 知识
 
-覆盖率 **58%**（7/12）
+覆盖率 **67%**（8/12）
 
-**有卡**：`DrawBBoxes`、`ResizeImageMaskNode`、`ImageBlend`、`LoadVideo`、`CreateVideo`、`SaveVideo`、`GetVideoComponents`
+**有卡**：`01b6a731-fb78-4070-9a38-c87146da9604`、`DrawBBoxes`、`ResizeImageMaskNode`、`ImageBlend`、`LoadVideo`、`CreateVideo`、`SaveVideo`、`GetVideoComponents`
 
-**缺卡**（1）：`01b6a731-fb78-4070-9a38-c87146da9604`
-
-**用到的条目**：ResizeImageMaskNode、SaveVideo、CreateVideo、GetVideoComponents、ImageBlend、LoadVideo、DrawBBoxes、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `01b6a731-fb78-4070-9a38-c87146da9604` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResizeImageMaskNode、SaveVideo、CreateVideo、GetVideoComponents、ImageBlend、ImageBlend、LoadVideo、DrawBBoxes

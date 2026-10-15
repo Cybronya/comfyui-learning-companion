@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2 文生视频 (加速版)+ 提示词自动润色_1950000551498006530.json
 hash: 5d8a2279a767820a
-coverage: 0.609756
-learned_at: 2026-10-10 23:09:35
+coverage: 0.804878
+learned_at: 2026-10-15 22:47:34
 nodes: [VAEDecode, RH_Translator, VAELoader, UNETLoader, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, Note, Note, Note, Note, CLIPLoader, KSamplerAdvanced, KSamplerAdvanced, PrimitiveBoolean, Note, INTConstant, INTConstant, SimpleMath+, VHS_VideoCombine, EmptyHunyuanLatentVideo, MathExpression|pysssss, MathExpression|pysssss, ShowText|pysssss, DF_Integer, DF_Integer, MathExpression|pysssss, MathExpression|pysssss, DF_Integer, CR Text Concatenate, CR Text, RH_Prompter, easy ifElse, ShowText|pysssss, Text Multiline]
 patterns: []
-missing: [CR Text, CR Text Concatenate, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, SimpleMath+, Text Multiline]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2 文生视频 (加速版)+ 提示词自动润色_1950000551498006530.json
@@ -77,21 +76,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **61%**（25/41）
+覆盖率 **80%**（33/41）
 
-**有卡**：`VAEDecode`、`RH_Translator`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`CLIPLoader`、`KSamplerAdvanced`、`PrimitiveBoolean`、`INTConstant`、`VHS_VideoCombine`、`EmptyHunyuanLatentVideo`、`DF_Integer`、`RH_Prompter`
-
-**缺卡**（8）：`CR Text`、`CR Text Concatenate`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`SimpleMath+`、`Text Multiline`
+**有卡**：`VAEDecode`、`RH_Translator`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`CLIPLoader`、`KSamplerAdvanced`、`PrimitiveBoolean`、`INTConstant`、`SimpleMath+`、`VHS_VideoCombine`、`EmptyHunyuanLatentVideo`、`MathExpression|pysssss`、`DF_Integer`、`CR Text Concatenate`、`CR Text`、`RH_Prompter`、`Text Multiline`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1-多宫格分镜图-V2.2_2101933499191222274.json
 hash: dfce843629e7bbf4
 coverage: 0.84375
-learned_at: 2026-10-10 20:48:08
+learned_at: 2026-10-15 22:25:19
 nodes: [QwenImage21Cache, TextEncodeQwenImage21, ComfySwitchNode, KSampler, EmptyLatentImage, VAELoader, LoadImage, LoadImage, UNETLoader, CLIPLoader, UNETLoader, CLIPLoader, VAEDecode, ResolutionSelector, SaveImage, CLIPLoader, ZNGB_ImageBatchMulti, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, TextGenerateLTX2Prompt, StringConcatenate, RHLLMChatNode, PrimitiveStringMultiline, PrimitiveStringMultiline, easy showAnything, PrimitiveStringMultiline]
 patterns: []
 missing: []

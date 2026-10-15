@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3生视频工作流_2055117729442607106.json
 hash: 52213b6e63399656
 coverage: 0.75
-learned_at: 2026-10-11 19:49:44
+learned_at: 2026-10-15 22:47:23
 nodes: [SetNode, LTX2SamplingPreviewOverride, VAEDecode, GetNode, LTXVConcatAVLatent, PreviewImage, VisualizeSigmasKJ, ConditioningZeroOut, SamplerCustom, KSamplerSelect, BasicScheduler, LTXVConditioning, VAELoaderKJ, DualCLIPLoader, VAELoaderKJ, PrimitiveNode, LTXVEmptyLatentAudio, SetNode, PathchSageAttentionKJ, UNETLoader, LTXVAudioVAEDecode, LTXVSeparateAVLatent, GetNode, GetNode, EmptyLTXVLatentVideo, LTXVImgToVideoInplaceKJ, GetNode, LTXVPreprocess, LoraLoaderModelOnly, PromptRelayEncodeTimeline, LoadImage, VHS_VideoCombine]
 patterns: []
 missing: []

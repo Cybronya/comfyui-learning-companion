@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全自动反推长视频工作流-Wan2.2+Remix+I2V+v2.1+SVI2Pro_2066838380490608641.json
 hash: 7a6c457a339c8b99
-coverage: 0.263789
-learned_at: 2026-10-11 20:21:34
+coverage: 0.278177
+learned_at: 2026-10-15 22:48:01
 nodes: [SetNode, SetNode, PrimitiveInt, easy int, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, KSamplerAdvanced, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ModelSamplingSD3, SetNode, SetNode, CLIPLoader, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, KSamplerAdvanced, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, LoraLoaderModelOnly, LoraLoaderModelOnly, ImageBatchExtendWithOverlap, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, ShowText|pysssss, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, ShowText|pysssss, GetNode, KSamplerAdvanced, GetNode, VAEDecode, GetNode, GetNode, VAEDecode, KSamplerAdvanced, VAEDecode, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, GetNode, VAEDecode, KSamplerAdvanced, GetNode, VAEDecode, GetNode, VAEDecode, KSamplerAdvanced, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, CLIPTextEncode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, CLIPTextEncode, SetNode, LayerUtility: PurgeVRAM, SetNode, SetNode, GetNode, GetNode, Split String, SomethingToString, GetNode, CLIPTextEncode, SetNode, CLIPTextEncode, CLIPTextEncode, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, CR Text Concatenate, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, WanAdvancedI2V, UNETLoader, Fast Groups Bypasser (rgthree), CR Prompt Text, GetNode, GetNode, SetNode, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, VHS_VideoCombine, PrimitiveInt, PrimitiveInt, UNETLoader, Note, Note, Note, Note, Note, Note, Note, CR Prompt Text, Qwen3_VQA, TextPreviewNode, LoadImage, Note, MarkdownNote]
 patterns: []
-missing: [CR Text Concatenate, LayerUtility: PurgeVRAM, Split String, easy int, CR Prompt Text, CR Prompt Text]
+missing: []
 parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `Split String` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/全自动反推长视频工作流-Wan2.2+Remix+I2V+v2.1+SVI2Pro_2066838380490608641.json
@@ -453,19 +452,8 @@ discoveries: [次要节点 `CR Text Concatenate` 知识库中没有该节点类�
 
 ## 知识
 
-覆盖率 **26%**（110/417）
+覆盖率 **28%**（116/417）
 
-**有卡**：`VAELoader`、`KSamplerAdvanced`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`VHS_VideoCombine`、`VAEDecode`、`ImageBatchExtendWithOverlap`、`LoraLoaderModelOnly`、`SomethingToString`、`WanAdvancedI2V`、`UNETLoader`、`Qwen3_VQA`、`TextPreviewNode`、`LoadImage`
-
-**缺卡**（6）：`CR Text Concatenate`、`LayerUtility: PurgeVRAM`、`Split String`、`easy int`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`easy int`、`VAELoader`、`KSamplerAdvanced`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`VHS_VideoCombine`、`VAEDecode`、`ImageBatchExtendWithOverlap`、`LoraLoaderModelOnly`、`LayerUtility: PurgeVRAM`、`Split String`、`SomethingToString`、`WanAdvancedI2V`、`CR Text Concatenate`、`UNETLoader`、`CR Prompt Text`、`Qwen3_VQA`、`TextPreviewNode`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `Split String` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

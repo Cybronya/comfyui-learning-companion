@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/Wan3.0多参考图生视频-角色一致性工作流_2094330373395271682.json
 hash: 2d577a4aad7cf9da
 coverage: 0.888889
-learned_at: 2026-10-10 22:54:21
+learned_at: 2026-10-15 22:42:57
 nodes: [LoadImage, LoadImage, PrimitiveStringMultiline, SaveVideo, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, RHMiniMaxH3RefGen, CreateVideo]
 patterns: []
 missing: []

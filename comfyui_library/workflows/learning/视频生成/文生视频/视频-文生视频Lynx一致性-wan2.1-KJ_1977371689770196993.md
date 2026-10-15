@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/视频-文生视频Lynx一致性-wan2.1-KJ_1977371689770196993.json
 hash: 69e783717f514df1
-coverage: 0.586957
-learned_at: 2026-10-10 23:13:51
+coverage: 0.76087
+learned_at: 2026-10-15 22:49:00
 nodes: [WanVideoSetBlockSwap, PreviewImage, WanVideoSetLoRAs, PreviewImage, LynxEncodeFaceIP, WanVideoBlockSwap, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoVAELoader, WanVideoExtraModelSelect, WanVideoTextEncodeCached, WanVideoSampler, WanVideoDecode, ImageFromBatch+, GetNode, QwenLoader, GetNode, WanVideoPromptExtender, SetNode, StringFunction|pysssss, GetNode, GetNode, StringFunction|pysssss, VHS_VideoCombine, SetNode, ImageConcatMulti, GetImageSizeAndCount, WanVideoExtraModelSelect, LoadLynxResampler, LynxInsightFaceCrop, WanVideoTextEncodeCached, WanVideoAddLynxEmbeds, VHS_VideoCombine, LoadImage, WanVideoEmptyEmbeds, SetNode, easy seed, ImpactFloat, CR Prompt Text, easy int, SetNode, MathExpression|pysssss, PrimitiveFloat, Int, Int, easy anythingIndexSwitch]
 patterns: []
-missing: [ImageFromBatch+, MathExpression|pysssss, StringFunction|pysssss, StringFunction|pysssss, easy anythingIndexSwitch, easy int, CR Prompt Text, easy seed]
-discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/视频-文生视频Lynx一致性-wan2.1-KJ_1977371689770196993.json
@@ -72,21 +71,8 @@ discoveries: [次要节点 `ImageFromBatch+` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **59%**（27/46）
+覆盖率 **76%**（35/46）
 
-**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`LynxEncodeFaceIP`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`WanVideoExtraModelSelect`、`WanVideoTextEncodeCached`、`WanVideoSampler`、`WanVideoDecode`、`QwenLoader`、`WanVideoPromptExtender`、`VHS_VideoCombine`、`ImageConcatMulti`、`GetImageSizeAndCount`、`LoadLynxResampler`、`LynxInsightFaceCrop`、`WanVideoAddLynxEmbeds`、`LoadImage`、`WanVideoEmptyEmbeds`、`ImpactFloat`、`Int`
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`LynxEncodeFaceIP`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`WanVideoExtraModelSelect`、`WanVideoTextEncodeCached`、`WanVideoSampler`、`WanVideoDecode`、`ImageFromBatch+`、`QwenLoader`、`WanVideoPromptExtender`、`StringFunction|pysssss`、`VHS_VideoCombine`、`ImageConcatMulti`、`GetImageSizeAndCount`、`LoadLynxResampler`、`LynxInsightFaceCrop`、`WanVideoAddLynxEmbeds`、`LoadImage`、`WanVideoEmptyEmbeds`、`easy seed`、`ImpactFloat`、`CR Prompt Text`、`easy int`、`MathExpression|pysssss`、`Int`、`easy anythingIndexSwitch`
 
-**缺卡**（8）：`ImageFromBatch+`、`MathExpression|pysssss`、`StringFunction|pysssss`、`StringFunction|pysssss`、`easy anythingIndexSwitch`、`easy int`、`CR Prompt Text`、`easy seed`
-
-**用到的条目**：LoadImage、WanVideoSampler、LoadLynxResampler、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、LynxEncodeFaceIP、WanVideoSetLoRAs
-
-## 学习发现
-
-- 次要节点 `ImageFromBatch+` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy anythingIndexSwitch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、WanVideoSampler、LoadLynxResampler、easy seed、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、LynxEncodeFaceIP

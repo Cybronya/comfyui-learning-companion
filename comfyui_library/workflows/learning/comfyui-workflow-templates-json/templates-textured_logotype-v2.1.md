@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-textur
 hash: a3d6c16a6922b48e
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:49:28
+learned_at: 2026-10-15 22:24:56
 nodes: [LoadImage, ImageBatch, GeminiImage2Node, SaveVideo, ByteDanceFirstLastFrameNode, GeminiImageNode, GetImageSize, ResizeAndPadImage, LoadImage, SaveImage, SaveImage]
 patterns: []
 missing: []

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/kj新Pose Detection +SteadyDancer_1998291780594491394.json
 hash: f8c76b808f350eb9
 coverage: 0.878788
-learned_at: 2026-10-11 02:57:39
+learned_at: 2026-10-15 22:47:20
 nodes: [WanVideoDecode, WanVideoSetBlockSwap, WanVideoSetLoRAs, PrimitiveNode, WanVideoAddSteadyDancerEmbeds, Note, WanVideoLoraSelect, WanVideoScheduler, PrimitiveNode, WanVideoContextOptions, WanVideoSamplerSettings, WanVideoVAELoader, WanVideoClipVisionEncode, CLIPVisionLoader, WanVideoBlockSwap, WanVideoModelLoader, WanVideoTextEncodeCached, VHS_VideoCombine, WanVideoSamplerFromSettings, OnnxDetectionModelLoader, WanVideoClipVisionEncode, GetImageRangeFromBatch, WanVideoEncode, WanVideoImageToVideoEncode, INTConstant, INTConstant, LoadImage, ImageResizeKJv2, GetImageSizeAndCount, VHS_LoadVideo, PoseDetectionOneToAllAnimation, VHS_VideoCombine, PreviewImage]
 patterns: []
 missing: []

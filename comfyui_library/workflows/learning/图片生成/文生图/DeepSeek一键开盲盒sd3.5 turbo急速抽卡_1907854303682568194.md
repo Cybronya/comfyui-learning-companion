@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/DeepSeek一键开盲盒sd3.5 turbo急速抽卡_1907854303682568194.json
 hash: 6b74168654bd43b7
-coverage: 0.888889
-learned_at: 2026-10-10 21:27:12
+coverage: 0.916667
+learned_at: 2026-10-15 22:26:14
 nodes: [JoinStrings, JjkText, TripleCLIPLoader, Fast Groups Bypasser (rgthree), FluxResolutionNode, FluxResolutionNode, EmptyLatentImage, EmptyLatentImage, KSampler, SaveImage, EmptyLatentImage, EmptyLatentImage, KSampler, VAEDecode, VAEDecode, VAEDecode, SaveImage, SaveImage, KSampler, FluxResolutionNode, VAEDecode, EmptyLatentImage, CLIPTextEncode, CLIPTextEncodeFlux, ModelSamplingSD3, CheckpointLoaderSimple, VAEDecode, FluxResolutionNode, SaveImage, SaveImage, KSampler, KSampler, ShowText|pysssss, LayerUtility: DeepSeekAPIV2, FluxResolutionNode, OneButtonPrompt]
 patterns: [text_to_image]
-missing: [LayerUtility: DeepSeekAPIV2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "sd3.5_large_turbo.safetensors", "denoise": 1, "height": 1280, "sampler_name": "euler", "scheduler": "sgm_uniform", "seed": 220839500466962, "steps": 4, "width": 1024}
-discoveries: [次要节点 `LayerUtility: DeepSeekAPIV2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/DeepSeek一键开盲盒sd3.5 turbo急速抽卡_1907854303682568194.json
@@ -22,6 +22,8 @@ discoveries: [次要节点 `LayerUtility: DeepSeekAPIV2` 知识库中没有该�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（36 个）：
 - `JoinStrings`
 - `JjkText`
@@ -29,32 +31,32 @@ discoveries: [次要节点 `LayerUtility: DeepSeekAPIV2` 知识库中没有该�
 - `Fast Groups Bypasser (rgthree)`
 - `FluxResolutionNode`
 - `FluxResolutionNode`
-- `EmptyLatentImage`
-- `EmptyLatentImage`
-- `KSampler`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
 - `SaveImage`
-- `EmptyLatentImage`
-- `EmptyLatentImage`
-- `KSampler`
-- `VAEDecode`
-- `VAEDecode`
-- `VAEDecode`
+- `EmptyLatentImage` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `SaveImage`
-- `KSampler`
+- `KSampler` ★核心
 - `FluxResolutionNode`
-- `VAEDecode`
-- `EmptyLatentImage`
-- `CLIPTextEncode`
-- `CLIPTextEncodeFlux`
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncodeFlux` ★核心
 - `ModelSamplingSD3`
-- `CheckpointLoaderSimple`
-- `VAEDecode`
+- `CheckpointLoaderSimple` ★核心
+- `VAEDecode` ★核心
 - `FluxResolutionNode`
 - `SaveImage`
 - `SaveImage`
-- `KSampler`
-- `KSampler`
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `ShowText|pysssss`
 - `LayerUtility: DeepSeekAPIV2`
 - `FluxResolutionNode`
@@ -64,24 +66,24 @@ discoveries: [次要节点 `LayerUtility: DeepSeekAPIV2` 知识库中没有该�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `checkpoint` = `sd3.5_large_turbo.safetensors`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1280`
-- `sampler_name` = `euler`
-- `scheduler` = `sgm_uniform`
+- `batch_size` = `1`
 - `seed` = `220839500466962`
 - `steps` = `4`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `1`
+- `checkpoint` = `sd3.5_large_turbo.safetensors`
 
 ## 知识
 
-覆盖率 **89%**（32/36）
+覆盖率 **92%**（33/36）
 
-**有卡**：`JoinStrings`、`JjkText`、`TripleCLIPLoader`、`Fast Groups Bypasser (rgthree)`、`FluxResolutionNode`、`EmptyLatentImage`、`KSampler`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`CLIPTextEncodeFlux`、`ModelSamplingSD3`、`CheckpointLoaderSimple`
+**有卡**：`JoinStrings`、`TripleCLIPLoader`、`FluxResolutionNode`、`EmptyLatentImage`、`KSampler`、`SaveImage`、`VAEDecode`、`CLIPTextEncode`、`CLIPTextEncodeFlux`、`ModelSamplingSD3`、`CheckpointLoaderSimple`、`LayerUtility: DeepSeekAPIV2`、`OneButtonPrompt`
 
-**缺卡**（1）：`LayerUtility: DeepSeekAPIV2`
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyLatentImage、CLIPTextEncodeFlux、FluxResolutionNode、TripleCLIPLoader
 
 ## 参数体检
 
@@ -94,7 +96,6 @@ discoveries: [次要节点 `LayerUtility: DeepSeekAPIV2` 知识库中没有该�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: DeepSeekAPIV2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

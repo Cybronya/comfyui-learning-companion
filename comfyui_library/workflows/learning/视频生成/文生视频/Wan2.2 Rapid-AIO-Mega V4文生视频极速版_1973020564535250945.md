@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 Rapid-AIO-Mega V4文生视频极速版_1973020564535250945.json
 hash: 9aa939a4e79f10e4
 coverage: 0.8125
-learned_at: 2026-10-10 23:06:52
+learned_at: 2026-10-15 22:47:09
 nodes: [KSampler, ModelSamplingSD3, CLIPTextEncode, Note, VAEDecode, ApplySageAttention, Note, Note, JWInteger, JWInteger, JWInteger, CLIPTextEncode, WanVaceToVideo, VHS_VideoCombine, VHS_VideoCombine, CheckpointLoaderSimple]
 patterns: []
 missing: []

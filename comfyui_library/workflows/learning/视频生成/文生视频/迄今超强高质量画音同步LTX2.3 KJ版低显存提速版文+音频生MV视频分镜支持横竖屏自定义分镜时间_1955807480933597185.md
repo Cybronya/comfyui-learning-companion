@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/迄今超强高质量画音同步LTX2.3 KJ版低显存提速版文+音频生MV视频分镜支持横竖屏自定义分镜时间_1955807480933597185.json
 hash: f866e06710f9a5da
-coverage: 0.517857
-learned_at: 2026-10-10 23:14:06
+coverage: 0.598214
+learned_at: 2026-10-15 22:49:04
 nodes: [SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, MathExpression|pysssss, SetNode, GetNode, LTXVLatentUpsampler, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVConcatAVLatent, KSamplerSelect, GetNode, SimpleMath+, GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, KSamplerSelect, SeedVR2ExtraArgs, PreviewImage, SimpleCalculatorKJ, GetNode, GetNode, GetNode, LTXVImgToVideoInplace, LTXVPreprocess, SamplerCustomAdvanced, LoadImage, SetNode, SetNode, PrimitiveFloat, SetNode, SetNode, SetNode, VAELoaderKJ, LTXVConditioning, ManualSigmas, LatentUpscaleModelLoader, MarkdownNote, LTXVImgToVideoInplace, SetNode, SetNode, ImageScaleBy, GetImageSize, easy int, easy int, CFGGuider, LTXVScheduler, Qwen3_VQA_Plus, ImpactMinMax, GetNode, GetNode, EmptyImage, LayerUtility: ImageScaleByAspectRatio V2, MarkdownNote, PathchSageAttentionKJ, ModelPatchTorchSettings, DualCLIPLoader, VAELoaderKJ, MelBandRoFormerModelLoader, GetNode, MelBandRoFormerSampler, SetNode, LTXVAudioVAEEncode, SolidMask, GetNode, TrimAudioDuration, MarkdownNote, GetNode, LTXVAudioVAEDecode, LTXVSeparateAVLatent, VAEDecodeTiled, easy showAnything, SetNode, CLIPTextEncode, CLIPTextEncode, GetNode, AudioCrop, UnetLoaderGGUF, MarkdownNote, LoadDiffusionModelShared //Inspire, LTXAVTextEncoderLoader, GetNode, GetNode, RandomNoise, CFGGuider, RandomNoise, LTXVChunkFeedForward, LTXVConcatAVLatent, LTXVEmptyLatentAudio, SetNode, SetNode, SetLatentNoiseMask, PreviewAudio, LoadAudio, ImpactSwitch, Fast Groups Bypasser (rgthree), ComfySwitchNode, VHS_VideoCombine, VHS_VideoCombine, RHHiddenNodes, Text Concatenate, RHHiddenNodes, CR Text, LoraLoaderModelOnly, SeedVR2BlockSwap, SeedVR2GGUF, easy int]
 patterns: []
-missing: [CR Text, LayerUtility: ImageScaleByAspectRatio V2, LoadDiffusionModelShared //Inspire, MathExpression|pysssss, SimpleMath+, Text Concatenate, easy int, easy int, easy int]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 121}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `LoadDiffusionModelShared //Inspire` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/迄今超强高质量画音同步LTX2.3 KJ版低显存提速版文+音频生MV视频分镜支持横竖屏自定义分镜时间_1955807480933597185.json
@@ -145,22 +144,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **52%**（58/112）
+覆盖率 **60%**（67/112）
 
-**有卡**：`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`KSamplerSelect`、`EmptyLTXVLatentVideo`、`SeedVR2ExtraArgs`、`SimpleCalculatorKJ`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`LoadImage`、`VAELoaderKJ`、`LTXVConditioning`、`ManualSigmas`、`LatentUpscaleModelLoader`、`ImageScaleBy`、`GetImageSize`、`CFGGuider`、`LTXVScheduler`、`Qwen3_VQA_Plus`、`ImpactMinMax`、`EmptyImage`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`DualCLIPLoader`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`SolidMask`、`TrimAudioDuration`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CLIPTextEncode`、`AudioCrop`、`UnetLoaderGGUF`、`LTXAVTextEncoderLoader`、`RandomNoise`、`LTXVChunkFeedForward`、`LTXVEmptyLatentAudio`、`SetLatentNoiseMask`、`PreviewAudio`、`LoadAudio`、`VHS_VideoCombine`、`RHHiddenNodes`、`LoraLoaderModelOnly`、`SeedVR2BlockSwap`、`SeedVR2GGUF`
-
-**缺卡**（9）：`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadDiffusionModelShared //Inspire`、`MathExpression|pysssss`、`SimpleMath+`、`Text Concatenate`、`easy int`、`easy int`、`easy int`
+**有卡**：`MathExpression|pysssss`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`KSamplerSelect`、`SimpleMath+`、`EmptyLTXVLatentVideo`、`SeedVR2ExtraArgs`、`SimpleCalculatorKJ`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`LoadImage`、`VAELoaderKJ`、`LTXVConditioning`、`ManualSigmas`、`LatentUpscaleModelLoader`、`ImageScaleBy`、`GetImageSize`、`easy int`、`CFGGuider`、`LTXVScheduler`、`Qwen3_VQA_Plus`、`ImpactMinMax`、`EmptyImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`DualCLIPLoader`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`SolidMask`、`TrimAudioDuration`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CLIPTextEncode`、`AudioCrop`、`UnetLoaderGGUF`、`LoadDiffusionModelShared //Inspire`、`LTXAVTextEncoderLoader`、`RandomNoise`、`LTXVChunkFeedForward`、`LTXVEmptyLatentAudio`、`SetLatentNoiseMask`、`PreviewAudio`、`LoadAudio`、`VHS_VideoCombine`、`RHHiddenNodes`、`Text Concatenate`、`CR Text`、`LoraLoaderModelOnly`、`SeedVR2BlockSwap`、`SeedVR2GGUF`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、SeedVR2BlockSwap、SeedVR2ExtraArgs
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LoadDiffusionModelShared //Inspire` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

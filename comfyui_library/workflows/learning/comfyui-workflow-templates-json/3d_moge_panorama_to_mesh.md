@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_moge_panorama_to_mesh.json
 hash: 60564578dde34f12
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:43:01
+coverage: 0.6
+learned_at: 2026-10-15 22:24:47
 nodes: [LoadImage, MarkdownNote, MarkdownNote, 94961018-e012-4f04-9891-adc008a73d54, SaveGLB]
 patterns: []
-missing: [94961018-e012-4f04-9891-adc008a73d54]
-discoveries: [次要节点 `94961018-e012-4f04-9891-adc008a73d54` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/3d_moge_panorama_to_mesh.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `94961018-e012-4f04-9891-adc008a73d54` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`LoadImage`、`SaveGLB`
+**有卡**：`LoadImage`、`94961018-e012-4f04-9891-adc008a73d54`、`SaveGLB`
 
-**缺卡**（1）：`94961018-e012-4f04-9891-adc008a73d54`
-
-**用到的条目**：LoadImage、SaveGLB、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `94961018-e012-4f04-9891-adc008a73d54` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveGLB、94961018-e012-4f04-9891-adc008a73d54、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

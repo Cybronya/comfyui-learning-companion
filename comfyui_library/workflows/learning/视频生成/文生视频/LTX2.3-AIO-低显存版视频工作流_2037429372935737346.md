@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-AIO-低显存版视频工作流_2037429372935737346.json
 hash: 05050282a221fa93
-coverage: 0.613208
-learned_at: 2026-10-11 03:48:35
+coverage: 0.632075
+learned_at: 2026-10-15 22:45:02
 nodes: [ResizeImageMaskNode, ResizeImagesByLongerEdge, ResizeImageMaskNode, ResizeImagesByLongerEdge, ResizeImageMaskNode, GetNode, GetNode, LTXVPreprocess, LTXVPreprocess, SetNode, SetNode, GetNode, LTXVPreprocess, GetNode, ResizeImagesByLongerEdge, SetNode, GetNode, GetNode, GetNode, INTConstant, Fast Groups Bypasser (rgthree), GetNode, GetNode, INTConstant, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, GetNode, VAEDecodeTiled, LTXVAudioVAEDecode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, LTXVConcatAVLatent, LTXVLatentUpsampler, ManualSigmas, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, CLIPTextEncode, CLIPTextEncode, GetNode, KSamplerSelect, LTXVScheduler, LTXVConcatAVLatent, CFGGuider, GetNode, GetNode, GetNode, LTXVAudioVAEEncode, SolidMask, SetLatentNoiseMask, LTXVEmptyLatentAudio, Switch any [Crystools], PathchSageAttentionKJ, GetNode, LTXVConditioning, LTXVChunkFeedForward, LTX2_NAG, SetNode, VHS_VideoCombine, GetNode, GetNode, ImpactFloat, RandomNoise, RandomNoise, INTConstant, GetNode, MarkdownNote, Text Multiline, PainterVRAM, TrimAudioDuration, LTXVImgToVideoInplaceKJ, EmptyLTXVLatentVideo, LTXVImgToVideoInplaceKJ, LatentUpscaleModelLoader, LoadImage, LoadImage, LoadImage, PrimitiveBoolean, DualCLIPLoaderGGUF, VAELoaderKJ, VAELoaderKJ, LoadAudio, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, GetNode, ComfyMathExpression, UnetLoaderGGUF, LoraLoaderModelOnly]
 patterns: []
-missing: [Switch any [Crystools], Text Multiline]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3-AIO-低显存版视频工作流_2037429372935737346.json
@@ -139,15 +138,8 @@ discoveries: [次要节点 `Switch any [Crystools]` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **61%**（65/106）
+覆盖率 **63%**（67/106）
 
-**有卡**：`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`INTConstant`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`ManualSigmas`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`CLIPTextEncode`、`LTXVScheduler`、`LTXVAudioVAEEncode`、`SolidMask`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`PathchSageAttentionKJ`、`LTXVConditioning`、`LTXVChunkFeedForward`、`LTX2_NAG`、`VHS_VideoCombine`、`ImpactFloat`、`RandomNoise`、`PainterVRAM`、`TrimAudioDuration`、`LTXVImgToVideoInplaceKJ`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`LoadImage`、`PrimitiveBoolean`、`DualCLIPLoaderGGUF`、`VAELoaderKJ`、`LoadAudio`、`ComfyMathExpression`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`
-
-**缺卡**（2）：`Switch any [Crystools]`、`Text Multiline`
+**有卡**：`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`INTConstant`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`ManualSigmas`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`CLIPTextEncode`、`LTXVScheduler`、`LTXVAudioVAEEncode`、`SolidMask`、`SetLatentNoiseMask`、`LTXVEmptyLatentAudio`、`Switch any [Crystools]`、`PathchSageAttentionKJ`、`LTXVConditioning`、`LTXVChunkFeedForward`、`LTX2_NAG`、`VHS_VideoCombine`、`ImpactFloat`、`RandomNoise`、`Text Multiline`、`PainterVRAM`、`TrimAudioDuration`、`LTXVImgToVideoInplaceKJ`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`LoadImage`、`PrimitiveBoolean`、`DualCLIPLoaderGGUF`、`VAELoaderKJ`、`LoadAudio`、`ComfyMathExpression`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0过场动画-多参考转场视频工作流_2094425486511398914.json
 hash: 7ff44f55a77cc4b7
 coverage: 0.888889
-learned_at: 2026-10-10 22:54:16
+learned_at: 2026-10-15 22:42:56
 nodes: [PrimitiveStringMultiline, LoadImage, LoadImage, SaveVideo, RHMiniMaxH3ModelLoader, RHMiniMaxH3TextEncoderLoader, RHMiniMaxH3VAELoader, RHMiniMaxH3RefGen, CreateVideo]
 patterns: []
 missing: []

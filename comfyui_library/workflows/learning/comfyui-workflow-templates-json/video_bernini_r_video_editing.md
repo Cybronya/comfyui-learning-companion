@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_bernini_r_video_editing.json
 hash: ef0644e39739b408
 official: true
-coverage: 0.5
-learned_at: 2026-10-10 22:50:05
+coverage: 0.666667
+learned_at: 2026-10-15 22:24:57
 nodes: [LoadVideo, SaveVideo, MarkdownNote, MarkdownNote, BatchImagesNode, MarkdownNote, LoadImage, Video Slice, GetVideoComponents, GetImageSize, PreviewAny, 69c3c422-bcfe-4955-bc23-8bac307287a8]
 patterns: []
-missing: [69c3c422-bcfe-4955-bc23-8bac307287a8, Video Slice]
-discoveries: [次要节点 `69c3c422-bcfe-4955-bc23-8bac307287a8` 知识库中没有该节点类型的任何知识, 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_bernini_r_video_editing.json
@@ -39,15 +38,8 @@ discoveries: [次要节点 `69c3c422-bcfe-4955-bc23-8bac307287a8` 知识库中�
 
 ## 知识
 
-覆盖率 **50%**（6/12）
+覆盖率 **67%**（8/12）
 
-**有卡**：`LoadVideo`、`SaveVideo`、`BatchImagesNode`、`LoadImage`、`GetVideoComponents`、`GetImageSize`
+**有卡**：`LoadVideo`、`SaveVideo`、`BatchImagesNode`、`LoadImage`、`Video Slice`、`GetVideoComponents`、`GetImageSize`、`69c3c422-bcfe-4955-bc23-8bac307287a8`
 
-**缺卡**（2）：`69c3c422-bcfe-4955-bc23-8bac307287a8`、`Video Slice`
-
-**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveVideo、BatchImagesNode、GetVideoComponents、LoadVideo、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `69c3c422-bcfe-4955-bc23-8bac307287a8` 知识库中没有该节点类型的任何知识
-- 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveVideo、BatchImagesNode、GetVideoComponents、LoadVideo、69c3c422-bcfe-4955-bc23-8bac307287a8

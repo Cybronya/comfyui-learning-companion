@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
 hash: 857a07bacf4fa0d7
-coverage: 0.9
-learned_at: 2026-10-10 20:58:33
+coverage: 1
+learned_at: 2026-10-15 22:26:21
 nodes: [KSampler, VAEDecode, SaveImage, VAELoader, UNETLoader, DualCLIPLoader, Flex2Conditioner, CLIPTextEncode, CLIPTextEncode, CR SDXL Aspect Ratio]
 patterns: []
-missing: [CR SDXL Aspect Ratio]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "deis", "scheduler": "beta", "seed": 645445586904259, "steps": 25}
-discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/Flex.2-preview文生图演示_1916390487366762498.json
@@ -21,35 +20,33 @@ discoveries: [次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
 **节点**（10 个）：
-- `KSampler`
-- `VAEDecode`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DualCLIPLoader`
 - `Flex2Conditioner`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `CR SDXL Aspect Ratio`
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `deis`
-- `scheduler` = `beta`
 - `seed` = `645445586904259`
 - `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `deis`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **90%**（9/10）
+覆盖率 **100%**（10/10）
 
-**有卡**：`KSampler`、`VAEDecode`、`SaveImage`、`VAELoader`、`UNETLoader`、`DualCLIPLoader`、`Flex2Conditioner`、`CLIPTextEncode`
+**有卡**：`KSampler`、`VAEDecode`、`SaveImage`、`VAELoader`、`UNETLoader`、`DualCLIPLoader`、`Flex2Conditioner`、`CLIPTextEncode`、`CR SDXL Aspect Ratio`
 
-**缺卡**（1）：`CR SDXL Aspect Ratio`
-
-## 学习发现
-
-- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、DualCLIPLoader、CR SDXL Aspect Ratio、SaveImage

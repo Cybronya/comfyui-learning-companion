@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Pixverse v5.5 文生视频_2008874251834630145.json
 hash: d449bbfc2b35ead1
 coverage: 1
-learned_at: 2026-10-11 03:07:11
+learned_at: 2026-10-15 22:46:50
 nodes: [SaveVideo, RH_Pixverse_v5_5_Text2Video]
 patterns: []
 missing: []

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_1983515933761314818.json
 hash: 378df726f5196b54
-coverage: 0.888889
-learned_at: 2026-10-10 22:54:58
+coverage: 1
+learned_at: 2026-10-15 22:43:02
 nodes: [CLIPVisionEncode, WanImageToVideo, SaveImage, CLIPTextEncode, MathExpression|pysssss, CLIPLoader, CLIPTextEncode, LoadImage, LoadLatent, VAEDecode, VHS_VideoCombine, VAELoader, CR Prompt Text, CheckpointLoaderSimple, LoadImage, JWInteger, JWInteger, LoraLoaderModelOnly, PathchSageAttentionKJ, LayerUtility: ImageScaleByAspectRatio V2, CLIPVisionLoader, JWFloat, VAEDecode, KSampler, ModelSamplingSD3, VHS_VideoCombine, JWInteger]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, CR Prompt Text]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-i2v-rapid-aio-v10-nsfw.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 448766640178835, "steps": 4}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/图生视频/图生视频Wan2.2+All-in-one极速版_1983515933761314818.json
@@ -65,11 +65,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **89%**（24/27）
+覆盖率 **100%**（27/27）
 
-**有卡**：`CLIPVisionEncode`、`WanImageToVideo`、`SaveImage`、`CLIPTextEncode`、`CLIPLoader`、`LoadImage`、`LoadLatent`、`VAEDecode`、`VHS_VideoCombine`、`VAELoader`、`CheckpointLoaderSimple`、`JWInteger`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`CLIPVisionLoader`、`JWFloat`、`KSampler`、`ModelSamplingSD3`
-
-**缺卡**（3）：`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`CR Prompt Text`
+**有卡**：`CLIPVisionEncode`、`WanImageToVideo`、`SaveImage`、`CLIPTextEncode`、`MathExpression|pysssss`、`CLIPLoader`、`LoadImage`、`LoadLatent`、`VAEDecode`、`VHS_VideoCombine`、`VAELoader`、`CR Prompt Text`、`CheckpointLoaderSimple`、`JWInteger`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPVisionLoader`、`JWFloat`、`KSampler`、`ModelSamplingSD3`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage
 
@@ -80,7 +78,4 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 FunCamera镜头控制_1986776770387062786.json
 hash: 2ec950681897fc51
-coverage: 0.790698
-learned_at: 2026-10-11 02:45:02
+coverage: 0.837209
+learned_at: 2026-10-15 22:47:09
 nodes: [CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, VAEDecode, CLIPLoader, VAELoader, LoraLoaderModelOnly, VAELoader, UNETLoader, UNETLoader, CLIPLoader, CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, CreateVideo, CLIPTextEncode, WanCameraEmbedding, MarkdownNote, MarkdownNote, WanCameraImageToVideo, WanCameraImageToVideo, SaveVideo, Note, CreateVideo, PrimitiveInt, PrimitiveFloat, UNETLoader, LoraLoaderModelOnly, UNETLoader, CLIPTextEncode, WanCameraEmbedding, LoadImage, CR SDXL Aspect Ratio, SimpleMath+, LoadImage, SaveVideo, KSamplerAdvanced, KSamplerAdvanced, Fast Groups Bypasser (rgthree), PrimitiveStringMultiline]
 patterns: []
-missing: [SimpleMath+, CR SDXL Aspect Ratio]
+missing: []
 parameters: {"cfg": 5, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Wan2.2 FunCamera镜头控制_1986776770387062786.json
@@ -79,15 +78,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **79%**（34/43）
+覆盖率 **84%**（36/43）
 
-**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`KSamplerAdvanced`、`CreateVideo`、`WanCameraEmbedding`、`WanCameraImageToVideo`、`SaveVideo`、`LoadImage`
-
-**缺卡**（2）：`SimpleMath+`、`CR SDXL Aspect Ratio`
+**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`KSamplerAdvanced`、`CreateVideo`、`WanCameraEmbedding`、`WanCameraImageToVideo`、`SaveVideo`、`LoadImage`、`CR SDXL Aspect Ratio`、`SimpleMath+`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR SDXL Aspect Ratio` 仅有 Checkpoint 的通用知识，没有该节点自己的说明

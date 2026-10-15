@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_pixeldit_t2i.json
 hash: ef4a37f4125b2acf
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:48:24
+coverage: 0.6
+learned_at: 2026-10-15 22:24:54
 nodes: [MarkdownNote, SaveImage, ef85a5af-0944-4f72-bffd-7d6d9941f33c, ResolutionSelector, MarkdownNote]
 patterns: []
-missing: [ef85a5af-0944-4f72-bffd-7d6d9941f33c]
-discoveries: [次要节点 `ef85a5af-0944-4f72-bffd-7d6d9941f33c` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_pixeldit_t2i.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `ef85a5af-0944-4f72-bffd-7d6d9941f33c` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`SaveImage`、`ResolutionSelector`
+**有卡**：`SaveImage`、`ef85a5af-0944-4f72-bffd-7d6d9941f33c`、`ResolutionSelector`
 
-**缺卡**（1）：`ef85a5af-0944-4f72-bffd-7d6d9941f33c`
-
-**用到的条目**：ResolutionSelector、SaveImage、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验、easy_imagesize
-
-## 学习发现
-
-- 次要节点 `ef85a5af-0944-4f72-bffd-7d6d9941f33c` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、SaveImage、ef85a5af-0944-4f72-bffd-7d6d9941f33c、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Ltx2.3反推提示词 文生音视频_2044962799889162242.json
 hash: 79f56a677ed0f9d8
-coverage: 0.847826
-learned_at: 2026-10-11 19:49:40
+coverage: 0.869565
+learned_at: 2026-10-15 22:45:21
 nodes: [LTXAVTextEncoderLoader, LTXVAudioVAELoader, EmptyImage, GetImageSize, PrimitiveInt, PrimitiveInt, PrimitiveFloat, RandomNoise, CFGGuider, KSamplerSelect, LTXVScheduler, LTXVSeparateAVLatent, LTXVCropGuides, SamplerCustomAdvanced, VAEDecodeTiled, LTXVAudioVAEDecode, ImageScaleBy, CheckpointLoaderSimple, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVConditioning, CLIPTextEncode, DualCLIPLoader, MarkdownNote, MarkdownNote, LoadImage, TextGenerateLTX2Prompt, LoraLoaderModelOnly, CLIPTextEncode, PreviewAny, CR Text, VHS_VideoCombine, LoraLoaderModelOnly, LTXVLatentUpsampler, LatentUpscaleModelLoader, CFGGuider, LTXVConcatAVLatent, RandomNoise, ManualSigmas, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, VHS_VideoCombine]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Ltx2.3反推提示词 文生音视频_2044962799889162242.json
@@ -80,14 +79,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **85%**（39/46）
+覆盖率 **87%**（40/46）
 
-**有卡**：`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`EmptyImage`、`GetImageSize`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`LTXVScheduler`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ImageScaleBy`、`CheckpointLoaderSimple`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVConditioning`、`CLIPTextEncode`、`DualCLIPLoader`、`LoadImage`、`TextGenerateLTX2Prompt`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`ManualSigmas`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`EmptyImage`、`GetImageSize`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`LTXVScheduler`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ImageScaleBy`、`CheckpointLoaderSimple`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVConditioning`、`CLIPTextEncode`、`DualCLIPLoader`、`LoadImage`、`TextGenerateLTX2Prompt`、`LoraLoaderModelOnly`、`CR Text`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`ManualSigmas`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

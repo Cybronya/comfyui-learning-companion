@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen Image 2.1 ｜生图及编辑_2101865008786395137.json
 hash: f8c2a46298fdcda8
 coverage: 0.690909
-learned_at: 2026-10-10 21:27:41
+learned_at: 2026-10-15 22:26:58
 nodes: [VAELoader, VAEDecode, EmptyLatentImage, ResolutionSelector, UNETLoader, CLIPLoader, Note, MarkdownNote, Note, SaveImage, TextEncodeQwenImage21, SaveImageAdvanced, KSampler, EmptyLatentImage, VAELoader, CLIPLoader, VAEDecode, Note, MarkdownNote, QwenImage21Cache, ResolutionSelector, MarkdownNote, Note, SaveImage, KSampler, SaveImageAdvanced, UNETLoader, TextEncodeQwenImage21, Note, ComfySwitchNode, LoraLoaderModelOnly, MarkdownNote, LoadImage, LoadImage, EmptyLatentImage, VAELoader, CLIPLoader, VAEDecode, Note, MarkdownNote, QwenImage21Cache, ResolutionSelector, Note, SaveImage, KSampler, SaveImageAdvanced, UNETLoader, Note, ComfySwitchNode, TextEncodeQwenImage21, LoadImage, LoadImage, MarkdownNote, MarkdownNote, LoraLoaderModelOnly]
 patterns: []
 missing: []
@@ -20,12 +20,14 @@ parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1024, "sampler
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（55 个）：
 - `VAELoader`
-- `VAEDecode`
-- `EmptyLatentImage`
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
 - `ResolutionSelector`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `Note`
 - `MarkdownNote`
@@ -33,11 +35,11 @@ parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1024, "sampler
 - `SaveImage`
 - `TextEncodeQwenImage21`
 - `SaveImageAdvanced`
-- `KSampler`
-- `EmptyLatentImage`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
 - `VAELoader`
 - `CLIPLoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Note`
 - `MarkdownNote`
 - `QwenImage21Cache`
@@ -45,29 +47,29 @@ parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1024, "sampler
 - `MarkdownNote`
 - `Note`
 - `SaveImage`
-- `KSampler`
+- `KSampler` ★核心
 - `SaveImageAdvanced`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `TextEncodeQwenImage21`
 - `Note`
 - `ComfySwitchNode`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `MarkdownNote`
 - `LoadImage`
 - `LoadImage`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `VAELoader`
 - `CLIPLoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Note`
 - `MarkdownNote`
 - `QwenImage21Cache`
 - `ResolutionSelector`
 - `Note`
 - `SaveImage`
-- `KSampler`
+- `KSampler` ★核心
 - `SaveImageAdvanced`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `Note`
 - `ComfySwitchNode`
 - `TextEncodeQwenImage21`
@@ -75,22 +77,24 @@ parameters: {"batch_size": 1, "cfg": 3.5, "denoise": 1, "height": 1024, "sampler
 - `LoadImage`
 - `MarkdownNote`
 - `MarkdownNote`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `3.5`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `er_sde`
-- `scheduler` = `bong_tangent`
+- `batch_size` = `1`
 - `seed` = `508989342402138`
 - `steps` = `50`
-- `width` = `1024`
+- `cfg` = `3.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `bong_tangent`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **69%**（38/55）
 
-**有卡**：`VAELoader`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`Note`、`MarkdownNote`、`SaveImage`、`TextEncodeQwenImage21`、`SaveImageAdvanced`、`KSampler`、`QwenImage21Cache`、`ComfySwitchNode`、`LoraLoaderModelOnly`、`LoadImage`
+**有卡**：`VAELoader`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`UNETLoader`、`CLIPLoader`、`SaveImage`、`TextEncodeQwenImage21`、`SaveImageAdvanced`、`KSampler`、`QwenImage21Cache`、`LoraLoaderModelOnly`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector

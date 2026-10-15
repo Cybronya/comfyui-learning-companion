@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/WAN2.2-AllInOne视频扩展_2072999602540027904.json
 hash: 779c10b2e90f374f
-coverage: 0.909091
-learned_at: 2026-10-11 20:38:42
+coverage: 1
+learned_at: 2026-10-15 22:47:04
 nodes: [LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoDecode, GetImageSize+, VHS_VideoCombine, VHS_VideoCombine, String Literal, ImagePadKJ, GrowMaskWithBlur, WanVideoVACEEncode, MaskToImage, ImageResizeKJ, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoVACEModelSelect, WanVideoLoraSelect, WanVideoSetLoRAs, WanVideoTextEncode, VHS_LoadVideo, WanVideoBlockSwap, WanVideoModelLoader, VHS_VideoCombine]
 patterns: []
-missing: [String Literal, GetImageSize+]
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/WAN2.2-AllInOne视频扩展_2072999602540027904.json
@@ -48,15 +47,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **91%**（20/22）
+覆盖率 **100%**（22/22）
 
-**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoDecode`、`VHS_VideoCombine`、`ImagePadKJ`、`GrowMaskWithBlur`、`WanVideoVACEEncode`、`MaskToImage`、`ImageResizeKJ`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`WanVideoTextEncode`、`VHS_LoadVideo`、`WanVideoBlockSwap`、`WanVideoModelLoader`
-
-**缺卡**（2）：`String Literal`、`GetImageSize+`
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoDecode`、`GetImageSize+`、`VHS_VideoCombine`、`String Literal`、`ImagePadKJ`、`GrowMaskWithBlur`、`WanVideoVACEEncode`、`MaskToImage`、`ImageResizeKJ`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`WanVideoTextEncode`、`VHS_LoadVideo`、`WanVideoBlockSwap`、`WanVideoModelLoader`
 
 **用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect、WanVideoSetLoRAs
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明

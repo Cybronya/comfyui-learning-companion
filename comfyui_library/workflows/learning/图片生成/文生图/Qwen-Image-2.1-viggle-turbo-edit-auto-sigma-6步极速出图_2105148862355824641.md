@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
 hash: 3dd6c7f9da44f1ea
-coverage: 0.658537
-learned_at: 2026-10-10 20:59:00
+coverage: 0.804878
+learned_at: 2026-10-15 22:27:12
 nodes: [PrimitiveStringMultiline, MarkdownNote, CLIPLoader, CLIPLoader, PrimitiveBoolean, UNETLoader, UNETLoader, Model Input Switch, QwenImage21Cache, SeedNode, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, PreviewImage, VAEDecode, StringFormat, BasicGuider, TextGenerateLTX2Prompt, LoraLoaderModelOnly, RandomNoise, KSamplerSelect, ManualSigmas, EmptyLatentImage, VAELoader, TextEncodeQwenImage21, Image Comparer (rgthree), LoraLoaderModelOnly, KSampler, Image Comparer (rgthree), ResolutionSelector, SamplerCustomAdvanced, VAEDecode, SaveImage, PreviewImage, VAEDecode, SamplerCustomAdvanced, BasicGuider, Reroute, Reroute]
 patterns: []
-missing: [MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, Model Input Switch]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 981118936264082, "steps": 25, "width": 1024}
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `Model Input Switch` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen-Image-2.1-viggle-turbo-edit-auto-sigma-6步极速出图_2105148862355824641.json
@@ -21,14 +20,16 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（41 个）：
 - `PrimitiveStringMultiline`
 - `MarkdownNote`
 - `CLIPLoader`
 - `CLIPLoader`
 - `PrimitiveBoolean`
-- `UNETLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
 - `Model Input Switch`
 - `QwenImage21Cache`
 - `SeedNode`
@@ -38,57 +39,48 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 - `MathExpression|pysssss`
 - `MathExpression|pysssss`
 - `PreviewImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `StringFormat`
 - `BasicGuider`
 - `TextGenerateLTX2Prompt`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `RandomNoise`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `ManualSigmas`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `VAELoader`
 - `TextEncodeQwenImage21`
 - `Image Comparer (rgthree)`
-- `LoraLoaderModelOnly`
-- `KSampler`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
 - `Image Comparer (rgthree)`
 - `ResolutionSelector`
-- `SamplerCustomAdvanced`
-- `VAEDecode`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
 - `PreviewImage`
-- `VAEDecode`
-- `SamplerCustomAdvanced`
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
 - `BasicGuider`
 - `Reroute`
 - `Reroute`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `981118936264082`
 - `steps` = `25`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **66%**（27/41）
+覆盖率 **80%**（33/41）
 
-**有卡**：`PrimitiveStringMultiline`、`MarkdownNote`、`CLIPLoader`、`PrimitiveBoolean`、`UNETLoader`、`Model Input Switch`、`QwenImage21Cache`、`SeedNode`、`MathExpression|pysssss`、`PreviewImage`、`VAEDecode`、`StringFormat`、`BasicGuider`、`TextGenerateLTX2Prompt`、`LoraLoaderModelOnly`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`EmptyLatentImage`、`VAELoader`、`TextEncodeQwenImage21`
+**有卡**：`CLIPLoader`、`PrimitiveBoolean`、`UNETLoader`、`Model Input Switch`、`QwenImage21Cache`、`SeedNode`、`MathExpression|pysssss`、`VAEDecode`、`StringFormat`、`BasicGuider`、`TextGenerateLTX2Prompt`、`LoraLoaderModelOnly`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`EmptyLatentImage`、`VAELoader`、`TextEncodeQwenImage21`、`KSampler`、`ResolutionSelector`、`SamplerCustomAdvanced`、`SaveImage`
 
-**缺卡**（6）：`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`MathExpression|pysssss`、`Model Input Switch`
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `Model Input Switch` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector

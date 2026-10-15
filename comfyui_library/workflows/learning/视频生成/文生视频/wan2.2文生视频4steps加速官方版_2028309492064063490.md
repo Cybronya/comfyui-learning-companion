@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频4steps加速官方版_2028309492064063490.json
 hash: 1892c39b1d2b8e5d
-coverage: 0.827586
-learned_at: 2026-10-11 03:16:51
+coverage: 0.931034
+learned_at: 2026-10-15 22:47:36
 nodes: [CLIPLoader, VAELoader, UNETLoader, VAEDecode, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, EmptyHunyuanLatentVideo, CreateVideo, SaveVideo, ModelSamplingSD3, UNETLoader, LayerUtility: PurgeVRAM V2, MarkdownNote, KSamplerAdvanced, KSamplerAdvanced, Int, Int, MathExpression|pysssss, CM_IntToFloat, MathExpression|pysssss, CLIPTextEncode, Int, Int, CM_IntToFloat, Int, MarkdownNote, Int]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, MathExpression|pysssss, MathExpression|pysssss]
+missing: []
 parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/wan2.2文生视频4steps加速官方版_2028309492064063490.json
@@ -65,16 +64,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **83%**（24/29）
+覆盖率 **93%**（27/29）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`VAEDecode`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`CreateVideo`、`SaveVideo`、`KSamplerAdvanced`、`Int`、`CM_IntToFloat`
-
-**缺卡**（3）：`LayerUtility: PurgeVRAM V2`、`MathExpression|pysssss`、`MathExpression|pysssss`
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`VAEDecode`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`CreateVideo`、`SaveVideo`、`LayerUtility: PurgeVRAM V2`、`KSamplerAdvanced`、`Int`、`MathExpression|pysssss`、`CM_IntToFloat`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

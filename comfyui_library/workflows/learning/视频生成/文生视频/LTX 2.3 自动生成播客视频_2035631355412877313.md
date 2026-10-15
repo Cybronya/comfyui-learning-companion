@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 自动生成播客视频_2035631355412877313.json
 hash: f87484db82128c2b
-coverage: 0.904762
-learned_at: 2026-10-11 03:48:34
+coverage: 0.928571
+learned_at: 2026-10-15 22:44:33
 nodes: [LTXVConditioning, LTXVConcatAVLatent, RandomNoise, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, RandomNoise, ManualSigmas, LTXVLatentUpsampler, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, SamplerCustomAdvanced, LoraLoaderModelOnly, LTXAVTextEncoderLoader, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVImgToVideoInplace, CheckpointLoaderSimple, LTXVAudioVAELoader, JWStringReplace, JWStringReplace, PrimitiveFloat, LatentUpscaleModelLoader, LTXVSeparateAVLatent, LTXVAudioVAEDecode, KSamplerSelect, LTXVCropGuides, KSamplerSelect, PrimitiveInt, CLIPTextEncode, LoadImage, LTXVPreprocess, TextInput_, CreateVideo, RH_LLMAPI_NODE, VAEDecodeTiled, Float to Int, easy showAnything, SaveVideo, CLIPTextEncode]
 patterns: []
-missing: [Float to Int]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `Float to Int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX 2.3 自动生成播客视频_2035631355412877313.json
@@ -76,14 +75,8 @@ discoveries: [次要节点 `Float to Int` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **90%**（38/42）
+覆盖率 **93%**（39/42）
 
-**有卡**：`LTXVConditioning`、`LTXVConcatAVLatent`、`RandomNoise`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`LTXVImgToVideoInplace`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`JWStringReplace`、`LatentUpscaleModelLoader`、`LTXVAudioVAEDecode`、`KSamplerSelect`、`LTXVCropGuides`、`CLIPTextEncode`、`LoadImage`、`LTXVPreprocess`、`TextInput_`、`CreateVideo`、`RH_LLMAPI_NODE`、`VAEDecodeTiled`、`SaveVideo`
-
-**缺卡**（1）：`Float to Int`
+**有卡**：`LTXVConditioning`、`LTXVConcatAVLatent`、`RandomNoise`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LoraLoaderModelOnly`、`LTXAVTextEncoderLoader`、`LTXVImgToVideoInplace`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`JWStringReplace`、`LatentUpscaleModelLoader`、`LTXVAudioVAEDecode`、`KSamplerSelect`、`LTXVCropGuides`、`CLIPTextEncode`、`LoadImage`、`LTXVPreprocess`、`TextInput_`、`CreateVideo`、`RH_LLMAPI_NODE`、`VAEDecodeTiled`、`Float to Int`、`SaveVideo`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Float to Int` 知识库中没有该节点类型的任何知识

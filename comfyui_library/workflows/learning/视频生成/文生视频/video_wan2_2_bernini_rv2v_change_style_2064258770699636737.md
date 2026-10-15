@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/video_wan2_2_bernini_rv2v_change_style_2064258770699636737.json
 hash: 715e3f85f6ca898d
 coverage: 0.45614
-learned_at: 2026-10-11 20:21:32
+learned_at: 2026-10-15 22:47:33
 nodes: [CFGZeroStar, SetNode, CLIPLoader, GetNode, SetNode, SetNode, VAEDecode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, CLIPTextEncode, VAELoader, CLIPVisionLoader, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, SetNode, KSamplerAdvanced, WanVideoNAG, SetNode, SetNode, SetNode, ImageResizeKJv2, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, BerniniConditioning, SetNode, SetNode, SetNode, SetNode, BatchImagesNode, VHS_VideoCombine, INTConstant, MarkdownNote, LoadImage, VHS_LoadVideo, INTConstant, INTConstant, CLIPTextEncode]
 patterns: []
 missing: []

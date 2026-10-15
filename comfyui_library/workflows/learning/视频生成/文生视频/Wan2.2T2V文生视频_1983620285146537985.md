@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2T2V文生视频_1983620285146537985.json
 hash: b952d3c607628c02
-coverage: 0.851852
-learned_at: 2026-10-11 02:45:02
+coverage: 0.962963
+learned_at: 2026-10-15 22:47:13
 nodes: [PrimitiveInt, INTConstant, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, ModelSamplingSD3, UNETLoader, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, DownloadAndLoadGIMMVFIModel, VAEDecode, VAELoader, GIMMVFI_interpolate, LayerUtility: PurgeVRAM V2, CLIPTextEncode, CLIPLoader, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, SimpleMath+, CLIPTextEncode, CLIPTextEncode, Text Multiline]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, SimpleMath+, Text Multiline]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2T2V文生视频_1983620285146537985.json
@@ -63,16 +62,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **85%**（23/27）
+覆盖率 **96%**（26/27）
 
-**有卡**：`INTConstant`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`UNETLoader`、`ModelSamplingSD3`、`DownloadAndLoadGIMMVFIModel`、`VAEDecode`、`VAELoader`、`GIMMVFI_interpolate`、`CLIPTextEncode`、`CLIPLoader`、`KSamplerAdvanced`、`VHS_VideoCombine`
-
-**缺卡**（3）：`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`Text Multiline`
+**有卡**：`INTConstant`、`EmptyHunyuanLatentVideo`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`UNETLoader`、`ModelSamplingSD3`、`DownloadAndLoadGIMMVFIModel`、`VAEDecode`、`VAELoader`、`GIMMVFI_interpolate`、`LayerUtility: PurgeVRAM V2`、`CLIPTextEncode`、`CLIPLoader`、`KSamplerAdvanced`、`VHS_VideoCombine`、`SimpleMath+`、`Text Multiline`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.5_ICLoRA_Union_Control（3采）V1_2087874712008478722.json
 hash: 588ec6586d782c71
-coverage: 0.518519
-learned_at: 2026-10-11 20:53:37
+coverage: 0.555556
+learned_at: 2026-10-15 22:44:43
 nodes: [KSamplerSelect, ManualSigmas, CFGGuider, GetNode, GetNode, CFGGuider, LTXVLatentUpsampler, LTXVImgToVideoInplace, KSamplerSelect, ManualSigmas, LTXVSeparateAVLatent, LTXVSeparateAVLatent, GetNode, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, LTXVConcatAVLatent, LTXVLatentUpsampler, LTXVImgToVideoInplace, SetNode, SetNode, GetNode, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, GetNode, GetNode, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, LTXVEmptyLatentAudio, SimpleMath+, GetNode, GetNode, LTXVCropGuides, SetNode, LTXVImgToVideoConditionOnly, GetNode, GetNode, SetNode, SetNode, SamplerCustomAdvanced, SamplerCustomAdvanced, LTXVConditioning, VAEDecode, LTXVAudioVAEDecode, VHS_VideoInfo, SetNode, SetNode, SetNode, GetNode, LTXVConcatAVLatent, SetNode, SetNode, LTXAddVideoICLoRAGuide, GetNode, SetNode, GetNode, GetNode, GetImageSize, SetNode, SimpleMath+, GetNode, CLIPTextEncode, VHS_VideoCombine, SetNode, SetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, CLIPTextEncode, EmptyLTXVLatentVideo, SetNode, CannyEdgePreprocessor, CFGGuider, DWPreprocessor, SetNode, SetNode, GetNode, VHS_VideoCombine, GetNode, RandomNoise, DepthAnythingPreprocessor, ImageResizeKJv2, LatentUpscaleModelLoader, CLIPLoader, VAELoader, VAELoader, UNETLoader, GetNode, GetNode, GetNode, LTXICLoRALoaderModelOnly, SetNode, RandomNoise, MathExpression|pysssss, VHS_VideoCombine, VHS_LoadVideo, Text, INTConstant, LoadImage]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.5_ICLoRA_Union_Control（3采）V1_2087874712008478722.json
@@ -141,17 +140,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **52%**（56/108）
+覆盖率 **56%**（60/108）
 
-**有卡**：`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`VAEDecode`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoConditionOnly`、`LTXVConditioning`、`VHS_VideoInfo`、`LTXAddVideoICLoRAGuide`、`GetImageSize`、`CLIPTextEncode`、`VHS_VideoCombine`、`EmptyLTXVLatentVideo`、`CannyEdgePreprocessor`、`DWPreprocessor`、`RandomNoise`、`DepthAnythingPreprocessor`、`ImageResizeKJv2`、`LatentUpscaleModelLoader`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`LTXICLoRALoaderModelOnly`、`VHS_LoadVideo`、`Text`、`INTConstant`、`LoadImage`
+**有卡**：`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`VAEDecode`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`SimpleMath+`、`LTXVImgToVideoConditionOnly`、`LTXVConditioning`、`VHS_VideoInfo`、`LTXAddVideoICLoRAGuide`、`GetImageSize`、`CLIPTextEncode`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLTXVLatentVideo`、`CannyEdgePreprocessor`、`DWPreprocessor`、`RandomNoise`、`DepthAnythingPreprocessor`、`ImageResizeKJv2`、`LatentUpscaleModelLoader`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`LTXICLoRALoaderModelOnly`、`MathExpression|pysssss`、`VHS_LoadVideo`、`Text`、`INTConstant`、`LoadImage`
 
-**缺卡**（4）：`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`SimpleMath+`、`SimpleMath+`
-
-**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、DepthAnythingPreprocessor、CannyEdgePreprocessor
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、DepthAnythingPreprocessor

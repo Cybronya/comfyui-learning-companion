@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.1_1.3B_BF16_FunInPMPSLoRA_Sage_T2V_2037780855766126593.json
 hash: aa46043e9052e858
 coverage: 1
-learned_at: 2026-10-11 03:48:38
+learned_at: 2026-10-15 22:47:08
 nodes: [SaveVideo, CreateVideo, VAEDecode, CLIPTextEncode, KSampler, CLIPLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, UNETLoader, VAELoader, CLIPTextEncode, EmptyHunyuanLatentVideo]
 patterns: []
 missing: []

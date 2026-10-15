@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json
 hash: aeeb595963ccdffd
-coverage: 0.474576
-learned_at: 2026-10-10 20:58:30
+coverage: 0.491525
+learned_at: 2026-10-15 22:26:16
 nodes: [CLIPTextEncodeFlux, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, VAEDecode, VAELoader, SaveImage, PreviewImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, PreviewImage, VAELoader, SaveImage, VAEDecode, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, CannyEdgePreprocessor, PreviewImage, VAELoader, VAEDecode, SaveImage, HEDPreprocessor, Reroute, Reroute, Reroute, Reroute, EmptyLatentImage, ApplyFluxControlNet, XlabsSampler, ApplyFluxControlNet, XlabsSampler, ApplyFluxControlNet, XlabsSampler, PreviewImage, PreviewImage, CLIPTextEncodeFlux, LoadImage, LoraLoader, DualCLIPLoader, UNETLoader, DepthAnythingV2Preprocessor, LoadFluxControlNet, LoadFluxControlNet, LoadFluxControlNet]
 patterns: [lora]
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 parameters: {"batch_size": 1, "height": 1024, "lora_name": "精致古装.safetensors", "strength_clip": 1, "strength_model": 0.8, "width": 1024}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/F.1 _ Canny _ 深度 _ HED _ Lora_1890346105614553089.json
@@ -21,11 +20,13 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（59 个）：
-- `CLIPTextEncodeFlux`
+- `CLIPTextEncodeFlux` ★核心
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `PreviewImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `VAELoader`
 - `SaveImage`
 - `PreviewImage`
@@ -45,7 +46,7 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `PreviewImage`
 - `VAELoader`
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `Reroute`
 - `Reroute`
 - `Reroute`
@@ -56,27 +57,27 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 - `CannyEdgePreprocessor`
 - `PreviewImage`
 - `VAELoader`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `HEDPreprocessor`
 - `Reroute`
 - `Reroute`
 - `Reroute`
 - `Reroute`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `ApplyFluxControlNet`
-- `XlabsSampler`
+- `XlabsSampler` ★核心
 - `ApplyFluxControlNet`
-- `XlabsSampler`
+- `XlabsSampler` ★核心
 - `ApplyFluxControlNet`
-- `XlabsSampler`
+- `XlabsSampler` ★核心
 - `PreviewImage`
 - `PreviewImage`
-- `CLIPTextEncodeFlux`
+- `CLIPTextEncodeFlux` ★核心
 - `LoadImage`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `DualCLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `DepthAnythingV2Preprocessor`
 - `LoadFluxControlNet`
 - `LoadFluxControlNet`
@@ -86,21 +87,17 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `height` = `1024`
-- `lora_name` = `精致古装.safetensors`
-- `strength_clip` = `1`
-- `strength_model` = `0.8`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+- `lora_name` = `精致古装.safetensors`
+- `strength_model` = `0.8`
+- `strength_clip` = `1`
 
 ## 知识
 
-覆盖率 **47%**（28/59）
+覆盖率 **49%**（29/59）
 
-**有卡**：`CLIPTextEncodeFlux`、`LayerUtility: ImageScaleByAspectRatio V2`、`PreviewImage`、`VAEDecode`、`VAELoader`、`SaveImage`、`Reroute`
+**有卡**：`CLIPTextEncodeFlux`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAEDecode`、`VAELoader`、`SaveImage`、`CannyEdgePreprocessor`、`HEDPreprocessor`、`EmptyLatentImage`、`ApplyFluxControlNet`、`XlabsSampler`、`LoadImage`、`LoraLoader`、`DualCLIPLoader`、`UNETLoader`、`DepthAnythingV2Preprocessor`、`LoadFluxControlNet`
 
-**缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、EmptyLatentImage、LoadImage、DepthAnythingV2Preprocessor、ApplyFluxControlNet、CannyEdgePreprocessor

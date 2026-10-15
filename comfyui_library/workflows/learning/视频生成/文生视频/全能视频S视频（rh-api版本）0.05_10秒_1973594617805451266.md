@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频S视频（rh-api版本）0.05_10秒_1973594617805451266.json
 hash: fc6ecabe8ede014b
-coverage: 0.333333
-learned_at: 2026-10-10 23:11:44
+coverage: 0.714286
+learned_at: 2026-10-15 22:47:59
 nodes: [easy showAnything, SaveVideo, RH_Sora2_I2V, easy showAnything, SaveVideo, RH_Sora2_T2V, Text Concatenate, easy showAnything, easy showAnything, ImpactSwitch, CR Prompt Text, LoadImage, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, Text Concatenate, ImpactSwitch, LoadImage, SaveImage]
 patterns: []
-missing: [Text Concatenate, Text Concatenate, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text]
-discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/全能视频S视频（rh-api版本）0.05_10秒_1973594617805451266.json
@@ -47,21 +46,8 @@ discoveries: [次要节点 `Text Concatenate` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **33%**（7/21）
+覆盖率 **71%**（15/21）
 
-**有卡**：`SaveVideo`、`RH_Sora2_I2V`、`RH_Sora2_T2V`、`LoadImage`、`SaveImage`
+**有卡**：`SaveVideo`、`RH_Sora2_I2V`、`RH_Sora2_T2V`、`Text Concatenate`、`CR Prompt Text`、`LoadImage`、`SaveImage`
 
-**缺卡**（8）：`Text Concatenate`、`Text Concatenate`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`、`CR Prompt Text`
-
-**用到的条目**：LoadImage、SaveImage、SaveVideo、RH_Sora2_I2V、RH_Sora2_T2V、sd15-t2i-basic、sd15-t2i-lora、Text
-
-## 学习发现
-
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
+**用到的条目**：LoadImage、CR Prompt Text、SaveImage、SaveVideo、RH_Sora2_I2V、RH_Sora2_T2V、Text Concatenate、sd15-t2i-basic

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.0音视频同步-文生视频_2009172721598472194.json
 hash: 44d1a8836e5214bd
-coverage: 0.672131
-learned_at: 2026-10-11 03:07:10
+coverage: 0.704918
+learned_at: 2026-10-15 22:44:55
 nodes: [RandomNoise, CFGGuider, LTXVScheduler, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, KSamplerSelect, Reroute, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVCropGuides, LatentUpscaleModelLoader, Reroute, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVLatentUpsampler, SamplerCustomAdvanced, LTXVConcatAVLatent, LTXVSeparateAVLatent, VAEDecodeTiled, Reroute, LTXVAudioVAEDecode, Note, PrimitiveStringMultiline, ToFloat, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, LTXAVTextEncoderLoader, LTXVAudioVAELoader, ImpactSwitch, Note, ImpactSwitch, Note, PrimitiveStringMultiline, PrimitiveStringMultiline, RH_LLMAPI_NODE, IntConditions, easy ifElse, PrimitiveInt, PrimitiveInt, ShowText|pysssss, ImageScaleBy, GetImageSize, Int, MathExpression|pysssss, EmptyImage, VHS_VideoCombine, Reroute, VHS_VideoCombine, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CheckpointLoaderSimple, Reroute, Int, Note, VAEDecode, LayerUtility: PurgeVRAM V2]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, MathExpression|pysssss]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.0音视频同步-文生视频_2009172721598472194.json
@@ -95,15 +94,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 知识
 
-覆盖率 **67%**（41/61）
+覆盖率 **70%**（43/61）
 
-**有卡**：`RandomNoise`、`CFGGuider`、`LTXVScheduler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`KSamplerSelect`、`LoraLoaderModelOnly`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`ManualSigmas`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ToFloat`、`CLIPTextEncode`、`LTXVConditioning`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`RH_LLMAPI_NODE`、`IntConditions`、`ImageScaleBy`、`GetImageSize`、`Int`、`EmptyImage`、`VHS_VideoCombine`、`CheckpointLoaderSimple`、`VAEDecode`
-
-**缺卡**（2）：`LayerUtility: PurgeVRAM V2`、`MathExpression|pysssss`
+**有卡**：`RandomNoise`、`CFGGuider`、`LTXVScheduler`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`KSamplerSelect`、`LoraLoaderModelOnly`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`ManualSigmas`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ToFloat`、`CLIPTextEncode`、`LTXVConditioning`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`RH_LLMAPI_NODE`、`IntConditions`、`ImageScaleBy`、`GetImageSize`、`Int`、`MathExpression|pysssss`、`EmptyImage`、`VHS_VideoCombine`、`CheckpointLoaderSimple`、`VAEDecode`、`LayerUtility: PurgeVRAM V2`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识

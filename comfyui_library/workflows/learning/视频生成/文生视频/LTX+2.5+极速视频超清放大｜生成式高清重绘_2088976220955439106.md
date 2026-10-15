@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX+2.5+极速视频超清放大｜生成式高清重绘_2088976220955439106.json
 hash: 767443b2a9914ccd
 coverage: 0.9
-learned_at: 2026-10-11 21:19:41
+learned_at: 2026-10-15 22:44:36
 nodes: [LTXVLoopingSampler, CFGGuider, LTXVConditioning, VAEEncodeTiled, CreateVideo, LTXVSpatioTemporalTiledVAEDecode, MarkdownNote, UNETLoader, MarkdownNote, RandomNoise, KSamplerSelect, VAELoader, CLIPLoader, GetVideoComponents, LoadVideo, SaveVideo, Yuan_RTXVideoUpscaleH3, CLIPTextEncode, LoraLoaderModelOnly, ManualSigmas]
 patterns: []
 missing: []

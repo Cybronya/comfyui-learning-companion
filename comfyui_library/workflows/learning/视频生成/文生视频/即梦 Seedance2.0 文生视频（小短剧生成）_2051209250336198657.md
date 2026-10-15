@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/即梦 Seedance2.0 文生视频（小短剧生成）_2051209250336198657.json
 hash: 4e3d0d509a38ab25
 coverage: 1
-learned_at: 2026-10-11 19:49:47
+learned_at: 2026-10-15 22:48:16
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20TextToVideo]
 patterns: []
 missing: []

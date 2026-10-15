@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json
 hash: 67e28f90277d6a0e
-coverage: 0.835821
-learned_at: 2026-10-10 20:48:12
+coverage: 0.865672
+learned_at: 2026-10-15 22:25:36
 nodes: [Seed (rgthree), UNETLoader, SetNode, CLIPLoader, CLIPLoader, EmptyLatentImage, SetNode, QwenImage21Cache, CLIPLoader, KSampler, VAELoader, ResolutionSelector, VAEDecode, SaveImage, Fast Groups Bypasser (rgthree), TextEncodeQwenImage21, TextGenerateLTX2Prompt, ImageBatchMultiV2, MiniMaxH3EasyMediaSplitter, MiniMaxH3EasyMediaLoader, GetNode, PreviewAny, MiniMaxH3EasyMediaSplitter, CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [CR Prompt Text, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/qwen-image-2.1多合一极简版｜文生图图生图一页搞定｜界面清爽好用_2102274702399070209.json
@@ -109,11 +109,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **84%**（56/67）
+覆盖率 **87%**（58/67）
 
-**有卡**：`UNETLoader`、`CLIPLoader`、`EmptyLatentImage`、`QwenImage21Cache`、`KSampler`、`VAELoader`、`ResolutionSelector`、`VAEDecode`、`SaveImage`、`TextEncodeQwenImage21`、`TextGenerateLTX2Prompt`、`ImageBatchMultiV2`、`MiniMaxH3EasyMediaSplitter`、`MiniMaxH3EasyMediaLoader`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
-
-**缺卡**（2）：`CR Prompt Text`、`Seed (rgthree)`
+**有卡**：`Seed (rgthree)`、`UNETLoader`、`CLIPLoader`、`EmptyLatentImage`、`QwenImage21Cache`、`KSampler`、`VAELoader`、`ResolutionSelector`、`VAEDecode`、`SaveImage`、`TextEncodeQwenImage21`、`TextGenerateLTX2Prompt`、`ImageBatchMultiV2`、`MiniMaxH3EasyMediaSplitter`、`MiniMaxH3EasyMediaLoader`、`CR Prompt Text`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`LoraLoaderModelOnly`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -124,6 +122,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

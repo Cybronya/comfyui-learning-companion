@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3文生视频与图生视频_2032329781139738626.json
 hash: af7660389d586937
-coverage: 0.833333
-learned_at: 2026-10-11 03:16:47
+coverage: 0.925926
+learned_at: 2026-10-15 22:45:13
 nodes: [CFGGuider, KSamplerSelect, ManualSigmas, VAEDecodeTiled, RandomNoise, LTXVConcatAVLatent, RandomNoise, CFGGuider, LTXVConcatAVLatent, LTXVImgToVideoConditionOnly, LTXVEmptyLatentAudio, KSamplerSelect, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVAudioVAEDecode, LatentUpscaleModelLoader, LTXVSeparateAVLatent, LTXVPreprocess, EmptyLTXVLatentVideo, Note, CLIPTextEncode, CLIPTextEncode, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, SamplerCustomAdvanced, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAELoader, Note, CM_FloatToInt, PrimitiveFloat, SimpleMath+, ShowText|pysssss, ManualSigmas, LayerUtility: ImageScaleByAspectRatio V2, CR Text, LoadImage, CR Text, LoraLoaderModelOnly, VHS_VideoCombine, INTConstant, INTConstant, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, PrimitiveBoolean, RH_LLMAPI_Pro_Node, easy int]
 patterns: []
-missing: [CR Text, CR Text, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, easy int]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3文生视频与图生视频_2032329781139738626.json
@@ -88,18 +87,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **83%**（45/54）
+覆盖率 **93%**（50/54）
 
-**有卡**：`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`VAEDecodeTiled`、`RandomNoise`、`LTXVConcatAVLatent`、`LTXVImgToVideoConditionOnly`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVAudioVAEDecode`、`LatentUpscaleModelLoader`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`CM_FloatToInt`、`LoadImage`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`INTConstant`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`
-
-**缺卡**（5）：`CR Text`、`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`easy int`
+**有卡**：`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`VAEDecodeTiled`、`RandomNoise`、`LTXVConcatAVLatent`、`LTXVImgToVideoConditionOnly`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVAudioVAEDecode`、`LatentUpscaleModelLoader`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`CM_FloatToInt`、`SimpleMath+`、`LayerUtility: ImageScaleByAspectRatio V2`、`CR Text`、`LoadImage`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`INTConstant`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`、`easy int`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

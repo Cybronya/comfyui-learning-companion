@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【超能视频Seedance2.0 SD2.0-视频音频生视频】工作流_2037775043572273153.json
 hash: 2ca419d1236783b5
 coverage: 0.5
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:42
 nodes: [Note, Note, LoadVideo, LoadAudio, RH_RhartVideoSparkvideo20FastMultimodalVideo, Note, SaveVideo, Note]
 patterns: []
 missing: []

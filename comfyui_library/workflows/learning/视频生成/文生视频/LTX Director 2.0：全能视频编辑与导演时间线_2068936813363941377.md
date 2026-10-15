@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX Director 2.0：全能视频编辑与导演时间线_2068936813363941377.json
 hash: ae143e7d69a854c3
 coverage: 0.969697
-learned_at: 2026-10-11 20:21:24
+learned_at: 2026-10-15 22:44:36
 nodes: [LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, LatentUpscaleModelLoader, LTXVLatentUpsampler, ConditioningZeroOut, CFGGuider, KSamplerSelect, BasicScheduler, VAEDecode, CreateVideo, RandomNoise, CFGGuider, LTXDirectorCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, SamplerCustomAdvanced, LTXVAudioVAEDecode, VAELoaderKJ, DualCLIPLoader, VAELoader, VAELoader, MarkdownNote, ModelPreviewOverrideKJ, LTXDirector, LTXDirectorGuide, LTXVConditioning, LTXDirectorCropGuides, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXDirectorGuide, SaveVideo, UNETLoader]
 patterns: []
 missing: []

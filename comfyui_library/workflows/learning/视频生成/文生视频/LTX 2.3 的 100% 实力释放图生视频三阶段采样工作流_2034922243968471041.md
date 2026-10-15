@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 的 100% 实力释放图生视频三阶段采样工作流_2034922243968471041.json
 hash: 5635f4d75eaf5e74
-coverage: 0.953125
-learned_at: 2026-10-11 03:48:34
+coverage: 0.96875
+learned_at: 2026-10-15 22:44:33
 nodes: [PrimitiveBoolean, CLIPTextEncode, LTXVConditioning, LTXVEmptyLatentAudio, LTXVPreprocess, CM_FloatToInt, LTXVImgToVideoConditionOnly, KSamplerSelect, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, LTXVImgToVideoConditionOnly, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, EmptyLTXVLatentVideo, MelBandRoFormerSampler, JWImageResizeByLongerSide, LTXVConcatAVLatent, PrimitiveInt, SimpleCalculatorKJ, LTXVAudioVAEEncode, SetLatentNoiseMask, LTXVConcatAVLatent, SolidMask, GetLatentSizeAndCount, SolidMask, SetLatentNoiseMask, SolidMask, GetLatentSizeAndCount, SetLatentNoiseMask, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, SaveVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGGuider, CFGGuider, CFGGuider, MelBandRoFormerModelLoader, LoadAudio, LoadImage, PrimitiveFloat, TrimAudioDuration, Audio Duration (mtb), image_scale_pixel_v2, CLIPTextEncode]
 patterns: []
-missing: [Audio Duration (mtb)]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX 2.3 的 100% 实力释放图生视频三阶段采样工作流_2034922243968471041.json
@@ -98,14 +97,8 @@ discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **95%**（61/64）
+覆盖率 **97%**（62/64）
 
-**有卡**：`PrimitiveBoolean`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`CM_FloatToInt`、`LTXVImgToVideoConditionOnly`、`KSamplerSelect`、`ManualSigmas`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVConcatAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`EmptyLTXVLatentVideo`、`MelBandRoFormerSampler`、`JWImageResizeByLongerSide`、`SimpleCalculatorKJ`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`SolidMask`、`GetLatentSizeAndCount`、`LTXVLatentUpsampler`、`SaveVideo`、`LoraLoaderModelOnly`、`CFGGuider`、`MelBandRoFormerModelLoader`、`LoadAudio`、`LoadImage`、`TrimAudioDuration`、`image_scale_pixel_v2`
-
-**缺卡**（1）：`Audio Duration (mtb)`
+**有卡**：`PrimitiveBoolean`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`CM_FloatToInt`、`LTXVImgToVideoConditionOnly`、`KSamplerSelect`、`ManualSigmas`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVConcatAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`EmptyLTXVLatentVideo`、`MelBandRoFormerSampler`、`JWImageResizeByLongerSide`、`SimpleCalculatorKJ`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`SolidMask`、`GetLatentSizeAndCount`、`LTXVLatentUpsampler`、`SaveVideo`、`LoraLoaderModelOnly`、`CFGGuider`、`MelBandRoFormerModelLoader`、`LoadAudio`、`LoadImage`、`TrimAudioDuration`、`Audio Duration (mtb)`、`image_scale_pixel_v2`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
-
-## 学习发现
-
-- 次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识

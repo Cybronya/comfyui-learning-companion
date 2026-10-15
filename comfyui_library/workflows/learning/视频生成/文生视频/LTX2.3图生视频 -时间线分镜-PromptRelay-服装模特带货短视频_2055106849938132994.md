@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json
 hash: e70a86e33bcaf885
-coverage: 0.755556
-learned_at: 2026-10-11 19:49:38
+coverage: 0.8
+learned_at: 2026-10-15 22:45:06
 nodes: [RegexExtract, PreviewAny, PreviewAny, PreviewAny, JWInteger, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, RH_LLMAPI_Pro_Node, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, UNETLoader, PathchSageAttentionKJ, LTXVImgToVideoInplaceKJ, LTXVEmptyLatentAudio, BasicScheduler, LTX2SamplingPreviewOverride, VisualizeSigmasKJ, KSamplerSelect, LTXVConcatAVLatent, SamplerCustom, LTXVSeparateAVLatent, VAEDecode, GetNode, LTXVAudioVAEDecode, GetNode, RegexExtract, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVConditioning, LoraLoaderModelOnly, ConditioningZeroOut, SimpleMath+, CM_IntToFloat, EmptyLTXVLatentVideo, GetNode, GetNode, LTXVPreprocess, SetNode, SetNode, VHS_VideoCombine, LoadImage, Text, PromptRelayEncodeTimeline, JWInteger]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 489}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3图生视频 -时间线分镜-PromptRelay-服装模特带货短视频_2055106849938132994.json
@@ -78,15 +77,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **76%**（34/45）
+覆盖率 **80%**（36/45）
 
-**有卡**：`RegexExtract`、`JWInteger`、`RH_LLMAPI_Pro_Node`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`PathchSageAttentionKJ`、`LTXVImgToVideoInplaceKJ`、`LTXVEmptyLatentAudio`、`BasicScheduler`、`LTX2SamplingPreviewOverride`、`VisualizeSigmasKJ`、`KSamplerSelect`、`LTXVConcatAVLatent`、`SamplerCustom`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`LTXVConditioning`、`ConditioningZeroOut`、`CM_IntToFloat`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`VHS_VideoCombine`、`LoadImage`、`Text`、`PromptRelayEncodeTimeline`
-
-**缺卡**（2）：`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`
+**有卡**：`RegexExtract`、`JWInteger`、`LayerUtility: ImageScaleByAspectRatio V2`、`RH_LLMAPI_Pro_Node`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`PathchSageAttentionKJ`、`LTXVImgToVideoInplaceKJ`、`LTXVEmptyLatentAudio`、`BasicScheduler`、`LTX2SamplingPreviewOverride`、`VisualizeSigmasKJ`、`KSamplerSelect`、`LTXVConcatAVLatent`、`SamplerCustom`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`LTXVConditioning`、`ConditioningZeroOut`、`SimpleMath+`、`CM_IntToFloat`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`VHS_VideoCombine`、`LoadImage`、`Text`、`PromptRelayEncodeTimeline`
 
 **用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

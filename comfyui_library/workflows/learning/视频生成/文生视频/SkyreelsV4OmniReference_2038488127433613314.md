@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/SkyreelsV4OmniReference_2038488127433613314.json
 hash: 39fce61905d479ad
 coverage: 1
-learned_at: 2026-10-11 03:48:37
+learned_at: 2026-10-15 22:47:00
 nodes: [RH_SkyreelsV4OmniReference, SaveVideo]
 patterns: []
 missing: []

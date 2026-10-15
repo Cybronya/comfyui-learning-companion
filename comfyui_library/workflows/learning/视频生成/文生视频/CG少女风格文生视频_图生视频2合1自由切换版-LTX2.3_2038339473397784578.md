@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/CG少女风格文生视频_图生视频2合1自由切换版-LTX2.3_2038339473397784578.json
 hash: 866cfcce7dcdbaba
 coverage: 0.821429
-learned_at: 2026-10-11 03:48:33
+learned_at: 2026-10-15 22:44:05
 nodes: [CLIPTextEncode, LTXVConditioning, GetImageSize, RandomNoise, LatentUpscaleModelLoader, LTX2_NAG, LTX2SamplingPreviewOverride, INTConstant, INTConstant, INTConstant, SetNode, LTXVScheduler, SetNode, ResizeImagesByLongerEdge, LoadImage, ResizeImageMaskNode, PreviewImage, SetNode, SetNode, PreviewImage, LTXVConcatAVLatent, LTXVPreprocess, EmptyImage, ImageScaleBy, EmptyLTXVLatentVideo, ManualSigmas, LTXVCropGuides, LTXVImgToVideoInplace, LTXVImgToVideoInplace, SamplerCustomAdvanced, KSamplerSelect, PrimitiveBoolean, Note, INTConstant, LTXVSeparateAVLatent, CreateVideo, LTXVAudioVAEDecode, VAEDecode, BasicScheduler, CFGGuider, KSampler, LTXVLatentUpsampler, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVSeparateAVLatent, CLIPTextEncode, VHS_VideoCombine, Note, SaveVideo, MarkdownNote, MarkdownNote, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, LoraLoaderModelOnly]
 patterns: []
 missing: []

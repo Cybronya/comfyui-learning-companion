@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/QwenImage-RebalanceV1现实增强 VS 原版_1984151149953646593.json
 hash: 1a1c73d1dc9a51ba
-coverage: 0.7
-learned_at: 2026-10-10 20:59:07
+coverage: 0.833333
+learned_at: 2026-10-15 22:27:24
 nodes: [LayerUtility: PurgeVRAM V2, ModelSamplingAuraFlow, CLIPTextEncode, CLIPTextEncode, LayerUtility: PurgeVRAM V2, ModelSamplingAuraFlow, CLIPTextEncode, LoraLoaderModelOnly, CLIPTextEncode, KSampler, KSampler, PrimitiveInt, EmptySD3LatentImage, Image Comparer (rgthree), Text Concatenate, Text Multiline, Fast Groups Bypasser (rgthree), UNETLoader, CLIPLoader, VAELoader, LoadImage, AILab_QwenVL, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, SaveImage, VAEDecode, SaveImage, Note, ShowText|pysssss]
 patterns: []
-missing: [LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, Text Concatenate, Text Multiline]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 496328613975437, "steps": 10}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/QwenImage-RebalanceV1现实增强 VS 原版_1984151149953646593.json
@@ -21,58 +20,53 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（30 个）：
 - `LayerUtility: PurgeVRAM V2`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `LayerUtility: PurgeVRAM V2`
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode`
-- `LoraLoaderModelOnly`
-- `CLIPTextEncode`
-- `KSampler`
-- `KSampler`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
 - `PrimitiveInt`
 - `EmptySD3LatentImage`
 - `Image Comparer (rgthree)`
 - `Text Concatenate`
 - `Text Multiline`
 - `Fast Groups Bypasser (rgthree)`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
 - `LoadImage`
 - `AILab_QwenVL`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `VAEDecode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
 - `SaveImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 - `Note`
 - `ShowText|pysssss`
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `beta`
 - `seed` = `496328613975437`
 - `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
 
 ## 知识
 
-覆盖率 **70%**（21/30）
+覆盖率 **83%**（25/30）
 
-**有卡**：`LayerUtility: PurgeVRAM V2`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSampler`、`PrimitiveInt`、`EmptySD3LatentImage`、`Image Comparer (rgthree)`、`Text Concatenate`、`Text Multiline`、`Fast Groups Bypasser (rgthree)`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`
+**有卡**：`LayerUtility: PurgeVRAM V2`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSampler`、`EmptySD3LatentImage`、`Text Concatenate`、`Text Multiline`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`、`AILab_QwenVL`、`VAEDecode`、`SaveImage`
 
-**缺卡**（4）：`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM V2`、`Text Concatenate`、`Text Multiline`
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/MiniMax H3多合一｜Turbo4 + Sage + T8 Stable 组合加速版｜B站UP主@好奇漫步_2086728037277720578.json
 hash: 3762b731b7544e9b
 coverage: 0.847059
-learned_at: 2026-10-11 20:53:42
+learned_at: 2026-10-15 22:45:55
 nodes: [SaveVideo, MiniMaxH3ImageToVideo, SaveVideo, SaveVideo, UNETLoader, UNETLoader, KSamplerSelect, BasicScheduler, BasicScheduler, SamplerCustomAdvanced, VAEDecodeAudio, RandomNoise, BasicGuider, VAEDecode, CreateVideo, MiniMaxH3ImageToVideo, RandomNoise, BasicGuider, BasicGuider, RandomNoise, SamplerCustomAdvanced, VAEDecode, VAEDecodeAudio, CreateVideo, SamplerCustomAdvanced, VAELoader, VAELoader, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfySwitchNode, ComfySwitchNode, ComfySwitchNode, MarkdownNote, ResolutionSelector, MarkdownNote, MarkdownNote, PrimitiveFloat, SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadVideo, LoadVideo, LoadImage, LoadVideo, LoadImage, CLIPLoader, GetVideoComponents, GetVideoComponents, GetVideoComponents, LoadAudio, LoadAudio, LoadAudio, BasicGuider, RandomNoise, VAEDecode, VAEDecodeAudio, SamplerCustomAdvanced, CreateVideo, VAEDecode, VAEDecodeAudio, CreateVideo, MiniMaxH3ReferenceToVideo, LoadImage, MarkdownNote, MarkdownNote, MarkdownNote, LoraLoaderBypassModelOnly, MiniMaxH3DualClockSamplerT8, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3DualClockSamplerT8, MiniMaxH3MemoryEfficientSageAttentionPatch, MarkdownNote, MiniMaxH3ImageToVideo, LoadImage, LoadImage, PrimitiveInt, PrimitiveStringMultiline]
 patterns: []
 missing: []

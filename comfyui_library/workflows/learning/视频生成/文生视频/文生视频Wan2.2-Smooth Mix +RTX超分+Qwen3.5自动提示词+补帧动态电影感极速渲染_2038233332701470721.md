@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2038233332701470721.json
 hash: c22b284454f14b49
-coverage: 0.804878
-learned_at: 2026-10-11 03:48:40
+coverage: 0.97561
+learned_at: 2026-10-15 22:48:43
 nodes: [wanBlockSwap, wanBlockSwap, Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Bypasser (rgthree), PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, VAELoader, ModelPatchTorchSettings, SimpleMath+, WanImageToVideo, Fast Bypasser (rgthree), Fast Bypasser (rgthree), Seed (rgthree), CLIPTextEncode, VAEDecode, ImageScaleBy, CLIPTextEncode, CLIPLoader, UNETLoader, UNETLoader, RIFE VFI, RTXVideoSuperResolution, ShowText, VHS_VideoCombine, llama_cpp_instruct_adv, llama_cpp_model_loader, ImpactInt, ImpactInt, ImpactInt, KSamplerAdvanced, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, ShowText, llama_cpp_instruct_adv, VHS_VideoCombine, RTXVideoSuperResolution, PrimitiveStringMultiline]
 patterns: []
-missing: [Fast Bypasser (rgthree), Fast Bypasser (rgthree), Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), RIFE VFI, SimpleMath+, Seed (rgthree)]
+missing: []
 parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/文生视频Wan2.2-Smooth Mix +RTX超分+Qwen3.5自动提示词+补帧动态电影感极速渲染_2038233332701470721.json
@@ -77,20 +76,8 @@ discoveries: [次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **80%**（33/41）
+覆盖率 **98%**（40/41）
 
-**有卡**：`wanBlockSwap`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`VAELoader`、`WanImageToVideo`、`CLIPTextEncode`、`VAEDecode`、`ImageScaleBy`、`CLIPLoader`、`UNETLoader`、`RTXVideoSuperResolution`、`ShowText`、`VHS_VideoCombine`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`ImpactInt`、`KSamplerAdvanced`、`LoraLoaderModelOnly`
+**有卡**：`wanBlockSwap`、`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`Fast Bypasser (rgthree)`、`ModelSamplingSD3`、`VAELoader`、`SimpleMath+`、`WanImageToVideo`、`Seed (rgthree)`、`CLIPTextEncode`、`VAEDecode`、`ImageScaleBy`、`CLIPLoader`、`UNETLoader`、`RIFE VFI`、`RTXVideoSuperResolution`、`ShowText`、`VHS_VideoCombine`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`ImpactInt`、`KSamplerAdvanced`、`LoraLoaderModelOnly`
 
-**缺卡**（7）：`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Fast Bypasser (rgthree)`、`Mute / Bypass Repeater (rgthree)`、`RIFE VFI`、`SimpleMath+`、`Seed (rgthree)`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、RTXVideoSuperResolution
-
-## 学习发现
-
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Fast Bypasser (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Mute / Bypass Repeater (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `RIFE VFI` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、Seed (rgthree)

@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 数字人 导演台分镜（新版）_2070676408346693633.json
 hash: 8b00b0aff5203b2b
-coverage: 0.972973
-learned_at: 2026-10-11 20:21:26
+coverage: 1
+learned_at: 2026-10-15 22:44:59
 nodes: [VAEDecodeTiled, LTXVCropGuides, VAEDecodeTiled, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, BasicScheduler, CFGGuider, LTXVSeparateAVLatent, LTXVConcatAVLatent, LoraLoaderModelOnly, DiffusionModelLoaderKJ, ConditioningZeroOut, LTXVConditioning, LTXDirectorGuide, RandomNoise, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXDirectorGuide, RandomNoise, CFGGuider, KSamplerSelect, BasicScheduler, LTXVConcatAVLatent, SamplerCustomAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, Label (rgthree), KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, VHS_VideoCombine, VHS_VideoCombine, LTXDirector, LoraLoaderModelOnly]
 patterns: []
-missing: [Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3 数字人 导演台分镜（新版）_2070676408346693633.json
@@ -63,14 +62,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **97%**（36/37）
+覆盖率 **100%**（37/37）
 
-**有卡**：`VAEDecodeTiled`、`LTXVCropGuides`、`DualCLIPLoader`、`VAELoaderKJ`、`BasicScheduler`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`LoraLoaderModelOnly`、`DiffusionModelLoaderKJ`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXDirectorGuide`、`RandomNoise`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`KSamplerSelect`、`SamplerCustomAdvanced`、`VHS_VideoCombine`、`LTXDirector`
-
-**缺卡**（1）：`Label (rgthree)`
+**有卡**：`VAEDecodeTiled`、`LTXVCropGuides`、`DualCLIPLoader`、`VAELoaderKJ`、`BasicScheduler`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`LoraLoaderModelOnly`、`DiffusionModelLoaderKJ`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXDirectorGuide`、`RandomNoise`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`KSamplerSelect`、`SamplerCustomAdvanced`、`Label (rgthree)`、`VHS_VideoCombine`、`LTXDirector`
 
 **用到的条目**：LoraLoaderModelOnly、ConditioningZeroOut、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent、LTXVSeparateAVLatent
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

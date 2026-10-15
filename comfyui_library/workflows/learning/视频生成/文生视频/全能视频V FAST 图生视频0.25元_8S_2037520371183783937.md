@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/全能视频V FAST 图生视频0.25元_8S_2037520371183783937.json
 hash: b19a8ebb0494d4ce
 coverage: 0.75
-learned_at: 2026-10-11 03:48:39
+learned_at: 2026-10-15 22:47:59
 nodes: [LoadImage, RH_RhartVideoV31FastImageToVideo, SaveVideo, JjkText]
 patterns: []
 missing: []

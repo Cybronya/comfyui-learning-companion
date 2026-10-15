@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3板块：首尾帧工作流_2050777299921973250.json
 hash: 730df3debd082fac
-coverage: 0.534884
-learned_at: 2026-10-11 19:49:39
+coverage: 0.593023
+learned_at: 2026-10-15 22:45:14
 nodes: [CLIPTextEncode, Note, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, LTXAVTextEncoderLoader, PathchSageAttentionKJ, ModelPatchTorchSettings, Reroute, Reroute, easy showAnything, Reroute, Reroute, Reroute, LTXVSeparateAVLatent, LTXVAudioVAEDecode, SamplerCustomAdvanced, RandomNoise, CFGGuider, Reroute, Reroute, ManualSigmas, LTXVConcatAVLatent, LTXVLatentUpsampler, Reroute, LTXVAudioVAELoader, LTXVAudioVAELoader, CFGGuider, Reroute, KSamplerSelect, KSamplerSelect, ManualSigmas, LTXVChunkFeedForward, VHS_VideoCombine, VAEDecodeTiled, LTXVImgToVideoInplace, LatentUpscaleModelLoader, RandomNoise, VAEDecodeTiled, VHS_VideoCombine, LTXVAudioVAEDecode, SamplerCustomAdvanced, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, LTXVSeparateAVLatent, LTXVCropGuides, Reroute, Reroute, ImageResize+, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVConditioning, EmptyLTXVLatentVideo, CheckpointLoaderSimple, LTXVPreprocess, LTXVConcatAVLatent, LTXVAddGuide, easy int, easy int, LTXVEmptyLatentAudio, SimpleMath+, LTXVCropGuides, LTXVAddGuide, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, GetNode, GetNode, easy showAnything, easy showAnything, SetNode, SetNode, SetNode, LTXVPreprocess, ManualSigmas, LoadImage, CLIPTextEncode, LoadImage]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, easy int, easy int, ImageResize+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.3板块：首尾帧工作流_2050777299921973250.json
@@ -120,18 +119,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **53%**（46/86）
+覆盖率 **59%**（51/86）
 
-**有卡**：`CLIPTextEncode`、`LTXAVTextEncoderLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXVAudioVAELoader`、`KSamplerSelect`、`LTXVChunkFeedForward`、`VHS_VideoCombine`、`VAEDecodeTiled`、`LTXVImgToVideoInplace`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`CheckpointLoaderSimple`、`LTXVPreprocess`、`LTXVAddGuide`、`LTXVEmptyLatentAudio`、`LoadImage`
+**有卡**：`CLIPTextEncode`、`LTXAVTextEncoderLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`SamplerCustomAdvanced`、`RandomNoise`、`CFGGuider`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXVAudioVAELoader`、`KSamplerSelect`、`LTXVChunkFeedForward`、`VHS_VideoCombine`、`VAEDecodeTiled`、`LTXVImgToVideoInplace`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`ImageResize+`、`LoraLoaderModelOnly`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`CheckpointLoaderSimple`、`LTXVPreprocess`、`LTXVAddGuide`、`easy int`、`LTXVEmptyLatentAudio`、`SimpleMath+`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`
 
-**缺卡**（5）：`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`easy int`、`easy int`、`ImageResize+`
-
-**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `ImageResize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

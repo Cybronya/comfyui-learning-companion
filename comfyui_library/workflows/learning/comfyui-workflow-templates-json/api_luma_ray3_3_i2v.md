@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_luma_ray3_3_
 hash: 8094685a5642434b
 official: true
 coverage: 0.714286
-learned_at: 2026-10-10 22:44:52
+learned_at: 2026-10-15 22:24:50
 nodes: [LumaRay32ExtendVideoNode, MarkdownNote, PreviewAny, SaveVideo, LoadImage, SaveVideo, LumaRay32ImageToVideoNode]
 patterns: []
 missing: []
@@ -37,4 +37,4 @@ missing: []
 
 **有卡**：`LumaRay32ExtendVideoNode`、`SaveVideo`、`LoadImage`、`LumaRay32ImageToVideoNode`
 
-**用到的条目**：LoadImage、SaveVideo、LumaRay32ExtendVideoNode、LumaRay32ImageToVideoNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage
+**用到的条目**：LoadImage、SaveVideo、LumaRay32ExtendVideoNode、LumaRay32ImageToVideoNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node

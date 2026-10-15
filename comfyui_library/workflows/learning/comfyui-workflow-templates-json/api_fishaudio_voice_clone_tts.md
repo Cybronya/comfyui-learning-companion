@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_fishaudio_vo
 hash: 17a43918a67cd701
 official: true
 coverage: 0.857143
-learned_at: 2026-10-10 22:43:50
+learned_at: 2026-10-15 22:24:48
 nodes: [FishAudioTextToSpeech, SaveAudioAdvanced, FishAudioVoiceSelector, MarkdownNote, FishAudioInstantVoiceClone, LoadAudio, RecordAudio]
 patterns: []
 missing: []

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
 hash: 65808abc87c96d08
-coverage: 0.619048
-learned_at: 2026-10-10 20:59:11
+coverage: 0.761905
+learned_at: 2026-10-15 23:00:45
 nodes: [Reroute, WD14Tagger|pysssss, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, OpenposePreprocessor, ControlNetApply, PreviewImage, PreviewImage, workflow/cn-depth, PreviewImage, LoadImage, VAEDecode, KSampler, VAEEncode, workflow/cn-canny, ImageScale, SaveImage, SDXLPromptStyler, Note]
 patterns: [image_to_image, controlnet]
-missing: [WD14Tagger|pysssss, workflow/cn-canny, workflow/cn-depth]
+missing: []
 parameters: {"cfg": 6, "checkpoint": "dreamshaperXL_v21TurboDPMSDE.safetensors", "controlnet_strength": 0.8200000000000001, "denoise": 0.8, "sampler_name": "euler_ancestral", "scheduler": "normal", "seed": 570714527648738, "steps": 20}
-discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `workflow/cn-canny` 仅有 ControlNet 的通用知识，没有该节点自己的说明, 次要节点 `workflow/cn-depth` 仅有 ControlNet 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/文生图/SDXL.一个流秒换百种风格_1892971967237271553.json
@@ -21,23 +20,25 @@ discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（21 个）：
 - `Reroute`
 - `WD14Tagger|pysssss`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
-- `CheckpointLoaderSimple`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
 - `ControlNetLoader`
 - `OpenposePreprocessor`
-- `ControlNetApply`
+- `ControlNetApply` ★核心
 - `PreviewImage`
 - `PreviewImage`
 - `workflow/cn-depth`
 - `PreviewImage`
 - `LoadImage`
-- `VAEDecode`
-- `KSampler`
-- `VAEEncode`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `VAEEncode` ★核心
 - `workflow/cn-canny`
 - `ImageScale`
 - `SaveImage`
@@ -48,25 +49,19 @@ discoveries: [次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类�
 
 ## 关键参数
 
-- `cfg` = `6`
 - `checkpoint` = `dreamshaperXL_v21TurboDPMSDE.safetensors`
 - `controlnet_strength` = `0.8200000000000001`
-- `denoise` = `0.8`
-- `sampler_name` = `euler_ancestral`
-- `scheduler` = `normal`
 - `seed` = `570714527648738`
 - `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `normal`
+- `denoise` = `0.8`
 
 ## 知识
 
-覆盖率 **62%**（13/21）
+覆盖率 **76%**（16/21）
 
-**有卡**：`Reroute`、`WD14Tagger|pysssss`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`ControlNetLoader`、`OpenposePreprocessor`、`ControlNetApply`、`PreviewImage`、`workflow/cn-depth`、`LoadImage`
+**有卡**：`WD14Tagger|pysssss`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`ControlNetLoader`、`OpenposePreprocessor`、`ControlNetApply`、`workflow/cn-depth`、`LoadImage`、`VAEDecode`、`KSampler`、`VAEEncode`、`workflow/cn-canny`、`ImageScale`、`SaveImage`、`SDXLPromptStyler`
 
-**缺卡**（3）：`WD14Tagger|pysssss`、`workflow/cn-canny`、`workflow/cn-depth`
-
-## 学习发现
-
-- 次要节点 `WD14Tagger|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `workflow/cn-canny` 仅有 ControlNet 的通用知识，没有该节点自己的说明
-- 次要节点 `workflow/cn-depth` 仅有 ControlNet 的通用知识，没有该节点自己的说明
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、ControlNetLoader、OpenposePreprocessor、ControlNetApply

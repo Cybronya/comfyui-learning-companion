@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/qwen-image2.1   一键图片自动透明分层_2102141315575271426.json
 hash: 3cdf5051ceb97da2
-coverage: 0.55
-learned_at: 2026-10-10 20:48:12
+coverage: 0.8
+learned_at: 2026-10-15 22:25:36
 nodes: [easy forLoopEnd, SaveImage, CLIPLoader, VAELoader, TextEncodeQwenImage21, VAEDecode, easy forLoopEnd, KSampler, UNETLoader, PreviewAny, easy forLoopStart, Text Load Line From File, SaveImage, QwenImage21Cache, PreviewAny, PrimitiveStringMultiline, RHLLMChatNode, PreviewAny, LoadImage, CR Text]
 patterns: []
-missing: [CR Text, Text Load Line From File, easy forLoopEnd, easy forLoopEnd, easy forLoopStart]
+missing: []
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 52269850447356, "steps": 25}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/qwen-image2.1   一键图片自动透明分层_2102141315575271426.json
@@ -56,18 +55,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **55%**（11/20）
+覆盖率 **80%**（16/20）
 
-**有卡**：`SaveImage`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`VAEDecode`、`KSampler`、`UNETLoader`、`QwenImage21Cache`、`RHLLMChatNode`、`LoadImage`
-
-**缺卡**（5）：`CR Text`、`Text Load Line From File`、`easy forLoopEnd`、`easy forLoopEnd`、`easy forLoopStart`
+**有卡**：`easy forLoopEnd`、`SaveImage`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`VAEDecode`、`KSampler`、`UNETLoader`、`easy forLoopStart`、`Text Load Line From File`、`QwenImage21Cache`、`RHLLMChatNode`、`LoadImage`、`CR Text`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、LoadImage、QwenImage21Cache、UNETLoader
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Load Line From File` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/video_hunyuan_video_1.5_720p_t2v-混元Video1.5大模型——文生视频工作流_1994019108255629313.json
 hash: de670312552a4cb8
 coverage: 0.791667
-learned_at: 2026-10-11 02:57:39
+learned_at: 2026-10-15 22:47:32
 nodes: [DualCLIPLoader, VAELoader, VAEDecode, EasyCache, MarkdownNote, UNETLoader, MarkdownNote, CLIPTextEncode, VAEDecodeTiled, BasicScheduler, RandomNoise, KSamplerSelect, CFGGuider, ModelSamplingSD3, SamplerCustomAdvanced, EmptyHunyuanVideo15Latent, CLIPTextEncode, SaveVideo, Note, Note, AddLabel, CreateVideo, Note, RH_Translator]
 patterns: []
 missing: []

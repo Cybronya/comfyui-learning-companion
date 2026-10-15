@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json
 hash: 65244625e7815d35
-coverage: 0.416667
-learned_at: 2026-10-11 20:53:47
+coverage: 0.5
+learned_at: 2026-10-15 22:46:59
 nodes: [LoadImage, JjkText, RH_BytedanceSeedance25TokenImageToVideo, SaveVideo, CR Text, Note, Note, Note, Note, LoadImage, LoadImage, Note]
 patterns: []
-missing: [CR Text]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Seedance2.5 图生视频工作流+全节点注释_2085928936822890498.json
@@ -38,14 +37,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **42%**（5/12）
+覆盖率 **50%**（6/12）
 
-**有卡**：`LoadImage`、`RH_BytedanceSeedance25TokenImageToVideo`、`SaveVideo`
+**有卡**：`LoadImage`、`RH_BytedanceSeedance25TokenImageToVideo`、`SaveVideo`、`CR Text`
 
-**缺卡**（1）：`CR Text`
-
-**用到的条目**：LoadImage、RH_BytedanceSeedance25TokenImageToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Text、sampler_name 调整经验
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、RH_BytedanceSeedance25TokenImageToVideo、SaveVideo、CR Text、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-VACE-首尾帧_2072999665202929664.json
 hash: 644a09dd6c965cf4
-coverage: 0.909091
-learned_at: 2026-10-11 20:38:43
+coverage: 1
+learned_at: 2026-10-15 22:47:13
 nodes: [CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, ImageResizeKJ, INTConstant, GetImageSizeAndCount, ImageResizeKJ, WanVideoVACEStartToEndFrame, VAEDecode, TrimVideoLatent, KSamplerAdvanced, KSamplerAdvanced, easy int, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, WanVaceToVideo, String Literal, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, INTConstant, LoadImage, LoadImage, VHS_VideoCombine]
 patterns: []
-missing: [String Literal, easy int, easy int]
+missing: []
 parameters: {"cfg": 10, "denoise": "beta", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/Wan2.2-VACE-首尾帧_2072999665202929664.json
@@ -69,16 +68,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **91%**（30/33）
+覆盖率 **100%**（33/33）
 
-**有卡**：`CLIPLoader`、`CLIPTextEncode`、`CFGZeroStarAndInit`、`ImageResizeKJ`、`INTConstant`、`GetImageSizeAndCount`、`WanVideoVACEStartToEndFrame`、`VAEDecode`、`TrimVideoLatent`、`KSamplerAdvanced`、`WanVideoEnhanceAVideoKJ`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`WanVaceToVideo`、`VAELoader`、`UnetLoaderGGUF`、`LoadImage`、`VHS_VideoCombine`
-
-**缺卡**（3）：`String Literal`、`easy int`、`easy int`
+**有卡**：`CLIPLoader`、`CLIPTextEncode`、`CFGZeroStarAndInit`、`ImageResizeKJ`、`INTConstant`、`GetImageSizeAndCount`、`WanVideoVACEStartToEndFrame`、`VAEDecode`、`TrimVideoLatent`、`KSamplerAdvanced`、`easy int`、`WanVideoEnhanceAVideoKJ`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`WanVaceToVideo`、`String Literal`、`VAELoader`、`UnetLoaderGGUF`、`LoadImage`、`VHS_VideoCombine`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、CFGZeroStarAndInit
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识

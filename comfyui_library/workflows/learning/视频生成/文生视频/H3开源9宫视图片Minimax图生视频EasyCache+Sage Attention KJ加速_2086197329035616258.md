@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/H3开源9宫视图片Minimax图生视频EasyCache+Sage Attention KJ加速_2086197329035616258.json
 hash: c953a423d4e22571
 coverage: 0.868421
-learned_at: 2026-10-10 22:59:40
+learned_at: 2026-10-15 22:44:21
 nodes: [VAELoader, VAELoader, UNETLoader, CLIPLoader, RandomNoise, BasicGuider, KSamplerSelect, BasicScheduler, VAEDecode, VAEDecodeAudio, CreateVideo, LoadImage, LoadImage, MiniMaxH3ReferenceToVideo, ResolutionSelector, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, UNETLoader, CLIPLoader, solarL_SaveImagesToZip, VAELoader, CLIPTextEncode, CLIPTextEncode, JjkText, VAEDecode, EmptyLatentImage, Note, MarkdownNote, PrimitiveStringMultiline, EasyCache, PathchSageAttentionKJ, LoadImage, LoadImage, PrimitiveFloat, SamplerCustomAdvanced, SaveVideo, ComfyMathExpression]
 patterns: [text_to_image]
 missing: []

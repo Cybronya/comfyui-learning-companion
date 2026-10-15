@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/CG迷-千问Qwen Controlnet Union工作流_1960971357423112194.json
 hash: 7ec74052bb8e4207
-coverage: 0.842105
-learned_at: 2026-10-10 21:26:39
+coverage: 0.894737
+learned_at: 2026-10-15 22:26:13
 nodes: [EmptySD3LatentImage, VAEDecode, SaveImage, KSampler, ModelSamplingAuraFlow, CLIPTextEncode, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, SetUnionControlNetType, ControlNetApplySD3, PreviewImage, AIO_Preprocessor, ControlNetLoader, LoadImage, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, MarkdownNote]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1.5, "controlnet_strength": 0.75, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 569868966801842, "steps": 8}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/CG迷-千问Qwen Controlnet Union工作流_1960971357423112194.json
@@ -22,44 +22,46 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 结构
 
+**生成流程**：Model → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（19 个）：
 - `EmptySD3LatentImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
-- `KSampler`
+- `KSampler` ★核心
 - `ModelSamplingAuraFlow`
-- `CLIPTextEncode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
 - `LayerUtility: ImageScaleByAspectRatio V2`
 - `SetUnionControlNetType`
-- `ControlNetApplySD3`
+- `ControlNetApplySD3` ★核心
 - `PreviewImage`
 - `AIO_Preprocessor`
 - `ControlNetLoader`
 - `LoadImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `MarkdownNote`
 
 ## 关键参数
 
-- `cfg` = `1.5`
-- `controlnet_strength` = `0.75`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `569868966801842`
 - `steps` = `8`
+- `cfg` = `1.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `controlnet_strength` = `0.75`
 
 ## 知识
 
-覆盖率 **84%**（16/19）
+覆盖率 **89%**（17/19）
 
-**有卡**：`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`KSampler`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`SetUnionControlNetType`、`ControlNetApplySD3`、`PreviewImage`、`AIO_Preprocessor`、`ControlNetLoader`、`LoadImage`、`UNETLoader`、`CLIPLoader`
+**有卡**：`EmptySD3LatentImage`、`VAEDecode`、`SaveImage`、`KSampler`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`SetUnionControlNetType`、`ControlNetApplySD3`、`AIO_Preprocessor`、`ControlNetLoader`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`
 
-**缺卡**（1）：`LayerUtility: ImageScaleByAspectRatio V2`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
 
 ## 参数体检
 
@@ -68,5 +70,4 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

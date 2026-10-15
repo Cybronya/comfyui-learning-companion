@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3龙虾术：把”白狐酱板鸭_视频生成器装进OpenClaw！_2034812167572164610.json
 hash: deb222c4e1cd3b21
 coverage: 0.770492
-learned_at: 2026-10-11 03:48:35
+learned_at: 2026-10-15 22:44:43
 nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, LTXVAudioVAELoader, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LoraLoaderModelOnly, ResizeImagesByLongerEdge, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVPreprocess, ResizeImageMaskNode, KSamplerSelect, ComfyMathExpression, Reroute, ComfyMathExpression, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVAudioVAEDecode, ComfyMathExpression, CLIPTextEncode, LTXVConditioning, LTXVEmptyLatentAudio, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CreateVideo, CFGGuider, VAEDecodeTiled, CheckpointLoaderSimple, LTXVConcatAVLatent, SaveVideo, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, CLIPTextEncode, PrimitiveBoolean, string_util_StrConcat, PrimitiveStringMultiline, string_util_StrConcat, string_util_StrConcat, PrimitiveStringMultiline, string_util_StrConcat, string_util_StrConcat, string_util_StrConcat, StringReplace, PrimitiveStringMultiline, PrimitiveStringMultiline, LoadImage, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PreviewAny, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveStringMultiline]
 patterns: []
 missing: []

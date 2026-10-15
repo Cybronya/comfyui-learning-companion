@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.5 图生视频_2096218350560038913.json
 hash: da7b9c685e629458
 coverage: 1
-learned_at: 2026-10-11 21:41:52
+learned_at: 2026-10-15 22:46:59
 nodes: [SaveVideo, LoadImage, LoadImage, RH_BytedanceSeedance25TokenImageToVideo]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`RH_BytedanceSeedance25TokenImageToVideo`
 
-**用到的条目**：LoadImage、RH_BytedanceSeedance25TokenImageToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、sampler_name 调整经验、steps 调整经验
+**用到的条目**：LoadImage、RH_BytedanceSeedance25TokenImageToVideo、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、Seed、Seed、Image Load

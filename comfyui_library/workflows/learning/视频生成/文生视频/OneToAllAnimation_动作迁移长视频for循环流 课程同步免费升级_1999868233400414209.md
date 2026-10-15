@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/OneToAllAnimation_动作迁移长视频for循环流 课程同步免费升级_1999868233400414209.json
 hash: 8f670d2e2b244a80
-coverage: 0.4625
-learned_at: 2026-10-10 23:04:49
+coverage: 0.5
+learned_at: 2026-10-15 22:46:50
 nodes: [LoadWanVideoT5TextEncoder, WanVideoTextEncode, WanVideoSampler, WanVideoDecode, WanVideoVAELoader, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoAddOneToAllPoseEmbeds, WanVideoEmptyEmbeds, WanVideoAddOneToAllReferenceEmbeds, ImageResizeKJv2, OnnxDetectionModelLoader, ImageResizeKJv2, VHS_VideoCombine, VHS_VideoCombine, PoseDetectionOneToAllAnimation, PreviewImage, INTConstant, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetImageRangeFromBatch, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, WanVideoScheduler, GetNode, FloatConstant, SetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoAddOneToAllExtendEmbeds, WanVideoDecode, ImageBatchExtendWithOverlap, WanVideoAddOneToAllPoseEmbeds, WanVideoSampler, WanVideoEncode, ImageBatchExtendWithOverlap, GetImageSizeAndCount, easy forLoopStart, easy forLoopEnd, SetNode, GetNode, SetNode, INTConstant, GetNode, GetNode, LoadImage, INTConstant, INTConstant, SetNode, WanVideoBlockSwap, WanVideoModelLoader, WanVideoLoraSelect, MathExpression|pysssss, VHS_LoadVideo]
 patterns: []
-missing: [MathExpression|pysssss, easy forLoopEnd, easy forLoopStart]
-discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识, 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/OneToAllAnimation_动作迁移长视频for循环流 课程同步免费升级_1999868233400414209.json
@@ -106,16 +105,8 @@ discoveries: [次要节点 `MathExpression|pysssss` 知识库中没有该节点�
 
 ## 知识
 
-覆盖率 **46%**（37/80）
+覆盖率 **50%**（40/80）
 
-**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoAddOneToAllPoseEmbeds`、`WanVideoEmptyEmbeds`、`WanVideoAddOneToAllReferenceEmbeds`、`ImageResizeKJv2`、`OnnxDetectionModelLoader`、`VHS_VideoCombine`、`PoseDetectionOneToAllAnimation`、`INTConstant`、`GetImageRangeFromBatch`、`WanVideoScheduler`、`FloatConstant`、`WanVideoAddOneToAllExtendEmbeds`、`ImageBatchExtendWithOverlap`、`WanVideoEncode`、`GetImageSizeAndCount`、`LoadImage`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`VHS_LoadVideo`
-
-**缺卡**（3）：`MathExpression|pysssss`、`easy forLoopEnd`、`easy forLoopStart`
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoAddOneToAllPoseEmbeds`、`WanVideoEmptyEmbeds`、`WanVideoAddOneToAllReferenceEmbeds`、`ImageResizeKJv2`、`OnnxDetectionModelLoader`、`VHS_VideoCombine`、`PoseDetectionOneToAllAnimation`、`INTConstant`、`GetImageRangeFromBatch`、`WanVideoScheduler`、`FloatConstant`、`WanVideoAddOneToAllExtendEmbeds`、`ImageBatchExtendWithOverlap`、`WanVideoEncode`、`GetImageSizeAndCount`、`easy forLoopStart`、`easy forLoopEnd`、`LoadImage`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`MathExpression|pysssss`、`VHS_LoadVideo`
 
 **用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoEncode、WanVideoLoraSelect
-
-## 学习发现
-
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopEnd` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy forLoopStart` 知识库中没有该节点类型的任何知识

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux文生图(写实场景+人像+redux+ipadapter+controlnet)_1911021282992029698.json
 hash: b53ffd582ac3024b
 coverage: 0.857143
-learned_at: 2026-10-10 20:58:37
+learned_at: 2026-10-15 22:26:27
 nodes: [IPAdapterFluxLoader, StyleModelLoader, CLIPVisionLoader, LoadImage, SaveImage, TextCombinerTwo, JjkText, RH_Prompter, JjkText, ShowText|pysssss, CLIPTextEncode, ReduxAdvanced, ApplyIPAdapterFlux, KSamplerSelect, ModelSamplingFlux, RandomNoise, EmptyLatentImage, SamplerCustomAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, BasicGuider, FluxGuidance, SetUnionControlNetType, DepthAnythingV2Preprocessor, DualCLIPLoader, Anything Everywhere, UNETLoader, Anything Everywhere, Anything Everywhere, VAEDecode, ControlNetLoader, ControlNetLoader, ControlNetApplyAdvanced, SetUnionControlNetType, OpenposePreprocessor, LoadImage, PyraCannyPreprocessor, SetUnionControlNetType, ControlNetApplyAdvanced, ControlNetLoader, ControlNetApplyAdvanced, Fast Groups Bypasser (rgthree), Int, Int, Int, VAELoader, BasicScheduler]
 patterns: []
 missing: []
@@ -20,6 +20,8 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.6000000000000001, "height
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Control → Sampling → Decode → Output → Other
+
 **节点**（49 个）：
 - `IPAdapterFluxLoader`
 - `StyleModelLoader`
@@ -31,39 +33,39 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.6000000000000001, "height
 - `RH_Prompter`
 - `JjkText`
 - `ShowText|pysssss`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `ReduxAdvanced`
 - `ApplyIPAdapterFlux`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `ModelSamplingFlux`
 - `RandomNoise`
-- `EmptyLatentImage`
-- `SamplerCustomAdvanced`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
-- `LoraLoaderModelOnly`
+- `EmptyLatentImage` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
 - `BasicGuider`
 - `FluxGuidance`
 - `SetUnionControlNetType`
 - `DepthAnythingV2Preprocessor`
 - `DualCLIPLoader`
 - `Anything Everywhere`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `Anything Everywhere`
 - `Anything Everywhere`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `ControlNetLoader`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced`
+- `ControlNetApplyAdvanced` ★核心
 - `SetUnionControlNetType`
 - `OpenposePreprocessor`
 - `LoadImage`
 - `PyraCannyPreprocessor`
 - `SetUnionControlNetType`
-- `ControlNetApplyAdvanced`
+- `ControlNetApplyAdvanced` ★核心
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced`
+- `ControlNetApplyAdvanced` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `Int`
 - `Int`
@@ -73,13 +75,15 @@ parameters: {"batch_size": 1, "controlnet_strength": 0.6000000000000001, "height
 
 ## 关键参数
 
+- `width` = `952`
+- `height` = `1280`
 - `batch_size` = `1`
 - `controlnet_strength` = `0.6000000000000001`
-- `height` = `1280`
-- `width` = `952`
 
 ## 知识
 
 覆盖率 **86%**（42/49）
 
-**有卡**：`IPAdapterFluxLoader`、`StyleModelLoader`、`CLIPVisionLoader`、`LoadImage`、`SaveImage`、`TextCombinerTwo`、`JjkText`、`RH_Prompter`、`ShowText|pysssss`、`CLIPTextEncode`、`ReduxAdvanced`、`ApplyIPAdapterFlux`、`KSamplerSelect`、`ModelSamplingFlux`、`RandomNoise`、`EmptyLatentImage`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`BasicGuider`、`FluxGuidance`、`SetUnionControlNetType`、`DepthAnythingV2Preprocessor`、`DualCLIPLoader`、`Anything Everywhere`、`UNETLoader`、`VAEDecode`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`OpenposePreprocessor`、`PyraCannyPreprocessor`
+**有卡**：`IPAdapterFluxLoader`、`StyleModelLoader`、`CLIPVisionLoader`、`LoadImage`、`SaveImage`、`TextCombinerTwo`、`RH_Prompter`、`CLIPTextEncode`、`ReduxAdvanced`、`ApplyIPAdapterFlux`、`KSamplerSelect`、`ModelSamplingFlux`、`RandomNoise`、`EmptyLatentImage`、`SamplerCustomAdvanced`、`LoraLoaderModelOnly`、`BasicGuider`、`FluxGuidance`、`SetUnionControlNetType`、`DepthAnythingV2Preprocessor`、`DualCLIPLoader`、`UNETLoader`、`VAEDecode`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`OpenposePreprocessor`、`PyraCannyPreprocessor`、`Int`、`VAELoader`、`BasicScheduler`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、EmptyLatentImage、LoadImage、ControlNetApplyAdvanced

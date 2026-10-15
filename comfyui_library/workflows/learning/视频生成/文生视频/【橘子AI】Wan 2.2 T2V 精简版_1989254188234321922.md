@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【橘子AI】Wan 2.2 T2V 精简版_1989254188234321922.json
 hash: b209482ae4cf3b9c
 coverage: 1
-learned_at: 2026-10-11 02:57:39
+learned_at: 2026-10-15 22:47:42
 nodes: [CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, UNETLoader, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, CLIPTextEncode, EmptyHunyuanLatentVideo, LoraLoaderModelOnly, VAEDecode, VHS_VideoCombine]
 patterns: []
 missing: []

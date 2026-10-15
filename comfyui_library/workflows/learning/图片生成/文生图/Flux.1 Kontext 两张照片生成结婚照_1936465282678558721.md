@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
 hash: 7a8106a6eca632ed
-coverage: 0.777778
-learned_at: 2026-10-10 20:58:35
+coverage: 0.888889
+learned_at: 2026-10-15 22:26:25
 nodes: [RH_ComfyFluxKontext, PreviewImage, LoadImage, LoadImage, SaveImage, Image Stitch, Text, Bjornulf_ShowStringText, ArgosTranslateTextNode]
 patterns: []
-missing: [Image Stitch]
-discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json
@@ -19,6 +18,8 @@ discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/Flux.1 Kontext 两张照片生成结婚照_1936465282678558721.json`
 
 ## 结构
+
+**生成流程**：Process → Output → Other
 
 **节点**（9 个）：
 - `RH_ComfyFluxKontext`
@@ -33,12 +34,8 @@ discoveries: [次要节点 `Image Stitch` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **78%**（7/9）
+覆盖率 **89%**（8/9）
 
-**有卡**：`RH_ComfyFluxKontext`、`PreviewImage`、`LoadImage`、`SaveImage`、`Image Stitch`、`Text`
+**有卡**：`RH_ComfyFluxKontext`、`LoadImage`、`SaveImage`、`Image Stitch`、`Text`、`Bjornulf_ShowStringText`、`ArgosTranslateTextNode`
 
-**缺卡**（1）：`Image Stitch`
-
-## 学习发现
-
-- 次要节点 `Image Stitch` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、RH_ComfyFluxKontext、SaveImage、Text、ArgosTranslateTextNode、Bjornulf_ShowStringText、Image Stitch、Image Stitch

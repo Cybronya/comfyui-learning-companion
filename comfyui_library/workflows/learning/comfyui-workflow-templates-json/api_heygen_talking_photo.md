@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_heygen_talki
 hash: 64d9c58f0c254d14
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:21
+learned_at: 2026-10-15 22:24:49
 nodes: [HeyGenTalkingPhotoNode, LoadImage, SaveVideo]
 patterns: []
 missing: []
@@ -33,4 +33,4 @@ missing: []
 
 **有卡**：`HeyGenTalkingPhotoNode`、`LoadImage`、`SaveVideo`
 
-**用到的条目**：LoadImage、SaveVideo、HeyGenTalkingPhotoNode、sd15-t2i-basic、sd15-t2i-lora、node、ki、SaveImage
+**用到的条目**：LoadImage、SaveVideo、HeyGenTalkingPhotoNode、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、ki

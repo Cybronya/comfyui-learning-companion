@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3图生视频_2071785997519646721.json
 hash: 66308d7bae572889
-coverage: 0.818182
-learned_at: 2026-10-11 20:21:26
+coverage: 0.878788
+learned_at: 2026-10-15 22:45:07
 nodes: [PrimitiveInt, PrimitiveInt, PrimitiveInt, UNETLoader, VAELoader, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, SimpleMath+, ModelSamplingSD3, ImageResizeKJv2, BasicScheduler, EmptyLTXVLatentVideo, LTXVPreprocess, CLIPTextEncode, ConditioningZeroOut, VisualizeSigmasKJ, LTX2_NAG, CLIPTextEncode, KSamplerSelect, LTXVImgToVideoInplaceKJ, LTX2SamplingPreviewOverride, LTXVConcatAVLatent, SamplerCustom, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecode, LTXVEmptyLatentAudio, LTXVConditioning, VHS_VideoCombine, MarkdownNote, CR Text, LoadImage]
 patterns: []
-missing: [CR Text, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3图生视频_2071785997519646721.json
@@ -66,15 +65,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **82%**（27/33）
+覆盖率 **88%**（29/33）
 
-**有卡**：`UNETLoader`、`VAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`ModelSamplingSD3`、`ImageResizeKJv2`、`BasicScheduler`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`CLIPTextEncode`、`ConditioningZeroOut`、`VisualizeSigmasKJ`、`LTX2_NAG`、`KSamplerSelect`、`LTXVImgToVideoInplaceKJ`、`LTX2SamplingPreviewOverride`、`LTXVConcatAVLatent`、`SamplerCustom`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`VHS_VideoCombine`、`LoadImage`
-
-**缺卡**（2）：`CR Text`、`SimpleMath+`
+**有卡**：`UNETLoader`、`VAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`SimpleMath+`、`ModelSamplingSD3`、`ImageResizeKJv2`、`BasicScheduler`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`CLIPTextEncode`、`ConditioningZeroOut`、`VisualizeSigmasKJ`、`LTX2_NAG`、`KSamplerSelect`、`LTXVImgToVideoInplaceKJ`、`LTX2SamplingPreviewOverride`、`LTXVConcatAVLatent`、`SamplerCustom`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`VHS_VideoCombine`、`CR Text`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

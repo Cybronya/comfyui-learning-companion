@@ -7,13 +7,12 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/sd3.5_large_depth.json
 hash: 66e7f349efad7392
 official: true
-coverage: 0.705882
-learned_at: 2026-10-10 22:48:51
+coverage: 0.764706
+learned_at: 2026-10-15 22:24:55
 nodes: [ControlNetLoader, ImageScaleToTotalPixels, ConditioningZeroOut, CheckpointLoaderSimple, LoadImage, CLIPTextEncode, 6b0ed7ac-f476-44c9-9dad-b3f23ef985f8, KSampler, VAEDecode, VAEEncode, ControlNetApplyAdvanced, EmptySD3LatentImage, SaveImage, MarkdownNote, PreviewImage, MarkdownNote, MarkdownNote]
 patterns: [image_to_image]
-missing: [6b0ed7ac-f476-44c9-9dad-b3f23ef985f8]
+missing: []
 parameters: {"cfg": 8, "checkpoint": "sd3.5_large_fp8_scaled.safetensors", "controlnet_strength": 0.7000000000000002, "denoise": 1, "sampler_name": "euler", "scheduler": "normal", "seed": 1020711502084247, "steps": 20}
-discoveries: [次要节点 `6b0ed7ac-f476-44c9-9dad-b3f23ef985f8` 知识库中没有该节点类型的任何知识]
 ---
 
 # comfyui-workflow-templates-json/sd3.5_large_depth.json
@@ -58,14 +57,8 @@ discoveries: [次要节点 `6b0ed7ac-f476-44c9-9dad-b3f23ef985f8` 知识库中�
 
 ## 知识
 
-覆盖率 **71%**（12/17）
+覆盖率 **76%**（13/17）
 
-**有卡**：`ControlNetLoader`、`ImageScaleToTotalPixels`、`ConditioningZeroOut`、`CheckpointLoaderSimple`、`LoadImage`、`CLIPTextEncode`、`KSampler`、`VAEDecode`、`VAEEncode`、`ControlNetApplyAdvanced`、`EmptySD3LatentImage`、`SaveImage`
-
-**缺卡**（1）：`6b0ed7ac-f476-44c9-9dad-b3f23ef985f8`
+**有卡**：`ControlNetLoader`、`ImageScaleToTotalPixels`、`ConditioningZeroOut`、`CheckpointLoaderSimple`、`LoadImage`、`CLIPTextEncode`、`6b0ed7ac-f476-44c9-9dad-b3f23ef985f8`、`KSampler`、`VAEDecode`、`VAEEncode`、`ControlNetApplyAdvanced`、`EmptySD3LatentImage`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、ConditioningZeroOut、LoadImage、ControlNetApplyAdvanced、ControlNetLoader
-
-## 学习发现
-
-- 次要节点 `6b0ed7ac-f476-44c9-9dad-b3f23ef985f8` 知识库中没有该节点类型的任何知识

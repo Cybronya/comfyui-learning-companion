@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json
 hash: 7a5bcf4a479fc1b7
-coverage: 0.842105
-learned_at: 2026-10-10 20:48:07
+coverage: 0.894737
+learned_at: 2026-10-15 22:25:14
 nodes: [CLIPLoader, TextGenerateLTX2Prompt, UNETLoader, QwenImage21Cache, LoadImage, VAEDecode, KSampler, LoadImage, LoadImage, SaveImage, easy imageConcat, ResolutionSelector, JjkText, TextEncodeQwenImage21, ComfySwitchNode, CLIPLoader, VAELoader, EmptyLatentImage, BatchImagesNode]
 patterns: []
-missing: [easy imageConcat]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 404510389590621, "steps": 50, "width": 1024}
-discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1多图编辑_2102401818163765249.json
@@ -58,14 +57,8 @@ discoveries: [次要节点 `easy imageConcat` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **84%**（16/19）
+覆盖率 **89%**（17/19）
 
-**有卡**：`CLIPLoader`、`TextGenerateLTX2Prompt`、`UNETLoader`、`QwenImage21Cache`、`LoadImage`、`VAEDecode`、`KSampler`、`SaveImage`、`ResolutionSelector`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`BatchImagesNode`
-
-**缺卡**（1）：`easy imageConcat`
+**有卡**：`CLIPLoader`、`TextGenerateLTX2Prompt`、`UNETLoader`、`QwenImage21Cache`、`LoadImage`、`VAEDecode`、`KSampler`、`SaveImage`、`easy imageConcat`、`ResolutionSelector`、`TextEncodeQwenImage21`、`VAELoader`、`EmptyLatentImage`、`BatchImagesNode`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
-
-## 学习发现
-
-- 次要节点 `easy imageConcat` 知识库中没有该节点类型的任何知识

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json
 hash: 792d5aa15673c278
 official: true
-coverage: 0.6
-learned_at: 2026-10-10 22:48:17
+coverage: 0.8
+learned_at: 2026-10-15 22:24:54
 nodes: [LoadImage, ImageCompare, SaveImageAdvanced, 790255fa-100b-4dda-9ab5-e5e1731951db, MarkdownNote]
 patterns: []
-missing: [790255fa-100b-4dda-9ab5-e5e1731951db]
-discoveries: [次要节点 `790255fa-100b-4dda-9ab5-e5e1731951db` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_marigold_v2_albedo_estimation.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `790255fa-100b-4dda-9ab5-e5e1731951db` 知识库中�
 
 ## 知识
 
-覆盖率 **60%**（3/5）
+覆盖率 **80%**（4/5）
 
-**有卡**：`LoadImage`、`ImageCompare`、`SaveImageAdvanced`
+**有卡**：`LoadImage`、`ImageCompare`、`SaveImageAdvanced`、`790255fa-100b-4dda-9ab5-e5e1731951db`
 
-**缺卡**（1）：`790255fa-100b-4dda-9ab5-e5e1731951db`
-
-**用到的条目**：LoadImage、SaveImageAdvanced、ImageCompare、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Compare、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `790255fa-100b-4dda-9ab5-e5e1731951db` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImageAdvanced、ImageCompare、790255fa-100b-4dda-9ab5-e5e1731951db、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Compare

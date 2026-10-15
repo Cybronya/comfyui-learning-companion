@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_depth_anything3_video_depth_estimation.json
 hash: 1dcbb8b960815159
 official: true
-coverage: 0.428571
-learned_at: 2026-10-10 22:49:43
+coverage: 0.571429
+learned_at: 2026-10-15 22:24:57
 nodes: [605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3, MarkdownNote, MarkdownNote, LoadVideo, PreviewImage, CreateVideo, SaveVideo]
 patterns: []
-missing: [605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3]
-discoveries: [次要节点 `605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/utility_depth_anything3_video_depth_estimation.json
@@ -34,14 +33,8 @@ discoveries: [次要节点 `605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3` 知识库中�
 
 ## 知识
 
-覆盖率 **43%**（3/7）
+覆盖率 **57%**（4/7）
 
-**有卡**：`LoadVideo`、`CreateVideo`、`SaveVideo`
+**有卡**：`605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3`、`LoadVideo`、`CreateVideo`、`SaveVideo`
 
-**缺卡**（1）：`605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3`
-
-**用到的条目**：SaveVideo、CreateVideo、LoadVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
-
-## 学习发现
-
-- 次要节点 `605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、CreateVideo、LoadVideo、605cfcbf-c05b-4cd4-8b8f-9d7d989ab5d3、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any

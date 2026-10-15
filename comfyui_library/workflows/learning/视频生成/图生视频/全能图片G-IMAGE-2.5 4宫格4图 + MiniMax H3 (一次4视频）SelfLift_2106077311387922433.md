@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/全能图片G-IMAGE-2.5 4宫格4图 + MiniMax H3 (一次4视频）SelfLift_2106077311387922433.json
 hash: 6440c38e2efdff71
-coverage: 0.759036
-learned_at: 2026-10-10 22:54:49
+coverage: 0.855422
+learned_at: 2026-10-15 22:43:01
 nodes: [PixaromaGetNode, PixaromaGetNode, Reroute, Reroute, ModelAttentionBackend, MiniMaxLowVRAMAttention, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, PixaromaSetNode, PixaromaGetNode, ComfyMathExpression, Reroute, Reroute, PixaromaGetNode, PixaromaGetNode, Reroute, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaSetNode, ComfyMathExpression, Reroute, Reroute, ResolutionSelector, ComfyMathExpression, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, CR Text Concatenate, easy showAnything, PrimitiveFloat, PixaromaSetNode, PrimitiveNode, MarkdownNote, PixaromaGroupSwitch, RHLLMChatNode, ModelPreviewOverrideKJ, RHLLMChatNode, ModelPreviewOverrideKJ, ModelPreviewOverrideKJ, Reroute, Reroute, Reroute, Reroute, CR Prompt Text, ResolutionSelector, RHLLMChatNode, ModelPreviewOverrideKJ, RHLLMChatNode, LoadImage, easy imageSplitGrid, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, PrimitiveNode, PixaromaResolution, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, PixaromaLabel, LoadImage, LoadImage, MarkdownNote, ResolutionSelector, ComfyMathExpression, MiniMaxH3ReferenceToVideo, MiniMaxH3ReferenceToVideo, Reroute, RHLLMChatNode, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, VAELoader, VAELoader, CLIPLoader, LoraLoaderModelOnly, UNETLoader, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, VHS_VideoCombine, VHS_VideoCombine, ExtendIntermediateSigmas, MiniMaxH3ReferenceToVideo, SaveImage, ExtendIntermediateSigmas, ExtendIntermediateSigmas, MiniMaxH3ReferenceToVideo, ConditioningZeroOut, KSamplerSelect, BasicScheduler, VAEDecode, VAEDecodeAudio, SelfLiftAvatarH3Sampler, PixaromaSetNode, PixaromaSetNode, VAEDecodeAudio, VAEDecode, ConditioningZeroOut, KSamplerSelect, BasicScheduler, SelfLiftAvatarH3Sampler, PixaromaSetNode, BasicScheduler, KSamplerSelect, ConditioningZeroOut, VAEDecode, VAEDecodeAudio, SelfLiftAvatarH3Sampler, PixaromaSetNode, PixaromaSetNode, ExtendIntermediateSigmas, BasicScheduler, KSamplerSelect, ConditioningZeroOut, VAEDecodeAudio, VAEDecode, SelfLiftAvatarH3Sampler, PixaromaSetNode, PixaromaSetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, VHS_VideoCombine, PixaromaGetNode, VHS_VideoCombine, PixaromaGetNode, VHS_VideoCombine, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PixaromaLabel, PixaromaLabel, Note, PixaromaLabel, Text, Text, Text, Text, ResolutionSelector, PrimitiveFloat, VHS_VideoCombine, RH_RhartImageG25OfficialTokenSunburstEdit, PixaromaGetNode, PixaromaGetNode, VHS_VideoCombine, VHS_VideoCombine, RHSettingsNode, CR Prompt Text, CR Text, CR Text, CR Text, CR Text, PixaromaSetNode]
 patterns: []
-missing: [CR Text, CR Text, CR Text, CR Text, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageSplitGrid, CR Prompt Text, CR Prompt Text]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSplitGrid` 知识库中没有该节点类型的任何知识, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/图生视频/全能图片G-IMAGE-2.5 4宫格4图 + MiniMax H3 (一次4视频）SelfLift_2106077311387922433.json
@@ -192,29 +191,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **76%**（126/166）
+覆盖率 **86%**（142/166）
 
-**有卡**：`PixaromaGetNode`、`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`MiniMaxChunkFeedForward`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`PixaromaSetNode`、`ComfyMathExpression`、`ResolutionSelector`、`ImageFromBatch`、`PixaromaGroupSwitch`、`RHLLMChatNode`、`ModelPreviewOverrideKJ`、`LoadImage`、`PixaromaResolution`、`PixaromaLabel`、`MiniMaxH3ReferenceToVideo`、`ImageResizeKJv2`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`、`VHS_VideoCombine`、`ExtendIntermediateSigmas`、`SaveImage`、`ConditioningZeroOut`、`KSamplerSelect`、`BasicScheduler`、`VAEDecode`、`VAEDecodeAudio`、`SelfLiftAvatarH3Sampler`、`Text`、`RH_RhartImageG25OfficialTokenSunburstEdit`、`RHSettingsNode`
-
-**缺卡**（16）：`CR Text`、`CR Text`、`CR Text`、`CR Text`、`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`CR Text Concatenate`、`easy imageListToImageBatch`、`easy imageListToImageBatch`、`easy imageListToImageBatch`、`easy imageListToImageBatch`、`easy imageSplitGrid`、`CR Prompt Text`、`CR Prompt Text`
+**有卡**：`PixaromaGetNode`、`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`MiniMaxChunkFeedForward`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`PixaromaSetNode`、`ComfyMathExpression`、`ResolutionSelector`、`easy imageListToImageBatch`、`ImageFromBatch`、`CR Text Concatenate`、`PixaromaGroupSwitch`、`RHLLMChatNode`、`ModelPreviewOverrideKJ`、`CR Prompt Text`、`LoadImage`、`easy imageSplitGrid`、`PixaromaResolution`、`PixaromaLabel`、`MiniMaxH3ReferenceToVideo`、`ImageResizeKJv2`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`UNETLoader`、`VHS_VideoCombine`、`ExtendIntermediateSigmas`、`SaveImage`、`ConditioningZeroOut`、`KSamplerSelect`、`BasicScheduler`、`VAEDecode`、`VAEDecodeAudio`、`SelfLiftAvatarH3Sampler`、`Text`、`RH_RhartImageG25OfficialTokenSunburstEdit`、`RHSettingsNode`、`CR Text`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ConditioningZeroOut、ResolutionSelector、LoadImage、UNETLoader
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text Concatenate` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageListToImageBatch` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSplitGrid` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_5_i2v.json
 hash: 03b136ba0ad752c1
 official: true
-coverage: 0.375
-learned_at: 2026-10-10 22:50:20
+coverage: 0.5
+learned_at: 2026-10-15 22:24:57
 nodes: [LoadImage, SaveVideo, 6e397a2b-68f7-48f6-8930-f3a5491a163c, MarkdownNote, MarkdownNote, MarkdownNote, ResolutionSelector, MarkdownNote]
 patterns: []
-missing: [6e397a2b-68f7-48f6-8930-f3a5491a163c]
-discoveries: [次要节点 `6e397a2b-68f7-48f6-8930-f3a5491a163c` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_5_i2v.json
@@ -35,14 +34,8 @@ discoveries: [次要节点 `6e397a2b-68f7-48f6-8930-f3a5491a163c` 知识库中�
 
 ## 知识
 
-覆盖率 **38%**（3/8）
+覆盖率 **50%**（4/8）
 
-**有卡**：`LoadImage`、`SaveVideo`、`ResolutionSelector`
+**有卡**：`LoadImage`、`SaveVideo`、`6e397a2b-68f7-48f6-8930-f3a5491a163c`、`ResolutionSelector`
 
-**缺卡**（1）：`6e397a2b-68f7-48f6-8930-f3a5491a163c`
-
-**用到的条目**：ResolutionSelector、LoadImage、SaveVideo、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验
-
-## 学习发现
-
-- 次要节点 `6e397a2b-68f7-48f6-8930-f3a5491a163c` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、LoadImage、SaveVideo、6e397a2b-68f7-48f6-8930-f3a5491a163c、sd15-t2i-basic、sd15-t2i-lora、Image Save、EmptyLatentImage

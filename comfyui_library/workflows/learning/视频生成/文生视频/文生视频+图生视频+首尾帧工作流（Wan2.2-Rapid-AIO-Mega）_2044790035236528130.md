@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2044790035236528130.json
 hash: 7a68c922a2b20f19
-coverage: 0.761905
-learned_at: 2026-10-11 19:49:49
+coverage: 0.809524
+learned_at: 2026-10-15 22:48:41
 nodes: [SimpleMath+, CLIPTextEncode, INTConstant, INTConstant, CM_IntToFloat, INTConstant, CLIPTextEncode, INTConstant, Note, WanVaceToVideo, PrimitiveInt, VAEDecode, CheckpointLoaderSimple, ModelSamplingSD3, KSampler, VHS_VideoCombine, LoadImage, LoadImage, WanVideoVACEStartToEndFrame, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
 patterns: []
-missing: [SimpleMath+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v12.safetensors", "denoise": 1, "sampler_name": "ipndm", "scheduler": "beta", "seed": 6456545463455, "steps": 4}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/文生视频+图生视频+首尾帧工作流（Wan2.2-Rapid-AIO-Mega）_2044790035236528130.json
@@ -59,11 +59,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **76%**（16/21）
+覆盖率 **81%**（17/21）
 
-**有卡**：`CLIPTextEncode`、`INTConstant`、`CM_IntToFloat`、`WanVaceToVideo`、`VAEDecode`、`CheckpointLoaderSimple`、`ModelSamplingSD3`、`KSampler`、`VHS_VideoCombine`、`LoadImage`、`WanVideoVACEStartToEndFrame`
-
-**缺卡**（1）：`SimpleMath+`
+**有卡**：`SimpleMath+`、`CLIPTextEncode`、`INTConstant`、`CM_IntToFloat`、`WanVaceToVideo`、`VAEDecode`、`CheckpointLoaderSimple`、`ModelSamplingSD3`、`KSampler`、`VHS_VideoCombine`、`LoadImage`、`WanVideoVACEStartToEndFrame`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CM_IntToFloat、INTConstant、ModelSamplingSD3
 
@@ -74,5 +72,4 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.3换头工作流_2043178251316633601.json
 hash: e5f6079a8afbccd2
-coverage: 0.684783
-learned_at: 2026-10-11 19:49:44
+coverage: 0.706522
+learned_at: 2026-10-15 22:47:23
 nodes: [VAELoaderKJ, SetNode, VAELoaderKJ, SetNode, DualCLIPLoader, SetNode, LatentUpscaleModelLoader, SetNode, KSamplerSelect, RandomNoise, LTXVConcatAVLatent, SetLatentNoiseMask, GetNode, KSamplerSelect, RandomNoise, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveFloat, SimpleMath+, SetNode, SetNode, SetNode, CLIPTextEncode, easy showAnything, SolidMask, BasicScheduler, GetNode, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVCropGuides, BasicScheduler, GetNode, GetNode, GetNode, LTXVConditioning, LTXVAddGuideMulti, CFGGuider, LTXVCropGuides, GetImageSize, LTXVAddGuideMulti, GetNode, GetNode, VAEEncode, LTXVPreprocess, SetNode, ImageScaleBy, SetNode, FaceAnalysisModels, FaceSegmentation, ImageCropByMask, easy cleanGpuUsed, LTXVSeparateAVLatent, LTXVAudioVAEEncode, Int, ImageResizeKJv2, LoadImage, ReservedRegionFrameComposer, LTXVLatentUpsampler, LTXVSeparateAVLatent, GetNode, FlashVSRInitPipe, CreateVideo, GetNode, VAEDecodeTiled, CreateVideo, GetNode, LTXVAudioVAEDecode, CreateVideo, VAEDecodeTiled, ImageConcanate, LoraLoaderModelOnly, FlashVSRNodeAdv, VHS_VideoCombine, FlashVSRInitPipe, SaveImage, INPAINT_ExpandMask, AILab_QwenVL, VHS_LoadVideo, FlashVSRNodeAdv, CLIPTextEncode, SamplerCustomAdvanced, CFGGuider, GetNode, GetNode, UNETLoader, SetNode, easy showAnything, LoraLoaderModelOnly, LoraLoader, GetNode, VHS_VideoCombine, 1hew_SaveVideo]
 patterns: [lora]
-missing: [SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"lora_name": "gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors", "strength_clip": 1, "strength_model": 1}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/ltx2.3换头工作流_2043178251316633601.json
@@ -127,15 +126,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **68%**（63/92）
+覆盖率 **71%**（65/92）
 
-**有卡**：`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`KSamplerSelect`、`RandomNoise`、`LTXVConcatAVLatent`、`SetLatentNoiseMask`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`SolidMask`、`BasicScheduler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVConditioning`、`LTXVAddGuideMulti`、`CFGGuider`、`GetImageSize`、`VAEEncode`、`LTXVPreprocess`、`ImageScaleBy`、`FaceAnalysisModels`、`FaceSegmentation`、`ImageCropByMask`、`LTXVSeparateAVLatent`、`LTXVAudioVAEEncode`、`Int`、`ImageResizeKJv2`、`LoadImage`、`ReservedRegionFrameComposer`、`LTXVLatentUpsampler`、`FlashVSRInitPipe`、`CreateVideo`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ImageConcanate`、`FlashVSRNodeAdv`、`VHS_VideoCombine`、`SaveImage`、`INPAINT_ExpandMask`、`AILab_QwenVL`、`VHS_LoadVideo`、`UNETLoader`、`LoraLoader`、`1hew_SaveVideo`
-
-**缺卡**（2）：`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`KSamplerSelect`、`RandomNoise`、`LTXVConcatAVLatent`、`SetLatentNoiseMask`、`LoraLoaderModelOnly`、`SimpleMath+`、`CLIPTextEncode`、`SolidMask`、`BasicScheduler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVConditioning`、`LTXVAddGuideMulti`、`CFGGuider`、`GetImageSize`、`VAEEncode`、`LTXVPreprocess`、`ImageScaleBy`、`FaceAnalysisModels`、`FaceSegmentation`、`ImageCropByMask`、`easy cleanGpuUsed`、`LTXVSeparateAVLatent`、`LTXVAudioVAEEncode`、`Int`、`ImageResizeKJv2`、`LoadImage`、`ReservedRegionFrameComposer`、`LTXVLatentUpsampler`、`FlashVSRInitPipe`、`CreateVideo`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ImageConcanate`、`FlashVSRNodeAdv`、`VHS_VideoCombine`、`SaveImage`、`INPAINT_ExpandMask`、`AILab_QwenVL`、`VHS_LoadVideo`、`UNETLoader`、`LoraLoader`、`1hew_SaveVideo`
 
 **用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

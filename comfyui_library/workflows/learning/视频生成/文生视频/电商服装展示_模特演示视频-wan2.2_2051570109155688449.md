@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/电商服装展示_模特演示视频-wan2.2_2051570109155688449.json
 hash: a28bda994ae787d6
-coverage: 0.84375
-learned_at: 2026-10-11 19:49:50
+coverage: 0.96875
+learned_at: 2026-10-15 22:48:55
 nodes: [VAELoader, DownloadAndLoadGIMMVFIModel, CLIPLoader, PrimitiveInt, UNETLoader, UNETLoader, Int, Int, Int, Int, SimpleMath+, PathchSageAttentionKJ, LoraLoaderModelOnly, PainterVRAM, LayerUtility: ImageScaleByAspectRatio V2, ModelSamplingSD3, PathchSageAttentionKJ, CLIPTextEncode, ModelSamplingSD3, WanImageToVideo, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, GIMMVFI_interpolate, ImageConcatMulti, CLIPTextEncode, INTConstant, VHS_VideoCombine, VHS_VideoCombine, MathExpression|pysssss, MathExpression|pysssss, LoadImage]
 patterns: []
-missing: [LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, MathExpression|pysssss, SimpleMath+]
+missing: []
 parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/电商服装展示_模特演示视频-wan2.2_2051570109155688449.json
@@ -68,17 +67,8 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **84%**（27/32）
+覆盖率 **97%**（31/32）
 
-**有卡**：`VAELoader`、`DownloadAndLoadGIMMVFIModel`、`CLIPLoader`、`UNETLoader`、`Int`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`PainterVRAM`、`ModelSamplingSD3`、`CLIPTextEncode`、`WanImageToVideo`、`KSamplerAdvanced`、`VAEDecode`、`GIMMVFI_interpolate`、`ImageConcatMulti`、`INTConstant`、`VHS_VideoCombine`、`LoadImage`
-
-**缺卡**（4）：`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`MathExpression|pysssss`、`SimpleMath+`
+**有卡**：`VAELoader`、`DownloadAndLoadGIMMVFIModel`、`CLIPLoader`、`UNETLoader`、`Int`、`SimpleMath+`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`PainterVRAM`、`LayerUtility: ImageScaleByAspectRatio V2`、`ModelSamplingSD3`、`CLIPTextEncode`、`WanImageToVideo`、`KSamplerAdvanced`、`VAEDecode`、`GIMMVFI_interpolate`、`ImageConcatMulti`、`INTConstant`、`VHS_VideoCombine`、`MathExpression|pysssss`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced
-
-## 学习发现
-
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

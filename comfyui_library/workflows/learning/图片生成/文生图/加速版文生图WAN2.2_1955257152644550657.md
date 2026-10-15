@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/加速版文生图WAN2.2_1955257152644550657.json
 hash: d73784a42af96a67
 coverage: 0.909091
-learned_at: 2026-10-10 20:59:36
+learned_at: 2026-10-15 22:28:14
 nodes: [VAELoader, CLIPLoader, UNETLoader, CLIPTextEncode, VAEDecode, ModelSamplingAuraFlow, MarkdownNote, KSampler, EmptySD3LatentImage, SaveImage, CLIPTextEncode]
 patterns: []
 missing: []
@@ -20,30 +20,34 @@ parameters: {"cfg": 4, "denoise": 1, "sampler_name": "euler", "scheduler": "simp
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（11 个）：
 - `VAELoader`
 - `CLIPLoader`
-- `UNETLoader`
-- `CLIPTextEncode`
-- `VAEDecode`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
 - `ModelSamplingAuraFlow`
 - `MarkdownNote`
-- `KSampler`
+- `KSampler` ★核心
 - `EmptySD3LatentImage`
 - `SaveImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 
 ## 关键参数
 
-- `cfg` = `4`
-- `denoise` = `1`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `486982420453123`
 - `steps` = `20`
+- `cfg` = `4`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **91%**（10/11）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAEDecode`、`ModelSamplingAuraFlow`、`MarkdownNote`、`KSampler`、`EmptySD3LatentImage`、`SaveImage`
+**有卡**：`VAELoader`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`VAEDecode`、`ModelSamplingAuraFlow`、`KSampler`、`EmptySD3LatentImage`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、SaveImage、EmptySD3LatentImage

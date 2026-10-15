@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen Image 2.1多合一极简版文生图图生图处理工具_2102513018897788929.json
 hash: 1841332f6ee66b54
-coverage: 0.829787
-learned_at: 2026-10-10 20:48:07
+coverage: 0.87234
+learned_at: 2026-10-15 22:25:14
 nodes: [Seed (rgthree), UNETLoader, EmptyLatentImage, QwenImage21Cache, CLIPLoader, KSampler, VAEDecode, SaveImage, Fast Groups Bypasser (rgthree), TextEncodeQwenImage21, MiniMaxH3EasyMediaLoader, MiniMaxH3EasyMediaSplitter, VAELoader, MiniMaxH3EasyMediaSplitter, PreviewAny, ResolutionSelector, QwenPERewriteT8, CR Prompt Text, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
 patterns: [text_to_image]
-missing: [CR Prompt Text, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/图生图/Qwen Image 2.1多合一极简版文生图图生图处理工具_2102513018897788929.json
@@ -89,11 +89,9 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 知识
 
-覆盖率 **83%**（39/47）
+覆盖率 **87%**（41/47）
 
-**有卡**：`UNETLoader`、`EmptyLatentImage`、`QwenImage21Cache`、`CLIPLoader`、`KSampler`、`VAEDecode`、`SaveImage`、`TextEncodeQwenImage21`、`MiniMaxH3EasyMediaLoader`、`MiniMaxH3EasyMediaSplitter`、`VAELoader`、`ResolutionSelector`、`QwenPERewriteT8`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
-
-**缺卡**（2）：`CR Prompt Text`、`Seed (rgthree)`
+**有卡**：`Seed (rgthree)`、`UNETLoader`、`EmptyLatentImage`、`QwenImage21Cache`、`CLIPLoader`、`KSampler`、`VAEDecode`、`SaveImage`、`TextEncodeQwenImage21`、`MiniMaxH3EasyMediaLoader`、`MiniMaxH3EasyMediaSplitter`、`VAELoader`、`ResolutionSelector`、`QwenPERewriteT8`、`CR Prompt Text`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage
 
@@ -104,6 +102,4 @@ discoveries: [次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知�
 
 ## 学习发现
 
-- 次要节点 `CR Prompt Text` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

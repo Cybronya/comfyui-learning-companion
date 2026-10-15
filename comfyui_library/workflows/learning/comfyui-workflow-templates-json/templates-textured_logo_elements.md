@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/templates-textured_logo_elements.json
 hash: 9c23172bfca9debd
 official: true
-coverage: 0.875
-learned_at: 2026-10-10 22:49:27
+coverage: 1
+learned_at: 2026-10-15 22:24:56
 nodes: [SaveImage, SaveVideo, ByteDanceImageToVideoNode, LoadImage, LoadImage, LoadImage, e160d976-2957-4c31-aecd-e27e9466ea1f, GeminiImage2Node]
 patterns: []
-missing: [e160d976-2957-4c31-aecd-e27e9466ea1f]
-discoveries: [次要节点 `e160d976-2957-4c31-aecd-e27e9466ea1f` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/templates-textured_logo_elements.json
@@ -35,14 +34,8 @@ discoveries: [次要节点 `e160d976-2957-4c31-aecd-e27e9466ea1f` 知识库中�
 
 ## 知识
 
-覆盖率 **88%**（7/8）
+覆盖率 **100%**（8/8）
 
-**有卡**：`SaveImage`、`SaveVideo`、`ByteDanceImageToVideoNode`、`LoadImage`、`GeminiImage2Node`
+**有卡**：`SaveImage`、`SaveVideo`、`ByteDanceImageToVideoNode`、`LoadImage`、`e160d976-2957-4c31-aecd-e27e9466ea1f`、`GeminiImage2Node`
 
-**缺卡**（1）：`e160d976-2957-4c31-aecd-e27e9466ea1f`
-
-**用到的条目**：LoadImage、SaveImage、SaveVideo、ByteDanceImageToVideoNode、GeminiImage2Node、sd15-t2i-basic、sd15-t2i-lora、node
-
-## 学习发现
-
-- 次要节点 `e160d976-2957-4c31-aecd-e27e9466ea1f` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、SaveVideo、ByteDanceImageToVideoNode、GeminiImage2Node、e160d976-2957-4c31-aecd-e27e9466ea1f、sd15-t2i-basic、sd15-t2i-lora

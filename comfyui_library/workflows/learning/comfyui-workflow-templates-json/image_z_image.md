@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_z_image.json
 hash: 73a9d82ee2afde22
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:48:41
+coverage: 0.6
+learned_at: 2026-10-15 22:24:55
 nodes: [MarkdownNote, 9b9009e4-2d3d-445f-9be5-6063f465757e, MarkdownNote, ResolutionSelector, SaveImageAdvanced]
 patterns: []
-missing: [9b9009e4-2d3d-445f-9be5-6063f465757e]
-discoveries: [次要节点 `9b9009e4-2d3d-445f-9be5-6063f465757e` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_z_image.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `9b9009e4-2d3d-445f-9be5-6063f465757e` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`ResolutionSelector`、`SaveImageAdvanced`
+**有卡**：`9b9009e4-2d3d-445f-9be5-6063f465757e`、`ResolutionSelector`、`SaveImageAdvanced`
 
-**缺卡**（1）：`9b9009e4-2d3d-445f-9be5-6063f465757e`
-
-**用到的条目**：ResolutionSelector、SaveImageAdvanced、sd15-t2i-basic、sd15-t2i-lora、SaveImage、EmptyLatentImage、height 调整经验、width 调整经验
-
-## 学习发现
-
-- 次要节点 `9b9009e4-2d3d-445f-9be5-6063f465757e` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、SaveImageAdvanced、9b9009e4-2d3d-445f-9be5-6063f465757e、sd15-t2i-basic、sd15-t2i-lora、SaveImage、EmptyLatentImage、height 调整经验

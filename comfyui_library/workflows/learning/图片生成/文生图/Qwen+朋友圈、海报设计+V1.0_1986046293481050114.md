@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen+朋友圈、海报设计+V1.0_1986046293481050114.json
 hash: eb86ae2c8e0167da
 coverage: 0.866667
-learned_at: 2026-10-10 20:58:58
+learned_at: 2026-10-15 22:27:08
 nodes: [ModelSamplingAuraFlow, UpscaleModelLoader, UltimateSDUpscale, PreviewImage, CLIPTextEncode, VAEDecode, CLIPTextEncode, EmptySD3LatentImage, VAELoader, UNETLoader, CLIPLoader, LoraLoader, Note, SaveImage, KSampler]
 patterns: [lora]
 missing: []
@@ -20,39 +20,43 @@ parameters: {"cfg": 3.5, "denoise": 1, "lora_name": "Qwen-Image 3D IP XIAOXIAOlo
 
 ## 结构
 
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
 **节点**（15 个）：
 - `ModelSamplingAuraFlow`
 - `UpscaleModelLoader`
 - `UltimateSDUpscale`
 - `PreviewImage`
-- `CLIPTextEncode`
-- `VAEDecode`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
 - `EmptySD3LatentImage`
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `Note`
 - `SaveImage`
-- `KSampler`
+- `KSampler` ★核心
 
 **识别到的模式**：lora
 
 ## 关键参数
 
-- `cfg` = `3.5`
-- `denoise` = `1`
 - `lora_name` = `Qwen-Image 3D IP XIAOXIAOloRA.safetensors`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `strength_model` = `0.8000000000000002`
+- `strength_clip` = `0.8000000000000002`
 - `seed` = `346361969038499`
 - `steps` = `30`
-- `strength_clip` = `0.8000000000000002`
-- `strength_model` = `0.8000000000000002`
+- `cfg` = `3.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **87%**（13/15）
 
-**有卡**：`ModelSamplingAuraFlow`、`UpscaleModelLoader`、`UltimateSDUpscale`、`PreviewImage`、`CLIPTextEncode`、`VAEDecode`、`EmptySD3LatentImage`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoader`、`Note`
+**有卡**：`ModelSamplingAuraFlow`、`UpscaleModelLoader`、`UltimateSDUpscale`、`CLIPTextEncode`、`VAEDecode`、`EmptySD3LatentImage`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LoraLoader`、`SaveImage`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、LoraLoader、LoraLoader

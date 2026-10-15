@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/RH 全能视频V3.1低价渠道版 文生+图生+首尾帧生视频合集 含Fast与Pro版本_2046101602192330753.json
 hash: 00a5bc64d876299c
 coverage: 0.833333
-learned_at: 2026-10-11 19:49:41
+learned_at: 2026-10-15 22:46:52
 nodes: [RH_RhartVideoV31ProStartEndToVideo, RH_RhartVideoV31FastImageToVideo, LoadImage, RH_RhartVideoV31FastTextToVideo, RH_RhartVideoV31ProTextToVideo, SaveVideo, SaveVideo, SaveVideo, SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, RH_RhartVideoV31FastStartEndToVideo, SaveVideo, Fast Groups Bypasser (rgthree), MarkdownNote, MarkdownNote]
 patterns: []
 missing: []

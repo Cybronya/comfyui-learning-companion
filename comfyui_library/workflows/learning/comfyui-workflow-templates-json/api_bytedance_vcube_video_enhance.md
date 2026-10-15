@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bytedance_vcube_video_enhance.json
 hash: c2792388c976ffd1
 official: true
-coverage: 0.8
-learned_at: 2026-10-10 22:43:41
+coverage: 1
+learned_at: 2026-10-15 22:24:48
 nodes: [LoadVideo, SaveVideo, 7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76, SaveVideo, ByteDanceVideoEnhanceNode]
 patterns: []
-missing: [7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76]
-discoveries: [次要节点 `7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_bytedance_vcube_video_enhance.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76` 知识库中�
 
 ## 知识
 
-覆盖率 **80%**（4/5）
+覆盖率 **100%**（5/5）
 
-**有卡**：`LoadVideo`、`SaveVideo`、`ByteDanceVideoEnhanceNode`
+**有卡**：`LoadVideo`、`SaveVideo`、`7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76`、`ByteDanceVideoEnhanceNode`
 
-**缺卡**（1）：`7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76`
-
-**用到的条目**：SaveVideo、LoadVideo、ByteDanceVideoEnhanceNode、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、LoadVideo、ByteDanceVideoEnhanceNode、7e8f7b8b-a2c3-4ebb-a31b-7d3c829a1b76、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage

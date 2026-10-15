@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001106942984679425.json
 hash: 334200f5c672f625
-coverage: 0.75
-learned_at: 2026-10-11 02:57:41
+coverage: 1
+learned_at: 2026-10-15 22:48:42
 nodes: [LoadAudio, RH_Wan26_T2V, CR Text, SaveVideo]
 patterns: []
-missing: [CR Text]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/文生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001106942984679425.json
@@ -30,14 +29,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **75%**（3/4）
+覆盖率 **100%**（4/4）
 
-**有卡**：`LoadAudio`、`RH_Wan26_T2V`、`SaveVideo`
+**有卡**：`LoadAudio`、`RH_Wan26_T2V`、`CR Text`、`SaveVideo`
 
-**缺卡**（1）：`CR Text`
-
-**用到的条目**：SaveVideo、LoadAudio、RH_Wan26_T2V、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage、CS_Preview_Any
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveVideo、LoadAudio、RH_Wan26_T2V、CR Text、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage

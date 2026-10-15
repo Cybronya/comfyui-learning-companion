@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.0多模态大模型-文生视频自动提示词工作流_2008854964008914945.json
 hash: 81550d3036f5e3c8
-coverage: 0.8
-learned_at: 2026-10-11 03:07:10
+coverage: 0.818182
+learned_at: 2026-10-15 22:44:53
 nodes: [EmptyImage, LTXVEmptyLatentAudio, ImageScaleBy, GetImageSize, KSamplerSelect, LTXVSeparateAVLatent, LTXVAudioVAELoader, PrimitiveInt, CheckpointLoaderSimple, CFGGuider, LTXVConditioning, EmptyLTXVLatentVideo, Reroute, RandomNoise, LTXVAudioVAEDecode, CLIPTextEncode, SamplerCustomAdvanced, JoinStrings, JoinStrings, easy showAnything, LTXVConcatAVLatent, LTXVScheduler, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, LoraLoaderModelOnly, CLIPTextEncode, MemoryCleaner, LoraLoaderModelOnly, Fast Groups Bypasser (rgthree), MarkdownNote, Qwen3_VQA, TextInput_, ShowText|pysssss, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVLatentUpsampler, LTXVConcatAVLatent, CFGGuider, RandomNoise, ManualSigmas, KSamplerSelect, VAEDecodeTiled, VHS_VideoCombine, SimpleMath+, Int, Int, PrimitiveInt, PrimitiveFloat, Note, Int, TextInput_, TextInput_, MarkdownNote, LoadImage]
 patterns: []
-missing: [SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.0多模态大模型-文生视频自动提示词工作流_2008854964008914945.json
@@ -89,14 +88,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **80%**（44/55）
+覆盖率 **82%**（45/55）
 
-**有卡**：`EmptyImage`、`LTXVEmptyLatentAudio`、`ImageScaleBy`、`GetImageSize`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`CFGGuider`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`RandomNoise`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`JoinStrings`、`LTXVConcatAVLatent`、`LTXVScheduler`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`MemoryCleaner`、`Qwen3_VQA`、`TextInput_`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`ManualSigmas`、`VAEDecodeTiled`、`VHS_VideoCombine`、`Int`、`LoadImage`
-
-**缺卡**（1）：`SimpleMath+`
+**有卡**：`EmptyImage`、`LTXVEmptyLatentAudio`、`ImageScaleBy`、`GetImageSize`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`CFGGuider`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`RandomNoise`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`SamplerCustomAdvanced`、`JoinStrings`、`LTXVConcatAVLatent`、`LTXVScheduler`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`MemoryCleaner`、`Qwen3_VQA`、`TextInput_`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`ManualSigmas`、`VAEDecodeTiled`、`VHS_VideoCombine`、`SimpleMath+`、`Int`、`LoadImage`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

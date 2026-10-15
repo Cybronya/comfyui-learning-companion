@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生视频（解禁模型）：LTX2.3 Sulphur_2059260196207284225.json
 hash: 3ac2a907100d3445
 coverage: 0.926829
-learned_at: 2026-10-11 19:49:50
+learned_at: 2026-10-15 22:48:44
 nodes: [RandomNoise, EmptyImage, CFGGuider, ManualSigmas, KSamplerSelect, LTXVConcatAVLatent, LTXVConcatAVLatent, GetImageSize, ImageScaleBy, PrimitiveInt, PrimitiveInt, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, CM_IntToFloat, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LTXVConditioning, ImpactExecutionOrderController, LTXVLatentUpsampler, LoraLoaderModelOnly, CFGGuider, RandomNoise, KSamplerSelect, LTXVScheduler, LTXVSeparateAVLatent, LTXVAudioVAEDecode, SamplerCustomAdvanced, VAEDecodeTiled, CLIPTextEncode, LatentUpscaleModelLoader, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, VAEDecodeTiled, LTXVAudioVAEDecode, VHS_VideoCombine, MarkdownNote, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, CheckpointLoaderSimple]
 patterns: []
 missing: []

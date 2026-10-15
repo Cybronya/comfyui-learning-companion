@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/ltx2.5 - 文_图生视频 (2)_2087437692429750274.json
 hash: e1b9c7296adda4d8
-coverage: 0.807692
-learned_at: 2026-10-11 20:53:49
+coverage: 0.846154
+learned_at: 2026-10-15 22:47:23
 nodes: [PrimitiveFloat, LTXVSeparateAVLatent, LTXVImgToVideoInplace, SamplerCustomAdvanced, VAELoader, VAELoader, ManualSigmas, PrimitiveFloat, SamplerCustomAdvanced, CFGGuider, KSamplerSelect, LTXVConcatAVLatent, LTXVEmptyLatentAudio, UNETLoader, LoraLoaderModelOnly, PrimitiveFloat, PrimitiveFloat, LTXFloatToInt, RH_LLMAPI_Pro_Node, CR Text, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVConcatAVLatent, LTXVImgToVideoInplace, ManualSigmas, KSamplerSelect, CFGGuider, RandomNoise, RandomNoise, LTXVAudioVAEDecode, VAEDecodeTiled, CreateVideo, CLIPTextEncode, CLIPTextEncode, LTXVPreprocess, EmptyLTXVLatentVideo, MarkdownNote, ComfyNotNode, PrimitiveInt, LTXVConditioning, PrimitiveStringMultiline, ResizeImageMaskNode, ComfyMathExpression, CLIPLoader, CLIPLoader, CR Text, easy showAnything, SaveVideo, LatentUpscaleModelLoader, PrimitiveBoolean, ResolutionSelector, LoadImage]
 patterns: []
-missing: [CR Text, CR Text]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 121}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/ltx2.5 - 文_图生视频 (2)_2087437692429750274.json
@@ -85,15 +84,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **81%**（42/52）
+覆盖率 **85%**（44/52）
 
-**有卡**：`LTXVSeparateAVLatent`、`LTXVImgToVideoInplace`、`SamplerCustomAdvanced`、`VAELoader`、`ManualSigmas`、`CFGGuider`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`UNETLoader`、`LoraLoaderModelOnly`、`LTXFloatToInt`、`RH_LLMAPI_Pro_Node`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CreateVideo`、`CLIPTextEncode`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`ComfyNotNode`、`LTXVConditioning`、`ResizeImageMaskNode`、`ComfyMathExpression`、`CLIPLoader`、`SaveVideo`、`LatentUpscaleModelLoader`、`PrimitiveBoolean`、`ResolutionSelector`、`LoadImage`
-
-**缺卡**（2）：`CR Text`、`CR Text`
+**有卡**：`LTXVSeparateAVLatent`、`LTXVImgToVideoInplace`、`SamplerCustomAdvanced`、`VAELoader`、`ManualSigmas`、`CFGGuider`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`UNETLoader`、`LoraLoaderModelOnly`、`LTXFloatToInt`、`RH_LLMAPI_Pro_Node`、`CR Text`、`LTXVLatentUpsampler`、`RandomNoise`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CreateVideo`、`CLIPTextEncode`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`ComfyNotNode`、`LTXVConditioning`、`ResizeImageMaskNode`、`ComfyMathExpression`、`CLIPLoader`、`SaveVideo`、`LatentUpscaleModelLoader`、`PrimitiveBoolean`、`ResolutionSelector`、`LoadImage`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、CFGGuider
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

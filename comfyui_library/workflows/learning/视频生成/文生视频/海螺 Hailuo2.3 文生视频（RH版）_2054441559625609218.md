@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/海螺 Hailuo2.3 文生视频（RH版）_2054441559625609218.json
 hash: d5c0004ade1126c5
 coverage: 1
-learned_at: 2026-10-11 19:49:50
+learned_at: 2026-10-15 22:48:51
 nodes: [SaveVideo, RH_Hailuo_Text2Video]
 patterns: []
 missing: []

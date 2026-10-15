@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 图生视频_2070775832578191361.json
 hash: 4682fd5f1cd7e35f
-coverage: 0.814815
-learned_at: 2026-10-11 20:21:33
+coverage: 0.888889
+learned_at: 2026-10-15 22:47:43
 nodes: [WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoTorchCompileSettings, WanVideoDecode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoSampler, WanVideoBlockSwap, GetImageSize+, LoadImage, MarkdownNote, LoadImage, WanVideoVAELoader, WanVideoModelLoader, WanVideoTextEncodeCached, LoadImage, PreviewImage, MaskPreview+, PreviewImage, VHS_VideoCombine, WanVideoVACEEncode, WanVideoVACEModelSelect, WanVideoLoraSelect, ImageResizeKJv2, WanVideoVACEStartToEndFrame]
 patterns: []
-missing: [GetImageSize+, MaskPreview+]
-discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/【遇见AI】wan2.1 MoviiGen影视美学 图生视频_2070775832578191361.json
@@ -53,15 +52,8 @@ discoveries: [次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，�
 
 ## 知识
 
-覆盖率 **81%**（22/27）
+覆盖率 **89%**（24/27）
 
-**有卡**：`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoTorchCompileSettings`、`WanVideoDecode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTeaCache`、`WanVideoSampler`、`WanVideoBlockSwap`、`LoadImage`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoTextEncodeCached`、`VHS_VideoCombine`、`WanVideoVACEEncode`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`ImageResizeKJv2`、`WanVideoVACEStartToEndFrame`
-
-**缺卡**（2）：`GetImageSize+`、`MaskPreview+`
+**有卡**：`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoTorchCompileSettings`、`WanVideoDecode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTeaCache`、`WanVideoSampler`、`WanVideoBlockSwap`、`GetImageSize+`、`LoadImage`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoTextEncodeCached`、`MaskPreview+`、`VHS_VideoCombine`、`WanVideoVACEEncode`、`WanVideoVACEModelSelect`、`WanVideoLoraSelect`、`ImageResizeKJv2`、`WanVideoVACEStartToEndFrame`
 
 **用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs
-
-## 学习发现
-
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `MaskPreview+` 仅有 SaveImage 的通用知识，没有该节点自己的说明

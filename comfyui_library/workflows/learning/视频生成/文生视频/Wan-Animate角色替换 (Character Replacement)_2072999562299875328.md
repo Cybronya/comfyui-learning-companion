@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan-Animate角色替换 (Character Replacement)_2072999562299875328.json
 hash: 2a21bbdfaa68f438
 coverage: 0.535211
-learned_at: 2026-10-11 20:21:30
+learned_at: 2026-10-15 22:47:07
 nodes: [ImageConcatMulti, DWPreprocessor, SetNode, SetNode, Sam2Segmentation, DownloadAndLoadSAM2Model, SetNode, Reroute, FaceMaskFromPoseKeypoints, ImageCropByMaskAndResize, GrowMask, BlockifyMask, Note, CLIPVisionLoader, WanVideoClipVisionEncode, WanVideoTorchCompileSettings, ImageConcatMulti, GetImageSizeAndCount, WanVideoContextOptions, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, MarkdownNote, Note, DrawMaskOnImage, VHS_VideoCombine, VHS_VideoCombine, Fast Groups Bypasser (rgthree), easy showAnything, WanVideoDecode, WanVideoVAELoader, ImageResizeKJv2, GetImageSize, VHS_VideoCombine, WanVideoSampler, VHS_LoadVideo, PointsEditor, GetNode, LoadImage, SetNode, SetNode, SetNode, PixelPerfectResolution, SetNode, GetNode, GetNode, GetNode, GetNode, WanVideoModelLoader, WanVideoLoraSelectMulti, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, SetNode, SetNode, GetNode, WanVideoTextEncodeCached, WanVideoAnimateEmbeds, INTConstant, INTConstant, INTConstant]
 patterns: []
 missing: []

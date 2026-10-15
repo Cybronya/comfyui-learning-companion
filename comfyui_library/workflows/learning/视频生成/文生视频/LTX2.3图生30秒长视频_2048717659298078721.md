@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3图生30秒长视频_2048717659298078721.json
 hash: 54e7ce5e2b991e7a
-coverage: 0.465438
-learned_at: 2026-10-11 19:49:38
+coverage: 0.557604
+learned_at: 2026-10-15 22:45:06
 nodes: [SetNode, SetNode, GetNode, PreviewImage, PreviewImage, ConditioningZeroOut, easy showAnything, SetNode, SetNode, SetNode, ImpactInt, SetNode, PreviewImage, ConditioningZeroOut, easy showAnything, GetNode, GetNode, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, GetNode, easy showAnything, ConditioningZeroOut, GetNode, TextEncodeQwenImageEditPlus, VAEEncode, easy showAnything, VAELoader, SetNode, SetNode, GetNode, GetNode, ManualSigmas, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, GetNode, KSamplerSelect, LTXVScheduler, CFGGuider, RandomNoise, ComfyMathExpression, ComfyMathExpression, CLIPTextEncode, CLIPTextEncode, SetNode, GetNode, LTXVConcatAVLatent, SetNode, LTXVSeparateAVLatent, LTXVSeparateAVLatent, SamplerCustomAdvanced, ComfyMathExpression, SetNode, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, GetNode, easy showAnything, GetNode, GetNode, GetNode, GetNode, ComfyMathExpression, TrimAudioDuration, SetLatentNoiseMask, SolidMask, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, LTXVConditioning, SetNode, EmptyLTXVLatentVideo, GetNode, VAEDecode, PrimitiveFloat, LTX2_NAG, GetNode, GetNode, GetNode, GetNode, LTXVChunkFeedForward, GetNode, SetNode, MathExpression|pysssss, LTXVEmptyLatentAudio, VHS_VideoCombine, GetNode, CLIPLoader, LatentUpscaleModelLoader, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, RandomNoise, ImpactInt, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecodeTiled, RTXVideoSuperResolution, easy promptLine, easy promptLine, easy promptLine, llama_cpp_model_loader, KSampler, KSampler, KSampler, KSampler, String Replace (mtb), SomethingToString, GetNode, String Replace (mtb), String Replace (mtb), GetNode, PrimitiveStringMultiline, LayerUtility: ImageScaleByAspectRatio V2, SetNode, LTXVConcatAVLatent, GetNode, GetNode, GetNode, GetNode, LTXVLatentUpsampler, LTXVCropGuides, llama_cpp_model_loader, easy showAnything, llama_cpp_instruct_adv, VRAM_Debug, SetNode, String Replace (mtb), VRAM_Debug, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, LTXVImgToVideoInplaceKJ, LTXVAddGuideMulti, LTXVAudioVAEEncode, PrimitiveStringMultiline, UNETLoader, CLIPTextEncode, CLIPTextEncode, ReferenceLatent, ReferenceLatent, SamplerCustomAdvanced, CFGGuider, KSamplerSelect, Switch any [Crystools], CLIPLoader, VAELoader, VAEEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Switch any [Crystools], Switch any [Crystools], Switch any [Crystools], SetNode, SetNode, SetNode, SetNode, ConditioningZeroOut, easy promptLine, UNETLoader, Flux2Scheduler, LayerColor: ColorAdapter, SetNode, LayerColor: ColorAdapter, SetNode, LayerColor: ColorAdapter, SetNode, PreviewImage, PreviewImage, PreviewImage, SetNode, PreviewImage, RandomNoise, GetImageSize, PrimitiveBoolean, Switch any [Crystools], ImageScaleToTotalPixels, VAEDecode, VAEDecode, LayerColor: ColorAdapter, PreviewImage, UNETLoader, LoraLoaderModelOnly, Switch any [Crystools], VRAM_Debug, PrimitiveBoolean, MarkdownNote, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, llama_cpp_instruct_adv, LoadAudio, easy showAnything, PrimitiveStringMultiline, LoadImage, ImpactInt]
 patterns: [image_to_image]
-missing: [LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, String Replace (mtb), String Replace (mtb), String Replace (mtb), String Replace (mtb), Switch any [Crystools], Switch any [Crystools], Switch any [Crystools], Switch any [Crystools], Switch any [Crystools], Switch any [Crystools], LayerColor: ColorAdapter, LayerColor: ColorAdapter, LayerColor: ColorAdapter, LayerColor: ColorAdapter, easy promptLine, easy promptLine, easy promptLine, easy promptLine]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 24, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 65454653, "steps": 5, "width": 97}
-discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识, 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/LTX2.3图生30秒长视频_2048717659298078721.json
@@ -259,11 +259,9 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 知识
 
-覆盖率 **47%**（101/217）
+覆盖率 **56%**（121/217）
 
-**有卡**：`ConditioningZeroOut`、`ImpactInt`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`VAELoader`、`ManualSigmas`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVScheduler`、`RandomNoise`、`ComfyMathExpression`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`TrimAudioDuration`、`SetLatentNoiseMask`、`SolidMask`、`VAEDecode`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTX2_NAG`、`LTXVChunkFeedForward`、`LTXVEmptyLatentAudio`、`VHS_VideoCombine`、`CLIPLoader`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`RTXVideoSuperResolution`、`llama_cpp_model_loader`、`KSampler`、`SomethingToString`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`llama_cpp_instruct_adv`、`VRAM_Debug`、`LTXVImgToVideoInplaceKJ`、`LTXVAddGuideMulti`、`LTXVAudioVAEEncode`、`UNETLoader`、`ReferenceLatent`、`Flux2Scheduler`、`GetImageSize`、`PrimitiveBoolean`、`ImageScaleToTotalPixels`、`LoadAudio`、`LoadImage`
-
-**缺卡**（20）：`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`String Replace (mtb)`、`String Replace (mtb)`、`String Replace (mtb)`、`String Replace (mtb)`、`Switch any [Crystools]`、`Switch any [Crystools]`、`Switch any [Crystools]`、`Switch any [Crystools]`、`Switch any [Crystools]`、`Switch any [Crystools]`、`LayerColor: ColorAdapter`、`LayerColor: ColorAdapter`、`LayerColor: ColorAdapter`、`LayerColor: ColorAdapter`、`easy promptLine`、`easy promptLine`、`easy promptLine`、`easy promptLine`
+**有卡**：`ConditioningZeroOut`、`ImpactInt`、`TextEncodeQwenImageEditPlus`、`VAEEncode`、`VAELoader`、`ManualSigmas`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVScheduler`、`RandomNoise`、`ComfyMathExpression`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`TrimAudioDuration`、`SetLatentNoiseMask`、`SolidMask`、`VAEDecode`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`LTX2_NAG`、`LTXVChunkFeedForward`、`MathExpression|pysssss`、`LTXVEmptyLatentAudio`、`VHS_VideoCombine`、`CLIPLoader`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`RTXVideoSuperResolution`、`easy promptLine`、`llama_cpp_model_loader`、`KSampler`、`String Replace (mtb)`、`SomethingToString`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`llama_cpp_instruct_adv`、`VRAM_Debug`、`LTXVImgToVideoInplaceKJ`、`LTXVAddGuideMulti`、`LTXVAudioVAEEncode`、`UNETLoader`、`ReferenceLatent`、`Switch any [Crystools]`、`Flux2Scheduler`、`LayerColor: ColorAdapter`、`GetImageSize`、`PrimitiveBoolean`、`ImageScaleToTotalPixels`、`LoadAudio`、`LoadImage`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
 
@@ -277,26 +275,6 @@ discoveries: [次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库�
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `MathExpression|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Replace (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `Switch any [Crystools]` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `LayerColor: ColorAdapter` 仅有 LoRA 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
-- 次要节点 `easy promptLine` 仅有 CLIPTextEncode 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

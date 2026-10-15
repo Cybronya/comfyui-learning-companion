@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/wan2.1生图-放大-修脸工作流_1947192243175239681.json
 hash: 73c1b810e6426e17
-coverage: 0.424658
-learned_at: 2026-10-10 20:59:27
+coverage: 0.479452
+learned_at: 2026-10-15 22:27:57
 nodes: [GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, VAEEncode, GroundingDinoModelLoader (segment anything), SAMLoader, SetNode, VAEDecode, SetNode, GetNode, GetNode, SaveImage, PreviewImage, ImageCompositeMasked, GetNode, GetNode, KSampler, SetNode, VAEDecode, PreviewImage, VAEDecode, UNETLoader, VAELoader, CLIPLoader, PathchSageAttentionKJ, LoraLoaderModelOnly, SetNode, EmptySD3LatentImage, CLIPTextEncode, SetNode, SetNode, ModelSamplingSD3, WanVideoNAG, ImageUpscaleWithModel, UpscaleModelLoader, GetNode, ImageResizeKJv2, VAEEncode, KSampler, GroundingDinoSAMSegment (segment anything), GrowMask, ImageScaleBy, GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, PreviewImage, KSampler, SetLatentNoiseMask, MaskPreview, GetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, ImageCrop, MaskBoundingBox+, CLIPTextEncode, PreviewImage]
 patterns: []
-missing: [GroundingDinoModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), GroundingDinoSAMSegment (segment anything), MaskBoundingBox+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 0.5000000000000001, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 409860341308050, "steps": 8}
-discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识, 次要节点 `MaskBoundingBox+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/wan2.1生图-放大-修脸工作流_1947192243175239681.json
@@ -21,6 +21,8 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 > 来源文件 `comfyui_library/workflows/图片生成/文生图/wan2.1生图-放大-修脸工作流_1947192243175239681.json`
 
 ## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
 
 **节点**（73 个）：
 - `GetNode`
@@ -42,11 +44,11 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `GetNode`
 - `SetNode`
 - `SetNode`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `GroundingDinoModelLoader (segment anything)`
 - `SAMLoader`
 - `SetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SetNode`
 - `GetNode`
 - `GetNode`
@@ -55,19 +57,19 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `ImageCompositeMasked`
 - `GetNode`
 - `GetNode`
-- `KSampler`
+- `KSampler` ★核心
 - `SetNode`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `PreviewImage`
-- `VAEDecode`
-- `UNETLoader`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
 - `VAELoader`
 - `CLIPLoader`
 - `PathchSageAttentionKJ`
-- `LoraLoaderModelOnly`
+- `LoraLoaderModelOnly` ★核心
 - `SetNode`
 - `EmptySD3LatentImage`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `SetNode`
 - `SetNode`
 - `ModelSamplingSD3`
@@ -76,15 +78,15 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `UpscaleModelLoader`
 - `GetNode`
 - `ImageResizeKJv2`
-- `VAEEncode`
-- `KSampler`
+- `VAEEncode` ★核心
+- `KSampler` ★核心
 - `GroundingDinoSAMSegment (segment anything)`
 - `GrowMask`
 - `ImageScaleBy`
 - `GroundingDinoSAMSegment (segment anything)`
 - `GrowMaskWithBlur`
 - `PreviewImage`
-- `KSampler`
+- `KSampler` ★核心
 - `SetLatentNoiseMask`
 - `MaskPreview`
 - `GetNode`
@@ -94,25 +96,25 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 - `GetNode`
 - `ImageCrop`
 - `MaskBoundingBox+`
-- `CLIPTextEncode`
+- `CLIPTextEncode` ★核心
 - `PreviewImage`
 
 ## 关键参数
 
-- `cfg` = `1`
-- `denoise` = `0.5000000000000001`
-- `sampler_name` = `uni_pc`
-- `scheduler` = `simple`
 - `seed` = `409860341308050`
 - `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `0.5000000000000001`
 
 ## 知识
 
-覆盖率 **42%**（31/73）
+覆盖率 **48%**（35/73）
 
-**有卡**：`GetNode`、`SetNode`、`VAEEncode`、`GroundingDinoModelLoader (segment anything)`、`SAMLoader`、`VAEDecode`、`SaveImage`、`PreviewImage`、`ImageCompositeMasked`
+**有卡**：`VAEEncode`、`GroundingDinoModelLoader (segment anything)`、`SAMLoader`、`VAEDecode`、`SaveImage`、`ImageCompositeMasked`、`KSampler`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`EmptySD3LatentImage`、`CLIPTextEncode`、`ModelSamplingSD3`、`WanVideoNAG`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`ImageResizeKJv2`、`GroundingDinoSAMSegment (segment anything)`、`GrowMask`、`ImageScaleBy`、`GrowMaskWithBlur`、`SetLatentNoiseMask`、`MaskPreview`、`ImageCrop`、`MaskBoundingBox+`
 
-**缺卡**（4）：`GroundingDinoModelLoader (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`MaskBoundingBox+`
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、SetLatentNoiseMask
 
 ## 参数体检
 
@@ -123,10 +125,6 @@ discoveries: [次要节点 `GroundingDinoModelLoader (segment anything)` 知识�
 
 ## 学习发现
 
-- 次要节点 `GroundingDinoModelLoader (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `GroundingDinoSAMSegment (segment anything)` 知识库中没有该节点类型的任何知识
-- 次要节点 `MaskBoundingBox+` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

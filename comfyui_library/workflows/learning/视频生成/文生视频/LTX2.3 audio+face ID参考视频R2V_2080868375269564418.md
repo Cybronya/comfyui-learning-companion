@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 audio+face ID参考视频R2V_2080868375269564418.json
 hash: bddcfc6d3e344a4b
-coverage: 0.475524
-learned_at: 2026-10-11 20:38:34
+coverage: 0.482517
+learned_at: 2026-10-15 22:44:58
 nodes: [GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, VAEDecodeAudio, ComfySwitchNode, SimpleCalculatorKJ, PrimitiveBoolean, ComfySwitchNode, SetNode, GetNode, Reroute, PrimitiveBoolean, KSamplerSelect, INTConstant, GetNode, GetNode, GetNode, ComfyMathExpression, ComfySwitchNode, ComfyMathExpression, GetNode, RecordAudio, MelBandRoFormerSampler, SetNode, CLIPTextEncode, SetNode, SetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, SetNode, SetNode, SetNode, GetNode, ComfyNumberConvert, GetNode, GetNode, GetNode, SamplerCustomAdvanced, GetNode, KSamplerSelect, ManualSigmas, PrimitiveFloat, LTXVSeparateAVLatent, LTX2_NAG, LTX2SamplingPreviewOverride, GetNode, GetNode, GetNode, VAEDecodeTiled, LTXVChunkFeedForward, LTX2AttentionTunerPatch, CLIPTextEncode, LTXVEmptyLatentAudio, GetNode, GetNode, GetNode, LTXIdentityOverlapConditioning, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, GetNode, LTXVCropGuides, LTXVLatentUpsampler, CFGGuider, MarkdownNote, ModelSamplingSD3, ManualSigmas, BasicScheduler, CFGGuider, GetNode, StringConcatenate, StringConcatenate, GetNode, GetNode, ComfySwitchNode, LTXIdentityOverlapConditioning, SetNode, UNETLoader, LatentUpscaleModelLoader, DualCLIPLoader, VAELoaderKJ, VAELoader, VAELoader, LTXVReferenceAudio, INTConstant, INTConstant, TrimAudioDuration, ComfySwitchNode, LTXVCropGuides, GetNode, GetNode, GetNode, MelBandRoFormerModelLoader, LoadAudio, EmptyLTXVLatentVideo, LTXVConditioning, TextGenerate, RandomNoise, RandomNoise, SeedGenerator, LTX2LoraLoaderAdvanced, PrimitiveStringMultiline, SetNode, RMBG, ImageResizeKJv2, ResizeImageMaskNode, PreviewImage, CropFace, LoadImage, VHS_VideoCombine, LTX2LoraLoaderAdvanced, Power Lora Loader (rgthree), LTX2MemoryEfficientSageAttentionPatch, PathchSageAttentionKJ, LoraLoaderModelOnly, PreviewAny, PreviewAny]
 patterns: []
-missing: [Power Lora Loader (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "lora_name": "ltx-2.3-ID-LoRA-TalkVid-3k-V1.0.safetensors", "strength_clip": 0, "strength_model": 1.5, "width": 97}
-discoveries: [次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX2.3 audio+face ID参考视频R2V_2080868375269564418.json
@@ -179,14 +178,8 @@ discoveries: [次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用�
 
 ## 知识
 
-覆盖率 **48%**（68/143）
+覆盖率 **48%**（69/143）
 
-**有卡**：`VAEDecodeAudio`、`SimpleCalculatorKJ`、`PrimitiveBoolean`、`KSamplerSelect`、`INTConstant`、`ComfyMathExpression`、`RecordAudio`、`MelBandRoFormerSampler`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`ComfyNumberConvert`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`VAEDecodeTiled`、`LTXVChunkFeedForward`、`LTX2AttentionTunerPatch`、`LTXVEmptyLatentAudio`、`LTXIdentityOverlapConditioning`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`CFGGuider`、`ModelSamplingSD3`、`BasicScheduler`、`StringConcatenate`、`UNETLoader`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`VAELoader`、`LTXVReferenceAudio`、`TrimAudioDuration`、`MelBandRoFormerModelLoader`、`LoadAudio`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`TextGenerate`、`RandomNoise`、`SeedGenerator`、`LTX2LoraLoaderAdvanced`、`RMBG`、`ImageResizeKJv2`、`ResizeImageMaskNode`、`CropFace`、`LoadImage`、`VHS_VideoCombine`、`LTX2MemoryEfficientSageAttentionPatch`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`
-
-**缺卡**（1）：`Power Lora Loader (rgthree)`
+**有卡**：`VAEDecodeAudio`、`SimpleCalculatorKJ`、`PrimitiveBoolean`、`KSamplerSelect`、`INTConstant`、`ComfyMathExpression`、`RecordAudio`、`MelBandRoFormerSampler`、`CLIPTextEncode`、`LTXVConcatAVLatent`、`ComfyNumberConvert`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`VAEDecodeTiled`、`LTXVChunkFeedForward`、`LTX2AttentionTunerPatch`、`LTXVEmptyLatentAudio`、`LTXIdentityOverlapConditioning`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`CFGGuider`、`ModelSamplingSD3`、`BasicScheduler`、`StringConcatenate`、`UNETLoader`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`VAELoader`、`LTXVReferenceAudio`、`TrimAudioDuration`、`MelBandRoFormerModelLoader`、`LoadAudio`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`TextGenerate`、`RandomNoise`、`SeedGenerator`、`LTX2LoraLoaderAdvanced`、`RMBG`、`ImageResizeKJv2`、`ResizeImageMaskNode`、`CropFace`、`LoadImage`、`VHS_VideoCombine`、`Power Lora Loader (rgthree)`、`LTX2MemoryEfficientSageAttentionPatch`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`
 
 **用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `Power Lora Loader (rgthree)` 仅有 LoRA 的通用知识，没有该节点自己的说明

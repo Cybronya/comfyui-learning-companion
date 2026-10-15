@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json
 hash: 0096b11770cecf8f
-coverage: 0.769231
-learned_at: 2026-10-10 20:59:00
+coverage: 0.846154
+learned_at: 2026-10-15 22:27:12
 nodes: [KSampler, CR Text, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, EmptyLatentImage, TextEncodeQwenImage21, QwenImage21Cache, MarkdownNote, ResolutionSelector, VAEDecode, SaveImage]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 0, "steps": 25, "width": 1024}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Qwen-Image-2.1 文生图标准版_2104450148830109698.json
@@ -21,41 +20,39 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 结构
 
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（13 个）：
-- `KSampler`
+- `KSampler` ★核心
 - `CR Text`
 - `MarkdownNote`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `EmptyLatentImage`
+- `EmptyLatentImage` ★核心
 - `TextEncodeQwenImage21`
 - `QwenImage21Cache`
 - `MarkdownNote`
 - `ResolutionSelector`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `0`
 - `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **77%**（10/13）
+覆盖率 **85%**（11/13）
 
-**有卡**：`KSampler`、`CR Text`、`MarkdownNote`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`QwenImage21Cache`
+**有卡**：`KSampler`、`CR Text`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`EmptyLatentImage`、`TextEncodeQwenImage21`、`QwenImage21Cache`、`ResolutionSelector`、`VAEDecode`、`SaveImage`
 
-**缺卡**（1）：`CR Text`
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、QwenImage21Cache

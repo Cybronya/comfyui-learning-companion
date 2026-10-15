@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 多合一V2.0_2046237389487611905.json
 hash: 6cb14edbee6401e5
-coverage: 0.364865
-learned_at: 2026-10-11 19:49:43
+coverage: 0.432432
+learned_at: 2026-10-15 22:47:11
 nodes: [KSampler, GetNode, WanVaceToVideo, GetNode, ModelSamplingSD3, PathchSageAttentionKJ, GetNode, GetNode, CLIPTextEncode, GetNode, GetNode, WanVideoVACEStartToEndFrame, VAEDecode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, Fast Groups Bypasser (rgthree), ImageResizeKJ, GetNode, GetNode, ImageResizeKJ, GetNode, GetNode, SetNode, SetNode, SetNode, Fast Groups Bypasser (rgthree), CLIPTextEncode, GetNode, GetNode, GetNode, GetNode, CR Text, SetNode, LoadImage, SetNode, INTConstant, SimpleMath+, GetNode, SimpleMath+, SDPoseOODProcessor, GetNode, SetNode, VHS_VideoCombine, Fast Groups Bypasser (rgthree), VHS_VideoCombine, GroundingDinoModelLoader_SDPose, YOLOModelLoader, SDPoseOODLoader, LoadImage, CLIPLoader, VAELoader, GetNode, SimpleMath+, GetNode, SetNode, SimpleMath+, GetNode, GetNode, SetNode, SetNode, SetNode, UNETLoader, VHS_LoadVideo, Note, INTConstant, INTConstant, INTConstant, INTConstant]
 patterns: []
-missing: [CR Text, SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "denoise": 1, "sampler_name": "ipndm", "scheduler": "sgm_uniform", "seed": 927483042550590, "steps": 6}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/Wan2.2 多合一V2.0_2046237389487611905.json
@@ -111,11 +111,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **36%**（27/74）
+覆盖率 **43%**（32/74）
 
-**有卡**：`KSampler`、`WanVaceToVideo`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`WanVideoVACEStartToEndFrame`、`VAEDecode`、`ImageResizeKJ`、`LoadImage`、`INTConstant`、`SDPoseOODProcessor`、`VHS_VideoCombine`、`GroundingDinoModelLoader_SDPose`、`YOLOModelLoader`、`SDPoseOODLoader`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`VHS_LoadVideo`
-
-**缺卡**（5）：`CR Text`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`KSampler`、`WanVaceToVideo`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`WanVideoVACEStartToEndFrame`、`VAEDecode`、`ImageResizeKJ`、`CR Text`、`LoadImage`、`INTConstant`、`SimpleMath+`、`SDPoseOODProcessor`、`VHS_VideoCombine`、`GroundingDinoModelLoader_SDPose`、`YOLOModelLoader`、`SDPoseOODLoader`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`VHS_LoadVideo`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、ImageResizeKJ
 
@@ -126,9 +124,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

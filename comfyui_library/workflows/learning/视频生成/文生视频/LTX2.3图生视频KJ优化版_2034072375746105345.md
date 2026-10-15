@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3图生视频KJ优化版_2034072375746105345.json
 hash: 3ef98bdfa5bdc51d
-coverage: 0.673913
-learned_at: 2026-10-11 03:48:36
+coverage: 0.76087
+learned_at: 2026-10-15 22:45:07
 nodes: [VAELoaderKJ, LTX2_NAG, LTX2SamplingPreviewOverride, GetNode, GetNode, UNETLoader, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAELoader, DualCLIPLoader, LTXVConditioning, VisualizeSigmasKJ, LTXVEmptyLatentAudio, LTXVConcatAVLatent, PathchSageAttentionKJ, SetNode, VAELoaderKJ, EmptyLTXVLatentVideo, BasicScheduler, LTXVPreprocess, ModelSamplingSD3, SetNode, ConditioningZeroOut, SamplerCustom, VAEDecode, KSamplerSelect, CLIPTextEncode, CLIPTextEncode, SimpleMath+, ImageResizeKJv2, LTXVImgToVideoInplaceKJ, easy positive, StringFunction|pysssss, SetNode, DF_Int_to_Float, GetNode, GetNode, AILab_QwenVL_Advanced, GetNode, Int, PrimitiveInt, ShowText|pysssss, PrimitiveInt, VHS_VideoCombine, LoadImage, easy positive]
 patterns: []
-missing: [SimpleMath+, StringFunction|pysssss, easy positive, easy positive]
+missing: []
 parameters: {"batch_size": 1, "height": 24, "width": 305}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识, 次要节点 `easy positive` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3图生视频KJ优化版_2034072375746105345.json
@@ -79,17 +78,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **67%**（31/46）
+覆盖率 **76%**（35/46）
 
-**有卡**：`VAELoaderKJ`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`UNETLoader`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAELoader`、`DualCLIPLoader`、`LTXVConditioning`、`VisualizeSigmasKJ`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`EmptyLTXVLatentVideo`、`BasicScheduler`、`LTXVPreprocess`、`ModelSamplingSD3`、`ConditioningZeroOut`、`SamplerCustom`、`VAEDecode`、`KSamplerSelect`、`CLIPTextEncode`、`ImageResizeKJv2`、`LTXVImgToVideoInplaceKJ`、`DF_Int_to_Float`、`AILab_QwenVL_Advanced`、`Int`、`VHS_VideoCombine`、`LoadImage`
-
-**缺卡**（4）：`SimpleMath+`、`StringFunction|pysssss`、`easy positive`、`easy positive`
+**有卡**：`VAELoaderKJ`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`UNETLoader`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAELoader`、`DualCLIPLoader`、`LTXVConditioning`、`VisualizeSigmasKJ`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`EmptyLTXVLatentVideo`、`BasicScheduler`、`LTXVPreprocess`、`ModelSamplingSD3`、`ConditioningZeroOut`、`SamplerCustom`、`VAEDecode`、`KSamplerSelect`、`CLIPTextEncode`、`SimpleMath+`、`ImageResizeKJv2`、`LTXVImgToVideoInplaceKJ`、`easy positive`、`StringFunction|pysssss`、`DF_Int_to_Float`、`AILab_QwenVL_Advanced`、`Int`、`VHS_VideoCombine`、`LoadImage`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy positive` 知识库中没有该节点类型的任何知识

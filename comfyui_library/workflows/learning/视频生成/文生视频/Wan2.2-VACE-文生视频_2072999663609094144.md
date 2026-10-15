@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-VACE-文生视频_2072999663609094144.json
 hash: e161eee6db05d3b2
-coverage: 0.82449
-learned_at: 2026-10-11 20:38:43
+coverage: 0.983673
+learned_at: 2026-10-15 22:47:13
 nodes: [CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, VAEDecode, TrimVideoLatent, KSamplerAdvanced, KSamplerAdvanced, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, easy seed, easy int, INTConstant, VHS_VideoCombine, String Literal, WanVaceToVideo, CLIPLoader, VAELoader, CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, ImageResizeKJ, INTConstant, GetImageSizeAndCount, WanVideoVACEStartToEndFrame, VAEDecode, TrimVideoLatent, VHS_VideoCombine, KSamplerAdvanced, KSamplerAdvanced, easy int, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, WanVaceToVideo, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, INTConstant, CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, ImageResizeKJ, INTConstant, GetImageSizeAndCount, WanVideoVACEStartToEndFrame, VAEDecode, TrimVideoLatent, VHS_VideoCombine, KSamplerAdvanced, KSamplerAdvanced, easy int, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, INTConstant, WanVaceToVideo, String Literal, String Literal, easy seed, LoadImage, LoadImage, CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, ImageResizeKJ, INTConstant, GetImageSizeAndCount, ImageResizeKJ, WanVideoVACEStartToEndFrame, VAEDecode, TrimVideoLatent, VHS_VideoCombine, KSamplerAdvanced, KSamplerAdvanced, easy int, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, WanVaceToVideo, String Literal, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, INTConstant, LoadImage, LoadImage, CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, VAEDecode, TrimVideoLatent, KSamplerAdvanced, KSamplerAdvanced, easy int, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, WanVaceToVideo, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, easy seed, MaskToImage, VHS_VideoCombine, INTConstant, String Literal, INTConstant, ImagePadKJ, GetImageSize+, ImageResizeKJ, JWImageExtractFromBatch, VHS_VideoCombine, VHS_LoadVideo, LayerMask: LoadFlorence2Model, LayerMask: SAM2Ultra, LayerMask: ObjectDetectorFL2, LayerMask: LoadFlorence2Model, LayerMask: SAM2Ultra, LayerMask: ObjectDetectorFL2, GetImageSize, Image Blank, ImageCompositeMasked, PreviewImage, PreviewImage, GetImageSize, Image Blank, ImageCompositeMasked, PreviewImage, ImageConcanate, INTConstant, CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, VAEDecode, TrimVideoLatent, KSamplerAdvanced, KSamplerAdvanced, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, VAELoader, UnetLoaderGGUF, UnetLoaderGGUF, easy seed, easy int, WanVaceToVideo, INTConstant, ImageResizeKJ, LoadImage, LoadImage, String Literal, LoadImage, LayerMask: ObjectDetectorFL2, VHS_VideoCombine, LayerUtility: PurgeVRAM V2, LayerMask: LoadFlorence2Model, LayerMask: SAM2Ultra, CLIPLoader, CLIPTextEncode, CFGZeroStarAndInit, CLIPTextEncode, VAEDecode, TrimVideoLatent, KSamplerAdvanced, KSamplerAdvanced, easy int, easy int, WanVideoEnhanceAVideoKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, CFGZeroStarAndInit, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, WanVaceToVideo, VAELoader, INTConstant, GrowMaskWithBlur, PreviewImage, INTConstant, VHS_VideoCombine, ImageResizeKJv2, InpaintPreprocessor, String Literal, easy seed, UnetLoaderGGUF, UnetLoaderGGUF, VHS_VideoCombine, VHS_LoadVideo, VHS_VideoCombine, UnetLoaderGGUF, UnetLoaderGGUF]
 patterns: []
-missing: [Image Blank, Image Blank, LayerMask: LoadFlorence2Model, LayerMask: LoadFlorence2Model, LayerMask: LoadFlorence2Model, LayerMask: ObjectDetectorFL2, LayerMask: ObjectDetectorFL2, LayerMask: ObjectDetectorFL2, LayerMask: SAM2Ultra, LayerMask: SAM2Ultra, LayerMask: SAM2Ultra, LayerUtility: PurgeVRAM V2, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, String Literal, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, easy int, GetImageSize+, easy seed, easy seed, easy seed, easy seed, easy seed]
+missing: []
 parameters: {"cfg": 10, "denoise": "beta", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `Image Blank` 知识库中没有该节点类型的任何知识, 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `easy int` 知识库中没有该节点类型的任何知识, 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/Wan2.2-VACE-文生视频_2072999663609094144.json
@@ -281,52 +280,8 @@ discoveries: [次要节点 `Image Blank` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **82%**（202/245）
+覆盖率 **98%**（241/245）
 
-**有卡**：`CLIPTextEncode`、`CFGZeroStarAndInit`、`VAEDecode`、`TrimVideoLatent`、`KSamplerAdvanced`、`WanVideoEnhanceAVideoKJ`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`INTConstant`、`VHS_VideoCombine`、`WanVaceToVideo`、`CLIPLoader`、`VAELoader`、`ImageResizeKJ`、`GetImageSizeAndCount`、`WanVideoVACEStartToEndFrame`、`UnetLoaderGGUF`、`LoadImage`、`MaskToImage`、`ImagePadKJ`、`JWImageExtractFromBatch`、`VHS_LoadVideo`、`GetImageSize`、`ImageCompositeMasked`、`ImageConcanate`、`GrowMaskWithBlur`、`ImageResizeKJv2`、`InpaintPreprocessor`
-
-**缺卡**（39）：`Image Blank`、`Image Blank`、`LayerMask: LoadFlorence2Model`、`LayerMask: LoadFlorence2Model`、`LayerMask: LoadFlorence2Model`、`LayerMask: ObjectDetectorFL2`、`LayerMask: ObjectDetectorFL2`、`LayerMask: ObjectDetectorFL2`、`LayerMask: SAM2Ultra`、`LayerMask: SAM2Ultra`、`LayerMask: SAM2Ultra`、`LayerUtility: PurgeVRAM V2`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`String Literal`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`easy int`、`GetImageSize+`、`easy seed`、`easy seed`、`easy seed`、`easy seed`、`easy seed`
+**有卡**：`CLIPTextEncode`、`CFGZeroStarAndInit`、`VAEDecode`、`TrimVideoLatent`、`KSamplerAdvanced`、`easy int`、`WanVideoEnhanceAVideoKJ`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`easy seed`、`INTConstant`、`VHS_VideoCombine`、`String Literal`、`WanVaceToVideo`、`CLIPLoader`、`VAELoader`、`ImageResizeKJ`、`GetImageSizeAndCount`、`WanVideoVACEStartToEndFrame`、`UnetLoaderGGUF`、`LoadImage`、`MaskToImage`、`ImagePadKJ`、`GetImageSize+`、`JWImageExtractFromBatch`、`VHS_LoadVideo`、`LayerMask: LoadFlorence2Model`、`LayerMask: SAM2Ultra`、`LayerMask: ObjectDetectorFL2`、`GetImageSize`、`Image Blank`、`ImageCompositeMasked`、`ImageConcanate`、`LayerUtility: PurgeVRAM V2`、`GrowMaskWithBlur`、`ImageResizeKJv2`、`InpaintPreprocessor`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、CFGZeroStarAndInit
-
-## 学习发现
-
-- 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image Blank` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: LoadFlorence2Model` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: ObjectDetectorFL2` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerMask: SAM2Ultra` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy int` 知识库中没有该节点类型的任何知识
-- 次要节点 `GetImageSize+` 仅有 Resolution 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明

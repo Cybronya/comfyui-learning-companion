@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 文生视频 文生MV_2037069470136541186.json
 hash: 786ac72ed347b500
-coverage: 0.758621
-learned_at: 2026-10-11 03:48:35
+coverage: 0.827586
+learned_at: 2026-10-15 22:45:00
 nodes: [KSamplerSelect, GetNode, INTConstant, GetNode, SetNode, MelBandRoFormerSampler, PathchSageAttentionKJ, Reroute, LTXVLatentUpsampler, BasicScheduler, LTXVConcatAVLatent, SoundFlow_GetLength, KSampler, TrimAudioDuration, CM_FloatToInt, LoadAudio, LTXAVTextEncoderLoader, MelBandRoFormerModelLoader, CheckpointLoaderSimple, LTXVAudioVAELoader, LoraLoaderModelOnly, SetNode, SetNode, CLIPTextEncode, CLIPTextEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, ImageSharpen, GetNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVConditioning, RandomNoise, CFGGuider, LTXVCropGuides, LatentUpscaleModelLoader, VAEDecodeTiled, easy cleanGpuUsed, Reroute, EmptyLTXVLatentVideo, GetNode, ResizeImagesByLongerEdge, LTXVPreprocess, INTConstant, SimpleMath+, INTConstant, SimpleMath+, Int, Int, SolidMask, LTXVImgToVideoInplace, LTX2SamplingPreviewOverride, PreviewAudio, LTXVAudioVAEEncode, SetLatentNoiseMask, easy showAnything, SimpleMath+, VHS_VideoCombine]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+, easy cleanGpuUsed]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 parameters: {"cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "sampler_name": "euler", "scheduler": "simple", "seed": 83752644517419, "steps": 4}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
 ---
 
 # 视频生成/文生视频/LTX2.3 文生视频 文生MV_2037069470136541186.json
@@ -96,11 +96,9 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **76%**（44/58）
+覆盖率 **83%**（48/58）
 
-**有卡**：`KSamplerSelect`、`INTConstant`、`MelBandRoFormerSampler`、`PathchSageAttentionKJ`、`LTXVLatentUpsampler`、`BasicScheduler`、`LTXVConcatAVLatent`、`SoundFlow_GetLength`、`KSampler`、`TrimAudioDuration`、`CM_FloatToInt`、`LoadAudio`、`LTXAVTextEncoderLoader`、`MelBandRoFormerModelLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LTXVSeparateAVLatent`、`ImageSharpen`、`SamplerCustomAdvanced`、`LTXVConditioning`、`RandomNoise`、`CFGGuider`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`EmptyLTXVLatentVideo`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`Int`、`SolidMask`、`LTXVImgToVideoInplace`、`LTX2SamplingPreviewOverride`、`PreviewAudio`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`VHS_VideoCombine`
-
-**缺卡**（4）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`KSamplerSelect`、`INTConstant`、`MelBandRoFormerSampler`、`PathchSageAttentionKJ`、`LTXVLatentUpsampler`、`BasicScheduler`、`LTXVConcatAVLatent`、`SoundFlow_GetLength`、`KSampler`、`TrimAudioDuration`、`CM_FloatToInt`、`LoadAudio`、`LTXAVTextEncoderLoader`、`MelBandRoFormerModelLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LTXVSeparateAVLatent`、`ImageSharpen`、`SamplerCustomAdvanced`、`LTXVConditioning`、`RandomNoise`、`CFGGuider`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`EmptyLTXVLatentVideo`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`SimpleMath+`、`Int`、`SolidMask`、`LTXVImgToVideoInplace`、`LTX2SamplingPreviewOverride`、`PreviewAudio`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`VHS_VideoCombine`
 
 **用到的条目**：KSampler、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
 
@@ -112,9 +110,5 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 学习发现
 
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
 - [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

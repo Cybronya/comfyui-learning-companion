@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Seedance2.0_文生视频_2037138846156066817.json
 hash: 8e89500167408439
 coverage: 1
-learned_at: 2026-10-10 23:05:28
+learned_at: 2026-10-15 22:46:58
 nodes: [SaveVideo, RH_RhartVideoSparkvideo20TextToVideo]
 patterns: []
 missing: []

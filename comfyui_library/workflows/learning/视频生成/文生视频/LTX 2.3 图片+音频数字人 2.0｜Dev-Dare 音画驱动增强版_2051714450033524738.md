@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json
 hash: 45ef1e03b04a07cd
-coverage: 0.906667
-learned_at: 2026-10-11 19:49:35
+coverage: 0.96
+learned_at: 2026-10-15 22:44:32
 nodes: [PrimitiveBoolean, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, CM_FloatToInt, JWImageResizeByLongerSide, LTXVConditioning, LTXVPreprocess, SolidMask, LTXVAudioVAEEncode, SetLatentNoiseMask, LoraLoaderModelOnly, PrimitiveInt, CFGGuider, CFGGuider, CFGGuider, LTXVImgToVideoConditionOnly, SamplerCustomAdvanced, LTXVLatentUpsampler, GetLatentSizeAndCount, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SamplerCustomAdvanced, image_scale_pixel_v2, MelBandRoFormerSampler, MelBandRoFormerModelLoader, Audio Duration (mtb), SimpleMath+, easy showAnything, Float, Float, GetLatentSizeAndCount, LTXVConcatAVLatent, LTXVSeparateAVLatent, VRAMReserver, TrimAudioDuration, LoraLoaderModelOnly, LoadImage, SaveVideo, LoraLoaderModelOnly, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, PromptRelayEncode, LTX2_NAG, CLIPTextEncode, LayerUtility: PurgeVRAM V2, LatentUpscaleModelLoader, LoadAudio, PrimitiveFloat, Seed Everywhere, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, Text, Text, Text]
 patterns: []
-missing: [Audio Duration (mtb), LayerUtility: PurgeVRAM V2, SimpleMath+, Seed Everywhere]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-dare-merged-distilled-1.1.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/LTX 2.3 图片+音频数字人 2.0｜Dev-Dare 音画驱动增强版_2051714450033524738.json
@@ -109,17 +108,8 @@ discoveries: [次要节点 `Audio Duration (mtb)` 知识库中没有该节点类
 
 ## 知识
 
-覆盖率 **91%**（68/75）
+覆盖率 **96%**（72/75）
 
-**有卡**：`PrimitiveBoolean`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`CM_FloatToInt`、`JWImageResizeByLongerSide`、`LTXVConditioning`、`LTXVPreprocess`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXVImgToVideoConditionOnly`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`GetLatentSizeAndCount`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`image_scale_pixel_v2`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`Float`、`VRAMReserver`、`TrimAudioDuration`、`LoadImage`、`SaveVideo`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`LTX2_NAG`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LoadAudio`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`Text`
-
-**缺卡**（4）：`Audio Duration (mtb)`、`LayerUtility: PurgeVRAM V2`、`SimpleMath+`、`Seed Everywhere`
+**有卡**：`PrimitiveBoolean`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`CM_FloatToInt`、`JWImageResizeByLongerSide`、`LTXVConditioning`、`LTXVPreprocess`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXVImgToVideoConditionOnly`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`GetLatentSizeAndCount`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`image_scale_pixel_v2`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`Audio Duration (mtb)`、`SimpleMath+`、`Float`、`VRAMReserver`、`TrimAudioDuration`、`LoadImage`、`SaveVideo`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`PromptRelayEncode`、`LTX2_NAG`、`CLIPTextEncode`、`LayerUtility: PurgeVRAM V2`、`LatentUpscaleModelLoader`、`LoadAudio`、`Seed Everywhere`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`Text`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
-
-## 学习发现
-
-- 次要节点 `Audio Duration (mtb)` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: PurgeVRAM V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed Everywhere` 仅有 KSampler 的通用知识，没有该节点自己的说明

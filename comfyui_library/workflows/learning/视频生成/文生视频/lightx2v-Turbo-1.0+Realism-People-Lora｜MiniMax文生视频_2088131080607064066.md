@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/lightx2v-Turbo-1.0+Realism-People-Lora｜MiniMax文生视频_2088131080607064066.json
 hash: 9624cb4dafb40a81
-coverage: 0.912281
-learned_at: 2026-10-11 20:53:49
+coverage: 0.938596
+learned_at: 2026-10-15 22:47:21
 nodes: [ComfyMathExpression, CLIPLoader, VAELoader, VAELoader, RandomNoise, KSamplerSelect, BasicGuider, SamplerCustomAdvanced, Text Find and Replace, easy showAnything, KSamplerSelect, BasicGuider, RandomNoise, CreateVideo, BasicScheduler, KSamplerSelect, RandomNoise, BasicScheduler, CreateVideo, VAEDecode, SamplerCustomAdvanced, VAEDecode, KSamplerSelect, RandomNoise, SaveVideo, CreateVideo, BasicGuider, BasicScheduler, VAEDecode, VAEDecode, VAEDecodeAudio, SaveVideo, Seed (rgthree), ImageConcatMulti, SamplerCustomAdvanced, SaveVideo, SamplerCustomAdvanced, BasicScheduler, KSamplerSelect, SaveVideo, CreateVideo, BasicScheduler, VAEDecode, VAEDecodeAudio, SamplerCustomAdvanced, RandomNoise, BasicGuider, BasicGuider, KSamplerSelect, VAEDecodeAudio, CreateVideo, VAEDecode, SaveVideo, BasicGuider, SamplerCustomAdvanced, BasicScheduler, LoraLoaderModelOnly, MiniMaxH3ImageToVideo, UNETLoader, LoraLoaderModelOnly, RandomNoise, SaveVideo, ImageConcatMulti, Reroute, ImageConcatMulti, VAEDecodeAudio, VAEDecodeAudio, CreateVideo, VAEDecodeAudio, PreviewAudio, PreviewAudio, PreviewAudio, PrimitiveFloat, RH_LLMAPI_Pro_Node, CR Text, ImageConcatMulti, TextOverlay, TextOverlay, TextOverlay, TextOverlay, TextOverlay, TextOverlay, ResolutionSelector, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, JjkText, solarL_SaveImagesToZip, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
 patterns: [text_to_image]
-missing: [CR Text, Text Find and Replace, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Text Find and Replace` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/lightx2v-Turbo-1.0+Realism-People-Lora｜MiniMax文生视频_2088131080607064066.json
@@ -156,11 +156,9 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **91%**（104/114）
+覆盖率 **94%**（107/114）
 
-**有卡**：`ComfyMathExpression`、`CLIPLoader`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`SamplerCustomAdvanced`、`CreateVideo`、`BasicScheduler`、`VAEDecode`、`SaveVideo`、`VAEDecodeAudio`、`ImageConcatMulti`、`LoraLoaderModelOnly`、`MiniMaxH3ImageToVideo`、`UNETLoader`、`PreviewAudio`、`RH_LLMAPI_Pro_Node`、`TextOverlay`、`ResolutionSelector`、`VHS_VideoCombine`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`solarL_SaveImagesToZip`
-
-**缺卡**（3）：`CR Text`、`Text Find and Replace`、`Seed (rgthree)`
+**有卡**：`ComfyMathExpression`、`CLIPLoader`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`SamplerCustomAdvanced`、`Text Find and Replace`、`CreateVideo`、`BasicScheduler`、`VAEDecode`、`SaveVideo`、`VAEDecodeAudio`、`Seed (rgthree)`、`ImageConcatMulti`、`LoraLoaderModelOnly`、`MiniMaxH3ImageToVideo`、`UNETLoader`、`PreviewAudio`、`RH_LLMAPI_Pro_Node`、`CR Text`、`TextOverlay`、`ResolutionSelector`、`VHS_VideoCombine`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -171,7 +169,4 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 学习发现
 
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Find and Replace` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_flux2.json
 hash: b7f0a5d09b1a603a
 official: true
 coverage: 0.857143
-learned_at: 2026-10-10 22:43:50
+learned_at: 2026-10-15 22:24:48
 nodes: [LoadImage, LoadImage, LoadImage, LoadImage, SaveImage, Flux2ImageNode, MarkdownNote]
 patterns: []
 missing: []
@@ -37,4 +37,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveImage`、`Flux2ImageNode`
 
-**用到的条目**：LoadImage、Flux2ImageNode、SaveImage、sd15-t2i-basic、sd15-t2i-lora、node、CheckpointLoaderSimple、UNETLoader
+**用到的条目**：LoadImage、Flux2ImageNode、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Image Save、node、Image Load

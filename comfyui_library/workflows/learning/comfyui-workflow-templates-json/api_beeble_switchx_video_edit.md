@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/api_beeble_switchx_video_edit.json
 hash: 337d004a1cc32779
 official: true
-coverage: 0.7
-learned_at: 2026-10-10 22:43:11
+coverage: 0.8
+learned_at: 2026-10-15 22:24:47
 nodes: [LoadImage, MarkdownNote, BeebleSwitchXVideoEdit, LoadVideo, SaveVideo, SaveVideo, GetVideoComponents, Video Slice, GetImageSize, PreviewAny]
 patterns: []
-missing: [Video Slice]
-discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/api_beeble_switchx_video_edit.json
@@ -37,14 +36,8 @@ discoveries: [次要节点 `Video Slice` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **70%**（7/10）
+覆盖率 **80%**（8/10）
 
-**有卡**：`LoadImage`、`BeebleSwitchXVideoEdit`、`LoadVideo`、`SaveVideo`、`GetVideoComponents`、`GetImageSize`
+**有卡**：`LoadImage`、`BeebleSwitchXVideoEdit`、`LoadVideo`、`SaveVideo`、`GetVideoComponents`、`Video Slice`、`GetImageSize`
 
-**缺卡**（1）：`Video Slice`
-
-**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveVideo、GetVideoComponents、LoadVideo、BeebleSwitchXVideoEdit、sd15-t2i-basic
-
-## 学习发现
-
-- 次要节点 `Video Slice` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、GetImageSize、GetImageSize、SaveVideo、GetVideoComponents、LoadVideo、BeebleSwitchXVideoEdit、Video Slice

@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3+Qwen3.5生成武打电影视频_2030549062293921794.json
 hash: 16d60896b22411de
-coverage: 0.796296
-learned_at: 2026-10-11 03:16:45
+coverage: 0.851852
+learned_at: 2026-10-15 22:44:39
 nodes: [LTXVConcatAVLatent, LTXVAudioVAELoader, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVCropGuides, LoraLoaderModelOnly, ResizeImagesByLongerEdge, LTXVLatentUpsampler, LTXVImgToVideoInplace, ResizeImageMaskNode, KSamplerSelect, Reroute, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVAudioVAEDecode, CLIPTextEncode, LTXVConditioning, LTXVConcatAVLatent, LTXVEmptyLatentAudio, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LatentUpscaleModelLoader, CLIPTextEncode, CFGGuider, VAEDecodeTiled, LTXVPreprocess, MarkdownNote, CreateVideo, MarkdownNote, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXAVTextEncoderLoader, PrimitiveInt, PrimitiveInt, PrimitiveInt, llama_cpp_parameters, PrimitiveInt, llama_cpp_model_loader, CheckpointLoaderSimple, RandomNoise, RandomNoise, CFGGuider, LoadImage, PrimitiveBoolean, PreviewAny, SaveVideo, Label (rgthree), Label (rgthree), llama_cpp_instruct_adv, CR Text]
 patterns: []
-missing: [CR Text, Label (rgthree), Label (rgthree)]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3+Qwen3.5生成武打电影视频_2030549062293921794.json
@@ -88,16 +87,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **80%**（43/54）
+覆盖率 **85%**（46/54）
 
-**有卡**：`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`CFGGuider`、`VAEDecodeTiled`、`LTXVPreprocess`、`CreateVideo`、`ComfyMathExpression`、`LTXAVTextEncoderLoader`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`CheckpointLoaderSimple`、`RandomNoise`、`LoadImage`、`PrimitiveBoolean`、`SaveVideo`、`llama_cpp_instruct_adv`
-
-**缺卡**（3）：`CR Text`、`Label (rgthree)`、`Label (rgthree)`
+**有卡**：`LTXVConcatAVLatent`、`LTXVAudioVAELoader`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`ResizeImageMaskNode`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`CFGGuider`、`VAEDecodeTiled`、`LTXVPreprocess`、`CreateVideo`、`ComfyMathExpression`、`LTXAVTextEncoderLoader`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`CheckpointLoaderSimple`、`RandomNoise`、`LoadImage`、`PrimitiveBoolean`、`SaveVideo`、`Label (rgthree)`、`llama_cpp_instruct_adv`、`CR Text`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

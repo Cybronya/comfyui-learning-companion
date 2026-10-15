@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/wan2.2S2V+香蕉模型=批量爆款二创视频（AI带货+模型换装+唱歌跳舞）_1973620998547353601.json
 hash: 361b86717614c397
 coverage: 0.5625
-learned_at: 2026-10-10 23:09:40
+learned_at: 2026-10-15 22:47:35
 nodes: [WanVideoDecode, Note, MarkdownNote, WanVideoSetLoRAs, WanVideoBlockSwap, Note, WanVideoSetBlockSwap, SetNode, GetNode, GetNode, MelBandRoFormerSampler, NormalizeAudioLoudness, MarkdownNote, SetNode, SetNode, GetNode, GetNode, GetImageRangeFromBatch, INTConstant, INTConstant, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoVAELoader, Reroute, SetNode, Reroute, WanVideoTextEncodeCached, ImageResizeKJv2, PrimitiveStringMultiline, PrimitiveNode, GetNode, SetNode, RH_Nano_Banana_Image2Image, PreviewImage, WanVideoEmptyEmbeds, MelBandRoFormerModelLoader, AudioEncoderLoader, WanVideoSampler, PreviewAny, ImageResizeKJv2, DWPreprocessor, VHS_VideoCombine, WanVideoEncode, WanVideoTorchCompileSettings, Note, GetImageSizeAndCount, GetNode, ColorMatch, VHS_LoadVideo, LoadImage, ImageResizeKJv2, PreviewImage, RH_Translator, VHS_LoadVideo, VHS_LoadVideo, WanVideoEncode, WanVideoAddS2VEmbeds, AudioEncoderEncode, VHS_VideoCombine]
 patterns: []
 missing: []

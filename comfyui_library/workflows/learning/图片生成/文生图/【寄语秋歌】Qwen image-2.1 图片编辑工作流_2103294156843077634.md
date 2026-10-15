@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/图片生成/文生图/【寄语秋歌】Qwen image-2.1 图片编辑工作流_2103294156843077634.json
 hash: 3214665eed644a03
 coverage: 0.621622
-learned_at: 2026-10-10 20:59:30
+learned_at: 2026-10-15 22:28:03
 nodes: [ResolutionSelector, LoadImage, EmptyLatentImage, KSampler, ComfySwitchNode, QwenImage21Cache, LoadImage, LoadImage, SetNode, SetNode, SetNode, SetNode, GetNode, TextEncodeQwenImage21, GetNode, GetNode, GetNode, Fast Groups Bypasser (rgthree), ResizeImageMaskNode, VAEEncodeTiled, VAELoader, SeedVR2Preprocess, SeedVR2Conditioning, KSampler, Note, Note, VAEDecodeTiled, SeedVR2PostProcessing, PreviewImage, UNETLoader, CLIPLoader, VAELoader, UNETLoader, Fast Groups Bypasser (rgthree), LoadImage, VAEDecode, SaveImage]
 patterns: []
 missing: []
@@ -22,11 +22,13 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
+
 **节点**（37 个）：
 - `ResolutionSelector`
 - `LoadImage`
-- `EmptyLatentImage`
-- `KSampler`
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
 - `ComfySwitchNode`
 - `QwenImage21Cache`
 - `LoadImage`
@@ -42,42 +44,44 @@ discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加�
 - `GetNode`
 - `Fast Groups Bypasser (rgthree)`
 - `ResizeImageMaskNode`
-- `VAEEncodeTiled`
+- `VAEEncodeTiled` ★核心
 - `VAELoader`
 - `SeedVR2Preprocess`
 - `SeedVR2Conditioning`
-- `KSampler`
+- `KSampler` ★核心
 - `Note`
 - `Note`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `SeedVR2PostProcessing`
 - `PreviewImage`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `CLIPLoader`
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `Fast Groups Bypasser (rgthree)`
 - `LoadImage`
-- `VAEDecode`
+- `VAEDecode` ★核心
 - `SaveImage`
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
+- `width` = `1024`
 - `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
+- `batch_size` = `1`
 - `seed` = `112174012753731`
 - `steps` = `1`
-- `width` = `1024`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 
 ## 知识
 
 覆盖率 **62%**（23/37）
 
-**有卡**：`ResolutionSelector`、`LoadImage`、`EmptyLatentImage`、`KSampler`、`ComfySwitchNode`、`QwenImage21Cache`、`SetNode`、`GetNode`、`TextEncodeQwenImage21`、`Fast Groups Bypasser (rgthree)`、`ResizeImageMaskNode`、`VAEEncodeTiled`、`VAELoader`、`SeedVR2Preprocess`、`SeedVR2Conditioning`
+**有卡**：`ResolutionSelector`、`LoadImage`、`EmptyLatentImage`、`KSampler`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`ResizeImageMaskNode`、`VAEEncodeTiled`、`VAELoader`、`SeedVR2Preprocess`、`SeedVR2Conditioning`、`VAEDecodeTiled`、`SeedVR2PostProcessing`、`UNETLoader`、`CLIPLoader`、`VAEDecode`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、LoadImage
 
 ## 参数体检
 

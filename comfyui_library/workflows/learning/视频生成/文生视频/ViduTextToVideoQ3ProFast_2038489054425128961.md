@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/ViduTextToVideoQ3ProFast_2038489054425128961.json
 hash: 913eb88bd51f6bd3
 coverage: 1
-learned_at: 2026-10-11 03:48:38
+learned_at: 2026-10-15 22:47:03
 nodes: [RH_ViduTextToVideoQ3ProFast, SaveVideo]
 patterns: []
 missing: []

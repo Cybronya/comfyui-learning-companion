@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3-文生视频_2037040523202007042.json
 hash: 9614716719b7d3fa
 coverage: 0.864865
-learned_at: 2026-10-11 03:48:35
+learned_at: 2026-10-15 22:44:41
 nodes: [LTXVScheduler, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, KSamplerSelect, RandomNoise, Reroute, KSampler, LTXVSeparateAVLatent, LTXVCropGuides, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, PrimitiveInt, GetImageSize, PrimitiveInt, ImageScaleBy, EmptyImage, LTXAVTextEncoderLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, DualCLIPLoader, LTXVAudioVAELoader, PreviewAny, CLIPTextEncode, PrimitiveFloat, LTXVConditioning, LTXVConcatAVLatent, LTXVConcatAVLatent, VAEDecode, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SaveVideo, LatentUpscaleModelLoader, LTXVLatentUpsampler, CLIPTextEncode, TextGenerateLTX2Prompt]
 patterns: []
 missing: []

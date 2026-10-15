@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json
 hash: d8e02ec44edc91e4
-coverage: 0.85
-learned_at: 2026-10-11 03:48:35
+coverage: 0.95
+learned_at: 2026-10-15 22:45:03
 nodes: [ManualSigmas, CFGGuider, SamplerCustomAdvanced, SamplerCustomAdvanced, LatentUpscaleModelLoader, LTXVSeparateAVLatent, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, UNETLoader, DualCLIPLoader, LTXVSeparateAVLatent, VAELoaderKJ, VAELoaderKJ, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, SimpleMath+, SimpleMath+, LTXVPreprocess, LTXVPreprocess, LTXVPreprocess, LTXVPreprocess, SimpleMath+, SimpleMath+, SimpleMath+, EmptyLTXVLatentVideo, VAEDecodeTiled, LTXVAudioVAEDecode, PrimitiveInt, SimpleMath+, Reroute, CFGGuider, KSamplerSelect, LTXVLatentUpsampler, LoadImage, QZ_ResolutionPreset, SaveImage, GuHaiAutoImageSplit, Int, LTXVConcatAVLatent, LTXVCropGuides, LTXVAddGuideMulti, CLIPTextEncode, ComfyMathExpression, LTXVEmptyLatentAudio, CreateVideo, CLIPTextEncode, LTXVConditioning, LTXVImgToVideoInplace, easy showAnything, SaveVideo, RH_LLMAPI_Pro_Node, LTXVConcatAVLatent]
 patterns: []
-missing: [SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3-多宫格生视频-画质感人_2038650134229159937.json
@@ -93,19 +92,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **85%**（51/60）
+覆盖率 **95%**（57/60）
 
-**有卡**：`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LatentUpscaleModelLoader`、`LTXVSeparateAVLatent`、`RandomNoise`、`KSamplerSelect`、`UNETLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`ImageFromBatch`、`ImageResizeKJv2`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`LoadImage`、`QZ_ResolutionPreset`、`SaveImage`、`GuHaiAutoImageSplit`、`Int`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`LTXVAddGuideMulti`、`CLIPTextEncode`、`ComfyMathExpression`、`LTXVEmptyLatentAudio`、`CreateVideo`、`LTXVConditioning`、`LTXVImgToVideoInplace`、`SaveVideo`、`RH_LLMAPI_Pro_Node`
-
-**缺卡**（6）：`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`、`SimpleMath+`
+**有卡**：`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LatentUpscaleModelLoader`、`LTXVSeparateAVLatent`、`RandomNoise`、`KSamplerSelect`、`UNETLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`ImageFromBatch`、`ImageResizeKJv2`、`SimpleMath+`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`LoadImage`、`QZ_ResolutionPreset`、`SaveImage`、`GuHaiAutoImageSplit`、`Int`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`LTXVAddGuideMulti`、`CLIPTextEncode`、`ComfyMathExpression`、`LTXVEmptyLatentAudio`、`CreateVideo`、`LTXVConditioning`、`LTXVImgToVideoInplace`、`SaveVideo`、`RH_LLMAPI_Pro_Node`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

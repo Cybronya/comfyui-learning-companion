@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/电商模特IP Lora 视频版 wan2.2_1985602072307552257.json
 hash: 6e310012878adce8
-coverage: 0.826087
-learned_at: 2026-10-11 02:45:05
+coverage: 0.913043
+learned_at: 2026-10-15 22:48:55
 nodes: [CLIPLoader, VAELoader, easy seed, UNETLoader, UNETLoader, LoraLoaderModelOnly, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, EmptyHunyuanLatentVideo, ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, VHS_VideoCombine, WanMoeKSampler, LayerUtility: PurgeVRAM, VAEDecode, LoraLoaderModelOnly, Text, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, Note]
 patterns: []
-missing: [LayerUtility: PurgeVRAM, easy seed]
+missing: []
 parameters: {"cfg": 8, "denoise": "lcm", "sampler_name": 1, "scheduler": 1, "seed": 0.875, "steps": "randomize"}
-discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 视频生成/文生视频/电商模特IP Lora 视频版 wan2.2_1985602072307552257.json
@@ -59,15 +58,8 @@ discoveries: [次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点
 
 ## 知识
 
-覆盖率 **83%**（19/23）
+覆盖率 **91%**（21/23）
 
-**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`WanMoeKSampler`、`VAEDecode`、`Text`
+**有卡**：`CLIPLoader`、`VAELoader`、`easy seed`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`WanMoeKSampler`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`Text`
 
-**缺卡**（2）：`LayerUtility: PurgeVRAM`、`easy seed`
-
-**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、EmptyHunyuanLatentVideo
-
-## 学习发现
-
-- 次要节点 `LayerUtility: PurgeVRAM` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、easy seed

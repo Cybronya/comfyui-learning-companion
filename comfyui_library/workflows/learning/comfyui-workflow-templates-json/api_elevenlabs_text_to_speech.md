@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_elevenlabs_t
 hash: ee2ab1a81b784db7
 official: true
 coverage: 0.75
-learned_at: 2026-10-10 22:43:45
+learned_at: 2026-10-15 22:24:48
 nodes: [ElevenLabsTextToSpeech, LoadAudio, ElevenLabsVoiceSelector, ElevenLabsInstantVoiceClone, RecordAudio, Note, SaveAudioAdvanced, MarkdownNote]
 patterns: []
 missing: []

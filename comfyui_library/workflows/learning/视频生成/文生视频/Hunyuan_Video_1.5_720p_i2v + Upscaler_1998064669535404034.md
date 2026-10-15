@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Hunyuan_Video_1.5_720p_i2v + Upscaler_1998064669535404034.json
 hash: 375384a42796a2f3
-coverage: 0.847826
-learned_at: 2026-10-11 02:57:36
+coverage: 0.869565
+learned_at: 2026-10-15 22:44:28
 nodes: [CLIPVisionLoader, DualCLIPLoader, LatentUpscaleModelLoader, UNETLoader, CLIPVisionEncode, HunyuanVideo15SuperResolution, CLIPTextEncode, CreateVideo, VAELoader, EasyCache, VAEDecode, BasicScheduler, RandomNoise, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, RandomNoise, KSamplerSelect, ModelSamplingSD3, BasicScheduler, SplitSigmas, DisableNoise, SamplerCustomAdvanced, SamplerCustomAdvanced, CFGGuider, CFGGuider, Note, HunyuanVideo15LatentUpscaleWithModel, SaveVideo, UNETLoader, VAEDecodeTiled, SaveVideo, EasyCache, ModelSamplingSD3, MarkdownNote, Note, MarkdownNote, VAEDecode, VAEDecodeTiled, CreateVideo, Label (rgthree), MarkdownNote, LoadImage, CLIPTextEncode, Note, HunyuanVideo15ImageToVideo]
 patterns: []
-missing: [Label (rgthree)]
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Hunyuan_Video_1.5_720p_i2v + Upscaler_1998064669535404034.json
@@ -72,14 +71,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **85%**（39/46）
+覆盖率 **87%**（40/46）
 
-**有卡**：`CLIPVisionLoader`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`UNETLoader`、`CLIPVisionEncode`、`HunyuanVideo15SuperResolution`、`CLIPTextEncode`、`CreateVideo`、`VAELoader`、`EasyCache`、`VAEDecode`、`BasicScheduler`、`RandomNoise`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`ModelSamplingSD3`、`SplitSigmas`、`DisableNoise`、`HunyuanVideo15LatentUpscaleWithModel`、`SaveVideo`、`VAEDecodeTiled`、`LoadImage`、`HunyuanVideo15ImageToVideo`
-
-**缺卡**（1）：`Label (rgthree)`
+**有卡**：`CLIPVisionLoader`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`UNETLoader`、`CLIPVisionEncode`、`HunyuanVideo15SuperResolution`、`CLIPTextEncode`、`CreateVideo`、`VAELoader`、`EasyCache`、`VAEDecode`、`BasicScheduler`、`RandomNoise`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`ModelSamplingSD3`、`SplitSigmas`、`DisableNoise`、`HunyuanVideo15LatentUpscaleWithModel`、`SaveVideo`、`VAEDecodeTiled`、`Label (rgthree)`、`LoadImage`、`HunyuanVideo15ImageToVideo`
 
 **用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识

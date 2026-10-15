@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/颠覆想象力：LTX2.0多模态文生视频自动优化提示词工作流自动加音效_2015594786417287170.json
 hash: fa745aa13dde9365
-coverage: 0.8
-learned_at: 2026-10-11 03:07:16
+coverage: 0.854545
+learned_at: 2026-10-15 22:49:06
 nodes: [EmptyImage, ImageScaleBy, KSamplerSelect, LTXVSeparateAVLatent, PrimitiveInt, CheckpointLoaderSimple, CFGGuider, Reroute, RandomNoise, LTXVAudioVAEDecode, SamplerCustomAdvanced, LTXVScheduler, LTXAVTextEncoderLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVLatentUpsampler, CFGGuider, RandomNoise, ManualSigmas, KSamplerSelect, VAEDecodeTiled, JoinStrings, ShowText|pysssss, GetImageSize, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, LTXVConcatAVLatent, Qwen3VL_Advanced, TextInput_, JoinStrings, TextInput_, Fast Groups Bypasser (rgthree), LTXVAudioVAELoader, LatentUpscaleModelLoader, CLIPTextEncode, CLIPTextEncode, MemoryCleaner, LTXVConcatAVLatent, SimpleMath+, Note, Int, PrimitiveInt, PrimitiveFloat, LTXVConditioning, easy cleanGpuUsed, easy showAnything, TextInput_, Int, Int, easy cleanGpuUsed, VHS_VideoCombine, VHS_VideoCombine]
 patterns: []
-missing: [SimpleMath+, easy cleanGpuUsed, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/颠覆想象力：LTX2.0多模态文生视频自动优化提示词工作流自动加音效_2015594786417287170.json
@@ -89,16 +88,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **80%**（44/55）
+覆盖率 **85%**（47/55）
 
-**有卡**：`EmptyImage`、`ImageScaleBy`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`CheckpointLoaderSimple`、`CFGGuider`、`RandomNoise`、`LTXVAudioVAEDecode`、`SamplerCustomAdvanced`、`LTXVScheduler`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`ManualSigmas`、`VAEDecodeTiled`、`JoinStrings`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`Qwen3VL_Advanced`、`TextInput_`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`MemoryCleaner`、`Int`、`LTXVConditioning`、`VHS_VideoCombine`
-
-**缺卡**（3）：`SimpleMath+`、`easy cleanGpuUsed`、`easy cleanGpuUsed`
+**有卡**：`EmptyImage`、`ImageScaleBy`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`CheckpointLoaderSimple`、`CFGGuider`、`RandomNoise`、`LTXVAudioVAEDecode`、`SamplerCustomAdvanced`、`LTXVScheduler`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`ManualSigmas`、`VAEDecodeTiled`、`JoinStrings`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`Qwen3VL_Advanced`、`TextInput_`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`CLIPTextEncode`、`MemoryCleaner`、`SimpleMath+`、`Int`、`LTXVConditioning`、`easy cleanGpuUsed`、`VHS_VideoCombine`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

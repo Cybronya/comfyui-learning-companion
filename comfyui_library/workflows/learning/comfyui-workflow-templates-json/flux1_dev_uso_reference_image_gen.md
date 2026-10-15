@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/flux1_dev_uso_reference_image_gen.json
 hash: ecdbb10477186cf9
 official: true
-coverage: 0.625
-learned_at: 2026-10-10 22:47:07
+coverage: 0.875
+learned_at: 2026-10-15 22:24:53
 nodes: [LoadImage, SaveImage, LoadImage, LoadImage, MarkdownNote, SaveImage, db9e0685-d161-4026-b52c-d0cd40ff7381, ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50]
 patterns: []
-missing: [db9e0685-d161-4026-b52c-d0cd40ff7381, ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50]
-discoveries: [次要节点 `db9e0685-d161-4026-b52c-d0cd40ff7381` 知识库中没有该节点类型的任何知识, 次要节点 `ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/flux1_dev_uso_reference_image_gen.json
@@ -35,15 +34,8 @@ discoveries: [次要节点 `db9e0685-d161-4026-b52c-d0cd40ff7381` 知识库中�
 
 ## 知识
 
-覆盖率 **62%**（5/8）
+覆盖率 **88%**（7/8）
 
-**有卡**：`LoadImage`、`SaveImage`
+**有卡**：`LoadImage`、`SaveImage`、`db9e0685-d161-4026-b52c-d0cd40ff7381`、`ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50`
 
-**缺卡**（2）：`db9e0685-d161-4026-b52c-d0cd40ff7381`、`ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50`
-
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
-
-## 学习发现
-
-- 次要节点 `db9e0685-d161-4026-b52c-d0cd40ff7381` 知识库中没有该节点类型的任何知识
-- 次要节点 `ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50` 知识库中没有该节点类型的任何知识
+**用到的条目**：LoadImage、SaveImage、db9e0685-d161-4026-b52c-d0cd40ff7381、ee9a1c5a-924e-4fbb-8aaf-f3153e83bb50、sd15-t2i-basic、sd15-t2i-lora、Image Save、Image Load

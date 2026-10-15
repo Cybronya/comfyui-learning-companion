@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/CausVid-3步720文生视频(Wan2.1&MoviiGen&Skyreels)_2072999770106667008.json
 hash: 4578e74a25ba65dc
-coverage: 0.95
-learned_at: 2026-10-11 20:38:32
+coverage: 1
+learned_at: 2026-10-15 22:44:06
 nodes: [LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEEncode, WanVideoEnhanceAVideo, WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, WanVideoVACEModelSelect, INTConstant, WanVideoTextEncode, String Literal, WanVideoModelLoader, WanVideoLoraSelect, WanVideoSampler, WanVideoBlockSwap, INTConstant, INTConstant, VHS_VideoCombine, WanVideoDecode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoEnhanceAVideo, WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, WanVideoVACEModelSelect, INTConstant, WanVideoTextEncode, String Literal, WanVideoLoraSelect, WanVideoSampler, WanVideoTorchCompileSettings, VHS_VideoCombine, WanVideoDecode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEEncode, WanVideoEnhanceAVideo, WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, WanVideoVACEModelSelect, INTConstant, WanVideoTextEncode, String Literal, WanVideoModelLoader, WanVideoLoraSelect, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoBlockSwap, INTConstant, INTConstant, VHS_VideoCombine, WanVideoDecode, WanVideoModelLoader, WanVideoTorchCompileSettings, INTConstant, INTConstant, WanVideoBlockSwap, WanVideoVACEEncode]
 patterns: []
-missing: [String Literal, String Literal, String Literal]
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识, 次要节点 `String Literal` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/CausVid-3步720文生视频(Wan2.1&MoviiGen&Skyreels)_2072999770106667008.json
@@ -86,16 +85,8 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **95%**（57/60）
+覆盖率 **100%**（60/60）
 
-**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncode`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoSampler`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoTorchCompileSettings`
-
-**缺卡**（3）：`String Literal`、`String Literal`、`String Literal`
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncode`、`String Literal`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoSampler`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoTorchCompileSettings`
 
 **用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect、INTConstant
-
-## 学习发现
-
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_ltx2_5_flf2v
 hash: d26fb425b504c03e
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:44:47
+learned_at: 2026-10-15 22:24:49
 nodes: [SaveVideo, LoadImage, LoadImage, LtxApi25ImageToVideo]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`SaveVideo`、`LoadImage`、`LtxApi25ImageToVideo`
 
-**用到的条目**：LoadImage、SaveVideo、LtxApi25ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveVideo、LtxApi25ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage、CS_Preview_Any

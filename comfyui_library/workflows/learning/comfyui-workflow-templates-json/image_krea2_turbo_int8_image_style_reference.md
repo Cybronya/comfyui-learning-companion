@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json
 hash: 9c557aa0aec114ce
 official: true
-coverage: 0.666667
-learned_at: 2026-10-10 22:48:07
+coverage: 0.833333
+learned_at: 2026-10-15 22:24:54
 nodes: [SaveImage, b0e5ca93-2731-42b9-8e0a-d28ea851ff81, MarkdownNote, LoadImage, ResolutionSelector, GetImageSize]
 patterns: []
-missing: [b0e5ca93-2731-42b9-8e0a-d28ea851ff81]
-discoveries: [次要节点 `b0e5ca93-2731-42b9-8e0a-d28ea851ff81` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_krea2_turbo_int8_image_style_reference.json
@@ -33,14 +32,8 @@ discoveries: [次要节点 `b0e5ca93-2731-42b9-8e0a-d28ea851ff81` 知识库中�
 
 ## 知识
 
-覆盖率 **67%**（4/6）
+覆盖率 **83%**（5/6）
 
-**有卡**：`SaveImage`、`LoadImage`、`ResolutionSelector`、`GetImageSize`
+**有卡**：`SaveImage`、`b0e5ca93-2731-42b9-8e0a-d28ea851ff81`、`LoadImage`、`ResolutionSelector`、`GetImageSize`
 
-**缺卡**（1）：`b0e5ca93-2731-42b9-8e0a-d28ea851ff81`
-
-**用到的条目**：ResolutionSelector、LoadImage、GetImageSize、GetImageSize、SaveImage、sd15-t2i-basic、sd15-t2i-lora、GetImage
-
-## 学习发现
-
-- 次要节点 `b0e5ca93-2731-42b9-8e0a-d28ea851ff81` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、LoadImage、GetImageSize、GetImageSize、SaveImage、b0e5ca93-2731-42b9-8e0a-d28ea851ff81、sd15-t2i-basic、sd15-t2i-lora

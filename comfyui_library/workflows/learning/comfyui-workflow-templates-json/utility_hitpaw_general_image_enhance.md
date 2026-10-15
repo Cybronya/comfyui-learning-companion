@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/utility_hitpaw_g
 hash: 04028120c083e395
 official: true
 coverage: 0.8
-learned_at: 2026-10-10 22:49:43
+learned_at: 2026-10-15 22:24:57
 nodes: [MarkdownNote, SaveImage, ImageCompare, LoadImage, HitPawGeneralImageEnhance]
 patterns: []
 missing: []

@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/video_ltx2_depth_to_video.json
 hash: a385cb63d253954e
 official: true
-coverage: 0.526316
-learned_at: 2026-10-10 22:50:22
+coverage: 0.684211
+learned_at: 2026-10-15 22:24:58
 nodes: [ImageFromBatch, ResizeImageMaskNode, PrimitiveInt, PrimitiveInt, PreviewImage, SaveVideo, SaveVideo, PrimitiveInt, ResizeImageMaskNode, GetVideoComponents, LoadVideo, MarkdownNote, LoadImage, PrimitiveBoolean, MarkdownNote, 4ba16137-671b-4a0a-9b09-fff1ba6ac7d8, ImageScaleBy, 68857357-cbc2-4c3a-a786-c3a58d43f9b1, db5e983e-7d97-4014-b3b3-33a61ee67ddf]
 patterns: []
-missing: [4ba16137-671b-4a0a-9b09-fff1ba6ac7d8, 68857357-cbc2-4c3a-a786-c3a58d43f9b1, db5e983e-7d97-4014-b3b3-33a61ee67ddf]
-discoveries: [次要节点 `4ba16137-671b-4a0a-9b09-fff1ba6ac7d8` 知识库中没有该节点类型的任何知识, 次要节点 `68857357-cbc2-4c3a-a786-c3a58d43f9b1` 知识库中没有该节点类型的任何知识, 次要节点 `db5e983e-7d97-4014-b3b3-33a61ee67ddf` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/video_ltx2_depth_to_video.json
@@ -46,16 +45,8 @@ discoveries: [次要节点 `4ba16137-671b-4a0a-9b09-fff1ba6ac7d8` 知识库中�
 
 ## 知识
 
-覆盖率 **53%**（10/19）
+覆盖率 **68%**（13/19）
 
-**有卡**：`ImageFromBatch`、`ResizeImageMaskNode`、`SaveVideo`、`GetVideoComponents`、`LoadVideo`、`LoadImage`、`PrimitiveBoolean`、`ImageScaleBy`
-
-**缺卡**（3）：`4ba16137-671b-4a0a-9b09-fff1ba6ac7d8`、`68857357-cbc2-4c3a-a786-c3a58d43f9b1`、`db5e983e-7d97-4014-b3b3-33a61ee67ddf`
+**有卡**：`ImageFromBatch`、`ResizeImageMaskNode`、`SaveVideo`、`GetVideoComponents`、`LoadVideo`、`LoadImage`、`PrimitiveBoolean`、`4ba16137-671b-4a0a-9b09-fff1ba6ac7d8`、`ImageScaleBy`、`68857357-cbc2-4c3a-a786-c3a58d43f9b1`、`db5e983e-7d97-4014-b3b3-33a61ee67ddf`
 
 **用到的条目**：LoadImage、ResizeImageMaskNode、SaveVideo、GetVideoComponents、ImageFromBatch、ImageScaleBy、LoadVideo、PrimitiveBoolean
-
-## 学习发现
-
-- 次要节点 `4ba16137-671b-4a0a-9b09-fff1ba6ac7d8` 知识库中没有该节点类型的任何知识
-- 次要节点 `68857357-cbc2-4c3a-a786-c3a58d43f9b1` 知识库中没有该节点类型的任何知识
-- 次要节点 `db5e983e-7d97-4014-b3b3-33a61ee67ddf` 知识库中没有该节点类型的任何知识

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2104918784128671745.json
 hash: e2f239119847644d
-coverage: 0.857143
-learned_at: 2026-10-10 20:59:08
+coverage: 0.904762
+learned_at: 2026-10-15 22:27:25
 nodes: [PrimitiveInt, ComfyMathExpression, SeedVR2Preprocess, VAEEncodeTiled, PrimitiveInt, SeedVR2Conditioning, ComfyMathExpression, ImageMergeTileList, VAEDecodeTiled, ComfyMathExpression, GetImageSize, PrimitiveFloat, KSampler, SeedVR2PostProcessing, SplitImageToTileList, SamplerCustomAdvanced, SamplerCustomAdvanced, CLIPLoader, ResolutionSelector, BasicScheduler, CFGGuider, CFGGuider, KSamplerSelect, EmptyLatentImage, SplitSigmas, RandomNoise, VAEDecode, KSamplerSelect, ImageScale, SaveImageAdvanced, UNETLoader, VAELoader, UNETLoader, VAELoader, Seed (rgthree), ResizeImageMaskNode, LayerUtility: HLFrequencyDetailRestore, ImageBlend, Image Comparer (rgthree), RH_DLSS5Enhance, SaveImage, TextEncodeQwenImage21]
 patterns: []
-missing: [LayerUtility: HLFrequencyDetailRestore, Seed (rgthree)]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 959948902156062, "steps": 1, "width": 1024}
-discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中没有该节点类型的任何知识, 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 图片生成/文生图/Qwen_Image_2.1+SeedVR2+DLSS5_Upscale_2104918784128671745.json
@@ -22,40 +22,42 @@ discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
 **节点**（42 个）：
 - `PrimitiveInt`
 - `ComfyMathExpression`
 - `SeedVR2Preprocess`
-- `VAEEncodeTiled`
+- `VAEEncodeTiled` ★核心
 - `PrimitiveInt`
 - `SeedVR2Conditioning`
 - `ComfyMathExpression`
 - `ImageMergeTileList`
-- `VAEDecodeTiled`
+- `VAEDecodeTiled` ★核心
 - `ComfyMathExpression`
 - `GetImageSize`
 - `PrimitiveFloat`
-- `KSampler`
+- `KSampler` ★核心
 - `SeedVR2PostProcessing`
 - `SplitImageToTileList`
-- `SamplerCustomAdvanced`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
 - `CLIPLoader`
 - `ResolutionSelector`
 - `BasicScheduler`
 - `CFGGuider`
 - `CFGGuider`
-- `KSamplerSelect`
-- `EmptyLatentImage`
+- `KSamplerSelect` ★核心
+- `EmptyLatentImage` ★核心
 - `SplitSigmas`
 - `RandomNoise`
-- `VAEDecode`
-- `KSamplerSelect`
+- `VAEDecode` ★核心
+- `KSamplerSelect` ★核心
 - `ImageScale`
 - `SaveImageAdvanced`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
 - `Seed (rgthree)`
 - `ResizeImageMaskNode`
@@ -68,23 +70,23 @@ discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中
 
 ## 关键参数
 
-- `batch_size` = `1`
-- `cfg` = `1`
-- `denoise` = `1`
-- `height` = `1024`
-- `sampler_name` = `euler`
-- `scheduler` = `simple`
 - `seed` = `959948902156062`
 - `steps` = `1`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
 - `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
 
 ## 知识
 
-覆盖率 **86%**（36/42）
+覆盖率 **90%**（38/42）
 
-**有卡**：`PrimitiveInt`、`ComfyMathExpression`、`SeedVR2Preprocess`、`VAEEncodeTiled`、`SeedVR2Conditioning`、`ImageMergeTileList`、`VAEDecodeTiled`、`GetImageSize`、`PrimitiveFloat`、`KSampler`、`SeedVR2PostProcessing`、`SplitImageToTileList`、`SamplerCustomAdvanced`、`CLIPLoader`、`ResolutionSelector`、`BasicScheduler`、`CFGGuider`、`KSamplerSelect`、`EmptyLatentImage`、`SplitSigmas`、`RandomNoise`、`VAEDecode`、`ImageScale`、`SaveImageAdvanced`、`UNETLoader`、`VAELoader`、`Seed (rgthree)`、`ResizeImageMaskNode`
+**有卡**：`ComfyMathExpression`、`SeedVR2Preprocess`、`VAEEncodeTiled`、`SeedVR2Conditioning`、`ImageMergeTileList`、`VAEDecodeTiled`、`GetImageSize`、`KSampler`、`SeedVR2PostProcessing`、`SplitImageToTileList`、`SamplerCustomAdvanced`、`CLIPLoader`、`ResolutionSelector`、`BasicScheduler`、`CFGGuider`、`KSamplerSelect`、`EmptyLatentImage`、`SplitSigmas`、`RandomNoise`、`VAEDecode`、`ImageScale`、`SaveImageAdvanced`、`UNETLoader`、`VAELoader`、`Seed (rgthree)`、`ResizeImageMaskNode`、`LayerUtility: HLFrequencyDetailRestore`、`ImageBlend`、`RH_DLSS5Enhance`、`SaveImage`、`TextEncodeQwenImage21`
 
-**缺卡**（2）：`LayerUtility: HLFrequencyDetailRestore`、`Seed (rgthree)`
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、ResolutionSelector、UNETLoader
 
 ## 参数体检
 
@@ -93,6 +95,4 @@ discoveries: [次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中
 
 ## 学习发现
 
-- 次要节点 `LayerUtility: HLFrequencyDetailRestore` 知识库中没有该节点类型的任何知识
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

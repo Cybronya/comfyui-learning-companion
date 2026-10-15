@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/audio_minimax_music_3.json
 hash: ecee30e327205f5c
 official: true
-coverage: 0.25
-learned_at: 2026-10-10 22:46:59
+coverage: 0.5
+learned_at: 2026-10-15 22:24:52
 nodes: [SaveAudioAdvanced, ac99f841-a3de-4329-9564-953b81cf9e16, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [ac99f841-a3de-4329-9564-953b81cf9e16]
-discoveries: [次要节点 `ac99f841-a3de-4329-9564-953b81cf9e16` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/audio_minimax_music_3.json
@@ -31,14 +30,8 @@ discoveries: [次要节点 `ac99f841-a3de-4329-9564-953b81cf9e16` 知识库中�
 
 ## 知识
 
-覆盖率 **25%**（1/4）
+覆盖率 **50%**（2/4）
 
-**有卡**：`SaveAudioAdvanced`
+**有卡**：`SaveAudioAdvanced`、`ac99f841-a3de-4329-9564-953b81cf9e16`
 
-**缺卡**（1）：`ac99f841-a3de-4329-9564-953b81cf9e16`
-
-**用到的条目**：SaveAudioAdvanced、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput
-
-## 学习发现
-
-- 次要节点 `ac99f841-a3de-4329-9564-953b81cf9e16` 知识库中没有该节点类型的任何知识
+**用到的条目**：SaveAudioAdvanced、ac99f841-a3de-4329-9564-953b81cf9e16、sd15-t2i-basic、sd15-t2i-lora、SaveAudio、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

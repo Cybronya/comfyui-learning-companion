@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-3图首尾帧_1982052292696391681.json
 hash: 63718508126b67e1
-coverage: 0.925926
-learned_at: 2026-10-11 02:45:00
+coverage: 0.962963
+learned_at: 2026-10-15 22:45:23
 nodes: [ImageResizeKJ, ImageResizeKJ, INTConstant, INTConstant, ImageResizeKJ, GetImageRangeFromBatch, LoadImage, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, PrimitiveInt, VAEDecode, WanVideoVACEStartToEndFrame, GetImageSizeAndCount, WanVaceToVideo, ImageBatchMulti, MaskBatchMulti, LoadImage, String Literal, VHS_VideoCombine, WanVideoVACEStartToEndFrame, LoadImage, LoadImage, KSampler, CheckpointLoaderSimple, CLIPLoader, AV_VAELoader]
 patterns: []
-missing: [String Literal]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v11.safetensors", "denoise": 1, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 6456545463455, "steps": 4}
-discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/MEGA-v10-WAN2.2-AllInOne-3图首尾帧_1982052292696391681.json
@@ -65,11 +65,9 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 知识
 
-覆盖率 **93%**（25/27）
+覆盖率 **96%**（26/27）
 
-**有卡**：`ImageResizeKJ`、`INTConstant`、`GetImageRangeFromBatch`、`LoadImage`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`WanVideoVACEStartToEndFrame`、`GetImageSizeAndCount`、`WanVaceToVideo`、`ImageBatchMulti`、`MaskBatchMulti`、`VHS_VideoCombine`、`KSampler`、`CheckpointLoaderSimple`、`CLIPLoader`、`AV_VAELoader`
-
-**缺卡**（1）：`String Literal`
+**有卡**：`ImageResizeKJ`、`INTConstant`、`GetImageRangeFromBatch`、`LoadImage`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`WanVideoVACEStartToEndFrame`、`GetImageSizeAndCount`、`WanVaceToVideo`、`ImageBatchMulti`、`MaskBatchMulti`、`String Literal`、`VHS_VideoCombine`、`KSampler`、`CheckpointLoaderSimple`、`CLIPLoader`、`AV_VAELoader`
 
 **用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、AV_VAELoader、GetImageSizeAndCount
 
@@ -80,5 +78,4 @@ discoveries: [次要节点 `String Literal` 知识库中没有该节点类型的
 
 ## 学习发现
 
-- 次要节点 `String Literal` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

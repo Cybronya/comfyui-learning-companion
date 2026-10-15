@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_2033749447833821185.json
 hash: bc42e6ae7ed065b7
-coverage: 0.923077
-learned_at: 2026-10-11 03:48:35
+coverage: 0.974359
+learned_at: 2026-10-15 22:44:41
 nodes: [LTXVConditioning, CLIPTextEncode, CLIPTextEncode, EmptyLTXVLatentVideo, LTXVImgToVideoConditionOnly, LTXVPreprocess, LTXVEmptyLatentAudio, LTXVConcatAVLatent, CFGGuider, SamplerCustomAdvanced, KSamplerSelect, RandomNoise, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecodeTiled, DWPreprocessor, CannyEdgePreprocessor, LTXAddVideoICLoRAGuide, LTXVCropGuides, PrimitiveBoolean, ManualSigmas, ResizeImageMaskNode, ResizeImageMaskNode, GetImageSize, SimpleMath+, ResizeImageMaskNode, DepthAnythingPreprocessor, SimpleMath+, PreviewAny, VHS_VideoCombine, VHS_VideoInfo, LTXICLoRALoaderModelOnly, UNETLoader, VAELoaderKJ, VAELoaderKJ, LoadImage, VHS_LoadVideo, TextGenerateLTX2Prompt, DualCLIPLoader]
 patterns: []
-missing: [SimpleMath+, SimpleMath+]
+missing: []
 parameters: {"batch_size": 1, "height": 25, "width": 97}
-discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX-2.3_ICLoRA_Union_Control_Distilled_2033749447833821185.json
@@ -72,15 +71,8 @@ discoveries: [次要节点 `SimpleMath+` 知识库中没有该节点类型的任
 
 ## 知识
 
-覆盖率 **92%**（36/39）
+覆盖率 **97%**（38/39）
 
-**有卡**：`LTXVConditioning`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoConditionOnly`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`DWPreprocessor`、`CannyEdgePreprocessor`、`LTXAddVideoICLoRAGuide`、`LTXVCropGuides`、`PrimitiveBoolean`、`ManualSigmas`、`ResizeImageMaskNode`、`GetImageSize`、`DepthAnythingPreprocessor`、`VHS_VideoCombine`、`VHS_VideoInfo`、`LTXICLoRALoaderModelOnly`、`UNETLoader`、`VAELoaderKJ`、`LoadImage`、`VHS_LoadVideo`、`TextGenerateLTX2Prompt`、`DualCLIPLoader`
-
-**缺卡**（2）：`SimpleMath+`、`SimpleMath+`
+**有卡**：`LTXVConditioning`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoConditionOnly`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`DWPreprocessor`、`CannyEdgePreprocessor`、`LTXAddVideoICLoRAGuide`、`LTXVCropGuides`、`PrimitiveBoolean`、`ManualSigmas`、`ResizeImageMaskNode`、`GetImageSize`、`SimpleMath+`、`DepthAnythingPreprocessor`、`VHS_VideoCombine`、`VHS_VideoInfo`、`LTXICLoRALoaderModelOnly`、`UNETLoader`、`VAELoaderKJ`、`LoadImage`、`VHS_LoadVideo`、`TextGenerateLTX2Prompt`、`DualCLIPLoader`
 
 **用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、DepthAnythingPreprocessor、CannyEdgePreprocessor、CFGGuider、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识

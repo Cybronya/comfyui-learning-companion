@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/图生视频/新手短剧｜MiniMax H3 多参考视频生成工作流 v1.0_2106283115156172802.json
 hash: 5e12406a825ebe55
-coverage: 0.9
-learned_at: 2026-10-10 22:55:05
+coverage: 0.933333
+learned_at: 2026-10-15 22:43:03
 nodes: [RandomNoise, CreateVideo, SaveVideo, MiniMaxH3MemoryEfficientSageAttentionPatch, KSamplerSelect, SamplerCustomAdvanced, BasicGuider, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ComfyMathExpression, BasicScheduler, MarkdownNote, ModelPreviewOverrideKJ, Seed (rgthree), VAEDecode, VAEDecodeAudio, VAELoader, VAELoader, CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ResolutionSelector, DiffusionModelLoaderKJ, MiniMaxH3ReferenceToVideo, PrimitiveFloat]
 patterns: []
-missing: [Seed (rgthree)]
-discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/图生视频/新手短剧｜MiniMax H3 多参考视频生成工作流 v1.0_2106283115156172802.json
@@ -56,14 +55,8 @@ discoveries: [次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，�
 
 ## 知识
 
-覆盖率 **90%**（27/30）
+覆盖率 **93%**（28/30）
 
-**有卡**：`RandomNoise`、`CreateVideo`、`SaveVideo`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`KSamplerSelect`、`SamplerCustomAdvanced`、`BasicGuider`、`LoadImage`、`ComfyMathExpression`、`BasicScheduler`、`ModelPreviewOverrideKJ`、`VAEDecode`、`VAEDecodeAudio`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`ResolutionSelector`、`DiffusionModelLoaderKJ`、`MiniMaxH3ReferenceToVideo`
-
-**缺卡**（1）：`Seed (rgthree)`
+**有卡**：`RandomNoise`、`CreateVideo`、`SaveVideo`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`KSamplerSelect`、`SamplerCustomAdvanced`、`BasicGuider`、`LoadImage`、`ComfyMathExpression`、`BasicScheduler`、`ModelPreviewOverrideKJ`、`Seed (rgthree)`、`VAEDecode`、`VAEDecodeAudio`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`ResolutionSelector`、`DiffusionModelLoaderKJ`、`MiniMaxH3ReferenceToVideo`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、KSamplerSelect、SamplerCustomAdvanced
-
-## 学习发现
-
-- 次要节点 `Seed (rgthree)` 仅有 KSampler 的通用知识，没有该节点自己的说明

@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_bria_expand_
 hash: e12187e5fc075a23
 official: true
 coverage: 0.75
-learned_at: 2026-10-10 22:43:22
+learned_at: 2026-10-15 22:24:48
 nodes: [LoadImage, SaveImageAdvanced, MarkdownNote, BriaExpandImage]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveImageAdvanced`、`BriaExpandImage`
 
-**用到的条目**：LoadImage、SaveImageAdvanced、BriaExpandImage、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput
+**用到的条目**：LoadImage、SaveImageAdvanced、BriaExpandImage、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Image Save、CS_Preview_Any

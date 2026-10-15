@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
 hash: 3dc1f7095960a419
-coverage: 0.724138
-learned_at: 2026-10-10 20:59:12
+coverage: 0.793103
+learned_at: 2026-10-15 22:27:33
 nodes: [Reroute, Note, Fast Groups Bypasser (rgthree), Reroute, SamplerCustomAdvanced, BasicGuider, RandomNoise, KSamplerSelect, BasicScheduler, VAEEncode, Reroute, VAEDecode, CLIPTextEncodeFlux, CLIPTextEncodeFlux, RepeatLatentBatch, Display Any (rgthree), SaveImage, Miaoshouai_Tagger, LoraLoader, DualCLIPLoader, UNETLoader, VAELoader, StringFunction|pysssss, GetImageSizeAndCount, ControlNetLoader, ControlNetApplyAdvanced, LoadImage, LatentUpscaleBy, Image Comparer (rgthree)]
 patterns: [lora]
-missing: [Display Any (rgthree), StringFunction|pysssss]
+missing: []
 parameters: {"controlnet_strength": 0.7000000000000002, "lora_name": null, "strength_clip": 1, "strength_model": 0.8}
-discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识]
 ---
 
 # 图片生成/文生图/Upscaler-F.1专属高清放大CN模型_1925152412171235330.json
@@ -21,33 +20,35 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 结构
 
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
 **节点**（29 个）：
 - `Reroute`
 - `Note`
 - `Fast Groups Bypasser (rgthree)`
 - `Reroute`
-- `SamplerCustomAdvanced`
+- `SamplerCustomAdvanced` ★核心
 - `BasicGuider`
 - `RandomNoise`
-- `KSamplerSelect`
+- `KSamplerSelect` ★核心
 - `BasicScheduler`
-- `VAEEncode`
+- `VAEEncode` ★核心
 - `Reroute`
-- `VAEDecode`
-- `CLIPTextEncodeFlux`
-- `CLIPTextEncodeFlux`
+- `VAEDecode` ★核心
+- `CLIPTextEncodeFlux` ★核心
+- `CLIPTextEncodeFlux` ★核心
 - `RepeatLatentBatch`
 - `Display Any (rgthree)`
 - `SaveImage`
 - `Miaoshouai_Tagger`
-- `LoraLoader`
+- `LoraLoader` ★核心
 - `DualCLIPLoader`
-- `UNETLoader`
+- `UNETLoader` ★核心
 - `VAELoader`
 - `StringFunction|pysssss`
 - `GetImageSizeAndCount`
 - `ControlNetLoader`
-- `ControlNetApplyAdvanced`
+- `ControlNetApplyAdvanced` ★核心
 - `LoadImage`
 - `LatentUpscaleBy`
 - `Image Comparer (rgthree)`
@@ -56,20 +57,15 @@ discoveries: [次要节点 `Display Any (rgthree)` 知识库中没有该节点�
 
 ## 关键参数
 
-- `controlnet_strength` = `0.7000000000000002`
 - `lora_name` = `None`
-- `strength_clip` = `1`
 - `strength_model` = `0.8`
+- `strength_clip` = `1`
+- `controlnet_strength` = `0.7000000000000002`
 
 ## 知识
 
-覆盖率 **72%**（21/29）
+覆盖率 **79%**（23/29）
 
-**有卡**：`Reroute`、`Note`、`Fast Groups Bypasser (rgthree)`、`SamplerCustomAdvanced`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`VAEEncode`、`VAEDecode`、`CLIPTextEncodeFlux`、`RepeatLatentBatch`、`Display Any (rgthree)`、`SaveImage`、`Miaoshouai_Tagger`、`LoraLoader`、`DualCLIPLoader`、`UNETLoader`
+**有卡**：`SamplerCustomAdvanced`、`BasicGuider`、`RandomNoise`、`KSamplerSelect`、`BasicScheduler`、`VAEEncode`、`VAEDecode`、`CLIPTextEncodeFlux`、`RepeatLatentBatch`、`Display Any (rgthree)`、`SaveImage`、`Miaoshouai_Tagger`、`LoraLoader`、`DualCLIPLoader`、`UNETLoader`、`VAELoader`、`StringFunction|pysssss`、`GetImageSizeAndCount`、`ControlNetLoader`、`ControlNetApplyAdvanced`、`LoadImage`、`LatentUpscaleBy`
 
-**缺卡**（2）：`Display Any (rgthree)`、`StringFunction|pysssss`
-
-## 学习发现
-
-- 次要节点 `Display Any (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `StringFunction|pysssss` 知识库中没有该节点类型的任何知识
+**用到的条目**：VAEDecode、VAELoader、UNETLoader、LoadImage、ControlNetApplyAdvanced、ControlNetLoader、KSamplerSelect、SamplerCustomAdvanced

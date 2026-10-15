@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 - 多功能可独立音频数字人_2047017723305140225.json
 hash: 8270734fdb08e32e
-coverage: 0.803279
-learned_at: 2026-10-11 19:49:36
+coverage: 0.852459
+learned_at: 2026-10-15 22:44:56
 nodes: [Reroute, Note, Note, CFGGuider, LTXVConditioning, CLIPTextEncode, LTXVCropGuides, LTXVSeparateAVLatent, PreviewAudio, SolidMask, CR Text, LTXVAudioVAEEncode, SetLatentNoiseMask, CLIPTextEncode, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVAudioVAEDecode, CreateVideo, TrimAudioDuration, PrimitiveInt, CM_IntToFloat, LTXVImgToVideoInplace, CFGGuider, LTXVConcatAVLatent, ManualSigmas, easy cleanGpuUsed, ManualSigmas, RandomNoise, KSamplerSelect, LatentUpscaleModelLoader, LTXVAudioVAELoader, Any Switch (rgthree), LTXVImgToVideoInplace, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, SimpleMath+, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LoraLoaderModelOnly, VAEDecodeTiled, Any Switch (rgthree), RandomNoise, KSamplerSelect, CM_IntToFloat, SamplerCustomAdvanced, PrimitiveInt, PrimitiveInt, LoadImage, PrimitiveBoolean, SamplerCustomAdvanced, PrimitiveInt, AudioCrop, LoadAudio, LTXVConcatAVLatent, LTXVPreprocess, ResizeImagesByLongerEdge, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, VHS_VideoCombine, ImageResizeKJv2]
 patterns: []
-missing: [CR Text, SimpleMath+, easy cleanGpuUsed]
+missing: []
 parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识, 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 - 多功能可独立音频数字人_2047017723305140225.json
@@ -95,16 +94,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **80%**（49/61）
+覆盖率 **85%**（52/61）
 
-**有卡**：`CFGGuider`、`LTXVConditioning`、`CLIPTextEncode`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`PreviewAudio`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`CreateVideo`、`TrimAudioDuration`、`CM_IntToFloat`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`ManualSigmas`、`RandomNoise`、`KSamplerSelect`、`LatentUpscaleModelLoader`、`LTXVAudioVAELoader`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`SamplerCustomAdvanced`、`LoadImage`、`PrimitiveBoolean`、`AudioCrop`、`LoadAudio`、`LTXVPreprocess`、`ResizeImagesByLongerEdge`、`ComfyMathExpression`、`VHS_VideoCombine`、`ImageResizeKJv2`
-
-**缺卡**（3）：`CR Text`、`SimpleMath+`、`easy cleanGpuUsed`
+**有卡**：`CFGGuider`、`LTXVConditioning`、`CLIPTextEncode`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`PreviewAudio`、`SolidMask`、`CR Text`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`CreateVideo`、`TrimAudioDuration`、`CM_IntToFloat`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`ManualSigmas`、`easy cleanGpuUsed`、`RandomNoise`、`KSamplerSelect`、`LatentUpscaleModelLoader`、`LTXVAudioVAELoader`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`SimpleMath+`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`VAEDecodeTiled`、`SamplerCustomAdvanced`、`LoadImage`、`PrimitiveBoolean`、`AudioCrop`、`LoadAudio`、`LTXVPreprocess`、`ResizeImagesByLongerEdge`、`ComfyMathExpression`、`VHS_VideoCombine`、`ImageResizeKJv2`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `SimpleMath+` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识

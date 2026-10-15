@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/Our_H3_AudioTalking_2Image_1Audio_2103836296480378882.json
 hash: fb34b2e917e888b9
-coverage: 0.402597
-learned_at: 2026-10-11 22:12:46
+coverage: 0.428571
+learned_at: 2026-10-15 22:46:50
 nodes: [SetNode, VAELoader, VAELoader, SetNode, SetNode, SetNode, SetNode, LoraLoaderModelOnly, CLIPLoader, Reroute, Reroute, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, MiniMaxH3ReferenceToVideo, SetNode, ComfyMathExpression, SetNode, SamplerCustomAdvanced, SetNode, BasicGuider, SetNode, SetNode, SetNode, VAEDecode, GetNode, LTXVConcatAVLatent, GetNode, MarkdownNote, SamplerCustomAdvanced, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVSeparateAVLatent, SetNode, Note, RandomNoise, KSamplerSelect, UNETLoader, SetNode, GetNode, SetNode, MiniMaxH3MemoryEfficientSageAttentionPatch, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, BasicScheduler, SplitSigmas, VHS_VideoCombine, SetNode, MinimaxH3LatentUpscaler3D, Note, easy float, easy cleanGpuUsed, Note, Note, VRGDG_MiniMaxH3AudioDrive, SoundFlow_GetLength, LoadImage, LoadImage, LoadAudio, Note, ResolutionSelector, Text]
 patterns: []
-missing: [easy cleanGpuUsed, easy float]
-discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识, 次要节点 `easy float` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # 视频生成/文生视频/Our_H3_AudioTalking_2Image_1Audio_2103836296480378882.json
@@ -103,15 +102,8 @@ discoveries: [次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型
 
 ## 知识
 
-覆盖率 **40%**（31/77）
+覆盖率 **43%**（33/77）
 
-**有卡**：`VAELoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAEDecode`、`MiniMaxH3ReferenceToVideo`、`ComfyMathExpression`、`SamplerCustomAdvanced`、`BasicGuider`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`RandomNoise`、`KSamplerSelect`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`VHS_VideoCombine`、`BasicScheduler`、`SplitSigmas`、`MinimaxH3LatentUpscaler3D`、`VRGDG_MiniMaxH3AudioDrive`、`SoundFlow_GetLength`、`LoadImage`、`LoadAudio`、`ResolutionSelector`、`Text`
-
-**缺卡**（2）：`easy cleanGpuUsed`、`easy float`
+**有卡**：`VAELoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAEDecode`、`MiniMaxH3ReferenceToVideo`、`ComfyMathExpression`、`SamplerCustomAdvanced`、`BasicGuider`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`RandomNoise`、`KSamplerSelect`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`VHS_VideoCombine`、`BasicScheduler`、`SplitSigmas`、`MinimaxH3LatentUpscaler3D`、`easy float`、`easy cleanGpuUsed`、`VRGDG_MiniMaxH3AudioDrive`、`SoundFlow_GetLength`、`LoadImage`、`LoadAudio`、`ResolutionSelector`、`Text`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect
-
-## 学习发现
-
-- 次要节点 `easy cleanGpuUsed` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy float` 知识库中没有该节点类型的任何知识

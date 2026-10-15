@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX-2.3-Image Audio to Video Workflow_2033716721021886465.json
 hash: 4a622aba928b0d38
 coverage: 0.888889
-learned_at: 2026-10-11 03:48:34
+learned_at: 2026-10-15 22:44:40
 nodes: [RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVConcatAVLatent, ManualSigmas, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, Reroute, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVCropGuides, LTXVImgToVideoInplace, LTXVSeparateAVLatent, CreateVideo, SolidMask, LTXAVTextEncoderLoader, ComfyMathExpression, EmptyLTXVLatentVideo, SamplerCustomAdvanced, LTXVConditioning, CLIPTextEncode, RandomNoise, LTXVAudioVAEEncode, LTXVAudioVAELoader, ComfyMathExpression, LatentUpscaleModelLoader, SaveVideo, ComfyMathExpression, TrimAudioDuration, LoadAudio, ComfyMathExpression, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, LoadImage, SetLatentNoiseMask, GetImageSize, LoraLoader, TextGenerateLTX2Prompt, PreviewAny, CLIPTextEncode, LoraLoaderModelOnly, PrimitiveFloat, CheckpointLoaderSimple, PrimitiveStringMultiline, LTXVImgToVideoInplace, PrimitiveBoolean, PrimitiveInt, Note]
 patterns: [lora]
 missing: []

@@ -6,14 +6,14 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/文生图参双通道｜Minimax H3二采高清放大V4.2_2096580832021540866.json
 hash: dd220f285dbc03dd
-coverage: 0.537143
-learned_at: 2026-10-11 21:42:00
+coverage: 0.542857
+learned_at: 2026-10-15 22:48:40
 nodes: [SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ComfyMathExpression, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VHS_LoadVideo, GetNode, SetNode, SetNode, GetNode, MiniMaxH3ImageToVideo, BasicGuider, BasicScheduler, RandomNoise, SolAttnPatch, KSamplerSelect, GetNode, MiniMaxLowVRAMAttention, MiniMaxH3SigmaShift, ModelAttentionBackend, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVSeparateAVLatent, Any Switch (rgthree), LTXVConcatAVLatent, GetNode, GetNode, Any Switch (rgthree), GetNode, SetNode, Fast Groups Bypasser (rgthree), VAEDecode, VAEDecodeAudio, CreateVideo, MiniMaxChunkFeedForward, GetNode, GetNode, PrimitiveStringMultiline, GetNode, GetNode, GetNode, SetNode, ResolutionSelector, SetNode, PrimitiveFloat, SaveVideo, SetNode, SetNode, GetNode, easy ifElse, SetNode, SetNode, SamplerCustomAdvanced, BasicGuider, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), VAEDecode, VAEDecodeAudio, CreateVideo, ModelPreviewOverrideKJ, SamplerCustomAdvanced, SetNode, GetNode, MiniMaxH3ReferenceToVideo, BasicScheduler, Int, SamplerCustomAdvanced, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, VAELoader, PathchSageAttentionKJ, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveFloat, BasicScheduler, BasicGuider, GetNode, Any Switch (rgthree), easy ifElse, SetNode, SetNode, LoadAudio, MinimaxH3LatentUpscaler3D, SaveVideo, easy boolean, VRGDG_MiniMaxH3AudioDrive, LoadImage, 孤海注释, 孤海注释, UNETLoader, CLIPLoader, CLIPTextEncode, VAELoader, EmptyLatentImage, KSampler, VAEDecode, solarL_SaveImagesToZip, JjkText, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, Note]
 patterns: [text_to_image]
-missing: [easy boolean]
+missing: []
 problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
-discoveries: [次要节点 `easy boolean` 知识库中没有该节点类型的任何知识, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
 ---
 
 # 视频生成/文生视频/文生图参双通道｜Minimax H3二采高清放大V4.2_2096580832021540866.json
@@ -217,11 +217,9 @@ discoveries: [次要节点 `easy boolean` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **54%**（94/175）
+覆盖率 **54%**（95/175）
 
-**有卡**：`ComfyMathExpression`、`LoadImage`、`VHS_LoadVideo`、`MiniMaxH3ImageToVideo`、`BasicGuider`、`BasicScheduler`、`RandomNoise`、`SolAttnPatch`、`KSamplerSelect`、`MiniMaxLowVRAMAttention`、`MiniMaxH3SigmaShift`、`ModelAttentionBackend`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`VAEDecode`、`VAEDecodeAudio`、`CreateVideo`、`MiniMaxChunkFeedForward`、`ResolutionSelector`、`SaveVideo`、`SamplerCustomAdvanced`、`ModelPreviewOverrideKJ`、`MiniMaxH3ReferenceToVideo`、`Int`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`PathchSageAttentionKJ`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoadAudio`、`MinimaxH3LatentUpscaler3D`、`VRGDG_MiniMaxH3AudioDrive`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`solarL_SaveImagesToZip`
-
-**缺卡**（1）：`easy boolean`
+**有卡**：`ComfyMathExpression`、`LoadImage`、`VHS_LoadVideo`、`MiniMaxH3ImageToVideo`、`BasicGuider`、`BasicScheduler`、`RandomNoise`、`SolAttnPatch`、`KSamplerSelect`、`MiniMaxLowVRAMAttention`、`MiniMaxH3SigmaShift`、`ModelAttentionBackend`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`VAEDecode`、`VAEDecodeAudio`、`CreateVideo`、`MiniMaxChunkFeedForward`、`ResolutionSelector`、`SaveVideo`、`SamplerCustomAdvanced`、`ModelPreviewOverrideKJ`、`MiniMaxH3ReferenceToVideo`、`Int`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`PathchSageAttentionKJ`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`LoadAudio`、`MinimaxH3LatentUpscaler3D`、`easy boolean`、`VRGDG_MiniMaxH3AudioDrive`、`CLIPTextEncode`、`EmptyLatentImage`、`KSampler`、`solarL_SaveImagesToZip`
 
 **用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
 
@@ -232,5 +230,4 @@ discoveries: [次要节点 `easy boolean` 知识库中没有该节点类型的�
 
 ## 学习发现
 
-- 次要节点 `easy boolean` 知识库中没有该节点类型的任何知识
 - [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

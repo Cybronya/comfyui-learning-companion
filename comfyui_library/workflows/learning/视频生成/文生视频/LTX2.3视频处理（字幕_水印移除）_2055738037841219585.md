@@ -6,12 +6,11 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3视频处理（字幕_水印移除）_2055738037841219585.json
 hash: a833ab77d8957231
-coverage: 0.365591
-learned_at: 2026-10-11 19:49:40
+coverage: 0.44086
+learned_at: 2026-10-15 22:45:14
 nodes: [DiffusionModelLoaderKJ, VAELoaderKJ, SamplerCustomAdvanced, SetNode, GetNode, GetNode, SetNode, SetNode, CR Text, VAELoaderKJ, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, RepeatImageBatch, LTXVPreprocess, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, LTXVConditioning, GetNode, VAEEncodeForInpaint, GetNode, GetNode, GetNode, GetNode, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, GetNode, GetNode, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), CR Text, SetNode, SetNode, SetNode, SetNode, VHS_VideoInfoLoaded, SetNode, CLIPTextEncode, CLIPTextEncode, LTXAddVideoICLoRAGuide, LayerUtility: ImageScaleByAspectRatio V2, GetNode, ResizeImageMaskNode, easy imageSize, Image To Mask, LayerUtility: ColorImage, SetNode, SetNode, GetNode, VAEDecodeTiled, DualCLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, GetNode, CR Text, LTXVImgToVideoConditionOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Fast Groups Bypasser (rgthree), Any Switch (rgthree), Any Switch (rgthree), GetNode, GetNode, GetNode, ResizeImageMaskNode, GetImageRangeFromBatch, SetNode, VHS_LoadVideo, ImageConcatMulti, GetNode, VHS_VideoCombine, GetNode, GetImageRangeFromBatch, SetNode, GetNode, VHS_VideoCombine, FlashVSRNodeAdv, GetNode, FlashVSRInitPipe, GetNode, VHS_VideoCombine]
 patterns: []
-missing: [CR Text, CR Text, CR Text, Image To Mask, LayerUtility: ColorImage, LayerUtility: ImageScaleByAspectRatio V2, easy imageSize]
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `CR Text` 知识库中没有该节点类型的任何知识, 次要节点 `Image To Mask` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ColorImage` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明]
+missing: []
 ---
 
 # 视频生成/文生视频/LTX2.3视频处理（字幕_水印移除）_2055738037841219585.json
@@ -119,20 +118,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **37%**（34/93）
+覆盖率 **44%**（41/93）
 
-**有卡**：`DiffusionModelLoaderKJ`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`RepeatImageBatch`、`LTXVPreprocess`、`LTXVConditioning`、`VAEEncodeForInpaint`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`VHS_VideoInfoLoaded`、`CLIPTextEncode`、`LTXAddVideoICLoRAGuide`、`ResizeImageMaskNode`、`VAEDecodeTiled`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`LTXVImgToVideoConditionOnly`、`GetImageRangeFromBatch`、`VHS_LoadVideo`、`ImageConcatMulti`、`VHS_VideoCombine`、`FlashVSRNodeAdv`、`FlashVSRInitPipe`
+**有卡**：`DiffusionModelLoaderKJ`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`CR Text`、`RepeatImageBatch`、`LTXVPreprocess`、`LTXVConditioning`、`VAEEncodeForInpaint`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`VHS_VideoInfoLoaded`、`CLIPTextEncode`、`LTXAddVideoICLoRAGuide`、`LayerUtility: ImageScaleByAspectRatio V2`、`ResizeImageMaskNode`、`easy imageSize`、`Image To Mask`、`LayerUtility: ColorImage`、`VAEDecodeTiled`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`LTXVImgToVideoConditionOnly`、`GetImageRangeFromBatch`、`VHS_LoadVideo`、`ImageConcatMulti`、`VHS_VideoCombine`、`FlashVSRNodeAdv`、`FlashVSRInitPipe`
 
-**缺卡**（7）：`CR Text`、`CR Text`、`CR Text`、`Image To Mask`、`LayerUtility: ColorImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy imageSize`
-
-**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、VAEDecodeTiled、VAELoaderKJ、VAEEncodeForInpaint
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识
-- 次要节点 `Image To Mask` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ColorImage` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy imageSize` 仅有 Resolution 的通用知识，没有该节点自己的说明
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、VAEDecodeTiled、VAELoaderKJ

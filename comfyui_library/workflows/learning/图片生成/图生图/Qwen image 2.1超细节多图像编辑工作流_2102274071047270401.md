@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json
 hash: adb4ed772a06e9da
-coverage: 0.709677
-learned_at: 2026-10-10 20:48:08
+coverage: 0.870968
+learned_at: 2026-10-15 22:25:20
 nodes: [EmptyLatentImage, easy seed, ResolutionSelector, EmptyImage, LayerUtility: ImageScaleByAspectRatio V2, INTConstant, Label (rgthree), MarkdownNote, Label (rgthree), QwenImage21Cache, MarkdownNote, MarkdownNote, Image Comparer (rgthree), UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, Text Multiline, TextEncodeQwenImage21, KSampler, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VAEDecode, SaveImage]
 patterns: []
-missing: [Label (rgthree), Label (rgthree), LayerUtility: ImageScaleByAspectRatio V2, Text Multiline, easy seed]
+missing: []
 parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 999, "steps": 25, "width": 1024}
-discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识, 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识, 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识, 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明]
 ---
 
 # 图片生成/图生图/Qwen image 2.1超细节多图像编辑工作流_2102274071047270401.json
@@ -70,18 +69,8 @@ discoveries: [次要节点 `Label (rgthree)` 知识库中没有该节点类型�
 
 ## 知识
 
-覆盖率 **71%**（22/31）
+覆盖率 **87%**（27/31）
 
-**有卡**：`EmptyLatentImage`、`ResolutionSelector`、`EmptyImage`、`INTConstant`、`QwenImage21Cache`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`TextEncodeQwenImage21`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`
-
-**缺卡**（5）：`Label (rgthree)`、`Label (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`Text Multiline`、`easy seed`
+**有卡**：`EmptyLatentImage`、`easy seed`、`ResolutionSelector`、`EmptyImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`INTConstant`、`Label (rgthree)`、`QwenImage21Cache`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`Text Multiline`、`TextEncodeQwenImage21`、`KSampler`、`LoadImage`、`VAEDecode`、`SaveImage`
 
 **用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPLoader、EmptyLatentImage、ResolutionSelector
-
-## 学习发现
-
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `Label (rgthree)` 知识库中没有该节点类型的任何知识
-- 次要节点 `LayerUtility: ImageScaleByAspectRatio V2` 知识库中没有该节点类型的任何知识
-- 次要节点 `Text Multiline` 知识库中没有该节点类型的任何知识
-- 次要节点 `easy seed` 仅有 KSampler 的通用知识，没有该节点自己的说明

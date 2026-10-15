@@ -7,12 +7,11 @@ source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/image_lens_turbo_t2i.json
 hash: 29f251d00e8538e4
 official: true
-coverage: 0.4
-learned_at: 2026-10-10 22:48:10
+coverage: 0.6
+learned_at: 2026-10-15 22:24:54
 nodes: [ec44c008-5f23-4498-a682-eb96a8598475, ResolutionSelector, SaveImage, MarkdownNote, MarkdownNote]
 patterns: []
-missing: [ec44c008-5f23-4498-a682-eb96a8598475]
-discoveries: [次要节点 `ec44c008-5f23-4498-a682-eb96a8598475` 知识库中没有该节点类型的任何知识]
+missing: []
 ---
 
 # comfyui-workflow-templates-json/image_lens_turbo_t2i.json
@@ -32,14 +31,8 @@ discoveries: [次要节点 `ec44c008-5f23-4498-a682-eb96a8598475` 知识库中�
 
 ## 知识
 
-覆盖率 **40%**（2/5）
+覆盖率 **60%**（3/5）
 
-**有卡**：`ResolutionSelector`、`SaveImage`
+**有卡**：`ec44c008-5f23-4498-a682-eb96a8598475`、`ResolutionSelector`、`SaveImage`
 
-**缺卡**（1）：`ec44c008-5f23-4498-a682-eb96a8598475`
-
-**用到的条目**：ResolutionSelector、SaveImage、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验、easy_imagesize
-
-## 学习发现
-
-- 次要节点 `ec44c008-5f23-4498-a682-eb96a8598475` 知识库中没有该节点类型的任何知识
+**用到的条目**：ResolutionSelector、SaveImage、ec44c008-5f23-4498-a682-eb96a8598475、sd15-t2i-basic、sd15-t2i-lora、EmptyLatentImage、height 调整经验、width 调整经验

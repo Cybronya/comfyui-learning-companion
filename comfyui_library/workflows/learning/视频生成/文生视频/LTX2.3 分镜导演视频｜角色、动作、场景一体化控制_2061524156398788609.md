@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/LTX2.3 分镜导演视频｜角色、动作、场景一体化控制_2061524156398788609.json
 hash: 5a875ab76eee856e
-coverage: 0.987654
-learned_at: 2026-10-11 20:21:25
+coverage: 1
+learned_at: 2026-10-15 22:44:58
 nodes: [ManualSigmas, KSamplerSelect, KSamplerSelect, BasicScheduler, LTXVConcatAVLatent, LatentUpscaleModelLoader, LTXVConditioning, ConditioningZeroOut, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGGuider, LTXDirectorGuide, LTXDirectorGuide, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVLatentUpsampler, FluxResolutionNode, LTXDirectorGuide, SamplerCustomAdvanced, LTXVConcatAVLatent, SamplerCustomAdvanced, VAEDecodeTiled, LTXVAudioVAEDecode, LatentUpscaleModelLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, LTX2_NAG, LoraLoaderModelOnly, LTX2_NAG, CFGGuider, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Sigmas Easing, STGGuiderAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, LTXICLoRALoaderModelOnly, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SaveVideo, VAEDecodeTiled, LTXVAudioVAEDecode, SaveVideo, CreateVideo, SaveVideo, LTXVSeparateAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVCropGuides, CreateVideo, VAEDecodeTiled, LTXVAudioVAEDecode, SetLatentNoiseMask, LTXVSeparateAVLatent, SolidMask, ManualSigmas, KSamplerSelect, LTXVLatentUpsampler, LTXVCropGuides, LTXVCropGuides, RandomNoise, VAEDecodeTiled, LTXDirector, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, image_scale_pixel_v2, EmptyImage]
 patterns: []
-missing: [Sigmas Easing]
+missing: []
 parameters: {"checkpoint": "ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors"}
-discoveries: [次要节点 `Sigmas Easing` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/LTX2.3 分镜导演视频｜角色、动作、场景一体化控制_2061524156398788609.json
@@ -112,14 +111,8 @@ discoveries: [次要节点 `Sigmas Easing` 知识库中没有该节点类型的�
 
 ## 知识
 
-覆盖率 **99%**（80/81）
+覆盖率 **100%**（81/81）
 
-**有卡**：`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXDirectorGuide`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTX2_NAG`、`STGGuiderAdvanced`、`LTXICLoRALoaderModelOnly`、`CreateVideo`、`SaveVideo`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`SetLatentNoiseMask`、`SolidMask`、`RandomNoise`、`LTXDirector`、`image_scale_pixel_v2`、`EmptyImage`
-
-**缺卡**（1）：`Sigmas Easing`
+**有卡**：`ManualSigmas`、`KSamplerSelect`、`BasicScheduler`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXDirectorGuide`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVLatentUpsampler`、`FluxResolutionNode`、`SamplerCustomAdvanced`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTX2_NAG`、`Sigmas Easing`、`STGGuiderAdvanced`、`LTXICLoRALoaderModelOnly`、`CreateVideo`、`SaveVideo`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`SetLatentNoiseMask`、`SolidMask`、`RandomNoise`、`LTXDirector`、`image_scale_pixel_v2`、`EmptyImage`
 
 **用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、ConditioningZeroOut、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler
-
-## 学习发现
-
-- 次要节点 `Sigmas Easing` 知识库中没有该节点类型的任何知识

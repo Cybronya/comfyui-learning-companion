@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/【遇见AI】wan2.1 Skyreels V2 文生视频，支持超过81帧_2067520501110632450.json
 hash: b0783555a4e48c86
 coverage: 0.947368
-learned_at: 2026-10-11 20:21:33
+learned_at: 2026-10-15 22:47:43
 nodes: [WanVideoTeaCache, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoTorchCompileSettings, WanVideoDecode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, VHS_VideoCombine, MarkdownNote, LoadImage, LoadImage, WanVideoSampler, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoLoraSelect, WanVideoTextEncodeCached, WanVideoVAELoader]
 patterns: []
 missing: []

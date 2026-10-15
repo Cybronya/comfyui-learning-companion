@@ -8,7 +8,7 @@ file: comfyui_library/workflows/comfyui-workflow-templates-json/api_topaz_image_
 hash: 932989198c9fcd8e
 official: true
 coverage: 1
-learned_at: 2026-10-10 22:46:18
+learned_at: 2026-10-15 22:24:51
 nodes: [LoadImage, SaveImageAdvanced, ImageCompare, TopazImageEnhanceV2]
 patterns: []
 missing: []
@@ -34,4 +34,4 @@ missing: []
 
 **有卡**：`LoadImage`、`SaveImageAdvanced`、`ImageCompare`、`TopazImageEnhanceV2`
 
-**用到的条目**：LoadImage、SaveImageAdvanced、ImageCompare、TopazImageEnhanceV2、sd15-t2i-basic、sd15-t2i-lora、SaveImage、v2
+**用到的条目**：LoadImage、SaveImageAdvanced、ImageCompare、TopazImageEnhanceV2、sd15-t2i-basic、sd15-t2i-lora、SaveImage、Image Save

@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/Anima-2.9B｜文生图+修脸+修手_2089672439675580417.json
 hash: 9a3faa735500289b
 coverage: 1
-learned_at: 2026-10-11 21:19:37
+learned_at: 2026-10-15 22:44:02
 nodes: [SaveImage, LoadImage]
 patterns: []
 missing: []
@@ -31,4 +31,4 @@ missing: []
 
 **有卡**：`SaveImage`、`LoadImage`
 
-**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput、easy_savetext
+**用到的条目**：LoadImage、SaveImage、sd15-t2i-basic、sd15-t2i-lora、Image Load、CS_Preview_Any、easy_multitrackinfooutput、easy_multitracktaskoutput

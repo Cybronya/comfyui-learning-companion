@@ -6,13 +6,12 @@ status: completed
 source: json
 file: comfyui_library/workflows/视频生成/文生视频/无限长度视频生成 图生视频 Wan SVI 2.0 Pro_2036250825735020545.json
 hash: 6ff8a00825e45d8e
-coverage: 0.605263
-learned_at: 2026-10-11 03:48:40
+coverage: 0.631579
+learned_at: 2026-10-15 22:48:46
 nodes: [SetNode, GetNode, VAELoader, CLIPLoader, LoraLoaderModelOnly, SetNode, DiffusionModelLoaderKJ, GetNode, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, WanImageToVideoSVIPro, GetNode, GetNode, VAEDecode, KSamplerAdvanced, SetNode, SetNode, LoraLoaderModelOnly, GetNode, VAEDecode, WanImageToVideoSVIPro, GetNode, KSamplerAdvanced, KSamplerAdvanced, GetNode, VHS_VideoCombine, VHS_VideoCombine, ImageBatchExtendWithOverlap, SetNode, GetNode, VAEEncode, GetNode, WanVideoImageResizeToClosest, DiffusionModelLoaderKJ, VHS_VideoCombine, LoadImage, CR Text]
 patterns: []
-missing: [CR Text]
+missing: []
 parameters: {"cfg": 8, "denoise": "beta", "sampler_name": 1, "scheduler": "sa_solver", "seed": "disable", "steps": "fixed"}
-discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何知识]
 ---
 
 # 视频生成/文生视频/无限长度视频生成 图生视频 Wan SVI 2.0 Pro_2036250825735020545.json
@@ -74,14 +73,8 @@ discoveries: [次要节点 `CR Text` 知识库中没有该节点类型的任何�
 
 ## 知识
 
-覆盖率 **61%**（23/38）
+覆盖率 **63%**（24/38）
 
-**有卡**：`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`DiffusionModelLoaderKJ`、`CLIPTextEncode`、`KSamplerAdvanced`、`WanImageToVideoSVIPro`、`VAEDecode`、`VHS_VideoCombine`、`ImageBatchExtendWithOverlap`、`VAEEncode`、`WanVideoImageResizeToClosest`、`LoadImage`
-
-**缺卡**（1）：`CR Text`
+**有卡**：`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`DiffusionModelLoaderKJ`、`CLIPTextEncode`、`KSamplerAdvanced`、`WanImageToVideoSVIPro`、`VAEDecode`、`VHS_VideoCombine`、`ImageBatchExtendWithOverlap`、`VAEEncode`、`WanVideoImageResizeToClosest`、`LoadImage`、`CR Text`
 
 **用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、VAEEncode
-
-## 学习发现
-
-- 次要节点 `CR Text` 知识库中没有该节点类型的任何知识

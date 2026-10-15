@@ -7,7 +7,7 @@ source: json
 file: comfyui_library/workflows/视频生成/文生视频/video_wan2_2_14B_qwenvl-prompt-generate_1981270580760576001.json
 hash: a4fd5ce8f91ac0e7
 coverage: 0.6
-learned_at: 2026-10-11 02:45:03
+learned_at: 2026-10-15 22:47:33
 nodes: [SetNode, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, MarkdownNote, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, KSamplerAdvanced, EmptyHunyuanLatentVideo, KSamplerAdvanced, VAEDecode, UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CFGZeroStar, PathchSageAttentionKJ, WanVideoNAG, CLIPTextEncode, PreviewAny, VHS_VideoCombine, AILab_QwenVL]
 patterns: []
 missing: []
