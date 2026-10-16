@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-16
+- 最后更新：2026-10-17
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -216,6 +216,8 @@ engine/                       可执行层（v0.5 起）
   knowledge_graph/            知识图谱：把 workflow/节点/模式/问题连成网，供跨条目查询（2026-10-06 新增）
                               （2026-10-06 起 co_used 与 nodes_without_cards
                                共享 workflow_learning 的布线节点忽略清单）
+  atomic_write.py             原子写工具（临时文件 + os.replace，
+                              全项目写文件统一走它，别用 write_text）
   workflow_index_manager.py   workflow / pattern 索引管理
 ```
 
@@ -582,6 +584,31 @@ id），跑 `rename_library_workflows.py` 即可，四个坑：
 - 归一化闸门的**固定成本**要留意：每次入库都要解析全库 json
   （27000+ 个文件约 120s）。批次越大越划算（500 一批摊薄后占比 <25%）；
   只跑一两篇时可用 `import_workflows.py --no-semantic` 跳过
+
+**2026-10-17 图谱保存事故 → 全项目原子写改造**：
+第 14 批图谱构建成功（39667 顶点 / 941923 边）却**保存失败**，控制台
+只打出 `保存知识图谱失败:`（错误信息为空），而磁盘上的
+`knowledge_graph.json` 变成 **0 字节**。两个缺陷叠在一起：
+- `GraphStore.save()` → `write_text(json.dumps(...))`：`json.dumps` 先把整张图
+  拼成几百 MB 文本，`write_text` 内部再编码一份 bytes，**峰值内存翻倍 → OOM**
+  （`MemoryError` 的 str 就是空的，所以报错看不出原因）
+- `Path.write_text` 是 mode 'w' —— **先截断再写**。失败发生在截断之后、
+  写入完成之前，于是**老图谱被清空**，整张图要重跑 4 分钟才重建得回来
+
+修复与推广（新增 `engine/atomic_write.py`）：
+- `atomic_write_json()`：**流式** `json.dump` 写文件句柄（不拼整份字符串）
+  + 临时文件 + `os.replace()` **原子替换**；`atomic_write_text()` 同理
+- 失败路径清临时文件、不动目标文件；报错带上 `类型名: 消息`
+- **全项目 8 处写文件全部换掉**（都是「先截断后写」的同一类隐患）：
+  `learning_store` 学习记录 .md 与 `learning/index.md`（**核心数据**）、
+  `retrieval` 倒排索引（10MB+）、`knowledge_evolution` 知识库、
+  `knowledge_consolidation` 模式卡与索引、`learning_scheduler` 队列
+  （可续跑状态）、`workflow_index_manager` 索引、`GraphStore`
+- 测试：新增 `test_knowledge_graph` E4 组（保存失败必须保住老文件 +
+  不留临时文件）+ `atomic_write` 11 项自测；18 个 test_*.py 全部 exit=0
+- **教训**：凡是要往磁盘写「已有内容」的文件，一律走 `atomic_write`，
+  别用 `write_text` / `open(...,'w')` —— 后者在失败时会把老数据清零，
+  而磁盘满 / OOM / 进程被杀都不是罕见场景
 
 - 教训（统计口径）：`LearningStore` 有进程内 `_cache`，**先读后写**会拿到
   旧记录 —— 我一度以为补学没生效，实际是统计用的缓存没失效。

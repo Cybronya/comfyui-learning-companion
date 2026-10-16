@@ -20,6 +20,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Any, Dict, List
+from .atomic_write import atomic_write_json
 
 DEFAULT_INDEX_PATH = Path("comfyui_library") / "workflows" / "workflow_index.json"
 
@@ -41,8 +42,9 @@ class WorkflowIndexManager:
 
     def save(self) -> None:
         self.index_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(self.index_path, "w", encoding="utf-8") as f:
-            json.dump(self.index, f, ensure_ascii=False, indent=2)
+        atomic_write_json(
+            self.index_path, self.index, indent=2, ensure_ascii=False
+        )
 
     def add_workflow(self, name: str, patterns: List[str],
                      nodes: List[str]) -> Dict[str, Any]:

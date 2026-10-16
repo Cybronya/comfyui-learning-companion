@@ -36,6 +36,7 @@ from .models import (
     LEVEL_MODERATE,
     LEVEL_WEAK,
 )
+from ..atomic_write import atomic_write_text
 
 
 # 归纳产物的存放位置：与手写 Pattern 卡同目录，但用 _ 前缀子目录区分
@@ -88,8 +89,8 @@ class KnowledgeStore:
             for pattern in knowledge.patterns:
                 self._write_pattern(pattern)
 
-            self.index_path.write_text(
-                self._render_index(knowledge), encoding="utf-8"
+            atomic_write_text(
+                self.index_path, self._render_index(knowledge)
             )
 
             return str(self.index_path)
@@ -114,7 +115,7 @@ class KnowledgeStore:
         写一个模式的记录
         """
         path = self.folder / f"{pattern.name}.md"
-        path.write_text(self.render_pattern(pattern), encoding="utf-8")
+        atomic_write_text(path, self.render_pattern(pattern))
         return path
 
     # ---------- 渲染 ----------

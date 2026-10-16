@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import List, Dict, Any, Optional
 
 from .models import EvolutionKnowledge, WorkflowPattern
+from ..atomic_write import atomic_write_json
 
 
 class KnowledgeStore:
@@ -115,12 +116,8 @@ class KnowledgeStore:
         try:
             self.path.parent.mkdir(parents=True, exist_ok=True)
 
-            with open(self.path, "w", encoding="utf-8") as f:
-                json.dump(
-                    self.data,
-                    f,
-                    indent=4,
-                    ensure_ascii=False
-                )
+            atomic_write_json(
+                self.path, self.data, indent=4, ensure_ascii=False
+            )
         except Exception as e:
             print(f"保存演化知识失败: {e}")

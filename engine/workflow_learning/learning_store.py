@@ -24,6 +24,7 @@ from .learning_record import (
     LearningRecord,
     STATUS_COMPLETED,
 )
+from ..atomic_write import atomic_write_text
 from .ignore_nodes import is_ignored
 from .markdown_format import (
     to_markdown,
@@ -186,9 +187,7 @@ class LearningStore:
         try:
             path = self.record_file(record.key)
             path.parent.mkdir(parents=True, exist_ok=True)
-            path.write_text(
-                to_markdown(record), encoding="utf-8"
-            )
+            atomic_write_text(path, to_markdown(record))
 
             if self._cache is not None:
                 self._cache[record.key] = record
@@ -502,7 +501,7 @@ class LearningStore:
             path = INDEX_PATH if self.root == STATE_DIR \
                 else self.root / INDEX_PATH.name
 
-            path.write_text(self.render_index(), encoding="utf-8")
+            atomic_write_text(path, self.render_index())
             self._index_dirty = False
         except Exception as e:
             print(f"写 index.md 失败: {e}")

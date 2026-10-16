@@ -19,6 +19,7 @@
 import json
 from pathlib import Path
 from typing import Dict, List, Any
+from ..atomic_write import atomic_write_json
 
 
 class KnowledgeIndex:
@@ -143,12 +144,8 @@ class KnowledgeIndex:
         try:
             self.path.parent.mkdir(parents=True, exist_ok=True)
 
-            with open(self.path, "w", encoding="utf-8") as f:
-                json.dump(
-                    self.index,
-                    f,
-                    indent=4,
-                    ensure_ascii=False
-                )
+            atomic_write_json(
+                self.path, self.index, indent=4, ensure_ascii=False
+            )
         except Exception as e:
             print(f"保存检索索引失败: {e}")

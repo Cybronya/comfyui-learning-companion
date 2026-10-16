@@ -16,12 +16,18 @@
 Markdown 存的是**人读的状态**（学习记录、归纳结论），
 要能被 grep、被 Agent 直接读。图是**派生数据**，用图自己的结构存更合适，
 而且它本来就是从 Markdown 重新生成的副产品，不需要人工编辑。
+
+2026-10-17 追加：save() 改走 `engine.atomic_write.atomic_write_json`
+（流式写 + 临时文件原子替换）。原先 `write_text(json.dumps(...))`
+会先拼几百 MB 文本再编码一份 bytes，4 万顶点时峰值内存翻倍 OOM；
+而 write_text 先截断，老图谱被清成 0 字节。
 """
 
 import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
+from ..atomic_write import atomic_write_json
 from .graph import KnowledgeGraph
 from .models import GraphNode, GraphEdge
 
@@ -57,27 +63,35 @@ class GraphStore:
         """
         保存图
 
+        **流式写 + 原子替换**（走 `engine.atomic_write.atomic_write_json`）：
+        图到 4 万顶点 / 90 万边时，`json.dumps` 先拼出的整份文本有几百 MB，
+        `write_text` 内部还要再编码一份 bytes，峰值内存翻倍直接 OOM；
+        而 `write_text` 是 mode 'w'，**先截断再写**，一旦中途失败老图谱
+        就被清成 0 字节（2026-10-16 实测：39667 顶点时保存失败，文件变
+        0 字节，整张图要重跑 4 分钟重建）。
+
         Args:
             graph: KnowledgeGraph
             indent: JSON 缩进
 
         Returns:
-            文件路径；失败返回空串
+            文件路径；失败返回空串（目标文件保持原样）
         """
         try:
-            self.path.parent.mkdir(parents=True, exist_ok=True)
-            self.path.write_text(
-                self.render(graph),
-                encoding="utf-8",
+            atomic_write_json(
+                self.path,
+                self.to_payload(graph),
+                indent=indent,
+                ensure_ascii=False,
             )
             return str(self.path)
         except Exception as e:
-            print(f"保存知识图谱失败: {e}")
+            print(f"保存知识图谱失败: {type(e).__name__}: {e}")
             return ""
 
-    def render(self, graph: KnowledgeGraph, indent: int = 2) -> str:
-        """把图序列化成 JSON 文本"""
-        data = {
+    def to_payload(self, graph: KnowledgeGraph) -> Dict:
+        """图 → 可 JSON 序列化的 dict（save/render 共用）"""
+        return {
             "version": GRAPH_FORMAT_VERSION,
             "stats": graph.stats(),
             "nodes": [
@@ -96,8 +110,12 @@ class GraphStore:
             ],
         }
 
+    def render(self, graph: KnowledgeGraph, indent: int = 2) -> str:
+        """把图序列化成 JSON 文本（大图别用，见 save 的注释）"""
         return json.dumps(
-            data, indent=indent, ensure_ascii=False
+            self.to_payload(graph),
+            indent=indent,
+            ensure_ascii=False,
         ) + "\n"
 
     # ---------- 读 ----------

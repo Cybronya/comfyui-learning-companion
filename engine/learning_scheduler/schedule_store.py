@@ -38,6 +38,7 @@ from .models import (
     FINAL_STATUSES,
 )
 from .scheduler_state import SchedulerState
+from ..atomic_write import atomic_write_text
 
 
 # 单元格内多值分隔符（不能用逗号，会与 Markdown 表格冲突）
@@ -82,8 +83,8 @@ class ScheduleStore:
         """
         try:
             self.path.parent.mkdir(parents=True, exist_ok=True)
-            self.path.write_text(
-                self.render(tasks, state, folder), encoding="utf-8"
+            atomic_write_text(
+                self.path, self.render(tasks, state, folder)
             )
             return str(self.path)
         except Exception as e:

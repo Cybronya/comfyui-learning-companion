@@ -923,6 +923,50 @@ def test_store_exposes_dangling():
     print("悬空边可见 [OK]\n")
 
 
+def test_store_save_failure_keeps_old_file():
+    """保存失败必须保住老文件（临时文件 + 原子替换）
+
+    2026-10-16 实测事故：save() 用 write_text 先拼大字符串再写，
+    4 万顶点时 OOM，而 write_text 是 mode 'w' 先截断 —— 失败后老图谱
+    直接变成 0 字节，图谱数据全丢（只能重跑 build 4 分钟重建）。
+    """
+    print("=" * 60)
+    print("测试 E4：保存失败的原子性")
+    print("=" * 60)
+
+    g = KnowledgeGraph()
+    g.link("workflow:a", REL_CONTAINS, "node:KSampler")
+
+    with TemporaryDirectory() as tmp:
+        target = Path(tmp) / "g.json"
+        store = GraphStore(str(target))
+        assert store.save(g), "正常保存应成功"
+        good = target.read_text(encoding="utf-8")
+        print(f"  正常保存: {len(good)} 字节")
+
+        # 造一个序列化必然失败的图（属性里放不可 JSON 序列化的对象）
+        class Bad:
+            def to_dict(self):
+                return {"boom": object()}      # json 序列化不了
+
+        broken = KnowledgeGraph()
+        broken.nodes["workflow:b"] = Bad()
+
+        path = store.save(broken)
+        print(f"  失败保存返回: {path!r}")
+        assert path == "", "序列化失败应返回空串"
+        assert target.read_text(encoding="utf-8") == good, \
+            "保存失败绝不能动老文件（原来是先截断，失败就 0 字节）"
+
+        # 失败也不该留下临时文件
+        leftovers = [p.name for p in target.parent.iterdir()
+                     if p.name != target.name]
+        print(f"  残留文件: {leftovers}")
+        assert not leftovers, f"失败路径不该留临时文件: {leftovers}"
+
+    print("保存失败的原子性正确 [OK]\n")
+
+
 # ============================================================
 # F. 端到端
 # ============================================================
@@ -1093,6 +1137,7 @@ def main():
     test_store_roundtrip()
     test_store_version_guard()
     test_store_exposes_dangling()
+    test_store_save_failure_keeps_old_file()
 
     # F 端到端
     test_end_to_end_real_library()

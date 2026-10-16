@@ -1,0 +1,237 @@
+---
+key: 视频生成/图生视频/参考生视频V1｜MiniMax H3 + LTX2.5 MSR二采 音频参考提示词优化_2091020777008222210.json
+name: 参考生视频V1｜MiniMax H3 + LTX2.5 MSR二采 音频参考提示词优化_2091020777008222210
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/参考生视频V1｜MiniMax H3 + LTX2.5 MSR二采 音频参考提示词优化_2091020777008222210.json
+hash: 5db2fab5d9198015
+coverage: 0.659218
+learned_at: 2026-10-16 22:31:02
+nodes: [SetNode, llama_cpp_parameters, BatchImagesNode, SetNode, SetNode, easy showAnything, LoadImage, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), PrimitiveStringMultiline, PurgeVRAM_UTK, BasicGuider, GetNode, llama_cpp_model_loader, llama_cpp_instruct_adv, VAELoader, SetNode, Fast Groups Bypasser (rgthree), JoinStringMulti, StringConcatenate, GetNode, ToString, GetNode, KSamplerSelect, SetNode, PrimitiveFloat, RandomNoise, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, LoadAudio, GetNode, ComfyMathExpression, UNETLoader, MiniMaxH3MemoryEfficientSageAttentionPatch, UNETLoader, ModelAttentionBackend, SetNode, VAELoader, CLIPLoader, CLIPLoader, UNETLoader, RandomNoise, GetNode, CFGGuider, LTXVConcatAVLatent, GetNode, GetNode, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecode, LTXVCropGuides, GetNode, GetNode, GetNode, GetNode, KSamplerSelect, LTXVChunkFeedForward, PathchSageAttentionKJ, UNETLoader, LTX2AttentionTunerPatch, ManualSigmas, LoraLoaderModelOnly, VAELoaderKJ, VAELoaderKJ, LTXICLoRALoaderModelOnly, SetLatentNoiseMask, CLIPLoader, SetNode, SetNode, SetNode, SetNode, LTXAddVideoICLoRAGuide, GetNode, UNETLoader, LiconMSR, SolidMask, ComfyMathExpression, GetNode, GetNode, ComfyMathExpression, GetNode, GetNode, GetNode, SetNode, VHS_VideoCombine, GetNode, LTXVAudioVAEEncode, PurgeVRAM_UTK, VHS_VideoCombine, VHS_VideoCombine, PromptRelayEncode, LTXVConditioning, SetNode, SetNode, GetNode, GetNode, CLIPTextEncode, SetNode, GetNode, Any Switch (rgthree), easy showAnything, string_util_StrFind, easy showAnything, GetNode, ComfyMathExpression, string_util_StrFind, StringLength, easy showAnything, StringSubstring, StringSubstring, LoadAudio, LoadAudio, easy showAnything, SetNode, PrimitiveStringMultiline, LoadImage, LoadImage, LoadImage, LoadImage, MiniMaxH3AVDecodeT8, easy showAnything, SamplerCustomAdvanced, BasicScheduler, ExtendIntermediateSigmas, ModelAttentionBackend, MiniMaxH3HybridLoader, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3SigmaShift, LoraLoaderModelOnly, MiniMaxH3MemoryEfficientSageAttentionPatch, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEEncode, LatentUpscaleModelLoader, LTXVLatentUpsampler, Label (rgthree), ResolutionSelector, SetNode, SetNode, MiniMaxH3ReferenceToVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, LoadImage]
+patterns: [text_to_image, image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/参考生视频V1｜MiniMax H3 + LTX2.5 MSR二采 音频参考提示词优化_2091020777008222210.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/参考生视频V1｜MiniMax H3 + LTX2.5 MSR二采 音频参考提示词优化_2091020777008222210.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（179 个）：
+- `SetNode`
+- `llama_cpp_parameters`
+- `BatchImagesNode`
+- `SetNode`
+- `SetNode`
+- `easy showAnything`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `PrimitiveStringMultiline`
+- `PurgeVRAM_UTK`
+- `BasicGuider`
+- `GetNode`
+- `llama_cpp_model_loader`
+- `llama_cpp_instruct_adv`
+- `VAELoader`
+- `SetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `JoinStringMulti`
+- `StringConcatenate`
+- `GetNode`
+- `ToString`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `SetNode`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAELoader`
+- `LoadAudio`
+- `GetNode`
+- `ComfyMathExpression`
+- `UNETLoader` ★核心
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `UNETLoader` ★核心
+- `ModelAttentionBackend`
+- `SetNode`
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `RandomNoise`
+- `GetNode`
+- `CFGGuider`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LTXVCropGuides`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `LTXVChunkFeedForward`
+- `PathchSageAttentionKJ`
+- `UNETLoader` ★核心
+- `LTX2AttentionTunerPatch`
+- `ManualSigmas`
+- `LoraLoaderModelOnly` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LTXICLoRALoaderModelOnly` ★核心
+- `SetLatentNoiseMask`
+- `CLIPLoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LTXAddVideoICLoRAGuide`
+- `GetNode`
+- `UNETLoader` ★核心
+- `LiconMSR`
+- `SolidMask`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `LTXVAudioVAEEncode` ★核心
+- `PurgeVRAM_UTK`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `PromptRelayEncode`
+- `LTXVConditioning`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `easy showAnything`
+- `string_util_StrFind`
+- `easy showAnything`
+- `GetNode`
+- `ComfyMathExpression`
+- `string_util_StrFind`
+- `StringLength`
+- `easy showAnything`
+- `StringSubstring`
+- `StringSubstring`
+- `LoadAudio`
+- `LoadAudio`
+- `easy showAnything`
+- `SetNode`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `MiniMaxH3AVDecodeT8`
+- `easy showAnything`
+- `SamplerCustomAdvanced` ★核心
+- `BasicScheduler`
+- `ExtendIntermediateSigmas`
+- `ModelAttentionBackend`
+- `MiniMaxH3HybridLoader`
+- `LoraLoaderModelOnly` ★核心
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3SigmaShift`
+- `LoraLoaderModelOnly` ★核心
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEEncode` ★核心
+- `LatentUpscaleModelLoader`
+- `LTXVLatentUpsampler` ★核心
+- `Label (rgthree)`
+- `ResolutionSelector`
+- `SetNode`
+- `SetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `LoadImage`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **66%**（118/179）
+
+**有卡**：`llama_cpp_parameters`、`BatchImagesNode`、`LoadImage`、`PurgeVRAM_UTK`、`BasicGuider`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`VAELoader`、`JoinStringMulti`、`StringConcatenate`、`ToString`、`KSamplerSelect`、`RandomNoise`、`LoadAudio`、`ComfyMathExpression`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelAttentionBackend`、`CLIPLoader`、`CFGGuider`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`LTXVCropGuides`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`LTX2AttentionTunerPatch`、`ManualSigmas`、`LoraLoaderModelOnly`、`VAELoaderKJ`、`LTXICLoRALoaderModelOnly`、`SetLatentNoiseMask`、`LTXAddVideoICLoRAGuide`、`LiconMSR`、`SolidMask`、`VHS_VideoCombine`、`LTXVAudioVAEEncode`、`PromptRelayEncode`、`LTXVConditioning`、`CLIPTextEncode`、`string_util_StrFind`、`StringLength`、`StringSubstring`、`MiniMaxH3AVDecodeT8`、`BasicScheduler`、`ExtendIntermediateSigmas`、`MiniMaxH3HybridLoader`、`MiniMaxH3SigmaShift`、`VAEEncode`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`Label (rgthree)`、`ResolutionSelector`、`MiniMaxH3ReferenceToVideo`、`KSampler`、`solarL_SaveImagesToZip`、`EmptyLatentImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
