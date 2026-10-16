@@ -1,0 +1,240 @@
+---
+key: 视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json
+name: 三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039591147898675202.json
+hash: d1bca5341a1418bb
+coverage: 0.84
+learned_at: 2026-10-15 22:36:09
+nodes: [KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RandomNoise, CFGGuider, SamplerCustomAdvanced, KSamplerSelect, CFGGuider, ManualSigmas, LTXVConcatAVLatent, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXAVTextEncoderLoader, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVSeparateAVLatent, LTXVConcatAVLatent, RandomNoise, easy showAnything, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LTXVPreprocess, LTXVPreprocess, LTXVPreprocess, LTXVAddGuideMulti, VAEDecodeTiled, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveNode, PrimitiveNode, PrimitiveNode, easy mathInt, CFGGuider, VAEDecodeTiled, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVConcatAVLatent, ManualSigmas, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, RandomNoise, LTXVEmptyLatentAudio, CFGGuider, LTXVSeparateAVLatent, RandomNoise, EmptyLTXVLatentVideo, LTXVPreprocess, ResizeLongestToNode, image_scale_pixel_v2, LTXAVTextEncoderLoader, CM_FloatToInt, ImageResizeKJv2, PrimitiveFloat, CM_FloatToInt, EmptyLTXVLatentVideo, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVConditioning, LTXVAddGuideMulti, LTXVAddGuideMulti, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, LTXVAudioVAEDecode, VHS_MergeImages, AudioConcat, SamplerCustomAdvanced, ImageResizeKJv2, PrimitiveInt, LTXVAddGuideMulti, LoadImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, JWStringGetLine, LoadImage, 1hew_ImageGridSplit, 1hew_ImageGridSplit, 1hew_ImageGridSplit, 1hew_ImageGridSplit, JWStringGetLine, ShowText, JjkConcat, ShowText, easy saveText, RH_LLMAPI_Pro_Node, easy saveText, ShowText, ShowText, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, JWImageSequenceExtractFromBatch, easy mathInt, easy mathInt, 1hew_ImageGridSplit, JWImageSequenceExtractFromBatch, LTXVAudioVAEDecode, LoadImage, LoadImage, LoadImage, PrimitiveNode, PrimitiveNode, PrimitiveNode, LTXVAddGuideMulti, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, PrimitiveFloat, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, RandomNoise, LTXVConditioning, LTXVPreprocess, LTXVPreprocess, ImageResizeKJv2, LTXVPreprocess, LTXVPreprocess, ImageResizeKJv2, LTXVPreprocess, LTXVLatentUpsampler, LTXVSeparateAVLatent, PreviewImage, 1hew_ImageGridSplit, 1hew_ImageGridSplit, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, ImageSizeInfo, LTXVLatentUpsampler, DisTorchPurgeVRAMV2, DisTorchPurgeVRAMV2, LTXVLatentUpsampler, ResizeLongestToNode, LTXVSeparateAVLatent, PrimitiveInt, DF_Integer, DF_Integer, PrimitiveFloat, easy mathInt, GetImageSize+, GetImageSize+, LTXVAddGuideMulti, LTXVConcatAVLatent, LTXVLatentUpsampler, image_scale_pixel_v2, PrimitiveNode, LTXVEmptyLatentAudio, LTXVAudioVAELoader, LatentUpscaleModelLoader, easy showAnything, ShowText, VHS_VideoCombine, LoraLoaderModelOnly, CheckpointLoaderSimple, LoraLoaderModelOnly, PrimitiveNode, PrimitiveNode, VHS_VideoCombine, LTXVAddGuideMulti, easy mathInt, LoadImage, JWInteger, RH_Nano_Banana2_Gemini31Flash, JWInteger, easy mathInt, easy mathInt, CLIPTextEncode, RH_LLMAPI_Pro_Node, PreviewImage, string_util_StrFind, JjkConcat, If ANY execute A else B, JWStringGetLine, JWStringSplit, RH_LLMAPI_Pro_Node, TextBoxMira, TextBoxMira]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039591147898675202.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（200 个）：
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXAVTextEncoderLoader`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `easy showAnything`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `LTXVAddGuideMulti`
+- `VAEDecodeTiled` ★核心
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `easy mathInt`
+- `CFGGuider`
+- `VAEDecodeTiled` ★核心
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVConcatAVLatent`
+- `ManualSigmas`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `LTXVEmptyLatentAudio` ★核心
+- `CFGGuider`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `EmptyLTXVLatentVideo`
+- `LTXVPreprocess`
+- `ResizeLongestToNode`
+- `image_scale_pixel_v2`
+- `LTXAVTextEncoderLoader`
+- `CM_FloatToInt`
+- `ImageResizeKJv2`
+- `PrimitiveFloat`
+- `CM_FloatToInt`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVConditioning`
+- `LTXVAddGuideMulti`
+- `LTXVAddGuideMulti`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `VHS_MergeImages`
+- `AudioConcat`
+- `SamplerCustomAdvanced` ★核心
+- `ImageResizeKJv2`
+- `PrimitiveInt`
+- `LTXVAddGuideMulti`
+- `LoadImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `JWStringGetLine`
+- `LoadImage`
+- `1hew_ImageGridSplit`
+- `1hew_ImageGridSplit`
+- `1hew_ImageGridSplit`
+- `1hew_ImageGridSplit`
+- `JWStringGetLine`
+- `ShowText`
+- `JjkConcat`
+- `ShowText`
+- `easy saveText`
+- `RH_LLMAPI_Pro_Node`
+- `easy saveText`
+- `ShowText`
+- `ShowText`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `JWImageSequenceExtractFromBatch`
+- `easy mathInt`
+- `easy mathInt`
+- `1hew_ImageGridSplit`
+- `JWImageSequenceExtractFromBatch`
+- `LTXVAudioVAEDecode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `LTXVAddGuideMulti`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `LTXVConditioning`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `ImageResizeKJv2`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `ImageResizeKJv2`
+- `LTXVPreprocess`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSeparateAVLatent`
+- `PreviewImage`
+- `1hew_ImageGridSplit`
+- `1hew_ImageGridSplit`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `ImageSizeInfo`
+- `LTXVLatentUpsampler` ★核心
+- `DisTorchPurgeVRAMV2`
+- `DisTorchPurgeVRAMV2`
+- `LTXVLatentUpsampler` ★核心
+- `ResizeLongestToNode`
+- `LTXVSeparateAVLatent`
+- `PrimitiveInt`
+- `DF_Integer`
+- `DF_Integer`
+- `PrimitiveFloat`
+- `easy mathInt`
+- `GetImageSize+`
+- `GetImageSize+`
+- `LTXVAddGuideMulti`
+- `LTXVConcatAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `image_scale_pixel_v2`
+- `PrimitiveNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVAudioVAELoader`
+- `LatentUpscaleModelLoader`
+- `easy showAnything`
+- `ShowText`
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `VHS_VideoCombine`
+- `LTXVAddGuideMulti`
+- `easy mathInt`
+- `LoadImage`
+- `JWInteger`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `JWInteger`
+- `easy mathInt`
+- `easy mathInt`
+- `CLIPTextEncode` ★核心
+- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `string_util_StrFind`
+- `JjkConcat`
+- `If ANY execute A else B`
+- `JWStringGetLine`
+- `JWStringSplit`
+- `RH_LLMAPI_Pro_Node`
+- `TextBoxMira`
+- `TextBoxMira`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+
+## 知识
+
+覆盖率 **84%**（168/200）
+
+**有卡**：`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`LTXVSeparateAVLatent`、`LTXAVTextEncoderLoader`、`LTXVLatentUpsampler`、`ImageResizeKJv2`、`LTXVPreprocess`、`LTXVAddGuideMulti`、`VAEDecodeTiled`、`easy mathInt`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`ResizeLongestToNode`、`image_scale_pixel_v2`、`CM_FloatToInt`、`LTXVConditioning`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`VHS_MergeImages`、`AudioConcat`、`LoadImage`、`JWStringGetLine`、`1hew_ImageGridSplit`、`ShowText`、`JjkConcat`、`easy saveText`、`RH_LLMAPI_Pro_Node`、`ImageSizeInfo`、`JWImageSequenceExtractFromBatch`、`DisTorchPurgeVRAMV2`、`DF_Integer`、`GetImageSize+`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`JWInteger`、`RH_Nano_Banana2_Gemini31Flash`、`string_util_StrFind`、`If ANY execute A else B`、`JWStringSplit`、`TextBoxMira`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

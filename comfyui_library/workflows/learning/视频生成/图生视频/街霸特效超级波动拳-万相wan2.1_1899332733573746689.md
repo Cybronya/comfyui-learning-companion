@@ -1,0 +1,52 @@
+---
+key: 视频生成/图生视频/街霸特效超级波动拳-万相wan2.1_1899332733573746689.json
+name: 街霸特效超级波动拳-万相wan2.1_1899332733573746689.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1899332733573746689.json
+hash: cb18ffe860f8b58f
+coverage: 0.95
+learned_at: 2026-10-15 22:29:21
+nodes: [WanVideoBlockSwap, LoadWanVideoClipTextEncoder, WanVideoVAELoader, Note Plus (mtb), WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoEnhanceAVideo, WanVideoDecode, Int, WanVideoTeaCache, Note, UpscaleModelLoader, ImageUpscaleWithModel, LayerUtility: PurgeVRAM, WanVideoLoraSelect, WanVideoTextEncode, WanVideoImageClipEncode, LoadImage, WanVideoSampler, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/街霸特效超级波动拳-万相wan2.1_1899332733573746689.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1899332733573746689.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（20 个）：
+- `WanVideoBlockSwap`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `Note Plus (mtb)`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `Int`
+- `WanVideoTeaCache`
+- `Note`
+- `UpscaleModelLoader`
+- `ImageUpscaleWithModel`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `WanVideoImageClipEncode`
+- `LoadImage`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **95%**（19/20）
+
+**有卡**：`WanVideoBlockSwap`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`Note Plus (mtb)`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`Int`、`WanVideoTeaCache`、`UpscaleModelLoader`、`ImageUpscaleWithModel`、`LayerUtility: PurgeVRAM`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`WanVideoImageClipEncode`、`LoadImage`、`WanVideoSampler`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

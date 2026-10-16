@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/SmoothMix-V2.0图生视频_2010681519400034305.json
+name: SmoothMix-V2.0图生视频_2010681519400034305.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2010681519400034305.json
+hash: 810058645e15d7f9
+coverage: 1
+learned_at: 2026-10-15 22:34:18
+nodes: [CLIPLoader, INTConstant, VAELoader, INTConstant, INTConstant, SimpleMath+, ImageResizeKJv2, ModelSamplingSD3, ModelSamplingSD3, ModelPatchTorchSettings, ModelPatchTorchSettings, CLIPVisionEncode, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, Wan22PromptSelector, CR Text, Text Concatenate, CLIPTextEncode, CLIPTextEncode, WanImageToVideo, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, VHS_VideoCombine, CLIPVisionLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "beta", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/SmoothMix-V2.0图生视频_2010681519400034305.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2010681519400034305.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（30 个）：
+- `CLIPLoader`
+- `INTConstant`
+- `VAELoader`
+- `INTConstant`
+- `INTConstant`
+- `SimpleMath+`
+- `ImageResizeKJv2`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `CLIPVisionEncode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `Wan22PromptSelector`
+- `CR Text`
+- `Text Concatenate`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `WanImageToVideo`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `CLIPVisionLoader`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `beta`
+
+## 知识
+
+覆盖率 **100%**（30/30）
+
+**有卡**：`CLIPLoader`、`INTConstant`、`VAELoader`、`SimpleMath+`、`ImageResizeKJv2`、`ModelSamplingSD3`、`ModelPatchTorchSettings`、`CLIPVisionEncode`、`UNETLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`LoadImage`、`Wan22PromptSelector`、`CR Text`、`Text Concatenate`、`CLIPTextEncode`、`WanImageToVideo`、`KSamplerAdvanced`、`VAEDecode`、`VHS_VideoCombine`、`CLIPVisionLoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

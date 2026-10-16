@@ -1,0 +1,96 @@
+---
+key: 视频生成/图生视频/WAN2.2+Qwen3VL+Foley_全自动自配音效图生视频_2043951609989828610.json
+name: WAN2.2+Qwen3VL+Foley_全自动自配音效图生视频_2043951609989828610.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2043951609989828610.json
+hash: e925fac3058a704c
+coverage: 0.5
+learned_at: 2026-10-15 22:36:35
+nodes: [SetNode, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, CLIPTextEncode, SetNode, GetNode, GetNode, GetNode, GetNode, easy cleanGpuUsed, easy promptLine, SetNode, UNETLoader, wanBlockSwap, wanBlockSwap, GetNode, SetNode, UNETLoader, ImageResizeKJv2, GetNode, GetNode, SetNode, WanImageToVideo, CLIPLoader, GetNode, SetNode, VAELoader, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, Qwen3_VQA, SetNode, GetNode, WanMoeKSampler, easy showAnything, CR Prompt Text, VHS_VideoCombine, VHS_VideoCombine, HunyuanVideoFoley, VAEDecode, easy cleanGpuUsed, RIFE VFI, SetNode, GetNode, GetNode, Fast Groups Bypasser (rgthree), LoadImage, QZ_ResolutionPreset, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "fixed"}
+---
+
+# 视频生成/图生视频/WAN2.2+Qwen3VL+Foley_全自动自配音效图生视频_2043951609989828610.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2043951609989828610.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（54 个）：
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy promptLine`
+- `SetNode`
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `GetNode`
+- `SetNode`
+- `UNETLoader` ★核心
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanImageToVideo`
+- `CLIPLoader`
+- `GetNode`
+- `SetNode`
+- `VAELoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Qwen3_VQA`
+- `SetNode`
+- `GetNode`
+- `WanMoeKSampler` ★核心
+- `easy showAnything`
+- `CR Prompt Text`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `HunyuanVideoFoley`
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `RIFE VFI`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `QZ_ResolutionPreset`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **50%**（27/54）
+
+**有卡**：`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`easy cleanGpuUsed`、`easy promptLine`、`UNETLoader`、`wanBlockSwap`、`ImageResizeKJv2`、`WanImageToVideo`、`CLIPLoader`、`VAELoader`、`Qwen3_VQA`、`WanMoeKSampler`、`CR Prompt Text`、`VHS_VideoCombine`、`HunyuanVideoFoley`、`VAEDecode`、`RIFE VFI`、`LoadImage`、`QZ_ResolutionPreset`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler、CR Prompt Text

@@ -1,0 +1,53 @@
+---
+key: 视频生成/图生视频/AI短剧-Seedance2.0-图生视频_2048023728835006465.json
+name: AI短剧-Seedance2.0-图生视频_2048023728835006465.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2048023728835006465.json
+hash: 7d57e2b53bdab711
+coverage: 0.47619
+learned_at: 2026-10-15 22:37:08
+nodes: [MarkdownNote, MarkdownNote, LoadImage, MarkdownNote, SaveVideo, RH_RhartVideoSparkvideo20MultimodalVideo, MarkdownNote, RH_SparkVideoAssetIdsMerge, RH_SparkVideoAssetCreate, PreviewAny, PreviewAny, RH_SparkVideoAssetCreate, PreviewAny, PreviewAny, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), RH_RhartVideoSparkvideo20MultimodalVideo, SaveVideo, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/AI短剧-Seedance2.0-图生视频_2048023728835006465.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2048023728835006465.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（21 个）：
+- `MarkdownNote`
+- `MarkdownNote`
+- `LoadImage`
+- `MarkdownNote`
+- `SaveVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `MarkdownNote`
+- `RH_SparkVideoAssetIdsMerge`
+- `RH_SparkVideoAssetCreate`
+- `PreviewAny`
+- `PreviewAny`
+- `RH_SparkVideoAssetCreate`
+- `PreviewAny`
+- `PreviewAny`
+- `LoadImage`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `SaveVideo`
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **48%**（10/21）
+
+**有卡**：`LoadImage`、`SaveVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`RH_SparkVideoAssetIdsMerge`、`RH_SparkVideoAssetCreate`
+
+**用到的条目**：LoadImage、SaveVideo、RH_RhartVideoSparkvideo20MultimodalVideo、RH_SparkVideoAssetCreate、RH_SparkVideoAssetIdsMerge、sd15-t2i-basic、sd15-t2i-lora、Image Load

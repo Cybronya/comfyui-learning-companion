@@ -1,0 +1,51 @@
+---
+key: 视频生成/图生视频/wan2.1图生视频-飞行特效_1900041453022621698.json
+name: wan2.1图生视频-飞行特效_1900041453022621698.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1900041453022621698.json
+hash: 6d6bdd366dca5b92
+coverage: 1
+learned_at: 2026-10-15 22:29:22
+nodes: [LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoTextEncode, WanVideoImageClipEncode, WanVideoVAELoader, WanVideoSampler, WanVideoDecode, VHS_VideoCombine, Int, WanVideoModelLoader, WanVideoBlockSwap, RIFE VFI, WanVideoTeaCache, WanVideoEnhanceAVideo, ImageResizeKJ, LoadImage, WanVideoLoraSelect, TextInput_, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1图生视频-飞行特效_1900041453022621698.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1900041453022621698.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（19 个）：
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoTextEncode`
+- `WanVideoImageClipEncode`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `Int`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `RIFE VFI`
+- `WanVideoTeaCache`
+- `WanVideoEnhanceAVideo`
+- `ImageResizeKJ`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `TextInput_`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **100%**（19/19）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoTextEncode`、`WanVideoImageClipEncode`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoDecode`、`VHS_VideoCombine`、`Int`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`RIFE VFI`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`ImageResizeKJ`、`LoadImage`、`WanVideoLoraSelect`、`TextInput_`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

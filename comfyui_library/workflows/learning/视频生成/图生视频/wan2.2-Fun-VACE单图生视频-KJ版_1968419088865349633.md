@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/wan2.2-Fun-VACE单图生视频-KJ版_1968419088865349633.json
+name: wan2.2-Fun-VACE单图生视频-KJ版_1968419088865349633.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1968419088865349633.json
+hash: 1b661f1952a4d309
+coverage: 0.72093
+learned_at: 2026-10-15 22:31:45
+nodes: [GetNode, WanVideoSampler, SetNode, Reroute, PrimitiveNode, WanVideoScheduler, ImageConcatMulti, WanVideoDecode, WanVideoModelLoader, WanVideoVACEModelSelect, INTConstant, INTConstant, WanVideoSampler, GetNode, GetNode, WanVideoTextEncodeCached, WanVideoVACEEncode, GetNode, INTConstant, WanVideoLoraSelectMulti, INTConstant, WanVideoVACEStartToEndFrame, WanVideoSetBlockSwap, ImageResizeKJv2, INTConstant, LoadImage, WanVideoSetLoRAs, WanVideoLoraSelectMulti, Note, WanVideoTorchCompileSettings, WanVideoVAELoader, SetNode, SetNode, SetNode, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoModelLoader, WanVideoVACEModelSelect, WanVideoBlockSwap, Note, Text Multiline, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2-Fun-VACE单图生视频-KJ版_1968419088865349633.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1968419088865349633.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（43 个）：
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `SetNode`
+- `Reroute`
+- `PrimitiveNode`
+- `WanVideoScheduler`
+- `ImageConcatMulti`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoVACEModelSelect`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `WanVideoVACEEncode`
+- `GetNode`
+- `INTConstant`
+- `WanVideoLoraSelectMulti`
+- `INTConstant`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoSetBlockSwap`
+- `ImageResizeKJv2`
+- `INTConstant`
+- `LoadImage`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelectMulti`
+- `Note`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoVACEModelSelect`
+- `WanVideoBlockSwap`
+- `Note`
+- `Text Multiline`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **72%**（31/43）
+
+**有卡**：`WanVideoSampler`、`WanVideoScheduler`、`ImageConcatMulti`、`WanVideoDecode`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`INTConstant`、`WanVideoTextEncodeCached`、`WanVideoVACEEncode`、`WanVideoLoraSelectMulti`、`WanVideoVACEStartToEndFrame`、`WanVideoSetBlockSwap`、`ImageResizeKJv2`、`LoadImage`、`WanVideoSetLoRAs`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`Text Multiline`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

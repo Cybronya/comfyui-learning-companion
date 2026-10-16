@@ -1,0 +1,137 @@
+---
+key: 视频生成/图生视频/LTX2.3数字人 动作模仿+图片跳舞+动作迁移 极速图生视频 虚拟美女模特 数字人对话_2048925401644273665.json
+name: LTX2.3数字人 动作模仿+图片跳舞+动作迁移 极速图生视频 虚拟美女模特 数字人对话_2048925401644273665.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2048925401644273665.json
+hash: 93c22372a3caac00
+coverage: 0.632653
+learned_at: 2026-10-15 22:37:11
+nodes: [LTXVEmptyLatentAudio, CFGGuider, KSamplerSelect, RandomNoise, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, KSamplerSelect, ManualSigmas, GetNode, GetNode, CFGGuider, RandomNoise, LTXVConcatAVLatent, GetNode, LTXVLatentUpsampler, SetNode, SetNode, LTXAddVideoICLoRAGuide, GetNode, SamplerCustomAdvanced, LTXVImgToVideoInplace, GetNode, PrimitiveBoolean, LTXVConditioning, ManualSigmas, ImageResizeKJv2, GetNode, GetNode, SimpleMath+, SimpleMath+, CLIPTextEncode, SetNode, SetNode, SetNode, SetNode, SetNode, LatentUpscaleModelLoader, LTXVSeparateAVLatent, LTXVImgToVideoInplace, GetNode, DWPreprocessor, ImageResizeKJv2, GetImageSize, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, VAEDecodeTiled, LTXVSeparateAVLatent, SamplerCustomAdvanced, RandomNoise, SetNode, SimpleMath+, INTConstant, INTConstant, GetNode, GetNode, CLIPTextEncode, UNETLoader, VAELoaderKJ, VAELoaderKJ, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, DualCLIPLoader, LTXICLoRALoaderModelOnly, SetNode, SetNode, VHS_VideoInfo, SetNode, ComfyMathExpression, GetNode, GetNode, ImageResizeKJv2, GetNode, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, RTXVideoSuperResolution, SetNode, SetNode, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVCropGuides, SamplerCustomAdvanced, LTXVLatentUpsampler, GetNode, INTConstant, SimpleMath+, LTXVCropGuides, GetNode, LoadImage, VHS_LoadVideo, JjkText, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3数字人 动作模仿+图片跳舞+动作迁移 极速图生视频 虚拟美女模特 数字人对话_2048925401644273665.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2048925401644273665.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（98 个）：
+- `LTXVEmptyLatentAudio` ★核心
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `LTXVImgToVideoConditionOnly`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `SetNode`
+- `SetNode`
+- `LTXAddVideoICLoRAGuide`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `PrimitiveBoolean`
+- `LTXVConditioning`
+- `ManualSigmas`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SimpleMath+`
+- `SimpleMath+`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LatentUpscaleModelLoader`
+- `LTXVSeparateAVLatent`
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `DWPreprocessor`
+- `ImageResizeKJv2`
+- `GetImageSize`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecodeTiled` ★核心
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `SetNode`
+- `SimpleMath+`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `DualCLIPLoader`
+- `LTXICLoRALoaderModelOnly` ★核心
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfo`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `RTXVideoSuperResolution`
+- `SetNode`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `INTConstant`
+- `SimpleMath+`
+- `LTXVCropGuides`
+- `GetNode`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `JjkText`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **63%**（62/98）
+
+**有卡**：`LTXVEmptyLatentAudio`、`CFGGuider`、`KSamplerSelect`、`RandomNoise`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`LTXAddVideoICLoRAGuide`、`SamplerCustomAdvanced`、`LTXVImgToVideoInplace`、`PrimitiveBoolean`、`LTXVConditioning`、`ImageResizeKJv2`、`SimpleMath+`、`CLIPTextEncode`、`LatentUpscaleModelLoader`、`LTXVSeparateAVLatent`、`DWPreprocessor`、`GetImageSize`、`VAEDecodeTiled`、`INTConstant`、`UNETLoader`、`VAELoaderKJ`、`LayerUtility: PurgeVRAM`、`DualCLIPLoader`、`LTXICLoRALoaderModelOnly`、`VHS_VideoInfo`、`ComfyMathExpression`、`RTXVideoSuperResolution`、`LTXVCropGuides`、`LoadImage`、`VHS_LoadVideo`、`VHS_VideoCombine`
+
+**用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent

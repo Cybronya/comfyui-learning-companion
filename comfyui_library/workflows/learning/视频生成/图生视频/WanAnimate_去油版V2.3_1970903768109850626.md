@@ -1,0 +1,123 @@
+---
+key: 视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json
+name: WanAnimate_去油版V2.3_1970903768109850626.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1970903768109850626.json
+hash: b78784f5f20538f2
+coverage: 0.527473
+learned_at: 2026-10-15 22:31:54
+nodes: [SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageConcatMulti, CLIPVisionLoader, WanVideoClipVisionEncode, ImageConcatMulti, WanVideoDecode, GetImageSizeAndCount, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSampler, WanVideoTorchCompileSettings, Textbox, Note, SetNode, MarkdownNote, GetNode, GetNode, OnnxDetectionModelLoader, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, BlockifyMask, GrowMask, GetNode, ConvertAny2Float, GetNode, ConvertAny2Float, ImageResizeKJv2, GetNode, WanVideoTextEncodeCached, Int, MathExpression|pysssss, VHS_VideoCombine, LoadImage, GetNode, ApplyFaceProcessor, VideoInputPreprocessor, SetNode, MathExpression|pysssss, DrawMaskOnImage, SoundFlow_SetLength, PreviewAudio, SetNode, WanVideoVAELoader, WanVideoModelLoader, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, DownloadAndLoadSAM2Model, Sam2Segmentation, WanVideoBlockSwap, WanVideoLoraSelectMulti, GetNode, SetNode, SetNode, ttN float, Int, SetNode, easy showAnything, DrawViTPose, PoseAndFaceDetection, WanVideoAnimateEmbeds, LayerUtility: ImageScaleByAspectRatio V2, GetNode, PreviewAudio, SetNode, FrameSelector, MarkdownNote, VHS_LoadVideo, WanVideoContextOptions, GetNode, FaceProcessorLoader, GetNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1970903768109850626.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（91 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `CLIPVisionLoader`
+- `WanVideoClipVisionEncode`
+- `ImageConcatMulti`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSampler` ★核心
+- `WanVideoTorchCompileSettings`
+- `Textbox`
+- `Note`
+- `SetNode`
+- `MarkdownNote`
+- `GetNode`
+- `GetNode`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `BlockifyMask`
+- `GrowMask`
+- `GetNode`
+- `ConvertAny2Float`
+- `GetNode`
+- `ConvertAny2Float`
+- `ImageResizeKJv2`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `Int`
+- `MathExpression|pysssss`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `GetNode`
+- `ApplyFaceProcessor`
+- `VideoInputPreprocessor`
+- `SetNode`
+- `MathExpression|pysssss`
+- `DrawMaskOnImage`
+- `SoundFlow_SetLength`
+- `PreviewAudio`
+- `SetNode`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `DownloadAndLoadSAM2Model`
+- `Sam2Segmentation`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelectMulti`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `ttN float`
+- `Int`
+- `SetNode`
+- `easy showAnything`
+- `DrawViTPose`
+- `PoseAndFaceDetection`
+- `WanVideoAnimateEmbeds`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `PreviewAudio`
+- `SetNode`
+- `FrameSelector`
+- `MarkdownNote`
+- `VHS_LoadVideo`
+- `WanVideoContextOptions`
+- `GetNode`
+- `FaceProcessorLoader`
+- `GetNode`
+
+## 知识
+
+覆盖率 **53%**（48/91）
+
+**有卡**：`ImageConcatMulti`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`Textbox`、`OnnxDetectionModelLoader`、`BlockifyMask`、`GrowMask`、`ConvertAny2Float`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`、`Int`、`MathExpression|pysssss`、`VHS_VideoCombine`、`LoadImage`、`ApplyFaceProcessor`、`VideoInputPreprocessor`、`DrawMaskOnImage`、`SoundFlow_SetLength`、`PreviewAudio`、`WanVideoVAELoader`、`WanVideoModelLoader`、`DownloadAndLoadSAM2Model`、`Sam2Segmentation`、`WanVideoBlockSwap`、`WanVideoLoraSelectMulti`、`ttN float`、`DrawViTPose`、`PoseAndFaceDetection`、`WanVideoAnimateEmbeds`、`LayerUtility: ImageScaleByAspectRatio V2`、`FrameSelector`、`VHS_LoadVideo`、`WanVideoContextOptions`、`FaceProcessorLoader`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs

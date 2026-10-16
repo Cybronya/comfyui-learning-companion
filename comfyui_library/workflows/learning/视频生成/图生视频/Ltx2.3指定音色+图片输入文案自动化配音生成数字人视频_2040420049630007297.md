@@ -1,0 +1,97 @@
+---
+key: 视频生成/图生视频/Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2040420049630007297.json
+name: Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2040420049630007297.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2040420049630007297.json
+hash: bfd40a444891f17c
+coverage: 0.883333
+learned_at: 2026-10-15 22:36:15
+nodes: [RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, Reroute, LTXVAudioVAEDecode, CLIPTextEncode, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, CFGGuider, SolidMask, LTXVPreprocess, ComfyMathExpression, ComfyMathExpression, LTXVAudioVAEEncode, LTXVConcatAVLatent, SetLatentNoiseMask, ResizeImageMaskNode, LatentUpscaleModelLoader, PrimitiveInt, PrimitiveInt, LTXVImgToVideoInplace, RandomNoise, CheckpointLoaderSimple, LoraLoaderModelOnly, LTXVAudioVAELoader, ResizeImagesByLongerEdge, ComfyMathExpression, EmptyLTXVLatentVideo, PrimitiveBoolean, SaveVideo, CreateVideo, ComfyMathExpression, LoraLoaderModelOnly, LTXAVTextEncoderLoader, VAEDecodeTiled, LTXVSeparateAVLatent, easy cleanGpuUsed, KSamplerSelect, Fast Groups Bypasser (rgthree), PrimitiveFloat, CLIPTextEncode, PrimitiveStringMultiline, PrimitiveInt, LoadImage, TrimAudioDuration, SoundFlow_GetLength, Apply Whisper, MelBandRoFormerSampler, MelBandRoFormerModelLoader, LoadAudio, Text, LongCatVoiceCloneTTS]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2040420049630007297.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2040420049630007297.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（60 个）：
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `CFGGuider`
+- `SolidMask`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVAudioVAEEncode` ★核心
+- `LTXVConcatAVLatent`
+- `SetLatentNoiseMask`
+- `ResizeImageMaskNode`
+- `LatentUpscaleModelLoader`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LTXVImgToVideoInplace`
+- `RandomNoise`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVAudioVAELoader`
+- `ResizeImagesByLongerEdge`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `PrimitiveBoolean`
+- `SaveVideo`
+- `CreateVideo`
+- `ComfyMathExpression`
+- `LoraLoaderModelOnly` ★核心
+- `LTXAVTextEncoderLoader`
+- `VAEDecodeTiled` ★核心
+- `LTXVSeparateAVLatent`
+- `easy cleanGpuUsed`
+- `KSamplerSelect` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `PrimitiveFloat`
+- `CLIPTextEncode` ★核心
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `LoadImage`
+- `TrimAudioDuration`
+- `SoundFlow_GetLength`
+- `Apply Whisper`
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `LoadAudio`
+- `Text`
+- `LongCatVoiceCloneTTS`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **88%**（53/60）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`SolidMask`、`LTXVPreprocess`、`ComfyMathExpression`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`ResizeImageMaskNode`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`LTXVAudioVAELoader`、`ResizeImagesByLongerEdge`、`EmptyLTXVLatentVideo`、`PrimitiveBoolean`、`SaveVideo`、`CreateVideo`、`LTXAVTextEncoderLoader`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`LoadImage`、`TrimAudioDuration`、`SoundFlow_GetLength`、`Apply Whisper`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`LoadAudio`、`Text`、`LongCatVoiceCloneTTS`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler

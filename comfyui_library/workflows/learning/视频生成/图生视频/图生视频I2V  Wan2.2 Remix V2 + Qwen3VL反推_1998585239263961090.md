@@ -1,0 +1,86 @@
+---
+key: 视频生成/图生视频/图生视频I2V  Wan2.2 Remix V2 + Qwen3VL反推_1998585239263961090.json
+name: 图生视频I2V  Wan2.2 Remix V2 + Qwen3VL反推_1998585239263961090.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998585239263961090.json
+hash: 34e86dbc9854d026
+coverage: 0.818182
+learned_at: 2026-10-15 22:33:32
+nodes: [Seed (rgthree), PreviewImage, PathchSageAttentionKJ, CLIPLoader, Note, UNETLoader, ModelSamplingSD3, Note, SaveImage, ImageScaleBy, ColorMatch, Pick From Batch (mtb), LayerUtility: PurgeVRAM V2, ModelSamplingSD3, CLIPVisionEncode, CLIPVisionLoader, JWInteger, WanImageToVideo, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, JWInteger, CLIPTextEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, Note, Note, LoraLoaderModelOnly, UNETLoader, KSamplerAdvanced, KSamplerAdvanced, Qwen3_VQA, Text Concatenate, CR Prompt Text, CR Prompt Text, MultiplePathsInput, CR Prompt Text, easy showAnything, ImageLoader, VHS_VideoCombine, VAELoader, Reroute, VAEDecode, GetImageSizeAndCount, easy showAnything]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "beta", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/图生视频I2V  Wan2.2 Remix V2 + Qwen3VL反推_1998585239263961090.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998585239263961090.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（44 个）：
+- `Seed (rgthree)`
+- `PreviewImage`
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `Note`
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `Note`
+- `SaveImage`
+- `ImageScaleBy`
+- `ColorMatch`
+- `Pick From Batch (mtb)`
+- `LayerUtility: PurgeVRAM V2`
+- `ModelSamplingSD3`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `JWInteger`
+- `WanImageToVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+- `JWInteger`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `Note`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Qwen3_VQA`
+- `Text Concatenate`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `MultiplePathsInput`
+- `CR Prompt Text`
+- `easy showAnything`
+- `ImageLoader`
+- `VHS_VideoCombine`
+- `VAELoader`
+- `Reroute`
+- `VAEDecode` ★核心
+- `GetImageSizeAndCount`
+- `easy showAnything`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `beta`
+
+## 知识
+
+覆盖率 **82%**（36/44）
+
+**有卡**：`Seed (rgthree)`、`PathchSageAttentionKJ`、`CLIPLoader`、`UNETLoader`、`ModelSamplingSD3`、`SaveImage`、`ImageScaleBy`、`ColorMatch`、`Pick From Batch (mtb)`、`LayerUtility: PurgeVRAM V2`、`CLIPVisionEncode`、`CLIPVisionLoader`、`JWInteger`、`WanImageToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`Qwen3_VQA`、`Text Concatenate`、`CR Prompt Text`、`MultiplePathsInput`、`ImageLoader`、`VHS_VideoCombine`、`VAELoader`、`VAEDecode`、`GetImageSizeAndCount`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、Seed (rgthree)

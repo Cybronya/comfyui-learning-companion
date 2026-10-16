@@ -1,0 +1,36 @@
+---
+key: 视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json
+name: Seedace2.0--图生视频_2034439562046476290.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2034439562046476290.json
+hash: 2fced40c1874cc77
+coverage: 1
+learned_at: 2026-10-15 22:35:44
+nodes: [SaveVideo, LoadImage, RH_CinematicVideoGenerator, Text Multiline]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2034439562046476290.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（4 个）：
+- `SaveVideo`
+- `LoadImage`
+- `RH_CinematicVideoGenerator`
+- `Text Multiline`
+
+## 知识
+
+覆盖率 **100%**（4/4）
+
+**有卡**：`SaveVideo`、`LoadImage`、`RH_CinematicVideoGenerator`、`Text Multiline`
+
+**用到的条目**：LoadImage、SaveVideo、RH_CinematicVideoGenerator、Text Multiline、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage

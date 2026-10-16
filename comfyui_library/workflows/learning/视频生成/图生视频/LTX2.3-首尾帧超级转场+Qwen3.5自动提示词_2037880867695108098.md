@@ -1,0 +1,95 @@
+---
+key: 视频生成/图生视频/LTX2.3-首尾帧超级转场+Qwen3.5自动提示词_2037880867695108098.json
+name: LTX2.3-首尾帧超级转场+Qwen3.5自动提示词_2037880867695108098.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2037880867695108098.json
+hash: 085efec5e655bb4a
+coverage: 0.910714
+learned_at: 2026-10-15 22:35:59
+nodes: [SamplerCustomAdvanced, ResizeImagesByLongerEdge, LatentUpscaleModelLoader, VAELoaderKJ, DualCLIPLoader, LTXVPreprocess, LTXVPreprocess, LTXVAudioVAEDecode, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, ResizeImagesByLongerEdge, ImageResizeKJv2, ManualSigmas, LTXVConcatAVLatent, CFGGuider, KSamplerSelect, LTXVEmptyLatentAudio, ComfyMathExpression, VAELoaderKJ, KSamplerSelect, LTXVSeparateAVLatent, VAEDecodeTiled, PrimitiveInt, SimpleMath+, LTXVConditioning, CreateVideo, LTXVImgToVideoInplace, LTXVConcatAVLatent, ManualSigmas, RandomNoise, CFGGuider, EmptyLTXVLatentVideo, LTXVAddGuideMulti, LoadImage, LoadImage, LoraLoaderModelOnly, UNETLoader, easy cleanGpuUsed, ShowText|pysssss, llama_cpp_model_loader, ImageConcanate, CLIPTextEncode, CLIPTextEncode, SaveVideo, Text, llama_cpp_instruct_adv, ImageResizeKJv2, PrimitiveInt, PrimitiveInt, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVLatentUpsampler, RandomNoise, Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3-首尾帧超级转场+Qwen3.5自动提示词_2037880867695108098.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2037880867695108098.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（56 个）：
+- `SamplerCustomAdvanced` ★核心
+- `ResizeImagesByLongerEdge`
+- `LatentUpscaleModelLoader`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `LTXVAudioVAEDecode` ★核心
+- `PrimitiveInt`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ResizeImagesByLongerEdge`
+- `ImageResizeKJv2`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `ComfyMathExpression`
+- `VAELoaderKJ`
+- `KSamplerSelect` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `PrimitiveInt`
+- `SimpleMath+`
+- `LTXVConditioning`
+- `CreateVideo`
+- `LTXVImgToVideoInplace`
+- `LTXVConcatAVLatent`
+- `ManualSigmas`
+- `RandomNoise`
+- `CFGGuider`
+- `EmptyLTXVLatentVideo`
+- `LTXVAddGuideMulti`
+- `LoadImage`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `easy cleanGpuUsed`
+- `ShowText|pysssss`
+- `llama_cpp_model_loader`
+- `ImageConcanate`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SaveVideo`
+- `Text`
+- `llama_cpp_instruct_adv`
+- `ImageResizeKJv2`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `RandomNoise`
+- `Text`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **91%**（51/56）
+
+**有卡**：`SamplerCustomAdvanced`、`ResizeImagesByLongerEdge`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LTXVPreprocess`、`LTXVAudioVAEDecode`、`ComfyMathExpression`、`ImageResizeKJv2`、`ManualSigmas`、`LTXVConcatAVLatent`、`CFGGuider`、`KSamplerSelect`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`SimpleMath+`、`LTXVConditioning`、`CreateVideo`、`LTXVImgToVideoInplace`、`RandomNoise`、`EmptyLTXVLatentVideo`、`LTXVAddGuideMulti`、`LoadImage`、`LoraLoaderModelOnly`、`UNETLoader`、`easy cleanGpuUsed`、`llama_cpp_model_loader`、`ImageConcanate`、`CLIPTextEncode`、`SaveVideo`、`Text`、`llama_cpp_instruct_adv`、`LTXVCropGuides`、`LTXVLatentUpsampler`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

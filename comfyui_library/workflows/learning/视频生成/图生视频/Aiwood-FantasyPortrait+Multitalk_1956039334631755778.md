@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/Aiwood-FantasyPortrait+Multitalk_1956039334631755778.json
+name: Aiwood-FantasyPortrait+Multitalk_1956039334631755778.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956039334631755778.json
+hash: 64b5b2d5428cd397
+coverage: 0.777778
+learned_at: 2026-10-15 22:31:11
+nodes: [SetNode, SetNode, GetNode, ImageConcatMulti, WanVideoDecode, WanVideoClipVisionEncode, INTConstant, INTConstant, GetNode, ImageResizeKJv2, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, FantasyPortraitFaceDetector, GetNode, GetNode, ImageResizeKJv2, WanVideoSampler, INTConstant, GetNode, WanVideoImageToVideoEncode, ImageConcatMulti, WanVideoTorchCompileSettings, MultiTalkWav2VecEmbeds, DownloadAndLoadWav2VecModel, easy showAnything, SoundFlow_Fade, SoundFlow_GetLength, ToInt, SimpleMath+, VHS_VideoCombine, VHS_LoadVideo, LoadImage, WanVideoVAELoader, FantasyPortraitModelLoader, WanVideoModelLoader, WanVideoLoraSelect, SetNode, WanVideoAddFantasyPortrait, WanVideoTextEncodeCached, MultiTalkModelLoader, VHS_VideoInfo, CLIPVisionLoader, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Aiwood-FantasyPortrait+Multitalk_1956039334631755778.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956039334631755778.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（45 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `WanVideoDecode`
+- `WanVideoClipVisionEncode`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `ImageResizeKJv2`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `FantasyPortraitFaceDetector`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `WanVideoSampler` ★核心
+- `INTConstant`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `ImageConcatMulti`
+- `WanVideoTorchCompileSettings`
+- `MultiTalkWav2VecEmbeds`
+- `DownloadAndLoadWav2VecModel`
+- `easy showAnything`
+- `SoundFlow_Fade`
+- `SoundFlow_GetLength`
+- `ToInt`
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `WanVideoVAELoader`
+- `FantasyPortraitModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `WanVideoAddFantasyPortrait`
+- `WanVideoTextEncodeCached`
+- `MultiTalkModelLoader`
+- `VHS_VideoInfo`
+- `CLIPVisionLoader`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **78%**（35/45）
+
+**有卡**：`ImageConcatMulti`、`WanVideoDecode`、`WanVideoClipVisionEncode`、`INTConstant`、`ImageResizeKJv2`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`FantasyPortraitFaceDetector`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`WanVideoTorchCompileSettings`、`MultiTalkWav2VecEmbeds`、`DownloadAndLoadWav2VecModel`、`SoundFlow_Fade`、`SoundFlow_GetLength`、`ToInt`、`SimpleMath+`、`VHS_VideoCombine`、`VHS_LoadVideo`、`LoadImage`、`WanVideoVAELoader`、`FantasyPortraitModelLoader`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoAddFantasyPortrait`、`WanVideoTextEncodeCached`、`MultiTalkModelLoader`、`VHS_VideoInfo`、`CLIPVisionLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeCached、WanVideoLoraSelect

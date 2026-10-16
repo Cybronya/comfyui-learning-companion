@@ -1,0 +1,60 @@
+---
+key: 视频生成/图生视频/ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相wan2.1工作流_1944601426138157058.json
+name: ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相wan2.1工作流_1944601426138157058.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1944601426138157058.json
+hash: 9cbac985f995a888
+coverage: 1
+learned_at: 2026-10-15 22:30:39
+nodes: [WanVideoEnhanceAVideo, WanVideoDecode, WanVideoSLG, JWInteger, WanVideoBlockSwap, CLIPVisionLoader, WanVideoClipVisionEncode, WanVideoLoraSelect, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoImageToVideoEncode, RH_OneShot_Prompter, JWInteger, SimpleMath+, LayerUtility: PurgeVRAM V2, WanVideoTextEncodeSingle, WanVideoTextEncodeSingle, VHS_VideoCombine, WanVideoModelLoader, WanVideoLoraSelect, Text Multiline, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, WanVideoTeaCache, WanVideoApplyNAG, WanVideoExperimentalArgs, WanVideoSampler, WanVideoFreeInitArgs]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相wan2.1工作流_1944601426138157058.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1944601426138157058.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（28 个）：
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `WanVideoSLG`
+- `JWInteger`
+- `WanVideoBlockSwap`
+- `CLIPVisionLoader`
+- `WanVideoClipVisionEncode`
+- `WanVideoLoraSelect`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoImageToVideoEncode`
+- `RH_OneShot_Prompter`
+- `JWInteger`
+- `SimpleMath+`
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncodeSingle`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `Text Multiline`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoTeaCache`
+- `WanVideoApplyNAG`
+- `WanVideoExperimentalArgs`
+- `WanVideoSampler` ★核心
+- `WanVideoFreeInitArgs`
+
+## 知识
+
+覆盖率 **100%**（28/28）
+
+**有卡**：`WanVideoEnhanceAVideo`、`WanVideoDecode`、`WanVideoSLG`、`JWInteger`、`WanVideoBlockSwap`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoImageToVideoEncode`、`RH_OneShot_Prompter`、`SimpleMath+`、`LayerUtility: PurgeVRAM V2`、`WanVideoTextEncodeSingle`、`VHS_VideoCombine`、`WanVideoModelLoader`、`Text Multiline`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoTeaCache`、`WanVideoApplyNAG`、`WanVideoExperimentalArgs`、`WanVideoSampler`、`WanVideoFreeInitArgs`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeSingle

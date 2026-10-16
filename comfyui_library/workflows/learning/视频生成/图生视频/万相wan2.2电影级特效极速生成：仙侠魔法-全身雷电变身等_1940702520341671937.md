@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/万相wan2.2电影级特效极速生成：仙侠魔法-全身雷电变身等_1940702520341671937.json
+name: 万相wan2.2电影级特效极速生成：仙侠魔法-全身雷电变身等_1940702520341671937.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1940702520341671937.json
+hash: 19f449fce6eee2f1
+coverage: 1
+learned_at: 2026-10-15 22:30:34
+nodes: [Int, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, LayerUtility: PurgeVRAM V2, LoadImage, VHS_VideoCombine, Int, Int, WanVideoModelLoader, WanVideoBlockSwap, WanVideoTextEncodeSingle, WanVideoApplyNAG, WanVideoDecode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, LoadWanVideoClipTextEncoder, SimpleMath+, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoImageClipEncode, VHS_VideoCombine, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoLoraSelectMulti, Text Multiline]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/万相wan2.2电影级特效极速生成：仙侠魔法-全身雷电变身等_1940702520341671937.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1940702520341671937.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Other
+
+**节点**（27 个）：
+- `Int`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `LayerUtility: PurgeVRAM V2`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `Int`
+- `Int`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoTextEncodeSingle`
+- `WanVideoApplyNAG`
+- `WanVideoDecode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `SimpleMath+`
+- `WanVideoEasyCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncodeSingle`
+- `WanVideoLoraSelectMulti`
+- `Text Multiline`
+
+## 知识
+
+覆盖率 **100%**（27/27）
+
+**有卡**：`Int`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`LayerUtility: PurgeVRAM V2`、`LoadImage`、`VHS_VideoCombine`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoTextEncodeSingle`、`WanVideoApplyNAG`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`SimpleMath+`、`WanVideoEasyCache`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoImageClipEncode`、`WanVideoSampler`、`WanVideoLoraSelectMulti`、`Text Multiline`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoVAELoader、WanVideoTextEncodeSingle

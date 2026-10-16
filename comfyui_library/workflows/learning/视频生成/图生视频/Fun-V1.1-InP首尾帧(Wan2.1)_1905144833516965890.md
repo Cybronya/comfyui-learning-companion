@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json
+name: Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1905144833516965890.json
+hash: 4b6b350f0a3afd61
+coverage: 0.914286
+learned_at: 2026-10-15 22:29:25
+nodes: [Fast Groups Bypasser (rgthree), WanVideoTeaCache, WanVideoSLG, ImageConcatMulti, AddLabel, WanVideoDecode, GetImageSizeAndCount, ImageConcatMulti, LayerUtility: PurgeVRAM, easy cleanGpuUsed, VHS_VideoCombine, easy cleanGpuUsed, VHS_VideoCombine, VHS_VideoCombine, WanVideoTorchCompileSettings, WanVideoTextEncode, LoadWanVideoClipTextEncoder, WanVideoBlockSwap, AddLabel, EmptyImage, easy cleanGpuUsed, Note, WanVideoImageToVideoEncode, ImageResizeKJ, WanVideoClipVisionEncode, WanVideoVAELoader, WanVideoModelLoader, WanVideoSampler, LoadWanVideoT5TextEncoder, Text Multiline, LoadImage, LoadImage, ImageResizeKJ, WanVideoExperimentalArgs, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Fun-V1.1-InP首尾帧(Wan2.1)_1905144833516965890.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1905144833516965890.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（35 个）：
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `ImageConcatMulti`
+- `AddLabel`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `LayerUtility: PurgeVRAM`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoBlockSwap`
+- `AddLabel`
+- `EmptyImage`
+- `easy cleanGpuUsed`
+- `Note`
+- `WanVideoImageToVideoEncode`
+- `ImageResizeKJ`
+- `WanVideoClipVisionEncode`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `Text Multiline`
+- `LoadImage`
+- `LoadImage`
+- `ImageResizeKJ`
+- `WanVideoExperimentalArgs`
+- `Note`
+
+## 知识
+
+覆盖率 **91%**（32/35）
+
+**有卡**：`WanVideoTeaCache`、`WanVideoSLG`、`ImageConcatMulti`、`AddLabel`、`WanVideoDecode`、`GetImageSizeAndCount`、`LayerUtility: PurgeVRAM`、`easy cleanGpuUsed`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoTextEncode`、`LoadWanVideoClipTextEncoder`、`WanVideoBlockSwap`、`EmptyImage`、`WanVideoImageToVideoEncode`、`ImageResizeKJ`、`WanVideoClipVisionEncode`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`、`Text Multiline`、`LoadImage`、`WanVideoExperimentalArgs`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

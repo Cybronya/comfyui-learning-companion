@@ -1,0 +1,48 @@
+---
+key: 视频生成/图生视频/B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json
+name: B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1934068571276533761.json
+hash: a634040eab920e1c
+coverage: 0.9375
+learned_at: 2026-10-15 22:30:15
+nodes: [WanVideoSampler, WanVideoApplyNAG, WanVideoSLG, PreviewImage, LoadImage, ImageResizeKJ, WanVideoEnhanceAVideo, WanVideoTextEncodeSingle, WanVideoTextEncodeSingle, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoModelLoader, WanVideoImageToVideoEncode, WanVideoDecode, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1934068571276533761.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（16 个）：
+- `WanVideoSampler` ★核心
+- `WanVideoApplyNAG`
+- `WanVideoSLG`
+- `PreviewImage`
+- `LoadImage`
+- `ImageResizeKJ`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoImageToVideoEncode`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **94%**（15/16）
+
+**有卡**：`WanVideoSampler`、`WanVideoApplyNAG`、`WanVideoSLG`、`LoadImage`、`ImageResizeKJ`、`WanVideoEnhanceAVideo`、`WanVideoTextEncodeSingle`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoTextEncodeSingle、ImageResizeKJ

@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json
+name: WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2015621003442921473.json
+hash: 9120feb5b9b43cc1
+coverage: 0.92
+learned_at: 2026-10-15 22:34:39
+nodes: [VAELoader, PathchSageAttentionKJ, WanVideoTeaCacheKJ, CLIPVisionLoader, CLIPVisionEncode, CLIPTextEncode, ModelSamplingSD3, WanImageToVideo, INTConstant, VAEDecode, ImageResizeKJv2, CLIPTextEncode, ShowText|pysssss, EG_FX_BDAPI, VHS_VideoCombine, CLIPLoader, LoadImage, UNETLoader, Note, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, INTConstant, INTConstant, CR Text]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 745560967435255, "steps": 20}
+---
+
+# 视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2015621003442921473.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（25 个）：
+- `VAELoader`
+- `PathchSageAttentionKJ`
+- `WanVideoTeaCacheKJ`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `WanImageToVideo`
+- `INTConstant`
+- `VAEDecode` ★核心
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `ShowText|pysssss`
+- `EG_FX_BDAPI`
+- `VHS_VideoCombine`
+- `CLIPLoader`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `INTConstant`
+- `INTConstant`
+- `CR Text`
+
+## 关键参数
+
+- `seed` = `745560967435255`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **92%**（23/25）
+
+**有卡**：`VAELoader`、`PathchSageAttentionKJ`、`WanVideoTeaCacheKJ`、`CLIPVisionLoader`、`CLIPVisionEncode`、`CLIPTextEncode`、`ModelSamplingSD3`、`WanImageToVideo`、`INTConstant`、`VAEDecode`、`ImageResizeKJv2`、`EG_FX_BDAPI`、`VHS_VideoCombine`、`CLIPLoader`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`CR Text`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader

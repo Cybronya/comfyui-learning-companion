@@ -1,0 +1,61 @@
+---
+key: 视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json
+name: Wan2.1 VACE 图生视频_1927920381506797569.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1927920381506797569.json
+hash: 58b8c85f2384aa8b
+coverage: 0.689655
+learned_at: 2026-10-15 22:29:55
+nodes: [WanVideoDecode, GetNode, GetNode, SetNode, SetNode, SetNode, PreviewImage, GetNode, INTConstant, SetNode, WanVideoTeaCache, VHS_VideoCombine, INTConstant, INTConstant, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoVACEModelSelect, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEEncode, WanVideoSampler, WanVideoTextEncode, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, GetNode, LoadImage, ImageResizeKJv2, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1927920381506797569.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（29 个）：
+- `WanVideoDecode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `GetNode`
+- `INTConstant`
+- `SetNode`
+- `WanVideoTeaCache`
+- `VHS_VideoCombine`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoVACEModelSelect`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoVACEEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `GetNode`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **69%**（20/29）
+
+**有卡**：`WanVideoDecode`、`INTConstant`、`WanVideoTeaCache`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoVACEModelSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`WanVideoSampler`、`WanVideoTextEncode`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`LoadImage`、`ImageResizeKJv2`、`WanVideoModelLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、ImageResizeKJv2

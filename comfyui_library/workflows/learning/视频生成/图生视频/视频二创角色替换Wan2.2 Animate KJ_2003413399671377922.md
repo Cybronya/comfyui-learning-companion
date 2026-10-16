@@ -1,0 +1,110 @@
+---
+key: 视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json
+name: 视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2003413399671377922.json
+hash: 8bd27a6e70003d3f
+coverage: 0.371795
+learned_at: 2026-10-15 22:33:51
+nodes: [PrimitiveFloat, OnnxDetectionModelLoader, PoseAndFaceDetection, DrawViTPose, SDPoseOODLoader, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, Reroute, Reroute, SetNode, SetNode, SetNode, WanVideoTorchCompileSettings, SetNode, WanVideoSetBlockSwap, CLIPVisionLoader, SetNode, WanVideoClipVisionEncode, GetNode, GetNode, GetNode, GetNode, GetNode, Note, WanVideoDecode, MarkdownNote, GetNode, GetNode, GetNode, GetNode, SetNode, PlaySound|pysssss, SDPoseOODProcessor, Note, WanVideoVAELoader, WanVideoSetLoRAs, WanVideoModelLoader, WanVideoBlockSwap, RHHiddenNodes, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, WanVideoSampler, SetNode, SetNode, SetNode, Note, Note, WanVideoAnimateEmbeds, INTConstant, INTConstant, SetNode, LoadImage, VHS_LoadVideo, GetNode, GetNode, Note, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, ImageResizeKJv2, PreviewImage, WanVideoTextEncodeCached, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2003413399671377922.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（78 个）：
+- `PrimitiveFloat`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `SDPoseOODLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `Reroute`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoTorchCompileSettings`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `CLIPVisionLoader`
+- `SetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `WanVideoDecode`
+- `MarkdownNote`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `PlaySound|pysssss`
+- `SDPoseOODProcessor`
+- `Note`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `RHHiddenNodes`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Note`
+- `Note`
+- `WanVideoAnimateEmbeds`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `WanVideoTextEncodeCached`
+- `Note`
+
+## 知识
+
+覆盖率 **37%**（29/78）
+
+**有卡**：`OnnxDetectionModelLoader`、`PoseAndFaceDetection`、`DrawViTPose`、`SDPoseOODLoader`、`WanVideoTorchCompileSettings`、`WanVideoSetBlockSwap`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoDecode`、`PlaySound|pysssss`、`SDPoseOODProcessor`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`RHHiddenNodes`、`WanVideoLoraSelectMulti`、`WanVideoSampler`、`WanVideoAnimateEmbeds`、`INTConstant`、`LoadImage`、`VHS_LoadVideo`、`VHS_VideoCombine`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

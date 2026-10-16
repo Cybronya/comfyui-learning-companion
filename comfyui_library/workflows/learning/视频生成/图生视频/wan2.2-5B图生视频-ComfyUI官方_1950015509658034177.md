@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/wan2.2-5B图生视频-ComfyUI官方_1950015509658034177.json
+name: wan2.2-5B图生视频-ComfyUI官方_1950015509658034177.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950015509658034177.json
+hash: dcf9462dd8db5fc5
+coverage: 1
+learned_at: 2026-10-15 22:30:51
+nodes: [ModelSamplingSD3, Wan22ImageToVideoLatent, VAELoader, CLIPLoader, UNETLoader, LoadImage, ImageResizeKJv2, Text Multiline, CLIPTextEncode, CLIPTextEncode, KSampler, VAEDecodeTiled, CreateVideo, MathExpression|pysssss, Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], SaveVideo]
+patterns: []
+missing: []
+problems: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 5, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 635998224693793, "steps": 20}
+discoveries: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/wan2.2-5B图生视频-ComfyUI官方_1950015509658034177.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950015509658034177.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（18 个）：
+- `ModelSamplingSD3`
+- `Wan22ImageToVideoLatent`
+- `VAELoader`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `LoadImage`
+- `ImageResizeKJv2`
+- `Text Multiline`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAEDecodeTiled` ★核心
+- `CreateVideo`
+- `MathExpression|pysssss`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `SaveVideo`
+
+## 关键参数
+
+- `seed` = `635998224693793`
+- `steps` = `20`
+- `cfg` = `5`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`ModelSamplingSD3`、`Wan22ImageToVideoLatent`、`VAELoader`、`CLIPLoader`、`UNETLoader`、`LoadImage`、`ImageResizeKJv2`、`Text Multiline`、`CLIPTextEncode`、`KSampler`、`VAEDecodeTiled`、`CreateVideo`、`MathExpression|pysssss`、`Primitive integer [Crystools]`、`SaveVideo`
+
+**用到的条目**：KSampler、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、VAEDecodeTiled、Wan22ImageToVideoLatent
+
+## 参数体检
+
+发现 1 个问题：
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

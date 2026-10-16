@@ -1,0 +1,204 @@
+---
+key: 视频生成/图生视频/【九镜联动】Gemini3反推生成九张图故事分镜-Wan2.2  关键帧联动视频_1981581152265871362.json
+name: 【九镜联动】Gemini3反推生成九张图故事分镜-Wan2.2  关键帧联动视频_1981581152265871362.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1981581152265871362.json
+hash: dc1a2819212cf989
+coverage: 0.771812
+learned_at: 2026-10-15 22:32:38
+nodes: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SetNode, SetNode, CLIPLoader, UNETLoader, UNETLoader, ModelSamplingSD3, PathchSageAttentionKJ, easy cleanGpuUsed, easy cleanGpuUsed, wanBlockSwap, VAELoader, GetImageRangeFromBatch, WanFirstMiddleLastFrameToVideo, GetNode, GetNode, easy imageListToImageBatch, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, wanBlockSwap, VAEDecode, ColorMatch, ColorMatch, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, GetNode, VHS_Unbatch, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, UpscaleModelLoader, PreviewImage, VHS_VideoCombine, ImageUpscaleWithModel, UpscaleModelLoader, ImageUpscaleWithModel, VAELoader, Int, VAEEncode, VAEDecode, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, wanBlockSwap, UNETLoader, PathchSageAttentionKJ, CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, wanBlockSwap, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, LayerUtility: PurgeVRAM, GetNode, ColorMatch, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, GetImageSize, JWInteger, VHS_VideoCombine, ModelPatchTorchSettings, ModelPatchTorchSettings, VAEDecode, easy batchAnything, SeedVR2BlockSwap, Reroute, Reroute, SeedVR2ExtraArgs, Note, Note, ImageScaleToTotalPixels, easy batchAnything, VHS_VideoCombine, ImageUpscaleWithModel, UpscaleModelLoader, SeedVR2, VHS_VideoCombine, easy showAnything, TextInput_, JoinStrings, WanFirstMiddleLastFrameToVideo, GetNode, TextInput_, JoinStrings, GetNode, easy showAnything, TextInput_, CR Text, GetNode, WanFirstMiddleLastFrameToVideo, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, JoinStrings, GetNode, GetNode, easy showAnything, VHS_VideoCombine, PreviewImage, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, KSampler, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ImageBatchSplitter //Inspire, RH_LLMAPI_NODE, RH_LLMAPI_NODE, Qwen3_VQA, Qwen3_VQA, Qwen3_VQA, ImageConcatMulti, RH_LLMAPI_NODE, MuyeTextEditOutput, RH_Captioner_Pro, ShowText|pysssss, MuyeTextEditOutput, RH_Captioner_Pro, MuyeTextEditOutput, RH_Captioner_Pro, ImageConcatMulti, ShowText|pysssss, ShowText|pysssss, MuyeTextEditOutput, RH_Captioner_Pro, LoadImage, JjkText, MuyeTextEditOutput, ProcessString, ShowText|pysssss, easy showAnything, easy promptLine, RH_LLMAPI_NODE, ShellAgentPluginOutputText, ImageConcatMulti, ImageConcatMulti, ImageConcatMulti]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "sa_solver", "scheduler": "simple", "seed": 459750489704716, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/【九镜联动】Gemini3反推生成九张图故事分镜-Wan2.2  关键帧联动视频_1981581152265871362.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1981581152265871362.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（149 个）：
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `SetNode`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `wanBlockSwap`
+- `VAELoader`
+- `GetImageRangeFromBatch`
+- `WanFirstMiddleLastFrameToVideo`
+- `GetNode`
+- `GetNode`
+- `easy imageListToImageBatch`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `VAEDecode` ★核心
+- `ColorMatch`
+- `ColorMatch`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `GetNode`
+- `VHS_Unbatch`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `UpscaleModelLoader`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `ImageUpscaleWithModel`
+- `VAELoader`
+- `Int`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus`
+- `wanBlockSwap`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `wanBlockSwap`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `ColorMatch`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `GetImageSize`
+- `JWInteger`
+- `VHS_VideoCombine`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `VAEDecode` ★核心
+- `easy batchAnything`
+- `SeedVR2BlockSwap`
+- `Reroute`
+- `Reroute`
+- `SeedVR2ExtraArgs`
+- `Note`
+- `Note`
+- `ImageScaleToTotalPixels`
+- `easy batchAnything`
+- `VHS_VideoCombine`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `SeedVR2`
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `TextInput_`
+- `JoinStrings`
+- `WanFirstMiddleLastFrameToVideo`
+- `GetNode`
+- `TextInput_`
+- `JoinStrings`
+- `GetNode`
+- `easy showAnything`
+- `TextInput_`
+- `CR Text`
+- `GetNode`
+- `WanFirstMiddleLastFrameToVideo`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `JoinStrings`
+- `GetNode`
+- `GetNode`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler` ★核心
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ImageBatchSplitter //Inspire`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_NODE`
+- `Qwen3_VQA`
+- `Qwen3_VQA`
+- `Qwen3_VQA`
+- `ImageConcatMulti`
+- `RH_LLMAPI_NODE`
+- `MuyeTextEditOutput`
+- `RH_Captioner_Pro`
+- `ShowText|pysssss`
+- `MuyeTextEditOutput`
+- `RH_Captioner_Pro`
+- `MuyeTextEditOutput`
+- `RH_Captioner_Pro`
+- `ImageConcatMulti`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `MuyeTextEditOutput`
+- `RH_Captioner_Pro`
+- `LoadImage`
+- `JjkText`
+- `MuyeTextEditOutput`
+- `ProcessString`
+- `ShowText|pysssss`
+- `easy showAnything`
+- `easy promptLine`
+- `RH_LLMAPI_NODE`
+- `ShellAgentPluginOutputText`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `459750489704716`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **77%**（115/149）
+
+**有卡**：`LayerUtility: PurgeVRAM`、`CLIPLoader`、`UNETLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`easy cleanGpuUsed`、`wanBlockSwap`、`VAELoader`、`GetImageRangeFromBatch`、`WanFirstMiddleLastFrameToVideo`、`easy imageListToImageBatch`、`LoraLoaderModelOnly`、`VAEDecode`、`ColorMatch`、`VHS_Unbatch`、`UpscaleModelLoader`、`VHS_VideoCombine`、`ImageUpscaleWithModel`、`Int`、`VAEEncode`、`TextEncodeQwenImageEditPlus`、`KSamplerAdvanced`、`GetImageSize`、`JWInteger`、`ModelPatchTorchSettings`、`easy batchAnything`、`SeedVR2BlockSwap`、`SeedVR2ExtraArgs`、`ImageScaleToTotalPixels`、`SeedVR2`、`TextInput_`、`JoinStrings`、`CR Text`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSampler`、`ImageBatchSplitter //Inspire`、`RH_LLMAPI_NODE`、`Qwen3_VQA`、`ImageConcatMulti`、`MuyeTextEditOutput`、`RH_Captioner_Pro`、`LoadImage`、`ProcessString`、`easy promptLine`、`ShellAgentPluginOutputText`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

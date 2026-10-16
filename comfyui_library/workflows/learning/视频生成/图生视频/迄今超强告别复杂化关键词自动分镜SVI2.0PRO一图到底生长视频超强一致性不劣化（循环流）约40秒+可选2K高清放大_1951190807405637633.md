@@ -1,0 +1,141 @@
+---
+key: 视频生成/图生视频/迄今超强告别复杂化关键词自动分镜SVI2.0PRO一图到底生长视频超强一致性不劣化（循环流）约40秒+可选2K高清放大_1951190807405637633.json
+name: 迄今超强告别复杂化关键词自动分镜SVI2.0PRO一图到底生长视频超强一致性不劣化（循环流）约40秒+可选2K高清放大_1951190807405637633.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1951190807405637633.json
+hash: a3a0e9e0b4b14c58
+coverage: 0.525253
+learned_at: 2026-10-15 22:30:58
+nodes: [LoadImage, MarkdownNote, SetNode, easy int, VHS_VideoCombine, GetNode, Any2ListNode, SetNode, SetNode, easy convertAnything, VAELoader, SetNode, GetNode, SetNode, easy int, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, easy lengthAnything, easy showAnything, SetNode, CLIPTextEncode, SetNode, MathExpression|pysssss, easy showAnything, CLIPTextEncode, easy indexAnything, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, KSamplerAdvanced, VAEDecode, SetNode, SetNode, MathExpression|pysssss, MathExpression|pysssss, SetNode, SetNode, INTConstant, GetNode, easy int, easy indexAnything, MathExpression|pysssss, easy promptLine, easy showAnything, VAEEncode, GetNode, SetNode, ImageResizeKJv2, CLIPTextEncode, GetNode, CLIPTextEncode, easy forLoopStart, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, VAEDecode, easy int, CLIPLoader, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, ProcessString, easy showAnything, WanImageToVideoSVIPro, GetNode, GetNode, GetNode, LoadImage, SeedVR2BlockSwap, SeedVR2ExtraArgs, PreviewImage, GetNode, JWInteger, FlashVSRNode, VHS_VideoCombine, LayerUtility: PurgeVRAM V2, easy forLoopEnd, VHS_VideoCombine, easy showAnything, KSamplerAdvanced, KSamplerAdvanced, RHHiddenNodes, RHHiddenNodes, JjkText, SeedVR2GGUF, Fast Groups Bypasser (rgthree), SetNode, easy seed, GetNode, GetNode, KSamplerAdvanced]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/迄今超强告别复杂化关键词自动分镜SVI2.0PRO一图到底生长视频超强一致性不劣化（循环流）约40秒+可选2K高清放大_1951190807405637633.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1951190807405637633.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（99 个）：
+- `LoadImage`
+- `MarkdownNote`
+- `SetNode`
+- `easy int`
+- `VHS_VideoCombine`
+- `GetNode`
+- `Any2ListNode`
+- `SetNode`
+- `SetNode`
+- `easy convertAnything`
+- `VAELoader`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `easy int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `easy lengthAnything`
+- `easy showAnything`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `easy indexAnything`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `SetNode`
+- `SetNode`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `easy int`
+- `easy indexAnything`
+- `MathExpression|pysssss`
+- `easy promptLine`
+- `easy showAnything`
+- `VAEEncode` ★核心
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `easy forLoopStart`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `VAEDecode` ★核心
+- `easy int`
+- `CLIPLoader`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ProcessString`
+- `easy showAnything`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `PreviewImage`
+- `GetNode`
+- `JWInteger`
+- `FlashVSRNode`
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM V2`
+- `easy forLoopEnd`
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `JjkText`
+- `SeedVR2GGUF`
+- `Fast Groups Bypasser (rgthree)`
+- `SetNode`
+- `easy seed`
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **53%**（52/99）
+
+**有卡**：`LoadImage`、`easy int`、`VHS_VideoCombine`、`Any2ListNode`、`easy convertAnything`、`VAELoader`、`easy lengthAnything`、`CLIPTextEncode`、`MathExpression|pysssss`、`easy indexAnything`、`WanImageToVideoSVIPro`、`KSamplerAdvanced`、`VAEDecode`、`INTConstant`、`easy promptLine`、`VAEEncode`、`ImageResizeKJv2`、`easy forLoopStart`、`ImageBatchExtendWithOverlap`、`CLIPLoader`、`LoraLoaderModelOnly`、`ProcessString`、`SeedVR2BlockSwap`、`SeedVR2ExtraArgs`、`JWInteger`、`FlashVSRNode`、`LayerUtility: PurgeVRAM V2`、`easy forLoopEnd`、`RHHiddenNodes`、`SeedVR2GGUF`、`easy seed`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、SeedVR2BlockSwap

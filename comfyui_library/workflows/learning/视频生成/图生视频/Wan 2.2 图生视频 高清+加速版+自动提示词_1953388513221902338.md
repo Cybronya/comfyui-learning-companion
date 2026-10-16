@@ -1,0 +1,73 @@
+---
+key: 视频生成/图生视频/Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json
+name: Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1953388513221902338.json
+hash: 6f28b141b4fc87f6
+coverage: 0.902439
+learned_at: 2026-10-15 22:31:05
+nodes: [WanVideoBlockSwap, WanVideoBlockSwap, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, CreateCFGScheduleFloatList, easy seed, ImpactFloat, MathExpression|pysssss, easy int, MathExpression|pysssss, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, LayerUtility: PurgeVRAM, WanVideoLoraSelect, WanVideoLoraSelect, LayerUtility: ImageScaleByAspectRatio V2, easy int, WanVideoVAELoader, WanVideoModelLoader, WanVideoModelLoader, WanVideoImageToVideoEncode, easy int, LayerUtility: PurgeVRAM, easy float, WanVideoSampler, WanVideoSampler, WanVideoTextEncode, LoadWanVideoT5TextEncoder, JjkText, easy int, easy int, Reroute, WanVideoDecode, VHS_VideoCombine, LayerUtility: PurgeVRAM, RH_LLMAPI_NODE, ImpactSwitch, easy showAnything, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan 2.2 图生视频 高清+加速版+自动提示词_1953388513221902338.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1953388513221902338.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（41 个）：
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `CreateCFGScheduleFloatList`
+- `easy seed`
+- `ImpactFloat`
+- `MathExpression|pysssss`
+- `easy int`
+- `MathExpression|pysssss`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy int`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoImageToVideoEncode`
+- `easy int`
+- `LayerUtility: PurgeVRAM`
+- `easy float`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `JjkText`
+- `easy int`
+- `easy int`
+- `Reroute`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM`
+- `RH_LLMAPI_NODE`
+- `ImpactSwitch`
+- `easy showAnything`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **90%**（37/41）
+
+**有卡**：`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`easy seed`、`ImpactFloat`、`MathExpression|pysssss`、`easy int`、`LayerUtility: PurgeVRAM`、`WanVideoLoraSelect`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoImageToVideoEncode`、`easy float`、`WanVideoSampler`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`VHS_VideoCombine`、`RH_LLMAPI_NODE`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

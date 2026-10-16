@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/通义官方最新版wan2.1首尾帧V2版本（14B参数高清版）_1913039877968199682.json
+name: 通义官方最新版wan2.1首尾帧V2版本（14B参数高清版）_1913039877968199682.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1913039877968199682.json
+hash: 4cecf3c3c641ae45
+coverage: 0.861111
+learned_at: 2026-10-15 22:29:33
+nodes: [LoadWanVideoClipTextEncoder, WanVideoBlockSwap, WanVideoTeaCache, WanVideoVAELoader, WanVideoSLG, LoadWanVideoT5TextEncoder, WanVideoDecode, WanVideoImageToVideoEncode, easy cleanGpuUsed, WanVideoClipVisionEncode, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoExperimentalArgs, WanVideoEnhanceAVideo, WanVideoTextEncode, WanVideoSampler, Note, ImageResize+, ImageResize+, SetNode, SetNode, Int, Note, easy cleanGpuUsed, WanVideoModelLoader, Primitive integer [Crystools], Note, easy cleanGpuUsed, VHS_VideoCombine, Primitive integer [Crystools], RIFE VFI, LayerUtility: PurgeVRAM, VHS_VideoCombine, LoadImage, LoadImage, Text Multiline]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/通义官方最新版wan2.1首尾帧V2版本（14B参数高清版）_1913039877968199682.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1913039877968199682.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（36 个）：
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoVAELoader`
+- `WanVideoSLG`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `easy cleanGpuUsed`
+- `WanVideoClipVisionEncode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `WanVideoExperimentalArgs`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `Note`
+- `ImageResize+`
+- `ImageResize+`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `Note`
+- `easy cleanGpuUsed`
+- `WanVideoModelLoader`
+- `Primitive integer [Crystools]`
+- `Note`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `Primitive integer [Crystools]`
+- `RIFE VFI`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `Text Multiline`
+
+## 知识
+
+覆盖率 **86%**（31/36）
+
+**有卡**：`LoadWanVideoClipTextEncoder`、`WanVideoBlockSwap`、`WanVideoTeaCache`、`WanVideoVAELoader`、`WanVideoSLG`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoImageToVideoEncode`、`easy cleanGpuUsed`、`WanVideoClipVisionEncode`、`WanVideoExperimentalArgs`、`WanVideoEnhanceAVideo`、`WanVideoTextEncode`、`WanVideoSampler`、`ImageResize+`、`Int`、`WanVideoModelLoader`、`Primitive integer [Crystools]`、`VHS_VideoCombine`、`RIFE VFI`、`LayerUtility: PurgeVRAM`、`LoadImage`、`Text Multiline`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

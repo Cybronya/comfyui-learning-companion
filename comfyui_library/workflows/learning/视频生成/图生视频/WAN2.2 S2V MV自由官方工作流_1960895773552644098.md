@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json
+name: WAN2.2 S2V MV自由官方工作流_1960895773552644098.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1960895773552644098.json
+hash: 4b9794c5f72909af
+coverage: 0.962963
+learned_at: 2026-10-15 22:31:27
+nodes: [CLIPTextEncode, VHS_LoadVideo, AudioEncoderEncode, AudioEncoderLoader, SimpleMath+, Display Any (rgthree), PreviewAudio, Display Any (rgthree), CR Float To Integer, WanSoundImageToVideo, ModelSamplingSD3, CLIPTextEncode, VAEDecode, PathchSageAttentionKJ, KSampler, wanBlockSwap, VHS_VideoCombine, PreviewImage, SaveImage, LoadImage, ImageResizeKJv2, UNETLoader, CLIPLoader, LoadAudio, LoraLoaderModelOnly, VAELoader, AudioCropProcessUTK]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 1736, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1960895773552644098.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（27 个）：
+- `CLIPTextEncode` ★核心
+- `VHS_LoadVideo`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `SimpleMath+`
+- `Display Any (rgthree)`
+- `PreviewAudio`
+- `Display Any (rgthree)`
+- `CR Float To Integer`
+- `WanSoundImageToVideo`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `PathchSageAttentionKJ`
+- `KSampler` ★核心
+- `wanBlockSwap`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `SaveImage`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `LoadAudio`
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `AudioCropProcessUTK`
+
+## 关键参数
+
+- `seed` = `1736`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **96%**（26/27）
+
+**有卡**：`CLIPTextEncode`、`VHS_LoadVideo`、`AudioEncoderEncode`、`AudioEncoderLoader`、`SimpleMath+`、`Display Any (rgthree)`、`PreviewAudio`、`CR Float To Integer`、`WanSoundImageToVideo`、`ModelSamplingSD3`、`VAEDecode`、`PathchSageAttentionKJ`、`KSampler`、`wanBlockSwap`、`VHS_VideoCombine`、`SaveImage`、`LoadImage`、`ImageResizeKJv2`、`UNETLoader`、`CLIPLoader`、`LoadAudio`、`LoraLoaderModelOnly`、`VAELoader`、`AudioCropProcessUTK`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

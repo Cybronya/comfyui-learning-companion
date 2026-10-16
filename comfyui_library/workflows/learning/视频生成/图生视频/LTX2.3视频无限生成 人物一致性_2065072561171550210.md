@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/LTX2.3视频无限生成 人物一致性_2065072561171550210.json
+name: LTX2.3视频无限生成 人物一致性_2065072561171550210.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2065072561171550210.json
+hash: 2990a53c1e73ec08
+coverage: 0.853659
+learned_at: 2026-10-15 22:39:35
+nodes: [EmptyLTXVLatentVideo, LTXVPreprocess, LTXVEmptyLatentAudio, KSamplerSelect, GetImageSize, ResizeImagesByLongerEdge, LTXVConcatAVLatent, GetNode, GetNode, ImpactInt, UNETLoader, PathchSageAttentionKJ, LTXVChunkFeedForward, ModelPatchTorchSettings, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LTXVImgToVideoInplace, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, ManualSigmas, CFGGuider, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, easy cleanGpuUsed, SetNode, SetNode, LTXVAudioVAEDecode, llama_cpp_model_loader, easy cleanGpuUsed, ShowText|pysssss, RHHiddenNodes, llama_cpp_instruct_adv, LoadImage, CR Text, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveInt, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3视频无限生成 人物一致性_2065072561171550210.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2065072561171550210.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（41 个）：
+- `EmptyLTXVLatentVideo`
+- `LTXVPreprocess`
+- `LTXVEmptyLatentAudio` ★核心
+- `KSamplerSelect` ★核心
+- `GetImageSize`
+- `ResizeImagesByLongerEdge`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `ImpactInt`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `ModelPatchTorchSettings`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LTXVImgToVideoInplace`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `ManualSigmas`
+- `CFGGuider`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `easy cleanGpuUsed`
+- `SetNode`
+- `SetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `llama_cpp_model_loader`
+- `easy cleanGpuUsed`
+- `ShowText|pysssss`
+- `RHHiddenNodes`
+- `llama_cpp_instruct_adv`
+- `LoadImage`
+- `CR Text`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PrimitiveInt`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **85%**（35/41）
+
+**有卡**：`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`KSamplerSelect`、`GetImageSize`、`ResizeImagesByLongerEdge`、`LTXVConcatAVLatent`、`ImpactInt`、`UNETLoader`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`VAELoaderKJ`、`DualCLIPLoader`、`LTXVImgToVideoInplace`、`CLIPTextEncode`、`LTXVConditioning`、`ManualSigmas`、`CFGGuider`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`LTXVAudioVAEDecode`、`llama_cpp_model_loader`、`RHHiddenNodes`、`llama_cpp_instruct_adv`、`LoadImage`、`CR Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_VideoCombine`
+
+**用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent

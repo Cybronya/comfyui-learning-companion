@@ -107,6 +107,12 @@ _SCHEMA_STATEMENTS = (
         PRIMARY KEY (node, workflow_id)
     )
     """,
+    # 主键首列是 node，按 workflow 过滤（rename/delete 批量清行）用不上它，
+    # 每次都全表扫。2026-10-16 批量改名实测 14344 次删除烧掉 1400+ CPU 秒。
+    """
+    CREATE INDEX IF NOT EXISTS idx_node_used_in_workflow
+    ON node_used_in(workflow_id)
+    """,
     """
     CREATE TABLE IF NOT EXISTS patterns (
         name TEXT PRIMARY KEY,

@@ -1,0 +1,48 @@
+---
+key: 视频生成/图生视频/通义万相WAN2.1图生视频美女大摆锤_1907747905766367234.json
+name: 通义万相WAN2.1图生视频美女大摆锤_1907747905766367234.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1907747905766367234.json
+hash: b3fe786dbed6bff1
+coverage: 1
+learned_at: 2026-10-15 22:29:27
+nodes: [WanVideoVAELoader, WanVideoBlockSwap, WanVideoEnhanceAVideo, LoadWanVideoT5TextEncoder, WanVideoLoraSelect, LoadImage, LoadWanVideoClipTextEncoder, ImageResizeKJ, WanVideoImageClipEncode, Int, WanVideoSampler, VHS_VideoCombine, WanVideoDecode, WanVideoModelLoader, WanVideoTeaCache, WanVideoTextEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/通义万相WAN2.1图生视频美女大摆锤_1907747905766367234.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1907747905766367234.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（16 个）：
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoEnhanceAVideo`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `ImageResizeKJ`
+- `WanVideoImageClipEncode`
+- `Int`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoTeaCache`
+- `WanVideoTextEncode`
+
+## 知识
+
+覆盖率 **100%**（16/16）
+
+**有卡**：`WanVideoVAELoader`、`WanVideoBlockSwap`、`WanVideoEnhanceAVideo`、`LoadWanVideoT5TextEncoder`、`WanVideoLoraSelect`、`LoadImage`、`LoadWanVideoClipTextEncoder`、`ImageResizeKJ`、`WanVideoImageClipEncode`、`Int`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoModelLoader`、`WanVideoTeaCache`、`WanVideoTextEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

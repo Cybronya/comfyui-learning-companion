@@ -1,0 +1,100 @@
+---
+key: 视频生成/图生视频/wan2.2图生视频+动态字幕对口型（说话-唱歌）_1983773749944197122.json
+name: wan2.2图生视频+动态字幕对口型（说话-唱歌）_1983773749944197122.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1983773749944197122.json
+hash: 05ca429b1547a636
+coverage: 0.897059
+learned_at: 2026-10-15 22:32:46
+nodes: [WanVideoTorchCompileSettings, ImageResizeKJv2, WanVideoTextEncodeCached, WanVideoDecode, WanVideoEncode, WanVideoVAELoader, MultiTalkWav2VecEmbeds, WanVideoClipVisionEncode, WanVideoLoraSelect, GetImageRangeFromBatch, GetImageSizeAndCount, Audio Duration (mtb), AudioSeparation, DownloadAndLoadWav2VecModel, WanVideoImageToVideoMultiTalk, easy showAnything, SimpleMath+, GetImageSizeAndCount, GetImageRangeFromBatch, SimpleMath+, MultiTalkModelLoader, WanVideoModelLoader, AudioCrop, CLIPVisionLoader, PrimitiveInt, CR Text, CR Text, 孤海-取色器, PrimitiveNode, LoadAudio, PrimitiveInt, PrimitiveInt, ImageFromBatch+, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoVAELoader, easy cleanGpuUsed, easy cleanGpuUsed, CLIPVisionLoader, WanVideoSampler, WanVideoSetBlockSwap, WanVideoBlockSwap, ImageResizeKJv2, easy indexTTSGenerateSimple, easy downloadIndexTTSAndLoadModel, VHS_VideoCombine, WanVideoTorchCompileSettings, CR Text, SaveAudioMP3, GetImageSizeAndCount, easy cleanGpuUsed, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoModelLoader, WanVideoTextEncode, easy cleanGpuUsed, SimpleMath+, WanVideoDecode, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, WanVideoSampler, easy cleanGpuUsed, WanVideoSampler, MarkdownNote, LoadImage, LoadImage, HAIGC_VideoSubtitleEnhanced, PrimitiveNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2图生视频+动态字幕对口型（说话-唱歌）_1983773749944197122.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1983773749944197122.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（68 个）：
+- `WanVideoTorchCompileSettings`
+- `ImageResizeKJv2`
+- `WanVideoTextEncodeCached`
+- `WanVideoDecode`
+- `WanVideoEncode`
+- `WanVideoVAELoader`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoClipVisionEncode`
+- `WanVideoLoraSelect`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `Audio Duration (mtb)`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `WanVideoImageToVideoMultiTalk`
+- `easy showAnything`
+- `SimpleMath+`
+- `GetImageSizeAndCount`
+- `GetImageRangeFromBatch`
+- `SimpleMath+`
+- `MultiTalkModelLoader`
+- `WanVideoModelLoader`
+- `AudioCrop`
+- `CLIPVisionLoader`
+- `PrimitiveInt`
+- `CR Text`
+- `CR Text`
+- `孤海-取色器`
+- `PrimitiveNode`
+- `LoadAudio`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ImageFromBatch+`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `CLIPVisionLoader`
+- `WanVideoSampler` ★核心
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `ImageResizeKJv2`
+- `easy indexTTSGenerateSimple`
+- `easy downloadIndexTTSAndLoadModel`
+- `VHS_VideoCombine`
+- `WanVideoTorchCompileSettings`
+- `CR Text`
+- `SaveAudioMP3`
+- `GetImageSizeAndCount`
+- `easy cleanGpuUsed`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+- `easy cleanGpuUsed`
+- `SimpleMath+`
+- `WanVideoDecode`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `WanVideoSampler` ★核心
+- `MarkdownNote`
+- `LoadImage`
+- `LoadImage`
+- `HAIGC_VideoSubtitleEnhanced`
+- `PrimitiveNode`
+
+## 知识
+
+覆盖率 **90%**（61/68）
+
+**有卡**：`WanVideoTorchCompileSettings`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`、`WanVideoDecode`、`WanVideoEncode`、`WanVideoVAELoader`、`MultiTalkWav2VecEmbeds`、`WanVideoClipVisionEncode`、`WanVideoLoraSelect`、`GetImageRangeFromBatch`、`GetImageSizeAndCount`、`Audio Duration (mtb)`、`AudioSeparation`、`DownloadAndLoadWav2VecModel`、`WanVideoImageToVideoMultiTalk`、`SimpleMath+`、`MultiTalkModelLoader`、`WanVideoModelLoader`、`AudioCrop`、`CLIPVisionLoader`、`CR Text`、`孤海-取色器`、`LoadAudio`、`ImageFromBatch+`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`easy cleanGpuUsed`、`WanVideoSampler`、`easy indexTTSGenerateSimple`、`easy downloadIndexTTSAndLoadModel`、`VHS_VideoCombine`、`SaveAudioMP3`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`LoadImage`、`HAIGC_VideoSubtitleEnhanced`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

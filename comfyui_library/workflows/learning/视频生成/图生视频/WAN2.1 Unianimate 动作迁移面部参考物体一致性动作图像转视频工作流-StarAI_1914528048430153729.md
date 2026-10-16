@@ -1,0 +1,74 @@
+---
+key: 视频生成/图生视频/WAN2.1 Unianimate 动作迁移面部参考物体一致性动作图像转视频工作流-StarAI_1914528048430153729.json
+name: WAN2.1 Unianimate 动作迁移面部参考物体一致性动作图像转视频工作流-StarAI_1914528048430153729.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1914528048430153729.json
+hash: e54acec749edf267
+coverage: 0.928571
+learned_at: 2026-10-15 22:29:36
+nodes: [WanVideoBlockSwap, WanVideoTextEncode, WanVideoSLG, WanVideoEnhanceAVideo, ReActorFaceSwap, PreviewImage, LayerUtility: PurgeVRAM V2, ImageListToImageBatch, Note Plus (mtb), WanVideoLoraSelect, WanVideoTeaCache, VHS_LoadVideo, Load RetinaFace, ImpactImageBatchToImageList, ImpactImageBatchToImageList, CR Text, WanVideoLoraSelect, CLIPVisionLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, LoadImage, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoClipVisionEncode, WanVideoUniAnimateDWPoseDetector, Crop Face, ImageConcanate, JWInteger, JWInteger, ImageResizeKJ, ImageResizeKJ, WanVideoModelLoader, WanVideoExperimentalArgs, WanVideoSampler, VHS_VideoCombine, ImageConcanate, WanVideoUniAnimatePoseInput, PreviewImage, Fast Groups Bypasser (rgthree), JWInteger, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/WAN2.1 Unianimate 动作迁移面部参考物体一致性动作图像转视频工作流-StarAI_1914528048430153729.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1914528048430153729.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（42 个）：
+- `WanVideoBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoSLG`
+- `WanVideoEnhanceAVideo`
+- `ReActorFaceSwap`
+- `PreviewImage`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageListToImageBatch`
+- `Note Plus (mtb)`
+- `WanVideoLoraSelect`
+- `WanVideoTeaCache`
+- `VHS_LoadVideo`
+- `Load RetinaFace`
+- `ImpactImageBatchToImageList`
+- `ImpactImageBatchToImageList`
+- `CR Text`
+- `WanVideoLoraSelect`
+- `CLIPVisionLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `LoadImage`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoClipVisionEncode`
+- `WanVideoUniAnimateDWPoseDetector`
+- `Crop Face`
+- `ImageConcanate`
+- `JWInteger`
+- `JWInteger`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `WanVideoModelLoader`
+- `WanVideoExperimentalArgs`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `WanVideoUniAnimatePoseInput`
+- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `JWInteger`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **93%**（39/42）
+
+**有卡**：`WanVideoBlockSwap`、`WanVideoTextEncode`、`WanVideoSLG`、`WanVideoEnhanceAVideo`、`ReActorFaceSwap`、`LayerUtility: PurgeVRAM V2`、`ImageListToImageBatch`、`Note Plus (mtb)`、`WanVideoLoraSelect`、`WanVideoTeaCache`、`VHS_LoadVideo`、`Load RetinaFace`、`ImpactImageBatchToImageList`、`CR Text`、`CLIPVisionLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`LoadImage`、`WanVideoDecode`、`WanVideoImageToVideoEncode`、`WanVideoClipVisionEncode`、`WanVideoUniAnimateDWPoseDetector`、`Crop Face`、`ImageConcanate`、`JWInteger`、`ImageResizeKJ`、`WanVideoModelLoader`、`WanVideoExperimentalArgs`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoUniAnimatePoseInput`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

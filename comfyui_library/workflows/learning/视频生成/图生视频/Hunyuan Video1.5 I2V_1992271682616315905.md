@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/Hunyuan Video1.5 I2V_1992271682616315905.json
+name: Hunyuan Video1.5 I2V_1992271682616315905.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1992271682616315905.json
+hash: 4d7781a8560445e8
+coverage: 0.833333
+learned_at: 2026-10-15 22:33:16
+nodes: [VAELoader, easy getNode, PrimitiveInt, PrimitiveInt, easy setNode, easy setNode, easy getNode, HunyuanVideo15ImageToVideo, CLIPVisionEncode, LoadImage, ImageResizeKJ, KSampler, DualCLIPLoader, UNETLoader, CLIPTextEncode, CLIPTextEncode, MarkdownNote, CLIPVisionLoader, SeedVR2GGUF, VAEDecode, VHS_VideoCombine, VHS_VideoCombine, Reroute, ImpactFloat]
+patterns: []
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_2s", "scheduler": "simple", "seed": 51786649655444, "steps": 50}
+---
+
+# 视频生成/图生视频/Hunyuan Video1.5 I2V_1992271682616315905.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1992271682616315905.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（24 个）：
+- `VAELoader`
+- `easy getNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `easy setNode`
+- `easy setNode`
+- `easy getNode`
+- `HunyuanVideo15ImageToVideo`
+- `CLIPVisionEncode`
+- `LoadImage`
+- `ImageResizeKJ`
+- `KSampler` ★核心
+- `DualCLIPLoader`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `CLIPVisionLoader`
+- `SeedVR2GGUF`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Reroute`
+- `ImpactFloat`
+
+## 关键参数
+
+- `seed` = `51786649655444`
+- `steps` = `50`
+- `cfg` = `1`
+- `sampler_name` = `res_2s`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **83%**（20/24）
+
+**有卡**：`VAELoader`、`easy getNode`、`easy setNode`、`HunyuanVideo15ImageToVideo`、`CLIPVisionEncode`、`LoadImage`、`ImageResizeKJ`、`KSampler`、`DualCLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`CLIPVisionLoader`、`SeedVR2GGUF`、`VAEDecode`、`VHS_VideoCombine`、`ImpactFloat`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、SeedVR2GGUF、CLIPVisionEncode

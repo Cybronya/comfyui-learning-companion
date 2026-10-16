@@ -1,0 +1,118 @@
+---
+key: 视频生成/图生视频/Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json
+name: Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039186628425551874.json
+hash: 519681784c9cd67b
+coverage: 0.55814
+learned_at: 2026-10-15 22:36:07
+nodes: [OnnxDetectionModelLoader, PoseAndFaceDetection, WanVideoSetLoRAs, WanVideoLoraSelectMulti, WanVideoSetBlockSwap, WanVideoDecode, CLIPVisionLoader, WanVideoTextEncodeCached, CR Prompt Text, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, VHS_VideoInfo, SetNode, SetNode, WanVideoClipVisionEncode, SetNode, SaveImage, GetNode, GetNode, WanVideoSampler, SetNode, GetNode, JWInteger, SetNode, CR Prompt Text, SetNode, WanVideoTorchCompileSettings, JWInteger, SDPoseOODLoader, DrawViTPose, easy cleanGpuUsed, easy ifElse, SDPoseOODProcessor, VHS_VideoCombine, VHS_VideoCombine, GetNode, easy boolean, Float, YOLOModelLoader, WanVideoEncode, WanVideoUni3C_embeds, WanVideoUni3C_ControlnetLoader, Note, Note, Note, WanVideoModelLoader, Note, Note, Note, Note, Note, Note, Note, Note, TT_img_enc_v2, VHS_VideoCombine, WanVideoBlockSwap, WanVideoVAELoader, Float, RHHiddenNodes, WanVideoContextOptions, MemoryCleaner, JWInteger, Note, Note, Note, WanVideoAnimateEmbeds, EmptyImage, Switch any [Crystools], GetNode, LoadImage, ImageResizeKJv2, VHS_LoadVideo, JWInteger, JWInteger, JWInteger]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 Animate动作迁移[教学注释]_2039186628425551874.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039186628425551874.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（86 个）：
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelectMulti`
+- `WanVideoSetBlockSwap`
+- `WanVideoDecode`
+- `CLIPVisionLoader`
+- `WanVideoTextEncodeCached`
+- `CR Prompt Text`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoInfo`
+- `SetNode`
+- `SetNode`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `SaveImage`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `SetNode`
+- `GetNode`
+- `JWInteger`
+- `SetNode`
+- `CR Prompt Text`
+- `SetNode`
+- `WanVideoTorchCompileSettings`
+- `JWInteger`
+- `SDPoseOODLoader`
+- `DrawViTPose`
+- `easy cleanGpuUsed`
+- `easy ifElse`
+- `SDPoseOODProcessor`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `easy boolean`
+- `Float`
+- `YOLOModelLoader`
+- `WanVideoEncode`
+- `WanVideoUni3C_embeds`
+- `WanVideoUni3C_ControlnetLoader`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoModelLoader`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `TT_img_enc_v2`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `Float`
+- `RHHiddenNodes`
+- `WanVideoContextOptions`
+- `MemoryCleaner`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoAnimateEmbeds`
+- `EmptyImage`
+- `Switch any [Crystools]`
+- `GetNode`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `VHS_LoadVideo`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+
+## 知识
+
+覆盖率 **56%**（48/86）
+
+**有卡**：`OnnxDetectionModelLoader`、`PoseAndFaceDetection`、`WanVideoSetLoRAs`、`WanVideoLoraSelectMulti`、`WanVideoSetBlockSwap`、`WanVideoDecode`、`CLIPVisionLoader`、`WanVideoTextEncodeCached`、`CR Prompt Text`、`VHS_VideoInfo`、`WanVideoClipVisionEncode`、`SaveImage`、`WanVideoSampler`、`JWInteger`、`WanVideoTorchCompileSettings`、`SDPoseOODLoader`、`DrawViTPose`、`easy cleanGpuUsed`、`SDPoseOODProcessor`、`VHS_VideoCombine`、`easy boolean`、`Float`、`YOLOModelLoader`、`WanVideoEncode`、`WanVideoUni3C_embeds`、`WanVideoUni3C_ControlnetLoader`、`WanVideoModelLoader`、`TT_img_enc_v2`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`RHHiddenNodes`、`WanVideoContextOptions`、`MemoryCleaner`、`WanVideoAnimateEmbeds`、`EmptyImage`、`Switch any [Crystools]`、`LoadImage`、`ImageResizeKJv2`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、WanVideoUni3C_ControlnetLoader、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoEncode

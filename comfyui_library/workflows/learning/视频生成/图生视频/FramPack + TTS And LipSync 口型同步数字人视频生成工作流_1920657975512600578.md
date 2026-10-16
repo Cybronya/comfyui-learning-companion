@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/FramPack + TTS And LipSync 口型同步数字人视频生成工作流_1920657975512600578.json
+name: FramPack + TTS And LipSync 口型同步数字人视频生成工作流_1920657975512600578.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1920657975512600578.json
+hash: b1e55da58f7d3b1d
+coverage: 0.676471
+learned_at: 2026-10-15 22:29:42
+nodes: [ConditioningZeroOut, FramePackTorchCompileSettings, CLIPVisionEncode, SetNode, SetNode, SetNode, SetNode, LayerUtility: PurgeVRAM, GetImageSizeAndCount, SetNode, ImageResizeKJv2, VAEEncode, DualCLIPLoader, CLIPVisionLoader, LoadFramePackModel, LoadImage, Reroute, FramePackFindNearestBucket, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), VAELoader, SetNode, VAEDecodeTiled, LoadAudio, CLIPTextEncode, FramePackSampler, LatentSyncNode, SetNode, VHS_VideoCombine, F5TTSAudioInputs, F5TTSAudio, Note, PreviewAudio, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/FramPack + TTS And LipSync 口型同步数字人视频生成工作流_1920657975512600578.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1920657975512600578.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（34 个）：
+- `ConditioningZeroOut`
+- `FramePackTorchCompileSettings`
+- `CLIPVisionEncode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `ImageResizeKJv2`
+- `VAEEncode` ★核心
+- `DualCLIPLoader`
+- `CLIPVisionLoader`
+- `LoadFramePackModel`
+- `LoadImage`
+- `Reroute`
+- `FramePackFindNearestBucket`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `VAELoader`
+- `SetNode`
+- `VAEDecodeTiled` ★核心
+- `LoadAudio`
+- `CLIPTextEncode` ★核心
+- `FramePackSampler` ★核心
+- `LatentSyncNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `F5TTSAudioInputs`
+- `F5TTSAudio`
+- `Note`
+- `PreviewAudio`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **68%**（23/34）
+
+**有卡**：`ConditioningZeroOut`、`FramePackTorchCompileSettings`、`CLIPVisionEncode`、`LayerUtility: PurgeVRAM`、`GetImageSizeAndCount`、`ImageResizeKJv2`、`VAEEncode`、`DualCLIPLoader`、`CLIPVisionLoader`、`LoadFramePackModel`、`LoadImage`、`FramePackFindNearestBucket`、`VAELoader`、`VAEDecodeTiled`、`LoadAudio`、`CLIPTextEncode`、`FramePackSampler`、`LatentSyncNode`、`VHS_VideoCombine`、`F5TTSAudioInputs`、`F5TTSAudio`、`PreviewAudio`
+
+**用到的条目**：VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、FramePackSampler、VAEDecodeTiled、VAEEncode、CLIPVisionEncode

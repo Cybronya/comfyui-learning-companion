@@ -1,0 +1,74 @@
+---
+key: 视频生成/图生视频/电商首尾帧生成视频 保持产品一致性 自动配音  Wan 2.2_2040437839665569793.json
+name: 电商首尾帧生成视频 保持产品一致性 自动配音  Wan 2.2_2040437839665569793.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2040437839665569793.json
+hash: c61306e18ceb6283
+coverage: 0.875
+learned_at: 2026-10-15 22:36:15
+nodes: [UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, CLIPLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, PathchSageAttentionKJ, UNETLoader, ModelSamplingSD3, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, easy seed, KSamplerAdvanced, KSamplerAdvanced, Note, WanFirstLastFrameToVideo, LoraLoaderModelOnly, LoadImage, LoadImage, VAEDecode, WanImageToVideo, HunyuanVideoFoley, Text, VHS_VideoCombine, ImageResizeKJv2, ImageResizeKJv2, JjkText, LoraLoaderModelOnly, Note, Note]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/电商首尾帧生成视频 保持产品一致性 自动配音  Wan 2.2_2040437839665569793.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2040437839665569793.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（32 个）：
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `easy seed`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Note`
+- `WanFirstLastFrameToVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `LoadImage`
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `HunyuanVideoFoley`
+- `Text`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `JjkText`
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `Note`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **88%**（28/32）
+
+**有卡**：`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`LayerUtility: PurgeVRAM`、`easy seed`、`KSamplerAdvanced`、`WanFirstLastFrameToVideo`、`LoadImage`、`VAEDecode`、`WanImageToVideo`、`HunyuanVideoFoley`、`Text`、`VHS_VideoCombine`、`ImageResizeKJv2`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

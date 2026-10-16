@@ -1,0 +1,116 @@
+---
+key: 视频生成/图生视频/Wan2.2 Rapid模型4步生视频_1958105806120112130.json
+name: Wan2.2 Rapid模型4步生视频_1958105806120112130.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1958105806120112130.json
+hash: 0374ae1ad79c35cd
+coverage: 0.867925
+learned_at: 2026-10-15 22:31:20
+nodes: [easy showAnything, PreviewImage, PreviewImage, SimpleMath+, SimpleMath+, VHS_GetImageCount, ImageBatch, ImageFromBatch+, VAEDecode, ImageBatch, VAEDecode, ImageFromBatch+, VAEDecode, RH_Captioner, easy showAnything, TextBox, CLIPVisionLoader, SimpleMath+, ModelSamplingSD3, WanImageToVideo, WanImageToVideo, CLIPVisionEncode, TextBox, LayerUtility: PurgeVRAM, DF_Integer, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, CLIPTextEncode, CLIPTextEncode, VHS_VideoCombine, PrimitiveFloat, LayerUtility: PurgeVRAM, RH_Captioner, easy showAnything, easy ifElse, Wan_video_prompt_generator, CR Text Replace, TextBox, VHS_VideoCombine, VHS_VideoCombine, LoraLoader, KSampler, KSampler, CheckpointLoaderSimple, LoadImage, ImageResizeKJv2, CR SDXL Aspect Ratio, WanImageToVideo, LatentBatch, SaveLatent, KSampler, PrimitiveBoolean, TextBox]
+patterns: [lora]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-i2v-rapid-aio-nsfw-v9.1.safetensors", "denoise": 1, "lora_name": "WanRealismV1.safetensors", "sampler_name": "sa_solver", "scheduler": "beta", "seed": 378459456978809, "steps": 4, "strength_clip": 1, "strength_model": 0.8000000000000002}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2 Rapid模型4步生视频_1958105806120112130.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1958105806120112130.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（53 个）：
+- `easy showAnything`
+- `PreviewImage`
+- `PreviewImage`
+- `SimpleMath+`
+- `SimpleMath+`
+- `VHS_GetImageCount`
+- `ImageBatch`
+- `ImageFromBatch+`
+- `VAEDecode` ★核心
+- `ImageBatch`
+- `VAEDecode` ★核心
+- `ImageFromBatch+`
+- `VAEDecode` ★核心
+- `RH_Captioner`
+- `easy showAnything`
+- `TextBox`
+- `CLIPVisionLoader`
+- `SimpleMath+`
+- `ModelSamplingSD3`
+- `WanImageToVideo`
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `TextBox`
+- `LayerUtility: PurgeVRAM`
+- `DF_Integer`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `PrimitiveFloat`
+- `LayerUtility: PurgeVRAM`
+- `RH_Captioner`
+- `easy showAnything`
+- `easy ifElse`
+- `Wan_video_prompt_generator`
+- `CR Text Replace`
+- `TextBox`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoraLoader` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LoadImage`
+- `ImageResizeKJv2`
+- `CR SDXL Aspect Ratio`
+- `WanImageToVideo`
+- `LatentBatch`
+- `SaveLatent`
+- `KSampler` ★核心
+- `PrimitiveBoolean`
+- `TextBox`
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `lora_name` = `WanRealismV1.safetensors`
+- `strength_model` = `0.8000000000000002`
+- `strength_clip` = `1`
+- `seed` = `378459456978809`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-i2v-rapid-aio-nsfw-v9.1.safetensors`
+
+## 知识
+
+覆盖率 **87%**（46/53）
+
+**有卡**：`SimpleMath+`、`VHS_GetImageCount`、`ImageBatch`、`ImageFromBatch+`、`VAEDecode`、`RH_Captioner`、`TextBox`、`CLIPVisionLoader`、`ModelSamplingSD3`、`WanImageToVideo`、`CLIPVisionEncode`、`LayerUtility: PurgeVRAM`、`DF_Integer`、`CLIPTextEncode`、`VHS_VideoCombine`、`Wan_video_prompt_generator`、`CR Text Replace`、`LoraLoader`、`KSampler`、`CheckpointLoaderSimple`、`LoadImage`、`ImageResizeKJv2`、`CR SDXL Aspect Ratio`、`LatentBatch`、`SaveLatent`、`PrimitiveBoolean`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、SaveLatent、CLIPVisionEncode、LatentBatch
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

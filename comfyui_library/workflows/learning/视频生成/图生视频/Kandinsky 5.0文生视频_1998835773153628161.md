@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/Kandinsky 5.0文生视频_1998835773153628161.json
+name: Kandinsky 5.0文生视频_1998835773153628161.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998835773153628161.json
+hash: ad2acb79578a0e4d
+coverage: 0.764706
+learned_at: 2026-10-15 22:33:34
+nodes: [CLIPTextEncode, DualCLIPLoader, VAELoader, CLIPTextEncode, VAEDecode, ModelSamplingSD3, Kandinsky5ImageToVideo, CreateVideo, UNETLoader, SaveVideo, MarkdownNote, KSampler, MarkdownNote, JWInteger, JWInteger, Note, Note]
+patterns: []
+missing: []
+parameters: {"cfg": 5, "denoise": 1, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 872772814479556, "steps": 50}
+---
+
+# 视频生成/图生视频/Kandinsky 5.0文生视频_1998835773153628161.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998835773153628161.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（17 个）：
+- `CLIPTextEncode` ★核心
+- `DualCLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `Kandinsky5ImageToVideo`
+- `CreateVideo`
+- `UNETLoader` ★核心
+- `SaveVideo`
+- `MarkdownNote`
+- `KSampler` ★核心
+- `MarkdownNote`
+- `JWInteger`
+- `JWInteger`
+- `Note`
+- `Note`
+
+## 关键参数
+
+- `seed` = `872772814479556`
+- `steps` = `50`
+- `cfg` = `5`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **76%**（13/17）
+
+**有卡**：`CLIPTextEncode`、`DualCLIPLoader`、`VAELoader`、`VAEDecode`、`ModelSamplingSD3`、`Kandinsky5ImageToVideo`、`CreateVideo`、`UNETLoader`、`SaveVideo`、`KSampler`、`JWInteger`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、UNETLoader、SaveVideo、CreateVideo、DualCLIPLoader

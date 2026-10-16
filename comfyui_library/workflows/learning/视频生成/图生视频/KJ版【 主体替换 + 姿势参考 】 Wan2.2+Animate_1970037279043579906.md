@@ -1,0 +1,97 @@
+---
+key: 视频生成/图生视频/KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json
+name: KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1970037279043579906.json
+hash: ba23fea83759a2b3
+coverage: 0.569231
+learned_at: 2026-10-15 22:31:51
+nodes: [WanVideoTorchCompileSettings, ImageConcatMulti, GetNode, GetNode, WanVideoVAELoader, WanVideoBlockSwap, WanVideoModelLoader, CLIPVisionLoader, WanVideoTextEncodeCached, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Int, GetNode, GetNode, GetNode, WanVideoDecode, WanVideoAnimateEmbeds, WanVideoClipVisionEncode, SetNode, ImageCropByMaskAndResize, SetNode, WanVideoSetLoRAs, LayerMask: LoadSegmentAnythingModels, BlockifyMask, GrowMask, ImageFromBatch, SetNode, LayerMask: SegmentAnythingUltra V3, LayerUtility: ImageScaleByAspectRatio V2, WanVideoSetBlockSwap, DrawMaskOnImage, SetNode, MathExpression|pysssss, SetNode, GetNode, SetNode, GetNode, SetNode, WanVideoLoraSelectMulti, FaceMaskFromPoseKeypoints, SetNode, DWPreprocessor, SetNode, WanVideoSampler, VHS_VideoCombine, GetNode, SetNode, SetNode, VHS_VideoCombine, LoadImage, VHS_LoadVideo, Textbox, Textbox, VHS_VideoCombine, ImageConcatMulti, GetNode, ImageResizeKJv2, SetNode, ImpactInt, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/KJ版【 主体替换 + 姿势参考 】 Wan2.2+Animate_1970037279043579906.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1970037279043579906.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（65 个）：
+- `WanVideoTorchCompileSettings`
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `CLIPVisionLoader`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoAnimateEmbeds`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `ImageCropByMaskAndResize`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `LayerMask: LoadSegmentAnythingModels`
+- `BlockifyMask`
+- `GrowMask`
+- `ImageFromBatch`
+- `SetNode`
+- `LayerMask: SegmentAnythingUltra V3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoSetBlockSwap`
+- `DrawMaskOnImage`
+- `SetNode`
+- `MathExpression|pysssss`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoLoraSelectMulti`
+- `FaceMaskFromPoseKeypoints`
+- `SetNode`
+- `DWPreprocessor`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `Textbox`
+- `Textbox`
+- `VHS_VideoCombine`
+- `ImageConcatMulti`
+- `GetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `ImpactInt`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **57%**（37/65）
+
+**有卡**：`WanVideoTorchCompileSettings`、`ImageConcatMulti`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`CLIPVisionLoader`、`WanVideoTextEncodeCached`、`Int`、`WanVideoDecode`、`WanVideoAnimateEmbeds`、`WanVideoClipVisionEncode`、`ImageCropByMaskAndResize`、`WanVideoSetLoRAs`、`LayerMask: LoadSegmentAnythingModels`、`BlockifyMask`、`GrowMask`、`ImageFromBatch`、`LayerMask: SegmentAnythingUltra V3`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoSetBlockSwap`、`DrawMaskOnImage`、`MathExpression|pysssss`、`WanVideoLoraSelectMulti`、`FaceMaskFromPoseKeypoints`、`DWPreprocessor`、`WanVideoSampler`、`VHS_VideoCombine`、`LoadImage`、`VHS_LoadVideo`、`Textbox`、`ImageResizeKJv2`、`ImpactInt`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs

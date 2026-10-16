@@ -1,0 +1,92 @@
+---
+key: 视频生成/图生视频/Animate Wan2.2 动作迁移2_1992566625708691457.json
+name: Animate Wan2.2 动作迁移2_1992566625708691457.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1992566625708691457.json
+hash: 0bedecbe52a952c9
+coverage: 0.566667
+learned_at: 2026-10-15 22:33:16
+nodes: [GetNode, GetNode, GetNode, GetNode, GetNode, PixelPerfectResolution, GetNode, WanVideoTextEncodeCached, WanVideoClipVisionEncode, GetNode, GetNode, GetNode, WanVideoDecode, GetNode, SetNode, ImageCropByMaskAndResize, SetNode, LayerUtility: PurgeVRAM, WanVideoSetBlockSwap, FaceMaskFromPoseKeypoints, SetNode, CLIPVisionLoader, Reroute, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, easy cleanGpuUsed, VHS_VideoInfo, SetNode, ImageConcatMulti, ImageResizeKJv2, ImageConcatMulti, ImageResizeKJv2, BlockifyMask, DrawMaskOnImage, GetNode, GrowMask, LayerUtility: PurgeVRAM, SetNode, GetNode, SetNode, SetNode, WanVideoSetLoRAs, WanVideoModelLoader, WanVideoVAELoader, WanVideoBlockSwap, VHS_VideoCombine, WanVideoLoraSelectMulti, WanVideoSampler, LayerMask: SegformerB2ClothesUltra, WanVideoAnimateEmbeds, JWInteger, JWInteger, VHS_VideoCombine, DWPreprocessor, VHS_LoadVideo, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Animate Wan2.2 动作迁移2_1992566625708691457.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1992566625708691457.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（60 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PixelPerfectResolution`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `SetNode`
+- `ImageCropByMaskAndResize`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoSetBlockSwap`
+- `FaceMaskFromPoseKeypoints`
+- `SetNode`
+- `CLIPVisionLoader`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `VHS_VideoInfo`
+- `SetNode`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `ImageConcatMulti`
+- `ImageResizeKJv2`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `GetNode`
+- `GrowMask`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `VHS_VideoCombine`
+- `WanVideoLoraSelectMulti`
+- `WanVideoSampler` ★核心
+- `LayerMask: SegformerB2ClothesUltra`
+- `WanVideoAnimateEmbeds`
+- `JWInteger`
+- `JWInteger`
+- `VHS_VideoCombine`
+- `DWPreprocessor`
+- `VHS_LoadVideo`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **57%**（34/60）
+
+**有卡**：`PixelPerfectResolution`、`WanVideoTextEncodeCached`、`WanVideoClipVisionEncode`、`WanVideoDecode`、`ImageCropByMaskAndResize`、`LayerUtility: PurgeVRAM`、`WanVideoSetBlockSwap`、`FaceMaskFromPoseKeypoints`、`CLIPVisionLoader`、`easy cleanGpuUsed`、`VHS_VideoInfo`、`ImageConcatMulti`、`ImageResizeKJv2`、`BlockifyMask`、`DrawMaskOnImage`、`GrowMask`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`WanVideoLoraSelectMulti`、`WanVideoSampler`、`LayerMask: SegformerB2ClothesUltra`、`WanVideoAnimateEmbeds`、`JWInteger`、`DWPreprocessor`、`VHS_LoadVideo`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

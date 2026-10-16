@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/【GUGU】WAN2.2-RemixV2-I2V首尾帧视频加速版_1986986221308194817.json
+name: 【GUGU】WAN2.2-RemixV2-I2V首尾帧视频加速版_1986986221308194817.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1986986221308194817.json
+hash: 8f6c72223986012f
+coverage: 0.965517
+learned_at: 2026-10-15 22:32:57
+nodes: [easy int, UNETLoader, UNETLoader, CLIPLoader, easy int, VAELoader, SimpleMath+, PathchSageAttentionKJ, PathchSageAttentionKJ, wanBlockSwap, wanBlockSwap, ModelPatchTorchSettings, ModelPatchTorchSettings, easy int, VAEDecode, ModelSamplingSD3, easy showAnything, CLIPTextEncode, LoadImage, ModelSamplingSD3, easy int, LoadImage, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, WanFirstLastFrameToVideo, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "normal", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/【GUGU】WAN2.2-RemixV2-I2V首尾帧视频加速版_1986986221308194817.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1986986221308194817.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（29 个）：
+- `easy int`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `easy int`
+- `VAELoader`
+- `SimpleMath+`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `easy int`
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `ModelSamplingSD3`
+- `easy int`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanFirstLastFrameToVideo`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `normal`
+
+## 知识
+
+覆盖率 **97%**（28/29）
+
+**有卡**：`easy int`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SimpleMath+`、`PathchSageAttentionKJ`、`wanBlockSwap`、`ModelPatchTorchSettings`、`VAEDecode`、`ModelSamplingSD3`、`CLIPTextEncode`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanFirstLastFrameToVideo`、`KSamplerAdvanced`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、ModelPatchTorchSettings

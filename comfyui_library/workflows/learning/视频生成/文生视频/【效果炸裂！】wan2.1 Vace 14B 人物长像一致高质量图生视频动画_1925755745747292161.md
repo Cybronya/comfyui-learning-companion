@@ -1,0 +1,55 @@
+---
+key: 视频生成/文生视频/【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视频动画_1925755745747292161.json
+name: 【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视频动画_1925755745747292161.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1925755745747292161.json
+hash: 908a67d7365215a7
+coverage: 0.913043
+learned_at: 2026-10-15 22:43:25
+nodes: [WanVideoDecode, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEModelSelect, LayerUtility: ImageScaleByAspectRatio V2, WanVideoTextEncode, ImageRepeat, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoSampler, VHS_VideoCombine, PreviewImage, WanVideoModelLoader, WanVideoSLG, LoadImage, Note, JWInteger, JWInteger, WanVideoLoraSelect, TextInput_]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视频动画_1925755745747292161.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1925755745747292161.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（23 个）：
+- `WanVideoDecode`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoVACEModelSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoTextEncode`
+- `ImageRepeat`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `LoadImage`
+- `Note`
+- `JWInteger`
+- `JWInteger`
+- `WanVideoLoraSelect`
+- `TextInput_`
+
+## 知识
+
+覆盖率 **91%**（21/23）
+
+**有卡**：`WanVideoDecode`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEModelSelect`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoTextEncode`、`ImageRepeat`、`WanVideoVACEEncode`、`WanVideoVACEStartToEndFrame`、`WanVideoEnhanceAVideo`、`WanVideoExperimentalArgs`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoModelLoader`、`WanVideoSLG`、`LoadImage`、`JWInteger`、`WanVideoLoraSelect`、`TextInput_`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

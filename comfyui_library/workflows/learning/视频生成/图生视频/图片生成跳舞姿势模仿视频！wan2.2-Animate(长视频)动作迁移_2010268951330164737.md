@@ -1,0 +1,127 @@
+---
+key: 视频生成/图生视频/图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json
+name: 图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2010268951330164737.json
+hash: baea73f982dfbb3b
+coverage: 0.675676
+learned_at: 2026-10-15 22:34:16
+nodes: [ImageResizeKJv2, UNETLoader, TextEncodeQwenImageEditPlus, KSampler, EmptySD3LatentImage, CLIPVisionLoader, WanVideoClipVisionEncode, WanVideoVAELoader, ImageResizeKJv2, LayerUtility: PurgeVRAM, Text, SetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, CLIPVisionLoader, LayerUtility: PurgeVRAM, GetNode, PixelPerfectResolution, FaceMaskFromPoseKeypoints, SetNode, DWPreprocessor, SetNode, GetNode, GetNode, Text Concatenate, WanVideoSetBlockSwap, VHS_VideoInfo, GetNode, GetNode, ImageCropByMaskAndResize, TextEncodeQwenImageEdit, WanVideoSetLoRAs, LayerUtility: PurgeVRAM, GetNode, GetNode, WanVideoAnimateEmbeds, GetNode, WanVideoSampler, LayerUtility: PurgeVRAM, VAEDecode, SetNode, WanVideoLoraSelectMulti, LayerUtility: PurgeVRAM, WanVideoLoraSelectMulti, VHS_VideoCombine, Text Multiline, WanVideoModelLoader, GetNode, LayerUtility: PurgeVRAM, WanVideoDecode, PrimitiveInt, LoadImage, LoadImage, Text Multiline, Text Multiline, VHS_LoadVideo, PrimitiveInt, SimpleMath+, PreviewImage, PrimitiveInt, PrimitiveInt, WanVideoBlockSwap, LayerUtility: PurgeVRAM, CLIPLoader, VAELoader, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LoraLoaderModelOnly, WanVideoTextEncodeCached]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 619406411962463, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2010268951330164737.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Decode → Process → Output → Other
+
+**节点**（74 个）：
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `TextEncodeQwenImageEditPlus`
+- `KSampler` ★核心
+- `EmptySD3LatentImage`
+- `CLIPVisionLoader`
+- `WanVideoClipVisionEncode`
+- `WanVideoVAELoader`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM`
+- `Text`
+- `SetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `PixelPerfectResolution`
+- `FaceMaskFromPoseKeypoints`
+- `SetNode`
+- `DWPreprocessor`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Text Concatenate`
+- `WanVideoSetBlockSwap`
+- `VHS_VideoInfo`
+- `GetNode`
+- `GetNode`
+- `ImageCropByMaskAndResize`
+- `TextEncodeQwenImageEdit`
+- `WanVideoSetLoRAs`
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `LayerUtility: PurgeVRAM`
+- `VAEDecode` ★核心
+- `SetNode`
+- `WanVideoLoraSelectMulti`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoLoraSelectMulti`
+- `VHS_VideoCombine`
+- `Text Multiline`
+- `WanVideoModelLoader`
+- `GetNode`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoDecode`
+- `PrimitiveInt`
+- `LoadImage`
+- `LoadImage`
+- `Text Multiline`
+- `Text Multiline`
+- `VHS_LoadVideo`
+- `PrimitiveInt`
+- `SimpleMath+`
+- `PreviewImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `WanVideoBlockSwap`
+- `LayerUtility: PurgeVRAM`
+- `CLIPLoader`
+- `VAELoader`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `LoraLoaderModelOnly` ★核心
+- `WanVideoTextEncodeCached`
+
+## 关键参数
+
+- `seed` = `619406411962463`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **68%**（50/74）
+
+**有卡**：`ImageResizeKJv2`、`UNETLoader`、`TextEncodeQwenImageEditPlus`、`KSampler`、`EmptySD3LatentImage`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoVAELoader`、`LayerUtility: PurgeVRAM`、`Text`、`PixelPerfectResolution`、`FaceMaskFromPoseKeypoints`、`DWPreprocessor`、`Text Concatenate`、`WanVideoSetBlockSwap`、`VHS_VideoInfo`、`ImageCropByMaskAndResize`、`TextEncodeQwenImageEdit`、`WanVideoSetLoRAs`、`WanVideoAnimateEmbeds`、`WanVideoSampler`、`VAEDecode`、`WanVideoLoraSelectMulti`、`VHS_VideoCombine`、`Text Multiline`、`WanVideoModelLoader`、`WanVideoDecode`、`LoadImage`、`VHS_LoadVideo`、`SimpleMath+`、`WanVideoBlockSwap`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`WanVideoTextEncodeCached`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、LoadImage、UNETLoader、WanVideoSampler
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

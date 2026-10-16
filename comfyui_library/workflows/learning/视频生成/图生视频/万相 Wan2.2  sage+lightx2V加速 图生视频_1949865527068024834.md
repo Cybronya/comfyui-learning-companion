@@ -1,0 +1,60 @@
+---
+key: 视频生成/图生视频/万相 Wan2.2  sage+lightx2V加速 图生视频_1949865527068024834.json
+name: 万相 Wan2.2  sage+lightx2V加速 图生视频_1949865527068024834.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1949865527068024834.json
+hash: d090a40845fc7597
+coverage: 1
+learned_at: 2026-10-15 22:30:50
+nodes: [CLIPTextEncode, ModelSamplingSD3, CLIPLoader, VAELoader, CLIPTextEncode, VAEDecode, KSamplerAdvanced, WanImageToVideo, ModelSamplingSD3, KSamplerAdvanced, LoadImage, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/万相 Wan2.2  sage+lightx2V加速 图生视频_1949865527068024834.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1949865527068024834.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（18 个）：
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `WanImageToVideo`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `LoadImage`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`KSamplerAdvanced`、`WanImageToVideo`、`LoadImage`、`UNETLoader`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,196 @@
+---
+key: 视频生成/图生视频/wan2.2智能多帧_3帧效果较好_1990766383455744002.json
+name: wan2.2智能多帧_3帧效果较好_1990766383455744002.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1990766383455744002.json
+hash: be5cb65575af718c
+coverage: 0.88961
+learned_at: 2026-10-15 22:33:11
+nodes: [ImageScaleBy, VHS_SelectFilename, Any To Any, VHS_VideoCombine, ImageScaleBy, ImageScaleBy, KSamplerAdvanced, KSamplerAdvanced, ImageConcatMulti, MultiplePathsInput, Any To Any, VHS_VideoCombine, VHS_VideoCombine, VHS_SelectFilename, VHS_SelectFilename, Any To Any, VHS_VideoCombine, VAEDecode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, VHS_VideoCombine, LayerUtility: PurgeVRAM, ImageResizeKJv2, CLIPTextEncode, MultiplePathsInput, Qwen3_VQA, easy showAnything, ImageResizeKJv2, KSamplerAdvanced, KSamplerAdvanced, Note, ColorMatch, ImageResizeKJv2, ImageResizeKJv2, CLIPTextEncode, Any To Any, VHS_VideoCombine, VHS_VideoCombine, VHS_SelectFilename, VHS_SelectFilename, Any To Any, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, MultiplePathsInput, easy showAnything, VHS_SelectFilename, ImageResizeKJv2, CLIPTextEncode, Qwen3_VQA, KSamplerAdvanced, KSamplerAdvanced, ImageResizeKJv2, ImageResizeKJv2, Any To Any, VHS_SelectFilename, VHS_SelectFilename, Any To Any, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, Note, MultiplePathsInput, easy showAnything, CLIPTextEncode, Qwen3_VQA, KSamplerAdvanced, KSamplerAdvanced, ImageResizeKJv2, ImageResizeKJv2, ColorMatch, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, easy batchAnything, LoadImage, WanFirstMiddleLastFrameToVideo, VAEDecode, ImageFromBatch+, VAEDecode, ImageFromBatch+, VAEDecode, VHS_VideoCombine, WanFirstMiddleLastFrameToVideo, WanFirstMiddleLastFrameToVideo, LoadImage, WanFirstMiddleLastFrameToVideo, ImageFromBatch+, VHS_VideoCombine, VHS_VideoCombine, ColorMatch, Note, Note, Note, easy batchAnything, RunningHub Deepcleaner, easy batchAnything, Note, Note, JWInteger, Note, Note, Float, JWInteger, PathchSageAttentionKJ, wanBlockSwap, VHS_VideoCombine, VHS_VideoCombine, ColorMatch, ImageResizeKJv2, Any To Any, VHS_SelectFilename, VHS_VideoCombine, GetImageRangeFromBatch, MathExpression|pysssss, VHS_SelectFilename, VHS_SelectFilename, LoadImage, Any To Any, LoadImage, Any To Any, LoadImage, Any To Any, VHS_SelectFilename, VHS_VideoCombine, GetImageRangeFromBatch, LoadImage, Note, Note, LoadImage, Any To Any, GetImageRangeFromBatch, VHS_VideoCombine, Note, LoadImage, LoadImage, Note, Float, easy showAnything, LayerUtility: PurgeVRAM, ImageResizeKJv2, UNETLoader, UNETLoader, wanBlockSwap, PathchSageAttentionKJ, VAELoader, LoraLoaderModelOnly, ModelSamplingSD3, Qwen3_VQA, CLIPTextEncode, CLIPLoader, LayerUtility: ImageScaleByAspectRatio V2, ModelSamplingSD3, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2.2智能多帧_3帧效果较好_1990766383455744002.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1990766383455744002.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（154 个）：
+- `ImageScaleBy`
+- `VHS_SelectFilename`
+- `Any To Any`
+- `VHS_VideoCombine`
+- `ImageScaleBy`
+- `ImageScaleBy`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImageConcatMulti`
+- `MultiplePathsInput`
+- `Any To Any`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_SelectFilename`
+- `VHS_SelectFilename`
+- `Any To Any`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `MultiplePathsInput`
+- `Qwen3_VQA`
+- `easy showAnything`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Note`
+- `ColorMatch`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `Any To Any`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_SelectFilename`
+- `VHS_SelectFilename`
+- `Any To Any`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `MultiplePathsInput`
+- `easy showAnything`
+- `VHS_SelectFilename`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `Qwen3_VQA`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `Any To Any`
+- `VHS_SelectFilename`
+- `VHS_SelectFilename`
+- `Any To Any`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `Note`
+- `MultiplePathsInput`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `Qwen3_VQA`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ColorMatch`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `easy batchAnything`
+- `LoadImage`
+- `WanFirstMiddleLastFrameToVideo`
+- `VAEDecode` ★核心
+- `ImageFromBatch+`
+- `VAEDecode` ★核心
+- `ImageFromBatch+`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `WanFirstMiddleLastFrameToVideo`
+- `WanFirstMiddleLastFrameToVideo`
+- `LoadImage`
+- `WanFirstMiddleLastFrameToVideo`
+- `ImageFromBatch+`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ColorMatch`
+- `Note`
+- `Note`
+- `Note`
+- `easy batchAnything`
+- `RunningHub Deepcleaner`
+- `easy batchAnything`
+- `Note`
+- `Note`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Float`
+- `JWInteger`
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ColorMatch`
+- `ImageResizeKJv2`
+- `Any To Any`
+- `VHS_SelectFilename`
+- `VHS_VideoCombine`
+- `GetImageRangeFromBatch`
+- `MathExpression|pysssss`
+- `VHS_SelectFilename`
+- `VHS_SelectFilename`
+- `LoadImage`
+- `Any To Any`
+- `LoadImage`
+- `Any To Any`
+- `LoadImage`
+- `Any To Any`
+- `VHS_SelectFilename`
+- `VHS_VideoCombine`
+- `GetImageRangeFromBatch`
+- `LoadImage`
+- `Note`
+- `Note`
+- `LoadImage`
+- `Any To Any`
+- `GetImageRangeFromBatch`
+- `VHS_VideoCombine`
+- `Note`
+- `LoadImage`
+- `LoadImage`
+- `Note`
+- `Float`
+- `easy showAnything`
+- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `Qwen3_VQA`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ModelSamplingSD3`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **89%**（137/154）
+
+**有卡**：`ImageScaleBy`、`VHS_SelectFilename`、`Any To Any`、`VHS_VideoCombine`、`KSamplerAdvanced`、`ImageConcatMulti`、`MultiplePathsInput`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`ImageResizeKJv2`、`CLIPTextEncode`、`Qwen3_VQA`、`ColorMatch`、`easy batchAnything`、`LoadImage`、`WanFirstMiddleLastFrameToVideo`、`ImageFromBatch+`、`RunningHub Deepcleaner`、`JWInteger`、`Float`、`PathchSageAttentionKJ`、`wanBlockSwap`、`GetImageRangeFromBatch`、`MathExpression|pysssss`、`UNETLoader`、`VAELoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`CLIPLoader`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

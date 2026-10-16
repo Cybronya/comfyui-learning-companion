@@ -517,6 +517,18 @@ class LearningStore:
         if self.write_index and self._index_dirty:
             self._update_index()
 
+    def rebuild_index(self) -> None:
+        """
+        强制全量重建 index.md（无视脏标记）
+
+        供外部批量改名/迁移后刷新索引链接——rename 类维护直接挪走
+        记录文件，不走 write/remove，flush_index() 会因无脏标记而跳过，
+        留下指向旧路径的 index.md（2026-10-16 裸 id 改名踩过）
+        """
+        if self.write_index:
+            self._update_index()
+            self._index_dirty = False
+
     def render_record(self, record: LearningRecord) -> str:
         """
         只渲染正文（不含 frontmatter），用于其他场景

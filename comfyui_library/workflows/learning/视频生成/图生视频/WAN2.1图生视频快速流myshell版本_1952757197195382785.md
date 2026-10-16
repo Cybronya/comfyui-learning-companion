@@ -1,0 +1,53 @@
+---
+key: 视频生成/图生视频/WAN2.1图生视频快速流myshell版本_1952757197195382785.json
+name: WAN2.1图生视频快速流myshell版本_1952757197195382785.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952757197195382785.json
+hash: 07c4ffcd40c16c6c
+coverage: 1
+learned_at: 2026-10-15 22:31:03
+nodes: [WanVideoDecode, ImageUpscaleWithModel, Upscale Model Loader, MathExpression|pysssss, WanVideoBlockSwap, WanVideoLoraSelect, Int, Int, WanVideoImageClipEncode, LayerUtility: ImageScaleByAspectRatio V2, ShellAgentPluginSaveVideoVHS, WanVideoLoraSelect, VHS_VideoCombine, ShellAgentPluginInputImage, TextInput_, WanVideoModelLoader, LoadWanVideoClipTextEncoder, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoTextEncode, WanVideoSampler]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/WAN2.1图生视频快速流myshell版本_1952757197195382785.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952757197195382785.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
+**节点**（21 个）：
+- `WanVideoDecode`
+- `ImageUpscaleWithModel`
+- `Upscale Model Loader`
+- `MathExpression|pysssss`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `Int`
+- `Int`
+- `WanVideoImageClipEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ShellAgentPluginSaveVideoVHS`
+- `WanVideoLoraSelect`
+- `VHS_VideoCombine`
+- `ShellAgentPluginInputImage`
+- `TextInput_`
+- `WanVideoModelLoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+
+## 知识
+
+覆盖率 **100%**（21/21）
+
+**有卡**：`WanVideoDecode`、`ImageUpscaleWithModel`、`Upscale Model Loader`、`MathExpression|pysssss`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`Int`、`WanVideoImageClipEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`ShellAgentPluginSaveVideoVHS`、`VHS_VideoCombine`、`ShellAgentPluginInputImage`、`TextInput_`、`WanVideoModelLoader`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoSampler`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect

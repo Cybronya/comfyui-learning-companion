@@ -1,0 +1,118 @@
+---
+key: 视频生成/图生视频/【优化版】LTX-2.3首尾帧_2032479656754028546.json
+name: 【优化版】LTX-2.3首尾帧_2032479656754028546.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2032479656754028546.json
+hash: 610fba8fd1d2bce4
+coverage: 0.576923
+learned_at: 2026-10-15 22:35:36
+nodes: [LTXAVTextEncoderLoader, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, GetNode, GetNode, CM_FloatToInt, CheckpointLoaderSimple, SetNode, LTXVAudioVAELoader, SetNode, GetNode, GetNode, LTXVConditioning, SamplerCustomAdvanced, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, LoraLoaderModelOnly, SetNode, LatentUpscaleModelLoader, SetNode, GetNode, CFGGuider, LTXVSeparateAVLatent, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, GetNode, TextGenerateLTX2Prompt, DualCLIPLoader, GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, LTXVEmptyLatentAudio, GetNode, LTXVLatentUpsampler, GetNode, GetNode, LTXVPreprocess, LTXVImgToVideoInplaceKJ, LTXVPreprocess, RandomNoise, LTXVConcatAVLatent, SetNode, SetNode, SetNode, SetNode, ImageResizeKJv2, SimpleMath+, SetNode, SetNode, PrimitiveFloat, GetNode, GetNode, RH_LLMAPI_Pro_Node, ImageConcatMulti, easy showAnything, GetNode, GetNode, LTXVAudioVAEDecode, GetNode, PreviewAny, KSamplerSelect, ManualSigmas, LTXVImgToVideoInplaceKJ, ImageResizeKJv2, Int, VAEDecodeTiled, VHS_VideoCombine, LoadImage, LoadImage, Text, TTResolutionSelector]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/【优化版】LTX-2.3首尾帧_2032479656754028546.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2032479656754028546.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（78 个）：
+- `LTXAVTextEncoderLoader`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CM_FloatToInt`
+- `CheckpointLoaderSimple` ★核心
+- `SetNode`
+- `LTXVAudioVAELoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVConditioning`
+- `SamplerCustomAdvanced` ★核心
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `GetNode`
+- `CFGGuider`
+- `LTXVSeparateAVLatent`
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `GetNode`
+- `TextGenerateLTX2Prompt`
+- `DualCLIPLoader`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `LTXVPreprocess`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SimpleMath+`
+- `SetNode`
+- `SetNode`
+- `PrimitiveFloat`
+- `GetNode`
+- `GetNode`
+- `RH_LLMAPI_Pro_Node`
+- `ImageConcatMulti`
+- `easy showAnything`
+- `GetNode`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `PreviewAny`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVImgToVideoInplaceKJ`
+- `ImageResizeKJv2`
+- `Int`
+- `VAEDecodeTiled` ★核心
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `Text`
+- `TTResolutionSelector`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **58%**（45/78）
+
+**有卡**：`LTXAVTextEncoderLoader`、`CLIPTextEncode`、`CM_FloatToInt`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXVConditioning`、`SamplerCustomAdvanced`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`LTXVSeparateAVLatent`、`LTXVConcatAVLatent`、`TextGenerateLTX2Prompt`、`DualCLIPLoader`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`LTXVPreprocess`、`LTXVImgToVideoInplaceKJ`、`ImageResizeKJv2`、`SimpleMath+`、`RH_LLMAPI_Pro_Node`、`ImageConcatMulti`、`LTXVAudioVAEDecode`、`Int`、`VAEDecodeTiled`、`VHS_VideoCombine`、`LoadImage`、`Text`、`TTResolutionSelector`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

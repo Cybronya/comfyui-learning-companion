@@ -1,0 +1,108 @@
+---
+key: 视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json
+name: wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1962093681132113922.json
+hash: 7e7fdcdd7af1dd09
+coverage: 0.552632
+learned_at: 2026-10-15 22:31:30
+nodes: [WanVideoSetLoRAs, INTConstant, GetNode, AudioEncoderLoader, MelBandRoFormerModelLoader, ToInt, easy int, SoundFlow_GetLength, Display Int (rgthree), SetNode, DWPreprocessor, VHS_LoadVideo, GetNode, VHS_VideoCombine, GetNode, GetNode, WanVideoEncode, AudioEncoderEncode, WanVideoVAELoader, SetNode, LoadImage, WanVideoBlockSwap, WanVideoLoraSelectMulti, WanVideoModelLoader, SetNode, GetNode, GetNode, MelBandRoFormerSampler, SetNode, SimpleMath+, ImageResizeKJv2, GetNode, WanVideoEncode, PreviewImage, WanVideoSetBlockSwap, SetNode, VHS_VideoCombine, INTConstant, SetNode, SetNode, GetNode, GetNode, WanVideoEmptyEmbeds, SetNode, AudioCrop, SetNode, GetNode, SetNode, SetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, GetNode, GetNode, PreviewAny, WanVideoContextOptions, GetNode, WanVideoDecode, WanVideoSampler, GetNode, GetNode, WanVideoAddS2VEmbeds, VHS_VideoCombine, ImageConcanate, WanVideoTorchCompileSettings, GetNode, SimpleMath+, GetImageRangeFromBatch, WanVideoTextEncodeCached, Note, Note, DepthAnythingPreprocessor, ImageFlip+, LoadAudio, PreviewAudio]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1962093681132113922.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（76 个）：
+- `WanVideoSetLoRAs`
+- `INTConstant`
+- `GetNode`
+- `AudioEncoderLoader`
+- `MelBandRoFormerModelLoader`
+- `ToInt`
+- `easy int`
+- `SoundFlow_GetLength`
+- `Display Int (rgthree)`
+- `SetNode`
+- `DWPreprocessor`
+- `VHS_LoadVideo`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `AudioEncoderEncode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `LoadImage`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `MelBandRoFormerSampler` ★核心
+- `SetNode`
+- `SimpleMath+`
+- `ImageResizeKJv2`
+- `GetNode`
+- `WanVideoEncode`
+- `PreviewImage`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `VHS_VideoCombine`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoEmptyEmbeds`
+- `SetNode`
+- `AudioCrop`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PreviewAny`
+- `WanVideoContextOptions`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `WanVideoAddS2VEmbeds`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `WanVideoTorchCompileSettings`
+- `GetNode`
+- `SimpleMath+`
+- `GetImageRangeFromBatch`
+- `WanVideoTextEncodeCached`
+- `Note`
+- `Note`
+- `DepthAnythingPreprocessor`
+- `ImageFlip+`
+- `LoadAudio`
+- `PreviewAudio`
+
+## 知识
+
+覆盖率 **55%**（42/76）
+
+**有卡**：`WanVideoSetLoRAs`、`INTConstant`、`AudioEncoderLoader`、`MelBandRoFormerModelLoader`、`ToInt`、`easy int`、`SoundFlow_GetLength`、`Display Int (rgthree)`、`DWPreprocessor`、`VHS_LoadVideo`、`VHS_VideoCombine`、`WanVideoEncode`、`AudioEncoderEncode`、`WanVideoVAELoader`、`LoadImage`、`WanVideoBlockSwap`、`WanVideoLoraSelectMulti`、`WanVideoModelLoader`、`MelBandRoFormerSampler`、`SimpleMath+`、`ImageResizeKJv2`、`WanVideoSetBlockSwap`、`WanVideoEmptyEmbeds`、`AudioCrop`、`WanVideoContextOptions`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoAddS2VEmbeds`、`ImageConcanate`、`WanVideoTorchCompileSettings`、`GetImageRangeFromBatch`、`WanVideoTextEncodeCached`、`DepthAnythingPreprocessor`、`ImageFlip+`、`LoadAudio`、`PreviewAudio`
+
+**用到的条目**：LoadImage、DepthAnythingPreprocessor、WanVideoSampler、MelBandRoFormerSampler、AudioEncoderLoader、WanVideoDecode、WanVideoVAELoader、AudioEncoderEncode

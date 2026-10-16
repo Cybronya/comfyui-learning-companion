@@ -1,0 +1,164 @@
+---
+key: 视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json
+name: Wan21_OneToAllAnimation_basic_1998642568097357826.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998642568097357826.json
+hash: be4e9e1248d0b835
+coverage: 0.484848
+learned_at: 2026-10-15 22:33:33
+nodes: [SetNode, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, ImageResizeKJv2, GetNode, GetNode, SetNode, SetNode, PreviewImage, VHS_VideoCombine, SetNode, SetNode, PreviewImage, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, WanVideoDecode, WanVideoSampler, VHS_VideoCombine, WanVideoAddOneToAllPoseEmbeds, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoEncode, INTConstant, INTConstant, INTConstant, SetNode, PrimitiveNode, FloatConstant, SetNode, SetNode, SetNode, SetNode, GetNode, WanVideoAddOneToAllExtendEmbeds, GetImageSizeAndCount, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, Reroute, GetImageSizeAndCount, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Note, MarkdownNote, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, PoseDetectionOneToAllAnimation, ImageResizeKJv2, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoScheduler, WanVideoTextEncode, SetNode, WanVideoAddOneToAllReferenceEmbeds, WanVideoEmptyEmbeds, GetNode, GetNode, GetNode, GetImageRangeFromBatch, WanVideoAddOneToAllPoseEmbeds, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoSampler, WanVideoDecode, GetNode, GetImageSizeAndCount, WanVideoAddOneToAllExtendEmbeds, WanVideoEncode, ImageBatchExtendWithOverlap, WanVideoAddOneToAllPoseEmbeds, WanVideoSampler, WanVideoDecode, ImageBatchExtendWithOverlap, GetNode, GetImageSizeAndCount, ImageBatchExtendWithOverlap, WanVideoEncode, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoSampler, WanVideoDecode, ImageBatchExtendWithOverlap, GetNode, GetImageSizeAndCount, WanVideoAddOneToAllExtendEmbeds, WanVideoAddOneToAllPoseEmbeds, WanVideoEncode, ImageBatchExtendWithOverlap, WanVideoSampler, WanVideoDecode, ImageBatchExtendWithOverlap, VHS_LoadVideo, LoadImage, WanVideoLoraSelect, WanVideoBlockSwap, OnnxDetectionModelLoader, WanVideoModelLoader, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan21_OneToAllAnimation_basic_1998642568097357826.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998642568097357826.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（132 个）：
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `PrimitiveNode`
+- `FloatConstant`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `Reroute`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `MarkdownNote`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PoseDetectionOneToAllAnimation`
+- `ImageResizeKJv2`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoScheduler`
+- `WanVideoTextEncode`
+- `SetNode`
+- `WanVideoAddOneToAllReferenceEmbeds`
+- `WanVideoEmptyEmbeds`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `WanVideoEncode`
+- `ImageBatchExtendWithOverlap`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `ImageBatchExtendWithOverlap`
+- `WanVideoEncode`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `WanVideoAddOneToAllExtendEmbeds`
+- `WanVideoAddOneToAllPoseEmbeds`
+- `WanVideoEncode`
+- `ImageBatchExtendWithOverlap`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `ImageBatchExtendWithOverlap`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `OnnxDetectionModelLoader`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **48%**（64/132）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`ImageResizeKJv2`、`VHS_VideoCombine`、`ImageBatchExtendWithOverlap`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoAddOneToAllPoseEmbeds`、`WanVideoEncode`、`INTConstant`、`FloatConstant`、`WanVideoAddOneToAllExtendEmbeds`、`GetImageSizeAndCount`、`PoseDetectionOneToAllAnimation`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoScheduler`、`WanVideoTextEncode`、`WanVideoAddOneToAllReferenceEmbeds`、`WanVideoEmptyEmbeds`、`GetImageRangeFromBatch`、`VHS_LoadVideo`、`LoadImage`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`OnnxDetectionModelLoader`、`WanVideoModelLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoEncode、WanVideoLoraSelect

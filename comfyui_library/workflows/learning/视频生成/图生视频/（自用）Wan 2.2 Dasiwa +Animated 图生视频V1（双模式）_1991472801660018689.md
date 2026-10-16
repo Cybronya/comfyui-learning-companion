@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/（自用）Wan 2.2 Dasiwa +Animated 图生视频V1（双模式）_1991472801660018689.json
+name: （自用）Wan 2.2 Dasiwa +Animated 图生视频V1（双模式）_1991472801660018689.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1991472801660018689.json
+hash: 310ea255979f562d
+coverage: 0.746032
+learned_at: 2026-10-15 22:33:13
+nodes: [Note, Note, ImageScaleBy, Note, ImageResizeKJv2, SaveImage, ColorMatch, ImageScaleBy, easy cleanGpuUsed, CLIPVisionEncode, Note, CLIPVisionLoader, VAELoader, Note, Note, Note, LayerUtility: ImageScaleByAspectRatio V2, CLIPLoader, Note, CLIPTextEncode, PreviewImage, Pick From Batch (mtb), VAEDecode, PainterI2V, PathchSageAttentionKJ, PathchSageAttentionKJ, CLIPTextEncode, UNETLoader, UNETLoader, Note, Note, JWInteger, Seed (rgthree), LayerUtility: PurgeVRAM, UNETLoader, UNETLoader, WanImageToVideo, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, CR Prompt Text, Float, CR Prompt Text, Note, easy showAnything, easy showAnything, AILab_QwenVL, LayerUtility: PurgeVRAM, JWInteger, Note, CR Prompt Text, easy anythingIndexSwitch, ConcatTextOfUtils, LoadImage, RunningHub Deepcleaner, Reroute, TT_img_enc, SaveImage, SaveImage, TT_img_enc_v2, CR Prompt Text, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/（自用）Wan 2.2 Dasiwa +Animated 图生视频V1（双模式）_1991472801660018689.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1991472801660018689.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（63 个）：
+- `Note`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ColorMatch`
+- `ImageScaleBy`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `Note`
+- `Note`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPLoader`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `Pick From Batch (mtb)`
+- `VAEDecode` ★核心
+- `PainterI2V`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Note`
+- `Note`
+- `JWInteger`
+- `Seed (rgthree)`
+- `LayerUtility: PurgeVRAM`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `WanImageToVideo`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `CR Prompt Text`
+- `Float`
+- `CR Prompt Text`
+- `Note`
+- `easy showAnything`
+- `easy showAnything`
+- `AILab_QwenVL`
+- `LayerUtility: PurgeVRAM`
+- `JWInteger`
+- `Note`
+- `CR Prompt Text`
+- `easy anythingIndexSwitch`
+- `ConcatTextOfUtils`
+- `LoadImage`
+- `RunningHub Deepcleaner`
+- `Reroute`
+- `TT_img_enc`
+- `SaveImage`
+- `SaveImage`
+- `TT_img_enc_v2`
+- `CR Prompt Text`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **75%**（47/63）
+
+**有卡**：`ImageScaleBy`、`ImageResizeKJv2`、`SaveImage`、`ColorMatch`、`easy cleanGpuUsed`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPLoader`、`CLIPTextEncode`、`Pick From Batch (mtb)`、`VAEDecode`、`PainterI2V`、`PathchSageAttentionKJ`、`UNETLoader`、`JWInteger`、`Seed (rgthree)`、`LayerUtility: PurgeVRAM`、`WanImageToVideo`、`ModelSamplingSD3`、`KSamplerAdvanced`、`CR Prompt Text`、`Float`、`AILab_QwenVL`、`easy anythingIndexSwitch`、`ConcatTextOfUtils`、`LoadImage`、`RunningHub Deepcleaner`、`TT_img_enc`、`TT_img_enc_v2`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、KSamplerAdvanced

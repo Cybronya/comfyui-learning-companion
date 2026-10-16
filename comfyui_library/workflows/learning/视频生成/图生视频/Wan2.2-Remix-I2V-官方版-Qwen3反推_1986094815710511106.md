@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json
+name: Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1986094815710511106.json
+hash: 2e80329267d583df
+coverage: 0.866667
+learned_at: 2026-10-15 22:32:54
+nodes: [MultiplePathsInput, easy cleanGpuUsed, KSamplerAdvanced, wanBlockSwap, Qwen3_VQA, ModelSamplingSD3, INTConstant, INTConstant, wanBlockSwap, ModelSamplingSD3, CLIPTextEncode, WanImageToVideo, VAEDecode, KSamplerAdvanced, VHS_VideoCombine, SetNode, ImageLoader, CLIPLoader, VAELoader, UNETLoader, UNETLoader, easy showAnything, CLIPTextEncode, Seed (rgthree), Fast Groups Bypasser (rgthree), GetNode, INTConstant, INTConstant, INTConstant, ImageResize+]
+patterns: []
+missing: []
+parameters: {"cfg": 12, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1986094815710511106.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（30 个）：
+- `MultiplePathsInput`
+- `easy cleanGpuUsed`
+- `KSamplerAdvanced` ★核心
+- `wanBlockSwap`
+- `Qwen3_VQA`
+- `ModelSamplingSD3`
+- `INTConstant`
+- `INTConstant`
+- `wanBlockSwap`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `WanImageToVideo`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `SetNode`
+- `ImageLoader`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `ImageResize+`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `12`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **87%**（26/30）
+
+**有卡**：`MultiplePathsInput`、`easy cleanGpuUsed`、`KSamplerAdvanced`、`wanBlockSwap`、`Qwen3_VQA`、`ModelSamplingSD3`、`INTConstant`、`CLIPTextEncode`、`WanImageToVideo`、`VAEDecode`、`VHS_VideoCombine`、`ImageLoader`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`Seed (rgthree)`、`ImageResize+`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、Seed (rgthree)、ImageResize+

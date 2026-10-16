@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/首尾帧_多帧视频生成_SmoothMix2.0_2020439963401195521.json
+name: 首尾帧_多帧视频生成_SmoothMix2.0_2020439963401195521.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2020439963401195521.json
+hash: 9f5af403098605c5
+coverage: 1
+learned_at: 2026-10-15 22:35:06
+nodes: [INTConstant, INTConstant, INTConstant, KSamplerAdvanced, VAEDecode, ImageResizeKJv2, ImageResizeKJv2, WanFirstMiddleLastFrameToVideo, KSamplerAdvanced, SimpleMath+, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, CLIPLoader, CLIPTextEncode, VAELoader, CLIPTextEncode, LoadImage, LoadImage, VHS_VideoCombine, ImageResizeKJv2, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/首尾帧_多帧视频生成_SmoothMix2.0_2020439963401195521.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2020439963401195521.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（29 个）：
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `WanFirstMiddleLastFrameToVideo`
+- `KSamplerAdvanced` ★核心
+- `SimpleMath+`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（29/29）
+
+**有卡**：`INTConstant`、`KSamplerAdvanced`、`VAEDecode`、`ImageResizeKJv2`、`WanFirstMiddleLastFrameToVideo`、`SimpleMath+`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`LoadImage`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

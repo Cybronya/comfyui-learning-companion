@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json
+name: InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998779897466249217.json
+hash: 2ac166421c621c8c
+coverage: 0.6
+learned_at: 2026-10-15 22:33:34
+nodes: [WanVideoDecode, VHS_VideoCombine, MultiTalkWav2VecEmbeds, WanVideoSampler, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, WanVideoImageToVideoMultiTalk, LoadWanVideoT5TextEncoder, MultiTalkModelLoader, WanVideoVAELoader, CLIPVisionLoader, Reroute, LoadAudio, WanVideoLoraSelect, SimpleMath+, SoundFlow_GetLength, Float to Int, AudioSeparation, Reroute, Int, WanVideoModelLoader, LoadImage, AudioCrop, WanVideoBlockSwap, DownloadAndLoadWav2VecModel, WanVideoTextEncode, WanVideoClipVisionEncode, LayerUtility: ImageScaleByAspectRatio V2]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998779897466249217.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（40 个）：
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoSampler` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `WanVideoImageToVideoMultiTalk`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkModelLoader`
+- `WanVideoVAELoader`
+- `CLIPVisionLoader`
+- `Reroute`
+- `LoadAudio`
+- `WanVideoLoraSelect`
+- `SimpleMath+`
+- `SoundFlow_GetLength`
+- `Float to Int`
+- `AudioSeparation`
+- `Reroute`
+- `Int`
+- `WanVideoModelLoader`
+- `LoadImage`
+- `AudioCrop`
+- `WanVideoBlockSwap`
+- `DownloadAndLoadWav2VecModel`
+- `WanVideoTextEncode`
+- `WanVideoClipVisionEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+
+## 知识
+
+覆盖率 **60%**（24/40）
+
+**有卡**：`WanVideoDecode`、`VHS_VideoCombine`、`MultiTalkWav2VecEmbeds`、`WanVideoSampler`、`WanVideoImageToVideoMultiTalk`、`LoadWanVideoT5TextEncoder`、`MultiTalkModelLoader`、`WanVideoVAELoader`、`CLIPVisionLoader`、`LoadAudio`、`WanVideoLoraSelect`、`SimpleMath+`、`SoundFlow_GetLength`、`Float to Int`、`AudioSeparation`、`Int`、`WanVideoModelLoader`、`LoadImage`、`AudioCrop`、`WanVideoBlockSwap`、`DownloadAndLoadWav2VecModel`、`WanVideoTextEncode`、`WanVideoClipVisionEncode`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoLoraSelect

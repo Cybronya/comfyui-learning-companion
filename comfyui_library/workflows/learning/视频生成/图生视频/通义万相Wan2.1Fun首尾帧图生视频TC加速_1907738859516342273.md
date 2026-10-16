@@ -1,0 +1,53 @@
+---
+key: 视频生成/图生视频/通义万相Wan2.1Fun首尾帧图生视频TC加速_1907738859516342273.json
+name: 通义万相Wan2.1Fun首尾帧图生视频TC加速_1907738859516342273.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1907738859516342273.json
+hash: 83bffbafd9b25f31
+coverage: 1
+learned_at: 2026-10-15 22:29:27
+nodes: [LoadImage, LoadImage, LoadWanVideoClipTextEncoder, WanVideoTorchCompileSettings, LoadWanVideoT5TextEncoder, WanVideoTextEncode, Int, WanVideoExperimentalArgs, VHS_VideoCombine, WanVideoDecode, WanVideoBlockSwap, WanVideoSLG, WanVideoTeaCache, WanVideoClipVisionEncode, WanVideoVAELoader, ImageResizeKJ, ImageResizeKJ, WanVideoModelLoader, WanVideoSampler, easy cleanGpuUsed, WanVideoImageToVideoEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/通义万相Wan2.1Fun首尾帧图生视频TC加速_1907738859516342273.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1907738859516342273.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（21 个）：
+- `LoadImage`
+- `LoadImage`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoTorchCompileSettings`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `Int`
+- `WanVideoExperimentalArgs`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoBlockSwap`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoClipVisionEncode`
+- `WanVideoVAELoader`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `WanVideoImageToVideoEncode`
+
+## 知识
+
+覆盖率 **100%**（21/21）
+
+**有卡**：`LoadImage`、`LoadWanVideoClipTextEncoder`、`WanVideoTorchCompileSettings`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`Int`、`WanVideoExperimentalArgs`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoBlockSwap`、`WanVideoSLG`、`WanVideoTeaCache`、`WanVideoClipVisionEncode`、`WanVideoVAELoader`、`ImageResizeKJ`、`WanVideoModelLoader`、`WanVideoSampler`、`easy cleanGpuUsed`、`WanVideoImageToVideoEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

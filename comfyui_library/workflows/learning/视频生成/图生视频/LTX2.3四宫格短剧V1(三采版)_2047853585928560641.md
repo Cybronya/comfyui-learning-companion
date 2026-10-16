@@ -1,0 +1,248 @@
+---
+key: 视频生成/图生视频/LTX2.3四宫格短剧V1(三采版)_2047853585928560641.json
+name: LTX2.3四宫格短剧V1(三采版)_2047853585928560641.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2047853585928560641.json
+hash: a47ed00bd8c29af3
+coverage: 0.69378
+learned_at: 2026-10-15 22:37:07
+nodes: [GetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, LTXVEnhanceAVideoKJ, CFGGuider, KSamplerSelect, BasicScheduler, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVEnhanceAVideoKJ, LTXVLatentUpsampler, LTXVCropGuides, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, GetNode, LTXVLatentUpsampler, LTXVCropGuides, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVEnhanceAVideoKJ, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, LTXVAudioVAEDecode, GetNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, VAEDecodeTiled, GetNode, GetNode, GetNode, easy imageSplitGrid, INTConstant, INTConstant, SetNode, SetNode, ImageFromBatch, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, ImageFromBatch, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, ImageFromBatch, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, ImageFromBatch, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, easy imageInsetCrop, SetNode, SetNode, SetNode, SetNode, PreviewImage, SetNode, VHS_VideoCombine, GetNode, GetNode, RegexExtract, RegexExtract, RegexExtract, INTConstant, SetNode, INTConstant, SetNode, INTConstant, SetNode, easy convertAnything, easy convertAnything, easy convertAnything, SetNode, easy convertAnything, RegexExtract, GetNode, CLIPTextEncode, CLIPTextEncode, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, LTXVConditioning, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, GetNode, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, GetNode, GetNode, easy ifElse, easy ifElse, easy ifElse, EmptyImage, easy mathString, easy mathString, easy mathString, easy mathString, easy mathString, easy indexAnything, easy positive, easy indexAnything, easy positive, easy indexAnything, easy positive, easy indexAnything, easy positive, easy promptConcat, easy promptConcat, easy promptConcat, easy promptConcat, easy positive, easy promptConcat, easy positive, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy promptLine, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, easy positive, easy indexAnything, PrimitiveStringMultiline, easy promptList, SaveImage, easy showAnything, Text Concatenate, Text Concatenate, Text Concatenate, easy promptConcat, Text Concatenate, ShowText|pysssss, Note, easy ifElse, easy ifElse, easy showAnything, PrimitiveInt, easy ifElse, Comfly_api_set, easy promptReplace, easy positive, SetNode, SetNode, Comfly_gpt_image_2_official, GetNode, easy positive, LongTextToList, easy positive, SetNode, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy positive, easy positive, easy positive, easy positive, easy positive, PrimitiveFloat, LongTextToList, SetNode, SetNode, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, SetNode, VAELoaderKJ, DualCLIPLoader, VAELoaderKJ, LatentUpscaleModelLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveInt, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, easy ifElse, INTConstant, GetNode, LTXVAddGuideMulti, LTXVAddGuideMulti, LTXVAddGuideMulti, GetNode, GetNode, GetNode, PrimitiveBoolean, LoadImage, Fast Groups Bypasser (rgthree)]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3四宫格短剧V1(三采版)_2047853585928560641.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2047853585928560641.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（209 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `LTXVEnhanceAVideoKJ`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVEnhanceAVideoKJ`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVCropGuides`
+- `RandomNoise`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVEnhanceAVideoKJ`
+- `RandomNoise`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecodeTiled` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy imageSplitGrid`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `ImageFromBatch`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ImageFromBatch`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ImageFromBatch`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ImageFromBatch`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `easy imageInsetCrop`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `RegexExtract`
+- `RegexExtract`
+- `RegexExtract`
+- `INTConstant`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `easy convertAnything`
+- `easy convertAnything`
+- `easy convertAnything`
+- `SetNode`
+- `easy convertAnything`
+- `RegexExtract`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `LTXVConditioning`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `GetNode`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `EmptyImage`
+- `easy mathString`
+- `easy mathString`
+- `easy mathString`
+- `easy mathString`
+- `easy mathString`
+- `easy indexAnything`
+- `easy positive`
+- `easy indexAnything`
+- `easy positive`
+- `easy indexAnything`
+- `easy positive`
+- `easy indexAnything`
+- `easy positive`
+- `easy promptConcat`
+- `easy promptConcat`
+- `easy promptConcat`
+- `easy promptConcat`
+- `easy positive`
+- `easy promptConcat`
+- `easy positive`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy promptLine`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy positive`
+- `easy indexAnything`
+- `PrimitiveStringMultiline`
+- `easy promptList`
+- `SaveImage`
+- `easy showAnything`
+- `Text Concatenate`
+- `Text Concatenate`
+- `Text Concatenate`
+- `easy promptConcat`
+- `Text Concatenate`
+- `ShowText|pysssss`
+- `Note`
+- `easy ifElse`
+- `easy ifElse`
+- `easy showAnything`
+- `PrimitiveInt`
+- `easy ifElse`
+- `Comfly_api_set`
+- `easy promptReplace`
+- `easy positive`
+- `SetNode`
+- `SetNode`
+- `Comfly_gpt_image_2_official`
+- `GetNode`
+- `easy positive`
+- `LongTextToList`
+- `easy positive`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `easy positive`
+- `easy positive`
+- `easy positive`
+- `easy positive`
+- `easy positive`
+- `PrimitiveFloat`
+- `LongTextToList`
+- `SetNode`
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `LTXVChunkFeedForward`
+- `SetNode`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `LatentUpscaleModelLoader`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy ifElse`
+- `INTConstant`
+- `GetNode`
+- `LTXVAddGuideMulti`
+- `LTXVAddGuideMulti`
+- `LTXVAddGuideMulti`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PrimitiveBoolean`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **69%**（145/209）
+
+**有卡**：`LTXVConcatAVLatent`、`LTXVEnhanceAVideoKJ`、`CFGGuider`、`KSamplerSelect`、`BasicScheduler`、`RandomNoise`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`ManualSigmas`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`easy imageSplitGrid`、`INTConstant`、`ImageFromBatch`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`easy imageInsetCrop`、`VHS_VideoCombine`、`RegexExtract`、`easy convertAnything`、`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`ComfyMathExpression`、`EmptyImage`、`easy mathString`、`easy indexAnything`、`easy positive`、`easy promptConcat`、`easy promptLine`、`easy promptList`、`SaveImage`、`Text Concatenate`、`Comfly_api_set`、`easy promptReplace`、`Comfly_gpt_image_2_official`、`LongTextToList`、`LoadImage`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`LTXVAddGuideMulti`、`PrimitiveBoolean`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

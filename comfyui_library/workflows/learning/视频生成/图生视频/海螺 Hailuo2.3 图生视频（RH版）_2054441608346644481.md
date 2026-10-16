@@ -1,0 +1,35 @@
+---
+key: 视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json
+name: 海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2054441608346644481.json
+hash: 71ba42b83c55c756
+coverage: 1
+learned_at: 2026-10-15 22:37:47
+nodes: [SaveVideo, RH_Hailuo_Image2Video, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2054441608346644481.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（3 个）：
+- `SaveVideo`
+- `RH_Hailuo_Image2Video`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（3/3）
+
+**有卡**：`SaveVideo`、`RH_Hailuo_Image2Video`、`LoadImage`
+
+**用到的条目**：LoadImage、SaveVideo、RH_Hailuo_Image2Video、sd15-t2i-basic、sd15-t2i-lora、Image2Video、SaveImage、CS_Preview_Any

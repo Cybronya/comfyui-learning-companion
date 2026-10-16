@@ -1,0 +1,122 @@
+---
+key: 视频生成/图生视频/4号特工：数字人唱歌+新闻播报+爆款正反打+LTX2.3_2078432143432314882.json
+name: 4号特工：数字人唱歌+新闻播报+爆款正反打+LTX2.3_2078432143432314882.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2078432143432314882.json
+hash: fdb6d7c305da94c8
+coverage: 0.655556
+learned_at: 2026-10-15 22:41:52
+nodes: [UNETLoader, LTXVChunkFeedForward, BasicScheduler, PathchSageAttentionKJ, LatentUpscaleModelLoader, SetNode, VAELoader, VAELoader, SetNode, SetNode, CLIPTextEncode, SetNode, SetLatentNoiseMask, GetNode, SetNode, VAEDecode, LayerUtility: PurgeVRAM V2, GetNode, GetNode, GetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, GetNode, LTXVPreprocess, GetNode, LTXVImgToVideoInplaceKJ, Int, Float, GetNode, SetNode, SetNode, SolidMask, LTXVConcatAVLatent, JoinStrings, GetNode, LTXVAudioVAEEncode, GetNode, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, ModelSamplingSD3, LTX2MemoryEfficientSageAttentionPatch, SetNode, VAELoader, SetNode, DualCLIPLoader, EmptyLTXVLatentVideo, LTX2AttentionTunerPatch, Int, GetNode, CLIPTextEncode, VHS_VideoCombine, LTX2_NAG, LTXVConditioning, PreviewAudio, VHS_LoadAudioUpload, SetNode, SimpleMath+, SetNode, RandomNoise, PreviewAudio, MelBandRoFormerModelLoader, MelBandRoFormerSampler, TrimAudioDuration, ShowAnything|Mie, Int, Compare, ResizeImageMaskNode, GetNode, PreviewAudio, SetNode, LTX2SamplingPreviewOverride, SetNode, SetNode, SetNode, LazySwitchKJ, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, easy showAnything, PainterAudioLength, Text, Text, TrimAudioDuration, Int, LoadAudio, LoadImage, PrimitiveFloat]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/4号特工：数字人唱歌+新闻播报+爆款正反打+LTX2.3_2078432143432314882.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2078432143432314882.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（90 个）：
+- `UNETLoader` ★核心
+- `LTXVChunkFeedForward`
+- `BasicScheduler`
+- `PathchSageAttentionKJ`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `VAELoader`
+- `VAELoader`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetLatentNoiseMask`
+- `GetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SetNode`
+- `GetNode`
+- `LTXVPreprocess`
+- `GetNode`
+- `LTXVImgToVideoInplaceKJ`
+- `Int`
+- `Float`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SolidMask`
+- `LTXVConcatAVLatent`
+- `JoinStrings`
+- `GetNode`
+- `LTXVAudioVAEEncode` ★核心
+- `GetNode`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `ModelSamplingSD3`
+- `LTX2MemoryEfficientSageAttentionPatch`
+- `SetNode`
+- `VAELoader`
+- `SetNode`
+- `DualCLIPLoader`
+- `EmptyLTXVLatentVideo`
+- `LTX2AttentionTunerPatch`
+- `Int`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `LTX2_NAG`
+- `LTXVConditioning`
+- `PreviewAudio`
+- `VHS_LoadAudioUpload`
+- `SetNode`
+- `SimpleMath+`
+- `SetNode`
+- `RandomNoise`
+- `PreviewAudio`
+- `MelBandRoFormerModelLoader`
+- `MelBandRoFormerSampler` ★核心
+- `TrimAudioDuration`
+- `ShowAnything|Mie`
+- `Int`
+- `Compare`
+- `ResizeImageMaskNode`
+- `GetNode`
+- `PreviewAudio`
+- `SetNode`
+- `LTX2SamplingPreviewOverride`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LazySwitchKJ`
+- `easy showAnything`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy showAnything`
+- `PainterAudioLength`
+- `Text`
+- `Text`
+- `TrimAudioDuration`
+- `Int`
+- `LoadAudio`
+- `LoadImage`
+- `PrimitiveFloat`
+
+## 知识
+
+覆盖率 **66%**（59/90）
+
+**有卡**：`UNETLoader`、`LTXVChunkFeedForward`、`BasicScheduler`、`PathchSageAttentionKJ`、`LatentUpscaleModelLoader`、`VAELoader`、`CLIPTextEncode`、`SetLatentNoiseMask`、`VAEDecode`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVPreprocess`、`LTXVImgToVideoInplaceKJ`、`Int`、`Float`、`SolidMask`、`LTXVConcatAVLatent`、`JoinStrings`、`LTXVAudioVAEEncode`、`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`ModelSamplingSD3`、`LTX2MemoryEfficientSageAttentionPatch`、`DualCLIPLoader`、`EmptyLTXVLatentVideo`、`LTX2AttentionTunerPatch`、`VHS_VideoCombine`、`LTX2_NAG`、`LTXVConditioning`、`PreviewAudio`、`VHS_LoadAudioUpload`、`SimpleMath+`、`RandomNoise`、`MelBandRoFormerModelLoader`、`MelBandRoFormerSampler`、`TrimAudioDuration`、`ShowAnything|Mie`、`Compare`、`ResizeImageMaskNode`、`LTX2SamplingPreviewOverride`、`LazySwitchKJ`、`PainterAudioLength`、`Text`、`LoadAudio`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

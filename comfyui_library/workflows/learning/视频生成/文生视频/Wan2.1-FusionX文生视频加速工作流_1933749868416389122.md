@@ -1,0 +1,50 @@
+---
+key: 视频生成/文生视频/Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json
+name: Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1933749868416389122.json
+hash: 1567ed3c3f5156f6
+coverage: 1
+learned_at: 2026-10-15 22:43:27
+nodes: [WanVideoEnhanceAVideo, WanVideoExperimentalArgs, WanVideoSampler, WanVideoDecode, Primitive integer [Crystools], WanVideoTextEncode, WanVideoEmptyEmbeds, Primitive integer [Crystools], JWInteger, JWInteger, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, Text Multiline, VHS_VideoCombine, WanVideoSLG, WanVideoTeaCache, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan2.1-FusionX文生视频加速工作流_1933749868416389122.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1933749868416389122.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Other
+
+**节点**（18 个）：
+- `WanVideoEnhanceAVideo`
+- `WanVideoExperimentalArgs`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `Primitive integer [Crystools]`
+- `WanVideoTextEncode`
+- `WanVideoEmptyEmbeds`
+- `Primitive integer [Crystools]`
+- `JWInteger`
+- `JWInteger`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `Text Multiline`
+- `VHS_VideoCombine`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`WanVideoEnhanceAVideo`、`WanVideoExperimentalArgs`、`WanVideoSampler`、`WanVideoDecode`、`Primitive integer [Crystools]`、`WanVideoTextEncode`、`WanVideoEmptyEmbeds`、`JWInteger`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`Text Multiline`、`VHS_VideoCombine`、`WanVideoSLG`、`WanVideoTeaCache`、`WanVideoModelLoader`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、VHS_VideoCombine、WanVideoBlockSwap、WanVideoModelLoader

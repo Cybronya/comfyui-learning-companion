@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json
+name: Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2002155248145842178.json
+hash: cc18834cc7213c67
+coverage: 0.9375
+learned_at: 2026-10-15 22:33:47
+nodes: [ImageResizeKJv2, easy cleanGpuUsed, WanVideoClipVisionEncode, GetImageSizeAndCount, easy cleanGpuUsed, VHS_VideoInfoLoaded, WanVideoDecode, WanVideoSampler, VHS_VideoCombine, easy showAnything, WanVideoBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoAnimateEmbeds, VHS_VideoCombine, DrawViTPose, VHS_VideoCombine, OnnxDetectionModelLoader, PoseAndFaceDetection, ImageResizeKJv2, GetImageSizeAndCount, Sam2Segmentation, DownloadAndLoadSAM2Model, GrowMask, BlockifyMask, DrawMaskOnImage, VHS_VideoCombine, CR Prompt Text, easy cleanGpuUsed, easy cleanGpuUsed, PreviewImage, INTConstant, INTConstant, PreviewAny, WanVideoTorchCompileSettings, LoadImage, WanVideoVAELoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoLoraSelect, CLIPVisionLoader, VHS_LoadVideo, easy cleanGpuUsed, WanVideoTextEncodeCached, PointsEditor]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2002155248145842178.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（48 个）：
+- `ImageResizeKJv2`
+- `easy cleanGpuUsed`
+- `WanVideoClipVisionEncode`
+- `GetImageSizeAndCount`
+- `easy cleanGpuUsed`
+- `VHS_VideoInfoLoaded`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `WanVideoBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoAnimateEmbeds`
+- `VHS_VideoCombine`
+- `DrawViTPose`
+- `VHS_VideoCombine`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `ImageResizeKJv2`
+- `GetImageSizeAndCount`
+- `Sam2Segmentation`
+- `DownloadAndLoadSAM2Model`
+- `GrowMask`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `VHS_VideoCombine`
+- `CR Prompt Text`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `PreviewImage`
+- `INTConstant`
+- `INTConstant`
+- `PreviewAny`
+- `WanVideoTorchCompileSettings`
+- `LoadImage`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `CLIPVisionLoader`
+- `VHS_LoadVideo`
+- `easy cleanGpuUsed`
+- `WanVideoTextEncodeCached`
+- `PointsEditor`
+
+## 知识
+
+覆盖率 **94%**（45/48）
+
+**有卡**：`ImageResizeKJv2`、`easy cleanGpuUsed`、`WanVideoClipVisionEncode`、`GetImageSizeAndCount`、`VHS_VideoInfoLoaded`、`WanVideoDecode`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoAnimateEmbeds`、`DrawViTPose`、`OnnxDetectionModelLoader`、`PoseAndFaceDetection`、`Sam2Segmentation`、`DownloadAndLoadSAM2Model`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`CR Prompt Text`、`INTConstant`、`WanVideoTorchCompileSettings`、`LoadImage`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`CLIPVisionLoader`、`VHS_LoadVideo`、`WanVideoTextEncodeCached`、`PointsEditor`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs

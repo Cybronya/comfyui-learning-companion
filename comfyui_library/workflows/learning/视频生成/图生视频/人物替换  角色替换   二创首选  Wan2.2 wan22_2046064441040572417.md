@@ -1,0 +1,108 @@
+---
+key: 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046064441040572417.json
+name: 人物替换  角色替换   二创首选  Wan2.2 wan22_2046064441040572417.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2046064441040572417.json
+hash: 795ae62be50cc1ad
+coverage: 0.578947
+learned_at: 2026-10-15 22:36:54
+nodes: [WanVideoModelLoader, OnnxDetectionModelLoader, GetNode, GetNode, VHS_VideoCombine, WanVideoVAELoader, INTConstant, INTConstant, PoseAndFaceDetection, DrawViTPose, SetNode, easy cleanGpuUsed, SeCModelLoader, VHS_VideoCombine, GetNode, GetNode, GetNode, SetNode, SetNode, INTConstant, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoTextEncodeCached, CR Text, WanVideoClipVisionEncode, easy cleanGpuUsed, WanVideoAnimateEmbeds, WanVideoSampler, WanVideoDecode, GetImageSizeAndCount, ImageConcanate, easy cleanGpuUsed, SetNode, CLIPVisionLoader, GetNode, VHS_VideoCombine, VHS_VideoCombine, SetNode, WanVideoSetBlockSwap, WanVideoBlockSwap, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, LoadImage, SetNode, ImageResizeKJv2, VHS_VideoInfo, VHS_LoadVideo, Note, easy framesEditor, BlockifyMask, SetNode, GetNode, DrawMaskOnImage, easy cleanGpuUsed, SetNode, VHS_VideoCombine, WanVideoSetLoRAs, WanVideoLoraSelectMulti, GetNode, MaskToImage, InvertMask, GrowMask, SetNode, GetImageSizeAndCount, SeCVideoSegmentation, LayerUtility: ImageBlend]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/人物替换  角色替换   二创首选  Wan2.2 wan22_2046064441040572417.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2046064441040572417.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（76 个）：
+- `WanVideoModelLoader`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanVideoVAELoader`
+- `INTConstant`
+- `INTConstant`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `SeCModelLoader`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `CR Text`
+- `WanVideoClipVisionEncode`
+- `easy cleanGpuUsed`
+- `WanVideoAnimateEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `ImageResizeKJv2`
+- `VHS_VideoInfo`
+- `VHS_LoadVideo`
+- `Note`
+- `easy framesEditor`
+- `BlockifyMask`
+- `SetNode`
+- `GetNode`
+- `DrawMaskOnImage`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `VHS_VideoCombine`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelectMulti`
+- `GetNode`
+- `MaskToImage`
+- `InvertMask`
+- `GrowMask`
+- `SetNode`
+- `GetImageSizeAndCount`
+- `SeCVideoSegmentation`
+- `LayerUtility: ImageBlend`
+
+## 知识
+
+覆盖率 **58%**（44/76）
+
+**有卡**：`WanVideoModelLoader`、`OnnxDetectionModelLoader`、`VHS_VideoCombine`、`WanVideoVAELoader`、`INTConstant`、`PoseAndFaceDetection`、`DrawViTPose`、`easy cleanGpuUsed`、`SeCModelLoader`、`WanVideoTextEncodeCached`、`CR Text`、`WanVideoClipVisionEncode`、`WanVideoAnimateEmbeds`、`WanVideoSampler`、`WanVideoDecode`、`GetImageSizeAndCount`、`ImageConcanate`、`CLIPVisionLoader`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`LoadImage`、`ImageResizeKJv2`、`VHS_VideoInfo`、`VHS_LoadVideo`、`easy framesEditor`、`BlockifyMask`、`DrawMaskOnImage`、`WanVideoSetLoRAs`、`WanVideoLoraSelectMulti`、`MaskToImage`、`InvertMask`、`GrowMask`、`SeCVideoSegmentation`、`LayerUtility: ImageBlend`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

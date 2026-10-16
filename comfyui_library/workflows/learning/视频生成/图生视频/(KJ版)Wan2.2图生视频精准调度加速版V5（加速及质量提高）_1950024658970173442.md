@@ -1,0 +1,70 @@
+---
+key: 视频生成/图生视频/(KJ版)Wan2.2图生视频精准调度加速版V5（加速及质量提高）_1950024658970173442.json
+name: (KJ版)Wan2.2图生视频精准调度加速版V5（加速及质量提高）_1950024658970173442.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950024658970173442.json
+hash: b3dd5d458eb4a7ac
+coverage: 0.894737
+learned_at: 2026-10-15 22:30:51
+nodes: [Note, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoDecode, WanVideoSetLoRAs, GetImageSizeAndCount, CreateCFGScheduleFloatList, WanVideoBlockSwap, LayerUtility: ImageScaleByAspectRatio V2, WanVideoSampler, CR Prompt Text, PrimitiveNode, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoSampler, Note, JWInteger, INTConstant, VHS_VideoCombine, WanVideoBlockSwap, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoTextEncode, LoadImage, WanVideoModelLoader, WanVideoModelLoader, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoTorchCompileSettings, WanVideoLoraSelect, INTConstant, WanVideoScheduler, WanVideoSigmaToStep, WanVideoScheduler, Float, Note, JWInteger]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(KJ版)Wan2.2图生视频精准调度加速版V5（加速及质量提高）_1950024658970173442.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950024658970173442.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（38 个）：
+- `Note`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `GetImageSizeAndCount`
+- `CreateCFGScheduleFloatList`
+- `WanVideoBlockSwap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoSampler` ★核心
+- `CR Prompt Text`
+- `PrimitiveNode`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSampler` ★核心
+- `Note`
+- `JWInteger`
+- `INTConstant`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `LoadImage`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `INTConstant`
+- `WanVideoScheduler`
+- `WanVideoSigmaToStep`
+- `WanVideoScheduler`
+- `Float`
+- `Note`
+- `JWInteger`
+
+## 知识
+
+覆盖率 **89%**（34/38）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`GetImageSizeAndCount`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoSampler`、`CR Prompt Text`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`JWInteger`、`INTConstant`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`LoadImage`、`WanVideoModelLoader`、`WanVideoImageToVideoEncode`、`WanVideoTorchCompileSettings`、`WanVideoScheduler`、`WanVideoSigmaToStep`、`Float`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/【AI播草机】WAN2.2首帧视频生成_2031004369734344706.json
+name: 【AI播草机】WAN2.2首帧视频生成_2031004369734344706.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2031004369734344706.json
+hash: db6049bc2b58ab80
+coverage: 0.948718
+learned_at: 2026-10-15 22:35:28
+nodes: [KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, KSamplerAdvanced, VAELoader, CLIPLoader, WanImageToVideo, ToInt, INTConstant, BasicMath, BasicMath, ToFloat, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, VHS_VideoCombine, Reroute, GetImageRangeFromBatch, SaveImage, StringConcatenate, LoadImage, Note, FloatConstant, INTConstant, INTConstant, INTConstant, StringConcatenate]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/【AI播草机】WAN2.2首帧视频生成_2031004369734344706.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2031004369734344706.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（39 个）：
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `WanImageToVideo`
+- `ToInt`
+- `INTConstant`
+- `BasicMath`
+- `BasicMath`
+- `ToFloat`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `VHS_VideoCombine`
+- `Reroute`
+- `GetImageRangeFromBatch`
+- `SaveImage`
+- `StringConcatenate`
+- `LoadImage`
+- `Note`
+- `FloatConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `StringConcatenate`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **95%**（37/39）
+
+**有卡**：`KSamplerAdvanced`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`WanImageToVideo`、`ToInt`、`INTConstant`、`BasicMath`、`ToFloat`、`UNETLoader`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`GetImageRangeFromBatch`、`SaveImage`、`StringConcatenate`、`LoadImage`、`FloatConstant`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

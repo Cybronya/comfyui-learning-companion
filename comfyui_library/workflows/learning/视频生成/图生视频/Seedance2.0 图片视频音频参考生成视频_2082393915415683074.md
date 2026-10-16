@@ -1,0 +1,92 @@
+---
+key: 视频生成/图生视频/Seedance2.0 图片视频音频参考生成视频_2082393915415683074.json
+name: Seedance2.0 图片视频音频参考生成视频_2082393915415683074.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2082393915415683074.json
+hash: 73750502b831a2d5
+coverage: 0.283333
+learned_at: 2026-10-15 22:42:31
+nodes: [SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadImage, SetNode, LoadVideo, SetNode, LoadVideo, SetNode, LoadVideo, Fast Groups Bypasser (rgthree), SetNode, LoadAudio, SetNode, LoadAudio, SetNode, LoadAudio, Note, Note, PrimitiveNode, JjkText, PrimitiveNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Note, Note, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), PrimitiveNode, RH_RhartVideoSparkvideo20MultimodalVideo, GetNode, SaveVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance2.0 图片视频音频参考生成视频_2082393915415683074.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2082393915415683074.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（60 个）：
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadVideo`
+- `SetNode`
+- `LoadVideo`
+- `SetNode`
+- `LoadVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `SetNode`
+- `LoadAudio`
+- `SetNode`
+- `LoadAudio`
+- `SetNode`
+- `LoadAudio`
+- `Note`
+- `Note`
+- `PrimitiveNode`
+- `JjkText`
+- `PrimitiveNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `Note`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `PrimitiveNode`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `GetNode`
+- `SaveVideo`
+
+## 知识
+
+覆盖率 **28%**（17/60）
+
+**有卡**：`LoadImage`、`LoadVideo`、`LoadAudio`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`SaveVideo`
+
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、node

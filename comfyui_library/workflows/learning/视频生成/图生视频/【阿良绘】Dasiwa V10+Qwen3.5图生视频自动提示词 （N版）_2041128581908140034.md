@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/【阿良绘】Dasiwa V10+Qwen3.5图生视频自动提示词 （N版）_2041128581908140034.json
+name: 【阿良绘】Dasiwa V10+Qwen3.5图生视频自动提示词 （N版）_2041128581908140034.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2041128581908140034.json
+hash: 4ccbc3eac1494924
+coverage: 0.789474
+learned_at: 2026-10-15 22:36:18
+nodes: [llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_instruct_adv, ShellAgentPluginOutputText, easy showAnything, CR Prompt Text, easy cleanGpuUsed, easy anythingIndexSwitch, JWInteger, easy showAnything, Note, Note, Note, RunningHub Deepcleaner, DuckHideNode, SaveImage, TT_img_enc, TT_img_enc_v2, SaveImage, LayerUtility: PurgeVRAM, easy cleanGpuUsed, Float, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1, KSamplerAdvanced, KSamplerAdvanced, Note, Reroute, ImageFromBatch+, ImageScaleBy, VHS_VideoCombine, Note, CLIPVisionEncode, LayerUtility: ImageScaleByAspectRatio V2, Note, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, SaveImage, CR Prompt Text, CLIPTextEncode, CLIPTextEncode, MathExpression|pysssss, Seed (rgthree), JWInteger, Note, CLIPVisionLoader, Anything Everywhere, VAELoader, Anything Everywhere, CLIPLoader, ImageResizeKJv2, VAEDecode, LoadImage, CR Text]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/【阿良绘】Dasiwa V10+Qwen3.5图生视频自动提示词 （N版）_2041128581908140034.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2041128581908140034.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（57 个）：
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_instruct_adv`
+- `ShellAgentPluginOutputText`
+- `easy showAnything`
+- `CR Prompt Text`
+- `easy cleanGpuUsed`
+- `easy anythingIndexSwitch`
+- `JWInteger`
+- `easy showAnything`
+- `Note`
+- `Note`
+- `Note`
+- `RunningHub Deepcleaner`
+- `DuckHideNode`
+- `SaveImage`
+- `TT_img_enc`
+- `TT_img_enc_v2`
+- `SaveImage`
+- `LayerUtility: PurgeVRAM`
+- `easy cleanGpuUsed`
+- `Float`
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Note`
+- `Reroute`
+- `ImageFromBatch+`
+- `ImageScaleBy`
+- `VHS_VideoCombine`
+- `Note`
+- `CLIPVisionEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `SaveImage`
+- `CR Prompt Text`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `MathExpression|pysssss`
+- `Seed (rgthree)`
+- `JWInteger`
+- `Note`
+- `CLIPVisionLoader`
+- `Anything Everywhere`
+- `VAELoader`
+- `Anything Everywhere`
+- `CLIPLoader`
+- `ImageResizeKJv2`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `CR Text`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **79%**（45/57）
+
+**有卡**：`llama_cpp_model_loader`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`ShellAgentPluginOutputText`、`CR Prompt Text`、`easy cleanGpuUsed`、`easy anythingIndexSwitch`、`JWInteger`、`RunningHub Deepcleaner`、`DuckHideNode`、`SaveImage`、`TT_img_enc`、`TT_img_enc_v2`、`LayerUtility: PurgeVRAM`、`Float`、`PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`、`KSamplerAdvanced`、`ImageFromBatch+`、`ImageScaleBy`、`VHS_VideoCombine`、`CLIPVisionEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`MathExpression|pysssss`、`Seed (rgthree)`、`CLIPVisionLoader`、`VAELoader`、`CLIPLoader`、`ImageResizeKJv2`、`VAEDecode`、`LoadImage`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、SaveImage、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

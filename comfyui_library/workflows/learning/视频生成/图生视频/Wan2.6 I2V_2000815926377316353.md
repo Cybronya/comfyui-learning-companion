@@ -1,0 +1,37 @@
+---
+key: 视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json
+name: Wan2.6 I2V_2000815926377316353.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2000815926377316353.json
+hash: 3ddd8f5882bad392
+coverage: 0.8
+learned_at: 2026-10-15 22:33:43
+nodes: [SaveVideo, easy showAnything, LoadImage, RH_Wan26_I2V, LoadAudio]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2000815926377316353.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（5 个）：
+- `SaveVideo`
+- `easy showAnything`
+- `LoadImage`
+- `RH_Wan26_I2V`
+- `LoadAudio`
+
+## 知识
+
+覆盖率 **80%**（4/5）
+
+**有卡**：`SaveVideo`、`LoadImage`、`RH_Wan26_I2V`、`LoadAudio`
+
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、RH_Wan26_I2V、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any

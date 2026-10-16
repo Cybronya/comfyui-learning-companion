@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/14BWAN2.2--4-8步极速图生视频_1950459871272550401.json
+name: 14BWAN2.2--4-8步极速图生视频_1950459871272550401.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950459871272550401.json
+hash: d9c76ec4b2733ab8
+coverage: 0.909091
+learned_at: 2026-10-15 22:30:55
+nodes: [DF_Integer, DF_Integer, CLIPTextEncode, CLIPTextEncode, CLIPLoader, CreateVideo, LayerUtility: ImageScaleByAspectRatio V2, UnetLoaderGGUF, UnetLoaderGGUF, PathchSageAttentionKJ, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, SaveVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, CreateVideo, WanImageToVideo, VAELoader, MathExpression|pysssss, MathExpression|pysssss, DF_Integer, MathExpression|pysssss, Reroute, ImageResizeKJv2, PreviewImage, VAEDecode, SaveVideo, JjkText, LoadImage, ImageStitch]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/14BWAN2.2--4-8步极速图生视频_1950459871272550401.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950459871272550401.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（33 个）：
+- `DF_Integer`
+- `DF_Integer`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CreateVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SaveVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CreateVideo`
+- `WanImageToVideo`
+- `VAELoader`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `DF_Integer`
+- `MathExpression|pysssss`
+- `Reroute`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `SaveVideo`
+- `JjkText`
+- `LoadImage`
+- `ImageStitch`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **91%**（30/33）
+
+**有卡**：`DF_Integer`、`CLIPTextEncode`、`CLIPLoader`、`CreateVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`UnetLoaderGGUF`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`SaveVideo`、`LoraLoaderModelOnly`、`WanImageToVideo`、`VAELoader`、`MathExpression|pysssss`、`ImageResizeKJv2`、`VAEDecode`、`LoadImage`、`ImageStitch`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、KSamplerAdvanced

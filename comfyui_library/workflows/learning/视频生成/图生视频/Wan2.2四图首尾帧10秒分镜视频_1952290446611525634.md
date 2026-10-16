@@ -1,0 +1,96 @@
+---
+key: 视频生成/图生视频/Wan2.2四图首尾帧10秒分镜视频_1952290446611525634.json
+name: Wan2.2四图首尾帧10秒分镜视频_1952290446611525634.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952290446611525634.json
+hash: 9e2210f0f5209783
+coverage: 0.944444
+learned_at: 2026-10-15 22:31:01
+nodes: [DownloadAndLoadGIMMVFIModel, LoadImage, KSamplerAdvanced, PathchSageAttentionKJ, WanFirstLastFrameToVideo, GIMMVFI_interpolate, DownloadAndLoadGIMMVFIModel, KSamplerAdvanced, KSamplerAdvanced, GIMMVFI_interpolate, GetImageSizeAndCount, CreateVideo, KSamplerAdvanced, WanFirstLastFrameToVideo, SaveVideo, VAEDecode, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, LoadImage, PathchSageAttentionKJ, CLIPVisionEncode, CLIPVisionEncode, ImageBatchMultiple+, MarkdownNote, CR Text, CR Text, easy cleanGpuUsed, easy cleanGpuUsed, CLIPVisionLoader, PrimitiveInt, PrimitiveInt, easy cleanGpuUsed, easy cleanGpuUsed, CLIPTextEncode, CLIPLoader, CLIPVisionEncode, CLIPTextEncode, VAEDecode, VAELoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, CLIPVisionEncode, UNETLoader, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 4, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2四图首尾帧10秒分镜视频_1952290446611525634.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952290446611525634.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（54 个）：
+- `DownloadAndLoadGIMMVFIModel`
+- `LoadImage`
+- `KSamplerAdvanced` ★核心
+- `PathchSageAttentionKJ`
+- `WanFirstLastFrameToVideo`
+- `GIMMVFI_interpolate`
+- `DownloadAndLoadGIMMVFIModel`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GIMMVFI_interpolate`
+- `GetImageSizeAndCount`
+- `CreateVideo`
+- `KSamplerAdvanced` ★核心
+- `WanFirstLastFrameToVideo`
+- `SaveVideo`
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `PathchSageAttentionKJ`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `ImageBatchMultiple+`
+- `MarkdownNote`
+- `CR Text`
+- `CR Text`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `CLIPVisionLoader`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `VAELoader`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `UNETLoader` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `4`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **94%**（51/54）
+
+**有卡**：`DownloadAndLoadGIMMVFIModel`、`LoadImage`、`KSamplerAdvanced`、`PathchSageAttentionKJ`、`WanFirstLastFrameToVideo`、`GIMMVFI_interpolate`、`GetImageSizeAndCount`、`CreateVideo`、`SaveVideo`、`VAEDecode`、`ModelSamplingSD3`、`CLIPTextEncode`、`CLIPVisionEncode`、`ImageBatchMultiple+`、`CR Text`、`easy cleanGpuUsed`、`CLIPVisionLoader`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode

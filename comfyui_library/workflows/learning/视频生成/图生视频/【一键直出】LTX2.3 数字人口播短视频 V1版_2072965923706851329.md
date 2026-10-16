@@ -1,0 +1,248 @@
+---
+key: 视频生成/图生视频/【一键直出】LTX2.3 数字人口播短视频 V1版_2072965923706851329.json
+name: 【一键直出】LTX2.3 数字人口播短视频 V1版_2072965923706851329.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2072965923706851329.json
+hash: c67b02f9447b5993
+coverage: 0.793651
+learned_at: 2026-10-15 22:40:59
+nodes: [SimpleMath+, LayerUtility: PurgeVRAM, CR Text Replace, SetNode, AudioMerge, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LTXVLatentUpsampler, RandomNoise, ManualSigmas, LTXVConcatAVLatent, LTXVConditioning, RandomNoise, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, LTXVSeparateAVLatent, ManualSigmas, LTXVSeparateAVLatent, LTXVImgToVideoInplace, SolidMask, LTXVAudioVAEEncode, LTXVImgToVideoInplace, CLIPTextEncode, INTConstant, LTXVAudioVAEDecode, ModelPatchTorchSettings, Audio Duration (mtb), LTXVCropGuides, PathchSageAttentionKJ, easy loraStackApply, SimpleMath+, StringReplace, JsonExtractString, ComfyNumberConvert, INTConstant, INTConstant, JsonExtractString, JsonExtractString, ComfyNumberConvert, FloatConstant, JsonExtractString, TextInput_, TextInput_, TextInput_, SimpleMath+, CR Text Input Switch (4 way), SimpleMath+, INTConstant, SimpleMath+, INTConstant, ImageFromBatch, SimpleMath+, ImageFromBatch, ImageFromBatch, LayerUtility: ImageBlendAdvance V2, CLIPTextEncode, CLIPTextEncode, PrimitiveStringMultiline, EmptyLatentAudio, PrimitiveFloat, KSampler, Audio Duration (mtb), AudioAdjustVolume, AudioAdjustVolume, FL_CosyVoice3_AudioCrop, CLIPLoader, CheckpointLoaderSimple, CR LoRA Stack, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, UNETLoader, SetLatentNoiseMask, SetNode, SetNode, SetNode, SimpleMath+, MarkdownNote, LayerUtility: PurgeVRAM V2, VHS_VideoCombine, INTConstant, LoadImage, VAEDecodeAudio, LayerUtility: PurgeVRAM, GetNode, INTConstant, GetNode, Reroute, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess, PreviewAudio, MelBandRoFormerSampler, MelBandRoFormerModelLoader, GetNode, GetNode, CR Text, CR Text Concatenate, LayerUtility: PurgeVRAM, SimpleMath+, SimpleMath+, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, GetNode, GetNode, easy batchAnything, VHS_VideoCombine, VHS_VideoCombine, CR Simple Text Watermark, GetNode, ImageResizeKJv2, GetNode, GetNode, INTConstant, MarkdownNote, easy showAnything, SimpleMath+, FloatConstant, FloatConstant, easy imageCount, easy imageCount, easy showAnything, easy showAnything, easy imageCount, VAEDecodeTiled, SetNode, LayerUtility: PurgeVRAM V2, CLIPTextEncode, TextInput_, Add Subtitles To Frames, LatentUpscaleModelLoader, GetNode, GetNode, GetNode, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, easy showAnything, INTConstant, INTConstant, ComfyMathExpression, ComfyNumberConvert, SetNode, ComfyNumberConvert, Int, SetNode, SetNode, LoadImage, SetNode, CR Simple Text Watermark, GetNode, GetNode, SetNode, TextInput_, TextInput_, MarkdownNote, TextGenerateLTX2Prompt, easy showAnything, easy showAnything, Int, LTXVEmptyLatentAudio, TrimAudioDuration, EmptyLTXVLatentVideo, LTXVConcatAVLatent, TextInput_, ShowAnything|Mie, ShowAnything|Mie, TextInput_, CLIPLoader, PreviewAudio, Int, easy batchAnything, FL_CosyVoice3_ZeroShot, CR LoRA Stack, Apply Whisper, easy anythingIndexSwitch, easy ifElse, FL_CosyVoice3_ModelLoader, LoadAudio, LoadAudio, PreviewAudio, LayerUtility: PurgeVRAM V2, easy ifElse, PrimitiveBoolean, PrimitiveBoolean]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "stable_audio_3_medium_20260526.safetensors", "denoise": 1, "height": 25, "sampler_name": "lcm", "scheduler": "simple", "seed": 1025125047109538, "steps": 8, "width": 97}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/【一键直出】LTX2.3 数字人口播短视频 V1版_2072965923706851329.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2072965923706851329.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（189 个）：
+- `SimpleMath+`
+- `LayerUtility: PurgeVRAM`
+- `CR Text Replace`
+- `SetNode`
+- `AudioMerge`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `RandomNoise`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `LTXVConditioning`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `LTXVImgToVideoInplace`
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `LTXVImgToVideoInplace`
+- `CLIPTextEncode` ★核心
+- `INTConstant`
+- `LTXVAudioVAEDecode` ★核心
+- `ModelPatchTorchSettings`
+- `Audio Duration (mtb)`
+- `LTXVCropGuides`
+- `PathchSageAttentionKJ`
+- `easy loraStackApply`
+- `SimpleMath+`
+- `StringReplace`
+- `JsonExtractString`
+- `ComfyNumberConvert`
+- `INTConstant`
+- `INTConstant`
+- `JsonExtractString`
+- `JsonExtractString`
+- `ComfyNumberConvert`
+- `FloatConstant`
+- `JsonExtractString`
+- `TextInput_`
+- `TextInput_`
+- `TextInput_`
+- `SimpleMath+`
+- `CR Text Input Switch (4 way)`
+- `SimpleMath+`
+- `INTConstant`
+- `SimpleMath+`
+- `INTConstant`
+- `ImageFromBatch`
+- `SimpleMath+`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `LayerUtility: ImageBlendAdvance V2`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveStringMultiline`
+- `EmptyLatentAudio` ★核心
+- `PrimitiveFloat`
+- `KSampler` ★核心
+- `Audio Duration (mtb)`
+- `AudioAdjustVolume`
+- `AudioAdjustVolume`
+- `FL_CosyVoice3_AudioCrop`
+- `CLIPLoader`
+- `CheckpointLoaderSimple` ★核心
+- `CR LoRA Stack`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `UNETLoader` ★核心
+- `SetLatentNoiseMask`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `MarkdownNote`
+- `LayerUtility: PurgeVRAM V2`
+- `VHS_VideoCombine`
+- `INTConstant`
+- `LoadImage`
+- `VAEDecodeAudio` ★核心
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `INTConstant`
+- `GetNode`
+- `Reroute`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `PreviewAudio`
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `CR Text Concatenate`
+- `LayerUtility: PurgeVRAM`
+- `SimpleMath+`
+- `SimpleMath+`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SimpleMath+`
+- `GetNode`
+- `GetNode`
+- `easy batchAnything`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CR Simple Text Watermark`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `MarkdownNote`
+- `easy showAnything`
+- `SimpleMath+`
+- `FloatConstant`
+- `FloatConstant`
+- `easy imageCount`
+- `easy imageCount`
+- `easy showAnything`
+- `easy showAnything`
+- `easy imageCount`
+- `VAEDecodeTiled` ★核心
+- `SetNode`
+- `LayerUtility: PurgeVRAM V2`
+- `CLIPTextEncode` ★核心
+- `TextInput_`
+- `Add Subtitles To Frames`
+- `LatentUpscaleModelLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `easy showAnything`
+- `INTConstant`
+- `INTConstant`
+- `ComfyMathExpression`
+- `ComfyNumberConvert`
+- `SetNode`
+- `ComfyNumberConvert`
+- `Int`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `CR Simple Text Watermark`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `TextInput_`
+- `TextInput_`
+- `MarkdownNote`
+- `TextGenerateLTX2Prompt`
+- `easy showAnything`
+- `easy showAnything`
+- `Int`
+- `LTXVEmptyLatentAudio` ★核心
+- `TrimAudioDuration`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `TextInput_`
+- `ShowAnything|Mie`
+- `ShowAnything|Mie`
+- `TextInput_`
+- `CLIPLoader`
+- `PreviewAudio`
+- `Int`
+- `easy batchAnything`
+- `FL_CosyVoice3_ZeroShot`
+- `CR LoRA Stack`
+- `Apply Whisper`
+- `easy anythingIndexSwitch`
+- `easy ifElse`
+- `FL_CosyVoice3_ModelLoader`
+- `LoadAudio`
+- `LoadAudio`
+- `PreviewAudio`
+- `LayerUtility: PurgeVRAM V2`
+- `easy ifElse`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `seed` = `1025125047109538`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `lcm`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `checkpoint` = `stable_audio_3_medium_20260526.safetensors`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **79%**（150/189）
+
+**有卡**：`SimpleMath+`、`LayerUtility: PurgeVRAM`、`CR Text Replace`、`AudioMerge`、`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`RandomNoise`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVImgToVideoInplace`、`SolidMask`、`LTXVAudioVAEEncode`、`CLIPTextEncode`、`INTConstant`、`LTXVAudioVAEDecode`、`ModelPatchTorchSettings`、`Audio Duration (mtb)`、`LTXVCropGuides`、`PathchSageAttentionKJ`、`easy loraStackApply`、`StringReplace`、`JsonExtractString`、`ComfyNumberConvert`、`FloatConstant`、`TextInput_`、`CR Text Input Switch (4 way)`、`ImageFromBatch`、`LayerUtility: ImageBlendAdvance V2`、`EmptyLatentAudio`、`KSampler`、`AudioAdjustVolume`、`FL_CosyVoice3_AudioCrop`、`CLIPLoader`、`CheckpointLoaderSimple`、`CR LoRA Stack`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`SetLatentNoiseMask`、`LayerUtility: PurgeVRAM V2`、`VHS_VideoCombine`、`LoadImage`、`VAEDecodeAudio`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`PreviewAudio`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`CR Text`、`CR Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy batchAnything`、`CR Simple Text Watermark`、`ImageResizeKJv2`、`easy imageCount`、`VAEDecodeTiled`、`Add Subtitles To Frames`、`LatentUpscaleModelLoader`、`ComfyMathExpression`、`Int`、`TextGenerateLTX2Prompt`、`LTXVEmptyLatentAudio`、`TrimAudioDuration`、`EmptyLTXVLatentVideo`、`ShowAnything|Mie`、`FL_CosyVoice3_ZeroShot`、`Apply Whisper`、`easy anythingIndexSwitch`、`FL_CosyVoice3_ModelLoader`、`LoadAudio`、`PrimitiveBoolean`
+
+**用到的条目**：KSampler、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

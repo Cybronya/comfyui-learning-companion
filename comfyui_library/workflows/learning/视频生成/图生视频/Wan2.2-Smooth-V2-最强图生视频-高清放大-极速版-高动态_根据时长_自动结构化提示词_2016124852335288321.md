@@ -1,0 +1,119 @@
+---
+key: 视频生成/图生视频/Wan2.2-Smooth-V2-最强图生视频-高清放大-极速版-高动态_根据时长_自动结构化提示词_2016124852335288321.json
+name: Wan2.2-Smooth-V2-最强图生视频-高清放大-极速版-高动态_根据时长_自动结构化提示词_2016124852335288321.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2016124852335288321.json
+hash: f2d5d18f250a730f
+coverage: 0.805195
+learned_at: 2026-10-15 22:34:41
+nodes: [UnetLoaderGGUF, Note, Note, Note, CLIPTextEncode, StringConcatenate, Note, CLIPVisionEncode, CLIPVisionLoader, VAELoader, CLIPTextEncode, KSamplerAdvanced, Seed (rgthree), Note, Note, KSamplerAdvanced, easy cleanGpuUsed, UNETLoader, UNETLoader, ModelPatchTorchSettings, LoraLoaderModelOnly, PathchSageAttentionKJ, CLIPLoader, WanImageToVideo, UnetLoaderGGUF, SaveImage, ImageScaleBy, ColorMatch, JWInteger, Label (rgthree), PrimitiveStringMultiline, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, Note, ModelSamplingSD3, Note, ImageScaleBy, MultiTextConcatenate, Text, MultiTextConcatenate, Int, ShowText, ShowText, MultiTextConcatenate, Text, SetNode, TextBox, CR Text Replace, CR Prompt Text, GetNode, AILab_QwenVL, SetNode, RH_Utils, Int, GetNode, easy cleanGpuUsed, SaveImage, SaveImage, SaveImage, VHS_VideoCombine, VHS_VideoCombine, RIFE VFI, SimpleMath+, ImageResizeKJv2, LoadImage, CustomAddLabel, CustomAddLabel, Pick From Batch (mtb), VAEDecode, CR Prompt Text, easy anythingIndexSwitch, ShowText]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2-Smooth-V2-最强图生视频-高清放大-极速版-高动态_根据时长_自动结构化提示词_2016124852335288321.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2016124852335288321.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（77 个）：
+- `UnetLoaderGGUF` ★核心
+- `Note`
+- `Note`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `StringConcatenate`
+- `Note`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `Seed (rgthree)`
+- `Note`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `ModelPatchTorchSettings`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `WanImageToVideo`
+- `UnetLoaderGGUF` ★核心
+- `SaveImage`
+- `ImageScaleBy`
+- `ColorMatch`
+- `JWInteger`
+- `Label (rgthree)`
+- `PrimitiveStringMultiline`
+- `easy showAnything`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `Note`
+- `ModelSamplingSD3`
+- `Note`
+- `ImageScaleBy`
+- `MultiTextConcatenate`
+- `Text`
+- `MultiTextConcatenate`
+- `Int`
+- `ShowText`
+- `ShowText`
+- `MultiTextConcatenate`
+- `Text`
+- `SetNode`
+- `TextBox`
+- `CR Text Replace`
+- `CR Prompt Text`
+- `GetNode`
+- `AILab_QwenVL`
+- `SetNode`
+- `RH_Utils`
+- `Int`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `RIFE VFI`
+- `SimpleMath+`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `CustomAddLabel`
+- `CustomAddLabel`
+- `Pick From Batch (mtb)`
+- `VAEDecode` ★核心
+- `CR Prompt Text`
+- `easy anythingIndexSwitch`
+- `ShowText`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **81%**（62/77）
+
+**有卡**：`UnetLoaderGGUF`、`CLIPTextEncode`、`StringConcatenate`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`KSamplerAdvanced`、`Seed (rgthree)`、`easy cleanGpuUsed`、`UNETLoader`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`CLIPLoader`、`WanImageToVideo`、`SaveImage`、`ImageScaleBy`、`ColorMatch`、`JWInteger`、`Label (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`ModelSamplingSD3`、`MultiTextConcatenate`、`Text`、`Int`、`ShowText`、`TextBox`、`CR Text Replace`、`CR Prompt Text`、`AILab_QwenVL`、`RH_Utils`、`VHS_VideoCombine`、`RIFE VFI`、`SimpleMath+`、`ImageResizeKJv2`、`LoadImage`、`CustomAddLabel`、`Pick From Batch (mtb)`、`VAEDecode`、`easy anythingIndexSwitch`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

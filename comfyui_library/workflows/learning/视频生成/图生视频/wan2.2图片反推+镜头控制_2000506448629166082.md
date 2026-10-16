@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json
+name: wan2.2图片反推+镜头控制_2000506448629166082.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2000506448629166082.json
+hash: c6790479717c6b55
+coverage: 0.606061
+learned_at: 2026-10-15 22:33:41
+nodes: [SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, LoadWanVideoT5TextEncoder, Anything Everywhere, Anything Everywhere, WanVideoSetLoRAs, WanVideoUni3C_ControlnetLoader, WanVideoUni3C_embeds, VHS_VideoCombine, WanVideoDecode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, INTConstant, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoModelLoader, WanVideoTorchCompileSettings, WanVideoVAELoader, GetNode, GetNode, WanVideoTextEncode, WanVideoSampler, WanVideoSampler, PrimitiveInt, SetNode, GetNode, ImageResizeKJ, GetNode, SetNode, GetNode, WanVideoEncode, ImageResizeKJ, CreateCFGScheduleFloatList, Seed (rgthree), WanVideoSigmaToStep, FloatConstant, GetNode, GetNode, GetNode, SetNode, GetNode, ImageConcanate, WanVideoImageToVideoEncode, PrimitiveInt, PrimitiveInt, SetNode, PreviewImage, WanVideoScheduler, WanVideoScheduler, LoadImage, VHS_LoadVideo, VHS_VideoCombine, easy showAnything, CR Prompt Text, Text Multiline (Code Compatible), Qwen3_VQA, VideoLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2000506448629166082.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（66 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `WanVideoSetLoRAs`
+- `WanVideoUni3C_ControlnetLoader`
+- `WanVideoUni3C_embeds`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `INTConstant`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `ImageResizeKJ`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `ImageResizeKJ`
+- `CreateCFGScheduleFloatList`
+- `Seed (rgthree)`
+- `WanVideoSigmaToStep`
+- `FloatConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `ImageConcanate`
+- `WanVideoImageToVideoEncode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SetNode`
+- `PreviewImage`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `CR Prompt Text`
+- `Text Multiline (Code Compatible)`
+- `Qwen3_VQA`
+- `VideoLoader`
+
+## 知识
+
+覆盖率 **61%**（40/66）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoSetLoRAs`、`WanVideoUni3C_ControlnetLoader`、`WanVideoUni3C_embeds`、`VHS_VideoCombine`、`WanVideoDecode`、`LayerUtility: PurgeVRAM`、`INTConstant`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`WanVideoTextEncode`、`WanVideoSampler`、`ImageResizeKJ`、`WanVideoEncode`、`CreateCFGScheduleFloatList`、`Seed (rgthree)`、`WanVideoSigmaToStep`、`FloatConstant`、`ImageConcanate`、`WanVideoImageToVideoEncode`、`WanVideoScheduler`、`LoadImage`、`VHS_LoadVideo`、`CR Prompt Text`、`Text Multiline (Code Compatible)`、`Qwen3_VQA`、`VideoLoader`
+
+**用到的条目**：LoadImage、WanVideoUni3C_ControlnetLoader、WanVideoSampler、CreateCFGScheduleFloatList、Seed (rgthree)、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode

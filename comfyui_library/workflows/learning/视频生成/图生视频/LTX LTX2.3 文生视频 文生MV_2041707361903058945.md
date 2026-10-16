@@ -1,0 +1,114 @@
+---
+key: 视频生成/图生视频/LTX LTX2.3 文生视频 文生MV_2041707361903058945.json
+name: LTX LTX2.3 文生视频 文生MV_2041707361903058945.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2041707361903058945.json
+hash: 04be06417b5d5a0c
+coverage: 0.827586
+learned_at: 2026-10-15 22:36:21
+nodes: [KSamplerSelect, GetNode, INTConstant, GetNode, SetNode, MelBandRoFormerSampler, PathchSageAttentionKJ, Reroute, LTXVLatentUpsampler, BasicScheduler, LTXVConcatAVLatent, SoundFlow_GetLength, KSampler, TrimAudioDuration, CM_FloatToInt, LoadAudio, LTXAVTextEncoderLoader, MelBandRoFormerModelLoader, CheckpointLoaderSimple, LTXVAudioVAELoader, LoraLoaderModelOnly, SetNode, SetNode, CLIPTextEncode, LTXVConcatAVLatent, LTXVSeparateAVLatent, ImageSharpen, GetNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVConditioning, RandomNoise, CFGGuider, LTXVCropGuides, LatentUpscaleModelLoader, VAEDecodeTiled, easy cleanGpuUsed, Reroute, EmptyLTXVLatentVideo, GetNode, ResizeImagesByLongerEdge, LTXVPreprocess, INTConstant, SimpleMath+, INTConstant, SimpleMath+, Int, Int, SolidMask, LTXVImgToVideoInplace, LTX2SamplingPreviewOverride, PreviewAudio, LTXVAudioVAEEncode, SetLatentNoiseMask, easy showAnything, SimpleMath+, VHS_VideoCombine, CLIPTextEncode]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "denoise": 0.4, "sampler_name": "euler", "scheduler": "simple", "seed": 653916836125943, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/LTX LTX2.3 文生视频 文生MV_2041707361903058945.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2041707361903058945.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（58 个）：
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `INTConstant`
+- `GetNode`
+- `SetNode`
+- `MelBandRoFormerSampler` ★核心
+- `PathchSageAttentionKJ`
+- `Reroute`
+- `LTXVLatentUpsampler` ★核心
+- `BasicScheduler`
+- `LTXVConcatAVLatent`
+- `SoundFlow_GetLength`
+- `KSampler` ★核心
+- `TrimAudioDuration`
+- `CM_FloatToInt`
+- `LoadAudio`
+- `LTXAVTextEncoderLoader`
+- `MelBandRoFormerModelLoader`
+- `CheckpointLoaderSimple` ★核心
+- `LTXVAudioVAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `ImageSharpen`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVConditioning`
+- `RandomNoise`
+- `CFGGuider`
+- `LTXVCropGuides`
+- `LatentUpscaleModelLoader`
+- `VAEDecodeTiled` ★核心
+- `easy cleanGpuUsed`
+- `Reroute`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `INTConstant`
+- `SimpleMath+`
+- `INTConstant`
+- `SimpleMath+`
+- `Int`
+- `Int`
+- `SolidMask`
+- `LTXVImgToVideoInplace`
+- `LTX2SamplingPreviewOverride`
+- `PreviewAudio`
+- `LTXVAudioVAEEncode` ★核心
+- `SetLatentNoiseMask`
+- `easy showAnything`
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `653916836125943`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.4`
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+
+## 知识
+
+覆盖率 **83%**（48/58）
+
+**有卡**：`KSamplerSelect`、`INTConstant`、`MelBandRoFormerSampler`、`PathchSageAttentionKJ`、`LTXVLatentUpsampler`、`BasicScheduler`、`LTXVConcatAVLatent`、`SoundFlow_GetLength`、`KSampler`、`TrimAudioDuration`、`CM_FloatToInt`、`LoadAudio`、`LTXAVTextEncoderLoader`、`MelBandRoFormerModelLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`LTXVSeparateAVLatent`、`ImageSharpen`、`SamplerCustomAdvanced`、`LTXVConditioning`、`RandomNoise`、`CFGGuider`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`EmptyLTXVLatentVideo`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`SimpleMath+`、`Int`、`SolidMask`、`LTXVImgToVideoInplace`、`LTX2SamplingPreviewOverride`、`PreviewAudio`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`VHS_VideoCombine`
+
+**用到的条目**：KSampler、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

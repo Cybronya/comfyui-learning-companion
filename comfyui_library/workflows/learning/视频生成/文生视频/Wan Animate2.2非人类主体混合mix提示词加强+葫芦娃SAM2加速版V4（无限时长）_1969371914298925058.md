@@ -1,0 +1,115 @@
+---
+key: 视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json
+name: Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1969371914298925058.json
+hash: 27861cd75f778696
+coverage: 0.60241
+learned_at: 2026-10-15 22:43:46
+nodes: [ImageConcatMulti, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, Reroute, FaceMaskFromPoseKeypoints, SetNode, BlockifyMask, SetNode, Note, GetNode, SetNode, ImageConcatMulti, GetNode, GetNode, GetImageSizeAndCount, WanVideoAnimateEmbeds, WanVideoSetBlockSwap, WanVideoSetLoRAs, MarkdownNote, DWPreprocessor, ImageResizeKJv2, SetNode, GetNode, DrawMaskOnImage, SetNode, GetNode, GetNode, GetNode, WanVideoEncode, VHS_VideoCombine, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoLoraSelectMulti, CLIPVisionLoader, WanVideoVAELoader, ImageCropByMaskAndResize, SetNode, Note, WanVideoContextOptions, WanVideoUni3C_embeds, Note, Note, WanVideoModelLoader, SetNode, PixelPerfectResolution, WanVideoTextEncodeCached, SetNode, WanVideoUni3C_ControlnetLoader, JWInteger, JWInteger, VHS_LoadVideo, GetImageSizeAndCount, GetNode, GetNode, GetNode, ImageResizeKJv2, ShowText, RH_Captioner, LoadImage, CR Prompt Text, easy promptConcat, JWInteger, VHS_VideoCombine, WanVideoSampler, CR Prompt Text, GetNode, WanVideoClipVisionEncode, EmptyImage, VHS_LoadVideo, Sam2Segmentation, DownloadAndLoadSAM2Model, LayerMask: LoadSegmentAnythingModels, LayerMask: SegmentAnythingUltra V3, GrowMask, VHS_VideoCombine, VHS_VideoCombine, WanVideoDecode]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1969371914298925058.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（83 个）：
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Reroute`
+- `FaceMaskFromPoseKeypoints`
+- `SetNode`
+- `BlockifyMask`
+- `SetNode`
+- `Note`
+- `GetNode`
+- `SetNode`
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `WanVideoAnimateEmbeds`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `MarkdownNote`
+- `DWPreprocessor`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `DrawMaskOnImage`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `VHS_VideoCombine`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelectMulti`
+- `CLIPVisionLoader`
+- `WanVideoVAELoader`
+- `ImageCropByMaskAndResize`
+- `SetNode`
+- `Note`
+- `WanVideoContextOptions`
+- `WanVideoUni3C_embeds`
+- `Note`
+- `Note`
+- `WanVideoModelLoader`
+- `SetNode`
+- `PixelPerfectResolution`
+- `WanVideoTextEncodeCached`
+- `SetNode`
+- `WanVideoUni3C_ControlnetLoader`
+- `JWInteger`
+- `JWInteger`
+- `VHS_LoadVideo`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ShowText`
+- `RH_Captioner`
+- `LoadImage`
+- `CR Prompt Text`
+- `easy promptConcat`
+- `JWInteger`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `CR Prompt Text`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `EmptyImage`
+- `VHS_LoadVideo`
+- `Sam2Segmentation`
+- `DownloadAndLoadSAM2Model`
+- `LayerMask: LoadSegmentAnythingModels`
+- `LayerMask: SegmentAnythingUltra V3`
+- `GrowMask`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+
+## 知识
+
+覆盖率 **60%**（50/83）
+
+**有卡**：`ImageConcatMulti`、`FaceMaskFromPoseKeypoints`、`BlockifyMask`、`GetImageSizeAndCount`、`WanVideoAnimateEmbeds`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`DWPreprocessor`、`ImageResizeKJv2`、`DrawMaskOnImage`、`WanVideoEncode`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoLoraSelectMulti`、`CLIPVisionLoader`、`WanVideoVAELoader`、`ImageCropByMaskAndResize`、`WanVideoContextOptions`、`WanVideoUni3C_embeds`、`WanVideoModelLoader`、`PixelPerfectResolution`、`WanVideoTextEncodeCached`、`WanVideoUni3C_ControlnetLoader`、`JWInteger`、`VHS_LoadVideo`、`ShowText`、`RH_Captioner`、`LoadImage`、`CR Prompt Text`、`easy promptConcat`、`WanVideoSampler`、`WanVideoClipVisionEncode`、`EmptyImage`、`Sam2Segmentation`、`DownloadAndLoadSAM2Model`、`LayerMask: LoadSegmentAnythingModels`、`LayerMask: SegmentAnythingUltra V3`、`GrowMask`、`WanVideoDecode`
+
+**用到的条目**：LoadImage、WanVideoUni3C_ControlnetLoader、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoEncode

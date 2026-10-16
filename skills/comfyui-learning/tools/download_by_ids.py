@@ -143,12 +143,24 @@ def find_existing(out_dir: Path) -> dict[str, str]:
     return found
 
 
-BAD_CHARS = re.compile(r'[\\/:*?"<>|\r\n\t]')
+#: Windows 非法字符 + **全部控制字符**。
+#: 后者是实测踩出来的：平台名里出现过 \x03（ETX），Windows 对含控制字符的
+#: 文件名直接报 [Errno 22] Invalid argument，下载整批失败。AGENTS 里
+#: 2026-10-10 记过「下载脚本已修控制字符清洗」，但正则里一直没带上
+#: \x00-\x1f\x7f —— 2026-10-16 又踩一次（同一批 bug 家族的第 5 处，
+#: rename_library_workflows.py 当天也踩过）。
+BAD_CHARS = re.compile(r'[\\/:*?"<>|\x00-\x1f\x7f]')
 
 
 def safe_name(s: str) -> str:
-    """文件名安全化：替换 Windows 非法字符，截断 80 字符（与历史批次命名规则一致）。"""
+    """文件名安全化：替换 Windows 非法字符与控制字符，截断 80 字符
+    （与历史批次命名规则一致）。
+
+    替换完还要再 lstrip 一次下划线：清洗可能把开头的空格/控制字符变成
+    `_`，前导 `_` 的文件名会被 ComfyUI 导出约定误认成伴生文件。
+    """
     s = BAD_CHARS.sub("_", s).strip().strip(".")
+    s = s.lstrip("_").strip()
     return s[:80] if s else ""
 
 

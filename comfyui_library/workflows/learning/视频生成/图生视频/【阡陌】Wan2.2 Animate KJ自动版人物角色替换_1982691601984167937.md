@@ -1,0 +1,108 @@
+---
+key: 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json
+name: 【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1982691601984167937.json
+hash: 09a941a7022b862f
+coverage: 0.447368
+learned_at: 2026-10-15 22:32:42
+nodes: [WanVideoModelLoader, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoSetBlockSwap, SetNode, PreviewImage, GetNode, easy showAnything, SetNode, GetNode, SetNode, SetNode, SetNode, OnnxDetectionModelLoader, SetNode, GetNode, SetNode, WanVideoVAELoader, SetNode, WanVideoSampler, GetNode, GetNode, GetNode, DrawViTPose, GetNode, GetNode, GetNode, GetNode, SetNode, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, ImageResizeKJv2, SetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, SetNode, WanVideoClipVisionEncode, CLIPVisionLoader, GetNode, GetNode, WanVideoLoraSelectMulti, GetNode, WanVideoAnimateEmbeds, GetNode, LoadImage, Note, WanVideoDecode, ImageFromBatch, VHS_VideoCombine, ImageConcanate, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, PoseAndFaceDetection, SeCVideoSegmentation, LayerMask: MaskGrow, VHS_VideoCombine, DrawMaskOnImage, BlockifyMask, GetNode, SetNode, SetNode, GetNode, GetNode, SeCModelLoader, LayerMask: MaskPreview, LayerMask: MaskPreview, VHS_LoadVideo, LoadImage, WanVideoTextEncodeCached, GetNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1982691601984167937.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（76 个）：
+- `WanVideoModelLoader`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `PreviewImage`
+- `GetNode`
+- `easy showAnything`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `DrawViTPose`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `WanVideoLoraSelectMulti`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `LoadImage`
+- `Note`
+- `WanVideoDecode`
+- `ImageFromBatch`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PoseAndFaceDetection`
+- `SeCVideoSegmentation`
+- `LayerMask: MaskGrow`
+- `VHS_VideoCombine`
+- `DrawMaskOnImage`
+- `BlockifyMask`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SeCModelLoader`
+- `LayerMask: MaskPreview`
+- `LayerMask: MaskPreview`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+
+## 知识
+
+覆盖率 **45%**（34/76）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`OnnxDetectionModelLoader`、`WanVideoVAELoader`、`WanVideoSampler`、`DrawViTPose`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJv2`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`WanVideoLoraSelectMulti`、`WanVideoAnimateEmbeds`、`LoadImage`、`WanVideoDecode`、`ImageFromBatch`、`ImageConcanate`、`PoseAndFaceDetection`、`SeCVideoSegmentation`、`LayerMask: MaskGrow`、`DrawMaskOnImage`、`BlockifyMask`、`SeCModelLoader`、`LayerMask: MaskPreview`、`VHS_LoadVideo`、`WanVideoTextEncodeCached`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs

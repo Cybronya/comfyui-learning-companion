@@ -1,0 +1,61 @@
+---
+key: 视频生成/文生视频/Wan 2.1_14B图生视频加速版_1945639434354348033.json
+name: Wan 2.1_14B图生视频加速版_1945639434354348033.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1945639434354348033.json
+hash: 4723caf9df87f97b
+coverage: 0.862069
+learned_at: 2026-10-15 22:43:31
+nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoDecode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoExperimentalArgs, Primitive integer [Crystools], Note, Note, Note, CLIPVisionLoader, Note, WanVideoEncode, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, WanVideoSampler, Primitive integer [Crystools], Primitive integer [Crystools], WanVideoModelLoader, Primitive integer [Crystools], WanVideoFreeInitArgs, WanVideoTextEncode, WanVideoLoraSelect, ShowText, ImageResizeKJv2, VHS_VideoCombine, LoadImage, Text Multiline]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan 2.1_14B图生视频加速版_1945639434354348033.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1945639434354348033.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（29 个）：
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoExperimentalArgs`
+- `Primitive integer [Crystools]`
+- `Note`
+- `Note`
+- `Note`
+- `CLIPVisionLoader`
+- `Note`
+- `WanVideoEncode`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler` ★核心
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `WanVideoModelLoader`
+- `Primitive integer [Crystools]`
+- `WanVideoFreeInitArgs`
+- `WanVideoTextEncode`
+- `WanVideoLoraSelect`
+- `ShowText`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `Text Multiline`
+
+## 知识
+
+覆盖率 **86%**（25/29）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoExperimentalArgs`、`Primitive integer [Crystools]`、`CLIPVisionLoader`、`WanVideoEncode`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoFreeInitArgs`、`WanVideoTextEncode`、`WanVideoLoraSelect`、`ShowText`、`ImageResizeKJv2`、`VHS_VideoCombine`、`LoadImage`、`Text Multiline`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

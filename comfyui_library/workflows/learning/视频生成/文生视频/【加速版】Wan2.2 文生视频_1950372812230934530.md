@@ -1,0 +1,65 @@
+---
+key: 视频生成/文生视频/【加速版】Wan2.2 文生视频_1950372812230934530.json
+name: 【加速版】Wan2.2 文生视频_1950372812230934530.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950372812230934530.json
+hash: 3ca1ee181e4051ac
+coverage: 1
+learned_at: 2026-10-15 22:43:35
+nodes: [CLIPTextEncode, EmptyHunyuanLatentVideo, CreateVideo, CLIPTextEncode, PathchSageAttentionKJ, ModelSamplingSD3, VAEDecode, SimpleMath+, KSamplerAdvanced, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, ModelSamplingSD3, PathchSageAttentionKJ, CLIPLoader, VAELoader, ImpactInt, ImpactInt, ImpactInt, Text, KSamplerAdvanced, SaveVideo]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/文生视频/【加速版】Wan2.2 文生视频_1950372812230934530.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950372812230934530.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（23 个）：
+- `CLIPTextEncode` ★核心
+- `EmptyHunyuanLatentVideo`
+- `CreateVideo`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `SimpleMath+`
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `VAELoader`
+- `ImpactInt`
+- `ImpactInt`
+- `ImpactInt`
+- `Text`
+- `KSamplerAdvanced` ★核心
+- `SaveVideo`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（23/23）
+
+**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`CreateVideo`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VAEDecode`、`SimpleMath+`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`ImpactInt`、`Text`、`SaveVideo`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

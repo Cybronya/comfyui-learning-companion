@@ -1,0 +1,117 @@
+---
+key: 视频生成/图生视频/【曲线运镜FusionX版】Wan2.1图生视频（全自动）_1934553565845200897.json
+name: 【曲线运镜FusionX版】Wan2.1图生视频（全自动）_1934553565845200897.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1934553565845200897.json
+hash: 64190bf9d041f340
+coverage: 0.647059
+learned_at: 2026-10-15 22:30:18
+nodes: [Anything Everywhere, Anything Everywhere, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoModelLoader, CogVideoEnhanceAVideo, Note, CLIPVisionLoader, Anything Everywhere, VHS_VideoCombine, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, easy showAnything, easy showAnything, MathExpression|pysssss, MathExpression|pysssss, easy showAnything, easy showAnything, MathExpression|pysssss, InversionDemoLazyIndexSwitch, InversionDemoLazyIndexSwitch, PreviewBridge, Note, WanVideoSLG, WanVideoExperimentalArgs, Note, WanVideoApplyNAG, Note, WanVideoSetBlockSwap, MathExpression|pysssss, CR String To Number, CR String To Number, GetNode, GetNode, LoadAudio, Note, AudioCrop, WanVideoTextEncodeSingle, ImageResize+, ImageResize+, WanVideoClipVisionEncode, GetNode, WanVideoImageToVideoEncode, GetNode, easy cleanGpuUsed, easy anythingIndexSwitch, ImageCASharpening+, WanVideoSampler, ShowText|pysssss, SetNode, RHHiddenNodes, WanVideoDecode, PreviewAudio, Note, Note, Int, WanVideoTextEncodeSingle, easy int, FluxResolutionNode, GetNode, GetNode, Note, SetNode, SetNode, CR Text, Note, Note, JWInteger, CR Text, VHS_VideoCombine, MathExpression|pysssss, Int, Note, VHS_LoadVideo, Note, Note, LayerColor: Brightness & Contrast, CR Text, ColorCorrectOfUtils, easy anythingIndexSwitch, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【曲线运镜FusionX版】Wan2.1图生视频（全自动）_1934553565845200897.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1934553565845200897.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（85 个）：
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `CogVideoEnhanceAVideo`
+- `Note`
+- `CLIPVisionLoader`
+- `Anything Everywhere`
+- `VHS_VideoCombine`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `easy showAnything`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `easy showAnything`
+- `MathExpression|pysssss`
+- `InversionDemoLazyIndexSwitch`
+- `InversionDemoLazyIndexSwitch`
+- `PreviewBridge`
+- `Note`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `Note`
+- `WanVideoApplyNAG`
+- `Note`
+- `WanVideoSetBlockSwap`
+- `MathExpression|pysssss`
+- `CR String To Number`
+- `CR String To Number`
+- `GetNode`
+- `GetNode`
+- `LoadAudio`
+- `Note`
+- `AudioCrop`
+- `WanVideoTextEncodeSingle`
+- `ImageResize+`
+- `ImageResize+`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy anythingIndexSwitch`
+- `ImageCASharpening+`
+- `WanVideoSampler` ★核心
+- `ShowText|pysssss`
+- `SetNode`
+- `RHHiddenNodes`
+- `WanVideoDecode`
+- `PreviewAudio`
+- `Note`
+- `Note`
+- `Int`
+- `WanVideoTextEncodeSingle`
+- `easy int`
+- `FluxResolutionNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `CR Text`
+- `Note`
+- `Note`
+- `JWInteger`
+- `CR Text`
+- `VHS_VideoCombine`
+- `MathExpression|pysssss`
+- `Int`
+- `Note`
+- `VHS_LoadVideo`
+- `Note`
+- `Note`
+- `LayerColor: Brightness & Contrast`
+- `CR Text`
+- `ColorCorrectOfUtils`
+- `easy anythingIndexSwitch`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **65%**（55/85）
+
+**有卡**：`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`CogVideoEnhanceAVideo`、`CLIPVisionLoader`、`VHS_VideoCombine`、`MathExpression|pysssss`、`InversionDemoLazyIndexSwitch`、`PreviewBridge`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoApplyNAG`、`WanVideoSetBlockSwap`、`CR String To Number`、`LoadAudio`、`AudioCrop`、`WanVideoTextEncodeSingle`、`ImageResize+`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`easy cleanGpuUsed`、`easy anythingIndexSwitch`、`ImageCASharpening+`、`WanVideoSampler`、`RHHiddenNodes`、`WanVideoDecode`、`PreviewAudio`、`Int`、`easy int`、`FluxResolutionNode`、`CR Text`、`JWInteger`、`VHS_LoadVideo`、`LayerColor: Brightness & Contrast`、`ColorCorrectOfUtils`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeSingle

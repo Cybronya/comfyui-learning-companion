@@ -1,0 +1,214 @@
+---
+key: 视频生成/图生视频/Wan-Dancer + Scail2 音生舞工作流邪修版 v1.0 _ 高质量、高动态、人物稳定_2080198878946742274.json
+name: Wan-Dancer + Scail2 音生舞工作流邪修版 v1.0 _ 高质量、高动态、人物稳定_2080198878946742274.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2080198878946742274.json
+hash: bb3ba384b7f5cfc5
+coverage: 0.5125
+learned_at: 2026-10-15 22:42:10
+nodes: [GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ConditioningZeroOut, GetNode, GetNode, GetNode, CM_IntToFloat, GetNode, SetNode, WanDancerEncodeAudio, easy showAnything, easy showAnything, SetNode, StringConcatenate, SetNode, StringConcatenate, Note, CLIPTextEncode, Int, Int, MarkdownNote, GetNode, GetNode, GetNode, GetNode, ComfyMathExpression, Note, GetNode, CLIPLoader, SeedVR2LoadVAEModel, String, SeedVR2VideoUpscaler, SeedVR2LoadDiTModel, GetNode, SetNode, RebatchImages, TrimAudioDuration, CLIPVisionLoader, SetNode, CLIPTextEncode, CLIPTextEncode, SkipLayerGuidanceDiTSimple, ModelSamplingSD3, CLIPVisionEncode, WanDancerEncodeAudio, ImageFromBatch, CLIPVisionEncode, WanDancerPadKeyframesList, VAEDecode, GetNode, GetNode, FlashVSRNode, SetNode, SetNode, GetNode, SetNode, LatentCutToBatch, WanDancerVideo, KSamplerAdvanced, WanDancerVideo, KSamplerAdvanced, GetNode, GetNode, GetNode, SetNode, SetNode, PreviewImage, String, Int, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, ModelSamplingSD3, SetNode, VAELoader, CLIPVisionLoader, SetNode, CLIPVisionEncode, CLIPLoader, CLIPTextEncode, GetNode, Note, KSampler, ImageFromBatch, SAM3_VideoTrack, CLIPTextEncode, Int, easy lengthAnything, PreviewAny, easy cleanGpuUsed, CLIPTextEncode, GetNode, VAEDecode, SCAIL2ColoredMask, PreviewImage, SetNode, GetNode, GetNode, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SeedVR2LoadDiTModel, FlashVSRNode, VAEDecodeTiled, Fast Groups Bypasser (rgthree), easy cleanGpuUsed, Label (rgthree), Label (rgthree), CLIPTextEncode, WanContextWindowsManual, GetNode, WanSCAILToVideo, SetNode, easy imageRemBg, ResizeImageMaskNode, CheckpointLoaderSimple, RTXVideoSuperResolution, easy seed, VHS_VideoCombine, VHS_VideoCombine, LoadImage, LoadAudio, DiffusionModelLoaderKJ, DiffusionModelLoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, DiffusionModelLoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, SAM3_VideoTrack, VHS_VideoCombine, RTXVideoSuperResolution, VAELoader, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "sam3.1_multiplex_fp16.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 211066538088328, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan-Dancer + Scail2 音生舞工作流邪修版 v1.0 _ 高质量、高动态、人物稳定_2080198878946742274.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2080198878946742274.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（160 个）：
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CM_IntToFloat`
+- `GetNode`
+- `SetNode`
+- `WanDancerEncodeAudio`
+- `easy showAnything`
+- `easy showAnything`
+- `SetNode`
+- `StringConcatenate`
+- `SetNode`
+- `StringConcatenate`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `Int`
+- `Int`
+- `MarkdownNote`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `Note`
+- `GetNode`
+- `CLIPLoader`
+- `SeedVR2LoadVAEModel`
+- `String`
+- `SeedVR2VideoUpscaler`
+- `SeedVR2LoadDiTModel`
+- `GetNode`
+- `SetNode`
+- `RebatchImages`
+- `TrimAudioDuration`
+- `CLIPVisionLoader`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SkipLayerGuidanceDiTSimple`
+- `ModelSamplingSD3`
+- `CLIPVisionEncode`
+- `WanDancerEncodeAudio`
+- `ImageFromBatch`
+- `CLIPVisionEncode`
+- `WanDancerPadKeyframesList`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `FlashVSRNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `LatentCutToBatch`
+- `WanDancerVideo`
+- `KSamplerAdvanced` ★核心
+- `WanDancerVideo`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `String`
+- `Int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `SetNode`
+- `CLIPVisionEncode`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `Note`
+- `KSampler` ★核心
+- `ImageFromBatch`
+- `SAM3_VideoTrack`
+- `CLIPTextEncode` ★核心
+- `Int`
+- `easy lengthAnything`
+- `PreviewAny`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `SCAIL2ColoredMask`
+- `PreviewImage`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SeedVR2LoadDiTModel`
+- `FlashVSRNode`
+- `VAEDecodeTiled` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `easy cleanGpuUsed`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `CLIPTextEncode` ★核心
+- `WanContextWindowsManual`
+- `GetNode`
+- `WanSCAILToVideo`
+- `SetNode`
+- `easy imageRemBg`
+- `ResizeImageMaskNode`
+- `CheckpointLoaderSimple` ★核心
+- `RTXVideoSuperResolution`
+- `easy seed`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadAudio`
+- `DiffusionModelLoaderKJ`
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SAM3_VideoTrack`
+- `VHS_VideoCombine`
+- `RTXVideoSuperResolution`
+- `VAELoader`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+
+## 关键参数
+
+- `seed` = `211066538088328`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+
+## 知识
+
+覆盖率 **51%**（82/160）
+
+**有卡**：`ConditioningZeroOut`、`CM_IntToFloat`、`WanDancerEncodeAudio`、`StringConcatenate`、`CLIPTextEncode`、`Int`、`ComfyMathExpression`、`CLIPLoader`、`SeedVR2LoadVAEModel`、`String`、`SeedVR2VideoUpscaler`、`SeedVR2LoadDiTModel`、`RebatchImages`、`TrimAudioDuration`、`CLIPVisionLoader`、`SkipLayerGuidanceDiTSimple`、`ModelSamplingSD3`、`CLIPVisionEncode`、`ImageFromBatch`、`WanDancerPadKeyframesList`、`VAEDecode`、`FlashVSRNode`、`LatentCutToBatch`、`WanDancerVideo`、`KSamplerAdvanced`、`VAELoader`、`KSampler`、`SAM3_VideoTrack`、`easy lengthAnything`、`easy cleanGpuUsed`、`SCAIL2ColoredMask`、`VAEDecodeTiled`、`Label (rgthree)`、`WanContextWindowsManual`、`WanSCAILToVideo`、`easy imageRemBg`、`ResizeImageMaskNode`、`CheckpointLoaderSimple`、`RTXVideoSuperResolution`、`easy seed`、`VHS_VideoCombine`、`LoadImage`、`LoadAudio`、`DiffusionModelLoaderKJ`、`LoraLoaderModelOnly`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

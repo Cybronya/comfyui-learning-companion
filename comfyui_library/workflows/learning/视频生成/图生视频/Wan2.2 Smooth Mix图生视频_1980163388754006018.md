@@ -1,0 +1,112 @@
+---
+key: 视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1980163388754006018.json
+name: Wan2.2 Smooth Mix图生视频_1980163388754006018.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1980163388754006018.json
+hash: 9c38aa20194857a3
+coverage: 0.514286
+learned_at: 2026-10-15 22:32:28
+nodes: [SetNode, SetNode, SetNode, SetNode, INTConstant, SetNode, SimpleMath+, SetNode, CLIPLoader, GetNode, GetNode, ImageResizeKJv2, GetNode, SetNode, easy cleanGpuUsed, GetNode, VAEDecode, easy cleanGpuUsed, easy clearCacheAll, GetNode, GetNode, GetNode, GetNode, INTConstant, INTConstant, SetNode, SetNode, GetNode, SetNode, easy cleanGpuUsed, JjkShowText, SimpleCondition+, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, VAELoader, LoadImage, WanImageToVideo, CLIPVisionEncode, CLIPTextEncode, SetNode, SetNode, AILab_MiniCPM_4_V_Advanced, GetNode, ImageFromBatch+, CLIPVisionLoader, Fast Groups Muter (rgthree), VHS_VideoCombine, easy seed, Primitive string multiline [Crystools], SetNode, UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, SetNode, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, UNETLoader, PathchSageAttentionKJ, FloatConstant, GetNode, ImageBatchMultiple+, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2 Smooth Mix图生视频_1980163388754006018.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1980163388754006018.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（70 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `SimpleMath+`
+- `SetNode`
+- `CLIPLoader`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `JjkShowText`
+- `SimpleCondition+`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VAELoader`
+- `LoadImage`
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `AILab_MiniCPM_4_V_Advanced`
+- `GetNode`
+- `ImageFromBatch+`
+- `CLIPVisionLoader`
+- `Fast Groups Muter (rgthree)`
+- `VHS_VideoCombine`
+- `easy seed`
+- `Primitive string multiline [Crystools]`
+- `SetNode`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `FloatConstant`
+- `GetNode`
+- `ImageBatchMultiple+`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **51%**（36/70）
+
+**有卡**：`INTConstant`、`SimpleMath+`、`CLIPLoader`、`ImageResizeKJv2`、`easy cleanGpuUsed`、`VAEDecode`、`easy clearCacheAll`、`JjkShowText`、`SimpleCondition+`、`VAELoader`、`LoadImage`、`WanImageToVideo`、`CLIPVisionEncode`、`CLIPTextEncode`、`AILab_MiniCPM_4_V_Advanced`、`ImageFromBatch+`、`CLIPVisionLoader`、`VHS_VideoCombine`、`easy seed`、`Primitive string multiline [Crystools]`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`FloatConstant`、`ImageBatchMultiple+`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、easy seed

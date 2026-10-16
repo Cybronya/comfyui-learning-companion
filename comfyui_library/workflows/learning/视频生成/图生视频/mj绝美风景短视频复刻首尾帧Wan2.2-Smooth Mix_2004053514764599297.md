@@ -1,0 +1,85 @@
+---
+key: 视频生成/图生视频/mj绝美风景短视频复刻首尾帧Wan2.2-Smooth Mix_2004053514764599297.json
+name: mj绝美风景短视频复刻首尾帧Wan2.2-Smooth Mix_2004053514764599297.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2004053514764599297.json
+hash: b11f193aaa1582dc
+coverage: 0.976744
+learned_at: 2026-10-15 22:33:52
+nodes: [Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Bypasser (rgthree), PathchSageAttentionKJ, CLIPLoader, VAELoader, ModelPatchTorchSettings, Seed (rgthree), easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, CLIPVisionLoader, UNETLoader, UNETLoader, wanBlockSwap, wanBlockSwap, Fast Bypasser (rgthree), Fast Bypasser (rgthree), LoadImage, ModelSamplingSD3, ModelSamplingSD3, CLIPVisionEncode, WanFirstLastFrameToVideo, easy batchAnything, easy forLoopStart, easy imageIndexSwitch, ImageResizeKJv2, LoadImage, LoadImage, LoadImage, LoadImage, VHS_VideoCombine, VHS_VideoCombine, easy forLoopEnd, SimpleMath+, VAEDecode, ImpactInt, ImpactInt, PrimitiveStringMultiline, ImpactInt]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/mj绝美风景短视频复刻首尾帧Wan2.2-Smooth Mix_2004053514764599297.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2004053514764599297.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（43 个）：
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `Fast Bypasser (rgthree)`
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `VAELoader`
+- `ModelPatchTorchSettings`
+- `Seed (rgthree)`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPVisionLoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `Fast Bypasser (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `LoadImage`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPVisionEncode`
+- `WanFirstLastFrameToVideo`
+- `easy batchAnything`
+- `easy forLoopStart`
+- `easy imageIndexSwitch`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `easy forLoopEnd`
+- `SimpleMath+`
+- `VAEDecode` ★核心
+- `ImpactInt`
+- `ImpactInt`
+- `PrimitiveStringMultiline`
+- `ImpactInt`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **98%**（42/43）
+
+**有卡**：`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`Fast Bypasser (rgthree)`、`CLIPLoader`、`VAELoader`、`Seed (rgthree)`、`easy cleanGpuUsed`、`CLIPTextEncode`、`KSamplerAdvanced`、`CLIPVisionLoader`、`UNETLoader`、`wanBlockSwap`、`LoadImage`、`ModelSamplingSD3`、`CLIPVisionEncode`、`WanFirstLastFrameToVideo`、`easy batchAnything`、`easy forLoopStart`、`easy imageIndexSwitch`、`ImageResizeKJv2`、`VHS_VideoCombine`、`easy forLoopEnd`、`SimpleMath+`、`VAEDecode`、`ImpactInt`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、Seed (rgthree)

@@ -1,0 +1,151 @@
+---
+key: 视频生成/图生视频/超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 kj v2 不超级版_1975795950243418113.json
+name: 超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 kj v2 不超级版_1975795950243418113.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1975795950243418113.json
+hash: d9354c1a89f59bc0
+coverage: 0.445378
+learned_at: 2026-10-15 22:32:09
+nodes: [ImageConcatMulti, GetNode, GetNode, GetNode, GetNode, ImageConcatMulti, GetNode, GetNode, WanVideoContextOptions, WanVideoSampler, OnnxDetectionModelLoader, GetNode, WanVideoDecode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Note, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, PrimitiveStringMultiline, GetNode, SetNode, SetNode, SetNode, easy showAnything, PoseAndFaceDetection, easy showAnything, PoseRetargetPromptHelper, SetNode, GetNode, Note, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, WanVideoTorchCompileSettings, WanVideoSetBlockSwap, SetNode, SetNode, GetNode, SetNode, GetNode, SetNode, ACE_ImageFaceCrop, GetNode, SetNode, WanVideoSetLoRAs, CLIPVisionLoader, GetNode, VHS_VideoCombine, VHS_VideoCombine, SetNode, MarkdownNote, SetNode, SetNode, WanVideoEncode, WanVideoUni3C_ControlnetLoader, Sam2Segmentation, GrowMask, BlockifyMask, DrawMaskOnImage, DownloadAndLoadSAM2Model, WanVideoTextEncodeCached, DrawViTPose, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, GetNode, VHS_VideoCombine, GetImageSizeAndCount, ImageResizeKJv2, ImageResizeKJv2, SimpleMath+, SimpleMath+, JWLoopImageSequence, GetImageSizeAndCount, VHS_VideoCombine, GetNode, DF_Text_Box, GetNode, WanVideoUni3C_embeds, VHS_LoadVideo, LoadImage, LoadImage, PrimitiveStringMultiline, WanVideoModelLoader, WanVideoVAELoader, easy float, SetNode, VHS_VideoCombine, VHS_LoadVideo, GetNode, Float to Int, Note, Note, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, WanVideoBlockSwap, WanVideoClipVisionEncode, JWInteger, JWInteger, JWInteger, WanVideoAnimateEmbeds, PointsEditor]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 kj v2 不超级版_1975795950243418113.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1975795950243418113.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（119 个）：
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `WanVideoContextOptions`
+- `WanVideoSampler` ★核心
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PrimitiveStringMultiline`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy showAnything`
+- `PoseAndFaceDetection`
+- `easy showAnything`
+- `PoseRetargetPromptHelper`
+- `SetNode`
+- `GetNode`
+- `Note`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `ACE_ImageFaceCrop`
+- `GetNode`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `CLIPVisionLoader`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SetNode`
+- `MarkdownNote`
+- `SetNode`
+- `SetNode`
+- `WanVideoEncode`
+- `WanVideoUni3C_ControlnetLoader`
+- `Sam2Segmentation`
+- `GrowMask`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `DownloadAndLoadSAM2Model`
+- `WanVideoTextEncodeCached`
+- `DrawViTPose`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `SimpleMath+`
+- `SimpleMath+`
+- `JWLoopImageSequence`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `GetNode`
+- `DF_Text_Box`
+- `GetNode`
+- `WanVideoUni3C_embeds`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `easy float`
+- `SetNode`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `GetNode`
+- `Float to Int`
+- `Note`
+- `Note`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `WanVideoAnimateEmbeds`
+- `PointsEditor`
+
+## 知识
+
+覆盖率 **45%**（53/119）
+
+**有卡**：`ImageConcatMulti`、`WanVideoContextOptions`、`WanVideoSampler`、`OnnxDetectionModelLoader`、`WanVideoDecode`、`PoseAndFaceDetection`、`PoseRetargetPromptHelper`、`WanVideoTorchCompileSettings`、`WanVideoSetBlockSwap`、`ACE_ImageFaceCrop`、`WanVideoSetLoRAs`、`CLIPVisionLoader`、`VHS_VideoCombine`、`WanVideoEncode`、`WanVideoUni3C_ControlnetLoader`、`Sam2Segmentation`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`DownloadAndLoadSAM2Model`、`WanVideoTextEncodeCached`、`DrawViTPose`、`GetImageSizeAndCount`、`ImageResizeKJv2`、`SimpleMath+`、`JWLoopImageSequence`、`DF_Text_Box`、`WanVideoUni3C_embeds`、`VHS_LoadVideo`、`LoadImage`、`WanVideoModelLoader`、`WanVideoVAELoader`、`easy float`、`Float to Int`、`WanVideoLoraSelectMulti`、`WanVideoBlockSwap`、`WanVideoClipVisionEncode`、`JWInteger`、`WanVideoAnimateEmbeds`、`PointsEditor`
+
+**用到的条目**：LoadImage、WanVideoUni3C_ControlnetLoader、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoEncode

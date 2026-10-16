@@ -1,0 +1,194 @@
+---
+key: 视频生成/图生视频/SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json
+name: SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2075056544013709313.json
+hash: 3f5d56e793f52cf4
+coverage: 0.369427
+learned_at: 2026-10-15 22:41:20
+nodes: [GetNode, GetNode, ModelSamplingSD3, SetNode, BasicScheduler, GetNode, GetNode, ImageConcatMulti, VHS_VideoCombine, CLIPTextEncode, SetNode, DiffusionModelLoaderKJ, SetNode, SetNode, SetNode, CLIPLoader, CLIPVisionLoader, VAELoader, PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Groups Bypasser (rgthree), SetNode, SetNode, GetNode, CLIPVisionEncode, SetNode, GetNode, SetNode, MarkdownNote, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), GetNode, GetNode, SetNode, GetNode, SamplerCustom, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, CheckpointLoaderSimple, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, KSamplerSelect, SetNode, Note, GetNode, GetNode, WanSCAILToVideo, CLIPTextEncode, SetNode, SetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, SetNode, SCAIL2ColoredMask, SetNode, GetNode, LoraLoaderModelOnly, SamplerCustom, GetNode, GetNode, Label (rgthree), SetNode, SetNode, SetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, ColorTransfer, GetNode, SetNode, SetNode, GetImageRangeFromBatch, GetImageRangeFromBatch, GetNode, SamplerCustom, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ColorTransfer, GetImageRangeFromBatch, GetImageRangeFromBatch, BatchImagesNode, VAEDecode, CLIPTextEncode, CLIPTextEncode, LoadImage, PrimitiveInt, PrimitiveInt, SimpleMath+, Note, SetNode, ImageResizeKJv2, VHS_VideoInfo, WanSCAILToVideo, ShowText|pysssss, ShowText|pysssss, Fast Groups Bypasser (rgthree), Note, PreviewImage, WanChunkFeedForward, VHS_LoadVideo, PrimitiveStringMultiline, PrimitiveBoolean, WanSCAILToVideo, VAEDecode, VAEDecode, GoogleTranslateTextNode, GoogleTranslateTextNode, PrimitiveStringMultiline, PrimitiveStringMultiline, SAM3_VideoTrack, SAM3_VideoTrack, PrimitiveInt, BatchImagesNode, SetNode, LoadImage, SaveImage]
+patterns: []
+missing: []
+parameters: {"checkpoint": "sam3.1-multiplex-fp16.safetensors"}
+---
+
+# 视频生成/图生视频/SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2075056544013709313.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（157 个）：
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `BasicScheduler`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `DiffusionModelLoaderKJ`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `Fast Groups Bypasser (rgthree)`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `CLIPVisionEncode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `MarkdownNote`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SamplerCustom` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `CheckpointLoaderSimple` ★核心
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `SetNode`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `WanSCAILToVideo`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `SetNode`
+- `SCAIL2ColoredMask`
+- `SetNode`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `SamplerCustom` ★核心
+- `GetNode`
+- `GetNode`
+- `Label (rgthree)`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `ColorTransfer`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `SamplerCustom` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ColorTransfer`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `BatchImagesNode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SimpleMath+`
+- `Note`
+- `SetNode`
+- `ImageResizeKJv2`
+- `VHS_VideoInfo`
+- `WanSCAILToVideo`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `Fast Groups Bypasser (rgthree)`
+- `Note`
+- `PreviewImage`
+- `WanChunkFeedForward`
+- `VHS_LoadVideo`
+- `PrimitiveStringMultiline`
+- `PrimitiveBoolean`
+- `WanSCAILToVideo`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `GoogleTranslateTextNode`
+- `GoogleTranslateTextNode`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `SAM3_VideoTrack`
+- `SAM3_VideoTrack`
+- `PrimitiveInt`
+- `BatchImagesNode`
+- `SetNode`
+- `LoadImage`
+- `SaveImage`
+
+## 关键参数
+
+- `checkpoint` = `sam3.1-multiplex-fp16.safetensors`
+
+## 知识
+
+覆盖率 **37%**（58/157）
+
+**有卡**：`ModelSamplingSD3`、`BasicScheduler`、`ImageConcatMulti`、`VHS_VideoCombine`、`CLIPTextEncode`、`DiffusionModelLoaderKJ`、`CLIPLoader`、`CLIPVisionLoader`、`VAELoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPVisionEncode`、`Label (rgthree)`、`SamplerCustom`、`CheckpointLoaderSimple`、`KSamplerSelect`、`WanSCAILToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`SCAIL2ColoredMask`、`LoraLoaderModelOnly`、`ColorTransfer`、`GetImageRangeFromBatch`、`BatchImagesNode`、`VAEDecode`、`LoadImage`、`SimpleMath+`、`ImageResizeKJv2`、`VHS_VideoInfo`、`WanChunkFeedForward`、`VHS_LoadVideo`、`PrimitiveBoolean`、`GoogleTranslateTextNode`、`SAM3_VideoTrack`、`SaveImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、LayerUtility: ImageScaleByAspectRatio V2

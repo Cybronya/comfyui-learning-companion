@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json
+name: LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2057459285617102849.json
+hash: 42e444d5c4335267
+coverage: 0.914286
+learned_at: 2026-10-15 22:38:12
+nodes: [LTXDirector, LTX2SamplingPreviewOverride, Note, Note, Note, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, UNETLoader, VAELoaderKJ, LTXDirectorGuide, LTXVConditioning, ConditioningZeroOut, CFGGuider, SamplerCustomAdvanced, RandomNoise, BasicScheduler, CFGGuider, LTXVConcatAVLatent, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVCropGuides, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXDirectorGuide, LTXVConcatAVLatent, BasicScheduler, KSamplerSelect, VAEDecode, LTXVAudioVAEDecode, CreateVideo, LTXVSeparateAVLatent, SaveVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2057459285617102849.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（35 个）：
+- `LTXDirector`
+- `LTX2SamplingPreviewOverride`
+- `Note`
+- `Note`
+- `Note`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `LTXDirectorGuide`
+- `LTXVConditioning`
+- `ConditioningZeroOut`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `BasicScheduler`
+- `CFGGuider`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `LTXVCropGuides`
+- `LatentUpscaleModelLoader`
+- `LTXVLatentUpsampler` ★核心
+- `LTXDirectorGuide`
+- `LTXVConcatAVLatent`
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `VAEDecode` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `CreateVideo`
+- `LTXVSeparateAVLatent`
+- `SaveVideo`
+
+## 知识
+
+覆盖率 **91%**（32/35）
+
+**有卡**：`LTXDirector`、`LTX2SamplingPreviewOverride`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`LTXDirectorGuide`、`LTXVConditioning`、`ConditioningZeroOut`、`CFGGuider`、`SamplerCustomAdvanced`、`RandomNoise`、`BasicScheduler`、`LTXVConcatAVLatent`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`VAEDecode`、`LTXVAudioVAEDecode`、`CreateVideo`、`SaveVideo`
+
+**用到的条目**：VAEDecode、ConditioningZeroOut、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent

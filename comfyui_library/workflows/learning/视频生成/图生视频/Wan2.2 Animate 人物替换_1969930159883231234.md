@@ -1,0 +1,74 @@
+---
+key: 视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json
+name: Wan2.2 Animate 人物替换_1969930159883231234.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1969930159883231234.json
+hash: 5e6f63a2675027b0
+coverage: 0.833333
+learned_at: 2026-10-15 22:31:50
+nodes: [WanVideoDecode, WanVideoAnimateEmbeds, WanVideoSampler, WanVideoBlockSwap, WanVideoModelLoader, WanVideoVAELoader, WanVideoSetLoRAs, WanVideoSetBlockSwap, FaceMaskFromPoseKeypoints, PixelPerfectResolution, SetNode, ImageCropByMaskAndResize, LayerUtility: PurgeVRAM, CLIPVisionLoader, WanVideoLoraSelectMulti, VHS_VideoInfo, LayerUtility: PurgeVRAM, ImageResizeKJv2, DWPreprocessor, SetNode, LayerUtility: PurgeVRAM, WanVideoClipVisionEncode, WanVideoClipVisionEncode, ImageResizeKJv2, LayerUtility: PurgeVRAM, CLIPVisionLoader, WanVideoTextEncodeCached, ImageConcatMulti, SetNode, ImageConcatMulti, GetNode, JWInteger, JWInteger, GetNode, GetNode, GetNode, VHS_VideoCombine, VHS_VideoCombine, easy cleanGpuUsed, Text, VHS_LoadVideo, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 Animate 人物替换_1969930159883231234.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1969930159883231234.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（42 个）：
+- `WanVideoDecode`
+- `WanVideoAnimateEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `FaceMaskFromPoseKeypoints`
+- `PixelPerfectResolution`
+- `SetNode`
+- `ImageCropByMaskAndResize`
+- `LayerUtility: PurgeVRAM`
+- `CLIPVisionLoader`
+- `WanVideoLoraSelectMulti`
+- `VHS_VideoInfo`
+- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
+- `DWPreprocessor`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoClipVisionEncode`
+- `WanVideoClipVisionEncode`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM`
+- `CLIPVisionLoader`
+- `WanVideoTextEncodeCached`
+- `ImageConcatMulti`
+- `SetNode`
+- `ImageConcatMulti`
+- `GetNode`
+- `JWInteger`
+- `JWInteger`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `Text`
+- `VHS_LoadVideo`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **83%**（35/42）
+
+**有卡**：`WanVideoDecode`、`WanVideoAnimateEmbeds`、`WanVideoSampler`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`FaceMaskFromPoseKeypoints`、`PixelPerfectResolution`、`ImageCropByMaskAndResize`、`LayerUtility: PurgeVRAM`、`CLIPVisionLoader`、`WanVideoLoraSelectMulti`、`VHS_VideoInfo`、`ImageResizeKJv2`、`DWPreprocessor`、`WanVideoClipVisionEncode`、`WanVideoTextEncodeCached`、`ImageConcatMulti`、`JWInteger`、`VHS_VideoCombine`、`easy cleanGpuUsed`、`Text`、`VHS_LoadVideo`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

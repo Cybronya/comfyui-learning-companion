@@ -1,0 +1,138 @@
+---
+key: 视频生成/图生视频/千问Qwen-Image-Edit-Rapid-AIO and wan2.2 穿搭_2052291225281150977.json
+name: 千问Qwen-Image-Edit-Rapid-AIO and wan2.2 穿搭_2052291225281150977.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2052291225281150977.json
+hash: 6746cd29bc73a7ed
+coverage: 0.8
+learned_at: 2026-10-15 22:37:28
+nodes: [KSampler, TextEncodeQwenImageEditPlus, GetNode, CLIPVisionEncode, SimpleMath+, ModelSamplingSD3, SetNode, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, SetNode, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, TextEncodeQwenImageEditPlus, VAEEncode, CheckpointLoaderSimple, GetNode, ImageScaleToTotalPixels, GetNode, KSampler, VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, TextEncodeQwenImageEditPlus, llama_cpp_parameters, easy cleanGpuUsed, easy clearCacheAll, easy saveText, llama_cpp_instruct_adv, easy cleanGpuUsed, easy clearCacheAll, easy saveText, PreviewAny, PreviewImage, VAEDecode, PreviewImage, VAEDecode, easy clearCacheAll, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, SetNode, CLIPVisionLoader, SetNode, SetNode, CLIPLoader, VAELoader, easy clearCacheAll, easy cleanGpuUsed, PreviewAny, ImageScaleBy, INTConstant, VAEDecode, INTConstant, WanFirstMiddleLastFrameToVideo, TextEncodeQwenImageEditPlus, ImageScaleToTotalPixels, ImageScaleToTotalPixels, Fast Groups Muter (rgthree), LayerUtility: ImageScaleByAspectRatio V2, CLIPVisionEncode, GetNode, KSamplerAdvanced, KSamplerAdvanced, llama_cpp_instruct_adv, easy cleanGpuUsed, VHS_VideoCombine, GMFSS Fortuna VFI, RIFE VFI, VHS_VideoCombine, GetNode, Note, LoadImage, llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_model_loader]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 6, "checkpoint": "Qwen-Rapid-AIO-NSFW-v13.safetensors", "denoise": "beta", "sampler_name": 1.3, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/千问Qwen-Image-Edit-Rapid-AIO and wan2.2 穿搭_2052291225281150977.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2052291225281150977.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（80 个）：
+- `KSampler` ★核心
+- `TextEncodeQwenImageEditPlus`
+- `GetNode`
+- `CLIPVisionEncode`
+- `SimpleMath+`
+- `ModelSamplingSD3`
+- `SetNode`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `TextEncodeQwenImageEditPlus`
+- `VAEEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `GetNode`
+- `ImageScaleToTotalPixels`
+- `GetNode`
+- `KSampler` ★核心
+- `VAEEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `TextEncodeQwenImageEditPlus`
+- `llama_cpp_parameters`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy saveText`
+- `llama_cpp_instruct_adv`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `easy saveText`
+- `PreviewAny`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `easy clearCacheAll`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `SetNode`
+- `CLIPLoader`
+- `VAELoader`
+- `easy clearCacheAll`
+- `easy cleanGpuUsed`
+- `PreviewAny`
+- `ImageScaleBy`
+- `INTConstant`
+- `VAEDecode` ★核心
+- `INTConstant`
+- `WanFirstMiddleLastFrameToVideo`
+- `TextEncodeQwenImageEditPlus`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `Fast Groups Muter (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionEncode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `llama_cpp_instruct_adv`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `GMFSS Fortuna VFI`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `GetNode`
+- `Note`
+- `LoadImage`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1.3`
+- `scheduler` = `euler`
+- `denoise` = `beta`
+- `checkpoint` = `Qwen-Rapid-AIO-NSFW-v13.safetensors`
+
+## 知识
+
+覆盖率 **80%**（64/80）
+
+**有卡**：`KSampler`、`TextEncodeQwenImageEditPlus`、`CLIPVisionEncode`、`SimpleMath+`、`ModelSamplingSD3`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAEEncode`、`CheckpointLoaderSimple`、`ImageScaleToTotalPixels`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`llama_cpp_parameters`、`easy cleanGpuUsed`、`easy clearCacheAll`、`easy saveText`、`llama_cpp_instruct_adv`、`VAEDecode`、`CLIPTextEncode`、`CLIPVisionLoader`、`CLIPLoader`、`VAELoader`、`ImageScaleBy`、`INTConstant`、`WanFirstMiddleLastFrameToVideo`、`KSamplerAdvanced`、`VHS_VideoCombine`、`GMFSS Fortuna VFI`、`RIFE VFI`、`llama_cpp_model_loader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

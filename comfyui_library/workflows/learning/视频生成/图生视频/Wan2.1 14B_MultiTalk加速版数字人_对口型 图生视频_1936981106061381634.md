@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/Wan2.1 14B_MultiTalk加速版数字人_对口型 图生视频_1936981106061381634.json
+name: Wan2.1 14B_MultiTalk加速版数字人_对口型 图生视频_1936981106061381634.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1936981106061381634.json
+hash: fffe45ad92c190f4
+coverage: 0.666667
+learned_at: 2026-10-15 22:30:27
+nodes: [WanVideoEnhanceAVideo, WanVideoVAELoader, WanVideoLoraSelect, WanVideoBlockSwap, SetNode, GetNode, LoadWanVideoT5TextEncoder, WanVideoTextEncode, Audio Duration (mtb), SomethingToString, InversionDemoLazyIndexSwitch, GetNode, easy textSwitch, easy cleanGpuUsed, RH_Captioner, SetNode, CLIPVisionLoader, SetNode, GetNode, WanVideoClipVisionEncode, GetNode, easy cleanGpuUsed, Note, MultiTalkModelLoader, LoadImage, SetNode, Note, AudioCrop, Audio Duration (mtb), Note, VHS_VideoCombine, GetNode, Note, Int, DownloadAndLoadWav2VecModel, AudioSeparation, MultiTalkWav2VecEmbeds, WanVideoSampler, WanVideoModelLoader, WanVideoSLG, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoDecode, WanVideoTorchCompileSettings, Fast Groups Bypasser (rgthree), CR Prompt Text, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, VHS_DuplicateImages, GetNode, ImpactSwitch, LoadAudio, VHS_LoadVideo, Note, Note, easy int, Note, Note, easy int, easy cleanGpuUsed, WanVideoUni3C_embeds, WanVideoEncode, WanVideoUni3C_ControlnetLoader, Note, easy int]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 14B_MultiTalk加速版数字人_对口型 图生视频_1936981106061381634.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1936981106061381634.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（66 个）：
+- `WanVideoEnhanceAVideo`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `SetNode`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `Audio Duration (mtb)`
+- `SomethingToString`
+- `InversionDemoLazyIndexSwitch`
+- `GetNode`
+- `easy textSwitch`
+- `easy cleanGpuUsed`
+- `RH_Captioner`
+- `SetNode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `Note`
+- `MultiTalkModelLoader`
+- `LoadImage`
+- `SetNode`
+- `Note`
+- `AudioCrop`
+- `Audio Duration (mtb)`
+- `Note`
+- `VHS_VideoCombine`
+- `GetNode`
+- `Note`
+- `Int`
+- `DownloadAndLoadWav2VecModel`
+- `AudioSeparation`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoDecode`
+- `WanVideoTorchCompileSettings`
+- `Fast Groups Bypasser (rgthree)`
+- `CR Prompt Text`
+- `easy showAnything`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
+- `VHS_DuplicateImages`
+- `GetNode`
+- `ImpactSwitch`
+- `LoadAudio`
+- `VHS_LoadVideo`
+- `Note`
+- `Note`
+- `easy int`
+- `Note`
+- `Note`
+- `easy int`
+- `easy cleanGpuUsed`
+- `WanVideoUni3C_embeds`
+- `WanVideoEncode`
+- `WanVideoUni3C_ControlnetLoader`
+- `Note`
+- `easy int`
+
+## 知识
+
+覆盖率 **67%**（44/66）
+
+**有卡**：`WanVideoEnhanceAVideo`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`Audio Duration (mtb)`、`SomethingToString`、`InversionDemoLazyIndexSwitch`、`easy textSwitch`、`easy cleanGpuUsed`、`RH_Captioner`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`MultiTalkModelLoader`、`LoadImage`、`AudioCrop`、`VHS_VideoCombine`、`Int`、`DownloadAndLoadWav2VecModel`、`AudioSeparation`、`MultiTalkWav2VecEmbeds`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`WanVideoTorchCompileSettings`、`CR Prompt Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`VHS_DuplicateImages`、`LoadAudio`、`VHS_LoadVideo`、`easy int`、`WanVideoUni3C_embeds`、`WanVideoEncode`、`WanVideoUni3C_ControlnetLoader`
+
+**用到的条目**：LoadImage、WanVideoUni3C_ControlnetLoader、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

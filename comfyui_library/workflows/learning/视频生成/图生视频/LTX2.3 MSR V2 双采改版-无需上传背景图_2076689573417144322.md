@@ -1,0 +1,117 @@
+---
+key: 视频生成/图生视频/LTX2.3 MSR V2 双采改版-无需上传背景图_2076689573417144322.json
+name: LTX2.3 MSR V2 双采改版-无需上传背景图_2076689573417144322.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2076689573417144322.json
+hash: 1b6a6a8013a01e4a
+coverage: 0.871795
+learned_at: 2026-10-15 22:41:33
+nodes: [RandomNoise, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), PrimitiveStringMultiline, PrimitiveStringMultiline, CFGGuider, ComfyMathExpression, LTXVAudioVAEDecode, PrimitiveInt, LTXVCropGuides, SamplerCustomAdvanced, LayerUtility: PurgeVRAM, Reroute, ComfyMathExpression, PathchSageAttentionKJ, CLIPTextEncode, LTXVEmptyLatentAudio, PromptRelayEncode, LTXAddVideoICLoRAGuide, KSamplerSelect, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, LTX2_NAG, EmptyLTXVLatentVideo, LTXVConcatAVLatent, ComfyMathExpression, ComfyMathExpression, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, LoadImage, Label (rgthree), BatchImagesNode, LoadImage, RepeatImageBatch, PrimitiveInt, RepeatImageBatch, RepeatImageBatch, ResizeImagesByLongerEdge, RepeatImageBatch, ResizeImagesByLongerEdge, PrimitiveStringMultiline, VHS_VideoCombine, LoadImage, RepeatImageBatch, KSamplerSelect, RandomNoise, ManualSigmas, LTXTiledSampler, LTXVSeparateAVLatent, LTXVLatentUpsampler, LTXVCropGuides, CFGGuider, LatentUpscaleModelLoader, LTXVConcatAVLatent, LTXAddVideoICLoRAGuide, ComfyMathExpression, ComfyMathExpression, LatentUpscaleModelLoader, LTXVLatentUpsampler, Note, LoraLoaderModelOnly, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LTXICLoRALoaderModelOnly, PrimitiveStringMultiline, LoadImage, LoadImage, PrimitiveInt, RTXVideoSuperResolution, UNETLoader, VAEDecodeTiled, LayerUtility: PurgeVRAM, PrimitiveInt]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 44, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 MSR V2 双采改版-无需上传背景图_2076689573417144322.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2076689573417144322.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（78 个）：
+- `RandomNoise`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `CFGGuider`
+- `ComfyMathExpression`
+- `LTXVAudioVAEDecode` ★核心
+- `PrimitiveInt`
+- `LTXVCropGuides`
+- `SamplerCustomAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `Reroute`
+- `ComfyMathExpression`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `PromptRelayEncode`
+- `LTXAddVideoICLoRAGuide`
+- `KSamplerSelect` ★核心
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `LTX2_NAG`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `LoadImage`
+- `Label (rgthree)`
+- `BatchImagesNode`
+- `LoadImage`
+- `RepeatImageBatch`
+- `PrimitiveInt`
+- `RepeatImageBatch`
+- `RepeatImageBatch`
+- `ResizeImagesByLongerEdge`
+- `RepeatImageBatch`
+- `ResizeImagesByLongerEdge`
+- `PrimitiveStringMultiline`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `RepeatImageBatch`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `ManualSigmas`
+- `LTXTiledSampler` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVCropGuides`
+- `CFGGuider`
+- `LatentUpscaleModelLoader`
+- `LTXVConcatAVLatent`
+- `LTXAddVideoICLoRAGuide`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LatentUpscaleModelLoader`
+- `LTXVLatentUpsampler` ★核心
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LTXICLoRALoaderModelOnly` ★核心
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `LoadImage`
+- `PrimitiveInt`
+- `RTXVideoSuperResolution`
+- `UNETLoader` ★核心
+- `VAEDecodeTiled` ★核心
+- `LayerUtility: PurgeVRAM`
+- `PrimitiveInt`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `44`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **87%**（68/78）
+
+**有卡**：`RandomNoise`、`Label (rgthree)`、`CFGGuider`、`ComfyMathExpression`、`LTXVAudioVAEDecode`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`LayerUtility: PurgeVRAM`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`PromptRelayEncode`、`LTXAddVideoICLoRAGuide`、`KSamplerSelect`、`LTXVConditioning`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTX2_NAG`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`ResizeImagesByLongerEdge`、`LoadImage`、`BatchImagesNode`、`RepeatImageBatch`、`VHS_VideoCombine`、`LTXTiledSampler`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`VAELoaderKJ`、`LTXICLoRALoaderModelOnly`、`RTXVideoSuperResolution`、`UNETLoader`、`VAEDecodeTiled`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

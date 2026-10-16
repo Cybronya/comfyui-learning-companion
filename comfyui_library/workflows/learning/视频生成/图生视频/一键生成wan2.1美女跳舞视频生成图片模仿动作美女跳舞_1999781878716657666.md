@@ -1,0 +1,95 @@
+---
+key: 视频生成/图生视频/一键生成wan2.1美女跳舞视频生成图片模仿动作美女跳舞_1999781878716657666.json
+name: 一键生成wan2.1美女跳舞视频生成图片模仿动作美女跳舞_1999781878716657666.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1999781878716657666.json
+hash: 88a76719151154bd
+coverage: 0.857143
+learned_at: 2026-10-15 22:33:38
+nodes: [CLIPLoader, VAELoader, AddLabel, EmptyImage, AddLabel, ImageConcatMulti, KSampler, VAEDecodeTiled, UNETLoader, SkipLayerGuidanceWanVideo, WanVideoTeaCacheKJ, ModelSamplingSD3, WanFunControlToVideo, CLIPTextEncode, EmptyHunyuanLatentVideo, ImageResizeKJ, ImageResizeKJ, LoadImage, Florence2Run, CR Text, PreviewImage, Florence2ModelLoader, ImageResize+, MathExpression|pysssss, SetNode, ImageBlend, SetNode, CLIPVisionEncode, CLIPVisionLoader, VHS_VideoCombine, DepthAnythingV2Preprocessor, easy textSwitch, easy showAnything, DWPreprocessor, AddLabel, Note, CLIPTextEncode, SetNode, easy int, VHS_VideoCombine, VHS_VideoCombine, VHS_LoadVideo]
+patterns: []
+missing: []
+problems: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 751320751162324, "steps": 30}
+discoveries: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/一键生成wan2.1美女跳舞视频生成图片模仿动作美女跳舞_1999781878716657666.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1999781878716657666.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（42 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `AddLabel`
+- `EmptyImage`
+- `AddLabel`
+- `ImageConcatMulti`
+- `KSampler` ★核心
+- `VAEDecodeTiled` ★核心
+- `UNETLoader` ★核心
+- `SkipLayerGuidanceWanVideo`
+- `WanVideoTeaCacheKJ`
+- `ModelSamplingSD3`
+- `WanFunControlToVideo`
+- `CLIPTextEncode` ★核心
+- `EmptyHunyuanLatentVideo`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `LoadImage`
+- `Florence2Run`
+- `CR Text`
+- `PreviewImage`
+- `Florence2ModelLoader`
+- `ImageResize+`
+- `MathExpression|pysssss`
+- `SetNode`
+- `ImageBlend`
+- `SetNode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `VHS_VideoCombine`
+- `DepthAnythingV2Preprocessor`
+- `easy textSwitch`
+- `easy showAnything`
+- `DWPreprocessor`
+- `AddLabel`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `easy int`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+
+## 关键参数
+
+- `seed` = `751320751162324`
+- `steps` = `30`
+- `cfg` = `5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **86%**（36/42）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`AddLabel`、`EmptyImage`、`ImageConcatMulti`、`KSampler`、`VAEDecodeTiled`、`UNETLoader`、`SkipLayerGuidanceWanVideo`、`WanVideoTeaCacheKJ`、`ModelSamplingSD3`、`WanFunControlToVideo`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`ImageResizeKJ`、`LoadImage`、`Florence2Run`、`CR Text`、`Florence2ModelLoader`、`ImageResize+`、`MathExpression|pysssss`、`ImageBlend`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VHS_VideoCombine`、`DepthAnythingV2Preprocessor`、`easy textSwitch`、`DWPreprocessor`、`easy int`、`VHS_LoadVideo`
+
+**用到的条目**：KSampler、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、DepthAnythingV2Preprocessor、SkipLayerGuidanceWanVideo
+
+## 参数体检
+
+发现 1 个问题：
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

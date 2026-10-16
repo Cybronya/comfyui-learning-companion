@@ -1,0 +1,69 @@
+---
+key: 视频生成/图生视频/WAN2.2首尾帧_1955196269809602562.json
+name: WAN2.2首尾帧_1955196269809602562.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1955196269809602562.json
+hash: 272ea2ca45b82bee
+coverage: 0.925926
+learned_at: 2026-10-15 22:31:07
+nodes: [PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, UnetLoaderGGUF, UnetLoaderGGUF, LoraLoaderModelOnly, CLIPTextEncode, WanFirstLastFrameToVideo, wanBlockSwap, wanBlockSwap, LoraLoaderModelOnly, ModelSamplingSD3, CLIPLoader, VAELoader, CLIPTextEncode, LoadImage, LoadImage, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, VAEDecode, VHS_VideoCombine, PreviewImage, ImageResize+, ImageResize+, PreviewImage]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "uni_pc", "seed": "enable", "steps": "increment"}
+---
+
+# 视频生成/图生视频/WAN2.2首尾帧_1955196269809602562.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1955196269809602562.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（27 个）：
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `WanFirstLastFrameToVideo`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `ImageResize+`
+- `ImageResize+`
+- `PreviewImage`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `increment`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `uni_pc`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **93%**（25/27）
+
+**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`WanFirstLastFrameToVideo`、`wanBlockSwap`、`CLIPLoader`、`VAELoader`、`LoadImage`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`VHS_VideoCombine`、`ImageResize+`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、ImageResize+

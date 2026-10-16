@@ -1,0 +1,87 @@
+---
+key: 视频生成/图生视频/多场景分段控制图生视频tx2.3_2050790516085796865.json
+name: 多场景分段控制图生视频tx2.3_2050790516085796865.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2050790516085796865.json
+hash: f0b8113676a26502
+coverage: 0.770833
+learned_at: 2026-10-15 22:37:19
+nodes: [ImageResizeKJv2, ImageResizeKJv2, Reroute, Reroute, EmptyLTXVLatentVideo, VAEDecodeTiled, Reroute, Float, LTXVEmptyLatentAudio, LoadImage, LoadImage, MarkdownNote, LTXVSeparateAVLatent, VAELoaderKJ, VAELoaderKJ, LTXVAudioVAEDecode, Reroute, SamplerCustom, LTXVConcatAVLatent, Reroute, ImageResizeKJv2, ImageResizeKJv2, Reroute, DualCLIPLoader, KSamplerSelect, LTX2_NAG, CLIPTextEncode, Sleep, SaveImage, VHS_VideoCombine, LoadImage, GuHaiAutoImageSplit, SaveImage, LoadImage, LoadImage, PromptRelayEncodeTimeline, LTXVAddGuideMulti, MathExpression|pysssss, Int, TTResolutionSelector, MarkdownNote, MarkdownNote, easy showAnything, RHHiddenNodes, DiffusionModelLoaderKJ, RHHiddenNodes, LTXVConditioning, MarkdownNote]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 30, "width": 97}
+---
+
+# 视频生成/图生视频/多场景分段控制图生视频tx2.3_2050790516085796865.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2050790516085796865.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（48 个）：
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `Reroute`
+- `Reroute`
+- `EmptyLTXVLatentVideo`
+- `VAEDecodeTiled` ★核心
+- `Reroute`
+- `Float`
+- `LTXVEmptyLatentAudio` ★核心
+- `LoadImage`
+- `LoadImage`
+- `MarkdownNote`
+- `LTXVSeparateAVLatent`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LTXVAudioVAEDecode` ★核心
+- `Reroute`
+- `SamplerCustom` ★核心
+- `LTXVConcatAVLatent`
+- `Reroute`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `Reroute`
+- `DualCLIPLoader`
+- `KSamplerSelect` ★核心
+- `LTX2_NAG`
+- `CLIPTextEncode` ★核心
+- `Sleep`
+- `SaveImage`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `GuHaiAutoImageSplit`
+- `SaveImage`
+- `LoadImage`
+- `LoadImage`
+- `PromptRelayEncodeTimeline`
+- `LTXVAddGuideMulti`
+- `MathExpression|pysssss`
+- `Int`
+- `TTResolutionSelector`
+- `MarkdownNote`
+- `MarkdownNote`
+- `easy showAnything`
+- `RHHiddenNodes`
+- `DiffusionModelLoaderKJ`
+- `RHHiddenNodes`
+- `LTXVConditioning`
+- `MarkdownNote`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `30`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **77%**（37/48）
+
+**有卡**：`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`VAEDecodeTiled`、`Float`、`LTXVEmptyLatentAudio`、`LoadImage`、`LTXVSeparateAVLatent`、`VAELoaderKJ`、`LTXVAudioVAEDecode`、`SamplerCustom`、`LTXVConcatAVLatent`、`DualCLIPLoader`、`KSamplerSelect`、`LTX2_NAG`、`CLIPTextEncode`、`Sleep`、`SaveImage`、`VHS_VideoCombine`、`GuHaiAutoImageSplit`、`PromptRelayEncodeTimeline`、`LTXVAddGuideMulti`、`MathExpression|pysssss`、`Int`、`TTResolutionSelector`、`RHHiddenNodes`、`DiffusionModelLoaderKJ`、`LTXVConditioning`
+
+**用到的条目**：CLIPTextEncode、LoadImage、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent、LTXVSeparateAVLatent、VAEDecodeTiled、VAELoaderKJ

@@ -1,0 +1,82 @@
+---
+key: 视频生成/图生视频/（自用）Dyno Remix I2V 0.6模型图生视频V1（官方流）_1976186558992793601.json
+name: （自用）Dyno Remix I2V 0.6模型图生视频V1（官方流）_1976186558992793601.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1976186558992793601.json
+hash: d9e5755a2300560c
+coverage: 0.9
+learned_at: 2026-10-15 22:32:10
+nodes: [MarkdownNote, VAELoader, MarkdownNote, ImageFromBatch+, Note, LoraLoaderModelOnly, WanImageToVideo, CLIPVisionEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, TorchCompileModel, LayerUtility: ImageScaleByAspectRatio V2, Note, JWInteger, CLIPTextEncode, TorchCompileModel, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, PathchSageAttentionKJ, LoraLoaderModelOnly, CLIPTextEncode, VAEDecode, TT_img_enc, CLIPLoader, CLIPVisionLoader, JWInteger, SaveImage, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, LoadImage, SaveImage, CR Prompt Text]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/（自用）Dyno Remix I2V 0.6模型图生视频V1（官方流）_1976186558992793601.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1976186558992793601.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（40 个）：
+- `MarkdownNote`
+- `VAELoader`
+- `MarkdownNote`
+- `ImageFromBatch+`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `TorchCompileModel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `JWInteger`
+- `CLIPTextEncode` ★核心
+- `TorchCompileModel`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `TT_img_enc`
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `JWInteger`
+- `SaveImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `LoadImage`
+- `SaveImage`
+- `CR Prompt Text`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **90%**（36/40）
+
+**有卡**：`VAELoader`、`ImageFromBatch+`、`LoraLoaderModelOnly`、`WanImageToVideo`、`CLIPVisionEncode`、`PathchSageAttentionKJ`、`TorchCompileModel`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`CLIPTextEncode`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`TT_img_enc`、`CLIPLoader`、`CLIPVisionLoader`、`SaveImage`、`UNETLoader`、`LoadImage`、`CR Prompt Text`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225.json
+name: Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1951969407968948225.json
+hash: b05bc0e954e1d19d
+coverage: 1
+learned_at: 2026-10-15 22:30:59
+nodes: [LoadImage, Int, TextInput_, LTXVPromptEnhancerLoader, JjkConcat, TTP_text_mix, LTXVPromptEnhancer, Bjornulf_ShowStringText, TextInput_, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoModelLoader, WanVideoTorchCompileSettings, INTConstant, INTConstant, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSampler, WanVideoImageToVideoEncode, ImageResizeKJv2, WanVideoSetBlockSwap, ImageResizeKJ, WanVideoBlockSwap, WanVideoTextEncode, WanVideoSampler, WanVideoDecode, GetImageSizeAndCount, CreateCFGScheduleFloatList, VHS_VideoCombine, Note Plus (mtb)]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1951969407968948225.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（34 个）：
+- `LoadImage`
+- `Int`
+- `TextInput_`
+- `LTXVPromptEnhancerLoader`
+- `JjkConcat`
+- `TTP_text_mix`
+- `LTXVPromptEnhancer`
+- `Bjornulf_ShowStringText`
+- `TextInput_`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSampler` ★核心
+- `WanVideoImageToVideoEncode`
+- `ImageResizeKJv2`
+- `WanVideoSetBlockSwap`
+- `ImageResizeKJ`
+- `WanVideoBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `CreateCFGScheduleFloatList`
+- `VHS_VideoCombine`
+- `Note Plus (mtb)`
+
+## 知识
+
+覆盖率 **100%**（34/34）
+
+**有卡**：`LoadImage`、`Int`、`TextInput_`、`LTXVPromptEnhancerLoader`、`JjkConcat`、`TTP_text_mix`、`LTXVPromptEnhancer`、`Bjornulf_ShowStringText`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`INTConstant`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`ImageResizeKJv2`、`ImageResizeKJ`、`WanVideoBlockSwap`、`WanVideoTextEncode`、`WanVideoDecode`、`GetImageSizeAndCount`、`CreateCFGScheduleFloatList`、`VHS_VideoCombine`、`Note Plus (mtb)`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

@@ -655,6 +655,26 @@ def test_learn_bom_and_bad_input():
     print(f"  空 nodes: {r3.status}")
     assert r3.status == "completed", "空工作流不算失败"
 
+    # 既无 nodes 也无 prompt 的 JSON 是配置文件误入库（官方模板包里的
+    # fuse_options.json 就是这样，学出来是 0% 覆盖的废记录）
+    conf = root / "options.json"
+    conf.write_text(
+        '{"keys": [{"name": "name", "weight": 0.3}], "threshold": 0.33}',
+        encoding="utf-8",
+    )
+    r4 = learner.learn(str(conf))
+    print(f"  配置文件: {r4.status} - {r4.error}")
+    assert r4.status == "failed" and "不是工作流" in r4.error
+    assert not r4.nodes, "不该把配置文件的键当成节点学进去"
+
+    # API 格式（prompt 键）仍算工作流，不能被这个门槛误伤
+    api = root / "api_format.json"
+    write_json(api, {"prompt": {"3": {"class_type": "KSampler",
+                                      "inputs": {"seed": 1}}}})
+    r5 = learner.learn(str(api))
+    print(f"  API 格式: {r5.status}")
+    assert r5.status == "completed", "prompt 键是合法的工作流形态"
+
     print("BOM 与异常处理正确 [OK]\n")
 
 

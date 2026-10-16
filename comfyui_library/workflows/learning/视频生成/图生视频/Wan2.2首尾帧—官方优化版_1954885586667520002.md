@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/Wan2.2首尾帧—官方优化版_1954885586667520002.json
+name: Wan2.2首尾帧—官方优化版_1954885586667520002.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1954885586667520002.json
+hash: 7b97b23a6240bee4
+coverage: 0.914286
+learned_at: 2026-10-15 22:31:07
+nodes: [LoraLoaderModelOnly, ModelSamplingSD3, LoraLoaderModelOnly, ModelSamplingSD3, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, WanVideoNAG, RH_Translator, RH_Captioner, easy showAnything, easy showAnything, KSamplerAdvanced, KSamplerAdvanced, WanFirstLastFrameToVideo, DF_Integer, PrimitiveNode, CLIPVisionEncode, CLIPVisionLoader, SimpleMath+, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, CLIPVisionLoader, CLIPVisionEncode, VAELoader, UNETLoader, CLIPLoader, CLIPTextEncode, CLIPTextEncode, VHS_VideoCombine, VAEDecode, WanVideoNAG, ImageStitch, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 4, "scheduler": "euler", "seed": "disable", "steps": "increment"}
+---
+
+# 视频生成/图生视频/Wan2.2首尾帧—官方优化版_1954885586667520002.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1954885586667520002.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（35 个）：
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `WanVideoNAG`
+- `RH_Translator`
+- `RH_Captioner`
+- `easy showAnything`
+- `easy showAnything`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `WanFirstLastFrameToVideo`
+- `DF_Integer`
+- `PrimitiveNode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `SimpleMath+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `WanVideoNAG`
+- `ImageStitch`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `increment`
+- `cfg` = `8`
+- `sampler_name` = `4`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **91%**（32/35）
+
+**有卡**：`LoraLoaderModelOnly`、`ModelSamplingSD3`、`UNETLoader`、`PathchSageAttentionKJ`、`WanVideoNAG`、`RH_Translator`、`RH_Captioner`、`KSamplerAdvanced`、`WanFirstLastFrameToVideo`、`DF_Integer`、`CLIPVisionEncode`、`CLIPVisionLoader`、`SimpleMath+`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`VHS_VideoCombine`、`VAEDecode`、`ImageStitch`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,128 @@
+---
+key: 视频生成/图生视频/LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json
+name: LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2079548676040646657.json
+hash: b8b054711380ac8b
+coverage: 0.96875
+learned_at: 2026-10-15 22:42:04
+nodes: [CFGGuider, LTXVConcatAVLatent, KSamplerSelect, easy getNode, easy getNode, easy getNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, RandomNoise, easy getNode, AudioSeparation, easy setNode, easy getNode, easy setNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy setNode, easy getNode, easy getNode, easy setNode, easy setNode, easy setNode, easy getNode, ManualSigmas, VAEDecodeTiled, easy setNode, easy setNode, LTXVImgToVideoInplace, easy setNode, LTXVAudioVAEEncode, easy setNode, SetLatentNoiseMask, SolidMask, easy float, RandomNoise, SamplerCustomAdvanced, LTXVScheduler, LTXVConcatAVLatent, VAEDecodeTiled, VHS_VideoCombine, easy getNode, easy getNode, easy getNode, LTXVLatentUpsampler, LTXVImgToVideoInplace, easy getNode, LTXVSeparateAVLatent, easy setNode, LTXVPreprocess, EmptyLTXVLatentVideo, easy getNode, easy getNode, easy setNode, easy getNode, easy setNode, easy showAnything, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, easy getNode, easy getNode, CLIPTextEncode, easy getNode, easy setNode, ImageResizeKJv2, Fast Groups Muter (rgthree), easy setNode, easy getNode, easy setNode, CR Text, AudioCrop, 1hew_AudioDuration, LoadImage, LoadAudio, TTResolutionSelector, CLIPTextEncode, VHS_VideoCombine, DiffusionModelLoaderKJ, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LatentUpscaleModelLoader, KSamplerSelect, CFGGuider, easy getNode, easy setNode, LTXVConditioning, LTX2_NAG, LTXVChunkFeedForward, easy setNode, easy getNode, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2079548676040646657.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（96 个）：
+- `CFGGuider`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `easy getNode`
+- `AudioSeparation`
+- `easy setNode`
+- `easy getNode`
+- `easy setNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `easy setNode`
+- `easy setNode`
+- `easy getNode`
+- `ManualSigmas`
+- `VAEDecodeTiled` ★核心
+- `easy setNode`
+- `easy setNode`
+- `LTXVImgToVideoInplace`
+- `easy setNode`
+- `LTXVAudioVAEEncode` ★核心
+- `easy setNode`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `easy float`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVScheduler`
+- `LTXVConcatAVLatent`
+- `VAEDecodeTiled` ★核心
+- `VHS_VideoCombine`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `easy getNode`
+- `LTXVSeparateAVLatent`
+- `easy setNode`
+- `LTXVPreprocess`
+- `EmptyLTXVLatentVideo`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `easy getNode`
+- `easy setNode`
+- `easy showAnything`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy getNode`
+- `easy getNode`
+- `CLIPTextEncode` ★核心
+- `easy getNode`
+- `easy setNode`
+- `ImageResizeKJv2`
+- `Fast Groups Muter (rgthree)`
+- `easy setNode`
+- `easy getNode`
+- `easy setNode`
+- `CR Text`
+- `AudioCrop`
+- `1hew_AudioDuration`
+- `LoadImage`
+- `LoadAudio`
+- `TTResolutionSelector`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `DiffusionModelLoaderKJ`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LatentUpscaleModelLoader`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `easy getNode`
+- `easy setNode`
+- `LTXVConditioning`
+- `LTX2_NAG`
+- `LTXVChunkFeedForward`
+- `easy setNode`
+- `easy getNode`
+- `Note`
+
+## 知识
+
+覆盖率 **97%**（93/96）
+
+**有卡**：`CFGGuider`、`LTXVConcatAVLatent`、`KSamplerSelect`、`easy getNode`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`RandomNoise`、`AudioSeparation`、`easy setNode`、`ManualSigmas`、`VAEDecodeTiled`、`LTXVImgToVideoInplace`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`SolidMask`、`easy float`、`LTXVScheduler`、`VHS_VideoCombine`、`LTXVLatentUpsampler`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`MathExpression|pysssss`、`CLIPTextEncode`、`ImageResizeKJv2`、`CR Text`、`AudioCrop`、`1hew_AudioDuration`、`LoadImage`、`LoadAudio`、`TTResolutionSelector`、`DiffusionModelLoaderKJ`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LTXVConditioning`、`LTX2_NAG`、`LTXVChunkFeedForward`
+
+**用到的条目**：CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent、LTXVSeparateAVLatent

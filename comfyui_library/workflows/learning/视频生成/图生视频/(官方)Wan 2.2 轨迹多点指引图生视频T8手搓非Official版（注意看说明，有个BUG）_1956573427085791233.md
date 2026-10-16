@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/(官方)Wan 2.2 轨迹多点指引图生视频T8手搓非Official版（注意看说明，有个BUG）_1956573427085791233.json
+name: (官方)Wan 2.2 轨迹多点指引图生视频T8手搓非Official版（注意看说明，有个BUG）_1956573427085791233.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956573427085791233.json
+hash: 7410e3c617f2c961
+coverage: 0.868421
+learned_at: 2026-10-15 22:31:14
+nodes: [CLIPLoader, VAELoader, CLIPTextEncode, Wan22FunControlToVideo, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, PDIMAGE_LongerSize, CLIPTextEncode, JWInteger, JWInteger, MaskToImage, MaskToImage, KSamplerAdvanced, LoadImage, SolidMask, WanVideoATITracksVisualize, VHS_VideoCombine, ImageConcanate, VAEDecode, ImageConcanate, CR Prompt Text, VHS_VideoCombine, VHS_VideoCombine, easy showAnything, JWInteger, PrimitiveNode, Note, Note, Note, ImageRepeat, MaskFromColor+, SplineEditor, Note _O]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/(官方)Wan 2.2 轨迹多点指引图生视频T8手搓非Official版（注意看说明，有个BUG）_1956573427085791233.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956573427085791233.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（38 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `Wan22FunControlToVideo`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `PDIMAGE_LongerSize`
+- `CLIPTextEncode` ★核心
+- `JWInteger`
+- `JWInteger`
+- `MaskToImage`
+- `MaskToImage`
+- `KSamplerAdvanced` ★核心
+- `LoadImage`
+- `SolidMask`
+- `WanVideoATITracksVisualize`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `VAEDecode` ★核心
+- `ImageConcanate`
+- `CR Prompt Text`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `JWInteger`
+- `PrimitiveNode`
+- `Note`
+- `Note`
+- `Note`
+- `ImageRepeat`
+- `MaskFromColor+`
+- `SplineEditor`
+- `Note _O`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **87%**（33/38）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`Wan22FunControlToVideo`、`ModelSamplingSD3`、`UNETLoader`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`PDIMAGE_LongerSize`、`JWInteger`、`MaskToImage`、`LoadImage`、`SolidMask`、`WanVideoATITracksVisualize`、`VHS_VideoCombine`、`ImageConcanate`、`VAEDecode`、`CR Prompt Text`、`ImageRepeat`、`MaskFromColor+`、`SplineEditor`、`Note _O`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

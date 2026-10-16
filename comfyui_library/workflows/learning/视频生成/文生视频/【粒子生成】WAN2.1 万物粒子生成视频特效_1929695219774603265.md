@@ -1,0 +1,84 @@
+---
+key: 视频生成/文生视频/【粒子生成】WAN2.1 万物粒子生成视频特效_1929695219774603265.json
+name: 【粒子生成】WAN2.1 万物粒子生成视频特效_1929695219774603265.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1929695219774603265.json
+hash: 5620112088c26557
+coverage: 0.788462
+learned_at: 2026-10-15 22:43:25
+nodes: [easy cleanGpuUsed, LoadWanVideoT5TextEncoder, JjkText, JjkText, JjkText, easy cleanGpuUsed, LoadWanVideoClipTextEncoder, WanVideoVAELoader, WanVideoTextEncode, WanVideoBlockSwap, ImageResizeKJ, ImageUpscaleWithModel, ImageUpscaleWithModel, easy cleanGpuUsed, UpscaleModelLoader, WanVideoModelLoader, VHS_VideoCombine, ImpactSwitch, Int, JjkText, CR String To Number, MathExpression|pysssss, easy showAnything, CM_IntToNumber, CM_NumberToInt, MathExpression|pysssss, MathExpression|pysssss, easy showAnything, CM_IntToNumber, CM_NumberToInt, MathExpression|pysssss, PrimitiveInt, PrimitiveInt, ImageResizeAdvanced, UpscaleModelLoader, easy cleanGpuUsed, LoadImage, WanVideoLoraSelect, Fast Groups Bypasser (rgthree), easy cleanGpuUsed, WanVideoImageClipEncode, ImageResize+, WanVideoEnhanceAVideo, WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, WanVideoSampler, WanVideoDecode, FILM VFI, easy cleanGpuUsed, VHS_VideoCombine, Fast Groups Bypasser (rgthree)]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/【粒子生成】WAN2.1 万物粒子生成视频特效_1929695219774603265.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1929695219774603265.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（52 个）：
+- `easy cleanGpuUsed`
+- `LoadWanVideoT5TextEncoder`
+- `JjkText`
+- `JjkText`
+- `JjkText`
+- `easy cleanGpuUsed`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `WanVideoTextEncode`
+- `WanVideoBlockSwap`
+- `ImageResizeKJ`
+- `ImageUpscaleWithModel`
+- `ImageUpscaleWithModel`
+- `easy cleanGpuUsed`
+- `UpscaleModelLoader`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `ImpactSwitch`
+- `Int`
+- `JjkText`
+- `CR String To Number`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `CM_IntToNumber`
+- `CM_NumberToInt`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `CM_IntToNumber`
+- `CM_NumberToInt`
+- `MathExpression|pysssss`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ImageResizeAdvanced`
+- `UpscaleModelLoader`
+- `easy cleanGpuUsed`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `Fast Groups Bypasser (rgthree)`
+- `easy cleanGpuUsed`
+- `WanVideoImageClipEncode`
+- `ImageResize+`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `FILM VFI`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `Fast Groups Bypasser (rgthree)`
+
+## 知识
+
+覆盖率 **79%**（41/52）
+
+**有卡**：`easy cleanGpuUsed`、`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`WanVideoTextEncode`、`WanVideoBlockSwap`、`ImageResizeKJ`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`WanVideoModelLoader`、`VHS_VideoCombine`、`Int`、`CR String To Number`、`MathExpression|pysssss`、`CM_IntToNumber`、`CM_NumberToInt`、`ImageResizeAdvanced`、`LoadImage`、`WanVideoLoraSelect`、`WanVideoImageClipEncode`、`ImageResize+`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoSampler`、`WanVideoDecode`、`FILM VFI`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

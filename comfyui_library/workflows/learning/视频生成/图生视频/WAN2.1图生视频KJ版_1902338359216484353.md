@@ -1,0 +1,48 @@
+---
+key: 视频生成/图生视频/WAN2.1图生视频KJ版_1902338359216484353.json
+name: WAN2.1图生视频KJ版_1902338359216484353.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1902338359216484353.json
+hash: 8546019e2ea0a5be
+coverage: 1
+learned_at: 2026-10-15 22:29:24
+nodes: [WanVideoImageClipEncode, WanVideoBlockSwap, Int, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, WanVideoTeaCache, workflow>文本, LoadImage, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoVAELoader, WanVideoLoraSelect, WanVideoModelLoader, WanVideoEnhanceAVideo, WanVideoDecode, WanVideoSampler]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/WAN2.1图生视频KJ版_1902338359216484353.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1902338359216484353.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（16 个）：
+- `WanVideoImageClipEncode`
+- `WanVideoBlockSwap`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `WanVideoTeaCache`
+- `workflow>文本`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+
+## 知识
+
+覆盖率 **100%**（16/16）
+
+**有卡**：`WanVideoImageClipEncode`、`WanVideoBlockSwap`、`Int`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_VideoCombine`、`WanVideoTeaCache`、`workflow>文本`、`LoadImage`、`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`WanVideoSampler`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoVAELoader、WanVideoLoraSelect

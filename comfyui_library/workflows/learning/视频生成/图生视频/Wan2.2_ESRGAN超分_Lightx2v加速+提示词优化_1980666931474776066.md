@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json
+name: Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1980666931474776066.json
+hash: 6c5b9322a8cd5cae
+coverage: 0.813953
+learned_at: 2026-10-15 22:32:32
+nodes: [LTXVPromptEnhancerLoader, LTXVPromptEnhancer, LoadWanVideoT5TextEncoder, WanVideoTorchCompileSettings, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoLoraSelect, WanVideoLoraSelect, Any Switch (rgthree), Any Switch (rgthree), JjkConcat, TextInput_, Bjornulf_ShowStringText, WanVideoVAELoader, TTP_text_mix, MathExpression|pysssss, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetBlockSwap, LoadImage, Int, WanVideoTextEncode, INTConstant, PrimitiveFloat, WanVideoSampler, PrimitiveFloat, Any Switch (rgthree), Any Switch (rgthree), Any Switch (rgthree), WanVideoSampler, Fast Groups Muter (rgthree), INTConstant, ImageResizeKJv2, WanVideoModelLoader, WanVideoImageToVideoEncode, WanVideoModelLoader, ImageResizeKJ, WanVideoDecode, GetImageSizeAndCount, ImageUpscaleWithModel, UpscaleModelLoader, VHS_VideoCombine, TextInput_]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1980666931474776066.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（43 个）：
+- `LTXVPromptEnhancerLoader`
+- `LTXVPromptEnhancer`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTorchCompileSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `Any Switch (rgthree)`
+- `Any Switch (rgthree)`
+- `JjkConcat`
+- `TextInput_`
+- `Bjornulf_ShowStringText`
+- `WanVideoVAELoader`
+- `TTP_text_mix`
+- `MathExpression|pysssss`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `LoadImage`
+- `Int`
+- `WanVideoTextEncode`
+- `INTConstant`
+- `PrimitiveFloat`
+- `WanVideoSampler` ★核心
+- `PrimitiveFloat`
+- `Any Switch (rgthree)`
+- `Any Switch (rgthree)`
+- `Any Switch (rgthree)`
+- `WanVideoSampler` ★核心
+- `Fast Groups Muter (rgthree)`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `WanVideoModelLoader`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `ImageResizeKJ`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `VHS_VideoCombine`
+- `TextInput_`
+
+## 知识
+
+覆盖率 **81%**（35/43）
+
+**有卡**：`LTXVPromptEnhancerLoader`、`LTXVPromptEnhancer`、`LoadWanVideoT5TextEncoder`、`WanVideoTorchCompileSettings`、`WanVideoSetLoRAs`、`WanVideoLoraSelect`、`JjkConcat`、`TextInput_`、`Bjornulf_ShowStringText`、`WanVideoVAELoader`、`TTP_text_mix`、`MathExpression|pysssss`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`LoadImage`、`Int`、`WanVideoTextEncode`、`INTConstant`、`WanVideoSampler`、`ImageResizeKJv2`、`WanVideoModelLoader`、`WanVideoImageToVideoEncode`、`ImageResizeKJ`、`WanVideoDecode`、`GetImageSizeAndCount`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoLoraSelect

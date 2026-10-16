@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json
+name: MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998945387329282050.json
+hash: a7808df1b45e0e6f
+coverage: 0.723404
+learned_at: 2026-10-15 22:33:34
+nodes: [DownloadAndLoadWav2VecModel, easy showAnything, easy cleanGpuUsed, WanVideoDecode, MultiTalkWav2VecEmbeds, LoadWanVideoT5TextEncoder, WanVideoTextEncode, WanVideoImageToVideoEncode, easy showAnything, AudioSeparation, easy showAnything, easy showAnything, AudioCrop, JWIntegerToString, MultiTalkModelLoader, CLIPVisionLoader, WanVideoSampler, JWInteger, Note, Note, Note, Note, Note, Note, WanVideoClipVisionEncode, LayerUtility: ImageScaleByAspectRatio V2, Note, WanVideoLoraSelect, WanVideoModelLoader, SimpleMath+, Audio Duration (mtb), SimpleMath+, LoadImage, LayerUtility: PurgeVRAM, VHS_VideoCombine, ImageResizeKJ, WanVideoEncode, WanVideoUni3C_embeds, PrimitiveFloat, LoadAudio, WanVideoBlockSwap, JWInteger, TextInput_, WanVideoUni3C_ControlnetLoader, VHS_LoadVideo, PrimitiveInt, WanVideoVAELoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998945387329282050.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（47 个）：
+- `DownloadAndLoadWav2VecModel`
+- `easy showAnything`
+- `easy cleanGpuUsed`
+- `WanVideoDecode`
+- `MultiTalkWav2VecEmbeds`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `WanVideoImageToVideoEncode`
+- `easy showAnything`
+- `AudioSeparation`
+- `easy showAnything`
+- `easy showAnything`
+- `AudioCrop`
+- `JWIntegerToString`
+- `MultiTalkModelLoader`
+- `CLIPVisionLoader`
+- `WanVideoSampler` ★核心
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoClipVisionEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `SimpleMath+`
+- `Audio Duration (mtb)`
+- `SimpleMath+`
+- `LoadImage`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `ImageResizeKJ`
+- `WanVideoEncode`
+- `WanVideoUni3C_embeds`
+- `PrimitiveFloat`
+- `LoadAudio`
+- `WanVideoBlockSwap`
+- `JWInteger`
+- `TextInput_`
+- `WanVideoUni3C_ControlnetLoader`
+- `VHS_LoadVideo`
+- `PrimitiveInt`
+- `WanVideoVAELoader`
+
+## 知识
+
+覆盖率 **72%**（34/47）
+
+**有卡**：`DownloadAndLoadWav2VecModel`、`easy cleanGpuUsed`、`WanVideoDecode`、`MultiTalkWav2VecEmbeds`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`AudioSeparation`、`AudioCrop`、`JWIntegerToString`、`MultiTalkModelLoader`、`CLIPVisionLoader`、`WanVideoSampler`、`JWInteger`、`WanVideoClipVisionEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`SimpleMath+`、`Audio Duration (mtb)`、`LoadImage`、`LayerUtility: PurgeVRAM`、`VHS_VideoCombine`、`ImageResizeKJ`、`WanVideoEncode`、`WanVideoUni3C_embeds`、`LoadAudio`、`WanVideoBlockSwap`、`TextInput_`、`WanVideoUni3C_ControlnetLoader`、`VHS_LoadVideo`、`WanVideoVAELoader`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoUni3C_ControlnetLoader、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

@@ -1,0 +1,83 @@
+---
+key: 视频生成/图生视频/LTX2.3首尾帧生视频（官流）_2064734105044082689.json
+name: LTX2.3首尾帧生视频（官流）_2064734105044082689.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2064734105044082689.json
+hash: 2d9019c9620213b4
+coverage: 0.883721
+learned_at: 2026-10-15 22:39:30
+nodes: [ResizeImageMaskNode, LTXVPreprocess, PrimitiveInt, SamplerEulerAncestral, PrimitiveInt, CFGGuider, LTXVConcatAVLatent, LTXVCropGuides, ManualSigmas, LTXVAddGuide, PathchSageAttentionKJ, ResizeImageMaskNode, easy showAnything, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, PrimitiveInt, LTXVPreprocess, ModelPatchTorchSettings, LTXVAddGuide, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, ComfyMathExpression, ComfyMathExpression, LTXVConditioning, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, VAEDecodeTiled, LTXVAudioVAEDecode, LoadImage, LoadImage, VHS_VideoCombine, PrimitiveInt, GetImageSize, CLIPTextEncode, CLIPTextEncode, CR Text, FlashVSRNodeAdv, VHS_VideoCombine, FlashVSRInitPipe]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3首尾帧生视频（官流）_2064734105044082689.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2064734105044082689.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（43 个）：
+- `ResizeImageMaskNode`
+- `LTXVPreprocess`
+- `PrimitiveInt`
+- `SamplerEulerAncestral` ★核心
+- `PrimitiveInt`
+- `CFGGuider`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `ManualSigmas`
+- `LTXVAddGuide`
+- `PathchSageAttentionKJ`
+- `ResizeImageMaskNode`
+- `easy showAnything`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `PrimitiveInt`
+- `LTXVPreprocess`
+- `ModelPatchTorchSettings`
+- `LTXVAddGuide`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVConditioning`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `PrimitiveInt`
+- `GetImageSize`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CR Text`
+- `FlashVSRNodeAdv`
+- `VHS_VideoCombine`
+- `FlashVSRInitPipe`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **88%**（38/43）
+
+**有卡**：`ResizeImageMaskNode`、`LTXVPreprocess`、`SamplerEulerAncestral`、`CFGGuider`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`ManualSigmas`、`LTXVAddGuide`、`PathchSageAttentionKJ`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`ModelPatchTorchSettings`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`ComfyMathExpression`、`LTXVConditioning`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`LoadImage`、`VHS_VideoCombine`、`GetImageSize`、`CLIPTextEncode`、`CR Text`、`FlashVSRNodeAdv`、`FlashVSRInitPipe`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、SamplerCustomAdvanced、SamplerEulerAncestral、LTXVConcatAVLatent

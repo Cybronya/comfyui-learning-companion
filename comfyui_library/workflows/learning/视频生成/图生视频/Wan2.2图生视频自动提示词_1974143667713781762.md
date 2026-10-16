@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Wan2.2图生视频自动提示词_1974143667713781762.json
+name: Wan2.2图生视频自动提示词_1974143667713781762.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1974143667713781762.json
+hash: 079016550eb719c9
+coverage: 0.888889
+learned_at: 2026-10-15 22:32:04
+nodes: [WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, LoadWanVideoT5TextEncoder, WanVideoDecode, WanVideoSetBlockSwap, ImageResizeKJv2, CLIPVisionLoader, easy cleanGpuUsed, GetImageSizeAndCount, VHS_VideoCombine, VHS_VideoCombine, LoadImage, PrimitiveInt, PrimitiveInt, MarkdownNote, WanVideoLoraSelect, WanVideoTorchCompileSettings, LoadImage, WanVideoImageToVideoEncode, easy cleanGpuUsed, WanVideoTextEncode, WanVideoSetLoRAs, WanVideoClipVisionEncode, WanVideoModelLoader, WanVideoModelLoader, WanVideoBlockSwap, ShowText|pysssss, AILab_MiniCPM_4_V_Advanced, WanVideoSampler, WanVideoSampler]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2图生视频自动提示词_1974143667713781762.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1974143667713781762.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（36 个）：
+- `WanVideoLoraSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `WanVideoSetBlockSwap`
+- `ImageResizeKJv2`
+- `CLIPVisionLoader`
+- `easy cleanGpuUsed`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `MarkdownNote`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `LoadImage`
+- `WanVideoImageToVideoEncode`
+- `easy cleanGpuUsed`
+- `WanVideoTextEncode`
+- `WanVideoSetLoRAs`
+- `WanVideoClipVisionEncode`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `ShowText|pysssss`
+- `AILab_MiniCPM_4_V_Advanced`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+
+## 知识
+
+覆盖率 **89%**（32/36）
+
+**有卡**：`WanVideoLoraSelect`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`easy cleanGpuUsed`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`ImageResizeKJv2`、`CLIPVisionLoader`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`LoadImage`、`WanVideoTorchCompileSettings`、`WanVideoImageToVideoEncode`、`WanVideoTextEncode`、`WanVideoClipVisionEncode`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`AILab_MiniCPM_4_V_Advanced`、`WanVideoSampler`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

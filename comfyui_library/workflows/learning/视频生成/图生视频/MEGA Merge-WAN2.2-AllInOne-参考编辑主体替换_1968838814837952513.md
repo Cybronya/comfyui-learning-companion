@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968838814837952513.json
+name: MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968838814837952513.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1968838814837952513.json
+hash: 596b074e9ab3cd21
+coverage: 0.923077
+learned_at: 2026-10-15 22:31:46
+nodes: [TrimVideoLatent, CheckpointLoaderSimple, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, VAEDecode, VHS_VideoCombine, KSampler, SolidMask, ImageCompositeMasked, PreviewImage, PrimitiveStringMultiline, MaskToImage, InspyrenetRembg, InvertMask, GrowMaskWithBlur, VHS_DuplicateMasks, GetImageSize+, WanVaceToVideo, VHS_VideoCombine, INTConstant, ImageResizeKJv2, INTConstant, INTConstant, LoadImage, VHS_LoadVideo]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 192054346835137, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968838814837952513.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1968838814837952513.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（26 个）：
+- `TrimVideoLatent`
+- `CheckpointLoaderSimple` ★核心
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `KSampler` ★核心
+- `SolidMask`
+- `ImageCompositeMasked`
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `MaskToImage`
+- `InspyrenetRembg`
+- `InvertMask`
+- `GrowMaskWithBlur`
+- `VHS_DuplicateMasks`
+- `GetImageSize+`
+- `WanVaceToVideo`
+- `VHS_VideoCombine`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `INTConstant`
+- `INTConstant`
+- `LoadImage`
+- `VHS_LoadVideo`
+
+## 关键参数
+
+- `checkpoint` = `wan2.2-rapid-mega-aio-v1.safetensors`
+- `seed` = `192054346835137`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **92%**（24/26）
+
+**有卡**：`TrimVideoLatent`、`CheckpointLoaderSimple`、`ModelSamplingSD3`、`CLIPTextEncode`、`VAEDecode`、`VHS_VideoCombine`、`KSampler`、`SolidMask`、`ImageCompositeMasked`、`MaskToImage`、`InspyrenetRembg`、`InvertMask`、`GrowMaskWithBlur`、`VHS_DuplicateMasks`、`GetImageSize+`、`WanVaceToVideo`、`INTConstant`、`ImageResizeKJv2`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、TrimVideoLatent、ImageResizeKJv2、GetImageSize+
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

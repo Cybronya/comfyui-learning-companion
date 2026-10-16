@@ -1,0 +1,35 @@
+---
+key: 视频生成/图生视频/Kling_VideoO1ImageToVideo_v1.0_2033816305035386882.json
+name: Kling_VideoO1ImageToVideo_v1.0_2033816305035386882.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2033816305035386882.json
+hash: 03290b01de76b297
+coverage: 1
+learned_at: 2026-10-15 22:35:41
+nodes: [LoadImage, RH_KlingVideoO1ImageToVideo, SaveVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Kling_VideoO1ImageToVideo_v1.0_2033816305035386882.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2033816305035386882.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（3 个）：
+- `LoadImage`
+- `RH_KlingVideoO1ImageToVideo`
+- `SaveVideo`
+
+## 知识
+
+覆盖率 **100%**（3/3）
+
+**有卡**：`LoadImage`、`RH_KlingVideoO1ImageToVideo`、`SaveVideo`
+
+**用到的条目**：LoadImage、SaveVideo、RH_KlingVideoO1ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

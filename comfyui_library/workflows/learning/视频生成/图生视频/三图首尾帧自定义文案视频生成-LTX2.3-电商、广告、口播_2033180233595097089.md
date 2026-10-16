@@ -1,0 +1,185 @@
+---
+key: 视频生成/图生视频/三图首尾帧自定义文案视频生成-LTX2.3-电商、广告、口播_2033180233595097089.json
+name: 三图首尾帧自定义文案视频生成-LTX2.3-电商、广告、口播_2033180233595097089.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2033180233595097089.json
+hash: 25397dd606feacde
+coverage: 0.524138
+learned_at: 2026-10-15 22:35:38
+nodes: [CLIPTextEncode, SamplerCustomAdvanced, Reroute, Reroute, Reroute, Reroute, CheckpointLoaderSimple, Reroute, EmptyImage, ImageScaleBy, PathchSageAttentionKJ, LTXVChunkFeedForward, Reroute, Reroute, Reroute, Reroute, ModelPatchTorchSettings, Reroute, LTXVSeparateAVLatent, LTXVCropGuides, Reroute, Reroute, Reroute, LTXVAudioVAEDecode, Reroute, Reroute, Reroute, Reroute, MarkdownNote, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LoraLoaderModelOnly, LatentUpscaleModelLoader, LTXVSeparateAVLatent, LayerUtility: ImageScaleByAspectRatio V2, ResizeImagesByLongerEdge, LTXVLatentUpsampler, Reroute, KSamplerSelect, Reroute, RandomNoise, Reroute, Reroute, SamplerCustomAdvanced, KSamplerSelect, ManualSigmas, Reroute, CFGGuider, ManualSigmas, LTXVConcatAVLatent, Reroute, Reroute, Reroute, LayerUtility: ImageScaleByAspectRatio V2, ResizeImagesByLongerEdge, LTXVPreprocess, Reroute, Reroute, LTXVConcatAVLatent, LTXVPreprocess, Reroute, Reroute, Reroute, Reroute, Reroute, GetImageSize, WhisperSTT, Bjornulf_ShowInt, Reroute, Reroute, MarkdownNote, Reroute, easy showAnything, MarkdownNote, MarkdownNote, MarkdownNote, LoadImage, LTXVImgToVideoInplace, RandomNoise, FB_Qwen3TTSVoiceClone, CR Text, Reroute, CR Text, Reroute, CM_FloatToInt, PreviewAudio, LTXVConditioning, Reroute, LoadImage, LoadImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, CR Text, SolidMask, LTXVAudioVAEEncode, Reroute, Reroute, Reroute, PainterAudioLength, CLIPTextEncode, EmptyLTXVLatentVideo, Reroute, GetImageSize, SimpleMath+, Reroute, CreateVideo, VAEDecode, LTXVImgToVideoInplaceKJ, ComfyMathExpression, easy showAnything, SimpleMath+, Reroute, CFGGuider, LoadAudio, Reroute, Reroute, LoadImage, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, Reroute, Reroute, PreviewAny, Reroute, Reroute, RH_LLMAPI_Pro_Node, LTXVEmptyLatentAudio, easy showAnything, INTConstant, Reroute, Reroute, Reroute, FloatConstant, SimpleMath+, SetLatentNoiseMask, SaveVideo, CR Text, MarkdownNote, easy int, CR Text, CR Text, CR Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/三图首尾帧自定义文案视频生成-LTX2.3-电商、广告、口播_2033180233595097089.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2033180233595097089.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（145 个）：
+- `CLIPTextEncode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CheckpointLoaderSimple` ★核心
+- `Reroute`
+- `EmptyImage`
+- `ImageScaleBy`
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `ModelPatchTorchSettings`
+- `Reroute`
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `MarkdownNote`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LatentUpscaleModelLoader`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ResizeImagesByLongerEdge`
+- `LTXVLatentUpsampler` ★核心
+- `Reroute`
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `RandomNoise`
+- `Reroute`
+- `Reroute`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `Reroute`
+- `CFGGuider`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `Reroute`
+- `Reroute`
+- `LTXVConcatAVLatent`
+- `LTXVPreprocess`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `GetImageSize`
+- `WhisperSTT`
+- `Bjornulf_ShowInt`
+- `Reroute`
+- `Reroute`
+- `MarkdownNote`
+- `Reroute`
+- `easy showAnything`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `LoadImage`
+- `LTXVImgToVideoInplace`
+- `RandomNoise`
+- `FB_Qwen3TTSVoiceClone`
+- `CR Text`
+- `Reroute`
+- `CR Text`
+- `Reroute`
+- `CM_FloatToInt`
+- `PreviewAudio`
+- `LTXVConditioning`
+- `Reroute`
+- `LoadImage`
+- `LoadImage`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CR Text`
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `PainterAudioLength`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `Reroute`
+- `GetImageSize`
+- `SimpleMath+`
+- `Reroute`
+- `CreateVideo`
+- `VAEDecode` ★核心
+- `LTXVImgToVideoInplaceKJ`
+- `ComfyMathExpression`
+- `easy showAnything`
+- `SimpleMath+`
+- `Reroute`
+- `CFGGuider`
+- `LoadAudio`
+- `Reroute`
+- `Reroute`
+- `LoadImage`
+- `ImpactInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Reroute`
+- `Reroute`
+- `PreviewAny`
+- `Reroute`
+- `Reroute`
+- `RH_LLMAPI_Pro_Node`
+- `LTXVEmptyLatentAudio` ★核心
+- `easy showAnything`
+- `INTConstant`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `FloatConstant`
+- `SimpleMath+`
+- `SetLatentNoiseMask`
+- `SaveVideo`
+- `CR Text`
+- `MarkdownNote`
+- `easy int`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **52%**（76/145）
+
+**有卡**：`CLIPTextEncode`、`SamplerCustomAdvanced`、`CheckpointLoaderSimple`、`EmptyImage`、`ImageScaleBy`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`LatentUpscaleModelLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`ResizeImagesByLongerEdge`、`LTXVLatentUpsampler`、`KSamplerSelect`、`RandomNoise`、`ManualSigmas`、`CFGGuider`、`LTXVConcatAVLatent`、`LTXVPreprocess`、`GetImageSize`、`WhisperSTT`、`Bjornulf_ShowInt`、`LoadImage`、`LTXVImgToVideoInplace`、`FB_Qwen3TTSVoiceClone`、`CR Text`、`CM_FloatToInt`、`PreviewAudio`、`LTXVConditioning`、`SolidMask`、`LTXVAudioVAEEncode`、`PainterAudioLength`、`EmptyLTXVLatentVideo`、`SimpleMath+`、`CreateVideo`、`VAEDecode`、`LTXVImgToVideoInplaceKJ`、`ComfyMathExpression`、`LoadAudio`、`ImpactInt`、`RH_LLMAPI_Pro_Node`、`LTXVEmptyLatentAudio`、`INTConstant`、`FloatConstant`、`SetLatentNoiseMask`、`SaveVideo`、`easy int`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

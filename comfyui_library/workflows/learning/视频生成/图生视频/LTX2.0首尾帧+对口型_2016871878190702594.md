@@ -1,0 +1,229 @@
+---
+key: 视频生成/图生视频/LTX2.0首尾帧+对口型_2016871878190702594.json
+name: LTX2.0首尾帧+对口型_2016871878190702594.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2016871878190702594.json
+hash: 18f475b7214b35d0
+coverage: 0.572917
+learned_at: 2026-10-15 22:34:44
+nodes: [MelBandRoFormerModelLoader, LatentUpscaleModelLoader, SetNode, CR Text, GetNode, GetNode, GetNode, GetNode, GetNode, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, LTXVConditioning, CLIPTextEncode, SetNode, SetNode, GetNode, GetNode, RandomNoise, GetNode, GetNode, CFGGuider, easy cleanGpuUsed, SamplerCustomAdvanced, KSamplerSelect, SetNode, SetNode, LTXVSeparateAVLatent, CR Text, CR Text, CR Text, CR Text, CR Text, CR Text, VAEDecodeTiled, GetNode, GetNode, GetNode, GetNode, Int, GetNode, CR Text, CR String To Combo, GetNode, GetNode, GetNode, SolidMask, Int, Display Any (rgthree), InversionDemoLazySwitch, Int, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, LTXVCropGuides, easy cleanGpuUsed, SamplerCustomAdvanced, easy cleanGpuUsed, GetNode, LTXVPreprocess, GetNode, SetNode, GetNode, LTXVLatentUpsampler, SetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, GetNode, SetNode, LTXVPreprocess, SetNode, SetNode, ResizeImagesByLongerEdge, GetNode, GetNode, GetNode, GetNode, CFGGuider, LayerUtility: ImageScaleByAspectRatio V2, SetNode, ImageResizeKJv2, ResizeImagesByLongerEdge, SetNode, SetNode, SetNode, SetNode, CR Text, Display Any (rgthree), GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, GetNode, GetImageSize, ImageScaleBy, SetNode, SetNode, SetNode, GetNode, ImageResizeKJv2, easy imageConcat, Fast Groups Muter (rgthree), WhisperSTT, ShowText|pysssss, GetNode, SetNode, ASRMW, MelBandRoFormerSampler, LTXVAudioVAEEncode, SetLatentNoiseMask, CR Text Concatenate, GetNode, GetNode, GetNode, AudioSeparation, GetNode, GetNode, PreviewAudio, LTXVConcatAVLatent, RandomNoise, VHS_VideoCombine, CLIPTextEncode, LTXVAudioVAEDecode, SetNode, easy compare, EmptyImage, Display Any (rgthree), JWInteger, JWInteger, AudioToFPS, VAEDecodeTiled, VHS_VideoCombine, GetNode, CR Text Concatenate, SomethingToString, easy cleanGpuUsed, ProcessString, ShowText|pysssss, Any To String (mtb), SetNode, ImpactSwitch, LoadImage, LoadImage, DualCLIPLoader, SetNode, SetNode, VAELoaderKJ, VAELoaderKJ, SetNode, SetNode, LoadImage, LoadImage, GetNode, Any To String (mtb), SetNode, VRAMReserver, LoraLoaderModelOnly, Switch any [Crystools], LoraLoaderModelOnly, SetNode, easy boolean, ttN concat, LoraLoaderModelOnly, LTXVScheduler, KSamplerSelect, GetNode, LTXVFirstLastFrameControl_TTP, ManualSigmas, LTXVFirstLastFrameControl_TTP, LTXVSeparateAVLatent, CR Text, CR Text, SetNode, LoadAudio, AudioCrop, SetNode, UnetLoaderGGUF, CheckpointLoaderSimple, CR Text, ImpactSwitch, LoadAudio, GetNode, CR Text, Qwen3_VQA, ShowText|pysssss, ManualSigmas, UNETLoader]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2-19b-distilled-260115.safetensors"}
+---
+
+# 视频生成/图生视频/LTX2.0首尾帧+对口型_2016871878190702594.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2016871878190702594.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（192 个）：
+- `MelBandRoFormerModelLoader`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `CR Text`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `easy cleanGpuUsed`
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
+- `SetNode`
+- `SetNode`
+- `LTXVSeparateAVLatent`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `VAEDecodeTiled` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Int`
+- `GetNode`
+- `CR Text`
+- `CR String To Combo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SolidMask`
+- `Int`
+- `Display Any (rgthree)`
+- `InversionDemoLazySwitch`
+- `Int`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `easy cleanGpuUsed`
+- `SamplerCustomAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `GetNode`
+- `LTXVPreprocess`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `SetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `LTXVPreprocess`
+- `SetNode`
+- `SetNode`
+- `ResizeImagesByLongerEdge`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SetNode`
+- `ImageResizeKJv2`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CR Text`
+- `Display Any (rgthree)`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageSize`
+- `ImageScaleBy`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `easy imageConcat`
+- `Fast Groups Muter (rgthree)`
+- `WhisperSTT`
+- `ShowText|pysssss`
+- `GetNode`
+- `SetNode`
+- `ASRMW`
+- `MelBandRoFormerSampler` ★核心
+- `LTXVAudioVAEEncode` ★核心
+- `SetLatentNoiseMask`
+- `CR Text Concatenate`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `AudioSeparation`
+- `GetNode`
+- `GetNode`
+- `PreviewAudio`
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `SetNode`
+- `easy compare`
+- `EmptyImage`
+- `Display Any (rgthree)`
+- `JWInteger`
+- `JWInteger`
+- `AudioToFPS`
+- `VAEDecodeTiled` ★核心
+- `VHS_VideoCombine`
+- `GetNode`
+- `CR Text Concatenate`
+- `SomethingToString`
+- `easy cleanGpuUsed`
+- `ProcessString`
+- `ShowText|pysssss`
+- `Any To String (mtb)`
+- `SetNode`
+- `ImpactSwitch`
+- `LoadImage`
+- `LoadImage`
+- `DualCLIPLoader`
+- `SetNode`
+- `SetNode`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `Any To String (mtb)`
+- `SetNode`
+- `VRAMReserver`
+- `LoraLoaderModelOnly` ★核心
+- `Switch any [Crystools]`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `easy boolean`
+- `ttN concat`
+- `LoraLoaderModelOnly` ★核心
+- `LTXVScheduler`
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `LTXVFirstLastFrameControl_TTP`
+- `ManualSigmas`
+- `LTXVFirstLastFrameControl_TTP`
+- `LTXVSeparateAVLatent`
+- `CR Text`
+- `CR Text`
+- `SetNode`
+- `LoadAudio`
+- `AudioCrop`
+- `SetNode`
+- `UnetLoaderGGUF` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `CR Text`
+- `ImpactSwitch`
+- `LoadAudio`
+- `GetNode`
+- `CR Text`
+- `Qwen3_VQA`
+- `ShowText|pysssss`
+- `ManualSigmas`
+- `UNETLoader` ★核心
+
+## 关键参数
+
+- `checkpoint` = `ltx-2-19b-distilled-260115.safetensors`
+
+## 知识
+
+覆盖率 **57%**（110/192）
+
+**有卡**：`MelBandRoFormerModelLoader`、`LatentUpscaleModelLoader`、`CR Text`、`easy cleanGpuUsed`、`LTXVConditioning`、`CLIPTextEncode`、`RandomNoise`、`CFGGuider`、`SamplerCustomAdvanced`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`Int`、`CR String To Combo`、`SolidMask`、`Display Any (rgthree)`、`InversionDemoLazySwitch`、`LTXVAudioVAEDecode`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`LTXVPreprocess`、`LTXVLatentUpsampler`、`LayerUtility: ImageScaleByAspectRatio V2`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`EmptyLTXVLatentVideo`、`GetImageSize`、`ImageScaleBy`、`easy imageConcat`、`WhisperSTT`、`ASRMW`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`CR Text Concatenate`、`AudioSeparation`、`PreviewAudio`、`VHS_VideoCombine`、`easy compare`、`EmptyImage`、`JWInteger`、`AudioToFPS`、`SomethingToString`、`ProcessString`、`Any To String (mtb)`、`LoadImage`、`DualCLIPLoader`、`VAELoaderKJ`、`VRAMReserver`、`LoraLoaderModelOnly`、`Switch any [Crystools]`、`easy boolean`、`ttN concat`、`LTXVScheduler`、`LTXVFirstLastFrameControl_TTP`、`ManualSigmas`、`LoadAudio`、`AudioCrop`、`UnetLoaderGGUF`、`CheckpointLoaderSimple`、`Qwen3_VQA`、`UNETLoader`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

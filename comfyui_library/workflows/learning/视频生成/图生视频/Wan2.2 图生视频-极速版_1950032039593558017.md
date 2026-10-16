@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/Wan2.2 图生视频-极速版_1950032039593558017.json
+name: Wan2.2 图生视频-极速版_1950032039593558017.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950032039593558017.json
+hash: 997bbccb9f31ecb4
+coverage: 0.965517
+learned_at: 2026-10-15 22:30:52
+nodes: [LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, CLIPLoader, CLIPTextEncode, PathchSageAttentionKJ, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, UNETLoader, VAEDecode, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, CLIPVisionLoader, VAELoader, WanImageToVideo, CLIPVisionEncode, easy int, easy int, SimpleMath+, ImageResize+, LoadImage, CLIPTextEncode, Text, VHS_VideoCombine, MarkdownNote, KSamplerAdvanced, KSamplerAdvanced, easy int]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "increment"}
+---
+
+# 视频生成/图生视频/Wan2.2 图生视频-极速版_1950032039593558017.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950032039593558017.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（29 个）：
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `easy int`
+- `easy int`
+- `SimpleMath+`
+- `ImageResize+`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `Text`
+- `VHS_VideoCombine`
+- `MarkdownNote`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `easy int`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `increment`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **97%**（28/29）
+
+**有卡**：`LayerUtility: PurgeVRAM`、`CLIPLoader`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`UNETLoader`、`VAEDecode`、`ModelSamplingSD3`、`CLIPVisionLoader`、`VAELoader`、`WanImageToVideo`、`CLIPVisionEncode`、`easy int`、`SimpleMath+`、`ImageResize+`、`LoadImage`、`Text`、`VHS_VideoCombine`、`KSamplerAdvanced`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,62 @@
+---
+key: 视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json
+name: 首尾帧Wan2.1高质量图生视频_1938975650491650049.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1938975650491650049.json
+hash: 32497c0bba3638a3
+coverage: 1
+learned_at: 2026-10-15 22:30:32
+nodes: [VHS_VideoCombine, easy cleanGpuUsed, WanVideoEnhanceAVideo, easy cleanGpuUsed, WanVideoApplyNAG, WanVideoSLG, easy cleanGpuUsed, WanVideoTorchCompileSettings, WanVideoBlockSwap, ImageResizeKJv2, Int, ImageResizeKJv2, WanVideoLoraSelect, WanVideoModelLoader, WanVideoClipVisionEncode, CLIPVisionLoader, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoSampler, MathExpression|pysssss, Int, WanVideoImageToVideoEncode, easy cleanGpuUsed, WanVideoDecode, WanVideoTextEncodeSingle, easy cleanGpuUsed, Int, WanVideoTextEncodeSingle, LoadImage, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/首尾帧Wan2.1高质量图生视频_1938975650491650049.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1938975650491650049.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（30 个）：
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `WanVideoEnhanceAVideo`
+- `easy cleanGpuUsed`
+- `WanVideoApplyNAG`
+- `WanVideoSLG`
+- `easy cleanGpuUsed`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `ImageResizeKJv2`
+- `Int`
+- `ImageResizeKJv2`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSampler` ★核心
+- `MathExpression|pysssss`
+- `Int`
+- `WanVideoImageToVideoEncode`
+- `easy cleanGpuUsed`
+- `WanVideoDecode`
+- `WanVideoTextEncodeSingle`
+- `easy cleanGpuUsed`
+- `Int`
+- `WanVideoTextEncodeSingle`
+- `LoadImage`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（30/30）
+
+**有卡**：`VHS_VideoCombine`、`easy cleanGpuUsed`、`WanVideoEnhanceAVideo`、`WanVideoApplyNAG`、`WanVideoSLG`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`ImageResizeKJv2`、`Int`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoSampler`、`MathExpression|pysssss`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`WanVideoTextEncodeSingle`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeSingle

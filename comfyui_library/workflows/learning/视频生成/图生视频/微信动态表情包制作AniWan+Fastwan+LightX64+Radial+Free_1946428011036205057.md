@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_1946428011036205057.json
+name: 微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_1946428011036205057.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1946428011036205057.json
+hash: 2ec5fb4b5fd9ff7c
+coverage: 1
+learned_at: 2026-10-15 22:30:44
+nodes: [LayerUtility: PurgeVRAM V2, WanVideoExperimentalArgs, WanVideoEnhanceAVideo, WanVideoSLG, SimpleMath+, WanVideoApplyNAG, WanVideoTextEncodeSingle, WanVideoTextEncodeSingle, WanVideoSampler, WanVideoImageToVideoEncode, LoadWanVideoT5TextEncoder, WanVideoSetRadialAttention, LayerUtility: ImageScaleByAspectRatio V2, WanVideoModelLoader, WanVideoBlockSwap, WanVideoClipVisionEncode, JWInteger, LayerMask: BiRefNetUltraV2, WanVideoDecode, JWInteger, Text Multiline, LayerMask: LoadBiRefNetModelV2, CLIPVisionLoader, LoadImage, WanVideoVAELoader, VHS_VideoCombine, WanVideoFreeInitArgs, WanVideoTorchCompileSettings, WanVideoLoraSelect, BackgroundEraseNetwork, RH_OneShot_Prompter, WanVideoLoraSelect, WanVideoEasyCache]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_1946428011036205057.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1946428011036205057.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（33 个）：
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoExperimentalArgs`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `SimpleMath+`
+- `WanVideoApplyNAG`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncodeSingle`
+- `WanVideoSampler` ★核心
+- `WanVideoImageToVideoEncode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetRadialAttention`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `JWInteger`
+- `LayerMask: BiRefNetUltraV2`
+- `WanVideoDecode`
+- `JWInteger`
+- `Text Multiline`
+- `LayerMask: LoadBiRefNetModelV2`
+- `CLIPVisionLoader`
+- `LoadImage`
+- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `WanVideoFreeInitArgs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `BackgroundEraseNetwork`
+- `RH_OneShot_Prompter`
+- `WanVideoLoraSelect`
+- `WanVideoEasyCache`
+
+## 知识
+
+覆盖率 **100%**（33/33）
+
+**有卡**：`LayerUtility: PurgeVRAM V2`、`WanVideoExperimentalArgs`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`SimpleMath+`、`WanVideoApplyNAG`、`WanVideoTextEncodeSingle`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoSetRadialAttention`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoClipVisionEncode`、`JWInteger`、`LayerMask: BiRefNetUltraV2`、`WanVideoDecode`、`Text Multiline`、`LayerMask: LoadBiRefNetModelV2`、`CLIPVisionLoader`、`LoadImage`、`WanVideoVAELoader`、`VHS_VideoCombine`、`WanVideoFreeInitArgs`、`WanVideoTorchCompileSettings`、`WanVideoLoraSelect`、`BackgroundEraseNetwork`、`RH_OneShot_Prompter`、`WanVideoEasyCache`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeSingle

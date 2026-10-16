@@ -1,0 +1,216 @@
+---
+key: 视频生成/图生视频/Remix V2 VS  Smooth图生视频对比工作流V4（PainterI2V Plus版）_1990820621133225985.json
+name: Remix V2 VS  Smooth图生视频对比工作流V4（PainterI2V Plus版）_1990820621133225985.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1990820621133225985.json
+hash: 50b6e7b062cf0eb7
+coverage: 0.770115
+learned_at: 2026-10-15 22:33:11
+nodes: [Note, Note, ImageScaleBy, Note, ImageResizeKJv2, SaveImage, ImageScaleBy, Pick From Batch (mtb), easy cleanGpuUsed, CLIPVisionEncode, Note, CLIPVisionLoader, VAELoader, Note, WanImageToVideo, Note, Note, LayerUtility: ImageScaleByAspectRatio V2, CLIPLoader, Note, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, LayerUtility: PurgeVRAM, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, Note, ImageScaleBy, Note, ImageResizeKJv2, SaveImage, ColorMatch, ImageScaleBy, easy cleanGpuUsed, CLIPVisionEncode, Note, CLIPVisionLoader, VAELoader, Note, Note, Note, LayerUtility: ImageScaleByAspectRatio V2, CLIPLoader, Note, ModelSamplingSD3, KSamplerAdvanced, CLIPTextEncode, PreviewImage, ModelSamplingSD3, Pick From Batch (mtb), easy showAnything, VAEDecode, LayerUtility: PurgeVRAM, PreviewImage, ColorMatch, VHS_VideoCombine, VAEDecode, JWInteger, PainterI2V, KSamplerAdvanced, KSamplerAdvanced, LoadImage, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, PathchSageAttentionKJ, Note, ImageScaleBy, Note, ImageResizeKJv2, SaveImage, ImageScaleBy, Pick From Batch (mtb), easy cleanGpuUsed, CLIPVisionEncode, Note, CLIPVisionLoader, VAELoader, Note, Note, LayerUtility: ImageScaleByAspectRatio V2, CLIPLoader, Note, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, LayerUtility: PurgeVRAM, CLIPTextEncode, ModelSamplingSD3, Note, Note, ImageScaleBy, Note, ImageResizeKJv2, SaveImage, ColorMatch, ImageScaleBy, easy cleanGpuUsed, CLIPVisionEncode, Note, CLIPVisionLoader, VAELoader, Note, Note, Note, CLIPLoader, Note, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, CLIPTextEncode, PreviewImage, ModelSamplingSD3, VHS_VideoCombine, Pick From Batch (mtb), LayerUtility: PurgeVRAM, easy showAnything, VAEDecode, LayerUtility: PurgeVRAM, ColorMatch, VHS_VideoCombine, PainterI2V, ImageConcanate, KSamplerAdvanced, CLIPTextEncode, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, PathchSageAttentionKJ, PathchSageAttentionKJ, PreviewImage, LayerUtility: PurgeVRAM, Reroute, VAEDecode, Reroute, LayerUtility: PurgeVRAM, ImageConcanate, PDIMAGE_LongerSize, PDIMAGE_LongerSize, ImageConcanate, PDIMAGE_LongerSize, RunningHub Deepcleaner, UNETLoader, CR Prompt Text, Reroute, RH_LLMAPI_NODE, AILab_QwenVL, CLIPTextEncode, VHS_VideoCombine, UNETLoader, UNETLoader, Note, PainterI2V, VHS_VideoCombine, AddLabel, AddLabel, AddLabel, KSamplerAdvanced, Seed (rgthree), PathchSageAttentionKJ, Note, CLIPTextEncode, PainterI2V, UNETLoader, UNETLoader, AddLabel, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Remix V2 VS  Smooth图生视频对比工作流V4（PainterI2V Plus版）_1990820621133225985.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1990820621133225985.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（174 个）：
+- `Note`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ImageScaleBy`
+- `Pick From Batch (mtb)`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `Note`
+- `WanImageToVideo`
+- `Note`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPLoader`
+- `Note`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ColorMatch`
+- `ImageScaleBy`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `Note`
+- `Note`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPLoader`
+- `Note`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `ModelSamplingSD3`
+- `Pick From Batch (mtb)`
+- `easy showAnything`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `PreviewImage`
+- `ColorMatch`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `JWInteger`
+- `PainterI2V`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoadImage`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ImageScaleBy`
+- `Pick From Batch (mtb)`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `Note`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPLoader`
+- `Note`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `Note`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ColorMatch`
+- `ImageScaleBy`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `Note`
+- `Note`
+- `Note`
+- `CLIPLoader`
+- `Note`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `ModelSamplingSD3`
+- `VHS_VideoCombine`
+- `Pick From Batch (mtb)`
+- `LayerUtility: PurgeVRAM`
+- `easy showAnything`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `ColorMatch`
+- `VHS_VideoCombine`
+- `PainterI2V`
+- `ImageConcanate`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `LayerUtility: PurgeVRAM`
+- `Reroute`
+- `VAEDecode` ★核心
+- `Reroute`
+- `LayerUtility: PurgeVRAM`
+- `ImageConcanate`
+- `PDIMAGE_LongerSize`
+- `PDIMAGE_LongerSize`
+- `ImageConcanate`
+- `PDIMAGE_LongerSize`
+- `RunningHub Deepcleaner`
+- `UNETLoader` ★核心
+- `CR Prompt Text`
+- `Reroute`
+- `RH_LLMAPI_NODE`
+- `AILab_QwenVL`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Note`
+- `PainterI2V`
+- `VHS_VideoCombine`
+- `AddLabel`
+- `AddLabel`
+- `AddLabel`
+- `KSamplerAdvanced` ★核心
+- `Seed (rgthree)`
+- `PathchSageAttentionKJ`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `PainterI2V`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `AddLabel`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **77%**（134/174）
+
+**有卡**：`ImageScaleBy`、`ImageResizeKJv2`、`SaveImage`、`Pick From Batch (mtb)`、`easy cleanGpuUsed`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`WanImageToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPLoader`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`LayerUtility: PurgeVRAM`、`CLIPTextEncode`、`ColorMatch`、`VAEDecode`、`VHS_VideoCombine`、`JWInteger`、`PainterI2V`、`LoadImage`、`UNETLoader`、`PathchSageAttentionKJ`、`ImageConcanate`、`PDIMAGE_LongerSize`、`RunningHub Deepcleaner`、`CR Prompt Text`、`RH_LLMAPI_NODE`、`AILab_QwenVL`、`AddLabel`、`Seed (rgthree)`、`PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

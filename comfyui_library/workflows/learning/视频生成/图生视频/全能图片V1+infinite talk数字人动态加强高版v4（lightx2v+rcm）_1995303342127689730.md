@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/全能图片V1+infinite talk数字人动态加强高版v4（lightx2v+rcm）_1995303342127689730.json
+name: 全能图片V1+infinite talk数字人动态加强高版v4（lightx2v+rcm）_1995303342127689730.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1995303342127689730.json
+hash: 9f1fd0a2be2d352b
+coverage: 0.74359
+learned_at: 2026-10-15 22:33:22
+nodes: [LoadWanVideoT5TextEncoder, LoadImage, ImageResize+, RH_Nano_Banana_Image2Image, JWFloat, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoBlockSwap, MultiTalkModelLoader, WanVideoModelLoader, MarkdownNote, CLIPVisionLoader, Note, WanVideoVAELoader, JWInteger, VHS_LoadVideoFFmpeg, CR Prompt Text, AudioSeparation, PreviewAny, GetImageSizeAndCount, AudioCrop, DownloadAndLoadWav2VecModel, Note, VHS_VideoInfoLoaded, WanVideoClipVisionEncode, WanVideoImageToVideoMultiTalk, WanVideoTextEncode, WanVideoSampler, WanVideoDecode, MultiTalkWav2VecEmbeds, PreviewImage, Note, LayerUtility: ImageScaleByAspectRatio V2, Reroute, VHS_VideoCombine, RH_Translator, Note, Note, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/全能图片V1+infinite talk数字人动态加强高版v4（lightx2v+rcm）_1995303342127689730.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1995303342127689730.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（39 个）：
+- `LoadWanVideoT5TextEncoder`
+- `LoadImage`
+- `ImageResize+`
+- `RH_Nano_Banana_Image2Image`
+- `JWFloat`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `MultiTalkModelLoader`
+- `WanVideoModelLoader`
+- `MarkdownNote`
+- `CLIPVisionLoader`
+- `Note`
+- `WanVideoVAELoader`
+- `JWInteger`
+- `VHS_LoadVideoFFmpeg`
+- `CR Prompt Text`
+- `AudioSeparation`
+- `PreviewAny`
+- `GetImageSizeAndCount`
+- `AudioCrop`
+- `DownloadAndLoadWav2VecModel`
+- `Note`
+- `VHS_VideoInfoLoaded`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Reroute`
+- `VHS_VideoCombine`
+- `RH_Translator`
+- `Note`
+- `Note`
+- `Note`
+
+## 知识
+
+覆盖率 **74%**（29/39）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`LoadImage`、`ImageResize+`、`RH_Nano_Banana_Image2Image`、`JWFloat`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`MultiTalkModelLoader`、`WanVideoModelLoader`、`CLIPVisionLoader`、`WanVideoVAELoader`、`JWInteger`、`VHS_LoadVideoFFmpeg`、`CR Prompt Text`、`AudioSeparation`、`GetImageSizeAndCount`、`AudioCrop`、`DownloadAndLoadWav2VecModel`、`VHS_VideoInfoLoaded`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoMultiTalk`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`MultiTalkWav2VecEmbeds`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_VideoCombine`、`RH_Translator`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

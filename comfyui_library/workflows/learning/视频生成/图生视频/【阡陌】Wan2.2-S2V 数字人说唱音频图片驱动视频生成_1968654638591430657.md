@@ -1,0 +1,86 @@
+---
+key: 视频生成/图生视频/【阡陌】Wan2.2-S2V 数字人说唱音频图片驱动视频生成_1968654638591430657.json
+name: 【阡陌】Wan2.2-S2V 数字人说唱音频图片驱动视频生成_1968654638591430657.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1968654638591430657.json
+hash: 2c7c90aa28e9120f
+coverage: 0.787879
+learned_at: 2026-10-15 22:31:46
+nodes: [CLIPLoader, LoadImage, CLIPTextEncode, PrimitiveNode, WanSoundImageToVideo, KSampler, VAELoader, LoraLoaderModelOnly, UNETLoader, ImageFromBatch, VAEDecode, PathchSageAttentionKJ, ModelPatchTorchSettings, PrimitiveNode, UnetLoaderGGUF, ModelSamplingSD3, PrimitiveNode, PrimitiveNode, LatentConcat, LatentCut, AudioEncoderEncode, PrimitiveNode, SaveVideo, LoadImage, workflow>Video S2V Extend, workflow>Video S2V Extend1, workflow>Video S2V Extend2, PrimitiveNode, CLIPTextEncode, AudioEncoderLoader, LoadAudio, CreateVideo, Note]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 587999168493177, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/【阡陌】Wan2.2-S2V 数字人说唱音频图片驱动视频生成_1968654638591430657.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1968654638591430657.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（33 个）：
+- `CLIPLoader`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `PrimitiveNode`
+- `WanSoundImageToVideo`
+- `KSampler` ★核心
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `ImageFromBatch`
+- `VAEDecode` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `PrimitiveNode`
+- `UnetLoaderGGUF` ★核心
+- `ModelSamplingSD3`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `LatentConcat`
+- `LatentCut`
+- `AudioEncoderEncode`
+- `PrimitiveNode`
+- `SaveVideo`
+- `LoadImage`
+- `workflow>Video S2V Extend`
+- `workflow>Video S2V Extend1`
+- `workflow>Video S2V Extend2`
+- `PrimitiveNode`
+- `CLIPTextEncode` ★核心
+- `AudioEncoderLoader`
+- `LoadAudio`
+- `CreateVideo`
+- `Note`
+
+## 关键参数
+
+- `seed` = `587999168493177`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **79%**（26/33）
+
+**有卡**：`CLIPLoader`、`LoadImage`、`CLIPTextEncode`、`WanSoundImageToVideo`、`KSampler`、`VAELoader`、`LoraLoaderModelOnly`、`UNETLoader`、`ImageFromBatch`、`VAEDecode`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`UnetLoaderGGUF`、`ModelSamplingSD3`、`LatentConcat`、`LatentCut`、`AudioEncoderEncode`、`SaveVideo`、`workflow>Video S2V Extend`、`workflow>Video S2V Extend1`、`workflow>Video S2V Extend2`、`AudioEncoderLoader`、`LoadAudio`、`CreateVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

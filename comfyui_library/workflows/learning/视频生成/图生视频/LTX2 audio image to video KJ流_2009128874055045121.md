@@ -1,0 +1,78 @@
+---
+key: 视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json
+name: LTX2 audio image to video KJ流_2009128874055045121.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2009128874055045121.json
+hash: bb2803d96d95709c
+coverage: 0.731707
+learned_at: 2026-10-15 22:34:10
+nodes: [KSamplerSelect, BasicScheduler, SamplerCustomAdvanced, Reroute, Reroute, EmptyLTXVLatentVideo, GetNode, RandomNoise, SetNode, SetNode, PathchSageAttentionKJ, LTXVAudioVAEEncode, MelBandRoFormerSampler, SetNode, GetNode, LTXVSeparateAVLatent, SetLatentNoiseMask, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, GetNode, SolidMask, PrimitiveNode, CFGGuider, CLIPTextEncode, LTXVConditioning, CheckpointLoaderSimple, LTXAVTextEncoderLoader, PreviewImage, LoadImage, GetNode, LTXVAudioVAELoader, VHS_VideoCombine, MelBandRoFormerModelLoader, LoadAudio, CLIPTextEncode, TrimAudioDuration, PreviewAudio, ImageResizeKJv2, VAEDecodeTiled, easy cleanGpuUsed]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2-19b-distilled-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2009128874055045121.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（41 个）：
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `SamplerCustomAdvanced` ★核心
+- `Reroute`
+- `Reroute`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `RandomNoise`
+- `SetNode`
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `LTXVAudioVAEEncode` ★核心
+- `MelBandRoFormerSampler` ★核心
+- `SetNode`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `GetNode`
+- `SolidMask`
+- `PrimitiveNode`
+- `CFGGuider`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `CheckpointLoaderSimple` ★核心
+- `LTXAVTextEncoderLoader`
+- `PreviewImage`
+- `LoadImage`
+- `GetNode`
+- `LTXVAudioVAELoader`
+- `VHS_VideoCombine`
+- `MelBandRoFormerModelLoader`
+- `LoadAudio`
+- `CLIPTextEncode` ★核心
+- `TrimAudioDuration`
+- `PreviewAudio`
+- `ImageResizeKJv2`
+- `VAEDecodeTiled` ★核心
+- `easy cleanGpuUsed`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2-19b-distilled-fp8.safetensors`
+
+## 知识
+
+覆盖率 **73%**（30/41）
+
+**有卡**：`KSamplerSelect`、`BasicScheduler`、`SamplerCustomAdvanced`、`EmptyLTXVLatentVideo`、`RandomNoise`、`PathchSageAttentionKJ`、`LTXVAudioVAEEncode`、`MelBandRoFormerSampler`、`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`SolidMask`、`CFGGuider`、`CLIPTextEncode`、`LTXVConditioning`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LoadImage`、`LTXVAudioVAELoader`、`VHS_VideoCombine`、`MelBandRoFormerModelLoader`、`LoadAudio`、`TrimAudioDuration`、`PreviewAudio`、`ImageResizeKJv2`、`VAEDecodeTiled`、`easy cleanGpuUsed`
+
+**用到的条目**：CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler、LTXVConcatAVLatent

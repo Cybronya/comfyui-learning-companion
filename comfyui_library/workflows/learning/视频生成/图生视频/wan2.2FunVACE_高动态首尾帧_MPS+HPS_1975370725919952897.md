@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json
+name: wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1975370725919952897.json
+hash: 0b85943c1d9987f8
+coverage: 0.953488
+learned_at: 2026-10-15 22:32:08
+nodes: [WanVideoSetBlockSwap, WanVideoSetLoRAs, PrimitiveFloat, SimpleMath+, Int, WanVideoVACEModelSelect, WanVideoModelLoader, WanVideoBlockSwap, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, RHHiddenNodes, WanVideoVACEStartToEndFrame, WanVideoVACEEncode, WanVideoEasyCache, WanVideoEnhanceAVideo, WanVideoSampler, WanVideoSampler, PrimitiveInt, WanVideoExperimentalArgs, StringToFloatList, Float, LayerUtility: PurgeVRAM V2, WanVideoScheduler, VHS_VideoCombine, Int, WanVideoVACEModelSelect, StringToFloatList, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEncode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, WanVideoSLG, INTConstant, WanVideoScheduler, WanVideoDecode, WanVideoSigmaToStep, LoadImage, LoadImage, CR Prompt Text, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1975370725919952897.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（43 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `PrimitiveFloat`
+- `SimpleMath+`
+- `Int`
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `RHHiddenNodes`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoVACEEncode`
+- `WanVideoEasyCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `PrimitiveInt`
+- `WanVideoExperimentalArgs`
+- `StringToFloatList`
+- `Float`
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoScheduler`
+- `VHS_VideoCombine`
+- `Int`
+- `WanVideoVACEModelSelect`
+- `StringToFloatList`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEncode`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoSLG`
+- `INTConstant`
+- `WanVideoScheduler`
+- `WanVideoDecode`
+- `WanVideoSigmaToStep`
+- `LoadImage`
+- `LoadImage`
+- `CR Prompt Text`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+
+## 知识
+
+覆盖率 **95%**（41/43）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`SimpleMath+`、`Int`、`WanVideoVACEModelSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`RHHiddenNodes`、`WanVideoVACEStartToEndFrame`、`WanVideoVACEEncode`、`WanVideoEasyCache`、`WanVideoEnhanceAVideo`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`StringToFloatList`、`Float`、`LayerUtility: PurgeVRAM V2`、`WanVideoScheduler`、`VHS_VideoCombine`、`WanVideoTextEncode`、`ImageResizeKJv2`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoSLG`、`INTConstant`、`WanVideoDecode`、`WanVideoSigmaToStep`、`LoadImage`、`CR Prompt Text`、`WanVideoLoraSelectMulti`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode

@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/FLUX.1+Kontext+Wan+2.1+vace_V2V视频风格转绘0728_1980467169198845954.json
+name: FLUX.1+Kontext+Wan+2.1+vace_V2V视频风格转绘0728_1980467169198845954.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1980467169198845954.json
+hash: 53e4aa5645e1cce3
+coverage: 0.909091
+learned_at: 2026-10-15 22:32:30
+nodes: [ConditioningZeroOut, VAEEncode, FluxGuidance, ReferenceLatent, ImageConcanate, VAEDecode, MarkdownNote, VAEDecode, FluxKontextImageScale, VHS_VideoCombine, DWPreprocessor, TrimVideoLatent, PreviewAny, ImageBlend, PreviewImage, GoogleTranslateTextNode, PreviewImage, VHS_VideoCombine, WanVaceToVideo, CLIPTextEncode, LoadImage, FILM VFI, ModelSamplingSD3, VHS_VideoCombine, SaveImage, KSampler, CLIPTextEncode, CLIPTextEncode, CR Prompt Text, KSampler, DF_Integer, UNETLoader, CLIPLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, DepthAnythingV2Preprocessor, SimpleMath+, NunchakuFluxDiTLoader, NunchakuFluxLoraLoader, DualCLIPLoader, VAELoader, VHS_LoadVideo, VHS_LoadVideo]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 453412543732545, "steps": 20}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/FLUX.1+Kontext+Wan+2.1+vace_V2V视频风格转绘0728_1980467169198845954.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1980467169198845954.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（44 个）：
+- `ConditioningZeroOut`
+- `VAEEncode` ★核心
+- `FluxGuidance`
+- `ReferenceLatent`
+- `ImageConcanate`
+- `VAEDecode` ★核心
+- `MarkdownNote`
+- `VAEDecode` ★核心
+- `FluxKontextImageScale`
+- `VHS_VideoCombine`
+- `DWPreprocessor`
+- `TrimVideoLatent`
+- `PreviewAny`
+- `ImageBlend`
+- `PreviewImage`
+- `GoogleTranslateTextNode`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `WanVaceToVideo`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `FILM VFI`
+- `ModelSamplingSD3`
+- `VHS_VideoCombine`
+- `SaveImage`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CR Prompt Text`
+- `KSampler` ★核心
+- `DF_Integer`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `CLIPLoader`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `DepthAnythingV2Preprocessor`
+- `SimpleMath+`
+- `NunchakuFluxDiTLoader`
+- `NunchakuFluxLoraLoader` ★核心
+- `DualCLIPLoader`
+- `VAELoader`
+- `VHS_LoadVideo`
+- `VHS_LoadVideo`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `453412543732545`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **91%**（40/44）
+
+**有卡**：`ConditioningZeroOut`、`VAEEncode`、`FluxGuidance`、`ReferenceLatent`、`ImageConcanate`、`VAEDecode`、`FluxKontextImageScale`、`VHS_VideoCombine`、`DWPreprocessor`、`TrimVideoLatent`、`ImageBlend`、`GoogleTranslateTextNode`、`WanVaceToVideo`、`CLIPTextEncode`、`LoadImage`、`FILM VFI`、`ModelSamplingSD3`、`SaveImage`、`KSampler`、`CR Prompt Text`、`DF_Integer`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`DepthAnythingV2Preprocessor`、`SimpleMath+`、`NunchakuFluxDiTLoader`、`NunchakuFluxLoraLoader`、`DualCLIPLoader`、`VHS_LoadVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

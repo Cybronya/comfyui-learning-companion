@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/WAN2.2官方加速流_1956189385706360833.json
+name: WAN2.2官方加速流_1956189385706360833.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956189385706360833.json
+hash: 69b3a850077ef133
+coverage: 0.933333
+learned_at: 2026-10-15 22:31:12
+nodes: [UNETLoader, UNETLoader, VAELoader, GetImageSizeAndCount, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, WanImageToVideo, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, KSamplerAdvanced, CreateVideo, VAEDecode, MathExpression|pysssss, INTConstant, INTConstant, CLIPTextEncode, SaveVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, KSamplerAdvanced, DeepTranslatorTextNode, PrimitiveInt, ConstrainImage|pysssss, PrimitiveStringMultiline, LoadImage, JjkShowText, CLIPLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/WAN2.2官方加速流_1956189385706360833.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956189385706360833.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（30 个）：
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `VAELoader`
+- `GetImageSizeAndCount`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `WanImageToVideo`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `KSamplerAdvanced` ★核心
+- `CreateVideo`
+- `VAEDecode` ★核心
+- `MathExpression|pysssss`
+- `INTConstant`
+- `INTConstant`
+- `CLIPTextEncode` ★核心
+- `SaveVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `DeepTranslatorTextNode`
+- `PrimitiveInt`
+- `ConstrainImage|pysssss`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `JjkShowText`
+- `CLIPLoader`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **93%**（28/30）
+
+**有卡**：`UNETLoader`、`VAELoader`、`GetImageSizeAndCount`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`WanImageToVideo`、`LayerUtility: PurgeVRAM`、`KSamplerAdvanced`、`CreateVideo`、`VAEDecode`、`MathExpression|pysssss`、`INTConstant`、`CLIPTextEncode`、`SaveVideo`、`LoraLoaderModelOnly`、`DeepTranslatorTextNode`、`ConstrainImage|pysssss`、`LoadImage`、`JjkShowText`、`CLIPLoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

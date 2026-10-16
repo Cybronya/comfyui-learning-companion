@@ -1,0 +1,277 @@
+---
+key: 视频生成/图生视频/Flux-klein+wan2.2 一图成片_2014663951241453570.json
+name: Flux-klein+wan2.2 一图成片_2014663951241453570.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2014663951241453570.json
+hash: 028a5198d2369206
+coverage: 0.859574
+learned_at: 2026-10-15 22:34:36
+nodes: [UNETLoader, CLIPLoader, VAELoader, VAEEncode, ModelSamplingSD3, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, WanFirstLastFrameToVideo, MathExpression|pysssss, CLIPTextEncode, KSamplerAdvanced, CLIPTextEncode, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, WanFirstLastFrameToVideo, MathExpression|pysssss, CLIPTextEncode, KSamplerAdvanced, CLIPTextEncode, ModelSamplingSD3, KSamplerAdvanced, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, ModelSamplingSD3, Int, ImageResizeKJv2, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, CLIPTextEncode, ImageResizeKJv2, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, WanFirstLastFrameToVideo, MathExpression|pysssss, CLIPTextEncode, ModelSamplingSD3, Int, ImageResizeKJv2, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, CLIPTextEncode, Int, ImageResizeKJv2, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, WanFirstLastFrameToVideo, MathExpression|pysssss, CLIPTextEncode, Int, KSamplerAdvanced, VHS_VideoCombine, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, WanFirstLastFrameToVideo, CLIPTextEncode, WanFirstLastFrameToVideo, CLIPTextEncode, CLIPLoader, ModelSamplingSD3, WanFirstLastFrameToVideo, VAEDecode, VAEDecode, VAEDecode, VAEDecode, VAEDecode, VAEDecode, KSamplerAdvanced, VAELoader, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, RH_LLMAPI_NODE, RandomNoise, ImageFromBatch, easy imageListToImageBatch, PreviewImage, ImageFromBatch, PreviewImage, ImageFromBatch, Int, ImageFromBatch, PreviewImage, ImageFromBatch, PreviewImage, ImageFromBatch, PreviewImage, PreviewImage, PreviewImage, ImageFromBatch, PreviewImage, ImageFromBatch, PreviewImage, ModelSamplingSD3, WanFirstLastFrameToVideo, MathExpression|pysssss, CLIPTextEncode, Int, CLIPTextEncode, KSamplerAdvanced, PreviewImage, PreviewImage, KSamplerAdvanced, RH_LLMAPI_NODE, ImageFromBatch, ImageFromBatch, LayerUtility: ImageScaleByAspectRatio V2, ImageResizeKJv2, ModelSamplingSD3, VAEDecode, PreviewAny, KSamplerAdvanced, PreviewImage, ModelSamplingSD3, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, VAEDecode, Int, MathExpression|pysssss, MathExpression|pysssss, Int, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, easy showAnything, EmptyImage, PreviewImage, PreviewImage, PreviewImage, PreviewAny, Int, CM_IntToFloat, Int, Int, CFGGuider, Int, VAEDecode, CLIPTextEncode, VHS_VideoCombine, ImageFromBatch, PreviewImage, ImageFromBatch, UNETLoader, UNETLoader, UNETLoader, ImageBatchMulti, RH_LLMAPI_NODE, RH_LLMAPI_NODE, easy showAnything, RH_LLMAPI_NODE, ImageFromBatch, ImageFromBatch, PreviewAny, ImageResizeKJv2, PreviewImage, ImageFromBatch, VHS_VideoCombine, ImageResizeKJv2, VHS_VideoCombine, RIFE VFI, SimpleMath+, CM_IntToFloat, VHS_VideoCombine, Int, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), VHS_VideoCombine, ImageBatchMulti, Text Multiline, VHS_VideoCombine, CR Text, ImpactSwitch, CR Text, Text Multiline, easy showAnything, PreviewAny, PreviewAny, PreviewAny, RH_LLMAPI_NODE, PreviewAny, RH_LLMAPI_NODE, CLIPTextEncode, ReferenceLatent, ReferenceLatent, VAEEncode, ReferenceLatent, LayerUtility: ImageScaleByAspectRatio V2, EmptyFlux2LatentImage, KSamplerSelect, Get resolution [Crystools], Flux2Scheduler, Mute / Bypass Repeater (rgthree), VHS_VideoCombine, easy promptLine, ReferenceLatent, LayerUtility: ImageScaleByAspectRatio V2, easy showAnything, ImageBatch, LoadImage, PreviewImage, RH_LLMAPI_NODE, CR Prompt Text, ImageFromBatch, Fast Bypasser (rgthree), SamplerCustomAdvanced, Qwen3_VQA, easy promptLine, SaveImage, LoadAudio, AudioCrop, UNETLoader, UNETLoader, UNETLoader, LoadImage, JWStringConcat, Text Multiline, ImpactSwitch, Reroute, easy showAnything, Text Multiline, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Flux-klein+wan2.2 一图成片_2014663951241453570.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2014663951241453570.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（235 个）：
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `VAEEncode` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanFirstLastFrameToVideo`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanFirstLastFrameToVideo`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `Int`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanFirstLastFrameToVideo`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `Int`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `Int`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `WanFirstLastFrameToVideo`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `Int`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `WanFirstLastFrameToVideo`
+- `CLIPTextEncode` ★核心
+- `WanFirstLastFrameToVideo`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `WanFirstLastFrameToVideo`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAELoader`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `RH_LLMAPI_NODE`
+- `RandomNoise`
+- `ImageFromBatch`
+- `easy imageListToImageBatch`
+- `PreviewImage`
+- `ImageFromBatch`
+- `PreviewImage`
+- `ImageFromBatch`
+- `Int`
+- `ImageFromBatch`
+- `PreviewImage`
+- `ImageFromBatch`
+- `PreviewImage`
+- `ImageFromBatch`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `ImageFromBatch`
+- `PreviewImage`
+- `ImageFromBatch`
+- `PreviewImage`
+- `ModelSamplingSD3`
+- `WanFirstLastFrameToVideo`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `Int`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `PreviewImage`
+- `PreviewImage`
+- `KSamplerAdvanced` ★核心
+- `RH_LLMAPI_NODE`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJv2`
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `PreviewAny`
+- `KSamplerAdvanced` ★核心
+- `PreviewImage`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAEDecode` ★核心
+- `Int`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `Int`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `EmptyImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewAny`
+- `Int`
+- `CM_IntToFloat`
+- `Int`
+- `Int`
+- `CFGGuider`
+- `Int`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `ImageFromBatch`
+- `PreviewImage`
+- `ImageFromBatch`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `ImageBatchMulti`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_NODE`
+- `easy showAnything`
+- `RH_LLMAPI_NODE`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `PreviewAny`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `ImageFromBatch`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `RIFE VFI`
+- `SimpleMath+`
+- `CM_IntToFloat`
+- `VHS_VideoCombine`
+- `Int`
+- `Mute / Bypass Repeater (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `ImageBatchMulti`
+- `Text Multiline`
+- `VHS_VideoCombine`
+- `CR Text`
+- `ImpactSwitch`
+- `CR Text`
+- `Text Multiline`
+- `easy showAnything`
+- `PreviewAny`
+- `PreviewAny`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `CLIPTextEncode` ★核心
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `EmptyFlux2LatentImage`
+- `KSamplerSelect` ★核心
+- `Get resolution [Crystools]`
+- `Flux2Scheduler`
+- `Mute / Bypass Repeater (rgthree)`
+- `VHS_VideoCombine`
+- `easy promptLine`
+- `ReferenceLatent`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy showAnything`
+- `ImageBatch`
+- `LoadImage`
+- `PreviewImage`
+- `RH_LLMAPI_NODE`
+- `CR Prompt Text`
+- `ImageFromBatch`
+- `Fast Bypasser (rgthree)`
+- `SamplerCustomAdvanced` ★核心
+- `Qwen3_VQA`
+- `easy promptLine`
+- `SaveImage`
+- `LoadAudio`
+- `AudioCrop`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoadImage`
+- `JWStringConcat`
+- `Text Multiline`
+- `ImpactSwitch`
+- `Reroute`
+- `easy showAnything`
+- `Text Multiline`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **86%**（202/235）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`VAEEncode`、`ModelSamplingSD3`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanFirstLastFrameToVideo`、`MathExpression|pysssss`、`CLIPTextEncode`、`KSamplerAdvanced`、`Int`、`ImageResizeKJv2`、`VHS_VideoCombine`、`VAEDecode`、`RH_LLMAPI_NODE`、`RandomNoise`、`ImageFromBatch`、`easy imageListToImageBatch`、`LoraLoaderModelOnly`、`EmptyImage`、`CM_IntToFloat`、`CFGGuider`、`ImageBatchMulti`、`RIFE VFI`、`SimpleMath+`、`Mute / Bypass Repeater (rgthree)`、`Fast Bypasser (rgthree)`、`Text Multiline`、`CR Text`、`ReferenceLatent`、`EmptyFlux2LatentImage`、`KSamplerSelect`、`Get resolution [Crystools]`、`Flux2Scheduler`、`easy promptLine`、`ImageBatch`、`LoadImage`、`CR Prompt Text`、`SamplerCustomAdvanced`、`Qwen3_VQA`、`SaveImage`、`LoadAudio`、`AudioCrop`、`JWStringConcat`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage、LayerUtility: ImageScaleByAspectRatio V2

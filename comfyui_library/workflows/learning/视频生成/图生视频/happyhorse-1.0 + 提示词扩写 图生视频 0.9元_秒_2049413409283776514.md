@@ -1,0 +1,47 @@
+---
+key: 视频生成/图生视频/happyhorse-1.0 + 提示词扩写 图生视频 0.9元_秒_2049413409283776514.json
+name: happyhorse-1.0 + 提示词扩写 图生视频 0.9元_秒_2049413409283776514.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2049413409283776514.json
+hash: 729f401f7c25f5e3
+coverage: 0.6
+learned_at: 2026-10-15 22:37:14
+nodes: [LoadImage, Int2Any_AS, PrimitiveInt, PrimitiveStringMultiline, RH_LLMAPI_NODE, CR Text Concatenate, CR Text Concatenate, PrimitiveString, PrimitiveString, CR Text Concatenate, easy showAnything, Any To String (mtb), SaveVideo, RH_AlibabaHappyhorse10ImageToVideo, easy showAnything]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/happyhorse-1.0 + 提示词扩写 图生视频 0.9元_秒_2049413409283776514.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2049413409283776514.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（15 个）：
+- `LoadImage`
+- `Int2Any_AS`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_NODE`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `PrimitiveString`
+- `PrimitiveString`
+- `CR Text Concatenate`
+- `easy showAnything`
+- `Any To String (mtb)`
+- `SaveVideo`
+- `RH_AlibabaHappyhorse10ImageToVideo`
+- `easy showAnything`
+
+## 知识
+
+覆盖率 **60%**（9/15）
+
+**有卡**：`LoadImage`、`Int2Any_AS`、`RH_LLMAPI_NODE`、`CR Text Concatenate`、`Any To String (mtb)`、`SaveVideo`、`RH_AlibabaHappyhorse10ImageToVideo`
+
+**用到的条目**：LoadImage、SaveVideo、RH_LLMAPI_NODE、Int2Any_AS、RH_AlibabaHappyhorse10ImageToVideo、Any To String (mtb)、CR Text Concatenate、sd15-t2i-basic

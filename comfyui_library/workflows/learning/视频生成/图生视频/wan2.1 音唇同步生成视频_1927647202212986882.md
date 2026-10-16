@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/wan2.1 音唇同步生成视频_1927647202212986882.json
+name: wan2.1 音唇同步生成视频_1927647202212986882.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1927647202212986882.json
+hash: 4febe3dcb7f5e6eb
+coverage: 0.479167
+learned_at: 2026-10-15 22:29:55
+nodes: [CLIPVisionLoader, WanVideoModelLoader, INTConstant, SetNode, SetNode, SetNode, LoadImage, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoVAELoader, DownloadAndLoadWav2VecModel, LoadWanVideoT5TextEncoder, FantasyTalkingModelLoader, GetNode, WanVideoClipVisionEncode, PreviewImage, WanVideoImageToVideoEncode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoDecode, GetNode, WanVideoVRAMManagement, CreateCFGScheduleFloatList, WanVideoTeaCache, WanVideoSampler, LoadAudio, WanVideoTextEncode, GetNode, GetNode, GetNode, GetNode, FantasyTalkingWav2VecEmbeds, VHS_VideoCombine, SetNode, GetNode, PreviewImage, ImageResizeKJv2, INTConstant]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1 音唇同步生成视频_1927647202212986882.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1927647202212986882.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（48 个）：
+- `CLIPVisionLoader`
+- `WanVideoModelLoader`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadWanVideoT5TextEncoder`
+- `FantasyTalkingModelLoader`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `PreviewImage`
+- `WanVideoImageToVideoEncode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `WanVideoVRAMManagement`
+- `CreateCFGScheduleFloatList`
+- `WanVideoTeaCache`
+- `WanVideoSampler` ★核心
+- `LoadAudio`
+- `WanVideoTextEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `FantasyTalkingWav2VecEmbeds`
+- `VHS_VideoCombine`
+- `SetNode`
+- `GetNode`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `INTConstant`
+
+## 知识
+
+覆盖率 **48%**（23/48）
+
+**有卡**：`CLIPVisionLoader`、`WanVideoModelLoader`、`INTConstant`、`LoadImage`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`DownloadAndLoadWav2VecModel`、`LoadWanVideoT5TextEncoder`、`FantasyTalkingModelLoader`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`WanVideoVRAMManagement`、`CreateCFGScheduleFloatList`、`WanVideoTeaCache`、`WanVideoSampler`、`LoadAudio`、`WanVideoTextEncode`、`FantasyTalkingWav2VecEmbeds`、`VHS_VideoCombine`、`ImageResizeKJv2`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

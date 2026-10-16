@@ -1,0 +1,91 @@
+---
+key: 视频生成/图生视频/AI短剧角色表演万相2.2 ​高动态官方图生视频_1961337086731337730.json
+name: AI短剧角色表演万相2.2 ​高动态官方图生视频_1961337086731337730.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1961337086731337730.json
+hash: 467e5a35ea1a5571
+coverage: 0.959184
+learned_at: 2026-10-15 22:31:28
+nodes: [CLIPLoader, CR Prompt Text, CR Prompt Text, RH_Captioner, TextConcat, JWStringConcat, RH_LLMAPI_NODE, VAELoader, CR Prompt Text, LoadImage, easy anythingIndexSwitch, LoraLoaderModelOnly, CFGZeroStar, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, CFGZeroStar, PathchSageAttentionKJ, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, WanImageToVideo, PrimitiveInt, KSamplerAdvanced, KSamplerAdvanced, SimpleMath+, easy showAnything, Int, LayerUtility: PurgeVRAM V2, VAEDecode, VHS_VideoCombine, Wan22PromptSelector, RH_Captioner, JWStringConcat, CR Prompt Text, SimpleMath+, CR Prompt Text, TextConcat, Int, Int, Int, RHHiddenNodes, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"cfg": 14, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/AI短剧角色表演万相2.2 ​高动态官方图生视频_1961337086731337730.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1961337086731337730.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（49 个）：
+- `CLIPLoader`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `RH_Captioner`
+- `TextConcat`
+- `JWStringConcat`
+- `RH_LLMAPI_NODE`
+- `VAELoader`
+- `CR Prompt Text`
+- `LoadImage`
+- `easy anythingIndexSwitch`
+- `LoraLoaderModelOnly` ★核心
+- `CFGZeroStar`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `CFGZeroStar`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `WanImageToVideo`
+- `PrimitiveInt`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SimpleMath+`
+- `easy showAnything`
+- `Int`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `Wan22PromptSelector`
+- `RH_Captioner`
+- `JWStringConcat`
+- `CR Prompt Text`
+- `SimpleMath+`
+- `CR Prompt Text`
+- `TextConcat`
+- `Int`
+- `Int`
+- `Int`
+- `RHHiddenNodes`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `14`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **96%**（47/49）
+
+**有卡**：`CLIPLoader`、`CR Prompt Text`、`RH_Captioner`、`TextConcat`、`JWStringConcat`、`RH_LLMAPI_NODE`、`VAELoader`、`LoadImage`、`easy anythingIndexSwitch`、`LoraLoaderModelOnly`、`CFGZeroStar`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPTextEncode`、`WanImageToVideo`、`KSamplerAdvanced`、`SimpleMath+`、`Int`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`VHS_VideoCombine`、`Wan22PromptSelector`、`RHHiddenNodes`、`UNETLoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,93 @@
+---
+key: 视频生成/图生视频/LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.json
+name: LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2073319876273463297.json
+hash: 331beab128d78dc9
+coverage: 0.821429
+learned_at: 2026-10-15 22:41:05
+nodes: [MarkdownNote, LTXVConcatAVLatent, KSamplerSelect, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, KSamplerSelect, Reroute, LTXVAudioVAEDecode, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, ResizeImagesByLongerEdge, LTXVConditioning, ResizeImageMaskNode, LTXVPreprocess, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, RandomNoise, RandomNoise, ManualSigmas, PrimitiveInt, PrimitiveInt, LTXVConcatAVLatent, SetLatentNoiseMask, LTXVAudioVAEEncode, LTXVImgToVideoInplace, LTXVLatentUpsampler, ManualSigmas, CreateVideo, Reroute, SolidMask, PrimitiveInt, TrimAudioDuration, ComfyMathExpression, AudioInfo, ComfyMathExpression, LTXAVTextEncoderLoader, LTXVAudioVAELoader, PrimitiveBoolean, MarkdownNote, LoadImage, CFGGuider, LTXVImgToVideoInplace, PrimitiveStringMultiline, LoadAudio, CheckpointLoaderSimple, LoraLoaderModelOnly, PromptRelaySmartEncode, ConditioningZeroOut, SaveVideo, PrimitiveStringMultiline]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2073319876273463297.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（56 个）：
+- `MarkdownNote`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `PrimitiveInt`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ResizeImagesByLongerEdge`
+- `LTXVConditioning`
+- `ResizeImageMaskNode`
+- `LTXVPreprocess`
+- `EmptyLTXVLatentVideo`
+- `LatentUpscaleModelLoader`
+- `RandomNoise`
+- `RandomNoise`
+- `ManualSigmas`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LTXVConcatAVLatent`
+- `SetLatentNoiseMask`
+- `LTXVAudioVAEEncode` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler` ★核心
+- `ManualSigmas`
+- `CreateVideo`
+- `Reroute`
+- `SolidMask`
+- `PrimitiveInt`
+- `TrimAudioDuration`
+- `ComfyMathExpression`
+- `AudioInfo`
+- `ComfyMathExpression`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
+- `PrimitiveBoolean`
+- `MarkdownNote`
+- `LoadImage`
+- `CFGGuider`
+- `LTXVImgToVideoInplace`
+- `PrimitiveStringMultiline`
+- `LoadAudio`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PromptRelaySmartEncode`
+- `ConditioningZeroOut`
+- `SaveVideo`
+- `PrimitiveStringMultiline`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **82%**（46/56）
+
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`ComfyMathExpression`、`ResizeImagesByLongerEdge`、`LTXVConditioning`、`ResizeImageMaskNode`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`RandomNoise`、`ManualSigmas`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`LTXVImgToVideoInplace`、`LTXVLatentUpsampler`、`CreateVideo`、`SolidMask`、`TrimAudioDuration`、`AudioInfo`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`PrimitiveBoolean`、`LoadImage`、`LoadAudio`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`PromptRelaySmartEncode`、`ConditioningZeroOut`、`SaveVideo`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、ConditioningZeroOut、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

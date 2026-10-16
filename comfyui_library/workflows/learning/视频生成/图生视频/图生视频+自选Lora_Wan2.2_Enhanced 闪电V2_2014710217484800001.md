@@ -1,0 +1,141 @@
+---
+key: 视频生成/图生视频/图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json
+name: 图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2014710217484800001.json
+hash: bfd1efdda4e7d616
+coverage: 0.959596
+learned_at: 2026-10-15 22:34:36
+nodes: [CLIPLoader, Int, UNETLoader, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, PathchSageAttentionKJ, easy float, UNETLoader, Int, easy float, VAELoader, FindPerfectResolution, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, WanVideoNAG, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, MathExpression|pysssss, Int, HAIGC_SaveImagesToZip, CLIPLoader, Int, UNETLoader, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, PathchSageAttentionKJ, easy float, UNETLoader, Int, easy float, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, WanVideoNAG, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, MathExpression|pysssss, DuckHideNode, VHS_VideoCombine, Int, FindPerfectResolution, Reroute, HAIGC_VideoLastFrame, SaveImage, CLIPLoader, Int, UNETLoader, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, PathchSageAttentionKJ, easy float, UNETLoader, Int, easy float, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, PainterI2V, WanVideoNAG, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, MathExpression|pysssss, DuckHideNode, Int, SaveImage, FindPerfectResolution, HAIGC_SaveImagesToZip, VHS_VideoCombine, HAIGC_VideoLastFrame, VAEDecode, VAEDecode, VAEDecode, JjkText, JjkText, VHS_VideoCombine, DuckHideNode, SaveImage, JjkText, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2014710217484800001.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（99 个）：
+- `CLIPLoader`
+- `Int`
+- `UNETLoader` ★核心
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `easy float`
+- `UNETLoader` ★核心
+- `Int`
+- `easy float`
+- `VAELoader`
+- `FindPerfectResolution`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `MathExpression|pysssss`
+- `Int`
+- `HAIGC_SaveImagesToZip`
+- `CLIPLoader`
+- `Int`
+- `UNETLoader` ★核心
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `easy float`
+- `UNETLoader` ★核心
+- `Int`
+- `easy float`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `MathExpression|pysssss`
+- `DuckHideNode`
+- `VHS_VideoCombine`
+- `Int`
+- `FindPerfectResolution`
+- `Reroute`
+- `HAIGC_VideoLastFrame`
+- `SaveImage`
+- `CLIPLoader`
+- `Int`
+- `UNETLoader` ★核心
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `easy float`
+- `UNETLoader` ★核心
+- `Int`
+- `easy float`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `PainterI2V`
+- `WanVideoNAG`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `MathExpression|pysssss`
+- `DuckHideNode`
+- `Int`
+- `SaveImage`
+- `FindPerfectResolution`
+- `HAIGC_SaveImagesToZip`
+- `VHS_VideoCombine`
+- `HAIGC_VideoLastFrame`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `JjkText`
+- `JjkText`
+- `VHS_VideoCombine`
+- `DuckHideNode`
+- `SaveImage`
+- `JjkText`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **96%**（95/99）
+
+**有卡**：`CLIPLoader`、`Int`、`UNETLoader`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`easy float`、`VAELoader`、`FindPerfectResolution`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`PainterI2V`、`WanVideoNAG`、`easy cleanGpuUsed`、`CLIPTextEncode`、`KSamplerAdvanced`、`MathExpression|pysssss`、`HAIGC_SaveImagesToZip`、`DuckHideNode`、`VHS_VideoCombine`、`HAIGC_VideoLastFrame`、`SaveImage`、`VAEDecode`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

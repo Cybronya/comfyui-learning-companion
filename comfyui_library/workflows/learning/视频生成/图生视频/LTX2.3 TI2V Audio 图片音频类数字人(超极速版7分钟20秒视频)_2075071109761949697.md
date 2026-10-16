@@ -1,0 +1,156 @@
+---
+key: 视频生成/图生视频/LTX2.3 TI2V Audio 图片音频类数字人(超极速版7分钟20秒视频)_2075071109761949697.json
+name: LTX2.3 TI2V Audio 图片音频类数字人(超极速版7分钟20秒视频)_2075071109761949697.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2075071109761949697.json
+hash: a4da815102a63a10
+coverage: 0.483871
+learned_at: 2026-10-15 22:41:21
+nodes: [SetNode, SetNode, GetNode, MarkdownNote, MarkdownNote, MarkdownNote, ManualSigmas, MarkdownNote, GetNode, LTXVPreprocess, GetNode, SetNode, SetNode, LTX2_NAG, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, GetNode, GetNode, SetNode, SetNode, GetNode, KSamplerSelect, CFGGuider, GetNode, GetNode, LTXVLatentUpsampler, LTXVConcatAVLatent, SamplerCustomAdvanced, MarkdownNote, GetNode, GetNode, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, KSamplerSelect, ManualSigmas, VHS_VideoCombine, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, ResizeImagesByLongerEdge, SetNode, PrimitiveFloat, RandomNoise, ManualSigmas, Note, LTXVScheduler, MarkdownNote, LTXVConcatAVLatent, SimpleCalculatorKJ, GetNode, MarkdownNote, MelBandRoFormerSampler, PainterAudioLength, GetNode, LTXVAudioVAEEncode, SetNode, SetNode, easy showAnything, GetNode, GetNode, ComfySwitchNode, SolidMask, GetNode, LTXVConditioning, SetNode, PreviewAudio, LTXVImgToVideoInplace, Note, GetNode, ImageScaleBy, GetNode, VAEDecodeTiled, LTXVAudioVAEDecode, SetNode, SetLatentNoiseMask, VAELoader, VAELoaderKJ, VAELoader, MelBandRoFormerModelLoader, SetNode, LoadAudio, VHS_VideoCombine, DualCLIPLoader, AudioCrop, INTConstant, INTConstant, LoadImage, GetNode, GetNode, GetNode, GetNode, CFGGuider, PathchSageAttentionKJ, ModelPatchTorchSettings, UNETLoader, SetNode, LTX2SamplingPreviewOverride, GetNode, GetNode, llama_cpp_instruct_adv, ShowText|pysssss, easy cleanGpuUsed, GetNode, llama_cpp_model_loader, PrimitiveStringMultiline, PrimitiveStringMultiline, Fast Groups Bypasser (rgthree), LatentUpscaleModelLoader, ImageResizeKJv2, ImageScaleBy, GetImageSize, LoadImage, SaveImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/LTX2.3 TI2V Audio 图片音频类数字人(超极速版7分钟20秒视频)_2075071109761949697.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2075071109761949697.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（124 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `ManualSigmas`
+- `MarkdownNote`
+- `GetNode`
+- `LTXVPreprocess`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LTX2_NAG`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `LTXVImgToVideoInplace`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `MarkdownNote`
+- `GetNode`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `VHS_VideoCombine`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
+- `PrimitiveFloat`
+- `RandomNoise`
+- `ManualSigmas`
+- `Note`
+- `LTXVScheduler`
+- `MarkdownNote`
+- `LTXVConcatAVLatent`
+- `SimpleCalculatorKJ`
+- `GetNode`
+- `MarkdownNote`
+- `MelBandRoFormerSampler` ★核心
+- `PainterAudioLength`
+- `GetNode`
+- `LTXVAudioVAEEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `easy showAnything`
+- `GetNode`
+- `GetNode`
+- `ComfySwitchNode`
+- `SolidMask`
+- `GetNode`
+- `LTXVConditioning`
+- `SetNode`
+- `PreviewAudio`
+- `LTXVImgToVideoInplace`
+- `Note`
+- `GetNode`
+- `ImageScaleBy`
+- `GetNode`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `SetNode`
+- `SetLatentNoiseMask`
+- `VAELoader`
+- `VAELoaderKJ`
+- `VAELoader`
+- `MelBandRoFormerModelLoader`
+- `SetNode`
+- `LoadAudio`
+- `VHS_VideoCombine`
+- `DualCLIPLoader`
+- `AudioCrop`
+- `INTConstant`
+- `INTConstant`
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `UNETLoader` ★核心
+- `SetNode`
+- `LTX2SamplingPreviewOverride`
+- `GetNode`
+- `GetNode`
+- `llama_cpp_instruct_adv`
+- `ShowText|pysssss`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `llama_cpp_model_loader`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `Fast Groups Bypasser (rgthree)`
+- `LatentUpscaleModelLoader`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `GetImageSize`
+- `LoadImage`
+- `SaveImage`
+
+## 知识
+
+覆盖率 **48%**（60/124）
+
+**有卡**：`ManualSigmas`、`LTXVPreprocess`、`LTX2_NAG`、`LTXVImgToVideoInplace`、`EmptyLTXVLatentVideo`、`KSamplerSelect`、`CFGGuider`、`LTXVLatentUpsampler`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VHS_VideoCombine`、`CLIPTextEncode`、`ResizeImagesByLongerEdge`、`RandomNoise`、`LTXVScheduler`、`SimpleCalculatorKJ`、`MelBandRoFormerSampler`、`PainterAudioLength`、`LTXVAudioVAEEncode`、`SolidMask`、`LTXVConditioning`、`PreviewAudio`、`ImageScaleBy`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`SetLatentNoiseMask`、`VAELoader`、`VAELoaderKJ`、`MelBandRoFormerModelLoader`、`LoadAudio`、`DualCLIPLoader`、`AudioCrop`、`INTConstant`、`LoadImage`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`UNETLoader`、`LTX2SamplingPreviewOverride`、`llama_cpp_instruct_adv`、`easy cleanGpuUsed`、`llama_cpp_model_loader`、`LatentUpscaleModelLoader`、`ImageResizeKJv2`、`GetImageSize`、`SaveImage`
+
+**用到的条目**：VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler

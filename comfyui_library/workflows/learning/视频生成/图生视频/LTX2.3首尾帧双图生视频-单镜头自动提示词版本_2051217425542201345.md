@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/LTX2.3首尾帧双图生视频-单镜头自动提示词版本_2051217425542201345.json
+name: LTX2.3首尾帧双图生视频-单镜头自动提示词版本_2051217425542201345.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2051217425542201345.json
+hash: efb2ed9965b71c92
+coverage: 0.918033
+learned_at: 2026-10-15 22:37:21
+nodes: [LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, PreviewAny, easy showAnything, DualCLIPLoader, CLIPTextEncode, TextGenerateLTX2Prompt, CLIPTextEncode, LTXVConcatAVLatent, LTXVEmptyLatentAudio, CreateVideo, RandomNoise, LTXVCropGuides, SamplerCustomAdvanced, ManualSigmas, LTXVConditioning, LTXVSeparateAVLatent, RandomNoise, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVAudioVAEDecode, VAEDecodeTiled, ModelPatchTorchSettings, LTXVChunkFeedForward, PathchSageAttentionKJ, LTXVAudioVAELoader, LTXAVTextEncoderLoader, CheckpointLoaderSimple, LTXVPreprocess, ResizeImagesByLongerEdge, LTXVImgToVideoInplace, LTXVPreprocess, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, EmptyLTXVLatentVideo, LTXVImgToVideoInplaceKJ, easy int, ComfyMathExpression, Note, RH_LLMAPI_Pro_Node, PrimitiveInt, SimpleMath+, LoraLoaderModelOnly, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, ResizeImagesByLongerEdge, FloatConstant, LoadImage, LoadImage, CR Prompt Text, PrimitiveInt, SaveVideo, CR Prompt Text, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3首尾帧双图生视频-单镜头自动提示词版本_2051217425542201345.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2051217425542201345.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（61 个）：
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `CFGGuider`
+- `PreviewAny`
+- `easy showAnything`
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `TextGenerateLTX2Prompt`
+- `CLIPTextEncode` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio` ★核心
+- `CreateVideo`
+- `RandomNoise`
+- `LTXVCropGuides`
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `LTXVConditioning`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `LatentUpscaleModelLoader`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `ModelPatchTorchSettings`
+- `LTXVChunkFeedForward`
+- `PathchSageAttentionKJ`
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `CheckpointLoaderSimple` ★核心
+- `LTXVPreprocess`
+- `ResizeImagesByLongerEdge`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `LTXVImgToVideoInplaceKJ`
+- `easy int`
+- `ComfyMathExpression`
+- `Note`
+- `RH_LLMAPI_Pro_Node`
+- `PrimitiveInt`
+- `SimpleMath+`
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ResizeImagesByLongerEdge`
+- `FloatConstant`
+- `LoadImage`
+- `LoadImage`
+- `CR Prompt Text`
+- `PrimitiveInt`
+- `SaveVideo`
+- `CR Prompt Text`
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+
+## 知识
+
+覆盖率 **92%**（56/61）
+
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`DualCLIPLoader`、`CLIPTextEncode`、`TextGenerateLTX2Prompt`、`LTXVEmptyLatentAudio`、`CreateVideo`、`RandomNoise`、`LTXVCropGuides`、`LTXVConditioning`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`LTXVPreprocess`、`ResizeImagesByLongerEdge`、`LTXVImgToVideoInplace`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplaceKJ`、`easy int`、`RH_LLMAPI_Pro_Node`、`SimpleMath+`、`LoraLoaderModelOnly`、`LayerUtility: ImageScaleByAspectRatio V2`、`FloatConstant`、`LoadImage`、`CR Prompt Text`、`SaveVideo`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

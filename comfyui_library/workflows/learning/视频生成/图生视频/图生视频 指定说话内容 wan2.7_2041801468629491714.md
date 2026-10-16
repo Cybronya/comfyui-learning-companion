@@ -1,0 +1,39 @@
+---
+key: 视频生成/图生视频/图生视频 指定说话内容 wan2.7_2041801468629491714.json
+name: 图生视频 指定说话内容 wan2.7_2041801468629491714.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2041801468629491714.json
+hash: 4b8230056977cbfe
+coverage: 0.428571
+learned_at: 2026-10-15 22:36:22
+nodes: [SaveVideo, Note, LoadImage, Note, RH_AlibabaWan27ImageToVideo, JjkText, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/图生视频 指定说话内容 wan2.7_2041801468629491714.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2041801468629491714.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（7 个）：
+- `SaveVideo`
+- `Note`
+- `LoadImage`
+- `Note`
+- `RH_AlibabaWan27ImageToVideo`
+- `JjkText`
+- `Note`
+
+## 知识
+
+覆盖率 **43%**（3/7）
+
+**有卡**：`SaveVideo`、`LoadImage`、`RH_AlibabaWan27ImageToVideo`
+
+**用到的条目**：LoadImage、SaveVideo、RH_AlibabaWan27ImageToVideo、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage、CS_Preview_Any

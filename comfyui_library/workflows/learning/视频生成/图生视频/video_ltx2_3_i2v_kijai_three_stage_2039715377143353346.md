@@ -1,0 +1,147 @@
+---
+key: 视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json
+name: video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039715377143353346.json
+hash: f5f11ab23af4184a
+coverage: 0.495146
+learned_at: 2026-10-15 22:36:11
+nodes: [RandomNoise, KSamplerSelect, ManualSigmas, PrimitiveInt, PrimitiveInt, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, LTXVPreprocess, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, GetNode, SetNode, SetNode, MarkdownNote, MarkdownNote, SetNode, PreviewImage, GetNode, GetNode, LTXVConditioning, GetNode, LTXVImgToVideoInplace, GetNode, GetNode, GetNode, GetNode, CFGGuider, CLIPTextEncode, ComfyMathExpression, CLIPTextEncode, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ResizeImagesByLongerEdge, GetNode, LTXVEmptyLatentAudio, LTXVConcatAVLatent, SetNode, GetNode, LoraLoader, SetNode, GetNode, LTXVCropGuides, LTXVSeparateAVLatent, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, SamplerCustomAdvanced, CFGGuider, GetNode, GetNode, GetNode, LTXVImgToVideoInplace, LTXVSeparateAVLatent, LTXVCropGuides, LTXVSeparateAVLatent, GetNode, GetNode, LTXVAudioVAEDecode, VAEDecodeTiled, ComfyMathExpression, VHS_VideoCombine, GetNode, GetNode, GetNode, LoadImage, GetNode, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, UNETLoader, ImageResizeKJv2, LTXVImgToVideoInplace, SamplerCustomAdvanced, RandomNoise, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LatentUpscaleModelLoader, PrimitiveStringMultiline, PrimitiveInt, PrimitiveInt, LTXVLatentUpsampler, LTXVLatentUpsampler]
+patterns: [lora]
+missing: []
+parameters: {"batch_size": 1, "height": 25, "lora_name": "gemma-3-12b-it-abliterated_heretic_lora_rank64_bf16.safetensors", "strength_clip": 1, "strength_model": 1, "width": 97}
+---
+
+# 视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039715377143353346.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（103 个）：
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `LTXVPreprocess`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `MarkdownNote`
+- `MarkdownNote`
+- `SetNode`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `LTXVConditioning`
+- `GetNode`
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `CLIPTextEncode` ★核心
+- `ComfyMathExpression`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ResizeImagesByLongerEdge`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `GetNode`
+- `LoraLoader` ★核心
+- `SetNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVImgToVideoInplace`
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `ComfyMathExpression`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `GetNode`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `UNETLoader` ★核心
+- `ImageResizeKJv2`
+- `LTXVImgToVideoInplace`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `LatentUpscaleModelLoader`
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVLatentUpsampler` ★核心
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `lora_name` = `gemma-3-12b-it-abliterated_heretic_lora_rank64_bf16.safetensors`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+
+## 知识
+
+覆盖率 **50%**（51/103）
+
+**有卡**：`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`LTXVPreprocess`、`LTXVConcatAVLatent`、`LTXVConditioning`、`LTXVImgToVideoInplace`、`CFGGuider`、`CLIPTextEncode`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`ResizeImagesByLongerEdge`、`LTXVEmptyLatentAudio`、`LoraLoader`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`VHS_VideoCombine`、`LoadImage`、`VAELoaderKJ`、`DualCLIPLoader`、`UNETLoader`、`ImageResizeKJv2`、`LatentUpscaleModelLoader`、`LTXVLatentUpsampler`
+
+**用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent

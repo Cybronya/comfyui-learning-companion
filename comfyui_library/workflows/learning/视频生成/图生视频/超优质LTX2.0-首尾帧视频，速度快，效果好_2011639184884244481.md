@@ -1,0 +1,125 @@
+---
+key: 视频生成/图生视频/超优质LTX2.0-首尾帧视频，速度快，效果好_2011639184884244481.json
+name: 超优质LTX2.0-首尾帧视频，速度快，效果好_2011639184884244481.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2011639184884244481.json
+hash: 0b4a2a0bbed9fb3c
+coverage: 0.729412
+learned_at: 2026-10-15 22:34:24
+nodes: [KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, LTXVConcatAVLatent, LoraLoaderModelOnly, Compare, GetImageSize, GetImageSize, ImageScaleBy, GetImageSize, Compare, easy ifElse, PreviewImage, GetImageSize, LTXVScheduler, SetNode, LTXVPreprocess, PreviewImage, LTXVPreprocess, PreviewImage, easy ifElse, EmptyImage, PreviewImage, SetNode, SetNode, GetNode, GetNode, LTXVAudioVAEDecode, CLIPTextEncode, CLIPTextEncode, LTXVEmptyLatentAudio, GetNode, GetNode, CR Text, LTXVFirstLastFrameControl_TTP, MathExpression|pysssss, Int, Note, Note, GetNode, GetNode, LTXVConditioning, Seed_, LTXVConcatAVLatent, LTXVSeparateAVLatent, VHS_VideoCombine, easy cleanGpuUsed, SamplerCustomAdvanced, Note, LatentUpscaleModelLoader, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, LTXVAudioVAEDecode, GetNode, VAEDecode, LTXVLatentUpsampler, LTXVFirstLastFrameControl_TTP, GetNode, GetNode, CFGGuider, VHS_VideoCombine, EmptyLTXVLatentVideo, easy cleanGpuUsed, Note, LTXAVTextEncoderLoader, LTXVAudioVAELoader, CFGGuider, LTXVCropGuides, CheckpointLoaderSimple, LoraLoaderModelOnly, LayerUtility: PurgeVRAM V2, VAEDecode, LayerUtility: PurgeVRAM V2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, RHHiddenNodes, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 24, "width": 97}
+---
+
+# 视频生成/图生视频/超优质LTX2.0-首尾帧视频，速度快，效果好_2011639184884244481.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2011639184884244481.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（85 个）：
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `LoraLoaderModelOnly` ★核心
+- `Compare`
+- `GetImageSize`
+- `GetImageSize`
+- `ImageScaleBy`
+- `GetImageSize`
+- `Compare`
+- `easy ifElse`
+- `PreviewImage`
+- `GetImageSize`
+- `LTXVScheduler`
+- `SetNode`
+- `LTXVPreprocess`
+- `PreviewImage`
+- `LTXVPreprocess`
+- `PreviewImage`
+- `easy ifElse`
+- `EmptyImage`
+- `PreviewImage`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `LTXVFirstLastFrameControl_TTP`
+- `MathExpression|pysssss`
+- `Int`
+- `Note`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `LTXVConditioning`
+- `Seed_`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `SamplerCustomAdvanced` ★核心
+- `Note`
+- `LatentUpscaleModelLoader`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `LTXVFirstLastFrameControl_TTP`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `VHS_VideoCombine`
+- `EmptyLTXVLatentVideo`
+- `easy cleanGpuUsed`
+- `Note`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
+- `CFGGuider`
+- `LTXVCropGuides`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `RHHiddenNodes`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2-19b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **73%**（62/85）
+
+**有卡**：`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`LTXVConcatAVLatent`、`LoraLoaderModelOnly`、`Compare`、`GetImageSize`、`ImageScaleBy`、`LTXVScheduler`、`LTXVPreprocess`、`EmptyImage`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`CR Text`、`LTXVFirstLastFrameControl_TTP`、`MathExpression|pysssss`、`Int`、`LTXVConditioning`、`Seed_`、`LTXVSeparateAVLatent`、`VHS_VideoCombine`、`easy cleanGpuUsed`、`SamplerCustomAdvanced`、`LatentUpscaleModelLoader`、`VAEDecode`、`LTXVLatentUpsampler`、`CFGGuider`、`EmptyLTXVLatentVideo`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LTXVCropGuides`、`CheckpointLoaderSimple`、`LayerUtility: PurgeVRAM V2`、`ImageResizeKJv2`、`ResizeImagesByLongerEdge`、`RHHiddenNodes`、`LoadImage`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

@@ -1,0 +1,45 @@
+---
+key: 视频生成/图生视频/MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json
+name: MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2038096687511638017.json
+hash: 2b62eb6bbb5dd0dd
+coverage: 0.769231
+learned_at: 2026-10-15 22:36:00
+nodes: [easy cleanGpuUsed, RH_MagiHumanModelLoader, llama_cpp_instruct_adv, RH_MagiHumanGenerate, LoadImage, CR Prompt Text, JWInteger, PreviewAny, SaveVideo, LoadAudio, llama_cpp_model_loader, Note, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2038096687511638017.json`
+
+## 结构
+
+**生成流程**：Model → Output → Other
+
+**节点**（13 个）：
+- `easy cleanGpuUsed`
+- `RH_MagiHumanModelLoader`
+- `llama_cpp_instruct_adv`
+- `RH_MagiHumanGenerate`
+- `LoadImage`
+- `CR Prompt Text`
+- `JWInteger`
+- `PreviewAny`
+- `SaveVideo`
+- `LoadAudio`
+- `llama_cpp_model_loader`
+- `Note`
+- `Note`
+
+## 知识
+
+覆盖率 **77%**（10/13）
+
+**有卡**：`easy cleanGpuUsed`、`RH_MagiHumanModelLoader`、`llama_cpp_instruct_adv`、`RH_MagiHumanGenerate`、`LoadImage`、`CR Prompt Text`、`JWInteger`、`SaveVideo`、`LoadAudio`、`llama_cpp_model_loader`
+
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、llama_cpp_instruct_adv、llama_cpp_model_loader、LoadAudio、JWInteger、RH_MagiHumanGenerate

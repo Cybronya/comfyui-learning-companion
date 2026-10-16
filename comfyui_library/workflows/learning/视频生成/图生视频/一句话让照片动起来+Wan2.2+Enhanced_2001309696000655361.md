@@ -1,0 +1,69 @@
+---
+key: 视频生成/图生视频/一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json
+name: 一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2001309696000655361.json
+hash: 2a5284d3dd95094c
+coverage: 0.962963
+learned_at: 2026-10-15 22:33:45
+nodes: [CLIPLoader, ModelPatchTorchSettings, ModelSamplingSD3, PathchSageAttentionKJ, KSamplerAdvanced, CLIPTextEncode, CLIPTextEncode, VAEDecode, ModelSamplingSD3, ModelPatchTorchSettings, PathchSageAttentionKJ, PainterI2V, Int, easy cleanGpuUsed, VAELoader, VHS_VideoCombine, FindPerfectResolution, KSamplerAdvanced, MathExpression|pysssss, WanVideoNAG, UNETLoader, UNETLoader, LoadImage, Int, Int, JjkText, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2001309696000655361.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（27 个）：
+- `CLIPLoader`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PainterI2V`
+- `Int`
+- `easy cleanGpuUsed`
+- `VAELoader`
+- `VHS_VideoCombine`
+- `FindPerfectResolution`
+- `KSamplerAdvanced` ★核心
+- `MathExpression|pysssss`
+- `WanVideoNAG`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoadImage`
+- `Int`
+- `Int`
+- `JjkText`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **96%**（26/27）
+
+**有卡**：`CLIPLoader`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`CLIPTextEncode`、`VAEDecode`、`PainterI2V`、`Int`、`easy cleanGpuUsed`、`VAELoader`、`VHS_VideoCombine`、`FindPerfectResolution`、`MathExpression|pysssss`、`WanVideoNAG`、`UNETLoader`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、FindPerfectResolution

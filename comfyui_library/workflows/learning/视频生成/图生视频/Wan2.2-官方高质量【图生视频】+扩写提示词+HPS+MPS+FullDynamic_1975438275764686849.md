@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/Wan2.2-官方高质量【图生视频】+扩写提示词+HPS+MPS+FullDynamic_1975438275764686849.json
+name: Wan2.2-官方高质量【图生视频】+扩写提示词+HPS+MPS+FullDynamic_1975438275764686849.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1975438275764686849.json
+hash: cec076430c5d5ce0
+coverage: 0.762712
+learned_at: 2026-10-15 22:32:08
+nodes: [SetNode, Florence2Run, Florence2ModelLoader, StringFunction|pysssss, StringFunction|pysssss, WanVideoPromptExtender, ShowText|pysssss, ShowText|pysssss, QwenLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, GetNode, WanMoeKSampler, WanImageToVideo, VAELoader, GetNode, Reroute, WanVideoVACEStartToEndFrame, INTConstant, VAEDecodeTiled, PreviewImage, SetNode, CLIPTextEncode, StringFunction|pysssss, CLIPTextEncode, SetNode, SetNode, ImageFromBatch, LayerUtility: ImageScaleByAspectRatio V2, GetNode, SetNode, GetNode, GetImageSizeAndCount, GetImageSizeAndCount, SetNode, GetImageSizeAndCount, GetImageSizeAndCount, easy anythingIndexSwitch, easy int, Float, easy seed, easy int, easy positive, CR Upscale Image, GetImageSizeAndCount, GetImageSizeAndCount, easy int, LoadImage, easy positive, ImageFromBatch+, LoraLoaderModelOnly, UNETLoader, PathchSageAttentionKJ, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "sa_solver", "sampler_name": 1.5, "scheduler": 1, "seed": 0.9, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2-官方高质量【图生视频】+扩写提示词+HPS+MPS+FullDynamic_1975438275764686849.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1975438275764686849.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（59 个）：
+- `SetNode`
+- `Florence2Run`
+- `Florence2ModelLoader`
+- `StringFunction|pysssss`
+- `StringFunction|pysssss`
+- `WanVideoPromptExtender`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `QwenLoader`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `GetNode`
+- `WanMoeKSampler` ★核心
+- `WanImageToVideo`
+- `VAELoader`
+- `GetNode`
+- `Reroute`
+- `WanVideoVACEStartToEndFrame`
+- `INTConstant`
+- `VAEDecodeTiled` ★核心
+- `PreviewImage`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `StringFunction|pysssss`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `ImageFromBatch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `easy anythingIndexSwitch`
+- `easy int`
+- `Float`
+- `easy seed`
+- `easy int`
+- `easy positive`
+- `CR Upscale Image`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `easy int`
+- `LoadImage`
+- `easy positive`
+- `ImageFromBatch+`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `1.5`
+- `scheduler` = `1`
+- `denoise` = `sa_solver`
+
+## 知识
+
+覆盖率 **76%**（45/59）
+
+**有卡**：`Florence2Run`、`Florence2ModelLoader`、`StringFunction|pysssss`、`WanVideoPromptExtender`、`QwenLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`PathchSageAttentionKJ`、`WanMoeKSampler`、`WanImageToVideo`、`VAELoader`、`WanVideoVACEStartToEndFrame`、`INTConstant`、`VAEDecodeTiled`、`CLIPTextEncode`、`ImageFromBatch`、`LayerUtility: ImageScaleByAspectRatio V2`、`GetImageSizeAndCount`、`easy anythingIndexSwitch`、`easy int`、`Float`、`easy seed`、`easy positive`、`CR Upscale Image`、`LoadImage`、`ImageFromBatch+`、`VHS_VideoCombine`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler、easy seed

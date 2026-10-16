@@ -1,0 +1,70 @@
+---
+key: 视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json
+name: Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1966542129269026818.json
+hash: f2f74d361ed239c1
+coverage: 1
+learned_at: 2026-10-15 22:31:38
+nodes: [WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoSetBlockSwap, ImageConcatMulti, DWPreprocessor, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoVACEModelSelect, WanVideoVACEModelSelect, WanVideoModelLoader, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoTextEncode, VHS_LoadVideo, WanVideoModelLoader, JWInteger, ImageResizeKJv2, Float, WanVideoSigmaToStep, INTConstant, StringToFloatList, WanVideoScheduler, WanVideoScheduler, WanVideoDecode, ColorMatch, VHS_VideoCombine, VHS_VideoInfo, StringToFloatList, CR Prompt Text, LayerUtility: ImageScaleByAspectRatio V2, WanVideoSampler, WanVideoSampler, VHS_VideoCombine, LoadImage, JWInteger, WanVideoVACEEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1966542129269026818.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（38 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `ImageConcatMulti`
+- `DWPreprocessor`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `VHS_LoadVideo`
+- `WanVideoModelLoader`
+- `JWInteger`
+- `ImageResizeKJv2`
+- `Float`
+- `WanVideoSigmaToStep`
+- `INTConstant`
+- `StringToFloatList`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoDecode`
+- `ColorMatch`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `StringToFloatList`
+- `CR Prompt Text`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `LoadImage`
+- `JWInteger`
+- `WanVideoVACEEncode`
+
+## 知识
+
+覆盖率 **100%**（38/38）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`ImageConcatMulti`、`DWPreprocessor`、`WanVideoSetLoRAs`、`WanVideoVACEModelSelect`、`WanVideoModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`VHS_LoadVideo`、`JWInteger`、`ImageResizeKJv2`、`Float`、`WanVideoSigmaToStep`、`INTConstant`、`StringToFloatList`、`WanVideoScheduler`、`WanVideoDecode`、`ColorMatch`、`VHS_VideoCombine`、`VHS_VideoInfo`、`CR Prompt Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoSampler`、`LoadImage`、`WanVideoVACEEncode`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode

@@ -1,0 +1,69 @@
+---
+key: 视频生成/文生视频/wan2.2 文生视频尝鲜_1950111840601817089.json
+name: wan2.2 文生视频尝鲜_1950111840601817089.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950111840601817089.json
+hash: 461b159b49ff9050
+coverage: 0.918919
+learned_at: 2026-10-15 22:43:34
+nodes: [Int, SimpleMath+, SimpleMath+, WanVideoBlockSwap, SimpleMath+, SimpleMath+, WanVideoEmptyEmbeds, LoadWanVideoT5TextEncoder, DF_Integer, Int, SimpleMath+, WanVideoLoraSelect, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoModelLoader, WanVideoTeaCache, SimpleMath+, Seed_, WanVideoSampler, WanVideoTextEncode, WanVideoSetLoRAs, WanVideoSetBlockSwap, CreateCFGScheduleFloatList, Int, CR Text Concatenate, TextCombinerTwo, RH_Prompter, JjkText, VHS_VideoCombine, ShowText, WanVideoDecode, LayerColor: Brightness & Contrast, ImageFromBatch+, WanVideoVAELoader, JjkText, JjkText]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/wan2.2 文生视频尝鲜_1950111840601817089.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950111840601817089.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（37 个）：
+- `Int`
+- `SimpleMath+`
+- `SimpleMath+`
+- `WanVideoBlockSwap`
+- `SimpleMath+`
+- `SimpleMath+`
+- `WanVideoEmptyEmbeds`
+- `LoadWanVideoT5TextEncoder`
+- `DF_Integer`
+- `Int`
+- `SimpleMath+`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoTeaCache`
+- `SimpleMath+`
+- `Seed_`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `CreateCFGScheduleFloatList`
+- `Int`
+- `CR Text Concatenate`
+- `TextCombinerTwo`
+- `RH_Prompter`
+- `JjkText`
+- `VHS_VideoCombine`
+- `ShowText`
+- `WanVideoDecode`
+- `LayerColor: Brightness & Contrast`
+- `ImageFromBatch+`
+- `WanVideoVAELoader`
+- `JjkText`
+- `JjkText`
+
+## 知识
+
+覆盖率 **92%**（34/37）
+
+**有卡**：`Int`、`SimpleMath+`、`WanVideoBlockSwap`、`WanVideoEmptyEmbeds`、`LoadWanVideoT5TextEncoder`、`DF_Integer`、`WanVideoLoraSelect`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoTeaCache`、`Seed_`、`WanVideoTextEncode`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`CreateCFGScheduleFloatList`、`CR Text Concatenate`、`TextCombinerTwo`、`RH_Prompter`、`VHS_VideoCombine`、`ShowText`、`WanVideoDecode`、`LayerColor: Brightness & Contrast`、`ImageFromBatch+`、`WanVideoVAELoader`
+
+**用到的条目**：Seed_、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect

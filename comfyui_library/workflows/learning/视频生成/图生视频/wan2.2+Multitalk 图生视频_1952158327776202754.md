@@ -1,0 +1,64 @@
+---
+key: 视频生成/图生视频/wan2.2+Multitalk 图生视频_1952158327776202754.json
+name: wan2.2+Multitalk 图生视频_1952158327776202754.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952158327776202754.json
+hash: ba20964f000acf8e
+coverage: 1
+learned_at: 2026-10-15 22:31:00
+nodes: [WanVideoImageToVideoEncode, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoTorchCompileSettings, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoModelLoader, WanVideoModelLoader, MultiTalkModelLoader, WanVideoDecode, GetImageSizeAndCount, WanVideoSampler, WanVideoSampler, INTConstant, INTConstant, CreateCFGScheduleFloatList, WanVideoTextEncode, LoadWanVideoT5TextEncoder, MultiTalkWav2VecEmbeds, DownloadAndLoadWav2VecModel, Float to Int, Int, SimpleMath+, WanVideoVAELoader, WanVideoLoraSelect, WanVideoLoraSelect, ImageResizeKJv2, RH_GetAudioDuration, LoadAudio, LoadImage, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2+Multitalk 图生视频_1952158327776202754.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952158327776202754.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（32 个）：
+- `WanVideoImageToVideoEncode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `MultiTalkModelLoader`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `INTConstant`
+- `INTConstant`
+- `CreateCFGScheduleFloatList`
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `MultiTalkWav2VecEmbeds`
+- `DownloadAndLoadWav2VecModel`
+- `Float to Int`
+- `Int`
+- `SimpleMath+`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `ImageResizeKJv2`
+- `RH_GetAudioDuration`
+- `LoadAudio`
+- `LoadImage`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **100%**（32/32）
+
+**有卡**：`WanVideoImageToVideoEncode`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`MultiTalkModelLoader`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoSampler`、`INTConstant`、`CreateCFGScheduleFloatList`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`MultiTalkWav2VecEmbeds`、`DownloadAndLoadWav2VecModel`、`Float to Int`、`Int`、`SimpleMath+`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`ImageResizeKJv2`、`RH_GetAudioDuration`、`LoadAudio`、`LoadImage`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

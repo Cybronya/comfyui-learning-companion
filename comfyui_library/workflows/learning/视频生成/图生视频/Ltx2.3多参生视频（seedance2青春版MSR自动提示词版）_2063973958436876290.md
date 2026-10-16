@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json
+name: Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2063973958436876290.json
+hash: e893173bb3ba0bce
+coverage: 0.972973
+learned_at: 2026-10-15 22:39:19
+nodes: [LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXAddVideoICLoRAGuide, CFGGuider, CreateVideo, INTConstant, LTXVCropGuides, VAEDecode, EmptyLTXVLatentVideo, RandomNoise, CLIPTextEncode, ManualSigmas, SamplerCustomAdvanced, LTXAVTextEncoderLoader, LiconMSR, RH_LLMAPI_Pro_Node, INTConstant, ShowText|pysssss, LTXVAudioVAELoader, LTXVEmptyLatentAudio, INTConstant, CLIPTextEncode, LTXVConditioning, KSamplerSelect, LoadImage, LoadImage, LoadImage, LoadImage, CR Prompt Text, LoadImage, SaveVideo, LTXICLoRALoaderModelOnly, LowVRAMCheckpointLoader, LTXICLoRALoaderModelOnly, CR Prompt Text, LoadVideo]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 50, "width": 241}
+---
+
+# 视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2063973958436876290.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（37 个）：
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXAddVideoICLoRAGuide`
+- `CFGGuider`
+- `CreateVideo`
+- `INTConstant`
+- `LTXVCropGuides`
+- `VAEDecode` ★核心
+- `EmptyLTXVLatentVideo`
+- `RandomNoise`
+- `CLIPTextEncode` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `LTXAVTextEncoderLoader`
+- `LiconMSR`
+- `RH_LLMAPI_Pro_Node`
+- `INTConstant`
+- `ShowText|pysssss`
+- `LTXVAudioVAELoader`
+- `LTXVEmptyLatentAudio` ★核心
+- `INTConstant`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `KSamplerSelect` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CR Prompt Text`
+- `LoadImage`
+- `SaveVideo`
+- `LTXICLoRALoaderModelOnly` ★核心
+- `LowVRAMCheckpointLoader` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `CR Prompt Text`
+- `LoadVideo`
+
+## 关键参数
+
+- `width` = `241`
+- `height` = `50`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-distilled-1.1.safetensors`
+
+## 知识
+
+覆盖率 **97%**（36/37）
+
+**有卡**：`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXAddVideoICLoRAGuide`、`CFGGuider`、`CreateVideo`、`INTConstant`、`LTXVCropGuides`、`VAEDecode`、`EmptyLTXVLatentVideo`、`RandomNoise`、`CLIPTextEncode`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXAVTextEncoderLoader`、`LiconMSR`、`RH_LLMAPI_Pro_Node`、`LTXVAudioVAELoader`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`KSamplerSelect`、`LoadImage`、`CR Prompt Text`、`SaveVideo`、`LTXICLoRALoaderModelOnly`、`LowVRAMCheckpointLoader`、`LoadVideo`
+
+**用到的条目**：VAEDecode、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent

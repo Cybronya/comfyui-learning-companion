@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json
+name: LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2070137230106124289.json
+hash: d6d0e8cc0a47cd2f
+coverage: 0.825
+learned_at: 2026-10-15 22:40:36
+nodes: [GuHaiAutoImageSplit, PreviewImage, CLIPTextEncode, BasicScheduler, LTX2SamplingPreviewOverride, LTX2_NAG, VAEDecodeTiled, LTXVAudioVAEEncode, MelBandRoFormerSampler, MelBandRoFormerModelLoader, Fast Groups Bypasser (rgthree), VAELoaderKJ, VAELoaderKJ, SolidMask, LTXVAudioVAEDecode, LTXVSeparateAVLatent, VisualizeSigmasKJ, KSamplerSelect, LTXVConditioning, ComfySwitchNode, SetLatentNoiseMask, LTXVConcatAVLatent, Note, LTXVCropGuides, SamplerCustom, Reroute, PreviewAudio, Reroute, Fast Groups Bypasser (rgthree), VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveBoolean, UNETLoader, DualCLIPLoader, LTXDirectorGuide, Label (rgthree), Label (rgthree), LoadImage, LTXDirector]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2070137230106124289.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2070137230106124289.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（40 个）：
+- `GuHaiAutoImageSplit`
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+- `BasicScheduler`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEEncode` ★核心
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `SolidMask`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVSeparateAVLatent`
+- `VisualizeSigmasKJ`
+- `KSamplerSelect` ★核心
+- `LTXVConditioning`
+- `ComfySwitchNode`
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `Note`
+- `LTXVCropGuides`
+- `SamplerCustom` ★核心
+- `Reroute`
+- `PreviewAudio`
+- `Reroute`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveBoolean`
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `LTXDirectorGuide`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `LoadImage`
+- `LTXDirector`
+
+## 知识
+
+覆盖率 **82%**（33/40）
+
+**有卡**：`GuHaiAutoImageSplit`、`CLIPTextEncode`、`BasicScheduler`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`VAEDecodeTiled`、`LTXVAudioVAEEncode`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`VAELoaderKJ`、`SolidMask`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`VisualizeSigmasKJ`、`KSamplerSelect`、`LTXVConditioning`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`SamplerCustom`、`PreviewAudio`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`PrimitiveBoolean`、`UNETLoader`、`DualCLIPLoader`、`LTXDirectorGuide`、`Label (rgthree)`、`LoadImage`、`LTXDirector`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、MelBandRoFormerSampler、LTXVConcatAVLatent

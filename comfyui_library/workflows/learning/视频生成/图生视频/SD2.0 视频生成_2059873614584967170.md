@@ -1,0 +1,38 @@
+---
+key: 视频生成/图生视频/SD2.0 视频生成_2059873614584967170.json
+name: SD2.0 视频生成_2059873614584967170.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2059873614584967170.json
+hash: 908a59a95ff9d639
+coverage: 0.833333
+learned_at: 2026-10-15 22:38:43
+nodes: [SaveVideo, LoadImage, Textbox, PrimitiveBoolean, RH_BytedanceSeedance20GlobalMultimodalVideo, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/SD2.0 视频生成_2059873614584967170.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2059873614584967170.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（6 个）：
+- `SaveVideo`
+- `LoadImage`
+- `Textbox`
+- `PrimitiveBoolean`
+- `RH_BytedanceSeedance20GlobalMultimodalVideo`
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **83%**（5/6）
+
+**有卡**：`SaveVideo`、`LoadImage`、`Textbox`、`PrimitiveBoolean`、`RH_BytedanceSeedance20GlobalMultimodalVideo`
+
+**用到的条目**：LoadImage、RH_BytedanceSeedance20GlobalMultimodalVideo、SaveVideo、PrimitiveBoolean、Textbox、TextBox、TextBox、sd15-t2i-basic

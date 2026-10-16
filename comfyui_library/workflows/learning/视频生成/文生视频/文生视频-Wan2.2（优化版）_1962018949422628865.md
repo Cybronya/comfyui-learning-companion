@@ -1,0 +1,79 @@
+---
+key: 视频生成/文生视频/文生视频-Wan2.2（优化版）_1962018949422628865.json
+name: 文生视频-Wan2.2（优化版）_1962018949422628865.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1962018949422628865.json
+hash: cf3f54880f737543
+coverage: 0.702128
+learned_at: 2026-10-15 22:43:43
+nodes: [WanVideoBlockSwap, WanVideoBlockSwap, WanVideoBlockSwap, WanVideoBlockSwap, PrimitiveNode, CreateCFGScheduleFloatList, JWInteger, MathExpression|pysssss, WanVideoSetBlockSwap, WanVideoSetBlockSwap, VHS_VideoCombine, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoDecode, WanVideoVAELoader, WanVideoSetLoRAs, easy cleanGpuUsed, WanVideoSetLoRAs, easy cleanGpuUsed, WanVideoEmptyEmbeds, Int, Int, RH_Prompter, TextCombinerTwo, JjkText, CR Text Concatenate, easy showAnything, RH_Prompter, CR Text Concatenate, JjkText, JjkText, easy showAnything, JjkText, JjkText, JjkText, Note, Note, ImpactSwitch, Anything Everywhere, WanVideoSampler, WanVideoSampler, LoadWanVideoT5TextEncoder, Anything Everywhere, WanVideoTextEncode, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/文生视频-Wan2.2（优化版）_1962018949422628865.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1962018949422628865.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Other
+
+**节点**（47 个）：
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `PrimitiveNode`
+- `CreateCFGScheduleFloatList`
+- `JWInteger`
+- `MathExpression|pysssss`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoDecode`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `easy cleanGpuUsed`
+- `WanVideoSetLoRAs`
+- `easy cleanGpuUsed`
+- `WanVideoEmptyEmbeds`
+- `Int`
+- `Int`
+- `RH_Prompter`
+- `TextCombinerTwo`
+- `JjkText`
+- `CR Text Concatenate`
+- `easy showAnything`
+- `RH_Prompter`
+- `CR Text Concatenate`
+- `JjkText`
+- `JjkText`
+- `easy showAnything`
+- `JjkText`
+- `JjkText`
+- `JjkText`
+- `Note`
+- `Note`
+- `ImpactSwitch`
+- `Anything Everywhere`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `Anything Everywhere`
+- `WanVideoTextEncode`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **70%**（33/47）
+
+**有卡**：`WanVideoBlockSwap`、`CreateCFGScheduleFloatList`、`JWInteger`、`MathExpression|pysssss`、`WanVideoSetBlockSwap`、`VHS_VideoCombine`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoDecode`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`easy cleanGpuUsed`、`WanVideoEmptyEmbeds`、`Int`、`RH_Prompter`、`TextCombinerTwo`、`CR Text Concatenate`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect

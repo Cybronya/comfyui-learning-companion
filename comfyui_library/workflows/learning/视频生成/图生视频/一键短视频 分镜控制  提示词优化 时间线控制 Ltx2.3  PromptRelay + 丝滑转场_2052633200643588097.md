@@ -1,0 +1,122 @@
+---
+key: 视频生成/图生视频/一键短视频 分镜控制  提示词优化 时间线控制 Ltx2.3  PromptRelay + 丝滑转场_2052633200643588097.json
+name: 一键短视频 分镜控制  提示词优化 时间线控制 Ltx2.3  PromptRelay + 丝滑转场_2052633200643588097.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2052633200643588097.json
+hash: 5418277f142d6310
+coverage: 0.578313
+learned_at: 2026-10-15 22:37:31
+nodes: [LTXVAudioVAEDecode, GetNode, GetNode, GetNode, GetNode, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, ImageFromBatch+, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, VAELoader, VAELoaderKJ, SetNode, LatentUpscaleModelLoader, SetNode, SetNode, ImageFromBatch+, GetNode, GetNode, LTXVCropGuides, GetNode, LTXVSeparateAVLatent, SetNode, LTXVAddGuideMulti, DualCLIPLoader, CLIPTextEncode, RH_LLMAPI_Pro_Node, VAEDecodeTiled, easy cleanGpuUsed, easy showAnything, RH_LLMAPI_Pro_Node, PreviewImage, GetNode, GetNode, CR Float To Integer, GetNode, easy showAnything, SetNode, GetNode, SimpleMath+, SetNode, GetNode, SetNode, VHS_VideoCombine, SetNode, EmptyLTXVLatentVideo, LTXVConcatAVLatent, SetNode, SetNode, GetNode, LTXICLoRALoaderModelOnly, LTXVEmptyLatentAudio, INTConstant, Note, PreviewImage, SetNode, Fast Groups Bypasser (rgthree), LTXICLoRALoaderModelOnly, VHS_VideoCombine, GetNode, LTXVConditioning, LoadImage, CLIPTextEncode, CLIPTextEncode, PrimitiveFloat, INTConstant, Int, Int, Int, Text, Note, ImpactSwitch, PromptRelayEncodeTimeline, UNETLoader, ImageFromBatch+, GuHaiAutoImageSplit, SetNode]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/一键短视频 分镜控制  提示词优化 时间线控制 Ltx2.3  PromptRelay + 丝滑转场_2052633200643588097.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2052633200643588097.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（83 个）：
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VAELoader`
+- `VAELoaderKJ`
+- `SetNode`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `SetNode`
+- `ImageFromBatch+`
+- `GetNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `SetNode`
+- `LTXVAddGuideMulti`
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `RH_LLMAPI_Pro_Node`
+- `VAEDecodeTiled` ★核心
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `RH_LLMAPI_Pro_Node`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `CR Float To Integer`
+- `GetNode`
+- `easy showAnything`
+- `SetNode`
+- `GetNode`
+- `SimpleMath+`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `LTXICLoRALoaderModelOnly` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `INTConstant`
+- `Note`
+- `PreviewImage`
+- `SetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `LTXICLoRALoaderModelOnly` ★核心
+- `VHS_VideoCombine`
+- `GetNode`
+- `LTXVConditioning`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveFloat`
+- `INTConstant`
+- `Int`
+- `Int`
+- `Int`
+- `Text`
+- `Note`
+- `ImpactSwitch`
+- `PromptRelayEncodeTimeline`
+- `UNETLoader` ★核心
+- `ImageFromBatch+`
+- `GuHaiAutoImageSplit`
+- `SetNode`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **58%**（48/83）
+
+**有卡**：`LTXVAudioVAEDecode`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageFromBatch+`、`VAELoader`、`VAELoaderKJ`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`LTXVAddGuideMulti`、`DualCLIPLoader`、`CLIPTextEncode`、`RH_LLMAPI_Pro_Node`、`VAEDecodeTiled`、`easy cleanGpuUsed`、`CR Float To Integer`、`SimpleMath+`、`VHS_VideoCombine`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`LTXICLoRALoaderModelOnly`、`LTXVEmptyLatentAudio`、`INTConstant`、`LTXVConditioning`、`LoadImage`、`Int`、`Text`、`PromptRelayEncodeTimeline`、`UNETLoader`、`GuHaiAutoImageSplit`
+
+**用到的条目**：VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent

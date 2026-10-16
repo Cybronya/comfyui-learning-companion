@@ -1,0 +1,90 @@
+---
+key: 视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_2080941379668238337.json
+name: AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_2080941379668238337.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2080941379668238337.json
+hash: 6eb5937dd7b6ca97
+coverage: 0.833333
+learned_at: 2026-10-15 22:42:18
+nodes: [VAELoader, UNETLoader, EmptySD3LatentImage, MarkdownNote, MarkdownNote, Note, ModelSamplingAuraFlow, Note, CLIPTextEncode, SetNode, Note, WanVideoTorchCompileSettings, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoDecode, WanVideoSetLoRAs, GetImageSizeAndCount, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoLoraSelect, ShowText, WanVideoVAELoader, WanVideoModelLoader, WanVideoTextEncode, ImageResizeKJv2, WanVideoImageToVideoEncode, GetNode, PreviewAudio, WanVideoSampler, WanVideoSampler, INTConstant, INTConstant, PreviewImage, IndexTTSNode, WanVideoModelLoader, CLIPLoader, CLIPTextEncode, KSampler, Text, WanVideoLoraSelect, CreateCFGScheduleFloatList, VHS_VideoCombine, VAEDecode, Text, Label (rgthree), TextConcatenator, LoadAudio]
+patterns: []
+missing: []
+parameters: {"cfg": 2.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 432263983758413, "steps": 20}
+---
+
+# 视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_2080941379668238337.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2080941379668238337.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（48 个）：
+- `VAELoader`
+- `UNETLoader` ★核心
+- `EmptySD3LatentImage`
+- `MarkdownNote`
+- `MarkdownNote`
+- `Note`
+- `ModelSamplingAuraFlow`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `Note`
+- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `GetImageSizeAndCount`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `ShowText`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+- `ImageResizeKJv2`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `PreviewAudio`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `INTConstant`
+- `INTConstant`
+- `PreviewImage`
+- `IndexTTSNode`
+- `WanVideoModelLoader`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `Text`
+- `WanVideoLoraSelect`
+- `CreateCFGScheduleFloatList`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `Text`
+- `Label (rgthree)`
+- `TextConcatenator`
+- `LoadAudio`
+
+## 关键参数
+
+- `seed` = `432263983758413`
+- `steps` = `20`
+- `cfg` = `2.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **83%**（40/48）
+
+**有卡**：`VAELoader`、`UNETLoader`、`EmptySD3LatentImage`、`ModelSamplingAuraFlow`、`CLIPTextEncode`、`WanVideoTorchCompileSettings`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`GetImageSizeAndCount`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`ShowText`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoTextEncode`、`ImageResizeKJv2`、`WanVideoImageToVideoEncode`、`PreviewAudio`、`WanVideoSampler`、`INTConstant`、`IndexTTSNode`、`CLIPLoader`、`KSampler`、`Text`、`CreateCFGScheduleFloatList`、`VHS_VideoCombine`、`VAEDecode`、`Label (rgthree)`、`TextConcatenator`、`LoadAudio`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、WanVideoSampler、CreateCFGScheduleFloatList

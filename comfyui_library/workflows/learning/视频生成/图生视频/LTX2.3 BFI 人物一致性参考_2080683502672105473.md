@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/LTX2.3 BFI 人物一致性参考_2080683502672105473.json
+name: LTX2.3 BFI 人物一致性参考_2080683502672105473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2080683502672105473.json
+hash: 03b107b7e6697e07
+coverage: 0.825
+learned_at: 2026-10-15 22:42:17
+nodes: [PrimitiveFloat, StringConcatenate, StringConcatenate, CLIPTextEncode, PreviewAny, SimpleCalculatorKJ, ComfyNumberConvert, TextGenerate, PrimitiveInt, PrimitiveFloat, SamplerCustomAdvanced, LTXVSeparateAVLatent, UNETLoader, LoraLoaderModelOnly, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LTXVConditioning, RandomNoise, KSamplerSelect, CFGGuider, LTXVConcatAVLatent, BasicScheduler, LTXVCropGuides, VAEDecode, CreateVideo, SaveVideo, PrimitiveInt, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, ImageResizeKJv2, LoadImage, PreviewAny, PrimitiveStringMultiline, LTXIdentityOverlapConditioning, LTX2_NAG, CLIPTextEncode, LTXICLoRALoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 BFI 人物一致性参考_2080683502672105473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2080683502672105473.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（40 个）：
+- `PrimitiveFloat`
+- `StringConcatenate`
+- `StringConcatenate`
+- `CLIPTextEncode` ★核心
+- `PreviewAny`
+- `SimpleCalculatorKJ`
+- `ComfyNumberConvert`
+- `TextGenerate`
+- `PrimitiveInt`
+- `PrimitiveFloat`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LTXVConditioning`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `LTXVConcatAVLatent`
+- `BasicScheduler`
+- `LTXVCropGuides`
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `SaveVideo`
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `LTXVAudioVAEDecode` ★核心
+- `ImageResizeKJv2`
+- `LoadImage`
+- `PreviewAny`
+- `PrimitiveStringMultiline`
+- `LTXIdentityOverlapConditioning`
+- `LTX2_NAG`
+- `CLIPTextEncode` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **82%**（33/40）
+
+**有卡**：`StringConcatenate`、`CLIPTextEncode`、`SimpleCalculatorKJ`、`ComfyNumberConvert`、`TextGenerate`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`UNETLoader`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`VAELoaderKJ`、`LTXVConditioning`、`RandomNoise`、`KSamplerSelect`、`CFGGuider`、`LTXVConcatAVLatent`、`BasicScheduler`、`LTXVCropGuides`、`VAEDecode`、`CreateVideo`、`SaveVideo`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`ImageResizeKJv2`、`LoadImage`、`LTXIdentityOverlapConditioning`、`LTX2_NAG`、`LTXICLoRALoaderModelOnly`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

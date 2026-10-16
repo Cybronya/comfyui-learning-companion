@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/(草莓帽)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm）_1986424963370516481.json
+name: (草莓帽)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm）_1986424963370516481.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1986424963370516481.json
+hash: 31dea1415d127b0b
+coverage: 0.771429
+learned_at: 2026-10-15 22:32:55
+nodes: [MarkdownNote, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, CLIPVisionLoader, PreviewAny, WanVideoVAELoader, WanVideoClipVisionEncode, Note, Note, Note, Note, Note, AudioSeparation, DownloadAndLoadWav2VecModel, GetImageSizeAndCount, Note, WanVideoModelLoader, WanVideoTextEncode, WanVideoSampler, WanVideoImageToVideoMultiTalk, WanVideoLoraSelect, WanVideoLoraSelect, MultiTalkModelLoader, JWFloat, MultiTalkWav2VecEmbeds, WanVideoBlockSwap, JWInteger, WanVideoDecode, AudioCrop, CR Prompt Text, LoadAudio, JWInteger, LoadImage, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(草莓帽)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm）_1986424963370516481.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1986424963370516481.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（35 个）：
+- `MarkdownNote`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `CLIPVisionLoader`
+- `PreviewAny`
+- `WanVideoVAELoader`
+- `WanVideoClipVisionEncode`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `GetImageSizeAndCount`
+- `Note`
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `MultiTalkModelLoader`
+- `JWFloat`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoBlockSwap`
+- `JWInteger`
+- `WanVideoDecode`
+- `AudioCrop`
+- `CR Prompt Text`
+- `LoadAudio`
+- `JWInteger`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **77%**（27/35）
+
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`LoadWanVideoT5TextEncoder`、`CLIPVisionLoader`、`WanVideoVAELoader`、`WanVideoClipVisionEncode`、`AudioSeparation`、`DownloadAndLoadWav2VecModel`、`GetImageSizeAndCount`、`WanVideoModelLoader`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoImageToVideoMultiTalk`、`WanVideoLoraSelect`、`MultiTalkModelLoader`、`JWFloat`、`MultiTalkWav2VecEmbeds`、`WanVideoBlockSwap`、`JWInteger`、`WanVideoDecode`、`AudioCrop`、`CR Prompt Text`、`LoadAudio`、`LoadImage`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoLoraSelect

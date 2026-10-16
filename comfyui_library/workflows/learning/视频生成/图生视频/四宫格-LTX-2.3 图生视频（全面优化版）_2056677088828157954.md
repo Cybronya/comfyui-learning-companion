@@ -1,0 +1,124 @@
+---
+key: 视频生成/图生视频/四宫格-LTX-2.3 图生视频（全面优化版）_2056677088828157954.json
+name: 四宫格-LTX-2.3 图生视频（全面优化版）_2056677088828157954.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2056677088828157954.json
+hash: 70b969d735a77e23
+coverage: 0.588235
+learned_at: 2026-10-15 22:38:05
+nodes: [SetNode, SetNode, SetNode, GetNode, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, ImageResizeKJv2, ImageResizeKJv2, GuHaiAutoImageSplit, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SetNode, SetNode, ImageResizeKJv2, SetNode, GetNode, GetNode, GetNode, GetNode, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, DualCLIPLoader, SetNode, RandomNoise, ManualSigmas, LTXVConcatAVLatent, GetNode, GetNode, GetNode, GetNode, LTXVCropGuides, SamplerCustomAdvanced, LTXVSeparateAVLatent, CLIPTextEncode, LTXVConditioning, GetNode, easy cleanGpuUsed, easy cleanGpuUsed, VAEDecodeTiled, ImageFromBatch+, VHS_VideoCombine, ImageResizeKJv2, TTResolutionSelector, easy showAnything, PreviewImage, RH_LLMAPI_Pro_Node, RH_LLMAPI_Pro_Node, easy showAnything, VAELoader, PrimitiveNode, LoadImage, LoadImage, LoadImage, CR Text, LoadImage, RH_Nano_Banana2_Gemini31Flash, SaveImage, Fast Groups Bypasser (rgthree), LoadImage, Fast Groups Bypasser (rgthree), Text, Fast Groups Bypasser (rgthree), KSamplerSelect, INTConstant, SimpleMath+, SetNode, GetNode, PrimitiveFloat, UNETLoader, SetNode, SetNode, VAELoaderKJ, LTXVAddGuideMulti, LTXVEmptyLatentAudio, CR Float To Integer, SetNode, SetNode, CFGGuider, CLIPTextEncode, GetNode, RHHiddenNodes, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/四宫格-LTX-2.3 图生视频（全面优化版）_2056677088828157954.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2056677088828157954.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（85 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `GuHaiAutoImageSplit`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `LatentUpscaleModelLoader`
+- `DualCLIPLoader`
+- `SetNode`
+- `RandomNoise`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `VAEDecodeTiled` ★核心
+- `ImageFromBatch+`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `TTResolutionSelector`
+- `easy showAnything`
+- `PreviewImage`
+- `RH_LLMAPI_Pro_Node`
+- `RH_LLMAPI_Pro_Node`
+- `easy showAnything`
+- `VAELoader`
+- `PrimitiveNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+- `LoadImage`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `SaveImage`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Text`
+- `Fast Groups Bypasser (rgthree)`
+- `KSamplerSelect` ★核心
+- `INTConstant`
+- `SimpleMath+`
+- `SetNode`
+- `GetNode`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `SetNode`
+- `SetNode`
+- `VAELoaderKJ`
+- `LTXVAddGuideMulti`
+- `LTXVEmptyLatentAudio` ★核心
+- `CR Float To Integer`
+- `SetNode`
+- `SetNode`
+- `CFGGuider`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `RHHiddenNodes`
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **59%**（50/85）
+
+**有卡**：`LTXVAudioVAEDecode`、`ImageResizeKJv2`、`GuHaiAutoImageSplit`、`ImageFromBatch+`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`RandomNoise`、`ManualSigmas`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`CLIPTextEncode`、`LTXVConditioning`、`easy cleanGpuUsed`、`VAEDecodeTiled`、`VHS_VideoCombine`、`TTResolutionSelector`、`RH_LLMAPI_Pro_Node`、`VAELoader`、`LoadImage`、`CR Text`、`RH_Nano_Banana2_Gemini31Flash`、`SaveImage`、`Text`、`KSamplerSelect`、`INTConstant`、`SimpleMath+`、`UNETLoader`、`VAELoaderKJ`、`LTXVAddGuideMulti`、`LTXVEmptyLatentAudio`、`CR Float To Integer`、`CFGGuider`、`RHHiddenNodes`
+
+**用到的条目**：VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent

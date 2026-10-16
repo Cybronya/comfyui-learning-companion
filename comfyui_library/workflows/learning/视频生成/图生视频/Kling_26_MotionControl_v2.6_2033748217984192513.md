@@ -1,0 +1,36 @@
+---
+key: 视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json
+name: Kling_26_MotionControl_v2.6_2033748217984192513.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2033748217984192513.json
+hash: ccf64dbca8e43124
+coverage: 1
+learned_at: 2026-10-15 22:35:41
+nodes: [SaveVideo, LoadVideo, LoadImage, RH_Kling26_MotionControl]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Kling_26_MotionControl_v2.6_2033748217984192513.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2033748217984192513.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（4 个）：
+- `SaveVideo`
+- `LoadVideo`
+- `LoadImage`
+- `RH_Kling26_MotionControl`
+
+## 知识
+
+覆盖率 **100%**（4/4）
+
+**有卡**：`SaveVideo`、`LoadVideo`、`LoadImage`、`RH_Kling26_MotionControl`
+
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_Kling26_MotionControl、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any

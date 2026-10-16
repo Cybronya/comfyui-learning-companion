@@ -1,0 +1,60 @@
+---
+key: 视频生成/图生视频/Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json
+name: Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2011418883764260865.json
+hash: 0ea9b5fbafa03f56
+coverage: 0.833333
+learned_at: 2026-10-15 22:34:22
+nodes: [CreateVideo, Wan22ImageToVideoLatent, CLIPTextEncode, MarkdownNote, ModelSamplingSD3, VAEDecode, CLIPLoader, VAELoader, CLIPTextEncode, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, JWInteger, Note, Note, SaveVideo, UNETLoader, KSampler]
+patterns: []
+missing: []
+parameters: {"cfg": 5, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 1116348553826964, "steps": 20}
+---
+
+# 视频生成/图生视频/Wan2.2-Anime-Unlimited 5B图生视频_2011418883764260865.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2011418883764260865.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（18 个）：
+- `CreateVideo`
+- `Wan22ImageToVideoLatent`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `JWInteger`
+- `Note`
+- `Note`
+- `SaveVideo`
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+
+## 关键参数
+
+- `seed` = `1116348553826964`
+- `steps` = `20`
+- `cfg` = `5`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **83%**（15/18）
+
+**有卡**：`CreateVideo`、`Wan22ImageToVideoLatent`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`SaveVideo`、`UNETLoader`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、Wan22ImageToVideoLatent

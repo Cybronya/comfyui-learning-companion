@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/wan2.2+lightx2v加速图生视频_1954724255986544642.json
+name: wan2.2+lightx2v加速图生视频_1954724255986544642.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1954724255986544642.json
+hash: e6867a9d54797f03
+coverage: 1
+learned_at: 2026-10-15 22:31:06
+nodes: [WanImageToVideo, UNETLoader, CLIPTextEncode, PathchSageAttentionKJ, VAELoader, ModelSamplingSD3, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, VAEDecode, CreateVideo, ImageResizeKJv2, MathExpression|pysssss, CLIPLoader, CLIPTextEncode, LoraLoaderModelOnly, Primitive integer [Crystools], KSamplerAdvanced, KSamplerAdvanced, Primitive integer [Crystools], Primitive integer [Crystools], SaveVideo, Text Multiline, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2+lightx2v加速图生视频_1954724255986544642.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1954724255986544642.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（25 个）：
+- `WanImageToVideo`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `ImageResizeKJv2`
+- `MathExpression|pysssss`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Primitive integer [Crystools]`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `SaveVideo`
+- `Text Multiline`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（25/25）
+
+**有卡**：`WanImageToVideo`、`UNETLoader`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`VAELoader`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`VAEDecode`、`CreateVideo`、`ImageResizeKJv2`、`MathExpression|pysssss`、`CLIPLoader`、`Primitive integer [Crystools]`、`KSamplerAdvanced`、`SaveVideo`、`Text Multiline`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

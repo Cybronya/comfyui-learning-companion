@@ -1,0 +1,53 @@
+---
+key: 视频生成/图生视频/冲锋枪射击特效-万相wan2.1新玩意_1899671568367177729.json
+name: 冲锋枪射击特效-万相wan2.1新玩意_1899671568367177729.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1899671568367177729.json
+hash: 39d79846d42053bc
+coverage: 1
+learned_at: 2026-10-15 22:29:21
+nodes: [Note Plus (mtb), LoadWanVideoT5TextEncoder, WanVideoEnhanceAVideo, ImageUpscaleWithModel, UpscaleModelLoader, LayerUtility: PurgeVRAM, Note Plus (mtb), WanVideoImageClipEncode, Int, WanVideoDecode, VHS_VideoCombine, LoadImage, WanVideoTextEncode, WanVideoSampler, WanVideoTeaCache, WanVideoModelLoader, WanVideoTorchCompileSettings, LoadWanVideoClipTextEncoder, WanVideoLoraSelect, WanVideoBlockSwap, WanVideoVAELoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/冲锋枪射击特效-万相wan2.1新玩意_1899671568367177729.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1899671568367177729.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（21 个）：
+- `Note Plus (mtb)`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoEnhanceAVideo`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `LayerUtility: PurgeVRAM`
+- `Note Plus (mtb)`
+- `WanVideoImageClipEncode`
+- `Int`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoTeaCache`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+
+## 知识
+
+覆盖率 **100%**（21/21）
+
+**有卡**：`Note Plus (mtb)`、`LoadWanVideoT5TextEncoder`、`WanVideoEnhanceAVideo`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`LayerUtility: PurgeVRAM`、`WanVideoImageClipEncode`、`Int`、`WanVideoDecode`、`VHS_VideoCombine`、`LoadImage`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoTeaCache`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`LoadWanVideoClipTextEncoder`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`WanVideoVAELoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

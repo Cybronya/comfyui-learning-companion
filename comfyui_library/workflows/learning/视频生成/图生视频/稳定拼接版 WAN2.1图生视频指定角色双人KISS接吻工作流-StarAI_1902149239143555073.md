@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json
+name: 稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1902149239143555073.json
+hash: 1bc52e2537039969
+coverage: 0.969697
+learned_at: 2026-10-15 22:29:24
+nodes: [LayerUtility: ImageScaleByAspectRatio V2, MaskToImage, MaskToImage, ImagePadForOutpaint, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoSLG, WanVideoTeaCache, WanVideoExperimentalArgs, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoVAELoader, WanVideoSampler, LoadImage, LoadImage, FaceAnalysisModels, LayerUtility: ImageScaleByAspectRatio V2, ImagePadForOutpaint, easy imageConcat, ImageToMask, LayerUtility: LaMa, PreviewImage, FaceBoundingBox, FaceBoundingBox, ImageConcanate, WanVideoTorchCompileSettings, WanVideoImageClipEncode, WanVideoModelLoader, TextInput_, WanVideoTextEncode, WanVideoBlockSwap, Note Plus (mtb), VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1902149239143555073.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
+**节点**（33 个）：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MaskToImage`
+- `MaskToImage`
+- `ImagePadForOutpaint`
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `LoadImage`
+- `LoadImage`
+- `FaceAnalysisModels`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImagePadForOutpaint`
+- `easy imageConcat`
+- `ImageToMask`
+- `LayerUtility: LaMa`
+- `PreviewImage`
+- `FaceBoundingBox`
+- `FaceBoundingBox`
+- `ImageConcanate`
+- `WanVideoTorchCompileSettings`
+- `WanVideoImageClipEncode`
+- `WanVideoModelLoader`
+- `TextInput_`
+- `WanVideoTextEncode`
+- `WanVideoBlockSwap`
+- `Note Plus (mtb)`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **97%**（32/33）
+
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`MaskToImage`、`ImagePadForOutpaint`、`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoSLG`、`WanVideoTeaCache`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`WanVideoEnhanceAVideo`、`WanVideoVAELoader`、`WanVideoSampler`、`LoadImage`、`FaceAnalysisModels`、`easy imageConcat`、`ImageToMask`、`LayerUtility: LaMa`、`FaceBoundingBox`、`ImageConcanate`、`WanVideoTorchCompileSettings`、`WanVideoImageClipEncode`、`WanVideoModelLoader`、`TextInput_`、`WanVideoTextEncode`、`WanVideoBlockSwap`、`Note Plus (mtb)`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

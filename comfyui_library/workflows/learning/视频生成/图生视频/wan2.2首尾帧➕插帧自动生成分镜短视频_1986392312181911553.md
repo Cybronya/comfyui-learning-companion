@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/wan2.2首尾帧➕插帧自动生成分镜短视频_1986392312181911553.json
+name: wan2.2首尾帧➕插帧自动生成分镜短视频_1986392312181911553.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1986392312181911553.json
+hash: 30aa971be1f13799
+coverage: 0.575758
+learned_at: 2026-10-15 22:32:55
+nodes: [WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoModelLoader, WanVideoVAELoader, SetNode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, SetNode, SetNode, CLIPVisionLoader, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, WanVideoClipVisionEncode, GetNode, WanVideoImageToVideoEncode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, WanVideoSampler, WanVideoSampler, WanVideoDecode, GetNode, WanVideoContextOptions, WanVideoEncodeLatentBatch, GetNode, VHS_VideoCombine, ImageStitch, ImageStitch, ImageStitch, VHS_VideoCombine, GetNode, GetNode, GetNode, Int, Int, Int, SimpleMath+, easy cleanGpuUsed, SetNode, Note, ImageResizeKJv2, ImageResizeKJv2, SetNode, ImageResizeKJv2, Reroute, AILab_MiniCPM_4_V_Advanced, easy showAnything, LoadImage, LoadImage, LoadImage, ImageBatchMulti, WanVideoTextEncodeCached, Note, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2首尾帧➕插帧自动生成分镜短视频_1986392312181911553.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1986392312181911553.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（66 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetNode`
+- `WanVideoContextOptions`
+- `WanVideoEncodeLatentBatch`
+- `GetNode`
+- `VHS_VideoCombine`
+- `ImageStitch`
+- `ImageStitch`
+- `ImageStitch`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Int`
+- `Int`
+- `Int`
+- `SimpleMath+`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `Note`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `SetNode`
+- `ImageResizeKJv2`
+- `Reroute`
+- `AILab_MiniCPM_4_V_Advanced`
+- `easy showAnything`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageBatchMulti`
+- `WanVideoTextEncodeCached`
+- `Note`
+- `Note`
+
+## 知识
+
+覆盖率 **58%**（38/66）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoContextOptions`、`WanVideoEncodeLatentBatch`、`VHS_VideoCombine`、`ImageStitch`、`Int`、`SimpleMath+`、`easy cleanGpuUsed`、`ImageResizeKJv2`、`AILab_MiniCPM_4_V_Advanced`、`LoadImage`、`ImageBatchMulti`、`WanVideoTextEncodeCached`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeCached、WanVideoEncodeLatentBatch

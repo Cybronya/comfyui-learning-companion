@@ -1,0 +1,76 @@
+---
+key: 视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json
+name: WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1908884994994151426.json
+hash: 0fbb67f5fe41d26c
+coverage: 1
+learned_at: 2026-10-15 22:29:28
+nodes: [CLIPTextEncode, KSampler, VAELoader, VAEDecodeTiled, CLIPVisionEncode, WanImageToVideo, TeaCache, CLIPVisionLoader, CLIPLoader, VHS_VideoCombine, ImageResizeKJ, UnetLoaderGGUF, CLIPTextEncode, Joy_caption, LoraLoader, LoadImage, Joy_caption_load, ConcatTextOfUtils]
+patterns: [lora]
+missing: []
+problems: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 6, "denoise": 1, "lora_name": "selfie_younger_self_15_epochs.safetensors", "sampler_name": "uni_pc", "scheduler": "simple", "seed": 508104495997017, "steps": 20, "strength_clip": 1, "strength_model": 1}
+discoveries: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1908884994994151426.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（18 个）：
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAELoader`
+- `VAEDecodeTiled` ★核心
+- `CLIPVisionEncode`
+- `WanImageToVideo`
+- `TeaCache`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `VHS_VideoCombine`
+- `ImageResizeKJ`
+- `UnetLoaderGGUF` ★核心
+- `CLIPTextEncode` ★核心
+- `Joy_caption`
+- `LoraLoader` ★核心
+- `LoadImage`
+- `Joy_caption_load`
+- `ConcatTextOfUtils`
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `seed` = `508104495997017`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `lora_name` = `selfie_younger_self_15_epochs.safetensors`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`CLIPTextEncode`、`KSampler`、`VAELoader`、`VAEDecodeTiled`、`CLIPVisionEncode`、`WanImageToVideo`、`TeaCache`、`CLIPVisionLoader`、`CLIPLoader`、`VHS_VideoCombine`、`ImageResizeKJ`、`UnetLoaderGGUF`、`Joy_caption`、`LoraLoader`、`LoadImage`、`Joy_caption_load`、`ConcatTextOfUtils`
+
+**用到的条目**：KSampler、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、VAEDecodeTiled、CLIPVisionEncode、LoraLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

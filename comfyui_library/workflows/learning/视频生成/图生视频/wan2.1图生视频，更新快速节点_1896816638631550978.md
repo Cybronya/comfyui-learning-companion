@@ -1,0 +1,92 @@
+---
+key: 视频生成/图生视频/wan2.1图生视频，更新快速节点_1896816638631550978.json
+name: wan2.1图生视频，更新快速节点_1896816638631550978.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1896816638631550978.json
+hash: 7c367e83b1fa068b
+coverage: 0.966667
+learned_at: 2026-10-15 22:29:18
+nodes: [WanVideoModelLoader, WanVideoVAELoader, WanVideoEnhanceAVideo, LoadWanVideoClipTextEncoder, WanVideoImageClipEncode, WanVideoDecode, LayerUtility: PurgeVRAM, RIFE VFI, VHS_VideoCombine, LoadWanVideoT5TextEncoder, WanVideoTextEncode, WanVideoModelLoader, WanVideoSampler, WanVideoDecode, VHS_VideoCombine, WanVideoEmptyEmbeds, WanVideoVAELoader, WanVideoBlockSwap, WanVideoTorchCompileSettings, WanVideoTextEncode, LoadImage, ImageResizeAdvanced, Fast Groups Bypasser (rgthree), WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoTextEncode, WanVideoModelLoader, VHS_VideoCombine, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoTeaCache, ImageUpscaleWithModel, UpscaleModelLoader, LayerUtility: PurgeVRAM, WanVideoLoraSelect, WanVideoImageClipEncode, Int, WanVideoDecode, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoSampler, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoTextEncode, WanVideoImageClipEncode, WanVideoVAELoader, WanVideoSampler, WanVideoDecode, VHS_VideoCombine, Int, WanVideoModelLoader, WanVideoBlockSwap, WanVideoLoraSelect, TextInput_, LoadImage, LoadImage, Note, WanVideoSampler, WanVideoTeaCache, LoadWanVideoT5TextEncoder]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1图生视频，更新快速节点_1896816638631550978.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1896816638631550978.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（60 个）：
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoEnhanceAVideo`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoImageClipEncode`
+- `WanVideoDecode`
+- `LayerUtility: PurgeVRAM`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `WanVideoEmptyEmbeds`
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
+- `LoadImage`
+- `ImageResizeAdvanced`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTeaCache`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoLoraSelect`
+- `WanVideoImageClipEncode`
+- `Int`
+- `WanVideoDecode`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoSampler` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoTextEncode`
+- `WanVideoImageClipEncode`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `Int`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `TextInput_`
+- `LoadImage`
+- `LoadImage`
+- `Note`
+- `WanVideoSampler` ★核心
+- `WanVideoTeaCache`
+- `LoadWanVideoT5TextEncoder`
+
+## 知识
+
+覆盖率 **97%**（58/60）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoEnhanceAVideo`、`LoadWanVideoClipTextEncoder`、`WanVideoImageClipEncode`、`WanVideoDecode`、`LayerUtility: PurgeVRAM`、`RIFE VFI`、`VHS_VideoCombine`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoEmptyEmbeds`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`LoadImage`、`ImageResizeAdvanced`、`WanVideoTeaCache`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`WanVideoLoraSelect`、`Int`、`TextInput_`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

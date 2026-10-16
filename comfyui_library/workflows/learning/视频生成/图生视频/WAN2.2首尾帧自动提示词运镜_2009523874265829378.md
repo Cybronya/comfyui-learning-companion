@@ -1,0 +1,135 @@
+---
+key: 视频生成/图生视频/WAN2.2首尾帧自动提示词运镜_2009523874265829378.json
+name: WAN2.2首尾帧自动提示词运镜_2009523874265829378.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2009523874265829378.json
+hash: e55038dcb71c7c46
+coverage: 0.727273
+learned_at: 2026-10-15 22:34:13
+nodes: [INTConstant, LayerUtility: PurgeVRAM, WanVideoSetBlockSwap, WanVideoModelLoader, WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoSetLoRAs, SimpleMath+, LayerUtility: PurgeVRAM, WanVideoSampler, WanVideoSampler, WanVideoModelLoader, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoLoraSelectMulti, CreateCFGScheduleFloatList, LoraLoaderModelOnly, CLIPLoader, VAELoader, LoraLoaderModelOnly, LoadWanVideoClipTextEncoder, LoadImage, WanVideoSetLoRAs, easy ifElse, PrimitiveInt, PrimitiveInt, NumberClamp, SaveImage, easy cleanGpuUsed, WanVideoTextEncode, LoadWanVideoT5TextEncoder, EmptyLatentImage, VAEEncode, easy ifElse, easy ifElse, easy ifElse, easy ifElse, CR SDXL Aspect Ratio, PrimitiveInt, PrimitiveInt, WanVideoLoraSelectMulti, WanVideoClipVisionEncode, ImageResize+, TextEncodeQwenImageEditPlus, CLIPTextEncode, KSampler, UNETLoader, Note, GetImageSizeAndCount, ImageResize+, VAEDecode, PrimitiveInt, PrimitiveStringMultiline, IntToString, PrimitiveStringMultiline, MultiTextConcatenate, WanVideoVAELoader, LoadImage, PreviewAny, Bjornulf_ShowFloat, RH_LLMAPI_NODE, PreviewAny, WanVideoImageToVideoEncode, VHS_VideoCombine, WanVideoDecode, easy cleanGpuUsed, PrimitiveFloat, PrimitiveInt, PrimitiveBoolean, MultiTextConcatenate, PrimitiveStringMultiline, PrimitiveStringMultiline, StringReplace, PrimitiveInt, PrimitiveInt, Compare, Compare]
+patterns: [text_to_image, image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 720, "sampler_name": "euler", "scheduler": "simple", "seed": 588940697778993, "steps": 8, "width": 1280}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/WAN2.2首尾帧自动提示词运镜_2009523874265829378.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2009523874265829378.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（77 个）：
+- `INTConstant`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoSetBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SimpleMath+`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelectMulti`
+- `CreateCFGScheduleFloatList`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadImage`
+- `WanVideoSetLoRAs`
+- `easy ifElse`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `NumberClamp`
+- `SaveImage`
+- `easy cleanGpuUsed`
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `EmptyLatentImage` ★核心
+- `VAEEncode` ★核心
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `CR SDXL Aspect Ratio`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `WanVideoLoraSelectMulti`
+- `WanVideoClipVisionEncode`
+- `ImageResize+`
+- `TextEncodeQwenImageEditPlus`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `UNETLoader` ★核心
+- `Note`
+- `GetImageSizeAndCount`
+- `ImageResize+`
+- `VAEDecode` ★核心
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `IntToString`
+- `PrimitiveStringMultiline`
+- `MultiTextConcatenate`
+- `WanVideoVAELoader`
+- `LoadImage`
+- `PreviewAny`
+- `Bjornulf_ShowFloat`
+- `RH_LLMAPI_NODE`
+- `PreviewAny`
+- `WanVideoImageToVideoEncode`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `easy cleanGpuUsed`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `PrimitiveBoolean`
+- `MultiTextConcatenate`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `StringReplace`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `Compare`
+- `Compare`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `1280`
+- `height` = `720`
+- `batch_size` = `1`
+- `seed` = `588940697778993`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **73%**（56/77）
+
+**有卡**：`INTConstant`、`LayerUtility: PurgeVRAM`、`WanVideoSetBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`SimpleMath+`、`WanVideoSampler`、`WanVideoBlockSwap`、`WanVideoLoraSelectMulti`、`CreateCFGScheduleFloatList`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`LoadWanVideoClipTextEncoder`、`LoadImage`、`NumberClamp`、`SaveImage`、`easy cleanGpuUsed`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`EmptyLatentImage`、`VAEEncode`、`CR SDXL Aspect Ratio`、`WanVideoClipVisionEncode`、`ImageResize+`、`TextEncodeQwenImageEditPlus`、`CLIPTextEncode`、`KSampler`、`UNETLoader`、`GetImageSizeAndCount`、`VAEDecode`、`IntToString`、`MultiTextConcatenate`、`WanVideoVAELoader`、`Bjornulf_ShowFloat`、`RH_LLMAPI_NODE`、`WanVideoImageToVideoEncode`、`VHS_VideoCombine`、`WanVideoDecode`、`PrimitiveBoolean`、`StringReplace`、`Compare`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

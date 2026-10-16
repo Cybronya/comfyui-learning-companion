@@ -1,0 +1,118 @@
+---
+key: 视频生成/图生视频/Wan2.2-Smooth Mix 超丝滑电影探班  全自动工作流_2000048789195026433.json
+name: Wan2.2-Smooth Mix 超丝滑电影探班  全自动工作流_2000048789195026433.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2000048789195026433.json
+hash: c0f99f8abef4c966
+coverage: 0.934211
+learned_at: 2026-10-15 22:33:39
+nodes: [Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Bypasser (rgthree), PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, CLIPLoader, VAELoader, ModelPatchTorchSettings, ImpactInt, Seed (rgthree), RIFE VFI, SimpleMath+, easy cleanGpuUsed, ImageScaleBy, CLIPTextEncode, easy cleanGpuUsed, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, ImpactInt, ImpactInt, CLIPVisionLoader, WanFirstLastFrameToVideo, CLIPVisionEncode, CLIPVisionEncode, UNETLoader, UNETLoader, wanBlockSwap, wanBlockSwap, Fast Bypasser (rgthree), Fast Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, SaveImage, LoadImage, LoadImage, ImageResizeKJv2, ImageResizeKJv2, VAEDecode, easy forLoopEnd, LoadImage, easy batchAnything, PrimitiveStringMultiline, easy anythingIndexSwitch, GetNode, GetNode, LoadImage, LoadImage, LoadImage, SetNode, SaveImage, SetNode, SaveImage, ImageResize+, RH_Translator, RH_Translator, RH_Nano_Banana_Image2Image, SaveImage, RH_Translator, RH_Nano_Banana_Image2Image, RH_Translator, RH_Nano_Banana_Image2Image, RH_Translator, VHS_VideoCombine, easy anythingIndexSwitch, SaveImage, RH_Nano_Banana_Image2Image, easy forLoopStart, JWInteger, RH_Nano_Banana_Image2Image, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2-Smooth Mix 超丝滑电影探班  全自动工作流_2000048789195026433.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2000048789195026433.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（76 个）：
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `Fast Bypasser (rgthree)`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `VAELoader`
+- `ModelPatchTorchSettings`
+- `ImpactInt`
+- `Seed (rgthree)`
+- `RIFE VFI`
+- `SimpleMath+`
+- `easy cleanGpuUsed`
+- `ImageScaleBy`
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImpactInt`
+- `ImpactInt`
+- `CLIPVisionLoader`
+- `WanFirstLastFrameToVideo`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `Fast Bypasser (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `SaveImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `VAEDecode` ★核心
+- `easy forLoopEnd`
+- `LoadImage`
+- `easy batchAnything`
+- `PrimitiveStringMultiline`
+- `easy anythingIndexSwitch`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `SetNode`
+- `SaveImage`
+- `SetNode`
+- `SaveImage`
+- `ImageResize+`
+- `RH_Translator`
+- `RH_Translator`
+- `RH_Nano_Banana_Image2Image`
+- `SaveImage`
+- `RH_Translator`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
+- `RH_Nano_Banana_Image2Image`
+- `RH_Translator`
+- `VHS_VideoCombine`
+- `easy anythingIndexSwitch`
+- `SaveImage`
+- `RH_Nano_Banana_Image2Image`
+- `easy forLoopStart`
+- `JWInteger`
+- `RH_Nano_Banana_Image2Image`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **93%**（71/76）
+
+**有卡**：`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`Fast Bypasser (rgthree)`、`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`ImpactInt`、`Seed (rgthree)`、`RIFE VFI`、`SimpleMath+`、`easy cleanGpuUsed`、`ImageScaleBy`、`CLIPTextEncode`、`KSamplerAdvanced`、`CLIPVisionLoader`、`WanFirstLastFrameToVideo`、`CLIPVisionEncode`、`UNETLoader`、`wanBlockSwap`、`LoadImage`、`SaveImage`、`ImageResizeKJv2`、`VAEDecode`、`easy forLoopEnd`、`easy batchAnything`、`easy anythingIndexSwitch`、`ImageResize+`、`RH_Translator`、`RH_Nano_Banana_Image2Image`、`VHS_VideoCombine`、`easy forLoopStart`、`JWInteger`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、Seed (rgthree)

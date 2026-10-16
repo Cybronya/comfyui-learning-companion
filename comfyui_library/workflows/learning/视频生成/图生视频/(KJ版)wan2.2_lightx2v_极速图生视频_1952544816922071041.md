@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json
+name: (KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952544816922071041.json
+hash: 6ae40e7d83e0ab8e
+coverage: 1
+learned_at: 2026-10-15 22:31:02
+nodes: [WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoTorchCompileSettings, WanVideoSetLoRAs, WanVideoImageToVideoEncode, CreateCFGScheduleFloatList, WanVideoSampler, WanVideoDecode, GetImageSizeAndCount, WanVideoTeaCache, WanVideoTeaCache, WanVideoSetLoRAs, WanVideoSampler, LayerUtility: ImageScaleByAspectRatio V2, easy int, easy seed, LoadWanVideoT5TextEncoder, WanVideoVAELoader, VHS_VideoCombine, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, LoadImage, WanVideoModelLoader, WanVideoModelLoader, WanVideoBlockSwap, WanVideoTextEncode, INTConstant, INTConstant, WanVideoLoraSelect, easy int, WanVideoLoraSelect, WanVideoLoraSelect]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(KJ版)wan2.2_lightx2v_极速图生视频_1952544816922071041.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952544816922071041.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（33 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `WanVideoSetLoRAs`
+- `WanVideoImageToVideoEncode`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `WanVideoTeaCache`
+- `WanVideoTeaCache`
+- `WanVideoSetLoRAs`
+- `WanVideoSampler` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy int`
+- `easy seed`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoTextEncode`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoLoraSelect`
+- `easy int`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+
+## 知识
+
+覆盖率 **100%**（33/33）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoTorchCompileSettings`、`WanVideoSetLoRAs`、`WanVideoImageToVideoEncode`、`CreateCFGScheduleFloatList`、`WanVideoSampler`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoTeaCache`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy int`、`easy seed`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`LoadImage`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoTextEncode`、`INTConstant`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/Wan 2.1_14B首尾帧图生视频加速LightX2V工作流_1936331081635254274.json
+name: Wan 2.1_14B首尾帧图生视频加速LightX2V工作流_1936331081635254274.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1936331081635254274.json
+hash: 1de5f1853da36176
+coverage: 0.520548
+learned_at: 2026-10-15 22:30:26
+nodes: [SetNode, WanVideoTextEncode, Note, LoadWanVideoT5TextEncoder, GetNode, SetNode, SetNode, Note, Note, Note, Note, Int, Note, UpscaleModelLoader, WanVideoEnhanceAVideo, Note, GetNode, WanVideoSLG, Note, GetNode, GetNode, WanVideoDecode, ImageUpscaleWithModel, GetNode, MathExpression|pysssss, VHS_VideoCombine, Note, Note, WanVideoVACEEncode, GetImageSize+, WanVideoVACEStartToEndFrame, GetNode, Note, SetNode, SetNode, GetNode, WanVideoSampler, WanVideoExperimentalArgs, WanVideoBlockSwap, WanVideoVAELoader, SetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, GetNode, WanVideoVACEModelSelect, WanVideoTorchCompileSettings, VHS_VideoCombine, ImageConcanate, GetNode, ImageConcanate, GetNode, GetNode, GetNode, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, Text, Note, Int, Int, WanVideoModelLoader, LayerUtility: PurgeVRAM V2, Fast Groups Bypasser (rgthree), WanVideoLoraSelect, easy promptConcat, easy cleanGpuUsed, RH_Captioner, GetNode, RH_OneShot_Prompter, easy cleanGpuUsed, easy showAnything, SetNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan 2.1_14B首尾帧图生视频加速LightX2V工作流_1936331081635254274.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1936331081635254274.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（73 个）：
+- `SetNode`
+- `WanVideoTextEncode`
+- `Note`
+- `LoadWanVideoT5TextEncoder`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Int`
+- `Note`
+- `UpscaleModelLoader`
+- `WanVideoEnhanceAVideo`
+- `Note`
+- `GetNode`
+- `WanVideoSLG`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `ImageUpscaleWithModel`
+- `GetNode`
+- `MathExpression|pysssss`
+- `VHS_VideoCombine`
+- `Note`
+- `Note`
+- `WanVideoVACEEncode`
+- `GetImageSize+`
+- `WanVideoVACEStartToEndFrame`
+- `GetNode`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoExperimentalArgs`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `GetNode`
+- `WanVideoVACEModelSelect`
+- `WanVideoTorchCompileSettings`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `GetNode`
+- `ImageConcanate`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `Text`
+- `Note`
+- `Int`
+- `Int`
+- `WanVideoModelLoader`
+- `LayerUtility: PurgeVRAM V2`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoLoraSelect`
+- `easy promptConcat`
+- `easy cleanGpuUsed`
+- `RH_Captioner`
+- `GetNode`
+- `RH_OneShot_Prompter`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `SetNode`
+
+## 知识
+
+覆盖率 **52%**（38/73）
+
+**有卡**：`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`Int`、`UpscaleModelLoader`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoDecode`、`ImageUpscaleWithModel`、`MathExpression|pysssss`、`VHS_VideoCombine`、`WanVideoVACEEncode`、`GetImageSize+`、`WanVideoVACEStartToEndFrame`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoVACEModelSelect`、`WanVideoTorchCompileSettings`、`ImageConcanate`、`LoadImage`、`Text`、`WanVideoModelLoader`、`LayerUtility: PurgeVRAM V2`、`WanVideoLoraSelect`、`easy promptConcat`、`easy cleanGpuUsed`、`RH_Captioner`、`RH_OneShot_Prompter`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

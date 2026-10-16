@@ -1,0 +1,82 @@
+---
+key: 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json
+name: 魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2067435786764644353.json
+hash: 1589e12b31b24456
+coverage: 0.94
+learned_at: 2026-10-15 22:40:02
+nodes: [BasicScheduler, KSamplerSelect, LTXVLatentUpsampler, LTXVConcatAVLatent, KSamplerSelect, BasicScheduler, CFGGuider, LTXVConcatAVLatent, CFGGuider, LTXVCropGuides, LTXVCropGuides, LTXVAudioVAEDecode, LTXVConditioning, ConditioningZeroOut, LTXVSeparateAVLatent, LTXVSeparateAVLatent, RandomNoise, VAELoaderKJ, VAELoaderKJ, Label (rgthree), VAEDecode, CreateVideo, SamplerCustomAdvanced, SamplerCustomAdvanced, VAELoaderKJ, LatentUpscaleModelLoader, LTX2SamplingPreviewOverride, Label (rgthree), ComfyMathExpression, INTConstant, INTConstant, Label (rgthree), LoraLoaderModelOnly, UNETLoader, PrimitiveFloat, DualCLIPLoader, MarkdownNote, PrimitiveFloat, CS-LTXGridDirector, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, GetImageRangeFromBatch, SaveVideo, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXDirectorGuide, LTXDirectorGuide]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2067435786764644353.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2067435786764644353.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（50 个）：
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `CFGGuider`
+- `LTXVConcatAVLatent`
+- `CFGGuider`
+- `LTXVCropGuides`
+- `LTXVCropGuides`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVConditioning`
+- `ConditioningZeroOut`
+- `LTXVSeparateAVLatent`
+- `LTXVSeparateAVLatent`
+- `RandomNoise`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `Label (rgthree)`
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAELoaderKJ`
+- `LatentUpscaleModelLoader`
+- `LTX2SamplingPreviewOverride`
+- `Label (rgthree)`
+- `ComfyMathExpression`
+- `INTConstant`
+- `INTConstant`
+- `Label (rgthree)`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `PrimitiveFloat`
+- `DualCLIPLoader`
+- `MarkdownNote`
+- `PrimitiveFloat`
+- `CS-LTXGridDirector`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `GetImageRangeFromBatch`
+- `SaveVideo`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXDirectorGuide`
+- `LTXDirectorGuide`
+
+## 知识
+
+覆盖率 **94%**（47/50）
+
+**有卡**：`BasicScheduler`、`KSamplerSelect`、`LTXVLatentUpsampler`、`LTXVConcatAVLatent`、`CFGGuider`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`ConditioningZeroOut`、`LTXVSeparateAVLatent`、`RandomNoise`、`VAELoaderKJ`、`Label (rgthree)`、`VAEDecode`、`CreateVideo`、`SamplerCustomAdvanced`、`LatentUpscaleModelLoader`、`LTX2SamplingPreviewOverride`、`ComfyMathExpression`、`INTConstant`、`LoraLoaderModelOnly`、`UNETLoader`、`DualCLIPLoader`、`CS-LTXGridDirector`、`LoadImage`、`GetImageRangeFromBatch`、`SaveVideo`、`LTXDirectorGuide`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

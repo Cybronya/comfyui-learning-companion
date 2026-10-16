@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/🐳wan2.2 图生视频 加速出图版🦋【官方模型】_1950018274672164866.json
+name: 🐳wan2.2 图生视频 加速出图版🦋【官方模型】_1950018274672164866.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950018274672164866.json
+hash: 2a3f0f4aca3618df
+coverage: 0.96
+learned_at: 2026-10-15 22:30:51
+nodes: [PathchSageAttentionKJ, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, CLIPLoader, ImpactInt, KSamplerAdvanced, MarkdownNote, Note Plus (mtb), ImpactInt, ImpactInt, KSamplerAdvanced, CLIPTextEncode, CLIPTextEncode, SimpleMath+, VAEDecode, WanImageToVideo, CR Text, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, VAELoader, UNETLoader, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 12, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/🐳wan2.2 图生视频 加速出图版🦋【官方模型】_1950018274672164866.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950018274672164866.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（25 个）：
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `ImpactInt`
+- `KSamplerAdvanced` ★核心
+- `MarkdownNote`
+- `Note Plus (mtb)`
+- `ImpactInt`
+- `ImpactInt`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `CR Text`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `VAELoader`
+- `UNETLoader` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `12`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **96%**（24/25）
+
+**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPLoader`、`ImpactInt`、`KSamplerAdvanced`、`Note Plus (mtb)`、`CLIPTextEncode`、`SimpleMath+`、`VAEDecode`、`WanImageToVideo`、`CR Text`、`LoadImage`、`LoraLoaderModelOnly`、`UNETLoader`、`VAELoader`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

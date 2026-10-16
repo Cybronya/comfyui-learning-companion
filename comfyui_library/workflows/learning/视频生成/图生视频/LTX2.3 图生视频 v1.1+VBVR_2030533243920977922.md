@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/LTX2.3 图生视频 v1.1+VBVR_2030533243920977922.json
+name: LTX2.3 图生视频 v1.1+VBVR_2030533243920977922.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2030533243920977922.json
+hash: e367fe8bf7176899
+coverage: 0.904762
+learned_at: 2026-10-15 22:35:26
+nodes: [KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetImageSize, LatentUpscaleModelLoader, EmptyImage, LTXVImgToVideoInplace, LTXVConcatAVLatent, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, MarkdownNote, MarkdownNote, VAEDecode, LTXVSeparateAVLatent, LTXVAudioVAEDecode, PreviewAny, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVConcatAVLatent, LTXVCropGuides, CreateVideo, LTXVConditioning, DualCLIPLoader, LTXVAudioVAELoader, LTXAVTextEncoderLoader, ImageScaleBy, GetImageSize, SaveVideo, KSampler, CheckpointLoaderSimple, RandomNoise, CFGGuider, LTXVScheduler, LoraLoaderModelOnly, TextGenerateLTX2Prompt, CLIPTextEncode, LoadImage, CLIPTextEncode, PrimitiveInt, ResizeImageMaskNode, ResizeImagesByLongerEdge, LTXVPreprocess]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "denoise": 0.35, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 121214939185200, "steps": 4, "width": 97}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/LTX2.3 图生视频 v1.1+VBVR_2030533243920977922.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2030533243920977922.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（42 个）：
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `GetImageSize`
+- `LatentUpscaleModelLoader`
+- `EmptyImage`
+- `LTXVImgToVideoInplace`
+- `LTXVConcatAVLatent`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `MarkdownNote`
+- `MarkdownNote`
+- `VAEDecode` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `PreviewAny`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVConcatAVLatent`
+- `LTXVCropGuides`
+- `CreateVideo`
+- `LTXVConditioning`
+- `DualCLIPLoader`
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `ImageScaleBy`
+- `GetImageSize`
+- `SaveVideo`
+- `KSampler` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `RandomNoise`
+- `CFGGuider`
+- `LTXVScheduler`
+- `LoraLoaderModelOnly` ★核心
+- `TextGenerateLTX2Prompt`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `PrimitiveInt`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `seed` = `121214939185200`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.35`
+- `checkpoint` = `ltx-2.3-22b-distilled-1.1.safetensors`
+
+## 知识
+
+覆盖率 **90%**（38/42）
+
+**有卡**：`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`GetImageSize`、`LatentUpscaleModelLoader`、`EmptyImage`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`VAEDecode`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`CreateVideo`、`LTXVConditioning`、`DualCLIPLoader`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`ImageScaleBy`、`SaveVideo`、`KSampler`、`CheckpointLoaderSimple`、`RandomNoise`、`CFGGuider`、`LTXVScheduler`、`LoraLoaderModelOnly`、`TextGenerateLTX2Prompt`、`CLIPTextEncode`、`LoadImage`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`
+
+**用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,63 @@
+---
+key: 视频生成/图生视频/Wan2.2 Fun奖励LoRA 图生视频KJ版【更好动态】_1967630576679358465.json
+name: Wan2.2 Fun奖励LoRA 图生视频KJ版【更好动态】_1967630576679358465.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1967630576679358465.json
+hash: bb9431e8a964c3a3
+coverage: 1
+learned_at: 2026-10-15 22:31:42
+nodes: [WanVideoTextEncodeSingle, WanVideoTorchCompileSettings, ImageResizeKJv2, WanVideoImageToVideoEncode, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, SimpleMath+, WanVideoApplyNAG, WanVideoSampler, WanVideoSetBlockSwap, ImpactInt, ImpactInt, ImpactInt, WanVideoSetBlockSwap, INTConstant, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoVAELoader, WanVideoTextEncodeSingle, WanVideoLoraSelectMulti, SimpleMath+, WanVideoSampler, WanVideoDecode, GetImageSizeAndCount, LoadImage, CR Text, VHS_VideoCombine, VHS_VideoCombine, CreateVideo, PreViewVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 Fun奖励LoRA 图生视频KJ版【更好动态】_1967630576679358465.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1967630576679358465.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（31 个）：
+- `WanVideoTextEncodeSingle`
+- `WanVideoTorchCompileSettings`
+- `ImageResizeKJv2`
+- `WanVideoImageToVideoEncode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `SimpleMath+`
+- `WanVideoApplyNAG`
+- `WanVideoSampler` ★核心
+- `WanVideoSetBlockSwap`
+- `ImpactInt`
+- `ImpactInt`
+- `ImpactInt`
+- `WanVideoSetBlockSwap`
+- `INTConstant`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoTextEncodeSingle`
+- `WanVideoLoraSelectMulti`
+- `SimpleMath+`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `LoadImage`
+- `CR Text`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CreateVideo`
+- `PreViewVideo`
+
+## 知识
+
+覆盖率 **100%**（31/31）
+
+**有卡**：`WanVideoTextEncodeSingle`、`WanVideoTorchCompileSettings`、`ImageResizeKJv2`、`WanVideoImageToVideoEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`SimpleMath+`、`WanVideoApplyNAG`、`WanVideoSampler`、`WanVideoSetBlockSwap`、`ImpactInt`、`INTConstant`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`WanVideoDecode`、`GetImageSizeAndCount`、`LoadImage`、`CR Text`、`VHS_VideoCombine`、`CreateVideo`、`PreViewVideo`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoTextEncodeSingle、WanVideoLoraSelectMulti

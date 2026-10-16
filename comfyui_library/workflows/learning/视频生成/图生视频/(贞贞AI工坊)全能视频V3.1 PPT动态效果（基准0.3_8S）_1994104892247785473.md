@@ -1,0 +1,44 @@
+---
+key: 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json
+name: (贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1994104892247785473.json
+hash: de71e4cc214c05db
+coverage: 0.416667
+learned_at: 2026-10-15 22:33:20
+nodes: [Note, Note, Note, Comfly_Googel_Veo3, CR Prompt Text, easy showAnything, easy showAnything, Note, Comfly_api_set, Note, SaveVideo, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1994104892247785473.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（12 个）：
+- `Note`
+- `Note`
+- `Note`
+- `Comfly_Googel_Veo3`
+- `CR Prompt Text`
+- `easy showAnything`
+- `easy showAnything`
+- `Note`
+- `Comfly_api_set`
+- `Note`
+- `SaveVideo`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **42%**（5/12）
+
+**有卡**：`Comfly_Googel_Veo3`、`CR Prompt Text`、`Comfly_api_set`、`SaveVideo`、`LoadImage`
+
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、Comfly_api_set、Comfly_Googel_Veo3、sd15-t2i-basic、sd15-t2i-lora、Text

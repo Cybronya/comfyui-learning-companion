@@ -1,0 +1,68 @@
+---
+key: 视频生成/文生视频/Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_1952277100332003330.json
+name: Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_1952277100332003330.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1952277100332003330.json
+hash: 97d0b7343be07be4
+coverage: 1
+learned_at: 2026-10-15 22:43:38
+nodes: [ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, CLIPLoader, VAELoader, easy int, LayerUtility: PurgeVRAM V2, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, SimpleMath+, EmptyHunyuanLatentVideo, easy int, easy int, VAEDecode, VHS_VideoCombine, TextBox, CLIPTextEncode, QwenLoader, WanVideoPromptExtender, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/文生视频/Wan2.2_14B_文生视频 (8步加速) + 提示词扩写_1952277100332003330.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1952277100332003330.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（26 个）：
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `VAELoader`
+- `easy int`
+- `LayerUtility: PurgeVRAM V2`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `SimpleMath+`
+- `EmptyHunyuanLatentVideo`
+- `easy int`
+- `easy int`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `TextBox`
+- `CLIPTextEncode` ★核心
+- `QwenLoader`
+- `WanVideoPromptExtender`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（26/26）
+
+**有卡**：`ModelSamplingSD3`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`easy int`、`LayerUtility: PurgeVRAM V2`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`SimpleMath+`、`EmptyHunyuanLatentVideo`、`VAEDecode`、`VHS_VideoCombine`、`TextBox`、`CLIPTextEncode`、`QwenLoader`、`WanVideoPromptExtender`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

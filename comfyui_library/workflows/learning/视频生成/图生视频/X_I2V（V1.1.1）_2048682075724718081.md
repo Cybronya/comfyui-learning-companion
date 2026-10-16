@@ -1,0 +1,70 @@
+---
+key: 视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json
+name: X_I2V（V1.1.1）_2048682075724718081.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2048682075724718081.json
+hash: e36f81acf0683f5c
+coverage: 0.736842
+learned_at: 2026-10-15 22:37:10
+nodes: [DownloadAndLoadWav2VecModel, WanVideoBlockSwap, Note, MarkdownNote, WanVideoTorchCompileSettings, MarkdownNote, WanVideoVAELoader, MarkdownNote, WanVideoLoraSelect, MultiTalkModelLoader, MelBandRoFormerModelLoader, SetNode, PreviewAny, GetNode, INTConstant, SetNode, CLIPVisionLoader, Wav2VecModelLoader, GetImageSize, ImageResizeKJv2, FB_Qwen3TTSVoiceClone, PreviewAudio, MelBandRoFormerSampler, MultiTalkWav2VecEmbeds, SetNode, GetImageSizeAndCount, WanVideoImageToVideoMultiTalk, WanVideoPassImagesFromSamples, WanVideoClipVisionEncode, Note, LoadAudio, WanVideoSampler, WanVideoModelLoader, Text, WanVideoTextEncodeCached, LoadImage, ResizeImagesByLongerEdge, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/X_I2V（V1.1.1）_2048682075724718081.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2048682075724718081.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（38 个）：
+- `DownloadAndLoadWav2VecModel`
+- `WanVideoBlockSwap`
+- `Note`
+- `MarkdownNote`
+- `WanVideoTorchCompileSettings`
+- `MarkdownNote`
+- `WanVideoVAELoader`
+- `MarkdownNote`
+- `WanVideoLoraSelect`
+- `MultiTalkModelLoader`
+- `MelBandRoFormerModelLoader`
+- `SetNode`
+- `PreviewAny`
+- `GetNode`
+- `INTConstant`
+- `SetNode`
+- `CLIPVisionLoader`
+- `Wav2VecModelLoader`
+- `GetImageSize`
+- `ImageResizeKJv2`
+- `FB_Qwen3TTSVoiceClone`
+- `PreviewAudio`
+- `MelBandRoFormerSampler` ★核心
+- `MultiTalkWav2VecEmbeds`
+- `SetNode`
+- `GetImageSizeAndCount`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoPassImagesFromSamples`
+- `WanVideoClipVisionEncode`
+- `Note`
+- `LoadAudio`
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `Text`
+- `WanVideoTextEncodeCached`
+- `LoadImage`
+- `ResizeImagesByLongerEdge`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **74%**（28/38）
+
+**有卡**：`DownloadAndLoadWav2VecModel`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`MultiTalkModelLoader`、`MelBandRoFormerModelLoader`、`INTConstant`、`CLIPVisionLoader`、`Wav2VecModelLoader`、`GetImageSize`、`ImageResizeKJv2`、`FB_Qwen3TTSVoiceClone`、`PreviewAudio`、`MelBandRoFormerSampler`、`MultiTalkWav2VecEmbeds`、`GetImageSizeAndCount`、`WanVideoImageToVideoMultiTalk`、`WanVideoPassImagesFromSamples`、`WanVideoClipVisionEncode`、`LoadAudio`、`WanVideoSampler`、`WanVideoModelLoader`、`Text`、`WanVideoTextEncodeCached`、`LoadImage`、`ResizeImagesByLongerEdge`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、MelBandRoFormerSampler、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、CLIPVisionLoader

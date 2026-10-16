@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json
+name: AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039872167524966402.json
+hash: 15ad4da2d3259521
+coverage: 0.888889
+learned_at: 2026-10-15 22:36:11
+nodes: [Reroute, Load Whisper (mtb), LongCatVoiceCloneTTS, NormalizeAudioLoudness, Audio To Text (mtb), SaveAudioMP3, LoadAudio, SaveAudio, CR Prompt Text, WanVideoLoraSelect, PreviewAny, WanVideoClipVisionEncode, DownloadAndLoadWav2VecModel, AudioSeparation, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoDecode, WanVideoTextEncode, GetImageSizeAndCount, WanVideoVAELoader, CLIPVisionLoader, LoadWanVideoT5TextEncoder, WanVideoModelLoader, JWInteger, LoadAudio, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, MultiTalkModelLoader, WanVideoBlockSwap, AudioCrop, MultiTalkWav2VecEmbeds, VHS_VideoCombine, CR Prompt Text, LoadImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039872167524966402.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（36 个）：
+- `Reroute`
+- `Load Whisper (mtb)`
+- `LongCatVoiceCloneTTS`
+- `NormalizeAudioLoudness`
+- `Audio To Text (mtb)`
+- `SaveAudioMP3`
+- `LoadAudio`
+- `SaveAudio`
+- `CR Prompt Text`
+- `WanVideoLoraSelect`
+- `PreviewAny`
+- `WanVideoClipVisionEncode`
+- `DownloadAndLoadWav2VecModel`
+- `AudioSeparation`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoTextEncode`
+- `GetImageSizeAndCount`
+- `WanVideoVAELoader`
+- `CLIPVisionLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `JWInteger`
+- `LoadAudio`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MultiTalkModelLoader`
+- `WanVideoBlockSwap`
+- `AudioCrop`
+- `MultiTalkWav2VecEmbeds`
+- `VHS_VideoCombine`
+- `CR Prompt Text`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+
+## 知识
+
+覆盖率 **89%**（32/36）
+
+**有卡**：`Load Whisper (mtb)`、`LongCatVoiceCloneTTS`、`NormalizeAudioLoudness`、`Audio To Text (mtb)`、`SaveAudioMP3`、`LoadAudio`、`SaveAudio`、`CR Prompt Text`、`WanVideoLoraSelect`、`WanVideoClipVisionEncode`、`DownloadAndLoadWav2VecModel`、`AudioSeparation`、`WanVideoImageToVideoMultiTalk`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoTextEncode`、`GetImageSizeAndCount`、`WanVideoVAELoader`、`CLIPVisionLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`JWInteger`、`LayerUtility: ImageScaleByAspectRatio V2`、`MultiTalkModelLoader`、`WanVideoBlockSwap`、`AudioCrop`、`MultiTalkWav2VecEmbeds`、`VHS_VideoCombine`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoLoraSelect

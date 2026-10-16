@@ -1,0 +1,87 @@
+---
+key: 视频生成/图生视频/(本地解码KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1954077934976061442.json
+name: (本地解码KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1954077934976061442.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1954077934976061442.json
+hash: bac60b6d28372d6c
+coverage: 0.8
+learned_at: 2026-10-15 22:31:06
+nodes: [WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, Note, Note, WanVideoModelLoader, WanVideoModelLoader, Note, JWInteger, WanVideoImageToVideoEncode, WanVideoVAELoader, WanVideoTextEncode, Note, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, Note, WanVideoSampler, ShowText|pysssss, TextConcat, easy showAnything, easy showAnything, JWStringConcat, WanVideoTorchCompileSettings, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, INTConstant, JWInteger, RH_LLMAPI_NODE, CreateCFGScheduleFloatList, INTConstant, PrimitiveNode, WanVideoVAELoader, LoadLatent, VHS_VideoCombine, WanVideoDecode, LoadImage, SaveImage, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, Note, WanVideoSampler, GetImageSizeAndCount, ImageFromBatch+, VHS_VideoCombine, CR Prompt Text, CR Prompt Text, RH_Captioner, WanVideoDecode, CR Prompt Text, Wan22PromptSelector]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(本地解码KJ版)Wan2.2+提示词工具+无API视频扩写3分镜图生视频加速版V1_1954077934976061442.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1954077934976061442.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（55 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `Note`
+- `Note`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `Note`
+- `JWInteger`
+- `WanVideoImageToVideoEncode`
+- `WanVideoVAELoader`
+- `WanVideoTextEncode`
+- `Note`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `Note`
+- `WanVideoSampler` ★核心
+- `ShowText|pysssss`
+- `TextConcat`
+- `easy showAnything`
+- `easy showAnything`
+- `JWStringConcat`
+- `WanVideoTorchCompileSettings`
+- `easy showAnything`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `INTConstant`
+- `JWInteger`
+- `RH_LLMAPI_NODE`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `PrimitiveNode`
+- `WanVideoVAELoader`
+- `LoadLatent`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `LoadImage`
+- `SaveImage`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `Note`
+- `WanVideoSampler` ★核心
+- `GetImageSizeAndCount`
+- `ImageFromBatch+`
+- `VHS_VideoCombine`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `RH_Captioner`
+- `WanVideoDecode`
+- `CR Prompt Text`
+- `Wan22PromptSelector`
+
+## 知识
+
+覆盖率 **80%**（44/55）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`JWInteger`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`WanVideoTextEncode`、`LayerUtility: PurgeVRAM`、`WanVideoSampler`、`TextConcat`、`JWStringConcat`、`WanVideoTorchCompileSettings`、`LayerUtility: ImageScaleByAspectRatio V2`、`INTConstant`、`RH_LLMAPI_NODE`、`CreateCFGScheduleFloatList`、`LoadLatent`、`VHS_VideoCombine`、`WanVideoDecode`、`LoadImage`、`SaveImage`、`WanVideoLoraSelect`、`GetImageSizeAndCount`、`ImageFromBatch+`、`CR Prompt Text`、`RH_Captioner`、`Wan22PromptSelector`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

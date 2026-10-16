@@ -1,0 +1,143 @@
+---
+key: 视频生成/图生视频/「AI定帧术」让你的手办跳街舞！Wan2.2无限时长舞蹈视频生成教程_1961071998686445569.json
+name: 「AI定帧术」让你的手办跳街舞！Wan2.2无限时长舞蹈视频生成教程_1961071998686445569.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1961071998686445569.json
+hash: ecbe93e74d6dd0b9
+coverage: 0.882353
+learned_at: 2026-10-15 22:31:28
+nodes: [CLIPTextEncode, CLIPLoader, VAELoader, UNETLoader, ModelSamplingAuraFlow, VAEDecode, Note, Note, MarkdownNote, PreviewImage, VAEEncode, ControlNetLoader, VAEDecode, CLIPLoader, VAELoader, UNETLoader, UNETLoader, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, AIO_Preprocessor, SaveImage, LoraLoaderModelOnly, ControlNetApplyAdvanced, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, VHS_VideoCombine, VHS_VideoCombine, CLIPLoader, VAELoader, UNETLoader, UNETLoader, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, DWPreprocessor, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, VHS_VideoCombine, SetNode, MathExpression|pysssss, Wan22FunControlToVideo, Wan22FunControlToVideo, VAEDecode, VHS_VideoCombine, DWPreprocessor, GetImageRangeFromBatch, SetNode, easy forLoopEnd, VHS_VideoCombine, GetNode, easy forLoopStart, VAELoader, CFGNorm, ModelSamplingAuraFlow, VAEDecode, UNETLoader, CLIPLoader, VAEEncode, SaveImage, ImageScaleToTotalPixels, KSampler, CLIPTextEncode, SetNode, GetNode, TextEncodeQwenImageEdit, LoadImage, TextEncodeQwenImageEdit, LoadImage, VHS_LoadVideo, VHS_LoadVideo, CLIPTextEncode, CLIPTextEncode, KSampler, ImageScaleToTotalPixels, LoraLoaderModelOnly, ImageCombine, VHS_LoadVideo, GetImageRangeFromBatch, PreviewImage, Label (rgthree)]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "controlnet_strength": 1.0000000000000002, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 888, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/「AI定帧术」让你的手办跳街舞！Wan2.2无限时长舞蹈视频生成教程_1961071998686445569.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1961071998686445569.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
+**节点**（85 个）：
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `ModelSamplingAuraFlow`
+- `VAEDecode` ★核心
+- `Note`
+- `Note`
+- `MarkdownNote`
+- `PreviewImage`
+- `VAEEncode` ★核心
+- `ControlNetLoader`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `AIO_Preprocessor`
+- `SaveImage`
+- `LoraLoaderModelOnly` ★核心
+- `ControlNetApplyAdvanced` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `DWPreprocessor`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `SetNode`
+- `MathExpression|pysssss`
+- `Wan22FunControlToVideo`
+- `Wan22FunControlToVideo`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `DWPreprocessor`
+- `GetImageRangeFromBatch`
+- `SetNode`
+- `easy forLoopEnd`
+- `VHS_VideoCombine`
+- `GetNode`
+- `easy forLoopStart`
+- `VAELoader`
+- `CFGNorm`
+- `ModelSamplingAuraFlow`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAEEncode` ★核心
+- `SaveImage`
+- `ImageScaleToTotalPixels`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `TextEncodeQwenImageEdit`
+- `LoadImage`
+- `TextEncodeQwenImageEdit`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `VHS_LoadVideo`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `ImageScaleToTotalPixels`
+- `LoraLoaderModelOnly` ★核心
+- `ImageCombine`
+- `VHS_LoadVideo`
+- `GetImageRangeFromBatch`
+- `PreviewImage`
+- `Label (rgthree)`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `888`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `controlnet_strength` = `1.0000000000000002`
+
+## 知识
+
+覆盖率 **88%**（75/85）
+
+**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`ModelSamplingAuraFlow`、`VAEDecode`、`VAEEncode`、`ControlNetLoader`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`AIO_Preprocessor`、`SaveImage`、`ControlNetApplyAdvanced`、`ModelSamplingSD3`、`VHS_VideoCombine`、`DWPreprocessor`、`MathExpression|pysssss`、`Wan22FunControlToVideo`、`GetImageRangeFromBatch`、`easy forLoopEnd`、`easy forLoopStart`、`CFGNorm`、`ImageScaleToTotalPixels`、`KSampler`、`TextEncodeQwenImageEdit`、`LoadImage`、`VHS_LoadVideo`、`ImageCombine`、`Label (rgthree)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

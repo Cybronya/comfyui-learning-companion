@@ -1,0 +1,73 @@
+---
+key: 视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json
+name: Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1938242650158071810.json
+hash: f64e141b6168f1d1
+coverage: 0.731707
+learned_at: 2026-10-15 22:30:31
+nodes: [GetNode, GetNode, GetNode, GetNode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, SetNode, SetNode, SetNode, GetNode, Reroute, WanVideoTextEncode, GetImageSizeAndCount, Int, Int, WanVideoVACEStartToEndFrame, WanVideoModelLoader, JjkText, WanVideoVACEEncode, WanVideoSampler, WanVideoTeaCache, WanVideoDecode, DownloadAndLoadDepthAnythingV2Model, DepthAnything_V2, ImageResizeKJv2, RHHiddenNodes, easy showAnything, ImageResizeKJv2, VHS_VideoCombine, AIO_Preprocessor, ImageBlur, RHHiddenNodes, VHS_VideoInfoLoaded, VHS_VideoCombine, WanVideoVACEModelSelect, WanVideoBlockSwap, WanVideoLoraSelect, LayerColor: ColorAdapter, ColorMatch, LoadImage, VHS_LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1938242650158071810.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（41 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Reroute`
+- `WanVideoTextEncode`
+- `GetImageSizeAndCount`
+- `Int`
+- `Int`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoModelLoader`
+- `JjkText`
+- `WanVideoVACEEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoTeaCache`
+- `WanVideoDecode`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `DepthAnything_V2`
+- `ImageResizeKJv2`
+- `RHHiddenNodes`
+- `easy showAnything`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `AIO_Preprocessor`
+- `ImageBlur`
+- `RHHiddenNodes`
+- `VHS_VideoInfoLoaded`
+- `VHS_VideoCombine`
+- `WanVideoVACEModelSelect`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `LayerColor: ColorAdapter`
+- `ColorMatch`
+- `LoadImage`
+- `VHS_LoadVideo`
+
+## 知识
+
+覆盖率 **73%**（30/41）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoTextEncode`、`GetImageSizeAndCount`、`Int`、`WanVideoVACEStartToEndFrame`、`WanVideoModelLoader`、`WanVideoVACEEncode`、`WanVideoSampler`、`WanVideoTeaCache`、`WanVideoDecode`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`ImageResizeKJv2`、`RHHiddenNodes`、`VHS_VideoCombine`、`AIO_Preprocessor`、`ImageBlur`、`VHS_VideoInfoLoaded`、`WanVideoVACEModelSelect`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`LayerColor: ColorAdapter`、`ColorMatch`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、DepthAnything_V2、DownloadAndLoadDepthAnythingV2Model、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

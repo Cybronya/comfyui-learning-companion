@@ -1,0 +1,73 @@
+---
+key: 视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json
+name: LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2080902822853435394.json
+hash: 29766decc55dc98e
+coverage: 0.970588
+learned_at: 2026-10-15 22:42:17
+nodes: [KSamplerSelect, LTXVConditioning, VisualizeSigmasKJ, UNETLoader, DualCLIPLoader, ConditioningZeroOut, VAELoaderKJ, VAEDecode, BasicScheduler, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAELoaderKJ, SamplerCustom, EmptyLTXVLatentVideo, LTX2SamplingPreviewOverride, VHS_VideoCombine, PromptRelaySmartEncode, LayerUtility: ImageScaleByAspectRatio V2, CR Text, ImpactInt, SimpleMath+, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, LTXVPreprocess, LTXVImgToVideoInplaceKJ, CR Text, Dapao_LlamaChat, ShowText|pysssss, CR Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 489}
+---
+
+# 视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2080902822853435394.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2080902822853435394.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（34 个）：
+- `KSamplerSelect` ★核心
+- `LTXVConditioning`
+- `VisualizeSigmasKJ`
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `ConditioningZeroOut`
+- `VAELoaderKJ`
+- `VAEDecode` ★核心
+- `BasicScheduler`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `VAELoaderKJ`
+- `SamplerCustom` ★核心
+- `EmptyLTXVLatentVideo`
+- `LTX2SamplingPreviewOverride`
+- `VHS_VideoCombine`
+- `PromptRelaySmartEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Text`
+- `ImpactInt`
+- `SimpleMath+`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `LTXVPreprocess`
+- `LTXVImgToVideoInplaceKJ`
+- `CR Text`
+- `Dapao_LlamaChat`
+- `ShowText|pysssss`
+- `CR Text`
+
+## 关键参数
+
+- `width` = `489`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **97%**（33/34）
+
+**有卡**：`KSamplerSelect`、`LTXVConditioning`、`VisualizeSigmasKJ`、`UNETLoader`、`DualCLIPLoader`、`ConditioningZeroOut`、`VAELoaderKJ`、`VAEDecode`、`BasicScheduler`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`SamplerCustom`、`EmptyLTXVLatentVideo`、`LTX2SamplingPreviewOverride`、`VHS_VideoCombine`、`PromptRelaySmartEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`CR Text`、`ImpactInt`、`SimpleMath+`、`LoadImage`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LTXVPreprocess`、`LTXVImgToVideoInplaceKJ`、`Dapao_LlamaChat`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent

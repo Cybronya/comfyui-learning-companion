@@ -1,0 +1,49 @@
+---
+key: 视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json
+name: Wan2.1 Fusion X 文生视频_1947180692524019713.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1947180692524019713.json
+hash: a35dc06b67b066ea
+coverage: 1
+learned_at: 2026-10-15 22:43:31
+nodes: [WanVideoEnhanceAVideo, WanVideoDecode, DownloadAndLoadGIMMVFIModel, WanVideoBlockSwap, GIMMVFI_interpolate, ImageScaleToMegapixels, UpscaleModelLoader, WanVideoSLG, WanVideoModelLoader, WanVideoVAELoader, WanVideoSampler, VHS_VideoCombine, WanVideoEmptyEmbeds, LoadWanVideoT5TextEncoder, WanVideoTextEncode, Note Plus (mtb), LoadImageFromUrl]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan2.1 Fusion X 文生视频_1947180692524019713.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1947180692524019713.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（17 个）：
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `DownloadAndLoadGIMMVFIModel`
+- `WanVideoBlockSwap`
+- `GIMMVFI_interpolate`
+- `ImageScaleToMegapixels`
+- `UpscaleModelLoader`
+- `WanVideoSLG`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoEmptyEmbeds`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `Note Plus (mtb)`
+- `LoadImageFromUrl`
+
+## 知识
+
+覆盖率 **100%**（17/17）
+
+**有卡**：`WanVideoEnhanceAVideo`、`WanVideoDecode`、`DownloadAndLoadGIMMVFIModel`、`WanVideoBlockSwap`、`GIMMVFI_interpolate`、`ImageScaleToMegapixels`、`UpscaleModelLoader`、`WanVideoSLG`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoEmptyEmbeds`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`Note Plus (mtb)`、`LoadImageFromUrl`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、UpscaleModelLoader、UpscaleModelLoader、VHS_VideoCombine

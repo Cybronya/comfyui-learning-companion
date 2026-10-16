@@ -1,0 +1,82 @@
+---
+key: 视频生成/图生视频/vace-1.3b-1280-causvid-pose-fast_1924012489724317698.json
+name: vace-1.3b-1280-causvid-pose-fast_1924012489724317698.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1924012489724317698.json
+hash: ca2838c84fd4f1bc
+coverage: 0.54
+learned_at: 2026-10-15 22:29:49
+nodes: [GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, WanVideoExperimentalArgs, WanVideoSLG, GetNode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, easy int, WanVideoVACEModelSelect, ImageResize+, SetNode, GetNode, SetNode, GetImageSizeAndCount, WanVideoVACEStartToEndFrame, ImageResize+, GetNode, WanVideoEnhanceAVideo, easy int, easy seed, WanVideoVACEEncode, SetNode, WanVideoDecode, GetNode, GetNode, WanVideoModelLoader, WanVideoBlockSwap, WanVideoTeaCache, GetNode, GetNode, SetNode, SetNode, SetNode, String Literal, VHS_VideoCombine, ImageResize+, easy int, GetNode, WanVideoLoraSelect, WanVideoSampler, WanVideoTextEncode, VHS_LoadVideo, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/vace-1.3b-1280-causvid-pose-fast_1924012489724317698.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1924012489724317698.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（50 个）：
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `easy int`
+- `WanVideoVACEModelSelect`
+- `ImageResize+`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetImageSizeAndCount`
+- `WanVideoVACEStartToEndFrame`
+- `ImageResize+`
+- `GetNode`
+- `WanVideoEnhanceAVideo`
+- `easy int`
+- `easy seed`
+- `WanVideoVACEEncode`
+- `SetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `GetNode`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoTeaCache`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `String Literal`
+- `VHS_VideoCombine`
+- `ImageResize+`
+- `easy int`
+- `GetNode`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `VHS_LoadVideo`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **54%**（27/50）
+
+**有卡**：`WanVideoExperimentalArgs`、`WanVideoSLG`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`easy int`、`WanVideoVACEModelSelect`、`ImageResize+`、`GetImageSizeAndCount`、`WanVideoVACEStartToEndFrame`、`WanVideoEnhanceAVideo`、`easy seed`、`WanVideoVACEEncode`、`WanVideoDecode`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoTeaCache`、`String Literal`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`WanVideoSampler`、`WanVideoTextEncode`、`VHS_LoadVideo`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode

@@ -1,0 +1,102 @@
+---
+key: 视频生成/图生视频/wan2.2连续视频生成_2004452765445353474.json
+name: wan2.2连续视频生成_2004452765445353474.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2004452765445353474.json
+hash: 26b9eb11c0808416
+coverage: 0.983333
+learned_at: 2026-10-15 22:33:54
+nodes: [KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, UpscaleModelLoader, UpscaleImageByUsingModel, VHS_VideoCombine, easy cleanGpuUsed, GetImageRangeFromBatch, VAEDecode, easy mathInt, easy mathInt, KSamplerAdvanced, PainterLongVideo, easy cleanGpuUsed, VAEDecode, VHS_VideoCombine, UNETLoader, UNETLoader, KSamplerAdvanced, PainterI2V, VHS_MergeImages, PainterLongVideo, ModelSamplingSD3, ModelSamplingSD3, CLIPLoader, VAEDecode, VHS_VideoCombine, easy cleanGpuUsed, VHS_VideoCombine, CLIPTextEncode, VAELoader, INTConstant, INTConstant, DF_Get_image_size, Fast Groups Muter (rgthree), Int, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, Int, Int, Int, VHS_VideoCombine, GetImageRangeFromBatch, GetImageRangeFromBatch, VHS_MergeImages, VHS_MergeImages, VAEDecode, LoadImage, VHS_VideoCombine, PainterLongVideo, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, Int]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2.2连续视频生成_2004452765445353474.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2004452765445353474.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（60 个）：
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `UpscaleModelLoader`
+- `UpscaleImageByUsingModel`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `GetImageRangeFromBatch`
+- `VAEDecode` ★核心
+- `easy mathInt`
+- `easy mathInt`
+- `KSamplerAdvanced` ★核心
+- `PainterLongVideo`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `KSamplerAdvanced` ★核心
+- `PainterI2V`
+- `VHS_MergeImages`
+- `PainterLongVideo`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `INTConstant`
+- `INTConstant`
+- `DF_Get_image_size`
+- `Fast Groups Muter (rgthree)`
+- `Int`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `Int`
+- `Int`
+- `Int`
+- `VHS_VideoCombine`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `VHS_MergeImages`
+- `VHS_MergeImages`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `VHS_VideoCombine`
+- `PainterLongVideo`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Int`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **98%**（59/60）
+
+**有卡**：`KSamplerAdvanced`、`UpscaleModelLoader`、`UpscaleImageByUsingModel`、`VHS_VideoCombine`、`easy cleanGpuUsed`、`GetImageRangeFromBatch`、`VAEDecode`、`easy mathInt`、`PainterLongVideo`、`UNETLoader`、`PainterI2V`、`VHS_MergeImages`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`VAELoader`、`INTConstant`、`DF_Get_image_size`、`Int`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

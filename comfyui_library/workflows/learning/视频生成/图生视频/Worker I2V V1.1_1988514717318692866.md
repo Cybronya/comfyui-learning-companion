@@ -1,0 +1,104 @@
+---
+key: 视频生成/图生视频/Worker I2V V1.1_1988514717318692866.json
+name: Worker I2V V1.1_1988514717318692866.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1988514717318692866.json
+hash: cbf80c8a8133fcf0
+coverage: 0.857143
+learned_at: 2026-10-15 22:33:03
+nodes: [LoadImage, VAELoader, ConditioningZeroOut, CLIPLoader, LoraLoaderModelOnly, KSampler, VAEDecode, VAEEncode, PreviewImage, CR Text, PreviewImage, TextEncodeQwenImageEditPlusAdvance_lrzjason, ImageResizeKJv2, PreviewAny, CR Text, RMBG, Note, Note, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, VAELoader, CLIPVisionLoader, CLIPLoader, CLIPTextEncode, Seed (rgthree), KSamplerAdvanced, WanImageToVideo, RH_LLMAPI_NODE, Reroute, KSamplerAdvanced, JWInteger, FlashVSRNode, VHS_VideoCombine, Reroute, CLIPVisionEncode, CLIPTextEncode, LoraLoaderModelOnly, LayerUtility: PurgeVRAM V2, VAEDecode, LoraLoaderModelOnly, UNETLoader, INTConstant, LayerUtility: PurgeVRAM V2, RIFE VFI]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Worker I2V V1.1_1988514717318692866.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1988514717318692866.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（49 个）：
+- `LoadImage`
+- `VAELoader`
+- `ConditioningZeroOut`
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `PreviewImage`
+- `CR Text`
+- `PreviewImage`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `ImageResizeKJv2`
+- `PreviewAny`
+- `CR Text`
+- `RMBG`
+- `Note`
+- `Note`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `KSamplerAdvanced` ★核心
+- `WanImageToVideo`
+- `RH_LLMAPI_NODE`
+- `Reroute`
+- `KSamplerAdvanced` ★核心
+- `JWInteger`
+- `FlashVSRNode`
+- `VHS_VideoCombine`
+- `Reroute`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `INTConstant`
+- `LayerUtility: PurgeVRAM V2`
+- `RIFE VFI`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **86%**（42/49）
+
+**有卡**：`LoadImage`、`VAELoader`、`ConditioningZeroOut`、`CLIPLoader`、`LoraLoaderModelOnly`、`KSampler`、`VAEDecode`、`VAEEncode`、`CR Text`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`ImageResizeKJv2`、`RMBG`、`UNETLoader`、`ModelSamplingSD3`、`CLIPVisionLoader`、`CLIPTextEncode`、`Seed (rgthree)`、`KSamplerAdvanced`、`WanImageToVideo`、`RH_LLMAPI_NODE`、`JWInteger`、`FlashVSRNode`、`VHS_VideoCombine`、`CLIPVisionEncode`、`LayerUtility: PurgeVRAM V2`、`INTConstant`、`RIFE VFI`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

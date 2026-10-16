@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json
+name: wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950571192820420609.json
+hash: 343fdc13e125022b
+coverage: 0.829787
+learned_at: 2026-10-15 22:30:55
+nodes: [RH_Translator, Note, Note, RH_Translator, PrimitiveBoolean, PrimitiveBoolean, Text Multiline, JWInteger, DF_Integer, ShowText|pysssss, RH_Captioner, easy ifElse, easy ifElse, ShowText|pysssss, ShowText|pysssss, Text Multiline, string_util_StrReplace, RH_LLMAPI_NODE, WanVideoBlockSwap, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTorchCompileSettings, CreateCFGScheduleFloatList, WanVideoTextEncode, LoadWanVideoT5TextEncoder, WanVideoSetLoRAs, WanVideoSetBlockSwap, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, WanVideoDecode, GetImageSizeAndCount, WanVideoVAELoader, WanVideoImageToVideoEncode, WanVideoLoraSelect, VHS_VideoCombine, INTConstant, MathExpression|pysssss, PrimitiveNode, easy int, WanVideoSampler, WanVideoSampler, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2 图生视频 - KJ加速优化版_1950571192820420609.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950571192820420609.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（47 个）：
+- `RH_Translator`
+- `Note`
+- `Note`
+- `RH_Translator`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `Text Multiline`
+- `JWInteger`
+- `DF_Integer`
+- `ShowText|pysssss`
+- `RH_Captioner`
+- `easy ifElse`
+- `easy ifElse`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `Text Multiline`
+- `string_util_StrReplace`
+- `RH_LLMAPI_NODE`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `CreateCFGScheduleFloatList`
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SimpleMath+`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `VHS_VideoCombine`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `PrimitiveNode`
+- `easy int`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `LoadImage`
+
+## 知识
+
+覆盖率 **83%**（39/47）
+
+**有卡**：`RH_Translator`、`PrimitiveBoolean`、`Text Multiline`、`JWInteger`、`DF_Integer`、`RH_Captioner`、`string_util_StrReplace`、`RH_LLMAPI_NODE`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoLoraSelect`、`WanVideoTorchCompileSettings`、`CreateCFGScheduleFloatList`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`VHS_VideoCombine`、`INTConstant`、`MathExpression|pysssss`、`easy int`、`WanVideoSampler`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

@@ -1,0 +1,64 @@
+---
+key: 视频生成/文生视频/🥪【Wan2.1视频】lightx2v 文生视频  超清加速版🥪_1935263970838106114.json
+name: 🥪【Wan2.1视频】lightx2v 文生视频  超清加速版🥪_1935263970838106114.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1935263970838106114.json
+hash: bd8491175bd7ba78
+coverage: 0.9375
+learned_at: 2026-10-15 22:43:28
+nodes: [GIMMVFI_interpolate, DownloadAndLoadGIMMVFIModel, WanVideoTextEncodeSingle, WanVideoEnhanceAVideo, WanVideoBlockSwap, SimpleMath+, VHS_VideoCombine, UpscaleModelLoader, ImageScaleToMegapixels, VHS_VideoCombine, Note, Fast Groups Bypasser (rgthree), Seed (rgthree), WanVideoVAELoader, WanVideoSampler, WanVideoLoraSelect, WanVideoApplyNAG, ImpactInt, WanVideoMagCache, ImpactInt, ImpactInt, CR Text, easy cleanGpuUsed, LoadWanVideoT5TextEncoder, easy cleanGpuUsed, WanVideoEmptyEmbeds, easy cleanGpuUsed, WanVideoTextEncodeSingle, WanVideoModelLoader, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoDecode]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/🥪【Wan2.1视频】lightx2v 文生视频  超清加速版🥪_1935263970838106114.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1935263970838106114.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（32 个）：
+- `GIMMVFI_interpolate`
+- `DownloadAndLoadGIMMVFIModel`
+- `WanVideoTextEncodeSingle`
+- `WanVideoEnhanceAVideo`
+- `WanVideoBlockSwap`
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `UpscaleModelLoader`
+- `ImageScaleToMegapixels`
+- `VHS_VideoCombine`
+- `Note`
+- `Fast Groups Bypasser (rgthree)`
+- `Seed (rgthree)`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoLoraSelect`
+- `WanVideoApplyNAG`
+- `ImpactInt`
+- `WanVideoMagCache`
+- `ImpactInt`
+- `ImpactInt`
+- `CR Text`
+- `easy cleanGpuUsed`
+- `LoadWanVideoT5TextEncoder`
+- `easy cleanGpuUsed`
+- `WanVideoEmptyEmbeds`
+- `easy cleanGpuUsed`
+- `WanVideoTextEncodeSingle`
+- `WanVideoModelLoader`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `WanVideoDecode`
+
+## 知识
+
+覆盖率 **94%**（30/32）
+
+**有卡**：`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`WanVideoTextEncodeSingle`、`WanVideoEnhanceAVideo`、`WanVideoBlockSwap`、`SimpleMath+`、`VHS_VideoCombine`、`UpscaleModelLoader`、`ImageScaleToMegapixels`、`Seed (rgthree)`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoApplyNAG`、`ImpactInt`、`WanVideoMagCache`、`CR Text`、`easy cleanGpuUsed`、`LoadWanVideoT5TextEncoder`、`WanVideoEmptyEmbeds`、`WanVideoModelLoader`、`WanVideoDecode`
+
+**用到的条目**：WanVideoSampler、Seed (rgthree)、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、WanVideoLoraSelect、UpscaleModelLoader

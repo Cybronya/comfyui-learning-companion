@@ -1,0 +1,76 @@
+---
+key: 视频生成/图生视频/Wan2.2 Vace图生视频加速版V1_1950024322967584770.json
+name: Wan2.2 Vace图生视频加速版V1_1950024322967584770.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950024322967584770.json
+hash: 0a5f037aa085450f
+coverage: 0.852941
+learned_at: 2026-10-15 22:30:51
+nodes: [UnetLoaderGGUF, PathchSageAttentionKJ, LoraLoaderModelOnly, ModelSamplingSD3, UnetLoaderGGUF, PrimitiveNode, VAELoader, CLIPLoader, CLIPTextEncode, Note, Note, Note, Note, ImageConcanate, ModelSamplingSD3, PathchSageAttentionKJ, LoraLoaderModelOnly, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, TrimVideoLatent, VAEDecode, VHS_VideoCombine, LayerUtility: PurgeVRAM, KSamplerAdvanced, LayerUtility: PurgeVRAM, VHS_VideoCombine, CLIPTextEncode, CR Prompt Text, JWInteger, WanVaceToVideo, ImageFromBatch+, SDVN Image Repeat, KSamplerAdvanced]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2 Vace图生视频加速版V1_1950024322967584770.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950024322967584770.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（34 个）：
+- `UnetLoaderGGUF` ★核心
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `UnetLoaderGGUF` ★核心
+- `PrimitiveNode`
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `ImageConcanate`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `TrimVideoLatent`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `CR Prompt Text`
+- `JWInteger`
+- `WanVaceToVideo`
+- `ImageFromBatch+`
+- `SDVN Image Repeat`
+- `KSamplerAdvanced` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **85%**（29/34）
+
+**有卡**：`UnetLoaderGGUF`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`ImageConcanate`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`TrimVideoLatent`、`VAEDecode`、`VHS_VideoCombine`、`LayerUtility: PurgeVRAM`、`KSamplerAdvanced`、`CR Prompt Text`、`WanVaceToVideo`、`ImageFromBatch+`、`SDVN Image Repeat`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、TrimVideoLatent

@@ -1,0 +1,153 @@
+---
+key: 视频生成/图生视频/Wan2.2-Animate长视频分段队列，丝滑换装换人_2061297116642893825.json
+name: Wan2.2-Animate长视频分段队列，丝滑换装换人_2061297116642893825.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2061297116642893825.json
+hash: dd46c97cf6b56a39
+coverage: 0.568966
+learned_at: 2026-10-15 22:38:52
+nodes: [WanVideoSetLoRAs, SetNode, SetNode, WanVideoSetBlockSwap, GetNode, Note, WanVideoVAELoader, WanVideoModelLoader, CLIPVisionLoader, WanVideoClipVisionEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, INTConstant, INTConstant, INTConstant, INTConstant, INTConstant, INTConstant, INTConstant, INTConstant, easy anythingIndexSwitch, SetNode, GetNode, MemoryCleaner, SetNode, GetNode, GetNode, easy anythingIndexSwitch, SetNode, WanVideoLoraSelectMulti, WanVideoAnimateEmbeds, WanVideoTextEncodeCached, GetNode, SetNode, GetNode, GetNode, GetNode, WanVideoTorchCompileSettings, VHS_VideoCombine, SDPoseKeypointExtractor, BodyRatioMapperSDPoseRender, GetNode, CheckpointLoaderSimple, GetNode, GetNode, YOLOModelLoader, YOLOModelLoader, BBoxYOLO, BBoxYOLO, BodyRatioMapperSDPoseRender, SDPoseKeypointExtractor, ImpactSwitch, INTConstant, Int, Note, MuyeTextEditOutput, SetNode, GetNode, BodyRatioMapperSDPoseRender, GetNode, SetNode, MuyeTextEditOutput, ZML_AnyTypeSwitchFive, PreviewImage, Int, BodyRatioMapperSDPoseRender, VHS_VideoCombine, VHS_VideoCombine, BodyRatioMapperProportionTransfer, PreviewImage, ImageResizeKJv2, SetNode, PoseAndFaceDetection, OnnxDetectionModelLoader, GetNode, GetNode, WanVideoBlockSwap, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, ImageResizeKJv2, SetNode, VHS_VideoInfoLoaded, Int, WanVideoTeaCache, SetNode, WanVideoContextOptions, MuyeTextEditOutput, WanVideoLoraSelectMulti, VHS_LoadVideo, GetNode, MuyeTextEditOutput, Int, Note, DrawViTPose, Int, WanVideoSampler, Primitive integer [Crystools], INTConstant, GetNode, WanVideoDecode, VHS_VideoCombine, GetNode, GetNode, LoadImage, SegmentQueueRunner, Int, SetNode, GetNode]
+patterns: []
+missing: []
+parameters: {"checkpoint": "sdpose_wholebody_fp16.safetensors"}
+---
+
+# 视频生成/图生视频/Wan2.2-Animate长视频分段队列，丝滑换装换人_2061297116642893825.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2061297116642893825.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（116 个）：
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `GetNode`
+- `Note`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `CLIPVisionLoader`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `easy anythingIndexSwitch`
+- `SetNode`
+- `GetNode`
+- `MemoryCleaner`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy anythingIndexSwitch`
+- `SetNode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoAnimateEmbeds`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `VHS_VideoCombine`
+- `SDPoseKeypointExtractor`
+- `BodyRatioMapperSDPoseRender`
+- `GetNode`
+- `CheckpointLoaderSimple` ★核心
+- `GetNode`
+- `GetNode`
+- `YOLOModelLoader`
+- `YOLOModelLoader`
+- `BBoxYOLO`
+- `BBoxYOLO`
+- `BodyRatioMapperSDPoseRender`
+- `SDPoseKeypointExtractor`
+- `ImpactSwitch`
+- `INTConstant`
+- `Int`
+- `Note`
+- `MuyeTextEditOutput`
+- `SetNode`
+- `GetNode`
+- `BodyRatioMapperSDPoseRender`
+- `GetNode`
+- `SetNode`
+- `MuyeTextEditOutput`
+- `ZML_AnyTypeSwitchFive`
+- `PreviewImage`
+- `Int`
+- `BodyRatioMapperSDPoseRender`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `BodyRatioMapperProportionTransfer`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `SetNode`
+- `PoseAndFaceDetection`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `GetNode`
+- `WanVideoBlockSwap`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `VHS_VideoInfoLoaded`
+- `Int`
+- `WanVideoTeaCache`
+- `SetNode`
+- `WanVideoContextOptions`
+- `MuyeTextEditOutput`
+- `WanVideoLoraSelectMulti`
+- `VHS_LoadVideo`
+- `GetNode`
+- `MuyeTextEditOutput`
+- `Int`
+- `Note`
+- `DrawViTPose`
+- `Int`
+- `WanVideoSampler` ★核心
+- `Primitive integer [Crystools]`
+- `INTConstant`
+- `GetNode`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `SegmentQueueRunner`
+- `Int`
+- `SetNode`
+- `GetNode`
+
+## 关键参数
+
+- `checkpoint` = `sdpose_wholebody_fp16.safetensors`
+
+## 知识
+
+覆盖率 **57%**（66/116）
+
+**有卡**：`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoVAELoader`、`WanVideoModelLoader`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`INTConstant`、`easy anythingIndexSwitch`、`MemoryCleaner`、`WanVideoLoraSelectMulti`、`WanVideoAnimateEmbeds`、`WanVideoTextEncodeCached`、`WanVideoTorchCompileSettings`、`VHS_VideoCombine`、`SDPoseKeypointExtractor`、`BodyRatioMapperSDPoseRender`、`CheckpointLoaderSimple`、`YOLOModelLoader`、`BBoxYOLO`、`Int`、`MuyeTextEditOutput`、`ZML_AnyTypeSwitchFive`、`BodyRatioMapperProportionTransfer`、`ImageResizeKJv2`、`PoseAndFaceDetection`、`OnnxDetectionModelLoader`、`WanVideoBlockSwap`、`VHS_VideoInfoLoaded`、`WanVideoTeaCache`、`WanVideoContextOptions`、`VHS_LoadVideo`、`DrawViTPose`、`WanVideoSampler`、`Primitive integer [Crystools]`、`WanVideoDecode`、`LoadImage`、`SegmentQueueRunner`
+
+**用到的条目**：CheckpointLoaderSimple、LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs

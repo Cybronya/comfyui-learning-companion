@@ -1,0 +1,196 @@
+---
+key: 视频生成/图生视频/邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json
+name: 邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2049005393069740034.json
+hash: 3f809b0e21c3e1ce
+coverage: 0.662252
+learned_at: 2026-10-15 22:37:12
+nodes: [easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, PrimitiveStringMultiline, RegexExtract, CFGGuider, ManualSigmas, LTXVConcatAVLatent, easy promptReplace, RegexExtract, easy promptReplace, easy promptReplace, GetNode, ResizeImagesByLongerEdge, easy promptLine, easy promptLine, SetNode, easy convertAnything, SetNode, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAEDecode, GetNode, GetNode, easy indexAnything, LTXVConditioning, easy promptList, GetNode, GetNode, ModelPatchTorchSettings, easy indexAnything, ImageResizeKJv2, LTXVPreprocess, ImageBatchMulti, EmptyImage, SetNode, SetNode, ResizeImageMaskNode, SetNode, GetNode, SetNode, CLIPTextEncode, GetNode, GetNode, GetNode, GetNode, ModelSamplingSD3, GetNode, ModelSamplingSD3, GetNode, GetNode, PathchSageAttentionKJ, PathchSageAttentionKJ, GetImagesFromBatchIndexed, GetNode, ShowText|pysssss, INTConstant, INTConstant, GetNode, SetNode, SetNode, SetNode, SetNode, ModelPatchTorchSettings, CLIPTextEncode, GetNode, GetNode, WanVideoNAG, GetNode, ComfyMathExpression, ComfyMathExpression, GetNode, CLIPTextEncode, SetNode, SetNode, SetNode, SetNode, CLIPTextEncode, GetNode, VAEEncode, KSamplerAdvanced, easy imageRemBg, KSamplerAdvanced, VAEDecodeTiled, KSamplerSelect, ImageInvert, RandomNoise, easy positive, easy promptConcat, easy positive, ComfyMathExpression, WanImageToVideo, LTXVEmptyLatentAudio, PrimitiveInt, LTXVLatentUpsampler, GetNode, GetNode, ComfyMathExpression, GetNode, LTXVEnhanceAVideoKJ, LTXAddVideoICLoRAGuide, easy indexAnything, ImageResizeKJv2, easy indexAnything, easy indexAnything, ImageResizeKJv2, ImageAddMulti, easy imageRemBg, easy imageRemBg, VHS_VideoCombine, PreviewImage, VAEDecode, RIFE VFI, VHS_VideoCombine, easy positive, SetNode, SetNode, ShowText|pysssss, easy positive, LongTextToList, GetNode, SetNode, SetNode, VAELoaderKJ, DualCLIPLoader, VAELoaderKJ, LatentUpscaleModelLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, SetNode, UNETLoader, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader, CLIPLoader, VAELoader, PrimitiveInt, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "cfg": 4, "denoise": "simple", "height": 25, "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed", "width": 97}
+---
+
+# 视频生成/图生视频/邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2049005393069740034.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（151 个）：
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `PrimitiveStringMultiline`
+- `RegexExtract`
+- `CFGGuider`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `easy promptReplace`
+- `RegexExtract`
+- `easy promptReplace`
+- `easy promptReplace`
+- `GetNode`
+- `ResizeImagesByLongerEdge`
+- `easy promptLine`
+- `easy promptLine`
+- `SetNode`
+- `easy convertAnything`
+- `SetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `easy indexAnything`
+- `LTXVConditioning`
+- `easy promptList`
+- `GetNode`
+- `GetNode`
+- `ModelPatchTorchSettings`
+- `easy indexAnything`
+- `ImageResizeKJv2`
+- `LTXVPreprocess`
+- `ImageBatchMulti`
+- `EmptyImage`
+- `SetNode`
+- `SetNode`
+- `ResizeImageMaskNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `GetNode`
+- `ModelSamplingSD3`
+- `GetNode`
+- `GetNode`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `GetImagesFromBatchIndexed`
+- `GetNode`
+- `ShowText|pysssss`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ModelPatchTorchSettings`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `WanVideoNAG`
+- `GetNode`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VAEEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `easy imageRemBg`
+- `KSamplerAdvanced` ★核心
+- `VAEDecodeTiled` ★核心
+- `KSamplerSelect` ★核心
+- `ImageInvert`
+- `RandomNoise`
+- `easy positive`
+- `easy promptConcat`
+- `easy positive`
+- `ComfyMathExpression`
+- `WanImageToVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `PrimitiveInt`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `LTXVEnhanceAVideoKJ`
+- `LTXAddVideoICLoRAGuide`
+- `easy indexAnything`
+- `ImageResizeKJv2`
+- `easy indexAnything`
+- `easy indexAnything`
+- `ImageResizeKJv2`
+- `ImageAddMulti`
+- `easy imageRemBg`
+- `easy imageRemBg`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `easy positive`
+- `SetNode`
+- `SetNode`
+- `ShowText|pysssss`
+- `easy positive`
+- `LongTextToList`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `LatentUpscaleModelLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `SetNode`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `LTXVChunkFeedForward`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `PrimitiveInt`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **66%**（100/151）
+
+**有卡**：`easy indexAnything`、`RegexExtract`、`CFGGuider`、`ManualSigmas`、`LTXVConcatAVLatent`、`easy promptReplace`、`ResizeImagesByLongerEdge`、`easy promptLine`、`easy convertAnything`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`easy promptList`、`ModelPatchTorchSettings`、`ImageResizeKJv2`、`LTXVPreprocess`、`ImageBatchMulti`、`EmptyImage`、`ResizeImageMaskNode`、`CLIPTextEncode`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`GetImagesFromBatchIndexed`、`INTConstant`、`WanVideoNAG`、`ComfyMathExpression`、`VAEEncode`、`KSamplerAdvanced`、`easy imageRemBg`、`VAEDecodeTiled`、`KSamplerSelect`、`ImageInvert`、`RandomNoise`、`easy positive`、`easy promptConcat`、`WanImageToVideo`、`LTXVEmptyLatentAudio`、`LTXVLatentUpsampler`、`LTXVEnhanceAVideoKJ`、`LTXAddVideoICLoRAGuide`、`ImageAddMulti`、`VHS_VideoCombine`、`VAEDecode`、`RIFE VFI`、`LongTextToList`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`UNETLoader`、`LTXVChunkFeedForward`、`CLIPLoader`、`VAELoader`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGGuider

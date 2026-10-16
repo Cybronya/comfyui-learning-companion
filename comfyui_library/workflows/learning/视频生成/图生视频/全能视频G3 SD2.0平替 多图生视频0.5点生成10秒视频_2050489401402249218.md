@@ -1,0 +1,46 @@
+---
+key: 视频生成/图生视频/全能视频G3 SD2.0平替 多图生视频0.5点生成10秒视频_2050489401402249218.json
+name: 全能视频G3 SD2.0平替 多图生视频0.5点生成10秒视频_2050489401402249218.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2050489401402249218.json
+hash: 309575d3e82f1e7e
+coverage: 0.642857
+learned_at: 2026-10-15 22:37:18
+nodes: [easy showAnything, easy showAnything, easy showAnything, Comfly_api_set, Note, SaveVideo, LoadImage, LoadImage, LoadImage, CR Text, ComflyGrok3VideoApi, VHS_LoadVideo, CR Text, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/全能视频G3 SD2.0平替 多图生视频0.5点生成10秒视频_2050489401402249218.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2050489401402249218.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（14 个）：
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `Comfly_api_set`
+- `Note`
+- `SaveVideo`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+- `ComflyGrok3VideoApi`
+- `VHS_LoadVideo`
+- `CR Text`
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **64%**（9/14）
+
+**有卡**：`Comfly_api_set`、`SaveVideo`、`LoadImage`、`CR Text`、`ComflyGrok3VideoApi`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、SaveVideo、VHS_LoadVideo、Comfly_api_set、ComflyGrok3VideoApi、CR Text、sd15-t2i-basic、sd15-t2i-lora

@@ -1,0 +1,111 @@
+---
+key: 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json
+name: video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2005949254709506050.json
+hash: 6bc37e71b296dc0f
+coverage: 0.550725
+learned_at: 2026-10-15 22:33:59
+nodes: [PathchSageAttentionKJ, CFGZeroStar, SetNode, CLIPLoader, ModelSamplingSD3, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, WanVideoNAG, CLIPTextEncode, VAELoader, SetNode, SetNode, ModelSamplingSD3, GetNode, CLIPVisionLoader, KSamplerAdvanced, SetNode, UNETLoader, UNETLoader, LoraLoaderModelOnly, SetNode, LoraLoaderModelOnly, GetNode, GetNode, GetNode, VAEEncode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoNAG, KSamplerAdvanced, VAEDecode, ModelSamplingSD3, KSamplerAdvanced, VHS_VideoCombine, VAEDecode, GetNode, INTConstant, INTConstant, KSamplerAdvanced, VHS_VideoCombine, ModelSamplingSD3, GetNode, VAEEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, GetImageRangeFromBatch, ImageResizeKJv2, CLIPTextEncode, SetNode, SetNode, SetNode, CLIPTextEncode, WanImageToVideoSVIPro, ImageBatchExtendWithOverlap]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2005949254709506050.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（69 个）：
+- `PathchSageAttentionKJ`
+- `CFGZeroStar`
+- `SetNode`
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoNAG`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `SetNode`
+- `SetNode`
+- `ModelSamplingSD3`
+- `GetNode`
+- `CLIPVisionLoader`
+- `KSamplerAdvanced` ★核心
+- `SetNode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoNAG`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `GetNode`
+- `VAEEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `GetImageRangeFromBatch`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `WanImageToVideoSVIPro`
+- `ImageBatchExtendWithOverlap`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **55%**（38/69）
+
+**有卡**：`PathchSageAttentionKJ`、`CFGZeroStar`、`CLIPLoader`、`ModelSamplingSD3`、`WanVideoNAG`、`CLIPTextEncode`、`VAELoader`、`CLIPVisionLoader`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`VAEEncode`、`WanImageToVideoSVIPro`、`VAEDecode`、`VHS_VideoCombine`、`INTConstant`、`LoadImage`、`GetImageRangeFromBatch`、`ImageResizeKJv2`、`ImageBatchExtendWithOverlap`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

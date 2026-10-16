@@ -1,0 +1,78 @@
+---
+key: 视频生成/图生视频/Wan2.2-Smooth Mix+Qwen3VL首尾帧稳定图生视频_1985980018524336129.json
+name: Wan2.2-Smooth Mix+Qwen3VL首尾帧稳定图生视频_1985980018524336129.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1985980018524336129.json
+hash: e51d916c3edbc61f
+coverage: 0.972222
+learned_at: 2026-10-15 22:32:53
+nodes: [wanBlockSwap, wanBlockSwap, PathchSageAttentionKJ, PathchSageAttentionKJ, ImpactInt, ImageResizeKJv2, UNETLoader, ImageResizeKJv2, SimpleMath+, CLIPTextEncode, WanFirstLastFrameToVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelPatchTorchSettings, ModelPatchTorchSettings, UNETLoader, CLIPVisionEncode, CLIPVisionEncode, easy cleanGpuUsed, VAEDecode, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, VHS_VideoCombine, ImpactInt, ImpactInt, easy positive, ImageLoader, ImageLoader, KSamplerAdvanced, KSamplerAdvanced, CLIPLoader, VAELoader, CLIPVisionLoader, RHHiddenNodes, easy showAnything]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2-Smooth Mix+Qwen3VL首尾帧稳定图生视频_1985980018524336129.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1985980018524336129.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（36 个）：
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ImpactInt`
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `ImageResizeKJv2`
+- `SimpleMath+`
+- `CLIPTextEncode` ★核心
+- `WanFirstLastFrameToVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `UNETLoader` ★核心
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `ImpactInt`
+- `ImpactInt`
+- `easy positive`
+- `ImageLoader`
+- `ImageLoader`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `RHHiddenNodes`
+- `easy showAnything`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **97%**（35/36）
+
+**有卡**：`wanBlockSwap`、`PathchSageAttentionKJ`、`ImpactInt`、`ImageResizeKJv2`、`UNETLoader`、`SimpleMath+`、`CLIPTextEncode`、`WanFirstLastFrameToVideo`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`CLIPVisionEncode`、`easy cleanGpuUsed`、`VAEDecode`、`ModelSamplingSD3`、`VHS_VideoCombine`、`easy positive`、`ImageLoader`、`KSamplerAdvanced`、`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`RHHiddenNodes`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、CLIPVisionEncode

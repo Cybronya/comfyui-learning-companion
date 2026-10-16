@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/Wan2.2 Remix V3_2036102577590374402.json
+name: Wan2.2 Remix V3_2036102577590374402.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2036102577590374402.json
+hash: b5033faa9338b9a4
+coverage: 0.971429
+learned_at: 2026-10-15 22:35:51
+nodes: [UNETLoader, VAELoader, CLIPLoader, MathExpression|pysssss, LayerUtility: ImageScaleByAspectRatio V2, CLIPVisionLoader, CLIPVisionEncode, UNETLoader, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, Float, ImageResizeKJv2, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, LayerUtility: PurgeVRAM, FL_RIFE, RTXVideoSuperResolution, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, PathchSageAttentionKJ, VHS_VideoCombine, JWInteger, JWInteger, LoraLoaderModelOnly, CR Text, llama_cpp_parameters, llama_cpp_instruct_adv, easy showAnything, llama_cpp_model_loader, CR Prompt Text, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2 Remix V3_2036102577590374402.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2036102577590374402.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（35 个）：
+- `UNETLoader` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `MathExpression|pysssss`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `UNETLoader` ★核心
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Float`
+- `ImageResizeKJv2`
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `FL_RIFE`
+- `RTXVideoSuperResolution`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `VHS_VideoCombine`
+- `JWInteger`
+- `JWInteger`
+- `LoraLoaderModelOnly` ★核心
+- `CR Text`
+- `llama_cpp_parameters`
+- `llama_cpp_instruct_adv`
+- `easy showAnything`
+- `llama_cpp_model_loader`
+- `CR Prompt Text`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **97%**（34/35）
+
+**有卡**：`UNETLoader`、`VAELoader`、`CLIPLoader`、`MathExpression|pysssss`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPVisionLoader`、`CLIPVisionEncode`、`easy cleanGpuUsed`、`CLIPTextEncode`、`Float`、`ImageResizeKJv2`、`PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`、`KSamplerAdvanced`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`FL_RIFE`、`RTXVideoSuperResolution`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`VHS_VideoCombine`、`JWInteger`、`LoraLoaderModelOnly`、`CR Text`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`CR Prompt Text`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

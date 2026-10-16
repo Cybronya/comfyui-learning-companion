@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/wan2.2 rapid-aio-mega all in one图生视频+首尾帧【gen全能视频Si】_1968298916649283585.json
+name: wan2.2 rapid-aio-mega all in one图生视频+首尾帧【gen全能视频Si】_1968298916649283585.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1968298916649283585.json
+hash: fed6284b38af15fc
+coverage: 0.941176
+learned_at: 2026-10-15 22:31:44
+nodes: [KSampler, ModelSamplingSD3, Note, VAEDecode, WanVaceToVideo, WanVideoVACEStartToEndFrame, CLIPTextEncode, ImageScaleByAspectRatio_UTK, LoadImage, INTConstant, CLIPTextEncode, LoadImage, CheckpointLoaderSimple, ImageScaleByAspectRatio_UTK, CreateVideo, PreViewVideo, VHS_VideoCombine]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-v1.safetensors", "denoise": 1, "sampler_name": "ipndm", "scheduler": "sgm_uniform", "seed": 7567358653673, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/wan2.2 rapid-aio-mega all in one图生视频+首尾帧【gen全能视频Si】_1968298916649283585.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1968298916649283585.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（17 个）：
+- `KSampler` ★核心
+- `ModelSamplingSD3`
+- `Note`
+- `VAEDecode` ★核心
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
+- `CLIPTextEncode` ★核心
+- `ImageScaleByAspectRatio_UTK`
+- `LoadImage`
+- `INTConstant`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `CheckpointLoaderSimple` ★核心
+- `ImageScaleByAspectRatio_UTK`
+- `CreateVideo`
+- `PreViewVideo`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `7567358653673`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `ipndm`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-rapid-mega-aio-v1.safetensors`
+
+## 知识
+
+覆盖率 **94%**（16/17）
+
+**有卡**：`KSampler`、`ModelSamplingSD3`、`VAEDecode`、`WanVaceToVideo`、`WanVideoVACEStartToEndFrame`、`CLIPTextEncode`、`ImageScaleByAspectRatio_UTK`、`LoadImage`、`INTConstant`、`CheckpointLoaderSimple`、`CreateVideo`、`PreViewVideo`、`VHS_VideoCombine`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、PreViewVideo、CreateVideo、INTConstant
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

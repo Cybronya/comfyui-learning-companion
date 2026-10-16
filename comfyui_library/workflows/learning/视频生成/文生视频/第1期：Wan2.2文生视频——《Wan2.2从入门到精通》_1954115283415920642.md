@@ -1,0 +1,59 @@
+---
+key: 视频生成/文生视频/第1期：Wan2.2文生视频——《Wan2.2从入门到精通》_1954115283415920642.json
+name: 第1期：Wan2.2文生视频——《Wan2.2从入门到精通》_1954115283415920642.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1954115283415920642.json
+hash: e1dc1ab8461f27c5
+coverage: 0.882353
+learned_at: 2026-10-15 22:43:39
+nodes: [CLIPTextEncode, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, SaveVideo, CreateVideo, UNETLoader, UNETLoader, Note, EmptyHunyuanLatentVideo, MarkdownNote, CLIPLoader, VAELoader, ModelSamplingSD3, CLIPTextEncode, Label (rgthree)]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/文生视频/第1期：Wan2.2文生视频——《Wan2.2从入门到精通》_1954115283415920642.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1954115283415920642.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（17 个）：
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `SaveVideo`
+- `CreateVideo`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Note`
+- `EmptyHunyuanLatentVideo`
+- `MarkdownNote`
+- `CLIPLoader`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `Label (rgthree)`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **88%**（15/17）
+
+**有卡**：`CLIPTextEncode`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`SaveVideo`、`CreateVideo`、`UNETLoader`、`EmptyHunyuanLatentVideo`、`CLIPLoader`、`VAELoader`、`Label (rgthree)`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo、SaveVideo

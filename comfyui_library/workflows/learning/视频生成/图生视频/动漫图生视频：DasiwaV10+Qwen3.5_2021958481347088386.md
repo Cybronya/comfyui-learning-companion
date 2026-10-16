@@ -1,0 +1,110 @@
+---
+key: 视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2021958481347088386.json
+name: 动漫图生视频：DasiwaV10+Qwen3.5_2021958481347088386.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2021958481347088386.json
+hash: f3e95b8dea8bc264
+coverage: 0.397059
+learned_at: 2026-10-15 22:35:10
+nodes: [Float, SetNode, SetNode, SetNode, Int, GetNode, GetNode, GetNode, GetNode, easy showAnything, VHS_VideoCombine, CLIPTextEncode, GetNode, CLIPVisionEncode, CLIPTextEncode, GetNode, GetNode, GetNode, GetNode, GetNode, MathExpression_UTK, Note, Note, LayerUtility: ImageScaleByAspectRatio V2, Note, SetNode, SetNode, GetNode, Note, Note, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, CLIPVisionLoader, VAELoader, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, GetNode, VAEDecode, SetNode, easy clearCacheAll, CLIPLoader, KSamplerAdvanced, Text, Int, Note, PainterI2V, GetNode, GetNode, llama_cpp_parameters, llama_cpp_model_loader, GetNode, llama_cpp_instruct_adv, SetNode, SetNode, UNETLoader, UNETLoader, SetNode, GetNode, GetNode, Note, Text, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/动漫图生视频：DasiwaV10+Qwen3.5_2021958481347088386.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2021958481347088386.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（68 个）：
+- `Float`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `MathExpression_UTK`
+- `Note`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Note`
+- `Note`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `easy clearCacheAll`
+- `CLIPLoader`
+- `KSamplerAdvanced` ★核心
+- `Text`
+- `Int`
+- `Note`
+- `PainterI2V`
+- `GetNode`
+- `GetNode`
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+- `GetNode`
+- `llama_cpp_instruct_adv`
+- `SetNode`
+- `SetNode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `Text`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **40%**（27/68）
+
+**有卡**：`Float`、`Int`、`VHS_VideoCombine`、`CLIPTextEncode`、`CLIPVisionEncode`、`MathExpression_UTK`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPVisionLoader`、`VAELoader`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`easy clearCacheAll`、`CLIPLoader`、`Text`、`PainterI2V`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`UNETLoader`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode

@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/wan2.2 Image 2 Video _ Kijia_1956657065885143042.json
+name: wan2.2 Image 2 Video _ Kijia_1956657065885143042.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956657065885143042.json
+hash: 731254274ce20ddf
+coverage: 0.790698
+learned_at: 2026-10-15 22:31:14
+nodes: [WanVideoSetBlockSwap, PrimitiveBoolean, PrimitiveBoolean, CR Text Replace, RH_LLMAPI_NODE, Text Multiline, easy showAnything, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoSetLoRAs, CreateCFGScheduleFloatList, WanVideoBlockSwap, WanVideoTextEncode, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, SimpleMath+, WanVideoVAELoader, WanVideoImageToVideoEncode, MathExpression|pysssss, INTConstant, WanVideoBlockSwap, WanVideoSampler, WanVideoSetLoRAs, PrimitiveNode, WanVideoSampler, WanVideoLoraSelect, WanVideoSetBlockSwap, easy int, easy int, easy int, VHS_VideoCombine, WanVideoDecode, easy ifElse, RHHiddenNodes, easy ifElse, LoadImage, easy showAnything, Textbox, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2 Image 2 Video _ Kijia_1956657065885143042.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956657065885143042.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（43 个）：
+- `WanVideoSetBlockSwap`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `CR Text Replace`
+- `RH_LLMAPI_NODE`
+- `Text Multiline`
+- `easy showAnything`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoSetLoRAs`
+- `CreateCFGScheduleFloatList`
+- `WanVideoBlockSwap`
+- `WanVideoTextEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `SimpleMath+`
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `WanVideoBlockSwap`
+- `WanVideoSampler` ★核心
+- `WanVideoSetLoRAs`
+- `PrimitiveNode`
+- `WanVideoSampler` ★核心
+- `WanVideoLoraSelect`
+- `WanVideoSetBlockSwap`
+- `easy int`
+- `easy int`
+- `easy int`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `easy ifElse`
+- `RHHiddenNodes`
+- `easy ifElse`
+- `LoadImage`
+- `easy showAnything`
+- `Textbox`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **79%**（34/43）
+
+**有卡**：`WanVideoSetBlockSwap`、`PrimitiveBoolean`、`CR Text Replace`、`RH_LLMAPI_NODE`、`Text Multiline`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`WanVideoTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadWanVideoT5TextEncoder`、`SimpleMath+`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`MathExpression|pysssss`、`INTConstant`、`WanVideoSampler`、`easy int`、`VHS_VideoCombine`、`WanVideoDecode`、`RHHiddenNodes`、`LoadImage`、`Textbox`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

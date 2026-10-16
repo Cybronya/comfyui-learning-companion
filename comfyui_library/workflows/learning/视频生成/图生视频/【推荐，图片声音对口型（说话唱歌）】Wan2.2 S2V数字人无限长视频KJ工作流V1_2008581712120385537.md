@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人无限长视频KJ工作流V1_2008581712120385537.json
+name: 【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人无限长视频KJ工作流V1_2008581712120385537.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2008581712120385537.json
+hash: 612c127abeb6f36c
+coverage: 0.732143
+learned_at: 2026-10-15 22:34:08
+nodes: [Note, WanVideoSetBlockSwap, Note, Note, MarkdownNote, WanVideoSetLoRAs, InsertLatentToIndexed, MelBandRoFormerSampler, VHS_VideoCombine, GIMMVFI_interpolate, DownloadAndLoadGIMMVFIModel, WanVideoAddAudioEmbeds, PreviewAny, WanVideoEmptyEmbeds, NormalizeAudioLoudness, WanVideoVAELoader, SaveAudio, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoContextOptions, VHS_VideoCombine, WanVideoEncode, PreviewImage, WanVideoDecode, WanVideoSampler, WanVideoBlockSwap, VHS_SplitImages, AudioEncoderEncode, GetImageSizeAndCount, Note, Note, CR Prompt Text, CR Prompt Text, CR Prompt Text, ColorMatch, GetImageSizeAndCount, AudioEncoderLoader, WanVideoTextEncodeCached, JWInteger, AudioCrop, Note, easy showAnything, easy showAnything, Note, Int, Note, Int, SimpleMath+, easy showAnything, MelBandRoFormerModelLoader, Note, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, LoadImage, LoadAudio, JWInteger]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人无限长视频KJ工作流V1_2008581712120385537.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2008581712120385537.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（56 个）：
+- `Note`
+- `WanVideoSetBlockSwap`
+- `Note`
+- `Note`
+- `MarkdownNote`
+- `WanVideoSetLoRAs`
+- `InsertLatentToIndexed`
+- `MelBandRoFormerSampler` ★核心
+- `VHS_VideoCombine`
+- `GIMMVFI_interpolate`
+- `DownloadAndLoadGIMMVFIModel`
+- `WanVideoAddAudioEmbeds`
+- `PreviewAny`
+- `WanVideoEmptyEmbeds`
+- `NormalizeAudioLoudness`
+- `WanVideoVAELoader`
+- `SaveAudio`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `WanVideoContextOptions`
+- `VHS_VideoCombine`
+- `WanVideoEncode`
+- `PreviewImage`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoBlockSwap`
+- `VHS_SplitImages`
+- `AudioEncoderEncode`
+- `GetImageSizeAndCount`
+- `Note`
+- `Note`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `ColorMatch`
+- `GetImageSizeAndCount`
+- `AudioEncoderLoader`
+- `WanVideoTextEncodeCached`
+- `JWInteger`
+- `AudioCrop`
+- `Note`
+- `easy showAnything`
+- `easy showAnything`
+- `Note`
+- `Int`
+- `Note`
+- `Int`
+- `SimpleMath+`
+- `easy showAnything`
+- `MelBandRoFormerModelLoader`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadAudio`
+- `JWInteger`
+
+## 知识
+
+覆盖率 **73%**（41/56）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`InsertLatentToIndexed`、`MelBandRoFormerSampler`、`VHS_VideoCombine`、`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`WanVideoAddAudioEmbeds`、`WanVideoEmptyEmbeds`、`NormalizeAudioLoudness`、`WanVideoVAELoader`、`SaveAudio`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoContextOptions`、`WanVideoEncode`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoBlockSwap`、`VHS_SplitImages`、`AudioEncoderEncode`、`GetImageSizeAndCount`、`CR Prompt Text`、`ColorMatch`、`AudioEncoderLoader`、`WanVideoTextEncodeCached`、`JWInteger`、`AudioCrop`、`Int`、`SimpleMath+`、`MelBandRoFormerModelLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`LoadAudio`
+
+**用到的条目**：LoadImage、WanVideoSampler、MelBandRoFormerSampler、AudioEncoderLoader、WanVideoDecode、WanVideoVAELoader、AudioEncoderEncode、WanVideoTextEncodeCached

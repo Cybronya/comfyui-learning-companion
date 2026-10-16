@@ -1,0 +1,184 @@
+---
+key: 视频生成/图生视频/ltx-2.3-数字人-多图参考版_2038885933809930241.json
+name: ltx-2.3-数字人-多图参考版_2038885933809930241.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2038885933809930241.json
+hash: 1906396d2917d6c9
+coverage: 0.829932
+learned_at: 2026-10-15 22:36:05
+nodes: [CLIPTextEncode, easy convertAnything, CR Text, easy showAnything, CR Text, easy showAnything, easy showAnything, easy showAnything, CR Text, easy showAnything, easy float, easy float, easy float, PrimitiveInt, easy float, easy float, easy float, easy float, PrimitiveInt, Bjornulf_IfElse, Bjornulf_IfElse, Bjornulf_IfElse, CR Text Concatenate, CR Text Concatenate, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, MathExpression|pysssss, LazySwitch1way, PrimitiveInt, PrimitiveInt, LazySwitch1way, LazySwitch2way, LazySwitch2way, CR Text Concatenate, CR Text, CR Text Concatenate, CR Text, CR Text Concatenate, CR Text Concatenate, CR Text, CR Text Concatenate, CR Text Concatenate, CR Text, CR Text, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, CR Text Concatenate, MathExpression|pysssss, ImpactSwitch, LazySwitch1way, LazySwitch1way, PrimitiveInt, LoadImage, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, JWInteger, easy float, CR Text, RandomNoise, SolidMask, LTXVAudioVAEEncode, ImageResizeKJv2, ImageResizeKJv2, SetLatentNoiseMask, LTXVConcatAVLatent, Bjornulf_IfElse, VHS_VideoCombine, LazySwitch2way, easy boolean, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, LazySwitch2way, PreviewAny, CLIPTextEncode, CR Text, easy float, NormalizeAudioLoudness, easy float, easy boolean, easy boolean, easy boolean, easy boolean, LoadImage, LoadImage, LoadImage, LoadImage, ImageResizeKJv2, PrimitiveInt, CFGGuider, PrimitiveInt, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, LTXVAudioVAELoader, VAELoaderKJ, DualCLIPLoader, PathchSageAttentionKJ, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoader, LTX2SamplingPreviewOverride, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, LoadAudio, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LazySwitch1way, LTXVConditioning, easy convertAnything, LTXVAddGuideMulti, AudioCropProcessUTK, TrimAudioDuration, MathExpression|pysssss, EmptyLTXVLatentVideo, DapaoGeminiInstructionZhenzhenNode, MathExpression|pysssss, LayerUtility: PurgeVRAM V2, VAEDecodeTiled, ManualSigmas, GetImageRangeFromBatch, RTXVideoSuperResolution, RH_LLMAPI_Pro_Node, CR Text, PrimitiveBoolean, LazySwitch1way]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/ltx-2.3-数字人-多图参考版_2038885933809930241.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2038885933809930241.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（147 个）：
+- `CLIPTextEncode` ★核心
+- `easy convertAnything`
+- `CR Text`
+- `easy showAnything`
+- `CR Text`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `CR Text`
+- `easy showAnything`
+- `easy float`
+- `easy float`
+- `easy float`
+- `PrimitiveInt`
+- `easy float`
+- `easy float`
+- `easy float`
+- `easy float`
+- `PrimitiveInt`
+- `Bjornulf_IfElse`
+- `Bjornulf_IfElse`
+- `Bjornulf_IfElse`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `MathExpression|pysssss`
+- `LazySwitch1way`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LazySwitch1way`
+- `LazySwitch2way`
+- `LazySwitch2way`
+- `CR Text Concatenate`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `CR Text Concatenate`
+- `MathExpression|pysssss`
+- `ImpactSwitch`
+- `LazySwitch1way`
+- `LazySwitch1way`
+- `PrimitiveInt`
+- `LoadImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `JWInteger`
+- `easy float`
+- `CR Text`
+- `RandomNoise`
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `Bjornulf_IfElse`
+- `VHS_VideoCombine`
+- `LazySwitch2way`
+- `easy boolean`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `LazySwitch2way`
+- `PreviewAny`
+- `CLIPTextEncode` ★核心
+- `CR Text`
+- `easy float`
+- `NormalizeAudioLoudness`
+- `easy float`
+- `easy boolean`
+- `easy boolean`
+- `easy boolean`
+- `easy boolean`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `PrimitiveInt`
+- `CFGGuider`
+- `PrimitiveInt`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `LTXVAudioVAELoader`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `PathchSageAttentionKJ`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `LTX2SamplingPreviewOverride`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LoadAudio`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LazySwitch1way`
+- `LTXVConditioning`
+- `easy convertAnything`
+- `LTXVAddGuideMulti`
+- `AudioCropProcessUTK`
+- `TrimAudioDuration`
+- `MathExpression|pysssss`
+- `EmptyLTXVLatentVideo`
+- `DapaoGeminiInstructionZhenzhenNode`
+- `MathExpression|pysssss`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecodeTiled` ★核心
+- `ManualSigmas`
+- `GetImageRangeFromBatch`
+- `RTXVideoSuperResolution`
+- `RH_LLMAPI_Pro_Node`
+- `CR Text`
+- `PrimitiveBoolean`
+- `LazySwitch1way`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **83%**（122/147）
+
+**有卡**：`CLIPTextEncode`、`easy convertAnything`、`CR Text`、`easy float`、`Bjornulf_IfElse`、`CR Text Concatenate`、`MathExpression|pysssss`、`LazySwitch1way`、`LazySwitch2way`、`LoadImage`、`JWInteger`、`RandomNoise`、`SolidMask`、`LTXVAudioVAEEncode`、`ImageResizeKJv2`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`VHS_VideoCombine`、`easy boolean`、`NormalizeAudioLoudness`、`CFGGuider`、`LTXVAudioVAELoader`、`VAELoaderKJ`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`VAELoader`、`LTX2SamplingPreviewOverride`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LoadAudio`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVConditioning`、`LTXVAddGuideMulti`、`AudioCropProcessUTK`、`TrimAudioDuration`、`EmptyLTXVLatentVideo`、`DapaoGeminiInstructionZhenzhenNode`、`LayerUtility: PurgeVRAM V2`、`VAEDecodeTiled`、`ManualSigmas`、`GetImageRangeFromBatch`、`RTXVideoSuperResolution`、`RH_LLMAPI_Pro_Node`、`PrimitiveBoolean`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

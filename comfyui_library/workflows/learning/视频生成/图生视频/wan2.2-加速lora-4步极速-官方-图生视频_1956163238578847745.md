@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/wan2.2-加速lora-4步极速-官方-图生视频_1956163238578847745.json
+name: wan2.2-加速lora-4步极速-官方-图生视频_1956163238578847745.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956163238578847745.json
+hash: bbe79a3f9af84713
+coverage: 0.913043
+learned_at: 2026-10-15 22:31:11
+nodes: [CLIPLoader, VAELoader, UNETLoader, ModelSamplingSD3, UNETLoader, ModelSamplingSD3, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, CreateVideo, SaveVideo, MarkdownNote, MarkdownNote, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, CLIPTextEncode, WanImageToVideo, SimpleMath+, Int, Int, Int]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2-加速lora-4步极速-官方-图生视频_1956163238578847745.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956163238578847745.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（23 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `SaveVideo`
+- `MarkdownNote`
+- `MarkdownNote`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `WanImageToVideo`
+- `SimpleMath+`
+- `Int`
+- `Int`
+- `Int`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **91%**（21/23）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`KSamplerAdvanced`、`VAEDecode`、`CreateVideo`、`SaveVideo`、`LoraLoaderModelOnly`、`LoadImage`、`WanImageToVideo`、`SimpleMath+`、`Int`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

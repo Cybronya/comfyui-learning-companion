@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/Wan2.2-Rapid-AiO图生视频_1987337054050824194.json
+name: Wan2.2-Rapid-AiO图生视频_1987337054050824194.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1987337054050824194.json
+hash: 07be6ab97434fe28
+coverage: 1
+learned_at: 2026-10-15 22:32:58
+nodes: [ModelSamplingSD3, WanVaceToVideo, VAEDecode, KSampler, CheckpointLoaderSimple, VHS_VideoCombine, WanVideoVACEStartToEndFrame, CLIPTextEncode, ApplySageAttention, CLIPTextEncode, INTConstant, SimpleMath+, Wan22PromptSelector, MuyeTextEditOutput, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LayerUtility: TextJoin]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v11.safetensors", "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 807971540908916, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2-Rapid-AiO图生视频_1987337054050824194.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1987337054050824194.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（17 个）：
+- `ModelSamplingSD3`
+- `WanVaceToVideo`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `VHS_VideoCombine`
+- `WanVideoVACEStartToEndFrame`
+- `CLIPTextEncode` ★核心
+- `ApplySageAttention`
+- `CLIPTextEncode` ★核心
+- `INTConstant`
+- `SimpleMath+`
+- `Wan22PromptSelector`
+- `MuyeTextEditOutput`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LayerUtility: TextJoin`
+
+## 关键参数
+
+- `seed` = `807971540908916`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-rapid-mega-aio-nsfw-v11.safetensors`
+
+## 知识
+
+覆盖率 **100%**（17/17）
+
+**有卡**：`ModelSamplingSD3`、`WanVaceToVideo`、`VAEDecode`、`KSampler`、`CheckpointLoaderSimple`、`VHS_VideoCombine`、`WanVideoVACEStartToEndFrame`、`CLIPTextEncode`、`ApplySageAttention`、`INTConstant`、`SimpleMath+`、`Wan22PromptSelector`、`MuyeTextEditOutput`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`LayerUtility: TextJoin`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、Wan22PromptSelector、MuyeTextEditOutput、INTConstant
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

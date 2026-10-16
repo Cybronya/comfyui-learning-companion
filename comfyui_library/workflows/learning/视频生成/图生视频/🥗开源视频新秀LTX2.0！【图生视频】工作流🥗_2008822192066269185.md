@@ -1,0 +1,92 @@
+---
+key: 视频生成/图生视频/🥗开源视频新秀LTX2.0！【图生视频】工作流🥗_2008822192066269185.json
+name: 🥗开源视频新秀LTX2.0！【图生视频】工作流🥗_2008822192066269185.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2008822192066269185.json
+hash: a090955a1e7303c6
+coverage: 0.865385
+learned_at: 2026-10-15 22:34:09
+nodes: [KSamplerSelect, LTXVScheduler, LTXAVTextEncoderLoader, KSamplerSelect, ManualSigmas, LatentUpscaleModelLoader, LTXVCropGuides, CFGGuider, LTXVEmptyLatentAudio, LTXVConditioning, CLIPTextEncode, EmptyImage, SamplerCustomAdvanced, RandomNoise, LTXVSeparateAVLatent, LTXVAudioVAEDecode, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVLatentUpsampler, ImageScaleBy, PrimitiveNode, EmptyLTXVLatentVideo, LTXVImgToVideoInplace, LTXVConcatAVLatent, LTXVImgToVideoInplace, CFGGuider, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, LoraLoaderModelOnly, LTXVSeparateAVLatent, VAEDecode, CreateVideo, RandomNoise, SamplerCustomAdvanced, SaveVideo, LTXVPreprocess, GetImageSize, GetImageSize, ResizeImagesByLongerEdge, PrimitiveInt, SimpleMath+, CLIPTextEncode, MarkdownNote, Note Plus (mtb), MarkdownNote, MarkdownNote, MarkdownNote, ImpactInt, LoadImage, ImageResizeKJv2, MarkdownNote]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/🥗开源视频新秀LTX2.0！【图生视频】工作流🥗_2008822192066269185.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2008822192066269185.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（52 个）：
+- `KSamplerSelect` ★核心
+- `LTXVScheduler`
+- `LTXAVTextEncoderLoader`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LatentUpscaleModelLoader`
+- `LTXVCropGuides`
+- `CFGGuider`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `EmptyImage`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `ImageScaleBy`
+- `PrimitiveNode`
+- `EmptyLTXVLatentVideo`
+- `LTXVImgToVideoInplace`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `CFGGuider`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `SaveVideo`
+- `LTXVPreprocess`
+- `GetImageSize`
+- `GetImageSize`
+- `ResizeImagesByLongerEdge`
+- `PrimitiveInt`
+- `SimpleMath+`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `Note Plus (mtb)`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `ImpactInt`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `MarkdownNote`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2-19b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **87%**（45/52）
+
+**有卡**：`KSamplerSelect`、`LTXVScheduler`、`LTXAVTextEncoderLoader`、`ManualSigmas`、`LatentUpscaleModelLoader`、`LTXVCropGuides`、`CFGGuider`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`CLIPTextEncode`、`EmptyImage`、`SamplerCustomAdvanced`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`LTXVAudioVAELoader`、`LTXVConcatAVLatent`、`LTXVLatentUpsampler`、`ImageScaleBy`、`EmptyLTXVLatentVideo`、`LTXVImgToVideoInplace`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`VAEDecode`、`CreateVideo`、`SaveVideo`、`LTXVPreprocess`、`GetImageSize`、`ResizeImagesByLongerEdge`、`SimpleMath+`、`Note Plus (mtb)`、`ImpactInt`、`LoadImage`、`ImageResizeKJv2`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

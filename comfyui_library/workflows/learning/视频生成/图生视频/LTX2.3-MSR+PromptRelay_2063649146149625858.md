@@ -1,0 +1,208 @@
+---
+key: 视频生成/图生视频/LTX2.3-MSR+PromptRelay_2063649146149625858.json
+name: LTX2.3-MSR+PromptRelay_2063649146149625858.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2063649146149625858.json
+hash: b09188e5656af911
+coverage: 0.449704
+learned_at: 2026-10-15 22:39:16
+nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, SetNode, GetNode, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, RMBG, SetNode, SetNode, GetNode, GetNode, PathchSageAttentionKJ, LTXVChunkFeedForward, LTX2AttentionTunerPatch, SetNode, GetNode, SetNode, SetNode, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVLatentUpsampler, GetNode, GetNode, GetNode, GetNode, LTXVConcatAVLatent, GetNode, GetNode, SetNode, ManualSigmas, GetNode, GetNode, SamplerCustomAdvanced, ComfySwitchNode, GetNode, RandomNoise, ManualSigmas, GetNode, RMBG, ImageResizeKJv2, LatentUpscaleModelLoader, VAELoader, VAELoaderKJ, VAELoader, LoraLoaderModelOnly, ImageResizeKJv2, ImageResizeKJv2, GetNode, ComfyMathExpression, SetNode, SetNode, SetNode, ComfySwitchNode, ComfySwitchNode, LTXVEmptyLatentAudio, SamplerCustomAdvanced, UNETLoader, SetNode, LTXVAudioVAEDecode, LTXVSeparateAVLatent, GetNode, GetNode, CLIPTextEncode, GetNode, KSamplerSelect, VAEDecode, GetNode, LTXAddVideoICLoRAGuide, GetNode, SetNode, SetNode, LTXVConcatAVLatent, Reroute, Reroute, Reroute, CFGGuider, PrimitiveFloat, DualCLIPLoader, GetNode, GetImageSizeAndCount, ImageBatchMulti, LTXVAudioVAEDecode, BasicScheduler, Reroute, Reroute, Reroute, GetNode, SetNode, LTXVSeparateAVLatent, GetNode, GetNode, ComfySwitchNode, VAEDecode, GetNode, GetNode, GetNode, ComfySwitchNode, GetNode, LTXVCropGuides, GetNode, GetNode, CreateVideo, ImageBatchMulti, SetNode, LTXVAddGuideMulti, LiconMSR, ModelSamplingSD3, LTXAddVideoICLoRAGuide, GetNode, LTXVCropGuides, KSamplerSelect, RandomNoise, CFGGuider, LTXVAddGuidesFromBatch, LTXVAddGuideMulti, SaveVideo, VHS_VideoCombine, LoraLoaderModelOnly, LTX2_NAG, LTXVConditioning, EmptyLTXVLatentVideo, CLIPTextEncode, SimpleCalculatorKJ, SetNode, INTConstant, VHS_VideoCombine, SeedGenerator, LoadImage, LoadImage, LoadImage, PromptRelayEncodeTimeline, INTConstant, INTConstant, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, SetNode, PrimitiveBoolean, LTX2SamplingPreviewOverride, ManualSigmas, LTXVAddGuidesFromBatch]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 145}
+---
+
+# 视频生成/图生视频/LTX2.3-MSR+PromptRelay_2063649146149625858.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2063649146149625858.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（169 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `RMBG`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `LTX2AttentionTunerPatch`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ManualSigmas`
+- `GetNode`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `ComfySwitchNode`
+- `GetNode`
+- `RandomNoise`
+- `ManualSigmas`
+- `GetNode`
+- `RMBG`
+- `ImageResizeKJv2`
+- `LatentUpscaleModelLoader`
+- `VAELoader`
+- `VAELoaderKJ`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `GetNode`
+- `ComfyMathExpression`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ComfySwitchNode`
+- `ComfySwitchNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `UNETLoader` ★核心
+- `SetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `VAEDecode` ★核心
+- `GetNode`
+- `LTXAddVideoICLoRAGuide`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CFGGuider`
+- `PrimitiveFloat`
+- `DualCLIPLoader`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `ImageBatchMulti`
+- `LTXVAudioVAEDecode` ★核心
+- `BasicScheduler`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `SetNode`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `GetNode`
+- `ComfySwitchNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ComfySwitchNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `GetNode`
+- `GetNode`
+- `CreateVideo`
+- `ImageBatchMulti`
+- `SetNode`
+- `LTXVAddGuideMulti`
+- `LiconMSR`
+- `ModelSamplingSD3`
+- `LTXAddVideoICLoRAGuide`
+- `GetNode`
+- `LTXVCropGuides`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `CFGGuider`
+- `LTXVAddGuidesFromBatch`
+- `LTXVAddGuideMulti`
+- `SaveVideo`
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `LTX2_NAG`
+- `LTXVConditioning`
+- `EmptyLTXVLatentVideo`
+- `CLIPTextEncode` ★核心
+- `SimpleCalculatorKJ`
+- `SetNode`
+- `INTConstant`
+- `VHS_VideoCombine`
+- `SeedGenerator`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `PromptRelayEncodeTimeline`
+- `INTConstant`
+- `INTConstant`
+- `LoraLoaderModelOnly` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `SetNode`
+- `PrimitiveBoolean`
+- `LTX2SamplingPreviewOverride`
+- `ManualSigmas`
+- `LTXVAddGuidesFromBatch`
+
+## 关键参数
+
+- `width` = `145`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **45%**（76/169）
+
+**有卡**：`ComfyMathExpression`、`RMBG`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`LTX2AttentionTunerPatch`、`LTXVLatentUpsampler`、`LTXVConcatAVLatent`、`ManualSigmas`、`SamplerCustomAdvanced`、`RandomNoise`、`ImageResizeKJv2`、`LatentUpscaleModelLoader`、`VAELoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXVEmptyLatentAudio`、`UNETLoader`、`LTXVAudioVAEDecode`、`LTXVSeparateAVLatent`、`CLIPTextEncode`、`KSamplerSelect`、`VAEDecode`、`LTXAddVideoICLoRAGuide`、`CFGGuider`、`DualCLIPLoader`、`GetImageSizeAndCount`、`ImageBatchMulti`、`BasicScheduler`、`LTXVCropGuides`、`CreateVideo`、`LTXVAddGuideMulti`、`LiconMSR`、`ModelSamplingSD3`、`LTXVAddGuidesFromBatch`、`SaveVideo`、`VHS_VideoCombine`、`LTX2_NAG`、`LTXVConditioning`、`EmptyLTXVLatentVideo`、`SimpleCalculatorKJ`、`INTConstant`、`SeedGenerator`、`LoadImage`、`PromptRelayEncodeTimeline`、`LTXICLoRALoaderModelOnly`、`PrimitiveBoolean`、`LTX2SamplingPreviewOverride`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect

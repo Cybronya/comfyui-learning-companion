@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/（Uncensor反推+（自用）版）Wan2.2 All-in-one V9.1图生视频极速版V1_1959887220616409089.json
+name: （Uncensor反推+（自用）版）Wan2.2 All-in-one V9.1图生视频极速版V1_1959887220616409089.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1959887220616409089.json
+hash: cb2c8d663cbbb4ad
+coverage: 0.970588
+learned_at: 2026-10-15 22:31:25
+nodes: [CLIPVisionEncode, WanImageToVideo, ModelSamplingSD3, JWInteger, SaveLatent, SaveImage, LoadImage, VHS_VideoCombine, LoadLatent, VAELoader, VHS_VideoCombine, VAEDecode, CLIPTextEncode, KSampler, CLIPVisionLoader, CheckpointLoaderSimple, LoraLoaderModelOnly, PathchSageAttentionKJ, VHS_VideoCombine, VAEDecode, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, CLIPLoader, JWInteger, JWInteger, VHS_VideoCombine, Joy_extra_options, Joy_caption_two_load, LayerUtility: PurgeVRAM, Joy_caption_two_advanced, Text Concatenate, easy showAnything, LoadImage, CR Prompt Text]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-i2v-rapid-aio-nsfw-v9.1.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 16861557485714, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/（Uncensor反推+（自用）版）Wan2.2 All-in-one V9.1图生视频极速版V1_1959887220616409089.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1959887220616409089.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（34 个）：
+- `CLIPVisionEncode`
+- `WanImageToVideo`
+- `ModelSamplingSD3`
+- `JWInteger`
+- `SaveLatent`
+- `SaveImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `LoadLatent`
+- `VAELoader`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `JWInteger`
+- `JWInteger`
+- `VHS_VideoCombine`
+- `Joy_extra_options`
+- `Joy_caption_two_load`
+- `LayerUtility: PurgeVRAM`
+- `Joy_caption_two_advanced`
+- `Text Concatenate`
+- `easy showAnything`
+- `LoadImage`
+- `CR Prompt Text`
+
+## 关键参数
+
+- `seed` = `16861557485714`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-i2v-rapid-aio-nsfw-v9.1.safetensors`
+
+## 知识
+
+覆盖率 **97%**（33/34）
+
+**有卡**：`CLIPVisionEncode`、`WanImageToVideo`、`ModelSamplingSD3`、`JWInteger`、`SaveLatent`、`SaveImage`、`LoadImage`、`VHS_VideoCombine`、`LoadLatent`、`VAELoader`、`VAEDecode`、`CLIPTextEncode`、`KSampler`、`CLIPVisionLoader`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPLoader`、`Joy_extra_options`、`Joy_caption_two_load`、`LayerUtility: PurgeVRAM`、`Joy_caption_two_advanced`、`Text Concatenate`、`CR Prompt Text`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

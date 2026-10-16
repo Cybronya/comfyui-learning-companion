@@ -1,0 +1,218 @@
+---
+key: 视频生成/图生视频/高质量长视频生成（循环） - Wan22+SVI2.0_1998602117436833793.json
+name: 高质量长视频生成（循环） - Wan22+SVI2.0_1998602117436833793.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998602117436833793.json
+hash: 4f75c852572ab057
+coverage: 0.509317
+learned_at: 2026-10-15 22:33:32
+nodes: [ImageResizeKJv2, VHS_VideoCombine, PreviewImage, PrimitiveInt, GetNode, SetNode, SetNode, SetNode, PrimitiveInt, SetNode, GetNode, GetNode, VHS_VideoCombine, RIFE VFI, GetNode, Note, PrimitiveInt, SetNode, PrimitiveInt, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, WanVideoVAELoader, WanVideoImageToVideoEncode, WanVideoDecode, CLIPVisionLoader, SetNode, SetNode, GetNode, WanVideoClipVisionEncode, GetNode, PrimitiveFloat, SimpleMath+, LoadWanVideoT5TextEncoder, SetNode, WanVideoTextEncode, GetNode, RepeatImageBatch, SetNode, VHS_GetImageCount, GetNode, MathExpression|pysssss, easy showAnything, easy forLoopEnd, easy forLoopStart, GetNode, GetNode, INTConstant, SetNode, LayerUtility: PurgeVRAM, GetNode, INTConstant, SetNode, easy promptConcat, StringConstant, WanVideoDecode, GetImageRangeFromBatch, WanVideoTextEncode, WanVideoImageToVideoEncode, SimpleMath+, GetImageRangeFromBatch, GetImageSizeAndCount, ImageBatchMulti, GetNode, GetNode, WanVideoClipVisionEncode, ColorMatch, GetNode, GetNode, INTConstant, GetImageSizeAndCount, WanVideoVACEStartToEndFrame, Reroute, InvertMask, GetNode, GetNode, WanVideoSampler, WanVideoSampler, VHS_VideoCombine, WanVideoSampler, GetNode, WanVideoSampler, GetNode, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoSetBlockSwap, SetNode, WanVideoSetBlockSwap, SetNode, GetNode, SetNode, INTConstant, GetNode, GetNode, FloatConstant, SetNode, GetNode, GetNode, GetNode, GetNode, StringConstant, easy promptConcat, easy showAnything, SeedVR2VideoUpscaler, SeedVR2TorchCompileSettings, KSampler, CLIPTextEncode, VAEDecode, EmptySD3LatentImage, PreviewImage, KSampler, VAEDecode, PreviewImage, SetNode, easy clearCacheAll, easy cleanGpuUsed, VAEEncode, ImageScaleBy, Note, UNETLoader, CLIPLoader, VAELoader, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, ConditioningZeroOut, GetNode, GetNode, Any Switch (rgthree), GetNode, LoadImage, Fast Groups Bypasser (rgthree), Note, Note, SetNode, GetNode, FromListGet1String, SimpleMath+, FromListGet1String, GetNode, PrimitiveInt, Power Lora Loader (rgthree), WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, CR Prompt List, WanVideoModelLoader, WanVideoModelLoader, VHS_VideoCombine, SeedVR2LoadDiTModel, SeedVR2LoadVAEModel, VHS_VideoCombine, MathExpression|pysssss]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 0.3, "sampler_name": "euler", "scheduler": "simple", "seed": 888, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/高质量长视频生成（循环） - Wan22+SVI2.0_1998602117436833793.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998602117436833793.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（161 个）：
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `PrimitiveInt`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `RIFE VFI`
+- `GetNode`
+- `Note`
+- `PrimitiveInt`
+- `SetNode`
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `WanVideoDecode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `PrimitiveFloat`
+- `SimpleMath+`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `WanVideoTextEncode`
+- `GetNode`
+- `RepeatImageBatch`
+- `SetNode`
+- `VHS_GetImageCount`
+- `GetNode`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `INTConstant`
+- `SetNode`
+- `easy promptConcat`
+- `StringConstant`
+- `WanVideoDecode`
+- `GetImageRangeFromBatch`
+- `WanVideoTextEncode`
+- `WanVideoImageToVideoEncode`
+- `SimpleMath+`
+- `GetImageRangeFromBatch`
+- `GetImageSizeAndCount`
+- `ImageBatchMulti`
+- `GetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `ColorMatch`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `GetImageSizeAndCount`
+- `WanVideoVACEStartToEndFrame`
+- `Reroute`
+- `InvertMask`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `FloatConstant`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `StringConstant`
+- `easy promptConcat`
+- `easy showAnything`
+- `SeedVR2VideoUpscaler`
+- `SeedVR2TorchCompileSettings`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `EmptySD3LatentImage`
+- `PreviewImage`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `SetNode`
+- `easy clearCacheAll`
+- `easy cleanGpuUsed`
+- `VAEEncode` ★核心
+- `ImageScaleBy`
+- `Note`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ConditioningZeroOut`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Note`
+- `Note`
+- `SetNode`
+- `GetNode`
+- `FromListGet1String`
+- `SimpleMath+`
+- `FromListGet1String`
+- `GetNode`
+- `PrimitiveInt`
+- `Power Lora Loader (rgthree)`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `CR Prompt List`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `SeedVR2LoadDiTModel`
+- `SeedVR2LoadVAEModel`
+- `VHS_VideoCombine`
+- `MathExpression|pysssss`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `888`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.3`
+
+## 知识
+
+覆盖率 **51%**（82/161）
+
+**有卡**：`ImageResizeKJv2`、`VHS_VideoCombine`、`RIFE VFI`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`SimpleMath+`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`RepeatImageBatch`、`VHS_GetImageCount`、`MathExpression|pysssss`、`easy forLoopEnd`、`easy forLoopStart`、`INTConstant`、`LayerUtility: PurgeVRAM`、`easy promptConcat`、`StringConstant`、`GetImageRangeFromBatch`、`GetImageSizeAndCount`、`ImageBatchMulti`、`ColorMatch`、`WanVideoVACEStartToEndFrame`、`InvertMask`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`FloatConstant`、`SeedVR2VideoUpscaler`、`SeedVR2TorchCompileSettings`、`KSampler`、`CLIPTextEncode`、`VAEDecode`、`EmptySD3LatentImage`、`easy clearCacheAll`、`easy cleanGpuUsed`、`VAEEncode`、`ImageScaleBy`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LoadImage`、`FromListGet1String`、`Power Lora Loader (rgthree)`、`WanVideoLoraSelect`、`CR Prompt List`、`WanVideoModelLoader`、`SeedVR2LoadDiTModel`、`SeedVR2LoadVAEModel`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

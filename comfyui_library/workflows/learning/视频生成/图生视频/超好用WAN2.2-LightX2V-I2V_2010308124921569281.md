@@ -1,0 +1,116 @@
+---
+key: 视频生成/图生视频/超好用WAN2.2-LightX2V-I2V_2010308124921569281.json
+name: 超好用WAN2.2-LightX2V-I2V_2010308124921569281.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2010308124921569281.json
+hash: d4b3ecc444dd235b
+coverage: 0.554054
+learned_at: 2026-10-15 22:34:16
+nodes: [Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Note, Note, Note, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, wanBlockSwap, Reroute, wanBlockSwap, Reroute, ModelPatchTorchSettings, Reroute, Reroute, CLIPTextEncode, SaveImage, RIFE VFI, VHS_VideoCombine, ModelSamplingSD3, ModelSamplingSD3, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, Note, Reroute, CLIPTextEncode, UNETLoader, CLIPLoader, Reroute, WanImageToVideo, CLIPTextEncode, Reroute, CLIPTextEncode, easy cleanGpuUsed, VAEDecode, ImageFromBatch, CLIPTextEncode, CLIPTextEncode, VAELoader, LoraLoaderModelOnly, VHS_VideoCombine, easy imageScaleDownToSize, INTConstant, INTConstant, UNETLoader, Int, LayerUtility: ImageScaleByAspectRatio V2, Reroute, KSamplerAdvanced, KSamplerAdvanced, LoadImage, Int, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/超好用WAN2.2-LightX2V-I2V_2010308124921569281.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2010308124921569281.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（74 个）：
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Note`
+- `Note`
+- `Note`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `wanBlockSwap`
+- `Reroute`
+- `wanBlockSwap`
+- `Reroute`
+- `ModelPatchTorchSettings`
+- `Reroute`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `Note`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `Reroute`
+- `WanImageToVideo`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `ImageFromBatch`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `VHS_VideoCombine`
+- `easy imageScaleDownToSize`
+- `INTConstant`
+- `INTConstant`
+- `UNETLoader` ★核心
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Reroute`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoadImage`
+- `Int`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **55%**（41/74）
+
+**有卡**：`wanBlockSwap`、`ModelPatchTorchSettings`、`CLIPTextEncode`、`SaveImage`、`RIFE VFI`、`VHS_VideoCombine`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`UNETLoader`、`CLIPLoader`、`WanImageToVideo`、`easy cleanGpuUsed`、`VAEDecode`、`ImageFromBatch`、`VAELoader`、`LoraLoaderModelOnly`、`easy imageScaleDownToSize`、`INTConstant`、`Int`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSamplerAdvanced`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/world第一！ 图生视频 王者降临 Seedance1.5Pro 首尾帧图生视频_2021776971318956033.json
+name: world第一！ 图生视频 王者降临 Seedance1.5Pro 首尾帧图生视频_2021776971318956033.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2021776971318956033.json
+hash: 0d6ff00b3471b880
+coverage: 0.8
+learned_at: 2026-10-15 22:35:09
+nodes: [LayerUtility: ImageScaleByAspectRatio V2, FlashVSR_SM_KSampler, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoInfo, VHS_LoadVideo, LoadImage, LoadImage, CR Text, PreviewAny, RH_Doubao_Seedance_1_5_Pro, SaveVideo, FlashVSR_SM_Model, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
+patterns: []
+missing: []
+parameters: {"cfg": "randomize", "denoise": 11, "sampler_name": 2, "scheduler": 3.5, "seed": 768, "steps": 93349948}
+---
+
+# 视频生成/图生视频/world第一！ 图生视频 王者降临 Seedance1.5Pro 首尾帧图生视频_2021776971318956033.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2021776971318956033.json`
+
+## 结构
+
+**生成流程**：Sampling → Process → Output → Other
+
+**节点**（15 个）：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `FlashVSR_SM_KSampler` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+- `PreviewAny`
+- `RH_Doubao_Seedance_1_5_Pro`
+- `SaveVideo`
+- `FlashVSR_SM_Model`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+
+## 关键参数
+
+- `seed` = `768`
+- `steps` = `93349948`
+- `cfg` = `randomize`
+- `sampler_name` = `2`
+- `scheduler` = `3.5`
+- `denoise` = `11`
+
+## 知识
+
+覆盖率 **80%**（12/15）
+
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`FlashVSR_SM_KSampler`、`VHS_VideoCombine`、`VHS_VideoInfo`、`VHS_LoadVideo`、`LoadImage`、`CR Text`、`RH_Doubao_Seedance_1_5_Pro`、`SaveVideo`、`FlashVSR_SM_Model`
+
+**用到的条目**：LoadImage、FlashVSR_SM_KSampler、RH_Doubao_Seedance_1_5_Pro、SaveVideo、VHS_LoadVideo、VHS_VideoCombine、FlashVSR_SM_Model、VHS_VideoInfo

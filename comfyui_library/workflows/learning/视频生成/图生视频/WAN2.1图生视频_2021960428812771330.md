@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/WAN2.1图生视频_2021960428812771330.json
+name: WAN2.1图生视频_2021960428812771330.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2021960428812771330.json
+hash: 5f96afddf69a889a
+coverage: 1
+learned_at: 2026-10-15 22:35:10
+nodes: [CLIPTextEncode, CLIPVisionEncode, VAEDecode, WanImageToVideo, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, ModelSamplingSD3, KSampler, UNETLoader, CLIPLoader, LoraLoaderModelOnly, CLIPVisionLoader, LoadImage, CLIPTextEncode, VAELoader]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 1102227397474606, "steps": 5}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/WAN2.1图生视频_2021960428812771330.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2021960428812771330.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（15 个）：
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `KSampler` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPVisionLoader`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+
+## 关键参数
+
+- `seed` = `1102227397474606`
+- `steps` = `5`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`CLIPTextEncode`、`CLIPVisionEncode`、`VAEDecode`、`WanImageToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_VideoCombine`、`ModelSamplingSD3`、`KSampler`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`CLIPVisionLoader`、`LoadImage`、`VAELoader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,85 @@
+---
+key: 视频生成/图生视频/Wan2.2+Animate动作迁移-动作模仿-效果好_1993922923654217730.json
+name: Wan2.2+Animate动作迁移-动作模仿-效果好_1993922923654217730.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1993922923654217730.json
+hash: e839c44216b4d216
+coverage: 0.566038
+learned_at: 2026-10-15 22:33:19
+nodes: [GetNode, GetNode, GetNode, WanVideoAnimateEmbeds, WanVideoSampler, WanVideoDecode, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoBlockSwap, ttN float, ttN float, PoseAndFaceDetection, WanVideoVAELoader, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoClipVisionEncode, SetNode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, String Literal, ImageResizeKJv2, OnnxDetectionModelLoader, DrawViTPose, SetNode, GetNode, GetNode, GetNode, WanVideoTextEncodeCached, LayerUtility: PurgeVRAM, easy cleanGpuUsed, SetNode, easy cleanGpuUsed, CLIPVisionLoader, GetNode, GetNode, GetNode, VHS_VideoCombine, Note, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, VHS_LoadVideo, PrimitiveInt, SetNode, SetNode, SimpleMath+, PrimitiveInt, ttN float]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2+Animate动作迁移-动作模仿-效果好_1993922923654217730.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1993922923654217730.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（53 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `ttN float`
+- `ttN float`
+- `PoseAndFaceDetection`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `String Literal`
+- `ImageResizeKJv2`
+- `OnnxDetectionModelLoader`
+- `DrawViTPose`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `LayerUtility: PurgeVRAM`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `Note`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_LoadVideo`
+- `PrimitiveInt`
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `PrimitiveInt`
+- `ttN float`
+
+## 知识
+
+覆盖率 **57%**（30/53）
+
+**有卡**：`WanVideoAnimateEmbeds`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoLoraSelectMulti`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`ttN float`、`PoseAndFaceDetection`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoClipVisionEncode`、`LayerUtility: PurgeVRAM`、`String Literal`、`ImageResizeKJv2`、`OnnxDetectionModelLoader`、`DrawViTPose`、`WanVideoTextEncodeCached`、`easy cleanGpuUsed`、`CLIPVisionLoader`、`VHS_VideoCombine`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_LoadVideo`、`SimpleMath+`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs

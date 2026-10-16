@@ -1,0 +1,59 @@
+---
+key: 视频生成/文生视频/最新Wan2.1稳定图生视频可在线运行，效果非常棒棒！_1916330952719798273.json
+name: 最新Wan2.1稳定图生视频可在线运行，效果非常棒棒！_1916330952719798273.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1916330952719798273.json
+hash: 936e150548bfea2b
+coverage: 0.925926
+learned_at: 2026-10-15 22:43:22
+nodes: [WanVideoTextEncode, WanVideoBlockSwap, WanVideoImageClipEncode, LayerUtility: ImageScaleByAspectRatio V2, FILM VFI, VHS_VideoCombine, WanVideoSampler, VHS_VideoCombine, VHS_VideoCombine, WanVideoDecode, Fast Groups Muter (rgthree), StringConstantMultiline, Int, Int, Seed Everywhere, Fast Bypasser (rgthree), Note, LoadWanVideoT5TextEncoder, ImageUpscaleWithModel, UpscaleModelLoader, UpscaleModelLoader, ImageUpscaleWithModel, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoModelLoader, WanVideoLoraSelect, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/最新Wan2.1稳定图生视频可在线运行，效果非常棒棒！_1916330952719798273.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1916330952719798273.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（27 个）：
+- `WanVideoTextEncode`
+- `WanVideoBlockSwap`
+- `WanVideoImageClipEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `FILM VFI`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `Fast Groups Muter (rgthree)`
+- `StringConstantMultiline`
+- `Int`
+- `Int`
+- `Seed Everywhere`
+- `Fast Bypasser (rgthree)`
+- `Note`
+- `LoadWanVideoT5TextEncoder`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `UpscaleModelLoader`
+- `ImageUpscaleWithModel`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **93%**（25/27）
+
+**有卡**：`WanVideoTextEncode`、`WanVideoBlockSwap`、`WanVideoImageClipEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`FILM VFI`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoDecode`、`StringConstantMultiline`、`Int`、`Seed Everywhere`、`Fast Bypasser (rgthree)`、`LoadWanVideoT5TextEncoder`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、Seed Everywhere、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode

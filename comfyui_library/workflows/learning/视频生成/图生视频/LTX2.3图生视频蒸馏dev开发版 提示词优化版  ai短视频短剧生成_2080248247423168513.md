@@ -1,0 +1,301 @@
+---
+key: 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2080248247423168513.json
+name: LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2080248247423168513.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2080248247423168513.json
+hash: ddf9d6d187b7ff8c
+coverage: 0.570881
+learned_at: 2026-10-15 22:42:11
+nodes: [SetNode, SetNode, SetNode, CR Text, GetNode, GetNode, GetNode, EmptyImage, LTXVConcatAVLatent, GetNode, GetNode, easy cleanGpuUsed, LTXVConditioning, SetNode, SetNode, GetNode, easy cleanGpuUsed, SetNode, GetNode, SetNode, LTXVPreprocess, LayerUtility: ImageScaleByAspectRatio V2, GetNode, LayerUtility: ImageScaleByAspectRatio V2, CR Text, CR Text, SetNode, GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, ImageScaleBy, SetNode, SetNode, LTXVImgToVideoInplace, Int, SetNode, CR Text, easy cleanGpuUsed, easy cleanGpuUsed, CR Text, CR Text, SetNode, VAELoaderKJ, VAELoaderKJ, SetNode, CLIPTextEncode, GetNode, LTXVCropGuides, CFGGuider, RandomNoise, easy cleanGpuUsed, GetNode, KSamplerSelect, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVLatentUpsampler, SamplerCustomAdvanced, CR Text, SetNode, easy cleanGpuUsed, Any To String (mtb), GetNode, llama_cpp_instruct_adv, SetNode, GetNode, GetNode, GetNode, GetNode, CR Text, CR Text, Any To String (mtb), CR Text, Any To String (mtb), Any To String (mtb), SetNode, GetNode, easy convertAnything, ttN concat, CR Text Concatenate, SetNode, CR Text, LoraLoaderModelOnly, ResizeImagesByLongerEdge, DualCLIPLoader, SetNode, PrimitiveInt, Int, GetNode, MathExpression|pysssss, LTXVEmptyLatentAudio, GetNode, GetNode, GetNode, ManualSigmas, CFGGuider, GetNode, GetNode, GetNode, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, KSamplerSelect, GetNode, LTXVScheduler, ManualSigmas, GetNode, CR Text, CR Value, easy convertAnything, SetNode, SetNode, SetNode, SetNode, SetNode, LTXVChunkFeedForward, VRAMReserver, CR Text, easy cleanGpuUsed, LTXVSeparateAVLatent, GetNode, LTXVAudioVAEDecode, GetNode, GetNode, VAEDecodeTiled, SaveVideo, LatentUpscaleModelLoader, SetNode, SetNode, SetNode, CR Text, EmptyImage, GetImageSize, LTXVConcatAVLatent, easy cleanGpuUsed, LTXVConditioning, SetNode, SetNode, GetNode, easy cleanGpuUsed, CR Text, CR Text, GetNode, GetNode, ImageScaleBy, SetNode, LTXVImgToVideoInplace, GetNode, SetNode, CR Text, easy cleanGpuUsed, easy cleanGpuUsed, CLIPTextEncode, CR Text, CLIPTextEncode, GetNode, LTXVCropGuides, CFGGuider, RandomNoise, easy cleanGpuUsed, KSamplerSelect, LTXVConcatAVLatent, LTXVLatentUpsampler, CR Text, LoraLoaderModelOnly, SetNode, PrimitiveInt, GetNode, MathExpression|pysssss, LTXVEmptyLatentAudio, GetNode, GetNode, RandomNoise, LTXVSeparateAVLatent, KSamplerSelect, CR Text, easy cleanGpuUsed, LTXVSeparateAVLatent, LTXVAudioVAEDecode, GetNode, VAEDecodeTiled, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Any To String (mtb), SetNode, GetNode, SaveVideo, GetImageSize, CR Text, LTXVAudioVAELoader, LTXAVTextEncoderLoader, SetNode, GetNode, GetNode, LoraLoaderModelOnly, SetNode, SetNode, CR Text, CR String To Combo, SetNode, CR String To Combo, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, CreateVideo, CreateVideo, UNETLoader, CheckpointLoaderSimple, GetNode, CFGGuider, GetNode, GetNode, CLIPTextEncode, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, GetNode, SetNode, CR Text, ManualSigmas, LTXVImgToVideoInplace, SamplerCustomAdvanced, SamplerCustomAdvanced, ManualSigmas, GetNode, LTXVChunkFeedForward, VRAMReserver, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, CheckpointLoaderSimple, LTXVAudioVAELoader, LTXAVTextEncoderLoader, ShowText|pysssss, llama_cpp_model_loader, LTXVScheduler, ManualSigmas, ManualSigmas, Fast Groups Muter (rgthree), ImpactSwitch, ImpactSwitch, ImpactSwitch, CR Text, CR Text, ImpactSwitch, easy int, Display Any (rgthree), LoadImage, CR Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 24, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3图生视频蒸馏dev开发版 提示词优化版  ai短视频短剧生成_2080248247423168513.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2080248247423168513.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（261 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CR Text`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyImage`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `LTXVConditioning`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `LTXVPreprocess`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Text`
+- `CR Text`
+- `SetNode`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `GetNode`
+- `ImageScaleBy`
+- `SetNode`
+- `SetNode`
+- `LTXVImgToVideoInplace`
+- `Int`
+- `SetNode`
+- `CR Text`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `CR Text`
+- `CR Text`
+- `SetNode`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `LTXVCropGuides`
+- `CFGGuider`
+- `RandomNoise`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `CR Text`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `Any To String (mtb)`
+- `GetNode`
+- `llama_cpp_instruct_adv`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `CR Text`
+- `Any To String (mtb)`
+- `CR Text`
+- `Any To String (mtb)`
+- `Any To String (mtb)`
+- `SetNode`
+- `GetNode`
+- `easy convertAnything`
+- `ttN concat`
+- `CR Text Concatenate`
+- `SetNode`
+- `CR Text`
+- `LoraLoaderModelOnly` ★核心
+- `ResizeImagesByLongerEdge`
+- `DualCLIPLoader`
+- `SetNode`
+- `PrimitiveInt`
+- `Int`
+- `GetNode`
+- `MathExpression|pysssss`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ManualSigmas`
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `LTXVScheduler`
+- `ManualSigmas`
+- `GetNode`
+- `CR Text`
+- `CR Value`
+- `easy convertAnything`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LTXVChunkFeedForward`
+- `VRAMReserver`
+- `CR Text`
+- `easy cleanGpuUsed`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecodeTiled` ★核心
+- `SaveVideo`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CR Text`
+- `EmptyImage`
+- `GetImageSize`
+- `LTXVConcatAVLatent`
+- `easy cleanGpuUsed`
+- `LTXVConditioning`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `CR Text`
+- `CR Text`
+- `GetNode`
+- `GetNode`
+- `ImageScaleBy`
+- `SetNode`
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `SetNode`
+- `CR Text`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CR Text`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `LTXVCropGuides`
+- `CFGGuider`
+- `RandomNoise`
+- `easy cleanGpuUsed`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `CR Text`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `PrimitiveInt`
+- `GetNode`
+- `MathExpression|pysssss`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `GetNode`
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `KSamplerSelect` ★核心
+- `CR Text`
+- `easy cleanGpuUsed`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `VAEDecodeTiled` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any To String (mtb)`
+- `SetNode`
+- `GetNode`
+- `SaveVideo`
+- `GetImageSize`
+- `CR Text`
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `SetNode`
+- `CR Text`
+- `CR String To Combo`
+- `SetNode`
+- `CR String To Combo`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CreateVideo`
+- `CreateVideo`
+- `UNETLoader` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `GetNode`
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `LatentUpscaleModelLoader`
+- `GetNode`
+- `SetNode`
+- `CR Text`
+- `ManualSigmas`
+- `LTXVImgToVideoInplace`
+- `SamplerCustomAdvanced` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `GetNode`
+- `LTXVChunkFeedForward`
+- `VRAMReserver`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `CheckpointLoaderSimple` ★核心
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `ShowText|pysssss`
+- `llama_cpp_model_loader`
+- `LTXVScheduler`
+- `ManualSigmas`
+- `ManualSigmas`
+- `Fast Groups Muter (rgthree)`
+- `ImpactSwitch`
+- `ImpactSwitch`
+- `ImpactSwitch`
+- `CR Text`
+- `CR Text`
+- `ImpactSwitch`
+- `easy int`
+- `Display Any (rgthree)`
+- `LoadImage`
+- `CR Text`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **57%**（149/261）
+
+**有卡**：`CR Text`、`EmptyImage`、`LTXVConcatAVLatent`、`easy cleanGpuUsed`、`LTXVConditioning`、`LTXVPreprocess`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLTXVLatentVideo`、`ImageScaleBy`、`LTXVImgToVideoInplace`、`Int`、`VAELoaderKJ`、`CLIPTextEncode`、`LTXVCropGuides`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`LTXVLatentUpsampler`、`SamplerCustomAdvanced`、`Any To String (mtb)`、`llama_cpp_instruct_adv`、`easy convertAnything`、`ttN concat`、`CR Text Concatenate`、`LoraLoaderModelOnly`、`ResizeImagesByLongerEdge`、`DualCLIPLoader`、`MathExpression|pysssss`、`LTXVEmptyLatentAudio`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTXVScheduler`、`CR Value`、`LTXVChunkFeedForward`、`VRAMReserver`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`SaveVideo`、`LatentUpscaleModelLoader`、`GetImageSize`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`CR String To Combo`、`CreateVideo`、`UNETLoader`、`CheckpointLoaderSimple`、`llama_cpp_model_loader`、`easy int`、`Display Any (rgthree)`、`LoadImage`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

@@ -1,0 +1,89 @@
+---
+key: 视频生成/图生视频/🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控制一键生成你的说唱MV！_1965441374021632001.json
+name: 🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控制一键生成你的说唱MV！_1965441374021632001.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1965441374021632001.json
+hash: d2309e2a6f56d097
+coverage: 0.578947
+learned_at: 2026-10-15 22:31:37
+nodes: [WanVideoDecode, WanVideoTorchCompileSettings, Note, Note, MarkdownNote, WanVideoSetLoRAs, WanVideoBlockSwap, Note, WanVideoSetBlockSwap, SetNode, GetNode, WanVideoEmptyEmbeds, GetNode, MelBandRoFormerSampler, NormalizeAudioLoudness, AudioEncoderEncode, MarkdownNote, SetNode, SetNode, GetNode, GetNode, PreviewAny, GetImageSizeAndCount, GetImageRangeFromBatch, GetNode, WanVideoEncode, INTConstant, INTConstant, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoVAELoader, MelBandRoFormerModelLoader, AudioEncoderLoader, WanVideoSampler, ColorMatch, WanVideoAddS2VEmbeds, ImageResizeKJv2, WanVideoEncode, Reroute, SetNode, Reroute, VHS_VideoCombine, WanVideoTextEncodeCached, ImageResizeKJv2, DWPreprocessor, VHS_LoadVideo, VHS_LoadVideo, PrimitiveStringMultiline, PrimitiveNode, LoadImage, VHS_VideoCombine, Label (rgthree)]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控制一键生成你的说唱MV！_1965441374021632001.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1965441374021632001.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（57 个）：
+- `WanVideoDecode`
+- `WanVideoTorchCompileSettings`
+- `Note`
+- `Note`
+- `MarkdownNote`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `Note`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `GetNode`
+- `WanVideoEmptyEmbeds`
+- `GetNode`
+- `MelBandRoFormerSampler` ★核心
+- `NormalizeAudioLoudness`
+- `AudioEncoderEncode`
+- `MarkdownNote`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `PreviewAny`
+- `GetImageSizeAndCount`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `WanVideoEncode`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `WanVideoVAELoader`
+- `MelBandRoFormerModelLoader`
+- `AudioEncoderLoader`
+- `WanVideoSampler` ★核心
+- `ColorMatch`
+- `WanVideoAddS2VEmbeds`
+- `ImageResizeKJv2`
+- `WanVideoEncode`
+- `Reroute`
+- `SetNode`
+- `Reroute`
+- `VHS_VideoCombine`
+- `WanVideoTextEncodeCached`
+- `ImageResizeKJv2`
+- `DWPreprocessor`
+- `VHS_LoadVideo`
+- `VHS_LoadVideo`
+- `PrimitiveStringMultiline`
+- `PrimitiveNode`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `Label (rgthree)`
+
+## 知识
+
+覆盖率 **58%**（33/57）
+
+**有卡**：`WanVideoDecode`、`WanVideoTorchCompileSettings`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoEmptyEmbeds`、`MelBandRoFormerSampler`、`NormalizeAudioLoudness`、`AudioEncoderEncode`、`GetImageSizeAndCount`、`GetImageRangeFromBatch`、`WanVideoEncode`、`INTConstant`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoVAELoader`、`MelBandRoFormerModelLoader`、`AudioEncoderLoader`、`WanVideoSampler`、`ColorMatch`、`WanVideoAddS2VEmbeds`、`ImageResizeKJv2`、`VHS_VideoCombine`、`WanVideoTextEncodeCached`、`DWPreprocessor`、`VHS_LoadVideo`、`LoadImage`、`Label (rgthree)`
+
+**用到的条目**：LoadImage、WanVideoSampler、MelBandRoFormerSampler、AudioEncoderLoader、WanVideoDecode、WanVideoVAELoader、AudioEncoderEncode、WanVideoTextEncodeCached

@@ -1,0 +1,51 @@
+---
+key: 视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json
+name: WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1895182420566212609.json
+hash: 9b8f97b1655380b6
+coverage: 1
+learned_at: 2026-10-15 22:43:20
+nodes: [CLIPTextEncode, EmptyHunyuanLatentVideo, VAELoader, VAEDecode, CLIPTextEncode, VHS_VideoCombine, UNETLoader, CLIPLoader, KSampler]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 1032704127351137, "steps": 30}
+---
+
+# 视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1895182420566212609.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（9 个）：
+- `CLIPTextEncode` ★核心
+- `EmptyHunyuanLatentVideo`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `KSampler` ★核心
+
+## 关键参数
+
+- `seed` = `1032704127351137`
+- `steps` = `30`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（9/9）
+
+**有卡**：`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`VAELoader`、`VAEDecode`、`VHS_VideoCombine`、`UNETLoader`、`CLIPLoader`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo、VHS_VideoCombine

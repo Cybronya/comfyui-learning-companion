@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json
+name: 惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1916125133394608130.json
+hash: a0928697c0757402
+coverage: 0.703704
+learned_at: 2026-10-15 22:29:38
+nodes: [Anything Everywhere, WanVideoVAELoader, LoadWanVideoT5TextEncoder, Anything Everywhere, Anything Everywhere, WanVideoTorchCompileSettings, Anything Everywhere, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoDecode, SetNode, WanVideoModelLoader, Seed Everywhere, Anything Everywhere, WanVideoSampler, Anything Everywhere, ImageResize+, Int, GetNode, WanVideoImageClipEncode, LoadWanVideoClipTextEncoder, VHS_VideoCombine, WanVideoLoraSelect, LoadImage, WanVideoTextEncode, ConcatTextOfUtils, DisplayAny]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1916125133394608130.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（27 个）：
+- `Anything Everywhere`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `WanVideoTorchCompileSettings`
+- `Anything Everywhere`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoDecode`
+- `SetNode`
+- `WanVideoModelLoader`
+- `Seed Everywhere`
+- `Anything Everywhere`
+- `WanVideoSampler` ★核心
+- `Anything Everywhere`
+- `ImageResize+`
+- `Int`
+- `GetNode`
+- `WanVideoImageClipEncode`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `VHS_VideoCombine`
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `WanVideoTextEncode`
+- `ConcatTextOfUtils`
+- `DisplayAny`
+
+## 知识
+
+覆盖率 **70%**（19/27）
+
+**有卡**：`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoTorchCompileSettings`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoDecode`、`WanVideoModelLoader`、`Seed Everywhere`、`WanVideoSampler`、`ImageResize+`、`Int`、`WanVideoImageClipEncode`、`LoadWanVideoClipTextEncoder`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`LoadImage`、`WanVideoTextEncode`、`ConcatTextOfUtils`、`DisplayAny`
+
+**用到的条目**：LoadImage、WanVideoSampler、Seed Everywhere、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode

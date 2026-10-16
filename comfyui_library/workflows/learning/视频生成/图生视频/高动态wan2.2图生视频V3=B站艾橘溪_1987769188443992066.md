@@ -1,0 +1,89 @@
+---
+key: 视频生成/图生视频/高动态wan2.2图生视频V3=B站艾橘溪_1987769188443992066.json
+name: 高动态wan2.2图生视频V3=B站艾橘溪_1987769188443992066.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1987769188443992066.json
+hash: 6bf97170a15bd735
+coverage: 0.702128
+learned_at: 2026-10-15 22:33:00
+nodes: [GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, AILab_QwenVL, LayerUtility: PurgeVRAM, easy saveText, GetNode, WanImageToVideo, GetNode, VHS_VideoCombine, ModelSamplingSD3, VAELoader, Note, LayerUtility: PurgeVRAM, SetNode, SetNode, SetNode, ImageResizeKJv2, PainterI2V, KSamplerAdvanced, PathchSageAttentionKJ, Text Concatenate, SetNode, GetNode, UNETLoader, UNETLoader, LayerUtility: PurgeVRAM, PathchSageAttentionKJ, Text, Text, SimpleMath+, VAEDecode, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, PrimitiveInt, PrimitiveInt, LoadImage, CLIPLoader, LayerUtility: PurgeVRAM, ModelSamplingSD3, KSamplerAdvanced, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, easy showAnything, Text]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/高动态wan2.2图生视频V3=B站艾橘溪_1987769188443992066.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1987769188443992066.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（47 个）：
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `AILab_QwenVL`
+- `LayerUtility: PurgeVRAM`
+- `easy saveText`
+- `GetNode`
+- `WanImageToVideo`
+- `GetNode`
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `VAELoader`
+- `Note`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `PainterI2V`
+- `KSamplerAdvanced` ★核心
+- `PathchSageAttentionKJ`
+- `Text Concatenate`
+- `SetNode`
+- `GetNode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LayerUtility: PurgeVRAM`
+- `PathchSageAttentionKJ`
+- `Text`
+- `Text`
+- `SimpleMath+`
+- `VAEDecode` ★核心
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LoadImage`
+- `CLIPLoader`
+- `LayerUtility: PurgeVRAM`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `easy showAnything`
+- `Text`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **70%**（33/47）
+
+**有卡**：`CLIPTextEncode`、`AILab_QwenVL`、`LayerUtility: PurgeVRAM`、`easy saveText`、`WanImageToVideo`、`VHS_VideoCombine`、`ModelSamplingSD3`、`VAELoader`、`ImageResizeKJv2`、`PainterI2V`、`KSamplerAdvanced`、`PathchSageAttentionKJ`、`Text Concatenate`、`UNETLoader`、`Text`、`SimpleMath+`、`VAEDecode`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`LoadImage`、`CLIPLoader`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、ImageResizeKJv2

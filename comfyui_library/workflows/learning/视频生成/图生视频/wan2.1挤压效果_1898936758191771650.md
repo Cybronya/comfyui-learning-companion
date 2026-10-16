@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/wan2.1挤压效果_1898936758191771650.json
+name: wan2.1挤压效果_1898936758191771650.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1898936758191771650.json
+hash: b8c6df879badf4a8
+coverage: 1
+learned_at: 2026-10-15 22:29:20
+nodes: [CLIPTextEncode, KSampler, VAEDecode, WanImageToVideo, CLIPTextEncode, CLIPLoader, VAELoader, CLIPVisionEncode, VHS_VideoCombine, CLIPVisionLoader, UNETLoader, LoraLoaderModelOnly, WanVideoTeaCacheKJ, ModelSamplingSD3, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 837265314930677, "steps": 20}
+---
+
+# 视频生成/图生视频/wan2.1挤压效果_1898936758191771650.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1898936758191771650.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（15 个）：
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPVisionEncode`
+- `VHS_VideoCombine`
+- `CLIPVisionLoader`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `WanVideoTeaCacheKJ`
+- `ModelSamplingSD3`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `837265314930677`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`CLIPTextEncode`、`KSampler`、`VAEDecode`、`WanImageToVideo`、`CLIPLoader`、`VAELoader`、`CLIPVisionEncode`、`VHS_VideoCombine`、`CLIPVisionLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`WanVideoTeaCacheKJ`、`ModelSamplingSD3`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader

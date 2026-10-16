@@ -1,0 +1,132 @@
+---
+key: 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852519000416258.json
+name: 万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852519000416258.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2042852519000416258.json
+hash: 5613a1538acb1e51
+coverage: 0.597826
+learned_at: 2026-10-15 22:36:29
+nodes: [LTXAVTextEncoderLoader, CheckpointLoaderSimple, LTXVAudioVAELoader, SetNode, CFGGuider, KSamplerSelect, GetNode, GetNode, LTXVLatentUpsampler, GetNode, GetNode, GetNode, CFGGuider, KSamplerSelect, ManualSigmas, LTXVImgToVideoConditionOnly, LTXVConcatAVLatent, RandomNoise, LTXVSeparateAVLatent, GetNode, GetNode, GetNode, ImageScaleBy, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, SetNode, SetNode, SetNode, ImageResizeKJv2, SetNode, SetNode, SetNode, MultiTextConcatenate, RH_Utils, GetNode, Text, CR Text Replace, PrimitiveFloat, SimpleMath+, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, FloatConstant, GetNode, GetNode, EmptyLTXVLatentVideo, CM_FloatToInt, ComfyMathExpression, GetNode, GetNode, ManualSigmas, GetNode, RandomNoise, SamplerCustomAdvanced, LTXVSeparateAVLatent, easy showAnything, LTXVAudioVAEDecode, GetNode, VAEDecodeTiled, CLIPTextEncode, GetNode, LTXVConditioning, CLIPTextEncode, LTXVConcatAVLatent, LTXVEmptyLatentAudio, PreviewImage, GuHaiAutoImageSplit, LTXVImgToVideoInplaceKJ, ImageFromBatch+, SamplerCustomAdvanced, Reroute, RH_LLMAPI_Pro_Node, SetNode, Int, Text, LatentUpscaleModelLoader, SetNode, SetNode, LoraLoaderModelOnly, SetNode, LoraLoaderModelOnly, TTResolutionSelector, LoadImage, VHS_VideoCombine, Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852519000416258.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2042852519000416258.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（92 个）：
+- `LTXAVTextEncoderLoader`
+- `CheckpointLoaderSimple` ★核心
+- `LTXVAudioVAELoader`
+- `SetNode`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageScaleBy`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `MultiTextConcatenate`
+- `RH_Utils`
+- `GetNode`
+- `Text`
+- `CR Text Replace`
+- `PrimitiveFloat`
+- `SimpleMath+`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `FloatConstant`
+- `GetNode`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `CM_FloatToInt`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `ManualSigmas`
+- `GetNode`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `easy showAnything`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `VAEDecodeTiled` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio` ★核心
+- `PreviewImage`
+- `GuHaiAutoImageSplit`
+- `LTXVImgToVideoInplaceKJ`
+- `ImageFromBatch+`
+- `SamplerCustomAdvanced` ★核心
+- `Reroute`
+- `RH_LLMAPI_Pro_Node`
+- `SetNode`
+- `Int`
+- `Text`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `TTResolutionSelector`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `Text`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **60%**（55/92）
+
+**有卡**：`LTXAVTextEncoderLoader`、`CheckpointLoaderSimple`、`LTXVAudioVAELoader`、`CFGGuider`、`KSamplerSelect`、`LTXVLatentUpsampler`、`ManualSigmas`、`LTXVImgToVideoConditionOnly`、`LTXVConcatAVLatent`、`RandomNoise`、`LTXVSeparateAVLatent`、`ImageScaleBy`、`ImageFromBatch+`、`ImageResizeKJv2`、`MultiTextConcatenate`、`RH_Utils`、`Text`、`CR Text Replace`、`SimpleMath+`、`FloatConstant`、`EmptyLTXVLatentVideo`、`CM_FloatToInt`、`ComfyMathExpression`、`SamplerCustomAdvanced`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVEmptyLatentAudio`、`GuHaiAutoImageSplit`、`LTXVImgToVideoInplaceKJ`、`RH_LLMAPI_Pro_Node`、`Int`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`TTResolutionSelector`、`LoadImage`、`VHS_VideoCombine`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

@@ -1,0 +1,37 @@
+---
+key: 视频生成/图生视频/AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json
+name: AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2030823583953461249.json
+hash: 1106e3e01d5d81d7
+coverage: 1
+learned_at: 2026-10-15 22:35:28
+nodes: [LoadImage, RunningHub_DreamID-V_Loader, RunningHub_DreamID-V_Sampler, SaveVideo, LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2030823583953461249.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Output → Other
+
+**节点**（5 个）：
+- `LoadImage`
+- `RunningHub_DreamID-V_Loader`
+- `RunningHub_DreamID-V_Sampler` ★核心
+- `SaveVideo`
+- `LoadVideo`
+
+## 知识
+
+覆盖率 **100%**（5/5）
+
+**有卡**：`LoadImage`、`RunningHub_DreamID-V_Loader`、`RunningHub_DreamID-V_Sampler`、`SaveVideo`、`LoadVideo`
+
+**用到的条目**：LoadImage、RunningHub_DreamID-V_Sampler、SaveVideo、LoadVideo、RunningHub_DreamID-V_Loader、sd15-t2i-basic、sd15-t2i-lora、Loader

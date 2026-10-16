@@ -1,0 +1,44 @@
+---
+key: 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman2.0_2038078503165366274.json
+name: 开源界的seedance最强模型daVinci-MagiHuman2.0_2038078503165366274.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2038078503165366274.json
+hash: e3c371ff967f8c44
+coverage: 0.833333
+learned_at: 2026-10-15 22:36:00
+nodes: [LoadImage, LoadAudio, llama_cpp_model_loader, llama_cpp_instruct_adv, JWInteger, PreviewAny, easy cleanGpuUsed, RH_MagiHumanGenerate, SaveVideo, RH_MagiHumanModelLoader, CR Prompt Text, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman2.0_2038078503165366274.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2038078503165366274.json`
+
+## 结构
+
+**生成流程**：Model → Output → Other
+
+**节点**（12 个）：
+- `LoadImage`
+- `LoadAudio`
+- `llama_cpp_model_loader`
+- `llama_cpp_instruct_adv`
+- `JWInteger`
+- `PreviewAny`
+- `easy cleanGpuUsed`
+- `RH_MagiHumanGenerate`
+- `SaveVideo`
+- `RH_MagiHumanModelLoader`
+- `CR Prompt Text`
+- `Note`
+
+## 知识
+
+覆盖率 **83%**（10/12）
+
+**有卡**：`LoadImage`、`LoadAudio`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`JWInteger`、`easy cleanGpuUsed`、`RH_MagiHumanGenerate`、`SaveVideo`、`RH_MagiHumanModelLoader`、`CR Prompt Text`
+
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、llama_cpp_instruct_adv、llama_cpp_model_loader、LoadAudio、JWInteger、RH_MagiHumanGenerate

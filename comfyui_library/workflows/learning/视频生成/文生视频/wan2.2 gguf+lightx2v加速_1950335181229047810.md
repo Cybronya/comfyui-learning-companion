@@ -1,0 +1,65 @@
+---
+key: 视频生成/文生视频/wan2.2 gguf+lightx2v加速_1950335181229047810.json
+name: wan2.2 gguf+lightx2v加速_1950335181229047810.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950335181229047810.json
+hash: 57c29a5e818dc6a5
+coverage: 1
+learned_at: 2026-10-15 22:43:35
+nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, LoraLoader, VAEDecode, UnetLoaderGGUF, VAELoader, CLIPLoader, UnetLoaderGGUF, CLIPTextEncode, VHS_VideoCombine, WanImageToVideo, CLIPTextEncode, KSampler, KSampler]
+patterns: [lora]
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "lora_name": null, "sampler_name": "euler", "scheduler": "normal", "seed": 884525243691869, "steps": 10, "strength_clip": 1, "strength_model": 1}
+---
+
+# 视频生成/文生视频/wan2.2 gguf+lightx2v加速_1950335181229047810.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950335181229047810.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（18 个）：
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `LoraLoader` ★核心
+- `VAEDecode` ★核心
+- `UnetLoaderGGUF` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `UnetLoaderGGUF` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `WanImageToVideo`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `lora_name` = `None`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+- `seed` = `884525243691869`
+- `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoader`、`VAEDecode`、`UnetLoaderGGUF`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`VHS_VideoCombine`、`WanImageToVideo`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoraLoader、LoraLoader

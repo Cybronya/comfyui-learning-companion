@@ -1,0 +1,48 @@
+---
+key: 视频生成/文生视频/LTXvideo0.9.6文生视频秒出_1922112909130809345.json
+name: LTXvideo0.9.6文生视频秒出_1922112909130809345.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1922112909130809345.json
+hash: 84e847e6de0c33c6
+coverage: 1
+learned_at: 2026-10-15 22:43:23
+nodes: [CLIPLoader, LTXVConditioning, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, LTXVScheduler, KSamplerSelect, SamplerCustom, VAEDecode, VHS_VideoCombine, EmptyLTXVLatentVideo]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltxv-2b-0.9.6-dev-04-25-v1.safetensors"}
+---
+
+# 视频生成/文生视频/LTXvideo0.9.6文生视频秒出_1922112909130809345.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1922112909130809345.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（11 个）：
+- `CLIPLoader`
+- `LTXVConditioning`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVScheduler`
+- `KSamplerSelect` ★核心
+- `SamplerCustom` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `EmptyLTXVLatentVideo`
+
+## 关键参数
+
+- `checkpoint` = `ltxv-2b-0.9.6-dev-04-25-v1.safetensors`
+
+## 知识
+
+覆盖率 **100%**（11/11）
+
+**有卡**：`CLIPLoader`、`LTXVConditioning`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`LTXVScheduler`、`KSamplerSelect`、`SamplerCustom`、`VAEDecode`、`VHS_VideoCombine`、`EmptyLTXVLatentVideo`
+
+**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、KSamplerSelect、SamplerCustom、EmptyLTXVLatentVideo、LTXVConditioning

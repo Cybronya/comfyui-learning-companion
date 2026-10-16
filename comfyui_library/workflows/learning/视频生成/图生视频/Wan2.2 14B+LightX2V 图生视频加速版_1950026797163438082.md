@@ -1,0 +1,62 @@
+---
+key: 视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频加速版_1950026797163438082.json
+name: Wan2.2 14B+LightX2V 图生视频加速版_1950026797163438082.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950026797163438082.json
+hash: f368b30514b03e65
+coverage: 1
+learned_at: 2026-10-15 22:30:51
+nodes: [UNETLoader, CLIPLoader, VAELoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, KSamplerAdvanced, LayerUtility: PurgeVRAM, KSamplerAdvanced, LayerUtility: PurgeVRAM, VAEDecode, VHS_VideoCombine, CLIPTextEncode, LoadImage, WanImageToVideo, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频加速版_1950026797163438082.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950026797163438082.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（20 个）：
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `WanImageToVideo`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（20/20）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`VHS_VideoCombine`、`CLIPTextEncode`、`LoadImage`、`WanImageToVideo`、`ModelSamplingSD3`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

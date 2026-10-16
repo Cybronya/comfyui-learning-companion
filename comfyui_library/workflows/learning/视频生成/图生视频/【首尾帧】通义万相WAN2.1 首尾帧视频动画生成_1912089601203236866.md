@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/【首尾帧】通义万相WAN2.1 首尾帧视频动画生成_1912089601203236866.json
+name: 【首尾帧】通义万相WAN2.1 首尾帧视频动画生成_1912089601203236866.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1912089601203236866.json
+hash: d03bcfbca73356ff
+coverage: 0.851852
+learned_at: 2026-10-15 22:29:32
+nodes: [WanVideoTeaCache, WanVideoSLG, WanVideoSampler, WanVideoExperimentalArgs, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoDecode, WanVideoEnhanceAVideo, WanVideoTorchCompileSettings, WanVideoBlockSwap, ImageScale, easy int, easy int, WanVideoTextEncode, WanVideoVAELoader, WanVideoImageToVideoEncode, LoadWanVideoClipTextEncoder, WanVideoClipVisionEncode, VHS_VideoCombine, easy positive, ImageScale, Fast Groups Muter (rgthree), Note, Note, Note, LoadImage, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【首尾帧】通义万相WAN2.1 首尾帧视频动画生成_1912089601203236866.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1912089601203236866.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（27 个）：
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `WanVideoSampler` ★核心
+- `WanVideoExperimentalArgs`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `ImageScale`
+- `easy int`
+- `easy int`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoClipVisionEncode`
+- `VHS_VideoCombine`
+- `easy positive`
+- `ImageScale`
+- `Fast Groups Muter (rgthree)`
+- `Note`
+- `Note`
+- `Note`
+- `LoadImage`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **85%**（23/27）
+
+**有卡**：`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoEnhanceAVideo`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`ImageScale`、`easy int`、`WanVideoTextEncode`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`LoadWanVideoClipTextEncoder`、`WanVideoClipVisionEncode`、`VHS_VideoCombine`、`easy positive`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

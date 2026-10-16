@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/Wan2.1-FusionX-VACE动作迁移_1933708885247352833.json
+name: Wan2.1-FusionX-VACE动作迁移_1933708885247352833.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1933708885247352833.json
+hash: 0ce18afc9c722653
+coverage: 0.882353
+learned_at: 2026-10-15 22:30:14
+nodes: [WanVideoBlockSwap, LoadImage, WanVideoModelLoader, JWInteger, ImageMirror, ImpactSwitch, CR Prompt Text, JWInteger, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2, OpenposePreprocessor, LoadWanVideoT5TextEncoder, DownloadAndLoadDepthAnythingV2Model, WanVideoVAELoader, ImageResizeKJ, ImageRepeat, PreviewImage, DepthAnything_V2, JWInteger, WanVideoTextEncode, ImageFromBatch+, VHS_MergeImages, WanVideoVACEEncode, ImpactSwitch, VHS_VideoCombine, WanVideoExperimentalArgs, WanVideoSLG, WanVideoTeaCache, WanVideoEnhanceAVideo, WanVideoDecode, WanVideoSampler, ImageFromBatch+, VHS_VideoCombine, VHS_LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1-FusionX-VACE动作迁移_1933708885247352833.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1933708885247352833.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（34 个）：
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `WanVideoModelLoader`
+- `JWInteger`
+- `ImageMirror`
+- `ImpactSwitch`
+- `CR Prompt Text`
+- `JWInteger`
+- `PreviewImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `OpenposePreprocessor`
+- `LoadWanVideoT5TextEncoder`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `WanVideoVAELoader`
+- `ImageResizeKJ`
+- `ImageRepeat`
+- `PreviewImage`
+- `DepthAnything_V2`
+- `JWInteger`
+- `WanVideoTextEncode`
+- `ImageFromBatch+`
+- `VHS_MergeImages`
+- `WanVideoVACEEncode`
+- `ImpactSwitch`
+- `VHS_VideoCombine`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `ImageFromBatch+`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+
+## 知识
+
+覆盖率 **88%**（30/34）
+
+**有卡**：`WanVideoBlockSwap`、`LoadImage`、`WanVideoModelLoader`、`JWInteger`、`ImageMirror`、`CR Prompt Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`OpenposePreprocessor`、`LoadWanVideoT5TextEncoder`、`DownloadAndLoadDepthAnythingV2Model`、`WanVideoVAELoader`、`ImageResizeKJ`、`ImageRepeat`、`DepthAnything_V2`、`WanVideoTextEncode`、`ImageFromBatch+`、`VHS_MergeImages`、`WanVideoVACEEncode`、`VHS_VideoCombine`、`WanVideoExperimentalArgs`、`WanVideoSLG`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`WanVideoSampler`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、OpenposePreprocessor、DepthAnything_V2、DownloadAndLoadDepthAnythingV2Model、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode

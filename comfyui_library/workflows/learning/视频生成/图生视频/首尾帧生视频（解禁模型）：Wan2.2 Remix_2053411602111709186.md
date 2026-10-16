@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/首尾帧生视频（解禁模型）：Wan2.2 Remix_2053411602111709186.json
+name: 首尾帧生视频（解禁模型）：Wan2.2 Remix_2053411602111709186.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2053411602111709186.json
+hash: 0a8a65b38b87998d
+coverage: 1
+learned_at: 2026-10-15 22:37:39
+nodes: [UNETLoader, UNETLoader, CLIPLoader, VAELoader, LoadImage, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, ImageResizeKJv2, CLIPVisionEncode, CLIPVisionLoader, ImageResizeKJv2, CLIPVisionEncode, CLIPVisionLoader, WanFirstLastFrameToVideo, CLIPTextEncode, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, WanMoeKSampler, VAEDecode, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/首尾帧生视频（解禁模型）：Wan2.2 Remix_2053411602111709186.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2053411602111709186.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（24 个）：
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `LoadImage`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `WanFirstLastFrameToVideo`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `WanMoeKSampler` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **100%**（24/24）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`ImageResizeKJv2`、`CLIPVisionEncode`、`CLIPVisionLoader`、`WanFirstLastFrameToVideo`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`WanMoeKSampler`、`VAEDecode`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler

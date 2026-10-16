@@ -1,0 +1,56 @@
+---
+key: 视频生成/图生视频/wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json
+name: wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1930296674030141442.json
+hash: 9ac49560130ad244
+coverage: 1
+learned_at: 2026-10-15 22:30:05
+nodes: [ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, UNETLoader, KSampler, WanImageToVideo, VAEDecode, CLIPVisionEncode, CLIPVisionLoader, CLIPLoader, VAELoader, LoadImage, SaveAnimatedWEBP, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 958355977435260, "steps": 20}
+---
+
+# 视频生成/图生视频/wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1930296674030141442.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（14 个）：
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `WanImageToVideo`
+- `VAEDecode` ★核心
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `VAELoader`
+- `LoadImage`
+- `SaveAnimatedWEBP`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `958355977435260`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（14/14）
+
+**有卡**：`ModelSamplingSD3`、`CLIPTextEncode`、`UNETLoader`、`KSampler`、`WanImageToVideo`、`VAEDecode`、`CLIPVisionEncode`、`CLIPVisionLoader`、`CLIPLoader`、`VAELoader`、`LoadImage`、`SaveAnimatedWEBP`、`VHS_VideoCombine`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CLIPVisionEncode

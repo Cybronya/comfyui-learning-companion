@@ -1,0 +1,166 @@
+---
+key: 视频生成/图生视频/wan2.2漫剧全自动图生视频_2013141859459145729.json
+name: wan2.2漫剧全自动图生视频_2013141859459145729.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2013141859459145729.json
+hash: e3736cf27c0a25ce
+coverage: 0.75
+learned_at: 2026-10-15 22:34:29
+nodes: [GetNode, WanImageToVideoSVIPro, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, KSamplerAdvanced, LayerUtility: PurgeVRAM V2, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, VAEDecode, KSamplerAdvanced, VAEEncode, GetNode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, VAEEncode, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, CLIPLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoader, LoraLoaderModelOnly, EnhancedLoadDiffusionModel, ImageScaleToTotalPixels, ConditioningZeroOut, FluxKontextMultiReferenceLatentMethod, TextEncodeQwenImageEditPlusAdvance_lrzjason, FluxKontextMultiReferenceLatentMethod, LayerUtility: PurgeVRAM V2, KSamplerAdvanced, VAEDecode, LayerUtility: PurgeVRAM V2, VAEDecode, VAELoader, easy imageListToImageBatch, PreviewImage, PreviewImage, PreviewImage, VHS_VideoCombine, easy indexAnything, easy indexAnything, easy indexAnything, ImageConcatenate_UTK, VAEDecode, WanImageToVideoSVIPro, VAEEncode, SetNode, DiffusionModelLoaderKJ, LoraLoaderModelOnly, DiffusionModelLoaderKJ, LoraLoaderModelOnly, MultiLinePromptIndex, TextConcatenate, TextConcatenate, easy showAnything, ProcessString, CR Split String, EmptyLatentImage, GetImageSize, RH_Captioner, easy showAnything, GODMT_CreateList, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, SetNode, CLIPLoader, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, CLIPTextEncode, GetNode, TextConcatenate, TextConcatenate, CLIPTextEncode, Reroute, ACE_TextConcatenate, Reroute, RH_Captioner, ImageConcatenate_UTK, RH_Captioner, easy showAnything, ACE_TextConcatenate, Text, Text, KSampler, easy showAnything, LayerUtility: PurgeVRAM V2, LayerUtility: ImageScaleByAspectRatio V2, easy showAnything, LoadImage, Text, Text, easy showAnything]
+patterns: [text_to_image, image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 81082352047875, "steps": 8, "width": 1024}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/wan2.2漫剧全自动图生视频_2013141859459145729.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2013141859459145729.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（108 个）：
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEEncode` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `EnhancedLoadDiffusionModel`
+- `ImageScaleToTotalPixels`
+- `ConditioningZeroOut`
+- `FluxKontextMultiReferenceLatentMethod`
+- `TextEncodeQwenImageEditPlusAdvance_lrzjason`
+- `FluxKontextMultiReferenceLatentMethod`
+- `LayerUtility: PurgeVRAM V2`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `easy imageListToImageBatch`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `ImageConcatenate_UTK`
+- `VAEDecode` ★核心
+- `WanImageToVideoSVIPro`
+- `VAEEncode` ★核心
+- `SetNode`
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `MultiLinePromptIndex`
+- `TextConcatenate`
+- `TextConcatenate`
+- `easy showAnything`
+- `ProcessString`
+- `CR Split String`
+- `EmptyLatentImage` ★核心
+- `GetImageSize`
+- `RH_Captioner`
+- `easy showAnything`
+- `GODMT_CreateList`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SetNode`
+- `CLIPLoader`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `TextConcatenate`
+- `TextConcatenate`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `ACE_TextConcatenate`
+- `Reroute`
+- `RH_Captioner`
+- `ImageConcatenate_UTK`
+- `RH_Captioner`
+- `easy showAnything`
+- `ACE_TextConcatenate`
+- `Text`
+- `Text`
+- `KSampler` ★核心
+- `easy showAnything`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy showAnything`
+- `LoadImage`
+- `Text`
+- `Text`
+- `easy showAnything`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `seed` = `81082352047875`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **75%**（81/108）
+
+**有卡**：`WanImageToVideoSVIPro`、`ImageBatchExtendWithOverlap`、`KSamplerAdvanced`、`LayerUtility: PurgeVRAM V2`、`VAEDecode`、`VAEEncode`、`CLIPTextEncode`、`VHS_VideoCombine`、`CLIPLoader`、`LoraLoaderModelOnly`、`VAELoader`、`EnhancedLoadDiffusionModel`、`ImageScaleToTotalPixels`、`ConditioningZeroOut`、`FluxKontextMultiReferenceLatentMethod`、`TextEncodeQwenImageEditPlusAdvance_lrzjason`、`easy imageListToImageBatch`、`easy indexAnything`、`ImageConcatenate_UTK`、`DiffusionModelLoaderKJ`、`MultiLinePromptIndex`、`TextConcatenate`、`ProcessString`、`CR Split String`、`EmptyLatentImage`、`GetImageSize`、`RH_Captioner`、`GODMT_CreateList`、`ACE_TextConcatenate`、`Text`、`KSampler`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

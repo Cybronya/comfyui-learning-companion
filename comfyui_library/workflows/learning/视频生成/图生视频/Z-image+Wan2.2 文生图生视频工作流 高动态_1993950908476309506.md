@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/Z-image+Wan2.2 文生图生视频工作流 高动态_1993950908476309506.json
+name: Z-image+Wan2.2 文生图生视频工作流 高动态_1993950908476309506.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1993950908476309506.json
+hash: a2053e30b6feb70e
+coverage: 0.914286
+learned_at: 2026-10-15 22:33:19
+nodes: [CR Text, CR SDXL Aspect Ratio, PreviewImage, UNETLoader, CLIPLoader, VAELoader, ConditioningZeroOut, LayerUtility: ImageScaleByAspectRatio V2, KSampler, VAEDecode, CLIPTextEncode, UNETLoader, LoraLoaderModelOnly, ApplySageAttention, ModelSamplingSD3, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ApplySageAttention, ModelSamplingSD3, CLIPVisionLoader, CLIPVisionEncode, PainterI2V, WanMoeKSampler, VAELoader, SimpleMath+, CLIPTextEncode, CLIPTextEncode, VAEDecode, ImageFromBatch+, PrimitiveInt, PrimitiveInt, VHS_VideoCombine, CLIPLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.875, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Z-image+Wan2.2 文生图生视频工作流 高动态_1993950908476309506.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1993950908476309506.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（35 个）：
+- `CR Text`
+- `CR SDXL Aspect Ratio`
+- `PreviewImage`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ConditioningZeroOut`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ApplySageAttention`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ApplySageAttention`
+- `ModelSamplingSD3`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `PainterI2V`
+- `WanMoeKSampler` ★核心
+- `VAELoader`
+- `SimpleMath+`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `ImageFromBatch+`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `VHS_VideoCombine`
+- `CLIPLoader`
+
+## 关键参数
+
+- `seed` = `0.875`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **91%**（32/35）
+
+**有卡**：`CR Text`、`CR SDXL Aspect Ratio`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ConditioningZeroOut`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSampler`、`VAEDecode`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`ApplySageAttention`、`ModelSamplingSD3`、`CLIPVisionLoader`、`CLIPVisionEncode`、`PainterI2V`、`WanMoeKSampler`、`SimpleMath+`、`ImageFromBatch+`、`VHS_VideoCombine`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut

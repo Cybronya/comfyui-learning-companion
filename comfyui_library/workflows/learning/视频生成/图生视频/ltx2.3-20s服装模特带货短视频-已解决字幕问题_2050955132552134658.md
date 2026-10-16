@@ -1,0 +1,110 @@
+---
+key: 视频生成/图生视频/ltx2.3-20s服装模特带货短视频-已解决字幕问题_2050955132552134658.json
+name: ltx2.3-20s服装模特带货短视频-已解决字幕问题_2050955132552134658.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2050955132552134658.json
+hash: 95d29a0bcfe9fc5e
+coverage: 0.873239
+learned_at: 2026-10-15 22:37:20
+nodes: [CFGGuider, SamplerCustomAdvanced, DualCLIPLoader, LTXVConcatAVLatent, LTXVSeparateAVLatent, VAELoaderKJ, SamplerCustomAdvanced, ManualSigmas, easy showAnything, easy showAnything, easy mathInt, easy mathInt, easy mathInt, easy mathInt, LTXVConcatAVLatent, VAELoaderKJ, LTXVAudioVAEDecode, LTXVSeparateAVLatent, LTXVImgToVideoInplace, PathchSageAttentionKJ, CFGGuider, GetImageSize, easy compare, KSamplerSelect, LTXVAudioVAEDecode, ManualSigmas, LTXVLatentUpsampler, LTXVCropGuides, LTXVImgToVideoInplace, KSamplerSelect, easy ifElse, ImageResizeKJv2, ImageResizeKJv2, easy imageSize, PreviewImage, LTXVConditioning, ImageResizeKJv2, ImageResizeKJv2, easy int, easy int, LatentUpscaleModelLoader, VAEDecode, VAEDecode, LayerUtility: TextImage V2, LoadImage, CLIPTextEncode, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, RandomNoise, CLIPTextEncode, LoraLoaderModelOnly, VHS_VideoCombine, RandomNoise, Note, LoraLoaderModelOnly, easy promptConcat, AILab_QwenVL, UNETLoader, VHS_VideoCombine, easy ifElse, easy positive, easy mathInt, easy imageSize, ImageConcanate, easy positive, PreviewAny, easy positive, easy ifElse, Note, Seed (rgthree), Seed (rgthree)]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 481}
+---
+
+# 视频生成/图生视频/ltx2.3-20s服装模特带货短视频-已解决字幕问题_2050955132552134658.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2050955132552134658.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（71 个）：
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `DualCLIPLoader`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `VAELoaderKJ`
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `easy showAnything`
+- `easy showAnything`
+- `easy mathInt`
+- `easy mathInt`
+- `easy mathInt`
+- `easy mathInt`
+- `LTXVConcatAVLatent`
+- `VAELoaderKJ`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVImgToVideoInplace`
+- `PathchSageAttentionKJ`
+- `CFGGuider`
+- `GetImageSize`
+- `easy compare`
+- `KSamplerSelect` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `ManualSigmas`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVCropGuides`
+- `LTXVImgToVideoInplace`
+- `KSamplerSelect` ★核心
+- `easy ifElse`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `easy imageSize`
+- `PreviewImage`
+- `LTXVConditioning`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `easy int`
+- `easy int`
+- `LatentUpscaleModelLoader`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: TextImage V2`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `RandomNoise`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VHS_VideoCombine`
+- `RandomNoise`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `easy promptConcat`
+- `AILab_QwenVL`
+- `UNETLoader` ★核心
+- `VHS_VideoCombine`
+- `easy ifElse`
+- `easy positive`
+- `easy mathInt`
+- `easy imageSize`
+- `ImageConcanate`
+- `easy positive`
+- `PreviewAny`
+- `easy positive`
+- `easy ifElse`
+- `Note`
+- `Seed (rgthree)`
+- `Seed (rgthree)`
+
+## 关键参数
+
+- `width` = `481`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **87%**（62/71）
+
+**有卡**：`CFGGuider`、`SamplerCustomAdvanced`、`DualCLIPLoader`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`VAELoaderKJ`、`ManualSigmas`、`easy mathInt`、`LTXVAudioVAEDecode`、`LTXVImgToVideoInplace`、`PathchSageAttentionKJ`、`GetImageSize`、`easy compare`、`KSamplerSelect`、`LTXVLatentUpsampler`、`LTXVCropGuides`、`ImageResizeKJv2`、`easy imageSize`、`LTXVConditioning`、`easy int`、`LatentUpscaleModelLoader`、`VAEDecode`、`LayerUtility: TextImage V2`、`LoadImage`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`RandomNoise`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`easy promptConcat`、`AILab_QwenVL`、`UNETLoader`、`easy positive`、`ImageConcanate`、`Seed (rgthree)`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

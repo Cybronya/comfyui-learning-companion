@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json
+name: Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2054244112395710465.json
+hash: 43c7493b98dc116c
+coverage: 0.777778
+learned_at: 2026-10-15 22:37:46
+nodes: [LTXVAudioVAEDecode, SetNode, GetNode, SetNode, VisualizeSigmasKJ, LTX2SamplingPreviewOverride, PreviewImage, LTXVSeparateAVLatent, VAEDecode, GetNode, SamplerCustom, KSamplerSelect, ConditioningZeroOut, BasicScheduler, GetNode, VAELoaderKJ, VAELoaderKJ, UNETLoader, DualCLIPLoader, PromptRelaySmartEncode, LoraLoaderModelOnly, PathchSageAttentionKJ, LayerUtility: ImageScaleByAspectRatio V2, EmptyLTXVLatentVideo, GetNode, LTXVPreprocess, LTXVImgToVideoInplaceKJ, LTXVConcatAVLatent, LoadImage, LTXVEmptyLatentAudio, LTXVConditioning, CR Prompt Text, VHS_VideoCombine, PrimitiveFloat, JWInteger, CR Prompt Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 489}
+---
+
+# 视频生成/图生视频/Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2054244112395710465.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（36 个）：
+- `LTXVAudioVAEDecode` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `VisualizeSigmasKJ`
+- `LTX2SamplingPreviewOverride`
+- `PreviewImage`
+- `LTXVSeparateAVLatent`
+- `VAEDecode` ★核心
+- `GetNode`
+- `SamplerCustom` ★核心
+- `KSamplerSelect` ★核心
+- `ConditioningZeroOut`
+- `BasicScheduler`
+- `GetNode`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `PromptRelaySmartEncode`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `LTXVPreprocess`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVConcatAVLatent`
+- `LoadImage`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConditioning`
+- `CR Prompt Text`
+- `VHS_VideoCombine`
+- `PrimitiveFloat`
+- `JWInteger`
+- `CR Prompt Text`
+
+## 关键参数
+
+- `width` = `489`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **78%**（28/36）
+
+**有卡**：`LTXVAudioVAEDecode`、`VisualizeSigmasKJ`、`LTX2SamplingPreviewOverride`、`LTXVSeparateAVLatent`、`VAEDecode`、`SamplerCustom`、`KSamplerSelect`、`ConditioningZeroOut`、`BasicScheduler`、`VAELoaderKJ`、`UNETLoader`、`DualCLIPLoader`、`PromptRelaySmartEncode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`LTXVImgToVideoInplaceKJ`、`LTXVConcatAVLatent`、`LoadImage`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`CR Prompt Text`、`VHS_VideoCombine`、`JWInteger`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent

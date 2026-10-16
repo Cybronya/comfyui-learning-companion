@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/LTX2.3图生视频(KJ版)_2029845727714742273.json
+name: LTX2.3图生视频(KJ版)_2029845727714742273.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2029845727714742273.json
+hash: 81034dc4a56afa0f
+coverage: 0.918367
+learned_at: 2026-10-15 22:35:23
+nodes: [DualCLIPLoader, PreviewAny, LatentUpscaleModelLoader, TextGenerateLTX2Prompt, RandomNoise, TextListSplit, Any To String (mtb), Qwen3_VQA, easy showAnything, CLIPTextEncode, KSamplerSelect, GetImageSize, PrimitiveInt, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVImgToVideoInplace, LTXVPreprocess, ResizeImagesByLongerEdge, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecode, LTXVSeparateAVLatent, LTXVCropGuides, EmptyLTXVLatentVideo, DualCLIPLoader, CLIPTextEncode, VAELoaderKJ, CFGGuider, LTXVLatentUpsampler, LTXVConcatAVLatent, KSampler, ImageScaleBy, EmptyImage, GetImageSize, LayerUtility: PurgeVRAM V2, LTXVConditioning, ImageAndMaskResizeNode, UNETLoader, easy anythingIndexSwitch, easy positive, Note, VAELoaderKJ, LoadImage, LoraLoaderModelOnly, LTXVImgToVideoInplace, VHS_VideoCombine, SamplerCustomAdvanced, ManualSigmas, LTXVScheduler]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 0.35, "height": 25, "sampler_name": "euler", "scheduler": "simple", "seed": 917400768168762, "steps": 4, "width": 97}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/LTX2.3图生视频(KJ版)_2029845727714742273.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2029845727714742273.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（49 个）：
+- `DualCLIPLoader`
+- `PreviewAny`
+- `LatentUpscaleModelLoader`
+- `TextGenerateLTX2Prompt`
+- `RandomNoise`
+- `TextListSplit`
+- `Any To String (mtb)`
+- `Qwen3_VQA`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `KSamplerSelect` ★核心
+- `GetImageSize`
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `ResizeImagesByLongerEdge`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `EmptyLTXVLatentVideo`
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `VAELoaderKJ`
+- `CFGGuider`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVConcatAVLatent`
+- `KSampler` ★核心
+- `ImageScaleBy`
+- `EmptyImage`
+- `GetImageSize`
+- `LayerUtility: PurgeVRAM V2`
+- `LTXVConditioning`
+- `ImageAndMaskResizeNode`
+- `UNETLoader` ★核心
+- `easy anythingIndexSwitch`
+- `easy positive`
+- `Note`
+- `VAELoaderKJ`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LTXVImgToVideoInplace`
+- `VHS_VideoCombine`
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `LTXVScheduler`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `seed` = `917400768168762`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.35`
+
+## 知识
+
+覆盖率 **92%**（45/49）
+
+**有卡**：`DualCLIPLoader`、`LatentUpscaleModelLoader`、`TextGenerateLTX2Prompt`、`RandomNoise`、`TextListSplit`、`Any To String (mtb)`、`Qwen3_VQA`、`CLIPTextEncode`、`KSamplerSelect`、`GetImageSize`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`ResizeImagesByLongerEdge`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`LTXVCropGuides`、`EmptyLTXVLatentVideo`、`VAELoaderKJ`、`CFGGuider`、`LTXVLatentUpsampler`、`KSampler`、`ImageScaleBy`、`EmptyImage`、`LayerUtility: PurgeVRAM V2`、`LTXVConditioning`、`ImageAndMaskResizeNode`、`UNETLoader`、`easy anythingIndexSwitch`、`easy positive`、`LoadImage`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVScheduler`
+
+**用到的条目**：KSampler、VAEDecode、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

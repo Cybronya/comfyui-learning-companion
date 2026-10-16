@@ -1,0 +1,73 @@
+---
+key: 视频生成/图生视频/Seedance 2.0 Fast 视频生成全家桶 最强视频 图生视频+首尾帧+视频修改+文生视频_2043696698463096834.json
+name: Seedance 2.0 Fast 视频生成全家桶 最强视频 图生视频+首尾帧+视频修改+文生视频_2043696698463096834.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2043696698463096834.json
+hash: d2badcdca67d4e21
+coverage: 0.853659
+learned_at: 2026-10-15 22:36:33
+nodes: [SaveVideo, RH_SparkVideoAssetIdsMerge, LoadImage, LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, SaveVideo, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), MuyeTextEditOutput, SaveVideo, SaveVideo, MuyeTextEditOutput, SaveVideo, LoadImage, LoadImage, LoadImage, LoadImage, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, LoadImage, LoadImage, MuyeTextEditOutput, LoadImage, MuyeTextEditOutput, LoadImage, MuyeTextEditOutput, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Note, Fast Groups Bypasser (rgthree), RH_RhartVideoSparkvideo20FastMultimodalVideo, RH_RhartVideoSparkvideo20FastImageToVideo, RH_RhartVideoSparkvideo20FastMultimodalVideo, RH_RhartVideoSparkvideo20FastMultimodalVideo, RH_RhartVideoSparkvideo20FastTextToVideo, Fast Groups Bypasser (rgthree), LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance 2.0 Fast 视频生成全家桶 最强视频 图生视频+首尾帧+视频修改+文生视频_2043696698463096834.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2043696698463096834.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（41 个）：
+- `SaveVideo`
+- `RH_SparkVideoAssetIdsMerge`
+- `LoadImage`
+- `LoadImage`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetCreate`
+- `SaveVideo`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `MuyeTextEditOutput`
+- `SaveVideo`
+- `SaveVideo`
+- `MuyeTextEditOutput`
+- `SaveVideo`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetCreate`
+- `LoadImage`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Note`
+- `Fast Groups Bypasser (rgthree)`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `RH_RhartVideoSparkvideo20FastImageToVideo`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `RH_RhartVideoSparkvideo20FastTextToVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadVideo`
+
+## 知识
+
+覆盖率 **85%**（35/41）
+
+**有卡**：`SaveVideo`、`RH_SparkVideoAssetIdsMerge`、`LoadImage`、`RH_SparkVideoAssetCreate`、`MuyeTextEditOutput`、`RH_RhartVideoSparkvideo20FastMultimodalVideo`、`RH_RhartVideoSparkvideo20FastImageToVideo`、`RH_RhartVideoSparkvideo20FastTextToVideo`、`LoadVideo`
+
+**用到的条目**：LoadImage、MuyeTextEditOutput、SaveVideo、LoadVideo、RH_RhartVideoSparkvideo20FastImageToVideo、RH_RhartVideoSparkvideo20FastMultimodalVideo、RH_RhartVideoSparkvideo20FastTextToVideo、RH_SparkVideoAssetCreate

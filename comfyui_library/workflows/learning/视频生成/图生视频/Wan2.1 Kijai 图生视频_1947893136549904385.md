@@ -1,0 +1,56 @@
+---
+key: 视频生成/图生视频/Wan2.1 Kijai 图生视频_1947893136549904385.json
+name: Wan2.1 Kijai 图生视频_1947893136549904385.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1947893136549904385.json
+hash: 82e174dd9a332183
+coverage: 0.791667
+learned_at: 2026-10-15 22:30:46
+nodes: [WanVideoVAELoader, LoadWanVideoT5TextEncoder, CLIPVisionLoader, ImageResizeKJ, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, WanVideoTeaCache, WanVideoEnhanceAVideo, WanVideoSampler, WanVideoDecode, LoadImage, WanVideoBlockSwap, WanVideoVRAMManagement, Note, WanVideoTextEncode, Note, WanVideoModelLoader, WanVideoTorchCompileSettings, Note, Note Plus (mtb), LoadImageFromUrl, Note, VHS_VideoCombine, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 Kijai 图生视频_1947893136549904385.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1947893136549904385.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（24 个）：
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `CLIPVisionLoader`
+- `ImageResizeKJ`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoTeaCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `LoadImage`
+- `WanVideoBlockSwap`
+- `WanVideoVRAMManagement`
+- `Note`
+- `WanVideoTextEncode`
+- `Note`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `Note`
+- `Note Plus (mtb)`
+- `LoadImageFromUrl`
+- `Note`
+- `VHS_VideoCombine`
+- `Note`
+
+## 知识
+
+覆盖率 **79%**（19/24）
+
+**有卡**：`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`CLIPVisionLoader`、`ImageResizeKJ`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoSampler`、`WanVideoDecode`、`LoadImage`、`WanVideoBlockSwap`、`WanVideoVRAMManagement`、`WanVideoTextEncode`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`Note Plus (mtb)`、`LoadImageFromUrl`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

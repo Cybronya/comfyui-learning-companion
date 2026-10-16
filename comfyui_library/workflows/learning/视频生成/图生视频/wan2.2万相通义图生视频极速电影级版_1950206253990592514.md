@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/wan2.2万相通义图生视频极速电影级版_1950206253990592514.json
+name: wan2.2万相通义图生视频极速电影级版_1950206253990592514.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950206253990592514.json
+hash: 556b9f6f09fab330
+coverage: 0.791667
+learned_at: 2026-10-15 22:30:54
+nodes: [LoadImage, CLIPLoader, VAELoader, ModelSamplingSD3, UNETLoader, ModelSamplingSD3, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, MarkdownNote, Note, CLIPTextEncode, CLIPTextEncode, ImageResizeKJ, UNETLoader, WanImageToVideo, MarkdownNote, Note, LoadImage, JjkText, KSamplerAdvanced, VAEDecode, LayerUtility: PurgeVRAM V2, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2万相通义图生视频极速电影级版_1950206253990592514.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950206253990592514.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（24 个）：
+- `LoadImage`
+- `CLIPLoader`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJ`
+- `UNETLoader` ★核心
+- `WanImageToVideo`
+- `MarkdownNote`
+- `Note`
+- `LoadImage`
+- `JjkText`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **79%**（19/24）
+
+**有卡**：`LoadImage`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`UNETLoader`、`KSamplerAdvanced`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`ImageResizeKJ`、`WanImageToVideo`、`VAEDecode`、`LayerUtility: PurgeVRAM V2`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

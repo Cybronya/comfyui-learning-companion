@@ -1,0 +1,73 @@
+---
+key: 视频生成/图生视频/wan2.1_fun图生视频转绘_1918621087226335233.json
+name: wan2.1_fun图生视频转绘_1918621087226335233.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1918621087226335233.json
+hash: 0f8fd4dfbddfee59
+coverage: 1
+learned_at: 2026-10-15 22:29:40
+nodes: [CLIPLoader, VAELoader, UNETLoader, SkipLayerGuidanceWanVideo, CLIPTextEncode, ModelSamplingSD3, VAEDecodeTiled, KSampler, EmptyHunyuanLatentVideo, WanFunControlToVideo, CLIPVisionLoader, CLIPVisionEncode, ImageResizeKJ, LoadImage, CLIPTextEncode, ImageResizeKJ, WanVideoTeaCacheKJ, VHS_VideoCombine, Int, VHS_LoadVideo]
+patterns: []
+missing: []
+problems: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 257564033245933, "steps": 20}
+discoveries: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/wan2.1_fun图生视频转绘_1918621087226335233.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1918621087226335233.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（20 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `SkipLayerGuidanceWanVideo`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `VAEDecodeTiled` ★核心
+- `KSampler` ★核心
+- `EmptyHunyuanLatentVideo`
+- `WanFunControlToVideo`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `ImageResizeKJ`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJ`
+- `WanVideoTeaCacheKJ`
+- `VHS_VideoCombine`
+- `Int`
+- `VHS_LoadVideo`
+
+## 关键参数
+
+- `seed` = `257564033245933`
+- `steps` = `20`
+- `cfg` = `5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（20/20）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`SkipLayerGuidanceWanVideo`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecodeTiled`、`KSampler`、`EmptyHunyuanLatentVideo`、`WanFunControlToVideo`、`CLIPVisionLoader`、`CLIPVisionEncode`、`ImageResizeKJ`、`LoadImage`、`WanVideoTeaCacheKJ`、`VHS_VideoCombine`、`Int`、`VHS_LoadVideo`
+
+**用到的条目**：KSampler、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、SkipLayerGuidanceWanVideo、VAEDecodeTiled
+
+## 参数体检
+
+发现 1 个问题：
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

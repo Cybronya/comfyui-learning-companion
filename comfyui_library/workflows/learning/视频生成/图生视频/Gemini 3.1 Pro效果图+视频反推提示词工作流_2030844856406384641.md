@@ -1,0 +1,39 @@
+---
+key: 视频生成/图生视频/Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641.json
+name: Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2030844856406384641.json
+hash: 89424e3a792d31a0
+coverage: 0.714286
+learned_at: 2026-10-15 22:35:28
+nodes: [easy saveText, ShowText|pysssss, MuyeLoadImage, ShowText|pysssss, RH_LLMAPI_Pro_Node, easy positive, LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2030844856406384641.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（7 个）：
+- `easy saveText`
+- `ShowText|pysssss`
+- `MuyeLoadImage`
+- `ShowText|pysssss`
+- `RH_LLMAPI_Pro_Node`
+- `easy positive`
+- `LoadVideo`
+
+## 知识
+
+覆盖率 **71%**（5/7）
+
+**有卡**：`easy saveText`、`MuyeLoadImage`、`RH_LLMAPI_Pro_Node`、`easy positive`、`LoadVideo`
+
+**用到的条目**：easy saveText、LoadVideo、RH_LLMAPI_Pro_Node、MuyeLoadImage、easy positive、sd15-t2i-basic、sd15-t2i-lora、LoadImage

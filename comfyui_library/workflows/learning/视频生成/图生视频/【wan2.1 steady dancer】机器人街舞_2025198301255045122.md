@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/【wan2.1 steady dancer】机器人街舞_2025198301255045122.json
+name: 【wan2.1 steady dancer】机器人街舞_2025198301255045122.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2025198301255045122.json
+hash: d7b7314ddc4a5262
+coverage: 1
+learned_at: 2026-10-15 22:35:12
+nodes: [WanVideoModelLoader, WanVideoLoraSelect, WanVideoSetLoRAs, WanVideoTorchCompileSettings, easy getNode, easy setNode, easy getNode, easy setNode, WanVideoVAELoader, easy getNode, WanVideoImageToVideoEncode, WanVideoClipVisionEncode, easy getNode, easy getNode, easy getNode, easy getNode, CLIPVisionLoader, easy setNode, easy setNode, OnnxDetectionModelLoader, easy setNode, Int, easy getNode, easy setNode, easy setNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, easy getNode, ImageResizeKJv2, easy getNode, easy setNode, WanVideoSetBlockSwap, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, ImageResizeKJv2, Int, WanVideoBlockSwap, LoadImage, PoseDetectionOneToAllAnimation, WanVideoAddSteadyDancerEmbeds, LayerUtility: PurgeVRAM, WanVideoEncode, WanVideoDecode, easy getNode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, easy setNode, WanVideoTextEncodeCached, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), easy getNode, VHS_LoadVideo, WanVideoSampler, GetImageSizeAndCount, Int, easy setNode, VHS_VideoCombine, easy setNode, easy getNode, SimpleMath+, WanVideoClipVisionEncode, CLIPVisionLoader, Int, GetImageRangeFromBatch, VHS_VideoCombine, easy getNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【wan2.1 steady dancer】机器人街舞_2025198301255045122.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2025198301255045122.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（73 个）：
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `easy getNode`
+- `easy setNode`
+- `easy getNode`
+- `easy setNode`
+- `WanVideoVAELoader`
+- `easy getNode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoClipVisionEncode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `CLIPVisionLoader`
+- `easy setNode`
+- `easy setNode`
+- `OnnxDetectionModelLoader`
+- `easy setNode`
+- `Int`
+- `easy getNode`
+- `easy setNode`
+- `easy setNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `ImageResizeKJv2`
+- `easy getNode`
+- `easy setNode`
+- `WanVideoSetBlockSwap`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJv2`
+- `Int`
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `PoseDetectionOneToAllAnimation`
+- `WanVideoAddSteadyDancerEmbeds`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoEncode`
+- `WanVideoDecode`
+- `easy getNode`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `easy setNode`
+- `WanVideoTextEncodeCached`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `easy getNode`
+- `VHS_LoadVideo`
+- `WanVideoSampler` ★核心
+- `GetImageSizeAndCount`
+- `Int`
+- `easy setNode`
+- `VHS_VideoCombine`
+- `easy setNode`
+- `easy getNode`
+- `SimpleMath+`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `Int`
+- `GetImageRangeFromBatch`
+- `VHS_VideoCombine`
+- `easy getNode`
+
+## 知识
+
+覆盖率 **100%**（73/73）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoSetLoRAs`、`WanVideoTorchCompileSettings`、`easy getNode`、`easy setNode`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`OnnxDetectionModelLoader`、`Int`、`ImageResizeKJv2`、`WanVideoSetBlockSwap`、`LayerUtility: PurgeVRAM`、`WanVideoBlockSwap`、`LoadImage`、`PoseDetectionOneToAllAnimation`、`WanVideoAddSteadyDancerEmbeds`、`WanVideoEncode`、`WanVideoDecode`、`WanVideoTextEncodeCached`、`Label (rgthree)`、`VHS_LoadVideo`、`WanVideoSampler`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`SimpleMath+`、`GetImageRangeFromBatch`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeCached、WanVideoEncode

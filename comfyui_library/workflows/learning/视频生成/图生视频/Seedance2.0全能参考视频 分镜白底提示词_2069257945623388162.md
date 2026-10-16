@@ -1,0 +1,37 @@
+---
+key: 视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json
+name: Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2069257945623388162.json
+hash: baffaa23e97bab4d
+coverage: 1
+learned_at: 2026-10-15 22:40:26
+nodes: [SaveVideo, LoadAudio, LoadImage, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2069257945623388162.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（5 个）：
+- `SaveVideo`
+- `LoadAudio`
+- `LoadImage`
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+
+## 知识
+
+覆盖率 **100%**（5/5）
+
+**有卡**：`SaveVideo`、`LoadAudio`、`LoadImage`、`RH_RhartVideoSparkvideo20MultimodalVideo`
+
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Load、SaveImage

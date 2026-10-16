@@ -1,0 +1,58 @@
+---
+key: 视频生成/图生视频/wan2.2首尾帧(KJ版)_1951645924265283586.json
+name: wan2.2首尾帧(KJ版)_1951645924265283586.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1951645924265283586.json
+hash: 4be6a35454082d7b
+coverage: 1
+learned_at: 2026-10-15 22:30:58
+nodes: [WanVideoModelLoader, WanVideoLoraSelect, WanVideoSampler, LoadImage, RIFE VFI, VHS_VideoCombine, VHS_VideoCombine, WanVideoSampler, WanVideoDecode, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoBlockSwap, WanVideoModelLoader, WanVideoLoraSelect, WanVideoVAELoader, CreateCFGScheduleFloatList, JWInteger, INTConstant, WanVideoImageToVideoEncode, LoadImage, WanVideoTextEncode, LoadWanVideoT5TextEncoder, LayerUtility: ImageScaleByAspectRatio V2]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2首尾帧(KJ版)_1951645924265283586.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1951645924265283586.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（26 个）：
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `LoadImage`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoVAELoader`
+- `CreateCFGScheduleFloatList`
+- `JWInteger`
+- `INTConstant`
+- `WanVideoImageToVideoEncode`
+- `LoadImage`
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+
+## 知识
+
+覆盖率 **100%**（26/26）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoSampler`、`LoadImage`、`RIFE VFI`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`CreateCFGScheduleFloatList`、`JWInteger`、`INTConstant`、`WanVideoImageToVideoEncode`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

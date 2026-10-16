@@ -1,0 +1,103 @@
+---
+key: 视频生成/图生视频/非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_1977667406921367553.json
+name: 非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_1977667406921367553.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1977667406921367553.json
+hash: ae3e610af10dd6a8
+coverage: 0.535211
+learned_at: 2026-10-15 22:32:15
+nodes: [ImpactSwitch, Primitive integer [Crystools], SetNode, SetNode, ImageResizeKJv2, SetNode, Primitive integer [Crystools], WanVideoSetBlockSwap, SetNode, GetNode, WanVideoVAELoader, SetNode, WanVideoAnimateEmbeds, GetNode, GetNode, GetNode, WanVideoClipVisionEncode, CLIPVisionLoader, GetNode, DWPreprocessor, SetNode, GetNode, GetNode, ImpactSwitch, Primitive integer [Crystools], WanVideoTextEncodeCached, SetNode, WanVideoDecode, SetNode, LoadImage, WanVideoSampler, GetImageSizeAndCount, LoadImage, GetNode, VHS_VideoCombine, VHS_VideoCombine, Primitive integer [Crystools], VHS_LoadVideo, GetNode, SetNode, easy showAnything, easy showAnything, easy showAnything, easy showAnything, easy showAnything, SetNode, SetNode, SetNode, VHS_VideoInfoSource, VHS_VideoCombine, WanVideoSetLoRAs, SimpleMath+, SimpleMath+, SimpleMath+, SimpleMath+, Primitive integer [Crystools], GetNode, GetNode, GetNode, ImageConcatMulti, Primitive integer [Crystools], JjkText, JjkText, ImageConcatMulti, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_1977667406921367553.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1977667406921367553.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（71 个）：
+- `ImpactSwitch`
+- `Primitive integer [Crystools]`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `Primitive integer [Crystools]`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `GetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `DWPreprocessor`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ImpactSwitch`
+- `Primitive integer [Crystools]`
+- `WanVideoTextEncodeCached`
+- `SetNode`
+- `WanVideoDecode`
+- `SetNode`
+- `LoadImage`
+- `WanVideoSampler` ★核心
+- `GetImageSizeAndCount`
+- `LoadImage`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Primitive integer [Crystools]`
+- `VHS_LoadVideo`
+- `GetNode`
+- `SetNode`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfoSource`
+- `VHS_VideoCombine`
+- `WanVideoSetLoRAs`
+- `SimpleMath+`
+- `SimpleMath+`
+- `SimpleMath+`
+- `SimpleMath+`
+- `Primitive integer [Crystools]`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `Primitive integer [Crystools]`
+- `JjkText`
+- `JjkText`
+- `ImageConcatMulti`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+
+## 知识
+
+覆盖率 **54%**（38/71）
+
+**有卡**：`Primitive integer [Crystools]`、`ImageResizeKJv2`、`WanVideoSetBlockSwap`、`WanVideoVAELoader`、`WanVideoAnimateEmbeds`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`DWPreprocessor`、`WanVideoTextEncodeCached`、`WanVideoDecode`、`LoadImage`、`WanVideoSampler`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`VHS_LoadVideo`、`VHS_VideoInfoSource`、`WanVideoSetLoRAs`、`SimpleMath+`、`ImageConcatMulti`、`RHHiddenNodes`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、CLIPVisionLoader

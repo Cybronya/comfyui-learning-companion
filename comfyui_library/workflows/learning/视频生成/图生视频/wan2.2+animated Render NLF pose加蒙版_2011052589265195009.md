@@ -1,0 +1,108 @@
+---
+key: 视频生成/图生视频/wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json
+name: wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2011052589265195009.json
+hash: 93a9b435584bf63d
+coverage: 0.697368
+learned_at: 2026-10-15 22:34:21
+nodes: [GetNode, SetNode, SetNode, SetNode, MaskToImage, GetImageSizeAndCount, GetNode, VHS_VideoCombine, GetNode, GetNode, GrowMask, BlockifyMask, DrawMaskOnImage, DrawMaskOnImage, SetNode, BlockifyMask, ImageResizeKJv2, SetNode, GrowMask, INTConstant, INTConstant, VHS_VideoCombine, SetNode, SetNode, SetNode, easy cleanGpuUsed, INTConstant, SeCModelLoader, SeCVideoSegmentation, Sam2Segmentation, DownloadAndLoadSAM2Model, GetNode, VHS_VideoCombine, RenderNLFPoses, ImageResizeKJv2, VHS_VideoCombine, SimpleMath+, MaskToImage, VHS_VideoCombine, PointsEditor, WanVideoClipVisionEncode, VHS_VideoCombine, SetNode, SetNode, easy framesEditor, RunningHub Deepcleaner, BlockifyMask, DrawMaskOnImage, LayerMask: MaskGrow, WanVideoSampler, WanVideoContextOptions, LoadImage, INTConstant, easy sam3VideoSegmentation, GetNode, ImageResizeKJv2, VHS_LoadVideo, OnnxDetectionModelLoader, SetNode, SetNode, PoseDetectionVitPoseToDWPose, NLFPredict, GetNode, GetNode, GetNode, GetNode, GetNode, DownloadAndLoadNLFModel, ConvertOpenPoseKeypointsToDWPose, DWPreprocessor, WanVideoAnimateEmbeds, WanVideoDecode, VHS_VideoCombine, easy sam3ModelLoader, RHHiddenNodes, WanVideoTextEncodeCached]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2011052589265195009.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（76 个）：
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `MaskToImage`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GrowMask`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `DrawMaskOnImage`
+- `SetNode`
+- `BlockifyMask`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GrowMask`
+- `INTConstant`
+- `INTConstant`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `INTConstant`
+- `SeCModelLoader`
+- `SeCVideoSegmentation`
+- `Sam2Segmentation`
+- `DownloadAndLoadSAM2Model`
+- `GetNode`
+- `VHS_VideoCombine`
+- `RenderNLFPoses`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `SimpleMath+`
+- `MaskToImage`
+- `VHS_VideoCombine`
+- `PointsEditor`
+- `WanVideoClipVisionEncode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `easy framesEditor`
+- `RunningHub Deepcleaner`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `LayerMask: MaskGrow`
+- `WanVideoSampler` ★核心
+- `WanVideoContextOptions`
+- `LoadImage`
+- `INTConstant`
+- `easy sam3VideoSegmentation`
+- `GetNode`
+- `ImageResizeKJv2`
+- `VHS_LoadVideo`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `SetNode`
+- `PoseDetectionVitPoseToDWPose`
+- `NLFPredict`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `DownloadAndLoadNLFModel`
+- `ConvertOpenPoseKeypointsToDWPose`
+- `DWPreprocessor`
+- `WanVideoAnimateEmbeds`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `easy sam3ModelLoader`
+- `RHHiddenNodes`
+- `WanVideoTextEncodeCached`
+
+## 知识
+
+覆盖率 **70%**（53/76）
+
+**有卡**：`MaskToImage`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`ImageResizeKJv2`、`INTConstant`、`easy cleanGpuUsed`、`SeCModelLoader`、`SeCVideoSegmentation`、`Sam2Segmentation`、`DownloadAndLoadSAM2Model`、`RenderNLFPoses`、`SimpleMath+`、`PointsEditor`、`WanVideoClipVisionEncode`、`easy framesEditor`、`RunningHub Deepcleaner`、`LayerMask: MaskGrow`、`WanVideoSampler`、`WanVideoContextOptions`、`LoadImage`、`easy sam3VideoSegmentation`、`VHS_LoadVideo`、`OnnxDetectionModelLoader`、`PoseDetectionVitPoseToDWPose`、`NLFPredict`、`DownloadAndLoadNLFModel`、`ConvertOpenPoseKeypointsToDWPose`、`DWPreprocessor`、`WanVideoAnimateEmbeds`、`WanVideoDecode`、`easy sam3ModelLoader`、`RHHiddenNodes`、`WanVideoTextEncodeCached`
+
+**用到的条目**：LoadImage、ConvertOpenPoseKeypointsToDWPose、WanVideoSampler、WanVideoDecode、WanVideoClipVisionEncode、WanVideoTextEncodeCached、GetImageSizeAndCount、ImageResizeKJv2

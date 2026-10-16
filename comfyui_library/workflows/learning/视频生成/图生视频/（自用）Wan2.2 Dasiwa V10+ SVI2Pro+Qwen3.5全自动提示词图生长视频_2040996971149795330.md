@@ -1,0 +1,461 @@
+---
+key: 视频生成/图生视频/（自用）Wan2.2 Dasiwa V10+ SVI2Pro+Qwen3.5全自动提示词图生长视频_2040996971149795330.json
+name: （自用）Wan2.2 Dasiwa V10+ SVI2Pro+Qwen3.5全自动提示词图生长视频_2040996971149795330.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2040996971149795330.json
+hash: d6e964f5fed97794
+coverage: 0.300716
+learned_at: 2026-10-15 22:36:17
+nodes: [PrimitiveInt, easy int, VAELoader, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, KSamplerAdvanced, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ModelSamplingSD3, SetNode, SetNode, CLIPLoader, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, VAEDecode, GetNode, KSamplerAdvanced, GetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, ShowText|pysssss, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, ShowText|pysssss, GetNode, KSamplerAdvanced, GetNode, VAEDecode, GetNode, GetNode, VAEDecode, KSamplerAdvanced, VAEDecode, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, GetNode, VAEDecode, KSamplerAdvanced, GetNode, VAEDecode, GetNode, VAEDecode, KSamplerAdvanced, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, VAEDecode, GetNode, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, CLIPTextEncode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, CLIPTextEncode, SetNode, LayerUtility: PurgeVRAM, SetNode, SetNode, GetNode, Split String, GetNode, CLIPTextEncode, SetNode, CLIPTextEncode, CLIPTextEncode, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, LoraLoaderModelOnly, LoraLoaderModelOnly, WanAdvancedI2V, GetNode, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, GetNode, Note, Note, Note, SetNode, SetNode, SetNode, GetNode, SaveImage, TT_img_enc_v2, SaveImage, TT_img_enc, SaveImage, ImageBatchExtendWithOverlap, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, DuckHideNode, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, SomethingToString, easy cleanGpuUsed, Fast Groups Bypasser (rgthree), easy showAnything, ShellAgentPluginOutputText, llama_cpp_model_loader, llama_cpp_parameters, CR Prompt Text, CR Prompt Text, LoadImage, JWInteger, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, llama_cpp_instruct_adv]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/（自用）Wan2.2 Dasiwa V10+ SVI2Pro+Qwen3.5全自动提示词图生长视频_2040996971149795330.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2040996971149795330.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（419 个）：
+- `PrimitiveInt`
+- `easy int`
+- `VAELoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `SetNode`
+- `CLIPLoader`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `ShowText|pysssss`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `ShowText|pysssss`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Split String`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `WanAdvancedI2V`
+- `GetNode`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `Note`
+- `Note`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SaveImage`
+- `TT_img_enc_v2`
+- `SaveImage`
+- `TT_img_enc`
+- `SaveImage`
+- `ImageBatchExtendWithOverlap`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `DuckHideNode`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SomethingToString`
+- `easy cleanGpuUsed`
+- `Fast Groups Bypasser (rgthree)`
+- `easy showAnything`
+- `ShellAgentPluginOutputText`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `LoadImage`
+- `JWInteger`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `llama_cpp_instruct_adv`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **30%**（126/419）
+
+**有卡**：`easy int`、`VAELoader`、`KSamplerAdvanced`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`VHS_VideoCombine`、`VAEDecode`、`ImageBatchExtendWithOverlap`、`LayerUtility: PurgeVRAM`、`Split String`、`WanAdvancedI2V`、`LoraLoaderModelOnly`、`SaveImage`、`TT_img_enc_v2`、`TT_img_enc`、`DuckHideNode`、`LayerUtility: ImageScaleByAspectRatio V2`、`SomethingToString`、`easy cleanGpuUsed`、`ShellAgentPluginOutputText`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`CR Prompt Text`、`LoadImage`、`JWInteger`、`UNETLoader`、`llama_cpp_instruct_adv`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、SaveImage、LoadImage、UNETLoader

@@ -1,0 +1,55 @@
+---
+key: 视频生成/图生视频/🦖wan2.1图生视频(更新至0325)高清修复+lora修复_1894935249389039617.json
+name: 🦖wan2.1图生视频(更新至0325)高清修复+lora修复_1894935249389039617.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1894935249389039617.json
+hash: 752af6e2508d0791
+coverage: 0.869565
+learned_at: 2026-10-15 22:29:16
+nodes: [Note, Note, WanVideoImageClipEncode, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoEnhanceAVideo, WanVideoDecode, LoadWanVideoT5TextEncoder, WanVideoSampler, WanVideoTorchCompileSettings, Note, LoadImage, ImageResizeAdvanced, WanVideoTextEncode, LayerUtility: PurgeVRAM, ImageUpscaleWithModel, UpscaleModelLoader, RIFE VFI, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoModelLoader, VHS_VideoCombine, WanVideoTeaCache]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/🦖wan2.1图生视频(更新至0325)高清修复+lora修复_1894935249389039617.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1894935249389039617.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（23 个）：
+- `Note`
+- `Note`
+- `WanVideoImageClipEncode`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoEnhanceAVideo`
+- `WanVideoDecode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSampler` ★核心
+- `WanVideoTorchCompileSettings`
+- `Note`
+- `LoadImage`
+- `ImageResizeAdvanced`
+- `WanVideoTextEncode`
+- `LayerUtility: PurgeVRAM`
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `RIFE VFI`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `WanVideoTeaCache`
+
+## 知识
+
+覆盖率 **87%**（20/23）
+
+**有卡**：`WanVideoImageClipEncode`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`WanVideoEnhanceAVideo`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`LoadImage`、`ImageResizeAdvanced`、`WanVideoTextEncode`、`LayerUtility: PurgeVRAM`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`RIFE VFI`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`VHS_VideoCombine`、`WanVideoTeaCache`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

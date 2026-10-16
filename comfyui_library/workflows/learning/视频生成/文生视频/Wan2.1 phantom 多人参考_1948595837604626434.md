@@ -1,0 +1,60 @@
+---
+key: 视频生成/文生视频/Wan2.1 phantom 多人参考_1948595837604626434.json
+name: Wan2.1 phantom 多人参考_1948595837604626434.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1948595837604626434.json
+hash: 41795d5713d31574
+coverage: 0.964286
+learned_at: 2026-10-15 22:43:32
+nodes: [Seed Everywhere, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoEnhanceAVideo, WanVideoEncode, WanVideoEncode, LoadImage, WanVideoSLG, WanVideoExperimentalArgs, WanVideoPhantomEmbeds, easy imageRemBg, LoadImage, WanVideoTextEncode, Int, ImageResize+, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, LoadWanVideoT5TextEncoder, WanVideoVAELoader, Anything Everywhere3, WanVideoModelLoader, WanVideoSampler, WanVideoDecode, ImagePadKJ, VHS_VideoCombine, Note Plus (mtb), LoadImageFromUrl, easy imageRemBg]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan2.1 phantom 多人参考_1948595837604626434.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1948595837604626434.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（28 个）：
+- `Seed Everywhere`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoEnhanceAVideo`
+- `WanVideoEncode`
+- `WanVideoEncode`
+- `LoadImage`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoPhantomEmbeds`
+- `easy imageRemBg`
+- `LoadImage`
+- `WanVideoTextEncode`
+- `Int`
+- `ImageResize+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `Anything Everywhere3`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `ImagePadKJ`
+- `VHS_VideoCombine`
+- `Note Plus (mtb)`
+- `LoadImageFromUrl`
+- `easy imageRemBg`
+
+## 知识
+
+覆盖率 **96%**（27/28）
+
+**有卡**：`Seed Everywhere`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoEnhanceAVideo`、`WanVideoEncode`、`LoadImage`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoPhantomEmbeds`、`easy imageRemBg`、`WanVideoTextEncode`、`Int`、`ImageResize+`、`LayerUtility: ImageScaleByAspectRatio V2`、`MathExpression|pysssss`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoDecode`、`ImagePadKJ`、`VHS_VideoCombine`、`Note Plus (mtb)`、`LoadImageFromUrl`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、Seed Everywhere、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

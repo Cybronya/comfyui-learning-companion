@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/户外-Infinite talk数字人：动态加强高版V4（Lightx2v+Rcm）_2029417074241576961.json
+name: 户外-Infinite talk数字人：动态加强高版V4（Lightx2v+Rcm）_2029417074241576961.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2029417074241576961.json
+hash: a5271ecf49d57b1d
+coverage: 0.75
+learned_at: 2026-10-15 22:35:22
+nodes: [LoadWanVideoT5TextEncoder, CLIPVisionLoader, PreviewAny, WanVideoVAELoader, WanVideoClipVisionEncode, AudioSeparation, DownloadAndLoadWav2VecModel, Note, WanVideoModelLoader, WanVideoLoraSelect, MultiTalkModelLoader, MultiTalkWav2VecEmbeds, GetImageSizeAndCount, Note, Reroute, CR Prompt Text, MarkdownNote, WanVideoDecode, WanVideoSampler, WanVideoLoraSelect, WanVideoTextEncode, WanVideoImageToVideoMultiTalk, AudioCrop, VHS_VideoCombine, JWInteger, Note, Note, JWFloat, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, Note, Note, WanVideoBlockSwap, VHS_VideoCombine, LoadImage, LoadAudio]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/户外-Infinite talk数字人：动态加强高版V4（Lightx2v+Rcm）_2029417074241576961.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2029417074241576961.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（36 个）：
+- `LoadWanVideoT5TextEncoder`
+- `CLIPVisionLoader`
+- `PreviewAny`
+- `WanVideoVAELoader`
+- `WanVideoClipVisionEncode`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `Note`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `MultiTalkModelLoader`
+- `MultiTalkWav2VecEmbeds`
+- `GetImageSizeAndCount`
+- `Note`
+- `Reroute`
+- `CR Prompt Text`
+- `MarkdownNote`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `WanVideoImageToVideoMultiTalk`
+- `AudioCrop`
+- `VHS_VideoCombine`
+- `JWInteger`
+- `Note`
+- `Note`
+- `JWFloat`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `Note`
+- `Note`
+- `WanVideoBlockSwap`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadAudio`
+
+## 知识
+
+覆盖率 **75%**（27/36）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`CLIPVisionLoader`、`WanVideoVAELoader`、`WanVideoClipVisionEncode`、`AudioSeparation`、`DownloadAndLoadWav2VecModel`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`MultiTalkModelLoader`、`MultiTalkWav2VecEmbeds`、`GetImageSizeAndCount`、`CR Prompt Text`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoTextEncode`、`WanVideoImageToVideoMultiTalk`、`AudioCrop`、`VHS_VideoCombine`、`JWInteger`、`JWFloat`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoBlockSwap`、`LoadImage`、`LoadAudio`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoLoraSelect

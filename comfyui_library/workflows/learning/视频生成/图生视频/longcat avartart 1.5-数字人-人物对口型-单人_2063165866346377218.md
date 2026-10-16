@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json
+name: longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2063165866346377218.json
+hash: 87c6082f9510ef17
+coverage: 0.489362
+learned_at: 2026-10-15 22:39:11
+nodes: [SetNode, SetNode, SetNode, WanVideoVAELoader, SetNode, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, ComfyMathExpression, GetNode, PreviewAny, WanVideoModelLoader, SetNode, WanVideoSchedulerv2, ImageResizeKJv2, GetNode, GetNode, SetNode, WanVideoEncode, WanVideoLongCatAvatarExtendEmbeds, TrimAudioDuration, GetNode, WhisperModelLoader, LongCatAvatarWhisperEmbeds, ComfyMathExpression, GetNode, WanVideoSamplerv2, MarkdownNote, 孤海注释, WanAnimatePlus BlockSwap, LoadImage, INTConstant, INTConstant, WanVideoTorchCompileSettings, WanVideoLoraSelect, WanVideoDecode, GetNode, VHS_VideoCombine, VHS_VideoCombine, LoadAudio, WanVideoTextEncodeCached, JjkText, PrimitiveFloat]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2063165866346377218.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（47 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `PreviewAny`
+- `WanVideoModelLoader`
+- `SetNode`
+- `WanVideoSchedulerv2`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoEncode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `TrimAudioDuration`
+- `GetNode`
+- `WhisperModelLoader`
+- `LongCatAvatarWhisperEmbeds`
+- `ComfyMathExpression`
+- `GetNode`
+- `WanVideoSamplerv2` ★核心
+- `MarkdownNote`
+- `孤海注释`
+- `WanAnimatePlus BlockSwap`
+- `LoadImage`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `WanVideoDecode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoadAudio`
+- `WanVideoTextEncodeCached`
+- `JjkText`
+- `PrimitiveFloat`
+
+## 知识
+
+覆盖率 **49%**（23/47）
+
+**有卡**：`WanVideoVAELoader`、`ComfyMathExpression`、`WanVideoModelLoader`、`WanVideoSchedulerv2`、`ImageResizeKJv2`、`WanVideoEncode`、`WanVideoLongCatAvatarExtendEmbeds`、`TrimAudioDuration`、`WhisperModelLoader`、`LongCatAvatarWhisperEmbeds`、`WanVideoSamplerv2`、`WanAnimatePlus BlockSwap`、`LoadImage`、`INTConstant`、`WanVideoTorchCompileSettings`、`WanVideoLoraSelect`、`WanVideoDecode`、`VHS_VideoCombine`、`LoadAudio`、`WanVideoTextEncodeCached`
+
+**用到的条目**：LoadImage、WanVideoSamplerv2、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoEncode、WanVideoLoraSelect、ImageResizeKJv2

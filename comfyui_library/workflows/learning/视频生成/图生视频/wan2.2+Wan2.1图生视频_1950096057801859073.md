@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/wan2.2+Wan2.1图生视频_1950096057801859073.json
+name: wan2.2+Wan2.1图生视频_1950096057801859073.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950096057801859073.json
+hash: 0bde76d59968f299
+coverage: 1
+learned_at: 2026-10-15 22:30:52
+nodes: [UNETLoader, UNETLoader, VAELoader, CLIPTextEncode, CLIPLoader, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, VHS_VideoCombine, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, LoadImage, WanImageToVideo, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 14, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2.2+Wan2.1图生视频_1950096057801859073.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950096057801859073.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（15 个）：
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `VHS_VideoCombine`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `LoadImage`
+- `WanImageToVideo`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `14`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`UNETLoader`、`VAELoader`、`CLIPTextEncode`、`CLIPLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`VHS_VideoCombine`、`KSamplerAdvanced`、`VAEDecode`、`LoadImage`、`WanImageToVideo`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

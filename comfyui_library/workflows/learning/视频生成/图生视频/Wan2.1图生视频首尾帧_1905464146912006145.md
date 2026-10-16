@@ -1,0 +1,53 @@
+---
+key: 视频生成/图生视频/Wan2.1图生视频首尾帧_1905464146912006145.json
+name: Wan2.1图生视频首尾帧_1905464146912006145.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1905464146912006145.json
+hash: 4c5611585faadfd0
+coverage: 1
+learned_at: 2026-10-15 22:29:26
+nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoTeaCache, WanVideoSLG, ImageResizeKJ, ImageResizeKJ, WanVideoExperimentalArgs, WanVideoDecode, VHS_VideoCombine, WanVideoTextEncode, TextInput_, LoadImage, LoadImage, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoModelLoader, WanVideoClipVisionEncode, WanVideoVAELoader, WanVideoSampler, Int, WanVideoImageToVideoEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1图生视频首尾帧_1905464146912006145.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1905464146912006145.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（21 个）：
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `WanVideoTextEncode`
+- `TextInput_`
+- `LoadImage`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoModelLoader`
+- `WanVideoClipVisionEncode`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `Int`
+- `WanVideoImageToVideoEncode`
+
+## 知识
+
+覆盖率 **100%**（21/21）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoTeaCache`、`WanVideoSLG`、`ImageResizeKJ`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`VHS_VideoCombine`、`WanVideoTextEncode`、`TextInput_`、`LoadImage`、`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoModelLoader`、`WanVideoClipVisionEncode`、`WanVideoVAELoader`、`WanVideoSampler`、`Int`、`WanVideoImageToVideoEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/LTX2.3_controlnet姿态、深度、边缘控制_2053862670130008065.json
+name: LTX2.3_controlnet姿态、深度、边缘控制_2053862670130008065.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2053862670130008065.json
+hash: 25467432bd4d4514
+coverage: 0.897959
+learned_at: 2026-10-15 22:37:43
+nodes: [CFGGuider, KSamplerSelect, CLIPTextEncode, LTXVAudioVAEDecode, LTXVConditioning, VHS_VideoInfo, PlaySound|pysssss, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVTiledVAEDecode, LTXVCropGuides, LTX2SamplingPreviewOverride, LTXFloatToInt, ModelPatchTorchSettings, LTXAddVideoICLoRAGuide, PathchSageAttentionKJ, LTXVEnhanceAVideoKJ, LTXVChunkFeedForward, SimpleMath+, EmptyLTXVLatentVideo, GetImageSize, ResizeImageMaskNode, DepthAnythingV2Preprocessor, CannyEdgePreprocessor, LTXVConcatAVLatent, LTXVEmptyLatentAudio, LTXVImgToVideoConditionOnly, ManualSigmas, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, VAELoaderKJ, VAELoaderKJ, LoraLoaderModelOnly, DWPreprocessor, UNETLoader, DualCLIPLoaderGGUF, LoraLoaderModelOnly, RandomNoise, VHS_VideoCombine, VHS_LoadVideo, ImageResizeKJv2, Note, Note, PreviewImage, CLIPTextEncode, PrimitiveNode, LoadImage, Note, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3_controlnet姿态、深度、边缘控制_2053862670130008065.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2053862670130008065.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（49 个）：
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVConditioning`
+- `VHS_VideoInfo`
+- `PlaySound|pysssss`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVTiledVAEDecode` ★核心
+- `LTXVCropGuides`
+- `LTX2SamplingPreviewOverride`
+- `LTXFloatToInt`
+- `ModelPatchTorchSettings`
+- `LTXAddVideoICLoRAGuide`
+- `PathchSageAttentionKJ`
+- `LTXVEnhanceAVideoKJ`
+- `LTXVChunkFeedForward`
+- `SimpleMath+`
+- `EmptyLTXVLatentVideo`
+- `GetImageSize`
+- `ResizeImageMaskNode`
+- `DepthAnythingV2Preprocessor`
+- `CannyEdgePreprocessor`
+- `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVImgToVideoConditionOnly`
+- `ManualSigmas`
+- `LoraLoaderModelOnly` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `DWPreprocessor`
+- `UNETLoader` ★核心
+- `DualCLIPLoaderGGUF`
+- `LoraLoaderModelOnly` ★核心
+- `RandomNoise`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `ImageResizeKJv2`
+- `Note`
+- `Note`
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+- `PrimitiveNode`
+- `LoadImage`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **90%**（44/49）
+
+**有卡**：`CFGGuider`、`KSamplerSelect`、`CLIPTextEncode`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`VHS_VideoInfo`、`PlaySound|pysssss`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVTiledVAEDecode`、`LTXVCropGuides`、`LTX2SamplingPreviewOverride`、`LTXFloatToInt`、`ModelPatchTorchSettings`、`LTXAddVideoICLoRAGuide`、`PathchSageAttentionKJ`、`LTXVEnhanceAVideoKJ`、`LTXVChunkFeedForward`、`SimpleMath+`、`EmptyLTXVLatentVideo`、`GetImageSize`、`ResizeImageMaskNode`、`DepthAnythingV2Preprocessor`、`CannyEdgePreprocessor`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoConditionOnly`、`ManualSigmas`、`LoraLoaderModelOnly`、`LTXICLoRALoaderModelOnly`、`VAELoaderKJ`、`DWPreprocessor`、`UNETLoader`、`DualCLIPLoaderGGUF`、`RandomNoise`、`VHS_VideoCombine`、`VHS_LoadVideo`、`ImageResizeKJv2`、`LoadImage`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、DepthAnythingV2Preprocessor、CannyEdgePreprocessor、CFGGuider、KSamplerSelect

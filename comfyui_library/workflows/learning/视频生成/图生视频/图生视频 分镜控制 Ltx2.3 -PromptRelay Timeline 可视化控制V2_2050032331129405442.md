@@ -1,0 +1,84 @@
+---
+key: 视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2050032331129405442.json
+name: 图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2050032331129405442.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2050032331129405442.json
+hash: 8fbc7bff0eb1e35f
+coverage: 0.777778
+learned_at: 2026-10-15 22:37:16
+nodes: [UNETLoader, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LoraLoaderModelOnly, SetNode, ConditioningZeroOut, LTXVConditioning, BasicScheduler, LTXVImgToVideoInplaceKJ, LTXVPreprocess, SetNode, LTXVConcatAVLatent, KSamplerSelect, RegexExtract, RegexExtract, LayerUtility: ImageScaleByAspectRatio V2, PreviewAny, SamplerCustom, VisualizeSigmasKJ, LTX2SamplingPreviewOverride, JWInteger, GetNode, LTXVSeparateAVLatent, LTXVAudioVAEDecode, GetNode, VAEDecode, GetNode, PathchSageAttentionKJ, RH_LLMAPI_Pro_Node, LoadImage, EmptyLTXVLatentVideo, PreviewAny, Text, PreviewAny, Note, GetNode, CM_IntToFloat, JWInteger, LTXVEmptyLatentAudio, SimpleMath+, JWInteger, PromptRelayEncodeTimeline, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 489}
+---
+
+# 视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2050032331129405442.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2050032331129405442.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（45 个）：
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `ConditioningZeroOut`
+- `LTXVConditioning`
+- `BasicScheduler`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVPreprocess`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `RegexExtract`
+- `RegexExtract`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewAny`
+- `SamplerCustom` ★核心
+- `VisualizeSigmasKJ`
+- `LTX2SamplingPreviewOverride`
+- `JWInteger`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `PathchSageAttentionKJ`
+- `RH_LLMAPI_Pro_Node`
+- `LoadImage`
+- `EmptyLTXVLatentVideo`
+- `PreviewAny`
+- `Text`
+- `PreviewAny`
+- `Note`
+- `GetNode`
+- `CM_IntToFloat`
+- `JWInteger`
+- `LTXVEmptyLatentAudio` ★核心
+- `SimpleMath+`
+- `JWInteger`
+- `PromptRelayEncodeTimeline`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `width` = `489`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **78%**（35/45）
+
+**有卡**：`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`ConditioningZeroOut`、`LTXVConditioning`、`BasicScheduler`、`LTXVImgToVideoInplaceKJ`、`LTXVPreprocess`、`LTXVConcatAVLatent`、`KSamplerSelect`、`RegexExtract`、`LayerUtility: ImageScaleByAspectRatio V2`、`SamplerCustom`、`VisualizeSigmasKJ`、`LTX2SamplingPreviewOverride`、`JWInteger`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`PathchSageAttentionKJ`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`EmptyLTXVLatentVideo`、`Text`、`CM_IntToFloat`、`LTXVEmptyLatentAudio`、`SimpleMath+`、`PromptRelayEncodeTimeline`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent

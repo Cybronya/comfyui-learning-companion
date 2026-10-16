@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/Wan2.2-SmoothMix高动态图生视频，动态加强_1979742422047559681.json
+name: Wan2.2-SmoothMix高动态图生视频，动态加强_1979742422047559681.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1979742422047559681.json
+hash: 067e056520ac3db8
+coverage: 0.882353
+learned_at: 2026-10-15 22:32:25
+nodes: [UNETLoader, CLIPLoader, VAELoader, WanImageToVideo, VAEDecode, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, CR Text, PrimitiveInt, PrimitiveInt, UNETLoader, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1.5, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2-SmoothMix高动态图生视频，动态加强_1979742422047559681.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1979742422047559681.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（17 个）：
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `WanImageToVideo`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `CR Text`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `UNETLoader` ★核心
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **88%**（15/17）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`WanImageToVideo`、`VAEDecode`、`CLIPTextEncode`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VHS_VideoCombine`、`CR Text`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、ModelSamplingSD3

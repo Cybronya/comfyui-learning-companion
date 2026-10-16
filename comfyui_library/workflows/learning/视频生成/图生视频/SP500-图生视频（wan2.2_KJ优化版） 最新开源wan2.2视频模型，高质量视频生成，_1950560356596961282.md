@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型，高质量视频生成，_1950560356596961282.json
+name: SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型，高质量视频生成，_1950560356596961282.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950560356596961282.json
+hash: 3d63730bfe286882
+coverage: 0.673469
+learned_at: 2026-10-15 22:30:55
+nodes: [WanVideoLoraSelect, Fast Groups Bypasser (rgthree), WanVideoLoraSelect, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoModelLoader, easy bookmark, SetNode, LoadImage, SetNode, SetNode, INTConstant, Int, SetNode, Int, SetNode, Int, SetNode, Seed_, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoSetLoRAs, MathExpression|pysssss, WanVideoSetLoRAs, Note, VHS_VideoCombine, easy positive, ImageResizeKJv2, WanVideoSampler, easy imageSize, WanVideoSampler, WanVideoTextEncode, WanVideoImageToVideoEncode, MathExpression|pysssss, CreateCFGScheduleFloatList, WanVideoSetBlockSwap, WanVideoDecode, WanVideoSetBlockSwap, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型，高质量视频生成，_1950560356596961282.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950560356596961282.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（49 个）：
+- `WanVideoLoraSelect`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoLoraSelect`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `easy bookmark`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `Int`
+- `SetNode`
+- `Int`
+- `SetNode`
+- `Int`
+- `SetNode`
+- `Seed_`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoSetLoRAs`
+- `MathExpression|pysssss`
+- `WanVideoSetLoRAs`
+- `Note`
+- `VHS_VideoCombine`
+- `easy positive`
+- `ImageResizeKJv2`
+- `WanVideoSampler` ★核心
+- `easy imageSize`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `WanVideoImageToVideoEncode`
+- `MathExpression|pysssss`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSetBlockSwap`
+- `WanVideoDecode`
+- `WanVideoSetBlockSwap`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+
+## 知识
+
+覆盖率 **67%**（33/49）
+
+**有卡**：`WanVideoLoraSelect`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`easy bookmark`、`LoadImage`、`INTConstant`、`Int`、`Seed_`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`MathExpression|pysssss`、`VHS_VideoCombine`、`easy positive`、`ImageResizeKJv2`、`WanVideoSampler`、`easy imageSize`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`CreateCFGScheduleFloatList`、`WanVideoSetBlockSwap`、`WanVideoDecode`、`GetImageSizeAndCount`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、Seed_、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode

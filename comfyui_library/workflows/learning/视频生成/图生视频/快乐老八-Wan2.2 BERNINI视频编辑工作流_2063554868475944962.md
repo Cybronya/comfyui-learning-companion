@@ -1,0 +1,112 @@
+---
+key: 视频生成/图生视频/快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json
+name: 快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2063554868475944962.json
+hash: 795a8b5302fa3e1b
+coverage: 0.425
+learned_at: 2026-10-15 22:39:15
+nodes: [WanAnimatePlus Schedulerv2, WanAnimatePlus ContextOptions, WanAnimatePlus SamplerExtraArgs, WanAnimatePlus SetBlockSwap, SetNode, SetNode, GetNode, GetNode, WanAnimatePlus Decode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, GetNode, WanAnimatePlus SetLoRAs, WanAnimatePlus SetLoRAs, WanAnimatePlus BlockSwap, GetNode, GetNode, GetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, VHS_LoadVideo, WanAnimatePlus Schedulerv2, SetNode, SetNode, LoadImage, LoadImage, LoadImage, WanAnimatePlus SetBlockSwap, MarkdownNote, WanAnimatePlus LoraSelectMulti, WanAnimatePlus LoraSelectMulti, WanAnimatePlus VAELoader, WanAnimatePlus ModelLoader, WanAnimatePlus TextEncodeCached, SetNode, INTConstant, INTConstant, SimpleMath+, GetNode, GetNode, GetNode, SetNode, WanAnimatePlus Bernini, WanAnimatePlus Samplerv2, Note, WanAnimatePlus ModelLoader, SetNode, SetNode, GetNode, GetNode, WanAnimatePlus Samplerv2, GetNode, GetNode, GetNode, LoadImage, VHS_VideoCombine, SetNode, PrimitiveFloat, SetNode, INTConstant, Fast Groups Bypasser (rgthree), INTConstant, VHS_LoadVideo, LoadImage, MuyeTextEditOutput]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2063554868475944962.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（80 个）：
+- `WanAnimatePlus Schedulerv2`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus SamplerExtraArgs` ★核心
+- `WanAnimatePlus SetBlockSwap`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus Decode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus SetLoRAs`
+- `WanAnimatePlus BlockSwap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_LoadVideo`
+- `WanAnimatePlus Schedulerv2`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `WanAnimatePlus SetBlockSwap`
+- `MarkdownNote`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus LoraSelectMulti`
+- `WanAnimatePlus VAELoader`
+- `WanAnimatePlus ModelLoader`
+- `WanAnimatePlus TextEncodeCached`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `SimpleMath+`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanAnimatePlus Bernini`
+- `WanAnimatePlus Samplerv2` ★核心
+- `Note`
+- `WanAnimatePlus ModelLoader`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus Samplerv2` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `SetNode`
+- `PrimitiveFloat`
+- `SetNode`
+- `INTConstant`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `MuyeTextEditOutput`
+
+## 知识
+
+覆盖率 **42%**（34/80）
+
+**有卡**：`WanAnimatePlus Schedulerv2`、`WanAnimatePlus ContextOptions`、`WanAnimatePlus SamplerExtraArgs`、`WanAnimatePlus SetBlockSwap`、`WanAnimatePlus Decode`、`WanAnimatePlus SetLoRAs`、`WanAnimatePlus BlockSwap`、`ImageResizeKJv2`、`VHS_LoadVideo`、`LoadImage`、`WanAnimatePlus LoraSelectMulti`、`WanAnimatePlus VAELoader`、`WanAnimatePlus ModelLoader`、`WanAnimatePlus TextEncodeCached`、`INTConstant`、`SimpleMath+`、`WanAnimatePlus Bernini`、`WanAnimatePlus Samplerv2`、`VHS_VideoCombine`、`MuyeTextEditOutput`
+
+**用到的条目**：LoadImage、WanAnimatePlus SamplerExtraArgs、WanAnimatePlus Samplerv2、WanAnimatePlus Decode、WanAnimatePlus TextEncodeCached、WanAnimatePlus VAELoader、WanAnimatePlus LoraSelectMulti、WanAnimatePlus SetLoRAs

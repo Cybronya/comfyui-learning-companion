@@ -1,0 +1,91 @@
+---
+key: 视频生成/图生视频/ITX2.3--首尾帧_2032004087528562690.json
+name: ITX2.3--首尾帧_2032004087528562690.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2032004087528562690.json
+hash: 5c62dae1d5bfee2d
+coverage: 0.865385
+learned_at: 2026-10-15 22:35:34
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, LTXVCropGuides, Reroute, SamplerCustomAdvanced, LTXVSeparateAVLatent, KSamplerSelect, LTXVSeparateAVLatent, LTXVConditioning, CLIPTextEncode, CFGGuider, LTXVLatentUpsampler, CLIPTextEncode, PrimitiveBoolean, PrimitiveInt, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, EmptyLTXVLatentVideo, ResizeImageMaskNode, PrimitiveInt, PrimitiveInt, ResizeImagesByLongerEdge, ImageResizeKJv2, ResizeImagesByLongerEdge, LTXVPreprocess, LTXVPreprocess, ManualSigmas, LTXVEmptyLatentAudio, UNETLoader, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LatentUpscaleModelLoader, SamplerCustomAdvanced, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, MarkdownNote, MarkdownNote, LoadImage, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, SaveVideo, LTXVConcatAVLatent, LoadImage, Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/ITX2.3--首尾帧_2032004087528562690.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2032004087528562690.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（52 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `LTXVCropGuides`
+- `Reroute`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `KSamplerSelect` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `CFGGuider`
+- `LTXVLatentUpsampler` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `ResizeImageMaskNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ResizeImagesByLongerEdge`
+- `ImageResizeKJv2`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `ManualSigmas`
+- `LTXVEmptyLatentAudio` ★核心
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LatentUpscaleModelLoader`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
+- `MarkdownNote`
+- `MarkdownNote`
+- `LoadImage`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `CreateVideo`
+- `SaveVideo`
+- `LTXVConcatAVLatent`
+- `LoadImage`
+- `Text`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **87%**（45/52）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`CLIPTextEncode`、`LTXVLatentUpsampler`、`PrimitiveBoolean`、`ComfyMathExpression`、`EmptyLTXVLatentVideo`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`LTXVPreprocess`、`LTXVEmptyLatentAudio`、`UNETLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LTXVImgToVideoInplace`、`LTXVImgToVideoInplaceKJ`、`LoadImage`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`SaveVideo`、`Text`
+
+**用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler、LTXVConcatAVLatent

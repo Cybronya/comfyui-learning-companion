@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.json
+name: WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1914626855226306562.json
+hash: 38edd4a8d8218f48
+coverage: 1
+learned_at: 2026-10-15 22:29:36
+nodes: [CLIPLoader, VAELoader, CLIPVisionLoader, CLIPVisionEncode, CLIPTextEncode, CLIPTextEncode, WanFunInpaintToVideo, KSampler, VHS_VideoCombine, VHS_VideoCombine, SkipLayerGuidanceDiT, ModelSamplingSD3, UNetTemporalAttentionMultiply, CFGZeroStar, ImageConcanate, ImageConcanate, VAEDecodeTiled, ImageResizeKJ, ImageResizeKJ, Primitive integer [Crystools], Primitive integer [Crystools], LoadImage, LoadImage, CR Text, UNETLoader, Primitive integer [Crystools], Note Plus (mtb)]
+patterns: []
+missing: []
+problems: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 914246456686403, "steps": 20}
+discoveries: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1914626855226306562.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（27 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `WanFunInpaintToVideo`
+- `KSampler` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SkipLayerGuidanceDiT`
+- `ModelSamplingSD3`
+- `UNetTemporalAttentionMultiply`
+- `CFGZeroStar`
+- `ImageConcanate`
+- `ImageConcanate`
+- `VAEDecodeTiled` ★核心
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+- `UNETLoader` ★核心
+- `Primitive integer [Crystools]`
+- `Note Plus (mtb)`
+
+## 关键参数
+
+- `seed` = `914246456686403`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（27/27）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`CLIPTextEncode`、`WanFunInpaintToVideo`、`KSampler`、`VHS_VideoCombine`、`SkipLayerGuidanceDiT`、`ModelSamplingSD3`、`UNetTemporalAttentionMultiply`、`CFGZeroStar`、`ImageConcanate`、`VAEDecodeTiled`、`ImageResizeKJ`、`Primitive integer [Crystools]`、`LoadImage`、`CR Text`、`UNETLoader`、`Note Plus (mtb)`
+
+**用到的条目**：KSampler、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGZeroStar、SkipLayerGuidanceDiT
+
+## 参数体检
+
+发现 1 个问题：
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

@@ -1,0 +1,62 @@
+---
+key: 视频生成/图生视频/数字人wan2.2首尾帧+infinitetalk说话_唱歌 对口型（真人_动漫_拟人态）_1962143850557063170.json
+name: 数字人wan2.2首尾帧+infinitetalk说话_唱歌 对口型（真人_动漫_拟人态）_1962143850557063170.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1962143850557063170.json
+hash: 5d896e5d21964a57
+coverage: 0.966667
+learned_at: 2026-10-15 22:31:30
+nodes: [VAELoader, easy cleanGpuUsed, CLIPLoader, PathchSageAttentionKJ, ModelSamplingSD3, LayerUtility: ImageScaleRestore V2, LoadImage, easy cleanGpuUsed, PathchSageAttentionKJ, LoraLoaderModelOnly, ImageResizeKJv2, LoadImage, CLIPTextEncode, CLIPTextEncode, MathExpression|pysssss, easy seed, ModelSamplingSD3, LoadAudio, INTConstant, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelPatchLoader, VHS_VideoCombine, MathExpression|pysssss, Float, RHHiddenNodes, INTConstant, JjkText, UNETLoader, UNETLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/数字人wan2.2首尾帧+infinitetalk说话_唱歌 对口型（真人_动漫_拟人态）_1962143850557063170.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1962143850557063170.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Process → Other
+
+**节点**（30 个）：
+- `VAELoader`
+- `easy cleanGpuUsed`
+- `CLIPLoader`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleRestore V2`
+- `LoadImage`
+- `easy cleanGpuUsed`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `ImageResizeKJv2`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `MathExpression|pysssss`
+- `easy seed`
+- `ModelSamplingSD3`
+- `LoadAudio`
+- `INTConstant`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchLoader`
+- `VHS_VideoCombine`
+- `MathExpression|pysssss`
+- `Float`
+- `RHHiddenNodes`
+- `INTConstant`
+- `JjkText`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+
+## 知识
+
+覆盖率 **97%**（29/30）
+
+**有卡**：`VAELoader`、`easy cleanGpuUsed`、`CLIPLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LayerUtility: ImageScaleRestore V2`、`LoadImage`、`LoraLoaderModelOnly`、`ImageResizeKJv2`、`CLIPTextEncode`、`MathExpression|pysssss`、`easy seed`、`LoadAudio`、`INTConstant`、`ModelPatchLoader`、`VHS_VideoCombine`、`Float`、`RHHiddenNodes`、`UNETLoader`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、easy seed、ImageResizeKJv2

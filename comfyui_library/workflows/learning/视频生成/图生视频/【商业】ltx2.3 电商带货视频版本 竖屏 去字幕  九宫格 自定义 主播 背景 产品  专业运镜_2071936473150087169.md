@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json
+name: 【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2071936473150087169.json
+hash: 6b7fd74be43e1f66
+coverage: 0.772727
+learned_at: 2026-10-15 22:40:50
+nodes: [Reroute, Reroute, Reroute, easy showAnything, VAELoaderKJ, MelBandRoFormerModelLoader, PrimitiveBoolean, Reroute, ComfySwitchNode, MelBandRoFormerSampler, SolidMask, LTXVAudioVAEEncode, SetLatentNoiseMask, Reroute, BasicScheduler, VAEDecodeTiled, KSamplerSelect, LTXVSeparateAVLatent, PreviewAudio, LoadImage, LoadImage, PreviewImage, VAELoaderKJ, LTXVCropGuides, SamplerCustom, LTX2SamplingPreviewOverride, LTX2_NAG, DualCLIPLoader, YusuLTXDirectorGuide, LTXVConcatAVLatent, VisualizeSigmasKJ, LoadImage, ShowAnything|Mie, UNETLoader, LoraLoaderModelOnly, ttN concat, RH_Utils, 孤海注释, Int, LTXVAudioVAEDecode, LTXVConditioning, VHS_VideoCombine, ttN concat, ImageRGBChannel, Reroute, Reroute, Reroute, Reroute, CR Text Concatenate, easy showAnything, JjkText, SaveImage, RH_LLMAPI_Pro_Node, CS-LTXGridDirector, TextInput_, LayerColor: Levels, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, TextInput_, RH_RhartImageG2ImageToImage, RHHiddenNodes]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2071936473150087169.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（66 个）：
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `easy showAnything`
+- `VAELoaderKJ`
+- `MelBandRoFormerModelLoader`
+- `PrimitiveBoolean`
+- `Reroute`
+- `ComfySwitchNode`
+- `MelBandRoFormerSampler` ★核心
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `SetLatentNoiseMask`
+- `Reroute`
+- `BasicScheduler`
+- `VAEDecodeTiled` ★核心
+- `KSamplerSelect` ★核心
+- `LTXVSeparateAVLatent`
+- `PreviewAudio`
+- `LoadImage`
+- `LoadImage`
+- `PreviewImage`
+- `VAELoaderKJ`
+- `LTXVCropGuides`
+- `SamplerCustom` ★核心
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `DualCLIPLoader`
+- `YusuLTXDirectorGuide`
+- `LTXVConcatAVLatent`
+- `VisualizeSigmasKJ`
+- `LoadImage`
+- `ShowAnything|Mie`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ttN concat`
+- `RH_Utils`
+- `孤海注释`
+- `Int`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVConditioning`
+- `VHS_VideoCombine`
+- `ttN concat`
+- `ImageRGBChannel`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CR Text Concatenate`
+- `easy showAnything`
+- `JjkText`
+- `SaveImage`
+- `RH_LLMAPI_Pro_Node`
+- `CS-LTXGridDirector`
+- `TextInput_`
+- `LayerColor: Levels`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `TextInput_`
+- `RH_RhartImageG2ImageToImage`
+- `RHHiddenNodes`
+
+## 知识
+
+覆盖率 **77%**（51/66）
+
+**有卡**：`VAELoaderKJ`、`MelBandRoFormerModelLoader`、`PrimitiveBoolean`、`MelBandRoFormerSampler`、`SolidMask`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`BasicScheduler`、`VAEDecodeTiled`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`PreviewAudio`、`LoadImage`、`LTXVCropGuides`、`SamplerCustom`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`DualCLIPLoader`、`YusuLTXDirectorGuide`、`LTXVConcatAVLatent`、`VisualizeSigmasKJ`、`ShowAnything|Mie`、`UNETLoader`、`LoraLoaderModelOnly`、`ttN concat`、`RH_Utils`、`Int`、`LTXVAudioVAEDecode`、`LTXVConditioning`、`VHS_VideoCombine`、`ImageRGBChannel`、`CR Text Concatenate`、`SaveImage`、`RH_LLMAPI_Pro_Node`、`CS-LTXGridDirector`、`TextInput_`、`LayerColor: Levels`、`CLIPTextEncode`、`RH_RhartImageG2ImageToImage`、`RHHiddenNodes`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、MelBandRoFormerSampler、LTXVConcatAVLatent

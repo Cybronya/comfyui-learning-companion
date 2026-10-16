@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/Wan2.2-Fun-Control动作迁移-ComfyUI官方_1957120340273061889.json
+name: Wan2.2-Fun-Control动作迁移-ComfyUI官方_1957120340273061889.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1957120340273061889.json
+hash: 390b38ff4fbb8fe7
+coverage: 0.857143
+learned_at: 2026-10-15 22:31:16
+nodes: [CreateVideo, VAEDecode, UNETLoader, UNETLoader, CLIPLoader, VAELoader, SaveVideo, PreviewImage, Canny, CLIPLoader, VAELoader, UNETLoader, UNETLoader, CLIPTextEncode, Wan22FunControlToVideo, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, CLIPTextEncode, CLIPTextEncode, LoadImage, Wan22FunControlToVideo, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, CreateVideo, VAEDecode, KSamplerAdvanced, CLIPTextEncode, Text Concatenate, VHS_LoadVideoFFmpeg, ImageResizeKJv2, MarkdownNote, ImageConcatMulti, CreateVideo, Zoe-DepthMapPreprocessor, ImageResizeKJv2, ImageBlend, DWPreprocessor, PreviewImage, Note, PrimitiveInt, PrimitiveInt, AIO_Preprocessor, Canny, SaveVideo, SaveVideo, Text Multiline, RH_Captioner, PrimitiveInt, VHS_LoadVideo, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2-Fun-Control动作迁移-ComfyUI官方_1957120340273061889.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1957120340273061889.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（56 个）：
+- `CreateVideo`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `SaveVideo`
+- `PreviewImage`
+- `Canny`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `Wan22FunControlToVideo`
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `Wan22FunControlToVideo`
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `CreateVideo`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `Text Concatenate`
+- `VHS_LoadVideoFFmpeg`
+- `ImageResizeKJv2`
+- `MarkdownNote`
+- `ImageConcatMulti`
+- `CreateVideo`
+- `Zoe-DepthMapPreprocessor`
+- `ImageResizeKJv2`
+- `ImageBlend`
+- `DWPreprocessor`
+- `PreviewImage`
+- `Note`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `AIO_Preprocessor`
+- `Canny`
+- `SaveVideo`
+- `SaveVideo`
+- `Text Multiline`
+- `RH_Captioner`
+- `PrimitiveInt`
+- `VHS_LoadVideo`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **86%**（48/56）
+
+**有卡**：`CreateVideo`、`VAEDecode`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`SaveVideo`、`Canny`、`CLIPTextEncode`、`Wan22FunControlToVideo`、`KSamplerAdvanced`、`ModelSamplingSD3`、`LoadImage`、`LoraLoaderModelOnly`、`Text Concatenate`、`VHS_LoadVideoFFmpeg`、`ImageResizeKJv2`、`ImageConcatMulti`、`Zoe-DepthMapPreprocessor`、`ImageBlend`、`DWPreprocessor`、`AIO_Preprocessor`、`Text Multiline`、`RH_Captioner`、`VHS_LoadVideo`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、Canny

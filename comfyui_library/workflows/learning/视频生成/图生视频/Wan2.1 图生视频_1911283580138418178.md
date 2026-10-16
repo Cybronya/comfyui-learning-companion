@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/Wan2.1 图生视频_1911283580138418178.json
+name: Wan2.1 图生视频_1911283580138418178.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1911283580138418178.json
+hash: 8bce7745aafcd618
+coverage: 1
+learned_at: 2026-10-15 22:29:30
+nodes: [WanVideoTeaCacheKJ, WanVideoEnhanceAVideoKJ, VAELoader, VAEDecode, CLIPLoader, CLIPVisionLoader, CLIPVisionEncode, KSampler, VHS_VideoCombine, UNETLoader, ImageResizeKJ, CLIPTextEncode, WanImageToVideo, LoadImage, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 969773400440768, "steps": 20}
+---
+
+# 视频生成/图生视频/Wan2.1 图生视频_1911283580138418178.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1911283580138418178.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（15 个）：
+- `WanVideoTeaCacheKJ`
+- `WanVideoEnhanceAVideoKJ`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `KSampler` ★核心
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `ImageResizeKJ`
+- `CLIPTextEncode` ★核心
+- `WanImageToVideo`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `969773400440768`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`WanVideoTeaCacheKJ`、`WanVideoEnhanceAVideoKJ`、`VAELoader`、`VAEDecode`、`CLIPLoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`KSampler`、`VHS_VideoCombine`、`UNETLoader`、`ImageResizeKJ`、`CLIPTextEncode`、`WanImageToVideo`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CLIPVisionEncode

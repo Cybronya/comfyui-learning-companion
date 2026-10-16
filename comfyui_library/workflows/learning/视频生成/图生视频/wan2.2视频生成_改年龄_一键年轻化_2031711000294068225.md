@@ -1,0 +1,76 @@
+---
+key: 视频生成/图生视频/wan2.2视频生成_改年龄_一键年轻化_2031711000294068225.json
+name: wan2.2视频生成_改年龄_一键年轻化_2031711000294068225.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2031711000294068225.json
+hash: 960e4d272244587a
+coverage: 0.704545
+learned_at: 2026-10-15 22:35:32
+nodes: [GetNode, CreateCFGScheduleFloatList, GetNode, WanVideoImageToVideoEncode, GetNode, WanVideoDecode, WanVideoTextEncode, GetNode, SetNode, ShowText|pysssss, LayerUtility: ImageScaleByAspectRatio V2, RH_LLMAPI_NODE, Text Concatenate, VHS_VideoCombine, Wan22PromptSelector, CR Text, RH_Nano_Banana_Image2Image, PreviewImage, JWInteger, MathExpression|pysssss, CR Text, easy showAnything, LoadImage, ImpactSwitch, PrimitiveFloat, JWInteger, INTConstant, INTConstant, WanVideoSampler, WanVideoSampler, WanVideoModelLoader, WanVideoTorchCompileSettings, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, SetNode, LoadWanVideoT5TextEncoder, SetNode, WanVideoVAELoader, SetNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2视频生成_改年龄_一键年轻化_2031711000294068225.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2031711000294068225.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（44 个）：
+- `GetNode`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoTextEncode`
+- `GetNode`
+- `SetNode`
+- `ShowText|pysssss`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `RH_LLMAPI_NODE`
+- `Text Concatenate`
+- `VHS_VideoCombine`
+- `Wan22PromptSelector`
+- `CR Text`
+- `RH_Nano_Banana_Image2Image`
+- `PreviewImage`
+- `JWInteger`
+- `MathExpression|pysssss`
+- `CR Text`
+- `easy showAnything`
+- `LoadImage`
+- `ImpactSwitch`
+- `PrimitiveFloat`
+- `JWInteger`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+
+## 知识
+
+覆盖率 **70%**（31/44）
+
+**有卡**：`CreateCFGScheduleFloatList`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`WanVideoTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`RH_LLMAPI_NODE`、`Text Concatenate`、`VHS_VideoCombine`、`Wan22PromptSelector`、`CR Text`、`RH_Nano_Banana_Image2Image`、`JWInteger`、`MathExpression|pysssss`、`LoadImage`、`INTConstant`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoLoraSelectMulti`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

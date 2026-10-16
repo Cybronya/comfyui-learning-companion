@@ -1,0 +1,70 @@
+---
+key: 视频生成/图生视频/通义wan2.1：图生视频（新）_1944367617996148737.json
+name: 通义wan2.1：图生视频（新）_1944367617996148737.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1944367617996148737.json
+hash: 5f12930306499fd8
+coverage: 0.941176
+learned_at: 2026-10-15 22:30:39
+nodes: [CLIPTextEncode, CLIPTextEncode, CLIPVisionEncode, ImageResize+, UNETLoader, LoraLoaderModelOnly, LoadImage, CLIPVisionLoader, KSampler, CLIPLoader, VAELoader, VAEDecode, PathchSageAttentionKJ, ModelSamplingSD3, PreviewImage, VHS_VideoCombine, WanImageToVideo]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta", "seed": 175202054895995, "steps": 5}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/通义wan2.1：图生视频（新）_1944367617996148737.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1944367617996148737.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（17 个）：
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `ImageResize+`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `CLIPVisionLoader`
+- `KSampler` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `WanImageToVideo`
+
+## 关键参数
+
+- `seed` = `175202054895995`
+- `steps` = `5`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **94%**（16/17）
+
+**有卡**：`CLIPTextEncode`、`CLIPVisionEncode`、`ImageResize+`、`UNETLoader`、`LoraLoaderModelOnly`、`LoadImage`、`CLIPVisionLoader`、`KSampler`、`CLIPLoader`、`VAELoader`、`VAEDecode`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`VHS_VideoCombine`、`WanImageToVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

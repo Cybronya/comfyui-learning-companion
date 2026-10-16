@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json
+name: Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1929199069892349953.json
+hash: bad00be810b5a3ef
+coverage: 0.777778
+learned_at: 2026-10-15 22:30:00
+nodes: [Note, LoadWanVideoT5TextEncoder, Note, Note, CLIPVisionLoader, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, Reroute, WanVideoVAELoader, Note, AppendStringsToList, AppendStringsToList, PrimitiveNode, LayerUtility: ImageScaleByAspectRatio V2, WanVideoTorchCompileSettings, WanVideoATITracks, WanVideoSampler, WanVideoTextEncode, SplineEditor, SplineEditor, SplineEditor, VHS_VideoCombine, WanVideoLoraSelect, Note, Note, VHS_VideoCombine, ImageConcanate, LayerUtility: PurgeVRAM, WanVideoATITracksVisualize, WanVideoBlockSwap, LoadImage, WanVideoATITracksVisualize, VHS_VideoCombine, WanVideoModelLoader, WanVideoDecode, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1929199069892349953.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（36 个）：
+- `Note`
+- `LoadWanVideoT5TextEncoder`
+- `Note`
+- `Note`
+- `CLIPVisionLoader`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `Reroute`
+- `WanVideoVAELoader`
+- `Note`
+- `AppendStringsToList`
+- `AppendStringsToList`
+- `PrimitiveNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoTorchCompileSettings`
+- `WanVideoATITracks`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `SplineEditor`
+- `SplineEditor`
+- `SplineEditor`
+- `VHS_VideoCombine`
+- `WanVideoLoraSelect`
+- `Note`
+- `Note`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoATITracksVisualize`
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `WanVideoATITracksVisualize`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **78%**（28/36）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`AppendStringsToList`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoTorchCompileSettings`、`WanVideoATITracks`、`WanVideoSampler`、`WanVideoTextEncode`、`SplineEditor`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`ImageConcanate`、`LayerUtility: PurgeVRAM`、`WanVideoATITracksVisualize`、`WanVideoBlockSwap`、`LoadImage`、`WanVideoModelLoader`、`WanVideoDecode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

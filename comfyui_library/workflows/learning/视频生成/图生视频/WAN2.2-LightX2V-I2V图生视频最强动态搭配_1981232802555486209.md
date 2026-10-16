@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/WAN2.2-LightX2V-I2V图生视频最强动态搭配_1981232802555486209.json
+name: WAN2.2-LightX2V-I2V图生视频最强动态搭配_1981232802555486209.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1981232802555486209.json
+hash: ed34b3657e2052ed
+coverage: 0.864865
+learned_at: 2026-10-15 22:32:36
+nodes: [CLIPTextEncode, Wan22PromptSelector, Text Concatenate, WanImageToVideo, PrimitiveInt, CLIPVisionEncode, MathExpression|pysssss, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, KSamplerAdvanced, KSamplerAdvanced, ImageStitch, VAEDecode, ModelPatchTorchSettings, PathchSageAttentionKJ, wanBlockSwap, ModelSamplingSD3, UNETLoader, CLIPVisionLoader, VAELoader, CLIPLoader, ModelSamplingSD3, PathchSageAttentionKJ, ModelPatchTorchSettings, wanBlockSwap, VHS_VideoCombine, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, RH_LLMAPI_NODE, CLIPTextEncode, ShowText|pysssss, LoadImage, PrimitiveInt, PrimitiveStringMultiline]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/WAN2.2-LightX2V-I2V图生视频最强动态搭配_1981232802555486209.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1981232802555486209.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（37 个）：
+- `CLIPTextEncode` ★核心
+- `Wan22PromptSelector`
+- `Text Concatenate`
+- `WanImageToVideo`
+- `PrimitiveInt`
+- `CLIPVisionEncode`
+- `MathExpression|pysssss`
+- `ImpactSwitch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImageStitch`
+- `VAEDecode` ★核心
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `CLIPVisionLoader`
+- `VAELoader`
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `wanBlockSwap`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `RH_LLMAPI_NODE`
+- `CLIPTextEncode` ★核心
+- `ShowText|pysssss`
+- `LoadImage`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **86%**（32/37）
+
+**有卡**：`CLIPTextEncode`、`Wan22PromptSelector`、`Text Concatenate`、`WanImageToVideo`、`CLIPVisionEncode`、`MathExpression|pysssss`、`LayerUtility: ImageScaleByAspectRatio V2`、`KSamplerAdvanced`、`ImageStitch`、`VAEDecode`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`wanBlockSwap`、`ModelSamplingSD3`、`UNETLoader`、`CLIPVisionLoader`、`VAELoader`、`CLIPLoader`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`RH_LLMAPI_NODE`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -22,15 +22,32 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[3]
 LIB = ROOT / "comfyui_library" / "workflows"
 LEARN = LIB / "learning"
+# 以脚本方式运行时 sys.path[0] 是 tools/ 目录，`import comfyui_library` 会
+# ModuleNotFoundError（sqlite 迁移后第 ③ 步才暴露出来）—— 自己把仓库根加进去
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
 # 数据库目录（物理库是 workflow_database.sqlite；派生索引仍是同目录 JSON）
 STORAGE_DIR = ROOT / "comfyui_library" / "database" / "storage"
 GRAPH_PATH = ROOT / "engine" / "knowledge_graph" / "knowledge_graph.json"
-BAD = re.compile("[" + re.escape('\\/:*?"<>|') + "\t\n\r]")
+BAD = re.compile("[" + re.escape('\\/:*?"<>|') + "\x00-\x1f\x7f]")
 ID_JSON = re.compile(r"(\d{8,})\.json$")
 
 
 def safe_name(s: str) -> str:
-    return BAD.sub("_", s).strip().strip(".")[:80]
+    """平台名 → 安全文件名
+
+    先清掉全部控制字符（\x00-\x1f\x7f）：RunningHub 工作流名里实测
+    出现过 \x03，Windows 对这类名字直接 WinError 123 拒绝改名。
+    下载脚本 2026-10-10 修过同款，这里补齐。
+
+    末尾还要再 lstrip("_")：RunningHub 上不少工作流名本身带前导下划线
+    （`_开源_xxx`、`_全能图片V1*`），留着会让扫描器/导入工具把它当
+    ComfyUI 伴生文件、又把名字改回去 —— 2026-10-16 踩过（前一天刚
+    手工去掉下划线，这个工具又给加回来了）。
+    """
+    s = BAD.sub("_", s).strip().strip(".")
+    s = s.lstrip("_").strip()
+    return s[:80]
 
 
 def load_names() -> dict[str, str]:

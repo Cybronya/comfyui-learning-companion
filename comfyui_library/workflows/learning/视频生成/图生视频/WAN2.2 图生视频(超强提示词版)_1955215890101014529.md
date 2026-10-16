@@ -1,0 +1,76 @@
+---
+key: 视频生成/图生视频/WAN2.2 图生视频(超强提示词版)_1955215890101014529.json
+name: WAN2.2 图生视频(超强提示词版)_1955215890101014529.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1955215890101014529.json
+hash: 6b0e3fd78bad7ede
+coverage: 0.911765
+learned_at: 2026-10-15 22:31:07
+nodes: [CLIPTextEncode, CLIPTextEncode, easy cleanGpuUsed, LayerUtility: ImageScaleByAspectRatio V2, WanImageToVideo, UNETLoader, UNETLoader, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, CLIPLoader, VAEDecode, SimpleMath+, LoadImage, easy int, TextBox, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, KSamplerAdvanced, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, RHHiddenNodes, VAELoader, DF_Integer, VHS_VideoCombine, PrimitiveBoolean, easy showAnything, RH_Translator, easy showAnything]
+patterns: []
+missing: []
+parameters: {"cfg": 12, "denoise": "simple", "sampler_name": 1, "scheduler": "uni_pc", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/WAN2.2 图生视频(超强提示词版)_1955215890101014529.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1955215890101014529.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（34 个）：
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanImageToVideo`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `CLIPLoader`
+- `VAEDecode` ★核心
+- `SimpleMath+`
+- `LoadImage`
+- `easy int`
+- `TextBox`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `RHHiddenNodes`
+- `VAELoader`
+- `DF_Integer`
+- `VHS_VideoCombine`
+- `PrimitiveBoolean`
+- `easy showAnything`
+- `RH_Translator`
+- `easy showAnything`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `12`
+- `sampler_name` = `1`
+- `scheduler` = `uni_pc`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **91%**（31/34）
+
+**有卡**：`CLIPTextEncode`、`easy cleanGpuUsed`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanImageToVideo`、`UNETLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`LayerUtility: PurgeVRAM V2`、`CLIPLoader`、`VAEDecode`、`SimpleMath+`、`LoadImage`、`easy int`、`TextBox`、`LoraLoaderModelOnly`、`KSamplerAdvanced`、`RHHiddenNodes`、`VAELoader`、`DF_Integer`、`VHS_VideoCombine`、`PrimitiveBoolean`、`RH_Translator`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

@@ -1,0 +1,195 @@
+---
+key: 视频生成/图生视频/wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_2032372108323459074.json
+name: wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_2032372108323459074.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2032372108323459074.json
+hash: a953ff0314b9aa3a
+coverage: 0.496732
+learned_at: 2026-10-15 22:35:36
+nodes: [WanFirstLastFrameToVideo, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Int, GetNode, MultiplyNode, GetNode, easy cleanGpuUsed, CLIPTextEncode, GetNode, CLIPTextEncode, GetNode, Int, GetNode, GetNode, GetNode, SetNode, VAEDecode, KSamplerAdvanced, GetNode, GetNode, INTConstant, INTConstant, easy ifElse, GetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, UNETLoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, SetNode, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, SetNode, UNETLoader, GetNode, LoadImage, INTConstant, AnyIsEmpty, easy boolean, BooleanUnary, GetNode, GetNode, easy ifElse, SetNode, ImageResizeKJv2, ImpactSwitch, BooleanUnary, AnyIsEmpty, easy boolean, GetNode, easy ifElse, GetNode, SetNode, ImageResizeKJv2, INTConstant, INTConstant, easy ifElse, ImpactSwitch, SetNode, SetNode, SetNode, SetNode, Int, SetNode, SetNode, INTConstant, SetNode, SetNode, Int, ImpactSwitch, GetNode, EmptyImage, GetNode, GetNode, EmptyImage, easy cleanGpuUsed, GetNode, easy ifElse, easy ifElse, LayerUtility: PurgeVRAM, ToString, Reroute, easy cleanGpuUsed, LayerUtility: PurgeVRAM, Qwen3_VQA, ShellAgentPluginOutputText, StringReplace, ImpactSwitch, ImageConcatMulti, SetNode, CLIPLoader, SetNode, UNETLoader, UNETLoader, UNETLoader, UNETLoader, UNETLoader, SetNode, VAELoader, ImpactSwitch, CM_IntToFloat, SetNode, RIFE VFI, Int, TextInput_, JoinStrings, GetNode, SetNode, MarkdownNote, MarkdownNote, MarkdownNote, PrimitiveBoolean, LoadImage, easy showAnything, MarkdownNote, Int, TextInput_, Int, Int, MarkdownNote, MarkdownNote, TextInput_, ImpactSwitch, PrimitiveBoolean, CRTFirstLastFrameSelector, SaveImage, LoadImage, VHS_VideoCombine, VHS_VideoCombine, PreviewImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), MarkdownNote]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "normal", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_2032372108323459074.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2032372108323459074.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（153 个）：
+- `WanFirstLastFrameToVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Int`
+- `GetNode`
+- `MultiplyNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `Int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `easy ifElse`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `SetNode`
+- `UNETLoader` ★核心
+- `GetNode`
+- `LoadImage`
+- `INTConstant`
+- `AnyIsEmpty`
+- `easy boolean`
+- `BooleanUnary`
+- `GetNode`
+- `GetNode`
+- `easy ifElse`
+- `SetNode`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `BooleanUnary`
+- `AnyIsEmpty`
+- `easy boolean`
+- `GetNode`
+- `easy ifElse`
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `INTConstant`
+- `INTConstant`
+- `easy ifElse`
+- `ImpactSwitch`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `ImpactSwitch`
+- `GetNode`
+- `EmptyImage`
+- `GetNode`
+- `GetNode`
+- `EmptyImage`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `easy ifElse`
+- `easy ifElse`
+- `LayerUtility: PurgeVRAM`
+- `ToString`
+- `Reroute`
+- `easy cleanGpuUsed`
+- `LayerUtility: PurgeVRAM`
+- `Qwen3_VQA`
+- `ShellAgentPluginOutputText`
+- `StringReplace`
+- `ImpactSwitch`
+- `ImageConcatMulti`
+- `SetNode`
+- `CLIPLoader`
+- `SetNode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `SetNode`
+- `VAELoader`
+- `ImpactSwitch`
+- `CM_IntToFloat`
+- `SetNode`
+- `RIFE VFI`
+- `Int`
+- `TextInput_`
+- `JoinStrings`
+- `GetNode`
+- `SetNode`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `PrimitiveBoolean`
+- `LoadImage`
+- `easy showAnything`
+- `MarkdownNote`
+- `Int`
+- `TextInput_`
+- `Int`
+- `Int`
+- `MarkdownNote`
+- `MarkdownNote`
+- `TextInput_`
+- `ImpactSwitch`
+- `PrimitiveBoolean`
+- `CRTFirstLastFrameSelector`
+- `SaveImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `MarkdownNote`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `normal`
+
+## 知识
+
+覆盖率 **50%**（76/153）
+
+**有卡**：`WanFirstLastFrameToVideo`、`Int`、`MultiplyNode`、`easy cleanGpuUsed`、`CLIPTextEncode`、`VAEDecode`、`KSamplerAdvanced`、`INTConstant`、`UNETLoader`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`LoadImage`、`AnyIsEmpty`、`easy boolean`、`BooleanUnary`、`ImageResizeKJv2`、`EmptyImage`、`LayerUtility: PurgeVRAM`、`ToString`、`Qwen3_VQA`、`ShellAgentPluginOutputText`、`StringReplace`、`ImageConcatMulti`、`CLIPLoader`、`VAELoader`、`CM_IntToFloat`、`RIFE VFI`、`TextInput_`、`JoinStrings`、`PrimitiveBoolean`、`CRTFirstLastFrameSelector`、`SaveImage`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、SaveImage、LoadImage、UNETLoader

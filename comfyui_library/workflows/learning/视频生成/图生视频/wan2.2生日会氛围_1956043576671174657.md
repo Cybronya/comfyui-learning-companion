@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/wan2.2生日会氛围_1956043576671174657.json
+name: wan2.2生日会氛围_1956043576671174657.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956043576671174657.json
+hash: b66900aa5c2aa3da
+coverage: 0.553571
+learned_at: 2026-10-15 22:31:11
+nodes: [LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, SetNode, ModelSamplingSD3, SetNode, Int, GetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, Int, GetNode, LayerUtility: PurgeVRAM, CLIPLoader, UnetLoaderGGUF, VAELoader, GetNode, ImageResize+, WanImageToVideo, FramePackFindNearestBucket, PreviewImage, Int, VHS_VideoCombine, WanVideoNAG, ModelSamplingSD3, SetNode, UnetLoaderGGUF, KSamplerAdvanced, KSamplerAdvanced, Anything Everywhere3, SetNode, VHS_LoadVideo, easy seed, Anything Everywhere, LoadImage, Fast Groups Bypasser (rgthree), VHS_VideoCombine, LoadImage, CLIPTextEncode, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, SeedVR2, GetNode, VAEDecode]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "beta", "sampler_name": 1, "scheduler": "uni_pc", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2生日会氛围_1956043576671174657.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956043576671174657.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（56 个）：
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `Int`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `Int`
+- `GetNode`
+- `LayerUtility: PurgeVRAM`
+- `CLIPLoader`
+- `UnetLoaderGGUF` ★核心
+- `VAELoader`
+- `GetNode`
+- `ImageResize+`
+- `WanImageToVideo`
+- `FramePackFindNearestBucket`
+- `PreviewImage`
+- `Int`
+- `VHS_VideoCombine`
+- `WanVideoNAG`
+- `ModelSamplingSD3`
+- `SetNode`
+- `UnetLoaderGGUF` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Anything Everywhere3`
+- `SetNode`
+- `VHS_LoadVideo`
+- `easy seed`
+- `Anything Everywhere`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SeedVR2`
+- `GetNode`
+- `VAEDecode` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `1`
+- `scheduler` = `uni_pc`
+- `denoise` = `beta`
+
+## 知识
+
+覆盖率 **55%**（31/56）
+
+**有卡**：`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`Int`、`LayerUtility: PurgeVRAM`、`CLIPLoader`、`UnetLoaderGGUF`、`VAELoader`、`ImageResize+`、`WanImageToVideo`、`FramePackFindNearestBucket`、`VHS_VideoCombine`、`WanVideoNAG`、`KSamplerAdvanced`、`VHS_LoadVideo`、`easy seed`、`LoadImage`、`CLIPTextEncode`、`SeedVR2`、`VAEDecode`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、SeedVR2

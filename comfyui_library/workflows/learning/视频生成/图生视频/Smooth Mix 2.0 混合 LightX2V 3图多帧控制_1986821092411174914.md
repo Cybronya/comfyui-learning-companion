@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1986821092411174914.json
+name: Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1986821092411174914.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1986821092411174914.json
+hash: bbba6d253a69db3d
+coverage: 0.933333
+learned_at: 2026-10-15 22:32:57
+nodes: [KSamplerAdvanced, Note, CLIPTextEncode, CLIPTextEncode, UNETLoader, ImageResize+, ImageResize+, LayerUtility: ImageScaleByAspectRatio V2, WanFirstMiddleLastFrameToVideo, ModelSamplingSD3, LoadImage, LoadImage, LoadImage, JWInteger, ModelSamplingSD3, KSamplerAdvanced, CR Prompt Text, ColorMatch, VHS_VideoCombine, VAEDecode, LayerUtility: PurgeVRAM, JWInteger, CLIPVisionEncode, CLIPVisionEncode, CLIPLoader, VAELoader, CLIPVisionEncode, CLIPVisionLoader, PrimitiveNode, UNETLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1986821092411174914.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1986821092411174914.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（30 个）：
+- `KSamplerAdvanced` ★核心
+- `Note`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `ImageResize+`
+- `ImageResize+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanFirstMiddleLastFrameToVideo`
+- `ModelSamplingSD3`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `JWInteger`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `CR Prompt Text`
+- `ColorMatch`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `JWInteger`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `PrimitiveNode`
+- `UNETLoader` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **93%**（28/30）
+
+**有卡**：`KSamplerAdvanced`、`CLIPTextEncode`、`UNETLoader`、`ImageResize+`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanFirstMiddleLastFrameToVideo`、`ModelSamplingSD3`、`LoadImage`、`JWInteger`、`CR Prompt Text`、`ColorMatch`、`VHS_VideoCombine`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`CLIPVisionEncode`、`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、KSamplerAdvanced

@@ -1,0 +1,102 @@
+---
+key: 视频生成/图生视频/Wan2.2_14B_i2v_SVI2_2007636774910173185.json
+name: Wan2.2_14B_i2v_SVI2_2007636774910173185.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2007636774910173185.json
+hash: bf6da5a0588d4e00
+coverage: 0.5
+learned_at: 2026-10-15 22:34:04
+nodes: [SetNode, GetNode, ModelSamplingSD3, GetNode, SetNode, SetNode, VAEDecode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, SetNode, SetNode, WanVideoNAG, CLIPTextEncode, GetNode, GetNode, ModelSamplingSD3, GetNode, SetNode, KSamplerAdvanced, KSamplerAdvanced, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, CFGZeroStar, PathchSageAttentionKJ, CLIPLoader, VAELoader, CLIPVisionLoader, ImageResizeKJv2, SetNode, INTConstant, INTConstant, SetNode, SetNode, CLIPTextEncode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, CLIPVisionEncode, VHS_VideoCombine, WanImageToVideo, AILab_QwenVL, PrimitiveStringMultiline, RH_Translator, LoadImage, CR SDXL Aspect Ratio, PreviewAny, JWStringConcat, PreviewAny]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2_14B_i2v_SVI2_2007636774910173185.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2007636774910173185.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（60 个）：
+- `SetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoNAG`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `GetNode`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `CFGZeroStar`
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionEncode`
+- `VHS_VideoCombine`
+- `WanImageToVideo`
+- `AILab_QwenVL`
+- `PrimitiveStringMultiline`
+- `RH_Translator`
+- `LoadImage`
+- `CR SDXL Aspect Ratio`
+- `PreviewAny`
+- `JWStringConcat`
+- `PreviewAny`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **50%**（30/60）
+
+**有卡**：`ModelSamplingSD3`、`VAEDecode`、`WanVideoNAG`、`CLIPTextEncode`、`KSamplerAdvanced`、`UNETLoader`、`LoraLoaderModelOnly`、`CFGZeroStar`、`PathchSageAttentionKJ`、`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`ImageResizeKJv2`、`INTConstant`、`CLIPVisionEncode`、`VHS_VideoCombine`、`WanImageToVideo`、`AILab_QwenVL`、`RH_Translator`、`LoadImage`、`CR SDXL Aspect Ratio`、`JWStringConcat`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced

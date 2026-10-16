@@ -1,0 +1,51 @@
+---
+key: 视频生成/文生视频/WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json
+name: WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1933729063255367681.json
+hash: 25a32c4f29e8ddbf
+coverage: 1
+learned_at: 2026-10-15 22:43:27
+nodes: [LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, MathExpression|pysssss, Int, WanVideoModelLoader, WanVideoSampler, WanVideoDecode, WanVideoVAELoader, ImageSizeAndBatchSize, LayerUtility: ImageScaleByAspectRatio V2, easy cleanGpuUsed, WanVideoImageClipEncode, VHS_VideoCombine, Int, WanVideoLoraSelect, WanVideoLoraSelect, LoadImage, WanVideoTextEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1933729063255367681.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（19 个）：
+- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `MathExpression|pysssss`
+- `Int`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoVAELoader`
+- `ImageSizeAndBatchSize`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy cleanGpuUsed`
+- `WanVideoImageClipEncode`
+- `VHS_VideoCombine`
+- `Int`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `WanVideoTextEncode`
+
+## 知识
+
+覆盖率 **100%**（19/19）
+
+**有卡**：`LoadWanVideoClipTextEncoder`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`MathExpression|pysssss`、`Int`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoVAELoader`、`ImageSizeAndBatchSize`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy cleanGpuUsed`、`WanVideoImageClipEncode`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`LoadImage`、`WanVideoTextEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

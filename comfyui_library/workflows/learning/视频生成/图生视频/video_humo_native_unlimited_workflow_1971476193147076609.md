@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/video_humo_native_unlimited_workflow_1971476193147076609.json
+name: video_humo_native_unlimited_workflow_1971476193147076609.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1971476193147076609.json
+hash: 60356fbe8876ee2c
+coverage: 0.772727
+learned_at: 2026-10-15 22:31:56
+nodes: [CLIPLoader, VAELoader, CLIPTextEncode, LoraLoaderModelOnly, MarkdownNote, MarkdownNote, MarkdownNote, UNETLoader, AudioEncoderLoader, LoadImage, WanHuMoImageToVideo, ModelSamplingSD3, CLIPTextEncode, KSampler, VAEDecode, AudioEncoderEncode, VHS_VideoCombine, VHS_LoadAudioUpload, ContextWindowsManual, easy showAnything, MathExpression|pysssss, easy showAnything]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 158021233891341, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/video_humo_native_unlimited_workflow_1971476193147076609.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1971476193147076609.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（22 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `UNETLoader` ★核心
+- `AudioEncoderLoader`
+- `LoadImage`
+- `WanHuMoImageToVideo`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `AudioEncoderEncode`
+- `VHS_VideoCombine`
+- `VHS_LoadAudioUpload`
+- `ContextWindowsManual`
+- `easy showAnything`
+- `MathExpression|pysssss`
+- `easy showAnything`
+
+## 关键参数
+
+- `seed` = `158021233891341`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **77%**（17/22）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`UNETLoader`、`AudioEncoderLoader`、`LoadImage`、`WanHuMoImageToVideo`、`ModelSamplingSD3`、`KSampler`、`VAEDecode`、`AudioEncoderEncode`、`VHS_VideoCombine`、`VHS_LoadAudioUpload`、`ContextWindowsManual`、`MathExpression|pysssss`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

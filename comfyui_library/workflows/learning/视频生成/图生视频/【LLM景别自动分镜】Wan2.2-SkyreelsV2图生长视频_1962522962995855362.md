@@ -1,0 +1,119 @@
+---
+key: 视频生成/图生视频/【LLM景别自动分镜】Wan2.2-SkyreelsV2图生长视频_1962522962995855362.json
+name: 【LLM景别自动分镜】Wan2.2-SkyreelsV2图生长视频_1962522962995855362.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1962522962995855362.json
+hash: c381bcb57597466d
+coverage: 0.666667
+learned_at: 2026-10-15 22:31:31
+nodes: [InversionDemoLazyIndexSwitch, easy showAnything, easy showAnything, easy showAnything, CR String To Number, SetNode, SetNode, LayerUtility: PurgeVRAM V2, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, CR String To Number, WanVideoBlockSwap, ColorCorrectOfUtils, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, WanVideoClipVisionEncode, Note, Note, CR Text, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoTorchCompileSettings, WanVideoLoraSelect, WanVideoModelLoader, easy cleanGpuUsed, WanVideoSetBlockSwap, Note, LoadWanVideoT5TextEncoder, WanVideoVAELoader, CLIPVisionLoader, Anything Everywhere, Anything Everywhere, Anything Everywhere, WanVideoTorchCompileSettings, WanVideoLoraSelect, WanVideoModelLoader, Note, WanVideoSetBlockSwap, easy cleanGpuUsed, SetNode, LoadImage, GetNode, Note, JWInteger, GetNode, GetNode, GetNode, Int, MathExpression|pysssss, WanVideoImageToVideoEncode, WanVideoTextEncode, SetNode, PrimitiveNode, CreateCFGScheduleFloatList, CogVideoEnhanceAVideo, Note, WanVideoSLG, Note, WanVideoSampler, Int, Note, WanVideoExperimentalArgs, Int, CogVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoSampler, WanVideoDecode, ImageCASharpening+, GetNode, ImageResize+, easy showAnything, Note, InversionDemoLazyIndexSwitch, RH_LLMAPI_NODE, easy showAnything, Note, FluxResolutionNode, GetNode, ImageResize+, easy int, VHS_VideoCombine, CR Text]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【LLM景别自动分镜】Wan2.2-SkyreelsV2图生长视频_1962522962995855362.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1962522962995855362.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（87 个）：
+- `InversionDemoLazyIndexSwitch`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `CR String To Number`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: PurgeVRAM V2`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `CR String To Number`
+- `WanVideoBlockSwap`
+- `ColorCorrectOfUtils`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `WanVideoClipVisionEncode`
+- `Note`
+- `Note`
+- `CR Text`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `easy cleanGpuUsed`
+- `WanVideoSetBlockSwap`
+- `Note`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `CLIPVisionLoader`
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `Note`
+- `WanVideoSetBlockSwap`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `LoadImage`
+- `GetNode`
+- `Note`
+- `JWInteger`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Int`
+- `MathExpression|pysssss`
+- `WanVideoImageToVideoEncode`
+- `WanVideoTextEncode`
+- `SetNode`
+- `PrimitiveNode`
+- `CreateCFGScheduleFloatList`
+- `CogVideoEnhanceAVideo`
+- `Note`
+- `WanVideoSLG`
+- `Note`
+- `WanVideoSampler` ★核心
+- `Int`
+- `Note`
+- `WanVideoExperimentalArgs`
+- `Int`
+- `CogVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `ImageCASharpening+`
+- `GetNode`
+- `ImageResize+`
+- `easy showAnything`
+- `Note`
+- `InversionDemoLazyIndexSwitch`
+- `RH_LLMAPI_NODE`
+- `easy showAnything`
+- `Note`
+- `FluxResolutionNode`
+- `GetNode`
+- `ImageResize+`
+- `easy int`
+- `VHS_VideoCombine`
+- `CR Text`
+
+## 知识
+
+覆盖率 **67%**（58/87）
+
+**有卡**：`InversionDemoLazyIndexSwitch`、`CR String To Number`、`LayerUtility: PurgeVRAM V2`、`MathExpression|pysssss`、`WanVideoBlockSwap`、`ColorCorrectOfUtils`、`WanVideoClipVisionEncode`、`CR Text`、`WanVideoLoraSelect`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`easy cleanGpuUsed`、`WanVideoSetBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`CLIPVisionLoader`、`LoadImage`、`JWInteger`、`Int`、`WanVideoImageToVideoEncode`、`WanVideoTextEncode`、`CreateCFGScheduleFloatList`、`CogVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`ImageCASharpening+`、`ImageResize+`、`RH_LLMAPI_NODE`、`FluxResolutionNode`、`easy int`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

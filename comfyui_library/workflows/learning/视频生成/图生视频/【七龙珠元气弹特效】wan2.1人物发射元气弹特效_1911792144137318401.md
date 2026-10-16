@@ -1,0 +1,76 @@
+---
+key: 视频生成/图生视频/【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json
+name: 【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1911792144137318401.json
+hash: f020358b51f17345
+coverage: 1
+learned_at: 2026-10-15 22:29:31
+nodes: [CLIPTextEncode, KSampler, VAELoader, VAEDecodeTiled, CLIPVisionEncode, WanImageToVideo, TeaCache, CLIPVisionLoader, CLIPLoader, ImageResizeKJ, UnetLoaderGGUF, CLIPTextEncode, LoraLoader, VHS_VideoCombine, LoadImage, Joy_caption, Joy_caption_load, ConcatTextOfUtils]
+patterns: [lora]
+missing: []
+problems: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+parameters: {"cfg": 6, "denoise": 1, "lora_name": "Wan_i2v_480p-功能-气功弹-Kamehameha Wan Lora.safetensors", "sampler_name": "uni_pc", "scheduler": "simple", "seed": 806670480514354, "steps": 20, "strength_clip": 1, "strength_model": 1}
+discoveries: [[high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换]
+---
+
+# 视频生成/图生视频/【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1911792144137318401.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（18 个）：
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `VAELoader`
+- `VAEDecodeTiled` ★核心
+- `CLIPVisionEncode`
+- `WanImageToVideo`
+- `TeaCache`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `ImageResizeKJ`
+- `UnetLoaderGGUF` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoader` ★核心
+- `VHS_VideoCombine`
+- `LoadImage`
+- `Joy_caption`
+- `Joy_caption_load`
+- `ConcatTextOfUtils`
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `seed` = `806670480514354`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `lora_name` = `Wan_i2v_480p-功能-气功弹-Kamehameha Wan Lora.safetensors`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+
+## 知识
+
+覆盖率 **100%**（18/18）
+
+**有卡**：`CLIPTextEncode`、`KSampler`、`VAELoader`、`VAEDecodeTiled`、`CLIPVisionEncode`、`WanImageToVideo`、`TeaCache`、`CLIPVisionLoader`、`CLIPLoader`、`ImageResizeKJ`、`UnetLoaderGGUF`、`LoraLoader`、`VHS_VideoCombine`、`LoadImage`、`Joy_caption`、`Joy_caption_load`、`ConcatTextOfUtils`
+
+**用到的条目**：KSampler、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、VAEDecodeTiled、CLIPVisionEncode、LoraLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换
+
+## 学习发现
+
+- [high] 发现KSampler但没有VAEDecode → 添加VAEDecode完成latent转换

@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json
+name: Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2057114333976555522.json
+hash: e6dbb99451f56d6d
+coverage: 0.92
+learned_at: 2026-10-15 22:38:08
+nodes: [VAELoader, CLIPLoader, PathchSageAttentionKJ, UNETLoader, ConditioningZeroOut, WanImageToVideo, UNETLoader, PrimitiveFloat, EmptyHunyuanLatentVideo, VHS_VideoCombine, VHS_VideoCombine, ModelSamplingSD3, ModelSamplingSD3, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, PromptRelayEncodeTimeline, PromptRelayEncodeTimeline, ImageResizeKJv2, SimpleMath+, Int, MarkdownNote, LoadImage, Int, Int]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "uni_pc", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2057114333976555522.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（25 个）：
+- `VAELoader`
+- `CLIPLoader`
+- `PathchSageAttentionKJ`
+- `UNETLoader` ★核心
+- `ConditioningZeroOut`
+- `WanImageToVideo`
+- `UNETLoader` ★核心
+- `PrimitiveFloat`
+- `EmptyHunyuanLatentVideo`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `PromptRelayEncodeTimeline`
+- `PromptRelayEncodeTimeline`
+- `ImageResizeKJv2`
+- `SimpleMath+`
+- `Int`
+- `MarkdownNote`
+- `LoadImage`
+- `Int`
+- `Int`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `uni_pc`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **92%**（23/25）
+
+**有卡**：`VAELoader`、`CLIPLoader`、`PathchSageAttentionKJ`、`UNETLoader`、`ConditioningZeroOut`、`WanImageToVideo`、`EmptyHunyuanLatentVideo`、`VHS_VideoCombine`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`PromptRelayEncodeTimeline`、`ImageResizeKJv2`、`SimpleMath+`、`Int`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

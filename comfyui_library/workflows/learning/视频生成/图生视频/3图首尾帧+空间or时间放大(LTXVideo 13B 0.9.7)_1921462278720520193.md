@@ -1,0 +1,89 @@
+---
+key: 视频生成/图生视频/3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json
+name: 3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1921462278720520193.json
+hash: 88b9509331b4c33f
+coverage: 0.980769
+learned_at: 2026-10-15 22:29:43
+nodes: [ImageResizeKJv2, VAEDecodeTiled, LTXVConditioning, CLIPTextEncode, ImageResizeKJ, LTXVFilmGrain, STGGuiderAdvanced, BasicScheduler, KSamplerSelect, STGAdvancedPresets, LTXVLatentUpsampler, LTXVAdainLatent, RandomNoise, SplitSigmas, STGGuiderAdvanced, STGAdvancedPresets, LTXVLatentUpsamplerModelLoader, Set VAE Decoder Noise, RandomNoise, PrimitiveNode, VAEDecodeTiled, ImageResizeKJ, LTXVLatentUpsampler, LTXVAdainLatent, RandomNoise, SplitSigmas, STGGuiderAdvanced, STGAdvancedPresets, LTXVLatentUpsamplerModelLoader, VHS_VideoCombine, CLIPLoader, VAEDecode, LayerUtility: PurgeVRAM V2, LTXVTiledSampler, LTXVFilmGrain, LTXVTiledSampler, VHS_VideoCombine, LTXQ8Patch, CheckpointLoaderSimple, ImageBatch, ImageBatch, ImageResizeKJv2, CLIPTextEncode, easy int, easy int, LoadImage, LoadImage, ImageResizeKJv2, LoadImage, JWInteger, LTXVBaseSampler, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltxv-13b-0.9.7-dev.safetensors"}
+---
+
+# 视频生成/图生视频/3图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921462278720520193.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1921462278720520193.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（52 个）：
+- `ImageResizeKJv2`
+- `VAEDecodeTiled` ★核心
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJ`
+- `LTXVFilmGrain`
+- `STGGuiderAdvanced`
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `STGAdvancedPresets`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVAdainLatent`
+- `RandomNoise`
+- `SplitSigmas`
+- `STGGuiderAdvanced`
+- `STGAdvancedPresets`
+- `LTXVLatentUpsamplerModelLoader` ★核心
+- `Set VAE Decoder Noise`
+- `RandomNoise`
+- `PrimitiveNode`
+- `VAEDecodeTiled` ★核心
+- `ImageResizeKJ`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVAdainLatent`
+- `RandomNoise`
+- `SplitSigmas`
+- `STGGuiderAdvanced`
+- `STGAdvancedPresets`
+- `LTXVLatentUpsamplerModelLoader` ★核心
+- `VHS_VideoCombine`
+- `CLIPLoader`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `LTXVTiledSampler` ★核心
+- `LTXVFilmGrain`
+- `LTXVTiledSampler` ★核心
+- `VHS_VideoCombine`
+- `LTXQ8Patch`
+- `CheckpointLoaderSimple` ★核心
+- `ImageBatch`
+- `ImageBatch`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `easy int`
+- `easy int`
+- `LoadImage`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `JWInteger`
+- `LTXVBaseSampler` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `checkpoint` = `ltxv-13b-0.9.7-dev.safetensors`
+
+## 知识
+
+覆盖率 **98%**（51/52）
+
+**有卡**：`ImageResizeKJv2`、`VAEDecodeTiled`、`LTXVConditioning`、`CLIPTextEncode`、`ImageResizeKJ`、`LTXVFilmGrain`、`STGGuiderAdvanced`、`BasicScheduler`、`KSamplerSelect`、`STGAdvancedPresets`、`LTXVLatentUpsampler`、`LTXVAdainLatent`、`RandomNoise`、`SplitSigmas`、`LTXVLatentUpsamplerModelLoader`、`Set VAE Decoder Noise`、`VHS_VideoCombine`、`CLIPLoader`、`VAEDecode`、`LayerUtility: PurgeVRAM V2`、`LTXVTiledSampler`、`LTXQ8Patch`、`CheckpointLoaderSimple`、`ImageBatch`、`easy int`、`LoadImage`、`JWInteger`、`LTXVBaseSampler`
+
+**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerSelect、LTXVLatentUpsampler、LTXVBaseSampler

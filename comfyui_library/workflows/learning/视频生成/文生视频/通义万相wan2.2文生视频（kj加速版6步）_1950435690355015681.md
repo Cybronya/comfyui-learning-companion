@@ -1,0 +1,64 @@
+---
+key: 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json
+name: 通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950435690355015681.json
+hash: 9611e9b6cd872bd5
+coverage: 0.84375
+learned_at: 2026-10-15 22:43:35
+nodes: [LoadWanVideoT5TextEncoder, WanVideoSetBlockSwap, WanVideoSampler, WanVideoSampler, WanVideoSetBlockSwap, GetImageSizeAndCount, WanVideoDecode, WanVideoSetLoRAs, CreateCFGScheduleFloatList, WanVideoTorchCompileSettings, WanVideoBlockSwap, Note, Note, Note, Note, Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], WanVideoSetLoRAs, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, MathExpression|pysssss, WanVideoTextEncode, WanVideoVAELoader, WanVideoEmptyEmbeds, Note, Primitive integer [Crystools], Primitive integer [Crystools], Text Multiline, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步）_1950435690355015681.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950435690355015681.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（32 个）：
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetBlockSwap`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoSetBlockSwap`
+- `GetImageSizeAndCount`
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `CreateCFGScheduleFloatList`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `MathExpression|pysssss`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `WanVideoEmptyEmbeds`
+- `Note`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Text Multiline`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **84%**（27/32）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`GetImageSizeAndCount`、`WanVideoDecode`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`Primitive integer [Crystools]`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`MathExpression|pysssss`、`WanVideoTextEncode`、`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`Text Multiline`、`VHS_VideoCombine`
+
+**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs

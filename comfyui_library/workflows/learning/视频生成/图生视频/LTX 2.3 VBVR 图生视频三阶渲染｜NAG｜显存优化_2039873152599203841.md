@@ -1,0 +1,74 @@
+---
+key: 视频生成/图生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039873152599203841.json
+name: LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039873152599203841.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039873152599203841.json
+hash: a001b0f2532a0ab4
+coverage: 0.918919
+learned_at: 2026-10-15 22:36:11
+nodes: [LoadImage, image_scale_pixel_v2, CLIPTextEncode, CheckpointLoaderSimple, workflow>675, LoadImage, image_scale_pixel_v2, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, workflow>675, LoadImage, image_scale_pixel_v2, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, workflow>675, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, SaveVideo, SaveVideo, SaveVideo, CLIPTextEncode, image_scale_pixel_v2, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, VRAMReserver, workflow>515, LoadImage, PrimitiveFloat, PrimitiveInt, CLIPTextEncode, SaveVideo, CLIPTextEncode, Note]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2.3-22b-distilled.safetensors"}
+---
+
+# 视频生成/图生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039873152599203841.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039873152599203841.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Process → Output → Other
+
+**节点**（37 个）：
+- `LoadImage`
+- `image_scale_pixel_v2`
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `workflow>675`
+- `LoadImage`
+- `image_scale_pixel_v2`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `workflow>675`
+- `LoadImage`
+- `image_scale_pixel_v2`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `workflow>675`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SaveVideo`
+- `SaveVideo`
+- `SaveVideo`
+- `CLIPTextEncode` ★核心
+- `image_scale_pixel_v2`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `VRAMReserver`
+- `workflow>515`
+- `LoadImage`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `CLIPTextEncode` ★核心
+- `SaveVideo`
+- `CLIPTextEncode` ★核心
+- `Note`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-distilled.safetensors`
+
+## 知识
+
+覆盖率 **92%**（34/37）
+
+**有卡**：`LoadImage`、`image_scale_pixel_v2`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`workflow>675`、`LoraLoaderModelOnly`、`SaveVideo`、`VRAMReserver`、`workflow>515`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、SaveVideo、image_scale_pixel_v2、VRAMReserver、workflow>515

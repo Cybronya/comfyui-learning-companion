@@ -23,6 +23,7 @@ import hashlib
 import json
 import shutil
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[3]
@@ -42,6 +43,51 @@ def hash_file(path: Path) -> str:
         for chunk in iter(lambda: f.read(8192), b""):
             digest.update(chunk)
     return digest.hexdigest()[:16]
+
+
+def semantic_hash(path: Path) -> str | None:
+    """
+    归一化内容指纹：同一工作流的**不同排版**算同一个
+
+    RunningHub 不同批次导出的同一工作流，缩进/换行/键序会变（实测
+    tab 缩进 195KB vs 无换行 148KB，内容逐字段一致）。字节指纹认不出
+    差异，会把同一份工作流当新文件反复导入 —— 2026-10-16 实测：清完
+    重复副本后，一轮流水线又把 316 个「刚删掉的副本」导回库里。
+
+    非工作流（无 nodes / prompt 键）返回 None，不参与语义判重。
+    """
+    if path.suffix.lower() != ".json":
+        return None  # png 按元数据判重，交给字节闸门
+    try:
+        data = json.loads(path.read_text(encoding="utf-8-sig"))
+    except Exception:
+        return None
+    if not isinstance(data, dict):
+        return None
+    if not isinstance(data.get("nodes"), list) and not isinstance(
+        data.get("prompt"), dict
+    ):
+        return None
+    canon = json.dumps(
+        data, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    )
+    return hashlib.sha256(canon.encode("utf-8")).hexdigest()[:16]
+
+
+def library_semantic_hashes() -> set:
+    """库内全部 json 工作流的归一化指纹（较慢：逐个解析）"""
+    hashes = set()
+    files = [
+        p for p in LIBRARY.rglob("*")
+        if is_workflow_file(p) and p.suffix.lower() == ".json"
+    ]
+    for i, p in enumerate(files, 1):
+        h = semantic_hash(p)
+        if h:
+            hashes.add(h)
+        if i % 5000 == 0:
+            print(f"  …已解析 {i}/{len(files)}", flush=True)
+    return hashes
 
 
 def is_comfyui_workflow(path: Path) -> bool:
@@ -99,6 +145,8 @@ def main() -> int:
     # 可选第二个参数：库内目标子目录（散落的文件归组用，
     # 不传则按 source 内的相对路径原样入库）
     dest_sub = Path(args[1]) if len(args) > 1 else Path("")
+    # 归一化闸门默认开（--no-semantic 关掉，只走字节指纹，快但会漏排版重复）
+    semantic = "--no-semantic" not in args
     if not source.is_dir():
         print(f"下载目录不存在: {source}")
         return 1
@@ -112,13 +160,11 @@ def main() -> int:
     )
     print(f"下载目录待导入: {len(files)} 个文件\n")
 
-    imported, dup_existing, dup_batch, renamed = 0, 0, 0, 0
-    batch_hashes = set()
-    taken = set()
-
+    # 第一轮：字节指纹闸门（便宜，先过一遍）
+    candidates, batch_hashes = [], set()
+    dup_existing, dup_batch = 0, 0
     for src in files:
         h = hash_file(src)
-
         if h in seen_hashes:
             dup_existing += 1
             continue
@@ -126,7 +172,32 @@ def main() -> int:
             dup_batch += 1
             continue
         batch_hashes.add(h)
+        candidates.append(src)
 
+    # 第二轮：归一化闸门。字节指纹认不出「同一工作流不同排版」，
+    # 会把同一份内容当新文件反复导入（见 semantic_hash 注释）
+    dup_semantic = 0
+    if semantic and candidates:
+        t0 = time.time()
+        print(f"字节闸门候选 {len(candidates)} 个，算库内归一化指纹…", flush=True)
+        seen_sem = library_semantic_hashes()
+        print(f"  库内唯一内容 {len(seen_sem)} 个（{time.time() - t0:.0f}s）")
+        kept, batch_sem = [], set()
+        for src in candidates:
+            sh = semantic_hash(src)
+            if sh and (sh in seen_sem or sh in batch_sem):
+                dup_semantic += 1
+                continue
+            if sh:
+                batch_sem.add(sh)
+                seen_sem.add(sh)
+            kept.append(src)
+        candidates = kept
+
+    imported, renamed = 0, 0
+    taken = set()
+
+    for src in candidates:
         rel = dest_sub / src.relative_to(source)
         target = unique_target(rel, taken)
         if str(target) != str(rel):
@@ -136,11 +207,12 @@ def main() -> int:
         dest = LIBRARY / target
         dest.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dest)
-        seen_hashes.add(h)
+        seen_hashes.add(hash_file(src))
         imported += 1
 
     print(f"导入 {imported} 个"
           f"（与库内重复跳过 {dup_existing}，"
+          f"排版重复跳过 {dup_semantic}，"
           f"批次内重复跳过 {dup_batch}，改名 {renamed}）")
     print("下一步: python -X utf8 -m engine.workflow_learning 或")
     print("        create_batch_learner().learn_folder() 增量学习新文件")

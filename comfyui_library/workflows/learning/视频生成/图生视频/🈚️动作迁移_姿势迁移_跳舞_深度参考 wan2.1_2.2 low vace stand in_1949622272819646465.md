@@ -1,0 +1,128 @@
+---
+key: 视频生成/图生视频/🈚️动作迁移_姿势迁移_跳舞_深度参考 wan2.1_2.2 low vace stand in_1949622272819646465.json
+name: 🈚️动作迁移_姿势迁移_跳舞_深度参考 wan2.1_2.2 low vace stand in_1949622272819646465.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1949622272819646465.json
+hash: f522db8b35b52991
+coverage: 0.46875
+learned_at: 2026-10-15 22:30:49
+nodes: [SetNode, SetNode, GetNode, GetNode, VHS_DuplicateImages, PreviewImage, SetNode, SetNode, SetNode, SetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, ImageResizeKJv2, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, ImageResizeKJv2, SetNode, SetNode, Int, ApplyFaceProcessor, WanVideoEncode, GetNode, GetNode, CR Text, WanVideoTextEncodeSingle, SetNode, VHS_DuplicateImages, GetNode, LoadWanVideoT5TextEncoder, GetImageSizeAndCount, GetNode, GetNode, WanVideoDecode, WanVideoVACEEncode, GetNode, GetNode, RH_Captioner, GetNode, GetNode, LoadImage, easy showAnything, CR Text Concatenate, GetImageSizeAndCount, LayerUtility: PurgeVRAM V2, SetNode, WanVideoSampler, Manual XY Entry Info, WanVideoContextOptions, Int, Int, VHS_LoadVideo, WanVideoVAELoader, SetNode, WanVideoVACEModelSelect, WanVideoBlockSwap, PreviewImage, FaceProcessorLoader, SetNode, easy cleanGpuUsed, AIO_Preprocessor, SetNode, GetNode, ImageResizeKJv2, ImpactSwitch, WanVideoModelLoader, VHS_VideoCombine, WanVideoModelLoader, GetNode, WanVideoVACEModelSelect, OnnxDetectionModelLoader, PoseDetectionOneToAllAnimation, WanVideoVACEEncode, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, SetNode, WanVideoAddStandInLatent, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoSampler, GetNode, GetNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/🈚️动作迁移_姿势迁移_跳舞_深度参考 wan2.1_2.2 low vace stand in_1949622272819646465.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1949622272819646465.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（96 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_DuplicateImages`
+- `PreviewImage`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `ApplyFaceProcessor`
+- `WanVideoEncode`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `WanVideoTextEncodeSingle`
+- `SetNode`
+- `VHS_DuplicateImages`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoVACEEncode`
+- `GetNode`
+- `GetNode`
+- `RH_Captioner`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `easy showAnything`
+- `CR Text Concatenate`
+- `GetImageSizeAndCount`
+- `LayerUtility: PurgeVRAM V2`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `Manual XY Entry Info`
+- `WanVideoContextOptions`
+- `Int`
+- `Int`
+- `VHS_LoadVideo`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoVACEModelSelect`
+- `WanVideoBlockSwap`
+- `PreviewImage`
+- `FaceProcessorLoader`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `AIO_Preprocessor`
+- `SetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImpactSwitch`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `GetNode`
+- `WanVideoVACEModelSelect`
+- `OnnxDetectionModelLoader`
+- `PoseDetectionOneToAllAnimation`
+- `WanVideoVACEEncode`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `WanVideoAddStandInLatent`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+
+## 知识
+
+覆盖率 **47%**（45/96）
+
+**有卡**：`VHS_DuplicateImages`、`VHS_VideoCombine`、`ImageResizeKJv2`、`Int`、`ApplyFaceProcessor`、`WanVideoEncode`、`CR Text`、`WanVideoTextEncodeSingle`、`LoadWanVideoT5TextEncoder`、`GetImageSizeAndCount`、`WanVideoDecode`、`WanVideoVACEEncode`、`RH_Captioner`、`LoadImage`、`CR Text Concatenate`、`LayerUtility: PurgeVRAM V2`、`WanVideoSampler`、`Manual XY Entry Info`、`WanVideoContextOptions`、`VHS_LoadVideo`、`WanVideoVAELoader`、`WanVideoVACEModelSelect`、`WanVideoBlockSwap`、`FaceProcessorLoader`、`easy cleanGpuUsed`、`AIO_Preprocessor`、`WanVideoModelLoader`、`OnnxDetectionModelLoader`、`PoseDetectionOneToAllAnimation`、`WanVideoLoraSelect`、`WanVideoAddStandInLatent`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、WanVideoVACEEncode、WanVideoAddStandInLatent

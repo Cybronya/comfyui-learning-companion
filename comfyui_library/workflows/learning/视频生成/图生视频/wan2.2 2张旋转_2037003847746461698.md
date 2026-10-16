@@ -1,0 +1,180 @@
+---
+key: 视频生成/图生视频/wan2.2 2张旋转_2037003847746461698.json
+name: wan2.2 2张旋转_2037003847746461698.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2037003847746461698.json
+hash: 1d5fd736fb42a6b1
+coverage: 0.621622
+learned_at: 2026-10-15 22:35:54
+nodes: [WanVideoTorchCompileSettings, SetNode, WanVideoSampler, GetNode, WanVideoSampler, WanVideoSampler, GetNode, GetNode, PrimitiveNode, WanVideoSigmaToStep, GetNode, PrimitiveNode, WanVideoScheduler, WanVideoScheduler, WanVideoSampler, WanVideoSampler, GetNode, WanVideoSetBlockSwap, SetNode, WanVideoSampler, PrimitiveNode, WanVideoSigmaToStep, GetNode, PrimitiveNode, WanVideoScheduler, WanVideoScheduler, WanVideoSampler, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoVACEEncode, WanVideoVACEEncode, INTConstant, GetNode, PreviewImage, PreviewImage, CreateCFGScheduleFloatList, Display Any (rgthree), CreateCFGScheduleFloatList, Display Any (rgthree), Display Any (rgthree), CreateCFGScheduleFloatList, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoTextEncodeCached, WanVideoVACEEncode, WanVideoVAELoader, WanVideoScheduler, WanVideoScheduler, WanVideoSigmaToStep, PrimitiveNode, WanVideoDecode, WanVideoTextEncodeCached, WanVideoTextEncodeCached, WanVideoTextEncodeCached, easy showAnything, ImpactSwitch, easy showAnything, ImpactSwitch, GetNode, easy showAnything, CR Text, ImpactSwitch, ImageConcanate, ImageConcanate, GetNode, WanVideoSetBlockSwap, WanVideoDecode, CR Text, easy showAnything, ImpactSwitch, WanVideoScheduler, WanVideoDecode, WanVideoModelLoader, WanVideoVACEModelSelect, WanVideoModelLoader, WanVideoVACEModelSelect, SetNode, SetNode, SetNode, SetNode, Display Any (rgthree), CreateCFGScheduleFloatList, WanVideoSigmaToStep, PrimitiveNode, PrimitiveNode, WanVideoScheduler, easy showAnything, GetNode, GetNode, GetNode, GetNode, CR Text, WanVideoVACEEncode, WanVideoVACEStartToEndFrame, PreviewImage, VideoContinuationGenerator, GetNode, GetNode, CR Text, GetNode, WanVideoBlender, GetNode, WanVideoBlender, GetNode, WanVideoBlender, INTConstant, INTConstant, GetNode, ImageConcanate, ImageConcanate, WanVideoSampler, PrimitiveNode, VideoContinuationGenerator, WanVideoDecode, WanVideoVACEStartToEndFrame, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, GetNode, INTConstant, INTConstant, INTConstant, RH_LLMAPI_NODE, RH_LLMAPI_NODE, RH_LLMAPI_NODE, RH_LLMAPI_NODE, VideoContinuationGenerator, Seed (rgthree), Seed (rgthree), Seed (rgthree), INTConstant, VideoContinuationGenerator, VHS_VideoCombine, Seed (rgthree), LoadImage, LoadImage, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, WanVideoBlockSwap, LoadImage, LoadImage, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2 2张旋转_2037003847746461698.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2037003847746461698.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（148 个）：
+- `WanVideoTorchCompileSettings`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `PrimitiveNode`
+- `WanVideoSigmaToStep`
+- `GetNode`
+- `PrimitiveNode`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `PrimitiveNode`
+- `WanVideoSigmaToStep`
+- `GetNode`
+- `PrimitiveNode`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoVACEEncode`
+- `WanVideoVACEEncode`
+- `INTConstant`
+- `GetNode`
+- `PreviewImage`
+- `PreviewImage`
+- `CreateCFGScheduleFloatList`
+- `Display Any (rgthree)`
+- `CreateCFGScheduleFloatList`
+- `Display Any (rgthree)`
+- `Display Any (rgthree)`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoSigmaToStep`
+- `PrimitiveNode`
+- `WanVideoDecode`
+- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeCached`
+- `easy showAnything`
+- `ImpactSwitch`
+- `easy showAnything`
+- `ImpactSwitch`
+- `GetNode`
+- `easy showAnything`
+- `CR Text`
+- `ImpactSwitch`
+- `ImageConcanate`
+- `ImageConcanate`
+- `GetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoDecode`
+- `CR Text`
+- `easy showAnything`
+- `ImpactSwitch`
+- `WanVideoScheduler`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `WanVideoVACEModelSelect`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Display Any (rgthree)`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSigmaToStep`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `WanVideoScheduler`
+- `easy showAnything`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `WanVideoVACEEncode`
+- `WanVideoVACEStartToEndFrame`
+- `PreviewImage`
+- `VideoContinuationGenerator`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `GetNode`
+- `WanVideoBlender`
+- `GetNode`
+- `WanVideoBlender`
+- `GetNode`
+- `WanVideoBlender`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `ImageConcanate`
+- `ImageConcanate`
+- `WanVideoSampler` ★核心
+- `PrimitiveNode`
+- `VideoContinuationGenerator`
+- `WanVideoDecode`
+- `WanVideoVACEStartToEndFrame`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_NODE`
+- `VideoContinuationGenerator`
+- `Seed (rgthree)`
+- `Seed (rgthree)`
+- `Seed (rgthree)`
+- `INTConstant`
+- `VideoContinuationGenerator`
+- `VHS_VideoCombine`
+- `Seed (rgthree)`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **62%**（92/148）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoSampler`、`WanVideoSigmaToStep`、`WanVideoScheduler`、`WanVideoSetBlockSwap`、`WanVideoVACEEncode`、`INTConstant`、`CreateCFGScheduleFloatList`、`Display Any (rgthree)`、`WanVideoTextEncodeCached`、`WanVideoVAELoader`、`WanVideoDecode`、`CR Text`、`ImageConcanate`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`WanVideoVACEStartToEndFrame`、`VideoContinuationGenerator`、`WanVideoBlender`、`VHS_VideoCombine`、`RH_LLMAPI_NODE`、`Seed (rgthree)`、`LoadImage`、`WanVideoLoraSelectMulti`、`WanVideoBlockSwap`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、Seed (rgthree)、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached

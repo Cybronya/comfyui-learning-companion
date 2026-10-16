@@ -1,0 +1,69 @@
+---
+key: 视频生成/文生视频/【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924702934460715010.json
+name: 【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924702934460715010.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1924702934460715010.json
+hash: 5b5893471fc50e6d
+coverage: 0.945946
+learned_at: 2026-10-15 22:43:24
+nodes: [WanVideoBlockSwap, GetImageSizeAndCount, ColorMatch, WanVideoDecode, ShowText|pysssss, Text Concatenate, WD14Tagger|pysssss, WanVideoTextEncode, ImagePadKJ, Fast Groups Bypasser (rgthree), Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], AIO_Preprocessor, ImageResizeKJ, Primitive integer [Crystools], EmptyImage, AddLabel, ImageConcatMulti, ImageConcatMulti, WanVideoSampler, WanVideoVACEEncode, GetImageSizeAndCount, VHS_VideoCombine, VHS_VideoCombine, AddLabel, WanVideoTorchCompileSettings, WanVideoLoraSelect, WanVideoVACEModelSelect, WanVideoModelLoader, WanVideoVAELoader, LoadWanVideoT5TextEncoder, ImageResizeKJ, VHS_LoadVideo, LoadImage, Text Multiline, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924702934460715010.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1924702934460715010.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（37 个）：
+- `WanVideoBlockSwap`
+- `GetImageSizeAndCount`
+- `ColorMatch`
+- `WanVideoDecode`
+- `ShowText|pysssss`
+- `Text Concatenate`
+- `WD14Tagger|pysssss`
+- `WanVideoTextEncode`
+- `ImagePadKJ`
+- `Fast Groups Bypasser (rgthree)`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `AIO_Preprocessor`
+- `ImageResizeKJ`
+- `Primitive integer [Crystools]`
+- `EmptyImage`
+- `AddLabel`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `WanVideoSampler` ★核心
+- `WanVideoVACEEncode`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `AddLabel`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `ImageResizeKJ`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `Text Multiline`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **95%**（35/37）
+
+**有卡**：`WanVideoBlockSwap`、`GetImageSizeAndCount`、`ColorMatch`、`WanVideoDecode`、`Text Concatenate`、`WD14Tagger|pysssss`、`WanVideoTextEncode`、`ImagePadKJ`、`Primitive integer [Crystools]`、`AIO_Preprocessor`、`ImageResizeKJ`、`EmptyImage`、`AddLabel`、`ImageConcatMulti`、`WanVideoSampler`、`WanVideoVACEEncode`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoLoraSelect`、`WanVideoVACEModelSelect`、`WanVideoModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`VHS_LoadVideo`、`LoadImage`、`Text Multiline`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

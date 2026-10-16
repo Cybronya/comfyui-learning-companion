@@ -1,0 +1,85 @@
+---
+key: 视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json
+name: 贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2062439280944963586.json
+hash: 8807f1a666913904
+coverage: 0.924528
+learned_at: 2026-10-15 22:39:04
+nodes: [SamplerCustom, SamplerCustom, PathchSageAttentionKJ, MarkdownNote, LoadImage, LoadImage, KSamplerSelect, UNETLoader, UNETLoader, CLIPLoader, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoader, Int, VAEDecode, SimpleMath+, VHS_VideoCombine, ComfyMathExpression, VHS_VideoInfoLoaded, easy cleanGpuUsed, easy showAnything, Int, BerniniConditioning, BatchImagesNode, Note, LoadImage, CLIPTextEncode, CLIPTextEncode, BasicScheduler, SplitSigmas, MarkdownNote, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CLIPTextEncode, VHS_LoadVideo, ImageResizeKJv2, Int, Int, VHS_LoadVideo, ImageResizeKJv2, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2062439280944963586.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（53 个）：
+- `SamplerCustom` ★核心
+- `SamplerCustom` ★核心
+- `PathchSageAttentionKJ`
+- `MarkdownNote`
+- `LoadImage`
+- `LoadImage`
+- `KSamplerSelect` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `Int`
+- `VAEDecode` ★核心
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `VHS_VideoInfoLoaded`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `Int`
+- `BerniniConditioning`
+- `BatchImagesNode`
+- `Note`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `BasicScheduler`
+- `SplitSigmas`
+- `MarkdownNote`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `VHS_LoadVideo`
+- `ImageResizeKJv2`
+- `Int`
+- `Int`
+- `VHS_LoadVideo`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **92%**（49/53）
+
+**有卡**：`SamplerCustom`、`PathchSageAttentionKJ`、`LoadImage`、`KSamplerSelect`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`VAELoader`、`Int`、`VAEDecode`、`SimpleMath+`、`VHS_VideoCombine`、`ComfyMathExpression`、`VHS_VideoInfoLoaded`、`easy cleanGpuUsed`、`BerniniConditioning`、`BatchImagesNode`、`CLIPTextEncode`、`BasicScheduler`、`SplitSigmas`、`VHS_LoadVideo`、`ImageResizeKJv2`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerSelect

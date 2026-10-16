@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/Wan2.1 VACE 吉卜力风格视频转绘_1948587414542528513.json
+name: Wan2.1 VACE 吉卜力风格视频转绘_1948587414542528513.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1948587414542528513.json
+hash: 0924d3c4adc2d48d
+coverage: 0.680851
+learned_at: 2026-10-15 22:30:47
+nodes: [WanVideoTorchCompileSettings, WanVideoEnhanceAVideo, WanVideoSLG, LoadWanVideoT5TextEncoder, WanVideoTextEncode, GetNode, SetNode, VHS_VideoInfo, GetNode, GetNode, GetNode, SetNode, GetNode, WanVideoBlockSwap, WanVideoLoraSelect, SetNode, SetNode, DepthAnythingV2Preprocessor, ImageFromBatch, ImageResizeKJv2, PreviewImage, GoogleTranslateTextNode, easy positive, easy int, SetNode, easy int, GetImageSizeAndCount, WanVideoContextOptions, WanVideoSampler, WanVideoDecode, SetNode, ImageConcatMulti, WanVideoExperimentalArgs, GetNode, GetNode, WanVideoVACEEncode, WanVideoVAELoader, MiniCPM_VQA_Polished, GetImageSize+, easy showAnything, easy anythingIndexSwitch, VHS_VideoCombine, VHS_VideoCombine, WanVideoTeaCache, WanVideoVACEModelSelect, WanVideoModelLoader, VHS_LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 VACE 吉卜力风格视频转绘_1948587414542528513.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1948587414542528513.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（47 个）：
+- `WanVideoTorchCompileSettings`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoInfo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `SetNode`
+- `DepthAnythingV2Preprocessor`
+- `ImageFromBatch`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `GoogleTranslateTextNode`
+- `easy positive`
+- `easy int`
+- `SetNode`
+- `easy int`
+- `GetImageSizeAndCount`
+- `WanVideoContextOptions`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `SetNode`
+- `ImageConcatMulti`
+- `WanVideoExperimentalArgs`
+- `GetNode`
+- `GetNode`
+- `WanVideoVACEEncode`
+- `WanVideoVAELoader`
+- `MiniCPM_VQA_Polished`
+- `GetImageSize+`
+- `easy showAnything`
+- `easy anythingIndexSwitch`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVideoTeaCache`
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `VHS_LoadVideo`
+
+## 知识
+
+覆盖率 **68%**（32/47）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`VHS_VideoInfo`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`DepthAnythingV2Preprocessor`、`ImageFromBatch`、`ImageResizeKJv2`、`GoogleTranslateTextNode`、`easy positive`、`easy int`、`GetImageSizeAndCount`、`WanVideoContextOptions`、`WanVideoSampler`、`WanVideoDecode`、`ImageConcatMulti`、`WanVideoExperimentalArgs`、`WanVideoVACEEncode`、`WanVideoVAELoader`、`MiniCPM_VQA_Polished`、`GetImageSize+`、`easy anythingIndexSwitch`、`VHS_VideoCombine`、`WanVideoTeaCache`、`WanVideoVACEModelSelect`、`WanVideoModelLoader`、`VHS_LoadVideo`
+
+**用到的条目**：DepthAnythingV2Preprocessor、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

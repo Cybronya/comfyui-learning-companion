@@ -1,0 +1,68 @@
+---
+key: 视频生成/文生视频/Wan2.2-t2v-rapid-AIO融合模型文生视频+4步快速生成_1951970286314926081.json
+name: Wan2.2-t2v-rapid-AIO融合模型文生视频+4步快速生成_1951970286314926081.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1951970286314926081.json
+hash: ee66aae236e8e755
+coverage: 0.733333
+learned_at: 2026-10-15 22:43:38
+nodes: [CLIPTextEncode, VAELoader, CLIPLoader, EmptyHunyuanLatentVideo, UNETLoader, CLIPTextEncode, ModelSamplingSD3, KSampler, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveStringMultiline, VAEDecode, VHS_VideoCombine, Note Plus (mtb)]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 1376, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/Wan2.2-t2v-rapid-AIO融合模型文生视频+4步快速生成_1951970286314926081.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1951970286314926081.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（15 个）：
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyHunyuanLatentVideo`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `KSampler` ★核心
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `Note Plus (mtb)`
+
+## 关键参数
+
+- `seed` = `1376`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **73%**（11/15）
+
+**有卡**：`CLIPTextEncode`、`VAELoader`、`CLIPLoader`、`EmptyHunyuanLatentVideo`、`UNETLoader`、`ModelSamplingSD3`、`KSampler`、`VAEDecode`、`VHS_VideoCombine`、`Note Plus (mtb)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、EmptyHunyuanLatentVideo、ModelSamplingSD3
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

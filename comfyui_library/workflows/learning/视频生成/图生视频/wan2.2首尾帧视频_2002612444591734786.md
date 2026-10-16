@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/wan2.2首尾帧视频_2002612444591734786.json
+name: wan2.2首尾帧视频_2002612444591734786.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2002612444591734786.json
+hash: 0f9c208ae99bd964
+coverage: 0.833333
+learned_at: 2026-10-15 22:33:48
+nodes: [WanVideoSetBlockSwap, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, MathExpression|pysssss, SetNode, easy cleanGpuUsed, easy cleanGpuUsed, LayerUtility: PurgeVRAM V2, PreviewImage, PreviewImage, PreviewImage, WanVideoTextEncodeSingle, WanVideoClipVisionEncode, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, easy batchAnything, CreateCFGScheduleFloatList, WanVideoSampler, RHHiddenNodes, WanVideoTextEncodeSingle, WanVideoLoraSelect, WanVideoModelLoader, WanVideoBlockSwap, easy anythingIndexSwitch, WanVideoImageToVideoEncode, ImageResize+, ImageResize+, ImageResize+, PreviewImage, GetImageSize, ImageResize+, Compare, ImageResize+, ImageResize+, Int, Int, ImageCASharpening+, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, WanVideoSampler, WanVideoDecode, WanVideoApplyNAG, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoLoraSelect, PreviewImage, RHHiddenNodes, easy ifElse, easy forLoopEnd, easy forLoopStart, VHS_VideoCombine, VHS_VideoCombine, Int, JWInteger, JWInteger, GetImageSize, PreviewImage, WanVideoVAELoader, CLIPVisionLoader, Anything Everywhere, Anything Everywhere, Anything Everywhere]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2首尾帧视频_2002612444591734786.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2002612444591734786.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（66 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `MathExpression|pysssss`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `LayerUtility: PurgeVRAM V2`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `WanVideoTextEncodeSingle`
+- `WanVideoClipVisionEncode`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `easy batchAnything`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSampler` ★核心
+- `RHHiddenNodes`
+- `WanVideoTextEncodeSingle`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `easy anythingIndexSwitch`
+- `WanVideoImageToVideoEncode`
+- `ImageResize+`
+- `ImageResize+`
+- `ImageResize+`
+- `PreviewImage`
+- `GetImageSize`
+- `ImageResize+`
+- `Compare`
+- `ImageResize+`
+- `ImageResize+`
+- `Int`
+- `Int`
+- `ImageCASharpening+`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoApplyNAG`
+- `WanVideoModelLoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoLoraSelect`
+- `PreviewImage`
+- `RHHiddenNodes`
+- `easy ifElse`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Int`
+- `JWInteger`
+- `JWInteger`
+- `GetImageSize`
+- `PreviewImage`
+- `WanVideoVAELoader`
+- `CLIPVisionLoader`
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `Anything Everywhere`
+
+## 知识
+
+覆盖率 **83%**（55/66）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`MathExpression|pysssss`、`easy cleanGpuUsed`、`LayerUtility: PurgeVRAM V2`、`WanVideoTextEncodeSingle`、`WanVideoClipVisionEncode`、`RHHiddenNodes`、`easy batchAnything`、`CreateCFGScheduleFloatList`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`easy anythingIndexSwitch`、`WanVideoImageToVideoEncode`、`ImageResize+`、`GetImageSize`、`Compare`、`Int`、`ImageCASharpening+`、`LoadImage`、`WanVideoDecode`、`WanVideoApplyNAG`、`easy forLoopEnd`、`easy forLoopStart`、`VHS_VideoCombine`、`JWInteger`、`WanVideoVAELoader`、`CLIPVisionLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

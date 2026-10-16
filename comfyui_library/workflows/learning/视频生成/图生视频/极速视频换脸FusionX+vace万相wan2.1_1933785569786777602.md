@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/极速视频换脸FusionX+vace万相wan2.1_1933785569786777602.json
+name: 极速视频换脸FusionX+vace万相wan2.1_1933785569786777602.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1933785569786777602.json
+hash: b0cba3100bb7b4a8
+coverage: 1
+learned_at: 2026-10-15 22:30:14
+nodes: [LoadWanVideoT5TextEncoder, WanVideoTextEncode, WanVideoVAELoader, WanVideoModelLoader, WanVideoTeaCache, ImageResizeKJ, ImageResizeKJ, LayerUtility: ImageScaleByAspectRatio V2, ImageFromBatch+, APersonMaskGenerator, ACE_ImageFaceCrop, RH_Captioner, WanVideoBlockSwap, LayerUtility: PurgeVRAM V2, Text Concatenate, InpaintPreprocessor, JWInteger, CR Prompt Text, GrowMaskWithBlur, VHS_VideoCombine, VHS_LoadVideo, JWInteger, VHS_VideoInfoLoaded, LoadImage, WanVideoSampler, WanVideoVACEEncode, WanVideoDecode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/极速视频换脸FusionX+vace万相wan2.1_1933785569786777602.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1933785569786777602.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（27 个）：
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `WanVideoTeaCache`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageFromBatch+`
+- `APersonMaskGenerator`
+- `ACE_ImageFaceCrop`
+- `RH_Captioner`
+- `WanVideoBlockSwap`
+- `LayerUtility: PurgeVRAM V2`
+- `Text Concatenate`
+- `InpaintPreprocessor`
+- `JWInteger`
+- `CR Prompt Text`
+- `GrowMaskWithBlur`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `JWInteger`
+- `VHS_VideoInfoLoaded`
+- `LoadImage`
+- `WanVideoSampler` ★核心
+- `WanVideoVACEEncode`
+- `WanVideoDecode`
+
+## 知识
+
+覆盖率 **100%**（27/27）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoTeaCache`、`ImageResizeKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageFromBatch+`、`APersonMaskGenerator`、`ACE_ImageFaceCrop`、`RH_Captioner`、`WanVideoBlockSwap`、`LayerUtility: PurgeVRAM V2`、`Text Concatenate`、`InpaintPreprocessor`、`JWInteger`、`CR Prompt Text`、`GrowMaskWithBlur`、`VHS_VideoCombine`、`VHS_LoadVideo`、`VHS_VideoInfoLoaded`、`LoadImage`、`WanVideoSampler`、`WanVideoVACEEncode`、`WanVideoDecode`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode

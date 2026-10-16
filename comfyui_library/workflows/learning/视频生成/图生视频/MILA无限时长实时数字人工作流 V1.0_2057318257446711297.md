@@ -1,0 +1,38 @@
+---
+key: 视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json
+name: MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2057318257446711297.json
+hash: 3624d7e59695c005
+coverage: 1
+learned_at: 2026-10-15 22:38:10
+nodes: [SaveVideo, RunningHub FlashTalk Sampler, LayerUtility: ImageScaleByAspectRatio, LoadImage, LoadAudio, RunningHub FlashTalk Loader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2057318257446711297.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（6 个）：
+- `SaveVideo`
+- `RunningHub FlashTalk Sampler` ★核心
+- `LayerUtility: ImageScaleByAspectRatio`
+- `LoadImage`
+- `LoadAudio`
+- `RunningHub FlashTalk Loader`
+
+## 知识
+
+覆盖率 **100%**（6/6）
+
+**有卡**：`SaveVideo`、`RunningHub FlashTalk Sampler`、`LayerUtility: ImageScaleByAspectRatio`、`LoadImage`、`LoadAudio`、`RunningHub FlashTalk Loader`
+
+**用到的条目**：LoadImage、RunningHub FlashTalk Sampler、SaveVideo、LoadAudio、LayerUtility: ImageScaleByAspectRatio、RunningHub FlashTalk Loader、sd15-t2i-basic、sd15-t2i-lora

@@ -1,0 +1,137 @@
+---
+key: 视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json
+name: WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1981981430689472513.json
+hash: 2d60509d1dd6c803
+coverage: 0.589474
+learned_at: 2026-10-15 22:32:39
+nodes: [SetNode, SetNode, SetNode, INTConstant, SetNode, SimpleMath+, SetNode, easy cleanGpuUsed, GetNode, easy cleanGpuUsed, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, ImageFromBatch+, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, INTConstant, INTConstant, VHS_VideoCombine, easy clearCacheAll, GIMMVFI_interpolate, easy cleanGpuUsed, easy clearCacheAll, DownloadAndLoadGIMMVFIModel, SimpleMath+, GetNode, VHS_VideoCombine, FloatConstant, CLIPLoader, SetNode, SetNode, VAELoader, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, easy cleanGpuUsed, SetNode, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelSamplingSD3, easy cleanGpuUsed, SetNode, UNETLoader, Power Lora Loader (rgthree), wanBlockSwap, CLIPLoader, Power Lora Loader (rgthree), UNETLoader, wanBlockSwap, SetNode, VAEDecode, Int, SetNode, SetNode, CLIPTextEncode, CLIPTextEncode, SetNode, ImageResizeKJv2, SetNode, GetNode, GetNode, GetNode, ImageResizeKJv2, GetNode, WanFirstLastFrameToVideo, GetNode, GetNode, CLIPVisionEncode, CLIPVisionEncode, CLIPVisionLoader, GetNode, GetNode, ImageConcanate, GetNode, JjkShowText, SetNode, JjkShowText, SimpleCondition+, Primitive string multiline [Crystools], VHS_VideoCombine, easy seed, LoadImage, LoadImage, VHS_VideoCombine, RH_LLMAPI_NODE]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1981981430689472513.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（95 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `SimpleMath+`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ImageFromBatch+`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `VHS_VideoCombine`
+- `easy clearCacheAll`
+- `GIMMVFI_interpolate`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `DownloadAndLoadGIMMVFIModel`
+- `SimpleMath+`
+- `GetNode`
+- `VHS_VideoCombine`
+- `FloatConstant`
+- `CLIPLoader`
+- `SetNode`
+- `SetNode`
+- `VAELoader`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `UNETLoader` ★核心
+- `Power Lora Loader (rgthree)`
+- `wanBlockSwap`
+- `CLIPLoader`
+- `Power Lora Loader (rgthree)`
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `SetNode`
+- `VAEDecode` ★核心
+- `Int`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `WanFirstLastFrameToVideo`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `ImageConcanate`
+- `GetNode`
+- `JjkShowText`
+- `SetNode`
+- `JjkShowText`
+- `SimpleCondition+`
+- `Primitive string multiline [Crystools]`
+- `VHS_VideoCombine`
+- `easy seed`
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `RH_LLMAPI_NODE`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **59%**（56/95）
+
+**有卡**：`INTConstant`、`SimpleMath+`、`easy cleanGpuUsed`、`ImageFromBatch+`、`KSamplerAdvanced`、`VHS_VideoCombine`、`easy clearCacheAll`、`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`FloatConstant`、`CLIPLoader`、`VAELoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ModelSamplingSD3`、`UNETLoader`、`Power Lora Loader (rgthree)`、`wanBlockSwap`、`VAEDecode`、`Int`、`CLIPTextEncode`、`ImageResizeKJv2`、`WanFirstLastFrameToVideo`、`CLIPVisionEncode`、`CLIPVisionLoader`、`ImageConcanate`、`JjkShowText`、`SimpleCondition+`、`Primitive string multiline [Crystools]`、`easy seed`、`LoadImage`、`RH_LLMAPI_NODE`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、easy seed

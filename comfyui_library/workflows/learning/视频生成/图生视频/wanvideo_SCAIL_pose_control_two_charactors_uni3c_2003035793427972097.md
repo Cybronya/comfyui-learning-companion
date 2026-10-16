@@ -1,0 +1,90 @@
+---
+key: 视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json
+name: wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2003035793427972097.json
+hash: 467a77915b5d3f77
+coverage: 0.534483
+learned_at: 2026-10-15 22:33:50
+nodes: [SetNode, SetNode, GetNode, GetNode, INTConstant, INTConstant, GetNode, FloatConstant, Note, GetNode, GetNode, MarkdownNote, Reroute, WanVideoLoraSelect, MarkdownNote, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, SetNode, CLIPVisionLoader, SetNode, GetNode, GetNode, GetNode, WanVideoSchedulerv2, GetNode, GetNode, WanVideoDecode, GetImageSizeAndCount, WanVideoSamplerv2, VHS_VideoCombine, MarkdownNote, WanVideoContextOptions, WanVideoClipVisionEncode, LoadImage, ImageResizeKJv2, WanVideoTextEncodeCached, WanVideoEmptyEmbeds, SetNode, WanVideoAddSCAILReferenceEmbeds, WanVideoAddSCAILPoseEmbeds, VHS_LoadVideo, WanVideoSamplerExtraArgs, WanVideoVAELoader, ImageResizeKJv2, SetNode, SetNode, SetNode, GetNode, VHS_LoadVideo, GetNode, GetNode, ImageResizeKJv2, WanVideoUni3C_ControlnetLoader, WanVideoEncode, WanVideoUni3C_embeds]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2003035793427972097.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（58 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `FloatConstant`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `MarkdownNote`
+- `Reroute`
+- `WanVideoLoraSelect`
+- `MarkdownNote`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSchedulerv2`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `WanVideoSamplerv2` ★核心
+- `VHS_VideoCombine`
+- `MarkdownNote`
+- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `WanVideoTextEncodeCached`
+- `WanVideoEmptyEmbeds`
+- `SetNode`
+- `WanVideoAddSCAILReferenceEmbeds`
+- `WanVideoAddSCAILPoseEmbeds`
+- `VHS_LoadVideo`
+- `WanVideoSamplerExtraArgs` ★核心
+- `WanVideoVAELoader`
+- `ImageResizeKJv2`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_LoadVideo`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `WanVideoUni3C_ControlnetLoader`
+- `WanVideoEncode`
+- `WanVideoUni3C_embeds`
+
+## 知识
+
+覆盖率 **53%**（31/58）
+
+**有卡**：`INTConstant`、`FloatConstant`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`CLIPVisionLoader`、`WanVideoSchedulerv2`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoSamplerv2`、`VHS_VideoCombine`、`WanVideoContextOptions`、`WanVideoClipVisionEncode`、`LoadImage`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`、`WanVideoEmptyEmbeds`、`WanVideoAddSCAILReferenceEmbeds`、`WanVideoAddSCAILPoseEmbeds`、`VHS_LoadVideo`、`WanVideoSamplerExtraArgs`、`WanVideoVAELoader`、`WanVideoUni3C_ControlnetLoader`、`WanVideoEncode`、`WanVideoUni3C_embeds`
+
+**用到的条目**：LoadImage、WanVideoUni3C_ControlnetLoader、WanVideoSamplerv2、WanVideoSamplerExtraArgs、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached

@@ -1,0 +1,147 @@
+---
+key: 视频生成/图生视频/ltx 2.3 双人对话_2062016748714553345.json
+name: ltx 2.3 双人对话_2062016748714553345.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2062016748714553345.json
+hash: 30f9d2bdf62c88ba
+coverage: 0.824176
+learned_at: 2026-10-15 22:38:59
+nodes: [SetNode, LTXVAudioVAEEncode, SolidMask, VHS_LoadAudio, MathExpression|pysssss, LTXVImgToVideoInplaceKJ, VisualizeSigmasKJ, VAEDecode, LTXVAudioVAEDecode, GetNode, SetNode, SetNode, PrimitiveFloat, CR Float To Integer, Any Switch (rgthree), EmptyLTXVLatentVideo, KSamplerSelect, GetNode, GetNode, easy cleanGpuUsed, easy cleanGpuUsed, LTXVConcatAVLatent, SamplerCustom, LTXVConditioning, easy cleanGpuUsed, LTXVConcatAVLatent, LTXVSeparateAVLatent, LTXVLatentUpsampler, CFGGuider, KSamplerSelect, BasicScheduler, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, SetLatentNoiseMask, GetImageSize, Reroute, SamplerCustomAdvanced, LTXVSeparateAVLatent, easy cleanGpuUsed, LTXVAudioVAEDecode, VAEDecode, LTXVCropGuides, easy cleanGpuUsed, LTXVCropGuides, BasicScheduler, PrimitiveInt, RandomNoise, CLIPTextEncode, ImageScale, LTXVPreprocess, GetImageSize, ImageScaleBy, LTXVEmptyLatentAudio, GetNode, GetNode, easy cleanGpuUsed, easy cleanGpuUsed, LatentUpscaleModelLoader, easy cleanGpuUsed, VAELoaderKJ, easy cleanGpuUsed, CR Prompt List, easy cleanGpuUsed, ConditioningZeroOut, easy cleanGpuUsed, KSampler, CLIPLoader, CLIPTextEncode, VAELoader, VAEDecode, ModelSamplingAuraFlow, easy cleanGpuUsed, EmptySD3LatentImage, UNETLoader, SaveImage, LoadImage, DualCLIPLoaderGGUF, UnetLoaderGGUF, VAELoaderKJ, CreateVideo, PromptRelayEncode, LTX2_NAG, SaveVideo, VHS_VideoCombine, PrimitiveStringMultiline, Fast Groups Bypasser (rgthree), easy cleanGpuUsed, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree)]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 25, "sampler_name": "er_sde", "scheduler": "simple", "seed": 956084755903750, "steps": 8, "width": 505}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/ltx 2.3 双人对话_2062016748714553345.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2062016748714553345.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（91 个）：
+- `SetNode`
+- `LTXVAudioVAEEncode` ★核心
+- `SolidMask`
+- `VHS_LoadAudio`
+- `MathExpression|pysssss`
+- `LTXVImgToVideoInplaceKJ`
+- `VisualizeSigmasKJ`
+- `VAEDecode` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `PrimitiveFloat`
+- `CR Float To Integer`
+- `Any Switch (rgthree)`
+- `EmptyLTXVLatentVideo`
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `LTXVConcatAVLatent`
+- `SamplerCustom` ★核心
+- `LTXVConditioning`
+- `easy cleanGpuUsed`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `SetLatentNoiseMask`
+- `GetImageSize`
+- `Reroute`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `easy cleanGpuUsed`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecode` ★核心
+- `LTXVCropGuides`
+- `easy cleanGpuUsed`
+- `LTXVCropGuides`
+- `BasicScheduler`
+- `PrimitiveInt`
+- `RandomNoise`
+- `CLIPTextEncode` ★核心
+- `ImageScale`
+- `LTXVPreprocess`
+- `GetImageSize`
+- `ImageScaleBy`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `LatentUpscaleModelLoader`
+- `easy cleanGpuUsed`
+- `VAELoaderKJ`
+- `easy cleanGpuUsed`
+- `CR Prompt List`
+- `easy cleanGpuUsed`
+- `ConditioningZeroOut`
+- `easy cleanGpuUsed`
+- `KSampler` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `VAEDecode` ★核心
+- `ModelSamplingAuraFlow`
+- `easy cleanGpuUsed`
+- `EmptySD3LatentImage`
+- `UNETLoader` ★核心
+- `SaveImage`
+- `LoadImage`
+- `DualCLIPLoaderGGUF`
+- `UnetLoaderGGUF` ★核心
+- `VAELoaderKJ`
+- `CreateVideo`
+- `PromptRelayEncode`
+- `LTX2_NAG`
+- `SaveVideo`
+- `VHS_VideoCombine`
+- `PrimitiveStringMultiline`
+- `Fast Groups Bypasser (rgthree)`
+- `easy cleanGpuUsed`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+
+## 关键参数
+
+- `width` = `505`
+- `height` = `25`
+- `batch_size` = `1`
+- `seed` = `956084755903750`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `er_sde`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **82%**（75/91）
+
+**有卡**：`LTXVAudioVAEEncode`、`SolidMask`、`VHS_LoadAudio`、`MathExpression|pysssss`、`LTXVImgToVideoInplaceKJ`、`VisualizeSigmasKJ`、`VAEDecode`、`LTXVAudioVAEDecode`、`CR Float To Integer`、`EmptyLTXVLatentVideo`、`KSamplerSelect`、`easy cleanGpuUsed`、`LTXVConcatAVLatent`、`SamplerCustom`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`CFGGuider`、`BasicScheduler`、`LoraLoaderModelOnly`、`LTXICLoRALoaderModelOnly`、`SetLatentNoiseMask`、`GetImageSize`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`RandomNoise`、`CLIPTextEncode`、`ImageScale`、`LTXVPreprocess`、`ImageScaleBy`、`LTXVEmptyLatentAudio`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`CR Prompt List`、`ConditioningZeroOut`、`KSampler`、`CLIPLoader`、`VAELoader`、`ModelSamplingAuraFlow`、`EmptySD3LatentImage`、`UNETLoader`、`SaveImage`、`LoadImage`、`DualCLIPLoaderGGUF`、`UnetLoaderGGUF`、`CreateVideo`、`PromptRelayEncode`、`LTX2_NAG`、`SaveVideo`、`VHS_VideoCombine`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

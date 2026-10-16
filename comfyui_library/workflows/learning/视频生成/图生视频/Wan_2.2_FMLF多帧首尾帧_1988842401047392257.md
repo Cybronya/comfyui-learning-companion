@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧_1988842401047392257.json
+name: Wan_2.2_FMLF多帧首尾帧_1988842401047392257.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1988842401047392257.json
+hash: 293225dacada97ea
+coverage: 0.891304
+learned_at: 2026-10-15 22:33:04
+nodes: [CLIPVisionEncode, ImageStitch, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPVisionLoader, wanBlockSwap, UNETLoader, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, ModelPatchTorchSettings, wanBlockSwap, ModelSamplingSD3, PathchSageAttentionKJ, ModelPatchTorchSettings, CLIPLoader, ImageConcatMulti, PrimitiveInt, PrimitiveStringMultiline, Wan22PromptSelector, VHS_VideoCombine, Text Concatenate, ImageConcatMulti, ImageScaleToTotalPixels, MathExpression|pysssss, CLIPTextEncode, CLIPTextEncode, VAELoader, CLIPVisionEncode, KSamplerAdvanced, KSamplerAdvanced, RH_LLMAPI_NODE, ImpactSwitch, ShowText|pysssss, VAEDecode, ImageBatchMulti, VHS_VideoCombine, LoadImage, LoadImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, ImageResizeKJv2, ImageResizeKJv2, PrimitiveInt, WanMultiFrameRefToVideo]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧_1988842401047392257.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1988842401047392257.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（46 个）：
+- `CLIPVisionEncode`
+- `ImageStitch`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPVisionLoader`
+- `wanBlockSwap`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `wanBlockSwap`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `CLIPLoader`
+- `ImageConcatMulti`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `Wan22PromptSelector`
+- `VHS_VideoCombine`
+- `Text Concatenate`
+- `ImageConcatMulti`
+- `ImageScaleToTotalPixels`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `CLIPVisionEncode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `RH_LLMAPI_NODE`
+- `ImpactSwitch`
+- `ShowText|pysssss`
+- `VAEDecode` ★核心
+- `ImageBatchMulti`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `PrimitiveInt`
+- `WanMultiFrameRefToVideo`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **89%**（41/46）
+
+**有卡**：`CLIPVisionEncode`、`ImageStitch`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPVisionLoader`、`wanBlockSwap`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CLIPLoader`、`ImageConcatMulti`、`Wan22PromptSelector`、`VHS_VideoCombine`、`Text Concatenate`、`ImageScaleToTotalPixels`、`MathExpression|pysssss`、`CLIPTextEncode`、`VAELoader`、`KSamplerAdvanced`、`RH_LLMAPI_NODE`、`VAEDecode`、`ImageBatchMulti`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJv2`、`WanMultiFrameRefToVideo`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

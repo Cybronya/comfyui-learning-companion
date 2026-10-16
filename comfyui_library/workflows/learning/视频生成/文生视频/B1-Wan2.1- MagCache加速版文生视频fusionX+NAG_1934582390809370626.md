@@ -1,0 +1,48 @@
+---
+key: 视频生成/文生视频/B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.json
+name: B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1934582390809370626.json
+hash: cbae5dac13744124
+coverage: 1
+learned_at: 2026-10-15 22:43:27
+nodes: [WanVideoDecode, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, WanVideoEnhanceAVideo, WanVideoApplyNAG, WanVideoEmptyEmbeds, WanVideoSLG, WanVideoVAELoader, VHS_VideoCombine, WanVideoTextEncodeSingle, WanVideoModelLoader, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoSampler, WanVideoTextEncodeSingle, WanVideoMagCache]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1934582390809370626.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Other
+
+**节点**（16 个）：
+- `WanVideoDecode`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `WanVideoEnhanceAVideo`
+- `WanVideoApplyNAG`
+- `WanVideoEmptyEmbeds`
+- `WanVideoSLG`
+- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `WanVideoTextEncodeSingle`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncodeSingle`
+- `WanVideoMagCache`
+
+## 知识
+
+覆盖率 **100%**（16/16）
+
+**有卡**：`WanVideoDecode`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`WanVideoEnhanceAVideo`、`WanVideoApplyNAG`、`WanVideoEmptyEmbeds`、`WanVideoSLG`、`WanVideoVAELoader`、`VHS_VideoCombine`、`WanVideoTextEncodeSingle`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoSampler`、`WanVideoMagCache`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、VHS_VideoCombine、WanVideoBlockSwap、WanVideoModelLoader

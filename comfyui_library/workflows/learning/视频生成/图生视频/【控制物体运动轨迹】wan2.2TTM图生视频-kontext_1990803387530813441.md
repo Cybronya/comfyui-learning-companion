@@ -1,0 +1,121 @@
+---
+key: 视频生成/图生视频/【控制物体运动轨迹】wan2.2TTM图生视频-kontext_1990803387530813441.json
+name: 【控制物体运动轨迹】wan2.2TTM图生视频-kontext_1990803387530813441.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1990803387530813441.json
+hash: 007365b4b017f1be
+coverage: 0.731707
+learned_at: 2026-10-15 22:33:11
+nodes: [GetNode, GetNode, GetNode, LoadRembgByBiRefNetModel, RandomNoise, KSamplerSelect, ReferenceLatent, BasicScheduler, CLIPTextEncode, RembgByBiRefNet, NunchakuFluxDiTLoader, VAELoader, easy cleanGpuUsed, DualCLIPLoader, RH_Translator, SamplerCustomAdvanced, VAEDecode, BasicGuider, FluxGuidance, GetNode, GetImageSizeAndCount, GetNode, Mask To Image (mtb), ImageResizeKJv2, ImageToMask, CutAndDragOnPath, GetNode, VAEEncode, GetNode, GetNode, EmptyLatentImage, GetNode, INTConstant, WanVideoSampler, CreateCFGScheduleFloatList, INTConstant, VHS_VideoCombine, WanVideoSampler, WanVideoBlockSwap, easy cleanGpuUsed, WanVideoSetLoRAs, WanVideoModelLoader, easy cleanGpuUsed, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoSetLoRAs, SetNode, WanVideoVAELoader, WanVideoDecode, GetNode, GetNode, WanVideoEncode, GetNode, ImageResizeKJv2, WanVideoAddTTMLatents, ModelSamplingFlux, PreviewImage, RunningHub Deepcleaner, SplineEditor, Int, Note, LoadImage, Compare, ImageResizeKJv2, ImageResizeKJv2, GetImageSize, SetNode, SetNode, SetNode, GetImageSize, WanVideoImageToVideoEncode, GetNode, GetNode, easy ifElse, LayerMask: MaskPreview, PreviewImage, MathExpression|pysssss, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoTextEncodeCached, CR Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 512, "width": 512}
+---
+
+# 视频生成/图生视频/【控制物体运动轨迹】wan2.2TTM图生视频-kontext_1990803387530813441.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1990803387530813441.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（82 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoadRembgByBiRefNetModel`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ReferenceLatent`
+- `BasicScheduler`
+- `CLIPTextEncode` ★核心
+- `RembgByBiRefNet`
+- `NunchakuFluxDiTLoader`
+- `VAELoader`
+- `easy cleanGpuUsed`
+- `DualCLIPLoader`
+- `RH_Translator`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `FluxGuidance`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `Mask To Image (mtb)`
+- `ImageResizeKJv2`
+- `ImageToMask`
+- `CutAndDragOnPath`
+- `GetNode`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `EmptyLatentImage` ★核心
+- `GetNode`
+- `INTConstant`
+- `WanVideoSampler` ★核心
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `WanVideoBlockSwap`
+- `easy cleanGpuUsed`
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `easy cleanGpuUsed`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `WanVideoVAELoader`
+- `WanVideoDecode`
+- `GetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `WanVideoAddTTMLatents`
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `RunningHub Deepcleaner`
+- `SplineEditor`
+- `Int`
+- `Note`
+- `LoadImage`
+- `Compare`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `GetImageSize`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetImageSize`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `GetNode`
+- `easy ifElse`
+- `LayerMask: MaskPreview`
+- `PreviewImage`
+- `MathExpression|pysssss`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncodeCached`
+- `CR Text`
+
+## 关键参数
+
+- `width` = `512`
+- `height` = `512`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **73%**（60/82）
+
+**有卡**：`LoadRembgByBiRefNetModel`、`RandomNoise`、`KSamplerSelect`、`ReferenceLatent`、`BasicScheduler`、`CLIPTextEncode`、`RembgByBiRefNet`、`NunchakuFluxDiTLoader`、`VAELoader`、`easy cleanGpuUsed`、`DualCLIPLoader`、`RH_Translator`、`SamplerCustomAdvanced`、`VAEDecode`、`BasicGuider`、`FluxGuidance`、`GetImageSizeAndCount`、`Mask To Image (mtb)`、`ImageResizeKJv2`、`ImageToMask`、`CutAndDragOnPath`、`VAEEncode`、`EmptyLatentImage`、`INTConstant`、`WanVideoSampler`、`CreateCFGScheduleFloatList`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`WanVideoDecode`、`WanVideoEncode`、`WanVideoAddTTMLatents`、`ModelSamplingFlux`、`RunningHub Deepcleaner`、`SplineEditor`、`Int`、`LoadImage`、`Compare`、`GetImageSize`、`WanVideoImageToVideoEncode`、`LayerMask: MaskPreview`、`MathExpression|pysssss`、`WanVideoSetBlockSwap`、`WanVideoTextEncodeCached`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、EmptyLatentImage、LoadImage、FluxGuidance、KSamplerSelect、SamplerCustomAdvanced

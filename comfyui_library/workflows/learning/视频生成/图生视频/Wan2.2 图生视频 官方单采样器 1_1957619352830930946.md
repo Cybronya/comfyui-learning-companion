@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json
+name: Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1957619352830930946.json
+hash: 79aacc25f5638c29
+coverage: 0.769231
+learned_at: 2026-10-15 22:31:17
+nodes: [Note, Note, Note, Note, Note, CLIPTextEncode, CLIPTextEncode, MarkdownNote, CLIPLoader, VAELoader, UNETLoader, WanImageToVideo, LoadImage, LayerUtility: ImageScaleByAspectRatio, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, VAEDecode, RIFE VFI, VHS_VideoCombine, ImpactInt, ImpactInt, WanMoeKSampler]
+patterns: []
+missing: []
+parameters: {"cfg": 3, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1957619352830930946.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（26 个）：
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `WanImageToVideo`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `VAEDecode` ★核心
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `ImpactInt`
+- `ImpactInt`
+- `WanMoeKSampler` ★核心
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `fixed`
+- `cfg` = `3`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **77%**（20/26）
+
+**有卡**：`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`UNETLoader`、`WanImageToVideo`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`VAEDecode`、`RIFE VFI`、`VHS_VideoCombine`、`ImpactInt`、`WanMoeKSampler`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler

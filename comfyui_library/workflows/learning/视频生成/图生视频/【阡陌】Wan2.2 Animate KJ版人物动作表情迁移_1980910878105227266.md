@@ -1,0 +1,94 @@
+---
+key: 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json
+name: 【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1980910878105227266.json
+hash: fa95925c42fa0787
+coverage: 0.419355
+learned_at: 2026-10-15 22:32:35
+nodes: [WanVideoModelLoader, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoSetBlockSwap, SetNode, PreviewImage, GetNode, easy showAnything, SetNode, GetNode, SetNode, SetNode, SetNode, OnnxDetectionModelLoader, SetNode, GetNode, SetNode, WanVideoVAELoader, SetNode, WanVideoSampler, GetNode, GetNode, GetNode, DrawViTPose, GetNode, GetNode, GetNode, GetNode, GetNode, PoseAndFaceDetection, SetNode, LoadImage, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, ImageResizeKJv2, SetNode, GetNode, GetNode, VHS_VideoCombine, WanVideoTextEncodeCached, GetNode, SetNode, WanVideoClipVisionEncode, CLIPVisionLoader, GetNode, GetNode, WanVideoLoraSelectMulti, GetNode, WanVideoAnimateEmbeds, GetNode, LoadImage, Note, WanVideoDecode, ImageFromBatch, VHS_VideoCombine, ImageConcanate, GetNode, GetNode, VHS_VideoCombine, VHS_LoadVideo, GetNode, GetNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1980910878105227266.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（62 个）：
+- `WanVideoModelLoader`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `PreviewImage`
+- `GetNode`
+- `easy showAnything`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `DrawViTPose`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `SetNode`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `WanVideoLoraSelectMulti`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `LoadImage`
+- `Note`
+- `WanVideoDecode`
+- `ImageFromBatch`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `GetNode`
+- `GetNode`
+
+## 知识
+
+覆盖率 **42%**（26/62）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`OnnxDetectionModelLoader`、`WanVideoVAELoader`、`WanVideoSampler`、`DrawViTPose`、`PoseAndFaceDetection`、`LoadImage`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`WanVideoLoraSelectMulti`、`WanVideoAnimateEmbeds`、`WanVideoDecode`、`ImageFromBatch`、`ImageConcanate`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs

@@ -1,0 +1,64 @@
+---
+key: 视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json
+name: Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1894733558555017217.json
+hash: 44b108a45daaee2e
+coverage: 0.78125
+learned_at: 2026-10-15 22:29:16
+nodes: [SetNode, SetNode, SetNode, GetNode, SetNode, Note Plus (mtb), UpscaleModelLoader, easy cleanGpuUsed, WanVideoBlockSwap, WanVideoDecode, PlaySound|pysssss, Int, ConvertAny2Float, VHS_VideoCombine, WanVideoTextEncode, LoadWanVideoClipTextEncoder, GetNode, GetNode, RIFE VFI, ImageUpscaleWithModel, VHS_VideoCombine, LoadImage, SeargePromptText, Int, MathExpression|pysssss, WanVideoModelLoader, WanVideoVAELoader, ImageResizeKJ, WanVideoImageClipEncode, WanVideoContextOptions, WanVideoSampler, LoadWanVideoT5TextEncoder]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1894733558555017217.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（32 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `Note Plus (mtb)`
+- `UpscaleModelLoader`
+- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `PlaySound|pysssss`
+- `Int`
+- `ConvertAny2Float`
+- `VHS_VideoCombine`
+- `WanVideoTextEncode`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `GetNode`
+- `GetNode`
+- `RIFE VFI`
+- `ImageUpscaleWithModel`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `SeargePromptText`
+- `Int`
+- `MathExpression|pysssss`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `ImageResizeKJ`
+- `WanVideoImageClipEncode`
+- `WanVideoContextOptions`
+- `WanVideoSampler` ★核心
+- `LoadWanVideoT5TextEncoder`
+
+## 知识
+
+覆盖率 **78%**（25/32）
+
+**有卡**：`Note Plus (mtb)`、`UpscaleModelLoader`、`easy cleanGpuUsed`、`WanVideoBlockSwap`、`WanVideoDecode`、`PlaySound|pysssss`、`Int`、`ConvertAny2Float`、`VHS_VideoCombine`、`WanVideoTextEncode`、`LoadWanVideoClipTextEncoder`、`RIFE VFI`、`ImageUpscaleWithModel`、`LoadImage`、`SeargePromptText`、`MathExpression|pysssss`、`WanVideoModelLoader`、`WanVideoVAELoader`、`ImageResizeKJ`、`WanVideoImageClipEncode`、`WanVideoContextOptions`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

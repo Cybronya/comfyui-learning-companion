@@ -1,0 +1,60 @@
+---
+key: 视频生成/图生视频/Seedance2.0 Fast全能参考视频+图生图_2056379103971991553.json
+name: Seedance2.0 Fast全能参考视频+图生图_2056379103971991553.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2056379103971991553.json
+hash: 5b3b7b4f5364c817
+coverage: 1
+learned_at: 2026-10-15 22:38:03
+nodes: [SaveVideo, LoadVideo, LoadImage, RH_RhartVideoSparkvideo20FastMultimodalVideo, CLIPTextEncode, VAEEncode, VAEDecode, SaveImage, CheckpointLoaderSimple, CLIPTextEncode, TextCombinerTwo, RH_Captioner, LoadImage, KSampler, CR Text]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 8, "checkpoint": "samaritan3dCartoon_v40SDXL.safetensors", "denoise": 0.3600000000000001, "sampler_name": "euler_ancestral", "scheduler": "normal", "seed": 146169022751997, "steps": 20}
+---
+
+# 视频生成/图生视频/Seedance2.0 Fast全能参考视频+图生图_2056379103971991553.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2056379103971991553.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Output → Other
+
+**节点**（15 个）：
+- `SaveVideo`
+- `LoadVideo`
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `CLIPTextEncode` ★核心
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `SaveImage`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `TextCombinerTwo`
+- `RH_Captioner`
+- `LoadImage`
+- `KSampler` ★核心
+- `CR Text`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `checkpoint` = `samaritan3dCartoon_v40SDXL.safetensors`
+- `seed` = `146169022751997`
+- `steps` = `20`
+- `cfg` = `8`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `normal`
+- `denoise` = `0.3600000000000001`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`SaveVideo`、`LoadVideo`、`LoadImage`、`RH_RhartVideoSparkvideo20FastMultimodalVideo`、`CLIPTextEncode`、`VAEEncode`、`VAEDecode`、`SaveImage`、`CheckpointLoaderSimple`、`TextCombinerTwo`、`RH_Captioner`、`KSampler`、`CR Text`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、VAEEncode、SaveImage、SaveVideo

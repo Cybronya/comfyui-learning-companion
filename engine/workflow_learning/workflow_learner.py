@@ -172,6 +172,14 @@ class WorkflowLearner:
                 )
                 return record
 
+            if not self._looks_like_workflow(workflow_json):
+                record.status = STATUS_FAILED
+                record.error = (
+                    "不是工作流 JSON"
+                    "（既无 nodes 数组也无 prompt 键，可能是配置文件误入库）"
+                )
+                return record
+
             self._fill_analysis(record, workflow_json)
             self._fill_knowledge(record)
             self._fill_diagnostics(record, workflow_json)
@@ -354,6 +362,22 @@ class WorkflowLearner:
             raise ValueError("JSON 顶层不是对象")
 
         return data
+
+    @staticmethod
+    def _looks_like_workflow(data: Dict) -> bool:
+        """
+        结构门槛：非空 dict 不等于工作流
+
+        UI 格式必有 nodes 数组，API 格式走 prompt 键，两者都没有的
+        就是混进来的配置文件（官方模板包里的 fuse_options.json 是搜索
+        打分配置：有内容没节点，学出来是 0% 覆盖的废记录 —— 2026-10-16）。
+
+        注意 **空 nodes 数组仍然算工作流**：既有语义如此（test_workflow_learning
+        D2 断言「空工作流不算失败」），别在这里改口径。
+        """
+        if isinstance(data.get("nodes"), list):
+            return True
+        return isinstance(data.get("prompt"), dict)
 
     @staticmethod
     def _hash_file(path: Path) -> str:

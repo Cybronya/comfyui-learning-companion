@@ -1,0 +1,69 @@
+---
+key: 视频生成/图生视频/Wan2.2 VACE-comfyui官方版_1946855361778184193.json
+name: Wan2.2 VACE-comfyui官方版_1946855361778184193.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1946855361778184193.json
+hash: 0b9c9b172b97da87
+coverage: 0.962963
+learned_at: 2026-10-15 22:30:44
+nodes: [DiffusionModelLoaderKJ, ModelSamplingSD3, DiffusionModelSelector, DiffusionModelSelector, DiffusionModelLoaderKJ, ModelSamplingSD3, WanVaceToVideo, WanVideoVACEStartToEndFrame, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, TrimVideoLatent, ImageResizeKJ, ImageResizeKJ, Int, CLIPTextEncode, CLIPLoader, VAEDecode, KSamplerAdvanced, KSamplerAdvanced, LoadImage, LoadImage, CLIPTextEncode, INTConstant, SimpleMath+, VHS_VideoCombine, MarkdownNote]
+patterns: []
+missing: []
+parameters: {"cfg": 16, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2 VACE-comfyui官方版_1946855361778184193.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1946855361778184193.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（27 个）：
+- `DiffusionModelLoaderKJ`
+- `ModelSamplingSD3`
+- `DiffusionModelSelector`
+- `DiffusionModelSelector`
+- `DiffusionModelLoaderKJ`
+- `ModelSamplingSD3`
+- `WanVaceToVideo`
+- `WanVideoVACEStartToEndFrame`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `TrimVideoLatent`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `Int`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `INTConstant`
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `MarkdownNote`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `16`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **96%**（26/27）
+
+**有卡**：`DiffusionModelLoaderKJ`、`ModelSamplingSD3`、`DiffusionModelSelector`、`WanVaceToVideo`、`WanVideoVACEStartToEndFrame`、`VAELoader`、`LoraLoaderModelOnly`、`TrimVideoLatent`、`ImageResizeKJ`、`Int`、`CLIPTextEncode`、`CLIPLoader`、`VAEDecode`、`KSamplerAdvanced`、`LoadImage`、`INTConstant`、`SimpleMath+`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、TrimVideoLatent

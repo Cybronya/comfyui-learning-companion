@@ -1,0 +1,65 @@
+---
+key: 视频生成/文生视频/Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json
+name: Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1962914848373968898.json
+hash: 35658dcb64d46a10
+coverage: 0.969697
+learned_at: 2026-10-15 22:43:43
+nodes: [WanVideoModelLoader, WanVideoModelLoader, WanVideoSetLoRAs, WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoLoraSelect, WanVideoBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoSetBlockSwap, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, WanVideoSampler, WanVideoSampler, WanVideoDecode, JWInteger, INTConstant, LoadWanVideoT5TextEncoder, WanVideoApplyNAG, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, ImageResize+, ImageResize+, JWInteger, LoadImage, LoadImage, WanVideoTextEncode, VHS_VideoCombine, MarkdownNote, JWInteger, JWInteger]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan2.2首尾帧工作流—Kj加速版_1962914848373968898.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1962914848373968898.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（33 个）：
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `JWInteger`
+- `INTConstant`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoApplyNAG`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `ImageResize+`
+- `ImageResize+`
+- `JWInteger`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoTextEncode`
+- `VHS_VideoCombine`
+- `MarkdownNote`
+- `JWInteger`
+- `JWInteger`
+
+## 知识
+
+覆盖率 **97%**（32/33）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoSetLoRAs`、`WanVideoLoraSelect`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`LayerUtility: PurgeVRAM`、`WanVideoSampler`、`WanVideoDecode`、`JWInteger`、`INTConstant`、`LoadWanVideoT5TextEncoder`、`WanVideoApplyNAG`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`ImageResize+`、`LoadImage`、`WanVideoTextEncode`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

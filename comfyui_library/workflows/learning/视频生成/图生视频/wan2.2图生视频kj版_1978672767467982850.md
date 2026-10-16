@@ -1,0 +1,54 @@
+---
+key: 视频生成/图生视频/wan2.2图生视频kj版_1978672767467982850.json
+name: wan2.2图生视频kj版_1978672767467982850.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1978672767467982850.json
+hash: dd0dd3a260ced122
+coverage: 1
+learned_at: 2026-10-15 22:32:19
+nodes: [ImageResizeKJv2, LoadWanVideoT5TextEncoder, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader, WanVideoSampler, WanVideoSampler, WanVideoSetBlockSwap, WanVideoImageToVideoEncode, Text, WanVideoDecode, ImageFromBatch+, LoadImage, WanVideoLoraSelect, WanVideoTextEncode, WanVideoTorchCompileSettings, LayerUtility: ImageScaleByAspectRatio V2, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoBlockSwap, VHS_VideoCombine, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2图生视频kj版_1978672767467982850.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1978672767467982850.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（22 个）：
+- `ImageResizeKJv2`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoSetBlockSwap`
+- `WanVideoImageToVideoEncode`
+- `Text`
+- `WanVideoDecode`
+- `ImageFromBatch+`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `WanVideoTorchCompileSettings`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoTorchCompileSettings`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **100%**（22/22）
+
+**有卡**：`ImageResizeKJv2`、`LoadWanVideoT5TextEncoder`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`Text`、`WanVideoDecode`、`ImageFromBatch+`、`LoadImage`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`WanVideoTorchCompileSettings`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

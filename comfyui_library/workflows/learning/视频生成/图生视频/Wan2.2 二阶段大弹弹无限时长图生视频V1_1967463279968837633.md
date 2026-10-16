@@ -1,0 +1,114 @@
+---
+key: 视频生成/图生视频/Wan2.2 二阶段大弹弹无限时长图生视频V1_1967463279968837633.json
+name: Wan2.2 二阶段大弹弹无限时长图生视频V1_1967463279968837633.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1967463279968837633.json
+hash: 0bdfc0e14938f853
+coverage: 0.898305
+learned_at: 2026-10-15 22:31:41
+nodes: [Note, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, WanVideoVAELoader, WanVideoImageToVideoEncode, LoadWanVideoT5TextEncoder, WanVideoSampler, Note, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoTextEncode, WanVideoBlockSwap, WanVideoTorchCompileSettings, INTConstant, WanVideoLoraSelect, WanVideoScheduler, WanVideoScheduler, WanVideoSigmaToStep, Note, WanVideoLoraSelect, WanVideoLoraSelect, CR Prompt Text, WanVideoSampler, JWInteger, WanVideoLoraSelect, WanVideoLoraSelect, Float, CreateCFGScheduleFloatList, StringToFloatList, PrimitiveNode, VHS_VideoCombine, WanVideoDecode, TT_img_enc, SaveImage, ConditioningZeroOut, FluxKontextImageScale, ImageStitch, FluxGuidance, ReferenceLatent, VAELoader, VAEEncode, DualCLIPLoader, CLIPTextEncode, LoraLoaderModelOnly, TeaCache, UnetLoaderGGUF, LoadImage, KSampler, VAEDecode, LayerUtility: PurgeVRAM V2, PreviewImage, WanVideoContextOptions, PreviewImage, JWInteger]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 57956236525329, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2 二阶段大弹弹无限时长图生视频V1_1967463279968837633.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1967463279968837633.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（59 个）：
+- `Note`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSampler` ★核心
+- `Note`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `WanVideoBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `INTConstant`
+- `WanVideoLoraSelect`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoSigmaToStep`
+- `Note`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `CR Prompt Text`
+- `WanVideoSampler` ★核心
+- `JWInteger`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `Float`
+- `CreateCFGScheduleFloatList`
+- `StringToFloatList`
+- `PrimitiveNode`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `TT_img_enc`
+- `SaveImage`
+- `ConditioningZeroOut`
+- `FluxKontextImageScale`
+- `ImageStitch`
+- `FluxGuidance`
+- `ReferenceLatent`
+- `VAELoader`
+- `VAEEncode` ★核心
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `TeaCache`
+- `UnetLoaderGGUF` ★核心
+- `LoadImage`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `PreviewImage`
+- `WanVideoContextOptions`
+- `PreviewImage`
+- `JWInteger`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `57956236525329`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **90%**（53/59）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`GetImageSizeAndCount`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`INTConstant`、`WanVideoScheduler`、`WanVideoSigmaToStep`、`CR Prompt Text`、`JWInteger`、`Float`、`CreateCFGScheduleFloatList`、`StringToFloatList`、`VHS_VideoCombine`、`WanVideoDecode`、`TT_img_enc`、`SaveImage`、`ConditioningZeroOut`、`FluxKontextImageScale`、`ImageStitch`、`FluxGuidance`、`ReferenceLatent`、`VAELoader`、`VAEEncode`、`DualCLIPLoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`TeaCache`、`UnetLoaderGGUF`、`LoadImage`、`KSampler`、`VAEDecode`、`LayerUtility: PurgeVRAM V2`、`WanVideoContextOptions`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、LoadImage、FluxGuidance
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

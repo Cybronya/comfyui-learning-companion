@@ -1,0 +1,44 @@
+---
+key: 视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json
+name: 最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1900079206938587137.json
+hash: ad8119b4c1d752d8
+coverage: 1
+learned_at: 2026-10-15 22:29:22
+nodes: [WanVideoModelLoader, WanVideoVAELoader, LoadWanVideoClipTextEncoder, LoadWanVideoT5TextEncoder, WanVideoDecode, WanVideoSampler, WanVideoLoraSelect, WanVideoBlockSwap, WanVideoImageClipEncode, WanVideoTextEncode, VHS_VideoCombine, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1900079206938587137.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Other
+
+**节点**（12 个）：
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `WanVideoImageClipEncode`
+- `WanVideoTextEncode`
+- `VHS_VideoCombine`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（12/12）
+
+**有卡**：`WanVideoModelLoader`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`WanVideoImageClipEncode`、`WanVideoTextEncode`、`VHS_VideoCombine`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

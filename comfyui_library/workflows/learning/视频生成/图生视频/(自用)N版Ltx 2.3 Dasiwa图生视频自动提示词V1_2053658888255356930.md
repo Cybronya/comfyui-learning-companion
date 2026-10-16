@@ -1,0 +1,120 @@
+---
+key: 视频生成/图生视频/(自用)N版Ltx 2.3 Dasiwa图生视频自动提示词V1_2053658888255356930.json
+name: (自用)N版Ltx 2.3 Dasiwa图生视频自动提示词V1_2053658888255356930.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2053658888255356930.json
+hash: 2ea310f7badb0074
+coverage: 0.933333
+learned_at: 2026-10-15 22:37:41
+nodes: [KSamplerSelect, CFGGuider, RandomNoise, KSamplerSelect, SamplerCustomAdvanced, RandomNoise, LTXVConcatAVLatent, LTXVImgToVideoConditionOnly, LTXVLatentUpsampler, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, SamplerCustomAdvanced, ManualSigmas, ModelPatchTorchSettings, JWInteger, FlashVSR_SM_Model, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, VHS_VideoCombine, easy cleanGpuUsed, PrimitiveBoolean, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVAudioVAELoader, LatentUpscaleModelLoader, VAELoader, LTXVEmptyLatentAudio, CM_FloatToInt, ResizeImageMaskNode, LTXVPreprocess, LTXVConcatAVLatent, PathchSageAttentionKJ, LTXVChunkFeedForward, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, LTXVConditioning, LTXAVTextEncoderLoader, CR Prompt Text, ConcatTextOfUtils, CFGGuider, LTX2_NAG, ManualSigmas, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LTX2AttentionTunerPatch, UNETLoader, easy cleanGpuUsed, llama_cpp_parameters, ShellAgentPluginOutputText, llama_cpp_model_loader, easy showAnything, llama_cpp_instruct_adv, CR Text, SaveImage, DuckHideNode, FlashVSR_SM_KSampler, CLIPTextEncode, TT_img_enc_v2, SaveImage, TT_img_enc, CR Text, LayerUtility: ImageScaleByAspectRatio V2, Note, JWInteger, PrimitiveFloat, Note, Note, CR Text, SaveImage, JWInteger, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "cfg": "randomize", "denoise": 11, "height": 25, "sampler_name": 2, "scheduler": 3.5, "seed": 1280, "steps": 1347139283, "width": 97}
+---
+
+# 视频生成/图生视频/(自用)N版Ltx 2.3 Dasiwa图生视频自动提示词V1_2053658888255356930.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2053658888255356930.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（75 个）：
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `ModelPatchTorchSettings`
+- `JWInteger`
+- `FlashVSR_SM_Model`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `PrimitiveBoolean`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAELoader`
+- `LatentUpscaleModelLoader`
+- `VAELoader`
+- `LTXVEmptyLatentAudio` ★核心
+- `CM_FloatToInt`
+- `ResizeImageMaskNode`
+- `LTXVPreprocess`
+- `LTXVConcatAVLatent`
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `LTXVImgToVideoConditionOnly`
+- `EmptyLTXVLatentVideo`
+- `LTXVConditioning`
+- `LTXAVTextEncoderLoader`
+- `CR Prompt Text`
+- `ConcatTextOfUtils`
+- `CFGGuider`
+- `LTX2_NAG`
+- `ManualSigmas`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTX2AttentionTunerPatch`
+- `UNETLoader` ★核心
+- `easy cleanGpuUsed`
+- `llama_cpp_parameters`
+- `ShellAgentPluginOutputText`
+- `llama_cpp_model_loader`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `CR Text`
+- `SaveImage`
+- `DuckHideNode`
+- `FlashVSR_SM_KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `TT_img_enc_v2`
+- `SaveImage`
+- `TT_img_enc`
+- `CR Text`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `JWInteger`
+- `PrimitiveFloat`
+- `Note`
+- `Note`
+- `CR Text`
+- `SaveImage`
+- `JWInteger`
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `seed` = `1280`
+- `steps` = `1347139283`
+- `cfg` = `randomize`
+- `sampler_name` = `2`
+- `scheduler` = `3.5`
+- `denoise` = `11`
+
+## 知识
+
+覆盖率 **93%**（70/75）
+
+**有卡**：`KSamplerSelect`、`CFGGuider`、`RandomNoise`、`SamplerCustomAdvanced`、`LTXVConcatAVLatent`、`LTXVImgToVideoConditionOnly`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`ManualSigmas`、`ModelPatchTorchSettings`、`JWInteger`、`FlashVSR_SM_Model`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_VideoCombine`、`easy cleanGpuUsed`、`PrimitiveBoolean`、`LTXVAudioVAELoader`、`LatentUpscaleModelLoader`、`VAELoader`、`LTXVEmptyLatentAudio`、`CM_FloatToInt`、`ResizeImageMaskNode`、`LTXVPreprocess`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`LTXAVTextEncoderLoader`、`CR Prompt Text`、`ConcatTextOfUtils`、`LTX2_NAG`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`LTX2AttentionTunerPatch`、`UNETLoader`、`llama_cpp_parameters`、`ShellAgentPluginOutputText`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`CR Text`、`SaveImage`、`DuckHideNode`、`FlashVSR_SM_KSampler`、`TT_img_enc_v2`、`TT_img_enc`、`LoadImage`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、SaveImage、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider

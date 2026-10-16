@@ -1,0 +1,68 @@
+---
+key: 视频生成/文生视频/Wan2.2_S2V文生“对口型”视频-双采样器工作流_1967886202416300034.json
+name: Wan2.2_S2V文生“对口型”视频-双采样器工作流_1967886202416300034.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1967886202416300034.json
+hash: f426d4a5dfb482a3
+coverage: 0.961538
+learned_at: 2026-10-15 22:43:45
+nodes: [TorchCompileModelWanVideoV2, PathchSageAttentionKJ, ModelSamplingSD3, easy cleanGpuUsed, easy cleanGpuUsed, MarkdownNote, VAEDecode, AudioSeparation, AudioEncoderEncode, AudioEncoderLoader, VAELoader, PathchSageAttentionKJ, TorchCompileModelWanVideoV2, INTConstant, UNETLoader, ModelSamplingSD3, KSamplerAdvanced, INTConstant, UNETLoader, CLIPLoader, KSamplerAdvanced, CLIPTextEncode, WanSoundImageToVideo, CLIPTextEncode, LoadAudio, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 6, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/文生视频/Wan2.2_S2V文生“对口型”视频-双采样器工作流_1967886202416300034.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1967886202416300034.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（26 个）：
+- `TorchCompileModelWanVideoV2`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `MarkdownNote`
+- `VAEDecode` ★核心
+- `AudioSeparation`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `VAELoader`
+- `PathchSageAttentionKJ`
+- `TorchCompileModelWanVideoV2`
+- `INTConstant`
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `INTConstant`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `WanSoundImageToVideo`
+- `CLIPTextEncode` ★核心
+- `LoadAudio`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `6`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **96%**（25/26）
+
+**有卡**：`TorchCompileModelWanVideoV2`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`easy cleanGpuUsed`、`VAEDecode`、`AudioSeparation`、`AudioEncoderEncode`、`AudioEncoderLoader`、`VAELoader`、`INTConstant`、`UNETLoader`、`KSamplerAdvanced`、`CLIPLoader`、`CLIPTextEncode`、`WanSoundImageToVideo`、`LoadAudio`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、AudioEncoderLoader、AudioEncoderEncode

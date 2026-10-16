@@ -1,0 +1,176 @@
+---
+key: 视频生成/图生视频/（可短剧）Wan2.2 Animate人物替换V2_2041230644306513921.json
+name: （可短剧）Wan2.2 Animate人物替换V2_2041230644306513921.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2041230644306513921.json
+hash: b93c767550f933a9
+coverage: 0.444444
+learned_at: 2026-10-15 22:36:18
+nodes: [CLIPVisionLoader, GetNode, SetNode, SetNode, WanVideoClipVisionEncode, SetNode, GetNode, GetNode, GetNode, SetNode, ImageFromBatch, SetNode, SetNode, SetNode, GetNode, RepeatImageBatch, easy mathInt, easy mathInt, GetNode, easy mathInt, easy compare, LazySwitch1way, SetNode, SetNode, GetNode, SetNode, SetNode, easy compare, GetNode, SetNode, easy mathInt, GetNode, GetNode, ImageFromBatch, easy mathInt, LazySwitch1way, GetNode, GetNode, GetNode, RepeatImageBatch, GetNode, BatchCount+, SeCModelLoader, GetNode, SetNode, SetNode, SetNode, VHS_VideoInfo, SetNode, VHS_VideoInfoLoaded, SetNode, BatchCount+, easy mathInt, ImageBatch, easy mathInt, BatchCount+, ImageResizeKJv2, SetNode, WanVideoSetLoRAs, GetNode, GetNode, Image Blank, GetNode, GetNode, OnnxDetectionModelLoader, LayerUtility: ImageBlend, DrawViTPose, PoseAndFaceDetection, SetNode, SetNode, SetNode, Bookmark (rgthree), SetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoAnimateEmbeds, GetNode, GetNode, GetNode, SetNode, GetNode, WanVideoSetBlockSwap, WanVideoVAELoader, Note, Note, Note, Note, Note, Note, SeCVideoSegmentation, VHS_VideoCombine, SetNode, SetNode, GetNode, GetNode, DrawMaskOnImage, SetNode, GetNode, VHS_VideoCombine, SetNode, WanVideoTextEncodeCached, GrowMask, BlockifyMask, RHHiddenNodes, WanVideoModelLoader, GetNode, GetNode, GetNode, GetNode, ImageFromBatch, WanVideoDecode, PreviewImage, Note, VHS_VideoCombine, WanVideoBlockSwap, WanVideoLoraSelectMulti, WanVideoLoraSelect, WanVideoSampler, PreviewImage, PointsEditor, VHS_LoadVideo, LoadImage, easy int, easy int, SimpleMath+, easy int, easy int, easy int, easy int, easy int]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/（可短剧）Wan2.2 Animate人物替换V2_2041230644306513921.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2041230644306513921.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（144 个）：
+- `CLIPVisionLoader`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ImageFromBatch`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `RepeatImageBatch`
+- `easy mathInt`
+- `easy mathInt`
+- `GetNode`
+- `easy mathInt`
+- `easy compare`
+- `LazySwitch1way`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `easy compare`
+- `GetNode`
+- `SetNode`
+- `easy mathInt`
+- `GetNode`
+- `GetNode`
+- `ImageFromBatch`
+- `easy mathInt`
+- `LazySwitch1way`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `RepeatImageBatch`
+- `GetNode`
+- `BatchCount+`
+- `SeCModelLoader`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfo`
+- `SetNode`
+- `VHS_VideoInfoLoaded`
+- `SetNode`
+- `BatchCount+`
+- `easy mathInt`
+- `ImageBatch`
+- `easy mathInt`
+- `BatchCount+`
+- `ImageResizeKJv2`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `GetNode`
+- `GetNode`
+- `Image Blank`
+- `GetNode`
+- `GetNode`
+- `OnnxDetectionModelLoader`
+- `LayerUtility: ImageBlend`
+- `DrawViTPose`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Bookmark (rgthree)`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoVAELoader`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `SeCVideoSegmentation`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `DrawMaskOnImage`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `WanVideoTextEncodeCached`
+- `GrowMask`
+- `BlockifyMask`
+- `RHHiddenNodes`
+- `WanVideoModelLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageFromBatch`
+- `WanVideoDecode`
+- `PreviewImage`
+- `Note`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `PreviewImage`
+- `PointsEditor`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `easy int`
+- `easy int`
+- `SimpleMath+`
+- `easy int`
+- `easy int`
+- `easy int`
+- `easy int`
+- `easy int`
+
+## 知识
+
+覆盖率 **44%**（64/144）
+
+**有卡**：`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`ImageFromBatch`、`RepeatImageBatch`、`easy mathInt`、`easy compare`、`LazySwitch1way`、`BatchCount+`、`SeCModelLoader`、`VHS_VideoInfo`、`VHS_VideoInfoLoaded`、`ImageBatch`、`ImageResizeKJv2`、`WanVideoSetLoRAs`、`Image Blank`、`OnnxDetectionModelLoader`、`LayerUtility: ImageBlend`、`DrawViTPose`、`PoseAndFaceDetection`、`Bookmark (rgthree)`、`VHS_VideoCombine`、`WanVideoAnimateEmbeds`、`WanVideoSetBlockSwap`、`WanVideoVAELoader`、`SeCVideoSegmentation`、`DrawMaskOnImage`、`WanVideoTextEncodeCached`、`GrowMask`、`BlockifyMask`、`RHHiddenNodes`、`WanVideoModelLoader`、`WanVideoDecode`、`WanVideoBlockSwap`、`WanVideoLoraSelectMulti`、`WanVideoLoraSelect`、`WanVideoSampler`、`PointsEditor`、`VHS_LoadVideo`、`LoadImage`、`easy int`、`SimpleMath+`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs

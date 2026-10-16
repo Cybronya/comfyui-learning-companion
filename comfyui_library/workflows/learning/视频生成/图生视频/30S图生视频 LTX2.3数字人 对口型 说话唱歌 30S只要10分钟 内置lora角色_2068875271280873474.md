@@ -1,0 +1,128 @@
+---
+key: 视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json
+name: 30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2068875271280873474.json
+hash: a81de00a5dc16b76
+coverage: 0.820225
+learned_at: 2026-10-15 22:40:22
+nodes: [RandomNoise, CFGGuider, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, PrimitiveInt, LTXVConditioning, CLIPTextEncode, CLIPTextEncode, ComfyMathExpression, easy showAnything, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ImageResizeKJv2, easy anythingIndexSwitch, GetNode, SetLatentNoiseMask, SolidMask, LTXVAudioVAEEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, MarkdownNote, LoadAudio, LoadAudio, easy anythingIndexSwitch, CM_IntUnaryCondition, easy showAnything, CR String To Boolean, LoadAudio, LoraLoaderModelOnly, SetNode, GetImageSize, LatentUpscaleModelLoader, DualCLIPLoader, VAELoaderKJ, VAELoader, UNETLoader, MarkdownNote, ImpactConditionalBranch, IndexTTS2Run, TrimAudioDuration, PrimitiveFloat, easy showAnything, SoundFlow_GetLength, LoraLoaderModelOnly, KSamplerSelect, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, SamplerCustomAdvanced, SimpleMath+, LTX2_NAG, BasicScheduler, ModelSamplingSD3, LTXVSeparateAVLatent, GetNode, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, JoinStrings, LTXVTiledVAEDecode, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, PreviewAudio, LTXVImgToVideoInplace, LoadAudio, LoadAudio, LoadAudio, easy int, ImageScaleToTotalPixels, easy int, MelBandRoFormerSampler, MelBandRoFormerModelLoader, ResizeImagesByLongerEdge, LTXVPreprocess, PrimitiveBoolean, LoadAudio, LoadAudio, LoadImage, Note, LoadAudio, PrimitiveStringMultiline, VHS_VideoCombine, CR Prompt Text, PrimitiveStringMultiline, PrimitiveFloat, PrimitiveInt]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2068875271280873474.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（89 个）：
+- `RandomNoise`
+- `CFGGuider`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `PrimitiveInt`
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ComfyMathExpression`
+- `easy showAnything`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ImageResizeKJv2`
+- `easy anythingIndexSwitch`
+- `GetNode`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `LoadAudio`
+- `LoadAudio`
+- `easy anythingIndexSwitch`
+- `CM_IntUnaryCondition`
+- `easy showAnything`
+- `CR String To Boolean`
+- `LoadAudio`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `GetImageSize`
+- `LatentUpscaleModelLoader`
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `MarkdownNote`
+- `ImpactConditionalBranch`
+- `IndexTTS2Run`
+- `TrimAudioDuration`
+- `PrimitiveFloat`
+- `easy showAnything`
+- `SoundFlow_GetLength`
+- `LoraLoaderModelOnly` ★核心
+- `KSamplerSelect` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `SamplerCustomAdvanced` ★核心
+- `SimpleMath+`
+- `LTX2_NAG`
+- `BasicScheduler`
+- `ModelSamplingSD3`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `JoinStrings`
+- `LTXVTiledVAEDecode` ★核心
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVConcatAVLatent`
+- `PreviewAudio`
+- `LTXVImgToVideoInplace`
+- `LoadAudio`
+- `LoadAudio`
+- `LoadAudio`
+- `easy int`
+- `ImageScaleToTotalPixels`
+- `easy int`
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `PrimitiveBoolean`
+- `LoadAudio`
+- `LoadAudio`
+- `LoadImage`
+- `Note`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `VHS_VideoCombine`
+- `CR Prompt Text`
+- `PrimitiveStringMultiline`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **82%**（73/89）
+
+**有卡**：`RandomNoise`、`CFGGuider`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConditioning`、`CLIPTextEncode`、`ComfyMathExpression`、`LoraLoaderModelOnly`、`ImageResizeKJv2`、`easy anythingIndexSwitch`、`SetLatentNoiseMask`、`SolidMask`、`LTXVAudioVAEEncode`、`LoadAudio`、`CM_IntUnaryCondition`、`CR String To Boolean`、`GetImageSize`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`VAELoader`、`UNETLoader`、`ImpactConditionalBranch`、`IndexTTS2Run`、`TrimAudioDuration`、`SoundFlow_GetLength`、`KSamplerSelect`、`SamplerCustomAdvanced`、`SimpleMath+`、`LTX2_NAG`、`BasicScheduler`、`ModelSamplingSD3`、`LTXVSeparateAVLatent`、`LayerUtility: PurgeVRAM V2`、`JoinStrings`、`LTXVTiledVAEDecode`、`LTXVConcatAVLatent`、`PreviewAudio`、`LTXVImgToVideoInplace`、`easy int`、`ImageScaleToTotalPixels`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`PrimitiveBoolean`、`LoadImage`、`VHS_VideoCombine`、`CR Prompt Text`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

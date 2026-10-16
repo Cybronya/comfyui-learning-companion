@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/Wan2.2_Remix（首中尾帧)_2001639345427738626.json
+name: Wan2.2_Remix（首中尾帧)_2001639345427738626.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2001639345427738626.json
+hash: c84be2311311ecd1
+coverage: 0.559322
+learned_at: 2026-10-15 22:33:46
+nodes: [ModelPatchTorchSettings, PathchSageAttentionKJ, Note, Note, Int, SetNode, Int, PathchSageAttentionKJ, easy cleanGpuUsed, INTConstant, SetNode, SetNode, GetNode, RIFE VFI, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, VAEDecode, GetNode, Note, Note, KSamplerAdvanced, UNETLoader, VHS_VideoCombine, LoraLoaderModelOnly, CLIPLoader, VAELoader, LoadImage, PreviewImage, PreviewImage, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, SetNode, SetNode, INTConstant, GetNode, GetNode, UNETLoader, GetNode, ModelSamplingSD3, SetNode, KSamplerAdvanced, WanFirstMiddleLastFrameToVideo, SetNode, VHS_VideoCombine, SetNode, ModelPatchTorchSettings, ModelSamplingSD3, LoadImage, LoadImage, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "normal", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2_Remix（首中尾帧)_2001639345427738626.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2001639345427738626.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（59 个）：
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `Note`
+- `Note`
+- `Int`
+- `SetNode`
+- `Int`
+- `PathchSageAttentionKJ`
+- `easy cleanGpuUsed`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `RIFE VFI`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `GetNode`
+- `Note`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `LoadImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `UNETLoader` ★核心
+- `GetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `WanFirstMiddleLastFrameToVideo`
+- `SetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `normal`
+
+## 知识
+
+覆盖率 **56%**（33/59）
+
+**有卡**：`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`Int`、`easy cleanGpuUsed`、`INTConstant`、`RIFE VFI`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`VAEDecode`、`KSamplerAdvanced`、`UNETLoader`、`VHS_VideoCombine`、`CLIPLoader`、`VAELoader`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`ModelSamplingSD3`、`WanFirstMiddleLastFrameToVideo`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

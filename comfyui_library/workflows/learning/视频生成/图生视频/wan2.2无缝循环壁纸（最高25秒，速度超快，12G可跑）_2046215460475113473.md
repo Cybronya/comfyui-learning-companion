@@ -1,0 +1,270 @@
+---
+key: 视频生成/图生视频/wan2.2无缝循环壁纸（最高25秒，速度超快，12G可跑）_2046215460475113473.json
+name: wan2.2无缝循环壁纸（最高25秒，速度超快，12G可跑）_2046215460475113473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2046215460475113473.json
+hash: 9743ac911c48564d
+coverage: 0.421053
+learned_at: 2026-10-15 22:36:56
+nodes: [SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, SetNode, VAELoader, GetNode, SetNode, CLIPVisionLoader, ModelSamplingSD3, SetNode, ModelSamplingSD3, PathchSageAttentionKJ, KSamplerAdvanced, KSamplerAdvanced, SetNode, CLIPVisionEncode, CLIPLoader, ModelPatchTorchSettings, PathchSageAttentionKJ, ModelPatchTorchSettings, ImageResizeKJv2, ColorMatch, WanFirstLastFrameToVideo, VAEEncode, GetNode, WanImageToVideoSVIPro, SetNode, SetNode, CLIPTextEncode, KSamplerAdvanced, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, SetNode, SetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, WanImageToVideoSVIPro, VHS_VideoCombine, SetNode, SetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, KSamplerAdvanced, GetNode, SetNode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, KSamplerAdvanced, GetNode, GetNode, KSamplerAdvanced, ImageBatchExtendWithOverlap, SetNode, SetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, GetNode, GetNode, VAEDecode, GetNode, VAEEncode, GetNode, VAEDecode, GetNode, VAEEncode, GetNode, VAEDecode, GetNode, VAEEncode, VAEDecode, GetNode, GetNode, GetNode, GetNode, ModelSamplingSD3, ModelPatchTorchSettings, PathchSageAttentionKJ, ModelPatchTorchSettings, SetNode, SetNode, PathchSageAttentionKJ, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, ImageBatchExtendWithOverlap, GetNode, GetNode, KSamplerAdvanced, KSamplerAdvanced, SetNode, KSamplerAdvanced, TrimBatchEnds, ColorMatch, LayerUtility: PurgeVRAM V2, SetNode, VHS_VideoCombine, VHS_VideoCombine, SetNode, ImageFromBatch+, MarkdownNote, CLIPVisionEncode, GetNode, SetNode, GetNode, SetNode, PreviewImage, SetNode, SetNode, SetNode, SetNode, easy anythingIndexSwitch, GetNode, GetNode, GetNode, GetNode, GetNode, ModelSamplingSD3, SetNode, easy anythingIndexSwitch, Split String, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, CLIPTextEncode, GetNode, SetNode, SetNode, SetNode, SetNode, INTConstant, INTConstant, INTConstant, INTConstant, Int, Int, Int, Int, INTConstant, Float, Seed (rgthree), ComfyMathExpression, SetNode, AssembleLoopFrames, PrepareLoopFrames, RIFE VFI, VHS_VideoCombine, ImageBatchExtendWithOverlap, CR Text, LoadImage, Fast Groups Bypasser (rgthree), Int, MarkdownNote, UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, VHS_VideoCombine, RIFE_VFI_Advanced]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2.2无缝循环壁纸（最高25秒，速度超快，12G可跑）_2046215460475113473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2046215460475113473.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（228 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `VAELoader`
+- `GetNode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `ModelSamplingSD3`
+- `SetNode`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SetNode`
+- `CLIPVisionEncode`
+- `CLIPLoader`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ImageResizeKJv2`
+- `ColorMatch`
+- `WanFirstLastFrameToVideo`
+- `VAEEncode` ★核心
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `ImageBatchExtendWithOverlap`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `SetNode`
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `TrimBatchEnds`
+- `ColorMatch`
+- `LayerUtility: PurgeVRAM V2`
+- `SetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SetNode`
+- `ImageFromBatch+`
+- `MarkdownNote`
+- `CLIPVisionEncode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `PreviewImage`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy anythingIndexSwitch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `easy anythingIndexSwitch`
+- `Split String`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `INTConstant`
+- `Float`
+- `Seed (rgthree)`
+- `ComfyMathExpression`
+- `SetNode`
+- `AssembleLoopFrames`
+- `PrepareLoopFrames`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `ImageBatchExtendWithOverlap`
+- `CR Text`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Int`
+- `MarkdownNote`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `RIFE_VFI_Advanced`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **42%**（96/228）
+
+**有卡**：`VAEDecode`、`VAELoader`、`CLIPVisionLoader`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`KSamplerAdvanced`、`CLIPVisionEncode`、`CLIPLoader`、`ModelPatchTorchSettings`、`ImageResizeKJv2`、`ColorMatch`、`WanFirstLastFrameToVideo`、`VAEEncode`、`WanImageToVideoSVIPro`、`CLIPTextEncode`、`VHS_VideoCombine`、`ImageBatchExtendWithOverlap`、`TrimBatchEnds`、`LayerUtility: PurgeVRAM V2`、`ImageFromBatch+`、`easy anythingIndexSwitch`、`Split String`、`INTConstant`、`Int`、`Float`、`Seed (rgthree)`、`ComfyMathExpression`、`AssembleLoopFrames`、`PrepareLoopFrames`、`RIFE VFI`、`CR Text`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`RIFE_VFI_Advanced`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

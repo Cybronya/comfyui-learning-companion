@@ -1,0 +1,62 @@
+---
+key: 视频生成/图生视频/【动态壁纸】Wan2.2动态壁纸生成器 一键自动循环壁纸MAX版高清_1981177939989499906.json
+name: 【动态壁纸】Wan2.2动态壁纸生成器 一键自动循环壁纸MAX版高清_1981177939989499906.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1981177939989499906.json
+hash: df86bc6121ca4395
+coverage: 1
+learned_at: 2026-10-15 22:32:36
+nodes: [Primitive integer [Crystools], WanVideoModelLoader, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoTorchCompileSettings, LayerUtility: ImageScaleByAspectRatio V2, WanVideoSetBlockSwap, WanVideoSampler, WanVideoImageToVideoEncode, WanVideoSetBlockSwap, Primitive integer [Crystools], CreateCFGScheduleFloatList, WanVideoSetLoRAs, MathExpression|pysssss, Primitive integer [Crystools], WanVideoSetLoRAs, WanVideoModelLoader, WanVideoSampler, ImpactInt, WanVideoTextEncode, WanVideoLoraSelect, WanVideoLoraSelect, RH_LLMAPI_NODE, easy imageBatchToImageList, ImageListToImageBatch, WanVideoDecode, VHS_VideoCombine, RH_Captioner, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【动态壁纸】Wan2.2动态壁纸生成器 一键自动循环壁纸MAX版高清_1981177939989499906.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1981177939989499906.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（30 个）：
+- `Primitive integer [Crystools]`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSampler` ★核心
+- `WanVideoImageToVideoEncode`
+- `WanVideoSetBlockSwap`
+- `Primitive integer [Crystools]`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSetLoRAs`
+- `MathExpression|pysssss`
+- `Primitive integer [Crystools]`
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `ImpactInt`
+- `WanVideoTextEncode`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `RH_LLMAPI_NODE`
+- `easy imageBatchToImageList`
+- `ImageListToImageBatch`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `RH_Captioner`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（30/30）
+
+**有卡**：`Primitive integer [Crystools]`、`WanVideoModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoSetBlockSwap`、`WanVideoSampler`、`WanVideoImageToVideoEncode`、`CreateCFGScheduleFloatList`、`WanVideoSetLoRAs`、`MathExpression|pysssss`、`ImpactInt`、`WanVideoTextEncode`、`WanVideoLoraSelect`、`RH_LLMAPI_NODE`、`easy imageBatchToImageList`、`ImageListToImageBatch`、`WanVideoDecode`、`VHS_VideoCombine`、`RH_Captioner`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

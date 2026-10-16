@@ -1,0 +1,67 @@
+---
+key: 视频生成/文生视频/AIO-V10-Wan2.2大一统文生视频_1950721201515728897.json
+name: AIO-V10-Wan2.2大一统文生视频_1950721201515728897.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950721201515728897.json
+hash: 18b9892d4cb98dca
+coverage: 0.769231
+learned_at: 2026-10-15 22:43:36
+nodes: [VAEDecode, VHS_VideoCombine, PrimitiveInt, PrimitiveInt, MathExpression|pysssss, Primitive integer [Crystools], CheckpointLoaderSimple, ModelSamplingSD3, EmptyHunyuanLatentVideo, KSampler, CLIPTextEncode, CLIPTextEncode, PrimitiveStringMultiline]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-t2v-rapid-aio-v10-nsfw.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 704675986737700, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/AIO-V10-Wan2.2大一统文生视频_1950721201515728897.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950721201515728897.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（13 个）：
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `MathExpression|pysssss`
+- `Primitive integer [Crystools]`
+- `CheckpointLoaderSimple` ★核心
+- `ModelSamplingSD3`
+- `EmptyHunyuanLatentVideo`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveStringMultiline`
+
+## 关键参数
+
+- `checkpoint` = `wan2.2-t2v-rapid-aio-v10-nsfw.safetensors`
+- `seed` = `704675986737700`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **77%**（10/13）
+
+**有卡**：`VAEDecode`、`VHS_VideoCombine`、`MathExpression|pysssss`、`Primitive integer [Crystools]`、`CheckpointLoaderSimple`、`ModelSamplingSD3`、`EmptyHunyuanLatentVideo`、`KSampler`、`CLIPTextEncode`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、EmptyHunyuanLatentVideo、ModelSamplingSD3、VHS_VideoCombine、MathExpression|pysssss
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

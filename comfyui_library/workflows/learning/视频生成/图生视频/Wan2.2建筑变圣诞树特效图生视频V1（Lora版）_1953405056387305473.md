@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json
+name: Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1953405056387305473.json
+hash: 910845edb44acd7d
+coverage: 0.861111
+learned_at: 2026-10-15 22:31:05
+nodes: [WanVideoTorchCompileSettings, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoDecode, WanVideoSetLoRAs, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, LayerUtility: ImageScaleByAspectRatio V2, CreateCFGScheduleFloatList, INTConstant, INTConstant, WanVideoLoraSelect, JWInteger, Note, Note, Note, WanVideoModelLoader, GetImageSizeAndCount, ImageFromBatch+, WanVideoModelLoader, Note, JWInteger, WanVideoImageToVideoEncode, WanVideoVAELoader, PrimitiveNode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, WanVideoSampler, WanVideoSampler, WanVideoTextEncode, WanVideoLoraSelect, VHS_VideoCombine, LoadImage, WanVideoLoraSelect, CR Prompt Text]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2建筑变圣诞树特效图生视频V1（Lora版）_1953405056387305473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1953405056387305473.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（36 个）：
+- `WanVideoTorchCompileSettings`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoLoraSelect`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoModelLoader`
+- `GetImageSizeAndCount`
+- `ImageFromBatch+`
+- `WanVideoModelLoader`
+- `Note`
+- `JWInteger`
+- `WanVideoImageToVideoEncode`
+- `WanVideoVAELoader`
+- `PrimitiveNode`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `WanVideoLoraSelect`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `CR Prompt Text`
+
+## 知识
+
+覆盖率 **86%**（31/36）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`LayerUtility: ImageScaleByAspectRatio V2`、`CreateCFGScheduleFloatList`、`INTConstant`、`WanVideoLoraSelect`、`JWInteger`、`WanVideoModelLoader`、`GetImageSizeAndCount`、`ImageFromBatch+`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`LayerUtility: PurgeVRAM`、`WanVideoSampler`、`WanVideoTextEncode`、`VHS_VideoCombine`、`LoadImage`、`CR Prompt Text`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

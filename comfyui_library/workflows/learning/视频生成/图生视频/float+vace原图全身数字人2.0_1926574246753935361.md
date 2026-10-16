@@ -1,0 +1,89 @@
+---
+key: 视频生成/图生视频/float+vace原图全身数字人2.0_1926574246753935361.json
+name: float+vace原图全身数字人2.0_1926574246753935361.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1926574246753935361.json
+hash: 90cf481cf26433d6
+coverage: 0.77193
+learned_at: 2026-10-15 22:29:53
+nodes: [GetNode, GetNode, WanVideoVACEModelSelect, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoVACEEncode, GetNode, GetNode, WanVideoEnhanceAVideo, WanVideoModelLoader, easy imageSize, EmptyImage, MaskFromColor+, MathExpression|pysssss, MathExpression|pysssss, easy batchAnything, WanVideoDecode, GetNode, VHS_SplitImages, WanVideoBlockSwap, Reroute, SetNode, SetNode, WanVideoLoraSelect, easy batchAnything, MaskToImage, ImageResizeKJv2, PrimitiveFloat, easy imageCount, LoadFloatModels, Image To Mask, MaskRepeatBatch, VHS_LoadAudioUpload, SetNode, SetNode, ImagePadForOutpaint, ImageResizeKJv2, GetImageSizeAndCount, easy imageSize, Crop (mtb), VHS_VideoCombine, ImageResizeKJv2, FloatProcess, MathExpression|pysssss, PrimitiveFloat, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, WanVideoSampler, WanVideoTextEncode, PrimitiveString, ImageResizeKJv2, VHS_VideoCombine, FaceToMask, ACE_ImageFaceCrop, MaskBoundingBox+, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/float+vace原图全身数字人2.0_1926574246753935361.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1926574246753935361.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（57 个）：
+- `GetNode`
+- `GetNode`
+- `WanVideoVACEModelSelect`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoVACEEncode`
+- `GetNode`
+- `GetNode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoModelLoader`
+- `easy imageSize`
+- `EmptyImage`
+- `MaskFromColor+`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy batchAnything`
+- `WanVideoDecode`
+- `GetNode`
+- `VHS_SplitImages`
+- `WanVideoBlockSwap`
+- `Reroute`
+- `SetNode`
+- `SetNode`
+- `WanVideoLoraSelect`
+- `easy batchAnything`
+- `MaskToImage`
+- `ImageResizeKJv2`
+- `PrimitiveFloat`
+- `easy imageCount`
+- `LoadFloatModels`
+- `Image To Mask`
+- `MaskRepeatBatch`
+- `VHS_LoadAudioUpload`
+- `SetNode`
+- `SetNode`
+- `ImagePadForOutpaint`
+- `ImageResizeKJv2`
+- `GetImageSizeAndCount`
+- `easy imageSize`
+- `Crop (mtb)`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `FloatProcess`
+- `MathExpression|pysssss`
+- `PrimitiveFloat`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `PrimitiveString`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `FaceToMask`
+- `ACE_ImageFaceCrop`
+- `MaskBoundingBox+`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **77%**（44/57）
+
+**有卡**：`WanVideoVACEModelSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`WanVideoEnhanceAVideo`、`WanVideoModelLoader`、`easy imageSize`、`EmptyImage`、`MaskFromColor+`、`MathExpression|pysssss`、`easy batchAnything`、`WanVideoDecode`、`VHS_SplitImages`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`MaskToImage`、`ImageResizeKJv2`、`easy imageCount`、`LoadFloatModels`、`Image To Mask`、`MaskRepeatBatch`、`VHS_LoadAudioUpload`、`ImagePadForOutpaint`、`GetImageSizeAndCount`、`Crop (mtb)`、`VHS_VideoCombine`、`FloatProcess`、`WanVideoSampler`、`WanVideoTextEncode`、`FaceToMask`、`ACE_ImageFaceCrop`、`MaskBoundingBox+`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

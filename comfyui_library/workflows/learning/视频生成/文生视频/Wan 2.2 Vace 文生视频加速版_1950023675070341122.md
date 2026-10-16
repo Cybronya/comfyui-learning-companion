@@ -1,0 +1,71 @@
+---
+key: 视频生成/文生视频/Wan 2.2 Vace 文生视频加速版_1950023675070341122.json
+name: Wan 2.2 Vace 文生视频加速版_1950023675070341122.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950023675070341122.json
+hash: 04d4c00b350a4e04
+coverage: 0.827586
+learned_at: 2026-10-15 22:43:33
+nodes: [ModelSamplingSD3, CLIPLoader, CLIPTextEncode, PathchSageAttentionKJ, UnetLoaderGGUF, LoraLoaderModelOnly, UnetLoaderGGUF, ModelSamplingSD3, PrimitiveNode, VHS_VideoCombine, KSamplerAdvanced, TrimVideoLatent, VAEDecode, WanVaceToVideo, VAELoader, JWInteger, JWInteger, JWInteger, Note, Note, Note, KSamplerAdvanced, CLIPTextEncode, CR Prompt Text, Note, ImageFromBatch+, ModelSamplingSD3, LoraLoaderModelOnly, PathchSageAttentionKJ]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/文生视频/Wan 2.2 Vace 文生视频加速版_1950023675070341122.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950023675070341122.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（29 个）：
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `UnetLoaderGGUF` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF` ★核心
+- `ModelSamplingSD3`
+- `PrimitiveNode`
+- `VHS_VideoCombine`
+- `KSamplerAdvanced` ★核心
+- `TrimVideoLatent`
+- `VAEDecode` ★核心
+- `WanVaceToVideo`
+- `VAELoader`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CR Prompt Text`
+- `Note`
+- `ImageFromBatch+`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **83%**（24/29）
+
+**有卡**：`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`KSamplerAdvanced`、`TrimVideoLatent`、`VAEDecode`、`WanVaceToVideo`、`VAELoader`、`JWInteger`、`CR Prompt Text`、`ImageFromBatch+`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、KSamplerAdvanced、TrimVideoLatent、CR Prompt Text

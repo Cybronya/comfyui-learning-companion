@@ -1,0 +1,74 @@
+---
+key: 视频生成/图生视频/AI还原「正峰手捧莲花」，深情翻唱《你不要担心》，USO+Wan2.2 S2V+ComfyUI教程_1964737369696030722.json
+name: AI还原「正峰手捧莲花」，深情翻唱《你不要担心》，USO+Wan2.2 S2V+ComfyUI教程_1964737369696030722.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1964737369696030722.json
+hash: fce2166059f423af
+coverage: 0.833333
+learned_at: 2026-10-15 22:31:35
+nodes: [MelBandRoFormerSampler, NormalizeAudioLoudness, AudioEncoderEncode, GIMMVFI_interpolate, SetNode, MelBandRoFormerModelLoader, AudioEncoderLoader, VHS_SelectEveryNthImage, LoadImage, LoadImage, LoadImage, RunningHub USO Loader, PreviewImage, RunningHub USO Sampler, SetNode, WanVideoModelLoader, WanVideoTorchCompileSettings, WanVideoLoraSelectMulti, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoSetBlockSwap, GetNode, ImageResizeKJv2, PreviewImage, WanVideoTextEncodeCached, WanVideoVAELoader, WanVideoSampler, WanVideoAddS2VEmbeds, WanVideoContextOptions, WanVideoEmptyEmbeds, InsertLatentToIndexed, WanVideoDecode, GetImageSizeAndCount, VHS_SplitImages, DownloadAndLoadGIMMVFIModel, GetNode, VHS_VideoCombine, RH_Translator, WanVideoEncode, LoadAudio, PrimitiveNode, Label (rgthree)]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/AI还原「正峰手捧莲花」，深情翻唱《你不要担心》，USO+Wan2.2 S2V+ComfyUI教程_1964737369696030722.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1964737369696030722.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（42 个）：
+- `MelBandRoFormerSampler` ★核心
+- `NormalizeAudioLoudness`
+- `AudioEncoderEncode`
+- `GIMMVFI_interpolate`
+- `SetNode`
+- `MelBandRoFormerModelLoader`
+- `AudioEncoderLoader`
+- `VHS_SelectEveryNthImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `RunningHub USO Loader`
+- `PreviewImage`
+- `RunningHub USO Sampler` ★核心
+- `SetNode`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelectMulti`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `GetNode`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoAddS2VEmbeds`
+- `WanVideoContextOptions`
+- `WanVideoEmptyEmbeds`
+- `InsertLatentToIndexed`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `VHS_SplitImages`
+- `DownloadAndLoadGIMMVFIModel`
+- `GetNode`
+- `VHS_VideoCombine`
+- `RH_Translator`
+- `WanVideoEncode`
+- `LoadAudio`
+- `PrimitiveNode`
+- `Label (rgthree)`
+
+## 知识
+
+覆盖率 **83%**（35/42）
+
+**有卡**：`MelBandRoFormerSampler`、`NormalizeAudioLoudness`、`AudioEncoderEncode`、`GIMMVFI_interpolate`、`MelBandRoFormerModelLoader`、`AudioEncoderLoader`、`VHS_SelectEveryNthImage`、`LoadImage`、`RunningHub USO Loader`、`RunningHub USO Sampler`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoLoraSelectMulti`、`WanVideoSetLoRAs`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`ImageResizeKJv2`、`WanVideoTextEncodeCached`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoAddS2VEmbeds`、`WanVideoContextOptions`、`WanVideoEmptyEmbeds`、`InsertLatentToIndexed`、`WanVideoDecode`、`GetImageSizeAndCount`、`VHS_SplitImages`、`DownloadAndLoadGIMMVFIModel`、`VHS_VideoCombine`、`RH_Translator`、`WanVideoEncode`、`LoadAudio`、`Label (rgthree)`
+
+**用到的条目**：LoadImage、WanVideoSampler、MelBandRoFormerSampler、RunningHub USO Sampler、AudioEncoderLoader、WanVideoDecode、WanVideoVAELoader、AudioEncoderEncode

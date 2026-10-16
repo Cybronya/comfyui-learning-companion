@@ -1,0 +1,78 @@
+---
+key: 视频生成/文生视频/(Love贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1955828934376132610.json
+name: (Love贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1955828934376132610.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1955828934376132610.json
+hash: 2d7239c23398aaf5
+coverage: 0.782609
+learned_at: 2026-10-15 22:43:40
+nodes: [Note, WanVideoSetBlockSwap, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, CreateCFGScheduleFloatList, INTConstant, INTConstant, Note, Note, Note, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoModelLoader, WanVideoLoraSelect, WanVideoTextEncode, Note, Wan22PromptSelector, easy showAnything, TextConcat, easy showAnything, ShowText|pysssss, JWStringConcat, easy showAnything, JWInteger, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoLoraSelect, RH_LLMAPI_NODE, WanVideoLoraSelect, WanVideoLoraSelect, PrimitiveNode, WanVideoBlockSwap, JWInteger, JWInteger, WanVideoEmptyEmbeds, WanVideoSampler, WanVideoSampler, WanVideoVAELoader, WanVideoDecode, GetImageSizeAndCount, VHS_VideoCombine, WanVideoModelLoader, CR Prompt Text, CR Prompt Text, CR Prompt Text]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/(Love贞贞版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V3_1955828934376132610.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1955828934376132610.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（46 个）：
+- `Note`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `CreateCFGScheduleFloatList`
+- `INTConstant`
+- `INTConstant`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `Note`
+- `Wan22PromptSelector`
+- `easy showAnything`
+- `TextConcat`
+- `easy showAnything`
+- `ShowText|pysssss`
+- `JWStringConcat`
+- `easy showAnything`
+- `JWInteger`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelect`
+- `RH_LLMAPI_NODE`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `PrimitiveNode`
+- `WanVideoBlockSwap`
+- `JWInteger`
+- `JWInteger`
+- `WanVideoEmptyEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoVAELoader`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+
+## 知识
+
+覆盖率 **78%**（36/46）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`CreateCFGScheduleFloatList`、`INTConstant`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`Wan22PromptSelector`、`TextConcat`、`JWStringConcat`、`JWInteger`、`WanVideoSetLoRAs`、`RH_LLMAPI_NODE`、`WanVideoEmptyEmbeds`、`WanVideoSampler`、`WanVideoVAELoader`、`WanVideoDecode`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`CR Prompt Text`
+
+**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs

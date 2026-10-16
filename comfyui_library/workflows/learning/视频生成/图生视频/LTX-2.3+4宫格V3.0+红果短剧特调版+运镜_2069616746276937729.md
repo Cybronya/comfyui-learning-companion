@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json
+name: LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2069616746276937729.json
+hash: 9dfd9851217686c3
+coverage: 0.566667
+learned_at: 2026-10-15 22:40:30
+nodes: [SimpleMath+, SetNode, GetNode, PrimitiveFloat, SetNode, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, CR Float To Integer, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, VAELoader, LatentUpscaleModelLoader, SetNode, VAELoaderKJ, DualCLIPLoader, SetNode, SetNode, SetNode, CFGGuider, RandomNoise, KSamplerSelect, LTXVConcatAVLatent, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, LTXVCropGuides, LTXVSeparateAVLatent, LTXVConditioning, GetNode, easy cleanGpuUsed, VAEDecodeTiled, SetNode, SetNode, CLIPTextEncode, CLIPTextEncode, GetNode, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, JWStringToInteger, SamplerCustomAdvanced, ManualSigmas, LoraLoaderModelOnly, SetNode, VHS_VideoCombine, UNETLoader, ParseJsonNode, ParseJsonNode, ParseJsonNode, ParseJsonNode, TD_LTXVAddGuideFromGrid, JWString, LoadImage, TTResolutionSelector]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2069616746276937729.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Other
+
+**节点**（60 个）：
+- `SimpleMath+`
+- `SetNode`
+- `GetNode`
+- `PrimitiveFloat`
+- `SetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CR Float To Integer`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `VAELoader`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LTXVConditioning`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `VAEDecodeTiled` ★核心
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `JWStringToInteger`
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `ParseJsonNode`
+- `ParseJsonNode`
+- `ParseJsonNode`
+- `ParseJsonNode`
+- `TD_LTXVAddGuideFromGrid`
+- `JWString`
+- `LoadImage`
+- `TTResolutionSelector`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **57%**（34/60）
+
+**有卡**：`SimpleMath+`、`LTXVAudioVAEDecode`、`CR Float To Integer`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`VAELoader`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`DualCLIPLoader`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`LTXVConcatAVLatent`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`LTXVConditioning`、`easy cleanGpuUsed`、`VAEDecodeTiled`、`CLIPTextEncode`、`JWStringToInteger`、`SamplerCustomAdvanced`、`ManualSigmas`、`LoraLoaderModelOnly`、`VHS_VideoCombine`、`UNETLoader`、`ParseJsonNode`、`TD_LTXVAddGuideFromGrid`、`JWString`、`LoadImage`、`TTResolutionSelector`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

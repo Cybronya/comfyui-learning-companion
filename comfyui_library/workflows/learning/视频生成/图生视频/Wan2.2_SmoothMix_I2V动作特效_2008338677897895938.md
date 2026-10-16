@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/Wan2.2_SmoothMix_I2V动作特效_2008338677897895938.json
+name: Wan2.2_SmoothMix_I2V动作特效_2008338677897895938.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2008338677897895938.json
+hash: 726a3671bd1e768d
+coverage: 0.543478
+learned_at: 2026-10-15 22:34:06
+nodes: [PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, SetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, ImageResizeKJv2, ImpactInt, SetNode, SimpleMath+, SetNode, GetNode, GetNode, GetNode, easy cleanGpuUsed, VAEDecode, PathchSageAttentionKJ, CLIPLoader, CLIPVisionLoader, GetNode, CLIPVisionEncode, GetNode, WanImageToVideo, SetNode, SetNode, wanBlockSwap, wanBlockSwap, SetNode, SetNode, SetNode, UNETLoader, VAELoader, VHS_VideoCombine, GetNode, CLIPTextEncode, UNETLoader, WanMoeKSampler, ImpactInt, ImpactInt, LoadImage, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "euler_ancestral", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2_SmoothMix_I2V动作特效_2008338677897895938.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2008338677897895938.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（46 个）：
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `SetNode`
+- `SimpleMath+`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `GetNode`
+- `CLIPVisionEncode`
+- `GetNode`
+- `WanImageToVideo`
+- `SetNode`
+- `SetNode`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VHS_VideoCombine`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `WanMoeKSampler` ★核心
+- `ImpactInt`
+- `ImpactInt`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler_ancestral`
+
+## 知识
+
+覆盖率 **54%**（25/46）
+
+**有卡**：`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`ImageResizeKJv2`、`ImpactInt`、`SimpleMath+`、`easy cleanGpuUsed`、`VAEDecode`、`CLIPLoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`WanImageToVideo`、`wanBlockSwap`、`UNETLoader`、`VAELoader`、`VHS_VideoCombine`、`CLIPTextEncode`、`WanMoeKSampler`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler、CLIPVisionEncode

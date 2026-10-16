@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/wan  wan2.2 图生视频  wan22 图生视频_2062925318310154241.json
+name: wan  wan2.2 图生视频  wan22 图生视频_2062925318310154241.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2062925318310154241.json
+hash: e87baa08c87f9f9a
+coverage: 0.896552
+learned_at: 2026-10-15 22:39:09
+nodes: [MathExpression|pysssss, ModelSamplingSD3, easy cleanGpuUsed, ModelSamplingSD3, CLIPTextEncode, LoadImage, easy cleanGpuUsed, VAEDecode, CreateVideo, KSamplerAdvanced, SaveVideo, WanImageToVideo, KSamplerAdvanced, UNETLoader, LayerUtility: ImageScaleByAspectRatio V2, CFGZeroStar, CLIPLoader, ShowText|pysssss, INTConstant, PrimitiveFloat, UNETLoader, PathchSageAttentionKJ, VAELoader, Bjornulf_ShowInt, INTConstant, PreviewImage, CLIPTextEncode, RH_LLMAPI_NODE, CR Text]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan  wan2.2 图生视频  wan22 图生视频_2062925318310154241.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2062925318310154241.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（29 个）：
+- `MathExpression|pysssss`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `KSamplerAdvanced` ★核心
+- `SaveVideo`
+- `WanImageToVideo`
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CFGZeroStar`
+- `CLIPLoader`
+- `ShowText|pysssss`
+- `INTConstant`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `VAELoader`
+- `Bjornulf_ShowInt`
+- `INTConstant`
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+- `RH_LLMAPI_NODE`
+- `CR Text`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **90%**（26/29）
+
+**有卡**：`MathExpression|pysssss`、`ModelSamplingSD3`、`easy cleanGpuUsed`、`CLIPTextEncode`、`LoadImage`、`VAEDecode`、`CreateVideo`、`KSamplerAdvanced`、`SaveVideo`、`WanImageToVideo`、`UNETLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`CFGZeroStar`、`CLIPLoader`、`INTConstant`、`PathchSageAttentionKJ`、`VAELoader`、`Bjornulf_ShowInt`、`RH_LLMAPI_NODE`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CFGZeroStar

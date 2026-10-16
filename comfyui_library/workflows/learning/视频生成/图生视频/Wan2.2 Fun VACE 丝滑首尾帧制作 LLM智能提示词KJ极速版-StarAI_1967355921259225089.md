@@ -1,0 +1,79 @@
+---
+key: 视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json
+name: Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1967355921259225089.json
+hash: 36b93d2282e8f1ad
+coverage: 0.808511
+learned_at: 2026-10-15 22:31:41
+nodes: [JWInteger, WanVideoBlockSwap, GetNode, WanVideoSampler, GetNode, WanVideoDecode, WanVideoScheduler, WanVideoSampler, WanVideoVAELoader, SetNode, WanVideoSetBlockSwap, SetNode, WanVideoSetBlockSwap, SetNode, MathExpression|pysssss, ImpactSwitch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, ImageResizeKJ, ImageConcanate, ShowText|pysssss, CreateCFGScheduleFloatList, GetNode, WanVideoVACEEncode, WanVideoScheduler, ImpactInt, WanVideoTorchCompileSettings, WanVideoTextEncodeCached, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoVACEModelSelect, WanVideoVACEModelSelect, WanVideoModelLoader, RHHiddenNodes, RH_LLMAPI_NODE, Note Plus (mtb), LoadImage, WanVideoVACEStartToEndFrame, VHS_VideoCombine, VHS_VideoCombine, MarkdownNote, JWInteger, CR Text, Float, LoadImage, WanVideoSigmaToStep]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1967355921259225089.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（47 个）：
+- `JWInteger`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoScheduler`
+- `WanVideoSampler` ★核心
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `MathExpression|pysssss`
+- `ImpactSwitch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJ`
+- `ImageConcanate`
+- `ShowText|pysssss`
+- `CreateCFGScheduleFloatList`
+- `GetNode`
+- `WanVideoVACEEncode`
+- `WanVideoScheduler`
+- `ImpactInt`
+- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncodeCached`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoVACEModelSelect`
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `RHHiddenNodes`
+- `RH_LLMAPI_NODE`
+- `Note Plus (mtb)`
+- `LoadImage`
+- `WanVideoVACEStartToEndFrame`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `MarkdownNote`
+- `JWInteger`
+- `CR Text`
+- `Float`
+- `LoadImage`
+- `WanVideoSigmaToStep`
+
+## 知识
+
+覆盖率 **81%**（38/47）
+
+**有卡**：`JWInteger`、`WanVideoBlockSwap`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoScheduler`、`WanVideoVAELoader`、`WanVideoSetBlockSwap`、`MathExpression|pysssss`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJ`、`ImageConcanate`、`CreateCFGScheduleFloatList`、`WanVideoVACEEncode`、`ImpactInt`、`WanVideoTorchCompileSettings`、`WanVideoTextEncodeCached`、`WanVideoLoraSelectMulti`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`RHHiddenNodes`、`RH_LLMAPI_NODE`、`Note Plus (mtb)`、`LoadImage`、`WanVideoVACEStartToEndFrame`、`VHS_VideoCombine`、`CR Text`、`Float`、`WanVideoSigmaToStep`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、CreateCFGScheduleFloatList、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached

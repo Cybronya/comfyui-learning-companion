@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/wan2.2-14B 首尾帧视频工作流_1961016346521878529.json
+name: wan2.2-14B 首尾帧视频工作流_1961016346521878529.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1961016346521878529.json
+hash: 2649bc101d1130b2
+coverage: 0.934783
+learned_at: 2026-10-15 22:31:27
+nodes: [CLIPLoader, UNETLoader, VAELoader, CLIPLoader, ModelSamplingSD3, ModelSamplingSD3, UNETLoader, UNETLoader, CLIPTextEncode, VAELoader, Note, SaveVideo, KSamplerAdvanced, VAEDecode, CreateVideo, KSamplerAdvanced, CLIPVisionLoader, CLIPVisionEncode, LayerUtility: ImageMaskScaleAs, CLIPVisionEncode, WanFirstLastFrameToVideo, LayerUtility: ImageScaleByAspectRatio V2, Note, CLIPTextEncode, MarkdownNote, LoadImage, LoadImage, LayerUtility: ImageMaskScaleAs, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, UNETLoader, VAEDecode, ModelSamplingSD3, ModelSamplingSD3, WanFirstLastFrameToVideo, Int, SimpleMath+, KSamplerAdvanced, LoadImage, LoadImage, CR Text, CreateVideo, Int, SaveVideo]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 4, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2-14B 首尾帧视频工作流_1961016346521878529.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1961016346521878529.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（46 个）：
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `Note`
+- `SaveVideo`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `CreateVideo`
+- `KSamplerAdvanced` ★核心
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `LayerUtility: ImageMaskScaleAs`
+- `CLIPVisionEncode`
+- `WanFirstLastFrameToVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `MarkdownNote`
+- `LoadImage`
+- `LoadImage`
+- `LayerUtility: ImageMaskScaleAs`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `WanFirstLastFrameToVideo`
+- `Int`
+- `SimpleMath+`
+- `KSamplerAdvanced` ★核心
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+- `CreateVideo`
+- `Int`
+- `SaveVideo`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `4`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **93%**（43/46）
+
+**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`SaveVideo`、`KSamplerAdvanced`、`VAEDecode`、`CreateVideo`、`CLIPVisionLoader`、`CLIPVisionEncode`、`LayerUtility: ImageMaskScaleAs`、`WanFirstLastFrameToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`Int`、`SimpleMath+`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode

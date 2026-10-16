@@ -1,0 +1,103 @@
+---
+key: 视频生成/图生视频/SVI 2.0Pro 一键生成长视频！_2008875910526668802.json
+name: SVI 2.0Pro 一键生成长视频！_2008875910526668802.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2008875910526668802.json
+hash: 533fc272292fe69a
+coverage: 0.47541
+learned_at: 2026-10-15 22:34:09
+nodes: [SetNode, SetNode, VAELoader, SetNode, CLIPLoader, SetNode, GetNode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, Reroute, GetNode, SimpleMath+, easy forLoopStart, GetNode, CLIPTextEncode, CLIPTextEncode, GetNode, GetNode, GetNode, easy ifElse, Int, easy isNone, Reroute, Reroute, VAEDecode, ImageResizeKJv2, SetNode, VAEEncode, GetNode, GetNode, GetNode, SetNode, Int, SetNode, LoraLoaderModelOnly, INTConstant, easy ifElse, easy forLoopEnd, SetNode, SetNode, Int, SetNode, ImageBatchExtendWithOverlap, LoraLoaderModelOnly, UNETLoader, UNETLoader, KSamplerAdvanced, KSamplerAdvanced, Text Load Line From File, SetNode, INTConstant, INTConstant, PrimitiveStringMultiline, SetNode, LoadImage, Note, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/SVI 2.0Pro 一键生成长视频！_2008875910526668802.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2008875910526668802.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（61 个）：
+- `SetNode`
+- `SetNode`
+- `VAELoader`
+- `SetNode`
+- `CLIPLoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `SimpleMath+`
+- `easy forLoopStart`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy ifElse`
+- `Int`
+- `easy isNone`
+- `Reroute`
+- `Reroute`
+- `VAEDecode` ★核心
+- `ImageResizeKJv2`
+- `SetNode`
+- `VAEEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `Int`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `INTConstant`
+- `easy ifElse`
+- `easy forLoopEnd`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `SetNode`
+- `ImageBatchExtendWithOverlap`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Text Load Line From File`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `PrimitiveStringMultiline`
+- `SetNode`
+- `LoadImage`
+- `Note`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **48%**（29/61）
+
+**有卡**：`VAELoader`、`CLIPLoader`、`WanImageToVideoSVIPro`、`SimpleMath+`、`easy forLoopStart`、`CLIPTextEncode`、`Int`、`easy isNone`、`VAEDecode`、`ImageResizeKJv2`、`VAEEncode`、`LoraLoaderModelOnly`、`INTConstant`、`easy forLoopEnd`、`ImageBatchExtendWithOverlap`、`UNETLoader`、`KSamplerAdvanced`、`Text Load Line From File`、`LoadImage`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

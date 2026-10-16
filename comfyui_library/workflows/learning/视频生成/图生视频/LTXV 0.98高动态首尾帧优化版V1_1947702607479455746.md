@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json
+name: LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1947702607479455746.json
+hash: 85ecf2ba7aa60a6b
+coverage: 0.935484
+learned_at: 2026-10-15 22:30:46
+nodes: [LTXVConditioning, CLIPTextEncode, RandomNoise, Note, Set VAE Decoder Noise, GetImageSizeAndCount, LoadImage, KSamplerSelect, ImageBatch, VHS_VideoCombine, VAEDecode, ImageConcanate, JWImageResizeByLongerSide, ImageConcanate, VHS_VideoCombine, LoadImage, LoadImage, Note Plus (mtb), BasicScheduler, LTXVBaseSampler, CLIPLoader, Note, STGGuiderAdvanced, CheckpointLoaderSimple, LayerUtility: ImageAutoCrop V3, CLIPTextEncode, JWInteger, STGAdvancedPresets, CR Prompt Text, JWImageResizeByLongerSide, CR Prompt Text]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltxv-13b-0.9.8-distilled-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1947702607479455746.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（31 个）：
+- `LTXVConditioning`
+- `CLIPTextEncode` ★核心
+- `RandomNoise`
+- `Note`
+- `Set VAE Decoder Noise`
+- `GetImageSizeAndCount`
+- `LoadImage`
+- `KSamplerSelect` ★核心
+- `ImageBatch`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `ImageConcanate`
+- `JWImageResizeByLongerSide`
+- `ImageConcanate`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `Note Plus (mtb)`
+- `BasicScheduler`
+- `LTXVBaseSampler` ★核心
+- `CLIPLoader`
+- `Note`
+- `STGGuiderAdvanced`
+- `CheckpointLoaderSimple` ★核心
+- `LayerUtility: ImageAutoCrop V3`
+- `CLIPTextEncode` ★核心
+- `JWInteger`
+- `STGAdvancedPresets`
+- `CR Prompt Text`
+- `JWImageResizeByLongerSide`
+- `CR Prompt Text`
+
+## 关键参数
+
+- `checkpoint` = `ltxv-13b-0.9.8-distilled-fp8.safetensors`
+
+## 知识
+
+覆盖率 **94%**（29/31）
+
+**有卡**：`LTXVConditioning`、`CLIPTextEncode`、`RandomNoise`、`Set VAE Decoder Noise`、`GetImageSizeAndCount`、`LoadImage`、`KSamplerSelect`、`ImageBatch`、`VHS_VideoCombine`、`VAEDecode`、`ImageConcanate`、`JWImageResizeByLongerSide`、`Note Plus (mtb)`、`BasicScheduler`、`LTXVBaseSampler`、`CLIPLoader`、`STGGuiderAdvanced`、`CheckpointLoaderSimple`、`LayerUtility: ImageAutoCrop V3`、`JWInteger`、`STGAdvancedPresets`、`CR Prompt Text`
+
+**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerSelect、LTXVBaseSampler、Set VAE Decoder Noise

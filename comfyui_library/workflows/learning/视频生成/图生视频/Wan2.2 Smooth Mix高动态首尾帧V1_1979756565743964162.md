@@ -1,0 +1,90 @@
+---
+key: 视频生成/图生视频/Wan2.2 Smooth Mix高动态首尾帧V1_1979756565743964162.json
+name: Wan2.2 Smooth Mix高动态首尾帧V1_1979756565743964162.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1979756565743964162.json
+hash: b7a4cfc9c7970fe4
+coverage: 0.770833
+learned_at: 2026-10-15 22:32:26
+nodes: [wanBlockSwap, wanBlockSwap, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, UNETLoader, UNETLoader, GetNode, SetNode, ModelSamplingSD3, ModelSamplingSD3, SetNode, ImageConcanate, CLIPVisionEncode, CLIPVisionLoader, WanFirstLastFrameToVideo, CLIPVisionEncode, SetNode, VAELoader, SetNode, CLIPTextEncode, CLIPTextEncode, GetNode, ImageResizeKJ, MathExpression|pysssss, LayerUtility: ImageScaleByAspectRatio V2, RH_LLMAPI_NODE, JWInteger, JWInteger, Note, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, ImageConcanate, ImageConcanate, VAEDecode, SaveImage, TT_img_enc, VHS_VideoCombine, easy showAnything, VHS_VideoCombine, LoadImage, LoadImage, CLIPLoader, CR Text, ImpactSwitch]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2 Smooth Mix高动态首尾帧V1_1979756565743964162.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1979756565743964162.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（48 个）：
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `GetNode`
+- `SetNode`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `SetNode`
+- `ImageConcanate`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `WanFirstLastFrameToVideo`
+- `CLIPVisionEncode`
+- `SetNode`
+- `VAELoader`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `ImageResizeKJ`
+- `MathExpression|pysssss`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `RH_LLMAPI_NODE`
+- `JWInteger`
+- `JWInteger`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `ImageConcanate`
+- `ImageConcanate`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `TT_img_enc`
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `CLIPLoader`
+- `CR Text`
+- `ImpactSwitch`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **77%**（37/48）
+
+**有卡**：`wanBlockSwap`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`UNETLoader`、`ModelSamplingSD3`、`ImageConcanate`、`CLIPVisionEncode`、`CLIPVisionLoader`、`WanFirstLastFrameToVideo`、`VAELoader`、`CLIPTextEncode`、`ImageResizeKJ`、`MathExpression|pysssss`、`LayerUtility: ImageScaleByAspectRatio V2`、`RH_LLMAPI_NODE`、`JWInteger`、`KSamplerAdvanced`、`VAEDecode`、`SaveImage`、`TT_img_enc`、`VHS_VideoCombine`、`LoadImage`、`CLIPLoader`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、KSamplerAdvanced

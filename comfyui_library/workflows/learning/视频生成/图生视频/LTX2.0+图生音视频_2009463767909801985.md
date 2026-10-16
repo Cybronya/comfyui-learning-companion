@@ -1,0 +1,60 @@
+---
+key: 视频生成/图生视频/LTX2.0+图生音视频_2009463767909801985.json
+name: LTX2.0+图生音视频_2009463767909801985.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2009463767909801985.json
+hash: 9423a9fe95afd97f
+coverage: 0.826087
+learned_at: 2026-10-15 22:34:12
+nodes: [LTXVAudioVAELoader, CheckpointLoaderSimple, CLIPTextEncode, easy cleanGpuUsed, VAEDecode, LTXVAudioVAEDecode, LTXAVTextEncoderLoader, CLIPTextEncode, PainterSamplerLTXV, ManualSigmas, ShowAnything|Mie, VHS_VideoCombine, Note, Note, Note, RH_LLMAPI_Pro_Node, CR Prompt Text, Note, PainterLTXVtoVideo, JWInteger, JWInteger, LoadImage, JWInteger]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2-19b-distilled-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/LTX2.0+图生音视频_2009463767909801985.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2009463767909801985.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（23 个）：
+- `LTXVAudioVAELoader`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `LTXAVTextEncoderLoader`
+- `CLIPTextEncode` ★核心
+- `PainterSamplerLTXV` ★核心
+- `ManualSigmas`
+- `ShowAnything|Mie`
+- `VHS_VideoCombine`
+- `Note`
+- `Note`
+- `Note`
+- `RH_LLMAPI_Pro_Node`
+- `CR Prompt Text`
+- `Note`
+- `PainterLTXVtoVideo`
+- `JWInteger`
+- `JWInteger`
+- `LoadImage`
+- `JWInteger`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2-19b-distilled-fp8.safetensors`
+
+## 知识
+
+覆盖率 **83%**（19/23）
+
+**有卡**：`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`easy cleanGpuUsed`、`VAEDecode`、`LTXVAudioVAEDecode`、`LTXAVTextEncoderLoader`、`PainterSamplerLTXV`、`ManualSigmas`、`ShowAnything|Mie`、`VHS_VideoCombine`、`RH_LLMAPI_Pro_Node`、`CR Prompt Text`、`PainterLTXVtoVideo`、`JWInteger`、`LoadImage`
+
+**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、PainterSamplerLTXV、LTXVAudioVAEDecode、LTXAVTextEncoderLoader、LTXVAudioVAELoader

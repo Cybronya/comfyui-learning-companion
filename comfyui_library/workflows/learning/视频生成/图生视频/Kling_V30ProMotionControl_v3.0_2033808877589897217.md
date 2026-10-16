@@ -1,0 +1,36 @@
+---
+key: 视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json
+name: Kling_V30ProMotionControl_v3.0_2033808877589897217.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2033808877589897217.json
+hash: 5a2d7b87e104ed4e
+coverage: 1
+learned_at: 2026-10-15 22:35:41
+nodes: [SaveVideo, LoadVideo, LoadImage, RH_KlingV30ProMotionControl]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2033808877589897217.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（4 个）：
+- `SaveVideo`
+- `LoadVideo`
+- `LoadImage`
+- `RH_KlingV30ProMotionControl`
+
+## 知识
+
+覆盖率 **100%**（4/4）
+
+**有卡**：`SaveVideo`、`LoadVideo`、`LoadImage`、`RH_KlingV30ProMotionControl`
+
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_KlingV30ProMotionControl、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any

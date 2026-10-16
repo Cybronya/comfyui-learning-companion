@@ -1,0 +1,111 @@
+---
+key: 视频生成/图生视频/角色替换+动作迁移+面部表情 Wan2.2 Animate Sam2_1999438379999690753.json
+name: 角色替换+动作迁移+面部表情 Wan2.2 Animate Sam2_1999438379999690753.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1999438379999690753.json
+hash: 37d74672b69fc698
+coverage: 0.632911
+learned_at: 2026-10-15 22:33:37
+nodes: [Reroute, SimpleMath+, SimpleMath+, SetNode, ImageResizeKJv2, RMBG, PixelPerfectResolution, GetNode, SetNode, easy cleanGpuUsed, ImageCropByMaskAndResize, easy showAnything, RH_Captioner, Text Concatenate, RH_Translator, DownloadAndLoadSAM2Model, Florence2toCoordinates, Sam2Segmentation, DrawMaskOnImage, BlockifyMask, LayerUtility: PurgeVRAM V2, ShowText|pysssss, DWPreprocessor, PrimitiveString, ImageResizeKJ, DownloadAndLoadFlorence2Model, Florence2Run, PrimitiveString, GrowMask, SetNode, SetNode, FaceMaskFromPoseKeypoints, ShowText|pysssss, Text Multiline, WanVideoSLG, Primitive integer [Crystools], GetNode, GetNode, WanVideoDecode, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, GetNode, GetNode, GetNode, WanVideoTeaCache, WanVideoTextEncodeCached, GetNode, GetNode, easy anythingIndexSwitch, easy anythingIndexSwitch, INTConstant, SetNode, SetNode, INTConstant, CLIPVisionLoader, SetNode, SetNode, SimpleMath+, Primitive integer [Crystools], SetNode, WanVideoSetBlockSwap, RHHiddenNodes, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, INTConstant, INTConstant, INTConstant, WanVideoSampler, VHS_LoadVideo, LoadImage, VHS_VideoCombine, Primitive integer [Crystools], WanVideoClipVisionEncode, WanVideoAnimateEmbeds, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/角色替换+动作迁移+面部表情 Wan2.2 Animate Sam2_1999438379999690753.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1999438379999690753.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（79 个）：
+- `Reroute`
+- `SimpleMath+`
+- `SimpleMath+`
+- `SetNode`
+- `ImageResizeKJv2`
+- `RMBG`
+- `PixelPerfectResolution`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `ImageCropByMaskAndResize`
+- `easy showAnything`
+- `RH_Captioner`
+- `Text Concatenate`
+- `RH_Translator`
+- `DownloadAndLoadSAM2Model`
+- `Florence2toCoordinates`
+- `Sam2Segmentation`
+- `DrawMaskOnImage`
+- `BlockifyMask`
+- `LayerUtility: PurgeVRAM V2`
+- `ShowText|pysssss`
+- `DWPreprocessor`
+- `PrimitiveString`
+- `ImageResizeKJ`
+- `DownloadAndLoadFlorence2Model`
+- `Florence2Run`
+- `PrimitiveString`
+- `GrowMask`
+- `SetNode`
+- `SetNode`
+- `FaceMaskFromPoseKeypoints`
+- `ShowText|pysssss`
+- `Text Multiline`
+- `WanVideoSLG`
+- `Primitive integer [Crystools]`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTeaCache`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `GetNode`
+- `easy anythingIndexSwitch`
+- `easy anythingIndexSwitch`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `CLIPVisionLoader`
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `Primitive integer [Crystools]`
+- `SetNode`
+- `WanVideoSetBlockSwap`
+- `RHHiddenNodes`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoSampler` ★核心
+- `VHS_LoadVideo`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `Primitive integer [Crystools]`
+- `WanVideoClipVisionEncode`
+- `WanVideoAnimateEmbeds`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **63%**（50/79）
+
+**有卡**：`SimpleMath+`、`ImageResizeKJv2`、`RMBG`、`PixelPerfectResolution`、`easy cleanGpuUsed`、`ImageCropByMaskAndResize`、`RH_Captioner`、`Text Concatenate`、`RH_Translator`、`DownloadAndLoadSAM2Model`、`Florence2toCoordinates`、`Sam2Segmentation`、`DrawMaskOnImage`、`BlockifyMask`、`LayerUtility: PurgeVRAM V2`、`DWPreprocessor`、`ImageResizeKJ`、`DownloadAndLoadFlorence2Model`、`Florence2Run`、`GrowMask`、`FaceMaskFromPoseKeypoints`、`Text Multiline`、`WanVideoSLG`、`Primitive integer [Crystools]`、`WanVideoDecode`、`WanVideoTeaCache`、`WanVideoTextEncodeCached`、`easy anythingIndexSwitch`、`INTConstant`、`CLIPVisionLoader`、`WanVideoSetBlockSwap`、`RHHiddenNodes`、`WanVideoSampler`、`VHS_LoadVideo`、`LoadImage`、`VHS_VideoCombine`、`WanVideoClipVisionEncode`、`WanVideoAnimateEmbeds`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoClipVisionEncode、WanVideoTextEncodeCached、CLIPVisionLoader、ImageResizeKJ、ImageResizeKJv2

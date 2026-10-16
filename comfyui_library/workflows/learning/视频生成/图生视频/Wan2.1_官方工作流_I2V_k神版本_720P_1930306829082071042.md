@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json
+name: Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1930306829082071042.json
+hash: 8a56b179ba1d95ce
+coverage: 0.68
+learned_at: 2026-10-15 22:30:05
+nodes: [Note, Note, WanVideoBlockSwap, CLIPVisionLoader, Note, WanVideoVAELoader, WanVideoModelLoader, LoadWanVideoT5TextEncoder, Note, ImageResizeKJ, WanVideoClipVisionEncode, WanVideoTextEncode, WanVideoImageToVideoEncode, WanVideoTeaCache, WanVideoEnhanceAVideo, Note, Note, WanVideoTorchCompileSettings, WanVideoVRAMManagement, LoadImage, Note, Note, WanVideoDecode, WanVideoSampler, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1930306829082071042.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（25 个）：
+- `Note`
+- `Note`
+- `WanVideoBlockSwap`
+- `CLIPVisionLoader`
+- `Note`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `Note`
+- `ImageResizeKJ`
+- `WanVideoClipVisionEncode`
+- `WanVideoTextEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoTeaCache`
+- `WanVideoEnhanceAVideo`
+- `Note`
+- `Note`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVRAMManagement`
+- `LoadImage`
+- `Note`
+- `Note`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **68%**（17/25）
+
+**有卡**：`WanVideoBlockSwap`、`CLIPVisionLoader`、`WanVideoVAELoader`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`ImageResizeKJ`、`WanVideoClipVisionEncode`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoTorchCompileSettings`、`WanVideoVRAMManagement`、`LoadImage`、`WanVideoDecode`、`WanVideoSampler`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

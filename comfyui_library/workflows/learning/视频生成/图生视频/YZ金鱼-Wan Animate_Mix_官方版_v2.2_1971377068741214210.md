@@ -1,0 +1,154 @@
+---
+key: 视频生成/图生视频/YZ金鱼-Wan Animate_Mix_官方版_v2.2_1971377068741214210.json
+name: YZ金鱼-Wan Animate_Mix_官方版_v2.2_1971377068741214210.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1971377068741214210.json
+hash: 4de8261398569985
+coverage: 0.445545
+learned_at: 2026-10-15 22:31:56
+nodes: [PrimitiveFloat, PreviewImage, GetNode, GetNode, SetNode, TorchCompileModelWanVideoV2, ModelPatchTorchSettings, PathchSageAttentionKJ, CLIPTextEncode, GetNode, GetNode, CLIPVisionLoader, CLIPVisionEncode, GetNode, GetNode, GetNode, GetNode, PlaySound|pysssss, VHS_VideoCombine, DownloadAndLoadGIMMVFIModel, SetNode, GetNode, GetNode, GIMMVFI_interpolate, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, easy showAnything, EmptyImage, TrimVideoLatent, SetNode, SetNode, ModelSamplingSD3, SetNode, Fast Groups Bypasser (rgthree), ImageResizeKJv2, CLIPLoader, INTConstant, INTConstant, Note, Note, Note, Fast Groups Bypasser (rgthree), VAELoader, Note, GetNode, RemBGSession+, GrowMask, BlockifyMask, GetNode, DrawMaskOnImage, WanAnimateToVideo, Note, GetNode, GetNode, GetNode, VHS_VideoCombine, ImageBlend, MarkdownNote, PoseAndFaceDetection, GetNode, ImageRemoveBackground+, VAEDecode, ImageConcatMulti, ImageConcatMulti, SetNode, SetNode, DrawViTPose, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, OnnxDetectionModelLoader, Note, MarkdownNote, GetNode, Fast Groups Bypasser (rgthree), wanBlockSwap, CLIPTextEncode, KSampler, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, VHS_LoadVideo, LoadImage, SetNode, SetNode, GetNode, easy showAnything, UnetLoaderGGUF, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 9527, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/YZ金鱼-Wan Animate_Mix_官方版_v2.2_1971377068741214210.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1971377068741214210.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（101 个）：
+- `PrimitiveFloat`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `TorchCompileModelWanVideoV2`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PlaySound|pysssss`
+- `VHS_VideoCombine`
+- `DownloadAndLoadGIMMVFIModel`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GIMMVFI_interpolate`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy showAnything`
+- `EmptyImage`
+- `TrimVideoLatent`
+- `SetNode`
+- `SetNode`
+- `ModelSamplingSD3`
+- `SetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `CLIPLoader`
+- `INTConstant`
+- `INTConstant`
+- `Note`
+- `Note`
+- `Note`
+- `Fast Groups Bypasser (rgthree)`
+- `VAELoader`
+- `Note`
+- `GetNode`
+- `RemBGSession+`
+- `GrowMask`
+- `BlockifyMask`
+- `GetNode`
+- `DrawMaskOnImage`
+- `WanAnimateToVideo`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `ImageBlend`
+- `MarkdownNote`
+- `PoseAndFaceDetection`
+- `GetNode`
+- `ImageRemoveBackground+`
+- `VAEDecode` ★核心
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `SetNode`
+- `SetNode`
+- `DrawViTPose`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `OnnxDetectionModelLoader`
+- `Note`
+- `MarkdownNote`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `wanBlockSwap`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VHS_LoadVideo`
+- `LoadImage`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy showAnything`
+- `UnetLoaderGGUF` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `9527`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **45%**（45/101）
+
+**有卡**：`TorchCompileModelWanVideoV2`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`CLIPVisionLoader`、`CLIPVisionEncode`、`PlaySound|pysssss`、`VHS_VideoCombine`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`EmptyImage`、`TrimVideoLatent`、`ModelSamplingSD3`、`ImageResizeKJv2`、`CLIPLoader`、`INTConstant`、`VAELoader`、`RemBGSession+`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`WanAnimateToVideo`、`ImageBlend`、`PoseAndFaceDetection`、`ImageRemoveBackground+`、`VAEDecode`、`ImageConcatMulti`、`DrawViTPose`、`OnnxDetectionModelLoader`、`wanBlockSwap`、`KSampler`、`LoraLoaderModelOnly`、`VHS_LoadVideo`、`LoadImage`、`UnetLoaderGGUF`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、CLIPVisionEncode
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

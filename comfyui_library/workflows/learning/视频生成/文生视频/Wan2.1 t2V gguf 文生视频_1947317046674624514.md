@@ -1,0 +1,56 @@
+---
+key: 视频生成/文生视频/Wan2.1 t2V gguf 文生视频_1947317046674624514.json
+name: Wan2.1 t2V gguf 文生视频_1947317046674624514.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1947317046674624514.json
+hash: c257e090b5d91982
+coverage: 1
+learned_at: 2026-10-15 22:43:31
+nodes: [ModelSamplingSD3, CLIPLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, UnetLoaderGGUF, EmptyHunyuanLatentVideo, SaveAnimatedWEBP, SaveWEBM, KSampler, VAEDecode, VHS_VideoCombine, Note Plus (mtb), LoadImageFromUrl]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 663568717343463, "steps": 20}
+---
+
+# 视频生成/文生视频/Wan2.1 t2V gguf 文生视频_1947317046674624514.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1947317046674624514.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（14 个）：
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `UnetLoaderGGUF` ★核心
+- `EmptyHunyuanLatentVideo`
+- `SaveAnimatedWEBP`
+- `SaveWEBM`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `Note Plus (mtb)`
+- `LoadImageFromUrl`
+
+## 关键参数
+
+- `seed` = `663568717343463`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（14/14）
+
+**有卡**：`ModelSamplingSD3`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`UnetLoaderGGUF`、`EmptyHunyuanLatentVideo`、`SaveAnimatedWEBP`、`SaveWEBM`、`KSampler`、`VAEDecode`、`VHS_VideoCombine`、`Note Plus (mtb)`、`LoadImageFromUrl`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、EmptyHunyuanLatentVideo、SaveAnimatedWEBP、SaveWEBM

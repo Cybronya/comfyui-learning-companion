@@ -1,0 +1,164 @@
+---
+key: 视频生成/图生视频/Wan2.2-S2V自制高质量多人音频驱动视频_1964273928371884034.json
+name: Wan2.2-S2V自制高质量多人音频驱动视频_1964273928371884034.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1964273928371884034.json
+hash: 484d060ce02f36b7
+coverage: 0.651515
+learned_at: 2026-10-15 22:31:34
+nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, easy cleanGpuUsed, WanVideoModelLoader, WanVideoVAELoader, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, VHS_VideoInfoLoaded, MelBandRoFormerModelLoader, AudioEncoderLoader, GetNode, WanVideoDecode, easy cleanGpuUsed, GetNode, AudioEncoderEncode, easy clearCacheAll, SetNode, WanVideoSampler, SetNode, WanVideoLoraSelect, GetNode, WanVideoContextOptions, easy cleanGpuUsed, GetNode, SetNode, SetNode, easy cleanGpuUsed, easy clearCacheAll, UnloadAllModels, Fast Groups Bypasser (rgthree), MelBandRoFormerSampler, GIMMVFI_interpolate, GetNode, WanVideoTextEncodeCached, ImageResizeKJv2, SetNode, ImageResizeKJv2, SetNode, WanVideoAddS2VEmbeds, MelBandRoFormerModelLoader, AudioEncoderLoader, AudioEncoderEncode, MelBandRoFormerSampler, GetNode, GetNode, WanVideoAddS2VEmbeds, DWPreprocessor, WanVideoSampler, ImageResizeKJv2, WanVideoDecode, GetNode, easy cleanGpuUsed, WanVideoEmptyEmbeds, SetNode, GetNode, WanVideoEncode, SetNode, GetNode, WanVideoEncode, SetNode, GetNode, GetNode, WanVideoContextOptions, GetNode, GetNode, GetNode, GetNode, ImageCompositeMasked, MaskBoundingBox+, MaskToImage, VHS_VideoCombine, GrowMaskWithBlur, DownloadAndLoadFlorence2Model, GrowMask, VHS_VideoCombine, GetImagesFromBatchIndexed, BBoxesToSAM2, ImageCrop, QwenVLDetection, DownloadAndLoadQwenModel, LayerMask: SAM2VideoUltra, easy clearCacheAll, easy clearCacheAll, DownloadAndLoadGIMMVFIModel, GetNode, GetNode, GetNode, SetNode, BBoxesToSAM2, DownloadAndLoadQwenModel, MaskToImage, GrowMaskWithBlur, GetNode, SetNode, SetNode, VHS_VideoCombine, LayerMask: SAM2VideoUltra, easy clearCacheAll, LoadImage, LoadAudio, LoadAudio, VHS_VideoCombine, VHS_VideoCombine, Text Multiline, QwenVLDetection, VHS_LoadVideoFFmpegPath, VHS_LoadVideoFFmpegPath, VHS_LoadVideo, SeargeIntegerConstant, SeargeIntegerConstant, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, Primitive string multiline [Crystools], VHS_VideoCombine, PreviewImage, Florence2Run, GetImagesFromBatchIndexed, VHS_VideoCombine, LoadAudio, Reroute, Reroute, VHS_LoadVideoFFmpegPath, ImageCompositeMasked, Reroute]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2-S2V自制高质量多人音频驱动视频_1964273928371884034.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1964273928371884034.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（132 个）：
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `easy cleanGpuUsed`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfoLoaded`
+- `MelBandRoFormerModelLoader`
+- `AudioEncoderLoader`
+- `GetNode`
+- `WanVideoDecode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `AudioEncoderEncode`
+- `easy clearCacheAll`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `SetNode`
+- `WanVideoLoraSelect`
+- `GetNode`
+- `WanVideoContextOptions`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `UnloadAllModels`
+- `Fast Groups Bypasser (rgthree)`
+- `MelBandRoFormerSampler` ★核心
+- `GIMMVFI_interpolate`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `ImageResizeKJv2`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `WanVideoAddS2VEmbeds`
+- `MelBandRoFormerModelLoader`
+- `AudioEncoderLoader`
+- `AudioEncoderEncode`
+- `MelBandRoFormerSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `WanVideoAddS2VEmbeds`
+- `DWPreprocessor`
+- `WanVideoSampler` ★核心
+- `ImageResizeKJv2`
+- `WanVideoDecode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `WanVideoEmptyEmbeds`
+- `SetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `SetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoContextOptions`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageCompositeMasked`
+- `MaskBoundingBox+`
+- `MaskToImage`
+- `VHS_VideoCombine`
+- `GrowMaskWithBlur`
+- `DownloadAndLoadFlorence2Model`
+- `GrowMask`
+- `VHS_VideoCombine`
+- `GetImagesFromBatchIndexed`
+- `BBoxesToSAM2`
+- `ImageCrop`
+- `QwenVLDetection`
+- `DownloadAndLoadQwenModel`
+- `LayerMask: SAM2VideoUltra`
+- `easy clearCacheAll`
+- `easy clearCacheAll`
+- `DownloadAndLoadGIMMVFIModel`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `BBoxesToSAM2`
+- `DownloadAndLoadQwenModel`
+- `MaskToImage`
+- `GrowMaskWithBlur`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `LayerMask: SAM2VideoUltra`
+- `easy clearCacheAll`
+- `LoadImage`
+- `LoadAudio`
+- `LoadAudio`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Text Multiline`
+- `QwenVLDetection`
+- `VHS_LoadVideoFFmpegPath`
+- `VHS_LoadVideoFFmpegPath`
+- `VHS_LoadVideo`
+- `SeargeIntegerConstant`
+- `SeargeIntegerConstant`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Primitive string multiline [Crystools]`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `Florence2Run`
+- `GetImagesFromBatchIndexed`
+- `VHS_VideoCombine`
+- `LoadAudio`
+- `Reroute`
+- `Reroute`
+- `VHS_LoadVideoFFmpegPath`
+- `ImageCompositeMasked`
+- `Reroute`
+
+## 知识
+
+覆盖率 **65%**（86/132）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`easy cleanGpuUsed`、`WanVideoModelLoader`、`WanVideoVAELoader`、`VHS_VideoInfoLoaded`、`MelBandRoFormerModelLoader`、`AudioEncoderLoader`、`WanVideoDecode`、`AudioEncoderEncode`、`easy clearCacheAll`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoContextOptions`、`UnloadAllModels`、`MelBandRoFormerSampler`、`GIMMVFI_interpolate`、`WanVideoTextEncodeCached`、`ImageResizeKJv2`、`WanVideoAddS2VEmbeds`、`DWPreprocessor`、`WanVideoEmptyEmbeds`、`WanVideoEncode`、`ImageCompositeMasked`、`MaskBoundingBox+`、`MaskToImage`、`VHS_VideoCombine`、`GrowMaskWithBlur`、`DownloadAndLoadFlorence2Model`、`GrowMask`、`GetImagesFromBatchIndexed`、`BBoxesToSAM2`、`ImageCrop`、`QwenVLDetection`、`DownloadAndLoadQwenModel`、`LayerMask: SAM2VideoUltra`、`DownloadAndLoadGIMMVFIModel`、`LoadImage`、`LoadAudio`、`Text Multiline`、`VHS_LoadVideoFFmpegPath`、`VHS_LoadVideo`、`SeargeIntegerConstant`、`Primitive string multiline [Crystools]`、`Florence2Run`
+
+**用到的条目**：LoadImage、WanVideoSampler、MelBandRoFormerSampler、AudioEncoderLoader、WanVideoDecode、WanVideoVAELoader、AudioEncoderEncode、WanVideoTextEncodeCached

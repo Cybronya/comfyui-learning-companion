@@ -1,0 +1,62 @@
+---
+key: 视频生成/图生视频/Qwen-VL图片反推-图生视频-kj工作流-wan2.2_1983525120713138178.json
+name: Qwen-VL图片反推-图生视频-kj工作流-wan2.2_1983525120713138178.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1983525120713138178.json
+hash: b4dfdc653e1a2960
+coverage: 0.933333
+learned_at: 2026-10-15 22:32:45
+nodes: [WanVideoDecode, MarkdownNote, WanVideoTextEncode, Int, WanVideoSampler, MultiplePathsInput, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoModelLoader, Qwen3_VQA, WanVideoSampler, WanVideoVAELoader, WanVideoImageToVideoEncode, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, ImageLoader, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, VHS_VideoCombine, Int, Int, easy showAnything]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Qwen-VL图片反推-图生视频-kj工作流-wan2.2_1983525120713138178.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1983525120713138178.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（30 个）：
+- `WanVideoDecode`
+- `MarkdownNote`
+- `WanVideoTextEncode`
+- `Int`
+- `WanVideoSampler` ★核心
+- `MultiplePathsInput`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `Qwen3_VQA`
+- `WanVideoSampler` ★核心
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SimpleMath+`
+- `ImageLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `VHS_VideoCombine`
+- `Int`
+- `Int`
+- `easy showAnything`
+
+## 知识
+
+覆盖率 **93%**（28/30）
+
+**有卡**：`WanVideoDecode`、`WanVideoTextEncode`、`Int`、`WanVideoSampler`、`MultiplePathsInput`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`Qwen3_VQA`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`ImageLoader`、`WanVideoLoraSelect`、`VHS_VideoCombine`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoLoraSelect、WanVideoSetLoRAs

@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json
+name: Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1988236119332536321.json
+hash: 308f0610605fce57
+coverage: 0.913043
+learned_at: 2026-10-15 22:33:02
+nodes: [Note, Note, PathchSageAttentionKJ, ModelSamplingSD3, PathchSageAttentionKJ, ModelSamplingSD3, CLIPVisionEncode, KSamplerAdvanced, VAEDecode, easy cleanGpuUsed, PainterI2V, KSamplerAdvanced, CLIPTextEncode, CLIPTextEncode, VHS_VideoCombine, UNETLoader, UNETLoader, CLIPLoader, CLIPVisionLoader, LoadImage, WanImageToVideo, ImageResizeKJv2, VAELoader]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1988236119332536321.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（23 个）：
+- `Note`
+- `Note`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `CLIPVisionEncode`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `PainterI2V`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `LoadImage`
+- `WanImageToVideo`
+- `ImageResizeKJv2`
+- `VAELoader`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **91%**（21/23）
+
+**有卡**：`PathchSageAttentionKJ`、`ModelSamplingSD3`、`CLIPVisionEncode`、`KSamplerAdvanced`、`VAEDecode`、`easy cleanGpuUsed`、`PainterI2V`、`CLIPTextEncode`、`VHS_VideoCombine`、`UNETLoader`、`CLIPLoader`、`CLIPVisionLoader`、`LoadImage`、`WanImageToVideo`、`ImageResizeKJv2`、`VAELoader`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode

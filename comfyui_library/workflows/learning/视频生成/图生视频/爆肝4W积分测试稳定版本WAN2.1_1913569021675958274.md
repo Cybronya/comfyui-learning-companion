@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/爆肝4W积分测试稳定版本WAN2.1_1913569021675958274.json
+name: 爆肝4W积分测试稳定版本WAN2.1_1913569021675958274.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1913569021675958274.json
+hash: 622d84ace30983f2
+coverage: 0.84
+learned_at: 2026-10-15 22:29:34
+nodes: [RH_Translator, CR Text Concatenate, LoadImage, LayerUtility: ImageScaleByAspectRatio, Note, UnetLoaderGGUF, CLIPLoader, CLIPVisionEncode, WanVideoTeaCacheKJ, CLIPTextEncode, CLIPTextEncode, Get resolution [Crystools], CLIPVisionLoader, VAELoader, WanImageToVideo, WanVideoEnhanceAVideoKJ, WanVideoKsampler, LayerUtility: PurgeVRAM, VAEDecode, VHS_VideoCombine, Note, RH_Captioner, PreviewImage, easy showAnything, StringConstantMultiline]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/爆肝4W积分测试稳定版本WAN2.1_1913569021675958274.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1913569021675958274.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（25 个）：
+- `RH_Translator`
+- `CR Text Concatenate`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio`
+- `Note`
+- `UnetLoaderGGUF` ★核心
+- `CLIPLoader`
+- `CLIPVisionEncode`
+- `WanVideoTeaCacheKJ`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Get resolution [Crystools]`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `WanImageToVideo`
+- `WanVideoEnhanceAVideoKJ`
+- `WanVideoKsampler` ★核心
+- `LayerUtility: PurgeVRAM`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `Note`
+- `RH_Captioner`
+- `PreviewImage`
+- `easy showAnything`
+- `StringConstantMultiline`
+
+## 知识
+
+覆盖率 **84%**（21/25）
+
+**有卡**：`RH_Translator`、`CR Text Concatenate`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio`、`UnetLoaderGGUF`、`CLIPLoader`、`CLIPVisionEncode`、`WanVideoTeaCacheKJ`、`CLIPTextEncode`、`Get resolution [Crystools]`、`CLIPVisionLoader`、`VAELoader`、`WanImageToVideo`、`WanVideoEnhanceAVideoKJ`、`WanVideoKsampler`、`LayerUtility: PurgeVRAM`、`VAEDecode`、`VHS_VideoCombine`、`RH_Captioner`、`StringConstantMultiline`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、WanVideoKsampler、CLIPVisionEncode、CLIPVisionLoader

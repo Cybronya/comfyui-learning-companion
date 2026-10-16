@@ -1,0 +1,63 @@
+---
+key: 视频生成/文生视频/wan2.2 WanMoeKsampler 文生视频_1955652862984556545.json
+name: wan2.2 WanMoeKsampler 文生视频_1955652862984556545.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1955652862984556545.json
+hash: 4155185f130ffd86
+coverage: 1
+learned_at: 2026-10-15 22:43:40
+nodes: [UNETLoader, UNETLoader, ModelSamplingSD3, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, PathchSageAttentionKJ, EmptyHunyuanLatentVideo, ModelSamplingSD3, VAELoader, JWInteger, JWInteger, JWInteger, CLIPTextEncode, CLIPLoader, CLIPTextEncode, VHS_VideoCombine, VAEDecode, LoraLoaderModelOnly, WanMoeKSampler, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"cfg": 10, "denoise": "euler", "sampler_name": 3, "scheduler": 1, "seed": 0.875, "steps": "randomize"}
+---
+
+# 视频生成/文生视频/wan2.2 WanMoeKsampler 文生视频_1955652862984556545.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1955652862984556545.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（21 个）：
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `EmptyHunyuanLatentVideo`
+- `ModelSamplingSD3`
+- `VAELoader`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `WanMoeKSampler` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `seed` = `0.875`
+- `steps` = `randomize`
+- `cfg` = `10`
+- `sampler_name` = `3`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **100%**（21/21）
+
+**有卡**：`UNETLoader`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`EmptyHunyuanLatentVideo`、`VAELoader`、`JWInteger`、`CLIPTextEncode`、`CLIPLoader`、`VHS_VideoCombine`、`VAEDecode`、`WanMoeKSampler`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、WanMoeKSampler、EmptyHunyuanLatentVideo

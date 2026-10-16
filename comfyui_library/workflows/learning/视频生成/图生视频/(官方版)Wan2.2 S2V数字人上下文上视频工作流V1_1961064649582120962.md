@@ -1,0 +1,89 @@
+---
+key: 视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json
+name: (官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1961064649582120962.json
+hash: d2b593853ebacc04
+coverage: 0.833333
+learned_at: 2026-10-15 22:31:27
+nodes: [CLIPTextEncode, AudioEncoderEncode, AudioEncoderLoader, CR Float To Integer, PathchSageAttentionKJ, wanBlockSwap, UNETLoader, CLIPLoader, LoraLoaderModelOnly, VAELoader, LoadImage, LoadAudio, PreviewAudio, SimpleMath+, WanSoundImageToVideo, VHS_LoadVideo, ModelSamplingSD3, LayerUtility: ImageScaleByAspectRatio V2, JWFloat, ContextWindowsManual, JWInteger, CLIPTextEncode, PreviewImage, CR Prompt Text, Note, Note, Note, Note, Note, VAEDecode, KSampler, AudioCropProcessUTK, ImageFromBatch+, VHS_VideoCombine, VHS_VideoCombine, SaveLatent]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 1736, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/(官方版)Wan2.2 S2V数字人上下文上视频工作流V1_1961064649582120962.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1961064649582120962.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（36 个）：
+- `CLIPTextEncode` ★核心
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `CR Float To Integer`
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `LoadImage`
+- `LoadAudio`
+- `PreviewAudio`
+- `SimpleMath+`
+- `WanSoundImageToVideo`
+- `VHS_LoadVideo`
+- `ModelSamplingSD3`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWFloat`
+- `ContextWindowsManual`
+- `JWInteger`
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `CR Prompt Text`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `AudioCropProcessUTK`
+- `ImageFromBatch+`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SaveLatent`
+
+## 关键参数
+
+- `seed` = `1736`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **83%**（30/36）
+
+**有卡**：`CLIPTextEncode`、`AudioEncoderEncode`、`AudioEncoderLoader`、`CR Float To Integer`、`PathchSageAttentionKJ`、`wanBlockSwap`、`UNETLoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`VAELoader`、`LoadImage`、`LoadAudio`、`PreviewAudio`、`SimpleMath+`、`WanSoundImageToVideo`、`VHS_LoadVideo`、`ModelSamplingSD3`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWFloat`、`ContextWindowsManual`、`JWInteger`、`CR Prompt Text`、`VAEDecode`、`KSampler`、`AudioCropProcessUTK`、`ImageFromBatch+`、`VHS_VideoCombine`、`SaveLatent`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

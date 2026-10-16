@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/刚开源的wan2.2-14B 官方图生视频+自动提示词_1950111733920784385.json
+name: 刚开源的wan2.2-14B 官方图生视频+自动提示词_1950111733920784385.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950111733920784385.json
+hash: 16f1577f0f5d9f05
+coverage: 0.885714
+learned_at: 2026-10-15 22:30:53
+nodes: [easy showAnything, easy ifElse, TextBox, LayerUtility: PurgeVRAM, CLIPLoader, CLIPTextEncode, CLIPTextEncode, CLIPVisionEncode, SimpleMath+, WanImageToVideo, ModelSamplingSD3, KSamplerAdvanced, ModelSamplingSD3, KSamplerAdvanced, VAEDecode, VHS_VideoCombine, CLIPVisionLoader, easy cleanGpuUsed, easy showAnything, CR Text Replace, RH_Captioner, VAELoader, PrimitiveBoolean, Note, LayerUtility: ImageScaleByAspectRatio V2, UNETLoader, UNETLoader, TorchCompileModelWanVideoV2, PatchModelPatcherOrder, PathchSageAttentionKJ, TextBox, LoadImage, TextBox, DF_Integer, easy int]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/刚开源的wan2.2-14B 官方图生视频+自动提示词_1950111733920784385.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950111733920784385.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（35 个）：
+- `easy showAnything`
+- `easy ifElse`
+- `TextBox`
+- `LayerUtility: PurgeVRAM`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `SimpleMath+`
+- `WanImageToVideo`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `CLIPVisionLoader`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `CR Text Replace`
+- `RH_Captioner`
+- `VAELoader`
+- `PrimitiveBoolean`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `TorchCompileModelWanVideoV2`
+- `PatchModelPatcherOrder`
+- `PathchSageAttentionKJ`
+- `TextBox`
+- `LoadImage`
+- `TextBox`
+- `DF_Integer`
+- `easy int`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **89%**（31/35）
+
+**有卡**：`TextBox`、`LayerUtility: PurgeVRAM`、`CLIPLoader`、`CLIPTextEncode`、`CLIPVisionEncode`、`SimpleMath+`、`WanImageToVideo`、`ModelSamplingSD3`、`KSamplerAdvanced`、`VAEDecode`、`VHS_VideoCombine`、`CLIPVisionLoader`、`easy cleanGpuUsed`、`CR Text Replace`、`RH_Captioner`、`VAELoader`、`PrimitiveBoolean`、`LayerUtility: ImageScaleByAspectRatio V2`、`UNETLoader`、`TorchCompileModelWanVideoV2`、`PatchModelPatcherOrder`、`PathchSageAttentionKJ`、`LoadImage`、`DF_Integer`、`easy int`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CLIPVisionEncode

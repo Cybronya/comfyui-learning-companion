@@ -1,0 +1,154 @@
+---
+key: 视频生成/图生视频/很棒的LongCat 1.5数字人动态加强稳定-单次10s音频版_2060335881759838210.json
+name: 很棒的LongCat 1.5数字人动态加强稳定-单次10s音频版_2060335881759838210.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2060335881759838210.json
+hash: 38a20a5b9cbad2fa
+coverage: 0.459016
+learned_at: 2026-10-15 22:38:47
+nodes: [WanVideoBlockSwap, CR Prompt List, easy showAnything, easy showAnything, easy showAnything, WanVideoTextEncodeCached, CR Prompt List, GetNode, GetNode, SetNode, GetNode, GetNode, WanVideoSamplerv2, GetNode, GetNode, Reroute, WanVideoLongCatAvatarExtendEmbeds, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoEncode, GetImageRangeFromBatch, GetNode, ReplaceVideoLatentFrames, WanVideoLongCatAvatarExtendEmbeds, GetNode, ImageBatchExtendWithOverlap, GetNode, SetNode, SetNode, INTConstant, Reroute, GetNode, GetImageSizeAndCount, WanVideoDecode, WanVideoDecode, WujiCleaner, WanVideoSamplerv2, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoLongCatAvatarExtendEmbeds, GetNode, GetNode, GetNode, WanVideoSamplerv2, WanVideoEncode, GetNode, GetImageRangeFromBatch, ReplaceVideoLatentFrames, WanVideoDecode, GetNode, WujiCleaner, Reroute, Reroute, Reroute, Reroute, GetImageSizeAndCount, Reroute, ProcessString, CR Prompt Text, CR Text Replace, RH_LLMAPI_Pro_Node, WanVideoTextEncodeCached, WanVideoTextEncodeCached, WanVideoEncode, GetNode, SetNode, WanVideoSchedulerv2, SetNode, SetNode, LongCatAvatarWhisperEmbeds, ComfyMathExpression, GetNode, TrimAudioDuration, GetNode, SetNode, PreviewAny, ComfyNumberConvert, GetNode, WhisperModelLoader, Reroute, Reroute, Reroute, Reroute, CR Prompt List, SetNode, SetNode, SetNode, GetNode, LoadAudio, GetNode, SetNode, INTConstant, PreviewAudio, SetNode, Float, INTConstant, SetNode, FloatConstant, LayerUtility: ImageScaleByAspectRatio V2, 孤海注释, ImageBatchExtendWithOverlap, SetNode, VHS_VideoCombine, GetNode, VHS_VideoCombine, WanVideoModelLoader, WanVideoLoraSelect, GetNode, GetNode, LoadImage, CR Prompt Text, SetNode, WanVideoVAELoader, easy showAnything, Float]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/很棒的LongCat 1.5数字人动态加强稳定-单次10s音频版_2060335881759838210.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2060335881759838210.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（122 个）：
+- `WanVideoBlockSwap`
+- `CR Prompt List`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `WanVideoTextEncodeCached`
+- `CR Prompt List`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSamplerv2` ★核心
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoEncode`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `ReplaceVideoLatentFrames`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `GetNode`
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `Reroute`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `WanVideoDecode`
+- `WanVideoDecode`
+- `WujiCleaner`
+- `WanVideoSamplerv2` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoLongCatAvatarExtendEmbeds`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSamplerv2` ★核心
+- `WanVideoEncode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `ReplaceVideoLatentFrames`
+- `WanVideoDecode`
+- `GetNode`
+- `WujiCleaner`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `GetImageSizeAndCount`
+- `Reroute`
+- `ProcessString`
+- `CR Prompt Text`
+- `CR Text Replace`
+- `RH_LLMAPI_Pro_Node`
+- `WanVideoTextEncodeCached`
+- `WanVideoTextEncodeCached`
+- `WanVideoEncode`
+- `GetNode`
+- `SetNode`
+- `WanVideoSchedulerv2`
+- `SetNode`
+- `SetNode`
+- `LongCatAvatarWhisperEmbeds`
+- `ComfyMathExpression`
+- `GetNode`
+- `TrimAudioDuration`
+- `GetNode`
+- `SetNode`
+- `PreviewAny`
+- `ComfyNumberConvert`
+- `GetNode`
+- `WhisperModelLoader`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CR Prompt List`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `LoadAudio`
+- `GetNode`
+- `SetNode`
+- `INTConstant`
+- `PreviewAudio`
+- `SetNode`
+- `Float`
+- `INTConstant`
+- `SetNode`
+- `FloatConstant`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `孤海注释`
+- `ImageBatchExtendWithOverlap`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `CR Prompt Text`
+- `SetNode`
+- `WanVideoVAELoader`
+- `easy showAnything`
+- `Float`
+
+## 知识
+
+覆盖率 **46%**（56/122）
+
+**有卡**：`WanVideoBlockSwap`、`CR Prompt List`、`WanVideoTextEncodeCached`、`WanVideoSamplerv2`、`WanVideoLongCatAvatarExtendEmbeds`、`VHS_VideoCombine`、`WanVideoEncode`、`GetImageRangeFromBatch`、`ReplaceVideoLatentFrames`、`ImageBatchExtendWithOverlap`、`INTConstant`、`GetImageSizeAndCount`、`WanVideoDecode`、`WujiCleaner`、`ProcessString`、`CR Prompt Text`、`CR Text Replace`、`RH_LLMAPI_Pro_Node`、`WanVideoSchedulerv2`、`LongCatAvatarWhisperEmbeds`、`ComfyMathExpression`、`TrimAudioDuration`、`ComfyNumberConvert`、`WhisperModelLoader`、`LoadAudio`、`PreviewAudio`、`Float`、`FloatConstant`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`LoadImage`、`WanVideoVAELoader`
+
+**用到的条目**：LoadImage、WanVideoSamplerv2、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoEncode、ReplaceVideoLatentFrames、WanVideoLoraSelect

@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/Wan2.1图生视频512_1896189359580381186.json
+name: Wan2.1图生视频512_1896189359580381186.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1896189359580381186.json
+hash: 3314a1953828732d
+coverage: 0.913043
+learned_at: 2026-10-15 22:29:18
+nodes: [String Replace (mtb), String Replace (mtb), String Replace (mtb), Florence2Run, ShowText|pysssss, CR Text, CR Text Concatenate, DownloadAndLoadFlorence2Model, KSampler, CLIPTextEncode, CLIPTextEncode, PreviewImage, CLIPVisionEncode, String Replace (mtb), CLIPVisionLoader, CLIPLoader, LoadImage, VHS_VideoCombine, VAEDecode, WanImageToVideo, ImageScale, VAELoader, UNETLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 720160467432798, "steps": 20}
+---
+
+# 视频生成/图生视频/Wan2.1图生视频512_1896189359580381186.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1896189359580381186.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（23 个）：
+- `String Replace (mtb)`
+- `String Replace (mtb)`
+- `String Replace (mtb)`
+- `Florence2Run`
+- `ShowText|pysssss`
+- `CR Text`
+- `CR Text Concatenate`
+- `DownloadAndLoadFlorence2Model`
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `CLIPVisionEncode`
+- `String Replace (mtb)`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `ImageScale`
+- `VAELoader`
+- `UNETLoader` ★核心
+
+## 关键参数
+
+- `seed` = `720160467432798`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **91%**（21/23）
+
+**有卡**：`String Replace (mtb)`、`Florence2Run`、`CR Text`、`CR Text Concatenate`、`DownloadAndLoadFlorence2Model`、`KSampler`、`CLIPTextEncode`、`CLIPVisionEncode`、`CLIPVisionLoader`、`CLIPLoader`、`LoadImage`、`VHS_VideoCombine`、`VAEDecode`、`WanImageToVideo`、`ImageScale`、`VAELoader`、`UNETLoader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CLIPVisionEncode

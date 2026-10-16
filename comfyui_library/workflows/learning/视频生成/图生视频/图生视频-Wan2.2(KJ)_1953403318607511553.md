@@ -1,0 +1,84 @@
+---
+key: 视频生成/图生视频/图生视频-Wan2.2(KJ)_1953403318607511553.json
+name: 图生视频-Wan2.2(KJ)_1953403318607511553.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1953403318607511553.json
+hash: bf67f1503344afae
+coverage: 0.5
+learned_at: 2026-10-15 22:31:05
+nodes: [Int, Int, WanVideoTorchCompileSettings, VHS_VideoCombine, WanVideoDecode, GetNode, GetNode, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, GetNode, SetNode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, SetNode, SetNode, SetNode, WanVideoApplyNAG, WanVideoTextEncodeSingle, GetNode, easy negative, WanVideoTextEncode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, WanVideoSampler, WanVideoSampler, easy positive, WanVideoLoraSelect, WanVideoModelLoader, LoadWanVideoClipTextEncoder, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoModelLoader, WanVideoSetBlockSwap, SetNode, SetNode, WanVideoBlockSwap, PrimitiveInt, GetNode, GetNode, ImpactSwitch, PrimitiveInt, PrimitiveInt, ImpactSwitch, SetNode, SetNode, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/图生视频-Wan2.2(KJ)_1953403318607511553.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1953403318607511553.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（52 个）：
+- `Int`
+- `Int`
+- `WanVideoTorchCompileSettings`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `GetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoApplyNAG`
+- `WanVideoTextEncodeSingle`
+- `GetNode`
+- `easy negative`
+- `WanVideoTextEncode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `easy positive`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `SetNode`
+- `WanVideoBlockSwap`
+- `PrimitiveInt`
+- `GetNode`
+- `GetNode`
+- `ImpactSwitch`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ImpactSwitch`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **50%**（26/52）
+
+**有卡**：`Int`、`WanVideoTorchCompileSettings`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoApplyNAG`、`WanVideoTextEncodeSingle`、`easy negative`、`WanVideoTextEncode`、`WanVideoSampler`、`easy positive`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`LoadWanVideoClipTextEncoder`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

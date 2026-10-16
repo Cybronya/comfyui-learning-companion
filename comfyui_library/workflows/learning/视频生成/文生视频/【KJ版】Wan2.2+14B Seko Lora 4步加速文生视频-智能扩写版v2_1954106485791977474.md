@@ -1,0 +1,74 @@
+---
+key: 视频生成/文生视频/【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1954106485791977474.json
+name: 【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1954106485791977474.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1954106485791977474.json
+hash: c5af906c553c57b0
+coverage: 0.738095
+learned_at: 2026-10-15 22:43:39
+nodes: [JWInteger, JWInteger, JWInteger, WanVideoModelLoader, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoTorchCompileSettings, SetNode, SetNode, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, GetNode, GetNode, MathExpression|pysssss, GetNode, MathExpression|pysssss, GetNode, WanVideoTextEncode, Text Concatenate, Wan22PromptSelector, ImpactSwitch, WanVideoEmptyEmbeds, WanVideoVAELoader, SetNode, SetNode, easy showAnything, WanVideoLoraSelect, Primitive integer [Crystools], WanVideoDecode, FloatToSigmas, Note, StringToFloatList, WanVideoLoraSelect, WanVideoSampler, WanVideoSampler, JWInteger, CR Text, VHS_VideoCombine, RH_LLMAPI_NODE]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1954106485791977474.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1954106485791977474.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Other
+
+**节点**（42 个）：
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `SetNode`
+- `SetNode`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `GetNode`
+- `GetNode`
+- `MathExpression|pysssss`
+- `GetNode`
+- `MathExpression|pysssss`
+- `GetNode`
+- `WanVideoTextEncode`
+- `Text Concatenate`
+- `Wan22PromptSelector`
+- `ImpactSwitch`
+- `WanVideoEmptyEmbeds`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `easy showAnything`
+- `WanVideoLoraSelect`
+- `Primitive integer [Crystools]`
+- `WanVideoDecode`
+- `FloatToSigmas`
+- `Note`
+- `StringToFloatList`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `JWInteger`
+- `CR Text`
+- `VHS_VideoCombine`
+- `RH_LLMAPI_NODE`
+
+## 知识
+
+覆盖率 **74%**（31/42）
+
+**有卡**：`JWInteger`、`WanVideoModelLoader`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`MathExpression|pysssss`、`WanVideoTextEncode`、`Text Concatenate`、`Wan22PromptSelector`、`WanVideoEmptyEmbeds`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`Primitive integer [Crystools]`、`WanVideoDecode`、`FloatToSigmas`、`StringToFloatList`、`WanVideoSampler`、`CR Text`、`VHS_VideoCombine`、`RH_LLMAPI_NODE`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs、Wan22PromptSelector

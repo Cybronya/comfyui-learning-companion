@@ -1,0 +1,37 @@
+---
+key: 视频生成/图生视频/Seedance2.0 Fast全能图生视频_2039887389845364738.json
+name: Seedance2.0 Fast全能图生视频_2039887389845364738.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039887389845364738.json
+hash: 282e2719e0332127
+coverage: 1
+learned_at: 2026-10-15 22:36:12
+nodes: [LoadImage, SaveVideo, RH_RhartVideoSparkvideo20FastMultimodalVideo, Textbox, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance2.0 Fast全能图生视频_2039887389845364738.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039887389845364738.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（5 个）：
+- `LoadImage`
+- `SaveVideo`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+- `Textbox`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（5/5）
+
+**有卡**：`LoadImage`、`SaveVideo`、`RH_RhartVideoSparkvideo20FastMultimodalVideo`、`Textbox`
+
+**用到的条目**：LoadImage、SaveVideo、Textbox、TextBox、TextBox、RH_RhartVideoSparkvideo20FastMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora

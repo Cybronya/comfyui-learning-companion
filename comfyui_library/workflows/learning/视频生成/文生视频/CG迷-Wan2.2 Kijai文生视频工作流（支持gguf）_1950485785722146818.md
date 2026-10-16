@@ -1,0 +1,54 @@
+---
+key: 视频生成/文生视频/CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_1950485785722146818.json
+name: CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_1950485785722146818.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950485785722146818.json
+hash: f187aa76134971f8
+coverage: 0.954545
+learned_at: 2026-10-15 22:43:36
+nodes: [WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, VHS_VideoCombine, WanVideoBlockSwap, WanVideoDecode, GetImageSizeAndCount, INTConstant, INTConstant, CreateCFGScheduleFloatList, MarkdownNote, WanVideoLoraSelect, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoSampler, WanVideoSampler, WanVideoEmptyEmbeds, WanVideoModelLoader, WanVideoModelLoader, WanVideoTextEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_1950485785722146818.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950485785722146818.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（22 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `INTConstant`
+- `CreateCFGScheduleFloatList`
+- `MarkdownNote`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoEmptyEmbeds`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+
+## 知识
+
+覆盖率 **95%**（21/22）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`WanVideoDecode`、`GetImageSizeAndCount`、`INTConstant`、`CreateCFGScheduleFloatList`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoEmptyEmbeds`、`WanVideoModelLoader`、`WanVideoTextEncode`
+
+**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs

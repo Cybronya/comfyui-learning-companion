@@ -1,0 +1,82 @@
+---
+key: 视频生成/图生视频/Wan2.2+MultiTlak+Vace控制单人数字人极速版V1（简化版）_1955490259800920066.json
+name: Wan2.2+MultiTlak+Vace控制单人数字人极速版V1（简化版）_1955490259800920066.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1955490259800920066.json
+hash: f1adf15abd863d4f
+coverage: 0.82
+learned_at: 2026-10-15 22:31:08
+nodes: [ImageConcatMulti, DownloadAndLoadWav2VecModel, WanVideoExperimentalArgs, ImageConcatMulti, MultiTalkWav2VecEmbeds, WanVideoVACEModelSelect, WanVideoSampler, WanVideoBlockSwap, Audio Duration (mtb), easy showAnything, VHS_VideoInfo, MathExpression|pysssss, WanVideoModelLoader, WanVideoVAELoader, GetImageSizeAndCount, PreviewImage, DWPreprocessor, PreviewImage, MultiTalkModelLoader, GetImageSizeAndCount, WanVideoDecode, ImageResizeKJv2, WanVideoLoraSelect, WanVideoVACEStartToEndFrame, WanVideoTextEncode, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, LoadWanVideoT5TextEncoder, WanVideoSLG, AddLabel, AddLabel, EmptyImage, VHS_VideoCombine, VHS_VideoCombine, String, String, AudioCrop, SaveAudio, LoadAudio, Note, Note, Note, WanVideoLoraSelect, WanVideoVACEEncode, DF_Integer, LoadImage, Note, Note, VHS_LoadVideo, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2+MultiTlak+Vace控制单人数字人极速版V1（简化版）_1955490259800920066.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1955490259800920066.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（50 个）：
+- `ImageConcatMulti`
+- `DownloadAndLoadWav2VecModel`
+- `WanVideoExperimentalArgs`
+- `ImageConcatMulti`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoVACEModelSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoBlockSwap`
+- `Audio Duration (mtb)`
+- `easy showAnything`
+- `VHS_VideoInfo`
+- `MathExpression|pysssss`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `GetImageSizeAndCount`
+- `PreviewImage`
+- `DWPreprocessor`
+- `PreviewImage`
+- `MultiTalkModelLoader`
+- `GetImageSizeAndCount`
+- `WanVideoDecode`
+- `ImageResizeKJv2`
+- `WanVideoLoraSelect`
+- `WanVideoVACEStartToEndFrame`
+- `WanVideoTextEncode`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSLG`
+- `AddLabel`
+- `AddLabel`
+- `EmptyImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `String`
+- `String`
+- `AudioCrop`
+- `SaveAudio`
+- `LoadAudio`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoLoraSelect`
+- `WanVideoVACEEncode`
+- `DF_Integer`
+- `LoadImage`
+- `Note`
+- `Note`
+- `VHS_LoadVideo`
+- `Note`
+
+## 知识
+
+覆盖率 **82%**（41/50）
+
+**有卡**：`ImageConcatMulti`、`DownloadAndLoadWav2VecModel`、`WanVideoExperimentalArgs`、`MultiTalkWav2VecEmbeds`、`WanVideoVACEModelSelect`、`WanVideoSampler`、`WanVideoBlockSwap`、`Audio Duration (mtb)`、`VHS_VideoInfo`、`MathExpression|pysssss`、`WanVideoModelLoader`、`WanVideoVAELoader`、`GetImageSizeAndCount`、`DWPreprocessor`、`MultiTalkModelLoader`、`WanVideoDecode`、`ImageResizeKJv2`、`WanVideoLoraSelect`、`WanVideoVACEStartToEndFrame`、`WanVideoTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadWanVideoT5TextEncoder`、`WanVideoSLG`、`AddLabel`、`EmptyImage`、`VHS_VideoCombine`、`String`、`AudioCrop`、`SaveAudio`、`LoadAudio`、`WanVideoVACEEncode`、`DF_Integer`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode

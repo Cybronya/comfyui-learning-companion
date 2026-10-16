@@ -1,0 +1,111 @@
+---
+key: 视频生成/图生视频/wan 2.2-提示词丝滑运镜V2.0版本高动态mv_2021495540655067138.json
+name: wan 2.2-提示词丝滑运镜V2.0版本高动态mv_2021495540655067138.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2021495540655067138.json
+hash: c7354f32d7a1786c
+coverage: 0.607595
+learned_at: 2026-10-15 22:35:08
+nodes: [easy clearCacheAll, LayerUtility: PurgeVRAM V2, Note, easy cleanGpuUsed, easy showAnything, GetNode, easy showAnything, Float to Int, GetNode, GetNode, GetNode, Audio Duration (mtb), easy imageSize, GetNode, LoadWanVideoT5TextEncoder, PrimitiveNode, WanVideoVAELoader, MathExpression|pysssss, AudioSeparation, LayerUtility: PurgeVRAM V2, WanVideoSampler, WanVideoSLG, CreateCFGScheduleFloatList, RH_GetAudioDuration, SetNode, WanVideoDecode, GetNode, ImageResizeKJv2, GetNode, GetNode, RIFEInterpolation, FlashVSRNode, SetNode, easy ifElse, easy ifElse, SetNode, CR Text, ShowText|pysssss, CR Text, SetNode, INTConstant, INTConstant, easy boolean, GetNode, SetNode, Any Switch (rgthree), SetNode, GetNode, SetNode, easy cleanGpuUsed, WanVideoImageToVideoEncode, Fast Groups Muter (rgthree), Note, SaveAudio, CR Text Concatenate, RH_Captioner, easy showAnything, WanVideoSampler, VHS_VideoCombine, INTConstant, DownloadAndLoadWav2VecModel, MultiTalkWav2VecEmbeds, RHHiddenNodes, WanVideoTextEncode, RH_LLMAPI_Pro_Node, GetNode, GetNode, VHS_VideoCombine, VHS_VideoCombine, LoadImage, VHS_LoadVideo, INTConstant, INTConstant, AudioCrop, CR Text, CR Text, Fast Groups Muter (rgthree), MathExpression|pysssss, WanVideoContextOptions]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan 2.2-提示词丝滑运镜V2.0版本高动态mv_2021495540655067138.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2021495540655067138.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（79 个）：
+- `easy clearCacheAll`
+- `LayerUtility: PurgeVRAM V2`
+- `Note`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `GetNode`
+- `easy showAnything`
+- `Float to Int`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Audio Duration (mtb)`
+- `easy imageSize`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `PrimitiveNode`
+- `WanVideoVAELoader`
+- `MathExpression|pysssss`
+- `AudioSeparation`
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoSampler` ★核心
+- `WanVideoSLG`
+- `CreateCFGScheduleFloatList`
+- `RH_GetAudioDuration`
+- `SetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `RIFEInterpolation`
+- `FlashVSRNode`
+- `SetNode`
+- `easy ifElse`
+- `easy ifElse`
+- `SetNode`
+- `CR Text`
+- `ShowText|pysssss`
+- `CR Text`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `easy boolean`
+- `GetNode`
+- `SetNode`
+- `Any Switch (rgthree)`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `WanVideoImageToVideoEncode`
+- `Fast Groups Muter (rgthree)`
+- `Note`
+- `SaveAudio`
+- `CR Text Concatenate`
+- `RH_Captioner`
+- `easy showAnything`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `INTConstant`
+- `DownloadAndLoadWav2VecModel`
+- `MultiTalkWav2VecEmbeds`
+- `RHHiddenNodes`
+- `WanVideoTextEncode`
+- `RH_LLMAPI_Pro_Node`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `INTConstant`
+- `INTConstant`
+- `AudioCrop`
+- `CR Text`
+- `CR Text`
+- `Fast Groups Muter (rgthree)`
+- `MathExpression|pysssss`
+- `WanVideoContextOptions`
+
+## 知识
+
+覆盖率 **61%**（48/79）
+
+**有卡**：`easy clearCacheAll`、`LayerUtility: PurgeVRAM V2`、`easy cleanGpuUsed`、`Float to Int`、`Audio Duration (mtb)`、`easy imageSize`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`MathExpression|pysssss`、`AudioSeparation`、`WanVideoSampler`、`WanVideoSLG`、`CreateCFGScheduleFloatList`、`RH_GetAudioDuration`、`WanVideoDecode`、`ImageResizeKJv2`、`RIFEInterpolation`、`FlashVSRNode`、`CR Text`、`INTConstant`、`easy boolean`、`WanVideoImageToVideoEncode`、`SaveAudio`、`CR Text Concatenate`、`RH_Captioner`、`VHS_VideoCombine`、`DownloadAndLoadWav2VecModel`、`MultiTalkWav2VecEmbeds`、`RHHiddenNodes`、`WanVideoTextEncode`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`VHS_LoadVideo`、`AudioCrop`、`WanVideoContextOptions`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

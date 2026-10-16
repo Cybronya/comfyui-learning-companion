@@ -1,0 +1,91 @@
+---
+key: 视频生成/图生视频/wan2.1 首尾帧_1906433912804151297.json
+name: wan2.1 首尾帧_1906433912804151297.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1906433912804151297.json
+hash: 2e757f26d206d0d6
+coverage: 0.627119
+learned_at: 2026-10-15 22:29:26
+nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, JoinStrings, SetNode, Bookmark (rgthree), String Literal, Note Plus (mtb), String Literal, String Literal, String Literal, JoinStrings, String Literal, String Literal, String Literal, easy seed, MarkdownNote, ImageScale, SetNode, LoadImage, LoadWanVideoT5TextEncoder, WanVideoTeaCache, WanVideoSLG, WanVideoTextEncode, Note, WanVideoVAELoader, WanVideoSampler, WanVideoExperimentalArgs, ImageScale, WanVideoBlockSwap, GetNode, SetNode, LoadImage, GetNode, WanVideoDecode, SetNode, WanVideoEnhanceAVideo, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, WanVideoImageToVideoEncode, GetNode, WanVideoTorchCompileSettings, GetNode, GetNode, SetNode, easy float, WanVideoClipVisionEncode, LoadWanVideoClipTextEncoder, easy int, easy int, easy positive, easy int, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1 首尾帧_1906433912804151297.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1906433912804151297.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（59 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `JoinStrings`
+- `SetNode`
+- `Bookmark (rgthree)`
+- `String Literal`
+- `Note Plus (mtb)`
+- `String Literal`
+- `String Literal`
+- `String Literal`
+- `JoinStrings`
+- `String Literal`
+- `String Literal`
+- `String Literal`
+- `easy seed`
+- `MarkdownNote`
+- `ImageScale`
+- `SetNode`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `WanVideoTextEncode`
+- `Note`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoExperimentalArgs`
+- `ImageScale`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `SetNode`
+- `LoadImage`
+- `GetNode`
+- `WanVideoDecode`
+- `SetNode`
+- `WanVideoEnhanceAVideo`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `easy float`
+- `WanVideoClipVisionEncode`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `easy int`
+- `easy int`
+- `easy positive`
+- `easy int`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **63%**（37/59）
+
+**有卡**：`JoinStrings`、`Bookmark (rgthree)`、`String Literal`、`Note Plus (mtb)`、`easy seed`、`ImageScale`、`LoadImage`、`LoadWanVideoT5TextEncoder`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoTextEncode`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoBlockSwap`、`WanVideoDecode`、`WanVideoEnhanceAVideo`、`VHS_VideoCombine`、`WanVideoImageToVideoEncode`、`WanVideoTorchCompileSettings`、`easy float`、`WanVideoClipVisionEncode`、`LoadWanVideoClipTextEncoder`、`easy int`、`easy positive`、`WanVideoModelLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、easy seed、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

@@ -1,0 +1,113 @@
+---
+key: 视频生成/图生视频/首尾帧视频扩写-wan2.2-smoothMix-官方_2009163344107806722.json
+name: 首尾帧视频扩写-wan2.2-smoothMix-官方_2009163344107806722.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2009163344107806722.json
+hash: 31911253bcdd50b7
+coverage: 0.647887
+learned_at: 2026-10-15 22:34:11
+nodes: [easy imageSize, GetImageSizeAndCount, GetImageSizeAndCount, GetImageSizeAndCount, VAEDecodeTiled, ImageResizeKJ, SetNode, GetNode, GetNode, CLIPTextEncode, GetNode, GetNode, ImageFromBatch, PreviewImage, GetImageSizeAndCount, VHS_VideoCombine, PreviewImage, GetImageSizeAndCount, GetImageSizeAndCount, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, CLIPTextEncode, GetImageSizeAndCount, GetImageSizeAndCount, GetImageSizeAndCount, WanFirstLastFrameToVideo, easy seed, INTConstant, CLIPLoader, VAELoader, StringFunction|pysssss, easy int, SetNode, StringFunction|pysssss, GetNode, LayerUtility: ImageScaleByAspectRatio V2, easy positive, GetImageSizeAndCount, SetNode, MemoryCleaner, SetNode, PrimitiveFloat, ImpactFloat, MathExpression|pysssss, SetNode, SetNode, MultiplePathsInput, easy int, Reroute, PathchSageAttentionKJ, WanMoeKSampler, WanVideoNAG, PathchSageAttentionKJ, UNETLoader, UNETLoader, Qwen3_VQA, easy anythingIndexSwitch, easy showAnything, ModelBlockSwap, ModelBlockSwap, ImageLoader, ImageLoader, easy positive, GetNode, VHS_VideoCombine, GetNode, easy showAnything]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "sa_solver", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/首尾帧视频扩写-wan2.2-smoothMix-官方_2009163344107806722.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2009163344107806722.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（71 个）：
+- `easy imageSize`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `VAEDecodeTiled` ★核心
+- `ImageResizeKJ`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `ImageFromBatch`
+- `PreviewImage`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `WanFirstLastFrameToVideo`
+- `easy seed`
+- `INTConstant`
+- `CLIPLoader`
+- `VAELoader`
+- `StringFunction|pysssss`
+- `easy int`
+- `SetNode`
+- `StringFunction|pysssss`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy positive`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `MemoryCleaner`
+- `SetNode`
+- `PrimitiveFloat`
+- `ImpactFloat`
+- `MathExpression|pysssss`
+- `SetNode`
+- `SetNode`
+- `MultiplePathsInput`
+- `easy int`
+- `Reroute`
+- `PathchSageAttentionKJ`
+- `WanMoeKSampler` ★核心
+- `WanVideoNAG`
+- `PathchSageAttentionKJ`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Qwen3_VQA`
+- `easy anythingIndexSwitch`
+- `easy showAnything`
+- `ModelBlockSwap`
+- `ModelBlockSwap`
+- `ImageLoader`
+- `ImageLoader`
+- `easy positive`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `easy showAnything`
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `randomize`
+- `cfg` = `20`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `sa_solver`
+
+## 知识
+
+覆盖率 **65%**（46/71）
+
+**有卡**：`easy imageSize`、`GetImageSizeAndCount`、`VAEDecodeTiled`、`ImageResizeKJ`、`CLIPTextEncode`、`ImageFromBatch`、`VHS_VideoCombine`、`WanFirstLastFrameToVideo`、`easy seed`、`INTConstant`、`CLIPLoader`、`VAELoader`、`StringFunction|pysssss`、`easy int`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy positive`、`MemoryCleaner`、`ImpactFloat`、`MathExpression|pysssss`、`MultiplePathsInput`、`PathchSageAttentionKJ`、`WanMoeKSampler`、`WanVideoNAG`、`UNETLoader`、`Qwen3_VQA`、`easy anythingIndexSwitch`、`ModelBlockSwap`、`ImageLoader`
+
+**用到的条目**：VAELoader、CLIPTextEncode、CLIPLoader、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、WanMoeKSampler、easy seed、VAEDecodeTiled

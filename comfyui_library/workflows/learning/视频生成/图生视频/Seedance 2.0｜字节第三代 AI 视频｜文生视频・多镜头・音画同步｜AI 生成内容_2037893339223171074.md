@@ -1,0 +1,36 @@
+---
+key: 视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json
+name: Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2037893339223171074.json
+hash: 33195c1aeab4737f
+coverage: 1
+learned_at: 2026-10-15 22:35:59
+nodes: [LoadImage, SaveVideo, LoadImage, RH_RhartVideoSparkvideo20MultimodalVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2037893339223171074.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（4 个）：
+- `LoadImage`
+- `SaveVideo`
+- `LoadImage`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+
+## 知识
+
+覆盖率 **100%**（4/4）
+
+**有卡**：`LoadImage`、`SaveVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`
+
+**用到的条目**：LoadImage、SaveVideo、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Save、SaveImage、CS_Preview_Any

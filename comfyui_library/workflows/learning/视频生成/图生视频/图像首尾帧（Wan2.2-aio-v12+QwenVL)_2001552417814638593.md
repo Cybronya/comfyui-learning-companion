@@ -1,0 +1,87 @@
+---
+key: 视频生成/图生视频/图像首尾帧（Wan2.2-aio-v12+QwenVL)_2001552417814638593.json
+name: 图像首尾帧（Wan2.2-aio-v12+QwenVL)_2001552417814638593.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2001552417814638593.json
+hash: 29f24bb439a7af7a
+coverage: 0.575758
+learned_at: 2026-10-15 22:33:46
+nodes: [GetNode, ImageResizeKJ, GetNode, GetNode, ImageResizeKJ, INTConstant, LoadImage, SetNode, LoadImage, SetNode, SetNode, GetNode, Note, GetNode, ImageBatchMulti, GetNode, WanVideoVACEStartToEndFrame, LayerUtility: PurgeVRAM V2, easy showAnything, GetImageSizeAndCount, CheckpointLoaderSimple, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, VAEDecode, SetNode, KSampler, WanVaceToVideo, VHS_VideoCombine, SetNode, SetNode, CR Image Size, Qwen3_VQA]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-rapid-mega-aio-nsfw-v12.1.safetensors", "denoise": 1, "sampler_name": "ipndm", "scheduler": "beta", "seed": 768625237982578, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/图像首尾帧（Wan2.2-aio-v12+QwenVL)_2001552417814638593.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2001552417814638593.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（33 个）：
+- `GetNode`
+- `ImageResizeKJ`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJ`
+- `INTConstant`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Note`
+- `GetNode`
+- `ImageBatchMulti`
+- `GetNode`
+- `WanVideoVACEStartToEndFrame`
+- `LayerUtility: PurgeVRAM V2`
+- `easy showAnything`
+- `GetImageSizeAndCount`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `SetNode`
+- `KSampler` ★核心
+- `WanVaceToVideo`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `CR Image Size`
+- `Qwen3_VQA`
+
+## 关键参数
+
+- `checkpoint` = `wan2.2-rapid-mega-aio-nsfw-v12.1.safetensors`
+- `seed` = `768625237982578`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `ipndm`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **58%**（19/33）
+
+**有卡**：`ImageResizeKJ`、`INTConstant`、`LoadImage`、`ImageBatchMulti`、`WanVideoVACEStartToEndFrame`、`LayerUtility: PurgeVRAM V2`、`GetImageSizeAndCount`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`ModelSamplingSD3`、`VAEDecode`、`KSampler`、`WanVaceToVideo`、`VHS_VideoCombine`、`CR Image Size`、`Qwen3_VQA`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、GetImageSizeAndCount、ImageResizeKJ、CR Image Size
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

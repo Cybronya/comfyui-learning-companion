@@ -1,0 +1,139 @@
+---
+key: 视频生成/图生视频/LTX2.3 音图驱数字人工作流（自动提示词全配置可调适配12G ）_2027025326320128001.json
+name: LTX2.3 音图驱数字人工作流（自动提示词全配置可调适配12G ）_2027025326320128001.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2027025326320128001.json
+hash: 89bf0af42021e5be
+coverage: 0.607843
+learned_at: 2026-10-15 22:35:15
+nodes: [CFGGuider, LTXVConditioning, SetNode, SimpleCalculatorKJ, GetNode, RandomNoise, CFGGuider, LTXVLatentUpsampler, KSamplerSelect, LTXVImgToVideoInplace, GetNode, RandomNoise, GetNode, PrimitiveFloat, GetNode, GetNode, SetNode, SetNode, CLIPTextEncode, GetNode, KSamplerSelect, MarkdownNote, ManualSigmas, ManualSigmas, SetNode, SetNode, LatentUpscaleModelLoader, DualCLIPLoader, UnetLoaderGGUF, UNETLoader, VAELoaderKJ, VAELoaderKJ, Note, Note, Note, LTXVPreprocess, LTXVImgToVideoInplace, LTXVSeparateAVLatent, CreateVideo, LTXVConcatAVLatent, LTXVSeparateAVLatent, VAEDecodeTiled, SetNode, GetNode, GetNode, EmptyImage, LTXVConcatAVLatent, ImageScaleBy, EmptyLTXVLatentVideo, SimpleMath+, PrimitiveInt, SolidMask, GetImageSize, LTXVAudioVAEEncode, GetNode, MelBandRoFormerSampler, MelBandRoFormerModelLoader, SetNode, SoundFlow_GetLength, TrimAudioDuration, GetNode, SetNode, GetNode, Note, MarkdownNote, SetNode, CM_FloatToInt, SetLatentNoiseMask, GetNode, SamplerCustomAdvanced, LoadAudio, ResizeImagesByLongerEdge, LoadImage, SamplerCustomAdvanced, INTConstant, DF_Int_to_Float, SetNode, SetNode, SetNode, PrimitiveBoolean, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAELoader, CLIPTextEncode, CR Text, GetNode, llama_cpp_instruct_adv, llama_cpp_model_loader, ShowText|pysssss, SaveVideo, INTConstant, INTConstant, GetNode, SetNode, SetNode, SetNode, ModelPatchTorchSettings, PathchSageAttentionKJ, LTXVChunkFeedForward, LoraLoaderModelOnly, Note, Note]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/LTX2.3 音图驱数字人工作流（自动提示词全配置可调适配12G ）_2027025326320128001.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2027025326320128001.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（102 个）：
+- `CFGGuider`
+- `LTXVConditioning`
+- `SetNode`
+- `SimpleCalculatorKJ`
+- `GetNode`
+- `RandomNoise`
+- `CFGGuider`
+- `LTXVLatentUpsampler` ★核心
+- `KSamplerSelect` ★核心
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `RandomNoise`
+- `GetNode`
+- `PrimitiveFloat`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `MarkdownNote`
+- `ManualSigmas`
+- `ManualSigmas`
+- `SetNode`
+- `SetNode`
+- `LatentUpscaleModelLoader`
+- `DualCLIPLoader`
+- `UnetLoaderGGUF` ★核心
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `Note`
+- `Note`
+- `Note`
+- `LTXVPreprocess`
+- `LTXVImgToVideoInplace`
+- `LTXVSeparateAVLatent`
+- `CreateVideo`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyImage`
+- `LTXVConcatAVLatent`
+- `ImageScaleBy`
+- `EmptyLTXVLatentVideo`
+- `SimpleMath+`
+- `PrimitiveInt`
+- `SolidMask`
+- `GetImageSize`
+- `LTXVAudioVAEEncode` ★核心
+- `GetNode`
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `SetNode`
+- `SoundFlow_GetLength`
+- `TrimAudioDuration`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `Note`
+- `MarkdownNote`
+- `SetNode`
+- `CM_FloatToInt`
+- `SetLatentNoiseMask`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LoadAudio`
+- `ResizeImagesByLongerEdge`
+- `LoadImage`
+- `SamplerCustomAdvanced` ★核心
+- `INTConstant`
+- `DF_Int_to_Float`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PrimitiveBoolean`
+- `CheckpointLoaderSimple` ★核心
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
+- `CLIPTextEncode` ★核心
+- `CR Text`
+- `GetNode`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `ShowText|pysssss`
+- `SaveVideo`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `Note`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **61%**（62/102）
+
+**有卡**：`CFGGuider`、`LTXVConditioning`、`SimpleCalculatorKJ`、`RandomNoise`、`LTXVLatentUpsampler`、`KSamplerSelect`、`LTXVImgToVideoInplace`、`CLIPTextEncode`、`ManualSigmas`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`UnetLoaderGGUF`、`UNETLoader`、`VAELoaderKJ`、`LTXVPreprocess`、`LTXVSeparateAVLatent`、`CreateVideo`、`LTXVConcatAVLatent`、`VAEDecodeTiled`、`EmptyImage`、`ImageScaleBy`、`EmptyLTXVLatentVideo`、`SimpleMath+`、`SolidMask`、`GetImageSize`、`LTXVAudioVAEEncode`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`SoundFlow_GetLength`、`TrimAudioDuration`、`CM_FloatToInt`、`SetLatentNoiseMask`、`SamplerCustomAdvanced`、`LoadAudio`、`ResizeImagesByLongerEdge`、`LoadImage`、`INTConstant`、`DF_Int_to_Float`、`PrimitiveBoolean`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`CR Text`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`SaveVideo`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`LoraLoaderModelOnly`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

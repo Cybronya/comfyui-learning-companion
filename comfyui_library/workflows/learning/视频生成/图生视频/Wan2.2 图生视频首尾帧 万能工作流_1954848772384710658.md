@@ -1,0 +1,63 @@
+---
+key: 视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json
+name: Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1954848772384710658.json
+hash: 2b571221421f4b98
+coverage: 0.967742
+learned_at: 2026-10-15 22:31:07
+nodes: [WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoModelLoader, WanVideoModelLoader, WanVideoSampler, WanVideoSampler, WanVideoLoraSelect, WanVideoDecode, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoVAELoader, INTConstant, easy mathInt, GetImageSizeAndCount, Note, VHS_VideoCombine, Display Int (rgthree), CreateCFGScheduleFloatList, WanVideoTextEncode, LoadImage, LoadImage, WanVideoLoraSelect, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageMaskScaleAsV2, WanVideoImageToVideoEncode, INTConstant, LoadWanVideoT5TextEncoder, WanVideoClipVisionEncode, CLIPVisionLoader, WanVideoTorchCompileSettings, WanVideoBlockSwap]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 图生视频首尾帧 万能工作流_1954848772384710658.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1954848772384710658.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（31 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoLoraSelect`
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
+- `INTConstant`
+- `easy mathInt`
+- `GetImageSizeAndCount`
+- `Note`
+- `VHS_VideoCombine`
+- `Display Int (rgthree)`
+- `CreateCFGScheduleFloatList`
+- `WanVideoTextEncode`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageMaskScaleAsV2`
+- `WanVideoImageToVideoEncode`
+- `INTConstant`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+
+## 知识
+
+覆盖率 **97%**（30/31）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoDecode`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`INTConstant`、`easy mathInt`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`Display Int (rgthree)`、`CreateCFGScheduleFloatList`、`WanVideoTextEncode`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: ImageMaskScaleAsV2`、`WanVideoImageToVideoEncode`、`LoadWanVideoT5TextEncoder`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

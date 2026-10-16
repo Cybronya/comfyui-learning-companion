@@ -1,0 +1,112 @@
+---
+key: 视频生成/图生视频/Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json
+name: Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1998270569793617921.json
+hash: 2766cc678db6baea
+coverage: 0.814286
+learned_at: 2026-10-15 22:33:31
+nodes: [VAEDecode, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, Note, UNETLoader, UNETLoader, CLIPVisionLoader, CLIPVisionEncode, UNETLoader, INTConstant, Note, Note, Note, Note, Note, Note, Note, Note, PathchSageAttentionKJ, PathchSageAttentionKJ, Note, ImageResizeKJv2, CLIPVisionEncode, Fast Groups Bypasser (rgthree), CLIPVisionLoader, CLIPLoader, wanBlockSwap, wanBlockSwap, ModelPatchTorchSettings, wanBlockSwap, wanBlockSwap, ModelPatchTorchSettings, WanMoeKSampler, ImageResizeKJv2, UNETLoader, CLIPLoader, INTConstant, WanFirstLastFrameToVideo, ImageResizeKJv2, WanImageToVideo, Fast Groups Bypasser (rgthree), VHS_VideoCombine, WanMoeKSampler, CLIPTextEncode, VHS_VideoCombine, Int, Int, VAELoader, VAELoader, RIFE VFI, easy cleanGpuUsed, CLIPVisionEncode, VAEDecode, RIFE VFI, easy cleanGpuUsed, Int, Int, Int, Int, VHS_VideoCombine, LoadImage, LoadImage, CLIPTextEncode, CLIPTextEncode, Fast Groups Bypasser (rgthree), VHS_VideoCombine, LoadImage, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "euler_ancestral", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1998270569793617921.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（70 个）：
+- `VAEDecode` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `Note`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `UNETLoader` ★核心
+- `INTConstant`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `Note`
+- `ImageResizeKJv2`
+- `CLIPVisionEncode`
+- `Fast Groups Bypasser (rgthree)`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `ModelPatchTorchSettings`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `ModelPatchTorchSettings`
+- `WanMoeKSampler` ★核心
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `INTConstant`
+- `WanFirstLastFrameToVideo`
+- `ImageResizeKJv2`
+- `WanImageToVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `WanMoeKSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `Int`
+- `Int`
+- `VAELoader`
+- `VAELoader`
+- `RIFE VFI`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `VAEDecode` ★核心
+- `RIFE VFI`
+- `easy cleanGpuUsed`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler_ancestral`
+
+## 知识
+
+覆盖率 **81%**（57/70）
+
+**有卡**：`VAEDecode`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`UNETLoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`INTConstant`、`ImageResizeKJv2`、`CLIPLoader`、`wanBlockSwap`、`WanMoeKSampler`、`WanFirstLastFrameToVideo`、`WanImageToVideo`、`VHS_VideoCombine`、`CLIPTextEncode`、`Int`、`VAELoader`、`RIFE VFI`、`easy cleanGpuUsed`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler、CLIPVisionEncode

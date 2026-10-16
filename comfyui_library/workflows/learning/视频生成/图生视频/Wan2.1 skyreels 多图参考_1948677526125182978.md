@@ -1,0 +1,102 @@
+---
+key: 视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json
+name: Wan2.1 skyreels 多图参考_1948677526125182978.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1948677526125182978.json
+hash: afc1bd2d5b472060
+coverage: 0.7
+learned_at: 2026-10-15 22:30:48
+nodes: [GetNode, AddLabel, GetNode, GetNode, AddLabel, WanVideoBlockSwap, ImageBatch, SetNode, INTConstant, INTConstant, WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, SetNode, EmptyImage, GetImageSizeAndCount, ImageCompositeMasked, ImageRemoveBackground+, TransparentBGSession+, GetNode, GetNode, LoadImage, SetNode, ImageResizeKJ, EmptyImage, GetImageSizeAndCount, ImageCompositeMasked, ImageRemoveBackground+, TransparentBGSession+, LoadImage, SetNode, ImageResizeKJ, ImageBatch, GetImageSizeAndCount, SimpleMath+, GetNode, GetImageRangeFromBatch, WanVideoDecode, EmptyImage, ImageConcatMulti, ImageConcatMulti, AddLabel, GetImageSizeAndCount, CLIPVisionLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, LoadImage, SetNode, GetNode, GetNode, GetImageSizeAndCount, SetNode, ImageResizeKJ, GetNode, GetNode, ImageBatchRepeatInterleaving, PreviewImage, WanVideoTextEncode, WanVideoModelLoader, GetNode, GetNode, GetNode, ImageBatchMulti, PreviewImage, WanVideoClipVisionEncode, WanVideoImageToVideoEncode, WanVideoSampler, VHS_VideoCombine, Note Plus (mtb), LoadImageFromUrl]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1948677526125182978.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（70 个）：
+- `GetNode`
+- `AddLabel`
+- `GetNode`
+- `GetNode`
+- `AddLabel`
+- `WanVideoBlockSwap`
+- `ImageBatch`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `SetNode`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `TransparentBGSession+`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `SetNode`
+- `ImageResizeKJ`
+- `EmptyImage`
+- `GetImageSizeAndCount`
+- `ImageCompositeMasked`
+- `ImageRemoveBackground+`
+- `TransparentBGSession+`
+- `LoadImage`
+- `SetNode`
+- `ImageResizeKJ`
+- `ImageBatch`
+- `GetImageSizeAndCount`
+- `SimpleMath+`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `WanVideoDecode`
+- `EmptyImage`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `AddLabel`
+- `GetImageSizeAndCount`
+- `CLIPVisionLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `LoadImage`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `ImageResizeKJ`
+- `GetNode`
+- `GetNode`
+- `ImageBatchRepeatInterleaving`
+- `PreviewImage`
+- `WanVideoTextEncode`
+- `WanVideoModelLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageBatchMulti`
+- `PreviewImage`
+- `WanVideoClipVisionEncode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `Note Plus (mtb)`
+- `LoadImageFromUrl`
+
+## 知识
+
+覆盖率 **70%**（49/70）
+
+**有卡**：`AddLabel`、`WanVideoBlockSwap`、`ImageBatch`、`INTConstant`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`EmptyImage`、`GetImageSizeAndCount`、`ImageCompositeMasked`、`ImageRemoveBackground+`、`TransparentBGSession+`、`LoadImage`、`ImageResizeKJ`、`SimpleMath+`、`GetImageRangeFromBatch`、`WanVideoDecode`、`ImageConcatMulti`、`CLIPVisionLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`ImageBatchRepeatInterleaving`、`WanVideoTextEncode`、`WanVideoModelLoader`、`ImageBatchMulti`、`WanVideoClipVisionEncode`、`WanVideoImageToVideoEncode`、`WanVideoSampler`、`VHS_VideoCombine`、`Note Plus (mtb)`、`LoadImageFromUrl`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

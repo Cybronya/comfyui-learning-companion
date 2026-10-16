@@ -1,0 +1,141 @@
+---
+key: 视频生成/图生视频/ltx2.3图生视频4图参考音色版（无字幕)_2046461995771236354.json
+name: ltx2.3图生视频4图参考音色版（无字幕)_2046461995771236354.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2046461995771236354.json
+hash: 88bfa9e6e600f756
+coverage: 0.656863
+learned_at: 2026-10-15 22:36:58
+nodes: [SetNode, SetNode, SimpleMath+, GetNode, LTXVAudioVAEDecode, GetNode, GetNode, GetNode, ImageResizeKJv2, ImageResizeKJv2, GuHaiAutoImageSplit, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SetNode, SetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, DualCLIPLoader, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, GetNode, SamplerCustomAdvanced, LTXVSeparateAVLatent, GetNode, VAEDecodeTiled, ImageFromBatch+, ImageResizeKJv2, RH_LLMAPI_Pro_Node, VAELoader, LatentUpscaleModelLoader, VAELoaderKJ, SetNode, LoraLoaderModelOnly, MelBandRoFormerModelLoader, GetNode, LTXVConcatAVLatent, CM_IntToFloat, easy imageConcat, easy showAnything, easy anythingIndexSwitch, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, RH_LLMAPI_Pro_Node, easy showAnything, Text, CLIPTextEncode, LTXVAddGuideMulti, LTXVCropGuides, GetNode, GetNode, easy cleanGpuUsed, GetNode, GetNode, GetNode, MelBandRoFormerSampler, NormalizeAudioLoudness, GetNode, LTXVConditioning, LTXVReferenceAudio, CR Float To Integer, easy showAnything, CLIPTextEncode, easy cleanGpuUsed, ImpactInversedSwitch, SetNode, DapaoSmartMemoryOptimizerNode, SetNode, PreviewImage, SetNode, SetNode, SetNode, SetNode, SetNode, easy imageConcat, LoraLoaderModelOnly, MarkdownNote, LoadImage, easy imageConcat, LoadImage, LoadImage, easy int, easy int, easy int, easy int, Text, LoadAudio, easy int, Note, LoadImage, LoadImage, PreviewAudio, VHS_VideoCombine, Note]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/ltx2.3图生视频4图参考音色版（无字幕)_2046461995771236354.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2046461995771236354.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（102 个）：
+- `SetNode`
+- `SetNode`
+- `SimpleMath+`
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `GuHaiAutoImageSplit`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `DualCLIPLoader`
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `VAEDecodeTiled` ★核心
+- `ImageFromBatch+`
+- `ImageResizeKJv2`
+- `RH_LLMAPI_Pro_Node`
+- `VAELoader`
+- `LatentUpscaleModelLoader`
+- `VAELoaderKJ`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `MelBandRoFormerModelLoader`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `CM_IntToFloat`
+- `easy imageConcat`
+- `easy showAnything`
+- `easy anythingIndexSwitch`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `RH_LLMAPI_Pro_Node`
+- `easy showAnything`
+- `Text`
+- `CLIPTextEncode` ★核心
+- `LTXVAddGuideMulti`
+- `LTXVCropGuides`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `MelBandRoFormerSampler` ★核心
+- `NormalizeAudioLoudness`
+- `GetNode`
+- `LTXVConditioning`
+- `LTXVReferenceAudio`
+- `CR Float To Integer`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `ImpactInversedSwitch`
+- `SetNode`
+- `DapaoSmartMemoryOptimizerNode`
+- `SetNode`
+- `PreviewImage`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy imageConcat`
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `LoadImage`
+- `easy imageConcat`
+- `LoadImage`
+- `LoadImage`
+- `easy int`
+- `easy int`
+- `easy int`
+- `easy int`
+- `Text`
+- `LoadAudio`
+- `easy int`
+- `Note`
+- `LoadImage`
+- `LoadImage`
+- `PreviewAudio`
+- `VHS_VideoCombine`
+- `Note`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **66%**（67/102）
+
+**有卡**：`SimpleMath+`、`LTXVAudioVAEDecode`、`ImageResizeKJv2`、`GuHaiAutoImageSplit`、`ImageFromBatch+`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`DualCLIPLoader`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`RH_LLMAPI_Pro_Node`、`VAELoader`、`LatentUpscaleModelLoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`MelBandRoFormerModelLoader`、`LTXVConcatAVLatent`、`CM_IntToFloat`、`easy imageConcat`、`easy anythingIndexSwitch`、`UNETLoader`、`Text`、`CLIPTextEncode`、`LTXVAddGuideMulti`、`LTXVCropGuides`、`easy cleanGpuUsed`、`MelBandRoFormerSampler`、`NormalizeAudioLoudness`、`LTXVConditioning`、`LTXVReferenceAudio`、`CR Float To Integer`、`ImpactInversedSwitch`、`DapaoSmartMemoryOptimizerNode`、`LoadImage`、`easy int`、`LoadAudio`、`PreviewAudio`、`VHS_VideoCombine`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

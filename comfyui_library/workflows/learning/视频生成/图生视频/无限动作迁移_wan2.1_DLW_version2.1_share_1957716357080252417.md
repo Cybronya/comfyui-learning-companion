@@ -1,0 +1,201 @@
+---
+key: 视频生成/图生视频/无限动作迁移_wan2.1_DLW_version2.1_share_1957716357080252417.json
+name: 无限动作迁移_wan2.1_DLW_version2.1_share_1957716357080252417.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1957716357080252417.json
+hash: 13ca0163d8ba3df6
+coverage: 0.895833
+learned_at: 2026-10-15 22:31:18
+nodes: [CLIPLoader, RepeatImageBatch, easy mathInt, Switch mask [Crystools], Switch mask [Crystools], Switch image [Crystools], Switch any [Crystools], easy int, easy int, ImageBlend, Switch mask [Crystools], Switch image [Crystools], DownloadAndLoadDepthAnythingV2Model, WanVideoVACEStartToEndFrame, DepthAnything_V2, WanVideoVACEStartToEndFrame, easy mathInt, DownloadAndLoadDepthAnythingV2Model, DepthAnything_V2, WanVideoVACEStartToEndFrame, DWPreprocessor, DownloadAndLoadDepthAnythingV2Model, WanVideoVACEStartToEndFrame, DepthAnything_V2, WanVaceToVideo, WanVaceToVideo, DWPreprocessor, easy mathInt, easy mathInt, easy mathInt, easy int, easy mathInt, WanVideoVACEStartToEndFrame, WanVaceToVideo, Florence2Run, Florence2ModelLoader, TextPreview, CLIPTextEncode, CLIPTextEncode, ImageFromBatch, ImageFromBatch, ImageFromBatch, LayerUtility: ColorImage V2, LayerUtility: ColorImage V2, ImageBatch, ImageBlend, ImageToMask, RepeatImageBatch, ImageMaskSwitch, WanVaceToVideo, VHS_VideoCombine, VHS_VideoInfo, MathExpression|pysssss, ImageFromBatch, RepeatImageBatch, ImageBatch, ImageBatch, ImageToMask, ImageBatch, Switch image [Crystools], ImageBlend, ImageMaskSwitch, WanVaceToVideo, KSampler, MathExpression|pysssss, ReverseImageBatch, ImageResizeKJv2, ImageMaskSwitch, ImageBlend, WanVaceToVideo, KSampler, TrimVideoLatent, easy mathInt, CM_BoolToInt, easy mathInt, easy int, easy boolean, Fast Groups Bypasser (rgthree), Note, Note, Note, Note, PreviewImage, ImageMaskSwitch, ImageFromBatch, VAEDecode, easy int, ImageFromBatch, UNETLoader, Fast Groups Bypasser (rgthree), DWPreprocessor, KSampler, ImageFromBatch, SaveImage, easy mathInt, easy forLoopStart, ImitationHueNode, ImageBatch, ImageFromBatch, easy forLoopEnd, TrimVideoLatent, VAEDecode, CM_BoolToInt, easy mathInt, easy forLoopStart, ImitationHueNode, easy forLoopEnd, ImageBatch, ImageBatch, ImageFromBatch, VHS_VideoCombine, ImageBatch, LayerUtility: Seed, ImageFromBatch, ImageFromBatch, ImageFromBatch, easy forLoopEnd, VAEDecode, TrimVideoLatent, Switch image [Crystools], ImageMaskSwitch, ImageFromBatch, ImageFromBatch, ImageMaskSwitch, Note, Note, UnetLoaderGGUF, LoraLoaderModelOnly, VAELoader, easy boolean, LoadImage, Fast Groups Bypasser (rgthree), ImageFromBatch, easy forLoopStart, easy int, Fast Groups Bypasser (rgthree), PreviewImage, easy boolean, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), VHS_LoadVideo, easy int, WanVideoVACEStartToEndFrame]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 739262038472384, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/无限动作迁移_wan2.1_DLW_version2.1_share_1957716357080252417.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1957716357080252417.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（144 个）：
+- `CLIPLoader`
+- `RepeatImageBatch`
+- `easy mathInt`
+- `Switch mask [Crystools]`
+- `Switch mask [Crystools]`
+- `Switch image [Crystools]`
+- `Switch any [Crystools]`
+- `easy int`
+- `easy int`
+- `ImageBlend`
+- `Switch mask [Crystools]`
+- `Switch image [Crystools]`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `WanVideoVACEStartToEndFrame`
+- `DepthAnything_V2`
+- `WanVideoVACEStartToEndFrame`
+- `easy mathInt`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `DepthAnything_V2`
+- `WanVideoVACEStartToEndFrame`
+- `DWPreprocessor`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `WanVideoVACEStartToEndFrame`
+- `DepthAnything_V2`
+- `WanVaceToVideo`
+- `WanVaceToVideo`
+- `DWPreprocessor`
+- `easy mathInt`
+- `easy mathInt`
+- `easy mathInt`
+- `easy int`
+- `easy mathInt`
+- `WanVideoVACEStartToEndFrame`
+- `WanVaceToVideo`
+- `Florence2Run`
+- `Florence2ModelLoader`
+- `TextPreview`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `LayerUtility: ColorImage V2`
+- `LayerUtility: ColorImage V2`
+- `ImageBatch`
+- `ImageBlend`
+- `ImageToMask`
+- `RepeatImageBatch`
+- `ImageMaskSwitch`
+- `WanVaceToVideo`
+- `VHS_VideoCombine`
+- `VHS_VideoInfo`
+- `MathExpression|pysssss`
+- `ImageFromBatch`
+- `RepeatImageBatch`
+- `ImageBatch`
+- `ImageBatch`
+- `ImageToMask`
+- `ImageBatch`
+- `Switch image [Crystools]`
+- `ImageBlend`
+- `ImageMaskSwitch`
+- `WanVaceToVideo`
+- `KSampler` ★核心
+- `MathExpression|pysssss`
+- `ReverseImageBatch`
+- `ImageResizeKJv2`
+- `ImageMaskSwitch`
+- `ImageBlend`
+- `WanVaceToVideo`
+- `KSampler` ★核心
+- `TrimVideoLatent`
+- `easy mathInt`
+- `CM_BoolToInt`
+- `easy mathInt`
+- `easy int`
+- `easy boolean`
+- `Fast Groups Bypasser (rgthree)`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `PreviewImage`
+- `ImageMaskSwitch`
+- `ImageFromBatch`
+- `VAEDecode` ★核心
+- `easy int`
+- `ImageFromBatch`
+- `UNETLoader` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `DWPreprocessor`
+- `KSampler` ★核心
+- `ImageFromBatch`
+- `SaveImage`
+- `easy mathInt`
+- `easy forLoopStart`
+- `ImitationHueNode`
+- `ImageBatch`
+- `ImageFromBatch`
+- `easy forLoopEnd`
+- `TrimVideoLatent`
+- `VAEDecode` ★核心
+- `CM_BoolToInt`
+- `easy mathInt`
+- `easy forLoopStart`
+- `ImitationHueNode`
+- `easy forLoopEnd`
+- `ImageBatch`
+- `ImageBatch`
+- `ImageFromBatch`
+- `VHS_VideoCombine`
+- `ImageBatch`
+- `LayerUtility: Seed`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `easy forLoopEnd`
+- `VAEDecode` ★核心
+- `TrimVideoLatent`
+- `Switch image [Crystools]`
+- `ImageMaskSwitch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageMaskSwitch`
+- `Note`
+- `Note`
+- `UnetLoaderGGUF` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `easy boolean`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageFromBatch`
+- `easy forLoopStart`
+- `easy int`
+- `Fast Groups Bypasser (rgthree)`
+- `PreviewImage`
+- `easy boolean`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_LoadVideo`
+- `easy int`
+- `WanVideoVACEStartToEndFrame`
+
+## 关键参数
+
+- `seed` = `739262038472384`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **90%**（129/144）
+
+**有卡**：`CLIPLoader`、`RepeatImageBatch`、`easy mathInt`、`Switch mask [Crystools]`、`Switch image [Crystools]`、`Switch any [Crystools]`、`easy int`、`ImageBlend`、`DownloadAndLoadDepthAnythingV2Model`、`WanVideoVACEStartToEndFrame`、`DepthAnything_V2`、`DWPreprocessor`、`WanVaceToVideo`、`Florence2Run`、`Florence2ModelLoader`、`TextPreview`、`CLIPTextEncode`、`ImageFromBatch`、`LayerUtility: ColorImage V2`、`ImageBatch`、`ImageToMask`、`ImageMaskSwitch`、`VHS_VideoCombine`、`VHS_VideoInfo`、`MathExpression|pysssss`、`KSampler`、`ReverseImageBatch`、`ImageResizeKJv2`、`TrimVideoLatent`、`CM_BoolToInt`、`easy boolean`、`VAEDecode`、`UNETLoader`、`SaveImage`、`easy forLoopStart`、`ImitationHueNode`、`easy forLoopEnd`、`LayerUtility: Seed`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`VAELoader`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,36 @@
+---
+key: 视频生成/图生视频/seedance2.0_2034471481182261250.json
+name: seedance2.0_2034471481182261250.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2034471481182261250.json
+hash: 2de17dc40261c5a6
+coverage: 1
+learned_at: 2026-10-15 22:35:44
+nodes: [SaveVideo, LoadImage, MuyeTextEditOutput, RH_CinematicVideoGenerator]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/seedance2.0_2034471481182261250.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2034471481182261250.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（4 个）：
+- `SaveVideo`
+- `LoadImage`
+- `MuyeTextEditOutput`
+- `RH_CinematicVideoGenerator`
+
+## 知识
+
+覆盖率 **100%**（4/4）
+
+**有卡**：`SaveVideo`、`LoadImage`、`MuyeTextEditOutput`、`RH_CinematicVideoGenerator`
+
+**用到的条目**：LoadImage、MuyeTextEditOutput、SaveVideo、RH_CinematicVideoGenerator、sd15-t2i-basic、sd15-t2i-lora、Text、SaveImage

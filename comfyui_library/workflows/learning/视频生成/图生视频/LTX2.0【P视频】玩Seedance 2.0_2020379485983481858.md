@@ -1,0 +1,240 @@
+---
+key: 视频生成/图生视频/LTX2.0【P视频】玩Seedance 2.0_2020379485983481858.json
+name: LTX2.0【P视频】玩Seedance 2.0_2020379485983481858.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2020379485983481858.json
+hash: 13c866663aba0fd9
+coverage: 0.675
+learned_at: 2026-10-15 22:35:06
+nodes: [PrimitiveInt, ImageFromBatch, GetNode, PrimitiveInt, PrimitiveInt, DWPreprocessor, EmptyLTXVLatentVideo, LTXVEmptyLatentAudio, SetNode, ImageResizeKJv2, SetNode, LTXVAddGuide, RandomNoise, GetNode, GetNode, GetImageSize, ImageScaleBy, Int, Display Any (rgthree), MelBandRoFormerModelLoader, GetNode, GetImageSize+, SolidMask, TrimAudioDuration, CM_IntToFloat, LTXVAudioVAEEncode, SetLatentNoiseMask, GetNode, SetNode, SetNode, CFGGuider, LTXVLatentUpsampler, LatentUpscaleModelLoader, KSamplerSelect, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVImgToVideoInplace, GetNode, SetNode, GetNode, GetNode, CreateVideo, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, EmptyFlux2LatentImage, Flux2Scheduler, CFGGuider, RandomNoise, KSamplerSelect, UNETLoader, CLIPLoader, SamplerCustomAdvanced, GetNode, GetNode, GetNode, SaveImage, SaveImage, RH_Nano_Banana2_Image2Image, RH_Jimeng4_Image2Image, GetNode, GetNode, ManualSigmas, RandomNoise, ImageFromBatch, SetNode, GetNode, GetNode, GetNode, LTXVChunkFeedForward, SetNode, SetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, VAELoaderKJ, VAELoaderKJ, KSamplerSelect, LTXVConcatAVLatent, GetNode, LoraLoaderModelOnly, SetNode, GetNode, ManualSigmas, LTXVCropGuides, ReferenceLatent, CLIPTextEncode, CLIPTextEncode, ImageScaleToTotalPixels, ReferenceLatent, VAEEncode, GetImageSize, ReferenceLatent, ImageScaleToTotalPixels, ImageResizeKJv2, LayerUtility: PurgeVRAM, Reroute, TDQwen3TTSModelLoader, CheckpointLoaderSimple, HAIGC_VideoTrim, Qwen3TTSVoiceClone, LTXVScheduler, SaveAudioMP3, LayerUtility: PurgeVRAM, CheckpointLoaderSimple, ImageFromBatch, CreateVideo, GetNode, MelBandRoFormerSampler, FB_Qwen3TTSVoiceDesign, GetNode, SaveAudio, SetNode, GetNode, GetNode, ImageFromBatch, GetNode, CreateVideo, GetNode, SaveVideo, SaveVideo, WhisperSTT, VAEDecodeTiled, VAEDecodeTiled, LTXVAudioVAELoader, GetNode, GetNode, GetNode, GetNode, SaveAudioMP3, SaveImage, CR Text, LTXVConditioning, easy cleanGpuUsed, LoadImage, WhisperSTT, ReferenceLatent, VAEEncode, CR Text, SetNode, SetNode, SetNode, PreviewImage, GetImageRangeFromBatch, Int, DualCLIPLoader, LTXAVTextEncoderLoader, easy cleanGpuUsed, Reroute, CLIPTextEncode, CLIPTextEncode, easy cleanGpuUsed, easy cleanGpuUsed, CFGGuider, SamplerCustomAdvanced, easy cleanGpuUsed, LTXVSeparateAVLatent, easy cleanGpuUsed, LTXVSeparateAVLatent, Fast Groups Bypasser (rgthree), VHS_LoadVideo, LTXVImgToVideoInplace, LoadImage, Note _O, SetNode, Note _O, LoadImage, Display Any (rgthree), VHS_VideoInfoSource, CR Value, MathExpression|pysssss, MathExpression|pysssss, Display Any (rgthree), SetNode, Display Any (rgthree), GetNode, SetNode, SetNode, InversionDemoLazySwitch, CR Value, MathExpression|pysssss, Int, easy compare, SetNode, GetNode, MathExpression|pysssss, SaveVideo, GetNode, MathExpression|pysssss, VAEDecodeTiled, GetNode, MathExpression|pysssss, VHS_VideoCombine, Display Any (rgthree), VAEDecode, CR Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-distilled-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.0【P视频】玩Seedance 2.0_2020379485983481858.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2020379485983481858.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（200 个）：
+- `PrimitiveInt`
+- `ImageFromBatch`
+- `GetNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `DWPreprocessor`
+- `EmptyLTXVLatentVideo`
+- `LTXVEmptyLatentAudio` ★核心
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `LTXVAddGuide`
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `GetImageSize`
+- `ImageScaleBy`
+- `Int`
+- `Display Any (rgthree)`
+- `MelBandRoFormerModelLoader`
+- `GetNode`
+- `GetImageSize+`
+- `SolidMask`
+- `TrimAudioDuration`
+- `CM_IntToFloat`
+- `LTXVAudioVAEEncode` ★核心
+- `SetLatentNoiseMask`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `CFGGuider`
+- `LTXVLatentUpsampler` ★核心
+- `LatentUpscaleModelLoader`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CreateVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAELoader`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SaveImage`
+- `SaveImage`
+- `RH_Nano_Banana2_Image2Image`
+- `RH_Jimeng4_Image2Image`
+- `GetNode`
+- `GetNode`
+- `ManualSigmas`
+- `RandomNoise`
+- `ImageFromBatch`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVChunkFeedForward`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `GetNode`
+- `ManualSigmas`
+- `LTXVCropGuides`
+- `ReferenceLatent`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageScaleToTotalPixels`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `GetImageSize`
+- `ReferenceLatent`
+- `ImageScaleToTotalPixels`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM`
+- `Reroute`
+- `TDQwen3TTSModelLoader`
+- `CheckpointLoaderSimple` ★核心
+- `HAIGC_VideoTrim`
+- `Qwen3TTSVoiceClone`
+- `LTXVScheduler`
+- `SaveAudioMP3`
+- `LayerUtility: PurgeVRAM`
+- `CheckpointLoaderSimple` ★核心
+- `ImageFromBatch`
+- `CreateVideo`
+- `GetNode`
+- `MelBandRoFormerSampler` ★核心
+- `FB_Qwen3TTSVoiceDesign`
+- `GetNode`
+- `SaveAudio`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ImageFromBatch`
+- `GetNode`
+- `CreateVideo`
+- `GetNode`
+- `SaveVideo`
+- `SaveVideo`
+- `WhisperSTT`
+- `VAEDecodeTiled` ★核心
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAELoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SaveAudioMP3`
+- `SaveImage`
+- `CR Text`
+- `LTXVConditioning`
+- `easy cleanGpuUsed`
+- `LoadImage`
+- `WhisperSTT`
+- `ReferenceLatent`
+- `VAEEncode` ★核心
+- `CR Text`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `GetImageRangeFromBatch`
+- `Int`
+- `DualCLIPLoader`
+- `LTXAVTextEncoderLoader`
+- `easy cleanGpuUsed`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `LTXVSeparateAVLatent`
+- `easy cleanGpuUsed`
+- `LTXVSeparateAVLatent`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_LoadVideo`
+- `LTXVImgToVideoInplace`
+- `LoadImage`
+- `Note _O`
+- `SetNode`
+- `Note _O`
+- `LoadImage`
+- `Display Any (rgthree)`
+- `VHS_VideoInfoSource`
+- `CR Value`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `Display Any (rgthree)`
+- `SetNode`
+- `Display Any (rgthree)`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `InversionDemoLazySwitch`
+- `CR Value`
+- `MathExpression|pysssss`
+- `Int`
+- `easy compare`
+- `SetNode`
+- `GetNode`
+- `MathExpression|pysssss`
+- `SaveVideo`
+- `GetNode`
+- `MathExpression|pysssss`
+- `VAEDecodeTiled` ★核心
+- `GetNode`
+- `MathExpression|pysssss`
+- `VHS_VideoCombine`
+- `Display Any (rgthree)`
+- `VAEDecode` ★核心
+- `CR Text`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2-19b-distilled-fp8.safetensors`
+
+## 知识
+
+覆盖率 **68%**（135/200）
+
+**有卡**：`ImageFromBatch`、`DWPreprocessor`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`ImageResizeKJv2`、`LTXVAddGuide`、`RandomNoise`、`GetImageSize`、`ImageScaleBy`、`Int`、`Display Any (rgthree)`、`MelBandRoFormerModelLoader`、`GetImageSize+`、`SolidMask`、`TrimAudioDuration`、`CM_IntToFloat`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`CFGGuider`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`KSamplerSelect`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXVImgToVideoInplace`、`CreateVideo`、`VAELoader`、`EmptyFlux2LatentImage`、`Flux2Scheduler`、`UNETLoader`、`CLIPLoader`、`SaveImage`、`RH_Nano_Banana2_Image2Image`、`RH_Jimeng4_Image2Image`、`ManualSigmas`、`LTXVChunkFeedForward`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXVCropGuides`、`ReferenceLatent`、`CLIPTextEncode`、`ImageScaleToTotalPixels`、`VAEEncode`、`LayerUtility: PurgeVRAM`、`TDQwen3TTSModelLoader`、`CheckpointLoaderSimple`、`HAIGC_VideoTrim`、`Qwen3TTSVoiceClone`、`LTXVScheduler`、`SaveAudioMP3`、`MelBandRoFormerSampler`、`FB_Qwen3TTSVoiceDesign`、`SaveAudio`、`SaveVideo`、`WhisperSTT`、`VAEDecodeTiled`、`LTXVAudioVAELoader`、`CR Text`、`LTXVConditioning`、`easy cleanGpuUsed`、`LoadImage`、`GetImageRangeFromBatch`、`DualCLIPLoader`、`LTXAVTextEncoderLoader`、`LTXVSeparateAVLatent`、`VHS_LoadVideo`、`Note _O`、`VHS_VideoInfoSource`、`CR Value`、`MathExpression|pysssss`、`InversionDemoLazySwitch`、`easy compare`、`VHS_VideoCombine`、`VAEDecode`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage

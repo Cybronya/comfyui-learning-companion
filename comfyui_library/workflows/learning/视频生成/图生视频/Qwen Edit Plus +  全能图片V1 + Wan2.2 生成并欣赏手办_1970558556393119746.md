@@ -1,0 +1,95 @@
+---
+key: 视频生成/图生视频/Qwen Edit Plus +  全能图片V1 + Wan2.2 生成并欣赏手办_1970558556393119746.json
+name: Qwen Edit Plus +  全能图片V1 + Wan2.2 生成并欣赏手办_1970558556393119746.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1970558556393119746.json
+hash: e827b616ee21ed90
+coverage: 0.867925
+learned_at: 2026-10-15 22:31:53
+nodes: [Note, CLIPLoader, ConditioningZeroOut, VAEDecode, VAELoader, RH_Translator, easy showAnything, RH_LLMAPI_NODE, easy showAnything, SaveImage, KSampler, TextEncodeQwenImageEditPlus_lrzjason, SaveImage, LoadImage, UNETLoader, CR Prompt Text, Note, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoDecode, WanVideoSetLoRAs, GetImageSizeAndCount, WanVideoBlockSwap, WanVideoSampler, PrimitiveNode, LoadWanVideoT5TextEncoder, WanVideoSampler, Note, VHS_VideoCombine, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoTextEncode, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, Note, WanVideoTorchCompileSettings, WanVideoBlockSwap, JWInteger, WanVideoScheduler, Float, WanVideoSigmaToStep, CreateCFGScheduleFloatList, WanVideoLoraSelect, WanVideoScheduler, WanVideoImageToVideoEncode, WanVideoVAELoader, INTConstant, JWInteger, RH_Nano_Banana_Image2Image, LayerUtility: ImageScaleByAspectRatio V2, Text]
+patterns: []
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "beta57", "seed": 121871185394746, "steps": 30}
+---
+
+# 视频生成/图生视频/Qwen Edit Plus +  全能图片V1 + Wan2.2 生成并欣赏手办_1970558556393119746.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1970558556393119746.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（53 个）：
+- `Note`
+- `CLIPLoader`
+- `ConditioningZeroOut`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `RH_Translator`
+- `easy showAnything`
+- `RH_LLMAPI_NODE`
+- `easy showAnything`
+- `SaveImage`
+- `KSampler` ★核心
+- `TextEncodeQwenImageEditPlus_lrzjason`
+- `SaveImage`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `CR Prompt Text`
+- `Note`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoDecode`
+- `WanVideoSetLoRAs`
+- `GetImageSizeAndCount`
+- `WanVideoBlockSwap`
+- `WanVideoSampler` ★核心
+- `PrimitiveNode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSampler` ★核心
+- `Note`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncode`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `Note`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `JWInteger`
+- `WanVideoScheduler`
+- `Float`
+- `WanVideoSigmaToStep`
+- `CreateCFGScheduleFloatList`
+- `WanVideoLoraSelect`
+- `WanVideoScheduler`
+- `WanVideoImageToVideoEncode`
+- `WanVideoVAELoader`
+- `INTConstant`
+- `JWInteger`
+- `RH_Nano_Banana_Image2Image`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Text`
+
+## 关键参数
+
+- `seed` = `121871185394746`
+- `steps` = `30`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `beta57`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **87%**（46/53）
+
+**有卡**：`CLIPLoader`、`ConditioningZeroOut`、`VAEDecode`、`VAELoader`、`RH_Translator`、`RH_LLMAPI_NODE`、`SaveImage`、`KSampler`、`TextEncodeQwenImageEditPlus_lrzjason`、`LoadImage`、`UNETLoader`、`CR Prompt Text`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoDecode`、`GetImageSizeAndCount`、`WanVideoBlockSwap`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`WanVideoTextEncode`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`JWInteger`、`WanVideoScheduler`、`Float`、`WanVideoSigmaToStep`、`CreateCFGScheduleFloatList`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`INTConstant`、`RH_Nano_Banana_Image2Image`、`LayerUtility: ImageScaleByAspectRatio V2`、`Text`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPLoader、ConditioningZeroOut、LoadImage、UNETLoader、WanVideoSampler

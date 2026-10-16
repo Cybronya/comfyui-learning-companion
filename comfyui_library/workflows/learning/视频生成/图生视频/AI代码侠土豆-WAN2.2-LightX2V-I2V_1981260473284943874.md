@@ -1,0 +1,89 @@
+---
+key: 视频生成/图生视频/AI代码侠土豆-WAN2.2-LightX2V-I2V_1981260473284943874.json
+name: AI代码侠土豆-WAN2.2-LightX2V-I2V_1981260473284943874.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1981260473284943874.json
+hash: 7994891329dde640
+coverage: 0.595745
+learned_at: 2026-10-15 22:32:37
+nodes: [ImpactInt, SimpleMath+, SetNode, SetNode, SetNode, CLIPLoader, UNETLoader, GetNode, SetNode, CLIPTextEncode, SetNode, GetNode, GetNode, GetNode, LoraLoaderModelOnly, SetNode, PathchSageAttentionKJ, PathchSageAttentionKJ, GetNode, ImageResizeKJv2, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, RIFE VFI, VHS_VideoCombine, VHS_VideoCombine, VAELoader, GetNode, VAEDecode, easy cleanGpuUsed, WanMoeKSampler, UNETLoader, ImpactInt, ImpactInt, wanBlockSwap, ModelPatchTorchSettings, WanImageToVideo, ModelPatchTorchSettings, wanBlockSwap, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPTextEncode, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "euler", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "fixed"}
+---
+
+# 视频生成/图生视频/AI代码侠土豆-WAN2.2-LightX2V-I2V_1981260473284943874.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1981260473284943874.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（47 个）：
+- `ImpactInt`
+- `SimpleMath+`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `GetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `GetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VAELoader`
+- `GetNode`
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `WanMoeKSampler` ★核心
+- `UNETLoader` ★核心
+- `ImpactInt`
+- `ImpactInt`
+- `wanBlockSwap`
+- `ModelPatchTorchSettings`
+- `WanImageToVideo`
+- `ModelPatchTorchSettings`
+- `wanBlockSwap`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **60%**（28/47）
+
+**有卡**：`ImpactInt`、`SimpleMath+`、`CLIPLoader`、`UNETLoader`、`CLIPTextEncode`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`ImageResizeKJv2`、`RIFE VFI`、`VHS_VideoCombine`、`VAELoader`、`VAEDecode`、`easy cleanGpuUsed`、`WanMoeKSampler`、`wanBlockSwap`、`ModelPatchTorchSettings`、`WanImageToVideo`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler

@@ -1,0 +1,100 @@
+---
+key: 视频生成/图生视频/LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话_2056632746793070593.json
+name: LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话_2056632746793070593.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2056632746793070593.json
+hash: 93f0f3e75404e965
+coverage: 0.885246
+learned_at: 2026-10-15 22:38:05
+nodes: [SamplerEulerAncestral, ManualSigmas, ImpactConditionalBranch, PlaySound|pysssss, LTXVEnhanceAVideoKJ, ComfyMathExpression, ComfyMathExpression, Note, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVSeparateAVLatent, CFGGuider, LTX2_NAG, LTXVAudioVAEEncode, LoadImage, LTXVPreprocess, LTXVAddGuide, LTXVAddGuide, ModelPatchTorchSettings, LoraLoaderModelOnly, VAELoaderKJ, VAELoaderKJ, DualCLIPLoaderGGUF, SolidMask, LoraLoaderModelOnly, CLIPTextEncode, LTXVConditioning, GetImageSize, EmptyLTXVLatentVideo, LTXVPreprocess, LTXVPreprocess, LTXVEmptyLatentAudio, UnetLoaderGGUF, LTXVPreprocess, LTXVPreprocess, LTXVCropGuides, RandomNoise, PathchSageAttentionKJ, LTXVChunkFeedForward, LTX2SamplingPreviewOverride, LTXVAddGuide, LTXVAddGuide, LTXVAddGuide, LoraLoaderModelOnly, SamplerCustomAdvanced, SetLatentNoiseMask, LTXVConcatAVLatent, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveInt, LoadImage, LoadImage, LoadImage, LoadImage, PromptRelayEncodeTimeline, VHS_VideoCombine, PrimitiveNode, LoadAudio, Note, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话_2056632746793070593.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2056632746793070593.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（61 个）：
+- `SamplerEulerAncestral` ★核心
+- `ManualSigmas`
+- `ImpactConditionalBranch`
+- `PlaySound|pysssss`
+- `LTXVEnhanceAVideoKJ`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `Note`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `LTXVSeparateAVLatent`
+- `CFGGuider`
+- `LTX2_NAG`
+- `LTXVAudioVAEEncode` ★核心
+- `LoadImage`
+- `LTXVPreprocess`
+- `LTXVAddGuide`
+- `LTXVAddGuide`
+- `ModelPatchTorchSettings`
+- `LoraLoaderModelOnly` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoaderGGUF`
+- `SolidMask`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `GetImageSize`
+- `EmptyLTXVLatentVideo`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `LTXVEmptyLatentAudio` ★核心
+- `UnetLoaderGGUF` ★核心
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `LTXVCropGuides`
+- `RandomNoise`
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `LTX2SamplingPreviewOverride`
+- `LTXVAddGuide`
+- `LTXVAddGuide`
+- `LTXVAddGuide`
+- `LoraLoaderModelOnly` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `PromptRelayEncodeTimeline`
+- `VHS_VideoCombine`
+- `PrimitiveNode`
+- `LoadAudio`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **89%**（54/61）
+
+**有卡**：`SamplerEulerAncestral`、`ManualSigmas`、`ImpactConditionalBranch`、`PlaySound|pysssss`、`LTXVEnhanceAVideoKJ`、`ComfyMathExpression`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVSeparateAVLatent`、`CFGGuider`、`LTX2_NAG`、`LTXVAudioVAEEncode`、`LoadImage`、`LTXVPreprocess`、`LTXVAddGuide`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`VAELoaderKJ`、`DualCLIPLoaderGGUF`、`SolidMask`、`CLIPTextEncode`、`LTXVConditioning`、`GetImageSize`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`UnetLoaderGGUF`、`LTXVCropGuides`、`RandomNoise`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`LTX2SamplingPreviewOverride`、`SamplerCustomAdvanced`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`PromptRelayEncodeTimeline`、`VHS_VideoCombine`、`LoadAudio`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、CFGGuider、SamplerCustomAdvanced、SamplerEulerAncestral、LTXVConcatAVLatent、LTXVSeparateAVLatent

@@ -1,0 +1,86 @@
+---
+key: 视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json
+name: Wan2.1-单人视频生视频图片生视频_2042489270400720898.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2042489270400720898.json
+hash: 16378fdcdd697204
+coverage: 0.833333
+learned_at: 2026-10-15 22:36:28
+nodes: [Anything Everywhere, Anything Everywhere, AudioSeparation, DownloadAndLoadWav2VecModel, GetNode, WanVideoVAELoader, LoadWanVideoT5TextEncoder, PreviewAudio, Anything Everywhere, easy cleanGpuUsed, WanVideoSetBlockSwap, MathExpression|pysssss, MathExpression|pysssss, Audio Duration (mtb), WanVideoTextEncode, MultiTalkModelLoader, WanVideoBlockSwap, WanVideoLoraSelect, MultiTalkWav2VecEmbeds, AudioCombine, AudioCombine, AudioCombine, CLIPVisionLoader, LayerUtility: PurgeVRAM V2, SetNode, CR Text, WanVideoDecode, ImageCASharpening+, WanVideoImageToVideoMultiTalk, SaveAudio, WanVideoSampler, WanVideoSLG, CogVideoEnhanceAVideo, WanVideoClipVisionEncode, WanVideoEncode, kkGetImage, VHS_VideoCombine, WanVideoTorchCompileSettings, ImageResize+, WanVideoModelLoader, ImageLoaderAdvanced, VHS_LoadVideo, Audio Remixer, Load Audio Separation Model, SaveAudio, ImpactSwitch, Int, Note, VHS_LoadVideo, AudioCrop, LoadAudio, Note, PreviewAudio, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2042489270400720898.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（54 个）：
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `GetNode`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `PreviewAudio`
+- `Anything Everywhere`
+- `easy cleanGpuUsed`
+- `WanVideoSetBlockSwap`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `Audio Duration (mtb)`
+- `WanVideoTextEncode`
+- `MultiTalkModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `MultiTalkWav2VecEmbeds`
+- `AudioCombine`
+- `AudioCombine`
+- `AudioCombine`
+- `CLIPVisionLoader`
+- `LayerUtility: PurgeVRAM V2`
+- `SetNode`
+- `CR Text`
+- `WanVideoDecode`
+- `ImageCASharpening+`
+- `WanVideoImageToVideoMultiTalk`
+- `SaveAudio`
+- `WanVideoSampler` ★核心
+- `WanVideoSLG`
+- `CogVideoEnhanceAVideo`
+- `WanVideoClipVisionEncode`
+- `WanVideoEncode`
+- `kkGetImage`
+- `VHS_VideoCombine`
+- `WanVideoTorchCompileSettings`
+- `ImageResize+`
+- `WanVideoModelLoader`
+- `ImageLoaderAdvanced`
+- `VHS_LoadVideo`
+- `Audio Remixer`
+- `Load Audio Separation Model`
+- `SaveAudio`
+- `ImpactSwitch`
+- `Int`
+- `Note`
+- `VHS_LoadVideo`
+- `AudioCrop`
+- `LoadAudio`
+- `Note`
+- `PreviewAudio`
+- `Note`
+
+## 知识
+
+覆盖率 **83%**（45/54）
+
+**有卡**：`AudioSeparation`、`DownloadAndLoadWav2VecModel`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`PreviewAudio`、`easy cleanGpuUsed`、`WanVideoSetBlockSwap`、`MathExpression|pysssss`、`Audio Duration (mtb)`、`WanVideoTextEncode`、`MultiTalkModelLoader`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`MultiTalkWav2VecEmbeds`、`AudioCombine`、`CLIPVisionLoader`、`LayerUtility: PurgeVRAM V2`、`CR Text`、`WanVideoDecode`、`ImageCASharpening+`、`WanVideoImageToVideoMultiTalk`、`SaveAudio`、`WanVideoSampler`、`WanVideoSLG`、`CogVideoEnhanceAVideo`、`WanVideoClipVisionEncode`、`WanVideoEncode`、`kkGetImage`、`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`ImageResize+`、`WanVideoModelLoader`、`ImageLoaderAdvanced`、`VHS_LoadVideo`、`Audio Remixer`、`Load Audio Separation Model`、`Int`、`AudioCrop`、`LoadAudio`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoEncode、WanVideoLoraSelect

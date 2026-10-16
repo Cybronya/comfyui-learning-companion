@@ -1,0 +1,41 @@
+---
+key: 视频生成/图生视频/Wan2.7 视频换脸_2044689517751308290.json
+name: Wan2.7 视频换脸_2044689517751308290.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2044689517751308290.json
+hash: 0757303dd3f5d22a
+coverage: 0.444444
+learned_at: 2026-10-15 22:36:40
+nodes: [MarkdownNote, LoadImage, MarkdownNote, MarkdownNote, LoadVideo, SaveVideo, RH_AlibabaWan27VideoEdit, MarkdownNote, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.7 视频换脸_2044689517751308290.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2044689517751308290.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（9 个）：
+- `MarkdownNote`
+- `LoadImage`
+- `MarkdownNote`
+- `MarkdownNote`
+- `LoadVideo`
+- `SaveVideo`
+- `RH_AlibabaWan27VideoEdit`
+- `MarkdownNote`
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **44%**（4/9）
+
+**有卡**：`LoadImage`、`LoadVideo`、`SaveVideo`、`RH_AlibabaWan27VideoEdit`
+
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_AlibabaWan27VideoEdit、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any

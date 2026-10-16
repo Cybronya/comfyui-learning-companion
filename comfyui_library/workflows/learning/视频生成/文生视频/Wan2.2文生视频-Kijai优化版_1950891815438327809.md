@@ -1,0 +1,57 @@
+---
+key: 视频生成/文生视频/Wan2.2文生视频-Kijai优化版_1950891815438327809.json
+name: Wan2.2文生视频-Kijai优化版_1950891815438327809.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1950891815438327809.json
+hash: 2ba16ac101d342e7
+coverage: 0.96
+learned_at: 2026-10-15 22:43:37
+nodes: [WanVideoDecode, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTorchCompileSettings, WanVideoVAELoader, WanVideoSetLoRAs, WanVideoLoraSelect, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, Int, Int, WanVideoSampler, WanVideoSampler, VHS_VideoCombine, MarkdownNote, WanVideoTextEncode, WanVideoEmptyEmbeds, SimpleMath+, Int, Int, Int, WanVideoBlockSwap, WanVideoModelLoader, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan2.2文生视频-Kijai优化版_1950891815438327809.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1950891815438327809.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Other
+
+**节点**（25 个）：
+- `WanVideoDecode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `LoadWanVideoT5TextEncoder`
+- `Int`
+- `Int`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `MarkdownNote`
+- `WanVideoTextEncode`
+- `WanVideoEmptyEmbeds`
+- `SimpleMath+`
+- `Int`
+- `Int`
+- `Int`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **96%**（24/25）
+
+**有卡**：`WanVideoDecode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`Int`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoTextEncode`、`WanVideoEmptyEmbeds`、`SimpleMath+`、`WanVideoBlockSwap`、`WanVideoModelLoader`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs、Int

@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/LTX2.3 _ 双图-首尾帧 优化版_2049303254957297665.json
+name: LTX2.3 _ 双图-首尾帧 优化版_2049303254957297665.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2049303254957297665.json
+hash: d58feb07ab1eb878
+coverage: 0.852459
+learned_at: 2026-10-15 22:37:13
+nodes: [LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, KSamplerSelect, Reroute, LTXVAudioVAEDecode, CLIPTextEncode, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVAudioVAELoader, CFGGuider, LTXVConditioning, RandomNoise, RandomNoise, LTXAVTextEncoderLoader, CLIPTextEncode, LatentUpscaleModelLoader, CreateVideo, PrimitiveInt, VAEDecodeTiled, CheckpointLoaderSimple, LTXVConcatAVLatent, ComfyMathExpression, LTXVPreprocess, LTXVLatentUpsampler, LTXVImgToVideoInplace, FloatConstant, SaveVideo, PathchSageAttentionKJ, LTXVChunkFeedForward, ModelPatchTorchSettings, LoraLoaderModelOnly, ManualSigmas, SimpleMath+, LTXVImgToVideoInplaceKJ, ComfyMathExpression, EmptyLTXVLatentVideo, ComfyMathExpression, ComfyMathExpression, PrimitiveInt, MarkdownNote, ResizeImagesByLongerEdge, ImageResizeKJv2, LTXVPreprocess, ResizeImagesByLongerEdge, ImageResizeKJv2, LoadImage, LoadImage, CombineImagesForQwen3VL, MarkdownNote, easy showAnything, AILab_QwenVL, PrimitiveStringMultiline, RH_LLMAPI_Pro_Node, PrimitiveInt, PrimitiveInt]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 _ 双图-首尾帧 优化版_2049303254957297665.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2049303254957297665.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（61 个）：
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAELoader`
+- `CFGGuider`
+- `LTXVConditioning`
+- `RandomNoise`
+- `RandomNoise`
+- `LTXAVTextEncoderLoader`
+- `CLIPTextEncode` ★核心
+- `LatentUpscaleModelLoader`
+- `CreateVideo`
+- `PrimitiveInt`
+- `VAEDecodeTiled` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LTXVConcatAVLatent`
+- `ComfyMathExpression`
+- `LTXVPreprocess`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `FloatConstant`
+- `SaveVideo`
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `ModelPatchTorchSettings`
+- `LoraLoaderModelOnly` ★核心
+- `ManualSigmas`
+- `SimpleMath+`
+- `LTXVImgToVideoInplaceKJ`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `PrimitiveInt`
+- `MarkdownNote`
+- `ResizeImagesByLongerEdge`
+- `ImageResizeKJv2`
+- `LTXVPreprocess`
+- `ResizeImagesByLongerEdge`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadImage`
+- `CombineImagesForQwen3VL`
+- `MarkdownNote`
+- `easy showAnything`
+- `AILab_QwenVL`
+- `PrimitiveStringMultiline`
+- `RH_LLMAPI_Pro_Node`
+- `PrimitiveInt`
+- `PrimitiveInt`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+
+## 知识
+
+覆盖率 **85%**（52/61）
+
+**有卡**：`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LTXVAudioVAELoader`、`LTXVConditioning`、`RandomNoise`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`CreateVideo`、`VAEDecodeTiled`、`CheckpointLoaderSimple`、`ComfyMathExpression`、`LTXVPreprocess`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`FloatConstant`、`SaveVideo`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`ModelPatchTorchSettings`、`LoraLoaderModelOnly`、`SimpleMath+`、`LTXVImgToVideoInplaceKJ`、`EmptyLTXVLatentVideo`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`LoadImage`、`CombineImagesForQwen3VL`、`AILab_QwenVL`、`RH_LLMAPI_Pro_Node`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

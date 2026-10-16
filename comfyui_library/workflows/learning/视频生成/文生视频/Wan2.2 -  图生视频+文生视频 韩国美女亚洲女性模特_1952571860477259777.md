@@ -1,0 +1,86 @@
+---
+key: 视频生成/文生视频/Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571860477259777.json
+name: Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571860477259777.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1952571860477259777.json
+hash: e1edf87f7998f664
+coverage: 0.923077
+learned_at: 2026-10-15 22:43:38
+nodes: [KSampler, CLIPTextEncode, VHS_VideoCombine, VHS_VideoCombine, KSampler, VAEDecode, VAELoader, VAELoader, VAEDecode, LoadImage, CLIPLoader, UNETLoader, CLIPTextEncode, ModelSamplingSD3, CLIPLoader, LoraLoader, CLIPTextEncode, CLIPTextEncode, ModelSamplingSD3, LoraLoader, UNETLoader, VHS_VideoCombine, Fast Groups Bypasser (rgthree), WanImageToVideo, EmptyHunyuanLatentVideo, Fast Groups Bypasser (rgthree)]
+patterns: [lora]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "lora_name": "t2v韩国女SeoullinaComplete.AkCZ.safetensors", "sampler_name": "sa_solver", "scheduler": "beta", "seed": 1, "steps": 4, "strength_clip": 1, "strength_model": 1}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/文生视频/Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571860477259777.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1952571860477259777.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（26 个）：
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `VAELoader`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `LoraLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `LoraLoader` ★核心
+- `UNETLoader` ★核心
+- `VHS_VideoCombine`
+- `Fast Groups Bypasser (rgthree)`
+- `WanImageToVideo`
+- `EmptyHunyuanLatentVideo`
+- `Fast Groups Bypasser (rgthree)`
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `seed` = `1`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `lora_name` = `t2v韩国女SeoullinaComplete.AkCZ.safetensors`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+
+## 知识
+
+覆盖率 **92%**（24/26）
+
+**有卡**：`KSampler`、`CLIPTextEncode`、`VHS_VideoCombine`、`VAEDecode`、`VAELoader`、`LoadImage`、`CLIPLoader`、`UNETLoader`、`ModelSamplingSD3`、`LoraLoader`、`WanImageToVideo`、`EmptyHunyuanLatentVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、EmptyHunyuanLatentVideo
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

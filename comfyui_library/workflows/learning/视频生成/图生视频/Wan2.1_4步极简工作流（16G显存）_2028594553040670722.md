@@ -1,0 +1,61 @@
+---
+key: 视频生成/图生视频/Wan2.1_4步极简工作流（16G显存）_2028594553040670722.json
+name: Wan2.1_4步极简工作流（16G显存）_2028594553040670722.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2028594553040670722.json
+hash: 87b9ba2c11302b86
+coverage: 0.833333
+learned_at: 2026-10-15 22:35:19
+nodes: [CLIPVisionLoader, PrimitiveInt, PrimitiveInt, CheckpointLoaderSimple, VAELoader, CLIPLoader, ImageScale, ImageScaleToTotalPixels, CLIPTextEncode, CLIPVisionEncode, CLIPTextEncode, ModelSamplingSD3, VAEDecode, LoadImage, WanImageToVideo, Note, KSamplerAdvanced, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "checkpoint": "wan21Lightspeed_lightspeedI2v14B720p.safetensors", "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.1_4步极简工作流（16G显存）_2028594553040670722.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2028594553040670722.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（18 个）：
+- `CLIPVisionLoader`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `CheckpointLoaderSimple` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `ImageScale`
+- `ImageScaleToTotalPixels`
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `WanImageToVideo`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `checkpoint` = `wan21Lightspeed_lightspeedI2v14B720p.safetensors`
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **83%**（15/18）
+
+**有卡**：`CLIPVisionLoader`、`CheckpointLoaderSimple`、`VAELoader`、`CLIPLoader`、`ImageScale`、`ImageScaleToTotalPixels`、`CLIPTextEncode`、`CLIPVisionEncode`、`ModelSamplingSD3`、`VAEDecode`、`LoadImage`、`WanImageToVideo`、`KSamplerAdvanced`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、CLIPVisionEncode

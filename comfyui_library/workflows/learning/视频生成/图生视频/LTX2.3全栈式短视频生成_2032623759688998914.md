@@ -1,0 +1,247 @@
+---
+key: 视频生成/图生视频/LTX2.3全栈式短视频生成_2032623759688998914.json
+name: LTX2.3全栈式短视频生成_2032623759688998914.json
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2032623759688998914.json
+hash: c73f9e285fc14987
+coverage: 0.619048
+learned_at: 2026-10-15 22:35:36
+nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, DirectorVideoPromptLoader, EmptyLatentImage, GetNode, DirectorAudioScriptLoader, GetNode, DirectorVisualStoryboardLoader, GetNode, SetNode, SetNode, ResizeImageMaskNode, ResizeImagesByLongerEdge, CR Text, PrimitiveStringMultiline, easy mathString, EmptyImage, easy ifElse, CLIPTextEncode, CR Text, CR Text, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVPreprocess, easy promptConcat, CR Text, SetNode, SetNode, GetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, CR Text, CR Text, CR Text, SetNode, LTXVConditioning, LTX2_NAG, GetNode, GetNode, GetNode, GetNode, RandomNoise, CFGGuider, KSamplerSelect, SamplerCustomAdvanced, LTXVEmptyLatentAudio, LTXVConcatAVLatent, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, easy ifElse, ManualSigmas, ManualSigmas, LTXVCropGuides, GetNode, Reroute, LTXVLatentUpsampler, LTXVSeparateAVLatent, LTXVImgToVideoInplace, CFGGuider, RandomNoise, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, LTXVSeparateAVLatent, CR Text, PathchSageAttentionKJ, SetNode, SetNode, LTXVChunkFeedForward, SetNode, SetNode, SetNode, SetNode, SetNode, INTConstant, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, INTConstant, INTConstant, INTConstant, INTConstant, INTConstant, ModelPatchTorchSettings, SetNode, GetNode, RTXVideoSuperResolution, RTXVideoSuperResolution, RTXVideoSuperResolution, SetNode, CR Text, PreviewImage, SetNode, PreviewImage, easy promptReplace, GetNode, GetNode, GetNode, GetNode, easy promptConcat, SetNode, CFGNorm, SetNode, easy promptConcat, RegexExtract, easy promptConcat, easy promptLine, easy positive, easy positive, ModelSamplingAuraFlow, JoinStringMulti, PrimitiveBoolean, TextEncodeQwenImageEditPlus, TextEncodeQwenImageEditPlus, KSampler, GetNode, GetNode, GetNode, VAEDecode, DirectorOrderGate, SetNode, SetNode, ShowText|pysssss, DirectorSceneIterator, ShowText|pysssss, easy promptConcat, CR Text, Text Concatenate, LoadImage, LoadImage, LoadImage, MarkdownNote, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LatentUpscaleModelLoader, CLIPLoader, VAELoader, CLIPTextEncode, SamplerCustomAdvanced, LTXVAudioVAEDecode, GetNode, CR Text, llama_cpp_model_loader, LayerUtility: PurgeVRAM V2, VAEDecodeTiled, RTXVideoSuperResolution, DirectorCasting, easy positive, easy positive, easy positive, easy indexAnything, INTConstant, RTXVideoSuperResolution, PreviewImage, easy ifElse, SaveImage, RTXVideoSuperResolution, easy ifElse, LoadImage, easy boolean, VHS_VideoCombine, easy indexAnything, UNETLoader, llama_cpp_instruct_adv, ShowText|pysssss, LayerUtility: PurgeVRAM V2, Fast Groups Bypasser (rgthree)]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1.2, "denoise": 1, "height": 25, "sampler_name": "lcm", "scheduler": "simple", "seed": 43, "steps": 4, "width": 97}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/LTX2.3全栈式短视频生成_2032623759688998914.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2032623759688998914.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（189 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DirectorVideoPromptLoader`
+- `EmptyLatentImage` ★核心
+- `GetNode`
+- `DirectorAudioScriptLoader`
+- `GetNode`
+- `DirectorVisualStoryboardLoader`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `ResizeImageMaskNode`
+- `ResizeImagesByLongerEdge`
+- `CR Text`
+- `PrimitiveStringMultiline`
+- `easy mathString`
+- `EmptyImage`
+- `easy ifElse`
+- `CLIPTextEncode` ★核心
+- `CR Text`
+- `CR Text`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVPreprocess`
+- `easy promptConcat`
+- `CR Text`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `SetNode`
+- `LTXVConditioning`
+- `LTX2_NAG`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `RandomNoise`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `EmptyLTXVLatentVideo`
+- `easy ifElse`
+- `ManualSigmas`
+- `ManualSigmas`
+- `LTXVCropGuides`
+- `GetNode`
+- `Reroute`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVImgToVideoInplace`
+- `CFGGuider`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `CR Text`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `SetNode`
+- `LTXVChunkFeedForward`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `ModelPatchTorchSettings`
+- `SetNode`
+- `GetNode`
+- `RTXVideoSuperResolution`
+- `RTXVideoSuperResolution`
+- `RTXVideoSuperResolution`
+- `SetNode`
+- `CR Text`
+- `PreviewImage`
+- `SetNode`
+- `PreviewImage`
+- `easy promptReplace`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy promptConcat`
+- `SetNode`
+- `CFGNorm`
+- `SetNode`
+- `easy promptConcat`
+- `RegexExtract`
+- `easy promptConcat`
+- `easy promptLine`
+- `easy positive`
+- `easy positive`
+- `ModelSamplingAuraFlow`
+- `JoinStringMulti`
+- `PrimitiveBoolean`
+- `TextEncodeQwenImageEditPlus`
+- `TextEncodeQwenImageEditPlus`
+- `KSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `DirectorOrderGate`
+- `SetNode`
+- `SetNode`
+- `ShowText|pysssss`
+- `DirectorSceneIterator`
+- `ShowText|pysssss`
+- `easy promptConcat`
+- `CR Text`
+- `Text Concatenate`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `MarkdownNote`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LatentUpscaleModelLoader`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `CR Text`
+- `llama_cpp_model_loader`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecodeTiled` ★核心
+- `RTXVideoSuperResolution`
+- `DirectorCasting`
+- `easy positive`
+- `easy positive`
+- `easy positive`
+- `easy indexAnything`
+- `INTConstant`
+- `RTXVideoSuperResolution`
+- `PreviewImage`
+- `easy ifElse`
+- `SaveImage`
+- `RTXVideoSuperResolution`
+- `easy ifElse`
+- `LoadImage`
+- `easy boolean`
+- `VHS_VideoCombine`
+- `easy indexAnything`
+- `UNETLoader` ★核心
+- `llama_cpp_instruct_adv`
+- `ShowText|pysssss`
+- `LayerUtility: PurgeVRAM V2`
+- `Fast Groups Bypasser (rgthree)`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `seed` = `43`
+- `steps` = `4`
+- `cfg` = `1.2`
+- `sampler_name` = `lcm`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **62%**（117/189）
+
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`DirectorVideoPromptLoader`、`EmptyLatentImage`、`DirectorAudioScriptLoader`、`DirectorVisualStoryboardLoader`、`ResizeImageMaskNode`、`ResizeImagesByLongerEdge`、`CR Text`、`easy mathString`、`EmptyImage`、`CLIPTextEncode`、`ComfyMathExpression`、`LTXVPreprocess`、`easy promptConcat`、`LTXVConditioning`、`LTX2_NAG`、`RandomNoise`、`CFGGuider`、`KSamplerSelect`、`SamplerCustomAdvanced`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`INTConstant`、`ModelPatchTorchSettings`、`RTXVideoSuperResolution`、`easy promptReplace`、`CFGNorm`、`RegexExtract`、`easy promptLine`、`easy positive`、`ModelSamplingAuraFlow`、`JoinStringMulti`、`PrimitiveBoolean`、`TextEncodeQwenImageEditPlus`、`KSampler`、`VAEDecode`、`DirectorOrderGate`、`DirectorSceneIterator`、`Text Concatenate`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`CLIPLoader`、`VAELoader`、`LTXVAudioVAEDecode`、`llama_cpp_model_loader`、`LayerUtility: PurgeVRAM V2`、`VAEDecodeTiled`、`DirectorCasting`、`easy indexAnything`、`SaveImage`、`easy boolean`、`VHS_VideoCombine`、`llama_cpp_instruct_adv`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

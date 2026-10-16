@@ -1,0 +1,103 @@
+---
+key: 视频生成/图生视频/Ltx2.3 PromptRelaySmart动作提示词控制_2054919936321040385.json
+name: Ltx2.3 PromptRelaySmart动作提示词控制_2054919936321040385.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2054919936321040385.json
+hash: 6fcbac09bc9c53fd
+coverage: 0.90625
+learned_at: 2026-10-15 22:37:53
+nodes: [LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, RandomNoise, Reroute, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM, RandomNoise, CFGGuider, LTXVSeparateAVLatent, LTXVCropGuides, ComfyMathExpression, LTXVConcatAVLatent, ManualSigmas, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVLatentUpsampler, LatentUpscaleModelLoader, LTXVLatentUpsampler, LTXVImgToVideoInplace, ManualSigmas, SamplerCustomAdvanced, ManualSigmas, CFGGuider, VHS_VideoCombine, LTX2_NAG, PrimitiveInt, PrimitiveInt, SamplerCustomAdvanced, ManualSigmas, KSamplerSelect, ManualSigmas, KSamplerSelect, LTXVConditioning, DualCLIPLoader, LTXVImgToVideoInplace, PrimitiveInt, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LoraLoaderModelOnly, ModelPatchTorchSettings, LTXVChunkFeedForward, PathchSageAttentionKJ, ImageResizeKJv2, CLIPTextEncode, LatentUpscaleModelLoader, LTXVConcatAVLatent, ResizeImagesByLongerEdge, LTXVPreprocess, ComfyMathExpression, PromptRelaySmartEncode, ComfyMathExpression, PrimitiveInt, LoadImage, UNETLoader, VAELoaderKJ, VAELoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ComfyMathExpression, LoadImage, Note, PromptRelaySmartEncode]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 44, "width": 97}
+---
+
+# 视频生成/图生视频/Ltx2.3 PromptRelaySmart动作提示词控制_2054919936321040385.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2054919936321040385.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（64 个）：
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `RandomNoise`
+- `Reroute`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: PurgeVRAM`
+- `RandomNoise`
+- `CFGGuider`
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `ComfyMathExpression`
+- `LTXVConcatAVLatent`
+- `ManualSigmas`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `LatentUpscaleModelLoader`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `VHS_VideoCombine`
+- `LTX2_NAG`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `KSamplerSelect` ★核心
+- `LTXVConditioning`
+- `DualCLIPLoader`
+- `LTXVImgToVideoInplace`
+- `PrimitiveInt`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchTorchSettings`
+- `LTXVChunkFeedForward`
+- `PathchSageAttentionKJ`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `LatentUpscaleModelLoader`
+- `LTXVConcatAVLatent`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `PromptRelaySmartEncode`
+- `ComfyMathExpression`
+- `PrimitiveInt`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ComfyMathExpression`
+- `LoadImage`
+- `Note`
+- `PromptRelaySmartEncode`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `44`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **91%**（58/64）
+
+**有卡**：`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`RandomNoise`、`LTXVSeparateAVLatent`、`LayerUtility: PurgeVRAM`、`CFGGuider`、`LTXVCropGuides`、`ComfyMathExpression`、`LTXVConcatAVLatent`、`ManualSigmas`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVLatentUpsampler`、`LatentUpscaleModelLoader`、`LTXVImgToVideoInplace`、`SamplerCustomAdvanced`、`VHS_VideoCombine`、`LTX2_NAG`、`KSamplerSelect`、`LTXVConditioning`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`ImageResizeKJv2`、`CLIPTextEncode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`PromptRelaySmartEncode`、`LoadImage`、`UNETLoader`、`VAELoaderKJ`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

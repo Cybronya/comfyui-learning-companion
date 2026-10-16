@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2045827374817742849.json
+name: 动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2045827374817742849.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2045827374817742849.json
+hash: 43cfad2a414d4b67
+coverage: 0.744186
+learned_at: 2026-10-15 22:36:52
+nodes: [WanVideoTextEncodeCached, OnnxDetectionModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoVAELoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, SetNode, CR Prompt Text, WanVideoContextOptions, PrimitiveNode, PrimitiveNode, WanVideoSamplerFromSettings, Reroute, GetImageSizeAndCount, PoseDetectionOneToAllAnimation, PreviewImage, ImageResizeKJv2, SetNode, VHS_VideoCombine, GetNode, SetNode, WanVideoEncode, ImageResizeKJv2, WanVideoImageToVideoEncode, WanVideoClipVisionEncode, WanVideoClipVisionEncode, GetImageRangeFromBatch, ImageConcatMulti, ImageConcatMulti, GetNode, CLIPVisionLoader, WanVideoSamplerSettings, WanVideoScheduler, WanVideoDecode, WanVideoAddSteadyDancerEmbeds, PreviewImage, LoadImage, VHS_VideoCombine, VHS_VideoCombine, VHS_LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/动作迁移 动作模仿  wan wan22 wan2.2 SteadyDancer_2045827374817742849.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2045827374817742849.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（43 个）：
+- `WanVideoTextEncodeCached`
+- `OnnxDetectionModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `SetNode`
+- `CR Prompt Text`
+- `WanVideoContextOptions`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `WanVideoSamplerFromSettings` ★核心
+- `Reroute`
+- `GetImageSizeAndCount`
+- `PoseDetectionOneToAllAnimation`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `WanVideoEncode`
+- `ImageResizeKJv2`
+- `WanVideoImageToVideoEncode`
+- `WanVideoClipVisionEncode`
+- `WanVideoClipVisionEncode`
+- `GetImageRangeFromBatch`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `GetNode`
+- `CLIPVisionLoader`
+- `WanVideoSamplerSettings` ★核心
+- `WanVideoScheduler`
+- `WanVideoDecode`
+- `WanVideoAddSteadyDancerEmbeds`
+- `PreviewImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+
+## 知识
+
+覆盖率 **74%**（32/43）
+
+**有卡**：`WanVideoTextEncodeCached`、`OnnxDetectionModelLoader`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`CR Prompt Text`、`WanVideoContextOptions`、`WanVideoSamplerFromSettings`、`GetImageSizeAndCount`、`PoseDetectionOneToAllAnimation`、`ImageResizeKJv2`、`VHS_VideoCombine`、`WanVideoEncode`、`WanVideoImageToVideoEncode`、`WanVideoClipVisionEncode`、`GetImageRangeFromBatch`、`ImageConcatMulti`、`CLIPVisionLoader`、`WanVideoSamplerSettings`、`WanVideoScheduler`、`WanVideoDecode`、`WanVideoAddSteadyDancerEmbeds`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、WanVideoSamplerFromSettings、WanVideoSamplerSettings、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode、WanVideoTextEncodeCached

@@ -1,0 +1,117 @@
+---
+key: 视频生成/图生视频/飞行少女飞行滑板多图首尾帧图生视频Wan2.2-Smooth Mix 超丝滑首尾帧工作流_2055911477286064130.json
+name: 飞行少女飞行滑板多图首尾帧图生视频Wan2.2-Smooth Mix 超丝滑首尾帧工作流_2055911477286064130.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2055911477286064130.json
+hash: f23b1a82113017f4
+coverage: 0.986667
+learned_at: 2026-10-15 22:37:59
+nodes: [Mute / Bypass Repeater (rgthree), PathchSageAttentionKJ, Fast Bypasser (rgthree), PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, UNETLoader, UNETLoader, wanBlockSwap, wanBlockSwap, Fast Bypasser (rgthree), Fast Bypasser (rgthree), SimpleMath+, ImageScaleBy, RIFE VFI, easy cleanGpuUsed, LoadImage, CLIPVisionEncode, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, SimpleMath+, ImageScaleBy, RIFE VFI, easy cleanGpuUsed, KSamplerAdvanced, CLIPVisionEncode, CLIPVisionEncode, easy cleanGpuUsed, CLIPTextEncode, CLIPTextEncode, ImageResizeKJv2, SimpleMath+, ImageScaleBy, RIFE VFI, easy cleanGpuUsed, KSamplerAdvanced, CLIPVisionEncode, CLIPTextEncode, CLIPTextEncode, CLIPLoader, ImageResizeKJv2, LoadImage, LoadImage, LoadImage, ImageResizeKJv2, ImpactInt, VAEDecode, VAEDecode, VAEDecode, VAELoader, ImageResizeKJv2, CLIPVisionEncode, CLIPVisionEncode, CLIPVisionLoader, KSamplerAdvanced, ModelPatchTorchSettings, ModelPatchTorchSettings, ImageResizeKJv2, ImageResizeKJv2, WanAdvancedI2V, WanAdvancedI2V, WanAdvancedI2V, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, VHS_VideoCombine, WanFirstLastFrameToVideo, PrimitiveStringMultiline, ImpactInt, ImpactInt, Seed (rgthree)]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/飞行少女飞行滑板多图首尾帧图生视频Wan2.2-Smooth Mix 超丝滑首尾帧工作流_2055911477286064130.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2055911477286064130.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（75 个）：
+- `Mute / Bypass Repeater (rgthree)`
+- `PathchSageAttentionKJ`
+- `Fast Bypasser (rgthree)`
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `Fast Bypasser (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `SimpleMath+`
+- `ImageScaleBy`
+- `RIFE VFI`
+- `easy cleanGpuUsed`
+- `LoadImage`
+- `CLIPVisionEncode`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ImageScaleBy`
+- `RIFE VFI`
+- `easy cleanGpuUsed`
+- `KSamplerAdvanced` ★核心
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `easy cleanGpuUsed`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `SimpleMath+`
+- `ImageScaleBy`
+- `RIFE VFI`
+- `easy cleanGpuUsed`
+- `KSamplerAdvanced` ★核心
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAELoader`
+- `ImageResizeKJv2`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `KSamplerAdvanced` ★核心
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `WanAdvancedI2V`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
+- `PrimitiveStringMultiline`
+- `ImpactInt`
+- `ImpactInt`
+- `Seed (rgthree)`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **99%**（74/75）
+
+**有卡**：`Mute / Bypass Repeater (rgthree)`、`PathchSageAttentionKJ`、`Fast Bypasser (rgthree)`、`ModelSamplingSD3`、`easy cleanGpuUsed`、`UNETLoader`、`wanBlockSwap`、`SimpleMath+`、`ImageScaleBy`、`RIFE VFI`、`LoadImage`、`CLIPVisionEncode`、`CLIPTextEncode`、`KSamplerAdvanced`、`ImageResizeKJv2`、`CLIPLoader`、`ImpactInt`、`VAEDecode`、`VAELoader`、`CLIPVisionLoader`、`ModelPatchTorchSettings`、`WanAdvancedI2V`、`ImageBatchExtendWithOverlap`、`VHS_VideoCombine`、`WanFirstLastFrameToVideo`、`Seed (rgthree)`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、Seed (rgthree)

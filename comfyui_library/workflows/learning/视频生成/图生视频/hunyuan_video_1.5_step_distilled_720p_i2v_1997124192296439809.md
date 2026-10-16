@@ -1,0 +1,103 @@
+---
+key: 视频生成/图生视频/hunyuan_video_1.5_step_distilled_720p_i2v_1997124192296439809.json
+name: hunyuan_video_1.5_step_distilled_720p_i2v_1997124192296439809.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1997124192296439809.json
+hash: 5f5059d427583fb2
+coverage: 0.5
+learned_at: 2026-10-15 22:33:28
+nodes: [GetNode, MarkdownNote, CLIPTextEncode, CLIPTextEncode, SetNode, GetNode, PreviewAny, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, Note, PathchSageAttentionKJ, DualCLIPLoader, VAELoader, CLIPVisionLoader, CLIPVisionEncode, ImageResizeKJv2, VHS_VideoCombine, VHS_VideoCombine, AILab_QwenVL, LoadImage, LatentUpscaleModelLoader, UNETLoader, VAEDecode, ModelSamplingSD3, HunyuanVideo15LatentUpscaleWithModel, HunyuanVideo15SuperResolution, KSamplerAdvanced, KSamplerAdvanced, VAEDecodeTiled, UNETLoader, GetNode, GetNode, HunyuanVideo15ImageToVideo, MarkdownNote, ModelSamplingSD3, KSampler]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 992197150327640, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/hunyuan_video_1.5_step_distilled_720p_i2v_1997124192296439809.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1997124192296439809.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（50 个）：
+- `GetNode`
+- `MarkdownNote`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `PreviewAny`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Note`
+- `PathchSageAttentionKJ`
+- `DualCLIPLoader`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `AILab_QwenVL`
+- `LoadImage`
+- `LatentUpscaleModelLoader`
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `HunyuanVideo15LatentUpscaleWithModel`
+- `HunyuanVideo15SuperResolution`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecodeTiled` ★核心
+- `UNETLoader` ★核心
+- `GetNode`
+- `GetNode`
+- `HunyuanVideo15ImageToVideo`
+- `MarkdownNote`
+- `ModelSamplingSD3`
+- `KSampler` ★核心
+
+## 关键参数
+
+- `seed` = `992197150327640`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **50%**（25/50）
+
+**有卡**：`CLIPTextEncode`、`PathchSageAttentionKJ`、`DualCLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`ImageResizeKJv2`、`VHS_VideoCombine`、`AILab_QwenVL`、`LoadImage`、`LatentUpscaleModelLoader`、`UNETLoader`、`VAEDecode`、`ModelSamplingSD3`、`HunyuanVideo15LatentUpscaleWithModel`、`HunyuanVideo15SuperResolution`、`KSamplerAdvanced`、`VAEDecodeTiled`、`HunyuanVideo15ImageToVideo`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、KSamplerAdvanced、VAEDecodeTiled
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

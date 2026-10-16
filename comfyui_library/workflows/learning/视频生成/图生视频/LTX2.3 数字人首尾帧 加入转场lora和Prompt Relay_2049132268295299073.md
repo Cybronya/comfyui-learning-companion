@@ -1,0 +1,172 @@
+---
+key: 视频生成/图生视频/LTX2.3 数字人首尾帧 加入转场lora和Prompt Relay_2049132268295299073.json
+name: LTX2.3 数字人首尾帧 加入转场lora和Prompt Relay_2049132268295299073.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2049132268295299073.json
+hash: 0423c16bc2cb28ad
+coverage: 0.488722
+learned_at: 2026-10-15 22:37:13
+nodes: [SetNode, LTXVSeparateAVLatent, SetLatentNoiseMask, LTXVAudioVAEEncode, SolidMask, SetNode, SetNode, SetNode, MelBandRoFormerSampler, SetNode, PreviewAudio, GetNode, GetNode, GetNode, GetNode, GetNode, SimpleMath+, SetNode, GetNode, GetNode, INTConstant, GetNode, GetNode, SamplerCustom, KSamplerSelect, GetNode, GetNode, GetNode, SetNode, SetNode, LTXVLatentUpsampler, GetNode, GetNode, SimpleMath+, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, EmptyLTXVLatentVideo, LTXVConditioning, SetNode, ImageResizeKJv2, GetImageSize, SetNode, GetNode, ImageFlip, VAEDecodeTiled, LTXVConcatAVLatent, SetNode, LTXVEmptyLatentAudio, GetNode, Seed (rgthree), SetNode, GetNode, GetNode, GetNode, KSamplerSelect, VHS_VideoCombine, GetNode, LTXVSeparateAVLatent, GetNode, SetNode, VAEDecodeTiled, GetNode, ImageResizeKJv2, ResizeImageMaskNode, PreviewAudio, ImageFlip, GetNode, LTXVPreprocess, GetNode, SimpleMath+, AudioInfo, SimpleMath+, GetNode, Display Any (rgthree), VAELoaderKJ, VAELoaderKJ, ManualSigmas, LTXVConcatAVLatent, LTXVImgToVideoInplaceKJ, GetNode, GetNode, GetNode, GetNode, SimpleMath+, SetNode, SetNode, SetNode, SetNode, LatentUpscaleModelLoader, SetNode, MelBandRoFormerModelLoader, DualCLIPLoader, SamplerCustom, ManualSigmas, SetNode, SetNode, SetNode, SetNode, GetNode, PreviewImage, ImageConcanate, GetNode, RH_LLMAPI_Pro_Node, TextInput_, Note, GetNode, GetNode, GetNode, DiffusionModelLoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, GetNode, LTXVSeparateAVLatent, TextInput_, ShowText|pysssss, MarkdownNote, LoraLoaderModelOnly, LTXVImgToVideoInplaceKJ, LoadImage, LoadImage, LoadAudio, AudioCrop, Fast Groups Bypasser (rgthree), INTConstant, INTConstant, LoraLoaderModelOnly, CLIPTextEncode, VHS_VideoCombine, PromptRelayEncode]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 121}
+---
+
+# 视频生成/图生视频/LTX2.3 数字人首尾帧 加入转场lora和Prompt Relay_2049132268295299073.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2049132268295299073.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（133 个）：
+- `SetNode`
+- `LTXVSeparateAVLatent`
+- `SetLatentNoiseMask`
+- `LTXVAudioVAEEncode` ★核心
+- `SolidMask`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `MelBandRoFormerSampler` ★核心
+- `SetNode`
+- `PreviewAudio`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SimpleMath+`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `SamplerCustom` ★核心
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `SimpleMath+`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `LTXVConditioning`
+- `SetNode`
+- `ImageResizeKJv2`
+- `GetImageSize`
+- `SetNode`
+- `GetNode`
+- `ImageFlip`
+- `VAEDecodeTiled` ★核心
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `Seed (rgthree)`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `VHS_VideoCombine`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `SetNode`
+- `VAEDecodeTiled` ★核心
+- `GetNode`
+- `ImageResizeKJv2`
+- `ResizeImageMaskNode`
+- `PreviewAudio`
+- `ImageFlip`
+- `GetNode`
+- `LTXVPreprocess`
+- `GetNode`
+- `SimpleMath+`
+- `AudioInfo`
+- `SimpleMath+`
+- `GetNode`
+- `Display Any (rgthree)`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplaceKJ`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SimpleMath+`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `MelBandRoFormerModelLoader`
+- `DualCLIPLoader`
+- `SamplerCustom` ★核心
+- `ManualSigmas`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `PreviewImage`
+- `ImageConcanate`
+- `GetNode`
+- `RH_LLMAPI_Pro_Node`
+- `TextInput_`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `TextInput_`
+- `ShowText|pysssss`
+- `MarkdownNote`
+- `LoraLoaderModelOnly` ★核心
+- `LTXVImgToVideoInplaceKJ`
+- `LoadImage`
+- `LoadImage`
+- `LoadAudio`
+- `AudioCrop`
+- `Fast Groups Bypasser (rgthree)`
+- `INTConstant`
+- `INTConstant`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `PromptRelayEncode`
+
+## 关键参数
+
+- `width` = `121`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **49%**（65/133）
+
+**有卡**：`LTXVSeparateAVLatent`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`SolidMask`、`MelBandRoFormerSampler`、`PreviewAudio`、`SimpleMath+`、`INTConstant`、`SamplerCustom`、`KSamplerSelect`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVConditioning`、`ImageResizeKJv2`、`GetImageSize`、`ImageFlip`、`VAEDecodeTiled`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`Seed (rgthree)`、`VHS_VideoCombine`、`ResizeImageMaskNode`、`LTXVPreprocess`、`AudioInfo`、`Display Any (rgthree)`、`VAELoaderKJ`、`ManualSigmas`、`LTXVImgToVideoInplaceKJ`、`LatentUpscaleModelLoader`、`MelBandRoFormerModelLoader`、`DualCLIPLoader`、`ImageConcanate`、`RH_LLMAPI_Pro_Node`、`TextInput_`、`DiffusionModelLoaderKJ`、`LoraLoaderModelOnly`、`LoadImage`、`LoadAudio`、`AudioCrop`、`CLIPTextEncode`、`PromptRelayEncode`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、KSamplerSelect、SamplerCustom、MelBandRoFormerSampler、LTXVLatentUpsampler、Seed (rgthree)

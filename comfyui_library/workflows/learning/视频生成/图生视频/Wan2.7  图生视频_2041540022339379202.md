@@ -1,0 +1,37 @@
+---
+key: 视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json
+name: Wan2.7  图生视频_2041540022339379202.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2041540022339379202.json
+hash: c0e4f44b35818d55
+coverage: 1
+learned_at: 2026-10-15 22:36:20
+nodes: [SaveVideo, RH_AlibabaWan27ImageToVideo, LoadImage, LoadImage, TextBox]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.7  图生视频_2041540022339379202.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2041540022339379202.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（5 个）：
+- `SaveVideo`
+- `RH_AlibabaWan27ImageToVideo`
+- `LoadImage`
+- `LoadImage`
+- `TextBox`
+
+## 知识
+
+覆盖率 **100%**（5/5）
+
+**有卡**：`SaveVideo`、`RH_AlibabaWan27ImageToVideo`、`LoadImage`、`TextBox`
+
+**用到的条目**：LoadImage、SaveVideo、Textbox、TextBox、TextBox、RH_AlibabaWan27ImageToVideo、sd15-t2i-basic、sd15-t2i-lora

@@ -1,0 +1,114 @@
+---
+key: 视频生成/图生视频/（自用）Wan2.2 Smooth V2模型图生视频极速版（双模式）_2010559746318802946.json
+name: （自用）Wan2.2 Smooth V2模型图生视频极速版（双模式）_2010559746318802946.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2010559746318802946.json
+hash: b8e12dfad0b95004
+coverage: 0.763889
+learned_at: 2026-10-15 22:34:17
+nodes: [UnetLoaderGGUF, Note, Note, ImageScaleBy, Note, CLIPTextEncode, StringConcatenate, Note, CLIPVisionEncode, ModelSamplingSD3, Note, CLIPVisionLoader, VAELoader, easy showAnything, Note, CLIPTextEncode, KSamplerAdvanced, Seed (rgthree), Note, Note, KSamplerAdvanced, easy cleanGpuUsed, UNETLoader, UNETLoader, ModelSamplingSD3, ModelPatchTorchSettings, PathchSageAttentionKJ, LoraLoaderModelOnly, ModelPatchTorchSettings, LoraLoaderModelOnly, PathchSageAttentionKJ, CLIPLoader, WanImageToVideo, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, SaveImage, TT_img_enc_v2, DuckHideNode, SaveImage, VHS_VideoCombine, TT_img_enc, CR Prompt Text, Note, Note, VAEDecode, LoadImage, SaveImage, UnetLoaderGGUF, PreviewImage, SaveImage, ImageScaleBy, ColorMatch, RIFE VFI, easy cleanGpuUsed, Pick From Batch (mtb), LoadImage, VHS_VideoCombine, VHS_SelectFilename, Any To Any, PrimitiveStringMultiline, Note, CR Prompt Text, Qwen3_VQA, JWInteger, Note, easy showAnything, easy anythingIndexSwitch, Note, CR Prompt Text, SaveImage, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/（自用）Wan2.2 Smooth V2模型图生视频极速版（双模式）_2010559746318802946.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2010559746318802946.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（72 个）：
+- `UnetLoaderGGUF` ★核心
+- `Note`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `StringConcatenate`
+- `Note`
+- `CLIPVisionEncode`
+- `ModelSamplingSD3`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `easy showAnything`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `Seed (rgthree)`
+- `Note`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchTorchSettings`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `WanImageToVideo`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `SaveImage`
+- `TT_img_enc_v2`
+- `DuckHideNode`
+- `SaveImage`
+- `VHS_VideoCombine`
+- `TT_img_enc`
+- `CR Prompt Text`
+- `Note`
+- `Note`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `SaveImage`
+- `UnetLoaderGGUF` ★核心
+- `PreviewImage`
+- `SaveImage`
+- `ImageScaleBy`
+- `ColorMatch`
+- `RIFE VFI`
+- `easy cleanGpuUsed`
+- `Pick From Batch (mtb)`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `VHS_SelectFilename`
+- `Any To Any`
+- `PrimitiveStringMultiline`
+- `Note`
+- `CR Prompt Text`
+- `Qwen3_VQA`
+- `JWInteger`
+- `Note`
+- `easy showAnything`
+- `easy anythingIndexSwitch`
+- `Note`
+- `CR Prompt Text`
+- `SaveImage`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **76%**（55/72）
+
+**有卡**：`UnetLoaderGGUF`、`ImageScaleBy`、`CLIPTextEncode`、`StringConcatenate`、`CLIPVisionEncode`、`ModelSamplingSD3`、`CLIPVisionLoader`、`VAELoader`、`KSamplerAdvanced`、`Seed (rgthree)`、`easy cleanGpuUsed`、`UNETLoader`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`CLIPLoader`、`WanImageToVideo`、`ImageResizeKJv2`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`SaveImage`、`TT_img_enc_v2`、`DuckHideNode`、`VHS_VideoCombine`、`TT_img_enc`、`CR Prompt Text`、`VAEDecode`、`LoadImage`、`ColorMatch`、`RIFE VFI`、`Pick From Batch (mtb)`、`VHS_SelectFilename`、`Any To Any`、`Qwen3_VQA`、`easy anythingIndexSwitch`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

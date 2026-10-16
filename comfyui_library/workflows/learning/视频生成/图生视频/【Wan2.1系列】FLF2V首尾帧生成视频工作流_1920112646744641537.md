@@ -1,0 +1,62 @@
+---
+key: 视频生成/图生视频/【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.json
+name: 【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1920112646744641537.json
+hash: e68469debdeb69d1
+coverage: 0.833333
+learned_at: 2026-10-15 22:29:42
+nodes: [GetNode, WanVideoBlockSwap, GetNode, WanVideoTeaCache, WanVideoSLG, WanVideoExperimentalArgs, WanVideoDecode, ImageConcatMulti, EmptyImage, ImageConcatMulti, VHS_VideoCombine, WanVideoClipVisionEncode, CLIPVisionLoader, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoTorchCompileSettings, WanVideoImageToVideoEncode, SetNode, ImageResize+, SetNode, LoadImage, LoadImage, ImageResize+, WanVideoTextEncode, AddLabel, AddLabel, GetImageSizeAndCount, WanVideoSampler, MarkdownNote]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1920112646744641537.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（30 个）：
+- `GetNode`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `ImageConcatMulti`
+- `EmptyImage`
+- `ImageConcatMulti`
+- `VHS_VideoCombine`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoImageToVideoEncode`
+- `SetNode`
+- `ImageResize+`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `ImageResize+`
+- `WanVideoTextEncode`
+- `AddLabel`
+- `AddLabel`
+- `GetImageSizeAndCount`
+- `WanVideoSampler` ★核心
+- `MarkdownNote`
+
+## 知识
+
+覆盖率 **83%**（25/30）
+
+**有卡**：`WanVideoBlockSwap`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`ImageConcatMulti`、`EmptyImage`、`VHS_VideoCombine`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoTorchCompileSettings`、`WanVideoImageToVideoEncode`、`ImageResize+`、`LoadImage`、`WanVideoTextEncode`、`AddLabel`、`GetImageSizeAndCount`、`WanVideoSampler`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

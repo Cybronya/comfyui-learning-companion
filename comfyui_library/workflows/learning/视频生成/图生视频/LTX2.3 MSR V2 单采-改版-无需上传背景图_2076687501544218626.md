@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json
+name: LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2076687501544218626.json
+hash: 6da63b893eb835a3
+coverage: 0.887097
+learned_at: 2026-10-15 22:41:33
+nodes: [RandomNoise, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, Label (rgthree), LoadImage, Label (rgthree), Label (rgthree), Label (rgthree), Label (rgthree), ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, CFGGuider, LoadImage, PrimitiveInt, LTXVAudioVAEDecode, VAEDecodeTiled, PrimitiveInt, PrimitiveInt, LTXVCropGuides, SamplerCustomAdvanced, LayerUtility: PurgeVRAM, Reroute, ComfyMathExpression, PathchSageAttentionKJ, CLIPTextEncode, LTXVEmptyLatentAudio, PromptRelayEncode, PrimitiveInt, LTXAddVideoICLoRAGuide, KSamplerSelect, LTXVConditioning, ManualSigmas, RepeatImageBatch, LTXVSeparateAVLatent, PrimitiveStringMultiline, LTX2_NAG, EmptyLTXVLatentVideo, LTXVConcatAVLatent, ComfyMathExpression, ComfyMathExpression, FrameInterpolationModelLoader, VHS_VideoCombine, LayerUtility: PurgeVRAM, LoadImage, RepeatImageBatch, RepeatImageBatch, RepeatImageBatch, RepeatImageBatch, BatchImagesNode, PrimitiveStringMultiline, UNETLoader, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, ComfyMathExpression, LoadImage, LoadImage, FrameInterpolate, RTXVideoSuperResolution]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 44, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2076687501544218626.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（62 个）：
+- `RandomNoise`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `Label (rgthree)`
+- `LoadImage`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `CFGGuider`
+- `LoadImage`
+- `PrimitiveInt`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LTXVCropGuides`
+- `SamplerCustomAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `Reroute`
+- `ComfyMathExpression`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `PromptRelayEncode`
+- `PrimitiveInt`
+- `LTXAddVideoICLoRAGuide`
+- `KSamplerSelect` ★核心
+- `LTXVConditioning`
+- `ManualSigmas`
+- `RepeatImageBatch`
+- `LTXVSeparateAVLatent`
+- `PrimitiveStringMultiline`
+- `LTX2_NAG`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `FrameInterpolationModelLoader`
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM`
+- `LoadImage`
+- `RepeatImageBatch`
+- `RepeatImageBatch`
+- `RepeatImageBatch`
+- `RepeatImageBatch`
+- `BatchImagesNode`
+- `PrimitiveStringMultiline`
+- `UNETLoader` ★核心
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `ComfyMathExpression`
+- `LoadImage`
+- `LoadImage`
+- `FrameInterpolate`
+- `RTXVideoSuperResolution`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `44`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **89%**（55/62）
+
+**有卡**：`RandomNoise`、`ResizeImagesByLongerEdge`、`Label (rgthree)`、`LoadImage`、`CFGGuider`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVCropGuides`、`SamplerCustomAdvanced`、`LayerUtility: PurgeVRAM`、`ComfyMathExpression`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`LTXVEmptyLatentAudio`、`PromptRelayEncode`、`LTXAddVideoICLoRAGuide`、`KSamplerSelect`、`LTXVConditioning`、`ManualSigmas`、`RepeatImageBatch`、`LTXVSeparateAVLatent`、`LTX2_NAG`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`FrameInterpolationModelLoader`、`VHS_VideoCombine`、`BatchImagesNode`、`UNETLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`LoraLoaderModelOnly`、`LTXICLoRALoaderModelOnly`、`FrameInterpolate`、`RTXVideoSuperResolution`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent

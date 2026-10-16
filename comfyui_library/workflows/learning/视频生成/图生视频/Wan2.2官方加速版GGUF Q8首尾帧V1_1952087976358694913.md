@@ -1,0 +1,78 @@
+---
+key: 视频生成/图生视频/Wan2.2官方加速版GGUF Q8首尾帧V1_1952087976358694913.json
+name: Wan2.2官方加速版GGUF Q8首尾帧V1_1952087976358694913.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952087976358694913.json
+hash: caf6b77a6c6f8240
+coverage: 0.833333
+learned_at: 2026-10-15 22:31:00
+nodes: [CLIPLoader, ModelSamplingSD3, CLIPTextEncode, WanFirstLastFrameToVideo, wanBlockSwap, LoraLoaderModelOnly, PathchSageAttentionKJ, ModelSamplingSD3, LayerUtility: PurgeVRAM, KSamplerAdvanced, LayerUtility: PurgeVRAM, UnetLoaderGGUF, UnetLoaderGGUF, PathchSageAttentionKJ, wanBlockSwap, LoraLoaderModelOnly, VAELoader, JWInteger, JWInteger, JWInteger, Note, Note, Note, CLIPTextEncode, CR Prompt Text, Note, Note, Note, LoadImage, LoadImage, KSamplerAdvanced, ImageConcanate, VAEDecode, VHS_VideoCombine, ImageConcanate, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "uni_pc", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2官方加速版GGUF Q8首尾帧V1_1952087976358694913.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952087976358694913.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（36 个）：
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `WanFirstLastFrameToVideo`
+- `wanBlockSwap`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LayerUtility: PurgeVRAM`
+- `KSamplerAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF` ★核心
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `CR Prompt Text`
+- `Note`
+- `Note`
+- `Note`
+- `LoadImage`
+- `LoadImage`
+- `KSamplerAdvanced` ★核心
+- `ImageConcanate`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `uni_pc`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **83%**（30/36）
+
+**有卡**：`CLIPLoader`、`ModelSamplingSD3`、`CLIPTextEncode`、`WanFirstLastFrameToVideo`、`wanBlockSwap`、`LoraLoaderModelOnly`、`PathchSageAttentionKJ`、`LayerUtility: PurgeVRAM`、`KSamplerAdvanced`、`UnetLoaderGGUF`、`VAELoader`、`JWInteger`、`CR Prompt Text`、`LoadImage`、`ImageConcanate`、`VAEDecode`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、CR Prompt Text

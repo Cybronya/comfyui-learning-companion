@@ -1,0 +1,142 @@
+---
+key: 视频生成/图生视频/Wan2.2-Animate-动作迁移_1995377555693875202.json
+name: Wan2.2-Animate-动作迁移_1995377555693875202.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1995377555693875202.json
+hash: b8a88fed084412d6
+coverage: 0.623529
+learned_at: 2026-10-15 22:33:22
+nodes: [CLIPVisionLoader, CLIPVisionLoader, SetNode, CLIPLoader, VAELoader, SetNode, ModelSamplingSD3, LoraLoaderModelOnly, UNETLoader, SetNode, CLIPTextEncode, SetNode, SetNode, DWPreprocessor, SetNode, TrimVideoLatent, KSampler, CLIPVisionEncode, ImageResizeKJv2, SetNode, PreviewImage, SetNode, VHS_VideoCombine, DWPreprocessor, RHHiddenNodes, LoraLoaderModelOnly, TrimVideoLatent, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanAnimateToVideo, KSampler, TrimVideoLatent, GetNode, GetNode, VHS_VideoCombine, ImageBatchMulti, GetNode, GetNode, VHS_VideoCombine, Int, WanAnimateToVideo, KSampler, easy seed, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, GetNode, GetNode, GetNode, WanAnimateToVideo, SimpleMath+, GetImageRangeFromBatch, GetImageRangeFromBatch, GetImageRangeFromBatch, VAEDecode, VHS_GetImageCount, VAEDecode, VHS_GetImageCount, VAEDecode, VHS_GetImageCount, Int, SetNode, CM_IntToFloat, Int, SetNode, SetNode, Int, VHS_VideoInfoLoaded, SimpleMath+, SetNode, SetNode, RHHiddenNodes, CLIPTextEncode, LoadImage, VHS_LoadVideo, Int]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 1095367023683947, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2-Animate-动作迁移_1995377555693875202.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1995377555693875202.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（85 个）：
+- `CLIPVisionLoader`
+- `CLIPVisionLoader`
+- `SetNode`
+- `CLIPLoader`
+- `VAELoader`
+- `SetNode`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `DWPreprocessor`
+- `SetNode`
+- `TrimVideoLatent`
+- `KSampler` ★核心
+- `CLIPVisionEncode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `PreviewImage`
+- `SetNode`
+- `VHS_VideoCombine`
+- `DWPreprocessor`
+- `RHHiddenNodes`
+- `LoraLoaderModelOnly` ★核心
+- `TrimVideoLatent`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimateToVideo`
+- `KSampler` ★核心
+- `TrimVideoLatent`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `ImageBatchMulti`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `Int`
+- `WanAnimateToVideo`
+- `KSampler` ★核心
+- `easy seed`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimateToVideo`
+- `SimpleMath+`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `VAEDecode` ★核心
+- `VHS_GetImageCount`
+- `VAEDecode` ★核心
+- `VHS_GetImageCount`
+- `VAEDecode` ★核心
+- `VHS_GetImageCount`
+- `Int`
+- `SetNode`
+- `CM_IntToFloat`
+- `Int`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `VHS_VideoInfoLoaded`
+- `SimpleMath+`
+- `SetNode`
+- `SetNode`
+- `RHHiddenNodes`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `VHS_LoadVideo`
+- `Int`
+
+## 关键参数
+
+- `seed` = `1095367023683947`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **62%**（53/85）
+
+**有卡**：`CLIPVisionLoader`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPTextEncode`、`DWPreprocessor`、`TrimVideoLatent`、`KSampler`、`CLIPVisionEncode`、`ImageResizeKJv2`、`VHS_VideoCombine`、`RHHiddenNodes`、`WanAnimateToVideo`、`ImageBatchMulti`、`Int`、`easy seed`、`SimpleMath+`、`GetImageRangeFromBatch`、`VAEDecode`、`VHS_GetImageCount`、`CM_IntToFloat`、`VHS_VideoInfoLoaded`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

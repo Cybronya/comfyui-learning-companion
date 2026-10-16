@@ -1,0 +1,102 @@
+---
+key: 视频生成/图生视频/LTX2.3 多图丝滑过度转场+变身效果_2037112524918755329.json
+name: LTX2.3 多图丝滑过度转场+变身效果_2037112524918755329.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2037112524918755329.json
+hash: 5453f05619e60f54
+coverage: 0.870968
+learned_at: 2026-10-15 22:35:55
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVLatentUpsampler, KSamplerSelect, Reroute, LTXVAudioVAEDecode, PrimitiveInt, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, MarkdownNote, CreateVideo, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, CFGGuider, LTXVConditioning, ManualSigmas, LTXVCropGuides, LTXVSeparateAVLatent, ResizeImagesByLongerEdge, PrimitiveInt, SaveVideo, CLIPTextEncode, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, PrimitiveInt, LTXVPreprocess, ComfyMathExpression, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, LTXVPreprocess, LTXVPreprocess, PrimitiveInt, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, CLIPTextEncode, LTX2_NAG, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LoraLoaderModelOnly, CheckpointLoaderSimple, LoadImage, LoadImage, llama_cpp_parameters, llama_cpp_model_loader, ImageStitch, ImageStitch, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, LoadImage, PrimitiveStringMultiline, easy showAnything, llama_cpp_instruct_adv, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 多图丝滑过度转场+变身效果_2037112524918755329.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2037112524918755329.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（62 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `MarkdownNote`
+- `CreateVideo`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVConcatAVLatent`
+- `CFGGuider`
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `ResizeImagesByLongerEdge`
+- `PrimitiveInt`
+- `SaveVideo`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `LatentUpscaleModelLoader`
+- `PrimitiveInt`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `PrimitiveInt`
+- `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
+- `CLIPTextEncode` ★核心
+- `LTX2_NAG`
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `LoraLoaderModelOnly` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `LoadImage`
+- `LoadImage`
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+- `ImageStitch`
+- `ImageStitch`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **87%**（54/62）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`CreateVideo`、`ComfyMathExpression`、`LTXVConditioning`、`LTXVCropGuides`、`ResizeImagesByLongerEdge`、`SaveVideo`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`LTXVPreprocess`、`LTXVImgToVideoInplace`、`LTXVImgToVideoInplaceKJ`、`LTX2_NAG`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`LoadImage`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`ImageStitch`、`ImageResizeKJv2`、`llama_cpp_instruct_adv`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

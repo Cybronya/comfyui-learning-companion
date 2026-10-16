@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Wan2.2图生视频KJ加速版_1950013972280950785.json
+name: Wan2.2图生视频KJ加速版_1950013972280950785.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950013972280950785.json
+hash: 324638cda34b9766
+coverage: 0.888889
+learned_at: 2026-10-15 22:30:51
+nodes: [WanVideoLoraSelect, WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoVAELoader, WanVideoTorchCompileSettings, WanVideoTextEncode, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSetLoRAs, WanVideoSetBlockSwap, ImageResizeKJv2, VHS_VideoCombine, WanVideoBlockSwap, CLIPVisionLoader, easy cleanGpuUsed, WanVideoSampler, WanVideoSampler, CR Text, PrimitiveInt, PrimitiveInt, WanVideoClipVisionEncode, GetImageSizeAndCount, PrimitiveInt, SimpleMath+, LoadImage, MarkdownNote, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2图生视频KJ加速版_1950013972280950785.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950013972280950785.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（36 个）：
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
+- `WanVideoTorchCompileSettings`
+- `WanVideoTextEncode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `CLIPVisionLoader`
+- `easy cleanGpuUsed`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `CR Text`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `WanVideoClipVisionEncode`
+- `GetImageSizeAndCount`
+- `PrimitiveInt`
+- `SimpleMath+`
+- `LoadImage`
+- `MarkdownNote`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **89%**（32/36）
+
+**有卡**：`WanVideoLoraSelect`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`WanVideoTorchCompileSettings`、`WanVideoTextEncode`、`easy cleanGpuUsed`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoImageToVideoEncode`、`ImageResizeKJv2`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`CLIPVisionLoader`、`WanVideoSampler`、`CR Text`、`WanVideoClipVisionEncode`、`GetImageSizeAndCount`、`SimpleMath+`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

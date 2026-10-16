@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/Gemini 3.1 Pro自动提示词+LTX2.3模型 首尾帧生视频工作流_2044864850374955009.json
+name: Gemini 3.1 Pro自动提示词+LTX2.3模型 首尾帧生视频工作流_2044864850374955009.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2044864850374955009.json
+hash: 036363b83f5a5d18
+coverage: 0.87931
+learned_at: 2026-10-15 22:36:42
+nodes: [LoraLoaderModelOnly, LoadImage, LoadImage, PrimitiveStringMultiline, PrimitiveInt, SaveVideo, PrimitiveInt, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, PathchSageAttentionKJ, ModelPatchTorchSettings, LTXVChunkFeedForward, CFGGuider, KSamplerSelect, ManualSigmas, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, RandomNoise, LTXVConditioning, Reroute, SamplerCustomAdvanced, LTXVSeparateAVLatent, ComfyMathExpression, ComfyMathExpression, SimpleMath+, FloatConstant, ComfyMathExpression, EmptyLTXVLatentVideo, ComfyMathExpression, LTXVEmptyLatentAudio, LTXVConcatAVLatent, CFGGuider, LTXVAudioVAEDecode, KSamplerSelect, ResizeImagesByLongerEdge, LTXVPreprocess, LTXVConcatAVLatent, ManualSigmas, RandomNoise, Image Resize, LTXVImgToVideoInplaceKJ, VAEDecodeTiled, CreateVideo, easy showAnything, Image Resize, ResizeImagesByLongerEdge, LTXVPreprocess, CheckpointLoaderSimple, PrimitiveInt, PrimitiveInt, CLIPTextEncode, CLIPTextEncode, RHHiddenNodes, RH_LLMAPI_Pro_Node]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/Gemini 3.1 Pro自动提示词+LTX2.3模型 首尾帧生视频工作流_2044864850374955009.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2044864850374955009.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（58 个）：
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `SaveVideo`
+- `PrimitiveInt`
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `LatentUpscaleModelLoader`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `LTXVChunkFeedForward`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `RandomNoise`
+- `LTXVConditioning`
+- `Reroute`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `SimpleMath+`
+- `FloatConstant`
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `ComfyMathExpression`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVConcatAVLatent`
+- `CFGGuider`
+- `LTXVAudioVAEDecode` ★核心
+- `KSamplerSelect` ★核心
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `LTXVConcatAVLatent`
+- `ManualSigmas`
+- `RandomNoise`
+- `Image Resize`
+- `LTXVImgToVideoInplaceKJ`
+- `VAEDecodeTiled` ★核心
+- `CreateVideo`
+- `easy showAnything`
+- `Image Resize`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `CheckpointLoaderSimple` ★核心
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+
+## 知识
+
+覆盖率 **88%**（51/58）
+
+**有卡**：`LoraLoaderModelOnly`、`LoadImage`、`SaveVideo`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`CFGGuider`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`RandomNoise`、`LTXVConditioning`、`ComfyMathExpression`、`SimpleMath+`、`FloatConstant`、`EmptyLTXVLatentVideo`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`LTXVAudioVAEDecode`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`Image Resize`、`LTXVImgToVideoInplaceKJ`、`VAEDecodeTiled`、`CreateVideo`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`RHHiddenNodes`、`RH_LLMAPI_Pro_Node`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

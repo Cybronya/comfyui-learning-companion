@@ -1,0 +1,156 @@
+---
+key: 视频生成/图生视频/ltx2.3文生视频+局部重绘（根据人物参考图）_2053822010148564993.json
+name: ltx2.3文生视频+局部重绘（根据人物参考图）_2053822010148564993.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2053822010148564993.json
+hash: 4011aadd09eae2cc
+coverage: 0.517241
+learned_at: 2026-10-15 22:37:43
+nodes: [RandomNoise, KSamplerSelect, ManualSigmas, PrimitiveInt, PrimitiveInt, SetNode, SetNode, SamplerCustomAdvanced, CFGGuider, CLIPTextEncode, VHS_VideoCombine, PreviewImage, SetNode, GetNode, GetNode, CLIPTextEncode, GetNode, ComfyMathExpression, ImageResizeKJv2, GetImageRangeFromBatch, SetNode, VHS_VideoInfo, GetNode, ComfyMathExpression, RandomNoise, VAEDecodeTiled, VAELoaderKJ, SetNode, SetNode, CLIPTextEncode, SetNode, GetNode, GetNode, CFGGuider, GetNode, GetNode, ComfyMathExpression, GetNode, ComfyMathExpression, GetNode, SamplerCustomAdvanced, LTXVCropGuides, LTXVSeparateAVLatent, KSamplerSelect, BasicScheduler, GetNode, GetNode, GetNode, ManualSigmas, GetNode, LTXVConcatAVLatent, LTXVSeparateAVLatent, GetNode, ComfyMathExpression, GetNode, SetNode, SetNode, VAELoaderKJ, SetNode, SetNode, SetNode, DualCLIPLoader, LatentUpscaleModelLoader, EmptyLTXVLatentVideo, GetNode, LTXVConcatAVLatent, SetNode, SetNode, SAM3_TrackToMask, SAM3_VideoTrack, SAM3_TrackPreview, SAM3_Detect, DrawMaskOnImage, SetNode, SetNode, LTXVConditioning, MarkdownNote, MarkdownNote, GetNode, ComfyMathExpression, CheckpointLoaderSimple, VHS_VideoCombine, VHS_VideoCombine, MaskToImage, GrowMaskWithBlur, DrawMaskOnImage, VHS_VideoCombine, LTXVPreprocess, GetNode, SetNode, GetNode, UNETLoader, LoraLoaderModelOnly, VHS_LoadVideo, SetNode, LoadImage, ComfyMathExpression, GetNode, GetNode, SetNode, SetNode, PrimitiveInt, PrimitiveInt, GetNode, LTXVLatentUpsampler, GetNode, GetNode, LTXVEmptyLatentAudio, SetNode, GetNode, ImageResizeKJv2, LTXVAddGuideMulti, BlockifyMask, PrimitiveStringMultiline, LTXVAddGuideMulti, Note]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "sam3.1_multiplex_fp16.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/ltx2.3文生视频+局部重绘（根据人物参考图）_2053822010148564993.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2053822010148564993.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（116 个）：
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SetNode`
+- `SetNode`
+- `SamplerCustomAdvanced` ★核心
+- `CFGGuider`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `ComfyMathExpression`
+- `ImageResizeKJv2`
+- `GetImageRangeFromBatch`
+- `SetNode`
+- `VHS_VideoInfo`
+- `GetNode`
+- `ComfyMathExpression`
+- `RandomNoise`
+- `VAEDecodeTiled` ★核心
+- `VAELoaderKJ`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ManualSigmas`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VAELoaderKJ`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `DualCLIPLoader`
+- `LatentUpscaleModelLoader`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `SetNode`
+- `SAM3_TrackToMask`
+- `SAM3_VideoTrack`
+- `SAM3_TrackPreview`
+- `SAM3_Detect`
+- `DrawMaskOnImage`
+- `SetNode`
+- `SetNode`
+- `LTXVConditioning`
+- `MarkdownNote`
+- `MarkdownNote`
+- `GetNode`
+- `ComfyMathExpression`
+- `CheckpointLoaderSimple` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `MaskToImage`
+- `GrowMaskWithBlur`
+- `DrawMaskOnImage`
+- `VHS_VideoCombine`
+- `LTXVPreprocess`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VHS_LoadVideo`
+- `SetNode`
+- `LoadImage`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `SetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `LTXVAddGuideMulti`
+- `BlockifyMask`
+- `PrimitiveStringMultiline`
+- `LTXVAddGuideMulti`
+- `Note`
+
+## 关键参数
+
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **52%**（60/116）
+
+**有卡**：`RandomNoise`、`KSamplerSelect`、`ManualSigmas`、`SamplerCustomAdvanced`、`CFGGuider`、`CLIPTextEncode`、`VHS_VideoCombine`、`ComfyMathExpression`、`ImageResizeKJv2`、`GetImageRangeFromBatch`、`VHS_VideoInfo`、`VAEDecodeTiled`、`VAELoaderKJ`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`BasicScheduler`、`LTXVConcatAVLatent`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`EmptyLTXVLatentVideo`、`SAM3_TrackToMask`、`SAM3_VideoTrack`、`SAM3_TrackPreview`、`SAM3_Detect`、`DrawMaskOnImage`、`LTXVConditioning`、`CheckpointLoaderSimple`、`MaskToImage`、`GrowMaskWithBlur`、`LTXVPreprocess`、`UNETLoader`、`LoraLoaderModelOnly`、`VHS_LoadVideo`、`LoadImage`、`LTXVLatentUpsampler`、`LTXVEmptyLatentAudio`、`LTXVAddGuideMulti`、`BlockifyMask`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

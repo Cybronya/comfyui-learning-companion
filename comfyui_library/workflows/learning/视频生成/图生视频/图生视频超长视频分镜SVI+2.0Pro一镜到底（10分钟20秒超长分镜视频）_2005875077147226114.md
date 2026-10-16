@@ -1,0 +1,179 @@
+---
+key: 视频生成/图生视频/图生视频超长视频分镜SVI+2.0Pro一镜到底（10分钟20秒超长分镜视频）_2005875077147226114.json
+name: 图生视频超长视频分镜SVI+2.0Pro一镜到底（10分钟20秒超长分镜视频）_2005875077147226114.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2005875077147226114.json
+hash: 45368d651520d5b9
+coverage: 0.540146
+learned_at: 2026-10-15 22:33:59
+nodes: [SetNode, SetNode, GetNode, CLIPTextEncode, GetNode, VAEDecode, VAEDecode, VAEEncode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, SetNode, WanImageToVideoSVIPro, CLIPTextEncode, GetNode, VAEDecode, GetNode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, VAEDecode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, CLIPTextEncode, GetNode, VAEDecode, GetNode, GetNode, GetNode, WanImageToVideoSVIPro, GetNode, CLIPTextEncode, GetNode, GetNode, CLIPTextEncode, GetNode, VAEDecode, GetNode, GetNode, KSamplerAdvanced, ImageBatchExtendWithOverlap, GetNode, WanImageToVideoSVIPro, ImageBatchExtendWithOverlap, KSamplerAdvanced, ImageBatchExtendWithOverlap, ImageBatchExtendWithOverlap, KSamplerAdvanced, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CLIPLoader, VAELoader, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, INTConstant, INTConstant, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, KSamplerAdvanced, ImageBatchExtendWithOverlap, CLIPTextEncode, DiffusionModelLoaderKJ, DiffusionModelLoaderKJ, LoraLoaderModelOnly, GetNode, GetNode, SetNode, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, Int, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadImage, GetNode, SetNode, SetNode, CLIPTextEncode, CLIPTextEncode, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, CR Text, CR Text, CR Text, CR Text, easy promptList, CLIPTextEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CR Text, CR Text, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, PreviewAny, PreviewAny]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/图生视频超长视频分镜SVI+2.0Pro一镜到底（10分钟20秒超长分镜视频）_2005875077147226114.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2005875077147226114.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（137 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEEncode` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `SetNode`
+- `WanImageToVideoSVIPro`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `ImageBatchExtendWithOverlap`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced` ★核心
+- `ImageBatchExtendWithOverlap`
+- `ImageBatchExtendWithOverlap`
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `ImageBatchExtendWithOverlap`
+- `CLIPTextEncode` ★核心
+- `DiffusionModelLoaderKJ`
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `easy promptList`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CR Text`
+- `CR Text`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `PreviewAny`
+- `PreviewAny`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **54%**（74/137）
+
+**有卡**：`CLIPTextEncode`、`VAEDecode`、`VAEEncode`、`WanImageToVideoSVIPro`、`KSamplerAdvanced`、`ImageBatchExtendWithOverlap`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`INTConstant`、`DiffusionModelLoaderKJ`、`Int`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`VHS_VideoCombine`、`CR Text`、`easy promptList`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、VAEEncode

@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/Flux Kontext+FusionX VACE单图首尾帧视频生成_1946047718370275330.json
+name: Flux Kontext+FusionX VACE单图首尾帧视频生成_1946047718370275330.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1946047718370275330.json
+hash: 966a0d55783a99c2
+coverage: 0.944444
+learned_at: 2026-10-15 22:30:43
+nodes: [WanVideoBlockSwap, UnetLoaderGGUF, DualCLIPLoader, TeaCache, LoadImage, LoraLoaderModelOnly, ReferenceLatent, ConditioningZeroOut, VAELoader, PreviewImage, VAEDecode, LoadWanVideoT5TextEncoder, WanVideoVACEEncode, WanVideoTextEncodeSingle, WanVideoVACEModelSelect, PreviewImage, WanVideoApplyNAG, WanVideoEnhanceAVideo, WanVideoMagCache, WanVideoSLG, GIMMVFI_interpolate, WanVideoVACEStartToEndFrame, GetImageSizeAndCount, WanVideoVAELoader, DownloadAndLoadGIMMVFIModel, WanVideoModelLoader, WanVideoSampler, WanVideoDecode, CLIPTextEncode, Bjornulf_ShowStringText, VAEEncode, LayerUtility: ImageScaleByAspectRatio V2, DeepTranslatorTextNode, KSampler, WanVideoTextEncodeSingle, VHS_VideoCombine]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 556794686332150, "steps": 20}
+---
+
+# 视频生成/图生视频/Flux Kontext+FusionX VACE单图首尾帧视频生成_1946047718370275330.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1946047718370275330.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（36 个）：
+- `WanVideoBlockSwap`
+- `UnetLoaderGGUF` ★核心
+- `DualCLIPLoader`
+- `TeaCache`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `ReferenceLatent`
+- `ConditioningZeroOut`
+- `VAELoader`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVACEEncode`
+- `WanVideoTextEncodeSingle`
+- `WanVideoVACEModelSelect`
+- `PreviewImage`
+- `WanVideoApplyNAG`
+- `WanVideoEnhanceAVideo`
+- `WanVideoMagCache`
+- `WanVideoSLG`
+- `GIMMVFI_interpolate`
+- `WanVideoVACEStartToEndFrame`
+- `GetImageSizeAndCount`
+- `WanVideoVAELoader`
+- `DownloadAndLoadGIMMVFIModel`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `CLIPTextEncode` ★核心
+- `Bjornulf_ShowStringText`
+- `VAEEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `DeepTranslatorTextNode`
+- `KSampler` ★核心
+- `WanVideoTextEncodeSingle`
+- `VHS_VideoCombine`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `556794686332150`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **94%**（34/36）
+
+**有卡**：`WanVideoBlockSwap`、`UnetLoaderGGUF`、`DualCLIPLoader`、`TeaCache`、`LoadImage`、`LoraLoaderModelOnly`、`ReferenceLatent`、`ConditioningZeroOut`、`VAELoader`、`VAEDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoVACEEncode`、`WanVideoTextEncodeSingle`、`WanVideoVACEModelSelect`、`WanVideoApplyNAG`、`WanVideoEnhanceAVideo`、`WanVideoMagCache`、`WanVideoSLG`、`GIMMVFI_interpolate`、`WanVideoVACEStartToEndFrame`、`GetImageSizeAndCount`、`WanVideoVAELoader`、`DownloadAndLoadGIMMVFIModel`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoDecode`、`CLIPTextEncode`、`Bjornulf_ShowStringText`、`VAEEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`DeepTranslatorTextNode`、`KSampler`、`VHS_VideoCombine`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、ConditioningZeroOut、LoadImage、WanVideoSampler

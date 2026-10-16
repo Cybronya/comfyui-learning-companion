@@ -1,0 +1,150 @@
+---
+key: 视频生成/图生视频/wan2_2_fun_vace_flfv_longvideo_1989490999061827585.json
+name: wan2_2_fun_vace_flfv_longvideo_1989490999061827585.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1989490999061827585.json
+hash: 9171bdd50792c217
+coverage: 0.546296
+learned_at: 2026-10-15 22:33:07
+nodes: [SetNode, GetNode, SetNode, CLIPTextEncode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, INTConstant, Label (rgthree), Label (rgthree), Label (rgthree), VAELoader, ModelSamplingSD3, SetNode, SetNode, DiffusionModelSelector, ModelSamplingSD3, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, Label (rgthree), SetNode, CLIPLoader, Label (rgthree), KSamplerAdvanced, INTConstant, INTConstant, easy showAnything, Label (rgthree), GetNode, GetNode, SetNode, SetNode, Label (rgthree), SetNode, INTConstant, SetNode, SetNode, GetNode, GetNode, WanVaceToVideo, GetNode, VAEDecode, GetImageSizeAndCount, ImageResizeKJv2, GetNode, GetNode, easy forLoopEnd, GetNode, KSamplerAdvanced, easy forLoopStart, GetNode, GetImageSizeAndCount, KSamplerAdvanced, ImageBatchMulti, MathExpression|pysssss, GetImageRangeFromBatch, GetNode, VAEDecode, GetImageRangeFromBatch, VHS_VideoCombine, VHS_VideoCombine, DiffusionModelSelector, DiffusionModelLoaderKJ, DiffusionModelLoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, WanVideoVACEStartToEndFrame, VHS_VideoCombine, WanVaceToVideo, GetNode, GetNode, TrimVideoLatent, TrimVideoLatent, GetNode, CLIPTextEncode, PreviewImage, MaskPreview, GetNode, CLIPTextEncode, ImageBatchMulti, KSamplerAdvanced, WanVideoVACEStartToEndFrame, PreviewImage, MaskPreview, ImageResizeKJv2, GetNode, GetNode, LoadImage, LoadImage, ImageResizeKJv2, GetNode, GetNode, GetNode, GetImageRangeFromBatch, LoadImage, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2_2_fun_vace_flfv_longvideo_1989490999061827585.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1989490999061827585.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（108 个）：
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `INTConstant`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `SetNode`
+- `SetNode`
+- `DiffusionModelSelector`
+- `ModelSamplingSD3`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Label (rgthree)`
+- `SetNode`
+- `CLIPLoader`
+- `Label (rgthree)`
+- `KSamplerAdvanced` ★核心
+- `INTConstant`
+- `INTConstant`
+- `easy showAnything`
+- `Label (rgthree)`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Label (rgthree)`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVaceToVideo`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetImageSizeAndCount`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `easy forLoopEnd`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `easy forLoopStart`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `KSamplerAdvanced` ★核心
+- `ImageBatchMulti`
+- `MathExpression|pysssss`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetImageRangeFromBatch`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `DiffusionModelSelector`
+- `DiffusionModelLoaderKJ`
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `WanVideoVACEStartToEndFrame`
+- `VHS_VideoCombine`
+- `WanVaceToVideo`
+- `GetNode`
+- `GetNode`
+- `TrimVideoLatent`
+- `TrimVideoLatent`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `MaskPreview`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `ImageBatchMulti`
+- `KSamplerAdvanced` ★核心
+- `WanVideoVACEStartToEndFrame`
+- `PreviewImage`
+- `MaskPreview`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **55%**（59/108）
+
+**有卡**：`CLIPTextEncode`、`INTConstant`、`Label (rgthree)`、`VAELoader`、`ModelSamplingSD3`、`DiffusionModelSelector`、`CLIPLoader`、`KSamplerAdvanced`、`WanVaceToVideo`、`VAEDecode`、`GetImageSizeAndCount`、`ImageResizeKJv2`、`easy forLoopEnd`、`easy forLoopStart`、`ImageBatchMulti`、`MathExpression|pysssss`、`GetImageRangeFromBatch`、`VHS_VideoCombine`、`DiffusionModelLoaderKJ`、`LoraLoaderModelOnly`、`WanVideoVACEStartToEndFrame`、`TrimVideoLatent`、`MaskPreview`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、TrimVideoLatent

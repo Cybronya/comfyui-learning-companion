@@ -1,0 +1,161 @@
+---
+key: 视频生成/图生视频/Stand In+Vace+MultiTalk人物ID多重控制背景复合工作流V1_1957420216693223426.json
+name: Stand In+Vace+MultiTalk人物ID多重控制背景复合工作流V1_1957420216693223426.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1957420216693223426.json
+hash: 5821910823de65d9
+coverage: 0.875
+learned_at: 2026-10-15 22:31:16
+nodes: [WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoModelLoader, WanVideoLoraSelect, easy showAnything, easy showAnything, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoLoraSelect, MultiTalkModelLoader, AudioSeparation, DownloadAndLoadWav2VecModel, easy showAnything, VHS_VideoInfo, MultiTalkWav2VecEmbeds, PreviewImage, CM_NumberUnaryOperation, CM_NumberToInt, CM_NumberToInt, ApplyInstantID, InstantIDModelLoader, ControlNetLoader, SetLatentNoiseMask, VAEEncode, InstantIDFaceAnalysis, ControlNetApplyAdvanced, VAEDecode, ImageScaleBy, CM_IntToFloat, CM_IntToNumber, PreviewImage, CLIPTextEncode, CheckpointLoaderSimple, ControlNetLoader, LayerUtility: LayerImageTransform, PreviewImage, PreviewImage, PreviewImage, ImageScale, LayerMask: PersonMaskUltra V2, CLIPTextEncode, PreviewImage, FaceAnalysisModels, LayerUtility: LayerImageTransform, FaceBoundingBox, ImageScaleBy, easy imageColorMatch, PreviewImage, ImageScale, GetImageSize+, CM_IntToFloat, LayerUtility: CropBoxResolve, LayerMask: PersonMaskUltra V2, MaskFastGrow, LayerUtility: CropByMask, JWImageResizeByLongerSide, MaskPreview+, ImageComposite+, MaskFastGrow, PreviewImage, GetImageSize+, LoadImage, PreviewImage, KSampler, WanVideoVACEModelSelect, WanVideoSampler, WanVideoTextEncode, WanVideoAddStandInLatent, WanVideoEncode, JWInteger, CR Prompt Text, WanVideoVACEEncode, FaceProcessorLoader, FaceOnlyModeSwitch, PreviewImage, WanVideoEncode, SaveImage, JWInteger, WanVideoSetLoRAs, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM, VHS_VideoCombine, ImageScale, ReActorFaceSwap, LayerUtility: ImageScaleByAspectRatio V2, VHS_LoadVideo, LayerUtility: ImageScaleByAspectRatio V2, GetImageSizeAndCount, VideoInputPreprocessor, WanVideoVACEStartToEndFrame, ImageFromBatch+, ApplyFaceProcessor, DWPreprocessor, LayerUtility: PurgeVRAM, ReActorFaceSwap, WanVideoDecode, VideoFramePreprocessor, VHS_VideoCombine, ImageConcatMulti, ImageConcatMulti, VideoBackgroundRestorer, CR Upscale Image, VHS_VideoCombine, VHS_VideoCombine]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "juggernautXL_v9Rdphoto2Lightning.safetensors", "controlnet_strength": 0.1, "denoise": 0.5, "sampler_name": "euler_ancestral", "scheduler": "sgm_uniform", "seed": 1079700684448368, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Stand In+Vace+MultiTalk人物ID多重控制背景复合工作流V1_1957420216693223426.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1957420216693223426.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Control → Sampling → Decode → Process → Output → Other
+
+**节点**（104 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `easy showAnything`
+- `easy showAnything`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `MultiTalkModelLoader`
+- `AudioSeparation`
+- `DownloadAndLoadWav2VecModel`
+- `easy showAnything`
+- `VHS_VideoInfo`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewImage`
+- `CM_NumberUnaryOperation`
+- `CM_NumberToInt`
+- `CM_NumberToInt`
+- `ApplyInstantID`
+- `InstantIDModelLoader`
+- `ControlNetLoader`
+- `SetLatentNoiseMask`
+- `VAEEncode` ★核心
+- `InstantIDFaceAnalysis`
+- `ControlNetApplyAdvanced` ★核心
+- `VAEDecode` ★核心
+- `ImageScaleBy`
+- `CM_IntToFloat`
+- `CM_IntToNumber`
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `ControlNetLoader`
+- `LayerUtility: LayerImageTransform`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `ImageScale`
+- `LayerMask: PersonMaskUltra V2`
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `FaceAnalysisModels`
+- `LayerUtility: LayerImageTransform`
+- `FaceBoundingBox`
+- `ImageScaleBy`
+- `easy imageColorMatch`
+- `PreviewImage`
+- `ImageScale`
+- `GetImageSize+`
+- `CM_IntToFloat`
+- `LayerUtility: CropBoxResolve`
+- `LayerMask: PersonMaskUltra V2`
+- `MaskFastGrow`
+- `LayerUtility: CropByMask`
+- `JWImageResizeByLongerSide`
+- `MaskPreview+`
+- `ImageComposite+`
+- `MaskFastGrow`
+- `PreviewImage`
+- `GetImageSize+`
+- `LoadImage`
+- `PreviewImage`
+- `KSampler` ★核心
+- `WanVideoVACEModelSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `WanVideoAddStandInLatent`
+- `WanVideoEncode`
+- `JWInteger`
+- `CR Prompt Text`
+- `WanVideoVACEEncode`
+- `FaceProcessorLoader`
+- `FaceOnlyModeSwitch`
+- `PreviewImage`
+- `WanVideoEncode`
+- `SaveImage`
+- `JWInteger`
+- `WanVideoSetLoRAs`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `ImageScale`
+- `ReActorFaceSwap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_LoadVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetImageSizeAndCount`
+- `VideoInputPreprocessor`
+- `WanVideoVACEStartToEndFrame`
+- `ImageFromBatch+`
+- `ApplyFaceProcessor`
+- `DWPreprocessor`
+- `LayerUtility: PurgeVRAM`
+- `ReActorFaceSwap`
+- `WanVideoDecode`
+- `VideoFramePreprocessor`
+- `VHS_VideoCombine`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `VideoBackgroundRestorer`
+- `CR Upscale Image`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `controlnet_strength` = `0.1`
+- `checkpoint` = `juggernautXL_v9Rdphoto2Lightning.safetensors`
+- `seed` = `1079700684448368`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `0.5`
+
+## 知识
+
+覆盖率 **88%**（91/104）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`MultiTalkModelLoader`、`AudioSeparation`、`DownloadAndLoadWav2VecModel`、`VHS_VideoInfo`、`MultiTalkWav2VecEmbeds`、`CM_NumberUnaryOperation`、`CM_NumberToInt`、`ApplyInstantID`、`InstantIDModelLoader`、`ControlNetLoader`、`SetLatentNoiseMask`、`VAEEncode`、`InstantIDFaceAnalysis`、`ControlNetApplyAdvanced`、`VAEDecode`、`ImageScaleBy`、`CM_IntToFloat`、`CM_IntToNumber`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`LayerUtility: LayerImageTransform`、`ImageScale`、`LayerMask: PersonMaskUltra V2`、`FaceAnalysisModels`、`FaceBoundingBox`、`easy imageColorMatch`、`GetImageSize+`、`LayerUtility: CropBoxResolve`、`MaskFastGrow`、`LayerUtility: CropByMask`、`JWImageResizeByLongerSide`、`MaskPreview+`、`ImageComposite+`、`LoadImage`、`KSampler`、`WanVideoVACEModelSelect`、`WanVideoSampler`、`WanVideoTextEncode`、`WanVideoAddStandInLatent`、`WanVideoEncode`、`JWInteger`、`CR Prompt Text`、`WanVideoVACEEncode`、`FaceProcessorLoader`、`FaceOnlyModeSwitch`、`SaveImage`、`WanVideoSetLoRAs`、`LayerUtility: PurgeVRAM V2`、`LayerUtility: PurgeVRAM`、`VHS_VideoCombine`、`ReActorFaceSwap`、`LayerUtility: ImageScaleByAspectRatio V2`、`VHS_LoadVideo`、`GetImageSizeAndCount`、`VideoInputPreprocessor`、`WanVideoVACEStartToEndFrame`、`ImageFromBatch+`、`ApplyFaceProcessor`、`DWPreprocessor`、`WanVideoDecode`、`VideoFramePreprocessor`、`ImageConcatMulti`、`VideoBackgroundRestorer`、`CR Upscale Image`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、ControlNetApplyAdvanced、ControlNetLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

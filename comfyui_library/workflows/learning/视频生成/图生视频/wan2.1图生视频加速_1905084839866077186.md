@@ -1,0 +1,69 @@
+---
+key: 视频生成/图生视频/wan2.1图生视频加速_1905084839866077186.json
+name: wan2.1图生视频加速_1905084839866077186.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1905084839866077186.json
+hash: 1803e8d9a0e82527
+coverage: 0.888889
+learned_at: 2026-10-15 22:29:25
+nodes: [Boolean To Int [Dream], easy compare, GODMT_GetLength, Int, Int, WanImageToVideo, VAEDecode, CLIPTextEncode, CLIPVisionEncode, CLIPVisionLoader, VAELoader, TeaCache, UnetLoaderGGUF, VHS_VideoCombine, LoadImage, IntMathOperation, Bjornulf_ShowInt, Bjornulf_ShowInt, CLIPTextEncode, WanVideoImageResizeToClosest, CLIPLoader, easy textSwitch, JjkText, RH_Captioner, KSampler, ShowText|pysssss, Note]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 530414781400272, "steps": 20}
+---
+
+# 视频生成/图生视频/wan2.1图生视频加速_1905084839866077186.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1905084839866077186.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（27 个）：
+- `Boolean To Int [Dream]`
+- `easy compare`
+- `GODMT_GetLength`
+- `Int`
+- `Int`
+- `WanImageToVideo`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `TeaCache`
+- `UnetLoaderGGUF` ★核心
+- `VHS_VideoCombine`
+- `LoadImage`
+- `IntMathOperation`
+- `Bjornulf_ShowInt`
+- `Bjornulf_ShowInt`
+- `CLIPTextEncode` ★核心
+- `WanVideoImageResizeToClosest`
+- `CLIPLoader`
+- `easy textSwitch`
+- `JjkText`
+- `RH_Captioner`
+- `KSampler` ★核心
+- `ShowText|pysssss`
+- `Note`
+
+## 关键参数
+
+- `seed` = `530414781400272`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **89%**（24/27）
+
+**有卡**：`Boolean To Int [Dream]`、`easy compare`、`GODMT_GetLength`、`Int`、`WanImageToVideo`、`VAEDecode`、`CLIPTextEncode`、`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`TeaCache`、`UnetLoaderGGUF`、`VHS_VideoCombine`、`LoadImage`、`IntMathOperation`、`Bjornulf_ShowInt`、`WanVideoImageResizeToClosest`、`CLIPLoader`、`easy textSwitch`、`RH_Captioner`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、CLIPVisionEncode、CLIPVisionLoader

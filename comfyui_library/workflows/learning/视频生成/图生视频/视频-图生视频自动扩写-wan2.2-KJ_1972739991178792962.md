@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/视频-图生视频自动扩写-wan2.2-KJ_1972739991178792962.json
+name: 视频-图生视频自动扩写-wan2.2-KJ_1972739991178792962.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1972739991178792962.json
+hash: b33e1505afc5674a
+coverage: 0.643836
+learned_at: 2026-10-15 22:32:00
+nodes: [easy showAnything, easy imageSize, GetImageSizeAndCount, GetNode, Reroute, WanVideoImageToVideoEncode, WanVideoDecode, VHS_VideoCombine, GetNode, WanVideoTextEncode, WanVideoSampler, WanVideoSampler, ImpactFloat, easy showAnything, easy showAnything, CreateCFGScheduleFloatList, WanVideoSigmaToStep, GetNode, GetNode, SetNode, GetNode, GetImageSizeAndCount, PreviewImage, ImageFromBatch, GetImageSizeAndCount, PreviewImage, SetNode, easy seed, GetNode, SetNode, SetNode, LoadWanVideoT5TextEncoder, INTConstant, GetNode, ShowText|pysssss, VHS_VideoCombine, GetNode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, GetImageSizeAndCount, GetImageSizeAndCount, WanVideoSetBlockSwap, WanVideoVAELoader, WanVideoModelLoader, WanVideoModelLoader, GetImageSizeAndCount, ImageFromBatch+, StringFunction|pysssss, SetNode, GetNode, StringFunction|pysssss, easy showAnything, easy positive, WanVideoSetBlockSwap, WanVideoLoraSelect, WanVideoBlockSwap, WanVideoScheduler, WanVideoScheduler, WanVideoLoraSelect, easy anythingIndexSwitch, Qwen3_VQA, GetImageSizeAndCount, SetNode, ImpactFloat, SetNode, SetNode, easy int, easy mathInt, easy mathFloat, PrimitiveFloat, CM_FloatToInt, easy int, easy positive]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/视频-图生视频自动扩写-wan2.2-KJ_1972739991178792962.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1972739991178792962.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（73 个）：
+- `easy showAnything`
+- `easy imageSize`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `Reroute`
+- `WanVideoImageToVideoEncode`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `ImpactFloat`
+- `easy showAnything`
+- `easy showAnything`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSigmaToStep`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `PreviewImage`
+- `ImageFromBatch`
+- `GetImageSizeAndCount`
+- `PreviewImage`
+- `SetNode`
+- `easy seed`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `INTConstant`
+- `GetNode`
+- `ShowText|pysssss`
+- `VHS_VideoCombine`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `WanVideoSetBlockSwap`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `GetImageSizeAndCount`
+- `ImageFromBatch+`
+- `StringFunction|pysssss`
+- `SetNode`
+- `GetNode`
+- `StringFunction|pysssss`
+- `easy showAnything`
+- `easy positive`
+- `WanVideoSetBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoLoraSelect`
+- `easy anythingIndexSwitch`
+- `Qwen3_VQA`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `ImpactFloat`
+- `SetNode`
+- `SetNode`
+- `easy int`
+- `easy mathInt`
+- `easy mathFloat`
+- `PrimitiveFloat`
+- `CM_FloatToInt`
+- `easy int`
+- `easy positive`
+
+## 知识
+
+覆盖率 **64%**（47/73）
+
+**有卡**：`easy imageSize`、`GetImageSizeAndCount`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`VHS_VideoCombine`、`WanVideoTextEncode`、`WanVideoSampler`、`ImpactFloat`、`CreateCFGScheduleFloatList`、`WanVideoSigmaToStep`、`ImageFromBatch`、`easy seed`、`LoadWanVideoT5TextEncoder`、`INTConstant`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`WanVideoSetBlockSwap`、`WanVideoVAELoader`、`WanVideoModelLoader`、`ImageFromBatch+`、`StringFunction|pysssss`、`easy positive`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`WanVideoScheduler`、`easy anythingIndexSwitch`、`Qwen3_VQA`、`easy int`、`easy mathInt`、`easy mathFloat`、`CM_FloatToInt`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

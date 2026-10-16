@@ -1,0 +1,113 @@
+---
+key: 视频生成/图生视频/Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json
+name: Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2042131699907170305.json
+hash: ea5ca9410afb1327
+coverage: 0.567901
+learned_at: 2026-10-15 22:36:25
+nodes: [GetNode, Reroute, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Reroute, Reroute, GetNode, WanVideoAnimateEmbeds, GetNode, WanVideoSampler, easy cleanGpuUsed, GetNode, WanVideoDecode, GetImageSizeAndCount, ImageConcanate, SeCVideoSegmentation, LayerUtility: ImageBlend, SetNode, GetNode, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, GrowMask, BlockifyMask, SetNode, GetNode, SetNode, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoBlockSwap, WanVideoVAELoader, WanVideoSetLoRAs, WanVideoSetBlockSwap, SetNode, SetNode, easy cleanGpuUsed, WanVideoTextEncodeCached, CR Text, WanVideoClipVisionEncode, CLIPVisionLoader, GetNode, GetNode, GetNode, VHS_VideoCombine, SeCModelLoader, OnnxDetectionModelLoader, DrawViTPose, Reroute, PoseAndFaceDetection, SetNode, easy cleanGpuUsed, easy cleanGpuUsed, DrawMaskOnImage, MaskToImage, InvertMask, SetNode, SetNode, INTConstant, INTConstant, INTConstant, ImageResizeKJv2, SetNode, PreviewImage, VHS_VideoInfo, GetImageSizeAndCount, SetNode, SetNode, SetNode, SetNode, ImageFromBatch+, PreviewImage, Note, JWInteger, VHS_LoadVideo, LoadImage, PointsEditor]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2  wan 二创首选 角色替换 动作模仿 图生视频_2042131699907170305.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2042131699907170305.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（81 个）：
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `GetNode`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `SeCVideoSegmentation`
+- `LayerUtility: ImageBlend`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GrowMask`
+- `BlockifyMask`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `WanVideoTextEncodeCached`
+- `CR Text`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SeCModelLoader`
+- `OnnxDetectionModelLoader`
+- `DrawViTPose`
+- `Reroute`
+- `PoseAndFaceDetection`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `DrawMaskOnImage`
+- `MaskToImage`
+- `InvertMask`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `ImageResizeKJv2`
+- `SetNode`
+- `PreviewImage`
+- `VHS_VideoInfo`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ImageFromBatch+`
+- `PreviewImage`
+- `Note`
+- `JWInteger`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `PointsEditor`
+
+## 知识
+
+覆盖率 **57%**（46/81）
+
+**有卡**：`WanVideoAnimateEmbeds`、`WanVideoSampler`、`easy cleanGpuUsed`、`WanVideoDecode`、`GetImageSizeAndCount`、`ImageConcanate`、`SeCVideoSegmentation`、`LayerUtility: ImageBlend`、`VHS_VideoCombine`、`GrowMask`、`BlockifyMask`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoTextEncodeCached`、`CR Text`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`SeCModelLoader`、`OnnxDetectionModelLoader`、`DrawViTPose`、`PoseAndFaceDetection`、`DrawMaskOnImage`、`MaskToImage`、`InvertMask`、`INTConstant`、`ImageResizeKJv2`、`VHS_VideoInfo`、`ImageFromBatch+`、`JWInteger`、`VHS_LoadVideo`、`LoadImage`、`PointsEditor`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

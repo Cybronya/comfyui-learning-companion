@@ -1,0 +1,149 @@
+---
+key: 视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json
+name: 图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2054112708936650753.json
+hash: dd26b07544fd73d3
+coverage: 0.504587
+learned_at: 2026-10-15 22:37:45
+nodes: [GetNode, GetNode, SetNode, LTXVConcatAVLatent, SetNode, GetNode, LTXVImgToVideoInplace, GetNode, GetNode, LatentUpscaleModelLoader, SetNode, LTXVConcatAVLatent, EmptyLTXVLatentVideo, SamplerCustomAdvanced, LTXVImgToVideoInplace, LTXVLatentUpsampler, LTXVSeparateAVLatent, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, LTXFloatToInt, GetNode, LTXVEmptyLatentAudio, LTXVPreprocess, ImageScaleBy, GetNode, CFGGuider, SetNode, SetNode, SetNode, SetNode, LTXVAudioVAELoader, PathchSageAttentionKJ, LTXAVTextEncoderLoader, GetNode, GetNode, GetNode, SetNode, SetNode, LTXVSpatioTemporalTiledVAEDecode, SamplerCustomAdvanced, Seed (rgthree), easy cleanGpuUsed, ManualSigmas, CFGGuider, LTXVAudioVAEDecode, CheckpointLoaderSimple, GetNode, KSamplerSelect, KSamplerSelect, GetNode, GetNode, GetNode, llama_cpp_parameters, GetNode, ManualSigmas, RandomNoise, GetNode, GetNode, llama_cpp_model_loader, LTXVSeparateAVLatent, SetNode, SetNode, GetNode, VHS_VideoCombine, LTX2_NAG, llama_cpp_instruct_adv, StringFunction|pysssss, GetNode, Int to String, SetNode, StringFunction|pysssss, SetNode, SetNode, MathExpression_UTK, Float, Int, Int, Note, CLIPTextEncode, GetNode, LTXVConditioning, easy cleanGpuUsed, Note, LoraLoaderModelOnly, easy showAnything, Text, Note, easy showAnything, Note, Text, Text, Text, Note, Note, InversionDemoLazySwitch, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, CLIPTextEncode, RandomNoise]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-distilled-1.1.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2054112708936650753.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（109 个）：
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `GetNode`
+- `LTXVImgToVideoInplace`
+- `GetNode`
+- `GetNode`
+- `LatentUpscaleModelLoader`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `EmptyLTXVLatentVideo`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXFloatToInt`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVPreprocess`
+- `ImageScaleBy`
+- `GetNode`
+- `CFGGuider`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LTXVAudioVAELoader`
+- `PathchSageAttentionKJ`
+- `LTXAVTextEncoderLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LTXVSpatioTemporalTiledVAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `Seed (rgthree)`
+- `easy cleanGpuUsed`
+- `ManualSigmas`
+- `CFGGuider`
+- `LTXVAudioVAEDecode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `llama_cpp_parameters`
+- `GetNode`
+- `ManualSigmas`
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `llama_cpp_model_loader`
+- `LTXVSeparateAVLatent`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `LTX2_NAG`
+- `llama_cpp_instruct_adv`
+- `StringFunction|pysssss`
+- `GetNode`
+- `Int to String`
+- `SetNode`
+- `StringFunction|pysssss`
+- `SetNode`
+- `SetNode`
+- `MathExpression_UTK`
+- `Float`
+- `Int`
+- `Int`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `LTXVConditioning`
+- `easy cleanGpuUsed`
+- `Note`
+- `LoraLoaderModelOnly` ★核心
+- `easy showAnything`
+- `Text`
+- `Note`
+- `easy showAnything`
+- `Note`
+- `Text`
+- `Text`
+- `Text`
+- `Note`
+- `Note`
+- `InversionDemoLazySwitch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `RandomNoise`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-distilled-1.1.safetensors`
+
+## 知识
+
+覆盖率 **50%**（55/109）
+
+**有卡**：`LTXVConcatAVLatent`、`LTXVImgToVideoInplace`、`LatentUpscaleModelLoader`、`EmptyLTXVLatentVideo`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`LTXFloatToInt`、`LTXVEmptyLatentAudio`、`LTXVPreprocess`、`ImageScaleBy`、`CFGGuider`、`LTXVAudioVAELoader`、`PathchSageAttentionKJ`、`LTXAVTextEncoderLoader`、`LTXVSpatioTemporalTiledVAEDecode`、`Seed (rgthree)`、`easy cleanGpuUsed`、`ManualSigmas`、`LTXVAudioVAEDecode`、`CheckpointLoaderSimple`、`KSamplerSelect`、`llama_cpp_parameters`、`RandomNoise`、`llama_cpp_model_loader`、`VHS_VideoCombine`、`LTX2_NAG`、`llama_cpp_instruct_adv`、`StringFunction|pysssss`、`Int to String`、`MathExpression_UTK`、`Float`、`Int`、`CLIPTextEncode`、`LTXVConditioning`、`LoraLoaderModelOnly`、`Text`、`InversionDemoLazySwitch`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

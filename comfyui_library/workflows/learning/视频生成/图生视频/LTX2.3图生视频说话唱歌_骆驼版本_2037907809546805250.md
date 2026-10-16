@@ -1,0 +1,114 @@
+---
+key: 视频生成/图生视频/LTX2.3图生视频说话唱歌_骆驼版本_2037907809546805250.json
+name: LTX2.3图生视频说话唱歌_骆驼版本_2037907809546805250.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2037907809546805250.json
+hash: d55e4a8b8bb6fe9f
+coverage: 0.783784
+learned_at: 2026-10-15 22:36:00
+nodes: [RandomNoise, LTXVConcatAVLatent, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, ResizeImagesByLongerEdge, KSamplerSelect, Reroute, ManualSigmas, LTXVSeparateAVLatent, LTXVSeparateAVLatent, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, CFGGuider, LTXVConditioning, KSamplerSelect, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVPreprocess, SamplerCustomAdvanced, ComfyMathExpression, ComfyMathExpression, LTXVAudioVAELoader, LTXVConcatAVLatent, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, LTXVAudioVAEEncode, Any Switch (rgthree), LTXVEmptyLatentAudio, SolidMask, CM_IntToFloat, SetLatentNoiseMask, ResizeImageMaskNode, MarkdownNote, PrimitiveInt, CM_IntToFloat, SimpleMath+, MarkdownNote, MarkdownNote, PrimitiveInt, PrimitiveInt, PreviewAny, PrimitiveBoolean, PrimitiveInt, CLIPTextEncode, Any Switch (rgthree), Fast Groups Bypasser (rgthree), LoadAudio, ComfyMathExpression, easy cleanGpuUsed, Any Switch (rgthree), TrimAudioDuration, VHS_VideoCombine, RandomNoise, Fast Groups Bypasser (rgthree), Int, RH_LLMAPI_Pro_Node, RHHiddenNodes, CLIPTextEncode, CreateVideo, VAEDecodeTiled, LTXVAudioVAEDecode, TT_img_enc_v2, SaveImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, PrimitiveStringMultiline, CheckpointLoaderSimple, Fast Groups Bypasser (rgthree), RHHiddenNodes, Int, Int]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "sulphur_distil_bf16.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3图生视频说话唱歌_骆驼版本_2037907809546805250.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2037907809546805250.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（74 个）：
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `ResizeImagesByLongerEdge`
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `LTXAVTextEncoderLoader`
+- `CFGGuider`
+- `LTXVConditioning`
+- `KSamplerSelect` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVPreprocess`
+- `SamplerCustomAdvanced` ★核心
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVAudioVAELoader`
+- `LTXVConcatAVLatent`
+- `LTXVImgToVideoInplace`
+- `EmptyLTXVLatentVideo`
+- `LTXVAudioVAEEncode` ★核心
+- `Any Switch (rgthree)`
+- `LTXVEmptyLatentAudio` ★核心
+- `SolidMask`
+- `CM_IntToFloat`
+- `SetLatentNoiseMask`
+- `ResizeImageMaskNode`
+- `MarkdownNote`
+- `PrimitiveInt`
+- `CM_IntToFloat`
+- `SimpleMath+`
+- `MarkdownNote`
+- `MarkdownNote`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PreviewAny`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `CLIPTextEncode` ★核心
+- `Any Switch (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadAudio`
+- `ComfyMathExpression`
+- `easy cleanGpuUsed`
+- `Any Switch (rgthree)`
+- `TrimAudioDuration`
+- `VHS_VideoCombine`
+- `RandomNoise`
+- `Fast Groups Bypasser (rgthree)`
+- `Int`
+- `RH_LLMAPI_Pro_Node`
+- `RHHiddenNodes`
+- `CLIPTextEncode` ★核心
+- `CreateVideo`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `TT_img_enc_v2`
+- `SaveImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `CheckpointLoaderSimple` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `RHHiddenNodes`
+- `Int`
+- `Int`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `sulphur_distil_bf16.safetensors`
+
+## 知识
+
+覆盖率 **78%**（58/74）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`ResizeImagesByLongerEdge`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`LTXVConditioning`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVPreprocess`、`ComfyMathExpression`、`LTXVAudioVAELoader`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEEncode`、`LTXVEmptyLatentAudio`、`SolidMask`、`CM_IntToFloat`、`SetLatentNoiseMask`、`ResizeImageMaskNode`、`SimpleMath+`、`PrimitiveBoolean`、`CLIPTextEncode`、`LoadAudio`、`easy cleanGpuUsed`、`TrimAudioDuration`、`VHS_VideoCombine`、`Int`、`RH_LLMAPI_Pro_Node`、`RHHiddenNodes`、`CreateVideo`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`TT_img_enc_v2`、`SaveImage`、`LoraLoaderModelOnly`、`LoadImage`、`CheckpointLoaderSimple`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

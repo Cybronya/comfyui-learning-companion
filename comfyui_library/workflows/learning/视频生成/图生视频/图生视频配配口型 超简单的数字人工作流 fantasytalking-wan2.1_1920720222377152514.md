@@ -1,0 +1,73 @@
+---
+key: 视频生成/图生视频/图生视频配配口型 超简单的数字人工作流 fantasytalking-wan2.1_1920720222377152514.json
+name: 图生视频配配口型 超简单的数字人工作流 fantasytalking-wan2.1_1920720222377152514.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1920720222377152514.json
+hash: 669550daa2484de1
+coverage: 0.658537
+learned_at: 2026-10-15 22:29:42
+nodes: [WanVideoTextEmbedBridge, CLIPTextEncode, CLIPLoader, CLIPTextEncode, Note, WanVideoVRAMManagement, Note, Note, Note, CLIPVisionLoader, WanVideoDecode, WanVideoClipVisionEncode, WanVideoSampler, WanVideoTorchCompileSettings, MarkdownNote, Note, PreviewImage, SetNode, GetNode, GetNode, SetNode, GetNode, WanVideoTextEncode, INTConstant, INTConstant, Note, WanVideoBlockSwap, FantasyTalkingWav2VecEmbeds, WanVideoTeaCache, CreateCFGScheduleFloatList, Note, WanVideoImageToVideoEncode, FantasyTalkingModelLoader, DownloadAndLoadWav2VecModel, LoadWanVideoT5TextEncoder, WanVideoVAELoader, ImageResizeKJ, LoadAudio, VHS_VideoCombine, LoadImage, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/图生视频配配口型 超简单的数字人工作流 fantasytalking-wan2.1_1920720222377152514.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1920720222377152514.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
+**节点**（41 个）：
+- `WanVideoTextEmbedBridge`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `WanVideoVRAMManagement`
+- `Note`
+- `Note`
+- `Note`
+- `CLIPVisionLoader`
+- `WanVideoDecode`
+- `WanVideoClipVisionEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoTorchCompileSettings`
+- `MarkdownNote`
+- `Note`
+- `PreviewImage`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoTextEncode`
+- `INTConstant`
+- `INTConstant`
+- `Note`
+- `WanVideoBlockSwap`
+- `FantasyTalkingWav2VecEmbeds`
+- `WanVideoTeaCache`
+- `CreateCFGScheduleFloatList`
+- `Note`
+- `WanVideoImageToVideoEncode`
+- `FantasyTalkingModelLoader`
+- `DownloadAndLoadWav2VecModel`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `ImageResizeKJ`
+- `LoadAudio`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **66%**（27/41）
+
+**有卡**：`WanVideoTextEmbedBridge`、`CLIPTextEncode`、`CLIPLoader`、`WanVideoVRAMManagement`、`CLIPVisionLoader`、`WanVideoDecode`、`WanVideoClipVisionEncode`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoTextEncode`、`INTConstant`、`WanVideoBlockSwap`、`FantasyTalkingWav2VecEmbeds`、`WanVideoTeaCache`、`CreateCFGScheduleFloatList`、`WanVideoImageToVideoEncode`、`FantasyTalkingModelLoader`、`DownloadAndLoadWav2VecModel`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`ImageResizeKJ`、`LoadAudio`、`VHS_VideoCombine`、`LoadImage`、`WanVideoModelLoader`
+
+**用到的条目**：CLIPTextEncode、CLIPLoader、LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode

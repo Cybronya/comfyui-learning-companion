@@ -1,0 +1,65 @@
+---
+key: 视频生成/图生视频/wan2.2图生视频首尾帧_2040056903719460866.json
+name: wan2.2图生视频首尾帧_2040056903719460866.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2040056903719460866.json
+hash: 02a3ebb5706155eb
+coverage: 1
+learned_at: 2026-10-15 22:36:13
+nodes: [VAEDecode, ModelSamplingSD3, CLIPTextEncode, LoadImage, ImageResizeKJv2, CLIPVisionLoader, CLIPVisionEncode, ModelSamplingSD3, CLIPTextEncode, CLIPVisionEncode, KSamplerAdvanced, KSamplerAdvanced, VHS_VideoCombine, WanFirstLastFrameToVideo, UNETLoader, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, CLIPVisionLoader, ImageResizeKJv2, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan2.2图生视频首尾帧_2040056903719460866.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2040056903719460866.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（23 个）：
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `ImageResizeKJv2`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `WanFirstLastFrameToVideo`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `ImageResizeKJv2`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **100%**（23/23）
+
+**有卡**：`VAEDecode`、`ModelSamplingSD3`、`CLIPTextEncode`、`LoadImage`、`ImageResizeKJv2`、`CLIPVisionLoader`、`CLIPVisionEncode`、`KSamplerAdvanced`、`VHS_VideoCombine`、`WanFirstLastFrameToVideo`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

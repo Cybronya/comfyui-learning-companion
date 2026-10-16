@@ -1,0 +1,48 @@
+---
+key: 视频生成/图生视频/WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json
+name: WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1946216750084186114.json
+hash: be2a2450687bb237
+coverage: 1
+learned_at: 2026-10-15 22:30:44
+nodes: [WanVideoBlockSwap, TextInput_, easy imageSize, LoadWanVideoT5TextEncoder, TextInput_, ImageScaleToTotalPixels, WanVideoModelLoader, WanVideoVAELoader, WanVideoSampler, WanVideoDecode, LoadImage, WanVideoLoraSelect, LoadWanVideoClipTextEncoder, WanVideoTextEncode, WanVideoImageClipEncode, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1946216750084186114.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（16 个）：
+- `WanVideoBlockSwap`
+- `TextInput_`
+- `easy imageSize`
+- `LoadWanVideoT5TextEncoder`
+- `TextInput_`
+- `ImageScaleToTotalPixels`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `LoadImage`
+- `WanVideoLoraSelect`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoTextEncode`
+- `WanVideoImageClipEncode`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **100%**（16/16）
+
+**有卡**：`WanVideoBlockSwap`、`TextInput_`、`easy imageSize`、`LoadWanVideoT5TextEncoder`、`ImageScaleToTotalPixels`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoSampler`、`WanVideoDecode`、`LoadImage`、`WanVideoLoraSelect`、`LoadWanVideoClipTextEncoder`、`WanVideoTextEncode`、`WanVideoImageClipEncode`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

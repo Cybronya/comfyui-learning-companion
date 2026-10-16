@@ -1,0 +1,169 @@
+---
+key: 视频生成/图生视频/超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_2053379997733273601.json
+name: 超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_2053379997733273601.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2053379997733273601.json
+hash: 6cfbaf004e561ce0
+coverage: 0.784615
+learned_at: 2026-10-15 22:37:39
+nodes: [PreviewImage, DualCLIPLoader, easy cleanGpuUsed, VAELoaderKJ, Reroute, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAELoader, LTXVConcatAVLatent, Reroute, CR Float To Integer, LTXVConditioning, Reroute, Reroute, KSamplerSelect, RandomNoise, ManualSigmas, ImageConcatMulti, ImageConcatMulti, ImageConcatMulti, LoadImage, LoadImage, LoadImage, LoadImage, CFGGuider, Reroute, LTXVEmptyLatentAudio, LTXVCropGuides, ImageFromBatch+, ImageFromBatch+, VAEDecodeTiled, ImageFromBatch+, LTXVAudioVAEDecode, GetTextFromJson, GetTextFromJson, ShowAnything|Mie, GetObjectFromJson, easy forLoopEnd, ShowAnything|Mie, ImageConcatMulti, ShowAnything|Mie, ShowAnything|Mie, GetObjectFromJson, GetObjectFromJson, ImageFromBatch+, EmptyLTXVLatentVideo, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, MarkdownNote, easy promptList, easy batchAnything, easy isNone, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, easy indexAnything, easy indexAnything, easy indexAnything, LTXVAddGuideMulti, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, easy indexAnything, CLIPTextEncode, easy lengthAnything, AudioConcat, GetTextFromJson, UNETLoader, MarkdownNote, PrimitiveFloat, MathExpression|pysssss, Light-Tool: DeserializeJsonString, LoadImage, LoadImage, LoadImage, LoadImage, INTConstant, Bjornulf_ShowInt, Text, Text, Text, Text, ShowAnything|Mie, SDVM Image List Repeat, GuHaiAutoImageSplit, ShowText|pysssss, EmptyAudio, If ANY execute A else B, Int, easy indexAnything, easy indexAnything, ShowAnything|Mie, ShowAnything|Mie, ShowAnything|Mie, ShowAnything|Mie, MarkdownNote, easy forLoopStart, ShowText|pysssss, ShowText|pysssss, ShowText|pysssss, PromptRelayEncode, ImageConcatMulti, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, ImageConcatMulti, PreviewImage, PreviewImage, LoraLoaderModelOnly, MarkdownNote, Text, TTResolutionSelector, MarkdownNote, PromptRelayEncodeTimeline, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, VHS_VideoCombine, VHS_VideoCombine, LoraLoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_2053379997733273601.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2053379997733273601.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（130 个）：
+- `PreviewImage`
+- `DualCLIPLoader`
+- `easy cleanGpuUsed`
+- `VAELoaderKJ`
+- `Reroute`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAELoader`
+- `LTXVConcatAVLatent`
+- `Reroute`
+- `CR Float To Integer`
+- `LTXVConditioning`
+- `Reroute`
+- `Reroute`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `ManualSigmas`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CFGGuider`
+- `Reroute`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVCropGuides`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `VAEDecodeTiled` ★核心
+- `ImageFromBatch+`
+- `LTXVAudioVAEDecode` ★核心
+- `GetTextFromJson`
+- `GetTextFromJson`
+- `ShowAnything|Mie`
+- `GetObjectFromJson`
+- `easy forLoopEnd`
+- `ShowAnything|Mie`
+- `ImageConcatMulti`
+- `ShowAnything|Mie`
+- `ShowAnything|Mie`
+- `GetObjectFromJson`
+- `GetObjectFromJson`
+- `ImageFromBatch+`
+- `EmptyLTXVLatentVideo`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `MarkdownNote`
+- `easy promptList`
+- `easy batchAnything`
+- `easy isNone`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `LTXVAddGuideMulti`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `CLIPTextEncode` ★核心
+- `easy lengthAnything`
+- `AudioConcat`
+- `GetTextFromJson`
+- `UNETLoader` ★核心
+- `MarkdownNote`
+- `PrimitiveFloat`
+- `MathExpression|pysssss`
+- `Light-Tool: DeserializeJsonString`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `INTConstant`
+- `Bjornulf_ShowInt`
+- `Text`
+- `Text`
+- `Text`
+- `Text`
+- `ShowAnything|Mie`
+- `SDVM Image List Repeat`
+- `GuHaiAutoImageSplit`
+- `ShowText|pysssss`
+- `EmptyAudio`
+- `If ANY execute A else B`
+- `Int`
+- `easy indexAnything`
+- `easy indexAnything`
+- `ShowAnything|Mie`
+- `ShowAnything|Mie`
+- `ShowAnything|Mie`
+- `ShowAnything|Mie`
+- `MarkdownNote`
+- `easy forLoopStart`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `PromptRelayEncode`
+- `ImageConcatMulti`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `ImageConcatMulti`
+- `PreviewImage`
+- `PreviewImage`
+- `LoraLoaderModelOnly` ★核心
+- `MarkdownNote`
+- `Text`
+- `TTResolutionSelector`
+- `MarkdownNote`
+- `PromptRelayEncodeTimeline`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **78%**（102/130）
+
+**有卡**：`DualCLIPLoader`、`easy cleanGpuUsed`、`VAELoaderKJ`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VAELoader`、`LTXVConcatAVLatent`、`CR Float To Integer`、`LTXVConditioning`、`KSamplerSelect`、`RandomNoise`、`ManualSigmas`、`ImageConcatMulti`、`LoadImage`、`CFGGuider`、`LTXVEmptyLatentAudio`、`LTXVCropGuides`、`ImageFromBatch+`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`GetTextFromJson`、`ShowAnything|Mie`、`GetObjectFromJson`、`easy forLoopEnd`、`EmptyLTXVLatentVideo`、`easy promptList`、`easy batchAnything`、`easy isNone`、`ImageResizeKJv2`、`easy indexAnything`、`LTXVAddGuideMulti`、`CLIPTextEncode`、`easy lengthAnything`、`AudioConcat`、`UNETLoader`、`MathExpression|pysssss`、`Light-Tool: DeserializeJsonString`、`INTConstant`、`Bjornulf_ShowInt`、`Text`、`SDVM Image List Repeat`、`GuHaiAutoImageSplit`、`EmptyAudio`、`If ANY execute A else B`、`Int`、`easy forLoopStart`、`PromptRelayEncode`、`LoraLoaderModelOnly`、`TTResolutionSelector`、`PromptRelayEncodeTimeline`、`VHS_VideoCombine`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

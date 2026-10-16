@@ -1,0 +1,121 @@
+---
+key: 视频生成/图生视频/LTX2.3 动态循环动态壁纸_2075248716268793858.json
+name: LTX2.3 动态循环动态壁纸_2075248716268793858.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2075248716268793858.json
+hash: 707621316d797fbb
+coverage: 0.939024
+learned_at: 2026-10-15 22:41:23
+nodes: [VAELoader, SimpleMath+, CFGGuider, PrimitiveInt, CLIPTextEncode, LTXVConditioning, LTXVConcatAVLatent, ManualSigmas, SamplerCustomAdvanced, DualCLIPLoader, RandomNoise, RandomNoise, EmptyLTXVLatentVideo, CLIPTextEncode, llama_cpp_parameters, llama_cpp_model_loader, easy seed, PrimitiveBoolean, CFGGuider, LTXVAudioVAEDecode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVEmptyLatentAudio, LoraLoaderModelOnly, AnyBooleanSwitch, VAELoaderKJ, ImageResizeKJv2, UNETLoader, ImpactConditionalBranch, LTX2SamplingPreviewOverride, LTX2_NAG, LatentUpscaleModelLoader, easy anythingIndexSwitch, easy boolean, LTXVImgToVideoInplaceKJ, LTXVScheduler, GetImageSize, VAELoader, KSamplerSelect, KSamplerSelect, SamplerCustomAdvanced, LTXVSeparateAVLatent, LTXVImgToVideoInplace, LTXVCropGuides, LTXVConcatAVLatent, LTXVSeparateAVLatent, PrimitiveBoolean, PrimitiveInt, LTXVImgToVideoInplaceKJ, easy setNode, LoraLoaderModelOnly, GetImageSize, ImageScaleToTotalPixels, ImageScaleBy, EmptyImage, LTXVLatentUpsampler, LTXVCropGuides, PrimitiveInt, LoraLoaderModelOnly, CM_BoolToInt, CM_IntToFloat, SimpleMath+, easy boolean, VAEDecode, SimpleMath+, VHS_VideoCombine, DuckHideNode, SaveImage, llama_cpp_instruct_adv, CR Text, CR Text, CR Text, LoadImage, ShowText|pysssss, MarkdownNote, LoraLoaderModelOnly, easy getNode, LoraLoaderModelOnly, LoraLoaderModelOnly, easy int]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 动态循环动态壁纸_2075248716268793858.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2075248716268793858.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（82 个）：
+- `VAELoader`
+- `SimpleMath+`
+- `CFGGuider`
+- `PrimitiveInt`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `LTXVConcatAVLatent`
+- `ManualSigmas`
+- `SamplerCustomAdvanced` ★核心
+- `DualCLIPLoader`
+- `RandomNoise`
+- `RandomNoise`
+- `EmptyLTXVLatentVideo`
+- `CLIPTextEncode` ★核心
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+- `easy seed`
+- `PrimitiveBoolean`
+- `CFGGuider`
+- `LTXVAudioVAEDecode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `AnyBooleanSwitch`
+- `VAELoaderKJ`
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `ImpactConditionalBranch`
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `LatentUpscaleModelLoader`
+- `easy anythingIndexSwitch`
+- `easy boolean`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVScheduler`
+- `GetImageSize`
+- `VAELoader`
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVImgToVideoInplace`
+- `LTXVCropGuides`
+- `LTXVConcatAVLatent`
+- `LTXVSeparateAVLatent`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `LTXVImgToVideoInplaceKJ`
+- `easy setNode`
+- `LoraLoaderModelOnly` ★核心
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `ImageScaleBy`
+- `EmptyImage`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVCropGuides`
+- `PrimitiveInt`
+- `LoraLoaderModelOnly` ★核心
+- `CM_BoolToInt`
+- `CM_IntToFloat`
+- `SimpleMath+`
+- `easy boolean`
+- `VAEDecode` ★核心
+- `SimpleMath+`
+- `VHS_VideoCombine`
+- `DuckHideNode`
+- `SaveImage`
+- `llama_cpp_instruct_adv`
+- `CR Text`
+- `CR Text`
+- `CR Text`
+- `LoadImage`
+- `ShowText|pysssss`
+- `MarkdownNote`
+- `LoraLoaderModelOnly` ★核心
+- `easy getNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `easy int`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **94%**（77/82）
+
+**有卡**：`VAELoader`、`SimpleMath+`、`CFGGuider`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVConcatAVLatent`、`ManualSigmas`、`SamplerCustomAdvanced`、`DualCLIPLoader`、`RandomNoise`、`EmptyLTXVLatentVideo`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`easy seed`、`PrimitiveBoolean`、`LTXVAudioVAEDecode`、`LoraLoaderModelOnly`、`LTXVEmptyLatentAudio`、`AnyBooleanSwitch`、`VAELoaderKJ`、`ImageResizeKJv2`、`UNETLoader`、`ImpactConditionalBranch`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`LatentUpscaleModelLoader`、`easy anythingIndexSwitch`、`easy boolean`、`LTXVImgToVideoInplaceKJ`、`LTXVScheduler`、`GetImageSize`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVImgToVideoInplace`、`LTXVCropGuides`、`easy setNode`、`ImageScaleToTotalPixels`、`ImageScaleBy`、`EmptyImage`、`LTXVLatentUpsampler`、`CM_BoolToInt`、`CM_IntToFloat`、`VAEDecode`、`VHS_VideoCombine`、`DuckHideNode`、`SaveImage`、`llama_cpp_instruct_adv`、`CR Text`、`LoadImage`、`easy getNode`、`easy int`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect

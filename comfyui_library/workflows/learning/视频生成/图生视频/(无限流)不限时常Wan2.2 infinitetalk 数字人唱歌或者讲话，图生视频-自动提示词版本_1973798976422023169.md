@@ -1,0 +1,88 @@
+---
+key: 视频生成/图生视频/(无限流)不限时常Wan2.2 infinitetalk 数字人唱歌或者讲话，图生视频-自动提示词版本_1973798976422023169.json
+name: (无限流)不限时常Wan2.2 infinitetalk 数字人唱歌或者讲话，图生视频-自动提示词版本_1973798976422023169.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1973798976422023169.json
+hash: 2ff2e4ad42db47e2
+coverage: 0.714286
+learned_at: 2026-10-15 22:32:04
+nodes: [WanVideoSampler, Note, Note, Note, INTConstant, INTConstant, easy showAnything, PrimitiveFloat, PrimitiveFloat, GetImageSizeAndCount, SimpleMath+, CreateCFGScheduleFloatList, PreviewImage, WanVideoImageToVideoEncode, ImageResizeKJv2, WanVideoTextEncode, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoBlockSwap, DownloadAndLoadWav2VecModel, WanVideoDecode, MultiTalkWav2VecEmbeds, PreviewAudio, AudioSeparation, CR Text Input Switch, Note, Note, GLM_Vision_ImageToPrompt, Text Multiline, ShowText|pysssss, Text Multiline, Note, ImpactInt, Note, Note, Note, CR Seed, Text Multiline, Text Multiline, easy showAnything, SimpleMath+, LoadImage, VHS_LoadAudioUpload, PrimitiveFloat, WanVideoLoraSelect, MultiTalkModelLoader, WanVideoLoraSelect, WanVideoModelLoader, WanVideoModelLoader, WanVideoVAELoader, LoadWanVideoT5TextEncoder, INTConstant, INTConstant, VHS_VideoCombine, WanVideoClipVisionEncode, CLIPVisionLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(无限流)不限时常Wan2.2 infinitetalk 数字人唱歌或者讲话，图生视频-自动提示词版本_1973798976422023169.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1973798976422023169.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（56 个）：
+- `WanVideoSampler` ★核心
+- `Note`
+- `Note`
+- `Note`
+- `INTConstant`
+- `INTConstant`
+- `easy showAnything`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `GetImageSizeAndCount`
+- `SimpleMath+`
+- `CreateCFGScheduleFloatList`
+- `PreviewImage`
+- `WanVideoImageToVideoEncode`
+- `ImageResizeKJv2`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `DownloadAndLoadWav2VecModel`
+- `WanVideoDecode`
+- `MultiTalkWav2VecEmbeds`
+- `PreviewAudio`
+- `AudioSeparation`
+- `CR Text Input Switch`
+- `Note`
+- `Note`
+- `GLM_Vision_ImageToPrompt`
+- `Text Multiline`
+- `ShowText|pysssss`
+- `Text Multiline`
+- `Note`
+- `ImpactInt`
+- `Note`
+- `Note`
+- `Note`
+- `CR Seed`
+- `Text Multiline`
+- `Text Multiline`
+- `easy showAnything`
+- `SimpleMath+`
+- `LoadImage`
+- `VHS_LoadAudioUpload`
+- `PrimitiveFloat`
+- `WanVideoLoraSelect`
+- `MultiTalkModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `INTConstant`
+- `INTConstant`
+- `VHS_VideoCombine`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+
+## 知识
+
+覆盖率 **71%**（40/56）
+
+**有卡**：`WanVideoSampler`、`INTConstant`、`GetImageSizeAndCount`、`SimpleMath+`、`CreateCFGScheduleFloatList`、`WanVideoImageToVideoEncode`、`ImageResizeKJv2`、`WanVideoTextEncode`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`DownloadAndLoadWav2VecModel`、`WanVideoDecode`、`MultiTalkWav2VecEmbeds`、`PreviewAudio`、`AudioSeparation`、`CR Text Input Switch`、`GLM_Vision_ImageToPrompt`、`Text Multiline`、`ImpactInt`、`CR Seed`、`LoadImage`、`VHS_LoadAudioUpload`、`WanVideoLoraSelect`、`MultiTalkModelLoader`、`WanVideoModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`VHS_VideoCombine`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、CR Seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

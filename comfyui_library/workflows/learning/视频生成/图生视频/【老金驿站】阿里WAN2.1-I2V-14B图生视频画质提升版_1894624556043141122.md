@@ -1,0 +1,46 @@
+---
+key: 视频生成/图生视频/【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_1894624556043141122.json
+name: 【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_1894624556043141122.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1894624556043141122.json
+hash: 65e811cc926eb0d8
+coverage: 0.928571
+learned_at: 2026-10-15 22:29:16
+nodes: [LoadImage, WanVideoSampler, VHS_VideoCombine, WanVideoTextEncode, FILM VFI, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, WanVideoModelLoader, LoadWanVideoClipTextEncoder, Fast Groups Bypasser (rgthree), WanVideoImageClipEncode, WanVideoVAELoader, VHS_VideoCombine, WanVideoDecode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_1894624556043141122.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1894624556043141122.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Other
+
+**节点**（14 个）：
+- `LoadImage`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoTextEncode`
+- `FILM VFI`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoImageClipEncode`
+- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+
+## 知识
+
+覆盖率 **93%**（13/14）
+
+**有卡**：`LoadImage`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoTextEncode`、`FILM VFI`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`LoadWanVideoClipTextEncoder`、`WanVideoImageClipEncode`、`WanVideoVAELoader`、`WanVideoDecode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

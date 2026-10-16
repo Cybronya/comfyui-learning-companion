@@ -1,0 +1,77 @@
+---
+key: 视频生成/图生视频/Wan2.2-Fun-Camera运镜控制_1956308864335532034.json
+name: Wan2.2-Fun-Camera运镜控制_1956308864335532034.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1956308864335532034.json
+hash: 17dee0f523e059e6
+coverage: 0.644444
+learned_at: 2026-10-15 22:31:13
+nodes: [GetNode, GetNode, SetNode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, CameraPoseVisualizer, SetNode, PreviewImage, ImageConcatMulti, ImageConcatMulti, WanVideoTorchCompileSettings, Note, Note, GetNode, GetNode, WanVideoSampler, WanVideoImageToVideoEncode, WanVideoBlockSwap, WanVideoFunCameraEmbeds, PrimitiveNode, WanVideoImageToVideoEncode, ImageResizeKJv2, Note, LoadImage, Primitive integer [Crystools], WanVideoLoraSelect, WanVideoLoraSelect, WanVideoVAELoader, VHS_VideoCombine, WanVideoDecode, Primitive integer [Crystools], PrimitiveNode, PrimitiveNode, WanVideoModelLoader, WanVideoModelLoader, WanVideoTextEncodeCached, PrimitiveNode, PrimitiveNode, ADE_CameraPoseCombo, VHS_VideoCombine, Text Multiline]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2-Fun-Camera运镜控制_1956308864335532034.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1956308864335532034.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（45 个）：
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `CameraPoseVisualizer`
+- `SetNode`
+- `PreviewImage`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `WanVideoTorchCompileSettings`
+- `Note`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoImageToVideoEncode`
+- `WanVideoBlockSwap`
+- `WanVideoFunCameraEmbeds`
+- `PrimitiveNode`
+- `WanVideoImageToVideoEncode`
+- `ImageResizeKJv2`
+- `Note`
+- `LoadImage`
+- `Primitive integer [Crystools]`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `Primitive integer [Crystools]`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoTextEncodeCached`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `ADE_CameraPoseCombo`
+- `VHS_VideoCombine`
+- `Text Multiline`
+
+## 知识
+
+覆盖率 **64%**（29/45）
+
+**有卡**：`WanVideoSampler`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`CameraPoseVisualizer`、`ImageConcatMulti`、`WanVideoTorchCompileSettings`、`WanVideoImageToVideoEncode`、`WanVideoBlockSwap`、`WanVideoFunCameraEmbeds`、`ImageResizeKJv2`、`LoadImage`、`Primitive integer [Crystools]`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoModelLoader`、`WanVideoTextEncodeCached`、`ADE_CameraPoseCombo`、`Text Multiline`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs

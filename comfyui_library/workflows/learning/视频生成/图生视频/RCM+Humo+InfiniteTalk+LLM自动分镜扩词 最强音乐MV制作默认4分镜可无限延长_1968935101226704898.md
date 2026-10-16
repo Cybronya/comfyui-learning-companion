@@ -1,0 +1,149 @@
+---
+key: 视频生成/图生视频/RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分镜可无限延长_1968935101226704898.json
+name: RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分镜可无限延长_1968935101226704898.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1968935101226704898.json
+hash: b1221796e68a68b5
+coverage: 0.777778
+learned_at: 2026-10-15 22:31:47
+nodes: [Display Int (rgthree), AudioSeparation, WanVideoTorchCompileSettings, easy int, Display Int (rgthree), easy int, ToInt, PreviewAudio, PreviewAudio, SimpleMath+, SimpleMath+, WanVideoDecode, WanVideoCombineEmbeds, SoundFlow_GetLength, ToInt, SimpleMath+, easy int, Display Int (rgthree), AudioSeparation, PreviewAudio, WanVideoCombineEmbeds, WanVideoCombineEmbeds, WanVideoModelLoader, WanVideoSampler, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoCombineEmbeds, ToInt, SimpleMath+, easy int, Display Int (rgthree), PreviewAudio, WanVideoSampler, WanVideoSampler, WanVideoDecode, WanVideoDecode, WanVideoSampler, WanVideoDecode, VHS_VideoCombine, Anything Everywhere3, Anything Everywhere3, easy imageRemBg, Reroute, WanVideoImageToVideoMultiTalk, Reroute, WanVideoImageToVideoMultiTalk, Reroute, WanVideoImageToVideoMultiTalk, ImageFromBatch, LayerUtility: PurgeVRAM V2, ImageFromBatch, LayerUtility: PurgeVRAM V2, ImageFromBatch, LayerUtility: PurgeVRAM V2, ImageResizeKJv2, HuMoEmbeds, HuMoEmbeds, HuMoEmbeds, Anything Everywhere, Reroute, Reroute, MultiTalkWav2VecEmbeds, Reroute, Reroute, AudioSeparation, MultiTalkWav2VecEmbeds, MultiTalkWav2VecEmbeds, AudioSeparation, MultiTalkWav2VecEmbeds, LayerUtility: PurgeVRAM V2, ImageFromBatch, Reroute, WanVideoImageToVideoMultiTalk, HuMoEmbeds, LoadImage, ImageBatchMulti, LoadAudio, RHHiddenNodes, WanVideoTextEncode, WanVideoTextEncode, WanVideoTextEncode, easy showAnything, WanVideoTextEncode, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, Note, SoundFlow_TrimAudio, SoundFlow_GetLength, ToInt, SoundFlow_TrimAudio, SoundFlow_GetLength, SoundFlow_TrimAudio, SoundFlow_GetLength, SoundFlow_TrimAudio, WanVideoBlockSwap, MultiTalkModelLoader, WhisperModelLoader, Wav2VecModelLoader, PrimitiveStringMultiline, WanVideoLoraSelect, Fast Groups Muter (rgthree), Note, Int, Int, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoLoraSelect]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分镜可无限延长_1968935101226704898.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1968935101226704898.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（117 个）：
+- `Display Int (rgthree)`
+- `AudioSeparation`
+- `WanVideoTorchCompileSettings`
+- `easy int`
+- `Display Int (rgthree)`
+- `easy int`
+- `ToInt`
+- `PreviewAudio`
+- `PreviewAudio`
+- `SimpleMath+`
+- `SimpleMath+`
+- `WanVideoDecode`
+- `WanVideoCombineEmbeds`
+- `SoundFlow_GetLength`
+- `ToInt`
+- `SimpleMath+`
+- `easy int`
+- `Display Int (rgthree)`
+- `AudioSeparation`
+- `PreviewAudio`
+- `WanVideoCombineEmbeds`
+- `WanVideoCombineEmbeds`
+- `WanVideoModelLoader`
+- `WanVideoSampler` ★核心
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoCombineEmbeds`
+- `ToInt`
+- `SimpleMath+`
+- `easy int`
+- `Display Int (rgthree)`
+- `PreviewAudio`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `Anything Everywhere3`
+- `Anything Everywhere3`
+- `easy imageRemBg`
+- `Reroute`
+- `WanVideoImageToVideoMultiTalk`
+- `Reroute`
+- `WanVideoImageToVideoMultiTalk`
+- `Reroute`
+- `WanVideoImageToVideoMultiTalk`
+- `ImageFromBatch`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageFromBatch`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageFromBatch`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJv2`
+- `HuMoEmbeds`
+- `HuMoEmbeds`
+- `HuMoEmbeds`
+- `Anything Everywhere`
+- `Reroute`
+- `Reroute`
+- `MultiTalkWav2VecEmbeds`
+- `Reroute`
+- `Reroute`
+- `AudioSeparation`
+- `MultiTalkWav2VecEmbeds`
+- `MultiTalkWav2VecEmbeds`
+- `AudioSeparation`
+- `MultiTalkWav2VecEmbeds`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageFromBatch`
+- `Reroute`
+- `WanVideoImageToVideoMultiTalk`
+- `HuMoEmbeds`
+- `LoadImage`
+- `ImageBatchMulti`
+- `LoadAudio`
+- `RHHiddenNodes`
+- `WanVideoTextEncode`
+- `WanVideoTextEncode`
+- `WanVideoTextEncode`
+- `easy showAnything`
+- `WanVideoTextEncode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Note`
+- `SoundFlow_TrimAudio`
+- `SoundFlow_GetLength`
+- `ToInt`
+- `SoundFlow_TrimAudio`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
+- `SoundFlow_GetLength`
+- `SoundFlow_TrimAudio`
+- `WanVideoBlockSwap`
+- `MultiTalkModelLoader`
+- `WhisperModelLoader`
+- `Wav2VecModelLoader`
+- `PrimitiveStringMultiline`
+- `WanVideoLoraSelect`
+- `Fast Groups Muter (rgthree)`
+- `Note`
+- `Int`
+- `Int`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoLoraSelect`
+
+## 知识
+
+覆盖率 **78%**（91/117）
+
+**有卡**：`Display Int (rgthree)`、`AudioSeparation`、`WanVideoTorchCompileSettings`、`easy int`、`ToInt`、`PreviewAudio`、`SimpleMath+`、`WanVideoDecode`、`WanVideoCombineEmbeds`、`SoundFlow_GetLength`、`WanVideoModelLoader`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`VHS_VideoCombine`、`easy imageRemBg`、`WanVideoImageToVideoMultiTalk`、`ImageFromBatch`、`LayerUtility: PurgeVRAM V2`、`ImageResizeKJv2`、`HuMoEmbeds`、`MultiTalkWav2VecEmbeds`、`LoadImage`、`ImageBatchMulti`、`LoadAudio`、`RHHiddenNodes`、`WanVideoTextEncode`、`SoundFlow_TrimAudio`、`WanVideoBlockSwap`、`MultiTalkModelLoader`、`WhisperModelLoader`、`Wav2VecModelLoader`、`WanVideoLoraSelect`、`Int`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、ImageResizeKJv2

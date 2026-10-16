@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/WAN 2.2 Smooth Workflow v2.0 (img2vid)_2021178894228918274.json
+name: WAN 2.2 Smooth Workflow v2.0 (img2vid)_2021178894228918274.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2021178894228918274.json
+hash: 4891186de10f64ca
+coverage: 0.794872
+learned_at: 2026-10-15 22:35:08
+nodes: [Note, ImageScaleBy, PreviewImage, Note, CLIPTextEncode, StringConcatenate, ImageResizeKJv2, easy cleanGpuUsed, RIFE VFI, SaveImage, ColorMatch, ImageScaleBy, Pick From Batch (mtb), CLIPVisionEncode, LoadImage, mxSlider2D, ModelSamplingSD3, ModelSamplingSD3, CLIPLoader, CLIPVisionLoader, VAELoader, easy showAnything, VHS_VideoCombine, VHS_VideoCombine, Note, CLIPTextEncode, KSamplerAdvanced, Seed (rgthree), Note, Note, KSamplerAdvanced, VAEDecode, easy cleanGpuUsed, WanImageToVideo, PrimitiveStringMultiline, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, UNETLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/WAN 2.2 Smooth Workflow v2.0 (img2vid)_2021178894228918274.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2021178894228918274.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（39 个）：
+- `Note`
+- `ImageScaleBy`
+- `PreviewImage`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `StringConcatenate`
+- `ImageResizeKJv2`
+- `easy cleanGpuUsed`
+- `RIFE VFI`
+- `SaveImage`
+- `ColorMatch`
+- `ImageScaleBy`
+- `Pick From Batch (mtb)`
+- `CLIPVisionEncode`
+- `LoadImage`
+- `mxSlider2D`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `Seed (rgthree)`
+- `Note`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `WanImageToVideo`
+- `PrimitiveStringMultiline`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **79%**（31/39）
+
+**有卡**：`ImageScaleBy`、`CLIPTextEncode`、`StringConcatenate`、`ImageResizeKJv2`、`easy cleanGpuUsed`、`RIFE VFI`、`SaveImage`、`ColorMatch`、`Pick From Batch (mtb)`、`CLIPVisionEncode`、`LoadImage`、`mxSlider2D`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPVisionLoader`、`VAELoader`、`VHS_VideoCombine`、`KSamplerAdvanced`、`Seed (rgthree)`、`VAEDecode`、`WanImageToVideo`、`LoraLoaderModelOnly`、`UNETLoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

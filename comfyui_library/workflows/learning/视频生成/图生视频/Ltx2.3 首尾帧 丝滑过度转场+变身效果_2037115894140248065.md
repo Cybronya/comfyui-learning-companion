@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/Ltx2.3 首尾帧 丝滑过度转场+变身效果_2037115894140248065.json
+name: Ltx2.3 首尾帧 丝滑过度转场+变身效果_2037115894140248065.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2037115894140248065.json
+hash: 388ae6bbdbc9fcf4
+coverage: 0.864407
+learned_at: 2026-10-15 22:35:55
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVLatentUpsampler, KSamplerSelect, Reroute, LTXVAudioVAEDecode, PrimitiveInt, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAELoader, MarkdownNote, CreateVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, ResizeImageMaskNode, LTXVPreprocess, CFGGuider, LTXVConditioning, ManualSigmas, LTXVCropGuides, LTXVSeparateAVLatent, ResizeImagesByLongerEdge, ImageResizeKJv2, PrimitiveInt, SaveVideo, CLIPTextEncode, ImageResizeKJv2, LTXVFirstLastFrameControl_TTP, ResizeImagesByLongerEdge, LTXVPreprocess, ResizeImageMaskNode, LTXVImgToVideoConditionOnly, EmptyLTXVLatentVideo, llama_cpp_parameters, llama_cpp_instruct_adv, ImageStitch, llama_cpp_model_loader, LoadImage, LoadImage, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, PrimitiveInt, PrimitiveInt, CLIPTextEncode, LTX2_NAG, CheckpointLoaderSimple, LoraLoaderModelOnly, easy showAnything, PrimitiveStringMultiline, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/Ltx2.3 首尾帧 丝滑过度转场+变身效果_2037115894140248065.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2037115894140248065.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（59 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAELoader`
+- `MarkdownNote`
+- `CreateVideo`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVConcatAVLatent`
+- `ResizeImageMaskNode`
+- `LTXVPreprocess`
+- `CFGGuider`
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `ResizeImagesByLongerEdge`
+- `ImageResizeKJv2`
+- `PrimitiveInt`
+- `SaveVideo`
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `LTXVFirstLastFrameControl_TTP`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ResizeImageMaskNode`
+- `LTXVImgToVideoConditionOnly`
+- `EmptyLTXVLatentVideo`
+- `llama_cpp_parameters`
+- `llama_cpp_instruct_adv`
+- `ImageStitch`
+- `llama_cpp_model_loader`
+- `LoadImage`
+- `LoadImage`
+- `LTXAVTextEncoderLoader`
+- `LatentUpscaleModelLoader`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `CLIPTextEncode` ★核心
+- `LTX2_NAG`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `easy showAnything`
+- `PrimitiveStringMultiline`
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **86%**（51/59）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LTXVAudioVAELoader`、`CreateVideo`、`ComfyMathExpression`、`ResizeImageMaskNode`、`LTXVPreprocess`、`LTXVConditioning`、`LTXVCropGuides`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`SaveVideo`、`CLIPTextEncode`、`LTXVFirstLastFrameControl_TTP`、`LTXVImgToVideoConditionOnly`、`EmptyLTXVLatentVideo`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`ImageStitch`、`llama_cpp_model_loader`、`LoadImage`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`LTX2_NAG`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

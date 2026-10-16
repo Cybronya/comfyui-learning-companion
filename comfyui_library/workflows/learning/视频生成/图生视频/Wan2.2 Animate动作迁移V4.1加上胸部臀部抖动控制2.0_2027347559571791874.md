@@ -1,0 +1,112 @@
+---
+key: 视频生成/图生视频/Wan2.2 Animate动作迁移V4.1加上胸部臀部抖动控制2.0_2027347559571791874.json
+name: Wan2.2 Animate动作迁移V4.1加上胸部臀部抖动控制2.0_2027347559571791874.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2027347559571791874.json
+hash: 8e32f076e795dffd
+coverage: 0.5125
+learned_at: 2026-10-15 22:35:17
+nodes: [GetNode, WanVideoClipVisionEncode, SetNode, GetNode, GetNode, SetNode, OnnxDetectionModelLoader, GetNode, GetNode, GetNode, SetNode, CLIPVisionLoader, SetNode, SetNode, SetNode, SetNode, SetNode, easy mathInt, VHS_VideoInfo, SetNode, ImageResizeKJv2, RepeatImageBatch, BatchCount+, GetNode, SetNode, ImageFromBatch, easy cleanGpuUsed, SetNode, SetNode, PreviewImage, GetNode, GetNode, GetNode, WanVideoSampler, easy cleanGpuUsed, ImageFromBatch, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoSetBlockSwap, WanVideoDecode, VRAMReserver, BatchCount+, RHHiddenNodes, GetNode, SetNode, ImageBatch, SetNode, PoseAndFaceDetection, GetNode, GetNode, DrawViTPose, easy cleanGpuUsed, SetNode, WanVideoTextEncodeCached, WanVideoVAELoader, easy showAnything, Int, WanVideoSetLoRAs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoContextOptions, WanVideoBlockSwap, WanVideoLoraSelect, VHS_VideoCombine, Int, Int, WanVideoLoraSelect, easy float, easy float, Note, WanVideoAnimateEmbeds, LoadImage, Int, VHS_LoadVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 Animate动作迁移V4.1加上胸部臀部抖动控制2.0_2027347559571791874.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2027347559571791874.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（80 个）：
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `easy mathInt`
+- `VHS_VideoInfo`
+- `SetNode`
+- `ImageResizeKJv2`
+- `RepeatImageBatch`
+- `BatchCount+`
+- `GetNode`
+- `SetNode`
+- `ImageFromBatch`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `SetNode`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `ImageFromBatch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoDecode`
+- `VRAMReserver`
+- `BatchCount+`
+- `RHHiddenNodes`
+- `GetNode`
+- `SetNode`
+- `ImageBatch`
+- `SetNode`
+- `PoseAndFaceDetection`
+- `GetNode`
+- `GetNode`
+- `DrawViTPose`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `WanVideoTextEncodeCached`
+- `WanVideoVAELoader`
+- `easy showAnything`
+- `Int`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoContextOptions`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `VHS_VideoCombine`
+- `Int`
+- `Int`
+- `WanVideoLoraSelect`
+- `easy float`
+- `easy float`
+- `Note`
+- `WanVideoAnimateEmbeds`
+- `LoadImage`
+- `Int`
+- `VHS_LoadVideo`
+
+## 知识
+
+覆盖率 **51%**（41/80）
+
+**有卡**：`WanVideoClipVisionEncode`、`OnnxDetectionModelLoader`、`CLIPVisionLoader`、`easy mathInt`、`VHS_VideoInfo`、`ImageResizeKJv2`、`RepeatImageBatch`、`BatchCount+`、`ImageFromBatch`、`easy cleanGpuUsed`、`WanVideoSampler`、`WanVideoSetBlockSwap`、`WanVideoDecode`、`VRAMReserver`、`RHHiddenNodes`、`ImageBatch`、`PoseAndFaceDetection`、`DrawViTPose`、`WanVideoTextEncodeCached`、`WanVideoVAELoader`、`Int`、`WanVideoSetLoRAs`、`WanVideoLoraSelectMulti`、`WanVideoModelLoader`、`WanVideoContextOptions`、`WanVideoBlockSwap`、`WanVideoLoraSelect`、`VHS_VideoCombine`、`easy float`、`WanVideoAnimateEmbeds`、`LoadImage`、`VHS_LoadVideo`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs

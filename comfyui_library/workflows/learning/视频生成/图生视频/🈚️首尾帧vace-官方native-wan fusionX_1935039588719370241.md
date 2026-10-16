@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/🈚️首尾帧vace-官方native-wan fusionX_1935039588719370241.json
+name: 🈚️首尾帧vace-官方native-wan fusionX_1935039588719370241.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1935039588719370241.json
+hash: 324684aba9bb26ef
+coverage: 0.604167
+learned_at: 2026-10-15 22:30:20
+nodes: [SetNode, SetNode, GetNode, GetNode, DownloadAndLoadGIMMVFIModel, SetNode, GIMMVFI_interpolate, ImageSmartSharpen+, Video_Upscale_With_Model, WanVaceToVideo, SimpleCondition+, easy imageConcat, GetNode, GetNode, SetNode, WanVideoVACEStartToEndFrame, GetImageSizeAndCount, SeargePromptText, CLIPLoader, ModelSamplingSD3, WanVideoEnhanceAVideoKJ, CFGZeroStarAndInit, ImageResizeKJ, GetNode, INTConstant, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, CLIPTextEncode, UNETLoader, TrimVideoLatent, VAEDecode, GetNode, GetNode, LoadImage, LoadImage, VHS_VideoCombine, GetNode, VHS_VideoCombine, KSampler, ShowText|pysssss, RH_Captioner, CLIPTextEncode, VAELoader, ImageResizeKJ]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 472169760243846, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/🈚️首尾帧vace-官方native-wan fusionX_1935039588719370241.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1935039588719370241.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（48 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `DownloadAndLoadGIMMVFIModel`
+- `SetNode`
+- `GIMMVFI_interpolate`
+- `ImageSmartSharpen+`
+- `Video_Upscale_With_Model`
+- `WanVaceToVideo`
+- `SimpleCondition+`
+- `easy imageConcat`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `WanVideoVACEStartToEndFrame`
+- `GetImageSizeAndCount`
+- `SeargePromptText`
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `WanVideoEnhanceAVideoKJ`
+- `CFGZeroStarAndInit`
+- `ImageResizeKJ`
+- `GetNode`
+- `INTConstant`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `TrimVideoLatent`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `GetNode`
+- `VHS_VideoCombine`
+- `KSampler` ★核心
+- `ShowText|pysssss`
+- `RH_Captioner`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `ImageResizeKJ`
+
+## 关键参数
+
+- `seed` = `472169760243846`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **60%**（29/48）
+
+**有卡**：`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`ImageSmartSharpen+`、`Video_Upscale_With_Model`、`WanVaceToVideo`、`SimpleCondition+`、`easy imageConcat`、`WanVideoVACEStartToEndFrame`、`GetImageSizeAndCount`、`SeargePromptText`、`CLIPLoader`、`ModelSamplingSD3`、`WanVideoEnhanceAVideoKJ`、`CFGZeroStarAndInit`、`ImageResizeKJ`、`INTConstant`、`CLIPTextEncode`、`UNETLoader`、`TrimVideoLatent`、`VAEDecode`、`LoadImage`、`VHS_VideoCombine`、`KSampler`、`RH_Captioner`、`VAELoader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CFGZeroStarAndInit
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

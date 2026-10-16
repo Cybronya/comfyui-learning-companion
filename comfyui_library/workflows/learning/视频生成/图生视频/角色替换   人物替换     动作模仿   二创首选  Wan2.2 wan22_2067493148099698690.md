@@ -1,0 +1,114 @@
+---
+key: 视频生成/图生视频/角色替换   人物替换     动作模仿   二创首选  Wan2.2 wan22_2067493148099698690.json
+name: 角色替换   人物替换     动作模仿   二创首选  Wan2.2 wan22_2067493148099698690.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2067493148099698690.json
+hash: 984ac7348a2b7b9f
+coverage: 0.560976
+learned_at: 2026-10-15 22:40:02
+nodes: [WanVideoLoraSelectMulti, WanVideoSetLoRAs, WanVideoVAELoader, INTConstant, INTConstant, PoseAndFaceDetection, SeCModelLoader, GrowMask, InvertMask, MaskToImage, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, INTConstant, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoTextEncodeCached, WanVideoClipVisionEncode, easy cleanGpuUsed, WanVideoAnimateEmbeds, WanVideoSampler, WanVideoDecode, SetNode, CLIPVisionLoader, WanVideoSetBlockSwap, WanVideoBlockSwap, ImageResizeKJv2, GetNode, GetNode, SetNode, ImageFromBatch+, SeCVideoSegmentation, LayerUtility: ImageBlend, JWInteger, GetNode, CR Text, PreviewImage, Note, PreviewImage, OnnxDetectionModelLoader, GetNode, WanVideoModelLoader, VHS_VideoCombine, VHS_LoadVideo, VHS_VideoCombine, GetNode, GetNode, VHS_VideoCombine, SetNode, easy cleanGpuUsed, DrawMaskOnImage, BlockifyMask, SetNode, GetNode, SetNode, SetNode, VHS_VideoInfo, SetNode, PointsEditor, VHS_VideoCombine, SetNode, SetNode, easy cleanGpuUsed, DrawViTPose, SetNode, easy cleanGpuUsed, GetImageSizeAndCount, GetImageSizeAndCount, ImageConcanate, VHS_VideoCombine, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/角色替换   人物替换     动作模仿   二创首选  Wan2.2 wan22_2067493148099698690.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2067493148099698690.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（82 个）：
+- `WanVideoLoraSelectMulti`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
+- `INTConstant`
+- `INTConstant`
+- `PoseAndFaceDetection`
+- `SeCModelLoader`
+- `GrowMask`
+- `InvertMask`
+- `MaskToImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `WanVideoClipVisionEncode`
+- `easy cleanGpuUsed`
+- `WanVideoAnimateEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ImageFromBatch+`
+- `SeCVideoSegmentation`
+- `LayerUtility: ImageBlend`
+- `JWInteger`
+- `GetNode`
+- `CR Text`
+- `PreviewImage`
+- `Note`
+- `PreviewImage`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `WanVideoModelLoader`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `DrawMaskOnImage`
+- `BlockifyMask`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfo`
+- `SetNode`
+- `PointsEditor`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `DrawViTPose`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `ImageConcanate`
+- `VHS_VideoCombine`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **56%**（46/82）
+
+**有卡**：`WanVideoLoraSelectMulti`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`INTConstant`、`PoseAndFaceDetection`、`SeCModelLoader`、`GrowMask`、`InvertMask`、`MaskToImage`、`WanVideoTextEncodeCached`、`WanVideoClipVisionEncode`、`easy cleanGpuUsed`、`WanVideoAnimateEmbeds`、`WanVideoSampler`、`WanVideoDecode`、`CLIPVisionLoader`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`ImageResizeKJv2`、`ImageFromBatch+`、`SeCVideoSegmentation`、`LayerUtility: ImageBlend`、`JWInteger`、`CR Text`、`OnnxDetectionModelLoader`、`WanVideoModelLoader`、`VHS_VideoCombine`、`VHS_LoadVideo`、`DrawMaskOnImage`、`BlockifyMask`、`VHS_VideoInfo`、`PointsEditor`、`DrawViTPose`、`GetImageSizeAndCount`、`ImageConcanate`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

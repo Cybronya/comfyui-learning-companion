@@ -1,0 +1,72 @@
+---
+key: 视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json
+name: 🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1950059888082903042.json
+hash: e8b200b0fdf67432
+coverage: 0.85
+learned_at: 2026-10-15 22:30:52
+nodes: [GetImageSizeAndCount, WanVideoDecode, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoTorchCompileSettings, MathExpression|pysssss, VHS_VideoCombine, WanVideoSampler, Primitive integer [Crystools], WanVideoTextEncode, WanVideoImageToVideoEncode, ResizeLongestToNode, ACE_ImageGetSize, WanVideoSampler, ImageResizeKJv2, Note, CreateCFGScheduleFloatList, WanVideoBlockSwap, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, Note, TextConcat, easy showAnything, JWStringConcat, ShowText|pysssss, easy showAnything, CR Prompt Text, CR Prompt Text, RH_Captioner, LoadImage, easy showAnything, RH_LLMAPI_NODE, CR Prompt Text, Wan22PromptSelector]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1950059888082903042.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（40 个）：
+- `GetImageSizeAndCount`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `MathExpression|pysssss`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `Primitive integer [Crystools]`
+- `WanVideoTextEncode`
+- `WanVideoImageToVideoEncode`
+- `ResizeLongestToNode`
+- `ACE_ImageGetSize`
+- `WanVideoSampler` ★核心
+- `ImageResizeKJv2`
+- `Note`
+- `CreateCFGScheduleFloatList`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `Note`
+- `TextConcat`
+- `easy showAnything`
+- `JWStringConcat`
+- `ShowText|pysssss`
+- `easy showAnything`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `RH_Captioner`
+- `LoadImage`
+- `easy showAnything`
+- `RH_LLMAPI_NODE`
+- `CR Prompt Text`
+- `Wan22PromptSelector`
+
+## 知识
+
+覆盖率 **85%**（34/40）
+
+**有卡**：`GetImageSizeAndCount`、`WanVideoDecode`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`WanVideoTorchCompileSettings`、`MathExpression|pysssss`、`VHS_VideoCombine`、`WanVideoSampler`、`Primitive integer [Crystools]`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`ResizeLongestToNode`、`ACE_ImageGetSize`、`ImageResizeKJv2`、`CreateCFGScheduleFloatList`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`TextConcat`、`JWStringConcat`、`CR Prompt Text`、`RH_Captioner`、`LoadImage`、`RH_LLMAPI_NODE`、`Wan22PromptSelector`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

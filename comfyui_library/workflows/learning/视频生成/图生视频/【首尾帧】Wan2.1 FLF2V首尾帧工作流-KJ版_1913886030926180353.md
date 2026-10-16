@@ -1,0 +1,58 @@
+---
+key: 视频生成/图生视频/【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.json
+name: 【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1913886030926180353.json
+hash: 2c4f3d65be7c4a2a
+coverage: 1
+learned_at: 2026-10-15 22:29:34
+nodes: [WanVideoVRAMManagement, EmptyImage, AddLabel, AddLabel, ImageConcatMulti, GetImageSizeAndCount, ImageConcatMulti, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoTeaCache, WanVideoExperimentalArgs, WanVideoImageToVideoEncode, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoClipVisionEncode, WanVideoBlockSwap, ImageResize+, LoadWanVideoClipTextEncoder, WanVideoTextEncode, WanVideoSampler, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadImage, WanVideoDecode, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1913886030926180353.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（26 个）：
+- `WanVideoVRAMManagement`
+- `EmptyImage`
+- `AddLabel`
+- `AddLabel`
+- `ImageConcatMulti`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoExperimentalArgs`
+- `WanVideoImageToVideoEncode`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoClipVisionEncode`
+- `WanVideoBlockSwap`
+- `ImageResize+`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **100%**（26/26）
+
+**有卡**：`WanVideoVRAMManagement`、`EmptyImage`、`AddLabel`、`ImageConcatMulti`、`GetImageSizeAndCount`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoTeaCache`、`WanVideoExperimentalArgs`、`WanVideoImageToVideoEncode`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoClipVisionEncode`、`WanVideoBlockSwap`、`ImageResize+`、`LoadWanVideoClipTextEncoder`、`WanVideoTextEncode`、`WanVideoSampler`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`WanVideoDecode`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

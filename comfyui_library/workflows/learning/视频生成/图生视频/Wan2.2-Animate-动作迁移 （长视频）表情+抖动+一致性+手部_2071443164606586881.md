@@ -1,0 +1,173 @@
+---
+key: 视频生成/图生视频/Wan2.2-Animate-动作迁移 （长视频）表情+抖动+一致性+手部_2071443164606586881.json
+name: Wan2.2-Animate-动作迁移 （长视频）表情+抖动+一致性+手部_2071443164606586881.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2071443164606586881.json
+hash: 481f2cc802485c2a
+coverage: 0.646552
+learned_at: 2026-10-15 22:40:45
+nodes: [TrimVideoLatent, GetNode, GetNode, GetNode, KSampler, GetNode, easy seed, GetNode, GetImageRangeFromBatch, VAEDecode, VAEDecode, TrimVideoLatent, GetNode, GetNode, Display Int (rgthree), TrimVideoLatent, CLIPVisionEncode, GetImageRangeFromBatch, GetImageRangeFromBatch, SetNode, CLIPTextEncode, CLIPTextEncode, GetNode, GetNode, GetNode, DrawViTPose, easy mathInt, easy mathInt, easy mathInt, BatchCount+, ImageBatch, SetNode, SetNode, SetNode, Int, Note, PoseAndFaceDetection, Note, SetNode, SetNode, VHS_VideoCombine, VHS_VideoCombine, SetNode, CLIPLoader, CLIPVisionLoader, VAELoader, GetNode, SetNode, SetNode, GetNode, GetNode, SimpleMath+, KSampler, GetNode, VHS_VideoCombine, WanAnimateToVideo, WanAnimateToVideo, WanAnimateToVideo, VHS_VideoCombine, VAEDecode, VHS_GetImageCount, Display Int (rgthree), VHS_GetImageCount, Display Int (rgthree), VHS_GetImageCount, Display Int (rgthree), ImageScale, Int, Int, Int, RepeatImageBatch, SimpleMath+, CM_IntToFloat, SetNode, SetNode, VHS_VideoInfoLoaded, SetNode, Display Int (rgthree), SetNode, SetNode, ImageResizeKJv2, PreviewImage, SetNode, SimpleMath+, BatchCount+, ImageFromBatch, easy mathInt, SetNode, Display Int (rgthree), easy float, SetNode, GetNode, OnnxDetectionModelLoader, GetNode, GetNode, CLIPVisionLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, PathchSageAttentionKJ, SetNode, GetNode, Primitive integer [Crystools], easy mathInt, LoadImage, VHS_LoadVideo, VHS_VideoCombine, KSampler, VHS_VideoCombine, TT_img_enc, SaveImage, ImageBatchMulti, GetNode, GetNode]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 15559408017987, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2-Animate-动作迁移 （长视频）表情+抖动+一致性+手部_2071443164606586881.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2071443164606586881.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（116 个）：
+- `TrimVideoLatent`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `KSampler` ★核心
+- `GetNode`
+- `easy seed`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `TrimVideoLatent`
+- `GetNode`
+- `GetNode`
+- `Display Int (rgthree)`
+- `TrimVideoLatent`
+- `CLIPVisionEncode`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `DrawViTPose`
+- `easy mathInt`
+- `easy mathInt`
+- `easy mathInt`
+- `BatchCount+`
+- `ImageBatch`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `Note`
+- `PoseAndFaceDetection`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SetNode`
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SimpleMath+`
+- `KSampler` ★核心
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanAnimateToVideo`
+- `WanAnimateToVideo`
+- `WanAnimateToVideo`
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `VHS_GetImageCount`
+- `Display Int (rgthree)`
+- `VHS_GetImageCount`
+- `Display Int (rgthree)`
+- `VHS_GetImageCount`
+- `Display Int (rgthree)`
+- `ImageScale`
+- `Int`
+- `Int`
+- `Int`
+- `RepeatImageBatch`
+- `SimpleMath+`
+- `CM_IntToFloat`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfoLoaded`
+- `SetNode`
+- `Display Int (rgthree)`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `SetNode`
+- `SimpleMath+`
+- `BatchCount+`
+- `ImageFromBatch`
+- `easy mathInt`
+- `SetNode`
+- `Display Int (rgthree)`
+- `easy float`
+- `SetNode`
+- `GetNode`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `GetNode`
+- `Primitive integer [Crystools]`
+- `easy mathInt`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `KSampler` ★核心
+- `VHS_VideoCombine`
+- `TT_img_enc`
+- `SaveImage`
+- `ImageBatchMulti`
+- `GetNode`
+- `GetNode`
+
+## 关键参数
+
+- `seed` = `15559408017987`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **65%**（75/116）
+
+**有卡**：`TrimVideoLatent`、`KSampler`、`easy seed`、`GetImageRangeFromBatch`、`VAEDecode`、`Display Int (rgthree)`、`CLIPVisionEncode`、`CLIPTextEncode`、`DrawViTPose`、`easy mathInt`、`BatchCount+`、`ImageBatch`、`Int`、`PoseAndFaceDetection`、`VHS_VideoCombine`、`CLIPLoader`、`CLIPVisionLoader`、`VAELoader`、`SimpleMath+`、`WanAnimateToVideo`、`VHS_GetImageCount`、`ImageScale`、`RepeatImageBatch`、`CM_IntToFloat`、`VHS_VideoInfoLoaded`、`ImageResizeKJv2`、`ImageFromBatch`、`easy float`、`OnnxDetectionModelLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`Primitive integer [Crystools]`、`LoadImage`、`VHS_LoadVideo`、`TT_img_enc`、`SaveImage`、`ImageBatchMulti`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/老照片修复+数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_1991435594054201345.json
+name: 老照片修复+数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_1991435594054201345.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1991435594054201345.json
+hash: b0d87cfb6747ebd2
+coverage: 0.981481
+learned_at: 2026-10-15 22:33:13
+nodes: [WanVideoBlockSwap, String Literal, UNETLoader, FluxKontextImageScale, DualCLIPLoader, CLIPTextEncode, ConditioningZeroOut, ReferenceLatent, FluxGuidance, VAEEncode, VAELoader, KSampler, Apply Whisper, SoundFlow_TrimAudio, AudioSeparation, SaveImage, LoadImage, SaveImage, FlashVSRNode, VHS_VideoCombine, SeedVR2GGUF, LoraLoaderModelOnly, LoadAudio, RH_GetAudioDuration, Float to Int, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoDecode, LayerUtility: PurgeVRAM V2, MultiTalkModelLoader, WanVideoVAELoader, WanVideoLoraSelect, easy anythingIndexSwitch, WanVideoLoraSelect, SimpleMath+, Int, WanVideoEasyCache, LayerUtility: PurgeVRAM V2, VAEDecode, CR Prompt Text, Int, VHS_VideoCombine, DownloadAndLoadWav2VecModel, MultiTalkWav2VecEmbeds, WanVideoClipVisionEncode, CLIPVisionLoader, Fast Groups Muter (rgthree), LayerUtility: ImageScaleByAspectRatio V2, WanVideoImageToVideoMultiTalk, WanVideoSampler, WanVideoTextEncodeCached, WanVideoModelLoader, VoxCPM_TTS]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 212140823239481, "steps": 20}
+---
+
+# 视频生成/图生视频/老照片修复+数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_1991435594054201345.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1991435594054201345.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（54 个）：
+- `WanVideoBlockSwap`
+- `String Literal`
+- `UNETLoader` ★核心
+- `FluxKontextImageScale`
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `FluxGuidance`
+- `VAEEncode` ★核心
+- `VAELoader`
+- `KSampler` ★核心
+- `Apply Whisper`
+- `SoundFlow_TrimAudio`
+- `AudioSeparation`
+- `SaveImage`
+- `LoadImage`
+- `SaveImage`
+- `FlashVSRNode`
+- `VHS_VideoCombine`
+- `SeedVR2GGUF`
+- `LoraLoaderModelOnly` ★核心
+- `LoadAudio`
+- `RH_GetAudioDuration`
+- `Float to Int`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `LayerUtility: PurgeVRAM V2`
+- `MultiTalkModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `easy anythingIndexSwitch`
+- `WanVideoLoraSelect`
+- `SimpleMath+`
+- `Int`
+- `WanVideoEasyCache`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEDecode` ★核心
+- `CR Prompt Text`
+- `Int`
+- `VHS_VideoCombine`
+- `DownloadAndLoadWav2VecModel`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `Fast Groups Muter (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncodeCached`
+- `WanVideoModelLoader`
+- `VoxCPM_TTS`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `212140823239481`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **98%**（53/54）
+
+**有卡**：`WanVideoBlockSwap`、`String Literal`、`UNETLoader`、`FluxKontextImageScale`、`DualCLIPLoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`ReferenceLatent`、`FluxGuidance`、`VAEEncode`、`VAELoader`、`KSampler`、`Apply Whisper`、`SoundFlow_TrimAudio`、`AudioSeparation`、`SaveImage`、`LoadImage`、`FlashVSRNode`、`VHS_VideoCombine`、`SeedVR2GGUF`、`LoraLoaderModelOnly`、`LoadAudio`、`RH_GetAudioDuration`、`Float to Int`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`LayerUtility: PurgeVRAM V2`、`MultiTalkModelLoader`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`easy anythingIndexSwitch`、`SimpleMath+`、`Int`、`WanVideoEasyCache`、`VAEDecode`、`CR Prompt Text`、`DownloadAndLoadWav2VecModel`、`MultiTalkWav2VecEmbeds`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoImageToVideoMultiTalk`、`WanVideoSampler`、`WanVideoTextEncodeCached`、`WanVideoModelLoader`、`VoxCPM_TTS`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage

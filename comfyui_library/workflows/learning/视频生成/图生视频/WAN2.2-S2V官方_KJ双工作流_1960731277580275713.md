@@ -1,0 +1,82 @@
+---
+key: 视频生成/图生视频/WAN2.2-S2V官方_KJ双工作流_1960731277580275713.json
+name: WAN2.2-S2V官方_KJ双工作流_1960731277580275713.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1960731277580275713.json
+hash: 245cfe7518afab30
+coverage: 1
+learned_at: 2026-10-15 22:31:26
+nodes: [LoadImage, UNETLoader, CLIPLoader, VAELoader, KSampler, VAEDecode, VHS_VideoCombine, VHS_LoadAudioUpload, AudioEncoderEncode, AudioEncoderLoader, LayerUtility: ImageScaleByAspectRatio V2, ImageCASharpening+, CLIPTextEncode, CLIPTextEncode, WanVideoTextEncode, ModelSamplingSD3, PathchSageAttentionKJ, TorchCompileModel, VHS_LoadAudioUpload, AudioSeparation, WanVideoSampler, AudioCrop, VHS_LoadVideo, WanSoundImageToVideo, AudioCrop, VHS_LoadVideo, AudioSeparation, AudioEncoderLoader, AudioEncoderEncode, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoAddAudioEmbeds, WanVideoEncode, WanVideoVAELoader, WanVideoEmptyEmbeds, WanVideoDecode, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 586367475965132, "steps": 20}
+---
+
+# 视频生成/图生视频/WAN2.2-S2V官方_KJ双工作流_1960731277580275713.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1960731277580275713.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（40 个）：
+- `LoadImage`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `VHS_LoadAudioUpload`
+- `AudioEncoderEncode`
+- `AudioEncoderLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageCASharpening+`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `WanVideoTextEncode`
+- `ModelSamplingSD3`
+- `PathchSageAttentionKJ`
+- `TorchCompileModel`
+- `VHS_LoadAudioUpload`
+- `AudioSeparation`
+- `WanVideoSampler` ★核心
+- `AudioCrop`
+- `VHS_LoadVideo`
+- `WanSoundImageToVideo`
+- `AudioCrop`
+- `VHS_LoadVideo`
+- `AudioSeparation`
+- `AudioEncoderLoader`
+- `AudioEncoderEncode`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoAddAudioEmbeds`
+- `WanVideoEncode`
+- `WanVideoVAELoader`
+- `WanVideoEmptyEmbeds`
+- `WanVideoDecode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `586367475965132`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（40/40）
+
+**有卡**：`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`KSampler`、`VAEDecode`、`VHS_VideoCombine`、`VHS_LoadAudioUpload`、`AudioEncoderEncode`、`AudioEncoderLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageCASharpening+`、`CLIPTextEncode`、`WanVideoTextEncode`、`ModelSamplingSD3`、`PathchSageAttentionKJ`、`TorchCompileModel`、`AudioSeparation`、`WanVideoSampler`、`AudioCrop`、`VHS_LoadVideo`、`WanSoundImageToVideo`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoAddAudioEmbeds`、`WanVideoEncode`、`WanVideoVAELoader`、`WanVideoEmptyEmbeds`、`WanVideoDecode`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanVideoSampler

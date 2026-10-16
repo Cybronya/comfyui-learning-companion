@@ -1,0 +1,113 @@
+---
+key: 视频生成/图生视频/绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json
+name: 绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1969703350885380098.json
+hash: f45ed1d5604079e8
+coverage: 0.567901
+learned_at: 2026-10-15 22:31:50
+nodes: [GetNode, GetNode, GetNode, GetNode, GetNode, ImageCropByMaskAndResize, SetNode, VHS_VideoCombine, GetNode, WanVideoClipVisionEncode, WanVideoTorchCompileSettings, SetNode, ImageConcatMulti, GetNode, GetImageSizeAndCount, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTextEmbedBridge, DWPreprocessor, FaceMaskFromPoseKeypoints, GetNode, ImageResizeKJv2, CLIPTextEncode, CLIPTextEncode, ImageConcatMulti, WanVideoSampler, WanVideoDecode, RIFEInterpolation, WanVideoBlockSwap, GetNode, GetNode, UltimateSDUpscaleNoUpscale, VHS_VideoCombine, SetNode, DrawMaskOnImage, GetNode, SetNode, BlockifyMask, Sam2Segmentation, GrowMask, Note, Note, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, WanVideoAnimateEmbeds, GetNode, GetNode, WanVideoModelLoader, CLIPVisionLoader, MarkdownNote, WanVideoLoraSelectMulti, WanVideoContextOptions, CLIPLoader, GetNode, WanVideoVAELoader, DownloadAndLoadSAM2Model, LoadImage, PixelPerfectResolution, Reroute, SetNode, INTConstant, INTConstant, GetNode, GetNode, VHS_LoadVideo, PointsEditor, VHS_VideoCombine, UNETLoader, CLIPTextEncode, CLIPTextEncode, GetNode, VHS_VideoCombine, VAELoader, GetNode, GetNode, GetNode, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1969703350885380098.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（81 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageCropByMaskAndResize`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `WanVideoTorchCompileSettings`
+- `SetNode`
+- `ImageConcatMulti`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTextEmbedBridge`
+- `DWPreprocessor`
+- `FaceMaskFromPoseKeypoints`
+- `GetNode`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageConcatMulti`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `RIFEInterpolation`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `GetNode`
+- `UltimateSDUpscaleNoUpscale`
+- `VHS_VideoCombine`
+- `SetNode`
+- `DrawMaskOnImage`
+- `GetNode`
+- `SetNode`
+- `BlockifyMask`
+- `Sam2Segmentation`
+- `GrowMask`
+- `Note`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `GetNode`
+- `WanVideoModelLoader`
+- `CLIPVisionLoader`
+- `MarkdownNote`
+- `WanVideoLoraSelectMulti`
+- `WanVideoContextOptions`
+- `CLIPLoader`
+- `GetNode`
+- `WanVideoVAELoader`
+- `DownloadAndLoadSAM2Model`
+- `LoadImage`
+- `PixelPerfectResolution`
+- `Reroute`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `VHS_LoadVideo`
+- `PointsEditor`
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `VHS_VideoCombine`
+- `VAELoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **57%**（46/81）
+
+**有卡**：`ImageCropByMaskAndResize`、`VHS_VideoCombine`、`WanVideoClipVisionEncode`、`WanVideoTorchCompileSettings`、`ImageConcatMulti`、`GetImageSizeAndCount`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTextEmbedBridge`、`DWPreprocessor`、`FaceMaskFromPoseKeypoints`、`ImageResizeKJv2`、`CLIPTextEncode`、`WanVideoSampler`、`WanVideoDecode`、`RIFEInterpolation`、`WanVideoBlockSwap`、`UltimateSDUpscaleNoUpscale`、`DrawMaskOnImage`、`BlockifyMask`、`Sam2Segmentation`、`GrowMask`、`WanVideoAnimateEmbeds`、`WanVideoModelLoader`、`CLIPVisionLoader`、`WanVideoLoraSelectMulti`、`WanVideoContextOptions`、`CLIPLoader`、`WanVideoVAELoader`、`DownloadAndLoadSAM2Model`、`LoadImage`、`PixelPerfectResolution`、`INTConstant`、`VHS_LoadVideo`、`PointsEditor`、`UNETLoader`、`VAELoader`
+
+**用到的条目**：VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanVideoSampler、WanVideoDecode、WanVideoVAELoader

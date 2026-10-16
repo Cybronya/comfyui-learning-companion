@@ -1,0 +1,138 @@
+---
+key: 视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json
+name: SVI2.0PRO场景切换长视频_2073295485099663361.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2073295485099663361.json
+hash: 5a57e66b10ade353
+coverage: 0.541667
+learned_at: 2026-10-15 22:41:03
+nodes: [SetNode, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, DiffusionModelLoaderKJ, DiffusionModelLoaderKJ, SetNode, SetNode, VAEDecode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, CLIPTextEncode, CLIPTextEncode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPTextEncode, CLIPTextEncode, VHS_VideoCombine, easy forLoopEnd, VHS_VideoCombine, CLIPLoader, GetNode, INTConstant, INTConstant, SetNode, SetNode, SetNode, SetNode, VHS_VideoCombine, seed _O, GetNode, Note, SetNode, SetNode, KSamplerAdvanced, KSamplerAdvanced, KSamplerAdvanced, SetNode, GetNode, SimpleMath+, KSamplerAdvanced, ImpactInt, ImpactInt, GetNode, WanImageToVideoSVIPro, TextListSelelct, SetNode, SetNode, GetNode, GetNode, TextListSelelct, easy forLoopStart, SimpleMath+, SetNode, GetNode, GetNode, SetNode, ImageResizeKJv2, GetNode, GetNode, GetNode, VAELoader, VAEEncode, VAEEncode, SetNode, seed _O, ImageResizeKJv2, GODMT_SplitString, Int, VHS_SelectImages, VHS_SelectImages, ImageListToBatch+, LoadImage, LoadImage, LoadImage, LoadImage, IntToText, GetNode, SetNode, SetNode, SDVM Image List Repeat, GetNode, ImageBatch, WanImageToVideoSVIPro, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2073295485099663361.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（96 个）：
+- `SetNode`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `DiffusionModelLoaderKJ`
+- `DiffusionModelLoaderKJ`
+- `SetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `easy forLoopEnd`
+- `VHS_VideoCombine`
+- `CLIPLoader`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `seed _O`
+- `GetNode`
+- `Note`
+- `SetNode`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `SetNode`
+- `GetNode`
+- `SimpleMath+`
+- `KSamplerAdvanced` ★核心
+- `ImpactInt`
+- `ImpactInt`
+- `GetNode`
+- `WanImageToVideoSVIPro`
+- `TextListSelelct`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `TextListSelelct`
+- `easy forLoopStart`
+- `SimpleMath+`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAELoader`
+- `VAEEncode` ★核心
+- `VAEEncode` ★核心
+- `SetNode`
+- `seed _O`
+- `ImageResizeKJv2`
+- `GODMT_SplitString`
+- `Int`
+- `VHS_SelectImages`
+- `VHS_SelectImages`
+- `ImageListToBatch+`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `IntToText`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SDVM Image List Repeat`
+- `GetNode`
+- `ImageBatch`
+- `WanImageToVideoSVIPro`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **54%**（52/96）
+
+**有卡**：`LoraLoaderModelOnly`、`DiffusionModelLoaderKJ`、`VAEDecode`、`CLIPTextEncode`、`VHS_VideoCombine`、`easy forLoopEnd`、`CLIPLoader`、`INTConstant`、`seed _O`、`KSamplerAdvanced`、`SimpleMath+`、`ImpactInt`、`WanImageToVideoSVIPro`、`TextListSelelct`、`easy forLoopStart`、`ImageResizeKJv2`、`VAELoader`、`VAEEncode`、`GODMT_SplitString`、`Int`、`VHS_SelectImages`、`ImageListToBatch+`、`LoadImage`、`IntToText`、`SDVM Image List Repeat`、`ImageBatch`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、seed _O

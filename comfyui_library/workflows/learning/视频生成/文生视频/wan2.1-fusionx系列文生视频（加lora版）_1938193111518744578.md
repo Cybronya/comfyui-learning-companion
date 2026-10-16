@@ -1,0 +1,54 @@
+---
+key: 视频生成/文生视频/wan2.1-fusionx系列文生视频（加lora版）_1938193111518744578.json
+name: wan2.1-fusionx系列文生视频（加lora版）_1938193111518744578.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1938193111518744578.json
+hash: 25fa6dcc55248c1a
+coverage: 0.954545
+learned_at: 2026-10-15 22:43:30
+nodes: [WanVideoExperimentalArgs, WanVideoSLG, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoDecode, WanVideoVACEModelSelect, WanVideoMagCache, WanVideoTextEncode, LayerUtility: PurgeVRAM V2, WanVideoModelLoader, MathExpression|pysssss, WanVideoVAELoader, WanVideoVACEEncode, RH_Translator, easy int, easy int, WanVideoSampler, VHS_VideoCombine, WanVideoLoraSelect, JWInteger, WanVideoLoraSelect, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/wan2.1-fusionx系列文生视频（加lora版）_1938193111518744578.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1938193111518744578.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Other
+
+**节点**（22 个）：
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `WanVideoVACEModelSelect`
+- `WanVideoMagCache`
+- `WanVideoTextEncode`
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoModelLoader`
+- `MathExpression|pysssss`
+- `WanVideoVAELoader`
+- `WanVideoVACEEncode`
+- `RH_Translator`
+- `easy int`
+- `easy int`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoLoraSelect`
+- `JWInteger`
+- `WanVideoLoraSelect`
+- `Note`
+
+## 知识
+
+覆盖率 **95%**（21/22）
+
+**有卡**：`WanVideoExperimentalArgs`、`WanVideoSLG`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoVACEModelSelect`、`WanVideoMagCache`、`WanVideoTextEncode`、`LayerUtility: PurgeVRAM V2`、`WanVideoModelLoader`、`MathExpression|pysssss`、`WanVideoVAELoader`、`WanVideoVACEEncode`、`RH_Translator`、`easy int`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoLoraSelect`、`JWInteger`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect、RH_Translator

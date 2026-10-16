@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/wan 图生视频 wan2.2 wan22 图生视频_2060445464004218881.json
+name: wan 图生视频 wan2.2 wan22 图生视频_2060445464004218881.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2060445464004218881.json
+hash: b65c3b3ab1e66b8c
+coverage: 0.896552
+learned_at: 2026-10-15 22:38:48
+nodes: [PathchSageAttentionKJ, Bjornulf_ShowInt, LayerUtility: ImageScaleByAspectRatio V2, UNETLoader, UNETLoader, CLIPLoader, CLIPTextEncode, CFGZeroStar, WanImageToVideo, ModelSamplingSD3, KSamplerAdvanced, CreateVideo, VAEDecode, VAELoader, MathExpression|pysssss, INTConstant, PrimitiveFloat, PreviewImage, INTConstant, KSamplerAdvanced, easy cleanGpuUsed, easy cleanGpuUsed, ModelSamplingSD3, CR Text, SaveVideo, CLIPTextEncode, ShowText|pysssss, RH_LLMAPI_NODE, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 20, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/wan 图生视频 wan2.2 wan22 图生视频_2060445464004218881.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2060445464004218881.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（29 个）：
+- `PathchSageAttentionKJ`
+- `Bjornulf_ShowInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `CFGZeroStar`
+- `WanImageToVideo`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `CreateVideo`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `PrimitiveFloat`
+- `PreviewImage`
+- `INTConstant`
+- `KSamplerAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `ModelSamplingSD3`
+- `CR Text`
+- `SaveVideo`
+- `CLIPTextEncode` ★核心
+- `ShowText|pysssss`
+- `RH_LLMAPI_NODE`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `20`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **90%**（26/29）
+
+**有卡**：`PathchSageAttentionKJ`、`Bjornulf_ShowInt`、`LayerUtility: ImageScaleByAspectRatio V2`、`UNETLoader`、`CLIPLoader`、`CLIPTextEncode`、`CFGZeroStar`、`WanImageToVideo`、`ModelSamplingSD3`、`KSamplerAdvanced`、`CreateVideo`、`VAEDecode`、`VAELoader`、`MathExpression|pysssss`、`INTConstant`、`easy cleanGpuUsed`、`CR Text`、`SaveVideo`、`RH_LLMAPI_NODE`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、CFGZeroStar

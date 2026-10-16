@@ -1,0 +1,106 @@
+---
+key: 视频生成/图生视频/LTX2.3 多图参考_2079411345166004225.json
+name: LTX2.3 多图参考_2079411345166004225.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2079411345166004225.json
+hash: a867e47f0a70e1f4
+coverage: 0.865672
+learned_at: 2026-10-15 22:42:02
+nodes: [UNETLoader, VAELoader, VAELoaderKJ, VAELoader, SimpleMath+, VAEDecodeTiled, LTXVAudioVAEDecode, DualCLIPLoader, LTX2SamplingPreviewOverride, LTXVConditioning, SamplerCustomAdvanced, easy ifElse, LTXVEmptyLatentAudio, SolidMask, SetLatentNoiseMask, PrimitiveNode, LTXVAudioVAEEncode, EmptyLTXVLatentVideo, PathchSageAttentionKJ, LTXVConcatAVLatent, easy ifElse, LoadAudio, LoadAudio, LoadAudio, LoadImage, CreateVideo, PrimitiveBoolean, ManualSigmas, KSamplerSelect, LTXVSeparateAVLatent, LTXVCropGuides, easy ifElse, easy ifElse, easy ifElse, RandomNoise, easy saveVideo, PromptRelaySmartEncode, easy timelineSegmentOutput, CFGGuider, PrimitiveNode, LTXAddVideoICLoRAGuide, SimpleMath+, GetImageRangeFromBatch, LTXAddVideoICLoRAGuide, SimpleMath+, easy forLoopEnd, easy lengthAnything, easy forLoopStart, easy int, easy lengthAnything, PrimitiveBoolean, SaveVideo, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVMakeRefVideo, easy timelineInfoOutput, easy makeImageList, MarkdownNote, LoadAudio, easy makeAudioList, LoadAudio, easy timelineEditor, CLIPTextEncode, LoadImage, LoadImage, LoadImage, PrimitiveStringMultiline]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3 多图参考_2079411345166004225.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2079411345166004225.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（67 个）：
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAELoaderKJ`
+- `VAELoader`
+- `SimpleMath+`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `DualCLIPLoader`
+- `LTX2SamplingPreviewOverride`
+- `LTXVConditioning`
+- `SamplerCustomAdvanced` ★核心
+- `easy ifElse`
+- `LTXVEmptyLatentAudio` ★核心
+- `SolidMask`
+- `SetLatentNoiseMask`
+- `PrimitiveNode`
+- `LTXVAudioVAEEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `PathchSageAttentionKJ`
+- `LTXVConcatAVLatent`
+- `easy ifElse`
+- `LoadAudio`
+- `LoadAudio`
+- `LoadAudio`
+- `LoadImage`
+- `CreateVideo`
+- `PrimitiveBoolean`
+- `ManualSigmas`
+- `KSamplerSelect` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVCropGuides`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `RandomNoise`
+- `easy saveVideo`
+- `PromptRelaySmartEncode`
+- `easy timelineSegmentOutput`
+- `CFGGuider`
+- `PrimitiveNode`
+- `LTXAddVideoICLoRAGuide`
+- `SimpleMath+`
+- `GetImageRangeFromBatch`
+- `LTXAddVideoICLoRAGuide`
+- `SimpleMath+`
+- `easy forLoopEnd`
+- `easy lengthAnything`
+- `easy forLoopStart`
+- `easy int`
+- `easy lengthAnything`
+- `PrimitiveBoolean`
+- `SaveVideo`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVMakeRefVideo`
+- `easy timelineInfoOutput`
+- `easy makeImageList`
+- `MarkdownNote`
+- `LoadAudio`
+- `easy makeAudioList`
+- `LoadAudio`
+- `easy timelineEditor`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **87%**（58/67）
+
+**有卡**：`UNETLoader`、`VAELoader`、`VAELoaderKJ`、`SimpleMath+`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`DualCLIPLoader`、`LTX2SamplingPreviewOverride`、`LTXVConditioning`、`SamplerCustomAdvanced`、`LTXVEmptyLatentAudio`、`SolidMask`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`EmptyLTXVLatentVideo`、`PathchSageAttentionKJ`、`LTXVConcatAVLatent`、`LoadAudio`、`LoadImage`、`CreateVideo`、`PrimitiveBoolean`、`ManualSigmas`、`KSamplerSelect`、`LTXVSeparateAVLatent`、`LTXVCropGuides`、`RandomNoise`、`easy saveVideo`、`PromptRelaySmartEncode`、`easy timelineSegmentOutput`、`CFGGuider`、`LTXAddVideoICLoRAGuide`、`GetImageRangeFromBatch`、`easy forLoopEnd`、`easy lengthAnything`、`easy forLoopStart`、`easy int`、`SaveVideo`、`LoraLoaderModelOnly`、`LTXVMakeRefVideo`、`easy timelineInfoOutput`、`easy makeImageList`、`easy makeAudioList`、`easy timelineEditor`、`CLIPTextEncode`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

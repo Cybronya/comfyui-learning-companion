@@ -1,0 +1,87 @@
+---
+key: 视频生成/文生视频/wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json
+name: wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1925016376795144194.json
+hash: 084599f21c29819f
+coverage: 0.636364
+learned_at: 2026-10-15 22:43:25
+nodes: [GetNode, GetNode, SetNode, Note, WanVideoBlockSwap, MarkdownNote, Note, Fast Groups Bypasser (rgthree), Primitive integer [Crystools], Primitive integer [Crystools], WanVideoModelLoader, WanVideoTorchCompileSettings, MarkdownNote, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoVACEModelSelect, AddLabel, GetNode, Reroute, WanVideoDecode, Primitive integer [Crystools], ImageConcatMulti, VHS_VideoCombine, ImageResizeKJ, VHS_VideoCombine, SetNode, VHS_VideoCombine, Primitive integer [Crystools], GetImageSizeAndCount, ImageConcatMulti, EmptyImage, SetNode, GetNode, ColorMatch, WanVideoSampler, AddLabel, LoadImage, Text Multiline, Text Concatenate, RH_Captioner, ShowText|pysssss, WanVideoTextEncode, GetNode, GetNode, GetNode, WanVideoVACEEncode, GetImageSizeAndCount, AIO_Preprocessor, ImageResizeKJ, ImagePadKJ, VHS_LoadVideo, WanVideoLoraSelect, SetNode, SetNode, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1925016376795144194.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（55 个）：
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `Note`
+- `WanVideoBlockSwap`
+- `MarkdownNote`
+- `Note`
+- `Fast Groups Bypasser (rgthree)`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `MarkdownNote`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVACEModelSelect`
+- `AddLabel`
+- `GetNode`
+- `Reroute`
+- `WanVideoDecode`
+- `Primitive integer [Crystools]`
+- `ImageConcatMulti`
+- `VHS_VideoCombine`
+- `ImageResizeKJ`
+- `VHS_VideoCombine`
+- `SetNode`
+- `VHS_VideoCombine`
+- `Primitive integer [Crystools]`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `EmptyImage`
+- `SetNode`
+- `GetNode`
+- `ColorMatch`
+- `WanVideoSampler` ★核心
+- `AddLabel`
+- `LoadImage`
+- `Text Multiline`
+- `Text Concatenate`
+- `RH_Captioner`
+- `ShowText|pysssss`
+- `WanVideoTextEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoVACEEncode`
+- `GetImageSizeAndCount`
+- `AIO_Preprocessor`
+- `ImageResizeKJ`
+- `ImagePadKJ`
+- `VHS_LoadVideo`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `SetNode`
+- `Note`
+
+## 知识
+
+覆盖率 **64%**（35/55）
+
+**有卡**：`WanVideoBlockSwap`、`Primitive integer [Crystools]`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoVACEModelSelect`、`AddLabel`、`WanVideoDecode`、`ImageConcatMulti`、`VHS_VideoCombine`、`ImageResizeKJ`、`GetImageSizeAndCount`、`EmptyImage`、`ColorMatch`、`WanVideoSampler`、`LoadImage`、`Text Multiline`、`Text Concatenate`、`RH_Captioner`、`WanVideoTextEncode`、`WanVideoVACEEncode`、`AIO_Preprocessor`、`ImagePadKJ`、`VHS_LoadVideo`、`WanVideoLoraSelect`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

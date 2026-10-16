@@ -1,0 +1,70 @@
+---
+key: 视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json
+name: Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1912685633197015041.json
+hash: 579f9bdab6382925
+coverage: 0.684211
+learned_at: 2026-10-15 22:29:32
+nodes: [GetNode, LoadWanVideoT5TextEncoder, GetNode, GetNode, GetNode, GetNode, GetNode, EmptyImage, AddLabel, AddLabel, SetNode, SetNode, GetNode, WanVideoDecode, SetNode, WanVideoVAELoader, SetNode, ImageConcatMulti, WanVideoTextEncode, WanVideoSampler, ImageConcatMulti, ImageResizeKJ, WanVideoVACEEncode, WanVideoTeaCache, GetImageSizeAndCount, WanVideoBlockSwap, ImageResizeKJ, LayerUtility: PurgeVRAM V2, GetImageSizeAndCount, WanVideoExperimentalArgs, WanVideoSLG, WanVideoModelLoader, Note Plus (mtb), SetNode, LoadImage, LoadImage, WanVideoVACEStartToEndFrame, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1912685633197015041.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（38 个）：
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyImage`
+- `AddLabel`
+- `AddLabel`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `ImageConcatMulti`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `ImageConcatMulti`
+- `ImageResizeKJ`
+- `WanVideoVACEEncode`
+- `WanVideoTeaCache`
+- `GetImageSizeAndCount`
+- `WanVideoBlockSwap`
+- `ImageResizeKJ`
+- `LayerUtility: PurgeVRAM V2`
+- `GetImageSizeAndCount`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `WanVideoModelLoader`
+- `Note Plus (mtb)`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoVACEStartToEndFrame`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **68%**（26/38）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`EmptyImage`、`AddLabel`、`WanVideoDecode`、`WanVideoVAELoader`、`ImageConcatMulti`、`WanVideoTextEncode`、`WanVideoSampler`、`ImageResizeKJ`、`WanVideoVACEEncode`、`WanVideoTeaCache`、`GetImageSizeAndCount`、`WanVideoBlockSwap`、`LayerUtility: PurgeVRAM V2`、`WanVideoExperimentalArgs`、`WanVideoSLG`、`WanVideoModelLoader`、`Note Plus (mtb)`、`LoadImage`、`WanVideoVACEStartToEndFrame`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、GetImageSizeAndCount

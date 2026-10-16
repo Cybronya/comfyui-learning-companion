@@ -1,0 +1,68 @@
+---
+key: 视频生成/文生视频/最新Wan2.2文生视频_1949836969900687362.json
+name: 最新Wan2.2文生视频_1949836969900687362.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1949836969900687362.json
+hash: eaacf7d9fd715bd5
+coverage: 0.923077
+learned_at: 2026-10-15 22:43:33
+nodes: [ModelSamplingSD3, ModelSamplingSD3, MarkdownNote, CLIPTextEncode, EmptyHunyuanLatentVideo, MarkdownNote, SaveVideo, CLIPTextEncode, ImageUpscaleWithModel, CreateVideo, KSamplerAdvanced, PathchSageAttentionKJ, KSamplerAdvanced, VAELoader, PathchSageAttentionKJ, easy cleanGpuUsed, UpscaleModelLoader, LoraLoaderModelOnly, UNETLoader, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAEDecode, Int, Int, Int]
+patterns: []
+missing: []
+parameters: {"cfg": 9, "denoise": "simple", "sampler_name": 3.5, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/文生视频/最新Wan2.2文生视频_1949836969900687362.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1949836969900687362.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（26 个）：
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `MarkdownNote`
+- `CLIPTextEncode` ★核心
+- `EmptyHunyuanLatentVideo`
+- `MarkdownNote`
+- `SaveVideo`
+- `CLIPTextEncode` ★核心
+- `ImageUpscaleWithModel`
+- `CreateVideo`
+- `KSamplerAdvanced` ★核心
+- `PathchSageAttentionKJ`
+- `KSamplerAdvanced` ★核心
+- `VAELoader`
+- `PathchSageAttentionKJ`
+- `easy cleanGpuUsed`
+- `UpscaleModelLoader`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAEDecode` ★核心
+- `Int`
+- `Int`
+- `Int`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `9`
+- `sampler_name` = `3.5`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **92%**（24/26）
+
+**有卡**：`ModelSamplingSD3`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`SaveVideo`、`ImageUpscaleWithModel`、`CreateVideo`、`KSamplerAdvanced`、`PathchSageAttentionKJ`、`VAELoader`、`easy cleanGpuUsed`、`UpscaleModelLoader`、`LoraLoaderModelOnly`、`UNETLoader`、`CLIPLoader`、`VAEDecode`、`Int`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、KSamplerAdvanced、EmptyHunyuanLatentVideo

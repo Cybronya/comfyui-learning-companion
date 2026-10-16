@@ -1,0 +1,57 @@
+---
+key: 视频生成/文生视频/最新wan2.1万相首尾帧FunInP版万相首尾帧FunInP版_1918947827957825538.json
+name: 最新wan2.1万相首尾帧FunInP版万相首尾帧FunInP版_1918947827957825538.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1918947827957825538.json
+hash: 98138eba80ff007f
+coverage: 1
+learned_at: 2026-10-15 22:43:23
+nodes: [VHS_VideoCombine, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoClipVisionEncode, WanVideoTeaCache, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoDecode, WanVideoTextEncode, UpscaleModelLoader, WanVideoVAELoader, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoModelLoader, WanVideoLoraSelect, ImageListToImageBatch, LoadImage, LoadImage, ImageUpscaleWithModelBatched, VHS_VideoCombine, ImageResizeKJ, ImageResizeKJ, WanVideoSampler, WanVideoImageToVideoEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/最新wan2.1万相首尾帧FunInP版万相首尾帧FunInP版_1918947827957825538.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1918947827957825538.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（25 个）：
+- `VHS_VideoCombine`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoClipVisionEncode`
+- `WanVideoTeaCache`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `WanVideoTextEncode`
+- `UpscaleModelLoader`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `ImageListToImageBatch`
+- `LoadImage`
+- `LoadImage`
+- `ImageUpscaleWithModelBatched`
+- `VHS_VideoCombine`
+- `ImageResizeKJ`
+- `ImageResizeKJ`
+- `WanVideoSampler` ★核心
+- `WanVideoImageToVideoEncode`
+
+## 知识
+
+覆盖率 **100%**（25/25）
+
+**有卡**：`VHS_VideoCombine`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoClipVisionEncode`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`WanVideoTextEncode`、`UpscaleModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`ImageListToImageBatch`、`LoadImage`、`ImageUpscaleWithModelBatched`、`ImageResizeKJ`、`WanVideoSampler`、`WanVideoImageToVideoEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

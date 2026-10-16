@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/LTX2.3-transition-lora-丝滑转场-i2v-多图-自动提示词_2040291923272933378.json
+name: LTX2.3-transition-lora-丝滑转场-i2v-多图-自动提示词_2040291923272933378.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2040291923272933378.json
+hash: 40e8ba07b890178d
+coverage: 0.938462
+learned_at: 2026-10-15 22:36:14
+nodes: [RandomNoise, RandomNoise, SamplerCustomAdvanced, LTXVLatentUpsampler, KSamplerSelect, Reroute, LTXVAudioVAEDecode, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, ComfyMathExpression, ComfyMathExpression, CFGGuider, LTXVConditioning, ManualSigmas, LTXVCropGuides, LTXVSeparateAVLatent, ResizeImagesByLongerEdge, CLIPTextEncode, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, LTXVPreprocess, ComfyMathExpression, LTXVImgToVideoInplace, LTXVImgToVideoInplaceKJ, CLIPTextEncode, LTX2_NAG, llama_cpp_parameters, llama_cpp_model_loader, easy showAnything, llama_cpp_instruct_adv, ResizeImagesByLongerEdge, LTXVPreprocess, ResizeImagesByLongerEdge, LTXVPreprocess, CreateVideo, VAEDecodeTiled, ImageStitch, ImageStitch, Int, TTResolutionSelector, MathExpression|pysssss, JWFloat, RH_Utils, PrimitiveStringMultiline, LoadImage, ttN concat, ImageResizeKJv2, ImageResizeKJv2, LTXVConcatAVLatent, MarkdownNote, CustomAddLabel, CFGGuider, KSamplerSelect, ManualSigmas, LTXVConcatAVLatent, SaveVideo, LTXAVTextEncoderLoader, LTXVAudioVAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, CheckpointLoaderSimple, ImageResizeKJv2, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3-transition-lora-丝滑转场-i2v-多图-自动提示词_2040291923272933378.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2040291923272933378.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（65 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `CFGGuider`
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `ResizeImagesByLongerEdge`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `LatentUpscaleModelLoader`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `LTXVImgToVideoInplace`
+- `LTXVImgToVideoInplaceKJ`
+- `CLIPTextEncode` ★核心
+- `LTX2_NAG`
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+- `easy showAnything`
+- `llama_cpp_instruct_adv`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `CreateVideo`
+- `VAEDecodeTiled` ★核心
+- `ImageStitch`
+- `ImageStitch`
+- `Int`
+- `TTResolutionSelector`
+- `MathExpression|pysssss`
+- `JWFloat`
+- `RH_Utils`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `ttN concat`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `LTXVConcatAVLatent`
+- `MarkdownNote`
+- `CustomAddLabel`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `SaveVideo`
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **94%**（61/65）
+
+**有卡**：`RandomNoise`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`KSamplerSelect`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`ComfyMathExpression`、`CFGGuider`、`LTXVConditioning`、`ManualSigmas`、`LTXVCropGuides`、`ResizeImagesByLongerEdge`、`CLIPTextEncode`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`LTXVPreprocess`、`LTXVImgToVideoInplace`、`LTXVImgToVideoInplaceKJ`、`LTX2_NAG`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`CreateVideo`、`VAEDecodeTiled`、`ImageStitch`、`Int`、`TTResolutionSelector`、`MathExpression|pysssss`、`JWFloat`、`RH_Utils`、`LoadImage`、`ttN concat`、`ImageResizeKJv2`、`LTXVConcatAVLatent`、`CustomAddLabel`、`SaveVideo`、`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

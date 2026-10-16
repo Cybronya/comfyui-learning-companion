@@ -1,0 +1,54 @@
+---
+key: 视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json
+name: ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1944587037297266689.json
+hash: efc5fd7efedbcd39
+coverage: 0.954545
+learned_at: 2026-10-15 22:30:39
+nodes: [WanVideoDecode, WanVideoTorchCompileSettings, LoadWanVideoT5TextEncoder, WanVideoVAELoader, ImageResizeKJ, ImageScaleToMegapixels, GIMMVFI_interpolate, DownloadAndLoadGIMMVFIModel, WanVideoBlockSwap, UpscaleModelLoader, WanVideoEnhanceAVideo, PreviewImage, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTextEncode, ImageSmartSharpen+, LoadImage, WanVideoImageToVideoEncode, RH_Translator, WanVideoSLG, WanVideoSampler, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/ani全能视频S专业动漫2.0模型版图生视频_1944587037297266689.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1944587037297266689.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（22 个）：
+- `WanVideoDecode`
+- `WanVideoTorchCompileSettings`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `ImageResizeKJ`
+- `ImageScaleToMegapixels`
+- `GIMMVFI_interpolate`
+- `DownloadAndLoadGIMMVFIModel`
+- `WanVideoBlockSwap`
+- `UpscaleModelLoader`
+- `WanVideoEnhanceAVideo`
+- `PreviewImage`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+- `ImageSmartSharpen+`
+- `LoadImage`
+- `WanVideoImageToVideoEncode`
+- `RH_Translator`
+- `WanVideoSLG`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **95%**（21/22）
+
+**有卡**：`WanVideoDecode`、`WanVideoTorchCompileSettings`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`ImageResizeKJ`、`ImageScaleToMegapixels`、`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`WanVideoBlockSwap`、`UpscaleModelLoader`、`WanVideoEnhanceAVideo`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoTextEncode`、`ImageSmartSharpen+`、`LoadImage`、`WanVideoImageToVideoEncode`、`RH_Translator`、`WanVideoSLG`、`WanVideoSampler`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoLoraSelect

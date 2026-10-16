@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/wan2.1图转视频（双采样版）_1905605483217227777.json
+name: wan2.1图转视频（双采样版）_1905605483217227777.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1905605483217227777.json
+hash: 7d6746a7cae701a5
+coverage: 0.925926
+learned_at: 2026-10-15 22:29:26
+nodes: [CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, Note, Note, LayerUtility: Seed, ModelSamplingSD3, DifferentialDiffusion, SamplerCustom, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, VAEDecode, ImageUpscaleWithModel, UpscaleModelLoader, CLIPTextEncode, SamplerCustom, UnetLoaderGGUF, CLIPLoader, CLIPVisionLoader, VAELoader, LoadImage, VHS_VideoCombine, WanImageToVideo, CLIPVisionEncode, SplitSigmas, TeaCache, BasicScheduler, KSamplerSelect]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1图转视频（双采样版）_1905605483217227777.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1905605483217227777.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（27 个）：
+- `CLIPTextEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Note`
+- `Note`
+- `LayerUtility: Seed`
+- `ModelSamplingSD3`
+- `DifferentialDiffusion`
+- `SamplerCustom` ★核心
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `VAEDecode` ★核心
+- `ImageUpscaleWithModel`
+- `UpscaleModelLoader`
+- `CLIPTextEncode` ★核心
+- `SamplerCustom` ★核心
+- `UnetLoaderGGUF` ★核心
+- `CLIPLoader`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `SplitSigmas`
+- `TeaCache`
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+
+## 知识
+
+覆盖率 **93%**（25/27）
+
+**有卡**：`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerUtility: Seed`、`ModelSamplingSD3`、`DifferentialDiffusion`、`SamplerCustom`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`VAEDecode`、`ImageUpscaleWithModel`、`UpscaleModelLoader`、`UnetLoaderGGUF`、`CLIPLoader`、`CLIPVisionLoader`、`VAELoader`、`LoadImage`、`VHS_VideoCombine`、`WanImageToVideo`、`CLIPVisionEncode`、`SplitSigmas`、`TeaCache`、`BasicScheduler`、`KSamplerSelect`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerSelect、SamplerCustom、LayerUtility: Seed

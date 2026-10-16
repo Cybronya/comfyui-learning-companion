@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json
+name: Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1946494882895523842.json
+hash: b3b355aa65040ed5
+coverage: 0.851852
+learned_at: 2026-10-15 22:30:44
+nodes: [CLIPVisionLoader, WanVideoVRAMManagement, JWInteger, Note, Note, Note, JWInteger, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, LayerUtility: ImageScaleByAspectRatio V2, WanVideoVAELoader, Text Multiline, LoadImage, WanVideoClipVisionEncode, WanVideoTextEncode, Note, LayerUtility: PurgeVRAM V2, VHS_VideoCombine, WanVideoDecode, WanVideoModelLoader, WanVideoExperimentalArgs, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoImageToVideoEncode, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoSampler]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1946494882895523842.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（27 个）：
+- `CLIPVisionLoader`
+- `WanVideoVRAMManagement`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `JWInteger`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanVideoVAELoader`
+- `Text Multiline`
+- `LoadImage`
+- `WanVideoClipVisionEncode`
+- `WanVideoTextEncode`
+- `Note`
+- `LayerUtility: PurgeVRAM V2`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoModelLoader`
+- `WanVideoExperimentalArgs`
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+
+## 知识
+
+覆盖率 **85%**（23/27）
+
+**有卡**：`CLIPVisionLoader`、`WanVideoVRAMManagement`、`JWInteger`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoVAELoader`、`Text Multiline`、`LoadImage`、`WanVideoClipVisionEncode`、`WanVideoTextEncode`、`LayerUtility: PurgeVRAM V2`、`VHS_VideoCombine`、`WanVideoDecode`、`WanVideoModelLoader`、`WanVideoExperimentalArgs`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoImageToVideoEncode`、`WanVideoLoraSelect`、`WanVideoSampler`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

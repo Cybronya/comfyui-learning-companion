@@ -1,0 +1,117 @@
+---
+key: 视频生成/图生视频/全能视频S 图生视频-广告版(NEXT SCENE 2.0)_1984963080490729473.json
+name: 全能视频S 图生视频-广告版(NEXT SCENE 2.0)_1984963080490729473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1984963080490729473.json
+hash: c4d706d77d32e853
+coverage: 0.890625
+learned_at: 2026-10-15 22:32:50
+nodes: [LoraLoaderModelOnly, LayerUtility: ImageScaleByAspectRatio V2, Int, KSampler, VAEDecode, AILab_ImagePreview, AILab_ImagePreview, AILab_ImagePreview, AILab_ImagePreview, TextEncodeQwenImageEditPlus, ImageListToImageBatch, AILab_ImagePreview, AILab_ImagePreview, AILab_ImagePreview, TextEncodeQwenImageEditPlus, easy promptLine, easy showAnything, easy showAnything, easy showAnything, SaveVideo, RH_Sora2_I2V, AILab_ImagePreview, Fast Groups Bypasser (rgthree), AILab_ImagePreview, CR SDXL Aspect Ratio, AILab_ImagePreview, AILab_ImagePreview, AILab_ImagePreview, SaveImage, ImageBatchSplitter //Inspire, AILab_ImagePreview, ImageConcanate, ImageConcanate, AILab_ImagePreview, ImageConcatenateMulti_UTK, ImageConcatenateMulti_UTK, ImageBatchSplitter //Inspire, ImageConcatenateMulti_UTK, AILab_ImagePreview, AILab_ImagePreview, UNETLoader, AILab_ImagePreview, VAELoader, CLIPLoader, Anything Everywhere3, easy showAnything, ShellAgentPluginOutputText, ProcessString, RH_LLMAPI_NODE, LoraLoaderModelOnly, Qwen_VLM_API, JjkText, Fast Bypasser (rgthree), TextCombinerTwo, TextCombinerTwo, TextBox, TextBox, LoadImage, ImageConcanate, workflow>FLUX-K, AILab_ImagePreview, TextBox, TextBox, ImageResizeKJv2]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "sa_solver", "scheduler": "simple", "seed": 720617690207229, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/全能视频S 图生视频-广告版(NEXT SCENE 2.0)_1984963080490729473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1984963080490729473.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Decode → Process → Output → Other
+
+**节点**（64 个）：
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Int`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `TextEncodeQwenImageEditPlus`
+- `ImageListToImageBatch`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `TextEncodeQwenImageEditPlus`
+- `easy promptLine`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `SaveVideo`
+- `RH_Sora2_I2V`
+- `AILab_ImagePreview`
+- `Fast Groups Bypasser (rgthree)`
+- `AILab_ImagePreview`
+- `CR SDXL Aspect Ratio`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `SaveImage`
+- `ImageBatchSplitter //Inspire`
+- `AILab_ImagePreview`
+- `ImageConcanate`
+- `ImageConcanate`
+- `AILab_ImagePreview`
+- `ImageConcatenateMulti_UTK`
+- `ImageConcatenateMulti_UTK`
+- `ImageBatchSplitter //Inspire`
+- `ImageConcatenateMulti_UTK`
+- `AILab_ImagePreview`
+- `AILab_ImagePreview`
+- `UNETLoader` ★核心
+- `AILab_ImagePreview`
+- `VAELoader`
+- `CLIPLoader`
+- `Anything Everywhere3`
+- `easy showAnything`
+- `ShellAgentPluginOutputText`
+- `ProcessString`
+- `RH_LLMAPI_NODE`
+- `LoraLoaderModelOnly` ★核心
+- `Qwen_VLM_API`
+- `JjkText`
+- `Fast Bypasser (rgthree)`
+- `TextCombinerTwo`
+- `TextCombinerTwo`
+- `TextBox`
+- `TextBox`
+- `LoadImage`
+- `ImageConcanate`
+- `workflow>FLUX-K`
+- `AILab_ImagePreview`
+- `TextBox`
+- `TextBox`
+- `ImageResizeKJv2`
+
+## 关键参数
+
+- `seed` = `720617690207229`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **89%**（57/64）
+
+**有卡**：`LoraLoaderModelOnly`、`LayerUtility: ImageScaleByAspectRatio V2`、`Int`、`KSampler`、`VAEDecode`、`AILab_ImagePreview`、`TextEncodeQwenImageEditPlus`、`ImageListToImageBatch`、`easy promptLine`、`SaveVideo`、`RH_Sora2_I2V`、`CR SDXL Aspect Ratio`、`SaveImage`、`ImageBatchSplitter //Inspire`、`ImageConcanate`、`ImageConcatenateMulti_UTK`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`ShellAgentPluginOutputText`、`ProcessString`、`RH_LLMAPI_NODE`、`Qwen_VLM_API`、`Fast Bypasser (rgthree)`、`TextCombinerTwo`、`TextBox`、`LoadImage`、`workflow>FLUX-K`、`ImageResizeKJv2`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPLoader、SaveImage、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

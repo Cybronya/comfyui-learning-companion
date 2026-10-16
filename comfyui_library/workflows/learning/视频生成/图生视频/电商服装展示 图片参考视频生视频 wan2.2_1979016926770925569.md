@@ -1,0 +1,85 @@
+---
+key: 视频生成/图生视频/电商服装展示 图片参考视频生视频 wan2.2_1979016926770925569.json
+name: 电商服装展示 图片参考视频生视频 wan2.2_1979016926770925569.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1979016926770925569.json
+hash: 94fe994af6126f30
+coverage: 0.790698
+learned_at: 2026-10-15 22:32:21
+nodes: [DiffusionModelSelector, DiffusionModelLoaderKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, ModelSamplingSD3, CLIPLoader, CLIPTextEncode, MathExpression|pysssss, MathExpression|pysssss, Compare, MathExpression|pysssss, MathExpression|pysssss, easy ifElse, VAELoader, Int, Reroute, DownloadAndLoadDepthAnythingV2Model, DepthAnything_V2, VHS_VideoInfoLoaded, CLIPTextEncode, Text, WanVaceToVideo, KSamplerAdvanced, TrimVideoLatent, KSamplerAdvanced, VAEDecode, LayerUtility: ImageScaleByAspectRatio V2, easy imageRemBg, ImageRemoveAlpha+, ImageResizeKJv2, PreviewImage, DiffusionModelSelector, DiffusionModelLoaderKJ, LoadImage, VHS_LoadVideo, PreviewImage, easy showAnything, easy showAnything, easy showAnything, Note, Note, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 16, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/电商服装展示 图片参考视频生视频 wan2.2_1979016926770925569.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1979016926770925569.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（43 个）：
+- `DiffusionModelSelector`
+- `DiffusionModelLoaderKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `Compare`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `easy ifElse`
+- `VAELoader`
+- `Int`
+- `Reroute`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `DepthAnything_V2`
+- `VHS_VideoInfoLoaded`
+- `CLIPTextEncode` ★核心
+- `Text`
+- `WanVaceToVideo`
+- `KSamplerAdvanced` ★核心
+- `TrimVideoLatent`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy imageRemBg`
+- `ImageRemoveAlpha+`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `DiffusionModelSelector`
+- `DiffusionModelLoaderKJ`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `PreviewImage`
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `Note`
+- `Note`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `16`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **79%**（34/43）
+
+**有卡**：`DiffusionModelSelector`、`DiffusionModelLoaderKJ`、`LoraLoaderModelOnly`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`MathExpression|pysssss`、`Compare`、`VAELoader`、`Int`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`VHS_VideoInfoLoaded`、`Text`、`WanVaceToVideo`、`KSamplerAdvanced`、`TrimVideoLatent`、`VAEDecode`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy imageRemBg`、`ImageRemoveAlpha+`、`ImageResizeKJv2`、`LoadImage`、`VHS_LoadVideo`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、DepthAnything_V2

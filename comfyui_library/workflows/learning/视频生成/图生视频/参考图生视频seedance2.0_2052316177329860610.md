@@ -1,0 +1,36 @@
+---
+key: 视频生成/图生视频/参考图生视频seedance2.0_2052316177329860610.json
+name: 参考图生视频seedance2.0_2052316177329860610.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2052316177329860610.json
+hash: 533b38b2e651f74b
+coverage: 1
+learned_at: 2026-10-15 22:37:28
+nodes: [SaveVideo, RH_RhartVideoSparkvideo20MultimodalVideo, LoadImage, RHSettingsNode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/参考图生视频seedance2.0_2052316177329860610.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2052316177329860610.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（4 个）：
+- `SaveVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `LoadImage`
+- `RHSettingsNode`
+
+## 知识
+
+覆盖率 **100%**（4/4）
+
+**有卡**：`SaveVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`LoadImage`、`RHSettingsNode`
+
+**用到的条目**：LoadImage、SaveVideo、RHSettingsNode、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、node、SaveImage

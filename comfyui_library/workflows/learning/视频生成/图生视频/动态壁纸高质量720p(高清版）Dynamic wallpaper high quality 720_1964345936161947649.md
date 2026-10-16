@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/动态壁纸高质量720p(高清版）Dynamic wallpaper high quality 720_1964345936161947649.json
+name: 动态壁纸高质量720p(高清版）Dynamic wallpaper high quality 720_1964345936161947649.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1964345936161947649.json
+hash: 16ba5c0ae2e62dff
+coverage: 0.888889
+learned_at: 2026-10-15 22:31:35
+nodes: [LoadWanVideoT5TextEncoder, WanVideoSLG, CogVideoEnhanceAVideo, LoadWanVideoClipTextEncoder, WanVideoVAELoader, WanVideoTextEncode, MathExpression|pysssss, WanVideoImageClipEncode, WanVideoTeaCache, WanVideoBlockSwap, WanVideoDecode, CR Upscale Image, PreviewImage, Fast Groups Bypasser (rgthree), VHS_VideoCombine, Note, WanVideoModelLoader, CR Text, WanVideoLoraSelect, easy imageSize, WanVideoSampler, CR Text, Int, LayerUtility: ImageScaleByAspectRatio V2, ImageScaleToTotalPixels, VHS_VideoCombine, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/动态壁纸高质量720p(高清版）Dynamic wallpaper high quality 720_1964345936161947649.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1964345936161947649.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
+**节点**（27 个）：
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSLG`
+- `CogVideoEnhanceAVideo`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `WanVideoTextEncode`
+- `MathExpression|pysssss`
+- `WanVideoImageClipEncode`
+- `WanVideoTeaCache`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `CR Upscale Image`
+- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `Note`
+- `WanVideoModelLoader`
+- `CR Text`
+- `WanVideoLoraSelect`
+- `easy imageSize`
+- `WanVideoSampler` ★核心
+- `CR Text`
+- `Int`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageScaleToTotalPixels`
+- `VHS_VideoCombine`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **89%**（24/27）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`WanVideoSLG`、`CogVideoEnhanceAVideo`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`WanVideoTextEncode`、`MathExpression|pysssss`、`WanVideoImageClipEncode`、`WanVideoTeaCache`、`WanVideoBlockSwap`、`WanVideoDecode`、`CR Upscale Image`、`VHS_VideoCombine`、`WanVideoModelLoader`、`CR Text`、`WanVideoLoraSelect`、`easy imageSize`、`WanVideoSampler`、`Int`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageScaleToTotalPixels`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

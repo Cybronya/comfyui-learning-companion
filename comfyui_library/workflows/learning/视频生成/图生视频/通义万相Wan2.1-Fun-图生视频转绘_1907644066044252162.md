@@ -1,0 +1,60 @@
+---
+key: 视频生成/图生视频/通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json
+name: 通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1907644066044252162.json
+hash: 23f13bdaeb9fe1b1
+coverage: 1
+learned_at: 2026-10-15 22:29:27
+nodes: [WanVideoTorchCompileSettings, LayerUtility: PurgeVRAM, JanusModelLoader, JanusImageUnderstanding, WanVideoBlockSwap, LoadWanVideoClipTextEncoder, WanVideoTextEncode, WanVideoEncode, WanVideoEnhanceAVideo, WanVideoControlEmbeds, WanVideoSLG, WanVideoExperimentalArgs, WanVideoDecode, VHS_VideoCombine, easy cleanGpuUsed, WanVideoTeaCache, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoVAELoader, KepStringLiteral, WanVideoSampler, ImageResizeKJ, WanVideoClipVisionEncode, LoadImage, VHS_LoadVideo, AIO_Preprocessor, ImageResizeKJ, WanVideoImageToVideoEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/通义万相Wan2.1-Fun-图生视频转绘_1907644066044252162.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1907644066044252162.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（28 个）：
+- `WanVideoTorchCompileSettings`
+- `LayerUtility: PurgeVRAM`
+- `JanusModelLoader`
+- `JanusImageUnderstanding`
+- `WanVideoBlockSwap`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoTextEncode`
+- `WanVideoEncode`
+- `WanVideoEnhanceAVideo`
+- `WanVideoControlEmbeds`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `WanVideoTeaCache`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `KepStringLiteral`
+- `WanVideoSampler` ★核心
+- `ImageResizeKJ`
+- `WanVideoClipVisionEncode`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `AIO_Preprocessor`
+- `ImageResizeKJ`
+- `WanVideoImageToVideoEncode`
+
+## 知识
+
+覆盖率 **100%**（28/28）
+
+**有卡**：`WanVideoTorchCompileSettings`、`LayerUtility: PurgeVRAM`、`JanusModelLoader`、`JanusImageUnderstanding`、`WanVideoBlockSwap`、`LoadWanVideoClipTextEncoder`、`WanVideoTextEncode`、`WanVideoEncode`、`WanVideoEnhanceAVideo`、`WanVideoControlEmbeds`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`VHS_VideoCombine`、`easy cleanGpuUsed`、`WanVideoTeaCache`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoVAELoader`、`KepStringLiteral`、`WanVideoSampler`、`ImageResizeKJ`、`WanVideoClipVisionEncode`、`LoadImage`、`VHS_LoadVideo`、`AIO_Preprocessor`、`WanVideoImageToVideoEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

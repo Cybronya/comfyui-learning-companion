@@ -1,0 +1,45 @@
+---
+key: 视频生成/图生视频/Seedance2.0全能参考视频(创建ID-RH版，支持真人)_2066951039068229633.json
+name: Seedance2.0全能参考视频(创建ID-RH版，支持真人)_2066951039068229633.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2066951039068229633.json
+hash: ade6128195a27381
+coverage: 1
+learned_at: 2026-10-15 22:39:55
+nodes: [RH_SparkVideoAssetIdsMerge, RH_SparkVideoAssetCreate, RH_SparkVideoAssetCreate, LoadImage, SaveVideo, RH_SparkVideoAssetCreate, LoadVideo, LoadImage, LoadImage, LoadAudio, LoadAudio, RH_RhartVideoSparkvideo20MultimodalVideo, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance2.0全能参考视频(创建ID-RH版，支持真人)_2066951039068229633.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2066951039068229633.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（13 个）：
+- `RH_SparkVideoAssetIdsMerge`
+- `RH_SparkVideoAssetCreate`
+- `RH_SparkVideoAssetCreate`
+- `LoadImage`
+- `SaveVideo`
+- `RH_SparkVideoAssetCreate`
+- `LoadVideo`
+- `LoadImage`
+- `LoadImage`
+- `LoadAudio`
+- `LoadAudio`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **100%**（13/13）
+
+**有卡**：`RH_SparkVideoAssetIdsMerge`、`RH_SparkVideoAssetCreate`、`LoadImage`、`SaveVideo`、`LoadVideo`、`LoadAudio`、`RH_RhartVideoSparkvideo20MultimodalVideo`
+
+**用到的条目**：LoadImage、SaveVideo、LoadAudio、LoadVideo、RH_RhartVideoSparkvideo20MultimodalVideo、RH_SparkVideoAssetCreate、RH_SparkVideoAssetIdsMerge、sd15-t2i-basic

@@ -1,0 +1,120 @@
+---
+key: 视频生成/图生视频/动作迁移  V2 Wan2.2 Animate_2030254367873441794.json
+name: 动作迁移  V2 Wan2.2 Animate_2030254367873441794.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2030254367873441794.json
+hash: 2aea2ac20e129a4c
+coverage: 0.511364
+learned_at: 2026-10-15 22:35:25
+nodes: [WanVideoTorchCompileSettings, SetNode, SetNode, SetNode, SetNode, WanVideoVAELoader, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, ImageResizeKJv2, GetNode, GetNode, SetNode, CLIPVisionLoader, WanVideoClipVisionEncode, SetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetImageSizeAndCount, easy cleanGpuUsed, easy cleanGpuUsed, VHS_VideoInfoLoaded, WanVideoDecode, GetNode, WanVideoSampler, easy showAnything, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoLoraSelectMulti, WanVideoBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoAnimateEmbeds, GetNode, VHS_VideoCombine, GetNode, SetNode, SetNode, VHS_VideoCombine, OnnxDetectionModelLoader, GetImageSizeAndCount, GetNode, PoseAndFaceDetection, Reroute, GetNode, GetNode, GetNode, BlockifyMask, SetNode, DrawMaskOnImage, GetNode, VHS_VideoCombine, SetNode, Sam2Segmentation, DrawViTPose, ImageResizeKJv2, SetNode, GetImageSize, DownloadAndLoadSAM2Model, GrowMask, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, INTConstant, INTConstant, easy cleanGpuUsed, GetNode, VHS_VideoCombine, ImageConcanate, ImageConcanate, easy cleanGpuUsed, easy cleanGpuUsed, SetNode, WanVideoTextEncodeCached, JjkText, VHS_LoadVideo, PointsEditor, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/动作迁移  V2 Wan2.2 Animate_2030254367873441794.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2030254367873441794.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（88 个）：
+- `WanVideoTorchCompileSettings`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `CLIPVisionLoader`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `VHS_VideoInfoLoaded`
+- `WanVideoDecode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `easy showAnything`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `WanVideoLoraSelectMulti`
+- `WanVideoBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoAnimateEmbeds`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `OnnxDetectionModelLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `PoseAndFaceDetection`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `BlockifyMask`
+- `SetNode`
+- `DrawMaskOnImage`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `Sam2Segmentation`
+- `DrawViTPose`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetImageSize`
+- `DownloadAndLoadSAM2Model`
+- `GrowMask`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `VHS_VideoCombine`
+- `ImageConcanate`
+- `ImageConcanate`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `WanVideoTextEncodeCached`
+- `JjkText`
+- `VHS_LoadVideo`
+- `PointsEditor`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **51%**（45/88）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoVAELoader`、`ImageResizeKJv2`、`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`GetImageSizeAndCount`、`easy cleanGpuUsed`、`VHS_VideoInfoLoaded`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoAnimateEmbeds`、`VHS_VideoCombine`、`OnnxDetectionModelLoader`、`PoseAndFaceDetection`、`BlockifyMask`、`DrawMaskOnImage`、`Sam2Segmentation`、`DrawViTPose`、`GetImageSize`、`DownloadAndLoadSAM2Model`、`GrowMask`、`INTConstant`、`ImageConcanate`、`WanVideoTextEncodeCached`、`VHS_LoadVideo`、`PointsEditor`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

@@ -1,0 +1,49 @@
+---
+key: 视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1935718246421028865.json
+name: wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1935718246421028865.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1935718246421028865.json
+hash: a5e4659e6506b4b0
+coverage: 0.941176
+learned_at: 2026-10-15 22:30:24
+nodes: [LayerUtility: PurgeVRAM, WanVideoBlockSwap, WanVideoModelLoader, WanVideoImageClipEncode, WanVideoSampler, WanVideoTextEncode, ImpactInt, ImpactInt, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoLoraSelect, LoadImage, LoadWanVideoT5TextEncoder, WanVideoDecode, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, JjkText]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1935718246421028865.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1935718246421028865.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（17 个）：
+- `LayerUtility: PurgeVRAM`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoImageClipEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `ImpactInt`
+- `ImpactInt`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JjkText`
+
+## 知识
+
+覆盖率 **94%**（16/17）
+
+**有卡**：`LayerUtility: PurgeVRAM`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoImageClipEncode`、`WanVideoSampler`、`WanVideoTextEncode`、`ImpactInt`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`WanVideoLoraSelect`、`LoadImage`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

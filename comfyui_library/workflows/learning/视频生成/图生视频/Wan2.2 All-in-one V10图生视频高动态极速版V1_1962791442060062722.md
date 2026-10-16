@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json
+name: Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1962791442060062722.json
+hash: bdeebebb85e55862
+coverage: 1
+learned_at: 2026-10-15 22:31:32
+nodes: [JWInteger, CLIPVisionLoader, CLIPVisionEncode, CLIPTextEncode, PathchSageAttentionKJ, LayerUtility: ImageScaleByAspectRatio V2, WanImageToVideo, ModelSamplingSD3, VAEDecode, JWInteger, KSampler, VHS_VideoCombine, ImageFromBatch+, CheckpointLoaderSimple, LoadImage, CLIPTextEncode, CR Prompt Text]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "checkpoint": "wan2.2-i2v-rapid-aio-v10.safetensors", "denoise": 1, "sampler_name": "sa_solver", "scheduler": "beta", "seed": 941829845119079, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1962791442060062722.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（17 个）：
+- `JWInteger`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanImageToVideo`
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `JWInteger`
+- `KSampler` ★核心
+- `VHS_VideoCombine`
+- `ImageFromBatch+`
+- `CheckpointLoaderSimple` ★核心
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CR Prompt Text`
+
+## 关键参数
+
+- `seed` = `941829845119079`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `wan2.2-i2v-rapid-aio-v10.safetensors`
+
+## 知识
+
+覆盖率 **100%**（17/17）
+
+**有卡**：`JWInteger`、`CLIPVisionLoader`、`CLIPVisionEncode`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanImageToVideo`、`ModelSamplingSD3`、`VAEDecode`、`KSampler`、`VHS_VideoCombine`、`ImageFromBatch+`、`CheckpointLoaderSimple`、`LoadImage`、`CR Prompt Text`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CLIPVisionEncode、CLIPVisionLoader、CR Prompt Text
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,189 @@
+---
+key: 视频生成/图生视频/Smooth V2 Vs Dasiwa V9 Vs V8动漫视频对比工作流 浮云1.20_2013465829291073537.json
+name: Smooth V2 Vs Dasiwa V9 Vs V8动漫视频对比工作流 浮云1.20_2013465829291073537.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2013465829291073537.json
+hash: baf441a6735093df
+coverage: 0.782313
+learned_at: 2026-10-15 22:34:31
+nodes: [Note, Note, ImageScaleBy, Note, ImageResizeKJv2, SaveImage, ImageScaleBy, Pick From Batch (mtb), easy cleanGpuUsed, CLIPVisionEncode, Note, Note, WanImageToVideo, Note, Note, Note, ModelSamplingSD3, LayerUtility: PurgeVRAM, ModelSamplingSD3, PreviewImage, ColorMatch, PathchSageAttentionKJ, PathchSageAttentionKJ, CLIPTextEncode, KSamplerAdvanced, KSamplerAdvanced, UNETLoader, VAELoader, CLIPVisionLoader, Seed (rgthree), UNETLoader, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, WanVideoDecode, WanVideoVAELoader, WanVideoSampler, INTConstant, CreateCFGScheduleFloatList, WanVideoSigmaToStep, Float, WanVideoScheduler, WanVideoScheduler, WanVideoLoraSelect, WanVideoLoraSelect, JWInteger, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, CLIPLoader, Note, RunningHub Deepcleaner, WanVideoImageToVideoEncode, WanVideoModelLoader, WanVideoModelLoader, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoTorchCompileSettings, WanVideoLoraSelect, WanVideoSampler, PrimitiveNode, AddLabel, GetImageSizeAndCount, AILab_QwenVL, RH_LLMAPI_NODE, easy showAnything, CR Prompt Text, easy showAnything, LayerUtility: PurgeVRAM, LayerUtility: ImageScaleByAspectRatio V2, RH_LLMAPI_NODE, TextInput_, VHS_VideoCombine, VHS_VideoCombine, UnetLoaderGGUF, UnetLoaderGGUF, Note, Note, ImageScaleBy, Note, CLIPTextEncode, StringConcatenate, Note, easy cleanGpuUsed, RIFE VFI, SaveImage, ColorMatch, ImageScaleBy, Pick From Batch (mtb), CLIPVisionEncode, ModelSamplingSD3, Note, CLIPVisionLoader, VAELoader, easy showAnything, VHS_VideoCombine, Note, CLIPTextEncode, Seed (rgthree), Note, Note, UNETLoader, UNETLoader, PathchSageAttentionKJ, LoraLoaderModelOnly, ModelPatchTorchSettings, LoraLoaderModelOnly, PathchSageAttentionKJ, CLIPLoader, WanImageToVideo, ImageResizeKJv2, LayerUtility: ImageScaleByAspectRatio V2, mxSlider2D, PreviewImage, Note, RH_LLMAPI_NODE, Note, KSamplerAdvanced, CR Prompt Text, CR Prompt Text, easy showAnything, CR Prompt Text, ImageConcatMulti, AddLabel, AddLabel, VAEDecodeTiled, VAEDecode, CLIPTextEncode, VHS_VideoCombine, KSamplerAdvanced, ModelPatchTorchSettings, ModelSamplingSD3, RH_LLMAPI_NODE, PrimitiveStringMultiline, WanVideoTextEncode, easy showAnything, LoadImage, TextInput_, JWInteger, JWInteger, JWInteger, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, VHS_VideoCombine, Note, Note, Note]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Smooth V2 Vs Dasiwa V9 Vs V8动漫视频对比工作流 浮云1.20_2013465829291073537.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2013465829291073537.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（147 个）：
+- `Note`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ImageScaleBy`
+- `Pick From Batch (mtb)`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `Note`
+- `Note`
+- `WanImageToVideo`
+- `Note`
+- `Note`
+- `Note`
+- `ModelSamplingSD3`
+- `LayerUtility: PurgeVRAM`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `ColorMatch`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `UNETLoader` ★核心
+- `VAELoader`
+- `CLIPVisionLoader`
+- `Seed (rgthree)`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `WanVideoDecode`
+- `WanVideoVAELoader`
+- `WanVideoSampler` ★核心
+- `INTConstant`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSigmaToStep`
+- `Float`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `JWInteger`
+- `WanVideoLoraSelect`
+- `LoadWanVideoT5TextEncoder`
+- `CLIPLoader`
+- `Note`
+- `RunningHub Deepcleaner`
+- `WanVideoImageToVideoEncode`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `PrimitiveNode`
+- `AddLabel`
+- `GetImageSizeAndCount`
+- `AILab_QwenVL`
+- `RH_LLMAPI_NODE`
+- `easy showAnything`
+- `CR Prompt Text`
+- `easy showAnything`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `RH_LLMAPI_NODE`
+- `TextInput_`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `UnetLoaderGGUF` ★核心
+- `UnetLoaderGGUF` ★核心
+- `Note`
+- `Note`
+- `ImageScaleBy`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `StringConcatenate`
+- `Note`
+- `easy cleanGpuUsed`
+- `RIFE VFI`
+- `SaveImage`
+- `ColorMatch`
+- `ImageScaleBy`
+- `Pick From Batch (mtb)`
+- `CLIPVisionEncode`
+- `ModelSamplingSD3`
+- `Note`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `Note`
+- `CLIPTextEncode` ★核心
+- `Seed (rgthree)`
+- `Note`
+- `Note`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchTorchSettings`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `CLIPLoader`
+- `WanImageToVideo`
+- `ImageResizeKJv2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `mxSlider2D`
+- `PreviewImage`
+- `Note`
+- `RH_LLMAPI_NODE`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `easy showAnything`
+- `CR Prompt Text`
+- `ImageConcatMulti`
+- `AddLabel`
+- `AddLabel`
+- `VAEDecodeTiled` ★核心
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `KSamplerAdvanced` ★核心
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `RH_LLMAPI_NODE`
+- `PrimitiveStringMultiline`
+- `WanVideoTextEncode`
+- `easy showAnything`
+- `LoadImage`
+- `TextInput_`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `Note`
+- `Note`
+- `Note`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **78%**（115/147）
+
+**有卡**：`ImageScaleBy`、`ImageResizeKJv2`、`SaveImage`、`Pick From Batch (mtb)`、`easy cleanGpuUsed`、`CLIPVisionEncode`、`WanImageToVideo`、`ModelSamplingSD3`、`LayerUtility: PurgeVRAM`、`ColorMatch`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`KSamplerAdvanced`、`UNETLoader`、`VAELoader`、`CLIPVisionLoader`、`Seed (rgthree)`、`LoraLoaderModelOnly`、`WanVideoDecode`、`WanVideoVAELoader`、`WanVideoSampler`、`INTConstant`、`CreateCFGScheduleFloatList`、`WanVideoSigmaToStep`、`Float`、`WanVideoScheduler`、`WanVideoLoraSelect`、`JWInteger`、`LoadWanVideoT5TextEncoder`、`CLIPLoader`、`RunningHub Deepcleaner`、`WanVideoImageToVideoEncode`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`AddLabel`、`GetImageSizeAndCount`、`AILab_QwenVL`、`RH_LLMAPI_NODE`、`CR Prompt Text`、`LayerUtility: ImageScaleByAspectRatio V2`、`TextInput_`、`VHS_VideoCombine`、`UnetLoaderGGUF`、`StringConcatenate`、`RIFE VFI`、`ModelPatchTorchSettings`、`mxSlider2D`、`ImageConcatMulti`、`VAEDecodeTiled`、`VAEDecode`、`WanVideoTextEncode`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

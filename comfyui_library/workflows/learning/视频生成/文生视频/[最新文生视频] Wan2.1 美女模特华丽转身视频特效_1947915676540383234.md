@@ -1,0 +1,51 @@
+---
+key: 视频生成/文生视频/[最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json
+name: [最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1947915676540383234.json
+hash: bbf0d270acca9e33
+coverage: 0.947368
+learned_at: 2026-10-15 22:43:32
+nodes: [WanVideoSLG, LoadWanVideoT5TextEncoder, DownloadAndLoadGIMMVFIModel, WanVideoDecode, GIMMVFI_interpolate, WanVideoBlockSwap, ImageScaleToMegapixels, Fast Groups Bypasser (rgthree), VHS_VideoCombine, UpscaleModelLoader, WanVideoEnhanceAVideo, WanVideoTextEncodeSingle, WanVideoApplyNAG, WanVideoEmptyEmbeds, WanVideoSampler, WanVideoModelLoader, WanVideoVAELoader, WanVideoLoraSelect, WanVideoTextEncodeSingle]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/[最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1947915676540383234.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（19 个）：
+- `WanVideoSLG`
+- `LoadWanVideoT5TextEncoder`
+- `DownloadAndLoadGIMMVFIModel`
+- `WanVideoDecode`
+- `GIMMVFI_interpolate`
+- `WanVideoBlockSwap`
+- `ImageScaleToMegapixels`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `UpscaleModelLoader`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTextEncodeSingle`
+- `WanVideoApplyNAG`
+- `WanVideoEmptyEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `WanVideoTextEncodeSingle`
+
+## 知识
+
+覆盖率 **95%**（18/19）
+
+**有卡**：`WanVideoSLG`、`LoadWanVideoT5TextEncoder`、`DownloadAndLoadGIMMVFIModel`、`WanVideoDecode`、`GIMMVFI_interpolate`、`WanVideoBlockSwap`、`ImageScaleToMegapixels`、`VHS_VideoCombine`、`UpscaleModelLoader`、`WanVideoEnhanceAVideo`、`WanVideoTextEncodeSingle`、`WanVideoApplyNAG`、`WanVideoEmptyEmbeds`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoLoraSelect`
+
+**用到的条目**：WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、WanVideoLoraSelect、UpscaleModelLoader、UpscaleModelLoader

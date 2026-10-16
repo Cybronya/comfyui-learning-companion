@@ -1,0 +1,43 @@
+---
+key: 视频生成/图生视频/（已修复支持真人-首尾帧）SeeDance2.0平替R2V 新版全能G视频15S(贞贞API)_2033802990401888257.json
+name: （已修复支持真人-首尾帧）SeeDance2.0平替R2V 新版全能G视频15S(贞贞API)_2033802990401888257.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2033802990401888257.json
+hash: cea84a841d2dc9ce
+coverage: 0.636364
+learned_at: 2026-10-15 22:35:41
+nodes: [easy showAnything, easy showAnything, easy showAnything, SaveVideo, Note, easy cleanGpuUsed, LoadImage, ComflyGrok3VideoApi, LoadImage, Comfly_api_set, CR Prompt Text]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/（已修复支持真人-首尾帧）SeeDance2.0平替R2V 新版全能G视频15S(贞贞API)_2033802990401888257.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2033802990401888257.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（11 个）：
+- `easy showAnything`
+- `easy showAnything`
+- `easy showAnything`
+- `SaveVideo`
+- `Note`
+- `easy cleanGpuUsed`
+- `LoadImage`
+- `ComflyGrok3VideoApi`
+- `LoadImage`
+- `Comfly_api_set`
+- `CR Prompt Text`
+
+## 知识
+
+覆盖率 **64%**（7/11）
+
+**有卡**：`SaveVideo`、`easy cleanGpuUsed`、`LoadImage`、`ComflyGrok3VideoApi`、`Comfly_api_set`、`CR Prompt Text`
+
+**用到的条目**：LoadImage、CR Prompt Text、SaveVideo、Comfly_api_set、ComflyGrok3VideoApi、easy cleanGpuUsed、sd15-t2i-basic、sd15-t2i-lora

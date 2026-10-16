@@ -1,0 +1,202 @@
+---
+key: 视频生成/图生视频/宫格动画_LTX2.3_2070129501241167873.json
+name: 宫格动画_LTX2.3_2070129501241167873.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2070129501241167873.json
+hash: 817cdba407b83dbc
+coverage: 0.558282
+learned_at: 2026-10-15 22:40:36
+nodes: [LTXVPreprocess, GetNode, GetNode, GetNode, LTXVPreprocess, GetNode, ComfyMathExpression, LTXVAddGuide, LTXVPreprocess, ComfyMathExpression, GetNode, GetNode, GetNode, LTXVAddGuide, LTXVPreprocess, GetNode, GetNode, ComfyMathExpression, ComfyMathExpression, LTXVPreprocess, GetNode, GetNode, EmptyLTXVLatentVideo, GetNode, GetNode, GetNode, LTXVAddGuide, LTXVAddGuide, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, ImageFromBatch, GetNode, KSamplerSelect, RandomNoise, LTXVConditioning, GetNode, SetNode, SetNode, CFGGuider, LTX2_NAG, GetNode, SetNode, LTXVConcatAVLatent, LoadImage, LoadImage, SetNode, SetNode, PrimitiveInt, PrimitiveInt, SetNode, LTXVPreprocess, GetImageSize, GetNode, PrimitiveFloat, PrimitiveFloat, SetNode, GetNode, GetNode, ComfyMathExpression, LTXVPreprocess, GetNode, GetNode, GetNode, ResizeImageMaskNode, LoadImage, GetNode, ComfyMathExpression, LTXVPreprocess, GetNode, GetNode, GetNode, ResizeImageMaskNode, LoadImage, GetNode, ComfyMathExpression, LTXVPreprocess, GetNode, GetNode, ResizeImageMaskNode, LoadImage, GetNode, LTXVAddGuide, LTXVAddGuide, LTXVAddGuide, SetNode, DualCLIPLoader, LoraLoaderModelOnly_Any, GetNode, PrimitiveFloat, LTXVAddGuide, easy cleanGpuUsed, RH_RhartImageNG31FlashTextToImage, CLIPTextEncode, SaveImage, SaveImage, SaveImage, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, ImageFromBatch+, SaveImage, SaveImage, GuHaiAutoImageSplit, VAELoaderKJ, LTXVAudioVAEEncode, LoadAudio, TrimAudioDuration, ManualSigmas, SetNode, VAELoaderKJ, GetNode, SetLatentNoiseMask, SolidMask, GetNode, VHS_VideoCombine, ComfyMathExpression, LTXVAudioVAEDecode, easy ifElse, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, GetNode, LTXVEmptyLatentAudio, RB_Code, GetNode, ComfyMathExpression, PrimitiveBoolean, easy ifElse, Note, LTXVAddGuide, RH_LLMAPI_Pro_Node, PrimitiveFloat, Text, PrimitiveFloat, PrimitiveFloat, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Text, easy showAnything, CLIPTextEncode, Fast Groups Bypasser (rgthree), UNETLoader, GetNode, ResizeImageMaskNode, ResizeImageMaskNode, ResizeImageMaskNode, ResizeImageMaskNode, ResizeImageMaskNode, GetNode, ResizeImageMaskNode]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 97}
+---
+
+# 视频生成/图生视频/宫格动画_LTX2.3_2070129501241167873.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2070129501241167873.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（163 个）：
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVPreprocess`
+- `GetNode`
+- `ComfyMathExpression`
+- `LTXVAddGuide`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVAddGuide`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LTXVAddGuide`
+- `LTXVAddGuide`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `ImageFromBatch`
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `LTXVConditioning`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `CFGGuider`
+- `LTX2_NAG`
+- `GetNode`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `LoadImage`
+- `LoadImage`
+- `SetNode`
+- `SetNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `SetNode`
+- `LTXVPreprocess`
+- `GetImageSize`
+- `GetNode`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `ComfyMathExpression`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ResizeImageMaskNode`
+- `LoadImage`
+- `GetNode`
+- `ComfyMathExpression`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ResizeImageMaskNode`
+- `LoadImage`
+- `GetNode`
+- `ComfyMathExpression`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `ResizeImageMaskNode`
+- `LoadImage`
+- `GetNode`
+- `LTXVAddGuide`
+- `LTXVAddGuide`
+- `LTXVAddGuide`
+- `SetNode`
+- `DualCLIPLoader`
+- `LoraLoaderModelOnly_Any` ★核心
+- `GetNode`
+- `PrimitiveFloat`
+- `LTXVAddGuide`
+- `easy cleanGpuUsed`
+- `RH_RhartImageNG31FlashTextToImage`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `ImageFromBatch+`
+- `SaveImage`
+- `SaveImage`
+- `GuHaiAutoImageSplit`
+- `VAELoaderKJ`
+- `LTXVAudioVAEEncode` ★核心
+- `LoadAudio`
+- `TrimAudioDuration`
+- `ManualSigmas`
+- `SetNode`
+- `VAELoaderKJ`
+- `GetNode`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `GetNode`
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `LTXVAudioVAEDecode` ★核心
+- `easy ifElse`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `RB_Code`
+- `GetNode`
+- `ComfyMathExpression`
+- `PrimitiveBoolean`
+- `easy ifElse`
+- `Note`
+- `LTXVAddGuide`
+- `RH_LLMAPI_Pro_Node`
+- `PrimitiveFloat`
+- `Text`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `Text`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `UNETLoader` ★核心
+- `GetNode`
+- `ResizeImageMaskNode`
+- `ResizeImageMaskNode`
+- `ResizeImageMaskNode`
+- `ResizeImageMaskNode`
+- `ResizeImageMaskNode`
+- `GetNode`
+- `ResizeImageMaskNode`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **56%**（91/163）
+
+**有卡**：`LTXVPreprocess`、`ComfyMathExpression`、`LTXVAddGuide`、`EmptyLTXVLatentVideo`、`SamplerCustomAdvanced`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`ImageFromBatch`、`KSamplerSelect`、`RandomNoise`、`LTXVConditioning`、`CFGGuider`、`LTX2_NAG`、`LTXVConcatAVLatent`、`LoadImage`、`GetImageSize`、`ResizeImageMaskNode`、`DualCLIPLoader`、`LoraLoaderModelOnly_Any`、`easy cleanGpuUsed`、`RH_RhartImageNG31FlashTextToImage`、`CLIPTextEncode`、`SaveImage`、`ImageFromBatch+`、`GuHaiAutoImageSplit`、`VAELoaderKJ`、`LTXVAudioVAEEncode`、`LoadAudio`、`TrimAudioDuration`、`ManualSigmas`、`SetLatentNoiseMask`、`SolidMask`、`VHS_VideoCombine`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`RB_Code`、`PrimitiveBoolean`、`RH_LLMAPI_Pro_Node`、`Text`、`UNETLoader`
+
+**用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVConcatAVLatent、LTXVSeparateAVLatent

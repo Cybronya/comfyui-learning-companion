@@ -1,0 +1,102 @@
+---
+key: 视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json
+name: 🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1934976240954875906.json
+hash: b30ada66bc4c0871
+coverage: 0.585714
+learned_at: 2026-10-15 22:30:19
+nodes: [GetNode, SetNode, DownloadAndLoadGIMMVFIModel, SetNode, GIMMVFI_interpolate, ImageSmartSharpen+, Video_Upscale_With_Model, SetNode, easy cleanGpuUsed, GetNode, VHS_VideoCombine, WanVideoEnhanceAVideo, Int, CLIPVisionLoader, GetNode, GetImageSize, GetNode, GetNode, GetNode, Int, WanVideoTorchCompileSettings, SetNode, SetNode, GetNode, WanVideoSLG, WanVideoExperimentalArgs, WanVideoClipVisionEncode, SetNode, WanVideoTextEncodeSingle, GetNode, WanVideoVAELoader, SetNode, WanVideoApplyNAG, SetNode, GetNode, GetNode, GetNode, easy seed, PreviewImage, ImageSmartSharpen+, ImageResizeKJ, GetNode, WanVideoSampler, WanVideoFreeInitArgs, WanVideoTextEncodeSingle, WanVideoBlockSwap, LoadImage, Int, SetNode, SetNode, GetNode, PrimitiveNode, WanVideoDecode, SimpleCondition+, SeargePromptText, ShowText|pysssss, SeargePromptText, SetNode, LoadWanVideoT5TextEncoder, GetNode, WanVideoImageToVideoEncode, GetNode, VHS_VideoCombine, WanVideoTeaCache, WanVideoModelLoader, WanVideoModelLoader, Int, WanVideoLoraSelect, WanVideoLoraSelect, RH_LLMAPI_NODE]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1934976240954875906.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（70 个）：
+- `GetNode`
+- `SetNode`
+- `DownloadAndLoadGIMMVFIModel`
+- `SetNode`
+- `GIMMVFI_interpolate`
+- `ImageSmartSharpen+`
+- `Video_Upscale_With_Model`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanVideoEnhanceAVideo`
+- `Int`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetImageSize`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Int`
+- `WanVideoTorchCompileSettings`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `WanVideoTextEncodeSingle`
+- `GetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoApplyNAG`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy seed`
+- `PreviewImage`
+- `ImageSmartSharpen+`
+- `ImageResizeKJ`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoFreeInitArgs`
+- `WanVideoTextEncodeSingle`
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `Int`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `PrimitiveNode`
+- `WanVideoDecode`
+- `SimpleCondition+`
+- `SeargePromptText`
+- `ShowText|pysssss`
+- `SeargePromptText`
+- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanVideoTeaCache`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `Int`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `RH_LLMAPI_NODE`
+
+## 知识
+
+覆盖率 **59%**（41/70）
+
+**有卡**：`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`ImageSmartSharpen+`、`Video_Upscale_With_Model`、`easy cleanGpuUsed`、`VHS_VideoCombine`、`WanVideoEnhanceAVideo`、`Int`、`CLIPVisionLoader`、`GetImageSize`、`WanVideoTorchCompileSettings`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoClipVisionEncode`、`WanVideoTextEncodeSingle`、`WanVideoVAELoader`、`WanVideoApplyNAG`、`easy seed`、`ImageResizeKJ`、`WanVideoSampler`、`WanVideoFreeInitArgs`、`WanVideoBlockSwap`、`LoadImage`、`WanVideoDecode`、`SimpleCondition+`、`SeargePromptText`、`LoadWanVideoT5TextEncoder`、`WanVideoImageToVideoEncode`、`WanVideoTeaCache`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`RH_LLMAPI_NODE`
+
+**用到的条目**：LoadImage、WanVideoSampler、easy seed、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoImageToVideoEncode

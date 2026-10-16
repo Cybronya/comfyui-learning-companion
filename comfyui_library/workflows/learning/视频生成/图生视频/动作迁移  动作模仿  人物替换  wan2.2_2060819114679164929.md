@@ -1,0 +1,78 @@
+---
+key: 视频生成/图生视频/动作迁移  动作模仿  人物替换  wan2.2_2060819114679164929.json
+name: 动作迁移  动作模仿  人物替换  wan2.2_2060819114679164929.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2060819114679164929.json
+hash: 0e203e219ddccb11
+coverage: 0.913043
+learned_at: 2026-10-15 22:38:50
+nodes: [PrimitiveStringMultiline, easy int, WanVideoTextEncodeCached, ImageConcatMulti, WanVideoVAELoader, WanVideoSetBlockSwap, WanVideoDecode, GetImageSizeAndCount, ImageConcatMulti, VHS_VideoCombine, VHS_VideoCombine, WanVideoSampler, WanVideoSetLoRAs, WanVideoModelLoader, WanVideoBlockSwap, WanVideoLoraSelectMulti, WanVideoTorchCompileSettings, WanVideoAnimateEmbeds, WanVideoContextOptions, WanVideoClipVisionEncode, CLIPVisionLoader, ImageBlend, Evaluate Integers, PoseAndFaceDetection, DrawViTPose, VHS_VideoCombine, GrowMask, BlockifyMask, DrawMaskOnImage, VHS_LoadVideo, easy int, Evaluate Integers, easy int, VHS_VideoInfoLoaded, easy showAnything, PreviewImage, PreviewImage, easy int, SeCModelLoader, ImageFromBatch, ClothesSegment, OnnxDetectionModelLoader, SeCVideoSegmentation, LayerUtility: ImageMaskScaleAsV2, LayerUtility: ImageScaleByAspectRatio V2, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/动作迁移  动作模仿  人物替换  wan2.2_2060819114679164929.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2060819114679164929.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（46 个）：
+- `PrimitiveStringMultiline`
+- `easy int`
+- `WanVideoTextEncodeCached`
+- `ImageConcatMulti`
+- `WanVideoVAELoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `WanVideoSetLoRAs`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelectMulti`
+- `WanVideoTorchCompileSettings`
+- `WanVideoAnimateEmbeds`
+- `WanVideoContextOptions`
+- `WanVideoClipVisionEncode`
+- `CLIPVisionLoader`
+- `ImageBlend`
+- `Evaluate Integers`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `VHS_VideoCombine`
+- `GrowMask`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `VHS_LoadVideo`
+- `easy int`
+- `Evaluate Integers`
+- `easy int`
+- `VHS_VideoInfoLoaded`
+- `easy showAnything`
+- `PreviewImage`
+- `PreviewImage`
+- `easy int`
+- `SeCModelLoader`
+- `ImageFromBatch`
+- `ClothesSegment`
+- `OnnxDetectionModelLoader`
+- `SeCVideoSegmentation`
+- `LayerUtility: ImageMaskScaleAsV2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **91%**（42/46）
+
+**有卡**：`easy int`、`WanVideoTextEncodeCached`、`ImageConcatMulti`、`WanVideoVAELoader`、`WanVideoSetBlockSwap`、`WanVideoDecode`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoSetLoRAs`、`WanVideoModelLoader`、`WanVideoBlockSwap`、`WanVideoLoraSelectMulti`、`WanVideoTorchCompileSettings`、`WanVideoAnimateEmbeds`、`WanVideoContextOptions`、`WanVideoClipVisionEncode`、`CLIPVisionLoader`、`ImageBlend`、`Evaluate Integers`、`PoseAndFaceDetection`、`DrawViTPose`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`VHS_LoadVideo`、`VHS_VideoInfoLoaded`、`SeCModelLoader`、`ImageFromBatch`、`ClothesSegment`、`OnnxDetectionModelLoader`、`SeCVideoSegmentation`、`LayerUtility: ImageMaskScaleAsV2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

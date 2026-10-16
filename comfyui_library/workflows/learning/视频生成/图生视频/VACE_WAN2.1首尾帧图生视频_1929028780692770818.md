@@ -1,0 +1,64 @@
+---
+key: 视频生成/图生视频/VACE_WAN2.1首尾帧图生视频_1929028780692770818.json
+name: VACE_WAN2.1首尾帧图生视频_1929028780692770818.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1929028780692770818.json
+hash: 2fdf11a4730c5c16
+coverage: 0.71875
+learned_at: 2026-10-15 22:29:59
+nodes: [WanVideoVACEModelSelect, WanVideoModelLoader, WanVideoVAELoader, SetNode, LoadWanVideoT5TextEncoder, SetNode, SetNode, WanVideoTextEncode, GetNode, GetNode, WanVideoSLG, WanVideoExperimentalArgs, GetNode, GetNode, LoadImage, LoadImage, WanVideoBlockSwap, VHS_VideoCombine, Florence2ModelLoader, Florence2Run, easy showAnything, WanVideoVACEEncode, WanVideoTeaCache, GetNode, WanVideoDecode, WanVideoVACEStartToEndFrame, GetImageSizeAndCount, RHHiddenNodes, Int, Int, Int, WanVideoSampler]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/VACE_WAN2.1首尾帧图生视频_1929028780692770818.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1929028780692770818.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（32 个）：
+- `WanVideoVACEModelSelect`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `SetNode`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `SetNode`
+- `WanVideoTextEncode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoBlockSwap`
+- `VHS_VideoCombine`
+- `Florence2ModelLoader`
+- `Florence2Run`
+- `easy showAnything`
+- `WanVideoVACEEncode`
+- `WanVideoTeaCache`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoVACEStartToEndFrame`
+- `GetImageSizeAndCount`
+- `RHHiddenNodes`
+- `Int`
+- `Int`
+- `Int`
+- `WanVideoSampler` ★核心
+
+## 知识
+
+覆盖率 **72%**（23/32）
+
+**有卡**：`WanVideoVACEModelSelect`、`WanVideoModelLoader`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`LoadImage`、`WanVideoBlockSwap`、`VHS_VideoCombine`、`Florence2ModelLoader`、`Florence2Run`、`WanVideoVACEEncode`、`WanVideoTeaCache`、`WanVideoDecode`、`WanVideoVACEStartToEndFrame`、`GetImageSizeAndCount`、`RHHiddenNodes`、`Int`、`WanVideoSampler`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、GetImageSizeAndCount

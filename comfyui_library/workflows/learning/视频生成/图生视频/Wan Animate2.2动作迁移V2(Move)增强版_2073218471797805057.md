@@ -1,0 +1,105 @@
+---
+key: 视频生成/图生视频/Wan Animate2.2动作迁移V2(Move)增强版_2073218471797805057.json
+name: Wan Animate2.2动作迁移V2(Move)增强版_2073218471797805057.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2073218471797805057.json
+hash: f6f215cab596ccaf
+coverage: 0.493151
+learned_at: 2026-10-15 22:41:01
+nodes: [GetNode, GetNode, GetNode, GetNode, GetNode, ImageConcatMulti, GetNode, GetNode, WanVideoTextEncodeCached, Note, Note, Note, DownloadAndLoadSAM2Model, Sam2Segmentation, GrowMask, BlockifyMask, DrawMaskOnImage, VHS_VideoCombine, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, CLIPVisionLoader, GetNode, CR Prompt Text, SetNode, WanVideoVAELoader, SetNode, WanVideoSetLoRAs, WanVideoSetBlockSwap, SetNode, GetNode, Note, GetImageSizeAndCount, ImageConcatMulti, VHS_VideoCombine, WanVideoDecode, WanVideoSampler, WanVideoAnimateEmbeds, WanVideoBlockSwap, GetNode, MarkdownNote, LayerUtility: PurgeVRAM, GetNode, WanVideoClipVisionEncode, GetNode, SetNode, ImageResizeKJv2, VHS_VideoCombine, GetNode, SetNode, GetNode, GetNode, PointsEditor, SetNode, Reroute, SetNode, WanVideoModelLoader, WanVideoLoraSelectMulti, OnnxDetectionModelLoader, VHS_VideoCombine, LoadImage, ACE_ImageFaceCrop, VHS_LoadVideo, PoseAndFaceDetection, DrawViTPose, JWInteger, JWInteger]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan Animate2.2动作迁移V2(Move)增强版_2073218471797805057.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2073218471797805057.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（73 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `Note`
+- `Note`
+- `Note`
+- `DownloadAndLoadSAM2Model`
+- `Sam2Segmentation`
+- `GrowMask`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `CR Prompt Text`
+- `SetNode`
+- `WanVideoVAELoader`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `GetNode`
+- `Note`
+- `GetImageSizeAndCount`
+- `ImageConcatMulti`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoAnimateEmbeds`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `MarkdownNote`
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `PointsEditor`
+- `SetNode`
+- `Reroute`
+- `SetNode`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `OnnxDetectionModelLoader`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `ACE_ImageFaceCrop`
+- `VHS_LoadVideo`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `JWInteger`
+- `JWInteger`
+
+## 知识
+
+覆盖率 **49%**（36/73）
+
+**有卡**：`ImageConcatMulti`、`WanVideoTextEncodeCached`、`DownloadAndLoadSAM2Model`、`Sam2Segmentation`、`GrowMask`、`BlockifyMask`、`DrawMaskOnImage`、`VHS_VideoCombine`、`CLIPVisionLoader`、`CR Prompt Text`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`GetImageSizeAndCount`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoAnimateEmbeds`、`WanVideoBlockSwap`、`LayerUtility: PurgeVRAM`、`WanVideoClipVisionEncode`、`ImageResizeKJv2`、`PointsEditor`、`WanVideoModelLoader`、`WanVideoLoraSelectMulti`、`OnnxDetectionModelLoader`、`LoadImage`、`ACE_ImageFaceCrop`、`VHS_LoadVideo`、`PoseAndFaceDetection`、`DrawViTPose`、`JWInteger`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

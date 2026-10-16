@@ -1,0 +1,84 @@
+---
+key: 视频生成/图生视频/Wan2.2 官改图生视频（INP 模型 + GGUF Q8模型 + Lightx2V +KJ）_1958522667143950337.json
+name: Wan2.2 官改图生视频（INP 模型 + GGUF Q8模型 + Lightx2V +KJ）_1958522667143950337.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1958522667143950337.json
+hash: b5e3e4d3443ac77c
+coverage: 0.809524
+learned_at: 2026-10-15 22:31:22
+nodes: [VHS_VideoCombine, RIFE VFI, Int, LoraLoaderModelOnly, UnetLoaderGGUF, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, easy cleanGpuUsed, VAEDecode, LoraLoaderModelOnly, LoadImage, MarkdownNote, MarkdownNote, MarkdownNote, Note, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, JWInteger, JWInteger, JWInteger, PrimitiveInt, KSamplerAdvanced, JWFloat, CLIPTextEncode, CLIPTextEncode, JWFloat, UnetLoaderGGUF, CLIPLoader, Note, Note, VAELoader, KSamplerAdvanced, WanImageToVideo, JWInteger, UNETLoader, UNETLoader, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, MarkdownNote]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan2.2 官改图生视频（INP 模型 + GGUF Q8模型 + Lightx2V +KJ）_1958522667143950337.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1958522667143950337.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（42 个）：
+- `VHS_VideoCombine`
+- `RIFE VFI`
+- `Int`
+- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `JWInteger`
+- `JWInteger`
+- `JWInteger`
+- `PrimitiveInt`
+- `KSamplerAdvanced` ★核心
+- `JWFloat`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `JWFloat`
+- `UnetLoaderGGUF` ★核心
+- `CLIPLoader`
+- `Note`
+- `Note`
+- `VAELoader`
+- `KSamplerAdvanced` ★核心
+- `WanImageToVideo`
+- `JWInteger`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `MarkdownNote`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **81%**（34/42）
+
+**有卡**：`VHS_VideoCombine`、`RIFE VFI`、`Int`、`LoraLoaderModelOnly`、`UnetLoaderGGUF`、`ModelSamplingSD3`、`easy cleanGpuUsed`、`VAEDecode`、`LoadImage`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`KSamplerAdvanced`、`JWFloat`、`CLIPTextEncode`、`CLIPLoader`、`VAELoader`、`WanImageToVideo`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

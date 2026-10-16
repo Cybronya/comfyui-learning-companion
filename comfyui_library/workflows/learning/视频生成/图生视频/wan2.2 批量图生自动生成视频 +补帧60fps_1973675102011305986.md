@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.json
+name: wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1973675102011305986.json
+hash: 16a3b6c1d28096c7
+coverage: 0.865672
+learned_at: 2026-10-15 22:32:03
+nodes: [RH_Translator, Note, Note, JWInteger, DF_Integer, ShowText|pysssss, easy ifElse, WanVideoBlockSwap, WanVideoModelLoader, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoLoraSelect, WanVideoModelLoader, WanVideoTorchCompileSettings, CreateCFGScheduleFloatList, LoadWanVideoT5TextEncoder, WanVideoSetLoRAs, WanVideoSetBlockSwap, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, WanVideoVAELoader, WanVideoImageToVideoEncode, WanVideoLoraSelect, INTConstant, MathExpression|pysssss, PrimitiveNode, easy int, WanVideoSampler, WanVideoSampler, RH_Translator, string_util_StrReplace, RH_LLMAPI_NODE, easy ifElse, WanVideoTextEncode, ShowText|pysssss, ShowText|pysssss, PrimitiveBoolean, PrimitiveBoolean, Text Multiline, RH_Captioner, LoadImage, LoadImage, LoadImage, WanVideoDecode, GIMMVFI_interpolate, GetImageSizeAndCount, DownloadAndLoadGIMMVFIModel, Text Multiline, LoadImage, LoadImage, easy forLoopEnd, easy batchAnything, VHS_VideoCombine, Note, easy imageIndexSwitch, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy forLoopStart, Display Int (rgthree), GetImageSizeAndCount]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1973675102011305986.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（67 个）：
+- `RH_Translator`
+- `Note`
+- `Note`
+- `JWInteger`
+- `DF_Integer`
+- `ShowText|pysssss`
+- `easy ifElse`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `CreateCFGScheduleFloatList`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SimpleMath+`
+- `WanVideoVAELoader`
+- `WanVideoImageToVideoEncode`
+- `WanVideoLoraSelect`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `PrimitiveNode`
+- `easy int`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `RH_Translator`
+- `string_util_StrReplace`
+- `RH_LLMAPI_NODE`
+- `easy ifElse`
+- `WanVideoTextEncode`
+- `ShowText|pysssss`
+- `ShowText|pysssss`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `Text Multiline`
+- `RH_Captioner`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoDecode`
+- `GIMMVFI_interpolate`
+- `GetImageSizeAndCount`
+- `DownloadAndLoadGIMMVFIModel`
+- `Text Multiline`
+- `LoadImage`
+- `LoadImage`
+- `easy forLoopEnd`
+- `easy batchAnything`
+- `VHS_VideoCombine`
+- `Note`
+- `easy imageIndexSwitch`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `easy forLoopStart`
+- `Display Int (rgthree)`
+- `GetImageSizeAndCount`
+
+## 知识
+
+覆盖率 **87%**（58/67）
+
+**有卡**：`RH_Translator`、`JWInteger`、`DF_Integer`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoLoraSelect`、`WanVideoTorchCompileSettings`、`CreateCFGScheduleFloatList`、`LoadWanVideoT5TextEncoder`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`WanVideoVAELoader`、`WanVideoImageToVideoEncode`、`INTConstant`、`MathExpression|pysssss`、`easy int`、`WanVideoSampler`、`string_util_StrReplace`、`RH_LLMAPI_NODE`、`WanVideoTextEncode`、`PrimitiveBoolean`、`Text Multiline`、`RH_Captioner`、`LoadImage`、`WanVideoDecode`、`GIMMVFI_interpolate`、`GetImageSizeAndCount`、`DownloadAndLoadGIMMVFIModel`、`easy forLoopEnd`、`easy batchAnything`、`VHS_VideoCombine`、`easy imageIndexSwitch`、`easy forLoopStart`、`Display Int (rgthree)`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

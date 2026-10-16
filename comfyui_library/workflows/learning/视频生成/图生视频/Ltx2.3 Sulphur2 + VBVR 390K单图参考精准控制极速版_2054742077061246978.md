@@ -1,0 +1,83 @@
+---
+key: 视频生成/图生视频/Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json
+name: Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2054742077061246978.json
+hash: e2d62c7e4ce4264b
+coverage: 0.772727
+learned_at: 2026-10-15 22:37:50
+nodes: [SetNode, VisualizeSigmasKJ, LTX2SamplingPreviewOverride, PreviewImage, LTXVSeparateAVLatent, VAEDecode, VHS_VideoCombine, GetNode, LTXVConditioning, KSamplerSelect, ConditioningZeroOut, BasicScheduler, LTXVConcatAVLatent, GetNode, GetNode, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, LTXVImgToVideoInplaceKJ, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, LoadImage, LTXVPreprocess, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, Note, Note, Note, SetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, GetNode, LTXVAudioVAEDecode, CR Prompt Text, PromptRelaySmartEncode, PathchSageAttentionKJ, SamplerCustom, VHS_VideoCombine, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, CR Prompt Text, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 489}
+---
+
+# 视频生成/图生视频/Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2054742077061246978.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（44 个）：
+- `SetNode`
+- `VisualizeSigmasKJ`
+- `LTX2SamplingPreviewOverride`
+- `PreviewImage`
+- `LTXVSeparateAVLatent`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `GetNode`
+- `LTXVConditioning`
+- `KSamplerSelect` ★核心
+- `ConditioningZeroOut`
+- `BasicScheduler`
+- `LTXVConcatAVLatent`
+- `GetNode`
+- `GetNode`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `LoadImage`
+- `LTXVPreprocess`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `Note`
+- `Note`
+- `Note`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `CR Prompt Text`
+- `PromptRelaySmartEncode`
+- `PathchSageAttentionKJ`
+- `SamplerCustom` ★核心
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CR Prompt Text`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `width` = `489`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **77%**（34/44）
+
+**有卡**：`VisualizeSigmasKJ`、`LTX2SamplingPreviewOverride`、`LTXVSeparateAVLatent`、`VAEDecode`、`VHS_VideoCombine`、`LTXVConditioning`、`KSamplerSelect`、`ConditioningZeroOut`、`BasicScheduler`、`LTXVConcatAVLatent`、`VAELoaderKJ`、`DualCLIPLoader`、`LTXVImgToVideoInplaceKJ`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LoadImage`、`LTXVPreprocess`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`LoraLoaderModelOnly`、`LTXVAudioVAEDecode`、`CR Prompt Text`、`PromptRelaySmartEncode`、`PathchSageAttentionKJ`、`SamplerCustom`、`UNETLoader`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent

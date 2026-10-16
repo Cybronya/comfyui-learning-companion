@@ -1,0 +1,119 @@
+---
+key: 视频生成/图生视频/人物替换 · 动作迁移 · 表情优化 · Animate 1.0_1970408495990403073.json
+name: 人物替换 · 动作迁移 · 表情优化 · Animate 1.0_1970408495990403073.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1970408495990403073.json
+hash: 2ae289be99a56a74
+coverage: 0.609195
+learned_at: 2026-10-15 22:31:53
+nodes: [Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], Primitive integer [Crystools], ImpactSwitch, ImpactSwitch, SetNode, Primitive integer [Crystools], Primitive integer [Crystools], SetNode, SetNode, ImageResizeKJv2, WanVideoVAELoader, CLIPVisionLoader, GetNode, GetNode, FaceMaskFromPoseKeypoints, PixelPerfectResolution, GetNode, Florence2toCoordinates, Sam2Segmentation, VHS_VideoCombine, easy imageListToImageBatch, SetNode, GetNode, DrawMaskOnImage, BlockifyMask, SetNode, GetNode, WanVideoAnimateEmbeds, RH_Captioner, easy showAnything, CR Text Concatenate, easy showAnything, easy cleanGpuUsed, SetNode, VHS_VideoCombine, PreviewImage, SetNode, GetNode, WanVideoClipVisionEncode, Florence2Run, SetNode, WanVideoSampler, SetNode, WanVideoTextEncodeCached, easy cleanGpuUsed, DWPreprocessor, ImageCropByMaskAndResize, Primitive integer [Crystools], Primitive integer [Crystools], easy imageRemBg, GetNode, easy cleanGpuUsed, GetNode, GetNode, SetNode, GetNode, GetNode, easy cleanGpuUsed, WanVideoDecode, SetNode, SetNode, LoadImage, GetNode, GetNode, ImageConcatMulti, ImageConcatMulti, VHS_VideoCombine, VHS_LoadVideo, SimpleMath+, GetNode, VHS_VideoCombine, GrowMask, SimpleMath+, SimpleMath+, LoadImage, Note, Note, JjkText, RHHiddenNodes, WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoSetLoRAs, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/人物替换 · 动作迁移 · 表情优化 · Animate 1.0_1970408495990403073.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1970408495990403073.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（87 个）：
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `ImpactSwitch`
+- `ImpactSwitch`
+- `SetNode`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `WanVideoVAELoader`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `FaceMaskFromPoseKeypoints`
+- `PixelPerfectResolution`
+- `GetNode`
+- `Florence2toCoordinates`
+- `Sam2Segmentation`
+- `VHS_VideoCombine`
+- `easy imageListToImageBatch`
+- `SetNode`
+- `GetNode`
+- `DrawMaskOnImage`
+- `BlockifyMask`
+- `SetNode`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `RH_Captioner`
+- `easy showAnything`
+- `CR Text Concatenate`
+- `easy showAnything`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `VHS_VideoCombine`
+- `PreviewImage`
+- `SetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `Florence2Run`
+- `SetNode`
+- `WanVideoSampler` ★核心
+- `SetNode`
+- `WanVideoTextEncodeCached`
+- `easy cleanGpuUsed`
+- `DWPreprocessor`
+- `ImageCropByMaskAndResize`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `easy imageRemBg`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy cleanGpuUsed`
+- `WanVideoDecode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `SimpleMath+`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GrowMask`
+- `SimpleMath+`
+- `SimpleMath+`
+- `LoadImage`
+- `Note`
+- `Note`
+- `JjkText`
+- `RHHiddenNodes`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoSetLoRAs`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+
+## 知识
+
+覆盖率 **61%**（53/87）
+
+**有卡**：`Primitive integer [Crystools]`、`ImageResizeKJv2`、`WanVideoVAELoader`、`CLIPVisionLoader`、`FaceMaskFromPoseKeypoints`、`PixelPerfectResolution`、`Florence2toCoordinates`、`Sam2Segmentation`、`VHS_VideoCombine`、`easy imageListToImageBatch`、`DrawMaskOnImage`、`BlockifyMask`、`WanVideoAnimateEmbeds`、`RH_Captioner`、`CR Text Concatenate`、`easy cleanGpuUsed`、`WanVideoClipVisionEncode`、`Florence2Run`、`WanVideoSampler`、`WanVideoTextEncodeCached`、`DWPreprocessor`、`ImageCropByMaskAndResize`、`easy imageRemBg`、`WanVideoDecode`、`LoadImage`、`ImageConcatMulti`、`VHS_LoadVideo`、`SimpleMath+`、`GrowMask`、`RHHiddenNodes`、`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、CLIPVisionLoader

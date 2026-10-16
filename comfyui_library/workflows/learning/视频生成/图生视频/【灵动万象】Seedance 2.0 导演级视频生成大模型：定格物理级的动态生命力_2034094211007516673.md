@@ -1,0 +1,45 @@
+---
+key: 视频生成/图生视频/【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物理级的动态生命力_2034094211007516673.json
+name: 【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物理级的动态生命力_2034094211007516673.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2034094211007516673.json
+hash: d3013250b5548a64
+coverage: 0.769231
+learned_at: 2026-10-15 22:35:43
+nodes: [JjkText, LoadImage, LoadImage, LoadImage, LoadImage, SaveVideo, RH_RhartVideoSparkvideo20MultimodalVideo, LoadVideo, LoadVideo, JjkText, PreviewAny, RH_LLMAPI_NODE, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物理级的动态生命力_2034094211007516673.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2034094211007516673.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（13 个）：
+- `JjkText`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `SaveVideo`
+- `RH_RhartVideoSparkvideo20MultimodalVideo`
+- `LoadVideo`
+- `LoadVideo`
+- `JjkText`
+- `PreviewAny`
+- `RH_LLMAPI_NODE`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **77%**（10/13）
+
+**有卡**：`LoadImage`、`SaveVideo`、`RH_RhartVideoSparkvideo20MultimodalVideo`、`LoadVideo`、`RH_LLMAPI_NODE`
+
+**用到的条目**：LoadImage、SaveVideo、LoadVideo、RH_LLMAPI_NODE、RH_RhartVideoSparkvideo20MultimodalVideo、sd15-t2i-basic、sd15-t2i-lora、Image Save

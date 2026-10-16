@@ -1,0 +1,35 @@
+---
+key: 视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json
+name: SD2.0不排队工作流_2034160236482797570.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2034160236482797570.json
+hash: a5b9a4a06125319c
+coverage: 1
+learned_at: 2026-10-15 22:35:43
+nodes: [SaveVideo, LoadImage, RH_CinematicVideoGenerator]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2034160236482797570.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（3 个）：
+- `SaveVideo`
+- `LoadImage`
+- `RH_CinematicVideoGenerator`
+
+## 知识
+
+覆盖率 **100%**（3/3）
+
+**有卡**：`SaveVideo`、`LoadImage`、`RH_CinematicVideoGenerator`
+
+**用到的条目**：LoadImage、SaveVideo、RH_CinematicVideoGenerator、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

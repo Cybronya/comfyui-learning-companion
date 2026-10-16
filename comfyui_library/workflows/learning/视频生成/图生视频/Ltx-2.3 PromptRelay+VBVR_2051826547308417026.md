@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json
+name: Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2051826547308417026.json
+hash: 898c6c6e688e6663
+coverage: 0.965517
+learned_at: 2026-10-15 22:37:23
+nodes: [LTXVSeparateAVLatent, VAEDecode, UNETLoader, LoraLoaderModelOnly, LTXVConditioning, VAELoaderKJ, VAELoaderKJ, PathchSageAttentionKJ, DualCLIPLoader, LTX2SamplingPreviewOverride, BasicScheduler, LTXVPreprocess, VisualizeSigmasKJ, KSamplerSelect, LTXVEmptyLatentAudio, LTXVImgToVideoInplaceKJ, LTXVConcatAVLatent, SamplerCustom, PreviewImage, LTXVAudioVAEDecode, VHS_VideoCombine, ConditioningZeroOut, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, PromptRelayEncode, EmptyLTXVLatentVideo, LoadImage, CR Prompt Text, CR Prompt Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 489}
+---
+
+# 视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2051826547308417026.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（29 个）：
+- `LTXVSeparateAVLatent`
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVConditioning`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `PathchSageAttentionKJ`
+- `DualCLIPLoader`
+- `LTX2SamplingPreviewOverride`
+- `BasicScheduler`
+- `LTXVPreprocess`
+- `VisualizeSigmasKJ`
+- `KSamplerSelect` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVImgToVideoInplaceKJ`
+- `LTXVConcatAVLatent`
+- `SamplerCustom` ★核心
+- `PreviewImage`
+- `LTXVAudioVAEDecode` ★核心
+- `VHS_VideoCombine`
+- `ConditioningZeroOut`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `PromptRelayEncode`
+- `EmptyLTXVLatentVideo`
+- `LoadImage`
+- `CR Prompt Text`
+- `CR Prompt Text`
+
+## 关键参数
+
+- `width` = `489`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **97%**（28/29）
+
+**有卡**：`LTXVSeparateAVLatent`、`VAEDecode`、`UNETLoader`、`LoraLoaderModelOnly`、`LTXVConditioning`、`VAELoaderKJ`、`PathchSageAttentionKJ`、`DualCLIPLoader`、`LTX2SamplingPreviewOverride`、`BasicScheduler`、`LTXVPreprocess`、`VisualizeSigmasKJ`、`KSamplerSelect`、`LTXVEmptyLatentAudio`、`LTXVImgToVideoInplaceKJ`、`LTXVConcatAVLatent`、`SamplerCustom`、`LTXVAudioVAEDecode`、`VHS_VideoCombine`、`ConditioningZeroOut`、`LayerUtility: ImageScaleByAspectRatio V2`、`JWInteger`、`PromptRelayEncode`、`EmptyLTXVLatentVideo`、`LoadImage`、`CR Prompt Text`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent

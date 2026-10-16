@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/LTX2.3-单采样-4图慢剧视频_2053077492440809473.json
+name: LTX2.3-单采样-4图慢剧视频_2053077492440809473.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2053077492440809473.json
+hash: df8a76cde3fbc950
+coverage: 0.952381
+learned_at: 2026-10-15 22:37:36
+nodes: [DualCLIPLoaderGGUF, CLIPTextEncode, PathchSageAttentionKJ, LTXVChunkFeedForward, VAELoaderKJ, INTConstant, Note, SimpleMath+, SimpleMath+, KSamplerSelect, LTX2SamplingPreviewOverride, LTXVConditioning, LTX2_NAG, BasicScheduler, PreviewImage, LTXVSeparateAVLatent, CreateVideo, LTXVAudioVAEDecode, VAEDecodeTiled, VAELoaderKJ, VisualizeSigmasKJ, SamplerCustom, LTXVConcatAVLatent, LTXVEmptyLatentAudio, INTConstant, CLIPTextEncode, EmptyLTXVLatentVideo, LoadImage, ImageResizeKJv2, ImageResizeKJv2, LoadImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, CLIPTextEncode, LTXVImgToVideoInplaceKJ, ImageResizeKJv2, LTXVPreprocess, SaveVideo, UnetLoaderGGUF, LoraLoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 361}
+---
+
+# 视频生成/图生视频/LTX2.3-单采样-4图慢剧视频_2053077492440809473.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2053077492440809473.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（42 个）：
+- `DualCLIPLoaderGGUF`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `VAELoaderKJ`
+- `INTConstant`
+- `Note`
+- `SimpleMath+`
+- `SimpleMath+`
+- `KSamplerSelect` ★核心
+- `LTX2SamplingPreviewOverride`
+- `LTXVConditioning`
+- `LTX2_NAG`
+- `BasicScheduler`
+- `PreviewImage`
+- `LTXVSeparateAVLatent`
+- `CreateVideo`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `VAELoaderKJ`
+- `VisualizeSigmasKJ`
+- `SamplerCustom` ★核心
+- `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio` ★核心
+- `INTConstant`
+- `CLIPTextEncode` ★核心
+- `EmptyLTXVLatentVideo`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `LTXVImgToVideoInplaceKJ`
+- `ImageResizeKJv2`
+- `LTXVPreprocess`
+- `SaveVideo`
+- `UnetLoaderGGUF` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `361`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **95%**（40/42）
+
+**有卡**：`DualCLIPLoaderGGUF`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`VAELoaderKJ`、`INTConstant`、`SimpleMath+`、`KSamplerSelect`、`LTX2SamplingPreviewOverride`、`LTXVConditioning`、`LTX2_NAG`、`BasicScheduler`、`LTXVSeparateAVLatent`、`CreateVideo`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`VisualizeSigmasKJ`、`SamplerCustom`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LoadImage`、`ImageResizeKJv2`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVImgToVideoInplaceKJ`、`LTXVPreprocess`、`SaveVideo`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、KSamplerSelect、SamplerCustom、LTXVConcatAVLatent、LTXVSeparateAVLatent

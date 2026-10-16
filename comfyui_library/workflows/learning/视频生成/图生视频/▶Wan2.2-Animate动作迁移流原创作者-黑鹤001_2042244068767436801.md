@@ -1,0 +1,80 @@
+---
+key: 视频生成/图生视频/▶Wan2.2-Animate动作迁移流原创作者-黑鹤001_2042244068767436801.json
+name: ▶Wan2.2-Animate动作迁移流原创作者-黑鹤001_2042244068767436801.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2042244068767436801.json
+hash: b8b4b117f820ffcb
+coverage: 1
+learned_at: 2026-10-15 22:36:26
+nodes: [CLIPTextEncode, WanAnimateToVideo, CLIPVisionEncode, PixelPerfectResolution, DWPreprocessor, DWPreprocessor, ModelSamplingSD3, VAEDecode, CLIPVisionLoader, VAELoader, CLIPLoader, CLIPTextEncode, TrimVideoLatent, LoraLoaderModelOnly, INTConstant, INTConstant, UnetLoaderGGUF, LoraLoaderModelOnly, UNETLoader, LoadImage, KSampler, VHS_VideoCombine, VHS_LoadVideo, SimpleMath+, SimpleMath+, INTConstant, FloatConstant]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 888, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/▶Wan2.2-Animate动作迁移流原创作者-黑鹤001_2042244068767436801.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2042244068767436801.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（27 个）：
+- `CLIPTextEncode` ★核心
+- `WanAnimateToVideo`
+- `CLIPVisionEncode`
+- `PixelPerfectResolution`
+- `DWPreprocessor`
+- `DWPreprocessor`
+- `ModelSamplingSD3`
+- `VAEDecode` ★核心
+- `CLIPVisionLoader`
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `TrimVideoLatent`
+- `LoraLoaderModelOnly` ★核心
+- `INTConstant`
+- `INTConstant`
+- `UnetLoaderGGUF` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoadImage`
+- `KSampler` ★核心
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `SimpleMath+`
+- `SimpleMath+`
+- `INTConstant`
+- `FloatConstant`
+
+## 关键参数
+
+- `seed` = `888`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（27/27）
+
+**有卡**：`CLIPTextEncode`、`WanAnimateToVideo`、`CLIPVisionEncode`、`PixelPerfectResolution`、`DWPreprocessor`、`ModelSamplingSD3`、`VAEDecode`、`CLIPVisionLoader`、`VAELoader`、`CLIPLoader`、`TrimVideoLatent`、`LoraLoaderModelOnly`、`INTConstant`、`UnetLoaderGGUF`、`UNETLoader`、`LoadImage`、`KSampler`、`VHS_VideoCombine`、`VHS_LoadVideo`、`SimpleMath+`、`FloatConstant`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,78 @@
+---
+key: 视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json
+name: 🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1955559935833620481.json
+hash: 1ae28ee5196d3449
+coverage: 0.782609
+learned_at: 2026-10-15 22:31:09
+nodes: [ImageResizeKJv2, PrimitiveNode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoLoraSelectMulti, WanVideoModelLoader, WanVideoTorchCompileSettings, PrimitiveNode, PrimitiveNode, WanVideoBlockSwap, WanVideoEncode, WanVideoControlEmbeds, WanVideoSampler, Reroute, WanVideoSampler, ImageBlend, VHS_VideoCombine, WanVideoLoraSelectMulti, WanVideoModelLoader, ImageResizeKJv2, GetImageSizeAndCount, VHS_VideoCombine, LoadImage, WanVideoTextEncode, ImageConcatMulti, PrimitiveNode, VHS_VideoCombine, Reroute, RH_Translator, WanVideoDecode, LoadWanVideoT5TextEncoder, WanVideoVAELoader, Note, Note, DWPreprocessor, Zoe-DepthMapPreprocessor, VHS_LoadVideo, Reroute, WanVideoImageToVideoEncode, LoadImage, LayerUtility: JoyCaptionBeta1, LayerUtility: PurgeVRAM, LayerUtility: LoadJoyCaptionBeta1Model, ShowText|pysssss]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1955559935833620481.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（46 个）：
+- `ImageResizeKJv2`
+- `PrimitiveNode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `WanVideoTorchCompileSettings`
+- `PrimitiveNode`
+- `PrimitiveNode`
+- `WanVideoBlockSwap`
+- `WanVideoEncode`
+- `WanVideoControlEmbeds`
+- `WanVideoSampler` ★核心
+- `Reroute`
+- `WanVideoSampler` ★核心
+- `ImageBlend`
+- `VHS_VideoCombine`
+- `WanVideoLoraSelectMulti`
+- `WanVideoModelLoader`
+- `ImageResizeKJv2`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `WanVideoTextEncode`
+- `ImageConcatMulti`
+- `PrimitiveNode`
+- `VHS_VideoCombine`
+- `Reroute`
+- `RH_Translator`
+- `WanVideoDecode`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `Note`
+- `Note`
+- `DWPreprocessor`
+- `Zoe-DepthMapPreprocessor`
+- `VHS_LoadVideo`
+- `Reroute`
+- `WanVideoImageToVideoEncode`
+- `LoadImage`
+- `LayerUtility: JoyCaptionBeta1`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: LoadJoyCaptionBeta1Model`
+- `ShowText|pysssss`
+
+## 知识
+
+覆盖率 **78%**（36/46）
+
+**有卡**：`ImageResizeKJv2`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoLoraSelectMulti`、`WanVideoModelLoader`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoEncode`、`WanVideoControlEmbeds`、`WanVideoSampler`、`ImageBlend`、`VHS_VideoCombine`、`GetImageSizeAndCount`、`LoadImage`、`WanVideoTextEncode`、`ImageConcatMulti`、`RH_Translator`、`WanVideoDecode`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`DWPreprocessor`、`Zoe-DepthMapPreprocessor`、`VHS_LoadVideo`、`WanVideoImageToVideoEncode`、`LayerUtility: JoyCaptionBeta1`、`LayerUtility: PurgeVRAM`、`LayerUtility: LoadJoyCaptionBeta1Model`
+
+**用到的条目**：LoadImage、Zoe-DepthMapPreprocessor、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

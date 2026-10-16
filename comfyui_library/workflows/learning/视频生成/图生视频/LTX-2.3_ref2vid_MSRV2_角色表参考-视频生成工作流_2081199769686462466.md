@@ -1,0 +1,120 @@
+---
+key: 视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_2081199769686462466.json
+name: LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_2081199769686462466.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2081199769686462466.json
+hash: 6d6b17ffa7089f40
+coverage: 0.530864
+learned_at: 2026-10-15 22:42:20
+nodes: [LTXVCropGuides, GetNode, GetNode, SolidMask, GetNode, GetNode, LTXVEmptyLatentAudio, SetNode, SetNode, SetNode, LTXVConcatAVLatent, SetLatentNoiseMask, SetNode, Any Switch (rgthree), GetNode, GetNode, GetNode, ComfyNumberConvert, GetNode, GetImageSize, GetNode, PrimitiveInt, SetNode, CR Float To Integer, PrimitiveFloat, SetNode, EmptyLTXVLatentVideo, SetNode, KSamplerSelect, SamplerCustomAdvanced, ManualSigmas, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAEDecode, SetNode, SetNode, GetNode, GetNode, RandomNoise, CFGGuider, LTXAddVideoICLoRAGuide, LTX2_NAG, GetNode, GetNode, LTXVConditioning, GetNode, PathchSageAttentionKJ, ResizeImageMaskNode, PrimitiveInt, PromptRelayEncode, CLIPTextEncode, LoadImage, LoadImage, ResizeImageMaskNode, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, VAELoader, VAELoader, DualCLIPLoader, LTXVAudioVAEEncode, LoadAudio, GetNode, Fast Groups Bypasser (rgthree), LoadImage, PrimitiveStringMultiline, PrimitiveStringMultiline, VHS_VideoCombine, ResizeImageMaskNode, GetNode, GetNode, SetNode, MathExpression|pysssss, SetNode, SetNode, SetNode, LiconMSR, ResizeImageMaskNode, GetImageSize, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 505}
+---
+
+# 视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_2081199769686462466.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2081199769686462466.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（81 个）：
+- `LTXVCropGuides`
+- `GetNode`
+- `GetNode`
+- `SolidMask`
+- `GetNode`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ComfyNumberConvert`
+- `GetNode`
+- `GetImageSize`
+- `GetNode`
+- `PrimitiveInt`
+- `SetNode`
+- `CR Float To Integer`
+- `PrimitiveFloat`
+- `SetNode`
+- `EmptyLTXVLatentVideo`
+- `SetNode`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecode` ★核心
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `RandomNoise`
+- `CFGGuider`
+- `LTXAddVideoICLoRAGuide`
+- `LTX2_NAG`
+- `GetNode`
+- `GetNode`
+- `LTXVConditioning`
+- `GetNode`
+- `PathchSageAttentionKJ`
+- `ResizeImageMaskNode`
+- `PrimitiveInt`
+- `PromptRelayEncode`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `ResizeImageMaskNode`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `VAELoader`
+- `VAELoader`
+- `DualCLIPLoader`
+- `LTXVAudioVAEEncode` ★核心
+- `LoadAudio`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `VHS_VideoCombine`
+- `ResizeImageMaskNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `MathExpression|pysssss`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LiconMSR`
+- `ResizeImageMaskNode`
+- `GetImageSize`
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `505`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **53%**（43/81）
+
+**有卡**：`LTXVCropGuides`、`SolidMask`、`LTXVEmptyLatentAudio`、`LTXVConcatAVLatent`、`SetLatentNoiseMask`、`ComfyNumberConvert`、`GetImageSize`、`CR Float To Integer`、`EmptyLTXVLatentVideo`、`KSamplerSelect`、`SamplerCustomAdvanced`、`ManualSigmas`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecode`、`RandomNoise`、`CFGGuider`、`LTXAddVideoICLoRAGuide`、`LTX2_NAG`、`LTXVConditioning`、`PathchSageAttentionKJ`、`ResizeImageMaskNode`、`PromptRelayEncode`、`CLIPTextEncode`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`VAELoader`、`DualCLIPLoader`、`LTXVAudioVAEEncode`、`LoadAudio`、`VHS_VideoCombine`、`MathExpression|pysssss`、`LiconMSR`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect

@@ -1,0 +1,114 @@
+---
+key: 视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json
+name: 人物替换x凡人二创V2.0_2029486015072706561.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2029486015072706561.json
+hash: e4c9db6640b17903
+coverage: 0.390244
+learned_at: 2026-10-15 22:35:22
+nodes: [WanVideoSetBlockSwap, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, Note, SeedVR2LoadVAEModel, SetNode, GetNode, GetNode, SeedVR2VideoUpscaler, VHS_VideoCombine, SeedVR2LoadDiTModel, GetNode, SetNode, GetNode, GetNode, GrowMask, easy sam3ModelLoader, SetNode, MarkdownNote, MarkdownNote, SetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, CLIPVisionLoader, GetNode, SetNode, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, Fast Groups Bypasser (rgthree), WanVideoSetLoRAs, SetNode, easy sam3VideoSegmentation, SetNode, GetNode, GetNode, SetNode, BlockifyMask, DrawMaskOnImage, SetNode, WanVideoVAELoader, GetNode, GetNode, DWPreprocessor, GetNode, DWPreprocessor, GetNode, WanVideoDecode, WanVideoSampler, WanVideoTorchCompileSettings, WanVideoClipVisionEncode, WanVideoTextEncodeCached, WanVideoModelLoader, GetNode, RIFE VFI, SetNode, GetNode, FloatConstant, WanVideoBlockSwap, GetNode, WanVideoAnimateEmbeds, VHS_VideoCombine, WanVideoLoraSelectMulti, LoadImage, VHS_LoadVideo, INTConstant, INTConstant]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2029486015072706561.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（82 个）：
+- `WanVideoSetBlockSwap`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `SeedVR2LoadVAEModel`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SeedVR2VideoUpscaler`
+- `VHS_VideoCombine`
+- `SeedVR2LoadDiTModel`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GrowMask`
+- `easy sam3ModelLoader`
+- `SetNode`
+- `MarkdownNote`
+- `MarkdownNote`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `easy sam3VideoSegmentation`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `BlockifyMask`
+- `DrawMaskOnImage`
+- `SetNode`
+- `WanVideoVAELoader`
+- `GetNode`
+- `GetNode`
+- `DWPreprocessor`
+- `GetNode`
+- `DWPreprocessor`
+- `GetNode`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoTorchCompileSettings`
+- `WanVideoClipVisionEncode`
+- `WanVideoTextEncodeCached`
+- `WanVideoModelLoader`
+- `GetNode`
+- `RIFE VFI`
+- `SetNode`
+- `GetNode`
+- `FloatConstant`
+- `WanVideoBlockSwap`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `VHS_VideoCombine`
+- `WanVideoLoraSelectMulti`
+- `LoadImage`
+- `VHS_LoadVideo`
+- `INTConstant`
+- `INTConstant`
+
+## 知识
+
+覆盖率 **39%**（32/82）
+
+**有卡**：`WanVideoSetBlockSwap`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`VHS_VideoCombine`、`SeedVR2LoadDiTModel`、`GrowMask`、`easy sam3ModelLoader`、`CLIPVisionLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`WanVideoSetLoRAs`、`easy sam3VideoSegmentation`、`BlockifyMask`、`DrawMaskOnImage`、`WanVideoVAELoader`、`DWPreprocessor`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoTorchCompileSettings`、`WanVideoClipVisionEncode`、`WanVideoTextEncodeCached`、`WanVideoModelLoader`、`RIFE VFI`、`FloatConstant`、`WanVideoBlockSwap`、`WanVideoAnimateEmbeds`、`WanVideoLoraSelectMulti`、`LoadImage`、`VHS_LoadVideo`、`INTConstant`
+
+**用到的条目**：LoadImage、SeedVR2LoadDiTModel、SeedVR2LoadVAEModel、SeedVR2VideoUpscaler、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode

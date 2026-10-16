@@ -1,0 +1,38 @@
+---
+key: 视频生成/图生视频/Seedance2.0 超强全能参考参照模仿运镜图生视频_2068677517950676993.json
+name: Seedance2.0 超强全能参考参照模仿运镜图生视频_2068677517950676993.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2068677517950676993.json
+hash: 69154821eadc7910
+coverage: 1
+learned_at: 2026-10-15 22:40:21
+nodes: [LoadImage, LoadVideo, SaveVideo, TT_img_enc, SaveImage, RH_RhartVideoSparkvideo20FastMultimodalVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Seedance2.0 超强全能参考参照模仿运镜图生视频_2068677517950676993.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2068677517950676993.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（6 个）：
+- `LoadImage`
+- `LoadVideo`
+- `SaveVideo`
+- `TT_img_enc`
+- `SaveImage`
+- `RH_RhartVideoSparkvideo20FastMultimodalVideo`
+
+## 知识
+
+覆盖率 **100%**（6/6）
+
+**有卡**：`LoadImage`、`LoadVideo`、`SaveVideo`、`TT_img_enc`、`SaveImage`、`RH_RhartVideoSparkvideo20FastMultimodalVideo`
+
+**用到的条目**：LoadImage、SaveImage、SaveVideo、LoadVideo、TT_img_enc、RH_RhartVideoSparkvideo20FastMultimodalVideo、sd15-t2i-basic、sd15-t2i-lora

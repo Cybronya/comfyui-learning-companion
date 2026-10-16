@@ -1,0 +1,178 @@
+---
+key: 视频生成/图生视频/【ComfyUI分身术】一键批量复刻猫爷走秀！Flux.1 Krea让AI模特毫无塑料感✨_1952994072745152513.json
+name: 【ComfyUI分身术】一键批量复刻猫爷走秀！Flux.1 Krea让AI模特毫无塑料感✨_1952994072745152513.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952994072745152513.json
+hash: e194866c96b1c7c5
+coverage: 0.536765
+learned_at: 2026-10-15 22:31:03
+nodes: [GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, SetNode, SetNode, SetNode, Note, ModelSamplingSD3, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GroundingDinoModelLoader (segment anything), SetNode, VHS_VideoInfo, SAMModelLoader (segment anything), CLIPLoader, VAELoader, SetNode, Mix Color By Mask, GetNode, INTConstant, INTConstant, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, INTConstant, MaskToImage, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetImageRangeFromBatch, GetNode, GetNode, GetImageRangeFromBatch, CLIPTextEncode, GetNode, GetNode, VAEDecode, TrimVideoLatent, GetNode, WanVaceToVideo, SetNode, ImageResizeKJv2, Bjornulf_ShowInt, PathchSageAttentionKJ, Bookmark (rgthree), TorchCompileModelWanVideo, Power Lora Loader (rgthree), Bookmark (rgthree), Bookmark (rgthree), INTConstant, RepeatImageBatch, VHS_DuplicateMasks, VHS_DuplicateMasks, RepeatImageBatch, KSampler, UNETLoader, GetNode, GetNode, SetNode, INTConstant, GetNode, WanVideoVACEStartToEndFrame, DWPreprocessor, VAEDecode, SetNode, TrimVideoLatent, GetNode, GetNode, DownloadAndLoadDepthAnythingV2Model, GetImageRangeFromBatch, GetNode, GetNode, ImageResizeKJv2, DepthAnything_V2, KSampler, VHS_VideoCombine, VHS_VideoCombine, WanVaceToVideo, GetNode, GetNode, GetNode, GetNode, DWPreprocessor, PreviewImage, ImageResizeKJv2, RepeatImageBatch, WanVaceToVideo, WanVaceToVideo, GetImageRangeFromBatch, SetNode, Bookmark (rgthree), Bookmark (rgthree), Bookmark (rgthree), DualCLIPLoader, VAELoader, ConditioningZeroOut, EmptySD3LatentImage, UNETLoader, GetNode, GetNode, Fast Groups Bypasser (rgthree), KSampler, Bookmark (rgthree), INTConstant, RMBG, GetNode, PreviewImage, VHS_LoadVideo, GroundingDinoSAMSegment (segment anything), GrowMaskWithBlur, WanVaceToVideo, GetNode, VHS_VideoCombine, CLIPTextEncode, VAEDecode, PreviewImage, CLIPTextEncode, PreviewImage, PreviewImage, Label (rgthree), Label (rgthree)]
+patterns: []
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 666, "steps": 20}
+---
+
+# 视频生成/图生视频/【ComfyUI分身术】一键批量复刻猫爷走秀！Flux.1 Krea让AI模特毫无塑料感✨_1952994072745152513.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952994072745152513.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（136 个）：
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Note`
+- `ModelSamplingSD3`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GroundingDinoModelLoader (segment anything)`
+- `SetNode`
+- `VHS_VideoInfo`
+- `SAMModelLoader (segment anything)`
+- `CLIPLoader`
+- `VAELoader`
+- `SetNode`
+- `Mix Color By Mask`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `MaskToImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `TrimVideoLatent`
+- `GetNode`
+- `WanVaceToVideo`
+- `SetNode`
+- `ImageResizeKJv2`
+- `Bjornulf_ShowInt`
+- `PathchSageAttentionKJ`
+- `Bookmark (rgthree)`
+- `TorchCompileModelWanVideo`
+- `Power Lora Loader (rgthree)`
+- `Bookmark (rgthree)`
+- `Bookmark (rgthree)`
+- `INTConstant`
+- `RepeatImageBatch`
+- `VHS_DuplicateMasks`
+- `VHS_DuplicateMasks`
+- `RepeatImageBatch`
+- `KSampler` ★核心
+- `UNETLoader` ★核心
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `INTConstant`
+- `GetNode`
+- `WanVideoVACEStartToEndFrame`
+- `DWPreprocessor`
+- `VAEDecode` ★核心
+- `SetNode`
+- `TrimVideoLatent`
+- `GetNode`
+- `GetNode`
+- `DownloadAndLoadDepthAnythingV2Model`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `DepthAnything_V2`
+- `KSampler` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `WanVaceToVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `DWPreprocessor`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `RepeatImageBatch`
+- `WanVaceToVideo`
+- `WanVaceToVideo`
+- `GetImageRangeFromBatch`
+- `SetNode`
+- `Bookmark (rgthree)`
+- `Bookmark (rgthree)`
+- `Bookmark (rgthree)`
+- `DualCLIPLoader`
+- `VAELoader`
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `UNETLoader` ★核心
+- `GetNode`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `KSampler` ★核心
+- `Bookmark (rgthree)`
+- `INTConstant`
+- `RMBG`
+- `GetNode`
+- `PreviewImage`
+- `VHS_LoadVideo`
+- `GroundingDinoSAMSegment (segment anything)`
+- `GrowMaskWithBlur`
+- `WanVaceToVideo`
+- `GetNode`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+- `PreviewImage`
+- `PreviewImage`
+- `Label (rgthree)`
+- `Label (rgthree)`
+
+## 关键参数
+
+- `seed` = `666`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **54%**（73/136）
+
+**有卡**：`ModelSamplingSD3`、`GroundingDinoModelLoader (segment anything)`、`VHS_VideoInfo`、`SAMModelLoader (segment anything)`、`CLIPLoader`、`VAELoader`、`Mix Color By Mask`、`INTConstant`、`MaskToImage`、`GetImageRangeFromBatch`、`CLIPTextEncode`、`VAEDecode`、`TrimVideoLatent`、`WanVaceToVideo`、`ImageResizeKJv2`、`Bjornulf_ShowInt`、`PathchSageAttentionKJ`、`Bookmark (rgthree)`、`TorchCompileModelWanVideo`、`Power Lora Loader (rgthree)`、`RepeatImageBatch`、`VHS_DuplicateMasks`、`KSampler`、`UNETLoader`、`WanVideoVACEStartToEndFrame`、`DWPreprocessor`、`DownloadAndLoadDepthAnythingV2Model`、`DepthAnything_V2`、`VHS_VideoCombine`、`DualCLIPLoader`、`ConditioningZeroOut`、`EmptySD3LatentImage`、`RMBG`、`VHS_LoadVideo`、`GroundingDinoSAMSegment (segment anything)`、`GrowMaskWithBlur`、`Label (rgthree)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、UNETLoader、DepthAnything_V2

@@ -1,0 +1,94 @@
+---
+key: 视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json
+name: 短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2034612488255315970.json
+hash: 921441d607519c28
+coverage: 0.859649
+learned_at: 2026-10-15 22:35:45
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, KSamplerSelect, Reroute, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CLIPTextEncode, CFGGuider, LTXVImgToVideoInplace, PrimitiveInt, SolidMask, LTXVAudioVAELoader, PrimitiveBoolean, ResizeImagesByLongerEdge, LTXVPreprocess, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, CreateVideo, EmptyLTXVLatentVideo, PrimitiveInt, TrimAudioDuration, LTXVAudioVAEEncode, LTXVConcatAVLatent, SetLatentNoiseMask, LoraLoaderModelOnly, ResizeImageMaskNode, LatentUpscaleModelLoader, LTXAVTextEncoderLoader, PrimitiveInt, ComfyMathExpression, VAEDecodeTiled, LTXVAudioVAEDecode, SaveVideo, SaveAudio, LoadAudio, CheckpointLoaderSimple, CLIPTextEncode, PrimitiveFloat, LoadImage, PrimitiveStringMultiline, LoadAudio, LoadAudio, Fast Groups Bypasser (rgthree), FishS2MultiSpeakerTTS, PrimitiveStringMultiline]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltx-2.3-22b-dev-fp8.safetensors"}
+---
+
+# 视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2034612488255315970.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（57 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `CLIPTextEncode` ★核心
+- `CFGGuider`
+- `LTXVImgToVideoInplace`
+- `PrimitiveInt`
+- `SolidMask`
+- `LTXVAudioVAELoader`
+- `PrimitiveBoolean`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `CreateVideo`
+- `EmptyLTXVLatentVideo`
+- `PrimitiveInt`
+- `TrimAudioDuration`
+- `LTXVAudioVAEEncode` ★核心
+- `LTXVConcatAVLatent`
+- `SetLatentNoiseMask`
+- `LoraLoaderModelOnly` ★核心
+- `ResizeImageMaskNode`
+- `LatentUpscaleModelLoader`
+- `LTXAVTextEncoderLoader`
+- `PrimitiveInt`
+- `ComfyMathExpression`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `SaveVideo`
+- `SaveAudio`
+- `LoadAudio`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveFloat`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `LoadAudio`
+- `LoadAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `FishS2MultiSpeakerTTS`
+- `PrimitiveStringMultiline`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev-fp8.safetensors`
+
+## 知识
+
+覆盖率 **86%**（49/57）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`CLIPTextEncode`、`SolidMask`、`LTXVAudioVAELoader`、`PrimitiveBoolean`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`ComfyMathExpression`、`CreateVideo`、`EmptyLTXVLatentVideo`、`TrimAudioDuration`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`LoraLoaderModelOnly`、`ResizeImageMaskNode`、`LatentUpscaleModelLoader`、`LTXAVTextEncoderLoader`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`SaveVideo`、`SaveAudio`、`LoadAudio`、`CheckpointLoaderSimple`、`LoadImage`、`FishS2MultiSpeakerTTS`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

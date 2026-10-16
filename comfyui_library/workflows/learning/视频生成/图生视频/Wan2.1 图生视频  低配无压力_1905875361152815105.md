@@ -1,0 +1,46 @@
+---
+key: 视频生成/图生视频/Wan2.1 图生视频  低配无压力_1905875361152815105.json
+name: Wan2.1 图生视频  低配无压力_1905875361152815105.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1905875361152815105.json
+hash: 3d1f57d82e0fff23
+coverage: 1
+learned_at: 2026-10-15 22:29:26
+nodes: [WanVideoTeaCache, WanVideoImageClipEncode, WanVideoSampler, WanVideoDecode, WanVideoBlockSwap, WanVideoModelLoader, LoadWanVideoClipTextEncoder, WanVideoVAELoader, LoadImage, VHS_VideoCombine, ImageScaleToTotalPixels, LoadWanVideoT5TextEncoder, easy imageSize, WanVideoTextEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 图生视频  低配无压力_1905875361152815105.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1905875361152815105.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（14 个）：
+- `WanVideoTeaCache`
+- `WanVideoImageClipEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `ImageScaleToTotalPixels`
+- `LoadWanVideoT5TextEncoder`
+- `easy imageSize`
+- `WanVideoTextEncode`
+
+## 知识
+
+覆盖率 **100%**（14/14）
+
+**有卡**：`WanVideoTeaCache`、`WanVideoImageClipEncode`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoBlockSwap`、`WanVideoModelLoader`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`LoadImage`、`VHS_VideoCombine`、`ImageScaleToTotalPixels`、`LoadWanVideoT5TextEncoder`、`easy imageSize`、`WanVideoTextEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

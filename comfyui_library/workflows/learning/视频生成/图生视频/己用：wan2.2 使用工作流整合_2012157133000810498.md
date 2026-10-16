@@ -1,0 +1,338 @@
+---
+key: 视频生成/图生视频/己用：wan2.2 使用工作流整合_2012157133000810498.json
+name: 己用：wan2.2 使用工作流整合_2012157133000810498.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2012157133000810498.json
+hash: fd046343cb6c4498
+coverage: 0.760135
+learned_at: 2026-10-15 22:34:26
+nodes: [PathchSageAttentionKJ, UNETLoader, wanBlockSwap, ModelSamplingSD3, ModelPatchTorchSettings, UNETLoader, wanBlockSwap, VAELoader, INTConstant, INTConstant, KSamplerAdvanced, VAEDecode, ModelSamplingSD3, ModelPatchTorchSettings, PathchSageAttentionKJ, KSamplerAdvanced, LoraLoaderModelOnly, MultiplePathsInput, CLIPTextEncode, LoraLoaderModelOnly, CLIPLoader, easy showAnything, CLIPTextEncode, ImpactSwitch, LayerUtility: ImageScaleByAspectRatio V2, ImageLoader, VHS_VideoCombine, LoraLoaderModelOnly, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, CreateCFGScheduleFloatList, easy seed, ImpactFloat, MathExpression|pysssss, easy int, WanVideoBlockSwap, WanVideoSetBlockSwap, WanVideoSetLoRAs, LayerUtility: PurgeVRAM, WanVideoLoraSelect, WanVideoLoraSelect, easy int, WanVideoVAELoader, WanVideoModelLoader, easy int, LayerUtility: PurgeVRAM, WanVideoSampler, WanVideoSampler, Reroute, WanVideoDecode, WanVideoImageToVideoEncode, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoCombine, Qwen3_VQA, WanVideoBlockSwap, LoadImage, LoraLoaderModelOnly, JjkText, LoadImage, VAEDecode, CLIPTextEncode, CLIPVisionEncode, SimpleMath+, Note, Note, Note, ImageResizeKJv2, INTConstant, wanBlockSwap, wanBlockSwap, easy cleanGpuUsed, UNETLoader, UNETLoader, Int, Note, Int, VAELoader, CLIPVisionLoader, CLIPLoader, VHS_VideoCombine, RIFE VFI, LayerUtility: PurgeVRAM V2, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoBlockSwap, WanVideoVAELoader, Float, VHS_VideoCombine, WanVideoSetLoRAs, WanVideoDecode, WanVideoLoraSelect, ImageScale, FramePackFindNearestBucket, INTConstant, INTConstant, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoModelLoader, WanVideoLoraSelect, WanVideoSetBlockSwap, WanVideoLoraSelect, WanMoeKSampler, WanImageToVideo, CLIPTextEncode, ShowText|pysssss, Text Multiline, string_util_StrReplace, RH_Translator, RH_Captioner, easy ifElse, PrimitiveBoolean, WanVideoLoraSelect, ShowText|pysssss, WanVideoSampler, easy ifElse, RH_LLMAPI_NODE, WanVideoSampler, WanVideoTextEncode, LoadWanVideoT5TextEncoder, RH_Captioner, easy ifElse, ShowText|pysssss, easy ifElse, ShowText|pysssss, RH_Translator, PrimitiveBoolean, PrimitiveBoolean, Text Multiline, string_util_StrReplace, RH_LLMAPI_NODE, WanVideoModelLoader, WanVideoBlockSwap, WanVideoLoraSelect, easy float, easy int, MathExpression|pysssss, WanImageToVideo, MathExpression|pysssss, easy int, easy float, WanVideoImageToVideoEncode, Text Multiline, LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, WanVideoTextEncode, UNETLoader, CLIPVisionLoader, CLIPLoader, VAELoader, RIFE VFI, UNETLoader, RH_LLMAPI_NODE, easy int, easy showAnything, ImpactSwitch, ImageResizeKJv2, CLIPVisionEncode, CLIPVisionEncode, ImageResizeKJv2, WanMoeKSampler, WanFirstLastFrameToVideo, CLIPTextEncode, VAEDecode, easy cleanGpuUsed, VHS_VideoCombine, VHS_VideoCombine, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, Note, Note, Note, Note, wanBlockSwap, SimpleMath+, wanBlockSwap, Int, Int, INTConstant, LoadImage, CLIPTextEncode, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Note, Note, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Note, INTConstant, Reroute, Reroute, Reroute, Reroute, Reroute, Int, Note, ImageResizeKJv2, UNETLoader, CLIPLoader, VAELoader, UNETLoader, CLIPTextEncode, wanBlockSwap, wanBlockSwap, Reroute, Reroute, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, ModelSamplingSD3, Reroute, Reroute, ModelSamplingSD3, KSamplerAdvanced, Reroute, Reroute, KSamplerAdvanced, VHS_VideoCombine, VHS_VideoCombine, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, RIFE VFI, Reroute, easy cleanGpuUsed, VAEDecode, ModelPatchTorchSettings, PathchSageAttentionKJ, PathchSageAttentionKJ, ModelPatchTorchSettings, INTConstant, easy int, MathExpression|pysssss, easy float, MathExpression|pysssss, easy float, WanImageToVideo, easy int, DF_Integer, Text Multiline, JjkText, VHS_VideoCombine, LoadImage, PrimitiveBoolean, PreviewImage, PrimitiveBoolean, PrimitiveBoolean, Text Multiline, RH_Translator, easy ifElse, ShowText|pysssss, Text Multiline, string_util_StrReplace, RH_LLMAPI_NODE, ShowText|pysssss, RH_Translator, Text Multiline, easy ifElse, ShowText|pysssss, easy ifElse, ShowText|pysssss, string_util_StrReplace, RH_LLMAPI_NODE, CLIPTextEncode, easy ifElse, Text Multiline, PrimitiveBoolean, PrimitiveBoolean, DF_Integer, RH_Captioner, LoadImage, LoadImage, JoinImages, Note, Note, RH_Captioner, Fast Groups Muter (rgthree)]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "normal", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/己用：wan2.2 使用工作流整合_2012157133000810498.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2012157133000810498.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（296 个）：
+- `PathchSageAttentionKJ`
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `VAELoader`
+- `INTConstant`
+- `INTConstant`
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `MultiplePathsInput`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `easy showAnything`
+- `CLIPTextEncode` ★核心
+- `ImpactSwitch`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageLoader`
+- `VHS_VideoCombine`
+- `LoraLoaderModelOnly` ★核心
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `CreateCFGScheduleFloatList`
+- `easy seed`
+- `ImpactFloat`
+- `MathExpression|pysssss`
+- `easy int`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `easy int`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `easy int`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `Reroute`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoCombine`
+- `Qwen3_VQA`
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `JjkText`
+- `LoadImage`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPVisionEncode`
+- `SimpleMath+`
+- `Note`
+- `Note`
+- `Note`
+- `ImageResizeKJv2`
+- `INTConstant`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `easy cleanGpuUsed`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Int`
+- `Note`
+- `Int`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `VHS_VideoCombine`
+- `RIFE VFI`
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `Float`
+- `VHS_VideoCombine`
+- `WanVideoSetLoRAs`
+- `WanVideoDecode`
+- `WanVideoLoraSelect`
+- `ImageScale`
+- `FramePackFindNearestBucket`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoTorchCompileSettings`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoSetBlockSwap`
+- `WanVideoLoraSelect`
+- `WanMoeKSampler` ★核心
+- `WanImageToVideo`
+- `CLIPTextEncode` ★核心
+- `ShowText|pysssss`
+- `Text Multiline`
+- `string_util_StrReplace`
+- `RH_Translator`
+- `RH_Captioner`
+- `easy ifElse`
+- `PrimitiveBoolean`
+- `WanVideoLoraSelect`
+- `ShowText|pysssss`
+- `WanVideoSampler` ★核心
+- `easy ifElse`
+- `RH_LLMAPI_NODE`
+- `WanVideoSampler` ★核心
+- `WanVideoTextEncode`
+- `LoadWanVideoT5TextEncoder`
+- `RH_Captioner`
+- `easy ifElse`
+- `ShowText|pysssss`
+- `easy ifElse`
+- `ShowText|pysssss`
+- `RH_Translator`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `Text Multiline`
+- `string_util_StrReplace`
+- `RH_LLMAPI_NODE`
+- `WanVideoModelLoader`
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `easy float`
+- `easy int`
+- `MathExpression|pysssss`
+- `WanImageToVideo`
+- `MathExpression|pysssss`
+- `easy int`
+- `easy float`
+- `WanVideoImageToVideoEncode`
+- `Text Multiline`
+- `LayerUtility: PurgeVRAM`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `UNETLoader` ★核心
+- `CLIPVisionLoader`
+- `CLIPLoader`
+- `VAELoader`
+- `RIFE VFI`
+- `UNETLoader` ★核心
+- `RH_LLMAPI_NODE`
+- `easy int`
+- `easy showAnything`
+- `ImpactSwitch`
+- `ImageResizeKJv2`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `ImageResizeKJv2`
+- `WanMoeKSampler` ★核心
+- `WanFirstLastFrameToVideo`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `wanBlockSwap`
+- `SimpleMath+`
+- `wanBlockSwap`
+- `Int`
+- `Int`
+- `INTConstant`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Note`
+- `Note`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Note`
+- `INTConstant`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Int`
+- `Note`
+- `ImageResizeKJv2`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `Reroute`
+- `Reroute`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `ModelSamplingSD3`
+- `Reroute`
+- `Reroute`
+- `ModelSamplingSD3`
+- `KSamplerAdvanced` ★核心
+- `Reroute`
+- `Reroute`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `RIFE VFI`
+- `Reroute`
+- `easy cleanGpuUsed`
+- `VAEDecode` ★核心
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `INTConstant`
+- `easy int`
+- `MathExpression|pysssss`
+- `easy float`
+- `MathExpression|pysssss`
+- `easy float`
+- `WanImageToVideo`
+- `easy int`
+- `DF_Integer`
+- `Text Multiline`
+- `JjkText`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `PrimitiveBoolean`
+- `PreviewImage`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `Text Multiline`
+- `RH_Translator`
+- `easy ifElse`
+- `ShowText|pysssss`
+- `Text Multiline`
+- `string_util_StrReplace`
+- `RH_LLMAPI_NODE`
+- `ShowText|pysssss`
+- `RH_Translator`
+- `Text Multiline`
+- `easy ifElse`
+- `ShowText|pysssss`
+- `easy ifElse`
+- `ShowText|pysssss`
+- `string_util_StrReplace`
+- `RH_LLMAPI_NODE`
+- `CLIPTextEncode` ★核心
+- `easy ifElse`
+- `Text Multiline`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `DF_Integer`
+- `RH_Captioner`
+- `LoadImage`
+- `LoadImage`
+- `JoinImages`
+- `Note`
+- `Note`
+- `RH_Captioner`
+- `Fast Groups Muter (rgthree)`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `normal`
+
+## 知识
+
+覆盖率 **76%**（225/296）
+
+**有卡**：`PathchSageAttentionKJ`、`UNETLoader`、`wanBlockSwap`、`ModelSamplingSD3`、`ModelPatchTorchSettings`、`VAELoader`、`INTConstant`、`KSamplerAdvanced`、`VAEDecode`、`LoraLoaderModelOnly`、`MultiplePathsInput`、`CLIPTextEncode`、`CLIPLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageLoader`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`easy seed`、`ImpactFloat`、`MathExpression|pysssss`、`easy int`、`LayerUtility: PurgeVRAM`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoImageToVideoEncode`、`Qwen3_VQA`、`LoadImage`、`CLIPVisionEncode`、`SimpleMath+`、`ImageResizeKJv2`、`easy cleanGpuUsed`、`Int`、`CLIPVisionLoader`、`RIFE VFI`、`LayerUtility: PurgeVRAM V2`、`Float`、`ImageScale`、`FramePackFindNearestBucket`、`WanVideoTorchCompileSettings`、`WanMoeKSampler`、`WanImageToVideo`、`Text Multiline`、`string_util_StrReplace`、`RH_Translator`、`RH_Captioner`、`PrimitiveBoolean`、`RH_LLMAPI_NODE`、`WanVideoTextEncode`、`LoadWanVideoT5TextEncoder`、`easy float`、`WanFirstLastFrameToVideo`、`DF_Integer`、`JoinImages`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

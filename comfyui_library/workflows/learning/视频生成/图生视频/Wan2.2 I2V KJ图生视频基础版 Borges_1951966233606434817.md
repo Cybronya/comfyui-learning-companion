@@ -1,0 +1,63 @@
+---
+key: 视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json
+name: Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1951966233606434817.json
+hash: 93723f7e59d0ceca
+coverage: 1
+learned_at: 2026-10-15 22:30:59
+nodes: [WanVideoDecode, GetImageSizeAndCount, easy cleanGpuUsed, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, easy cleanGpuUsed, WanVideoSampler, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoSetLoRAs, WanVideoSetBlockSwap, WanVideoSetBlockSwap, WanVideoTextEncode, WanVideoSetLoRAs, WanVideoImageToVideoEncode, easy cleanGpuUsed, LoadImage, WanVideoModelLoader, WanVideoLoraSelect, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, WanVideoVAELoader, WanVideoTorchCompileSettings, easy cleanGpuUsed, WanVideoModelLoader, CR Text, ImageResizeKJv2, WanVideoBlockSwap, WanVideoSampler, Note Plus (mtb), VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1951966233606434817.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（31 个）：
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `easy cleanGpuUsed`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `easy cleanGpuUsed`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `WanVideoTextEncode`
+- `WanVideoSetLoRAs`
+- `WanVideoImageToVideoEncode`
+- `easy cleanGpuUsed`
+- `LoadImage`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoVAELoader`
+- `WanVideoTorchCompileSettings`
+- `easy cleanGpuUsed`
+- `WanVideoModelLoader`
+- `CR Text`
+- `ImageResizeKJv2`
+- `WanVideoBlockSwap`
+- `WanVideoSampler` ★核心
+- `Note Plus (mtb)`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **100%**（31/31）
+
+**有卡**：`WanVideoDecode`、`GetImageSizeAndCount`、`easy cleanGpuUsed`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`WanVideoSampler`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`WanVideoTextEncode`、`WanVideoImageToVideoEncode`、`LoadImage`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`WanVideoVAELoader`、`WanVideoTorchCompileSettings`、`CR Text`、`ImageResizeKJv2`、`WanVideoBlockSwap`、`Note Plus (mtb)`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoLoraSelect

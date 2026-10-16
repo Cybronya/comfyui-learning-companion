@@ -1,0 +1,78 @@
+---
+key: 视频生成/文生视频/Wan2.2-14B 文生视频-极速版_1957626244445696001.json
+name: Wan2.2-14B 文生视频-极速版_1957626244445696001.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1957626244445696001.json
+hash: a21e83301715b3a4
+coverage: 0.782609
+learned_at: 2026-10-15 22:43:41
+nodes: [TextCombinerTwo, JWInteger, JjkText, WanVideoVAELoader, WanVideoSetLoRAs, CreateCFGScheduleFloatList, WanVideoLoraSelect, WanVideoSetLoRAs, easy cleanGpuUsed, WanVideoSampler, easy cleanGpuUsed, RH_Prompter, TextCombinerTwo, WanVideoDecode, PrimitiveNode, easy showAnything, easy showAnything, RH_Prompter, JjkText, WanVideoTextEncode, LayerColor: Brightness & Contrast, ImpactSwitch, MathExpression|pysssss, WanVideoSampler, ImpactSwitch, WanVideoEmptyEmbeds, Int, Int, Int, Int, Int, Int, Int, Int, Int, Int, ImageFromBatch+, easy anythingIndexSwitch, Note, JjkText, JjkText, LoadWanVideoT5TextEncoder, WanVideoLoraSelect, VHS_VideoCombine, WanVideoModelLoader, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/Wan2.2-14B 文生视频-极速版_1957626244445696001.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1957626244445696001.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（46 个）：
+- `TextCombinerTwo`
+- `JWInteger`
+- `JjkText`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `CreateCFGScheduleFloatList`
+- `WanVideoLoraSelect`
+- `WanVideoSetLoRAs`
+- `easy cleanGpuUsed`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `RH_Prompter`
+- `TextCombinerTwo`
+- `WanVideoDecode`
+- `PrimitiveNode`
+- `easy showAnything`
+- `easy showAnything`
+- `RH_Prompter`
+- `JjkText`
+- `WanVideoTextEncode`
+- `LayerColor: Brightness & Contrast`
+- `ImpactSwitch`
+- `MathExpression|pysssss`
+- `WanVideoSampler` ★核心
+- `ImpactSwitch`
+- `WanVideoEmptyEmbeds`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `Int`
+- `ImageFromBatch+`
+- `easy anythingIndexSwitch`
+- `Note`
+- `JjkText`
+- `JjkText`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoLoraSelect`
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **78%**（36/46）
+
+**有卡**：`TextCombinerTwo`、`JWInteger`、`WanVideoVAELoader`、`WanVideoSetLoRAs`、`CreateCFGScheduleFloatList`、`WanVideoLoraSelect`、`easy cleanGpuUsed`、`WanVideoSampler`、`RH_Prompter`、`WanVideoDecode`、`WanVideoTextEncode`、`LayerColor: Brightness & Contrast`、`MathExpression|pysssss`、`WanVideoEmptyEmbeds`、`Int`、`ImageFromBatch+`、`easy anythingIndexSwitch`、`LoadWanVideoT5TextEncoder`、`VHS_VideoCombine`、`WanVideoModelLoader`
+
+**用到的条目**：WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect、WanVideoSetLoRAs

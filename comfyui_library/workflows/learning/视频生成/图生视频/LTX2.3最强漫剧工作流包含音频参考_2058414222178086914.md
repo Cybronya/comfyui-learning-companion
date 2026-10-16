@@ -1,0 +1,147 @@
+---
+key: 视频生成/图生视频/LTX2.3最强漫剧工作流包含音频参考_2058414222178086914.json
+name: LTX2.3最强漫剧工作流包含音频参考_2058414222178086914.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2058414222178086914.json
+hash: 0ea90d9c852f4b13
+coverage: 0.703704
+learned_at: 2026-10-15 22:38:22
+nodes: [EmptyLTXVLatentVideo, SimpleMath+, INTConstant, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SetNode, SetNode, SetNode, VAELoaderKJ, CLIPTextEncode, PathchSageAttentionKJ, LTXVChunkFeedForward, LTXVSeparateAVLatent, SamplerCustom, LTX2SamplingPreviewOverride, LTX2_NAG, VAEDecodeTiled, LTXVConditioning, KSamplerSelect, VisualizeSigmasKJ, BasicScheduler, LTXVConcatAVLatent, ComfyMathExpression, SetNode, GetNode, SetNode, GetNode, SetNode, GetNode, GetNode, GetNode, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, INTConstant, INTConstant, MathExpression|pysssss, INTConstant, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, INTConstant, MathExpression|pysssss, MelBandRoFormerSampler, ComfySwitchNode, LTXVAudioVAEEncode, PreviewAudio, SetLatentNoiseMask, SolidMask, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, MathExpression|pysssss, DualCLIPLoader, SetNode, LoraLoaderModelOnly, MelBandRoFormerModelLoader, INTConstant, INTConstant, INTConstant, LTXVEmptyLatentAudio, LTXVAudioVAEDecode, INTConstant, INTConstant, Note, INTConstant, MathExpression|pysssss, MathExpression|pysssss, MathExpression|pysssss, LTXSequencer, MultiImageLoader, INTConstant, INTConstant, UNETLoader, INTConstant, GetNode, GetNode, ImageFromBatch, VAELoaderKJ, GetNode, GetNode, SimpleMath+, easy showAnything, LoraLoaderModelOnly, LoadAudioUI, PromptRelayEncodeTimeline, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 361}
+---
+
+# 视频生成/图生视频/LTX2.3最强漫剧工作流包含音频参考_2058414222178086914.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2058414222178086914.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（108 个）：
+- `EmptyLTXVLatentVideo`
+- `SimpleMath+`
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VAELoaderKJ`
+- `CLIPTextEncode` ★核心
+- `PathchSageAttentionKJ`
+- `LTXVChunkFeedForward`
+- `LTXVSeparateAVLatent`
+- `SamplerCustom` ★核心
+- `LTX2SamplingPreviewOverride`
+- `LTX2_NAG`
+- `VAEDecodeTiled` ★核心
+- `LTXVConditioning`
+- `KSamplerSelect` ★核心
+- `VisualizeSigmasKJ`
+- `BasicScheduler`
+- `LTXVConcatAVLatent`
+- `ComfyMathExpression`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `MelBandRoFormerSampler` ★核心
+- `ComfySwitchNode`
+- `LTXVAudioVAEEncode` ★核心
+- `PreviewAudio`
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `MathExpression|pysssss`
+- `DualCLIPLoader`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `MelBandRoFormerModelLoader`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `INTConstant`
+- `INTConstant`
+- `Note`
+- `INTConstant`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `LTXSequencer`
+- `MultiImageLoader`
+- `INTConstant`
+- `INTConstant`
+- `UNETLoader` ★核心
+- `INTConstant`
+- `GetNode`
+- `GetNode`
+- `ImageFromBatch`
+- `VAELoaderKJ`
+- `GetNode`
+- `GetNode`
+- `SimpleMath+`
+- `easy showAnything`
+- `LoraLoaderModelOnly` ★核心
+- `LoadAudioUI`
+- `PromptRelayEncodeTimeline`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `width` = `361`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **70%**（76/108）
+
+**有卡**：`EmptyLTXVLatentVideo`、`SimpleMath+`、`INTConstant`、`VAELoaderKJ`、`CLIPTextEncode`、`PathchSageAttentionKJ`、`LTXVChunkFeedForward`、`LTXVSeparateAVLatent`、`SamplerCustom`、`LTX2SamplingPreviewOverride`、`LTX2_NAG`、`VAEDecodeTiled`、`LTXVConditioning`、`KSamplerSelect`、`VisualizeSigmasKJ`、`BasicScheduler`、`LTXVConcatAVLatent`、`ComfyMathExpression`、`MathExpression|pysssss`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`PreviewAudio`、`SetLatentNoiseMask`、`SolidMask`、`DualCLIPLoader`、`LoraLoaderModelOnly`、`MelBandRoFormerModelLoader`、`LTXVEmptyLatentAudio`、`LTXVAudioVAEDecode`、`LTXSequencer`、`MultiImageLoader`、`UNETLoader`、`ImageFromBatch`、`LoadAudioUI`、`PromptRelayEncodeTimeline`、`VHS_VideoCombine`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、UNETLoader、KSamplerSelect、SamplerCustom、MelBandRoFormerSampler、LTXVConcatAVLatent、LTXVSeparateAVLatent

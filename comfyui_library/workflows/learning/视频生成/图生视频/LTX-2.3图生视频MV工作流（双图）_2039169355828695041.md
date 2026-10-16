@@ -1,0 +1,183 @@
+---
+key: 视频生成/图生视频/LTX-2.3图生视频MV工作流（双图）_2039169355828695041.json
+name: LTX-2.3图生视频MV工作流（双图）_2039169355828695041.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2039169355828695041.json
+hash: ca3f44431a5a697b
+coverage: 0.541667
+learned_at: 2026-10-15 22:36:07
+nodes: [SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, SamplerCustomAdvanced, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, GetNode, SetLatentNoiseMask, GetNode, SetNode, LTXVAudioVAEEncode, SolidMask, GetNode, GetNode, ComfySwitchNode, GetNode, SimpleMath+, RandomNoise, LTXVSeparateAVLatent, LTXVLatentUpsampler, GetNode, GetNode, MelBandRoFormerSampler, GetNode, CreateVideo, GetNode, SetNode, SetNode, GetNode, Reroute, LTXVSeparateAVLatent, VAEDecodeTiled, LTXVAudioVAEDecode, VAELoaderKJ, VAELoader, SetNode, LTXVConcatAVLatent, KSamplerSelect, CFGGuider, LTXVChunkFeedForward, SetNode, DualCLIPLoaderGGUF, RandomNoise, GetNode, PathchSageAttentionKJ, GetNode, PrimitiveFloat, easy showAnything, SimpleCalculatorKJ, UNETLoader, INTConstant, PreviewAudio, LoraLoaderModelOnly, SamplerCustomAdvanced, KSamplerSelect, TrimAudioDuration, GetNode, GetNode, GetNode, SetNode, SetNode, SetNode, GetNode, GetNode, LoraLoaderModelOnly, LTXVConcatAVLatent, GetImageSize, GetNode, LTXVEmptyLatentAudio, SetNode, ImageScaleBy, ResizeImagesByLongerEdge, SetNode, GetNode, ImageResizeKJv2, SaveVideo, GetNode, GetNode, ImageResizeKJv2, ImageScaleBy, SetNode, CLIPTextEncode, Text Multiline, Text Multiline, Text Multiline, Text Multiline, Text Multiline, LTXVConditioning, GetNode, CLIPTextEncode, SetNode, Text Multiline, Text Multiline, Text Multiline, llama_cpp_parameters, llama_cpp_model_loader, easy imageConcat, llama_cpp_instruct_adv, easy showAnything, Text Multiline, Text Multiline, MarkdownNote, LTXVPreprocess, GetNode, GetNode, LTXVImgToVideoInplace, EmptyLTXVLatentVideo, INTConstant, SetNode, LTXVPreprocess, GetNode, GetNode, GetNode, ManualSigmas, ManualSigmas, ManualSigmas, LTXVScheduler, LTX2_NAG, ComfyMathExpression, SetNode, 1hew_AudioDuration, LatentUpscaleModelLoader, MelBandRoFormerModelLoader, LoadAudio, AudioCrop, Fast Groups Bypasser (rgthree), Text Multiline, LoadImage, LoadImage, LTXVImgToVideoInplaceKJ, CFGGuider]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 121}
+---
+
+# 视频生成/图生视频/LTX-2.3图生视频MV工作流（双图）_2039169355828695041.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2039169355828695041.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（144 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetLatentNoiseMask`
+- `GetNode`
+- `SetNode`
+- `LTXVAudioVAEEncode` ★核心
+- `SolidMask`
+- `GetNode`
+- `GetNode`
+- `ComfySwitchNode`
+- `GetNode`
+- `SimpleMath+`
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `LTXVLatentUpsampler` ★核心
+- `GetNode`
+- `GetNode`
+- `MelBandRoFormerSampler` ★核心
+- `GetNode`
+- `CreateVideo`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `Reroute`
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `VAELoaderKJ`
+- `VAELoader`
+- `SetNode`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `LTXVChunkFeedForward`
+- `SetNode`
+- `DualCLIPLoaderGGUF`
+- `RandomNoise`
+- `GetNode`
+- `PathchSageAttentionKJ`
+- `GetNode`
+- `PrimitiveFloat`
+- `easy showAnything`
+- `SimpleCalculatorKJ`
+- `UNETLoader` ★核心
+- `INTConstant`
+- `PreviewAudio`
+- `LoraLoaderModelOnly` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `KSamplerSelect` ★核心
+- `TrimAudioDuration`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LTXVConcatAVLatent`
+- `GetImageSize`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `SetNode`
+- `ImageScaleBy`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `SaveVideo`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `ImageScaleBy`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `Text Multiline`
+- `Text Multiline`
+- `Text Multiline`
+- `Text Multiline`
+- `Text Multiline`
+- `LTXVConditioning`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `Text Multiline`
+- `Text Multiline`
+- `Text Multiline`
+- `llama_cpp_parameters`
+- `llama_cpp_model_loader`
+- `easy imageConcat`
+- `llama_cpp_instruct_adv`
+- `easy showAnything`
+- `Text Multiline`
+- `Text Multiline`
+- `MarkdownNote`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `LTXVImgToVideoInplace`
+- `EmptyLTXVLatentVideo`
+- `INTConstant`
+- `SetNode`
+- `LTXVPreprocess`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ManualSigmas`
+- `ManualSigmas`
+- `ManualSigmas`
+- `LTXVScheduler`
+- `LTX2_NAG`
+- `ComfyMathExpression`
+- `SetNode`
+- `1hew_AudioDuration`
+- `LatentUpscaleModelLoader`
+- `MelBandRoFormerModelLoader`
+- `LoadAudio`
+- `AudioCrop`
+- `Fast Groups Bypasser (rgthree)`
+- `Text Multiline`
+- `LoadImage`
+- `LoadImage`
+- `LTXVImgToVideoInplaceKJ`
+- `CFGGuider`
+
+## 关键参数
+
+- `width` = `121`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **54%**（78/144）
+
+**有卡**：`SamplerCustomAdvanced`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`SolidMask`、`SimpleMath+`、`RandomNoise`、`LTXVSeparateAVLatent`、`LTXVLatentUpsampler`、`MelBandRoFormerSampler`、`CreateVideo`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`VAELoaderKJ`、`VAELoader`、`LTXVConcatAVLatent`、`KSamplerSelect`、`CFGGuider`、`LTXVChunkFeedForward`、`DualCLIPLoaderGGUF`、`PathchSageAttentionKJ`、`SimpleCalculatorKJ`、`UNETLoader`、`INTConstant`、`PreviewAudio`、`LoraLoaderModelOnly`、`TrimAudioDuration`、`GetImageSize`、`LTXVEmptyLatentAudio`、`ImageScaleBy`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`SaveVideo`、`CLIPTextEncode`、`Text Multiline`、`LTXVConditioning`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`easy imageConcat`、`llama_cpp_instruct_adv`、`LTXVPreprocess`、`LTXVImgToVideoInplace`、`EmptyLTXVLatentVideo`、`ManualSigmas`、`LTXVScheduler`、`LTX2_NAG`、`ComfyMathExpression`、`1hew_AudioDuration`、`LatentUpscaleModelLoader`、`MelBandRoFormerModelLoader`、`LoadAudio`、`AudioCrop`、`LoadImage`、`LTXVImgToVideoInplaceKJ`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

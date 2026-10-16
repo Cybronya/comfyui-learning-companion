@@ -1,0 +1,158 @@
+---
+key: 视频生成/图生视频/Wan2.2 Animate循环长视频（动作迁移稳定版）_1987919174796292097.json
+name: Wan2.2 Animate循环长视频（动作迁移稳定版）_1987919174796292097.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1987919174796292097.json
+hash: 3f1d850267d831f0
+coverage: 0.507937
+learned_at: 2026-10-15 22:33:00
+nodes: [CLIPVisionLoader, SetNode, WanVideoClipVisionEncode, GetNode, GetNode, GetNode, GetNode, WanVideoSetBlockSwap, SetNode, SetNode, WanVideoSetLoRAs, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, GetNode, easy showAnything, PreviewImage, SetNode, GetNode, easy mathInt, easy mathInt, easy compare, LazySwitch1way, easy mathInt, GetNode, GetNode, ImageResizeKJv2, GetNode, easy showAnything, easy showAnything, GetNode, PoseAndFaceDetection, DrawViTPose, easy mathInt, RepeatImageBatch, easy mathInt, SetNode, OnnxDetectionModelLoader, GetNode, ImageFromBatch, ImageBatch, easy mathInt, BatchCount+, SetNode, SetNode, easy mathInt, GetNode, SetNode, easy batchAnything, BatchCount+, easy mathInt, BatchCount+, ImageFromBatch, GetNode, GetNode, GetNode, GetNode, CM_FloatToInt, GetNode, SetNode, GetNode, GetNode, easy mathInt, SetNode, SetNode, GetNode, easy showAnything, GetNode, SetNode, SetNode, GetNode, easy showAnything, easy showAnything, VHS_VideoCombine, easy mathInt, GetNode, GetNode, WanVideoSampler, WanVideoVAELoader, VHS_VideoCombine, RHHiddenNodes, GetNode, ImageFromBatch, ImageFromBatch, RepeatImageBatch, RepeatImageBatch, ImageBatchMulti, ImageFromBatch, RHHiddenNodes, BatchCount+, easy mathInt, easy compare, RHHiddenNodes, LazySwitch1way, RHHiddenNodes, easy mathInt, RHHiddenNodes, WanVideoTextEncodeCached, SetNode, SetNode, SetNode, SetNode, SetNode, Note, Note, easy int, Note, CM_IntToFloat, easy int, easy cleanGpuUsed, WanVideoBlockSwap, WanVideoDecode, RHHiddenNodes, GetNode, easy forLoopStart, easy forLoopEnd, VHS_LoadVideo, LoadImage, WanVideoAnimateEmbeds, easy int, easy int]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2 Animate循环长视频（动作迁移稳定版）_1987919174796292097.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1987919174796292097.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（126 个）：
+- `CLIPVisionLoader`
+- `SetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSetBlockSwap`
+- `SetNode`
+- `SetNode`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy showAnything`
+- `PreviewImage`
+- `SetNode`
+- `GetNode`
+- `easy mathInt`
+- `easy mathInt`
+- `easy compare`
+- `LazySwitch1way`
+- `easy mathInt`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `easy showAnything`
+- `easy showAnything`
+- `GetNode`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `easy mathInt`
+- `RepeatImageBatch`
+- `easy mathInt`
+- `SetNode`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageBatch`
+- `easy mathInt`
+- `BatchCount+`
+- `SetNode`
+- `SetNode`
+- `easy mathInt`
+- `GetNode`
+- `SetNode`
+- `easy batchAnything`
+- `BatchCount+`
+- `easy mathInt`
+- `BatchCount+`
+- `ImageFromBatch`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CM_FloatToInt`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy mathInt`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy showAnything`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `easy showAnything`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `easy mathInt`
+- `GetNode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoVAELoader`
+- `VHS_VideoCombine`
+- `RHHiddenNodes`
+- `GetNode`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `RepeatImageBatch`
+- `RepeatImageBatch`
+- `ImageBatchMulti`
+- `ImageFromBatch`
+- `RHHiddenNodes`
+- `BatchCount+`
+- `easy mathInt`
+- `easy compare`
+- `RHHiddenNodes`
+- `LazySwitch1way`
+- `RHHiddenNodes`
+- `easy mathInt`
+- `RHHiddenNodes`
+- `WanVideoTextEncodeCached`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `Note`
+- `Note`
+- `easy int`
+- `Note`
+- `CM_IntToFloat`
+- `easy int`
+- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `RHHiddenNodes`
+- `GetNode`
+- `easy forLoopStart`
+- `easy forLoopEnd`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `WanVideoAnimateEmbeds`
+- `easy int`
+- `easy int`
+
+## 知识
+
+覆盖率 **51%**（64/126）
+
+**有卡**：`CLIPVisionLoader`、`WanVideoClipVisionEncode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`easy mathInt`、`easy compare`、`LazySwitch1way`、`ImageResizeKJv2`、`PoseAndFaceDetection`、`DrawViTPose`、`RepeatImageBatch`、`OnnxDetectionModelLoader`、`ImageFromBatch`、`ImageBatch`、`BatchCount+`、`easy batchAnything`、`CM_FloatToInt`、`VHS_VideoCombine`、`WanVideoSampler`、`WanVideoVAELoader`、`RHHiddenNodes`、`ImageBatchMulti`、`WanVideoTextEncodeCached`、`easy int`、`CM_IntToFloat`、`easy cleanGpuUsed`、`WanVideoBlockSwap`、`WanVideoDecode`、`easy forLoopStart`、`easy forLoopEnd`、`VHS_LoadVideo`、`LoadImage`、`WanVideoAnimateEmbeds`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、CLIPVisionLoader

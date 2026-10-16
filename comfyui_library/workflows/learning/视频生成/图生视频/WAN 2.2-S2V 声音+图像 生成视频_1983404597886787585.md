@@ -1,0 +1,87 @@
+---
+key: 视频生成/图生视频/WAN 2.2-S2V 声音+图像 生成视频_1983404597886787585.json
+name: WAN 2.2-S2V 声音+图像 生成视频_1983404597886787585.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1983404597886787585.json
+hash: 52f383b46674be5e
+coverage: 1
+learned_at: 2026-10-15 22:32:44
+nodes: [CLIPLoader, VAELoader, UNETLoader, LoraLoaderModelOnly, Display Int (rgthree), SoundFlow_GetLength, easy cleanGpuUsed, ModelSamplingSD3, AudioEncoderLoader, AudioEncoderEncode, CLIPTextEncode, CLIPTextEncode, ImageResizeKJv2, LoadImage, Text, LoadAudio, SaveAudio, WanSoundImageToVideo, CR SDXL Aspect Ratio, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, easy cleanGpuUsed, KSampler, VAEDecode, easy cleanGpuUsed, VHS_VideoCombine, Text, AudioCrop, easy int, SimpleMath+, ToInt, Display Int (rgthree), Text]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 1028298584763481, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/WAN 2.2-S2V 声音+图像 生成视频_1983404597886787585.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1983404597886787585.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（34 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Display Int (rgthree)`
+- `SoundFlow_GetLength`
+- `easy cleanGpuUsed`
+- `ModelSamplingSD3`
+- `AudioEncoderLoader`
+- `AudioEncoderEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `LoadImage`
+- `Text`
+- `LoadAudio`
+- `SaveAudio`
+- `WanSoundImageToVideo`
+- `CR SDXL Aspect Ratio`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `Text`
+- `AudioCrop`
+- `easy int`
+- `SimpleMath+`
+- `ToInt`
+- `Display Int (rgthree)`
+- `Text`
+
+## 关键参数
+
+- `seed` = `1028298584763481`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（34/34）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`LoraLoaderModelOnly`、`Display Int (rgthree)`、`SoundFlow_GetLength`、`easy cleanGpuUsed`、`ModelSamplingSD3`、`AudioEncoderLoader`、`AudioEncoderEncode`、`CLIPTextEncode`、`ImageResizeKJv2`、`LoadImage`、`Text`、`LoadAudio`、`SaveAudio`、`WanSoundImageToVideo`、`CR SDXL Aspect Ratio`、`KSampler`、`VAEDecode`、`VHS_VideoCombine`、`AudioCrop`、`easy int`、`SimpleMath+`、`ToInt`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

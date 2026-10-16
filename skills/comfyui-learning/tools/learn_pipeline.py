@@ -64,7 +64,13 @@ def snapshot_library():
 
 
 def missing_ids(tag_path, ids_txt, out_dir, limit):
-    """清单里还没有下载文件的 ID（manifest + 文件名后缀双口径）"""
+    """清单里还没有下载文件的 ID（manifest + 文件名后缀双口径）
+
+    文件名的 id 后缀有两种形态：`名字_id.json` 与**裸 id** `2106.json`
+    （下载目录里 16261 个文件中 15783 个是后者）。只匹配 `_id.json` 会把
+    裸 id 文件全当成没下过 → 每轮都挑已下载的 id，实际下载 0 个，
+    真正没下过的 id 永远排不上（2026-10-16 修）。
+    """
     have = set()
     manifest = out_dir / "manifest.csv"
     if manifest.exists():
@@ -73,7 +79,9 @@ def missing_ids(tag_path, ids_txt, out_dir, limit):
             for row in csv.DictReader(f):
                 have.add(row.get("id", "").strip())
     for f in out_dir.glob("*.json"):
-        m = re.search(r"_(\d+)\.json$", f.name)
+        # 兼容「名字_id.json」与裸「id.json」；位数卡 12 以上，避免误抓
+        # workflow2.json 这类名字里的数字
+        m = re.search(r"(\d{12,})\.json$", f.name)
         if m:
             have.add(m.group(1))
 

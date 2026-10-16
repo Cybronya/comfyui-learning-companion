@@ -1,0 +1,131 @@
+---
+key: 视频生成/图生视频/LH-DMT-LTX2.0-006.首尾帧生视频-音画同步_2012334757446684674.json
+name: LH-DMT-LTX2.0-006.首尾帧生视频-音画同步_2012334757446684674.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2012334757446684674.json
+hash: 93f0287c59da6792
+coverage: 0.56044
+learned_at: 2026-10-15 22:34:27
+nodes: [LTXAVTextEncoderLoader, PrimitiveNode, LTXVAudioVAELoader, CheckpointLoaderSimple, LoraLoaderModelOnly, LoraLoaderModelOnly, Int, MarkdownNote, MarkdownNote, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LTXVPreprocess, LTXVPreprocess, ImageConcatMulti, PreviewImage, Reroute, LTXVEmptyLatentAudio, PrimitiveInt, EmptyImage, ImageScaleBy, EmptyLTXVLatentVideo, LTXVFirstLastFrameControl_TTP, GetImageSize, Reroute, Reroute, Reroute, LTXVConcatAVLatent, Reroute, LoraLoaderModelOnly, LatentUpscaleModelLoader, Qwen3_VQA, TextInput_, Reroute, JoinStrings, easy cleanGpuUsed, easy showAnything, ShowText|pysssss, CLIPTextEncode, CLIPTextEncode, LTXVConditioning, CFGGuider, Fast Groups Bypasser (rgthree), RandomNoise, KSamplerSelect, LTXVScheduler, Reroute, Reroute, SamplerCustomAdvanced, Reroute, Reroute, Reroute, Reroute, Reroute, LTXVCropGuides, LTXVLatentUpsampler, LTXVFirstLastFrameControl_TTP, LTXVSeparateAVLatent, Reroute, RandomNoise, CFGGuider, ManualSigmas, LTXVConcatAVLatent, KSamplerSelect, LTXVAudioVAEDecode, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, easy cleanGpuUsed, VHS_VideoCombine, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Int, LoadImage, LoadImage, TextInput_]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2-19b-dev-fp8.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LH-DMT-LTX2.0-006.首尾帧生视频-音画同步_2012334757446684674.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2012334757446684674.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（91 个）：
+- `LTXAVTextEncoderLoader`
+- `PrimitiveNode`
+- `LTXVAudioVAELoader`
+- `CheckpointLoaderSimple` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Int`
+- `MarkdownNote`
+- `MarkdownNote`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LTXVPreprocess`
+- `LTXVPreprocess`
+- `ImageConcatMulti`
+- `PreviewImage`
+- `Reroute`
+- `LTXVEmptyLatentAudio` ★核心
+- `PrimitiveInt`
+- `EmptyImage`
+- `ImageScaleBy`
+- `EmptyLTXVLatentVideo`
+- `LTXVFirstLastFrameControl_TTP`
+- `GetImageSize`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `LTXVConcatAVLatent`
+- `Reroute`
+- `LoraLoaderModelOnly` ★核心
+- `LatentUpscaleModelLoader`
+- `Qwen3_VQA`
+- `TextInput_`
+- `Reroute`
+- `JoinStrings`
+- `easy cleanGpuUsed`
+- `easy showAnything`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `CFGGuider`
+- `Fast Groups Bypasser (rgthree)`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `LTXVScheduler`
+- `Reroute`
+- `Reroute`
+- `SamplerCustomAdvanced` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVFirstLastFrameControl_TTP`
+- `LTXVSeparateAVLatent`
+- `Reroute`
+- `RandomNoise`
+- `CFGGuider`
+- `ManualSigmas`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `easy cleanGpuUsed`
+- `VHS_VideoCombine`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Int`
+- `LoadImage`
+- `LoadImage`
+- `TextInput_`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2-19b-dev-fp8.safetensors`
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **56%**（51/91）
+
+**有卡**：`LTXAVTextEncoderLoader`、`LTXVAudioVAELoader`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`Int`、`LayerUtility: ImageScaleByAspectRatio V2`、`LTXVPreprocess`、`ImageConcatMulti`、`LTXVEmptyLatentAudio`、`EmptyImage`、`ImageScaleBy`、`EmptyLTXVLatentVideo`、`LTXVFirstLastFrameControl_TTP`、`GetImageSize`、`LTXVConcatAVLatent`、`LatentUpscaleModelLoader`、`Qwen3_VQA`、`TextInput_`、`JoinStrings`、`easy cleanGpuUsed`、`CLIPTextEncode`、`LTXVConditioning`、`CFGGuider`、`RandomNoise`、`KSamplerSelect`、`LTXVScheduler`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVSeparateAVLatent`、`ManualSigmas`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`VHS_VideoCombine`、`LoadImage`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

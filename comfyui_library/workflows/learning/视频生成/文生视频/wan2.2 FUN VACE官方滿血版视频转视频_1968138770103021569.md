@@ -1,0 +1,133 @@
+---
+key: 视频生成/文生视频/wan2.2 FUN VACE官方滿血版视频转视频_1968138770103021569.json
+name: wan2.2 FUN VACE官方滿血版视频转视频_1968138770103021569.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1968138770103021569.json
+hash: 045ad4f334db173d
+coverage: 0.483516
+learned_at: 2026-10-15 22:43:45
+nodes: [SetNode, SetNode, GetNode, GetNode, DiffusionModelSelector, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecode, easy cleanGpuUsed, GetImageSizeAndCount, DepthAnything_V2, TrimVideoLatent, SetNode, SetNode, SetNode, SetNode, SetNode, GetNode, GetNode, GetNode, SetNode, VHS_VideoCombine, ImageResizeKJv2, GetNode, VHS_VideoInfoLoaded, SetNode, CLIPLoader, VAELoader, easy cleanGpuUsed, SetNode, easy cleanGpuUsed, SetNode, SetNode, DiffusionModelLoaderKJ, DiffusionModelSelector, CLIPTextEncode, DownloadAndLoadDepthAnythingV2Model, LoraLoaderModelOnly, ImageResizeKJv2, SetNode, GetNode, GetNode, CLIPTextEncode, easy clearCacheAll, LoraLoaderModelOnly, GetNode, GetNode, ModelSamplingSD3, GetImageSizeAndCount, GetNode, DiffusionModelLoaderKJ, SetNode, SetNode, SetNode, SetNode, SetNode, ModelSamplingSD3, LoraLoaderModelOnly, SetNode, GetNode, GetNode, LoraLoaderModelOnly, Bjornulf_ShowInt, KSamplerAdvanced, KSamplerAdvanced, PrimitiveInt, GetNode, KSamplerAdvanced, VHS_VideoCombine, SetNode, VHS_VideoCombine, CR Seed, DWPreprocessor, LoadImage, WanVaceToVideo, INTConstant, INTConstant, Primitive string multiline [Crystools], WanVaceToVideo, VHS_LoadVideo, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "lcm", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/文生视频/wan2.2 FUN VACE官方滿血版视频转视频_1968138770103021569.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1968138770103021569.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（91 个）：
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `DiffusionModelSelector`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `GetImageSizeAndCount`
+- `DepthAnything_V2`
+- `TrimVideoLatent`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `ImageResizeKJv2`
+- `GetNode`
+- `VHS_VideoInfoLoaded`
+- `SetNode`
+- `CLIPLoader`
+- `VAELoader`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `SetNode`
+- `DiffusionModelLoaderKJ`
+- `DiffusionModelSelector`
+- `CLIPTextEncode` ★核心
+- `DownloadAndLoadDepthAnythingV2Model`
+- `LoraLoaderModelOnly` ★核心
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `easy clearCacheAll`
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `GetNode`
+- `ModelSamplingSD3`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `DiffusionModelLoaderKJ`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `Bjornulf_ShowInt`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `PrimitiveInt`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `VHS_VideoCombine`
+- `SetNode`
+- `VHS_VideoCombine`
+- `CR Seed`
+- `DWPreprocessor`
+- `LoadImage`
+- `WanVaceToVideo`
+- `INTConstant`
+- `INTConstant`
+- `Primitive string multiline [Crystools]`
+- `WanVaceToVideo`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `lcm`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **48%**（44/91）
+
+**有卡**：`DiffusionModelSelector`、`VAEDecode`、`easy cleanGpuUsed`、`GetImageSizeAndCount`、`DepthAnything_V2`、`TrimVideoLatent`、`VHS_VideoCombine`、`ImageResizeKJv2`、`VHS_VideoInfoLoaded`、`CLIPLoader`、`VAELoader`、`DiffusionModelLoaderKJ`、`CLIPTextEncode`、`DownloadAndLoadDepthAnythingV2Model`、`LoraLoaderModelOnly`、`easy clearCacheAll`、`ModelSamplingSD3`、`Bjornulf_ShowInt`、`KSamplerAdvanced`、`CR Seed`、`DWPreprocessor`、`LoadImage`、`WanVaceToVideo`、`INTConstant`、`Primitive string multiline [Crystools]`、`VHS_LoadVideo`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、DepthAnything_V2、DownloadAndLoadDepthAnythingV2Model

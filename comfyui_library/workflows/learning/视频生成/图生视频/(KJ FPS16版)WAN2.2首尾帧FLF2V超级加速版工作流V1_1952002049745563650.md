@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/(KJ FPS16版)WAN2.2首尾帧FLF2V超级加速版工作流V1_1952002049745563650.json
+name: (KJ FPS16版)WAN2.2首尾帧FLF2V超级加速版工作流V1_1952002049745563650.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1952002049745563650.json
+hash: b4d291a8281383dd
+coverage: 0.816327
+learned_at: 2026-10-15 22:30:59
+nodes: [LoadWanVideoT5TextEncoder, LoadImage, LoadImage, ImageResize+, EmptyImage, AddLabel, AddLabel, ImageConcatMulti, WanVideoDecode, WanVideoClipVisionEncode, SetNode, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoModelLoader, WanVideoSetBlockSwap, LayerUtility: PurgeVRAM, WanVideoBlockSwap, WanVideoBlockSwap, WanVideoModelLoader, WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, ImageConcatMulti, GetImageSizeAndCount, GetNode, GetNode, LoadWanVideoClipTextEncoder, WanVideoSampler, CreateCFGScheduleFloatList, PrimitiveNode, WanVideoSampler, LayerUtility: PurgeVRAM, ImageResize+, JWInteger, JWInteger, Note, Note, WanVideoTextEncode, Note, JWInteger, WanVideoVAELoader, INTConstant, SetNode, WanVideoImageToVideoEncode, JWInteger, Note, CR Prompt Text, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/(KJ FPS16版)WAN2.2首尾帧FLF2V超级加速版工作流V1_1952002049745563650.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1952002049745563650.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（49 个）：
+- `LoadWanVideoT5TextEncoder`
+- `LoadImage`
+- `LoadImage`
+- `ImageResize+`
+- `EmptyImage`
+- `AddLabel`
+- `AddLabel`
+- `ImageConcatMulti`
+- `WanVideoDecode`
+- `WanVideoClipVisionEncode`
+- `SetNode`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoSetBlockSwap`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoModelLoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `ImageConcatMulti`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetNode`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoSampler` ★核心
+- `CreateCFGScheduleFloatList`
+- `PrimitiveNode`
+- `WanVideoSampler` ★核心
+- `LayerUtility: PurgeVRAM`
+- `ImageResize+`
+- `JWInteger`
+- `JWInteger`
+- `Note`
+- `Note`
+- `WanVideoTextEncode`
+- `Note`
+- `JWInteger`
+- `WanVideoVAELoader`
+- `INTConstant`
+- `SetNode`
+- `WanVideoImageToVideoEncode`
+- `JWInteger`
+- `Note`
+- `CR Prompt Text`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **82%**（40/49）
+
+**有卡**：`LoadWanVideoT5TextEncoder`、`LoadImage`、`ImageResize+`、`EmptyImage`、`AddLabel`、`ImageConcatMulti`、`WanVideoDecode`、`WanVideoClipVisionEncode`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoSetBlockSwap`、`LayerUtility: PurgeVRAM`、`WanVideoBlockSwap`、`WanVideoSetLoRAs`、`GetImageSizeAndCount`、`LoadWanVideoClipTextEncoder`、`WanVideoSampler`、`CreateCFGScheduleFloatList`、`JWInteger`、`WanVideoTextEncode`、`WanVideoVAELoader`、`INTConstant`、`WanVideoImageToVideoEncode`、`CR Prompt Text`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader

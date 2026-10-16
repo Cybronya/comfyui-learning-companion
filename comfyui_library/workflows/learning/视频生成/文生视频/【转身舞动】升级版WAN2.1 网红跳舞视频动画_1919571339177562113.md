@@ -1,0 +1,53 @@
+---
+key: 视频生成/文生视频/【转身舞动】升级版WAN2.1 网红跳舞视频动画_1919571339177562113.json
+name: 【转身舞动】升级版WAN2.1 网红跳舞视频动画_1919571339177562113.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1919571339177562113.json
+hash: 2d30537cc8f11ed1
+coverage: 0.952381
+learned_at: 2026-10-15 22:43:23
+nodes: [WanVideoBlockSwap, TextInput_, WanVideoSampler, WanVideoDecode, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, WanVideoTextEncode, easy imageSize, LoadImage, LoadWanVideoT5TextEncoder, LoadWanVideoClipTextEncoder, WanVideoVAELoader, WanVideoModelLoader, RIFE VFI, WanVideoLoraSelect, TextInput_, Fast Groups Bypasser (rgthree), WanVideoImageClipEncode, ImageScaleToTotalPixels, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/文生视频/【转身舞动】升级版WAN2.1 网红跳舞视频动画_1919571339177562113.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1919571339177562113.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（21 个）：
+- `WanVideoBlockSwap`
+- `TextInput_`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoTextEncode`
+- `easy imageSize`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `RIFE VFI`
+- `WanVideoLoraSelect`
+- `TextInput_`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoImageClipEncode`
+- `ImageScaleToTotalPixels`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **95%**（20/21）
+
+**有卡**：`WanVideoBlockSwap`、`TextInput_`、`WanVideoSampler`、`WanVideoDecode`、`LayerUtility: PurgeVRAM`、`WanVideoTextEncode`、`easy imageSize`、`LoadImage`、`LoadWanVideoT5TextEncoder`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`WanVideoModelLoader`、`RIFE VFI`、`WanVideoLoraSelect`、`WanVideoImageClipEncode`、`ImageScaleToTotalPixels`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

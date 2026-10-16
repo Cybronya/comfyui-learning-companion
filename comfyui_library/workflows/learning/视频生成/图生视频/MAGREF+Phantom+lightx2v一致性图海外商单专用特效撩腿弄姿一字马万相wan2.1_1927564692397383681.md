@@ -1,0 +1,61 @@
+---
+key: 视频生成/图生视频/MAGREF+Phantom+lightx2v一致性图海外商单专用特效撩腿弄姿一字马万相wan2.1_1927564692397383681.json
+name: MAGREF+Phantom+lightx2v一致性图海外商单专用特效撩腿弄姿一字马万相wan2.1_1927564692397383681.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1927564692397383681.json
+hash: 939994a058049370
+coverage: 1
+learned_at: 2026-10-15 22:29:54
+nodes: [LayerUtility: PurgeVRAM V2, Int, DownloadAndLoadGIMMVFIModel, GIMMVFI_interpolate, VHS_VideoCombine, WanVideoTextEncodeSingle, WanVideoTextEncodeSingle, WanVideoApplyNAG, ImageResizeKJ, SimpleMath+, Int, Int, WanVideoEnhanceAVideo, LoadWanVideoClipTextEncoder, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoSLG, WanVideoDecode, WanVideoImageClipEncode, WanVideoExperimentalArgs, WanVideoLoraSelect, WanVideoModelLoader, WanVideoLoraSelect, WanVideoSampler, WanVideoBlockSwap, WanVideoLoraSelect, LoadImage, CR Text, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/MAGREF+Phantom+lightx2v一致性图海外商单专用特效撩腿弄姿一字马万相wan2.1_1927564692397383681.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1927564692397383681.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（29 个）：
+- `LayerUtility: PurgeVRAM V2`
+- `Int`
+- `DownloadAndLoadGIMMVFIModel`
+- `GIMMVFI_interpolate`
+- `VHS_VideoCombine`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncodeSingle`
+- `WanVideoApplyNAG`
+- `ImageResizeKJ`
+- `SimpleMath+`
+- `Int`
+- `Int`
+- `WanVideoEnhanceAVideo`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSLG`
+- `WanVideoDecode`
+- `WanVideoImageClipEncode`
+- `WanVideoExperimentalArgs`
+- `WanVideoLoraSelect`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoBlockSwap`
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `CR Text`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **100%**（29/29）
+
+**有卡**：`LayerUtility: PurgeVRAM V2`、`Int`、`DownloadAndLoadGIMMVFIModel`、`GIMMVFI_interpolate`、`VHS_VideoCombine`、`WanVideoTextEncodeSingle`、`WanVideoApplyNAG`、`ImageResizeKJ`、`SimpleMath+`、`WanVideoEnhanceAVideo`、`LoadWanVideoClipTextEncoder`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoSLG`、`WanVideoDecode`、`WanVideoImageClipEncode`、`WanVideoExperimentalArgs`、`WanVideoLoraSelect`、`WanVideoModelLoader`、`WanVideoSampler`、`WanVideoBlockSwap`、`LoadImage`、`CR Text`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoVAELoader、WanVideoTextEncodeSingle

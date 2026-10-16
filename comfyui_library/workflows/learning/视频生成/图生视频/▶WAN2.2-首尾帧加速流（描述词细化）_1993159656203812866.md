@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/▶WAN2.2-首尾帧加速流（描述词细化）_1993159656203812866.json
+name: ▶WAN2.2-首尾帧加速流（描述词细化）_1993159656203812866.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1993159656203812866.json
+hash: c8c811c7162d1ba0
+coverage: 0.948718
+learned_at: 2026-10-15 22:33:17
+nodes: [PreviewImage, CLIPVisionEncode, CLIPVisionEncode, wanBlockSwap, WanVideoNAG, PathchSageAttentionKJ, LayerUtility: PurgeVRAM, ImageResizeKJ, ModelSamplingSD3, ModelSamplingSD3, FILM VFI, VAEDecode, SimpleMath+, KSamplerAdvanced, PathchSageAttentionKJ, ModelPatchTorchSettings, LayerUtility: PurgeVRAM, WanFirstLastFrameToVideo, ImageResizeKJ, VAELoader, CLIPLoader, CLIPTextEncode, LoadImage, CLIPVisionLoader, VHS_VideoCombine, UnetLoaderGGUF, wanBlockSwap, ModelPatchTorchSettings, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, UnetLoaderGGUF, VHS_VideoCombine, SimpleMath+, PreviewImage, INTConstant, KSamplerAdvanced, DF_Integer, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/▶WAN2.2-首尾帧加速流（描述词细化）_1993159656203812866.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1993159656203812866.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（39 个）：
+- `PreviewImage`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `wanBlockSwap`
+- `WanVideoNAG`
+- `PathchSageAttentionKJ`
+- `LayerUtility: PurgeVRAM`
+- `ImageResizeKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `FILM VFI`
+- `VAEDecode` ★核心
+- `SimpleMath+`
+- `KSamplerAdvanced` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `LayerUtility: PurgeVRAM`
+- `WanFirstLastFrameToVideo`
+- `ImageResizeKJ`
+- `VAELoader`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `CLIPVisionLoader`
+- `VHS_VideoCombine`
+- `UnetLoaderGGUF` ★核心
+- `wanBlockSwap`
+- `ModelPatchTorchSettings`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UnetLoaderGGUF` ★核心
+- `VHS_VideoCombine`
+- `SimpleMath+`
+- `PreviewImage`
+- `INTConstant`
+- `KSamplerAdvanced` ★核心
+- `DF_Integer`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `4`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **95%**（37/39）
+
+**有卡**：`CLIPVisionEncode`、`wanBlockSwap`、`WanVideoNAG`、`PathchSageAttentionKJ`、`LayerUtility: PurgeVRAM`、`ImageResizeKJ`、`ModelSamplingSD3`、`FILM VFI`、`VAEDecode`、`SimpleMath+`、`KSamplerAdvanced`、`ModelPatchTorchSettings`、`WanFirstLastFrameToVideo`、`VAELoader`、`CLIPLoader`、`CLIPTextEncode`、`LoadImage`、`CLIPVisionLoader`、`VHS_VideoCombine`、`UnetLoaderGGUF`、`LoraLoaderModelOnly`、`INTConstant`、`DF_Integer`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、CLIPVisionEncode

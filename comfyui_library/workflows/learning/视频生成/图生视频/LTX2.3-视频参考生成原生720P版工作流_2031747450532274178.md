@@ -1,0 +1,119 @@
+---
+key: 视频生成/图生视频/LTX2.3-视频参考生成原生720P版工作流_2031747450532274178.json
+name: LTX2.3-视频参考生成原生720P版工作流_2031747450532274178.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2031747450532274178.json
+hash: 586c5a059673cae7
+coverage: 0.625
+learned_at: 2026-10-15 22:35:33
+nodes: [ResizeImageMaskNode, GetNode, GetNode, SetNode, LTXVPreprocess, PathchSageAttentionKJ, ResizeImagesByLongerEdge, CannyEdgePreprocessor, DepthAnythingV2Preprocessor, GetNode, SetNode, INTConstant, SetNode, SetNode, SetNode, INTConstant, SetNode, GetNode, CFGGuider, ManualSigmas, Reroute, SetNode, ComfyMathExpression, GetNode, GetNode, GetNode, GetNode, GetNode, SolidMask, LTXVAudioVAEEncode, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, SetLatentNoiseMask, Switch any [Crystools], KSamplerSelect, RandomNoise, LTXVConditioning, GetNode, CLIPTextEncode, CLIPTextEncode, Text Multiline, Fast Groups Bypasser (rgthree), GetNode, GetNode, VHS_VideoCombine, UNETLoader, LTXICLoRALoaderModelOnly, VAELoaderKJ, DualCLIPLoader, SetNode, ComfyMathExpression, PrimitiveFloat, ComfyMathExpression, ImageResizeKJv2, MathExpression|pysssss, ImageResizeAdvanced, GetNode, GetNode, GetImageSize, SetNode, SetNode, GetNode, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXAddVideoICLoRAGuide, LTXVConcatAVLatent, VHS_VideoCombine, GetNode, LTXVCropGuides, LTXVSeparateAVLatent, VAELoaderKJ, LTXVAudioVAEDecode, VAEDecodeTiled, LTXVImgToVideoConditionOnly, PrimitiveBoolean, DWPreprocessor, INTConstant, VHS_LoadVideo, LoadImage, MarkdownNote]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/LTX2.3-视频参考生成原生720P版工作流_2031747450532274178.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2031747450532274178.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（80 个）：
+- `ResizeImageMaskNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `LTXVPreprocess`
+- `PathchSageAttentionKJ`
+- `ResizeImagesByLongerEdge`
+- `CannyEdgePreprocessor`
+- `DepthAnythingV2Preprocessor`
+- `GetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `GetNode`
+- `CFGGuider`
+- `ManualSigmas`
+- `Reroute`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SolidMask`
+- `LTXVAudioVAEEncode` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `SetLatentNoiseMask`
+- `Switch any [Crystools]`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `LTXVConditioning`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `Text Multiline`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `SetNode`
+- `ComfyMathExpression`
+- `PrimitiveFloat`
+- `ComfyMathExpression`
+- `ImageResizeKJv2`
+- `MathExpression|pysssss`
+- `ImageResizeAdvanced`
+- `GetNode`
+- `GetNode`
+- `GetImageSize`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXAddVideoICLoRAGuide`
+- `LTXVConcatAVLatent`
+- `VHS_VideoCombine`
+- `GetNode`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `VAELoaderKJ`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+- `LTXVImgToVideoConditionOnly`
+- `PrimitiveBoolean`
+- `DWPreprocessor`
+- `INTConstant`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `MarkdownNote`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **62%**（50/80）
+
+**有卡**：`ResizeImageMaskNode`、`LTXVPreprocess`、`PathchSageAttentionKJ`、`ResizeImagesByLongerEdge`、`CannyEdgePreprocessor`、`DepthAnythingV2Preprocessor`、`INTConstant`、`CFGGuider`、`ManualSigmas`、`ComfyMathExpression`、`SolidMask`、`LTXVAudioVAEEncode`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`SetLatentNoiseMask`、`Switch any [Crystools]`、`KSamplerSelect`、`RandomNoise`、`LTXVConditioning`、`CLIPTextEncode`、`Text Multiline`、`VHS_VideoCombine`、`UNETLoader`、`LTXICLoRALoaderModelOnly`、`VAELoaderKJ`、`DualCLIPLoader`、`ImageResizeKJv2`、`MathExpression|pysssss`、`ImageResizeAdvanced`、`GetImageSize`、`LTXVConcatAVLatent`、`SamplerCustomAdvanced`、`LTXAddVideoICLoRAGuide`、`LTXVCropGuides`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`、`LTXVImgToVideoConditionOnly`、`PrimitiveBoolean`、`DWPreprocessor`、`VHS_LoadVideo`、`LoadImage`
+
+**用到的条目**：CLIPTextEncode、LoadImage、UNETLoader、DepthAnythingV2Preprocessor、CannyEdgePreprocessor、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

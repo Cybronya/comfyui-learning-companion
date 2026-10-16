@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/目前最强InfiniteTalk 官版自循环版  林耀2.6_2019714364567199745.json
+name: 目前最强InfiniteTalk 官版自循环版  林耀2.6_2019714364567199745.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2019714364567199745.json
+hash: 304b24ed860f1272
+coverage: 0.906977
+learned_at: 2026-10-15 22:35:04
+nodes: [PathchSageAttentionKJ, ModelPatchTorchSettings, Fast Bypasser (rgthree), LayerUtility: ImageScaleByAspectRatio V2, UNETLoader, Mute / Bypass Repeater (rgthree), WanInfiniteTalkToVideo, easy showAnything, VAEDecode, WanInfiniteTalkToVideo, AudioEncoderEncode, VAEDecode, easy showAnything, ImageFromBatch, ImageBatch, Evaluate Integers, LoraLoaderModelOnly, ModelPatchLoader, AudioEncoderLoader, MelBandRoFormerSampler, MelBandRoFormerModelLoader, easy showAnything, easy mathInt, CLIPLoader, VAELoader, CLIPTextEncode, ConditioningZeroOut, easy forLoopStart, KSampler, KSampler, easy forLoopEnd, VHS_VideoCombine, AudioInfo, ImageFromBatch, easy showAnything, Evaluate Integers, PreviewAudio, easy int, LoadImage, AudioTrim, LoadAudio, Text Multiline, VHS_VideoCombine]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "normal", "seed": 311359946389478, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/目前最强InfiniteTalk 官版自循环版  林耀2.6_2019714364567199745.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2019714364567199745.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（43 个）：
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `Fast Bypasser (rgthree)`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UNETLoader` ★核心
+- `Mute / Bypass Repeater (rgthree)`
+- `WanInfiniteTalkToVideo`
+- `easy showAnything`
+- `VAEDecode` ★核心
+- `WanInfiniteTalkToVideo`
+- `AudioEncoderEncode`
+- `VAEDecode` ★核心
+- `easy showAnything`
+- `ImageFromBatch`
+- `ImageBatch`
+- `Evaluate Integers`
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchLoader`
+- `AudioEncoderLoader`
+- `MelBandRoFormerSampler` ★核心
+- `MelBandRoFormerModelLoader`
+- `easy showAnything`
+- `easy mathInt`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `easy forLoopStart`
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `easy forLoopEnd`
+- `VHS_VideoCombine`
+- `AudioInfo`
+- `ImageFromBatch`
+- `easy showAnything`
+- `Evaluate Integers`
+- `PreviewAudio`
+- `easy int`
+- `LoadImage`
+- `AudioTrim`
+- `LoadAudio`
+- `Text Multiline`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `311359946389478`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `normal`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **91%**（39/43）
+
+**有卡**：`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`Fast Bypasser (rgthree)`、`LayerUtility: ImageScaleByAspectRatio V2`、`UNETLoader`、`Mute / Bypass Repeater (rgthree)`、`WanInfiniteTalkToVideo`、`VAEDecode`、`AudioEncoderEncode`、`ImageFromBatch`、`ImageBatch`、`Evaluate Integers`、`LoraLoaderModelOnly`、`ModelPatchLoader`、`AudioEncoderLoader`、`MelBandRoFormerSampler`、`MelBandRoFormerModelLoader`、`easy mathInt`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`easy forLoopStart`、`KSampler`、`easy forLoopEnd`、`VHS_VideoCombine`、`AudioInfo`、`PreviewAudio`、`easy int`、`LoadImage`、`AudioTrim`、`LoadAudio`、`Text Multiline`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

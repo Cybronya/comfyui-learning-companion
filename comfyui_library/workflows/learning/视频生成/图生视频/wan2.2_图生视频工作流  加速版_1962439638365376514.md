@@ -1,0 +1,64 @@
+---
+key: 视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json
+name: wan2.2_图生视频工作流  加速版_1962439638365376514.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1962439638365376514.json
+hash: f9e49bf9ce2f6c54
+coverage: 1
+learned_at: 2026-10-15 22:31:31
+nodes: [WanVideoLoraSelect, LoadImage, ImageResizeKJv2, WanVideoTorchCompileSettings, WanVideoBlockSwap, WanVideoDecode, WanVideoSampler, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoSetLoRAs, WanVideoSetBlockSwap, VHS_VideoCombine, easy cleanGpuUsed, WanVideoImageToVideoEncode, WanVideoSampler, CLIPTextEncode, easy cleanGpuUsed, easy cleanGpuUsed, WanVideoTextEmbedBridge, CLIPTextEncode, CreateCFGScheduleFloatList, easy int, easy int, easy int, easy int, SimpleMath+, SimpleMath+, WanVideoModelLoader, WanVideoModelLoader, WanVideoVAELoader, CLIPLoader, WanVideoLoraSelect]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.2_图生视频工作流  加速版_1962439638365376514.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1962439638365376514.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（32 个）：
+- `WanVideoLoraSelect`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `WanVideoTextEmbedBridge`
+- `CLIPTextEncode` ★核心
+- `CreateCFGScheduleFloatList`
+- `easy int`
+- `easy int`
+- `easy int`
+- `easy int`
+- `SimpleMath+`
+- `SimpleMath+`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `CLIPLoader`
+- `WanVideoLoraSelect`
+
+## 知识
+
+覆盖率 **100%**（32/32）
+
+**有卡**：`WanVideoLoraSelect`、`LoadImage`、`ImageResizeKJv2`、`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`WanVideoDecode`、`WanVideoSampler`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`VHS_VideoCombine`、`easy cleanGpuUsed`、`WanVideoImageToVideoEncode`、`CLIPTextEncode`、`WanVideoTextEmbedBridge`、`CreateCFGScheduleFloatList`、`easy int`、`SimpleMath+`、`WanVideoModelLoader`、`WanVideoVAELoader`、`CLIPLoader`
+
+**用到的条目**：CLIPTextEncode、CLIPLoader、LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、WanVideoDecode、WanVideoVAELoader、WanVideoImageToVideoEncode

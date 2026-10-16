@@ -1,0 +1,155 @@
+---
+key: 视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json
+name: Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1968927593699450881.json
+hash: 960544e003f50064
+coverage: 0.495575
+learned_at: 2026-10-15 22:31:47
+nodes: [SetNode, UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, LoraLoaderModelOnly, UNETLoader, TorchCompileModel, PathchSageAttentionKJ, LoraLoaderModelOnly, ModelSamplingSD3, GetNode, KSamplerAdvanced, GetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, KSamplerAdvanced, KSamplerAdvanced, WanImageToVideo, SetNode, VAEDecode, SetNode, ImpactInt, SetNode, SetNode, SetNode, SetNode, SetNode, CLIPLoader, SetNode, VAELoader, CLIPTextEncode, SetNode, GetNode, GetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, SetNode, LayerColor: BrightnessContrastV2, GetImageRangeFromBatch, Label (rgthree), KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, PrimitiveInt, easy seed, GetNode, GetNode, GetNode, GetNode, ImageFromBatch, GetNode, GetNode, PrimitiveInt, CR Seed, KSamplerAdvanced, WanImageToVideo, GetNode, MathExpression|pysssss, GetImageSizeAndCount, easy showAnything, VAEDecode, MathExpression|pysssss, SetNode, GetNode, GetNode, easy forLoopEnd, PrimitiveFloat, ImpactInt, Fast Groups Bypasser (rgthree), ImageResizeKJv2, GetImageRangeFromBatch, RIFE VFI, ImpactInt, MathExpression|pysssss, PreviewImage, Text Concatenate, easy showAnything, RH_Captioner, CLIPTextEncode, VHS_VideoCombine, easy showAnything, VHS_VideoCombine, TorchCompileModel, SetNode, Note, easy forLoopStart, GetNode, MathExpression|pysssss, GetNode, Text Multiline, LoadImage, SetNode, ImageBatchMulti, GetNode, Note, easy promptLine, GetNode, VHS_GetImageCount, easy showAnything, RH_Captioner, easy showAnything, PrimitiveStringMultiline, SetNode, CLIPTextEncode, GetNode, GetNode, GetNode, ImpactInt]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1968927593699450881.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（113 个）：
+- `SetNode`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `TorchCompileModel`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `GetNode`
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `WanImageToVideo`
+- `SetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `ImpactInt`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CLIPLoader`
+- `SetNode`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `SetNode`
+- `LayerColor: BrightnessContrastV2`
+- `GetImageRangeFromBatch`
+- `Label (rgthree)`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `PrimitiveInt`
+- `easy seed`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageFromBatch`
+- `GetNode`
+- `GetNode`
+- `PrimitiveInt`
+- `CR Seed`
+- `KSamplerAdvanced` ★核心
+- `WanImageToVideo`
+- `GetNode`
+- `MathExpression|pysssss`
+- `GetImageSizeAndCount`
+- `easy showAnything`
+- `VAEDecode` ★核心
+- `MathExpression|pysssss`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy forLoopEnd`
+- `PrimitiveFloat`
+- `ImpactInt`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `GetImageRangeFromBatch`
+- `RIFE VFI`
+- `ImpactInt`
+- `MathExpression|pysssss`
+- `PreviewImage`
+- `Text Concatenate`
+- `easy showAnything`
+- `RH_Captioner`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `TorchCompileModel`
+- `SetNode`
+- `Note`
+- `easy forLoopStart`
+- `GetNode`
+- `MathExpression|pysssss`
+- `GetNode`
+- `Text Multiline`
+- `LoadImage`
+- `SetNode`
+- `ImageBatchMulti`
+- `GetNode`
+- `Note`
+- `easy promptLine`
+- `GetNode`
+- `VHS_GetImageCount`
+- `easy showAnything`
+- `RH_Captioner`
+- `easy showAnything`
+- `PrimitiveStringMultiline`
+- `SetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImpactInt`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **50%**（56/113）
+
+**有卡**：`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`LoraLoaderModelOnly`、`TorchCompileModel`、`KSamplerAdvanced`、`WanImageToVideo`、`VAEDecode`、`ImpactInt`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`LayerColor: BrightnessContrastV2`、`GetImageRangeFromBatch`、`Label (rgthree)`、`easy seed`、`ImageFromBatch`、`CR Seed`、`MathExpression|pysssss`、`GetImageSizeAndCount`、`easy forLoopEnd`、`ImageResizeKJv2`、`RIFE VFI`、`Text Concatenate`、`RH_Captioner`、`VHS_VideoCombine`、`easy forLoopStart`、`Text Multiline`、`LoadImage`、`ImageBatchMulti`、`easy promptLine`、`VHS_GetImageCount`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

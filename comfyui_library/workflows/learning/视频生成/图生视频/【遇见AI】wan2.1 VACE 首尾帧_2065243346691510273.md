@@ -1,0 +1,58 @@
+---
+key: 视频生成/图生视频/【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json
+name: 【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2065243346691510273.json
+hash: a56caf1f8e813fc4
+coverage: 0.923077
+learned_at: 2026-10-15 22:39:37
+nodes: [WanVideoEnhanceAVideo, WanVideoSLG, WanVideoExperimentalArgs, WanVideoTorchCompileSettings, WanVideoDecode, WanVideoSetBlockSwap, WanVideoSetLoRAs, WanVideoTeaCache, WanVideoSampler, LoadImage, LoadImage, VHS_VideoCombine, WanVideoBlockSwap, WanVideoVACEStartToEndFrame, PreviewImage, MaskPreview+, GetImageSize+, WanVideoVACEEncode, LoadImage, MarkdownNote, LoadImage, WanVideoModelLoader, WanVideoVACEModelSelect, WanVideoVAELoader, WanVideoTextEncodeCached, WanVideoLoraSelect]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2065243346691510273.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（26 个）：
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoExperimentalArgs`
+- `WanVideoTorchCompileSettings`
+- `WanVideoDecode`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `WanVideoTeaCache`
+- `WanVideoSampler` ★核心
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `WanVideoVACEStartToEndFrame`
+- `PreviewImage`
+- `MaskPreview+`
+- `GetImageSize+`
+- `WanVideoVACEEncode`
+- `LoadImage`
+- `MarkdownNote`
+- `LoadImage`
+- `WanVideoModelLoader`
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `WanVideoTextEncodeCached`
+- `WanVideoLoraSelect`
+
+## 知识
+
+覆盖率 **92%**（24/26）
+
+**有卡**：`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoExperimentalArgs`、`WanVideoTorchCompileSettings`、`WanVideoDecode`、`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`WanVideoTeaCache`、`WanVideoSampler`、`LoadImage`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`WanVideoVACEStartToEndFrame`、`MaskPreview+`、`GetImageSize+`、`WanVideoVACEEncode`、`WanVideoModelLoader`、`WanVideoVACEModelSelect`、`WanVideoVAELoader`、`WanVideoTextEncodeCached`、`WanVideoLoraSelect`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoTextEncodeCached、WanVideoLoraSelect、WanVideoSetLoRAs

@@ -1,0 +1,83 @@
+---
+key: 视频生成/图生视频/LTXV 0.9.6超稳定超级加速高一致性图生视频V3(修正保存和模式2问题)_1914329665732050945.json
+name: LTXV 0.9.6超稳定超级加速高一致性图生视频V3(修正保存和模式2问题)_1914329665732050945.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1914329665732050945.json
+hash: 9b5344499716d92b
+coverage: 0.717391
+learned_at: 2026-10-15 22:29:36
+nodes: [LTXVAddGuide, EmptyLTXVLatentVideo, CFGGuider, KSamplerSelect, StringToFloatList, LTXVConditioning, SamplerCustomAdvanced, LTXVCropGuides, FloatConstant, GetNode, CLIPLoader, FloatToSigmas, VAEDecode, RandomNoise, CheckpointLoaderSimple, LayerUtility: PurgeVRAM V2, ImageResizeKJ, Note, LoadImage, Note, Text Multiline, Note, LayerUtility: ImageScaleByAspectRatio V2, StringConstantMultiline, Note, ShowText|pysssss, CLIPTextEncode, BlurImageFast, LTXVPreprocess, PreviewImage, Note Plus (mtb), Note, Note, Note, JWInteger, JWInteger, FloatConstant, Text Concatenate, ImpactSwitch, RH_Captioner, ShowText|pysssss, CLIPTextEncode, Note, VHS_VideoCombine, StringConstantMultiline, JWInteger]
+patterns: []
+missing: []
+parameters: {"checkpoint": "ltxv-2b-0.9.6-distilled-04-25.safetensors"}
+---
+
+# 视频生成/图生视频/LTXV 0.9.6超稳定超级加速高一致性图生视频V3(修正保存和模式2问题)_1914329665732050945.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1914329665732050945.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（46 个）：
+- `LTXVAddGuide`
+- `EmptyLTXVLatentVideo`
+- `CFGGuider`
+- `KSamplerSelect` ★核心
+- `StringToFloatList`
+- `LTXVConditioning`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `FloatConstant`
+- `GetNode`
+- `CLIPLoader`
+- `FloatToSigmas`
+- `VAEDecode` ★核心
+- `RandomNoise`
+- `CheckpointLoaderSimple` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJ`
+- `Note`
+- `LoadImage`
+- `Note`
+- `Text Multiline`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `StringConstantMultiline`
+- `Note`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+- `BlurImageFast`
+- `LTXVPreprocess`
+- `PreviewImage`
+- `Note Plus (mtb)`
+- `Note`
+- `Note`
+- `Note`
+- `JWInteger`
+- `JWInteger`
+- `FloatConstant`
+- `Text Concatenate`
+- `ImpactSwitch`
+- `RH_Captioner`
+- `ShowText|pysssss`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `VHS_VideoCombine`
+- `StringConstantMultiline`
+- `JWInteger`
+
+## 关键参数
+
+- `checkpoint` = `ltxv-2b-0.9.6-distilled-04-25.safetensors`
+
+## 知识
+
+覆盖率 **72%**（33/46）
+
+**有卡**：`LTXVAddGuide`、`EmptyLTXVLatentVideo`、`CFGGuider`、`KSamplerSelect`、`StringToFloatList`、`LTXVConditioning`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`FloatConstant`、`CLIPLoader`、`FloatToSigmas`、`VAEDecode`、`RandomNoise`、`CheckpointLoaderSimple`、`LayerUtility: PurgeVRAM V2`、`ImageResizeKJ`、`LoadImage`、`Text Multiline`、`LayerUtility: ImageScaleByAspectRatio V2`、`StringConstantMultiline`、`CLIPTextEncode`、`BlurImageFast`、`LTXVPreprocess`、`Note Plus (mtb)`、`JWInteger`、`Text Concatenate`、`RH_Captioner`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、CLIPLoader、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect

@@ -1,0 +1,78 @@
+---
+key: 视频生成/图生视频/Wan2.1 Mocha视频人物一键替换_1982423394660564994.json
+name: Wan2.1 Mocha视频人物一键替换_1982423394660564994.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1982423394660564994.json
+hash: 8eee4e991ced2367
+coverage: 0.695652
+learned_at: 2026-10-15 22:32:41
+nodes: [WanVideoTextEncodeCached, MochaEmbeds, ImpactInt, LayerUtility: ImageScaleByAspectRatio V2, SetNode, ImageResizeKJv2, ImpactInt, WanVideoSampler, GetNode, WanVideoLoraSelect, WanVideoTorchCompileSettings, WanVideoModelLoader, WanVideoVAELoader, WanVideoBlockSwap, WanVideoSetBlockSwap, MathExpression|pysssss, FaceAnalysisModels, FaceBoundingBox, VHS_VideoInfoSource, BlockifyMask, easy cleanGpuUsed, SetNode, SetNode, GetImageRangeFromBatch, MaskPreview+, GrowMask, LayerMask: SegmentAnythingUltra V2, MarkdownNote, MarkdownNote, MarkdownNote, ImageResizeKJv2, ImageConcanate, ImageConcanate, VHS_LoadVideo, VHS_VideoCombine, PDIMAGE_LongerSize, WanVideoDecode, GetNode, GetNode, VHS_VideoCombine, LoadImage, PreviewImage, SetNode, PreviewImage, GetNode, PreviewImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 Mocha视频人物一键替换_1982423394660564994.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1982423394660564994.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（46 个）：
+- `WanVideoTextEncodeCached`
+- `MochaEmbeds`
+- `ImpactInt`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SetNode`
+- `ImageResizeKJv2`
+- `ImpactInt`
+- `WanVideoSampler` ★核心
+- `GetNode`
+- `WanVideoLoraSelect`
+- `WanVideoTorchCompileSettings`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `WanVideoSetBlockSwap`
+- `MathExpression|pysssss`
+- `FaceAnalysisModels`
+- `FaceBoundingBox`
+- `VHS_VideoInfoSource`
+- `BlockifyMask`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `SetNode`
+- `GetImageRangeFromBatch`
+- `MaskPreview+`
+- `GrowMask`
+- `LayerMask: SegmentAnythingUltra V2`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `ImageResizeKJv2`
+- `ImageConcanate`
+- `ImageConcanate`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `PDIMAGE_LongerSize`
+- `WanVideoDecode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `PreviewImage`
+- `SetNode`
+- `PreviewImage`
+- `GetNode`
+- `PreviewImage`
+
+## 知识
+
+覆盖率 **70%**（32/46）
+
+**有卡**：`WanVideoTextEncodeCached`、`MochaEmbeds`、`ImpactInt`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJv2`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoTorchCompileSettings`、`WanVideoModelLoader`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`WanVideoSetBlockSwap`、`MathExpression|pysssss`、`FaceAnalysisModels`、`FaceBoundingBox`、`VHS_VideoInfoSource`、`BlockifyMask`、`easy cleanGpuUsed`、`GetImageRangeFromBatch`、`MaskPreview+`、`GrowMask`、`LayerMask: SegmentAnythingUltra V2`、`ImageConcanate`、`VHS_LoadVideo`、`VHS_VideoCombine`、`PDIMAGE_LongerSize`、`WanVideoDecode`、`LoadImage`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeCached、WanVideoLoraSelect、ImageResizeKJv2

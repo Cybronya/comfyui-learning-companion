@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/Remix V2.1+PainterI2V图生视频自动提示词工作流（一致性加强版）_2020428290829328386.json
+name: Remix V2.1+PainterI2V图生视频自动提示词工作流（一致性加强版）_2020428290829328386.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2020428290829328386.json
+hash: 7f7ef94e8f9ff324
+coverage: 0.897436
+learned_at: 2026-10-15 22:35:06
+nodes: [CLIPVisionEncode, CLIPVisionLoader, VAELoader, Note, KSamplerAdvanced, CLIPTextEncode, KSamplerAdvanced, CLIPTextEncode, Note, LayerUtility: ImageScaleByAspectRatio V2, CR Prompt Text, RH_LLMAPI_NODE, JWInteger, Reroute, easy showAnything, MathExpression|pysssss, JWInteger, Seed (rgthree), LayerUtility: PurgeVRAM, Float, PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1, VAEDecode, easy cleanGpuUsed, LayerUtility: PurgeVRAM, PathchSageAttentionKJ, PathchSageAttentionKJ, UNETLoader, UNETLoader, CLIPLoader, ModelSamplingSD3, ModelSamplingSD3, ImageResizeKJv2, ImageFromBatch+, RunningHub Deepcleaner, VHS_VideoCombine, AILab_QwenVL, LoadImage, CR Prompt Text, easy anythingIndexSwitch]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "enable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Remix V2.1+PainterI2V图生视频自动提示词工作流（一致性加强版）_2020428290829328386.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2020428290829328386.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（39 个）：
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CR Prompt Text`
+- `RH_LLMAPI_NODE`
+- `JWInteger`
+- `Reroute`
+- `easy showAnything`
+- `MathExpression|pysssss`
+- `JWInteger`
+- `Seed (rgthree)`
+- `LayerUtility: PurgeVRAM`
+- `Float`
+- `PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `LayerUtility: PurgeVRAM`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `ImageResizeKJv2`
+- `ImageFromBatch+`
+- `RunningHub Deepcleaner`
+- `VHS_VideoCombine`
+- `AILab_QwenVL`
+- `LoadImage`
+- `CR Prompt Text`
+- `easy anythingIndexSwitch`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **90%**（35/39）
+
+**有卡**：`CLIPVisionEncode`、`CLIPVisionLoader`、`VAELoader`、`KSamplerAdvanced`、`CLIPTextEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`CR Prompt Text`、`RH_LLMAPI_NODE`、`JWInteger`、`MathExpression|pysssss`、`Seed (rgthree)`、`LayerUtility: PurgeVRAM`、`Float`、`PainterI2V-up WAN2.2 LatentMotion Enhancer by paicat1`、`VAEDecode`、`easy cleanGpuUsed`、`PathchSageAttentionKJ`、`UNETLoader`、`CLIPLoader`、`ModelSamplingSD3`、`ImageResizeKJv2`、`ImageFromBatch+`、`RunningHub Deepcleaner`、`VHS_VideoCombine`、`AILab_QwenVL`、`LoadImage`、`easy anythingIndexSwitch`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、KSamplerAdvanced

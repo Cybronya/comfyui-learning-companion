@@ -1,0 +1,98 @@
+---
+key: 视频生成/图生视频/WAN2.2-LightX2V-I2V图生视频最强动态搭配（lora版）_1982062028078620674.json
+name: WAN2.2-LightX2V-I2V图生视频最强动态搭配（lora版）_1982062028078620674.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1982062028078620674.json
+hash: ed0ba72a29bd5ccc
+coverage: 0.785714
+learned_at: 2026-10-15 22:32:40
+nodes: [Wan22PromptSelector, SeedVR2BlockSwap, SeedVR2ExtraArgs, RIFE VFI, JWInteger, GetNode, GetNode, SeedVR2GGUF, VHS_VideoCombine, KSamplerAdvanced, JWInteger, KSamplerAdvanced, CR Text, LoraLoaderModelOnly, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, PathchSageAttentionKJ, SetNode, wanBlockSwap, ModelSamplingSD3, ModelPatchTorchSettings, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelSamplingSD3, wanBlockSwap, PathchSageAttentionKJ, ModelPatchTorchSettings, SetNode, Text Multiline, SetNode, CLIPLoader, SetNode, VAELoader, CLIPVisionLoader, CLIPTextEncode, GetNode, WanImageToVideo, CLIPTextEncode, RH_LLMAPI_NODE, CLIPVisionEncode, MathExpression|pysssss, GetNode, Fast Groups Bypasser (rgthree), VHS_VideoCombine, Text Concatenate, ImpactSwitch, Note, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, VAEDecode, VHS_VideoCombine, ImageStitch, VHS_VideoCombine, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/WAN2.2-LightX2V-I2V图生视频最强动态搭配（lora版）_1982062028078620674.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1982062028078620674.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（56 个）：
+- `Wan22PromptSelector`
+- `SeedVR2BlockSwap`
+- `SeedVR2ExtraArgs`
+- `RIFE VFI`
+- `JWInteger`
+- `GetNode`
+- `GetNode`
+- `SeedVR2GGUF`
+- `VHS_VideoCombine`
+- `KSamplerAdvanced` ★核心
+- `JWInteger`
+- `KSamplerAdvanced` ★核心
+- `CR Text`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `wanBlockSwap`
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `SetNode`
+- `Text Multiline`
+- `SetNode`
+- `CLIPLoader`
+- `SetNode`
+- `VAELoader`
+- `CLIPVisionLoader`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `WanImageToVideo`
+- `CLIPTextEncode` ★核心
+- `RH_LLMAPI_NODE`
+- `CLIPVisionEncode`
+- `MathExpression|pysssss`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `Text Concatenate`
+- `ImpactSwitch`
+- `Note`
+- `easy showAnything`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+- `ImageStitch`
+- `VHS_VideoCombine`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **79%**（44/56）
+
+**有卡**：`Wan22PromptSelector`、`SeedVR2BlockSwap`、`SeedVR2ExtraArgs`、`RIFE VFI`、`JWInteger`、`SeedVR2GGUF`、`VHS_VideoCombine`、`KSamplerAdvanced`、`CR Text`、`LoraLoaderModelOnly`、`UNETLoader`、`PathchSageAttentionKJ`、`wanBlockSwap`、`ModelSamplingSD3`、`ModelPatchTorchSettings`、`Text Multiline`、`CLIPLoader`、`VAELoader`、`CLIPVisionLoader`、`CLIPTextEncode`、`WanImageToVideo`、`RH_LLMAPI_NODE`、`CLIPVisionEncode`、`MathExpression|pysssss`、`Text Concatenate`、`LayerUtility: ImageScaleByAspectRatio V2`、`VAEDecode`、`ImageStitch`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced

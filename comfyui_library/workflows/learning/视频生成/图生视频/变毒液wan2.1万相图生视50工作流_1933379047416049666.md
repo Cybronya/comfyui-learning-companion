@@ -1,0 +1,202 @@
+---
+key: 视频生成/图生视频/变毒液wan2.1万相图生视50工作流_1933379047416049666.json
+name: 变毒液wan2.1万相图生视50工作流_1933379047416049666.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1933379047416049666.json
+hash: a80d5a786c3abeaf
+coverage: 0.841772
+learned_at: 2026-10-15 22:30:13
+nodes: [GIMMVFI_interpolate, VHS_VideoCombine, DownloadAndLoadGIMMVFIModel, VHS_LoadVideo, UltimateSDUpscaleCustomSample, LoraLoader, BasicScheduler, Image Comparer (rgthree), PreviewImage, GIMMVFI_interpolate, VHS_VideoCombine, DownloadAndLoadGIMMVFIModel, Fast Groups Bypasser (rgthree), easy imageSize, CLIPTextEncodeFlux, ModelSamplingFlux, PreviewImage, VHS_LoadVideo, Fast Groups Bypasser (rgthree), VHS_VideoCombine, WanVideoTorchCompileSettings, WanVideoEnhanceAVideo, LayerUtility: PurgeVRAM, DualCLIPLoader, ConditioningZeroOut, easy imageSize, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, GetNode, LoraLoaderModelOnly, LoraLoaderModelOnly, SetNode, BasicGuider, KSamplerSelect, LoraLoaderModelOnly, FluxGuidance, SamplerCustomAdvanced, VAELoader, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, RandomNoise, Note, Note, DualCLIPLoader, EmptyLatentImage, SetNode, GetNode, BasicScheduler, CLIPTextEncode, SaveImage, VAEDecode, easy outputToList, easy float, SomethingToString, MathExpression|pysssss, ImageListToBatch+, CR Image Grid Panel, CLIPTextEncode, FluxGuidance, KSamplerSelect, BasicGuider, RandomNoise, EmptyLatentImage, SaveImage, VAELoader, SaveImage, VAEDecode, AddLabel, easy forLoopEnd, easy forLoopStart, Note, Note, easy batchAnything, UpscaleModelLoader, LyingSigmaSampler, VAELoader, KSamplerSelect, UltimateSDUpscaleCustomSample, VHS_VideoCombine, UNETLoader, VHS_LoadVideo, BasicScheduler, Image Comparer (rgthree), PreviewImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), LayerUtility: PurgeVRAM, LoadWanVideoT5TextEncoder, WanVideoBlockSwap, easy cleanGpuUsed, WanVideoExperimentalArgs, easy cleanGpuUsed, LayerUtility: PurgeVRAM, WanVideoVAELoader, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, UNETLoader, LoraLoaderModelOnly, SamplerCustomAdvanced, BasicScheduler, DualCLIPLoader, Fast Groups Bypasser (rgthree), WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoDecode, VHS_VideoCombine, WanVideoLoraSelect, SetNode, WanVideoLoraSelect, GetNode, VHS_VideoCombine, WanVideoSampler, LoadImage, Fast Groups Bypasser (rgthree), WanVideoImageClipEncode, WanVideoTeaCache, LoadWanVideoClipTextEncoder, WanVideoModelLoader, WanVideoTextEncode, Note, GetNode, SetNode, WanVideoLoraSelect]
+patterns: [lora]
+missing: []
+parameters: {"batch_size": 1, "height": 1024, "lora_name": "增加细节SYK_Mild detail adjuster_V1.0_4（MINI）", "strength_clip": 1, "strength_model": 1, "width": 768}
+---
+
+# 视频生成/图生视频/变毒液wan2.1万相图生视50工作流_1933379047416049666.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1933379047416049666.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（158 个）：
+- `GIMMVFI_interpolate`
+- `VHS_VideoCombine`
+- `DownloadAndLoadGIMMVFIModel`
+- `VHS_LoadVideo`
+- `UltimateSDUpscaleCustomSample`
+- `LoraLoader` ★核心
+- `BasicScheduler`
+- `Image Comparer (rgthree)`
+- `PreviewImage`
+- `GIMMVFI_interpolate`
+- `VHS_VideoCombine`
+- `DownloadAndLoadGIMMVFIModel`
+- `Fast Groups Bypasser (rgthree)`
+- `easy imageSize`
+- `CLIPTextEncodeFlux` ★核心
+- `ModelSamplingFlux`
+- `PreviewImage`
+- `VHS_LoadVideo`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `WanVideoTorchCompileSettings`
+- `WanVideoEnhanceAVideo`
+- `LayerUtility: PurgeVRAM`
+- `DualCLIPLoader`
+- `ConditioningZeroOut`
+- `easy imageSize`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SetNode`
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `FluxGuidance`
+- `SamplerCustomAdvanced` ★核心
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `RandomNoise`
+- `Note`
+- `Note`
+- `DualCLIPLoader`
+- `EmptyLatentImage` ★核心
+- `SetNode`
+- `GetNode`
+- `BasicScheduler`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `VAEDecode` ★核心
+- `easy outputToList`
+- `easy float`
+- `SomethingToString`
+- `MathExpression|pysssss`
+- `ImageListToBatch+`
+- `CR Image Grid Panel`
+- `CLIPTextEncode` ★核心
+- `FluxGuidance`
+- `KSamplerSelect` ★核心
+- `BasicGuider`
+- `RandomNoise`
+- `EmptyLatentImage` ★核心
+- `SaveImage`
+- `VAELoader`
+- `SaveImage`
+- `VAEDecode` ★核心
+- `AddLabel`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `Note`
+- `Note`
+- `easy batchAnything`
+- `UpscaleModelLoader`
+- `LyingSigmaSampler` ★核心
+- `VAELoader`
+- `KSamplerSelect` ★核心
+- `UltimateSDUpscaleCustomSample`
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `VHS_LoadVideo`
+- `BasicScheduler`
+- `Image Comparer (rgthree)`
+- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: PurgeVRAM`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoBlockSwap`
+- `easy cleanGpuUsed`
+- `WanVideoExperimentalArgs`
+- `easy cleanGpuUsed`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoVAELoader`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoDecode`
+- `VHS_VideoCombine`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `WanVideoLoraSelect`
+- `GetNode`
+- `VHS_VideoCombine`
+- `WanVideoSampler` ★核心
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `WanVideoImageClipEncode`
+- `WanVideoTeaCache`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+- `Note`
+- `GetNode`
+- `SetNode`
+- `WanVideoLoraSelect`
+
+**识别到的模式**：lora
+
+## 关键参数
+
+- `lora_name` = `增加细节SYK_Mild detail adjuster_V1.0_4（MINI）`
+- `strength_model` = `1`
+- `strength_clip` = `1`
+- `width` = `768`
+- `height` = `1024`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **84%**（133/158）
+
+**有卡**：`GIMMVFI_interpolate`、`VHS_VideoCombine`、`DownloadAndLoadGIMMVFIModel`、`VHS_LoadVideo`、`UltimateSDUpscaleCustomSample`、`LoraLoader`、`BasicScheduler`、`easy imageSize`、`CLIPTextEncodeFlux`、`ModelSamplingFlux`、`WanVideoTorchCompileSettings`、`WanVideoEnhanceAVideo`、`LayerUtility: PurgeVRAM`、`DualCLIPLoader`、`ConditioningZeroOut`、`LoraLoaderModelOnly`、`BasicGuider`、`KSamplerSelect`、`FluxGuidance`、`SamplerCustomAdvanced`、`VAELoader`、`UNETLoader`、`RandomNoise`、`EmptyLatentImage`、`CLIPTextEncode`、`SaveImage`、`VAEDecode`、`easy outputToList`、`easy float`、`SomethingToString`、`MathExpression|pysssss`、`ImageListToBatch+`、`CR Image Grid Panel`、`AddLabel`、`easy forLoopEnd`、`easy forLoopStart`、`easy batchAnything`、`UpscaleModelLoader`、`LyingSigmaSampler`、`LoadWanVideoT5TextEncoder`、`WanVideoBlockSwap`、`easy cleanGpuUsed`、`WanVideoExperimentalArgs`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`WanVideoDecode`、`WanVideoSampler`、`LoadImage`、`WanVideoImageClipEncode`、`WanVideoTeaCache`、`LoadWanVideoClipTextEncoder`、`WanVideoModelLoader`、`WanVideoTextEncode`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、SaveImage

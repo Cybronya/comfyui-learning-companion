@@ -1,0 +1,59 @@
+---
+key: 视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json
+name: WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1955263438596423682.json
+hash: 305354f96368ed6c
+coverage: 1
+learned_at: 2026-10-15 22:31:08
+nodes: [WanVideoSetBlockSwap, WanVideoBlockSwap, WanVideoTorchCompileSettings, LoadWanVideoT5TextEncoder, WanVideoSetLoRAs, WanVideoVAELoader, WanVideoSetLoRAs, INTConstant, INTConstant, WanVideoLoraSelect, WanVideoLoraSelect, WanVideoSampler, WanVideoSampler, WanVideoDecode, GetImageSizeAndCount, VHS_VideoCombine, LoadImage, WanVideoModelLoader, WanVideoModelLoader, WanVideoTextEncode, GetImageSize, CreateCFGScheduleFloatList, WanVideoSetBlockSwap, ImageResizeKJv2, LayerUtility: PurgeVRAM, LayerUtility: PurgeVRAM, WanVideoImageToVideoEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1955263438596423682.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（27 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoSetLoRAs`
+- `WanVideoVAELoader`
+- `WanVideoSetLoRAs`
+- `INTConstant`
+- `INTConstant`
+- `WanVideoLoraSelect`
+- `WanVideoLoraSelect`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoTextEncode`
+- `GetImageSize`
+- `CreateCFGScheduleFloatList`
+- `WanVideoSetBlockSwap`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoImageToVideoEncode`
+
+## 知识
+
+覆盖率 **100%**（27/27）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`LoadWanVideoT5TextEncoder`、`WanVideoSetLoRAs`、`WanVideoVAELoader`、`INTConstant`、`WanVideoLoraSelect`、`WanVideoSampler`、`WanVideoDecode`、`GetImageSizeAndCount`、`VHS_VideoCombine`、`LoadImage`、`WanVideoModelLoader`、`WanVideoTextEncode`、`GetImageSize`、`CreateCFGScheduleFloatList`、`ImageResizeKJv2`、`LayerUtility: PurgeVRAM`、`WanVideoImageToVideoEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

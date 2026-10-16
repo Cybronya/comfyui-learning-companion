@@ -1,0 +1,84 @@
+---
+key: 视频生成/图生视频/wan2.1图生视频480KJ稳定版_1912043048983851010.json
+name: wan2.1图生视频480KJ稳定版_1912043048983851010.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1912043048983851010.json
+hash: 36cbfa6e7160e851
+coverage: 0.769231
+learned_at: 2026-10-15 22:29:31
+nodes: [WanVideoTextEmbedBridge, CLIPTextEncode, CLIPLoader, CLIPTextEncode, Note, Note, Note, Note, Note, Note, Note, WanVideoTorchCompileSettings, Note, CLIPVisionLoader, ImageResize+, SetNode, GetNode, GetNode, EmptyImage, AddLabel, AddLabel, ImageConcatMulti, GetImageSizeAndCount, WanVideoDecode, WanVideoTeaCache, WanVideoSLG, WanVideoClipVisionEncode, WanVideoSampler, WanVideoModelLoader, ImageUpscaleWithModel, ImageResizeKJ, VHS_VideoCombine, ImageConcatMulti, LayerUtility: PurgeVRAM, VHS_VideoCombine, WanVideoTextEncode, WanVideoVRAMManagement, WanVideoBlockSwap, WanVideoImageToVideoEncode, LoadWanVideoT5TextEncoder, GIMMVFI_interpolate, DownloadAndLoadGIMMVFIModel, Get resolution [Crystools], SetNode, ImageResizeKJ, VHS_VideoCombine, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoExperimentalArgs, LoadImage, LoadImage, UpscaleModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1图生视频480KJ稳定版_1912043048983851010.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1912043048983851010.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（52 个）：
+- `WanVideoTextEmbedBridge`
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `WanVideoTorchCompileSettings`
+- `Note`
+- `CLIPVisionLoader`
+- `ImageResize+`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `EmptyImage`
+- `AddLabel`
+- `AddLabel`
+- `ImageConcatMulti`
+- `GetImageSizeAndCount`
+- `WanVideoDecode`
+- `WanVideoTeaCache`
+- `WanVideoSLG`
+- `WanVideoClipVisionEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `ImageUpscaleWithModel`
+- `ImageResizeKJ`
+- `VHS_VideoCombine`
+- `ImageConcatMulti`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `WanVideoTextEncode`
+- `WanVideoVRAMManagement`
+- `WanVideoBlockSwap`
+- `WanVideoImageToVideoEncode`
+- `LoadWanVideoT5TextEncoder`
+- `GIMMVFI_interpolate`
+- `DownloadAndLoadGIMMVFIModel`
+- `Get resolution [Crystools]`
+- `SetNode`
+- `ImageResizeKJ`
+- `VHS_VideoCombine`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoExperimentalArgs`
+- `LoadImage`
+- `LoadImage`
+- `UpscaleModelLoader`
+
+## 知识
+
+覆盖率 **77%**（40/52）
+
+**有卡**：`WanVideoTextEmbedBridge`、`CLIPTextEncode`、`CLIPLoader`、`WanVideoTorchCompileSettings`、`CLIPVisionLoader`、`ImageResize+`、`EmptyImage`、`AddLabel`、`ImageConcatMulti`、`GetImageSizeAndCount`、`WanVideoDecode`、`WanVideoTeaCache`、`WanVideoSLG`、`WanVideoClipVisionEncode`、`WanVideoSampler`、`WanVideoModelLoader`、`ImageUpscaleWithModel`、`ImageResizeKJ`、`VHS_VideoCombine`、`LayerUtility: PurgeVRAM`、`WanVideoTextEncode`、`WanVideoVRAMManagement`、`WanVideoBlockSwap`、`WanVideoImageToVideoEncode`、`LoadWanVideoT5TextEncoder`、`GIMMVFI_interpolate`、`DownloadAndLoadGIMMVFIModel`、`Get resolution [Crystools]`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`WanVideoExperimentalArgs`、`LoadImage`、`UpscaleModelLoader`
+
+**用到的条目**：CLIPTextEncode、CLIPLoader、LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode

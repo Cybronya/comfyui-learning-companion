@@ -1,0 +1,57 @@
+---
+key: 视频生成/文生视频/文生视频：MoviiGen 1.1模型生成电影画质视频_1929507687522844674.json
+name: 文生视频：MoviiGen 1.1模型生成电影画质视频_1929507687522844674.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/文生视频/1929507687522844674.json
+hash: 5372cee95c2cf9cb
+coverage: 1
+learned_at: 2026-10-15 22:43:25
+nodes: [VAEDecode, CLIPTextEncode, EmptyHunyuanLatentVideo, VHS_VideoCombine, UNETLoader, CLIPLoader, VAELoader, ModelSamplingSD3, Florence2Run, Florence2ModelLoader, ShowText, CLIPTextEncode, KSampler, RIFE VFI, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 4, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 999, "steps": 20}
+---
+
+# 视频生成/文生视频/文生视频：MoviiGen 1.1模型生成电影画质视频_1929507687522844674.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/文生视频/1929507687522844674.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Other
+
+**节点**（15 个）：
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `EmptyHunyuanLatentVideo`
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `Florence2Run`
+- `Florence2ModelLoader`
+- `ShowText`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `RIFE VFI`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `999`
+- `steps` = `20`
+- `cfg` = `4`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`VAEDecode`、`CLIPTextEncode`、`EmptyHunyuanLatentVideo`、`VHS_VideoCombine`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ModelSamplingSD3`、`Florence2Run`、`Florence2ModelLoader`、`ShowText`、`KSampler`、`RIFE VFI`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、EmptyHunyuanLatentVideo

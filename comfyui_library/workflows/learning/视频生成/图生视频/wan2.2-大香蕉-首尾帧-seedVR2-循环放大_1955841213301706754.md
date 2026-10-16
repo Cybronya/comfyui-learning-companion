@@ -1,0 +1,123 @@
+---
+key: 视频生成/图生视频/wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json
+name: wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1955841213301706754.json
+hash: 5195ea18d098b585
+coverage: 0.530864
+learned_at: 2026-10-15 22:31:10
+nodes: [SetNode, ModelSamplingSD3, GetNode, GetNode, GetNode, SetNode, easy showAnything, ImpactSwitch, VHS_VideoInfo, Int, Fast Groups Bypasser (rgthree), SetNode, SetNode, SetNode, SetNode, GetNode, CLIPVisionEncode, CLIPTextEncode, SetNode, VHS_LoadVideo, GetNode, LayerUtility: ImageScaleByAspectRatio V2, GetNode, Fast Groups Bypasser (rgthree), GetNode, GetNode, CLIPVisionLoader, SetNode, CLIPVisionEncode, CLIPLoader, GetNode, UNETLoader, UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, VAELoader, SetNode, PathchSageAttentionKJ, CFGNorm, VHS_VideoCombine, SetNode, GetImageSize, SetNode, GetNode, ImpactSwitch, Reroute, SetNode, Reroute, easy forLoopEnd, easy forLoopStart, Reroute, Reroute, MathExpression|pysssss, easy batchAnything, GetImageRangeFromBatch, GetNode, LayerUtility: ImageScaleByAspectRatio V2, MathExpression|pysssss, SeedVR2BlockSwap, GetNode, VAEDecode, SetNode, GetNode, GetImageRangeFromBatch, GetImageRangeFromBatch, WanMoeKSampler, SeedVR2, PreviewImage, ImageResizeKJv2, WanFirstLastFrameToVideo, CLIPTextEncode, LoraLoaderModelOnly, Int, VHS_VideoCombine, Image Comparer (rgthree), RH_Nano_Banana_Image2Image, ImageResizeKJ, LoadImage, LoadImage, GetNode, CR Text]
+patterns: []
+missing: []
+parameters: {"cfg": 14, "denoise": "euler", "sampler_name": 3.5, "scheduler": 1, "seed": 0.875, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1955841213301706754.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（81 个）：
+- `SetNode`
+- `ModelSamplingSD3`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `easy showAnything`
+- `ImpactSwitch`
+- `VHS_VideoInfo`
+- `Int`
+- `Fast Groups Bypasser (rgthree)`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `VHS_LoadVideo`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `SetNode`
+- `CLIPVisionEncode`
+- `CLIPLoader`
+- `GetNode`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `VAELoader`
+- `SetNode`
+- `PathchSageAttentionKJ`
+- `CFGNorm`
+- `VHS_VideoCombine`
+- `SetNode`
+- `GetImageSize`
+- `SetNode`
+- `GetNode`
+- `ImpactSwitch`
+- `Reroute`
+- `SetNode`
+- `Reroute`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+- `Reroute`
+- `Reroute`
+- `MathExpression|pysssss`
+- `easy batchAnything`
+- `GetImageRangeFromBatch`
+- `GetNode`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MathExpression|pysssss`
+- `SeedVR2BlockSwap`
+- `GetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `GetImageRangeFromBatch`
+- `WanMoeKSampler` ★核心
+- `SeedVR2`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `WanFirstLastFrameToVideo`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Int`
+- `VHS_VideoCombine`
+- `Image Comparer (rgthree)`
+- `RH_Nano_Banana_Image2Image`
+- `ImageResizeKJ`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `CR Text`
+
+## 关键参数
+
+- `seed` = `0.875`
+- `steps` = `randomize`
+- `cfg` = `14`
+- `sampler_name` = `3.5`
+- `scheduler` = `1`
+- `denoise` = `euler`
+
+## 知识
+
+覆盖率 **53%**（43/81）
+
+**有卡**：`ModelSamplingSD3`、`VHS_VideoInfo`、`Int`、`CLIPVisionEncode`、`CLIPTextEncode`、`VHS_LoadVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`CLIPVisionLoader`、`CLIPLoader`、`UNETLoader`、`PathchSageAttentionKJ`、`VAELoader`、`CFGNorm`、`VHS_VideoCombine`、`GetImageSize`、`easy forLoopEnd`、`easy forLoopStart`、`MathExpression|pysssss`、`easy batchAnything`、`GetImageRangeFromBatch`、`SeedVR2BlockSwap`、`VAEDecode`、`WanMoeKSampler`、`SeedVR2`、`ImageResizeKJv2`、`WanFirstLastFrameToVideo`、`LoraLoaderModelOnly`、`RH_Nano_Banana_Image2Image`、`ImageResizeKJ`、`LoadImage`、`CR Text`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

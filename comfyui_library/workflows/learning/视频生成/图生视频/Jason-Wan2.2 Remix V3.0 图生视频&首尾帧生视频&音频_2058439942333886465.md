@@ -1,0 +1,131 @@
+---
+key: 视频生成/图生视频/Jason-Wan2.2 Remix V3.0 图生视频&首尾帧生视频&音频_2058439942333886465.json
+name: Jason-Wan2.2 Remix V3.0 图生视频&首尾帧生视频&音频_2058439942333886465.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2058439942333886465.json
+hash: 7dddd94400e0df0c
+coverage: 0.921348
+learned_at: 2026-10-15 22:38:23
+nodes: [CLIPLoader, VAELoader, UNETLoader, UNETLoader, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, LoadImage, CLIPTextEncode, DuckHideNode, VHS_VideoCombine, FL_RIFE, VAEDecode, WanImageToVideo, CLIPVisionEncode, CLIPLoader, VAELoader, UNETLoader, UNETLoader, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, CLIPTextEncode, DuckHideNode, VHS_VideoCombine, SaveImage, CLIPTextEncode, VHS_VideoCombine, CLIPVisionLoader, VHS_VideoCombine, LoadImage, PreviewImage, PreviewImage, LoadImage, CLIPVisionLoader, CLIPVisionEncode, CLIPVisionEncode, WanMoeKSampler, WanFirstLastFrameToVideo, VAEDecode, ImageScaleBy, FL_RIFE, ImageScaleBy, Fast Groups Bypasser (rgthree), SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, RIFE VFI, VHS_VideoCombine, VHS_VideoCombine, SeedVR2LoadDiTModel, ImageScaleToTotalPixels, SaveImage, LoadImage, RHLLMChatNode, PreviewAny, LayerUtility: ImageScaleByAspectRatio V2, WanMoeKSampler, LayerUtility: ImageScaleByAspectRatio V2, CLIPLoader, VAELoader, UNETLoader, UNETLoader, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, PreviewImage, LoadImage, CLIPTextEncode, VHS_VideoCombine, VAEDecode, WanImageToVideo, CLIPVisionEncode, CLIPVisionLoader, ImageScaleBy, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, WanMoeKSampler, DuckHideNode, FL_RIFE, SaveImage, Qwen3_VQA, PreviewAny, HunyuanVideoFoley, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode]
+patterns: []
+missing: []
+parameters: {"cfg": 16, "denoise": "euler_ancestral", "sampler_name": 1, "scheduler": 1, "seed": 0.9, "steps": "increment"}
+---
+
+# 视频生成/图生视频/Jason-Wan2.2 Remix V3.0 图生视频&首尾帧生视频&音频_2058439942333886465.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2058439942333886465.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（89 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `DuckHideNode`
+- `VHS_VideoCombine`
+- `FL_RIFE`
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `DuckHideNode`
+- `VHS_VideoCombine`
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `CLIPVisionLoader`
+- `VHS_VideoCombine`
+- `LoadImage`
+- `PreviewImage`
+- `PreviewImage`
+- `LoadImage`
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `WanMoeKSampler` ★核心
+- `WanFirstLastFrameToVideo`
+- `VAEDecode` ★核心
+- `ImageScaleBy`
+- `FL_RIFE`
+- `ImageScaleBy`
+- `Fast Groups Bypasser (rgthree)`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `RIFE VFI`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SeedVR2LoadDiTModel`
+- `ImageScaleToTotalPixels`
+- `SaveImage`
+- `LoadImage`
+- `RHLLMChatNode`
+- `PreviewAny`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanMoeKSampler` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PreviewImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `VHS_VideoCombine`
+- `VAEDecode` ★核心
+- `WanImageToVideo`
+- `CLIPVisionEncode`
+- `CLIPVisionLoader`
+- `ImageScaleBy`
+- `CLIPTextEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `WanMoeKSampler` ★核心
+- `DuckHideNode`
+- `FL_RIFE`
+- `SaveImage`
+- `Qwen3_VQA`
+- `PreviewAny`
+- `HunyuanVideoFoley`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+
+## 关键参数
+
+- `seed` = `0.9`
+- `steps` = `increment`
+- `cfg` = `16`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler_ancestral`
+
+## 知识
+
+覆盖率 **92%**（82/89）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LoadImage`、`CLIPTextEncode`、`DuckHideNode`、`VHS_VideoCombine`、`FL_RIFE`、`VAEDecode`、`WanImageToVideo`、`CLIPVisionEncode`、`SaveImage`、`CLIPVisionLoader`、`WanMoeKSampler`、`WanFirstLastFrameToVideo`、`ImageScaleBy`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`RIFE VFI`、`SeedVR2LoadDiTModel`、`ImageScaleToTotalPixels`、`RHLLMChatNode`、`LayerUtility: ImageScaleByAspectRatio V2`、`Qwen3_VQA`、`HunyuanVideoFoley`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、SeedVR2LoadDiTModel、SeedVR2LoadVAEModel

@@ -1,0 +1,85 @@
+---
+key: 视频生成/图生视频/音画同步图生视频 LTX2.3图生视频KJ优化版_2032301702237392897.json
+name: 音画同步图生视频 LTX2.3图生视频KJ优化版_2032301702237392897.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2032301702237392897.json
+hash: 8e2ccb8953971675
+coverage: 0.76087
+learned_at: 2026-10-15 22:35:35
+nodes: [VAELoaderKJ, LTX2_NAG, LTX2SamplingPreviewOverride, GetNode, GetNode, UNETLoader, LTXVSeparateAVLatent, LTXVAudioVAEDecode, VAELoader, DualCLIPLoader, LTXVConditioning, VisualizeSigmasKJ, LTXVConcatAVLatent, PathchSageAttentionKJ, SetNode, VAELoaderKJ, EmptyLTXVLatentVideo, BasicScheduler, LTXVPreprocess, ModelSamplingSD3, SetNode, ConditioningZeroOut, SamplerCustom, VAEDecode, KSamplerSelect, CLIPTextEncode, CLIPTextEncode, SimpleMath+, ImageResizeKJv2, LTXVImgToVideoInplaceKJ, StringFunction|pysssss, SetNode, DF_Int_to_Float, GetNode, GetNode, AILab_QwenVL_Advanced, GetNode, easy positive, ShowText|pysssss, LoadImage, PrimitiveInt, PrimitiveInt, LTXVEmptyLatentAudio, Int, easy positive, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 305}
+---
+
+# 视频生成/图生视频/音画同步图生视频 LTX2.3图生视频KJ优化版_2032301702237392897.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2032301702237392897.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（46 个）：
+- `VAELoaderKJ`
+- `LTX2_NAG`
+- `LTX2SamplingPreviewOverride`
+- `GetNode`
+- `GetNode`
+- `UNETLoader` ★核心
+- `LTXVSeparateAVLatent`
+- `LTXVAudioVAEDecode` ★核心
+- `VAELoader`
+- `DualCLIPLoader`
+- `LTXVConditioning`
+- `VisualizeSigmasKJ`
+- `LTXVConcatAVLatent`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `VAELoaderKJ`
+- `EmptyLTXVLatentVideo`
+- `BasicScheduler`
+- `LTXVPreprocess`
+- `ModelSamplingSD3`
+- `SetNode`
+- `ConditioningZeroOut`
+- `SamplerCustom` ★核心
+- `VAEDecode` ★核心
+- `KSamplerSelect` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SimpleMath+`
+- `ImageResizeKJv2`
+- `LTXVImgToVideoInplaceKJ`
+- `StringFunction|pysssss`
+- `SetNode`
+- `DF_Int_to_Float`
+- `GetNode`
+- `GetNode`
+- `AILab_QwenVL_Advanced`
+- `GetNode`
+- `easy positive`
+- `ShowText|pysssss`
+- `LoadImage`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `Int`
+- `easy positive`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `width` = `305`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **76%**（35/46）
+
+**有卡**：`VAELoaderKJ`、`LTX2_NAG`、`LTX2SamplingPreviewOverride`、`UNETLoader`、`LTXVSeparateAVLatent`、`LTXVAudioVAEDecode`、`VAELoader`、`DualCLIPLoader`、`LTXVConditioning`、`VisualizeSigmasKJ`、`LTXVConcatAVLatent`、`PathchSageAttentionKJ`、`EmptyLTXVLatentVideo`、`BasicScheduler`、`LTXVPreprocess`、`ModelSamplingSD3`、`ConditioningZeroOut`、`SamplerCustom`、`VAEDecode`、`KSamplerSelect`、`CLIPTextEncode`、`SimpleMath+`、`ImageResizeKJv2`、`LTXVImgToVideoInplaceKJ`、`StringFunction|pysssss`、`DF_Int_to_Float`、`AILab_QwenVL_Advanced`、`easy positive`、`LoadImage`、`LTXVEmptyLatentAudio`、`Int`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、ConditioningZeroOut、LoadImage、UNETLoader、KSamplerSelect、SamplerCustom

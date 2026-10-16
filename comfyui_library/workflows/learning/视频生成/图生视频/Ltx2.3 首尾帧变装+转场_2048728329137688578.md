@@ -1,0 +1,102 @@
+---
+key: 视频生成/图生视频/Ltx2.3 首尾帧变装+转场_2048728329137688578.json
+name: Ltx2.3 首尾帧变装+转场_2048728329137688578.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2048728329137688578.json
+hash: 3c90e60a50d18895
+coverage: 0.873016
+learned_at: 2026-10-15 22:37:11
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVLatentUpsampler, KSamplerSelect, Reroute, PrimitiveInt, LTXVEmptyLatentAudio, SamplerCustomAdvanced, LTXVSeparateAVLatent, LatentUpscaleModelLoader, MarkdownNote, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, ResizeImageMaskNode, LTXVPreprocess, CFGGuider, LTX2_NAG, ManualSigmas, LTXVCropGuides, LTXVSeparateAVLatent, ResizeImagesByLongerEdge, PrimitiveInt, PrimitiveInt, ImageResizeKJv2, CLIPTextEncode, CLIPTextEncode, ImageResizeKJv2, LTXVFirstLastFrameControl_TTP, ResizeImagesByLongerEdge, ResizeImageMaskNode, EmptyLTXVLatentVideo, llama_cpp_parameters, easy showAnything, ImageStitch, VAELoaderKJ, DualCLIPLoader, VHS_VideoCombine, LTXVLatentUpsampler, LatentUpscaleModelLoader, SimpleMath+, LoadImage, LoadImage, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVConditioning, LTXVImgToVideoConditionOnly, LTXVPreprocess, llama_cpp_instruct_adv, llama_cpp_model_loader, PrimitiveInt, PrimitiveStringMultiline, UNETLoader, VAELoaderKJ, LTXVAudioVAEDecode, VAEDecodeTiled]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/Ltx2.3 首尾帧变装+转场_2048728329137688578.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2048728329137688578.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（63 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `LatentUpscaleModelLoader`
+- `MarkdownNote`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVConcatAVLatent`
+- `ResizeImageMaskNode`
+- `LTXVPreprocess`
+- `CFGGuider`
+- `LTX2_NAG`
+- `ManualSigmas`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `ResizeImagesByLongerEdge`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `LTXVFirstLastFrameControl_TTP`
+- `ResizeImagesByLongerEdge`
+- `ResizeImageMaskNode`
+- `EmptyLTXVLatentVideo`
+- `llama_cpp_parameters`
+- `easy showAnything`
+- `ImageStitch`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `VHS_VideoCombine`
+- `LTXVLatentUpsampler` ★核心
+- `LatentUpscaleModelLoader`
+- `SimpleMath+`
+- `LoadImage`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVConditioning`
+- `LTXVImgToVideoConditionOnly`
+- `LTXVPreprocess`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_model_loader`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `UNETLoader` ★核心
+- `VAELoaderKJ`
+- `LTXVAudioVAEDecode` ★核心
+- `VAEDecodeTiled` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **87%**（55/63）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`LatentUpscaleModelLoader`、`ComfyMathExpression`、`ResizeImageMaskNode`、`LTXVPreprocess`、`LTX2_NAG`、`LTXVCropGuides`、`ResizeImagesByLongerEdge`、`ImageResizeKJv2`、`CLIPTextEncode`、`LTXVFirstLastFrameControl_TTP`、`EmptyLTXVLatentVideo`、`llama_cpp_parameters`、`ImageStitch`、`VAELoaderKJ`、`DualCLIPLoader`、`VHS_VideoCombine`、`SimpleMath+`、`LoadImage`、`LoraLoaderModelOnly`、`LTXVConditioning`、`LTXVImgToVideoConditionOnly`、`llama_cpp_instruct_adv`、`llama_cpp_model_loader`、`UNETLoader`、`LTXVAudioVAEDecode`、`VAEDecodeTiled`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

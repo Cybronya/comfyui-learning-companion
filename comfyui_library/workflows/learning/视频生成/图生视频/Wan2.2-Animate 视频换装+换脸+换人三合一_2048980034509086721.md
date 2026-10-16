@@ -1,0 +1,147 @@
+---
+key: 视频生成/图生视频/Wan2.2-Animate 视频换装+换脸+换人三合一_2048980034509086721.json
+name: Wan2.2-Animate 视频换装+换脸+换人三合一_2048980034509086721.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2048980034509086721.json
+hash: c233bc0edc69787a
+coverage: 0.573913
+learned_at: 2026-10-15 22:37:12
+nodes: [WanVideoSetBlockSwap, WanVideoSetLoRAs, SetNode, GetNode, VHS_VideoInfo, WanVideoLoraSelectMulti, WanVideoTextEncodeCached, SetNode, SetNode, WanVideoVAELoader, MemoryCleaner, WanVideoBlockSwap, MemoryCleaner, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, CLIPVisionLoader, GetNode, GetNode, GetNode, WanVideoAnimateEmbeds, WanVideoSampler, WanVideoModelLoader, WanVideoLoraSelectMulti, WanVideoDecode, SetNode, SetNode, SetNode, SetNode, GetNode, MemoryCleaner, GetNode, GetNode, WanVideoContextOptions, WanVideoTeaCache, SetNode, Int, Int, MuyeTextEditOutput, SetNode, SetNode, GetNode, SDPoseOODProcessor, GetNode, YOLOModelLoader, SDPoseOODLoader, GetImageSizeAndCount, GetNode, OnnxDetectionModelLoader, PoseAndFaceDetection, DrawViTPose, SetNode, ImpactSwitch, ZML_AnyTypeSwitchFive, SetNode, SetNode, INTConstant, INTConstant, INTConstant, easy anythingIndexSwitch, INTConstant, INTConstant, INTConstant, INTConstant, INTConstant, easy anythingIndexSwitch, VHS_LoadVideo, easy float, Int, SimpleMath+, SimpleMath+, MuyeTextEditOutput, MuyeTextEditOutput, easy float, Int, SetNode, SetNode, ImageResizeKJv2, LayerUtility: PurgeVRAM V2, GetNode, easy sam3ModelLoader, easy sam3VideoSegmentation, VHS_VideoCombine, easy sam3VideoModelExtraConfig, easy showAnything, GetNode, Primitive integer [Crystools], Primitive integer [Crystools], INTConstant, DrawMaskOnImage, SetNode, SetNode, ImageResizeKJv2, SetNode, GrowMaskWithBlur, BlockifyMask, DeepTranslatorTextNode, PreviewImage, VHS_VideoCombine, Note, SetNode, LoadImage, GetNode, SetNode, GetNode, GetNode, GetNode, WanVideoClipVisionEncode, GetNode, JjkText, Int]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2-Animate 视频换装+换脸+换人三合一_2048980034509086721.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2048980034509086721.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（115 个）：
+- `WanVideoSetBlockSwap`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `GetNode`
+- `VHS_VideoInfo`
+- `WanVideoLoraSelectMulti`
+- `WanVideoTextEncodeCached`
+- `SetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `MemoryCleaner`
+- `WanVideoBlockSwap`
+- `MemoryCleaner`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `CLIPVisionLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoAnimateEmbeds`
+- `WanVideoSampler` ★核心
+- `WanVideoModelLoader`
+- `WanVideoLoraSelectMulti`
+- `WanVideoDecode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `MemoryCleaner`
+- `GetNode`
+- `GetNode`
+- `WanVideoContextOptions`
+- `WanVideoTeaCache`
+- `SetNode`
+- `Int`
+- `Int`
+- `MuyeTextEditOutput`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SDPoseOODProcessor`
+- `GetNode`
+- `YOLOModelLoader`
+- `SDPoseOODLoader`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `OnnxDetectionModelLoader`
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `SetNode`
+- `ImpactSwitch`
+- `ZML_AnyTypeSwitchFive`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `easy anythingIndexSwitch`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `INTConstant`
+- `easy anythingIndexSwitch`
+- `VHS_LoadVideo`
+- `easy float`
+- `Int`
+- `SimpleMath+`
+- `SimpleMath+`
+- `MuyeTextEditOutput`
+- `MuyeTextEditOutput`
+- `easy float`
+- `Int`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM V2`
+- `GetNode`
+- `easy sam3ModelLoader`
+- `easy sam3VideoSegmentation`
+- `VHS_VideoCombine`
+- `easy sam3VideoModelExtraConfig`
+- `easy showAnything`
+- `GetNode`
+- `Primitive integer [Crystools]`
+- `Primitive integer [Crystools]`
+- `INTConstant`
+- `DrawMaskOnImage`
+- `SetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GrowMaskWithBlur`
+- `BlockifyMask`
+- `DeepTranslatorTextNode`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `Note`
+- `SetNode`
+- `LoadImage`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `JjkText`
+- `Int`
+
+## 知识
+
+覆盖率 **57%**（66/115）
+
+**有卡**：`WanVideoSetBlockSwap`、`WanVideoSetLoRAs`、`VHS_VideoInfo`、`WanVideoLoraSelectMulti`、`WanVideoTextEncodeCached`、`WanVideoVAELoader`、`MemoryCleaner`、`WanVideoBlockSwap`、`CLIPVisionLoader`、`WanVideoAnimateEmbeds`、`WanVideoSampler`、`WanVideoModelLoader`、`WanVideoDecode`、`WanVideoContextOptions`、`WanVideoTeaCache`、`Int`、`MuyeTextEditOutput`、`SDPoseOODProcessor`、`YOLOModelLoader`、`SDPoseOODLoader`、`GetImageSizeAndCount`、`OnnxDetectionModelLoader`、`PoseAndFaceDetection`、`DrawViTPose`、`ZML_AnyTypeSwitchFive`、`INTConstant`、`easy anythingIndexSwitch`、`VHS_LoadVideo`、`easy float`、`SimpleMath+`、`ImageResizeKJv2`、`LayerUtility: PurgeVRAM V2`、`easy sam3ModelLoader`、`easy sam3VideoSegmentation`、`VHS_VideoCombine`、`easy sam3VideoModelExtraConfig`、`Primitive integer [Crystools]`、`DrawMaskOnImage`、`GrowMaskWithBlur`、`BlockifyMask`、`DeepTranslatorTextNode`、`LoadImage`、`WanVideoClipVisionEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoSetLoRAs、WanVideoLoraSelectMulti

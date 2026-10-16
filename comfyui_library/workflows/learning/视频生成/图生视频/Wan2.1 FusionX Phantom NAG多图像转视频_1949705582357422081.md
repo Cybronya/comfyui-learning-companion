@@ -1,0 +1,68 @@
+---
+key: 视频生成/图生视频/Wan2.1 FusionX Phantom NAG多图像转视频_1949705582357422081.json
+name: Wan2.1 FusionX Phantom NAG多图像转视频_1949705582357422081.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1949705582357422081.json
+hash: 444528beda102cbc
+coverage: 0.805556
+learned_at: 2026-10-15 22:30:50
+nodes: [LoadImage, ImageResizeKJv2, WanVideoEncode, MarkdownNote, INTConstant, WanVideoBlockSwap, WanVideoTorchCompileSettings, Reroute, ImageResizeKJv2, WanVideoEncode, WanVideoLoraSelect, ImageResizeKJv2, WanVideoEncode, ImageResizeKJv2, WanVideoEncode, LoadImage, LoadImage, LoadImage, WanVideoVAELoader, WanVideoModelLoader, LoadWanVideoT5TextEncoder, WanVideoTextEncodeSingle, WanVideoTextEncodeSingle, INTConstant, Note Plus (mtb), LoadImageFromUrl, WanVideoApplyNAG, WanVideoSampler, WanVideoDecode, WanVideoPhantomEmbeds, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, MarkdownNote, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1 FusionX Phantom NAG多图像转视频_1949705582357422081.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1949705582357422081.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（36 个）：
+- `LoadImage`
+- `ImageResizeKJv2`
+- `WanVideoEncode`
+- `MarkdownNote`
+- `INTConstant`
+- `WanVideoBlockSwap`
+- `WanVideoTorchCompileSettings`
+- `Reroute`
+- `ImageResizeKJv2`
+- `WanVideoEncode`
+- `WanVideoLoraSelect`
+- `ImageResizeKJv2`
+- `WanVideoEncode`
+- `ImageResizeKJv2`
+- `WanVideoEncode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoVAELoader`
+- `WanVideoModelLoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncodeSingle`
+- `WanVideoTextEncodeSingle`
+- `INTConstant`
+- `Note Plus (mtb)`
+- `LoadImageFromUrl`
+- `WanVideoApplyNAG`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `WanVideoPhantomEmbeds`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `MarkdownNote`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **81%**（29/36）
+
+**有卡**：`LoadImage`、`ImageResizeKJv2`、`WanVideoEncode`、`INTConstant`、`WanVideoBlockSwap`、`WanVideoTorchCompileSettings`、`WanVideoLoraSelect`、`WanVideoVAELoader`、`WanVideoModelLoader`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncodeSingle`、`Note Plus (mtb)`、`LoadImageFromUrl`、`WanVideoApplyNAG`、`WanVideoSampler`、`WanVideoDecode`、`WanVideoPhantomEmbeds`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoVAELoader、WanVideoTextEncodeSingle、WanVideoEncode、WanVideoLoraSelect

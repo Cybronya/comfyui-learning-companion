@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/wan2.2首尾帧生视频_2042865188126334978.json
+name: wan2.2首尾帧生视频_2042865188126334978.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2042865188126334978.json
+hash: 3b88ebead4995cc1
+coverage: 0.92
+learned_at: 2026-10-15 22:36:29
+nodes: [LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, ImageResizeKJv2, PreviewImage, ImageResizeKJv2, KSamplerAdvanced, KSamplerAdvanced, ModelSamplingSD3, ModelSamplingSD3, ModelPatchTorchSettings, ModelPatchTorchSettings, PathchSageAttentionKJ, PathchSageAttentionKJ, WanFirstLastFrameToVideo, UNETLoader, UNETLoader, CLIPLoader, VAELoader, CLIPTextEncode, LoadImage, LoadImage, CLIPTextEncode, VAEDecode, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "normal", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/wan2.2首尾帧生视频_2042865188126334978.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2042865188126334978.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（25 个）：
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `PathchSageAttentionKJ`
+- `WanFirstLastFrameToVideo`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `normal`
+
+## 知识
+
+覆盖率 **92%**（23/25）
+
+**有卡**：`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJv2`、`KSamplerAdvanced`、`ModelSamplingSD3`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`WanFirstLastFrameToVideo`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`CLIPTextEncode`、`LoadImage`、`VAEDecode`、`VHS_VideoCombine`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2、KSamplerAdvanced

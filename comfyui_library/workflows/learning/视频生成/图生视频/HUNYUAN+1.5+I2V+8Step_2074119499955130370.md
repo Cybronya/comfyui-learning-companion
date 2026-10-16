@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json
+name: HUNYUAN+1.5+I2V+8Step_2074119499955130370.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2074119499955130370.json
+hash: ed18285e758c29bd
+coverage: 0.971429
+learned_at: 2026-10-15 22:41:12
+nodes: [BasicScheduler, CFGGuider, ModelSamplingSD3, KSamplerSelect, DualCLIPLoader, PathchSageAttentionKJ, HunyuanVideo15SuperResolution, KSamplerSelect, UNETLoader, VHS_VideoCombine, LatentUpscaleModelLoader, RandomNoise, RandomNoise, PathchSageAttentionKJ, CFGGuider, CLIPTextEncode, CLIPVisionLoader, CLIPVisionEncode, HunyuanVideo15ImageToVideo, HunyuanVideo15LatentUpscaleWithModel, GetImageSize, MarkdownNote, SamplerCustomAdvanced, VAEDecode, BasicScheduler, ModelSamplingSD3, SamplerCustomAdvanced, VAELoader, VHS_VideoCombine, easy cleanGpuUsed, LoadImage, CLIPTextEncode, VAEDecode, UNETLoader, ResizeImagesByLongerEdge]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2074119499955130370.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（35 个）：
+- `BasicScheduler`
+- `CFGGuider`
+- `ModelSamplingSD3`
+- `KSamplerSelect` ★核心
+- `DualCLIPLoader`
+- `PathchSageAttentionKJ`
+- `HunyuanVideo15SuperResolution`
+- `KSamplerSelect` ★核心
+- `UNETLoader` ★核心
+- `VHS_VideoCombine`
+- `LatentUpscaleModelLoader`
+- `RandomNoise`
+- `RandomNoise`
+- `PathchSageAttentionKJ`
+- `CFGGuider`
+- `CLIPTextEncode` ★核心
+- `CLIPVisionLoader`
+- `CLIPVisionEncode`
+- `HunyuanVideo15ImageToVideo`
+- `HunyuanVideo15LatentUpscaleWithModel`
+- `GetImageSize`
+- `MarkdownNote`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `BasicScheduler`
+- `ModelSamplingSD3`
+- `SamplerCustomAdvanced` ★核心
+- `VAELoader`
+- `VHS_VideoCombine`
+- `easy cleanGpuUsed`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `ResizeImagesByLongerEdge`
+
+## 知识
+
+覆盖率 **97%**（34/35）
+
+**有卡**：`BasicScheduler`、`CFGGuider`、`ModelSamplingSD3`、`KSamplerSelect`、`DualCLIPLoader`、`PathchSageAttentionKJ`、`HunyuanVideo15SuperResolution`、`UNETLoader`、`VHS_VideoCombine`、`LatentUpscaleModelLoader`、`RandomNoise`、`CLIPTextEncode`、`CLIPVisionLoader`、`CLIPVisionEncode`、`HunyuanVideo15ImageToVideo`、`HunyuanVideo15LatentUpscaleWithModel`、`GetImageSize`、`SamplerCustomAdvanced`、`VAEDecode`、`VAELoader`、`easy cleanGpuUsed`、`LoadImage`、`ResizeImagesByLongerEdge`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

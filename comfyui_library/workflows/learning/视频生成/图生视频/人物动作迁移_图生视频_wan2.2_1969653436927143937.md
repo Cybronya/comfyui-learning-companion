@@ -1,0 +1,67 @@
+---
+key: 视频生成/图生视频/人物动作迁移_图生视频_wan2.2_1969653436927143937.json
+name: 人物动作迁移_图生视频_wan2.2_1969653436927143937.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1969653436927143937.json
+hash: 20fde8b90c5035e5
+coverage: 0.942857
+learned_at: 2026-10-15 22:31:50
+nodes: [WanVideoVACEModelSelect, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoTorchCompileSettings, Reroute, VHS_LoadVideo, VHS_VideoCombine, WanVideoBlockSwap, AIO_Preprocessor, ImageBlend, DWPreprocessor, DWPreprocessor, GetImageSizeAndCount, WanVideoVACEEncode, EmptyImage, WanVideoSampler, ImageConcatMulti, ColorMatch, LayerUtility: PurgeVRAM V2, VHS_VideoCombine, WanVideoExperimentalArgs, ImageConcatMulti, WanVideoDecode, WanVideoSLG, WanVideoTeaCache, WanVideoEnhanceAVideo, ImageResizeKJ, ImagePadKJ, ImageResizeKJ, WanVideoTextEncode, WanVideoModelLoader, WanVideoLoraSelect, ShowText|pysssss, RH_Captioner, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/人物动作迁移_图生视频_wan2.2_1969653436927143937.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1969653436927143937.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（35 个）：
+- `WanVideoVACEModelSelect`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTorchCompileSettings`
+- `Reroute`
+- `VHS_LoadVideo`
+- `VHS_VideoCombine`
+- `WanVideoBlockSwap`
+- `AIO_Preprocessor`
+- `ImageBlend`
+- `DWPreprocessor`
+- `DWPreprocessor`
+- `GetImageSizeAndCount`
+- `WanVideoVACEEncode`
+- `EmptyImage`
+- `WanVideoSampler` ★核心
+- `ImageConcatMulti`
+- `ColorMatch`
+- `LayerUtility: PurgeVRAM V2`
+- `VHS_VideoCombine`
+- `WanVideoExperimentalArgs`
+- `ImageConcatMulti`
+- `WanVideoDecode`
+- `WanVideoSLG`
+- `WanVideoTeaCache`
+- `WanVideoEnhanceAVideo`
+- `ImageResizeKJ`
+- `ImagePadKJ`
+- `ImageResizeKJ`
+- `WanVideoTextEncode`
+- `WanVideoModelLoader`
+- `WanVideoLoraSelect`
+- `ShowText|pysssss`
+- `RH_Captioner`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **94%**（33/35）
+
+**有卡**：`WanVideoVACEModelSelect`、`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoTorchCompileSettings`、`VHS_LoadVideo`、`VHS_VideoCombine`、`WanVideoBlockSwap`、`AIO_Preprocessor`、`ImageBlend`、`DWPreprocessor`、`GetImageSizeAndCount`、`WanVideoVACEEncode`、`EmptyImage`、`WanVideoSampler`、`ImageConcatMulti`、`ColorMatch`、`LayerUtility: PurgeVRAM V2`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`WanVideoSLG`、`WanVideoTeaCache`、`WanVideoEnhanceAVideo`、`ImageResizeKJ`、`ImagePadKJ`、`WanVideoTextEncode`、`WanVideoModelLoader`、`WanVideoLoraSelect`、`RH_Captioner`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

@@ -1,0 +1,66 @@
+---
+key: 视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json
+name: wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1937759191832662018.json
+hash: cb82c5223b5c484e
+coverage: 0.941176
+learned_at: 2026-10-15 22:30:29
+nodes: [LayerUtility: PurgeVRAM V2, WanVideoVAELoader, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, WanVideoDecode, WanVideoVACEModelSelect, LoadImage, WanVideoMagCache, ShowText|pysssss, WanVideoTextEncode, GetImageSizeAndCount, WanVideoExperimentalArgs, WanVideoSLG, RH_Translator, ImageResizeKJ, WanVideoSampler, CR Text Concatenate, MathExpression|pysssss, JWInteger, WanVideoVACEEncode, AIO_Preprocessor, VHS_VideoCombine, ColorMatch, VHS_VideoCombine, easy int, easy int, easy textSwitch, MarkdownNote, VHS_LoadVideo, WanVideoLoraSelect, LayerMask: LoadFlorence2Model, LayerUtility: Florence2Image2Prompt, ImageResizeKJ, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1937759191832662018.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（34 个）：
+- `LayerUtility: PurgeVRAM V2`
+- `WanVideoVAELoader`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoDecode`
+- `WanVideoVACEModelSelect`
+- `LoadImage`
+- `WanVideoMagCache`
+- `ShowText|pysssss`
+- `WanVideoTextEncode`
+- `GetImageSizeAndCount`
+- `WanVideoExperimentalArgs`
+- `WanVideoSLG`
+- `RH_Translator`
+- `ImageResizeKJ`
+- `WanVideoSampler` ★核心
+- `CR Text Concatenate`
+- `MathExpression|pysssss`
+- `JWInteger`
+- `WanVideoVACEEncode`
+- `AIO_Preprocessor`
+- `VHS_VideoCombine`
+- `ColorMatch`
+- `VHS_VideoCombine`
+- `easy int`
+- `easy int`
+- `easy textSwitch`
+- `MarkdownNote`
+- `VHS_LoadVideo`
+- `WanVideoLoraSelect`
+- `LayerMask: LoadFlorence2Model`
+- `LayerUtility: Florence2Image2Prompt`
+- `ImageResizeKJ`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **94%**（32/34）
+
+**有卡**：`LayerUtility: PurgeVRAM V2`、`WanVideoVAELoader`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`WanVideoDecode`、`WanVideoVACEModelSelect`、`LoadImage`、`WanVideoMagCache`、`WanVideoTextEncode`、`GetImageSizeAndCount`、`WanVideoExperimentalArgs`、`WanVideoSLG`、`RH_Translator`、`ImageResizeKJ`、`WanVideoSampler`、`CR Text Concatenate`、`MathExpression|pysssss`、`JWInteger`、`WanVideoVACEEncode`、`AIO_Preprocessor`、`VHS_VideoCombine`、`ColorMatch`、`easy int`、`easy textSwitch`、`VHS_LoadVideo`、`WanVideoLoraSelect`、`LayerMask: LoadFlorence2Model`、`LayerUtility: Florence2Image2Prompt`、`WanVideoModelLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode、WanVideoLoraSelect

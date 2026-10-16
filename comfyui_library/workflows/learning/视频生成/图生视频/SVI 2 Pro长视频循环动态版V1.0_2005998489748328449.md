@@ -1,0 +1,81 @@
+---
+key: 视频生成/图生视频/SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json
+name: SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2005998489748328449.json
+hash: ddca9f10cd9cc89b
+coverage: 0.871795
+learned_at: 2026-10-15 22:34:00
+nodes: [Note, Note, CR Text, Note, JWInteger, Int, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, DiffusionModelLoaderKJ, easy promptLine, LoadImage, CLIPTextEncode, CLIPTextEncode, KSamplerAdvanced, WanImageToVideoSVIPro, VAEDecode, KSamplerAdvanced, VAEEncode, easy forLoopStart, LayerUtility: ImageScaleByAspectRatio V2, SimpleMath+, KSamplerAdvanced, KSamplerAdvanced, easy promptLine, SimpleMath+, VAEDecode, CLIPTextEncode, ImageBatchExtendWithOverlap, WanImageToVideoSVIPro, easy forLoopEnd, VHS_VideoCombine, CLIPLoader, VHS_VideoCombine, CLIPTextEncode, VAELoader, Note, Note, DiffusionModelLoaderKJ]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/SVI 2 Pro长视频循环动态版V1.0_2005998489748328449.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2005998489748328449.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（39 个）：
+- `Note`
+- `Note`
+- `CR Text`
+- `Note`
+- `JWInteger`
+- `Int`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `DiffusionModelLoaderKJ`
+- `easy promptLine`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSamplerAdvanced` ★核心
+- `WanImageToVideoSVIPro`
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEEncode` ★核心
+- `easy forLoopStart`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `SimpleMath+`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `easy promptLine`
+- `SimpleMath+`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageBatchExtendWithOverlap`
+- `WanImageToVideoSVIPro`
+- `easy forLoopEnd`
+- `VHS_VideoCombine`
+- `CLIPLoader`
+- `VHS_VideoCombine`
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `Note`
+- `Note`
+- `DiffusionModelLoaderKJ`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **87%**（34/39）
+
+**有卡**：`CR Text`、`JWInteger`、`Int`、`LoraLoaderModelOnly`、`DiffusionModelLoaderKJ`、`easy promptLine`、`LoadImage`、`CLIPTextEncode`、`KSamplerAdvanced`、`WanImageToVideoSVIPro`、`VAEDecode`、`VAEEncode`、`easy forLoopStart`、`LayerUtility: ImageScaleByAspectRatio V2`、`SimpleMath+`、`ImageBatchExtendWithOverlap`、`easy forLoopEnd`、`VHS_VideoCombine`、`CLIPLoader`、`VAELoader`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、KSamplerAdvanced、VAEEncode

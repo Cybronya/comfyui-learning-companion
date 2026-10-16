@@ -1,0 +1,166 @@
+---
+key: 视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose+NLF_1996133030429442049.json
+name: 动作迁移+表情迁移：Wan2.2AnimateV2+SDPose+NLF_1996133030429442049.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1996133030429442049.json
+hash: 56ae9371bcd93037
+coverage: 0.402985
+learned_at: 2026-10-15 22:33:25
+nodes: [SDPoseOODLoader, CLIPVisionLoader, SetNode, GetNode, GetNode, SetNode, GetNode, GetNode, GetNode, SetNode, GetNode, SetNode, SetNode, SetNode, GetNode, PoseDetectionVitPoseToDWPose, GetNode, YOLOModelLoader, PreviewImage, GetNode, GetNode, GetNode, GetNode, PoseDetectionVitPoseToDWPose, DownloadAndLoadNLFModel, SetNode, NLFPredict, GetNode, GetNode, VHS_VideoCombine, VHS_VideoCombine, GetNode, GetNode, RenderNLFPoses, OnnxDetectionModelLoader, SetNode, GetNode, SetNode, SetNode, Int, Int, PoseAndFaceDetection, WanVideoSchedulerv2, WanVideoSamplerv2, GetNode, GetNode, GetNode, GetNode, WanVideoClipVisionEncode, GetNode, GetNode, WanVideoModelLoader, GetNode, AdaptiveWanVideoAnimateEmbeds, WanVideoContextOptions, WanVideoSamplerExtraArgs, GetNode, GetNode, GetNode, GetNode, GetNode, WanVideoDecode, GetNode, SetNode, SetNode, SetNode, VHS_VideoInfo, WanVideoSetLoRAs, SetNode, easy cleanGpuUsed, WanVideoBlockSwap, ImageFromBatch, VHS_VideoCombine, VHS_VideoCombine, GetNode, GetNode, ImageConcatMulti, ImageConcatMulti, GetNode, GetNode, GetNode, Fast Groups Bypasser (rgthree), ImageResizeKJv2, Text, WanVideoVAELoader, SetNode, Note, SetNode, RepeatImageBatch, ImageBatchMulti, SetNode, ImageFromBatch, SetNode, SimpleMath+, SimpleMath+, GetNode, SetNode, WanVideoLoraSelectMulti, GetImageSizeAndCount, OnnxDetectionModelLoader, GetNode, GetNode, WanVideoTextEncodeCached, InversionDemoLazySwitch, SetNode, GetNode, PrimitiveFloat, Note, Note, PrimitiveFloat, PrimitiveFloat, Int, Note, Note, Note, Note, Note, Note, Note, Int, PrimitiveBoolean, PrimitiveBoolean, PrimitiveBoolean, Fast Groups Bypasser (rgthree), VHS_LoadVideo, LoadImage, VHS_VideoCombine, GetNode, Note, SDPoseOODProcessor, WanVideoLoraSelect, Note, Note, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose+NLF_1996133030429442049.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1996133030429442049.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（134 个）：
+- `SDPoseOODLoader`
+- `CLIPVisionLoader`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `PoseDetectionVitPoseToDWPose`
+- `GetNode`
+- `YOLOModelLoader`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PoseDetectionVitPoseToDWPose`
+- `DownloadAndLoadNLFModel`
+- `SetNode`
+- `NLFPredict`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `RenderNLFPoses`
+- `OnnxDetectionModelLoader`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `Int`
+- `Int`
+- `PoseAndFaceDetection`
+- `WanVideoSchedulerv2`
+- `WanVideoSamplerv2` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoClipVisionEncode`
+- `GetNode`
+- `GetNode`
+- `WanVideoModelLoader`
+- `GetNode`
+- `AdaptiveWanVideoAnimateEmbeds`
+- `WanVideoContextOptions`
+- `WanVideoSamplerExtraArgs` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_VideoInfo`
+- `WanVideoSetLoRAs`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `WanVideoBlockSwap`
+- `ImageFromBatch`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `ImageConcatMulti`
+- `ImageConcatMulti`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `ImageResizeKJv2`
+- `Text`
+- `WanVideoVAELoader`
+- `SetNode`
+- `Note`
+- `SetNode`
+- `RepeatImageBatch`
+- `ImageBatchMulti`
+- `SetNode`
+- `ImageFromBatch`
+- `SetNode`
+- `SimpleMath+`
+- `SimpleMath+`
+- `GetNode`
+- `SetNode`
+- `WanVideoLoraSelectMulti`
+- `GetImageSizeAndCount`
+- `OnnxDetectionModelLoader`
+- `GetNode`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `InversionDemoLazySwitch`
+- `SetNode`
+- `GetNode`
+- `PrimitiveFloat`
+- `Note`
+- `Note`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `Int`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Int`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `GetNode`
+- `Note`
+- `SDPoseOODProcessor`
+- `WanVideoLoraSelect`
+- `Note`
+- `Note`
+- `Note`
+
+## 知识
+
+覆盖率 **40%**（54/134）
+
+**有卡**：`SDPoseOODLoader`、`CLIPVisionLoader`、`PoseDetectionVitPoseToDWPose`、`YOLOModelLoader`、`DownloadAndLoadNLFModel`、`NLFPredict`、`VHS_VideoCombine`、`RenderNLFPoses`、`OnnxDetectionModelLoader`、`Int`、`PoseAndFaceDetection`、`WanVideoSchedulerv2`、`WanVideoSamplerv2`、`WanVideoClipVisionEncode`、`WanVideoModelLoader`、`AdaptiveWanVideoAnimateEmbeds`、`WanVideoContextOptions`、`WanVideoSamplerExtraArgs`、`WanVideoDecode`、`VHS_VideoInfo`、`WanVideoSetLoRAs`、`easy cleanGpuUsed`、`WanVideoBlockSwap`、`ImageFromBatch`、`ImageConcatMulti`、`ImageResizeKJv2`、`Text`、`WanVideoVAELoader`、`RepeatImageBatch`、`ImageBatchMulti`、`SimpleMath+`、`WanVideoLoraSelectMulti`、`GetImageSizeAndCount`、`WanVideoTextEncodeCached`、`InversionDemoLazySwitch`、`PrimitiveBoolean`、`VHS_LoadVideo`、`LoadImage`、`SDPoseOODProcessor`、`WanVideoLoraSelect`
+
+**用到的条目**：LoadImage、WanVideoSamplerv2、WanVideoSamplerExtraArgs、WanVideoDecode、WanVideoVAELoader、WanVideoClipVisionEncode、WanVideoTextEncodeCached、WanVideoLoraSelect

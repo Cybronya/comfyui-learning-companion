@@ -1,0 +1,99 @@
+---
+key: 视频生成/图生视频/Ltx2.3 再进化OmniNFT 画质-音质双提升！_2058534614507024386.json
+name: Ltx2.3 再进化OmniNFT 画质-音质双提升！_2058534614507024386.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2058534614507024386.json
+hash: d6ad23a3de05fb27
+coverage: 0.9
+learned_at: 2026-10-15 22:38:24
+nodes: [RandomNoise, RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, KSamplerSelect, Reroute, EmptyLTXVLatentVideo, LTXVAudioVAEDecode, PrimitiveInt, LTXVEmptyLatentAudio, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, VAEDecodeTiled, LatentUpscaleModelLoader, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, LTXVConcatAVLatent, LTXVPreprocess, LTXVImgToVideoInplace, PrimitiveInt, PrimitiveInt, ResizeImagesByLongerEdge, CFGGuider, CLIPTextEncode, LTXVConditioning, LTX2_NAG, CLIPTextEncode, LTXVImgToVideoInplace, ManualSigmas, ManualSigmas, ImageResizeKJv2, LayerUtility: PurgeVRAM, VAELoaderKJ, VAELoaderKJ, DualCLIPLoader, VHS_VideoCombine, PathchSageAttentionKJ, ComfyMathExpression, LTXVLatentUpsampler, LatentUpscaleModelLoader, ModelPatchTorchSettings, LTXVChunkFeedForward, ManualSigmas, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ManualSigmas, LoadImage, UNETLoader, PrimitiveStringMultiline, PrimitiveInt, LoraLoaderModelOnly, LoraLoaderModelOnly]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 44, "width": 97}
+---
+
+# 视频生成/图生视频/Ltx2.3 再进化OmniNFT 画质-音质双提升！_2058534614507024386.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2058534614507024386.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（60 个）：
+- `RandomNoise`
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `KSamplerSelect` ★核心
+- `Reroute`
+- `EmptyLTXVLatentVideo`
+- `LTXVAudioVAEDecode` ★核心
+- `PrimitiveInt`
+- `LTXVEmptyLatentAudio` ★核心
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `VAEDecodeTiled` ★核心
+- `LatentUpscaleModelLoader`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `LTXVConcatAVLatent`
+- `LTXVPreprocess`
+- `LTXVImgToVideoInplace`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `ResizeImagesByLongerEdge`
+- `CFGGuider`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `LTX2_NAG`
+- `CLIPTextEncode` ★核心
+- `LTXVImgToVideoInplace`
+- `ManualSigmas`
+- `ManualSigmas`
+- `ImageResizeKJv2`
+- `LayerUtility: PurgeVRAM`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `VHS_VideoCombine`
+- `PathchSageAttentionKJ`
+- `ComfyMathExpression`
+- `LTXVLatentUpsampler` ★核心
+- `LatentUpscaleModelLoader`
+- `ModelPatchTorchSettings`
+- `LTXVChunkFeedForward`
+- `ManualSigmas`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ManualSigmas`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `44`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **90%**（54/60）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`EmptyLTXVLatentVideo`、`LTXVAudioVAEDecode`、`LTXVEmptyLatentAudio`、`LTXVSeparateAVLatent`、`VAEDecodeTiled`、`LatentUpscaleModelLoader`、`ComfyMathExpression`、`LTXVPreprocess`、`LTXVImgToVideoInplace`、`ResizeImagesByLongerEdge`、`CLIPTextEncode`、`LTXVConditioning`、`LTX2_NAG`、`ImageResizeKJv2`、`LayerUtility: PurgeVRAM`、`VAELoaderKJ`、`DualCLIPLoader`、`VHS_VideoCombine`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`LTXVChunkFeedForward`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、LTXVLatentUpsampler

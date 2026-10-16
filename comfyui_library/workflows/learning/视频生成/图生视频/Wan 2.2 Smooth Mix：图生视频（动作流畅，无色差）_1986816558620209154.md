@@ -1,0 +1,90 @@
+---
+key: 视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json
+name: Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1986816558620209154.json
+hash: 96825a26b5beb24f
+coverage: 0.770833
+learned_at: 2026-10-15 22:32:57
+nodes: [Note, Note, CLIPLoader, VAELoader, PreviewImage, Note, Note, Note, Seed (rgthree), Note, Note, Note, easy cleanGpuUsed, Pick From Batch (mtb), easy cleanGpuUsed, ImageScaleBy, SaveImage, RIFE VFI, ImageScaleBy, VHS_VideoCombine, VHS_VideoCombine, ModelSamplingSD3, ModelSamplingSD3, CLIPVisionEncode, KSamplerAdvanced, KSamplerAdvanced, VAEDecode, MathExpression|pysssss, JWInteger, MathExpression|pysssss, easy showAnything, PathchSageAttentionKJ, ModelPatchTorchSettings, PathchSageAttentionKJ, ModelPatchTorchSettings, wanBlockSwap, wanBlockSwap, Label (rgthree), CLIPTextEncode, CLIPVisionLoader, JWInteger, WanImageToVideo, LayerUtility: ImageScaleByAspectRatio V2, CLIPTextEncode, PrimitiveStringMultiline, LoadImage, UNETLoader, UNETLoader]
+patterns: []
+missing: []
+parameters: {"cfg": 10, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "randomize"}
+---
+
+# 视频生成/图生视频/Wan 2.2 Smooth Mix：图生视频（动作流畅，无色差）_1986816558620209154.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1986816558620209154.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（48 个）：
+- `Note`
+- `Note`
+- `CLIPLoader`
+- `VAELoader`
+- `PreviewImage`
+- `Note`
+- `Note`
+- `Note`
+- `Seed (rgthree)`
+- `Note`
+- `Note`
+- `Note`
+- `easy cleanGpuUsed`
+- `Pick From Batch (mtb)`
+- `easy cleanGpuUsed`
+- `ImageScaleBy`
+- `SaveImage`
+- `RIFE VFI`
+- `ImageScaleBy`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `CLIPVisionEncode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `VAEDecode` ★核心
+- `MathExpression|pysssss`
+- `JWInteger`
+- `MathExpression|pysssss`
+- `easy showAnything`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `wanBlockSwap`
+- `wanBlockSwap`
+- `Label (rgthree)`
+- `CLIPTextEncode` ★核心
+- `CLIPVisionLoader`
+- `JWInteger`
+- `WanImageToVideo`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `CLIPTextEncode` ★核心
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `randomize`
+- `cfg` = `10`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **77%**（37/48）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`Seed (rgthree)`、`easy cleanGpuUsed`、`Pick From Batch (mtb)`、`ImageScaleBy`、`SaveImage`、`RIFE VFI`、`VHS_VideoCombine`、`ModelSamplingSD3`、`CLIPVisionEncode`、`KSamplerAdvanced`、`VAEDecode`、`MathExpression|pysssss`、`JWInteger`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`wanBlockSwap`、`Label (rgthree)`、`CLIPTextEncode`、`CLIPVisionLoader`、`WanImageToVideo`、`LayerUtility: ImageScaleByAspectRatio V2`、`LoadImage`、`UNETLoader`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、Seed (rgthree)

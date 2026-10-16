@@ -1,0 +1,101 @@
+---
+key: 视频生成/图生视频/（官方版）Wan2.2+Remix+V2+Qwen3+VL扩写图生视频V1 (1)_1987523064843931649.json
+name: （官方版）Wan2.2+Remix+V2+Qwen3+VL扩写图生视频V1 (1)_1987523064843931649.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1987523064843931649.json
+hash: d1eb8625beb1b801
+coverage: 0.79661
+learned_at: 2026-10-15 22:32:59
+nodes: [Note, ImageResizeKJv2, SaveImage, ImageScaleBy, CLIPVisionEncode, Seed (rgthree), WanImageToVideo, Note, Note, KSamplerAdvanced, KSamplerAdvanced, CLIPTextEncode, Note, VAEDecode, Note, CLIPTextEncode, Note, LayerUtility: PurgeVRAM, CR Prompt Text, Text Concatenate, CR Prompt Text, JWInteger, Note, JWInteger, Note, Note, VHS_VideoCombine, VHS_VideoCombine, ModelSamplingSD3, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, Pick From Batch (mtb), ImageScaleBy, VHS_VideoCombine, LayerUtility: PurgeVRAM, Note, PathchSageAttentionKJ, LoraLoaderModelOnly, PathchSageAttentionKJ, wanBlockSwap, LoraLoaderModelOnly, ModelSamplingSD3, ColorMatch, PreviewImage, VHS_VideoCombine, VHS_VideoCombine, UNETLoader, wanBlockSwap, easy showAnything, LayerUtility: ImageScaleByAspectRatio V2, UNETLoader, easy cleanGpuUsed, CR Prompt Text, LoadImage, CLIPVisionLoader, VAELoader, CLIPLoader, Qwen3_VQA]
+patterns: []
+missing: []
+parameters: {"cfg": 8, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/（官方版）Wan2.2+Remix+V2+Qwen3+VL扩写图生视频V1 (1)_1987523064843931649.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1987523064843931649.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（59 个）：
+- `Note`
+- `ImageResizeKJv2`
+- `SaveImage`
+- `ImageScaleBy`
+- `CLIPVisionEncode`
+- `Seed (rgthree)`
+- `WanImageToVideo`
+- `Note`
+- `Note`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `Note`
+- `VAEDecode` ★核心
+- `Note`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `LayerUtility: PurgeVRAM`
+- `CR Prompt Text`
+- `Text Concatenate`
+- `CR Prompt Text`
+- `JWInteger`
+- `Note`
+- `JWInteger`
+- `Note`
+- `Note`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ModelSamplingSD3`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `Pick From Batch (mtb)`
+- `ImageScaleBy`
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM`
+- `Note`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `LoraLoaderModelOnly` ★核心
+- `ModelSamplingSD3`
+- `ColorMatch`
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `UNETLoader` ★核心
+- `wanBlockSwap`
+- `easy showAnything`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `UNETLoader` ★核心
+- `easy cleanGpuUsed`
+- `CR Prompt Text`
+- `LoadImage`
+- `CLIPVisionLoader`
+- `VAELoader`
+- `CLIPLoader`
+- `Qwen3_VQA`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **80%**（47/59）
+
+**有卡**：`ImageResizeKJv2`、`SaveImage`、`ImageScaleBy`、`CLIPVisionEncode`、`Seed (rgthree)`、`WanImageToVideo`、`KSamplerAdvanced`、`CLIPTextEncode`、`VAEDecode`、`LayerUtility: PurgeVRAM`、`CR Prompt Text`、`Text Concatenate`、`JWInteger`、`VHS_VideoCombine`、`ModelSamplingSD3`、`Pick From Batch (mtb)`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`wanBlockSwap`、`ColorMatch`、`UNETLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy cleanGpuUsed`、`LoadImage`、`CLIPVisionLoader`、`VAELoader`、`CLIPLoader`、`Qwen3_VQA`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、LayerUtility: ImageScaleByAspectRatio V2

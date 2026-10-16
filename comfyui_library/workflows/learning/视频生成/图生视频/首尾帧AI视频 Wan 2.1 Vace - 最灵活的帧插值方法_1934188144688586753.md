@@ -1,0 +1,124 @@
+---
+key: 视频生成/图生视频/首尾帧AI视频 Wan 2.1 Vace - 最灵活的帧插值方法_1934188144688586753.json
+name: 首尾帧AI视频 Wan 2.1 Vace - 最灵活的帧插值方法_1934188144688586753.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1934188144688586753.json
+hash: 829871c56aa43cfd
+coverage: 0.512195
+learned_at: 2026-10-15 22:30:16
+nodes: [SetNode, ModelSamplingSD3, PreviewImage, PathchSageAttentionKJ, SetNode, PatchModelPatcherOrder, TorchCompileModelWanVideo, GetNode, GetNode, GetNode, GetNode, GetNode, VAELoader, UNETLoader, CLIPLoader, SetNode, SetNode, SetNode, LayerUtility: PurgeVRAM, GetNode, CLIPTextEncode, GetNode, GetNode, GetNode, PreviewImage, SetNode, Fast Groups Bypasser (rgthree), VHS_VideoCombine, DWPreprocessor, SetNode, INTConstant, INTConstant, WanVaceToVideo, GetNode, GetNode, LoadImageFromPath, ImageResizeKJv2, GetNode, TrimVideoLatent, StringConstantMultiline, VAEDecode, MaskPreview+, INTConstant, RIFE VFI, Video_Upscale_With_Model, Fast Groups Bypasser (rgthree), Label (rgthree), Label (rgthree), UnetLoaderGGUF, SetNode, VHS_VideoInfo, GetNode, GetNode, GetNode, SetNode, SetNode, VHS_LoadVideo, ImageResizeKJv2, LoadImage, Fast Groups Bypasser (rgthree), CLIPTextEncode, KSampler, GetNode, GetNode, GroundingDinoModelLoader (segment anything2), SAMModelLoader (segment anything), GroundingDinoSAMSegment (segment anything), PreviewImage, AIO_Preprocessor, SetNode, SetNode, WanVideoVACEStartToEndFrame, GetNode, ImageBlend, GetNode, GetNode, PreviewImage, Power Lora Loader (rgthree), SetNode, ImageResizeKJv2, VHS_VideoCombine, VHS_VideoCombine]
+patterns: []
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "beta", "seed": 1037944241819881, "steps": 12}
+---
+
+# 视频生成/图生视频/首尾帧AI视频 Wan 2.1 Vace - 最灵活的帧插值方法_1934188144688586753.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1934188144688586753.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（82 个）：
+- `SetNode`
+- `ModelSamplingSD3`
+- `PreviewImage`
+- `PathchSageAttentionKJ`
+- `SetNode`
+- `PatchModelPatcherOrder`
+- `TorchCompileModelWanVideo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LayerUtility: PurgeVRAM`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PreviewImage`
+- `SetNode`
+- `Fast Groups Bypasser (rgthree)`
+- `VHS_VideoCombine`
+- `DWPreprocessor`
+- `SetNode`
+- `INTConstant`
+- `INTConstant`
+- `WanVaceToVideo`
+- `GetNode`
+- `GetNode`
+- `LoadImageFromPath`
+- `ImageResizeKJv2`
+- `GetNode`
+- `TrimVideoLatent`
+- `StringConstantMultiline`
+- `VAEDecode` ★核心
+- `MaskPreview+`
+- `INTConstant`
+- `RIFE VFI`
+- `Video_Upscale_With_Model`
+- `Fast Groups Bypasser (rgthree)`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `UnetLoaderGGUF` ★核心
+- `SetNode`
+- `VHS_VideoInfo`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_LoadVideo`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `GetNode`
+- `GetNode`
+- `GroundingDinoModelLoader (segment anything2)`
+- `SAMModelLoader (segment anything)`
+- `GroundingDinoSAMSegment (segment anything)`
+- `PreviewImage`
+- `AIO_Preprocessor`
+- `SetNode`
+- `SetNode`
+- `WanVideoVACEStartToEndFrame`
+- `GetNode`
+- `ImageBlend`
+- `GetNode`
+- `GetNode`
+- `PreviewImage`
+- `Power Lora Loader (rgthree)`
+- `SetNode`
+- `ImageResizeKJv2`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+
+## 关键参数
+
+- `seed` = `1037944241819881`
+- `steps` = `12`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `beta`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **51%**（42/82）
+
+**有卡**：`ModelSamplingSD3`、`PathchSageAttentionKJ`、`PatchModelPatcherOrder`、`TorchCompileModelWanVideo`、`VAELoader`、`UNETLoader`、`CLIPLoader`、`LayerUtility: PurgeVRAM`、`CLIPTextEncode`、`VHS_VideoCombine`、`DWPreprocessor`、`INTConstant`、`WanVaceToVideo`、`LoadImageFromPath`、`ImageResizeKJv2`、`TrimVideoLatent`、`StringConstantMultiline`、`VAEDecode`、`MaskPreview+`、`RIFE VFI`、`Video_Upscale_With_Model`、`Label (rgthree)`、`UnetLoaderGGUF`、`VHS_VideoInfo`、`VHS_LoadVideo`、`LoadImage`、`KSampler`、`GroundingDinoModelLoader (segment anything2)`、`SAMModelLoader (segment anything)`、`GroundingDinoSAMSegment (segment anything)`、`AIO_Preprocessor`、`WanVideoVACEStartToEndFrame`、`ImageBlend`、`Power Lora Loader (rgthree)`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、TrimVideoLatent

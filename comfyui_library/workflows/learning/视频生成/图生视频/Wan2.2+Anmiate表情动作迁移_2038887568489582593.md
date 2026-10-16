@@ -1,0 +1,131 @@
+---
+key: 视频生成/图生视频/Wan2.2+Anmiate表情动作迁移_2038887568489582593.json
+name: Wan2.2+Anmiate表情动作迁移_2038887568489582593.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2038887568489582593.json
+hash: 167b3b49c58ba1a9
+coverage: 0.910256
+learned_at: 2026-10-15 22:36:06
+nodes: [ImageConcatMulti, PointsEditor, Any Switch (rgthree), Sam2Segmentation, SaveVideoRGBA, LayerUtility: ImageBlend, DownloadAndLoadSAM2Model, GrowMask, BlockifyMask, easy int, MarkdownNote, Seed, easy int, SaveVideoRGBA, MarkdownNote, easy int, easy int, GetImageSize, TorchCompileModelWanVideoV2, PathchSageAttentionKJ, easy int, easy ifElse, VAELoader, ModelSamplingSD3, easy ifElse, CLIPLoader, CLIPTextEncode, CLIPTextEncode, easy positive, CLIPVisionEncode, SimpleMath+, easy compare, easy lengthAnything, easy batchAnything, SimpleMath+, easy promptReplace, VAEDecode, TrimVideoLatent, GetImageRangeFromBatch, CLIPVisionLoader, easy int, OnnxDetectionModelLoader, UNETLoader, easy whileLoopStart, easy int, SimpleMath+, easy convertAnything, SimpleMath+, SimpleMathDual+, VHS_VideoInfo, easy compare, easy boolean, SaveVideoRGBA, SaveVideoRGBA, easy whileLoopEnd, LoraLoaderModelOnly, LoraLoaderModelOnly, ModelPatchTorchSettings, Any Switch (rgthree), LoraLoaderModelOnly, easy int, easy int, KSampler, PoseAndFaceDetection, DrawViTPose, ImageConcatMulti, wanBlockSwap, DrawMaskOnImage, WanAnimateToVideo, Fast Groups Muter (rgthree), MathExpression|pysssss, MathExpression|pysssss, LoraLoaderModelOnly, easy int, RHHiddenNodes, VHS_VideoCombine, VHS_LoadVideo, LoadImage]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "sa_solver", "scheduler": "linear_quadratic", "seed": 611227053262578, "steps": 4}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.2+Anmiate表情动作迁移_2038887568489582593.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2038887568489582593.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（78 个）：
+- `ImageConcatMulti`
+- `PointsEditor`
+- `Any Switch (rgthree)`
+- `Sam2Segmentation`
+- `SaveVideoRGBA`
+- `LayerUtility: ImageBlend`
+- `DownloadAndLoadSAM2Model`
+- `GrowMask`
+- `BlockifyMask`
+- `easy int`
+- `MarkdownNote`
+- `Seed`
+- `easy int`
+- `SaveVideoRGBA`
+- `MarkdownNote`
+- `easy int`
+- `easy int`
+- `GetImageSize`
+- `TorchCompileModelWanVideoV2`
+- `PathchSageAttentionKJ`
+- `easy int`
+- `easy ifElse`
+- `VAELoader`
+- `ModelSamplingSD3`
+- `easy ifElse`
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `easy positive`
+- `CLIPVisionEncode`
+- `SimpleMath+`
+- `easy compare`
+- `easy lengthAnything`
+- `easy batchAnything`
+- `SimpleMath+`
+- `easy promptReplace`
+- `VAEDecode` ★核心
+- `TrimVideoLatent`
+- `GetImageRangeFromBatch`
+- `CLIPVisionLoader`
+- `easy int`
+- `OnnxDetectionModelLoader`
+- `UNETLoader` ★核心
+- `easy whileLoopStart`
+- `easy int`
+- `SimpleMath+`
+- `easy convertAnything`
+- `SimpleMath+`
+- `SimpleMathDual+`
+- `VHS_VideoInfo`
+- `easy compare`
+- `easy boolean`
+- `SaveVideoRGBA`
+- `SaveVideoRGBA`
+- `easy whileLoopEnd`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchTorchSettings`
+- `Any Switch (rgthree)`
+- `LoraLoaderModelOnly` ★核心
+- `easy int`
+- `easy int`
+- `KSampler` ★核心
+- `PoseAndFaceDetection`
+- `DrawViTPose`
+- `ImageConcatMulti`
+- `wanBlockSwap`
+- `DrawMaskOnImage`
+- `WanAnimateToVideo`
+- `Fast Groups Muter (rgthree)`
+- `MathExpression|pysssss`
+- `MathExpression|pysssss`
+- `LoraLoaderModelOnly` ★核心
+- `easy int`
+- `RHHiddenNodes`
+- `VHS_VideoCombine`
+- `VHS_LoadVideo`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `611227053262578`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `sa_solver`
+- `scheduler` = `linear_quadratic`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **91%**（71/78）
+
+**有卡**：`ImageConcatMulti`、`PointsEditor`、`Sam2Segmentation`、`SaveVideoRGBA`、`LayerUtility: ImageBlend`、`DownloadAndLoadSAM2Model`、`GrowMask`、`BlockifyMask`、`easy int`、`Seed`、`GetImageSize`、`TorchCompileModelWanVideoV2`、`PathchSageAttentionKJ`、`VAELoader`、`ModelSamplingSD3`、`CLIPLoader`、`CLIPTextEncode`、`easy positive`、`CLIPVisionEncode`、`SimpleMath+`、`easy compare`、`easy lengthAnything`、`easy batchAnything`、`easy promptReplace`、`VAEDecode`、`TrimVideoLatent`、`GetImageRangeFromBatch`、`CLIPVisionLoader`、`OnnxDetectionModelLoader`、`UNETLoader`、`easy whileLoopStart`、`easy convertAnything`、`SimpleMathDual+`、`VHS_VideoInfo`、`easy boolean`、`easy whileLoopEnd`、`LoraLoaderModelOnly`、`ModelPatchTorchSettings`、`KSampler`、`PoseAndFaceDetection`、`DrawViTPose`、`wanBlockSwap`、`DrawMaskOnImage`、`WanAnimateToVideo`、`MathExpression|pysssss`、`RHHiddenNodes`、`VHS_VideoCombine`、`VHS_LoadVideo`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

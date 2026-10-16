@@ -1,0 +1,75 @@
+---
+key: 视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json
+name: 图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1937762815677763586.json
+hash: 7c0f7727260ef42e
+coverage: 0.651163
+learned_at: 2026-10-15 22:30:29
+nodes: [Reroute, Note, Reroute, WanVideoEnhanceAVideo, Note, Anything Everywhere, Reroute, Text Prompt (JPS), Text Prompt (JPS), VHS_VideoCombine, VHS_VideoCombine, RIFE VFI, WanVideoLoraSelect, Reroute, easy clearCacheAll, easy cleanGpuUsed, easy clearCacheAll, Note, Note, ImageScale, WanVideoVAELoader, Reroute, Reroute, easy clearCacheAll, Reroute, UpscaleModelLoader, easy cleanGpuUsed, easy clearCacheAll, CLIPVisionLoader, WanVideoLoraSelect, SetNode, WanVideoImageClipEncode, GetNode, WanVideoTextEncode, easy cleanGpuUsed, WanVideoDecode, WanVideoSampler, easy cleanGpuUsed, easy clearCacheAll, LoadWanVideoT5TextEncoder, WanVideoModelLoader, LoadImage, Note]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1937762815677763586.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（43 个）：
+- `Reroute`
+- `Note`
+- `Reroute`
+- `WanVideoEnhanceAVideo`
+- `Note`
+- `Anything Everywhere`
+- `Reroute`
+- `Text Prompt (JPS)`
+- `Text Prompt (JPS)`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `RIFE VFI`
+- `WanVideoLoraSelect`
+- `Reroute`
+- `easy clearCacheAll`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `Note`
+- `Note`
+- `ImageScale`
+- `WanVideoVAELoader`
+- `Reroute`
+- `Reroute`
+- `easy clearCacheAll`
+- `Reroute`
+- `UpscaleModelLoader`
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `CLIPVisionLoader`
+- `WanVideoLoraSelect`
+- `SetNode`
+- `WanVideoImageClipEncode`
+- `GetNode`
+- `WanVideoTextEncode`
+- `easy cleanGpuUsed`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `easy cleanGpuUsed`
+- `easy clearCacheAll`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `LoadImage`
+- `Note`
+
+## 知识
+
+覆盖率 **65%**（28/43）
+
+**有卡**：`WanVideoEnhanceAVideo`、`Text Prompt (JPS)`、`VHS_VideoCombine`、`RIFE VFI`、`WanVideoLoraSelect`、`easy clearCacheAll`、`easy cleanGpuUsed`、`ImageScale`、`WanVideoVAELoader`、`UpscaleModelLoader`、`CLIPVisionLoader`、`WanVideoImageClipEncode`、`WanVideoTextEncode`、`WanVideoDecode`、`WanVideoSampler`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`LoadImage`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader、WanVideoLoraSelect

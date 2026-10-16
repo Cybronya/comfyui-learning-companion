@@ -1,0 +1,93 @@
+---
+key: 视频生成/图生视频/老照片修复+无声视频生成二合一kontext+aniWan2.1 ​_1991386127613669378.json
+name: 老照片修复+无声视频生成二合一kontext+aniWan2.1 ​_1991386127613669378.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1991386127613669378.json
+hash: 5579ccdb91e54e9c
+coverage: 0.959184
+learned_at: 2026-10-15 22:33:13
+nodes: [UNETLoader, FluxKontextImageScale, LoraLoaderModelOnly, DualCLIPLoader, CLIPTextEncode, ConditioningZeroOut, ReferenceLatent, FluxGuidance, VAEEncode, VAELoader, KSampler, VAEDecode, SaveImage, SeedVR2GGUF, SaveImage, Int, Int, LoadImage, UNETLoader, UNETLoader, CLIPVisionLoader, VAELoader, wanBlockSwap, LoraLoaderModelOnly, PathchSageAttentionKJ, wanBlockSwap, PathchSageAttentionKJ, LoraLoaderModelOnly, ModelPatchTorchSettings, CFGNorm, ModelPatchTorchSettings, CFGNorm, LayerUtility: PurgeVRAM V2, CLIPVisionEncode, CLIPTextEncode, CLIPTextEncode, PrimitiveStringMultiline, WanImageToVideo, SimpleMath+, FSamplerAdvanced, FSamplerAdvanced, CLIPLoader, VAEDecode, LayerUtility: PurgeVRAM V2, FlashVSRNode, VHS_VideoCombine, VHS_VideoCombine, LayerUtility: ImageScaleByAspectRatio V2, Fast Groups Muter (rgthree)]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 387756771660991, "steps": 20}
+---
+
+# 视频生成/图生视频/老照片修复+无声视频生成二合一kontext+aniWan2.1 ​_1991386127613669378.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1991386127613669378.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（49 个）：
+- `UNETLoader` ★核心
+- `FluxKontextImageScale`
+- `LoraLoaderModelOnly` ★核心
+- `DualCLIPLoader`
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `ReferenceLatent`
+- `FluxGuidance`
+- `VAEEncode` ★核心
+- `VAELoader`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImage`
+- `SeedVR2GGUF`
+- `SaveImage`
+- `Int`
+- `Int`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPVisionLoader`
+- `VAELoader`
+- `wanBlockSwap`
+- `LoraLoaderModelOnly` ★核心
+- `PathchSageAttentionKJ`
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `ModelPatchTorchSettings`
+- `CFGNorm`
+- `ModelPatchTorchSettings`
+- `CFGNorm`
+- `LayerUtility: PurgeVRAM V2`
+- `CLIPVisionEncode`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `PrimitiveStringMultiline`
+- `WanImageToVideo`
+- `SimpleMath+`
+- `FSamplerAdvanced` ★核心
+- `FSamplerAdvanced` ★核心
+- `CLIPLoader`
+- `VAEDecode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `FlashVSRNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Fast Groups Muter (rgthree)`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `387756771660991`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **96%**（47/49）
+
+**有卡**：`UNETLoader`、`FluxKontextImageScale`、`LoraLoaderModelOnly`、`DualCLIPLoader`、`CLIPTextEncode`、`ConditioningZeroOut`、`ReferenceLatent`、`FluxGuidance`、`VAEEncode`、`VAELoader`、`KSampler`、`VAEDecode`、`SaveImage`、`SeedVR2GGUF`、`Int`、`LoadImage`、`CLIPVisionLoader`、`wanBlockSwap`、`PathchSageAttentionKJ`、`ModelPatchTorchSettings`、`CFGNorm`、`LayerUtility: PurgeVRAM V2`、`CLIPVisionEncode`、`WanImageToVideo`、`SimpleMath+`、`FSamplerAdvanced`、`CLIPLoader`、`FlashVSRNode`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut

@@ -1,0 +1,86 @@
+---
+key: 视频生成/图生视频/LTX+2.3+PromptRelay+三图参考_2056919116946173954.json
+name: LTX+2.3+PromptRelay+三图参考_2056919116946173954.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2056919116946173954.json
+hash: 8678ea60d7f50dc5
+coverage: 0.765957
+learned_at: 2026-10-15 22:38:06
+nodes: [SetNode, GetNode, VAELoaderKJ, SetNode, DualCLIPLoader, KSamplerSelect, LTXVConcatAVLatent, RandomNoise, CFGGuider, ManualSigmas, LTXVSeparateAVLatent, VAEDecode, GetNode, LTXVAudioVAEDecode, VAELoaderKJ, UNETLoader, EmptyLTXVLatentVideo, MathExpression|pysssss, CLIPTextEncode, LTXVConditioning, Reroute, MathExpression|pysssss, SamplerCustomAdvanced, GetImageRangeFromBatch, LTX2_NAG, VHS_VideoCombine, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, PromptRelayEncodeTimeline, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, MathExpression|pysssss, LTXVAddGuideMulti, LTXVEmptyLatentAudio, GetNode, PrimitiveInt, PrimitiveInt, PrimitiveInt, PrimitiveNode, GetNode, LoadImage, LoadImage, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 24, "width": 361}
+---
+
+# 视频生成/图生视频/LTX+2.3+PromptRelay+三图参考_2056919116946173954.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2056919116946173954.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（47 个）：
+- `SetNode`
+- `GetNode`
+- `VAELoaderKJ`
+- `SetNode`
+- `DualCLIPLoader`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `RandomNoise`
+- `CFGGuider`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `VAEDecode` ★核心
+- `GetNode`
+- `LTXVAudioVAEDecode` ★核心
+- `VAELoaderKJ`
+- `UNETLoader` ★核心
+- `EmptyLTXVLatentVideo`
+- `MathExpression|pysssss`
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `Reroute`
+- `MathExpression|pysssss`
+- `SamplerCustomAdvanced` ★核心
+- `GetImageRangeFromBatch`
+- `LTX2_NAG`
+- `VHS_VideoCombine`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `PromptRelayEncodeTimeline`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `MathExpression|pysssss`
+- `LTXVAddGuideMulti`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `361`
+- `height` = `24`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **77%**（36/47）
+
+**有卡**：`VAELoaderKJ`、`DualCLIPLoader`、`KSamplerSelect`、`LTXVConcatAVLatent`、`RandomNoise`、`CFGGuider`、`ManualSigmas`、`LTXVSeparateAVLatent`、`VAEDecode`、`LTXVAudioVAEDecode`、`UNETLoader`、`EmptyLTXVLatentVideo`、`MathExpression|pysssss`、`CLIPTextEncode`、`LTXVConditioning`、`SamplerCustomAdvanced`、`GetImageRangeFromBatch`、`LTX2_NAG`、`VHS_VideoCombine`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`LoadImage`、`PromptRelayEncodeTimeline`、`ImageResizeKJv2`、`LTXVAddGuideMulti`、`LTXVEmptyLatentAudio`
+
+**用到的条目**：VAEDecode、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

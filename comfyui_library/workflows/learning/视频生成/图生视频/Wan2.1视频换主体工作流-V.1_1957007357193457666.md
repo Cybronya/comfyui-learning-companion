@@ -1,0 +1,111 @@
+---
+key: 视频生成/图生视频/Wan2.1视频换主体工作流-V.1_1957007357193457666.json
+name: Wan2.1视频换主体工作流-V.1_1957007357193457666.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1957007357193457666.json
+hash: 76338269ad4dd268
+coverage: 0.848101
+learned_at: 2026-10-15 22:31:15
+nodes: [SetNode, SetNode, WanVideoVAELoader, LoadWanVideoT5TextEncoder, WanVideoTextEncode, LayerUtility: ImageRemoveAlpha, FaceProcessorLoader, ImageResizeKJv2, WanVideoAddStandInLatent, AIO_Preprocessor, GetNode, GetNode, GetNode, InpaintPreprocessor, LayerUtility: PurgeVRAM V2, InspyrenetRembg, LayerUtility: ImageRemoveAlpha, PreviewImage, ImageConcatMulti, ApplyFaceProcessor, VHS_VideoCombine, AudioSeparation, JWIntegerToString, MultiTalkModelLoader, DownloadAndLoadWav2VecModel, easy cleanGpuUsed, MultiTalkWav2VecEmbeds, WanVideoEncode, JWInteger, VHS_VideoInfo, Text Multiline, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, ImageResizeKJ, GrowMaskWithBlur, ColorMatch, WanVideoDecode, SimpleMath+, ImageFromBatch+, LayerUtility: PurgeVRAM V2, ImageFromBatch, AudioCrop, ImageConcatMulti, GetImageSizeAndCount, easy showAnything, VHS_VideoCombine, JWInteger, GetImageSizeAndCount, easy showAnything, GetImageSizeAndCount, WanVideoVACEEncode, PreviewAudio, Fast Groups Bypasser (rgthree), LayerUtility: ImageBlend, ImageResizeKJ, InspyrenetRembg, GetImageSizeAndCount, VHS_VideoCombine, easy showAnything, SetNode, WanVideoModelLoader, WanVideoSetLoRAs, WanVideoSetBlockSwap, RHHiddenNodes, VHS_VideoCombine, SimpleMath+, Note, WanVideoSampler, LoadImage, VHS_LoadVideo, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: PurgeVRAM V2, ImageUpscaleWithModel, Text Multiline, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, UpscaleModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.1视频换主体工作流-V.1_1957007357193457666.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1957007357193457666.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（79 个）：
+- `SetNode`
+- `SetNode`
+- `WanVideoVAELoader`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoTextEncode`
+- `LayerUtility: ImageRemoveAlpha`
+- `FaceProcessorLoader`
+- `ImageResizeKJv2`
+- `WanVideoAddStandInLatent`
+- `AIO_Preprocessor`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `InpaintPreprocessor`
+- `LayerUtility: PurgeVRAM V2`
+- `InspyrenetRembg`
+- `LayerUtility: ImageRemoveAlpha`
+- `PreviewImage`
+- `ImageConcatMulti`
+- `ApplyFaceProcessor`
+- `VHS_VideoCombine`
+- `AudioSeparation`
+- `JWIntegerToString`
+- `MultiTalkModelLoader`
+- `DownloadAndLoadWav2VecModel`
+- `easy cleanGpuUsed`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoEncode`
+- `JWInteger`
+- `VHS_VideoInfo`
+- `Text Multiline`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `ImageResizeKJ`
+- `GrowMaskWithBlur`
+- `ColorMatch`
+- `WanVideoDecode`
+- `SimpleMath+`
+- `ImageFromBatch+`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageFromBatch`
+- `AudioCrop`
+- `ImageConcatMulti`
+- `GetImageSizeAndCount`
+- `easy showAnything`
+- `VHS_VideoCombine`
+- `JWInteger`
+- `GetImageSizeAndCount`
+- `easy showAnything`
+- `GetImageSizeAndCount`
+- `WanVideoVACEEncode`
+- `PreviewAudio`
+- `Fast Groups Bypasser (rgthree)`
+- `LayerUtility: ImageBlend`
+- `ImageResizeKJ`
+- `InspyrenetRembg`
+- `GetImageSizeAndCount`
+- `VHS_VideoCombine`
+- `easy showAnything`
+- `SetNode`
+- `WanVideoModelLoader`
+- `WanVideoSetLoRAs`
+- `WanVideoSetBlockSwap`
+- `RHHiddenNodes`
+- `VHS_VideoCombine`
+- `SimpleMath+`
+- `Note`
+- `WanVideoSampler` ★核心
+- `LoadImage`
+- `VHS_LoadVideo`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageUpscaleWithModel`
+- `Text Multiline`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `UpscaleModelLoader`
+
+## 知识
+
+覆盖率 **85%**（67/79）
+
+**有卡**：`WanVideoVAELoader`、`LoadWanVideoT5TextEncoder`、`WanVideoTextEncode`、`LayerUtility: ImageRemoveAlpha`、`FaceProcessorLoader`、`ImageResizeKJv2`、`WanVideoAddStandInLatent`、`AIO_Preprocessor`、`InpaintPreprocessor`、`LayerUtility: PurgeVRAM V2`、`InspyrenetRembg`、`ImageConcatMulti`、`ApplyFaceProcessor`、`VHS_VideoCombine`、`AudioSeparation`、`JWIntegerToString`、`MultiTalkModelLoader`、`DownloadAndLoadWav2VecModel`、`easy cleanGpuUsed`、`MultiTalkWav2VecEmbeds`、`WanVideoEncode`、`JWInteger`、`VHS_VideoInfo`、`Text Multiline`、`LayerUtility: ImageScaleByAspectRatio V2`、`ImageResizeKJ`、`GrowMaskWithBlur`、`ColorMatch`、`WanVideoDecode`、`SimpleMath+`、`ImageFromBatch+`、`ImageFromBatch`、`AudioCrop`、`GetImageSizeAndCount`、`WanVideoVACEEncode`、`PreviewAudio`、`LayerUtility: ImageBlend`、`WanVideoModelLoader`、`WanVideoSetLoRAs`、`WanVideoSetBlockSwap`、`RHHiddenNodes`、`WanVideoSampler`、`LoadImage`、`VHS_LoadVideo`、`ImageUpscaleWithModel`、`UpscaleModelLoader`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoVACEEncode

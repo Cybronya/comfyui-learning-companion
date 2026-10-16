@@ -1,0 +1,108 @@
+---
+key: 视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json
+name: 视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1973048740976136194.json
+hash: 9010dfd5fc5ad4cc
+coverage: 0.644737
+learned_at: 2026-10-15 22:32:02
+nodes: [easy showAnything, easy imageSize, GetImageSizeAndCount, GetNode, GetImageSizeAndCount, Reroute, WanVideoDecode, WanVideoSampler, ImpactFloat, easy showAnything, easy showAnything, WanVideoSigmaToStep, WanVideoSampler, CreateCFGScheduleFloatList, ImageResizeKJ, SetNode, GetNode, GetNode, WanVideoImageToVideoEncode, GetImageSizeAndCount, GetImageSizeAndCount, GetNode, GetNode, VHS_VideoCombine, GetNode, ImageFromBatch, PreviewImage, PreviewImage, GetImageSizeAndCount, SetNode, SetNode, SetNode, GetNode, GetImageSizeAndCount, SetNode, VHS_VideoCombine, easy seed, GetNode, GetImageSizeAndCount, WanVideoTextEncodeCached, GetNode, WanVideoBlockSwap, WanVideoVAELoader, WanVideoSetBlockSwap, WanVideoSetBlockSwap, INTConstant, WanVideoModelLoader, StringFunction|pysssss, GetNode, StringFunction|pysssss, SetNode, ImageLoader, LayerUtility: ImageScaleByAspectRatio V2, GetImageSizeAndCount, easy positive, WanVideoLoraSelectMulti, GetImageSizeAndCount, MultiplePathsInput, ImageLoader, WanVideoModelLoader, WanVideoScheduler, WanVideoScheduler, easy int, easy showAnything, MemoryCleaner, easy anythingIndexSwitch, GetImageSizeAndCount, SetNode, SetNode, easy int, easy positive, ImpactFloat, SetNode, Qwen3_VQA, PrimitiveFloat, MathExpression|pysssss]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1973048740976136194.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（76 个）：
+- `easy showAnything`
+- `easy imageSize`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `Reroute`
+- `WanVideoDecode`
+- `WanVideoSampler` ★核心
+- `ImpactFloat`
+- `easy showAnything`
+- `easy showAnything`
+- `WanVideoSigmaToStep`
+- `WanVideoSampler` ★核心
+- `CreateCFGScheduleFloatList`
+- `ImageResizeKJ`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `GetImageSizeAndCount`
+- `GetImageSizeAndCount`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `ImageFromBatch`
+- `PreviewImage`
+- `PreviewImage`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `VHS_VideoCombine`
+- `easy seed`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `WanVideoSetBlockSwap`
+- `WanVideoSetBlockSwap`
+- `INTConstant`
+- `WanVideoModelLoader`
+- `StringFunction|pysssss`
+- `GetNode`
+- `StringFunction|pysssss`
+- `SetNode`
+- `ImageLoader`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `GetImageSizeAndCount`
+- `easy positive`
+- `WanVideoLoraSelectMulti`
+- `GetImageSizeAndCount`
+- `MultiplePathsInput`
+- `ImageLoader`
+- `WanVideoModelLoader`
+- `WanVideoScheduler`
+- `WanVideoScheduler`
+- `easy int`
+- `easy showAnything`
+- `MemoryCleaner`
+- `easy anythingIndexSwitch`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `SetNode`
+- `easy int`
+- `easy positive`
+- `ImpactFloat`
+- `SetNode`
+- `Qwen3_VQA`
+- `PrimitiveFloat`
+- `MathExpression|pysssss`
+
+## 知识
+
+覆盖率 **64%**（49/76）
+
+**有卡**：`easy imageSize`、`GetImageSizeAndCount`、`WanVideoDecode`、`WanVideoSampler`、`ImpactFloat`、`WanVideoSigmaToStep`、`CreateCFGScheduleFloatList`、`ImageResizeKJ`、`WanVideoImageToVideoEncode`、`VHS_VideoCombine`、`ImageFromBatch`、`easy seed`、`WanVideoTextEncodeCached`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`WanVideoSetBlockSwap`、`INTConstant`、`WanVideoModelLoader`、`StringFunction|pysssss`、`ImageLoader`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy positive`、`WanVideoLoraSelectMulti`、`MultiplePathsInput`、`WanVideoScheduler`、`easy int`、`MemoryCleaner`、`easy anythingIndexSwitch`、`Qwen3_VQA`、`MathExpression|pysssss`
+
+**用到的条目**：LayerUtility: ImageScaleByAspectRatio V2、WanVideoSampler、CreateCFGScheduleFloatList、easy seed、WanVideoDecode、WanVideoVAELoader、WanVideoImageToVideoEncode、WanVideoTextEncodeCached

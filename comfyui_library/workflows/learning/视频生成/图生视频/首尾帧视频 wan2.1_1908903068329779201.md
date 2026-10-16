@@ -1,0 +1,61 @@
+---
+key: 视频生成/图生视频/首尾帧视频 wan2.1_1908903068329779201.json
+name: 首尾帧视频 wan2.1_1908903068329779201.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1908903068329779201.json
+hash: a4b627b732ad8458
+coverage: 0.827586
+learned_at: 2026-10-15 22:29:28
+nodes: [WanVideoTorchCompileSettings, WanVideoBlockSwap, LoadWanVideoT5TextEncoder, easy cleanGpuUsed, WanVideoVAELoader, WanVideoTextEncode, Anything Everywhere3, WanVideoClipVisionEncode, Note, Note, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveInt, easy imageSize, WanVideoImageToVideoEncode, easy cleanGpuUsed, LoadWanVideoClipTextEncoder, Reroute, WanVideoExperimentalArgs, WanVideoDecode, LoadImage, LoadImage, WanVideoEnhanceAVideo, WanVideoTeaCache, easy positive, WanVideoSLG, WanVideoSampler, VHS_VideoCombine, WanVideoModelLoader]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/首尾帧视频 wan2.1_1908903068329779201.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1908903068329779201.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Other
+
+**节点**（29 个）：
+- `WanVideoTorchCompileSettings`
+- `WanVideoBlockSwap`
+- `LoadWanVideoT5TextEncoder`
+- `easy cleanGpuUsed`
+- `WanVideoVAELoader`
+- `WanVideoTextEncode`
+- `Anything Everywhere3`
+- `WanVideoClipVisionEncode`
+- `Note`
+- `Note`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PrimitiveInt`
+- `easy imageSize`
+- `WanVideoImageToVideoEncode`
+- `easy cleanGpuUsed`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `Reroute`
+- `WanVideoExperimentalArgs`
+- `WanVideoDecode`
+- `LoadImage`
+- `LoadImage`
+- `WanVideoEnhanceAVideo`
+- `WanVideoTeaCache`
+- `easy positive`
+- `WanVideoSLG`
+- `WanVideoSampler` ★核心
+- `VHS_VideoCombine`
+- `WanVideoModelLoader`
+
+## 知识
+
+覆盖率 **83%**（24/29）
+
+**有卡**：`WanVideoTorchCompileSettings`、`WanVideoBlockSwap`、`LoadWanVideoT5TextEncoder`、`easy cleanGpuUsed`、`WanVideoVAELoader`、`WanVideoTextEncode`、`WanVideoClipVisionEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`easy imageSize`、`WanVideoImageToVideoEncode`、`LoadWanVideoClipTextEncoder`、`WanVideoExperimentalArgs`、`WanVideoDecode`、`LoadImage`、`WanVideoEnhanceAVideo`、`WanVideoTeaCache`、`easy positive`、`WanVideoSLG`、`WanVideoSampler`、`VHS_VideoCombine`、`WanVideoModelLoader`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoClipVisionEncode

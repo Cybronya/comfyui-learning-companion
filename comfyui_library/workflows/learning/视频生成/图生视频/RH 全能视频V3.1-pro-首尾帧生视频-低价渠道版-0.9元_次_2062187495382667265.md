@@ -1,0 +1,39 @@
+---
+key: 视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json
+name: RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2062187495382667265.json
+hash: f07c62f06f17e00e
+coverage: 1
+learned_at: 2026-10-15 22:39:01
+nodes: [CR Prompt Text, LoadImage, LoadImage, GetVideoComponents, VHS_VideoCombine, VHS_VideoCombine, RH_RhartVideoV31ProStartEndToVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2062187495382667265.json`
+
+## 结构
+
+**生成流程**：Other
+
+**节点**（7 个）：
+- `CR Prompt Text`
+- `LoadImage`
+- `LoadImage`
+- `GetVideoComponents`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `RH_RhartVideoV31ProStartEndToVideo`
+
+## 知识
+
+覆盖率 **100%**（7/7）
+
+**有卡**：`CR Prompt Text`、`LoadImage`、`GetVideoComponents`、`VHS_VideoCombine`、`RH_RhartVideoV31ProStartEndToVideo`
+
+**用到的条目**：LoadImage、CR Prompt Text、GetVideoComponents、VHS_VideoCombine、RH_RhartVideoV31ProStartEndToVideo、sd15-t2i-basic、sd15-t2i-lora、Text

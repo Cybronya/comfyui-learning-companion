@@ -1,0 +1,38 @@
+---
+key: 视频生成/图生视频/S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050920019273502722.json
+name: S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050920019273502722.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2050920019273502722.json
+hash: 6896c74432e6ad6a
+coverage: 1
+learned_at: 2026-10-15 22:37:20
+nodes: [SaveVideo, RHHiddenNodes, RH_LLMAPI_Pro_Node, RH_RhartVideoSparkvideo20MiniImageToVideo, LoadImage, Text]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050920019273502722.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2050920019273502722.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（6 个）：
+- `SaveVideo`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `RH_RhartVideoSparkvideo20MiniImageToVideo`
+- `LoadImage`
+- `Text`
+
+## 知识
+
+覆盖率 **100%**（6/6）
+
+**有卡**：`SaveVideo`、`RHHiddenNodes`、`RH_LLMAPI_Pro_Node`、`RH_RhartVideoSparkvideo20MiniImageToVideo`、`LoadImage`、`Text`
+
+**用到的条目**：LoadImage、SaveVideo、RH_LLMAPI_Pro_Node、RH_RhartVideoSparkvideo20MiniImageToVideo、RHHiddenNodes、Text、sd15-t2i-basic、sd15-t2i-lora

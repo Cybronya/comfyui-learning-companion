@@ -1,0 +1,82 @@
+---
+key: 视频生成/图生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 图生视频【动态升级版V2】🚵_1988422481260232705.json
+name: 🚵Smooth Mix wan2.2 高动态电影质感模型 图生视频【动态升级版V2】🚵_1988422481260232705.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1988422481260232705.json
+hash: 981b492e9c9683b5
+coverage: 0.95
+learned_at: 2026-10-15 22:33:02
+nodes: [ModelSamplingSD3, CLIPLoader, ImpactInt, Seed (rgthree), MarkdownNote, ImpactInt, Note Plus (mtb), CLIPVisionLoader, PathchSageAttentionKJ, Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), Mute / Bypass Repeater (rgthree), Fast Bypasser (rgthree), wanBlockSwap, ModelSamplingSD3, wanBlockSwap, PathchSageAttentionKJ, ModelPatchTorchSettings, ModelPatchTorchSettings, VAEDecode, CLIPTextEncode, ImageResizeKJv2, CLIPTextEncode, easy cleanGpuUsed, RIFE VFI, SimpleMath+, ImageScaleBy, easy cleanGpuUsed, CLIPVisionEncode, MarkdownNote, WanMoeKSampler, UNETLoader, UNETLoader, VAELoader, PainterI2V, VHS_VideoCombine, VHS_VideoCombine, CR Text, ImpactInt, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "euler_ancestral", "sampler_name": 1, "scheduler": 1, "seed": 1, "steps": "randomize"}
+---
+
+# 视频生成/图生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 图生视频【动态升级版V2】🚵_1988422481260232705.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1988422481260232705.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（40 个）：
+- `ModelSamplingSD3`
+- `CLIPLoader`
+- `ImpactInt`
+- `Seed (rgthree)`
+- `MarkdownNote`
+- `ImpactInt`
+- `Note Plus (mtb)`
+- `CLIPVisionLoader`
+- `PathchSageAttentionKJ`
+- `Mute / Bypass Repeater (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `Mute / Bypass Repeater (rgthree)`
+- `Fast Bypasser (rgthree)`
+- `wanBlockSwap`
+- `ModelSamplingSD3`
+- `wanBlockSwap`
+- `PathchSageAttentionKJ`
+- `ModelPatchTorchSettings`
+- `ModelPatchTorchSettings`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `ImageResizeKJv2`
+- `CLIPTextEncode` ★核心
+- `easy cleanGpuUsed`
+- `RIFE VFI`
+- `SimpleMath+`
+- `ImageScaleBy`
+- `easy cleanGpuUsed`
+- `CLIPVisionEncode`
+- `MarkdownNote`
+- `WanMoeKSampler` ★核心
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `VAELoader`
+- `PainterI2V`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `CR Text`
+- `ImpactInt`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `1`
+- `steps` = `randomize`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `1`
+- `denoise` = `euler_ancestral`
+
+## 知识
+
+覆盖率 **95%**（38/40）
+
+**有卡**：`ModelSamplingSD3`、`CLIPLoader`、`ImpactInt`、`Seed (rgthree)`、`Note Plus (mtb)`、`CLIPVisionLoader`、`PathchSageAttentionKJ`、`Mute / Bypass Repeater (rgthree)`、`Fast Bypasser (rgthree)`、`wanBlockSwap`、`ModelPatchTorchSettings`、`VAEDecode`、`CLIPTextEncode`、`ImageResizeKJv2`、`easy cleanGpuUsed`、`RIFE VFI`、`SimpleMath+`、`ImageScaleBy`、`CLIPVisionEncode`、`WanMoeKSampler`、`UNETLoader`、`VAELoader`、`PainterI2V`、`VHS_VideoCombine`、`CR Text`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、WanMoeKSampler、Seed (rgthree)

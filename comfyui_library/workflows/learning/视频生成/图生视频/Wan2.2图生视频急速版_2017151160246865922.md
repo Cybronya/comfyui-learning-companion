@@ -1,0 +1,71 @@
+---
+key: 视频生成/图生视频/Wan2.2图生视频急速版_2017151160246865922.json
+name: Wan2.2图生视频急速版_2017151160246865922.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2017151160246865922.json
+hash: c513ed370b2763d2
+coverage: 0.871795
+learned_at: 2026-10-15 22:34:45
+nodes: [GetImageSize+, CR Text, CR Text, TextCombinerTwo, TextCombinerTwo, CR Text, TextCombinerTwo, TextCombinerTwo, easy showAnything, WanVideoTextEncode, WanVideoSampler, WanVideoSampler, WanVideoLoraSelect, TextCombinerTwo, TextCombinerTwo, WanVideoLoraSelect, WanVideoBlockSwap, llama_cpp_instruct_adv, llama_cpp_instruct_adv, CreateCFGScheduleFloatList, easy cleanGpuUsed, PrimitiveNode, MathExpression|pysssss, ImpactSwitch, ImageScaleToMaxDimension, WanVideoImageToVideoEncode, WanVideoDecode, easy int, easy showAnything, LoadWanVideoT5TextEncoder, WanVideoModelLoader, WanVideoModelLoader, WanVideoVAELoader, llama_cpp_model_loader, llama_cpp_parameters, LoadImage, JjkText, CR Text, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Wan2.2图生视频急速版_2017151160246865922.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2017151160246865922.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Other
+
+**节点**（39 个）：
+- `GetImageSize+`
+- `CR Text`
+- `CR Text`
+- `TextCombinerTwo`
+- `TextCombinerTwo`
+- `CR Text`
+- `TextCombinerTwo`
+- `TextCombinerTwo`
+- `easy showAnything`
+- `WanVideoTextEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `WanVideoLoraSelect`
+- `TextCombinerTwo`
+- `TextCombinerTwo`
+- `WanVideoLoraSelect`
+- `WanVideoBlockSwap`
+- `llama_cpp_instruct_adv`
+- `llama_cpp_instruct_adv`
+- `CreateCFGScheduleFloatList`
+- `easy cleanGpuUsed`
+- `PrimitiveNode`
+- `MathExpression|pysssss`
+- `ImpactSwitch`
+- `ImageScaleToMaxDimension`
+- `WanVideoImageToVideoEncode`
+- `WanVideoDecode`
+- `easy int`
+- `easy showAnything`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+- `WanVideoModelLoader`
+- `WanVideoVAELoader`
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `LoadImage`
+- `JjkText`
+- `CR Text`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **87%**（34/39）
+
+**有卡**：`GetImageSize+`、`CR Text`、`TextCombinerTwo`、`WanVideoTextEncode`、`WanVideoSampler`、`WanVideoLoraSelect`、`WanVideoBlockSwap`、`llama_cpp_instruct_adv`、`CreateCFGScheduleFloatList`、`easy cleanGpuUsed`、`MathExpression|pysssss`、`ImageScaleToMaxDimension`、`WanVideoImageToVideoEncode`、`WanVideoDecode`、`easy int`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`、`WanVideoVAELoader`、`llama_cpp_model_loader`、`llama_cpp_parameters`、`LoadImage`、`VHS_VideoCombine`
+
+**用到的条目**：LoadImage、WanVideoSampler、CreateCFGScheduleFloatList、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoTextEncode、WanVideoVAELoader、WanVideoImageToVideoEncode

@@ -1,0 +1,132 @@
+---
+key: 视频生成/图生视频/视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json
+name: 视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2055146860268015617.json
+hash: 7fe3552e09c31e69
+coverage: 0.869565
+learned_at: 2026-10-15 22:37:55
+nodes: [PrimitiveBoolean, KSamplerSelect, ManualSigmas, RandomNoise, KSamplerSelect, ManualSigmas, RandomNoise, CM_FloatToInt, JWImageResizeByLongerSide, LTXVConditioning, LTXVPreprocess, SolidMask, LoraLoaderModelOnly, PrimitiveInt, CFGGuider, CFGGuider, LTXVImgToVideoConditionOnly, SamplerCustomAdvanced, LTXVImgToVideoConditionOnly, SolidMask, SetLatentNoiseMask, LTXVConcatAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, easy showAnything, GetLatentSizeAndCount, LTXVConcatAVLatent, VRAMReserver, LoraLoaderModelOnly, LoraLoaderModelOnly, LTXVEmptyLatentAudio, EmptyLTXVLatentVideo, LatentUpscaleModelLoader, CheckpointLoaderSimple, LTXAVTextEncoderLoader, LTXVAudioVAEEncode, MelBandRoFormerModelLoader, LTXVAudioVAELoader, JWFloatToString, easy showAnything, SetNode, MemoryCleaner, LTXVAudioVAEDecode, LTXVLatentUpsampler, LTXVSeparateAVLatent, SetLatentNoiseMask, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, Seed Everywhere, CLIPTextEncode, LayerUtility: PurgeVRAM V2, LTX2_NAG, Text, TrimAudioDuration, MelBandRoFormerSampler, Float, PrimitiveFloat, Float, CreateVideo, VAEDecodeTiled, GetImageSizeAndCount, Qwen3ASRLoader_DFT, PrimitiveFloat, StringFunction|pysssss, easy showAnything, PromptRelaySmartEncode, ImageScaleBy, easy showAnything, easy seed, StringFunction|pysssss, Qwen3ASRTranscribe_DFT, LoadImage, Int, LoadAudio, PrimitiveFloat, Text, easy int, easy positive, easy showAnything, Audio Duration (mtb), SimpleMath+, SetNode, SimpleMath+, GetNode, Qwen3_VQA_Plus, RH_LLMAPI_NODE, SaveVideo, easy saveText, easy saveText, RH_LLMAPI_NODE, RH_LLMAPI_NODE, easy anythingIndexSwitch]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors", "height": 25, "width": 97}
+---
+
+# 视频生成/图生视频/视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2055146860268015617.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（92 个）：
+- `PrimitiveBoolean`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `RandomNoise`
+- `CM_FloatToInt`
+- `JWImageResizeByLongerSide`
+- `LTXVConditioning`
+- `LTXVPreprocess`
+- `SolidMask`
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveInt`
+- `CFGGuider`
+- `CFGGuider`
+- `LTXVImgToVideoConditionOnly`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVImgToVideoConditionOnly`
+- `SolidMask`
+- `SetLatentNoiseMask`
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `easy showAnything`
+- `GetLatentSizeAndCount`
+- `LTXVConcatAVLatent`
+- `VRAMReserver`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXVEmptyLatentAudio` ★核心
+- `EmptyLTXVLatentVideo`
+- `LatentUpscaleModelLoader`
+- `CheckpointLoaderSimple` ★核心
+- `LTXAVTextEncoderLoader`
+- `LTXVAudioVAEEncode` ★核心
+- `MelBandRoFormerModelLoader`
+- `LTXVAudioVAELoader`
+- `JWFloatToString`
+- `easy showAnything`
+- `SetNode`
+- `MemoryCleaner`
+- `LTXVAudioVAEDecode` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `LTXVSeparateAVLatent`
+- `SetLatentNoiseMask`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Seed Everywhere`
+- `CLIPTextEncode` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `LTX2_NAG`
+- `Text`
+- `TrimAudioDuration`
+- `MelBandRoFormerSampler` ★核心
+- `Float`
+- `PrimitiveFloat`
+- `Float`
+- `CreateVideo`
+- `VAEDecodeTiled` ★核心
+- `GetImageSizeAndCount`
+- `Qwen3ASRLoader_DFT`
+- `PrimitiveFloat`
+- `StringFunction|pysssss`
+- `easy showAnything`
+- `PromptRelaySmartEncode`
+- `ImageScaleBy`
+- `easy showAnything`
+- `easy seed`
+- `StringFunction|pysssss`
+- `Qwen3ASRTranscribe_DFT`
+- `LoadImage`
+- `Int`
+- `LoadAudio`
+- `PrimitiveFloat`
+- `Text`
+- `easy int`
+- `easy positive`
+- `easy showAnything`
+- `Audio Duration (mtb)`
+- `SimpleMath+`
+- `SetNode`
+- `SimpleMath+`
+- `GetNode`
+- `Qwen3_VQA_Plus`
+- `RH_LLMAPI_NODE`
+- `SaveVideo`
+- `easy saveText`
+- `easy saveText`
+- `RH_LLMAPI_NODE`
+- `RH_LLMAPI_NODE`
+- `easy anythingIndexSwitch`
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `checkpoint` = `ltx-2.3-22b-dev-dare-ties-distilled-1.1.safetensors`
+
+## 知识
+
+覆盖率 **87%**（80/92）
+
+**有卡**：`PrimitiveBoolean`、`KSamplerSelect`、`ManualSigmas`、`RandomNoise`、`CM_FloatToInt`、`JWImageResizeByLongerSide`、`LTXVConditioning`、`LTXVPreprocess`、`SolidMask`、`LoraLoaderModelOnly`、`CFGGuider`、`LTXVImgToVideoConditionOnly`、`SamplerCustomAdvanced`、`SetLatentNoiseMask`、`LTXVConcatAVLatent`、`LTXVSeparateAVLatent`、`GetLatentSizeAndCount`、`VRAMReserver`、`LTXVEmptyLatentAudio`、`EmptyLTXVLatentVideo`、`LatentUpscaleModelLoader`、`CheckpointLoaderSimple`、`LTXAVTextEncoderLoader`、`LTXVAudioVAEEncode`、`MelBandRoFormerModelLoader`、`LTXVAudioVAELoader`、`JWFloatToString`、`MemoryCleaner`、`LTXVAudioVAEDecode`、`LTXVLatentUpsampler`、`GetImageSizeAndCount`、`LayerUtility: ImageScaleByAspectRatio V2`、`Seed Everywhere`、`CLIPTextEncode`、`LayerUtility: PurgeVRAM V2`、`LTX2_NAG`、`Text`、`TrimAudioDuration`、`MelBandRoFormerSampler`、`Float`、`CreateVideo`、`VAEDecodeTiled`、`Qwen3ASRLoader_DFT`、`StringFunction|pysssss`、`PromptRelaySmartEncode`、`ImageScaleBy`、`easy seed`、`Qwen3ASRTranscribe_DFT`、`LoadImage`、`Int`、`LoadAudio`、`easy int`、`easy positive`、`Audio Duration (mtb)`、`SimpleMath+`、`Qwen3_VQA_Plus`、`RH_LLMAPI_NODE`、`SaveVideo`、`easy saveText`、`easy anythingIndexSwitch`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、LayerUtility: ImageScaleByAspectRatio V2、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

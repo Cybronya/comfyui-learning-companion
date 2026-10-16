@@ -1,0 +1,93 @@
+---
+key: 视频生成/图生视频/wdigital_combination.json_2077592725263839233.json
+name: wdigital_combination.json_2077592725263839233.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2077592725263839233.json
+hash: 4898ebf88c1d9533
+coverage: 0.819672
+learned_at: 2026-10-15 22:41:42
+nodes: [PrimitiveBoolean, PrimitiveInt, easy showAnything, SolidMask, KSamplerSelect, PrimitiveInt, ModelSamplingSD3, LTXVSeparateAVLatent, LayerUtility: PurgeVRAM V2, ComfyMathExpression, LTXVImgToVideoInplace, PrimitiveFloat, PrimitiveFloat, LTXVConditioning, LoraLoaderModelOnly, LTX2_NAG, LTXVConcatAVLatent, SetLatentNoiseMask, LTXVAudioVAEEncode, ComfyMathExpression, EmptyLTXVLatentVideo, easy showAnything, SamplerCustomAdvanced, JoinStrings, PrimitiveStringMultiline, ImageScaleToTotalPixels, GetImageSize, easy showAnything, TranscribeConfig, SubtitleOptimizer, VideoTranscribe, HAIGC_TimestampTextReplace, PrimitiveNode, HAIGC_VideoSubtitleTimestampPro, VHS_VideoCombine, ComfyMathExpression, LoraLoaderModelOnly, CFGGuider, BasicScheduler, JjkText, LTXVTiledVAEDecode, AudioSeparation, SimpleMath+, TrimAudioDuration, LayerUtility: TextJoin, JjkText, LoadAudio, GoogleTranslateTextNode, UNETLoader, LatentUpscaleModelLoader, DualCLIPLoader, VAELoaderKJ, VAELoader, CLIPTextEncode, CLIPTextEncode, RandomNoise, LayerUtility: PurgeVRAM V2, SoundFlow_GetLength, ImageResizeKJv2, LoadImage, LoraLoaderModelOnly]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wdigital_combination.json_2077592725263839233.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2077592725263839233.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（61 个）：
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `easy showAnything`
+- `SolidMask`
+- `KSamplerSelect` ★核心
+- `PrimitiveInt`
+- `ModelSamplingSD3`
+- `LTXVSeparateAVLatent`
+- `LayerUtility: PurgeVRAM V2`
+- `ComfyMathExpression`
+- `LTXVImgToVideoInplace`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `LTXVConditioning`
+- `LoraLoaderModelOnly` ★核心
+- `LTX2_NAG`
+- `LTXVConcatAVLatent`
+- `SetLatentNoiseMask`
+- `LTXVAudioVAEEncode` ★核心
+- `ComfyMathExpression`
+- `EmptyLTXVLatentVideo`
+- `easy showAnything`
+- `SamplerCustomAdvanced` ★核心
+- `JoinStrings`
+- `PrimitiveStringMultiline`
+- `ImageScaleToTotalPixels`
+- `GetImageSize`
+- `easy showAnything`
+- `TranscribeConfig`
+- `SubtitleOptimizer`
+- `VideoTranscribe`
+- `HAIGC_TimestampTextReplace`
+- `PrimitiveNode`
+- `HAIGC_VideoSubtitleTimestampPro`
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `LoraLoaderModelOnly` ★核心
+- `CFGGuider`
+- `BasicScheduler`
+- `JjkText`
+- `LTXVTiledVAEDecode` ★核心
+- `AudioSeparation`
+- `SimpleMath+`
+- `TrimAudioDuration`
+- `LayerUtility: TextJoin`
+- `JjkText`
+- `LoadAudio`
+- `GoogleTranslateTextNode`
+- `UNETLoader` ★核心
+- `LatentUpscaleModelLoader`
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `RandomNoise`
+- `LayerUtility: PurgeVRAM V2`
+- `SoundFlow_GetLength`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `LoraLoaderModelOnly` ★核心
+
+## 知识
+
+覆盖率 **82%**（50/61）
+
+**有卡**：`PrimitiveBoolean`、`SolidMask`、`KSamplerSelect`、`ModelSamplingSD3`、`LTXVSeparateAVLatent`、`LayerUtility: PurgeVRAM V2`、`ComfyMathExpression`、`LTXVImgToVideoInplace`、`LTXVConditioning`、`LoraLoaderModelOnly`、`LTX2_NAG`、`LTXVConcatAVLatent`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`EmptyLTXVLatentVideo`、`SamplerCustomAdvanced`、`JoinStrings`、`ImageScaleToTotalPixels`、`GetImageSize`、`TranscribeConfig`、`SubtitleOptimizer`、`VideoTranscribe`、`HAIGC_TimestampTextReplace`、`HAIGC_VideoSubtitleTimestampPro`、`VHS_VideoCombine`、`CFGGuider`、`BasicScheduler`、`LTXVTiledVAEDecode`、`AudioSeparation`、`SimpleMath+`、`TrimAudioDuration`、`LayerUtility: TextJoin`、`LoadAudio`、`GoogleTranslateTextNode`、`UNETLoader`、`LatentUpscaleModelLoader`、`DualCLIPLoader`、`VAELoaderKJ`、`VAELoader`、`CLIPTextEncode`、`RandomNoise`、`SoundFlow_GetLength`、`ImageResizeKJv2`、`LoadImage`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

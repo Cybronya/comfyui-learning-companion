@@ -1,0 +1,125 @@
+---
+key: 视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json
+name: Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1981942632731557889.json
+hash: 1f578363c0a6b945
+coverage: 0.53012
+learned_at: 2026-10-15 22:32:39
+nodes: [SetNode, SetNode, SetNode, SetNode, INTConstant, SetNode, SimpleMath+, SetNode, CLIPLoader, GetNode, GetNode, GetNode, SetNode, easy cleanGpuUsed, GetNode, VAEDecode, easy cleanGpuUsed, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, SetNode, easy cleanGpuUsed, JjkShowText, GetNode, GetNode, GetNode, SetNode, VAELoader, CLIPTextEncode, SetNode, SetNode, GetNode, ImageFromBatch+, VHS_VideoCombine, SetNode, UNETLoader, PathchSageAttentionKJ, ModelSamplingSD3, ModelSamplingSD3, easy cleanGpuUsed, SetNode, KSamplerAdvanced, KSamplerAdvanced, GetNode, GetNode, PathchSageAttentionKJ, GetNode, ImageBatchMultiple+, CLIPTextEncode, SetNode, WanFirstLastFrameToVideo, easy seed, CLIPVisionLoader, GetNode, ImageResizeKJv2, SetNode, ImageResizeKJv2, AILab_MiniCPM_4_V_Advanced, GetNode, SimpleCondition+, GetNode, UNETLoader, INTConstant, INTConstant, FloatConstant, CLIPVisionEncode, CLIPVisionEncode, GetNode, GetNode, LoadImage, LoadImage, Primitive string multiline [Crystools], DownloadAndLoadGIMMVFIModel, easy int, easy clearCacheAll, VHS_VideoCombine, SimpleMath+, GetNode, GIMMVFI_interpolate]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": "simple", "sampler_name": 1, "scheduler": "euler_ancestral", "seed": "disable", "steps": "fixed"}
+---
+
+# 视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频_1981942632731557889.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1981942632731557889.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Other
+
+**节点**（83 个）：
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `INTConstant`
+- `SetNode`
+- `SimpleMath+`
+- `SetNode`
+- `CLIPLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `GetNode`
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `easy cleanGpuUsed`
+- `JjkShowText`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `ImageFromBatch+`
+- `VHS_VideoCombine`
+- `SetNode`
+- `UNETLoader` ★核心
+- `PathchSageAttentionKJ`
+- `ModelSamplingSD3`
+- `ModelSamplingSD3`
+- `easy cleanGpuUsed`
+- `SetNode`
+- `KSamplerAdvanced` ★核心
+- `KSamplerAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `PathchSageAttentionKJ`
+- `GetNode`
+- `ImageBatchMultiple+`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `WanFirstLastFrameToVideo`
+- `easy seed`
+- `CLIPVisionLoader`
+- `GetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `ImageResizeKJv2`
+- `AILab_MiniCPM_4_V_Advanced`
+- `GetNode`
+- `SimpleCondition+`
+- `GetNode`
+- `UNETLoader` ★核心
+- `INTConstant`
+- `INTConstant`
+- `FloatConstant`
+- `CLIPVisionEncode`
+- `CLIPVisionEncode`
+- `GetNode`
+- `GetNode`
+- `LoadImage`
+- `LoadImage`
+- `Primitive string multiline [Crystools]`
+- `DownloadAndLoadGIMMVFIModel`
+- `easy int`
+- `easy clearCacheAll`
+- `VHS_VideoCombine`
+- `SimpleMath+`
+- `GetNode`
+- `GIMMVFI_interpolate`
+
+## 关键参数
+
+- `seed` = `disable`
+- `steps` = `fixed`
+- `cfg` = `6`
+- `sampler_name` = `1`
+- `scheduler` = `euler_ancestral`
+- `denoise` = `simple`
+
+## 知识
+
+覆盖率 **53%**（44/83）
+
+**有卡**：`INTConstant`、`SimpleMath+`、`CLIPLoader`、`easy cleanGpuUsed`、`VAEDecode`、`JjkShowText`、`VAELoader`、`CLIPTextEncode`、`ImageFromBatch+`、`VHS_VideoCombine`、`UNETLoader`、`PathchSageAttentionKJ`、`ModelSamplingSD3`、`KSamplerAdvanced`、`ImageBatchMultiple+`、`WanFirstLastFrameToVideo`、`easy seed`、`CLIPVisionLoader`、`ImageResizeKJv2`、`AILab_MiniCPM_4_V_Advanced`、`SimpleCondition+`、`FloatConstant`、`CLIPVisionEncode`、`LoadImage`、`Primitive string multiline [Crystools]`、`DownloadAndLoadGIMMVFIModel`、`easy int`、`easy clearCacheAll`、`GIMMVFI_interpolate`
+
+**用到的条目**：VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、KSamplerAdvanced、easy seed

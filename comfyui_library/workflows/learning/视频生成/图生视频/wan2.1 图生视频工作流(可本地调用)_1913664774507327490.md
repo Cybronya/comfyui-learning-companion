@@ -1,0 +1,52 @@
+---
+key: 视频生成/图生视频/wan2.1 图生视频工作流(可本地调用)_1913664774507327490.json
+name: wan2.1 图生视频工作流(可本地调用)_1913664774507327490.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1913664774507327490.json
+hash: a48cb8c7a4a2fdae
+coverage: 1
+learned_at: 2026-10-15 22:29:34
+nodes: [GetImageSize+, WanVideoModelLoader, WanVideoTeaCache, WanVideoBlockSwap, WanVideoVAELoader, LoadWanVideoClipTextEncoder, WanVideoEnhanceAVideo, WanVideoSLG, WanVideoSampler, WanVideoExperimentalArgs, WanVideoImageClipEncode, LayerUtility: PurgeVRAM, WanVideoLoraSelect, LoadWanVideoT5TextEncoder, ImageScale, LoadImage, WanVideoDecode, SaveImage, VHS_VideoCombine, WanVideoTextEncode]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/wan2.1 图生视频工作流(可本地调用)_1913664774507327490.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1913664774507327490.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
+**节点**（20 个）：
+- `GetImageSize+`
+- `WanVideoModelLoader`
+- `WanVideoTeaCache`
+- `WanVideoBlockSwap`
+- `WanVideoVAELoader`
+- `LoadWanVideoClipTextEncoder` ★核心
+- `WanVideoEnhanceAVideo`
+- `WanVideoSLG`
+- `WanVideoSampler` ★核心
+- `WanVideoExperimentalArgs`
+- `WanVideoImageClipEncode`
+- `LayerUtility: PurgeVRAM`
+- `WanVideoLoraSelect`
+- `LoadWanVideoT5TextEncoder`
+- `ImageScale`
+- `LoadImage`
+- `WanVideoDecode`
+- `SaveImage`
+- `VHS_VideoCombine`
+- `WanVideoTextEncode`
+
+## 知识
+
+覆盖率 **100%**（20/20）
+
+**有卡**：`GetImageSize+`、`WanVideoModelLoader`、`WanVideoTeaCache`、`WanVideoBlockSwap`、`WanVideoVAELoader`、`LoadWanVideoClipTextEncoder`、`WanVideoEnhanceAVideo`、`WanVideoSLG`、`WanVideoSampler`、`WanVideoExperimentalArgs`、`WanVideoImageClipEncode`、`LayerUtility: PurgeVRAM`、`WanVideoLoraSelect`、`LoadWanVideoT5TextEncoder`、`ImageScale`、`LoadImage`、`WanVideoDecode`、`SaveImage`、`VHS_VideoCombine`、`WanVideoTextEncode`
+
+**用到的条目**：LoadImage、WanVideoSampler、LoadWanVideoClipTextEncoder、LoadWanVideoT5TextEncoder、WanVideoDecode、WanVideoImageClipEncode、WanVideoTextEncode、WanVideoVAELoader

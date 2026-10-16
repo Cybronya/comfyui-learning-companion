@@ -1,0 +1,35 @@
+---
+key: 视频生成/图生视频/Kling_VideoO3StdReferenceToVideo_v3.0_2033816930804568065.json
+name: Kling_VideoO3StdReferenceToVideo_v3.0_2033816930804568065.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2033816930804568065.json
+hash: e97fdf1f7e794645
+coverage: 1
+learned_at: 2026-10-15 22:35:41
+nodes: [LoadVideo, SaveVideo, RH_KlingVideoO3StdReferenceToVideo]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/Kling_VideoO3StdReferenceToVideo_v3.0_2033816930804568065.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2033816930804568065.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（3 个）：
+- `LoadVideo`
+- `SaveVideo`
+- `RH_KlingVideoO3StdReferenceToVideo`
+
+## 知识
+
+覆盖率 **100%**（3/3）
+
+**有卡**：`LoadVideo`、`SaveVideo`、`RH_KlingVideoO3StdReferenceToVideo`
+
+**用到的条目**：SaveVideo、LoadVideo、RH_KlingVideoO3StdReferenceToVideo、sd15-t2i-basic、sd15-t2i-lora、SaveImage、CS_Preview_Any、easy_multitrackinfooutput

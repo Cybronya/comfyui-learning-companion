@@ -1,0 +1,74 @@
+---
+key: 视频生成/图生视频/Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949321623707650.json
+name: Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949321623707650.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2043949321623707650.json
+hash: 7a48e8dc337da5be
+coverage: 0.875
+learned_at: 2026-10-15 22:36:34
+nodes: [MaskToImage, PreviewImage, ImageResizeKJv2, JWInteger, SaveImage, Note, ImageConcanate, JWInteger, GetVideoComponents, FlashVSR_SM_Model, ImageFromBatch+, LayerUtility: ImageScaleByAspectRatio V2, JWInteger, GetVideoComponents, DiffuEraserSampler, CreateVideo, DiffuEraserLoader, MathExpression|pysssss, RepeatImageBatch, easy showAnything, MathExpression|pysssss, VHS_VideoCombine, FlashVSR_SM_KSampler, VHS_VideoCombine, LayerUtility: PurgeVRAM V2, RunningHub Deepcleaner, LayerUtility: ImageScaleByAspectRatio V2, VHS_VideoInfo, easy showAnything, VHS_LoadVideo, ImageFromBatch+, LoadImage]
+patterns: []
+missing: []
+parameters: {"cfg": "randomize", "denoise": 11, "sampler_name": 2, "scheduler": 3.5, "seed": 1280, "steps": 913114863}
+---
+
+# 视频生成/图生视频/Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949321623707650.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2043949321623707650.json`
+
+## 结构
+
+**生成流程**：Model → Sampling → Process → Output → Other
+
+**节点**（32 个）：
+- `MaskToImage`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `JWInteger`
+- `SaveImage`
+- `Note`
+- `ImageConcanate`
+- `JWInteger`
+- `GetVideoComponents`
+- `FlashVSR_SM_Model`
+- `ImageFromBatch+`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `JWInteger`
+- `GetVideoComponents`
+- `DiffuEraserSampler` ★核心
+- `CreateVideo`
+- `DiffuEraserLoader`
+- `MathExpression|pysssss`
+- `RepeatImageBatch`
+- `easy showAnything`
+- `MathExpression|pysssss`
+- `VHS_VideoCombine`
+- `FlashVSR_SM_KSampler` ★核心
+- `VHS_VideoCombine`
+- `LayerUtility: PurgeVRAM V2`
+- `RunningHub Deepcleaner`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VHS_VideoInfo`
+- `easy showAnything`
+- `VHS_LoadVideo`
+- `ImageFromBatch+`
+- `LoadImage`
+
+## 关键参数
+
+- `seed` = `1280`
+- `steps` = `913114863`
+- `cfg` = `randomize`
+- `sampler_name` = `2`
+- `scheduler` = `3.5`
+- `denoise` = `11`
+
+## 知识
+
+覆盖率 **88%**（28/32）
+
+**有卡**：`MaskToImage`、`ImageResizeKJv2`、`JWInteger`、`SaveImage`、`ImageConcanate`、`GetVideoComponents`、`FlashVSR_SM_Model`、`ImageFromBatch+`、`LayerUtility: ImageScaleByAspectRatio V2`、`DiffuEraserSampler`、`CreateVideo`、`DiffuEraserLoader`、`MathExpression|pysssss`、`RepeatImageBatch`、`VHS_VideoCombine`、`FlashVSR_SM_KSampler`、`LayerUtility: PurgeVRAM V2`、`RunningHub Deepcleaner`、`VHS_VideoInfo`、`VHS_LoadVideo`、`LoadImage`
+
+**用到的条目**：LoadImage、LayerUtility: ImageScaleByAspectRatio V2、FlashVSR_SM_KSampler、DiffuEraserSampler、ImageResizeKJv2、SaveImage、CreateVideo、GetVideoComponents

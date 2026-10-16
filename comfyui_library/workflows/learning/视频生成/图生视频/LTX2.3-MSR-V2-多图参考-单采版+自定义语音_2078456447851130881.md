@@ -1,0 +1,113 @@
+---
+key: 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-单采版+自定义语音_2078456447851130881.json
+name: LTX2.3-MSR-V2-多图参考-单采版+自定义语音_2078456447851130881.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2078456447851130881.json
+hash: fb1405a17895d132
+coverage: 0.654321
+learned_at: 2026-10-15 22:41:53
+nodes: [RandomNoise, ResizeImagesByLongerEdge, SetNode, ResizeImagesByLongerEdge, ResizeImagesByLongerEdge, LoadImage, ResizeImagesByLongerEdge, SetNode, SetNode, SetNode, CFGGuider, ComfyMathExpression, PrimitiveInt, GetNode, GetNode, GetNode, GetNode, GetNode, SamplerCustomAdvanced, LayerUtility: PurgeVRAM, Reroute, ComfyMathExpression, PathchSageAttentionKJ, CLIPTextEncode, PromptRelayEncode, PrimitiveInt, LTXAddVideoICLoRAGuide, KSamplerSelect, LTXVConditioning, ManualSigmas, SetNode, LTXVSeparateAVLatent, GetNode, EmptyLTXVLatentVideo, LTXVConcatAVLatent, ComfyMathExpression, LiconMSR, TrimAudioDuration, ComfyMathExpression, MelBandRoFormerSampler, LTXVAudioVAEEncode, SetLatentNoiseMask, SolidMask, DualCLIPLoader, VAELoaderKJ, VAELoaderKJ, UNETLoader, LoraLoaderModelOnly, LTXICLoRALoaderModelOnly, MelBandRoFormerModelLoader, LoadAudio, LoadImage, LoadImage, VAEDecodeTiled, ComfyMathExpression, LTXVCropGuides, LTXVAudioVAEDecode, FrameInterpolate, FrameInterpolationModelLoader, RTXVideoSuperResolution, LayerUtility: PurgeVRAM, VHS_VideoCombine, VHS_VideoCombine, LTX2_NAG, Note, PrimitiveStringMultiline, PrimitiveStringMultiline, PrimitiveInt, PrimitiveStringMultiline, ResizeImagesByLongerEdge, PrimitiveInt, PrimitiveStringMultiline, LoadImage, 孤海注释, LoadImage, 孤海注释, SetNode, 孤海注释, 孤海注释, 孤海注释, 孤海注释]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/LTX2.3-MSR-V2-多图参考-单采版+自定义语音_2078456447851130881.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2078456447851130881.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Other
+
+**节点**（81 个）：
+- `RandomNoise`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
+- `ResizeImagesByLongerEdge`
+- `ResizeImagesByLongerEdge`
+- `LoadImage`
+- `ResizeImagesByLongerEdge`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `CFGGuider`
+- `ComfyMathExpression`
+- `PrimitiveInt`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `LayerUtility: PurgeVRAM`
+- `Reroute`
+- `ComfyMathExpression`
+- `PathchSageAttentionKJ`
+- `CLIPTextEncode` ★核心
+- `PromptRelayEncode`
+- `PrimitiveInt`
+- `LTXAddVideoICLoRAGuide`
+- `KSamplerSelect` ★核心
+- `LTXVConditioning`
+- `ManualSigmas`
+- `SetNode`
+- `LTXVSeparateAVLatent`
+- `GetNode`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `ComfyMathExpression`
+- `LiconMSR`
+- `TrimAudioDuration`
+- `ComfyMathExpression`
+- `MelBandRoFormerSampler` ★核心
+- `LTXVAudioVAEEncode` ★核心
+- `SetLatentNoiseMask`
+- `SolidMask`
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `VAELoaderKJ`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LTXICLoRALoaderModelOnly` ★核心
+- `MelBandRoFormerModelLoader`
+- `LoadAudio`
+- `LoadImage`
+- `LoadImage`
+- `VAEDecodeTiled` ★核心
+- `ComfyMathExpression`
+- `LTXVCropGuides`
+- `LTXVAudioVAEDecode` ★核心
+- `FrameInterpolate`
+- `FrameInterpolationModelLoader`
+- `RTXVideoSuperResolution`
+- `LayerUtility: PurgeVRAM`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `LTX2_NAG`
+- `Note`
+- `PrimitiveStringMultiline`
+- `PrimitiveStringMultiline`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `ResizeImagesByLongerEdge`
+- `PrimitiveInt`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `孤海注释`
+- `LoadImage`
+- `孤海注释`
+- `SetNode`
+- `孤海注释`
+- `孤海注释`
+- `孤海注释`
+- `孤海注释`
+
+## 知识
+
+覆盖率 **65%**（53/81）
+
+**有卡**：`RandomNoise`、`ResizeImagesByLongerEdge`、`LoadImage`、`CFGGuider`、`ComfyMathExpression`、`SamplerCustomAdvanced`、`LayerUtility: PurgeVRAM`、`PathchSageAttentionKJ`、`CLIPTextEncode`、`PromptRelayEncode`、`LTXAddVideoICLoRAGuide`、`KSamplerSelect`、`LTXVConditioning`、`ManualSigmas`、`LTXVSeparateAVLatent`、`EmptyLTXVLatentVideo`、`LTXVConcatAVLatent`、`LiconMSR`、`TrimAudioDuration`、`MelBandRoFormerSampler`、`LTXVAudioVAEEncode`、`SetLatentNoiseMask`、`SolidMask`、`DualCLIPLoader`、`VAELoaderKJ`、`UNETLoader`、`LoraLoaderModelOnly`、`LTXICLoRALoaderModelOnly`、`MelBandRoFormerModelLoader`、`LoadAudio`、`VAEDecodeTiled`、`LTXVCropGuides`、`LTXVAudioVAEDecode`、`FrameInterpolate`、`FrameInterpolationModelLoader`、`RTXVideoSuperResolution`、`VHS_VideoCombine`、`LTX2_NAG`
+
+**用到的条目**：LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler

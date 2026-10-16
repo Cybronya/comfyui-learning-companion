@@ -1,0 +1,179 @@
+---
+key: 视频生成/图生视频/LTX2.3全栈式短剧生成V15_2052719167148707842.json
+name: LTX2.3全栈式短剧生成V15_2052719167148707842.json
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2052719167148707842.json
+hash: 9da641f303ab08d2
+coverage: 0.710744
+learned_at: 2026-10-15 22:37:31
+nodes: [easy indexAnything, easy indexAnything, easy indexAnything, PrimitiveStringMultiline, RegexExtract, ManualSigmas, SetNode, SetNode, LTXVChunkFeedForward, SetNode, LTXVSeparateAVLatent, SetNode, GetNode, GetNode, easy indexAnything, EmptyImage, GetImagesFromBatchIndexed, SetNode, SetNode, SetNode, KSamplerSelect, ImageInvert, RandomNoise, ImageBatchMulti, easy indexAnything, easy indexAnything, easy promptReplace, easy promptReplace, easy promptLine, VAEDecodeTiled, easy imageRemBg, easy imageRemBg, SetNode, easy promptList, ImageResizeKJv2, easy indexAnything, easy indexAnything, ImageResizeKJv2, GetNode, SetNode, SetNode, PrimitiveInt, SetNode, ComfyMathExpression, easy indexAnything, ComfyMathExpression, SetNode, GetNode, INTConstant, GetNode, VAEDecode, CLIPTextEncode, VAEEncode, GetNode, LTXVLatentUpsampler, CLIPTextEncode, ModelSamplingSD3, CLIPTextEncode, GetNode, ConditioningZeroOut, LTXVConditioning, LTXVAudioVAEDecode, GetNode, ShowText|pysssss, SetNode, ComfyMathExpression, GetNode, PreviewAny, INTConstant, ImageAddMulti, GetNode, ResizeImageMaskNode, LTXVConcatAVLatent, LTXVEmptyLatentAudio, GetNode, CFGGuider, SamplerCustomAdvanced, easy indexAnything, AudioEncoderEncode, RegexExtract, easy promptReplace, easy promptLine, easy convertAnything, VHS_VideoCombine, VHS_VideoCombine, ModelPatchTorchSettings, PathchSageAttentionKJ, easy positive, easy positive, LongTextToList, ShowText|pysssss, PrimitiveInt, SetNode, GetNode, VAELoaderKJ, DualCLIPLoader, VAELoaderKJ, LatentUpscaleModelLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, GetNode, GetNode, GetNode, UNETLoader, ComfyMathExpression, UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, AudioEncoderLoader, ComfyMathExpression, ComfyMathExpression, KSampler, ContextWindowsManual, WanHuMoImageToVideo]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 25, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 42, "steps": 4, "width": 97}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/LTX2.3全栈式短剧生成V15_2052719167148707842.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2052719167148707842.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Other
+
+**节点**（121 个）：
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy indexAnything`
+- `PrimitiveStringMultiline`
+- `RegexExtract`
+- `ManualSigmas`
+- `SetNode`
+- `SetNode`
+- `LTXVChunkFeedForward`
+- `SetNode`
+- `LTXVSeparateAVLatent`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `easy indexAnything`
+- `EmptyImage`
+- `GetImagesFromBatchIndexed`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `KSamplerSelect` ★核心
+- `ImageInvert`
+- `RandomNoise`
+- `ImageBatchMulti`
+- `easy indexAnything`
+- `easy indexAnything`
+- `easy promptReplace`
+- `easy promptReplace`
+- `easy promptLine`
+- `VAEDecodeTiled` ★核心
+- `easy imageRemBg`
+- `easy imageRemBg`
+- `SetNode`
+- `easy promptList`
+- `ImageResizeKJv2`
+- `easy indexAnything`
+- `easy indexAnything`
+- `ImageResizeKJv2`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `PrimitiveInt`
+- `SetNode`
+- `ComfyMathExpression`
+- `easy indexAnything`
+- `ComfyMathExpression`
+- `SetNode`
+- `GetNode`
+- `INTConstant`
+- `GetNode`
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `VAEEncode` ★核心
+- `GetNode`
+- `LTXVLatentUpsampler` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingSD3`
+- `CLIPTextEncode` ★核心
+- `GetNode`
+- `ConditioningZeroOut`
+- `LTXVConditioning`
+- `LTXVAudioVAEDecode` ★核心
+- `GetNode`
+- `ShowText|pysssss`
+- `SetNode`
+- `ComfyMathExpression`
+- `GetNode`
+- `PreviewAny`
+- `INTConstant`
+- `ImageAddMulti`
+- `GetNode`
+- `ResizeImageMaskNode`
+- `LTXVConcatAVLatent`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `easy indexAnything`
+- `AudioEncoderEncode`
+- `RegexExtract`
+- `easy promptReplace`
+- `easy promptLine`
+- `easy convertAnything`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ModelPatchTorchSettings`
+- `PathchSageAttentionKJ`
+- `easy positive`
+- `easy positive`
+- `LongTextToList`
+- `ShowText|pysssss`
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `VAELoaderKJ`
+- `DualCLIPLoader`
+- `VAELoaderKJ`
+- `LatentUpscaleModelLoader`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `UNETLoader` ★核心
+- `ComfyMathExpression`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `AudioEncoderLoader`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `KSampler` ★核心
+- `ContextWindowsManual`
+- `WanHuMoImageToVideo`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `width` = `97`
+- `height` = `25`
+- `batch_size` = `1`
+- `seed` = `42`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **71%**（86/121）
+
+**有卡**：`easy indexAnything`、`RegexExtract`、`ManualSigmas`、`LTXVChunkFeedForward`、`LTXVSeparateAVLatent`、`EmptyImage`、`GetImagesFromBatchIndexed`、`KSamplerSelect`、`ImageInvert`、`RandomNoise`、`ImageBatchMulti`、`easy promptReplace`、`easy promptLine`、`VAEDecodeTiled`、`easy imageRemBg`、`easy promptList`、`ImageResizeKJv2`、`ComfyMathExpression`、`INTConstant`、`VAEDecode`、`CLIPTextEncode`、`VAEEncode`、`LTXVLatentUpsampler`、`ModelSamplingSD3`、`ConditioningZeroOut`、`LTXVConditioning`、`LTXVAudioVAEDecode`、`ImageAddMulti`、`ResizeImageMaskNode`、`LTXVConcatAVLatent`、`LTXVEmptyLatentAudio`、`CFGGuider`、`SamplerCustomAdvanced`、`AudioEncoderEncode`、`easy convertAnything`、`VHS_VideoCombine`、`ModelPatchTorchSettings`、`PathchSageAttentionKJ`、`easy positive`、`LongTextToList`、`VAELoaderKJ`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`LoraLoaderModelOnly`、`LoadImage`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`AudioEncoderLoader`、`KSampler`、`ContextWindowsManual`、`WanHuMoImageToVideo`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

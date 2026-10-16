@@ -1,0 +1,157 @@
+---
+key: 视频生成/图生视频/LTX+2.3 +数字人对口型优化加速版_2050462775322923010.json
+name: LTX+2.3 +数字人对口型优化加速版_2050462775322923010.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/2050462775322923010.json
+hash: 4bf5374c76701870
+coverage: 0.456
+learned_at: 2026-10-15 22:37:18
+nodes: [RandomNoise, LTXVConcatAVLatent, KSamplerSelect, ManualSigmas, CFGGuider, SamplerCustomAdvanced, LTXVCropGuides, LTXVLatentUpsampler, LTXVImgToVideoInplace, KSamplerSelect, CLIPTextEncode, LTXVConditioning, ManualSigmas, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVSeparateAVLatent, CFGGuider, LTXVImgToVideoInplace, SolidMask, ResizeImagesByLongerEdge, LTXVPreprocess, EmptyLTXVLatentVideo, LTXVConcatAVLatent, SetLatentNoiseMask, ResizeImageMaskNode, LTXVAudioVAEEncode, VAEDecodeTiled, LTXVAudioVAEDecode, CreateVideo, PrimitiveBoolean, VAELoader, VAELoaderKJ, CLIPTextEncode, TextInput_, DualCLIPLoader, LatentUpscaleModelLoader, TrimAudioDuration, SimpleMath+, AudioInfo, Display Any (rgthree), AudioCrop, SimpleMath+, PrimitiveInt, SaveVideo, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, ComfyMathExpression, UNETLoader, LTXVChunkFeedForward, PathchSageAttentionKJ, LoraLoaderModelOnly, LoraLoaderModelOnly, PrimitiveInt, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, Note, ShowText|pysssss, RH_LLMAPI_Pro_Node, LoadImage, Note, PrimitiveFloat, PrimitiveInt, LoadAudio, PrimitiveStringMultiline, RandomNoise, LoadImage]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/LTX+2.3 +数字人对口型优化加速版_2050462775322923010.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/2050462775322923010.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（125 个）：
+- `RandomNoise`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `ManualSigmas`
+- `CFGGuider`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVCropGuides`
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `KSamplerSelect` ★核心
+- `CLIPTextEncode` ★核心
+- `LTXVConditioning`
+- `ManualSigmas`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVSeparateAVLatent`
+- `CFGGuider`
+- `LTXVImgToVideoInplace`
+- `SolidMask`
+- `ResizeImagesByLongerEdge`
+- `LTXVPreprocess`
+- `EmptyLTXVLatentVideo`
+- `LTXVConcatAVLatent`
+- `SetLatentNoiseMask`
+- `ResizeImageMaskNode`
+- `LTXVAudioVAEEncode` ★核心
+- `VAEDecodeTiled` ★核心
+- `LTXVAudioVAEDecode` ★核心
+- `CreateVideo`
+- `PrimitiveBoolean`
+- `VAELoader`
+- `VAELoaderKJ`
+- `CLIPTextEncode` ★核心
+- `TextInput_`
+- `DualCLIPLoader`
+- `LatentUpscaleModelLoader`
+- `TrimAudioDuration`
+- `SimpleMath+`
+- `AudioInfo`
+- `Display Any (rgthree)`
+- `AudioCrop`
+- `SimpleMath+`
+- `PrimitiveInt`
+- `SaveVideo`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `UNETLoader` ★核心
+- `LTXVChunkFeedForward`
+- `PathchSageAttentionKJ`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `PrimitiveInt`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `ShowText|pysssss`
+- `RH_LLMAPI_Pro_Node`
+- `LoadImage`
+- `Note`
+- `PrimitiveFloat`
+- `PrimitiveInt`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `RandomNoise`
+- `LoadImage`
+
+## 知识
+
+覆盖率 **46%**（57/125）
+
+**有卡**：`RandomNoise`、`LTXVConcatAVLatent`、`KSamplerSelect`、`ManualSigmas`、`CFGGuider`、`SamplerCustomAdvanced`、`LTXVCropGuides`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`CLIPTextEncode`、`LTXVConditioning`、`LTXVSeparateAVLatent`、`SolidMask`、`ResizeImagesByLongerEdge`、`LTXVPreprocess`、`EmptyLTXVLatentVideo`、`SetLatentNoiseMask`、`ResizeImageMaskNode`、`LTXVAudioVAEEncode`、`VAEDecodeTiled`、`LTXVAudioVAEDecode`、`CreateVideo`、`PrimitiveBoolean`、`VAELoader`、`VAELoaderKJ`、`TextInput_`、`DualCLIPLoader`、`LatentUpscaleModelLoader`、`TrimAudioDuration`、`SimpleMath+`、`AudioInfo`、`Display Any (rgthree)`、`AudioCrop`、`SaveVideo`、`ComfyMathExpression`、`UNETLoader`、`LTXVChunkFeedForward`、`PathchSageAttentionKJ`、`LoraLoaderModelOnly`、`RH_LLMAPI_Pro_Node`、`LoadImage`、`LoadAudio`
+
+**用到的条目**：VAELoader、LoraLoaderModelOnly、CLIPTextEncode、LoadImage、UNETLoader、CFGGuider、KSamplerSelect、SamplerCustomAdvanced

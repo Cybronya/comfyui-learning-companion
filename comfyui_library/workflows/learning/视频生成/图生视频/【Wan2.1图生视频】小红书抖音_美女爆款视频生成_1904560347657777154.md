@@ -1,0 +1,57 @@
+---
+key: 视频生成/图生视频/【Wan2.1图生视频】小红书抖音_美女爆款视频生成_1904560347657777154.json
+name: 【Wan2.1图生视频】小红书抖音_美女爆款视频生成_1904560347657777154.json
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/1904560347657777154.json
+hash: 32708f9f1277ca73
+coverage: 1
+learned_at: 2026-10-15 22:29:25
+nodes: [LoadImage, CLIPTextEncode, CLIPTextEncode, SaveWEBM, CLIPLoader, CLIPVisionEncode, ModelSamplingSD3, VAELoader, WanImageToVideo, KSampler, UNETLoader, CLIPVisionLoader, SaveAnimatedWEBP, SaveImage, VAEDecode]
+patterns: []
+missing: []
+parameters: {"cfg": 6, "denoise": 1, "sampler_name": "uni_pc", "scheduler": "simple", "seed": 983132907244439, "steps": 20}
+---
+
+# 视频生成/图生视频/【Wan2.1图生视频】小红书抖音_美女爆款视频生成_1904560347657777154.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/1904560347657777154.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Output → Other
+
+**节点**（15 个）：
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `SaveWEBM`
+- `CLIPLoader`
+- `CLIPVisionEncode`
+- `ModelSamplingSD3`
+- `VAELoader`
+- `WanImageToVideo`
+- `KSampler` ★核心
+- `UNETLoader` ★核心
+- `CLIPVisionLoader`
+- `SaveAnimatedWEBP`
+- `SaveImage`
+- `VAEDecode` ★核心
+
+## 关键参数
+
+- `seed` = `983132907244439`
+- `steps` = `20`
+- `cfg` = `6`
+- `sampler_name` = `uni_pc`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **100%**（15/15）
+
+**有卡**：`LoadImage`、`CLIPTextEncode`、`SaveWEBM`、`CLIPLoader`、`CLIPVisionEncode`、`ModelSamplingSD3`、`VAELoader`、`WanImageToVideo`、`KSampler`、`UNETLoader`、`CLIPVisionLoader`、`SaveAnimatedWEBP`、`SaveImage`、`VAEDecode`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、LoadImage、UNETLoader、CLIPVisionEncode
