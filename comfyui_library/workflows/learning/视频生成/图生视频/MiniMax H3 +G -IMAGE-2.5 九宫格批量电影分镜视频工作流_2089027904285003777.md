@@ -1,0 +1,491 @@
+---
+key: 视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json
+name: MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json
+hash: ccee74e3513022cf
+coverage: 0.823529
+learned_at: 2026-10-16 21:43:24
+nodes: [easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, easy imageListToImageBatch, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, PreviewImage, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, PixaromaLabel, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, ImageFromBatch, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, CR Prompt Text, Text, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, Reroute, CR Prompt Text, Text, Text, Text, Text, CR Prompt Text, Text, Text, Text, CR Prompt Text, Text, PreviewImage, LayerUtility: PurgeVRAM V2, ImageResizeKJv2, VAEDecode, BasicGuider, KSamplerSelect, VAEEncodeAudio, VAEEncode, easy cleanGpuUsed, Switch any [Crystools], easy cleanGpuUsed, VAEEncode, VAEDecode, VAEEncodeAudio, BasicScheduler, KSamplerSelect, BasicGuider, LayerUtility: PurgeVRAM V2, ImageResizeKJv2, SamplerCustomAdvanced, RandomNoise, PT_H3ConcatAVLatent, easy cleanGpuUsed, Switch any [Crystools], BasicScheduler, PT_H3ConcatAVLatent, SamplerCustomAdvanced, RandomNoise, easy cleanGpuUsed, easy cleanGpuUsed, Switch any [Crystools], SamplerCustomAdvanced, PT_H3ConcatAVLatent, VAEEncode, VAEEncodeAudio, LayerUtility: PurgeVRAM V2, BasicScheduler, KSamplerSelect, easy cleanGpuUsed, RandomNoise, ImageResizeKJv2, VAEDecode, BasicGuider, easy cleanGpuUsed, Switch any [Crystools], LayerUtility: PurgeVRAM V2, BasicGuider, KSamplerSelect, BasicScheduler, ImageResizeKJv2, VAEEncodeAudio, PT_H3ConcatAVLatent, VAEEncode, VAEDecode, easy cleanGpuUsed, SamplerCustomAdvanced, easy cleanGpuUsed, Switch any [Crystools], easy cleanGpuUsed, PT_H3ConcatAVLatent, VAEDecode, VAEEncodeAudio, RandomNoise, ImageResizeKJv2, VAEEncode, BasicGuider, LayerUtility: PurgeVRAM V2, KSamplerSelect, BasicScheduler, easy cleanGpuUsed, Switch any [Crystools], BasicGuider, KSamplerSelect, SamplerCustomAdvanced, easy cleanGpuUsed, PT_H3ConcatAVLatent, VAEDecode, BasicScheduler, RandomNoise, VAEEncodeAudio, VAEEncode, ImageResizeKJv2, easy cleanGpuUsed, Switch any [Crystools], RandomNoise, LayerUtility: PurgeVRAM V2, VAEEncodeAudio, KSamplerSelect, PT_H3ConcatAVLatent, BasicGuider, VAEEncode, VAEDecode, SamplerCustomAdvanced, BasicScheduler, easy cleanGpuUsed, ImageResizeKJv2, easy cleanGpuUsed, Switch any [Crystools], SamplerCustomAdvanced, VAEDecode, easy cleanGpuUsed, PT_H3ConcatAVLatent, VAEEncode, VAEEncodeAudio, ImageResizeKJv2, RandomNoise, BasicGuider, KSamplerSelect, easy cleanGpuUsed, Switch any [Crystools], SamplerCustomAdvanced, easy cleanGpuUsed, LayerUtility: PurgeVRAM V2, VAEEncode, ImageResizeKJv2, VAEEncodeAudio, BasicGuider, KSamplerSelect, BasicScheduler, VAEDecode, RandomNoise, Reroute, RandomNoise, Note, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, LayerUtility: PurgeVRAM V2, VAELoader, VAELoader, CR Prompt Text, ImageFromBatch, easy imageSplitGrid, PreviewImage, ImageResizeKJv2, ImageResizeKJv2, ImageResizeKJv2, RandomNoise, PixaromaGetNode, PixaromaGetNode, PixaromaGetNode, Reroute, Reroute, ResolutionSelector, PixaromaGetNode, Reroute, Reroute, PixaromaGetNode, Images to RGB, PixaromaGetNode, Reroute, Reroute, PixaromaGetNode, ResolutionSelector, Reroute, Images to RGB, easy seed, MiniMaxH3AVDecodeT8, Reroute, Reroute, ResolutionSelector, PixaromaGetNode, SamplerCustomAdvanced, easy seed, Images to RGB, ImageResizeKJv2, RandomNoise, MiniMaxH3AVDecodeT8, PixaromaGetNode, Reroute, Reroute, PixaromaGetNode, LayerUtility: PurgeVRAM V2, Images to RGB, RandomNoise, easy seed, MiniMaxH3AVDecodeT8, PixaromaGetNode, ResolutionSelector, Reroute, PixaromaGetNode, Reroute, PixaromaGetNode, ResolutionSelector, Reroute, Reroute, Reroute, BasicScheduler, LayerUtility: PurgeVRAM V2, PixaromaGetNode, Reroute, ResolutionSelector, ResolutionSelector, Reroute, PixaromaGetNode, ResolutionSelector, PixaromaGetNode, PT_H3ConcatAVLatent, ResolutionSelector, VHS_VideoCombine, Reroute, Reroute, Reroute, Reroute, ResolutionSelector, ResolutionSelector, Reroute, ResolutionSelector, ResolutionSelector, Reroute, ResolutionSelector, Reroute, ResolutionSelector, Reroute, ResolutionSelector, VHS_VideoCombine, Reroute, ResolutionSelector, ResolutionSelector, PixaromaSetNode, PrimitiveNode, PixaromaSetNode, PixaromaSetNode, PixaromaLabel, MarkdownNote, PixaromaLabel, ModelAttentionBackend, MiniMaxLowVRAMAttention, MiniMaxChunkFeedForward, MiniMaxH3MemoryEfficientSageAttentionPatch, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, PixaromaGetNode, ModelPreviewOverrideKJ, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, ComfyMathExpression, VHS_VideoCombine, VHS_VideoCombine, ComfyMathExpression, ComfyMathExpression, PixaromaLabel, easy showAnything, Switch any [Crystools], easy boolean, PrimitiveNode, RH_RhartImageG25OfficialTokenSunburstEdit, RHLLMChatNode, PrimitiveFloat, PrimitiveFloat, UNETLoader, CLIPLoader, MarkdownNote, LoadImage, LoadImage, SaveImage, ImageResizeKJv2, LoadImage, PrimitiveFloat, Reroute, Reroute, Reroute, PixaromaSetNode, LoraLoaderModelOnly, PixaromaResolution, PixaromaLabel, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHHiddenNodes, RHSettingsNode, MiniMaxH3ReferenceToVideo, PixaromaGetNode, ComfyMathExpression, Images to RGB, MiniMaxH3AVDecodeT8, ImageResizeKJv2, SamplerCustomAdvanced, RandomNoise, easy seed, MiniMaxH3DualClockSamplerT8, BasicGuider, VHS_VideoCombine, easy seed, PixaromaGetNode, MiniMaxH3ReferenceToVideo, Images to RGB, MiniMaxH3AVDecodeT8, RandomNoise, SamplerCustomAdvanced, ImageResizeKJv2, ComfyMathExpression, BasicGuider, MiniMaxH3DualClockSamplerT8, VHS_VideoCombine, PixaromaGetNode, ComfyMathExpression, PixaromaGetNode, MiniMaxH3ReferenceToVideo, easy seed, SamplerCustomAdvanced, MiniMaxH3AVDecodeT8, Images to RGB, ImageResizeKJv2, BasicGuider, MiniMaxH3DualClockSamplerT8, VHS_VideoCombine, ComfyMathExpression, PixaromaGetNode, MiniMaxH3ReferenceToVideo, easy seed, MiniMaxH3AVDecodeT8, SamplerCustomAdvanced, RandomNoise, BasicGuider, MiniMaxH3DualClockSamplerT8, VHS_VideoCombine, PixaromaGetNode, ComfyMathExpression, PixaromaGetNode, RandomNoise, MiniMaxH3ReferenceToVideo, SamplerCustomAdvanced, BasicGuider, MiniMaxH3DualClockSamplerT8, VHS_VideoCombine, SamplerCustomAdvanced, PixaromaGetNode, BasicGuider, MiniMaxH3DualClockSamplerT8, MiniMaxH3ReferenceToVideo, VHS_VideoCombine, ComfyMathExpression, MiniMaxH3ReferenceToVideo, SamplerCustomAdvanced, BasicGuider, MiniMaxH3DualClockSamplerT8, VHS_VideoCombine, PixaromaGetNode, PixaromaGetNode, Images to RGB, ImageResizeKJv2, easy seed, RandomNoise, MiniMaxH3AVDecodeT8, SamplerCustomAdvanced, MiniMaxH3ReferenceToVideo, MiniMaxH3DualClockSamplerT8, BasicGuider, VHS_VideoCombine, SamplerCustomAdvanced, PixaromaGetNode, easy seed, RandomNoise, MiniMaxH3AVDecodeT8, MiniMaxH3ReferenceToVideo, Images to RGB, ImageResizeKJv2, BasicGuider, MiniMaxH3DualClockSamplerT8, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/MiniMax H3 +G -IMAGE-2.5 九宫格批量电影分镜视频工作流_2089027904285003777.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（459 个）：
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `easy imageListToImageBatch`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `PixaromaLabel`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `ImageFromBatch`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `CR Prompt Text`
+- `Text`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `CR Prompt Text`
+- `Text`
+- `Text`
+- `Text`
+- `Text`
+- `CR Prompt Text`
+- `Text`
+- `Text`
+- `Text`
+- `CR Prompt Text`
+- `Text`
+- `PreviewImage`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJv2`
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `VAEEncodeAudio` ★核心
+- `VAEEncode` ★核心
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `easy cleanGpuUsed`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `VAEEncodeAudio` ★核心
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `BasicGuider`
+- `LayerUtility: PurgeVRAM V2`
+- `ImageResizeKJv2`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `PT_H3ConcatAVLatent`
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `BasicScheduler`
+- `PT_H3ConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `easy cleanGpuUsed`
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `SamplerCustomAdvanced` ★核心
+- `PT_H3ConcatAVLatent`
+- `VAEEncode` ★核心
+- `VAEEncodeAudio` ★核心
+- `LayerUtility: PurgeVRAM V2`
+- `BasicScheduler`
+- `KSamplerSelect` ★核心
+- `easy cleanGpuUsed`
+- `RandomNoise`
+- `ImageResizeKJv2`
+- `VAEDecode` ★核心
+- `BasicGuider`
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `LayerUtility: PurgeVRAM V2`
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `ImageResizeKJv2`
+- `VAEEncodeAudio` ★核心
+- `PT_H3ConcatAVLatent`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `SamplerCustomAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `easy cleanGpuUsed`
+- `PT_H3ConcatAVLatent`
+- `VAEDecode` ★核心
+- `VAEEncodeAudio` ★核心
+- `RandomNoise`
+- `ImageResizeKJv2`
+- `VAEEncode` ★核心
+- `BasicGuider`
+- `LayerUtility: PurgeVRAM V2`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `PT_H3ConcatAVLatent`
+- `VAEDecode` ★核心
+- `BasicScheduler`
+- `RandomNoise`
+- `VAEEncodeAudio` ★核心
+- `VAEEncode` ★核心
+- `ImageResizeKJv2`
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `RandomNoise`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEEncodeAudio` ★核心
+- `KSamplerSelect` ★核心
+- `PT_H3ConcatAVLatent`
+- `BasicGuider`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `BasicScheduler`
+- `easy cleanGpuUsed`
+- `ImageResizeKJv2`
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `SamplerCustomAdvanced` ★核心
+- `VAEDecode` ★核心
+- `easy cleanGpuUsed`
+- `PT_H3ConcatAVLatent`
+- `VAEEncode` ★核心
+- `VAEEncodeAudio` ★核心
+- `ImageResizeKJv2`
+- `RandomNoise`
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `easy cleanGpuUsed`
+- `Switch any [Crystools]`
+- `SamplerCustomAdvanced` ★核心
+- `easy cleanGpuUsed`
+- `LayerUtility: PurgeVRAM V2`
+- `VAEEncode` ★核心
+- `ImageResizeKJv2`
+- `VAEEncodeAudio` ★核心
+- `BasicGuider`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `VAEDecode` ★核心
+- `RandomNoise`
+- `Reroute`
+- `RandomNoise`
+- `Note`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `LayerUtility: PurgeVRAM V2`
+- `VAELoader`
+- `VAELoader`
+- `CR Prompt Text`
+- `ImageFromBatch`
+- `easy imageSplitGrid`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `ImageResizeKJv2`
+- `RandomNoise`
+- `PixaromaGetNode`
+- `PixaromaGetNode`
+- `PixaromaGetNode`
+- `Reroute`
+- `Reroute`
+- `ResolutionSelector`
+- `PixaromaGetNode`
+- `Reroute`
+- `Reroute`
+- `PixaromaGetNode`
+- `Images to RGB`
+- `PixaromaGetNode`
+- `Reroute`
+- `Reroute`
+- `PixaromaGetNode`
+- `ResolutionSelector`
+- `Reroute`
+- `Images to RGB`
+- `easy seed`
+- `MiniMaxH3AVDecodeT8`
+- `Reroute`
+- `Reroute`
+- `ResolutionSelector`
+- `PixaromaGetNode`
+- `SamplerCustomAdvanced` ★核心
+- `easy seed`
+- `Images to RGB`
+- `ImageResizeKJv2`
+- `RandomNoise`
+- `MiniMaxH3AVDecodeT8`
+- `PixaromaGetNode`
+- `Reroute`
+- `Reroute`
+- `PixaromaGetNode`
+- `LayerUtility: PurgeVRAM V2`
+- `Images to RGB`
+- `RandomNoise`
+- `easy seed`
+- `MiniMaxH3AVDecodeT8`
+- `PixaromaGetNode`
+- `ResolutionSelector`
+- `Reroute`
+- `PixaromaGetNode`
+- `Reroute`
+- `PixaromaGetNode`
+- `ResolutionSelector`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `BasicScheduler`
+- `LayerUtility: PurgeVRAM V2`
+- `PixaromaGetNode`
+- `Reroute`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `Reroute`
+- `PixaromaGetNode`
+- `ResolutionSelector`
+- `PixaromaGetNode`
+- `PT_H3ConcatAVLatent`
+- `ResolutionSelector`
+- `VHS_VideoCombine`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `Reroute`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `Reroute`
+- `ResolutionSelector`
+- `Reroute`
+- `ResolutionSelector`
+- `Reroute`
+- `ResolutionSelector`
+- `VHS_VideoCombine`
+- `Reroute`
+- `ResolutionSelector`
+- `ResolutionSelector`
+- `PixaromaSetNode`
+- `PrimitiveNode`
+- `PixaromaSetNode`
+- `PixaromaSetNode`
+- `PixaromaLabel`
+- `MarkdownNote`
+- `PixaromaLabel`
+- `ModelAttentionBackend`
+- `MiniMaxLowVRAMAttention`
+- `MiniMaxChunkFeedForward`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `PixaromaGetNode`
+- `ModelPreviewOverrideKJ`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `ComfyMathExpression`
+- `PixaromaLabel`
+- `easy showAnything`
+- `Switch any [Crystools]`
+- `easy boolean`
+- `PrimitiveNode`
+- `RH_RhartImageG25OfficialTokenSunburstEdit`
+- `RHLLMChatNode`
+- `PrimitiveFloat`
+- `PrimitiveFloat`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `MarkdownNote`
+- `LoadImage`
+- `LoadImage`
+- `SaveImage`
+- `ImageResizeKJv2`
+- `LoadImage`
+- `PrimitiveFloat`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `PixaromaSetNode`
+- `LoraLoaderModelOnly` ★核心
+- `PixaromaResolution`
+- `PixaromaLabel`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHHiddenNodes`
+- `RHSettingsNode`
+- `MiniMaxH3ReferenceToVideo`
+- `PixaromaGetNode`
+- `ComfyMathExpression`
+- `Images to RGB`
+- `MiniMaxH3AVDecodeT8`
+- `ImageResizeKJv2`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `easy seed`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `BasicGuider`
+- `VHS_VideoCombine`
+- `easy seed`
+- `PixaromaGetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `Images to RGB`
+- `MiniMaxH3AVDecodeT8`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `ImageResizeKJv2`
+- `ComfyMathExpression`
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `VHS_VideoCombine`
+- `PixaromaGetNode`
+- `ComfyMathExpression`
+- `PixaromaGetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `easy seed`
+- `SamplerCustomAdvanced` ★核心
+- `MiniMaxH3AVDecodeT8`
+- `Images to RGB`
+- `ImageResizeKJv2`
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `PixaromaGetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `easy seed`
+- `MiniMaxH3AVDecodeT8`
+- `SamplerCustomAdvanced` ★核心
+- `RandomNoise`
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `VHS_VideoCombine`
+- `PixaromaGetNode`
+- `ComfyMathExpression`
+- `PixaromaGetNode`
+- `RandomNoise`
+- `MiniMaxH3ReferenceToVideo`
+- `SamplerCustomAdvanced` ★核心
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `VHS_VideoCombine`
+- `SamplerCustomAdvanced` ★核心
+- `PixaromaGetNode`
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `MiniMaxH3ReferenceToVideo`
+- `VHS_VideoCombine`
+- `ComfyMathExpression`
+- `MiniMaxH3ReferenceToVideo`
+- `SamplerCustomAdvanced` ★核心
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `VHS_VideoCombine`
+- `PixaromaGetNode`
+- `PixaromaGetNode`
+- `Images to RGB`
+- `ImageResizeKJv2`
+- `easy seed`
+- `RandomNoise`
+- `MiniMaxH3AVDecodeT8`
+- `SamplerCustomAdvanced` ★核心
+- `MiniMaxH3ReferenceToVideo`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `BasicGuider`
+- `VHS_VideoCombine`
+- `SamplerCustomAdvanced` ★核心
+- `PixaromaGetNode`
+- `easy seed`
+- `RandomNoise`
+- `MiniMaxH3AVDecodeT8`
+- `MiniMaxH3ReferenceToVideo`
+- `Images to RGB`
+- `ImageResizeKJv2`
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **82%**（378/459）
+
+**有卡**：`easy imageListToImageBatch`、`PixaromaLabel`、`ImageFromBatch`、`CR Prompt Text`、`Text`、`LayerUtility: PurgeVRAM V2`、`ImageResizeKJv2`、`VAEDecode`、`BasicGuider`、`KSamplerSelect`、`VAEEncodeAudio`、`VAEEncode`、`easy cleanGpuUsed`、`Switch any [Crystools]`、`BasicScheduler`、`SamplerCustomAdvanced`、`RandomNoise`、`PT_H3ConcatAVLatent`、`VAELoader`、`easy imageSplitGrid`、`PixaromaGetNode`、`ResolutionSelector`、`Images to RGB`、`easy seed`、`MiniMaxH3AVDecodeT8`、`VHS_VideoCombine`、`PixaromaSetNode`、`ModelAttentionBackend`、`MiniMaxLowVRAMAttention`、`MiniMaxChunkFeedForward`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`ModelPreviewOverrideKJ`、`ComfyMathExpression`、`easy boolean`、`RH_RhartImageG25OfficialTokenSunburstEdit`、`RHLLMChatNode`、`UNETLoader`、`CLIPLoader`、`LoadImage`、`SaveImage`、`LoraLoaderModelOnly`、`PixaromaResolution`、`RHHiddenNodes`、`RHSettingsNode`、`MiniMaxH3ReferenceToVideo`、`MiniMaxH3DualClockSamplerT8`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect

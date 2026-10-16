@@ -1,0 +1,144 @@
+---
+key: 视频生成/图生视频/LTX-2.3 自定义音频 拆分子图版图生视频-高级工作流_2088612314143617026.json
+name: LTX-2.3 自定义音频 拆分子图版图生视频-高级工作流_2088612314143617026
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 自定义音频 拆分子图版图生视频-高级工作流_2088612314143617026.json
+hash: a299178e4cde2847
+coverage: 0.5
+learned_at: 2026-10-16 21:43:18
+nodes: [MathExpression|pysssss, SetNode, GetNode, EmptyImage, GetNode, GetNode, GetNode, GetNode, GetNode, ImageResizeKJv2, PrimitiveInt, PrimitiveInt, PrimitiveFloat, SetNode, SetNode, PrimitiveInt, SetNode, GetNode, GetNode, GetNode, PreviewImage, GetNode, GetNode, SetNode, Note, Note, GetNode, ShowText|pysssss, LTXVSpatioTemporalTiledVAEDecode, ImageScaleBy, LTXVScheduler, ManualSigmas, RandomNoise, LTXVSeparateAVLatent, SamplerCustomAdvanced, LTXVLatentUpsampler, LTXVImgToVideoInplace, LTXVConcatAVLatent, KSamplerSelect, KSamplerSelect, EmptyLTXVLatentVideo, LTXVPreprocess, GetImageSize, ResizeImagesByLongerEdge, LTXVImgToVideoInplace, SetNode, LTXVAudioVAELoader, LTXAVTextEncoderLoader, LatentUpscaleModelLoader, Note, Qwen3ASRLoader, SetNode, SetNode, CR Float To Integer, SetNode, SetNode, SetNode, MelBandRoFormerSampler, Note, Qwen3ASRTranscribe, TrimAudioDuration, MelBandRoFormerModelLoader, GetNode, Audio Duration (mtb), GetNode, SetNode, GetNode, Reroute, RandomNoise, LTXVConditioning, LTXVAudioVAEDecode, Note, SetNode, VHS_VideoCombine, CFGGuider, GetNode, GetNode, LTXVCropGuides, LTXVSeparateAVLatent, LTXVConcatAVLatent, SamplerCustomAdvanced, CFGGuider, SetNode, LoraLoaderModelOnly, CLIPTextEncode, CLIPTextEncode, CheckpointLoaderSimple, SolidMask, SetLatentNoiseMask, SetNode, LTXVAudioVAEEncode, StringReplace, GetNode, GetNode, TextGenerateLTX2Prompt, GetNode, GetNode, LTXVEmptyLatentAudio, GetNode, ShowText|pysssss, PrimitiveFloat, LoadAudio, PrimitiveStringMultiline, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "checkpoint": "ltx-2.3-22b-dev.safetensors", "height": 25, "width": 121}
+---
+
+# 视频生成/图生视频/LTX-2.3 自定义音频 拆分子图版图生视频-高级工作流_2088612314143617026.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/LTX-2.3 自定义音频 拆分子图版图生视频-高级工作流_2088612314143617026.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（104 个）：
+- `MathExpression|pysssss`
+- `SetNode`
+- `GetNode`
+- `EmptyImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `PrimitiveFloat`
+- `SetNode`
+- `SetNode`
+- `PrimitiveInt`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `Note`
+- `Note`
+- `GetNode`
+- `ShowText|pysssss`
+- `LTXVSpatioTemporalTiledVAEDecode` ★核心
+- `ImageScaleBy`
+- `LTXVScheduler`
+- `ManualSigmas`
+- `RandomNoise`
+- `LTXVSeparateAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `LTXVLatentUpsampler` ★核心
+- `LTXVImgToVideoInplace`
+- `LTXVConcatAVLatent`
+- `KSamplerSelect` ★核心
+- `KSamplerSelect` ★核心
+- `EmptyLTXVLatentVideo`
+- `LTXVPreprocess`
+- `GetImageSize`
+- `ResizeImagesByLongerEdge`
+- `LTXVImgToVideoInplace`
+- `SetNode`
+- `LTXVAudioVAELoader`
+- `LTXAVTextEncoderLoader`
+- `LatentUpscaleModelLoader`
+- `Note`
+- `Qwen3ASRLoader`
+- `SetNode`
+- `SetNode`
+- `CR Float To Integer`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `MelBandRoFormerSampler` ★核心
+- `Note`
+- `Qwen3ASRTranscribe`
+- `TrimAudioDuration`
+- `MelBandRoFormerModelLoader`
+- `GetNode`
+- `Audio Duration (mtb)`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `Reroute`
+- `RandomNoise`
+- `LTXVConditioning`
+- `LTXVAudioVAEDecode` ★核心
+- `Note`
+- `SetNode`
+- `VHS_VideoCombine`
+- `CFGGuider`
+- `GetNode`
+- `GetNode`
+- `LTXVCropGuides`
+- `LTXVSeparateAVLatent`
+- `LTXVConcatAVLatent`
+- `SamplerCustomAdvanced` ★核心
+- `CFGGuider`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `SolidMask`
+- `SetLatentNoiseMask`
+- `SetNode`
+- `LTXVAudioVAEEncode` ★核心
+- `StringReplace`
+- `GetNode`
+- `GetNode`
+- `TextGenerateLTX2Prompt`
+- `GetNode`
+- `GetNode`
+- `LTXVEmptyLatentAudio` ★核心
+- `GetNode`
+- `ShowText|pysssss`
+- `PrimitiveFloat`
+- `LoadAudio`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+
+## 关键参数
+
+- `checkpoint` = `ltx-2.3-22b-dev.safetensors`
+- `width` = `121`
+- `height` = `25`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **50%**（52/104）
+
+**有卡**：`MathExpression|pysssss`、`EmptyImage`、`ImageResizeKJv2`、`LTXVSpatioTemporalTiledVAEDecode`、`ImageScaleBy`、`LTXVScheduler`、`ManualSigmas`、`RandomNoise`、`LTXVSeparateAVLatent`、`SamplerCustomAdvanced`、`LTXVLatentUpsampler`、`LTXVImgToVideoInplace`、`LTXVConcatAVLatent`、`KSamplerSelect`、`EmptyLTXVLatentVideo`、`LTXVPreprocess`、`GetImageSize`、`ResizeImagesByLongerEdge`、`LTXVAudioVAELoader`、`LTXAVTextEncoderLoader`、`LatentUpscaleModelLoader`、`Qwen3ASRLoader`、`CR Float To Integer`、`MelBandRoFormerSampler`、`Qwen3ASRTranscribe`、`TrimAudioDuration`、`MelBandRoFormerModelLoader`、`Audio Duration (mtb)`、`LTXVConditioning`、`LTXVAudioVAEDecode`、`VHS_VideoCombine`、`CFGGuider`、`LTXVCropGuides`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`CheckpointLoaderSimple`、`SolidMask`、`SetLatentNoiseMask`、`LTXVAudioVAEEncode`、`StringReplace`、`TextGenerateLTX2Prompt`、`LTXVEmptyLatentAudio`、`LoadAudio`、`LoadImage`
+
+**用到的条目**：LoraLoaderModelOnly、CheckpointLoaderSimple、CLIPTextEncode、LoadImage、CFGGuider、KSamplerSelect、SamplerCustomAdvanced、MelBandRoFormerSampler

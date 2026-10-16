@@ -1,0 +1,213 @@
+---
+key: 视频生成/图生视频/真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978.json
+name: 真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978.json
+hash: f62557c8f0b2c00a
+coverage: 0.6
+learned_at: 2026-10-16 21:28:14
+nodes: [GetNode, WanVideoTorchCompileSettings, GetNode, GetNode, GetNode, PrimitiveNode, GetNode, LoadWanVideoT5TextEncoder, SetNode, SetNode, GetNode, GetNode, WanVideoSetLoRAs, WanVideoSetLoRAs, Int, Int, WanVideoVAELoader, Primitive float [Crystools], PrimitiveNode, WanVideoBlockSwap, LoadImage, ImageResizeKJv2, GetNode, GetImageSizeAndCount, PreviewImage, ImageResizeKJv2, GetNode, GetNode, Reroute, GetNode, GetNode, PrimitiveNode, GetNode, SetNode, GetImageRangeFromBatch, Reroute, GetNode, RepeatImageBatch, GetImageSizeAndCount, SetNode, Primitive integer [Crystools], ControlNextGetPoses, SetNode, SetNode, GetNode, WanVideoImageToVideoEncode, SimpleMath+, GetNode, Primitive integer [Crystools], VHS_VideoInfoLoaded, Primitive integer [Crystools], SetNode, SimpleMath+, SimpleMath+, SimpleMath+, ImpactSwitch, SetNode, VHS_VideoCombine, VHS_VideoCombine, VHS_VideoCombine, ColorMatch, ImageFromBatch, RHHiddenNodes, Note, Text Multiline, SimpleMath+, RHHiddenNodes, GetNode, easy forLoopStart, RHHiddenNodes, GetNode, GetNode, GetNode, easy forLoopEnd, ImageBatchMulti, ImageConcatMulti, WanVideoSLG, ColorMatch, GetNode, Primitive float [Crystools], PrimitiveNode, RHHiddenNodes, GetNode, GetNode, WanVideoControlEmbeds, GetNode, GetNode, GetNode, Text Concatenate, RH_Captioner, GetNode, SetNode, Text Multiline, GetNode, WanVideoTextEncode, SetNode, ShowText|pysssss, ImpactSwitch, WanVideoEncode, WanVideoSampler, WanVideoSampler, ImageConcatMulti, WanVideoSLG, WanVideoEncode, WanVideoControlEmbeds, VHS_VideoCombine, WanVideoImageToVideoEncode, WanVideoSampler, ImageFromBatch, SetNode, WanVideoDecode, GetNode, WanVideoSampler, WanVideoDecode, ImageResizeKJ, Primitive integer [Crystools], VHS_LoadVideo, LoadImage, MarkdownNote, easy showAnything, LoadImage, MarkdownNote, Note, Note, Note, Note, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, Note, 孤海注释]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/真实度拉满动作迁移：整条视频一键操作时长！Wan2.230s单次复刻_2087304945753214978.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（155 个）：
+- `GetNode`
+- `WanVideoTorchCompileSettings`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `PrimitiveNode`
+- `GetNode`
+- `LoadWanVideoT5TextEncoder`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `WanVideoSetLoRAs`
+- `WanVideoSetLoRAs`
+- `Int`
+- `Int`
+- `WanVideoVAELoader`
+- `Primitive float [Crystools]`
+- `PrimitiveNode`
+- `WanVideoBlockSwap`
+- `LoadImage`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetImageSizeAndCount`
+- `PreviewImage`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `PrimitiveNode`
+- `GetNode`
+- `SetNode`
+- `GetImageRangeFromBatch`
+- `Reroute`
+- `GetNode`
+- `RepeatImageBatch`
+- `GetImageSizeAndCount`
+- `SetNode`
+- `Primitive integer [Crystools]`
+- `ControlNextGetPoses`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `WanVideoImageToVideoEncode`
+- `SimpleMath+`
+- `GetNode`
+- `Primitive integer [Crystools]`
+- `VHS_VideoInfoLoaded`
+- `Primitive integer [Crystools]`
+- `SetNode`
+- `SimpleMath+`
+- `SimpleMath+`
+- `SimpleMath+`
+- `ImpactSwitch`
+- `SetNode`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `ColorMatch`
+- `ImageFromBatch`
+- `RHHiddenNodes`
+- `Note`
+- `Text Multiline`
+- `SimpleMath+`
+- `RHHiddenNodes`
+- `GetNode`
+- `easy forLoopStart`
+- `RHHiddenNodes`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy forLoopEnd`
+- `ImageBatchMulti`
+- `ImageConcatMulti`
+- `WanVideoSLG`
+- `ColorMatch`
+- `GetNode`
+- `Primitive float [Crystools]`
+- `PrimitiveNode`
+- `RHHiddenNodes`
+- `GetNode`
+- `GetNode`
+- `WanVideoControlEmbeds`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Text Concatenate`
+- `RH_Captioner`
+- `GetNode`
+- `SetNode`
+- `Text Multiline`
+- `GetNode`
+- `WanVideoTextEncode`
+- `SetNode`
+- `ShowText|pysssss`
+- `ImpactSwitch`
+- `WanVideoEncode`
+- `WanVideoSampler` ★核心
+- `WanVideoSampler` ★核心
+- `ImageConcatMulti`
+- `WanVideoSLG`
+- `WanVideoEncode`
+- `WanVideoControlEmbeds`
+- `VHS_VideoCombine`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler` ★核心
+- `ImageFromBatch`
+- `SetNode`
+- `WanVideoDecode`
+- `GetNode`
+- `WanVideoSampler` ★核心
+- `WanVideoDecode`
+- `ImageResizeKJ`
+- `Primitive integer [Crystools]`
+- `VHS_LoadVideo`
+- `LoadImage`
+- `MarkdownNote`
+- `easy showAnything`
+- `LoadImage`
+- `MarkdownNote`
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `孤海注释`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `Note`
+- `孤海注释`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **60%**（93/155）
+
+**有卡**：`WanVideoTorchCompileSettings`、`LoadWanVideoT5TextEncoder`、`WanVideoSetLoRAs`、`Int`、`WanVideoVAELoader`、`Primitive float [Crystools]`、`WanVideoBlockSwap`、`LoadImage`、`ImageResizeKJv2`、`GetImageSizeAndCount`、`GetImageRangeFromBatch`、`RepeatImageBatch`、`Primitive integer [Crystools]`、`ControlNextGetPoses`、`WanVideoImageToVideoEncode`、`SimpleMath+`、`VHS_VideoInfoLoaded`、`VHS_VideoCombine`、`ColorMatch`、`ImageFromBatch`、`RHHiddenNodes`、`Text Multiline`、`easy forLoopStart`、`easy forLoopEnd`、`ImageBatchMulti`、`ImageConcatMulti`、`WanVideoSLG`、`WanVideoControlEmbeds`、`Text Concatenate`、`RH_Captioner`、`WanVideoTextEncode`、`WanVideoEncode`、`WanVideoSampler`、`WanVideoDecode`、`ImageResizeKJ`、`VHS_LoadVideo`、`LoraLoaderModelOnly`、`UNETLoader`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

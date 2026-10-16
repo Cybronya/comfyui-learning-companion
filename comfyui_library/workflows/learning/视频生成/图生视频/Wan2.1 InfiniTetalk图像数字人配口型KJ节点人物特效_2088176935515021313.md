@@ -1,0 +1,116 @@
+---
+key: 视频生成/图生视频/Wan2.1 InfiniTetalk图像数字人配口型KJ节点人物特效_2088176935515021313.json
+name: Wan2.1 InfiniTetalk图像数字人配口型KJ节点人物特效_2088176935515021313
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 InfiniTetalk图像数字人配口型KJ节点人物特效_2088176935515021313.json
+hash: 8cffc2d2eb19c27d
+coverage: 0.862069
+learned_at: 2026-10-16 21:27:50
+nodes: [WanVideoBlockSwap, AudioSeparation, WanVideoTorchCompileSettings, WanVideoImageToVideoMultiTalk, WanVideoClipVisionEncode, LoadImage, SetNode, PreviewAny, GetNode, CLIPVisionLoader, WanVideoVAELoader, WanVideoLoraSelect, GetImageSizeAndCount, LayerUtility: ImageScaleByAspectRatio V2, MultiTalkModelLoader, WanVideoSampler, DownloadAndLoadWav2VecModel, MultiTalkWav2VecEmbeds, WanVideoDecode, SetNode, LoadImage, INTConstant, AudioCrop, INTConstant, LoadAudio, WanVideoTextEncode, VHS_VideoCombine, 孤海注释, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, LoadWanVideoT5TextEncoder, WanVideoModelLoader]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Wan2.1 InfiniTetalk图像数字人配口型KJ节点人物特效_2088176935515021313.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/Wan2.1 InfiniTetalk图像数字人配口型KJ节点人物特效_2088176935515021313.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（58 个）：
+- `WanVideoBlockSwap`
+- `AudioSeparation`
+- `WanVideoTorchCompileSettings`
+- `WanVideoImageToVideoMultiTalk`
+- `WanVideoClipVisionEncode`
+- `LoadImage`
+- `SetNode`
+- `PreviewAny`
+- `GetNode`
+- `CLIPVisionLoader`
+- `WanVideoVAELoader`
+- `WanVideoLoraSelect`
+- `GetImageSizeAndCount`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `MultiTalkModelLoader`
+- `WanVideoSampler` ★核心
+- `DownloadAndLoadWav2VecModel`
+- `MultiTalkWav2VecEmbeds`
+- `WanVideoDecode`
+- `SetNode`
+- `LoadImage`
+- `INTConstant`
+- `AudioCrop`
+- `INTConstant`
+- `LoadAudio`
+- `WanVideoTextEncode`
+- `VHS_VideoCombine`
+- `孤海注释`
+- `孤海注释`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `LoadWanVideoT5TextEncoder`
+- `WanVideoModelLoader`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **86%**（50/58）
+
+**有卡**：`WanVideoBlockSwap`、`AudioSeparation`、`WanVideoTorchCompileSettings`、`WanVideoImageToVideoMultiTalk`、`WanVideoClipVisionEncode`、`LoadImage`、`CLIPVisionLoader`、`WanVideoVAELoader`、`WanVideoLoraSelect`、`GetImageSizeAndCount`、`LayerUtility: ImageScaleByAspectRatio V2`、`MultiTalkModelLoader`、`WanVideoSampler`、`DownloadAndLoadWav2VecModel`、`MultiTalkWav2VecEmbeds`、`WanVideoDecode`、`INTConstant`、`AudioCrop`、`LoadAudio`、`WanVideoTextEncode`、`VHS_VideoCombine`、`LoraLoaderModelOnly`、`UNETLoader`、`KSampler`、`CLIPTextEncode`、`solarL_SaveImagesToZip`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`LoadWanVideoT5TextEncoder`、`WanVideoModelLoader`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、LoadImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
