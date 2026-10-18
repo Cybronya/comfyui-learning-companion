@@ -4,7 +4,7 @@ name: WAN2.2+Qwen3VL+Foley音效 全自动图生视频配音_1986984550565916673
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986984550565916673.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2+Qwen3VL+Foley音效 全自动图生视频配音_1986984550565916673.json
 hash: 3ac8436fa3a396f0
 coverage: 0.5
 learned_at: 2026-10-15 22:32:57

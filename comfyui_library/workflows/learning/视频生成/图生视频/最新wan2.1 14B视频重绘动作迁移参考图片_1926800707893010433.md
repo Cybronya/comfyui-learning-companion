@@ -4,7 +4,7 @@ name: 最新wan2.1 14B视频重绘动作迁移参考图片_1926800707893010433.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1926800707893010433.json
+file: comfyui_library/workflows/视频生成/图生视频/最新wan2.1 14B视频重绘动作迁移参考图片_1926800707893010433.json
 hash: 0c9446a31a830a91
 coverage: 1
 learned_at: 2026-10-15 22:29:53

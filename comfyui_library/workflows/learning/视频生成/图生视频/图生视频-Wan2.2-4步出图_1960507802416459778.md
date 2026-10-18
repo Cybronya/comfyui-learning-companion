@@ -4,7 +4,7 @@ name: 图生视频-Wan2.2-4步出图_1960507802416459778.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960507802416459778.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-Wan2.2-4步出图_1960507802416459778.json
 hash: d326185ceda680c8
 coverage: 0.857143
 learned_at: 2026-10-15 22:31:26

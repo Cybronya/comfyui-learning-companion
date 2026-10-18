@@ -4,7 +4,7 @@ name: 万相win2.1+ VACE首尾帧+accvid加速+2倍补帧流畅  生成最终帧
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1928305949314793473.json
+file: comfyui_library/workflows/视频生成/图生视频/万相win2.1+ VACE首尾帧+accvid加速+2倍补帧流畅  生成最终帧率30，保证流畅_1928305949314793473.json
 hash: fb4c008464ad9386
 coverage: 0.966667
 learned_at: 2026-10-15 22:29:57

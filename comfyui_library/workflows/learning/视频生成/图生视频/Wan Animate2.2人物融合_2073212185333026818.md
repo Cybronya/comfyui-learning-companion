@@ -4,7 +4,7 @@ name: Wan Animate2.2人物融合_2073212185333026818.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073212185333026818.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2人物融合_2073212185333026818.json
 hash: 03e035043e2be3f2
 coverage: 0.5
 learned_at: 2026-10-15 22:41:01

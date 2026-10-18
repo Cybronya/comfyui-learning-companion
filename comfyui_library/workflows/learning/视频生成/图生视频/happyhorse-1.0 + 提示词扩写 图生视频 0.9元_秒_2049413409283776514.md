@@ -4,7 +4,7 @@ name: happyhorse-1.0 + 提示词扩写 图生视频 0.9元_秒_20494134092837765
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049413409283776514.json
+file: comfyui_library/workflows/视频生成/图生视频/happyhorse-1.0 + 提示词扩写 图生视频 0.9元_秒_2049413409283776514.json
 hash: 729f401f7c25f5e3
 coverage: 0.6
 learned_at: 2026-10-15 22:37:14

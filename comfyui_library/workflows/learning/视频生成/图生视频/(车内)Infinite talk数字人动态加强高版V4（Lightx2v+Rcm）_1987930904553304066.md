@@ -4,7 +4,7 @@ name: (车内)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19879
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987930904553304066.json
+file: comfyui_library/workflows/视频生成/图生视频/(车内)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1987930904553304066.json
 hash: bd2bd9c979c4a29f
 coverage: 0.75
 learned_at: 2026-10-15 22:33:00

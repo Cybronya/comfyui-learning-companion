@@ -4,7 +4,7 @@ name: wan2.1-MAGREF--自定义人物-超长文生视频_1954571377661636609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954571377661636609.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1-MAGREF--自定义人物-超长文生视频_1954571377661636609.json
 hash: 005da6c1a76258a3
 coverage: 0.836364
 learned_at: 2026-10-15 22:43:39

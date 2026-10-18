@@ -4,7 +4,7 @@ name: LTX-2.3-ICLORA视频扩图+自动优化提示词版V1_2067552767505424386.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067552767505424386.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-ICLORA视频扩图+自动优化提示词版V1_2067552767505424386.json
 hash: f7302255ff29dfd9
 coverage: 0.867647
 learned_at: 2026-10-15 22:40:04

@@ -4,7 +4,7 @@ name: 【老金驿站】Wan2.2Fun-Inp首尾帧原生Comfyui工作流_19561526653
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956152665396969474.json
+file: comfyui_library/workflows/视频生成/图生视频/【老金驿站】Wan2.2Fun-Inp首尾帧原生Comfyui工作流_1956152665396969474.json
 hash: b8e727d003173a93
 coverage: 1
 learned_at: 2026-10-15 22:31:11

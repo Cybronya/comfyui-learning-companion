@@ -4,7 +4,7 @@ name: 目前最强InfiniteTalk 官版自循环版  林耀2.6_2019714364567199745
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019714364567199745.json
+file: comfyui_library/workflows/视频生成/图生视频/目前最强InfiniteTalk 官版自循环版  林耀2.6_2019714364567199745.json
 hash: 304b24ed860f1272
 coverage: 0.906977
 learned_at: 2026-10-15 22:35:04

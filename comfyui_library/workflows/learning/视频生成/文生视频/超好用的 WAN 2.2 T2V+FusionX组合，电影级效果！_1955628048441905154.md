@@ -4,7 +4,7 @@ name: 超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_19556280484419
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955628048441905154.json
+file: comfyui_library/workflows/视频生成/文生视频/超好用的 WAN 2.2 T2V+FusionX组合，电影级效果！_1955628048441905154.json
 hash: 93a3cc71e4333d76
 coverage: 0.702703
 learned_at: 2026-10-15 22:43:40

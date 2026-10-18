@@ -4,7 +4,7 @@ name: 动漫已保留去水印版，自用_(insight+ani全能视频Sv3新版)wan
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973249582245220353.json
+file: comfyui_library/workflows/视频生成/图生视频/动漫已保留去水印版，自用_(insight+ani全能视频Sv3新版)wan2.2高动态卡通动漫图生视频加速版v1_1973249582245220353.json
 hash: ff2b4bc800e94b1a
 coverage: 0.833333
 learned_at: 2026-10-15 22:32:02

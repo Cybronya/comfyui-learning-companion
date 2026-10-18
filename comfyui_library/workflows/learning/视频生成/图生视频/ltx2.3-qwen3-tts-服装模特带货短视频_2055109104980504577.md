@@ -4,7 +4,7 @@ name: ltx2.3-qwen3-tts-服装模特带货短视频_2055109104980504577.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055109104980504577.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3-qwen3-tts-服装模特带货短视频_2055109104980504577.json
 hash: 20f95aaa325e3afb
 coverage: 0.876543
 learned_at: 2026-10-15 22:37:54

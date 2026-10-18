@@ -4,7 +4,7 @@ name: Wan2.2图生视频-自动生成动态提示词_1951139393090334722.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951139393090334722.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频-自动生成动态提示词_1951139393090334722.json
 hash: 13da263c01109c65
 coverage: 0.857143
 learned_at: 2026-10-15 22:30:57

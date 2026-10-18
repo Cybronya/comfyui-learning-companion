@@ -4,7 +4,7 @@ name: (智能多帧) Ltx2.3 Singularity+EasyMedia导演工作台v3_2063140910652
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063140910652813313.json
+file: comfyui_library/workflows/视频生成/图生视频/(智能多帧) Ltx2.3 Singularity+EasyMedia导演工作台v3_2063140910652813313.json
 hash: f728f47c4e749c5a
 coverage: 0.885246
 learned_at: 2026-10-15 22:39:10

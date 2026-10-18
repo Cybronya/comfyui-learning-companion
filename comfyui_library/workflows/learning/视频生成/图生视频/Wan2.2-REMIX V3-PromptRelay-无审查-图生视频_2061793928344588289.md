@@ -4,7 +4,7 @@ name: Wan2.2-REMIX V3-PromptRelay-无审查-图生视频_2061793928344588289.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061793928344588289.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-REMIX V3-PromptRelay-无审查-图生视频_2061793928344588289.json
 hash: 152db95844c6dfbc
 coverage: 0.8
 learned_at: 2026-10-15 22:38:56

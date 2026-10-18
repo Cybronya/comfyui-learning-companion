@@ -4,7 +4,7 @@ name: Remix2.1图生视频+首尾帧_2010736776633131010.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010736776633131010.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix2.1图生视频+首尾帧_2010736776633131010.json
 hash: 7e32c35e71fc86b0
 coverage: 0.961538
 learned_at: 2026-10-15 22:34:18

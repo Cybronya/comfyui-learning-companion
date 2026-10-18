@@ -4,7 +4,7 @@ name: wan2.2_t2v_rapid_aio_v10 文生视频_1962875684572073985.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1962875684572073985.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2_t2v_rapid_aio_v10 文生视频_1962875684572073985.json
 hash: 169c814be040ce76
 coverage: 0.526316
 learned_at: 2026-10-15 22:43:43

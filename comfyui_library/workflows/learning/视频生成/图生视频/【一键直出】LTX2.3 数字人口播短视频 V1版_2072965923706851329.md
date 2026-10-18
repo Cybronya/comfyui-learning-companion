@@ -4,7 +4,7 @@ name: 【一键直出】LTX2.3 数字人口播短视频 V1版_207296592370685132
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072965923706851329.json
+file: comfyui_library/workflows/视频生成/图生视频/【一键直出】LTX2.3 数字人口播短视频 V1版_2072965923706851329.json
 hash: c67b02f9447b5993
 coverage: 0.793651
 learned_at: 2026-10-15 22:40:59

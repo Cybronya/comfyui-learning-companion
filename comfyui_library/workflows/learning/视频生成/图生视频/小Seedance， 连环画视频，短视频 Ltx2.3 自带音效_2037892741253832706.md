@@ -4,7 +4,7 @@ name: 小Seedance， 连环画视频，短视频 Ltx2.3 自带音效_20378927412
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037892741253832706.json
+file: comfyui_library/workflows/视频生成/图生视频/小Seedance， 连环画视频，短视频 Ltx2.3 自带音效_2037892741253832706.json
 hash: 6b10e2b830364666
 coverage: 0.567568
 learned_at: 2026-10-15 22:35:59

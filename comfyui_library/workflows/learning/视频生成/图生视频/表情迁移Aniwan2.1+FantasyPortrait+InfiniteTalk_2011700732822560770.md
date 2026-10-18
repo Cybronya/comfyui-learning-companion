@@ -4,7 +4,7 @@ name: 表情迁移Aniwan2.1+FantasyPortrait+InfiniteTalk_2011700732822560770.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011700732822560770.json
+file: comfyui_library/workflows/视频生成/图生视频/表情迁移Aniwan2.1+FantasyPortrait+InfiniteTalk_2011700732822560770.json
 hash: 55bf49d60336f6d5
 coverage: 0.945946
 learned_at: 2026-10-15 22:34:24

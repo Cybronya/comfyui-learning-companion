@@ -4,7 +4,7 @@ name: wan2.2官方 VACE 人物姿态迁移 KJ流【推荐】_1967834051866406914
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967834051866406914.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2官方 VACE 人物姿态迁移 KJ流【推荐】_1967834051866406914.json
 hash: 6d152c3defb563cb
 coverage: 0.973684
 learned_at: 2026-10-15 22:31:43

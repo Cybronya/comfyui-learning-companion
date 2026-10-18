@@ -4,7 +4,7 @@ name: WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_19552634385
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955263438596423682.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-8-12极速图生视频自用（三川V：yanshao1888）_1955263438596423682.json
 hash: 305354f96368ed6c
 coverage: 1
 learned_at: 2026-10-15 22:31:08

@@ -4,7 +4,7 @@ name: Remix V2.1图生视频V1（UnifiedReward+VBVR逻辑加强）_2028678704204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2028678704204881921.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix V2.1图生视频V1（UnifiedReward+VBVR逻辑加强）_2028678704204881921.json
 hash: 5dc00f96645e9afa
 coverage: 0.734375
 learned_at: 2026-10-15 22:35:20

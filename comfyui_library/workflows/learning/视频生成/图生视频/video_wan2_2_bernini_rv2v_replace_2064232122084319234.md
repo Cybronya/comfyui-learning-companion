@@ -4,7 +4,7 @@ name: video_wan2_2_bernini_rv2v_replace_2064232122084319234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064232122084319234.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_bernini_rv2v_replace_2064232122084319234.json
 hash: 632271bd64225391
 coverage: 0.45614
 learned_at: 2026-10-15 22:39:21

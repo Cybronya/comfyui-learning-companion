@@ -4,7 +4,7 @@ name: 高质量首尾帧视频LTX2.3-音频画面直出_2032282259331489794.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032282259331489794.json
+file: comfyui_library/workflows/视频生成/图生视频/高质量首尾帧视频LTX2.3-音频画面直出_2032282259331489794.json
 hash: dc41c5438f87d52a
 coverage: 0.656489
 learned_at: 2026-10-15 22:35:35

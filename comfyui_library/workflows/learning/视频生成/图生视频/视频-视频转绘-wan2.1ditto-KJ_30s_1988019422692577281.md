@@ -4,7 +4,7 @@ name: 视频-视频转绘-wan2.1ditto-KJ_30s_1988019422692577281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988019422692577281.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-视频转绘-wan2.1ditto-KJ_30s_1988019422692577281.json
 hash: 45bfcb5dc74fccfb
 coverage: 0.629032
 learned_at: 2026-10-15 22:33:01

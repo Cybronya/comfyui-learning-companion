@@ -4,7 +4,7 @@ name: LatentSync 1.6数字人_1945362805107380226.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945362805107380226.json
+file: comfyui_library/workflows/视频生成/图生视频/LatentSync 1.6数字人_1945362805107380226.json
 hash: d5de08b338aad342
 coverage: 1
 learned_at: 2026-10-15 22:30:41

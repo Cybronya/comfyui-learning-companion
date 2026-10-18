@@ -4,7 +4,7 @@ name: LTX 2.3 Timeline Prompt控制分镜视频生成_2054086859323650049.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054086859323650049.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 Timeline Prompt控制分镜视频生成_2054086859323650049.json
 hash: 8151358170e45576
 coverage: 0.523077
 learned_at: 2026-10-15 22:37:45

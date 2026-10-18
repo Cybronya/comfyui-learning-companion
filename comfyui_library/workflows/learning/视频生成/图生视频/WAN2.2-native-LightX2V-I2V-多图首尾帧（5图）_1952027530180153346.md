@@ -4,7 +4,7 @@ name: WAN2.2-native-LightX2V-I2V-多图首尾帧（5图）_1952027530180153346.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952027530180153346.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-native-LightX2V-I2V-多图首尾帧（5图）_1952027530180153346.json
 hash: 7b4bf7c724afc7f2
 coverage: 0.418478
 learned_at: 2026-10-15 22:30:59

@@ -4,7 +4,7 @@ name: 通义万相wan2.1 图生视频 720P高清版 UP楚门的AI世界_18946164
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1894616411644538881.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相wan2.1 图生视频 720P高清版 UP楚门的AI世界_1894616411644538881.json
 hash: 206d346b68823f4e
 coverage: 0.928571
 learned_at: 2026-10-15 22:43:19

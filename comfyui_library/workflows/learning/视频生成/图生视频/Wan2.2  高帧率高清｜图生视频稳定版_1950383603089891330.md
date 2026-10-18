@@ -4,7 +4,7 @@ name: Wan2.2  高帧率高清｜图生视频稳定版_1950383603089891330.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950383603089891330.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2  高帧率高清｜图生视频稳定版_1950383603089891330.json
 hash: 07060c0c296a710c
 coverage: 1
 learned_at: 2026-10-15 22:30:54

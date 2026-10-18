@@ -4,7 +4,7 @@ name: LTX2.3 图生视频 最强开源_2064594229267095553.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064594229267095553.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频 最强开源_2064594229267095553.json
 hash: 2dc42506be0c44f7
 coverage: 0.95
 learned_at: 2026-10-15 22:39:26

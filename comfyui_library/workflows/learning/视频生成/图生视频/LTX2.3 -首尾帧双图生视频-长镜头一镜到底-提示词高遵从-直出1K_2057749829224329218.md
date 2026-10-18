@@ -4,7 +4,7 @@ name: LTX2.3 -首尾帧双图生视频-长镜头一镜到底-提示词高遵从-
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057749829224329218.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 -首尾帧双图生视频-长镜头一镜到底-提示词高遵从-直出1K_2057749829224329218.json
 hash: 04c4d5c1c9a9a8ba
 coverage: 0.925926
 learned_at: 2026-10-15 22:38:15

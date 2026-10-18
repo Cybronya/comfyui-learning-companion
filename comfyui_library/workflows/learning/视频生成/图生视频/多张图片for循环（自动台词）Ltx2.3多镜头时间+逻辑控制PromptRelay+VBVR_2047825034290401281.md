@@ -4,7 +4,7 @@ name: 多张图片for循环（自动台词）Ltx2.3多镜头时间+逻辑控制P
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047825034290401281.json
+file: comfyui_library/workflows/视频生成/图生视频/多张图片for循环（自动台词）Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR_2047825034290401281.json
 hash: 2586e26e4f866fa6
 coverage: 0.675214
 learned_at: 2026-10-15 22:37:06

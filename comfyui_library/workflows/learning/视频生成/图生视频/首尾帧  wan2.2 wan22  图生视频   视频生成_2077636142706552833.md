@@ -4,7 +4,7 @@ name: 首尾帧  wan2.2 wan22  图生视频   视频生成_2077636142706552833.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077636142706552833.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧  wan2.2 wan22  图生视频   视频生成_2077636142706552833.json
 hash: 0cf015e8947d5338
 coverage: 1
 learned_at: 2026-10-15 22:41:42

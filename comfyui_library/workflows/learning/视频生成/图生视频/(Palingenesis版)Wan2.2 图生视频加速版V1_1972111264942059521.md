@@ -4,7 +4,7 @@ name: (Palingenesis版)Wan2.2 图生视频加速版V1_1972111264942059521.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972111264942059521.json
+file: comfyui_library/workflows/视频生成/图生视频/(Palingenesis版)Wan2.2 图生视频加速版V1_1972111264942059521.json
 hash: 2cf85f4f1253f549
 coverage: 0.891892
 learned_at: 2026-10-15 22:31:58

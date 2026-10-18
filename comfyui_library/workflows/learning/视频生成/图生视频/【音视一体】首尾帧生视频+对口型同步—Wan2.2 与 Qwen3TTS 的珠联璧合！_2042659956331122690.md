@@ -4,7 +4,7 @@ name: 【音视一体】首尾帧生视频+对口型同步—Wan2.2 与 Qwen3TTS
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042659956331122690.json
+file: comfyui_library/workflows/视频生成/图生视频/【音视一体】首尾帧生视频+对口型同步—Wan2.2 与 Qwen3TTS 的珠联璧合！_2042659956331122690.json
 hash: 8ca1a8f51b4805c0
 coverage: 0.895833
 learned_at: 2026-10-15 22:36:29

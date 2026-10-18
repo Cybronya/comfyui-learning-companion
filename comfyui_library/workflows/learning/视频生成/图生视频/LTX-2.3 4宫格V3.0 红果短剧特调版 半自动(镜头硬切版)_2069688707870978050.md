@@ -4,7 +4,7 @@ name: LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_20696
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069688707870978050.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2069688707870978050.json
 hash: 2cf436403e8d4294
 coverage: 0.551724
 learned_at: 2026-10-15 22:40:32

@@ -4,7 +4,7 @@ name: LTX2.3 首尾帧视频特效+Qwen3.5自动提示词_2038953510800199682.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038953510800199682.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 首尾帧视频特效+Qwen3.5自动提示词_2038953510800199682.json
 hash: fcea7d06789985d4
 coverage: 0.928571
 learned_at: 2026-10-15 22:36:06

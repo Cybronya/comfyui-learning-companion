@@ -4,7 +4,7 @@ name: wan2.2电商服装展示_模特360°演示视频保持一致性_2053339197
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053339197372674049.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2电商服装展示_模特360°演示视频保持一致性_2053339197372674049.json
 hash: e323ddb801967c9c
 coverage: 0.964286
 learned_at: 2026-10-15 22:37:38

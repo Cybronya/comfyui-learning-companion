@@ -4,7 +4,7 @@ name: 【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008581712120385537.json
+file: comfyui_library/workflows/视频生成/图生视频/【推荐，图片声音对口型（说话唱歌）】Wan2.2 S2V数字人无限长视频KJ工作流V1_2008581712120385537.json
 hash: 612c127abeb6f36c
 coverage: 0.732143
 learned_at: 2026-10-15 22:34:08

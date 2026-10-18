@@ -4,7 +4,7 @@ name: 电商服装展示_模特演示视频-wan2.2_2056538120484638722.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056538120484638722.json
+file: comfyui_library/workflows/视频生成/图生视频/电商服装展示_模特演示视频-wan2.2_2056538120484638722.json
 hash: af96abcd29a2751e
 coverage: 0.964286
 learned_at: 2026-10-15 22:38:03

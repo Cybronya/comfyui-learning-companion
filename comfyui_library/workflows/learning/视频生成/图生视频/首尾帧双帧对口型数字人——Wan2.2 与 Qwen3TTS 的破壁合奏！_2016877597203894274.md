@@ -4,7 +4,7 @@ name: 首尾帧双帧对口型数字人——Wan2.2 与 Qwen3TTS 的破壁合奏
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016877597203894274.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧双帧对口型数字人——Wan2.2 与 Qwen3TTS 的破壁合奏！_2016877597203894274.json
 hash: a3d70db964b1d21c
 coverage: 0.895833
 learned_at: 2026-10-15 22:34:44

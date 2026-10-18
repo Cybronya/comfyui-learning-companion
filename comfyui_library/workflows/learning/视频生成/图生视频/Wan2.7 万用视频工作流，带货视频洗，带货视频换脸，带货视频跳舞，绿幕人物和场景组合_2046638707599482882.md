@@ -4,7 +4,7 @@ name: Wan2.7 万用视频工作流，带货视频洗，带货视频换脸，带�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046638707599482882.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.7 万用视频工作流，带货视频洗，带货视频换脸，带货视频跳舞，绿幕人物和场景组合_2046638707599482882.json
 hash: 8e707226dc57b71a
 coverage: 0.714286
 learned_at: 2026-10-15 22:37:00

@@ -4,7 +4,7 @@ name: 发布-ACE-Step1.5XL+可选Suno V5 一键式 AI 文生作曲唱歌，可�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045013042848604161.json
+file: comfyui_library/workflows/视频生成/图生视频/发布-ACE-Step1.5XL+可选Suno V5 一键式 AI 文生作曲唱歌，可选音色克隆+可选数字人演唱_2045013042848604161.json
 hash: 808449f5f2d3d855
 coverage: 0.51773
 learned_at: 2026-10-15 22:36:43

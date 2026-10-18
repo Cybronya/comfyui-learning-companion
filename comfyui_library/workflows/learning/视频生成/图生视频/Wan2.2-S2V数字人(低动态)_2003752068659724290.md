@@ -4,7 +4,7 @@ name: Wan2.2-S2V数字人(低动态)_2003752068659724290.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003752068659724290.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-S2V数字人(低动态)_2003752068659724290.json
 hash: 76fb424e35a62c76
 coverage: 0.944444
 learned_at: 2026-10-15 22:33:52

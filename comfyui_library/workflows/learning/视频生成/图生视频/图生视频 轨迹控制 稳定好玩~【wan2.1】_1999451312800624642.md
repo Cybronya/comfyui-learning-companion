@@ -4,7 +4,7 @@ name: 图生视频 轨迹控制 稳定好玩~【wan2.1】_1999451312800624642.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999451312800624642.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频 轨迹控制 稳定好玩~【wan2.1】_1999451312800624642.json
 hash: ef3fb17c10a7ddf2
 coverage: 0.878788
 learned_at: 2026-10-15 22:33:37

@@ -4,7 +4,7 @@ name: wdigital_combination.json_2077592725263839233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077592725263839233.json
+file: comfyui_library/workflows/视频生成/图生视频/wdigital_combination.json_2077592725263839233.json
 hash: 4898ebf88c1d9533
 coverage: 0.819672
 learned_at: 2026-10-15 22:41:42

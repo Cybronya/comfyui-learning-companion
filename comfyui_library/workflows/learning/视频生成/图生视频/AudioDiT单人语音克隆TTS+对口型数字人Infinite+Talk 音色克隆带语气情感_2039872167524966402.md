@@ -4,7 +4,7 @@ name: AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039872167524966402.json
+file: comfyui_library/workflows/视频生成/图生视频/AudioDiT单人语音克隆TTS+对口型数字人Infinite+Talk 音色克隆带语气情感_2039872167524966402.json
 hash: 15ad4da2d3259521
 coverage: 0.888889
 learned_at: 2026-10-15 22:36:11

@@ -4,7 +4,7 @@ name: wan2.1 视频编辑重绘 多功能遮罩版（单独换脸、服装、动
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981001980585840642.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 视频编辑重绘 多功能遮罩版（单独换脸、服装、动作、背景、或自定义遮罩）_1981001980585840642.json
 hash: ff4e396d58d560ba
 coverage: 0.58156
 learned_at: 2026-10-15 22:32:36

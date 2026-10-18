@@ -4,7 +4,7 @@ name: wan2.2无缝循环壁纸_2078102351449247745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078102351449247745.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2无缝循环壁纸_2078102351449247745.json
 hash: 32f597faf3c91fb9
 coverage: 0.438298
 learned_at: 2026-10-15 22:41:49

@@ -4,7 +4,7 @@ name: 首尾帧视频数字人-无字幕-音频克隆版-LTX2.3-优化版~（支
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033020049098805250.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧视频数字人-无字幕-音频克隆版-LTX2.3-优化版~（支持手自动提示词）_2033020049098805250.json
 hash: b3a9c1da52879d19
 coverage: 0.609756
 learned_at: 2026-10-15 22:35:37

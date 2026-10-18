@@ -4,7 +4,7 @@ name: video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039715377143353346.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_i2v_kijai_three_stage_2039715377143353346.json
 hash: f5f11ab23af4184a
 coverage: 0.495146
 learned_at: 2026-10-15 22:36:11

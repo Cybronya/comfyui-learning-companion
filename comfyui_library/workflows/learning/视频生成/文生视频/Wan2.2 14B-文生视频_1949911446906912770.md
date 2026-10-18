@@ -4,7 +4,7 @@ name: Wan2.2 14B-文生视频_1949911446906912770.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949911446906912770.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 14B-文生视频_1949911446906912770.json
 hash: 284b60fb4c923e6d
 coverage: 0.875
 learned_at: 2026-10-15 22:43:33

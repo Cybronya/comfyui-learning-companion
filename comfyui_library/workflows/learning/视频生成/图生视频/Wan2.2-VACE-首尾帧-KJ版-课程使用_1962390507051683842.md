@@ -4,7 +4,7 @@ name: Wan2.2-VACE-首尾帧-KJ版-课程使用_1962390507051683842.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962390507051683842.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-VACE-首尾帧-KJ版-课程使用_1962390507051683842.json
 hash: 80ece92bba00429a
 coverage: 0.782609
 learned_at: 2026-10-15 22:31:30

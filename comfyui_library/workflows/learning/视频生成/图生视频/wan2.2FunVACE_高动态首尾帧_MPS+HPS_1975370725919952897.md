@@ -4,7 +4,7 @@ name: wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975370725919952897.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2FunVACE_高动态首尾帧_MPS+HPS_1975370725919952897.json
 hash: 0b85943c1d9987f8
 coverage: 0.953488
 learned_at: 2026-10-15 22:32:08

@@ -4,7 +4,7 @@ name: 🐳Wan2.2 图生视频 高动态高细节 邪修增强版v2🐳_197284377
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972843772218396673.json
+file: comfyui_library/workflows/视频生成/图生视频/🐳Wan2.2 图生视频 高动态高细节 邪修增强版v2🐳_1972843772218396673.json
 hash: 27c899bf7df5805a
 coverage: 0.9
 learned_at: 2026-10-15 22:32:00

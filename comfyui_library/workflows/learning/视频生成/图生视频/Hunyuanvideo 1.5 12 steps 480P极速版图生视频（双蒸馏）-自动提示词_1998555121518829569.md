@@ -4,7 +4,7 @@ name: Hunyuanvideo 1.5 12 steps 480P极速版图生视频（双蒸馏）-自动�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998555121518829569.json
+file: comfyui_library/workflows/视频生成/图生视频/Hunyuanvideo 1.5 12 steps 480P极速版图生视频（双蒸馏）-自动提示词_1998555121518829569.json
 hash: 998b82f706190408
 coverage: 0.846154
 learned_at: 2026-10-15 22:33:32

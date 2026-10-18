@@ -4,7 +4,7 @@ name: 图片待机图 Live Wallpaper Wan2.2 5B Workflow_2017097460027494402.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017097460027494402.json
+file: comfyui_library/workflows/视频生成/图生视频/图片待机图 Live Wallpaper Wan2.2 5B Workflow_2017097460027494402.json
 hash: e0f75b5e6ae9670d
 coverage: 0.870968
 learned_at: 2026-10-15 22:34:44

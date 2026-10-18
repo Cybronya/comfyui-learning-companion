@@ -4,7 +4,7 @@ name: 跨屏幕牵手-Wan2.1图生视频_1896568283456528386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1896568283456528386.json
+file: comfyui_library/workflows/视频生成/图生视频/跨屏幕牵手-Wan2.1图生视频_1896568283456528386.json
 hash: c28905db9367e342
 coverage: 0.956522
 learned_at: 2026-10-15 22:29:18

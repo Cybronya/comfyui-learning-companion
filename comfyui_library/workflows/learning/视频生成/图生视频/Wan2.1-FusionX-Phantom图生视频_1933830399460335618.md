@@ -4,7 +4,7 @@ name: Wan2.1-FusionX-Phantom图生视频_1933830399460335618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933830399460335618.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-FusionX-Phantom图生视频_1933830399460335618.json
 hash: c9f913fc24a79284
 coverage: 1
 learned_at: 2026-10-15 22:30:15

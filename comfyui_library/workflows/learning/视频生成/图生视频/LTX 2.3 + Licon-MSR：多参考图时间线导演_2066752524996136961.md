@@ -4,7 +4,7 @@ name: LTX 2.3 + Licon-MSR：多参考图时间线导演_2066752524996136961.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066752524996136961.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 + Licon-MSR：多参考图时间线导演_2066752524996136961.json
 hash: 54236e0a32e4d3c4
 coverage: 0.888889
 learned_at: 2026-10-15 22:39:52

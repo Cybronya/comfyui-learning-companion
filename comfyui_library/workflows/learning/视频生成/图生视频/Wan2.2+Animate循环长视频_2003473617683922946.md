@@ -4,7 +4,7 @@ name: Wan2.2+Animate循环长视频_2003473617683922946.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003473617683922946.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Animate循环长视频_2003473617683922946.json
 hash: ae954e321c98d2e2
 coverage: 0.536842
 learned_at: 2026-10-15 22:33:51

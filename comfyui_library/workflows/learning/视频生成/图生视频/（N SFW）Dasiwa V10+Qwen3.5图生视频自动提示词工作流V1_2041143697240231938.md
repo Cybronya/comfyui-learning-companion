@@ -4,7 +4,7 @@ name: （N SFW）Dasiwa V10+Qwen3.5图生视频自动提示词工作流V1_204114
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041143697240231938.json
+file: comfyui_library/workflows/视频生成/图生视频/（N SFW）Dasiwa V10+Qwen3.5图生视频自动提示词工作流V1_2041143697240231938.json
 hash: d20ed28c2ea0aa85
 coverage: 0.764706
 learned_at: 2026-10-15 22:36:18

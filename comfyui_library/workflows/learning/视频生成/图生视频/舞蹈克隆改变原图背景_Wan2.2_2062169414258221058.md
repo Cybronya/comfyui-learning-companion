@@ -4,7 +4,7 @@ name: 舞蹈克隆改变原图背景_Wan2.2_2062169414258221058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062169414258221058.json
+file: comfyui_library/workflows/视频生成/图生视频/舞蹈克隆改变原图背景_Wan2.2_2062169414258221058.json
 hash: 708a8965ade76243
 coverage: 0.552632
 learned_at: 2026-10-15 22:39:01

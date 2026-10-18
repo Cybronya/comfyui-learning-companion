@@ -4,7 +4,7 @@ name: Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977718414808678401.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_T2V_lynx+VACE视频换脸_1977718414808678401.json
 hash: 34e019a7c8509557
 coverage: 0.833333
 learned_at: 2026-10-15 22:32:16

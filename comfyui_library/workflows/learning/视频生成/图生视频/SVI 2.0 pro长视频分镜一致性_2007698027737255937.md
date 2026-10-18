@@ -4,7 +4,7 @@ name: SVI 2.0 pro长视频分镜一致性_2007698027737255937.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007698027737255937.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0 pro长视频分镜一致性_2007698027737255937.json
 hash: 809c90f195e46195
 coverage: 0.985075
 learned_at: 2026-10-15 22:34:05

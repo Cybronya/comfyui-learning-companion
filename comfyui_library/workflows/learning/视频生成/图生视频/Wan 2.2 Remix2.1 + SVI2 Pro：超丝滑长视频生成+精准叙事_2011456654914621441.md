@@ -4,7 +4,7 @@ name: Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_201145
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011456654914621441.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 Remix2.1 + SVI2 Pro：超丝滑长视频生成+精准叙事_2011456654914621441.json
 hash: dd0bfb0f159301d0
 coverage: 0.978723
 learned_at: 2026-10-15 22:34:23

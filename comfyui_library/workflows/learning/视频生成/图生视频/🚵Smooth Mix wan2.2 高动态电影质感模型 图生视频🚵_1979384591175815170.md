@@ -4,7 +4,7 @@ name: 🚵Smooth Mix wan2.2 高动态电影质感模型 图生视频🚵_1979384
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979384591175815170.json
+file: comfyui_library/workflows/视频生成/图生视频/🚵Smooth Mix wan2.2 高动态电影质感模型 图生视频🚵_1979384591175815170.json
 hash: e9e27dd65593fa3e
 coverage: 0.95
 learned_at: 2026-10-15 22:32:22

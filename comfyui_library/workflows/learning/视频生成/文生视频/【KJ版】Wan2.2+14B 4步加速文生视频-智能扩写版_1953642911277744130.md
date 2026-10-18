@@ -4,7 +4,7 @@ name: 【KJ版】Wan2.2+14B 4步加速文生视频-智能扩写版_1953642911277
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1953642911277744130.json
+file: comfyui_library/workflows/视频生成/文生视频/【KJ版】Wan2.2+14B 4步加速文生视频-智能扩写版_1953642911277744130.json
 hash: ef93d8e6d3cee9e4
 coverage: 0.738095
 learned_at: 2026-10-15 22:43:39

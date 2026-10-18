@@ -4,7 +4,7 @@ name: LTX2.3-单镜头可扩写提示词 高质量图生视频+ 高度遵从+运
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077342354540945409.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-单镜头可扩写提示词 高质量图生视频+ 高度遵从+运镜+动作+自动扩写+-高质量_2077342354540945409.json
 hash: 7167dc67fdb6efed
 coverage: 0.867925
 learned_at: 2026-10-15 22:41:39

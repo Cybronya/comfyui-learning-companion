@@ -4,7 +4,7 @@ name: LTX2.3-图生视频-AIGC大赏_2033437706583281665.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033437706583281665.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频-AIGC大赏_2033437706583281665.json
 hash: 18eb4f433d9e7678
 coverage: 0.912281
 learned_at: 2026-10-15 22:35:40

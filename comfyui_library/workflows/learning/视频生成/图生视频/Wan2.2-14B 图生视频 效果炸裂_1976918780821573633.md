@@ -4,7 +4,7 @@ name: Wan2.2-14B 图生视频 效果炸裂_1976918780821573633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976918780821573633.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-14B 图生视频 效果炸裂_1976918780821573633.json
 hash: b207b722be153c2d
 coverage: 0.729167
 learned_at: 2026-10-15 22:32:13

@@ -4,7 +4,7 @@ name: wan2.2-超长视频-一镜到底（VQA+WAN2.2）_1989316745833967618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989316745833967618.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-超长视频-一镜到底（VQA+WAN2.2）_1989316745833967618.json
 hash: 629015cac2ef0a0e
 coverage: 0.891892
 learned_at: 2026-10-15 22:33:06

@@ -4,7 +4,7 @@ name: wan2.2 remix2.1动态增强版，图生视频，首尾帧_2016050718058221
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016050718058221570.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 remix2.1动态增强版，图生视频，首尾帧_2016050718058221570.json
 hash: 9f8d72a534afcddc
 coverage: 0.406897
 learned_at: 2026-10-15 22:34:41

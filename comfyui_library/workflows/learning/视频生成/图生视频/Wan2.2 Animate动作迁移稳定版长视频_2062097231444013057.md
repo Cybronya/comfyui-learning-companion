@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移稳定版长视频_2062097231444013057.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062097231444013057.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移稳定版长视频_2062097231444013057.json
 hash: 05772a83307c3ed9
 coverage: 0.507937
 learned_at: 2026-10-15 22:39:00

@@ -4,7 +4,7 @@ name: Seedance2.0 视频5图模式_api_2060358825198309377.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060358825198309377.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 视频5图模式_api_2060358825198309377.json
 hash: 5ec3107a5ea8b572
 coverage: 1
 learned_at: 2026-10-15 22:38:47

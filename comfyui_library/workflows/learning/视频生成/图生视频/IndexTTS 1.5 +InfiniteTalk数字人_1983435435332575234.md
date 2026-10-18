@@ -4,7 +4,7 @@ name: IndexTTS 1.5 +InfiniteTalk数字人_1983435435332575234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983435435332575234.json
+file: comfyui_library/workflows/视频生成/图生视频/IndexTTS 1.5 +InfiniteTalk数字人_1983435435332575234.json
 hash: 0eb46b6a4e8bcb79
 coverage: 0.96
 learned_at: 2026-10-15 22:32:44

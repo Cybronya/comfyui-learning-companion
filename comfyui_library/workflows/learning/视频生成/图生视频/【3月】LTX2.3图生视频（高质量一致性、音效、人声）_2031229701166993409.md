@@ -4,7 +4,7 @@ name: 【3月】LTX2.3图生视频（高质量一致性、音效、人声）_203
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031229701166993409.json
+file: comfyui_library/workflows/视频生成/图生视频/【3月】LTX2.3图生视频（高质量一致性、音效、人声）_2031229701166993409.json
 hash: 77e6de1ef66ab901
 coverage: 0.95122
 learned_at: 2026-10-15 22:35:30

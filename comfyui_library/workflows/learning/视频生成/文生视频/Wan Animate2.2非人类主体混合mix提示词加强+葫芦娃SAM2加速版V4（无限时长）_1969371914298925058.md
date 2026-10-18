@@ -4,7 +4,7 @@ name: Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969371914298925058.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan Animate2.2非人类主体混合mix提示词加强+葫芦娃SAM2加速版V4（无限时长）_1969371914298925058.json
 hash: 27861cd75f778696
 coverage: 0.60241
 learned_at: 2026-10-15 22:43:46

@@ -4,7 +4,7 @@ name: 摇摆舞蹈-Wan2.1_1955654165034930178.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955654165034930178.json
+file: comfyui_library/workflows/视频生成/图生视频/摇摆舞蹈-Wan2.1_1955654165034930178.json
 hash: 4ed2bcce892c3bd4
 coverage: 1
 learned_at: 2026-10-15 22:31:09

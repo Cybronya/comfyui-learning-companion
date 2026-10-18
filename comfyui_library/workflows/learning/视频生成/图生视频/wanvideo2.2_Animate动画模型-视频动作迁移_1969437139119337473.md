@@ -4,7 +4,7 @@ name: wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969437139119337473.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo2.2_Animate动画模型-视频动作迁移_1969437139119337473.json
 hash: f710d5d1066a415e
 coverage: 0.546875
 learned_at: 2026-10-15 22:31:49

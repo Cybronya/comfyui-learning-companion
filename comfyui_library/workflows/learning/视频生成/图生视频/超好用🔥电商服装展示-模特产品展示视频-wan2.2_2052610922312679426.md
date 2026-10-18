@@ -4,7 +4,7 @@ name: 超好用🔥电商服装展示-模特产品展示视频-wan2.2_2052610922
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052610922312679426.json
+file: comfyui_library/workflows/视频生成/图生视频/超好用🔥电商服装展示-模特产品展示视频-wan2.2_2052610922312679426.json
 hash: a27221183a2d5cf6
 coverage: 0.964286
 learned_at: 2026-10-15 22:37:30

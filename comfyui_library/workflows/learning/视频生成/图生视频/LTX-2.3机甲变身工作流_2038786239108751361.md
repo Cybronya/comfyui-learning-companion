@@ -4,7 +4,7 @@ name: LTX-2.3机甲变身工作流_2038786239108751361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038786239108751361.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3机甲变身工作流_2038786239108751361.json
 hash: 4ccb905eb01ad039
 coverage: 0.619048
 learned_at: 2026-10-15 22:36:04

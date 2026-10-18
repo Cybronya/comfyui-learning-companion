@@ -4,7 +4,7 @@ name: wan2.1 音唇同步生成视频_1927647202212986882.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927647202212986882.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 音唇同步生成视频_1927647202212986882.json
 hash: 4febe3dcb7f5e6eb
 coverage: 0.479167
 learned_at: 2026-10-15 22:29:55

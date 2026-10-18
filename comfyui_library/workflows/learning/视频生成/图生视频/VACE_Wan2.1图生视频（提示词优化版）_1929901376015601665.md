@@ -4,7 +4,7 @@ name: VACE_Wan2.1图生视频（提示词优化版）_1929901376015601665.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1929901376015601665.json
+file: comfyui_library/workflows/视频生成/图生视频/VACE_Wan2.1图生视频（提示词优化版）_1929901376015601665.json
 hash: fbbc0da71a758d61
 coverage: 0.65625
 learned_at: 2026-10-15 22:30:02

@@ -4,7 +4,7 @@ name: aidir-LTX2.3 首帧图生视频 人物一致性优化版💃_2069596918434
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069596918434590721.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX2.3 首帧图生视频 人物一致性优化版💃_2069596918434590721.json
 hash: 05ab90173baecd1f
 coverage: 0.95122
 learned_at: 2026-10-15 22:40:30

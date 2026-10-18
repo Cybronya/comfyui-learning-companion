@@ -4,7 +4,7 @@ name: LTX 2.3 三采样采样策略 _ 图生视频画质拉满实战_20345012835
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034501283566063617.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 三采样采样策略 _ 图生视频画质拉满实战_2034501283566063617.json
 hash: 0705b5f9c4ca1412
 coverage: 0.481818
 learned_at: 2026-10-15 22:35:45

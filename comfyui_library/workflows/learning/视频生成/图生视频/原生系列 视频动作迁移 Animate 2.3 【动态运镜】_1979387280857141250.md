@@ -4,7 +4,7 @@ name: 原生系列 视频动作迁移 Animate 2.3 【动态运镜】_19793872808
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979387280857141250.json
+file: comfyui_library/workflows/视频生成/图生视频/原生系列 视频动作迁移 Animate 2.3 【动态运镜】_1979387280857141250.json
 hash: 1ff9b32f29c8845e
 coverage: 0.535714
 learned_at: 2026-10-15 22:32:23

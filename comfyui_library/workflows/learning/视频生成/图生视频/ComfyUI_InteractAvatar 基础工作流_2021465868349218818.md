@@ -4,7 +4,7 @@ name: ComfyUI_InteractAvatar 基础工作流_2021465868349218818.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021465868349218818.json
+file: comfyui_library/workflows/视频生成/图生视频/ComfyUI_InteractAvatar 基础工作流_2021465868349218818.json
 hash: 151954b898aebf3d
 coverage: 0.886364
 learned_at: 2026-10-15 22:35:08

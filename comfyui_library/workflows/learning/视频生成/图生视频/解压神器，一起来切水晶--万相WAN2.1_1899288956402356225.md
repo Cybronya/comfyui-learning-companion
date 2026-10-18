@@ -4,7 +4,7 @@ name: 解压神器，一起来切水晶--万相WAN2.1_1899288956402356225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899288956402356225.json
+file: comfyui_library/workflows/视频生成/图生视频/解压神器，一起来切水晶--万相WAN2.1_1899288956402356225.json
 hash: 5dbcc76a956147ae
 coverage: 0.909091
 learned_at: 2026-10-15 22:29:21

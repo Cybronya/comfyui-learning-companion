@@ -4,7 +4,7 @@ name: HS-template_ltx2_3_style_transition_2042083663428460545.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042083663428460545.json
+file: comfyui_library/workflows/视频生成/图生视频/HS-template_ltx2_3_style_transition_2042083663428460545.json
 hash: aa01a3be4aa4eaac
 coverage: 0.825
 learned_at: 2026-10-15 22:36:24

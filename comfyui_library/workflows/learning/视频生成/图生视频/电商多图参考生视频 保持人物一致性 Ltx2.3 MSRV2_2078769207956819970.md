@@ -4,7 +4,7 @@ name: 电商多图参考生视频 保持人物一致性 Ltx2.3 MSRV2_20787692079
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078769207956819970.json
+file: comfyui_library/workflows/视频生成/图生视频/电商多图参考生视频 保持人物一致性 Ltx2.3 MSRV2_2078769207956819970.json
 hash: bcdfc84abc6ae3e5
 coverage: 0.885714
 learned_at: 2026-10-15 22:41:55

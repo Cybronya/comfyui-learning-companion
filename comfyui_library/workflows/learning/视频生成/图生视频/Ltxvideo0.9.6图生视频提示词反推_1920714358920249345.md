@@ -4,7 +4,7 @@ name: Ltxvideo0.9.6图生视频提示词反推_1920714358920249345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920714358920249345.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltxvideo0.9.6图生视频提示词反推_1920714358920249345.json
 hash: 6a9a2991ca8c44ad
 coverage: 1
 learned_at: 2026-10-15 22:29:42

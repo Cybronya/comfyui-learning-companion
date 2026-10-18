@@ -4,7 +4,7 @@ name: 万相官方wan2.2图生视频_1949867321068314625.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949867321068314625.json
+file: comfyui_library/workflows/视频生成/文生视频/万相官方wan2.2图生视频_1949867321068314625.json
 hash: ba8d636ce214655a
 coverage: 0.891892
 learned_at: 2026-10-15 22:43:33

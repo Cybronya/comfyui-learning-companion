@@ -4,7 +4,7 @@ name: LTX2.3数字人口播长视频稳定版 图生视频加速版_208026418535
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080264185350541313.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人口播长视频稳定版 图生视频加速版_2080264185350541313.json
 hash: 2523de8f5846ace9
 coverage: 0.617284
 learned_at: 2026-10-15 22:42:11

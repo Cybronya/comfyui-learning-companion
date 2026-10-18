@@ -4,7 +4,7 @@ name: LTX2.3_自动【首尾帧】视频工作流优化版_2032374429937836033.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032374429937836033.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_自动【首尾帧】视频工作流优化版_2032374429937836033.json
 hash: 7516c1422254a50d
 coverage: 0.867925
 learned_at: 2026-10-15 22:35:36

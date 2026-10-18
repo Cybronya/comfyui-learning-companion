@@ -4,7 +4,7 @@ name: Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988236119332536321.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频动态加强-PainterI2V_1988236119332536321.json
 hash: 308f0610605fce57
 coverage: 0.913043
 learned_at: 2026-10-15 22:33:02

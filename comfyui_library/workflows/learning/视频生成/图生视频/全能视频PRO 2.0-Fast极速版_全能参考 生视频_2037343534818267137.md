@@ -4,7 +4,7 @@ name: 全能视频PRO 2.0-Fast极速版_全能参考 生视频_20373435348182671
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037343534818267137.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频PRO 2.0-Fast极速版_全能参考 生视频_2037343534818267137.json
 hash: a4d4a38207a75e3a
 coverage: 1
 learned_at: 2026-10-15 22:35:56

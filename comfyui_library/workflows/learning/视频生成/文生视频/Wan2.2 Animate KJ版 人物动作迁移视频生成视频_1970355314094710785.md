@@ -4,7 +4,7 @@ name: Wan2.2 Animate KJ版 人物动作迁移视频生成视频_1970355314094710
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1970355314094710785.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 Animate KJ版 人物动作迁移视频生成视频_1970355314094710785.json
 hash: ed6b5c5a3019d571
 coverage: 0.528571
 learned_at: 2026-10-15 22:43:47

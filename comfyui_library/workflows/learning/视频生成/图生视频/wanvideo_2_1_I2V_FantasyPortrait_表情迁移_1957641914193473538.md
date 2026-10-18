@@ -4,7 +4,7 @@ name: wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957641914193473538.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957641914193473538.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_2_1_I2V_FantasyPortrait_表情迁移_1957641914193473538.json
 hash: b22d7775d57039d7
 coverage: 0.58
 learned_at: 2026-10-15 22:31:17

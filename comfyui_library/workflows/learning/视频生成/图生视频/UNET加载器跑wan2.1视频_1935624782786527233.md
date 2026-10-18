@@ -4,7 +4,7 @@ name: UNET加载器跑wan2.1视频_1935624782786527233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935624782786527233.json
+file: comfyui_library/workflows/视频生成/图生视频/UNET加载器跑wan2.1视频_1935624782786527233.json
 hash: 9890d91b0399740b
 coverage: 1
 learned_at: 2026-10-15 22:30:23

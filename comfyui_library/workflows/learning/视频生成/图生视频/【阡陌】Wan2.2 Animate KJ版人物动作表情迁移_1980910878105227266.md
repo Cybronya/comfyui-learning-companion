@@ -4,7 +4,7 @@ name: 【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_19809108781052272
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980910878105227266.json
+file: comfyui_library/workflows/视频生成/图生视频/【阡陌】Wan2.2 Animate KJ版人物动作表情迁移_1980910878105227266.json
 hash: fa95925c42fa0787
 coverage: 0.419355
 learned_at: 2026-10-15 22:32:35

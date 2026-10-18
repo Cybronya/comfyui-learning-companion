@@ -4,7 +4,7 @@ name: Wan2.2 14B文生视频魔改加速版_1949984328258379777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949984328258379777.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 14B文生视频魔改加速版_1949984328258379777.json
 hash: d48e01f92fa9f23a
 coverage: 0.714286
 learned_at: 2026-10-15 22:43:33

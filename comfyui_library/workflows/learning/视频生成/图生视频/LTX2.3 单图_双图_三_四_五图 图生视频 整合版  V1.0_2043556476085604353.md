@@ -4,7 +4,7 @@ name: LTX2.3 单图_双图_三_四_五图 图生视频 整合版  V1.0_204355647
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043556476085604353.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 单图_双图_三_四_五图 图生视频 整合版  V1.0_2043556476085604353.json
 hash: 08fefdb7d87f9725
 coverage: 0.536913
 learned_at: 2026-10-15 22:36:32

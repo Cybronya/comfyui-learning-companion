@@ -4,7 +4,7 @@ name: 图生视频-SVI 2.0 Pro-无限长度视频生成_2005789262182313985.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005789262182313985.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-SVI 2.0 Pro-无限长度视频生成_2005789262182313985.json
 hash: deacaaa1f8985118
 coverage: 0.666667
 learned_at: 2026-10-15 22:33:58

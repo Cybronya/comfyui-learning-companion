@@ -4,7 +4,7 @@ name: Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1956170101122891778
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1956170101122891778.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 极致真人舞蹈动作视频迁移 FunControl_1956170101122891778.json
 hash: b9ba63be36586646
 coverage: 0.68
 learned_at: 2026-10-15 22:43:40

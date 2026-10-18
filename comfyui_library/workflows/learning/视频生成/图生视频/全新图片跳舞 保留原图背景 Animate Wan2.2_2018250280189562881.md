@@ -4,7 +4,7 @@ name: 全新图片跳舞 保留原图背景 Animate Wan2.2_2018250280189562881.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018250280189562881.json
+file: comfyui_library/workflows/视频生成/图生视频/全新图片跳舞 保留原图背景 Animate Wan2.2_2018250280189562881.json
 hash: 8e5fe03c041cf128
 coverage: 0.833333
 learned_at: 2026-10-15 22:34:55

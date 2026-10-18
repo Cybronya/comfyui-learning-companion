@@ -4,7 +4,7 @@ name: LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056632746793070593.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 PromptRelay 剧情向工作流｜首尾帧 _ 转场 _ 双人对话_2056632746793070593.json
 hash: 93f0f3e75404e965
 coverage: 0.885246
 learned_at: 2026-10-15 22:38:05

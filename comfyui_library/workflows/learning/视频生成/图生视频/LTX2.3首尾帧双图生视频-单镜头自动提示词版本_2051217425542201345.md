@@ -4,7 +4,7 @@ name: LTX2.3首尾帧双图生视频-单镜头自动提示词版本_205121742554
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051217425542201345.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧双图生视频-单镜头自动提示词版本_2051217425542201345.json
 hash: efb2ed9965b71c92
 coverage: 0.918033
 learned_at: 2026-10-15 22:37:21

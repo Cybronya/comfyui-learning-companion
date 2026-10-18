@@ -4,7 +4,7 @@ name: Alan实测 InfiniteTalk + IndexTTS-2_1984183697027039233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984183697027039233.json
+file: comfyui_library/workflows/视频生成/图生视频/Alan实测 InfiniteTalk + IndexTTS-2_1984183697027039233.json
 hash: 823976ddc8dfbade
 coverage: 0.8125
 learned_at: 2026-10-15 22:32:47

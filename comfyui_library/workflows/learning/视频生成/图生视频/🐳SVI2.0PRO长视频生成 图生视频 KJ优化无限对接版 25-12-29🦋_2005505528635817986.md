@@ -4,7 +4,7 @@ name: 🐳SVI2.0PRO长视频生成 图生视频 KJ优化无限对接版 25-12-29
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005505528635817986.json
+file: comfyui_library/workflows/视频生成/图生视频/🐳SVI2.0PRO长视频生成 图生视频 KJ优化无限对接版 25-12-29🦋_2005505528635817986.json
 hash: 676a49a923ec33a9
 coverage: 0.548387
 learned_at: 2026-10-15 22:33:57

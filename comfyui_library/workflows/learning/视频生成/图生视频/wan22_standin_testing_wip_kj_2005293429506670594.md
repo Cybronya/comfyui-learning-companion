@@ -4,7 +4,7 @@ name: wan22_standin_testing_wip_kj_2005293429506670594.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005293429506670594.json
+file: comfyui_library/workflows/视频生成/图生视频/wan22_standin_testing_wip_kj_2005293429506670594.json
 hash: 9dbc30cae92fa796
 coverage: 0.9375
 learned_at: 2026-10-15 22:33:56

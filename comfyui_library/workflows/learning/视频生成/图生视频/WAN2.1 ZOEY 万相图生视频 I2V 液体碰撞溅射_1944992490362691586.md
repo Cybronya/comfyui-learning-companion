@@ -4,7 +4,7 @@ name: WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1944992490362691586.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1 ZOEY 万相图生视频 I2V 液体碰撞溅射_1944992490362691586.json
 hash: 2c918382ff466ad2
 coverage: 0.666667
 learned_at: 2026-10-15 22:30:40

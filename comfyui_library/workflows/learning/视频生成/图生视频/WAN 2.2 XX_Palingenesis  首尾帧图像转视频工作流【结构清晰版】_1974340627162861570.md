@@ -4,7 +4,7 @@ name: WAN 2.2 XX_Palingenesis  首尾帧图像转视频工作流【结构清晰�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1974340627162861570.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2 XX_Palingenesis  首尾帧图像转视频工作流【结构清晰版】_1974340627162861570.json
 hash: d9bc6461104beed7
 coverage: 0.875
 learned_at: 2026-10-15 22:32:05

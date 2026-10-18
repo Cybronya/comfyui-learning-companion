@@ -4,7 +4,7 @@ name: 超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988846148821585921.json
+file: comfyui_library/workflows/视频生成/图生视频/超自动化+超多功能+拉满质量wan2.2 animate超长时长优化 t8 kj v2 不超级版_1988846148821585921.json
 hash: f688a07cc3154331
 coverage: 0.480315
 learned_at: 2026-10-15 22:33:04

@@ -4,7 +4,7 @@ name: WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1908884994994151426.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.1 和年轻的自己自拍 一键生成视频系列_1908884994994151426.json
 hash: 0fbb67f5fe41d26c
 coverage: 1
 learned_at: 2026-10-15 22:29:28

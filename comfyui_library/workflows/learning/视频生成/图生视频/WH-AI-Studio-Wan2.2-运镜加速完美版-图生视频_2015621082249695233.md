@@ -4,7 +4,7 @@ name: WH-AI-Studio-Wan2.2-运镜加速完美版-图生视频_2015621082249695233
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015621082249695233.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-Wan2.2-运镜加速完美版-图生视频_2015621082249695233.json
 hash: 0e700aea0a3fe67f
 coverage: 0.972222
 learned_at: 2026-10-15 22:34:39

@@ -4,7 +4,7 @@ name: 最新 Wan 2.2 Animate 无限循环 自动分割 超长视频_197139108603
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971391086038040577.json
+file: comfyui_library/workflows/视频生成/图生视频/最新 Wan 2.2 Animate 无限循环 自动分割 超长视频_1971391086038040577.json
 hash: 0dd7f66d1c035926
 coverage: 0.410256
 learned_at: 2026-10-15 22:31:56

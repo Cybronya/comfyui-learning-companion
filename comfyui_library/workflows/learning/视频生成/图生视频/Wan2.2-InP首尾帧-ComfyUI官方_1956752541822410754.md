@@ -4,7 +4,7 @@ name: Wan2.2-InP首尾帧-ComfyUI官方_1956752541822410754.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956752541822410754.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-InP首尾帧-ComfyUI官方_1956752541822410754.json
 hash: c1dbd09f3daa36bd
 coverage: 0.833333
 learned_at: 2026-10-15 22:31:14

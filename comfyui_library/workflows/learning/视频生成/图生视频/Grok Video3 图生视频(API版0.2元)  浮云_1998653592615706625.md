@@ -4,7 +4,7 @@ name: Grok Video3 图生视频(API版0.2元)  浮云_1998653592615706625.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998653592615706625.json
+file: comfyui_library/workflows/视频生成/图生视频/Grok Video3 图生视频(API版0.2元)  浮云_1998653592615706625.json
 hash: ee24b09c16ac8b84
 coverage: 1
 learned_at: 2026-10-15 22:33:33

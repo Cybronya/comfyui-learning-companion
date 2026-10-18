@@ -4,7 +4,7 @@ name: AI数字人 图片加音频生成视频 Ltx2.3 Director_208014302818607923
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080143028186079233.json
+file: comfyui_library/workflows/视频生成/图生视频/AI数字人 图片加音频生成视频 Ltx2.3 Director_2080143028186079233.json
 hash: cec2eefe4c2bad21
 coverage: 0.939394
 learned_at: 2026-10-15 22:42:09

@@ -4,7 +4,7 @@ name: 图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014710217484800001.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频+自选Lora_Wan2.2_Enhanced 闪电V2_2014710217484800001.json
 hash: bfd1efdda4e7d616
 coverage: 0.959596
 learned_at: 2026-10-15 22:34:36

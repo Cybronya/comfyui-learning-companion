@@ -4,7 +4,7 @@ name: SCAIL2 Animation & Replacement 动作迁移&角色替换_20750565440137093
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075056544013709313.json
+file: comfyui_library/workflows/视频生成/图生视频/SCAIL2 Animation & Replacement 动作迁移&角色替换_2075056544013709313.json
 hash: 3f5d56e793f52cf4
 coverage: 0.369427
 learned_at: 2026-10-15 22:41:20

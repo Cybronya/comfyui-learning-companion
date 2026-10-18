@@ -4,7 +4,7 @@ name: 【4月】Wan2.2 Dasiwa V10+ SVI2Pro全自动长视频（严格遵循提�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042934269093355522.json
+file: comfyui_library/workflows/视频生成/图生视频/【4月】Wan2.2 Dasiwa V10+ SVI2Pro全自动长视频（严格遵循提示词控制）_2042934269093355522.json
 hash: f1272c16cfb7206b
 coverage: 0.978723
 learned_at: 2026-10-15 22:36:30

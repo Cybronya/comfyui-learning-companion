@@ -4,7 +4,7 @@ name: aidir-LTX 2.3  首中尾三图+多图_2069594232695902209.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069594232695902209.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX 2.3  首中尾三图+多图_2069594232695902209.json
 hash: 93f6d1d674a414fe
 coverage: 0.8875
 learned_at: 2026-10-15 22:40:30

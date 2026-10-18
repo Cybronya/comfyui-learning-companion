@@ -4,7 +4,7 @@ name: LTX2.3导演分镜工作流（支持多图+多个音频）自由编辑_205
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055157039688634370.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演分镜工作流（支持多图+多个音频）自由编辑_2055157039688634370.json
 hash: 7753e5b79d8b074d
 coverage: 1
 learned_at: 2026-10-15 22:37:55

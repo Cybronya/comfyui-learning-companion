@@ -4,7 +4,7 @@ name: 支持多图生视频全能视频SD2.0 (体验版)_2035937654084214786.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035937654084214786.json
+file: comfyui_library/workflows/视频生成/图生视频/支持多图生视频全能视频SD2.0 (体验版)_2035937654084214786.json
 hash: 364c61ec43ed55c5
 coverage: 1
 learned_at: 2026-10-15 22:35:50

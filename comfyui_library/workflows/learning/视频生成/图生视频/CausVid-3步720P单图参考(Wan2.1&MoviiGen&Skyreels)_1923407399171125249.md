@@ -4,7 +4,7 @@ name: CausVid-3步720P单图参考(Wan2.1&MoviiGen&Skyreels)_1923407399171125249
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1923407399171125249.json
+file: comfyui_library/workflows/视频生成/图生视频/CausVid-3步720P单图参考(Wan2.1&MoviiGen&Skyreels)_1923407399171125249.json
 hash: 457a731ec95b66e2
 coverage: 0.894495
 learned_at: 2026-10-15 22:29:48

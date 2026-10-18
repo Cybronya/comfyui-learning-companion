@@ -4,7 +4,7 @@ name: LTX-2.3_PromptRelay四图+音频数字人工作流_2054550329504608258.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054550329504608258.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_PromptRelay四图+音频数字人工作流_2054550329504608258.json
 hash: 4f308bd544d398d3
 coverage: 0.411765
 learned_at: 2026-10-15 22:37:49

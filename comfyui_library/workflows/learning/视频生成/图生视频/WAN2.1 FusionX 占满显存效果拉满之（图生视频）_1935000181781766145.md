@@ -4,7 +4,7 @@ name: WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935000181781766145.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1 FusionX 占满显存效果拉满之（图生视频）_1935000181781766145.json
 hash: 42b7095788b8700c
 coverage: 0.9375
 learned_at: 2026-10-15 22:30:20

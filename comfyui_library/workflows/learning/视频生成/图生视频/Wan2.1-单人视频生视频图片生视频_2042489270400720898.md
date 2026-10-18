@@ -4,7 +4,7 @@ name: Wan2.1-单人视频生视频图片生视频_2042489270400720898.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042489270400720898.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-单人视频生视频图片生视频_2042489270400720898.json
 hash: 16378fdcdd697204
 coverage: 0.833333
 learned_at: 2026-10-15 22:36:28

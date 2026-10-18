@@ -4,7 +4,7 @@ name: sand图生视频LTX2.3 固化脸部_2044418941187006466.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044418941187006466.json
+file: comfyui_library/workflows/视频生成/图生视频/sand图生视频LTX2.3 固化脸部_2044418941187006466.json
 hash: 90c21a4d23b17adf
 coverage: 0.857143
 learned_at: 2026-10-15 22:36:38

@@ -4,7 +4,7 @@ name: Wan2.2-Animate-动作迁移 （长视频）表情+抖动+一致性+手部_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031640030707458050.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-动作迁移 （长视频）表情+抖动+一致性+手部_2031640030707458050.json
 hash: fec1a856f22e8cfa
 coverage: 0.640351
 learned_at: 2026-10-15 22:35:32

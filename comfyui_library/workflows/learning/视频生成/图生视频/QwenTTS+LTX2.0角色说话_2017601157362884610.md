@@ -4,7 +4,7 @@ name: QwenTTS+LTX2.0角色说话_2017601157362884610.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017601157362884610.json
+file: comfyui_library/workflows/视频生成/图生视频/QwenTTS+LTX2.0角色说话_2017601157362884610.json
 hash: 839fa9b22f161120
 coverage: 0.592784
 learned_at: 2026-10-15 22:34:50

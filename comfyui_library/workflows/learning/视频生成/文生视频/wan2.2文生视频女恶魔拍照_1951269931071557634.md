@@ -4,7 +4,7 @@ name: wan2.2文生视频女恶魔拍照_1951269931071557634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951269931071557634.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频女恶魔拍照_1951269931071557634.json
 hash: 2643c34c36f29cfe
 coverage: 1
 learned_at: 2026-10-15 22:43:37

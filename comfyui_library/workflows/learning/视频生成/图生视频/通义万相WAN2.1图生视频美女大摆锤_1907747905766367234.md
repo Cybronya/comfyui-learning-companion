@@ -4,7 +4,7 @@ name: 通义万相WAN2.1图生视频美女大摆锤_1907747905766367234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1907747905766367234.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相WAN2.1图生视频美女大摆锤_1907747905766367234.json
 hash: b3fe786dbed6bff1
 coverage: 1
 learned_at: 2026-10-15 22:29:27

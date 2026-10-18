@@ -4,7 +4,7 @@ name: infinite+wan2.1多人对口型_1960541577531842561.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960541577531842561.json
+file: comfyui_library/workflows/视频生成/图生视频/infinite+wan2.1多人对口型_1960541577531842561.json
 hash: 487677951df52d43
 coverage: 0.961538
 learned_at: 2026-10-15 22:31:26

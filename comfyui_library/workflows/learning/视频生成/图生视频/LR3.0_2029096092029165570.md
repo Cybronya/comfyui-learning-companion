@@ -4,7 +4,7 @@ name: LR3.0_2029096092029165570.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029096092029165570.json
+file: comfyui_library/workflows/视频生成/图生视频/LR3.0_2029096092029165570.json
 hash: 196f0f572653488a
 coverage: 0.742857
 learned_at: 2026-10-15 22:35:21

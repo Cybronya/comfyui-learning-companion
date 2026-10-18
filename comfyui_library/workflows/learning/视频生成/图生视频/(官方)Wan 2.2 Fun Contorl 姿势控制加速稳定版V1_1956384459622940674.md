@@ -4,7 +4,7 @@ name: (官方)Wan 2.2 Fun Contorl 姿势控制加速稳定版V1_1956384459622940
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956384459622940674.json
+file: comfyui_library/workflows/视频生成/图生视频/(官方)Wan 2.2 Fun Contorl 姿势控制加速稳定版V1_1956384459622940674.json
 hash: 42d7eb9e9e4afead
 coverage: 0.942857
 learned_at: 2026-10-15 22:31:13

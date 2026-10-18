@@ -4,7 +4,7 @@ name: 【KJ版】Wan2.2-8步首尾帧_1954815922643058689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954815922643058689.json
+file: comfyui_library/workflows/视频生成/图生视频/【KJ版】Wan2.2-8步首尾帧_1954815922643058689.json
 hash: e25a13b0793144fc
 coverage: 0.764706
 learned_at: 2026-10-15 22:31:07

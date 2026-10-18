@@ -4,7 +4,7 @@ name: Wan2.2 Smooth V3--Qwen3.5自动提示词--文生视频_2035656316517093377
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035656316517093377.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Smooth V3--Qwen3.5自动提示词--文生视频_2035656316517093377.json
 hash: e4fecf8281f5a8e0
 coverage: 0.848485
 learned_at: 2026-10-15 22:35:50

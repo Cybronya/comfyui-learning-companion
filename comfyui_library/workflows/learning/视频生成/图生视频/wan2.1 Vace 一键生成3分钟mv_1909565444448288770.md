@@ -4,7 +4,7 @@ name: wan2.1 Vace 一键生成3分钟mv_1909565444448288770.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1909565444448288770.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 Vace 一键生成3分钟mv_1909565444448288770.json
 hash: a442afb29406362f
 coverage: 0.686695
 learned_at: 2026-10-15 22:29:29

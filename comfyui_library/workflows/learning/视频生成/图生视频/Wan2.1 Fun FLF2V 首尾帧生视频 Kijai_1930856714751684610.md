@@ -4,7 +4,7 @@ name: Wan2.1 Fun FLF2V 首尾帧生视频 Kijai_1930856714751684610.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930856714751684610.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 Fun FLF2V 首尾帧生视频 Kijai_1930856714751684610.json
 hash: bf19d673ac5e5a5f
 coverage: 0.714286
 learned_at: 2026-10-15 22:30:07

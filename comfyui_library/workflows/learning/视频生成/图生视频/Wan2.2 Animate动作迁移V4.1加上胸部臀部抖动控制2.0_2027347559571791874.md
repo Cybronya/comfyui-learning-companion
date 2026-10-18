@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移V4.1加上胸部臀部抖动控制2.0_2027347559
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027347559571791874.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移V4.1加上胸部臀部抖动控制2.0_2027347559571791874.json
 hash: 8e32f076e795dffd
 coverage: 0.5125
 learned_at: 2026-10-15 22:35:17

@@ -4,7 +4,7 @@ name: 万相最快首尾帧wan2.1FIF2V-GGUF首尾帧_1924631605720043521.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1924631605720043521.json
+file: comfyui_library/workflows/视频生成/图生视频/万相最快首尾帧wan2.1FIF2V-GGUF首尾帧_1924631605720043521.json
 hash: 8969e84322b65391
 coverage: 0.978723
 learned_at: 2026-10-15 22:29:50

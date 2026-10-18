@@ -4,7 +4,7 @@ name: Seedance2.0即梦-豆包-SD2大模型_1945337097937145858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945337097937145858.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0即梦-豆包-SD2大模型_1945337097937145858.json
 hash: 0654438c3ddca02c
 coverage: 0.909091
 learned_at: 2026-10-15 22:30:41

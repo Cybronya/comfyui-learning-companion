@@ -4,7 +4,7 @@ name: LTX2.3首尾帧生视频 音频驱动版_三次采样(自行上传音频)_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037425677011525633.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧生视频 音频驱动版_三次采样(自行上传音频)_2037425677011525633.json
 hash: 2d6646e4d01b71ab
 coverage: 0.441696
 learned_at: 2026-10-15 22:35:57

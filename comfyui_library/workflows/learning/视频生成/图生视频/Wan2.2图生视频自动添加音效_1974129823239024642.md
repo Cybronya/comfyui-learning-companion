@@ -4,7 +4,7 @@ name: Wan2.2图生视频自动添加音效_1974129823239024642.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1974129823239024642.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频自动添加音效_1974129823239024642.json
 hash: 9aedb8511b0e8007
 coverage: 0.875
 learned_at: 2026-10-15 22:32:04

@@ -4,7 +4,7 @@ name: 【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958062823505088514.json
+file: comfyui_library/workflows/视频生成/文生视频/【KJ加速版】万相Wan2.2图生视频FusionX超级加速确保跑通_1958062823505088514.json
 hash: d0e3dc9bb8b930e0
 coverage: 1
 learned_at: 2026-10-15 22:43:41

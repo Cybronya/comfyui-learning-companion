@@ -4,7 +4,7 @@ name: LTX2.3声音+图片（MV 音乐数字人）_2031678223054016514.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031678223054016514.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3声音+图片（MV 音乐数字人）_2031678223054016514.json
 hash: e0d9791933161851
 coverage: 0.878788
 learned_at: 2026-10-15 22:35:32

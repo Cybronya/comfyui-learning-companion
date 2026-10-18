@@ -1,0 +1,156 @@
+---
+key: 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2101866496606695426.json
+name: 【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2101866496606695426
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2101866496606695426.json
+hash: 1ae64da954a2738e
+coverage: 0.453782
+learned_at: 2026-10-17 02:14:51
+nodes: [Note, PlaySound|pysssss, SetNode, SetNode, SetNode, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, Note, GetNode, GetNode, WanAnimatePlus Decode, Label (rgthree), GetNode, ImageResizeKJv2, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, Note, GetNode, WanAnimatePlus ClipVisionEncode V2, GetNode, VHS_VideoCombine, SetNode, WanAnimatePlus ContextOptions, Label (rgthree), Label (rgthree), WanAnimatePlus BlockSwap, GetNode, GetNode, GetNode, WanAnimatePlus SamplerSettings, SetNode, GetNode, SetNode, ImageResizeKJv2, SetNode, GetNode, SetNode, GetNode, WanAnimatePlus SamplerFromSettings, PreviewImage, VHS_VideoCombine, VHS_VideoInfoLoaded, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Seed (rgthree), PreviewImage, SAM3_VideoTrack, SAM3_VideoTrack, SetNode, GetNode, LoadImage, PreviewImage, SetNode, VHS_VideoCombine, Label (rgthree), Fast Groups Bypasser (rgthree), LoadImage, SetNode, FastGroupsBypassSwitch, GetNode, GetNode, Image Blank, RepeatImageBatch, WanAnimatePlus VAELoader, CLIPVisionLoader, CheckpointLoaderSimple, CLIPTextEncode, RepeatImageBatch, SAM3_TrackToMask, Image Blank, ImageCompositeMasked, SetNode, VHS_LoadVideo, Label (rgthree), ImageResizeKJv2, SetNode, SetNode, ImageCompositeMasked, SAM3_TrackToMask, GetNode, WanVideoTextEncodeCached, GetNode, INTConstant, INTConstant, Int, Int, SetNode, SCAIL2ColoredMaskV2, MarkdownNote, WanAnimatePlus SCAIL_2 Embeds, SetNode, Label (rgthree), WanAnimatePlus LoraSelect, WanAnimatePlus LoraSelectMulti, Fast Groups Bypasser (rgthree), MarkdownNote, WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus ModelLoader, EmptyImage, PreviewImage]
+patterns: []
+missing: []
+parameters: {"checkpoint": "sam3.1_multiplex_fp16.safetensors"}
+---
+
+# 视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2101866496606695426.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.1版【长视频+动作迁移+背景替换】_2101866496606695426.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Process → Output → Other
+
+**节点**（119 个）：
+- `Note`
+- `PlaySound|pysssss`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `Note`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus Decode`
+- `Label (rgthree)`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `Note`
+- `GetNode`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `WanAnimatePlus ContextOptions`
+- `Label (rgthree)`
+- `Label (rgthree)`
+- `WanAnimatePlus BlockSwap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus SamplerSettings` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `WanAnimatePlus SamplerFromSettings` ★核心
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Seed (rgthree)`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SAM3_VideoTrack`
+- `SetNode`
+- `GetNode`
+- `LoadImage`
+- `PreviewImage`
+- `SetNode`
+- `VHS_VideoCombine`
+- `Label (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `SetNode`
+- `FastGroupsBypassSwitch`
+- `GetNode`
+- `GetNode`
+- `Image Blank`
+- `RepeatImageBatch`
+- `WanAnimatePlus VAELoader`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `RepeatImageBatch`
+- `SAM3_TrackToMask`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `SetNode`
+- `VHS_LoadVideo`
+- `Label (rgthree)`
+- `ImageResizeKJv2`
+- `SetNode`
+- `SetNode`
+- `ImageCompositeMasked`
+- `SAM3_TrackToMask`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `Int`
+- `Int`
+- `SetNode`
+- `SCAIL2ColoredMaskV2`
+- `MarkdownNote`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `SetNode`
+- `Label (rgthree)`
+- `WanAnimatePlus LoraSelect`
+- `WanAnimatePlus LoraSelectMulti`
+- `Fast Groups Bypasser (rgthree)`
+- `MarkdownNote`
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
+- `WanAnimatePlus ModelLoader`
+- `EmptyImage`
+- `PreviewImage`
+
+## 关键参数
+
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+
+## 知识
+
+覆盖率 **45%**（54/119）
+
+**有卡**：`PlaySound|pysssss`、`WanAnimatePlus SetBlockSwap`、`WanAnimatePlus SetLoRAs`、`WanAnimatePlus Decode`、`Label (rgthree)`、`ImageResizeKJv2`、`WanAnimatePlus ClipVisionEncode V2`、`VHS_VideoCombine`、`WanAnimatePlus ContextOptions`、`WanAnimatePlus BlockSwap`、`WanAnimatePlus SamplerSettings`、`WanAnimatePlus SamplerFromSettings`、`VHS_VideoInfoLoaded`、`Seed (rgthree)`、`SAM3_VideoTrack`、`LoadImage`、`FastGroupsBypassSwitch`、`Image Blank`、`RepeatImageBatch`、`WanAnimatePlus VAELoader`、`CLIPVisionLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`SAM3_TrackToMask`、`ImageCompositeMasked`、`VHS_LoadVideo`、`WanVideoTextEncodeCached`、`INTConstant`、`Int`、`SCAIL2ColoredMaskV2`、`WanAnimatePlus SCAIL_2 Embeds`、`WanAnimatePlus LoraSelect`、`WanAnimatePlus LoraSelectMulti`、`WanAnimatePlus SCAIL_2 TwoPhase Settings`、`WanAnimatePlus ModelLoader`、`EmptyImage`
+
+**用到的条目**：CheckpointLoaderSimple、CLIPTextEncode、LoadImage、Seed (rgthree)、WanAnimatePlus SamplerFromSettings、WanAnimatePlus SamplerSettings、WanVideoTextEncodeCached、WanAnimatePlus ClipVisionEncode V2

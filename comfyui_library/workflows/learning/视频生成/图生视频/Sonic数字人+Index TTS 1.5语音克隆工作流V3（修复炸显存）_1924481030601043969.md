@@ -4,7 +4,7 @@ name: Sonic数字人+Index TTS 1.5语音克隆工作流V3（修复炸显存）_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1924481030601043969.json
+file: comfyui_library/workflows/视频生成/图生视频/Sonic数字人+Index TTS 1.5语音克隆工作流V3（修复炸显存）_1924481030601043969.json
 hash: b8b2f868c0df53aa
 coverage: 0.904762
 learned_at: 2026-10-15 22:29:50

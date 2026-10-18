@@ -4,7 +4,7 @@ name: LongCat_I2V_full_automatic_1985530198026297346.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985530198026297346.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCat_I2V_full_automatic_1985530198026297346.json
 hash: 8d522c685d783cfa
 coverage: 0.47191
 learned_at: 2026-10-15 22:32:51

@@ -4,7 +4,7 @@ name: PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_204295671735
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042956717356486657.json
+file: comfyui_library/workflows/视频生成/图生视频/PixVerse V6 图生视频（2分钟出10秒视频0.2元_秒）_2042956717356486657.json
 hash: dac9d3ade0a8e0d2
 coverage: 1
 learned_at: 2026-10-15 22:36:30

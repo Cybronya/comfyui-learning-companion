@@ -4,7 +4,7 @@ name: 啊癫 最新 动作迁移，高清Wan2.2 Animate动作迁移V44-1_2032851
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032851375377354753.json
+file: comfyui_library/workflows/视频生成/图生视频/啊癫 最新 动作迁移，高清Wan2.2 Animate动作迁移V44-1_2032851375377354753.json
 hash: 111ce667b0195763
 coverage: 0.506494
 learned_at: 2026-10-15 22:35:37

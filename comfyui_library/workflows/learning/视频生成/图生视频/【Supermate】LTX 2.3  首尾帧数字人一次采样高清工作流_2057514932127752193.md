@@ -4,7 +4,7 @@ name: 【Supermate】LTX 2.3  首尾帧数字人一次采样高清工作流_2057
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057514932127752193.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】LTX 2.3  首尾帧数字人一次采样高清工作流_2057514932127752193.json
 hash: bf5a7406f54614ff
 coverage: 0.479452
 learned_at: 2026-10-15 22:38:13

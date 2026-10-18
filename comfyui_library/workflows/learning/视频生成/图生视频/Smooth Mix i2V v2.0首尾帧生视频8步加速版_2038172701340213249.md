@@ -4,7 +4,7 @@ name: Smooth Mix i2V v2.0首尾帧生视频8步加速版_2038172701340213249.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038172701340213249.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix i2V v2.0首尾帧生视频8步加速版_2038172701340213249.json
 hash: b7b75011c36611c7
 coverage: 0.730769
 learned_at: 2026-10-15 22:36:00

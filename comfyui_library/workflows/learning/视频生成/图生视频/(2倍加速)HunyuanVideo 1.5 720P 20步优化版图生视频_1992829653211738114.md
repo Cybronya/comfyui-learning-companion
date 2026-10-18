@@ -4,7 +4,7 @@ name: (2倍加速)HunyuanVideo 1.5 720P 20步优化版图生视频_1992829653211
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992829653211738114.json
+file: comfyui_library/workflows/视频生成/图生视频/(2倍加速)HunyuanVideo 1.5 720P 20步优化版图生视频_1992829653211738114.json
 hash: 4c55e844e55fae7e
 coverage: 0.846154
 learned_at: 2026-10-15 22:33:16

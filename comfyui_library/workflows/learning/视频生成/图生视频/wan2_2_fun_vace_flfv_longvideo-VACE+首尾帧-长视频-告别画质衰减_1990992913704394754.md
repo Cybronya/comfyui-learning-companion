@@ -4,7 +4,7 @@ name: wan2_2_fun_vace_flfv_longvideo-VACE+首尾帧-长视频-告别画质衰减
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990992913704394754.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2_2_fun_vace_flfv_longvideo-VACE+首尾帧-长视频-告别画质衰减_1990992913704394754.json
 hash: a0bb9a3a0595b50d
 coverage: 0.519608
 learned_at: 2026-10-15 22:33:12

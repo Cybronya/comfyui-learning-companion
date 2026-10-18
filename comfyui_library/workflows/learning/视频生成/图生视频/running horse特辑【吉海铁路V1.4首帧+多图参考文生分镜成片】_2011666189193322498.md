@@ -4,7 +4,7 @@ name: running horse特辑【吉海铁路V1.4首帧+多图参考文生分镜成�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011666189193322498.json
+file: comfyui_library/workflows/视频生成/图生视频/running horse特辑【吉海铁路V1.4首帧+多图参考文生分镜成片】_2011666189193322498.json
 hash: 2ab63313b9a95b0f
 coverage: 0.642857
 learned_at: 2026-10-15 22:34:24

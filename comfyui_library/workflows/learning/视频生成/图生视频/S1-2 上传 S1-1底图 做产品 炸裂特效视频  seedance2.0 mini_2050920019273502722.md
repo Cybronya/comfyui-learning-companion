@@ -4,7 +4,7 @@ name: S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050920019273502722.json
+file: comfyui_library/workflows/视频生成/图生视频/S1-2 上传 S1-1底图 做产品 炸裂特效视频  seedance2.0 mini_2050920019273502722.json
 hash: 6896c74432e6ad6a
 coverage: 1
 learned_at: 2026-10-15 22:37:20

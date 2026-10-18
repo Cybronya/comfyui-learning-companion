@@ -4,7 +4,7 @@ name: 商业级多图分镜数字人-LTX-2.3 Singularity-MV、口播等_20641565
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064156587920551937.json
+file: comfyui_library/workflows/视频生成/图生视频/商业级多图分镜数字人-LTX-2.3 Singularity-MV、口播等_2064156587920551937.json
 hash: 81df57f565d09689
 coverage: 0.454023
 learned_at: 2026-10-15 22:39:20

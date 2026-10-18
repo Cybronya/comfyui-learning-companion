@@ -4,7 +4,7 @@ name: MiniCpm V4.5视频反推-二创神器_1976505950364372994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976505950364372994.json
+file: comfyui_library/workflows/视频生成/图生视频/MiniCpm V4.5视频反推-二创神器_1976505950364372994.json
 hash: e5cdf89514e68ad8
 coverage: 0.75
 learned_at: 2026-10-15 22:32:11

@@ -4,7 +4,7 @@ name: 图像首尾帧（Wan2.2-aio-v12+QwenVL)_2001552417814638593.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001552417814638593.json
+file: comfyui_library/workflows/视频生成/图生视频/图像首尾帧（Wan2.2-aio-v12+QwenVL)_2001552417814638593.json
 hash: 29f24bb439a7af7a
 coverage: 0.575758
 learned_at: 2026-10-15 22:33:46

@@ -4,7 +4,7 @@ name: 变毒液wan2.1万相图生视40工作流_1933388878445195265.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933388878445195265.json
+file: comfyui_library/workflows/视频生成/图生视频/变毒液wan2.1万相图生视40工作流_1933388878445195265.json
 hash: eb69028cab5491e8
 coverage: 0.842767
 learned_at: 2026-10-15 22:30:13

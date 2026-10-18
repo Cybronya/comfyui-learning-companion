@@ -4,7 +4,7 @@ name: LTX2.3 动漫数字人特制版_2069018499376312322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069018499376312322.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 动漫数字人特制版_2069018499376312322.json
 hash: 8a1cfb70cd747f28
 coverage: 0.809524
 learned_at: 2026-10-15 22:40:25

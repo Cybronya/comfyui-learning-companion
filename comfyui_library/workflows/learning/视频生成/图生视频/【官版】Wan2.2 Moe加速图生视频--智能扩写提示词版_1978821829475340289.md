@@ -4,7 +4,7 @@ name: 【官版】Wan2.2 Moe加速图生视频--智能扩写提示词版_1978821
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978821829475340289.json
+file: comfyui_library/workflows/视频生成/图生视频/【官版】Wan2.2 Moe加速图生视频--智能扩写提示词版_1978821829475340289.json
 hash: 074fb99a5454c925
 coverage: 0.708333
 learned_at: 2026-10-15 22:32:20

@@ -4,7 +4,7 @@ name: Wan2.2 Animate人物跳舞超长视频工作流_2037781055184314370.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037781055184314370.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate人物跳舞超长视频工作流_2037781055184314370.json
 hash: 9437a8e986ed7053
 coverage: 0.516129
 learned_at: 2026-10-15 22:35:58

@@ -4,7 +4,7 @@ name: LTX2.3 多图剧情视频图生视频 批量生视频 超长时间 编导�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062395094396919810.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 多图剧情视频图生视频 批量生视频 超长时间 编导时间线提示词修改版_2062395094396919810.json
 hash: 14fef4c119f6e188
 coverage: 0.515625
 learned_at: 2026-10-15 22:39:03

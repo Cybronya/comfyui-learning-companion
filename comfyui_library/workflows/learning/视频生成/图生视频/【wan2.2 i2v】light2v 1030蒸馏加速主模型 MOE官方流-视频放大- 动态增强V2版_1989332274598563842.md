@@ -4,7 +4,7 @@ name: 【wan2.2 i2v】light2v 1030蒸馏加速主模型 MOE官方流-视频放�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989332274598563842.json
+file: comfyui_library/workflows/视频生成/图生视频/【wan2.2 i2v】light2v 1030蒸馏加速主模型 MOE官方流-视频放大- 动态增强V2版_1989332274598563842.json
 hash: f7c4591f0ea2328c
 coverage: 0.825
 learned_at: 2026-10-15 22:33:06

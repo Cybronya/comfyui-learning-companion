@@ -4,7 +4,7 @@ name: Wan2.2 单人角色一键替换_2004191183524032514.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004191183524032514.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 单人角色一键替换_2004191183524032514.json
 hash: b01a39c9b2f2a2d0
 coverage: 0.453608
 learned_at: 2026-10-15 22:33:53

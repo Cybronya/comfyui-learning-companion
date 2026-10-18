@@ -4,7 +4,7 @@ name: 极速图生视频 LTX2.3（随机提示词）B站艾橘溪!_2068335067583
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068335067583307778.json
+file: comfyui_library/workflows/视频生成/图生视频/极速图生视频 LTX2.3（随机提示词）B站艾橘溪!_2068335067583307778.json
 hash: f9241fa6294502c7
 coverage: 0.811321
 learned_at: 2026-10-15 22:40:18

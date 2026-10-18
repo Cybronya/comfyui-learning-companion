@@ -4,7 +4,7 @@ name: Wan2.2_i2v_Dasiwa__极速版V3_2080499273757712386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080499273757712386.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_i2v_Dasiwa__极速版V3_2080499273757712386.json
 hash: 738532515d2906bd
 coverage: 0.666667
 learned_at: 2026-10-15 22:42:13

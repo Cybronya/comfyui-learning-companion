@@ -4,7 +4,7 @@ name: HUNYUAN+1.5+I2V+8Step_2074119499955130370.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074119499955130370.json
+file: comfyui_library/workflows/视频生成/图生视频/HUNYUAN+1.5+I2V+8Step_2074119499955130370.json
 hash: ed18285e758c29bd
 coverage: 0.971429
 learned_at: 2026-10-15 22:41:12

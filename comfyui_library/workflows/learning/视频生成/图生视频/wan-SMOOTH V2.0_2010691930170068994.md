@@ -4,7 +4,7 @@ name: wan-SMOOTH V2.0_2010691930170068994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010691930170068994.json
+file: comfyui_library/workflows/视频生成/图生视频/wan-SMOOTH V2.0_2010691930170068994.json
 hash: 6d960c9154f66ec1
 coverage: 1
 learned_at: 2026-10-15 22:34:18

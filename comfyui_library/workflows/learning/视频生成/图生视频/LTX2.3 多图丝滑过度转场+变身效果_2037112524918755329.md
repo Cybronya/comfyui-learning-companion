@@ -4,7 +4,7 @@ name: LTX2.3 多图丝滑过度转场+变身效果_2037112524918755329.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037112524918755329.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 多图丝滑过度转场+变身效果_2037112524918755329.json
 hash: 5453f05619e60f54
 coverage: 0.870968
 learned_at: 2026-10-15 22:35:55

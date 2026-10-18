@@ -4,7 +4,7 @@ name: TTM轨迹控制视频Wan2.2 Smooth w. SplineEdit（Trajectory control vide
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991106081629798401.json
+file: comfyui_library/workflows/视频生成/图生视频/TTM轨迹控制视频Wan2.2 Smooth w. SplineEdit（Trajectory control video）_1991106081629798401.json
 hash: bbe7a8f284a77c0f
 coverage: 0.896552
 learned_at: 2026-10-15 22:33:12

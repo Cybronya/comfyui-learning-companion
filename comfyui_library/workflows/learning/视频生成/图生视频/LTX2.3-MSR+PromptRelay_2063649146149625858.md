@@ -4,7 +4,7 @@ name: LTX2.3-MSR+PromptRelay_2063649146149625858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063649146149625858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR+PromptRelay_2063649146149625858.json
 hash: b09188e5656af911
 coverage: 0.449704
 learned_at: 2026-10-15 22:39:16

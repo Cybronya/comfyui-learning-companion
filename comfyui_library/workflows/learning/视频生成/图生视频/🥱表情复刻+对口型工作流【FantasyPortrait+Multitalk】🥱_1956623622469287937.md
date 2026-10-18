@@ -4,7 +4,7 @@ name: 🥱表情复刻+对口型工作流【FantasyPortrait+Multitalk】🥱_195
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956623622469287937.json
+file: comfyui_library/workflows/视频生成/图生视频/🥱表情复刻+对口型工作流【FantasyPortrait+Multitalk】🥱_1956623622469287937.json
 hash: cd1bf5fbb1412a5a
 coverage: 0.886364
 learned_at: 2026-10-15 22:31:14

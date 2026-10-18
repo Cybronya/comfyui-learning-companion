@@ -4,7 +4,7 @@ name: Wan2.1_FusionX-VACE_Live2D动态壁纸_1980164711092228097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980164711092228097.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_FusionX-VACE_Live2D动态壁纸_1980164711092228097.json
 hash: aca559320af5bc53
 coverage: 0.587302
 learned_at: 2026-10-15 22:32:28

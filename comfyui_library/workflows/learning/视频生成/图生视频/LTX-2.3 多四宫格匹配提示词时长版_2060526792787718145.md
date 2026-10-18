@@ -4,7 +4,7 @@ name: LTX-2.3 多四宫格匹配提示词时长版_2060526792787718145.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060526792787718145.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 多四宫格匹配提示词时长版_2060526792787718145.json
 hash: 88c07e5eff918932
 coverage: 0.716049
 learned_at: 2026-10-15 22:38:48

@@ -4,7 +4,7 @@ name: video_capybara_v0_1_image_to_video_fast_2027031167693754370.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027031167693754370.json
+file: comfyui_library/workflows/视频生成/图生视频/video_capybara_v0_1_image_to_video_fast_2027031167693754370.json
 hash: fec6a63e35f93ae2
 coverage: 0.807692
 learned_at: 2026-10-15 22:35:15

@@ -4,7 +4,7 @@ name: 【首尾帧视频】Wan2.2+Wan2.2 自动提示词+润色_1952905614798295
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952905614798295042.json
+file: comfyui_library/workflows/视频生成/图生视频/【首尾帧视频】Wan2.2+Wan2.2 自动提示词+润色_1952905614798295042.json
 hash: eec616c209623c6d
 coverage: 0.657534
 learned_at: 2026-10-15 22:31:03

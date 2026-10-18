@@ -4,7 +4,7 @@ name: 【阿良绘】LTX2.3数字人 _ 更新版本（高质版）_2044304245054
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044304245054246914.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】LTX2.3数字人 _ 更新版本（高质版）_2044304245054246914.json
 hash: 6f8f9b93b7bbdbab
 coverage: 0.689655
 learned_at: 2026-10-15 22:36:37

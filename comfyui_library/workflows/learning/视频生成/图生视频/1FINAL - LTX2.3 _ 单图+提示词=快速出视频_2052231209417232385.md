@@ -4,7 +4,7 @@ name: 1FINAL - LTX2.3 _ 单图+提示词=快速出视频_2052231209417232385.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052231209417232385.json
+file: comfyui_library/workflows/视频生成/图生视频/1FINAL - LTX2.3 _ 单图+提示词=快速出视频_2052231209417232385.json
 hash: 22858b6302bbb1a4
 coverage: 0.867925
 learned_at: 2026-10-15 22:37:27

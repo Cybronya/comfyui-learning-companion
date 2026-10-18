@@ -4,7 +4,7 @@ name: LTX2.3-导演台2.0，全新升级_2079871871297875970.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079871871297875970.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-导演台2.0，全新升级_2079871871297875970.json
 hash: f2ab76d05abfb8e9
 coverage: 0.965517
 learned_at: 2026-10-15 22:42:07

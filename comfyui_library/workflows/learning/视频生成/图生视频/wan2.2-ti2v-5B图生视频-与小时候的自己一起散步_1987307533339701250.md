@@ -4,7 +4,7 @@ name: wan2.2-ti2v-5B图生视频-与小时候的自己一起散步_1987307533339
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987307533339701250.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-ti2v-5B图生视频-与小时候的自己一起散步_1987307533339701250.json
 hash: c3ad9d9710f8a138
 coverage: 1
 learned_at: 2026-10-15 22:32:58

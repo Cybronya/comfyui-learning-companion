@@ -4,7 +4,7 @@ name: wan2.1 [360°环绕运镜] 一键式图生视频_2070674585263108098.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070674585263108098.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 [360°环绕运镜] 一键式图生视频_2070674585263108098.json
 hash: 97fdfcde348525de
 coverage: 1
 learned_at: 2026-10-15 22:40:41

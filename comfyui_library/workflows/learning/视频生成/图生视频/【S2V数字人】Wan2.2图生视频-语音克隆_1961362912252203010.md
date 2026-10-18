@@ -4,7 +4,7 @@ name: 【S2V数字人】Wan2.2图生视频-语音克隆_1961362912252203010.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961362912252203010.json
+file: comfyui_library/workflows/视频生成/图生视频/【S2V数字人】Wan2.2图生视频-语音克隆_1961362912252203010.json
 hash: e35e5e014e81caea
 coverage: 0.790323
 learned_at: 2026-10-15 22:31:28

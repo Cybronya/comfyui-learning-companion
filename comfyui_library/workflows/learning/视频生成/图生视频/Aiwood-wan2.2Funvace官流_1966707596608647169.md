@@ -4,7 +4,7 @@ name: Aiwood-wan2.2Funvace官流_1966707596608647169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966707596608647169.json
+file: comfyui_library/workflows/视频生成/图生视频/Aiwood-wan2.2Funvace官流_1966707596608647169.json
 hash: 643d4bd2bf5f671a
 coverage: 0.866667
 learned_at: 2026-10-15 22:31:39

@@ -4,7 +4,7 @@ name: Work-Fisher_Wan2.2_Smooth Mix I2V_1977733586520526849.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977733586520526849.json
+file: comfyui_library/workflows/视频生成/图生视频/Work-Fisher_Wan2.2_Smooth Mix I2V_1977733586520526849.json
 hash: f2dd5552e25e7c61
 coverage: 0.821918
 learned_at: 2026-10-15 22:32:16

@@ -4,7 +4,7 @@ name: wan22_standin_optimized_workflow_2005304023580372993.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005304023580372993.json
+file: comfyui_library/workflows/视频生成/图生视频/wan22_standin_optimized_workflow_2005304023580372993.json
 hash: 7c114c0eb03e6a14
 coverage: 0.965517
 learned_at: 2026-10-15 22:33:56

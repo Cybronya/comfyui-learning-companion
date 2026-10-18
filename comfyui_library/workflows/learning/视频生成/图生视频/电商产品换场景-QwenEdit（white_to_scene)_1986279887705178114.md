@@ -4,7 +4,7 @@ name: 电商产品换场景-QwenEdit（white_to_scene)_1986279887705178114.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986279887705178114.json
+file: comfyui_library/workflows/视频生成/图生视频/电商产品换场景-QwenEdit（white_to_scene)_1986279887705178114.json
 hash: a6512837615275a4
 coverage: 0.714286
 learned_at: 2026-10-15 22:32:54

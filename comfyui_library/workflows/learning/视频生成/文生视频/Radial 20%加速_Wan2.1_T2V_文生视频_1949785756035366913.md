@@ -4,7 +4,7 @@ name: Radial 20%加速_Wan2.1_T2V_文生视频_1949785756035366913.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949785756035366913.json
+file: comfyui_library/workflows/视频生成/文生视频/Radial 20%加速_Wan2.1_T2V_文生视频_1949785756035366913.json
 hash: b3f97c8f3922d423
 coverage: 0.8
 learned_at: 2026-10-15 22:43:33

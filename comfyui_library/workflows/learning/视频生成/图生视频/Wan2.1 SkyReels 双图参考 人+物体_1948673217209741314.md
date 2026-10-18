@@ -4,7 +4,7 @@ name: Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948673217209741314.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 SkyReels 双图参考 人+物体_1948673217209741314.json
 hash: 8af5207dfb6366b9
 coverage: 0.7
 learned_at: 2026-10-15 22:30:48

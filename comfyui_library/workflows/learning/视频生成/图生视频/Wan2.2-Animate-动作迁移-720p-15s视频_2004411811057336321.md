@@ -4,7 +4,7 @@ name: Wan2.2-Animate-动作迁移-720p-15s视频_2004411811057336321.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004411811057336321.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-动作迁移-720p-15s视频_2004411811057336321.json
 hash: 1873c505da3599e7
 coverage: 0.666667
 learned_at: 2026-10-15 22:33:54

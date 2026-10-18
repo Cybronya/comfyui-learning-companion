@@ -4,7 +4,7 @@ name: 🈚️Wan 2.2 Fun CN native 姿势控制_动作迁移_跳舞_195729219303
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957292193033678850.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️Wan 2.2 Fun CN native 姿势控制_动作迁移_跳舞_1957292193033678850.json
 hash: 414620aee2bd3821
 coverage: 0.45614
 learned_at: 2026-10-15 22:31:16

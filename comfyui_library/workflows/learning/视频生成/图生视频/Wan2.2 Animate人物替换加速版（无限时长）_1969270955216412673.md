@@ -4,7 +4,7 @@ name: Wan2.2 Animate人物替换加速版（无限时长）_1969270955216412673.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969270955216412673.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate人物替换加速版（无限时长）_1969270955216412673.json
 hash: 4580d99dc50da022
 coverage: 0.558824
 learned_at: 2026-10-15 22:31:48

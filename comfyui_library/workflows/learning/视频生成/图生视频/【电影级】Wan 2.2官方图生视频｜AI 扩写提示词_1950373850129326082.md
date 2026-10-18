@@ -4,7 +4,7 @@ name: 【电影级】Wan 2.2官方图生视频｜AI 扩写提示词_195037385012
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950373850129326082.json
+file: comfyui_library/workflows/视频生成/图生视频/【电影级】Wan 2.2官方图生视频｜AI 扩写提示词_1950373850129326082.json
 hash: 163518b407d6b62a
 coverage: 0.903226
 learned_at: 2026-10-15 22:30:54

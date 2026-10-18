@@ -4,7 +4,7 @@ name: LTX2.3 MSR-V2-BestFaceID多参考视频_2077979272010096641.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077979272010096641.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MSR-V2-BestFaceID多参考视频_2077979272010096641.json
 hash: 97477d2bd01134a9
 coverage: 0.923077
 learned_at: 2026-10-15 22:41:47

@@ -4,7 +4,7 @@ name: 【猫咪做饭-抖音爆款】wan2.1图生视频_1901126207503482882.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901126207503482882.json
+file: comfyui_library/workflows/视频生成/图生视频/【猫咪做饭-抖音爆款】wan2.1图生视频_1901126207503482882.json
 hash: e0ba0563023bdf1b
 coverage: 0.973684
 learned_at: 2026-10-15 22:29:23

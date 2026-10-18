@@ -4,7 +4,7 @@ name: Ltx2.3 图生视频时间分段剪辑 细化多镜头时间+逻辑控制Pr
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051822918727938049.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 图生视频时间分段剪辑 细化多镜头时间+逻辑控制PromptRelay+VBVR（KJ版_2051822918727938049.json
 hash: 7dcd14360f81ee71
 coverage: 0.8
 learned_at: 2026-10-15 22:37:23

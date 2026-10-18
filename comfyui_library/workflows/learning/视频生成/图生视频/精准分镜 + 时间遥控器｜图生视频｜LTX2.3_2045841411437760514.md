@@ -4,7 +4,7 @@ name: 精准分镜 + 时间遥控器｜图生视频｜LTX2.3_2045841411437760514
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045841411437760514.json
+file: comfyui_library/workflows/视频生成/图生视频/精准分镜 + 时间遥控器｜图生视频｜LTX2.3_2045841411437760514.json
 hash: e37c8d602d02a285
 coverage: 0.717949
 learned_at: 2026-10-15 22:36:52

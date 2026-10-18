@@ -4,7 +4,7 @@ name: Wan2.2手势舞（取材于T8）_1953073108568764418.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953073108568764418.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2手势舞（取材于T8）_1953073108568764418.json
 hash: 24d99e82220a3b20
 coverage: 0.830508
 learned_at: 2026-10-15 22:31:04

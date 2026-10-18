@@ -4,7 +4,7 @@ name: 全能视频S图生视频openai最新模型0.05元_次（支持横版竖�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998406614531080193.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S图生视频openai最新模型0.05元_次（支持横版竖版1080p）支持15s_1998406614531080193.json
 hash: 76ea0f67a5daa8b8
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:31

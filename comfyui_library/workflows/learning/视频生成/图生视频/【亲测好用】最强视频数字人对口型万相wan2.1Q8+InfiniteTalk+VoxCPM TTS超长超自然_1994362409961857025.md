@@ -4,7 +4,7 @@ name: 【亲测好用】最强视频数字人对口型万相wan2.1Q8+InfiniteTal
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994362409961857025.json
+file: comfyui_library/workflows/视频生成/图生视频/【亲测好用】最强视频数字人对口型万相wan2.1Q8+InfiniteTalk+VoxCPM TTS超长超自然_1994362409961857025.json
 hash: 5b0e8f5a47bdd2f2
 coverage: 0.972222
 learned_at: 2026-10-15 22:33:20

@@ -4,7 +4,7 @@ name: Wan2.2官方加速版GGUF Q8首尾帧V1_1952087976358694913.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952087976358694913.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2官方加速版GGUF Q8首尾帧V1_1952087976358694913.json
 hash: caf6b77a6c6f8240
 coverage: 0.833333
 learned_at: 2026-10-15 22:31:00

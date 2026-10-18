@@ -4,7 +4,7 @@ name: 一键生成超顶AI动漫视频！WAN2.2大模型太强了！_19511206606
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951120660623990785.json
+file: comfyui_library/workflows/视频生成/图生视频/一键生成超顶AI动漫视频！WAN2.2大模型太强了！_1951120660623990785.json
 hash: 58b7616d60f52619
 coverage: 0.681818
 learned_at: 2026-10-15 22:30:57

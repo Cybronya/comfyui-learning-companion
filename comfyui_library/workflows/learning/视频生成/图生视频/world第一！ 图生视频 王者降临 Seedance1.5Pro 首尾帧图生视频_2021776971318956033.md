@@ -4,7 +4,7 @@ name: world第一！ 图生视频 王者降临 Seedance1.5Pro 首尾帧图生视
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021776971318956033.json
+file: comfyui_library/workflows/视频生成/图生视频/world第一！ 图生视频 王者降临 Seedance1.5Pro 首尾帧图生视频_2021776971318956033.json
 hash: 0d6ff00b3471b880
 coverage: 0.8
 learned_at: 2026-10-15 22:35:09

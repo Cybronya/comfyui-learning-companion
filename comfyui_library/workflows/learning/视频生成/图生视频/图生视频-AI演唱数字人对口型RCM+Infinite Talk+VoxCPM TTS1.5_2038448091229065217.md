@@ -4,7 +4,7 @@ name: 图生视频-AI演唱数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_203
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038448091229065217.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-AI演唱数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_2038448091229065217.json
 hash: 75e0a28216e461ca
 coverage: 0.945946
 learned_at: 2026-10-15 22:36:02

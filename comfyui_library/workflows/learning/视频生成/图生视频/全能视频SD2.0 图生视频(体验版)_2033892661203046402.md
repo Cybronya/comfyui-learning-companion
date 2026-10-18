@@ -4,7 +4,7 @@ name: 全能视频SD2.0 图生视频(体验版)_2033892661203046402.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033892661203046402.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频SD2.0 图生视频(体验版)_2033892661203046402.json
 hash: dc1e93bc364682f2
 coverage: 1
 learned_at: 2026-10-15 22:35:42

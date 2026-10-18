@@ -4,7 +4,7 @@ name: 通义万相WAN2.2+千问QwenVL3-图片反推全自动 图生视频工作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982960242092834818.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相WAN2.2+千问QwenVL3-图片反推全自动 图生视频工作流_1982960242092834818.json
 hash: d961bdfdf63f16d8
 coverage: 0.804878
 learned_at: 2026-10-15 22:32:43

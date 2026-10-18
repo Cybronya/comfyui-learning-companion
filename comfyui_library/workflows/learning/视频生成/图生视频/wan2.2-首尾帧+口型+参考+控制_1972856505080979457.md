@@ -4,7 +4,7 @@ name: wan2.2-首尾帧+口型+参考+控制_1972856505080979457.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972856505080979457.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-首尾帧+口型+参考+控制_1972856505080979457.json
 hash: 2f80da15bd8a06dd
 coverage: 0.825397
 learned_at: 2026-10-15 22:32:01

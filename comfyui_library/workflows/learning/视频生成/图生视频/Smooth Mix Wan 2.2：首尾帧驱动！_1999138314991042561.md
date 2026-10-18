@@ -4,7 +4,7 @@ name: Smooth Mix Wan 2.2：首尾帧驱动！_1999138314991042561.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999138314991042561.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix Wan 2.2：首尾帧驱动！_1999138314991042561.json
 hash: c54805f755ef4dbd
 coverage: 0.911765
 learned_at: 2026-10-15 22:33:36

@@ -4,7 +4,7 @@ name: Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057297739595210753.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2电商产品旋转-万物360度旋转_2057297739595210753.json
 hash: dd29b86c02139779
 coverage: 0.923077
 learned_at: 2026-10-15 22:38:10

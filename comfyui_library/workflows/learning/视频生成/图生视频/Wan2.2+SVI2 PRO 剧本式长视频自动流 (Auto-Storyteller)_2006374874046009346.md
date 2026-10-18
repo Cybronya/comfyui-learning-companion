@@ -4,7 +4,7 @@ name: Wan2.2+SVI2 PRO 剧本式长视频自动流 (Auto-Storyteller)_20063748740
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006374874046009346.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+SVI2 PRO 剧本式长视频自动流 (Auto-Storyteller)_2006374874046009346.json
 hash: 982ce7585a85a4e4
 coverage: 0.648352
 learned_at: 2026-10-15 22:34:01

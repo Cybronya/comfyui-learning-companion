@@ -4,7 +4,7 @@ name: 通义万相WAN2.2_KJ加速版_高噪声lora在线本地通用_补帧_1952
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952709897437777921.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相WAN2.2_KJ加速版_高噪声lora在线本地通用_补帧_1952709897437777921.json
 hash: 6bee3a1ef578f8a2
 coverage: 0.966667
 learned_at: 2026-10-15 22:31:03

@@ -4,7 +4,7 @@ name: 通义官方最新版wan2.1首尾帧V2版本（14B参数高清版）_19130
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913039877968199682.json
+file: comfyui_library/workflows/视频生成/图生视频/通义官方最新版wan2.1首尾帧V2版本（14B参数高清版）_1913039877968199682.json
 hash: 4cecf3c3c641ae45
 coverage: 0.861111
 learned_at: 2026-10-15 22:29:33

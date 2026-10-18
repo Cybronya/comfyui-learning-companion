@@ -4,7 +4,7 @@ name: wan2.2首中尾帧人物一致自用流程_2046793067730051073.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046793067730051073.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首中尾帧人物一致自用流程_2046793067730051073.json
 hash: ad1821f66f46ef9c
 coverage: 0.923077
 learned_at: 2026-10-15 22:37:00

@@ -4,7 +4,7 @@ name: Wan-Radial sage attention-EasyCache-加速_1947268889715560450.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947268889715560450.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan-Radial sage attention-EasyCache-加速_1947268889715560450.json
 hash: 3d0b82301e1bb1fc
 coverage: 0.914286
 learned_at: 2026-10-15 22:30:45

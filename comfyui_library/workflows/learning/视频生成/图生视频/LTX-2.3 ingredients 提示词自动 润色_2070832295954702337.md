@@ -4,7 +4,7 @@ name: LTX-2.3 ingredients 提示词自动 润色_2070832295954702337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070832295954702337.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 ingredients 提示词自动 润色_2070832295954702337.json
 hash: 506400acf46643d9
 coverage: 0.840909
 learned_at: 2026-10-15 22:40:42

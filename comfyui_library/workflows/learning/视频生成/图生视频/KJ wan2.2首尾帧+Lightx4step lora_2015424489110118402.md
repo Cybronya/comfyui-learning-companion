@@ -4,7 +4,7 @@ name: KJ wan2.2首尾帧+Lightx4step lora_2015424489110118402.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015424489110118402.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ wan2.2首尾帧+Lightx4step lora_2015424489110118402.json
 hash: 5a3cdbb4c5449ea7
 coverage: 1
 learned_at: 2026-10-15 22:34:38

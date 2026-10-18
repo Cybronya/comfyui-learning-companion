@@ -4,7 +4,7 @@ name: DreamID Omni 单人音画参考生视频 qwen3.5提示词强化 Omini_2036
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036330038517305345.json
+file: comfyui_library/workflows/视频生成/图生视频/DreamID Omni 单人音画参考生视频 qwen3.5提示词强化 Omini_2036330038517305345.json
 hash: 041a4e8197f5a766
 coverage: 0.823529
 learned_at: 2026-10-15 22:35:51

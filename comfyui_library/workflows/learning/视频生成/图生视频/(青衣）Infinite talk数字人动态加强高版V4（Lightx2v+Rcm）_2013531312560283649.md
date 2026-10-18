@@ -4,7 +4,7 @@ name: (青衣）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_201
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013531312560283649.json
+file: comfyui_library/workflows/视频生成/图生视频/(青衣）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2013531312560283649.json
 hash: 2801d999e7991292
 coverage: 0.75
 learned_at: 2026-10-15 22:34:31

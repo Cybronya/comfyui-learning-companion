@@ -4,7 +4,7 @@ name: 【多人】SCAIL Video Multi-Character Motion Transfer V1_200233433801023
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2002334338010234881.json
+file: comfyui_library/workflows/视频生成/图生视频/【多人】SCAIL Video Multi-Character Motion Transfer V1_2002334338010234881.json
 hash: 1ee340a44c4d7f3d
 coverage: 0.758065
 learned_at: 2026-10-15 22:33:48

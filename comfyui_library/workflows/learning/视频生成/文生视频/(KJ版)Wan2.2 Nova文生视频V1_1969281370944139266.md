@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 Nova文生视频V1_1969281370944139266.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969281370944139266.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2 Nova文生视频V1_1969281370944139266.json
 hash: 695dfc590dd4413f
 coverage: 0.853659
 learned_at: 2026-10-15 22:43:46

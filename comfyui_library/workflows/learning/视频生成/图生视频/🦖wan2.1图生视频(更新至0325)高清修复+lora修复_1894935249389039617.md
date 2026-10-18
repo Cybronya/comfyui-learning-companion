@@ -4,7 +4,7 @@ name: 🦖wan2.1图生视频(更新至0325)高清修复+lora修复_1894935249389
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894935249389039617.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖wan2.1图生视频(更新至0325)高清修复+lora修复_1894935249389039617.json
 hash: 752af6e2508d0791
 coverage: 0.869565
 learned_at: 2026-10-15 22:29:16

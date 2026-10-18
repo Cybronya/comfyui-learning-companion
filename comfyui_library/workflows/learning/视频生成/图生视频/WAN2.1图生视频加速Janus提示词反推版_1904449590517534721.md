@@ -4,7 +4,7 @@ name: WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1904449590517534721.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频加速Janus提示词反推版_1904449590517534721.json
 hash: 49b0e769557c38e2
 coverage: 0.944444
 learned_at: 2026-10-15 22:29:25

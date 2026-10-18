@@ -4,7 +4,7 @@ name: Wan Video InfiniteTalk  双人对话_1988149592183234562.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988149592183234562.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Video InfiniteTalk  双人对话_1988149592183234562.json
 hash: 8caeddc37fcfab60
 coverage: 0.931034
 learned_at: 2026-10-15 22:33:01

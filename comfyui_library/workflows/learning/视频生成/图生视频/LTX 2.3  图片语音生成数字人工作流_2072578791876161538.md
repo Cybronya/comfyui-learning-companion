@@ -4,7 +4,7 @@ name: LTX 2.3  图片语音生成数字人工作流_2072578791876161538.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072578791876161538.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3  图片语音生成数字人工作流_2072578791876161538.json
 hash: 4217196bfc89a4d4
 coverage: 0.482456
 learned_at: 2026-10-15 22:40:56

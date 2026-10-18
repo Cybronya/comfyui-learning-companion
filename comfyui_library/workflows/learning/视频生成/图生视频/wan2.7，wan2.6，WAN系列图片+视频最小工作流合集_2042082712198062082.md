@@ -4,7 +4,7 @@ name: wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_204208271219
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042082712198062082.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.7，wan2.6，WAN系列图片+视频最小工作流合集_2042082712198062082.json
 hash: c6c9aebd77ad8663
 coverage: 0.970588
 learned_at: 2026-10-15 22:36:24

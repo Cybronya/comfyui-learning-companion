@@ -4,7 +4,7 @@ name: Wan2.7+视频编辑 换装换脸 人物角色替换 真实自然_206164589
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061645895619407873.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.7+视频编辑 换装换脸 人物角色替换 真实自然_2061645895619407873.json
 hash: b4f971126ebead1e
 coverage: 0.666667
 learned_at: 2026-10-15 22:38:55

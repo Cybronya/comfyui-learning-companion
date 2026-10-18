@@ -4,7 +4,7 @@ name: wan-2.2-人物替换-V5_2067889293686820865.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067889293686820865.json
+file: comfyui_library/workflows/视频生成/图生视频/wan-2.2-人物替换-V5_2067889293686820865.json
 hash: e97a14ad3f935e45
 coverage: 0.527778
 learned_at: 2026-10-15 22:40:14

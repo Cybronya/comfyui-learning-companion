@@ -4,7 +4,7 @@ name: Wan2.5  超自然动作迁移，视频换人_2034527249550020609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034527249550020609.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.5  超自然动作迁移，视频换人_2034527249550020609.json
 hash: fd592469b85fc011
 coverage: 0.532609
 learned_at: 2026-10-15 22:35:45

@@ -4,7 +4,7 @@ name: Wan2.2 首尾帧 Mege-AIO-V7（简约，全面，极速）_197810437626494
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978104376264941569.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 首尾帧 Mege-AIO-V7（简约，全面，极速）_1978104376264941569.json
 hash: 9accf70663f95ec8
 coverage: 0.633333
 learned_at: 2026-10-15 22:32:17

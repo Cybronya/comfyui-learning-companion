@@ -4,7 +4,7 @@ name: wan2.2视频生成+视频反推配音_1964312846312067074.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964312846312067074.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2视频生成+视频反推配音_1964312846312067074.json
 hash: 0a6e8f07302895fd
 coverage: 0.830508
 learned_at: 2026-10-15 22:31:34

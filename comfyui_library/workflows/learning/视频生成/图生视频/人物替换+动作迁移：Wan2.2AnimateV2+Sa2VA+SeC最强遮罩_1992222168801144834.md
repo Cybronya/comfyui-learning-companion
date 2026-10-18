@@ -4,7 +4,7 @@ name: 人物替换+动作迁移：Wan2.2AnimateV2+Sa2VA+SeC最强遮罩_19922221
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992222168801144834.json
+file: comfyui_library/workflows/视频生成/图生视频/人物替换+动作迁移：Wan2.2AnimateV2+Sa2VA+SeC最强遮罩_1992222168801144834.json
 hash: aff76dc4d484da0c
 coverage: 0.406452
 learned_at: 2026-10-15 22:33:15

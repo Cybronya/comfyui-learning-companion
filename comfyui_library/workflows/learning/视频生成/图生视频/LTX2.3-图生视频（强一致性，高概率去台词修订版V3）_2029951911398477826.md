@@ -4,7 +4,7 @@ name: LTX2.3-图生视频（强一致性，高概率去台词修订版V3）_2029
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029951911398477826.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频（强一致性，高概率去台词修订版V3）_2029951911398477826.json
 hash: 5b7e3b518932ca47
 coverage: 0.944444
 learned_at: 2026-10-15 22:35:24

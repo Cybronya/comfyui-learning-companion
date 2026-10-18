@@ -4,7 +4,7 @@ name: Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057114333976555522.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-PromptRelay-单图参考精准控制_2057114333976555522.json
 hash: e6dbb99451f56d6d
 coverage: 0.92
 learned_at: 2026-10-15 22:38:08

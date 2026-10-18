@@ -4,7 +4,7 @@ name: sdk2.2Animate：角色、动作、表情的三位一体！全维角色重�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015707307723722753.json
+file: comfyui_library/workflows/视频生成/图生视频/sdk2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2015707307723722753.json
 hash: a8ceb0ae982ce53a
 coverage: 0.678161
 learned_at: 2026-10-15 22:34:40

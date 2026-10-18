@@ -4,7 +4,7 @@ name: EasyCache+LightX2v+AniWan超高动态图生视频加速版V1_1946230889756
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946230889756913665.json
+file: comfyui_library/workflows/视频生成/图生视频/EasyCache+LightX2v+AniWan超高动态图生视频加速版V1_1946230889756913665.json
 hash: 1d72d89067b6ab60
 coverage: 0.857143
 learned_at: 2026-10-15 22:30:44

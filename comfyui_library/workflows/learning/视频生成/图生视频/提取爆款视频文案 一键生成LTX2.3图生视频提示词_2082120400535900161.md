@@ -4,7 +4,7 @@ name: 提取爆款视频文案 一键生成LTX2.3图生视频提示词_208212040
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082120400535900161.json
+file: comfyui_library/workflows/视频生成/图生视频/提取爆款视频文案 一键生成LTX2.3图生视频提示词_2082120400535900161.json
 hash: e8528b4d11288276
 coverage: 0.769231
 learned_at: 2026-10-15 22:42:27

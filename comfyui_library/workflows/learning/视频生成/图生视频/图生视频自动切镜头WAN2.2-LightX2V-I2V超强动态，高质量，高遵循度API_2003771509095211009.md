@@ -4,7 +4,7 @@ name: 图生视频自动切镜头WAN2.2-LightX2V-I2V超强动态，高质量，�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003771509095211009.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频自动切镜头WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度API_2003771509095211009.json
 hash: cd693aa5c3de2ac6
 coverage: 0.444444
 learned_at: 2026-10-15 22:33:52

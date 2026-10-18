@@ -4,7 +4,7 @@ name: Remix_i2v_v2.1图生视频工作流_2067237434458468353.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067237434458468353.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix_i2v_v2.1图生视频工作流_2067237434458468353.json
 hash: 7ce10bbaef9a6c93
 coverage: 1
 learned_at: 2026-10-15 22:39:58

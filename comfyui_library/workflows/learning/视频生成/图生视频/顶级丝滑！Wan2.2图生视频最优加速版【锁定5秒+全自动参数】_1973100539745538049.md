@@ -4,7 +4,7 @@ name: 顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973100539745538049.json
+file: comfyui_library/workflows/视频生成/图生视频/顶级丝滑！Wan2.2图生视频最优加速版【锁定5秒+全自动参数】_1973100539745538049.json
 hash: b2e16f0c56af1f01
 coverage: 0.5
 learned_at: 2026-10-15 22:32:02

@@ -4,7 +4,7 @@ name: 稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-St
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1902149239143555073.json
+file: comfyui_library/workflows/视频生成/图生视频/稳定拼接版 WAN2.1图生视频指定角色双人KISS接吻工作流-StarAI_1902149239143555073.json
 hash: 1bc52e2537039969
 coverage: 0.969697
 learned_at: 2026-10-15 22:29:24

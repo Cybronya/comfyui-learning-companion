@@ -4,7 +4,7 @@ name: 【尺素】LTX2.3格斗工作流_2051244321340436482.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051244321340436482.json
+file: comfyui_library/workflows/视频生成/图生视频/【尺素】LTX2.3格斗工作流_2051244321340436482.json
 hash: b2a694018171350c
 coverage: 0.645161
 learned_at: 2026-10-15 22:37:21

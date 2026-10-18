@@ -4,7 +4,7 @@ name: MAGREF_wrapper_r2v-1Image-2Image-3Image-Y-Workflow_1936253127727173633.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936253127727173633.json
+file: comfyui_library/workflows/视频生成/图生视频/MAGREF_wrapper_r2v-1Image-2Image-3Image-Y-Workflow_1936253127727173633.json
 hash: 8ac50cfea20c475c
 coverage: 0.921875
 learned_at: 2026-10-15 22:30:25

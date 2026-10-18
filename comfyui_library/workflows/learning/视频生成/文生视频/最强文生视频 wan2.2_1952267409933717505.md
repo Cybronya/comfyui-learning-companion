@@ -4,7 +4,7 @@ name: 最强文生视频 wan2.2_1952267409933717505.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1952267409933717505.json
+file: comfyui_library/workflows/视频生成/文生视频/最强文生视频 wan2.2_1952267409933717505.json
 hash: 0ff9490b772b3c90
 coverage: 0.913043
 learned_at: 2026-10-15 22:43:38

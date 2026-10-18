@@ -4,7 +4,7 @@ name: 【希区柯克运镜】wan2.1图生视频（全自动）_1931298489089896
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1931298489089896450.json
+file: comfyui_library/workflows/视频生成/图生视频/【希区柯克运镜】wan2.1图生视频（全自动）_1931298489089896450.json
 hash: 2e485a71b5ec7e50
 coverage: 0.55
 learned_at: 2026-10-15 22:30:09

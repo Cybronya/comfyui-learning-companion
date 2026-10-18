@@ -4,7 +4,7 @@ name: 视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003413399671377922.json
+file: comfyui_library/workflows/视频生成/图生视频/视频二创角色替换Wan2.2 Animate KJ_2003413399671377922.json
 hash: 8bd27a6e70003d3f
 coverage: 0.371795
 learned_at: 2026-10-15 22:33:51

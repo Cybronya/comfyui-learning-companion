@@ -4,7 +4,7 @@ name: Ltx2.3+龙猫克隆+图片输入文案自动化配音生成数字人视频
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049792632808853506.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3+龙猫克隆+图片输入文案自动化配音生成数字人视频_2049792632808853506.json
 hash: 9b47e21ff1a33670
 coverage: 0.901639
 learned_at: 2026-10-15 22:37:16

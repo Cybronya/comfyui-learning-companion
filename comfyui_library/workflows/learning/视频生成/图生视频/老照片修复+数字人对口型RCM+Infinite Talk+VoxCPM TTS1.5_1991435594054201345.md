@@ -4,7 +4,7 @@ name: 老照片修复+数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_19914355
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991435594054201345.json
+file: comfyui_library/workflows/视频生成/图生视频/老照片修复+数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_1991435594054201345.json
 hash: b0d87cfb6747ebd2
 coverage: 0.981481
 learned_at: 2026-10-15 22:33:13

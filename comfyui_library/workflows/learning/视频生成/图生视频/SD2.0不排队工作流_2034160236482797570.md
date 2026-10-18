@@ -4,7 +4,7 @@ name: SD2.0不排队工作流_2034160236482797570.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034160236482797570.json
+file: comfyui_library/workflows/视频生成/图生视频/SD2.0不排队工作流_2034160236482797570.json
 hash: a5b9a4a06125319c
 coverage: 1
 learned_at: 2026-10-15 22:35:43

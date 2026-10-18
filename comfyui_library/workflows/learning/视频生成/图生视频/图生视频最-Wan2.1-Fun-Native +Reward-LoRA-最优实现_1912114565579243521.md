@@ -4,7 +4,7 @@ name: 图生视频最-Wan2.1-Fun-Native +Reward-LoRA-最优实现_19121145655792
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912114565579243521.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频最-Wan2.1-Fun-Native +Reward-LoRA-最优实现_1912114565579243521.json
 hash: 805ea2d05319b7bc
 coverage: 1
 learned_at: 2026-10-15 22:29:32

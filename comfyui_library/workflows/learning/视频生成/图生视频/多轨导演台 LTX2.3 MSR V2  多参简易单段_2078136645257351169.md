@@ -4,7 +4,7 @@ name: 多轨导演台 LTX2.3 MSR V2  多参简易单段_2078136645257351169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078136645257351169.json
+file: comfyui_library/workflows/视频生成/图生视频/多轨导演台 LTX2.3 MSR V2  多参简易单段_2078136645257351169.json
 hash: 55f123c016480d33
 coverage: 0.853333
 learned_at: 2026-10-15 22:41:49

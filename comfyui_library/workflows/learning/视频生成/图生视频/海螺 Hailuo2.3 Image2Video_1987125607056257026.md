@@ -4,7 +4,7 @@ name: 海螺 Hailuo2.3 Image2Video_1987125607056257026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987125607056257026.json
+file: comfyui_library/workflows/视频生成/图生视频/海螺 Hailuo2.3 Image2Video_1987125607056257026.json
 hash: e3e0e07d1c0e55a9
 coverage: 1
 learned_at: 2026-10-15 22:32:57

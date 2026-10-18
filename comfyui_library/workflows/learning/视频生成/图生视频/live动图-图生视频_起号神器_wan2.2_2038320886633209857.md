@@ -4,7 +4,7 @@ name: live动图-图生视频_起号神器_wan2.2_2038320886633209857.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038320886633209857.json
+file: comfyui_library/workflows/视频生成/图生视频/live动图-图生视频_起号神器_wan2.2_2038320886633209857.json
 hash: e6209a0a26da06f3
 coverage: 1
 learned_at: 2026-10-15 22:36:02

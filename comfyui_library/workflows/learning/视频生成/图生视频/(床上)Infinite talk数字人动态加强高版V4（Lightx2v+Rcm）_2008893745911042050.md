@@ -4,7 +4,7 @@ name: (床上)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_20088
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008893745911042050.json
+file: comfyui_library/workflows/视频生成/图生视频/(床上)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2008893745911042050.json
 hash: bad0e3343cfb5ec9
 coverage: 0.75
 learned_at: 2026-10-15 22:34:10

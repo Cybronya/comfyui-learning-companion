@@ -4,7 +4,7 @@ name: Wan2.2图生视频、自动生成视频脚本_2041400574976991233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041400574976991233.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频、自动生成视频脚本_2041400574976991233.json
 hash: 60ce90ae97fdfb5e
 coverage: 0.789474
 learned_at: 2026-10-15 22:36:19

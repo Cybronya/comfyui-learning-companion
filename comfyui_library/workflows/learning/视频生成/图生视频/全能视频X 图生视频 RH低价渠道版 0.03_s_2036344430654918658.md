@@ -4,7 +4,7 @@ name: 全能视频X 图生视频 RH低价渠道版 0.03_s_2036344430654918658.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036344430654918658.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频X 图生视频 RH低价渠道版 0.03_s_2036344430654918658.json
 hash: 5d931826f33b9260
 coverage: 1
 learned_at: 2026-10-15 22:35:52

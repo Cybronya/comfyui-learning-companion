@@ -4,7 +4,7 @@ name: LTX2.3-图生对口型数字人-自动扩写-强化口型_2057753722972889
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057753722972889090.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生对口型数字人-自动扩写-强化口型_2057753722972889090.json
 hash: 511afd55c709b507
 coverage: 0.982759
 learned_at: 2026-10-15 22:38:15

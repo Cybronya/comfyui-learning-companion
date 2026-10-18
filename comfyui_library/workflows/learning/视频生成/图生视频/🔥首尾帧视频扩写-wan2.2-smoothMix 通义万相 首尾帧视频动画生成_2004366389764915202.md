@@ -4,7 +4,7 @@ name: 🔥首尾帧视频扩写-wan2.2-smoothMix 通义万相 首尾帧视频动
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004366389764915202.json
+file: comfyui_library/workflows/视频生成/图生视频/🔥首尾帧视频扩写-wan2.2-smoothMix 通义万相 首尾帧视频动画生成_2004366389764915202.json
 hash: 5d65cf533d10758a
 coverage: 0.647887
 learned_at: 2026-10-15 22:33:54

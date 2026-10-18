@@ -4,7 +4,7 @@ name: WAN2.2跨镜头切换_1963945783164850177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963945783164850177.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2跨镜头切换_1963945783164850177.json
 hash: 5e2b92e2acfb8b27
 coverage: 0.840909
 learned_at: 2026-10-15 22:31:34

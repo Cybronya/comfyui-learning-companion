@@ -4,7 +4,7 @@ name: Wan 2.2 文本到视频广告_1950092714999201793.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950092714999201793.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan 2.2 文本到视频广告_1950092714999201793.json
 hash: b70a9e41eeab12c5
 coverage: 0.552239
 learned_at: 2026-10-15 22:43:34

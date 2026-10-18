@@ -4,7 +4,7 @@ name: Ltx2.3 Licon-MSR全能参考生视频简雨版_2067917092258672641.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067917092258672641.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Licon-MSR全能参考生视频简雨版_2067917092258672641.json
 hash: 2237410c0d8e643d
 coverage: 0.893617
 learned_at: 2026-10-15 22:40:14

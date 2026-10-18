@@ -4,7 +4,7 @@ name: wan2.1-fusionx系列文生视频（加lora版）_1938193111518744578.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1938193111518744578.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1-fusionx系列文生视频（加lora版）_1938193111518744578.json
 hash: 25fa6dcc55248c1a
 coverage: 0.954545
 learned_at: 2026-10-15 22:43:30

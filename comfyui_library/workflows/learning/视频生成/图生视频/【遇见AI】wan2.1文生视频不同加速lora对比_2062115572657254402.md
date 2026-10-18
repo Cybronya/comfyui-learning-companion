@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1文生视频不同加速lora对比_2062115572657254402
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062115572657254402.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1文生视频不同加速lora对比_2062115572657254402.json
 hash: 011347df4537c551
 coverage: 0.956522
 learned_at: 2026-10-15 22:39:00

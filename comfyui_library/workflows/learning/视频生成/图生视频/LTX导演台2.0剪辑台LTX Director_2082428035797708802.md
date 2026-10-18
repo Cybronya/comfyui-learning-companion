@@ -4,7 +4,7 @@ name: LTX导演台2.0剪辑台LTX Director_2082428035797708802.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082428035797708802.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX导演台2.0剪辑台LTX Director_2082428035797708802.json
 hash: 5f411940bd4dc09d
 coverage: 0.969697
 learned_at: 2026-10-15 22:42:31

@@ -4,7 +4,7 @@ name: Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980666931474776066.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_ESRGAN超分_Lightx2v加速+提示词优化_1980666931474776066.json
 hash: 6c5b9322a8cd5cae
 coverage: 0.813953
 learned_at: 2026-10-15 22:32:32

@@ -4,7 +4,7 @@ name: LTX2.3 人物角色丝滑转场 首尾帧+转场优化版！Plus版！_208
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081282783539982338.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 人物角色丝滑转场 首尾帧+转场优化版！Plus版！_2081282783539982338.json
 hash: 7277783f6315e179
 coverage: 0.639535
 learned_at: 2026-10-15 22:42:21

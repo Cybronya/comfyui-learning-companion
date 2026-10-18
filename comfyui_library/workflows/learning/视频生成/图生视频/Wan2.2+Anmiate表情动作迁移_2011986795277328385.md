@@ -4,7 +4,7 @@ name: Wan2.2+Anmiate表情动作迁移_2011986795277328385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011986795277328385.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Anmiate表情动作迁移_2011986795277328385.json
 hash: f92d8fa45fafc7aa
 coverage: 0.910256
 learned_at: 2026-10-15 22:34:25

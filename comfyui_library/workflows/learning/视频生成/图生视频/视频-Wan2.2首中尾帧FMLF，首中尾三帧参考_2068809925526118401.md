@@ -4,7 +4,7 @@ name: 视频-Wan2.2首中尾帧FMLF，首中尾三帧参考_2068809925526118401.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068809925526118401.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-Wan2.2首中尾帧FMLF，首中尾三帧参考_2068809925526118401.json
 hash: 54638f79d5dd3c95
 coverage: 0.432099
 learned_at: 2026-10-15 22:40:22

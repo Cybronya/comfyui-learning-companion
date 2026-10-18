@@ -4,7 +4,7 @@ name: YJ_APP_WanAnimate_动作迁移v2.5_2034884568989310978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034884568989310978.json
+file: comfyui_library/workflows/视频生成/图生视频/YJ_APP_WanAnimate_动作迁移v2.5_2034884568989310978.json
 hash: 4748e6e1725e3be1
 coverage: 0.387755
 learned_at: 2026-10-15 22:35:46

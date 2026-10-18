@@ -4,7 +4,7 @@ name: 爆肝4W积分测试稳定版本WAN2.1_1913569021675958274.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913569021675958274.json
+file: comfyui_library/workflows/视频生成/图生视频/爆肝4W积分测试稳定版本WAN2.1_1913569021675958274.json
 hash: 622d84ace30983f2
 coverage: 0.84
 learned_at: 2026-10-15 22:29:34

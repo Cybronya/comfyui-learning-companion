@@ -4,7 +4,7 @@ name: 多图参考-4宫格-LTX2.3图生视频音画同步_2059942996799479809.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059942996799479809.json
+file: comfyui_library/workflows/视频生成/图生视频/多图参考-4宫格-LTX2.3图生视频音画同步_2059942996799479809.json
 hash: ec9571f799bb15e1
 coverage: 0.883333
 learned_at: 2026-10-15 22:38:44

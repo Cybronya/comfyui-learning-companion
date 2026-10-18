@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移（可调整汝窑参数）_2030587689145212930.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030587689145212930.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移（可调整汝窑参数）_2030587689145212930.json
 hash: c9b4090d74121254
 coverage: 0.493671
 learned_at: 2026-10-15 22:35:27

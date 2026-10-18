@@ -4,7 +4,7 @@ name: 【AI小兵哥】Wan2.2_S2V-语音生成超长视频工作流_199542459329
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995424593299091458.json
+file: comfyui_library/workflows/视频生成/图生视频/【AI小兵哥】Wan2.2_S2V-语音生成超长视频工作流_1995424593299091458.json
 hash: 778dc28cf8310295
 coverage: 0.785714
 learned_at: 2026-10-15 22:33:23

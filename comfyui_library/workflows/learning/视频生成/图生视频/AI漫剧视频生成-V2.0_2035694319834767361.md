@@ -4,7 +4,7 @@ name: AI漫剧视频生成-V2.0_2035694319834767361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035694319834767361.json
+file: comfyui_library/workflows/视频生成/图生视频/AI漫剧视频生成-V2.0_2035694319834767361.json
 hash: 5eb50b2685a0db69
 coverage: 0.785714
 learned_at: 2026-10-15 22:35:50

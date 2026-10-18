@@ -4,7 +4,7 @@ name: wan2.2首尾帧视频生成VBVR符合视频逻辑，remixv3，_20414110036
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041411003677679618.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首尾帧视频生成VBVR符合视频逻辑，remixv3，_2041411003677679618.json
 hash: ea652fbcdf2589d8
 coverage: 1
 learned_at: 2026-10-15 22:36:19

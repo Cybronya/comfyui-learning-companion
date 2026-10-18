@@ -4,7 +4,7 @@ name: LTX2.3-视频局部重绘_2036802494948450306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036802494948450306.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-视频局部重绘_2036802494948450306.json
 hash: aa7a985dd8fe4867
 coverage: 0.890909
 learned_at: 2026-10-15 22:35:53

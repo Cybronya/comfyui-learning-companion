@@ -4,7 +4,7 @@ name: AI漫剧-四宫格-LTX-2.3 图生视频（全面优化版）_2041061447786
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041061447786045441.json
+file: comfyui_library/workflows/视频生成/图生视频/AI漫剧-四宫格-LTX-2.3 图生视频（全面优化版）_2041061447786045441.json
 hash: 1e26b8050fe3f548
 coverage: 0.639175
 learned_at: 2026-10-15 22:36:17

@@ -4,7 +4,7 @@ name: LTX2.3 三段采样+去字幕_2040113981662175234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040113981662175234.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 三段采样+去字幕_2040113981662175234.json
 hash: f910f70b73853b09
 coverage: 0.896552
 learned_at: 2026-10-15 22:36:14

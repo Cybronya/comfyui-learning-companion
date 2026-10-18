@@ -4,7 +4,7 @@ name: wan2.2-14B-rapid 文生视频-最新加速模型_1950745634997473282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950745634997473282.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2-14B-rapid 文生视频-最新加速模型_1950745634997473282.json
 hash: 8fc75ad8a39598d8
 coverage: 0.928571
 learned_at: 2026-10-15 22:43:36

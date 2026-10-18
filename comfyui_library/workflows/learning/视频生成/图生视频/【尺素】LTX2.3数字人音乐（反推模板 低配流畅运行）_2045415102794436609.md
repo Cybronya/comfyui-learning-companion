@@ -4,7 +4,7 @@ name: 【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045415102794436609.json
+file: comfyui_library/workflows/视频生成/图生视频/【尺素】LTX2.3数字人音乐（反推模板 低配流畅运行）_2045415102794436609.json
 hash: 95d6fc9cf31edc3b
 coverage: 0.627273
 learned_at: 2026-10-15 22:36:47

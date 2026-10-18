@@ -4,7 +4,7 @@ name: wan2.2 图生视频 (加速版) 女孩拥抱_1950720072086147074.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950720072086147074.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 图生视频 (加速版) 女孩拥抱_1950720072086147074.json
 hash: 7253d69702ce3ff2
 coverage: 1
 learned_at: 2026-10-15 22:30:56

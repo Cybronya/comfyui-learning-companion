@@ -4,7 +4,7 @@ name: LTX2.3 Edit Anything视频编辑_2053463786572529666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053463786572529666.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Edit Anything视频编辑_2053463786572529666.json
 hash: d39399dad6dfd4e0
 coverage: 1
 learned_at: 2026-10-15 22:37:39

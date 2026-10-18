@@ -4,7 +4,7 @@ name: SmoothMix2.0-角色设计动态展示-首尾帧15s长视频_20277261626669
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027726162666987522.json
+file: comfyui_library/workflows/视频生成/图生视频/SmoothMix2.0-角色设计动态展示-首尾帧15s长视频_2027726162666987522.json
 hash: 6be5ce0f6de0340e
 coverage: 0.929577
 learned_at: 2026-10-15 22:35:18

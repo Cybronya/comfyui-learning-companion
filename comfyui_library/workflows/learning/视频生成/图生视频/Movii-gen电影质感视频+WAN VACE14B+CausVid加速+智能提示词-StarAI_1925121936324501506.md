@@ -4,7 +4,7 @@ name: Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-Star
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1925121936324501506.json
+file: comfyui_library/workflows/视频生成/图生视频/Movii-gen电影质感视频+WAN VACE14B+CausVid加速+智能提示词-StarAI_1925121936324501506.json
 hash: 79f4376773c894a8
 coverage: 0.756757
 learned_at: 2026-10-15 22:29:51

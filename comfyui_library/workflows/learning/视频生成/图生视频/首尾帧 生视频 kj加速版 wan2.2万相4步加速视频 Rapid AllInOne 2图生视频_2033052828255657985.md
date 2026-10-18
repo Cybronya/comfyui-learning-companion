@@ -4,7 +4,7 @@ name: 首尾帧 生视频 kj加速版 wan2.2万相4步加速视频 Rapid AllInOn
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033052828255657985.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧 生视频 kj加速版 wan2.2万相4步加速视频 Rapid AllInOne 2图生视频_2033052828255657985.json
 hash: 28aae7b830ba687a
 coverage: 0.939394
 learned_at: 2026-10-15 22:35:38

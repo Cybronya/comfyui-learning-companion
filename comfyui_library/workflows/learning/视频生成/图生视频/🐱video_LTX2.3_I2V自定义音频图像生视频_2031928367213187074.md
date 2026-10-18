@@ -4,7 +4,7 @@ name: 🐱video_LTX2.3_I2V自定义音频图像生视频_2031928367213187074.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031928367213187074.json
+file: comfyui_library/workflows/视频生成/图生视频/🐱video_LTX2.3_I2V自定义音频图像生视频_2031928367213187074.json
 hash: 69036d938f698bd2
 coverage: 0.877193
 learned_at: 2026-10-15 22:35:33

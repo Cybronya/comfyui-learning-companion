@@ -4,7 +4,7 @@ name: LTX2.3首尾帧+丝滑转场! Plus版!_2042051563090354178.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042051563090354178.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧+丝滑转场! Plus版!_2042051563090354178.json
 hash: 168594ed21acee39
 coverage: 0.647727
 learned_at: 2026-10-15 22:36:23

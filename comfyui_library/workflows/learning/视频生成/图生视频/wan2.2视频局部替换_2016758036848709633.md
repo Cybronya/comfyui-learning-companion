@@ -4,7 +4,7 @@ name: wan2.2视频局部替换_2016758036848709633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016758036848709633.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2视频局部替换_2016758036848709633.json
 hash: e616a4844476ffb3
 coverage: 0.698795
 learned_at: 2026-10-15 22:34:43

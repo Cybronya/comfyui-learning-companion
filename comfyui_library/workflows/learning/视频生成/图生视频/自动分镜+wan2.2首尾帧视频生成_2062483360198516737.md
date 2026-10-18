@@ -4,7 +4,7 @@ name: 自动分镜+wan2.2首尾帧视频生成_2062483360198516737.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062483360198516737.json
+file: comfyui_library/workflows/视频生成/图生视频/自动分镜+wan2.2首尾帧视频生成_2062483360198516737.json
 hash: 2de8d2c8ae1c04ba
 coverage: 0.77
 learned_at: 2026-10-15 22:39:04

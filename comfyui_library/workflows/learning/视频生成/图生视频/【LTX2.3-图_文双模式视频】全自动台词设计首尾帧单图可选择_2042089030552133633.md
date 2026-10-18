@@ -4,7 +4,7 @@ name: 【LTX2.3-图_文双模式视频】全自动台词设计首尾帧单图可
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042089030552133633.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX2.3-图_文双模式视频】全自动台词设计首尾帧单图可选择_2042089030552133633.json
 hash: 70bc6eebb037d71b
 coverage: 0.747664
 learned_at: 2026-10-15 22:36:24

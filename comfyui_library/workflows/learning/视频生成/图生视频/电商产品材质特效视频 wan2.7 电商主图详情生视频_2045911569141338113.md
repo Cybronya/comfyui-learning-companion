@@ -4,7 +4,7 @@ name: 电商产品材质特效视频 wan2.7 电商主图详情生视频_20459115
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045911569141338113.json
+file: comfyui_library/workflows/视频生成/图生视频/电商产品材质特效视频 wan2.7 电商主图详情生视频_2045911569141338113.json
 hash: 0abe70579cdabd5c
 coverage: 1
 learned_at: 2026-10-15 22:36:53

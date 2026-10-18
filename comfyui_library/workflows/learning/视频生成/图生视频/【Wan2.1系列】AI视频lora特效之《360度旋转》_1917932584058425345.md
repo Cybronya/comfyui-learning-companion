@@ -4,7 +4,7 @@ name: 【Wan2.1系列】AI视频lora特效之《360度旋转》_1917932584058425
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917932584058425345.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《360度旋转》_1917932584058425345.json
 hash: d519927f5fd3d81b
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:40

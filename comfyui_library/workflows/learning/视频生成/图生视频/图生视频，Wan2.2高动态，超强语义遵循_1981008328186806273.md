@@ -4,7 +4,7 @@ name: 图生视频，Wan2.2高动态，超强语义遵循_1981008328186806273.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981008328186806273.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频，Wan2.2高动态，超强语义遵循_1981008328186806273.json
 hash: e265d43b66b2f15e
 coverage: 0.926829
 learned_at: 2026-10-15 22:32:36

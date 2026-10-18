@@ -4,7 +4,7 @@ name: 四宫格-LTX-2.3 图生视频（全面优化版）_2056677088828157954.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056677088828157954.json
+file: comfyui_library/workflows/视频生成/图生视频/四宫格-LTX-2.3 图生视频（全面优化版）_2056677088828157954.json
 hash: 70b969d735a77e23
 coverage: 0.588235
 learned_at: 2026-10-15 22:38:05

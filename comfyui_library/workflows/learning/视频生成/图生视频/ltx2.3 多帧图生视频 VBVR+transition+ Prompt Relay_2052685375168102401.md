@@ -4,7 +4,7 @@ name: ltx2.3 多帧图生视频 VBVR+transition+ Prompt Relay_205268537516810240
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052685375168102401.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3 多帧图生视频 VBVR+transition+ Prompt Relay_2052685375168102401.json
 hash: f88da01e1b55d7ac
 coverage: 0.474359
 learned_at: 2026-10-15 22:37:31

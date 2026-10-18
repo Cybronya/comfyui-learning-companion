@@ -4,7 +4,7 @@ name: WAN2.2-LightX2V-图生视频，高速度、超听话（自动提示词）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981316750769905665.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-LightX2V-图生视频，高速度、超听话（自动提示词）_1981316750769905665.json
 hash: ae14848b19204228
 coverage: 0.5
 learned_at: 2026-10-15 22:32:37

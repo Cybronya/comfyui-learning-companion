@@ -4,7 +4,7 @@ name: Ltx2.3 Sulphur-2+Prompt Relay分段提示词微动作_2054758964251897857.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054758964251897857.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay分段提示词微动作_2054758964251897857.json
 hash: 75ac7abedad770db
 coverage: 0.780488
 learned_at: 2026-10-15 22:37:51

@@ -4,7 +4,7 @@ name: 首-中-尾三帧视频 Wan2.2反推提示词-Remix图生视频_2065456197
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065456197679017986.json
+file: comfyui_library/workflows/视频生成/图生视频/首-中-尾三帧视频 Wan2.2反推提示词-Remix图生视频_2065456197679017986.json
 hash: b0f1beda31967a8f
 coverage: 0.833333
 learned_at: 2026-10-15 22:39:41

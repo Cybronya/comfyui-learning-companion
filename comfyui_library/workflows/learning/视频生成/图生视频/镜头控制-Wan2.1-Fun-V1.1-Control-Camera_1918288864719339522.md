@@ -4,7 +4,7 @@ name: 镜头控制-Wan2.1-Fun-V1.1-Control-Camera_1918288864719339522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1918288864719339522.json
+file: comfyui_library/workflows/视频生成/图生视频/镜头控制-Wan2.1-Fun-V1.1-Control-Camera_1918288864719339522.json
 hash: 839a23b6a1e565e2
 coverage: 0.962264
 learned_at: 2026-10-15 22:29:40

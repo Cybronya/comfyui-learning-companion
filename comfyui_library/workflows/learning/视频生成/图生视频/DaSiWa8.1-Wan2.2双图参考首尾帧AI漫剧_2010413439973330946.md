@@ -4,7 +4,7 @@ name: DaSiWa8.1-Wan2.2双图参考首尾帧AI漫剧_2010413439973330946.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010413439973330946.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa8.1-Wan2.2双图参考首尾帧AI漫剧_2010413439973330946.json
 hash: 6dabbb7472a0bf84
 coverage: 0.896552
 learned_at: 2026-10-15 22:34:16

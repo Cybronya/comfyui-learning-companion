@@ -4,7 +4,7 @@ name: ◙LTX2.3-无限FOR循环（Text+Image+Audio) to Video-V1.0_20391491457007
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039149145700700161.json
+file: comfyui_library/workflows/视频生成/图生视频/◙LTX2.3-无限FOR循环（Text+Image+Audio) to Video-V1.0_2039149145700700161.json
 hash: eef54fb47afecad3
 coverage: 0.780731
 learned_at: 2026-10-15 22:36:06

@@ -4,7 +4,7 @@ name: 【数字人唱歌】LTX2.3_2057291924830248961.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057291924830248961.json
+file: comfyui_library/workflows/视频生成/图生视频/【数字人唱歌】LTX2.3_2057291924830248961.json
 hash: 613490c2353adb92
 coverage: 0.885246
 learned_at: 2026-10-15 22:38:10

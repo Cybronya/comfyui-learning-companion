@@ -4,7 +4,7 @@ name: 首尾帧视频生成_多帧视频生成_SmoothMix2.0_2020867158913323009.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020867158913323009.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧视频生成_多帧视频生成_SmoothMix2.0_2020867158913323009.json
 hash: ff4d5baa1ea11005
 coverage: 1
 learned_at: 2026-10-15 22:35:07

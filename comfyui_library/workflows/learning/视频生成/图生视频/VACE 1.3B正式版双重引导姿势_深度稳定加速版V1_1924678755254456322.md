@@ -4,7 +4,7 @@ name: VACE 1.3B正式版双重引导姿势_深度稳定加速版V1_1924678755254
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1924678755254456322.json
+file: comfyui_library/workflows/视频生成/图生视频/VACE 1.3B正式版双重引导姿势_深度稳定加速版V1_1924678755254456322.json
 hash: 7845084d66efaeb2
 coverage: 0.813953
 learned_at: 2026-10-15 22:29:50

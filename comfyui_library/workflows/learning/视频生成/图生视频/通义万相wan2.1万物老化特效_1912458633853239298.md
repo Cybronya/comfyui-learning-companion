@@ -4,7 +4,7 @@ name: 通义万相wan2.1万物老化特效_1912458633853239298.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912458633853239298.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1万物老化特效_1912458633853239298.json
 hash: 224d3a8ca310ed27
 coverage: 1
 learned_at: 2026-10-15 22:29:32

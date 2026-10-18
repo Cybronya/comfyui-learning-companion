@@ -4,7 +4,7 @@ name: FusionX Phantom MagCache加速实验版V1(视频编辑融合)_193429213703
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934292137033031682.json
+file: comfyui_library/workflows/视频生成/图生视频/FusionX Phantom MagCache加速实验版V1(视频编辑融合)_1934292137033031682.json
 hash: 1483420702db75e0
 coverage: 0.818182
 learned_at: 2026-10-15 22:30:17

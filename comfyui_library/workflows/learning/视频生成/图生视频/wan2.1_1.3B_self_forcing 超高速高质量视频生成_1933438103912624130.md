@@ -4,7 +4,7 @@ name: wan2.1_1.3B_self_forcing 超高速高质量视频生成_193343810391262413
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933438103912624130.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_1.3B_self_forcing 超高速高质量视频生成_1933438103912624130.json
 hash: b3c72ba9b81a5252
 coverage: 1
 learned_at: 2026-10-15 22:30:13

@@ -4,7 +4,7 @@ name: Wan2.1+t2v Lora文生视频工作流_1951460131294883841.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951460131294883841.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1+t2v Lora文生视频工作流_1951460131294883841.json
 hash: 6ae817c5d43e56d0
 coverage: 1
 learned_at: 2026-10-15 22:43:37

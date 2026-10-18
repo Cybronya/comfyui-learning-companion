@@ -4,7 +4,7 @@ name: Gif动态表情包 动画表情 Q版表情包+4K高清放大+wan2.2动态G
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996389038133223426.json
+file: comfyui_library/workflows/视频生成/图生视频/Gif动态表情包 动画表情 Q版表情包+4K高清放大+wan2.2动态GIF生成！_1996389038133223426.json
 hash: 264fe0953f3ef9d3
 coverage: 0.712766
 learned_at: 2026-10-15 22:33:26

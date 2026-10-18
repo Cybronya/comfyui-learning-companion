@@ -4,7 +4,7 @@ name: Wan视频编辑高级版V5.2-PRO_2031919124909137922.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031919124909137922.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan视频编辑高级版V5.2-PRO_2031919124909137922.json
 hash: 207763f690da47f1
 coverage: 0.56391
 learned_at: 2026-10-15 22:35:33

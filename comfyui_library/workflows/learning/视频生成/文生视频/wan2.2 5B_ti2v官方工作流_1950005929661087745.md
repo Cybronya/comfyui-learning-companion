@@ -4,7 +4,7 @@ name: wan2.2 5B_ti2v官方工作流_1950005929661087745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950005929661087745.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 5B_ti2v官方工作流_1950005929661087745.json
 hash: 9f682f4319260ff1
 coverage: 0.928571
 learned_at: 2026-10-15 22:43:33

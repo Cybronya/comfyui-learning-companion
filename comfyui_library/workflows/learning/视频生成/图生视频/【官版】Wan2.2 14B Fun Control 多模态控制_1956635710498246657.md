@@ -4,7 +4,7 @@ name: 【官版】Wan2.2 14B Fun Control 多模态控制_1956635710498246657.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956635710498246657.json
+file: comfyui_library/workflows/视频生成/图生视频/【官版】Wan2.2 14B Fun Control 多模态控制_1956635710498246657.json
 hash: f4a5bbf0c64dec7b
 coverage: 0.911111
 learned_at: 2026-10-15 22:31:14

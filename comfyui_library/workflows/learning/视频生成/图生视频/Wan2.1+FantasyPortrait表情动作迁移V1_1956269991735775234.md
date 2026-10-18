@@ -4,7 +4,7 @@ name: Wan2.1+FantasyPortrait表情动作迁移V1_1956269991735775234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956269991735775234.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1+FantasyPortrait表情动作迁移V1_1956269991735775234.json
 hash: 560cf7fd202db8b8
 coverage: 0.810811
 learned_at: 2026-10-15 22:31:12

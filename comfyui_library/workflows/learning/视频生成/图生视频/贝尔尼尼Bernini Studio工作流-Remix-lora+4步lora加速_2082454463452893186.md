@@ -4,7 +4,7 @@ name: 贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_208245446345
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082454463452893186.json
+file: comfyui_library/workflows/视频生成/图生视频/贝尔尼尼Bernini Studio工作流-Remix-lora+4步lora加速_2082454463452893186.json
 hash: fd4c7e3aa60bb3f4
 coverage: 0.823529
 learned_at: 2026-10-15 22:42:32

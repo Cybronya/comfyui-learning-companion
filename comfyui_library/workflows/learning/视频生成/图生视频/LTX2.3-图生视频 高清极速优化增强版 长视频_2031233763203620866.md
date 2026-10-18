@@ -4,7 +4,7 @@ name: LTX2.3-图生视频 高清极速优化增强版 长视频_2031233763203620
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031233763203620866.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频 高清极速优化增强版 长视频_2031233763203620866.json
 hash: ad00fabed470d96d
 coverage: 0.944444
 learned_at: 2026-10-15 22:35:30

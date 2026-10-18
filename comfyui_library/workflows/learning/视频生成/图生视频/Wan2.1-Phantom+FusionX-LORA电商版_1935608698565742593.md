@@ -4,7 +4,7 @@ name: Wan2.1-Phantom+FusionX-LORA电商版_1935608698565742593.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935608698565742593.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-Phantom+FusionX-LORA电商版_1935608698565742593.json
 hash: e9bf052589cec525
 coverage: 1
 learned_at: 2026-10-15 22:30:23

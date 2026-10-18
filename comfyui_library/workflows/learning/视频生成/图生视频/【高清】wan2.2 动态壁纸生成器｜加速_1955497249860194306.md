@@ -4,7 +4,7 @@ name: 【高清】wan2.2 动态壁纸生成器｜加速_1955497249860194306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955497249860194306.json
+file: comfyui_library/workflows/视频生成/图生视频/【高清】wan2.2 动态壁纸生成器｜加速_1955497249860194306.json
 hash: 941192f29c3bf96d
 coverage: 0.891892
 learned_at: 2026-10-15 22:31:08

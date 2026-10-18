@@ -4,7 +4,7 @@ name: Wan2.2-Prompt Relay-单图参考精准控制-电商带货_2064248756870139
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064248756870139905.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Prompt Relay-单图参考精准控制-电商带货_2064248756870139905.json
 hash: ffa3b6c6f0fd25f4
 coverage: 0.884615
 learned_at: 2026-10-15 22:39:22

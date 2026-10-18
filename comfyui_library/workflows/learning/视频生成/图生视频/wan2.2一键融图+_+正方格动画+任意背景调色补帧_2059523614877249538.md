@@ -4,7 +4,7 @@ name: wan2.2一键融图+_+正方格动画+任意背景调色补帧_205952361487
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059523614877249538.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2一键融图+_+正方格动画+任意背景调色补帧_2059523614877249538.json
 hash: 740103046c34e2f3
 coverage: 0.6
 learned_at: 2026-10-15 22:38:40

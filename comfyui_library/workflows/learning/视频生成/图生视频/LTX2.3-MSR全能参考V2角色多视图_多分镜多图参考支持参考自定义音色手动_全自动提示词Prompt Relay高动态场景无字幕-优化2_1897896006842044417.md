@@ -4,7 +4,7 @@ name: LTX2.3-MSR全能参考V2角色多视图_多分镜多图参考支持参考�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1897896006842044417.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR全能参考V2角色多视图_多分镜多图参考支持参考自定义音色手动_全自动提示词Prompt Relay高动态场景无字幕-优化2_1897896006842044417.json
 hash: 1a9164d8271dfe5c
 coverage: 0.409574
 learned_at: 2026-10-15 22:29:19

@@ -4,7 +4,7 @@ name: Wan2.2 14B+Teacache+Sage 2.5速加速图生视频V1（无污染）_1949871
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949871936315768833.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B+Teacache+Sage 2.5速加速图生视频V1（无污染）_1949871936315768833.json
 hash: 90b0f757f2499043
 coverage: 0.92
 learned_at: 2026-10-15 22:30:50

@@ -4,7 +4,7 @@ name: RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994395763994206210.json
+file: comfyui_library/workflows/视频生成/图生视频/RH_全能视频S_Image_to_Video_(Realistic_Supported)-真人版_1994395763994206210.json
 hash: 739a71dd39efa85b
 coverage: 0.9
 learned_at: 2026-10-15 22:33:21

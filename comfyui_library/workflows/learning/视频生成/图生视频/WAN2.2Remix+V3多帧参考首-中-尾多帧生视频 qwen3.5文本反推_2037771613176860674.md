@@ -4,7 +4,7 @@ name: WAN2.2Remix+V3多帧参考首-中-尾多帧生视频 qwen3.5文本反推_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037771613176860674.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2Remix+V3多帧参考首-中-尾多帧生视频 qwen3.5文本反推_2037771613176860674.json
 hash: 71c0c459a9c11f88
 coverage: 0.954545
 learned_at: 2026-10-15 22:35:58

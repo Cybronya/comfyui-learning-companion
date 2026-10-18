@@ -4,7 +4,7 @@ name: Wan2.1 FusionX  VACE首尾帧_1949681611131506689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949681611131506689.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 FusionX  VACE首尾帧_1949681611131506689.json
 hash: 573299e4866b3ecc
 coverage: 0.690476
 learned_at: 2026-10-15 22:30:49

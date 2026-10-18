@@ -4,7 +4,7 @@ name: Wan2.2+Animate：角色替换、动作迁移、图生视频 美女跳舞�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979432276058607617.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Animate：角色替换、动作迁移、图生视频 美女跳舞视频，表演艺术的完美复刻！_1979432276058607617.json
 hash: 67f8e5aa66919719
 coverage: 0.964286
 learned_at: 2026-10-15 22:32:23

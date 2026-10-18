@@ -4,7 +4,7 @@ name: 最新LTX2.3数字人1.1模型 数字人唱歌对口型极速版_204647793
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046477938211692546.json
+file: comfyui_library/workflows/视频生成/图生视频/最新LTX2.3数字人1.1模型 数字人唱歌对口型极速版_2046477938211692546.json
 hash: 1697e921f0394203
 coverage: 0.495575
 learned_at: 2026-10-15 22:36:59

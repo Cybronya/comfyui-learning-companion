@@ -4,7 +4,7 @@ name: 【后拉运镜48G先行版】wan2.1图生视频（全自动）_1931043397
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1931043397564608513.json
+file: comfyui_library/workflows/视频生成/图生视频/【后拉运镜48G先行版】wan2.1图生视频（全自动）_1931043397564608513.json
 hash: d70b134eb8cb15bf
 coverage: 0.64
 learned_at: 2026-10-15 22:30:08

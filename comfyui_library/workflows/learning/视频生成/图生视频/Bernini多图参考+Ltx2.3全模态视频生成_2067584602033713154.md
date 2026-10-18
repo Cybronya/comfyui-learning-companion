@@ -4,7 +4,7 @@ name: Bernini多图参考+Ltx2.3全模态视频生成_2067584602033713154.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067584602033713154.json
+file: comfyui_library/workflows/视频生成/图生视频/Bernini多图参考+Ltx2.3全模态视频生成_2067584602033713154.json
 hash: df92cac37ca9c95e
 coverage: 0.6
 learned_at: 2026-10-15 22:40:08

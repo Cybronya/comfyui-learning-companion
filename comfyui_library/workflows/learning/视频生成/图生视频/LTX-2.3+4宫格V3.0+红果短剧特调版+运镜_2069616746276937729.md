@@ -4,7 +4,7 @@ name: LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069616746276937729.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3+4宫格V3.0+红果短剧特调版+运镜_2069616746276937729.json
 hash: 9dfd9851217686c3
 coverage: 0.566667
 learned_at: 2026-10-15 22:40:30

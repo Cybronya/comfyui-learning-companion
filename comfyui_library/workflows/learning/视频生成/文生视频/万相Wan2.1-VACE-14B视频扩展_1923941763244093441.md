@@ -4,7 +4,7 @@ name: 万相Wan2.1-VACE-14B视频扩展_1923941763244093441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1923941763244093441.json
+file: comfyui_library/workflows/视频生成/文生视频/万相Wan2.1-VACE-14B视频扩展_1923941763244093441.json
 hash: a41a39aebf38ef99
 coverage: 1
 learned_at: 2026-10-15 22:43:24

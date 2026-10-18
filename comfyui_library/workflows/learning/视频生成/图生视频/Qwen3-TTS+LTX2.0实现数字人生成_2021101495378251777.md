@@ -4,7 +4,7 @@ name: Qwen3-TTS+LTX2.0实现数字人生成_2021101495378251777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021101495378251777.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen3-TTS+LTX2.0实现数字人生成_2021101495378251777.json
 hash: 46c1a92f9a2a6894
 coverage: 0.533333
 learned_at: 2026-10-15 22:35:07

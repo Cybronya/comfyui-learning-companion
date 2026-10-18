@@ -4,7 +4,7 @@ name: 多图参考-LTX2.3图生视频_2042794910578905089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042794910578905089.json
+file: comfyui_library/workflows/视频生成/图生视频/多图参考-LTX2.3图生视频_2042794910578905089.json
 hash: b5dd731296c8236e
 coverage: 0.836364
 learned_at: 2026-10-15 22:36:29

@@ -4,7 +4,7 @@ name: wan2.1-VACE多功能视频编辑合集_1988044304205680642.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988044304205680642.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-VACE多功能视频编辑合集_1988044304205680642.json
 hash: 89c29604f15a79ba
 coverage: 0.69863
 learned_at: 2026-10-15 22:33:01

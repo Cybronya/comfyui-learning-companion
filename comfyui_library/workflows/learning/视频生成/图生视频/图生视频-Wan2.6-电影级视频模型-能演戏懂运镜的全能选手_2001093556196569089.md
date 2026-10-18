@@ -4,7 +4,7 @@ name: 图生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001093556196569089.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-Wan2.6-电影级视频模型-能演戏懂运镜的全能选手_2001093556196569089.json
 hash: a875cb8217c8b055
 coverage: 1
 learned_at: 2026-10-15 22:33:44

@@ -4,7 +4,7 @@ name: Wan2.1_首尾帧视频_kijai_1925042033008779266.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1925042033008779266.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_首尾帧视频_kijai_1925042033008779266.json
 hash: 04da21ac56fec32c
 coverage: 0.76
 learned_at: 2026-10-15 22:29:51

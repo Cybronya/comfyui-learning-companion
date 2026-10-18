@@ -4,7 +4,7 @@ name: 高动态Infinite Talk+VoxCPM TTS1.5 方言克隆 直播带货数字人主
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004571944911601665.json
+file: comfyui_library/workflows/视频生成/图生视频/高动态Infinite Talk+VoxCPM TTS1.5 方言克隆 直播带货数字人主播对口型_2004571944911601665.json
 hash: d404c5ced10cd973
 coverage: 0.5
 learned_at: 2026-10-15 22:33:55

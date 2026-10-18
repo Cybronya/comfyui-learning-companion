@@ -4,7 +4,7 @@ name: generate_two_charactor_pose_for_cail_2003000754011009026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003000754011009026.json
+file: comfyui_library/workflows/视频生成/图生视频/generate_two_charactor_pose_for_cail_2003000754011009026.json
 hash: 3d797e2a9bbb0d72
 coverage: 0.611111
 learned_at: 2026-10-15 22:33:49

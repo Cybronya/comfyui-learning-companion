@@ -4,7 +4,7 @@ name: 【阿良绘】数字人讲话（图生视频）_高动态Infinite talk（
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960200175715299330.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】数字人讲话（图生视频）_高动态Infinite talk（Lightx2v+Rcm）_1960200175715299330.json
 hash: 5d509467b17677c4
 coverage: 0.9375
 learned_at: 2026-10-15 22:31:25

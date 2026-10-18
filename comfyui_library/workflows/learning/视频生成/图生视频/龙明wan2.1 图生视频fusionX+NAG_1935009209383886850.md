@@ -4,7 +4,7 @@ name: 龙明wan2.1 图生视频fusionX+NAG_1935009209383886850.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935009209383886850.json
+file: comfyui_library/workflows/视频生成/图生视频/龙明wan2.1 图生视频fusionX+NAG_1935009209383886850.json
 hash: 7a207332cf300a05
 coverage: 0.954545
 learned_at: 2026-10-15 22:30:20

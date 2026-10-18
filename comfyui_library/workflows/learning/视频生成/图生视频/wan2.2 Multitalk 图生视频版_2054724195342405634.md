@@ -4,7 +4,7 @@ name: wan2.2 Multitalk 图生视频版_2054724195342405634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054724195342405634.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 Multitalk 图生视频版_2054724195342405634.json
 hash: 77ec649136b5a58f
 coverage: 0.969697
 learned_at: 2026-10-15 22:37:50

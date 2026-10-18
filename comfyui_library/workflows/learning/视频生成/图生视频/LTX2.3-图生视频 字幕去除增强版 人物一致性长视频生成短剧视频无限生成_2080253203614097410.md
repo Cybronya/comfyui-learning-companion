@@ -4,7 +4,7 @@ name: LTX2.3-图生视频 字幕去除增强版 人物一致性长视频生成�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080253203614097410.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频 字幕去除增强版 人物一致性长视频生成短剧视频无限生成_2080253203614097410.json
 hash: cbaa9928bed620a5
 coverage: 0.944444
 learned_at: 2026-10-15 22:42:11

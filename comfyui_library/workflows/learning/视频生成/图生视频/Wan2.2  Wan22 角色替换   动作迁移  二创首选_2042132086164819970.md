@@ -4,7 +4,7 @@ name: Wan2.2  Wan22 角色替换   动作迁移  二创首选_204213208616481997
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042132086164819970.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2  Wan22 角色替换   动作迁移  二创首选_2042132086164819970.json
 hash: e80d6f38512e05ca
 coverage: 0.567901
 learned_at: 2026-10-15 22:36:25

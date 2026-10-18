@@ -4,7 +4,7 @@ name: DasiwaV81 _ 最佳动漫视频 12v动态增强 漫剧搭子 氛围短片 w
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056085171165769729.json
+file: comfyui_library/workflows/视频生成/图生视频/DasiwaV81 _ 最佳动漫视频 12v动态增强 漫剧搭子 氛围短片 wan2.2_2056085171165769729.json
 hash: 8c5675676da3ba6c
 coverage: 0.568807
 learned_at: 2026-10-15 22:38:00

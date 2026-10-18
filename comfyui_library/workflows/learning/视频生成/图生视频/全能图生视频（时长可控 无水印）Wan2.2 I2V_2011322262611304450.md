@@ -4,7 +4,7 @@ name: 全能图生视频（时长可控 无水印）Wan2.2 I2V_20113222626113044
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011322262611304450.json
+file: comfyui_library/workflows/视频生成/图生视频/全能图生视频（时长可控 无水印）Wan2.2 I2V_2011322262611304450.json
 hash: 98e1d72e3ffd2a3c
 coverage: 0.6875
 learned_at: 2026-10-15 22:34:22

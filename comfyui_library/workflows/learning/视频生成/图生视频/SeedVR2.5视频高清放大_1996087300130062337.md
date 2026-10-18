@@ -4,7 +4,7 @@ name: SeedVR2.5视频高清放大_1996087300130062337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996087300130062337.json
+file: comfyui_library/workflows/视频生成/图生视频/SeedVR2.5视频高清放大_1996087300130062337.json
 hash: c462666e43ddb6c0
 coverage: 0.769231
 learned_at: 2026-10-15 22:33:25

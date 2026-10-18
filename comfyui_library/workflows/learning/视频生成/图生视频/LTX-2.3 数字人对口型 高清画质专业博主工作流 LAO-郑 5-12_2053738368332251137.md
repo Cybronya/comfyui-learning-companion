@@ -4,7 +4,7 @@ name: LTX-2.3 数字人对口型 高清画质专业博主工作流 LAO-郑 5-12_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053738368332251137.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 数字人对口型 高清画质专业博主工作流 LAO-郑 5-12_2053738368332251137.json
 hash: c1543083a70a2af2
 coverage: 0.507812
 learned_at: 2026-10-15 22:37:42

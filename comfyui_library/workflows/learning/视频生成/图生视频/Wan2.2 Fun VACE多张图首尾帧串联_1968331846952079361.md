@@ -4,7 +4,7 @@ name: Wan2.2 Fun VACE多张图首尾帧串联_1968331846952079361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968331846952079361.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Fun VACE多张图首尾帧串联_1968331846952079361.json
 hash: 32d65a921c973fc4
 coverage: 0.62
 learned_at: 2026-10-15 22:31:44

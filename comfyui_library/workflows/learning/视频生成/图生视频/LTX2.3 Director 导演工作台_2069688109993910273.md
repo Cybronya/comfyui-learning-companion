@@ -4,7 +4,7 @@ name: LTX2.3 Director 导演工作台_2069688109993910273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069688109993910273.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Director 导演工作台_2069688109993910273.json
 hash: a89957a9d1c964da
 coverage: 0.923077
 learned_at: 2026-10-15 22:40:32

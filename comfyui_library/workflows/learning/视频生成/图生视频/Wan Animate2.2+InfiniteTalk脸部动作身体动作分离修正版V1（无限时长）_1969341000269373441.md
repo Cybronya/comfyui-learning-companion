@@ -4,7 +4,7 @@ name: Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969341000269373441.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2+InfiniteTalk脸部动作身体动作分离修正版V1（无限时长）_1969341000269373441.json
 hash: 7baedd46d8130030
 coverage: 0.586957
 learned_at: 2026-10-15 22:31:48

@@ -4,7 +4,7 @@ name: InfiniteTalk & LatentSync 对口型工作流 V1.0_2028880263652052993.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2028880263652052993.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk & LatentSync 对口型工作流 V1.0_2028880263652052993.json
 hash: 69b8021199c8e3b2
 coverage: 0.73
 learned_at: 2026-10-15 22:35:20

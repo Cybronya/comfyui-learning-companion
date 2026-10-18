@@ -4,7 +4,7 @@ name: LTX 2.3-IA2V-国风 MV_2038201954467323905.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038201954467323905.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3-IA2V-国风 MV_2038201954467323905.json
 hash: 83e8ca587aa18ef5
 coverage: 0.813953
 learned_at: 2026-10-15 22:36:01

@@ -4,7 +4,7 @@ name: Wan2.2+Qwen3VL+Foley多模态全自动图生视频_2076490092809637889.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076490092809637889.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Qwen3VL+Foley多模态全自动图生视频_2076490092809637889.json
 hash: 5e01f51db0daa8cf
 coverage: 0.481013
 learned_at: 2026-10-15 22:41:30

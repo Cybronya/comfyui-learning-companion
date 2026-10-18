@@ -4,7 +4,7 @@ name: CogVideoX_Fun_Pose 通过Pose控制视频生成_1844685380640493570.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1844685380640493570.json
+file: comfyui_library/workflows/视频生成/图生视频/CogVideoX_Fun_Pose 通过Pose控制视频生成_1844685380640493570.json
 hash: 8644cdcb9561928d
 coverage: 1
 learned_at: 2026-10-15 22:29:14

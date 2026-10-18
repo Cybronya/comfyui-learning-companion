@@ -4,7 +4,7 @@ name: B2-wan2.1 720p- MagCache加速版图生视频FusionX+NAG_19345777565857955
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934577756585795586.json
+file: comfyui_library/workflows/视频生成/图生视频/B2-wan2.1 720p- MagCache加速版图生视频FusionX+NAG_1934577756585795586.json
 hash: 44c79e653413b743
 coverage: 0.941176
 learned_at: 2026-10-15 22:30:18

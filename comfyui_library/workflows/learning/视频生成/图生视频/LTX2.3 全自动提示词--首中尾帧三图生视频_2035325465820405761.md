@@ -4,7 +4,7 @@ name: LTX2.3 全自动提示词--首中尾帧三图生视频_2035325465820405761
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035325465820405761.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 全自动提示词--首中尾帧三图生视频_2035325465820405761.json
 hash: 7803f7909b2937bd
 coverage: 0.920635
 learned_at: 2026-10-15 22:35:48

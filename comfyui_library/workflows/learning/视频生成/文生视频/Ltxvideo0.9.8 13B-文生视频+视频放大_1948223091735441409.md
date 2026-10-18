@@ -4,7 +4,7 @@ name: Ltxvideo0.9.8 13B-文生视频+视频放大_1948223091735441409.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1948223091735441409.json
+file: comfyui_library/workflows/视频生成/文生视频/Ltxvideo0.9.8 13B-文生视频+视频放大_1948223091735441409.json
 hash: 0b2696b814f3b06d
 coverage: 1
 learned_at: 2026-10-15 22:43:32

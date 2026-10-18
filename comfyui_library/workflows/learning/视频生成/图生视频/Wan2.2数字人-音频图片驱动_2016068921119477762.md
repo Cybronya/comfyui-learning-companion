@@ -4,7 +4,7 @@ name: Wan2.2数字人-音频图片驱动_2016068921119477762.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016068921119477762.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2数字人-音频图片驱动_2016068921119477762.json
 hash: 600def0f2175de75
 coverage: 0.878049
 learned_at: 2026-10-15 22:34:41

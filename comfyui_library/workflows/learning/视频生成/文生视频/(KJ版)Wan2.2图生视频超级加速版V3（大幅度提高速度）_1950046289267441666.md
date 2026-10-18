@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2图生视频超级加速版V3（大幅度提高速度）_1950
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950046289267441666.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2图生视频超级加速版V3（大幅度提高速度）_1950046289267441666.json
 hash: 4ef9b08de1c7b470
 coverage: 0.857143
 learned_at: 2026-10-15 22:43:34

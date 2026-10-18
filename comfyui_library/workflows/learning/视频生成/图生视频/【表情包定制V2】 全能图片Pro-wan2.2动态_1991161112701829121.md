@@ -4,7 +4,7 @@ name: 【表情包定制V2】 全能图片Pro-wan2.2动态_1991161112701829121.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991161112701829121.json
+file: comfyui_library/workflows/视频生成/图生视频/【表情包定制V2】 全能图片Pro-wan2.2动态_1991161112701829121.json
 hash: c62aa9f3bdb9a986
 coverage: 0.722892
 learned_at: 2026-10-15 22:33:12

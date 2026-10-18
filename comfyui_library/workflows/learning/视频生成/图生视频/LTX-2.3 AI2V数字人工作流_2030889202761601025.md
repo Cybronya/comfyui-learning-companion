@@ -4,7 +4,7 @@ name: LTX-2.3 AI2V数字人工作流_2030889202761601025.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030889202761601025.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 AI2V数字人工作流_2030889202761601025.json
 hash: c7efeaa7bce6ae21
 coverage: 0.764706
 learned_at: 2026-10-15 22:35:28

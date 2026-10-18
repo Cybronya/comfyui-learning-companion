@@ -4,7 +4,7 @@ name: 【Work-FIsh】WAN2.2-RemixV2-I2V图生视频_1986333709685194753.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986333709685194753.json
+file: comfyui_library/workflows/视频生成/图生视频/【Work-FIsh】WAN2.2-RemixV2-I2V图生视频_1986333709685194753.json
 hash: 952a47ad3f50aa2a
 coverage: 0.414286
 learned_at: 2026-10-15 22:32:54

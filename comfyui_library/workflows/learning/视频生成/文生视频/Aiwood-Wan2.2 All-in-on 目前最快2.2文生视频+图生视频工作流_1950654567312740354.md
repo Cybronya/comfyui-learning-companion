@@ -4,7 +4,7 @@ name: Aiwood-Wan2.2 All-in-on 目前最快2.2文生视频+图生视频工作流_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950654567312740354.json
+file: comfyui_library/workflows/视频生成/文生视频/Aiwood-Wan2.2 All-in-on 目前最快2.2文生视频+图生视频工作流_1950654567312740354.json
 hash: 18f2b670b1eef39e
 coverage: 1
 learned_at: 2026-10-15 22:43:36

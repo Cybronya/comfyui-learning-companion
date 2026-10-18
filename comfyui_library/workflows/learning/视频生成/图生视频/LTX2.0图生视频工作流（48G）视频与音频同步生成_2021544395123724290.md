@@ -4,7 +4,7 @@ name: LTX2.0图生视频工作流（48G）视频与音频同步生成_2021544395
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021544395123724290.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0图生视频工作流（48G）视频与音频同步生成_2021544395123724290.json
 hash: 0f8889f83474aeb8
 coverage: 0.910714
 learned_at: 2026-10-15 22:35:09

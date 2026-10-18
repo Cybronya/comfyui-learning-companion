@@ -4,7 +4,7 @@ name: 🦖wan 2.1 MoviiGen 首尾帧_1932721199510081537.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1932721199510081537.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖wan 2.1 MoviiGen 首尾帧_1932721199510081537.json
 hash: 456cbd28db533c80
 coverage: 1
 learned_at: 2026-10-15 22:30:12

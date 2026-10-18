@@ -4,7 +4,7 @@ name: Kling_O1_Image2Video_v1.0_2033793824568381441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033793824568381441.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_O1_Image2Video_v1.0_2033793824568381441.json
 hash: 1f71d7a3a61a6649
 coverage: 1
 learned_at: 2026-10-15 22:35:41

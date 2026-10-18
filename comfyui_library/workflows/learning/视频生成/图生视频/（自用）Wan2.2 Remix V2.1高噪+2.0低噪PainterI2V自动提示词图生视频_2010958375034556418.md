@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Remix V2.1高噪+2.0低噪PainterI2V自动提示词图�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010958375034556418.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Remix V2.1高噪+2.0低噪PainterI2V自动提示词图生视频_2010958375034556418.json
 hash: ff7eb58c2eadf03b
 coverage: 0.746479
 learned_at: 2026-10-15 22:34:19

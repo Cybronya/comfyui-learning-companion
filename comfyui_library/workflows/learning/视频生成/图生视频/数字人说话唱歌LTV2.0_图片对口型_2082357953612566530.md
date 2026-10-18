@@ -4,7 +4,7 @@ name: 数字人说话唱歌LTV2.0_图片对口型_2082357953612566530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082357953612566530.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人说话唱歌LTV2.0_图片对口型_2082357953612566530.json
 hash: 841816d600fac9de
 coverage: 0.495652
 learned_at: 2026-10-15 22:42:30

@@ -4,7 +4,7 @@ name: WAN2.2-多镜头组合PRO-YIQI燚起_1980521470021554177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980521470021554177.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-多镜头组合PRO-YIQI燚起_1980521470021554177.json
 hash: e07586116a4b65bf
 coverage: 0.911111
 learned_at: 2026-10-15 22:32:31

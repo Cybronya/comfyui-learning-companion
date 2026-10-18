@@ -4,7 +4,7 @@ name: wan2.2图生成视频940_2012914151470927874.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012914151470927874.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生成视频940_2012914151470927874.json
 hash: 420f6a9e1358f10d
 coverage: 0.428571
 learned_at: 2026-10-15 22:34:29

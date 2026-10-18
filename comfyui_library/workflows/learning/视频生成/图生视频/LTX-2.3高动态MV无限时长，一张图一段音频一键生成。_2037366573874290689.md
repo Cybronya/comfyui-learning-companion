@@ -4,7 +4,7 @@ name: LTX-2.3高动态MV无限时长，一张图一段音频一键生成。_2037
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037366573874290689.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3高动态MV无限时长，一张图一段音频一键生成。_2037366573874290689.json
 hash: b4be1437643899d2
 coverage: 0.882353
 learned_at: 2026-10-15 22:35:56

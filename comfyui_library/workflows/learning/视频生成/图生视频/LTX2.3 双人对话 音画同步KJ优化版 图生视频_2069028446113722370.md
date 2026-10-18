@@ -4,7 +4,7 @@ name: LTX2.3 双人对话 音画同步KJ优化版 图生视频_20690284461137223
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069028446113722370.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 双人对话 音画同步KJ优化版 图生视频_2069028446113722370.json
 hash: 9c596412e2b6689c
 coverage: 0.678571
 learned_at: 2026-10-15 22:40:25

@@ -4,7 +4,7 @@ name: LTX2.3 真人表情数字人配音版_2068632962953998337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068632962953998337.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 真人表情数字人配音版_2068632962953998337.json
 hash: 46f989992ba2725e
 coverage: 0.621951
 learned_at: 2026-10-15 22:40:20

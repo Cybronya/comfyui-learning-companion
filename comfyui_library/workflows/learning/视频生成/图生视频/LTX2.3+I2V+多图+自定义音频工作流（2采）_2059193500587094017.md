@@ -4,7 +4,7 @@ name: LTX2.3+I2V+多图+自定义音频工作流（2采）_2059193500587094017.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059193500587094017.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+I2V+多图+自定义音频工作流（2采）_2059193500587094017.json
 hash: 5059025d06992968
 coverage: 0.674699
 learned_at: 2026-10-15 22:38:37

@@ -4,7 +4,7 @@ name: 直播间数字人 _ BRairt.F1_1933349167462789122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1933349167462789122.json
+file: comfyui_library/workflows/视频生成/文生视频/直播间数字人 _ BRairt.F1_1933349167462789122.json
 hash: dbb4f042d9db3e44
 coverage: 0.769231
 learned_at: 2026-10-15 22:43:26

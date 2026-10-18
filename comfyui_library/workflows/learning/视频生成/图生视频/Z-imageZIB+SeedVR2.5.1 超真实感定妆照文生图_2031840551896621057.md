@@ -4,7 +4,7 @@ name: Z-imageZIB+SeedVR2.5.1 超真实感定妆照文生图_2031840551896621057.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031840551896621057.json
+file: comfyui_library/workflows/视频生成/图生视频/Z-imageZIB+SeedVR2.5.1 超真实感定妆照文生图_2031840551896621057.json
 hash: 475a2fab0e23c3ad
 coverage: 0.75
 learned_at: 2026-10-15 22:35:33

@@ -4,7 +4,7 @@ name: 无字幕高质量首尾帧视频数字人LTX2.3-音频画面直出-优化
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032091629703663617.json
+file: comfyui_library/workflows/视频生成/图生视频/无字幕高质量首尾帧视频数字人LTX2.3-音频画面直出-优化版-支持手动_自动提示词_2032091629703663617.json
 hash: 9adff7d6b3ad79dd
 coverage: 0.5625
 learned_at: 2026-10-15 22:35:34

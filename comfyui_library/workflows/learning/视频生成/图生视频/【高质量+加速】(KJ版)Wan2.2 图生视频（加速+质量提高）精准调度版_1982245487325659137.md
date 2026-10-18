@@ -4,7 +4,7 @@ name: 【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982245487325659137.json
+file: comfyui_library/workflows/视频生成/图生视频/【高质量+加速】(KJ版)Wan2.2 图生视频（加速+质量提高）精准调度版_1982245487325659137.json
 hash: 1fe1509128c6a9c6
 coverage: 0.893617
 learned_at: 2026-10-15 22:32:40

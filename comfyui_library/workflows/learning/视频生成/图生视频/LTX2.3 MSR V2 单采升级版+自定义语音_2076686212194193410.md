@@ -4,7 +4,7 @@ name: LTX2.3 MSR V2 单采升级版+自定义语音_2076686212194193410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076686212194193410.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MSR V2 单采升级版+自定义语音_2076686212194193410.json
 hash: 5e1867a14a38dabd
 coverage: 0.721519
 learned_at: 2026-10-15 22:41:32

@@ -4,7 +4,7 @@ name: 万相wan2.1 图生视频 ComfyUI org 官方流  B站 楚门的AI世界_18
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894951787738824705.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.1 图生视频 ComfyUI org 官方流  B站 楚门的AI世界_1894951787738824705.json
 hash: 9a7561ea18613b93
 coverage: 0.882353
 learned_at: 2026-10-15 22:29:17

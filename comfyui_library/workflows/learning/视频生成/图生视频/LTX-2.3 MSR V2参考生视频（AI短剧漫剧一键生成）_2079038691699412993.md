@@ -4,7 +4,7 @@ name: LTX-2.3 MSR V2参考生视频（AI短剧漫剧一键生成）_207903869169
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079038691699412993.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 MSR V2参考生视频（AI短剧漫剧一键生成）_2079038691699412993.json
 hash: 921bf4d0c8637bf2
 coverage: 1
 learned_at: 2026-10-15 22:41:58

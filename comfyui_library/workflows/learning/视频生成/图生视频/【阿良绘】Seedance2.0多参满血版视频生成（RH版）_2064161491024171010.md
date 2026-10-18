@@ -4,7 +4,7 @@ name: 【阿良绘】Seedance2.0多参满血版视频生成（RH版）_206416149
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064161491024171010.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】Seedance2.0多参满血版视频生成（RH版）_2064161491024171010.json
 hash: 66c9e7d46aafa1a8
 coverage: 1
 learned_at: 2026-10-15 22:39:20

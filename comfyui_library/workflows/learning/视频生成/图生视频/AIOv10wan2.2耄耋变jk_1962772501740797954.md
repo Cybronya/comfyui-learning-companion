@@ -4,7 +4,7 @@ name: AIOv10wan2.2耄耋变jk_1962772501740797954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962772501740797954.json
+file: comfyui_library/workflows/视频生成/图生视频/AIOv10wan2.2耄耋变jk_1962772501740797954.json
 hash: 00bfcddc59baee55
 coverage: 0.666667
 learned_at: 2026-10-15 22:31:32

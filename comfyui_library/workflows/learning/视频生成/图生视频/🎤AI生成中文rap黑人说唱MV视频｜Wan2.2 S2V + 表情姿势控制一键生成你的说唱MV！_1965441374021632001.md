@@ -4,7 +4,7 @@ name: 🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1965441374021632001.json
+file: comfyui_library/workflows/视频生成/图生视频/🎤AI生成中文rap黑人说唱MV视频｜Wan2.2 S2V + 表情姿势控制一键生成你的说唱MV！_1965441374021632001.json
 hash: d2309e2a6f56d097
 coverage: 0.578947
 learned_at: 2026-10-15 22:31:37

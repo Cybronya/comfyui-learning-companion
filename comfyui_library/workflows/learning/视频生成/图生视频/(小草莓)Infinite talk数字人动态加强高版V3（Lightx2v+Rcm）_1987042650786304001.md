@@ -4,7 +4,7 @@ name: (小草莓)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm）_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987042650786304001.json
+file: comfyui_library/workflows/视频生成/图生视频/(小草莓)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm）_1987042650786304001.json
 hash: 81bb53d43587b644
 coverage: 0.75
 learned_at: 2026-10-15 22:32:57

@@ -4,7 +4,7 @@ name: wam2.2 remix 动态优化_2030591840105275393.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030591840105275393.json
+file: comfyui_library/workflows/视频生成/图生视频/wam2.2 remix 动态优化_2030591840105275393.json
 hash: 61efd4b1c566a037
 coverage: 1
 learned_at: 2026-10-15 22:35:27

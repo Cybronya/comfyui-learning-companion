@@ -4,7 +4,7 @@ name: (侧脸)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19946
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994676814972850178.json
+file: comfyui_library/workflows/视频生成/图生视频/(侧脸)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1994676814972850178.json
 hash: d5bec10023f53ab0
 coverage: 0.75
 learned_at: 2026-10-15 22:33:21

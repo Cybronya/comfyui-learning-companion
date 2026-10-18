@@ -4,7 +4,7 @@ name: 【动作迁移】Wan2.2 Animate Plus工作流可多人版_207904106426619
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079041064266199042.json
+file: comfyui_library/workflows/视频生成/图生视频/【动作迁移】Wan2.2 Animate Plus工作流可多人版_2079041064266199042.json
 hash: e6ce0aba2058cbde
 coverage: 0.51049
 learned_at: 2026-10-15 22:41:58

@@ -4,7 +4,7 @@ name: 🦖Wan2.2 极速高质量_1950004149220982785.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950004149220982785.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖Wan2.2 极速高质量_1950004149220982785.json
 hash: ac2944805852a27b
 coverage: 0.962963
 learned_at: 2026-10-15 22:30:51

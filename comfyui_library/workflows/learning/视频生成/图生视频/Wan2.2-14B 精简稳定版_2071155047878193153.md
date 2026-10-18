@@ -4,7 +4,7 @@ name: Wan2.2-14B 精简稳定版_2071155047878193153.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071155047878193153.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-14B 精简稳定版_2071155047878193153.json
 hash: b6eb68d5ac8d0c81
 coverage: 0.958333
 learned_at: 2026-10-15 22:40:43

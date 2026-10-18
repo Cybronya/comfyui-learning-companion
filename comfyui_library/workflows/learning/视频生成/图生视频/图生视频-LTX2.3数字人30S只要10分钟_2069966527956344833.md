@@ -4,7 +4,7 @@ name: 图生视频-LTX2.3数字人30S只要10分钟_2069966527956344833.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069966527956344833.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-LTX2.3数字人30S只要10分钟_2069966527956344833.json
 hash: 862d10aab22f421f
 coverage: 0.811111
 learned_at: 2026-10-15 22:40:33

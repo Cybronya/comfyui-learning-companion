@@ -4,7 +4,7 @@ name: CG迷-WAN2.2 multitalk对口型工作流_1952358621646655489.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952358621646655489.json
+file: comfyui_library/workflows/视频生成/图生视频/CG迷-WAN2.2 multitalk对口型工作流_1952358621646655489.json
 hash: 79fb462d00bb5e05
 coverage: 0.933333
 learned_at: 2026-10-15 22:31:01

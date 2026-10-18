@@ -4,7 +4,7 @@ name: SteadyDancer视频动作迁移【1.0】_1995877090840961026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995877090840961026.json
+file: comfyui_library/workflows/视频生成/图生视频/SteadyDancer视频动作迁移【1.0】_1995877090840961026.json
 hash: 4665a84745c9cda4
 coverage: 0.745455
 learned_at: 2026-10-15 22:33:24

@@ -4,7 +4,7 @@ name: 【Wan2.2新玩法】一键变身功夫大师！_1954989336095854593.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954989336095854593.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.2新玩法】一键变身功夫大师！_1954989336095854593.json
 hash: b437096eeeb14976
 coverage: 0.453039
 learned_at: 2026-10-15 22:31:07

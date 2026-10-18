@@ -4,7 +4,7 @@ name: LTX2.3图生视频竖屏短剧分镜11秒_2030782825120669698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030782825120669698.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频竖屏短剧分镜11秒_2030782825120669698.json
 hash: 0fb961532fe17c92
 coverage: 0.95
 learned_at: 2026-10-15 22:35:27

@@ -4,7 +4,7 @@ name: AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_204720564
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047205643727147009.json
+file: comfyui_library/workflows/视频生成/图生视频/AI短剧表情迁移万相Aniwan2.1+FantasyPortrait+InfiniteTalk_2047205643727147009.json
 hash: f0fddc713ad531fe
 coverage: 0.945946
 learned_at: 2026-10-15 22:37:04

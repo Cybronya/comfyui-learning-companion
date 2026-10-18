@@ -4,7 +4,7 @@ name: LTX 2.3 多人数字人--音频驱动图片生视频_2030885319217782785.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030885319217782785.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 多人数字人--音频驱动图片生视频_2030885319217782785.json
 hash: fddc54d01e2e5ba7
 coverage: 0.763889
 learned_at: 2026-10-15 22:35:28

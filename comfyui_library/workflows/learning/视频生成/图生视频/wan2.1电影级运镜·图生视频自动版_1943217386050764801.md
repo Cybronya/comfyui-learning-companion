@@ -4,7 +4,7 @@ name: wan2.1电影级运镜·图生视频自动版_1943217386050764801.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1943217386050764801.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1电影级运镜·图生视频自动版_1943217386050764801.json
 hash: 4e107b4738dc8be6
 coverage: 0.55
 learned_at: 2026-10-15 22:30:38

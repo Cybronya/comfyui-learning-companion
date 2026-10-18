@@ -4,7 +4,7 @@ name: LTX2.3-电商带货-上传图片自动生成-音画同步-Distilled-1.1-�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047878626800050178.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-电商带货-上传图片自动生成-音画同步-Distilled-1.1-蒸馏稳定版_2047878626800050178.json
 hash: dc01ef1ea65a3dd6
 coverage: 0.830189
 learned_at: 2026-10-15 22:37:07

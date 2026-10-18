@@ -4,7 +4,7 @@ name: LTX-2.3-ICLORA斗鸡眼+自动优化提示词版V1_2067532074952781825.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067532074952781825.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-ICLORA斗鸡眼+自动优化提示词版V1_2067532074952781825.json
 hash: eeb4250eb0040880
 coverage: 0.977778
 learned_at: 2026-10-15 22:40:04

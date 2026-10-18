@@ -4,7 +4,7 @@ name: Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003700180081909761.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 + SVI2：多镜头自动衔接与无限时长_2003700180081909761.json
 hash: 2b9038402eccc530
 coverage: 0.68
 learned_at: 2026-10-15 22:33:51

@@ -4,7 +4,7 @@ name: LTX2.3-动作迁移复刻唱歌、美女跳舞_2076237800562843649.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076237800562843649.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-动作迁移复刻唱歌、美女跳舞_2076237800562843649.json
 hash: 4822610730365bdb
 coverage: 0.561151
 learned_at: 2026-10-15 22:41:29

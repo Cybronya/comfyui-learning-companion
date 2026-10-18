@@ -4,7 +4,7 @@ name: Wan2.1-fun-Inp首尾帧视频_1911728190891720705.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911728190891720705.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-fun-Inp首尾帧视频_1911728190891720705.json
 hash: 0d8df3bd1cad0646
 coverage: 0.809524
 learned_at: 2026-10-15 22:29:31

@@ -4,7 +4,7 @@ name: WAN 2.2 3D透视分析效果动画_1984072629252489218.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984072629252489218.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2 3D透视分析效果动画_1984072629252489218.json
 hash: 5f5c70b46594b6e3
 coverage: 0.965517
 learned_at: 2026-10-15 22:32:47

@@ -4,7 +4,7 @@ name: lplei_scail.json_2077566823591145473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077566823591145473.json
+file: comfyui_library/workflows/视频生成/图生视频/lplei_scail.json_2077566823591145473.json
 hash: cc918344c3c33761
 coverage: 0.822581
 learned_at: 2026-10-15 22:41:41

@@ -4,7 +4,7 @@ name: ltx2.3 中继节点_2051154231129853954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051154231129853954.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3 中继节点_2051154231129853954.json
 hash: 1804b4faf6d4b398
 coverage: 0.923077
 learned_at: 2026-10-15 22:37:21

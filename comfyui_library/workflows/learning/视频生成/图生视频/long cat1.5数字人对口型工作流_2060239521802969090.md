@@ -4,7 +4,7 @@ name: long cat1.5数字人对口型工作流_2060239521802969090.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060239521802969090.json
+file: comfyui_library/workflows/视频生成/图生视频/long cat1.5数字人对口型工作流_2060239521802969090.json
 hash: f0c1d6cfc4aa6de2
 coverage: 0.453988
 learned_at: 2026-10-15 22:38:46

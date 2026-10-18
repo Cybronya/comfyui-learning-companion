@@ -4,7 +4,7 @@ name: 【图生视频】Wan2.2 14B LightX2V_1953391288357978113.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953391288357978113.json
+file: comfyui_library/workflows/视频生成/图生视频/【图生视频】Wan2.2 14B LightX2V_1953391288357978113.json
 hash: 88cb1a562d4c7da1
 coverage: 0.956522
 learned_at: 2026-10-15 22:31:05

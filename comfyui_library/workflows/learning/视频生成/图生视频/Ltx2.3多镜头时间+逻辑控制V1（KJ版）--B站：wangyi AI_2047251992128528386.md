@@ -4,7 +4,7 @@ name: Ltx2.3多镜头时间+逻辑控制V1（KJ版）--B站：wangyi AI_20472519
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047251992128528386.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3多镜头时间+逻辑控制V1（KJ版）--B站：wangyi AI_2047251992128528386.json
 hash: 274caa806d5d1819
 coverage: 0.736842
 learned_at: 2026-10-15 22:37:04

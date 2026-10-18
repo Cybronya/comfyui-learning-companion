@@ -4,7 +4,7 @@ name: MiniMax海螺 V2.3图生视频（贞贞的ai工坊api）_20113748706087485
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011374870608748546.json
+file: comfyui_library/workflows/视频生成/图生视频/MiniMax海螺 V2.3图生视频（贞贞的ai工坊api）_2011374870608748546.json
 hash: 1610f3bae1702e45
 coverage: 0.333333
 learned_at: 2026-10-15 22:34:22

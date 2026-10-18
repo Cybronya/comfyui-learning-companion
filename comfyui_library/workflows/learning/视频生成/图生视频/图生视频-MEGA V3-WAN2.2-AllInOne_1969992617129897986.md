@@ -4,7 +4,7 @@ name: 图生视频-MEGA V3-WAN2.2-AllInOne_1969992617129897986.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969992617129897986.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-MEGA V3-WAN2.2-AllInOne_1969992617129897986.json
 hash: ffab8dbd3d8792bc
 coverage: 0.941176
 learned_at: 2026-10-15 22:31:51

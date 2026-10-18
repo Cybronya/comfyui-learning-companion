@@ -4,7 +4,7 @@ name: wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912793596637184001.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1+ReCamMaster视频运镜工作流.ai_1912793596637184001.json
 hash: 7ad204fbc9c9fd9f
 coverage: 0.884615
 learned_at: 2026-10-15 22:29:32

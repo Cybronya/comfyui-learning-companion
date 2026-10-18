@@ -4,7 +4,7 @@ name: 人物生气特效｜Wan2.1_1938851754044018689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1938851754044018689.json
+file: comfyui_library/workflows/视频生成/图生视频/人物生气特效｜Wan2.1_1938851754044018689.json
 hash: cff5ea0e309f7a86
 coverage: 1
 learned_at: 2026-10-15 22:30:32

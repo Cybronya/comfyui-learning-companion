@@ -4,7 +4,7 @@ name: 女子搏击，香香的粉拳-万相wan2.1_1900467836874301442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900467836874301442.json
+file: comfyui_library/workflows/视频生成/图生视频/女子搏击，香香的粉拳-万相wan2.1_1900467836874301442.json
 hash: d9ee98598a85039a
 coverage: 0.95
 learned_at: 2026-10-15 22:29:23

@@ -4,7 +4,7 @@ name: Wan2.1-FusionX-VACE图生视频_1934805890510069762.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934805890510069762.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-FusionX-VACE图生视频_1934805890510069762.json
 hash: 79cf7743bfb6e4e8
 coverage: 1
 learned_at: 2026-10-15 22:30:19

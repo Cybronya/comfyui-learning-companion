@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 UniAnimate视频转绘 动作参考_20628034567668613
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062803456766861313.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 UniAnimate视频转绘 动作参考_2062803456766861313.json
 hash: 3e8e53740834fede
 coverage: 0.84375
 learned_at: 2026-10-15 22:39:07

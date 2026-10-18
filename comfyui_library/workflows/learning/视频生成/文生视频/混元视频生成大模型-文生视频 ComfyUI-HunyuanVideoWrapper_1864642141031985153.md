@@ -4,7 +4,7 @@ name: 混元视频生成大模型-文生视频 ComfyUI-HunyuanVideoWrapper_18646
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1864642141031985153.json
+file: comfyui_library/workflows/视频生成/文生视频/混元视频生成大模型-文生视频 ComfyUI-HunyuanVideoWrapper_1864642141031985153.json
 hash: 91b60f9074ad4241
 coverage: 1
 learned_at: 2026-10-15 22:43:19

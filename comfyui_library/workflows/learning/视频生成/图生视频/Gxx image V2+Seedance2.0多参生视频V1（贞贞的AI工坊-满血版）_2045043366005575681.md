@@ -4,7 +4,7 @@ name: Gxx image V2+Seedance2.0多参生视频V1（贞贞的AI工坊-满血版）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045043366005575681.json
+file: comfyui_library/workflows/视频生成/图生视频/Gxx image V2+Seedance2.0多参生视频V1（贞贞的AI工坊-满血版）_2045043366005575681.json
 hash: b28e63f5c6c298dd
 coverage: 1
 learned_at: 2026-10-15 22:36:44

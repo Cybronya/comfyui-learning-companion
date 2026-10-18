@@ -4,7 +4,7 @@ name: LTX-2.3 漫剧视频（四宫格V2.0-单采光速版）_204187103549404365
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041871035494043650.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 漫剧视频（四宫格V2.0-单采光速版）_2041871035494043650.json
 hash: f74c58841e5fab65
 coverage: 0.561644
 learned_at: 2026-10-15 22:36:23

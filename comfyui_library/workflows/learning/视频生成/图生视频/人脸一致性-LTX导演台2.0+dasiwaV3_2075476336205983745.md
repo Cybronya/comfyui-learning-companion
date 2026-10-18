@@ -4,7 +4,7 @@ name: 人脸一致性-LTX导演台2.0+dasiwaV3_2075476336205983745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075476336205983745.json
+file: comfyui_library/workflows/视频生成/图生视频/人脸一致性-LTX导演台2.0+dasiwaV3_2075476336205983745.json
 hash: 1bd89f10764f8042
 coverage: 0.972973
 learned_at: 2026-10-15 22:41:24

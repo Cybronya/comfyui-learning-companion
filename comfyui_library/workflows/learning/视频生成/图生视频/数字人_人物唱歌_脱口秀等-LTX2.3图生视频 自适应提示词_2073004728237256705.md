@@ -4,7 +4,7 @@ name: 数字人_人物唱歌_脱口秀等-LTX2.3图生视频 自适应提示词_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073004728237256705.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人_人物唱歌_脱口秀等-LTX2.3图生视频 自适应提示词_2073004728237256705.json
 hash: 4608fc2f6c0b9026
 coverage: 0.814286
 learned_at: 2026-10-15 22:41:00

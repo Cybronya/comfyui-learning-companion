@@ -4,7 +4,7 @@ name: FantasyTalking WAN2.1 数字人口播，完美对嘴型_191798009023424102
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917980090234241025.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyTalking WAN2.1 数字人口播，完美对嘴型_1917980090234241025.json
 hash: 905bffaa5f8cd06c
 coverage: 0.954545
 learned_at: 2026-10-15 22:29:40

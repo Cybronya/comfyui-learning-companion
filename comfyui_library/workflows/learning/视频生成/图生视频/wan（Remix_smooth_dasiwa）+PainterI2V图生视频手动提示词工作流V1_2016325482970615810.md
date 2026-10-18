@@ -4,7 +4,7 @@ name: wan（Remix_smooth_dasiwa）+PainterI2V图生视频手动提示词工作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016325482970615810.json
+file: comfyui_library/workflows/视频生成/图生视频/wan（Remix_smooth_dasiwa）+PainterI2V图生视频手动提示词工作流V1_2016325482970615810.json
 hash: 7bed50334db27075
 coverage: 0.723404
 learned_at: 2026-10-15 22:34:42

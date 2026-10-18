@@ -4,7 +4,7 @@ name: WH-AI-Studio-LTX2.3数字人_2049324232944914434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049324232944914434.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-LTX2.3数字人_2049324232944914434.json
 hash: 027f08fac02d1de1
 coverage: 0.964912
 learned_at: 2026-10-15 22:37:13

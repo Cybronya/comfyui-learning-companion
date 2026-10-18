@@ -4,7 +4,7 @@ name: 用 VACE 一键视频抠图 + 背景重绘，让猫咪“躺”进玫瑰�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1929011681165262850.json
+file: comfyui_library/workflows/视频生成/图生视频/用 VACE 一键视频抠图 + 背景重绘，让猫咪“躺”进玫瑰花海｜Wan2.1从入门到精通_1929011681165262850.json
 hash: 88e54fbf5a56fc2c
 coverage: 0.541667
 learned_at: 2026-10-15 22:29:59

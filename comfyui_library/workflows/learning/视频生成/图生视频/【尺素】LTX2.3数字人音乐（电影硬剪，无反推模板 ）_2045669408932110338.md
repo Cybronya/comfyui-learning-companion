@@ -4,7 +4,7 @@ name: 【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045669408932110338.json
+file: comfyui_library/workflows/视频生成/图生视频/【尺素】LTX2.3数字人音乐（电影硬剪，无反推模板 ）_2045669408932110338.json
 hash: f5b43920c73e46d6
 coverage: 0.635417
 learned_at: 2026-10-15 22:36:50

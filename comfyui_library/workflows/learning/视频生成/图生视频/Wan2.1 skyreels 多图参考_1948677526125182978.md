@@ -4,7 +4,7 @@ name: Wan2.1 skyreels 多图参考_1948677526125182978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948677526125182978.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 skyreels 多图参考_1948677526125182978.json
 hash: afc1bd2d5b472060
 coverage: 0.7
 learned_at: 2026-10-15 22:30:48

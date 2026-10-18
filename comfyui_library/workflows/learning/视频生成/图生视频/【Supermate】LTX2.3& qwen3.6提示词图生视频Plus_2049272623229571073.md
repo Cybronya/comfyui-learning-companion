@@ -4,7 +4,7 @@ name: 【Supermate】LTX2.3& qwen3.6提示词图生视频Plus_204927262322957107
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049272623229571073.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】LTX2.3& qwen3.6提示词图生视频Plus_2049272623229571073.json
 hash: d57de1339ef7a753
 coverage: 0.918367
 learned_at: 2026-10-15 22:37:13

@@ -4,7 +4,7 @@ name: WAN2.2 S2V -让图片会唱歌_1962685286419415042.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962685286419415042.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 S2V -让图片会唱歌_1962685286419415042.json
 hash: 31253cec1676b389
 coverage: 1
 learned_at: 2026-10-15 22:31:31

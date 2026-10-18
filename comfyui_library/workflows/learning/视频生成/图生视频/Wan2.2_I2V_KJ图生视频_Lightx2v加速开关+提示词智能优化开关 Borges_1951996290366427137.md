@@ -4,7 +4,7 @@ name: Wan2.2_I2V_KJ图生视频_Lightx2v加速开关+提示词智能优化开关
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951996290366427137.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_I2V_KJ图生视频_Lightx2v加速开关+提示词智能优化开关 Borges_1951996290366427137.json
 hash: 24fe4f03618c05ef
 coverage: 0.809524
 learned_at: 2026-10-15 22:30:59

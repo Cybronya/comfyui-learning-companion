@@ -4,7 +4,7 @@ name: Wan-Animatev2.2_1971886781874499586.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971886781874499586.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan-Animatev2.2_1971886781874499586.json
 hash: d2af46a014edcb42
 coverage: 0.445545
 learned_at: 2026-10-15 22:31:58

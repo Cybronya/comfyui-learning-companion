@@ -4,7 +4,7 @@ name: WAN2.2 人物角色模特服装百变更换衣服_1954771341195960322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954771341195960322.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.2 人物角色模特服装百变更换衣服_1954771341195960322.json
 hash: f70d18936525a2ce
 coverage: 0.925926
 learned_at: 2026-10-15 22:43:39

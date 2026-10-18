@@ -4,7 +4,7 @@ name: Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044660138820247554.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2首尾帧Kijai版-上传首尾帧图片运行工作流！高清流畅好用！_2044660138820247554.json
 hash: ad3a981a5b5eaebc
 coverage: 0.962963
 learned_at: 2026-10-15 22:36:39

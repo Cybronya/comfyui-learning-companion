@@ -4,7 +4,7 @@ name: (顶级版，吊打满血版！)Seedance2.0（贞贞的AI工坊-修改分�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044775674057072641.json
+file: comfyui_library/workflows/视频生成/图生视频/(顶级版，吊打满血版！)Seedance2.0（贞贞的AI工坊-修改分组sd-global）_2044775674057072641.json
 hash: 2993783babe5a42c
 coverage: 0.857143
 learned_at: 2026-10-15 22:36:41

@@ -4,7 +4,7 @@ name: 【动态变装】Wan2.2+Rapid-AIO-Mega 极速出片-图生视频-首尾�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982270135106977794.json
+file: comfyui_library/workflows/视频生成/图生视频/【动态变装】Wan2.2+Rapid-AIO-Mega 极速出片-图生视频-首尾帧 极速版_1982270135106977794.json
 hash: 2092fdd6ecd51cd4
 coverage: 0.857143
 learned_at: 2026-10-15 22:32:40

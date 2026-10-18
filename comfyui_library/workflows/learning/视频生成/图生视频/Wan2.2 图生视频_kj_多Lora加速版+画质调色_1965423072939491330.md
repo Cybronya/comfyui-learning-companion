@@ -4,7 +4,7 @@ name: Wan2.2 图生视频_kj_多Lora加速版+画质调色_1965423072939491330.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1965423072939491330.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 图生视频_kj_多Lora加速版+画质调色_1965423072939491330.json
 hash: 885f21d4f9b9d167
 coverage: 0.945946
 learned_at: 2026-10-15 22:31:37

@@ -4,7 +4,7 @@ name: 超高一致性WAN2.2多模态视频编辑_1987211259793838082.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987211259793838082.json
+file: comfyui_library/workflows/视频生成/图生视频/超高一致性WAN2.2多模态视频编辑_1987211259793838082.json
 hash: 879fc59441cd6211
 coverage: 0.773333
 learned_at: 2026-10-15 22:32:58

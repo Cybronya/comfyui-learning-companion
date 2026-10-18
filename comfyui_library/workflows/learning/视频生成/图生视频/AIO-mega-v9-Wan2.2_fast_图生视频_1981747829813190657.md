@@ -4,7 +4,7 @@ name: AIO-mega-v9-Wan2.2_fast_图生视频_1981747829813190657.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981747829813190657.json
+file: comfyui_library/workflows/视频生成/图生视频/AIO-mega-v9-Wan2.2_fast_图生视频_1981747829813190657.json
 hash: 571024b9514427f2
 coverage: 0.823529
 learned_at: 2026-10-15 22:32:38

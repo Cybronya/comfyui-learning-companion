@@ -4,7 +4,7 @@ name: 【KJ版】Wan2.2 14B加速文生视频-智能扩写提示词_195084453965
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950844539659550722.json
+file: comfyui_library/workflows/视频生成/文生视频/【KJ版】Wan2.2 14B加速文生视频-智能扩写提示词_1950844539659550722.json
 hash: c0398444e08d6b7c
 coverage: 0.75
 learned_at: 2026-10-15 22:43:37

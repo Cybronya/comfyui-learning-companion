@@ -4,7 +4,7 @@ name: InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998779897466249217.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk数字人图生视频-自动对口型（支持唱歌_说话） 浮云12.11 次用_1998779897466249217.json
 hash: 2ac166421c621c8c
 coverage: 0.6
 learned_at: 2026-10-15 22:33:34

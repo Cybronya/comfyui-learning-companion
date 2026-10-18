@@ -4,7 +4,7 @@ name: LTX2.3-i2v-kijai-三段式采样-细节更丰富_2041694294079184898.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041694294079184898.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-i2v-kijai-三段式采样-细节更丰富_2041694294079184898.json
 hash: 43efcb0715b9c8f5
 coverage: 0.558559
 learned_at: 2026-10-15 22:36:21

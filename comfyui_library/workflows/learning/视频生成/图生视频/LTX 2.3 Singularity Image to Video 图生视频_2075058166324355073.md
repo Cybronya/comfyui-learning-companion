@@ -4,7 +4,7 @@ name: LTX 2.3 Singularity Image to Video 图生视频_2075058166324355073.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075058166324355073.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 Singularity Image to Video 图生视频_2075058166324355073.json
 hash: be841d97cb6927dc
 coverage: 0.591398
 learned_at: 2026-10-15 22:41:20

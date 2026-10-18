@@ -4,7 +4,7 @@ name: 太极大师 豆包 seedream4.5转绘+seedance1.0视频推理_199843126953
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998431269535014914.json
+file: comfyui_library/workflows/视频生成/图生视频/太极大师 豆包 seedream4.5转绘+seedance1.0视频推理_1998431269535014914.json
 hash: cda7031f3e167d94
 coverage: 0.8
 learned_at: 2026-10-15 22:33:32

@@ -4,7 +4,7 @@ name: (Ai贞贞工坊版)全能视频S Pro 25S新图生视频V1（可选横竖�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977807207951728641.json
+file: comfyui_library/workflows/视频生成/图生视频/(Ai贞贞工坊版)全能视频S Pro 25S新图生视频V1（可选横竖屏频-基准价格1.7元）_1977807207951728641.json
 hash: e740a7d9e0f302a0
 coverage: 0.526316
 learned_at: 2026-10-15 22:32:16

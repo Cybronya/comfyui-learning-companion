@@ -4,7 +4,7 @@ name: WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1895182420566212609.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.1 Comfy-Org 文生视频官方原始工作流_1895182420566212609.json
 hash: 9b8f97b1655380b6
 coverage: 1
 learned_at: 2026-10-15 22:43:20

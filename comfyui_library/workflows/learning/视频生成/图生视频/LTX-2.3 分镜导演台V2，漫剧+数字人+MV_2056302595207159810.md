@@ -4,7 +4,7 @@ name: LTX-2.3 分镜导演台V2，漫剧+数字人+MV_2056302595207159810.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056302595207159810.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 分镜导演台V2，漫剧+数字人+MV_2056302595207159810.json
 hash: 02ad7d932abcd44b
 coverage: 0.958333
 learned_at: 2026-10-15 22:38:03

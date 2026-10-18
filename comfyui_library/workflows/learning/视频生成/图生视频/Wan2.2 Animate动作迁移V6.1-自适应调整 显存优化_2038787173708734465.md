@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移V6.1-自适应调整 显存优化_20387871737087
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038787173708734465.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移V6.1-自适应调整 显存优化_2038787173708734465.json
 hash: ec88a0ffc3505a6c
 coverage: 0.524138
 learned_at: 2026-10-15 22:36:04

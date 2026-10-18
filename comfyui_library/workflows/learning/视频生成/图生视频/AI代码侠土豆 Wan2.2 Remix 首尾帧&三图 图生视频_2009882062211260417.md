@@ -4,7 +4,7 @@ name: AI代码侠土豆 Wan2.2 Remix 首尾帧&三图 图生视频_2009882062211
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009882062211260417.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆 Wan2.2 Remix 首尾帧&三图 图生视频_2009882062211260417.json
 hash: f64af7b9bc97b31f
 coverage: 0.507937
 learned_at: 2026-10-15 22:34:15

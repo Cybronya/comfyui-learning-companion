@@ -4,7 +4,7 @@ name: LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066036494720126978.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Licon-MSR 多图参考正式版+反推提示词_2066036494720126978.json
 hash: 4cc8b68af6007007
 coverage: 0.926829
 learned_at: 2026-10-15 22:39:45

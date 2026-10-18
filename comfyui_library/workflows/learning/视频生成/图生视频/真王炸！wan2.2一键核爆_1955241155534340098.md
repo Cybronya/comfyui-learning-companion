@@ -4,7 +4,7 @@ name: 真王炸！wan2.2一键核爆_1955241155534340098.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955241155534340098.json
+file: comfyui_library/workflows/视频生成/图生视频/真王炸！wan2.2一键核爆_1955241155534340098.json
 hash: 12feadea28dcdb57
 coverage: 0.933333
 learned_at: 2026-10-15 22:31:07

@@ -4,7 +4,7 @@ name: 多种流行视频风格Wan2.1转绘(吉卜力_线稿_唐风等)_192520830
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1925208307319906306.json
+file: comfyui_library/workflows/视频生成/图生视频/多种流行视频风格Wan2.1转绘(吉卜力_线稿_唐风等)_1925208307319906306.json
 hash: cb80bdffb2128964
 coverage: 0.757009
 learned_at: 2026-10-15 22:29:51

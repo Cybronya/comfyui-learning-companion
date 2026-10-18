@@ -4,7 +4,7 @@ name: LTX2.3 prompt relay 提示词分段控制流_2052341800647569410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052341800647569410.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 prompt relay 提示词分段控制流_2052341800647569410.json
 hash: 0a6d871ef8593ba1
 coverage: 0.733333
 learned_at: 2026-10-15 22:37:29

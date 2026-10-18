@@ -4,7 +4,7 @@ name: vace_native_start_end_lightx超长视频生成_1943205882685775873.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1943205882685775873.json
+file: comfyui_library/workflows/视频生成/图生视频/vace_native_start_end_lightx超长视频生成_1943205882685775873.json
 hash: 35f33eb0f420b4af
 coverage: 0.464646
 learned_at: 2026-10-15 22:30:38

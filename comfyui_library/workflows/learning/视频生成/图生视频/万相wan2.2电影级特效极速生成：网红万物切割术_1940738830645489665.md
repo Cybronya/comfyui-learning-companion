@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：网红万物切割术_1940738830
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1940738830645489665.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：网红万物切割术_1940738830645489665.json
 hash: 5c6cb173bdeef471
 coverage: 1
 learned_at: 2026-10-15 22:30:34

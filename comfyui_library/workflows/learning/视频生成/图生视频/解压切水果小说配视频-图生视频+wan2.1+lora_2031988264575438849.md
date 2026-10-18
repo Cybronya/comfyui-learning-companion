@@ -4,7 +4,7 @@ name: 解压切水果小说配视频-图生视频+wan2.1+lora_203198826457543884
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031988264575438849.json
+file: comfyui_library/workflows/视频生成/图生视频/解压切水果小说配视频-图生视频+wan2.1+lora_2031988264575438849.json
 hash: 6a4f03e0e0a96885
 coverage: 0.903226
 learned_at: 2026-10-15 22:35:34

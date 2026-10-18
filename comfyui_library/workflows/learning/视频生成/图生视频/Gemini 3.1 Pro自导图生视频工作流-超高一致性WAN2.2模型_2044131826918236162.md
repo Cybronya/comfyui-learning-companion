@@ -4,7 +4,7 @@ name: Gemini 3.1 Pro自导图生视频工作流-超高一致性WAN2.2模型_2044
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044131826918236162.json
+file: comfyui_library/workflows/视频生成/图生视频/Gemini 3.1 Pro自导图生视频工作流-超高一致性WAN2.2模型_2044131826918236162.json
 hash: 540248a3d77ae4af
 coverage: 0.542857
 learned_at: 2026-10-15 22:36:36

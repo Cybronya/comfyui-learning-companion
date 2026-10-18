@@ -4,7 +4,7 @@ name: Ltx2.3-VBVR动作迁移唱歌跳舞视频_2046448992774524929.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046448992774524929.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3-VBVR动作迁移唱歌跳舞视频_2046448992774524929.json
 hash: bf72f727de39c792
 coverage: 0.425439
 learned_at: 2026-10-15 22:36:58

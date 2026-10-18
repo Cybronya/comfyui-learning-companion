@@ -4,7 +4,7 @@ name: 万相_Wan2.2图生视频官方版 基础工作流 旧版lightx2v加速_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953334432444895233.json
+file: comfyui_library/workflows/视频生成/图生视频/万相_Wan2.2图生视频官方版 基础工作流 旧版lightx2v加速_1953334432444895233.json
 hash: 1033ab57a56d4160
 coverage: 0.871795
 learned_at: 2026-10-15 22:31:04

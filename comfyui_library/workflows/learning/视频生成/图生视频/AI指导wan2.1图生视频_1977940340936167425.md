@@ -4,7 +4,7 @@ name: AI指导wan2.1图生视频_1977940340936167425.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977940340936167425.json
+file: comfyui_library/workflows/视频生成/图生视频/AI指导wan2.1图生视频_1977940340936167425.json
 hash: f29030a04766611e
 coverage: 1
 learned_at: 2026-10-15 22:32:16

@@ -4,7 +4,7 @@ name: LTX2.3-亲子搞笑对话-文_图生视频工作流_2081970099841495042.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081970099841495042.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-亲子搞笑对话-文_图生视频工作流_2081970099841495042.json
 hash: e8288ee9a3e38f14
 coverage: 0.943396
 learned_at: 2026-10-15 22:42:25

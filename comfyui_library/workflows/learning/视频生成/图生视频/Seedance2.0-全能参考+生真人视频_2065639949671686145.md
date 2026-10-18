@@ -4,7 +4,7 @@ name: Seedance2.0-全能参考+生真人视频_2065639949671686145.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065639949671686145.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0-全能参考+生真人视频_2065639949671686145.json
 hash: b368c710f4dbfdd5
 coverage: 1
 learned_at: 2026-10-15 22:39:42

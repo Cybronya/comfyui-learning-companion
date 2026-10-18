@@ -4,7 +4,7 @@ name: (闪亮)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983876509373005825.json
+file: comfyui_library/workflows/视频生成/图生视频/(闪亮)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注意力机制）_1983876509373005825.json
 hash: 4d57a10ec0a14af9
 coverage: 0.771429
 learned_at: 2026-10-15 22:32:46

@@ -4,7 +4,7 @@ name: Wan2.2 14B+Teacache+Sage 2.5图生视频加速版+视频放大_19500198858
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950019885810278402.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B+Teacache+Sage 2.5图生视频加速版+视频放大_1950019885810278402.json
 hash: 09025a4f82b9b08a
 coverage: 1
 learned_at: 2026-10-15 22:30:51

@@ -4,7 +4,7 @@ name: Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_20181
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018160297319604226.json
+file: comfyui_library/workflows/视频生成/图生视频/Work-Fisher-WanAnimate_Sec-人物迁移_动作迁移_长视频循环_2018160297319604226.json
 hash: a329e1d776411013
 coverage: 0.35567
 learned_at: 2026-10-15 22:34:53

@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 文生视频加速版V1（镜头距离）_195016520368303308
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950165203683033089.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（镜头距离）_1950165203683033089.json
 hash: 96354ebc1e70d64d
 coverage: 0.817518
 learned_at: 2026-10-15 22:43:34

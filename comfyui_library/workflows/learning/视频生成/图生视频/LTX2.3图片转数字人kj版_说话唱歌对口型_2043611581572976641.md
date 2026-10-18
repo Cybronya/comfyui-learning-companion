@@ -4,7 +4,7 @@ name: LTX2.3图片转数字人kj版_说话唱歌对口型_2043611581572976641.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043611581572976641.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图片转数字人kj版_说话唱歌对口型_2043611581572976641.json
 hash: 4d423ed09dabca63
 coverage: 0.490909
 learned_at: 2026-10-15 22:36:33

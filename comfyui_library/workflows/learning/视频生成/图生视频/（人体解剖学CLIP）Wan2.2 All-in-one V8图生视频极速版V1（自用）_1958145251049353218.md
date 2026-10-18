@@ -4,7 +4,7 @@ name: （人体解剖学CLIP）Wan2.2 All-in-one V8图生视频极速版V1（自
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958145251049353218.json
+file: comfyui_library/workflows/视频生成/图生视频/（人体解剖学CLIP）Wan2.2 All-in-one V8图生视频极速版V1（自用）_1958145251049353218.json
 hash: d6e88c0695a84bb7
 coverage: 1
 learned_at: 2026-10-15 22:31:21

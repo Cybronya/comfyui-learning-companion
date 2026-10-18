@@ -4,7 +4,7 @@ name: 【Supermate】LTX2.3单图视频(Gemma4））-还在调整_20487446308202
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048744630820278273.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】LTX2.3单图视频(Gemma4））-还在调整_2048744630820278273.json
 hash: a0f653ca9d411cfc
 coverage: 0.898305
 learned_at: 2026-10-15 22:37:11

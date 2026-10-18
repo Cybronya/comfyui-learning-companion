@@ -4,7 +4,7 @@ name: LTX2.3 超强音频数字人MV  支持文生_单_多帧Full版_20310340668
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031034066862084097.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 超强音频数字人MV  支持文生_单_多帧Full版_2031034066862084097.json
 hash: 55ad025c7c53038c
 coverage: 0.851485
 learned_at: 2026-10-15 22:35:29

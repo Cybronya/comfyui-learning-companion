@@ -4,7 +4,7 @@ name: Radial加速+Lightx2v-Rank128 V2.0增强细节视频生成_202150113644380
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021501136443805698.json
+file: comfyui_library/workflows/视频生成/图生视频/Radial加速+Lightx2v-Rank128 V2.0增强细节视频生成_2021501136443805698.json
 hash: c734bba59bc9ebd2
 coverage: 0.83871
 learned_at: 2026-10-15 22:35:08

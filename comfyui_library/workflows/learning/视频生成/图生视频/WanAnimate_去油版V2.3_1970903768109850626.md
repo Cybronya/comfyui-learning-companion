@@ -4,7 +4,7 @@ name: WanAnimate_去油版V2.3_1970903768109850626.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970903768109850626.json
+file: comfyui_library/workflows/视频生成/图生视频/WanAnimate_去油版V2.3_1970903768109850626.json
 hash: b78784f5f20538f2
 coverage: 0.527473
 learned_at: 2026-10-15 22:31:54

@@ -4,7 +4,7 @@ name: wan2.2 fun奖励LORA【更好动态 更多细节】_1967387631761940481.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1967387631761940481.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 fun奖励LORA【更好动态 更多细节】_1967387631761940481.json
 hash: 21581476b542f731
 coverage: 0.852941
 learned_at: 2026-10-15 22:43:45

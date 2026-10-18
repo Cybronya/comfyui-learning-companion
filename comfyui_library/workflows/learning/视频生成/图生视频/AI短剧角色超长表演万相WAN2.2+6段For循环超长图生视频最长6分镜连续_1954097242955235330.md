@@ -4,7 +4,7 @@ name: AI短剧角色超长表演万相WAN2.2+6段For循环超长图生视频最�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954097242955235330.json
+file: comfyui_library/workflows/视频生成/图生视频/AI短剧角色超长表演万相WAN2.2+6段For循环超长图生视频最长6分镜连续_1954097242955235330.json
 hash: 76612572277b139c
 coverage: 1
 learned_at: 2026-10-15 22:31:06

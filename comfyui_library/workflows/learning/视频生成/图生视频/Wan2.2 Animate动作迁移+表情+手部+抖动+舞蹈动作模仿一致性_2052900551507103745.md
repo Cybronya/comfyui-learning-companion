@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移+表情+手部+抖动+舞蹈动作模仿一致�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052900551507103745.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移+表情+手部+抖动+舞蹈动作模仿一致性_2052900551507103745.json
 hash: 26d8732a3947b534
 coverage: 0.510791
 learned_at: 2026-10-15 22:37:33

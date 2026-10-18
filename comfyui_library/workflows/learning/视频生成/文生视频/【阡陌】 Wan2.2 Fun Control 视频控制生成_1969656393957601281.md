@@ -4,7 +4,7 @@ name: 【阡陌】 Wan2.2 Fun Control 视频控制生成_1969656393957601281.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969656393957601281.json
+file: comfyui_library/workflows/视频生成/文生视频/【阡陌】 Wan2.2 Fun Control 视频控制生成_1969656393957601281.json
 hash: 9b5ac4094199ee17
 coverage: 1
 learned_at: 2026-10-15 22:43:47

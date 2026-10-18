@@ -4,7 +4,7 @@ name: wan2.2+bro-lora+动作迁移_1968333951213416449.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968333951213416449.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+bro-lora+动作迁移_1968333951213416449.json
 hash: e8733dafb282c552
 coverage: 0.644737
 learned_at: 2026-10-15 22:31:44

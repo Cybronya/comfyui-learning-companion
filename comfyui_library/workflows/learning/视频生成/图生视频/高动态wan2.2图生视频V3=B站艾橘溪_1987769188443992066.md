@@ -4,7 +4,7 @@ name: 高动态wan2.2图生视频V3=B站艾橘溪_1987769188443992066.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987769188443992066.json
+file: comfyui_library/workflows/视频生成/图生视频/高动态wan2.2图生视频V3=B站艾橘溪_1987769188443992066.json
 hash: 6bf97170a15bd735
 coverage: 0.702128
 learned_at: 2026-10-15 22:33:00

@@ -4,7 +4,7 @@ name: 首尾帧视频-MEGA_Merge-WAN2.2-AllInOne_1968865825916690433.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968865825916690433.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧视频-MEGA_Merge-WAN2.2-AllInOne_1968865825916690433.json
 hash: 48cec688d9ad8291
 coverage: 0.947368
 learned_at: 2026-10-15 22:31:46

@@ -4,7 +4,7 @@ name: Wan2.1 最新 FusionX 2分钟极速出视频_1942175633449578497.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1942175633449578497.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 最新 FusionX 2分钟极速出视频_1942175633449578497.json
 hash: 8b28514f2adc94eb
 coverage: 0.916667
 learned_at: 2026-10-15 22:30:36

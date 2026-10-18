@@ -4,7 +4,7 @@ name: Wan 2.2 图生视频｜极致丝滑_1982290285344497666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982290285344497666.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 图生视频｜极致丝滑_1982290285344497666.json
 hash: e7c7b6245873c485
 coverage: 0.762712
 learned_at: 2026-10-15 22:32:40

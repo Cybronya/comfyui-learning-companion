@@ -4,7 +4,7 @@ name: Wan2.2-i2v-rapid-aio-融合模型图生视频+4步快速生成_19519694461
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951969446145544194.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-i2v-rapid-aio-融合模型图生视频+4步快速生成_1951969446145544194.json
 hash: 27ae5e5ecd43b0ff
 coverage: 0.75
 learned_at: 2026-10-15 22:30:59

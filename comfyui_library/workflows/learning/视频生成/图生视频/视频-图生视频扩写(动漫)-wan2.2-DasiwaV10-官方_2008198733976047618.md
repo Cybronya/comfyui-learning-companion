@@ -4,7 +4,7 @@ name: 视频-图生视频扩写(动漫)-wan2.2-DasiwaV10-官方_2008198733976047
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008198733976047618.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图生视频扩写(动漫)-wan2.2-DasiwaV10-官方_2008198733976047618.json
 hash: 20b0513136a1908b
 coverage: 0.638889
 learned_at: 2026-10-15 22:34:06

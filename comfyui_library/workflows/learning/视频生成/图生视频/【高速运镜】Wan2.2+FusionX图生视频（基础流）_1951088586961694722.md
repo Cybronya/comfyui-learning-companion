@@ -4,7 +4,7 @@ name: 【高速运镜】Wan2.2+FusionX图生视频（基础流）_19510885869616
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951088586961694722.json
+file: comfyui_library/workflows/视频生成/图生视频/【高速运镜】Wan2.2+FusionX图生视频（基础流）_1951088586961694722.json
 hash: 89557dc54e4fc0a0
 coverage: 0.666667
 learned_at: 2026-10-15 22:30:57

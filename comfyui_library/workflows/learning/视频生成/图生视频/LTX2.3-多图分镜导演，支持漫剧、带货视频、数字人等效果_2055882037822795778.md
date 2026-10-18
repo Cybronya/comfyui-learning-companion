@@ -4,7 +4,7 @@ name: LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055882037822795778.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-多图分镜导演，支持漫剧、带货视频、数字人等效果_2055882037822795778.json
 hash: 6881ab7fa34bf04e
 coverage: 0.829268
 learned_at: 2026-10-15 22:37:59

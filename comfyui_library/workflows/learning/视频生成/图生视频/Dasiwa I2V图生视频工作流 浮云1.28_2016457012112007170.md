@@ -4,7 +4,7 @@ name: Dasiwa I2V图生视频工作流 浮云1.28_2016457012112007170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016457012112007170.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa I2V图生视频工作流 浮云1.28_2016457012112007170.json
 hash: 80dc75598b7c4440
 coverage: 0.769231
 learned_at: 2026-10-15 22:34:42

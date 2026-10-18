@@ -4,7 +4,7 @@ name: Flux-klein+wan2.2 一图成片_2014663951241453570.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014663951241453570.json
+file: comfyui_library/workflows/视频生成/图生视频/Flux-klein+wan2.2 一图成片_2014663951241453570.json
 hash: 028a5198d2369206
 coverage: 0.859574
 learned_at: 2026-10-15 22:34:36

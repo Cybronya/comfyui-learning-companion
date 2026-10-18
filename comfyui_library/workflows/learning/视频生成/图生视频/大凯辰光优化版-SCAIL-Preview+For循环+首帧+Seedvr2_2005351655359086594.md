@@ -4,7 +4,7 @@ name: 大凯辰光优化版-SCAIL-Preview+For循环+首帧+Seedvr2_2005351655359
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005351655359086594.json
+file: comfyui_library/workflows/视频生成/图生视频/大凯辰光优化版-SCAIL-Preview+For循环+首帧+Seedvr2_2005351655359086594.json
 hash: d279d5a58c6ca1e3
 coverage: 0.5
 learned_at: 2026-10-15 22:33:56

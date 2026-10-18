@@ -4,7 +4,7 @@ name: 【阡陌】SageAttention+wan2.2+light4步加速lora提速40%文生视频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968491886845546497.json
+file: comfyui_library/workflows/视频生成/文生视频/【阡陌】SageAttention+wan2.2+light4步加速lora提速40%文生视频工作流_1968491886845546497.json
 hash: b61e8e38a887a01a
 coverage: 1
 learned_at: 2026-10-15 22:43:45

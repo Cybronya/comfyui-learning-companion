@@ -4,7 +4,7 @@ name: 动作迁移 wan22 wan2.2 SteadyDancer 角色替换_2041796686720274433.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041796686720274433.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移 wan22 wan2.2 SteadyDancer 角色替换_2041796686720274433.json
 hash: 20b62c630cbe2b44
 coverage: 0.8
 learned_at: 2026-10-15 22:36:22

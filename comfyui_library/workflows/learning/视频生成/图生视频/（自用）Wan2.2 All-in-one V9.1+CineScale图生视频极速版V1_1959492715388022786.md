@@ -4,7 +4,7 @@ name: （自用）Wan2.2 All-in-one V9.1+CineScale图生视频极速版V1_195949
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1959492715388022786.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 All-in-one V9.1+CineScale图生视频极速版V1_1959492715388022786.json
 hash: 30f8cfbac60fb78b
 coverage: 1
 learned_at: 2026-10-15 22:31:24

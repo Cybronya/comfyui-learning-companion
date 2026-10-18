@@ -4,7 +4,7 @@ name: WAN2.2_multitalk数字人（动作幅度较大）_1953061353666899969.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953061353666899969.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2_multitalk数字人（动作幅度较大）_1953061353666899969.json
 hash: d2886291c65848a7
 coverage: 0.975
 learned_at: 2026-10-15 22:31:04

@@ -4,7 +4,7 @@ name: 电商Ltx 2.3 Dasiwa V3最强人脸一致性-图生视频-自动提示词_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071794248864845826.json
+file: comfyui_library/workflows/视频生成/图生视频/电商Ltx 2.3 Dasiwa V3最强人脸一致性-图生视频-自动提示词_2071794248864845826.json
 hash: f6c25bdfc9d0b7fc
 coverage: 0.944444
 learned_at: 2026-10-15 22:40:48

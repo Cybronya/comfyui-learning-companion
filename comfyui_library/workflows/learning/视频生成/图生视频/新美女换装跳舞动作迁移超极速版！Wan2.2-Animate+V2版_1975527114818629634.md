@@ -4,7 +4,7 @@ name: 新美女换装跳舞动作迁移超极速版！Wan2.2-Animate+V2版_19755
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975527114818629634.json
+file: comfyui_library/workflows/视频生成/图生视频/新美女换装跳舞动作迁移超极速版！Wan2.2-Animate+V2版_1975527114818629634.json
 hash: 2198a8d7e0f3ba66
 coverage: 0.855769
 learned_at: 2026-10-15 22:32:08

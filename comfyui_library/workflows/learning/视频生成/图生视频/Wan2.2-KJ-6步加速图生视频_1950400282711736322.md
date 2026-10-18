@@ -4,7 +4,7 @@ name: Wan2.2-KJ-6步加速图生视频_1950400282711736322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950400282711736322.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-KJ-6步加速图生视频_1950400282711736322.json
 hash: 2f8cfa4130ebdc59
 coverage: 0.852941
 learned_at: 2026-10-15 22:30:54

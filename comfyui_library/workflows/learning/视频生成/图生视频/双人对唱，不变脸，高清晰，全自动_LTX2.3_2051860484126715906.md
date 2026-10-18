@@ -4,7 +4,7 @@ name: 双人对唱，不变脸，高清晰，全自动_LTX2.3_205186048412671590
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051860484126715906.json
+file: comfyui_library/workflows/视频生成/图生视频/双人对唱，不变脸，高清晰，全自动_LTX2.3_2051860484126715906.json
 hash: c88f03d07ce0a891
 coverage: 0.6875
 learned_at: 2026-10-15 22:37:24

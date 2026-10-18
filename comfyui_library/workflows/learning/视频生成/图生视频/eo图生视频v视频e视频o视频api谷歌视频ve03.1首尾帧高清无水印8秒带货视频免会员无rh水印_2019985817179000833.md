@@ -4,7 +4,7 @@ name: eo图生视频v视频e视频o视频api谷歌视频ve03.1首尾帧高清无
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019985817179000833.json
+file: comfyui_library/workflows/视频生成/图生视频/eo图生视频v视频e视频o视频api谷歌视频ve03.1首尾帧高清无水印8秒带货视频免会员无rh水印_2019985817179000833.json
 hash: 2c5e9b865111ba54
 coverage: 0.529412
 learned_at: 2026-10-15 22:35:05

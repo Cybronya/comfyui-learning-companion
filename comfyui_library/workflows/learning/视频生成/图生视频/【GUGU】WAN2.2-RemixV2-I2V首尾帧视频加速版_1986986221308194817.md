@@ -4,7 +4,7 @@ name: 【GUGU】WAN2.2-RemixV2-I2V首尾帧视频加速版_1986986221308194817.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986986221308194817.json
+file: comfyui_library/workflows/视频生成/图生视频/【GUGU】WAN2.2-RemixV2-I2V首尾帧视频加速版_1986986221308194817.json
 hash: 8f6c72223986012f
 coverage: 0.965517
 learned_at: 2026-10-15 22:32:57

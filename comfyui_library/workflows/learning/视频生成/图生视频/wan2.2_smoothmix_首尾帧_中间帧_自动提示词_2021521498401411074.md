@@ -4,7 +4,7 @@ name: wan2.2_smoothmix_首尾帧_中间帧_自动提示词_2021521498401411074.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021521498401411074.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_smoothmix_首尾帧_中间帧_自动提示词_2021521498401411074.json
 hash: 387f3dc5babf6f8f
 coverage: 0.945946
 learned_at: 2026-10-15 22:35:08

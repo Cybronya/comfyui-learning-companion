@@ -4,7 +4,7 @@ name: LTX导演台2.0白模驱动视频工作流_2074291321979891714.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074291321979891714.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX导演台2.0白模驱动视频工作流_2074291321979891714.json
 hash: f27f294d65b2d420
 coverage: 0.972222
 learned_at: 2026-10-15 22:41:13

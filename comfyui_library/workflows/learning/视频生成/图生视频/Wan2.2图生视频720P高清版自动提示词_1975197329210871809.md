@@ -4,7 +4,7 @@ name: Wan2.2图生视频720P高清版自动提示词_1975197329210871809.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975197329210871809.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频720P高清版自动提示词_1975197329210871809.json
 hash: 70b7b5c01a200264
 coverage: 0.888889
 learned_at: 2026-10-15 22:32:07

@@ -4,7 +4,7 @@ name: Comfy挑战赛4 Qwen image+Wan2.2 Fun Vace全身姿势控制V1_19666951327
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966695132777099266.json
+file: comfyui_library/workflows/视频生成/图生视频/Comfy挑战赛4 Qwen image+Wan2.2 Fun Vace全身姿势控制V1_1966695132777099266.json
 hash: 6d74d50db5a750c0
 coverage: 0.919463
 learned_at: 2026-10-15 22:31:39

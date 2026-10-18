@@ -4,7 +4,7 @@ name: KJ-Infinitetalk+wan2.1优化提速视频生成口播数字人唱歌数字�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958763017179721730.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ-Infinitetalk+wan2.1优化提速视频生成口播数字人唱歌数字人_1958763017179721730.json
 hash: 8fc64a8079f6037f
 coverage: 0.7
 learned_at: 2026-10-15 22:31:23

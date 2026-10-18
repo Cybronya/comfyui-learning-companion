@@ -4,7 +4,7 @@ name: (Kpop舞蹈)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049385407271411714.json
+file: comfyui_library/workflows/视频生成/图生视频/(Kpop舞蹈)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049385407271411714.json
 hash: e2d8e65ffeaf7076
 coverage: 1
 learned_at: 2026-10-15 22:37:13

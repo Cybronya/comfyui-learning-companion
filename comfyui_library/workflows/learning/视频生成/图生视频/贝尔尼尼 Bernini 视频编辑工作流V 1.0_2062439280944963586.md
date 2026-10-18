@@ -4,7 +4,7 @@ name: 贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062439280944963586.json
+file: comfyui_library/workflows/视频生成/图生视频/贝尔尼尼 Bernini 视频编辑工作流V 1.0_2062439280944963586.json
 hash: 8807f1a666913904
 coverage: 0.924528
 learned_at: 2026-10-15 22:39:04

@@ -4,7 +4,7 @@ name: 全能视频S.0(15秒）文生视频全能视频S.0openai10s1080p高清视
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975796073170079746.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S.0(15秒）文生视频全能视频S.0openai10s1080p高清视频_1975796073170079746.json
 hash: d6708bfd17340546
 coverage: 1
 learned_at: 2026-10-15 22:32:09

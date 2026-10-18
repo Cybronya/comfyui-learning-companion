@@ -4,7 +4,7 @@ name: (九宫格视频)Seedance2.0多参视频（贞贞的AI工坊-修改分组s
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047501855911055361.json
+file: comfyui_library/workflows/视频生成/图生视频/(九宫格视频)Seedance2.0多参视频（贞贞的AI工坊-修改分组sd-global）_2047501855911055361.json
 hash: d800762552f29d76
 coverage: 0.875
 learned_at: 2026-10-15 22:37:05

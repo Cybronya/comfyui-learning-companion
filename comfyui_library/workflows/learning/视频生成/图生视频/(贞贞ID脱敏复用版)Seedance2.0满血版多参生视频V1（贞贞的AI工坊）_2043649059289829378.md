@@ -4,7 +4,7 @@ name: (贞贞ID脱敏复用版)Seedance2.0满血版多参生视频V1（贞贞的
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043649059289829378.json
+file: comfyui_library/workflows/视频生成/图生视频/(贞贞ID脱敏复用版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊）_2043649059289829378.json
 hash: d334778d25d46e38
 coverage: 0.7
 learned_at: 2026-10-15 22:36:33

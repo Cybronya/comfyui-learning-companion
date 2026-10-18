@@ -4,7 +4,7 @@ name: Wan2.1 多关键帧_1949705489898184706.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949705489898184706.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 多关键帧_1949705489898184706.json
 hash: 3de3d63ff3f3edf2
 coverage: 0.914286
 learned_at: 2026-10-15 22:30:50

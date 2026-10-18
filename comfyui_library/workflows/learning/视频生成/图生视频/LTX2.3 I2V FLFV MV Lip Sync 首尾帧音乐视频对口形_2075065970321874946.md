@@ -4,7 +4,7 @@ name: LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_207506597032187
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075065970321874946.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 I2V FLFV MV Lip Sync 首尾帧音乐视频对口形_2075065970321874946.json
 hash: d6898e881d1f5324
 coverage: 0.568966
 learned_at: 2026-10-15 22:41:21

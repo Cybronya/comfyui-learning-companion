@@ -4,7 +4,7 @@ name: wan 2.1  视频编辑vace工作流_1907301627349622785.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1907301627349622785.json
+file: comfyui_library/workflows/视频生成/图生视频/wan 2.1  视频编辑vace工作流_1907301627349622785.json
 hash: 443518680e318f78
 coverage: 0.944444
 learned_at: 2026-10-15 22:29:27

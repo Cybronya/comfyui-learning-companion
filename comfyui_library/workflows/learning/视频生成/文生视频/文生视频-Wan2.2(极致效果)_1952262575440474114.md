@@ -4,7 +4,7 @@ name: 文生视频-Wan2.2(极致效果)_1952262575440474114.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1952262575440474114.json
+file: comfyui_library/workflows/视频生成/文生视频/文生视频-Wan2.2(极致效果)_1952262575440474114.json
 hash: 51bb6f6b82bcd853
 coverage: 0.481013
 learned_at: 2026-10-15 22:43:38

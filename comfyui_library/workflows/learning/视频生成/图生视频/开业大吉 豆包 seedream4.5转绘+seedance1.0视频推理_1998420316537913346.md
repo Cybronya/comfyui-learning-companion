@@ -4,7 +4,7 @@ name: 开业大吉 豆包 seedream4.5转绘+seedance1.0视频推理_199842031653
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998420316537913346.json
+file: comfyui_library/workflows/视频生成/图生视频/开业大吉 豆包 seedream4.5转绘+seedance1.0视频推理_1998420316537913346.json
 hash: 5a6757fe102a4bb2
 coverage: 1
 learned_at: 2026-10-15 22:33:31

@@ -4,7 +4,7 @@ name: （KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962399741415919617.json
+file: comfyui_library/workflows/视频生成/图生视频/（KJ版）Wan2.2 S2V全身姿势控制数字人V1_1962399741415919617.json
 hash: 3e1dec323f4ed733
 coverage: 0.677419
 learned_at: 2026-10-15 22:31:30

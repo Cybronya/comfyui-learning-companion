@@ -4,7 +4,7 @@ name: 数字人直播+虚拟美女模特+LTX2.3数字人++图生视频极速版L
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046755636465115137.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人直播+虚拟美女模特+LTX2.3数字人++图生视频极速版LTX2.3+数字人话+唱歌_2046755636465115137.json
 hash: c1f9be94e49eb3ad
 coverage: 0.815385
 learned_at: 2026-10-15 22:37:00

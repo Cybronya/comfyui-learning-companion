@@ -4,7 +4,7 @@ name: wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1925016376795144194.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 极速动作模仿 动作迁移 跳舞_1925016376795144194.json
 hash: 084599f21c29819f
 coverage: 0.636364
 learned_at: 2026-10-15 22:43:25

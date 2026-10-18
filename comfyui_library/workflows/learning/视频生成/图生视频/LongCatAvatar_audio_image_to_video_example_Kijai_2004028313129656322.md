@@ -4,7 +4,7 @@ name: LongCatAvatar_audio_image_to_video_example_Kijai_2004028313129656322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004028313129656322.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCatAvatar_audio_image_to_video_example_Kijai_2004028313129656322.json
 hash: 0540c5793f39d8a4
 coverage: 0.431373
 learned_at: 2026-10-15 22:33:52

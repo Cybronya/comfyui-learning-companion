@@ -4,7 +4,7 @@ name: WAN2.2-LightX2V-I2V 图生视频最强动态搭配_1982410881613078529.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982410881613078529.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-LightX2V-I2V 图生视频最强动态搭配_1982410881613078529.json
 hash: eae8a3cda3d61476
 coverage: 0.792453
 learned_at: 2026-10-15 22:32:41

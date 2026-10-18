@@ -4,7 +4,7 @@ name: Dasiwa V9模型VS Wan2.2 Smooth V2模型图生视频对比_201176281308096
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011762813080965122.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa V9模型VS Wan2.2 Smooth V2模型图生视频对比_2011762813080965122.json
 hash: 0ddd2a2236c242e7
 coverage: 0.764706
 learned_at: 2026-10-15 22:34:24

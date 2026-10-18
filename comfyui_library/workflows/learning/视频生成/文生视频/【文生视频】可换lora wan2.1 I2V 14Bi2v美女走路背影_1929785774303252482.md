@@ -4,7 +4,7 @@ name: 【文生视频】可换lora wan2.1 I2V 14Bi2v美女走路背影_192978577
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1929785774303252482.json
+file: comfyui_library/workflows/视频生成/文生视频/【文生视频】可换lora wan2.1 I2V 14Bi2v美女走路背影_1929785774303252482.json
 hash: 3be94f658f6584ca
 coverage: 0.717391
 learned_at: 2026-10-15 22:43:25

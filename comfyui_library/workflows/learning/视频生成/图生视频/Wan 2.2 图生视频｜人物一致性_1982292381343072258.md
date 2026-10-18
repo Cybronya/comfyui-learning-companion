@@ -4,7 +4,7 @@ name: Wan 2.2 图生视频｜人物一致性_1982292381343072258.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982292381343072258.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 图生视频｜人物一致性_1982292381343072258.json
 hash: 101bdedb45170af2
 coverage: 0.762712
 learned_at: 2026-10-15 22:32:40

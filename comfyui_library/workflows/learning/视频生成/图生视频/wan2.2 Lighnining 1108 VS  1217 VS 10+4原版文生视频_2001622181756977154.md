@@ -4,7 +4,7 @@ name: wan2.2 Lighnining 1108 VS  1217 VS 10+4原版文生视频_2001622181756977
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001622181756977154.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 Lighnining 1108 VS  1217 VS 10+4原版文生视频_2001622181756977154.json
 hash: 341fb4f91bb47dbc
 coverage: 0.988889
 learned_at: 2026-10-15 22:33:46

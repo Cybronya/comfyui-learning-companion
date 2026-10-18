@@ -4,7 +4,7 @@ name: Smooth V2 图生视频工作流 浮云1.27_2016059757810950146.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016059757810950146.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth V2 图生视频工作流 浮云1.27_2016059757810950146.json
 hash: bf4379b17b050aa2
 coverage: 0.77551
 learned_at: 2026-10-15 22:34:41

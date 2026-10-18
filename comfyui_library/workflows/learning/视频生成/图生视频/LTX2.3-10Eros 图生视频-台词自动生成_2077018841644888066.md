@@ -4,7 +4,7 @@ name: LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077018841644888066.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-10Eros 图生视频-台词自动生成_2077018841644888066.json
 hash: b21dbd0cdc02036f
 coverage: 0.947368
 learned_at: 2026-10-15 22:41:36

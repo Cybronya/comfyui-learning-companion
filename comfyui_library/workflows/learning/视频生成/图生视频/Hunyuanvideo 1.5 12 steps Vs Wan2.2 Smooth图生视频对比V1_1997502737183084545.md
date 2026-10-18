@@ -4,7 +4,7 @@ name: Hunyuanvideo 1.5 12 steps Vs Wan2.2 Smooth图生视频对比V1_19975027371
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997502737183084545.json
+file: comfyui_library/workflows/视频生成/图生视频/Hunyuanvideo 1.5 12 steps Vs Wan2.2 Smooth图生视频对比V1_1997502737183084545.json
 hash: 3beeca04e7ca029b
 coverage: 0.794872
 learned_at: 2026-10-15 22:33:29

@@ -4,7 +4,7 @@ name: LTX2.3-时间线分镜-PromptRelay-图生视频_2054823248579317761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054823248579317761.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-时间线分镜-PromptRelay-图生视频_2054823248579317761.json
 hash: b93f7c0fdf8a1d91
 coverage: 0.8
 learned_at: 2026-10-15 22:37:52

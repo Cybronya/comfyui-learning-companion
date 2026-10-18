@@ -4,7 +4,7 @@ name: 【阡陌】Wan2.2-S2V 数字人说唱音频图片驱动视频生成_19686
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968654638591430657.json
+file: comfyui_library/workflows/视频生成/图生视频/【阡陌】Wan2.2-S2V 数字人说唱音频图片驱动视频生成_1968654638591430657.json
 hash: 2c7c90aa28e9120f
 coverage: 0.787879
 learned_at: 2026-10-15 22:31:46

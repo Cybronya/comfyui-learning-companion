@@ -4,7 +4,7 @@ name: LTX2.3-音频数字人(双采样高清版)_2050231422836846593.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050231422836846593.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-音频数字人(双采样高清版)_2050231422836846593.json
 hash: 1291f482de1f40d8
 coverage: 0.547826
 learned_at: 2026-10-15 22:37:17

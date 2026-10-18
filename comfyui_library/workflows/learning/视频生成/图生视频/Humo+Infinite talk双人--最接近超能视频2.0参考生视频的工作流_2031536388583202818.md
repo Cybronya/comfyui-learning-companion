@@ -4,7 +4,7 @@ name: Humo+Infinite talk双人--最接近超能视频2.0参考生视频的工作
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031536388583202818.json
+file: comfyui_library/workflows/视频生成/图生视频/Humo+Infinite talk双人--最接近超能视频2.0参考生视频的工作流_2031536388583202818.json
 hash: 296cb4e1ebd94632
 coverage: 0.9875
 learned_at: 2026-10-15 22:35:31

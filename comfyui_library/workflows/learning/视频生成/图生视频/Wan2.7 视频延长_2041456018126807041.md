@@ -4,7 +4,7 @@ name: Wan2.7 视频延长_2041456018126807041.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041456018126807041.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.7 视频延长_2041456018126807041.json
 hash: e2e6ace60ecc7ba5
 coverage: 1
 learned_at: 2026-10-15 22:36:20

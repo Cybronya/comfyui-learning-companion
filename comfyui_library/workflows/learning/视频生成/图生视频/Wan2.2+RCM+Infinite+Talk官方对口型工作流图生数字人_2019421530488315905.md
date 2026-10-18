@@ -4,7 +4,7 @@ name: Wan2.2+RCM+Infinite+Talk官方对口型工作流图生数字人_2019421530
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019421530488315905.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+RCM+Infinite+Talk官方对口型工作流图生数字人_2019421530488315905.json
 hash: d99ad73d006da5f5
 coverage: 1
 learned_at: 2026-10-15 22:35:02

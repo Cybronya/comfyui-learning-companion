@@ -4,7 +4,7 @@ name: LTX2.3导演台工作流、短剧多分镜编辑合并、多人对口型 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057726231881281537.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演台工作流、短剧多分镜编辑合并、多人对口型 、数字人唱歌_2057726231881281537.json
 hash: 00efe0b20f6ff204
 coverage: 0.945946
 learned_at: 2026-10-15 22:38:14

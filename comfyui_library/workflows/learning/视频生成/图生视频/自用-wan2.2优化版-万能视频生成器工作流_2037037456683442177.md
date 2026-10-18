@@ -4,7 +4,7 @@ name: 自用-wan2.2优化版-万能视频生成器工作流_2037037456683442177.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037037456683442177.json
+file: comfyui_library/workflows/视频生成/图生视频/自用-wan2.2优化版-万能视频生成器工作流_2037037456683442177.json
 hash: e7e545392d3e6d1e
 coverage: 0.432432
 learned_at: 2026-10-15 22:35:54

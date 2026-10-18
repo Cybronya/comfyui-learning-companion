@@ -4,7 +4,7 @@ name: Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1938242650158071810.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_VACE_FusionX视频动作迁移_1938242650158071810.json
 hash: f64e141b6168f1d1
 coverage: 0.731707
 learned_at: 2026-10-15 22:30:31

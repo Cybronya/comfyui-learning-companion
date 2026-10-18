@@ -4,7 +4,7 @@ name: 【老金驿站】Wan2.1文生视频CFGZeroStar加强版_19072282261278474
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1907228226127847425.json
+file: comfyui_library/workflows/视频生成/文生视频/【老金驿站】Wan2.1文生视频CFGZeroStar加强版_1907228226127847425.json
 hash: 0b36a27cf58c7b15
 coverage: 1
 learned_at: 2026-10-15 22:43:21

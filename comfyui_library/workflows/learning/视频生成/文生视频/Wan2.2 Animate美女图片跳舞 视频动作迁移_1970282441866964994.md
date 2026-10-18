@@ -4,7 +4,7 @@ name: Wan2.2 Animate美女图片跳舞 视频动作迁移_1970282441866964994.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1970282441866964994.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 Animate美女图片跳舞 视频动作迁移_1970282441866964994.json
 hash: 0572ad9a7bea58b1
 coverage: 0.833333
 learned_at: 2026-10-15 22:43:47

@@ -4,7 +4,7 @@ name: wan2.1 水下潜水动画_1937316067234758658.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1937316067234758658.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 水下潜水动画_1937316067234758658.json
 hash: 845843fe98d88393
 coverage: 1
 learned_at: 2026-10-15 22:43:29

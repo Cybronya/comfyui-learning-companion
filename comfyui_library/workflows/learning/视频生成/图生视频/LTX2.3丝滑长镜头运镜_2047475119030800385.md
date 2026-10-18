@@ -4,7 +4,7 @@ name: LTX2.3丝滑长镜头运镜_2047475119030800385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047475119030800385.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3丝滑长镜头运镜_2047475119030800385.json
 hash: a605a4fd13426550
 coverage: 0.688889
 learned_at: 2026-10-15 22:37:05

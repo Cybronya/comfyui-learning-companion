@@ -4,7 +4,7 @@ name: LTX2.3 Dasiwa Vdieo Gen 大丝袜 ltx2.3视频生成_2080319460522680321.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080319460522680321.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Dasiwa Vdieo Gen 大丝袜 ltx2.3视频生成_2080319460522680321.json
 hash: 0a192ad914ed4f97
 coverage: 0.588889
 learned_at: 2026-10-15 22:42:12

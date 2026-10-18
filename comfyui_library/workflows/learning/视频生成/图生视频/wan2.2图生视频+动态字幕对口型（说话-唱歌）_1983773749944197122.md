@@ -4,7 +4,7 @@ name: wan2.2图生视频+动态字幕对口型（说话-唱歌）_19837737499441
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983773749944197122.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频+动态字幕对口型（说话-唱歌）_1983773749944197122.json
 hash: 05ca429b1547a636
 coverage: 0.897059
 learned_at: 2026-10-15 22:32:46

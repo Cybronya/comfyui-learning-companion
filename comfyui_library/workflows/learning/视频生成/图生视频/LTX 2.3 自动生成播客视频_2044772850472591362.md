@@ -4,7 +4,7 @@ name: LTX 2.3 自动生成播客视频_2044772850472591362.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044772850472591362.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 自动生成播客视频_2044772850472591362.json
 hash: ab5b0f556a2de8e8
 coverage: 0.928571
 learned_at: 2026-10-15 22:36:41

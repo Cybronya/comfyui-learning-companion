@@ -4,7 +4,7 @@ name: Wan2.2_Remix（首尾帧)_2001276328982740993.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001276328982740993.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_Remix（首尾帧)_2001276328982740993.json
 hash: fcb767b2f5746963
 coverage: 0.589286
 learned_at: 2026-10-15 22:33:45

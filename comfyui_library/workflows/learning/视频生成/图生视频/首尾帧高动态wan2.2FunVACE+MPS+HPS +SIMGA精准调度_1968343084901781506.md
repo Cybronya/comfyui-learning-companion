@@ -4,7 +4,7 @@ name: 首尾帧高动态wan2.2FunVACE+MPS+HPS +SIMGA精准调度_196834308490178
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968343084901781506.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧高动态wan2.2FunVACE+MPS+HPS +SIMGA精准调度_1968343084901781506.json
 hash: 4971536f21e8d6a0
 coverage: 0.953488
 learned_at: 2026-10-15 22:31:45

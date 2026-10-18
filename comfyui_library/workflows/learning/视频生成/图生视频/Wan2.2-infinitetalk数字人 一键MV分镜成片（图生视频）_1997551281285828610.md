@@ -4,7 +4,7 @@ name: Wan2.2-infinitetalk数字人 一键MV分镜成片（图生视频）_199755
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997551281285828610.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-infinitetalk数字人 一键MV分镜成片（图生视频）_1997551281285828610.json
 hash: da2546b0b3ea76fa
 coverage: 0.847222
 learned_at: 2026-10-15 22:33:29

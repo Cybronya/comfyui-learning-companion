@@ -4,7 +4,7 @@ name: Wan2.1-720P-SLG-图生视频_1902677106516733954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1902677106516733954.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-720P-SLG-图生视频_1902677106516733954.json
 hash: 8d0e1394ef668f46
 coverage: 0.916667
 learned_at: 2026-10-15 22:29:24

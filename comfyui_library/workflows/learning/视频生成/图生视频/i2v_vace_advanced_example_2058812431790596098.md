@@ -4,7 +4,7 @@ name: i2v_vace_advanced_example_2058812431790596098.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058812431790596098.json
+file: comfyui_library/workflows/视频生成/图生视频/i2v_vace_advanced_example_2058812431790596098.json
 hash: f184d9b48303dc25
 coverage: 0.875
 learned_at: 2026-10-15 22:38:30

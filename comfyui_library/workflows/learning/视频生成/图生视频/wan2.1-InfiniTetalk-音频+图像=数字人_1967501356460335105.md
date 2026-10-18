@@ -4,7 +4,7 @@ name: wan2.1-InfiniTetalk-音频+图像=数字人_1967501356460335105.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967501356460335105.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-InfiniTetalk-音频+图像=数字人_1967501356460335105.json
 hash: 94875272e822cc59
 coverage: 0.935484
 learned_at: 2026-10-15 22:31:41

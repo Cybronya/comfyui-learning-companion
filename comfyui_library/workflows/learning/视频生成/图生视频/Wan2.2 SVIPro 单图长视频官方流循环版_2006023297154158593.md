@@ -4,7 +4,7 @@ name: Wan2.2 SVIPro 单图长视频官方流循环版_2006023297154158593.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006023297154158593.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 SVIPro 单图长视频官方流循环版_2006023297154158593.json
 hash: 427fe0bc901f2218
 coverage: 0.825397
 learned_at: 2026-10-15 22:34:00

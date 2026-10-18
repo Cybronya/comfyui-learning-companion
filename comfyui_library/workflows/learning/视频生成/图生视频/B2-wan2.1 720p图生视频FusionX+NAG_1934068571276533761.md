@@ -4,7 +4,7 @@ name: B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934068571276533761.json
+file: comfyui_library/workflows/视频生成/图生视频/B2-wan2.1 720p图生视频FusionX+NAG_1934068571276533761.json
 hash: a634040eab920e1c
 coverage: 0.9375
 learned_at: 2026-10-15 22:30:15

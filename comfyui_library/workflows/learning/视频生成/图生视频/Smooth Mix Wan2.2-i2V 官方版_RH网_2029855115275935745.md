@@ -4,7 +4,7 @@ name: Smooth Mix Wan2.2-i2V 官方版_RH网_2029855115275935745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029855115275935745.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix Wan2.2-i2V 官方版_RH网_2029855115275935745.json
 hash: cad2d66d0aac3894
 coverage: 0.913043
 learned_at: 2026-10-15 22:35:23

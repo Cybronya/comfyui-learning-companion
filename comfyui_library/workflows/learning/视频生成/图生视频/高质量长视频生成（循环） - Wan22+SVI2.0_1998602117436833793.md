@@ -4,7 +4,7 @@ name: 高质量长视频生成（循环） - Wan22+SVI2.0_1998602117436833793.js
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998602117436833793.json
+file: comfyui_library/workflows/视频生成/图生视频/高质量长视频生成（循环） - Wan22+SVI2.0_1998602117436833793.json
 hash: 4f75c852572ab057
 coverage: 0.509317
 learned_at: 2026-10-15 22:33:32

@@ -4,7 +4,7 @@ name: ltx2.3 三采（测试版）_2035619730907734018.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035619730907734018.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3 三采（测试版）_2035619730907734018.json
 hash: cd031e8f64dadbd3
 coverage: 0.674603
 learned_at: 2026-10-15 22:35:49

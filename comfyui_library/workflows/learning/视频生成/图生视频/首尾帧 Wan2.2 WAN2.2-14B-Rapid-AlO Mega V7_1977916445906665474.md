@@ -4,7 +4,7 @@ name: 首尾帧 Wan2.2 WAN2.2-14B-Rapid-AlO Mega V7_1977916445906665474.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977916445906665474.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧 Wan2.2 WAN2.2-14B-Rapid-AlO Mega V7_1977916445906665474.json
 hash: 5736e87d4165aafb
 coverage: 0.928571
 learned_at: 2026-10-15 22:32:16

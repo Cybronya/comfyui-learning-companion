@@ -4,7 +4,7 @@ name: Lightx2v+PainterI2V+Wan2.2图生视频增强节点，减少慢动作镜头
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992227734485094401.json
+file: comfyui_library/workflows/视频生成/图生视频/Lightx2v+PainterI2V+Wan2.2图生视频增强节点，减少慢动作镜头+增强运镜_1992227734485094401.json
 hash: cc4b3b4b397d7f42
 coverage: 0.9375
 learned_at: 2026-10-15 22:33:15

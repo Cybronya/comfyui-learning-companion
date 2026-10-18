@@ -4,7 +4,7 @@ name: Wan2.2+文生视频+-+KJ加速版+-+提示词自动优化_2055178416466472
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055178416466472962.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+文生视频+-+KJ加速版+-+提示词自动优化_2055178416466472962.json
 hash: 5a6a581d70410950
 coverage: 0.886364
 learned_at: 2026-10-15 22:37:55

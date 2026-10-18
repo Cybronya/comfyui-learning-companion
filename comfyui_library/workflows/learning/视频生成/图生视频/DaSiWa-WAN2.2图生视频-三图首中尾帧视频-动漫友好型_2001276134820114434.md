@@ -4,7 +4,7 @@ name: DaSiWa-WAN2.2图生视频-三图首中尾帧视频-动漫友好型_2001276
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001276134820114434.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa-WAN2.2图生视频-三图首中尾帧视频-动漫友好型_2001276134820114434.json
 hash: 53d76895592026e3
 coverage: 0.644068
 learned_at: 2026-10-15 22:33:45

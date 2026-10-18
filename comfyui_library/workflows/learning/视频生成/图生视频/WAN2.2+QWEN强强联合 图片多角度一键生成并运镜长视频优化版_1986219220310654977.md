@@ -4,7 +4,7 @@ name: WAN2.2+QWEN强强联合 图片多角度一键生成并运镜长视频优�
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986219220310654977.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2+QWEN强强联合 图片多角度一键生成并运镜长视频优化版_1986219220310654977.json
 hash: 012b9565aca3ff87
 coverage: 0.484277
 learned_at: 2026-10-15 22:32:54

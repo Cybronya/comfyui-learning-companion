@@ -4,7 +4,7 @@ name: 连贯动作图生视频——smoothMix_Wan2.2+qwem3提示词_202704455979
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027044559796047873.json
+file: comfyui_library/workflows/视频生成/图生视频/连贯动作图生视频——smoothMix_Wan2.2+qwem3提示词_2027044559796047873.json
 hash: 28d08bad6547ff86
 coverage: 0.744681
 learned_at: 2026-10-15 22:35:16

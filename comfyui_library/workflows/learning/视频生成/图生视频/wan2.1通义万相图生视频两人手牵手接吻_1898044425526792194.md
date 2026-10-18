@@ -4,7 +4,7 @@ name: wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1898044425526792194.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1通义万相图生视频两人手牵手接吻_1898044425526792194.json
 hash: 302e776532e82618
 coverage: 0.933333
 learned_at: 2026-10-15 22:29:19

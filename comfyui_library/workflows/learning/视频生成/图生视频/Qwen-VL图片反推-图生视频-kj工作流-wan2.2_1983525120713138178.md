@@ -4,7 +4,7 @@ name: Qwen-VL图片反推-图生视频-kj工作流-wan2.2_1983525120713138178.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983525120713138178.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen-VL图片反推-图生视频-kj工作流-wan2.2_1983525120713138178.json
 hash: b4dfdc653e1a2960
 coverage: 0.933333
 learned_at: 2026-10-15 22:32:45

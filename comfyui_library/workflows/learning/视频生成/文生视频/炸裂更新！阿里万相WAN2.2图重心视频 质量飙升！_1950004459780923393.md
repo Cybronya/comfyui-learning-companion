@@ -4,7 +4,7 @@ name: 炸裂更新！阿里万相WAN2.2图重心视频 质量飙升！_195000445
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950004459780923393.json
+file: comfyui_library/workflows/视频生成/文生视频/炸裂更新！阿里万相WAN2.2图重心视频 质量飙升！_1950004459780923393.json
 hash: c4c8e5bc83a65ff8
 coverage: 1
 learned_at: 2026-10-15 22:43:33

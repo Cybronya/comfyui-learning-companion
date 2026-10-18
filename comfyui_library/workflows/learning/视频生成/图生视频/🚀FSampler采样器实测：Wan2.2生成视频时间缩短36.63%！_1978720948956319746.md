@@ -4,7 +4,7 @@ name: 🚀FSampler采样器实测：Wan2.2生成视频时间缩短36.63%！_1978
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978720948956319746.json
+file: comfyui_library/workflows/视频生成/图生视频/🚀FSampler采样器实测：Wan2.2生成视频时间缩短36.63%！_1978720948956319746.json
 hash: f4106cb194d9f2c2
 coverage: 1
 learned_at: 2026-10-15 22:32:20

@@ -4,7 +4,7 @@ name: 横版Remix V2 VS  Smooth图生视频对比工作流V2（PainterI2V Plus�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991074720969891842.json
+file: comfyui_library/workflows/视频生成/图生视频/横版Remix V2 VS  Smooth图生视频对比工作流V2（PainterI2V Plus）_1991074720969891842.json
 hash: 03f041ba688fd58a
 coverage: 0.771429
 learned_at: 2026-10-15 22:33:12

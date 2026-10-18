@@ -4,7 +4,7 @@ name: 目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V1.0
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961819630828503041.json
+file: comfyui_library/workflows/视频生成/图生视频/目前最新最火InfiniteTalk数字人对口型，适合口播唱歌 V1.0_1961819630828503041.json
 hash: a91c794230155511
 coverage: 1
 learned_at: 2026-10-15 22:31:29

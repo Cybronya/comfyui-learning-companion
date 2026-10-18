@@ -4,7 +4,7 @@ name: LTXV2.0图生视频+对话配音_2010611172453654529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010611172453654529.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV2.0图生视频+对话配音_2010611172453654529.json
 hash: 82ec32f0086caf6f
 coverage: 0.505618
 learned_at: 2026-10-15 22:34:17

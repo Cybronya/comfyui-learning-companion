@@ -4,7 +4,7 @@ name: Wan视频-召唤法相2.0_1913798137197330434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913798137197330434.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan视频-召唤法相2.0_1913798137197330434.json
 hash: bafbb8dc96b9df69
 coverage: 1
 learned_at: 2026-10-15 22:29:34

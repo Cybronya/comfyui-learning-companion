@@ -4,7 +4,7 @@ name: ltx2.3视频延长进阶版relayPrompt+高清优化_2050097870233190402.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050097870233190402.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3视频延长进阶版relayPrompt+高清优化_2050097870233190402.json
 hash: da2ceec21c5ed224
 coverage: 0.904762
 learned_at: 2026-10-15 22:37:17

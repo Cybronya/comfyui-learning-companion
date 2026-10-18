@@ -4,7 +4,7 @@ name: 【简便版】Wan2.2 图生视频 人物动作迁移 复制姿态_1976803
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976803129901699073.json
+file: comfyui_library/workflows/视频生成/图生视频/【简便版】Wan2.2 图生视频 人物动作迁移 复制姿态_1976803129901699073.json
 hash: 91ea364a76d4815c
 coverage: 0.44
 learned_at: 2026-10-15 22:32:12

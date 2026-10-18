@@ -4,7 +4,7 @@ name: Wan2.2 SVIPro多图分镜官方流循环版_2006938927231406082.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006938927231406082.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 SVIPro多图分镜官方流循环版_2006938927231406082.json
 hash: 89c498888233f7c5
 coverage: 0.838235
 learned_at: 2026-10-15 22:34:03

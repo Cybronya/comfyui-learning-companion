@@ -4,7 +4,7 @@ name: Wan2.2_ Motion调整运动速度_2007040869337145346.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007040869337145346.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_ Motion调整运动速度_2007040869337145346.json
 hash: d94f8f8d0d49d310
 coverage: 0.941176
 learned_at: 2026-10-15 22:34:03

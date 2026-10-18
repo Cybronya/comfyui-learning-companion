@@ -4,7 +4,7 @@ name: 电商带货航海  TK_小红📕_抖🎶 口播产品带货【 商用1.5 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025788299004092417.json
+file: comfyui_library/workflows/视频生成/图生视频/电商带货航海  TK_小红📕_抖🎶 口播产品带货【 商用1.5 】_2025788299004092417.json
 hash: 7909c3fe2bf09714
 coverage: 0.752475
 learned_at: 2026-10-15 22:35:12

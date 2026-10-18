@@ -4,7 +4,7 @@ name: 角色-wan2.2单帧视频-带bounce-lora_2049487704492085249.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049487704492085249.json
+file: comfyui_library/workflows/视频生成/图生视频/角色-wan2.2单帧视频-带bounce-lora_2049487704492085249.json
 hash: 0490dd31f7f4095b
 coverage: 0.966667
 learned_at: 2026-10-15 22:37:15

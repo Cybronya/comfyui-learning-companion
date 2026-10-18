@@ -4,7 +4,7 @@ name: Wan2.2高动态宫崎骏动漫图生视频_1991013397888180225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991013397888180225.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2高动态宫崎骏动漫图生视频_1991013397888180225.json
 hash: fc71675e49f0d614
 coverage: 0.956522
 learned_at: 2026-10-15 22:33:12

@@ -4,7 +4,7 @@ name: wan2114BFusionx_text2videoFusionx-Y-Workflow_1934829108691935233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1934829108691935233.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2114BFusionx_text2videoFusionx-Y-Workflow_1934829108691935233.json
 hash: d9e41a3daf62f098
 coverage: 0.846154
 learned_at: 2026-10-15 22:43:28

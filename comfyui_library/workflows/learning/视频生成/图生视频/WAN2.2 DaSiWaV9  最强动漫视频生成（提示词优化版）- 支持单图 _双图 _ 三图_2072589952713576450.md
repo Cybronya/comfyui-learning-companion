@@ -4,7 +4,7 @@ name: WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）- 支持�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072589952713576450.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 DaSiWaV9  最强动漫视频生成（提示词优化版）- 支持单图 _双图 _ 三图_2072589952713576450.json
 hash: 3e6a7f915284363f
 coverage: 0.893805
 learned_at: 2026-10-15 22:40:56

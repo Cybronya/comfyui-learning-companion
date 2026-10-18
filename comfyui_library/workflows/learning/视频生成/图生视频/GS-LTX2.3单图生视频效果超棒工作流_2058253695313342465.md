@@ -4,7 +4,7 @@ name: GS-LTX2.3单图生视频效果超棒工作流_2058253695313342465.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058253695313342465.json
+file: comfyui_library/workflows/视频生成/图生视频/GS-LTX2.3单图生视频效果超棒工作流_2058253695313342465.json
 hash: 45ab11303bc639b5
 coverage: 0.944444
 learned_at: 2026-10-15 22:38:20

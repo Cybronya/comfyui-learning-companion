@@ -4,7 +4,7 @@ name: Wan2.2图生视频-Kijai版-课程专用_1950140877723361281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950140877723361281.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频-Kijai版-课程专用_1950140877723361281.json
 hash: 86088330cb9b506d
 coverage: 0.777778
 learned_at: 2026-10-15 22:30:53

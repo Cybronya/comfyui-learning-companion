@@ -4,7 +4,7 @@ name: 一致性数字人Stand-In VACE MultiTalk 跳舞唱歌_1956601667196211201
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1956601667196211201.json
+file: comfyui_library/workflows/视频生成/文生视频/一致性数字人Stand-In VACE MultiTalk 跳舞唱歌_1956601667196211201.json
 hash: f01dba3d55ab85df
 coverage: 0.666667
 learned_at: 2026-10-15 22:43:41

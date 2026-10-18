@@ -4,7 +4,7 @@ name: LTX2.3-1080P -50帧率图生视频_2064146119717900289.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064146119717900289.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-1080P -50帧率图生视频_2064146119717900289.json
 hash: ff130464316ca0f4
 coverage: 0.923077
 learned_at: 2026-10-15 22:39:20

@@ -1,0 +1,155 @@
+---
+key: 视频生成/图生视频/Qwen_Image_2.1全功能合集，覆盖角色一致性文生图图生图多场景_2105854013261565953.json
+name: Qwen_Image_2.1全功能合集，覆盖角色一致性文生图图生图多场景_2105854013261565953
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen_Image_2.1全功能合集，覆盖角色一致性文生图图生图多场景_2105854013261565953.json
+hash: c62c68f395fe5449
+coverage: 0.822917
+learned_at: 2026-10-17 22:18:54
+nodes: [KSampler, VAEDecode, EmptyLatentImage, KSampler, ResolutionSelector, Mask Fill Holes, SAM3_Detect, GrowMask, DrawMaskOnImage, PreviewImage, KSampler, VAEDecode, Mask Fill Holes, GrowMask, VAEDecode, LayerUtility: ImageReelComposit, PreviewImage, ResolutionSelector, EmptyLatentImage, LayerUtility: ImageReel, LayerUtility: ImageReelComposit, PreviewImage, Fast Groups Bypasser (rgthree), SaveImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), EmptyLatentImage, GetImageSize, TextEncodeQwenImage21, TextEncodeQwenImage21, DrawMaskOnImage, ComfySwitchNode, KSampler, TextEncodeQwenImage21, PreviewImage, ResolutionSelector, VAEDecode, ComfySwitchNode, SaveImage, CR Text, PreviewAny, llama_cpp_model_loader, llama_cpp_instruct_adv, EmptyLatentImage, LoadImage, SaveImage, LayerUtility: ImageReel, LoadImage, CheckpointLoaderSimple, CLIPTextEncode, TextEncodeQwenImage21, SaveImage, Anything Everywhere3, UNETLoader, CLIPLoader, VAELoader, Image Comparer (rgthree), LoadImage, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, CR Text, RHLLMChatNode, PreviewAny, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, EmptyImage, PreviewImage]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "checkpoint": "sam3.1_multiplex_fp16.safetensors", "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Qwen_Image_2.1全功能合集，覆盖角色一致性文生图图生图多场景_2105854013261565953.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/Qwen_Image_2.1全功能合集，覆盖角色一致性文生图图生图多场景_2105854013261565953.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（96 个）：
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `ResolutionSelector`
+- `Mask Fill Holes`
+- `SAM3_Detect`
+- `GrowMask`
+- `DrawMaskOnImage`
+- `PreviewImage`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `Mask Fill Holes`
+- `GrowMask`
+- `VAEDecode` ★核心
+- `LayerUtility: ImageReelComposit`
+- `PreviewImage`
+- `ResolutionSelector`
+- `EmptyLatentImage` ★核心
+- `LayerUtility: ImageReel`
+- `LayerUtility: ImageReelComposit`
+- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `SaveImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `EmptyLatentImage` ★核心
+- `GetImageSize`
+- `TextEncodeQwenImage21`
+- `TextEncodeQwenImage21`
+- `DrawMaskOnImage`
+- `ComfySwitchNode`
+- `KSampler` ★核心
+- `TextEncodeQwenImage21`
+- `PreviewImage`
+- `ResolutionSelector`
+- `VAEDecode` ★核心
+- `ComfySwitchNode`
+- `SaveImage`
+- `CR Text`
+- `PreviewAny`
+- `llama_cpp_model_loader`
+- `llama_cpp_instruct_adv`
+- `EmptyLatentImage` ★核心
+- `LoadImage`
+- `SaveImage`
+- `LayerUtility: ImageReel`
+- `LoadImage`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `TextEncodeQwenImage21`
+- `SaveImage`
+- `Anything Everywhere3`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CR Text`
+- `RHLLMChatNode`
+- `PreviewAny`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `Note`
+- `EmptyImage`
+- `PreviewImage`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+
+## 知识
+
+覆盖率 **82%**（79/96）
+
+**有卡**：`KSampler`、`VAEDecode`、`EmptyLatentImage`、`ResolutionSelector`、`Mask Fill Holes`、`SAM3_Detect`、`GrowMask`、`DrawMaskOnImage`、`LayerUtility: ImageReelComposit`、`LayerUtility: ImageReel`、`SaveImage`、`GetImageSize`、`TextEncodeQwenImage21`、`CR Text`、`llama_cpp_model_loader`、`llama_cpp_instruct_adv`、`LoadImage`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`RHLLMChatNode`、`LoraLoaderModelOnly`、`solarL_SaveImagesToZip`、`EmptyImage`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

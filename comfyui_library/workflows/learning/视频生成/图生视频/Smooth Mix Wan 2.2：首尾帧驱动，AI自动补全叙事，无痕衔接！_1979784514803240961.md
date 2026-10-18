@@ -4,7 +4,7 @@ name: Smooth Mix Wan 2.2：首尾帧驱动，AI自动补全叙事，无痕衔接
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979784514803240961.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix Wan 2.2：首尾帧驱动，AI自动补全叙事，无痕衔接！_1979784514803240961.json
 hash: a6c3a877dab2818a
 coverage: 0.806452
 learned_at: 2026-10-15 22:32:26

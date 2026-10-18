@@ -4,7 +4,7 @@ name: wan2.2视频换图片背景_1966524029245042689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966524029245042689.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2视频换图片背景_1966524029245042689.json
 hash: 5fdfd926c6e132e1
 coverage: 0.833333
 learned_at: 2026-10-15 22:31:38

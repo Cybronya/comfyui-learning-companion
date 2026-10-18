@@ -4,7 +4,7 @@ name: Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063973958436876290.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3多参生视频（seedance2青春版MSR自动提示词版）_2063973958436876290.json
 hash: e893173bb3ba0bce
 coverage: 0.972973
 learned_at: 2026-10-15 22:39:19

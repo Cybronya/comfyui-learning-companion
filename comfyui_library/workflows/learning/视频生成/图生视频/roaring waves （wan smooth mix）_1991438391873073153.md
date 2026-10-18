@@ -4,7 +4,7 @@ name: roaring waves （wan smooth mix）_1991438391873073153.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991438391873073153.json
+file: comfyui_library/workflows/视频生成/图生视频/roaring waves （wan smooth mix）_1991438391873073153.json
 hash: 6b109475099a5ae2
 coverage: 0.875
 learned_at: 2026-10-15 22:33:13

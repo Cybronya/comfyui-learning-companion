@@ -4,7 +4,7 @@ name: 【Wan2.1系列】CFG-Zero Star技术提升视频质量N个档次_19188785
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1918878513657479170.json
+file: comfyui_library/workflows/视频生成/文生视频/【Wan2.1系列】CFG-Zero Star技术提升视频质量N个档次_1918878513657479170.json
 hash: 9d3e77da173496c7
 coverage: 0.909091
 learned_at: 2026-10-15 22:43:23

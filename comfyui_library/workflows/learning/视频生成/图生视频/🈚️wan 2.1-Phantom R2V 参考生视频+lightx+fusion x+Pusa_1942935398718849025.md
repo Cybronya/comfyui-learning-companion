@@ -4,7 +4,7 @@ name: 🈚️wan 2.1-Phantom R2V 参考生视频+lightx+fusion x+Pusa_1942935398
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1942935398718849025.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️wan 2.1-Phantom R2V 参考生视频+lightx+fusion x+Pusa_1942935398718849025.json
 hash: 40f4e4a9e73c3368
 coverage: 0.448276
 learned_at: 2026-10-15 22:30:37

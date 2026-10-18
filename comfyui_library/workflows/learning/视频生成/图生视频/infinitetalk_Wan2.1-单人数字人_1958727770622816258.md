@@ -4,7 +4,7 @@ name: infinitetalk_Wan2.1-单人数字人_1958727770622816258.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958727770622816258.json
+file: comfyui_library/workflows/视频生成/图生视频/infinitetalk_Wan2.1-单人数字人_1958727770622816258.json
 hash: 0f868d3804454955
 coverage: 1
 learned_at: 2026-10-15 22:31:22

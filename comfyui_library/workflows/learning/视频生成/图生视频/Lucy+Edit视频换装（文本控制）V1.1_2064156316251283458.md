@@ -4,7 +4,7 @@ name: Lucy+Edit视频换装（文本控制）V1.1_2064156316251283458.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064156316251283458.json
+file: comfyui_library/workflows/视频生成/图生视频/Lucy+Edit视频换装（文本控制）V1.1_2064156316251283458.json
 hash: 4cf55ed810bf3287
 coverage: 0.888889
 learned_at: 2026-10-15 22:39:20

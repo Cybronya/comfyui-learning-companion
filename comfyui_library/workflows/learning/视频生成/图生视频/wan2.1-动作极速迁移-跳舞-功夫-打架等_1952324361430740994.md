@@ -4,7 +4,7 @@ name: wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952324361430740994.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-动作极速迁移-跳舞-功夫-打架等_1952324361430740994.json
 hash: f27f690712c92390
 coverage: 1
 learned_at: 2026-10-15 22:31:01

@@ -4,7 +4,7 @@ name: Wan21_SCAIL2_replace_two_person_2064998971084468225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064998971084468225.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan21_SCAIL2_replace_two_person_2064998971084468225.json
 hash: 155823d5f246f464
 coverage: 0.391753
 learned_at: 2026-10-15 22:39:33

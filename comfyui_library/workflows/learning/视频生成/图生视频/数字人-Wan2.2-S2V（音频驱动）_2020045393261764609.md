@@ -4,7 +4,7 @@ name: 数字人-Wan2.2-S2V（音频驱动）_2020045393261764609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020045393261764609.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人-Wan2.2-S2V（音频驱动）_2020045393261764609.json
 hash: 6b6da8f40e6a2428
 coverage: 0.921053
 learned_at: 2026-10-15 22:35:05

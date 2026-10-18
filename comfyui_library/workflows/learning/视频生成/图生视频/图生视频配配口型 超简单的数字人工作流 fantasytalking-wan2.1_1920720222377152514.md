@@ -4,7 +4,7 @@ name: 图生视频配配口型 超简单的数字人工作流 fantasytalking-wan
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920720222377152514.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频配配口型 超简单的数字人工作流 fantasytalking-wan2.1_1920720222377152514.json
 hash: 669550daa2484de1
 coverage: 0.658537
 learned_at: 2026-10-15 22:29:42

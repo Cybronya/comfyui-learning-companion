@@ -4,7 +4,7 @@ name: Wan2.2_PromptRelay_2053855379406245890.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053855379406245890.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_PromptRelay_2053855379406245890.json
 hash: a8219e9385126f77
 coverage: 0.9
 learned_at: 2026-10-15 22:37:43

@@ -4,7 +4,7 @@ name: 【动作迁移】wan2.2 lora 视频生视频加强版_1955515292903358465
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955515292903358465.json
+file: comfyui_library/workflows/视频生成/文生视频/【动作迁移】wan2.2 lora 视频生视频加强版_1955515292903358465.json
 hash: 0502e8ad7ff95a04
 coverage: 0.82
 learned_at: 2026-10-15 22:43:40

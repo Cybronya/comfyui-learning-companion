@@ -4,7 +4,7 @@ name: Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_207888
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078887009887809537.json
+file: comfyui_library/workflows/视频生成/图生视频/Cosmic-RaysX-LTX2.3-LTX Director-导演分镜工作流-电商带货_2078887009887809537.json
 hash: c03c96a1d458efa1
 coverage: 0.9
 learned_at: 2026-10-15 22:41:57

@@ -4,7 +4,7 @@ name: 极速泼水变装特效可灵同款wan2.1+accvid_2018170301388955650.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018170301388955650.json
+file: comfyui_library/workflows/视频生成/图生视频/极速泼水变装特效可灵同款wan2.1+accvid_2018170301388955650.json
 hash: bcb017b16788f687
 coverage: 1
 learned_at: 2026-10-15 22:34:53

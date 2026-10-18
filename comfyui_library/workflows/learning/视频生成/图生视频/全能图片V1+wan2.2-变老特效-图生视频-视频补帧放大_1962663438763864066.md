@@ -4,7 +4,7 @@ name: 全能图片V1+wan2.2-变老特效-图生视频-视频补帧放大_1962663
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962663438763864066.json
+file: comfyui_library/workflows/视频生成/图生视频/全能图片V1+wan2.2-变老特效-图生视频-视频补帧放大_1962663438763864066.json
 hash: cd9d18b4fadc74ba
 coverage: 0.840909
 learned_at: 2026-10-15 22:31:31

@@ -4,7 +4,7 @@ name: Wan2.2 最强效果Animate 视频人物姿态迁移V2升级版(保留原�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980606139123585025.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 最强效果Animate 视频人物姿态迁移V2升级版(保留原图背景）15S稳如老狗_1980606139123585025.json
 hash: 3893232fc29f8611
 coverage: 0.836735
 learned_at: 2026-10-15 22:32:32

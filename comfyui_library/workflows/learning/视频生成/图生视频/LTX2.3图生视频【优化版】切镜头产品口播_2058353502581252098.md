@@ -4,7 +4,7 @@ name: LTX2.3图生视频【优化版】切镜头产品口播_2058353502581252098
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058353502581252098.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频【优化版】切镜头产品口播_2058353502581252098.json
 hash: c4d267a22b56b12f
 coverage: 0.557576
 learned_at: 2026-10-15 22:38:21

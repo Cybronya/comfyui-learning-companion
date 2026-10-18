@@ -4,7 +4,7 @@ name: Kling_V30ProMotionControl_v3.0_2033808877589897217.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033808877589897217.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_V30ProMotionControl_v3.0_2033808877589897217.json
 hash: 5a2d7b87e104ed4e
 coverage: 1
 learned_at: 2026-10-15 22:35:41

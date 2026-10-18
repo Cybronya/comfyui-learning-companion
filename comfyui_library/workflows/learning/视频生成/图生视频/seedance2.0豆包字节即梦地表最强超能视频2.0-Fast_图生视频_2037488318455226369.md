@@ -4,7 +4,7 @@ name: seedance2.0豆包字节即梦地表最强超能视频2.0-Fast_图生视频
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037488318455226369.json
+file: comfyui_library/workflows/视频生成/图生视频/seedance2.0豆包字节即梦地表最强超能视频2.0-Fast_图生视频_2037488318455226369.json
 hash: a682cbcf7db93e29
 coverage: 1
 learned_at: 2026-10-15 22:35:57

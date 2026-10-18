@@ -4,7 +4,7 @@ name: 视频多图像编辑融合 FusionX - VACE【 1.0 】_1999354764167086081.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999354764167086081.json
+file: comfyui_library/workflows/视频生成/图生视频/视频多图像编辑融合 FusionX - VACE【 1.0 】_1999354764167086081.json
 hash: 5e680f02b5c1d6fd
 coverage: 0.805556
 learned_at: 2026-10-15 22:33:36

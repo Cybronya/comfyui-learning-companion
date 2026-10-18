@@ -4,7 +4,7 @@ name: LTX导演台2.0+3DREAK-白模驱动视频工作流_2074307854646996994.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074307854646996994.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX导演台2.0+3DREAK-白模驱动视频工作流_2074307854646996994.json
 hash: 238b914220c51f7d
 coverage: 0.971429
 learned_at: 2026-10-15 22:41:13

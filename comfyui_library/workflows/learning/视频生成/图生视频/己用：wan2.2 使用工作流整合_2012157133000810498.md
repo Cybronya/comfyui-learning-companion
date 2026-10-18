@@ -4,7 +4,7 @@ name: 己用：wan2.2 使用工作流整合_2012157133000810498.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012157133000810498.json
+file: comfyui_library/workflows/视频生成/图生视频/己用：wan2.2 使用工作流整合_2012157133000810498.json
 hash: fd046343cb6c4498
 coverage: 0.760135
 learned_at: 2026-10-15 22:34:26

@@ -4,7 +4,7 @@ name: ▶Wan2.2-AllInOne-V10图生视频工作流【好奇漫步】_197012150632
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970121506326016002.json
+file: comfyui_library/workflows/视频生成/图生视频/▶Wan2.2-AllInOne-V10图生视频工作流【好奇漫步】_1970121506326016002.json
 hash: 8bb7f6014df309ee
 coverage: 0.875
 learned_at: 2026-10-15 22:31:52

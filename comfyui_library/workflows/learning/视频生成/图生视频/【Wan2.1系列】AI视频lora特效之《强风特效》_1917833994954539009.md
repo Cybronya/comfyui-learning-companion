@@ -4,7 +4,7 @@ name: 【Wan2.1系列】AI视频lora特效之《强风特效》_1917833994954539
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917833994954539009.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《强风特效》_1917833994954539009.json
 hash: 71d566bcb4bf897f
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:40

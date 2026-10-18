@@ -4,7 +4,7 @@ name: Wan2.1-无人机穿越运镜-加速版_1945974765423128577.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945974765423128577.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-无人机穿越运镜-加速版_1945974765423128577.json
 hash: 7ca811d848accfa0
 coverage: 0.875
 learned_at: 2026-10-15 22:30:43

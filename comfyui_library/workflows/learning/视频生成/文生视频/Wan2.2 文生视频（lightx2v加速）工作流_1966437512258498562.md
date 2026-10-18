@@ -4,7 +4,7 @@ name: Wan2.2 文生视频（lightx2v加速）工作流_1966437512258498562.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1966437512258498562.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 文生视频（lightx2v加速）工作流_1966437512258498562.json
 hash: 4d1a9513592b7b77
 coverage: 1
 learned_at: 2026-10-15 22:43:45

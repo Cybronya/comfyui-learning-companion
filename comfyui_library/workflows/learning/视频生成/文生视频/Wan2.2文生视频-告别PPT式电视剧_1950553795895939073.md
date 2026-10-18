@@ -4,7 +4,7 @@ name: Wan2.2文生视频-告别PPT式电视剧_1950553795895939073.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950553795895939073.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2文生视频-告别PPT式电视剧_1950553795895939073.json
 hash: dfb46621ee634526
 coverage: 0.928571
 learned_at: 2026-10-15 22:43:36

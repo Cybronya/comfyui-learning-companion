@@ -4,7 +4,7 @@ name: （自用）Dyno Remix I2V 0.8模型图生视频V2（官方流）_19774339
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977433925884747777.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Dyno Remix I2V 0.8模型图生视频V2（官方流）_1977433925884747777.json
 hash: f02102a5f37bfc75
 coverage: 0.902439
 learned_at: 2026-10-15 22:32:15

@@ -4,7 +4,7 @@ name: LTX2.3-数字人-电商带货-首中尾帧转场特效-去字幕lora-自�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051128498395336706.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-数字人-电商带货-首中尾帧转场特效-去字幕lora-自动提示词优化版_2051128498395336706.json
 hash: 9f6fe0bc0cee637a
 coverage: 0.984375
 learned_at: 2026-10-15 22:37:21

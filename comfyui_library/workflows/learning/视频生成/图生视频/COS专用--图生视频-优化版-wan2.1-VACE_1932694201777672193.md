@@ -4,7 +4,7 @@ name: COS专用--图生视频-优化版-wan2.1-VACE_1932694201777672193.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1932694201777672193.json
+file: comfyui_library/workflows/视频生成/图生视频/COS专用--图生视频-优化版-wan2.1-VACE_1932694201777672193.json
 hash: b9681d6ea9f1b92d
 coverage: 0.828571
 learned_at: 2026-10-15 22:30:12

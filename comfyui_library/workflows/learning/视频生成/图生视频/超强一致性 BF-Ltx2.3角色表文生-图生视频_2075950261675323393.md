@@ -4,7 +4,7 @@ name: 超强一致性 BF-Ltx2.3角色表文生-图生视频_2075950261675323393.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075950261675323393.json
+file: comfyui_library/workflows/视频生成/图生视频/超强一致性 BF-Ltx2.3角色表文生-图生视频_2075950261675323393.json
 hash: 62878ff44ae9dada
 coverage: 0.394904
 learned_at: 2026-10-15 22:41:28

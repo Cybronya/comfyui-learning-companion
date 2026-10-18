@@ -4,7 +4,7 @@ name: wan2.1-图生视频-发光的身体_1905817606274879490.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1905817606274879490.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-图生视频-发光的身体_1905817606274879490.json
 hash: 826eb29edc9232ed
 coverage: 1
 learned_at: 2026-10-15 22:29:26

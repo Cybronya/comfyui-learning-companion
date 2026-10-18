@@ -4,7 +4,7 @@ name: 【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_19247029344
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1924702934460715010.json
+file: comfyui_library/workflows/视频生成/文生视频/【闪电极速】Wan2.1 WanVACE动作迁移视频动画生成_1924702934460715010.json
 hash: 5b5893471fc50e6d
 coverage: 0.945946
 learned_at: 2026-10-15 22:43:24

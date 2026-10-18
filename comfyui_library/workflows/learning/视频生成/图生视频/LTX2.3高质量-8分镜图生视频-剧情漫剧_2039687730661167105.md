@@ -4,7 +4,7 @@ name: LTX2.3高质量-8分镜图生视频-剧情漫剧_2039687730661167105.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039687730661167105.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3高质量-8分镜图生视频-剧情漫剧_2039687730661167105.json
 hash: 386137a504dcb207
 coverage: 0.590406
 learned_at: 2026-10-15 22:36:10

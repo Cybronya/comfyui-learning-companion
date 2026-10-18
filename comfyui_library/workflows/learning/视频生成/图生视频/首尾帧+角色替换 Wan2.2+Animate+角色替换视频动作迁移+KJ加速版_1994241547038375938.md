@@ -4,7 +4,7 @@ name: 首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994241547038375938.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧+角色替换 Wan2.2+Animate+角色替换视频动作迁移+KJ加速版_1994241547038375938.json
 hash: 21abd4896fe50c42
 coverage: 0.453125
 learned_at: 2026-10-15 22:33:20

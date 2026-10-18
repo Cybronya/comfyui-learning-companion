@@ -4,7 +4,7 @@ name: Wan2.2-Smooth-V2-最强图生视频-极速版-高动态_根据时长_自�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015436189947400194.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth-V2-最强图生视频-极速版-高动态_根据时长_自动结构化提示词_2015436189947400194.json
 hash: 32a9a646d908d140
 coverage: 0.802632
 learned_at: 2026-10-15 22:34:38

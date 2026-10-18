@@ -4,7 +4,7 @@ name: DaSiWa-WAN2.2图生视频-单图版-动漫友好模型二次元_2000536885
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000536885283913730.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa-WAN2.2图生视频-单图版-动漫友好模型二次元_2000536885283913730.json
 hash: d6dc42466819326b
 coverage: 0.649123
 learned_at: 2026-10-15 22:33:41

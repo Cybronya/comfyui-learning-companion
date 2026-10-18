@@ -4,7 +4,7 @@ name: wan2.1 mastermodel+vace精准控制_1930918811107524610.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930918811107524610.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 mastermodel+vace精准控制_1930918811107524610.json
 hash: 80d82112badffe61
 coverage: 0.903226
 learned_at: 2026-10-15 22:30:08

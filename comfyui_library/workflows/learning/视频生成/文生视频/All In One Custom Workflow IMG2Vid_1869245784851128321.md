@@ -4,7 +4,7 @@ name: All In One Custom Workflow IMG2Vid_1869245784851128321.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1869245784851128321.json
+file: comfyui_library/workflows/视频生成/文生视频/All In One Custom Workflow IMG2Vid_1869245784851128321.json
 hash: 50539fda45eeac0a
 coverage: 0.76
 learned_at: 2026-10-15 22:43:19

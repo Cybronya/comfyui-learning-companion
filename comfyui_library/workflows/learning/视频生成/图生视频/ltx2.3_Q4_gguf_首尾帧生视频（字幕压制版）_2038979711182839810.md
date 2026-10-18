@@ -4,7 +4,7 @@ name: ltx2.3_Q4_gguf_首尾帧生视频（字幕压制版）_2038979711182839810
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038979711182839810.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3_Q4_gguf_首尾帧生视频（字幕压制版）_2038979711182839810.json
 hash: 1572c8e346065b35
 coverage: 0.964286
 learned_at: 2026-10-15 22:36:06

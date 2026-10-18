@@ -4,7 +4,7 @@ name: （CLK V2.1（自用））N版运动增强图生视频V1（官方流，不
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975896909040758785.json
+file: comfyui_library/workflows/视频生成/图生视频/（CLK V2.1（自用））N版运动增强图生视频V1（官方流，不支持KJ）_1975896909040758785.json
 hash: d792d74624ec02bf
 coverage: 0.894737
 learned_at: 2026-10-15 22:32:10

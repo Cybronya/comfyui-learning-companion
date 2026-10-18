@@ -4,7 +4,7 @@ name: LTX2.3-图生视频（大概率去台词文字修订版V2）_2029873778003
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029873778003550210.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频（大概率去台词文字修订版V2）_2029873778003550210.json
 hash: 5d1b2518caaa5210
 coverage: 0.959184
 learned_at: 2026-10-15 22:35:23

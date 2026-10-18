@@ -4,7 +4,7 @@ name: Wan2.2-live2D动态壁纸一键生成：旷野兔动态壁纸工作流_208
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082287620427706369.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-live2D动态壁纸一键生成：旷野兔动态壁纸工作流_2082287620427706369.json
 hash: a7d4d81a5c9dada5
 coverage: 1
 learned_at: 2026-10-15 22:42:28

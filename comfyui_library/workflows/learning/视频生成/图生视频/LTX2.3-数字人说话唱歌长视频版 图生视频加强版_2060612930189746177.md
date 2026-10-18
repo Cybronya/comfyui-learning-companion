@@ -4,7 +4,7 @@ name: LTX2.3-数字人说话唱歌长视频版 图生视频加强版_20606129301
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060612930189746177.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-数字人说话唱歌长视频版 图生视频加强版_2060612930189746177.json
 hash: 40203dfb4083204b
 coverage: 0.495238
 learned_at: 2026-10-15 22:38:49

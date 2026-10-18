@@ -4,7 +4,7 @@ name: WAN2.2 文生视频女孩穿梭_1950186717304242177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950186717304242177.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.2 文生视频女孩穿梭_1950186717304242177.json
 hash: ac12f12a0d19e222
 coverage: 0.96875
 learned_at: 2026-10-15 22:43:35

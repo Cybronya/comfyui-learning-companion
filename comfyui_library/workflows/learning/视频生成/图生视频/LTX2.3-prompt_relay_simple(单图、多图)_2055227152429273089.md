@@ -4,7 +4,7 @@ name: LTX2.3-prompt_relay_simple(单图、多图)_2055227152429273089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055227152429273089.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-prompt_relay_simple(单图、多图)_2055227152429273089.json
 hash: 18ea8545b00b2b8b
 coverage: 0.741935
 learned_at: 2026-10-15 22:37:56

@@ -4,7 +4,7 @@ name: 视频-Remix V2.1建筑图生视频V1工作流_2029118702054023169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029118702054023169.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-Remix V2.1建筑图生视频V1工作流_2029118702054023169.json
 hash: 996e208b9ebb6f52
 coverage: 0.75
 learned_at: 2026-10-15 22:35:21

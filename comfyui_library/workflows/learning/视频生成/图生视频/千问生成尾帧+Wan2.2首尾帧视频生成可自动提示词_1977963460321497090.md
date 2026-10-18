@@ -4,7 +4,7 @@ name: 千问生成尾帧+Wan2.2首尾帧视频生成可自动提示词_197796346
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977963460321497090.json
+file: comfyui_library/workflows/视频生成/图生视频/千问生成尾帧+Wan2.2首尾帧视频生成可自动提示词_1977963460321497090.json
 hash: 5e4e1895bc1d8272
 coverage: 0.864407
 learned_at: 2026-10-15 22:32:16

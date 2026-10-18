@@ -4,7 +4,7 @@ name: Wan2.2 Animate带口型+运镜动作迁移（图片跳舞）_1981708814372
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981708814372225026.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate带口型+运镜动作迁移（图片跳舞）_1981708814372225026.json
 hash: 497a5fd44d3fbc1c
 coverage: 0.811321
 learned_at: 2026-10-15 22:32:38

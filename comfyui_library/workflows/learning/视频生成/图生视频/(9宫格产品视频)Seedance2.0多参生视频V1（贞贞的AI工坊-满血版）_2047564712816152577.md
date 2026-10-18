@@ -4,7 +4,7 @@ name: (9宫格产品视频)Seedance2.0多参生视频V1（贞贞的AI工坊-满�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047564712816152577.json
+file: comfyui_library/workflows/视频生成/图生视频/(9宫格产品视频)Seedance2.0多参生视频V1（贞贞的AI工坊-满血版）_2047564712816152577.json
 hash: 2609624a74ab9abe
 coverage: 1
 learned_at: 2026-10-15 22:37:06

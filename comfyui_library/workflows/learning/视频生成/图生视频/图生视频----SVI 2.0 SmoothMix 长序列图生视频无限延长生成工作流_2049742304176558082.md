@@ -4,7 +4,7 @@ name: 图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049742304176558082.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频----SVI 2.0 SmoothMix 长序列图生视频无限延长生成工作流_2049742304176558082.json
 hash: 500a70e4963bd6d4
 coverage: 0.727642
 learned_at: 2026-10-15 22:37:15

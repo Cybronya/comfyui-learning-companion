@@ -4,7 +4,7 @@ name: wan2.2生日会氛围_1956043576671174657.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956043576671174657.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2生日会氛围_1956043576671174657.json
 hash: b66900aa5c2aa3da
 coverage: 0.553571
 learned_at: 2026-10-15 22:31:11

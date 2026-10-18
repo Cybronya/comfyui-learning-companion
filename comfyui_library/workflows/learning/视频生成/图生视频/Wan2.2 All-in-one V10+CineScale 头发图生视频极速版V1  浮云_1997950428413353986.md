@@ -4,7 +4,7 @@ name: Wan2.2 All-in-one V10+CineScale 头发图生视频极速版V1  浮云_1997
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997950428413353986.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 All-in-one V10+CineScale 头发图生视频极速版V1  浮云_1997950428413353986.json
 hash: 3f6587432b33086f
 coverage: 1
 learned_at: 2026-10-15 22:33:31

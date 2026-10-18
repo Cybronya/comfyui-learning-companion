@@ -4,7 +4,7 @@ name: SVI2.0Pro超长一镜到底！16S_2011274354910306306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011274354910306306.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI2.0Pro超长一镜到底！16S_2011274354910306306.json
 hash: 61543568ca9b15c9
 coverage: 0.529412
 learned_at: 2026-10-15 22:34:21

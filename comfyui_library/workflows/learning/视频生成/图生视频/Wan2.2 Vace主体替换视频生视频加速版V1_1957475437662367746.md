@@ -4,7 +4,7 @@ name: Wan2.2 Vace主体替换视频生视频加速版V1_1957475437662367746.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957475437662367746.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Vace主体替换视频生视频加速版V1_1957475437662367746.json
 hash: 1c3110999d0f9242
 coverage: 0.854839
 learned_at: 2026-10-15 22:31:17

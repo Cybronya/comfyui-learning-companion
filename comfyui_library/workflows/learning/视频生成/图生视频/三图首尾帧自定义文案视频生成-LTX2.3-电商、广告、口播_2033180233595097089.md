@@ -4,7 +4,7 @@ name: 三图首尾帧自定义文案视频生成-LTX2.3-电商、广告、口播
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033180233595097089.json
+file: comfyui_library/workflows/视频生成/图生视频/三图首尾帧自定义文案视频生成-LTX2.3-电商、广告、口播_2033180233595097089.json
 hash: 25397dd606feacde
 coverage: 0.524138
 learned_at: 2026-10-15 22:35:38

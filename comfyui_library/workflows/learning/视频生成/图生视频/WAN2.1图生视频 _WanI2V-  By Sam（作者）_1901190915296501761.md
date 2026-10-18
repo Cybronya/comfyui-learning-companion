@@ -4,7 +4,7 @@ name: WAN2.1图生视频 _WanI2V-  By Sam（作者）_1901190915296501761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901190915296501761.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频 _WanI2V-  By Sam（作者）_1901190915296501761.json
 hash: 604d38c2fc5dbd89
 coverage: 0.847826
 learned_at: 2026-10-15 22:29:23

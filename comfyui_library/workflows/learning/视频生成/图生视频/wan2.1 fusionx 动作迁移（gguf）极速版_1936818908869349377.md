@@ -4,7 +4,7 @@ name: wan2.1 fusionx 动作迁移（gguf）极速版_1936818908869349377.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936818908869349377.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 fusionx 动作迁移（gguf）极速版_1936818908869349377.json
 hash: bf9dcc2e2a759309
 coverage: 0.8
 learned_at: 2026-10-15 22:30:27

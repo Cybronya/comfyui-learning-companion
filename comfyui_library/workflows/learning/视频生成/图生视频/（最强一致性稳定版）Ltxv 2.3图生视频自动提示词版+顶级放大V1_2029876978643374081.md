@@ -4,7 +4,7 @@ name: （最强一致性稳定版）Ltxv 2.3图生视频自动提示词版+顶�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029876978643374081.json
+file: comfyui_library/workflows/视频生成/图生视频/（最强一致性稳定版）Ltxv 2.3图生视频自动提示词版+顶级放大V1_2029876978643374081.json
 hash: 9e1d0f8959421767
 coverage: 0.941176
 learned_at: 2026-10-15 22:35:23

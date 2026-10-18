@@ -4,7 +4,7 @@ name: LTX2.3 I2V多图生视频（3采）_2059920310899662850.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059920310899662850.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 I2V多图生视频（3采）_2059920310899662850.json
 hash: eb51c08439ded88d
 coverage: 0.634615
 learned_at: 2026-10-15 22:38:43

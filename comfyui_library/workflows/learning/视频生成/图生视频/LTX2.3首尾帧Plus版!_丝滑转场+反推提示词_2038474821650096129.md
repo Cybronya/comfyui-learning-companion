@@ -4,7 +4,7 @@ name: LTX2.3首尾帧Plus版!_丝滑转场+反推提示词_2038474821650096129.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038474821650096129.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧Plus版!_丝滑转场+反推提示词_2038474821650096129.json
 hash: 8fe6ca2fa15b168d
 coverage: 0.647727
 learned_at: 2026-10-15 22:36:02

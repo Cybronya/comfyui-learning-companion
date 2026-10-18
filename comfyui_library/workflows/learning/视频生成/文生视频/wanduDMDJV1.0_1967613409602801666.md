@@ -4,7 +4,7 @@ name: wanduDMDJV1.0_1967613409602801666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1967613409602801666.json
+file: comfyui_library/workflows/视频生成/文生视频/wanduDMDJV1.0_1967613409602801666.json
 hash: a5467a8955dbe22a
 coverage: 0.846154
 learned_at: 2026-10-15 22:43:45

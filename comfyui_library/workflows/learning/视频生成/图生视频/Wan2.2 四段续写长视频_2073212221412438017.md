@@ -4,7 +4,7 @@ name: Wan2.2 四段续写长视频_2073212221412438017.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073212221412438017.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 四段续写长视频_2073212221412438017.json
 hash: 6477ae0e1b2d0e66
 coverage: 0.923077
 learned_at: 2026-10-15 22:41:01

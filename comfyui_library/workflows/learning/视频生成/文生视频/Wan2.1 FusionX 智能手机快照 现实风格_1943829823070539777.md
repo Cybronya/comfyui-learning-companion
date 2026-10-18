@@ -4,7 +4,7 @@ name: Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1943829823070539777.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 FusionX 智能手机快照 现实风格_1943829823070539777.json
 hash: 3c9139dbbaa5f0ef
 coverage: 0.947368
 learned_at: 2026-10-15 22:43:30

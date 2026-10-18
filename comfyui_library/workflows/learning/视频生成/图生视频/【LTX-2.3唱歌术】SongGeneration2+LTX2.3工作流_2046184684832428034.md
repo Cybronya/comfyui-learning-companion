@@ -4,7 +4,7 @@ name: 【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046184684832428034.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX-2.3唱歌术】SongGeneration2+LTX2.3工作流_2046184684832428034.json
 hash: e816b788afa7a0a8
 coverage: 0.859375
 learned_at: 2026-10-15 22:36:56

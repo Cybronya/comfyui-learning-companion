@@ -4,7 +4,7 @@ name: LTX-2.3：把”白狐酱板鸭_装进OpenClaw！_2058356490804752385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058356490804752385.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3：把”白狐酱板鸭_装进OpenClaw！_2058356490804752385.json
 hash: ba38801f92d66945
 coverage: 0.770492
 learned_at: 2026-10-15 22:38:21

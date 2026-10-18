@@ -4,7 +4,7 @@ name: WH-AI-Studio-LTX2.3图生视频-音画同步（可扩展多图生成-提�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044056127922507778.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-LTX2.3图生视频-音画同步（可扩展多图生成-提示词润色）_2044056127922507778.json
 hash: a4c6d797cf2ba185
 coverage: 0.880952
 learned_at: 2026-10-15 22:36:36

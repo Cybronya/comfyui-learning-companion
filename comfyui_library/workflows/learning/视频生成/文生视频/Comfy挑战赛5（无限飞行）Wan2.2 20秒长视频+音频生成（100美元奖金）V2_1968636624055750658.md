@@ -4,7 +4,7 @@ name: Comfy挑战赛5（无限飞行）Wan2.2 20秒长视频+音频生成（100�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968636624055750658.json
+file: comfyui_library/workflows/视频生成/文生视频/Comfy挑战赛5（无限飞行）Wan2.2 20秒长视频+音频生成（100美元奖金）V2_1968636624055750658.json
 hash: fd8a8666430dd885
 coverage: 0.963303
 learned_at: 2026-10-15 22:43:46

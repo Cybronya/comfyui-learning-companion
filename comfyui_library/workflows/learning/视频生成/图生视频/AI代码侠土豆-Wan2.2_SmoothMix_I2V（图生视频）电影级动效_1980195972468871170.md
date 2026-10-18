@@ -4,7 +4,7 @@ name: AI代码侠土豆-Wan2.2_SmoothMix_I2V（图生视频）电影级动效_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980195972468871170.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-Wan2.2_SmoothMix_I2V（图生视频）电影级动效_1980195972468871170.json
 hash: 51602c486edafc06
 coverage: 0.543478
 learned_at: 2026-10-15 22:32:28

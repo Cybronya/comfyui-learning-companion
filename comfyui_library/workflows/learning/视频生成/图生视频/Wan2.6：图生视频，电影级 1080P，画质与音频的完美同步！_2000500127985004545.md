@@ -4,7 +4,7 @@ name: Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000500127985004545.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.6：图生视频，电影级 1080P，画质与音频的完美同步！_2000500127985004545.json
 hash: 37272d7c9cbeb9a9
 coverage: 0.666667
 learned_at: 2026-10-15 22:33:41

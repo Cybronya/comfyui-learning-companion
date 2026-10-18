@@ -4,7 +4,7 @@ name: LTX2.3-LTX Director-导演分镜工作流-更强的控制性-歌曲《再�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060383965181202433.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-LTX Director-导演分镜工作流-更强的控制性-歌曲《再见》_2060383965181202433.json
 hash: 2601fce4ecce2369
 coverage: 0.953488
 learned_at: 2026-10-15 22:38:48

@@ -4,7 +4,7 @@ name: LTX2.3 TI2V Audio 图片音频类数字人(超极速版7分钟20秒视频)
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075071109761949697.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 TI2V Audio 图片音频类数字人(超极速版7分钟20秒视频)_2075071109761949697.json
 hash: a4da815102a63a10
 coverage: 0.483871
 learned_at: 2026-10-15 22:41:21

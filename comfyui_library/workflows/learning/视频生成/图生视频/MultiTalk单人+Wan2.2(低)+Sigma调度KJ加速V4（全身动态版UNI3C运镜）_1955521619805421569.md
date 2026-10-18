@@ -4,7 +4,7 @@ name: MultiTalk单人+Wan2.2(低)+Sigma调度KJ加速V4（全身动态版UNI3C�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955521619805421569.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk单人+Wan2.2(低)+Sigma调度KJ加速V4（全身动态版UNI3C运镜）_1955521619805421569.json
 hash: d25c33e0ef000bdb
 coverage: 0.80303
 learned_at: 2026-10-15 22:31:09

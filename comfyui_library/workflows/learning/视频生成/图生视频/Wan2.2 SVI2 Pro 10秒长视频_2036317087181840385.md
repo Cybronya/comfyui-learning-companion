@@ -4,7 +4,7 @@ name: Wan2.2 SVI2 Pro 10秒长视频_2036317087181840385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036317087181840385.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 SVI2 Pro 10秒长视频_2036317087181840385.json
 hash: 2a52a6ae7584d405
 coverage: 0.96
 learned_at: 2026-10-15 22:35:51

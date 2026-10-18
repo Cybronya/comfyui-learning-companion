@@ -4,7 +4,7 @@ name: 🥳wan2.2 S2V 超稳定数字人生成【姿态迁移版】【超级加�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961973337251627010.json
+file: comfyui_library/workflows/视频生成/图生视频/🥳wan2.2 S2V 超稳定数字人生成【姿态迁移版】【超级加速版】🥳_1961973337251627010.json
 hash: 6d9cf4f266ee8967
 coverage: 0.93617
 learned_at: 2026-10-15 22:31:29

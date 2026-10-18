@@ -4,7 +4,7 @@ name: 祝福视频测试 InfiniteTalk Lightx2v+Rcm_2037816256153264129.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037816256153264129.json
+file: comfyui_library/workflows/视频生成/图生视频/祝福视频测试 InfiniteTalk Lightx2v+Rcm_2037816256153264129.json
 hash: 9ff534325cf4278c
 coverage: 0.923077
 learned_at: 2026-10-15 22:35:59

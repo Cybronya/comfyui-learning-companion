@@ -4,7 +4,7 @@ name: LTX2.3-多帧视频，又快又稳，1080p飞快，可选帧出现的时�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045881780032512001.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-多帧视频，又快又稳，1080p飞快，可选帧出现的时间而不是帧数_2045881780032512001.json
 hash: 8205e16c7d5ad262
 coverage: 0.783333
 learned_at: 2026-10-15 22:36:53

@@ -4,7 +4,7 @@ name: 视频-图片对音频口型-wan2.1-InfiniteTalk-KJ_1973987778281213954.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973987778281213954.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图片对音频口型-wan2.1-InfiniteTalk-KJ_1973987778281213954.json
 hash: 12c320d7be2e117d
 coverage: 0.868421
 learned_at: 2026-10-15 22:32:04

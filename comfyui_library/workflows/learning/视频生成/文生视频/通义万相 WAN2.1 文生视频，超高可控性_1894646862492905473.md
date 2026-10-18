@@ -4,7 +4,7 @@ name: 通义万相 WAN2.1 文生视频，超高可控性_1894646862492905473.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1894646862492905473.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相 WAN2.1 文生视频，超高可控性_1894646862492905473.json
 hash: 3b6bc17f2e0c8064
 coverage: 0.75
 learned_at: 2026-10-15 22:43:20

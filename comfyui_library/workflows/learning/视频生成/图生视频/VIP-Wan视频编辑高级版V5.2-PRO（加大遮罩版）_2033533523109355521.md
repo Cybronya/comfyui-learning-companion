@@ -4,7 +4,7 @@ name: VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033533523109355521.json
+file: comfyui_library/workflows/视频生成/图生视频/VIP-Wan视频编辑高级版V5.2-PRO（加大遮罩版）_2033533523109355521.json
 hash: 31bb6953ec28ead8
 coverage: 0.562264
 learned_at: 2026-10-15 22:35:40

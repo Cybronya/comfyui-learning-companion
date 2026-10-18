@@ -4,7 +4,7 @@ name: wan2.2-动作迁移-超真实_2054742996398157826.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054742996398157826.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-动作迁移-超真实_2054742996398157826.json
 hash: a8e6a6db9d311eea
 coverage: 0.618421
 learned_at: 2026-10-15 22:37:50

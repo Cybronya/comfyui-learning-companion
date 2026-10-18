@@ -4,7 +4,7 @@ name: LTX 2.3 编导时间线Prompt Relay Encode (Timeline)多帧剧情视频_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062349602187210754.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 编导时间线Prompt Relay Encode (Timeline)多帧剧情视频_2062349602187210754.json
 hash: 94f6250a37187d09
 coverage: 0.511628
 learned_at: 2026-10-15 22:39:03

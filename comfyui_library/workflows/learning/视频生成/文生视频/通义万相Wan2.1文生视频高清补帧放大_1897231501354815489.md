@@ -4,7 +4,7 @@ name: 通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1897231501354815489.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相Wan2.1文生视频高清补帧放大_1897231501354815489.json
 hash: be196328570eb914
 coverage: 1
 learned_at: 2026-10-15 22:43:20

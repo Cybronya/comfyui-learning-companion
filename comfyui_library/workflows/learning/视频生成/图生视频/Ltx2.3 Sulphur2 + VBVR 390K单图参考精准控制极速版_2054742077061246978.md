@@ -4,7 +4,7 @@ name: Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054742077061246978.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Sulphur2 + VBVR 390K单图参考精准控制极速版_2054742077061246978.json
 hash: e2d62c7e4ce4264b
 coverage: 0.772727
 learned_at: 2026-10-15 22:37:50

@@ -4,7 +4,7 @@ name: 首尾帧生视频（解禁模型）：Wan2.2 Remix_2053411602111709186.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053411602111709186.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧生视频（解禁模型）：Wan2.2 Remix_2053411602111709186.json
 hash: 0a8a65b38b87998d
 coverage: 1
 learned_at: 2026-10-15 22:37:39

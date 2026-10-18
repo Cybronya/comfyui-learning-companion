@@ -4,7 +4,7 @@ name: 快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063554868475944962.json
+file: comfyui_library/workflows/视频生成/图生视频/快乐老八-Wan2.2 BERNINI视频编辑工作流_2063554868475944962.json
 hash: 795a8b5302fa3e1b
 coverage: 0.425
 learned_at: 2026-10-15 22:39:15

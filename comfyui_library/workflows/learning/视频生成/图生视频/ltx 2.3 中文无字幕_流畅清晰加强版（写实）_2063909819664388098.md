@@ -4,7 +4,7 @@ name: ltx 2.3 中文无字幕_流畅清晰加强版（写实）_2063909819664388
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063909819664388098.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx 2.3 中文无字幕_流畅清晰加强版（写实）_2063909819664388098.json
 hash: a38542a5e6440d52
 coverage: 0.848485
 learned_at: 2026-10-15 22:39:18

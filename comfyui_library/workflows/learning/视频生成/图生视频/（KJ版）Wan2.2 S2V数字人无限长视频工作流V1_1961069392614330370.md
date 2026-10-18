@@ -4,7 +4,7 @@ name: （KJ版）Wan2.2 S2V数字人无限长视频工作流V1_19610693926143303
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961069392614330370.json
+file: comfyui_library/workflows/视频生成/图生视频/（KJ版）Wan2.2 S2V数字人无限长视频工作流V1_1961069392614330370.json
 hash: d52c091f7d951df2
 coverage: 0.777778
 learned_at: 2026-10-15 22:31:28

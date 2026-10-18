@@ -4,7 +4,7 @@ name: wan2.2-Animate局部重绘+视频转绘_1969957827202719745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969957827202719745.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-Animate局部重绘+视频转绘_1969957827202719745.json
 hash: c4c1113301aa1487
 coverage: 0.965909
 learned_at: 2026-10-15 22:31:51

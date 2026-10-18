@@ -4,7 +4,7 @@ name: ltx2.3多模态参考玩法（多图参考+音频参考+视频运镜参考
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081402967902744578.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3多模态参考玩法（多图参考+音频参考+视频运镜参考）_2081402967902744578.json
 hash: 2316509b0715d477
 coverage: 0.84375
 learned_at: 2026-10-15 22:42:22

@@ -4,7 +4,7 @@ name: wan2.2 gguf+lightx2v加速_1950335181229047810.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950335181229047810.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 gguf+lightx2v加速_1950335181229047810.json
 hash: 57c29a5e818dc6a5
 coverage: 1
 learned_at: 2026-10-15 22:43:35

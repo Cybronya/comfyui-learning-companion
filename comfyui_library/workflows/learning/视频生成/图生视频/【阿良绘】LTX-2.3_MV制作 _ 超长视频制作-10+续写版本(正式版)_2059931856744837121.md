@@ -4,7 +4,7 @@ name: 【阿良绘】LTX-2.3_MV制作 _ 超长视频制作-10+续写版本(正�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059931856744837121.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】LTX-2.3_MV制作 _ 超长视频制作-10+续写版本(正式版)_2059931856744837121.json
 hash: 5d6d6ee5e1ed711f
 coverage: 0.483456
 learned_at: 2026-10-15 22:38:44

@@ -4,7 +4,7 @@ name: 【超级加速运镜】Wan2.2+FusionX图生视频_1951090702346297346.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951090702346297346.json
+file: comfyui_library/workflows/视频生成/图生视频/【超级加速运镜】Wan2.2+FusionX图生视频_1951090702346297346.json
 hash: d55f8eaf498945d3
 coverage: 0.73
 learned_at: 2026-10-15 22:30:57

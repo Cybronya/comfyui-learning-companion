@@ -4,7 +4,7 @@ name: Qwen3.5+LTX2.3-transition-lora-丝滑转场-首尾帧视频-自动提示�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063264536383287297.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen3.5+LTX2.3-transition-lora-丝滑转场-首尾帧视频-自动提示词_2063264536383287297.json
 hash: 3c2e24a9e010fddc
 coverage: 0.887097
 learned_at: 2026-10-15 22:39:12

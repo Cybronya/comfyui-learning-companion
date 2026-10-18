@@ -4,7 +4,7 @@ name: Wan2.2 14B 6步超极速图生视频_1949992607571206146.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949992607571206146.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B 6步超极速图生视频_1949992607571206146.json
 hash: feaaa9c32ff03ea6
 coverage: 0.892857
 learned_at: 2026-10-15 22:30:50

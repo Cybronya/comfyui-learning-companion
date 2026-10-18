@@ -4,7 +4,7 @@ name: WAN2.2 BERNINI动作迁移（视频）_2078377798263197698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078377798263197698.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 BERNINI动作迁移（视频）_2078377798263197698.json
 hash: 59494c0952860a93
 coverage: 0.777778
 learned_at: 2026-10-15 22:41:51

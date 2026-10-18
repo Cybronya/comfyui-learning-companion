@@ -4,7 +4,7 @@ name: wan2.2_一键万物打脸_1998363625523937282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998363625523937282.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_一键万物打脸_1998363625523937282.json
 hash: 8b977aafeed85b8c
 coverage: 0.9
 learned_at: 2026-10-15 22:33:31

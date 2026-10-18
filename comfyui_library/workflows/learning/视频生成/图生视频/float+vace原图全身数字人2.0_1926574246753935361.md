@@ -4,7 +4,7 @@ name: float+vace原图全身数字人2.0_1926574246753935361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1926574246753935361.json
+file: comfyui_library/workflows/视频生成/图生视频/float+vace原图全身数字人2.0_1926574246753935361.json
 hash: 90cf481cf26433d6
 coverage: 0.77193
 learned_at: 2026-10-15 22:29:53

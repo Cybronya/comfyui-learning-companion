@@ -4,7 +4,7 @@ name: RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968935101226704898.json
+file: comfyui_library/workflows/视频生成/图生视频/RCM+Humo+InfiniteTalk+LLM自动分镜扩词 最强音乐MV制作默认4分镜可无限延长_1968935101226704898.json
 hash: b1221796e68a68b5
 coverage: 0.777778
 learned_at: 2026-10-15 22:31:47

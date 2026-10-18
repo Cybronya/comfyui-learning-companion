@@ -4,7 +4,7 @@ name: LTX2.0 4模型对比_2018295552026349570.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018295552026349570.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0 4模型对比_2018295552026349570.json
 hash: f2e02f9fd1f9742b
 coverage: 0.753731
 learned_at: 2026-10-15 22:34:56

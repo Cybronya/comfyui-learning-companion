@@ -4,7 +4,7 @@ name: 人物替换 动作迁移 wan  wan2.2_2048235845831888898.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048235845831888898.json
+file: comfyui_library/workflows/视频生成/图生视频/人物替换 动作迁移 wan  wan2.2_2048235845831888898.json
 hash: af04e43e59b2503f
 coverage: 0.913043
 learned_at: 2026-10-15 22:37:08

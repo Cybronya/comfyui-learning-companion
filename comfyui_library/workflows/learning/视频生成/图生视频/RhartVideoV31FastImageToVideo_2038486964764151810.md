@@ -4,7 +4,7 @@ name: RhartVideoV31FastImageToVideo_2038486964764151810.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038486964764151810.json
+file: comfyui_library/workflows/视频生成/图生视频/RhartVideoV31FastImageToVideo_2038486964764151810.json
 hash: 5fa236ff5d42a14d
 coverage: 1
 learned_at: 2026-10-15 22:36:02

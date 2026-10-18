@@ -4,7 +4,7 @@ name: 🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955559935833620481.json
+file: comfyui_library/workflows/视频生成/图生视频/🐲【图片转视频】Wan2.2 图片引导🐲FUN 控制模型姿态复刻【跳舞动作迁移等】_1955559935833620481.json
 hash: 1ae28ee5196d3449
 coverage: 0.782609
 learned_at: 2026-10-15 22:31:09

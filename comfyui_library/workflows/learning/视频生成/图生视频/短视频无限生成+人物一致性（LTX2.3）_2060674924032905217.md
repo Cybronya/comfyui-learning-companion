@@ -4,7 +4,7 @@ name: 短视频无限生成+人物一致性（LTX2.3）_2060674924032905217.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060674924032905217.json
+file: comfyui_library/workflows/视频生成/图生视频/短视频无限生成+人物一致性（LTX2.3）_2060674924032905217.json
 hash: 4dd5654aba704904
 coverage: 0.818182
 learned_at: 2026-10-15 22:38:49

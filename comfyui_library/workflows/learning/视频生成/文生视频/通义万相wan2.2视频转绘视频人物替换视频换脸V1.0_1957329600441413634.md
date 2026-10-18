@@ -4,7 +4,7 @@ name: 通义万相wan2.2视频转绘视频人物替换视频换脸V1.0_195732960
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1957329600441413634.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相wan2.2视频转绘视频人物替换视频换脸V1.0_1957329600441413634.json
 hash: 790f37bdd807680c
 coverage: 0.891304
 learned_at: 2026-10-15 22:43:41

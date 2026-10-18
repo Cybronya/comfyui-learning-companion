@@ -4,7 +4,7 @@ name: Ltx2.3（单图）时间精准控制+逻辑控制PromptRelay+VBVR（KJ版�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047231171125317633.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3（单图）时间精准控制+逻辑控制PromptRelay+VBVR（KJ版）_2047231171125317633.json
 hash: 72959bebdb93d1ed
 coverage: 0.865385
 learned_at: 2026-10-15 22:37:04

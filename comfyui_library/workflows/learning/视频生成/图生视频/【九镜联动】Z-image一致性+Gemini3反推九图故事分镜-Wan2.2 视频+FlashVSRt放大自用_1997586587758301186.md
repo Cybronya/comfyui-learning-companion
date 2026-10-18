@@ -4,7 +4,7 @@ name: 【九镜联动】Z-image一致性+Gemini3反推九图故事分镜-Wan2.2 
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997586587758301186.json
+file: comfyui_library/workflows/视频生成/图生视频/【九镜联动】Z-image一致性+Gemini3反推九图故事分镜-Wan2.2 视频+FlashVSRt放大自用_1997586587758301186.json
 hash: f6dcced7227db076
 coverage: 0.792952
 learned_at: 2026-10-15 22:33:30

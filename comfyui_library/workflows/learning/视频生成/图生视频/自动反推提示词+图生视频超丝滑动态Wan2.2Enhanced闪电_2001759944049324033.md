@@ -4,7 +4,7 @@ name: 自动反推提示词+图生视频超丝滑动态Wan2.2Enhanced闪电_2001
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001759944049324033.json
+file: comfyui_library/workflows/视频生成/图生视频/自动反推提示词+图生视频超丝滑动态Wan2.2Enhanced闪电_2001759944049324033.json
 hash: 7170ebd48af859be
 coverage: 0.828571
 learned_at: 2026-10-15 22:33:46

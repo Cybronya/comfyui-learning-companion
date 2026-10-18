@@ -4,7 +4,7 @@ name: kijai-Wan2.2首尾帧+过渡帧_1963047092535136257.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963047092535136257.json
+file: comfyui_library/workflows/视频生成/图生视频/kijai-Wan2.2首尾帧+过渡帧_1963047092535136257.json
 hash: 6edd977b0b3e5145
 coverage: 1
 learned_at: 2026-10-15 22:31:32

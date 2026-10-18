@@ -4,7 +4,7 @@ name: (荷官)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm多重注
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983514877987889154.json
+file: comfyui_library/workflows/视频生成/图生视频/(荷官)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm多重注意力机制）_1983514877987889154.json
 hash: c26db394d8c891ed
 coverage: 0.777778
 learned_at: 2026-10-15 22:32:44

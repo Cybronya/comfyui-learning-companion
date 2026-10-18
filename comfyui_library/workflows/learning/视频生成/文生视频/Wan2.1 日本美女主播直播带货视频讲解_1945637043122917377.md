@@ -4,7 +4,7 @@ name: Wan2.1 日本美女主播直播带货视频讲解_1945637043122917377.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1945637043122917377.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 日本美女主播直播带货视频讲解_1945637043122917377.json
 hash: d3e1699e1dbcfd2c
 coverage: 1
 learned_at: 2026-10-15 22:43:31

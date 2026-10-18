@@ -4,7 +4,7 @@ name: shake the breast（wan smooth mix）_1991419275315531777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991419275315531777.json
+file: comfyui_library/workflows/视频生成/图生视频/shake the breast（wan smooth mix）_1991419275315531777.json
 hash: ab29c54eac8a2edf
 coverage: 0.875
 learned_at: 2026-10-15 22:33:13

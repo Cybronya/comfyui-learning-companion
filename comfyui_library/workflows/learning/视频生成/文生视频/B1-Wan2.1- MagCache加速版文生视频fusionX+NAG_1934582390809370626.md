@@ -4,7 +4,7 @@ name: B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1934582390809370626.json
+file: comfyui_library/workflows/视频生成/文生视频/B1-Wan2.1- MagCache加速版文生视频fusionX+NAG_1934582390809370626.json
 hash: cbae5dac13744124
 coverage: 1
 learned_at: 2026-10-15 22:43:27

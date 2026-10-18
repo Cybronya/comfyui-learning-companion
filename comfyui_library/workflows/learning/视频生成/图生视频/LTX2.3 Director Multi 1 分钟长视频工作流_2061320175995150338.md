@@ -4,7 +4,7 @@ name: LTX2.3 Director Multi 1 分钟长视频工作流_2061320175995150338.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061320175995150338.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Director Multi 1 分钟长视频工作流_2061320175995150338.json
 hash: 996e483c43e862ad
 coverage: 0.698925
 learned_at: 2026-10-15 22:38:52

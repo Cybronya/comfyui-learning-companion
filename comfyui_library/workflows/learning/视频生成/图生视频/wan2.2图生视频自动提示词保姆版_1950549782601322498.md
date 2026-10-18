@@ -4,7 +4,7 @@ name: wan2.2图生视频自动提示词保姆版_1950549782601322498.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950549782601322498.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频自动提示词保姆版_1950549782601322498.json
 hash: 2f51c5c1aafc412b
 coverage: 0.916667
 learned_at: 2026-10-15 22:30:55

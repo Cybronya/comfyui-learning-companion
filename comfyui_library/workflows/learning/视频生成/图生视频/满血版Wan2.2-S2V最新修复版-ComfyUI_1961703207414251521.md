@@ -4,7 +4,7 @@ name: 满血版Wan2.2-S2V最新修复版-ComfyUI_1961703207414251521.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961703207414251521.json
+file: comfyui_library/workflows/视频生成/图生视频/满血版Wan2.2-S2V最新修复版-ComfyUI_1961703207414251521.json
 hash: 0e2214c42ba5fc04
 coverage: 0.738095
 learned_at: 2026-10-15 22:31:29

@@ -4,7 +4,7 @@ name: wan2.2-GGUF+SmoothMix图生视频工作流_2006660938727952385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006660938727952385.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-GGUF+SmoothMix图生视频工作流_2006660938727952385.json
 hash: f39985f2a360aa1c
 coverage: 0.928571
 learned_at: 2026-10-15 22:34:02

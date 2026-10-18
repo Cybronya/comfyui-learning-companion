@@ -4,7 +4,7 @@ name: 【视频特效】WAN2.1 人物变身天使_1914500420041961473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914500420041961473.json
+file: comfyui_library/workflows/视频生成/图生视频/【视频特效】WAN2.1 人物变身天使_1914500420041961473.json
 hash: 82e0a05dd89fec56
 coverage: 1
 learned_at: 2026-10-15 22:29:36

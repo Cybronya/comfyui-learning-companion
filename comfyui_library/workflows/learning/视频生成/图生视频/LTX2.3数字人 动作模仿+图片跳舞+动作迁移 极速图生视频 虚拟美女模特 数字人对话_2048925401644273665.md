@@ -4,7 +4,7 @@ name: LTX2.3数字人 动作模仿+图片跳舞+动作迁移 极速图生视频 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048925401644273665.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人 动作模仿+图片跳舞+动作迁移 极速图生视频 虚拟美女模特 数字人对话_2048925401644273665.json
 hash: 93c22372a3caac00
 coverage: 0.632653
 learned_at: 2026-10-15 22:37:11

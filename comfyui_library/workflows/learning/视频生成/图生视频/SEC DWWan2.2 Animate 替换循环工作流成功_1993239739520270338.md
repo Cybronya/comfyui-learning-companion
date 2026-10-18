@@ -4,7 +4,7 @@ name: SEC DWWan2.2 Animate 替换循环工作流成功_1993239739520270338.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993239739520270338.json
+file: comfyui_library/workflows/视频生成/图生视频/SEC DWWan2.2 Animate 替换循环工作流成功_1993239739520270338.json
 hash: 8cbdea5944a73c7a
 coverage: 0.504065
 learned_at: 2026-10-15 22:33:18

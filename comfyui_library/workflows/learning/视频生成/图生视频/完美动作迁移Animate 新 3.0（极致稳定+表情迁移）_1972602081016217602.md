@@ -4,7 +4,7 @@ name: 完美动作迁移Animate 新 3.0（极致稳定+表情迁移）_197260208
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972602081016217602.json
+file: comfyui_library/workflows/视频生成/图生视频/完美动作迁移Animate 新 3.0（极致稳定+表情迁移）_1972602081016217602.json
 hash: cddecfd895a05efd
 coverage: 0.575342
 learned_at: 2026-10-15 22:32:00

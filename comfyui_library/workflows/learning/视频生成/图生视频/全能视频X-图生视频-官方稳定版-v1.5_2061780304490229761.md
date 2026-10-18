@@ -4,7 +4,7 @@ name: 全能视频X-图生视频-官方稳定版-v1.5_2061780304490229761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061780304490229761.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频X-图生视频-官方稳定版-v1.5_2061780304490229761.json
 hash: b84f4e42e954f32b
 coverage: 1
 learned_at: 2026-10-15 22:38:56

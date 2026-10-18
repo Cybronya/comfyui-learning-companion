@@ -4,7 +4,7 @@ name: LTX2.3 _ 双图-首尾帧 优化版「Supermate」_2047731840944967682.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047731840944967682.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 _ 双图-首尾帧 优化版「Supermate」_2047731840944967682.json
 hash: d95d8496635b6853
 coverage: 0.847458
 learned_at: 2026-10-15 22:37:06

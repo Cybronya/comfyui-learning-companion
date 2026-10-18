@@ -4,7 +4,7 @@ name: LTX2.3+BFI+动作迁移版_2080669920962105346.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080669920962105346.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+BFI+动作迁移版_2080669920962105346.json
 hash: 35daea0059b68c89
 coverage: 0.862745
 learned_at: 2026-10-15 22:42:16

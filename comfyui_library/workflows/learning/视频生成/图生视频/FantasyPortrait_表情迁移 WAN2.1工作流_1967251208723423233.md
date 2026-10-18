@@ -4,7 +4,7 @@ name: FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967251208723423233.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyPortrait_表情迁移 WAN2.1工作流_1967251208723423233.json
 hash: 7d108433efbf563d
 coverage: 0.58
 learned_at: 2026-10-15 22:31:41

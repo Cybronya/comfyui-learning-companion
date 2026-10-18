@@ -4,7 +4,7 @@ name: 老照片修复+无声视频生成二合一kontext+aniWan2.1 ​_199138612
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991386127613669378.json
+file: comfyui_library/workflows/视频生成/图生视频/老照片修复+无声视频生成二合一kontext+aniWan2.1 ​_1991386127613669378.json
 hash: 5579ccdb91e54e9c
 coverage: 0.959184
 learned_at: 2026-10-15 22:33:13

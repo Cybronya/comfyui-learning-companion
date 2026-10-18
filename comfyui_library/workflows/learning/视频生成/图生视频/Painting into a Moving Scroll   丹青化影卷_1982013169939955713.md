@@ -4,7 +4,7 @@ name: Painting into a Moving Scroll   丹青化影卷_1982013169939955713.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982013169939955713.json
+file: comfyui_library/workflows/视频生成/图生视频/Painting into a Moving Scroll   丹青化影卷_1982013169939955713.json
 hash: f4b0606a74afbf4e
 coverage: 0.824561
 learned_at: 2026-10-15 22:32:39

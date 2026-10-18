@@ -4,7 +4,7 @@ name: 【Wan2.1图生视频】小红书抖音_美女爆款视频生成_190456034
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1904560347657777154.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1图生视频】小红书抖音_美女爆款视频生成_1904560347657777154.json
 hash: 32708f9f1277ca73
 coverage: 1
 learned_at: 2026-10-15 22:29:25

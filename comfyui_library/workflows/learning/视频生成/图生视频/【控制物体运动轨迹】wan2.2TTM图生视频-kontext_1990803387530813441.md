@@ -4,7 +4,7 @@ name: 【控制物体运动轨迹】wan2.2TTM图生视频-kontext_19908033875308
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990803387530813441.json
+file: comfyui_library/workflows/视频生成/图生视频/【控制物体运动轨迹】wan2.2TTM图生视频-kontext_1990803387530813441.json
 hash: 007365b4b017f1be
 coverage: 0.731707
 learned_at: 2026-10-15 22:33:11

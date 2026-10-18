@@ -4,7 +4,7 @@ name: Wan2.2 二阶段大弹弹无限时长图生视频V1_1967463279968837633.js
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967463279968837633.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 二阶段大弹弹无限时长图生视频V1_1967463279968837633.json
 hash: 0bdfc0e14938f853
 coverage: 0.898305
 learned_at: 2026-10-15 22:31:41

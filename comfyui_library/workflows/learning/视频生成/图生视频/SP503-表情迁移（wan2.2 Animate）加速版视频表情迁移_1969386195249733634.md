@@ -4,7 +4,7 @@ name: SP503-表情迁移（wan2.2 Animate）加速版视频表情迁移_19693861
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969386195249733634.json
+file: comfyui_library/workflows/视频生成/图生视频/SP503-表情迁移（wan2.2 Animate）加速版视频表情迁移_1969386195249733634.json
 hash: 4cf5329eb3520104
 coverage: 1
 learned_at: 2026-10-15 22:31:49

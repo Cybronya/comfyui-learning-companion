@@ -4,7 +4,7 @@ name: (支持真人)Seedance2.0图生视频V1（贞贞的AI工坊）_20436375259
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043637525905936386.json
+file: comfyui_library/workflows/视频生成/图生视频/(支持真人)Seedance2.0图生视频V1（贞贞的AI工坊）_2043637525905936386.json
 hash: 75d7d3b457d13057
 coverage: 1
 learned_at: 2026-10-15 22:36:33

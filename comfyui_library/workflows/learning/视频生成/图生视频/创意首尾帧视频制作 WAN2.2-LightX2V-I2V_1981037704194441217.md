@@ -4,7 +4,7 @@ name: 创意首尾帧视频制作 WAN2.2-LightX2V-I2V_1981037704194441217.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981037704194441217.json
+file: comfyui_library/workflows/视频生成/图生视频/创意首尾帧视频制作 WAN2.2-LightX2V-I2V_1981037704194441217.json
 hash: 7bec3df09c77665a
 coverage: 0.8
 learned_at: 2026-10-15 22:32:36

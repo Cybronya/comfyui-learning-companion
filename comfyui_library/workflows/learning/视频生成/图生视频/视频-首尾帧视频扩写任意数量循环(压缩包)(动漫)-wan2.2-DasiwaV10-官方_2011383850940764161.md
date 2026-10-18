@@ -4,7 +4,7 @@ name: 视频-首尾帧视频扩写任意数量循环(压缩包)(动漫)-wan2.2-D
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011383850940764161.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-首尾帧视频扩写任意数量循环(压缩包)(动漫)-wan2.2-DasiwaV10-官方_2011383850940764161.json
 hash: 72c2e1d1a70ad36a
 coverage: 0.655556
 learned_at: 2026-10-15 22:34:22

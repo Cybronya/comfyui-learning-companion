@@ -4,7 +4,7 @@ name: wan2.1万相图生视拖红影特效lora_1922514213686886402.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1922514213686886402.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1万相图生视拖红影特效lora_1922514213686886402.json
 hash: aa519142d4922713
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:45

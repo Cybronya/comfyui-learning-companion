@@ -4,7 +4,7 @@ name: Wan2.2_I2V_Remix V2.1+PainterI2V+VBVR奖励lora 图生视频_2025905016736
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025905016736845825.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_I2V_Remix V2.1+PainterI2V+VBVR奖励lora 图生视频_2025905016736845825.json
 hash: 7ae7de86e0d98957
 coverage: 0.455882
 learned_at: 2026-10-15 22:35:13

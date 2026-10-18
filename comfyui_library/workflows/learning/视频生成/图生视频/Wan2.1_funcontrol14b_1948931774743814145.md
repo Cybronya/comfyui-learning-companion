@@ -4,7 +4,7 @@ name: Wan2.1_funcontrol14b_1948931774743814145.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948931774743814145.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_funcontrol14b_1948931774743814145.json
 hash: 1dc5174222b93e60
 coverage: 0.933333
 learned_at: 2026-10-15 22:30:48

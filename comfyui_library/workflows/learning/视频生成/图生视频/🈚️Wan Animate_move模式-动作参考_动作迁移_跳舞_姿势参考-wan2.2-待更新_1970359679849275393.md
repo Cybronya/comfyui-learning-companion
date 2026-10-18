@@ -4,7 +4,7 @@ name: 🈚️Wan Animate_move模式-动作参考_动作迁移_跳舞_姿势参�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970359679849275393.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️Wan Animate_move模式-动作参考_动作迁移_跳舞_姿势参考-wan2.2-待更新_1970359679849275393.json
 hash: 640c2430c9e7e65c
 coverage: 0.488889
 learned_at: 2026-10-15 22:31:53

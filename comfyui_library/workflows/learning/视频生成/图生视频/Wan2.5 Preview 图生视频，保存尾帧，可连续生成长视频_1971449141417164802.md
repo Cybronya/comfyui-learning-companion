@@ -4,7 +4,7 @@ name: Wan2.5 Preview 图生视频，保存尾帧，可连续生成长视频_1971
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971449141417164802.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.5 Preview 图生视频，保存尾帧，可连续生成长视频_1971449141417164802.json
 hash: 59c7ffea23ca4ecf
 coverage: 0.909091
 learned_at: 2026-10-15 22:31:56

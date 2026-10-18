@@ -4,7 +4,7 @@ name: 图生视频  音画同步  带多种电影级别运镜 LTXV 2.0_202576343
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025763431185387521.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频  音画同步  带多种电影级别运镜 LTXV 2.0_2025763431185387521.json
 hash: 10065420a097f86c
 coverage: 0.848485
 learned_at: 2026-10-15 22:35:12

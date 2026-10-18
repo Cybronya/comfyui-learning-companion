@@ -4,7 +4,7 @@ name: (首尾帧-支持真人)Seedance2.0满血版视频V1（贞贞的AI工坊�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043147768188903425.json
+file: comfyui_library/workflows/视频生成/图生视频/(首尾帧-支持真人)Seedance2.0满血版视频V1（贞贞的AI工坊）_2043147768188903425.json
 hash: c9daa564ed42389c
 coverage: 1
 learned_at: 2026-10-15 22:36:30

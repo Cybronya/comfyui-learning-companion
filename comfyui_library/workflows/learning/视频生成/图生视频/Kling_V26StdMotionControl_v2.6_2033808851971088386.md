@@ -4,7 +4,7 @@ name: Kling_V26StdMotionControl_v2.6_2033808851971088386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033808851971088386.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_V26StdMotionControl_v2.6_2033808851971088386.json
 hash: d3f3db9b8a033071
 coverage: 1
 learned_at: 2026-10-15 22:35:41

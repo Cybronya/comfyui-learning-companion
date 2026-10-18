@@ -4,7 +4,7 @@ name: ViduImageToVideoQ2Turbo_2038488435215831041.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038488435215831041.json
+file: comfyui_library/workflows/视频生成/图生视频/ViduImageToVideoQ2Turbo_2038488435215831041.json
 hash: 56de44de07bb2000
 coverage: 1
 learned_at: 2026-10-15 22:36:03

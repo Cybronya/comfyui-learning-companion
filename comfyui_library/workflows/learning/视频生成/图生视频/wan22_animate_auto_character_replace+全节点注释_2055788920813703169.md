@@ -4,7 +4,7 @@ name: wan22_animate_auto_character_replace+全节点注释_2055788920813703169.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055788920813703169.json
+file: comfyui_library/workflows/视频生成/图生视频/wan22_animate_auto_character_replace+全节点注释_2055788920813703169.json
 hash: 280f1b2ae3fd3c53
 coverage: 0.47561
 learned_at: 2026-10-15 22:37:58

@@ -4,7 +4,7 @@ name: 【大师运镜】Wan2.1-ReCamMaster1.3B_1925789123657814018.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1925789123657814018.json
+file: comfyui_library/workflows/视频生成/图生视频/【大师运镜】Wan2.1-ReCamMaster1.3B_1925789123657814018.json
 hash: d193a98c69db42d1
 coverage: 0.772727
 learned_at: 2026-10-15 22:29:52

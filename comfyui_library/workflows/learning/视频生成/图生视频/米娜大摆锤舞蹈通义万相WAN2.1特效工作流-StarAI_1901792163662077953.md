@@ -4,7 +4,7 @@ name: 米娜大摆锤舞蹈通义万相WAN2.1特效工作流-StarAI_190179216366
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901792163662077953.json
+file: comfyui_library/workflows/视频生成/图生视频/米娜大摆锤舞蹈通义万相WAN2.1特效工作流-StarAI_1901792163662077953.json
 hash: 344fdb8a4c5feff9
 coverage: 1
 learned_at: 2026-10-15 22:29:24

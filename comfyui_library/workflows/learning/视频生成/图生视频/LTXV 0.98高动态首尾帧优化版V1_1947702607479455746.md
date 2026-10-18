@@ -4,7 +4,7 @@ name: LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947702607479455746.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV 0.98高动态首尾帧优化版V1_1947702607479455746.json
 hash: 85ecf2ba7aa60a6b
 coverage: 0.935484
 learned_at: 2026-10-15 22:30:46

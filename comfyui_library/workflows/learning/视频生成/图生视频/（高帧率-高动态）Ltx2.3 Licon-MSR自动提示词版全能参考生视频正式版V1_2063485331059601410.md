@@ -4,7 +4,7 @@ name: （高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063485331059601410.json
+file: comfyui_library/workflows/视频生成/图生视频/（高帧率-高动态）Ltx2.3 Licon-MSR自动提示词版全能参考生视频正式版V1_2063485331059601410.json
 hash: 861ba2fe65a63e93
 coverage: 0.971429
 learned_at: 2026-10-15 22:39:13

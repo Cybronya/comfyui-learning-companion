@@ -4,7 +4,7 @@ name: LTX 2.3 超级导演Prompt Relay智能版 单帧剧情视频工作流_2061
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061271839061659649.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 超级导演Prompt Relay智能版 单帧剧情视频工作流_2061271839061659649.json
 hash: 28584981be5fa0e7
 coverage: 0.568966
 learned_at: 2026-10-15 22:38:51

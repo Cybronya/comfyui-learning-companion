@@ -4,7 +4,7 @@ name: Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制Prompt
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057105862644297729.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3细化多镜头长时间+KJ版+时间分段剪辑+逻辑控制PromptRe图生视频_2057105862644297729.json
 hash: 2d4f8daa74f6c8ed
 coverage: 0.8
 learned_at: 2026-10-15 22:38:08

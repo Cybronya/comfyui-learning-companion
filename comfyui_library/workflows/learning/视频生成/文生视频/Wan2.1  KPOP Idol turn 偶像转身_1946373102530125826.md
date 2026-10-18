@@ -4,7 +4,7 @@ name: Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1946373102530125826.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1  KPOP Idol turn 偶像转身_1946373102530125826.json
 hash: bd1c25918f0a2b62
 coverage: 0.947368
 learned_at: 2026-10-15 22:43:31

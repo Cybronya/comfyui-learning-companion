@@ -4,7 +4,7 @@ name: 非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_197766740
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977667406921367553.json
+file: comfyui_library/workflows/视频生成/图生视频/非人系列 · 视频动作迁移 Animate 2.1 【 原生版 】_1977667406921367553.json
 hash: ae3e610af10dd6a8
 coverage: 0.535211
 learned_at: 2026-10-15 22:32:15

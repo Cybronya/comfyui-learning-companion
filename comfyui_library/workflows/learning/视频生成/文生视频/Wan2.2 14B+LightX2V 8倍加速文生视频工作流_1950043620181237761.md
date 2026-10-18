@@ -4,7 +4,7 @@ name: Wan2.2 14B+LightX2V 8倍加速文生视频工作流_1950043620181237761.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950043620181237761.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 14B+LightX2V 8倍加速文生视频工作流_1950043620181237761.json
 hash: 0eb0393c80adb3b2
 coverage: 0.909091
 learned_at: 2026-10-15 22:43:34

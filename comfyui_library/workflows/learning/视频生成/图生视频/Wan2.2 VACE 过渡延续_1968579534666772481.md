@@ -4,7 +4,7 @@ name: Wan2.2 VACE 过渡延续_1968579534666772481.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968579534666772481.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 VACE 过渡延续_1968579534666772481.json
 hash: a7f30bc7e8612b03
 coverage: 0.598765
 learned_at: 2026-10-15 22:31:45

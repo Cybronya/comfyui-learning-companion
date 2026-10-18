@@ -4,7 +4,7 @@ name: 【弧线围绕运镜】wan2.1图生视频（全自动）_1931133040167157
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1931133040167157762.json
+file: comfyui_library/workflows/视频生成/图生视频/【弧线围绕运镜】wan2.1图生视频（全自动）_1931133040167157762.json
 hash: 77eaa8eef928b55a
 coverage: 0.55
 learned_at: 2026-10-15 22:30:08

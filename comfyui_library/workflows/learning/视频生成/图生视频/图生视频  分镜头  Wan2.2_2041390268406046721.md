@@ -4,7 +4,7 @@ name: 图生视频  分镜头  Wan2.2_2041390268406046721.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041390268406046721.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频  分镜头  Wan2.2_2041390268406046721.json
 hash: 1f6c3a1c1dea8b14
 coverage: 0.666667
 learned_at: 2026-10-15 22:36:19

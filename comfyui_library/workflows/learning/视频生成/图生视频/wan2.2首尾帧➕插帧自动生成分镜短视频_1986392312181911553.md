@@ -4,7 +4,7 @@ name: wan2.2首尾帧➕插帧自动生成分镜短视频_1986392312181911553.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986392312181911553.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首尾帧➕插帧自动生成分镜短视频_1986392312181911553.json
 hash: 30aa971be1f13799
 coverage: 0.575758
 learned_at: 2026-10-15 22:32:55

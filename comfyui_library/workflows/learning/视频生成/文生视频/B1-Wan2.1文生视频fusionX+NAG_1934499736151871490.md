@@ -4,7 +4,7 @@ name: B1-Wan2.1文生视频fusionX+NAG_1934499736151871490.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1934499736151871490.json
+file: comfyui_library/workflows/视频生成/文生视频/B1-Wan2.1文生视频fusionX+NAG_1934499736151871490.json
 hash: 81e2b9bd6e6b06bb
 coverage: 1
 learned_at: 2026-10-15 22:43:27

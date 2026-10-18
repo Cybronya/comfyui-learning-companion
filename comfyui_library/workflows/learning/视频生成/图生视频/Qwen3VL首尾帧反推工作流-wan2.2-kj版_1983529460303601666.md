@@ -4,7 +4,7 @@ name: Qwen3VL首尾帧反推工作流-wan2.2-kj版_1983529460303601666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983529460303601666.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen3VL首尾帧反推工作流-wan2.2-kj版_1983529460303601666.json
 hash: 38572a8a9dd9ed75
 coverage: 0.947368
 learned_at: 2026-10-15 22:32:45

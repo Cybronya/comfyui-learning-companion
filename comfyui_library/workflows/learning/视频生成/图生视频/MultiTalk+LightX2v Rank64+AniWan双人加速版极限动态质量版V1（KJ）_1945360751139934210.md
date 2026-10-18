@@ -4,7 +4,7 @@ name: MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（K
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945360751139934210.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk+LightX2v Rank64+AniWan双人加速版极限动态质量版V1（KJ）_1945360751139934210.json
 hash: 82d255b5209f944f
 coverage: 1
 learned_at: 2026-10-15 22:30:41

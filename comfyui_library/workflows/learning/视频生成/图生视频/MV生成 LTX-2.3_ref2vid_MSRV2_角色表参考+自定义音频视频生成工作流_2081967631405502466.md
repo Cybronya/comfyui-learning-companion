@@ -4,7 +4,7 @@ name: MV生成 LTX-2.3_ref2vid_MSRV2_角色表参考+自定义音频视频生成
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081967631405502466.json
+file: comfyui_library/workflows/视频生成/图生视频/MV生成 LTX-2.3_ref2vid_MSRV2_角色表参考+自定义音频视频生成工作流_2081967631405502466.json
 hash: 2bd7b82735b64d7d
 coverage: 0.529412
 learned_at: 2026-10-15 22:42:25

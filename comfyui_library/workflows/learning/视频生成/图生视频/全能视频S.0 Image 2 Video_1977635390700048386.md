@@ -4,7 +4,7 @@ name: 全能视频S.0 Image 2 Video_1977635390700048386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977635390700048386.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S.0 Image 2 Video_1977635390700048386.json
 hash: e370760fee22c948
 coverage: 0.8
 learned_at: 2026-10-15 22:32:15

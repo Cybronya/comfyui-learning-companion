@@ -4,7 +4,7 @@ name: LTX2.3-多图视频生成（首尾帧）_2040716663120732161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040716663120732161.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-多图视频生成（首尾帧）_2040716663120732161.json
 hash: 5af129a0453c1500
 coverage: 0.921875
 learned_at: 2026-10-15 22:36:16

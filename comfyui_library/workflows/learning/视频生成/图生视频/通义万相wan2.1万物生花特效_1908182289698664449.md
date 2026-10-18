@@ -4,7 +4,7 @@ name: 通义万相wan2.1万物生花特效_1908182289698664449.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1908182289698664449.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1万物生花特效_1908182289698664449.json
 hash: bd416d06554e81db
 coverage: 1
 learned_at: 2026-10-15 22:29:28

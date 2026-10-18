@@ -4,7 +4,7 @@ name: Wan2.2-动作迁移（VACE版）_1970083923097231361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1970083923097231361.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-动作迁移（VACE版）_1970083923097231361.json
 hash: aa7e7d53bb6e33e6
 coverage: 0.784314
 learned_at: 2026-10-15 22:43:47

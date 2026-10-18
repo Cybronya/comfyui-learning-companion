@@ -4,7 +4,7 @@ name: 高质量WAN2.2首尾帧极速版_2007622545448640513.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007622545448640513.json
+file: comfyui_library/workflows/视频生成/图生视频/高质量WAN2.2首尾帧极速版_2007622545448640513.json
 hash: d092691569bffc30
 coverage: 0.928571
 learned_at: 2026-10-15 22:34:04

@@ -4,7 +4,7 @@ name: wan2.2 FUN VACE视频转视频 循环长视频V1_1967774026137501698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1967774026137501698.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 FUN VACE视频转视频 循环长视频V1_1967774026137501698.json
 hash: 4e663e877859cd43
 coverage: 0.58209
 learned_at: 2026-10-15 22:43:45

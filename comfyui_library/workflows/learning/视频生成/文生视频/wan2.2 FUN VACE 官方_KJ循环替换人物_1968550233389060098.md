@@ -4,7 +4,7 @@ name: wan2.2 FUN VACE 官方_KJ循环替换人物_1968550233389060098.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968550233389060098.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 FUN VACE 官方_KJ循环替换人物_1968550233389060098.json
 hash: 7961f991948f52c9
 coverage: 0.588235
 learned_at: 2026-10-15 22:43:46

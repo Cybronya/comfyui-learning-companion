@@ -4,7 +4,7 @@ name: wan2.1图生视频 (分镜转视频剧本)_1986047852856168450.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986047852856168450.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1图生视频 (分镜转视频剧本)_1986047852856168450.json
 hash: 197b9114a77f5293
 coverage: 0.894737
 learned_at: 2026-10-15 22:32:53

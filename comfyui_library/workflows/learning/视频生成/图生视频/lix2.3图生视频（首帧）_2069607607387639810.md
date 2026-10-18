@@ -4,7 +4,7 @@ name: lix2.3图生视频（首帧）_2069607607387639810.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069607607387639810.json
+file: comfyui_library/workflows/视频生成/图生视频/lix2.3图生视频（首帧）_2069607607387639810.json
 hash: 7e5305dc082cd1bb
 coverage: 0.911111
 learned_at: 2026-10-15 22:40:30

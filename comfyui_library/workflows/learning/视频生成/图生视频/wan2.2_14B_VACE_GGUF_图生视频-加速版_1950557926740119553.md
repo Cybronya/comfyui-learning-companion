@@ -4,7 +4,7 @@ name: wan2.2_14B_VACE_GGUF_图生视频-加速版_1950557926740119553.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950557926740119553.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_14B_VACE_GGUF_图生视频-加速版_1950557926740119553.json
 hash: 12f04cdf7f23f997
 coverage: 1
 learned_at: 2026-10-15 22:30:55

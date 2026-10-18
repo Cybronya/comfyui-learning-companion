@@ -4,7 +4,7 @@ name: 【跳舞视频 】最新wan2.1上传图片生成跳舞视频_191276524645
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912765246451216385.json
+file: comfyui_library/workflows/视频生成/图生视频/【跳舞视频 】最新wan2.1上传图片生成跳舞视频_1912765246451216385.json
 hash: 69ce2ee226422146
 coverage: 0.942857
 learned_at: 2026-10-15 22:29:32

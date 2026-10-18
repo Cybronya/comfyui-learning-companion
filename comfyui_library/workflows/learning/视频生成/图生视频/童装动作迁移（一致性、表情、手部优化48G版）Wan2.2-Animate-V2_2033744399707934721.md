@@ -4,7 +4,7 @@ name: 童装动作迁移（一致性、表情、手部优化48G版）Wan2.2-Anim
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033744399707934721.json
+file: comfyui_library/workflows/视频生成/图生视频/童装动作迁移（一致性、表情、手部优化48G版）Wan2.2-Animate-V2_2033744399707934721.json
 hash: 14aa0b61f16e7a31
 coverage: 0.636364
 learned_at: 2026-10-15 22:35:41

@@ -4,7 +4,7 @@ name: LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073319876273463297.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人V3 Prompt Relay提示词分段控制_2073319876273463297.json
 hash: 331beab128d78dc9
 coverage: 0.821429
 learned_at: 2026-10-15 22:41:05

@@ -4,7 +4,7 @@ name: Wan2.2 Remix V3 图生视频_2077018124695728129.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077018124695728129.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix V3 图生视频_2077018124695728129.json
 hash: 251298d16c00537f
 coverage: 1
 learned_at: 2026-10-15 22:41:36

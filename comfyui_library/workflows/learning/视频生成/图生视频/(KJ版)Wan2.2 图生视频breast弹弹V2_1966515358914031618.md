@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 图生视频breast弹弹V2_1966515358914031618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966515358914031618.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2 图生视频breast弹弹V2_1966515358914031618.json
 hash: 74a9363fd2f6aa86
 coverage: 0.894737
 learned_at: 2026-10-15 22:31:38

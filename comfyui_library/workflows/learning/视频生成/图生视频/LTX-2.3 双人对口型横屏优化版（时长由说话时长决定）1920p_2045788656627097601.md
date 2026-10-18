@@ -4,7 +4,7 @@ name: LTX-2.3 双人对口型横屏优化版（时长由说话时长决定）192
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045788656627097601.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 双人对口型横屏优化版（时长由说话时长决定）1920p_2045788656627097601.json
 hash: 909e4f2a0eb3c5bd
 coverage: 0.9
 learned_at: 2026-10-15 22:36:52

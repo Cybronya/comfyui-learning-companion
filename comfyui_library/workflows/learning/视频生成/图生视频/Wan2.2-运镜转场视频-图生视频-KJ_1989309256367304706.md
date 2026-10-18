@@ -4,7 +4,7 @@ name: Wan2.2-运镜转场视频-图生视频-KJ_1989309256367304706.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989309256367304706.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-运镜转场视频-图生视频-KJ_1989309256367304706.json
 hash: dc2c50fdaea1dee5
 coverage: 0.925
 learned_at: 2026-10-15 22:33:06

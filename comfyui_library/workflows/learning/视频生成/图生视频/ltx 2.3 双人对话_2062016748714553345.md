@@ -4,7 +4,7 @@ name: ltx 2.3 双人对话_2062016748714553345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062016748714553345.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx 2.3 双人对话_2062016748714553345.json
 hash: 30f9d2bdf62c88ba
 coverage: 0.824176
 learned_at: 2026-10-15 22:38:59

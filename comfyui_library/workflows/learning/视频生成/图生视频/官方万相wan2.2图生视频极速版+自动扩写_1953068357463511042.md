@@ -4,7 +4,7 @@ name: 官方万相wan2.2图生视频极速版+自动扩写_1953068357463511042.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953068357463511042.json
+file: comfyui_library/workflows/视频生成/图生视频/官方万相wan2.2图生视频极速版+自动扩写_1953068357463511042.json
 hash: 6a0f0396e4d82b7c
 coverage: 0.948718
 learned_at: 2026-10-15 22:31:04

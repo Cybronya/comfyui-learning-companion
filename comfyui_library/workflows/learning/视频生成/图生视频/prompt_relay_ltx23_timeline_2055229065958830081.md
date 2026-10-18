@@ -4,7 +4,7 @@ name: prompt_relay_ltx23_timeline_2055229065958830081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055229065958830081.json
+file: comfyui_library/workflows/视频生成/图生视频/prompt_relay_ltx23_timeline_2055229065958830081.json
 hash: b998cefea58d5674
 coverage: 0.75
 learned_at: 2026-10-15 22:37:56

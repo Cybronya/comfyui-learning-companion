@@ -4,7 +4,7 @@ name: WAN2.1网红美女视频生成器_480P满血版_1932001597558030338.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1932001597558030338.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1网红美女视频生成器_480P满血版_1932001597558030338.json
 hash: 857cf014ab08fd2d
 coverage: 0.925926
 learned_at: 2026-10-15 22:30:10

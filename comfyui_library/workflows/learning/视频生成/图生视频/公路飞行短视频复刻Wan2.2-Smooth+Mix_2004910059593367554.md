@@ -4,7 +4,7 @@ name: 公路飞行短视频复刻Wan2.2-Smooth+Mix_2004910059593367554.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004910059593367554.json
+file: comfyui_library/workflows/视频生成/图生视频/公路飞行短视频复刻Wan2.2-Smooth+Mix_2004910059593367554.json
 hash: a3937563d7a2a69b
 coverage: 0.971429
 learned_at: 2026-10-15 22:33:55

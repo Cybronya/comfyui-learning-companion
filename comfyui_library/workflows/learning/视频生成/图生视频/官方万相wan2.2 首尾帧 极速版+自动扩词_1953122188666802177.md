@@ -4,7 +4,7 @@ name: 官方万相wan2.2 首尾帧 极速版+自动扩词_1953122188666802177.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953122188666802177.json
+file: comfyui_library/workflows/视频生成/图生视频/官方万相wan2.2 首尾帧 极速版+自动扩词_1953122188666802177.json
 hash: 9390ff052e8d998c
 coverage: 0.957447
 learned_at: 2026-10-15 22:31:04

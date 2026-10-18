@@ -4,7 +4,7 @@ name: wan2.2Vace迁移替换_1957709844612575234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957709844612575234.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2Vace迁移替换_1957709844612575234.json
 hash: dc8cd4a56b7ee211
 coverage: 0.574194
 learned_at: 2026-10-15 22:31:17

@@ -4,7 +4,7 @@ name: 指定人物替换 指定服装替换 Wan2.2 KJ加速 无惧切镜头SEC�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977316291763675138.json
+file: comfyui_library/workflows/视频生成/图生视频/指定人物替换 指定服装替换 Wan2.2 KJ加速 无惧切镜头SEC遮罩_1977316291763675138.json
 hash: 765c65267b32ffb2
 coverage: 0.678161
 learned_at: 2026-10-15 22:32:14

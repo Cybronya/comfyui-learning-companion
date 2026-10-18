@@ -4,7 +4,7 @@ name: Wan2.2 Rapid-AIO-Mega图生视频极速版_2052639403599773698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052639403599773698.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Rapid-AIO-Mega图生视频极速版_2052639403599773698.json
 hash: 6ecbd415c046f869
 coverage: 0.875
 learned_at: 2026-10-15 22:37:31

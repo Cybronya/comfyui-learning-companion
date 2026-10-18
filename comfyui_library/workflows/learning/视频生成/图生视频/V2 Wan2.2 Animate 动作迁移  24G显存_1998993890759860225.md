@@ -4,7 +4,7 @@ name: V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998993890759860225.json
+file: comfyui_library/workflows/视频生成/图生视频/V2 Wan2.2 Animate 动作迁移  24G显存_1998993890759860225.json
 hash: ff15dcff358225bd
 coverage: 0.516854
 learned_at: 2026-10-15 22:33:35

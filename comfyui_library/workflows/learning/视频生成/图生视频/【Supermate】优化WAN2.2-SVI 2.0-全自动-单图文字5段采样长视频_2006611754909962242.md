@@ -4,7 +4,7 @@ name: 【Supermate】优化WAN2.2-SVI 2.0-全自动-单图文字5段采样长视
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006611754909962242.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】优化WAN2.2-SVI 2.0-全自动-单图文字5段采样长视频_2006611754909962242.json
 hash: 0e6a76d4d73f0e6e
 coverage: 0.468085
 learned_at: 2026-10-15 22:34:02

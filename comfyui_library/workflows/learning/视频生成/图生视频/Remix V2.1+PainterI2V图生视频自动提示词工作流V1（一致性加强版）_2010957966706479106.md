@@ -4,7 +4,7 @@ name: Remix V2.1+PainterI2V图生视频自动提示词工作流V1（一致性加
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010957966706479106.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix V2.1+PainterI2V图生视频自动提示词工作流V1（一致性加强版）_2010957966706479106.json
 hash: df3eae267a7c5015
 coverage: 0.721311
 learned_at: 2026-10-15 22:34:19

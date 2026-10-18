@@ -4,7 +4,7 @@ name: LTXV 0.98 提示词调度（多组）图生视频V1（支持60秒）_19477
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947704155776397313.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV 0.98 提示词调度（多组）图生视频V1（支持60秒）_1947704155776397313.json
 hash: 01d2ccc8d5683100
 coverage: 0.622951
 learned_at: 2026-10-15 22:30:46

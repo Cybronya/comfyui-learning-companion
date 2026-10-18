@@ -4,7 +4,7 @@ name: 重大进步2_Wan2.2_PromptRelay多段提示词精准控制_20547170283925
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054717028392546306.json
+file: comfyui_library/workflows/视频生成/图生视频/重大进步2_Wan2.2_PromptRelay多段提示词精准控制_2054717028392546306.json
 hash: 5de90cfb09a5b4bd
 coverage: 0.909091
 learned_at: 2026-10-15 22:37:50

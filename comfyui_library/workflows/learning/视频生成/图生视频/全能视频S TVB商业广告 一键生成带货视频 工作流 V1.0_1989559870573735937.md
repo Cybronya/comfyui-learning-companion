@@ -4,7 +4,7 @@ name: 全能视频S TVB商业广告 一键生成带货视频 工作流 V1.0_1989
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989559870573735937.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S TVB商业广告 一键生成带货视频 工作流 V1.0_1989559870573735937.json
 hash: e9ea175b5f629ba5
 coverage: 0.583333
 learned_at: 2026-10-15 22:33:07

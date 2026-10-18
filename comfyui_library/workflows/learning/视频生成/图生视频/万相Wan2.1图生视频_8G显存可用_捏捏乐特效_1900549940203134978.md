@@ -4,7 +4,7 @@ name: 万相Wan2.1图生视频_8G显存可用_捏捏乐特效_190054994020313497
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900549940203134978.json
+file: comfyui_library/workflows/视频生成/图生视频/万相Wan2.1图生视频_8G显存可用_捏捏乐特效_1900549940203134978.json
 hash: 5be686a446d884e4
 coverage: 0.693548
 learned_at: 2026-10-15 22:29:23

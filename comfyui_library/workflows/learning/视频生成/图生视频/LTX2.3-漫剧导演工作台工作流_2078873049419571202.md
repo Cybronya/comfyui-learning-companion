@@ -4,7 +4,7 @@ name: LTX2.3-漫剧导演工作台工作流_2078873049419571202.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078873049419571202.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-漫剧导演工作台工作流_2078873049419571202.json
 hash: 9e23677a1a2d38e9
 coverage: 0.756098
 learned_at: 2026-10-15 22:41:57

@@ -4,7 +4,7 @@ name: （最强）Wan2.2 Smooth V2模型半自动提示词图生视频极速版_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010551165288714241.json
+file: comfyui_library/workflows/视频生成/图生视频/（最强）Wan2.2 Smooth V2模型半自动提示词图生视频极速版_2010551165288714241.json
 hash: 57daea34bd1371ff
 coverage: 0.754386
 learned_at: 2026-10-15 22:34:17

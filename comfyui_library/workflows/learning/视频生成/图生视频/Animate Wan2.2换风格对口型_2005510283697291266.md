@@ -4,7 +4,7 @@ name: Animate Wan2.2换风格对口型_2005510283697291266.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005510283697291266.json
+file: comfyui_library/workflows/视频生成/图生视频/Animate Wan2.2换风格对口型_2005510283697291266.json
 hash: b9fc58e992b39efb
 coverage: 0.542857
 learned_at: 2026-10-15 22:33:57

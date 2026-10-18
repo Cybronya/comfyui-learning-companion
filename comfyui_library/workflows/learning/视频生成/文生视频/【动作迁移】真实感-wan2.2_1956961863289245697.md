@@ -4,7 +4,7 @@ name: 【动作迁移】真实感-wan2.2_1956961863289245697.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1956961863289245697.json
+file: comfyui_library/workflows/视频生成/文生视频/【动作迁移】真实感-wan2.2_1956961863289245697.json
 hash: 084b8f091f3163ba
 coverage: 0.618421
 learned_at: 2026-10-15 22:43:41

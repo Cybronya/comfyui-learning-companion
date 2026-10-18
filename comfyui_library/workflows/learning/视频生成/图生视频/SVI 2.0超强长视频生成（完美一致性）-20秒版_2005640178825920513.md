@@ -4,7 +4,7 @@ name: SVI 2.0超强长视频生成（完美一致性）-20秒版_200564017882592
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005640178825920513.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0超强长视频生成（完美一致性）-20秒版_2005640178825920513.json
 hash: bf6633c4513d235d
 coverage: 0.492424
 learned_at: 2026-10-15 22:33:58

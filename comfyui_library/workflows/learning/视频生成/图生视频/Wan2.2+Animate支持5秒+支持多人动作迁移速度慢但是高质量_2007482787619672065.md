@@ -4,7 +4,7 @@ name: Wan2.2+Animate支持5秒+支持多人动作迁移速度慢但是高质量_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007482787619672065.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Animate支持5秒+支持多人动作迁移速度慢但是高质量_2007482787619672065.json
 hash: 7ba3f8dac96cf379
 coverage: 0.518519
 learned_at: 2026-10-15 22:34:04

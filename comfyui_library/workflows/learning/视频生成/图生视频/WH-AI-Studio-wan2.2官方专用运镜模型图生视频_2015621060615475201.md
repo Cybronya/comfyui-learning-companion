@@ -4,7 +4,7 @@ name: WH-AI-Studio-wan2.2官方专用运镜模型图生视频_201562106061547520
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015621060615475201.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-wan2.2官方专用运镜模型图生视频_2015621060615475201.json
 hash: 228620e261cb3a99
 coverage: 0.731707
 learned_at: 2026-10-15 22:34:39

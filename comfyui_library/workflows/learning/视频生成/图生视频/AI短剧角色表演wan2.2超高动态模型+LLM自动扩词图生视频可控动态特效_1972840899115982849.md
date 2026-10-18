@@ -4,7 +4,7 @@ name: AI短剧角色表演wan2.2超高动态模型+LLM自动扩词图生视频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972840899115982849.json
+file: comfyui_library/workflows/视频生成/图生视频/AI短剧角色表演wan2.2超高动态模型+LLM自动扩词图生视频可控动态特效_1972840899115982849.json
 hash: 02aa4fadb11a6980
 coverage: 0.891892
 learned_at: 2026-10-15 22:32:00

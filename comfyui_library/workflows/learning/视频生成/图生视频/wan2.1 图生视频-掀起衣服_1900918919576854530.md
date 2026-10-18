@@ -4,7 +4,7 @@ name: wan2.1 图生视频-掀起衣服_1900918919576854530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900918919576854530.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 图生视频-掀起衣服_1900918919576854530.json
 hash: 2463b0b43fb50a3f
 coverage: 1
 learned_at: 2026-10-15 22:29:23

@@ -4,7 +4,7 @@ name: 【阿良绘】Ltx 2.3图生视频 _ 自动提示词 改进版V2（新版�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047130634124005377.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】Ltx 2.3图生视频 _ 自动提示词 改进版V2（新版模型）_2047130634124005377.json
 hash: 1e32785ee5fb64d4
 coverage: 0.75
 learned_at: 2026-10-15 22:37:02

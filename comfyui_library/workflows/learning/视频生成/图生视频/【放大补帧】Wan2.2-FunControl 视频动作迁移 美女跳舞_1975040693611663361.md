@@ -4,7 +4,7 @@ name: 【放大补帧】Wan2.2-FunControl 视频动作迁移 美女跳舞_197504
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975040693611663361.json
+file: comfyui_library/workflows/视频生成/图生视频/【放大补帧】Wan2.2-FunControl 视频动作迁移 美女跳舞_1975040693611663361.json
 hash: 16671a4e9ef44c04
 coverage: 0.606061
 learned_at: 2026-10-15 22:32:07

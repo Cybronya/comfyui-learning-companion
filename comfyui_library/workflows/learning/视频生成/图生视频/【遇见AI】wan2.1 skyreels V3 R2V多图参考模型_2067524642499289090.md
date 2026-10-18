@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067524642499289090.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 skyreels V3 R2V多图参考模型_2067524642499289090.json
 hash: 6b53b9840d5d9694
 coverage: 0.888889
 learned_at: 2026-10-15 22:40:04

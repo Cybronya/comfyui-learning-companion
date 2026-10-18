@@ -4,7 +4,7 @@ name: 【首尾帧+图生视频+文生视频】Wan2.2万相视频rapid mega aio�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972197412775391234.json
+file: comfyui_library/workflows/视频生成/图生视频/【首尾帧+图生视频+文生视频】Wan2.2万相视频rapid mega aio综合工作流_1972197412775391234.json
 hash: d4f6df918b8b1296
 coverage: 0.895522
 learned_at: 2026-10-15 22:31:58

@@ -4,7 +4,7 @@ name: 图生视频-MEGA Merge-WAN2.2-AllInOne_1968839523046236161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968839523046236161.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-MEGA Merge-WAN2.2-AllInOne_1968839523046236161.json
 hash: 4efdb73356985049
 coverage: 0.941176
 learned_at: 2026-10-15 22:31:46

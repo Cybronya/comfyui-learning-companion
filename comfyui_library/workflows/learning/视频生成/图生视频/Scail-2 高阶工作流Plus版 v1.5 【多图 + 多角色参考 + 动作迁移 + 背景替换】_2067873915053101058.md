@@ -4,7 +4,7 @@ name: Scail-2 高阶工作流Plus版 v1.5 【多图 + 多角色参考 + 动作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067873915053101058.json
+file: comfyui_library/workflows/视频生成/图生视频/Scail-2 高阶工作流Plus版 v1.5 【多图 + 多角色参考 + 动作迁移 + 背景替换】_2067873915053101058.json
 hash: c9a728c3886e7928
 coverage: 0.458333
 learned_at: 2026-10-15 22:40:14

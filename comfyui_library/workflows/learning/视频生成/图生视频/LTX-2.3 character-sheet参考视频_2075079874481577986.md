@@ -4,7 +4,7 @@ name: LTX-2.3 character-sheet参考视频_2075079874481577986.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075079874481577986.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 character-sheet参考视频_2075079874481577986.json
 hash: d200b73ad653a254
 coverage: 0.522581
 learned_at: 2026-10-15 22:41:21

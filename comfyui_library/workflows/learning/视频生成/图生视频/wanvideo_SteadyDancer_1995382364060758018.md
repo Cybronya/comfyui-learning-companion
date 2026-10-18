@@ -4,7 +4,7 @@ name: wanvideo_SteadyDancer_1995382364060758018.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995382364060758018.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_SteadyDancer_1995382364060758018.json
 hash: a10fdad8cada5227
 coverage: 0.571429
 learned_at: 2026-10-15 22:33:22

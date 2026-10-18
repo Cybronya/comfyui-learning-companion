@@ -4,7 +4,7 @@ name: Wan2.2-lightx2v-6步加速文生视频_KJ版非常逼真目前最牛_19502
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950206171439390721.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-lightx2v-6步加速文生视频_KJ版非常逼真目前最牛_1950206171439390721.json
 hash: bbc9feb64dd29702
 coverage: 0.878788
 learned_at: 2026-10-15 22:43:35

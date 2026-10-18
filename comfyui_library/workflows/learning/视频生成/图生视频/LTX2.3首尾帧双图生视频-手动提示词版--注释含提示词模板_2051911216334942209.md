@@ -4,7 +4,7 @@ name: LTX2.3首尾帧双图生视频-手动提示词版--注释含提示词模�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051911216334942209.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧双图生视频-手动提示词版--注释含提示词模板_2051911216334942209.json
 hash: d90ac4ee91baf16a
 coverage: 0.885246
 learned_at: 2026-10-15 22:37:24

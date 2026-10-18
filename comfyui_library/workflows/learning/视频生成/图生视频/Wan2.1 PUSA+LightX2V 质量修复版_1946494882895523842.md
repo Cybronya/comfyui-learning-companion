@@ -4,7 +4,7 @@ name: Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946494882895523842.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 PUSA+LightX2V 质量修复版_1946494882895523842.json
 hash: b3b355aa65040ed5
 coverage: 0.851852
 learned_at: 2026-10-15 22:30:44

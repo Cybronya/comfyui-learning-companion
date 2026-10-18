@@ -4,7 +4,7 @@ name: Wan2.1-15秒图生视频3段扩展_1899668266204221441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899668266204221441.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-15秒图生视频3段扩展_1899668266204221441.json
 hash: fdddc8573fc424fb
 coverage: 0.954545
 learned_at: 2026-10-15 22:29:21

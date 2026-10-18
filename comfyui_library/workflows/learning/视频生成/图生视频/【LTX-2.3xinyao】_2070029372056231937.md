@@ -4,7 +4,7 @@ name: 【LTX-2.3xinyao】_2070029372056231937.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070029372056231937.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX-2.3xinyao】_2070029372056231937.json
 hash: 93fe16f8ab84e7e8
 coverage: 0.84127
 learned_at: 2026-10-15 22:40:34

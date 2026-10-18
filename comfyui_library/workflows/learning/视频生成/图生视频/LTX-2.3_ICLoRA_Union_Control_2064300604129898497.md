@@ -4,7 +4,7 @@ name: LTX-2.3_ICLoRA_Union_Control_2064300604129898497.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064300604129898497.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_ICLoRA_Union_Control_2064300604129898497.json
 hash: a490e72efaa55ccc
 coverage: 0.558824
 learned_at: 2026-10-15 22:39:23

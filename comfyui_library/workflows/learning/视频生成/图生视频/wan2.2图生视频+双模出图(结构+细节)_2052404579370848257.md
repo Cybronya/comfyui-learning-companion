@@ -4,7 +4,7 @@ name: wan2.2图生视频+双模出图(结构+细节)_2052404579370848257.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052404579370848257.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频+双模出图(结构+细节)_2052404579370848257.json
 hash: 47eae7ce36ea4bb0
 coverage: 0.969697
 learned_at: 2026-10-15 22:37:29

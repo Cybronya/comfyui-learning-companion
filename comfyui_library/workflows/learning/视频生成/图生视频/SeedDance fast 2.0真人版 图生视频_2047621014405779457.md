@@ -4,7 +4,7 @@ name: SeedDance fast 2.0真人版 图生视频_2047621014405779457.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047621014405779457.json
+file: comfyui_library/workflows/视频生成/图生视频/SeedDance fast 2.0真人版 图生视频_2047621014405779457.json
 hash: ccc9b2429da1cf3c
 coverage: 0.916667
 learned_at: 2026-10-15 22:37:06

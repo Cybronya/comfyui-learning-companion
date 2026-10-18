@@ -4,7 +4,7 @@ name: LTX2.3 I2V test v5(prompt relay版)_2031616581142319106.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031616581142319106.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 I2V test v5(prompt relay版)_2031616581142319106.json
 hash: 9f4c18172f55e7ae
 coverage: 0.924528
 learned_at: 2026-10-15 22:35:32

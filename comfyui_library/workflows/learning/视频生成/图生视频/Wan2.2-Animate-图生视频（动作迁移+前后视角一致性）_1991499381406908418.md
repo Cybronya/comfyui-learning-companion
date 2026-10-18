@@ -4,7 +4,7 @@ name: Wan2.2-Animate-图生视频（动作迁移+前后视角一致性）_199149
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991499381406908418.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-图生视频（动作迁移+前后视角一致性）_1991499381406908418.json
 hash: ae4d80911ec4258b
 coverage: 0.641304
 learned_at: 2026-10-15 22:33:14

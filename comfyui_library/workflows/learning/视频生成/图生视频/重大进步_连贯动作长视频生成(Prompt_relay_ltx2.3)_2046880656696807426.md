@@ -4,7 +4,7 @@ name: 重大进步_连贯动作长视频生成(Prompt_relay_ltx2.3)_204688065669
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046880656696807426.json
+file: comfyui_library/workflows/视频生成/图生视频/重大进步_连贯动作长视频生成(Prompt_relay_ltx2.3)_2046880656696807426.json
 hash: 588ff464bacce4b0
 coverage: 0.688889
 learned_at: 2026-10-15 22:37:02

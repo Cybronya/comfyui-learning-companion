@@ -4,7 +4,7 @@ name: seedance2.0mini图生视频最新图生视频_2070071367327903745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070071367327903745.json
+file: comfyui_library/workflows/视频生成/图生视频/seedance2.0mini图生视频最新图生视频_2070071367327903745.json
 hash: 6fa7a8f9c8651e7e
 coverage: 1
 learned_at: 2026-10-15 22:40:35

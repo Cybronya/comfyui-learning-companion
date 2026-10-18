@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950936240545800193.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2+提示词工具+无API视频扩写3分镜文生视频加速版V1_1950936240545800193.json
 hash: 9aa7bc3d7d9f9723
 coverage: 0.772727
 learned_at: 2026-10-15 22:43:37

@@ -4,7 +4,7 @@ name: WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914626855226306562.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1-Fun-InP首尾帧视频生成ComfyUI原生版_1914626855226306562.json
 hash: 38edd4a8d8218f48
 coverage: 1
 learned_at: 2026-10-15 22:29:36

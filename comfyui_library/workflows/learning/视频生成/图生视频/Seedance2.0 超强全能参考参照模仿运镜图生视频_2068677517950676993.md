@@ -4,7 +4,7 @@ name: Seedance2.0 超强全能参考参照模仿运镜图生视频_2068677517950
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068677517950676993.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 超强全能参考参照模仿运镜图生视频_2068677517950676993.json
 hash: 69154821eadc7910
 coverage: 1
 learned_at: 2026-10-15 22:40:21

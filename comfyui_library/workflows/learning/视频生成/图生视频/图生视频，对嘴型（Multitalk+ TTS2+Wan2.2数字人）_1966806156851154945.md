@@ -4,7 +4,7 @@ name: 图生视频，对嘴型（Multitalk+ TTS2+Wan2.2数字人）_196680615685
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966806156851154945.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频，对嘴型（Multitalk+ TTS2+Wan2.2数字人）_1966806156851154945.json
 hash: 8f71e773ead65990
 coverage: 0.97619
 learned_at: 2026-10-15 22:31:39

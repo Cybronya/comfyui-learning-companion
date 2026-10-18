@@ -4,7 +4,7 @@ name: wan2.2+lightx2v-8步图生视频-ComfyUI官方（极速）_195046081270194
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950460812701949953.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+lightx2v-8步图生视频-ComfyUI官方（极速）_1950460812701949953.json
 hash: 6c4a34cad006ffdb
 coverage: 0.892857
 learned_at: 2026-10-15 22:30:55

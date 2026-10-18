@@ -4,7 +4,7 @@ name: 【文生视频】Wan2.2 14B文生视频高质量加速版_195333123524020
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1953331235240202241.json
+file: comfyui_library/workflows/视频生成/文生视频/【文生视频】Wan2.2 14B文生视频高质量加速版_1953331235240202241.json
 hash: 41442636fbbb2bc3
 coverage: 0.923077
 learned_at: 2026-10-15 22:43:38

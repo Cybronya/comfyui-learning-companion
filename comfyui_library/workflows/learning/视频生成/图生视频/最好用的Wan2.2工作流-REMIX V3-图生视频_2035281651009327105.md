@@ -4,7 +4,7 @@ name: 最好用的Wan2.2工作流-REMIX V3-图生视频_2035281651009327105.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035281651009327105.json
+file: comfyui_library/workflows/视频生成/图生视频/最好用的Wan2.2工作流-REMIX V3-图生视频_2035281651009327105.json
 hash: 44f9d762eb52d22d
 coverage: 0.763636
 learned_at: 2026-10-15 22:35:47

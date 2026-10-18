@@ -4,7 +4,7 @@ name: Wan2.2 文生视频HPS高噪MPS低噪加速版V1_1969009834282655745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969009834282655745.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 文生视频HPS高噪MPS低噪加速版V1_1969009834282655745.json
 hash: d5ffa2effa6c2711
 coverage: 0.837838
 learned_at: 2026-10-15 22:43:46

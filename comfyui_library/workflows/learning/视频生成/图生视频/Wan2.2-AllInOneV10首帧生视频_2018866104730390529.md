@@ -4,7 +4,7 @@ name: Wan2.2-AllInOneV10首帧生视频_2018866104730390529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018866104730390529.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-AllInOneV10首帧生视频_2018866104730390529.json
 hash: 032530aace75aa88
 coverage: 1
 learned_at: 2026-10-15 22:34:59

@@ -4,7 +4,7 @@ name: 阿里FantasyTalking最强图片驱动数字人-StarAI_1917113415993856002
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917113415993856002.json
+file: comfyui_library/workflows/视频生成/图生视频/阿里FantasyTalking最强图片驱动数字人-StarAI_1917113415993856002.json
 hash: a9b648776be32acf
 coverage: 0.941176
 learned_at: 2026-10-15 22:29:39

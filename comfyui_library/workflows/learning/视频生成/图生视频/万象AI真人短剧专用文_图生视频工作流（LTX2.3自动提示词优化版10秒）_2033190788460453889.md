@@ -4,7 +4,7 @@ name: 万象AI真人短剧专用文_图生视频工作流（LTX2.3自动提示�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033190788460453889.json
+file: comfyui_library/workflows/视频生成/图生视频/万象AI真人短剧专用文_图生视频工作流（LTX2.3自动提示词优化版10秒）_2033190788460453889.json
 hash: 1fda868082c13306
 coverage: 0.82
 learned_at: 2026-10-15 22:35:38

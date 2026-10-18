@@ -4,7 +4,7 @@ name: LTX2.3+漫剧短剧图生视频_2058444261548453889.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058444261548453889.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+漫剧短剧图生视频_2058444261548453889.json
 hash: 3b48943c5e1ff527
 coverage: 0.95082
 learned_at: 2026-10-15 22:38:23

@@ -4,7 +4,7 @@ name: LTX 2.3  首尾帧数字人高清+30秒视频41分钟pius模式_2046223171
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046223171501694978.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3  首尾帧数字人高清+30秒视频41分钟pius模式_2046223171501694978.json
 hash: 3a3f0c0554f1506b
 coverage: 0.496599
 learned_at: 2026-10-15 22:36:56

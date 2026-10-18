@@ -4,7 +4,7 @@ name: 万相VACE1.3B首尾帧图生视频_1917476719106920449.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917476719106920449.json
+file: comfyui_library/workflows/视频生成/图生视频/万相VACE1.3B首尾帧图生视频_1917476719106920449.json
 hash: 7ef8a1a35671522b
 coverage: 1
 learned_at: 2026-10-15 22:29:40

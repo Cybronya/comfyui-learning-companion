@@ -4,7 +4,7 @@ name: Wan2.2-JK高速版-高清1920 -自动提示词_1952604203145474049.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952604203145474049.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-JK高速版-高清1920 -自动提示词_1952604203145474049.json
 hash: fbd8e282d10628e2
 coverage: 0.824561
 learned_at: 2026-10-15 22:31:02

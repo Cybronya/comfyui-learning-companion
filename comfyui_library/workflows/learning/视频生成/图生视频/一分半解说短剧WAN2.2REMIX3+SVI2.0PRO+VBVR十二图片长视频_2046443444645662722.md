@@ -4,7 +4,7 @@ name: 一分半解说短剧WAN2.2REMIX3+SVI2.0PRO+VBVR十二图片长视频_2046
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046443444645662722.json
+file: comfyui_library/workflows/视频生成/图生视频/一分半解说短剧WAN2.2REMIX3+SVI2.0PRO+VBVR十二图片长视频_2046443444645662722.json
 hash: 2d125632b3ca0a55
 coverage: 0.614379
 learned_at: 2026-10-15 22:36:58

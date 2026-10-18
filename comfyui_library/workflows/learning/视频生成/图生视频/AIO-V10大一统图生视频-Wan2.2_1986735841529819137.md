@@ -4,7 +4,7 @@ name: AIO-V10大一统图生视频-Wan2.2_1986735841529819137.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986735841529819137.json
+file: comfyui_library/workflows/视频生成/图生视频/AIO-V10大一统图生视频-Wan2.2_1986735841529819137.json
 hash: 94dfbdd2319d0e1f
 coverage: 0.8125
 learned_at: 2026-10-15 22:32:56

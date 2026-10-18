@@ -4,7 +4,7 @@ name: WAN2.2首尾帧自动提示词运镜_2009523874265829378.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009523874265829378.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2首尾帧自动提示词运镜_2009523874265829378.json
 hash: e55038dcb71c7c46
 coverage: 0.727273
 learned_at: 2026-10-15 22:34:13

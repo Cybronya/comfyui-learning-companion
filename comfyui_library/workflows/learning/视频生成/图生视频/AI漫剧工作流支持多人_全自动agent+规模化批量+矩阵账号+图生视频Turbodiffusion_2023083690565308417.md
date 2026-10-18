@@ -4,7 +4,7 @@ name: AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2023083690565308417.json
+file: comfyui_library/workflows/视频生成/图生视频/AI漫剧工作流支持多人_全自动agent+规模化批量+矩阵账号+图生视频Turbodiffusion_2023083690565308417.json
 hash: 17ffb5a6bafcca49
 coverage: 0.953488
 learned_at: 2026-10-15 22:35:11

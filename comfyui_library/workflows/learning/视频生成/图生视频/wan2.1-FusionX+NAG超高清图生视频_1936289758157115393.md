@@ -4,7 +4,7 @@ name: wan2.1-FusionX+NAG超高清图生视频_1936289758157115393.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936289758157115393.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-FusionX+NAG超高清图生视频_1936289758157115393.json
 hash: 09eb6d0977c04203
 coverage: 0.909091
 learned_at: 2026-10-15 22:30:25

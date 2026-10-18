@@ -4,7 +4,7 @@ name: LTX0.95超速优化版首尾帧关键帧视频控制工作流_189766592387
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1897665923870838786.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX0.95超速优化版首尾帧关键帧视频控制工作流_1897665923870838786.json
 hash: 494bd79d77ca7d22
 coverage: 0.918367
 learned_at: 2026-10-15 22:29:19

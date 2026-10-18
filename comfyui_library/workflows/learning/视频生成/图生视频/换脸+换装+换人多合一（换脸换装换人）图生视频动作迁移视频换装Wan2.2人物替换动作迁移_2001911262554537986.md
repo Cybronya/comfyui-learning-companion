@@ -4,7 +4,7 @@ name: 换脸+换装+换人多合一（换脸换装换人）图生视频动作迁
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001911262554537986.json
+file: comfyui_library/workflows/视频生成/图生视频/换脸+换装+换人多合一（换脸换装换人）图生视频动作迁移视频换装Wan2.2人物替换动作迁移_2001911262554537986.json
 hash: acab1502ded9da37
 coverage: 0.662791
 learned_at: 2026-10-15 22:33:47

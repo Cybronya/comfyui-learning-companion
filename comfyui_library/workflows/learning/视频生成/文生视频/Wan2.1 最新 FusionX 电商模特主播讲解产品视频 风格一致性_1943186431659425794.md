@@ -4,7 +4,7 @@ name: Wan2.1 最新 FusionX 电商模特主播讲解产品视频 风格一致性
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1943186431659425794.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 最新 FusionX 电商模特主播讲解产品视频 风格一致性_1943186431659425794.json
 hash: 7f358a031cfe64e9
 coverage: 1
 learned_at: 2026-10-15 22:43:30

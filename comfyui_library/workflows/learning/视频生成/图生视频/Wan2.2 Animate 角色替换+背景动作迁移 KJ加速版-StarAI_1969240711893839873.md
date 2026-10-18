@@ -4,7 +4,7 @@ name: Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_19692407
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969240711893839873.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate 角色替换+背景动作迁移 KJ加速版-StarAI_1969240711893839873.json
 hash: d17e71c27fc5a3bc
 coverage: 0.475
 learned_at: 2026-10-15 22:31:48

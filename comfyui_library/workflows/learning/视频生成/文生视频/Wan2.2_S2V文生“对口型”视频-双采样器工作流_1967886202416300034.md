@@ -4,7 +4,7 @@ name: Wan2.2_S2V文生“对口型”视频-双采样器工作流_19678862024163
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1967886202416300034.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_S2V文生“对口型”视频-双采样器工作流_1967886202416300034.json
 hash: f426d4a5dfb482a3
 coverage: 0.961538
 learned_at: 2026-10-15 22:43:45

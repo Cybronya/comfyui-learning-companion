@@ -4,7 +4,7 @@ name: SAM3 + Wan2.2_Animate 视频制作最新版_2003695576329953281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003695576329953281.json
+file: comfyui_library/workflows/视频生成/图生视频/SAM3 + Wan2.2_Animate 视频制作最新版_2003695576329953281.json
 hash: e51eb194b569d403
 coverage: 0.965517
 learned_at: 2026-10-15 22:33:51

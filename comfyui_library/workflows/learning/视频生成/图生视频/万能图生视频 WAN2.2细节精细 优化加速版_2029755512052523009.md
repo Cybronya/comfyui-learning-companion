@@ -4,7 +4,7 @@ name: 万能图生视频 WAN2.2细节精细 优化加速版_2029755512052523009.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029755512052523009.json
+file: comfyui_library/workflows/视频生成/图生视频/万能图生视频 WAN2.2细节精细 优化加速版_2029755512052523009.json
 hash: 0121019449d73d01
 coverage: 0.44
 learned_at: 2026-10-15 22:35:23

@@ -4,7 +4,7 @@ name: KTV歌后音乐生成器1.0_1967011405411049474.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967011405411049474.json
+file: comfyui_library/workflows/视频生成/图生视频/KTV歌后音乐生成器1.0_1967011405411049474.json
 hash: 4d167fbfd879f931
 coverage: 0.933333
 learned_at: 2026-10-15 22:31:40

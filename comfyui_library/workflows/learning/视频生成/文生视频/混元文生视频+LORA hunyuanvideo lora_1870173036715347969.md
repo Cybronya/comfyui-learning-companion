@@ -4,7 +4,7 @@ name: 混元文生视频+LORA hunyuanvideo lora_1870173036715347969.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1870173036715347969.json
+file: comfyui_library/workflows/视频生成/文生视频/混元文生视频+LORA hunyuanvideo lora_1870173036715347969.json
 hash: 6ed2d7581cd1597a
 coverage: 1
 learned_at: 2026-10-15 22:43:19

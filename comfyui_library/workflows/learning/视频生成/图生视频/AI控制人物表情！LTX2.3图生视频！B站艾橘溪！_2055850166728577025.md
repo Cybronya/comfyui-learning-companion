@@ -4,7 +4,7 @@ name: AI控制人物表情！LTX2.3图生视频！B站艾橘溪！_2055850166728
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055850166728577025.json
+file: comfyui_library/workflows/视频生成/图生视频/AI控制人物表情！LTX2.3图生视频！B站艾橘溪！_2055850166728577025.json
 hash: c58923ef421eb3cf
 coverage: 0.401639
 learned_at: 2026-10-15 22:37:58

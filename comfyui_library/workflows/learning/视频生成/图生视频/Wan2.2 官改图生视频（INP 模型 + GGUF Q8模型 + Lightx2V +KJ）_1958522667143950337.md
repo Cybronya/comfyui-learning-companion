@@ -4,7 +4,7 @@ name: Wan2.2 官改图生视频（INP 模型 + GGUF Q8模型 + Lightx2V +KJ）_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958522667143950337.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 官改图生视频（INP 模型 + GGUF Q8模型 + Lightx2V +KJ）_1958522667143950337.json
 hash: b5e3e4d3443ac77c
 coverage: 0.809524
 learned_at: 2026-10-15 22:31:22

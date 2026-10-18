@@ -4,7 +4,7 @@ name: LTX2.3 自用版 I2V Customer Audio_2063969467373281282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063969467373281282.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 自用版 I2V Customer Audio_2063969467373281282.json
 hash: 1dfe2537dd699aa6
 coverage: 0.90411
 learned_at: 2026-10-15 22:39:19

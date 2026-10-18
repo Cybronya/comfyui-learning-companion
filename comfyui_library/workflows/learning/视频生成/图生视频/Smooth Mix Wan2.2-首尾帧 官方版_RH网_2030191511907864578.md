@@ -4,7 +4,7 @@ name: Smooth Mix Wan2.2-首尾帧 官方版_RH网_2030191511907864578.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030191511907864578.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix Wan2.2-首尾帧 官方版_RH网_2030191511907864578.json
 hash: f8c18b8f6dd8e46b
 coverage: 0.857143
 learned_at: 2026-10-15 22:35:25

@@ -4,7 +4,7 @@ name: (手捧花）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017566097163165697.json
+file: comfyui_library/workflows/视频生成/图生视频/(手捧花）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2017566097163165697.json
 hash: fac73b43c748c8af
 coverage: 0.75
 learned_at: 2026-10-15 22:34:49

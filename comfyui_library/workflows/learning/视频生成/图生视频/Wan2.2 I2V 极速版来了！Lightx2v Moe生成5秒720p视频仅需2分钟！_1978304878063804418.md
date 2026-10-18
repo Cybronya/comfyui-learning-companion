@@ -4,7 +4,7 @@ name: Wan2.2 I2V 极速版来了！Lightx2v Moe生成5秒720p视频仅需2分钟
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978304878063804418.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 I2V 极速版来了！Lightx2v Moe生成5秒720p视频仅需2分钟！_1978304878063804418.json
 hash: abf05529d61bbfdf
 coverage: 1
 learned_at: 2026-10-15 22:32:18

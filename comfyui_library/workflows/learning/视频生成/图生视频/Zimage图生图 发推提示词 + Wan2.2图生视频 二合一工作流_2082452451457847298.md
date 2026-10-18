@@ -4,7 +4,7 @@ name: Zimage图生图 发推提示词 + Wan2.2图生视频 二合一工作流_20
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082452451457847298.json
+file: comfyui_library/workflows/视频生成/图生视频/Zimage图生图 发推提示词 + Wan2.2图生视频 二合一工作流_2082452451457847298.json
 hash: 222edec1ab671e6d
 coverage: 0.933962
 learned_at: 2026-10-15 22:42:32

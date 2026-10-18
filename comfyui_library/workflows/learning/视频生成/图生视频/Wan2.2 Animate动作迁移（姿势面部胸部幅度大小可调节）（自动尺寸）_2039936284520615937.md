@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移（姿势面部胸部幅度大小可调节）（
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039936284520615937.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移（姿势面部胸部幅度大小可调节）（自动尺寸）_2039936284520615937.json
 hash: 050c06197b12da38
 coverage: 0.5
 learned_at: 2026-10-15 22:36:12

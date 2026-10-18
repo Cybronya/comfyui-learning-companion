@@ -4,7 +4,7 @@ name: LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010630264770269185.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0数字人 自适应音频 效果还可以_2010630264770269185.json
 hash: 6e764a19cfe5a881
 coverage: 0.710526
 learned_at: 2026-10-15 22:34:18

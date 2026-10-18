@@ -4,7 +4,7 @@ name: 🈚️Wan Animate_mix模式-人物迁移_替换人物到场景-wan 2.2_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969102037159997442.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️Wan Animate_mix模式-人物迁移_替换人物到场景-wan 2.2_1969102037159997442.json
 hash: 0d0426fb5894ddab
 coverage: 0.55
 learned_at: 2026-10-15 22:31:47

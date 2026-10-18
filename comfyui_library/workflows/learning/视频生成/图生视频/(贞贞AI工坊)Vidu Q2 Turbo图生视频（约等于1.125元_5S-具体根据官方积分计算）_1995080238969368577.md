@@ -4,7 +4,7 @@ name: (贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995080238969368577.json
+file: comfyui_library/workflows/视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo图生视频（约等于1.125元_5S-具体根据官方积分计算）_1995080238969368577.json
 hash: 51b2e0acbe2fc733
 coverage: 0.416667
 learned_at: 2026-10-15 22:33:22

@@ -4,7 +4,7 @@ name: LTX-2.3-Image Audio to Video-distilled-lora-1.1_2044225142284357633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044225142284357633.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-Image Audio to Video-distilled-lora-1.1_2044225142284357633.json
 hash: 117be83dbd128637
 coverage: 0.877193
 learned_at: 2026-10-15 22:36:36

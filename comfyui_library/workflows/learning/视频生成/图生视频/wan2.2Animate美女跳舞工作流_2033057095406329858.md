@@ -4,7 +4,7 @@ name: wan2.2Animate美女跳舞工作流_2033057095406329858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033057095406329858.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2Animate美女跳舞工作流_2033057095406329858.json
 hash: 311228a63c6ba022
 coverage: 0.777778
 learned_at: 2026-10-15 22:35:38

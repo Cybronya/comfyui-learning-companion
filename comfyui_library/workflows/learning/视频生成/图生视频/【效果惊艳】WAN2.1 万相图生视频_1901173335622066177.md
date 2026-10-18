@@ -4,7 +4,7 @@ name: 【效果惊艳】WAN2.1 万相图生视频_1901173335622066177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901173335622066177.json
+file: comfyui_library/workflows/视频生成/图生视频/【效果惊艳】WAN2.1 万相图生视频_1901173335622066177.json
 hash: 4134ab2e0010a314
 coverage: 1
 learned_at: 2026-10-15 22:29:23

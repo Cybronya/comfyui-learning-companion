@@ -4,7 +4,7 @@ name: Wan2.2图生视频添加自定义动态字幕_1983546218196443137.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983546218196443137.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频添加自定义动态字幕_1983546218196443137.json
 hash: 6b364eb3335910d5
 coverage: 0.75
 learned_at: 2026-10-15 22:32:45

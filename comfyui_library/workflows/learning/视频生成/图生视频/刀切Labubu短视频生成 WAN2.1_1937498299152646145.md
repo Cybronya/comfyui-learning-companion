@@ -4,7 +4,7 @@ name: 刀切Labubu短视频生成 WAN2.1_1937498299152646145.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937498299152646145.json
+file: comfyui_library/workflows/视频生成/图生视频/刀切Labubu短视频生成 WAN2.1_1937498299152646145.json
 hash: b31b458e345aa1ec
 coverage: 1
 learned_at: 2026-10-15 22:30:29

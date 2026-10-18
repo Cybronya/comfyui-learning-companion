@@ -4,7 +4,7 @@ name: Wan2.2_S2V-数字人-多图片-超长视频制作_1971055874456358913.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971055874456358913.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_S2V-数字人-多图片-超长视频制作_1971055874456358913.json
 hash: 1dc5a4e92b3d7d06
 coverage: 0.557377
 learned_at: 2026-10-15 22:31:55

@@ -4,7 +4,7 @@ name: wan2.2 直播生成抖音花瓣消失特效_1958440936764293122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958440936764293122.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 直播生成抖音花瓣消失特效_1958440936764293122.json
 hash: 80476ce670ef045b
 coverage: 0.928571
 learned_at: 2026-10-15 22:31:22

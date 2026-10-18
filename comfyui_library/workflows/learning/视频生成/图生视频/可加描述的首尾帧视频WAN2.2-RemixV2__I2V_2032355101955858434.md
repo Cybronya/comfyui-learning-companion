@@ -4,7 +4,7 @@ name: 可加描述的首尾帧视频WAN2.2-RemixV2__I2V_2032355101955858434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032355101955858434.json
+file: comfyui_library/workflows/视频生成/图生视频/可加描述的首尾帧视频WAN2.2-RemixV2__I2V_2032355101955858434.json
 hash: 8b1647c0a21e036b
 coverage: 0.405063
 learned_at: 2026-10-15 22:35:36

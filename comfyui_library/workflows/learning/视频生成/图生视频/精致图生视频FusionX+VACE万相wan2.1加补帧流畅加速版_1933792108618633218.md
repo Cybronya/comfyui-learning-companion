@@ -4,7 +4,7 @@ name: 精致图生视频FusionX+VACE万相wan2.1加补帧流畅加速版_1933792
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933792108618633218.json
+file: comfyui_library/workflows/视频生成/图生视频/精致图生视频FusionX+VACE万相wan2.1加补帧流畅加速版_1933792108618633218.json
 hash: 82b228ef58a3d835
 coverage: 1
 learned_at: 2026-10-15 22:30:15

@@ -4,7 +4,7 @@ name: 万相Wan2.2动作复刻，视频复刻，动作模仿_迁移_204648461471
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046484614713188353.json
+file: comfyui_library/workflows/视频生成/图生视频/万相Wan2.2动作复刻，视频复刻，动作模仿_迁移_2046484614713188353.json
 hash: ab1c67d638f0bbc3
 coverage: 0.5
 learned_at: 2026-10-15 22:36:59

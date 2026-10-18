@@ -4,7 +4,7 @@ name: 【动态追踪运镜】wan2.1图生视频（全自动）_1931191683562536
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1931191683562536961.json
+file: comfyui_library/workflows/视频生成/图生视频/【动态追踪运镜】wan2.1图生视频（全自动）_1931191683562536961.json
 hash: 5188b6d3fae82dad
 coverage: 0.55
 learned_at: 2026-10-15 22:30:08

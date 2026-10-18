@@ -4,7 +4,7 @@ name: LTX2.3 --首尾帧双图生视频--全自动提示词--自由控制尾帧�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035325472770367490.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 --首尾帧双图生视频--全自动提示词--自由控制尾帧位置--超高出片率_2035325472770367490.json
 hash: df2a8b88ec6357d5
 coverage: 0.918033
 learned_at: 2026-10-15 22:35:48

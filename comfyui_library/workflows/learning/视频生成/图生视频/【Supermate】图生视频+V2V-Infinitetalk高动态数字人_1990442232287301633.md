@@ -4,7 +4,7 @@ name: 【Supermate】图生视频+V2V-Infinitetalk高动态数字人_19904422322
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990442232287301633.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】图生视频+V2V-Infinitetalk高动态数字人_1990442232287301633.json
 hash: d1749dd4e031df22
 coverage: 0.628099
 learned_at: 2026-10-15 22:33:10

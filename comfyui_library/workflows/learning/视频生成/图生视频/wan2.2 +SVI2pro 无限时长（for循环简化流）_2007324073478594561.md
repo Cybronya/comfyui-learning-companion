@@ -4,7 +4,7 @@ name: wan2.2 +SVI2pro 无限时长（for循环简化流）_2007324073478594561.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007324073478594561.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 +SVI2pro 无限时长（for循环简化流）_2007324073478594561.json
 hash: 81e533a14bda6fa7
 coverage: 0.634921
 learned_at: 2026-10-15 22:34:03

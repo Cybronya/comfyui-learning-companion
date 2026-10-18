@@ -4,7 +4,7 @@ name: wan2.2-文生视频-KJ加速版-输入大纲-自动优化提示词_1955139
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955139127446573057.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2-文生视频-KJ加速版-输入大纲-自动优化提示词_1955139127446573057.json
 hash: 9fcf66bd84fd6487
 coverage: 0.933333
 learned_at: 2026-10-15 22:43:40

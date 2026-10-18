@@ -4,7 +4,7 @@ name: Wan2.2-Animate-V5（一致性+表情+手部+抖动）_2037056894430351361.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037056894430351361.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-V5（一致性+表情+手部+抖动）_2037056894430351361.json
 hash: a01c15623c372113
 coverage: 0.640351
 learned_at: 2026-10-15 22:35:54

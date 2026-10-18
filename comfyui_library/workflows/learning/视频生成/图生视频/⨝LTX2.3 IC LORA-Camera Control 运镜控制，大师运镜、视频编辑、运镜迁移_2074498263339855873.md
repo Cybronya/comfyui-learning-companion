@@ -4,7 +4,7 @@ name: ⨝LTX2.3 IC LORA-Camera Control 运镜控制，大师运镜、视频编�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074498263339855873.json
+file: comfyui_library/workflows/视频生成/图生视频/⨝LTX2.3 IC LORA-Camera Control 运镜控制，大师运镜、视频编辑、运镜迁移_2074498263339855873.json
 hash: d7d054cde75d4f31
 coverage: 0.871795
 learned_at: 2026-10-15 22:41:16

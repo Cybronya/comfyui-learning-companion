@@ -4,7 +4,7 @@ name: LTX2.3全栈式短剧生成V14(Prompt Relay版)_2050042685750300673.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050042685750300673.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全栈式短剧生成V14(Prompt Relay版)_2050042685750300673.json
 hash: d22e94d27d505df8
 coverage: 0.773585
 learned_at: 2026-10-15 22:37:16

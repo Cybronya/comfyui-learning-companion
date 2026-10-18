@@ -4,7 +4,7 @@ name: Wan2.2-S2V 音频驱动图片数字人_2026256930167066626.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2026256930167066626.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-S2V 音频驱动图片数字人_2026256930167066626.json
 hash: bbb4eb109cefabb9
 coverage: 0.862069
 learned_at: 2026-10-15 22:35:13

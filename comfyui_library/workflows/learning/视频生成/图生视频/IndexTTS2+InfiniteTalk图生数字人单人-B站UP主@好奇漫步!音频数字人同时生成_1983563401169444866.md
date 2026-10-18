@@ -4,7 +4,7 @@ name: IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983563401169444866.json
+file: comfyui_library/workflows/视频生成/图生视频/IndexTTS2+InfiniteTalk图生数字人单人-B站UP主@好奇漫步!音频数字人同时生成_1983563401169444866.json
 hash: a444a1245c54a8b9
 coverage: 0.769231
 learned_at: 2026-10-15 22:32:45

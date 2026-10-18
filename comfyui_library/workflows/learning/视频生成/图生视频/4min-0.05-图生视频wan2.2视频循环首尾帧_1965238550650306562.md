@@ -4,7 +4,7 @@ name: 4min-0.05-图生视频wan2.2视频循环首尾帧_1965238550650306562.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1965238550650306562.json
+file: comfyui_library/workflows/视频生成/图生视频/4min-0.05-图生视频wan2.2视频循环首尾帧_1965238550650306562.json
 hash: b6b12fcf8d7df01f
 coverage: 0.904762
 learned_at: 2026-10-15 22:31:36

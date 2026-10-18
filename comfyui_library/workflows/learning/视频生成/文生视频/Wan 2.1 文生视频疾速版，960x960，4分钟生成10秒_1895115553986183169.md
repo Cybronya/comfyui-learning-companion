@@ -4,7 +4,7 @@ name: Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1895115553986183169.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan 2.1 文生视频疾速版，960x960，4分钟生成10秒_1895115553986183169.json
 hash: 38ca4c7d639d2bef
 coverage: 0.756757
 learned_at: 2026-10-15 22:43:20

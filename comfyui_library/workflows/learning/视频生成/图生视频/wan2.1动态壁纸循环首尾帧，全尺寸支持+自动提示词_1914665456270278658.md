@@ -4,7 +4,7 @@ name: wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_191466
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914665456270278658.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1动态壁纸循环首尾帧，全尺寸支持+自动提示词_1914665456270278658.json
 hash: a56c4e1372cd1e4c
 coverage: 1
 learned_at: 2026-10-15 22:29:36

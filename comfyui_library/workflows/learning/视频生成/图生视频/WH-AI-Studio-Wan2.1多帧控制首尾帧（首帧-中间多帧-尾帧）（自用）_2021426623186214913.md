@@ -4,7 +4,7 @@ name: WH-AI-Studio-Wan2.1多帧控制首尾帧（首帧-中间多帧-尾帧）�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021426623186214913.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-Wan2.1多帧控制首尾帧（首帧-中间多帧-尾帧）（自用）_2021426623186214913.json
 hash: ae512d56875b94a9
 coverage: 0.952381
 learned_at: 2026-10-15 22:35:08

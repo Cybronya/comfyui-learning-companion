@@ -4,7 +4,7 @@ name: Wan2.1_Fun_V1.1_Control_Camera_1.3B_I2V_2038456404972933122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038456404972933122.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_Fun_V1.1_Control_Camera_1.3B_I2V_2038456404972933122.json
 hash: 9afb0676287ec5c1
 coverage: 0.9375
 learned_at: 2026-10-15 22:36:02

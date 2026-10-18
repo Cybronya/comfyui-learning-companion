@@ -4,7 +4,7 @@ name: wanvideo_multitalk_test_01g_1936629963053256706.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936629963053256706.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_multitalk_test_01g_1936629963053256706.json
 hash: fa83d487116d339a
 coverage: 0.933333
 learned_at: 2026-10-15 22:30:27

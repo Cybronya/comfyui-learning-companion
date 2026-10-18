@@ -4,7 +4,7 @@ name: fusionx+comfyui native vace 首尾帧工作流_1934269405759234050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934269405759234050.json
+file: comfyui_library/workflows/视频生成/图生视频/fusionx+comfyui native vace 首尾帧工作流_1934269405759234050.json
 hash: 4d34074ca76d3a9f
 coverage: 0.532468
 learned_at: 2026-10-15 22:30:16

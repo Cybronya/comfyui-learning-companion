@@ -4,7 +4,7 @@ name: Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037893339223171074.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance 2.0｜字节第三代 AI 视频｜文生视频・多镜头・音画同步｜AI 生成内容_2037893339223171074.json
 hash: 33195c1aeab4737f
 coverage: 1
 learned_at: 2026-10-15 22:35:59

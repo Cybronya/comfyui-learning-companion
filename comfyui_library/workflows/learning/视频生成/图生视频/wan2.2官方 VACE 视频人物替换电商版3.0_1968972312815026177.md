@@ -4,7 +4,7 @@ name: wan2.2官方 VACE 视频人物替换电商版3.0_1968972312815026177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968972312815026177.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2官方 VACE 视频人物替换电商版3.0_1968972312815026177.json
 hash: d90003cd8a2be8ec
 coverage: 0.978261
 learned_at: 2026-10-15 22:31:47

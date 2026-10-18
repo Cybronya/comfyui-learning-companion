@@ -4,7 +4,7 @@ name: 通义万相wan2.1图生视频美女转身舞动_1910235144152674306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1910235144152674306.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1图生视频美女转身舞动_1910235144152674306.json
 hash: 8ec4741f7180fbd7
 coverage: 1
 learned_at: 2026-10-15 22:29:29

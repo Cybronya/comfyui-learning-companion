@@ -4,7 +4,7 @@ name: 一键生成圣诞视频 Z-image-CN控制V2.1洗图+Wan2.2图生视频工�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2002729129940250625.json
+file: comfyui_library/workflows/视频生成/图生视频/一键生成圣诞视频 Z-image-CN控制V2.1洗图+Wan2.2图生视频工作流_2002729129940250625.json
 hash: 7089af891870b51f
 coverage: 0.8
 learned_at: 2026-10-15 22:33:49

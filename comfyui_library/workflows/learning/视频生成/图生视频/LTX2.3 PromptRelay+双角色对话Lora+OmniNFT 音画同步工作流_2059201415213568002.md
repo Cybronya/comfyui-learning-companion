@@ -4,7 +4,7 @@ name: LTX2.3 PromptRelay+双角色对话Lora+OmniNFT 音画同步工作流_20592
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059201415213568002.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 PromptRelay+双角色对话Lora+OmniNFT 音画同步工作流_2059201415213568002.json
 hash: bc3340b0aebff587
 coverage: 0.506494
 learned_at: 2026-10-15 22:38:37

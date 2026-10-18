@@ -4,7 +4,7 @@ name: WH-AI-Studio-Wan2.2首帧-中间帧-尾帧（加速标准版首中尾帧�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2022240074083082242.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-Wan2.2首帧-中间帧-尾帧（加速标准版首中尾帧图生视频）_2022240074083082242.json
 hash: e58d99d48642719a
 coverage: 1
 learned_at: 2026-10-15 22:35:10

@@ -4,7 +4,7 @@ name: SP504-视频换装换脸（wan2.2 Animate）_1970147620683476994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970147620683476994.json
+file: comfyui_library/workflows/视频生成/图生视频/SP504-视频换装换脸（wan2.2 Animate）_1970147620683476994.json
 hash: 8bd7c9f90e210faf
 coverage: 1
 learned_at: 2026-10-15 22:31:52

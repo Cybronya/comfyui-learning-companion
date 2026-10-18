@@ -4,7 +4,7 @@ name: 【人脸一致模型】Wan2.2最强图生视频_1972913233726230530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972913233726230530.json
+file: comfyui_library/workflows/视频生成/图生视频/【人脸一致模型】Wan2.2最强图生视频_1972913233726230530.json
 hash: 66d78a6fd5160fd1
 coverage: 0.727273
 learned_at: 2026-10-15 22:32:01

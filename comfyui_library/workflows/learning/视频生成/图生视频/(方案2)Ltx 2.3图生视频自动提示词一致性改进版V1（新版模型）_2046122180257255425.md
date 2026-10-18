@@ -4,7 +4,7 @@ name: (方案2)Ltx 2.3图生视频自动提示词一致性改进版V1（新版�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046122180257255425.json
+file: comfyui_library/workflows/视频生成/图生视频/(方案2)Ltx 2.3图生视频自动提示词一致性改进版V1（新版模型）_2046122180257255425.json
 hash: abdb62d0d00377ca
 coverage: 0.931034
 learned_at: 2026-10-15 22:36:54

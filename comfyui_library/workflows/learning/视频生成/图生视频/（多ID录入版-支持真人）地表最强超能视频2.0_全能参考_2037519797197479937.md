@@ -4,7 +4,7 @@ name: （多ID录入版-支持真人）地表最强超能视频2.0_全能参考_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037519797197479937.json
+file: comfyui_library/workflows/视频生成/图生视频/（多ID录入版-支持真人）地表最强超能视频2.0_全能参考_2037519797197479937.json
 hash: 1fd0794054885b42
 coverage: 1
 learned_at: 2026-10-15 22:35:58

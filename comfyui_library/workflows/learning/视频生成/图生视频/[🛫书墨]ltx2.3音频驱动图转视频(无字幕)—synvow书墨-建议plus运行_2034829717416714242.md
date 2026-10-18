@@ -4,7 +4,7 @@ name: [🛫书墨]ltx2.3音频驱动图转视频(无字幕)—synvow书墨-建�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034829717416714242.json
+file: comfyui_library/workflows/视频生成/图生视频/[🛫书墨]ltx2.3音频驱动图转视频(无字幕)—synvow书墨-建议plus运行_2034829717416714242.json
 hash: 4a1f3aae22810ad5
 coverage: 0.862745
 learned_at: 2026-10-15 22:35:45

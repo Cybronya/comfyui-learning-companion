@@ -4,7 +4,7 @@ name: LTX-2.3_Prompt Relay+自定义音频+首尾帧+多图段子视频生成_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055942419597799425.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_Prompt Relay+自定义音频+首尾帧+多图段子视频生成_2055942419597799425.json
 hash: 8fc1e6cfc071f2a2
 coverage: 0.467153
 learned_at: 2026-10-15 22:37:59

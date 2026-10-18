@@ -4,7 +4,7 @@ name: Seedance2.0 Fast全能参考视频（RH版）_2054421039081369601.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054421039081369601.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 Fast全能参考视频（RH版）_2054421039081369601.json
 hash: fb1886662c219c98
 coverage: 1
 learned_at: 2026-10-15 22:37:47

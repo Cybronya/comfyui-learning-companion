@@ -4,7 +4,7 @@ name: LTX2.3 _ 三图-首中尾帧 音频克隆(附带音色设计) 优化版_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033197165668999170.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 _ 三图-首中尾帧 音频克隆(附带音色设计) 优化版_2033197165668999170.json
 hash: 5fb4d0e5c9118de5
 coverage: 0.802469
 learned_at: 2026-10-15 22:35:39

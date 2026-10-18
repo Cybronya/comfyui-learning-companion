@@ -4,7 +4,7 @@ name: Wan2.2-FunControl美女跳舞_1971091047734484993.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971091047734484993.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-FunControl美女跳舞_1971091047734484993.json
 hash: f78e286bd690da58
 coverage: 0.606061
 learned_at: 2026-10-15 22:31:55

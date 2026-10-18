@@ -4,7 +4,7 @@ name: CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_195048578572214681
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950485785722146818.json
+file: comfyui_library/workflows/视频生成/文生视频/CG迷-Wan2.2 Kijai文生视频工作流（支持gguf）_1950485785722146818.json
 hash: f187aa76134971f8
 coverage: 0.954545
 learned_at: 2026-10-15 22:43:36

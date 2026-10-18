@@ -4,7 +4,7 @@ name: FireRed-Image-Edit-1.1   单图编辑_2032730903151120385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032730903151120385.json
+file: comfyui_library/workflows/视频生成/图生视频/FireRed-Image-Edit-1.1   单图编辑_2032730903151120385.json
 hash: c3f227440beb08f1
 coverage: 0.913043
 learned_at: 2026-10-15 22:35:37

@@ -4,7 +4,7 @@ name: 全能Pro+多角度自由切换+首尾帧出图完美切换 一键出片 V
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011468518830641154.json
+file: comfyui_library/workflows/视频生成/图生视频/全能Pro+多角度自由切换+首尾帧出图完美切换 一键出片 V1.0_2011468518830641154.json
 hash: 305cf8fbb8083da6
 coverage: 0.736111
 learned_at: 2026-10-15 22:34:23

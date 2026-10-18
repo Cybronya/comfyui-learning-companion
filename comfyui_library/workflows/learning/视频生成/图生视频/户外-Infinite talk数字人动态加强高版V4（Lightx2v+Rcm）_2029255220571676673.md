@@ -4,7 +4,7 @@ name: 户外-Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_202925
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029255220571676673.json
+file: comfyui_library/workflows/视频生成/图生视频/户外-Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2029255220571676673.json
 hash: 6eb43f9281410e90
 coverage: 0.75
 learned_at: 2026-10-15 22:35:21

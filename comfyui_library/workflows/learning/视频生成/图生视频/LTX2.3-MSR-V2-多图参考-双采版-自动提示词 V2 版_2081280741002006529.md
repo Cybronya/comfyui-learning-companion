@@ -4,7 +4,7 @@ name: LTX2.3-MSR-V2-多图参考-双采版-自动提示词 V2 版_20812807410020
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081280741002006529.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版-自动提示词 V2 版_2081280741002006529.json
 hash: 2fe3348890a5c980
 coverage: 0.693878
 learned_at: 2026-10-15 22:42:21

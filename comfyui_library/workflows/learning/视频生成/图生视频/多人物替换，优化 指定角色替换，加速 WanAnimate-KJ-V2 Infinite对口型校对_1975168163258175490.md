@@ -4,7 +4,7 @@ name: 多人物替换，优化 指定角色替换，加速 WanAnimate-KJ-V2 Infi
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975168163258175490.json
+file: comfyui_library/workflows/视频生成/图生视频/多人物替换，优化 指定角色替换，加速 WanAnimate-KJ-V2 Infinite对口型校对_1975168163258175490.json
 hash: 58e22217f4347ea1
 coverage: 0.675676
 learned_at: 2026-10-15 22:32:07

@@ -4,7 +4,7 @@ name: LTX2.3 全能导演分镜-更强的控制性_2055524487839404034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055524487839404034.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 全能导演分镜-更强的控制性_2055524487839404034.json
 hash: f25f347e1f4e9751
 coverage: 0.928571
 learned_at: 2026-10-15 22:37:57

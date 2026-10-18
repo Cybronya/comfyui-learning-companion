@@ -4,7 +4,7 @@ name: Best_faceid V1 for ltx2.3_2082528336852635649.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082528336852635649.json
+file: comfyui_library/workflows/视频生成/图生视频/Best_faceid V1 for ltx2.3_2082528336852635649.json
 hash: d98764291b808ca3
 coverage: 0.466667
 learned_at: 2026-10-15 22:42:33

@@ -4,7 +4,7 @@ name: 一键短视频 四宫格短视频    自带声音 音乐 LTX-2.3（Fisher
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037855814051958786.json
+file: comfyui_library/workflows/视频生成/图生视频/一键短视频 四宫格短视频    自带声音 音乐 LTX-2.3（Fisher大佬优化版）_2037855814051958786.json
 hash: 11feef74f3b86680
 coverage: 0.56
 learned_at: 2026-10-15 22:35:59

@@ -4,7 +4,7 @@ name: QIANSUI+DaSiWaWAN2.2动漫游戏角色图生视频_2008144239636520961.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008144239636520961.json
+file: comfyui_library/workflows/视频生成/图生视频/QIANSUI+DaSiWaWAN2.2动漫游戏角色图生视频_2008144239636520961.json
 hash: bbe301833197da07
 coverage: 0.923077
 learned_at: 2026-10-15 22:34:06

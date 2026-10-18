@@ -4,7 +4,7 @@ name: FLUX.1AI生成韩系氛围感写真_高级感大片 (1)_207503992881528422
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075039928815284225.json
+file: comfyui_library/workflows/视频生成/图生视频/FLUX.1AI生成韩系氛围感写真_高级感大片 (1)_2075039928815284225.json
 hash: 2db650325635c7e4
 coverage: 0.826087
 learned_at: 2026-10-15 22:41:20

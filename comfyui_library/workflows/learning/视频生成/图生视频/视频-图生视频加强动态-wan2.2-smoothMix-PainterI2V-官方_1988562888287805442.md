@@ -4,7 +4,7 @@ name: 视频-图生视频加强动态-wan2.2-smoothMix-PainterI2V-官方_1988562
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988562888287805442.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图生视频加强动态-wan2.2-smoothMix-PainterI2V-官方_1988562888287805442.json
 hash: 0edf8cf57ccbb5ab
 coverage: 0.641791
 learned_at: 2026-10-15 22:33:03

@@ -4,7 +4,7 @@ name: LTX2.3 首尾帧动态海报+Qwen3.5自动提示词_2039365637025304577.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039365637025304577.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 首尾帧动态海报+Qwen3.5自动提示词_2039365637025304577.json
 hash: 789de29c5023bcb2
 coverage: 0.928571
 learned_at: 2026-10-15 22:36:09

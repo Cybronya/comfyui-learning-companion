@@ -4,7 +4,7 @@ name: 数字人音频驱动 首尾帧图生视频 wan2.2 + Infinite Talk 首尾�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017835237677469697.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人音频驱动 首尾帧图生视频 wan2.2 + Infinite Talk 首尾帧数字人_2017835237677469697.json
 hash: d5660266a3fc242f
 coverage: 0.926829
 learned_at: 2026-10-15 22:34:51

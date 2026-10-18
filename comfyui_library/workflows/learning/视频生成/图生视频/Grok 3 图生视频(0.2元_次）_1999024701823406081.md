@@ -4,7 +4,7 @@ name: Grok 3 图生视频(0.2元_次）_1999024701823406081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999024701823406081.json
+file: comfyui_library/workflows/视频生成/图生视频/Grok 3 图生视频(0.2元_次）_1999024701823406081.json
 hash: 88749ceec3f9d7e5
 coverage: 1
 learned_at: 2026-10-15 22:33:35

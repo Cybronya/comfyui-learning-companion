@@ -4,7 +4,7 @@ name: 影视搞笑图生视频 多角色替换+动作迁移+多遮罩模式控�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003334378287726593.json
+file: comfyui_library/workflows/视频生成/图生视频/影视搞笑图生视频 多角色替换+动作迁移+多遮罩模式控制 Wan2.2 Animate  丝滑运镜_2003334378287726593.json
 hash: ebf602582fd45de0
 coverage: 0.654088
 learned_at: 2026-10-15 22:33:50

@@ -4,7 +4,7 @@ name: Wan2.2电商产品旋转360度轨道镜头-任意物体三视图IP多角�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005434183445086209.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2电商产品旋转360度轨道镜头-任意物体三视图IP多角度v1.2_2005434183445086209.json
 hash: 7c8a4cb4cb79f1ae
 coverage: 0.964286
 learned_at: 2026-10-15 22:33:56

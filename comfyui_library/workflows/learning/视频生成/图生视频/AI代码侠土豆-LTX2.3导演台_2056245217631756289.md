@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX2.3导演台_2056245217631756289.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056245217631756289.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX2.3导演台_2056245217631756289.json
 hash: 1c85a4363f5f49a7
 coverage: 0.65
 learned_at: 2026-10-15 22:38:02

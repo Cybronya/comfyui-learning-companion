@@ -4,7 +4,7 @@ name: LTX2.3-单采样-4图慢剧视频_2053077492440809473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053077492440809473.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-单采样-4图慢剧视频_2053077492440809473.json
 hash: df8a76cde3fbc950
 coverage: 0.952381
 learned_at: 2026-10-15 22:37:36

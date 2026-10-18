@@ -4,7 +4,7 @@ name: (资产组合版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043149063327064066.json
+file: comfyui_library/workflows/视频生成/图生视频/(资产组合版)Seedance2.0满血版多参生视频V1（贞贞的AI工坊）_2043149063327064066.json
 hash: f4736ed1cf349140
 coverage: 1
 learned_at: 2026-10-15 22:36:30

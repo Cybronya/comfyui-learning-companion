@@ -4,7 +4,7 @@ name: ltx2.3-20s服装模特带货短视频-已解决字幕问题_20509551325521
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050955132552134658.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3-20s服装模特带货短视频-已解决字幕问题_2050955132552134658.json
 hash: 95d29a0bcfe9fc5e
 coverage: 0.873239
 learned_at: 2026-10-15 22:37:20

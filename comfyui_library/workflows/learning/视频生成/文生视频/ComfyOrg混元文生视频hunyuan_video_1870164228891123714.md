@@ -4,7 +4,7 @@ name: ComfyOrg混元文生视频hunyuan_video_1870164228891123714.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1870164228891123714.json
+file: comfyui_library/workflows/视频生成/文生视频/ComfyOrg混元文生视频hunyuan_video_1870164228891123714.json
 hash: 3693b7445b31e820
 coverage: 0.894737
 learned_at: 2026-10-15 22:43:19

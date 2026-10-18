@@ -4,7 +4,7 @@ name: （双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037733253083303937.json
+file: comfyui_library/workflows/视频生成/图生视频/（双人对话）DaVinci-MagiHuman+Qwen3.5图生视频数字人V1（540P）_2037733253083303937.json
 hash: 6c6551eb8240d307
 coverage: 0.9
 learned_at: 2026-10-15 22:35:58

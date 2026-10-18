@@ -4,7 +4,7 @@ name: 消失wan2.1万相图生视40_1935687902431277057.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935687902431277057.json
+file: comfyui_library/workflows/视频生成/图生视频/消失wan2.1万相图生视40_1935687902431277057.json
 hash: b5767aee5aa867b1
 coverage: 0.819672
 learned_at: 2026-10-15 22:30:24

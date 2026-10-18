@@ -4,7 +4,7 @@ name: Wan2.1一致性长视频循环转绘Stand-In VACE (v2)_1957687752345186305
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957687752345186305.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1一致性长视频循环转绘Stand-In VACE (v2)_1957687752345186305.json
 hash: 284693772b65ebd6
 coverage: 0.637584
 learned_at: 2026-10-15 22:31:17

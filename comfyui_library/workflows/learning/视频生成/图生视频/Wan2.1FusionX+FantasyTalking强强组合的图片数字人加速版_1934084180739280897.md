@@ -4,7 +4,7 @@ name: Wan2.1FusionX+FantasyTalking强强组合的图片数字人加速版_193408
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934084180739280897.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1FusionX+FantasyTalking强强组合的图片数字人加速版_1934084180739280897.json
 hash: 48ada989a373fb61
 coverage: 1
 learned_at: 2026-10-15 22:30:16

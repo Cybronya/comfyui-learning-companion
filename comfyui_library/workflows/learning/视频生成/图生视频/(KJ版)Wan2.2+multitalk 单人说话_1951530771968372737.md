@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2+multitalk 单人说话_1951530771968372737.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951530771968372737.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2+multitalk 单人说话_1951530771968372737.json
 hash: 5d8fe0f6dddebc84
 coverage: 0.913043
 learned_at: 2026-10-15 22:30:58

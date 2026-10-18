@@ -4,7 +4,7 @@ name: 一键生成 --图生视频--LTX2.3首尾帧+丝滑转场! Plus版!_204939
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049398756143009794.json
+file: comfyui_library/workflows/视频生成/图生视频/一键生成 --图生视频--LTX2.3首尾帧+丝滑转场! Plus版!_2049398756143009794.json
 hash: f8caa70ef91cabbb
 coverage: 0.647727
 learned_at: 2026-10-15 22:37:14

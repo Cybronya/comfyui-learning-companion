@@ -4,7 +4,7 @@ name: Wan2.1+姿势参考+Stand-In+MultiTalk 人脸一致性文生数字人_1956
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956357600432541698.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1+姿势参考+Stand-In+MultiTalk 人脸一致性文生数字人_1956357600432541698.json
 hash: 4ab7a7df021a02a6
 coverage: 0.828125
 learned_at: 2026-10-15 22:31:13

@@ -4,7 +4,7 @@ name: 🔥Fun模型首测！让3D卡通人物跳起来！(基于wan2.2升级，�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956204129557336066.json
+file: comfyui_library/workflows/视频生成/图生视频/🔥Fun模型首测！让3D卡通人物跳起来！(基于wan2.2升级，含ComfyUI工作流)_1956204129557336066.json
 hash: aeefc4fc095e9980
 coverage: 0.901639
 learned_at: 2026-10-15 22:31:12

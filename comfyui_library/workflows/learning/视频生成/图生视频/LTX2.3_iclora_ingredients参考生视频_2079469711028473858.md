@@ -4,7 +4,7 @@ name: LTX2.3_iclora_ingredients参考生视频_2079469711028473858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079469711028473858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_iclora_ingredients参考生视频_2079469711028473858.json
 hash: 825633c1cce643a9
 coverage: 0.761905
 learned_at: 2026-10-15 22:42:02

@@ -4,7 +4,7 @@ name: AI虚拟主播AI数字人声音克隆口播（Sonic+CosyVoice）-StarAI_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911065232792584193.json
+file: comfyui_library/workflows/视频生成/图生视频/AI虚拟主播AI数字人声音克隆口播（Sonic+CosyVoice）-StarAI_1911065232792584193.json
 hash: 57a06e1c00cd4207
 coverage: 0.4
 learned_at: 2026-10-15 22:29:30

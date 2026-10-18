@@ -4,7 +4,7 @@ name: LTX 2.3  数字人对口型优化加速版+全节点注释-最新版_2045
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045851201853464578.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3  数字人对口型优化加速版+全节点注释-最新版_2045851201853464578.json
 hash: cd1910693b558063
 coverage: 0.451613
 learned_at: 2026-10-15 22:36:52

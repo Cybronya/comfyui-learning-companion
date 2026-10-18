@@ -4,7 +4,7 @@ name: MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_19989453
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998945387329282050.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk+AniWan单人KJ（UNI3C运镜 手持） 浮云 测试版_1998945387329282050.json
 hash: a7808df1b45e0e6f
 coverage: 0.723404
 learned_at: 2026-10-15 22:33:34

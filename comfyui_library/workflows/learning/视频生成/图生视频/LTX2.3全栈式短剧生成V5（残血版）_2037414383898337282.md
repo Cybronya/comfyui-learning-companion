@@ -4,7 +4,7 @@ name: LTX2.3全栈式短剧生成V5（残血版）_2037414383898337282.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037414383898337282.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全栈式短剧生成V5（残血版）_2037414383898337282.json
 hash: c500908771480b0f
 coverage: 0.731544
 learned_at: 2026-10-15 22:35:57

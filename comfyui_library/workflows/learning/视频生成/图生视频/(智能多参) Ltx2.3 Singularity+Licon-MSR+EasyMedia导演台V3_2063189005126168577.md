@@ -4,7 +4,7 @@ name: (智能多参) Ltx2.3 Singularity+Licon-MSR+EasyMedia导演台V3_206318900
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063189005126168577.json
+file: comfyui_library/workflows/视频生成/图生视频/(智能多参) Ltx2.3 Singularity+Licon-MSR+EasyMedia导演台V3_2063189005126168577.json
 hash: d77995f8f8a69005
 coverage: 0.909091
 learned_at: 2026-10-15 22:39:11

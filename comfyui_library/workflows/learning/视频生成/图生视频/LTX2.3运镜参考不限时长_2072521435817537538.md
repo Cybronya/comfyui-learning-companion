@@ -4,7 +4,7 @@ name: LTX2.3运镜参考不限时长_2072521435817537538.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072521435817537538.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3运镜参考不限时长_2072521435817537538.json
 hash: 970b9b5137a410c9
 coverage: 0.666667
 learned_at: 2026-10-15 22:40:55

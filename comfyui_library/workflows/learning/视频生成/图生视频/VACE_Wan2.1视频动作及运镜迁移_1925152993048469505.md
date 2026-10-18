@@ -4,7 +4,7 @@ name: VACE_Wan2.1视频动作及运镜迁移_1925152993048469505.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1925152993048469505.json
+file: comfyui_library/workflows/视频生成/图生视频/VACE_Wan2.1视频动作及运镜迁移_1925152993048469505.json
 hash: 4a3e6569723b3b62
 coverage: 0.722222
 learned_at: 2026-10-15 22:29:51

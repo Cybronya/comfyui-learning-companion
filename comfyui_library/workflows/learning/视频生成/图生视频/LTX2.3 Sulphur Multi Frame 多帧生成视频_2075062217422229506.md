@@ -4,7 +4,7 @@ name: LTX2.3 Sulphur Multi Frame 多帧生成视频_2075062217422229506.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075062217422229506.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Sulphur Multi Frame 多帧生成视频_2075062217422229506.json
 hash: fc12a582cad80be2
 coverage: 0.448
 learned_at: 2026-10-15 22:41:21

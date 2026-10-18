@@ -4,7 +4,7 @@ name: Stand In+Vace+MultiTalk人物ID多重控制背景复合工作流V1_1957420
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957420216693223426.json
+file: comfyui_library/workflows/视频生成/图生视频/Stand In+Vace+MultiTalk人物ID多重控制背景复合工作流V1_1957420216693223426.json
 hash: 5821910823de65d9
 coverage: 0.875
 learned_at: 2026-10-15 22:31:16

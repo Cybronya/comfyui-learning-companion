@@ -4,7 +4,7 @@ name: 背摔视频特效wan2.2_1981669095458381825.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981669095458381825.json
+file: comfyui_library/workflows/视频生成/图生视频/背摔视频特效wan2.2_1981669095458381825.json
 hash: da0b0b11cc4b8cfe
 coverage: 0.96
 learned_at: 2026-10-15 22:32:38

@@ -4,7 +4,7 @@ name: 【加速版】Wan2.2 文生视频_1950372812230934530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950372812230934530.json
+file: comfyui_library/workflows/视频生成/文生视频/【加速版】Wan2.2 文生视频_1950372812230934530.json
 hash: 3ca1ee181e4051ac
 coverage: 1
 learned_at: 2026-10-15 22:43:35

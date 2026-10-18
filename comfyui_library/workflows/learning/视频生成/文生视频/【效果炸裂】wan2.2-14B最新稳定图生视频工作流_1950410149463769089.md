@@ -4,7 +4,7 @@ name: 【效果炸裂】wan2.2-14B最新稳定图生视频工作流_195041014946
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950410149463769089.json
+file: comfyui_library/workflows/视频生成/文生视频/【效果炸裂】wan2.2-14B最新稳定图生视频工作流_1950410149463769089.json
 hash: 66854b515a03afff
 coverage: 0.885714
 learned_at: 2026-10-15 22:43:35

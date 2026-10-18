@@ -4,7 +4,7 @@ name: LTX2.3_controlnet姿态、深度、边缘控制_2053862670130008065.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053862670130008065.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_controlnet姿态、深度、边缘控制_2053862670130008065.json
 hash: 25467432bd4d4514
 coverage: 0.897959
 learned_at: 2026-10-15 22:37:43

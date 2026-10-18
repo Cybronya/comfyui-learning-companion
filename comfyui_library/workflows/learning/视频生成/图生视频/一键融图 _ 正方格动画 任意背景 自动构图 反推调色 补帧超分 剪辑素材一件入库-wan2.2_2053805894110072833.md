@@ -4,7 +4,7 @@ name: 一键融图 _ 正方格动画 任意背景 自动构图 反推调色 补�
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053805894110072833.json
+file: comfyui_library/workflows/视频生成/图生视频/一键融图 _ 正方格动画 任意背景 自动构图 反推调色 补帧超分 剪辑素材一件入库-wan2.2_2053805894110072833.json
 hash: d2e1e8933b445cdd
 coverage: 0.603448
 learned_at: 2026-10-15 22:37:43

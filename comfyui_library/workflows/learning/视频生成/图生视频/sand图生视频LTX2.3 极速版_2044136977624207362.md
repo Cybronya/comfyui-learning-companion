@@ -4,7 +4,7 @@ name: sand图生视频LTX2.3 极速版_2044136977624207362.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044136977624207362.json
+file: comfyui_library/workflows/视频生成/图生视频/sand图生视频LTX2.3 极速版_2044136977624207362.json
 hash: 2e07de319041cceb
 coverage: 0.857143
 learned_at: 2026-10-15 22:36:36

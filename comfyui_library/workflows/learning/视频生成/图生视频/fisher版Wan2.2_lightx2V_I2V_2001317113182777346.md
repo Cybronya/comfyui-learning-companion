@@ -4,7 +4,7 @@ name: fisher版Wan2.2_lightx2V_I2V_2001317113182777346.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001317113182777346.json
+file: comfyui_library/workflows/视频生成/图生视频/fisher版Wan2.2_lightx2V_I2V_2001317113182777346.json
 hash: acda187e9c77aef2
 coverage: 0.434783
 learned_at: 2026-10-15 22:33:45

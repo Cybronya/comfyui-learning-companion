@@ -4,7 +4,7 @@ name: (循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010957164097052674.json
+file: comfyui_library/workflows/视频生成/图生视频/(循环-一致性增强)SVI 2 Pro Remix 2.1长视频动态强化版V1_2010957164097052674.json
 hash: 360724a549d89f0a
 coverage: 0.894737
 learned_at: 2026-10-15 22:34:19

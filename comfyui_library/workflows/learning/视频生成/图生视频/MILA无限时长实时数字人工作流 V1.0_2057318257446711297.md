@@ -4,7 +4,7 @@ name: MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057318257446711297.json
+file: comfyui_library/workflows/视频生成/图生视频/MILA无限时长实时数字人工作流 V1.0_2057318257446711297.json
 hash: 3624d7e59695c005
 coverage: 1
 learned_at: 2026-10-15 22:38:10

@@ -4,7 +4,7 @@ name: LTX2.3低显存提速版—超强高质量画音同步+图生视频+MV数�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034220843508703234.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3低显存提速版—超强高质量画音同步+图生视频+MV数字人_2034220843508703234.json
 hash: 8cf4450271ff1cc7
 coverage: 0.595745
 learned_at: 2026-10-15 22:35:43

@@ -4,7 +4,7 @@ name: Wan2.2 14B+Teacache+Sage文生视频加速版工作流_1949879786422362114
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949879786422362114.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 14B+Teacache+Sage文生视频加速版工作流_1949879786422362114.json
 hash: c82bad3d6293a93f
 coverage: 0.909091
 learned_at: 2026-10-15 22:43:33

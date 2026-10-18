@@ -4,7 +4,7 @@ name: ani全能视频S动漫特化3.0模型版图生视频加速版v1_1961656258
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961656258828943362.json
+file: comfyui_library/workflows/视频生成/图生视频/ani全能视频S动漫特化3.0模型版图生视频加速版v1_1961656258828943362.json
 hash: 455accc74b4cafda
 coverage: 0.851852
 learned_at: 2026-10-15 22:31:29

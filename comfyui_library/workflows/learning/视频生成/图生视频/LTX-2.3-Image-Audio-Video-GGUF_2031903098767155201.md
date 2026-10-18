@@ -4,7 +4,7 @@ name: LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031903098767155201.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-Image-Audio-Video-GGUF_2031903098767155201.json
 hash: a2f69f9f74b72914
 coverage: 0.697674
 learned_at: 2026-10-15 22:35:33

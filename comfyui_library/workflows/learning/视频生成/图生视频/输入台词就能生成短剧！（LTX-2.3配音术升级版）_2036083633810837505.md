@@ -4,7 +4,7 @@ name: 输入台词就能生成短剧！（LTX-2.3配音术升级版）_203608363
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036083633810837505.json
+file: comfyui_library/workflows/视频生成/图生视频/输入台词就能生成短剧！（LTX-2.3配音术升级版）_2036083633810837505.json
 hash: 09eb25d332cfa89c
 coverage: 0.844828
 learned_at: 2026-10-15 22:35:51

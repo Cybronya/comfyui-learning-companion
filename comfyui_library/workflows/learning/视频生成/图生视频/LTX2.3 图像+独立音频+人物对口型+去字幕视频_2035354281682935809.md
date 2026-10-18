@@ -4,7 +4,7 @@ name: LTX2.3 图像+独立音频+人物对口型+去字幕视频_203535428168293
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035354281682935809.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图像+独立音频+人物对口型+去字幕视频_2035354281682935809.json
 hash: 58a899d3521da056
 coverage: 0.891892
 learned_at: 2026-10-15 22:35:48

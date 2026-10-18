@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 文生视频SIMGA精准调度+MPS高低噪奖励模型加速
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1964924575370854402.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度+MPS高低噪奖励模型加速版V1_1964924575370854402.json
 hash: 71c2a61df95ca0b7
 coverage: 0.837838
 learned_at: 2026-10-15 22:43:44

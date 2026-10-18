@@ -4,7 +4,7 @@ name: Wan2.2三图多帧首尾帧视频（首、中、尾帧）支持Qwen3 VL_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985878683623796737.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2三图多帧首尾帧视频（首、中、尾帧）支持Qwen3 VL_1985878683623796737.json
 hash: 296da90f1322afc0
 coverage: 0.934783
 learned_at: 2026-10-15 22:32:52

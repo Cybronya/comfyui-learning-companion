@@ -4,7 +4,7 @@ name: 动漫人物跳舞 动作迁移 动作模仿  wan2.2_2047269838766215170.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047269838766215170.json
+file: comfyui_library/workflows/视频生成/图生视频/动漫人物跳舞 动作迁移 动作模仿  wan2.2_2047269838766215170.json
 hash: 070d9fbad9f88f01
 coverage: 0.744186
 learned_at: 2026-10-15 22:37:05

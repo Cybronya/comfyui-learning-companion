@@ -4,7 +4,7 @@ name: 动态壁纸一键生成Wan2.2-live2D_2054459129242103809.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054459129242103809.json
+file: comfyui_library/workflows/视频生成/图生视频/动态壁纸一键生成Wan2.2-live2D_2054459129242103809.json
 hash: e34cd5328598a818
 coverage: 1
 learned_at: 2026-10-15 22:37:47

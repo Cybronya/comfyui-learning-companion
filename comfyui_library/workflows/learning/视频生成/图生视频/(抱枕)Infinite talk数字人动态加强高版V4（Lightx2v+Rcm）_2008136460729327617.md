@@ -4,7 +4,7 @@ name: (抱枕)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_20081
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008136460729327617.json
+file: comfyui_library/workflows/视频生成/图生视频/(抱枕)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2008136460729327617.json
 hash: ca864de6dd6af85e
 coverage: 0.75
 learned_at: 2026-10-15 22:34:06

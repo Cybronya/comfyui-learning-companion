@@ -4,7 +4,7 @@ name: Wan2.1(KJ)文本到视频基础工作流_1946120056569774081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1946120056569774081.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1(KJ)文本到视频基础工作流_1946120056569774081.json
 hash: d8d930208137d68e
 coverage: 0.941176
 learned_at: 2026-10-15 22:43:31

@@ -4,7 +4,7 @@ name: Wan2.2-Insight动态增强图生视频【KJ版】_1972860649577598978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972860649577598978.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Insight动态增强图生视频【KJ版】_1972860649577598978.json
 hash: 3add5975b03305df
 coverage: 0.680851
 learned_at: 2026-10-15 22:32:01

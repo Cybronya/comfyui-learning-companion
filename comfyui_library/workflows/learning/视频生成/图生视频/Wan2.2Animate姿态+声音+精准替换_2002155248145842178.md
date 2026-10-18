@@ -4,7 +4,7 @@ name: Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2002155248145842178.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2Animate姿态+声音+精准替换_2002155248145842178.json
 hash: cc18834cc7213c67
 coverage: 0.9375
 learned_at: 2026-10-15 22:33:47

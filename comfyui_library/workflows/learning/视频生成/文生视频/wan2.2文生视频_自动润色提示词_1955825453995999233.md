@@ -4,7 +4,7 @@ name: wan2.2文生视频_自动润色提示词_1955825453995999233.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955825453995999233.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频_自动润色提示词_1955825453995999233.json
 hash: 1f93e56c8df7196f
 coverage: 0.941176
 learned_at: 2026-10-15 22:43:40

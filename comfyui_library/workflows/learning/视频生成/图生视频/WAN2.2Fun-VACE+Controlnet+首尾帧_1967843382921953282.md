@@ -4,7 +4,7 @@ name: WAN2.2Fun-VACE+Controlnet+首尾帧_1967843382921953282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967843382921953282.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2Fun-VACE+Controlnet+首尾帧_1967843382921953282.json
 hash: e1a1b9e4c9f9dcae
 coverage: 0.971429
 learned_at: 2026-10-15 22:31:43

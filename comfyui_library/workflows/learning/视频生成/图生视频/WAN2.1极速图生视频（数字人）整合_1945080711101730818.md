@@ -4,7 +4,7 @@ name: WAN2.1极速图生视频（数字人）整合_1945080711101730818.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945080711101730818.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1极速图生视频（数字人）整合_1945080711101730818.json
 hash: ccfff2645317b038
 coverage: 1
 learned_at: 2026-10-15 22:30:41

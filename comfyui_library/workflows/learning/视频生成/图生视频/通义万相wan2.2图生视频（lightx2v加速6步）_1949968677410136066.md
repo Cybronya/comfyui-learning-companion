@@ -4,7 +4,7 @@ name: 通义万相wan2.2图生视频（lightx2v加速6步）_1949968677410136066
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949968677410136066.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.2图生视频（lightx2v加速6步）_1949968677410136066.json
 hash: 6fc26a788789bd67
 coverage: 0.92
 learned_at: 2026-10-15 22:30:50

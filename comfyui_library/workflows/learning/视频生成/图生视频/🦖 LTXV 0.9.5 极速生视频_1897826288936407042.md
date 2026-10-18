@@ -4,7 +4,7 @@ name: 🦖 LTXV 0.9.5 极速生视频_1897826288936407042.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1897826288936407042.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖 LTXV 0.9.5 极速生视频_1897826288936407042.json
 hash: ae50d24d36e3f79b
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:19

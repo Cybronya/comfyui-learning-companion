@@ -4,7 +4,7 @@ name: 通义万相wan2.2Fun VACE视频转绘（美女跳舞姿势参考）_19672
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967206218295074817.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.2Fun VACE视频转绘（美女跳舞姿势参考）_1967206218295074817.json
 hash: 3afd8864504da6c3
 coverage: 0.719298
 learned_at: 2026-10-15 22:31:40

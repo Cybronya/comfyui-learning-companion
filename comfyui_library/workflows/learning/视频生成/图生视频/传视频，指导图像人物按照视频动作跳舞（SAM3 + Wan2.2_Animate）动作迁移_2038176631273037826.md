@@ -4,7 +4,7 @@ name: 传视频，指导图像人物按照视频动作跳舞（SAM3 + Wan2.2_Ani
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038176631273037826.json
+file: comfyui_library/workflows/视频生成/图生视频/传视频，指导图像人物按照视频动作跳舞（SAM3 + Wan2.2_Animate）动作迁移_2038176631273037826.json
 hash: ec7f2a66f5c6114e
 coverage: 0.625
 learned_at: 2026-10-15 22:36:00

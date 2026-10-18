@@ -4,7 +4,7 @@ name: 安-Wan2.2 首尾帧频工作流_1965415363951382530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1965415363951382530.json
+file: comfyui_library/workflows/视频生成/图生视频/安-Wan2.2 首尾帧频工作流_1965415363951382530.json
 hash: e3f32e2b287cb80b
 coverage: 1
 learned_at: 2026-10-15 22:31:37

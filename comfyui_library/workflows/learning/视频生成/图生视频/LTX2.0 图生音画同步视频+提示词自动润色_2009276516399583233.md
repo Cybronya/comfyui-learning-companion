@@ -4,7 +4,7 @@ name: LTX2.0 图生音画同步视频+提示词自动润色_2009276516399583233.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009276516399583233.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0 图生音画同步视频+提示词自动润色_2009276516399583233.json
 hash: cbcdba5402511ec6
 coverage: 0.945455
 learned_at: 2026-10-15 22:34:12

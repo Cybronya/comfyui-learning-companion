@@ -4,7 +4,7 @@ name: MultiTalk+IndexTTS+Kontext数字人带货_1937830211084029954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937830211084029954.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk+IndexTTS+Kontext数字人带货_1937830211084029954.json
 hash: 46761c04ba503f4e
 coverage: 0.942857
 learned_at: 2026-10-15 22:30:29

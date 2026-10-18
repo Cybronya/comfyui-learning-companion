@@ -4,7 +4,7 @@ name: Wan2.2_SmoothMix_I2V动作特效_2008338677897895938.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008338677897895938.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_SmoothMix_I2V动作特效_2008338677897895938.json
 hash: 726a3671bd1e768d
 coverage: 0.543478
 learned_at: 2026-10-15 22:34:06

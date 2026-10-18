@@ -4,7 +4,7 @@ name: 刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_205444784
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054447841707347969.json
+file: comfyui_library/workflows/视频生成/图生视频/刀切玻璃水晶水果蔬菜 图转视频工作流 wan2.1+lora_2054447841707347969.json
 hash: e85c18a3ab21ea6b
 coverage: 0.903226
 learned_at: 2026-10-15 22:37:47

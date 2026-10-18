@@ -4,7 +4,7 @@ name: 一分钟旁白短剧首选WAN2.2+SVI2.0PRO十图片生成长视频+生成
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014173118008401922.json
+file: comfyui_library/workflows/视频生成/图生视频/一分钟旁白短剧首选WAN2.2+SVI2.0PRO十图片生成长视频+生成旁白声音_2014173118008401922.json
 hash: 4d55de053b9fe63b
 coverage: 0.590909
 learned_at: 2026-10-15 22:34:33

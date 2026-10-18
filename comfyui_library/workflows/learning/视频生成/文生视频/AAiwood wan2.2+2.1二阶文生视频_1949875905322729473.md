@@ -4,7 +4,7 @@ name: AAiwood wan2.2+2.1二阶文生视频_1949875905322729473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949875905322729473.json
+file: comfyui_library/workflows/视频生成/文生视频/AAiwood wan2.2+2.1二阶文生视频_1949875905322729473.json
 hash: d3e2e9bc9f9c7afa
 coverage: 1
 learned_at: 2026-10-15 22:43:33

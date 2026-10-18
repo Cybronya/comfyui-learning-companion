@@ -4,7 +4,7 @@ name: LTX2.3全栈式短剧生成V15_2052719167148707842.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052719167148707842.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全栈式短剧生成V15_2052719167148707842.json
 hash: 9da641f303ab08d2
 coverage: 0.710744
 learned_at: 2026-10-15 22:37:31

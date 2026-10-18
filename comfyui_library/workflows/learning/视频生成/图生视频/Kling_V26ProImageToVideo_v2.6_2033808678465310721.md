@@ -4,7 +4,7 @@ name: Kling_V26ProImageToVideo_v2.6_2033808678465310721.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033808678465310721.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_V26ProImageToVideo_v2.6_2033808678465310721.json
 hash: 14ac6f4c6e2ef046
 coverage: 1
 learned_at: 2026-10-15 22:35:41

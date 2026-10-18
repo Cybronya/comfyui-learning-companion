@@ -4,7 +4,7 @@ name: Ltx2.3 多图参考人物场景分镜视频_2054945607445434370.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054945607445434370.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 多图参考人物场景分镜视频_2054945607445434370.json
 hash: 01288814e032928d
 coverage: 0.573427
 learned_at: 2026-10-15 22:37:54

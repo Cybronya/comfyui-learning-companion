@@ -4,7 +4,7 @@ name: 【LTX2.3官方工作流优化】数字人支持唱歌 音频+图片=超�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034460297049677825.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX2.3官方工作流优化】数字人支持唱歌 音频+图片=超自然数字人 含提示词扩写模板_2034460297049677825.json
 hash: 702f067a51a403f4
 coverage: 0.790323
 learned_at: 2026-10-15 22:35:44

@@ -4,7 +4,7 @@ name: wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973675102011305986.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 批量图生自动生成视频 +补帧60fps_1973675102011305986.json
 hash: 16a3b6c1d28096c7
 coverage: 0.865672
 learned_at: 2026-10-15 22:32:03

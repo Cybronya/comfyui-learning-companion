@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071858962642857985.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 AIT轨迹控制图生视频_2071858962642857985.json
 hash: 2a49cec85400f84b
 coverage: 1
 learned_at: 2026-10-15 22:40:49

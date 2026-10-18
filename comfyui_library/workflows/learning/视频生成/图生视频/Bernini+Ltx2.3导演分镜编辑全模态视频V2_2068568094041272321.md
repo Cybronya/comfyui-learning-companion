@@ -4,7 +4,7 @@ name: Bernini+Ltx2.3导演分镜编辑全模态视频V2_2068568094041272321.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068568094041272321.json
+file: comfyui_library/workflows/视频生成/图生视频/Bernini+Ltx2.3导演分镜编辑全模态视频V2_2068568094041272321.json
 hash: aedc59dd641085c4
 coverage: 0.588
 learned_at: 2026-10-15 22:40:19

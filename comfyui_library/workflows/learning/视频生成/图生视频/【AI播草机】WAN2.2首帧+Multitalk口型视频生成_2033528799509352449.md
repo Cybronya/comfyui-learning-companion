@@ -4,7 +4,7 @@ name: 【AI播草机】WAN2.2首帧+Multitalk口型视频生成_2033528799509352
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033528799509352449.json
+file: comfyui_library/workflows/视频生成/图生视频/【AI播草机】WAN2.2首帧+Multitalk口型视频生成_2033528799509352449.json
 hash: cbe7230d498db51a
 coverage: 0.971429
 learned_at: 2026-10-15 22:35:40

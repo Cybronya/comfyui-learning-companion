@@ -4,7 +4,7 @@ name: LTX2.0首尾帧生视频V3_极速优化版_三次采样（支持自动提�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017376776682475522.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0首尾帧生视频V3_极速优化版_三次采样（支持自动提示词）_2017376776682475522.json
 hash: 5d17e884ce643fc1
 coverage: 0.443137
 learned_at: 2026-10-15 22:34:47

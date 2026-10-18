@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Rapid-AIO-Mega图生视频极速带音频_1968344636660
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968344636660035586.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Rapid-AIO-Mega图生视频极速带音频_1968344636660035586.json
 hash: cce0e74b3a895b6f
 coverage: 0.869565
 learned_at: 2026-10-15 22:31:45

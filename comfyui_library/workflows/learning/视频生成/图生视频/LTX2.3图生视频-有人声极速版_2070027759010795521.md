@@ -4,7 +4,7 @@ name: LTX2.3图生视频-有人声极速版_2070027759010795521.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070027759010795521.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频-有人声极速版_2070027759010795521.json
 hash: df15186996aa9e1c
 coverage: 0.95
 learned_at: 2026-10-15 22:40:34

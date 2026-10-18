@@ -4,7 +4,7 @@ name: 3-3Piao-动作迁移（一致性、表情、手部、抖动）Wan2.2-Anima
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2002747679463620610.json
+file: comfyui_library/workflows/视频生成/图生视频/3-3Piao-动作迁移（一致性、表情、手部、抖动）Wan2.2-Animate-V5_2002747679463620610.json
 hash: 904148dd673d401a
 coverage: 0.643478
 learned_at: 2026-10-15 22:33:49

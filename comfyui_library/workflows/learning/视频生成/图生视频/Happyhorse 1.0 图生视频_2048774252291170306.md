@@ -4,7 +4,7 @@ name: Happyhorse 1.0 图生视频_2048774252291170306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048774252291170306.json
+file: comfyui_library/workflows/视频生成/图生视频/Happyhorse 1.0 图生视频_2048774252291170306.json
 hash: 129c660e6c162b48
 coverage: 1
 learned_at: 2026-10-15 22:37:11

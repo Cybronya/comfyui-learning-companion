@@ -4,7 +4,7 @@ name: 视频-视频生视频(分割)-wan2.2-SVI 2.0 Pro-smooth-官方_2019299975
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019299975187931138.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-视频生视频(分割)-wan2.2-SVI 2.0 Pro-smooth-官方_2019299975187931138.json
 hash: 005a134cd2abbb94
 coverage: 0.662983
 learned_at: 2026-10-15 22:35:01

@@ -4,7 +4,7 @@ name: Wan2.1 FusionX ｜ Self-Forcing 极速图生视频_1935274607635267585.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935274607635267585.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 FusionX ｜ Self-Forcing 极速图生视频_1935274607635267585.json
 hash: db0907e188668237
 coverage: 0.847826
 learned_at: 2026-10-15 22:30:21

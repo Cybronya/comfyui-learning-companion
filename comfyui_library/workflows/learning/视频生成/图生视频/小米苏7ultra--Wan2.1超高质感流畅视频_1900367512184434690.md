@@ -4,7 +4,7 @@ name: 小米苏7ultra--Wan2.1超高质感流畅视频_1900367512184434690.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900367512184434690.json
+file: comfyui_library/workflows/视频生成/图生视频/小米苏7ultra--Wan2.1超高质感流畅视频_1900367512184434690.json
 hash: 3926424d0a90b1a1
 coverage: 0.92
 learned_at: 2026-10-15 22:29:23

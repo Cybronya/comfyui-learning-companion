@@ -4,7 +4,7 @@ name: 【前瞻预览】Wan 2.2 animate究极形态 暴力骨骼动捕SDPose+kj�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985641855952068610.json
+file: comfyui_library/workflows/视频生成/图生视频/【前瞻预览】Wan 2.2 animate究极形态 暴力骨骼动捕SDPose+kj循环+Sec遮罩_1985641855952068610.json
 hash: b25f85872c17a843
 coverage: 0.4
 learned_at: 2026-10-15 22:32:52

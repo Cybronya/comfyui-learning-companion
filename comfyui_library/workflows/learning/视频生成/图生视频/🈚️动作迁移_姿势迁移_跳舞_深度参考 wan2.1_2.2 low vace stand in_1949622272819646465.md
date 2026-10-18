@@ -4,7 +4,7 @@ name: 🈚️动作迁移_姿势迁移_跳舞_深度参考 wan2.1_2.2 low vace s
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949622272819646465.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️动作迁移_姿势迁移_跳舞_深度参考 wan2.1_2.2 low vace stand in_1949622272819646465.json
 hash: f522db8b35b52991
 coverage: 0.46875
 learned_at: 2026-10-15 22:30:49

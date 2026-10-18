@@ -4,7 +4,7 @@ name: wan2.2文生视频超级加速——飞翔荷兰人_1971154804091326465.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1971154804091326465.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频超级加速——飞翔荷兰人_1971154804091326465.json
 hash: 79e47cd08f645e0c
 coverage: 0.763158
 learned_at: 2026-10-15 22:43:47

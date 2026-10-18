@@ -4,7 +4,7 @@ name: Wan2.2- Lightx2v 1030首、中、尾帧视频_1988980574498992130.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988980574498992130.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2- Lightx2v 1030首、中、尾帧视频_1988980574498992130.json
 hash: a87feb7436981f66
 coverage: 1
 learned_at: 2026-10-15 22:33:05

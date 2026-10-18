@@ -4,7 +4,7 @@ name: WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2009543545169907714.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009543545169907714.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-RemixV2-I2V首尾帧丝滑变装转场_2009543545169907714.json
 hash: 012c929414514a9d
 coverage: 0.405063
 learned_at: 2026-10-15 22:34:13

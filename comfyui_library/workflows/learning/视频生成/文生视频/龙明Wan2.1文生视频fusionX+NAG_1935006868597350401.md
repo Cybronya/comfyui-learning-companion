@@ -4,7 +4,7 @@ name: 龙明Wan2.1文生视频fusionX+NAG_1935006868597350401.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1935006868597350401.json
+file: comfyui_library/workflows/视频生成/文生视频/龙明Wan2.1文生视频fusionX+NAG_1935006868597350401.json
 hash: eab753b641817039
 coverage: 1
 learned_at: 2026-10-15 22:43:28

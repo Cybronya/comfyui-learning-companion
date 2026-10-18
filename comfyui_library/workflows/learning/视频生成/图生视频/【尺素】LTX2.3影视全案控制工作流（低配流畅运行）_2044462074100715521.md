@@ -4,7 +4,7 @@ name: 【尺素】LTX2.3影视全案控制工作流（低配流畅运行）_2044
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044462074100715521.json
+file: comfyui_library/workflows/视频生成/图生视频/【尺素】LTX2.3影视全案控制工作流（低配流畅运行）_2044462074100715521.json
 hash: a15b4f1692440961
 coverage: 0.659389
 learned_at: 2026-10-15 22:36:38

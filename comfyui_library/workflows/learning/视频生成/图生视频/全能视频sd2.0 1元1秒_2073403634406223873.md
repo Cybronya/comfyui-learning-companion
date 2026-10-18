@@ -4,7 +4,7 @@ name: 全能视频sd2.0 1元1秒_2073403634406223873.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073403634406223873.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频sd2.0 1元1秒_2073403634406223873.json
 hash: b8c96105f0c28367
 coverage: 1
 learned_at: 2026-10-15 22:41:06

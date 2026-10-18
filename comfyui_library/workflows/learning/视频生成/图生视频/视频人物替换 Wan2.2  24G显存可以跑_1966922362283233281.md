@@ -4,7 +4,7 @@ name: 视频人物替换 Wan2.2  24G显存可以跑_1966922362283233281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966922362283233281.json
+file: comfyui_library/workflows/视频生成/图生视频/视频人物替换 Wan2.2  24G显存可以跑_1966922362283233281.json
 hash: 600c4de2cc51026e
 coverage: 0.703704
 learned_at: 2026-10-15 22:31:40

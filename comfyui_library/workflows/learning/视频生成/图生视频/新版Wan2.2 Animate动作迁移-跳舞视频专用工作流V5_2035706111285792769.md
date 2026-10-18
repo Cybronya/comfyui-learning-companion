@@ -4,7 +4,7 @@ name: 新版Wan2.2 Animate动作迁移-跳舞视频专用工作流V5_20357061112
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035706111285792769.json
+file: comfyui_library/workflows/视频生成/图生视频/新版Wan2.2 Animate动作迁移-跳舞视频专用工作流V5_2035706111285792769.json
 hash: 823c795d1ed89dad
 coverage: 0.491935
 learned_at: 2026-10-15 22:35:50

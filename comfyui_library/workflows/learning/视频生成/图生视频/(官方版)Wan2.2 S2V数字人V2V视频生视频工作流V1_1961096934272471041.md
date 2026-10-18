@@ -4,7 +4,7 @@ name: (官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_19610969342724
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961096934272471041.json
+file: comfyui_library/workflows/视频生成/图生视频/(官方版)Wan2.2 S2V数字人V2V视频生视频工作流V1_1961096934272471041.json
 hash: 318043250fdcd4f9
 coverage: 0.810811
 learned_at: 2026-10-15 22:31:28

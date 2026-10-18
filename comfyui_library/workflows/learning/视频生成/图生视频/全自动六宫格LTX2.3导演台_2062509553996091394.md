@@ -4,7 +4,7 @@ name: 全自动六宫格LTX2.3导演台_2062509553996091394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062509553996091394.json
+file: comfyui_library/workflows/视频生成/图生视频/全自动六宫格LTX2.3导演台_2062509553996091394.json
 hash: 0464ac4a972afedd
 coverage: 0.666667
 learned_at: 2026-10-15 22:39:04

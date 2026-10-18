@@ -4,7 +4,7 @@ name: Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037083730082271234.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0_豆包_即梦全能视频SD2.0+图生视频(体验版)_2037083730082271234.json
 hash: d8d2815577650ce5
 coverage: 1
 learned_at: 2026-10-15 22:35:55

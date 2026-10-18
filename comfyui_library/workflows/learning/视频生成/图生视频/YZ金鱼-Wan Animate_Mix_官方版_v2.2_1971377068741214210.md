@@ -4,7 +4,7 @@ name: YZ金鱼-Wan Animate_Mix_官方版_v2.2_1971377068741214210.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971377068741214210.json
+file: comfyui_library/workflows/视频生成/图生视频/YZ金鱼-Wan Animate_Mix_官方版_v2.2_1971377068741214210.json
 hash: 4de8261398569985
 coverage: 0.445545
 learned_at: 2026-10-15 22:31:56

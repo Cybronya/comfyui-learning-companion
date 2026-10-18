@@ -4,7 +4,7 @@ name: LTX 2.3 的 100% 实力释放三阶段采样图生视频工作流_20348008
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034800880725266433.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 的 100% 实力释放三阶段采样图生视频工作流_2034800880725266433.json
 hash: 39f5410f968a02cf
 coverage: 0.959184
 learned_at: 2026-10-15 22:35:45

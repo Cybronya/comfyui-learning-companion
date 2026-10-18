@@ -4,7 +4,7 @@ name: 特效合集，wan2.1图生视频，加速高清版_1899713009114107905.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899713009114107905.json
+file: comfyui_library/workflows/视频生成/图生视频/特效合集，wan2.1图生视频，加速高清版_1899713009114107905.json
 hash: 50272e67a899dd13
 coverage: 0.966667
 learned_at: 2026-10-15 22:29:22

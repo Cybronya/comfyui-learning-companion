@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Smooth V2+ SVI2Pro +全自动提示词图生视频V1_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011039757379313666.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Smooth V2+ SVI2Pro +全自动提示词图生视频V1_2011039757379313666.json
 hash: b0be46dbfe7dd2aa
 coverage: 0.293839
 learned_at: 2026-10-15 22:34:20

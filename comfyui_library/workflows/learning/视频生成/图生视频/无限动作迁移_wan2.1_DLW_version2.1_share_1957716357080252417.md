@@ -4,7 +4,7 @@ name: 无限动作迁移_wan2.1_DLW_version2.1_share_1957716357080252417.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957716357080252417.json
+file: comfyui_library/workflows/视频生成/图生视频/无限动作迁移_wan2.1_DLW_version2.1_share_1957716357080252417.json
 hash: 13ca0163d8ba3df6
 coverage: 0.895833
 learned_at: 2026-10-15 22:31:18

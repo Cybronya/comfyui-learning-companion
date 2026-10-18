@@ -4,7 +4,7 @@ name: Wan2.2_PromptRelay图生视频（分镜提示词精准控制）_2059203324
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059203324586577922.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_PromptRelay图生视频（分镜提示词精准控制）_2059203324586577922.json
 hash: f75fdbd0343a8631
 coverage: 0.923077
 learned_at: 2026-10-15 22:38:37

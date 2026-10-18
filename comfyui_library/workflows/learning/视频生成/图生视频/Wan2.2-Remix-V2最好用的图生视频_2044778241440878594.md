@@ -4,7 +4,7 @@ name: Wan2.2-Remix-V2最好用的图生视频_2044778241440878594.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044778241440878594.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Remix-V2最好用的图生视频_2044778241440878594.json
 hash: 81cdc04be7b50ea8
 coverage: 0.804348
 learned_at: 2026-10-15 22:36:41

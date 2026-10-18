@@ -4,7 +4,7 @@ name: LTX2.3动态壁纸-更好更快-首尾循环_2070502148785393666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070502148785393666.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3动态壁纸-更好更快-首尾循环_2070502148785393666.json
 hash: 1c6eaf9cf5089887
 coverage: 0.571429
 learned_at: 2026-10-15 22:40:40

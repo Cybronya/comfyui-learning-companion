@@ -4,7 +4,7 @@ name: 【wan2.2 S2V 】声生视频基础版_2025871018102890497.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025871018102890497.json
+file: comfyui_library/workflows/视频生成/图生视频/【wan2.2 S2V 】声生视频基础版_2025871018102890497.json
 hash: 93aad4f7d9348f4c
 coverage: 1
 learned_at: 2026-10-15 22:35:13

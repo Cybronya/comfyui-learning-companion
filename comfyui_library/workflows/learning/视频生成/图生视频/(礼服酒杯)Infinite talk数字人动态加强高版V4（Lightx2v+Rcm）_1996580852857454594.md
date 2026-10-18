@@ -4,7 +4,7 @@ name: (礼服酒杯)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996580852857454594.json
+file: comfyui_library/workflows/视频生成/图生视频/(礼服酒杯)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1996580852857454594.json
 hash: 78a94389f11a1fbd
 coverage: 0.75
 learned_at: 2026-10-15 22:33:27

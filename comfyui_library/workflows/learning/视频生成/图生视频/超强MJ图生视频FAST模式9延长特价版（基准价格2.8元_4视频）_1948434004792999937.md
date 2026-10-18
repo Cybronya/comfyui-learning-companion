@@ -4,7 +4,7 @@ name: 超强MJ图生视频FAST模式9延长特价版（基准价格2.8元_4视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948434004792999937.json
+file: comfyui_library/workflows/视频生成/图生视频/超强MJ图生视频FAST模式9延长特价版（基准价格2.8元_4视频）_1948434004792999937.json
 hash: 05f86bbb5d1af75f
 coverage: 0.615385
 learned_at: 2026-10-15 22:30:47

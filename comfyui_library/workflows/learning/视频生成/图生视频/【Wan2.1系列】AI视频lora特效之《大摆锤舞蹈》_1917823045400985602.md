@@ -4,7 +4,7 @@ name: 【Wan2.1系列】AI视频lora特效之《大摆锤舞蹈》_1917823045400
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917823045400985602.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1系列】AI视频lora特效之《大摆锤舞蹈》_1917823045400985602.json
 hash: 4492a6e9077ac084
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:40

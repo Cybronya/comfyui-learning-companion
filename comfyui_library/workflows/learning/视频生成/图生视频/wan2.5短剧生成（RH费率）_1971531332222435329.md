@@ -4,7 +4,7 @@ name: wan2.5短剧生成（RH费率）_1971531332222435329.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971531332222435329.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.5短剧生成（RH费率）_1971531332222435329.json
 hash: cf3a0b6031d09bd2
 coverage: 1
 learned_at: 2026-10-15 22:31:57

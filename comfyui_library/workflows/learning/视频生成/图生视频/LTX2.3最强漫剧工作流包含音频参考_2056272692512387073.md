@@ -4,7 +4,7 @@ name: LTX2.3最强漫剧工作流包含音频参考_2056272692512387073.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056272692512387073.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3最强漫剧工作流包含音频参考_2056272692512387073.json
 hash: 2528c05c41c5cadf
 coverage: 0.706422
 learned_at: 2026-10-15 22:38:03

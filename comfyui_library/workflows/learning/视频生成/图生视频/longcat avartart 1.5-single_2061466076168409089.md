@@ -4,7 +4,7 @@ name: longcat avartart 1.5-single_2061466076168409089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061466076168409089.json
+file: comfyui_library/workflows/视频生成/图生视频/longcat avartart 1.5-single_2061466076168409089.json
 hash: 62e4671bc2b3697b
 coverage: 0.52381
 learned_at: 2026-10-15 22:38:54

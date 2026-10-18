@@ -4,7 +4,7 @@ name: LTX2.3动作迁移（人物二创）_2036397493621104642.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036397493621104642.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3动作迁移（人物二创）_2036397493621104642.json
 hash: df1aaa837e44bd28
 coverage: 0.913043
 learned_at: 2026-10-15 22:35:52

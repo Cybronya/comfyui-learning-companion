@@ -4,7 +4,7 @@ name: 超级LTX0.95图生视频&文生视频_1898016984871981058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1898016984871981058.json
+file: comfyui_library/workflows/视频生成/文生视频/超级LTX0.95图生视频&文生视频_1898016984871981058.json
 hash: 2757461a65e41559
 coverage: 0.933333
 learned_at: 2026-10-15 22:43:20

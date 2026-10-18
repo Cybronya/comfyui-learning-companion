@@ -4,7 +4,7 @@ name: SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997886234179567618.json
+file: comfyui_library/workflows/视频生成/图生视频/SteadyDancer-自适应骨骼迁移 版本一 12.8_1997886234179567618.json
 hash: ae81135af4bd4860
 coverage: 0.891892
 learned_at: 2026-10-15 22:33:30

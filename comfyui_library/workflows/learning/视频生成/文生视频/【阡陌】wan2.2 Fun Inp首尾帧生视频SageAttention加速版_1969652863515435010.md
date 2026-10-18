@@ -4,7 +4,7 @@ name: 【阡陌】wan2.2 Fun Inp首尾帧生视频SageAttention加速版_1969652
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969652863515435010.json
+file: comfyui_library/workflows/视频生成/文生视频/【阡陌】wan2.2 Fun Inp首尾帧生视频SageAttention加速版_1969652863515435010.json
 hash: bd693651f740e110
 coverage: 1
 learned_at: 2026-10-15 22:43:47

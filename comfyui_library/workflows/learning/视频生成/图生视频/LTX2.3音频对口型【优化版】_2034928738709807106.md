@@ -4,7 +4,7 @@ name: LTX2.3音频对口型【优化版】_2034928738709807106.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034928738709807106.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3音频对口型【优化版】_2034928738709807106.json
 hash: 20fb46a81906f3ca
 coverage: 0.604167
 learned_at: 2026-10-15 22:35:46

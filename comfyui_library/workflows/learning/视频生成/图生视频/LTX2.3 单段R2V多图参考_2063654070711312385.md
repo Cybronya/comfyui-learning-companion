@@ -4,7 +4,7 @@ name: LTX2.3 单段R2V多图参考_2063654070711312385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063654070711312385.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 单段R2V多图参考_2063654070711312385.json
 hash: b7470ea815ea8941
 coverage: 0.863636
 learned_at: 2026-10-15 22:39:16

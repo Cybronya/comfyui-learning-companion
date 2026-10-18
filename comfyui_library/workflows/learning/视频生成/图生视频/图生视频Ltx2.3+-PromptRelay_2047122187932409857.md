@@ -4,7 +4,7 @@ name: 图生视频Ltx2.3+-PromptRelay_2047122187932409857.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047122187932409857.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频Ltx2.3+-PromptRelay_2047122187932409857.json
 hash: 53d1e1b3189b6c21
 coverage: 0.795455
 learned_at: 2026-10-15 22:37:02

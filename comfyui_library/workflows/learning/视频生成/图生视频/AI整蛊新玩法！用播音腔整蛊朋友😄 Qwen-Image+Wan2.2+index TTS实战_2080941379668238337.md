@@ -4,7 +4,7 @@ name: AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index T
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080941379668238337.json
+file: comfyui_library/workflows/视频生成/图生视频/AI整蛊新玩法！用播音腔整蛊朋友😄 Qwen-Image+Wan2.2+index TTS实战_2080941379668238337.json
 hash: 6eb5937dd7b6ca97
 coverage: 0.833333
 learned_at: 2026-10-15 22:42:18

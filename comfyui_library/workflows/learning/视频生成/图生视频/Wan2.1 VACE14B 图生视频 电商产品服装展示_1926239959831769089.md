@@ -4,7 +4,7 @@ name: Wan2.1 VACE14B 图生视频 电商产品服装展示_1926239959831769089.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1926239959831769089.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 VACE14B 图生视频 电商产品服装展示_1926239959831769089.json
 hash: 6d26e108d8f692c4
 coverage: 0.785714
 learned_at: 2026-10-15 22:29:52

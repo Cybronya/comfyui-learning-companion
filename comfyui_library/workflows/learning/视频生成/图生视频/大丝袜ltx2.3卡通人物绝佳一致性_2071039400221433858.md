@@ -4,7 +4,7 @@ name: 大丝袜ltx2.3卡通人物绝佳一致性_2071039400221433858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071039400221433858.json
+file: comfyui_library/workflows/视频生成/图生视频/大丝袜ltx2.3卡通人物绝佳一致性_2071039400221433858.json
 hash: abed1fad82ef08d6
 coverage: 0.744186
 learned_at: 2026-10-15 22:40:43

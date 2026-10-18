@@ -4,7 +4,7 @@ name: 小孩工作wan2.1_1964871069591064577.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964871069591064577.json
+file: comfyui_library/workflows/视频生成/图生视频/小孩工作wan2.1_1964871069591064577.json
 hash: a9a6862b827371a5
 coverage: 0.875
 learned_at: 2026-10-15 22:31:35

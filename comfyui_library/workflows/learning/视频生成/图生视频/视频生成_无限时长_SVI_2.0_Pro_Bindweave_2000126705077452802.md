@@ -4,7 +4,7 @@ name: 视频生成_无限时长_SVI_2.0_Pro_Bindweave_2000126705077452802.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000126705077452802.json
+file: comfyui_library/workflows/视频生成/图生视频/视频生成_无限时长_SVI_2.0_Pro_Bindweave_2000126705077452802.json
 hash: 831262e1130eace6
 coverage: 0.502439
 learned_at: 2026-10-15 22:33:39

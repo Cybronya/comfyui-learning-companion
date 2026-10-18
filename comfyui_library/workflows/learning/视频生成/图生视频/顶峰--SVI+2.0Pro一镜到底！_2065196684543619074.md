@@ -4,7 +4,7 @@ name: 顶峰--SVI+2.0Pro一镜到底！_2065196684543619074.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065196684543619074.json
+file: comfyui_library/workflows/视频生成/图生视频/顶峰--SVI+2.0Pro一镜到底！_2065196684543619074.json
 hash: 6b6ff833e93d88b3
 coverage: 0.570175
 learned_at: 2026-10-15 22:39:36

@@ -4,7 +4,7 @@ name: LTXV 0.97 13B（图生视频&首尾帧）_1922462563945107457.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1922462563945107457.json
+file: comfyui_library/workflows/视频生成/文生视频/LTXV 0.97 13B（图生视频&首尾帧）_1922462563945107457.json
 hash: a8c88ff75e5ce777
 coverage: 0.783133
 learned_at: 2026-10-15 22:43:23

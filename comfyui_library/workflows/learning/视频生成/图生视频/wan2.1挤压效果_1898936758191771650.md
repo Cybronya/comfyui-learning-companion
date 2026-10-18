@@ -4,7 +4,7 @@ name: wan2.1挤压效果_1898936758191771650.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1898936758191771650.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1挤压效果_1898936758191771650.json
 hash: b8c6df879badf4a8
 coverage: 1
 learned_at: 2026-10-15 22:29:20

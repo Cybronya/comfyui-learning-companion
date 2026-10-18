@@ -4,7 +4,7 @@ name: 动作迁移MEGA Merge-WAN2.2-AllInOne_1968870212063907841.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968870212063907841.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移MEGA Merge-WAN2.2-AllInOne_1968870212063907841.json
 hash: b798c643255f3017
 coverage: 1
 learned_at: 2026-10-15 22:31:46

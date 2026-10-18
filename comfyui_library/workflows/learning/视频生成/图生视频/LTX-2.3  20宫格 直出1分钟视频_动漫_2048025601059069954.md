@@ -4,7 +4,7 @@ name: LTX-2.3  20宫格 直出1分钟视频_动漫_2048025601059069954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048025601059069954.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3  20宫格 直出1分钟视频_动漫_2048025601059069954.json
 hash: 77561e5c18eefab4
 coverage: 0.605769
 learned_at: 2026-10-15 22:37:08

@@ -4,7 +4,7 @@ name: DaSiWa9.0单图 _双图 _ 三图 出视频_2029370173815263234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029370173815263234.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa9.0单图 _双图 _ 三图 出视频_2029370173815263234.json
 hash: 7c6f96d254375969
 coverage: 0.43379
 learned_at: 2026-10-15 22:35:21

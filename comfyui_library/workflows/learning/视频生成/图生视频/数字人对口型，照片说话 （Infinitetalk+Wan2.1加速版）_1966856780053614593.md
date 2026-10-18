@@ -4,7 +4,7 @@ name: 数字人对口型，照片说话 （Infinitetalk+Wan2.1加速版）_19668
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966856780053614593.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人对口型，照片说话 （Infinitetalk+Wan2.1加速版）_1966856780053614593.json
 hash: ea78bf04d9f640fa
 coverage: 0.780488
 learned_at: 2026-10-15 22:31:39

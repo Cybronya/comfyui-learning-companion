@@ -4,7 +4,7 @@ name: 【wan2.2 图生视频】light2v蒸馏加速主模型 MOE官方流_1978326
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978326367861366785.json
+file: comfyui_library/workflows/视频生成/图生视频/【wan2.2 图生视频】light2v蒸馏加速主模型 MOE官方流_1978326367861366785.json
 hash: f1ef4904c46afef0
 coverage: 0.861111
 learned_at: 2026-10-15 22:32:18

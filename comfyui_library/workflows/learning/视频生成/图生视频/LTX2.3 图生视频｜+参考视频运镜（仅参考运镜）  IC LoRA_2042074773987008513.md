@@ -4,7 +4,7 @@ name: LTX2.3 图生视频｜+参考视频运镜（仅参考运镜）  IC LoRA_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042074773987008513.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频｜+参考视频运镜（仅参考运镜）  IC LoRA_2042074773987008513.json
 hash: 7ff2c6073f546b4b
 coverage: 0.758065
 learned_at: 2026-10-15 22:36:24

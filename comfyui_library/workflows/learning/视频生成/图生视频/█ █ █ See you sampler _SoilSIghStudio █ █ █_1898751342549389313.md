@@ -4,7 +4,7 @@ name: █ █ █ See you sampler _SoilSIghStudio █ █ █_189875134254938931
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1898751342549389313.json
+file: comfyui_library/workflows/视频生成/图生视频/█ █ █ See you sampler _SoilSIghStudio █ █ █_1898751342549389313.json
 hash: bdfe66805ee42a13
 coverage: 0.96875
 learned_at: 2026-10-15 22:29:20

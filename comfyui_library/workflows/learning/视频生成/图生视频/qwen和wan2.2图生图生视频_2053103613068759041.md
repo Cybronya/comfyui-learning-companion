@@ -4,7 +4,7 @@ name: qwen和wan2.2图生图生视频_2053103613068759041.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053103613068759041.json
+file: comfyui_library/workflows/视频生成/图生视频/qwen和wan2.2图生图生视频_2053103613068759041.json
 hash: feb2835de7e7fea3
 coverage: 0.916667
 learned_at: 2026-10-15 22:37:36

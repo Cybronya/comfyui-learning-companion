@@ -4,7 +4,7 @@ name: LTX2.3-全自动提示词单图微距镜头 工作流V2.3_2039156073621360
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039156073621360641.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-全自动提示词单图微距镜头 工作流V2.3_2039156073621360641.json
 hash: a92a40a52cbdd798
 coverage: 0.892857
 learned_at: 2026-10-15 22:36:06

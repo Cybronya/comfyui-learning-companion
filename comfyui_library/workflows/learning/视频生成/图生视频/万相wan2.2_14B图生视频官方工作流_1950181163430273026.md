@@ -4,7 +4,7 @@ name: 万相wan2.2_14B图生视频官方工作流_1950181163430273026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950181163430273026.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2_14B图生视频官方工作流_1950181163430273026.json
 hash: 0487c2e5a38b20a5
 coverage: 0.9375
 learned_at: 2026-10-15 22:30:53

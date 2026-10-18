@@ -4,7 +4,7 @@ name: wan2.2-14B 官方图生视频+自动提示词_1949713099642294274.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949713099642294274.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-14B 官方图生视频+自动提示词_1949713099642294274.json
 hash: cb31760d29f79d11
 coverage: 0.885714
 learned_at: 2026-10-15 22:30:50

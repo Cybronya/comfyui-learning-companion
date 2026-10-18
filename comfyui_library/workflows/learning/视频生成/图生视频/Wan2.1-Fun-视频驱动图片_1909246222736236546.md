@@ -4,7 +4,7 @@ name: Wan2.1-Fun-视频驱动图片_1909246222736236546.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1909246222736236546.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-Fun-视频驱动图片_1909246222736236546.json
 hash: 3ee05eee3a7dd0ea
 coverage: 0.541667
 learned_at: 2026-10-15 22:29:29

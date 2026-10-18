@@ -4,7 +4,7 @@ name: Wan2.2_14B_图生视频 (稳定加速版) 丨提示词生成视频_1968987
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968987843408379906.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_14B_图生视频 (稳定加速版) 丨提示词生成视频_1968987843408379906.json
 hash: 29690589a20d84df
 coverage: 1
 learned_at: 2026-10-15 22:43:46

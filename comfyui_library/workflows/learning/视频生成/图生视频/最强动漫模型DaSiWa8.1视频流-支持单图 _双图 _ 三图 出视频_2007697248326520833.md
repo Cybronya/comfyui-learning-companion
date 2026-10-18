@@ -4,7 +4,7 @@ name: 最强动漫模型DaSiWa8.1视频流-支持单图 _双图 _ 三图 出视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007697248326520833.json
+file: comfyui_library/workflows/视频生成/图生视频/最强动漫模型DaSiWa8.1视频流-支持单图 _双图 _ 三图 出视频_2007697248326520833.json
 hash: b79bef1e86aef011
 coverage: 0.425926
 learned_at: 2026-10-15 22:34:05

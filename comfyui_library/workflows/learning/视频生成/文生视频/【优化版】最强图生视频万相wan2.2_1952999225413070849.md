@@ -4,7 +4,7 @@ name: 【优化版】最强图生视频万相wan2.2_1952999225413070849.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1952999225413070849.json
+file: comfyui_library/workflows/视频生成/文生视频/【优化版】最强图生视频万相wan2.2_1952999225413070849.json
 hash: 08b6c44404c3f6da
 coverage: 1
 learned_at: 2026-10-15 22:43:38

@@ -4,7 +4,7 @@ name: wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930296674030141442.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_官方工作流_I2V_文生视频_480P_1930296674030141442.json
 hash: 9ac49560130ad244
 coverage: 1
 learned_at: 2026-10-15 22:30:05

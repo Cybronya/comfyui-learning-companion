@@ -4,7 +4,7 @@ name: LTX2.3 ai2v 高质量超自然图+克隆音频生数字人_203268968419059
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032689684190597122.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 ai2v 高质量超自然图+克隆音频生数字人_2032689684190597122.json
 hash: 64eb55443b551646
 coverage: 0.707865
 learned_at: 2026-10-15 22:35:36

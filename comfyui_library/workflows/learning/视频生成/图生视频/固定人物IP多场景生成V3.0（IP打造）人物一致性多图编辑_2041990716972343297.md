@@ -4,7 +4,7 @@ name: 固定人物IP多场景生成V3.0（IP打造）人物一致性多图编辑
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041990716972343297.json
+file: comfyui_library/workflows/视频生成/图生视频/固定人物IP多场景生成V3.0（IP打造）人物一致性多图编辑_2041990716972343297.json
 hash: e81c4b0a72f1e529
 coverage: 0.896552
 learned_at: 2026-10-15 22:36:23

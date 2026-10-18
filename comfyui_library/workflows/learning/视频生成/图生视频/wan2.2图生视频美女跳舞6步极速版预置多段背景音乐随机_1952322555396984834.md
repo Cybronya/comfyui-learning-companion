@@ -4,7 +4,7 @@ name: wan2.2图生视频美女跳舞6步极速版预置多段背景音乐随机_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952322555396984834.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频美女跳舞6步极速版预置多段背景音乐随机_1952322555396984834.json
 hash: a1d2b5efaa596868
 coverage: 1
 learned_at: 2026-10-15 22:31:01

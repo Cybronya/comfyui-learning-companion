@@ -4,7 +4,7 @@ name: 【打破次元】Wan2.2+FusionX图生视频_2037787300108705793.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037787300108705793.json
+file: comfyui_library/workflows/视频生成/图生视频/【打破次元】Wan2.2+FusionX图生视频_2037787300108705793.json
 hash: 460b3e11db0bb186
 coverage: 0.670455
 learned_at: 2026-10-15 22:35:58

@@ -4,7 +4,7 @@ name: LTX2.3 首尾帧视频工作流（自动提示词全配置可调适配12G 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027279750514872322.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 首尾帧视频工作流（自动提示词全配置可调适配12G ）_2027279750514872322.json
 hash: 13ecb926b10d4f41
 coverage: 0.62766
 learned_at: 2026-10-15 22:35:16

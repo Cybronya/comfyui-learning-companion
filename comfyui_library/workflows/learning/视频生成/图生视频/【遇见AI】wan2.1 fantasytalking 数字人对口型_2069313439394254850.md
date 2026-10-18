@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069313439394254850.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 fantasytalking 数字人对口型_2069313439394254850.json
 hash: 50186518b0414913
 coverage: 0.962963
 learned_at: 2026-10-15 22:40:27

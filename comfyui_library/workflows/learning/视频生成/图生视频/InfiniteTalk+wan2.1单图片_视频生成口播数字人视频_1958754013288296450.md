@@ -4,7 +4,7 @@ name: InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_19587540132
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958754013288296450.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk+wan2.1单图片_视频生成口播数字人视频_1958754013288296450.json
 hash: 84e2fc868d937726
 coverage: 0.818182
 learned_at: 2026-10-15 22:31:23

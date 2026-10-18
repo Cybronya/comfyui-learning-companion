@@ -4,7 +4,7 @@ name: Wan2.2 Fun Vace视频蒙版重绘V1_1966519907141791746.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966519907141791746.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Fun Vace视频蒙版重绘V1_1966519907141791746.json
 hash: 24448bbe41769de9
 coverage: 0.916667
 learned_at: 2026-10-15 22:31:38

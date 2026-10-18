@@ -4,7 +4,7 @@ name: Wan2.2-Lightx2v-1108新版加速LoRA-速度更快，效果更好-图生视
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991087874728898561.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Lightx2v-1108新版加速LoRA-速度更快，效果更好-图生视频_1991087874728898561.json
 hash: c122709081aae074
 coverage: 0.814815
 learned_at: 2026-10-15 22:33:12

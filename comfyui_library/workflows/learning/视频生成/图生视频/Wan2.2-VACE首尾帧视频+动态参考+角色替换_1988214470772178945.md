@@ -4,7 +4,7 @@ name: Wan2.2-VACE首尾帧视频+动态参考+角色替换_1988214470772178945.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988214470772178945.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-VACE首尾帧视频+动态参考+角色替换_1988214470772178945.json
 hash: 33da0561846d5c97
 coverage: 0.846154
 learned_at: 2026-10-15 22:33:02

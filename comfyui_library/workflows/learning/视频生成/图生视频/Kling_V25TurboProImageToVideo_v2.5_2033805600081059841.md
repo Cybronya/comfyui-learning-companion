@@ -4,7 +4,7 @@ name: Kling_V25TurboProImageToVideo_v2.5_2033805600081059841.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033805600081059841.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_V25TurboProImageToVideo_v2.5_2033805600081059841.json
 hash: e97e97fcbeab7799
 coverage: 1
 learned_at: 2026-10-15 22:35:41

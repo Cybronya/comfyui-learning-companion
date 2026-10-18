@@ -4,7 +4,7 @@ name: S2V 声音生成视频 Wan2.2_1967070568195481602.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967070568195481602.json
+file: comfyui_library/workflows/视频生成/图生视频/S2V 声音生成视频 Wan2.2_1967070568195481602.json
 hash: 0259bf46ea2f6243
 coverage: 1
 learned_at: 2026-10-15 22:31:40

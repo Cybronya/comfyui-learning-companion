@@ -4,7 +4,7 @@ name: 最新WAN2.1 步行街美女团队走向镜头动画_1932262844979736577.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1932262844979736577.json
+file: comfyui_library/workflows/视频生成/文生视频/最新WAN2.1 步行街美女团队走向镜头动画_1932262844979736577.json
 hash: 1d38ebfc54f57abe
 coverage: 1
 learned_at: 2026-10-15 22:43:26

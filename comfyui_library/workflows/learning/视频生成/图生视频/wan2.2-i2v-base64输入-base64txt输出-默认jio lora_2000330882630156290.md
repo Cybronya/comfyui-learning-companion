@@ -4,7 +4,7 @@ name: wan2.2-i2v-base64输入-base64txt输出-默认jio lora_2000330882630156290
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000330882630156290.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-i2v-base64输入-base64txt输出-默认jio lora_2000330882630156290.json
 hash: 373b96edf569bdd7
 coverage: 0.769231
 learned_at: 2026-10-15 22:33:40

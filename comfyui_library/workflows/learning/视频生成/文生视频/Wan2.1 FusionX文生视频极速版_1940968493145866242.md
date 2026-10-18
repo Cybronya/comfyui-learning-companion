@@ -4,7 +4,7 @@ name: Wan2.1 FusionX文生视频极速版_1940968493145866242.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1940968493145866242.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 FusionX文生视频极速版_1940968493145866242.json
 hash: 966d3276b17e565f
 coverage: 0.944444
 learned_at: 2026-10-15 22:43:30

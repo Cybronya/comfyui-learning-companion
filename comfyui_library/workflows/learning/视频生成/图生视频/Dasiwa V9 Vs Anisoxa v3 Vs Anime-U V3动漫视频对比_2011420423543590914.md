@@ -4,7 +4,7 @@ name: Dasiwa V9 Vs Anisoxa v3 Vs Anime-U V3动漫视频对比_201142042354359091
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011420423543590914.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa V9 Vs Anisoxa v3 Vs Anime-U V3动漫视频对比_2011420423543590914.json
 hash: cde5f8e42e20b64c
 coverage: 0.842105
 learned_at: 2026-10-15 22:34:22

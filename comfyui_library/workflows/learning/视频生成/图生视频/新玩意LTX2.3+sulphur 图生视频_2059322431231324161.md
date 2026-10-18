@@ -4,7 +4,7 @@ name: 新玩意LTX2.3+sulphur 图生视频_2059322431231324161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059322431231324161.json
+file: comfyui_library/workflows/视频生成/图生视频/新玩意LTX2.3+sulphur 图生视频_2059322431231324161.json
 hash: 40272410d0f01938
 coverage: 0.833333
 learned_at: 2026-10-15 22:38:39

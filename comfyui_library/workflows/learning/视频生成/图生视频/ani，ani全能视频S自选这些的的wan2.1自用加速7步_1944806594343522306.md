@@ -4,7 +4,7 @@ name: ani，ani全能视频S自选这些的的wan2.1自用加速7步_19448065943
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1944806594343522306.json
+file: comfyui_library/workflows/视频生成/图生视频/ani，ani全能视频S自选这些的的wan2.1自用加速7步_1944806594343522306.json
 hash: 5c1c3ba71a3ca181
 coverage: 1
 learned_at: 2026-10-15 22:30:40

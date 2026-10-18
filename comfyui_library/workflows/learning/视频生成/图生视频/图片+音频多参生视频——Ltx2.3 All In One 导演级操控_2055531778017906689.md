@@ -4,7 +4,7 @@ name: 图片+音频多参生视频——Ltx2.3 All In One 导演级操控_205553
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055531778017906689.json
+file: comfyui_library/workflows/视频生成/图生视频/图片+音频多参生视频——Ltx2.3 All In One 导演级操控_2055531778017906689.json
 hash: 612e5387b265481a
 coverage: 0.926829
 learned_at: 2026-10-15 22:37:57

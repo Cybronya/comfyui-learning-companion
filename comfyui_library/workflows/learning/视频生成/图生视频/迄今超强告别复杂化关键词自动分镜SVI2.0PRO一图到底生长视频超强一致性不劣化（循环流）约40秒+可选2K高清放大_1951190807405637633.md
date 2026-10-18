@@ -4,7 +4,7 @@ name: 迄今超强告别复杂化关键词自动分镜SVI2.0PRO一图到底生�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951190807405637633.json
+file: comfyui_library/workflows/视频生成/图生视频/迄今超强告别复杂化关键词自动分镜SVI2.0PRO一图到底生长视频超强一致性不劣化（循环流）约40秒+可选2K高清放大_1951190807405637633.json
 hash: a3a0e9e0b4b14c58
 coverage: 0.525253
 learned_at: 2026-10-15 22:30:58

@@ -4,7 +4,7 @@ name: 首尾帧视频  Wan2.2 Remix图生视频 高质量视频生成_1993472274
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993472274546229249.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧视频  Wan2.2 Remix图生视频 高质量视频生成_1993472274546229249.json
 hash: 07a73020e1bdf4ca
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:18

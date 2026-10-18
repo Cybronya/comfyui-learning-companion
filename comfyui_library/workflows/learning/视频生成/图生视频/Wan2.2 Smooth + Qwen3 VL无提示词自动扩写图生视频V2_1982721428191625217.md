@@ -4,7 +4,7 @@ name: Wan2.2 Smooth + Qwen3 VL无提示词自动扩写图生视频V2_19827214281
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982721428191625217.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Smooth + Qwen3 VL无提示词自动扩写图生视频V2_1982721428191625217.json
 hash: ce8d3d6ec9eee222
 coverage: 0.719298
 learned_at: 2026-10-15 22:32:42

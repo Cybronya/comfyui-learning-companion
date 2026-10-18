@@ -4,7 +4,7 @@ name: LTX 2.3 多帧生视频 电影级效果（支持音频传入）_2030925818
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030925818993582082.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 多帧生视频 电影级效果（支持音频传入）_2030925818993582082.json
 hash: 3ff540c91a61e4a9
 coverage: 0.862069
 learned_at: 2026-10-15 22:35:28

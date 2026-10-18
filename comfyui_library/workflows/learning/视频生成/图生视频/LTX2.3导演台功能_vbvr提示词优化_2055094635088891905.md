@@ -4,7 +4,7 @@ name: LTX2.3导演台功能_vbvr提示词优化_2055094635088891905.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055094635088891905.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演台功能_vbvr提示词优化_2055094635088891905.json
 hash: f41367bd6fcb0eeb
 coverage: 0.734694
 learned_at: 2026-10-15 22:37:54

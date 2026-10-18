@@ -4,7 +4,7 @@ name: 运镜效果wan2.1图生视频_2050075485417295874.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050075485417295874.json
+file: comfyui_library/workflows/视频生成/图生视频/运镜效果wan2.1图生视频_2050075485417295874.json
 hash: 98e90f53bd1e5f7f
 coverage: 0.55
 learned_at: 2026-10-15 22:37:17

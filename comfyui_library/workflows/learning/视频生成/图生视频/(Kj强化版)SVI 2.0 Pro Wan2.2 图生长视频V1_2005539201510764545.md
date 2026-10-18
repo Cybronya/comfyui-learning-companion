@@ -4,7 +4,7 @@ name: (Kj强化版)SVI 2.0 Pro Wan2.2 图生长视频V1_2005539201510764545.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005539201510764545.json
+file: comfyui_library/workflows/视频生成/图生视频/(Kj强化版)SVI 2.0 Pro Wan2.2 图生长视频V1_2005539201510764545.json
 hash: b0ec8f827c04316e
 coverage: 0.52518
 learned_at: 2026-10-15 22:33:57

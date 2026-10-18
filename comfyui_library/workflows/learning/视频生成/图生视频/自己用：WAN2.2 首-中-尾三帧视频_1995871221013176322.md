@@ -4,7 +4,7 @@ name: 自己用：WAN2.2 首-中-尾三帧视频_1995871221013176322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995871221013176322.json
+file: comfyui_library/workflows/视频生成/图生视频/自己用：WAN2.2 首-中-尾三帧视频_1995871221013176322.json
 hash: 70e6a78a77446ad0
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:24

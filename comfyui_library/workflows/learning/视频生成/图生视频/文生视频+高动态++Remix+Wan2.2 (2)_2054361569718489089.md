@@ -4,7 +4,7 @@ name: 文生视频+高动态++Remix+Wan2.2 (2)_2054361569718489089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054361569718489089.json
+file: comfyui_library/workflows/视频生成/图生视频/文生视频+高动态++Remix+Wan2.2 (2)_2054361569718489089.json
 hash: 7a541074d5002f53
 coverage: 0.813953
 learned_at: 2026-10-15 22:37:46

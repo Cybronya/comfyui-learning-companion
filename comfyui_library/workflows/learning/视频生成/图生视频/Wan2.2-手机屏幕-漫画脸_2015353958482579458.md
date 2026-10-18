@@ -4,7 +4,7 @@ name: Wan2.2-手机屏幕-漫画脸_2015353958482579458.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015353958482579458.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-手机屏幕-漫画脸_2015353958482579458.json
 hash: c3971581e9d3cf74
 coverage: 0.983333
 learned_at: 2026-10-15 22:34:38

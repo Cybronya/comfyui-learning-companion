@@ -4,7 +4,7 @@ name: video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005949254709506050.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_14B_i2v_svi_pro_generate_extend_once_2005949254709506050.json
 hash: 6bc37e71b296dc0f
 coverage: 0.550725
 learned_at: 2026-10-15 22:33:59

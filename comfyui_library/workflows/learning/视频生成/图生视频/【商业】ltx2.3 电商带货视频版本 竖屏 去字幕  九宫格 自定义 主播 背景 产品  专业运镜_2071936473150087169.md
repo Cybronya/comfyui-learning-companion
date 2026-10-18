@@ -4,7 +4,7 @@ name: 【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071936473150087169.json
+file: comfyui_library/workflows/视频生成/图生视频/【商业】ltx2.3 电商带货视频版本 竖屏 去字幕  九宫格 自定义 主播 背景 产品  专业运镜_2071936473150087169.json
 hash: 6b7fd74be43e1f66
 coverage: 0.772727
 learned_at: 2026-10-15 22:40:50

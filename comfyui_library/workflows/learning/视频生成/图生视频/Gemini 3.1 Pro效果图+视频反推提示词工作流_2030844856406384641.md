@@ -4,7 +4,7 @@ name: Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030844856406384641.json
+file: comfyui_library/workflows/视频生成/图生视频/Gemini 3.1 Pro效果图+视频反推提示词工作流_2030844856406384641.json
 hash: 89424e3a792d31a0
 coverage: 0.714286
 learned_at: 2026-10-15 22:35:28

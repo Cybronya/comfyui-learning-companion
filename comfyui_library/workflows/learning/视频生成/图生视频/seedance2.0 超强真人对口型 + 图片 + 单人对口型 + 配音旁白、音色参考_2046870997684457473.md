@@ -4,7 +4,7 @@ name: seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046870997684457473.json
+file: comfyui_library/workflows/视频生成/图生视频/seedance2.0 超强真人对口型 + 图片 + 单人对口型 + 配音旁白、音色参考_2046870997684457473.json
 hash: 86c09ae0c82d4daf
 coverage: 0.833333
 learned_at: 2026-10-15 22:37:01

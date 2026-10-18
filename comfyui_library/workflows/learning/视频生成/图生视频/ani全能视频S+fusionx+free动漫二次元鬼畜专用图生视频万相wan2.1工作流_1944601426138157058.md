@@ -4,7 +4,7 @@ name: ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1944601426138157058.json
+file: comfyui_library/workflows/视频生成/图生视频/ani全能视频S+fusionx+free动漫二次元鬼畜专用图生视频万相wan2.1工作流_1944601426138157058.json
 hash: 9cbac985f995a888
 coverage: 1
 learned_at: 2026-10-15 22:30:39

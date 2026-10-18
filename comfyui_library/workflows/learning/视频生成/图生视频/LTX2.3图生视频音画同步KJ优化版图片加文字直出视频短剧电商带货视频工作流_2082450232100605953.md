@@ -4,7 +4,7 @@ name: LTX2.3图生视频音画同步KJ优化版图片加文字直出视频短剧
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082450232100605953.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频音画同步KJ优化版图片加文字直出视频短剧电商带货视频工作流_2082450232100605953.json
 hash: 1d0bfd5dfcbb57fa
 coverage: 0.74
 learned_at: 2026-10-15 22:42:32

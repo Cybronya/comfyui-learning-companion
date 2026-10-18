@@ -4,7 +4,7 @@ name: 自动提示词_WAN2.1-CanAI_1932714999003369473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1932714999003369473.json
+file: comfyui_library/workflows/视频生成/图生视频/自动提示词_WAN2.1-CanAI_1932714999003369473.json
 hash: 366876dba12be6d7
 coverage: 0.638889
 learned_at: 2026-10-15 22:30:12

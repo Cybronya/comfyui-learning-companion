@@ -4,7 +4,7 @@ name: 短剧制作-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984186286053474306.json
+file: comfyui_library/workflows/视频生成/图生视频/短剧制作-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_1984186286053474306.json
 hash: 5887e7b66fd389e6
 coverage: 0.430556
 learned_at: 2026-10-15 22:32:48

@@ -4,7 +4,7 @@ name: Wan 2.1 FusionX VACE+Control_1949680224212000770.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949680224212000770.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.1 FusionX VACE+Control_1949680224212000770.json
 hash: 0be91f67a236a351
 coverage: 0.759259
 learned_at: 2026-10-15 22:30:49

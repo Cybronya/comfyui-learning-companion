@@ -4,7 +4,7 @@ name: （4步加速版-多参版）Seedance2.0完美平替！Bernini全自动音
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073466408666746882.json
+file: comfyui_library/workflows/视频生成/图生视频/（4步加速版-多参版）Seedance2.0完美平替！Bernini全自动音画同全模态图生视频V3_2073466408666746882.json
 hash: 9859f1f992d6d572
 coverage: 0.870968
 learned_at: 2026-10-15 22:41:07

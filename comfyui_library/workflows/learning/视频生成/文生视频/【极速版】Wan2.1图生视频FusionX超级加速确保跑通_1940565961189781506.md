@@ -4,7 +4,7 @@ name: 【极速版】Wan2.1图生视频FusionX超级加速确保跑通_194056596
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1940565961189781506.json
+file: comfyui_library/workflows/视频生成/文生视频/【极速版】Wan2.1图生视频FusionX超级加速确保跑通_1940565961189781506.json
 hash: 376317070a8f0a85
 coverage: 0.779661
 learned_at: 2026-10-15 22:43:30

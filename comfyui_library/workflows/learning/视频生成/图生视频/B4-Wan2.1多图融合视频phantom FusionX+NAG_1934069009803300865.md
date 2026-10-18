@@ -4,7 +4,7 @@ name: B4-Wan2.1多图融合视频phantom FusionX+NAG_1934069009803300865.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934069009803300865.json
+file: comfyui_library/workflows/视频生成/图生视频/B4-Wan2.1多图融合视频phantom FusionX+NAG_1934069009803300865.json
 hash: b11cb47525b33df8
 coverage: 0.918919
 learned_at: 2026-10-15 22:30:15

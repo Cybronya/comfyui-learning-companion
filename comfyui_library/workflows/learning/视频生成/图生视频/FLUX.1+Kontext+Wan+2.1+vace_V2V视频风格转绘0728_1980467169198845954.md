@@ -4,7 +4,7 @@ name: FLUX.1+Kontext+Wan+2.1+vace_V2V视频风格转绘0728_1980467169198845954.
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980467169198845954.json
+file: comfyui_library/workflows/视频生成/图生视频/FLUX.1+Kontext+Wan+2.1+vace_V2V视频风格转绘0728_1980467169198845954.json
 hash: 53e4aa5645e1cce3
 coverage: 0.909091
 learned_at: 2026-10-15 22:32:30

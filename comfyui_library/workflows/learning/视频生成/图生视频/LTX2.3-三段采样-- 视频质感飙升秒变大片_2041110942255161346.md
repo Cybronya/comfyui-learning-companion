@@ -4,7 +4,7 @@ name: LTX2.3-三段采样-- 视频质感飙升秒变大片_2041110942255161346.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041110942255161346.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-三段采样-- 视频质感飙升秒变大片_2041110942255161346.json
 hash: f5558c68bde10088
 coverage: 0.5
 learned_at: 2026-10-15 22:36:18

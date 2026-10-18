@@ -4,7 +4,7 @@ name: Wan2.1 美丽的日本歌舞表演风格的女人_1947907852955463682.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1947907852955463682.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 美丽的日本歌舞表演风格的女人_1947907852955463682.json
 hash: 73220c5a3bc8c8fe
 coverage: 0.947368
 learned_at: 2026-10-15 22:43:32

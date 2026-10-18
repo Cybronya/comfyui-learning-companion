@@ -4,7 +4,7 @@ name: WAN2.2 DaSiWaV9_2075087221677449218.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075087221677449218.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 DaSiWaV9_2075087221677449218.json
 hash: ec592a2b2f59070a
 coverage: 0.893805
 learned_at: 2026-10-15 22:41:21

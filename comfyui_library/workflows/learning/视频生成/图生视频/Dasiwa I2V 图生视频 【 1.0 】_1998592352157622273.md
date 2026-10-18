@@ -4,7 +4,7 @@ name: Dasiwa I2V 图生视频 【 1.0 】_1998592352157622273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998592352157622273.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa I2V 图生视频 【 1.0 】_1998592352157622273.json
 hash: 54bba0b30333fc6e
 coverage: 0.666667
 learned_at: 2026-10-15 22:33:32

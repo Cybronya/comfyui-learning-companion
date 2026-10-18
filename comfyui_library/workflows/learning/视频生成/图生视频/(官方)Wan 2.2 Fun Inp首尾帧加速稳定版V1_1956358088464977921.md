@@ -4,7 +4,7 @@ name: (官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956358088464977921.json
+file: comfyui_library/workflows/视频生成/图生视频/(官方)Wan 2.2 Fun Inp首尾帧加速稳定版V1_1956358088464977921.json
 hash: 24e001f5683915d8
 coverage: 0.895522
 learned_at: 2026-10-15 22:31:13

@@ -4,7 +4,7 @@ name: 一生的故事-素描版，All Your Life Ver 1.2（rui & datou）_1837113
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1837113468884512769.json
+file: comfyui_library/workflows/视频生成/图生视频/一生的故事-素描版，All Your Life Ver 1.2（rui & datou）_1837113468884512769.json
 hash: 4a3f5a7879ed62f2
 coverage: 0.807018
 learned_at: 2026-10-15 22:29:13

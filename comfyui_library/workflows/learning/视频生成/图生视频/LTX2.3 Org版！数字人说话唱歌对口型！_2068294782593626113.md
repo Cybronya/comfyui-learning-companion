@@ -4,7 +4,7 @@ name: LTX2.3 Org版！数字人说话唱歌对口型！_2068294782593626113.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068294782593626113.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Org版！数字人说话唱歌对口型！_2068294782593626113.json
 hash: 408e1235de90ce7e
 coverage: 0.859155
 learned_at: 2026-10-15 22:40:18

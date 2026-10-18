@@ -4,7 +4,7 @@ name: Wan_SteadyDancer舞蹈大师+QwenImageEdit图像编辑_1997214663643447298
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997214663643447298.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan_SteadyDancer舞蹈大师+QwenImageEdit图像编辑_1997214663643447298.json
 hash: aad9f5ceaa83af0d
 coverage: 0.552083
 learned_at: 2026-10-15 22:33:28

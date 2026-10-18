@@ -4,7 +4,7 @@ name: LTX2.3动漫图生MV-30秒分段_2043299201156653058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043299201156653058.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3动漫图生MV-30秒分段_2043299201156653058.json
 hash: 4652676bd9a1df34
 coverage: 0.659091
 learned_at: 2026-10-15 22:36:31

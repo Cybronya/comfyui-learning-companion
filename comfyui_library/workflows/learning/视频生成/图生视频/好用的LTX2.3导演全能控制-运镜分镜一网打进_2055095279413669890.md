@@ -4,7 +4,7 @@ name: 好用的LTX2.3导演全能控制-运镜分镜一网打进_205509527941366
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055095279413669890.json
+file: comfyui_library/workflows/视频生成/图生视频/好用的LTX2.3导演全能控制-运镜分镜一网打进_2055095279413669890.json
 hash: a51f3902afc15a07
 coverage: 0.972222
 learned_at: 2026-10-15 22:37:54

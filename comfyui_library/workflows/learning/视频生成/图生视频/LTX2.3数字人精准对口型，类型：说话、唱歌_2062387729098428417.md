@@ -4,7 +4,7 @@ name: LTX2.3数字人精准对口型，类型：说话、唱歌_2062387729098428
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062387729098428417.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人精准对口型，类型：说话、唱歌_2062387729098428417.json
 hash: c723a569ab0bd0d9
 coverage: 0.836066
 learned_at: 2026-10-15 22:39:03

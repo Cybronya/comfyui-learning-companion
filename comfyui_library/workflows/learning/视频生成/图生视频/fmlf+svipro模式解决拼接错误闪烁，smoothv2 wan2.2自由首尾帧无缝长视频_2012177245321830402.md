@@ -4,7 +4,7 @@ name: fmlf+svipro模式解决拼接错误闪烁，smoothv2 wan2.2自由首尾帧
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012177245321830402.json
+file: comfyui_library/workflows/视频生成/图生视频/fmlf+svipro模式解决拼接错误闪烁，smoothv2 wan2.2自由首尾帧无缝长视频_2012177245321830402.json
 hash: ffaee04c18a03220
 coverage: 0.496403
 learned_at: 2026-10-15 22:34:26

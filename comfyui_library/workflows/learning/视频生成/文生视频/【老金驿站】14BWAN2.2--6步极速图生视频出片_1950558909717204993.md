@@ -4,7 +4,7 @@ name: 【老金驿站】14BWAN2.2--6步极速图生视频出片_1950558909717204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950558909717204993.json
+file: comfyui_library/workflows/视频生成/文生视频/【老金驿站】14BWAN2.2--6步极速图生视频出片_1950558909717204993.json
 hash: bc7183c020a929e5
 coverage: 1
 learned_at: 2026-10-15 22:43:36

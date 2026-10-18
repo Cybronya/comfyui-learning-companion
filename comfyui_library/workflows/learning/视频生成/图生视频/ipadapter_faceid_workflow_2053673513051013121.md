@@ -4,7 +4,7 @@ name: ipadapter_faceid_workflow_2053673513051013121.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053673513051013121.json
+file: comfyui_library/workflows/视频生成/图生视频/ipadapter_faceid_workflow_2053673513051013121.json
 hash: bbf77de634d7c588
 coverage: 1
 learned_at: 2026-10-15 22:37:42

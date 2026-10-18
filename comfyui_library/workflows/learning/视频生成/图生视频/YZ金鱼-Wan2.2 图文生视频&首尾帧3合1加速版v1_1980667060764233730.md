@@ -4,7 +4,7 @@ name: YZ金鱼-Wan2.2 图文生视频&首尾帧3合1加速版v1_1980667060764233
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980667060764233730.json
+file: comfyui_library/workflows/视频生成/图生视频/YZ金鱼-Wan2.2 图文生视频&首尾帧3合1加速版v1_1980667060764233730.json
 hash: 3578fcf942500779
 coverage: 0.836066
 learned_at: 2026-10-15 22:32:32

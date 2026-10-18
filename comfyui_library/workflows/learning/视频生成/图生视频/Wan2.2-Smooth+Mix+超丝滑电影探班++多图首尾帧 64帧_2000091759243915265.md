@@ -4,7 +4,7 @@ name: Wan2.2-Smooth+Mix+超丝滑电影探班++多图首尾帧 64帧_20000917592
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000091759243915265.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth+Mix+超丝滑电影探班++多图首尾帧 64帧_2000091759243915265.json
 hash: c0ecf6af45600930
 coverage: 0.98
 learned_at: 2026-10-15 22:33:39

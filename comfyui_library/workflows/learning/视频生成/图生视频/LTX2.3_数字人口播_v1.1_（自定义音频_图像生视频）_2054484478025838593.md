@@ -4,7 +4,7 @@ name: LTX2.3_数字人口播_v1.1_（自定义音频_图像生视频）_20544844
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054484478025838593.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_数字人口播_v1.1_（自定义音频_图像生视频）_2054484478025838593.json
 hash: 81162f166ba4b7b6
 coverage: 0.833333
 learned_at: 2026-10-15 22:37:48

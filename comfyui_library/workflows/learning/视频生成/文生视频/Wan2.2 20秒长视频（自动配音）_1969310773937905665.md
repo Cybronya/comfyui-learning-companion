@@ -4,7 +4,7 @@ name: Wan2.2 20秒长视频（自动配音）_1969310773937905665.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969310773937905665.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 20秒长视频（自动配音）_1969310773937905665.json
 hash: 6405fc72672fbe27
 coverage: 0.757576
 learned_at: 2026-10-15 22:43:46

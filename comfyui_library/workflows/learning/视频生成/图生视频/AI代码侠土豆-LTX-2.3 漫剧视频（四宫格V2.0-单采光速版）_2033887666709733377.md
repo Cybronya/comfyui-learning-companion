@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX-2.3 漫剧视频（四宫格V2.0-单采光速版）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033887666709733377.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX-2.3 漫剧视频（四宫格V2.0-单采光速版）_2033887666709733377.json
 hash: 6c7fad11840f082f
 coverage: 0.561644
 learned_at: 2026-10-15 22:35:42

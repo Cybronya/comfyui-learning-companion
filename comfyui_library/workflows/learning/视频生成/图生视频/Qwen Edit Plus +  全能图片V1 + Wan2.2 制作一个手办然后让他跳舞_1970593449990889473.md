@@ -4,7 +4,7 @@ name: Qwen Edit Plus +  全能图片V1 + Wan2.2 制作一个手办然后让他�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970593449990889473.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen Edit Plus +  全能图片V1 + Wan2.2 制作一个手办然后让他跳舞_1970593449990889473.json
 hash: 2e6fa0b80af10782
 coverage: 0.867925
 learned_at: 2026-10-15 22:31:54

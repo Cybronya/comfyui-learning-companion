@@ -4,7 +4,7 @@ name: CineScale Wan2.2（高低噪）三分镜智能提示词文生视频高细�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1959251891186249729.json
+file: comfyui_library/workflows/视频生成/文生视频/CineScale Wan2.2（高低噪）三分镜智能提示词文生视频高细节工作流V1_1959251891186249729.json
 hash: 48e553fbc7f1182a
 coverage: 0.77551
 learned_at: 2026-10-15 22:43:42

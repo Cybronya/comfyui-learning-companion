@@ -4,7 +4,7 @@ name: 【全景别分镜】Wan2.2-SkyreelsV2图生长视频（未加密，可下
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979015207190171649.json
+file: comfyui_library/workflows/视频生成/图生视频/【全景别分镜】Wan2.2-SkyreelsV2图生长视频（未加密，可下载）_1979015207190171649.json
 hash: 5eee36620ef79b7a
 coverage: 0.674157
 learned_at: 2026-10-15 22:32:21

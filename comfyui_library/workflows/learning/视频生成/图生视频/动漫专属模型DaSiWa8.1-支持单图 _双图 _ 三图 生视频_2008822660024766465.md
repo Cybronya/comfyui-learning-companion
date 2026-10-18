@@ -4,7 +4,7 @@ name: 动漫专属模型DaSiWa8.1-支持单图 _双图 _ 三图 生视频_200882
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008822660024766465.json
+file: comfyui_library/workflows/视频生成/图生视频/动漫专属模型DaSiWa8.1-支持单图 _双图 _ 三图 生视频_2008822660024766465.json
 hash: 65979aa7fe1e1c89
 coverage: 0.423963
 learned_at: 2026-10-15 22:34:09

@@ -4,7 +4,7 @@ name: Ltx2.3 Dasiwa V3+Prompt Relay精准图生视频（最强人脸一致性）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070413005359243266.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Dasiwa V3+Prompt Relay精准图生视频（最强人脸一致性）_2070413005359243266.json
 hash: 6f5c7cb3a522726d
 coverage: 0.75
 learned_at: 2026-10-15 22:40:39

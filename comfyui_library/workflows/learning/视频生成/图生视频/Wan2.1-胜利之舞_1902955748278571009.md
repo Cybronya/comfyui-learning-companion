@@ -4,7 +4,7 @@ name: Wan2.1-胜利之舞_1902955748278571009.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1902955748278571009.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-胜利之舞_1902955748278571009.json
 hash: 52fbf256016a2ceb
 coverage: 1
 learned_at: 2026-10-15 22:29:24

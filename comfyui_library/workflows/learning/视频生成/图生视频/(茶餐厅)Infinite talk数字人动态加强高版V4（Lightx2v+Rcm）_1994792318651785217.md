@@ -4,7 +4,7 @@ name: (茶餐厅)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994792318651785217.json
+file: comfyui_library/workflows/视频生成/图生视频/(茶餐厅)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1994792318651785217.json
 hash: c56e231674237bda
 coverage: 0.75
 learned_at: 2026-10-15 22:33:21

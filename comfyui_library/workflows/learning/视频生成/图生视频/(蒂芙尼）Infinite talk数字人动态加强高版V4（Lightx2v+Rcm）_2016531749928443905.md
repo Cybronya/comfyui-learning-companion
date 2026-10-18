@@ -4,7 +4,7 @@ name: (蒂芙尼）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016531749928443905.json
+file: comfyui_library/workflows/视频生成/图生视频/(蒂芙尼）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2016531749928443905.json
 hash: 48f4d070a66888c4
 coverage: 0.75
 learned_at: 2026-10-15 22:34:43

@@ -4,7 +4,7 @@ name: wan2.2 animate 跳舞单人转绘-不带蒙版_1998969662585065474.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998969662585065474.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 animate 跳舞单人转绘-不带蒙版_1998969662585065474.json
 hash: 675fa772bba89108
 coverage: 0.547619
 learned_at: 2026-10-15 22:33:34

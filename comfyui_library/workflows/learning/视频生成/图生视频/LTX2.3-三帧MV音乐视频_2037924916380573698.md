@@ -4,7 +4,7 @@ name: LTX2.3-三帧MV音乐视频_2037924916380573698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037924916380573698.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-三帧MV音乐视频_2037924916380573698.json
 hash: 8c79ccc865fb419b
 coverage: 0.68
 learned_at: 2026-10-15 22:36:00

@@ -4,7 +4,7 @@ name: 最新王炸Wan2.1+SkyReels  自定义角色+物体+背景  超高还原_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911449763139547137.json
+file: comfyui_library/workflows/视频生成/图生视频/最新王炸Wan2.1+SkyReels  自定义角色+物体+背景  超高还原_1911449763139547137.json
 hash: 57870a6ddcfb9916
 coverage: 0.680556
 learned_at: 2026-10-15 22:29:31

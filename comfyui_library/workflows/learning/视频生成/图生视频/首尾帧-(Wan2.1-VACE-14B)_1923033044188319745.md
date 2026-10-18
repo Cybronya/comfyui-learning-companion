@@ -4,7 +4,7 @@ name: 首尾帧-(Wan2.1-VACE-14B)_1923033044188319745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1923033044188319745.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧-(Wan2.1-VACE-14B)_1923033044188319745.json
 hash: f58f55c10965df38
 coverage: 1
 learned_at: 2026-10-15 22:29:47

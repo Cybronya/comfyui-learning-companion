@@ -4,7 +4,7 @@ name: LTX2.3 音画同出视频，参考图+参考音频_2033775410789486594.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033775410789486594.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 音画同出视频，参考图+参考音频_2033775410789486594.json
 hash: 15c72a1a8e5dc233
 coverage: 0.954545
 learned_at: 2026-10-15 22:35:41

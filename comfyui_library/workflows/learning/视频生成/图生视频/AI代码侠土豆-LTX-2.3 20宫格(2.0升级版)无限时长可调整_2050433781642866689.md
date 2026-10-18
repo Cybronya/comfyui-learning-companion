@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX-2.3 20宫格(2.0升级版)无限时长可调整_2050
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050433781642866689.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX-2.3 20宫格(2.0升级版)无限时长可调整_2050433781642866689.json
 hash: ecb141d1e955246f
 coverage: 0.696429
 learned_at: 2026-10-15 22:37:18

@@ -4,7 +4,7 @@ name: wan2.2 4张旋转-简化_2037072303892209666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037072303892209666.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 4张旋转-简化_2037072303892209666.json
 hash: 444232b4a7f12ce3
 coverage: 0.636364
 learned_at: 2026-10-15 22:35:54

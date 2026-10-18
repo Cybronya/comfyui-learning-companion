@@ -4,7 +4,7 @@ name: AI帮你实现不一样的人生之旅！Wan2.2延长术生成长视频教
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1966178940819771393.json
+file: comfyui_library/workflows/视频生成/文生视频/AI帮你实现不一样的人生之旅！Wan2.2延长术生成长视频教程_1966178940819771393.json
 hash: e233e642d46b7310
 coverage: 0.5
 learned_at: 2026-10-15 22:43:45

@@ -4,7 +4,7 @@ name: LTX2.0 + VQA 图生视频（48G）_2011995842403635201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011995842403635201.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0 + VQA 图生视频（48G）_2011995842403635201.json
 hash: ad4a1a6cd7ecc268
 coverage: 0.95
 learned_at: 2026-10-15 22:34:25

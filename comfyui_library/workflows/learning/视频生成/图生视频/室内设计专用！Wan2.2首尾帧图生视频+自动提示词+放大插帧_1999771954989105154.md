@@ -4,7 +4,7 @@ name: 室内设计专用！Wan2.2首尾帧图生视频+自动提示词+放大插
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999771954989105154.json
+file: comfyui_library/workflows/视频生成/图生视频/室内设计专用！Wan2.2首尾帧图生视频+自动提示词+放大插帧_1999771954989105154.json
 hash: 309ab1429046e8eb
 coverage: 0.906977
 learned_at: 2026-10-15 22:33:38

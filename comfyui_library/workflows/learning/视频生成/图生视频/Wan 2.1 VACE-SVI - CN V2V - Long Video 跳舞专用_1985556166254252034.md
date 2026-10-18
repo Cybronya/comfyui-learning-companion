@@ -4,7 +4,7 @@ name: Wan 2.1 VACE-SVI - CN V2V - Long Video 跳舞专用_1985556166254252034.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985556166254252034.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.1 VACE-SVI - CN V2V - Long Video 跳舞专用_1985556166254252034.json
 hash: de4f8b784cec24d5
 coverage: 0.41958
 learned_at: 2026-10-15 22:32:51

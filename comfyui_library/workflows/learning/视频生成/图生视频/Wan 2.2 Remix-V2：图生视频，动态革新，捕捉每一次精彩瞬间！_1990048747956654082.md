@@ -4,7 +4,7 @@ name: Wan 2.2 Remix-V2：图生视频，动态革新，捕捉每一次精彩瞬�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990048747956654082.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 Remix-V2：图生视频，动态革新，捕捉每一次精彩瞬间！_1990048747956654082.json
 hash: 7bd3dc1db7e69e67
 coverage: 0.846154
 learned_at: 2026-10-15 22:33:09

@@ -4,7 +4,7 @@ name: LTXV0.9.6-多帧控制-秒级图生视频_1897448492304912386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1897448492304912386.json
+file: comfyui_library/workflows/视频生成/文生视频/LTXV0.9.6-多帧控制-秒级图生视频_1897448492304912386.json
 hash: f5aa08b827add2c7
 coverage: 0.957447
 learned_at: 2026-10-15 22:43:20

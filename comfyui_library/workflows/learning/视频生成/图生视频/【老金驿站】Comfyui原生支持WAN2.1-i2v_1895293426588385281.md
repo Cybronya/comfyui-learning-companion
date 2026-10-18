@@ -4,7 +4,7 @@ name: 【老金驿站】Comfyui原生支持WAN2.1-i2v_1895293426588385281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1895293426588385281.json
+file: comfyui_library/workflows/视频生成/图生视频/【老金驿站】Comfyui原生支持WAN2.1-i2v_1895293426588385281.json
 hash: 945cc310fa45624b
 coverage: 1
 learned_at: 2026-10-15 22:29:17

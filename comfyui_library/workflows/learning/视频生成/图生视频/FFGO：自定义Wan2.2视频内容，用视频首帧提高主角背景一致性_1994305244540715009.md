@@ -4,7 +4,7 @@ name: FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994305244540715009.json
+file: comfyui_library/workflows/视频生成/图生视频/FFGO：自定义Wan2.2视频内容，用视频首帧提高主角背景一致性_1994305244540715009.json
 hash: 16473c6221b3a777
 coverage: 0.94
 learned_at: 2026-10-15 22:33:20

@@ -4,7 +4,7 @@ name: LTX-2.3_MSR V2漫剧自动多参分镜_2079758603824750594.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079758603824750594.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_MSR V2漫剧自动多参分镜_2079758603824750594.json
 hash: ea11c8b8ddf3ce78
 coverage: 0.841463
 learned_at: 2026-10-15 22:42:06

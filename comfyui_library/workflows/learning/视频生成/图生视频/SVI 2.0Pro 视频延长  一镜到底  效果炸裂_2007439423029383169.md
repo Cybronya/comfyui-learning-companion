@@ -4,7 +4,7 @@ name: SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007439423029383169.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0Pro 视频延长  一镜到底  效果炸裂_2007439423029383169.json
 hash: 909149e0d9068564
 coverage: 0.570175
 learned_at: 2026-10-15 22:34:03

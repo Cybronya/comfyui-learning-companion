@@ -4,7 +4,7 @@ name: Wan2.2-Smooth Mix+Qwen3VL首尾帧稳定图生视频_1985980018524336129.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985980018524336129.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth Mix+Qwen3VL首尾帧稳定图生视频_1985980018524336129.json
 hash: e51d916c3edbc61f
 coverage: 0.972222
 learned_at: 2026-10-15 22:32:53

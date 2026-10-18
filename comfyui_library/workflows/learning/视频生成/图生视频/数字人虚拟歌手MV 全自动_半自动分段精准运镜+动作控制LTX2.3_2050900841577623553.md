@@ -4,7 +4,7 @@ name: 数字人虚拟歌手MV 全自动_半自动分段精准运镜+动作控制
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050900841577623553.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人虚拟歌手MV 全自动_半自动分段精准运镜+动作控制LTX2.3_2050900841577623553.json
 hash: 1486b1af0d5fe2a8
 coverage: 0.706667
 learned_at: 2026-10-15 22:37:20

@@ -4,7 +4,7 @@ name: WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981981430689472513.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-LightX2V-I2V lora版本首尾帧生视频_1981981430689472513.json
 hash: 2d60509d1dd6c803
 coverage: 0.589474
 learned_at: 2026-10-15 22:32:39

@@ -4,7 +4,7 @@ name: Wan2.2 Animate 双重脸部一致性优化Mix主体迁移版V2（ED实验�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971886866809221121.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate 双重脸部一致性优化Mix主体迁移版V2（ED实验版）_1971886866809221121.json
 hash: 665e14123f1605bb
 coverage: 0.567901
 learned_at: 2026-10-15 22:31:58

@@ -4,7 +4,7 @@ name: 动漫影视制作-图生视频-全能视频S.0_1983409112073576449.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983409112073576449.json
+file: comfyui_library/workflows/视频生成/图生视频/动漫影视制作-图生视频-全能视频S.0_1983409112073576449.json
 hash: 8f86b4475dd395a1
 coverage: 1
 learned_at: 2026-10-15 22:32:44

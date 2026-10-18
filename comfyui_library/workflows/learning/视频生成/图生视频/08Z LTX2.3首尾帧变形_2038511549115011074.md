@@ -4,7 +4,7 @@ name: 08Z LTX2.3首尾帧变形_2038511549115011074.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038511549115011074.json
+file: comfyui_library/workflows/视频生成/图生视频/08Z LTX2.3首尾帧变形_2038511549115011074.json
 hash: 253ffcf9811fde42
 coverage: 0.703448
 learned_at: 2026-10-15 22:36:03

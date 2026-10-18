@@ -4,7 +4,7 @@ name: 10SNodes LTX2.3 视频生成优化~一致性和画质双提升_20588753961
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058875396149571585.json
+file: comfyui_library/workflows/视频生成/图生视频/10SNodes LTX2.3 视频生成优化~一致性和画质双提升_2058875396149571585.json
 hash: 71fa7ca554f9a4e6
 coverage: 0.703704
 learned_at: 2026-10-15 22:38:31

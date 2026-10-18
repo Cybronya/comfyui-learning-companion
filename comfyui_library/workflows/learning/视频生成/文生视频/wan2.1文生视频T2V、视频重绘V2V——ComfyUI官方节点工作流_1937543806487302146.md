@@ -4,7 +4,7 @@ name: wan2.1文生视频T2V、视频重绘V2V——ComfyUI官方节点工作流_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1937543806487302146.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1文生视频T2V、视频重绘V2V——ComfyUI官方节点工作流_1937543806487302146.json
 hash: 1a0a0c7b34466eff
 coverage: 0.758621
 learned_at: 2026-10-15 22:43:29

@@ -4,7 +4,7 @@ name: 全能视频S 图生视频-广告版(NEXT SCENE 2.0)_1984963080490729473.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984963080490729473.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S 图生视频-广告版(NEXT SCENE 2.0)_1984963080490729473.json
 hash: c4d706d77d32e853
 coverage: 0.890625
 learned_at: 2026-10-15 22:32:50

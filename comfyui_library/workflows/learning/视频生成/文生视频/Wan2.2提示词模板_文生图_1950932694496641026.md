@@ -4,7 +4,7 @@ name: Wan2.2提示词模板_文生图_1950932694496641026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950932694496641026.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2提示词模板_文生图_1950932694496641026.json
 hash: b75517cad033a440
 coverage: 0.833333
 learned_at: 2026-10-15 22:43:37

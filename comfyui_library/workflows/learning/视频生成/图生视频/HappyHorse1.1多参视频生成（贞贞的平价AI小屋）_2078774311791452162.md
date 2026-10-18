@@ -4,7 +4,7 @@ name: HappyHorse1.1多参视频生成（贞贞的平价AI小屋）_2078774311791
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078774311791452162.json
+file: comfyui_library/workflows/视频生成/图生视频/HappyHorse1.1多参视频生成（贞贞的平价AI小屋）_2078774311791452162.json
 hash: de08224135eb471a
 coverage: 0.545455
 learned_at: 2026-10-15 22:41:55

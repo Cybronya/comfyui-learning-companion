@@ -4,7 +4,7 @@ name: 文生视频Wan2.2-MegaAIO_1968902178624741378.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968902178624741378.json
+file: comfyui_library/workflows/视频生成/文生视频/文生视频Wan2.2-MegaAIO_1968902178624741378.json
 hash: bdbf40823daaaeec
 coverage: 0.8125
 learned_at: 2026-10-15 22:43:46

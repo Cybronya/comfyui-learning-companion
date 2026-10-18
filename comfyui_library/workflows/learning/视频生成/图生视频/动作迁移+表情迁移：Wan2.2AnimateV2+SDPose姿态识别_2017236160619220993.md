@@ -4,7 +4,7 @@ name: 动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_20172361606
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017236160619220993.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移+表情迁移：Wan2.2AnimateV2+SDPose姿态识别_2017236160619220993.json
 hash: 14fe9e9a222d2a15
 coverage: 0.650602
 learned_at: 2026-10-15 22:34:46

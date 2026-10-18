@@ -4,7 +4,7 @@ name: Wan Animate2.2主体替换MIX单独背景骚操作去油提高一致性加
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969355024180649986.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan Animate2.2主体替换MIX单独背景骚操作去油提高一致性加速版V1（无限时长）_1969355024180649986.json
 hash: 69712a7f799359ad
 coverage: 0.569767
 learned_at: 2026-10-15 22:43:46

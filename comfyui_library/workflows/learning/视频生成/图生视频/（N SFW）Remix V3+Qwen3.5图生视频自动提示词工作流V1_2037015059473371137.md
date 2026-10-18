@@ -4,7 +4,7 @@ name: （N SFW）Remix V3+Qwen3.5图生视频自动提示词工作流V1_20370150
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037015059473371137.json
+file: comfyui_library/workflows/视频生成/图生视频/（N SFW）Remix V3+Qwen3.5图生视频自动提示词工作流V1_2037015059473371137.json
 hash: f5f4af0e3910bf79
 coverage: 0.764706
 learned_at: 2026-10-15 22:35:54

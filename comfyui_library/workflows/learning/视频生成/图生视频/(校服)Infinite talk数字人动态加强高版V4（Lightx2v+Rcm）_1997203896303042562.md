@@ -4,7 +4,7 @@ name: (校服)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19972
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997203896303042562.json
+file: comfyui_library/workflows/视频生成/图生视频/(校服)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1997203896303042562.json
 hash: 9acca7e9e5d4626f
 coverage: 0.75
 learned_at: 2026-10-15 22:33:28

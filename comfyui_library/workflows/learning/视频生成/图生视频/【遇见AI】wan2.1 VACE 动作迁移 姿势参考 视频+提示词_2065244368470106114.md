@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+提示词_20652
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065244368470106114.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 VACE 动作迁移 姿势参考 视频+提示词_2065244368470106114.json
 hash: 76d85e85b79ece82
 coverage: 0.884615
 learned_at: 2026-10-15 22:39:37

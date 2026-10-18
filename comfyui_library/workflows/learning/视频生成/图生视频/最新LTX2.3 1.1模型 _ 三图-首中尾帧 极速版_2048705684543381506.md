@@ -4,7 +4,7 @@ name: 最新LTX2.3 1.1模型 _ 三图-首中尾帧 极速版_2048705684543381506
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048705684543381506.json
+file: comfyui_library/workflows/视频生成/图生视频/最新LTX2.3 1.1模型 _ 三图-首中尾帧 极速版_2048705684543381506.json
 hash: fd44aa806d886845
 coverage: 0.859375
 learned_at: 2026-10-15 22:37:11

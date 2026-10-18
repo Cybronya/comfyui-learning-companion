@@ -4,7 +4,7 @@ name: Wan2.2 14B+LightX2V 图生视频（工作室自用）_2027632357276131329.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027632357276131329.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B+LightX2V 图生视频（工作室自用）_2027632357276131329.json
 hash: e068d6e9cdb39d0c
 coverage: 0.92
 learned_at: 2026-10-15 22:35:17

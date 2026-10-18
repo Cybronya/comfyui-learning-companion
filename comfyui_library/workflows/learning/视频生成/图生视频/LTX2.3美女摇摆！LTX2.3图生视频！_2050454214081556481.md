@@ -4,7 +4,7 @@ name: LTX2.3美女摇摆！LTX2.3图生视频！_2050454214081556481.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050454214081556481.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3美女摇摆！LTX2.3图生视频！_2050454214081556481.json
 hash: b1bcb9ad2773b7a5
 coverage: 0.756757
 learned_at: 2026-10-15 22:37:18

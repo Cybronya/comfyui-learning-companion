@@ -4,7 +4,7 @@ name: wan2.2 rapid-aio-mega all in one图生视频+首尾帧【gen全能视频Si
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968298916649283585.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 rapid-aio-mega all in one图生视频+首尾帧【gen全能视频Si】_1968298916649283585.json
 hash: fed6284b38af15fc
 coverage: 0.941176
 learned_at: 2026-10-15 22:31:44

@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062101371284975617.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1首尾帧基础流_2062101371284975617.json
 hash: 347afde7aadeac8b
 coverage: 0.96
 learned_at: 2026-10-15 22:39:00

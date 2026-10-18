@@ -4,7 +4,7 @@ name: Wan2.2_14B_官方强推-图生视频（强烈推荐）_1956203344467558401
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956203344467558401.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_14B_官方强推-图生视频（强烈推荐）_1956203344467558401.json
 hash: e2eb45742fc55c7e
 coverage: 0.956522
 learned_at: 2026-10-15 22:31:12

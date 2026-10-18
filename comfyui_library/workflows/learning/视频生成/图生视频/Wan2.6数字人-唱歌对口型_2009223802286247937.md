@@ -4,7 +4,7 @@ name: Wan2.6数字人-唱歌对口型_2009223802286247937.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009223802286247937.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.6数字人-唱歌对口型_2009223802286247937.json
 hash: 58ed53c4b9d22dab
 coverage: 1
 learned_at: 2026-10-15 22:34:11

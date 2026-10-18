@@ -4,7 +4,7 @@ name: 多图融合生视频 FFGO Wan2.2_1990436665472802817.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990436665472802817.json
+file: comfyui_library/workflows/视频生成/图生视频/多图融合生视频 FFGO Wan2.2_1990436665472802817.json
 hash: 3bcc0d1cff5d53d6
 coverage: 0.735632
 learned_at: 2026-10-15 22:33:10

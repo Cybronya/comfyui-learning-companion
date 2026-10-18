@@ -1,0 +1,176 @@
+---
+key: 视频生成/图生视频/Seedance2.5文生视频工作流｜视频运镜高质量生成_2097809713382649858.json
+name: Seedance2.5文生视频工作流｜视频运镜高质量生成_2097809713382649858
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.5文生视频工作流｜视频运镜高质量生成_2097809713382649858.json
+hash: 651f8697e9fa040e
+coverage: 0.881356
+learned_at: 2026-10-17 01:28:23
+nodes: [BasicGuider, MiniMaxH3DualClockSamplerT8, BasicGuider, MiniMaxH3DualClockSamplerT8, SamplerCustomAdvanced, MiniMaxH3AVDecodeT8, RandomNoise, ComfyMathExpression, MiniMaxH3MemoryEfficientSageAttentionPatch, ComfyMathExpression, MiniMaxH3MemoryEfficientSageAttentionPatch, MiniMaxH3DualClockSamplerT8, BasicGuider, RandomNoise, ComfyMathExpression, MiniMaxH3AVDecodeT8, UNETLoader, VAELoader, VAELoader, CLIPLoader, MiniMaxH3TurboLoRA, ResolutionSelector, ComfyMathExpression, PrimitiveFloat, BasicGuider, MiniMaxH3DualClockSamplerT8, LoadImage, LoadImage, RandomNoise, SamplerCustomAdvanced, MiniMaxH3AVDecodeT8, LoadImage, LoadImage, MiniMaxH3AudioConditioningT8, LoadImage, VHS_VideoCombine, MiniMaxH3MemoryEfficientSageAttentionPatch, PrimitiveStringMultiline, LoadImage, RandomNoise, ResolutionSelector, PrimitiveFloat, MiniMaxH3AVDecodeT8, SamplerCustomAdvanced, VHS_VideoCombine, MiniMaxH3MemoryEfficientSageAttentionPatch, LoadImage, PrimitiveFloat, MiniMaxH3AudioConditioningT8, LoadImage, ResolutionSelector, PreviewImage, SamplerCustomAdvanced, PrimitiveFloat, ResolutionSelector, MiniMaxH3AudioConditioningT8, CLIPLoader, VAELoader, VAELoader, PrimitiveStringMultiline, UNETLoader, LoadImage, LoadImage, LoadImage, LoadImage, MiniMaxH3AudioConditioningT8, LoadImage, LoadImage, LoadImage, MiniMaxH3TurboLoRA, CLIPLoader, VAELoader, VAELoader, UNETLoader, LoadImage, LoadImage, LayerUtility: ImageScaleByAspectRatio V2, PrimitiveStringMultiline, SaveImage, SaveImage, PrimitiveStringMultiline, CLIPLoader, VAELoader, VAELoader, LoraLoaderBypassModelOnly, LoraLoaderBypassModelOnly, UNETLoader, LoadImage, Fast Groups Bypasser (rgthree), 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 视频生成/图生视频/Seedance2.5文生视频工作流｜视频运镜高质量生成_2097809713382649858.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/Seedance2.5文生视频工作流｜视频运镜高质量生成_2097809713382649858.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（118 个）：
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `MiniMaxH3AVDecodeT8`
+- `RandomNoise`
+- `ComfyMathExpression`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `ComfyMathExpression`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `BasicGuider`
+- `RandomNoise`
+- `ComfyMathExpression`
+- `MiniMaxH3AVDecodeT8`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `VAELoader`
+- `CLIPLoader`
+- `MiniMaxH3TurboLoRA`
+- `ResolutionSelector`
+- `ComfyMathExpression`
+- `PrimitiveFloat`
+- `BasicGuider`
+- `MiniMaxH3DualClockSamplerT8` ★核心
+- `LoadImage`
+- `LoadImage`
+- `RandomNoise`
+- `SamplerCustomAdvanced` ★核心
+- `MiniMaxH3AVDecodeT8`
+- `LoadImage`
+- `LoadImage`
+- `MiniMaxH3AudioConditioningT8`
+- `LoadImage`
+- `VHS_VideoCombine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `PrimitiveStringMultiline`
+- `LoadImage`
+- `RandomNoise`
+- `ResolutionSelector`
+- `PrimitiveFloat`
+- `MiniMaxH3AVDecodeT8`
+- `SamplerCustomAdvanced` ★核心
+- `VHS_VideoCombine`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `LoadImage`
+- `PrimitiveFloat`
+- `MiniMaxH3AudioConditioningT8`
+- `LoadImage`
+- `ResolutionSelector`
+- `PreviewImage`
+- `SamplerCustomAdvanced` ★核心
+- `PrimitiveFloat`
+- `ResolutionSelector`
+- `MiniMaxH3AudioConditioningT8`
+- `CLIPLoader`
+- `VAELoader`
+- `VAELoader`
+- `PrimitiveStringMultiline`
+- `UNETLoader` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `MiniMaxH3AudioConditioningT8`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `MiniMaxH3TurboLoRA`
+- `CLIPLoader`
+- `VAELoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PrimitiveStringMultiline`
+- `SaveImage`
+- `SaveImage`
+- `PrimitiveStringMultiline`
+- `CLIPLoader`
+- `VAELoader`
+- `VAELoader`
+- `LoraLoaderBypassModelOnly` ★核心
+- `LoraLoaderBypassModelOnly` ★核心
+- `UNETLoader` ★核心
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `JjkText`
+- `EmptyLatentImage` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `Note`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **88%**（104/118）
+
+**有卡**：`BasicGuider`、`MiniMaxH3DualClockSamplerT8`、`SamplerCustomAdvanced`、`MiniMaxH3AVDecodeT8`、`RandomNoise`、`ComfyMathExpression`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`UNETLoader`、`VAELoader`、`CLIPLoader`、`MiniMaxH3TurboLoRA`、`ResolutionSelector`、`LoadImage`、`MiniMaxH3AudioConditioningT8`、`VHS_VideoCombine`、`LayerUtility: ImageScaleByAspectRatio V2`、`SaveImage`、`LoraLoaderBypassModelOnly`、`LoraLoaderModelOnly`、`KSampler`、`CLIPTextEncode`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、EmptyLatentImage、ResolutionSelector
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -4,7 +4,7 @@ name: Wan2.2 Smooth Mix首尾帧视频（高动态）_2017190232734568450.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017190232734568450.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Smooth Mix首尾帧视频（高动态）_2017190232734568450.json
 hash: fa091100bc09115a
 coverage: 0.773585
 learned_at: 2026-10-15 22:34:45

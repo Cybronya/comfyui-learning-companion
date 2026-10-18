@@ -4,7 +4,7 @@ name: Wan2.2-Animate-图生视频（人物替换+长视频）_197519173217223065
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975191732172230658.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-图生视频（人物替换+长视频）_1975191732172230658.json
 hash: 98cccf07a31ff1be
 coverage: 0.592233
 learned_at: 2026-10-15 22:32:07

@@ -4,7 +4,7 @@ name: wan2.2 人物动态海报视频 - KJ加速优化版_1955449911829565441.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955449911829565441.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 人物动态海报视频 - KJ加速优化版_1955449911829565441.json
 hash: f1fd9e755a02e3fa
 coverage: 0.8125
 learned_at: 2026-10-15 22:31:08

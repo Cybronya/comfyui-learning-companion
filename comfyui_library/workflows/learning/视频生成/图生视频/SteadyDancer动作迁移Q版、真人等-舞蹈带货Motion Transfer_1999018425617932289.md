@@ -4,7 +4,7 @@ name: SteadyDancer动作迁移Q版、真人等-舞蹈带货Motion Transfer_19990
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999018425617932289.json
+file: comfyui_library/workflows/视频生成/图生视频/SteadyDancer动作迁移Q版、真人等-舞蹈带货Motion Transfer_1999018425617932289.json
 hash: cac6c34121611c90
 coverage: 0.539474
 learned_at: 2026-10-15 22:33:35

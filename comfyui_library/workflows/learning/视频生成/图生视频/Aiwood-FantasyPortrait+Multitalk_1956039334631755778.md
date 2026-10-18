@@ -4,7 +4,7 @@ name: Aiwood-FantasyPortrait+Multitalk_1956039334631755778.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956039334631755778.json
+file: comfyui_library/workflows/视频生成/图生视频/Aiwood-FantasyPortrait+Multitalk_1956039334631755778.json
 hash: 64b5b2d5428cd397
 coverage: 0.777778
 learned_at: 2026-10-15 22:31:11

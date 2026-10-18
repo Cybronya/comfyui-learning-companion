@@ -4,7 +4,7 @@ name: LTX2.3-transition-lora-丝滑转场-首尾帧视频-自动提示词_203715
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037153504921391105.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-transition-lora-丝滑转场-首尾帧视频-自动提示词_2037153504921391105.json
 hash: cb6a30923a30b41e
 coverage: 0.915254
 learned_at: 2026-10-15 22:35:55

@@ -4,7 +4,7 @@ name: 迄今超强高质量画音同步LTX2.3低显存提速版图生视频上�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1959793923826855938.json
+file: comfyui_library/workflows/视频生成/图生视频/迄今超强高质量画音同步LTX2.3低显存提速版图生视频上传多分镜图制作万物数字人（无限时长）可超长MV制作循环工作流_1959793923826855938.json
 hash: 47f8591c40a05b9d
 coverage: 0.512821
 learned_at: 2026-10-15 22:31:24

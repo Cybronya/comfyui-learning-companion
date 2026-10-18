@@ -4,7 +4,7 @@ name: （sd2.0平替）Bernini 视频编辑高质量加速优化版V3_2061857100
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061857100334194689.json
+file: comfyui_library/workflows/视频生成/图生视频/（sd2.0平替）Bernini 视频编辑高质量加速优化版V3_2061857100334194689.json
 hash: 44e900b19b24dc73
 coverage: 0.767442
 learned_at: 2026-10-15 22:38:57

@@ -4,7 +4,7 @@ name: 【电商直播带货】模特电商产品介绍 WAN2.2--图生视频（�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986614260161802241.json
+file: comfyui_library/workflows/视频生成/图生视频/【电商直播带货】模特电商产品介绍 WAN2.2--图生视频（超清极速版）上传图像 描述提示词 选择时_1986614260161802241.json
 hash: 5a0e7f1a853f861c
 coverage: 0.904762
 learned_at: 2026-10-15 22:32:55

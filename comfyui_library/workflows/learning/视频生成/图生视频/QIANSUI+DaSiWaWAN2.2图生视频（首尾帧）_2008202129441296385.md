@@ -4,7 +4,7 @@ name: QIANSUI+DaSiWaWAN2.2图生视频（首尾帧）_2008202129441296385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008202129441296385.json
+file: comfyui_library/workflows/视频生成/图生视频/QIANSUI+DaSiWaWAN2.2图生视频（首尾帧）_2008202129441296385.json
 hash: 9b4eaab44eca1428
 coverage: 0.85
 learned_at: 2026-10-15 22:34:06

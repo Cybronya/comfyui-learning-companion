@@ -4,7 +4,7 @@ name: （4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976156125466902529.json
+file: comfyui_library/workflows/视频生成/图生视频/（4+4-光鸟）KJ版Wan2.2优调版图生视频V1_1976156125466902529.json
 hash: 7277938c727ce35a
 coverage: 0.886364
 learned_at: 2026-10-15 22:32:10

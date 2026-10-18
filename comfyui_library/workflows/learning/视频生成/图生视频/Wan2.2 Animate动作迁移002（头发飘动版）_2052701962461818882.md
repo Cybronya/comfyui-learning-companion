@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移002（头发飘动版）_2052701962461818882.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052701962461818882.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移002（头发飘动版）_2052701962461818882.json
 hash: 5c629bae186cbe39
 coverage: 0.515528
 learned_at: 2026-10-15 22:37:31

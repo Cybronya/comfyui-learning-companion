@@ -4,7 +4,7 @@ name: Kling_O1_VideoEdit_v1.0_2033804143860649986.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033804143860649986.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_O1_VideoEdit_v1.0_2033804143860649986.json
 hash: 03339f7a6f2b39b1
 coverage: 1
 learned_at: 2026-10-15 22:35:41

@@ -4,7 +4,7 @@ name: ViduStartEndToVideoQ3Turbo_2038488942336544769.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038488942336544769.json
+file: comfyui_library/workflows/视频生成/图生视频/ViduStartEndToVideoQ3Turbo_2038488942336544769.json
 hash: 13c7d8ef90b22efd
 coverage: 1
 learned_at: 2026-10-15 22:36:03

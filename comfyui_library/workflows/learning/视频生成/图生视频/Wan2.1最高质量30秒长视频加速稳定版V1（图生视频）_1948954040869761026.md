@@ -4,7 +4,7 @@ name: Wan2.1最高质量30秒长视频加速稳定版V1（图生视频）_194895
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948954040869761026.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1最高质量30秒长视频加速稳定版V1（图生视频）_1948954040869761026.json
 hash: d4a55ed8564ca861
 coverage: 0.851852
 learned_at: 2026-10-15 22:30:48

@@ -4,7 +4,7 @@ name: 通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1904530272136704001.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相WAN2.1首尾帧过度视频-StarAI_1904530272136704001.json
 hash: 4a5a65e17e751d1b
 coverage: 0.627907
 learned_at: 2026-10-15 22:29:25

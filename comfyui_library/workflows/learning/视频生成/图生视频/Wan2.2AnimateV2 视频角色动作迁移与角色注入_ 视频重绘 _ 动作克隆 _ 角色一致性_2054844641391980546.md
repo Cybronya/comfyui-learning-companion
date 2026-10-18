@@ -4,7 +4,7 @@ name: Wan2.2AnimateV2 视频角色动作迁移与角色注入_ 视频重绘 _ �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054844641391980546.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2AnimateV2 视频角色动作迁移与角色注入_ 视频重绘 _ 动作克隆 _ 角色一致性_2054844641391980546.json
 hash: a0d806bb3c8c520a
 coverage: 0.430303
 learned_at: 2026-10-15 22:37:52

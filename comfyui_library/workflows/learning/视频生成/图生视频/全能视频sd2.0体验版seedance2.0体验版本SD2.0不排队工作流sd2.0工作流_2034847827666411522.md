@@ -4,7 +4,7 @@ name: 全能视频sd2.0体验版seedance2.0体验版本SD2.0不排队工作流sd
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034847827666411522.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频sd2.0体验版seedance2.0体验版本SD2.0不排队工作流sd2.0工作流_2034847827666411522.json
 hash: aa61e71ac1886977
 coverage: 1
 learned_at: 2026-10-15 22:35:46

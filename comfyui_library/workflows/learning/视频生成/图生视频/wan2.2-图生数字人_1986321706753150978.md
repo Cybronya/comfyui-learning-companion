@@ -4,7 +4,7 @@ name: wan2.2-图生数字人_1986321706753150978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986321706753150978.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-图生数字人_1986321706753150978.json
 hash: c4ddb34285d60420
 coverage: 0.979592
 learned_at: 2026-10-15 22:32:54

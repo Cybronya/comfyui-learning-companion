@@ -4,7 +4,7 @@ name: LTX2.3极速文_图生视频脱口秀爆款工作流_2070813395804319745.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070813395804319745.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3极速文_图生视频脱口秀爆款工作流_2070813395804319745.json
 hash: 8f8aa041cabdd93a
 coverage: 0.945205
 learned_at: 2026-10-15 22:40:42

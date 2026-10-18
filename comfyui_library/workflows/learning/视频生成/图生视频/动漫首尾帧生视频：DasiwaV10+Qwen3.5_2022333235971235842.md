@@ -4,7 +4,7 @@ name: 动漫首尾帧生视频：DasiwaV10+Qwen3.5_2022333235971235842.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2022333235971235842.json
+file: comfyui_library/workflows/视频生成/图生视频/动漫首尾帧生视频：DasiwaV10+Qwen3.5_2022333235971235842.json
 hash: dc922587be2187a8
 coverage: 0.402597
 learned_at: 2026-10-15 22:35:10

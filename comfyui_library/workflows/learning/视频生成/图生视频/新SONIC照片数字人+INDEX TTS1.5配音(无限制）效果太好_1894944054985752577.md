@@ -4,7 +4,7 @@ name: 新SONIC照片数字人+INDEX TTS1.5配音(无限制）效果太好_189494
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894944054985752577.json
+file: comfyui_library/workflows/视频生成/图生视频/新SONIC照片数字人+INDEX TTS1.5配音(无限制）效果太好_1894944054985752577.json
 hash: a583b67af798bac2
 coverage: 0.818182
 learned_at: 2026-10-15 22:29:16

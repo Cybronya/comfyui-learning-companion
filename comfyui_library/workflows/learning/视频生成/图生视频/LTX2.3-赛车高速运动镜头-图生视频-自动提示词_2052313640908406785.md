@@ -4,7 +4,7 @@ name: LTX2.3-赛车高速运动镜头-图生视频-自动提示词_2052313640908
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052313640908406785.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-赛车高速运动镜头-图生视频-自动提示词_2052313640908406785.json
 hash: 19a9e128589fc57c
 coverage: 0.9
 learned_at: 2026-10-15 22:37:28

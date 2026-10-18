@@ -4,7 +4,7 @@ name: video_wan2_2_with_skill_prompt_2013644132241121282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013644132241121282.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_with_skill_prompt_2013644132241121282.json
 hash: 5d9c431628e9c960
 coverage: 0.490566
 learned_at: 2026-10-15 22:34:32

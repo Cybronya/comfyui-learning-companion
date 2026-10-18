@@ -4,7 +4,7 @@ name: Wan2.1最新FusionX LORA  2分钟生视频_1935600068689068033.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1935600068689068033.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1最新FusionX LORA  2分钟生视频_1935600068689068033.json
 hash: 3f331a9cb3adacb7
 coverage: 1
 learned_at: 2026-10-15 22:43:29

@@ -4,7 +4,7 @@ name: 文生视频：MoviiGen 1.1模型生成电影画质视频_1929507687522844
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1929507687522844674.json
+file: comfyui_library/workflows/视频生成/文生视频/文生视频：MoviiGen 1.1模型生成电影画质视频_1929507687522844674.json
 hash: 5372cee95c2cf9cb
 coverage: 1
 learned_at: 2026-10-15 22:43:25

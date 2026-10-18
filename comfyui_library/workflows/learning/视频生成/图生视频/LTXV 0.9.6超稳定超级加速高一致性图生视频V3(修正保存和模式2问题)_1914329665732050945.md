@@ -4,7 +4,7 @@ name: LTXV 0.9.6超稳定超级加速高一致性图生视频V3(修正保存和�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914329665732050945.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV 0.9.6超稳定超级加速高一致性图生视频V3(修正保存和模式2问题)_1914329665732050945.json
 hash: 9b5344499716d92b
 coverage: 0.717391
 learned_at: 2026-10-15 22:29:36

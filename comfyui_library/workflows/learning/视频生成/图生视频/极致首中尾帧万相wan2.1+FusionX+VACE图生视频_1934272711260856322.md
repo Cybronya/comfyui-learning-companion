@@ -4,7 +4,7 @@ name: 极致首中尾帧万相wan2.1+FusionX+VACE图生视频_193427271126085632
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934272711260856322.json
+file: comfyui_library/workflows/视频生成/图生视频/极致首中尾帧万相wan2.1+FusionX+VACE图生视频_1934272711260856322.json
 hash: 1be0c960d13d551f
 coverage: 0.975
 learned_at: 2026-10-15 22:30:17

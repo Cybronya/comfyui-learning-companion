@@ -4,7 +4,7 @@ name: LTX2.3-MSR全能参考升级-支持自定义音频_2068240964862435329.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068240964862435329.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR全能参考升级-支持自定义音频_2068240964862435329.json
 hash: 304031d77667318f
 coverage: 0.928571
 learned_at: 2026-10-15 22:40:17

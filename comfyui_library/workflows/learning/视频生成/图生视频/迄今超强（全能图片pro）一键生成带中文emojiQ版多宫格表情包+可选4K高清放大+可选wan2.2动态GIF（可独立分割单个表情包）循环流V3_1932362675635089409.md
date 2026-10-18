@@ -4,7 +4,7 @@ name: 迄今超强（全能图片pro）一键生成带中文emojiQ版多宫格�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1932362675635089409.json
+file: comfyui_library/workflows/视频生成/图生视频/迄今超强（全能图片pro）一键生成带中文emojiQ版多宫格表情包+可选4K高清放大+可选wan2.2动态GIF（可独立分割单个表情包）循环流V3_1932362675635089409.json
 hash: e0fa127288cfcce6
 coverage: 0.642202
 learned_at: 2026-10-15 22:30:11

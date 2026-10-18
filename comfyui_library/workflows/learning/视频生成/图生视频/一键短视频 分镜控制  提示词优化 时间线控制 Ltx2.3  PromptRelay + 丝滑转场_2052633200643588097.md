@@ -4,7 +4,7 @@ name: 一键短视频 分镜控制  提示词优化 时间线控制 Ltx2.3  Prom
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052633200643588097.json
+file: comfyui_library/workflows/视频生成/图生视频/一键短视频 分镜控制  提示词优化 时间线控制 Ltx2.3  PromptRelay + 丝滑转场_2052633200643588097.json
 hash: 5418277f142d6310
 coverage: 0.578313
 learned_at: 2026-10-15 22:37:31

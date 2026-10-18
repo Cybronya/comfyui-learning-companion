@@ -4,7 +4,7 @@ name: SVI 2.0 Pro-Wan 2.2丝滑的长视频_2008463179042529282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008463179042529282.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0 Pro-Wan 2.2丝滑的长视频_2008463179042529282.json
 hash: 46ede887d04aee28
 coverage: 0.52381
 learned_at: 2026-10-15 22:34:07

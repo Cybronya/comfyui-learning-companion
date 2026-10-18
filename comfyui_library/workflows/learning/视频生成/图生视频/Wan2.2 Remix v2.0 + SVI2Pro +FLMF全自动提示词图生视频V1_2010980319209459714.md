@@ -4,7 +4,7 @@ name: Wan2.2 Remix v2.0 + SVI2Pro +FLMF全自动提示词图生视频V1_20109803
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010980319209459714.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix v2.0 + SVI2Pro +FLMF全自动提示词图生视频V1_2010980319209459714.json
 hash: fc999488c93f9f67
 coverage: 0.283654
 learned_at: 2026-10-15 22:34:20

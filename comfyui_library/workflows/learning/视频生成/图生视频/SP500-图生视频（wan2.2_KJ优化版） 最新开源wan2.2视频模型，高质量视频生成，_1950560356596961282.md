@@ -4,7 +4,7 @@ name: SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950560356596961282.json
+file: comfyui_library/workflows/视频生成/图生视频/SP500-图生视频（wan2.2_KJ优化版） 最新开源wan2.2视频模型，高质量视频生成，_1950560356596961282.json
 hash: 3d63730bfe286882
 coverage: 0.673469
 learned_at: 2026-10-15 22:30:55

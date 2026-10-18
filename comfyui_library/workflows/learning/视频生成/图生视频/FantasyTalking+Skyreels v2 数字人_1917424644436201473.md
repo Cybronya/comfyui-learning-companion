@@ -4,7 +4,7 @@ name: FantasyTalking+Skyreels v2 数字人_1917424644436201473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917424644436201473.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyTalking+Skyreels v2 数字人_1917424644436201473.json
 hash: 9884cccf869a7b4b
 coverage: 0.864865
 learned_at: 2026-10-15 22:29:40

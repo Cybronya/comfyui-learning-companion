@@ -4,7 +4,7 @@ name: Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951969407968948225.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_I2V_KJ图生视频+智能优化+加速版Borges_1951969407968948225.json
 hash: b05bc0e954e1d19d
 coverage: 1
 learned_at: 2026-10-15 22:30:59

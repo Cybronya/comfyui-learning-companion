@@ -4,7 +4,7 @@ name: Wan2.1 T2V 文生视频_1930553645908021250.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1930553645908021250.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 T2V 文生视频_1930553645908021250.json
 hash: babbaa990de6ca6d
 coverage: 1
 learned_at: 2026-10-15 22:43:26

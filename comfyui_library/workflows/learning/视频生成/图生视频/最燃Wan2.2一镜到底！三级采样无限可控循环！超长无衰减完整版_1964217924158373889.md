@@ -4,7 +4,7 @@ name: 最燃Wan2.2一镜到底！三级采样无限可控循环！超长无衰�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964217924158373889.json
+file: comfyui_library/workflows/视频生成/图生视频/最燃Wan2.2一镜到底！三级采样无限可控循环！超长无衰减完整版_1964217924158373889.json
 hash: 0eab6ba88566fffd
 coverage: 0.457143
 learned_at: 2026-10-15 22:31:34

@@ -4,7 +4,7 @@ name: LTX_Director_2_Workflow_iclora_edit_video视频编辑_2072255653216874498.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072255653216874498.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX_Director_2_Workflow_iclora_edit_video视频编辑_2072255653216874498.json
 hash: b652d32c4c0e6114
 coverage: 0.970588
 learned_at: 2026-10-15 22:40:54

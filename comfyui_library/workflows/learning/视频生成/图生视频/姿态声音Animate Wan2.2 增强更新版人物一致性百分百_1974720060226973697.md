@@ -4,7 +4,7 @@ name: 姿态声音Animate Wan2.2 增强更新版人物一致性百分百_1974720
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1974720060226973697.json
+file: comfyui_library/workflows/视频生成/图生视频/姿态声音Animate Wan2.2 增强更新版人物一致性百分百_1974720060226973697.json
 hash: e1408fff3d97e292
 coverage: 0.666667
 learned_at: 2026-10-15 22:32:06

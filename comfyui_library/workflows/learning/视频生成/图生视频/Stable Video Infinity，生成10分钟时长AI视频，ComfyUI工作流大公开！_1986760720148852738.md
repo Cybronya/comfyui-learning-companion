@@ -4,7 +4,7 @@ name: Stable Video Infinity，生成10分钟时长AI视频，ComfyUI工作流大
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986760720148852738.json
+file: comfyui_library/workflows/视频生成/图生视频/Stable Video Infinity，生成10分钟时长AI视频，ComfyUI工作流大公开！_1986760720148852738.json
 hash: efddad19fd87f53a
 coverage: 0.641566
 learned_at: 2026-10-15 22:32:57

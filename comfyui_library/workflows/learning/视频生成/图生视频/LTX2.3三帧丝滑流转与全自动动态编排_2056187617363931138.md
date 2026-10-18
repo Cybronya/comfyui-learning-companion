@@ -4,7 +4,7 @@ name: LTX2.3三帧丝滑流转与全自动动态编排_2056187617363931138.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056187617363931138.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3三帧丝滑流转与全自动动态编排_2056187617363931138.json
 hash: 9d0f2734f15e3ab4
 coverage: 0.807229
 learned_at: 2026-10-15 22:38:01

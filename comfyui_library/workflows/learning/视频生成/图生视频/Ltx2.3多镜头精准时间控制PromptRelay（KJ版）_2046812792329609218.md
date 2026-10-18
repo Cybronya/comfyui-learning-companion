@@ -4,7 +4,7 @@ name: Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_204681279232960921
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046812792329609218.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3多镜头精准时间控制PromptRelay（KJ版）_2046812792329609218.json
 hash: 38abbe668a46f240
 coverage: 0.731707
 learned_at: 2026-10-15 22:37:00

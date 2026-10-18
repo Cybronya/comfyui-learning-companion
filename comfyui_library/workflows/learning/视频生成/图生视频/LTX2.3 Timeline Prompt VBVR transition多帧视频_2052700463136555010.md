@@ -4,7 +4,7 @@ name: LTX2.3 Timeline Prompt VBVR transition多帧视频_2052700463136555010.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052700463136555010.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Timeline Prompt VBVR transition多帧视频_2052700463136555010.json
 hash: ff4e364a575e2727
 coverage: 0.462857
 learned_at: 2026-10-15 22:37:31

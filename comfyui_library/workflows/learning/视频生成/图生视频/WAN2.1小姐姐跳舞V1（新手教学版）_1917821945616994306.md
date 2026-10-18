@@ -4,7 +4,7 @@ name: WAN2.1小姐姐跳舞V1（新手教学版）_1917821945616994306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917821945616994306.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1小姐姐跳舞V1（新手教学版）_1917821945616994306.json
 hash: 072a5e93e9ab5a4c
 coverage: 0.692308
 learned_at: 2026-10-15 22:29:40

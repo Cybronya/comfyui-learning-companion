@@ -4,7 +4,7 @@ name: Wan2.2_14B_图生视频 (8步加速) + 提示词扩写_1952277132212948994
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952277132212948994.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_14B_图生视频 (8步加速) + 提示词扩写_1952277132212948994.json
 hash: 258519d5ead7a8c0
 coverage: 1
 learned_at: 2026-10-15 22:31:00

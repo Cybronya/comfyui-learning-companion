@@ -4,7 +4,7 @@ name: Ltx2.3-Prompt Relay+Sulphur+VBVR-人物表情更丰富-四图分镜生视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057471351287537666.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3-Prompt Relay+Sulphur+VBVR-人物表情更丰富-四图分镜生视频加音频对口型_2057471351287537666.json
 hash: 78d1f75c61bab650
 coverage: 0.465116
 learned_at: 2026-10-15 22:38:13

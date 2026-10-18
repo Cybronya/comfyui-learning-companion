@@ -4,7 +4,7 @@ name: 极速生成---图生视频LTX2.3 1080P 50帧率图生视频_2057730859171
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057730859171663873.json
+file: comfyui_library/workflows/视频生成/图生视频/极速生成---图生视频LTX2.3 1080P 50帧率图生视频_2057730859171663873.json
 hash: cd9df04d904c0094
 coverage: 0.923077
 learned_at: 2026-10-15 22:38:15

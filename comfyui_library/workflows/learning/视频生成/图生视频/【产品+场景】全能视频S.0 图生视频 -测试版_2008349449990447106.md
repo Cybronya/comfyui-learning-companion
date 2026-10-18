@@ -4,7 +4,7 @@ name: 【产品+场景】全能视频S.0 图生视频 -测试版_200834944999044
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008349449990447106.json
+file: comfyui_library/workflows/视频生成/图生视频/【产品+场景】全能视频S.0 图生视频 -测试版_2008349449990447106.json
 hash: 1f59a74d8bb83392
 coverage: 0.636364
 learned_at: 2026-10-15 22:34:06

@@ -4,7 +4,7 @@ name: SkyreelsV3ReferenceToVideo_2038487920859942914.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038487920859942914.json
+file: comfyui_library/workflows/视频生成/图生视频/SkyreelsV3ReferenceToVideo_2038487920859942914.json
 hash: b6c2595ab7d37156
 coverage: 1
 learned_at: 2026-10-15 22:36:03

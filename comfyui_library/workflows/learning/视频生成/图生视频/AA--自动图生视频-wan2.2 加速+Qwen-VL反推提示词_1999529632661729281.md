@@ -4,7 +4,7 @@ name: AA--自动图生视频-wan2.2 加速+Qwen-VL反推提示词_19995296326617
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999529632661729281.json
+file: comfyui_library/workflows/视频生成/图生视频/AA--自动图生视频-wan2.2 加速+Qwen-VL反推提示词_1999529632661729281.json
 hash: e6d7d5b854cebf1a
 coverage: 0.8
 learned_at: 2026-10-15 22:33:37

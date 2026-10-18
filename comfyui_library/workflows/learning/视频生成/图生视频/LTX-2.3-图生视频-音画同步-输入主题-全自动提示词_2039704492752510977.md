@@ -4,7 +4,7 @@ name: LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_20397044
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039704492752510977.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-图生视频-音画同步-输入主题-全自动提示词_2039704492752510977.json
 hash: 686353f843ecfa61
 coverage: 0.925926
 learned_at: 2026-10-15 22:36:10

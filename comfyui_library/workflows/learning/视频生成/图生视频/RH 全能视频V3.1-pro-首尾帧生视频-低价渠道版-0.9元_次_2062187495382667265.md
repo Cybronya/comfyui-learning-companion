@@ -4,7 +4,7 @@ name: RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062187495382667265.json
+file: comfyui_library/workflows/视频生成/图生视频/RH 全能视频V3.1-pro-首尾帧生视频-低价渠道版-0.9元_次_2062187495382667265.json
 hash: f07c62f06f17e00e
 coverage: 1
 learned_at: 2026-10-15 22:39:01

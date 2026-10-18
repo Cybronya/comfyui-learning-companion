@@ -4,7 +4,7 @@ name: Wan2.2 分镜版本 VBVR lora逻辑推理增强PLUS版_2034133687608025089
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034133687608025089.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 分镜版本 VBVR lora逻辑推理增强PLUS版_2034133687608025089.json
 hash: dd524e524f374d65
 coverage: 0.95
 learned_at: 2026-10-15 22:35:43

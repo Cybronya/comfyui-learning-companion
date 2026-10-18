@@ -4,7 +4,7 @@ name: Wan2.2 - I2V - rapid-aio AI_2009175166516989953.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009175166516989953.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 - I2V - rapid-aio AI_2009175166516989953.json
 hash: 8065237ee83593ce
 coverage: 1
 learned_at: 2026-10-15 22:34:11

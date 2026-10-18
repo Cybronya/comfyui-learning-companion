@@ -4,7 +4,7 @@ name: Wan2.1 AI视频 首尾帧 丝滑动画过渡 工作流_1985915775540178945
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985915775540178945.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 AI视频 首尾帧 丝滑动画过渡 工作流_1985915775540178945.json
 hash: 92b61b9d88c1fc30
 coverage: 0.847826
 learned_at: 2026-10-15 22:32:53

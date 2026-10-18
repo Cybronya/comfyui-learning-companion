@@ -4,7 +4,7 @@ name: (牛仔衣)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984541781138292738.json
+file: comfyui_library/workflows/视频生成/图生视频/(牛仔衣)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注意力机制）_1984541781138292738.json
 hash: 555338f7ad5a37b8
 coverage: 0.771429
 learned_at: 2026-10-15 22:32:49

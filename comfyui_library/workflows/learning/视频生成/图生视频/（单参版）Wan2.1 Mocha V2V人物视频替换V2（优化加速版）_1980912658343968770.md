@@ -4,7 +4,7 @@ name: （单参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980912658343968770.json
+file: comfyui_library/workflows/视频生成/图生视频/（单参版）Wan2.1 Mocha V2V人物视频替换V2（优化加速版）_1980912658343968770.json
 hash: b3101413f2b7dc6f
 coverage: 0.702128
 learned_at: 2026-10-15 22:32:35

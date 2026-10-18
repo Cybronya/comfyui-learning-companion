@@ -4,7 +4,7 @@ name: wan2.1万象图生视频跳舞大摆锤+lora+放大补帧_1911803069842292
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911803069842292737.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1万象图生视频跳舞大摆锤+lora+放大补帧_1911803069842292737.json
 hash: 6aec3ac485443ba6
 coverage: 0.947368
 learned_at: 2026-10-15 22:29:31

@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 文生视频SIMGA精准调度HPS低噪加速版V1_1964929046
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1964929046893182977.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2 文生视频SIMGA精准调度HPS低噪加速版V1_1964929046893182977.json
 hash: a98b52bb539985e8
 coverage: 0.837838
 learned_at: 2026-10-15 22:43:44

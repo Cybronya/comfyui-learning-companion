@@ -4,7 +4,7 @@ name: wan2.1+stand-in视频人像换脸_1957279872316010498.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957279872316010498.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1+stand-in视频人像换脸_1957279872316010498.json
 hash: afed7195372bcf5e
 coverage: 0.574468
 learned_at: 2026-10-15 22:31:16

@@ -4,7 +4,7 @@ name: Wan2.1 愤怒人物表情特效｜i2V_1911801404531638273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911801404531638273.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 愤怒人物表情特效｜i2V_1911801404531638273.json
 hash: fd80b068d0bdc623
 coverage: 1
 learned_at: 2026-10-15 22:29:31

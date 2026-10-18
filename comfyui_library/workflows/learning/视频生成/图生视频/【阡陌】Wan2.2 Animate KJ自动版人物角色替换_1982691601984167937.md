@@ -4,7 +4,7 @@ name: 【阡陌】Wan2.2 Animate KJ自动版人物角色替换_19826916019841679
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982691601984167937.json
+file: comfyui_library/workflows/视频生成/图生视频/【阡陌】Wan2.2 Animate KJ自动版人物角色替换_1982691601984167937.json
 hash: 09a941a7022b862f
 coverage: 0.447368
 learned_at: 2026-10-15 22:32:42

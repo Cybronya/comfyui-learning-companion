@@ -4,7 +4,7 @@ name: 短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034612488255315970.json
+file: comfyui_library/workflows/视频生成/图生视频/短剧工作流！FishAudio S2 + LTX-2.3生产力版_2034612488255315970.json
 hash: 921441d607519c28
 coverage: 0.859649
 learned_at: 2026-10-15 22:35:45

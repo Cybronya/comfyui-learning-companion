@@ -4,7 +4,7 @@ name: LTX-2 Image2Video Heartmula 图像转视频 音频转录 - 拆分子图版
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014681763813007362.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2 Image2Video Heartmula 图像转视频 音频转录 - 拆分子图版高级工作流_2014681763813007362.json
 hash: 32db739c6a0d7e09
 coverage: 0.554545
 learned_at: 2026-10-15 22:34:36

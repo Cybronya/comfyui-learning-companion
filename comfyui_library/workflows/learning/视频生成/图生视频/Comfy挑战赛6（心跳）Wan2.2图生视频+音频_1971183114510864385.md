@@ -4,7 +4,7 @@ name: Comfy挑战赛6（心跳）Wan2.2图生视频+音频_1971183114510864385.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971183114510864385.json
+file: comfyui_library/workflows/视频生成/图生视频/Comfy挑战赛6（心跳）Wan2.2图生视频+音频_1971183114510864385.json
 hash: a721b3301728113f
 coverage: 0.886364
 learned_at: 2026-10-15 22:31:55

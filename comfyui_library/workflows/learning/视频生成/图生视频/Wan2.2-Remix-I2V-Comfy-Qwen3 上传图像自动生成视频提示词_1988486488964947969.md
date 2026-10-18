@@ -4,7 +4,7 @@ name: Wan2.2-Remix-I2V-Comfy-Qwen3 上传图像自动生成视频提示词_19884
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988486488964947969.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Remix-I2V-Comfy-Qwen3 上传图像自动生成视频提示词_1988486488964947969.json
 hash: 8a1c9f253a4a3ef8
 coverage: 0.771429
 learned_at: 2026-10-15 22:33:03

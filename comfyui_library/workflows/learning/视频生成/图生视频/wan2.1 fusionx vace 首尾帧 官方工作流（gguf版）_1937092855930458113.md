@@ -4,7 +4,7 @@ name: wan2.1 fusionx vace 首尾帧 官方工作流（gguf版）_193709285593045
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937092855930458113.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 fusionx vace 首尾帧 官方工作流（gguf版）_1937092855930458113.json
 hash: 0723afdeef738de6
 coverage: 0.882353
 learned_at: 2026-10-15 22:30:28

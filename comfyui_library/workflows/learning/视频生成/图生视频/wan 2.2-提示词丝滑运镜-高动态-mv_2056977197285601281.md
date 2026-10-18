@@ -4,7 +4,7 @@ name: wan 2.2-提示词丝滑运镜-高动态-mv_2056977197285601281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056977197285601281.json
+file: comfyui_library/workflows/视频生成/图生视频/wan 2.2-提示词丝滑运镜-高动态-mv_2056977197285601281.json
 hash: 2ec152314a524ab0
 coverage: 0.607595
 learned_at: 2026-10-15 22:38:07

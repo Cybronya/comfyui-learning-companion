@@ -4,7 +4,7 @@ name: 超优质LTX2.0-首尾帧视频，速度快，效果好_201163918488424448
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011639184884244481.json
+file: comfyui_library/workflows/视频生成/图生视频/超优质LTX2.0-首尾帧视频，速度快，效果好_2011639184884244481.json
 hash: 0b4a2a0bbed9fb3c
 coverage: 0.729412
 learned_at: 2026-10-15 22:34:24

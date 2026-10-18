@@ -4,7 +4,7 @@ name: 【Wan2.1系列】TeaCache视频生成加速外挂_1916742861977751553.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1916742861977751553.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1系列】TeaCache视频生成加速外挂_1916742861977751553.json
 hash: 9fce1a1956d807cb
 coverage: 0.95122
 learned_at: 2026-10-15 22:29:39

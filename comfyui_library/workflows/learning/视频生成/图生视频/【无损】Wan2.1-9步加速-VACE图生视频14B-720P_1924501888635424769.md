@@ -4,7 +4,7 @@ name: 【无损】Wan2.1-9步加速-VACE图生视频14B-720P_1924501888635424769
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1924501888635424769.json
+file: comfyui_library/workflows/视频生成/图生视频/【无损】Wan2.1-9步加速-VACE图生视频14B-720P_1924501888635424769.json
 hash: 244e49938a7081fc
 coverage: 0.677419
 learned_at: 2026-10-15 22:29:50

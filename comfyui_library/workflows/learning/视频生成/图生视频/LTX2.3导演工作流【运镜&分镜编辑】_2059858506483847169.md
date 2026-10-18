@@ -4,7 +4,7 @@ name: LTX2.3导演工作流【运镜&分镜编辑】_2059858506483847169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059858506483847169.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演工作流【运镜&分镜编辑】_2059858506483847169.json
 hash: 1bac3159a60feef8
 coverage: 0.972222
 learned_at: 2026-10-15 22:38:43

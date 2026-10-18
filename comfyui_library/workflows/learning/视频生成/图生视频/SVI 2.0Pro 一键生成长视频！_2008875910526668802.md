@@ -4,7 +4,7 @@ name: SVI 2.0Pro 一键生成长视频！_2008875910526668802.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008875910526668802.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0Pro 一键生成长视频！_2008875910526668802.json
 hash: 533fc272292fe69a
 coverage: 0.47541
 learned_at: 2026-10-15 22:34:09

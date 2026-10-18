@@ -4,7 +4,7 @@ name: wan2.2图片反推+镜头控制_2000506448629166082.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000506448629166082.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图片反推+镜头控制_2000506448629166082.json
 hash: c6790479717c6b55
 coverage: 0.606061
 learned_at: 2026-10-15 22:33:41

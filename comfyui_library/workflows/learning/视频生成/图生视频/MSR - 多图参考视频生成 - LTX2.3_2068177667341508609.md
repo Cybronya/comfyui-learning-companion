@@ -4,7 +4,7 @@ name: MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068177667341508609.json
+file: comfyui_library/workflows/视频生成/图生视频/MSR - 多图参考视频生成 - LTX2.3_2068177667341508609.json
 hash: 0c20cde14c6ae381
 coverage: 0.45
 learned_at: 2026-10-15 22:40:16

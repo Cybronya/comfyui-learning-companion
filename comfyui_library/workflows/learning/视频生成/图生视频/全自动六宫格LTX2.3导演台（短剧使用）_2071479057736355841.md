@@ -4,7 +4,7 @@ name: 全自动六宫格LTX2.3导演台（短剧使用）_2071479057736355841.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071479057736355841.json
+file: comfyui_library/workflows/视频生成/图生视频/全自动六宫格LTX2.3导演台（短剧使用）_2071479057736355841.json
 hash: ee669cf2e7113817
 coverage: 0.658537
 learned_at: 2026-10-15 22:40:45

@@ -4,7 +4,7 @@ name: Wan2.1FUNControlnetOTT20250416A横版_1912373863278411778.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912373863278411778.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1FUNControlnetOTT20250416A横版_1912373863278411778.json
 hash: 9c21cc0d4fedcbbf
 coverage: 0.782051
 learned_at: 2026-10-15 22:29:32

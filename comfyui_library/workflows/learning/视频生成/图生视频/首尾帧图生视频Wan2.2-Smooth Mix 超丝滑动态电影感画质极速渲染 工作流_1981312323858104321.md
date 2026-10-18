@@ -4,7 +4,7 @@ name: 首尾帧图生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981312323858104321.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧图生视频Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 工作流_1981312323858104321.json
 hash: 0054f51d1090db5c
 coverage: 0.976744
 learned_at: 2026-10-15 22:32:37

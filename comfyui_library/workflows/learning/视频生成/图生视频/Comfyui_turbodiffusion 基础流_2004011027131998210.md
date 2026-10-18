@@ -4,7 +4,7 @@ name: Comfyui_turbodiffusion 基础流_2004011027131998210.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004011027131998210.json
+file: comfyui_library/workflows/视频生成/图生视频/Comfyui_turbodiffusion 基础流_2004011027131998210.json
 hash: dc55c26f9d77371c
 coverage: 1
 learned_at: 2026-10-15 22:33:52

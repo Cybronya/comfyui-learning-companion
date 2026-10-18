@@ -4,7 +4,7 @@ name: 街舞倒立直转0wan2.1万相图生视视236_1935716513280421889.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935716513280421889.json
+file: comfyui_library/workflows/视频生成/图生视频/街舞倒立直转0wan2.1万相图生视视236_1935716513280421889.json
 hash: 0cdc4d1ff5887a45
 coverage: 0.819672
 learned_at: 2026-10-15 22:30:24

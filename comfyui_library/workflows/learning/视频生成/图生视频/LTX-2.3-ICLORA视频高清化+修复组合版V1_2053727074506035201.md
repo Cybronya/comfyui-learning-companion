@@ -4,7 +4,7 @@ name: LTX-2.3-ICLORA视频高清化+修复组合版V1_2053727074506035201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053727074506035201.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-ICLORA视频高清化+修复组合版V1_2053727074506035201.json
 hash: a59d4e910e38f1cd
 coverage: 1
 learned_at: 2026-10-15 22:37:42

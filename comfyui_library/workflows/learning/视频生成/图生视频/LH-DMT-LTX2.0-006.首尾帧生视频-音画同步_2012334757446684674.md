@@ -4,7 +4,7 @@ name: LH-DMT-LTX2.0-006.首尾帧生视频-音画同步_2012334757446684674.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012334757446684674.json
+file: comfyui_library/workflows/视频生成/图生视频/LH-DMT-LTX2.0-006.首尾帧生视频-音画同步_2012334757446684674.json
 hash: 93f0287c59da6792
 coverage: 0.56044
 learned_at: 2026-10-15 22:34:27

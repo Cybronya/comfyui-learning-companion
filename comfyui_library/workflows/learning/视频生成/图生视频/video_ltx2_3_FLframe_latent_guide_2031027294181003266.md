@@ -4,7 +4,7 @@ name: video_ltx2_3_FLframe_latent_guide_2031027294181003266.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031027294181003266.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_FLframe_latent_guide_2031027294181003266.json
 hash: 3f04c42ddfa3c843
 coverage: 0.846154
 learned_at: 2026-10-15 22:35:29

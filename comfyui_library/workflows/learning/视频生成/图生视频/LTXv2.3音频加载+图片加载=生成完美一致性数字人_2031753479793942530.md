@@ -4,7 +4,7 @@ name: LTXv2.3音频加载+图片加载=生成完美一致性数字人_2031753479
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031753479793942530.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXv2.3音频加载+图片加载=生成完美一致性数字人_2031753479793942530.json
 hash: fafe1d70462ec65b
 coverage: 0.849057
 learned_at: 2026-10-15 22:35:33

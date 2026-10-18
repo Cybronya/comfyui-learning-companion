@@ -4,7 +4,7 @@ name: YJ-APP-Wan2.2-Smooth-I2V_2038634972579373058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038634972579373058.json
+file: comfyui_library/workflows/视频生成/图生视频/YJ-APP-Wan2.2-Smooth-I2V_2038634972579373058.json
 hash: 8834742c8a819f04
 coverage: 1
 learned_at: 2026-10-15 22:36:04

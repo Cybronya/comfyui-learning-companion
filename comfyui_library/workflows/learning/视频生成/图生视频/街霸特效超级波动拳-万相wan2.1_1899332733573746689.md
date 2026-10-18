@@ -4,7 +4,7 @@ name: 街霸特效超级波动拳-万相wan2.1_1899332733573746689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899332733573746689.json
+file: comfyui_library/workflows/视频生成/图生视频/街霸特效超级波动拳-万相wan2.1_1899332733573746689.json
 hash: cb18ffe860f8b58f
 coverage: 0.95
 learned_at: 2026-10-15 22:29:21

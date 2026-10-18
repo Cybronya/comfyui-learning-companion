@@ -4,7 +4,7 @@ name: (循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011030476026286081.json
+file: comfyui_library/workflows/视频生成/图生视频/(循环)Smooth 2.1高噪 SVI 2 Pro长视频动态强化版V1_2011030476026286081.json
 hash: b75c21ac07a3c564
 coverage: 0.894737
 learned_at: 2026-10-15 22:34:20

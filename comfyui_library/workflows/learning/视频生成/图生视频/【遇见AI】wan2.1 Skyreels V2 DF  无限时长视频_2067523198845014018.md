@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 Skyreels V2 DF  无限时长视频_206752319884501401
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067523198845014018.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 Skyreels V2 DF  无限时长视频_2067523198845014018.json
 hash: 905eee428c6477c3
 coverage: 0.978261
 learned_at: 2026-10-15 22:40:03

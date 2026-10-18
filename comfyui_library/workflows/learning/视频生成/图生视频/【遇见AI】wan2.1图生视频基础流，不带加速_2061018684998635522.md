@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1图生视频基础流，不带加速_20610186849986355
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061018684998635522.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1图生视频基础流，不带加速_2061018684998635522.json
 hash: 5caa29a2abf88596
 coverage: 1
 learned_at: 2026-10-15 22:38:51

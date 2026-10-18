@@ -4,7 +4,7 @@ name: zhishi_scail.json_2077579473330982913.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077579473330982913.json
+file: comfyui_library/workflows/视频生成/图生视频/zhishi_scail.json_2077579473330982913.json
 hash: a922e70cb3d5b28c
 coverage: 0.822581
 learned_at: 2026-10-15 22:41:41

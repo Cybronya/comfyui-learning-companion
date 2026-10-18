@@ -4,7 +4,7 @@ name: Seedance2.5min前后帧室内白天夜晚光影变化_2074319853363752961.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074319853363752961.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.5min前后帧室内白天夜晚光影变化_2074319853363752961.json
 hash: 3be8c68bd23fc2ce
 coverage: 0.777778
 learned_at: 2026-10-15 22:41:13

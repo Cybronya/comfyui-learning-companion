@@ -4,7 +4,7 @@ name: LTX-2.3_小seedance2全能参考节点_2065439100508921858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065439100508921858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_小seedance2全能参考节点_2065439100508921858.json
 hash: 2c6996cc039f7cea
 coverage: 0.7
 learned_at: 2026-10-15 22:39:41

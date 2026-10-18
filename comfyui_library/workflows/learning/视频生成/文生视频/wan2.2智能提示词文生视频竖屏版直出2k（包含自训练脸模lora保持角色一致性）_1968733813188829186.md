@@ -4,7 +4,7 @@ name: wan2.2智能提示词文生视频竖屏版直出2k（包含自训练脸模
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968733813188829186.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2智能提示词文生视频竖屏版直出2k（包含自训练脸模lora保持角色一致性）_1968733813188829186.json
 hash: 042c7b1994c861d0
 coverage: 0.808511
 learned_at: 2026-10-15 22:43:46

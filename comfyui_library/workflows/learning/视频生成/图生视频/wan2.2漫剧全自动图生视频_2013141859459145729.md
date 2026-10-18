@@ -4,7 +4,7 @@ name: wan2.2漫剧全自动图生视频_2013141859459145729.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013141859459145729.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2漫剧全自动图生视频_2013141859459145729.json
 hash: e3736cf27c0a25ce
 coverage: 0.75
 learned_at: 2026-10-15 22:34:29

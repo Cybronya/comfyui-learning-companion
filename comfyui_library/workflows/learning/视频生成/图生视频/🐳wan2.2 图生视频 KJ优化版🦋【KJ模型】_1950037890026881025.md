@@ -4,7 +4,7 @@ name: 🐳wan2.2 图生视频 KJ优化版🦋【KJ模型】_1950037890026881025.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950037890026881025.json
+file: comfyui_library/workflows/视频生成/图生视频/🐳wan2.2 图生视频 KJ优化版🦋【KJ模型】_1950037890026881025.json
 hash: 56971a0c38647bae
 coverage: 0.967742
 learned_at: 2026-10-15 22:30:52

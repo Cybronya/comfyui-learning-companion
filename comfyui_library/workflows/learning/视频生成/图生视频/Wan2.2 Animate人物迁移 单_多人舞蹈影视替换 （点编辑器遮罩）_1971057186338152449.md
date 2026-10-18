@@ -4,7 +4,7 @@ name: Wan2.2 Animate人物迁移 单_多人舞蹈影视替换 （点编辑器遮
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971057186338152449.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate人物迁移 单_多人舞蹈影视替换 （点编辑器遮罩）_1971057186338152449.json
 hash: 7039c709a015d4ac
 coverage: 0.457447
 learned_at: 2026-10-15 22:31:55

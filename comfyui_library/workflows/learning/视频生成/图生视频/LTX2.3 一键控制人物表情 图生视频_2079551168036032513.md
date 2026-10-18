@@ -4,7 +4,7 @@ name: LTX2.3 一键控制人物表情 图生视频_2079551168036032513.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079551168036032513.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 一键控制人物表情 图生视频_2079551168036032513.json
 hash: ab9668ddfdae4b3a
 coverage: 0.4
 learned_at: 2026-10-15 22:42:04

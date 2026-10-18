@@ -4,7 +4,7 @@ name: LTXV 0.98 深度视频转绘长视频V1_1947715360633040897.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947715360633040897.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV 0.98 深度视频转绘长视频V1_1947715360633040897.json
 hash: 16f53f8fedadbda4
 coverage: 0.631579
 learned_at: 2026-10-15 22:30:46

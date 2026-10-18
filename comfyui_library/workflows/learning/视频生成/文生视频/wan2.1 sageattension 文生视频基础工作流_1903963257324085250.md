@@ -4,7 +4,7 @@ name: wan2.1 sageattension 文生视频基础工作流_1903963257324085250.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1903963257324085250.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 sageattension 文生视频基础工作流_1903963257324085250.json
 hash: ad90d8e6c5654fd7
 coverage: 1
 learned_at: 2026-10-15 22:43:21

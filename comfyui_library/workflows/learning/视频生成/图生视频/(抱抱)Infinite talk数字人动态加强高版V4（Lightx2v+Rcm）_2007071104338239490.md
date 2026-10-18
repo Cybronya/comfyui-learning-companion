@@ -4,7 +4,7 @@ name: (抱抱)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_20070
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007071104338239490.json
+file: comfyui_library/workflows/视频生成/图生视频/(抱抱)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2007071104338239490.json
 hash: 8763db6a0a23f6e4
 coverage: 0.75
 learned_at: 2026-10-15 22:34:03

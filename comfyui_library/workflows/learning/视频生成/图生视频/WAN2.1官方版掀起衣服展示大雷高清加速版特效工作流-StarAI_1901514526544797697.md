@@ -4,7 +4,7 @@ name: WAN2.1官方版掀起衣服展示大雷高清加速版特效工作流-Star
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901514526544797697.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1官方版掀起衣服展示大雷高清加速版特效工作流-StarAI_1901514526544797697.json
 hash: a79a8e52dc8cccdc
 coverage: 1
 learned_at: 2026-10-15 22:29:24

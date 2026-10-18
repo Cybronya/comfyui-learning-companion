@@ -4,7 +4,7 @@ name: 万象AI+LTX2.3导演台工作流 -（分镜图+音频+提示词+视频时
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058003640417349634.json
+file: comfyui_library/workflows/视频生成/图生视频/万象AI+LTX2.3导演台工作流 -（分镜图+音频+提示词+视频时长随意控制）_2058003640417349634.json
 hash: 64a95f3774c83784
 coverage: 0.972222
 learned_at: 2026-10-15 22:38:17

@@ -4,7 +4,7 @@ name: LTX2.3-氛围感长镜头-图生视频-自动提示词-直出1K工作流_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054046453240213506.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-氛围感长镜头-图生视频-自动提示词-直出1K工作流_2054046453240213506.json
 hash: 3a4f86b1663ea416
 coverage: 0.9
 learned_at: 2026-10-15 22:37:44

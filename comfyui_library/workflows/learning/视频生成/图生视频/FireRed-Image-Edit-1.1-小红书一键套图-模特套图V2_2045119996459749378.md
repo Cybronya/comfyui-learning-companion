@@ -4,7 +4,7 @@ name: FireRed-Image-Edit-1.1-小红书一键套图-模特套图V2_20451199964597
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045119996459749378.json
+file: comfyui_library/workflows/视频生成/图生视频/FireRed-Image-Edit-1.1-小红书一键套图-模特套图V2_2045119996459749378.json
 hash: ba7f4f7da0e25af5
 coverage: 0.965517
 learned_at: 2026-10-15 22:36:46

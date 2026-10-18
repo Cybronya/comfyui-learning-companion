@@ -4,7 +4,7 @@ name: 全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044763237136211969.json
+file: comfyui_library/workflows/视频生成/图生视频/全能图生视频 Wan2.2 I2V 可以9分钟200R_2044763237136211969.json
 hash: a504c8aded2221b5
 coverage: 0.6875
 learned_at: 2026-10-15 22:36:40

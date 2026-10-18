@@ -4,7 +4,7 @@ name: WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981765455167791105.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 图生视频 极致臻享 2K版_1981765455167791105.json
 hash: a3db0d340d78081c
 coverage: 0.48913
 learned_at: 2026-10-15 22:32:39

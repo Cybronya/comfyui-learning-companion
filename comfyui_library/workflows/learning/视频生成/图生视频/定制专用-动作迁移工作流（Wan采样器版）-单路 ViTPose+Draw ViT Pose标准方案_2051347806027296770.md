@@ -4,7 +4,7 @@ name: 定制专用-动作迁移工作流（Wan采样器版）-单路 ViTPose+Dra
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051347806027296770.json
+file: comfyui_library/workflows/视频生成/图生视频/定制专用-动作迁移工作流（Wan采样器版）-单路 ViTPose+Draw ViT Pose标准方案_2051347806027296770.json
 hash: 46736c8b6a999a89
 coverage: 0.777778
 learned_at: 2026-10-15 22:37:22

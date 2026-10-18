@@ -4,7 +4,7 @@ name: 视频-视频延长视频＋参考图一致性-wan2.1-lynx-SVI 2.0-KJ_1985
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985638903862439938.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-视频延长视频＋参考图一致性-wan2.1-lynx-SVI 2.0-KJ_1985638903862439938.json
 hash: b4b2a37376461073
 coverage: 0.651163
 learned_at: 2026-10-15 22:32:52

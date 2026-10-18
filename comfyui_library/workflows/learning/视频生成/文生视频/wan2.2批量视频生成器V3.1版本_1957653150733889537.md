@@ -4,7 +4,7 @@ name: wan2.2批量视频生成器V3.1版本_1957653150733889537.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1957653150733889537.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2批量视频生成器V3.1版本_1957653150733889537.json
 hash: 7581285af6379669
 coverage: 0.833333
 learned_at: 2026-10-15 22:43:41

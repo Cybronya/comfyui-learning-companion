@@ -4,7 +4,7 @@ name: wan2.1动态壁纸首尾帧循环版_1914595453097209857.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914595453097209857.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1动态壁纸首尾帧循环版_1914595453097209857.json
 hash: 06152c71ae67992d
 coverage: 1
 learned_at: 2026-10-15 22:29:36

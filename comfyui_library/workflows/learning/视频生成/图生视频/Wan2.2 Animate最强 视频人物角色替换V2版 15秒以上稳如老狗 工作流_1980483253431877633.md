@@ -4,7 +4,7 @@ name: Wan2.2 Animate最强 视频人物角色替换V2版 15秒以上稳如老狗
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980483253431877633.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate最强 视频人物角色替换V2版 15秒以上稳如老狗 工作流_1980483253431877633.json
 hash: 3841766d08b9241e
 coverage: 0.565217
 learned_at: 2026-10-15 22:32:30

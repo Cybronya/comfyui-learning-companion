@@ -4,7 +4,7 @@ name: (KJ FPS16版)WAN2.2首尾帧FLF2V超级加速版工作流V1_19520020497455
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952002049745563650.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ FPS16版)WAN2.2首尾帧FLF2V超级加速版工作流V1_1952002049745563650.json
 hash: b4d291a8281383dd
 coverage: 0.816327
 learned_at: 2026-10-15 22:30:59

@@ -4,7 +4,7 @@ name: 7-LTX 2.3（音频转视频）Image + Audio to Video_2053481289776414721.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053481289776414721.json
+file: comfyui_library/workflows/视频生成/图生视频/7-LTX 2.3（音频转视频）Image + Audio to Video_2053481289776414721.json
 hash: 636900ba93cd73de
 coverage: 0.859649
 learned_at: 2026-10-15 22:37:39

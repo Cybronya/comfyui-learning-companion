@@ -4,7 +4,7 @@ name: Ltx2.3--Sulphur2--VBVR--图生视频_2055899428757753858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055899428757753858.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3--Sulphur2--VBVR--图生视频_2055899428757753858.json
 hash: 9b2a444ec9dfd0d4
 coverage: 0.75
 learned_at: 2026-10-15 22:37:59

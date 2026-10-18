@@ -4,7 +4,7 @@ name: 14BWAN2.2--4-8步极速图生视频_1950459871272550401.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950459871272550401.json
+file: comfyui_library/workflows/视频生成/图生视频/14BWAN2.2--4-8步极速图生视频_1950459871272550401.json
 hash: d9c76ec4b2733ab8
 coverage: 0.909091
 learned_at: 2026-10-15 22:30:55

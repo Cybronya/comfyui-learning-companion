@@ -4,7 +4,7 @@ name: 图生视频-rh-任意时长-Wan2.2-Remix-I2V-提示词优化-模板_20218
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021849082557370369.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-rh-任意时长-Wan2.2-Remix-I2V-提示词优化-模板_2021849082557370369.json
 hash: d4197a8e8f2d1281
 coverage: 0.717391
 learned_at: 2026-10-15 22:35:09

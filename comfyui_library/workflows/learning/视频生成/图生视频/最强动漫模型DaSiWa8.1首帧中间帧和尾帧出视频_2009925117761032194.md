@@ -4,7 +4,7 @@ name: 最强动漫模型DaSiWa8.1首帧中间帧和尾帧出视频_2009925117761
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009925117761032194.json
+file: comfyui_library/workflows/视频生成/图生视频/最强动漫模型DaSiWa8.1首帧中间帧和尾帧出视频_2009925117761032194.json
 hash: f3cc1be253582b77
 coverage: 0.476923
 learned_at: 2026-10-15 22:34:15

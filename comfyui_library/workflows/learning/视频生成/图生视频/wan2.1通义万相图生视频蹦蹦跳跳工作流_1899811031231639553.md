@@ -4,7 +4,7 @@ name: wan2.1通义万相图生视频蹦蹦跳跳工作流_1899811031231639553.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899811031231639553.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1通义万相图生视频蹦蹦跳跳工作流_1899811031231639553.json
 hash: 2bc74de96d57f850
 coverage: 1
 learned_at: 2026-10-15 22:29:22

@@ -4,7 +4,7 @@ name: Wan2.2-Smooth Mix+FMLF首尾帧实现人物场景融合_199033907004174745
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990339070041747458.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth Mix+FMLF首尾帧实现人物场景融合_1990339070041747458.json
 hash: ddd9c31e5bfe3486
 coverage: 1
 learned_at: 2026-10-15 22:33:10

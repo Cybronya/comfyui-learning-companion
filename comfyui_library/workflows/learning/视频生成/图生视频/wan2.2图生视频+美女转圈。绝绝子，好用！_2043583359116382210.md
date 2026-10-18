@@ -4,7 +4,7 @@ name: wan2.2图生视频+美女转圈。绝绝子，好用！_204358335911638221
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043583359116382210.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频+美女转圈。绝绝子，好用！_2043583359116382210.json
 hash: f5907c53f11b7c9e
 coverage: 1
 learned_at: 2026-10-15 22:36:32

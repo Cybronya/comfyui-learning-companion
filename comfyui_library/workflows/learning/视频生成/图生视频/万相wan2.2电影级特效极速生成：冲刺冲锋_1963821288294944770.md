@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：冲刺冲锋_1963821288294944770
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963821288294944770.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：冲刺冲锋_1963821288294944770.json
 hash: 75b50161fce68b80
 coverage: 1
 learned_at: 2026-10-15 22:31:33

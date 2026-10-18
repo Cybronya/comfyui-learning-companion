@@ -4,7 +4,7 @@ name: (贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994104892247785473.json
+file: comfyui_library/workflows/视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 PPT动态效果（基准0.3_8S）_1994104892247785473.json
 hash: de71e4cc214c05db
 coverage: 0.416667
 learned_at: 2026-10-15 22:33:20

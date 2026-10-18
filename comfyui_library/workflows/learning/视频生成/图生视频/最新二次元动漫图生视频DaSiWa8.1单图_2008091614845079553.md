@@ -4,7 +4,7 @@ name: 最新二次元动漫图生视频DaSiWa8.1单图_2008091614845079553.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008091614845079553.json
+file: comfyui_library/workflows/视频生成/图生视频/最新二次元动漫图生视频DaSiWa8.1单图_2008091614845079553.json
 hash: 2b3f9c174ac00822
 coverage: 0.794118
 learned_at: 2026-10-15 22:34:06

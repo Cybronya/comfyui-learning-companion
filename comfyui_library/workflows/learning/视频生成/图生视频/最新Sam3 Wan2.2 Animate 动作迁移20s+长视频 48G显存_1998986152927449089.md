@@ -4,7 +4,7 @@ name: 最新Sam3 Wan2.2 Animate 动作迁移20s+长视频 48G显存_199898615292
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998986152927449089.json
+file: comfyui_library/workflows/视频生成/图生视频/最新Sam3 Wan2.2 Animate 动作迁移20s+长视频 48G显存_1998986152927449089.json
 hash: 9e25e47937f8ac60
 coverage: 0.525641
 learned_at: 2026-10-15 22:33:35

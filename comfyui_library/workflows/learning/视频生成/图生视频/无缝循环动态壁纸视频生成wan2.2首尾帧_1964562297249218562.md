@@ -4,7 +4,7 @@ name: 无缝循环动态壁纸视频生成wan2.2首尾帧_1964562297249218562.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964562297249218562.json
+file: comfyui_library/workflows/视频生成/图生视频/无缝循环动态壁纸视频生成wan2.2首尾帧_1964562297249218562.json
 hash: cf4abc1082f0c8c6
 coverage: 0.911111
 learned_at: 2026-10-15 22:31:35

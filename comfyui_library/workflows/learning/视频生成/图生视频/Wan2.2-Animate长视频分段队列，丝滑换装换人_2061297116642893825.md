@@ -4,7 +4,7 @@ name: Wan2.2-Animate长视频分段队列，丝滑换装换人_20612971166428938
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061297116642893825.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate长视频分段队列，丝滑换装换人_2061297116642893825.json
 hash: dd46c97cf6b56a39
 coverage: 0.568966
 learned_at: 2026-10-15 22:38:52

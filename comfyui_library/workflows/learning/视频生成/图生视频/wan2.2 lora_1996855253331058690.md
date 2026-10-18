@@ -4,7 +4,7 @@ name: wan2.2 lora_1996855253331058690.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996855253331058690.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 lora_1996855253331058690.json
 hash: 1aa9b7a35a4d1d17
 coverage: 1
 learned_at: 2026-10-15 22:33:28

@@ -4,7 +4,7 @@ name: (荷花灯）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021226813296480257.json
+file: comfyui_library/workflows/视频生成/图生视频/(荷花灯）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2021226813296480257.json
 hash: 431e53030b223a9d
 coverage: 0.75
 learned_at: 2026-10-15 22:35:08

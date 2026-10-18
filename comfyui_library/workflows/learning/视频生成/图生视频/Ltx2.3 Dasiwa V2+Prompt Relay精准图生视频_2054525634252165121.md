@@ -4,7 +4,7 @@ name: Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054525634252165121.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054525634252165121.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Dasiwa V2+Prompt Relay精准图生视频_2054525634252165121.json
 hash: 1b59c374e6a103e2
 coverage: 0.74359
 learned_at: 2026-10-15 22:37:48

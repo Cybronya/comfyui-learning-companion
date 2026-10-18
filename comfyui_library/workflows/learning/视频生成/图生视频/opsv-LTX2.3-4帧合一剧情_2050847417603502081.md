@@ -4,7 +4,7 @@ name: opsv-LTX2.3-4帧合一剧情_2050847417603502081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050847417603502081.json
+file: comfyui_library/workflows/视频生成/图生视频/opsv-LTX2.3-4帧合一剧情_2050847417603502081.json
 hash: 3d7ec594cf87f345
 coverage: 0.646018
 learned_at: 2026-10-15 22:37:20

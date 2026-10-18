@@ -4,7 +4,7 @@ name: LTX2.3 时间轴+数字人多功能工作流_2072320192541192193.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072320192541192193.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 时间轴+数字人多功能工作流_2072320192541192193.json
 hash: 6d80653739af10f4
 coverage: 0.530488
 learned_at: 2026-10-15 22:40:54

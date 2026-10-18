@@ -4,7 +4,7 @@ name: WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040983954890694657.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.7图生视频 万相2.7--首尾帧生视频 数字人说话唱歌_2040983954890694657.json
 hash: 2bedb96ef7593c07
 coverage: 1
 learned_at: 2026-10-15 22:36:16

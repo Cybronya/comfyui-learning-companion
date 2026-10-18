@@ -4,7 +4,7 @@ name: LTX-2.3_MSR V2多参数字人_2078871582214279170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078871582214279170.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_MSR V2多参数字人_2078871582214279170.json
 hash: 05e50028fb1b0be0
 coverage: 0.926829
 learned_at: 2026-10-15 22:41:56

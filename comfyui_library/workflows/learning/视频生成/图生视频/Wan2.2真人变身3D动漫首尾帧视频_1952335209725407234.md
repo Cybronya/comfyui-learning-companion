@@ -4,7 +4,7 @@ name: Wan2.2真人变身3D动漫首尾帧视频_1952335209725407234.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952335209725407234.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2真人变身3D动漫首尾帧视频_1952335209725407234.json
 hash: 83682698022a6491
 coverage: 0.93617
 learned_at: 2026-10-15 22:31:01

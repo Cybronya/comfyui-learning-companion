@@ -4,7 +4,7 @@ name: 商用infinite_talker_single_comfy_native-12段30秒-2K直出_201850099985
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018500999857577985.json
+file: comfyui_library/workflows/视频生成/图生视频/商用infinite_talker_single_comfy_native-12段30秒-2K直出_2018500999857577985.json
 hash: 28aa6d06a23cf5e6
 coverage: 0.453925
 learned_at: 2026-10-15 22:34:57

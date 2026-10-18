@@ -4,7 +4,7 @@ name: Wan2.1 Control Camera 运镜_1948615689729912833.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948615689729912833.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 Control Camera 运镜_1948615689729912833.json
 hash: f6aa0bab87d6b72c
 coverage: 0.678571
 learned_at: 2026-10-15 22:30:47

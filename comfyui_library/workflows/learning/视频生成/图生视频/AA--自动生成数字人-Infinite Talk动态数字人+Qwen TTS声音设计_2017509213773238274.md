@@ -4,7 +4,7 @@ name: AA--自动生成数字人-Infinite Talk动态数字人+Qwen TTS声音设�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017509213773238274.json
+file: comfyui_library/workflows/视频生成/图生视频/AA--自动生成数字人-Infinite Talk动态数字人+Qwen TTS声音设计_2017509213773238274.json
 hash: 3698044642d0d900
 coverage: 0.890909
 learned_at: 2026-10-15 22:34:49

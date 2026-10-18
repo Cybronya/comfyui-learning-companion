@@ -4,7 +4,7 @@ name: wan2.1 美女模特环绕360镜头_1948183432305225730.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1948183432305225730.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 美女模特环绕360镜头_1948183432305225730.json
 hash: 50e8bee09420a1bb
 coverage: 0.967742
 learned_at: 2026-10-15 22:43:32

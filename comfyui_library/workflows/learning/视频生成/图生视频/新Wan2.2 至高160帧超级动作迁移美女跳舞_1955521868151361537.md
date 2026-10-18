@@ -4,7 +4,7 @@ name: 新Wan2.2 至高160帧超级动作迁移美女跳舞_1955521868151361537.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955521868151361537.json
+file: comfyui_library/workflows/视频生成/图生视频/新Wan2.2 至高160帧超级动作迁移美女跳舞_1955521868151361537.json
 hash: b24057a91fe9d74e
 coverage: 0.708333
 learned_at: 2026-10-15 22:31:09

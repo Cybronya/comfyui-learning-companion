@@ -4,7 +4,7 @@ name: Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950544723431903234.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Vace首尾帧女孩变动漫_1950544723431903234.json
 hash: 26b2d0a897a426c3
 coverage: 1
 learned_at: 2026-10-15 22:30:55

@@ -4,7 +4,7 @@ name: 万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042852519000416258.json
+file: comfyui_library/workflows/视频生成/图生视频/万象AI+RH-LTX2.3-四宫格剧情生成-音画同步-图生视频_2042852519000416258.json
 hash: 5613a1538acb1e51
 coverage: 0.597826
 learned_at: 2026-10-15 22:36:29

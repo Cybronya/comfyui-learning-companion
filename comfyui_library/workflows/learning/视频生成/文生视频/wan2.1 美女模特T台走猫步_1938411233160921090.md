@@ -4,7 +4,7 @@ name: wan2.1 美女模特T台走猫步_1938411233160921090.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1938411233160921090.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 美女模特T台走猫步_1938411233160921090.json
 hash: 68dab64c2661b485
 coverage: 1
 learned_at: 2026-10-15 22:43:30

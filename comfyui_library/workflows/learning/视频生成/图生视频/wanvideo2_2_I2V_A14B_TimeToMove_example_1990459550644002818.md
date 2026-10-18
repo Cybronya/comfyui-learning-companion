@@ -4,7 +4,7 @@ name: wanvideo2_2_I2V_A14B_TimeToMove_example_1990459550644002818.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990459550644002818.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo2_2_I2V_A14B_TimeToMove_example_1990459550644002818.json
 hash: 98344e9f635e18cf
 coverage: 0.695652
 learned_at: 2026-10-15 22:33:10

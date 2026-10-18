@@ -4,7 +4,7 @@ name: 图生数字人，说话唱歌Multitalk+Fusionx+Lightx2v万相wan2.1_19375
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937534979532591106.json
+file: comfyui_library/workflows/视频生成/图生视频/图生数字人，说话唱歌Multitalk+Fusionx+Lightx2v万相wan2.1_1937534979532591106.json
 hash: 08d97d15564a1924
 coverage: 0.875
 learned_at: 2026-10-15 22:30:29

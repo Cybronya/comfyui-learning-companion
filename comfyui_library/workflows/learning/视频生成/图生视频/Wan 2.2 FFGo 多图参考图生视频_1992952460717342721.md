@@ -4,7 +4,7 @@ name: Wan 2.2 FFGo 多图参考图生视频_1992952460717342721.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992952460717342721.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 FFGo 多图参考图生视频_1992952460717342721.json
 hash: cc550b3818bd098c
 coverage: 0.82
 learned_at: 2026-10-15 22:33:17

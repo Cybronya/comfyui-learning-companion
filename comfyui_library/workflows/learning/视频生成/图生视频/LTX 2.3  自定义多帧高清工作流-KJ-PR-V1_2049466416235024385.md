@@ -4,7 +4,7 @@ name: LTX 2.3  自定义多帧高清工作流-KJ-PR-V1_2049466416235024385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049466416235024385.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3  自定义多帧高清工作流-KJ-PR-V1_2049466416235024385.json
 hash: 6861bb512c2a2127
 coverage: 0.519231
 learned_at: 2026-10-15 22:37:14

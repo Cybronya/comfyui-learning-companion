@@ -4,7 +4,7 @@ name: 4图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921473560848826369
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1921473560848826369.json
+file: comfyui_library/workflows/视频生成/图生视频/4图首尾帧+空间or时间放大(LTXVideo 13B 0.9.7)_1921473560848826369.json
 hash: 99b1451d671c097e
 coverage: 0.981818
 learned_at: 2026-10-15 22:29:43

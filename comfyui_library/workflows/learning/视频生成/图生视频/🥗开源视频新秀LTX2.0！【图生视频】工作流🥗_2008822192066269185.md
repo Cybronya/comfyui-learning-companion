@@ -4,7 +4,7 @@ name: 🥗开源视频新秀LTX2.0！【图生视频】工作流🥗_20088221920
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008822192066269185.json
+file: comfyui_library/workflows/视频生成/图生视频/🥗开源视频新秀LTX2.0！【图生视频】工作流🥗_2008822192066269185.json
 hash: a090955a1e7303c6
 coverage: 0.865385
 learned_at: 2026-10-15 22:34:09

@@ -4,7 +4,7 @@ name: 动作迁移wan2.1 fusionx GGUF版本_1946143075989417985.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946143075989417985.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移wan2.1 fusionx GGUF版本_1946143075989417985.json
 hash: ab18c8f44b6cf8aa
 coverage: 0.83871
 learned_at: 2026-10-15 22:30:44

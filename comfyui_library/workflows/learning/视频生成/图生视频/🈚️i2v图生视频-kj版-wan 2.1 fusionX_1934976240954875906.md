@@ -4,7 +4,7 @@ name: 🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934976240954875906.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1 fusionX_1934976240954875906.json
 hash: b30ada66bc4c0871
 coverage: 0.585714
 learned_at: 2026-10-15 22:30:19

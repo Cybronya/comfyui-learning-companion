@@ -4,7 +4,7 @@ name: 【补帧+放大】wan2.1美女跳舞视频  细节完美 不崩脸_193051
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1930515723595190274.json
+file: comfyui_library/workflows/视频生成/文生视频/【补帧+放大】wan2.1美女跳舞视频  细节完美 不崩脸_1930515723595190274.json
 hash: 37b64668ae039432
 coverage: 0.95
 learned_at: 2026-10-15 22:43:25

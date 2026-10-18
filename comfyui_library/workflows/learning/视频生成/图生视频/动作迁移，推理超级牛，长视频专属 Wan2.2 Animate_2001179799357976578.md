@@ -4,7 +4,7 @@ name: 动作迁移，推理超级牛，长视频专属 Wan2.2 Animate_2001179799
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001179799357976578.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移，推理超级牛，长视频专属 Wan2.2 Animate_2001179799357976578.json
 hash: 67c4989280854e62
 coverage: 0.634146
 learned_at: 2026-10-15 22:33:44

@@ -4,7 +4,7 @@ name: wan2.2图生视频+丝袜美女转圈=艾橘溪_1893899363629051906.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1893899363629051906.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频+丝袜美女转圈=艾橘溪_1893899363629051906.json
 hash: d650da903fa0bda9
 coverage: 0.96875
 learned_at: 2026-10-15 22:29:15

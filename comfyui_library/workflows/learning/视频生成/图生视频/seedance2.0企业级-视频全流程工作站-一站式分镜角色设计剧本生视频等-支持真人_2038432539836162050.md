@@ -4,7 +4,7 @@ name: seedance2.0企业级-视频全流程工作站-一站式分镜角色设计�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038432539836162050.json
+file: comfyui_library/workflows/视频生成/图生视频/seedance2.0企业级-视频全流程工作站-一站式分镜角色设计剧本生视频等-支持真人_2038432539836162050.json
 hash: 289e0fc2dca2742c
 coverage: 0.513889
 learned_at: 2026-10-15 22:36:02

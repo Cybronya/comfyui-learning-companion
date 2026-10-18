@@ -4,7 +4,7 @@ name: 龙明wan2.1 运镜lora_1934983961166684161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934983961166684161.json
+file: comfyui_library/workflows/视频生成/图生视频/龙明wan2.1 运镜lora_1934983961166684161.json
 hash: 429dcb65aabcac03
 coverage: 0.884615
 learned_at: 2026-10-15 22:30:20

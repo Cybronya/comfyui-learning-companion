@@ -4,7 +4,7 @@ name: wan2.2万相通义图生视频极速电影级版_1950206253990592514.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950206253990592514.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2万相通义图生视频极速电影级版_1950206253990592514.json
 hash: 556b9f6f09fab330
 coverage: 0.791667
 learned_at: 2026-10-15 22:30:54

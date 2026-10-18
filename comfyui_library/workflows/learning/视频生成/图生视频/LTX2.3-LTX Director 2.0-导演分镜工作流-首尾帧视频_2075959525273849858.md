@@ -4,7 +4,7 @@ name: LTX2.3-LTX Director 2.0-导演分镜工作流-首尾帧视频_207595952527
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075959525273849858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-LTX Director 2.0-导演分镜工作流-首尾帧视频_2075959525273849858.json
 hash: 9f93afdcbcd6c988
 coverage: 0.844444
 learned_at: 2026-10-15 22:41:28

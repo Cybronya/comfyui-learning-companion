@@ -4,7 +4,7 @@ name: wan2.2 首帧图生视频字字1080_2018657772811853825.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018657772811853825.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 首帧图生视频字字1080_2018657772811853825.json
 hash: 55b892751d1cc595
 coverage: 0.965517
 learned_at: 2026-10-15 22:34:58

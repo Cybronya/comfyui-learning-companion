@@ -4,7 +4,7 @@ name: 【Wan2.1系列】首尾帧生成视频之Fun V1.1 Inp模型 _ 一键生�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920718476594315266.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1系列】首尾帧生成视频之Fun V1.1 Inp模型 _ 一键生成创意视频！_1920718476594315266.json
 hash: 23d3a49f255b9a29
 coverage: 0.833333
 learned_at: 2026-10-15 22:29:42

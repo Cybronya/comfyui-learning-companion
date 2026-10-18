@@ -4,7 +4,7 @@ name: 🦖(高动态版)SVI 2.0 图生长视频_2006221064216514562.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006221064216514562.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖(高动态版)SVI 2.0 图生长视频_2006221064216514562.json
 hash: 85c8dd3390446cdd
 coverage: 0.565891
 learned_at: 2026-10-15 22:34:00

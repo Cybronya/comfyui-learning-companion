@@ -4,7 +4,7 @@ name: 高动态电影级首尾帧Wan2.2-Smooth Mix 超丝滑动态1.0_1986030132
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986030132559314946.json
+file: comfyui_library/workflows/视频生成/图生视频/高动态电影级首尾帧Wan2.2-Smooth Mix 超丝滑动态1.0_1986030132559314946.json
 hash: be049c7e51670f45
 coverage: 0.97619
 learned_at: 2026-10-15 22:32:53

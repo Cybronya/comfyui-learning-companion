@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX2.3多场景数字人_2061288687094296578.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061288687094296578.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX2.3多场景数字人_2061288687094296578.json
 hash: 5843426f4aeb540c
 coverage: 0.567568
 learned_at: 2026-10-15 22:38:52

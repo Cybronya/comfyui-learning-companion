@@ -4,7 +4,7 @@ name: LongCat1.5--数字人对口型_2059921141237641218.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059921141237641218.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCat1.5--数字人对口型_2059921141237641218.json
 hash: 997826b342e09806
 coverage: 1
 learned_at: 2026-10-15 22:38:43

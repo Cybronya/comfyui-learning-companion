@@ -4,7 +4,7 @@ name: Wan2.2-子弹时间【创意玩法】_1984075275195613186.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984075275195613186.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-子弹时间【创意玩法】_1984075275195613186.json
 hash: 16f7f1259291c5d5
 coverage: 0.9375
 learned_at: 2026-10-15 22:32:47

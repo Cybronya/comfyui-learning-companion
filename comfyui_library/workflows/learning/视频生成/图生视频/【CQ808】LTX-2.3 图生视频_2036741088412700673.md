@@ -4,7 +4,7 @@ name: 【CQ808】LTX-2.3 图生视频_2036741088412700673.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036741088412700673.json
+file: comfyui_library/workflows/视频生成/图生视频/【CQ808】LTX-2.3 图生视频_2036741088412700673.json
 hash: 0edaf3eefd8e0136
 coverage: 0.97561
 learned_at: 2026-10-15 22:35:53

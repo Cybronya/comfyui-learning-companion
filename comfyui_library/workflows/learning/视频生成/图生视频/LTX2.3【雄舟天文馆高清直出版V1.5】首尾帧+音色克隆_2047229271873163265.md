@@ -4,7 +4,7 @@ name: LTX2.3【雄舟天文馆高清直出版V1.5】首尾帧+音色克隆_20472
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047229271873163265.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3【雄舟天文馆高清直出版V1.5】首尾帧+音色克隆_2047229271873163265.json
 hash: 8445a0661cf2fd4f
 coverage: 0.758242
 learned_at: 2026-10-15 22:37:04

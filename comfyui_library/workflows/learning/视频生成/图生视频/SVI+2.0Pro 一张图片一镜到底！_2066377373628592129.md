@@ -4,7 +4,7 @@ name: SVI+2.0Pro 一张图片一镜到底！_2066377373628592129.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066377373628592129.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI+2.0Pro 一张图片一镜到底！_2066377373628592129.json
 hash: 7b3d499cb1e209d0
 coverage: 0.581197
 learned_at: 2026-10-15 22:39:48

@@ -4,7 +4,7 @@ name: Kling_VideoO1StartToEnd_v1.0_2033816350614884353.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033816350614884353.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_VideoO1StartToEnd_v1.0_2033816350614884353.json
 hash: 458ecbc827c337f8
 coverage: 1
 learned_at: 2026-10-15 22:35:41

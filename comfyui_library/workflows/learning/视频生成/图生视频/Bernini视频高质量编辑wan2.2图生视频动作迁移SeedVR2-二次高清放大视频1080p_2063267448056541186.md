@@ -4,7 +4,7 @@ name: Bernini视频高质量编辑wan2.2图生视频动作迁移SeedVR2-二次�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063267448056541186.json
+file: comfyui_library/workflows/视频生成/图生视频/Bernini视频高质量编辑wan2.2图生视频动作迁移SeedVR2-二次高清放大视频1080p_2063267448056541186.json
 hash: 0632fa08df61cb70
 coverage: 0.925
 learned_at: 2026-10-15 22:39:12

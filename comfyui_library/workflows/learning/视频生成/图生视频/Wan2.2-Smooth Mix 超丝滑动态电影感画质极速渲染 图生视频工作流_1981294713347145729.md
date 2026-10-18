@@ -4,7 +4,7 @@ name: Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 图生视频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981294713347145729.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth Mix 超丝滑动态电影感画质极速渲染 图生视频工作流_1981294713347145729.json
 hash: 1f03aa919d6e3dbc
 coverage: 0.973684
 learned_at: 2026-10-15 22:32:37

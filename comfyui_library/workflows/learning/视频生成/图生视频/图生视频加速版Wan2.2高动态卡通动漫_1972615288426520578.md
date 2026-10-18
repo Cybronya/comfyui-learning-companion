@@ -4,7 +4,7 @@ name: 图生视频加速版Wan2.2高动态卡通动漫_1972615288426520578.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972615288426520578.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频加速版Wan2.2高动态卡通动漫_1972615288426520578.json
 hash: dc20664e11feb20c
 coverage: 0.888889
 learned_at: 2026-10-15 22:32:00

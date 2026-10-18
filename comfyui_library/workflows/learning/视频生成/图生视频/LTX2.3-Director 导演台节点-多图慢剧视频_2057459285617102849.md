@@ -4,7 +4,7 @@ name: LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057459285617102849.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-Director 导演台节点-多图慢剧视频_2057459285617102849.json
 hash: 42e444d5c4335267
 coverage: 0.914286
 learned_at: 2026-10-15 22:38:12

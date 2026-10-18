@@ -4,7 +4,7 @@ name: 控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1926291391310184449.json
+file: comfyui_library/workflows/视频生成/图生视频/控制人物动作、跳舞视频、wan2.1 vace_1926291391310184449.json
 hash: 9fe06a88e23d64e0
 coverage: 0.729167
 learned_at: 2026-10-15 22:29:53

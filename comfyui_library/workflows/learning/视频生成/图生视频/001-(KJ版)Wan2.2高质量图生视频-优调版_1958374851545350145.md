@@ -4,7 +4,7 @@ name: 001-(KJ版)Wan2.2高质量图生视频-优调版_1958374851545350145.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958374851545350145.json
+file: comfyui_library/workflows/视频生成/图生视频/001-(KJ版)Wan2.2高质量图生视频-优调版_1958374851545350145.json
 hash: ca1135b4b3759c11
 coverage: 0.829268
 learned_at: 2026-10-15 22:31:22

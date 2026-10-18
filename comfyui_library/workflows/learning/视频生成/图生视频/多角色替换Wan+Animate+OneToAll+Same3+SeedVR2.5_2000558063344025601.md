@@ -4,7 +4,7 @@ name: 多角色替换Wan+Animate+OneToAll+Same3+SeedVR2.5_2000558063344025601.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000558063344025601.json
+file: comfyui_library/workflows/视频生成/图生视频/多角色替换Wan+Animate+OneToAll+Same3+SeedVR2.5_2000558063344025601.json
 hash: addd4ae16e157736
 coverage: 0.779412
 learned_at: 2026-10-15 22:33:41

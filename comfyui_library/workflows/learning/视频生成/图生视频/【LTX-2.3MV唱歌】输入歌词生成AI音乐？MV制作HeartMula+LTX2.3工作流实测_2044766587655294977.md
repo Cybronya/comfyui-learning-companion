@@ -4,7 +4,7 @@ name: 【LTX-2.3MV唱歌】输入歌词生成AI音乐？MV制作HeartMula+LTX2.3
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044766587655294977.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX-2.3MV唱歌】输入歌词生成AI音乐？MV制作HeartMula+LTX2.3工作流实测_2044766587655294977.json
 hash: 33f875df72d80ca0
 coverage: 0.84127
 learned_at: 2026-10-15 22:36:40

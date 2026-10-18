@@ -4,7 +4,7 @@ name: WAN2.2初体验，AI视频生成大模型新王登基！电影级画质+�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950173242453614594.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.2初体验，AI视频生成大模型新王登基！电影级画质+体育视频生成+模型开源可商用_1950173242453614594.json
 hash: 910424729be4d63d
 coverage: 0.938596
 learned_at: 2026-10-15 22:43:34

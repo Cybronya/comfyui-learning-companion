@@ -4,7 +4,7 @@ name: 🤖【Wan2.1视频】lightx2v 图生视频  超清加速版🤖_193524254
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935242546002198529.json
+file: comfyui_library/workflows/视频生成/图生视频/🤖【Wan2.1视频】lightx2v 图生视频  超清加速版🤖_1935242546002198529.json
 hash: 01f7706e5dc9cd7f
 coverage: 0.891892
 learned_at: 2026-10-15 22:30:21

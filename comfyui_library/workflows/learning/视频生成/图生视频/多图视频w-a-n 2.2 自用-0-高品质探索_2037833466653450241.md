@@ -4,7 +4,7 @@ name: 多图视频w-a-n 2.2 自用-0-高品质探索_2037833466653450241.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037833466653450241.json
+file: comfyui_library/workflows/视频生成/图生视频/多图视频w-a-n 2.2 自用-0-高品质探索_2037833466653450241.json
 hash: b4ced6b71408ab9c
 coverage: 0.974359
 learned_at: 2026-10-15 22:35:59

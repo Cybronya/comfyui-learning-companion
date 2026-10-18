@@ -4,7 +4,7 @@ name: AnimateWan2.2 视频换人V2+单人多人_2005891179520688129.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005891179520688129.json
+file: comfyui_library/workflows/视频生成/图生视频/AnimateWan2.2 视频换人V2+单人多人_2005891179520688129.json
 hash: a3a076254924b308
 coverage: 0.567901
 learned_at: 2026-10-15 22:33:59

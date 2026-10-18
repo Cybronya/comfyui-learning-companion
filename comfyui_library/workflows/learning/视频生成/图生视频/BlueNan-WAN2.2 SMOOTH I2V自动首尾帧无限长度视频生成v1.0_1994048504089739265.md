@@ -4,7 +4,7 @@ name: BlueNan-WAN2.2 SMOOTH I2V自动首尾帧无限长度视频生成v1.0_19940
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994048504089739265.json
+file: comfyui_library/workflows/视频生成/图生视频/BlueNan-WAN2.2 SMOOTH I2V自动首尾帧无限长度视频生成v1.0_1994048504089739265.json
 hash: d181a49db94c6c4b
 coverage: 0.441379
 learned_at: 2026-10-15 22:33:20

@@ -4,7 +4,7 @@ name: Wan2.2 洒水 [泼水动画]  万相 图生视频 美女泼水舞蹈 图�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993179574894788609.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 洒水 [泼水动画]  万相 图生视频 美女泼水舞蹈 图生视频 美女唱歌_1993179574894788609.json
 hash: 06b1d7ee267a9bc1
 coverage: 0.911765
 learned_at: 2026-10-15 22:33:17

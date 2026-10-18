@@ -4,7 +4,7 @@ name: Wan2.5 图生视频-自动提示词_1971433318707314689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971433318707314689.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.5 图生视频-自动提示词_1971433318707314689.json
 hash: 8f21258c3de64fb6
 coverage: 0.68
 learned_at: 2026-10-15 22:31:56

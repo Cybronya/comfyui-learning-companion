@@ -4,7 +4,7 @@ name: 豆包 Seedance 1.5 Pro 图生视频_2004407567327653890.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004407567327653890.json
+file: comfyui_library/workflows/视频生成/图生视频/豆包 Seedance 1.5 Pro 图生视频_2004407567327653890.json
 hash: ffc0efb6f63e41e0
 coverage: 1
 learned_at: 2026-10-15 22:33:54

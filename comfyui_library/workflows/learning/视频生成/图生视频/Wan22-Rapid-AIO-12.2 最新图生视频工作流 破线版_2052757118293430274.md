@@ -4,7 +4,7 @@ name: Wan22-Rapid-AIO-12.2 最新图生视频工作流 破线版_205275711829343
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052757118293430274.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan22-Rapid-AIO-12.2 最新图生视频工作流 破线版_2052757118293430274.json
 hash: 09219c009b6208bf
 coverage: 0.863636
 learned_at: 2026-10-15 22:37:32

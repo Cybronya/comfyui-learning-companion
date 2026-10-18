@@ -4,7 +4,7 @@ name: 目前最强双人数字人infinitetalk官方版 循环流(自动遮罩版
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019770784713023490.json
+file: comfyui_library/workflows/视频生成/图生视频/目前最强双人数字人infinitetalk官方版 循环流(自动遮罩版） 林耀2.6_2019770784713023490.json
 hash: 56e7714acbfa09cd
 coverage: 0.745098
 learned_at: 2026-10-15 22:35:04

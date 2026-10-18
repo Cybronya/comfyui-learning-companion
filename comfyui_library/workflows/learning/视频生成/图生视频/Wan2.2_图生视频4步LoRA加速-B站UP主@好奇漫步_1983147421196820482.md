@@ -4,7 +4,7 @@ name: Wan2.2_图生视频4步LoRA加速-B站UP主@好奇漫步_19831474211968204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983147421196820482.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_图生视频4步LoRA加速-B站UP主@好奇漫步_1983147421196820482.json
 hash: a07a305b1eabfdb5
 coverage: 0.871795
 learned_at: 2026-10-15 22:32:43

@@ -4,7 +4,7 @@ name: Ltx+2.3_Dasiwa图生视频+高清_2051956185665949698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051956185665949698.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx+2.3_Dasiwa图生视频+高清_2051956185665949698.json
 hash: ab8f2d7843cc822b
 coverage: 0.896552
 learned_at: 2026-10-15 22:37:25

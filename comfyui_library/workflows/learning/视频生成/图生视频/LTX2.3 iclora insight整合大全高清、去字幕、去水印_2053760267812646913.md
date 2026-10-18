@@ -4,7 +4,7 @@ name: LTX2.3 iclora insight整合大全高清、去字幕、去水印_2053760267
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053760267812646913.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 iclora insight整合大全高清、去字幕、去水印_2053760267812646913.json
 hash: 2f646a0c710f2d64
 coverage: 0.941176
 learned_at: 2026-10-15 22:37:43

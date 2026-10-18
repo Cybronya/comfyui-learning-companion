@@ -4,7 +4,7 @@ name: Wan2.2-Animate-14B视频人物替换_2013092093194936321.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013092093194936321.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-14B视频人物替换_2013092093194936321.json
 hash: 62c2474ae5afab87
 coverage: 0.895833
 learned_at: 2026-10-15 22:34:29

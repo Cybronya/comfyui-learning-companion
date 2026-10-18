@@ -4,7 +4,7 @@ name: Smooth V2 Vs Dasiwa V9 Vs V8动漫视频对比工作流 浮云1.20_2013465
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013465829291073537.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth V2 Vs Dasiwa V9 Vs V8动漫视频对比工作流 浮云1.20_2013465829291073537.json
 hash: baf441a6735093df
 coverage: 0.782313
 learned_at: 2026-10-15 22:34:31

@@ -4,7 +4,7 @@ name: （鹊桥星河贞贞版）Wan2.2+提示词工具+无API视频扩写3分�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1961399903941541890.json
+file: comfyui_library/workflows/视频生成/文生视频/（鹊桥星河贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961399903941541890.json
 hash: f3f0277709da2888
 coverage: 0.787234
 learned_at: 2026-10-15 22:43:43

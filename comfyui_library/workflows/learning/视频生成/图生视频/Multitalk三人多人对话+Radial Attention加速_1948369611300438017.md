@@ -4,7 +4,7 @@ name: Multitalk三人多人对话+Radial Attention加速_1948369611300438017.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948369611300438017.json
+file: comfyui_library/workflows/视频生成/图生视频/Multitalk三人多人对话+Radial Attention加速_1948369611300438017.json
 hash: bf1a48ee615b9140
 coverage: 0.964286
 learned_at: 2026-10-15 22:30:47

@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Rapid-AIO-Mega V11模型Qwen3 VL自动图生视频极�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985338475329241089.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Rapid-AIO-Mega V11模型Qwen3 VL自动图生视频极速版_1985338475329241089.json
 hash: d6853fd58789b453
 coverage: 0.75
 learned_at: 2026-10-15 22:32:50

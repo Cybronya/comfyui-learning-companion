@@ -4,7 +4,7 @@ name: Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986094815710511106.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Remix-I2V-官方版-Qwen3反推_1986094815710511106.json
 hash: 2e80329267d583df
 coverage: 0.866667
 learned_at: 2026-10-15 22:32:54

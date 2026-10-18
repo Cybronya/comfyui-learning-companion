@@ -4,7 +4,7 @@ name: 3d_triposplat_image_to_gaussian_splat_2064180168951943169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064180168951943169.json
+file: comfyui_library/workflows/视频生成/图生视频/3d_triposplat_image_to_gaussian_splat_2064180168951943169.json
 hash: 28e960421d85a5a7
 coverage: 0.793103
 learned_at: 2026-10-15 22:39:21

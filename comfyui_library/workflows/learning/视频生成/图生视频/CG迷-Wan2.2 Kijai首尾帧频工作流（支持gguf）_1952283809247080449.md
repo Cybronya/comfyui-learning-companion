@@ -4,7 +4,7 @@ name: CG迷-Wan2.2 Kijai首尾帧频工作流（支持gguf）_195228380924708044
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952283809247080449.json
+file: comfyui_library/workflows/视频生成/图生视频/CG迷-Wan2.2 Kijai首尾帧频工作流（支持gguf）_1952283809247080449.json
 hash: 688245c0521d2d3e
 coverage: 0.964286
 learned_at: 2026-10-15 22:31:00

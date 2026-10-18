@@ -4,7 +4,7 @@ name: LTX2.3+QwenTTS音色克隆对口型【角色说话】_2033108960152133633.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033108960152133633.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+QwenTTS音色克隆对口型【角色说话】_2033108960152133633.json
 hash: c0eb529ea2c7e88e
 coverage: 0.593909
 learned_at: 2026-10-15 22:35:38

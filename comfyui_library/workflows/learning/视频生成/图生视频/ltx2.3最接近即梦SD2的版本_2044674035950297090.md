@@ -4,7 +4,7 @@ name: ltx2.3最接近即梦SD2的版本_2044674035950297090.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044674035950297090.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3最接近即梦SD2的版本_2044674035950297090.json
 hash: 2ece33b00deb91df
 coverage: 0.935484
 learned_at: 2026-10-15 22:36:40

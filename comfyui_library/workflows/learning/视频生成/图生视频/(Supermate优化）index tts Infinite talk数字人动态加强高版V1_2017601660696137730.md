@@ -4,7 +4,7 @@ name: (Supermate优化）index tts Infinite talk数字人动态加强高版V1_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017601660696137730.json
+file: comfyui_library/workflows/视频生成/图生视频/(Supermate优化）index tts Infinite talk数字人动态加强高版V1_2017601660696137730.json
 hash: 6de8e932e4ae8efb
 coverage: 0.769231
 learned_at: 2026-10-15 22:34:50

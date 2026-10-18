@@ -4,7 +4,7 @@ name: Seedace2.0--图生视频_2034439562046476290.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034439562046476290.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedace2.0--图生视频_2034439562046476290.json
 hash: 2fced40c1874cc77
 coverage: 1
 learned_at: 2026-10-15 22:35:44

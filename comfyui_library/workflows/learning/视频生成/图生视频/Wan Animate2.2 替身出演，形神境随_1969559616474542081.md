@@ -4,7 +4,7 @@ name: Wan Animate2.2 替身出演，形神境随_1969559616474542081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969559616474542081.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2 替身出演，形神境随_1969559616474542081.json
 hash: 05689eee168e8c33
 coverage: 0.538462
 learned_at: 2026-10-15 22:31:49

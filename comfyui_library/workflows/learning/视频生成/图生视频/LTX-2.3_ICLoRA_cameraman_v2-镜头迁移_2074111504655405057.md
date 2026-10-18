@@ -4,7 +4,7 @@ name: LTX-2.3_ICLoRA_cameraman_v2-镜头迁移_2074111504655405057.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074111504655405057.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_v2-镜头迁移_2074111504655405057.json
 hash: 5ae2987b4fb9efae
 coverage: 0.690909
 learned_at: 2026-10-15 22:41:12

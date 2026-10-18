@@ -4,7 +4,7 @@ name: 🐱video_ITX2.3_I2V图像首尾帧生视频_2031942296714878977.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031942296714878977.json
+file: comfyui_library/workflows/视频生成/图生视频/🐱video_ITX2.3_I2V图像首尾帧生视频_2031942296714878977.json
 hash: 288070b435a17162
 coverage: 0.888889
 learned_at: 2026-10-15 22:35:34

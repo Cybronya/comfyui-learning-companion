@@ -4,7 +4,7 @@ name: Wan2.2创意开箱视频广告_1960890103814139905.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1960890103814139905.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2创意开箱视频广告_1960890103814139905.json
 hash: c0c67e9aeb26a868
 coverage: 0.72
 learned_at: 2026-10-15 22:43:43

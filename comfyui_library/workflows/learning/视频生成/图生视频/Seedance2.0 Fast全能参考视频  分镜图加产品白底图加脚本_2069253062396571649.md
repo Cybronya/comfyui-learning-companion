@@ -4,7 +4,7 @@ name: Seedance2.0 Fast全能参考视频  分镜图加产品白底图加脚本_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069253062396571649.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 Fast全能参考视频  分镜图加产品白底图加脚本_2069253062396571649.json
 hash: 07a37014c03039a1
 coverage: 1
 learned_at: 2026-10-15 22:40:26

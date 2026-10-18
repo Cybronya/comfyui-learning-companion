@@ -4,7 +4,7 @@ name: 香_蕉出图模型ai创作加wan2.2组合首尾帧频生成ai动漫视频
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011853910419447809.json
+file: comfyui_library/workflows/视频生成/图生视频/香_蕉出图模型ai创作加wan2.2组合首尾帧频生成ai动漫视频低成本高清视频创作_2011853910419447809.json
 hash: 7f2cf23a9adca586
 coverage: 0.528736
 learned_at: 2026-10-15 22:34:25

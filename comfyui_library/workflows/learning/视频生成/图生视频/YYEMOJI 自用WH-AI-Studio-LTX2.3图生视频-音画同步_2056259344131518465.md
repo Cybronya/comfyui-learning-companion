@@ -4,7 +4,7 @@ name: YYEMOJI 自用WH-AI-Studio-LTX2.3图生视频-音画同步_205625934413151
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056259344131518465.json
+file: comfyui_library/workflows/视频生成/图生视频/YYEMOJI 自用WH-AI-Studio-LTX2.3图生视频-音画同步_2056259344131518465.json
 hash: 379ccb9b6b4e968b
 coverage: 0.880952
 learned_at: 2026-10-15 22:38:02

@@ -4,7 +4,7 @@ name: Wan2.2-vace-KJ视频-局部编辑替换_2041438667583004673.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041438667583004673.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-vace-KJ视频-局部编辑替换_2041438667583004673.json
 hash: 399f823b7c3fbf16
 coverage: 0.698795
 learned_at: 2026-10-15 22:36:20

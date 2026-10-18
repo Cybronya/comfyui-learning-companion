@@ -4,7 +4,7 @@ name: Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064109526978224129.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Bernini+Plus版节点+全能视频编辑一键切换v1.4_2064109526978224129.json
 hash: 8070da048e14c1b1
 coverage: 0.86747
 learned_at: 2026-10-15 22:39:19

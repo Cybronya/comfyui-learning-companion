@@ -4,7 +4,7 @@ name: ltx2.3-多图分段控制生视频_2059804412331253761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059804412331253761.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3-多图分段控制生视频_2059804412331253761.json
 hash: e90e0e5dcf6c2a49
 coverage: 0.971429
 learned_at: 2026-10-15 22:38:42

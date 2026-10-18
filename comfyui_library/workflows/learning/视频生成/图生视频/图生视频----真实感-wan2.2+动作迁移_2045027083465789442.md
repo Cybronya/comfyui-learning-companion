@@ -4,7 +4,7 @@ name: 图生视频----真实感-wan2.2+动作迁移_2045027083465789442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045027083465789442.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频----真实感-wan2.2+动作迁移_2045027083465789442.json
 hash: 9bc6d823808ed28b
 coverage: 0.61039
 learned_at: 2026-10-15 22:36:44

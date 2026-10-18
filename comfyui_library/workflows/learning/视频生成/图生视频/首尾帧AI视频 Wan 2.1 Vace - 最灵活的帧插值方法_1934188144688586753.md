@@ -4,7 +4,7 @@ name: 首尾帧AI视频 Wan 2.1 Vace - 最灵活的帧插值方法_1934188144688
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934188144688586753.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧AI视频 Wan 2.1 Vace - 最灵活的帧插值方法_1934188144688586753.json
 hash: 829871c56aa43cfd
 coverage: 0.512195
 learned_at: 2026-10-15 22:30:16

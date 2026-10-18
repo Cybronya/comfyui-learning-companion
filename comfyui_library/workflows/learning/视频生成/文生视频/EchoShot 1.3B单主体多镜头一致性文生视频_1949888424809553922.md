@@ -4,7 +4,7 @@ name: EchoShot 1.3B单主体多镜头一致性文生视频_1949888424809553922.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949888424809553922.json
+file: comfyui_library/workflows/视频生成/文生视频/EchoShot 1.3B单主体多镜头一致性文生视频_1949888424809553922.json
 hash: be211947d60ffdf0
 coverage: 1
 learned_at: 2026-10-15 22:43:33

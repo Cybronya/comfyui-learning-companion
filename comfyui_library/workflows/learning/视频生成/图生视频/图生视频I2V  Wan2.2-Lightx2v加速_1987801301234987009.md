@@ -4,7 +4,7 @@ name: 图生视频I2V  Wan2.2-Lightx2v加速_1987801301234987009.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987801301234987009.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频I2V  Wan2.2-Lightx2v加速_1987801301234987009.json
 hash: 135a571e81fc2bee
 coverage: 0.814815
 learned_at: 2026-10-15 22:33:00

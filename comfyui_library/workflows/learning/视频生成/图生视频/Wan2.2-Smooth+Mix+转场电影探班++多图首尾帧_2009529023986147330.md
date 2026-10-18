@@ -4,7 +4,7 @@ name: Wan2.2-Smooth+Mix+转场电影探班++多图首尾帧_2009529023986147330.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009529023986147330.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth+Mix+转场电影探班++多图首尾帧_2009529023986147330.json
 hash: 6d6d698af629ee9b
 coverage: 0.979592
 learned_at: 2026-10-15 22:34:13

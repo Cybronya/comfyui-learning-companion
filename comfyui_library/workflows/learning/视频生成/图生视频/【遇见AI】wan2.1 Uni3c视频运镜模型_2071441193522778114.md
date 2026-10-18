@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 Uni3c视频运镜模型_2071441193522778114.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071441193522778114.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 Uni3c视频运镜模型_2071441193522778114.json
 hash: ec0f918f61625969
 coverage: 1
 learned_at: 2026-10-15 22:40:45

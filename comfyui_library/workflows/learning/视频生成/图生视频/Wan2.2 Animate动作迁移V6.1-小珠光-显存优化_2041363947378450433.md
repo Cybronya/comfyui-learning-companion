@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移V6.1-小珠光-显存优化_2041363947378450433.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041363947378450433.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移V6.1-小珠光-显存优化_2041363947378450433.json
 hash: c22202ee68ed28c8
 coverage: 0.489051
 learned_at: 2026-10-15 22:36:19

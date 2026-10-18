@@ -4,7 +4,7 @@ name: （贞贞版）Wan2.2 All-in-one V9文生视频高动态极速版V1_195890
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958907032336281602.json
+file: comfyui_library/workflows/视频生成/文生视频/（贞贞版）Wan2.2 All-in-one V9文生视频高动态极速版V1_1958907032336281602.json
 hash: 5142c10a0048f1a6
 coverage: 0.823529
 learned_at: 2026-10-15 22:43:42

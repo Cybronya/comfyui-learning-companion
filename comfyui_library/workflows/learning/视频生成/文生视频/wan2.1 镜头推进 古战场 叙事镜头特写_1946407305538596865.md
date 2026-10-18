@@ -4,7 +4,7 @@ name: wan2.1 镜头推进 古战场 叙事镜头特写_1946407305538596865.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1946407305538596865.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 镜头推进 古战场 叙事镜头特写_1946407305538596865.json
 hash: 60b24067cf3b79e1
 coverage: 0.952381
 learned_at: 2026-10-15 22:43:31

@@ -4,7 +4,7 @@ name: LTXV 0.98 IC LORA线稿控制视频生视频V1_1947688689313951745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947688689313951745.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV 0.98 IC LORA线稿控制视频生视频V1_1947688689313951745.json
 hash: 839b4abfd9b3097f
 coverage: 0.607595
 learned_at: 2026-10-15 22:30:46

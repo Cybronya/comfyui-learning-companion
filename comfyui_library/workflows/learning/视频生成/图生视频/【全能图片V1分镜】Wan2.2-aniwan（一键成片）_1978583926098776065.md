@@ -4,7 +4,7 @@ name: 【全能图片V1分镜】Wan2.2-aniwan（一键成片）_1978583926098776
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978583926098776065.json
+file: comfyui_library/workflows/视频生成/图生视频/【全能图片V1分镜】Wan2.2-aniwan（一键成片）_1978583926098776065.json
 hash: 5d65dc1c11ed0a4c
 coverage: 0.705128
 learned_at: 2026-10-15 22:32:19

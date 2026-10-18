@@ -4,7 +4,7 @@ name: Wan2.2 Remix V3.0+Qwen3.5自动化图生视频V1（逻辑动态加强版�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036976880821215234.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix V3.0+Qwen3.5自动化图生视频V1（逻辑动态加强版）_2036976880821215234.json
 hash: 8f9d82d93aca259a
 coverage: 0.741935
 learned_at: 2026-10-15 22:35:53

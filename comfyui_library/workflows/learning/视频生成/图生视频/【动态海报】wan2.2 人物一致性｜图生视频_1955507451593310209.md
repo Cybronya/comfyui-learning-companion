@@ -4,7 +4,7 @@ name: 【动态海报】wan2.2 人物一致性｜图生视频_195550745159331020
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955507451593310209.json
+file: comfyui_library/workflows/视频生成/图生视频/【动态海报】wan2.2 人物一致性｜图生视频_1955507451593310209.json
 hash: f83616aaffac347b
 coverage: 0.891892
 learned_at: 2026-10-15 22:31:08

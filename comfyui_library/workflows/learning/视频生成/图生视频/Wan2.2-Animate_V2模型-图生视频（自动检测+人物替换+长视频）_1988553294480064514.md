@@ -4,7 +4,7 @@ name: Wan2.2-Animate_V2模型-图生视频（自动检测+人物替换+长视频
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988553294480064514.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate_V2模型-图生视频（自动检测+人物替换+长视频）_1988553294480064514.json
 hash: 6d99cfe9ecebccbb
 coverage: 0.608247
 learned_at: 2026-10-15 22:33:03

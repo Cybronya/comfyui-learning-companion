@@ -4,7 +4,7 @@ name: 万相Wan2.1-i2v-图生视频（详细讲解使用）_1907390680300154882.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1907390680300154882.json
+file: comfyui_library/workflows/视频生成/图生视频/万相Wan2.1-i2v-图生视频（详细讲解使用）_1907390680300154882.json
 hash: 60591b43a835ba0f
 coverage: 0.62963
 learned_at: 2026-10-15 22:29:27

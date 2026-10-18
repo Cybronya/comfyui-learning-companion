@@ -4,7 +4,7 @@ name: [发布版]aSiWa-WAN2.2景物类单图生视频带推理_20335255955937730
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033525595593773057.json
+file: comfyui_library/workflows/视频生成/图生视频/[发布版]aSiWa-WAN2.2景物类单图生视频带推理_2033525595593773057.json
 hash: 3881083217f9039c
 coverage: 0.794872
 learned_at: 2026-10-15 22:35:40

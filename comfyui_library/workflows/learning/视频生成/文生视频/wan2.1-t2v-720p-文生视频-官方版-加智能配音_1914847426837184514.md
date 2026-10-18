@@ -4,7 +4,7 @@ name: wan2.1-t2v-720p-文生视频-官方版-加智能配音_1914847426837184514
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1914847426837184514.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1-t2v-720p-文生视频-官方版-加智能配音_1914847426837184514.json
 hash: 237a54ba67e3ea2b
 coverage: 1
 learned_at: 2026-10-15 22:43:22

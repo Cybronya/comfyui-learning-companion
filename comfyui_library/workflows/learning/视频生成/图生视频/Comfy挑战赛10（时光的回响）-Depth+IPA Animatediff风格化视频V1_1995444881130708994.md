@@ -4,7 +4,7 @@ name: Comfy挑战赛10（时光的回响）-Depth+IPA Animatediff风格化视频
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995444881130708994.json
+file: comfyui_library/workflows/视频生成/图生视频/Comfy挑战赛10（时光的回响）-Depth+IPA Animatediff风格化视频V1_1995444881130708994.json
 hash: 00d16036329c736b
 coverage: 0.9375
 learned_at: 2026-10-15 22:33:23

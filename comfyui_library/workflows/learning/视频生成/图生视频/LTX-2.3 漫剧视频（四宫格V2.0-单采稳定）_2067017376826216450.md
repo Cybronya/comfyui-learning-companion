@@ -4,7 +4,7 @@ name: LTX-2.3 漫剧视频（四宫格V2.0-单采稳定）_2067017376826216450.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067017376826216450.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 漫剧视频（四宫格V2.0-单采稳定）_2067017376826216450.json
 hash: 23ddd4da56a27c6e
 coverage: 0.565789
 learned_at: 2026-10-15 22:39:55

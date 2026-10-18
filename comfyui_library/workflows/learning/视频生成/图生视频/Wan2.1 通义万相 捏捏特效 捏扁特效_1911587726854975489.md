@@ -4,7 +4,7 @@ name: Wan2.1 通义万相 捏捏特效 捏扁特效_1911587726854975489.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911587726854975489.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 通义万相 捏捏特效 捏扁特效_1911587726854975489.json
 hash: bdd0714842a09f87
 coverage: 1
 learned_at: 2026-10-15 22:29:31

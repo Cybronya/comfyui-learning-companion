@@ -4,7 +4,7 @@ name: wan2.2图生视频——高动态高遵循度_2055902519104163842.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055902519104163842.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频——高动态高遵循度_2055902519104163842.json
 hash: 6b9f22a969226d31
 coverage: 0.911765
 learned_at: 2026-10-15 22:37:59

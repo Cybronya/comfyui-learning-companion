@@ -4,7 +4,7 @@ name: 视频-视频延长扩写-wan2.2-SVI 2.0 Pro-smooth-官方_200637128416638
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006371284166385666.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-视频延长扩写-wan2.2-SVI 2.0 Pro-smooth-官方_2006371284166385666.json
 hash: 8f9abeacb9a2f768
 coverage: 0.678571
 learned_at: 2026-10-15 22:34:01

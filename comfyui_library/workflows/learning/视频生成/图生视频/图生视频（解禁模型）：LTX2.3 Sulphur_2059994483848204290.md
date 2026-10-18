@@ -4,7 +4,7 @@ name: 图生视频（解禁模型）：LTX2.3 Sulphur_2059994483848204290.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059994483848204290.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频（解禁模型）：LTX2.3 Sulphur_2059994483848204290.json
 hash: 47ef34134cedf9de
 coverage: 0.893617
 learned_at: 2026-10-15 22:38:45

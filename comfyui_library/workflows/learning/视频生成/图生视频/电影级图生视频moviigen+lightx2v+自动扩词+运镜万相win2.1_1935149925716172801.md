@@ -4,7 +4,7 @@ name: 电影级图生视频moviigen+lightx2v+自动扩词+运镜万相win2.1_193
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935149925716172801.json
+file: comfyui_library/workflows/视频生成/图生视频/电影级图生视频moviigen+lightx2v+自动扩词+运镜万相win2.1_1935149925716172801.json
 hash: e8373854cc0114f1
 coverage: 1
 learned_at: 2026-10-15 22:30:20

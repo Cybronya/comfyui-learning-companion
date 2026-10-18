@@ -4,7 +4,7 @@ name: 【丝滑补帧】Wan2.1 图生视频  KJ加强表情自然不崩脸_19275
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1927553770740146177.json
+file: comfyui_library/workflows/视频生成/文生视频/【丝滑补帧】Wan2.1 图生视频  KJ加强表情自然不崩脸_1927553770740146177.json
 hash: 9ce0f43a14f7a7c7
 coverage: 0.88
 learned_at: 2026-10-15 22:43:25

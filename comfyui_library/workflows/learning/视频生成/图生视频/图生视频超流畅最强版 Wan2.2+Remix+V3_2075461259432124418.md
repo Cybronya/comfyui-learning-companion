@@ -4,7 +4,7 @@ name: 图生视频超流畅最强版 Wan2.2+Remix+V3_2075461259432124418.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075461259432124418.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频超流畅最强版 Wan2.2+Remix+V3_2075461259432124418.json
 hash: eb4ea96635343469
 coverage: 1
 learned_at: 2026-10-15 22:41:23

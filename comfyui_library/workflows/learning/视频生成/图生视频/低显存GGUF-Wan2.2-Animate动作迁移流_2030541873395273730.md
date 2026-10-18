@@ -4,7 +4,7 @@ name: 低显存GGUF-Wan2.2-Animate动作迁移流_2030541873395273730.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030541873395273730.json
+file: comfyui_library/workflows/视频生成/图生视频/低显存GGUF-Wan2.2-Animate动作迁移流_2030541873395273730.json
 hash: fb508cdaa804971c
 coverage: 1
 learned_at: 2026-10-15 22:35:26

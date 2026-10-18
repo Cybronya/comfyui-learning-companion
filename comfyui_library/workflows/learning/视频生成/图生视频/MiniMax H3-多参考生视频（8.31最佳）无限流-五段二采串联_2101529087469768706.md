@@ -1,0 +1,396 @@
+---
+key: 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json
+name: MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json
+hash: 1c034fb7fa99e4bb
+coverage: 0.395604
+learned_at: 2026-10-17 02:14:17
+nodes: [SetNode, LoadImage, VAELoader, VAELoader, SetNode, SetNode, SetNode, SetNode, VHS_LoadVideo, SetNode, SetNode, SetNode, VHS_LoadVideo, VHS_LoadVideo, SetNode, SetNode, LoadImage, LoadImage, SetNode, SetNode, SetNode, GetNode, SetNode, LoraLoaderModelOnly, CLIPLoader, Reroute, Reroute, GetNode, GetNode, GetNode, GetNode, GetNode, VAEDecodeAudio, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, SamplerCustomAdvanced, SetNode, BasicGuider, SetNode, SetNode, VAEDecode, VAEDecodeAudio, GetNode, SamplerCustomAdvanced, GetNode, GetNode, LTXVSeparateAVLatent, SetNode, LoadAudio, SetNode, Note, KSamplerSelect, UNETLoader, SetNode, GetNode, SetNode, MiniMaxH3MemoryEfficientSageAttentionPatch, SplitSigmas, LTXVConcatAVLatent, SetNode, GetNode, easy float, BasicScheduler, LoraLoaderModelOnly, LoraLoaderModelOnly, Note, GetNode, MarkdownNote, MinimaxH3LatentUpscaler3D, GetNode, SetNode, SetNode, TrimAudioDuration, GetNode, MiniMaxH3ReferenceToVideo, LoadImage, VAEDecode, GetNode, GetNode, SetNode, SetNode, LoadImage, RandomNoise, LoadAudio, LoadAudio, VHS_VideoCombine, VHS_VideoCombine, SetNode, ComfyMathExpression, Text, ComfyMathExpression, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, MinimaxH3LatentUpscaler3D, SetNode, VHS_VideoCombine, SetNode, SplitSigmas, GetNode, GetNode, SetNode, VHS_VideoCombine, GetNode, BasicGuider, LTXVSeparateAVLatent, Note, KSamplerSelect, LTXVConcatAVLatent, BasicScheduler, GetNode, SetNode, GetNode, VAEDecodeAudio, SamplerCustomAdvanced, SetNode, VAEDecodeAudio, GetNode, SamplerCustomAdvanced, GetNode, GetNode, VAEDecode, GetNode, GetNode, MiniMaxH3ReferenceToVideo, RandomNoise, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetImageRangeFromBatch, MiniMaxH3AddGuide, MiniMaxH3AddGuide, BasicGuider, ImageBatchMulti, SaveAudio, AudioConcat, MinimaxH3LatentUpscaler3D, SetNode, VHS_VideoCombine, SetNode, SplitSigmas, GetNode, GetNode, SetNode, GetNode, BasicGuider, LTXVSeparateAVLatent, Note, KSamplerSelect, LTXVConcatAVLatent, BasicScheduler, GetNode, SetNode, GetNode, VAEDecodeAudio, SamplerCustomAdvanced, SetNode, VAEDecodeAudio, GetNode, SamplerCustomAdvanced, GetNode, GetNode, VAEDecode, GetNode, GetNode, MiniMaxH3ReferenceToVideo, VAEDecode, RandomNoise, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetImageRangeFromBatch, MiniMaxH3AddGuide, MiniMaxH3AddGuide, BasicGuider, MinimaxH3LatentUpscaler3D, SetNode, VHS_VideoCombine, SetNode, SplitSigmas, GetNode, GetNode, SetNode, VHS_VideoCombine, GetNode, BasicGuider, LTXVSeparateAVLatent, Note, KSamplerSelect, LTXVConcatAVLatent, BasicScheduler, GetNode, SetNode, GetNode, VAEDecodeAudio, SamplerCustomAdvanced, SetNode, VAEDecodeAudio, GetNode, SamplerCustomAdvanced, GetNode, GetNode, VAEDecode, GetNode, GetNode, MiniMaxH3ReferenceToVideo, VAEDecode, RandomNoise, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetImageRangeFromBatch, MiniMaxH3AddGuide, MiniMaxH3AddGuide, BasicGuider, MinimaxH3LatentUpscaler3D, SetNode, VHS_VideoCombine, SetNode, SplitSigmas, GetNode, GetNode, SetNode, VHS_VideoCombine, GetNode, BasicGuider, LTXVSeparateAVLatent, Note, KSamplerSelect, LTXVConcatAVLatent, BasicScheduler, GetNode, SetNode, GetNode, VAEDecodeAudio, SamplerCustomAdvanced, SetNode, VAEDecodeAudio, GetNode, SamplerCustomAdvanced, GetNode, GetNode, VAEDecode, GetNode, GetNode, MiniMaxH3ReferenceToVideo, VAEDecode, RandomNoise, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetImageRangeFromBatch, MiniMaxH3AddGuide, MiniMaxH3AddGuide, BasicGuider, AudioConcat, AudioConcat, AudioConcat, VHS_VideoCombine, LayerColor: ColorAdapter, VAEDecode, LayerColor: ColorAdapter, LayerColor: ColorAdapter, LayerColor: ColorAdapter, ResolutionSelector, PrimitiveFloat, LoadImage, LoadImage, LoadImage, LoadImage, VHS_VideoCombine]
+patterns: []
+missing: []
+---
+
+# 视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/MiniMax H3-多参考生视频（8.31最佳）无限流-五段二采串联_2101529087469768706.json`
+
+## 结构
+
+**生成流程**：Model → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（364 个）：
+- `SetNode`
+- `LoadImage`
+- `VAELoader`
+- `VAELoader`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_LoadVideo`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VHS_LoadVideo`
+- `VHS_LoadVideo`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `LoadImage`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `Reroute`
+- `Reroute`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `SetNode`
+- `BasicGuider`
+- `SetNode`
+- `SetNode`
+- `VAEDecode` ★核心
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `LTXVSeparateAVLatent`
+- `SetNode`
+- `LoadAudio`
+- `SetNode`
+- `Note`
+- `KSamplerSelect` ★核心
+- `UNETLoader` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `MiniMaxH3MemoryEfficientSageAttentionPatch`
+- `SplitSigmas`
+- `LTXVConcatAVLatent`
+- `SetNode`
+- `GetNode`
+- `easy float`
+- `BasicScheduler`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `GetNode`
+- `MarkdownNote`
+- `MinimaxH3LatentUpscaler3D`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `TrimAudioDuration`
+- `GetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `LoadImage`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `RandomNoise`
+- `LoadAudio`
+- `LoadAudio`
+- `VHS_VideoCombine`
+- `VHS_VideoCombine`
+- `SetNode`
+- `ComfyMathExpression`
+- `Text`
+- `ComfyMathExpression`
+- `忽略多组孤海`
+- `忽略多组孤海`
+- `忽略多组孤海`
+- `MinimaxH3LatentUpscaler3D`
+- `SetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SplitSigmas`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `BasicGuider`
+- `LTXVSeparateAVLatent`
+- `Note`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `BasicScheduler`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VAEDecodeAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SetNode`
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AddGuide`
+- `BasicGuider`
+- `ImageBatchMulti`
+- `SaveAudio`
+- `AudioConcat`
+- `MinimaxH3LatentUpscaler3D`
+- `SetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SplitSigmas`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `BasicGuider`
+- `LTXVSeparateAVLatent`
+- `Note`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `BasicScheduler`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VAEDecodeAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SetNode`
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `VAEDecode` ★核心
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AddGuide`
+- `BasicGuider`
+- `MinimaxH3LatentUpscaler3D`
+- `SetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SplitSigmas`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `BasicGuider`
+- `LTXVSeparateAVLatent`
+- `Note`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `BasicScheduler`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VAEDecodeAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SetNode`
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `VAEDecode` ★核心
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AddGuide`
+- `BasicGuider`
+- `MinimaxH3LatentUpscaler3D`
+- `SetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `SplitSigmas`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `BasicGuider`
+- `LTXVSeparateAVLatent`
+- `Note`
+- `KSamplerSelect` ★核心
+- `LTXVConcatAVLatent`
+- `BasicScheduler`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `VAEDecodeAudio` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `SetNode`
+- `VAEDecodeAudio` ★核心
+- `GetNode`
+- `SamplerCustomAdvanced` ★核心
+- `GetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `GetNode`
+- `GetNode`
+- `MiniMaxH3ReferenceToVideo`
+- `VAEDecode` ★核心
+- `RandomNoise`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetImageRangeFromBatch`
+- `MiniMaxH3AddGuide`
+- `MiniMaxH3AddGuide`
+- `BasicGuider`
+- `AudioConcat`
+- `AudioConcat`
+- `AudioConcat`
+- `VHS_VideoCombine`
+- `LayerColor: ColorAdapter`
+- `VAEDecode` ★核心
+- `LayerColor: ColorAdapter`
+- `LayerColor: ColorAdapter`
+- `LayerColor: ColorAdapter`
+- `ResolutionSelector`
+- `PrimitiveFloat`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `VHS_VideoCombine`
+
+## 知识
+
+覆盖率 **40%**（144/364）
+
+**有卡**：`LoadImage`、`VAELoader`、`VHS_LoadVideo`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAEDecodeAudio`、`SamplerCustomAdvanced`、`BasicGuider`、`VAEDecode`、`LTXVSeparateAVLatent`、`LoadAudio`、`KSamplerSelect`、`UNETLoader`、`MiniMaxH3MemoryEfficientSageAttentionPatch`、`SplitSigmas`、`LTXVConcatAVLatent`、`easy float`、`BasicScheduler`、`MinimaxH3LatentUpscaler3D`、`TrimAudioDuration`、`MiniMaxH3ReferenceToVideo`、`RandomNoise`、`VHS_VideoCombine`、`ComfyMathExpression`、`Text`、`忽略多组孤海`、`GetImageRangeFromBatch`、`MiniMaxH3AddGuide`、`ImageBatchMulti`、`SaveAudio`、`AudioConcat`、`LayerColor: ColorAdapter`、`ResolutionSelector`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPLoader、ResolutionSelector、LoadImage、UNETLoader、KSamplerSelect

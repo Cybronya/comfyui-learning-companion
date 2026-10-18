@@ -4,7 +4,7 @@ name: longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063165866346377218.json
+file: comfyui_library/workflows/视频生成/图生视频/longcat avartart 1.5-数字人-人物对口型-单人_2063165866346377218.json
 hash: 87c6082f9510ef17
 coverage: 0.489362
 learned_at: 2026-10-15 22:39:11

@@ -4,7 +4,7 @@ name: 教学用wan2.2 video工作流_1996141035090821122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996141035090821122.json
+file: comfyui_library/workflows/视频生成/图生视频/教学用wan2.2 video工作流_1996141035090821122.json
 hash: df4614d4b103dff6
 coverage: 0.797753
 learned_at: 2026-10-15 22:33:25

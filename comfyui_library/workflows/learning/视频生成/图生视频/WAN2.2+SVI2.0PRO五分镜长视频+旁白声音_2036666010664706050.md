@@ -4,7 +4,7 @@ name: WAN2.2+SVI2.0PRO五分镜长视频+旁白声音_2036666010664706050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036666010664706050.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2+SVI2.0PRO五分镜长视频+旁白声音_2036666010664706050.json
 hash: d533e01866a197a0
 coverage: 0.647059
 learned_at: 2026-10-15 22:35:53

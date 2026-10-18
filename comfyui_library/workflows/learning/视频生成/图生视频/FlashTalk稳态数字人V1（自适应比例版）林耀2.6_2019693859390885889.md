@@ -4,7 +4,7 @@ name: FlashTalk稳态数字人V1（自适应比例版）林耀2.6_20196938593908
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019693859390885889.json
+file: comfyui_library/workflows/视频生成/图生视频/FlashTalk稳态数字人V1（自适应比例版）林耀2.6_2019693859390885889.json
 hash: b4d5962bffea200d
 coverage: 1
 learned_at: 2026-10-15 22:35:03

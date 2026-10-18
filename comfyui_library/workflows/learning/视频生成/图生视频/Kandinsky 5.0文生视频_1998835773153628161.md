@@ -4,7 +4,7 @@ name: Kandinsky 5.0文生视频_1998835773153628161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998835773153628161.json
+file: comfyui_library/workflows/视频生成/图生视频/Kandinsky 5.0文生视频_1998835773153628161.json
 hash: ad2acb79578a0e4d
 coverage: 0.764706
 learned_at: 2026-10-15 22:33:34

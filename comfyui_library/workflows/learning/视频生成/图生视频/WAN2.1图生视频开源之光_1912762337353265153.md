@@ -4,7 +4,7 @@ name: WAN2.1图生视频开源之光_1912762337353265153.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912762337353265153.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频开源之光_1912762337353265153.json
 hash: e13467bd57cf400c
 coverage: 0.931034
 learned_at: 2026-10-15 22:29:32

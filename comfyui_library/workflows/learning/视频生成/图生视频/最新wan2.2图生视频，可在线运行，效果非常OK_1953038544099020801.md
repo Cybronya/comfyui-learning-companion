@@ -4,7 +4,7 @@ name: 最新wan2.2图生视频，可在线运行，效果非常OK_19530385440990
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953038544099020801.json
+file: comfyui_library/workflows/视频生成/图生视频/最新wan2.2图生视频，可在线运行，效果非常OK_1953038544099020801.json
 hash: 9b6a37b4a61bfa0d
 coverage: 1
 learned_at: 2026-10-15 22:31:04

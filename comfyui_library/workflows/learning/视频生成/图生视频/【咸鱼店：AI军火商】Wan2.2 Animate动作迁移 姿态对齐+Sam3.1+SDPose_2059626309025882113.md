@@ -4,7 +4,7 @@ name: 【咸鱼店：AI军火商】Wan2.2 Animate动作迁移 姿态对齐+Sam3.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059626309025882113.json
+file: comfyui_library/workflows/视频生成/图生视频/【咸鱼店：AI军火商】Wan2.2 Animate动作迁移 姿态对齐+Sam3.1+SDPose_2059626309025882113.json
 hash: 23ff978b559c2708
 coverage: 0.5
 learned_at: 2026-10-15 22:38:41

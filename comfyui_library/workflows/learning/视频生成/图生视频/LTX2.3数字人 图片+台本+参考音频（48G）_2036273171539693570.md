@@ -4,7 +4,7 @@ name: LTX2.3数字人 图片+台本+参考音频（48G）_2036273171539693570.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036273171539693570.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人 图片+台本+参考音频（48G）_2036273171539693570.json
 hash: 4987acb497581741
 coverage: 0.80597
 learned_at: 2026-10-15 22:35:51

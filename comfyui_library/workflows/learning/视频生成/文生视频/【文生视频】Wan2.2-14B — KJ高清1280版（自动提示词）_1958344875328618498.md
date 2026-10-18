@@ -4,7 +4,7 @@ name: 【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958344875328618498.json
+file: comfyui_library/workflows/视频生成/文生视频/【文生视频】Wan2.2-14B — KJ高清1280版（自动提示词）_1958344875328618498.json
 hash: 01673ba920ad3494
 coverage: 0.871795
 learned_at: 2026-10-15 22:43:42

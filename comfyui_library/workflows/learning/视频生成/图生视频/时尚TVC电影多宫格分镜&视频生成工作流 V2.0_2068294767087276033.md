@@ -4,7 +4,7 @@ name: 时尚TVC电影多宫格分镜&视频生成工作流 V2.0_2068294767087276
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068294767087276033.json
+file: comfyui_library/workflows/视频生成/图生视频/时尚TVC电影多宫格分镜&视频生成工作流 V2.0_2068294767087276033.json
 hash: 541532c7979035dd
 coverage: 0.567164
 learned_at: 2026-10-15 22:40:18

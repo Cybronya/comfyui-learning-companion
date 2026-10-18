@@ -4,7 +4,7 @@ name: Aiwood全网首发2.2Fun-VACE+Controlnet+视频角色替换+首尾帧_1966
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966481669362495490.json
+file: comfyui_library/workflows/视频生成/图生视频/Aiwood全网首发2.2Fun-VACE+Controlnet+视频角色替换+首尾帧_1966481669362495490.json
 hash: 80830d978a995505
 coverage: 0.974684
 learned_at: 2026-10-15 22:31:38

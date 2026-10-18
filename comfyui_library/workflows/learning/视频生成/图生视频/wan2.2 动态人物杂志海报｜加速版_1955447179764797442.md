@@ -4,7 +4,7 @@ name: wan2.2 动态人物杂志海报｜加速版_1955447179764797442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955447179764797442.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 动态人物杂志海报｜加速版_1955447179764797442.json
 hash: 850b3b68fe7519de
 coverage: 0.891892
 learned_at: 2026-10-15 22:31:08

@@ -4,7 +4,7 @@ name: 邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049005393069740034.json
+file: comfyui_library/workflows/视频生成/图生视频/邪修！参考生成Wan2.2+LTX2.3短剧V13_2049005393069740034.json
 hash: 3f809b0e21c3e1ce
 coverage: 0.662252
 learned_at: 2026-10-15 22:37:12

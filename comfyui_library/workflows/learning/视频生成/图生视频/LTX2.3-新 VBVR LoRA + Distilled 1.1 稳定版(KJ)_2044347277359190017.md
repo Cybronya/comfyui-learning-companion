@@ -4,7 +4,7 @@ name: LTX2.3-新 VBVR LoRA + Distilled 1.1 稳定版(KJ)_2044347277359190017.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044347277359190017.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-新 VBVR LoRA + Distilled 1.1 稳定版(KJ)_2044347277359190017.json
 hash: ffc62bde573d3993
 coverage: 0.842105
 learned_at: 2026-10-15 22:36:37

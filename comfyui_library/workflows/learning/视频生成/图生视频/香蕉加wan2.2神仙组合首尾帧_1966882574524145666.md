@@ -4,7 +4,7 @@ name: 香蕉加wan2.2神仙组合首尾帧_1966882574524145666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966882574524145666.json
+file: comfyui_library/workflows/视频生成/图生视频/香蕉加wan2.2神仙组合首尾帧_1966882574524145666.json
 hash: cdbc79faaaccfcbd
 coverage: 0.528736
 learned_at: 2026-10-15 22:31:39

@@ -4,7 +4,7 @@ name: 被压扁特效-万相wan2.1新玩意_1899672945285877762.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899672945285877762.json
+file: comfyui_library/workflows/视频生成/图生视频/被压扁特效-万相wan2.1新玩意_1899672945285877762.json
 hash: 6cfe0b487a05c555
 coverage: 0.95
 learned_at: 2026-10-15 22:29:21

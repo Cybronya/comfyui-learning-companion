@@ -4,7 +4,7 @@ name: SVI 2.0 Pro大模型升级啦：无限时长AI视频制作+ComfyUI工作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006246427911000065.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0 Pro大模型升级啦：无限时长AI视频制作+ComfyUI工作流讲解_2006246427911000065.json
 hash: 1ed79f4a09cace16
 coverage: 0.577586
 learned_at: 2026-10-15 22:34:01

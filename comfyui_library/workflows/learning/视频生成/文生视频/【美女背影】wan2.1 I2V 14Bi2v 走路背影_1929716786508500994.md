@@ -4,7 +4,7 @@ name: 【美女背影】wan2.1 I2V 14Bi2v 走路背影_1929716786508500994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1929716786508500994.json
+file: comfyui_library/workflows/视频生成/文生视频/【美女背影】wan2.1 I2V 14Bi2v 走路背影_1929716786508500994.json
 hash: 276124b6d841154a
 coverage: 0.818182
 learned_at: 2026-10-15 22:43:25

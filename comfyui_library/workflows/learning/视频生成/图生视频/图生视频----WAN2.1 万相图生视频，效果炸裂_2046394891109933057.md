@@ -4,7 +4,7 @@ name: 图生视频----WAN2.1 万相图生视频，效果炸裂_20463948911099330
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046394891109933057.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频----WAN2.1 万相图生视频，效果炸裂_2046394891109933057.json
 hash: 2c8c4f319e0e7737
 coverage: 0.824561
 learned_at: 2026-10-15 22:36:57

@@ -4,7 +4,7 @@ name: SmoothMix-V2.0图生视频_2010681519400034305.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010681519400034305.json
+file: comfyui_library/workflows/视频生成/图生视频/SmoothMix-V2.0图生视频_2010681519400034305.json
 hash: 810058645e15d7f9
 coverage: 1
 learned_at: 2026-10-15 22:34:18

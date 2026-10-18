@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移V6.1（自动尺寸）_2043833661866385410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043833661866385410.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移V6.1（自动尺寸）_2043833661866385410.json
 hash: 9f405177c9f09356
 coverage: 0.520548
 learned_at: 2026-10-15 22:36:34

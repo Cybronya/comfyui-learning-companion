@@ -4,7 +4,7 @@ name: DaSiWa-WAN2.2图生视频流-支持单图 _ 双图 _ 三图 出视频_2000
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000228128893136898.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa-WAN2.2图生视频流-支持单图 _ 双图 _ 三图 出视频_2000228128893136898.json
 hash: 6ef0f811a206137f
 coverage: 0.448889
 learned_at: 2026-10-15 22:33:39

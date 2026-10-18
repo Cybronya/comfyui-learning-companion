@@ -4,7 +4,7 @@ name: LTX2.3图生视频说话唱歌_骆驼版本_2037907809546805250.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037907809546805250.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频说话唱歌_骆驼版本_2037907809546805250.json
 hash: d55e4a8b8bb6fe9f
 coverage: 0.783784
 learned_at: 2026-10-15 22:36:00

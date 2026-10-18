@@ -4,7 +4,7 @@ name: MultiTalk+AniWan+FantasyPortrait高动态表情追踪对口型数字人V1_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956275503990755329.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk+AniWan+FantasyPortrait高动态表情追踪对口型数字人V1_1956275503990755329.json
 hash: a6b85bef568913dd
 coverage: 0.925
 learned_at: 2026-10-15 22:31:12

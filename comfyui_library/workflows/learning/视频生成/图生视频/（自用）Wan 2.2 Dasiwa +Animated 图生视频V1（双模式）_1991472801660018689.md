@@ -4,7 +4,7 @@ name: （自用）Wan 2.2 Dasiwa +Animated 图生视频V1（双模式）_1991472
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991472801660018689.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan 2.2 Dasiwa +Animated 图生视频V1（双模式）_1991472801660018689.json
 hash: 310ea255979f562d
 coverage: 0.746032
 learned_at: 2026-10-15 22:33:13

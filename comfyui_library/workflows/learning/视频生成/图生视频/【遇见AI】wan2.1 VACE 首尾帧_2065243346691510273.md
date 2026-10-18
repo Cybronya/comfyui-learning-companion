@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065243346691510273.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 VACE 首尾帧_2065243346691510273.json
 hash: a56caf1f8e813fc4
 coverage: 0.923077
 learned_at: 2026-10-15 22:39:37

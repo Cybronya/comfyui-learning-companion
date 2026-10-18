@@ -4,7 +4,7 @@ name: BindWeave_single_image_1993600135810711553.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993600135810711553.json
+file: comfyui_library/workflows/视频生成/图生视频/BindWeave_single_image_1993600135810711553.json
 hash: 451183cb2dc7a9d9
 coverage: 0.481481
 learned_at: 2026-10-15 22:33:19

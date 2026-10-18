@@ -4,7 +4,7 @@ name: 【LLM景别自动分镜】Wan2.2-SkyreelsV2图生长视频_19625229629958
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962522962995855362.json
+file: comfyui_library/workflows/视频生成/图生视频/【LLM景别自动分镜】Wan2.2-SkyreelsV2图生长视频_1962522962995855362.json
 hash: c381bcb57597466d
 coverage: 0.666667
 learned_at: 2026-10-15 22:31:31

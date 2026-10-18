@@ -4,7 +4,7 @@ name: LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078085536597757954.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 数字人 导演台分镜（最新版）_2078085536597757954.json
 hash: a51317f7d32a92bb
 coverage: 1
 learned_at: 2026-10-15 22:41:48

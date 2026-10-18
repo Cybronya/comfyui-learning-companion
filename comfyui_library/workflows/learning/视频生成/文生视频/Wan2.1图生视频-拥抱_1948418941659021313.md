@@ -4,7 +4,7 @@ name: Wan2.1图生视频-拥抱_1948418941659021313.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1948418941659021313.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1图生视频-拥抱_1948418941659021313.json
 hash: 030ccef59c41ab88
 coverage: 1
 learned_at: 2026-10-15 22:43:32

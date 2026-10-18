@@ -4,7 +4,7 @@ name: 图生视频   Wan2.1  局部动作_2032283738113056769.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032283738113056769.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频   Wan2.1  局部动作_2032283738113056769.json
 hash: 76e0669427afb0fa
 coverage: 0.777778
 learned_at: 2026-10-15 22:35:35

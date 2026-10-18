@@ -4,7 +4,7 @@ name: Wan 2.2 SVI 2.0 PRO 长视频最新版！_2005892831866744833.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005892831866744833.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 SVI 2.0 PRO 长视频最新版！_2005892831866744833.json
 hash: 28f4445733f657d8
 coverage: 0.566929
 learned_at: 2026-10-15 22:33:59

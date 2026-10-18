@@ -4,7 +4,7 @@ name: wan2.2-fun-镜头控制_1956984735042867201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956984735042867201.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-fun-镜头控制_1956984735042867201.json
 hash: d8278aa5282908ed
 coverage: 0.748387
 learned_at: 2026-10-15 22:31:15

@@ -4,7 +4,7 @@ name: 酱板鸭视频生成器（LTX-2.3版）：一键生成多国语言对话�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037239092089458690.json
+file: comfyui_library/workflows/视频生成/图生视频/酱板鸭视频生成器（LTX-2.3版）：一键生成多国语言对话的酱板鸭视频，支持OpenClaw调用！_2037239092089458690.json
 hash: dcee3f8405eee1c7
 coverage: 0.787879
 learned_at: 2026-10-15 22:35:56

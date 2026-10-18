@@ -4,7 +4,7 @@ name: Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930306829082071042.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_官方工作流_I2V_k神版本_720P_1930306829082071042.json
 hash: 8a56b179ba1d95ce
 coverage: 0.68
 learned_at: 2026-10-15 22:30:05

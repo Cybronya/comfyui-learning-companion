@@ -4,7 +4,7 @@ name: Smooth Mix wan2.2 电影质画质-加速版+视频放大插帧-图生视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980235190960369666.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix wan2.2 电影质画质-加速版+视频放大插帧-图生视频_1980235190960369666.json
 hash: 7c3c7d807f001b71
 coverage: 0.867925
 learned_at: 2026-10-15 22:32:29

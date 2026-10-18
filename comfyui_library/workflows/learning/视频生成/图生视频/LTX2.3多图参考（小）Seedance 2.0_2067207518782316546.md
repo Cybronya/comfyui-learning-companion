@@ -4,7 +4,7 @@ name: LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067207518782316546.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3多图参考（小）Seedance 2.0_2067207518782316546.json
 hash: d682f452c5b63fbc
 coverage: 0.615385
 learned_at: 2026-10-15 22:39:58

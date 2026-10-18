@@ -4,7 +4,7 @@ name: 【Wan2.1系列】画质救星SLG技术_1918486985445675009.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1918486985445675009.json
+file: comfyui_library/workflows/视频生成/文生视频/【Wan2.1系列】画质救星SLG技术_1918486985445675009.json
 hash: 79c2024cc9d9204f
 coverage: 0.894737
 learned_at: 2026-10-15 22:43:23

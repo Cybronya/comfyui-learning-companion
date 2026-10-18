@@ -4,7 +4,7 @@ name: LTX2.0 图生视频工作流-48G专用_2008746733387390978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008746733387390978.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0 图生视频工作流-48G专用_2008746733387390978.json
 hash: b00b1e69243182ac
 coverage: 0.907407
 learned_at: 2026-10-15 22:34:08

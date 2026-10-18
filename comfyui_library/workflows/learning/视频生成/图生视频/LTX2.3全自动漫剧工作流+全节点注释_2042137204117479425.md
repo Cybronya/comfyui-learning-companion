@@ -4,7 +4,7 @@ name: LTX2.3全自动漫剧工作流+全节点注释_2042137204117479425.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042137204117479425.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全自动漫剧工作流+全节点注释_2042137204117479425.json
 hash: 9f913f098bf688a4
 coverage: 0.474638
 learned_at: 2026-10-15 22:36:25

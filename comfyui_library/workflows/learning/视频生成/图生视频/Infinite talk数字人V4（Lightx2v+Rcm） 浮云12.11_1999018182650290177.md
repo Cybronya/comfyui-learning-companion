@@ -4,7 +4,7 @@ name: Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.11_1999018182650290177
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999018182650290177.json
+file: comfyui_library/workflows/视频生成/图生视频/Infinite talk数字人V4（Lightx2v+Rcm） 浮云12.11_1999018182650290177.json
 hash: da879e68b810692c
 coverage: 0.896552
 learned_at: 2026-10-15 22:33:35

@@ -4,7 +4,7 @@ name: 🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTal
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937131515212107778.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️数字人_唱歌_音频驱动图片_对口型 MultiTalk_InfiniteTalk-wan2.1_1937131515212107778.json
 hash: 6745025e2399a1e4
 coverage: 0.419355
 learned_at: 2026-10-15 22:30:28

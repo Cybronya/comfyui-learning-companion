@@ -4,7 +4,7 @@ name: Supermate 推荐=Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981353708422348802.json
+file: comfyui_library/workflows/视频生成/图生视频/Supermate 推荐=Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_1981353708422348802.json
 hash: e04c83ba9cd2e41a
 coverage: 0.430556
 learned_at: 2026-10-15 22:32:37

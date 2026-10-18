@@ -4,7 +4,7 @@ name: Wan2.2+Animate+V2模运动迁移Uni3c运镜_1976670695512068097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976670695512068097.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Animate+V2模运动迁移Uni3c运镜_1976670695512068097.json
 hash: 07aaa7ba2f2d5e4a
 coverage: 0.944444
 learned_at: 2026-10-15 22:32:12

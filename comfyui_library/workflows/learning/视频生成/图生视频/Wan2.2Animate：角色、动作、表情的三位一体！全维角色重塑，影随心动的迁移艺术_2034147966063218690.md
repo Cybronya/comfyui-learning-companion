@@ -4,7 +4,7 @@ name: Wan2.2Animate：角色、动作、表情的三位一体！全维角色重�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034147966063218690.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2Animate：角色、动作、表情的三位一体！全维角色重塑，影随心动的迁移艺术_2034147966063218690.json
 hash: 120ebf09baff72df
 coverage: 0.678161
 learned_at: 2026-10-15 22:35:43

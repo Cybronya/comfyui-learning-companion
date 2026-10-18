@@ -4,7 +4,7 @@ name: Wan2.2-Animate_v2 KJ版：精准替换（全新Sec遮罩方案）_20088549
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008854947357532162.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate_v2 KJ版：精准替换（全新Sec遮罩方案）_2008854947357532162.json
 hash: b804d628328bd25e
 coverage: 0.677966
 learned_at: 2026-10-15 22:34:09

@@ -4,7 +4,7 @@ name: 🦖wan2.1 变玩偶捏捏_1925461590995292161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1925461590995292161.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖wan2.1 变玩偶捏捏_1925461590995292161.json
 hash: 7095b4fe28534864
 coverage: 1
 learned_at: 2026-10-15 22:29:52

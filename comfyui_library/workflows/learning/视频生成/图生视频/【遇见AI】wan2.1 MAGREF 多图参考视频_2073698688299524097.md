@@ -4,7 +4,7 @@ name: 【遇见AI】wan2.1 MAGREF 多图参考视频_2073698688299524097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073698688299524097.json
+file: comfyui_library/workflows/视频生成/图生视频/【遇见AI】wan2.1 MAGREF 多图参考视频_2073698688299524097.json
 hash: b3311985c1a9b464
 coverage: 0.935484
 learned_at: 2026-10-15 22:41:09

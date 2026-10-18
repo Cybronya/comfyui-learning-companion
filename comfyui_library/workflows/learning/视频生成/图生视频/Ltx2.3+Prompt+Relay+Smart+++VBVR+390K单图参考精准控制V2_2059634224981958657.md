@@ -4,7 +4,7 @@ name: Ltx2.3+Prompt+Relay+Smart+++VBVR+390K单图参考精准控制V2_2059634224
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059634224981958657.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3+Prompt+Relay+Smart+++VBVR+390K单图参考精准控制V2_2059634224981958657.json
 hash: 6607e6e0be9c6acc
 coverage: 0.74359
 learned_at: 2026-10-15 22:38:41

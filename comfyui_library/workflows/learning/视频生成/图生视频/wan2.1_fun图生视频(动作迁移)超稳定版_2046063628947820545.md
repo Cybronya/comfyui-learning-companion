@@ -4,7 +4,7 @@ name: wan2.1_fun图生视频(动作迁移)超稳定版_2046063628947820545.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046063628947820545.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_fun图生视频(动作迁移)超稳定版_2046063628947820545.json
 hash: 92197690b960b2d7
 coverage: 0.805556
 learned_at: 2026-10-15 22:36:54

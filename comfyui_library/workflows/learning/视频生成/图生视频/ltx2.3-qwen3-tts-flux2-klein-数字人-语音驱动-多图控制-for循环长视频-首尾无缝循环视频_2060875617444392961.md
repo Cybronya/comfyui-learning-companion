@@ -4,7 +4,7 @@ name: ltx2.3-qwen3-tts-flux2-klein-数字人-语音驱动-多图控制-for循环
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060875617444392961.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3-qwen3-tts-flux2-klein-数字人-语音驱动-多图控制-for循环长视频-首尾无缝循环视频_2060875617444392961.json
 hash: 3bbfc6e7e478013f
 coverage: 0.898438
 learned_at: 2026-10-15 22:38:50

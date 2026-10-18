@@ -4,7 +4,7 @@ name: Pro-wan2.2动态_2010899703377960962.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010899703377960962.json
+file: comfyui_library/workflows/视频生成/图生视频/Pro-wan2.2动态_2010899703377960962.json
 hash: fecfc6d992fcbe37
 coverage: 0.722892
 learned_at: 2026-10-15 22:34:18

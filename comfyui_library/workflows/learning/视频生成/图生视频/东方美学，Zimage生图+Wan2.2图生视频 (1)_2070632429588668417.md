@@ -4,7 +4,7 @@ name: 东方美学，Zimage生图+Wan2.2图生视频 (1)_2070632429588668417.jso
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070632429588668417.json
+file: comfyui_library/workflows/视频生成/图生视频/东方美学，Zimage生图+Wan2.2图生视频 (1)_2070632429588668417.json
 hash: 9532d1ded282b7cf
 coverage: 0.933962
 learned_at: 2026-10-15 22:40:41

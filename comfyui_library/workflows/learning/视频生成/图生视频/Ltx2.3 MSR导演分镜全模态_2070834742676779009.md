@@ -4,7 +4,7 @@ name: Ltx2.3 MSR导演分镜全模态_2070834742676779009.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070834742676779009.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 MSR导演分镜全模态_2070834742676779009.json
 hash: 16bb26badfe7f5a6
 coverage: 0.58042
 learned_at: 2026-10-15 22:40:42

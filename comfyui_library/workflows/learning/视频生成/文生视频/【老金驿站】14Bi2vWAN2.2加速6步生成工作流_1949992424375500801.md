@@ -4,7 +4,7 @@ name: 【老金驿站】14Bi2vWAN2.2加速6步生成工作流_194999242437550080
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949992424375500801.json
+file: comfyui_library/workflows/视频生成/文生视频/【老金驿站】14Bi2vWAN2.2加速6步生成工作流_1949992424375500801.json
 hash: c5240abb04e43801
 coverage: 0.95
 learned_at: 2026-10-15 22:43:33

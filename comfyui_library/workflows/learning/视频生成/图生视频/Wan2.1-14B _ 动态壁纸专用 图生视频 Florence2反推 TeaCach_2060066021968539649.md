@@ -4,7 +4,7 @@ name: Wan2.1-14B _ 动态壁纸专用 图生视频 Florence2反推 TeaCach_20600
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060066021968539649.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-14B _ 动态壁纸专用 图生视频 Florence2反推 TeaCach_2060066021968539649.json
 hash: e276ab4a173b64e7
 coverage: 0.717391
 learned_at: 2026-10-15 22:38:45

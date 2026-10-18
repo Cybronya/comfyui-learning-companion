@@ -4,7 +4,7 @@ name: 【歌曲翻唱】Wan2.2图生视频-S2V数字人骨骼控制_196203888297
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962038882978172929.json
+file: comfyui_library/workflows/视频生成/图生视频/【歌曲翻唱】Wan2.2图生视频-S2V数字人骨骼控制_1962038882978172929.json
 hash: a46c1c73931ceabd
 coverage: 0.763889
 learned_at: 2026-10-15 22:31:30

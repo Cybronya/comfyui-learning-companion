@@ -4,7 +4,7 @@ name: 超强Happyhorse1.0 快乐马图生视频+放大工作流_2048771078763323
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048771078763323394.json
+file: comfyui_library/workflows/视频生成/图生视频/超强Happyhorse1.0 快乐马图生视频+放大工作流_2048771078763323394.json
 hash: 6e25425c00c0cfe0
 coverage: 0.5
 learned_at: 2026-10-15 22:37:11

@@ -4,7 +4,7 @@ name: (骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_199861091
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998610915446677506.json
+file: comfyui_library/workflows/视频生成/图生视频/(骨骼自适应)Wan2.2 Animate V2模型Move模式运动迁移V1_1998610915446677506.json
 hash: 435f34c9c9b79ec1
 coverage: 0.583333
 learned_at: 2026-10-15 22:33:32

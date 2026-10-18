@@ -4,7 +4,7 @@ name: Wan2.1_T2V_lynx文生视频人物一致性_1976624751336660994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976624751336660994.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_T2V_lynx文生视频人物一致性_1976624751336660994.json
 hash: 2b70c91b0883b786
 coverage: 0.723404
 learned_at: 2026-10-15 22:32:11

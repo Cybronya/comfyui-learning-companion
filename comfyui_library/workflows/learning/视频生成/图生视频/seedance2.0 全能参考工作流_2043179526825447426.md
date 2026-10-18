@@ -4,7 +4,7 @@ name: seedance2.0 全能参考工作流_2043179526825447426.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043179526825447426.json
+file: comfyui_library/workflows/视频生成/图生视频/seedance2.0 全能参考工作流_2043179526825447426.json
 hash: 913525e246303b85
 coverage: 0.884615
 learned_at: 2026-10-15 22:36:31

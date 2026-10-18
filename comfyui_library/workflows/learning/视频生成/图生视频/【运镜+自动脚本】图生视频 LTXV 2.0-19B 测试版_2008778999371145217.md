@@ -4,7 +4,7 @@ name: 【运镜+自动脚本】图生视频 LTXV 2.0-19B 测试版_2008778999371
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008778999371145217.json
+file: comfyui_library/workflows/视频生成/图生视频/【运镜+自动脚本】图生视频 LTXV 2.0-19B 测试版_2008778999371145217.json
 hash: a0ac889e9d7ac8bb
 coverage: 0.8375
 learned_at: 2026-10-15 22:34:09

@@ -4,7 +4,7 @@ name: 太空梦想家 豆包 seedream4.5转绘+seedance1.0视频推理_199830874
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998308744410882049.json
+file: comfyui_library/workflows/视频生成/图生视频/太空梦想家 豆包 seedream4.5转绘+seedance1.0视频推理_1998308744410882049.json
 hash: c4be11ce5539bf7b
 coverage: 0.8
 learned_at: 2026-10-15 22:33:31

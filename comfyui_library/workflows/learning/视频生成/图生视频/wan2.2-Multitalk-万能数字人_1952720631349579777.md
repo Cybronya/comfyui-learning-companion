@@ -4,7 +4,7 @@ name: wan2.2-Multitalk-万能数字人_1952720631349579777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952720631349579777.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-Multitalk-万能数字人_1952720631349579777.json
 hash: 91020a4e4d767beb
 coverage: 0.921053
 learned_at: 2026-10-15 22:31:03

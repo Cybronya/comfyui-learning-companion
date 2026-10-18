@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：仙侠魔法-寒光剑、波动�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914660971821105153.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：仙侠魔法-寒光剑、波动拳、火焰枪等_1914660971821105153.json
 hash: 34ddec2bf3e6000e
 coverage: 1
 learned_at: 2026-10-15 22:29:36

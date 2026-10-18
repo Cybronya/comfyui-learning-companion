@@ -4,7 +4,7 @@ name: 视频人物替换 Wan Animate KJ V2 Infinite口型校对_1975168167381217
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975168167381217282.json
+file: comfyui_library/workflows/视频生成/图生视频/视频人物替换 Wan Animate KJ V2 Infinite口型校对_1975168167381217282.json
 hash: 49a1d23230f5d728
 coverage: 0.692308
 learned_at: 2026-10-15 22:32:07

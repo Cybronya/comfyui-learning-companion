@@ -4,7 +4,7 @@ name: wan2.2 WanMoeKsampler 图生视频_1955829466150965249.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955829466150965249.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 WanMoeKsampler 图生视频_1955829466150965249.json
 hash: 482ef746fa2c76f2
 coverage: 1
 learned_at: 2026-10-15 22:31:10

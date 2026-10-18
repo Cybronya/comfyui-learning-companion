@@ -4,7 +4,7 @@ name: LTX2.3图生视频加放大，可以选择要的清晰度_2035878269639200
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035878269639200770.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频加放大，可以选择要的清晰度_2035878269639200770.json
 hash: fd07f4f28518d97f
 coverage: 0.906977
 learned_at: 2026-10-15 22:35:50

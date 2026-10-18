@@ -4,7 +4,7 @@ name: [泼水特效] WAN2.2 美女真实泼水换装 画风真实 运行流畅 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980795448254484481.json
+file: comfyui_library/workflows/视频生成/图生视频/[泼水特效] WAN2.2 美女真实泼水换装 画风真实 运行流畅 可更换lora_1980795448254484481.json
 hash: 9c7a32c4d64b5018
 coverage: 0.911765
 learned_at: 2026-10-15 22:32:33

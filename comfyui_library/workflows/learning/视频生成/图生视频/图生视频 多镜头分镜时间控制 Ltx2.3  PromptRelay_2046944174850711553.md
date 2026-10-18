@@ -4,7 +4,7 @@ name: 图生视频 多镜头分镜时间控制 Ltx2.3  PromptRelay_2046944174850
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046944174850711553.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频 多镜头分镜时间控制 Ltx2.3  PromptRelay_2046944174850711553.json
 hash: 90a49d13a67cf31a
 coverage: 0.804878
 learned_at: 2026-10-15 22:37:02

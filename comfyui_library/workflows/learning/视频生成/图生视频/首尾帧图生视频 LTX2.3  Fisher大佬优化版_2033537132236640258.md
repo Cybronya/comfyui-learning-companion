@@ -4,7 +4,7 @@ name: 首尾帧图生视频 LTX2.3  Fisher大佬优化版_2033537132236640258.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033537132236640258.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧图生视频 LTX2.3  Fisher大佬优化版_2033537132236640258.json
 hash: d7bf7ee4d9b4f963
 coverage: 0.844828
 learned_at: 2026-10-15 22:35:40

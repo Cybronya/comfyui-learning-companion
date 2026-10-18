@@ -4,7 +4,7 @@ name: Wan2.2 6步差异模型Sigma调度3迭代图生视频动态加速版V3_195
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956010463471566849.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 6步差异模型Sigma调度3迭代图生视频动态加速版V3_1956010463471566849.json
 hash: 328d221ed11b9cc9
 coverage: 0.813559
 learned_at: 2026-10-15 22:31:11

@@ -4,7 +4,7 @@ name: 数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_2020512883326586881.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020512883326586881.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人对口型RCM+Infinite Talk+VoxCPM TTS1.5_2020512883326586881.json
 hash: fb2a18c3758ba1ad
 coverage: 0.945946
 learned_at: 2026-10-15 22:35:06

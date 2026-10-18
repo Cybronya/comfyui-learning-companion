@@ -4,7 +4,7 @@ name: LTX video 8vram Best Settings_1869653016793227265.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1869653016793227265.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX video 8vram Best Settings_1869653016793227265.json
 hash: 78088ac83bc56ab8
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:14

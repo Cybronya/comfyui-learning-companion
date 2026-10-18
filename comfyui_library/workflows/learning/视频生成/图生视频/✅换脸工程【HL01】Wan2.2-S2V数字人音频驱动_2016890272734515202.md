@@ -4,7 +4,7 @@ name: ✅换脸工程【HL01】Wan2.2-S2V数字人音频驱动_20168902727345152
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016890272734515202.json
+file: comfyui_library/workflows/视频生成/图生视频/✅换脸工程【HL01】Wan2.2-S2V数字人音频驱动_2016890272734515202.json
 hash: 2c707d8ee21c21f2
 coverage: 0.921053
 learned_at: 2026-10-15 22:34:44

@@ -4,7 +4,7 @@ name: Wan2.2 Remix V3 图生视频超流畅最强版 人物一致性_20770193600
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077019360048271362.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix V3 图生视频超流畅最强版 人物一致性_2077019360048271362.json
 hash: 3b968d2c585a8f5f
 coverage: 1
 learned_at: 2026-10-15 22:41:36

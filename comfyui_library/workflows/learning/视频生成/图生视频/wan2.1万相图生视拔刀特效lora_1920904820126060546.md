@@ -4,7 +4,7 @@ name: wan2.1万相图生视拔刀特效lora_1920904820126060546.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920904820126060546.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1万相图生视拔刀特效lora_1920904820126060546.json
 hash: a90b321473d332e7
 coverage: 0.894737
 learned_at: 2026-10-15 22:29:43

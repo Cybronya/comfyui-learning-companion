@@ -4,7 +4,7 @@ name: wan2.2_14B_首尾帧视频-8步加速版-自动提示词_19522196426747535
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952219642674753538.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_14B_首尾帧视频-8步加速版-自动提示词_1952219642674753538.json
 hash: b47bcae176aa56b6
 coverage: 0.861111
 learned_at: 2026-10-15 22:31:00

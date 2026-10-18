@@ -4,7 +4,7 @@ name: 一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001309696000655361.json
+file: comfyui_library/workflows/视频生成/图生视频/一句话让照片动起来+Wan2.2+Enhanced_2001309696000655361.json
 hash: 2a5284d3dd95094c
 coverage: 0.962963
 learned_at: 2026-10-15 22:33:45

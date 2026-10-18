@@ -4,7 +4,7 @@ name: LTX2.3-图生视频+导演分镜节点（自定义音频版）_20560194586
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056019458614931458.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频+导演分镜节点（自定义音频版）_2056019458614931458.json
 hash: a54a8f6cf7c8b93a
 coverage: 0.92
 learned_at: 2026-10-15 22:38:00

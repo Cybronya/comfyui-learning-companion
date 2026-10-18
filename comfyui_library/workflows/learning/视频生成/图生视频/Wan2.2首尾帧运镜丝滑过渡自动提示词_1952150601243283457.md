@@ -4,7 +4,7 @@ name: Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952150601243283457.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2首尾帧运镜丝滑过渡自动提示词_1952150601243283457.json
 hash: b533a3c270ede177
 coverage: 0.62069
 learned_at: 2026-10-15 22:31:00

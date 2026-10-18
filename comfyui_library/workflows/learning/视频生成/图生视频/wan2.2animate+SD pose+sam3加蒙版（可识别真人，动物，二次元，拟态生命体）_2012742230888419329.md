@@ -4,7 +4,7 @@ name: wan2.2animate+SD pose+sam3加蒙版（可识别真人，动物，二次元
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012742230888419329.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2animate+SD pose+sam3加蒙版（可识别真人，动物，二次元，拟态生命体）_2012742230888419329.json
 hash: 36eeecd39ea7e487
 coverage: 0.653846
 learned_at: 2026-10-15 22:34:28

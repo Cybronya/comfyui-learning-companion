@@ -4,7 +4,7 @@ name: 六图丝滑循环变身wan2.2+vace+FlashVSR+变身LORA_199729954187347558
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997299541873475585.json
+file: comfyui_library/workflows/视频生成/图生视频/六图丝滑循环变身wan2.2+vace+FlashVSR+变身LORA_1997299541873475585.json
 hash: 6961c6c303a48cc8
 coverage: 0.912281
 learned_at: 2026-10-15 22:33:29

@@ -4,7 +4,7 @@ name: 万相wan2.1电影级特效极速生成：网红动物跳水_1963799539037
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963799539037736961.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.1电影级特效极速生成：网红动物跳水_1963799539037736961.json
 hash: a09d1a9a87a6fbe1
 coverage: 1
 learned_at: 2026-10-15 22:31:33

@@ -4,7 +4,7 @@ name: Wan2.2 Remix V3 图生视频 + 补帧_2052639249635262466.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052639249635262466.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix V3 图生视频 + 补帧_2052639249635262466.json
 hash: 4ee756ecbae20d10
 coverage: 1
 learned_at: 2026-10-15 22:37:31

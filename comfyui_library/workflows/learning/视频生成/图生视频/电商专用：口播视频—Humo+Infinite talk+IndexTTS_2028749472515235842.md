@@ -4,7 +4,7 @@ name: 电商专用：口播视频—Humo+Infinite talk+IndexTTS_2028749472515235
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2028749472515235842.json
+file: comfyui_library/workflows/视频生成/图生视频/电商专用：口播视频—Humo+Infinite talk+IndexTTS_2028749472515235842.json
 hash: f8fa580da1177e2e
 coverage: 0.975904
 learned_at: 2026-10-15 22:35:20

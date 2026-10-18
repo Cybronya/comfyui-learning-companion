@@ -4,7 +4,7 @@ name: Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972312939401310209.json
+file: comfyui_library/workflows/视频生成/图生视频/Work-Fisher_Wan2.2-I2V增强版_1972312939401310209.json
 hash: db441baf07a24bc8
 coverage: 0.806452
 learned_at: 2026-10-15 22:31:59

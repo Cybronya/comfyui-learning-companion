@@ -4,7 +4,7 @@ name: Wan2.2+All-in-one 极速版 图生视频_2079972635341058049.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079972635341058049.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+All-in-one 极速版 图生视频_2079972635341058049.json
 hash: c6f9775c3dbf8dd6
 coverage: 1
 learned_at: 2026-10-15 22:42:08

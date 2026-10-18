@@ -4,7 +4,7 @@ name: InfiniteTalk-wan-双人-index tts_1958085210749415426.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958085210749415426.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk-wan-双人-index tts_1958085210749415426.json
 hash: d27146e6414df3a4
 coverage: 0.939394
 learned_at: 2026-10-15 22:31:20

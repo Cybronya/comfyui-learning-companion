@@ -4,7 +4,7 @@ name: wan2.1图生视频-飞行特效_1900041453022621698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900041453022621698.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1图生视频-飞行特效_1900041453022621698.json
 hash: 6d6bdd366dca5b92
 coverage: 1
 learned_at: 2026-10-15 22:29:22

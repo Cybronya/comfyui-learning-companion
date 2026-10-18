@@ -4,7 +4,7 @@ name: Wan-Dancer + Scail2 音乐生成舞蹈邪修版 v1.0 _ 超高质量、极�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080196477946785794.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan-Dancer + Scail2 音乐生成舞蹈邪修版 v1.0 _ 超高质量、极致细节、_2080196477946785794.json
 hash: e6275f261552727d
 coverage: 0.5125
 learned_at: 2026-10-15 22:42:10

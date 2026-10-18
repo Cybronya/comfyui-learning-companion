@@ -4,7 +4,7 @@ name: Wan2.2 Skyreels V2 图生长视频_1979077194871902210.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979077194871902210.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Skyreels V2 图生长视频_1979077194871902210.json
 hash: 250cb8e0ebe30241
 coverage: 0.674157
 learned_at: 2026-10-15 22:32:21

@@ -4,7 +4,7 @@ name: wan2.2 Rapid  gguf 文生视频测试版_1968727696270401537.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968727696270401537.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 Rapid  gguf 文生视频测试版_1968727696270401537.json
 hash: 9e6ba7a3ef0e7467
 coverage: 1
 learned_at: 2026-10-15 22:43:46

@@ -4,7 +4,7 @@ name: LTX2.3短剧漫剧短视频图生视频人物一致性_2081705419873017857
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081705419873017857.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3短剧漫剧短视频图生视频人物一致性_2081705419873017857.json
 hash: 9a18ecadbd2027a8
 coverage: 0.906977
 learned_at: 2026-10-15 22:42:25

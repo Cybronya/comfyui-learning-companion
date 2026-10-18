@@ -4,7 +4,7 @@ name: wan2.2_Animate_14B视频人物替换（gguf配置，可以本地运行）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969709240275378178.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_Animate_14B视频人物替换（gguf配置，可以本地运行）_1969709240275378178.json
 hash: 6e0d88cf1218d410
 coverage: 0.536232
 learned_at: 2026-10-15 22:31:50

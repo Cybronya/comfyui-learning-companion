@@ -4,7 +4,7 @@ name: LTX2.3 Sulphur 导演版_2075055600450494465.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075055600450494465.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Sulphur 导演版_2075055600450494465.json
 hash: 0d7e50122d5ee53f
 coverage: 0.585366
 learned_at: 2026-10-15 22:41:20

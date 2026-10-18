@@ -4,7 +4,7 @@ name: AI代码侠土豆-WAN2.2-LightX2V-I2V_1981260473284943874.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981260473284943874.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-WAN2.2-LightX2V-I2V_1981260473284943874.json
 hash: 7994891329dde640
 coverage: 0.595745
 learned_at: 2026-10-15 22:32:37

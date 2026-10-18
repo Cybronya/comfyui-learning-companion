@@ -4,7 +4,7 @@ name: AniWan+Fastwan+LightX64+Radial+Free最强万相wan2.1图生视频_19454255
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945425557527961601.json
+file: comfyui_library/workflows/视频生成/图生视频/AniWan+Fastwan+LightX64+Radial+Free最强万相wan2.1图生视频_1945425557527961601.json
 hash: 66f4bc4dce2c94a1
 coverage: 1
 learned_at: 2026-10-15 22:30:42

@@ -4,7 +4,7 @@ name: z-image文生图+FlashVSR超清放大 + WAN2.2图生视频一条龙工作�
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998726439484674049.json
+file: comfyui_library/workflows/视频生成/图生视频/z-image文生图+FlashVSR超清放大 + WAN2.2图生视频一条龙工作流_1998726439484674049.json
 hash: c9ae531138b028f0
 coverage: 0.925926
 learned_at: 2026-10-15 22:33:33

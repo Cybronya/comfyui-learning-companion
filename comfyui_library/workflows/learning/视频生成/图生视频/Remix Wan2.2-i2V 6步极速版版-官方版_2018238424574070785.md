@@ -4,7 +4,7 @@ name: Remix Wan2.2-i2V 6步极速版版-官方版_2018238424574070785.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018238424574070785.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix Wan2.2-i2V 6步极速版版-官方版_2018238424574070785.json
 hash: e105f2a14cfa91d6
 coverage: 0.944444
 learned_at: 2026-10-15 22:34:55

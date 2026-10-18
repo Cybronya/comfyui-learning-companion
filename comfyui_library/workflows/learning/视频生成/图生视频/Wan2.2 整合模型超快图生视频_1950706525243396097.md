@@ -4,7 +4,7 @@ name: Wan2.2 整合模型超快图生视频_1950706525243396097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950706525243396097.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 整合模型超快图生视频_1950706525243396097.json
 hash: 115f92a130445528
 coverage: 1
 learned_at: 2026-10-15 22:30:56

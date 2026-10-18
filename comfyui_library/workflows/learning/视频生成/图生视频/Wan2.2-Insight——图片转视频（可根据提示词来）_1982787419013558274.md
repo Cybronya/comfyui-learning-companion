@@ -4,7 +4,7 @@ name: Wan2.2-Insight——图片转视频（可根据提示词来）_19827874190
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982787419013558274.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Insight——图片转视频（可根据提示词来）_1982787419013558274.json
 hash: 11cd1a96784b8ce6
 coverage: 0.875
 learned_at: 2026-10-15 22:32:43

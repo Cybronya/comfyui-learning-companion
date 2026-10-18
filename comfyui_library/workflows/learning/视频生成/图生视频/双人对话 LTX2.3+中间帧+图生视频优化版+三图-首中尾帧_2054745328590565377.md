@@ -4,7 +4,7 @@ name: 双人对话 LTX2.3+中间帧+图生视频优化版+三图-首中尾帧_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054745328590565377.json
+file: comfyui_library/workflows/视频生成/图生视频/双人对话 LTX2.3+中间帧+图生视频优化版+三图-首中尾帧_2054745328590565377.json
 hash: c2e413de6d94cbfb
 coverage: 0.833333
 learned_at: 2026-10-15 22:37:51

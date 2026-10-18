@@ -4,7 +4,7 @@ name: LongCat-Video-Avatar1.5多图分镜数字人_2059649854489583618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059649854489583618.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCat-Video-Avatar1.5多图分镜数字人_2059649854489583618.json
 hash: 900d7cbd5b0bd64a
 coverage: 0.553719
 learned_at: 2026-10-15 22:38:41

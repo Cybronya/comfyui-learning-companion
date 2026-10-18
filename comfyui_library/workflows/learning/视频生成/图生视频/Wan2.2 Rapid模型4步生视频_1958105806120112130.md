@@ -4,7 +4,7 @@ name: Wan2.2 Rapid模型4步生视频_1958105806120112130.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958105806120112130.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Rapid模型4步生视频_1958105806120112130.json
 hash: 0374ae1ad79c35cd
 coverage: 0.867925
 learned_at: 2026-10-15 22:31:20

@@ -4,7 +4,7 @@ name: LTX-2.3-MSR全能参考视频_2063551335492050946.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063551335492050946.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-MSR全能参考视频_2063551335492050946.json
 hash: eafca4d5146d52e0
 coverage: 0.446429
 learned_at: 2026-10-15 22:39:15

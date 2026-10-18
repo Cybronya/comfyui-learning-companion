@@ -4,7 +4,7 @@ name: Wan2.2-Animate-14B视频人物参考动作、表情_2013140884707090433.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013140884707090433.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-14B视频人物参考动作、表情_2013140884707090433.json
 hash: c8e99fffcb6af546
 coverage: 0.918919
 learned_at: 2026-10-15 22:34:29

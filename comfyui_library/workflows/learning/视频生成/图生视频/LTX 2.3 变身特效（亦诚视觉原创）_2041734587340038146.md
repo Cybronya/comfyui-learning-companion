@@ -4,7 +4,7 @@ name: LTX 2.3 变身特效（亦诚视觉原创）_2041734587340038146.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041734587340038146.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 变身特效（亦诚视觉原创）_2041734587340038146.json
 hash: a1dbb8ca6f162575
 coverage: 0.862069
 learned_at: 2026-10-15 22:36:21

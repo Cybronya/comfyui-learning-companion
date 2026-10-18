@@ -4,7 +4,7 @@ name: 达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_20387008623856
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038700862385692673.json
+file: comfyui_library/workflows/视频生成/图生视频/达芬奇DaVinci-MagiHuman 图生视频基础工作流 V1.0_2038700862385692673.json
 hash: 6f65e64eec0731ed
 coverage: 0.714286
 learned_at: 2026-10-15 22:36:04

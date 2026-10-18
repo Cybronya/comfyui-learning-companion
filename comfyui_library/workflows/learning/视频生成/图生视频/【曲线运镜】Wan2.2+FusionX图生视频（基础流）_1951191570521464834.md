@@ -4,7 +4,7 @@ name: 【曲线运镜】Wan2.2+FusionX图生视频（基础流）_19511915705214
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951191570521464834.json
+file: comfyui_library/workflows/视频生成/图生视频/【曲线运镜】Wan2.2+FusionX图生视频（基础流）_1951191570521464834.json
 hash: 300753aaedb92764
 coverage: 0.662791
 learned_at: 2026-10-15 22:30:58

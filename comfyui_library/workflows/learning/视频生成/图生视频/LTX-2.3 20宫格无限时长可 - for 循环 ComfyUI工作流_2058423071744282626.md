@@ -4,7 +4,7 @@ name: LTX-2.3 20宫格无限时长可 - for 循环 ComfyUI工作流_205842307174
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058423071744282626.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 20宫格无限时长可 - for 循环 ComfyUI工作流_2058423071744282626.json
 hash: 8d2e3f4441f93167
 coverage: 0.696429
 learned_at: 2026-10-15 22:38:22

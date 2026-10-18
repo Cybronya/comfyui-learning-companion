@@ -4,7 +4,7 @@ name: [最新文生视频] Wan2.1 美女模特华丽转身视频特效_194791567
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1947915676540383234.json
+file: comfyui_library/workflows/视频生成/文生视频/[最新文生视频] Wan2.1 美女模特华丽转身视频特效_1947915676540383234.json
 hash: bbf0d270acca9e33
 coverage: 0.947368
 learned_at: 2026-10-15 22:43:32

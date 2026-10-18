@@ -4,7 +4,7 @@ name: LongCat Avatar 1.5：8步极速生成、音频驱动超长数字人_206533
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065330795597877250.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCat Avatar 1.5：8步极速生成、音频驱动超长数字人_2065330795597877250.json
 hash: 4e7364e13173d92b
 coverage: 0.506849
 learned_at: 2026-10-15 22:39:38

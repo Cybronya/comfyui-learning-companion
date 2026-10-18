@@ -4,7 +4,7 @@ name: Wan2.2-Smooth+Mix+九宫格全自动分割-自动衔接视频_205415164562
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054151645621178370.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth+Mix+九宫格全自动分割-自动衔接视频_2054151645621178370.json
 hash: 7d7b85bc8c82766d
 coverage: 0.84058
 learned_at: 2026-10-15 22:37:46

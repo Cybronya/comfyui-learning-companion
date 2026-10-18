@@ -4,7 +4,7 @@ name: 万相wan2.2首尾帧生视频（2分钟）_1980678850906603522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980678850906603522.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2首尾帧生视频（2分钟）_1980678850906603522.json
 hash: 62a8dcd18a0acbf8
 coverage: 1
 learned_at: 2026-10-15 22:32:32

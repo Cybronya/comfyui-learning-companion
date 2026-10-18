@@ -4,7 +4,7 @@ name: LTX Director-i2v-prompt_replay-fixed_2057141350105178114.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057141350105178114.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX Director-i2v-prompt_replay-fixed_2057141350105178114.json
 hash: 4149b06201bcd976
 coverage: 0.966667
 learned_at: 2026-10-15 22:38:09

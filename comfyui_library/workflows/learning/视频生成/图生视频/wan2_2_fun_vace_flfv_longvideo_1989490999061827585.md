@@ -4,7 +4,7 @@ name: wan2_2_fun_vace_flfv_longvideo_1989490999061827585.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989490999061827585.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2_2_fun_vace_flfv_longvideo_1989490999061827585.json
 hash: 9171bdd50792c217
 coverage: 0.546296
 learned_at: 2026-10-15 22:33:07

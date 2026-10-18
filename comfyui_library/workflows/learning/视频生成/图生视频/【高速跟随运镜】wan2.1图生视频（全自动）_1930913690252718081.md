@@ -4,7 +4,7 @@ name: 【高速跟随运镜】wan2.1图生视频（全自动）_1930913690252718
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930913690252718081.json
+file: comfyui_library/workflows/视频生成/图生视频/【高速跟随运镜】wan2.1图生视频（全自动）_1930913690252718081.json
 hash: 2a3201b7ca78d4b0
 coverage: 0.55
 learned_at: 2026-10-15 22:30:08

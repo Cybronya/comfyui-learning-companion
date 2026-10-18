@@ -4,7 +4,7 @@ name: SVI 2.0Pro 分段长视频_2005535565334413313.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005535565334413313.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0Pro 分段长视频_2005535565334413313.json
 hash: 0d7022a33a221fc4
 coverage: 0.542056
 learned_at: 2026-10-15 22:33:57

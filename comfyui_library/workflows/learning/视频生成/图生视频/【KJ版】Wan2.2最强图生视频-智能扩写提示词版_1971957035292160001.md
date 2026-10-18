@@ -4,7 +4,7 @@ name: 【KJ版】Wan2.2最强图生视频-智能扩写提示词版_1971957035292
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971957035292160001.json
+file: comfyui_library/workflows/视频生成/图生视频/【KJ版】Wan2.2最强图生视频-智能扩写提示词版_1971957035292160001.json
 hash: a9cc1ed5c578782d
 coverage: 0.73913
 learned_at: 2026-10-15 22:31:58

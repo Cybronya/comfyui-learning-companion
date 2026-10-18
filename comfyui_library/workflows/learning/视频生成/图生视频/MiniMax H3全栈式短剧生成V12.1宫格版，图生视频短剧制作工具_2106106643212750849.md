@@ -4,7 +4,7 @@ name: MiniMax H3全栈式短剧生成V12.1宫格版，图生视频短剧制作�
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/MiniMax H3全栈式短剧生成V12_1宫格版_图生视频短剧制作工具_2106106643212750849.json
+file: comfyui_library/workflows/视频生成/图生视频/MiniMax H3全栈式短剧生成V12.1宫格版，图生视频短剧制作工具_2106106643212750849.json
 hash: b1d67f55aa9e97bb
 coverage: 0.5
 learned_at: 2026-10-15 22:42:47

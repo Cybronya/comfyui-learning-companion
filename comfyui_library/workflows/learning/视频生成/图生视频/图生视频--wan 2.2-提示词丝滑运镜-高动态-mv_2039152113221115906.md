@@ -4,7 +4,7 @@ name: 图生视频--wan 2.2-提示词丝滑运镜-高动态-mv_20391521132211159
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039152113221115906.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频--wan 2.2-提示词丝滑运镜-高动态-mv_2039152113221115906.json
 hash: 1fb6126a47d474d5
 coverage: 0.607595
 learned_at: 2026-10-15 22:36:06

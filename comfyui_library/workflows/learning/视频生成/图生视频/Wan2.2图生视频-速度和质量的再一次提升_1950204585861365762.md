@@ -4,7 +4,7 @@ name: Wan2.2图生视频-速度和质量的再一次提升_1950204585861365762.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950204585861365762.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频-速度和质量的再一次提升_1950204585861365762.json
 hash: befac912399d263a
 coverage: 0.933333
 learned_at: 2026-10-15 22:30:54

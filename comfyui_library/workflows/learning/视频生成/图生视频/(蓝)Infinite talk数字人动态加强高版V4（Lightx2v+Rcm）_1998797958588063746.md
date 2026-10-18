@@ -4,7 +4,7 @@ name: (蓝)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19987979
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998797958588063746.json
+file: comfyui_library/workflows/视频生成/图生视频/(蓝)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1998797958588063746.json
 hash: 5abf1b9807c16a20
 coverage: 0.75
 learned_at: 2026-10-15 22:33:34

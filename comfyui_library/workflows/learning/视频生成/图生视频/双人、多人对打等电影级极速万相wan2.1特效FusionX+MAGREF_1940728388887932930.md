@@ -4,7 +4,7 @@ name: 双人、多人对打等电影级极速万相wan2.1特效FusionX+MAGREF_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1940728388887932930.json
+file: comfyui_library/workflows/视频生成/图生视频/双人、多人对打等电影级极速万相wan2.1特效FusionX+MAGREF_1940728388887932930.json
 hash: 43e574fb2cfcf879
 coverage: 1
 learned_at: 2026-10-15 22:30:34

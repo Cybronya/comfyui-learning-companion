@@ -4,7 +4,7 @@ name: 啊癫 动作迁移wan2.2 lora 加强版_1961001361997500417.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961001361997500417.json
+file: comfyui_library/workflows/视频生成/图生视频/啊癫 动作迁移wan2.2 lora 加强版_1961001361997500417.json
 hash: 1e67666213b27727
 coverage: 0.82
 learned_at: 2026-10-15 22:31:27

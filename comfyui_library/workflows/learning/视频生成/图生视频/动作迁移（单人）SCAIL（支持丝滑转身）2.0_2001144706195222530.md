@@ -4,7 +4,7 @@ name: 动作迁移（单人）SCAIL（支持丝滑转身）2.0_20011447061952225
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001144706195222530.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移（单人）SCAIL（支持丝滑转身）2.0_2001144706195222530.json
 hash: 50d1550a29adacda
 coverage: 0.671053
 learned_at: 2026-10-15 22:33:44

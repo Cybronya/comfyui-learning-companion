@@ -4,7 +4,7 @@ name: Gemini 3.1 Pro自动提示词+LTX2.3模型 首尾帧生视频工作流_204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044864850374955009.json
+file: comfyui_library/workflows/视频生成/图生视频/Gemini 3.1 Pro自动提示词+LTX2.3模型 首尾帧生视频工作流_2044864850374955009.json
 hash: 036363b83f5a5d18
 coverage: 0.87931
 learned_at: 2026-10-15 22:36:42

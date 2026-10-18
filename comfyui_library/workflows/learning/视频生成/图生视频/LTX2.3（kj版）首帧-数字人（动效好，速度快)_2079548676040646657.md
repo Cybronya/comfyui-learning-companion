@@ -4,7 +4,7 @@ name: LTX2.3（kj版）首帧-数字人（动效好，速度快)_207954867604064
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079548676040646657.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3（kj版）首帧-数字人（动效好，速度快)_2079548676040646657.json
 hash: b8b054711380ac8b
 coverage: 0.96875
 learned_at: 2026-10-15 22:42:04

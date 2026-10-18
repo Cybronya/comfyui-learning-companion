@@ -4,7 +4,7 @@ name: (无限流)不限时常Wan2.2 infinitetalk 数字人唱歌或者讲话，�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973798976422023169.json
+file: comfyui_library/workflows/视频生成/图生视频/(无限流)不限时常Wan2.2 infinitetalk 数字人唱歌或者讲话，图生视频-自动提示词版本_1973798976422023169.json
 hash: 2ff2e4ad42db47e2
 coverage: 0.714286
 learned_at: 2026-10-15 22:32:04

@@ -4,7 +4,7 @@ name: 图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937762815677763586.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频lora-SelfForcing-ImageToVideo-60FPS_1937762815677763586.json
 hash: 7c0f7727260ef42e
 coverage: 0.651163
 learned_at: 2026-10-15 22:30:29

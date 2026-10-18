@@ -4,7 +4,7 @@ name: Wan2.2 I2V 极速图生视频 原地动作_2044755508602605570.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044755508602605570.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 I2V 极速图生视频 原地动作_2044755508602605570.json
 hash: 0d125fa6732cd63a
 coverage: 1
 learned_at: 2026-10-15 22:36:40

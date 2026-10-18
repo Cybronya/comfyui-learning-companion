@@ -4,7 +4,7 @@ name: SmoothMixWWan 2.2 图生视频自动手动双模式_1995469432359202817.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995469432359202817.json
+file: comfyui_library/workflows/视频生成/图生视频/SmoothMixWWan 2.2 图生视频自动手动双模式_1995469432359202817.json
 hash: 3933dbb8becc2c19
 coverage: 0.904762
 learned_at: 2026-10-15 22:33:23

@@ -4,7 +4,7 @@ name: (贞贞AI工坊)全能视频V3.1 首尾帧视频特价版（基准0.3_8S�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980581502599741442.json
+file: comfyui_library/workflows/视频生成/图生视频/(贞贞AI工坊)全能视频V3.1 首尾帧视频特价版（基准0.3_8S）_1980581502599741442.json
 hash: e0cffa3d56cb228c
 coverage: 0.466667
 learned_at: 2026-10-15 22:32:31

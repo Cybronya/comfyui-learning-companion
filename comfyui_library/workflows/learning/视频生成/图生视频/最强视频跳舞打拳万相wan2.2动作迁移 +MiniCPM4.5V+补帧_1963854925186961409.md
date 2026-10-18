@@ -4,7 +4,7 @@ name: 最强视频跳舞打拳万相wan2.2动作迁移 +MiniCPM4.5V+补帧_19638
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963854925186961409.json
+file: comfyui_library/workflows/视频生成/图生视频/最强视频跳舞打拳万相wan2.2动作迁移 +MiniCPM4.5V+补帧_1963854925186961409.json
 hash: 19086d499f665295
 coverage: 1
 learned_at: 2026-10-15 22:31:33

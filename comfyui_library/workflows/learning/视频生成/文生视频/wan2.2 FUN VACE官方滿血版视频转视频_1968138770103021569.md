@@ -4,7 +4,7 @@ name: wan2.2 FUN VACE官方滿血版视频转视频_1968138770103021569.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968138770103021569.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 FUN VACE官方滿血版视频转视频_1968138770103021569.json
 hash: 045ad4f334db173d
 coverage: 0.483516
 learned_at: 2026-10-15 22:43:45

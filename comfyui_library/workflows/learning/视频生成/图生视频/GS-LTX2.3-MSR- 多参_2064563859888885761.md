@@ -4,7 +4,7 @@ name: GS-LTX2.3-MSR- 多参_2064563859888885761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064563859888885761.json
+file: comfyui_library/workflows/视频生成/图生视频/GS-LTX2.3-MSR- 多参_2064563859888885761.json
 hash: da59670626207e25
 coverage: 0.942857
 learned_at: 2026-10-15 22:39:26

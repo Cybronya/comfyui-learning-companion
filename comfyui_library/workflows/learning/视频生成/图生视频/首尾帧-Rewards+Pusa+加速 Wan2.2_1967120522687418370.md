@@ -4,7 +4,7 @@ name: 首尾帧-Rewards+Pusa+加速 Wan2.2_1967120522687418370.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967120522687418370.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧-Rewards+Pusa+加速 Wan2.2_1967120522687418370.json
 hash: 0ab254e1ef3828d0
 coverage: 1
 learned_at: 2026-10-15 22:31:40

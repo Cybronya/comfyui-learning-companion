@@ -4,7 +4,7 @@ name: WAN2.2 Upskirt_1964201625864818690.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964201625864818690.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 Upskirt_1964201625864818690.json
 hash: 01f9238caf8c0d98
 coverage: 0.868421
 learned_at: 2026-10-15 22:31:34

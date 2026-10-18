@@ -4,7 +4,7 @@ name: LTX2.3图生视频【优化版】蒸馏_dev可切换_2057424859017334786.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057424859017334786.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频【优化版】蒸馏_dev可切换_2057424859017334786.json
 hash: 100af177678d8cbb
 coverage: 0.597315
 learned_at: 2026-10-15 22:38:12

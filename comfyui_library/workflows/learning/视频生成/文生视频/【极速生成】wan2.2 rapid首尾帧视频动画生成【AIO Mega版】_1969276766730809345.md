@@ -4,7 +4,7 @@ name: 【极速生成】wan2.2 rapid首尾帧视频动画生成【AIO Mega版】
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969276766730809345.json
+file: comfyui_library/workflows/视频生成/文生视频/【极速生成】wan2.2 rapid首尾帧视频动画生成【AIO Mega版】_1969276766730809345.json
 hash: 0ff3ee3022df6d02
 coverage: 0.95
 learned_at: 2026-10-15 22:43:46

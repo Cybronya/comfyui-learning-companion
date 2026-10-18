@@ -4,7 +4,7 @@ name: ▶WAN2.2-首尾帧加速流（描述词细化）_1993159656203812866.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993159656203812866.json
+file: comfyui_library/workflows/视频生成/图生视频/▶WAN2.2-首尾帧加速流（描述词细化）_1993159656203812866.json
 hash: c8c811c7162d1ba0
 coverage: 0.948718
 learned_at: 2026-10-15 22:33:17

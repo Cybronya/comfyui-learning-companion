@@ -4,7 +4,7 @@ name: Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976558909701885953.json
+file: comfyui_library/workflows/视频生成/图生视频/Lynx+Wan2.2+VACE+MiNiCPM反推复刻视频强一致性文生视频换脸及服装动作参考_1976558909701885953.json
 hash: 462fbe1316a6c816
 coverage: 0.893617
 learned_at: 2026-10-15 22:32:11

@@ -4,7 +4,7 @@ name: Stand In+Vace+MultiTalk脸部参考姿势控制语音数字人V1_195676191
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956761919991287809.json
+file: comfyui_library/workflows/视频生成/图生视频/Stand In+Vace+MultiTalk脸部参考姿势控制语音数字人V1_1956761919991287809.json
 hash: e1c78f9d7f2c52c3
 coverage: 0.869565
 learned_at: 2026-10-15 22:31:15

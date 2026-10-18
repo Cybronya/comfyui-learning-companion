@@ -4,7 +4,7 @@ name: 嘟嘟-Wan_2.2_FMLF多帧首尾帧_1988086364040310785.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988086364040310785.json
+file: comfyui_library/workflows/视频生成/图生视频/嘟嘟-Wan_2.2_FMLF多帧首尾帧_1988086364040310785.json
 hash: a661a9106ce23747
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:01

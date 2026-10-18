@@ -4,7 +4,7 @@ name: LTX-2.3+Qwen3.5电影_2030820457208877058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030820457208877058.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3+Qwen3.5电影_2030820457208877058.json
 hash: 1c35c0ff420f613c
 coverage: 0.918367
 learned_at: 2026-10-15 22:35:27

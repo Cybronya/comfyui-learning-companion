@@ -4,7 +4,7 @@ name: 图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054112708936650753.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频：ltx2.3双采+VBVR Qwen3.5自动提示词 基础试听版_2054112708936650753.json
 hash: dd26b07544fd73d3
 coverage: 0.504587
 learned_at: 2026-10-15 22:37:45

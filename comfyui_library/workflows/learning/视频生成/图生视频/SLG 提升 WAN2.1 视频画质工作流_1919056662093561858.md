@@ -4,7 +4,7 @@ name: SLG 提升 WAN2.1 视频画质工作流_1919056662093561858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1919056662093561858.json
+file: comfyui_library/workflows/视频生成/图生视频/SLG 提升 WAN2.1 视频画质工作流_1919056662093561858.json
 hash: e0f3303fbf2864d8
 coverage: 0.944444
 learned_at: 2026-10-15 22:29:41

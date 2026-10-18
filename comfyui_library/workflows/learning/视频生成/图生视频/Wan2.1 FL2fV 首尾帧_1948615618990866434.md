@@ -4,7 +4,7 @@ name: Wan2.1 FL2fV 首尾帧_1948615618990866434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948615618990866434.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 FL2fV 首尾帧_1948615618990866434.json
 hash: 964e564398c25a89
 coverage: 0.944444
 learned_at: 2026-10-15 22:30:47

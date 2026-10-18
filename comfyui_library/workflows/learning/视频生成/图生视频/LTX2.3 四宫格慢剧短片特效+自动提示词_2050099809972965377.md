@@ -4,7 +4,7 @@ name: LTX2.3 四宫格慢剧短片特效+自动提示词_2050099809972965377.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050099809972965377.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 四宫格慢剧短片特效+自动提示词_2050099809972965377.json
 hash: a3a825666cc8d4f7
 coverage: 0.560748
 learned_at: 2026-10-15 22:37:17

@@ -4,7 +4,7 @@ name: Wan2.1+Stand-In身份一致性文生视频_1956197962999320577.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1956197962999320577.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1+Stand-In身份一致性文生视频_1956197962999320577.json
 hash: 2dfb0483c8838bf7
 coverage: 0.780488
 learned_at: 2026-10-15 22:43:40

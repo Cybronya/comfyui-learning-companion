@@ -4,7 +4,7 @@ name: 【Wan2.1】泼水变装+换装_1931328744601137153.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1931328744601137153.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1】泼水变装+换装_1931328744601137153.json
 hash: 8880ec6a14036b7c
 coverage: 1
 learned_at: 2026-10-15 22:30:09

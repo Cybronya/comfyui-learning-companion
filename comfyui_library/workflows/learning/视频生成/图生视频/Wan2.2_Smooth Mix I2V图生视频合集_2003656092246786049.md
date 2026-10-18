@@ -4,7 +4,7 @@ name: Wan2.2_Smooth Mix I2V图生视频合集_2003656092246786049.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003656092246786049.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_Smooth Mix I2V图生视频合集_2003656092246786049.json
 hash: 1ae42b58050b0fe3
 coverage: 0.819444
 learned_at: 2026-10-15 22:33:51

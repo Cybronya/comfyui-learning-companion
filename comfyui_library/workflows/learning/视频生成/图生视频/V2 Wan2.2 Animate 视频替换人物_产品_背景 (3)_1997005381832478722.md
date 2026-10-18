@@ -4,7 +4,7 @@ name: V2 Wan2.2 Animate 视频替换人物_产品_背景 (3)_1997005381832478722
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997005381832478722.json
+file: comfyui_library/workflows/视频生成/图生视频/V2 Wan2.2 Animate 视频替换人物_产品_背景 (3)_1997005381832478722.json
 hash: 030a72139b124ba5
 coverage: 0.516484
 learned_at: 2026-10-15 22:33:28

@@ -4,7 +4,7 @@ name: LTX_Director_V2.0升级版导演台节点工作流_2068939406005854210.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068939406005854210.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX_Director_V2.0升级版导演台节点工作流_2068939406005854210.json
 hash: b5cd82933c333f78
 coverage: 0.941176
 learned_at: 2026-10-15 22:40:23

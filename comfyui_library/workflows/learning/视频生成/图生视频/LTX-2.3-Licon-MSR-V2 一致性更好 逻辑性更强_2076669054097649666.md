@@ -4,7 +4,7 @@ name: LTX-2.3-Licon-MSR-V2 一致性更好 逻辑性更强_2076669054097649666.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076669054097649666.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-Licon-MSR-V2 一致性更好 逻辑性更强_2076669054097649666.json
 hash: 36766fc5485d561e
 coverage: 0.452381
 learned_at: 2026-10-15 22:41:32

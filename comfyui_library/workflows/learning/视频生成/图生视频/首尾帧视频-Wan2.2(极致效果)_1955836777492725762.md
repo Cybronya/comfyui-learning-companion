@@ -4,7 +4,7 @@ name: 首尾帧视频-Wan2.2(极致效果)_1955836777492725762.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955836777492725762.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧视频-Wan2.2(极致效果)_1955836777492725762.json
 hash: 6a7322ae3bcdce3e
 coverage: 0.532468
 learned_at: 2026-10-15 22:31:10

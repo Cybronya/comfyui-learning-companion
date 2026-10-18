@@ -4,7 +4,7 @@ name: 🈚️首尾帧vace-官方native-wan fusionX_1935039588719370241.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935039588719370241.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️首尾帧vace-官方native-wan fusionX_1935039588719370241.json
 hash: 324684aba9bb26ef
 coverage: 0.604167
 learned_at: 2026-10-15 22:30:20

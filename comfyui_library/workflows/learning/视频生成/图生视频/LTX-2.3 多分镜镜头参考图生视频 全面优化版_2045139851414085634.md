@@ -4,7 +4,7 @@ name: LTX-2.3 多分镜镜头参考图生视频 全面优化版_2045139851414085
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045139851414085634.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 多分镜镜头参考图生视频 全面优化版_2045139851414085634.json
 hash: 592d7a0acd60e336
 coverage: 0.58427
 learned_at: 2026-10-15 22:36:46

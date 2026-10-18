@@ -4,7 +4,7 @@ name: wan2.2+FusxionX_14B_自动提示词优化_图生视频-加速版-KJ模型_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951465254188429313.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+FusxionX_14B_自动提示词优化_图生视频-加速版-KJ模型_1951465254188429313.json
 hash: 015fbbbc7bd7143f
 coverage: 0.90566
 learned_at: 2026-10-15 22:30:58

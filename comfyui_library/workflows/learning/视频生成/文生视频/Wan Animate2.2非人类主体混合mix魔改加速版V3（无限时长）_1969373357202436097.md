@@ -4,7 +4,7 @@ name: Wan Animate2.2非人类主体混合mix魔改加速版V3（无限时长）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969373357202436097.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan Animate2.2非人类主体混合mix魔改加速版V3（无限时长）_1969373357202436097.json
 hash: d10b2cd7d33dff95
 coverage: 0.560976
 learned_at: 2026-10-15 22:43:46

@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2+提示词工具+GLM4.5视频扩写图生视频加速版V1_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950813995445977090.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2+提示词工具+GLM4.5视频扩写图生视频加速版V1_1950813995445977090.json
 hash: 8092ae1114842e43
 coverage: 0.791667
 learned_at: 2026-10-15 22:30:56

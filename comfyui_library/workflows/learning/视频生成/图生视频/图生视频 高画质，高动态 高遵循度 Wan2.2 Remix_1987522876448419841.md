@@ -4,7 +4,7 @@ name: 图生视频 高画质，高动态 高遵循度 Wan2.2 Remix_1987522876448
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987522876448419841.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频 高画质，高动态 高遵循度 Wan2.2 Remix_1987522876448419841.json
 hash: 27383dfb7c7add70
 coverage: 0.843137
 learned_at: 2026-10-15 22:32:58

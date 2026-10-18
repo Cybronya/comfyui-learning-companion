@@ -4,7 +4,7 @@ name: LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046558500209299457.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3超强一致性数字人去字幕过渡超高质量lora但速度慢v2_2046558500209299457.json
 hash: a4f3aec049400e30
 coverage: 0.981481
 learned_at: 2026-10-15 22:36:59

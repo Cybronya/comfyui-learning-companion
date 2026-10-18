@@ -4,7 +4,7 @@ name: LTX2.3+图生视频自动 提示词自动 数字人_2065067084408774657.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065067084408774657.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+图生视频自动 提示词自动 数字人_2065067084408774657.json
 hash: ddab7c0513b08c34
 coverage: 0.952381
 learned_at: 2026-10-15 22:39:35

@@ -4,7 +4,7 @@ name: Work-Fisher-Edit Next Scene（自动分镜）-V1版_1978804615628099585.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978804615628099585.json
+file: comfyui_library/workflows/视频生成/图生视频/Work-Fisher-Edit Next Scene（自动分镜）-V1版_1978804615628099585.json
 hash: 545f59dae14dff88
 coverage: 0.831325
 learned_at: 2026-10-15 22:32:20

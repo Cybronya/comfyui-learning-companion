@@ -4,7 +4,7 @@ name: WAN2.2+Qwen3-VL 图片反推全自动 图生视频工作流_19827121325485
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982712132548599809.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2+Qwen3-VL 图片反推全自动 图生视频工作流_1982712132548599809.json
 hash: 74e8e25f7c1aef78
 coverage: 0.804878
 learned_at: 2026-10-15 22:32:42

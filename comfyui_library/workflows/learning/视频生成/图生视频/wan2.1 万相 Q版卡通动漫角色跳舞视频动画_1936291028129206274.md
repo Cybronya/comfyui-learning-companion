@@ -4,7 +4,7 @@ name: wan2.1 万相 Q版卡通动漫角色跳舞视频动画_1936291028129206274
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936291028129206274.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 万相 Q版卡通动漫角色跳舞视频动画_1936291028129206274.json
 hash: 26ba3be7f4223ac9
 coverage: 0.603448
 learned_at: 2026-10-15 22:30:25

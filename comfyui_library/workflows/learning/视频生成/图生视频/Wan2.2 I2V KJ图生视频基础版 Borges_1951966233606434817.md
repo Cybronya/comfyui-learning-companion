@@ -4,7 +4,7 @@ name: Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951966233606434817.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 I2V KJ图生视频基础版 Borges_1951966233606434817.json
 hash: 93723f7e59d0ceca
 coverage: 1
 learned_at: 2026-10-15 22:30:59

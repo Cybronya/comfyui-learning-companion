@@ -4,7 +4,7 @@ name: Wan2.2  彩图解码版_1992982649104957441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992982649104957441.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2  彩图解码版_1992982649104957441.json
 hash: b80ecb9b2f878cb0
 coverage: 1
 learned_at: 2026-10-15 22:33:17

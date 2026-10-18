@@ -4,7 +4,7 @@ name: RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038486780621623297.json
+file: comfyui_library/workflows/视频生成/图生视频/RhartVideoSparkvideo20ImageToVideo_2038486780621623297.json
 hash: 6a6b05dc5b67b8b6
 coverage: 1
 learned_at: 2026-10-15 22:36:02

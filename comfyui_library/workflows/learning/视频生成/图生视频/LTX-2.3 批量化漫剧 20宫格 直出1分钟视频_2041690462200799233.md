@@ -4,7 +4,7 @@ name: LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2041690462200799233.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041690462200799233.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2041690462200799233.json
 hash: 5d8ae2036b164626
 coverage: 0.584906
 learned_at: 2026-10-15 22:36:21

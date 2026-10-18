@@ -4,7 +4,7 @@ name: WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015621003442921473.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-Wan2.1+专用运镜LORA（图生视频）_2015621003442921473.json
 hash: 9120feb5b9b43cc1
 coverage: 0.92
 learned_at: 2026-10-15 22:34:39

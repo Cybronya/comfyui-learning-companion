@@ -4,7 +4,7 @@ name: LTX2.3-MSR-V2-多图参考-双采版+自定义语音_2078456551601434625.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078456551601434625.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR-V2-多图参考-双采版+自定义语音_2078456551601434625.json
 hash: d631e8dc1c2374ca
 coverage: 0.654206
 learned_at: 2026-10-15 22:41:54

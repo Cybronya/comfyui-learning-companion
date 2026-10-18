@@ -4,7 +4,7 @@ name: Wan2.2 Moe Lightx2v新版高噪模型高动态首尾帧视频v1_1978282591
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978282591151349762.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Moe Lightx2v新版高噪模型高动态首尾帧视频v1_1978282591151349762.json
 hash: f4c1ecafb22a8925
 coverage: 0.875
 learned_at: 2026-10-15 22:32:18

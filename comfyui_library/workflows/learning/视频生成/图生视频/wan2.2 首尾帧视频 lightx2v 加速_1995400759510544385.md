@@ -4,7 +4,7 @@ name: wan2.2 首尾帧视频 lightx2v 加速_1995400759510544385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995400759510544385.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 首尾帧视频 lightx2v 加速_1995400759510544385.json
 hash: 59daed34b9998c1f
 coverage: 0.885714
 learned_at: 2026-10-15 22:33:22

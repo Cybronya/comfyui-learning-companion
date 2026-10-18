@@ -4,7 +4,7 @@ name: 丝滑首尾帧视频生成（Wan2.2 Smooth）_2033421738389803009.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033421738389803009.json
+file: comfyui_library/workflows/视频生成/图生视频/丝滑首尾帧视频生成（Wan2.2 Smooth）_2033421738389803009.json
 hash: e95206a7da8199ad
 coverage: 0.875
 learned_at: 2026-10-15 22:35:39

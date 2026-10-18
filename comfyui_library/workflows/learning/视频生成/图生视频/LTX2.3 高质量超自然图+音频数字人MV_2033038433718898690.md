@@ -4,7 +4,7 @@ name: LTX2.3 高质量超自然图+音频数字人MV_2033038433718898690.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033038433718898690.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 高质量超自然图+音频数字人MV_2033038433718898690.json
 hash: ab928c7db40c771c
 coverage: 0.658537
 learned_at: 2026-10-15 22:35:38

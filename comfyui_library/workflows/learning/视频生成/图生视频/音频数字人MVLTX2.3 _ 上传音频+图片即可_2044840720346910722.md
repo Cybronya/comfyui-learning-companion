@@ -4,7 +4,7 @@ name: 音频数字人MVLTX2.3 _ 上传音频+图片即可_2044840720346910722.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044840720346910722.json
+file: comfyui_library/workflows/视频生成/图生视频/音频数字人MVLTX2.3 _ 上传音频+图片即可_2044840720346910722.json
 hash: 7142eb41ff3b0b43
 coverage: 0.935484
 learned_at: 2026-10-15 22:36:42

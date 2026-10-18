@@ -4,7 +4,7 @@ name: Wan2.2+Animate动作迁移3月完善版,提高一致性和稳定性_203376
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033769307414470657.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Animate动作迁移3月完善版,提高一致性和稳定性_2033769307414470657.json
 hash: 43e820085b7353e8
 coverage: 0.504425
 learned_at: 2026-10-15 22:35:41

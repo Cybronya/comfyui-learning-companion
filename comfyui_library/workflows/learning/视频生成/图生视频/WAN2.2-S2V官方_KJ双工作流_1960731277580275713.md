@@ -4,7 +4,7 @@ name: WAN2.2-S2V官方_KJ双工作流_1960731277580275713.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960731277580275713.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-S2V官方_KJ双工作流_1960731277580275713.json
 hash: 245cfe7518afab30
 coverage: 1
 learned_at: 2026-10-15 22:31:26

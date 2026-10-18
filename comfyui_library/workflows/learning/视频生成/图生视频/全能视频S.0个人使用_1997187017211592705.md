@@ -4,7 +4,7 @@ name: 全能视频S.0个人使用_1997187017211592705.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997187017211592705.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S.0个人使用_1997187017211592705.json
 hash: 43bfc98ac11ae5a9
 coverage: 1
 learned_at: 2026-10-15 22:33:28

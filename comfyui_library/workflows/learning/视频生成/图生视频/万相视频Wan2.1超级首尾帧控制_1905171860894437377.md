@@ -4,7 +4,7 @@ name: 万相视频Wan2.1超级首尾帧控制_1905171860894437377.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1905171860894437377.json
+file: comfyui_library/workflows/视频生成/图生视频/万相视频Wan2.1超级首尾帧控制_1905171860894437377.json
 hash: dc242022cd49dc81
 coverage: 0.891892
 learned_at: 2026-10-15 22:29:25

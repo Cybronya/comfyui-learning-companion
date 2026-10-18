@@ -4,7 +4,7 @@ name: wan2.1 MAGREF_FusionX 3倍加速图生视频_1938855885659627522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1938855885659627522.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 MAGREF_FusionX 3倍加速图生视频_1938855885659627522.json
 hash: df04d3ea046392c0
 coverage: 0.75
 learned_at: 2026-10-15 22:43:30

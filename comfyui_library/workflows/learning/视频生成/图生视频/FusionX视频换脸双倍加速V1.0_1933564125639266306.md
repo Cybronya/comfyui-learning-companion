@@ -4,7 +4,7 @@ name: FusionX视频换脸双倍加速V1.0_1933564125639266306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933564125639266306.json
+file: comfyui_library/workflows/视频生成/图生视频/FusionX视频换脸双倍加速V1.0_1933564125639266306.json
 hash: f90e40146688c67f
 coverage: 0.818182
 learned_at: 2026-10-15 22:30:14

@@ -4,7 +4,7 @@ name: 三采样提高质量LTX 2.3-图生视频-建议plus模式_203490634345428
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034906343454281730.json
+file: comfyui_library/workflows/视频生成/图生视频/三采样提高质量LTX 2.3-图生视频-建议plus模式_2034906343454281730.json
 hash: 7d6a820ae4ce2549
 coverage: 0.481818
 learned_at: 2026-10-15 22:35:46

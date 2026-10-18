@@ -4,7 +4,7 @@ name: LTX2.3 Eros 1.2 Image to Vidoe 图生视频_2075052923939282946.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075052923939282946.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Eros 1.2 Image to Vidoe 图生视频_2075052923939282946.json
 hash: e73436a3db210e84
 coverage: 0.576087
 learned_at: 2026-10-15 22:41:20

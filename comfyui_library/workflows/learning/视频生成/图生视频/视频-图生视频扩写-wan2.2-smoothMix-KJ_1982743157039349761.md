@@ -4,7 +4,7 @@ name: 视频-图生视频扩写-wan2.2-smoothMix-KJ_1982743157039349761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982743157039349761.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图生视频扩写-wan2.2-smoothMix-KJ_1982743157039349761.json
 hash: 4f9b848743e14f6e
 coverage: 0.633803
 learned_at: 2026-10-15 22:32:42

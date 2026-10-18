@@ -4,7 +4,7 @@ name: LTX 2.3  首尾帧数字人唱歌+视频高清放大1080P_2047852790181011
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047852790181011458.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3  首尾帧数字人唱歌+视频高清放大1080P_2047852790181011458.json
 hash: 6387518531553642
 coverage: 0.464286
 learned_at: 2026-10-15 22:37:07

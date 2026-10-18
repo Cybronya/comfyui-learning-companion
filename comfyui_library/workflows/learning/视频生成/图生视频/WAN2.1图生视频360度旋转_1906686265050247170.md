@@ -4,7 +4,7 @@ name: WAN2.1图生视频360度旋转_1906686265050247170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1906686265050247170.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频360度旋转_1906686265050247170.json
 hash: f5f01ab3481c668a
 coverage: 1
 learned_at: 2026-10-15 22:29:27

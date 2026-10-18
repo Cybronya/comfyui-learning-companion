@@ -4,7 +4,7 @@ name: LTX 2.3双人分镜视频生成_2059165088854138882.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059165088854138882.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3双人分镜视频生成_2059165088854138882.json
 hash: c7fb6e28d290e7a0
 coverage: 0.522523
 learned_at: 2026-10-15 22:38:37

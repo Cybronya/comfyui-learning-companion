@@ -4,7 +4,7 @@ name: LTX_Director_2_Workflow_FL_frame首尾帧_2072254537259372546.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072254537259372546.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX_Director_2_Workflow_FL_frame首尾帧_2072254537259372546.json
 hash: 6a6811161b53334b
 coverage: 0.969697
 learned_at: 2026-10-15 22:40:53

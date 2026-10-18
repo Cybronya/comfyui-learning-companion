@@ -4,7 +4,7 @@ name: VACE 1.3B双图参考强一致性视频生成V1_1907454783161307138.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1907454783161307138.json
+file: comfyui_library/workflows/视频生成/图生视频/VACE 1.3B双图参考强一致性视频生成V1_1907454783161307138.json
 hash: dcec0b6abc1f22ec
 coverage: 0.710526
 learned_at: 2026-10-15 22:29:27

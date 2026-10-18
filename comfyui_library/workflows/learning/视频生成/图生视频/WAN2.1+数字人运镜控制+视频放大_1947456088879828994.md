@@ -4,7 +4,7 @@ name: WAN2.1+数字人运镜控制+视频放大_1947456088879828994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947456088879828994.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1+数字人运镜控制+视频放大_1947456088879828994.json
 hash: dbb7472af39de4d2
 coverage: 0.942857
 learned_at: 2026-10-15 22:30:45

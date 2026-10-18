@@ -4,7 +4,7 @@ name: Seedance2.0 Fast全能参考视频+图生图_2056379103971991553.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056379103971991553.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 Fast全能参考视频+图生图_2056379103971991553.json
 hash: 5b3b7b4f5364c817
 coverage: 1
 learned_at: 2026-10-15 22:38:03

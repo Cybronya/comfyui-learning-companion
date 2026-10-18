@@ -4,7 +4,7 @@ name: wan2.2首尾帧【高清输出+Foley音效】_1970093575075733506.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970093575075733506.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首尾帧【高清输出+Foley音效】_1970093575075733506.json
 hash: 5aa6ddf8dde3ea24
 coverage: 0.87234
 learned_at: 2026-10-15 22:31:52

@@ -4,7 +4,7 @@ name: Wan2.6 I2V_2000815926377316353.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000815926377316353.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.6 I2V_2000815926377316353.json
 hash: 3ddd8f5882bad392
 coverage: 0.8
 learned_at: 2026-10-15 22:33:43

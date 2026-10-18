@@ -4,7 +4,7 @@ name: 动作模仿wan2.2_1987379630455894017.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987379630455894017.json
+file: comfyui_library/workflows/视频生成/图生视频/动作模仿wan2.2_1987379630455894017.json
 hash: 1061354e194afb85
 coverage: 0.666667
 learned_at: 2026-10-15 22:32:58

@@ -4,7 +4,7 @@ name: Wan2.1连续长视频生成_1900938287807086593.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900938287807086593.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1连续长视频生成_1900938287807086593.json
 hash: 72cd272936468bb1
 coverage: 0.55102
 learned_at: 2026-10-15 22:29:23

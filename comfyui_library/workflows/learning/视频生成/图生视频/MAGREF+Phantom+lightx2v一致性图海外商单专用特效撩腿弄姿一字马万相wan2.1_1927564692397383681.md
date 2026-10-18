@@ -4,7 +4,7 @@ name: MAGREF+Phantom+lightx2v一致性图海外商单专用特效撩腿弄姿一
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927564692397383681.json
+file: comfyui_library/workflows/视频生成/图生视频/MAGREF+Phantom+lightx2v一致性图海外商单专用特效撩腿弄姿一字马万相wan2.1_1927564692397383681.json
 hash: 939994a058049370
 coverage: 1
 learned_at: 2026-10-15 22:29:54

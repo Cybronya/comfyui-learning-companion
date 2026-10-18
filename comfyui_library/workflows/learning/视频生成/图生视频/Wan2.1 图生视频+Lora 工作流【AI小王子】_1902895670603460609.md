@@ -4,7 +4,7 @@ name: Wan2.1 图生视频+Lora 工作流【AI小王子】_1902895670603460609.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1902895670603460609.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 图生视频+Lora 工作流【AI小王子】_1902895670603460609.json
 hash: 6d32efa78bdd90f3
 coverage: 1
 learned_at: 2026-10-15 22:29:24

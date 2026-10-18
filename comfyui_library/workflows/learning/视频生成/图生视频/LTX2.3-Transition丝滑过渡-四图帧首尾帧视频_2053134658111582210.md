@@ -4,7 +4,7 @@ name: LTX2.3-Transition丝滑过渡-四图帧首尾帧视频_2053134658111582210
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053134658111582210.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-Transition丝滑过渡-四图帧首尾帧视频_2053134658111582210.json
 hash: 485ac125ca066f10
 coverage: 0.84058
 learned_at: 2026-10-15 22:37:36

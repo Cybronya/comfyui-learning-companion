@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Smooth Mix高低噪模型高动态图生视频V1（KJ�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979918269014511617.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Smooth Mix高低噪模型高动态图生视频V1（KJ版）_1979918269014511617.json
 hash: 546518119de9a993
 coverage: 0.782609
 learned_at: 2026-10-15 22:32:27

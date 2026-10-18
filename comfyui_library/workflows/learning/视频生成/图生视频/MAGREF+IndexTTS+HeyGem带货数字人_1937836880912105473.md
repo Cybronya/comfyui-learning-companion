@@ -4,7 +4,7 @@ name: MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937836880912105473.json
+file: comfyui_library/workflows/视频生成/图生视频/MAGREF+IndexTTS+HeyGem带货数字人_1937836880912105473.json
 hash: 738e9cc9bc5f1efb
 coverage: 0.960784
 learned_at: 2026-10-15 22:30:30

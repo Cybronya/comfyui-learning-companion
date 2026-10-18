@@ -4,7 +4,7 @@ name: Wan2.2 精准角色替换 动作迁移  人物替换_2039613263704494081.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039613263704494081.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 精准角色替换 动作迁移  人物替换_2039613263704494081.json
 hash: 0e1630277be4f459
 coverage: 0.567901
 learned_at: 2026-10-15 22:36:09

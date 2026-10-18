@@ -4,7 +4,7 @@ name: 图+音频生视频：音乐MV-对口型-图生视频 ltx2.3双采+VBVR+Qw
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054885295354589185.json
+file: comfyui_library/workflows/视频生成/图生视频/图+音频生视频：音乐MV-对口型-图生视频 ltx2.3双采+VBVR+Qwen3.5_2054885295354589185.json
 hash: f0a41702390fc276
 coverage: 0.520661
 learned_at: 2026-10-15 22:37:53

@@ -4,7 +4,7 @@ name: Wan2.1 万相 飞天特效_1910876944500752386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1910876944500752386.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 万相 飞天特效_1910876944500752386.json
 hash: 3211d186e3439934
 coverage: 1
 learned_at: 2026-10-15 22:29:30

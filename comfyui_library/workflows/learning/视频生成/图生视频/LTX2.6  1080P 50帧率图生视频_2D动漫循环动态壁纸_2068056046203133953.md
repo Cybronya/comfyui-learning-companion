@@ -4,7 +4,7 @@ name: LTX2.6  1080P 50帧率图生视频_2D动漫循环动态壁纸_206805604620
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068056046203133953.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.6  1080P 50帧率图生视频_2D动漫循环动态壁纸_2068056046203133953.json
 hash: 16417c8a4468dfeb
 coverage: 0.936709
 learned_at: 2026-10-15 22:40:15

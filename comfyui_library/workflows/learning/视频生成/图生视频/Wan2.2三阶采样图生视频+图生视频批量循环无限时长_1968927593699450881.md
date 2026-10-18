@@ -4,7 +4,7 @@ name: Wan2.2三阶采样图生视频+图生视频批量循环无限时长_196892
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968927593699450881.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2三阶采样图生视频+图生视频批量循环无限时长_1968927593699450881.json
 hash: 960544e003f50064
 coverage: 0.495575
 learned_at: 2026-10-15 22:31:47

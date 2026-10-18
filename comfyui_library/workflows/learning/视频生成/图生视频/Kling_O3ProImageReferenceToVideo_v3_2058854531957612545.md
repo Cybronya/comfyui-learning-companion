@@ -4,7 +4,7 @@ name: Kling_O3ProImageReferenceToVideo_v3_2058854531957612545.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058854531957612545.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_O3ProImageReferenceToVideo_v3_2058854531957612545.json
 hash: a38083117bdfad18
 coverage: 0.909091
 learned_at: 2026-10-15 22:38:30

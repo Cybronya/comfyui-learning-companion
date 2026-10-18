@@ -4,7 +4,7 @@ name: 图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011435103129444353.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-水流冲脱效果wan2.2 Image 2 Video_2011435103129444353.json
 hash: 3e967d29556559ab
 coverage: 0.786885
 learned_at: 2026-10-15 22:34:22

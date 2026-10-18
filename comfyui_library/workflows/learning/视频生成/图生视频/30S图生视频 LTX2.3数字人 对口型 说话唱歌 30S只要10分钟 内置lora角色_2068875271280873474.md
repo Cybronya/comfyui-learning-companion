@@ -4,7 +4,7 @@ name: 30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068875271280873474.json
+file: comfyui_library/workflows/视频生成/图生视频/30S图生视频 LTX2.3数字人 对口型 说话唱歌 30S只要10分钟 内置lora角色_2068875271280873474.json
 hash: a81de00a5dc16b76
 coverage: 0.820225
 learned_at: 2026-10-15 22:40:22

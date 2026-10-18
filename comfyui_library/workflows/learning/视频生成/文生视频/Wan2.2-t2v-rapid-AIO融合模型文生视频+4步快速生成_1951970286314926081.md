@@ -4,7 +4,7 @@ name: Wan2.2-t2v-rapid-AIO融合模型文生视频+4步快速生成_195197028631
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951970286314926081.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-t2v-rapid-AIO融合模型文生视频+4步快速生成_1951970286314926081.json
 hash: ee66aae236e8e755
 coverage: 0.733333
 learned_at: 2026-10-15 22:43:38

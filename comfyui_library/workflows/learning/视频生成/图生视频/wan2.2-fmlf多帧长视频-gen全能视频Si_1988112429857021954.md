@@ -4,7 +4,7 @@ name: wan2.2-fmlf多帧长视频-gen全能视频Si_1988112429857021954.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988112429857021954.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-fmlf多帧长视频-gen全能视频Si_1988112429857021954.json
 hash: 0ea8cc396a91813a
 coverage: 1
 learned_at: 2026-10-15 22:33:01

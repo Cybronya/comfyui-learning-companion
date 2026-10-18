@@ -4,7 +4,7 @@ name: (无限时长分段动作)Wan2.2版Infinite Talk图生视频数字人V2_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018664165719674881.json
+file: comfyui_library/workflows/视频生成/图生视频/(无限时长分段动作)Wan2.2版Infinite Talk图生视频数字人V2_2018664165719674881.json
 hash: c21b44e2ae1bca74
 coverage: 0.853659
 learned_at: 2026-10-15 22:34:58

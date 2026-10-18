@@ -4,7 +4,7 @@ name: Wan2.2-SmoothMix图生视频首中尾帧自动提示词版_197981238538289
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979812385382895618.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-SmoothMix图生视频首中尾帧自动提示词版_1979812385382895618.json
 hash: 6bce34e18d0caee3
 coverage: 0.875
 learned_at: 2026-10-15 22:32:26

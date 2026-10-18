@@ -4,7 +4,7 @@ name: LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047485702841049089.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 GGUF promptrelay 时序长效_2047485702841049089.json
 hash: 2a68d92052cfa594
 coverage: 0.717391
 learned_at: 2026-10-15 22:37:05

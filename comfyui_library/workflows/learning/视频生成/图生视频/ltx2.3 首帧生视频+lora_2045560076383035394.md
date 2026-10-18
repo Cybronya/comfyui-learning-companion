@@ -4,7 +4,7 @@ name: ltx2.3 首帧生视频+lora_2045560076383035394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045560076383035394.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3 首帧生视频+lora_2045560076383035394.json
 hash: 470579240005b557
 coverage: 0.964286
 learned_at: 2026-10-15 22:36:50

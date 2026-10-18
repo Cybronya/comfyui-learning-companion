@@ -4,7 +4,7 @@ name: Wan2.2 Animate动作迁移（动作模仿非替换）KJ_V2_198819641431447
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988196414314471426.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate动作迁移（动作模仿非替换）KJ_V2_1988196414314471426.json
 hash: 97ee0d86cd1dba38
 coverage: 0.566038
 learned_at: 2026-10-15 22:33:02

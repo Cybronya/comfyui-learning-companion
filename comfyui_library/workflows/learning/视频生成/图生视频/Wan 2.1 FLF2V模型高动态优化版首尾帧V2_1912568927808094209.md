@@ -4,7 +4,7 @@ name: Wan 2.1 FLF2V模型高动态优化版首尾帧V2_1912568927808094209.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912568927808094209.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.1 FLF2V模型高动态优化版首尾帧V2_1912568927808094209.json
 hash: a3dfd45819ab3e96
 coverage: 1
 learned_at: 2026-10-15 22:29:32

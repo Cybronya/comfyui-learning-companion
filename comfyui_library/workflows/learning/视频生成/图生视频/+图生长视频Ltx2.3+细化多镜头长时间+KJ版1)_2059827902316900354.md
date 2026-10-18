@@ -4,7 +4,7 @@ name: +图生长视频Ltx2.3+细化多镜头长时间+KJ版1)_205982790231690035
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059827902316900354.json
+file: comfyui_library/workflows/视频生成/图生视频/+图生长视频Ltx2.3+细化多镜头长时间+KJ版1)_2059827902316900354.json
 hash: d1a77d8fa416f37a
 coverage: 0.8
 learned_at: 2026-10-15 22:38:42

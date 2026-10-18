@@ -4,7 +4,7 @@ name: Wan2.1 FusionX Phantom NAG多图像转视频_1949705582357422081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949705582357422081.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 FusionX Phantom NAG多图像转视频_1949705582357422081.json
 hash: 444528beda102cbc
 coverage: 0.805556
 learned_at: 2026-10-15 22:30:50

@@ -4,7 +4,7 @@ name: MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076230597940432898.json
+file: comfyui_library/workflows/视频生成/图生视频/MSR继续进化，LTX-2.3 超强多图参考_2076230597940432898.json
 hash: 8efb89477ada11d4
 coverage: 0.895833
 learned_at: 2026-10-15 22:41:29

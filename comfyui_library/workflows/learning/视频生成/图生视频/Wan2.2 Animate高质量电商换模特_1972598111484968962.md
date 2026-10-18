@@ -4,7 +4,7 @@ name: Wan2.2 Animate高质量电商换模特_1972598111484968962.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972598111484968962.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate高质量电商换模特_1972598111484968962.json
 hash: b78f0d386244c815
 coverage: 0.54321
 learned_at: 2026-10-15 22:32:00

@@ -4,7 +4,7 @@ name: NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914851220903686145.json
+file: comfyui_library/workflows/视频生成/图生视频/NFT卡牌 360度旋转展示工作流 WAN2.1｜一键生成视频系列_1914851220903686145.json
 hash: 1b37802cd15dfde8
 coverage: 1
 learned_at: 2026-10-15 22:29:37

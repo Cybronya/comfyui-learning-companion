@@ -4,7 +4,7 @@ name: video_ltx2_3_best_faceid_ganloss_upscale_2080566370382729217.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080566370382729217.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_best_faceid_ganloss_upscale_2080566370382729217.json
 hash: d0ec9fd13762c2d8
 coverage: 0.460674
 learned_at: 2026-10-15 22:42:15

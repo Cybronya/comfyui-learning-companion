@@ -4,7 +4,7 @@ name: aidir-LTX2.3 四宫格生视频_2070309380381298690.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070309380381298690.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX2.3 四宫格生视频_2070309380381298690.json
 hash: 568aadede225f59d
 coverage: 0.491935
 learned_at: 2026-10-15 22:40:36

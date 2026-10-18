@@ -4,7 +4,7 @@ name: 全自动LTX-2.3_MSR 多图参考高动态图生视频工作流_2064250965
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064250965800349698.json
+file: comfyui_library/workflows/视频生成/图生视频/全自动LTX-2.3_MSR 多图参考高动态图生视频工作流_2064250965800349698.json
 hash: 9dd953a8405a818f
 coverage: 0.830189
 learned_at: 2026-10-15 22:39:22

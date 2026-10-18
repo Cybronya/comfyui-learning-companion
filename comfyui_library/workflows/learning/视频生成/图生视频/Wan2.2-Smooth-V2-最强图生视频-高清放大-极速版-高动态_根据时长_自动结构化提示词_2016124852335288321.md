@@ -4,7 +4,7 @@ name: Wan2.2-Smooth-V2-最强图生视频-高清放大-极速版-高动态_根�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016124852335288321.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth-V2-最强图生视频-高清放大-极速版-高动态_根据时长_自动结构化提示词_2016124852335288321.json
 hash: f2d5d18f250a730f
 coverage: 0.805195
 learned_at: 2026-10-15 22:34:41

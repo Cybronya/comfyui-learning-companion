@@ -4,7 +4,7 @@ name: LTX-2.3 I2V_T2V+OmniVoice-TTS多人数字人语音克隆生成_20522620746
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052262074620891137.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 I2V_T2V+OmniVoice-TTS多人数字人语音克隆生成_2052262074620891137.json
 hash: 14ad9706c0f3ea07
 coverage: 0.48538
 learned_at: 2026-10-15 22:37:27

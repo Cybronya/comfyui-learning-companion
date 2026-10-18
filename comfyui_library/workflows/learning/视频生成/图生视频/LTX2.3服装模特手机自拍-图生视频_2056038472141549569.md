@@ -4,7 +4,7 @@ name: LTX2.3服装模特手机自拍-图生视频_2056038472141549569.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056038472141549569.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3服装模特手机自拍-图生视频_2056038472141549569.json
 hash: 0062354f7ee71cd7
 coverage: 0.944444
 learned_at: 2026-10-15 22:38:00

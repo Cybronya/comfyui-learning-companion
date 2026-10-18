@@ -4,7 +4,7 @@ name: LTX 2.3-MSR多参视频自动提示词2606_2068774393836302338.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068774393836302338.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3-MSR多参视频自动提示词2606_2068774393836302338.json
 hash: f038e951e9dde65e
 coverage: 0.462857
 learned_at: 2026-10-15 22:40:21

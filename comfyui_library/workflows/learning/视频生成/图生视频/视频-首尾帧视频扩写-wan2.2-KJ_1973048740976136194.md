@@ -4,7 +4,7 @@ name: 视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973048740976136194.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-首尾帧视频扩写-wan2.2-KJ_1973048740976136194.json
 hash: 9010dfd5fc5ad4cc
 coverage: 0.644737
 learned_at: 2026-10-15 22:32:02

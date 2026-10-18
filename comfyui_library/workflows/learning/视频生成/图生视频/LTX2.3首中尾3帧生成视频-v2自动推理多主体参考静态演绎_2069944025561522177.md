@@ -4,7 +4,7 @@ name: LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069944025561522177.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首中尾3帧生成视频-v2自动推理多主体参考静态演绎_2069944025561522177.json
 hash: 30ce426230881797
 coverage: 0.666667
 learned_at: 2026-10-15 22:40:33

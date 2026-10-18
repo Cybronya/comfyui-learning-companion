@@ -4,7 +4,7 @@ name: AI多镜头图片参考生成视频 Ltx2.3 Director_2080844202388312065.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080844202388312065.json
+file: comfyui_library/workflows/视频生成/图生视频/AI多镜头图片参考生成视频 Ltx2.3 Director_2080844202388312065.json
 hash: 9890f96d3df6392d
 coverage: 0.9375
 learned_at: 2026-10-15 22:42:17

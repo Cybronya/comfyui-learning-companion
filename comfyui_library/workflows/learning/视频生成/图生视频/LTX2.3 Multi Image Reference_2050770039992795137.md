@@ -4,7 +4,7 @@ name: LTX2.3 Multi Image Reference_2050770039992795137.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050770039992795137.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Multi Image Reference_2050770039992795137.json
 hash: 82b57b7bba611287
 coverage: 0.663636
 learned_at: 2026-10-15 22:37:19

@@ -4,7 +4,7 @@ name: Wan2.1单人对口型_2064352779824623618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064352779824623618.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1单人对口型_2064352779824623618.json
 hash: 289508746797bf10
 coverage: 0.977778
 learned_at: 2026-10-15 22:39:23

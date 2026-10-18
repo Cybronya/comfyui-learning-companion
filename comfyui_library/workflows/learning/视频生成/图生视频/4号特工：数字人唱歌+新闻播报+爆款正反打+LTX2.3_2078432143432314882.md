@@ -4,7 +4,7 @@ name: 4号特工：数字人唱歌+新闻播报+爆款正反打+LTX2.3_207843214
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078432143432314882.json
+file: comfyui_library/workflows/视频生成/图生视频/4号特工：数字人唱歌+新闻播报+爆款正反打+LTX2.3_2078432143432314882.json
 hash: fdb6d7c305da94c8
 coverage: 0.655556
 learned_at: 2026-10-15 22:41:52

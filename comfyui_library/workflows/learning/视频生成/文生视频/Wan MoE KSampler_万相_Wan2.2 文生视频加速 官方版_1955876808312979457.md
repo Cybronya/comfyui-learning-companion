@@ -4,7 +4,7 @@ name: Wan MoE KSampler_万相_Wan2.2 文生视频加速 官方版_19558768083129
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955876808312979457.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan MoE KSampler_万相_Wan2.2 文生视频加速 官方版_1955876808312979457.json
 hash: 04e2e207e8fc974d
 coverage: 0.869565
 learned_at: 2026-10-15 22:43:40

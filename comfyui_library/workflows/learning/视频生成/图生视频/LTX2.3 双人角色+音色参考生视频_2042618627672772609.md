@@ -4,7 +4,7 @@ name: LTX2.3 双人角色+音色参考生视频_2042618627672772609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042618627672772609.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 双人角色+音色参考生视频_2042618627672772609.json
 hash: 2d8d58bc1b56bc32
 coverage: 0.495868
 learned_at: 2026-10-15 22:36:29

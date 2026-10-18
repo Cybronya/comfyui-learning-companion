@@ -4,7 +4,7 @@ name: 图生视频漫画制作短剧制作LTX2.3-Director 导演台-多图漫剧
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068702491201593346.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频漫画制作短剧制作LTX2.3-Director 导演台-多图漫剧长视频_2068702491201593346.json
 hash: 6a4e87859cfa9dbc
 coverage: 1
 learned_at: 2026-10-15 22:40:21

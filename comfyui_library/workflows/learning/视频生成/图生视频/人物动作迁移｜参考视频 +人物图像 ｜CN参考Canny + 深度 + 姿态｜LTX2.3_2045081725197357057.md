@@ -4,7 +4,7 @@ name: 人物动作迁移｜参考视频 +人物图像 ｜CN参考Canny + 深度 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045081725197357057.json
+file: comfyui_library/workflows/视频生成/图生视频/人物动作迁移｜参考视频 +人物图像 ｜CN参考Canny + 深度 + 姿态｜LTX2.3_2045081725197357057.json
 hash: a1212cd2ec59427d
 coverage: 0.666667
 learned_at: 2026-10-15 22:36:45

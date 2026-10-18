@@ -4,7 +4,7 @@ name: Ltx2.3-Prompt Relay+VBVR-四图分镜生视频加音频对口型数-精确
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057110543516921858.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3-Prompt Relay+VBVR-四图分镜生视频加音频对口型数-精确控制运镜-电商_2057110543516921858.json
 hash: 2c573a065e7b9a32
 coverage: 0.455621
 learned_at: 2026-10-15 22:38:08

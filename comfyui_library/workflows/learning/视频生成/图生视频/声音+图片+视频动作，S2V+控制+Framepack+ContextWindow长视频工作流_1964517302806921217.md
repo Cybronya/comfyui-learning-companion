@@ -4,7 +4,7 @@ name: 声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964517302806921217.json
+file: comfyui_library/workflows/视频生成/图生视频/声音+图片+视频动作，S2V+控制+Framepack+ContextWindow长视频工作流_1964517302806921217.json
 hash: 1eb86f7be2619e90
 coverage: 0.928571
 learned_at: 2026-10-15 22:31:35

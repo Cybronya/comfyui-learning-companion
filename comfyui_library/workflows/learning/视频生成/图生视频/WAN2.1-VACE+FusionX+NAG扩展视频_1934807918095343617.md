@@ -4,7 +4,7 @@ name: WAN2.1-VACE+FusionX+NAG扩展视频_1934807918095343617.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934807918095343617.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1-VACE+FusionX+NAG扩展视频_1934807918095343617.json
 hash: a76ca3ba339b7215
 coverage: 0.961538
 learned_at: 2026-10-15 22:30:19

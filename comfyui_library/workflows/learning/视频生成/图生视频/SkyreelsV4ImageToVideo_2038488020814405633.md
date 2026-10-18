@@ -4,7 +4,7 @@ name: SkyreelsV4ImageToVideo_2038488020814405633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038488020814405633.json
+file: comfyui_library/workflows/视频生成/图生视频/SkyreelsV4ImageToVideo_2038488020814405633.json
 hash: 843415e3d1d38f01
 coverage: 1
 learned_at: 2026-10-15 22:36:03

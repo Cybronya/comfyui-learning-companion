@@ -4,7 +4,7 @@ name: LTX-2.3_Ingredients多参考自动提示词twoStage_2069345362887929858.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069345362887929858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_Ingredients多参考自动提示词twoStage_2069345362887929858.json
 hash: 29f262e5fe6a3ed2
 coverage: 0.918033
 learned_at: 2026-10-15 22:40:28

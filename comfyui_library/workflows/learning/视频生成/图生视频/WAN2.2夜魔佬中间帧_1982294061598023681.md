@@ -4,7 +4,7 @@ name: WAN2.2夜魔佬中间帧_1982294061598023681.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982294061598023681.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2夜魔佬中间帧_1982294061598023681.json
 hash: eed897178abbe2f4
 coverage: 1
 learned_at: 2026-10-15 22:32:40

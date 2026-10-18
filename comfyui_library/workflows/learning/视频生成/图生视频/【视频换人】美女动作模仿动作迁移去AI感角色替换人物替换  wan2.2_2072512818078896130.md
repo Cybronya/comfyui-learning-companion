@@ -4,7 +4,7 @@ name: 【视频换人】美女动作模仿动作迁移去AI感角色替换人物
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072512818078896130.json
+file: comfyui_library/workflows/视频生成/图生视频/【视频换人】美女动作模仿动作迁移去AI感角色替换人物替换  wan2.2_2072512818078896130.json
 hash: af7d6c0085cb33ee
 coverage: 0.974359
 learned_at: 2026-10-15 22:40:55

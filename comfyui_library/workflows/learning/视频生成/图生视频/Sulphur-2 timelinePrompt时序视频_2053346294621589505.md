@@ -4,7 +4,7 @@ name: Sulphur-2 timelinePrompt时序视频_2053346294621589505.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053346294621589505.json
+file: comfyui_library/workflows/视频生成/图生视频/Sulphur-2 timelinePrompt时序视频_2053346294621589505.json
 hash: bba526d138fe362c
 coverage: 0.508197
 learned_at: 2026-10-15 22:37:38

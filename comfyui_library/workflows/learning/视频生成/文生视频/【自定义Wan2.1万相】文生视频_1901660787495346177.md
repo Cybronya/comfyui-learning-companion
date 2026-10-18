@@ -4,7 +4,7 @@ name: 【自定义Wan2.1万相】文生视频_1901660787495346177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1901660787495346177.json
+file: comfyui_library/workflows/视频生成/文生视频/【自定义Wan2.1万相】文生视频_1901660787495346177.json
 hash: 65b274acbb65b74c
 coverage: 1
 learned_at: 2026-10-15 22:43:21

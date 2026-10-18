@@ -4,7 +4,7 @@ name: 地表最强Seedance2.0支持留空 支持真人 全参工作流_204356658
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043566585083863041.json
+file: comfyui_library/workflows/视频生成/图生视频/地表最强Seedance2.0支持留空 支持真人 全参工作流_2043566585083863041.json
 hash: 4625c065a9ec60bc
 coverage: 0.904762
 learned_at: 2026-10-15 22:36:32

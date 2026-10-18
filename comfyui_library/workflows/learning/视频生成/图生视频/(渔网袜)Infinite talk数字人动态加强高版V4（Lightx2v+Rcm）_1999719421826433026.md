@@ -4,7 +4,7 @@ name: (渔网袜)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999719421826433026.json
+file: comfyui_library/workflows/视频生成/图生视频/(渔网袜)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1999719421826433026.json
 hash: 814d3a804d7959e7
 coverage: 0.75
 learned_at: 2026-10-15 22:33:37

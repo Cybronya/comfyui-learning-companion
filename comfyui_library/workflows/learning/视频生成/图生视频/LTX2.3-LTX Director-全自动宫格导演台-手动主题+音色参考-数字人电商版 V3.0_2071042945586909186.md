@@ -4,7 +4,7 @@ name: LTX2.3-LTX Director-全自动宫格导演台-手动主题+音色参考-数
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071042945586909186.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-手动主题+音色参考-数字人电商版 V3.0_2071042945586909186.json
 hash: 83350944688dec5e
 coverage: 0.580247
 learned_at: 2026-10-15 22:40:43

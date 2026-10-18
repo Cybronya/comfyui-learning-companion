@@ -4,7 +4,7 @@ name: Wan2.1 14B FusionX 图生视频高清极速简化版-StarAI_19364024460319
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1936402446031949825.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 14B FusionX 图生视频高清极速简化版-StarAI_1936402446031949825.json
 hash: 26d855d2f4331bfc
 coverage: 0.939394
 learned_at: 2026-10-15 22:43:29

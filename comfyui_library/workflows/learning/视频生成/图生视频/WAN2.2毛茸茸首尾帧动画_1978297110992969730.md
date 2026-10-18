@@ -4,7 +4,7 @@ name: WAN2.2毛茸茸首尾帧动画_1978297110992969730.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978297110992969730.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2毛茸茸首尾帧动画_1978297110992969730.json
 hash: 870b858061ab8717
 coverage: 0.975
 learned_at: 2026-10-15 22:32:18

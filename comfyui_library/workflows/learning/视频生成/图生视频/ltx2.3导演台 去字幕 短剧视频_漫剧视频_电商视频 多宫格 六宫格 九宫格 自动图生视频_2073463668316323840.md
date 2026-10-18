@@ -4,7 +4,7 @@ name: ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073463668316323840.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3导演台 去字幕 短剧视频_漫剧视频_电商视频 多宫格 六宫格 九宫格 自动图生视频_2073463668316323840.json
 hash: bfe8c21ad0ccac99
 coverage: 0.875
 learned_at: 2026-10-15 22:41:07

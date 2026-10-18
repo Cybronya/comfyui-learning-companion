@@ -4,7 +4,7 @@ name: (落叶)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_20016
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001666583061774338.json
+file: comfyui_library/workflows/视频生成/图生视频/(落叶)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2001666583061774338.json
 hash: dfc5d315bd6ac076
 coverage: 0.75
 learned_at: 2026-10-15 22:33:46

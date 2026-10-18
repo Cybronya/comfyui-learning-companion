@@ -4,7 +4,7 @@ name: 【Supermate】LTX2.3精控提示词时间线prompt_relay_timeline_2049641
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049641151925370882.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】LTX2.3精控提示词时间线prompt_relay_timeline_2049641151925370882.json
 hash: 42e94d2d32fcff0b
 coverage: 0.75
 learned_at: 2026-10-15 22:37:15

@@ -4,7 +4,7 @@ name: Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967355921259225089.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Fun VACE 丝滑首尾帧制作 LLM智能提示词KJ极速版-StarAI_1967355921259225089.json
 hash: 36b93d2282e8f1ad
 coverage: 0.808511
 learned_at: 2026-10-15 22:31:41

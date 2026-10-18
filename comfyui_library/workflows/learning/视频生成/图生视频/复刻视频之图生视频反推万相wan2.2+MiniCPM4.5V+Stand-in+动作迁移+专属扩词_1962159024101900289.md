@@ -4,7 +4,7 @@ name: 复刻视频之图生视频反推万相wan2.2+MiniCPM4.5V+Stand-in+动作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962159024101900289.json
+file: comfyui_library/workflows/视频生成/图生视频/复刻视频之图生视频反推万相wan2.2+MiniCPM4.5V+Stand-in+动作迁移+专属扩词_1962159024101900289.json
 hash: 02f030a929999cad
 coverage: 0.954545
 learned_at: 2026-10-15 22:31:30

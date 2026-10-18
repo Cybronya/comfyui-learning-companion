@@ -4,7 +4,7 @@ name: LTX2.3 MSR+BestFaceID面部一致增强_2074817349152235521.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074817349152235521.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MSR+BestFaceID面部一致增强_2074817349152235521.json
 hash: ce51976b3c8c4dbd
 coverage: 0.978723
 learned_at: 2026-10-15 22:41:19

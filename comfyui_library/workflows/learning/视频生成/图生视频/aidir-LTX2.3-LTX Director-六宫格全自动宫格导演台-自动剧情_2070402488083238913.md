@@ -4,7 +4,7 @@ name: aidir-LTX2.3-LTX Director-六宫格全自动宫格导演台-自动剧情_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070402488083238913.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX2.3-LTX Director-六宫格全自动宫格导演台-自动剧情_2070402488083238913.json
 hash: e4115943042d9ed8
 coverage: 0.611111
 learned_at: 2026-10-15 22:40:39

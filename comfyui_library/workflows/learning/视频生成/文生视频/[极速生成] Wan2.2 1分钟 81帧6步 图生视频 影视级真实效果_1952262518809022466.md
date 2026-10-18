@@ -4,7 +4,7 @@ name: [极速生成] Wan2.2 1分钟 81帧6步 图生视频 影视级真实效果
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1952262518809022466.json
+file: comfyui_library/workflows/视频生成/文生视频/[极速生成] Wan2.2 1分钟 81帧6步 图生视频 影视级真实效果_1952262518809022466.json
 hash: a0243a15bd5934ee
 coverage: 1
 learned_at: 2026-10-15 22:43:38

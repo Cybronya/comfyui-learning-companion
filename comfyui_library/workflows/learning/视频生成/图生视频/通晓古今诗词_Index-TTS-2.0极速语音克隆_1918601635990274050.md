@@ -4,7 +4,7 @@ name: 通晓古今诗词_Index-TTS-2.0极速语音克隆_1918601635990274050.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1918601635990274050.json
+file: comfyui_library/workflows/视频生成/图生视频/通晓古今诗词_Index-TTS-2.0极速语音克隆_1918601635990274050.json
 hash: e6abb65fa335a4d2
 coverage: 0.727273
 learned_at: 2026-10-15 22:29:40

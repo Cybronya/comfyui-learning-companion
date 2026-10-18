@@ -4,7 +4,7 @@ name: HeGenAI-N8N-Wan2.2图生视频加速版_1968577373975261186.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968577373975261186.json
+file: comfyui_library/workflows/视频生成/图生视频/HeGenAI-N8N-Wan2.2图生视频加速版_1968577373975261186.json
 hash: 85c61be5ea92c120
 coverage: 0.96
 learned_at: 2026-10-15 22:31:45

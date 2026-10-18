@@ -4,7 +4,7 @@ name: 人物角色替换Wan Animate+SeedVR2.5 wan2.2 视频重绘动作迁移参
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997869036803436545.json
+file: comfyui_library/workflows/视频生成/图生视频/人物角色替换Wan Animate+SeedVR2.5 wan2.2 视频重绘动作迁移参考图片_1997869036803436545.json
 hash: 2649229614193e00
 coverage: 0.964286
 learned_at: 2026-10-15 22:33:30

@@ -4,7 +4,7 @@ name: wan2.1 运镜lora_1927308974876692481.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927308974876692481.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 运镜lora_1927308974876692481.json
 hash: cab0b08a27f6f509
 coverage: 0.884615
 learned_at: 2026-10-15 22:29:54

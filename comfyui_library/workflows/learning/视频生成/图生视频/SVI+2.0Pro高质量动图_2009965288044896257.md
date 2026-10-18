@@ -4,7 +4,7 @@ name: SVI+2.0Pro高质量动图_2009965288044896257.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009965288044896257.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI+2.0Pro高质量动图_2009965288044896257.json
 hash: c6c64cc8850b0c96
 coverage: 0.570175
 learned_at: 2026-10-15 22:34:15

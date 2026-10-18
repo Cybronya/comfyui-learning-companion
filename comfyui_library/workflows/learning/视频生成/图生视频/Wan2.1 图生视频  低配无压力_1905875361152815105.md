@@ -4,7 +4,7 @@ name: Wan2.1 图生视频  低配无压力_1905875361152815105.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1905875361152815105.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 图生视频  低配无压力_1905875361152815105.json
 hash: 3d1f57d82e0fff23
 coverage: 1
 learned_at: 2026-10-15 22:29:26

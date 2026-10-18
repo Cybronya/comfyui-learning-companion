@@ -4,7 +4,7 @@ name: Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003370501382807554.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.6图生视频通义千问最新一代视频模型_2003370501382807554.json
 hash: bda01333ae4ead28
 coverage: 0.571429
 learned_at: 2026-10-15 22:33:50

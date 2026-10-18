@@ -4,7 +4,7 @@ name: 简单点wan2.2-remixv2-i2v图生视频_2044709107302670338.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044709107302670338.json
+file: comfyui_library/workflows/视频生成/图生视频/简单点wan2.2-remixv2-i2v图生视频_2044709107302670338.json
 hash: 463eed382697ae9e
 coverage: 0.675
 learned_at: 2026-10-15 22:36:40

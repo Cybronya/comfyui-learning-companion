@@ -4,7 +4,7 @@ name: Ltx2.3 导演流（自用）_2063841095607476225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063841095607476225.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 导演流（自用）_2063841095607476225.json
 hash: fc2f90384568adde
 coverage: 0.952381
 learned_at: 2026-10-15 22:39:18

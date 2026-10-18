@@ -4,7 +4,7 @@ name: 🦞LTX-2.3 单人对口型数字人（带配音）极速无字幕版_2046
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046500148146085890.json
+file: comfyui_library/workflows/视频生成/图生视频/🦞LTX-2.3 单人对口型数字人（带配音）极速无字幕版_2046500148146085890.json
 hash: 710268c0814258ea
 coverage: 0.887097
 learned_at: 2026-10-15 22:36:59

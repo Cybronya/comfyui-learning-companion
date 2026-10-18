@@ -4,7 +4,7 @@ name: Bernini+Ltx2.3+PR导演短剧分镜台 多参考 对话时序控制 分镜
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067837770793570305.json
+file: comfyui_library/workflows/视频生成/图生视频/Bernini+Ltx2.3+PR导演短剧分镜台 多参考 对话时序控制 分镜扩展_2067837770793570305.json
 hash: 89286537dced59ee
 coverage: 0.581028
 learned_at: 2026-10-15 22:40:13

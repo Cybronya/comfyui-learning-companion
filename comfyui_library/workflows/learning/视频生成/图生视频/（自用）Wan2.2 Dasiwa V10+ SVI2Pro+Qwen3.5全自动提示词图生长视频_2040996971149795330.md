@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Dasiwa V10+ SVI2Pro+Qwen3.5全自动提示词图生长�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040996971149795330.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Dasiwa V10+ SVI2Pro+Qwen3.5全自动提示词图生长视频_2040996971149795330.json
 hash: d6e964f5fed97794
 coverage: 0.300716
 learned_at: 2026-10-15 22:36:17

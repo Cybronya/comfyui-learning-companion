@@ -4,7 +4,7 @@ name: LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_20811997696864
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081199769686462466.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_ref2vid_MSRV2_角色表参考-视频生成工作流_2081199769686462466.json
 hash: 6d6b17ffa7089f40
 coverage: 0.530864
 learned_at: 2026-10-15 22:42:20

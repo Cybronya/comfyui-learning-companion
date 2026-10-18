@@ -4,7 +4,7 @@ name: WAN 2.2 Smooth Mix图生视频_1981294869803073538.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981294869803073538.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2 Smooth Mix图生视频_1981294869803073538.json
 hash: a1e816ef9fd6a76b
 coverage: 0.75
 learned_at: 2026-10-15 22:32:37

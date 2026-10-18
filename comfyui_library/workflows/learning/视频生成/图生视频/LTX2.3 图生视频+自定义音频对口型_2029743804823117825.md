@@ -4,7 +4,7 @@ name: LTX2.3 图生视频+自定义音频对口型_2029743804823117825.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029743804823117825.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频+自定义音频对口型_2029743804823117825.json
 hash: 504896293fa37824
 coverage: 0.820896
 learned_at: 2026-10-15 22:35:22

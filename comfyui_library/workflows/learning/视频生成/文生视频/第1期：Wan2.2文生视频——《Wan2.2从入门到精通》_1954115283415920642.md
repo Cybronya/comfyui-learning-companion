@@ -4,7 +4,7 @@ name: 第1期：Wan2.2文生视频——《Wan2.2从入门到精通》_195411528
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954115283415920642.json
+file: comfyui_library/workflows/视频生成/文生视频/第1期：Wan2.2文生视频——《Wan2.2从入门到精通》_1954115283415920642.json
 hash: e1dc1ab8461f27c5
 coverage: 0.882353
 learned_at: 2026-10-15 22:43:39

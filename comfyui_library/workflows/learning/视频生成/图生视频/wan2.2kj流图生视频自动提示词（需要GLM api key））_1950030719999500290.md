@@ -4,7 +4,7 @@ name: wan2.2kj流图生视频自动提示词（需要GLM api key））_195003071
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950030719999500290.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2kj流图生视频自动提示词（需要GLM api key））_1950030719999500290.json
 hash: 91b78ff76a125824
 coverage: 0.945946
 learned_at: 2026-10-15 22:30:51

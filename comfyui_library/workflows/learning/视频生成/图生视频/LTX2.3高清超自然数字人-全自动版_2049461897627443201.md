@@ -4,7 +4,7 @@ name: LTX2.3高清超自然数字人-全自动版_2049461897627443201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049461897627443201.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3高清超自然数字人-全自动版_2049461897627443201.json
 hash: c0f7da3376f2cd35
 coverage: 0.447619
 learned_at: 2026-10-15 22:37:14

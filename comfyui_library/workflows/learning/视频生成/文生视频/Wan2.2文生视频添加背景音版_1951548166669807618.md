@@ -4,7 +4,7 @@ name: Wan2.2文生视频添加背景音版_1951548166669807618.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951548166669807618.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2文生视频添加背景音版_1951548166669807618.json
 hash: 9528392fb1becf3f
 coverage: 0.97561
 learned_at: 2026-10-15 22:43:37

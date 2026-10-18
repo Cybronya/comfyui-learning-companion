@@ -4,7 +4,7 @@ name: SCAIL2动作迁移+角色替换动作迁移话音同步 长视频 工作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066527706170351617.json
+file: comfyui_library/workflows/视频生成/图生视频/SCAIL2动作迁移+角色替换动作迁移话音同步 长视频 工作流V1.0_2066527706170351617.json
 hash: 265c860a2d79f45e
 coverage: 0.6
 learned_at: 2026-10-15 22:39:50

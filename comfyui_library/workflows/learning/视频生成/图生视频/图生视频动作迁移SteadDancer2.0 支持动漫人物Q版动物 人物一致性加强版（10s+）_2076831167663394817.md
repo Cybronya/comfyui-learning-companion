@@ -4,7 +4,7 @@ name: 图生视频动作迁移SteadDancer2.0 支持动漫人物Q版动物 人物
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076831167663394817.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频动作迁移SteadDancer2.0 支持动漫人物Q版动物 人物一致性加强版（10s+）_2076831167663394817.json
 hash: 6243a88635edbec3
 coverage: 0.632353
 learned_at: 2026-10-15 22:41:33

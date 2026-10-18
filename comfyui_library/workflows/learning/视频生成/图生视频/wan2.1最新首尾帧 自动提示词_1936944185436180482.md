@@ -4,7 +4,7 @@ name: wan2.1最新首尾帧 自动提示词_1936944185436180482.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936944185436180482.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1最新首尾帧 自动提示词_1936944185436180482.json
 hash: 2c8266de86513479
 coverage: 0.571429
 learned_at: 2026-10-15 22:30:27

@@ -4,7 +4,7 @@ name: LTX2.3 完美人物一致性_2064713194668650497.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064713194668650497.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 完美人物一致性_2064713194668650497.json
 hash: e92a792b2205e888
 coverage: 0.892857
 learned_at: 2026-10-15 22:39:29

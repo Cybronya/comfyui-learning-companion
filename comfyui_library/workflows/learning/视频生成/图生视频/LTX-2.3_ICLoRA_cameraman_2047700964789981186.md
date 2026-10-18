@@ -4,7 +4,7 @@ name: LTX-2.3_ICLoRA_cameraman_2047700964789981186.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047700964789981186.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_ICLoRA_cameraman_2047700964789981186.json
 hash: 03dd0283efbd34e5
 coverage: 0.684211
 learned_at: 2026-10-15 22:37:06

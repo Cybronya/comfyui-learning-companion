@@ -4,7 +4,7 @@ name: 视频-Wan2.2首尾帧+过渡帧_1978365294227906562.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978365294227906562.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-Wan2.2首尾帧+过渡帧_1978365294227906562.json
 hash: 6851d3b42c1460a4
 coverage: 0.939394
 learned_at: 2026-10-15 22:32:19

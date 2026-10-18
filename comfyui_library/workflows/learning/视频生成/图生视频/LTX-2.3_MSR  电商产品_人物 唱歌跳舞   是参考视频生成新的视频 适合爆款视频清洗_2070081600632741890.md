@@ -4,7 +4,7 @@ name: LTX-2.3_MSR  电商产品_人物 唱歌跳舞   是参考视频生成新�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070081600632741890.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_MSR  电商产品_人物 唱歌跳舞   是参考视频生成新的视频 适合爆款视频清洗_2070081600632741890.json
 hash: 6c707ad757420dba
 coverage: 0.923077
 learned_at: 2026-10-15 22:40:35

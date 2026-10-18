@@ -4,7 +4,7 @@ name: MAGEF+FusionX VACE强一致性控尾帧图生视频万相wan2.1_1943311960
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1943311960978956289.json
+file: comfyui_library/workflows/视频生成/图生视频/MAGEF+FusionX VACE强一致性控尾帧图生视频万相wan2.1_1943311960978956289.json
 hash: c66453ebf3120dad
 coverage: 0.96875
 learned_at: 2026-10-15 22:30:38

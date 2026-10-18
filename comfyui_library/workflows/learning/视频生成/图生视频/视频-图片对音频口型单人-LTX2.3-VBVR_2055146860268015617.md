@@ -4,7 +4,7 @@ name: 视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055146860268015617.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图片对音频口型单人-LTX2.3-VBVR_2055146860268015617.json
 hash: 7fe3552e09c31e69
 coverage: 0.869565
 learned_at: 2026-10-15 22:37:55

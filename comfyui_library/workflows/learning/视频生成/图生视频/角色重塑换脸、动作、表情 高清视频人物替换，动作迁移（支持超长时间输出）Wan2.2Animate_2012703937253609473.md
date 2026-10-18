@@ -4,7 +4,7 @@ name: 角色重塑换脸、动作、表情 高清视频人物替换，动作迁�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012703937253609473.json
+file: comfyui_library/workflows/视频生成/图生视频/角色重塑换脸、动作、表情 高清视频人物替换，动作迁移（支持超长时间输出）Wan2.2Animate_2012703937253609473.json
 hash: 32d57d7d7605e79a
 coverage: 0.678161
 learned_at: 2026-10-15 22:34:28

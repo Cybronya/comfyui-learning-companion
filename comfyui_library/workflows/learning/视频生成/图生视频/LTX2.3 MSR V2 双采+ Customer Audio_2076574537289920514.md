@@ -4,7 +4,7 @@ name: LTX2.3 MSR V2 双采+ Customer Audio_2076574537289920514.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076574537289920514.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MSR V2 双采+ Customer Audio_2076574537289920514.json
 hash: c43283d39e8cefe6
 coverage: 0.701923
 learned_at: 2026-10-15 22:41:31

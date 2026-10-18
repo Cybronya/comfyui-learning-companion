@@ -4,7 +4,7 @@ name: Bernini+Prompt Relay视频编辑or多图参考_2068343750555955202.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068343750555955202.json
+file: comfyui_library/workflows/视频生成/图生视频/Bernini+Prompt Relay视频编辑or多图参考_2068343750555955202.json
 hash: 34c7fc837d63f954
 coverage: 0.777778
 learned_at: 2026-10-15 22:40:18

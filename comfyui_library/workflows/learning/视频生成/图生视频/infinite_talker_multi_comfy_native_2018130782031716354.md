@@ -4,7 +4,7 @@ name: infinite_talker_multi_comfy_native_2018130782031716354.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018130782031716354.json
+file: comfyui_library/workflows/视频生成/图生视频/infinite_talker_multi_comfy_native_2018130782031716354.json
 hash: 593cf8ba46764708
 coverage: 0.754386
 learned_at: 2026-10-15 22:34:51

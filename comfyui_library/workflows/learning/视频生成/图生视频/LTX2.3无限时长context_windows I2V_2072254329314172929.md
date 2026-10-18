@@ -4,7 +4,7 @@ name: LTX2.3无限时长context_windows I2V_2072254329314172929.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072254329314172929.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3无限时长context_windows I2V_2072254329314172929.json
 hash: 26882a79462b124a
 coverage: 0.897436
 learned_at: 2026-10-15 22:40:53

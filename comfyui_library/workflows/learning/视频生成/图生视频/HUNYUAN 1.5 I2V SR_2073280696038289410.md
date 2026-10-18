@@ -4,7 +4,7 @@ name: HUNYUAN 1.5 I2V SR_2073280696038289410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073280696038289410.json
+file: comfyui_library/workflows/视频生成/图生视频/HUNYUAN 1.5 I2V SR_2073280696038289410.json
 hash: 2200a2b3f98ed65a
 coverage: 0.971429
 learned_at: 2026-10-15 22:41:02

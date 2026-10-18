@@ -4,7 +4,7 @@ name: wan2.2高低频首尾帧生视频低配电脑可下载本地部署_2076552
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076552090461229058.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2高低频首尾帧生视频低配电脑可下载本地部署_2076552090461229058.json
 hash: a49a87c43546eef0
 coverage: 0.947368
 learned_at: 2026-10-15 22:41:31

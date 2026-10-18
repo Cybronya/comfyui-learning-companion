@@ -4,7 +4,7 @@ name: Wan2.2-Insight动态变装（支持首尾帧）_1980177122574635010.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980177122574635010.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Insight动态变装（支持首尾帧）_1980177122574635010.json
 hash: dff235c10e9234af
 coverage: 0.857143
 learned_at: 2026-10-15 22:32:28

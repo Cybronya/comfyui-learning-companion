@@ -4,7 +4,7 @@ name: wan2.1 人物华丽变身变装_1949634225363918849.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949634225363918849.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 人物华丽变身变装_1949634225363918849.json
 hash: 154484376e582856
 coverage: 1
 learned_at: 2026-10-15 22:43:32

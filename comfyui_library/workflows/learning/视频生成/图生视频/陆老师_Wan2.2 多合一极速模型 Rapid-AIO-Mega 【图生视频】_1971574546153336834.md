@@ -4,7 +4,7 @@ name: 陆老师_Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971574546153336834.json
+file: comfyui_library/workflows/视频生成/图生视频/陆老师_Wan2.2 多合一极速模型 Rapid-AIO-Mega 【图生视频】_1971574546153336834.json
 hash: b3a7e9a6dde5aeb0
 coverage: 0.896552
 learned_at: 2026-10-15 22:31:57

@@ -4,7 +4,7 @@ name: wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003035793427972097.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_SCAIL_pose_control_two_charactors_uni3c_2003035793427972097.json
 hash: 467a77915b5d3f77
 coverage: 0.534483
 learned_at: 2026-10-15 22:33:50

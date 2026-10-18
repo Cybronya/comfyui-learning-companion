@@ -4,7 +4,7 @@ name: Wan2.2-Animate 视频换装+换脸+换人三合一_2048980034509086721.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048980034509086721.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate 视频换装+换脸+换人三合一_2048980034509086721.json
 hash: c233bc0edc69787a
 coverage: 0.573913
 learned_at: 2026-10-15 22:37:12

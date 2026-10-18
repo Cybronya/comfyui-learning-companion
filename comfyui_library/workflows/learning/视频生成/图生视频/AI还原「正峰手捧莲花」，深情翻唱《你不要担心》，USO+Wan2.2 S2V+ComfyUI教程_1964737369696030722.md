@@ -4,7 +4,7 @@ name: AI还原「正峰手捧莲花」，深情翻唱《你不要担心》，USO
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964737369696030722.json
+file: comfyui_library/workflows/视频生成/图生视频/AI还原「正峰手捧莲花」，深情翻唱《你不要担心》，USO+Wan2.2 S2V+ComfyUI教程_1964737369696030722.json
 hash: fce2166059f423af
 coverage: 0.833333
 learned_at: 2026-10-15 22:31:35

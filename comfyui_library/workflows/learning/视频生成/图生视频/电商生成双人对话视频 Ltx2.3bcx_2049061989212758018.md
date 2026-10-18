@@ -4,7 +4,7 @@ name: 电商生成双人对话视频 Ltx2.3bcx_2049061989212758018.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049061989212758018.json
+file: comfyui_library/workflows/视频生成/图生视频/电商生成双人对话视频 Ltx2.3bcx_2049061989212758018.json
 hash: 6c71ff20c4fc3517
 coverage: 0.930556
 learned_at: 2026-10-15 22:37:13

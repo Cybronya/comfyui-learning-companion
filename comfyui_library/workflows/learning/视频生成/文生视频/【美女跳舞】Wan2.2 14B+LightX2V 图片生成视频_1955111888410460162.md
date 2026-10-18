@@ -4,7 +4,7 @@ name: 【美女跳舞】Wan2.2 14B+LightX2V 图片生成视频_19551118884104601
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955111888410460162.json
+file: comfyui_library/workflows/视频生成/文生视频/【美女跳舞】Wan2.2 14B+LightX2V 图片生成视频_1955111888410460162.json
 hash: 481ee976d9c6684c
 coverage: 1
 learned_at: 2026-10-15 22:43:39

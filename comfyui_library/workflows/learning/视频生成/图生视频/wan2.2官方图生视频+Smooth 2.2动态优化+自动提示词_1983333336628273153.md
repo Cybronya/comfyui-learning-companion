@@ -4,7 +4,7 @@ name: wan2.2官方图生视频+Smooth 2.2动态优化+自动提示词_1983333336
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983333336628273153.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2官方图生视频+Smooth 2.2动态优化+自动提示词_1983333336628273153.json
 hash: 2e1e8a398974ebe9
 coverage: 0.76
 learned_at: 2026-10-15 22:32:44

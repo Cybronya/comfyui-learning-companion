@@ -4,7 +4,7 @@ name: wan2.2 Multitalk 图生视频版《落花》_2054371842873405441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054371842873405441.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 Multitalk 图生视频版《落花》_2054371842873405441.json
 hash: 6fd080590ab1b17c
 coverage: 0.969697
 learned_at: 2026-10-15 22:37:46

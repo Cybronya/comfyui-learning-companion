@@ -4,7 +4,7 @@ name: Wan 2.1_14B图生视频加速版 LightX2V_5步工作流_193630154269149184
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936301542691491841.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.1_14B图生视频加速版 LightX2V_5步工作流_1936301542691491841.json
 hash: 4e44f043797db089
 coverage: 0.482759
 learned_at: 2026-10-15 22:30:25

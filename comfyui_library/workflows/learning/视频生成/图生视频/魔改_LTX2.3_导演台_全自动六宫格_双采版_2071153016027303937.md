@@ -4,7 +4,7 @@ name: 魔改_LTX2.3_导演台_全自动六宫格_双采版_2071153016027303937.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071153016027303937.json
+file: comfyui_library/workflows/视频生成/图生视频/魔改_LTX2.3_导演台_全自动六宫格_双采版_2071153016027303937.json
 hash: 5986d22d1013c817
 coverage: 0.96
 learned_at: 2026-10-15 22:40:43

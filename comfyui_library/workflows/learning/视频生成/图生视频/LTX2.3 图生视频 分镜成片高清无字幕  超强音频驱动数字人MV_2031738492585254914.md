@@ -4,7 +4,7 @@ name: LTX2.3 图生视频 分镜成片高清无字幕  超强音频驱动数字�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031738492585254914.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频 分镜成片高清无字幕  超强音频驱动数字人MV_2031738492585254914.json
 hash: 337ba6c91847af73
 coverage: 0.877778
 learned_at: 2026-10-15 22:35:33

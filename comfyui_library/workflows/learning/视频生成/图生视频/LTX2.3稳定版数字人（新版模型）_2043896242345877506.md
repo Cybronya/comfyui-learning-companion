@@ -4,7 +4,7 @@ name: LTX2.3稳定版数字人（新版模型）_2043896242345877506.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043896242345877506.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3稳定版数字人（新版模型）_2043896242345877506.json
 hash: 5aa3eb3c6041832c
 coverage: 0.788462
 learned_at: 2026-10-15 22:36:34

@@ -4,7 +4,7 @@ name: SVI+2.0Pro电影级分镜生成长视频（升级版）_200603397165784269
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006033971657842690.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI+2.0Pro电影级分镜生成长视频（升级版）_2006033971657842690.json
 hash: 36f58fe7a62bd3f5
 coverage: 0.601942
 learned_at: 2026-10-15 22:34:00

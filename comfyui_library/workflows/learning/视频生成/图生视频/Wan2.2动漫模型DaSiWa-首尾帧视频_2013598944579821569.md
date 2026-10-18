@@ -4,7 +4,7 @@ name: Wan2.2动漫模型DaSiWa-首尾帧视频_2013598944579821569.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013598944579821569.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2动漫模型DaSiWa-首尾帧视频_2013598944579821569.json
 hash: 33ddd367688da9dc
 coverage: 0.773585
 learned_at: 2026-10-15 22:34:31

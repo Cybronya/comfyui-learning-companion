@@ -4,7 +4,7 @@ name: 通义万相wan2.1 图生视频 720P高清版_1894738389084602370.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894738389084602370.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1 图生视频 720P高清版_1894738389084602370.json
 hash: e8ee1026435a30d8
 coverage: 0.928571
 learned_at: 2026-10-15 22:29:16

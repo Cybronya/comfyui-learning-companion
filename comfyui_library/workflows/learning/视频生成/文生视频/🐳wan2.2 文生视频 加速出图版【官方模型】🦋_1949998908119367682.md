@@ -4,7 +4,7 @@ name: 🐳wan2.2 文生视频 加速出图版【官方模型】🦋_194999890811
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949998908119367682.json
+file: comfyui_library/workflows/视频生成/文生视频/🐳wan2.2 文生视频 加速出图版【官方模型】🦋_1949998908119367682.json
 hash: 72aab62fe68be2ae
 coverage: 0.958333
 learned_at: 2026-10-15 22:43:33

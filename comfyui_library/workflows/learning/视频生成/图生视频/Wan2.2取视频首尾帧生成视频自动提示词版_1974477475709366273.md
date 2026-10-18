@@ -4,7 +4,7 @@ name: Wan2.2取视频首尾帧生成视频自动提示词版_1974477475709366273
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1974477475709366273.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2取视频首尾帧生成视频自动提示词版_1974477475709366273.json
 hash: d81a0010efaabe1d
 coverage: 0.847826
 learned_at: 2026-10-15 22:32:05

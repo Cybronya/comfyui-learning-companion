@@ -4,7 +4,7 @@ name: Pixverse v5.5 Transition 首尾帧生视频_2008874214899585026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008874214899585026.json
+file: comfyui_library/workflows/视频生成/图生视频/Pixverse v5.5 Transition 首尾帧生视频_2008874214899585026.json
 hash: 1be2dcbd7a8825fa
 coverage: 1
 learned_at: 2026-10-15 22:34:09

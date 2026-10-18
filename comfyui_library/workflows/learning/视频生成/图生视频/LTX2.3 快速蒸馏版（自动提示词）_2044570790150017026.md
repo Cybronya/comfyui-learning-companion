@@ -4,7 +4,7 @@ name: LTX2.3 快速蒸馏版（自动提示词）_2044570790150017026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044570790150017026.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 快速蒸馏版（自动提示词）_2044570790150017026.json
 hash: 462a4b25b2ccf938
 coverage: 0.578431
 learned_at: 2026-10-15 22:36:38

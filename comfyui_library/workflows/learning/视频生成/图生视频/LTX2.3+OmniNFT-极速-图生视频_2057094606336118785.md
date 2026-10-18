@@ -4,7 +4,7 @@ name: LTX2.3+OmniNFT-极速-图生视频_2057094606336118785.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057094606336118785.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+OmniNFT-极速-图生视频_2057094606336118785.json
 hash: 56f5a8ed63486234
 coverage: 0.915493
 learned_at: 2026-10-15 22:38:08

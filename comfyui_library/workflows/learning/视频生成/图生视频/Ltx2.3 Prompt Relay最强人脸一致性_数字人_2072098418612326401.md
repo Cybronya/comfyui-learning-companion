@@ -4,7 +4,7 @@ name: Ltx2.3 Prompt Relay最强人脸一致性_数字人_2072098418612326401.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072098418612326401.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Prompt Relay最强人脸一致性_数字人_2072098418612326401.json
 hash: 9a425655af3e0875
 coverage: 0.736842
 learned_at: 2026-10-15 22:40:51

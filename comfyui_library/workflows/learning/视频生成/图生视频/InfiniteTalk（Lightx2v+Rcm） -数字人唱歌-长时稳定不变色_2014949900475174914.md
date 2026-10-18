@@ -4,7 +4,7 @@ name: InfiniteTalk（Lightx2v+Rcm） -数字人唱歌-长时稳定不变色_2014
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014949900475174914.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk（Lightx2v+Rcm） -数字人唱歌-长时稳定不变色_2014949900475174914.json
 hash: c5a0ec977f663b66
 coverage: 0.903226
 learned_at: 2026-10-15 22:34:37

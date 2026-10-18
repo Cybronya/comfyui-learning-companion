@@ -4,7 +4,7 @@ name: 【gen全能视频Si】wan2.2-funcontrol让动漫人物跳舞_196141296335
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961412963351597058.json
+file: comfyui_library/workflows/视频生成/图生视频/【gen全能视频Si】wan2.2-funcontrol让动漫人物跳舞_1961412963351597058.json
 hash: 6d4be3d09db33a0a
 coverage: 0.5
 learned_at: 2026-10-15 22:31:28

@@ -4,7 +4,7 @@ name: 视频去水印去字幕 LTX2.3时长加长_2068856868998565889.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068856868998565889.json
+file: comfyui_library/workflows/视频生成/图生视频/视频去水印去字幕 LTX2.3时长加长_2068856868998565889.json
 hash: f322ef17e6c62b7c
 coverage: 0.943396
 learned_at: 2026-10-15 22:40:22

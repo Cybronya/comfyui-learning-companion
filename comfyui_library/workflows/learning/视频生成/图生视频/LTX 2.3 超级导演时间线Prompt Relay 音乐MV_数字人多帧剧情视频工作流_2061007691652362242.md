@@ -4,7 +4,7 @@ name: LTX 2.3 超级导演时间线Prompt Relay 音乐MV_数字人多帧剧情�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061007691652362242.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 超级导演时间线Prompt Relay 音乐MV_数字人多帧剧情视频工作流_2061007691652362242.json
 hash: 0d3e8133c310ddf4
 coverage: 0.52349
 learned_at: 2026-10-15 22:38:51

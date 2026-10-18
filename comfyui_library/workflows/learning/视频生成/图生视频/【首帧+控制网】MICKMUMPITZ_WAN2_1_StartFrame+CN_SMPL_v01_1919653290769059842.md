@@ -4,7 +4,7 @@ name: 【首帧+控制网】MICKMUMPITZ_WAN2_1_StartFrame+CN_SMPL_v01_1919653290
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1919653290769059842.json
+file: comfyui_library/workflows/视频生成/图生视频/【首帧+控制网】MICKMUMPITZ_WAN2_1_StartFrame+CN_SMPL_v01_1919653290769059842.json
 hash: 67d326552f3a9dea
 coverage: 0.578947
 learned_at: 2026-10-15 22:29:41

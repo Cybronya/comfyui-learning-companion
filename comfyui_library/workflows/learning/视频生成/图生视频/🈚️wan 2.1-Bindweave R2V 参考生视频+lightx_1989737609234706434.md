@@ -4,7 +4,7 @@ name: 🈚️wan 2.1-Bindweave R2V 参考生视频+lightx_1989737609234706434.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989737609234706434.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️wan 2.1-Bindweave R2V 参考生视频+lightx_1989737609234706434.json
 hash: 317d670e0cede47a
 coverage: 0.488889
 learned_at: 2026-10-15 22:33:08

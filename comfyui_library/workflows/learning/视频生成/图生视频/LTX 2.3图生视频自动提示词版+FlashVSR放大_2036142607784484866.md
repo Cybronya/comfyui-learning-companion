@@ -4,7 +4,7 @@ name: LTX 2.3图生视频自动提示词版+FlashVSR放大_2036142607784484866.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036142607784484866.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3图生视频自动提示词版+FlashVSR放大_2036142607784484866.json
 hash: 7c3c2c7c20cbc2dd
 coverage: 0.925926
 learned_at: 2026-10-15 22:35:51

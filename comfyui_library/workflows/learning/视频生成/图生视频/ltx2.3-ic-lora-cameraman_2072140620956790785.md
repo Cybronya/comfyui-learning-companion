@@ -4,7 +4,7 @@ name: ltx2.3-ic-lora-cameraman_2072140620956790785.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072140620956790785.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3-ic-lora-cameraman_2072140620956790785.json
 hash: 9fb8e98baca7f0d0
 coverage: 0.656863
 learned_at: 2026-10-15 22:40:51

@@ -4,7 +4,7 @@ name: Wan2.2FMLF-3图参考生成连贯视频_1989139978758262786.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989139978758262786.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2FMLF-3图参考生成连贯视频_1989139978758262786.json
 hash: d088680daaa181dd
 coverage: 0.891304
 learned_at: 2026-10-15 22:33:05

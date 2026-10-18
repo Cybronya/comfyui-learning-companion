@@ -4,7 +4,7 @@ name: 🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968976369134755842.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖Wan 2.2动作迁移（优化板）_1968976369134755842.json
 hash: 3093364e2055aea5
 coverage: 1
 learned_at: 2026-10-15 22:31:47

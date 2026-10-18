@@ -4,7 +4,7 @@ name: 视频-图生视频扩写-wan2.2-官方_2020662417289650177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020662417289650177.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图生视频扩写-wan2.2-官方_2020662417289650177.json
 hash: 1fb8d8886610501b
 coverage: 0.652174
 learned_at: 2026-10-15 22:35:06

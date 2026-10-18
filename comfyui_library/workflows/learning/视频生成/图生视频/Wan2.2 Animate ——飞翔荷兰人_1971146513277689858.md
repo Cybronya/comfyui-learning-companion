@@ -4,7 +4,7 @@ name: Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971146513277689858.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate ——飞翔荷兰人_1971146513277689858.json
 hash: 36207e9121dcca78
 coverage: 0.461538
 learned_at: 2026-10-15 22:31:55

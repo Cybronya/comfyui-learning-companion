@@ -4,7 +4,7 @@ name: Wan2.1-阿里万相开源文_图生视频(KJ版)_1894584540348743681.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1894584540348743681.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1-阿里万相开源文_图生视频(KJ版)_1894584540348743681.json
 hash: 192dc6acc5c0eec5
 coverage: 0.942857
 learned_at: 2026-10-15 22:43:19

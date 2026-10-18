@@ -4,7 +4,7 @@ name: AA--图生视频-高动态-wan2.2 Remix-首尾帧--Qwen3反推自动图生
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006627267346173953.json
+file: comfyui_library/workflows/视频生成/图生视频/AA--图生视频-高动态-wan2.2 Remix-首尾帧--Qwen3反推自动图生视频--加速版_2006627267346173953.json
 hash: 851c003874f019b0
 coverage: 0.777778
 learned_at: 2026-10-15 22:34:02

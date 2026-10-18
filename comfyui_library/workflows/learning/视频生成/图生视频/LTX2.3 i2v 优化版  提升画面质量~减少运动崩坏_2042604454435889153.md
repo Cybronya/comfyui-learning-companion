@@ -4,7 +4,7 @@ name: LTX2.3 i2v 优化版  提升画面质量~减少运动崩坏_20426044544358
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042604454435889153.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 i2v 优化版  提升画面质量~减少运动崩坏_2042604454435889153.json
 hash: e680e7a76a65df36
 coverage: 0.849057
 learned_at: 2026-10-15 22:36:28

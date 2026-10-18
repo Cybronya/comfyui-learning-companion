@@ -4,7 +4,7 @@ name: Wan2.2 图生视频 AIO-V10（简约，全面，极速）_1978104369109426
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978104369109426178.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 图生视频 AIO-V10（简约，全面，极速）_1978104369109426178.json
 hash: 069d8e73f2bfbe87
 coverage: 0.612903
 learned_at: 2026-10-15 22:32:17

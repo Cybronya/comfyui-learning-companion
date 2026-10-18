@@ -4,7 +4,7 @@ name: 🦖KJ-Wan2.2-121帧高质量自动首尾帧_1950095043170361345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950095043170361345.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖KJ-Wan2.2-121帧高质量自动首尾帧_1950095043170361345.json
 hash: 89cfe751f5bf7f4d
 coverage: 0.973684
 learned_at: 2026-10-15 22:30:52

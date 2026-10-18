@@ -4,7 +4,7 @@ name: 火力 全开！冲锋枪射击特效--万相WAN2.1_1934071211976478722.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1934071211976478722.json
+file: comfyui_library/workflows/视频生成/文生视频/火力 全开！冲锋枪射击特效--万相WAN2.1_1934071211976478722.json
 hash: 10a656d58c6c4545
 coverage: 1
 learned_at: 2026-10-15 22:43:27

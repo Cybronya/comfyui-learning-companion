@@ -4,7 +4,7 @@ name: 【控制美女跳舞】最新姿势控制视频动画wan2.1_1918208835792
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1918208835792601089.json
+file: comfyui_library/workflows/视频生成/文生视频/【控制美女跳舞】最新姿势控制视频动画wan2.1_1918208835792601089.json
 hash: 01b0aeb52d499506
 coverage: 1
 learned_at: 2026-10-15 22:43:23

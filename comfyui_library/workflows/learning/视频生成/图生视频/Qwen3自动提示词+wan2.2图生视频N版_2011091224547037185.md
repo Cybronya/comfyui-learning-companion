@@ -4,7 +4,7 @@ name: Qwen3自动提示词+wan2.2图生视频N版_2011091224547037185.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011091224547037185.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen3自动提示词+wan2.2图生视频N版_2011091224547037185.json
 hash: fac72d45f2c55a1f
 coverage: 0.914286
 learned_at: 2026-10-15 22:34:21

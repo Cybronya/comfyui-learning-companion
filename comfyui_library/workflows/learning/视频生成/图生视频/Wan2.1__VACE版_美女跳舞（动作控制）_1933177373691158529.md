@@ -4,7 +4,7 @@ name: Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933177373691158529.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1__VACE版_美女跳舞（动作控制）_1933177373691158529.json
 hash: c352bcfa488e8f12
 coverage: 0.84
 learned_at: 2026-10-15 22:30:13

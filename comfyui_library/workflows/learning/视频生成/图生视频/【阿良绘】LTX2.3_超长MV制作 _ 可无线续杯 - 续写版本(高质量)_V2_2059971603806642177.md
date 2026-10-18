@@ -4,7 +4,7 @@ name: 【阿良绘】LTX2.3_超长MV制作 _ 可无线续杯 - 续写版本(高�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059971603806642177.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】LTX2.3_超长MV制作 _ 可无线续杯 - 续写版本(高质量)_V2_2059971603806642177.json
 hash: eff05f68308b4079
 coverage: 0.484404
 learned_at: 2026-10-15 22:38:45

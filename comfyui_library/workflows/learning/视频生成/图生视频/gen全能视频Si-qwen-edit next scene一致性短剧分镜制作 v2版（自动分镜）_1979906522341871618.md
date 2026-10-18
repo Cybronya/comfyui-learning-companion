@@ -4,7 +4,7 @@ name: gen全能视频Si-qwen-edit next scene一致性短剧分镜制作 v2版（
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979906522341871618.json
+file: comfyui_library/workflows/视频生成/图生视频/gen全能视频Si-qwen-edit next scene一致性短剧分镜制作 v2版（自动分镜）_1979906522341871618.json
 hash: 6922298f896c224d
 coverage: 0.827273
 learned_at: 2026-10-15 22:32:27

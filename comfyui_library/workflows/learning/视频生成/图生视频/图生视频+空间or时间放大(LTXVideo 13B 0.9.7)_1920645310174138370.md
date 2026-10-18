@@ -4,7 +4,7 @@ name: 图生视频+空间or时间放大(LTXVideo 13B 0.9.7)_1920645310174138370.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920645310174138370.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频+空间or时间放大(LTXVideo 13B 0.9.7)_1920645310174138370.json
 hash: d0f023a7f4a08228
 coverage: 0.954545
 learned_at: 2026-10-15 22:29:42

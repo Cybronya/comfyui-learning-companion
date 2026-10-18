@@ -4,7 +4,7 @@ name: Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977712133079191553.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_T2V_lynx+VACE姿势参考_1977712133079191553.json
 hash: 4631cd4ee315e4d3
 coverage: 0.75
 learned_at: 2026-10-15 22:32:15

@@ -4,7 +4,7 @@ name: Pixverse v5.5 Effects 图生视频_2008873459119558657.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008873459119558657.json
+file: comfyui_library/workflows/视频生成/图生视频/Pixverse v5.5 Effects 图生视频_2008873459119558657.json
 hash: ebab7ad9c490de63
 coverage: 1
 learned_at: 2026-10-15 22:34:09

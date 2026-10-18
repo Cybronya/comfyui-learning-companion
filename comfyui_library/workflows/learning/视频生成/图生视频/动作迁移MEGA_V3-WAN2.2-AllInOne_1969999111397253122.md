@@ -4,7 +4,7 @@ name: 动作迁移MEGA_V3-WAN2.2-AllInOne_1969999111397253122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969999111397253122.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移MEGA_V3-WAN2.2-AllInOne_1969999111397253122.json
 hash: 283b163f3a82f1da
 coverage: 1
 learned_at: 2026-10-15 22:31:51

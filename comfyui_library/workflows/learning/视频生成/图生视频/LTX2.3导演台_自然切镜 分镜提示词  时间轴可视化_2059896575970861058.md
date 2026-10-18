@@ -4,7 +4,7 @@ name: LTX2.3导演台_自然切镜 分镜提示词  时间轴可视化_205989657
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059896575970861058.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演台_自然切镜 分镜提示词  时间轴可视化_2059896575970861058.json
 hash: 2194274a775b4d58
 coverage: 0.928571
 learned_at: 2026-10-15 22:38:43

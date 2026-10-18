@@ -4,7 +4,7 @@ name: LTX2.3图生视频-带语音生成-摇动版_2066720677041893378.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066720677041893378.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频-带语音生成-摇动版_2066720677041893378.json
 hash: 6518a536fe356013
 coverage: 0.816667
 learned_at: 2026-10-15 22:39:51

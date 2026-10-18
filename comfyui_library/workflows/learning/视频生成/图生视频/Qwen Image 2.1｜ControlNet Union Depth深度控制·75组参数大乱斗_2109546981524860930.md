@@ -1,0 +1,359 @@
+---
+key: 视频生成/图生视频/Qwen Image 2.1｜ControlNet Union Depth深度控制·75组参数大乱斗_2109546981524860930.json
+name: Qwen Image 2.1｜ControlNet Union Depth深度控制·75组参数大乱斗_2109546981524860930
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen Image 2.1｜ControlNet Union Depth深度控制·75组参数大乱斗_2109546981524860930.json
+hash: 8afaebe0beb0ed9a
+coverage: 0.744479
+learned_at: 2026-10-18 00:23:45
+nodes: [PreviewImage, DepthAnythingV2Preprocessor, PreviewImage, UNETLoader, CLIPLoader, VAELoader, QwenImage21UnionLatentFromImage, KSampler, PrimitiveStringMultiline, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, PrimitiveStringMultiline, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, PrimitiveStringMultiline, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionApply, KSampler, VAEDecode, PreviewImage, QwenImage21UnionLoader, TextEncodeQwenImage21, LoadImage, VAEDecode, SaveImage, PreviewImage]
+patterns: []
+missing: []
+parameters: {"cfg": 3.5, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 9527, "steps": 25}
+---
+
+# 视频生成/图生视频/Qwen Image 2.1｜ControlNet Union Depth深度控制·75组参数大乱斗_2109546981524860930.json
+
+> 来源文件 `comfyui_library/workflows/视频生成/图生视频/Qwen Image 2.1｜ControlNet Union Depth深度控制·75组参数大乱斗_2109546981524860930.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（317 个）：
+- `PreviewImage`
+- `DepthAnythingV2Preprocessor`
+- `PreviewImage`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21UnionLatentFromImage`
+- `KSampler` ★核心
+- `PrimitiveStringMultiline`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `PrimitiveStringMultiline`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionApply`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `QwenImage21UnionLoader`
+- `TextEncodeQwenImage21`
+- `LoadImage`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `PreviewImage`
+
+## 关键参数
+
+- `seed` = `9527`
+- `steps` = `25`
+- `cfg` = `3.5`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **74%**（236/317）
+
+**有卡**：`DepthAnythingV2Preprocessor`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`QwenImage21UnionLatentFromImage`、`KSampler`、`QwenImage21UnionApply`、`VAEDecode`、`QwenImage21UnionLoader`、`TextEncodeQwenImage21`、`LoadImage`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、LoadImage、UNETLoader、DepthAnythingV2Preprocessor

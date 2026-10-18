@@ -4,7 +4,7 @@ name: 【完美高质量】Wan2.1 VACE 14B-可自定时长图生视频_192938059
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1929380593648439297.json
+file: comfyui_library/workflows/视频生成/文生视频/【完美高质量】Wan2.1 VACE 14B-可自定时长图生视频_1929380593648439297.json
 hash: 77f5b7b732388224
 coverage: 0.965517
 learned_at: 2026-10-15 22:43:25

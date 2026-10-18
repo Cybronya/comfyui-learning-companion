@@ -4,7 +4,7 @@ name: 四宫格-LTX-2.3 图生视频（全面优化版）音频驱动_2041772367
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041772367239712769.json
+file: comfyui_library/workflows/视频生成/图生视频/四宫格-LTX-2.3 图生视频（全面优化版）音频驱动_2041772367239712769.json
 hash: 7df44ea935a41f08
 coverage: 0.641304
 learned_at: 2026-10-15 22:36:22

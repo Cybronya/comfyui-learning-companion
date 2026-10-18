@@ -4,7 +4,7 @@ name: 最新wan2.1万相首尾帧FunInP版万相首尾帧FunInP版_1918947827957
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1918947827957825538.json
+file: comfyui_library/workflows/视频生成/文生视频/最新wan2.1万相首尾帧FunInP版万相首尾帧FunInP版_1918947827957825538.json
 hash: 98138eba80ff007f
 coverage: 1
 learned_at: 2026-10-15 22:43:23

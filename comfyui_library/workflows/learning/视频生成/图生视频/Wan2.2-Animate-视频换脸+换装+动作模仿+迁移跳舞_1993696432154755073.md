@@ -4,7 +4,7 @@ name: Wan2.2-Animate-视频换脸+换装+动作模仿+迁移跳舞_1993696432154
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993696432154755073.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-视频换脸+换装+动作模仿+迁移跳舞_1993696432154755073.json
 hash: 17e9c84a0a6863c6
 coverage: 0.714286
 learned_at: 2026-10-15 22:33:19

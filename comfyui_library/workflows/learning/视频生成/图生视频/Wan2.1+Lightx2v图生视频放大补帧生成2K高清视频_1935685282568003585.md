@@ -4,7 +4,7 @@ name: Wan2.1+Lightx2v图生视频放大补帧生成2K高清视频_19356852825680
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935685282568003585.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1+Lightx2v图生视频放大补帧生成2K高清视频_1935685282568003585.json
 hash: d716563046dda9ba
 coverage: 1
 learned_at: 2026-10-15 22:30:24

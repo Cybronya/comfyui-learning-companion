@@ -4,7 +4,7 @@ name: Wan2.2 Fun VACE 姿势深度参考转绘_1966804556082556930.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966804556082556930.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Fun VACE 姿势深度参考转绘_1966804556082556930.json
 hash: b134fb1b3f6f7b9f
 coverage: 0.724138
 learned_at: 2026-10-15 22:31:39

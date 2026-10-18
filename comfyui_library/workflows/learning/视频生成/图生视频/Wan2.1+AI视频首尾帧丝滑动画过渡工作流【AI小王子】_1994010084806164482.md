@@ -4,7 +4,7 @@ name: Wan2.1+AI视频首尾帧丝滑动画过渡工作流【AI小王子】_19940
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994010084806164482.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1+AI视频首尾帧丝滑动画过渡工作流【AI小王子】_1994010084806164482.json
 hash: 68a33bc0bdb634ff
 coverage: 0.847826
 learned_at: 2026-10-15 22:33:20

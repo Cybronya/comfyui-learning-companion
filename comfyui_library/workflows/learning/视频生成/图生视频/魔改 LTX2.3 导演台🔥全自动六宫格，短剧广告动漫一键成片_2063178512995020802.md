@@ -4,7 +4,7 @@ name: 魔改 LTX2.3 导演台🔥全自动六宫格，短剧广告动漫一键�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063178512995020802.json
+file: comfyui_library/workflows/视频生成/图生视频/魔改 LTX2.3 导演台🔥全自动六宫格，短剧广告动漫一键成片_2063178512995020802.json
 hash: ae3b3fd8c8ca7ccc
 coverage: 0.96875
 learned_at: 2026-10-15 22:39:11

@@ -4,7 +4,7 @@ name: LTX 2.3 多图生视频 （V1版 增强人脸一致性，+转场 +VBVR 理
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049390145010409474.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 多图生视频 （V1版 增强人脸一致性，+转场 +VBVR 理解复杂运动，正确物理运动_2049390145010409474.json
 hash: e617a1865c3aae0c
 coverage: 0.698925
 learned_at: 2026-10-15 22:37:14

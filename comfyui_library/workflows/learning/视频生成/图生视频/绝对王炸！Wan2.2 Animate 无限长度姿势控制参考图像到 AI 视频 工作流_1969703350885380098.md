@@ -4,7 +4,7 @@ name: 绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969703350885380098.json
+file: comfyui_library/workflows/视频生成/图生视频/绝对王炸！Wan2.2 Animate 无限长度姿势控制参考图像到 AI 视频 工作流_1969703350885380098.json
 hash: f45ed1d5604079e8
 coverage: 0.567901
 learned_at: 2026-10-15 22:31:50

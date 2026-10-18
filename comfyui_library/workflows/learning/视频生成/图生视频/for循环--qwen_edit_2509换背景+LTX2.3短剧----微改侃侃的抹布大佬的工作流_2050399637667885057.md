@@ -4,7 +4,7 @@ name: for循环--qwen_edit_2509换背景+LTX2.3短剧----微改侃侃的抹布�
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050399637667885057.json
+file: comfyui_library/workflows/视频生成/图生视频/for循环--qwen_edit_2509换背景+LTX2.3短剧----微改侃侃的抹布大佬的工作流_2050399637667885057.json
 hash: 8bf888c943986f9a
 coverage: 0.774194
 learned_at: 2026-10-15 22:37:18

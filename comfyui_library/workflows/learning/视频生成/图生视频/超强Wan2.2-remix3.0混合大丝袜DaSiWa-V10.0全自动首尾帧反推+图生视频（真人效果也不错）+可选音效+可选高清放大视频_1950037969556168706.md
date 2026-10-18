@@ -4,7 +4,7 @@ name: 超强Wan2.2-remix3.0混合大丝袜DaSiWa-V10.0全自动首尾帧反推+�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950037969556168706.json
+file: comfyui_library/workflows/视频生成/图生视频/超强Wan2.2-remix3.0混合大丝袜DaSiWa-V10.0全自动首尾帧反推+图生视频（真人效果也不错）+可选音效+可选高清放大视频_1950037969556168706.json
 hash: 2e578d7244541340
 coverage: 0.619048
 learned_at: 2026-10-15 22:30:52

@@ -4,7 +4,7 @@ name: 首尾帧动态可控wan2.2超高动态模型+SIMGA精准调度+LLM扩写�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972900147308990465.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧动态可控wan2.2超高动态模型+SIMGA精准调度+LLM扩写提示词_1972900147308990465.json
 hash: ed263cf406d4bc02
 coverage: 0.909091
 learned_at: 2026-10-15 22:32:01

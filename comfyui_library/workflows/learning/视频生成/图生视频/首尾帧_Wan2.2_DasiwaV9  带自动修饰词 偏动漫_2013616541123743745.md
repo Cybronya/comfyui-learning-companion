@@ -4,7 +4,7 @@ name: 首尾帧_Wan2.2_DasiwaV9  带自动修饰词 偏动漫_201361654112374374
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013616541123743745.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧_Wan2.2_DasiwaV9  带自动修饰词 偏动漫_2013616541123743745.json
 hash: d9e3688543101e55
 coverage: 0.903846
 learned_at: 2026-10-15 22:34:31

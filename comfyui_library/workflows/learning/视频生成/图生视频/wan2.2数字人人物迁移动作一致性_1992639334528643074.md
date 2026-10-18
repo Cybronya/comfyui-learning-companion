@@ -4,7 +4,7 @@ name: wan2.2数字人人物迁移动作一致性_1992639334528643074.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992639334528643074.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2数字人人物迁移动作一致性_1992639334528643074.json
 hash: 729b723dd78d475e
 coverage: 0.692308
 learned_at: 2026-10-15 22:33:16

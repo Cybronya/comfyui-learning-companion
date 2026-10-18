@@ -4,7 +4,7 @@ name: SVI 2.0 Pro Wan2.2 图生长视频标准版V1_2005359975482490882.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005359975482490882.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0 Pro Wan2.2 图生长视频标准版V1_2005359975482490882.json
 hash: 46a0058c38635d89
 coverage: 0.52518
 learned_at: 2026-10-15 22:33:56

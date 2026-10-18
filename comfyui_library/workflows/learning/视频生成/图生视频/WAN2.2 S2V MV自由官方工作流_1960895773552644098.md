@@ -4,7 +4,7 @@ name: WAN2.2 S2V MV自由官方工作流_1960895773552644098.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960895773552644098.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 S2V MV自由官方工作流_1960895773552644098.json
 hash: 4b9794c5f72909af
 coverage: 0.962963
 learned_at: 2026-10-15 22:31:27

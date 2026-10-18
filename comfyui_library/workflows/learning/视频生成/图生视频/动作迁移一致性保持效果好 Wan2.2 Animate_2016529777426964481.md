@@ -4,7 +4,7 @@ name: 动作迁移一致性保持效果好 Wan2.2 Animate_2016529777426964481.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016529777426964481.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移一致性保持效果好 Wan2.2 Animate_2016529777426964481.json
 hash: 71d7a9da5d810712
 coverage: 0.6375
 learned_at: 2026-10-15 22:34:43

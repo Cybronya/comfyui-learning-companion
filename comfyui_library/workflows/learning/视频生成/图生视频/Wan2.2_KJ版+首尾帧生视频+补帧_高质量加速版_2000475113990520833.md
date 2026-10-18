@@ -4,7 +4,7 @@ name: Wan2.2_KJ版+首尾帧生视频+补帧_高质量加速版_2000475113990520
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000475113990520833.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_KJ版+首尾帧生视频+补帧_高质量加速版_2000475113990520833.json
 hash: 66d254f2df5a0c9f
 coverage: 0.97619
 learned_at: 2026-10-15 22:33:41

@@ -4,7 +4,7 @@ name: Qwen雄奶96生日风Lora系列之【lightx2vWan2.2首尾帧输出10秒视
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987677949203779585.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen雄奶96生日风Lora系列之【lightx2vWan2.2首尾帧输出10秒视频】_1987677949203779585.json
 hash: 67332c749e13884c
 coverage: 0.6
 learned_at: 2026-10-15 22:32:59

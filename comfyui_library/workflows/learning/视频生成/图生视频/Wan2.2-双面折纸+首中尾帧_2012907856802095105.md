@@ -4,7 +4,7 @@ name: Wan2.2-双面折纸+首中尾帧_2012907856802095105.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012907856802095105.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-双面折纸+首中尾帧_2012907856802095105.json
 hash: c5b5d73df578675c
 coverage: 0.962963
 learned_at: 2026-10-15 22:34:28

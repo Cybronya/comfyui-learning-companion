@@ -4,7 +4,7 @@ name: 8-图转视频 Wan2.2 14b Optional Last Frame_2053486047740350466.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053486047740350466.json
+file: comfyui_library/workflows/视频生成/图生视频/8-图转视频 Wan2.2 14b Optional Last Frame_2053486047740350466.json
 hash: 3f46ac343fca9271
 coverage: 0.909091
 learned_at: 2026-10-15 22:37:39

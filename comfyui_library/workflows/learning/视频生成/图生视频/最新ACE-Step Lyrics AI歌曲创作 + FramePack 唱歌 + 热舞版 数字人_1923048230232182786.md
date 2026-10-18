@@ -4,7 +4,7 @@ name: 最新ACE-Step Lyrics AI歌曲创作 + FramePack 唱歌 + 热舞版 数字
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1923048230232182786.json
+file: comfyui_library/workflows/视频生成/图生视频/最新ACE-Step Lyrics AI歌曲创作 + FramePack 唱歌 + 热舞版 数字人_1923048230232182786.json
 hash: ea5cb056954c231b
 coverage: 0.606383
 learned_at: 2026-10-15 22:29:47

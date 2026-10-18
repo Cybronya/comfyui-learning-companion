@@ -4,7 +4,7 @@ name: Wan2.2数字人跳舞+唱歌 实现一边跳舞一边唱歌_20812557545935
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081255754593554433.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2数字人跳舞+唱歌 实现一边跳舞一边唱歌_2081255754593554433.json
 hash: ee685c57fd11234d
 coverage: 0.724138
 learned_at: 2026-10-15 22:42:20

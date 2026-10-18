@@ -4,7 +4,7 @@ name: LTX2.3_数字人口播_v6.0_（首尾帧，抖动问题未解决）_205810
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058106663583969282.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_数字人口播_v6.0_（首尾帧，抖动问题未解决）_2058106663583969282.json
 hash: 1c42f0fc6fc4ef6c
 coverage: 0.909091
 learned_at: 2026-10-15 22:38:18

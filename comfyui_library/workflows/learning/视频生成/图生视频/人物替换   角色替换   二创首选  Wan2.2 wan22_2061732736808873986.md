@@ -4,7 +4,7 @@ name: 人物替换   角色替换   二创首选  Wan2.2 wan22_20617327368088739
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061732736808873986.json
+file: comfyui_library/workflows/视频生成/图生视频/人物替换   角色替换   二创首选  Wan2.2 wan22_2061732736808873986.json
 hash: cd38a01d84f0fe53
 coverage: 0.560976
 learned_at: 2026-10-15 22:38:56

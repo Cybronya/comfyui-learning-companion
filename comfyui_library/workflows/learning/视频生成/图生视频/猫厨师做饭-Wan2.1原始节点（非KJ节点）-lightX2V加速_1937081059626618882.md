@@ -4,7 +4,7 @@ name: 猫厨师做饭-Wan2.1原始节点（非KJ节点）-lightX2V加速_1937081
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937081059626618882.json
+file: comfyui_library/workflows/视频生成/图生视频/猫厨师做饭-Wan2.1原始节点（非KJ节点）-lightX2V加速_1937081059626618882.json
 hash: b216bc6afd1bb24f
 coverage: 1
 learned_at: 2026-10-15 22:30:28

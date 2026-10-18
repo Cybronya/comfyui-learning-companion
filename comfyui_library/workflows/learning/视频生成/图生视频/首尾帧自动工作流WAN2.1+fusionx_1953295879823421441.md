@@ -4,7 +4,7 @@ name: 首尾帧自动工作流WAN2.1+fusionx_1953295879823421441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953295879823421441.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧自动工作流WAN2.1+fusionx_1953295879823421441.json
 hash: 7d67a7312126fa0e
 coverage: 0.825
 learned_at: 2026-10-15 22:31:04

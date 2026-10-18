@@ -4,7 +4,7 @@ name: 丝滑快速-图生视频--视频生成神器WAN2.1480P_205408699628026675
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054086996280266753.json
+file: comfyui_library/workflows/视频生成/图生视频/丝滑快速-图生视频--视频生成神器WAN2.1480P_2054086996280266753.json
 hash: 90bd88699327db78
 coverage: 0.978723
 learned_at: 2026-10-15 22:37:45

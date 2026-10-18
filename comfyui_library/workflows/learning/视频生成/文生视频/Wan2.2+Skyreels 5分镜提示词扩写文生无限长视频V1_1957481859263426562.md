@@ -4,7 +4,7 @@ name: Wan2.2+Skyreels 5分镜提示词扩写文生无限长视频V1_195748185926
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1957481859263426562.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2+Skyreels 5分镜提示词扩写文生无限长视频V1_1957481859263426562.json
 hash: 6bba3ce30b676c16
 coverage: 0.787234
 learned_at: 2026-10-15 22:43:41

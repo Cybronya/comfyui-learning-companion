@@ -4,7 +4,7 @@ name: LongCatAvatar_audio_image_to_video_auto-extend_2004216271933767681.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004216271933767681.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCatAvatar_audio_image_to_video_auto-extend_2004216271933767681.json
 hash: 61543bf35621512d
 coverage: 0.430233
 learned_at: 2026-10-15 22:33:53

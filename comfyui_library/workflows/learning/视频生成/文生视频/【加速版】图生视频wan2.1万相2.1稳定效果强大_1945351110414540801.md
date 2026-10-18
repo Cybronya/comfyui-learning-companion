@@ -4,7 +4,7 @@ name: 【加速版】图生视频wan2.1万相2.1稳定效果强大_1945351110414
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1945351110414540801.json
+file: comfyui_library/workflows/视频生成/文生视频/【加速版】图生视频wan2.1万相2.1稳定效果强大_1945351110414540801.json
 hash: cae5caa9d11febf7
 coverage: 1
 learned_at: 2026-10-15 22:43:31

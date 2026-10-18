@@ -4,7 +4,7 @@ name: 通义万相wan2.1图生视频万物放气特效_1910623040215154690.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1910623040215154690.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1图生视频万物放气特效_1910623040215154690.json
 hash: 3db9ec265f334587
 coverage: 1
 learned_at: 2026-10-15 22:29:30

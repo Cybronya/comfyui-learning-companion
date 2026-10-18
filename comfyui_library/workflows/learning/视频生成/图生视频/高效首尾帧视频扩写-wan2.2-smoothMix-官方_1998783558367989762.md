@@ -4,7 +4,7 @@ name: 高效首尾帧视频扩写-wan2.2-smoothMix-官方_1998783558367989762.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998783558367989762.json
+file: comfyui_library/workflows/视频生成/图生视频/高效首尾帧视频扩写-wan2.2-smoothMix-官方_1998783558367989762.json
 hash: e1910b667c2bd29f
 coverage: 0.647887
 learned_at: 2026-10-15 22:33:34

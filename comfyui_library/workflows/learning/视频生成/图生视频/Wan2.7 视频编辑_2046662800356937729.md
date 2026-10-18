@@ -4,7 +4,7 @@ name: Wan2.7 视频编辑_2046662800356937729.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046662800356937729.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.7 视频编辑_2046662800356937729.json
 hash: 3dc21de8adc5cebf
 coverage: 0.444444
 learned_at: 2026-10-15 22:37:00

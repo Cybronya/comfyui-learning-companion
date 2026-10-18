@@ -4,7 +4,7 @@ name: 男用动作迁移复制一键跳舞Wan2.2-Animate-视频动作迁移_2067
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067576219452919809.json
+file: comfyui_library/workflows/视频生成/图生视频/男用动作迁移复制一键跳舞Wan2.2-Animate-视频动作迁移_2067576219452919809.json
 hash: adf3fa6bb5715c88
 coverage: 1
 learned_at: 2026-10-15 22:40:07

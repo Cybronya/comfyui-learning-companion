@@ -4,7 +4,7 @@ name: Wan2.2 运镜特效_2004051872707166210.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004051872707166210.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 运镜特效_2004051872707166210.json
 hash: c1e08061c0e3f451
 coverage: 0.690476
 learned_at: 2026-10-15 22:33:52

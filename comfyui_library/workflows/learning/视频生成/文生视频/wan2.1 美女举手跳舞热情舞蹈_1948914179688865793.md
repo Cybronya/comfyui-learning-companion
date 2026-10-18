@@ -4,7 +4,7 @@ name: wan2.1 美女举手跳舞热情舞蹈_1948914179688865793.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1948914179688865793.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 美女举手跳舞热情舞蹈_1948914179688865793.json
 hash: cce15bc485b9c925
 coverage: 1
 learned_at: 2026-10-15 22:43:32

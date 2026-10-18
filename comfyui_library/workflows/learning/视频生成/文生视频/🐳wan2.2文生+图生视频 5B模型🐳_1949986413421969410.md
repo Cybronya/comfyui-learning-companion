@@ -4,7 +4,7 @@ name: 🐳wan2.2文生+图生视频 5B模型🐳_1949986413421969410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949986413421969410.json
+file: comfyui_library/workflows/视频生成/文生视频/🐳wan2.2文生+图生视频 5B模型🐳_1949986413421969410.json
 hash: 8ed38d242879f047
 coverage: 0.888889
 learned_at: 2026-10-15 22:43:33

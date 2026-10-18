@@ -4,7 +4,7 @@ name: Aiwood-magref+Lightx2v 4步lora双图参考_1935019141126660097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935019141126660097.json
+file: comfyui_library/workflows/视频生成/图生视频/Aiwood-magref+Lightx2v 4步lora双图参考_1935019141126660097.json
 hash: e08d77a704aaa248
 coverage: 0.891892
 learned_at: 2026-10-15 22:30:20

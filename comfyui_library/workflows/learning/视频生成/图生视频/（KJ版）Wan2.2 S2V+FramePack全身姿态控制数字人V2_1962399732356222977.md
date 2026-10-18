@@ -4,7 +4,7 @@ name: （KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962399732356222977.json
+file: comfyui_library/workflows/视频生成/图生视频/（KJ版）Wan2.2 S2V+FramePack全身姿态控制数字人V2_1962399732356222977.json
 hash: d1dadf487f65ed41
 coverage: 0.688525
 learned_at: 2026-10-15 22:31:30

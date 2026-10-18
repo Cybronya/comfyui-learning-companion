@@ -4,7 +4,7 @@ name: ltx2.3 多帧+VBVR+transition+ Prompt Relay四重控制图生视频V1_2052
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052622530854301697.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3 多帧+VBVR+transition+ Prompt Relay四重控制图生视频V1_2052622530854301697.json
 hash: ab2b96d08ffa3043
 coverage: 0.460227
 learned_at: 2026-10-15 22:37:30

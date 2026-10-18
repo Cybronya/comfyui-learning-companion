@@ -4,7 +4,7 @@ name: LTX2.3 音图驱数字人工作流（自动提示词全配置可调适配1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027025326320128001.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 音图驱数字人工作流（自动提示词全配置可调适配12G ）_2027025326320128001.json
 hash: 89bf0af42021e5be
 coverage: 0.607843
 learned_at: 2026-10-15 22:35:15

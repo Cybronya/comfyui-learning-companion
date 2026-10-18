@@ -4,7 +4,7 @@ name: wan2.2首尾帧kj图生视频+加速版=艾橘溪_1904943116204576769.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1904943116204576769.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首尾帧kj图生视频+加速版=艾橘溪_1904943116204576769.json
 hash: 7fac0d3cd153e96c
 coverage: 0.926829
 learned_at: 2026-10-15 22:29:25

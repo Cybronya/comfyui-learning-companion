@@ -4,7 +4,7 @@ name: LTX2.3导演AI版的剪映版全能控制台-运镜分镜一网打进_2055
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055283011867947010.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演AI版的剪映版全能控制台-运镜分镜一网打进_2055283011867947010.json
 hash: 08c47a3d16f06509
 coverage: 0.972973
 learned_at: 2026-10-15 22:37:56

@@ -4,7 +4,7 @@ name: Wan2.1首尾帧动画VACE+高清放大_1922107883666997249.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1922107883666997249.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1首尾帧动画VACE+高清放大_1922107883666997249.json
 hash: 4ab05e1a5909ff11
 coverage: 0.925926
 learned_at: 2026-10-15 22:43:23

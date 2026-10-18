@@ -4,7 +4,7 @@ name: LTX-2.3-图生视频_2055514596210946049.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055514596210946049.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-图生视频_2055514596210946049.json
 hash: 243036040d5eb90c
 coverage: 0.5
 learned_at: 2026-10-15 22:37:57

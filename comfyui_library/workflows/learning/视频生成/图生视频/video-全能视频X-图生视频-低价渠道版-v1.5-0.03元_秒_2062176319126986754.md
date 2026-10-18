@@ -4,7 +4,7 @@ name: video-全能视频X-图生视频-低价渠道版-v1.5-0.03元_秒_20621763
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062176319126986754.json
+file: comfyui_library/workflows/视频生成/图生视频/video-全能视频X-图生视频-低价渠道版-v1.5-0.03元_秒_2062176319126986754.json
 hash: 6dba3b68d5b9c753
 coverage: 0.833333
 learned_at: 2026-10-15 22:39:01

@@ -4,7 +4,7 @@ name: 视频二创人物 背景完美高清替换Wan Animate+SeedVR2.5_199691283
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996912831717130242.json
+file: comfyui_library/workflows/视频生成/图生视频/视频二创人物 背景完美高清替换Wan Animate+SeedVR2.5_1996912831717130242.json
 hash: 6929ec9113cc7a2d
 coverage: 0.964286
 learned_at: 2026-10-15 22:33:28

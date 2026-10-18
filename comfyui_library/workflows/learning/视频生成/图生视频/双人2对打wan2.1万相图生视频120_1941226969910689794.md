@@ -4,7 +4,7 @@ name: 双人2对打wan2.1万相图生视频120_1941226969910689794.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1941226969910689794.json
+file: comfyui_library/workflows/视频生成/图生视频/双人2对打wan2.1万相图生视频120_1941226969910689794.json
 hash: a2e84f352c89e911
 coverage: 0.916667
 learned_at: 2026-10-15 22:30:35

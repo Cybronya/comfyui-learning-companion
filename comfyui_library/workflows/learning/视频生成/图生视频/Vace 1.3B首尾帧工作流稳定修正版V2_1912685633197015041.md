@@ -4,7 +4,7 @@ name: Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912685633197015041.json
+file: comfyui_library/workflows/视频生成/图生视频/Vace 1.3B首尾帧工作流稳定修正版V2_1912685633197015041.json
 hash: 579f9bdab6382925
 coverage: 0.684211
 learned_at: 2026-10-15 22:29:32

@@ -4,7 +4,7 @@ name: 【华丽变装】Wan2.2-Infinite动态变装（支持首尾帧）_1980423
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980423615982297089.json
+file: comfyui_library/workflows/视频生成/图生视频/【华丽变装】Wan2.2-Infinite动态变装（支持首尾帧）_1980423615982297089.json
 hash: 753090ee0295a0e0
 coverage: 0.833333
 learned_at: 2026-10-15 22:32:30

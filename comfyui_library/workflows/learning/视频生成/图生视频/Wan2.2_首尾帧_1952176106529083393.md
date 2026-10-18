@@ -4,7 +4,7 @@ name: Wan2.2_首尾帧_1952176106529083393.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952176106529083393.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_首尾帧_1952176106529083393.json
 hash: 9379af64f37cd868
 coverage: 0.842105
 learned_at: 2026-10-15 22:31:00

@@ -4,7 +4,7 @@ name: 动作迁移（双人）SCAIL（支持丝滑转身、双人对打）2.0_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001142236438032385.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移（双人）SCAIL（支持丝滑转身、双人对打）2.0_2001142236438032385.json
 hash: 94adaddb74f76a1d
 coverage: 0.675676
 learned_at: 2026-10-15 22:33:44

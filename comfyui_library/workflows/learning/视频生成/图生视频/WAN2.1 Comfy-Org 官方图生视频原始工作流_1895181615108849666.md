@@ -4,7 +4,7 @@ name: WAN2.1 Comfy-Org 官方图生视频原始工作流_1895181615108849666.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1895181615108849666.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1 Comfy-Org 官方图生视频原始工作流_1895181615108849666.json
 hash: d9f5502397f52bd5
 coverage: 1
 learned_at: 2026-10-15 22:29:17

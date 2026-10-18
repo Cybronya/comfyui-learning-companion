@@ -4,7 +4,7 @@ name: 【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920112646744641537.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.1系列】FLF2V首尾帧生成视频工作流_1920112646744641537.json
 hash: e68469debdeb69d1
 coverage: 0.833333
 learned_at: 2026-10-15 22:29:42

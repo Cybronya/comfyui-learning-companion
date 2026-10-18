@@ -4,7 +4,7 @@ name: 社区模型图生视频Smooth Mix i2V v2.0模型测试_205053731185471078
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050537311854710785.json
+file: comfyui_library/workflows/视频生成/图生视频/社区模型图生视频Smooth Mix i2V v2.0模型测试_2050537311854710785.json
 hash: d7b0d85ebec66cde
 coverage: 1
 learned_at: 2026-10-15 22:37:18

@@ -4,7 +4,7 @@ name: 自动化工作流seedance2.0全参_2060303603629387777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060303603629387777.json
+file: comfyui_library/workflows/视频生成/图生视频/自动化工作流seedance2.0全参_2060303603629387777.json
 hash: 1362b088e1d5f49a
 coverage: 1
 learned_at: 2026-10-15 22:38:47

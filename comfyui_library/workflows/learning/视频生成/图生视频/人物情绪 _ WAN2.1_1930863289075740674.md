@@ -4,7 +4,7 @@ name: 人物情绪 _ WAN2.1_1930863289075740674.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930863289075740674.json
+file: comfyui_library/workflows/视频生成/图生视频/人物情绪 _ WAN2.1_1930863289075740674.json
 hash: 6d32e8b3b6b951d6
 coverage: 0.824561
 learned_at: 2026-10-15 22:30:07

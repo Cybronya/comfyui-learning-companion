@@ -4,7 +4,7 @@ name: LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069213658181365761.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人30S只要10分钟-(小海豚老师教唱歌学员专用)_2069213658181365761.json
 hash: 7cfabd054d2f8f2b
 coverage: 0.811111
 learned_at: 2026-10-15 22:40:26

@@ -4,7 +4,7 @@ name: wan2.1 美女做鬼脸 伸舌头表情视频动画_1932596754137411585.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1932596754137411585.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 美女做鬼脸 伸舌头表情视频动画_1932596754137411585.json
 hash: af774745c5fc5b01
 coverage: 1
 learned_at: 2026-10-15 22:43:26

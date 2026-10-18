@@ -4,7 +4,7 @@ name: Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1929199069892349953.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 ATI多点轨迹引导图生视频工作流_1929199069892349953.json
 hash: bad00be810b5a3ef
 coverage: 0.777778
 learned_at: 2026-10-15 22:30:00

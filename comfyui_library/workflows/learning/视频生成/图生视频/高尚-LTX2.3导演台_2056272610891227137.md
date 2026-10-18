@@ -4,7 +4,7 @@ name: 高尚-LTX2.3导演台_2056272610891227137.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056272610891227137.json
+file: comfyui_library/workflows/视频生成/图生视频/高尚-LTX2.3导演台_2056272610891227137.json
 hash: d4b3fc962e6d4111
 coverage: 0.974359
 learned_at: 2026-10-15 22:38:02

@@ -4,7 +4,7 @@ name: Heygem+FusionX+IndexTTS数字人_1936310993897295873.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936310993897295873.json
+file: comfyui_library/workflows/视频生成/图生视频/Heygem+FusionX+IndexTTS数字人_1936310993897295873.json
 hash: ade8f089a77e337a
 coverage: 0.88
 learned_at: 2026-10-15 22:30:26

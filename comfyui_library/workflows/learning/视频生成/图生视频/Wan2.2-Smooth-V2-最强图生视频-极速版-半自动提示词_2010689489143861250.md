@@ -4,7 +4,7 @@ name: Wan2.2-Smooth-V2-最强图生视频-极速版-半自动提示词_201068948
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010689489143861250.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth-V2-最强图生视频-极速版-半自动提示词_2010689489143861250.json
 hash: c171783500581b1a
 coverage: 0.793103
 learned_at: 2026-10-15 22:34:18

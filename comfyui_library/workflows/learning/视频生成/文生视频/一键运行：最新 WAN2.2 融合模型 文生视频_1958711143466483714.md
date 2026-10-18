@@ -4,7 +4,7 @@ name: 一键运行：最新 WAN2.2 融合模型 文生视频_1958711143466483714
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958711143466483714.json
+file: comfyui_library/workflows/视频生成/文生视频/一键运行：最新 WAN2.2 融合模型 文生视频_1958711143466483714.json
 hash: d688ddeb65682358
 coverage: 0.888889
 learned_at: 2026-10-15 22:43:42

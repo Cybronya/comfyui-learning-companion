@@ -4,7 +4,7 @@ name: LTX2.3_数字人口播_v2.1_（融合音频生成，效果未必比1.1好�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054780723667718145.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_数字人口播_v2.1_（融合音频生成，效果未必比1.1好）_2054780723667718145.json
 hash: 38442d9db696f025
 coverage: 0.84375
 learned_at: 2026-10-15 22:37:51

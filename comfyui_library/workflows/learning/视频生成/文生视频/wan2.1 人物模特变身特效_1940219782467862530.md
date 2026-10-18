@@ -4,7 +4,7 @@ name: wan2.1 人物模特变身特效_1940219782467862530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1940219782467862530.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 人物模特变身特效_1940219782467862530.json
 hash: 20bb6510fd2c1421
 coverage: 0.954545
 learned_at: 2026-10-15 22:43:30

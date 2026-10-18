@@ -4,7 +4,7 @@ name: image_qwen_image_deal_halftone_1990232206792683522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990232206792683522.json
+file: comfyui_library/workflows/视频生成/图生视频/image_qwen_image_deal_halftone_1990232206792683522.json
 hash: 772c1d2b4b4af523
 coverage: 0.772727
 learned_at: 2026-10-15 22:33:09

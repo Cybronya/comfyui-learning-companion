@@ -4,7 +4,7 @@ name: WAN2.1街头霸王光波工作流_1894640699545944065.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894640699545944065.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1街头霸王光波工作流_1894640699545944065.json
 hash: 9cc704a96d932bbd
 coverage: 0.933333
 learned_at: 2026-10-15 22:29:16

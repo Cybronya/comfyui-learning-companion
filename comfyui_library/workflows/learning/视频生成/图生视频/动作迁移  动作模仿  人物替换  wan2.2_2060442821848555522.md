@@ -4,7 +4,7 @@ name: 动作迁移  动作模仿  人物替换  wan2.2_2060442821848555522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060442821848555522.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移  动作模仿  人物替换  wan2.2_2060442821848555522.json
 hash: 7d3a8bba4a99ef81
 coverage: 0.913043
 learned_at: 2026-10-15 22:38:48

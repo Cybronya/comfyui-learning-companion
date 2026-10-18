@@ -4,7 +4,7 @@ name: MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968838814837952513.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968838814837952513.json
+file: comfyui_library/workflows/视频生成/图生视频/MEGA Merge-WAN2.2-AllInOne-参考编辑主体替换_1968838814837952513.json
 hash: 596b074e9ab3cd21
 coverage: 0.923077
 learned_at: 2026-10-15 22:31:46

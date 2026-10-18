@@ -4,7 +4,7 @@ name: Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962791442060062722.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 All-in-one V10图生视频高动态极速版V1_1962791442060062722.json
 hash: bdeebebb85e55862
 coverage: 1
 learned_at: 2026-10-15 22:31:32

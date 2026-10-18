@@ -4,7 +4,7 @@ name: Wan2.2-14B+Lightx2v图生视频加速版-高清放大+补帧+New_195517239
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955172399558770689.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-14B+Lightx2v图生视频加速版-高清放大+补帧+New_1955172399558770689.json
 hash: cd769b07fabbafae
 coverage: 0.902439
 learned_at: 2026-10-15 22:31:07

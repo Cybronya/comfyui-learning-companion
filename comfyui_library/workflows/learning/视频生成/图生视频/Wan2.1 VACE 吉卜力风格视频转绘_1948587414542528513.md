@@ -4,7 +4,7 @@ name: Wan2.1 VACE 吉卜力风格视频转绘_1948587414542528513.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948587414542528513.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 VACE 吉卜力风格视频转绘_1948587414542528513.json
 hash: 0924d3c4adc2d48d
 coverage: 0.680851
 learned_at: 2026-10-15 22:30:47

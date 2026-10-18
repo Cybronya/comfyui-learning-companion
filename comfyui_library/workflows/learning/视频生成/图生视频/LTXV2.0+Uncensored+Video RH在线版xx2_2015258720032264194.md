@@ -4,7 +4,7 @@ name: LTXV2.0+Uncensored+Video RH在线版xx2_2015258720032264194.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015258720032264194.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV2.0+Uncensored+Video RH在线版xx2_2015258720032264194.json
 hash: ff10c7dbf7a37c8f
 coverage: 0.614286
 learned_at: 2026-10-15 22:34:38

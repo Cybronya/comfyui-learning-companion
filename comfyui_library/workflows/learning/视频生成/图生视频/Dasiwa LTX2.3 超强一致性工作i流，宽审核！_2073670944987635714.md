@@ -4,7 +4,7 @@ name: Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073670944987635714.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa LTX2.3 超强一致性工作i流，宽审核！_2073670944987635714.json
 hash: 7dba1ba6578542ec
 coverage: 0.82
 learned_at: 2026-10-15 22:41:08

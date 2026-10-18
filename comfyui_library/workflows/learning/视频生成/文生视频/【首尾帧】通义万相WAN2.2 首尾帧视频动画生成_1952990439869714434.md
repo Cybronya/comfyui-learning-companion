@@ -4,7 +4,7 @@ name: 【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_195299043986
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1952990439869714434.json
+file: comfyui_library/workflows/视频生成/文生视频/【首尾帧】通义万相WAN2.2 首尾帧视频动画生成_1952990439869714434.json
 hash: 69deb84a7a2bbc64
 coverage: 1
 learned_at: 2026-10-15 22:43:38

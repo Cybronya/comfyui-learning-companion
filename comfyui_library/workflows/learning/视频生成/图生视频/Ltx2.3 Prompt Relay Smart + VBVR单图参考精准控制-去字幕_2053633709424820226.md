@@ -4,7 +4,7 @@ name: Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制-去字幕_2053633
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053633709424820226.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Prompt Relay Smart + VBVR单图参考精准控制-去字幕_2053633709424820226.json
 hash: e93efc83a706d056
 coverage: 0.826087
 learned_at: 2026-10-15 22:37:40

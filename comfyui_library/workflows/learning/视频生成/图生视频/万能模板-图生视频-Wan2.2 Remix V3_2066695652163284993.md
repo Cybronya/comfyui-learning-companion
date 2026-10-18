@@ -4,7 +4,7 @@ name: 万能模板-图生视频-Wan2.2 Remix V3_2066695652163284993.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066695652163284993.json
+file: comfyui_library/workflows/视频生成/图生视频/万能模板-图生视频-Wan2.2 Remix V3_2066695652163284993.json
 hash: 727f89cc6bdca873
 coverage: 1
 learned_at: 2026-10-15 22:39:51

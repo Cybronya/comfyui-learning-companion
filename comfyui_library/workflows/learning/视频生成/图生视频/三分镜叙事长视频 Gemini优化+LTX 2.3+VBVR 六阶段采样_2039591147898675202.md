@@ -4,7 +4,7 @@ name: 三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039591147898675202.json
+file: comfyui_library/workflows/视频生成/图生视频/三分镜叙事长视频 Gemini优化+LTX 2.3+VBVR 六阶段采样_2039591147898675202.json
 hash: d1bca5341a1418bb
 coverage: 0.84
 learned_at: 2026-10-15 22:36:09

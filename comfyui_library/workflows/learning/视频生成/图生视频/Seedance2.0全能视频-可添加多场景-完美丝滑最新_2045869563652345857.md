@@ -4,7 +4,7 @@ name: Seedance2.0全能视频-可添加多场景-完美丝滑最新_204586956365
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045869563652345857.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0全能视频-可添加多场景-完美丝滑最新_2045869563652345857.json
 hash: 371eb5a19158edea
 coverage: 1
 learned_at: 2026-10-15 22:36:53

@@ -4,7 +4,7 @@ name: 🐳wan2.2 首尾帧 超清臻享版 🦋【KJ模型】_195231368233429811
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952313682334298114.json
+file: comfyui_library/workflows/视频生成/图生视频/🐳wan2.2 首尾帧 超清臻享版 🦋【KJ模型】_1952313682334298114.json
 hash: 49951d956dd9d552
 coverage: 0.959184
 learned_at: 2026-10-15 22:31:01

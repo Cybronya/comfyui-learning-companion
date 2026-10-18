@@ -4,7 +4,7 @@ name: MV间奏画面生成，ltx2.3 2i2v_2034984738728972289.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034984738728972289.json
+file: comfyui_library/workflows/视频生成/图生视频/MV间奏画面生成，ltx2.3 2i2v_2034984738728972289.json
 hash: d6c34e25d543f9ce
 coverage: 0.626168
 learned_at: 2026-10-15 22:35:47

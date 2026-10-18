@@ -4,7 +4,7 @@ name: Unianimate Dit+Gpeno人物一致性跳舞+姿势动画加速版V2换脸加
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913792299430572033.json
+file: comfyui_library/workflows/视频生成/图生视频/Unianimate Dit+Gpeno人物一致性跳舞+姿势动画加速版V2换脸加速（MPS奖励）_1913792299430572033.json
 hash: 49b9623df1e8faa8
 coverage: 0.98
 learned_at: 2026-10-15 22:29:34

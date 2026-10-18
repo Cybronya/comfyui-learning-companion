@@ -4,7 +4,7 @@ name: 多场景分段控制图生视频tx2.3_2050790516085796865.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050790516085796865.json
+file: comfyui_library/workflows/视频生成/图生视频/多场景分段控制图生视频tx2.3_2050790516085796865.json
 hash: f0b8113676a26502
 coverage: 0.770833
 learned_at: 2026-10-15 22:37:19

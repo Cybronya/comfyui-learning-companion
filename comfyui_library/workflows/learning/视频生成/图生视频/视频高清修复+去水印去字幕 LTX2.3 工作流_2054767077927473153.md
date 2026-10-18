@@ -4,7 +4,7 @@ name: 视频高清修复+去水印去字幕 LTX2.3 工作流_2054767077927473153
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054767077927473153.json
+file: comfyui_library/workflows/视频生成/图生视频/视频高清修复+去水印去字幕 LTX2.3 工作流_2054767077927473153.json
 hash: 58328746747e78a0
 coverage: 1
 learned_at: 2026-10-15 22:37:51

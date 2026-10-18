@@ -4,7 +4,7 @@ name: wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050481432279175169.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-scail+FOR循环适合小显存配置_2050481432279175169.json
 hash: 5f0b3bf6fd9e0c77
 coverage: 0.926471
 learned_at: 2026-10-15 22:37:18

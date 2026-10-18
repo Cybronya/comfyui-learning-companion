@@ -4,7 +4,7 @@ name: 全能图片V1+wan2.2-跳舞视频-图生视频-视频补帧放大_1962711
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962711139945693186.json
+file: comfyui_library/workflows/视频生成/图生视频/全能图片V1+wan2.2-跳舞视频-图生视频-视频补帧放大_1962711139945693186.json
 hash: 8d4782e4412693be
 coverage: 0.844444
 learned_at: 2026-10-15 22:31:31

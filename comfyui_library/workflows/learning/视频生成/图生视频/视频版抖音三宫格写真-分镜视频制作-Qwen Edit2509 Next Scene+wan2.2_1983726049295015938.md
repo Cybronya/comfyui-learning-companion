@@ -4,7 +4,7 @@ name: 视频版抖音三宫格写真-分镜视频制作-Qwen Edit2509 Next Scene
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983726049295015938.json
+file: comfyui_library/workflows/视频生成/图生视频/视频版抖音三宫格写真-分镜视频制作-Qwen Edit2509 Next Scene+wan2.2_1983726049295015938.json
 hash: 7c0dd7d9edfd1b87
 coverage: 0.645714
 learned_at: 2026-10-15 22:32:45

@@ -4,7 +4,7 @@ name: LTX-2.3_Gemini3补全分镜提示词+自定义音频+首尾帧+多图段�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055962684570521602.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_Gemini3补全分镜提示词+自定义音频+首尾帧+多图段子视频生成_2055962684570521602.json
 hash: 9b06b50a723bf3b7
 coverage: 0.496063
 learned_at: 2026-10-15 22:37:59

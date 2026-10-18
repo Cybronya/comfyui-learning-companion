@@ -4,7 +4,7 @@ name: Wan2.2_S2V音频驱动循环长视频工作流_1961029457740021761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1961029457740021761.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_S2V音频驱动循环长视频工作流_1961029457740021761.json
 hash: eae17dd775bf1e6d
 coverage: 0.577465
 learned_at: 2026-10-15 22:43:43

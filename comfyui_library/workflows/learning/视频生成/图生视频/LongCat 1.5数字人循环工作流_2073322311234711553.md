@@ -4,7 +4,7 @@ name: LongCat 1.5数字人循环工作流_2073322311234711553.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073322311234711553.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCat 1.5数字人循环工作流_2073322311234711553.json
 hash: ab6b9f0b09f7c88f
 coverage: 0.93617
 learned_at: 2026-10-15 22:41:05

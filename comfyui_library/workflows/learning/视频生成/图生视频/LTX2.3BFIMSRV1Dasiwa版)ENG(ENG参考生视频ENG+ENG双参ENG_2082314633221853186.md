@@ -4,7 +4,7 @@ name: LTX2.3BFIMSRV1Dasiwa版)ENG(ENG参考生视频ENG+ENG双参ENG_20823146332
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082314633221853186.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3BFIMSRV1Dasiwa版)ENG(ENG参考生视频ENG+ENG双参ENG_2082314633221853186.json
 hash: 266c9e6ad856ca29
 coverage: 0.830189
 learned_at: 2026-10-15 22:42:29

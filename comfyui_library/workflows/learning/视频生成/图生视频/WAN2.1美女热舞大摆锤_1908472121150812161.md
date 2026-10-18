@@ -4,7 +4,7 @@ name: WAN2.1美女热舞大摆锤_1908472121150812161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1908472121150812161.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1美女热舞大摆锤_1908472121150812161.json
 hash: a7ed70ebfed1fc0a
 coverage: 1
 learned_at: 2026-10-15 22:29:28

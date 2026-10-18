@@ -4,7 +4,7 @@ name: wan 2.2 Animate 视频动作迁移，人物替换，图生视频，脸部�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970498046612172801.json
+file: comfyui_library/workflows/视频生成/图生视频/wan 2.2 Animate 视频动作迁移，人物替换，图生视频，脸部参考，基础用法简单演示_1970498046612172801.json
 hash: 2566ed5e2ef22b8a
 coverage: 0.878788
 learned_at: 2026-10-15 22:31:53

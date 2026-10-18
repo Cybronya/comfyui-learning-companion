@@ -4,7 +4,7 @@ name: Animate影视二创（单人面部参考版）V1.1_2037029152141877249.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037029152141877249.json
+file: comfyui_library/workflows/视频生成/图生视频/Animate影视二创（单人面部参考版）V1.1_2037029152141877249.json
 hash: bdfbf002a7f24cea
 coverage: 0.517857
 learned_at: 2026-10-15 22:35:54

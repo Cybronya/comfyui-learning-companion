@@ -4,7 +4,7 @@ name: [众馨]wan2.2首尾帧_2001506323961397250.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001506323961397250.json
+file: comfyui_library/workflows/视频生成/图生视频/[众馨]wan2.2首尾帧_2001506323961397250.json
 hash: 7de2f1ef35fae78e
 coverage: 0.97561
 learned_at: 2026-10-15 22:33:45

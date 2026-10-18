@@ -4,7 +4,7 @@ name: 最新Wan2.1+Vace首尾帧  极速运行 中文注释_1912169450282647553.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912169450282647553.json
+file: comfyui_library/workflows/视频生成/图生视频/最新Wan2.1+Vace首尾帧  极速运行 中文注释_1912169450282647553.json
 hash: 1555ee9984f63f2d
 coverage: 0.6
 learned_at: 2026-10-15 22:29:32

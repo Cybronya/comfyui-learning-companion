@@ -4,7 +4,7 @@ name: Seedance2.0暂时平替PixVerseV6_2044419738801016834.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044419738801016834.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0暂时平替PixVerseV6_2044419738801016834.json
 hash: 26cb64a4921b5693
 coverage: 0.909091
 learned_at: 2026-10-15 22:36:38

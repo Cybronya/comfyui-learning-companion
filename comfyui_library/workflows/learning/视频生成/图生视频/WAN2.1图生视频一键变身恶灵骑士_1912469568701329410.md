@@ -4,7 +4,7 @@ name: WAN2.1图生视频一键变身恶灵骑士_1912469568701329410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912469568701329410.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频一键变身恶灵骑士_1912469568701329410.json
 hash: f14f78f3f284fa37
 coverage: 1
 learned_at: 2026-10-15 22:29:32

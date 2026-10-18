@@ -4,7 +4,7 @@ name: WAN2.1图生视频美女射击_1910308143438491650.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1910308143438491650.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频美女射击_1910308143438491650.json
 hash: efce9dd94ff45012
 coverage: 1
 learned_at: 2026-10-15 22:29:29

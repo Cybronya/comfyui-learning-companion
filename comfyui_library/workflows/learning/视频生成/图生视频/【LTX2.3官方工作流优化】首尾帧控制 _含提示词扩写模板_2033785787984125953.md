@@ -4,7 +4,7 @@ name: 【LTX2.3官方工作流优化】首尾帧控制 _含提示词扩写模板
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033785787984125953.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX2.3官方工作流优化】首尾帧控制 _含提示词扩写模板_2033785787984125953.json
 hash: 64e40e1b79171312
 coverage: 0.793103
 learned_at: 2026-10-15 22:35:41

@@ -4,7 +4,7 @@ name: 图生视频-LingBot-30B_1.3B-智能提示词_2082649935207559170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082649935207559170.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-LingBot-30B_1.3B-智能提示词_2082649935207559170.json
 hash: 044d54ab6137d3f4
 coverage: 0.638889
 learned_at: 2026-10-15 22:42:33

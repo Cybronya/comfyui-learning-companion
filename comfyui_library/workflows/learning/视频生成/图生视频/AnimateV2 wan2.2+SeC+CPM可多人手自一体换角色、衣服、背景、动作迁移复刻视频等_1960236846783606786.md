@@ -4,7 +4,7 @@ name: AnimateV2 wan2.2+SeC+CPM可多人手自一体换角色、衣服、背景�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960236846783606786.json
+file: comfyui_library/workflows/视频生成/图生视频/AnimateV2 wan2.2+SeC+CPM可多人手自一体换角色、衣服、背景、动作迁移复刻视频等_1960236846783606786.json
 hash: a7bbb9c8b9bc6aaf
 coverage: 0.888889
 learned_at: 2026-10-15 22:31:26

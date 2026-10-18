@@ -4,7 +4,7 @@ name: wan2.2-文生视频-火焰人_1955297362048684033.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1955297362048684033.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2-文生视频-火焰人_1955297362048684033.json
 hash: 92b0bbcf6a292de1
 coverage: 0.933333
 learned_at: 2026-10-15 22:43:40

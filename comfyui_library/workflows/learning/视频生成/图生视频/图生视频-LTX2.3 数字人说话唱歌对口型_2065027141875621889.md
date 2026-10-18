@@ -4,7 +4,7 @@ name: 图生视频-LTX2.3 数字人说话唱歌对口型_2065027141875621889.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065027141875621889.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-LTX2.3 数字人说话唱歌对口型_2065027141875621889.json
 hash: 7ad61aa8314f3f1b
 coverage: 0.644737
 learned_at: 2026-10-15 22:39:34

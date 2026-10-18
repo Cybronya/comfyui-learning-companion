@@ -4,7 +4,7 @@ name: 图生视频 快生成 AI动作模仿+跳舞+剑舞-Animate wan2.2_2034431
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034431517451096065.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频 快生成 AI动作模仿+跳舞+剑舞-Animate wan2.2_2034431517451096065.json
 hash: d7a6476c71894a0f
 coverage: 0.837209
 learned_at: 2026-10-15 22:35:44

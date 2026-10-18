@@ -4,7 +4,7 @@ name: 【大炮视频】wan2.1_10个运镜lora 简单方便，让你图生视频
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1931150479697620994.json
+file: comfyui_library/workflows/视频生成/文生视频/【大炮视频】wan2.1_10个运镜lora 简单方便，让你图生视频充满灵性~_1931150479697620994.json
 hash: 900729f81553e562
 coverage: 0.8
 learned_at: 2026-10-15 22:43:26

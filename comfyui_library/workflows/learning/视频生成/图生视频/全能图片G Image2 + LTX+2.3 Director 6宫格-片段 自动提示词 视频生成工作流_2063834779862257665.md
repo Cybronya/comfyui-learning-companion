@@ -4,7 +4,7 @@ name: 全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063834779862257665.json
+file: comfyui_library/workflows/视频生成/图生视频/全能图片G Image2 + LTX+2.3 Director 6宫格-片段 自动提示词 视频生成工作流_2063834779862257665.json
 hash: 192e7c7b350a4ad8
 coverage: 0.728814
 learned_at: 2026-10-15 22:39:18

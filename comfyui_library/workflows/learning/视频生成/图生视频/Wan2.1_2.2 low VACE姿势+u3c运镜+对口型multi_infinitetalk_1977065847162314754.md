@@ -4,7 +4,7 @@ name: Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977065847162314754.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1_2.2 low VACE姿势+u3c运镜+对口型multi_infinitetalk_1977065847162314754.json
 hash: ec752ea9b81f4820
 coverage: 0.433121
 learned_at: 2026-10-15 22:32:13

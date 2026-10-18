@@ -4,7 +4,7 @@ name: WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946216750084186114.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1 抖音小红书快手网红跳舞视频_1946216750084186114.json
 hash: be2a2450687bb237
 coverage: 1
 learned_at: 2026-10-15 22:30:44

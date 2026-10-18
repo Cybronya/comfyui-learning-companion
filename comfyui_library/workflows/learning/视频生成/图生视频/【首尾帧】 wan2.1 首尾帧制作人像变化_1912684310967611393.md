@@ -4,7 +4,7 @@ name: 【首尾帧】 wan2.1 首尾帧制作人像变化_1912684310967611393.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912684310967611393.json
+file: comfyui_library/workflows/视频生成/图生视频/【首尾帧】 wan2.1 首尾帧制作人像变化_1912684310967611393.json
 hash: d4b99a61ad54e4bf
 coverage: 1
 learned_at: 2026-10-15 22:29:32

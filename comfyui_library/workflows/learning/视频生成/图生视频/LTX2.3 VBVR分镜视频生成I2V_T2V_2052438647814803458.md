@@ -4,7 +4,7 @@ name: LTX2.3 VBVR分镜视频生成I2V_T2V_2052438647814803458.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052438647814803458.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 VBVR分镜视频生成I2V_T2V_2052438647814803458.json
 hash: 77182ef7aef7170b
 coverage: 0.526316
 learned_at: 2026-10-15 22:37:29

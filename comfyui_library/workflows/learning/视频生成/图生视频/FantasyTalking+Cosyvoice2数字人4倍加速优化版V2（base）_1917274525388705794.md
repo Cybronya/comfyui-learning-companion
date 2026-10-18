@@ -4,7 +4,7 @@ name: FantasyTalking+Cosyvoice2数字人4倍加速优化版V2（base）_19172745
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917274525388705794.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyTalking+Cosyvoice2数字人4倍加速优化版V2（base）_1917274525388705794.json
 hash: b8857fd56db235eb
 coverage: 0.833333
 learned_at: 2026-10-15 22:29:39

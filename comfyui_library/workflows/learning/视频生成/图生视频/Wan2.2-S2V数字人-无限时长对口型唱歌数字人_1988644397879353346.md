@@ -4,7 +4,7 @@ name: Wan2.2-S2V数字人-无限时长对口型唱歌数字人_19886443978793533
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988644397879353346.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-S2V数字人-无限时长对口型唱歌数字人_1988644397879353346.json
 hash: 3536b8bde38c20b9
 coverage: 0.9
 learned_at: 2026-10-15 22:33:04

@@ -4,7 +4,7 @@ name: FramPack + TTS And LipSync 口型同步数字人视频生成工作流_1920
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920657975512600578.json
+file: comfyui_library/workflows/视频生成/图生视频/FramPack + TTS And LipSync 口型同步数字人视频生成工作流_1920657975512600578.json
 hash: b1e55da58f7d3b1d
 coverage: 0.676471
 learned_at: 2026-10-15 22:29:42

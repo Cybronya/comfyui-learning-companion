@@ -4,7 +4,7 @@ name: LTX2.3全栈式短剧生成V18.7(横竖屏切换版)_2065558189625663489.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065558189625663489.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全栈式短剧生成V18.7(横竖屏切换版)_2065558189625663489.json
 hash: eccfe3b6ff4b5be3
 coverage: 0.672986
 learned_at: 2026-10-15 22:39:42

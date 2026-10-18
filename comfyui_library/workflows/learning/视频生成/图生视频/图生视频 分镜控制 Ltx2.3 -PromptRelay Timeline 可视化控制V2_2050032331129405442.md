@@ -4,7 +4,7 @@ name: 图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050032331129405442.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频 分镜控制 Ltx2.3 -PromptRelay Timeline 可视化控制V2_2050032331129405442.json
 hash: 8fbc7bff0eb1e35f
 coverage: 0.777778
 learned_at: 2026-10-15 22:37:16

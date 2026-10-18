@@ -4,7 +4,7 @@ name: 【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034094211007516673.json
+file: comfyui_library/workflows/视频生成/图生视频/【灵动万象】Seedance 2.0 导演级视频生成大模型：定格物理级的动态生命力_2034094211007516673.json
 hash: d3013250b5548a64
 coverage: 0.769231
 learned_at: 2026-10-15 22:35:43

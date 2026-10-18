@@ -4,7 +4,7 @@ name: DaSiWa-WAN2.2首尾帧视频-更好的动漫视频二次元-双图版_2001
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001205334750396418.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa-WAN2.2首尾帧视频-更好的动漫视频二次元-双图版_2001205334750396418.json
 hash: e643120df7bc6aa7
 coverage: 0.711864
 learned_at: 2026-10-15 22:33:44

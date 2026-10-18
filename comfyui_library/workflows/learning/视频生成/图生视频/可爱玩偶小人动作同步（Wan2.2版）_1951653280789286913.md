@@ -4,7 +4,7 @@ name: 可爱玩偶小人动作同步（Wan2.2版）_1951653280789286913.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951653280789286913.json
+file: comfyui_library/workflows/视频生成/图生视频/可爱玩偶小人动作同步（Wan2.2版）_1951653280789286913.json
 hash: 9001a630b945a659
 coverage: 0.982143
 learned_at: 2026-10-15 22:30:59

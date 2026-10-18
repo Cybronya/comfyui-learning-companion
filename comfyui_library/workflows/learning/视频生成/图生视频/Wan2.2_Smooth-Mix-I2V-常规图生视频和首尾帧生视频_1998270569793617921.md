@@ -4,7 +4,7 @@ name: Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_199827056979
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998270569793617921.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_Smooth-Mix-I2V-常规图生视频和首尾帧生视频_1998270569793617921.json
 hash: 2766cc678db6baea
 coverage: 0.814286
 learned_at: 2026-10-15 22:33:31

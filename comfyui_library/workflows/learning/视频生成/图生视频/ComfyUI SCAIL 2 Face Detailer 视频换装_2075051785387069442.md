@@ -4,7 +4,7 @@ name: ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075051785387069442.json
+file: comfyui_library/workflows/视频生成/图生视频/ComfyUI SCAIL 2 Face Detailer 视频换装_2075051785387069442.json
 hash: acd3fc6b925da72a
 coverage: 0.536082
 learned_at: 2026-10-15 22:41:20

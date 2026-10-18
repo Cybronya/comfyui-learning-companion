@@ -4,7 +4,7 @@ name: Wan-Dancer + Scail2 音生舞工作流邪修版 v1.0 _ 高质量、高动�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080198878946742274.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan-Dancer + Scail2 音生舞工作流邪修版 v1.0 _ 高质量、高动态、人物稳定_2080198878946742274.json
 hash: bb3ba384b7f5cfc5
 coverage: 0.5125
 learned_at: 2026-10-15 22:42:10

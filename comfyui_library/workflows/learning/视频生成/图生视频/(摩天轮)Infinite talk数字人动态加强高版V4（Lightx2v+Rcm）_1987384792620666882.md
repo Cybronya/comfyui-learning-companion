@@ -4,7 +4,7 @@ name: (摩天轮)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987384792620666882.json
+file: comfyui_library/workflows/视频生成/图生视频/(摩天轮)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1987384792620666882.json
 hash: 307c038c98afda15
 coverage: 0.75
 learned_at: 2026-10-15 22:32:58

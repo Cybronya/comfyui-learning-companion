@@ -4,7 +4,7 @@ name: Wan2.2-720P 高速版｜图生视频_1952617990284087298.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952617990284087298.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-720P 高速版｜图生视频_1952617990284087298.json
 hash: deadaf58de79c991
 coverage: 0.836364
 learned_at: 2026-10-15 22:31:02

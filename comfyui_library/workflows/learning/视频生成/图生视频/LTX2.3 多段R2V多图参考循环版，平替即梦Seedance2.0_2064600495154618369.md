@@ -4,7 +4,7 @@ name: LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2064600495
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064600495154618369.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 多段R2V多图参考循环版，平替即梦Seedance2.0_2064600495154618369.json
 hash: 0baeff9a62a0373c
 coverage: 0.8375
 learned_at: 2026-10-15 22:39:27

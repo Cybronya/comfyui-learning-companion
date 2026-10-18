@@ -4,7 +4,7 @@ name: Kandinsky 5.0 +Qwen3 Vl自动图生视频_1999180009522819073.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999180009522819073.json
+file: comfyui_library/workflows/视频生成/图生视频/Kandinsky 5.0 +Qwen3 Vl自动图生视频_1999180009522819073.json
 hash: e780b8dec67f4830
 coverage: 0.909091
 learned_at: 2026-10-15 22:33:36

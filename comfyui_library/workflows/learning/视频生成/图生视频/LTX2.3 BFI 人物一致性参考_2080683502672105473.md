@@ -4,7 +4,7 @@ name: LTX2.3 BFI 人物一致性参考_2080683502672105473.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080683502672105473.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 BFI 人物一致性参考_2080683502672105473.json
 hash: 03b107b7e6697e07
 coverage: 0.825
 learned_at: 2026-10-15 22:42:17

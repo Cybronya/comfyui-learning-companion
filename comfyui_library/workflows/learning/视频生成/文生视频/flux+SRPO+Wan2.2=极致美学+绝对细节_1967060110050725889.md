@@ -4,7 +4,7 @@ name: flux+SRPO+Wan2.2=极致美学+绝对细节_1967060110050725889.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1967060110050725889.json
+file: comfyui_library/workflows/视频生成/文生视频/flux+SRPO+Wan2.2=极致美学+绝对细节_1967060110050725889.json
 hash: 63bf8b838371c1fc
 coverage: 0.857143
 learned_at: 2026-10-15 22:43:45

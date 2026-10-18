@@ -4,7 +4,7 @@ name: wan2.1Animate2.2人物动作表情迁移加速版第二版_199401248820946
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994012488209465345.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1Animate2.2人物动作表情迁移加速版第二版_1994012488209465345.json
 hash: c887cf29a3912da2
 coverage: 0.59
 learned_at: 2026-10-15 22:33:20

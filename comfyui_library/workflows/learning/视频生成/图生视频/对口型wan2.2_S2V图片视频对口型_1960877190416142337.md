@@ -4,7 +4,7 @@ name: 对口型wan2.2_S2V图片视频对口型_1960877190416142337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960877190416142337.json
+file: comfyui_library/workflows/视频生成/图生视频/对口型wan2.2_S2V图片视频对口型_1960877190416142337.json
 hash: c851f06531635373
 coverage: 0.96
 learned_at: 2026-10-15 22:31:27

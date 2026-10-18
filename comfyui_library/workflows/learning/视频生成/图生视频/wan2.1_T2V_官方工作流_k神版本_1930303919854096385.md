@@ -4,7 +4,7 @@ name: wan2.1_T2V_官方工作流_k神版本_1930303919854096385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930303919854096385.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_T2V_官方工作流_k神版本_1930303919854096385.json
 hash: bf66f53d3b5308c3
 coverage: 0.68
 learned_at: 2026-10-15 22:30:05

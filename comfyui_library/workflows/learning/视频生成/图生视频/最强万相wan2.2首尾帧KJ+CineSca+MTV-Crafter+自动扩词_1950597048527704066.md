@@ -4,7 +4,7 @@ name: 最强万相wan2.2首尾帧KJ+CineSca+MTV-Crafter+自动扩词_19505970485
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950597048527704066.json
+file: comfyui_library/workflows/视频生成/图生视频/最强万相wan2.2首尾帧KJ+CineSca+MTV-Crafter+自动扩词_1950597048527704066.json
 hash: 81cb5191d470d164
 coverage: 0.97619
 learned_at: 2026-10-15 22:30:55

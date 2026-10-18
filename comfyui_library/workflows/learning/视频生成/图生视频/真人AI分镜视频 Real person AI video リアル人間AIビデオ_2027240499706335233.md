@@ -4,7 +4,7 @@ name: 真人AI分镜视频 Real person AI video リアル人間AIビデオ_20272
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027240499706335233.json
+file: comfyui_library/workflows/视频生成/图生视频/真人AI分镜视频 Real person AI video リアル人間AIビデオ_2027240499706335233.json
 hash: d09d2bc9f4482200
 coverage: 0.745455
 learned_at: 2026-10-15 22:35:16

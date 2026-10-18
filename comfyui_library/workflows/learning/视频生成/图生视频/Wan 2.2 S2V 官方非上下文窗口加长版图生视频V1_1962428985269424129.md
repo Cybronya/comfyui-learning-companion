@@ -4,7 +4,7 @@ name: Wan 2.2 S2V 官方非上下文窗口加长版图生视频V1_19624289852694
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962428985269424129.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 S2V 官方非上下文窗口加长版图生视频V1_1962428985269424129.json
 hash: 3176ec6b888996e3
 coverage: 0.794872
 learned_at: 2026-10-15 22:31:30

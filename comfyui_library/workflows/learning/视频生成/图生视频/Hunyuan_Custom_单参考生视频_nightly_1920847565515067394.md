@@ -4,7 +4,7 @@ name: Hunyuan_Custom_单参考生视频_nightly_1920847565515067394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920847565515067394.json
+file: comfyui_library/workflows/视频生成/图生视频/Hunyuan_Custom_单参考生视频_nightly_1920847565515067394.json
 hash: 080c0ac6f21aa0ff
 coverage: 0.942857
 learned_at: 2026-10-15 22:29:43

@@ -4,7 +4,7 @@ name: 人物替换 · 动作迁移 · 表情优化 · Animate 1.0_19704084959904
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970408495990403073.json
+file: comfyui_library/workflows/视频生成/图生视频/人物替换 · 动作迁移 · 表情优化 · Animate 1.0_1970408495990403073.json
 hash: 2ae289be99a56a74
 coverage: 0.609195
 learned_at: 2026-10-15 22:31:53

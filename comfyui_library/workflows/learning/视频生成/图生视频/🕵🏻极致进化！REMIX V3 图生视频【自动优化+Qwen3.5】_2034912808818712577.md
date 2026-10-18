@@ -4,7 +4,7 @@ name: 🕵🏻极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_203
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034912808818712577.json
+file: comfyui_library/workflows/视频生成/图生视频/🕵🏻极致进化！REMIX V3 图生视频【自动优化+Qwen3.5】_2034912808818712577.json
 hash: 71a65a3414232a89
 coverage: 0.75
 learned_at: 2026-10-15 22:35:46

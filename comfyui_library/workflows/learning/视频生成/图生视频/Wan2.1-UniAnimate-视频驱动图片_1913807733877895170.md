@@ -4,7 +4,7 @@ name: Wan2.1-UniAnimate-视频驱动图片_1913807733877895170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913807733877895170.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-UniAnimate-视频驱动图片_1913807733877895170.json
 hash: 9478f16a7954efd1
 coverage: 0.543478
 learned_at: 2026-10-15 22:29:34

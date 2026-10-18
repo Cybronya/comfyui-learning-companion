@@ -4,7 +4,7 @@ name: LTX-2.3-MSR V2参考生视频-参考音色-自定义音频-全自动版-V1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080476788374986754.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-MSR V2参考生视频-参考音色-自定义音频-全自动版-V1.1_2080476788374986754.json
 hash: 685c60742799fb4b
 coverage: 0.481283
 learned_at: 2026-10-15 22:42:13

@@ -4,7 +4,7 @@ name: wan2.1图生视频特效走秀燃烧起火工作流_1920925508526346241.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1920925508526346241.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1图生视频特效走秀燃烧起火工作流_1920925508526346241.json
 hash: 71df67e64b3a870e
 coverage: 0.909091
 learned_at: 2026-10-15 22:29:43

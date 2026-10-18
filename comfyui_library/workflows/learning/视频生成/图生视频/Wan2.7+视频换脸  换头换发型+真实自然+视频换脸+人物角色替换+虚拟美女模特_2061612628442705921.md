@@ -4,7 +4,7 @@ name: Wan2.7+视频换脸  换头换发型+真实自然+视频换脸+人物角�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061612628442705921.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.7+视频换脸  换头换发型+真实自然+视频换脸+人物角色替换+虚拟美女模特_2061612628442705921.json
 hash: 832078f18555c451
 coverage: 0.626667
 learned_at: 2026-10-15 22:38:55

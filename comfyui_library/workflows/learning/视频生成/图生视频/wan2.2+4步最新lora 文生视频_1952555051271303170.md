@@ -4,7 +4,7 @@ name: wan2.2+4步最新lora 文生视频_1952555051271303170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952555051271303170.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+4步最新lora 文生视频_1952555051271303170.json
 hash: 690d8bb54472809f
 coverage: 0.948718
 learned_at: 2026-10-15 22:31:02

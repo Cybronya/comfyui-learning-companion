@@ -4,7 +4,7 @@ name: Wan2.2+Remix+V3+图生视频+akcope_2062721995304955905.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062721995304955905.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Remix+V3+图生视频+akcope_2062721995304955905.json
 hash: f3f2e46131f2e781
 coverage: 1
 learned_at: 2026-10-15 22:39:07

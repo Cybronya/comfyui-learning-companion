@@ -4,7 +4,7 @@ name: 🤖大王炸！Wan高级视频人物替换V1.8_1956275977003433986.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956275977003433986.json
+file: comfyui_library/workflows/视频生成/图生视频/🤖大王炸！Wan高级视频人物替换V1.8_1956275977003433986.json
 hash: 1689250f97bf29d2
 coverage: 0.882353
 learned_at: 2026-10-15 22:31:12

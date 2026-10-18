@@ -4,7 +4,7 @@ name: Seedance2.0 Fast全能参考视频 人物替换_2041416684765974530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041416684765974530.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 Fast全能参考视频 人物替换_2041416684765974530.json
 hash: 85c7176f88fc6483
 coverage: 0.714286
 learned_at: 2026-10-15 22:36:19

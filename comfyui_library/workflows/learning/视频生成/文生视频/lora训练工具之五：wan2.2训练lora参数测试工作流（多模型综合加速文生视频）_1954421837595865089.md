@@ -4,7 +4,7 @@ name: lora训练工具之五：wan2.2训练lora参数测试工作流（多模型
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954421837595865089.json
+file: comfyui_library/workflows/视频生成/文生视频/lora训练工具之五：wan2.2训练lora参数测试工作流（多模型综合加速文生视频）_1954421837595865089.json
 hash: 112c3c22f169542e
 coverage: 0.983333
 learned_at: 2026-10-15 22:43:39

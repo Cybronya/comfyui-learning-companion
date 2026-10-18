@@ -4,7 +4,7 @@ name: gen全能视频Si-wan2.2首尾帧kijai版_1952803879810494466.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952803879810494466.json
+file: comfyui_library/workflows/视频生成/图生视频/gen全能视频Si-wan2.2首尾帧kijai版_1952803879810494466.json
 hash: 3c700bbd50e0b9d5
 coverage: 1
 learned_at: 2026-10-15 22:31:03

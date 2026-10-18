@@ -4,7 +4,7 @@ name: 【阡陌】wan2.2+light4步加速lora文生视频工作流_19675607430485
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1967560743048581122.json
+file: comfyui_library/workflows/视频生成/文生视频/【阡陌】wan2.2+light4步加速lora文生视频工作流_1967560743048581122.json
 hash: 43c59cf5299529ca
 coverage: 1
 learned_at: 2026-10-15 22:43:45

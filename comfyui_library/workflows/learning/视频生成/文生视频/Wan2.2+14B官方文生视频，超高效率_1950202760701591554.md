@@ -4,7 +4,7 @@ name: Wan2.2+14B官方文生视频，超高效率_1950202760701591554.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950202760701591554.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2+14B官方文生视频，超高效率_1950202760701591554.json
 hash: 8fe472959afe57b8
 coverage: 0.722222
 learned_at: 2026-10-15 22:43:35

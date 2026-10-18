@@ -4,7 +4,7 @@ name: Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960740371133345793.json
+file: comfyui_library/workflows/视频生成/图生视频/Fun-Control动作迁移-KJ最新Wan2.2-Lightning版_1960740371133345793.json
 hash: 41834292a6c681d8
 coverage: 0.676923
 learned_at: 2026-10-15 22:31:26

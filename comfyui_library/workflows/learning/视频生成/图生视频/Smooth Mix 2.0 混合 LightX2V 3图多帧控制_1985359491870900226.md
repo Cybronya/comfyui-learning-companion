@@ -4,7 +4,7 @@ name: Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1985359491870900226.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985359491870900226.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix 2.0 混合 LightX2V 3图多帧控制_1985359491870900226.json
 hash: 22132ae3771470cd
 coverage: 0.933333
 learned_at: 2026-10-15 22:32:50

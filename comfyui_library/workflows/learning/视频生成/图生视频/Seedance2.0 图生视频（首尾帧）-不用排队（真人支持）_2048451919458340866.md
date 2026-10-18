@@ -4,7 +4,7 @@ name: Seedance2.0 图生视频（首尾帧）-不用排队（真人支持）_204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048451919458340866.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 图生视频（首尾帧）-不用排队（真人支持）_2048451919458340866.json
 hash: 8c1891c28a19f8ee
 coverage: 1
 learned_at: 2026-10-15 22:37:09

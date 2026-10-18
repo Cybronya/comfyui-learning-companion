@@ -4,7 +4,7 @@ name: Wan2.2-DaSiWa8.1-最强动漫模型-图生视频-插帧放大-自动提示
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010940564040060929.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-DaSiWa8.1-最强动漫模型-图生视频-插帧放大-自动提示词_2010940564040060929.json
 hash: 6a2fbd4b6acd5ffe
 coverage: 0.75
 learned_at: 2026-10-15 22:34:19

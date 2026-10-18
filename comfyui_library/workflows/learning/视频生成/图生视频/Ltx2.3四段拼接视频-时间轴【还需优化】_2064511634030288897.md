@@ -4,7 +4,7 @@ name: Ltx2.3四段拼接视频-时间轴【还需优化】_2064511634030288897.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064511634030288897.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3四段拼接视频-时间轴【还需优化】_2064511634030288897.json
 hash: 58be7a4c7e877e31
 coverage: 0.484733
 learned_at: 2026-10-15 22:39:25

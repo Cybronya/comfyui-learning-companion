@@ -4,7 +4,7 @@ name: RH 全能视频X-图生视频-官方稳定版-1.89元_秒_2062216350952677
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062216350952677377.json
+file: comfyui_library/workflows/视频生成/图生视频/RH 全能视频X-图生视频-官方稳定版-1.89元_秒_2062216350952677377.json
 hash: 23045d606da6f56c
 coverage: 0.875
 learned_at: 2026-10-15 22:39:01

@@ -4,7 +4,7 @@ name: ✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_195204192753124556
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952041927531245569.json
+file: comfyui_library/workflows/视频生成/图生视频/✅首尾帧-图生视频-kj版本-Wan2.2+Lightx2v-720p_1952041927531245569.json
 hash: 9c9d4a00473bde36
 coverage: 0.542553
 learned_at: 2026-10-15 22:30:59

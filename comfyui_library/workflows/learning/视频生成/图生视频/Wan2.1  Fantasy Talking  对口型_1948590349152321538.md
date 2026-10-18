@@ -4,7 +4,7 @@ name: Wan2.1  Fantasy Talking  对口型_1948590349152321538.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948590349152321538.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1  Fantasy Talking  对口型_1948590349152321538.json
 hash: 3c520f87750b8bef
 coverage: 0.574074
 learned_at: 2026-10-15 22:30:47

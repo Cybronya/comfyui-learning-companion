@@ -4,7 +4,7 @@ name: （微缩景观）WAN2.2图片到视频_1957832678953381890.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957832678953381890.json
+file: comfyui_library/workflows/视频生成/图生视频/（微缩景观）WAN2.2图片到视频_1957832678953381890.json
 hash: b5a2954ad0c0f0de
 coverage: 0.949367
 learned_at: 2026-10-15 22:31:18

@@ -4,7 +4,7 @@ name: (最高性价比方案-支持真人)Seedance2.0图生视频+Flashvsr高清
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043642349795942401.json
+file: comfyui_library/workflows/视频生成/图生视频/(最高性价比方案-支持真人)Seedance2.0图生视频+Flashvsr高清化（贞贞的AI工坊）_2043642349795942401.json
 hash: d8b0afab870821a7
 coverage: 1
 learned_at: 2026-10-15 22:36:33

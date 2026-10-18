@@ -4,7 +4,7 @@ name: Wan2.1 VACE 双图参考_1948576222688227330.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948576222688227330.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 VACE 双图参考_1948576222688227330.json
 hash: aac27069a1b377f8
 coverage: 0.578125
 learned_at: 2026-10-15 22:30:47

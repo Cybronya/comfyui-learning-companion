@@ -4,7 +4,7 @@ name: LTX-2.3-Director+OmniNFT_2058028747135217666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058028747135217666.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-Director+OmniNFT_2058028747135217666.json
 hash: ea3698b4b39c94ea
 coverage: 0.972973
 learned_at: 2026-10-15 22:38:17

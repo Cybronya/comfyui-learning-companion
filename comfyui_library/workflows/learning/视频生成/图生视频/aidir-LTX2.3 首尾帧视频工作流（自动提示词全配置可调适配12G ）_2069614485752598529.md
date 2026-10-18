@@ -4,7 +4,7 @@ name: aidir-LTX2.3 首尾帧视频工作流（自动提示词全配置可调适�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069614485752598529.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX2.3 首尾帧视频工作流（自动提示词全配置可调适配12G ）_2069614485752598529.json
 hash: 058dd9f8c65c3f30
 coverage: 0.62766
 learned_at: 2026-10-15 22:40:30

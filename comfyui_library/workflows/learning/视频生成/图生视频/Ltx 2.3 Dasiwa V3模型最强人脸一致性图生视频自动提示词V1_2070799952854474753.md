@@ -4,7 +4,7 @@ name: Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070799952854474753.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx 2.3 Dasiwa V3模型最强人脸一致性图生视频自动提示词V1_2070799952854474753.json
 hash: e7ebed69f3165526
 coverage: 0.940299
 learned_at: 2026-10-15 22:40:42

@@ -4,7 +4,7 @@ name: 【LHX】Wan2.2图生视频_2067148001327542273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067148001327542273.json
+file: comfyui_library/workflows/视频生成/图生视频/【LHX】Wan2.2图生视频_2067148001327542273.json
 hash: b9a49819d1e018fb
 coverage: 0.84375
 learned_at: 2026-10-15 22:39:57

@@ -4,7 +4,7 @@ name: wan2.2-AnimateKJ版_v2版：人物替换（长视频版）_206200444768494
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062004447684947969.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-AnimateKJ版_v2版：人物替换（长视频版）_2062004447684947969.json
 hash: 4ea094a048a5b573
 coverage: 0.843137
 learned_at: 2026-10-15 22:38:58

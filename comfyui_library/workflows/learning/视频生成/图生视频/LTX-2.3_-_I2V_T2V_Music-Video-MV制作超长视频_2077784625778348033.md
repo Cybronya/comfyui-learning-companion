@@ -4,7 +4,7 @@ name: LTX-2.3_-_I2V_T2V_Music-Video-MV制作超长视频_2077784625778348033.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077784625778348033.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_-_I2V_T2V_Music-Video-MV制作超长视频_2077784625778348033.json
 hash: 339abfa54f9e3973
 coverage: 0.474708
 learned_at: 2026-10-15 22:41:45

@@ -4,7 +4,7 @@ name: Ltx2.3-Multi Image-自定义语音-图生视频_2063202881095954433.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063202881095954433.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3-Multi Image-自定义语音-图生视频_2063202881095954433.json
 hash: 160a5a1b7f6cdcc2
 coverage: 0.84507
 learned_at: 2026-10-15 22:39:11

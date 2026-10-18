@@ -4,7 +4,7 @@ name: WAN2.1图生视频美女转身_1909579567680684034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1909579567680684034.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频美女转身_1909579567680684034.json
 hash: 0f98fe1ba4504450
 coverage: 1
 learned_at: 2026-10-15 22:29:29

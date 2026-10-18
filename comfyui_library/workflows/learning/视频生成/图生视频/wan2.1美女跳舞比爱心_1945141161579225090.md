@@ -4,7 +4,7 @@ name: wan2.1美女跳舞比爱心_1945141161579225090.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945141161579225090.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1美女跳舞比爱心_1945141161579225090.json
 hash: 115430c538096b61
 coverage: 1
 learned_at: 2026-10-15 22:30:41

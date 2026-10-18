@@ -4,7 +4,7 @@ name: LTX2.3 多帧参考-参考音色-AddGuide-V2_2061644573146968066.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061644573146968066.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 多帧参考-参考音色-AddGuide-V2_2061644573146968066.json
 hash: 9cddd00d2e9338ab
 coverage: 0.387324
 learned_at: 2026-10-15 22:38:55

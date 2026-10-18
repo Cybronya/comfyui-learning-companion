@@ -4,7 +4,7 @@ name: 【KJ版】Wan2.2-Lightning4步首尾帧_1954845153740546050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954845153740546050.json
+file: comfyui_library/workflows/视频生成/图生视频/【KJ版】Wan2.2-Lightning4步首尾帧_1954845153740546050.json
 hash: fbea73a079cf8271
 coverage: 0.74
 learned_at: 2026-10-15 22:31:07

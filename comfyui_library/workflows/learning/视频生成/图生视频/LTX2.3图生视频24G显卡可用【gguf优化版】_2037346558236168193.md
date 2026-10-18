@@ -4,7 +4,7 @@ name: LTX2.3图生视频24G显卡可用【gguf优化版】_2037346558236168193.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037346558236168193.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频24G显卡可用【gguf优化版】_2037346558236168193.json
 hash: 63c48395c0beed78
 coverage: 0.60473
 learned_at: 2026-10-15 22:35:56

@@ -4,7 +4,7 @@ name: 🈚️wan2.1-Magref R2V-多图参考视频+lightx+Pusa_195281431300007936
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952814313000079362.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️wan2.1-Magref R2V-多图参考视频+lightx+Pusa_1952814313000079362.json
 hash: 319269d710f33eca
 coverage: 0.455224
 learned_at: 2026-10-15 22:31:03

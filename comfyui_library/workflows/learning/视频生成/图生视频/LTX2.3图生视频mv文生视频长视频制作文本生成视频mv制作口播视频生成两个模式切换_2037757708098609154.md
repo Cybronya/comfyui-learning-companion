@@ -4,7 +4,7 @@ name: LTX2.3图生视频mv文生视频长视频制作文本生成视频mv制作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037757708098609154.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频mv文生视频长视频制作文本生成视频mv制作口播视频生成两个模式切换_2037757708098609154.json
 hash: 9731626308adc4c2
 coverage: 0.819672
 learned_at: 2026-10-15 22:35:58

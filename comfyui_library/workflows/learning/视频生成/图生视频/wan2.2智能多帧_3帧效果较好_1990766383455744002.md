@@ -4,7 +4,7 @@ name: wan2.2智能多帧_3帧效果较好_1990766383455744002.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990766383455744002.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2智能多帧_3帧效果较好_1990766383455744002.json
 hash: be5cb65575af718c
 coverage: 0.88961
 learned_at: 2026-10-15 22:33:11

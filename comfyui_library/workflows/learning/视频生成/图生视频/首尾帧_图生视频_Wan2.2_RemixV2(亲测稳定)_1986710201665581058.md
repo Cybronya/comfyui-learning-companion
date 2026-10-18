@@ -4,7 +4,7 @@ name: 首尾帧_图生视频_Wan2.2_RemixV2(亲测稳定)_1986710201665581058.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986710201665581058.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧_图生视频_Wan2.2_RemixV2(亲测稳定)_1986710201665581058.json
 hash: 12f0810bf50655d5
 coverage: 0.677966
 learned_at: 2026-10-15 22:32:56

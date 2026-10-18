@@ -4,7 +4,7 @@ name: 1FINAL-SZR-SING-TALK - YZ金鱼-InfiniteTalk_2044648353442566146.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044648353442566146.json
+file: comfyui_library/workflows/视频生成/图生视频/1FINAL-SZR-SING-TALK - YZ金鱼-InfiniteTalk_2044648353442566146.json
 hash: a348ad3b74ea7200
 coverage: 0.361905
 learned_at: 2026-10-15 22:36:39

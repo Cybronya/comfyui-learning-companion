@@ -4,7 +4,7 @@ name: 啊癫 全新图片跳舞 保留原图背景 Animate Wan2.2_19704932447590
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970493244759044098.json
+file: comfyui_library/workflows/视频生成/图生视频/啊癫 全新图片跳舞 保留原图背景 Animate Wan2.2_1970493244759044098.json
 hash: 91047d18d5d47d4c
 coverage: 0.833333
 learned_at: 2026-10-15 22:31:53

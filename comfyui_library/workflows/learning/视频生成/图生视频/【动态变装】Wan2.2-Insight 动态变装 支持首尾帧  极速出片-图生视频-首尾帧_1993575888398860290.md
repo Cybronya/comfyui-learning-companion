@@ -4,7 +4,7 @@ name: 【动态变装】Wan2.2-Insight 动态变装 支持首尾帧  极速出�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993575888398860290.json
+file: comfyui_library/workflows/视频生成/图生视频/【动态变装】Wan2.2-Insight 动态变装 支持首尾帧  极速出片-图生视频-首尾帧_1993575888398860290.json
 hash: 0b398cac0ef3427c
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:18

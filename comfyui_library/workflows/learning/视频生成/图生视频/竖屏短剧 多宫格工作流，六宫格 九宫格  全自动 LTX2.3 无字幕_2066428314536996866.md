@@ -4,7 +4,7 @@ name: 竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066428314536996866.json
+file: comfyui_library/workflows/视频生成/图生视频/竖屏短剧 多宫格工作流，六宫格 九宫格  全自动 LTX2.3 无字幕_2066428314536996866.json
 hash: 1d8509a2f72bd640
 coverage: 0.772727
 learned_at: 2026-10-15 22:39:49

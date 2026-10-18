@@ -4,7 +4,7 @@ name: LTX2.3-数字人-Distilled-1.1-蒸馏稳定版-避免字幕-超快速-高�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050734311749505025.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-数字人-Distilled-1.1-蒸馏稳定版-避免字幕-超快速-高清-图生视频-自动提示词-三阶采样_2050734311749505025.json
 hash: f8c6e5beae17172b
 coverage: 0.639344
 learned_at: 2026-10-15 22:37:19

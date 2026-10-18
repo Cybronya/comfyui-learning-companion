@@ -4,7 +4,7 @@ name: MAGREF+Phantom+lightx2v一致性图生视频海外商单专用抖胸特效
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927606759882383362.json
+file: comfyui_library/workflows/视频生成/图生视频/MAGREF+Phantom+lightx2v一致性图生视频海外商单专用抖胸特效万相wan2.1_1927606759882383362.json
 hash: e9b1b77f2dca896b
 coverage: 1
 learned_at: 2026-10-15 22:29:55

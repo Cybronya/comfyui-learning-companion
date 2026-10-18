@@ -4,7 +4,7 @@ name: wan2.2 s2v + seevr2_1962480251441950721.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962480251441950721.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 s2v + seevr2_1962480251441950721.json
 hash: 49865c921ce3f730
 coverage: 0.9
 learned_at: 2026-10-15 22:31:31

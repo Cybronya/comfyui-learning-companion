@@ -4,7 +4,7 @@ name: WAN2.1视频生成_720P_1932577426033549314.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1932577426033549314.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.1视频生成_720P_1932577426033549314.json
 hash: 6b29d99021d67601
 coverage: 0.857143
 learned_at: 2026-10-15 22:43:26

@@ -4,7 +4,7 @@ name: （高帧率）Ltx2.3 Licon-MSR全能参考生视频正式版V1_2063444223
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063444223206191106.json
+file: comfyui_library/workflows/视频生成/图生视频/（高帧率）Ltx2.3 Licon-MSR全能参考生视频正式版V1_2063444223206191106.json
 hash: f6fe113d38565930
 coverage: 1
 learned_at: 2026-10-15 22:39:13

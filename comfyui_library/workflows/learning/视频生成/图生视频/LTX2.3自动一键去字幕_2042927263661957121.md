@@ -4,7 +4,7 @@ name: LTX2.3自动一键去字幕_2042927263661957121.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042927263661957121.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3自动一键去字幕_2042927263661957121.json
 hash: f9b3cc620ada3d4e
 coverage: 0.902439
 learned_at: 2026-10-15 22:36:30

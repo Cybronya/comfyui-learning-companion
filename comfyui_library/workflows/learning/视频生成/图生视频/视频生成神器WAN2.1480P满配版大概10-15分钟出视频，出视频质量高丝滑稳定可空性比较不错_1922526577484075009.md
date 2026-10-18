@@ -4,7 +4,7 @@ name: 视频生成神器WAN2.1480P满配版大概10-15分钟出视频，出视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1922526577484075009.json
+file: comfyui_library/workflows/视频生成/图生视频/视频生成神器WAN2.1480P满配版大概10-15分钟出视频，出视频质量高丝滑稳定可空性比较不错_1922526577484075009.json
 hash: b64f9ce8401cae92
 coverage: 0.978723
 learned_at: 2026-10-15 22:29:45

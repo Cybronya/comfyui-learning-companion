@@ -4,7 +4,7 @@ name: LTX2.3导演分镜Single Sample 极速无字幕 显存优化_2058400875038
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058400875038728193.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演分镜Single Sample 极速无字幕 显存优化_2058400875038728193.json
 hash: cb05d81c88755b1b
 coverage: 0.909091
 learned_at: 2026-10-15 22:38:22

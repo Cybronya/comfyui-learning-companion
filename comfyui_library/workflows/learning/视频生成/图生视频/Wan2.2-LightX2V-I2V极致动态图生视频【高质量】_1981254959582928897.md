@@ -4,7 +4,7 @@ name: Wan2.2-LightX2V-I2V极致动态图生视频【高质量】_198125495958292
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981254959582928897.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-LightX2V-I2V极致动态图生视频【高质量】_1981254959582928897.json
 hash: 827bb27aae28bc25
 coverage: 0.969697
 learned_at: 2026-10-15 22:32:36

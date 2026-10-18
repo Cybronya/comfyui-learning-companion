@@ -4,7 +4,7 @@ name: Wan2.2 Rapid-AIO-Mega 多合一极速模型_1968982500666195970.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968982500666195970.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 Rapid-AIO-Mega 多合一极速模型_1968982500666195970.json
 hash: fefee856af5a121b
 coverage: 0.913043
 learned_at: 2026-10-15 22:43:46

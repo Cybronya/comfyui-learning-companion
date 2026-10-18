@@ -4,7 +4,7 @@ name: LTX2.3图生视频Sparkvideo2.0平替短剧漫剧短视频工作流_202989
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029890967838400513.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频Sparkvideo2.0平替短剧漫剧短视频工作流_2029890967838400513.json
 hash: 56c2bc820b95659a
 coverage: 0.906977
 learned_at: 2026-10-15 22:35:24

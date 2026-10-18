@@ -4,7 +4,7 @@ name: Wan2.2 Moe Lightx2v图生视频v1_1978387992047931393.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978387992047931393.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Moe Lightx2v图生视频v1_1978387992047931393.json
 hash: 7ef126ae59698618
 coverage: 0.970588
 learned_at: 2026-10-15 22:32:19

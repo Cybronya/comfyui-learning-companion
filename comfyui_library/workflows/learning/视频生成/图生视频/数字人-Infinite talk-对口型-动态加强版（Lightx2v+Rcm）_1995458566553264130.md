@@ -4,7 +4,7 @@ name: 数字人-Infinite talk-对口型-动态加强版（Lightx2v+Rcm）_199545
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995458566553264130.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人-Infinite talk-对口型-动态加强版（Lightx2v+Rcm）_1995458566553264130.json
 hash: 7dcbf6638967f4a2
 coverage: 0.857143
 learned_at: 2026-10-15 22:33:23

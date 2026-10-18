@@ -4,7 +4,7 @@ name: LTX2.3 director v2.0 IC lora编辑视频_2071771328843173890.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071771328843173890.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 director v2.0 IC lora编辑视频_2071771328843173890.json
 hash: 3ac892a06f748bfb
 coverage: 0.525424
 learned_at: 2026-10-15 22:40:47

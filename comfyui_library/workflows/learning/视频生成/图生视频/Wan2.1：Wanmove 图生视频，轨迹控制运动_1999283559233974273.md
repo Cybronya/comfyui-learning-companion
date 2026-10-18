@@ -4,7 +4,7 @@ name: Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999283559233974273.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1：Wanmove 图生视频，轨迹控制运动_1999283559233974273.json
 hash: 3c2a85a6732275a1
 coverage: 0.965517
 learned_at: 2026-10-15 22:33:36

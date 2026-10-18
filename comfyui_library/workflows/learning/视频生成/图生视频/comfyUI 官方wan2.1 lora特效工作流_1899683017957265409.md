@@ -4,7 +4,7 @@ name: comfyUI 官方wan2.1 lora特效工作流_1899683017957265409.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899683017957265409.json
+file: comfyui_library/workflows/视频生成/图生视频/comfyUI 官方wan2.1 lora特效工作流_1899683017957265409.json
 hash: 0939dedc8e4e3fa7
 coverage: 0.882353
 learned_at: 2026-10-15 22:29:21

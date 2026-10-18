@@ -4,7 +4,7 @@ name: 视频生成 wan2.2 图生视频_2074564212654952450.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074564212654952450.json
+file: comfyui_library/workflows/视频生成/图生视频/视频生成 wan2.2 图生视频_2074564212654952450.json
 hash: 0c499b5e02c7935d
 coverage: 0.896552
 learned_at: 2026-10-15 22:41:17

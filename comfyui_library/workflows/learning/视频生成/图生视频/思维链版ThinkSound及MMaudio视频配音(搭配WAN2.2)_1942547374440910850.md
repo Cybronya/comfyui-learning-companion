@@ -4,7 +4,7 @@ name: 思维链版ThinkSound及MMaudio视频配音(搭配WAN2.2)_194254737444091
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1942547374440910850.json
+file: comfyui_library/workflows/视频生成/图生视频/思维链版ThinkSound及MMaudio视频配音(搭配WAN2.2)_1942547374440910850.json
 hash: 1c86debd78e39c76
 coverage: 0.941176
 learned_at: 2026-10-15 22:30:37

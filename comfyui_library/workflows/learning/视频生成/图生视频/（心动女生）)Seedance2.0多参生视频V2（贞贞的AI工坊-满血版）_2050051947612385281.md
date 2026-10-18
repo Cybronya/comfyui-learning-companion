@@ -4,7 +4,7 @@ name: （心动女生）)Seedance2.0多参生视频V2（贞贞的AI工坊-满血
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050051947612385281.json
+file: comfyui_library/workflows/视频生成/图生视频/（心动女生）)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2050051947612385281.json
 hash: 600e42c1e77a8265
 coverage: 1
 learned_at: 2026-10-15 22:37:17

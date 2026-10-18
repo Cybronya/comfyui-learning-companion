@@ -4,7 +4,7 @@ name: ACE-Step 1.5 + LTX-2：一键制作MV音乐视频！_2019398568087392257.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019398568087392257.json
+file: comfyui_library/workflows/视频生成/图生视频/ACE-Step 1.5 + LTX-2：一键制作MV音乐视频！_2019398568087392257.json
 hash: 943776e51b25dfa8
 coverage: 0.488
 learned_at: 2026-10-15 22:35:02

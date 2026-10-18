@@ -4,7 +4,7 @@ name: LTX2.3 图生视频 人物一致性优化版_2033196066207703042.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033196066207703042.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频 人物一致性优化版_2033196066207703042.json
 hash: a75f04df5715586b
 coverage: 0.975
 learned_at: 2026-10-15 22:35:39

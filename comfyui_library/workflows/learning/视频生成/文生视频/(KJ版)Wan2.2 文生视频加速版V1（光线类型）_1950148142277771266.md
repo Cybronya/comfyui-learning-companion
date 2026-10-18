@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 文生视频加速版V1（光线类型）_195014814227777126
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950148142277771266.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2 文生视频加速版V1（光线类型）_1950148142277771266.json
 hash: 89156aaa249d1b88
 coverage: 0.817518
 learned_at: 2026-10-15 22:43:34

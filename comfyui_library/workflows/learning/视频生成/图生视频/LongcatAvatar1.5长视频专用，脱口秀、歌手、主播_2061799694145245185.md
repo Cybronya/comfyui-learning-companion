@@ -4,7 +4,7 @@ name: LongcatAvatar1.5长视频专用，脱口秀、歌手、主播_206179969414
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061799694145245185.json
+file: comfyui_library/workflows/视频生成/图生视频/LongcatAvatar1.5长视频专用，脱口秀、歌手、主播_2061799694145245185.json
 hash: dc06ec6f55281e20
 coverage: 0.831169
 learned_at: 2026-10-15 22:38:57

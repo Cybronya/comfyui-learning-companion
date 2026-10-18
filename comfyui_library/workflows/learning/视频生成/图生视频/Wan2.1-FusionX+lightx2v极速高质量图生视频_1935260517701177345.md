@@ -4,7 +4,7 @@ name: Wan2.1-FusionX+lightx2v极速高质量图生视频_1935260517701177345.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935260517701177345.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-FusionX+lightx2v极速高质量图生视频_1935260517701177345.json
 hash: 634332ff2e639e11
 coverage: 0.884615
 learned_at: 2026-10-15 22:30:21

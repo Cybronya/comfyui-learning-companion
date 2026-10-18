@@ -4,7 +4,7 @@ name: Wan2.2单帧图像生成洗图（一高噪二低噪）+SeedVR2 Video Upsca
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988100609951821825.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2单帧图像生成洗图（一高噪二低噪）+SeedVR2 Video Upscaler_1988100609951821825.json
 hash: b671ecafec19dfdd
 coverage: 0.897959
 learned_at: 2026-10-15 22:33:01

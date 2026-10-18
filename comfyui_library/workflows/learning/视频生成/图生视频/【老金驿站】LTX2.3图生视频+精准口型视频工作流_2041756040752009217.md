@@ -4,7 +4,7 @@ name: 【老金驿站】LTX2.3图生视频+精准口型视频工作流_204175604
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041756040752009217.json
+file: comfyui_library/workflows/视频生成/图生视频/【老金驿站】LTX2.3图生视频+精准口型视频工作流_2041756040752009217.json
 hash: 56e0dfb01670201f
 coverage: 0.480315
 learned_at: 2026-10-15 22:36:22

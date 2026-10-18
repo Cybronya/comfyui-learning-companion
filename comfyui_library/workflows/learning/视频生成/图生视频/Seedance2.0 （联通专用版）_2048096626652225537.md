@@ -4,7 +4,7 @@ name: Seedance2.0 （联通专用版）_2048096626652225537.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048096626652225537.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 （联通专用版）_2048096626652225537.json
 hash: 6d696ffdf63c3c7c
 coverage: 1
 learned_at: 2026-10-15 22:37:08

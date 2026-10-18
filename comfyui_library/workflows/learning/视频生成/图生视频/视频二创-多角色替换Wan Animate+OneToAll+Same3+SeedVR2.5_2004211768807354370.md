@@ -4,7 +4,7 @@ name: 视频二创-多角色替换Wan Animate+OneToAll+Same3+SeedVR2.5_200421176
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004211768807354370.json
+file: comfyui_library/workflows/视频生成/图生视频/视频二创-多角色替换Wan Animate+OneToAll+Same3+SeedVR2.5_2004211768807354370.json
 hash: d392dfd259640298
 coverage: 0.779412
 learned_at: 2026-10-15 22:33:53

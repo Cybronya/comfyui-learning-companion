@@ -4,7 +4,7 @@ name: 【wan2.1 steady dancer】机器人街舞_2025198301255045122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025198301255045122.json
+file: comfyui_library/workflows/视频生成/图生视频/【wan2.1 steady dancer】机器人街舞_2025198301255045122.json
 hash: d7b7314ddc4a5262
 coverage: 1
 learned_at: 2026-10-15 22:35:12

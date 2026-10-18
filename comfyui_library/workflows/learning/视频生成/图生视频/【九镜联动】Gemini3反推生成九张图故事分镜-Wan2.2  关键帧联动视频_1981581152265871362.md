@@ -4,7 +4,7 @@ name: 【九镜联动】Gemini3反推生成九张图故事分镜-Wan2.2  关键�
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981581152265871362.json
+file: comfyui_library/workflows/视频生成/图生视频/【九镜联动】Gemini3反推生成九张图故事分镜-Wan2.2  关键帧联动视频_1981581152265871362.json
 hash: dc1a2819212cf989
 coverage: 0.771812
 learned_at: 2026-10-15 22:32:38

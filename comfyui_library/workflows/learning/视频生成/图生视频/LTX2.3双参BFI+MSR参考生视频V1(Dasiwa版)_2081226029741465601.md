@@ -4,7 +4,7 @@ name: LTX2.3双参BFI+MSR参考生视频V1(Dasiwa版)_2081226029741465601.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081226029741465601.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3双参BFI+MSR参考生视频V1(Dasiwa版)_2081226029741465601.json
 hash: de0c7bb40177e123
 coverage: 0.840909
 learned_at: 2026-10-15 22:42:20

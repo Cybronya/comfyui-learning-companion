@@ -4,7 +4,7 @@ name: Wan2.2+MultiTlak+Vace控制单人数字人极速版V1（简化版）_19554
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955490259800920066.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+MultiTlak+Vace控制单人数字人极速版V1（简化版）_1955490259800920066.json
 hash: f1adf15abd863d4f
 coverage: 0.82
 learned_at: 2026-10-15 22:31:08

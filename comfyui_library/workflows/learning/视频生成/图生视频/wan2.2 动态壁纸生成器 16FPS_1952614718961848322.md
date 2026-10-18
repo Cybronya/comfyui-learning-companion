@@ -4,7 +4,7 @@ name: wan2.2 动态壁纸生成器 16FPS_1952614718961848322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952614718961848322.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 动态壁纸生成器 16FPS_1952614718961848322.json
 hash: a43f914fd1afd2ad
 coverage: 0.911765
 learned_at: 2026-10-15 22:31:02

@@ -4,7 +4,7 @@ name: Wan2.2 T2V 原生文生视频+智能优化+加速版 Borges_19519670616459
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951967061645971457.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 T2V 原生文生视频+智能优化+加速版 Borges_1951967061645971457.json
 hash: e418266091928cab
 coverage: 0.245614
 learned_at: 2026-10-15 22:43:38

@@ -4,7 +4,7 @@ name: Wan2.2 Animate人物动作迁移工作流搭建-初级篇_2050899529087635
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050899529087635457.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate人物动作迁移工作流搭建-初级篇_2050899529087635457.json
 hash: 3f3f50d740346130
 coverage: 1
 learned_at: 2026-10-15 22:37:20

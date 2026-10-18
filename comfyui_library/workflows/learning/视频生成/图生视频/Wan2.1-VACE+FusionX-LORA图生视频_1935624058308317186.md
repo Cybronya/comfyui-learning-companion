@@ -4,7 +4,7 @@ name: Wan2.1-VACE+FusionX-LORA图生视频_1935624058308317186.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935624058308317186.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-VACE+FusionX-LORA图生视频_1935624058308317186.json
 hash: 9ee2b058b0c8601a
 coverage: 1
 learned_at: 2026-10-15 22:30:23

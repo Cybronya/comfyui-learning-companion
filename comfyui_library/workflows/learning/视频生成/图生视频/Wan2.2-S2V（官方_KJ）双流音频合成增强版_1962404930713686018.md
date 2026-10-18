@@ -4,7 +4,7 @@ name: Wan2.2-S2V（官方_KJ）双流音频合成增强版_1962404930713686018.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962404930713686018.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-S2V（官方_KJ）双流音频合成增强版_1962404930713686018.json
 hash: d65425de4c04a64f
 coverage: 0.673913
 learned_at: 2026-10-15 22:31:30

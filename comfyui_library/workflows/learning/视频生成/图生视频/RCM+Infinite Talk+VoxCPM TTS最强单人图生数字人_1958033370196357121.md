@@ -4,7 +4,7 @@ name: RCM+Infinite Talk+VoxCPM TTS最强单人图生数字人_195803337019635712
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958033370196357121.json
+file: comfyui_library/workflows/视频生成/图生视频/RCM+Infinite Talk+VoxCPM TTS最强单人图生数字人_1958033370196357121.json
 hash: 13410f1583f0e24b
 coverage: 0.973684
 learned_at: 2026-10-15 22:31:20

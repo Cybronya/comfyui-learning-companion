@@ -4,7 +4,7 @@ name: Wan2.2 Remix V3 图生视频_极度丝滑没有之一 akcope_2063634703890
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063634703890075649.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix V3 图生视频_极度丝滑没有之一 akcope_2063634703890075649.json
 hash: 69b7b7929bc0c8e3
 coverage: 0.972973
 learned_at: 2026-10-15 22:39:16

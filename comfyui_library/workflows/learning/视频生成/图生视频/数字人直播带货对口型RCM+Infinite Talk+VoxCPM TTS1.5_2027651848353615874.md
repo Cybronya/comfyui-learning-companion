@@ -4,7 +4,7 @@ name: 数字人直播带货对口型RCM+Infinite Talk+VoxCPM TTS1.5_202765184835
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027651848353615874.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人直播带货对口型RCM+Infinite Talk+VoxCPM TTS1.5_2027651848353615874.json
 hash: 3df1bd311b4a080d
 coverage: 0.945946
 learned_at: 2026-10-15 22:35:17

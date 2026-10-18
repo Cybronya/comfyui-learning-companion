@@ -4,7 +4,7 @@ name: 视频生成视频_图生视频-动作迁移+人脸迁移-wan2.1_195833480
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958334806830551042.json
+file: comfyui_library/workflows/视频生成/图生视频/视频生成视频_图生视频-动作迁移+人脸迁移-wan2.1_1958334806830551042.json
 hash: 7110f14ffd586b22
 coverage: 0.878788
 learned_at: 2026-10-15 22:31:21

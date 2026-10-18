@@ -4,7 +4,7 @@ name: VACE 14b 文生视频（WAN2.1）稳定版_1922872818927812610.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1922872818927812610.json
+file: comfyui_library/workflows/视频生成/文生视频/VACE 14b 文生视频（WAN2.1）稳定版_1922872818927812610.json
 hash: a58d4c0881c0e438
 coverage: 0.947368
 learned_at: 2026-10-15 22:43:23

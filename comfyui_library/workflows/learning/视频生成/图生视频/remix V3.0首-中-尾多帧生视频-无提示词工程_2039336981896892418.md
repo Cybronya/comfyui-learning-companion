@@ -4,7 +4,7 @@ name: remix V3.0首-中-尾多帧生视频-无提示词工程_203933698189689241
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039336981896892418.json
+file: comfyui_library/workflows/视频生成/图生视频/remix V3.0首-中-尾多帧生视频-无提示词工程_2039336981896892418.json
 hash: dfd5af8f86cef99f
 coverage: 0.967742
 learned_at: 2026-10-15 22:36:08

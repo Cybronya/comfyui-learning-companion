@@ -4,7 +4,7 @@ name: 全能图片V1+wan2.2-变胖特效-图生视频-视频补帧放大_1962700
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962700232851079170.json
+file: comfyui_library/workflows/视频生成/图生视频/全能图片V1+wan2.2-变胖特效-图生视频-视频补帧放大_1962700232851079170.json
 hash: fe8aa1d57e6350d3
 coverage: 0.840909
 learned_at: 2026-10-15 22:31:31

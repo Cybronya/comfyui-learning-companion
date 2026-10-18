@@ -4,7 +4,7 @@ name: （光舞贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958885395293483009.json
+file: comfyui_library/workflows/视频生成/文生视频/（光舞贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(高质量横屏720P)_1958885395293483009.json
 hash: e155f490464f58e4
 coverage: 0.782609
 learned_at: 2026-10-15 22:43:42

@@ -4,7 +4,7 @@ name: Wan2.1 Fun Control精准动作_1948402669382696962.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948402669382696962.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 Fun Control精准动作_1948402669382696962.json
 hash: 2ef190c50c0e4de4
 coverage: 0.96875
 learned_at: 2026-10-15 22:30:47

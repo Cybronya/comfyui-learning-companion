@@ -4,7 +4,7 @@ name: 通义万相wan2.2文生视频（14B加速版）_1949971932360916994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949971932360916994.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相wan2.2文生视频（14B加速版）_1949971932360916994.json
 hash: 304ff8ab34b6f3bb
 coverage: 0.913043
 learned_at: 2026-10-15 22:43:33

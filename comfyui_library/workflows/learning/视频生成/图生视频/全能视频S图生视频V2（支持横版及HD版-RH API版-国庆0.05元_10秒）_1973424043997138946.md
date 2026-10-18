@@ -4,7 +4,7 @@ name: 全能视频S图生视频V2（支持横版及HD版-RH API版-国庆0.05元
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973424043997138946.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频S图生视频V2（支持横版及HD版-RH API版-国庆0.05元_10秒）_1973424043997138946.json
 hash: ee233270519e70df
 coverage: 0.571429
 learned_at: 2026-10-15 22:32:02

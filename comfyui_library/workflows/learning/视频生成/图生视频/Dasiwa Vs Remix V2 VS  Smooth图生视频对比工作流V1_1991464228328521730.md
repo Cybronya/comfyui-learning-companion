@@ -4,7 +4,7 @@ name: Dasiwa Vs Remix V2 VS  Smooth图生视频对比工作流V1_199146422832852
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991464228328521730.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa Vs Remix V2 VS  Smooth图生视频对比工作流V1_1991464228328521730.json
 hash: 4011da9fe8d33957
 coverage: 0.764368
 learned_at: 2026-10-15 22:33:13

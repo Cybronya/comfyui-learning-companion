@@ -4,7 +4,7 @@ name: MEGA_V2_AllInOne_Wan2.2_文生视频_1970012767400960001.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1970012767400960001.json
+file: comfyui_library/workflows/视频生成/文生视频/MEGA_V2_AllInOne_Wan2.2_文生视频_1970012767400960001.json
 hash: d110abe367359e4d
 coverage: 0.944444
 learned_at: 2026-10-15 22:43:47

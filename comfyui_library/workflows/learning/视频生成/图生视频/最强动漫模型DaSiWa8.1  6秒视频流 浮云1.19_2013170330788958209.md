@@ -4,7 +4,7 @@ name: 最强动漫模型DaSiWa8.1  6秒视频流 浮云1.19_2013170330788958209.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013170330788958209.json
+file: comfyui_library/workflows/视频生成/图生视频/最强动漫模型DaSiWa8.1  6秒视频流 浮云1.19_2013170330788958209.json
 hash: 2744c4184aba3d69
 coverage: 0.405797
 learned_at: 2026-10-15 22:34:30

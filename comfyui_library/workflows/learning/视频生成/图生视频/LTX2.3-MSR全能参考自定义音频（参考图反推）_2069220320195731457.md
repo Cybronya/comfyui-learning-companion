@@ -4,7 +4,7 @@ name: LTX2.3-MSR全能参考自定义音频（参考图反推）_206922032019573
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069220320195731457.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR全能参考自定义音频（参考图反推）_2069220320195731457.json
 hash: 1b3f89955743c042
 coverage: 0.913793
 learned_at: 2026-10-15 22:40:26

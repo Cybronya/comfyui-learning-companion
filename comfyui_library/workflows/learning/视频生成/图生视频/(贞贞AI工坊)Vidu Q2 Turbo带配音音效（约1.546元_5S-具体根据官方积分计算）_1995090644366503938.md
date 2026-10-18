@@ -4,7 +4,7 @@ name: (贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995090644366503938.json
+file: comfyui_library/workflows/视频生成/图生视频/(贞贞AI工坊)Vidu Q2 Turbo带配音音效（约1.546元_5S-具体根据官方积分计算）_1995090644366503938.json
 hash: 3654be1134b02f18
 coverage: 0.416667
 learned_at: 2026-10-15 22:33:22

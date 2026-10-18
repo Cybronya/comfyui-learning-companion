@@ -4,7 +4,7 @@ name: 044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_200083
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000835179973406721.json
+file: comfyui_library/workflows/视频生成/图生视频/044-SCAIL动作迁移3.0-适配各种风格-单双人均可25-12-16_2000835179973406721.json
 hash: 0e5a085c2fabe917
 coverage: 0.618421
 learned_at: 2026-10-15 22:33:43

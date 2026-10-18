@@ -4,7 +4,7 @@ name: 图生视频（适合Lora搭配）_Wan2.2_2039231092691050497.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039231092691050497.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频（适合Lora搭配）_Wan2.2_2039231092691050497.json
 hash: cca65b07395ec67e
 coverage: 0.622222
 learned_at: 2026-10-15 22:36:07

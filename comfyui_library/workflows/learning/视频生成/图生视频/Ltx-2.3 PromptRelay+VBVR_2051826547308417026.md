@@ -4,7 +4,7 @@ name: Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051826547308417026.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx-2.3 PromptRelay+VBVR_2051826547308417026.json
 hash: 898c6c6e688e6663
 coverage: 0.965517
 learned_at: 2026-10-15 22:37:23

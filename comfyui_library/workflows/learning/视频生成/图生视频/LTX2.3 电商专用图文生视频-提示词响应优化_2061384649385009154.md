@@ -4,7 +4,7 @@ name: LTX2.3 电商专用图文生视频-提示词响应优化_20613846493850091
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061384649385009154.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 电商专用图文生视频-提示词响应优化_2061384649385009154.json
 hash: 16d875cc7cdfadeb
 coverage: 0.87037
 learned_at: 2026-10-15 22:38:53

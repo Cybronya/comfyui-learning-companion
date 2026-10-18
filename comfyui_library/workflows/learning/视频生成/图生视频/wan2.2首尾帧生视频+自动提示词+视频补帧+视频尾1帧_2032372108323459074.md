@@ -4,7 +4,7 @@ name: wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_203237
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032372108323459074.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首尾帧生视频+自动提示词+视频补帧+视频尾1帧_2032372108323459074.json
 hash: a953ff0314b9aa3a
 coverage: 0.496732
 learned_at: 2026-10-15 22:35:36

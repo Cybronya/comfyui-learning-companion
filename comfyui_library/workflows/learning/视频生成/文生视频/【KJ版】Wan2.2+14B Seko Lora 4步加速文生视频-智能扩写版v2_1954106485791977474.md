@@ -4,7 +4,7 @@ name: 【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954106485791977474.json
+file: comfyui_library/workflows/视频生成/文生视频/【KJ版】Wan2.2+14B Seko Lora 4步加速文生视频-智能扩写版v2_1954106485791977474.json
 hash: c5af906c553c57b0
 coverage: 0.738095
 learned_at: 2026-10-15 22:43:39

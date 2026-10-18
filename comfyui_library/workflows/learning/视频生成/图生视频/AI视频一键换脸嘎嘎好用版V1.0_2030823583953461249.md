@@ -4,7 +4,7 @@ name: AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030823583953461249.json
+file: comfyui_library/workflows/视频生成/图生视频/AI视频一键换脸嘎嘎好用版V1.0_2030823583953461249.json
 hash: 1106e3e01d5d81d7
 coverage: 1
 learned_at: 2026-10-15 22:35:28

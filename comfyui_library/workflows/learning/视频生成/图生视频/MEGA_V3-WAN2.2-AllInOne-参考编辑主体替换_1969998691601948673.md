@@ -4,7 +4,7 @@ name: MEGA_V3-WAN2.2-AllInOne-参考编辑主体替换_1969998691601948673.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969998691601948673.json
+file: comfyui_library/workflows/视频生成/图生视频/MEGA_V3-WAN2.2-AllInOne-参考编辑主体替换_1969998691601948673.json
 hash: 4dd491ae543cc8e3
 coverage: 0.923077
 learned_at: 2026-10-15 22:31:51

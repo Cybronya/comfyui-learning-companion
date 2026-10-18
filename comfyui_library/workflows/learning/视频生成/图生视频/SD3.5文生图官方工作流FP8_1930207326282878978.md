@@ -4,7 +4,7 @@ name: SD3.5文生图官方工作流FP8_1930207326282878978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930207326282878978.json
+file: comfyui_library/workflows/视频生成/图生视频/SD3.5文生图官方工作流FP8_1930207326282878978.json
 hash: 1b970ca618ba0161
 coverage: 0.769231
 learned_at: 2026-10-15 22:30:03

@@ -4,7 +4,7 @@ name: 海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054441608346644481.json
+file: comfyui_library/workflows/视频生成/图生视频/海螺 Hailuo2.3 图生视频（RH版）_2054441608346644481.json
 hash: 71ba42b83c55c756
 coverage: 1
 learned_at: 2026-10-15 22:37:47

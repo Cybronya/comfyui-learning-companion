@@ -4,7 +4,7 @@ name: Aniwan+FusionX+VACE打造精致wan2.1加速首尾帧_1933695659235303425.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933695659235303425.json
+file: comfyui_library/workflows/视频生成/图生视频/Aniwan+FusionX+VACE打造精致wan2.1加速首尾帧_1933695659235303425.json
 hash: 705c3dec416509c5
 coverage: 1
 learned_at: 2026-10-15 22:30:14

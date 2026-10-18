@@ -4,7 +4,7 @@ name: 【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913886030926180353.json
+file: comfyui_library/workflows/视频生成/图生视频/【首尾帧】Wan2.1 FLF2V首尾帧工作流-KJ版_1913886030926180353.json
 hash: 2c4f3d65be7c4a2a
 coverage: 1
 learned_at: 2026-10-15 22:29:34

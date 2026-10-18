@@ -4,7 +4,7 @@ name: 图生视频+视频高清放大  最强王者！ Seedance1.5Pro 首尾帧�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021792060466008066.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频+视频高清放大  最强王者！ Seedance1.5Pro 首尾帧图生视频_2021792060466008066.json
 hash: d6ec2dc864ce703c
 coverage: 0.884615
 learned_at: 2026-10-15 22:35:09

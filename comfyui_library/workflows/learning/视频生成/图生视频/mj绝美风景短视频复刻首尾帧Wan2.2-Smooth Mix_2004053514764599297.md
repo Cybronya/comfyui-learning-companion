@@ -4,7 +4,7 @@ name: mj绝美风景短视频复刻首尾帧Wan2.2-Smooth Mix_200405351476459929
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004053514764599297.json
+file: comfyui_library/workflows/视频生成/图生视频/mj绝美风景短视频复刻首尾帧Wan2.2-Smooth Mix_2004053514764599297.json
 hash: b11f193aaa1582dc
 coverage: 0.976744
 learned_at: 2026-10-15 22:33:52

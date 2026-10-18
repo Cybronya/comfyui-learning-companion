@@ -4,7 +4,7 @@ name: Wan2.1 phantom 多人参考_1948595837604626434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1948595837604626434.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1 phantom 多人参考_1948595837604626434.json
 hash: 41795d5713d31574
 coverage: 0.964286
 learned_at: 2026-10-15 22:43:32

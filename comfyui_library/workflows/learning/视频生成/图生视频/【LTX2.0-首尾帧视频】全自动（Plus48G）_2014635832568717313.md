@@ -4,7 +4,7 @@ name: 【LTX2.0-首尾帧视频】全自动（Plus48G）_2014635832568717313.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014635832568717313.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX2.0-首尾帧视频】全自动（Plus48G）_2014635832568717313.json
 hash: b557070e163dcc2b
 coverage: 0.73
 learned_at: 2026-10-15 22:34:36

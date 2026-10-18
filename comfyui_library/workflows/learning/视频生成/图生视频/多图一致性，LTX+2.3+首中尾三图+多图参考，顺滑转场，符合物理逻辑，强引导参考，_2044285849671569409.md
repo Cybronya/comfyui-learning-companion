@@ -4,7 +4,7 @@ name: 多图一致性，LTX+2.3+首中尾三图+多图参考，顺滑转场，�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044285849671569409.json
+file: comfyui_library/workflows/视频生成/图生视频/多图一致性，LTX+2.3+首中尾三图+多图参考，顺滑转场，符合物理逻辑，强引导参考，_2044285849671569409.json
 hash: 5db5267ac24fc4dc
 coverage: 0.943662
 learned_at: 2026-10-15 22:36:36

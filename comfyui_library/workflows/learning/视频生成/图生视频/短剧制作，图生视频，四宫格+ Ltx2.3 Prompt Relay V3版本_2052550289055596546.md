@@ -4,7 +4,7 @@ name: 短剧制作，图生视频，四宫格+ Ltx2.3 Prompt Relay V3版本_2052
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052550289055596546.json
+file: comfyui_library/workflows/视频生成/图生视频/短剧制作，图生视频，四宫格+ Ltx2.3 Prompt Relay V3版本_2052550289055596546.json
 hash: 3f797a8d2294b8c1
 coverage: 0.597701
 learned_at: 2026-10-15 22:37:30

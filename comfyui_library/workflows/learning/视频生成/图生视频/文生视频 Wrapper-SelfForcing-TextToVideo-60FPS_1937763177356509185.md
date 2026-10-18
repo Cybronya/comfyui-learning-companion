@@ -4,7 +4,7 @@ name: 文生视频 Wrapper-SelfForcing-TextToVideo-60FPS_1937763177356509185.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937763177356509185.json
+file: comfyui_library/workflows/视频生成/图生视频/文生视频 Wrapper-SelfForcing-TextToVideo-60FPS_1937763177356509185.json
 hash: a9b7aa19932d6993
 coverage: 0.615385
 learned_at: 2026-10-15 22:30:29

@@ -4,7 +4,7 @@ name: 【全能图片V1双图分镜】Wan2.2-Smooth Mix图像生视频（一键�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979720358234329089.json
+file: comfyui_library/workflows/视频生成/图生视频/【全能图片V1双图分镜】Wan2.2-Smooth Mix图像生视频（一键成片）_1979720358234329089.json
 hash: 483a257440b4d979
 coverage: 0.727273
 learned_at: 2026-10-15 22:32:25

@@ -4,7 +4,7 @@ name: wan2.2图片跳舞视频转绘视频主体替换（Vace+自动提示词）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958077284689334273.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图片跳舞视频转绘视频主体替换（Vace+自动提示词）_1958077284689334273.json
 hash: faa00117124751c9
 coverage: 0.859375
 learned_at: 2026-10-15 22:31:20

@@ -4,7 +4,7 @@ name: Wan Animate2.2动作迁移Move加速版V1_1969195120677580801.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969195120677580801.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2动作迁移Move加速版V1_1969195120677580801.json
 hash: e85fe97e49bd2c26
 coverage: 0.509091
 learned_at: 2026-10-15 22:31:47

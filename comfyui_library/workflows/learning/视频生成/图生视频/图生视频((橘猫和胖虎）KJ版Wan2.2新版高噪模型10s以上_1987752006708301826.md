@@ -4,7 +4,7 @@ name: 图生视频((橘猫和胖虎）KJ版Wan2.2新版高噪模型10s以上_198
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987752006708301826.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频((橘猫和胖虎）KJ版Wan2.2新版高噪模型10s以上_1987752006708301826.json
 hash: ed42f15d03302998
 coverage: 0.981132
 learned_at: 2026-10-15 22:33:00

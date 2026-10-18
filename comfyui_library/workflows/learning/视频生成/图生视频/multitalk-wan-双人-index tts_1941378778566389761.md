@@ -4,7 +4,7 @@ name: multitalk-wan-双人-index tts_1941378778566389761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1941378778566389761.json
+file: comfyui_library/workflows/视频生成/图生视频/multitalk-wan-双人-index tts_1941378778566389761.json
 hash: 72233b6e21937750
 coverage: 0.955556
 learned_at: 2026-10-15 22:30:35

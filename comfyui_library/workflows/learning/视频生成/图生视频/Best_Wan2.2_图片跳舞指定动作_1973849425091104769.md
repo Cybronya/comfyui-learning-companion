@@ -4,7 +4,7 @@ name: Best_Wan2.2_图片跳舞指定动作_1973849425091104769.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973849425091104769.json
+file: comfyui_library/workflows/视频生成/图生视频/Best_Wan2.2_图片跳舞指定动作_1973849425091104769.json
 hash: b736b84611656c98
 coverage: 0.474576
 learned_at: 2026-10-15 22:32:04

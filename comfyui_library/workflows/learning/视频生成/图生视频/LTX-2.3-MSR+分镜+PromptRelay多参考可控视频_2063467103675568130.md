@@ -4,7 +4,7 @@ name: LTX-2.3-MSR+分镜+PromptRelay多参考可控视频_2063467103675568130.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063467103675568130.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-MSR+分镜+PromptRelay多参考可控视频_2063467103675568130.json
 hash: 117b9bc07da03e64
 coverage: 0.449704
 learned_at: 2026-10-15 22:39:13

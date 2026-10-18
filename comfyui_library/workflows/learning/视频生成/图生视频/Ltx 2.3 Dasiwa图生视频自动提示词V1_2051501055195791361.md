@@ -4,7 +4,7 @@ name: Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051501055195791361.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx 2.3 Dasiwa图生视频自动提示词V1_2051501055195791361.json
 hash: 2890dfa917a2a71b
 coverage: 0.940299
 learned_at: 2026-10-15 22:37:22

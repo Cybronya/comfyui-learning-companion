@@ -4,7 +4,7 @@ name: wan2.1 法相魔法幻想 视觉特效_2072700639905406978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072700639905406978.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 法相魔法幻想 视觉特效_2072700639905406978.json
 hash: 26188e60a8c593bb
 coverage: 1
 learned_at: 2026-10-15 22:40:58

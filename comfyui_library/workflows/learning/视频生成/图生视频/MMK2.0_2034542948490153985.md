@@ -4,7 +4,7 @@ name: MMK2.0_2034542948490153985.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034542948490153985.json
+file: comfyui_library/workflows/视频生成/图生视频/MMK2.0_2034542948490153985.json
 hash: c47ca2a9ff881abd
 coverage: 0.888889
 learned_at: 2026-10-15 22:35:45

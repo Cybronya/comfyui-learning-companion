@@ -4,7 +4,7 @@ name: 超快速高清版LTX2.3图生视频，自动提示词。三阶采样_2046
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046030109836054530.json
+file: comfyui_library/workflows/视频生成/图生视频/超快速高清版LTX2.3图生视频，自动提示词。三阶采样_2046030109836054530.json
 hash: 84bf2d2eb6590308
 coverage: 0.616071
 learned_at: 2026-10-15 22:36:53

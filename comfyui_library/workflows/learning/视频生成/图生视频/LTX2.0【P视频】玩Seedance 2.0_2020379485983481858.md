@@ -4,7 +4,7 @@ name: LTX2.0【P视频】玩Seedance 2.0_2020379485983481858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020379485983481858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0【P视频】玩Seedance 2.0_2020379485983481858.json
 hash: 13c866663aba0fd9
 coverage: 0.675
 learned_at: 2026-10-15 22:35:06

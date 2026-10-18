@@ -4,7 +4,7 @@ name: 【动态壁纸】Wan2.2动态壁纸生成器 一键自动循环壁纸MAX�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981177939989499906.json
+file: comfyui_library/workflows/视频生成/图生视频/【动态壁纸】Wan2.2动态壁纸生成器 一键自动循环壁纸MAX版高清_1981177939989499906.json
 hash: df86bc6121ca4395
 coverage: 1
 learned_at: 2026-10-15 22:32:36

@@ -4,7 +4,7 @@ name: (飞龙)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049385674595377154.json
+file: comfyui_library/workflows/视频生成/图生视频/(飞龙)Seedance2.0多参生视频V2（贞贞的AI工坊-满血版）_2049385674595377154.json
 hash: 4610914ff11312ec
 coverage: 1
 learned_at: 2026-10-15 22:37:14

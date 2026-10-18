@@ -4,7 +4,7 @@ name: LTX2.0音频对口型【数字人_唱歌_影视】_2011770027745222658.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011770027745222658.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0音频对口型【数字人_唱歌_影视】_2011770027745222658.json
 hash: 3310513824f4c7c3
 coverage: 0.614583
 learned_at: 2026-10-15 22:34:24

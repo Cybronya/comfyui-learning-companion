@@ -4,7 +4,7 @@ name: Wan2.2-I2V-图生视频-视频提示词全自动反推-工作流_204140956
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041409564251262978.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-I2V-图生视频-视频提示词全自动反推-工作流_2041409564251262978.json
 hash: 003f7301381670e9
 coverage: 0.935484
 learned_at: 2026-10-15 22:36:19

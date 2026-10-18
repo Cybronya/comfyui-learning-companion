@@ -4,7 +4,7 @@ name: wan2.1_lora_官方工作流_K神版_480P_1930311338440998914.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930311338440998914.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_lora_官方工作流_K神版_480P_1930311338440998914.json
 hash: 1cd7ef90731e26fc
 coverage: 0.703704
 learned_at: 2026-10-15 22:30:05

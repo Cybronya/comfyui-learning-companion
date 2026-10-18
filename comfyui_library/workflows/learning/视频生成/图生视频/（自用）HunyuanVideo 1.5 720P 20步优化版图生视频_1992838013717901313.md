@@ -4,7 +4,7 @@ name: （自用）HunyuanVideo 1.5 720P 20步优化版图生视频_1992838013717
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992838013717901313.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）HunyuanVideo 1.5 720P 20步优化版图生视频_1992838013717901313.json
 hash: 95ee0ae70d9713ab
 coverage: 0.866667
 learned_at: 2026-10-15 22:33:17

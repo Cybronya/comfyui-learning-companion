@@ -4,7 +4,7 @@ name: Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_1894981008754
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894981008754343938.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-ComfyUI-Wan2.1(阿里万相)-最强开源文生视频_1894981008754343938.json
 hash: cab71f284be672de
 coverage: 0.933333
 learned_at: 2026-10-15 22:29:17

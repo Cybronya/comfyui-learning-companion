@@ -4,7 +4,7 @@ name: 超自然人物唱歌：不变脸！：LTX2.3 _超自然数字人MV完美�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035706238415151105.json
+file: comfyui_library/workflows/视频生成/图生视频/超自然人物唱歌：不变脸！：LTX2.3 _超自然数字人MV完美（发布版）_2035706238415151105.json
 hash: 3f1f03389a98bb9c
 coverage: 0.66055
 learned_at: 2026-10-15 22:35:50

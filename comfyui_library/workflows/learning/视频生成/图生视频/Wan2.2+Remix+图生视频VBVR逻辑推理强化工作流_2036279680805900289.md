@@ -4,7 +4,7 @@ name: Wan2.2+Remix+图生视频VBVR逻辑推理强化工作流_20362796808059002
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036279680805900289.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Remix+图生视频VBVR逻辑推理强化工作流_2036279680805900289.json
 hash: 48a3d418c64b7cd0
 coverage: 0.727273
 learned_at: 2026-10-15 22:35:51

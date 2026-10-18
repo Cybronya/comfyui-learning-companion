@@ -4,7 +4,7 @@ name: LTX2.3 V2V Camera 视频到视频摄像机参考-图生视频工作流_207
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071613148762824706.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 V2V Camera 视频到视频摄像机参考-图生视频工作流_2071613148762824706.json
 hash: e910afd9a41b0b7b
 coverage: 0.526316
 learned_at: 2026-10-15 22:40:46

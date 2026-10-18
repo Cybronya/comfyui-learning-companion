@@ -4,7 +4,7 @@ name: Wan2.2图生视频极致加速V5+lynx_1979417916649148417.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979417916649148417.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频极致加速V5+lynx_1979417916649148417.json
 hash: 65b654ca5f5a09f3
 coverage: 0.785714
 learned_at: 2026-10-15 22:32:23

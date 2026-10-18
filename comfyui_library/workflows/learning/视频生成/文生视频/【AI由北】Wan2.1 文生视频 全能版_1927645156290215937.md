@@ -4,7 +4,7 @@ name: 【AI由北】Wan2.1 文生视频 全能版_1927645156290215937.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1927645156290215937.json
+file: comfyui_library/workflows/视频生成/文生视频/【AI由北】Wan2.1 文生视频 全能版_1927645156290215937.json
 hash: fe283239a353be7d
 coverage: 1
 learned_at: 2026-10-15 22:43:25

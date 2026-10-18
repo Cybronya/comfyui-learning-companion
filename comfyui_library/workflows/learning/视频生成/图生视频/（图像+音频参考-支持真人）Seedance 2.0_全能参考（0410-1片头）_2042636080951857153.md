@@ -4,7 +4,7 @@ name: （图像+音频参考-支持真人）Seedance 2.0_全能参考（0410-1�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042636080951857153.json
+file: comfyui_library/workflows/视频生成/图生视频/（图像+音频参考-支持真人）Seedance 2.0_全能参考（0410-1片头）_2042636080951857153.json
 hash: a2bf35f1264827c1
 coverage: 0.75
 learned_at: 2026-10-15 22:36:29

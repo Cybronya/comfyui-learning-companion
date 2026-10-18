@@ -4,7 +4,7 @@ name: 捏爆特效 捏扁特效---通义万相wan2.1 图生视频新玩儿法_18
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899003016236941314.json
+file: comfyui_library/workflows/视频生成/图生视频/捏爆特效 捏扁特效---通义万相wan2.1 图生视频新玩儿法_1899003016236941314.json
 hash: 7371534632de7721
 coverage: 0.933333
 learned_at: 2026-10-15 22:29:20

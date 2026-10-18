@@ -4,7 +4,7 @@ name: wan2.2 动作+人物+手部一致性 + 动作模仿  +人物替换_2063096
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063096426468564993.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 动作+人物+手部一致性 + 动作模仿  +人物替换_2063096426468564993.json
 hash: afb3015ea1717f34
 coverage: 0.977273
 learned_at: 2026-10-15 22:39:10

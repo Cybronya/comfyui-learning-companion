@@ -4,7 +4,7 @@ name: 微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_19464280110
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946428011036205057.json
+file: comfyui_library/workflows/视频生成/图生视频/微信动态表情包制作AniWan+Fastwan+LightX64+Radial+Free_1946428011036205057.json
 hash: 2ec5fb4b5fd9ff7c
 coverage: 1
 learned_at: 2026-10-15 22:30:44

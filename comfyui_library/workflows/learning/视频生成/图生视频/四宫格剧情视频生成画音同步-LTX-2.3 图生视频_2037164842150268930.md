@@ -4,7 +4,7 @@ name: 四宫格剧情视频生成画音同步-LTX-2.3 图生视频_2037164842150
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037164842150268930.json
+file: comfyui_library/workflows/视频生成/图生视频/四宫格剧情视频生成画音同步-LTX-2.3 图生视频_2037164842150268930.json
 hash: 83682dae896374e7
 coverage: 0.518868
 learned_at: 2026-10-15 22:35:55

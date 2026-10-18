@@ -4,7 +4,7 @@ name: 千问Qwen-Image-Edit-Rapid-AIO and wan2.2 穿搭_2052291225281150977.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052291225281150977.json
+file: comfyui_library/workflows/视频生成/图生视频/千问Qwen-Image-Edit-Rapid-AIO and wan2.2 穿搭_2052291225281150977.json
 hash: 6746cd29bc73a7ed
 coverage: 0.8
 learned_at: 2026-10-15 22:37:28

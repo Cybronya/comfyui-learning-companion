@@ -4,7 +4,7 @@ name: （自用）Wan2.2高质量图生视频工作流81帧50秒_195257945763266
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952579457632669698.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2高质量图生视频工作流81帧50秒_1952579457632669698.json
 hash: 0e9c3e714e9e28c0
 coverage: 0.90625
 learned_at: 2026-10-15 22:31:02

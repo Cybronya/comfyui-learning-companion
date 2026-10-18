@@ -4,7 +4,7 @@ name: WAN 2.2 Animate人物姿态迁移（720P+30帧+9：16+）_1992946454725672
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992946454725672962.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2 Animate人物姿态迁移（720P+30帧+9：16+）_1992946454725672962.json
 hash: a7194a2dd60b3ea1
 coverage: 0.931818
 learned_at: 2026-10-15 22:33:17

@@ -4,7 +4,7 @@ name: 阿里Fun图生视频运镜控制(Wan2.1)_2043872324994207745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043872324994207745.json
+file: comfyui_library/workflows/视频生成/图生视频/阿里Fun图生视频运镜控制(Wan2.1)_2043872324994207745.json
 hash: cc2da7f6f8f61903
 coverage: 0.774194
 learned_at: 2026-10-15 22:36:34

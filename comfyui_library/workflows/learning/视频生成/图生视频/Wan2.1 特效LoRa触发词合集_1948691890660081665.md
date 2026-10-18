@@ -4,7 +4,7 @@ name: Wan2.1 特效LoRa触发词合集_1948691890660081665.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948691890660081665.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 特效LoRa触发词合集_1948691890660081665.json
 hash: 564ddc145ba8b292
 coverage: 0.952381
 learned_at: 2026-10-15 22:30:48

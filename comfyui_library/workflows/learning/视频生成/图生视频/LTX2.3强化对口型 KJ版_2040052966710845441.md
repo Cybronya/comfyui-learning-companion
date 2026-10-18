@@ -4,7 +4,7 @@ name: LTX2.3强化对口型 KJ版_2040052966710845441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040052966710845441.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3强化对口型 KJ版_2040052966710845441.json
 hash: 033b20ba2c5facb0
 coverage: 0.844444
 learned_at: 2026-10-15 22:36:13

@@ -4,7 +4,7 @@ name: Wan2.2-14B 文生视频_自动提示词_1950420829684285441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950420829684285441.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-14B 文生视频_自动提示词_1950420829684285441.json
 hash: 8a22761fb7e0572a
 coverage: 0.836735
 learned_at: 2026-10-15 22:43:35

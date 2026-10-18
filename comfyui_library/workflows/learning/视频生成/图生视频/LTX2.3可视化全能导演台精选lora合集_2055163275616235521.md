@@ -4,7 +4,7 @@ name: LTX2.3可视化全能导演台精选lora合集_2055163275616235521.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055163275616235521.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3可视化全能导演台精选lora合集_2055163275616235521.json
 hash: b8dd3afb4e4ece28
 coverage: 0.779412
 learned_at: 2026-10-15 22:37:55

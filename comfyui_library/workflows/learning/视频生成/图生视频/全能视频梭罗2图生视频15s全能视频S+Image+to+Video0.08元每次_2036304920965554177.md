@@ -4,7 +4,7 @@ name: 全能视频梭罗2图生视频15s全能视频S+Image+to+Video0.08元每�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036304920965554177.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频梭罗2图生视频15s全能视频S+Image+to+Video0.08元每次_2036304920965554177.json
 hash: e20af337882176a2
 coverage: 1
 learned_at: 2026-10-15 22:35:51

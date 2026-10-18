@@ -4,7 +4,7 @@ name: Wan2.1 人物小丑面具特效｜i2V_1911952901085036546.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911952901085036546.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 人物小丑面具特效｜i2V_1911952901085036546.json
 hash: 967f1188215b398e
 coverage: 1
 learned_at: 2026-10-15 22:29:31

@@ -4,7 +4,7 @@ name: 小红书[FireRed-Image-Edit1.1] 三图编辑_2030684351255547905.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030684351255547905.json
+file: comfyui_library/workflows/视频生成/图生视频/小红书[FireRed-Image-Edit1.1] 三图编辑_2030684351255547905.json
 hash: b93f709ab02cdf72
 coverage: 0.875
 learned_at: 2026-10-15 22:35:27

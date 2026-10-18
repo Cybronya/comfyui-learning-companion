@@ -4,7 +4,7 @@ name: Wan2.2 14B+LightX2V超极速图生视频_1952642819863318529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952642819863318529.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B+LightX2V超极速图生视频_1952642819863318529.json
 hash: 443af91623211996
 coverage: 1
 learned_at: 2026-10-15 22:31:03

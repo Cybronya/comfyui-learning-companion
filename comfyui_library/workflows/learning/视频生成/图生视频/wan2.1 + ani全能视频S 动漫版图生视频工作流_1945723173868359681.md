@@ -4,7 +4,7 @@ name: wan2.1 + ani全能视频S 动漫版图生视频工作流_19457231738683596
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945723173868359681.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 + ani全能视频S 动漫版图生视频工作流_1945723173868359681.json
 hash: e200503395e81221
 coverage: 0.954545
 learned_at: 2026-10-15 22:30:42

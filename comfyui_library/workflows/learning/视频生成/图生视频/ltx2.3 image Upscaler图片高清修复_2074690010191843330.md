@@ -4,7 +4,7 @@ name: ltx2.3 image Upscaler图片高清修复_2074690010191843330.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074690010191843330.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3 image Upscaler图片高清修复_2074690010191843330.json
 hash: 68852c2365fb80bc
 coverage: 0.764706
 learned_at: 2026-10-15 22:41:17

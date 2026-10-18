@@ -4,7 +4,7 @@ name: LTX2.3 图生视频  音画同步 效果炸裂_2044781207388430337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044781207388430337.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频  音画同步 效果炸裂_2044781207388430337.json
 hash: dc8380d18335f1ea
 coverage: 0.660714
 learned_at: 2026-10-15 22:36:41

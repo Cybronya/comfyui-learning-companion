@@ -4,7 +4,7 @@ name: LTX2.3-视频自动去字幕_去水印_模糊修复_高清放大（4合1�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053854443006898178.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-视频自动去字幕_去水印_模糊修复_高清放大（4合1）_2053854443006898178.json
 hash: c9ff3b80f0c0bb74
 coverage: 0.9
 learned_at: 2026-10-15 22:37:43

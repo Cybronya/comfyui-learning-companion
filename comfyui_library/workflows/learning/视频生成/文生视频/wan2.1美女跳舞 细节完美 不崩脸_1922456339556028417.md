@@ -4,7 +4,7 @@ name: wan2.1美女跳舞 细节完美 不崩脸_1922456339556028417.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1922456339556028417.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1美女跳舞 细节完美 不崩脸_1922456339556028417.json
 hash: b7609b4bf267f503
 coverage: 1
 learned_at: 2026-10-15 22:43:23

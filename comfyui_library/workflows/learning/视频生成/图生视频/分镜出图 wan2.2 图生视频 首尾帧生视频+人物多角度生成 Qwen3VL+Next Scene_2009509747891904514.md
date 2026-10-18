@@ -4,7 +4,7 @@ name: 分镜出图 wan2.2 图生视频 首尾帧生视频+人物多角度生成 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009509747891904514.json
+file: comfyui_library/workflows/视频生成/图生视频/分镜出图 wan2.2 图生视频 首尾帧生视频+人物多角度生成 Qwen3VL+Next Scene_2009509747891904514.json
 hash: da085380ab712f19
 coverage: 0.77
 learned_at: 2026-10-15 22:34:13

@@ -4,7 +4,7 @@ name: 极速视频换脸FusionX+vace万相wan2.1_1933785569786777602.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933785569786777602.json
+file: comfyui_library/workflows/视频生成/图生视频/极速视频换脸FusionX+vace万相wan2.1_1933785569786777602.json
 hash: b0cba3100bb7b4a8
 coverage: 1
 learned_at: 2026-10-15 22:30:14

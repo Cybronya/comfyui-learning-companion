@@ -4,7 +4,7 @@ name: 【人物替换】Scail-2+高阶工作流Plus+V4.2版【长视频不崩坏
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078094936641200130.json
+file: comfyui_library/workflows/视频生成/图生视频/【人物替换】Scail-2+高阶工作流Plus+V4.2版【长视频不崩坏+动作迁移+背景替换】_2078094936641200130.json
 hash: 21eabdea5863908f
 coverage: 0.434783
 learned_at: 2026-10-15 22:41:49

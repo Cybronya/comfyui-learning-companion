@@ -4,7 +4,7 @@ name: LTX2.3+图生视频+提示词扩写自动优化版+数字人说话唱歌+_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072475992752484353.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+图生视频+提示词扩写自动优化版+数字人说话唱歌+_2072475992752484353.json
 hash: e5ec9f072f30498e
 coverage: 0.952381
 learned_at: 2026-10-15 22:40:55

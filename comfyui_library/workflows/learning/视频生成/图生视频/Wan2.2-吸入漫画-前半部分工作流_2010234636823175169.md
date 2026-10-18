@@ -4,7 +4,7 @@ name: Wan2.2-吸入漫画-前半部分工作流_2010234636823175169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010234636823175169.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-吸入漫画-前半部分工作流_2010234636823175169.json
 hash: b4c6b18ce082e414
 coverage: 0.946429
 learned_at: 2026-10-15 22:34:16

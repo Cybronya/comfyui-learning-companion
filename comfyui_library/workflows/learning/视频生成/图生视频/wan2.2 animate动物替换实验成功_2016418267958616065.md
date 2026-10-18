@@ -4,7 +4,7 @@ name: wan2.2 animate动物替换实验成功_2016418267958616065.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016418267958616065.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 animate动物替换实验成功_2016418267958616065.json
 hash: d63f40e0e7bf6b30
 coverage: 0.537634
 learned_at: 2026-10-15 22:34:42

@@ -4,7 +4,7 @@ name: LTX-2.3-MSR_V2参考生视频调优版-自动提示词-V1.1_20782705654330
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078270565433044994.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3-MSR_V2参考生视频调优版-自动提示词-V1.1_2078270565433044994.json
 hash: 6717c6db9559af9a
 coverage: 0.459459
 learned_at: 2026-10-15 22:41:50

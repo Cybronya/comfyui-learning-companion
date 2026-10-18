@@ -4,7 +4,7 @@ name: Wan2.2美女舞蹈视频动作迁移_1964248050468274178.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1964248050468274178.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2美女舞蹈视频动作迁移_1964248050468274178.json
 hash: 555663ba32e23bcc
 coverage: 0.62963
 learned_at: 2026-10-15 22:43:44

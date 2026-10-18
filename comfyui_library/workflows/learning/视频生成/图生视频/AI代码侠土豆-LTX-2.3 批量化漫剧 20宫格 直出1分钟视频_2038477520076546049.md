@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_203
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038477520076546049.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX-2.3 批量化漫剧 20宫格 直出1分钟视频_2038477520076546049.json
 hash: 3a562fc0f1e47784
 coverage: 0.588785
 learned_at: 2026-10-15 22:36:02

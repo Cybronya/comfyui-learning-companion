@@ -4,7 +4,7 @@ name: Wan2.2 14B极速首尾帧视频生成_2053748789495771138.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053748789495771138.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B极速首尾帧视频生成_2053748789495771138.json
 hash: d9903179d575a51b
 coverage: 0.9
 learned_at: 2026-10-15 22:37:43

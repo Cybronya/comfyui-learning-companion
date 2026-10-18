@@ -4,7 +4,7 @@ name: LTX+2.0+音画同步-数字人，唱歌_2014646400780345345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014646400780345345.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX+2.0+音画同步-数字人，唱歌_2014646400780345345.json
 hash: bfe6554e1614e8ea
 coverage: 0.888889
 learned_at: 2026-10-15 22:34:36

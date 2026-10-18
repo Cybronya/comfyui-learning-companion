@@ -4,7 +4,7 @@ name: (可爱版)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981057152716509186.json
+file: comfyui_library/workflows/视频生成/图生视频/(可爱版)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注意力机制）_1981057152716509186.json
 hash: 76a9fe78a9405de0
 coverage: 0.771429
 learned_at: 2026-10-15 22:32:36

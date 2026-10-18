@@ -4,7 +4,7 @@ name: ltx2.3电商 首尾帧  服装行业  服装展示_2082418673716912130.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082418673716912130.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3电商 首尾帧  服装行业  服装展示_2082418673716912130.json
 hash: 1d6f94f774f76796
 coverage: 0.629412
 learned_at: 2026-10-15 22:42:31

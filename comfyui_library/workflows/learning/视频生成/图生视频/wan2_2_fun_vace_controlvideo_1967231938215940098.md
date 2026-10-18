@@ -4,7 +4,7 @@ name: wan2_2_fun_vace_controlvideo_1967231938215940098.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967231938215940098.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2_2_fun_vace_controlvideo_1967231938215940098.json
 hash: d9c73556cdd95e2a
 coverage: 0.530303
 learned_at: 2026-10-15 22:31:40

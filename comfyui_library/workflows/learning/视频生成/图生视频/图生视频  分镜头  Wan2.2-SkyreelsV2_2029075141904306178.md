@@ -4,7 +4,7 @@ name: 图生视频  分镜头  Wan2.2-SkyreelsV2_2029075141904306178.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029075141904306178.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频  分镜头  Wan2.2-SkyreelsV2_2029075141904306178.json
 hash: 5d6457d80b6030c9
 coverage: 0.662338
 learned_at: 2026-10-15 22:35:21

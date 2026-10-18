@@ -4,7 +4,7 @@ name: 「AI定帧术」让你的手办跳街舞！Wan2.2无限时长舞蹈视频
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961071998686445569.json
+file: comfyui_library/workflows/视频生成/图生视频/「AI定帧术」让你的手办跳街舞！Wan2.2无限时长舞蹈视频生成教程_1961071998686445569.json
 hash: ecbe93e74d6dd0b9
 coverage: 0.882353
 learned_at: 2026-10-15 22:31:28

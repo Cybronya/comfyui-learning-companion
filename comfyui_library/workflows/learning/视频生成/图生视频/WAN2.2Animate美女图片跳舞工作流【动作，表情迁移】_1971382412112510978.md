@@ -4,7 +4,7 @@ name: WAN2.2Animate美女图片跳舞工作流【动作，表情迁移】_197138
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971382412112510978.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2Animate美女图片跳舞工作流【动作，表情迁移】_1971382412112510978.json
 hash: 527c28976706aeec
 coverage: 0.695652
 learned_at: 2026-10-15 22:31:56

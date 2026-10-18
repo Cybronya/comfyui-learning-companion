@@ -4,7 +4,7 @@ name: Ltx2.3-多镜头-PromptRelay控制时间（KJ版）_2046850819689029634.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046850819689029634.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3-多镜头-PromptRelay控制时间（KJ版）_2046850819689029634.json
 hash: 3966686bdb31c022
 coverage: 0.674419
 learned_at: 2026-10-15 22:37:01

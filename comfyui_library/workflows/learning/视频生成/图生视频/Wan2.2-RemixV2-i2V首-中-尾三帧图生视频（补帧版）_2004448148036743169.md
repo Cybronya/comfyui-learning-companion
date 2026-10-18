@@ -4,7 +4,7 @@ name: Wan2.2-RemixV2-i2V首-中-尾三帧图生视频（补帧版）_20044481480
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004448148036743169.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-RemixV2-i2V首-中-尾三帧图生视频（补帧版）_2004448148036743169.json
 hash: 3f1347ed5fa9a770
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:54

@@ -4,7 +4,7 @@ name: 通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950555101742223362.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相wan2.2文生视频（kj加速版6步+提示词自动优化）_1950555101742223362.json
 hash: e0903154de31e994
 coverage: 0.805556
 learned_at: 2026-10-15 22:43:36

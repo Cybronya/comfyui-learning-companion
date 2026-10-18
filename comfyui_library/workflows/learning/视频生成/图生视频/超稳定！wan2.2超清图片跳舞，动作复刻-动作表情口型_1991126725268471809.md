@@ -4,7 +4,7 @@ name: 超稳定！wan2.2超清图片跳舞，动作复刻-动作表情口型_199
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991126725268471809.json
+file: comfyui_library/workflows/视频生成/图生视频/超稳定！wan2.2超清图片跳舞，动作复刻-动作表情口型_1991126725268471809.json
 hash: 10a9f946396649e2
 coverage: 0.563636
 learned_at: 2026-10-15 22:33:12

@@ -4,7 +4,7 @@ name: wan2.2 animate动物替换+姿态迁移_1976916291078524930.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1976916291078524930.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 animate动物替换+姿态迁移_1976916291078524930.json
 hash: 5f902e22344d82d3
 coverage: 0.537634
 learned_at: 2026-10-15 22:32:13

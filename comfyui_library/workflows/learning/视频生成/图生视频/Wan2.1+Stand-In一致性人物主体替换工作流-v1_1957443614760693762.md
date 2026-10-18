@@ -4,7 +4,7 @@ name: Wan2.1+Stand-In一致性人物主体替换工作流-v1_1957443614760693762
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957443614760693762.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1+Stand-In一致性人物主体替换工作流-v1_1957443614760693762.json
 hash: 71aa3a98d3d1584c
 coverage: 0.86747
 learned_at: 2026-10-15 22:31:16

@@ -4,7 +4,7 @@ name: LTX2.3画音同步图生视频-基本无字幕-手动提示词版_20330798
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033079847349653505.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3画音同步图生视频-基本无字幕-手动提示词版_2033079847349653505.json
 hash: abbb8477bf7e49c4
 coverage: 0.851852
 learned_at: 2026-10-15 22:35:38

@@ -4,7 +4,7 @@ name: 新Wan2.1卡通人物跳舞机V3.0_1932026704078766082.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1932026704078766082.json
+file: comfyui_library/workflows/视频生成/图生视频/新Wan2.1卡通人物跳舞机V3.0_1932026704078766082.json
 hash: 2aee121a879709bd
 coverage: 0.745098
 learned_at: 2026-10-15 22:30:11

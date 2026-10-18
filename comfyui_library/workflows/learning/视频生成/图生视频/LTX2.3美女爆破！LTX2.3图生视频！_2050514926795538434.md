@@ -4,7 +4,7 @@ name: LTX2.3美女爆破！LTX2.3图生视频！_2050514926795538434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050514926795538434.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3美女爆破！LTX2.3图生视频！_2050514926795538434.json
 hash: 458f97b6eae77ebc
 coverage: 0.756757
 learned_at: 2026-10-15 22:37:18

@@ -4,7 +4,7 @@ name: FantasyPortrait音频驱动表情迁移-泛化版wan2.1_205192374941861068
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051923749418610689.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyPortrait音频驱动表情迁移-泛化版wan2.1_2051923749418610689.json
 hash: 92af5a8c6b985819
 coverage: 0.75
 learned_at: 2026-10-15 22:37:24

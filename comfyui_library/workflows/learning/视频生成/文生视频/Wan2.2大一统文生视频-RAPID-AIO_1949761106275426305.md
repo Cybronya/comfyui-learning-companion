@@ -4,7 +4,7 @@ name: Wan2.2大一统文生视频-RAPID-AIO_1949761106275426305.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949761106275426305.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2大一统文生视频-RAPID-AIO_1949761106275426305.json
 hash: 1458a07567ffd31a
 coverage: 0.95
 learned_at: 2026-10-15 22:43:33

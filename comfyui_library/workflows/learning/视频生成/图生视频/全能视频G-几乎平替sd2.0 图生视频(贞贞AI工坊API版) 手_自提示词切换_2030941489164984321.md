@@ -4,7 +4,7 @@ name: 全能视频G-几乎平替sd2.0 图生视频(贞贞AI工坊API版) 手_自
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030941489164984321.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频G-几乎平替sd2.0 图生视频(贞贞AI工坊API版) 手_自提示词切换_2030941489164984321.json
 hash: 24e691161b2d502d
 coverage: 0.5
 learned_at: 2026-10-15 22:35:28

@@ -4,7 +4,7 @@ name: 【视频】Wan2.2首尾帧一键生成视频_1952674570933309442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952674570933309442.json
+file: comfyui_library/workflows/视频生成/图生视频/【视频】Wan2.2首尾帧一键生成视频_1952674570933309442.json
 hash: 37911b19f2051ca5
 coverage: 0.825
 learned_at: 2026-10-15 22:31:03

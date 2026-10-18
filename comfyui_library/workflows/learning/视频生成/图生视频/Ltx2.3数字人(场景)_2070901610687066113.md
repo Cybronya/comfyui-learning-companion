@@ -4,7 +4,7 @@ name: Ltx2.3数字人(场景)_2070901610687066113.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070901610687066113.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3数字人(场景)_2070901610687066113.json
 hash: be71dd800c345d35
 coverage: 0.676471
 learned_at: 2026-10-15 22:40:43

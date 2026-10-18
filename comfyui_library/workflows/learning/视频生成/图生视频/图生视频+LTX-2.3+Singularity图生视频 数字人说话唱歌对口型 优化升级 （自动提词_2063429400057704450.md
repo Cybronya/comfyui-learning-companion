@@ -4,7 +4,7 @@ name: 图生视频+LTX-2.3+Singularity图生视频 数字人说话唱歌对口�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063429400057704450.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频+LTX-2.3+Singularity图生视频 数字人说话唱歌对口型 优化升级 （自动提词_2063429400057704450.json
 hash: 967304e91de7b31f
 coverage: 0.961538
 learned_at: 2026-10-15 22:39:13

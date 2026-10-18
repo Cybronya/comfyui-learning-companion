@@ -4,7 +4,7 @@ name: LTX2.3 创新导演剪辑流，创意无限！二创神器！_205548287538
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055482875381862402.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 创新导演剪辑流，创意无限！二创神器！_2055482875381862402.json
 hash: 1aa90c5da02e4260
 coverage: 1
 learned_at: 2026-10-15 22:37:57

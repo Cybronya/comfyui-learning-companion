@@ -4,7 +4,7 @@ name: Z-image Base & Turbo+Klein三重采样图生图_2063550240493498369.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063550240493498369.json
+file: comfyui_library/workflows/视频生成/图生视频/Z-image Base & Turbo+Klein三重采样图生图_2063550240493498369.json
 hash: 242d0ddf17a6a497
 coverage: 0.916667
 learned_at: 2026-10-15 22:39:15

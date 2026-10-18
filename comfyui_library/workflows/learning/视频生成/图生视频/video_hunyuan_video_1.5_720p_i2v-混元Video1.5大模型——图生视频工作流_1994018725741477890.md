@@ -4,7 +4,7 @@ name: video_hunyuan_video_1.5_720p_i2v-混元Video1.5大模型——图生视频
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994018725741477890.json
+file: comfyui_library/workflows/视频生成/图生视频/video_hunyuan_video_1.5_720p_i2v-混元Video1.5大模型——图生视频工作流_1994018725741477890.json
 hash: f84cd6d9b407259c
 coverage: 0.814815
 learned_at: 2026-10-15 22:33:20

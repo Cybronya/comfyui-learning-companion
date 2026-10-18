@@ -4,7 +4,7 @@ name: Wan2.2 Smooth  V1模型VS V2模型图生视频对比_2010545068549083138.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010545068549083138.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Smooth  V1模型VS V2模型图生视频对比_2010545068549083138.json
 hash: d2ff72fd4f43468f
 coverage: 0.764706
 learned_at: 2026-10-15 22:34:17

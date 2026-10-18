@@ -4,7 +4,7 @@ name: Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954008121176051713.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_Funcontrol图生视频（动作迁移）_1954008121176051713.json
 hash: cdf033f88080934d
 coverage: 0.53125
 learned_at: 2026-10-15 22:31:05

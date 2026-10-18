@@ -4,7 +4,7 @@ name: wan2.x Palingenesis 图生视频_1975470690600136706.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975470690600136706.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.x Palingenesis 图生视频_1975470690600136706.json
 hash: 1a4391a684ddcc32
 coverage: 0.904762
 learned_at: 2026-10-15 22:32:08

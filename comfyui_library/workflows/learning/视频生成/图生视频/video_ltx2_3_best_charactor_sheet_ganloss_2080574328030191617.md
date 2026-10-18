@@ -4,7 +4,7 @@ name: video_ltx2_3_best_charactor_sheet_ganloss_2080574328030191617.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080574328030191617.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_best_charactor_sheet_ganloss_2080574328030191617.json
 hash: eeff95a13ddf111a
 coverage: 0.446154
 learned_at: 2026-10-15 22:42:15

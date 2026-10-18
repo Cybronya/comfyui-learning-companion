@@ -4,7 +4,7 @@ name: Wan2.1-Tile视频高清控制_1899280548576055298.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899280548576055298.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-Tile视频高清控制_1899280548576055298.json
 hash: 945e112907a15d70
 coverage: 1
 learned_at: 2026-10-15 22:29:21

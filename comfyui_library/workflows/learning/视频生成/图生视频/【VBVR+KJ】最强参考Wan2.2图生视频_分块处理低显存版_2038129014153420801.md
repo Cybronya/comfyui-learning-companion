@@ -4,7 +4,7 @@ name: 【VBVR+KJ】最强参考Wan2.2图生视频_分块处理低显存版_20381
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038129014153420801.json
+file: comfyui_library/workflows/视频生成/图生视频/【VBVR+KJ】最强参考Wan2.2图生视频_分块处理低显存版_2038129014153420801.json
 hash: 7c313ff9e5ef4c5c
 coverage: 0.965517
 learned_at: 2026-10-15 22:36:00

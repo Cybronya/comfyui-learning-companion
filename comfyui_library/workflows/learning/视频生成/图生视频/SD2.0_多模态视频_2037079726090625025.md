@@ -4,7 +4,7 @@ name: SD2.0_多模态视频_2037079726090625025.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037079726090625025.json
+file: comfyui_library/workflows/视频生成/图生视频/SD2.0_多模态视频_2037079726090625025.json
 hash: c1a2984c7d4c4147
 coverage: 1
 learned_at: 2026-10-15 22:35:55

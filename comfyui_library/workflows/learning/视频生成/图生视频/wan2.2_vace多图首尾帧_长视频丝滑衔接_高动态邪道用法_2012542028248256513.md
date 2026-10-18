@@ -4,7 +4,7 @@ name: wan2.2_vace多图首尾帧_长视频丝滑衔接_高动态邪道用法_201
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012542028248256513.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_vace多图首尾帧_长视频丝滑衔接_高动态邪道用法_2012542028248256513.json
 hash: b66e5e326be9111c
 coverage: 0.46114
 learned_at: 2026-10-15 22:34:27

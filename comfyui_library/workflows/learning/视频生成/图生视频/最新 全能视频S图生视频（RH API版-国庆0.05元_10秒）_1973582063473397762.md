@@ -4,7 +4,7 @@ name: 最新 全能视频S图生视频（RH API版-国庆0.05元_10秒）_197358
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973582063473397762.json
+file: comfyui_library/workflows/视频生成/图生视频/最新 全能视频S图生视频（RH API版-国庆0.05元_10秒）_1973582063473397762.json
 hash: 2ea6eb5cf926c63e
 coverage: 0.7
 learned_at: 2026-10-15 22:32:03

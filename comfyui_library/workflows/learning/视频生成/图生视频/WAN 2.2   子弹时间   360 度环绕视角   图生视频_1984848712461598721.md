@@ -4,7 +4,7 @@ name: WAN 2.2   子弹时间   360 度环绕视角   图生视频_19848487124615
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984848712461598721.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2   子弹时间   360 度环绕视角   图生视频_1984848712461598721.json
 hash: 4b0499be641f8621
 coverage: 0.869565
 learned_at: 2026-10-15 22:32:49

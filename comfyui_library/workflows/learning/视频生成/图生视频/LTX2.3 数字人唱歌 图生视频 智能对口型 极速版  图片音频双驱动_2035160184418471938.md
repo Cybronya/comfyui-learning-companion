@@ -4,7 +4,7 @@ name: LTX2.3 数字人唱歌 图生视频 智能对口型 极速版  图片音�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035160184418471938.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 数字人唱歌 图生视频 智能对口型 极速版  图片音频双驱动_2035160184418471938.json
 hash: 006cd553f2c08ac4
 coverage: 0.877193
 learned_at: 2026-10-15 22:35:47

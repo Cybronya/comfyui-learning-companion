@@ -4,7 +4,7 @@ name: LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1897684164685320194.json
+file: comfyui_library/workflows/视频生成/图生视频/LTXV0.95优化版超音速抽卡图生视频工作流_1897684164685320194.json
 hash: 984dfc7883105467
 coverage: 0.9375
 learned_at: 2026-10-15 22:29:19

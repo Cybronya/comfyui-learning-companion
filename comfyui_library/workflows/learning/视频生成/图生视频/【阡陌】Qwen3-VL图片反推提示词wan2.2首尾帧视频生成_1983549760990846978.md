@@ -4,7 +4,7 @@ name: 【阡陌】Qwen3-VL图片反推提示词wan2.2首尾帧视频生成_19835
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983549760990846978.json
+file: comfyui_library/workflows/视频生成/图生视频/【阡陌】Qwen3-VL图片反推提示词wan2.2首尾帧视频生成_1983549760990846978.json
 hash: 9884260bfe80b78b
 coverage: 0.931034
 learned_at: 2026-10-15 22:32:45

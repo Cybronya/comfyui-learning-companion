@@ -4,7 +4,7 @@ name: WAN2.2-首尾帧视频-6步极速版-KJ版工作流_2014217620324618242.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014217620324618242.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-首尾帧视频-6步极速版-KJ版工作流_2014217620324618242.json
 hash: 19af600725f2d15e
 coverage: 0.826087
 learned_at: 2026-10-15 22:34:34

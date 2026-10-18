@@ -4,7 +4,7 @@ name: AI短剧角色表演万相2.2 ​高动态官方图生视频_1961337086731
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961337086731337730.json
+file: comfyui_library/workflows/视频生成/图生视频/AI短剧角色表演万相2.2 ​高动态官方图生视频_1961337086731337730.json
 hash: 467e5a35ea1a5571
 coverage: 0.959184
 learned_at: 2026-10-15 22:31:28

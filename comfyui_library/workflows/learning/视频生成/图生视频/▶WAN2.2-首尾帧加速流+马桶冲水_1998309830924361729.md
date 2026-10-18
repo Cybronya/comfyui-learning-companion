@@ -4,7 +4,7 @@ name: ▶WAN2.2-首尾帧加速流+马桶冲水_1998309830924361729.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998309830924361729.json
+file: comfyui_library/workflows/视频生成/图生视频/▶WAN2.2-首尾帧加速流+马桶冲水_1998309830924361729.json
 hash: cbb140de5f18e226
 coverage: 0.955556
 learned_at: 2026-10-15 22:33:31

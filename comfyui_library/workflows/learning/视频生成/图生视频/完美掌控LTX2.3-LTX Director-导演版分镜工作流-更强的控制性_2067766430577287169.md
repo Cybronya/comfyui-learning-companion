@@ -4,7 +4,7 @@ name: 完美掌控LTX2.3-LTX Director-导演版分镜工作流-更强的控制�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067766430577287169.json
+file: comfyui_library/workflows/视频生成/图生视频/完美掌控LTX2.3-LTX Director-导演版分镜工作流-更强的控制性_2067766430577287169.json
 hash: 8c442a834525bc96
 coverage: 1
 learned_at: 2026-10-15 22:40:12

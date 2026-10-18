@@ -4,7 +4,7 @@ name: Animate+Wan2.2 视频换装 模特服装更换_1970644180198453250.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1970644180198453250.json
+file: comfyui_library/workflows/视频生成/文生视频/Animate+Wan2.2 视频换装 模特服装更换_1970644180198453250.json
 hash: 1f5933f9eda50fec
 coverage: 0.566667
 learned_at: 2026-10-15 22:43:47

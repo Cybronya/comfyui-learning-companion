@@ -4,7 +4,7 @@ name: Ltx2.3 PromptRelaySmart动作提示词控制_2054919936321040385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054919936321040385.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 PromptRelaySmart动作提示词控制_2054919936321040385.json
 hash: 6fcbac09bc9c53fd
 coverage: 0.90625
 learned_at: 2026-10-15 22:37:53

@@ -4,7 +4,7 @@ name: wan2.1-FUN-小姐姐跳舞V1（详细讲解使用）_1912620115643564034.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912620115643564034.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-FUN-小姐姐跳舞V1（详细讲解使用）_1912620115643564034.json
 hash: 40c82d1fb2156a13
 coverage: 0.692308
 learned_at: 2026-10-15 22:29:32

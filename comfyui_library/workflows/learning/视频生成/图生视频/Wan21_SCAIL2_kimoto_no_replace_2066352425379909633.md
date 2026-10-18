@@ -4,7 +4,7 @@ name: Wan21_SCAIL2_kimoto_no_replace_2066352425379909633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066352425379909633.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan21_SCAIL2_kimoto_no_replace_2066352425379909633.json
 hash: a57c6fa3c4dcb927
 coverage: 0.375
 learned_at: 2026-10-15 22:39:48

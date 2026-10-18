@@ -4,7 +4,7 @@ name: 数字人音频驱动模型 Inifinte Talk  Wan 2.1 i2v 480p Worfklow_20110
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011076540066439169.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人音频驱动模型 Inifinte Talk  Wan 2.1 i2v 480p Worfklow_2011076540066439169.json
 hash: eef9d1764e22c642
 coverage: 0.925926
 learned_at: 2026-10-15 22:34:21

@@ -4,7 +4,7 @@ name: (KJ高动态版FPS24)WAN2.2目前最强首尾帧超级加速版工作流V1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952012888850509826.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ高动态版FPS24)WAN2.2目前最强首尾帧超级加速版工作流V1_1952012888850509826.json
 hash: 6291df5b929edbc9
 coverage: 0.891304
 learned_at: 2026-10-15 22:30:59

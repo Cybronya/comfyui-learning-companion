@@ -4,7 +4,7 @@ name: lltx2-视频首尾帧-Video first and last frames_2019971390018953218.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019971390018953218.json
+file: comfyui_library/workflows/视频生成/图生视频/lltx2-视频首尾帧-Video first and last frames_2019971390018953218.json
 hash: 28670e39d11e0db1
 coverage: 0.930233
 learned_at: 2026-10-15 22:35:05

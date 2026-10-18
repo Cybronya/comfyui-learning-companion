@@ -4,7 +4,7 @@ name: 【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1925755745747292161.json
+file: comfyui_library/workflows/视频生成/文生视频/【效果炸裂！】wan2.1 Vace 14B 人物长像一致高质量图生视频动画_1925755745747292161.json
 hash: 908a67d7365215a7
 coverage: 0.913043
 learned_at: 2026-10-15 22:43:25

@@ -4,7 +4,7 @@ name: KJ版WAN2.1 GGUF Q8 LightX2V加速图生视频高质量版V1_1942759645448
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1942759645448744961.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ版WAN2.1 GGUF Q8 LightX2V加速图生视频高质量版V1_1942759645448744961.json
 hash: 40bc72df213b484c
 coverage: 0.774194
 learned_at: 2026-10-15 22:30:37

@@ -4,7 +4,7 @@ name: KJ版Wan2.2 图生视频超级加速+镜头切换_1950805737444417537.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950805737444417537.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ版Wan2.2 图生视频超级加速+镜头切换_1950805737444417537.json
 hash: 0f03d494612e21d1
 coverage: 0.961538
 learned_at: 2026-10-15 22:30:56

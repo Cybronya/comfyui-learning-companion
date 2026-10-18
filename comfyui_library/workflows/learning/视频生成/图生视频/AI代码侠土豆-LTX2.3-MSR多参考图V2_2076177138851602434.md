@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX2.3-MSR多参考图V2_2076177138851602434.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076177138851602434.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX2.3-MSR多参考图V2_2076177138851602434.json
 hash: b81c57303b25cb47
 coverage: 0.461538
 learned_at: 2026-10-15 22:41:29

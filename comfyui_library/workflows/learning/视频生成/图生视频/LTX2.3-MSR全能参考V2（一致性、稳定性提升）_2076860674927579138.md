@@ -4,7 +4,7 @@ name: LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2076860674927579
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076860674927579138.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR全能参考V2（一致性、稳定性提升）_2076860674927579138.json
 hash: e49ee8eb2f02c5e7
 coverage: 0.911765
 learned_at: 2026-10-15 22:41:33

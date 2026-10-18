@@ -4,7 +4,7 @@ name: Furry AI Dance Generator｜KSK Custom Edition_2072998868763320320.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072998868763320320.json
+file: comfyui_library/workflows/视频生成/图生视频/Furry AI Dance Generator｜KSK Custom Edition_2072998868763320320.json
 hash: d1db127149a6e1c5
 coverage: 0.827586
 learned_at: 2026-10-15 22:41:00

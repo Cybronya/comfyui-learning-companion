@@ -4,7 +4,7 @@ name: Wan2.2+Remix+V3+图生视频_极度丝滑没有之一_2067127953313583105.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067127953313583105.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Remix+V3+图生视频_极度丝滑没有之一_2067127953313583105.json
 hash: f8163b9006e98a83
 coverage: 1
 learned_at: 2026-10-15 22:39:57

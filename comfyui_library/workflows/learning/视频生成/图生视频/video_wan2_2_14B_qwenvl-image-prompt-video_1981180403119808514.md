@@ -4,7 +4,7 @@ name: video_wan2_2_14B_qwenvl-image-prompt-video_1981180403119808514.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981180403119808514.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_14B_qwenvl-image-prompt-video_1981180403119808514.json
 hash: dd05a0322f855f2a
 coverage: 0.611111
 learned_at: 2026-10-15 22:32:36

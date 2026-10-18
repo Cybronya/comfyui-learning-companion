@@ -4,7 +4,7 @@ name: (KJ版高动态FPS24)WAN2.2 INP最强自动预测首尾帧极速版V1_1956
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956583088841261058.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版高动态FPS24)WAN2.2 INP最强自动预测首尾帧极速版V1_1956583088841261058.json
 hash: a8b7e4215e770aa4
 coverage: 0.891304
 learned_at: 2026-10-15 22:31:14

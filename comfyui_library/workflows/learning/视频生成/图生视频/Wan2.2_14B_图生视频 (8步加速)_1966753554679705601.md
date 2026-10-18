@@ -4,7 +4,7 @@ name: Wan2.2_14B_图生视频 (8步加速)_1966753554679705601.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966753554679705601.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_14B_图生视频 (8步加速)_1966753554679705601.json
 hash: 01ae7e003ad5cc5f
 coverage: 1
 learned_at: 2026-10-15 22:31:39

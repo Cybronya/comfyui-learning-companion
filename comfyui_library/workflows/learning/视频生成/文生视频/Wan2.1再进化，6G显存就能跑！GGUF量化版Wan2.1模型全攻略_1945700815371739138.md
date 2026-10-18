@@ -4,7 +4,7 @@ name: Wan2.1再进化，6G显存就能跑！GGUF量化版Wan2.1模型全攻略_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1945700815371739138.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.1再进化，6G显存就能跑！GGUF量化版Wan2.1模型全攻略_1945700815371739138.json
 hash: 84616ec64922056a
 coverage: 1
 learned_at: 2026-10-15 22:43:31

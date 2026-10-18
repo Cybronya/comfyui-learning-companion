@@ -4,7 +4,7 @@ name: LTX2.3MV长视频稳定版无字幕_2050749407863291905.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050749407863291905.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3MV长视频稳定版无字幕_2050749407863291905.json
 hash: 213234ebc8b9d0bc
 coverage: 0.607595
 learned_at: 2026-10-15 22:37:19

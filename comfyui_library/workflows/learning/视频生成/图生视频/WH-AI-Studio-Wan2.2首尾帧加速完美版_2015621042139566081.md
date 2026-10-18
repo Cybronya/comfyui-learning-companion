@@ -4,7 +4,7 @@ name: WH-AI-Studio-Wan2.2首尾帧加速完美版_2015621042139566081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015621042139566081.json
+file: comfyui_library/workflows/视频生成/图生视频/WH-AI-Studio-Wan2.2首尾帧加速完美版_2015621042139566081.json
 hash: adbebb9dcfa67cc9
 coverage: 0.969697
 learned_at: 2026-10-15 22:34:39

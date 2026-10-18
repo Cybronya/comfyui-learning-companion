@@ -4,7 +4,7 @@ name: video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993579286244294658.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_basic_workflow_1993579286244294658.json
 hash: fe1d0fc628473536
 coverage: 0.555556
 learned_at: 2026-10-15 22:33:18

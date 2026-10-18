@@ -4,7 +4,7 @@ name: Wan2.2_14B_文生视频-加速版-KJ模型_1950219353737314306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950219353737314306.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2_14B_文生视频-加速版-KJ模型_1950219353737314306.json
 hash: ad5423fcd8cf2d95
 coverage: 1
 learned_at: 2026-10-15 22:43:35

@@ -4,7 +4,7 @@ name: LTX2.3-10Eros单图_2057366686122209281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057366686122209281.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-10Eros单图_2057366686122209281.json
 hash: 504bc609a541c616
 coverage: 0.533333
 learned_at: 2026-10-15 22:38:11

@@ -4,7 +4,7 @@ name: Wan2.2 rapid all-in-one，最简单使用，极速生成_19681756386475499
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968175638647549954.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 rapid all-in-one，最简单使用，极速生成_1968175638647549954.json
 hash: 0bec7c9c8ce50725
 coverage: 0.456522
 learned_at: 2026-10-15 22:43:45

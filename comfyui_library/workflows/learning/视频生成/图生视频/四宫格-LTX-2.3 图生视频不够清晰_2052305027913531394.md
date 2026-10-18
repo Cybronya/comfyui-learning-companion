@@ -4,7 +4,7 @@ name: 四宫格-LTX-2.3 图生视频不够清晰_2052305027913531394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052305027913531394.json
+file: comfyui_library/workflows/视频生成/图生视频/四宫格-LTX-2.3 图生视频不够清晰_2052305027913531394.json
 hash: 1766b7ff2ebb37e7
 coverage: 0.583333
 learned_at: 2026-10-15 22:37:28

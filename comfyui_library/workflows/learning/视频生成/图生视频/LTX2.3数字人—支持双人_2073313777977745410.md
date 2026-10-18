@@ -4,7 +4,7 @@ name: LTX2.3数字人—支持双人_2073313777977745410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073313777977745410.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人—支持双人_2073313777977745410.json
 hash: 19bf44ff32365716
 coverage: 0.836364
 learned_at: 2026-10-15 22:41:05

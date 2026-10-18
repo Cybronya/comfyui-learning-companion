@@ -4,7 +4,7 @@ name: wan2.2 高级动态海报｜高清1080P_1955835322741526529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955835322741526529.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 高级动态海报｜高清1080P_1955835322741526529.json
 hash: 5eaa5abe3ba96001
 coverage: 0.891892
 learned_at: 2026-10-15 22:31:10

@@ -4,7 +4,7 @@ name: 啊癫 通义万相wan2.1 超级大摆锤 图片跳舞_1914988219354574849
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914988219354574849.json
+file: comfyui_library/workflows/视频生成/图生视频/啊癫 通义万相wan2.1 超级大摆锤 图片跳舞_1914988219354574849.json
 hash: 6a827512d37b3e88
 coverage: 0.952381
 learned_at: 2026-10-15 22:29:37

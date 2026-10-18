@@ -4,7 +4,7 @@ name: wan2.2真实动态首尾帧新玩法_1969269601903276034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969269601903276034.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2真实动态首尾帧新玩法_1969269601903276034.json
 hash: 2a3f94a95c42addb
 coverage: 0.5125
 learned_at: 2026-10-15 22:31:48

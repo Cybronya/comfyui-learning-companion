@@ -4,7 +4,7 @@ name: aidir-LTX2.3 四图参考-参考音色_2069621183007510529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069621183007510529.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX2.3 四图参考-参考音色_2069621183007510529.json
 hash: edf7f68ef57a6196
 coverage: 0.391459
 learned_at: 2026-10-15 22:40:31

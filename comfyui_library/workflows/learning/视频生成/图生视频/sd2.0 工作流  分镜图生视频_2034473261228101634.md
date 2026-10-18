@@ -4,7 +4,7 @@ name: sd2.0 工作流  分镜图生视频_2034473261228101634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034473261228101634.json
+file: comfyui_library/workflows/视频生成/图生视频/sd2.0 工作流  分镜图生视频_2034473261228101634.json
 hash: 0470efd8eddfa51f
 coverage: 1
 learned_at: 2026-10-15 22:35:44

@@ -4,7 +4,7 @@ name: 谷歌Gemini2.0用嘴改图音视频分析_1902853098602409986.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1902853098602409986.json
+file: comfyui_library/workflows/视频生成/图生视频/谷歌Gemini2.0用嘴改图音视频分析_1902853098602409986.json
 hash: 822809bd50c400da
 coverage: 0.733333
 learned_at: 2026-10-15 22:29:24

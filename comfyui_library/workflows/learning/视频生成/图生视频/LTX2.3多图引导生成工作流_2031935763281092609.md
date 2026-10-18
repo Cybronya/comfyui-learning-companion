@@ -4,7 +4,7 @@ name: LTX2.3多图引导生成工作流_2031935763281092609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031935763281092609.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3多图引导生成工作流_2031935763281092609.json
 hash: 446d13bac7ae8670
 coverage: 0.673684
 learned_at: 2026-10-15 22:35:34

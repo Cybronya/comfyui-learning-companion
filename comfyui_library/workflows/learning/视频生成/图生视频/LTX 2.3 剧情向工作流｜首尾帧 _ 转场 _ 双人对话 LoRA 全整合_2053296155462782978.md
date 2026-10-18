@@ -4,7 +4,7 @@ name: LTX 2.3 剧情向工作流｜首尾帧 _ 转场 _ 双人对话 LoRA 全整
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053296155462782978.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 剧情向工作流｜首尾帧 _ 转场 _ 双人对话 LoRA 全整合_2053296155462782978.json
 hash: d35c9f83c915f977
 coverage: 0.9
 learned_at: 2026-10-15 22:37:38

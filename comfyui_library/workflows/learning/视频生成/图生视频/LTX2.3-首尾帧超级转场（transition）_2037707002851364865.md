@@ -4,7 +4,7 @@ name: LTX2.3-首尾帧超级转场（transition）_2037707002851364865.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037707002851364865.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-首尾帧超级转场（transition）_2037707002851364865.json
 hash: 83fb55390a25df4a
 coverage: 0.943396
 learned_at: 2026-10-15 22:35:58

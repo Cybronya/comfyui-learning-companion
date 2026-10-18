@@ -4,7 +4,7 @@ name: Wan2.2 Fun奖励LoRA 图生视频KJ版【更好动态】_19676305766793584
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967630576679358465.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Fun奖励LoRA 图生视频KJ版【更好动态】_1967630576679358465.json
 hash: bb9431e8a964c3a3
 coverage: 1
 learned_at: 2026-10-15 22:31:42

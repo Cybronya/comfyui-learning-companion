@@ -4,7 +4,7 @@ name: RH自研宇宙最强超能视频2.0 全能参考 直出真人视频_203749
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037490181506338818.json
+file: comfyui_library/workflows/视频生成/图生视频/RH自研宇宙最强超能视频2.0 全能参考 直出真人视频_2037490181506338818.json
 hash: b090534f719f211b
 coverage: 1
 learned_at: 2026-10-15 22:35:57

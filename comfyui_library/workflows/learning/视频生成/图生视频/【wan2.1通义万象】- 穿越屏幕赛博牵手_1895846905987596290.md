@@ -4,7 +4,7 @@ name: 【wan2.1通义万象】- 穿越屏幕赛博牵手_1895846905987596290.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1895846905987596290.json
+file: comfyui_library/workflows/视频生成/图生视频/【wan2.1通义万象】- 穿越屏幕赛博牵手_1895846905987596290.json
 hash: cb42a16642b19264
 coverage: 0.764706
 learned_at: 2026-10-15 22:29:17

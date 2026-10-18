@@ -4,7 +4,7 @@ name: 图生视频全能视频S.0（根叔）_1977231674360635394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977231674360635394.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频全能视频S.0（根叔）_1977231674360635394.json
 hash: 9ac97d330590f7b0
 coverage: 1
 learned_at: 2026-10-15 22:32:14

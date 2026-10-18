@@ -4,7 +4,7 @@ name: LTX2.3 MV数字人（强化面部一致性）_2048028402485043202.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048028402485043202.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MV数字人（强化面部一致性）_2048028402485043202.json
 hash: 89dcf8b8b0819a74
 coverage: 0.746479
 learned_at: 2026-10-15 22:37:08

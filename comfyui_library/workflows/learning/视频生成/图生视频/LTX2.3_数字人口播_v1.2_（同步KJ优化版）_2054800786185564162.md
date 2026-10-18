@@ -4,7 +4,7 @@ name: LTX2.3_数字人口播_v1.2_（同步KJ优化版）_2054800786185564162.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054800786185564162.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_数字人口播_v1.2_（同步KJ优化版）_2054800786185564162.json
 hash: 67be10a0fb4d3486
 coverage: 0.754098
 learned_at: 2026-10-15 22:37:52

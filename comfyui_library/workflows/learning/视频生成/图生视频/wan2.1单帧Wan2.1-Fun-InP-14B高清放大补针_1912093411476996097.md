@@ -4,7 +4,7 @@ name: wan2.1单帧Wan2.1-Fun-InP-14B高清放大补针_1912093411476996097.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1912093411476996097.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1单帧Wan2.1-Fun-InP-14B高清放大补针_1912093411476996097.json
 hash: 8e21b614a9272925
 coverage: 1
 learned_at: 2026-10-15 22:29:32

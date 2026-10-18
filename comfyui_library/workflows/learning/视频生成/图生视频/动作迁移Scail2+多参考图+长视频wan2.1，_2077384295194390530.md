@@ -4,7 +4,7 @@ name: 动作迁移Scail2+多参考图+长视频wan2.1，_2077384295194390530.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077384295194390530.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移Scail2+多参考图+长视频wan2.1，_2077384295194390530.json
 hash: e6b3fdf29e833444
 coverage: 0.807018
 learned_at: 2026-10-15 22:41:40

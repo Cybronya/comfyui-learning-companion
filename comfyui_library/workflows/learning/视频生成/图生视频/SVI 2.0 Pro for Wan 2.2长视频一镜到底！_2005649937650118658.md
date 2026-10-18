@@ -4,7 +4,7 @@ name: SVI 2.0 Pro for Wan 2.2长视频一镜到底！_2005649937650118658.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005649937650118658.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0 Pro for Wan 2.2长视频一镜到底！_2005649937650118658.json
 hash: 7cf29e5951d9e796
 coverage: 0.566929
 learned_at: 2026-10-15 22:33:58

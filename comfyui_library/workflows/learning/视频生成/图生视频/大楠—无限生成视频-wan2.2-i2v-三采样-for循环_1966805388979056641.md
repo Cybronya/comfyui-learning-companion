@@ -4,7 +4,7 @@ name: 大楠—无限生成视频-wan2.2-i2v-三采样-for循环_196680538897905
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966805388979056641.json
+file: comfyui_library/workflows/视频生成/图生视频/大楠—无限生成视频-wan2.2-i2v-三采样-for循环_1966805388979056641.json
 hash: 8bc4b348d2670fe3
 coverage: 0.485714
 learned_at: 2026-10-15 22:31:39

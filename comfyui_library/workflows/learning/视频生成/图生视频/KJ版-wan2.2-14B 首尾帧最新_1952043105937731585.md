@@ -4,7 +4,7 @@ name: KJ版-wan2.2-14B 首尾帧最新_1952043105937731585.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952043105937731585.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ版-wan2.2-14B 首尾帧最新_1952043105937731585.json
 hash: be6482bae4c70421
 coverage: 0.904762
 learned_at: 2026-10-15 22:30:59

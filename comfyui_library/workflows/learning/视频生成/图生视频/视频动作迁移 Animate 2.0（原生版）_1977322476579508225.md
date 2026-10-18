@@ -4,7 +4,7 @@ name: 视频动作迁移 Animate 2.0（原生版）_1977322476579508225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977322476579508225.json
+file: comfyui_library/workflows/视频生成/图生视频/视频动作迁移 Animate 2.0（原生版）_1977322476579508225.json
 hash: a99c6ab9d8cf7599
 coverage: 0.519481
 learned_at: 2026-10-15 22:32:14

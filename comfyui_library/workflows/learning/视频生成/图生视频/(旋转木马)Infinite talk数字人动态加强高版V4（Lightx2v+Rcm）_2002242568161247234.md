@@ -4,7 +4,7 @@ name: (旋转木马)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2002242568161247234.json
+file: comfyui_library/workflows/视频生成/图生视频/(旋转木马)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2002242568161247234.json
 hash: 5d3e2af9812b56ad
 coverage: 0.75
 learned_at: 2026-10-15 22:33:47

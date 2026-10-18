@@ -4,7 +4,7 @@ name: AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2058904092608651265.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058904092608651265.json
+file: comfyui_library/workflows/视频生成/图生视频/AI动作模仿+唱歌跳舞+剑舞=AnimateWan2.2_2058904092608651265.json
 hash: ddc70d69f6d91435
 coverage: 0.818182
 learned_at: 2026-10-15 22:38:31

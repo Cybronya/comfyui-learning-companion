@@ -4,7 +4,7 @@ name: Wan2.2Turbo图生视频（超快）_2012460776447021058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2012460776447021058.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2Turbo图生视频（超快）_2012460776447021058.json
 hash: 408d6b1a69bfa0af
 coverage: 1
 learned_at: 2026-10-15 22:34:27

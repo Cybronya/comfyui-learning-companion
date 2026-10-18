@@ -4,7 +4,7 @@ name: wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_19357182464
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935718246421028865.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 And lora 刀切玻璃水果蔬菜 图生视频工作流_1935718246421028865.json
 hash: a5e4659e6506b4b0
 coverage: 0.941176
 learned_at: 2026-10-15 22:30:24

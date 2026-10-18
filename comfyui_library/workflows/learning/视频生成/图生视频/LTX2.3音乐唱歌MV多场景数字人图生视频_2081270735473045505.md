@@ -4,7 +4,7 @@ name: LTX2.3音乐唱歌MV多场景数字人图生视频_2081270735473045505.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2081270735473045505.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3音乐唱歌MV多场景数字人图生视频_2081270735473045505.json
 hash: 7bae7ba7e22015b1
 coverage: 0.567568
 learned_at: 2026-10-15 22:42:21

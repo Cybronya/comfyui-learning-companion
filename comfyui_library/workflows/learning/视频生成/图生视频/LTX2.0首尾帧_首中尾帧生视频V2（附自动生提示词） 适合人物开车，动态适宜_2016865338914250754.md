@@ -4,7 +4,7 @@ name: LTX2.0首尾帧_首中尾帧生视频V2（附自动生提示词） 适合�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016865338914250754.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0首尾帧_首中尾帧生视频V2（附自动生提示词） 适合人物开车，动态适宜_2016865338914250754.json
 hash: 21b65efb6fad5cff
 coverage: 0.475
 learned_at: 2026-10-15 22:34:43

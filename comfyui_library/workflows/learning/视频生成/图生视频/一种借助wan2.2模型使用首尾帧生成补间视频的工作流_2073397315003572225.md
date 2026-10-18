@@ -4,7 +4,7 @@ name: 一种借助wan2.2模型使用首尾帧生成补间视频的工作流_2073
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073397315003572225.json
+file: comfyui_library/workflows/视频生成/图生视频/一种借助wan2.2模型使用首尾帧生成补间视频的工作流_2073397315003572225.json
 hash: cecc56e7680a77ee
 coverage: 0.911111
 learned_at: 2026-10-15 22:41:06

@@ -4,7 +4,7 @@ name: wan2.2最好的360度旋转特效-可生成人物和物体一致性图片�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986434223613636609.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2最好的360度旋转特效-可生成人物和物体一致性图片素材-附林黛玉写实_1986434223613636609.json
 hash: 81b49c86d2569016
 coverage: 0.76087
 learned_at: 2026-10-15 22:32:55

@@ -4,7 +4,7 @@ name: Wan2.1-Fun-图生视频_1907320238373756930.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1907320238373756930.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1-Fun-图生视频_1907320238373756930.json
 hash: d56b0c68e0630669
 coverage: 0.909091
 learned_at: 2026-10-15 22:29:27

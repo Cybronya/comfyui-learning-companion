@@ -4,7 +4,7 @@ name: Wan 2.2 x Multiple LoRA：一键多视角 MV，角色锁定，镜头瞬切
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987350549395869697.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 x Multiple LoRA：一键多视角 MV，角色锁定，镜头瞬切！_1987350549395869697.json
 hash: 34d9bbde20668ded
 coverage: 0.915663
 learned_at: 2026-10-15 22:32:58

@@ -4,7 +4,7 @@ name: 多角色替换+动作迁移影视恶搞+多遮罩模式控制Wan2.2+Anima
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2026582867685416961.json
+file: comfyui_library/workflows/视频生成/图生视频/多角色替换+动作迁移影视恶搞+多遮罩模式控制Wan2.2+Animate_2026582867685416961.json
 hash: c6bb6163d404d500
 coverage: 0.638037
 learned_at: 2026-10-15 22:35:14

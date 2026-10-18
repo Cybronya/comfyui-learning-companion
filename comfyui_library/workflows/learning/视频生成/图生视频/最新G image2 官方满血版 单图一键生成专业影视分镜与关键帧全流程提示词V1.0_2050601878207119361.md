@@ -4,7 +4,7 @@ name: 最新G image2 官方满血版 单图一键生成专业影视分镜与关�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050601878207119361.json
+file: comfyui_library/workflows/视频生成/图生视频/最新G image2 官方满血版 单图一键生成专业影视分镜与关键帧全流程提示词V1.0_2050601878207119361.json
 hash: 2123acc8587588b7
 coverage: 0.653846
 learned_at: 2026-10-15 22:37:19

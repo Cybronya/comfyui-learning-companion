@@ -4,7 +4,7 @@ name: 【万能视频转绘】Wan2.1 VACE视频转绘 真人漫画可互相转�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1917086685719363586.json
+file: comfyui_library/workflows/视频生成/文生视频/【万能视频转绘】Wan2.1 VACE视频转绘 真人漫画可互相转换_1917086685719363586.json
 hash: 61303a280cda13bf
 coverage: 0.561798
 learned_at: 2026-10-15 22:43:22

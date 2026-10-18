@@ -4,7 +4,7 @@ name: LTX2.3更高的遵从度-提示词对应连续动作_2046925023830614018.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046925023830614018.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3更高的遵从度-提示词对应连续动作_2046925023830614018.json
 hash: 31a3ad01351c0c7a
 coverage: 0.741935
 learned_at: 2026-10-15 22:37:02

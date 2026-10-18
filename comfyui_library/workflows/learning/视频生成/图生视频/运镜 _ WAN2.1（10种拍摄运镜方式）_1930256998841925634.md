@@ -4,7 +4,7 @@ name: 运镜 _ WAN2.1（10种拍摄运镜方式）_1930256998841925634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930256998841925634.json
+file: comfyui_library/workflows/视频生成/图生视频/运镜 _ WAN2.1（10种拍摄运镜方式）_1930256998841925634.json
 hash: b9fc86bb8e1a32d9
 coverage: 0.8
 learned_at: 2026-10-15 22:30:04

@@ -4,7 +4,7 @@ name: LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058444254300696577.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-多人对话场景效果（多图分镜）_2058444254300696577.json
 hash: 529c427e74690969
 coverage: 0.825
 learned_at: 2026-10-15 22:38:23

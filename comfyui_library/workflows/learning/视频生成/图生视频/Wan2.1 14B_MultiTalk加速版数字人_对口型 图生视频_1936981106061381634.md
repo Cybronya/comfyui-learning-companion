@@ -4,7 +4,7 @@ name: Wan2.1 14B_MultiTalk加速版数字人_对口型 图生视频_193698110606
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936981106061381634.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 14B_MultiTalk加速版数字人_对口型 图生视频_1936981106061381634.json
 hash: fffe45ad92c190f4
 coverage: 0.666667
 learned_at: 2026-10-15 22:30:27

@@ -4,7 +4,7 @@ name: 【转身舞动】升级版WAN2.1 网红跳舞视频动画_191957133917756
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1919571339177562113.json
+file: comfyui_library/workflows/视频生成/文生视频/【转身舞动】升级版WAN2.1 网红跳舞视频动画_1919571339177562113.json
 hash: 2d30537cc8f11ed1
 coverage: 0.952381
 learned_at: 2026-10-15 22:43:23

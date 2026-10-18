@@ -4,7 +4,7 @@ name: KJ-Wan2.1-图生视频_1895074790560956417.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1895074790560956417.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ-Wan2.1-图生视频_1895074790560956417.json
 hash: dd12e8ca7f0fc03f
 coverage: 1
 learned_at: 2026-10-15 22:29:17

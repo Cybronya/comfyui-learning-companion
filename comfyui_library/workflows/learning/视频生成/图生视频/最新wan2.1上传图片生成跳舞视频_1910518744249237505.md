@@ -4,7 +4,7 @@ name: 最新wan2.1上传图片生成跳舞视频_1910518744249237505.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1910518744249237505.json
+file: comfyui_library/workflows/视频生成/图生视频/最新wan2.1上传图片生成跳舞视频_1910518744249237505.json
 hash: 62af878d0496e742
 coverage: 0.779412
 learned_at: 2026-10-15 22:29:30

@@ -4,7 +4,7 @@ name: LTX2.3数字人=首尾帧+台本+参考音频_2037170336013225986.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037170336013225986.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人=首尾帧+台本+参考音频_2037170336013225986.json
 hash: 93bc4f6b3f3a8c4e
 coverage: 0.816901
 learned_at: 2026-10-15 22:35:56

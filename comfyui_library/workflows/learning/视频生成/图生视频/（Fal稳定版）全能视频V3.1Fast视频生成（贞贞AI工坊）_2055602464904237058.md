@@ -4,7 +4,7 @@ name: （Fal稳定版）全能视频V3.1Fast视频生成（贞贞AI工坊）_205
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055602464904237058.json
+file: comfyui_library/workflows/视频生成/图生视频/（Fal稳定版）全能视频V3.1Fast视频生成（贞贞AI工坊）_2055602464904237058.json
 hash: c27ef50f9e86f30c
 coverage: 0.714286
 learned_at: 2026-10-15 22:37:57

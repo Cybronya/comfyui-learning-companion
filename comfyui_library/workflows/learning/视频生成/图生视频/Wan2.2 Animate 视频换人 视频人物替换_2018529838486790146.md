@@ -4,7 +4,7 @@ name: Wan2.2 Animate 视频换人 视频人物替换_2018529838486790146.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2018529838486790146.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate 视频换人 视频人物替换_2018529838486790146.json
 hash: 47458f82467fcd6b
 coverage: 0.59375
 learned_at: 2026-10-15 22:34:58

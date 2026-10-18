@@ -4,7 +4,7 @@ name: 可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015989000204460034.json
+file: comfyui_library/workflows/视频生成/图生视频/可灵 Kling v2.5图生视频 (Turbo-Std)_2015989000204460034.json
 hash: 02a75a7e1e516854
 coverage: 1
 learned_at: 2026-10-15 22:34:40

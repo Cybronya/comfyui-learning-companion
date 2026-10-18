@@ -4,7 +4,7 @@ name: LTX-2.3 Licon MSR 角色+场景图参考生视频V1_2064162580586913793.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064162580586913793.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 Licon MSR 角色+场景图参考生视频V1_2064162580586913793.json
 hash: f85bf8a3d3fa180e
 coverage: 0.505051
 learned_at: 2026-10-15 22:39:20

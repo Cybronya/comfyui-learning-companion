@@ -4,7 +4,7 @@ name: 视频-视频延长视频-wan2.1-SVI 2.0-KJ_1985620607834501122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985620607834501122.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-视频延长视频-wan2.1-SVI 2.0-KJ_1985620607834501122.json
 hash: d819920c1d1395ad
 coverage: 0.652778
 learned_at: 2026-10-15 22:32:52

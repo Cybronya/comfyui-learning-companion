@@ -4,7 +4,7 @@ name: 【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911792144137318401.json
+file: comfyui_library/workflows/视频生成/图生视频/【七龙珠元气弹特效】wan2.1人物发射元气弹特效_1911792144137318401.json
 hash: f020358b51f17345
 coverage: 1
 learned_at: 2026-10-15 22:29:31

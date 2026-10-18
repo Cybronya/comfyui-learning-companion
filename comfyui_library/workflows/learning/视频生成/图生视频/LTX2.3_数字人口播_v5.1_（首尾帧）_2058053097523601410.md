@@ -4,7 +4,7 @@ name: LTX2.3_数字人口播_v5.1_（首尾帧）_2058053097523601410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058053097523601410.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_数字人口播_v5.1_（首尾帧）_2058053097523601410.json
 hash: 2ab6076a8859600b
 coverage: 0.855072
 learned_at: 2026-10-15 22:38:17

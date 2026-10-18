@@ -4,7 +4,7 @@ name: Wan 2.6 图生视频 最高15秒1080P_2000820652787593217.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000820652787593217.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.6 图生视频 最高15秒1080P_2000820652787593217.json
 hash: c397b44d0e14eb22
 coverage: 1
 learned_at: 2026-10-15 22:33:43

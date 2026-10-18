@@ -4,7 +4,7 @@ name: LTX2.3-五图生视频10秒电商展示变装-全自动提示词_205149055
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051490555791720450.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-五图生视频10秒电商展示变装-全自动提示词_2051490555791720450.json
 hash: efa96a57abf9c1a5
 coverage: 0.927536
 learned_at: 2026-10-15 22:37:22

@@ -4,7 +4,7 @@ name: WAN2.2顶配视频生成优化版（微缩景观）_1952369235551031298.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952369235551031298.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2顶配视频生成优化版（微缩景观）_1952369235551031298.json
 hash: 189593e878de4c20
 coverage: 0.949367
 learned_at: 2026-10-15 22:31:01

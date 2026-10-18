@@ -4,7 +4,7 @@ name: LTX-2.3_MSR V2多参分镜自动扩展提示词1_2079756676873408513.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079756676873408513.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_MSR V2多参分镜自动扩展提示词1_2079756676873408513.json
 hash: 06451bb3b4a3422c
 coverage: 0.853659
 learned_at: 2026-10-15 22:42:06

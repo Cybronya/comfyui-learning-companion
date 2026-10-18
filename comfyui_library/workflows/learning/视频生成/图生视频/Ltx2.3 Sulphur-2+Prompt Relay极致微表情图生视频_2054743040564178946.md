@@ -4,7 +4,7 @@ name: Ltx2.3 Sulphur-2+Prompt Relay极致微表情图生视频_20547430405641789
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054743040564178946.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Sulphur-2+Prompt Relay极致微表情图生视频_2054743040564178946.json
 hash: fd491e96830ec757
 coverage: 0.761905
 learned_at: 2026-10-15 22:37:51

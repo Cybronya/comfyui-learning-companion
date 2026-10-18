@@ -4,7 +4,7 @@ name: wan2.1 vace 动作参考视频生成_1933802082413797378.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933802082413797378.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 vace 动作参考视频生成_1933802082413797378.json
 hash: c787d2642d0742ea
 coverage: 0.909091
 learned_at: 2026-10-15 22:30:15

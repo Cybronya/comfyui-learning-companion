@@ -4,7 +4,7 @@ name: Ltx2.3首尾一致视频生成_2077628906508742658.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077628906508742658.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3首尾一致视频生成_2077628906508742658.json
 hash: df52e63063f77faf
 coverage: 0.663043
 learned_at: 2026-10-15 22:41:42

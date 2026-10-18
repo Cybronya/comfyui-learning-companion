@@ -4,7 +4,7 @@ name: WAN2.1图生视频美女原地起飞_1908140275909468162.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1908140275909468162.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频美女原地起飞_1908140275909468162.json
 hash: 6a9a5a731a69e13a
 coverage: 1
 learned_at: 2026-10-15 22:29:28

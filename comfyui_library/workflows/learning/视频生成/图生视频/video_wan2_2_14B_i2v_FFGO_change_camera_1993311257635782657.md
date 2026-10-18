@@ -4,7 +4,7 @@ name: video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993311257635782657.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_14B_i2v_FFGO_change_camera_1993311257635782657.json
 hash: 53795b38b8a2bb30
 coverage: 0.555556
 learned_at: 2026-10-15 22:33:18

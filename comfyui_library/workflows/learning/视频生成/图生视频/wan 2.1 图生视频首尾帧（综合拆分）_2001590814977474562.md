@@ -4,7 +4,7 @@ name: wan 2.1 图生视频首尾帧（综合拆分）_2001590814977474562.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2001590814977474562.json
+file: comfyui_library/workflows/视频生成/图生视频/wan 2.1 图生视频首尾帧（综合拆分）_2001590814977474562.json
 hash: db225d2693b539aa
 coverage: 1
 learned_at: 2026-10-15 22:33:46

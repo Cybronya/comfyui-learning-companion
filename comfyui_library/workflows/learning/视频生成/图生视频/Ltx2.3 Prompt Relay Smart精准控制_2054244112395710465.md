@@ -4,7 +4,7 @@ name: Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054244112395710465.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Prompt Relay Smart精准控制_2054244112395710465.json
 hash: 43c7493b98dc116c
 coverage: 0.777778
 learned_at: 2026-10-15 22:37:46

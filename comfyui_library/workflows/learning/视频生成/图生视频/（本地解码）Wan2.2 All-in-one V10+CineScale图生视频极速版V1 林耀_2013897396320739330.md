@@ -4,7 +4,7 @@ name: （本地解码）Wan2.2 All-in-one V10+CineScale图生视频极速版V1 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013897396320739330.json
+file: comfyui_library/workflows/视频生成/图生视频/（本地解码）Wan2.2 All-in-one V10+CineScale图生视频极速版V1 林耀_2013897396320739330.json
 hash: effd632ec297741f
 coverage: 1
 learned_at: 2026-10-15 22:34:33

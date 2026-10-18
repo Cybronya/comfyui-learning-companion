@@ -4,7 +4,7 @@ name: 开源版seedance2.0(智能多参)+Ltx2.3+Singularity+Licon-MSR_2063514127
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063514127636717569.json
+file: comfyui_library/workflows/视频生成/图生视频/开源版seedance2.0(智能多参)+Ltx2.3+Singularity+Licon-MSR_2063514127636717569.json
 hash: 3f3edccfebc415b6
 coverage: 0.888889
 learned_at: 2026-10-15 22:39:14

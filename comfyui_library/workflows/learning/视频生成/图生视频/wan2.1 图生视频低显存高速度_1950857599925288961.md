@@ -4,7 +4,7 @@ name: wan2.1 图生视频低显存高速度_1950857599925288961.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950857599925288961.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1 图生视频低显存高速度_1950857599925288961.json
 hash: 104e9588abf7dd68
 coverage: 1
 learned_at: 2026-10-15 22:30:56

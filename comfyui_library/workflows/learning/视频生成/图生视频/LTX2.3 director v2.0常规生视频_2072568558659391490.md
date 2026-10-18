@@ -4,7 +4,7 @@ name: LTX2.3 director v2.0常规生视频_2072568558659391490.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072568558659391490.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 director v2.0常规生视频_2072568558659391490.json
 hash: 8c9cec2b5d9c2a4d
 coverage: 0.525424
 learned_at: 2026-10-15 22:40:56

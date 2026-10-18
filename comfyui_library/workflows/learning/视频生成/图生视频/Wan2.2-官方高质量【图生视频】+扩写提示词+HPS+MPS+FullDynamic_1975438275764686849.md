@@ -4,7 +4,7 @@ name: Wan2.2-官方高质量【图生视频】+扩写提示词+HPS+MPS+FullDynam
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1975438275764686849.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-官方高质量【图生视频】+扩写提示词+HPS+MPS+FullDynamic_1975438275764686849.json
 hash: cec076430c5d5ce0
 coverage: 0.762712
 learned_at: 2026-10-15 22:32:08

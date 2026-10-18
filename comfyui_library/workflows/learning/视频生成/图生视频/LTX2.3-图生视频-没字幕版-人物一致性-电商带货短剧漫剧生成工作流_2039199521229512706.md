@@ -4,7 +4,7 @@ name: LTX2.3-图生视频-没字幕版-人物一致性-电商带货短剧漫剧�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039199521229512706.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-图生视频-没字幕版-人物一致性-电商带货短剧漫剧生成工作流_2039199521229512706.json
 hash: 1a40e6b502ae21fa
 coverage: 0.939394
 learned_at: 2026-10-15 22:36:07

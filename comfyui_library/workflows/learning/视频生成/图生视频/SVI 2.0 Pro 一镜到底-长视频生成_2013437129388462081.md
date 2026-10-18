@@ -4,7 +4,7 @@ name: SVI 2.0 Pro 一镜到底-长视频生成_2013437129388462081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013437129388462081.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI 2.0 Pro 一镜到底-长视频生成_2013437129388462081.json
 hash: f62866a55ba28e6d
 coverage: 0.570175
 learned_at: 2026-10-15 22:34:31

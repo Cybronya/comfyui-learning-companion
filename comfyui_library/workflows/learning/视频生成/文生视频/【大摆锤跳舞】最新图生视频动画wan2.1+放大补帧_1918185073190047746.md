@@ -4,7 +4,7 @@ name: 【大摆锤跳舞】最新图生视频动画wan2.1+放大补帧_191818507
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1918185073190047746.json
+file: comfyui_library/workflows/视频生成/文生视频/【大摆锤跳舞】最新图生视频动画wan2.1+放大补帧_1918185073190047746.json
 hash: 405b05211bca3d5a
 coverage: 0.944444
 learned_at: 2026-10-15 22:43:22

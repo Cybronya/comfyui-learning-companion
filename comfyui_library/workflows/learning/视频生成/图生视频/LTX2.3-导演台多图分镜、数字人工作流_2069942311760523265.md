@@ -4,7 +4,7 @@ name: LTX2.3-导演台多图分镜、数字人工作流_2069942311760523265.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069942311760523265.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-导演台多图分镜、数字人工作流_2069942311760523265.json
 hash: 0d1b50b934d0bb6b
 coverage: 0.92
 learned_at: 2026-10-15 22:40:33

@@ -4,7 +4,7 @@ name: LTX2.3单图+音频对口型无字幕_2040333916862685186.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040333916862685186.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3单图+音频对口型无字幕_2040333916862685186.json
 hash: 8f16eef5268ea6e9
 coverage: 0.644737
 learned_at: 2026-10-15 22:36:14

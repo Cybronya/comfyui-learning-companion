@@ -4,7 +4,7 @@ name: 超好玩LTX2.3导演控制台-运镜分镜-不传音频版v2.0_2056028640
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056028640659427329.json
+file: comfyui_library/workflows/视频生成/图生视频/超好玩LTX2.3导演控制台-运镜分镜-不传音频版v2.0_2056028640659427329.json
 hash: 43b76d3ab208e9a9
 coverage: 0.972222
 learned_at: 2026-10-15 22:38:00

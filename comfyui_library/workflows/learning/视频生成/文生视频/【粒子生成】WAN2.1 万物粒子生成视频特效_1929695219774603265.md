@@ -4,7 +4,7 @@ name: 【粒子生成】WAN2.1 万物粒子生成视频特效_192969521977460326
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1929695219774603265.json
+file: comfyui_library/workflows/视频生成/文生视频/【粒子生成】WAN2.1 万物粒子生成视频特效_1929695219774603265.json
 hash: 5620112088c26557
 coverage: 0.788462
 learned_at: 2026-10-15 22:43:25

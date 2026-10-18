@@ -4,7 +4,7 @@ name: Wan2.1 Mocha视频人物一键替换_1982423394660564994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982423394660564994.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 Mocha视频人物一键替换_1982423394660564994.json
 hash: 8eee4e991ced2367
 coverage: 0.695652
 learned_at: 2026-10-15 22:32:41

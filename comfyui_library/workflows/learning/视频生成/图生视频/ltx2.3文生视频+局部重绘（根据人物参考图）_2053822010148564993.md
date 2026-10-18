@@ -4,7 +4,7 @@ name: ltx2.3文生视频+局部重绘（根据人物参考图）_205382201014856
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053822010148564993.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3文生视频+局部重绘（根据人物参考图）_2053822010148564993.json
 hash: 4011aadd09eae2cc
 coverage: 0.517241
 learned_at: 2026-10-15 22:37:43

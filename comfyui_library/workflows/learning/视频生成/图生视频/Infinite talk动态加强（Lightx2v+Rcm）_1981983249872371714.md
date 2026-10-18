@@ -4,7 +4,7 @@ name: Infinite talk动态加强（Lightx2v+Rcm）_1981983249872371714.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981983249872371714.json
+file: comfyui_library/workflows/视频生成/图生视频/Infinite talk动态加强（Lightx2v+Rcm）_1981983249872371714.json
 hash: c0f4a8b46c3f0d70
 coverage: 0.866667
 learned_at: 2026-10-15 22:32:39

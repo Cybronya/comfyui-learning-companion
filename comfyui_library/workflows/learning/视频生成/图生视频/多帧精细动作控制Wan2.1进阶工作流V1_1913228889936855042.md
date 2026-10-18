@@ -4,7 +4,7 @@ name: 多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913228889936855042.json
+file: comfyui_library/workflows/视频生成/图生视频/多帧精细动作控制Wan2.1进阶工作流V1_1913228889936855042.json
 hash: 63678bcb09574972
 coverage: 0.890244
 learned_at: 2026-10-15 22:29:33

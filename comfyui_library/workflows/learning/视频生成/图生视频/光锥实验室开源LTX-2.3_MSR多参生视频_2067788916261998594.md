@@ -4,7 +4,7 @@ name: 光锥实验室开源LTX-2.3_MSR多参生视频_2067788916261998594.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067788916261998594.json
+file: comfyui_library/workflows/视频生成/图生视频/光锥实验室开源LTX-2.3_MSR多参生视频_2067788916261998594.json
 hash: 67540cfbbe170d66
 coverage: 0.942857
 learned_at: 2026-10-15 22:40:13

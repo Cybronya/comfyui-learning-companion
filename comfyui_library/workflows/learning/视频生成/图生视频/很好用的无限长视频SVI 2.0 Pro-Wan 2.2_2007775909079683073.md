@@ -4,7 +4,7 @@ name: 很好用的无限长视频SVI 2.0 Pro-Wan 2.2_2007775909079683073.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007775909079683073.json
+file: comfyui_library/workflows/视频生成/图生视频/很好用的无限长视频SVI 2.0 Pro-Wan 2.2_2007775909079683073.json
 hash: 06fede0af6b28013
 coverage: 0.561538
 learned_at: 2026-10-15 22:34:05

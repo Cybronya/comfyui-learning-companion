@@ -4,7 +4,7 @@ name: Wan2.2 首尾帧 VBVR lora逻辑推理增强_2028500989350776833.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2028500989350776833.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 首尾帧 VBVR lora逻辑推理增强_2028500989350776833.json
 hash: 0826550820169a60
 coverage: 0.95
 learned_at: 2026-10-15 22:35:19

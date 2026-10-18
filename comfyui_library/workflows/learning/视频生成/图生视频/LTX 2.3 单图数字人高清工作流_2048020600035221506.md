@@ -4,7 +4,7 @@ name: LTX 2.3 单图数字人高清工作流_2048020600035221506.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048020600035221506.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 单图数字人高清工作流_2048020600035221506.json
 hash: eb316d954a5d19e8
 coverage: 0.469697
 learned_at: 2026-10-15 22:37:08

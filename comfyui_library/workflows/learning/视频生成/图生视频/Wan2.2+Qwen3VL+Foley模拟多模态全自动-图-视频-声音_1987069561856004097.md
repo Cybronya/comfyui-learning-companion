@@ -4,7 +4,7 @@ name: Wan2.2+Qwen3VL+Foley模拟多模态全自动-图-视频-声音_19870695618
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987069561856004097.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2+Qwen3VL+Foley模拟多模态全自动-图-视频-声音_1987069561856004097.json
 hash: 0e4fb2d1546078b5
 coverage: 0.418605
 learned_at: 2026-10-15 22:32:57

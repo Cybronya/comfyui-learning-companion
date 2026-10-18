@@ -4,7 +4,7 @@ name: 极简——KJ版 wan2.2模型VACE 视频人物替换_1968955207906385921.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968955207906385921.json
+file: comfyui_library/workflows/视频生成/图生视频/极简——KJ版 wan2.2模型VACE 视频人物替换_1968955207906385921.json
 hash: 2a43baeef793efe2
 coverage: 0.955556
 learned_at: 2026-10-15 22:31:47

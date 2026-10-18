@@ -4,7 +4,7 @@ name: （已修复支持真人-多图像参考）SeeDance2.0平替R2V 新版全�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033804502687555585.json
+file: comfyui_library/workflows/视频生成/图生视频/（已修复支持真人-多图像参考）SeeDance2.0平替R2V 新版全能G视频15S(贞贞API)_2033804502687555585.json
 hash: fa878cd9ee6d0313
 coverage: 0.6
 learned_at: 2026-10-15 22:35:41

@@ -4,7 +4,7 @@ name: LTX2.3图生音画同步运镜视频_2030057331559505922.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030057331559505922.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生音画同步运镜视频_2030057331559505922.json
 hash: e9654cd36e3a8cb9
 coverage: 0.95
 learned_at: 2026-10-15 22:35:25

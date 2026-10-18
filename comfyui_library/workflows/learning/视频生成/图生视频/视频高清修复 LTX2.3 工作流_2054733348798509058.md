@@ -4,7 +4,7 @@ name: 视频高清修复 LTX2.3 工作流_2054733348798509058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054733348798509058.json
+file: comfyui_library/workflows/视频生成/图生视频/视频高清修复 LTX2.3 工作流_2054733348798509058.json
 hash: 3ed3136ce46f471d
 coverage: 1
 learned_at: 2026-10-15 22:37:50

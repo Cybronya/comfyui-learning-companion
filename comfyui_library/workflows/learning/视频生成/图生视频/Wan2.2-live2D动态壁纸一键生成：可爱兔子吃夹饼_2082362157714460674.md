@@ -4,7 +4,7 @@ name: Wan2.2-live2D动态壁纸一键生成：可爱兔子吃夹饼_208236215771
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082362157714460674.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-live2D动态壁纸一键生成：可爱兔子吃夹饼_2082362157714460674.json
 hash: fe7647d3556a801d
 coverage: 1
 learned_at: 2026-10-15 22:42:30

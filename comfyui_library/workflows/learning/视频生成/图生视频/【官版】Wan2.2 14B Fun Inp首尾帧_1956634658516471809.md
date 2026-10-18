@@ -4,7 +4,7 @@ name: 【官版】Wan2.2 14B Fun Inp首尾帧_1956634658516471809.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956634658516471809.json
+file: comfyui_library/workflows/视频生成/图生视频/【官版】Wan2.2 14B Fun Inp首尾帧_1956634658516471809.json
 hash: 0a2e61b01e34b187
 coverage: 0.891892
 learned_at: 2026-10-15 22:31:14

@@ -4,7 +4,7 @@ name: Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052450080971603969.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2换脸图片换脸视频动作迁移视频换装人物替换动作迁移支持10s视频换脸plus_2052450080971603969.json
 hash: a5dd3fc6ab4581c3
 coverage: 0.638889
 learned_at: 2026-10-15 22:37:30

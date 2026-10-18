@@ -4,7 +4,7 @@ name: wan2.1万相1080P60帧图生视频官方工作流版（提示词优化+高
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1916481916541796354.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1万相1080P60帧图生视频官方工作流版（提示词优化+高清放大+插帧）_1916481916541796354.json
 hash: 31152cdcde687e45
 coverage: 0.913043
 learned_at: 2026-10-15 22:29:38

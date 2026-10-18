@@ -4,7 +4,7 @@ name: LTX2.3-首中尾3帧变身转场特效_2040262792845987841.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040262792845987841.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-首中尾3帧变身转场特效_2040262792845987841.json
 hash: a8e77071752eee19
 coverage: 0.919355
 learned_at: 2026-10-15 22:36:14

@@ -4,7 +4,7 @@ name: Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957619352830930946.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 图生视频 官方单采样器 1_1957619352830930946.json
 hash: 79aacc25f5638c29
 coverage: 0.769231
 learned_at: 2026-10-15 22:31:17

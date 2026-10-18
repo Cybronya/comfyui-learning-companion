@@ -4,7 +4,7 @@ name: 万相wan2.1-T2v-文生视频放大补帧（详细讲解使用）_19078171
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1907817176102019074.json
+file: comfyui_library/workflows/视频生成/文生视频/万相wan2.1-T2v-文生视频放大补帧（详细讲解使用）_1907817176102019074.json
 hash: 3bac13e45ff150ab
 coverage: 0.65625
 learned_at: 2026-10-15 22:43:21

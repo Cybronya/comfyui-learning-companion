@@ -4,7 +4,7 @@ name: Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957318001500549121.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 FUN 控制模型 视频姿态动作迁移_1957318001500549121.json
 hash: a9e57b8818fd8729
 coverage: 0.467532
 learned_at: 2026-10-15 22:31:16

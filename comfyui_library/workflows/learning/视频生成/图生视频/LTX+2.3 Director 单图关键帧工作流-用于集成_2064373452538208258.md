@@ -4,7 +4,7 @@ name: LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064373452538208258.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX+2.3 Director 单图关键帧工作流-用于集成_2064373452538208258.json
 hash: 1b2711e3fb3d080d
 coverage: 0.705882
 learned_at: 2026-10-15 22:39:24

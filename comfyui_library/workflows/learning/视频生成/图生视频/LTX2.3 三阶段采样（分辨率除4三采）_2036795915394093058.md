@@ -4,7 +4,7 @@ name: LTX2.3 三阶段采样（分辨率除4三采）_2036795915394093058.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036795915394093058.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 三阶段采样（分辨率除4三采）_2036795915394093058.json
 hash: 71fca279eb87a7e1
 coverage: 0.864865
 learned_at: 2026-10-15 22:35:53

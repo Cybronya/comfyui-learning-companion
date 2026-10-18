@@ -4,7 +4,7 @@ name: 【张元英跳舞】WAN2.1 跳舞特效_1914559831519494146.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914559831519494146.json
+file: comfyui_library/workflows/视频生成/图生视频/【张元英跳舞】WAN2.1 跳舞特效_1914559831519494146.json
 hash: d2131dcd1fbac93e
 coverage: 1
 learned_at: 2026-10-15 22:29:36

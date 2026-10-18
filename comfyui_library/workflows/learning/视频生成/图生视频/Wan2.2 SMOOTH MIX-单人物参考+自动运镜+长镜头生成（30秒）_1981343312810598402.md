@@ -4,7 +4,7 @@ name: Wan2.2 SMOOTH MIX-单人物参考+自动运镜+长镜头生成（30秒）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981343312810598402.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 SMOOTH MIX-单人物参考+自动运镜+长镜头生成（30秒）_1981343312810598402.json
 hash: 71be2defa144362f
 coverage: 0.956522
 learned_at: 2026-10-15 22:32:37

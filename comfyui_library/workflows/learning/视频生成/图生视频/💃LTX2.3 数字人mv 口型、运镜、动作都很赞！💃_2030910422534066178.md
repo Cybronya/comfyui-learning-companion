@@ -4,7 +4,7 @@ name: 💃LTX2.3 数字人mv 口型、运镜、动作都很赞！💃_2030910422
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030910422534066178.json
+file: comfyui_library/workflows/视频生成/图生视频/💃LTX2.3 数字人mv 口型、运镜、动作都很赞！💃_2030910422534066178.json
 hash: 170cdaeb968b9529
 coverage: 0.960784
 learned_at: 2026-10-15 22:35:28

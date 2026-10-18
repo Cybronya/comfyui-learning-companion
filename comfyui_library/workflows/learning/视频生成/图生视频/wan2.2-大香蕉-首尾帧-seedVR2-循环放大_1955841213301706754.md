@@ -4,7 +4,7 @@ name: wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955841213301706754.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-大香蕉-首尾帧-seedVR2-循环放大_1955841213301706754.json
 hash: 5195ea18d098b585
 coverage: 0.530864
 learned_at: 2026-10-15 22:31:10

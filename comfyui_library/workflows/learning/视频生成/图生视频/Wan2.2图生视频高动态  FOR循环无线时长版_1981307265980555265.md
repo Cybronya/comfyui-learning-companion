@@ -4,7 +4,7 @@ name: Wan2.2图生视频高动态  FOR循环无线时长版_1981307265980555265.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981307265980555265.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2图生视频高动态  FOR循环无线时长版_1981307265980555265.json
 hash: 93757fd0bc3fe6e0
 coverage: 0.959184
 learned_at: 2026-10-15 22:32:37

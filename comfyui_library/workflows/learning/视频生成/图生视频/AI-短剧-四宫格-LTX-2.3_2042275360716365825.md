@@ -4,7 +4,7 @@ name: AI-短剧-四宫格-LTX-2.3_2042275360716365825.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042275360716365825.json
+file: comfyui_library/workflows/视频生成/图生视频/AI-短剧-四宫格-LTX-2.3_2042275360716365825.json
 hash: 903340afb6a7653a
 coverage: 0.569767
 learned_at: 2026-10-15 22:36:26

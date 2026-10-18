@@ -4,7 +4,7 @@ name: 【首中尾帧视频】Wan2.2-全能图片pro故事分镜（一键成片�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982650581548449794.json
+file: comfyui_library/workflows/视频生成/图生视频/【首中尾帧视频】Wan2.2-全能图片pro故事分镜（一键成片）_1982650581548449794.json
 hash: 48b9d3eddeb52950
 coverage: 0.732394
 learned_at: 2026-10-15 22:32:42

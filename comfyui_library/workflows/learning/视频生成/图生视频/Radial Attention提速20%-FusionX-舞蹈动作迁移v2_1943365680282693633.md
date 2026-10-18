@@ -4,7 +4,7 @@ name: Radial Attention提速20%-FusionX-舞蹈动作迁移v2_1943365680282693633
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1943365680282693633.json
+file: comfyui_library/workflows/视频生成/图生视频/Radial Attention提速20%-FusionX-舞蹈动作迁移v2_1943365680282693633.json
 hash: 0947ac2d24537f82
 coverage: 0.69697
 learned_at: 2026-10-15 22:30:38

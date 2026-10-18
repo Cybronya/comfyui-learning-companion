@@ -4,7 +4,7 @@ name: Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_19803
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980300907424473089.json
+file: comfyui_library/workflows/视频生成/图生视频/Work-FIsh-WAN2.2-LightX2V-I2V超强动态，高质量，高遵循度_1980300907424473089.json
 hash: b44f357e03621c49
 coverage: 0.430556
 learned_at: 2026-10-15 22:32:30

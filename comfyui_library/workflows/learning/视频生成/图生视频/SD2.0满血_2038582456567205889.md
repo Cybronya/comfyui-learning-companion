@@ -4,7 +4,7 @@ name: SD2.0满血_2038582456567205889.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038582456567205889.json
+file: comfyui_library/workflows/视频生成/图生视频/SD2.0满血_2038582456567205889.json
 hash: e2297140f644562e
 coverage: 1
 learned_at: 2026-10-15 22:36:03

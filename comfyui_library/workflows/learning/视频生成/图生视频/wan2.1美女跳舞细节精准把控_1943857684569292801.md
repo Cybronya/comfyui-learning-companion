@@ -4,7 +4,7 @@ name: wan2.1美女跳舞细节精准把控_1943857684569292801.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1943857684569292801.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1美女跳舞细节精准把控_1943857684569292801.json
 hash: fbe1eda294199409
 coverage: 1
 learned_at: 2026-10-15 22:30:39

@@ -4,7 +4,7 @@ name: 通义万相Wan2.1图生视频GGUF量化16g显存可用_189542372462152908
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1895423724621529089.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相Wan2.1图生视频GGUF量化16g显存可用_1895423724621529089.json
 hash: c74d4947f6815eed
 coverage: 1
 learned_at: 2026-10-15 22:29:17

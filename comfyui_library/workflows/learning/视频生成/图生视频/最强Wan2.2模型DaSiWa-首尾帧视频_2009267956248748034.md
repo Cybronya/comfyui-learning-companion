@@ -4,7 +4,7 @@ name: 最强Wan2.2模型DaSiWa-首尾帧视频_2009267956248748034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009267956248748034.json
+file: comfyui_library/workflows/视频生成/图生视频/最强Wan2.2模型DaSiWa-首尾帧视频_2009267956248748034.json
 hash: 69af65feb4567ecc
 coverage: 0.763636
 learned_at: 2026-10-15 22:34:12

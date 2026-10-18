@@ -4,7 +4,7 @@ name: wan2.1 无人机航拍_1943534867973873665.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1943534867973873665.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 无人机航拍_1943534867973873665.json
 hash: af0b4f1e9e77d33e
 coverage: 1
 learned_at: 2026-10-15 22:43:30

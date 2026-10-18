@@ -4,7 +4,7 @@ name: Wan2.2文生视频KJ版（自动润饰提示词）_1950563765865598978.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950563765865598978.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2文生视频KJ版（自动润饰提示词）_1950563765865598978.json
 hash: fc2f53f2e33ef962
 coverage: 0.972973
 learned_at: 2026-10-15 22:43:36

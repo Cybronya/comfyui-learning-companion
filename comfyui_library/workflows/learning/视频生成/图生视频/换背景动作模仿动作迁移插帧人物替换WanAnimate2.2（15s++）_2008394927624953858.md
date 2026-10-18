@@ -4,7 +4,7 @@ name: 换背景动作模仿动作迁移插帧人物替换WanAnimate2.2（15s++�
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008394927624953858.json
+file: comfyui_library/workflows/视频生成/图生视频/换背景动作模仿动作迁移插帧人物替换WanAnimate2.2（15s++）_2008394927624953858.json
 hash: ec407d20d9ddfbc9
 coverage: 0.645455
 learned_at: 2026-10-15 22:34:07

@@ -4,7 +4,7 @@ name: 【九镜联动·超燃短片一键制作】全能图片pro 故事分镜V2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989325404936826881.json
+file: comfyui_library/workflows/视频生成/图生视频/【九镜联动·超燃短片一键制作】全能图片pro 故事分镜V2-Wan2.2 FMLM 关键帧联动_1989325404936826881.json
 hash: b23c521881d62b4a
 coverage: 0.767123
 learned_at: 2026-10-15 22:33:06

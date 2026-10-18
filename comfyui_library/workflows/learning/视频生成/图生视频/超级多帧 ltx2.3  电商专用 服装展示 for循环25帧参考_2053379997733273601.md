@@ -4,7 +4,7 @@ name: 超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_205337
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053379997733273601.json
+file: comfyui_library/workflows/视频生成/图生视频/超级多帧 ltx2.3  电商专用 服装展示 for循环25帧参考_2053379997733273601.json
 hash: 6cfbaf004e561ce0
 coverage: 0.784615
 learned_at: 2026-10-15 22:37:39

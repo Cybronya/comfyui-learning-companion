@@ -4,7 +4,7 @@ name: LTX2.3导演工作流自定义分镜更随心_2057286566376202241.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057286566376202241.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3导演工作流自定义分镜更随心_2057286566376202241.json
 hash: 2cebf0c4fc88dcc6
 coverage: 0.971429
 learned_at: 2026-10-15 22:38:09

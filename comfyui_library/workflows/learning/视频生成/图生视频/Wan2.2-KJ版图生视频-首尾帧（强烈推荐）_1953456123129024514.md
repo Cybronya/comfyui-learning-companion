@@ -4,7 +4,7 @@ name: Wan2.2-KJ版图生视频-首尾帧（强烈推荐）_1953456123129024514.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953456123129024514.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-KJ版图生视频-首尾帧（强烈推荐）_1953456123129024514.json
 hash: 4cc30b3d7f58db0e
 coverage: 0.972973
 learned_at: 2026-10-15 22:31:05

@@ -4,7 +4,7 @@ name: 【后拉运镜】Wan2.2+FusionX图生视频（基础流）_19503292010040
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950329201004077057.json
+file: comfyui_library/workflows/视频生成/图生视频/【后拉运镜】Wan2.2+FusionX图生视频（基础流）_1950329201004077057.json
 hash: 0bc79d2f7308a50b
 coverage: 0.701299
 learned_at: 2026-10-15 22:30:54

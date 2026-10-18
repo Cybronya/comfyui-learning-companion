@@ -4,7 +4,7 @@ name: remix_v3.0首帧生视频_2036017252914434050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036017252914434050.json
+file: comfyui_library/workflows/视频生成/图生视频/remix_v3.0首帧生视频_2036017252914434050.json
 hash: 0ff016eb487b77ec
 coverage: 0.939394
 learned_at: 2026-10-15 22:35:51

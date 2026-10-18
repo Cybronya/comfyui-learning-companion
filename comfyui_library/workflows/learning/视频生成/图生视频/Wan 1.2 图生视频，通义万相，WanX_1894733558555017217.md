@@ -4,7 +4,7 @@ name: Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894733558555017217.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 1.2 图生视频，通义万相，WanX_1894733558555017217.json
 hash: 44b108a45daaee2e
 coverage: 0.78125
 learned_at: 2026-10-15 22:29:16

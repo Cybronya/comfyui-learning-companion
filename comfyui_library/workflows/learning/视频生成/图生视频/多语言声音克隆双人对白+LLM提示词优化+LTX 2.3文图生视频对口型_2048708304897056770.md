@@ -4,7 +4,7 @@ name: 多语言声音克隆双人对白+LLM提示词优化+LTX 2.3文图生视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048708304897056770.json
+file: comfyui_library/workflows/视频生成/图生视频/多语言声音克隆双人对白+LLM提示词优化+LTX 2.3文图生视频对口型_2048708304897056770.json
 hash: 55a9f18edace75b6
 coverage: 0.675676
 learned_at: 2026-10-15 22:37:11

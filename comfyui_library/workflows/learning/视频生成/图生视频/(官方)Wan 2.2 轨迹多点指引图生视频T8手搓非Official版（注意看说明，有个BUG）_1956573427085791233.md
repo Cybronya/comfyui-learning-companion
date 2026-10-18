@@ -4,7 +4,7 @@ name: (官方)Wan 2.2 轨迹多点指引图生视频T8手搓非Official版（注
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956573427085791233.json
+file: comfyui_library/workflows/视频生成/图生视频/(官方)Wan 2.2 轨迹多点指引图生视频T8手搓非Official版（注意看说明，有个BUG）_1956573427085791233.json
 hash: 7410e3c617f2c961
 coverage: 0.868421
 learned_at: 2026-10-15 22:31:14

@@ -4,7 +4,7 @@ name: （最强）Wan2.2 Smooth V2模型图生视频极速版_201054037315578265
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010540373155782658.json
+file: comfyui_library/workflows/视频生成/图生视频/（最强）Wan2.2 Smooth V2模型图生视频极速版_2010540373155782658.json
 hash: 074d873a0d222aa2
 coverage: 0.745455
 learned_at: 2026-10-15 22:34:17

@@ -4,7 +4,7 @@ name: 便宜好用-LTX2.3图生视频KJ版 音画同步+提示词润色_20776924
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2077692472616120321.json
+file: comfyui_library/workflows/视频生成/图生视频/便宜好用-LTX2.3图生视频KJ版 音画同步+提示词润色_2077692472616120321.json
 hash: 6ecffff0af9d63b2
 coverage: 0.74
 learned_at: 2026-10-15 22:41:44

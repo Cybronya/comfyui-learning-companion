@@ -4,7 +4,7 @@ name: 6wan2.1万相图生视_1936315199089463298.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936315199089463298.json
+file: comfyui_library/workflows/视频生成/图生视频/6wan2.1万相图生视_1936315199089463298.json
 hash: 0c69ef21f8875d5b
 coverage: 0.849057
 learned_at: 2026-10-15 22:30:26

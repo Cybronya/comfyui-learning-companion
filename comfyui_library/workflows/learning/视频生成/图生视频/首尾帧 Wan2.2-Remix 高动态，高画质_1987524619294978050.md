@@ -4,7 +4,7 @@ name: 首尾帧 Wan2.2-Remix 高动态，高画质_1987524619294978050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987524619294978050.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧 Wan2.2-Remix 高动态，高画质_1987524619294978050.json
 hash: ed4ae01a2608f7a0
 coverage: 0.826923
 learned_at: 2026-10-15 22:32:59

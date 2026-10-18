@@ -4,7 +4,7 @@ name: (智能多参-正式版）- Ltx2.3 Licon-MSR+EasyMedia导演台V1_20634426
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063442671171104770.json
+file: comfyui_library/workflows/视频生成/图生视频/(智能多参-正式版）- Ltx2.3 Licon-MSR+EasyMedia导演台V1_2063442671171104770.json
 hash: af09eb4f75b80893
 coverage: 0.909091
 learned_at: 2026-10-15 22:39:13

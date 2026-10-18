@@ -4,7 +4,7 @@ name: 角色替换+动作迁移+面部表情 Wan2.2 Animate Sam2_199943837999969
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999438379999690753.json
+file: comfyui_library/workflows/视频生成/图生视频/角色替换+动作迁移+面部表情 Wan2.2 Animate Sam2_1999438379999690753.json
 hash: 37d74672b69fc698
 coverage: 0.632911
 learned_at: 2026-10-15 22:33:37

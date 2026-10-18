@@ -4,7 +4,7 @@ name: LTX2.3 MSR全能参考慢剧+自定义音频_2071508676480950273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071508676480950273.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MSR全能参考慢剧+自定义音频_2071508676480950273.json
 hash: 8f5eb153a4dfde5a
 coverage: 0.892857
 learned_at: 2026-10-15 22:40:46

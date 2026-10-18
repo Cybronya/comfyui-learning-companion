@@ -4,7 +4,7 @@ name: Afro 爆炸头 (wan 2.1 lora)_1906002583012429826.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1906002583012429826.json
+file: comfyui_library/workflows/视频生成/图生视频/Afro 爆炸头 (wan 2.1 lora)_1906002583012429826.json
 hash: 31bb9670074b2b7b
 coverage: 0.95
 learned_at: 2026-10-15 22:29:26

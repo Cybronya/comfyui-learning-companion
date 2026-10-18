@@ -4,7 +4,7 @@ name: 通义万相wan2.1万物旋转360度特效_1901238900759609346.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901238900759609346.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1万物旋转360度特效_1901238900759609346.json
 hash: dbd9d5ca35e43250
 coverage: 1
 learned_at: 2026-10-15 22:29:23

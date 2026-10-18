@@ -4,7 +4,7 @@ name: Wan2.2-Smooth+Mix+爆款复刻++多图首尾帧+16帧超快速版本_20007
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000759932968464386.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Smooth+Mix+爆款复刻++多图首尾帧+16帧超快速版本_2000759932968464386.json
 hash: e1e62d89c8a47779
 coverage: 0.979167
 learned_at: 2026-10-15 22:33:42

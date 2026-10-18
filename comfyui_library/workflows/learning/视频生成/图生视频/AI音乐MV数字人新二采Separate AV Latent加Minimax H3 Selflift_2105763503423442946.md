@@ -4,7 +4,7 @@ name: AI音乐MV数字人新二采Separate AV Latent加Minimax H3 Selflift_21057
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H_2105763503423442946.json
+file: comfyui_library/workflows/视频生成/图生视频/AI音乐MV数字人新二采Separate AV Latent加Minimax H3 Selflift_2105763503423442946.json
 hash: 131d6158ae15200e
 coverage: 0.890411
 learned_at: 2026-10-15 22:42:35

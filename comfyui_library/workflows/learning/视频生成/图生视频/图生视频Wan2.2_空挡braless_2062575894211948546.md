@@ -4,7 +4,7 @@ name: 图生视频Wan2.2_空挡braless_2062575894211948546.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062575894211948546.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频Wan2.2_空挡braless_2062575894211948546.json
 hash: a192a5a95e256edf
 coverage: 1
 learned_at: 2026-10-15 22:39:06

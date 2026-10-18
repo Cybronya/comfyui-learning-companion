@@ -4,7 +4,7 @@ name: Seedance2.0 Fast首尾帧图生视频_2040000421984473090.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040000421984473090.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 Fast首尾帧图生视频_2040000421984473090.json
 hash: 9716a3198a50f698
 coverage: 1
 learned_at: 2026-10-15 22:36:13

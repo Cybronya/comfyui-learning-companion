@@ -4,7 +4,7 @@ name: 影视剧情电影分镜制作Qwen Next Scene 1.0_1981410642760482818.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981410642760482818.json
+file: comfyui_library/workflows/视频生成/图生视频/影视剧情电影分镜制作Qwen Next Scene 1.0_1981410642760482818.json
 hash: 43051bc4fe61c400
 coverage: 0.857143
 learned_at: 2026-10-15 22:32:37

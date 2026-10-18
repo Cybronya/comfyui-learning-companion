@@ -4,7 +4,7 @@ name: LTX2.3 Org版 图片说话唱歌精确对口型 图生视频_2082459555551
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082459555551858689.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Org版 图片说话唱歌精确对口型 图生视频_2082459555551858689.json
 hash: 15b4c85492e7d658
 coverage: 0.859155
 learned_at: 2026-10-15 22:42:32

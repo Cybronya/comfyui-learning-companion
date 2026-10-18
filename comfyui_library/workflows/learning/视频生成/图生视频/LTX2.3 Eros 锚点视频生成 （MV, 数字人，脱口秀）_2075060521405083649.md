@@ -4,7 +4,7 @@ name: LTX2.3 Eros 锚点视频生成 （MV, 数字人，脱口秀）_20750605214
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075060521405083649.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Eros 锚点视频生成 （MV, 数字人，脱口秀）_2075060521405083649.json
 hash: 81071122e82fbd5c
 coverage: 0.583333
 learned_at: 2026-10-15 22:41:21

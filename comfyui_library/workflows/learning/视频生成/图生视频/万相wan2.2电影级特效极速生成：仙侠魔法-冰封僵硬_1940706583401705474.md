@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：仙侠魔法-冰封僵硬_194070
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1940706583401705474.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：仙侠魔法-冰封僵硬_1940706583401705474.json
 hash: 2af1c81b8a703dee
 coverage: 1
 learned_at: 2026-10-15 22:30:34

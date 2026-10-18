@@ -4,7 +4,7 @@ name: 剧情电商带货  seedance mini 版本   1080p 0.88元_S  效果可以_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071176299367981057.json
+file: comfyui_library/workflows/视频生成/图生视频/剧情电商带货  seedance mini 版本   1080p 0.88元_S  效果可以_2071176299367981057.json
 hash: 5c3a1435b19186d6
 coverage: 0.666667
 learned_at: 2026-10-15 22:40:43

@@ -4,7 +4,7 @@ name: wan2.2Animate_2027745342615195649.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2027745342615195649.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2Animate_2027745342615195649.json
 hash: 6d7effea55816d6c
 coverage: 0.692308
 learned_at: 2026-10-15 22:35:18

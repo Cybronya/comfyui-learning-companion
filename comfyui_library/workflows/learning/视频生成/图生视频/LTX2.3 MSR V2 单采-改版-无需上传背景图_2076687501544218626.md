@@ -4,7 +4,7 @@ name: LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076687501544218626.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 MSR V2 单采-改版-无需上传背景图_2076687501544218626.json
 hash: 6da63b893eb835a3
 coverage: 0.887097
 learned_at: 2026-10-15 22:41:33

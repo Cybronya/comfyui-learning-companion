@@ -4,7 +4,7 @@ name: Wan2.2-Animate 影视二创+多人动作迁移_2000494185805381633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000494185805381633.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate 影视二创+多人动作迁移_2000494185805381633.json
 hash: e9aec07d1697e4a0
 coverage: 0.344086
 learned_at: 2026-10-15 22:33:41

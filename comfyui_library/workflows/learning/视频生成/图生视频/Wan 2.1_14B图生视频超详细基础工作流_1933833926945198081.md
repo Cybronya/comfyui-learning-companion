@@ -4,7 +4,7 @@ name: Wan 2.1_14B图生视频超详细基础工作流_1933833926945198081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933833926945198081.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.1_14B图生视频超详细基础工作流_1933833926945198081.json
 hash: 644d08b77834d0a9
 coverage: 0.54
 learned_at: 2026-10-15 22:30:15

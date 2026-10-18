@@ -4,7 +4,7 @@ name: 画安-LTX2.3导演台_2064954613949886465.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064954613949886465.json
+file: comfyui_library/workflows/视频生成/图生视频/画安-LTX2.3导演台_2064954613949886465.json
 hash: 0af3bb3eca5ad61c
 coverage: 1
 learned_at: 2026-10-15 22:39:31

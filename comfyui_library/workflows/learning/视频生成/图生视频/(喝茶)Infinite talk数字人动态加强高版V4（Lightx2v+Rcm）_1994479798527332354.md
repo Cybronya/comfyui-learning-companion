@@ -4,7 +4,7 @@ name: (喝茶)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19944
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1994479798527332354.json
+file: comfyui_library/workflows/视频生成/图生视频/(喝茶)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1994479798527332354.json
 hash: 585de3c7c761b0aa
 coverage: 0.75
 learned_at: 2026-10-15 22:33:21

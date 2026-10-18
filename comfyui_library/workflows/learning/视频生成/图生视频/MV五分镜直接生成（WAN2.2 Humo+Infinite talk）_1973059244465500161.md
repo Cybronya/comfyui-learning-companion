@@ -4,7 +4,7 @@ name: MV五分镜直接生成（WAN2.2 Humo+Infinite talk）_1973059244465500161
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973059244465500161.json
+file: comfyui_library/workflows/视频生成/图生视频/MV五分镜直接生成（WAN2.2 Humo+Infinite talk）_1973059244465500161.json
 hash: b0865516c53b7aa3
 coverage: 1
 learned_at: 2026-10-15 22:32:02

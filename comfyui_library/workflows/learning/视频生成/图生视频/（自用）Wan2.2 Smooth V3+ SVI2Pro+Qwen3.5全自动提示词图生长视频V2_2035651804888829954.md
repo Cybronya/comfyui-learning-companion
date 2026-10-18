@@ -4,7 +4,7 @@ name: （自用）Wan2.2 Smooth V3+ SVI2Pro+Qwen3.5全自动提示词图生长�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2035651804888829954.json
+file: comfyui_library/workflows/视频生成/图生视频/（自用）Wan2.2 Smooth V3+ SVI2Pro+Qwen3.5全自动提示词图生长视频V2_2035651804888829954.json
 hash: 4e85e829a4c6c6e1
 coverage: 0.300716
 learned_at: 2026-10-15 22:35:50

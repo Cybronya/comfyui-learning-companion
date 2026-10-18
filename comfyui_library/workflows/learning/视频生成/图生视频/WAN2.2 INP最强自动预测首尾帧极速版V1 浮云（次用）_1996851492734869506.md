@@ -4,7 +4,7 @@ name: WAN2.2 INP最强自动预测首尾帧极速版V1 浮云（次用）_199685
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996851492734869506.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 INP最强自动预测首尾帧极速版V1 浮云（次用）_1996851492734869506.json
 hash: 4b1c0c88e19f2fa5
 coverage: 0.891304
 learned_at: 2026-10-15 22:33:27

@@ -4,7 +4,7 @@ name: 数字人动作，服装，动态展示 Wan2.2 Remix V3 图生视频超流
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079587652592037890.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人动作，服装，动态展示 Wan2.2 Remix V3 图生视频超流畅最强版_2079587652592037890.json
 hash: 8f34a4ace6e77b2c
 coverage: 1
 learned_at: 2026-10-15 22:42:05

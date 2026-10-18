@@ -4,7 +4,7 @@ name: 超牛叉 ltx2.3 电商带货 自定义 人物 产品 背景 动作 话术
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073463647009259520.json
+file: comfyui_library/workflows/视频生成/图生视频/超牛叉 ltx2.3 电商带货 自定义 人物 产品 背景 动作 话术  去字幕版_2073463647009259520.json
 hash: f4e1cb2608fb1cea
 coverage: 0.811321
 learned_at: 2026-10-15 22:41:07

@@ -4,7 +4,7 @@ name: 图生视频极速版Wan2.2 Rapid-AIO-Mega（极速版）_1967954562684432
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967954562684432386.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频极速版Wan2.2 Rapid-AIO-Mega（极速版）_1967954562684432386.json
 hash: 85cded8d577aa780
 coverage: 0.875
 learned_at: 2026-10-15 22:31:43

@@ -4,7 +4,7 @@ name: Wan2.2 Fun Vace魔改版高质量视频主体参考替换V1_19665485613809
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966548561380978690.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Fun Vace魔改版高质量视频主体参考替换V1_1966548561380978690.json
 hash: 9dffa2ddef7cff35
 coverage: 0.90566
 learned_at: 2026-10-15 22:31:38

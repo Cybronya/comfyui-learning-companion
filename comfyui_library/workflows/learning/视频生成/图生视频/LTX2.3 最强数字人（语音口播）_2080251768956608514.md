@@ -4,7 +4,7 @@ name: LTX2.3 最强数字人（语音口播）_2080251768956608514.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080251768956608514.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 最强数字人（语音口播）_2080251768956608514.json
 hash: dbf4c1f08e4e00bc
 coverage: 0.815385
 learned_at: 2026-10-15 22:42:11

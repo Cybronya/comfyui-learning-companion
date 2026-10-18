@@ -4,7 +4,7 @@ name: video_ltx2_3_FLframe_latent_injection_likeness1-2-c_2074509736741003266.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074509736741003266.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_FLframe_latent_injection_likeness1-2-c_2074509736741003266.json
 hash: 9393ba8e8f0e2f74
 coverage: 0.458333
 learned_at: 2026-10-15 22:41:16

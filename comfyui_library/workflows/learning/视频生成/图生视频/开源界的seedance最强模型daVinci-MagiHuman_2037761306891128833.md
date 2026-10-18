@@ -4,7 +4,7 @@ name: 开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037761306891128833.json
+file: comfyui_library/workflows/视频生成/图生视频/开源界的seedance最强模型daVinci-MagiHuman_2037761306891128833.json
 hash: c05fe9c4f127dcac
 coverage: 0.875
 learned_at: 2026-10-15 22:35:58

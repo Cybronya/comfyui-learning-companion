@@ -4,7 +4,7 @@ name: 精准控制LTX2.3图文生视频工作流（强控一致性）_2052683608
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052683608971849729.json
+file: comfyui_library/workflows/视频生成/图生视频/精准控制LTX2.3图文生视频工作流（强控一致性）_2052683608971849729.json
 hash: c82c5d278e9c04de
 coverage: 0.744186
 learned_at: 2026-10-15 22:37:31

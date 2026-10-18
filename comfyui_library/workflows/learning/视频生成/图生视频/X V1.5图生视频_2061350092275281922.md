@@ -4,7 +4,7 @@ name: X V1.5图生视频_2061350092275281922.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061350092275281922.json
+file: comfyui_library/workflows/视频生成/图生视频/X V1.5图生视频_2061350092275281922.json
 hash: 5151d94cbc7eef79
 coverage: 1
 learned_at: 2026-10-15 22:38:53

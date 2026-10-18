@@ -4,7 +4,7 @@ name: ltx2.3首尾帧过度_2037180362916368386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037180362916368386.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3首尾帧过度_2037180362916368386.json
 hash: 0e72493f1b2969b2
 coverage: 0.836066
 learned_at: 2026-10-15 22:35:56

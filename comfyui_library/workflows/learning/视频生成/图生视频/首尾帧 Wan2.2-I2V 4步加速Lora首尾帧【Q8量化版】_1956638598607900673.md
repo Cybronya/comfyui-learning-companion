@@ -4,7 +4,7 @@ name: 首尾帧 Wan2.2-I2V 4步加速Lora首尾帧【Q8量化版】_195663859860
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956638598607900673.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧 Wan2.2-I2V 4步加速Lora首尾帧【Q8量化版】_1956638598607900673.json
 hash: 237f8a4220cb15fc
 coverage: 0.909091
 learned_at: 2026-10-15 22:31:14

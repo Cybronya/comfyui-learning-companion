@@ -4,7 +4,7 @@ name: Wan Animate2.2动作迁移Move魔改加速版V2（无限时长）_19691166
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969116607094157313.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2动作迁移Move魔改加速版V2（无限时长）_1969116607094157313.json
 hash: b7a53507ba9c6823
 coverage: 0.555556
 learned_at: 2026-10-15 22:31:47

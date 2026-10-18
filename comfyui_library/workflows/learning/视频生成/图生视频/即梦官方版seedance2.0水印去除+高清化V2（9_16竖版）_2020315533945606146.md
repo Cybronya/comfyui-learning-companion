@@ -4,7 +4,7 @@ name: 即梦官方版seedance2.0水印去除+高清化V2（9_16竖版）_2020315
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020315533945606146.json
+file: comfyui_library/workflows/视频生成/图生视频/即梦官方版seedance2.0水印去除+高清化V2（9_16竖版）_2020315533945606146.json
 hash: 19fbf49bdec79451
 coverage: 0.885714
 learned_at: 2026-10-15 22:35:06

@@ -4,7 +4,7 @@ name: DaVinci-MagiHuman+Qwen3.5图生视频V1（1080P）_2037449795937243137.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037449795937243137.json
+file: comfyui_library/workflows/视频生成/图生视频/DaVinci-MagiHuman+Qwen3.5图生视频V1（1080P）_2037449795937243137.json
 hash: 8e4d8c37f3a97f0e
 coverage: 0.9
 learned_at: 2026-10-15 22:35:57

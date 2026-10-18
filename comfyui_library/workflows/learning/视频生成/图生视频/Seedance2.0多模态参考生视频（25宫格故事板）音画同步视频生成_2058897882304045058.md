@@ -4,7 +4,7 @@ name: Seedance2.0多模态参考生视频（25宫格故事板）音画同步视�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058897882304045058.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0多模态参考生视频（25宫格故事板）音画同步视频生成_2058897882304045058.json
 hash: c06bf38270989c73
 coverage: 1
 learned_at: 2026-10-15 22:38:31

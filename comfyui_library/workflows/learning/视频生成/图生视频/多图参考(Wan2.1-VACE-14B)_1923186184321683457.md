@@ -4,7 +4,7 @@ name: 多图参考(Wan2.1-VACE-14B)_1923186184321683457.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1923186184321683457.json
+file: comfyui_library/workflows/视频生成/图生视频/多图参考(Wan2.1-VACE-14B)_1923186184321683457.json
 hash: c6e7f236008f08e2
 coverage: 0.921053
 learned_at: 2026-10-15 22:29:47

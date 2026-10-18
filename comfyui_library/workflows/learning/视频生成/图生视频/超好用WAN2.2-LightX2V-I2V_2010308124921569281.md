@@ -4,7 +4,7 @@ name: 超好用WAN2.2-LightX2V-I2V_2010308124921569281.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010308124921569281.json
+file: comfyui_library/workflows/视频生成/图生视频/超好用WAN2.2-LightX2V-I2V_2010308124921569281.json
 hash: d4b3ecc444dd235b
 coverage: 0.554054
 learned_at: 2026-10-15 22:34:16

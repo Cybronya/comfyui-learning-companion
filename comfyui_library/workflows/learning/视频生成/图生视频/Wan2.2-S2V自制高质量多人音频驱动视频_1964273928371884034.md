@@ -4,7 +4,7 @@ name: Wan2.2-S2V自制高质量多人音频驱动视频_1964273928371884034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964273928371884034.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-S2V自制高质量多人音频驱动视频_1964273928371884034.json
 hash: 484d060ce02f36b7
 coverage: 0.651515
 learned_at: 2026-10-15 22:31:34

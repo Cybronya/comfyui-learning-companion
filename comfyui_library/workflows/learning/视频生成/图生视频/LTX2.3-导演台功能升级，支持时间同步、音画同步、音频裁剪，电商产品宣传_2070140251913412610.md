@@ -4,7 +4,7 @@ name: LTX2.3-导演台功能升级，支持时间同步、音画同步、音频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070140251913412610.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-导演台功能升级，支持时间同步、音画同步、音频裁剪，电商产品宣传_2070140251913412610.json
 hash: fbaedb7168031dc4
 coverage: 0.885714
 learned_at: 2026-10-15 22:40:36

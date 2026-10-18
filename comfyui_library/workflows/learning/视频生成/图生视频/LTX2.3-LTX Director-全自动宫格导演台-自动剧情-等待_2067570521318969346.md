@@ -4,7 +4,7 @@ name: LTX2.3-LTX Director-全自动宫格导演台-自动剧情-等待_206757052
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067570521318969346.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-LTX Director-全自动宫格导演台-自动剧情-等待_2067570521318969346.json
 hash: 639c24b291ecca77
 coverage: 0.588235
 learned_at: 2026-10-15 22:40:06

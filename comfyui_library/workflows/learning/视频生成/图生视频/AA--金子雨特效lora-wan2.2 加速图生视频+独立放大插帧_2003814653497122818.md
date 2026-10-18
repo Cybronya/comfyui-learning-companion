@@ -4,7 +4,7 @@ name: AA--金子雨特效lora-wan2.2 加速图生视频+独立放大插帧_20038
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003814653497122818.json
+file: comfyui_library/workflows/视频生成/图生视频/AA--金子雨特效lora-wan2.2 加速图生视频+独立放大插帧_2003814653497122818.json
 hash: e437665779339316
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:52

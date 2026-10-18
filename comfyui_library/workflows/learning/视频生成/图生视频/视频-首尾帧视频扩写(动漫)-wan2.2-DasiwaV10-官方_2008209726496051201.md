@@ -4,7 +4,7 @@ name: 视频-首尾帧视频扩写(动漫)-wan2.2-DasiwaV10-官方_2008209726496
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008209726496051201.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-首尾帧视频扩写(动漫)-wan2.2-DasiwaV10-官方_2008209726496051201.json
 hash: 76f5f0e933d5d8f6
 coverage: 0.653333
 learned_at: 2026-10-15 22:34:06

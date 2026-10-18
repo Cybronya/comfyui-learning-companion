@@ -4,7 +4,7 @@ name: LTX2.3-VBVR逻辑优化-图生视频-AIGC大赏_2042489551154847745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042489551154847745.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-VBVR逻辑优化-图生视频-AIGC大赏_2042489551154847745.json
 hash: de56cacdf7ed3818
 coverage: 0.913793
 learned_at: 2026-10-15 22:36:28

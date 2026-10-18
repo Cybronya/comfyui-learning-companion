@@ -4,7 +4,7 @@ name: MultiTalk+Wan2.2（高低噪）加速版数字人V1（人物不动版UNI3C
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955533790640836610.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk+Wan2.2（高低噪）加速版数字人V1（人物不动版UNI3C运镜）_1955533790640836610.json
 hash: c2b67772fe0f7227
 coverage: 0.808824
 learned_at: 2026-10-15 22:31:09

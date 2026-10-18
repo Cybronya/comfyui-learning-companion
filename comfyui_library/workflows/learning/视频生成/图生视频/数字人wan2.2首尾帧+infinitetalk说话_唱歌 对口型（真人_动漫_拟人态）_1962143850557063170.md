@@ -4,7 +4,7 @@ name: 数字人wan2.2首尾帧+infinitetalk说话_唱歌 对口型（真人_动�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962143850557063170.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人wan2.2首尾帧+infinitetalk说话_唱歌 对口型（真人_动漫_拟人态）_1962143850557063170.json
 hash: 5d896e5d21964a57
 coverage: 0.966667
 learned_at: 2026-10-15 22:31:30

@@ -4,7 +4,7 @@ name: Wan2.2多版本模型对比工作流（I2V图生视频）_1979808803409530
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979808803409530882.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2多版本模型对比工作流（I2V图生视频）_1979808803409530882.json
 hash: 6d25f479f4c667f8
 coverage: 0.957265
 learned_at: 2026-10-15 22:32:26

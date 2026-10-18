@@ -4,7 +4,7 @@ name: LTX2.3（蒸馏版）+Distilled1.1+图文音频生视频工作流 V2.0_204
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2045304246991593473.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3（蒸馏版）+Distilled1.1+图文音频生视频工作流 V2.0_2045304246991593473.json
 hash: 1807c5d8d944d450
 coverage: 0.816092
 learned_at: 2026-10-15 22:36:46

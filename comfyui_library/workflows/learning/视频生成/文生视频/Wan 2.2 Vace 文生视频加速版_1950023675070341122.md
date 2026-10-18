@@ -4,7 +4,7 @@ name: Wan 2.2 Vace 文生视频加速版_1950023675070341122.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950023675070341122.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan 2.2 Vace 文生视频加速版_1950023675070341122.json
 hash: 04d4c00b350a4e04
 coverage: 0.827586
 learned_at: 2026-10-15 22:43:33

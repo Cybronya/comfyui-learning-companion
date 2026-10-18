@@ -4,7 +4,7 @@ name: Ltx2.3动作模仿+图片跳舞+动作迁移单人跳舞 动作复刻_2079
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079154920137248770.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3动作模仿+图片跳舞+动作迁移单人跳舞 动作复刻_2079154920137248770.json
 hash: e037c247ef59d3a0
 coverage: 0.632653
 learned_at: 2026-10-15 22:42:00

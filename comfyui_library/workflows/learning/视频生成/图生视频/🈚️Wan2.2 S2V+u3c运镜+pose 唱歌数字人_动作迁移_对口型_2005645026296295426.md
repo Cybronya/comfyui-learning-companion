@@ -4,7 +4,7 @@ name: 🈚️Wan2.2 S2V+u3c运镜+pose 唱歌数字人_动作迁移_对口型_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005645026296295426.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️Wan2.2 S2V+u3c运镜+pose 唱歌数字人_动作迁移_对口型_2005645026296295426.json
 hash: b80cfe0fd17c33bc
 coverage: 0.416667
 learned_at: 2026-10-15 22:33:58

@@ -4,7 +4,7 @@ name: LTX 2.3 三种机甲变身(lora) 流_2041514210315735041.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041514210315735041.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 三种机甲变身(lora) 流_2041514210315735041.json
 hash: ddfcf57399b6628f
 coverage: 0.846154
 learned_at: 2026-10-15 22:36:20

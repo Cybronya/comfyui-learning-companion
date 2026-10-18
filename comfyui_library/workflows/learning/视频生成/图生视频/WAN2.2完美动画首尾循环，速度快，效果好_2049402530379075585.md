@@ -4,7 +4,7 @@ name: WAN2.2完美动画首尾循环，速度快，效果好_2049402530379075585
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049402530379075585.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2完美动画首尾循环，速度快，效果好_2049402530379075585.json
 hash: 6e1d5a0be874f426
 coverage: 0.46729
 learned_at: 2026-10-15 22:37:14

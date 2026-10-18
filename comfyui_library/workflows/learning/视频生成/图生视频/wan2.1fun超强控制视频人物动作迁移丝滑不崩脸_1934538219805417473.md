@@ -4,7 +4,7 @@ name: wan2.1fun超强控制视频人物动作迁移丝滑不崩脸_1934538219805
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934538219805417473.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1fun超强控制视频人物动作迁移丝滑不崩脸_1934538219805417473.json
 hash: e9349bce48a6f3fb
 coverage: 0.722222
 learned_at: 2026-10-15 22:30:17

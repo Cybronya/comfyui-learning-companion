@@ -4,7 +4,7 @@ name: Smooth Mix Wan 2.2：图生视频，静态化动，电影质感即刻呈�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979748437547716610.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix Wan 2.2：图生视频，静态化动，电影质感即刻呈现！_1979748437547716610.json
 hash: 8957d0f35fe11403
 coverage: 0.762712
 learned_at: 2026-10-15 22:32:25

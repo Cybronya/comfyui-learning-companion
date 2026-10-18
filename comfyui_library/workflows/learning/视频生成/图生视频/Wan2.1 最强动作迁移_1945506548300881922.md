@@ -4,7 +4,7 @@ name: Wan2.1 最强动作迁移_1945506548300881922.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1945506548300881922.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 最强动作迁移_1945506548300881922.json
 hash: b96ee5616eb3763f
 coverage: 0.72
 learned_at: 2026-10-15 22:30:42

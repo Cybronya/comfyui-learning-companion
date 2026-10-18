@@ -4,7 +4,7 @@ name: V2 Wan2.3 Animate 超自然动作迁移_2008454973708832769.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008454973708832769.json
+file: comfyui_library/workflows/视频生成/图生视频/V2 Wan2.3 Animate 超自然动作迁移_2008454973708832769.json
 hash: d676024c9408c7d3
 coverage: 0.511364
 learned_at: 2026-10-15 22:34:07

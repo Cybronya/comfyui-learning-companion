@@ -4,7 +4,7 @@ name: Ltx2.3视频配音+自定义音频_2080444148519362561.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080444148519362561.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3视频配音+自定义音频_2080444148519362561.json
 hash: 27c02ed08bb3124e
 coverage: 0.866667
 learned_at: 2026-10-15 22:42:13

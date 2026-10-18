@@ -4,7 +4,7 @@ name: Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000772205925498882.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.6-（图生视频10-15秒）1080P，画质与音频完美同步！_2000772205925498882.json
 hash: 0c0b3d1e8f69b361
 coverage: 0.666667
 learned_at: 2026-10-15 22:33:42

@@ -4,7 +4,7 @@ name: wan2.2 KJ版图生视频-低显存工作流_1950109940024262657.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950109940024262657.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 KJ版图生视频-低显存工作流_1950109940024262657.json
 hash: 78341c36a97c9f2e
 coverage: 0.909091
 learned_at: 2026-10-15 22:30:53

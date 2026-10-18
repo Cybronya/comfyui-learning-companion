@@ -4,7 +4,7 @@ name: 【Work-Fisher】全自动六宫格LTX2.3导演台_2062044647668666370.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062044647668666370.json
+file: comfyui_library/workflows/视频生成/图生视频/【Work-Fisher】全自动六宫格LTX2.3导演台_2062044647668666370.json
 hash: 13855b6f7e4daf99
 coverage: 0.658537
 learned_at: 2026-10-15 22:38:59

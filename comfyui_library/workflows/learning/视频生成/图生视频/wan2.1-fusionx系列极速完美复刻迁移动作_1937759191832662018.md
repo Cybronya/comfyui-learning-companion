@@ -4,7 +4,7 @@ name: wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937759191832662018.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-fusionx系列极速完美复刻迁移动作_1937759191832662018.json
 hash: cb82c5223b5c484e
 coverage: 0.941176
 learned_at: 2026-10-15 22:30:29

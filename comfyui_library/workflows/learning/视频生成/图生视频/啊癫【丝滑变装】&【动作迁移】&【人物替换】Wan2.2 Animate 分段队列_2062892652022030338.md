@@ -4,7 +4,7 @@ name: 啊癫【丝滑变装】&【动作迁移】&【人物替换】Wan2.2 Anima
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062892652022030338.json
+file: comfyui_library/workflows/视频生成/图生视频/啊癫【丝滑变装】&【动作迁移】&【人物替换】Wan2.2 Animate 分段队列_2062892652022030338.json
 hash: 03fea05af6241a6c
 coverage: 0.455696
 learned_at: 2026-10-15 22:39:09

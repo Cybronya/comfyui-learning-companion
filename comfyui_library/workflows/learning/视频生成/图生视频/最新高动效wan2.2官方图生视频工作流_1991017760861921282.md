@@ -4,7 +4,7 @@ name: 最新高动效wan2.2官方图生视频工作流_1991017760861921282.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991017760861921282.json
+file: comfyui_library/workflows/视频生成/图生视频/最新高动效wan2.2官方图生视频工作流_1991017760861921282.json
 hash: 34fa913d6d805531
 coverage: 0.958333
 learned_at: 2026-10-15 22:33:12

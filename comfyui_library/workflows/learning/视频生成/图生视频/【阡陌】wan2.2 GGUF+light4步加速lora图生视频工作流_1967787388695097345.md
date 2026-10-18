@@ -4,7 +4,7 @@ name: 【阡陌】wan2.2 GGUF+light4步加速lora图生视频工作流_196778738
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967787388695097345.json
+file: comfyui_library/workflows/视频生成/图生视频/【阡陌】wan2.2 GGUF+light4步加速lora图生视频工作流_1967787388695097345.json
 hash: e17fbb6663619cd9
 coverage: 1
 learned_at: 2026-10-15 22:31:42

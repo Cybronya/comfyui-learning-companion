@@ -4,7 +4,7 @@ name: RH 全能视频V3.1 Image2Video（RH版）_2054435945293852673.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054435945293852673.json
+file: comfyui_library/workflows/视频生成/图生视频/RH 全能视频V3.1 Image2Video（RH版）_2054435945293852673.json
 hash: d99f6e3f7dba9c34
 coverage: 0.833333
 learned_at: 2026-10-15 22:37:47

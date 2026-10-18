@@ -4,7 +4,7 @@ name: Wan2.2 light I2V 4步图文生视频&首尾帧v1_1982433270455508994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982433270455508994.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 light I2V 4步图文生视频&首尾帧v1_1982433270455508994.json
 hash: 5ab592a809686b52
 coverage: 0.868852
 learned_at: 2026-10-15 22:32:41

@@ -4,7 +4,7 @@ name: seedance2.0制作汽车广告-支持真人参考工作流_2038779750277193
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038779750277193729.json
+file: comfyui_library/workflows/视频生成/图生视频/seedance2.0制作汽车广告-支持真人参考工作流_2038779750277193729.json
 hash: ee0d93b74e2c1795
 coverage: 1
 learned_at: 2026-10-15 22:36:04

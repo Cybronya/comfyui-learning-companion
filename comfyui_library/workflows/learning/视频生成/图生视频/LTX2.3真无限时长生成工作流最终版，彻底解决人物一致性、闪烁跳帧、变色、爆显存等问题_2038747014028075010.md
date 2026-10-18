@@ -4,7 +4,7 @@ name: LTX2.3真无限时长生成工作流最终版，彻底解决人物一致�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038747014028075010.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3真无限时长生成工作流最终版，彻底解决人物一致性、闪烁跳帧、变色、爆显存等问题_2038747014028075010.json
 hash: d6b813ae1b344b29
 coverage: 0.512821
 learned_at: 2026-10-15 22:36:04

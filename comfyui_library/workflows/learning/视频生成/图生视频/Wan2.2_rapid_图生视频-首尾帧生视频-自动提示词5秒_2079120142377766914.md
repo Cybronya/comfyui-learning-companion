@@ -4,7 +4,7 @@ name: Wan2.2_rapid_图生视频-首尾帧生视频-自动提示词5秒_207912014
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079120142377766914.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_rapid_图生视频-首尾帧生视频-自动提示词5秒_2079120142377766914.json
 hash: d9f84860208f4c58
 coverage: 0.689655
 learned_at: 2026-10-15 22:41:59

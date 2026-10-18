@@ -4,7 +4,7 @@ name: DaSiWaWan2.2-动漫视首尾帧_2007802630776561666.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007802630776561666.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWaWan2.2-动漫视首尾帧_2007802630776561666.json
 hash: e4b5eacf6c456214
 coverage: 1
 learned_at: 2026-10-15 22:34:05

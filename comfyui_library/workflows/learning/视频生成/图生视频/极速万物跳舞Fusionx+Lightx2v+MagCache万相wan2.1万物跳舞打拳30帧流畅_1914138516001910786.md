@@ -4,7 +4,7 @@ name: 极速万物跳舞Fusionx+Lightx2v+MagCache万相wan2.1万物跳舞打拳3
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914138516001910786.json
+file: comfyui_library/workflows/视频生成/图生视频/极速万物跳舞Fusionx+Lightx2v+MagCache万相wan2.1万物跳舞打拳30帧流畅_1914138516001910786.json
 hash: 3a174ee3a525b496
 coverage: 1
 learned_at: 2026-10-15 22:29:35

@@ -4,7 +4,7 @@ name: LTX2.3数字人口播短视频横板_2031510568200310786.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031510568200310786.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人口播短视频横板_2031510568200310786.json
 hash: f83a75eb320667ad
 coverage: 0.80597
 learned_at: 2026-10-15 22:35:31

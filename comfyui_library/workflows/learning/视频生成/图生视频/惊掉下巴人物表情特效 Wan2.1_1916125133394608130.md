@@ -4,7 +4,7 @@ name: 惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1916125133394608130.json
+file: comfyui_library/workflows/视频生成/图生视频/惊掉下巴人物表情特效 Wan2.1_1916125133394608130.json
 hash: a0928697c0757402
 coverage: 0.703704
 learned_at: 2026-10-15 22:29:38

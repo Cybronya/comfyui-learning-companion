@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：仙侠魔法-法天象地、飞�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914643124784721922.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：仙侠魔法-法天象地、飞天斩击等_1914643124784721922.json
 hash: 0edb738243cfe763
 coverage: 1
 learned_at: 2026-10-15 22:29:36

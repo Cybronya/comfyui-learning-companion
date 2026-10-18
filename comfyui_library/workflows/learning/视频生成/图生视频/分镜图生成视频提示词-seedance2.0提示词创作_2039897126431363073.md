@@ -4,7 +4,7 @@ name: 分镜图生成视频提示词-seedance2.0提示词创作_2039897126431363
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039897126431363073.json
+file: comfyui_library/workflows/视频生成/图生视频/分镜图生成视频提示词-seedance2.0提示词创作_2039897126431363073.json
 hash: bbfc3a770dfe7262
 coverage: 0.75
 learned_at: 2026-10-15 22:36:12

@@ -4,7 +4,7 @@ name: wan2.2-ti2v-5B文生视频摆尾猫_1952539360614920193.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952539360614920193.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-ti2v-5B文生视频摆尾猫_1952539360614920193.json
 hash: 4898b5c4f94b70bd
 coverage: 1
 learned_at: 2026-10-15 22:31:01

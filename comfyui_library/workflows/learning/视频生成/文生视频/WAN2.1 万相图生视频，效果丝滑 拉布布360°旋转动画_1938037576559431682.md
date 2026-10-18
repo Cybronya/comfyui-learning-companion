@@ -4,7 +4,7 @@ name: WAN2.1 万相图生视频，效果丝滑 拉布布360°旋转动画_193803
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1938037576559431682.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.1 万相图生视频，效果丝滑 拉布布360°旋转动画_1938037576559431682.json
 hash: 5856849882b5d046
 coverage: 1
 learned_at: 2026-10-15 22:43:30

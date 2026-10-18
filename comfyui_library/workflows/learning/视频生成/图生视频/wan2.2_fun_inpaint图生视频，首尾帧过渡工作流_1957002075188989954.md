@@ -4,7 +4,7 @@ name: wan2.2_fun_inpaint图生视频，首尾帧过渡工作流_1957002075188989
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957002075188989954.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_fun_inpaint图生视频，首尾帧过渡工作流_1957002075188989954.json
 hash: dfed22df6fe0142b
 coverage: 0.857143
 learned_at: 2026-10-15 22:31:15

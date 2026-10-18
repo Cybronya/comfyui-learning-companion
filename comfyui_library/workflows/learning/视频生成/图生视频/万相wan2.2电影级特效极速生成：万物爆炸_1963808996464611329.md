@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：万物爆炸_1963808996464611329
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963808996464611329.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：万物爆炸_1963808996464611329.json
 hash: eea7e01efad5e9c8
 coverage: 1
 learned_at: 2026-10-15 22:31:33

@@ -4,7 +4,7 @@ name: Infinite talk（Lightx2v+Rcm）-数字人说话-1分钟不变色-超长稳
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014643345397653506.json
+file: comfyui_library/workflows/视频生成/图生视频/Infinite talk（Lightx2v+Rcm）-数字人说话-1分钟不变色-超长稳定-水哥_2014643345397653506.json
 hash: 9be29a27e968a98d
 coverage: 0.9375
 learned_at: 2026-10-15 22:34:36

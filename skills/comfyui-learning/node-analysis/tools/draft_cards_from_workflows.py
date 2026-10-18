@@ -116,6 +116,8 @@ def collect_usage(targets, files=None):
         nodes = data.get("nodes", []) if isinstance(data, dict) else []
         seen = set()
         for n in nodes:
+            if not isinstance(n, dict):
+                continue  # 个别 workflow 的 nodes 数组混有非 dict 元素
             t = n.get("type")
             if t not in usage:
                 continue
@@ -123,8 +125,12 @@ def collect_usage(targets, files=None):
                 usage[t]["workflows"] += 1
                 seen.add(t)
             for i in n.get("inputs", []) or []:
+                if not isinstance(i, dict):
+                    continue
                 usage[t]["inputs"][f"{i.get('name')}:{i.get('type')}"] += 1
             for o in n.get("outputs", []) or []:
+                if not isinstance(o, dict):
+                    continue
                 usage[t]["outputs"][f"{o.get('name')}:{o.get('type')}"] += 1
             wv = n.get("widgets_values")
             if isinstance(wv, list):

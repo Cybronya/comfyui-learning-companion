@@ -4,7 +4,7 @@ name: WAN2.2图生视频（KJ8步+可做数据集）_1958716775745667074.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958716775745667074.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2图生视频（KJ8步+可做数据集）_1958716775745667074.json
 hash: df544d62de788b01
 coverage: 0.914286
 learned_at: 2026-10-15 22:31:22

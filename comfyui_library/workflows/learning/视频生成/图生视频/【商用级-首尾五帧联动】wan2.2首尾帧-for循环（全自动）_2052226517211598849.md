@@ -4,7 +4,7 @@ name: 【商用级-首尾五帧联动】wan2.2首尾帧-for循环（全自动）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052226517211598849.json
+file: comfyui_library/workflows/视频生成/图生视频/【商用级-首尾五帧联动】wan2.2首尾帧-for循环（全自动）_2052226517211598849.json
 hash: 5807a0bae9e70494
 coverage: 0.763889
 learned_at: 2026-10-15 22:37:27

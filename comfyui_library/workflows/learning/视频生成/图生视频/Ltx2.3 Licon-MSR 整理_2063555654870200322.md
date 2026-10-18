@@ -4,7 +4,7 @@ name: Ltx2.3 Licon-MSR 整理_2063555654870200322.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063555654870200322.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Licon-MSR 整理_2063555654870200322.json
 hash: ba937e31dac92e6c
 coverage: 0.76
 learned_at: 2026-10-15 22:39:15

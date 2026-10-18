@@ -4,7 +4,7 @@ name: 音画同处LTX2.0！【又快又好】_2015590078243938306.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015590078243938306.json
+file: comfyui_library/workflows/视频生成/图生视频/音画同处LTX2.0！【又快又好】_2015590078243938306.json
 hash: e361bdedb7df48e5
 coverage: 0.88
 learned_at: 2026-10-15 22:34:39

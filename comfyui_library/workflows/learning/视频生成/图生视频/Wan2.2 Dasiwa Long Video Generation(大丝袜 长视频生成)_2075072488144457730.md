@@ -4,7 +4,7 @@ name: Wan2.2 Dasiwa Long Video Generation(大丝袜 长视频生成)_20750724881
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075072488144457730.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Dasiwa Long Video Generation(大丝袜 长视频生成)_2075072488144457730.json
 hash: 702477e46a32a11d
 coverage: 0.454976
 learned_at: 2026-10-15 22:41:21

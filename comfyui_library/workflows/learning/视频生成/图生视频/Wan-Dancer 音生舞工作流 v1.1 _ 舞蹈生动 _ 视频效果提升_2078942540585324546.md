@@ -4,7 +4,7 @@ name: Wan-Dancer 音生舞工作流 v1.1 _ 舞蹈生动 _ 视频效果提升_207
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078942540585324546.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan-Dancer 音生舞工作流 v1.1 _ 舞蹈生动 _ 视频效果提升_2078942540585324546.json
 hash: 498d1d2fe15d5bbc
 coverage: 0.504854
 learned_at: 2026-10-15 22:41:57

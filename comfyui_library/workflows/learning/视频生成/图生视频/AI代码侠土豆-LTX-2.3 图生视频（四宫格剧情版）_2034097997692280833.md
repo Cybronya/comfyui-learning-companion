@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX-2.3 图生视频（四宫格剧情版）_20340979976
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034097997692280833.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX-2.3 图生视频（四宫格剧情版）_2034097997692280833.json
 hash: e0b4fcaa0bfa551a
 coverage: 0.576471
 learned_at: 2026-10-15 22:35:43

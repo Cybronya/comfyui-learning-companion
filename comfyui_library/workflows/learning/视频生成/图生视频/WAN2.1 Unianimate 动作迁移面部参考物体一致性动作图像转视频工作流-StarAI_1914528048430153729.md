@@ -4,7 +4,7 @@ name: WAN2.1 Unianimate 动作迁移面部参考物体一致性动作图像转�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914528048430153729.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1 Unianimate 动作迁移面部参考物体一致性动作图像转视频工作流-StarAI_1914528048430153729.json
 hash: e54acec749edf267
 coverage: 0.928571
 learned_at: 2026-10-15 22:29:36

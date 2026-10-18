@@ -4,7 +4,7 @@ name: Hunyuan 1.5 480P 图生视频加速版_1993298338619604994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993298338619604994.json
+file: comfyui_library/workflows/视频生成/图生视频/Hunyuan 1.5 480P 图生视频加速版_1993298338619604994.json
 hash: 31e6bfeb0770313b
 coverage: 1
 learned_at: 2026-10-15 22:33:18

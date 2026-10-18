@@ -4,7 +4,7 @@ name: LTX2.3-数字人唱歌-四宫格分镜-MV视频制作_2054902081458319361.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054902081458319361.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-数字人唱歌-四宫格分镜-MV视频制作_2054902081458319361.json
 hash: 32d1ee77de72c25c
 coverage: 0.632
 learned_at: 2026-10-15 22:37:53

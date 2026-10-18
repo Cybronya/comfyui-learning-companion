@@ -4,7 +4,7 @@ name: AniWan+FantasyPortrait高动态表情追踪动作迁移V1_1956272186195673
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956272186195673089.json
+file: comfyui_library/workflows/视频生成/图生视频/AniWan+FantasyPortrait高动态表情追踪动作迁移V1_1956272186195673089.json
 hash: 00992b5925e836f1
 coverage: 0.882353
 learned_at: 2026-10-15 22:31:12

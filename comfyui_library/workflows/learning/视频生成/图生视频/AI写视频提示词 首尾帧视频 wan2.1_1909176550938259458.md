@@ -4,7 +4,7 @@ name: AI写视频提示词 首尾帧视频 wan2.1_1909176550938259458.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1909176550938259458.json
+file: comfyui_library/workflows/视频生成/图生视频/AI写视频提示词 首尾帧视频 wan2.1_1909176550938259458.json
 hash: 552ec2b8853e3298
 coverage: 0.73913
 learned_at: 2026-10-15 22:29:28

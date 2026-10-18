@@ -4,7 +4,7 @@ name: 满血版seedance2.0图生视频_2040261393017999362.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040261393017999362.json
+file: comfyui_library/workflows/视频生成/图生视频/满血版seedance2.0图生视频_2040261393017999362.json
 hash: 30d0bb267c4f8bb3
 coverage: 1
 learned_at: 2026-10-15 22:36:14

@@ -4,7 +4,7 @@ name: 最强首尾帧生成视频 Wan 2.2_1952355883244302337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952355883244302337.json
+file: comfyui_library/workflows/视频生成/图生视频/最强首尾帧生成视频 Wan 2.2_1952355883244302337.json
 hash: 8d589707f66a2cee
 coverage: 0.928571
 learned_at: 2026-10-15 22:31:01

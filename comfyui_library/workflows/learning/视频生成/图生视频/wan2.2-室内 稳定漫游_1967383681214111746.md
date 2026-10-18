@@ -4,7 +4,7 @@ name: wan2.2-室内 稳定漫游_1967383681214111746.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967383681214111746.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-室内 稳定漫游_1967383681214111746.json
 hash: 715ed24ce0dc83c1
 coverage: 0.967742
 learned_at: 2026-10-15 22:31:41

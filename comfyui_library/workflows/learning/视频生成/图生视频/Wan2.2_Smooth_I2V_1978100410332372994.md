@@ -4,7 +4,7 @@ name: Wan2.2_Smooth_I2V_1978100410332372994.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978100410332372994.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_Smooth_I2V_1978100410332372994.json
 hash: b31bf5bcb82ce823
 coverage: 0.819444
 learned_at: 2026-10-15 22:32:17

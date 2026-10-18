@@ -4,7 +4,7 @@ name: LTX2.3全栈式短剧生成V17.1_2063165292641083394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063165292641083394.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全栈式短剧生成V17.1_2063165292641083394.json
 hash: 0cd7568922d350ba
 coverage: 0.770642
 learned_at: 2026-10-15 22:39:10

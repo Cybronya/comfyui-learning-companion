@@ -4,7 +4,7 @@ name: 图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2037525750772928513.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频RH-daVinci-MagiHuman 达芬奇 媲美seedance2.0_2037525750772928513.json
 hash: 03d2ab40ca00a036
 coverage: 0.875
 learned_at: 2026-10-15 22:35:58

@@ -4,7 +4,7 @@ name: Qwen Edit+Next Scene（自动分镜）wan2.2 图生视频 人物模特全�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009447313822982146.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen Edit+Next Scene（自动分镜）wan2.2 图生视频 人物模特全视图  人物角_2009447313822982146.json
 hash: 6c287acb2772f3e1
 coverage: 0.77
 learned_at: 2026-10-15 22:34:12

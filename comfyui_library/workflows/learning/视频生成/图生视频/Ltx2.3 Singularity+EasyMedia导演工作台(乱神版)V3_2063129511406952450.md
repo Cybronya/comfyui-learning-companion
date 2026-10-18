@@ -4,7 +4,7 @@ name: Ltx2.3 Singularity+EasyMedia导演工作台(乱神版)V3_20631295114069524
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063129511406952450.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Singularity+EasyMedia导演工作台(乱神版)V3_2063129511406952450.json
 hash: b0935f570fbd527c
 coverage: 0.885246
 learned_at: 2026-10-15 22:39:10

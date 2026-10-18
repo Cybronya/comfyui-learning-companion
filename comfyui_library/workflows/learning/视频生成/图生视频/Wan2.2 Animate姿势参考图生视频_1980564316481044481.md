@@ -4,7 +4,7 @@ name: Wan2.2 Animate姿势参考图生视频_1980564316481044481.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980564316481044481.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate姿势参考图生视频_1980564316481044481.json
 hash: 5bfea8cbe5f6ae7a
 coverage: 0.864865
 learned_at: 2026-10-15 22:32:31

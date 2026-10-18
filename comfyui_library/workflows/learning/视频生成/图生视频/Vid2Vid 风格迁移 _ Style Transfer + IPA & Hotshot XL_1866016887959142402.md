@@ -4,7 +4,7 @@ name: Vid2Vid 风格迁移 _ Style Transfer + IPA & Hotshot XL_18660168879591424
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1866016887959142402.json
+file: comfyui_library/workflows/视频生成/图生视频/Vid2Vid 风格迁移 _ Style Transfer + IPA & Hotshot XL_1866016887959142402.json
 hash: f57a67e9e615eba8
 coverage: 0.923077
 learned_at: 2026-10-15 22:29:14

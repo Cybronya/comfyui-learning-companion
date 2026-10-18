@@ -4,7 +4,7 @@ name: （（自用）官方版）Wan2.2 14B+LightX2V 90秒81帧6步超极速图�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952589946924273666.json
+file: comfyui_library/workflows/视频生成/图生视频/（（自用）官方版）Wan2.2 14B+LightX2V 90秒81帧6步超极速图生视频V1_1952589946924273666.json
 hash: 480f51409704d19e
 coverage: 0.90625
 learned_at: 2026-10-15 22:31:02

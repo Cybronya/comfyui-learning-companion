@@ -4,7 +4,7 @@ name: SD2.0Mini 图生视频_2071492495539789826.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2071492495539789826.json
+file: comfyui_library/workflows/视频生成/图生视频/SD2.0Mini 图生视频_2071492495539789826.json
 hash: 274efa7033eed2e0
 coverage: 1
 learned_at: 2026-10-15 22:40:46

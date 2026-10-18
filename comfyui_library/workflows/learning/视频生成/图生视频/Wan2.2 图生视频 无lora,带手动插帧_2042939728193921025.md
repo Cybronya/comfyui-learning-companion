@@ -4,7 +4,7 @@ name: Wan2.2 图生视频 无lora,带手动插帧_2042939728193921025.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042939728193921025.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 图生视频 无lora,带手动插帧_2042939728193921025.json
 hash: b8a97fa2e53934d5
 coverage: 0.625
 learned_at: 2026-10-15 22:36:30

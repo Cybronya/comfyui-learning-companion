@@ -4,7 +4,7 @@ name: (insight+ani全能视频Sv3新版)wan2.2高动态卡通动漫图生视频�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972564669351260162.json
+file: comfyui_library/workflows/视频生成/图生视频/(insight+ani全能视频Sv3新版)wan2.2高动态卡通动漫图生视频加速版v1_1972564669351260162.json
 hash: 3ddbbc91ba7e05b7
 coverage: 0.878788
 learned_at: 2026-10-15 22:31:59

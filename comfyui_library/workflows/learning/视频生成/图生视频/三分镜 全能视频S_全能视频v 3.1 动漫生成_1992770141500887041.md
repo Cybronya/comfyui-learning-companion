@@ -4,7 +4,7 @@ name: 三分镜 全能视频S_全能视频v 3.1 动漫生成_1992770141500887041
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992770141500887041.json
+file: comfyui_library/workflows/视频生成/图生视频/三分镜 全能视频S_全能视频v 3.1 动漫生成_1992770141500887041.json
 hash: 0dfa95380ddb072b
 coverage: 0.695652
 learned_at: 2026-10-15 22:33:16

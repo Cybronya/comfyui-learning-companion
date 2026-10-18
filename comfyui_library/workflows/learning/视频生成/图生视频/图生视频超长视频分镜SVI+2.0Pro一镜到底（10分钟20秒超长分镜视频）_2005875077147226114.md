@@ -4,7 +4,7 @@ name: 图生视频超长视频分镜SVI+2.0Pro一镜到底（10分钟20秒超长
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2005875077147226114.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频超长视频分镜SVI+2.0Pro一镜到底（10分钟20秒超长分镜视频）_2005875077147226114.json
 hash: 45368d651520d5b9
 coverage: 0.540146
 learned_at: 2026-10-15 22:33:59

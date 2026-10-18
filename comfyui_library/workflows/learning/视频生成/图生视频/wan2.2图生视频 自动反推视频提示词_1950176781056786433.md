@@ -4,7 +4,7 @@ name: wan2.2图生视频 自动反推视频提示词_1950176781056786433.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950176781056786433.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频 自动反推视频提示词_1950176781056786433.json
 hash: 7960907c9a978f5b
 coverage: 0.931034
 learned_at: 2026-10-15 22:30:53

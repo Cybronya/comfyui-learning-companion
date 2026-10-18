@@ -4,7 +4,7 @@ name: Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957680451332796417.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1  Multitalk数字人图片开口唱歌稳定放大功能齐全版_1957680451332796417.json
 hash: 42eff53fda150ded
 coverage: 0.8375
 learned_at: 2026-10-15 22:31:17

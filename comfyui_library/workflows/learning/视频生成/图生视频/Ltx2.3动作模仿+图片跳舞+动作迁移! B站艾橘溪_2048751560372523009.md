@@ -4,7 +4,7 @@ name: Ltx2.3动作模仿+图片跳舞+动作迁移! B站艾橘溪_20487515603725
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048751560372523009.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3动作模仿+图片跳舞+动作迁移! B站艾橘溪_2048751560372523009.json
 hash: 668f421beaa1b0b2
 coverage: 0.626263
 learned_at: 2026-10-15 22:37:11

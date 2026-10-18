@@ -4,7 +4,7 @@ name: wan2.1-极速图生视频-精准控制动作-超长视频生成_1949137084
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949137084427247618.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1-极速图生视频-精准控制动作-超长视频生成_1949137084427247618.json
 hash: 3e990f2d173ef446
 coverage: 0.888889
 learned_at: 2026-10-15 22:30:49

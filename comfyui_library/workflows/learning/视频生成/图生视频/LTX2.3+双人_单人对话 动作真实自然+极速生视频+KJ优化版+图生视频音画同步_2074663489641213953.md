@@ -4,7 +4,7 @@ name: LTX2.3+双人_单人对话 动作真实自然+极速生视频+KJ优化版+
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074663489641213953.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+双人_单人对话 动作真实自然+极速生视频+KJ优化版+图生视频音画同步_2074663489641213953.json
 hash: 54407bb07d54b689
 coverage: 0.678571
 learned_at: 2026-10-15 22:41:17

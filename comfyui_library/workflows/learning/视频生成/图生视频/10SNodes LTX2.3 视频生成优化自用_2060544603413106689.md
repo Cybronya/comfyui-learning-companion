@@ -4,7 +4,7 @@ name: 10SNodes LTX2.3 视频生成优化自用_2060544603413106689.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060544603413106689.json
+file: comfyui_library/workflows/视频生成/图生视频/10SNodes LTX2.3 视频生成优化自用_2060544603413106689.json
 hash: c2aae6794c877236
 coverage: 0.707317
 learned_at: 2026-10-15 22:38:48

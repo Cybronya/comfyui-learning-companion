@@ -4,7 +4,7 @@ name: LTX2.3-MSR图生视频 全局参考  提示词扩写自动优化 数字人
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072516302538887169.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-MSR图生视频 全局参考  提示词扩写自动优化 数字人说话唱歌_2072516302538887169.json
 hash: 00e9e481c0912a74
 coverage: 0.573529
 learned_at: 2026-10-15 22:40:55

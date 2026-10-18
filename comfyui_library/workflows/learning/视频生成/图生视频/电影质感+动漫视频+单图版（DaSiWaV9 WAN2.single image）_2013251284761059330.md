@@ -4,7 +4,7 @@ name: 电影质感+动漫视频+单图版（DaSiWaV9 WAN2.single image）_201325
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013251284761059330.json
+file: comfyui_library/workflows/视频生成/图生视频/电影质感+动漫视频+单图版（DaSiWaV9 WAN2.single image）_2013251284761059330.json
 hash: c8bc1536aacdadbb
 coverage: 0.916667
 learned_at: 2026-10-15 22:34:30

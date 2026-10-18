@@ -4,7 +4,7 @@ name: LTX2.3_数字人口播_6.2_(首尾帧，Style Transition)_2058101725361430
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058101725361430530.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3_数字人口播_6.2_(首尾帧，Style Transition)_2058101725361430530.json
 hash: 0e67ee4030acfd2f
 coverage: 0.5125
 learned_at: 2026-10-15 22:38:18

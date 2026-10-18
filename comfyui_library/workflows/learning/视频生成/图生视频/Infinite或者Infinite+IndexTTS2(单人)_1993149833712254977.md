@@ -4,7 +4,7 @@ name: Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993149833712254977.json
+file: comfyui_library/workflows/视频生成/图生视频/Infinite或者Infinite+IndexTTS2(单人)_1993149833712254977.json
 hash: 8a4b3a5cdb153462
 coverage: 0.610169
 learned_at: 2026-10-15 22:33:17

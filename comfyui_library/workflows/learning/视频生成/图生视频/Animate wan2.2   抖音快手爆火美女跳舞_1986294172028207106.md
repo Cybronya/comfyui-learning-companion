@@ -4,7 +4,7 @@ name: Animate wan2.2   抖音快手爆火美女跳舞_1986294172028207106.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986294172028207106.json
+file: comfyui_library/workflows/视频生成/图生视频/Animate wan2.2   抖音快手爆火美女跳舞_1986294172028207106.json
 hash: 6958ca3702b4a8b5
 coverage: 0.809524
 learned_at: 2026-10-15 22:32:54

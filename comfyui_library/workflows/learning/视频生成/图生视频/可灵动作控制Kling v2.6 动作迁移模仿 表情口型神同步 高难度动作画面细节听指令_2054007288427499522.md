@@ -4,7 +4,7 @@ name: 可灵动作控制Kling v2.6 动作迁移模仿 表情口型神同步 高�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054007288427499522.json
+file: comfyui_library/workflows/视频生成/图生视频/可灵动作控制Kling v2.6 动作迁移模仿 表情口型神同步 高难度动作画面细节听指令_2054007288427499522.json
 hash: 59d4169607af420e
 coverage: 0.625
 learned_at: 2026-10-15 22:37:44

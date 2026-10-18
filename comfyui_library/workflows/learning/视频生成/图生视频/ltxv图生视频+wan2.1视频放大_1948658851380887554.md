@@ -4,7 +4,7 @@ name: ltxv图生视频+wan2.1视频放大_1948658851380887554.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948658851380887554.json
+file: comfyui_library/workflows/视频生成/图生视频/ltxv图生视频+wan2.1视频放大_1948658851380887554.json
 hash: 292fb12092e06a53
 coverage: 0.597561
 learned_at: 2026-10-15 22:30:47

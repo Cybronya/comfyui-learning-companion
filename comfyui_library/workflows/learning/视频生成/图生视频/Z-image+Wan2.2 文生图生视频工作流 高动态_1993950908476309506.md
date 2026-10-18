@@ -4,7 +4,7 @@ name: Z-image+Wan2.2 文生图生视频工作流 高动态_1993950908476309506.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1993950908476309506.json
+file: comfyui_library/workflows/视频生成/图生视频/Z-image+Wan2.2 文生图生视频工作流 高动态_1993950908476309506.json
 hash: a2053e30b6feb70e
 coverage: 0.914286
 learned_at: 2026-10-15 22:33:19

@@ -4,7 +4,7 @@ name: 🐳wan2.2 图生视频 加速出图版🦋【官方模型】_195001827467
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950018274672164866.json
+file: comfyui_library/workflows/视频生成/图生视频/🐳wan2.2 图生视频 加速出图版🦋【官方模型】_1950018274672164866.json
 hash: 2a3f0f4aca3618df
 coverage: 0.96
 learned_at: 2026-10-15 22:30:51

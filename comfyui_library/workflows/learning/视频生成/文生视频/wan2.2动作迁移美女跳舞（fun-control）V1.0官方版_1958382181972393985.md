@@ -4,7 +4,7 @@ name: wan2.2动作迁移美女跳舞（fun-control）V1.0官方版_1958382181972
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958382181972393985.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2动作迁移美女跳舞（fun-control）V1.0官方版_1958382181972393985.json
 hash: 7c26881f524cb677
 coverage: 0.862069
 learned_at: 2026-10-15 22:43:42

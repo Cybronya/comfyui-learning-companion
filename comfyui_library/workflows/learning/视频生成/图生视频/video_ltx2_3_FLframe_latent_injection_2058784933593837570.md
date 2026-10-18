@@ -4,7 +4,7 @@ name: video_ltx2_3_FLframe_latent_injection_2058784933593837570.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058784933593837570.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_FLframe_latent_injection_2058784933593837570.json
 hash: 10c8894654753095
 coverage: 0.846154
 learned_at: 2026-10-15 22:38:28

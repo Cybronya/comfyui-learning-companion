@@ -4,7 +4,7 @@ name: LTX2.3视频去水印+去字幕_2058077944274317314.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058077944274317314.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3视频去水印+去字幕_2058077944274317314.json
 hash: 1841743d03a6761a
 coverage: 1
 learned_at: 2026-10-15 22:38:17

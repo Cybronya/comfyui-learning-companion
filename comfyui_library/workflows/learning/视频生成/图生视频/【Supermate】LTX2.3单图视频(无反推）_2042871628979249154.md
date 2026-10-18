@@ -4,7 +4,7 @@ name: 【Supermate】LTX2.3单图视频(无反推）_2042871628979249154.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2042871628979249154.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】LTX2.3单图视频(无反推）_2042871628979249154.json
 hash: 04b0f12543195702
 coverage: 0.894737
 learned_at: 2026-10-15 22:36:29

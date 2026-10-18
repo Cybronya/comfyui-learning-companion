@@ -4,7 +4,7 @@ name: Wan2.2-5B+lighx2v 快速图生视频工作流-官方版_195010302557260185
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950103025572601857.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-5B+lighx2v 快速图生视频工作流-官方版_1950103025572601857.json
 hash: 9fcd5d2373dc6d58
 coverage: 1
 learned_at: 2026-10-15 22:30:53

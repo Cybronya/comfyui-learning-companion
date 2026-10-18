@@ -4,7 +4,7 @@ name: wan2.1 MAGREF 天使张开翅膀动画_1935508018886791169.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1935508018886791169.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1 MAGREF 天使张开翅膀动画_1935508018886791169.json
 hash: d85ee1668342add0
 coverage: 1
 learned_at: 2026-10-15 22:43:28

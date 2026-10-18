@@ -4,7 +4,7 @@ name: LTX2.3邪修采样多参人物场景分镜短剧V2_2049366462388768769.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049366462388768769.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3邪修采样多参人物场景分镜短剧V2_2049366462388768769.json
 hash: 414d1f2922efabd6
 coverage: 0.893491
 learned_at: 2026-10-15 22:37:13

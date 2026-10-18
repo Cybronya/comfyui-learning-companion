@@ -4,7 +4,7 @@ name: 一键泄气特效-万相wan2.1新玩意_1899415692570181634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1899415692570181634.json
+file: comfyui_library/workflows/视频生成/图生视频/一键泄气特效-万相wan2.1新玩意_1899415692570181634.json
 hash: 38a35fa61a9d7ea5
 coverage: 0.95
 learned_at: 2026-10-15 22:29:21

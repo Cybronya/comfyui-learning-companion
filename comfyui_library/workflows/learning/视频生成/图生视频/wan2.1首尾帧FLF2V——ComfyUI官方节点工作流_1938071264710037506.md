@@ -4,7 +4,7 @@ name: wan2.1首尾帧FLF2V——ComfyUI官方节点工作流_1938071264710037506
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1938071264710037506.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1首尾帧FLF2V——ComfyUI官方节点工作流_1938071264710037506.json
 hash: 9adc59c167f5fee0
 coverage: 0.823529
 learned_at: 2026-10-15 22:30:30

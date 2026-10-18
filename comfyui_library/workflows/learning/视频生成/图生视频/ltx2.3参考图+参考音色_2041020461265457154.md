@@ -4,7 +4,7 @@ name: ltx2.3参考图+参考音色_2041020461265457154.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041020461265457154.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3参考图+参考音色_2041020461265457154.json
 hash: bac5e324db845ce1
 coverage: 0.892857
 learned_at: 2026-10-15 22:36:17

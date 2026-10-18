@@ -4,7 +4,7 @@ name: ✅wan2.1 Infinite Talk-图片对口型_固定机位-图生视频，口播
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964014354544869377.json
+file: comfyui_library/workflows/视频生成/图生视频/✅wan2.1 Infinite Talk-图片对口型_固定机位-图生视频，口播数字人_1964014354544869377.json
 hash: f7ae06b82894971a
 coverage: 0.586207
 learned_at: 2026-10-15 22:31:34

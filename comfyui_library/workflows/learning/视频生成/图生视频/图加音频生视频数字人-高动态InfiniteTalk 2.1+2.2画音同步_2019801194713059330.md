@@ -4,7 +4,7 @@ name: 图加音频生视频数字人-高动态InfiniteTalk 2.1+2.2画音同步_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019801194713059330.json
+file: comfyui_library/workflows/视频生成/图生视频/图加音频生视频数字人-高动态InfiniteTalk 2.1+2.2画音同步_2019801194713059330.json
 hash: 65229628579b4cc8
 coverage: 0.625
 learned_at: 2026-10-15 22:35:04

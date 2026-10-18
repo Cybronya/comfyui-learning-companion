@@ -4,7 +4,7 @@ name: wan2.2+dancer音频驱动跳舞_2082031766499586050.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082031766499586050.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+dancer音频驱动跳舞_2082031766499586050.json
 hash: bf9680d4a8eb2fd3
 coverage: 0.679487
 learned_at: 2026-10-15 22:42:27

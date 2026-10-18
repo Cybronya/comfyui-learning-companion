@@ -4,7 +4,7 @@ name: 人物表情真实自然+Wan2.2_2039989765587607554.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039989765587607554.json
+file: comfyui_library/workflows/视频生成/图生视频/人物表情真实自然+Wan2.2_2039989765587607554.json
 hash: f66cffab2af3b298
 coverage: 1
 learned_at: 2026-10-15 22:36:13

@@ -4,7 +4,7 @@ name: wan2.2一键融图+_+正方格动画+任意背景+自动构图++反推+调
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059078448089489410.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2一键融图+_+正方格动画+任意背景+自动构图++反推+调色补帧_2059078448089489410.json
 hash: 06cdae30c034cfb9
 coverage: 0.6
 learned_at: 2026-10-15 22:38:36

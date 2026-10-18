@@ -4,7 +4,7 @@ name: Jason-Wan2.2 Remix V3.0 图生视频&首尾帧生视频_205699849827656909
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056998498276569090.json
+file: comfyui_library/workflows/视频生成/图生视频/Jason-Wan2.2 Remix V3.0 图生视频&首尾帧生视频_2056998498276569090.json
 hash: 560005d53274ce61
 coverage: 0.924528
 learned_at: 2026-10-15 22:38:07

@@ -4,7 +4,7 @@ name: 首尾帧变身+丝滑转场-wan2.1_1987510145859129345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987510145859129345.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧变身+丝滑转场-wan2.1_1987510145859129345.json
 hash: 9b3a9c45b1f3d60d
 coverage: 0.689655
 learned_at: 2026-10-15 22:32:58

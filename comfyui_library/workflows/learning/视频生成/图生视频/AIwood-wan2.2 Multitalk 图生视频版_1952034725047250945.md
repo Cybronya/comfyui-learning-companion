@@ -4,7 +4,7 @@ name: AIwood-wan2.2 Multitalk 图生视频版_1952034725047250945.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952034725047250945.json
+file: comfyui_library/workflows/视频生成/图生视频/AIwood-wan2.2 Multitalk 图生视频版_1952034725047250945.json
 hash: f3ef2f1d711bfaf8
 coverage: 0.969697
 learned_at: 2026-10-15 22:30:59

@@ -4,7 +4,7 @@ name: video_wan2_2_14B_i2v_moremotion_prompt_2011733044515835905.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011733044515835905.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_14B_i2v_moremotion_prompt_2011733044515835905.json
 hash: c7a1ac67a443eb52
 coverage: 0.5
 learned_at: 2026-10-15 22:34:24

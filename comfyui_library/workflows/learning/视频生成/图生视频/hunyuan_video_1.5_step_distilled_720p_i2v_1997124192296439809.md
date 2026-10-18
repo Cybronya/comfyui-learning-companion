@@ -4,7 +4,7 @@ name: hunyuan_video_1.5_step_distilled_720p_i2v_1997124192296439809.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1997124192296439809.json
+file: comfyui_library/workflows/视频生成/图生视频/hunyuan_video_1.5_step_distilled_720p_i2v_1997124192296439809.json
 hash: 5f5059d427583fb2
 coverage: 0.5
 learned_at: 2026-10-15 22:33:28

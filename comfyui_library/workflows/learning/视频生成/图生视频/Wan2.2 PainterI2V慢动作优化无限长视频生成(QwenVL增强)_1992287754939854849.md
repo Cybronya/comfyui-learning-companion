@@ -4,7 +4,7 @@ name: Wan2.2 PainterI2V慢动作优化无限长视频生成(QwenVL增强)_199228
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1992287754939854849.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 PainterI2V慢动作优化无限长视频生成(QwenVL增强)_1992287754939854849.json
 hash: 3395940e48255372
 coverage: 0.474359
 learned_at: 2026-10-15 22:33:16

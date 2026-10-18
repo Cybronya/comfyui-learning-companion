@@ -4,7 +4,7 @@ name: LTX2.3全新参考表生视频_2067478623367553025.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067478623367553025.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3全新参考表生视频_2067478623367553025.json
 hash: 23870efcd21201af
 coverage: 0.825
 learned_at: 2026-10-15 22:40:02

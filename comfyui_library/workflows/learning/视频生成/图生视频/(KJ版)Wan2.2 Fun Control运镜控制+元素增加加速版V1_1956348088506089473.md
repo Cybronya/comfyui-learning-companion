@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 Fun Control运镜控制+元素增加加速版V1_195634808850
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956348088506089473.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2 Fun Control运镜控制+元素增加加速版V1_1956348088506089473.json
 hash: 053c71bfacc983df
 coverage: 0.634615
 learned_at: 2026-10-15 22:31:13

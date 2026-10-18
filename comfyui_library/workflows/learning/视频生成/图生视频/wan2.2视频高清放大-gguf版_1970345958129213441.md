@@ -4,7 +4,7 @@ name: wan2.2视频高清放大-gguf版_1970345958129213441.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970345958129213441.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2视频高清放大-gguf版_1970345958129213441.json
 hash: 84bf336be0e2b400
 coverage: 1
 learned_at: 2026-10-15 22:31:53

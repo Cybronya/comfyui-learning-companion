@@ -4,7 +4,7 @@ name: LTX2.3音频参考、图生视频、首尾帧、多帧参考三模一致�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051946649047576577.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3音频参考、图生视频、首尾帧、多帧参考三模一致性_去字幕全面优化版_2051946649047576577.json
 hash: 4cee552ed0226719
 coverage: 0.960784
 learned_at: 2026-10-15 22:37:25

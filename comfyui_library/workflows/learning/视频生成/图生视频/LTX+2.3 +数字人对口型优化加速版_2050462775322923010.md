@@ -4,7 +4,7 @@ name: LTX+2.3 +数字人对口型优化加速版_2050462775322923010.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050462775322923010.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX+2.3 +数字人对口型优化加速版_2050462775322923010.json
 hash: 4bf5374c76701870
 coverage: 0.456
 learned_at: 2026-10-15 22:37:18

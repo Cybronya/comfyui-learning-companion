@@ -4,7 +4,7 @@ name: Work-Fisher_Wan-Animate全自动版_1969348581830389761.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969348581830389761.json
+file: comfyui_library/workflows/视频生成/图生视频/Work-Fisher_Wan-Animate全自动版_1969348581830389761.json
 hash: c0dc28cd90c039cd
 coverage: 0.461538
 learned_at: 2026-10-15 22:31:48

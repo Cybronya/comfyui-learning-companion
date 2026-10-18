@@ -4,7 +4,7 @@ name: Wan Animate2.2主体迁移（自动裁剪脸部，增强主体一致性）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972998201764655106.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2主体迁移（自动裁剪脸部，增强主体一致性）v3_1972998201764655106.json
 hash: 335ca800d90cb11a
 coverage: 0.518987
 learned_at: 2026-10-15 22:32:01

@@ -4,7 +4,7 @@ name: DNR-WAN2.2 KJ 图生视频_1951706628657721345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1951706628657721345.json
+file: comfyui_library/workflows/视频生成/图生视频/DNR-WAN2.2 KJ 图生视频_1951706628657721345.json
 hash: f4ac80a3e1b688b9
 coverage: 0.65
 learned_at: 2026-10-15 22:30:59

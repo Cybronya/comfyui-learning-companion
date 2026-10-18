@@ -4,7 +4,7 @@ name: 一键运行：Wan2.2 WAN2.2-14B-Rapid-AlO Mega V7 图生视频_1977560592
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1977560592129118209.json
+file: comfyui_library/workflows/视频生成/图生视频/一键运行：Wan2.2 WAN2.2-14B-Rapid-AlO Mega V7 图生视频_1977560592129118209.json
 hash: 8e5d5dd549cf0c61
 coverage: 0.916667
 learned_at: 2026-10-15 22:32:15

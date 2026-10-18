@@ -4,7 +4,7 @@ name: 图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010268951330164737.json
+file: comfyui_library/workflows/视频生成/图生视频/图片生成跳舞姿势模仿视频！wan2.2-Animate(长视频)动作迁移_2010268951330164737.json
 hash: baea73f982dfbb3b
 coverage: 0.675676
 learned_at: 2026-10-15 22:34:16

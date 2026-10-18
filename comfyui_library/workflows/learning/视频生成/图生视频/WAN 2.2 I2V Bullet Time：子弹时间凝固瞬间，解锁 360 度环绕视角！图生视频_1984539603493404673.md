@@ -4,7 +4,7 @@ name: WAN 2.2 I2V Bullet Time：子弹时间凝固瞬间，解锁 360 度环绕�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1984539603493404673.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2 I2V Bullet Time：子弹时间凝固瞬间，解锁 360 度环绕视角！图生视频_1984539603493404673.json
 hash: b696d1cd89e45862
 coverage: 0.87234
 learned_at: 2026-10-15 22:32:48

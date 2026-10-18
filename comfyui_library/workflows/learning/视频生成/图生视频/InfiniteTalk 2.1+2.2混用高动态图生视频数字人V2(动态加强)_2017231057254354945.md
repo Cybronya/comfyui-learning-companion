@@ -4,7 +4,7 @@ name: InfiniteTalk 2.1+2.2混用高动态图生视频数字人V2(动态加强)_2
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017231057254354945.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk 2.1+2.2混用高动态图生视频数字人V2(动态加强)_2017231057254354945.json
 hash: 51fd11bb193be1ca
 coverage: 0.921053
 learned_at: 2026-10-15 22:34:45

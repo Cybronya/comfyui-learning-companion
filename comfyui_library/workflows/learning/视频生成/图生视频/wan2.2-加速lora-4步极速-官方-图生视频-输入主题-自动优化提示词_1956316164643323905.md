@@ -4,7 +4,7 @@ name: wan2.2-加速lora-4步极速-官方-图生视频-输入主题-自动优化
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956316164643323905.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-加速lora-4步极速-官方-图生视频-输入主题-自动优化提示词_1956316164643323905.json
 hash: e505e8450d5160d1
 coverage: 0.848485
 learned_at: 2026-10-15 22:31:13

@@ -4,7 +4,7 @@ name: (樱花)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985375785005555714.json
+file: comfyui_library/workflows/视频生成/图生视频/(樱花)Infinite talk数字人动态加强高版V3（Lightx2v+Rcm多重注意力机制）_1985375785005555714.json
 hash: a248f09c8ff4796c
 coverage: 0.771429
 learned_at: 2026-10-15 22:32:51

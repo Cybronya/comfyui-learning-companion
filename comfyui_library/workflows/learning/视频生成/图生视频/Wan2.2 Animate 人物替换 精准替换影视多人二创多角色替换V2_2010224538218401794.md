@@ -4,7 +4,7 @@ name: Wan2.2 Animate 人物替换 精准替换影视多人二创多角色替换V
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2010224538218401794.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Animate 人物替换 精准替换影视多人二创多角色替换V2_2010224538218401794.json
 hash: 235989c2cbf2b19f
 coverage: 0.776316
 learned_at: 2026-10-15 22:34:15

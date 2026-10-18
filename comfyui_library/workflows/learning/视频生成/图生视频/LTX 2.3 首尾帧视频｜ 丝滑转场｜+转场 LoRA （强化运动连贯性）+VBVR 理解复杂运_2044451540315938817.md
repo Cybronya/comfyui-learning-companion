@@ -4,7 +4,7 @@ name: LTX 2.3 首尾帧视频｜ 丝滑转场｜+转场 LoRA （强化运动连�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044451540315938817.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 首尾帧视频｜ 丝滑转场｜+转场 LoRA （强化运动连贯性）+VBVR 理解复杂运_2044451540315938817.json
 hash: 314e86860b92540d
 coverage: 0.694118
 learned_at: 2026-10-15 22:36:38

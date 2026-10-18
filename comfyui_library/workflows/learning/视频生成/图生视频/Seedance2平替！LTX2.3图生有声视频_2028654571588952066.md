@@ -4,7 +4,7 @@ name: Seedance2平替！LTX2.3图生有声视频_2028654571588952066.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2028654571588952066.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2平替！LTX2.3图生有声视频_2028654571588952066.json
 hash: 703804f70073bad9
 coverage: 0.875
 learned_at: 2026-10-15 22:35:19

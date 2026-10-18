@@ -4,7 +4,7 @@ name: LTX2.3 提示词驱动数字人 (真实自然+极速)_2078744808641884161.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078744808641884161.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 提示词驱动数字人 (真实自然+极速)_2078744808641884161.json
 hash: fd3fdc168ddce1f8
 coverage: 0.678571
 learned_at: 2026-10-15 22:41:55

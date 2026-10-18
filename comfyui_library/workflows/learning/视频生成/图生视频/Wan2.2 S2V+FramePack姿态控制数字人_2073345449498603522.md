@@ -4,7 +4,7 @@ name: Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073345449498603522.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 S2V+FramePack姿态控制数字人_2073345449498603522.json
 hash: 59b798b57415bbe7
 coverage: 0.840909
 learned_at: 2026-10-15 22:41:06

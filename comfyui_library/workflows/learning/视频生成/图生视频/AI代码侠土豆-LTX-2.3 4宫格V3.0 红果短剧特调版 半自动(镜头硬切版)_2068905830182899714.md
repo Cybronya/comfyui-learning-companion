@@ -4,7 +4,7 @@ name: AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068905830182899714.json
+file: comfyui_library/workflows/视频生成/图生视频/AI代码侠土豆-LTX-2.3 4宫格V3.0 红果短剧特调版 半自动(镜头硬切版)_2068905830182899714.json
 hash: 05d0f5b83c98a731
 coverage: 0.551724
 learned_at: 2026-10-15 22:40:23

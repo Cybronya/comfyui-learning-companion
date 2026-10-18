@@ -4,7 +4,7 @@ name: 通义万相wan2.2图生视频（kj加速版6步）  24G显卡可跑，2�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950433801442910210.json
+file: comfyui_library/workflows/视频生成/文生视频/通义万相wan2.2图生视频（kj加速版6步）  24G显卡可跑，2分钟5秒_1950433801442910210.json
 hash: d5a7e9ed00923e2e
 coverage: 0.852941
 learned_at: 2026-10-15 22:43:35

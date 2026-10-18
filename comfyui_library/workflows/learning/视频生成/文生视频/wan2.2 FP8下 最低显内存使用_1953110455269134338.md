@@ -4,7 +4,7 @@ name: wan2.2 FP8下 最低显内存使用_1953110455269134338.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1953110455269134338.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2 FP8下 最低显内存使用_1953110455269134338.json
 hash: 0d93926e27f70233
 coverage: 0.962963
 learned_at: 2026-10-15 22:43:38

@@ -4,7 +4,7 @@ name: LTX2.3+9宫格+AI+漫剧生成+工作流_2061608359572369410.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061608359572369410.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+9宫格+AI+漫剧生成+工作流_2061608359572369410.json
 hash: 041184305c311219
 coverage: 0.455446
 learned_at: 2026-10-15 22:38:55

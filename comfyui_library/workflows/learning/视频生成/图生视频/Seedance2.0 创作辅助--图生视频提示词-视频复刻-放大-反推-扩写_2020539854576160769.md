@@ -4,7 +4,7 @@ name: Seedance2.0 创作辅助--图生视频提示词-视频复刻-放大-反推
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2020539854576160769.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0 创作辅助--图生视频提示词-视频复刻-放大-反推-扩写_2020539854576160769.json
 hash: 0b2e6f3cddc22acf
 coverage: 0.806452
 learned_at: 2026-10-15 22:35:06

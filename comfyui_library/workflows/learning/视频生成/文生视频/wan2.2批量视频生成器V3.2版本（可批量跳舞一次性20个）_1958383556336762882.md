@@ -4,7 +4,7 @@ name: wan2.2批量视频生成器V3.2版本（可批量跳舞一次性20个）_1
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958383556336762882.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2批量视频生成器V3.2版本（可批量跳舞一次性20个）_1958383556336762882.json
 hash: 4662c069027e2e50
 coverage: 0.835616
 learned_at: 2026-10-15 22:43:42

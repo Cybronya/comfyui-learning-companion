@@ -4,7 +4,7 @@ name: LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2030519163785060353.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-22b-fp8低显存首尾帧快速生成ai视频保持人物一致性性价比LTX2.3-首尾帧视频_2030519163785060353.json
 hash: 82ce57bed2c6c065
 coverage: 0.907407
 learned_at: 2026-10-15 22:35:26

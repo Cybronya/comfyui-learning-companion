@@ -4,7 +4,7 @@ name: WAN2.1通义万相I2V图生视频5秒720P高清TeaCache2倍加速版_18983
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1898354232771170306.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1通义万相I2V图生视频5秒720P高清TeaCache2倍加速版_1898354232771170306.json
 hash: 158cd9a62f53650a
 coverage: 1
 learned_at: 2026-10-15 22:29:20

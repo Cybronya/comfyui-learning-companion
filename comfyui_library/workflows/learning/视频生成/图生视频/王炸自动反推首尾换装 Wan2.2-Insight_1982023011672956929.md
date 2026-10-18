@@ -4,7 +4,7 @@ name: 王炸自动反推首尾换装 Wan2.2-Insight_1982023011672956929.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982023011672956929.json
+file: comfyui_library/workflows/视频生成/图生视频/王炸自动反推首尾换装 Wan2.2-Insight_1982023011672956929.json
 hash: a5193b5bd6254276
 coverage: 0.847826
 learned_at: 2026-10-15 22:32:39

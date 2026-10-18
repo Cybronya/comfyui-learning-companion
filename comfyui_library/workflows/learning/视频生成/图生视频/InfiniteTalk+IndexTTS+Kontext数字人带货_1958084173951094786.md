@@ -4,7 +4,7 @@ name: InfiniteTalk+IndexTTS+Kontext数字人带货_1958084173951094786.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958084173951094786.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk+IndexTTS+Kontext数字人带货_1958084173951094786.json
 hash: 35cd6499ae0c9089
 coverage: 0.942857
 learned_at: 2026-10-15 22:31:20

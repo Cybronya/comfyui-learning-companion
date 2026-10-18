@@ -4,7 +4,7 @@ name: wan2.2_图生视频及首尾帧_终极版【gen全能视频Si】_196093788
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1960937886998827010.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2_图生视频及首尾帧_终极版【gen全能视频Si】_1960937886998827010.json
 hash: 1f60fdb0f6aeaa94
 coverage: 0.942857
 learned_at: 2026-10-15 22:31:27

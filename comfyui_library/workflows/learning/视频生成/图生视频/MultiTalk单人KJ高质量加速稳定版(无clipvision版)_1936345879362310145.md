@@ -4,7 +4,7 @@ name: MultiTalk单人KJ高质量加速稳定版(无clipvision版)_19363458793623
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1936345879362310145.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk单人KJ高质量加速稳定版(无clipvision版)_1936345879362310145.json
 hash: 32478e866b97f9ce
 coverage: 0.692308
 learned_at: 2026-10-15 22:30:26

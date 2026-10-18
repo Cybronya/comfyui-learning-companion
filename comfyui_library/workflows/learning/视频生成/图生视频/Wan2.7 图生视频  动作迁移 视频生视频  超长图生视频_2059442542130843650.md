@@ -4,7 +4,7 @@ name: Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059442542130843650.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.7 图生视频  动作迁移 视频生视频  超长图生视频_2059442542130843650.json
 hash: c07d8d17f8686e37
 coverage: 0.833333
 learned_at: 2026-10-15 22:38:39

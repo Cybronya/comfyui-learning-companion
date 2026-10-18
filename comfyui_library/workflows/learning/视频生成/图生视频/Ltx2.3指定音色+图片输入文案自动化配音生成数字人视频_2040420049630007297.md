@@ -4,7 +4,7 @@ name: Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040420049630007297.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3指定音色+图片输入文案自动化配音生成数字人视频_2040420049630007297.json
 hash: bfd40a444891f17c
 coverage: 0.883333
 learned_at: 2026-10-15 22:36:15

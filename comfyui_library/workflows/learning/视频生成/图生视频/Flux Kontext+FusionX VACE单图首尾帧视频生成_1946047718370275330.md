@@ -4,7 +4,7 @@ name: Flux Kontext+FusionX VACE单图首尾帧视频生成_1946047718370275330.j
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946047718370275330.json
+file: comfyui_library/workflows/视频生成/图生视频/Flux Kontext+FusionX VACE单图首尾帧视频生成_1946047718370275330.json
 hash: 966a0d55783a99c2
 coverage: 0.944444
 learned_at: 2026-10-15 22:30:43

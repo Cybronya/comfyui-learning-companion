@@ -4,7 +4,7 @@ name: LTX2.3 丝滑多帧首尾帧V1_2052425175639052290.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052425175639052290.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 丝滑多帧首尾帧V1_2052425175639052290.json
 hash: 5780ed70f67cad71
 coverage: 0.982143
 learned_at: 2026-10-15 22:37:29

@@ -4,7 +4,7 @@ name: 【Supermate】LTX2.3-10Eros首尾帧+分镜控制+无字幕版+PromptRela
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052381787497738241.json
+file: comfyui_library/workflows/视频生成/图生视频/【Supermate】LTX2.3-10Eros首尾帧+分镜控制+无字幕版+PromptRelay_2052381787497738241.json
 hash: a194f97d48bfc33f
 coverage: 0.546392
 learned_at: 2026-10-15 22:37:29

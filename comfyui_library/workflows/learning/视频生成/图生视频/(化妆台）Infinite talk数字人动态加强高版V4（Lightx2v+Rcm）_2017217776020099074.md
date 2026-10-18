@@ -4,7 +4,7 @@ name: (化妆台）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017217776020099074.json
+file: comfyui_library/workflows/视频生成/图生视频/(化妆台）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2017217776020099074.json
 hash: 0aec6c3f88eb116f
 coverage: 0.75
 learned_at: 2026-10-15 22:34:45

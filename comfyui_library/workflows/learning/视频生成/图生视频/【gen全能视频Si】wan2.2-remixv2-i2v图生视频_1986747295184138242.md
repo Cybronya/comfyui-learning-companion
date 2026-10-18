@@ -4,7 +4,7 @@ name: 【gen全能视频Si】wan2.2-remixv2-i2v图生视频_1986747295184138242.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986747295184138242.json
+file: comfyui_library/workflows/视频生成/图生视频/【gen全能视频Si】wan2.2-remixv2-i2v图生视频_1986747295184138242.json
 hash: d600455f341af827
 coverage: 0.675
 learned_at: 2026-10-15 22:32:56

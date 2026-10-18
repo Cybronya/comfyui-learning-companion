@@ -4,7 +4,7 @@ name: Wan21_OneToAllAnimation_automatic_1998679386968743937.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998679386968743937.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan21_OneToAllAnimation_automatic_1998679386968743937.json
 hash: e4b836791729e0bc
 coverage: 0.485714
 learned_at: 2026-10-15 22:33:33

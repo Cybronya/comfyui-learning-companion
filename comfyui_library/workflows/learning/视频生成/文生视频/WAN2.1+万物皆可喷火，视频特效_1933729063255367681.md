@@ -4,7 +4,7 @@ name: WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1933729063255367681.json
+file: comfyui_library/workflows/视频生成/文生视频/WAN2.1+万物皆可喷火，视频特效_1933729063255367681.json
 hash: 25a32c4f29e8ddbf
 coverage: 1
 learned_at: 2026-10-15 22:43:27

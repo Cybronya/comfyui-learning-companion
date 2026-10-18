@@ -4,7 +4,7 @@ name: Wan2.2 Smooth + Qwen VL3 双参自动丝滑首尾帧V2_1982684734805426178
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982684734805426178.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Smooth + Qwen VL3 双参自动丝滑首尾帧V2_1982684734805426178.json
 hash: 694435a4acf74d4a
 coverage: 0.878788
 learned_at: 2026-10-15 22:32:42

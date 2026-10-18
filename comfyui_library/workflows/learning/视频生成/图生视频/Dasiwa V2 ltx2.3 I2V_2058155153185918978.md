@@ -4,7 +4,7 @@ name: Dasiwa V2 ltx2.3 I2V_2058155153185918978.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058155153185918978.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa V2 ltx2.3 I2V_2058155153185918978.json
 hash: 7b07a94c87d48ddb
 coverage: 0.884615
 learned_at: 2026-10-15 22:38:18

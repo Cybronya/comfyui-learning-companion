@@ -4,7 +4,7 @@ name: 【控制视频运动轨迹】字节ATI-Wan2.1图生视频（详细讲解�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1929446481839734785.json
+file: comfyui_library/workflows/视频生成/图生视频/【控制视频运动轨迹】字节ATI-Wan2.1图生视频（详细讲解使用）_1929446481839734785.json
 hash: d3324f47ba934fc8
 coverage: 0.481481
 learned_at: 2026-10-15 22:30:00

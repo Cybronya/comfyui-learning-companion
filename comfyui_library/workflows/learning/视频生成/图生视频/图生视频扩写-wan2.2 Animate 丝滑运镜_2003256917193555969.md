@@ -4,7 +4,7 @@ name: 图生视频扩写-wan2.2 Animate 丝滑运镜_2003256917193555969.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2003256917193555969.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频扩写-wan2.2 Animate 丝滑运镜_2003256917193555969.json
 hash: eb5f5159f3f9d298
 coverage: 0.652174
 learned_at: 2026-10-15 22:33:50

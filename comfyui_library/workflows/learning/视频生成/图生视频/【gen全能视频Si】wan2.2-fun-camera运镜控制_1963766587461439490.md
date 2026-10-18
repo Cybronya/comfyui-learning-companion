@@ -4,7 +4,7 @@ name: 【gen全能视频Si】wan2.2-fun-camera运镜控制_1963766587461439490.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963766587461439490.json
+file: comfyui_library/workflows/视频生成/图生视频/【gen全能视频Si】wan2.2-fun-camera运镜控制_1963766587461439490.json
 hash: 2f554f28cdeb1f1c
 coverage: 0.659574
 learned_at: 2026-10-15 22:31:33

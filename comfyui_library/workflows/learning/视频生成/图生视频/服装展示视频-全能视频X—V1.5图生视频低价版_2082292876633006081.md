@@ -4,7 +4,7 @@ name: 服装展示视频-全能视频X—V1.5图生视频低价版_2082292876633
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082292876633006081.json
+file: comfyui_library/workflows/视频生成/图生视频/服装展示视频-全能视频X—V1.5图生视频低价版_2082292876633006081.json
 hash: b6f50808be9fe819
 coverage: 0.769231
 learned_at: 2026-10-15 22:42:28

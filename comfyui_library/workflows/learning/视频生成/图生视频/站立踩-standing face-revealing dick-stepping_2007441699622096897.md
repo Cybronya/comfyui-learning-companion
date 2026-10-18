@@ -4,7 +4,7 @@ name: 站立踩-standing face-revealing dick-stepping_2007441699622096897.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007441699622096897.json
+file: comfyui_library/workflows/视频生成/图生视频/站立踩-standing face-revealing dick-stepping_2007441699622096897.json
 hash: d321c080e624174b
 coverage: 0.97561
 learned_at: 2026-10-15 22:34:03

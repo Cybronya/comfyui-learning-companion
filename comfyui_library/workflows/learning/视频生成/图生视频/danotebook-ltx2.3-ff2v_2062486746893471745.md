@@ -4,7 +4,7 @@ name: danotebook-ltx2.3-ff2v_2062486746893471745.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062486746893471745.json
+file: comfyui_library/workflows/视频生成/图生视频/danotebook-ltx2.3-ff2v_2062486746893471745.json
 hash: 0d48858b5d183f96
 coverage: 0.909091
 learned_at: 2026-10-15 22:39:04

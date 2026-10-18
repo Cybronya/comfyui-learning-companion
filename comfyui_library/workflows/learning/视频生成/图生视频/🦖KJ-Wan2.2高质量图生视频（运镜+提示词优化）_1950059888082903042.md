@@ -4,7 +4,7 @@ name: 🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_19500598880
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950059888082903042.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖KJ-Wan2.2高质量图生视频（运镜+提示词优化）_1950059888082903042.json
 hash: e8b200b0fdf67432
 coverage: 0.85
 learned_at: 2026-10-15 22:30:52

@@ -4,7 +4,7 @@ name: LTX 2.3 首尾帧视频 一致性+转场+VBVR复杂运动_2052747841218596
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052747841218596866.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 首尾帧视频 一致性+转场+VBVR复杂运动_2052747841218596866.json
 hash: c9bdf7b27a8bdd16
 coverage: 0.698925
 learned_at: 2026-10-15 22:37:32

@@ -4,7 +4,7 @@ name: 多图（最多支持9张）+文生视频happyhorse 1.0_204941458981258035
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049414589812580354.json
+file: comfyui_library/workflows/视频生成/图生视频/多图（最多支持9张）+文生视频happyhorse 1.0_2049414589812580354.json
 hash: 6873d9c675fc313c
 coverage: 0.625
 learned_at: 2026-10-15 22:37:14

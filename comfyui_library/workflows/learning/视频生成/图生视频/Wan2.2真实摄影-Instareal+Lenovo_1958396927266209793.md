@@ -4,7 +4,7 @@ name: Wan2.2真实摄影-Instareal+Lenovo_1958396927266209793.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958396927266209793.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2真实摄影-Instareal+Lenovo_1958396927266209793.json
 hash: 1003ece98584d5aa
 coverage: 0.72093
 learned_at: 2026-10-15 22:31:22

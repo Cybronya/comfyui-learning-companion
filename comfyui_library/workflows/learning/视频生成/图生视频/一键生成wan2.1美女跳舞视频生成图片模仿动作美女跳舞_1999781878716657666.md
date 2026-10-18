@@ -4,7 +4,7 @@ name: 一键生成wan2.1美女跳舞视频生成图片模仿动作美女跳舞_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999781878716657666.json
+file: comfyui_library/workflows/视频生成/图生视频/一键生成wan2.1美女跳舞视频生成图片模仿动作美女跳舞_1999781878716657666.json
 hash: 88a76719151154bd
 coverage: 0.857143
 learned_at: 2026-10-15 22:33:38

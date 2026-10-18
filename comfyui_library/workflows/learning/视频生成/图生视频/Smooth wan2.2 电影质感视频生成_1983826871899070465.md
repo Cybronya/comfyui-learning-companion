@@ -4,7 +4,7 @@ name: Smooth wan2.2 电影质感视频生成_1983826871899070465.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983826871899070465.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth wan2.2 电影质感视频生成_1983826871899070465.json
 hash: 3c2bf288032a8b8e
 coverage: 0.969697
 learned_at: 2026-10-15 22:32:46

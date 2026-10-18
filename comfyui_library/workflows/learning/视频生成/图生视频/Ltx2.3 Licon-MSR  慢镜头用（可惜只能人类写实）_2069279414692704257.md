@@ -4,7 +4,7 @@ name: Ltx2.3 Licon-MSR  慢镜头用（可惜只能人类写实）_2069279414692
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069279414692704257.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 Licon-MSR  慢镜头用（可惜只能人类写实）_2069279414692704257.json
 hash: b7625117110a54ca
 coverage: 0.763636
 learned_at: 2026-10-15 22:40:27

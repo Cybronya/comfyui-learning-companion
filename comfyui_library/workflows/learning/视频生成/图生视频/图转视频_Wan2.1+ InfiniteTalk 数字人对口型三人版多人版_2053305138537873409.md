@@ -4,7 +4,7 @@ name: 图转视频_Wan2.1+ InfiniteTalk 数字人对口型三人版多人版_205
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053305138537873409.json
+file: comfyui_library/workflows/视频生成/图生视频/图转视频_Wan2.1+ InfiniteTalk 数字人对口型三人版多人版_2053305138537873409.json
 hash: 2dde7a82190b65f2
 coverage: 0.581081
 learned_at: 2026-10-15 22:37:38

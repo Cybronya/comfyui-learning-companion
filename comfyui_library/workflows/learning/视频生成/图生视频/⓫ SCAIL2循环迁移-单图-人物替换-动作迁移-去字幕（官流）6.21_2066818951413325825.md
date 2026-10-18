@@ -4,7 +4,7 @@ name: ⓫ SCAIL2循环迁移-单图-人物替换-动作迁移-去字幕（官流
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066818951413325825.json
+file: comfyui_library/workflows/视频生成/图生视频/⓫ SCAIL2循环迁移-单图-人物替换-动作迁移-去字幕（官流）6.21_2066818951413325825.json
 hash: 61cb890e444284c8
 coverage: 0.385593
 learned_at: 2026-10-15 22:39:53

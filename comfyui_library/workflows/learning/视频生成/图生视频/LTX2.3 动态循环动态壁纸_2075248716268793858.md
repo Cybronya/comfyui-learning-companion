@@ -4,7 +4,7 @@ name: LTX2.3 动态循环动态壁纸_2075248716268793858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075248716268793858.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 动态循环动态壁纸_2075248716268793858.json
 hash: 707621316d797fbb
 coverage: 0.939024
 learned_at: 2026-10-15 22:41:23

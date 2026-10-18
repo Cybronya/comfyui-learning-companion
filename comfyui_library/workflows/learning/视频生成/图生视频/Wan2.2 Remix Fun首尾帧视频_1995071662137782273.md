@@ -4,7 +4,7 @@ name: Wan2.2 Remix Fun首尾帧视频_1995071662137782273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995071662137782273.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix Fun首尾帧视频_1995071662137782273.json
 hash: d6e4fe1ce12552b6
 coverage: 0.913043
 learned_at: 2026-10-15 22:33:22

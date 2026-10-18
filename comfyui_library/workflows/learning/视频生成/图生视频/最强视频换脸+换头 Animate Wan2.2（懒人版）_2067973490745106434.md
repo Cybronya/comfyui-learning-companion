@@ -4,7 +4,7 @@ name: 最强视频换脸+换头 Animate Wan2.2（懒人版）_206797349074510643
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067973490745106434.json
+file: comfyui_library/workflows/视频生成/图生视频/最强视频换脸+换头 Animate Wan2.2（懒人版）_2067973490745106434.json
 hash: 46f634475893f96e
 coverage: 0.56962
 learned_at: 2026-10-15 22:40:15

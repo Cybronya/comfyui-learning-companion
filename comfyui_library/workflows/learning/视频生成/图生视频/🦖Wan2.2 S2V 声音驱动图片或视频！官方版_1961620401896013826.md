@@ -4,7 +4,7 @@ name: 🦖Wan2.2 S2V 声音驱动图片或视频！官方版_1961620401896013826
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961620401896013826.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖Wan2.2 S2V 声音驱动图片或视频！官方版_1961620401896013826.json
 hash: 2b4a6c388041550e
 coverage: 0.689189
 learned_at: 2026-10-15 22:31:28

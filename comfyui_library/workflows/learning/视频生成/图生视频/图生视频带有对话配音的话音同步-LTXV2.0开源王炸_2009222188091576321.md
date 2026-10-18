@@ -4,7 +4,7 @@ name: 图生视频带有对话配音的话音同步-LTXV2.0开源王炸_20092221
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009222188091576321.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频带有对话配音的话音同步-LTXV2.0开源王炸_2009222188091576321.json
 hash: 14828ac33d67fbc4
 coverage: 0.754098
 learned_at: 2026-10-15 22:34:11

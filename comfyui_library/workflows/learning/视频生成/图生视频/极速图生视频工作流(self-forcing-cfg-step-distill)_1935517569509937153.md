@@ -4,7 +4,7 @@ name: 极速图生视频工作流(self-forcing-cfg-step-distill)_193551756950993
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1935517569509937153.json
+file: comfyui_library/workflows/视频生成/图生视频/极速图生视频工作流(self-forcing-cfg-step-distill)_1935517569509937153.json
 hash: 3d211efb30f867f2
 coverage: 0.709677
 learned_at: 2026-10-15 22:30:22

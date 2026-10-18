@@ -4,7 +4,7 @@ name: 万相wan2.2 图生视频 B站：乔治-周士诚_1957316699274014721.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957316699274014721.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2 图生视频 B站：乔治-周士诚_1957316699274014721.json
 hash: c0d0edb3cf92f6e8
 coverage: 0.956522
 learned_at: 2026-10-15 22:31:16

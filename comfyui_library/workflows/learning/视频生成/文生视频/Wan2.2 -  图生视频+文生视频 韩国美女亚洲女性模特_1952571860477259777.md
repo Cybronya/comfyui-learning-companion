@@ -4,7 +4,7 @@ name: Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1952571860477259777.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 -  图生视频+文生视频 韩国美女亚洲女性模特_1952571860477259777.json
 hash: e1edf87f7998f664
 coverage: 0.923077
 learned_at: 2026-10-15 22:43:38

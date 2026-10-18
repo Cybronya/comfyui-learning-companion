@@ -4,7 +4,7 @@ name: LTX2.3+LTX Director V2.0 导演台升级版慢剧视频_206896918776206950
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2068969187762069506.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3+LTX Director V2.0 导演台升级版慢剧视频_2068969187762069506.json
 hash: 2ce0bd06baa2909b
 coverage: 0.911111
 learned_at: 2026-10-15 22:40:24

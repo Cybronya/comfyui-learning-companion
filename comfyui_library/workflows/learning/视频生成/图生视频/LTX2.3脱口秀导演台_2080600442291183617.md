@@ -4,7 +4,7 @@ name: LTX2.3脱口秀导演台_2080600442291183617.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080600442291183617.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3脱口秀导演台_2080600442291183617.json
 hash: 9e8d9d13d1bd210c
 coverage: 1
 learned_at: 2026-10-15 22:42:16

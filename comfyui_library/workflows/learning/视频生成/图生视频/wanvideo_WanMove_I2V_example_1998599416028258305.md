@@ -4,7 +4,7 @@ name: wanvideo_WanMove_I2V_example_1998599416028258305.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998599416028258305.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_WanMove_I2V_example_1998599416028258305.json
 hash: fd6301260537dd84
 coverage: 0.846154
 learned_at: 2026-10-15 22:33:32

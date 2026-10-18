@@ -4,7 +4,7 @@ name: LTX2.3 数字人首尾帧 加入转场lora和Prompt Relay_2049132268295299
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2049132268295299073.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 数字人首尾帧 加入转场lora和Prompt Relay_2049132268295299073.json
 hash: 0423c16bc2cb28ad
 coverage: 0.488722
 learned_at: 2026-10-15 22:37:13

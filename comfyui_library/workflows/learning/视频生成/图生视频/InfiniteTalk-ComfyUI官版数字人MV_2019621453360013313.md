@@ -4,7 +4,7 @@ name: InfiniteTalk-ComfyUI官版数字人MV_2019621453360013313.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019621453360013313.json
+file: comfyui_library/workflows/视频生成/图生视频/InfiniteTalk-ComfyUI官版数字人MV_2019621453360013313.json
 hash: fb4c0478d74115a2
 coverage: 0.928571
 learned_at: 2026-10-15 22:35:03

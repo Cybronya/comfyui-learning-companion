@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：网红花瓣消失术_1957783332
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957783332476088321.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：网红花瓣消失术_1957783332476088321.json
 hash: d3862249a1266269
 coverage: 1
 learned_at: 2026-10-15 22:31:18

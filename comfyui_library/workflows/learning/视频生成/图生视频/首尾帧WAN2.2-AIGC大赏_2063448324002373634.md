@@ -4,7 +4,7 @@ name: 首尾帧WAN2.2-AIGC大赏_2063448324002373634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063448324002373634.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧WAN2.2-AIGC大赏_2063448324002373634.json
 hash: 3fc0f7ee65a4c442
 coverage: 0.974359
 learned_at: 2026-10-15 22:39:13

@@ -4,7 +4,7 @@ name: 万相wan2.1电影级特效极速生成：双人对打_1963832271633616897
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963832271633616897.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.1电影级特效极速生成：双人对打_1963832271633616897.json
 hash: ab5038a0ac7d88ae
 coverage: 1
 learned_at: 2026-10-15 22:31:33

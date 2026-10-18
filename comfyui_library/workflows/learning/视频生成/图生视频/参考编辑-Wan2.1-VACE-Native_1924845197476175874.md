@@ -4,7 +4,7 @@ name: 参考编辑-Wan2.1-VACE-Native_1924845197476175874.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1924845197476175874.json
+file: comfyui_library/workflows/视频生成/图生视频/参考编辑-Wan2.1-VACE-Native_1924845197476175874.json
 hash: 64db98c14b7d6842
 coverage: 0.966667
 learned_at: 2026-10-15 22:29:51

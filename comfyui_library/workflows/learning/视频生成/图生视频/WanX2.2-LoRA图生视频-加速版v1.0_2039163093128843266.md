@@ -4,7 +4,7 @@ name: WanX2.2-LoRA图生视频-加速版v1.0_2039163093128843266.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039163093128843266.json
+file: comfyui_library/workflows/视频生成/图生视频/WanX2.2-LoRA图生视频-加速版v1.0_2039163093128843266.json
 hash: 47da8a83c26d3ae9
 coverage: 0.521739
 learned_at: 2026-10-15 22:36:06

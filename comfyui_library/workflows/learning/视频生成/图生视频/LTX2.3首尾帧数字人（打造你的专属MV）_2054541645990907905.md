@@ -4,7 +4,7 @@ name: LTX2.3首尾帧数字人（打造你的专属MV）_2054541645990907905.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054541645990907905.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧数字人（打造你的专属MV）_2054541645990907905.json
 hash: 2a6359b87c6473bf
 coverage: 0.452381
 learned_at: 2026-10-15 22:37:49

@@ -4,7 +4,7 @@ name: 通义万相Wan2.1图生视频提示词反推加速版_1903428190818177025
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1903428190818177025.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相Wan2.1图生视频提示词反推加速版_1903428190818177025.json
 hash: d9700dd96ab0ca6f
 coverage: 0.954545
 learned_at: 2026-10-15 22:29:25

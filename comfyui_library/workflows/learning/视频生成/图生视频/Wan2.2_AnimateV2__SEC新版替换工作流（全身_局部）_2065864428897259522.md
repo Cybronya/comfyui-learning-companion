@@ -4,7 +4,7 @@ name: Wan2.2_AnimateV2__SEC新版替换工作流（全身_局部）_206586442889
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065864428897259522.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_AnimateV2__SEC新版替换工作流（全身_局部）_2065864428897259522.json
 hash: 81292288e6dfbc72
 coverage: 0.903226
 learned_at: 2026-10-15 22:39:45

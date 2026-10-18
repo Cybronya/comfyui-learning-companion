@@ -4,7 +4,7 @@ name: LTX 2.3 Singularity FLFV 首尾帧_2075059054535335938.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075059054535335938.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 Singularity FLFV 首尾帧_2075059054535335938.json
 hash: a135515e71a6280a
 coverage: 0.597701
 learned_at: 2026-10-15 22:41:20

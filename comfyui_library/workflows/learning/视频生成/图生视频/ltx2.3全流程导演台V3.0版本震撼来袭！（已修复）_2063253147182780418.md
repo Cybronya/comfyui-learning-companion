@@ -4,7 +4,7 @@ name: ltx2.3全流程导演台V3.0版本震撼来袭！（已修复）_206325314
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063253147182780418.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3全流程导演台V3.0版本震撼来袭！（已修复）_2063253147182780418.json
 hash: b905f6f77f6c9f24
 coverage: 1
 learned_at: 2026-10-15 22:39:12

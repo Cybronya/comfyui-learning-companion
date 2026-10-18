@@ -4,7 +4,7 @@ name: MoviiGen1.1_文生视频_1923566284871823361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1923566284871823361.json
+file: comfyui_library/workflows/视频生成/文生视频/MoviiGen1.1_文生视频_1923566284871823361.json
 hash: fc1d306b964c03a6
 coverage: 1
 learned_at: 2026-10-15 22:43:24

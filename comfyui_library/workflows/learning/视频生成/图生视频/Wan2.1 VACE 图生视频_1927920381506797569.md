@@ -4,7 +4,7 @@ name: Wan2.1 VACE 图生视频_1927920381506797569.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927920381506797569.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 VACE 图生视频_1927920381506797569.json
 hash: 58b8c85f2384aa8b
 coverage: 0.689655
 learned_at: 2026-10-15 22:29:55

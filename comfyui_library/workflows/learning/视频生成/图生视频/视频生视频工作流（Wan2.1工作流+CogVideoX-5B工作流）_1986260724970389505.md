@@ -4,7 +4,7 @@ name: 视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_198626
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986260724970389505.json
+file: comfyui_library/workflows/视频生成/图生视频/视频生视频工作流（Wan2.1工作流+CogVideoX-5B工作流）_1986260724970389505.json
 hash: d173b82aa9773574
 coverage: 0.963636
 learned_at: 2026-10-15 22:32:54

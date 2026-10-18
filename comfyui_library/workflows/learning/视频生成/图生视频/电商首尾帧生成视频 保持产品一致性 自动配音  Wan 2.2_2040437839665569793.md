@@ -4,7 +4,7 @@ name: 电商首尾帧生成视频 保持产品一致性 自动配音  Wan 2.2_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040437839665569793.json
+file: comfyui_library/workflows/视频生成/图生视频/电商首尾帧生成视频 保持产品一致性 自动配音  Wan 2.2_2040437839665569793.json
 hash: c61306e18ceb6283
 coverage: 0.875
 learned_at: 2026-10-15 22:36:15

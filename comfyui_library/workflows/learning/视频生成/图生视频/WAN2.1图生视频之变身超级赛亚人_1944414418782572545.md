@@ -4,7 +4,7 @@ name: WAN2.1图生视频之变身超级赛亚人_1944414418782572545.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1944414418782572545.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1图生视频之变身超级赛亚人_1944414418782572545.json
 hash: 3c8f25127ba9ff7c
 coverage: 1
 learned_at: 2026-10-15 22:30:39

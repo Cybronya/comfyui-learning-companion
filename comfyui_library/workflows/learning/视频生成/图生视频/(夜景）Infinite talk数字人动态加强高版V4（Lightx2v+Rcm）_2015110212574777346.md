@@ -4,7 +4,7 @@ name: (夜景）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_201
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015110212574777346.json
+file: comfyui_library/workflows/视频生成/图生视频/(夜景）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2015110212574777346.json
 hash: 84e713f1764ffbd5
 coverage: 0.75
 learned_at: 2026-10-15 22:34:37

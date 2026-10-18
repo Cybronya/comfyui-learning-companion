@@ -4,7 +4,7 @@ name: EMIX++首-中-尾三帧视频  Wan2.2反推提示词-Remix图生视频 REM
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1991311451711209474.json
+file: comfyui_library/workflows/视频生成/图生视频/EMIX++首-中-尾三帧视频  Wan2.2反推提示词-Remix图生视频 REMIX 提示词全自_1991311451711209474.json
 hash: c1ff7bb51bc99f8c
 coverage: 0.833333
 learned_at: 2026-10-15 22:33:13

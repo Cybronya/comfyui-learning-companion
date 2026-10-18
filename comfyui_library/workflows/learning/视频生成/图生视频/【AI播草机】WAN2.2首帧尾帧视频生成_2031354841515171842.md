@@ -4,7 +4,7 @@ name: 【AI播草机】WAN2.2首帧尾帧视频生成_2031354841515171842.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031354841515171842.json
+file: comfyui_library/workflows/视频生成/图生视频/【AI播草机】WAN2.2首帧尾帧视频生成_2031354841515171842.json
 hash: 1d43d5e488b32d6e
 coverage: 0.947368
 learned_at: 2026-10-15 22:35:31

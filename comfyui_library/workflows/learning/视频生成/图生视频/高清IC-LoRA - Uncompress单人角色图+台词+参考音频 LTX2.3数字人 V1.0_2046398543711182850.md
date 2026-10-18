@@ -4,7 +4,7 @@ name: 高清IC-LoRA - Uncompress单人角色图+台词+参考音频 LTX2.3数字
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046398543711182850.json
+file: comfyui_library/workflows/视频生成/图生视频/高清IC-LoRA - Uncompress单人角色图+台词+参考音频 LTX2.3数字人 V1.0_2046398543711182850.json
 hash: 9e6ed2070d067489
 coverage: 0.80597
 learned_at: 2026-10-15 22:36:57

@@ -4,7 +4,7 @@ name: 视频转绘分解版(Qwen Edit+Wan2.2)_1973311243706568705.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1973311243706568705.json
+file: comfyui_library/workflows/视频生成/图生视频/视频转绘分解版(Qwen Edit+Wan2.2)_1973311243706568705.json
 hash: a70eb80e974045b9
 coverage: 0.888889
 learned_at: 2026-10-15 22:32:02

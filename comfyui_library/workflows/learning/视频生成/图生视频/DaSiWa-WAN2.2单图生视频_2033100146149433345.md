@@ -4,7 +4,7 @@ name: DaSiWa-WAN2.2单图生视频_2033100146149433345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033100146149433345.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWa-WAN2.2单图生视频_2033100146149433345.json
 hash: 826e97d3290ba86b
 coverage: 0.852941
 learned_at: 2026-10-15 22:35:38

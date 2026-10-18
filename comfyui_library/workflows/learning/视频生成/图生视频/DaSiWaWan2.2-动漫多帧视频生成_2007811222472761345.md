@@ -4,7 +4,7 @@ name: DaSiWaWan2.2-动漫多帧视频生成_2007811222472761345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007811222472761345.json
+file: comfyui_library/workflows/视频生成/图生视频/DaSiWaWan2.2-动漫多帧视频生成_2007811222472761345.json
 hash: bc3c47f789ea26a3
 coverage: 1
 learned_at: 2026-10-15 22:34:05

@@ -4,7 +4,7 @@ name: 很棒的LongCat 1.5数字人动态加强稳定-单次10s音频版_2060335
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060335881759838210.json
+file: comfyui_library/workflows/视频生成/图生视频/很棒的LongCat 1.5数字人动态加强稳定-单次10s音频版_2060335881759838210.json
 hash: 38a20a5b9cbad2fa
 coverage: 0.459016
 learned_at: 2026-10-15 22:38:47

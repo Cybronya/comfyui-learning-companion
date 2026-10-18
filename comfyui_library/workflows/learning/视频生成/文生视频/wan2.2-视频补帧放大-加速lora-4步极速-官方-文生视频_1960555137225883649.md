@@ -4,7 +4,7 @@ name: wan2.2-视频补帧放大-加速lora-4步极速-官方-文生视频_196055
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1960555137225883649.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2-视频补帧放大-加速lora-4步极速-官方-文生视频_1960555137225883649.json
 hash: c17d66224795ac7f
 coverage: 0.818182
 learned_at: 2026-10-15 22:43:43

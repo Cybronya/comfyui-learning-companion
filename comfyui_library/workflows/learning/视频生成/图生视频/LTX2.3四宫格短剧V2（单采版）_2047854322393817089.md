@@ -4,7 +4,7 @@ name: LTX2.3四宫格短剧V2（单采版）_2047854322393817089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047854322393817089.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3四宫格短剧V2（单采版）_2047854322393817089.json
 hash: a2f4cc40be4eca18
 coverage: 0.655914
 learned_at: 2026-10-15 22:37:07

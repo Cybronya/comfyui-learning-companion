@@ -4,7 +4,7 @@ name: 万相WAN2.1，美女一键跳舞！_1911140460969062401.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1911140460969062401.json
+file: comfyui_library/workflows/视频生成/图生视频/万相WAN2.1，美女一键跳舞！_1911140460969062401.json
 hash: c9d4bdda710db8d6
 coverage: 1
 learned_at: 2026-10-15 22:29:30

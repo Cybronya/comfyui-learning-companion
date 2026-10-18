@@ -4,7 +4,7 @@ name: VOXCPM2 +LTX 2.3 数字人图生视频V3_2051952349974937602.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051952349974937602.json
+file: comfyui_library/workflows/视频生成/图生视频/VOXCPM2 +LTX 2.3 数字人图生视频V3_2051952349974937602.json
 hash: dde920994d850841
 coverage: 0.948387
 learned_at: 2026-10-15 22:37:25

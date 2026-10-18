@@ -4,7 +4,7 @@ name: wan2.2-14B 首尾帧最新-速度快，质量好_1956190750184755201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956190750184755201.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-14B 首尾帧最新-速度快，质量好_1956190750184755201.json
 hash: 5f7c19be66db41fe
 coverage: 0.911111
 learned_at: 2026-10-15 22:31:12

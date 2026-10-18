@@ -4,7 +4,7 @@ name: YJ-ltx2.3去水印 (1)_2069702802959589378.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069702802959589378.json
+file: comfyui_library/workflows/视频生成/图生视频/YJ-ltx2.3去水印 (1)_2069702802959589378.json
 hash: 7cd55a0f8a469a52
 coverage: 1
 learned_at: 2026-10-15 22:40:32

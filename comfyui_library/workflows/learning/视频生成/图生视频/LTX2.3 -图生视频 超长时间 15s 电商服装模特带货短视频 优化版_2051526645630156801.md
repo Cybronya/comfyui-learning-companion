@@ -4,7 +4,7 @@ name: LTX2.3 -图生视频 超长时间 15s 电商服装模特带货短视频 �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051526645630156801.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 -图生视频 超长时间 15s 电商服装模特带货短视频 优化版_2051526645630156801.json
 hash: c8962efef846a5fb
 coverage: 0.915254
 learned_at: 2026-10-15 22:37:22

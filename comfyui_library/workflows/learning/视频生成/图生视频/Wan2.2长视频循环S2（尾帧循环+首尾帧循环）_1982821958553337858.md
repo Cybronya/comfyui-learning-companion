@@ -4,7 +4,7 @@ name: Wan2.2长视频循环S2（尾帧循环+首尾帧循环）_1982821958553337
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1982821958553337858.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2长视频循环S2（尾帧循环+首尾帧循环）_1982821958553337858.json
 hash: 9b27b3f519ec0226
 coverage: 0.862069
 learned_at: 2026-10-15 22:32:43

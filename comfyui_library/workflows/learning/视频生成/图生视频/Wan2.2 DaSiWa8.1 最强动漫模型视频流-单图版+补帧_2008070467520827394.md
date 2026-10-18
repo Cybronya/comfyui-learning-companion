@@ -4,7 +4,7 @@ name: Wan2.2 DaSiWa8.1 最强动漫模型视频流-单图版+补帧_200807046752
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008070467520827394.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 DaSiWa8.1 最强动漫模型视频流-单图版+补帧_2008070467520827394.json
 hash: b80ee86ebfc6926e
 coverage: 0.815789
 learned_at: 2026-10-15 22:34:06

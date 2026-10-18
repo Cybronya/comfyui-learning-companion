@@ -4,7 +4,7 @@ name: Wan2.2-Animate-图生视频 官方原版更稳定 人物替换SEC（精准
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983610116006191105.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Animate-图生视频 官方原版更稳定 人物替换SEC（精准换人）+长视频 稳如老狗_1983610116006191105.json
 hash: febee8590a6c8031
 coverage: 0.586538
 learned_at: 2026-10-15 22:32:45

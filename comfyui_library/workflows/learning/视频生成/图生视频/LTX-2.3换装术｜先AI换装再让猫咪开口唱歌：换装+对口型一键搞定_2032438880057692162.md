@@ -4,7 +4,7 @@ name: LTX-2.3换装术｜先AI换装再让猫咪开口唱歌：换装+对口型�
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032438880057692162.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3换装术｜先AI换装再让猫咪开口唱歌：换装+对口型一键搞定_2032438880057692162.json
 hash: 49e5eb28e7221667
 coverage: 0.858974
 learned_at: 2026-10-15 22:35:36

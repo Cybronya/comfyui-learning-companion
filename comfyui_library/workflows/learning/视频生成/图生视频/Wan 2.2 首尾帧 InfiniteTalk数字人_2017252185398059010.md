@@ -4,7 +4,7 @@ name: Wan 2.2 首尾帧 InfiniteTalk数字人_2017252185398059010.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017252185398059010.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 首尾帧 InfiniteTalk数字人_2017252185398059010.json
 hash: f012d1e8c4f59231
 coverage: 0.926829
 learned_at: 2026-10-15 22:34:46

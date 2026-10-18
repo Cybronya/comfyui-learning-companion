@@ -4,7 +4,7 @@ name: WAN2.视频生成（提示词优化版）_2079370650996789249.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079370650996789249.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.视频生成（提示词优化版）_2079370650996789249.json
 hash: 7e94f708abb5b06e
 coverage: 0.901786
 learned_at: 2026-10-15 22:42:01

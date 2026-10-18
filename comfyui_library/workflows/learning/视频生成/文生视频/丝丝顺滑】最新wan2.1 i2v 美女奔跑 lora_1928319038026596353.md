@@ -4,7 +4,7 @@ name: 丝丝顺滑】最新wan2.1 i2v 美女奔跑 lora_1928319038026596353.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1928319038026596353.json
+file: comfyui_library/workflows/视频生成/文生视频/丝丝顺滑】最新wan2.1 i2v 美女奔跑 lora_1928319038026596353.json
 hash: 502b7c86204794d6
 coverage: 1
 learned_at: 2026-10-15 22:43:25

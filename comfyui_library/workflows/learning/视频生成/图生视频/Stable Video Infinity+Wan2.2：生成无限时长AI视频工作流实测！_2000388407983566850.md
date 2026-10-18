@@ -4,7 +4,7 @@ name: Stable Video Infinity+Wan2.2：生成无限时长AI视频工作流实测�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000388407983566850.json
+file: comfyui_library/workflows/视频生成/图生视频/Stable Video Infinity+Wan2.2：生成无限时长AI视频工作流实测！_2000388407983566850.json
 hash: 98ea036fc1459341
 coverage: 0.729412
 learned_at: 2026-10-15 22:33:40

@@ -4,7 +4,7 @@ name: LTX2.0-图生视频（优化版）全自动反推提示词_201103930612672
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011039306126725122.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0-图生视频（优化版）全自动反推提示词_2011039306126725122.json
 hash: 0c3a509011b05948
 coverage: 0.574713
 learned_at: 2026-10-15 22:34:20

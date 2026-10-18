@@ -4,7 +4,7 @@ name: （Uncensor反推+（自用）版）Wan2.2 All-in-one V9.1图生视频极�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1959887220616409089.json
+file: comfyui_library/workflows/视频生成/图生视频/（Uncensor反推+（自用）版）Wan2.2 All-in-one V9.1图生视频极速版V1_1959887220616409089.json
 hash: cb2c8d663cbbb4ad
 coverage: 0.970588
 learned_at: 2026-10-15 22:31:25

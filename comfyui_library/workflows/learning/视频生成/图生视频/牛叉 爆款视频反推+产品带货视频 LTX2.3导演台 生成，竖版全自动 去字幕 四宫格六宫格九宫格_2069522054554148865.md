@@ -4,7 +4,7 @@ name: 牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069522054554148865.json
+file: comfyui_library/workflows/视频生成/图生视频/牛叉 爆款视频反推+产品带货视频 LTX2.3导演台 生成，竖版全自动 去字幕 四宫格六宫格九宫格_2069522054554148865.json
 hash: 4140c0bc0e98a386
 coverage: 0.87931
 learned_at: 2026-10-15 22:40:30

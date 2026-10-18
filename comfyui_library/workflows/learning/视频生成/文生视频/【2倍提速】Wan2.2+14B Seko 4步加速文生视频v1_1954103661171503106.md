@@ -4,7 +4,7 @@ name: 【2倍提速】Wan2.2+14B Seko 4步加速文生视频v1_19541036611715031
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954103661171503106.json
+file: comfyui_library/workflows/视频生成/文生视频/【2倍提速】Wan2.2+14B Seko 4步加速文生视频v1_1954103661171503106.json
 hash: 8b77d40e4ccceb4b
 coverage: 0.75
 learned_at: 2026-10-15 22:43:39

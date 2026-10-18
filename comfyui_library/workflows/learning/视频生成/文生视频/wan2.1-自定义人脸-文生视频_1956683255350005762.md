@@ -4,7 +4,7 @@ name: wan2.1-自定义人脸-文生视频_1956683255350005762.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1956683255350005762.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1-自定义人脸-文生视频_1956683255350005762.json
 hash: 9667755abd255a0c
 coverage: 0.956522
 learned_at: 2026-10-15 22:43:41

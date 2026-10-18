@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 文生视频精准调度加速版V4（加速及质量提高�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950086334457274370.json
+file: comfyui_library/workflows/视频生成/文生视频/(KJ版)Wan2.2 文生视频精准调度加速版V4（加速及质量提高）_1950086334457274370.json
 hash: 97c2d16c9698a1e3
 coverage: 0.842105
 learned_at: 2026-10-15 22:43:34

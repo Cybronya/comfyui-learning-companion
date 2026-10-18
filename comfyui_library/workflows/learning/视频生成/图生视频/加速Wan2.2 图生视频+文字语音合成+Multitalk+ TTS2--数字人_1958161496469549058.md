@@ -4,7 +4,7 @@ name: 加速Wan2.2 图生视频+文字语音合成+Multitalk+ TTS2--数字人_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958161496469549058.json
+file: comfyui_library/workflows/视频生成/图生视频/加速Wan2.2 图生视频+文字语音合成+Multitalk+ TTS2--数字人_1958161496469549058.json
 hash: 7bb3b9c8b0e629ab
 coverage: 0.916667
 learned_at: 2026-10-15 22:31:21

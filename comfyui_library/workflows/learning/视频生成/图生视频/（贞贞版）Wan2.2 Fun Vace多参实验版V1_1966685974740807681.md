@@ -4,7 +4,7 @@ name: （贞贞版）Wan2.2 Fun Vace多参实验版V1_1966685974740807681.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966685974740807681.json
+file: comfyui_library/workflows/视频生成/图生视频/（贞贞版）Wan2.2 Fun Vace多参实验版V1_1966685974740807681.json
 hash: bfc5ee718c6be222
 coverage: 0.913793
 learned_at: 2026-10-15 22:31:39

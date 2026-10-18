@@ -4,7 +4,7 @@ name: video_humo_native_unlimited_workflow_1971476193147076609.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1971476193147076609.json
+file: comfyui_library/workflows/视频生成/图生视频/video_humo_native_unlimited_workflow_1971476193147076609.json
 hash: 60356fbe8876ee2c
 coverage: 0.772727
 learned_at: 2026-10-15 22:31:56

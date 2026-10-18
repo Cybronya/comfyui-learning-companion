@@ -4,7 +4,7 @@ name: 人物替换x凡人二创V2.0_2029486015072706561.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2029486015072706561.json
+file: comfyui_library/workflows/视频生成/图生视频/人物替换x凡人二创V2.0_2029486015072706561.json
 hash: e4c9db6640b17903
 coverage: 0.390244
 learned_at: 2026-10-15 22:35:22

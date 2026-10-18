@@ -4,7 +4,7 @@ name: (花园）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_201
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016772448875716609.json
+file: comfyui_library/workflows/视频生成/图生视频/(花园）Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2016772448875716609.json
 hash: d8ceb0b1fdbe9b12
 coverage: 0.75
 learned_at: 2026-10-15 22:34:43

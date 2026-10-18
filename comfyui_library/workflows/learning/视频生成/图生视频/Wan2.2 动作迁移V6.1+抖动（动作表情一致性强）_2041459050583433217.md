@@ -4,7 +4,7 @@ name: Wan2.2 动作迁移V6.1+抖动（动作表情一致性强）_2041459050583
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041459050583433217.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 动作迁移V6.1+抖动（动作表情一致性强）_2041459050583433217.json
 hash: 086e9801c2190d96
 coverage: 0.5
 learned_at: 2026-10-15 22:36:20

@@ -4,7 +4,7 @@ name: 万相wan2.2动作迁移 +vace+radial+补帧_1957679362386620417.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957679362386620417.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2动作迁移 +vace+radial+补帧_1957679362386620417.json
 hash: 67f40257a8eb1d7e
 coverage: 1
 learned_at: 2026-10-15 22:31:17

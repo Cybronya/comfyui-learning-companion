@@ -4,7 +4,7 @@ name: 哪吒通晓古今诗词数字人(Index-TTS2.0+Sonic)_1924635458259570689.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1924635458259570689.json
+file: comfyui_library/workflows/视频生成/图生视频/哪吒通晓古今诗词数字人(Index-TTS2.0+Sonic)_1924635458259570689.json
 hash: 201db10aed0921ef
 coverage: 0.863636
 learned_at: 2026-10-15 22:29:50

@@ -4,7 +4,7 @@ name: wan2.2首-中-尾循环（补帧）_1989252232006742017.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989252232006742017.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2首-中-尾循环（补帧）_1989252232006742017.json
 hash: ca8814919603b1bd
 coverage: 0.521127
 learned_at: 2026-10-15 22:33:06

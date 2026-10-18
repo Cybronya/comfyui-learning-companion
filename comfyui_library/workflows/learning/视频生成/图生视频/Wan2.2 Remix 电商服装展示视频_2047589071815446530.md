@@ -4,7 +4,7 @@ name: Wan2.2 Remix 电商服装展示视频_2047589071815446530.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047589071815446530.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Remix 电商服装展示视频_2047589071815446530.json
 hash: 779f4816b08bca39
 coverage: 0.763889
 learned_at: 2026-10-15 22:37:06

@@ -4,7 +4,7 @@ name: 恶灵骑士wan2.2_1954715963700736001.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954715963700736001.json
+file: comfyui_library/workflows/视频生成/图生视频/恶灵骑士wan2.2_1954715963700736001.json
 hash: 2bc4b378245e0ece
 coverage: 0.964286
 learned_at: 2026-10-15 22:31:06

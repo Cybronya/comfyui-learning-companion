@@ -4,7 +4,7 @@ name: Wan 2.2 Remix2.1图生长视频 ：分镜时长+精准叙事_2016438828810
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016438828810117122.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 Remix2.1图生长视频 ：分镜时长+精准叙事_2016438828810117122.json
 hash: 50de9ecb047edd75
 coverage: 0.978723
 learned_at: 2026-10-15 22:34:42

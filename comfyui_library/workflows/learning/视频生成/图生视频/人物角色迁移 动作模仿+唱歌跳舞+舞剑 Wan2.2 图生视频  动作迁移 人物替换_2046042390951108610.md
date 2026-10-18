@@ -4,7 +4,7 @@ name: 人物角色迁移 动作模仿+唱歌跳舞+舞剑 Wan2.2 图生视频  �
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046042390951108610.json
+file: comfyui_library/workflows/视频生成/图生视频/人物角色迁移 动作模仿+唱歌跳舞+舞剑 Wan2.2 图生视频  动作迁移 人物替换_2046042390951108610.json
 hash: 00cb2772c8bc9bb7
 coverage: 0.822222
 learned_at: 2026-10-15 22:36:54

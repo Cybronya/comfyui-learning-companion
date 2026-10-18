@@ -4,7 +4,7 @@ name: Kling_VideoO1StdRefrenceToVideo_v1.0_2033816424233308161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2033816424233308161.json
+file: comfyui_library/workflows/视频生成/图生视频/Kling_VideoO1StdRefrenceToVideo_v1.0_2033816424233308161.json
 hash: 0e48bb86a5e48da9
 coverage: 1
 learned_at: 2026-10-15 22:35:41

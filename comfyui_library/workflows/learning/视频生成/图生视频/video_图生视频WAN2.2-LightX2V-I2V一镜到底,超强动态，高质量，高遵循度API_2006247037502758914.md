@@ -4,7 +4,7 @@ name: video_图生视频WAN2.2-LightX2V-I2V一镜到底,超强动态，高质量
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006247037502758914.json
+file: comfyui_library/workflows/视频生成/图生视频/video_图生视频WAN2.2-LightX2V-I2V一镜到底,超强动态，高质量，高遵循度API_2006247037502758914.json
 hash: c9c6fd0110bffc2a
 coverage: 0.428571
 learned_at: 2026-10-15 22:34:01

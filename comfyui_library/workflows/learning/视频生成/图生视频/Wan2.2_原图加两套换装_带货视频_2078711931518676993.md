@@ -4,7 +4,7 @@ name: Wan2.2_原图加两套换装_带货视频_2078711931518676993.json
 type: Text To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2078711931518676993.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2_原图加两套换装_带货视频_2078711931518676993.json
 hash: 734859f15dd87d66
 coverage: 0.98913
 learned_at: 2026-10-15 22:41:55

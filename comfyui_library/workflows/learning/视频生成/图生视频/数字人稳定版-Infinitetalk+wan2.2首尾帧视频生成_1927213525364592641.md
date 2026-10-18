@@ -4,7 +4,7 @@ name: 数字人稳定版-Infinitetalk+wan2.2首尾帧视频生成_19272135253645
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927213525364592641.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人稳定版-Infinitetalk+wan2.2首尾帧视频生成_1927213525364592641.json
 hash: bcb6c02fed0714f1
 coverage: 0.90625
 learned_at: 2026-10-15 22:29:54

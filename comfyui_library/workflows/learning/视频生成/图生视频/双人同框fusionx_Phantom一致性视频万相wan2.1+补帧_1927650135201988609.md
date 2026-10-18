@@ -4,7 +4,7 @@ name: 双人同框fusionx_Phantom一致性视频万相wan2.1+补帧_192765013520
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1927650135201988609.json
+file: comfyui_library/workflows/视频生成/图生视频/双人同框fusionx_Phantom一致性视频万相wan2.1+补帧_1927650135201988609.json
 hash: c3f2b66a79e45b18
 coverage: 0.957447
 learned_at: 2026-10-15 22:29:55

@@ -4,7 +4,7 @@ name: LTX2.3-FPV航拍镜头-图生视频-自动提示词-支持快节奏_205231
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2052313394044256257.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-FPV航拍镜头-图生视频-自动提示词-支持快节奏_2052313394044256257.json
 hash: 583c2783f5478760
 coverage: 0.9
 learned_at: 2026-10-15 22:37:28

@@ -4,7 +4,7 @@ name: Wan2.2 14B+LightX2V 6步生视频（无声音）_2056552561905332226.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2056552561905332226.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 14B+LightX2V 6步生视频（无声音）_2056552561905332226.json
 hash: 884af2baa8cc1d5d
 coverage: 1
 learned_at: 2026-10-15 22:38:04

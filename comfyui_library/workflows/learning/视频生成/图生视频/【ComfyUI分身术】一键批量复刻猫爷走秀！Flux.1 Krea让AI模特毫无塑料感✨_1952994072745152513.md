@@ -4,7 +4,7 @@ name: 【ComfyUI分身术】一键批量复刻猫爷走秀！Flux.1 Krea让AI模
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952994072745152513.json
+file: comfyui_library/workflows/视频生成/图生视频/【ComfyUI分身术】一键批量复刻猫爷走秀！Flux.1 Krea让AI模特毫无塑料感✨_1952994072745152513.json
 hash: e194866c96b1c7c5
 coverage: 0.536765
 learned_at: 2026-10-15 22:31:03

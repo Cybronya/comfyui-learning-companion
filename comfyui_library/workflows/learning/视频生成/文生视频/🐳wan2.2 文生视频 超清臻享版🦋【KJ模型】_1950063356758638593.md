@@ -4,7 +4,7 @@ name: 🐳wan2.2 文生视频 超清臻享版🦋【KJ模型】_1950063356758638
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950063356758638593.json
+file: comfyui_library/workflows/视频生成/文生视频/🐳wan2.2 文生视频 超清臻享版🦋【KJ模型】_1950063356758638593.json
 hash: 6329c4a17738264a
 coverage: 0.966667
 learned_at: 2026-10-15 22:43:34

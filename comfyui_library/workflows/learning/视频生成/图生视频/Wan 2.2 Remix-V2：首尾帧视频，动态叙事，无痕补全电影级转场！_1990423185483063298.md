@@ -4,7 +4,7 @@ name: Wan 2.2 Remix-V2：首尾帧视频，动态叙事，无痕补全电影级�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1990423185483063298.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 Remix-V2：首尾帧视频，动态叙事，无痕补全电影级转场！_1990423185483063298.json
 hash: 20c271f6119ba3e3
 coverage: 0.803279
 learned_at: 2026-10-15 22:33:10

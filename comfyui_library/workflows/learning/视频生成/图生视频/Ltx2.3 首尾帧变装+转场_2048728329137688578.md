@@ -4,7 +4,7 @@ name: Ltx2.3 首尾帧变装+转场_2048728329137688578.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048728329137688578.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3 首尾帧变装+转场_2048728329137688578.json
 hash: 3c90e60a50d18895
 coverage: 0.873016
 learned_at: 2026-10-15 22:37:11

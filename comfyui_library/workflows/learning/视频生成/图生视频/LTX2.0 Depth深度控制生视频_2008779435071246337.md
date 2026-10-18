@@ -4,7 +4,7 @@ name: LTX2.0 Depth深度控制生视频_2008779435071246337.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2008779435071246337.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0 Depth深度控制生视频_2008779435071246337.json
 hash: 86d1697360559306
 coverage: 0.924528
 learned_at: 2026-10-15 22:34:09

@@ -4,7 +4,7 @@ name: wan2.1_GGUF官方工作流_I2V_480P_1930296715969204225.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1930296715969204225.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_GGUF官方工作流_I2V_480P_1930296715969204225.json
 hash: 5f8d6932c07c3816
 coverage: 1
 learned_at: 2026-10-15 22:30:05

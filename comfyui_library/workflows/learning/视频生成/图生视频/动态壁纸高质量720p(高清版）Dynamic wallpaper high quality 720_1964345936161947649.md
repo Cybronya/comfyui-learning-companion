@@ -4,7 +4,7 @@ name: 动态壁纸高质量720p(高清版）Dynamic wallpaper high quality 720_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964345936161947649.json
+file: comfyui_library/workflows/视频生成/图生视频/动态壁纸高质量720p(高清版）Dynamic wallpaper high quality 720_1964345936161947649.json
 hash: 16ba5c0ae2e62dff
 coverage: 0.888889
 learned_at: 2026-10-15 22:31:35

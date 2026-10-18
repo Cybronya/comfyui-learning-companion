@@ -4,7 +4,7 @@ name: wan2.2 Fun VACE 舞蹈动作迁移 KJ_1967847816360001537.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1967847816360001537.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 Fun VACE 舞蹈动作迁移 KJ_1967847816360001537.json
 hash: d67a9d8874371f30
 coverage: 0.730769
 learned_at: 2026-10-15 22:31:43

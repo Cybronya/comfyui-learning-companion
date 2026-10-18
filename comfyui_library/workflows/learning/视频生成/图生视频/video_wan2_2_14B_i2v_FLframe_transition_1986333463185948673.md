@@ -4,7 +4,7 @@ name: video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986333463185948673.json
+file: comfyui_library/workflows/视频生成/图生视频/video_wan2_2_14B_i2v_FLframe_transition_1986333463185948673.json
 hash: 5096b530a86b7a64
 coverage: 0.5
 learned_at: 2026-10-15 22:32:54

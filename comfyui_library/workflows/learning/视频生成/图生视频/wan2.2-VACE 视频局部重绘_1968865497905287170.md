@@ -4,7 +4,7 @@ name: wan2.2-VACE 视频局部重绘_1968865497905287170.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1968865497905287170.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-VACE 视频局部重绘_1968865497905287170.json
 hash: ffa79cf348ec8521
 coverage: 0.952381
 learned_at: 2026-10-15 22:31:46

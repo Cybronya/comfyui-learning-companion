@@ -4,7 +4,7 @@ name: B3-WAN2.1-首尾帧视频加速版VACE+FusionX+NAG_1934799342199087105.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1934799342199087105.json
+file: comfyui_library/workflows/视频生成/图生视频/B3-WAN2.1-首尾帧视频加速版VACE+FusionX+NAG_1934799342199087105.json
 hash: 5afd480121da76f9
 coverage: 0.931034
 learned_at: 2026-10-15 22:30:19

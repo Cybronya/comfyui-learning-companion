@@ -4,7 +4,7 @@ name: 🦖WAN 2.2 Smooth高质量图生视频_1980114227547508737.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980114227547508737.json
+file: comfyui_library/workflows/视频生成/图生视频/🦖WAN 2.2 Smooth高质量图生视频_1980114227547508737.json
 hash: 8665ccf3c939609d
 coverage: 0.787234
 learned_at: 2026-10-15 22:32:27

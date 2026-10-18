@@ -4,7 +4,7 @@ name: 最强动漫模型DaSiWa8.1视频流_2063503636654813185.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063503636654813185.json
+file: comfyui_library/workflows/视频生成/图生视频/最强动漫模型DaSiWa8.1视频流_2063503636654813185.json
 hash: 9681c11edd9c79b8
 coverage: 0.394366
 learned_at: 2026-10-15 22:39:14

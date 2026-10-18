@@ -4,7 +4,7 @@ name: Wan2.2结合Animate实现20秒以上视频生成，支持多人动作 脸�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017109030061219842.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2结合Animate实现20秒以上视频生成，支持多人动作 脸部表情迁移高质量输出_2017109030061219842.json
 hash: e4203577984d7576
 coverage: 0.542553
 learned_at: 2026-10-15 22:34:45

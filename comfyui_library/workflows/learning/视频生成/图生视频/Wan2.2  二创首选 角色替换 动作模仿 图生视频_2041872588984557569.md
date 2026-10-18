@@ -4,7 +4,7 @@ name: Wan2.2  二创首选 角色替换 动作模仿 图生视频_20418725889845
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041872588984557569.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2  二创首选 角色替换 动作模仿 图生视频_2041872588984557569.json
 hash: d5bca07061759556
 coverage: 0.567901
 learned_at: 2026-10-15 22:36:23

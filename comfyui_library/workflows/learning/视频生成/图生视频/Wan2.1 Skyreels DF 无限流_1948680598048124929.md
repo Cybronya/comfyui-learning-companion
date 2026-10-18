@@ -4,7 +4,7 @@ name: Wan2.1 Skyreels DF 无限流_1948680598048124929.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948680598048124929.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 Skyreels DF 无限流_1948680598048124929.json
 hash: befa741435fce0e8
 coverage: 0.471698
 learned_at: 2026-10-15 22:30:48

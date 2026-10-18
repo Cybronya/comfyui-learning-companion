@@ -4,7 +4,7 @@ name: Wanmove+Fill Nodes 动与静轨迹控制 【 1.0 】_1999310460828647425.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1999310460828647425.json
+file: comfyui_library/workflows/视频生成/图生视频/Wanmove+Fill Nodes 动与静轨迹控制 【 1.0 】_1999310460828647425.json
 hash: bb4c5e7096c31803
 coverage: 0.823529
 learned_at: 2026-10-15 22:33:36

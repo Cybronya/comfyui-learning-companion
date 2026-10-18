@@ -4,7 +4,7 @@ name: 🈚️Wan2.2-native-Lightx-文生视频-gguf-Q4混搭_1950308738546753537
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950308738546753537.json
+file: comfyui_library/workflows/视频生成/文生视频/🈚️Wan2.2-native-Lightx-文生视频-gguf-Q4混搭_1950308738546753537.json
 hash: e5a751d4676295f8
 coverage: 0.534884
 learned_at: 2026-10-15 22:43:35

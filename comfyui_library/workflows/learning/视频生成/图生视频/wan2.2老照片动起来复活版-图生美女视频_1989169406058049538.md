@@ -4,7 +4,7 @@ name: wan2.2老照片动起来复活版-图生美女视频_1989169406058049538.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1989169406058049538.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2老照片动起来复活版-图生美女视频_1989169406058049538.json
 hash: 6ae2c1e276c7b35b
 coverage: 0.974359
 learned_at: 2026-10-15 22:33:05

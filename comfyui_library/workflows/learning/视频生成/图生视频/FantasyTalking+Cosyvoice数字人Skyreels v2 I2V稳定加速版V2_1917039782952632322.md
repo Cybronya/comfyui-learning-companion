@@ -4,7 +4,7 @@ name: FantasyTalking+Cosyvoice数字人Skyreels v2 I2V稳定加速版V2_19170397
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917039782952632322.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyTalking+Cosyvoice数字人Skyreels v2 I2V稳定加速版V2_1917039782952632322.json
 hash: a1298684aaea89c5
 coverage: 0.75
 learned_at: 2026-10-15 22:29:39

@@ -4,7 +4,7 @@ name: LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075069452714078209.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 I2V First Last Frame首尾帧（无限中间帧）_2075069452714078209.json
 hash: 44a04722a9352b40
 coverage: 0.591667
 learned_at: 2026-10-15 22:41:21

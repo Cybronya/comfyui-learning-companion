@@ -4,7 +4,7 @@ name: Wan2.2 14B T2V 文生视频工作流示例_1950466013982842881.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950466013982842881.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2 14B T2V 文生视频工作流示例_1950466013982842881.json
 hash: dae31b1fa8f72b35
 coverage: 0.947368
 learned_at: 2026-10-15 22:43:36

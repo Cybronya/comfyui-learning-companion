@@ -4,7 +4,7 @@ name: LTX2.3数字人V2—支持双人，自动计算帧数_2073315948735586306.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073315948735586306.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人V2—支持双人，自动计算帧数_2073315948735586306.json
 hash: 4143dbc07eaece41
 coverage: 0.839286
 learned_at: 2026-10-15 22:41:05

@@ -4,7 +4,7 @@ name: ltx2.3_无导演台_纯参数_2076920722613686273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2076920722613686273.json
+file: comfyui_library/workflows/视频生成/图生视频/ltx2.3_无导演台_纯参数_2076920722613686273.json
 hash: 8f55925ace1bf32e
 coverage: 0.526316
 learned_at: 2026-10-15 22:41:34

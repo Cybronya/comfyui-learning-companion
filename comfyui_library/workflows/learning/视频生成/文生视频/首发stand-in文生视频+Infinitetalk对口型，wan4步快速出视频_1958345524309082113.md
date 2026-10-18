@@ -4,7 +4,7 @@ name: 首发stand-in文生视频+Infinitetalk对口型，wan4步快速出视频_
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1958345524309082113.json
+file: comfyui_library/workflows/视频生成/文生视频/首发stand-in文生视频+Infinitetalk对口型，wan4步快速出视频_1958345524309082113.json
 hash: b1e6d19cea4a2d87
 coverage: 0.923077
 learned_at: 2026-10-15 22:43:42

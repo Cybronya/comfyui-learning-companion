@@ -4,7 +4,7 @@ name: ai有娃了-Wan2.1原始节点（非KJ节点）-FusionX加速_193770486879
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937704868792418306.json
+file: comfyui_library/workflows/视频生成/图生视频/ai有娃了-Wan2.1原始节点（非KJ节点）-FusionX加速_1937704868792418306.json
 hash: f1bae626ceb633c8
 coverage: 1
 learned_at: 2026-10-15 22:30:29

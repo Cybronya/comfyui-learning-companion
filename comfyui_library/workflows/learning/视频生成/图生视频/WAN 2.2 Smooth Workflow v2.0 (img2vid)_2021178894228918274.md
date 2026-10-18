@@ -4,7 +4,7 @@ name: WAN 2.2 Smooth Workflow v2.0 (img2vid)_2021178894228918274.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021178894228918274.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2 Smooth Workflow v2.0 (img2vid)_2021178894228918274.json
 hash: 4891186de10f64ca
 coverage: 0.794872
 learned_at: 2026-10-15 22:35:08

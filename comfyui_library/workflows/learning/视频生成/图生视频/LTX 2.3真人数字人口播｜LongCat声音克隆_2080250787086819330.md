@@ -4,7 +4,7 @@ name: LTX 2.3真人数字人口播｜LongCat声音克隆_2080250787086819330.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2080250787086819330.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3真人数字人口播｜LongCat声音克隆_2080250787086819330.json
 hash: 5959783ee74389bb
 coverage: 0.852273
 learned_at: 2026-10-15 22:42:11

@@ -4,7 +4,7 @@ name: aidir-LTX2.3多图参考（小）Seedance 2.0_2069617886041305089.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069617886041305089.json
+file: comfyui_library/workflows/视频生成/图生视频/aidir-LTX2.3多图参考（小）Seedance 2.0_2069617886041305089.json
 hash: a55cdd0e74939674
 coverage: 0.615385
 learned_at: 2026-10-15 22:40:30

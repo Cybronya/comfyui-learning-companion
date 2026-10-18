@@ -4,7 +4,7 @@ name: （4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_19809
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980903199232184321.json
+file: comfyui_library/workflows/视频生成/图生视频/（4+4）KJ版Wan2.2 LightX2V1022高噪模型优调版图生视频V1_1980903199232184321.json
 hash: bec369588b471f4c
 coverage: 0.893617
 learned_at: 2026-10-15 22:32:35

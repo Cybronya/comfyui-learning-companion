@@ -4,7 +4,7 @@ name: 千问edit三分镜图+Wan2.2图生三分镜视频_1987004381801418754.jso
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987004381801418754.json
+file: comfyui_library/workflows/视频生成/图生视频/千问edit三分镜图+Wan2.2图生三分镜视频_1987004381801418754.json
 hash: 0e1551f104dd19be
 coverage: 0.941176
 learned_at: 2026-10-15 22:32:57

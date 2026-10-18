@@ -4,7 +4,7 @@ name: 高质量LTX-2.3图生视频MV制作工作流（无字幕））_2017813232
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017813232496418818.json
+file: comfyui_library/workflows/视频生成/图生视频/高质量LTX-2.3图生视频MV制作工作流（无字幕））_2017813232496418818.json
 hash: 229bde5de3ecefec
 coverage: 0.508197
 learned_at: 2026-10-15 22:34:50

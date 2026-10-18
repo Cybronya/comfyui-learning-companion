@@ -4,7 +4,7 @@ name: wanvideo_SCAIL_pose and camera_control_workflow_2000851201182793729.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2000851201182793729.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_SCAIL_pose and camera_control_workflow_2000851201182793729.json
 hash: 80648161de97f9b1
 coverage: 0.620253
 learned_at: 2026-10-15 22:33:43

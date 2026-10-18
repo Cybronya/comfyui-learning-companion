@@ -4,7 +4,7 @@ name: LTX-2.3 20宫格(2.0升级版)无限时长可调整_2051228355147644930.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2051228355147644930.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3 20宫格(2.0升级版)无限时长可调整_2051228355147644930.json
 hash: f84bb01b99724441
 coverage: 0.696429
 learned_at: 2026-10-15 22:37:21

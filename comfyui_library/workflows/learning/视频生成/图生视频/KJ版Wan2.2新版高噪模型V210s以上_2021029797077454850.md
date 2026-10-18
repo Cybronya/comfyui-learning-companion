@@ -4,7 +4,7 @@ name: KJ版Wan2.2新版高噪模型V210s以上_2021029797077454850.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2021029797077454850.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ版Wan2.2新版高噪模型V210s以上_2021029797077454850.json
 hash: 54c02ad4980a556d
 coverage: 0.972973
 learned_at: 2026-10-15 22:35:07

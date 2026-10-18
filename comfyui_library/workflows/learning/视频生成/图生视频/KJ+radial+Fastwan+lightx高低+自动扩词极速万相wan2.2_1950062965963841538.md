@@ -4,7 +4,7 @@ name: KJ+radial+Fastwan+lightx高低+自动扩词极速万相wan2.2_195006296596
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950062965963841538.json
+file: comfyui_library/workflows/视频生成/图生视频/KJ+radial+Fastwan+lightx高低+自动扩词极速万相wan2.2_1950062965963841538.json
 hash: c3f813181bc1a205
 coverage: 0.931818
 learned_at: 2026-10-15 22:30:52

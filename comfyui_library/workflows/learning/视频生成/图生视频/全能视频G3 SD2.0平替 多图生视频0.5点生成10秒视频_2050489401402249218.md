@@ -4,7 +4,7 @@ name: 全能视频G3 SD2.0平替 多图生视频0.5点生成10秒视频_20504894
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050489401402249218.json
+file: comfyui_library/workflows/视频生成/图生视频/全能视频G3 SD2.0平替 多图生视频0.5点生成10秒视频_2050489401402249218.json
 hash: 309575d3e82f1e7e
 coverage: 0.642857
 learned_at: 2026-10-15 22:37:18

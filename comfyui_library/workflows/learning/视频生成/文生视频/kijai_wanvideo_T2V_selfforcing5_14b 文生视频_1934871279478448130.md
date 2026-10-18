@@ -4,7 +4,7 @@ name: kijai_wanvideo_T2V_selfforcing5_14b 文生视频_1934871279478448130.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1934871279478448130.json
+file: comfyui_library/workflows/视频生成/文生视频/kijai_wanvideo_T2V_selfforcing5_14b 文生视频_1934871279478448130.json
 hash: cd1c7758d32656aa
 coverage: 0.8
 learned_at: 2026-10-15 22:43:28

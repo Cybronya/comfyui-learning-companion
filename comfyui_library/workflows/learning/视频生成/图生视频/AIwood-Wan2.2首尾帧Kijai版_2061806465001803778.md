@@ -4,7 +4,7 @@ name: AIwood-Wan2.2首尾帧Kijai版_2061806465001803778.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061806465001803778.json
+file: comfyui_library/workflows/视频生成/图生视频/AIwood-Wan2.2首尾帧Kijai版_2061806465001803778.json
 hash: 46c94f29c820d887
 coverage: 0.962963
 learned_at: 2026-10-15 22:38:57

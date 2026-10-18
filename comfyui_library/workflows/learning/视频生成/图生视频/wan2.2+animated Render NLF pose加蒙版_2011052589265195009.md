@@ -4,7 +4,7 @@ name: wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011052589265195009.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+animated Render NLF pose加蒙版_2011052589265195009.json
 hash: 93a9b435584bf63d
 coverage: 0.697368
 learned_at: 2026-10-15 22:34:21

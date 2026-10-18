@@ -4,7 +4,7 @@ name: (Ai贞贞工坊版)全能视频S 普通版15S新图生视频V1（可选横
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979417427316477953.json
+file: comfyui_library/workflows/视频生成/图生视频/(Ai贞贞工坊版)全能视频S 普通版15S新图生视频V1（可选横竖屏频-基准价格0.1元）_1979417427316477953.json
 hash: 9bdbb5a1e6ca7c8d
 coverage: 0.545455
 learned_at: 2026-10-15 22:32:23

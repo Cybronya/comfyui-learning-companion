@@ -4,7 +4,7 @@ name: wan2.2图生视频破&限配音加速版_2065363140294307840.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2065363140294307840.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2图生视频破&限配音加速版_2065363140294307840.json
 hash: 0856de88218a9fda
 coverage: 0.804348
 learned_at: 2026-10-15 22:39:39

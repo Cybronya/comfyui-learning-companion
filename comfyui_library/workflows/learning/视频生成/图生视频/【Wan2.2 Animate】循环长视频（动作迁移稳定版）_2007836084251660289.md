@@ -4,7 +4,7 @@ name: 【Wan2.2 Animate】循环长视频（动作迁移稳定版）_20078360842
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2007836084251660289.json
+file: comfyui_library/workflows/视频生成/图生视频/【Wan2.2 Animate】循环长视频（动作迁移稳定版）_2007836084251660289.json
 hash: 733595f280144c2c
 coverage: 0.504
 learned_at: 2026-10-15 22:34:05

@@ -4,7 +4,7 @@ name: 首尾帧生成（Wan2.2-Moe+Lightx2v加速）_1985890821373341698.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1985890821373341698.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧生成（Wan2.2-Moe+Lightx2v加速）_1985890821373341698.json
 hash: 7033722161d31121
 coverage: 0.967742
 learned_at: 2026-10-15 22:32:53

@@ -4,7 +4,7 @@ name: （方案2）Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046813828544995329.json
+file: comfyui_library/workflows/视频生成/图生视频/（方案2）Ltx2.3多镜头时间+逻辑控制PromptRelay+VBVR（KJ版）V2_2046813828544995329.json
 hash: a3d9a1d14ad9d7a5
 coverage: 0.736842
 learned_at: 2026-10-15 22:37:01

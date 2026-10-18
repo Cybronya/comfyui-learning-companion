@@ -4,7 +4,7 @@ name: 【官版】Wan2.2-Lightning4步加速图生视频_1954213178995568641.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1954213178995568641.json
+file: comfyui_library/workflows/视频生成/图生视频/【官版】Wan2.2-Lightning4步加速图生视频_1954213178995568641.json
 hash: 56b452bb25c81664
 coverage: 0.7
 learned_at: 2026-10-15 22:31:06

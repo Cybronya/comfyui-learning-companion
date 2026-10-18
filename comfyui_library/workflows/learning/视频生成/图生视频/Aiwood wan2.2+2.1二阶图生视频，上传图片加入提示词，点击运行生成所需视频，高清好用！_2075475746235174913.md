@@ -4,7 +4,7 @@ name: Aiwood wan2.2+2.1二阶图生视频，上传图片加入提示词，点击
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075475746235174913.json
+file: comfyui_library/workflows/视频生成/图生视频/Aiwood wan2.2+2.1二阶图生视频，上传图片加入提示词，点击运行生成所需视频，高清好用！_2075475746235174913.json
 hash: b99de6c514b0b2c2
 coverage: 0.9375
 learned_at: 2026-10-15 22:41:24

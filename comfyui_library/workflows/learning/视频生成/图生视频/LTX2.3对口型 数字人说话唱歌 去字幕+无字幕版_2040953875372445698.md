@@ -4,7 +4,7 @@ name: LTX2.3对口型 数字人说话唱歌 去字幕+无字幕版_2040953875372
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040953875372445698.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3对口型 数字人说话唱歌 去字幕+无字幕版_2040953875372445698.json
 hash: 04d7bdb319e4d0a2
 coverage: 0.865672
 learned_at: 2026-10-15 22:36:16

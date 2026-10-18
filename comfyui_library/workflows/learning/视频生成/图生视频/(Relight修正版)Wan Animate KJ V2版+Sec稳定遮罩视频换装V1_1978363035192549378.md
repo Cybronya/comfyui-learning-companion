@@ -4,7 +4,7 @@ name: (Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_19783
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1978363035192549378.json
+file: comfyui_library/workflows/视频生成/图生视频/(Relight修正版)Wan Animate KJ V2版+Sec稳定遮罩视频换装V1_1978363035192549378.json
 hash: b03f4705dd77a2fc
 coverage: 0.602041
 learned_at: 2026-10-15 22:32:19

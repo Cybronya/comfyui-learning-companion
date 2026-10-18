@@ -4,7 +4,7 @@ name: 万相wan2.2电影级特效极速生成：仙侠魔法-全身雷电变身�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1940702520341671937.json
+file: comfyui_library/workflows/视频生成/图生视频/万相wan2.2电影级特效极速生成：仙侠魔法-全身雷电变身等_1940702520341671937.json
 hash: 19f449fce6eee2f1
 coverage: 1
 learned_at: 2026-10-15 22:30:34

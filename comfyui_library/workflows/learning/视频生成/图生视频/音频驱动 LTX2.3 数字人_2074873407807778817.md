@@ -4,7 +4,7 @@ name: 音频驱动 LTX2.3 数字人_2074873407807778817.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2074873407807778817.json
+file: comfyui_library/workflows/视频生成/图生视频/音频驱动 LTX2.3 数字人_2074873407807778817.json
 hash: 80b606e5fa34e6bb
 coverage: 0.842105
 learned_at: 2026-10-15 22:41:19

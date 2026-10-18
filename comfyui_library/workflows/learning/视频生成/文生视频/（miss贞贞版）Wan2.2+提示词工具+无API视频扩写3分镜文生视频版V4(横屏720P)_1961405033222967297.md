@@ -4,7 +4,7 @@ name: （miss贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1961405033222967297.json
+file: comfyui_library/workflows/视频生成/文生视频/（miss贞贞版）Wan2.2+提示词工具+无API视频扩写3分镜文生视频版V4(横屏720P)_1961405033222967297.json
 hash: 7388ed3b03f32b40
 coverage: 0.787234
 learned_at: 2026-10-15 22:43:43

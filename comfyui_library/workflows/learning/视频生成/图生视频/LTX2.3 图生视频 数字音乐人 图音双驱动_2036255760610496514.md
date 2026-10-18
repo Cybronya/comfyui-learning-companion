@@ -4,7 +4,7 @@ name: LTX2.3 图生视频 数字音乐人 图音双驱动_2036255760610496514.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036255760610496514.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频 数字音乐人 图音双驱动_2036255760610496514.json
 hash: 8f4caf8ca6cb1d13
 coverage: 0.877193
 learned_at: 2026-10-15 22:35:51

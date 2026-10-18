@@ -4,7 +4,7 @@ name: wan2.1_图生视频动作控制（稳定出5秒视频 效果炸裂）_1914
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914607213833351170.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_图生视频动作控制（稳定出5秒视频 效果炸裂）_1914607213833351170.json
 hash: e36ffa3950d62b8a
 coverage: 0.956522
 learned_at: 2026-10-15 22:29:36

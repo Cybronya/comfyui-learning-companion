@@ -4,7 +4,7 @@ name: 【阿良绘】Dasiwa V10+Qwen3.5图生视频自动提示词 （N版）_20
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041128581908140034.json
+file: comfyui_library/workflows/视频生成/图生视频/【阿良绘】Dasiwa V10+Qwen3.5图生视频自动提示词 （N版）_2041128581908140034.json
 hash: 4ccbc3eac1494924
 coverage: 0.789474
 learned_at: 2026-10-15 22:36:18

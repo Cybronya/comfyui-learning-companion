@@ -4,7 +4,7 @@ name: Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2069257945623388162.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0全能参考视频 分镜白底提示词_2069257945623388162.json
 hash: baffaa23e97bab4d
 coverage: 1
 learned_at: 2026-10-15 22:40:26

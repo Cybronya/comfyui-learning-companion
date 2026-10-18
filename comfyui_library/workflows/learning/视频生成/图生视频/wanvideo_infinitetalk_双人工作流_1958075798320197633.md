@@ -4,7 +4,7 @@ name: wanvideo_infinitetalk_双人工作流_1958075798320197633.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1958075798320197633.json
+file: comfyui_library/workflows/视频生成/图生视频/wanvideo_infinitetalk_双人工作流_1958075798320197633.json
 hash: 1562d436d2c43935
 coverage: 0.581395
 learned_at: 2026-10-15 22:31:20

@@ -4,7 +4,7 @@ name: LTX2.3 Prompt时间戳控制视频生成_2050810161220071425.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050810161220071425.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 Prompt时间戳控制视频生成_2050810161220071425.json
 hash: ecbff7346bb64cce
 coverage: 0.742857
 learned_at: 2026-10-15 22:37:20

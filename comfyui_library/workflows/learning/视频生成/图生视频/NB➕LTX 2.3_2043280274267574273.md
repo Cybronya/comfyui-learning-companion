@@ -4,7 +4,7 @@ name: NB➕LTX 2.3_2043280274267574273.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043280274267574273.json
+file: comfyui_library/workflows/视频生成/图生视频/NB➕LTX 2.3_2043280274267574273.json
 hash: 83847831741e21f7
 coverage: 0.901408
 learned_at: 2026-10-15 22:36:31

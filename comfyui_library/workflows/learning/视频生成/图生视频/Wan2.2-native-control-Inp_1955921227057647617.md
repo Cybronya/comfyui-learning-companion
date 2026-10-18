@@ -4,7 +4,7 @@ name: Wan2.2-native-control-Inp_1955921227057647617.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1955921227057647617.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-native-control-Inp_1955921227057647617.json
 hash: 5ca37ab767e04c03
 coverage: 0.914286
 learned_at: 2026-10-15 22:31:10

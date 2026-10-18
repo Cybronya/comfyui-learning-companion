@@ -4,7 +4,7 @@ name: LTX2.3-PromptRelay-V2-多镜头分镜控制+逻辑控制+长视频+无字�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058206526581600258.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-PromptRelay-V2-多镜头分镜控制+逻辑控制+长视频+无字幕版图生视频_2058206526581600258.json
 hash: f59070d093eaaa43
 coverage: 0.655914
 learned_at: 2026-10-15 22:38:19

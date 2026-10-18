@@ -4,7 +4,7 @@ name: wan2.2-14B 首尾帧最新工作流_2011413743489523713.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2011413743489523713.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2-14B 首尾帧最新工作流_2011413743489523713.json
 hash: 0e957604893257ee
 coverage: 0.909091
 learned_at: 2026-10-15 22:34:22

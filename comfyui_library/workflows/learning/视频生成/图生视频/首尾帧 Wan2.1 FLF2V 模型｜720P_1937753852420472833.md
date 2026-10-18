@@ -4,7 +4,7 @@ name: 首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1937753852420472833.json
+file: comfyui_library/workflows/视频生成/图生视频/首尾帧 Wan2.1 FLF2V 模型｜720P_1937753852420472833.json
 hash: 8014485eaed1145c
 coverage: 0.904762
 learned_at: 2026-10-15 22:30:29

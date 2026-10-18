@@ -4,7 +4,7 @@ name: (电竞)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_20042
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004241566258655234.json
+file: comfyui_library/workflows/视频生成/图生视频/(电竞)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_2004241566258655234.json
 hash: 2324f14aa259c1bf
 coverage: 0.75
 learned_at: 2026-10-15 22:33:54

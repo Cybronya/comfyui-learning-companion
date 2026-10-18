@@ -4,7 +4,7 @@ name: 图生视频高清版+KJ极速版 Wan2.2 14B 可切换图生视频(升级�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014248417769295873.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频高清版+KJ极速版 Wan2.2 14B 可切换图生视频(升级优化版)_2014248417769295873.json
 hash: ad9a9409ebd40766
 coverage: 0.742268
 learned_at: 2026-10-15 22:34:34

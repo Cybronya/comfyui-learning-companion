@@ -4,7 +4,7 @@ name: Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969352799354056706.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2+Uni3C运镜+动作迁移Move加速版V2（无限时长）_1969352799354056706.json
 hash: 26089118e94ac475
 coverage: 0.555556
 learned_at: 2026-10-15 22:31:49

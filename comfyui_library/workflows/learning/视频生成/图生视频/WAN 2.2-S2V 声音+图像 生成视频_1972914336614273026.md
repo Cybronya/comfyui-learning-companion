@@ -4,7 +4,7 @@ name: WAN 2.2-S2V 声音+图像 生成视频_1972914336614273026.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972914336614273026.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN 2.2-S2V 声音+图像 生成视频_1972914336614273026.json
 hash: c2ff9a465814db82
 coverage: 1
 learned_at: 2026-10-15 22:32:01

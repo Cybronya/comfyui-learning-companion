@@ -4,7 +4,7 @@ name: LTX2 audio image to video KJ流_2009128874055045121.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2009128874055045121.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2 audio image to video KJ流_2009128874055045121.json
 hash: bb2803d96d95709c
 coverage: 0.731707
 learned_at: 2026-10-15 22:34:10

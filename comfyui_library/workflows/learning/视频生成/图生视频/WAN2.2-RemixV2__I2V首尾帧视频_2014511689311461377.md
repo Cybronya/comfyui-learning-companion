@@ -4,7 +4,7 @@ name: WAN2.2-RemixV2__I2V首尾帧视频_2014511689311461377.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014511689311461377.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-RemixV2__I2V首尾帧视频_2014511689311461377.json
 hash: 76c5ff97dc1dfe63
 coverage: 0.405063
 learned_at: 2026-10-15 22:34:35

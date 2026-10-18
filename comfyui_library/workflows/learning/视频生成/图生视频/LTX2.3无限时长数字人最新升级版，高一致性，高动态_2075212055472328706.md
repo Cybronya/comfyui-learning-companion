@@ -4,7 +4,7 @@ name: LTX2.3无限时长数字人最新升级版，高一致性，高动态_2075
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2075212055472328706.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3无限时长数字人最新升级版，高一致性，高动态_2075212055472328706.json
 hash: fab00244c693fa73
 coverage: 0.963636
 learned_at: 2026-10-15 22:41:23

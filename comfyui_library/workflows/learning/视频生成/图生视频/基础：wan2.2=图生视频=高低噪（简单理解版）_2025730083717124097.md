@@ -4,7 +4,7 @@ name: 基础：wan2.2=图生视频=高低噪（简单理解版）_20257300837171
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025730083717124097.json
+file: comfyui_library/workflows/视频生成/图生视频/基础：wan2.2=图生视频=高低噪（简单理解版）_2025730083717124097.json
 hash: 9a4b185e6a275101
 coverage: 0.4375
 learned_at: 2026-10-15 22:35:12

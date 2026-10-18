@@ -4,7 +4,7 @@ name: Wan_2.2_FMLF多帧首尾帧_2067206177418727425.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067206177418727425.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan_2.2_FMLF多帧首尾帧_2067206177418727425.json
 hash: 64dab648233d556a
 coverage: 0.833333
 learned_at: 2026-10-15 22:39:58

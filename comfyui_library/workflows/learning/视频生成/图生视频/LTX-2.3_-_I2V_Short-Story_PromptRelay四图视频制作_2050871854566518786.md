@@ -4,7 +4,7 @@ name: LTX-2.3_-_I2V_Short-Story_PromptRelay四图视频制作_205087185456651878
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2050871854566518786.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_-_I2V_Short-Story_PromptRelay四图视频制作_2050871854566518786.json
 hash: 812e61b463d5dabb
 coverage: 0.431138
 learned_at: 2026-10-15 22:37:20

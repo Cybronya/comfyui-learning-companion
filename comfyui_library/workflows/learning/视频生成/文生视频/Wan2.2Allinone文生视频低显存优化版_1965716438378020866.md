@@ -4,7 +4,7 @@ name: Wan2.2Allinone文生视频低显存优化版_1965716438378020866.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1965716438378020866.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2Allinone文生视频低显存优化版_1965716438378020866.json
 hash: 9b624f7bf87ca6a9
 coverage: 0.954545
 learned_at: 2026-10-15 22:43:44

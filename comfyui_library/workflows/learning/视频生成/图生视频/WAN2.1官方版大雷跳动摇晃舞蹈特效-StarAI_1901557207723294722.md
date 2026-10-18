@@ -4,7 +4,7 @@ name: WAN2.1官方版大雷跳动摇晃舞蹈特效-StarAI_1901557207723294722.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1901557207723294722.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.1官方版大雷跳动摇晃舞蹈特效-StarAI_1901557207723294722.json
 hash: 9323c929cf3dcccd
 coverage: 1
 learned_at: 2026-10-15 22:29:24

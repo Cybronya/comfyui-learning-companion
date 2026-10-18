@@ -4,7 +4,7 @@ name: 图生视频+快生成Animate+wan2.2_2047135621176627201.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2047135621176627201.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频+快生成Animate+wan2.2_2047135621176627201.json
 hash: 880d499c0b7488d2
 coverage: 0.837209
 learned_at: 2026-10-15 22:37:02

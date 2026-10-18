@@ -4,7 +4,7 @@ name: LTX2.3 -1.1蒸馏闪电版-目前最快的ltx_2044453497332043777.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2044453497332043777.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 -1.1蒸馏闪电版-目前最快的ltx_2044453497332043777.json
 hash: fe17f14ffabb6e7a
 coverage: 0.574257
 learned_at: 2026-10-15 22:36:38

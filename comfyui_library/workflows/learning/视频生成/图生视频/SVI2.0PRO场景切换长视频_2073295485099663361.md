@@ -4,7 +4,7 @@ name: SVI2.0PRO场景切换长视频_2073295485099663361.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073295485099663361.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI2.0PRO场景切换长视频_2073295485099663361.json
 hash: 5a57e66b10ade353
 coverage: 0.541667
 learned_at: 2026-10-15 22:41:03

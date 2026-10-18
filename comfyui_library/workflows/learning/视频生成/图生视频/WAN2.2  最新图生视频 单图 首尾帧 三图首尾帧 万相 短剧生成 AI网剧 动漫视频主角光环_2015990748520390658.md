@@ -4,7 +4,7 @@ name: WAN2.2  最新图生视频 单图 首尾帧 三图首尾帧 万相 短剧�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2015990748520390658.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2  最新图生视频 单图 首尾帧 三图首尾帧 万相 短剧生成 AI网剧 动漫视频主角光环_2015990748520390658.json
 hash: 02362e48c278736d
 coverage: 0.878261
 learned_at: 2026-10-15 22:34:41

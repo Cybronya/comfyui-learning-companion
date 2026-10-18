@@ -4,7 +4,7 @@ name: KJ版 WAN2.1自动扩写文生视频加速高清放大补帧工作流-Star
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1894643330280763394.json
+file: comfyui_library/workflows/视频生成/文生视频/KJ版 WAN2.1自动扩写文生视频加速高清放大补帧工作流-Starai_1894643330280763394.json
 hash: 6b27ba7ad553c4f1
 coverage: 0.885714
 learned_at: 2026-10-15 22:43:20

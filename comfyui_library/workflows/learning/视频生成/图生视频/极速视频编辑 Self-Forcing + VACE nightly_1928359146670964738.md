@@ -4,7 +4,7 @@ name: 极速视频编辑 Self-Forcing + VACE nightly_1928359146670964738.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1928359146670964738.json
+file: comfyui_library/workflows/视频生成/图生视频/极速视频编辑 Self-Forcing + VACE nightly_1928359146670964738.json
 hash: 033128dd429b1e08
 coverage: 0.633929
 learned_at: 2026-10-15 22:29:57

@@ -4,7 +4,7 @@ name: 天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2002900702877892610.json
+file: comfyui_library/workflows/视频生成/图生视频/天蝎猫--wan2.2图片反推+镜头控制_2002900702877892610.json
 hash: 744e3622e8d9a373
 coverage: 0.61194
 learned_at: 2026-10-15 22:33:49

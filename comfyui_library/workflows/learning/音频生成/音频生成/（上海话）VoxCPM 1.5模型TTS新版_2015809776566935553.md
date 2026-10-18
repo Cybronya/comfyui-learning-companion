@@ -1,0 +1,41 @@
+---
+key: 音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS新版_2015809776566935553.json
+name: （上海话）VoxCPM 1.5模型TTS新版_2015809776566935553
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS新版_2015809776566935553.json
+hash: 1f75795f0cd9ab97
+coverage: 0.555556
+learned_at: 2026-10-18 02:07:14
+nodes: [MarkdownNote, MarkdownNote, Note, SaveAudio, Note, VoxCPM_TTS, LoadAudio, CR Prompt Text, CR Prompt Text]
+patterns: []
+missing: []
+---
+
+# 音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS新版_2015809776566935553.json
+
+> 来源文件 `comfyui_library/workflows/音频生成/音频生成/（上海话）VoxCPM 1.5模型TTS新版_2015809776566935553.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（9 个）：
+- `MarkdownNote`
+- `MarkdownNote`
+- `Note`
+- `SaveAudio`
+- `Note`
+- `VoxCPM_TTS`
+- `LoadAudio`
+- `CR Prompt Text`
+- `CR Prompt Text`
+
+## 知识
+
+覆盖率 **56%**（5/9）
+
+**有卡**：`SaveAudio`、`VoxCPM_TTS`、`LoadAudio`、`CR Prompt Text`
+
+**用到的条目**：CR Prompt Text、SaveAudio、LoadAudio、VoxCPM_TTS、sd15-t2i-basic、sd15-t2i-lora、Text、CLIPTextEncode

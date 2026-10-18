@@ -4,7 +4,7 @@ name: 短剧对白视频LTX2.0 图生视频LTX2.0 图生视频_20135318994063237
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2013531899406323713.json
+file: comfyui_library/workflows/视频生成/图生视频/短剧对白视频LTX2.0 图生视频LTX2.0 图生视频_2013531899406323713.json
 hash: b7c52d1a060c0cfb
 coverage: 0.897959
 learned_at: 2026-10-15 22:34:31

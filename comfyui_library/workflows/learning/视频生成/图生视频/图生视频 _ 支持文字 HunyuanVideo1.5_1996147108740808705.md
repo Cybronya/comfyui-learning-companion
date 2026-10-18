@@ -4,7 +4,7 @@ name: 图生视频 _ 支持文字 HunyuanVideo1.5_1996147108740808705.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996147108740808705.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频 _ 支持文字 HunyuanVideo1.5_1996147108740808705.json
 hash: 399488205b91b0ca
 coverage: 1
 learned_at: 2026-10-15 22:33:25

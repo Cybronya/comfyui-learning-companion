@@ -4,7 +4,7 @@ name: 【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_18946245
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1894624556043141122.json
+file: comfyui_library/workflows/视频生成/图生视频/【老金驿站】阿里WAN2.1-I2V-14B图生视频画质提升版_1894624556043141122.json
 hash: 65e811cc926eb0d8
 coverage: 0.928571
 learned_at: 2026-10-15 22:29:16

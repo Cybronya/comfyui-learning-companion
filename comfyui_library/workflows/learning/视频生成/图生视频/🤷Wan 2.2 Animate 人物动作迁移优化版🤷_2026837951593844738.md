@@ -4,7 +4,7 @@ name: 🤷Wan 2.2 Animate 人物动作迁移优化版🤷_2026837951593844738.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2026837951593844738.json
+file: comfyui_library/workflows/视频生成/图生视频/🤷Wan 2.2 Animate 人物动作迁移优化版🤷_2026837951593844738.json
 hash: d21e81c314189a17
 coverage: 0.523256
 learned_at: 2026-10-15 22:35:14

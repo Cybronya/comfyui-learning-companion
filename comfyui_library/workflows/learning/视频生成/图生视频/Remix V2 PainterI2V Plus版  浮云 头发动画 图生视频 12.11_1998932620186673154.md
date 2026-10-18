@@ -4,7 +4,7 @@ name: Remix V2 PainterI2V Plus版  浮云 头发动画 图生视频 12.11_199893
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1998932620186673154.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix V2 PainterI2V Plus版  浮云 头发动画 图生视频 12.11_1998932620186673154.json
 hash: 5a17074007192091
 coverage: 0.777778
 learned_at: 2026-10-15 22:33:34

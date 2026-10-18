@@ -4,7 +4,7 @@ name: WAN2.2 泼水换装 画风真实 运行流畅 可更换lora_19532833545747
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953283354574712834.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 泼水换装 画风真实 运行流畅 可更换lora_1953283354574712834.json
 hash: 45fb7b1b657df8ac
 coverage: 0.925926
 learned_at: 2026-10-15 22:31:04

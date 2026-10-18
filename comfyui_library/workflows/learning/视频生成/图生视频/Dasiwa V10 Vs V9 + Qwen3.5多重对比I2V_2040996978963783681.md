@@ -4,7 +4,7 @@ name: Dasiwa V10 Vs V9 + Qwen3.5多重对比I2V_2040996978963783681.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040996978963783681.json
+file: comfyui_library/workflows/视频生成/图生视频/Dasiwa V10 Vs V9 + Qwen3.5多重对比I2V_2040996978963783681.json
 hash: 0fe29b96e1a7569f
 coverage: 0.752577
 learned_at: 2026-10-15 22:36:17

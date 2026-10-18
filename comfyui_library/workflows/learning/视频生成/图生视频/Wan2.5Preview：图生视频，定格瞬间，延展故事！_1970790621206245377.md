@@ -4,7 +4,7 @@ name: Wan2.5Preview：图生视频，定格瞬间，延展故事！_197079062120
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1970790621206245377.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.5Preview：图生视频，定格瞬间，延展故事！_1970790621206245377.json
 hash: 2dfb2535f3979a8c
 coverage: 1
 learned_at: 2026-10-15 22:31:54

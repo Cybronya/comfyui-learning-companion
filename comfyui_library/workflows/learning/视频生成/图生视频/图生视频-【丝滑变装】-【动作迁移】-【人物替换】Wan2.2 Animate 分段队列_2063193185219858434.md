@@ -4,7 +4,7 @@ name: 图生视频-【丝滑变装】-【动作迁移】-【人物替换】Wan2.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2063193185219858434.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频-【丝滑变装】-【动作迁移】-【人物替换】Wan2.2 Animate 分段队列_2063193185219858434.json
 hash: c80007bd1b170738
 coverage: 0.440678
 learned_at: 2026-10-15 22:39:11

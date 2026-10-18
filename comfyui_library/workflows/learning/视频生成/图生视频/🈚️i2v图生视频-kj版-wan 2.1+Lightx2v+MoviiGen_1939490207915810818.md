@@ -4,7 +4,7 @@ name: 🈚️i2v图生视频-kj版-wan 2.1+Lightx2v+MoviiGen_1939490207915810818
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1939490207915810818.json
+file: comfyui_library/workflows/视频生成/图生视频/🈚️i2v图生视频-kj版-wan 2.1+Lightx2v+MoviiGen_1939490207915810818.json
 hash: 389ef3cbc89cae86
 coverage: 0.610619
 learned_at: 2026-10-15 22:30:32

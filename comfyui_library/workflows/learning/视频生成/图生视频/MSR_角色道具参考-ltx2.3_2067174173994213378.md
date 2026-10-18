@@ -4,7 +4,7 @@ name: MSR_角色道具参考-ltx2.3_2067174173994213378.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067174173994213378.json
+file: comfyui_library/workflows/视频生成/图生视频/MSR_角色道具参考-ltx2.3_2067174173994213378.json
 hash: da670cf35b29f701
 coverage: 0.418605
 learned_at: 2026-10-15 22:39:57

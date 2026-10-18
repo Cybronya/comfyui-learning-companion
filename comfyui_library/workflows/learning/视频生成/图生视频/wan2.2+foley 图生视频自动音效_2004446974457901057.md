@@ -4,7 +4,7 @@ name: wan2.2+foley 图生视频自动音效_2004446974457901057.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2004446974457901057.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+foley 图生视频自动音效_2004446974457901057.json
 hash: 2e85c3fd6a076c27
 coverage: 0.971429
 learned_at: 2026-10-15 22:33:54

@@ -4,7 +4,7 @@ name: DasiwaV10高动态逻辑优化+Qwen3.5提示词优化_2041389576463327234.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041389576463327234.json
+file: comfyui_library/workflows/视频生成/图生视频/DasiwaV10高动态逻辑优化+Qwen3.5提示词优化_2041389576463327234.json
 hash: 8ff4b060cc2560b0
 coverage: 0.534483
 learned_at: 2026-10-15 22:36:19

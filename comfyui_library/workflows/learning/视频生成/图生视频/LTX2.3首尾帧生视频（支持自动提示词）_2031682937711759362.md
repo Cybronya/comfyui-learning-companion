@@ -4,7 +4,7 @@ name: LTX2.3首尾帧生视频（支持自动提示词）_2031682937711759362.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2031682937711759362.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3首尾帧生视频（支持自动提示词）_2031682937711759362.json
 hash: 22701a86cc54d29d
 coverage: 0.447471
 learned_at: 2026-10-15 22:35:32

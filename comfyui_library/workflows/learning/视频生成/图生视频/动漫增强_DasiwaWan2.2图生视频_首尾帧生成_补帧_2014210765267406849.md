@@ -4,7 +4,7 @@ name: 动漫增强_DasiwaWan2.2图生视频_首尾帧生成_补帧_2014210765267
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2014210765267406849.json
+file: comfyui_library/workflows/视频生成/图生视频/动漫增强_DasiwaWan2.2图生视频_首尾帧生成_补帧_2014210765267406849.json
 hash: 0cc5d2ffc034a6e0
 coverage: 0.970588
 learned_at: 2026-10-15 22:34:34

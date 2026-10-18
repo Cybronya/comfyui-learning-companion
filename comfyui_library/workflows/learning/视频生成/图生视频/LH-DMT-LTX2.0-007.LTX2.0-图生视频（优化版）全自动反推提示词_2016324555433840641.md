@@ -4,7 +4,7 @@ name: LH-DMT-LTX2.0-007.LTX2.0-图生视频（优化版）全自动反推提示�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016324555433840641.json
+file: comfyui_library/workflows/视频生成/图生视频/LH-DMT-LTX2.0-007.LTX2.0-图生视频（优化版）全自动反推提示词_2016324555433840641.json
 hash: e15cd48f97afa88b
 coverage: 0.569767
 learned_at: 2026-10-15 22:34:42

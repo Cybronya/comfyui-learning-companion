@@ -4,7 +4,7 @@ name: wan2.1图生视频（自动提示词）+视频高清放大_192296150165592
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1922961501655920642.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.1图生视频（自动提示词）+视频高清放大_1922961501655920642.json
 hash: 2ca0b7c33ae97347
 coverage: 0.893617
 learned_at: 2026-10-15 22:43:24

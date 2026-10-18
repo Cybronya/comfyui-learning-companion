@@ -4,7 +4,7 @@ name: Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_20361015805078
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036101580507844609.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 Smooth Mix + Foley：图生视频（音画同步）_2036101580507844609.json
 hash: 4860e12c49bed145
 coverage: 0.777778
 learned_at: 2026-10-15 22:35:51

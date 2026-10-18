@@ -4,7 +4,7 @@ name: 【以梦为马 奔赴长空】wan2.2首尾帧-for循环（19镜）_202532
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2025325353673166850.json
+file: comfyui_library/workflows/视频生成/图生视频/【以梦为马 奔赴长空】wan2.2首尾帧-for循环（19镜）_2025325353673166850.json
 hash: 358e54044c06fa1c
 coverage: 0.883333
 learned_at: 2026-10-15 22:35:12

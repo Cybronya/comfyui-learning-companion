@@ -4,7 +4,7 @@ name: SVI2.0PRO视频延长_2073295687021846529.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073295687021846529.json
+file: comfyui_library/workflows/视频生成/图生视频/SVI2.0PRO视频延长_2073295687021846529.json
 hash: f26ad8e49e93357a
 coverage: 0.521739
 learned_at: 2026-10-15 22:41:03

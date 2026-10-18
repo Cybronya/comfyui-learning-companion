@@ -4,7 +4,7 @@ name: Wan2.2-Fun-Control动作迁移-ComfyUI官方_1957120340273061889.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1957120340273061889.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Fun-Control动作迁移-ComfyUI官方_1957120340273061889.json
 hash: 390b38ff4fbb8fe7
 coverage: 0.857143
 learned_at: 2026-10-15 22:31:16

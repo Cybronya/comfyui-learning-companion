@@ -4,7 +4,7 @@ name: (修复版)FantasyTalking阿里数字人对口型框架(wan2.1)_1917005137
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917005137418850305.json
+file: comfyui_library/workflows/视频生成/图生视频/(修复版)FantasyTalking阿里数字人对口型框架(wan2.1)_1917005137418850305.json
 hash: ce70eb6dbbcdddcf
 coverage: 0.7
 learned_at: 2026-10-15 22:29:39

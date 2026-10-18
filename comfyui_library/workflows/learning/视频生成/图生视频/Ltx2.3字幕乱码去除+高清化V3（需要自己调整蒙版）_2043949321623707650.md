@@ -4,7 +4,7 @@ name: Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043949321623707650.json
+file: comfyui_library/workflows/视频生成/图生视频/Ltx2.3字幕乱码去除+高清化V3（需要自己调整蒙版）_2043949321623707650.json
 hash: 7a48e8dc337da5be
 coverage: 0.875
 learned_at: 2026-10-15 22:36:34

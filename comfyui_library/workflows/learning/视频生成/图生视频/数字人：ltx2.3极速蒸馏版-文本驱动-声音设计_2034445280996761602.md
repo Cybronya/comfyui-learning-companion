@@ -4,7 +4,7 @@ name: 数字人：ltx2.3极速蒸馏版-文本驱动-声音设计_20344452809967
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2034445280996761602.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人：ltx2.3极速蒸馏版-文本驱动-声音设计_2034445280996761602.json
 hash: 673972fcd75080cf
 coverage: 0.487805
 learned_at: 2026-10-15 22:35:44

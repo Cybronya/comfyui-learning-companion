@@ -4,7 +4,7 @@ name: 最新latentsync1.6视频数字人-牙齿超级清晰_1941012535002951681.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1941012535002951681.json
+file: comfyui_library/workflows/视频生成/图生视频/最新latentsync1.6视频数字人-牙齿超级清晰_1941012535002951681.json
 hash: 28a94b67e8a1dd05
 coverage: 0.8
 learned_at: 2026-10-15 22:30:34

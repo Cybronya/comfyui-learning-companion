@@ -4,7 +4,7 @@ name: wan2.2文生视频V3.0（4步加速lora+kj版本）_1954108894912114689.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1954108894912114689.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2文生视频V3.0（4步加速lora+kj版本）_1954108894912114689.json
 hash: 841f7f7f0e681b7e
 coverage: 0.736842
 learned_at: 2026-10-15 22:43:39

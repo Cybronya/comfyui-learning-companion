@@ -4,7 +4,7 @@ name: LTX_Director_2_Workflow_extend_video视频延长_2072252924708872193.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2072252924708872193.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX_Director_2_Workflow_extend_video视频延长_2072252924708872193.json
 hash: c3f623ac670a2cde
 coverage: 0.969697
 learned_at: 2026-10-15 22:40:53

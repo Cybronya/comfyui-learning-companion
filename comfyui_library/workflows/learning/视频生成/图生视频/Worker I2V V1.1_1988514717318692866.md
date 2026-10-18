@@ -4,7 +4,7 @@ name: Worker I2V V1.1_1988514717318692866.json
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988514717318692866.json
+file: comfyui_library/workflows/视频生成/图生视频/Worker I2V V1.1_1988514717318692866.json
 hash: cbf80c8a8133fcf0
 coverage: 0.857143
 learned_at: 2026-10-15 22:33:03

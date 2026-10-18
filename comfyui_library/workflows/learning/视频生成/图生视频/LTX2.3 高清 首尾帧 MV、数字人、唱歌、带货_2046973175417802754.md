@@ -4,7 +4,7 @@ name: LTX2.3 高清 首尾帧 MV、数字人、唱歌、带货_20469731754178027
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2046973175417802754.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 高清 首尾帧 MV、数字人、唱歌、带货_2046973175417802754.json
 hash: 4adb72c9329966ac
 coverage: 0.484848
 learned_at: 2026-10-15 22:37:02

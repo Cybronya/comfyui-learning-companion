@@ -4,7 +4,7 @@ name: 视频-图生视频双图参考-wan2.2-FFGO-官方_1996837849146302466.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1996837849146302466.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图生视频双图参考-wan2.2-FFGO-官方_1996837849146302466.json
 hash: 679b8e1ca921ea8f
 coverage: 0.710145
 learned_at: 2026-10-15 22:33:27

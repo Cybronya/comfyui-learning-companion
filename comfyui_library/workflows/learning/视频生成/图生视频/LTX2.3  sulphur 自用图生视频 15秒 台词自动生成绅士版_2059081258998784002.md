@@ -4,7 +4,7 @@ name: LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_20590
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2059081258998784002.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3  sulphur 自用图生视频 15秒 台词自动生成绅士版_2059081258998784002.json
 hash: c4088f7c7ddacd2b
 coverage: 0.918919
 learned_at: 2026-10-15 22:38:36

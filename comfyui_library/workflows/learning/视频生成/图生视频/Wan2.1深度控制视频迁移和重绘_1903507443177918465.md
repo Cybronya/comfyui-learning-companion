@@ -4,7 +4,7 @@ name: Wan2.1深度控制视频迁移和重绘_1903507443177918465.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1903507443177918465.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1深度控制视频迁移和重绘_1903507443177918465.json
 hash: 783190943fb51390
 coverage: 0.766667
 learned_at: 2026-10-15 22:29:25

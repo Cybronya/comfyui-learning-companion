@@ -4,7 +4,7 @@ name: 通义万相wan2.1美女一字马_1909453938431504386.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1909453938431504386.json
+file: comfyui_library/workflows/视频生成/图生视频/通义万相wan2.1美女一字马_1909453938431504386.json
 hash: df3eeac271f31e7b
 coverage: 1
 learned_at: 2026-10-15 22:29:29

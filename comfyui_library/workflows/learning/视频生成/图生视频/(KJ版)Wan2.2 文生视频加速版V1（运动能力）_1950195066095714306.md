@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 文生视频加速版V1（运动能力）_195019506609571430
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950195066095714306.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2 文生视频加速版V1（运动能力）_1950195066095714306.json
 hash: 4fd0a8b6288690a9
 coverage: 0.817518
 learned_at: 2026-10-15 22:30:54

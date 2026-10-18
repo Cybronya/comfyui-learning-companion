@@ -4,7 +4,7 @@ name: Bernini + LTX2.3 参考生视频_2079543216025726977.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079543216025726977.json
+file: comfyui_library/workflows/视频生成/图生视频/Bernini + LTX2.3 参考生视频_2079543216025726977.json
 hash: e60d870e3deb77d2
 coverage: 0.714286
 learned_at: 2026-10-15 22:42:04

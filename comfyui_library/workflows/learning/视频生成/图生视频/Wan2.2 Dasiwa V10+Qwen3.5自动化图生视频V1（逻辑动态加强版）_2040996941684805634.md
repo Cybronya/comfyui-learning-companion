@@ -4,7 +4,7 @@ name: Wan2.2 Dasiwa V10+Qwen3.5自动化图生视频V1（逻辑动态加强版�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2040996941684805634.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2 Dasiwa V10+Qwen3.5自动化图生视频V1（逻辑动态加强版）_2040996941684805634.json
 hash: 62eba129f181ae45
 coverage: 0.737705
 learned_at: 2026-10-15 22:36:16

@@ -4,7 +4,7 @@ name: 图生视频  DepthFlow 图像到 → 2.5D 视差效果视频_203235447695
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032354476950036481.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频  DepthFlow 图像到 → 2.5D 视差效果视频_2032354476950036481.json
 hash: 673cd8c8d93e6446
 coverage: 1
 learned_at: 2026-10-15 22:35:35

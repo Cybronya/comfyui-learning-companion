@@ -4,7 +4,7 @@ name: 6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053476061249323010.json
+file: comfyui_library/workflows/视频生成/图生视频/6-LTX 2.3 (FLF) 首尾帧 Start and End Frame_2053476061249323010.json
 hash: 390b4eeb7e3dea7d
 coverage: 0.882353
 learned_at: 2026-10-15 22:37:39

@@ -4,7 +4,7 @@ name: wan2.2+Sage加速图生视频-ComfyUI官方_1949982981533384705.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1949982981533384705.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+Sage加速图生视频-ComfyUI官方_1949982981533384705.json
 hash: 019d6cf18c401e26
 coverage: 0.884615
 learned_at: 2026-10-15 22:30:50

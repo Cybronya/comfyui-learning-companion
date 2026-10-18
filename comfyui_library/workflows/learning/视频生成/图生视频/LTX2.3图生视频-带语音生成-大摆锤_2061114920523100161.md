@@ -4,7 +4,7 @@ name: LTX2.3图生视频-带语音生成-大摆锤_2061114920523100161.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2061114920523100161.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3图生视频-带语音生成-大摆锤_2061114920523100161.json
 hash: 20c1da7eed13425b
 coverage: 0.822581
 learned_at: 2026-10-15 22:38:51

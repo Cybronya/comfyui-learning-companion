@@ -4,7 +4,7 @@ name: LongCat 1.5数字人多图高动态稳定版V3_2058901183300980738.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058901183300980738.json
+file: comfyui_library/workflows/视频生成/图生视频/LongCat 1.5数字人多图高动态稳定版V3_2058901183300980738.json
 hash: fc0ed3e9f399ae5d
 coverage: 0.486486
 learned_at: 2026-10-15 22:38:31

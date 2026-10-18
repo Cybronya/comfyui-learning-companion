@@ -4,7 +4,7 @@ name: LTX-2.3_动作参考并保持脸部一致性_2048694979278671873.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048694979278671873.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_动作参考并保持脸部一致性_2048694979278671873.json
 hash: cbd4af924807e60d
 coverage: 0.704082
 learned_at: 2026-10-15 22:37:10

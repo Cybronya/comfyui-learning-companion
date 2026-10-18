@@ -4,7 +4,7 @@ name: 【LTX2.3-图_文双模式视频】全自动台词探店电商带货首尾
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2062391374607118337.json
+file: comfyui_library/workflows/视频生成/图生视频/【LTX2.3-图_文双模式视频】全自动台词探店电商带货首尾帧图生视频文生视频_2062391374607118337.json
 hash: 3313932df9f73264
 coverage: 0.747664
 learned_at: 2026-10-15 22:39:03

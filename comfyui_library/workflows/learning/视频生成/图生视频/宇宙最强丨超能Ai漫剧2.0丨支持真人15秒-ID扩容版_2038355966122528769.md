@@ -4,7 +4,7 @@ name: 宇宙最强丨超能Ai漫剧2.0丨支持真人15秒-ID扩容版_203835596
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038355966122528769.json
+file: comfyui_library/workflows/视频生成/图生视频/宇宙最强丨超能Ai漫剧2.0丨支持真人15秒-ID扩容版_2038355966122528769.json
 hash: 1c6e04a4207c150d
 coverage: 0.655172
 learned_at: 2026-10-15 22:36:02

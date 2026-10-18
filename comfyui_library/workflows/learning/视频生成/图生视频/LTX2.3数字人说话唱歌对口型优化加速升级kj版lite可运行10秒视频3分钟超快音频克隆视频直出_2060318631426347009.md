@@ -4,7 +4,7 @@ name: LTX2.3数字人说话唱歌对口型优化加速升级kj版lite可运行10
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2060318631426347009.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人说话唱歌对口型优化加速升级kj版lite可运行10秒视频3分钟超快音频克隆视频直出_2060318631426347009.json
 hash: 5649208dbfabca59
 coverage: 0.5
 learned_at: 2026-10-15 22:38:47

@@ -4,7 +4,7 @@ name: Wan2.2-AIO文生和图生视频【自动优化提示词】_195149664906976
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951496649069768705.json
+file: comfyui_library/workflows/视频生成/文生视频/Wan2.2-AIO文生和图生视频【自动优化提示词】_1951496649069768705.json
 hash: 87388cc62bab37e1
 coverage: 0.75
 learned_at: 2026-10-15 22:43:37

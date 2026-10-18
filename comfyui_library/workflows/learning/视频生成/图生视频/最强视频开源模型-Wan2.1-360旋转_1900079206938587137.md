@@ -4,7 +4,7 @@ name: 最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1900079206938587137.json
+file: comfyui_library/workflows/视频生成/图生视频/最强视频开源模型-Wan2.1-360旋转_1900079206938587137.json
 hash: ad8119b4c1d752d8
 coverage: 1
 learned_at: 2026-10-15 22:29:22

@@ -4,7 +4,7 @@ name: LTX2.3 首尾帧转场特效+手动提示词_2039363002973032450.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039363002973032450.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 首尾帧转场特效+手动提示词_2039363002973032450.json
 hash: e086067120a49eff
 coverage: 0.938776
 learned_at: 2026-10-15 22:36:09

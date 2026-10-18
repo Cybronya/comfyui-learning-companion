@@ -4,7 +4,7 @@ name: 建筑-wan2.2单帧视频工作流_2022682129682931714.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2022682129682931714.json
+file: comfyui_library/workflows/视频生成/图生视频/建筑-wan2.2单帧视频工作流_2022682129682931714.json
 hash: a8932dd6ca5f108c
 coverage: 0.966667
 learned_at: 2026-10-15 22:35:10

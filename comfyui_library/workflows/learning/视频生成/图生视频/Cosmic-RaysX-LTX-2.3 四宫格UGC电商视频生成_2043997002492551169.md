@@ -4,7 +4,7 @@ name: Cosmic-RaysX-LTX-2.3 四宫格UGC电商视频生成_2043997002492551169.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2043997002492551169.json
+file: comfyui_library/workflows/视频生成/图生视频/Cosmic-RaysX-LTX-2.3 四宫格UGC电商视频生成_2043997002492551169.json
 hash: 69c4f5aa3a3ec8e8
 coverage: 0.561644
 learned_at: 2026-10-15 22:36:35

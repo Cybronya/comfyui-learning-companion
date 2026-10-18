@@ -4,7 +4,7 @@ name: （测试中）LTX2.3-MSR多参考图+音频参考_2082504671247298561.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2082504671247298561.json
+file: comfyui_library/workflows/视频生成/图生视频/（测试中）LTX2.3-MSR多参考图+音频参考_2082504671247298561.json
 hash: 66ad18d12442ef85
 coverage: 0.454545
 learned_at: 2026-10-15 22:42:32

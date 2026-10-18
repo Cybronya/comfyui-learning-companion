@@ -4,7 +4,7 @@ name: 人物舞蹈 美女跳舞（10s+时间加长版）动作迁移   SteadDanc
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041689230266601473.json
+file: comfyui_library/workflows/视频生成/图生视频/人物舞蹈 美女跳舞（10s+时间加长版）动作迁移   SteadDancer 2.0（支持动漫人物）_2041689230266601473.json
 hash: cf324e2db2912cb5
 coverage: 0.632353
 learned_at: 2026-10-15 22:36:21

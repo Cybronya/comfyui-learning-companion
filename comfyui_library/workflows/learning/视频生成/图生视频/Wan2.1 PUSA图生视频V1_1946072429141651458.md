@@ -4,7 +4,7 @@ name: Wan2.1 PUSA图生视频V1_1946072429141651458.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1946072429141651458.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1 PUSA图生视频V1_1946072429141651458.json
 hash: a26b1fd0fb4a7dca
 coverage: 0.846154
 learned_at: 2026-10-15 22:30:43

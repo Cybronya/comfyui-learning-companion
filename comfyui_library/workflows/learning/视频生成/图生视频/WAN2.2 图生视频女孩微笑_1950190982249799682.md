@@ -4,7 +4,7 @@ name: WAN2.2 图生视频女孩微笑_1950190982249799682.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1950190982249799682.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2 图生视频女孩微笑_1950190982249799682.json
 hash: 9f9b6edaa03466b8
 coverage: 1
 learned_at: 2026-10-15 22:30:54

@@ -4,7 +4,7 @@ name: Wan Animate2.2加速版无限时长_1969703078859579394.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1969703078859579394.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2加速版无限时长_1969703078859579394.json
 hash: d98f5a19f83d468a
 coverage: 0.556962
 learned_at: 2026-10-15 22:31:50

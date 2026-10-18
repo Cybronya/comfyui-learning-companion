@@ -4,7 +4,7 @@ name: Wan2.2-Fun-Camera运镜控制_1956308864335532034.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956308864335532034.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2-Fun-Camera运镜控制_1956308864335532034.json
 hash: 17dee0f523e059e6
 coverage: 0.644444
 learned_at: 2026-10-15 22:31:13

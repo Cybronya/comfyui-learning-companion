@@ -4,7 +4,7 @@ name: LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_20578121
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057812163363950593.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-音乐数字人演唱效果（多图分镜+情绪控制）_2057812163363950593.json
 hash: f76f7cea3ad15fb1
 coverage: 0.846154
 learned_at: 2026-10-15 22:38:16

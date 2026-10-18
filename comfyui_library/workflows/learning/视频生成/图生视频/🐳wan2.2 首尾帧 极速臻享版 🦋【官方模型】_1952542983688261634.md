@@ -4,7 +4,7 @@ name: 🐳wan2.2 首尾帧 极速臻享版 🦋【官方模型】_19525429836882
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952542983688261634.json
+file: comfyui_library/workflows/视频生成/图生视频/🐳wan2.2 首尾帧 极速臻享版 🦋【官方模型】_1952542983688261634.json
 hash: 169cefb91b02ea88
 coverage: 0.970588
 learned_at: 2026-10-15 22:31:02

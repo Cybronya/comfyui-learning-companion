@@ -4,7 +4,7 @@ name: 数字人 音频生成视频 Wan2.2 S2V_1961259821506957313.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1961259821506957313.json
+file: comfyui_library/workflows/视频生成/图生视频/数字人 音频生成视频 Wan2.2 S2V_1961259821506957313.json
 hash: ad2d03e80d530804
 coverage: 0.88
 learned_at: 2026-10-15 22:31:28

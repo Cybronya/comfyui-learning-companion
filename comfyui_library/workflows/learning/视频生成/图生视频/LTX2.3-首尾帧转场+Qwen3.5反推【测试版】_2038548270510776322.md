@@ -4,7 +4,7 @@ name: LTX2.3-首尾帧转场+Qwen3.5反推【测试版】_2038548270510776322.js
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038548270510776322.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3-首尾帧转场+Qwen3.5反推【测试版】_2038548270510776322.json
 hash: 36eb7fd08a7375a2
 coverage: 0.910714
 learned_at: 2026-10-15 22:36:03

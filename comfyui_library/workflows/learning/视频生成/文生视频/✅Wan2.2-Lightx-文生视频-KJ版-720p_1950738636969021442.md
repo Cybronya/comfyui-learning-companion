@@ -4,7 +4,7 @@ name: ✅Wan2.2-Lightx-文生视频-KJ版-720p_1950738636969021442.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1950738636969021442.json
+file: comfyui_library/workflows/视频生成/文生视频/✅Wan2.2-Lightx-文生视频-KJ版-720p_1950738636969021442.json
 hash: 323dd03a20c0b54b
 coverage: 0.518519
 learned_at: 2026-10-15 22:43:36

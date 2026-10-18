@@ -4,7 +4,7 @@ name: wan2.2急速 图生视频，高度准确，可本地运行_204896392386865
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2048963923868651521.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2急速 图生视频，高度准确，可本地运行_2048963923868651521.json
 hash: 44838263d493bb80
 coverage: 0.8125
 learned_at: 2026-10-15 22:37:12

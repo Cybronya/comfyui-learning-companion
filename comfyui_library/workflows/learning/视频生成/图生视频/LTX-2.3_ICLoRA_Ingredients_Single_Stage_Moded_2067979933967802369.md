@@ -4,7 +4,7 @@ name: LTX-2.3_ICLoRA_Ingredients_Single_Stage_Moded_2067979933967802369.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067979933967802369.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX-2.3_ICLoRA_Ingredients_Single_Stage_Moded_2067979933967802369.json
 hash: ebd2bcaabf4ad06a
 coverage: 0.868421
 learned_at: 2026-10-15 22:40:15

@@ -4,7 +4,7 @@ name: （官方版-循环）Infinite Talk无限时长加速版双人数字人V1 
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2019704865835982849.json
+file: comfyui_library/workflows/视频生成/图生视频/（官方版-循环）Infinite Talk无限时长加速版双人数字人V1 林耀2.6_2019704865835982849.json
 hash: c02893dfb592a4ff
 coverage: 0.828571
 learned_at: 2026-10-15 22:35:04

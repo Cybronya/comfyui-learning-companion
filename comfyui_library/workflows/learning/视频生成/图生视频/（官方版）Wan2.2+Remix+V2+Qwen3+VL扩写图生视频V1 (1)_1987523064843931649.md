@@ -4,7 +4,7 @@ name: （官方版）Wan2.2+Remix+V2+Qwen3+VL扩写图生视频V1 (1)_1987523064
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987523064843931649.json
+file: comfyui_library/workflows/视频生成/图生视频/（官方版）Wan2.2+Remix+V2+Qwen3+VL扩写图生视频V1 (1)_1987523064843931649.json
 hash: d1eb8625beb1b801
 coverage: 0.79661
 learned_at: 2026-10-15 22:32:59

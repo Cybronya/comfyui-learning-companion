@@ -4,7 +4,7 @@ name: （4+4）KJ版Wan2.2优调版图生视频实验版V2（LightX2v+Rcm）_198
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1980273017576185857.json
+file: comfyui_library/workflows/视频生成/图生视频/（4+4）KJ版Wan2.2优调版图生视频实验版V2（LightX2v+Rcm）_1980273017576185857.json
 hash: 4706c2bf96df9a97
 coverage: 0.895833
 learned_at: 2026-10-15 22:32:30

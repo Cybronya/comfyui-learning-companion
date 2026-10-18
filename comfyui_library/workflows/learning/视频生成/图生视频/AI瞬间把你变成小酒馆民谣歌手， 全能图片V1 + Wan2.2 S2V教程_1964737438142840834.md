@@ -4,7 +4,7 @@ name: AI瞬间把你变成小酒馆民谣歌手， 全能图片V1 + Wan2.2 S2V�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1964737438142840834.json
+file: comfyui_library/workflows/视频生成/图生视频/AI瞬间把你变成小酒馆民谣歌手， 全能图片V1 + Wan2.2 S2V教程_1964737438142840834.json
 hash: 6a82abb64e8666fe
 coverage: 0.569231
 learned_at: 2026-10-15 22:31:35

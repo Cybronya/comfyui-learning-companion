@@ -4,7 +4,7 @@ name: video_ltx2_3_FLframe_transition_video_inplace_2036749082479304706.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036749082479304706.json
+file: comfyui_library/workflows/视频生成/图生视频/video_ltx2_3_FLframe_transition_video_inplace_2036749082479304706.json
 hash: 4557826ec6c3bff5
 coverage: 0.849057
 learned_at: 2026-10-15 22:35:53

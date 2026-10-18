@@ -4,7 +4,7 @@ name: Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1966542129269026818.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2 Fun Vace魔改优化版动作迁移V1_1966542129269026818.json
 hash: f2f74d361ed239c1
 coverage: 1
 learned_at: 2026-10-15 22:31:38

@@ -4,7 +4,7 @@ name: ai女装带货视频_wan2.2 animate人物动作迁移v2_205481457980858777
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2054814579808587777.json
+file: comfyui_library/workflows/视频生成/图生视频/ai女装带货视频_wan2.2 animate人物动作迁移v2_2054814579808587777.json
 hash: 3852c2fa159366eb
 coverage: 0.448598
 learned_at: 2026-10-15 22:37:52

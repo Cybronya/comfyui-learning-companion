@@ -4,7 +4,7 @@ name: 可用动作迁移（一致性、表情、手部、抖动）Wan2.2-Animate
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2064595503089807361.json
+file: comfyui_library/workflows/视频生成/图生视频/可用动作迁移（一致性、表情、手部、抖动）Wan2.2-Animate-V5_2064595503089807361.json
 hash: b91bdb7ef67459c9
 coverage: 0.640351
 learned_at: 2026-10-15 22:39:26

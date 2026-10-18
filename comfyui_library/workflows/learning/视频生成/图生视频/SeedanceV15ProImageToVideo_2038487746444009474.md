@@ -4,7 +4,7 @@ name: SeedanceV15ProImageToVideo_2038487746444009474.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038487746444009474.json
+file: comfyui_library/workflows/视频生成/图生视频/SeedanceV15ProImageToVideo_2038487746444009474.json
 hash: d954b562d4c18728
 coverage: 1
 learned_at: 2026-10-15 22:36:02

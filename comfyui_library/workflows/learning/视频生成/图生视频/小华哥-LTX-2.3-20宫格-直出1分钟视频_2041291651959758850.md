@@ -4,7 +4,7 @@ name: 小华哥-LTX-2.3-20宫格-直出1分钟视频_2041291651959758850.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2041291651959758850.json
+file: comfyui_library/workflows/视频生成/图生视频/小华哥-LTX-2.3-20宫格-直出1分钟视频_2041291651959758850.json
 hash: 127a92ceb2d15f3d
 coverage: 0.584906
 learned_at: 2026-10-15 22:36:18

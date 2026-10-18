@@ -4,7 +4,7 @@ name: WAN2.2-RemixV2-I2V完美循环工作流v2_openclaw调用版_20268922227083
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2026892222708326401.json
+file: comfyui_library/workflows/视频生成/图生视频/WAN2.2-RemixV2-I2V完美循环工作流v2_openclaw调用版_2026892222708326401.json
 hash: 8055a992b0406db1
 coverage: 0.443038
 learned_at: 2026-10-15 22:35:15

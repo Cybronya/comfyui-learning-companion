@@ -4,7 +4,7 @@ name: 【动态壁纸】 Wan2.1 图生视频_1913946553239961602.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1913946553239961602.json
+file: comfyui_library/workflows/视频生成/图生视频/【动态壁纸】 Wan2.1 图生视频_1913946553239961602.json
 hash: c735da700190d4f2
 coverage: 0.727273
 learned_at: 2026-10-15 22:29:35

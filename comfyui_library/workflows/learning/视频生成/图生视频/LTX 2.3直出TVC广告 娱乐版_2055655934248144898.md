@@ -4,7 +4,7 @@ name: LTX 2.3直出TVC广告 娱乐版_2055655934248144898.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055655934248144898.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3直出TVC广告 娱乐版_2055655934248144898.json
 hash: b86037f141e73a31
 coverage: 0.972222
 learned_at: 2026-10-15 22:37:58

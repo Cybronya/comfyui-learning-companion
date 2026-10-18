@@ -4,7 +4,7 @@ name: LTX2.3 多图参考图生成视频｜+多图参考图 LORA ｜IC-LoRA-Ingr
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2067412522302529537.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 多图参考图生成视频｜+多图参考图 LORA ｜IC-LoRA-Ingredients_2067412522302529537.json
 hash: 829aaeb0af3c5ba9
 coverage: 0.785714
 learned_at: 2026-10-15 22:40:01

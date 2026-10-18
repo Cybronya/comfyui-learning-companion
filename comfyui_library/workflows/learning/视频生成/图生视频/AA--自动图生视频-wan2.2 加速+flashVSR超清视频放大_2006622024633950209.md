@@ -4,7 +4,7 @@ name: AA--自动图生视频-wan2.2 加速+flashVSR超清视频放大_2006622024
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006622024633950209.json
+file: comfyui_library/workflows/视频生成/图生视频/AA--自动图生视频-wan2.2 加速+flashVSR超清视频放大_2006622024633950209.json
 hash: df807d3cc2da335a
 coverage: 0.652174
 learned_at: 2026-10-15 22:34:02

@@ -4,7 +4,7 @@ name: wan2.2文_图生视频反推图像_1951334192300937218.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1951334192300937218.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2文_图生视频反推图像_1951334192300937218.json
 hash: 0a8f3f61f12c5bcf
 coverage: 0.777778
 learned_at: 2026-10-15 22:43:37

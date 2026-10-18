@@ -4,7 +4,7 @@ name: LTX2.3数字人，图生视频+音色克隆+自定义台词_20793916157933
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2079391615793328130.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3数字人，图生视频+音色克隆+自定义台词_2079391615793328130.json
 hash: 0d82c3e2059acbed
 coverage: 0.8
 learned_at: 2026-10-15 22:42:02

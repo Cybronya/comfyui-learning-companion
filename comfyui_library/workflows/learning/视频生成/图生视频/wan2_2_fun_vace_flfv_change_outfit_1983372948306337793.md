@@ -4,7 +4,7 @@ name: wan2_2_fun_vace_flfv_change_outfit_1983372948306337793.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1983372948306337793.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2_2_fun_vace_flfv_change_outfit_1983372948306337793.json
 hash: 7b8c97f9a5fead75
 coverage: 0.54717
 learned_at: 2026-10-15 22:32:44

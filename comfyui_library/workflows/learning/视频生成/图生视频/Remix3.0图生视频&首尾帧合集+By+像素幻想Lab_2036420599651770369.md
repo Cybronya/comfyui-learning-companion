@@ -4,7 +4,7 @@ name: Remix3.0图生视频&首尾帧合集+By+像素幻想Lab_203642059965177036
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2036420599651770369.json
+file: comfyui_library/workflows/视频生成/图生视频/Remix3.0图生视频&首尾帧合集+By+像素幻想Lab_2036420599651770369.json
 hash: 1023cfd93d867db0
 coverage: 0.960526
 learned_at: 2026-10-15 22:35:52

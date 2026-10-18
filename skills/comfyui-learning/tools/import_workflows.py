@@ -31,6 +31,7 @@ LIBRARY = ROOT / "comfyui_library" / "workflows"
 DEFAULT_SOURCE = ROOT / "download" / "workflows-by-tag"
 
 sys.path.insert(0, str(ROOT))
+from engine.atomic_write import atomic_write_json  # noqa: E402
 from engine.workflow_learning.workflow_scanner import SIDECAR_NAMES  # noqa: E402
 
 WORKFLOW_EXTS = {".json", ".png"}
@@ -74,19 +75,70 @@ def semantic_hash(path: Path) -> str | None:
     return hashlib.sha256(canon.encode("utf-8")).hexdigest()[:16]
 
 
-def library_semantic_hashes() -> set:
-    """库内全部 json 工作流的归一化指纹（较慢：逐个解析）"""
-    hashes = set()
+#: 语义指纹 sidecar：{相对路径: [size, mtime_ns, hash]}
+#: 放 database/storage/ 下（该目录被 .gitignore 覆盖，不会进 git）
+SEMANTIC_CACHE_PATH = (
+    ROOT / "comfyui_library" / "database" / "storage" / "semantic_index.json"
+)
+
+
+def load_semantic_cache() -> dict:
+    """读 sidecar 缓存；不存在/损坏返回空字典（安静退回全量重算）"""
+    if not SEMANTIC_CACHE_PATH.exists():
+        return {}
+    try:
+        with open(SEMANTIC_CACHE_PATH, "r", encoding="utf-8-sig") as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception:
+        return {}
+
+
+def save_semantic_cache(cache: dict) -> None:
+    """写 sidecar；失败只提示，不影响入库结果"""
+    try:
+        atomic_write_json(SEMANTIC_CACHE_PATH, cache, indent=None)
+    except Exception as e:
+        print(f"（语义指纹缓存写盘失败，下次会全量重算: {e}）")
+
+
+def library_semantic_hashes(use_cache: bool = True) -> set:
+    """
+    库内全部 json 工作流的归一化指纹
+
+    带 sidecar 缓存：每个文件记 [size, mtime_ns, hash]，只有变动的重算。
+    库内 2.9 万文件时，全量解析要 205s（每批固定开销，占总耗时 25%），
+    增量后约 10s。缓存损坏/缺失 → 安静退回全量重算。
+    """
     files = [
         p for p in LIBRARY.rglob("*")
         if is_workflow_file(p) and p.suffix.lower() == ".json"
     ]
+    cache = load_semantic_cache() if use_cache else {}
+    hashes = set()
+    fresh = {}
+    reused = 0
+
     for i, p in enumerate(files, 1):
-        h = semantic_hash(p)
+        rel = p.relative_to(LIBRARY).as_posix()
+        st = p.stat()
+        hit = cache.get(rel)
+        if (isinstance(hit, list) and len(hit) == 3
+                and hit[0] == st.st_size and hit[1] == st.st_mtime_ns):
+            h = hit[2]
+            reused += 1
+        else:
+            h = semantic_hash(p)
+            if not use_cache and i % 5000 == 0:
+                print(f"  …已解析 {i}/{len(files)}", flush=True)
         if h:
             hashes.add(h)
-        if i % 5000 == 0:
-            print(f"  …已解析 {i}/{len(files)}", flush=True)
+            fresh[rel] = [st.st_size, st.st_mtime_ns, h]
+
+    if use_cache:
+        save_semantic_cache(fresh)
+        print(f"  复用缓存 {reused} 个，重算 {len(files) - reused} 个"
+              f"（共 {len(files)} 个文件）")
     return hashes
 
 
@@ -147,6 +199,8 @@ def main() -> int:
     dest_sub = Path(args[1]) if len(args) > 1 else Path("")
     # 归一化闸门默认开（--no-semantic 关掉，只走字节指纹，快但会漏排版重复）
     semantic = "--no-semantic" not in args
+    # 语义指纹 sidecar 缓存（--no-cache 关掉，每次全量重算）
+    use_cache = "--no-cache" not in args
     if not source.is_dir():
         print(f"下载目录不存在: {source}")
         return 1
@@ -180,7 +234,7 @@ def main() -> int:
     if semantic and candidates:
         t0 = time.time()
         print(f"字节闸门候选 {len(candidates)} 个，算库内归一化指纹…", flush=True)
-        seen_sem = library_semantic_hashes()
+        seen_sem = library_semantic_hashes(use_cache=use_cache)
         print(f"  库内唯一内容 {len(seen_sem)} 个（{time.time() - t0:.0f}s）")
         kept, batch_sem = [], set()
         for src in candidates:

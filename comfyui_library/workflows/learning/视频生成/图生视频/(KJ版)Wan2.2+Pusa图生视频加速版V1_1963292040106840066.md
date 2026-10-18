@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2+Pusa图生视频加速版V1_1963292040106840066.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1963292040106840066.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2+Pusa图生视频加速版V1_1963292040106840066.json
 hash: a1ff8d7d8cf60f40
 coverage: 0.916667
 learned_at: 2026-10-15 22:31:32

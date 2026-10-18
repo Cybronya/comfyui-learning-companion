@@ -4,7 +4,7 @@ name: MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948784661829492737.json
+file: comfyui_library/workflows/视频生成/图生视频/MultiTalk+AniWan单人KJ高质量加速稳定版V4（UNI3C运镜-脸部稳定版）_1948784661829492737.json
 hash: 6c879b1869e63b2e
 coverage: 0.723404
 learned_at: 2026-10-15 22:30:48

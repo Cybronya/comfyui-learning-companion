@@ -4,7 +4,7 @@ name: LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_203987315259920
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039873152599203841.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX 2.3 VBVR 图生视频三阶渲染｜NAG｜显存优化_2039873152599203841.json
 hash: a001b0f2532a0ab4
 coverage: 0.918919
 learned_at: 2026-10-15 22:36:11

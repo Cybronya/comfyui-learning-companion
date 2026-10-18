@@ -4,7 +4,7 @@ name: FantasyTalking+INDEX TTS带配音图生视频数字人_1917158732864884738
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1917158732864884738.json
+file: comfyui_library/workflows/视频生成/图生视频/FantasyTalking+INDEX TTS带配音图生视频数字人_1917158732864884738.json
 hash: 7f64bffc9870fbbf
 coverage: 0.942857
 learned_at: 2026-10-15 22:29:39

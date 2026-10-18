@@ -4,7 +4,7 @@ name: AA--Infinite Talk动态数字人+Qwen TTS声音克隆_2017294835589324802.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017294835589324802.json
+file: comfyui_library/workflows/视频生成/图生视频/AA--Infinite Talk动态数字人+Qwen TTS声音克隆_2017294835589324802.json
 hash: 4c53b24182e4829b
 coverage: 0.9
 learned_at: 2026-10-15 22:34:47

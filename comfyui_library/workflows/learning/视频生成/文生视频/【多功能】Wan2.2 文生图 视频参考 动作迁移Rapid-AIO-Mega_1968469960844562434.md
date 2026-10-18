@@ -4,7 +4,7 @@ name: 【多功能】Wan2.2 文生图 视频参考 动作迁移Rapid-AIO-Mega_19
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1968469960844562434.json
+file: comfyui_library/workflows/视频生成/文生视频/【多功能】Wan2.2 文生图 视频参考 动作迁移Rapid-AIO-Mega_1968469960844562434.json
 hash: 0cb196dd041a829f
 coverage: 0.92
 learned_at: 2026-10-15 22:43:45

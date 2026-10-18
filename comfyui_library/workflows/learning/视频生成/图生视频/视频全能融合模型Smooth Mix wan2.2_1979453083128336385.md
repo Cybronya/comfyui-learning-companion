@@ -4,7 +4,7 @@ name: 视频全能融合模型Smooth Mix wan2.2_1979453083128336385.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979453083128336385.json
+file: comfyui_library/workflows/视频生成/图生视频/视频全能融合模型Smooth Mix wan2.2_1979453083128336385.json
 hash: 0c088a0805bfde05
 coverage: 0.957447
 learned_at: 2026-10-15 22:32:23

@@ -4,7 +4,7 @@ name: 图生视频极速版 人物表情真实自然 Wan2.2+All-in-one_203952572
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2039525725417508865.json
+file: comfyui_library/workflows/视频生成/图生视频/图生视频极速版 人物表情真实自然 Wan2.2+All-in-one_2039525725417508865.json
 hash: a58fcd953eb109cc
 coverage: 1
 learned_at: 2026-10-15 22:36:09

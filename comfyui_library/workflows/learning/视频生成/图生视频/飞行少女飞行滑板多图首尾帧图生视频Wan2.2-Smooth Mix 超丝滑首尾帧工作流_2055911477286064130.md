@@ -4,7 +4,7 @@ name: 飞行少女飞行滑板多图首尾帧图生视频Wan2.2-Smooth Mix 超�
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2055911477286064130.json
+file: comfyui_library/workflows/视频生成/图生视频/飞行少女飞行滑板多图首尾帧图生视频Wan2.2-Smooth Mix 超丝滑首尾帧工作流_2055911477286064130.json
 hash: f23b1a82113017f4
 coverage: 0.986667
 learned_at: 2026-10-15 22:37:59

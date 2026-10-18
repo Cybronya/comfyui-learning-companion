@@ -4,7 +4,7 @@ name: Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2073292954780917762.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan Animate2.2动作迁移V3(Move) 骨骼增强版_2073292954780917762.json
 hash: fd40077ec56ac3a7
 coverage: 0.5
 learned_at: 2026-10-15 22:41:03

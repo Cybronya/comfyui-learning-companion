@@ -4,7 +4,7 @@ name: Seedance2.0爆款视频反推图生视频（19号流）_205770823985642701
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2057708239856427010.json
+file: comfyui_library/workflows/视频生成/图生视频/Seedance2.0爆款视频反推图生视频（19号流）_2057708239856427010.json
 hash: 161e76c0d7efdce0
 coverage: 0.833333
 learned_at: 2026-10-15 22:38:14

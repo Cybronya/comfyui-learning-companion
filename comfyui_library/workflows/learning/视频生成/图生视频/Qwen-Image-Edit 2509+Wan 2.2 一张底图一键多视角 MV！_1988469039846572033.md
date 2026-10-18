@@ -4,7 +4,7 @@ name: Qwen-Image-Edit 2509+Wan 2.2 一张底图一键多视角 MV！_19884690398
 type: Image To Image
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988469039846572033.json
+file: comfyui_library/workflows/视频生成/图生视频/Qwen-Image-Edit 2509+Wan 2.2 一张底图一键多视角 MV！_1988469039846572033.json
 hash: 98fb154abfd23e1a
 coverage: 0.885057
 learned_at: 2026-10-15 22:33:02

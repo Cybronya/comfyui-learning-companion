@@ -4,7 +4,7 @@ name: wan2.1_FLF2V(首尾帧图片转视频）_1914979935533105154.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1914979935533105154.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.1_FLF2V(首尾帧图片转视频）_1914979935533105154.json
 hash: 2ee297b71dda9c71
 coverage: 0.851852
 learned_at: 2026-10-15 22:29:37

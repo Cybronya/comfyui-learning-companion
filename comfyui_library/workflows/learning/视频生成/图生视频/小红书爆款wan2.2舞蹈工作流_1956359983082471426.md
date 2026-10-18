@@ -4,7 +4,7 @@ name: 小红书爆款wan2.2舞蹈工作流_1956359983082471426.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956359983082471426.json
+file: comfyui_library/workflows/视频生成/图生视频/小红书爆款wan2.2舞蹈工作流_1956359983082471426.json
 hash: 713f8afce18f762f
 coverage: 0.833333
 learned_at: 2026-10-15 22:31:13

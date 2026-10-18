@@ -4,7 +4,7 @@ name: 文生视频Wan2.2-Smooth+Mix++RTX超分+Qwen3.5_2053671434622386177.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2053671434622386177.json
+file: comfyui_library/workflows/视频生成/图生视频/文生视频Wan2.2-Smooth+Mix++RTX超分+Qwen3.5_2053671434622386177.json
 hash: 6466d0c621405126
 coverage: 0.97561
 learned_at: 2026-10-15 22:37:42

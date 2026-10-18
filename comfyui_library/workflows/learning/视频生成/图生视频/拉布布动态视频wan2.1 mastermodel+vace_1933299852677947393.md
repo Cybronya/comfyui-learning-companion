@@ -4,7 +4,7 @@ name: 拉布布动态视频wan2.1 mastermodel+vace_1933299852677947393.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1933299852677947393.json
+file: comfyui_library/workflows/视频生成/图生视频/拉布布动态视频wan2.1 mastermodel+vace_1933299852677947393.json
 hash: 8566f1e32f77b12d
 coverage: 0.878788
 learned_at: 2026-10-15 22:30:13

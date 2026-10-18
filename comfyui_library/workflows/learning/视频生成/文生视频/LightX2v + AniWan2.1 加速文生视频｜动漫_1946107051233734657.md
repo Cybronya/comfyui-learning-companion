@@ -4,7 +4,7 @@ name: LightX2v + AniWan2.1 加速文生视频｜动漫_1946107051233734657.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1946107051233734657.json
+file: comfyui_library/workflows/视频生成/文生视频/LightX2v + AniWan2.1 加速文生视频｜动漫_1946107051233734657.json
 hash: b9806019fe641464
 coverage: 0.791667
 learned_at: 2026-10-15 22:43:31

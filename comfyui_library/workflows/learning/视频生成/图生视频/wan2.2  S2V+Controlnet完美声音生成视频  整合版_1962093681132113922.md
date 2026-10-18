@@ -4,7 +4,7 @@ name: wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1962093681132113922.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2  S2V+Controlnet完美声音生成视频  整合版_1962093681132113922.json
 hash: 7e7fdcdd7af1dd09
 coverage: 0.552632
 learned_at: 2026-10-15 22:31:30

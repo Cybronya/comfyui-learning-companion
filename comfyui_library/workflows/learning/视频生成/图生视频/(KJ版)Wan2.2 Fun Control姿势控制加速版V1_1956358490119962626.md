@@ -4,7 +4,7 @@ name: (KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1956358490119962626.json
+file: comfyui_library/workflows/视频生成/图生视频/(KJ版)Wan2.2 Fun Control姿势控制加速版V1_1956358490119962626.json
 hash: af9bdfed9152e8f8
 coverage: 0.637681
 learned_at: 2026-10-15 22:31:13

@@ -4,7 +4,7 @@ name: 万相 Wan2.2 14B文生视频工作流_1949831170026594305.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1949831170026594305.json
+file: comfyui_library/workflows/视频生成/文生视频/万相 Wan2.2 14B文生视频工作流_1949831170026594305.json
 hash: ed98e81c6ed99812
 coverage: 1
 learned_at: 2026-10-15 22:43:33

@@ -4,7 +4,7 @@ name: RH Google 全能视频V3.1 Image2Video，效果炸裂_1979543940607152130.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979543940607152130.json
+file: comfyui_library/workflows/视频生成/图生视频/RH Google 全能视频V3.1 Image2Video，效果炸裂_1979543940607152130.json
 hash: 83d6b27da65dfb90
 coverage: 1
 learned_at: 2026-10-15 22:32:24

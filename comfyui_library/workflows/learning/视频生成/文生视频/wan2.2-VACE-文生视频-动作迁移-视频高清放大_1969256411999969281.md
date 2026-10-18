@@ -4,7 +4,7 @@ name: wan2.2-VACE-文生视频-动作迁移-视频高清放大_19692564119999692
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1969256411999969281.json
+file: comfyui_library/workflows/视频生成/文生视频/wan2.2-VACE-文生视频-动作迁移-视频高清放大_1969256411999969281.json
 hash: 8ea61c24c1e337f4
 coverage: 0.9
 learned_at: 2026-10-15 22:43:46

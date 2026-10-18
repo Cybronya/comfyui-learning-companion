@@ -4,7 +4,7 @@ name: MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2038096687511638017.json
+file: comfyui_library/workflows/视频生成/图生视频/MagiHuman+Qwen3.5自动提示词--图生音视频_2038096687511638017.json
 hash: 2b62eb6bbb5dd0dd
 coverage: 0.769231
 learned_at: 2026-10-15 22:36:00

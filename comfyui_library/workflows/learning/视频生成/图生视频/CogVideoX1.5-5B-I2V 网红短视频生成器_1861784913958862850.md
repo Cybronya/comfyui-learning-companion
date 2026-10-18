@@ -4,7 +4,7 @@ name: CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1861784913958862850.json
+file: comfyui_library/workflows/视频生成/图生视频/CogVideoX1.5-5B-I2V 网红短视频生成器_1861784913958862850.json
 hash: 04c0d12df7d4ec07
 coverage: 0.820513
 learned_at: 2026-10-15 22:29:14

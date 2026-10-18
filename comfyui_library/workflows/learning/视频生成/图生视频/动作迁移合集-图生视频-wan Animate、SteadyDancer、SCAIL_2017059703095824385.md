@@ -4,7 +4,7 @@ name: 动作迁移合集-图生视频-wan Animate、SteadyDancer、SCAIL_2017059
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2017059703095824385.json
+file: comfyui_library/workflows/视频生成/图生视频/动作迁移合集-图生视频-wan Animate、SteadyDancer、SCAIL_2017059703095824385.json
 hash: b936b29701f74957
 coverage: 0.950413
 learned_at: 2026-10-15 22:34:44

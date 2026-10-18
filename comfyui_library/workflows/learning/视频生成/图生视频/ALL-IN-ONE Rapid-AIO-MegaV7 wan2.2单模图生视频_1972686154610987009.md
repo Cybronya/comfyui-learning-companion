@@ -4,7 +4,7 @@ name: ALL-IN-ONE Rapid-AIO-MegaV7 wan2.2单模图生视频_1972686154610987009.j
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1972686154610987009.json
+file: comfyui_library/workflows/视频生成/图生视频/ALL-IN-ONE Rapid-AIO-MegaV7 wan2.2单模图生视频_1972686154610987009.json
 hash: c9a1d797f4ef50b6
 coverage: 0.869565
 learned_at: 2026-10-15 22:32:00

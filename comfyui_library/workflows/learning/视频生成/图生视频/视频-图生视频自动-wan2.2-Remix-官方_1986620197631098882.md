@@ -4,7 +4,7 @@ name: 视频-图生视频自动-wan2.2-Remix-官方_1986620197631098882.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1986620197631098882.json
+file: comfyui_library/workflows/视频生成/图生视频/视频-图生视频自动-wan2.2-Remix-官方_1986620197631098882.json
 hash: 9db034712a9c4ea7
 coverage: 0.647059
 learned_at: 2026-10-15 22:32:55

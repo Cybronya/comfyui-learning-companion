@@ -4,7 +4,7 @@ name: (冬雪)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_19877
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987745095686533122.json
+file: comfyui_library/workflows/视频生成/图生视频/(冬雪)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1987745095686533122.json
 hash: 52a87d093d510fd5
 coverage: 0.75
 learned_at: 2026-10-15 22:33:00

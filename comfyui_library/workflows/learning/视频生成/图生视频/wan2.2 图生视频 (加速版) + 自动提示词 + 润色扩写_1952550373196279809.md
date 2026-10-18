@@ -4,7 +4,7 @@ name: wan2.2 图生视频 (加速版) + 自动提示词 + 润色扩写_195255037
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952550373196279809.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 图生视频 (加速版) + 自动提示词 + 润色扩写_1952550373196279809.json
 hash: bc3450594ab3daf8
 coverage: 0.777778
 learned_at: 2026-10-15 22:31:02

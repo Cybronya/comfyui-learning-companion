@@ -5,10 +5,10 @@ type: Unknown Workflow
 status: completed
 source: json
 file: comfyui_library/workflows/comfyui-workflow-templates-json/3d_hunyuan3d-v2.1.json
-hash: 150c7ee7870f466b
+hash: 3b116997b04873d4
 official: true
 coverage: 0.909091
-learned_at: 2026-10-15 22:24:47
+learned_at: 2026-10-17 01:44:09
 nodes: [ImageOnlyCheckpointLoader, LoadImage, ModelSamplingAuraFlow, KSampler, SaveGLB, VAEDecodeHunyuan3D, VoxelToMesh, CLIPVisionEncode, Hunyuan3Dv2Conditioning, EmptyLatentHunyuan3Dv2, MarkdownNote]
 patterns: []
 missing: []

@@ -4,7 +4,7 @@ name: Wan2.1+Radial 提速版图生视频放大_1947245269056376834.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1947245269056376834.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.1+Radial 提速版图生视频放大_1947245269056376834.json
 hash: 10f51b7b870582f6
 coverage: 1
 learned_at: 2026-10-15 22:30:45

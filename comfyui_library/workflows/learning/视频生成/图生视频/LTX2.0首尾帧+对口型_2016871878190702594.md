@@ -4,7 +4,7 @@ name: LTX2.0首尾帧+对口型_2016871878190702594.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2016871878190702594.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.0首尾帧+对口型_2016871878190702594.json
 hash: 18f475b7214b35d0
 coverage: 0.572917
 learned_at: 2026-10-15 22:34:44

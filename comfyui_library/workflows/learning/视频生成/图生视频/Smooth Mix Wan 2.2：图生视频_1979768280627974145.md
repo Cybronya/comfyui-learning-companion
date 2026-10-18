@@ -4,7 +4,7 @@ name: Smooth Mix Wan 2.2：图生视频_1979768280627974145.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1979768280627974145.json
+file: comfyui_library/workflows/视频生成/图生视频/Smooth Mix Wan 2.2：图生视频_1979768280627974145.json
 hash: 2e9ddb3ec9df4150
 coverage: 0.762712
 learned_at: 2026-10-15 22:32:26

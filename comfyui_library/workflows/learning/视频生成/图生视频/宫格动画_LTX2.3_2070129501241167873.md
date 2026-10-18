@@ -4,7 +4,7 @@ name: 宫格动画_LTX2.3_2070129501241167873.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2070129501241167873.json
+file: comfyui_library/workflows/视频生成/图生视频/宫格动画_LTX2.3_2070129501241167873.json
 hash: 817cdba407b83dbc
 coverage: 0.558282
 learned_at: 2026-10-15 22:40:36

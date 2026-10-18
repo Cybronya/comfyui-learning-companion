@@ -4,7 +4,7 @@ name: LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_19489698054754
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1948969805475454977.json
+file: comfyui_library/workflows/视频生成/图生视频/LatentSync 1.6数字人1分钟长视频版(牙齿更清晰)_1948969805475454977.json
 hash: 077a6fe00c45e90a
 coverage: 0.857143
 learned_at: 2026-10-15 22:30:48

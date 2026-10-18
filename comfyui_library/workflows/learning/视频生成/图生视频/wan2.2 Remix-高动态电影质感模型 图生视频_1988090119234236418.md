@@ -4,7 +4,7 @@ name: wan2.2 Remix-高动态电影质感模型 图生视频_1988090119234236418.
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1988090119234236418.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2 Remix-高动态电影质感模型 图生视频_1988090119234236418.json
 hash: 408e39fec73e8409
 coverage: 0.933333
 learned_at: 2026-10-15 22:33:01

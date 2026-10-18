@@ -4,7 +4,7 @@ name: LTXvideo0.9.6文生视频秒出_1922112909130809345.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1922112909130809345.json
+file: comfyui_library/workflows/视频生成/文生视频/LTXvideo0.9.6文生视频秒出_1922112909130809345.json
 hash: 84e847e6de0c33c6
 coverage: 1
 learned_at: 2026-10-15 22:43:23

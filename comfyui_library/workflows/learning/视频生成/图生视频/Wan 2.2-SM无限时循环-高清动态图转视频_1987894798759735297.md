@@ -4,7 +4,7 @@ name: Wan 2.2-SM无限时循环-高清动态图转视频_1987894798759735297.jso
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1987894798759735297.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan 2.2-SM无限时循环-高清动态图转视频_1987894798759735297.json
 hash: e45420fd6a4474f4
 coverage: 0.959184
 learned_at: 2026-10-15 22:33:00

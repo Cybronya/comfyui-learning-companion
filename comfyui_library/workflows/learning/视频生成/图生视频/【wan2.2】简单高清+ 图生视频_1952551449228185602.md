@@ -4,7 +4,7 @@ name: 【wan2.2】简单高清+ 图生视频_1952551449228185602.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952551449228185602.json
+file: comfyui_library/workflows/视频生成/图生视频/【wan2.2】简单高清+ 图生视频_1952551449228185602.json
 hash: c3db68b5e01a60c7
 coverage: 0.777778
 learned_at: 2026-10-15 22:31:02

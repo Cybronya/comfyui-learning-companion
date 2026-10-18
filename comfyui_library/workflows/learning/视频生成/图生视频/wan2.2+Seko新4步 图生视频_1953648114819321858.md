@@ -4,7 +4,7 @@ name: wan2.2+Seko新4步 图生视频_1953648114819321858.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1953648114819321858.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2+Seko新4步 图生视频_1953648114819321858.json
 hash: 62ad46408c393293
 coverage: 0.904762
 learned_at: 2026-10-15 22:31:05

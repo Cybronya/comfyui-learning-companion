@@ -4,7 +4,7 @@ name: (冬季烟花)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1995428384190738434.json
+file: comfyui_library/workflows/视频生成/图生视频/(冬季烟花)Infinite talk数字人动态加强高版V4（Lightx2v+Rcm）_1995428384190738434.json
 hash: 7540d13fefa36f21
 coverage: 0.75
 learned_at: 2026-10-15 22:33:23

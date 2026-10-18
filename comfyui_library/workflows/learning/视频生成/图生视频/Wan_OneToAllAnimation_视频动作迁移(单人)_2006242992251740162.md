@@ -4,7 +4,7 @@ name: Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2006242992251740162.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan_OneToAllAnimation_视频动作迁移(单人)_2006242992251740162.json
 hash: c258d25818da9afb
 coverage: 0.535088
 learned_at: 2026-10-15 22:34:01

@@ -4,7 +4,7 @@ name: 最新wan2.1 首_中_尾多 图生视频_1935254064009498626.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/文生视频/1935254064009498626.json
+file: comfyui_library/workflows/视频生成/文生视频/最新wan2.1 首_中_尾多 图生视频_1935254064009498626.json
 hash: baf2ac6c9bbe3295
 coverage: 1
 learned_at: 2026-10-15 22:43:28

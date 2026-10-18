@@ -4,7 +4,7 @@ name: API-Z_image+Wan2.2_2066868599926644737.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2066868599926644737.json
+file: comfyui_library/workflows/视频生成/图生视频/API-Z_image+Wan2.2_2066868599926644737.json
 hash: 1b564b52875552bb
 coverage: 0.975
 learned_at: 2026-10-15 22:39:54

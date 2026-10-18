@@ -4,7 +4,7 @@ name: Wan2.2四图首尾帧10秒分镜视频_1952290446611525634.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1952290446611525634.json
+file: comfyui_library/workflows/视频生成/图生视频/Wan2.2四图首尾帧10秒分镜视频_1952290446611525634.json
 hash: 9e2210f0f5209783
 coverage: 0.944444
 learned_at: 2026-10-15 22:31:01

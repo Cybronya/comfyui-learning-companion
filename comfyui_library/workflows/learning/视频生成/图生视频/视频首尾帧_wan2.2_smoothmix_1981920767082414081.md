@@ -4,7 +4,7 @@ name: 视频首尾帧_wan2.2_smoothmix_1981920767082414081.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/1981920767082414081.json
+file: comfyui_library/workflows/视频生成/图生视频/视频首尾帧_wan2.2_smoothmix_1981920767082414081.json
 hash: 3bc20ce090803285
 coverage: 0.978261
 learned_at: 2026-10-15 22:32:39

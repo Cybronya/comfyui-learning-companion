@@ -4,7 +4,7 @@ name: wan2.2多段视频loop_2032091016102154241.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2032091016102154241.json
+file: comfyui_library/workflows/视频生成/图生视频/wan2.2多段视频loop_2032091016102154241.json
 hash: d670b6e5385b895a
 coverage: 0.923077
 learned_at: 2026-10-15 22:35:34

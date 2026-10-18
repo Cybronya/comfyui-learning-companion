@@ -4,7 +4,7 @@ name: LTX2.3 图生视频超快工作流-8G可用_2058345686520909825.json
 type: Unknown Workflow
 status: completed
 source: json
-file: comfyui_library/workflows/视频生成/图生视频/2058345686520909825.json
+file: comfyui_library/workflows/视频生成/图生视频/LTX2.3 图生视频超快工作流-8G可用_2058345686520909825.json
 hash: c04d116c32f02d33
 coverage: 0.944444
 learned_at: 2026-10-15 22:38:20
