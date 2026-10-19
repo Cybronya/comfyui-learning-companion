@@ -5,7 +5,7 @@ ComfyUI Learning Companion —— 面向 AI Agent / 协作者的入口文档。
 **接手本项目时，先读完本文，再动手。** 本文是项目的唯一入口文档：
 第 2-7 节是不变的约定与环境（必读），第 8 节是项目定位，第 9 节是实时状态（改代码后必须一起更新）。
 
-- 最后更新：2026-10-18
+- 最后更新：2026-10-19
 - **版本号唯一权威来源：`docs/roadmap.md` 第 3 节**（本文不另立版本表，只在状态描述里引用）
 - 规则版本：v0.3.1（Skill 规范定稿）｜v0.4 架构标准化 ✅｜v0.5 引擎实装进行中
 - 仓库：https://github.com/Cybronya/comfyui-learning-companion （public，分支 master，无 git tag）
@@ -307,7 +307,7 @@ engine/                       可执行层（v0.5 起）
 |---|---|
 | 节点知识卡 | ✅ 452 张（16 张人工核对：6 张 SD1.5 基础卡 + 10 张高频卡；436 张自动起草于 2026-10-06，来源 `node-analysis/tools/draft_cards_from_workflows.py`——输入/输出槽与取值分布为 404 个 workflow 实测，作用为名称推断标 TODO(待验证)）+ `node_index.json` v1.2（auto_drafted 标记区分两类卡） |
 | 布线节点忽略清单 | ✅ `engine/workflow_learning/ignore_nodes.py`（Note / Reroute / GetNode / SetNode / 注释、预览与 rgthree 分组控件等，不建卡、不计缺口；`node_frequency(exclude_ignored=True)` 排建卡优先级） |
-| Pattern 卡 | ✅ 2 张（sd15-t2i-basic / sd15-t2i-lora） |
+| Pattern 卡 | ✅ 手写 2 张（sd15-t2i-basic / sd15-t2i-lora）；`_consolidated/` 归纳模式 **4775 张**（2026-10-19 全量 36925 条真实归纳产出，自动生成勿手改，成员全部是库里真实 workflow） |
 | 节点摘要 | ✅ 1 张（loraloader） |
 | 真实 workflow 样本 | 🔶 仅 `workflows/sd1.5/` 有内容（`_workflow.json` / `_prompt.json` / `basic.json` / 两张 png）；`wan` / `flux` / `sdxl` 为空骨架 |
 | 知识卡格式对齐 | 🔶 8 张 v0.2 遗产卡（`skills/comfyui-learning/knowledge/`）内容有效但**格式先于 v0.3.1 规范**，待迁移 |
@@ -438,6 +438,58 @@ agent_core/ComfyUIAgent.ask()
 这类需求才真正需要接模型。
 
 ### 9.2 进行中
+
+**2026-10-19 归纳与检索洼地修复（待办 6/8/18 一次清掉）**：
+- **检索递归索引**（`engine/retrieval/retriever.py` `_index_pattern_cards`）：
+  `patterns/*.md` 改 `rglob` 递归 + 跳过 index.md —— `_consolidated/` 的归纳
+  模式从此检索得到（此前只索引顶层 2 张手写卡）。重建倒排索引：关键词 16330 /
+  唯一知识条目 10309（workflow_pattern 4781 / node 5527），31s
+- **聚类上界剪枝**（`pattern_miner.py`）：先验 `Jaccard ≤ min(|A|,|B|)/max(|A|,|B|)`，
+  上界够不到阈值就不算交集 —— 数学精确、结果不变，3.6 万条全量归纳从「不敢跑」变约 5.5 分钟
+- **模式名去歧义**（`consolidation_engine.py` `_unique_names`）：命名只有
+  「类型 slug + 特征词组合」，真实库上同类型多聚类必撞名，不去歧义会互相
+  覆盖落盘文件与 grouped 键；撞名追加 `_2`/`_3`（used 集合探测，连序号名
+  撞本名的极端情况也不重）
+- **全量归纳实跑**：36925 条经验（DB 流式加载 54.6s）→ **4775 个模式**
+  （未归类 3522）/ 归纳 333s / 写回数据库 + 三索引落盘 25.5s；
+  KnowledgeStore 全量覆盖 `_consolidated/`，旧的 5 张合成卡被替换
+- **图谱重建**：**52468 顶点 / 1246493 边**（+4775 pattern 顶点），
+  **matches 边 0 → 17196**，0 孤立 0 悬空，712s，图谱文件 352 MB
+- 测试：**18 个全 exit=0**（test_knowledge_consolidation 因真实库涨到 3.6 万条
+  需 386s、test_knowledge_graph 1259s，属库变大后的正常水位）
+- 遗留观察：多数记录 workflow_type 是 "Unknown Workflow"（分类器词表未覆盖
+  真实类型），4775 个模式名几乎全部 `unknown_workflow_` 开头 —— 模式可查但
+  名字没辨识度，后续可把 learning 记录的目录分类（数字人/图生视频…）喂进类型判定
+- 教训：后台 runner 里构造路径别用多级转义反斜杠（层级一错就是静默路径错、
+  进程秒死还留 0 字节日志），一律写正斜杠
+
+**2026-10-18~19 数字人分类收官（下载 2000 → 真正入库 636）+ 盘点口径三个坑**：
+- 起点：清单 `download/ids-by-tag/数字人/数字人_ids.txt` **2000 个 ID**（10-18 18:55 收齐，唯一无重复），
+  已下载 500 / 已入库学习 153 / 未下载 1500
+- 三批连跑（均为 `--tag 数字人/数字人 --skip-collect --count 500`）：
+  - 批次 2（10-18 22:05 → 22:26）：下载 500（0 失败）→ 入库 **160** → 预建卡 15 → 图谱 47355 顶点 / 1130878 边
+  - 批次 3（10-19 00:05 → 00:28）：下载 500（0 失败，321.8s）→ 入库 **170** → 预建卡 4 → 图谱 47533 / 1136109
+  - 批次 4（00:28 → 00:49）：下载 500（0 失败，332.6s，manifest 到 2000）→ 入库 **157** → 预建卡 3 → 图谱 47696 / 1141598
+- **清单收官**：已下载 **2000 / 未下载 0**；下载 2000 个只入库 636 个唯一内容
+  （**重复率约 68%**，与音频生成同量级 —— 归一化闸门每批拦 330~345 个）
+- 终态：数字人 **636 文件 = 636 记录 = 636 库行**（顶层 `数字人/数字人`，另有历史
+  `视频生成/数字人` 4 条）；全库 **36485 条**（文件=记录=库行三方零差异），
+  status 全部 `learned`；平均 82% / 深懂(≥80%) 23726 / 浅懂 1；
+  知识卡 5526 张；sqlite 816.8 MB；图谱 329.5 MB
+- **执行方式教训**：500 一批含下载+全库快照+图谱，前台跑必超时（20-25 分钟/批）。改为
+  **分离进程 + 行缓冲日志**（`subprocess.Popen(..., DETACHED_PROCESS|CREATE_NEW_PROCESS_GROUP)`，
+  日志落 `download/*.log`），并且**多批用串行 runner 一次挂后台**（批间查 rc，非 0 即中止，
+  两批 44 分钟无人值守）；前台只做秒级 `Get-Content -Tail -Encoding UTF8` 轮询，读日志
+  **必须显式 `-Encoding UTF8`**，否则 UTF-8 正文按 GBK 显示成乱码
+- **盘点口径三个坑（都是临时脚本写错，不是数据问题）**：
+  ① 比对 key 要与库 `id` 列同口径——库是**正斜杠 + 带 `.json` 后缀**，记录是无后缀，
+     混用会报出「149 文件 vs 149 记录却全不相交」的假差额；
+  ② 库 `workflows.status` 取值是 **`learned`**，不是学习记录侧的 `completed`——
+     拿 `status != 'completed'` 筛会得出「36158 条全部异常」；
+  ③ 按分类统计不能用 `"数字人" in Path(p).parts`（今天新顶层 `数字人/` 与历史
+     `视频生成/数字人` **同名目录并存**），SQL 也不能用 `id like '%数字人%'`
+     （会命中**名字里**含「数字人」的其他分类，虚报 3161 行 vs 真实 313）——
+     分类口径一律用**前缀** `like '数字人/%'` 或 `parts[0] == "数字人"`
 
 **2026-10-18 音频生成分类收官（+2361，八批连跑）+ collect_usage 防御性修复**：
 - 收集：NEWEST 全量收齐 **3807 个 ID**（127 页，224.8s，平台总量 3807 全覆盖），
@@ -1459,16 +1511,18 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
    （`pattern_index.json` 至今未建立，是 SKILL.md 要求的三索引之一。
    注意 2026-10-06 起 `comfyui_library/database/storage/` 下有一个同名
    `pattern_index.json`，那是数据库的派生查询索引，不是本条要的 Skill 层索引）
-6. **归纳知识接进检索**：`knowledge_consolidation` 的产出（`knowledge/patterns/_consolidated/`）
-   目前是独立目录，`retrieval._index_pattern_cards` 只扫 `patterns/*.md`，
-   不扫子目录 —— 所以归纳出的模式**检索不到**。需让 retriever 递归或显式索引该目录
+6. ~~**归纳知识接进检索**~~ **✅ 2026-10-19 完成**：`retrieval._index_pattern_cards`
+   改 `rglob` 递归 + 跳过 index.md，`_consolidated/` 4775 张归纳模式卡已可检索
+   （倒排索引唯一条目 2 → 10309，其中 workflow_pattern 4781）
 7. **knowledge_evolution 聚类缺陷回填**：它的 `PatternMiner.mine()` 仍是节点集合精确匹配，
    `knowledge_consolidation` 已改成 Jaccard 聚类但两边并存未打通。
    数据源不同（改动记录 vs 完整 workflow）所以不算重复，但算法应统一，否则长期发散
-8. **重跑归纳与图谱（样本已就位）**：样本已扩到 404 个 workflow（2026-10-06），
-   但 `knowledge_consolidation` 的现有模式卡仍是早期合成数据，
-   `knowledge_graph` 也未重建——需用全量样本重跑 consolidation 与 build_graph，
-   并处理同名不同 id 的重复上传样本（约 1/4）
+8. ~~**重跑归纳与图谱（样本已就位）**~~ **✅ 2026-10-19 完成**：36925 条真实经验全量
+   归纳（DB 流式加载 54.6s + 聚类上界剪枝 + 模式名去歧义）→ **4775 个模式**落盘
+   `_consolidated/`（旧的 5 张合成卡全量覆盖替换）并写回数据库；图谱重建后
+   **matches 边 0 → 17196**（52468 顶点 / 1246493 边，0 孤立 0 悬空）。
+   遗留观察：多数记录 workflow_type 是 "Unknown Workflow"（分类器词表未覆盖真实类型），
+   模式名辨识度低，后续可把 learning 记录的目录分类喂进类型判定
 9. **知识卡格式统一化**：`KnowledgeDistiller` 现在按 Markdown 标题切段，
    但 `knowledge/patterns/*.md` 的标题层级不统一（有的用 H3 分组、有的用加粗），
    蒸馏出的片段偶尔混入 ASCII 示意图残片（如 sd15-t2i-basic 的节点连线图）。
@@ -1492,14 +1546,11 @@ Phase 3-5（knowledge_writer / pattern_manager）尚未实装。
     `memory/learning_records.md`、`workflow_index.json` 旧格式是否并入 memory 子技能体系
 17. **`knowledge_graph` 接进检索与回答（2026-10-06 已完成主链路）**：
     `agent_core` 的 retrieve 阶段已查图并把跨条目事实追加进回答。
-    剩余：`retrieval._index_pattern_cards` 仍只扫 `patterns/*.md`
-    不扫 `_consolidated/`（同待办 6）；图谱事实目前只有
-    使用者/共现两类，问题边（problem_in）与多跳路径还没接进回答
-18. **`knowledge_graph` 的 matches 边目前为空**：`knowledge/patterns/_consolidated/`
-    里的 3 张模式卡成员是早期演示时的合成数据（`sd15_basic_0.json`、`sdxl_portrait_0.json` 等），
-    库里并不存在这些 workflow，所以真实图的 `matches` 边为 0。
-    `GraphBuilder` 会把这些成员记进 `unmatched_members` 并报匹配率（不静默丢弃，
-    也不猜着连边）。需先按待办 3/8 扩充真实样本再重跑 consolidation
+    剩余：图谱事实目前只有使用者/共现两类，问题边（problem_in）与
+    多跳路径还没接进回答（`_consolidated/` 索引问题已随待办 6 解决）
+18. ~~**`knowledge_graph` 的 matches 边目前为空**~~ **✅ 2026-10-19 完成**：
+    真实全量归纳后 4775 个模式成员都是库里真实 workflow，
+    重建图谱 matches 边 0 → **17196**（详见 9.2 当日条目与待办 8）
 19. **调度器与图谱的共现算法重复**：`learning_scheduler.PriorityCalculator` 的
     「未见过的节点类型」与 `knowledge_graph` 的 `co_used` 共现都在数节点对。
     数据源不同（前者扫待学文件、后者扫已学记录）可以并存，

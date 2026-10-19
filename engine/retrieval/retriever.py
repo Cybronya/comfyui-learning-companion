@@ -368,7 +368,12 @@ class KnowledgeRetriever:
         if not patterns_dir.exists():
             return
 
-        for card in sorted(patterns_dir.glob("*.md")):
+        for card in sorted(patterns_dir.rglob("*.md")):
+            # rglob 递归扫子目录：归纳产物在 patterns/_consolidated/ 下，
+            # 只扫顶层时它们检索不到（2026-10-19，原待办 6）。
+            # index.md 是目录索引不是知识卡，跳过。
+            if card.stem.lower() == "index":
+                continue
             try:
                 with open(card, "r", encoding="utf-8-sig") as f:
                     content = f.read()

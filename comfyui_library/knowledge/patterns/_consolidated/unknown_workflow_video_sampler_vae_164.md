@@ -1,0 +1,57 @@
+---
+name: unknown_workflow_video_sampler_vae_164
+type: Unknown Workflow
+frequency: 3
+level: moderate
+coverage: 0.929667
+common_nodes: [CR Prompt Text, CreateCFGScheduleFloatList, GetImageSizeAndCount, INTConstant, ImageFromBatch, JWInteger, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadWanVideoT5TextEncoder, RHHiddenNodes, RH_LLMAPI_Pro_Node, VHS_VideoCombine, WanVideoDecode, WanVideoImageToVideoEncode, WanVideoSampler, WanVideoTextEncode, WanVideoVAELoader, easy boolean, easy forLoopEnd, easy forLoopStart]
+problems: []
+missing: []
+members: [视频生成/图生视频/动态表情包_2010321814848806914.json, 视频生成/图生视频/2011337809822490625.json, 视频生成/图生视频/2017051301229629442.json]
+source: knowledge_consolidation
+---
+
+# unknown_workflow_video_sampler_vae_164
+
+> 由 `engine/knowledge_consolidation` 从 3 个 workflow 归纳得出（视频生成/图生视频/动态表情包_2010321814848806914.json、视频生成/图生视频/2011337809822490625.json、视频生成/图生视频/2017051301229629442.json）
+
+- **类型**：Unknown Workflow
+- **样本数**：3
+- **可信度**：中等可信
+- **平均知识覆盖**：93%
+
+## 共有节点
+
+全部 3 个 workflow 都包含：
+- `CR Prompt Text`
+- `CreateCFGScheduleFloatList`
+- `GetImageSizeAndCount`
+- `INTConstant`
+- `ImageFromBatch`
+- `JWInteger`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadWanVideoT5TextEncoder`
+- `RHHiddenNodes`
+- `RH_LLMAPI_Pro_Node`
+- `VHS_VideoCombine`
+- `WanVideoDecode`
+- `WanVideoImageToVideoEncode`
+- `WanVideoSampler`
+- `WanVideoTextEncode`
+- `WanVideoVAELoader`
+- `easy boolean`
+- `easy forLoopEnd`
+- `easy forLoopStart`
+
+## 典型参数
+
+无可统计的参数。
+
+## 常见问题
+
+参数体检未发现问题。
+
+## 建议与风险
+
+- 样本量不足且无参数可统计，暂无法归纳出可靠结论

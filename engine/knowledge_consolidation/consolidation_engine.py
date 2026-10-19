@@ -114,6 +114,11 @@ class ConsolidationEngine:
 
         # ① 聚类
         patterns = self.miner.mine(rows)
+        # 模式名去歧义：命名只取「类型 + 特征词组合」，真实库上同一
+        # 类型内不同聚类极易撞出同名（如多个 *_sampler_clip_checkpoint）。
+        # 不消歧的话落盘文件互相覆盖、grouped 键互相顶掉。
+        # 只在撞名时追加序号，不影响测试与小样本场景的既有名字。
+        patterns = self._unique_names(patterns)
         clustered = sum(p.frequency for p in patterns)
         knowledge.ungrouped = len(rows) - clustered
 
@@ -151,6 +156,25 @@ class ConsolidationEngine:
             store.save(knowledge)
 
         return knowledge
+
+    @staticmethod
+    def _unique_names(patterns: List[WorkflowPattern]) -> List[WorkflowPattern]:
+        """
+        撞名的模式追加序号（_2、_3…），保证名字唯一
+
+        mine() 返回按成员数降序，所以保留名字的是最大的那个模式。
+        用 used 集合探测，连「序号名恰好与另一个模式的本名相同」
+        这种极端情况也不会产出重名。
+        """
+        used = set()
+        for p in patterns:
+            if p.name in used:
+                i = 2
+                while f"{p.name}_{i}" in used:
+                    i += 1
+                p.name = f"{p.name}_{i}"
+            used.add(p.name)
+        return patterns
 
     def _deposit_patterns(self, patterns) -> None:
         """

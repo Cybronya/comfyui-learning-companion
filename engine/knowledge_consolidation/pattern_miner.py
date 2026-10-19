@@ -168,8 +168,16 @@ class PatternMiner:
 
             best = None
             best_score = 0.0
+            n = len(node_set)
 
             for cluster in clusters:
+                # 上界剪枝：Jaccard ≤ min(|A|,|B|)/max(|A|,|B|)，
+                # 上界都够不到阈值就没必要算交集。
+                # 只省比较、不改结果（2026-10-19，全量 3.6 万条归纳前加）。
+                m = len(cluster["node_set"])
+                if (n if n < m else m) / (n if n > m else m) \
+                        < self.similarity:
+                    continue
                 score = jaccard(node_set, cluster["node_set"])
                 if score > best_score:
                     best_score = score
