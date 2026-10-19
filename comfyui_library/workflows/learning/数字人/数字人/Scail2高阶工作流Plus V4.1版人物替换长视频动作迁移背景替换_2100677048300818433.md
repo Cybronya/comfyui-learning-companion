@@ -1,0 +1,195 @@
+---
+key: 数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json
+name: Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json
+hash: 8edb58199c5b5380
+coverage: 0.536765
+learned_at: 2026-10-19 00:19:14
+nodes: [PlaySound|pysssss, SetNode, SetNode, SetNode, WanAnimatePlus SetBlockSwap, WanAnimatePlus SetLoRAs, GetNode, GetNode, WanAnimatePlus Decode, GetNode, ImageResizeKJv2, GetNode, GetNode, SetNode, SetNode, GetNode, GetNode, GetNode, WanAnimatePlus ClipVisionEncode V2, GetNode, VHS_VideoCombine, SetNode, WanAnimatePlus ContextOptions, WanAnimatePlus BlockSwap, GetNode, GetNode, GetNode, WanAnimatePlus SamplerSettings, SetNode, GetNode, SetNode, ImageResizeKJv2, SetNode, GetNode, SetNode, GetNode, WanAnimatePlus SamplerFromSettings, PreviewImage, VHS_VideoCombine, VHS_VideoInfoLoaded, SetNode, GetNode, GetNode, GetNode, GetNode, GetNode, VHS_VideoCombine, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, GetNode, Seed (rgthree), PreviewImage, SAM3_VideoTrack, SAM3_VideoTrack, SetNode, GetNode, LoadImage, PreviewImage, SetNode, VHS_VideoCombine, Fast Groups Bypasser (rgthree), LoadImage, SetNode, FastGroupsBypassSwitch, GetNode, GetNode, Image Blank, RepeatImageBatch, WanAnimatePlus VAELoader, CLIPVisionLoader, CheckpointLoaderSimple, CLIPTextEncode, RepeatImageBatch, SAM3_TrackToMask, Image Blank, ImageCompositeMasked, SetNode, VHS_LoadVideo, ImageResizeKJv2, SetNode, SetNode, ImageCompositeMasked, SAM3_TrackToMask, GetNode, WanVideoTextEncodeCached, GetNode, INTConstant, INTConstant, Int, Int, SetNode, SCAIL2ColoredMaskV2, WanAnimatePlus SCAIL_2 Embeds, SetNode, WanAnimatePlus LoraSelect, WanAnimatePlus LoraSelectMulti, Fast Groups Bypasser (rgthree), WanAnimatePlus SCAIL_2 TwoPhase Settings, WanAnimatePlus ModelLoader, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note, SaveImage]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "checkpoint": "sam3.1_multiplex_fp16.safetensors", "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json
+
+> 来源文件 `comfyui_library/workflows/数字人/数字人/Scail2高阶工作流Plus V4.1版人物替换长视频动作迁移背景替换_2100677048300818433.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（136 个）：
+- `PlaySound|pysssss`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `WanAnimatePlus SetBlockSwap`
+- `WanAnimatePlus SetLoRAs`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus Decode`
+- `GetNode`
+- `ImageResizeKJv2`
+- `GetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus ClipVisionEncode V2`
+- `GetNode`
+- `VHS_VideoCombine`
+- `SetNode`
+- `WanAnimatePlus ContextOptions`
+- `WanAnimatePlus BlockSwap`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `WanAnimatePlus SamplerSettings` ★核心
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `ImageResizeKJv2`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `GetNode`
+- `WanAnimatePlus SamplerFromSettings` ★核心
+- `PreviewImage`
+- `VHS_VideoCombine`
+- `VHS_VideoInfoLoaded`
+- `SetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `VHS_VideoCombine`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Seed (rgthree)`
+- `PreviewImage`
+- `SAM3_VideoTrack`
+- `SAM3_VideoTrack`
+- `SetNode`
+- `GetNode`
+- `LoadImage`
+- `PreviewImage`
+- `SetNode`
+- `VHS_VideoCombine`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `SetNode`
+- `FastGroupsBypassSwitch`
+- `GetNode`
+- `GetNode`
+- `Image Blank`
+- `RepeatImageBatch`
+- `WanAnimatePlus VAELoader`
+- `CLIPVisionLoader`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `RepeatImageBatch`
+- `SAM3_TrackToMask`
+- `Image Blank`
+- `ImageCompositeMasked`
+- `SetNode`
+- `VHS_LoadVideo`
+- `ImageResizeKJv2`
+- `SetNode`
+- `SetNode`
+- `ImageCompositeMasked`
+- `SAM3_TrackToMask`
+- `GetNode`
+- `WanVideoTextEncodeCached`
+- `GetNode`
+- `INTConstant`
+- `INTConstant`
+- `Int`
+- `Int`
+- `SetNode`
+- `SCAIL2ColoredMaskV2`
+- `WanAnimatePlus SCAIL_2 Embeds`
+- `SetNode`
+- `WanAnimatePlus LoraSelect`
+- `WanAnimatePlus LoraSelectMulti`
+- `Fast Groups Bypasser (rgthree)`
+- `WanAnimatePlus SCAIL_2 TwoPhase Settings`
+- `WanAnimatePlus ModelLoader`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `Note`
+- `SaveImage`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `checkpoint` = `sam3.1_multiplex_fp16.safetensors`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **54%**（73/136）
+
+**有卡**：`PlaySound|pysssss`、`WanAnimatePlus SetBlockSwap`、`WanAnimatePlus SetLoRAs`、`WanAnimatePlus Decode`、`ImageResizeKJv2`、`WanAnimatePlus ClipVisionEncode V2`、`VHS_VideoCombine`、`WanAnimatePlus ContextOptions`、`WanAnimatePlus BlockSwap`、`WanAnimatePlus SamplerSettings`、`WanAnimatePlus SamplerFromSettings`、`VHS_VideoInfoLoaded`、`Seed (rgthree)`、`SAM3_VideoTrack`、`LoadImage`、`FastGroupsBypassSwitch`、`Image Blank`、`RepeatImageBatch`、`WanAnimatePlus VAELoader`、`CLIPVisionLoader`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`SAM3_TrackToMask`、`ImageCompositeMasked`、`VHS_LoadVideo`、`WanVideoTextEncodeCached`、`INTConstant`、`Int`、`SCAIL2ColoredMaskV2`、`WanAnimatePlus SCAIL_2 Embeds`、`WanAnimatePlus LoraSelect`、`WanAnimatePlus LoraSelectMulti`、`WanAnimatePlus SCAIL_2 TwoPhase Settings`、`WanAnimatePlus ModelLoader`、`UNETLoader`、`LoraLoaderModelOnly`、`KSampler`、`EmptyLatentImage`、`solarL_SaveImagesToZip`、`VAEDecode`、`CLIPLoader`、`VAELoader`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,185 @@
+---
+key: 数字人/数字人/Qwen Image 2.1文生图加图片编辑实用版工作流，数字人图生图处理方案_2107983478271856641.json
+name: Qwen Image 2.1文生图加图片编辑实用版工作流，数字人图生图处理方案_2107983478271856641
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/数字人/数字人/Qwen Image 2.1文生图加图片编辑实用版工作流，数字人图生图处理方案_2107983478271856641.json
+hash: 2471042be2bf722d
+coverage: 0.869919
+learned_at: 2026-10-19 00:41:04
+nodes: [VAELoader, KSampler, CLIPLoader, VAELoader, KSampler, ConditioningZeroOut, EmptySD3LatentImage, VAELoader, CLIPLoader, EmptyLatentImage, VAEDecode, VAEDecode, VAEDecode, KSampler, UNETLoader, LoraLoaderModelOnly, CLIPTextEncode, ConditioningZeroOut, AddLabel, SaveImage, Seed (rgthree), ModelSamplingAuraFlow, UNETLoader, TextEncodeQwenImage21, AddLabel, BatchImagesNode, CLIPTextEncode, ImagesConcanateToGrid, AddLabel, ResolutionSelector, SaveImage, SaveImage, UNETLoader, CLIPLoader, easy promptList, TextGenerateLTX2Prompt, AILab_QwenVL, TextEncodeQwenImage21, EmptyLatentImage, KSampler, VAEDecode, PrimitiveStringMultiline, SaveImage, LoadImage, PreviewAny, CLIPLoader, UNETLoader, KSampler, QwenImage21Cache, CLIPLoader, TextEncodeQwenImage21, VAELoader, CLIPLoader, TextGenerateLTX2Prompt, GetImageSize, EmptyLatentImage, VAEDecode, SaveImage, Image Comparer (rgthree), UNETLoader, CLIPLoader, VAELoader, ResolutionSelector, CLIPLoader, SaveImage, PrimitiveStringMultiline, easy anythingIndexSwitch, PreviewAny, ComfySwitchNode, PreviewAny, LoadImage, LoadImage, UNETLoader, CLIPLoader, VAELoader, TextEncodeQwenImage21, GetImageSize, EmptyLatentImage, QwenImage21Cache, KSampler, VAEDecode, SaveImage, Image Comparer (rgthree), LoadImage, PrimitiveStringMultiline, BatchImagesNode, PreviewAny, ComfySwitchNode, TextGenerateLTX2Prompt, LoadImage, LoadImage, LoadImage, PrimitiveStringMultiline, ResolutionSelector, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, EmptyLatentImage, JjkText, CLIPTextEncode, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, CLIPLoader, VAELoader, Note]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 数字人/数字人/Qwen Image 2.1文生图加图片编辑实用版工作流，数字人图生图处理方案_2107983478271856641.json
+
+> 来源文件 `comfyui_library/workflows/数字人/数字人/Qwen Image 2.1文生图加图片编辑实用版工作流，数字人图生图处理方案_2107983478271856641.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（123 个）：
+- `VAELoader`
+- `KSampler` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `KSampler` ★核心
+- `ConditioningZeroOut`
+- `EmptySD3LatentImage`
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `ConditioningZeroOut`
+- `AddLabel`
+- `SaveImage`
+- `Seed (rgthree)`
+- `ModelSamplingAuraFlow`
+- `UNETLoader` ★核心
+- `TextEncodeQwenImage21`
+- `AddLabel`
+- `BatchImagesNode`
+- `CLIPTextEncode` ★核心
+- `ImagesConcanateToGrid`
+- `AddLabel`
+- `ResolutionSelector`
+- `SaveImage`
+- `SaveImage`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `easy promptList`
+- `TextGenerateLTX2Prompt`
+- `AILab_QwenVL`
+- `TextEncodeQwenImage21`
+- `EmptyLatentImage` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PrimitiveStringMultiline`
+- `SaveImage`
+- `LoadImage`
+- `PreviewAny`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `QwenImage21Cache`
+- `CLIPLoader`
+- `TextEncodeQwenImage21`
+- `VAELoader`
+- `CLIPLoader`
+- `TextGenerateLTX2Prompt`
+- `GetImageSize`
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ResolutionSelector`
+- `CLIPLoader`
+- `SaveImage`
+- `PrimitiveStringMultiline`
+- `easy anythingIndexSwitch`
+- `PreviewAny`
+- `ComfySwitchNode`
+- `PreviewAny`
+- `LoadImage`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `TextEncodeQwenImage21`
+- `GetImageSize`
+- `EmptyLatentImage` ★核心
+- `QwenImage21Cache`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImage`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `BatchImagesNode`
+- `PreviewAny`
+- `ComfySwitchNode`
+- `TextGenerateLTX2Prompt`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `PrimitiveStringMultiline`
+- `ResolutionSelector`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `Note`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **87%**（107/123）
+
+**有卡**：`VAELoader`、`KSampler`、`CLIPLoader`、`ConditioningZeroOut`、`EmptySD3LatentImage`、`EmptyLatentImage`、`VAEDecode`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPTextEncode`、`AddLabel`、`SaveImage`、`Seed (rgthree)`、`ModelSamplingAuraFlow`、`TextEncodeQwenImage21`、`BatchImagesNode`、`ImagesConcanateToGrid`、`ResolutionSelector`、`easy promptList`、`TextGenerateLTX2Prompt`、`AILab_QwenVL`、`LoadImage`、`QwenImage21Cache`、`GetImageSize`、`easy anythingIndexSwitch`、`solarL_SaveImagesToZip`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

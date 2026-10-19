@@ -1,0 +1,86 @@
+---
+key: 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json
+name: QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json
+hash: 7844f366906355b4
+coverage: 0.871795
+learned_at: 2026-10-19 00:41:05
+nodes: [RandomNoise, UNETLoader, CLIPLoader, VAELoader, CLIPLoader, VAELoader, ReferenceLatent, ReferenceLatent, KSamplerSelect, CFGGuider, VAEDecode, ConditioningZeroOut, VAEEncode, VAEDecode, SamplerCustomAdvanced, EmptyLatentImage, UNETLoader, CLIPTextEncode, KSampler, CLIPTextEncode, ColorMatch, ImageScaleToTotalPixels, GetImageSize, EmptyFlux2LatentImage, Flux2Scheduler, LoraLoaderModelOnly, ImageSharpen, SaveImage, ImageSharpen, LoadImage, CLIPTextEncode, ResolutionSelector, QwenImagePromptOptimizer, PreviewAny, PreviewImage, PreviewImage, Image Comparer (rgthree), Image Comparer (rgthree), QwenImagePromptStyler]
+patterns: [text_to_image, image_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 2, "denoise": 1, "height": 2048, "sampler_name": "euler", "scheduler": "simple", "seed": 144183708390247, "steps": 30, "width": 2048}
+---
+
+# 数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json
+
+> 来源文件 `comfyui_library/workflows/数字人/数字人/QwenImage2.1+Klein去AI感洗图真实皮肤_2108431762991964161.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（39 个）：
+- `RandomNoise`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPLoader`
+- `VAELoader`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `KSamplerSelect` ★核心
+- `CFGGuider`
+- `VAEDecode` ★核心
+- `ConditioningZeroOut`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `EmptyLatentImage` ★核心
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `ColorMatch`
+- `ImageScaleToTotalPixels`
+- `GetImageSize`
+- `EmptyFlux2LatentImage`
+- `Flux2Scheduler`
+- `LoraLoaderModelOnly` ★核心
+- `ImageSharpen`
+- `SaveImage`
+- `ImageSharpen`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `ResolutionSelector`
+- `QwenImagePromptOptimizer`
+- `PreviewAny`
+- `PreviewImage`
+- `PreviewImage`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `QwenImagePromptStyler`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `2048`
+- `height` = `2048`
+- `batch_size` = `1`
+- `seed` = `144183708390247`
+- `steps` = `30`
+- `cfg` = `2`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **87%**（34/39）
+
+**有卡**：`RandomNoise`、`UNETLoader`、`CLIPLoader`、`VAELoader`、`ReferenceLatent`、`KSamplerSelect`、`CFGGuider`、`VAEDecode`、`ConditioningZeroOut`、`VAEEncode`、`SamplerCustomAdvanced`、`EmptyLatentImage`、`CLIPTextEncode`、`KSampler`、`ColorMatch`、`ImageScaleToTotalPixels`、`GetImageSize`、`EmptyFlux2LatentImage`、`Flux2Scheduler`、`LoraLoaderModelOnly`、`ImageSharpen`、`SaveImage`、`LoadImage`、`ResolutionSelector`、`QwenImagePromptOptimizer`、`QwenImagePromptStyler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
