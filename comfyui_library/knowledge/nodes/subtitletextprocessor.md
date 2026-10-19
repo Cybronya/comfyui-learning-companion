@@ -1,0 +1,46 @@
+# SubtitleTextProcessor
+
+## 节点类型
+
+`SubtitleTextProcessor`
+
+## 分类
+
+Utility
+
+## 作用
+
+文本工具节点（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 1 个 workflow 中。
+
+## 输入
+
+- `字幕数据:SUBTITLE_DATA`（1 次）
+- `文本输入:STRING`（1 次）
+- `去除标点符号:BOOLEAN`（1 次）
+- `去除特殊符号:BOOLEAN`（1 次）
+- `去除表情符号:BOOLEAN`（1 次）
+- `去除数字:BOOLEAN`（1 次）
+- `去除英文:BOOLEAN`（1 次）
+- `去除圆括号内容:BOOLEAN`（1 次）
+- `去除方括号内容:BOOLEAN`（1 次）
+- `去除花括号内容:BOOLEAN`（1 次）
+
+## 输出
+
+- `处理后字幕:SUBTITLE_DATA`（1 次）
+- `处理后文本:STRING`（1 次）
+- `处理统计:STRING`（1 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `["", false, false, false, false, false, false, false, false, false, false, false, false, true, true, false, true, false,`（1 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)

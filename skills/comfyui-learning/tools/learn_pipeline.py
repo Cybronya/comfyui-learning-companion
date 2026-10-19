@@ -17,6 +17,7 @@
 """
 
 import json
+import os
 import re
 import subprocess
 import sys
@@ -49,18 +50,21 @@ def sh(cmd, **kw):
 
 
 def snapshot_library():
-    """库内 workflow 文件的 相对路径 → 内容指纹 快照"""
-    import hashlib
-    snap = {}
-    for p in WORKFLOWS.rglob("*.json"):
-        # 只跳真正的 ComfyUI 伴生文件（整名匹配）。曾写成 startswith("_")，
-        # 把 _ 开头的真实工作流漏在快照外 —— 它们会被判定为「未下载」而
-        # 反复重下（2026-10-15 修）
-        if "learning" in p.parts or p.name.lower() in SIDECAR_NAMES:
+    """库内 workflow 文件的相对路径集合。
+
+    新增检测只消费 **key 差集**，哈希值从来没被用过 —— 旧实现把全库
+    3.6 万个 json 逐个 read_bytes 算 sha256、每批跑两遍，纯浪费 6-8 分钟
+    （2026-10-19 提速：只枚举路径，秒级）。"""
+    keys = set()
+    for dirpath, dirnames, filenames in os.walk(WORKFLOWS):
+        rel = Path(dirpath).relative_to(WORKFLOWS)
+        if rel.parts and rel.parts[0] == "learning":
+            dirnames[:] = []
             continue
-        digest = hashlib.sha256(p.read_bytes()).hexdigest()[:16]
-        snap[str(p.relative_to(WORKFLOWS))] = digest
-    return snap
+        for f in filenames:
+            if f.lower().endswith(".json") and f.lower() not in SIDECAR_NAMES:
+                keys.add(str(rel / f))
+    return keys
 
 
 def missing_ids(tag_path, ids_txt, out_dir, limit):
@@ -97,6 +101,7 @@ def main():
     sort = "NEWEST"
     skip_download = False
     skip_collect = False
+    skip_graph = False
     i = 0
     while i < len(args):
         if args[i] == "--tag" and i + 1 < len(args):
@@ -109,6 +114,10 @@ def main():
             skip_download = True; i += 1
         elif args[i] == "--skip-collect":
             skip_collect = True; i += 1
+        elif args[i] == "--skip-graph":
+            # 多批连跑时中间批跳过图谱重建（每批约 12 分钟），
+            # 由最后一批或单独的 build_graph 一次性刷新
+            skip_graph = True; i += 1
         else:
             i += 1
 
@@ -192,10 +201,13 @@ def main():
         print(f"  库整理: {vac['before_mb']}MB → {vac['after_mb']}MB"
               f"（回收 {vac['freed_mb']}MB 空洞）")
 
-    print("[6/6] 重建知识图谱")
-    from engine.knowledge_graph import build_graph
-    stats = build_graph(verbose=False).graph.stats()
-    print(f"  图谱 {stats['node_total']} 顶点 / {stats['edge_total']} 边")
+    if skip_graph:
+        print("[6/6] 跳过图谱重建（--skip-graph）")
+    else:
+        print("[6/6] 重建知识图谱")
+        from engine.knowledge_graph import build_graph
+        stats = build_graph(verbose=False).graph.stats()
+        print(f"  图谱 {stats['node_total']} 顶点 / {stats['edge_total']} 边")
 
     # ---- 报告 ----
     from engine.workflow_learning import LearningStore
