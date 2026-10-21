@@ -1,0 +1,42 @@
+# SAM3Propagate
+
+## 节点类型
+
+`SAM3Propagate`
+
+## 分类
+
+Other
+
+## 作用
+
+作用未知，需人工补充（按节点名关键词推断，TODO(待验证)）
+
+## 实测使用
+
+出现在本库 3 个 workflow 中。
+
+## 输入
+
+- `sam3_model_config:SAM3_MODEL_CONFIG`（3 次）
+- `video_state:SAM3_VIDEO_STATE`（3 次）
+- `start_frame:INT`（3 次）
+- `end_frame:INT`（3 次）
+- `direction:COMBO`（3 次）
+- `video_model:SAM3_VIDEO_MODEL`（3 次）
+
+## 输出
+
+- `masks:SAM3_VIDEO_MASKS`（3 次）
+- `scores:SAM3_VIDEO_SCORES`（3 次）
+- `video_state:SAM3_VIDEO_STATE`（3 次）
+
+## 参数（widgets_values 按位置，参数名未知）
+
+常见取值：
+
+- `[0, -1, false]`（3 次）
+
+## 可信度
+
+Generated（自动起草：输入/输出/取值分布为 workflow 实测；作用为名称推断）TODO(待验证)
