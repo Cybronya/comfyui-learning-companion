@@ -1,0 +1,76 @@
+---
+key: 图片生成/文生图/QwenEditRemix-AIO2.0-文生图_2042170855492423681.json
+name: QwenEditRemix-AIO2.0-文生图_2042170855492423681
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/QwenEditRemix-AIO2.0-文生图_2042170855492423681.json
+hash: 892e7b21b3e760ab
+coverage: 0.941176
+learned_at: 2026-10-21 02:54:47
+nodes: [llama_cpp_model_loader, llama_cpp_parameters, llama_cpp_instruct_adv, CR Text, CustomAddLabel, PurgeVRAM_UTK, CheckpointLoaderSimple, CLIPTextEncode, easy showAnything, ConditioningZeroOut, KSampler, VAEDecode, SaveImage, SaveImage, EmptyLatentImage, Int, Int]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 1, "checkpoint": "Qwen-Image-Edit-Remix-AIO-v2.0.safetensors", "denoise": 1, "height": 1920, "sampler_name": "euler_ancestral", "scheduler": "beta", "seed": 635105918165865, "steps": 4, "width": 1080}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/QwenEditRemix-AIO2.0-文生图_2042170855492423681.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/QwenEditRemix-AIO2.0-文生图_2042170855492423681.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（17 个）：
+- `llama_cpp_model_loader`
+- `llama_cpp_parameters`
+- `llama_cpp_instruct_adv`
+- `CR Text`
+- `CustomAddLabel`
+- `PurgeVRAM_UTK`
+- `CheckpointLoaderSimple` ★核心
+- `CLIPTextEncode` ★核心
+- `easy showAnything`
+- `ConditioningZeroOut`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImage`
+- `SaveImage`
+- `EmptyLatentImage` ★核心
+- `Int`
+- `Int`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `checkpoint` = `Qwen-Image-Edit-Remix-AIO-v2.0.safetensors`
+- `seed` = `635105918165865`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `euler_ancestral`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `1080`
+- `height` = `1920`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **94%**（16/17）
+
+**有卡**：`llama_cpp_model_loader`、`llama_cpp_parameters`、`llama_cpp_instruct_adv`、`CR Text`、`CustomAddLabel`、`PurgeVRAM_UTK`、`CheckpointLoaderSimple`、`CLIPTextEncode`、`ConditioningZeroOut`、`KSampler`、`VAEDecode`、`SaveImage`、`EmptyLatentImage`、`Int`
+
+**用到的条目**：KSampler、VAEDecode、CheckpointLoaderSimple、CLIPTextEncode、ConditioningZeroOut、EmptyLatentImage、SaveImage、Int
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

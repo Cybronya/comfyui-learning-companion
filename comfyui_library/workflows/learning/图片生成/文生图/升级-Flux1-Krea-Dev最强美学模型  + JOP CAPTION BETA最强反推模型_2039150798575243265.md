@@ -1,0 +1,83 @@
+---
+key: 图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_2039150798575243265.json
+name: 升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_2039150798575243265
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_2039150798575243265.json
+hash: 92d5aeaacfc985e9
+coverage: 0.820513
+learned_at: 2026-10-21 02:59:22
+nodes: [KSampler, LayerUtility: LoadJoyCaptionBeta1Model, LayerUtility: JoyCaptionBeta1, FluxGuidance, ConditioningZeroOut, SDXL Empty Latent Image (rgthree), CLIPTextEncode, CR Text, VAEDecodeTiled, ImageScaleBy, ImageUpscaleWithModel, TTP_Image_Tile_Batch, TTP_Tile_image_size, VAEEncode, ImpactImageBatchToImageList, Reroute, ImageListToImageBatch, TTP_Image_Assy, VAEDecode, DualCLIPLoader, VAELoader, Reroute, CLIPTextEncode, CLIPTextEncode, KSampler, Reroute, Reroute, UpscaleModelLoader, LoadImage, UNETLoader, LoraLoaderModelOnly, Note, ShowText|pysssss, Note, SaveImage, CR Text Concatenate, SaveImage, LoadImage, LoadImage]
+patterns: [image_to_image]
+missing: []
+parameters: {"cfg": 1, "denoise": 0.9, "sampler_name": "euler", "scheduler": "exponential", "seed": 244845146921875, "steps": 20}
+---
+
+# 图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_2039150798575243265.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/升级-Flux1-Krea-Dev最强美学模型  + JOP CAPTION BETA最强反推模型_2039150798575243265.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（39 个）：
+- `KSampler` ★核心
+- `LayerUtility: LoadJoyCaptionBeta1Model`
+- `LayerUtility: JoyCaptionBeta1`
+- `FluxGuidance`
+- `ConditioningZeroOut`
+- `SDXL Empty Latent Image (rgthree)`
+- `CLIPTextEncode` ★核心
+- `CR Text`
+- `VAEDecodeTiled` ★核心
+- `ImageScaleBy`
+- `ImageUpscaleWithModel`
+- `TTP_Image_Tile_Batch`
+- `TTP_Tile_image_size`
+- `VAEEncode` ★核心
+- `ImpactImageBatchToImageList`
+- `Reroute`
+- `ImageListToImageBatch`
+- `TTP_Image_Assy`
+- `VAEDecode` ★核心
+- `DualCLIPLoader`
+- `VAELoader`
+- `Reroute`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `Reroute`
+- `Reroute`
+- `UpscaleModelLoader`
+- `LoadImage`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `ShowText|pysssss`
+- `Note`
+- `SaveImage`
+- `CR Text Concatenate`
+- `SaveImage`
+- `LoadImage`
+- `LoadImage`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `244845146921875`
+- `steps` = `20`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `exponential`
+- `denoise` = `0.9`
+
+## 知识
+
+覆盖率 **82%**（32/39）
+
+**有卡**：`KSampler`、`LayerUtility: LoadJoyCaptionBeta1Model`、`LayerUtility: JoyCaptionBeta1`、`FluxGuidance`、`ConditioningZeroOut`、`SDXL Empty Latent Image (rgthree)`、`CLIPTextEncode`、`CR Text`、`VAEDecodeTiled`、`ImageScaleBy`、`ImageUpscaleWithModel`、`TTP_Image_Tile_Batch`、`TTP_Tile_image_size`、`VAEEncode`、`ImpactImageBatchToImageList`、`ImageListToImageBatch`、`TTP_Image_Assy`、`VAEDecode`、`DualCLIPLoader`、`VAELoader`、`UpscaleModelLoader`、`LoadImage`、`UNETLoader`、`LoraLoaderModelOnly`、`SaveImage`、`CR Text Concatenate`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、ConditioningZeroOut、LoadImage

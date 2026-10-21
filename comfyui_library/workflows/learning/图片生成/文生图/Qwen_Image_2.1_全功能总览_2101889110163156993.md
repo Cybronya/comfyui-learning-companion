@@ -1,0 +1,438 @@
+---
+key: 图片生成/文生图/Qwen_Image_2.1_全功能总览_2101889110163156993.json
+name: Qwen_Image_2.1_全功能总览_2101889110163156993
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1_全功能总览_2101889110163156993.json
+hash: f72039fada2b3c70
+coverage: 0.992366
+learned_at: 2026-10-20 01:51:26
+nodes: [MarkdownNote, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, ImageToMask, MaskToImage, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, ImageToMask, MaskToImage, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, JoinImageWithAlpha, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, ImageToMask, MaskToImage, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, MarkdownNote, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, ThresholdMask, MaskToImage, SaveImageAdvanced, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, SplitImageWithAlpha, ImageCompositeMasked, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, LoadImage, ThresholdMask, MaskToImage, SaveImageAdvanced, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, SplitImageWithAlpha, ImageCompositeMasked, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, ImagePadForOutpaint, MaskToImage, SaveImageAdvanced, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, SplitImageWithAlpha, ImageCompositeMasked, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, TextEncodeQwenImage21, KSampler, EmptyLatentImage, VAEDecode, SaveImageAdvanced, UNETLoader, CLIPLoader, VAELoader, QwenImage21Cache, LoadImage, TextEncodeQwenImage21, KSampler, VAEDecode, SaveImageAdvanced, QwenImage21Cache, KSampler, VAEDecode, SaveImageAdvanced, QwenImage21Cache, KSampler, VAEDecode, SaveImageAdvanced, SaveImageAdvanced, UNETLoader, SaveImageAdvanced, LoadImage, Fast Groups Bypasser (rgthree), VAEDecode, SaveImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 20260921, "steps": 25, "width": 1024}
+---
+
+# 图片生成/文生图/Qwen_Image_2.1_全功能总览_2101889110163156993.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen_Image_2.1_全功能总览_2101889110163156993.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（393 个）：
+- `MarkdownNote`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `ImageToMask`
+- `MaskToImage`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `ImageToMask`
+- `MaskToImage`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `JoinImageWithAlpha`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `ImageToMask`
+- `MaskToImage`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `MarkdownNote`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `ThresholdMask`
+- `MaskToImage`
+- `SaveImageAdvanced`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `SplitImageWithAlpha`
+- `ImageCompositeMasked`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `LoadImage`
+- `ThresholdMask`
+- `MaskToImage`
+- `SaveImageAdvanced`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `SplitImageWithAlpha`
+- `ImageCompositeMasked`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `ImagePadForOutpaint`
+- `MaskToImage`
+- `SaveImageAdvanced`
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `SplitImageWithAlpha`
+- `ImageCompositeMasked`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `EmptyLatentImage` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `QwenImage21Cache`
+- `LoadImage`
+- `TextEncodeQwenImage21`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `QwenImage21Cache`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `QwenImage21Cache`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `SaveImageAdvanced`
+- `SaveImageAdvanced`
+- `UNETLoader` ★核心
+- `SaveImageAdvanced`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `VAEDecode` ★核心
+- `SaveImage`
+
+## 关键参数
+
+- `seed` = `20260921`
+- `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **99%**（390/393）
+
+**有卡**：`UNETLoader`、`CLIPLoader`、`VAELoader`、`QwenImage21Cache`、`TextEncodeQwenImage21`、`KSampler`、`EmptyLatentImage`、`VAEDecode`、`SaveImageAdvanced`、`ImageToMask`、`MaskToImage`、`LoadImage`、`JoinImageWithAlpha`、`ThresholdMask`、`SplitImageWithAlpha`、`ImageCompositeMasked`、`ImagePadForOutpaint`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、TextEncodeQwenImage21、VAELoader、CLIPLoader、EmptyLatentImage、LoadImage、QwenImage21Cache

@@ -1,0 +1,109 @@
+---
+key: 图片生成/文生图/FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746.json
+name: FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746
+type: Image To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746.json
+hash: 440ab0aa0cb92a6a
+coverage: 0.98
+learned_at: 2026-10-19 22:29:38
+nodes: [CLIPLoader, VAELoader, ImageScaleToTotalPixels, EmptyFlux2LatentImage, easy imageSize, VAEEncode, CLIPTextEncode, ReferenceLatent, ReferenceLatent, VAEDecode, SaveImage, CLIPLoader, VAELoader, UNETLoader, UNETLoader, CLIPLoader, VAELoader, ImageScaleToTotalPixels, ImageScaleToTotalPixels, VAEEncode, VAEEncode, ReferenceLatent, ReferenceLatent, ReferenceLatent, CLIPTextEncode, ImageScaleToTotalPixels, VAEEncode, EmptyFlux2LatentImage, easy imageSize, ReferenceLatent, VAEDecode, SaveImage, ReferenceLatent, ReferenceLatent, UNETLoader, CLIPTextEncode, LoadImage, LoadImage, LoadImage, LoadImage, CLIPTextEncode, KSampler, KSampler, EmptyFlux2LatentImage, CLIPTextEncode, CLIPTextEncode, KSampler, SaveImage, VAEDecode, Fast Groups Bypasser (rgthree)]
+patterns: [image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "euler", "scheduler": "simple", "seed": 825223897742157, "steps": 6}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/FLUX.2 Klein 超快速 文生图_图生图_多图编辑_2020865739288223746.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（50 个）：
+- `CLIPLoader`
+- `VAELoader`
+- `ImageScaleToTotalPixels`
+- `EmptyFlux2LatentImage`
+- `easy imageSize`
+- `VAEEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `CLIPLoader`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ImageScaleToTotalPixels`
+- `ImageScaleToTotalPixels`
+- `VAEEncode` ★核心
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `CLIPTextEncode` ★核心
+- `ImageScaleToTotalPixels`
+- `VAEEncode` ★核心
+- `EmptyFlux2LatentImage`
+- `easy imageSize`
+- `ReferenceLatent`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `UNETLoader` ★核心
+- `CLIPTextEncode` ★核心
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `EmptyFlux2LatentImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `SaveImage`
+- `VAEDecode` ★核心
+- `Fast Groups Bypasser (rgthree)`
+
+**识别到的模式**：image_to_image
+
+## 关键参数
+
+- `seed` = `825223897742157`
+- `steps` = `6`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **98%**（49/50）
+
+**有卡**：`CLIPLoader`、`VAELoader`、`ImageScaleToTotalPixels`、`EmptyFlux2LatentImage`、`easy imageSize`、`VAEEncode`、`CLIPTextEncode`、`ReferenceLatent`、`VAEDecode`、`SaveImage`、`UNETLoader`、`LoadImage`、`KSampler`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、UNETLoader、CLIPTextEncode、CLIPLoader、LoadImage、EmptyFlux2LatentImage
+
+## 参数体检
+
+发现 3 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

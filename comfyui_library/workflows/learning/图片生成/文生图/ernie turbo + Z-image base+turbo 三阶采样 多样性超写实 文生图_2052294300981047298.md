@@ -1,0 +1,97 @@
+---
+key: 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052294300981047298.json
+name: ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052294300981047298
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052294300981047298.json
+hash: 4205591082a27f32
+coverage: 0.803922
+learned_at: 2026-10-21 02:56:43
+nodes: [VAELoader, CLIPTextEncode, UNETLoader, ModelSamplingAuraFlow, VAEDecode, Note, Int, KSamplerAdvanced, CLIPTextEncode, CLIPLoader, CLIPTextEncode, InversionDemoLazyIndexSwitch, KSamplerAdvanced, Text, Int, CR Text, EmptyLatentImage, RH_LLMAPI_Pro_Node, RH_LLMAPI_NODE, CLIPLoader, VAELoader, CLIPTextEncode, CLIPTextEncode, easy showAnything, PreviewImage, ModelSamplingAuraFlow, VAEDecode, PreviewImage, VAEEncode, VAEDecode, KSamplerAdvanced, LoraLoaderModelOnly, Note, Note, Note, Note, Int, Int, Int, Note, InversionDemoLazyIndexSwitch, Note, Int, CheckpointLoaderSimple, UNETLoader, LoraLoaderModelOnly, VAELoader, SaveImage, Int, CheckpointLoaderSimple, CR Text]
+patterns: []
+missing: []
+parameters: {"batch_size": 6, "cfg": 8, "checkpoint": "redcraft_ernieRedmix.safetensors", "denoise": "simple", "height": 1536, "sampler_name": 1, "scheduler": "euler", "seed": "enable", "steps": "randomize", "width": 960}
+---
+
+# 图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052294300981047298.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/ernie turbo + Z-image base+turbo 三阶采样 多样性超写实 文生图_2052294300981047298.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（51 个）：
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `UNETLoader` ★核心
+- `ModelSamplingAuraFlow`
+- `VAEDecode` ★核心
+- `Note`
+- `Int`
+- `KSamplerAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `InversionDemoLazyIndexSwitch`
+- `KSamplerAdvanced` ★核心
+- `Text`
+- `Int`
+- `CR Text`
+- `EmptyLatentImage` ★核心
+- `RH_LLMAPI_Pro_Node`
+- `RH_LLMAPI_NODE`
+- `CLIPLoader`
+- `VAELoader`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `easy showAnything`
+- `PreviewImage`
+- `ModelSamplingAuraFlow`
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `VAEEncode` ★核心
+- `VAEDecode` ★核心
+- `KSamplerAdvanced` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+- `Note`
+- `Note`
+- `Note`
+- `Int`
+- `Int`
+- `Int`
+- `Note`
+- `InversionDemoLazyIndexSwitch`
+- `Note`
+- `Int`
+- `CheckpointLoaderSimple` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `VAELoader`
+- `SaveImage`
+- `Int`
+- `CheckpointLoaderSimple` ★核心
+- `CR Text`
+
+## 关键参数
+
+- `seed` = `enable`
+- `steps` = `randomize`
+- `cfg` = `8`
+- `sampler_name` = `1`
+- `scheduler` = `euler`
+- `denoise` = `simple`
+- `width` = `960`
+- `height` = `1536`
+- `batch_size` = `6`
+- `checkpoint` = `redcraft_ernieRedmix.safetensors`
+
+## 知识
+
+覆盖率 **80%**（41/51）
+
+**有卡**：`VAELoader`、`CLIPTextEncode`、`UNETLoader`、`ModelSamplingAuraFlow`、`VAEDecode`、`Int`、`KSamplerAdvanced`、`CLIPLoader`、`InversionDemoLazyIndexSwitch`、`Text`、`CR Text`、`EmptyLatentImage`、`RH_LLMAPI_Pro_Node`、`RH_LLMAPI_NODE`、`VAEEncode`、`LoraLoaderModelOnly`、`CheckpointLoaderSimple`、`SaveImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader、EmptyLatentImage

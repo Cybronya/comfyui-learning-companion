@@ -1,0 +1,64 @@
+---
+key: 图片生成/文生图/Text-to-Image-MajicFlus 麦橘Flux模型 基础文生图_2069321054610350082.json
+name: Text-to-Image-MajicFlus 麦橘Flux模型 基础文生图_2069321054610350082
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Text-to-Image-MajicFlus 麦橘Flux模型 基础文生图_2069321054610350082.json
+hash: ec4f62937bbdc330
+coverage: 0.92
+learned_at: 2026-10-19 23:41:56
+nodes: [SamplerCustomAdvanced, CLIPTextEncode, VAELoader, RandomNoise, KSamplerSelect, BasicGuider, Label (rgthree), SDXLEmptyLatentSizePicker+, UNETLoader, LoraLoaderModelOnly, BasicScheduler, DualCLIPLoader, EmptyLatentImage, RH_Prompter, RH_OneShot_Prompter, ShowText|pysssss, String Replace (mtb), VAEDecode, AddLabel, SeargePromptText, RH_Prompter, Trim Text _O, ShowText|pysssss, SaveImage, SeargePromptText]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 2048, "width": 1536}
+---
+
+# 图片生成/文生图/Text-to-Image-MajicFlus 麦橘Flux模型 基础文生图_2069321054610350082.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Text-to-Image-MajicFlus 麦橘Flux模型 基础文生图_2069321054610350082.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（25 个）：
+- `SamplerCustomAdvanced` ★核心
+- `CLIPTextEncode` ★核心
+- `VAELoader`
+- `RandomNoise`
+- `KSamplerSelect` ★核心
+- `BasicGuider`
+- `Label (rgthree)`
+- `SDXLEmptyLatentSizePicker+` ★核心
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `BasicScheduler`
+- `DualCLIPLoader`
+- `EmptyLatentImage` ★核心
+- `RH_Prompter`
+- `RH_OneShot_Prompter`
+- `ShowText|pysssss`
+- `String Replace (mtb)`
+- `VAEDecode` ★核心
+- `AddLabel`
+- `SeargePromptText`
+- `RH_Prompter`
+- `Trim Text _O`
+- `ShowText|pysssss`
+- `SaveImage`
+- `SeargePromptText`
+
+## 关键参数
+
+- `width` = `1536`
+- `height` = `2048`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **92%**（23/25）
+
+**有卡**：`SamplerCustomAdvanced`、`CLIPTextEncode`、`VAELoader`、`RandomNoise`、`KSamplerSelect`、`BasicGuider`、`Label (rgthree)`、`SDXLEmptyLatentSizePicker+`、`UNETLoader`、`LoraLoaderModelOnly`、`BasicScheduler`、`DualCLIPLoader`、`EmptyLatentImage`、`RH_Prompter`、`RH_OneShot_Prompter`、`String Replace (mtb)`、`VAEDecode`、`AddLabel`、`SeargePromptText`、`Trim Text _O`、`SaveImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、EmptyLatentImage、KSamplerSelect、SamplerCustomAdvanced

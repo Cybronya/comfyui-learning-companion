@@ -1,0 +1,40 @@
+---
+key: 图片生成/文生图/image_health.json_2069357857212026881.json
+name: image_health.json_2069357857212026881
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/image_health.json_2069357857212026881.json
+hash: 2504bf37930c29cb
+coverage: 0.375
+learned_at: 2026-10-19 23:42:29
+nodes: [LayerUtility: TextJoin, JjkText, JjkText, SaveImage, JjkText, PrimitiveNode, RH_Nano_Banana2_Gemini31Flash, JjkText]
+patterns: []
+missing: []
+---
+
+# 图片生成/文生图/image_health.json_2069357857212026881.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/image_health.json_2069357857212026881.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（8 个）：
+- `LayerUtility: TextJoin`
+- `JjkText`
+- `JjkText`
+- `SaveImage`
+- `JjkText`
+- `PrimitiveNode`
+- `RH_Nano_Banana2_Gemini31Flash`
+- `JjkText`
+
+## 知识
+
+覆盖率 **38%**（3/8）
+
+**有卡**：`LayerUtility: TextJoin`、`SaveImage`、`RH_Nano_Banana2_Gemini31Flash`
+
+**用到的条目**：SaveImage、RH_Nano_Banana2_Gemini31Flash、LayerUtility: TextJoin、sd15-t2i-basic、sd15-t2i-lora、sd1_5_text2image_sampler_clip_checkpoint、sdxl_portrait_controlnet_lora_sampler、image_to_image_controlnet_inpaint_lora

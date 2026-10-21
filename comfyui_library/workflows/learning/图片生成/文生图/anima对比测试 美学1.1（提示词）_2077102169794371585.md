@@ -1,0 +1,404 @@
+---
+key: 图片生成/文生图/anima对比测试 美学1.1（提示词）_2077102169794371585.json
+name: anima对比测试 美学1.1（提示词）_2077102169794371585
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/anima对比测试 美学1.1（提示词）_2077102169794371585.json
+hash: 521269992ffbd7e4
+coverage: 0.828652
+learned_at: 2026-10-20 00:20:30
+nodes: [easy float, Reroute, ImpactConditionalBranch, Reroute, Reroute, easy float, CLIPLoader, VAELoader, PathchSageAttentionKJ, ImpactConditionalBranch, ImpactConditionalBranch, VAEEncode, easy float, Reroute, PrimitiveInt, Reroute, Reroute, LayerUtility: ImageScaleByAspectRatio V2, easy float, CLIPLoader, VAELoader, RepeatLatentBatch, PathchSageAttentionKJ, PrimitiveInt, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, PrimitiveBoolean, Float, ImpactConditionalBranch, Float, PrimitiveInt, PrimitiveInt, RepeatLatentBatch, EmptyLatentImage, PrimitiveBoolean, UNETLoader, Float, CLIPTextEncode, KSampler, ImpactConditionalBranch, LayerUtility: ImageReelComposit, LoraLoaderModelOnly, ImpactConditionalBranch, PrimitiveBoolean, PrimitiveInt, PrimitiveInt, LoraLoaderModelOnly, LayerUtility: ImageScaleByAspectRatio V2, VAEDecode, KSampler, PrimitiveBoolean, UNETLoader, Reroute, PrimitiveInt, Reroute, Reroute, easy float, CLIPLoader, VAELoader, RepeatLatentBatch, PathchSageAttentionKJ, PrimitiveInt, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, Float, Float, ImpactConditionalBranch, ImpactConditionalBranch, PrimitiveBoolean, EmptyLatentImage, PrimitiveInt, CLIPTextEncode, LoraLoaderModelOnly, KSampler, PrimitiveBoolean, easy float, Reroute, PrimitiveInt, Reroute, easy float, CLIPLoader, RepeatLatentBatch, PathchSageAttentionKJ, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, EmptyLatentImage, CLIPTextEncode, LoraLoaderModelOnly, CLIPTextEncode, Reroute, EmptyLatentImage, Reroute, Reroute, TTResolutionSelector, VAEDecode, Float, PrimitiveBoolean, PrimitiveBoolean, PrimitiveInt, UNETLoader, easy float, SaveImage, CLIPTextEncode, Float, ImpactConditionalBranch, PrimitiveInt, ImpactConditionalBranch, VAELoader, Reroute, easy float, Reroute, PrimitiveInt, Reroute, LayerUtility: ImageScaleByAspectRatio V2, easy float, CLIPLoader, RepeatLatentBatch, PathchSageAttentionKJ, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, EmptyLatentImage, CLIPTextEncode, LoraLoaderModelOnly, CLIPTextEncode, KSampler, Float, PrimitiveBoolean, PrimitiveBoolean, PrimitiveInt, Float, ImpactConditionalBranch, PrimitiveInt, ImpactConditionalBranch, VAELoader, Reroute, Reroute, easy float, Reroute, PrimitiveInt, Reroute, LayerUtility: ImageScaleByAspectRatio V2, easy float, CLIPLoader, RepeatLatentBatch, PathchSageAttentionKJ, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, EmptyLatentImage, CLIPTextEncode, LoraLoaderModelOnly, CLIPTextEncode, KSampler, Float, PrimitiveBoolean, PrimitiveBoolean, PrimitiveInt, Float, ImpactConditionalBranch, PrimitiveInt, ImpactConditionalBranch, Reroute, VAELoader, UNETLoader, UNETLoader, Reroute, LayerUtility: ImageReelComposit, VAEDecode, VAEDecode, easy float, Reroute, PrimitiveInt, Reroute, LayerUtility: ImageScaleByAspectRatio V2, easy float, CLIPLoader, RepeatLatentBatch, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, EmptyLatentImage, CLIPTextEncode, LoraLoaderModelOnly, CLIPTextEncode, KSampler, Float, PrimitiveBoolean, PrimitiveBoolean, PrimitiveInt, Float, ImpactConditionalBranch, PrimitiveInt, ImpactConditionalBranch, Reroute, PathchSageAttentionKJ, VAELoader, VAEDecode, Reroute, Reroute, Reroute, UNETLoader, LayerUtility: ImageReel, CLIPTextEncode, LayerUtility: ImageScaleByAspectRatio V2, Reroute, SaveImage, SaveImage, SaveImage, SaveImage, CLIPTextEncode, SaveImage, CR Text, CR Text, Reroute, Float, ImpactConditionalBranch, CLIPTextEncode, SaveImage, easy float, Reroute, PrimitiveInt, Reroute, Reroute, LayerUtility: ImageScaleByAspectRatio V2, easy float, CLIPLoader, VAELoader, RepeatLatentBatch, PathchSageAttentionKJ, PrimitiveInt, ImpactConditionalBranch, VAEEncode, ImpactConditionalBranch, ImpactConditionalBranch, Float, ImpactConditionalBranch, PrimitiveBoolean, PrimitiveInt, LoraLoaderModelOnly, KSampler, PrimitiveBoolean, EmptyLatentImage, SaveImage, CLIPTextEncode, Float, ImpactConditionalBranch, CLIPTextEncode, Reroute, UNETLoader, VAEDecode, easy promptList, easy promptList, easy promptList, easy promptList, ImpactConditionalBranch, easy promptList, ImpactConditionalBranch, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch, easy anythingIndexSwitch, easy promptList, easy promptList, SaveImage, SimpleMath+, LayerUtility: ImageReel, VAEDecode, KSampler, VAEDecode, CheckpointLoaderSimple, easy promptList, easy promptList, easy promptList, easy promptList, Reroute, SaveImage, easy int, Seed (rgthree), PrimitiveBoolean, easy promptList, LayerUtility: ImageScaleByAspectRatio V2, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, Fast Groups Bypasser (rgthree), LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy promptList, LoadImage, LoadImage, easy promptList, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, LoadImage, easy promptList, easy promptList, LoadImage]
+patterns: [text_to_image, image_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 4, "checkpoint": "miaomiaoHarem_anima12.safetensors", "denoise": 0.65, "height": 1152, "sampler_name": "euler", "scheduler": "simple", "seed": 338144620226380, "steps": 36, "width": 896}
+---
+
+# 图片生成/文生图/anima对比测试 美学1.1（提示词）_2077102169794371585.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/anima对比测试 美学1.1（提示词）_2077102169794371585.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（356 个）：
+- `easy float`
+- `Reroute`
+- `ImpactConditionalBranch`
+- `Reroute`
+- `Reroute`
+- `easy float`
+- `CLIPLoader`
+- `VAELoader`
+- `PathchSageAttentionKJ`
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `easy float`
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy float`
+- `CLIPLoader`
+- `VAELoader`
+- `RepeatLatentBatch`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `PrimitiveBoolean`
+- `Float`
+- `ImpactConditionalBranch`
+- `Float`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `RepeatLatentBatch`
+- `EmptyLatentImage` ★核心
+- `PrimitiveBoolean`
+- `UNETLoader` ★核心
+- `Float`
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `ImpactConditionalBranch`
+- `LayerUtility: ImageReelComposit`
+- `LoraLoaderModelOnly` ★核心
+- `ImpactConditionalBranch`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `PrimitiveInt`
+- `LoraLoaderModelOnly` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `PrimitiveBoolean`
+- `UNETLoader` ★核心
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `Reroute`
+- `easy float`
+- `CLIPLoader`
+- `VAELoader`
+- `RepeatLatentBatch`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `Float`
+- `Float`
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `PrimitiveBoolean`
+- `EmptyLatentImage` ★核心
+- `PrimitiveInt`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `PrimitiveBoolean`
+- `easy float`
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `easy float`
+- `CLIPLoader`
+- `RepeatLatentBatch`
+- `PathchSageAttentionKJ`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `EmptyLatentImage` ★核心
+- `Reroute`
+- `Reroute`
+- `TTResolutionSelector`
+- `VAEDecode` ★核心
+- `Float`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `UNETLoader` ★核心
+- `easy float`
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `Float`
+- `ImpactConditionalBranch`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `VAELoader`
+- `Reroute`
+- `easy float`
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy float`
+- `CLIPLoader`
+- `RepeatLatentBatch`
+- `PathchSageAttentionKJ`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `Float`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `Float`
+- `ImpactConditionalBranch`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `VAELoader`
+- `Reroute`
+- `Reroute`
+- `easy float`
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy float`
+- `CLIPLoader`
+- `RepeatLatentBatch`
+- `PathchSageAttentionKJ`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `Float`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `Float`
+- `ImpactConditionalBranch`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `Reroute`
+- `VAELoader`
+- `UNETLoader` ★核心
+- `UNETLoader` ★核心
+- `Reroute`
+- `LayerUtility: ImageReelComposit`
+- `VAEDecode` ★核心
+- `VAEDecode` ★核心
+- `easy float`
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy float`
+- `CLIPLoader`
+- `RepeatLatentBatch`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `EmptyLatentImage` ★核心
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPTextEncode` ★核心
+- `KSampler` ★核心
+- `Float`
+- `PrimitiveBoolean`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `Float`
+- `ImpactConditionalBranch`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `Reroute`
+- `PathchSageAttentionKJ`
+- `VAELoader`
+- `VAEDecode` ★核心
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `UNETLoader` ★核心
+- `LayerUtility: ImageReel`
+- `CLIPTextEncode` ★核心
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `Reroute`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `CR Text`
+- `CR Text`
+- `Reroute`
+- `Float`
+- `ImpactConditionalBranch`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `easy float`
+- `Reroute`
+- `PrimitiveInt`
+- `Reroute`
+- `Reroute`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `easy float`
+- `CLIPLoader`
+- `VAELoader`
+- `RepeatLatentBatch`
+- `PathchSageAttentionKJ`
+- `PrimitiveInt`
+- `ImpactConditionalBranch`
+- `VAEEncode` ★核心
+- `ImpactConditionalBranch`
+- `ImpactConditionalBranch`
+- `Float`
+- `ImpactConditionalBranch`
+- `PrimitiveBoolean`
+- `PrimitiveInt`
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `PrimitiveBoolean`
+- `EmptyLatentImage` ★核心
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `Float`
+- `ImpactConditionalBranch`
+- `CLIPTextEncode` ★核心
+- `Reroute`
+- `UNETLoader` ★核心
+- `VAEDecode` ★核心
+- `easy promptList`
+- `easy promptList`
+- `easy promptList`
+- `easy promptList`
+- `ImpactConditionalBranch`
+- `easy promptList`
+- `ImpactConditionalBranch`
+- `easy anythingIndexSwitch`
+- `easy anythingIndexSwitch`
+- `easy anythingIndexSwitch`
+- `easy anythingIndexSwitch`
+- `easy promptList`
+- `easy promptList`
+- `SaveImage`
+- `SimpleMath+`
+- `LayerUtility: ImageReel`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `CheckpointLoaderSimple` ★核心
+- `easy promptList`
+- `easy promptList`
+- `easy promptList`
+- `easy promptList`
+- `Reroute`
+- `SaveImage`
+- `easy int`
+- `Seed (rgthree)`
+- `PrimitiveBoolean`
+- `easy promptList`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `Fast Groups Bypasser (rgthree)`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `easy promptList`
+- `LoadImage`
+- `LoadImage`
+- `easy promptList`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `LoadImage`
+- `easy promptList`
+- `easy promptList`
+- `LoadImage`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `896`
+- `height` = `1152`
+- `batch_size` = `1`
+- `seed` = `338144620226380`
+- `steps` = `36`
+- `cfg` = `4`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `0.65`
+- `checkpoint` = `miaomiaoHarem_anima12.safetensors`
+
+## 知识
+
+覆盖率 **83%**（295/356）
+
+**有卡**：`easy float`、`ImpactConditionalBranch`、`CLIPLoader`、`VAELoader`、`PathchSageAttentionKJ`、`VAEEncode`、`LayerUtility: ImageScaleByAspectRatio V2`、`RepeatLatentBatch`、`PrimitiveBoolean`、`Float`、`EmptyLatentImage`、`UNETLoader`、`CLIPTextEncode`、`KSampler`、`LayerUtility: ImageReelComposit`、`LoraLoaderModelOnly`、`VAEDecode`、`TTResolutionSelector`、`SaveImage`、`LayerUtility: ImageReel`、`CR Text`、`easy promptList`、`easy anythingIndexSwitch`、`SimpleMath+`、`CheckpointLoaderSimple`、`easy int`、`Seed (rgthree)`、`LoadImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader

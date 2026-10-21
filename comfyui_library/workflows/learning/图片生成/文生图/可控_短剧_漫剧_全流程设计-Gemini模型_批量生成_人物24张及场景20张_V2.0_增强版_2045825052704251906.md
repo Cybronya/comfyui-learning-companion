@@ -1,0 +1,398 @@
+---
+key: 图片生成/文生图/可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906.json
+name: 可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906.json
+hash: 5b2e169707a7b97a
+coverage: 0.86612
+learned_at: 2026-10-21 02:59:28
+nodes: [StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, StringLength, easy ifElse, easy ifElse, StringLength, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, easy ifElse, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, CR Split String, Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], CR Split String, StringLength, CR Split String, Primitive string multiline [Crystools], ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, ZML_SplitText, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, StringMergeNode, ShellAgentPluginInputText, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, SaveImage, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, TextPreview, Primitive string multiline [Crystools], StringLength, Primitive string multiline [Crystools], Primitive string multiline [Crystools], CR Split String, StringMergeNode, Primitive string multiline [Crystools], ZML_SplitText, Primitive string multiline [Crystools], StringMergeNode, StringMergeNode, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, RH_RhartImageNG31FlashTextToImage, CR Split String, RH_RhartImageNG31FlashTextToImage, ZML_SplitText, ZML_SplitText, TextPreview, ZML_SplitText, Primitive string multiline [Crystools], Primitive string multiline [Crystools], CR Split String, CR Split String, ShellAgentPluginInputText, easy ifElse, StringLength, easy ifElse, easy ifElse, PrimitiveString, StringLength, Primitive string multiline [Crystools], Primitive string multiline [Crystools], Primitive string multiline [Crystools], Note, Note, Note, Fast Groups Bypasser (rgthree), TextPreview, TextPreview]
+patterns: []
+missing: []
+---
+
+# 图片生成/文生图/可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/可控_短剧_漫剧_全流程设计-Gemini模型_批量生成_人物24张及场景20张_V2.0_增强版_2045825052704251906.json`
+
+## 结构
+
+**生成流程**：Output → Other
+
+**节点**（366 个）：
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `StringLength`
+- `easy ifElse`
+- `easy ifElse`
+- `StringLength`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `easy ifElse`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `CR Split String`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `CR Split String`
+- `StringLength`
+- `CR Split String`
+- `Primitive string multiline [Crystools]`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `StringMergeNode`
+- `ShellAgentPluginInputText`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `SaveImage`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `TextPreview`
+- `Primitive string multiline [Crystools]`
+- `StringLength`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `CR Split String`
+- `StringMergeNode`
+- `Primitive string multiline [Crystools]`
+- `ZML_SplitText`
+- `Primitive string multiline [Crystools]`
+- `StringMergeNode`
+- `StringMergeNode`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `RH_RhartImageNG31FlashTextToImage`
+- `CR Split String`
+- `RH_RhartImageNG31FlashTextToImage`
+- `ZML_SplitText`
+- `ZML_SplitText`
+- `TextPreview`
+- `ZML_SplitText`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `CR Split String`
+- `CR Split String`
+- `ShellAgentPluginInputText`
+- `easy ifElse`
+- `StringLength`
+- `easy ifElse`
+- `easy ifElse`
+- `PrimitiveString`
+- `StringLength`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Primitive string multiline [Crystools]`
+- `Note`
+- `Note`
+- `Note`
+- `Fast Groups Bypasser (rgthree)`
+- `TextPreview`
+- `TextPreview`
+
+## 知识
+
+覆盖率 **87%**（317/366）
+
+**有卡**：`StringLength`、`CR Split String`、`Primitive string multiline [Crystools]`、`ZML_SplitText`、`StringMergeNode`、`ShellAgentPluginInputText`、`SaveImage`、`TextPreview`、`RH_RhartImageNG31FlashTextToImage`
+
+**用到的条目**：SaveImage、TextPreview、StringMergeNode、ShellAgentPluginInputText、StringLength、RH_RhartImageNG31FlashTextToImage、ZML_SplitText、CR Split String

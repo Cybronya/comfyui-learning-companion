@@ -1,0 +1,142 @@
+---
+key: 图片生成/文生图/Redux风格迁移换脸网红制造Flux.1-dev Ultra-realistic V3模型8K写实_2088412504866254849.json
+name: Redux风格迁移换脸网红制造Flux.1-dev Ultra-realistic V3模型8K写实_2088412504866254849
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Redux风格迁移换脸网红制造Flux.1-dev Ultra-realistic V3模型8K写实_2088412504866254849.json
+hash: c73b97fc5e8470e6
+coverage: 0.674699
+learned_at: 2026-10-20 00:59:38
+nodes: [Anything Everywhere, Anything Everywhere, EmptyLatentImagePresets, SetNode, SetNode, SetNode, LoadImage, SetNode, LoadImage, CLIPTextEncode, StyleModelLoader, CLIPVisionLoader, GetNode, CLIPTextEncode, SetNode, CLIPVisionEncode, StyleModelApplySimple, FluxGuidance, SetNode, ImageUpscaleWithModel, SamplerCustom, GetNode, KSamplerSelect, BasicScheduler, ApplyPulidFlux, SetNode, GetNode, VAEDecode, SetNode, EmptySD3LatentImage, GetNode, GetNode, ModelSamplingFlux, GetNode, PulidFluxInsightFaceLoader, PulidFluxModelLoader, PulidFluxEvaClipLoader, GetNode, GetNode, GetNode, SaveImage, UltimateSDUpscale, UpscaleModelLoader, ImageScaleBy, VAEEncode, KSampler, GetNode, PreviewImage, VAEDecode, GetNode, DualCLIPLoader, VAELoader, CheckpointLoaderSimple, SetNode, 孤海注释, 孤海注释, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, UNETLoader, KSampler, CLIPTextEncode, solarL_SaveImagesToZip, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, JjkText, CLIPTextEncode, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, Note]
+patterns: [text_to_image, image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "checkpoint": "Flux.1-dev-fp8-Ultra-realistic_V3超写实艺术增强.safetensors", "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/Redux风格迁移换脸网红制造Flux.1-dev Ultra-realistic V3模型8K写实_2088412504866254849.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Redux风格迁移换脸网红制造Flux.1-dev Ultra-realistic V3模型8K写实_2088412504866254849.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（83 个）：
+- `Anything Everywhere`
+- `Anything Everywhere`
+- `EmptyLatentImagePresets` ★核心
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `LoadImage`
+- `SetNode`
+- `LoadImage`
+- `CLIPTextEncode` ★核心
+- `StyleModelLoader`
+- `CLIPVisionLoader`
+- `GetNode`
+- `CLIPTextEncode` ★核心
+- `SetNode`
+- `CLIPVisionEncode`
+- `StyleModelApplySimple`
+- `FluxGuidance`
+- `SetNode`
+- `ImageUpscaleWithModel`
+- `SamplerCustom` ★核心
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `BasicScheduler`
+- `ApplyPulidFlux`
+- `SetNode`
+- `GetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `EmptySD3LatentImage`
+- `GetNode`
+- `GetNode`
+- `ModelSamplingFlux`
+- `GetNode`
+- `PulidFluxInsightFaceLoader`
+- `PulidFluxModelLoader`
+- `PulidFluxEvaClipLoader`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `SaveImage`
+- `UltimateSDUpscale`
+- `UpscaleModelLoader`
+- `ImageScaleBy`
+- `VAEEncode` ★核心
+- `KSampler` ★核心
+- `GetNode`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `GetNode`
+- `DualCLIPLoader`
+- `VAELoader`
+- `CheckpointLoaderSimple` ★核心
+- `SetNode`
+- `孤海注释`
+- `孤海注释`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyLatentImage` ★核心
+- `JjkText`
+- `CLIPTextEncode` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `Note`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `checkpoint` = `Flux.1-dev-fp8-Ultra-realistic_V3超写实艺术增强.safetensors`
+
+## 知识
+
+覆盖率 **67%**（56/83）
+
+**有卡**：`EmptyLatentImagePresets`、`LoadImage`、`CLIPTextEncode`、`StyleModelLoader`、`CLIPVisionLoader`、`CLIPVisionEncode`、`StyleModelApplySimple`、`FluxGuidance`、`ImageUpscaleWithModel`、`SamplerCustom`、`KSamplerSelect`、`BasicScheduler`、`ApplyPulidFlux`、`VAEDecode`、`EmptySD3LatentImage`、`ModelSamplingFlux`、`PulidFluxInsightFaceLoader`、`PulidFluxModelLoader`、`PulidFluxEvaClipLoader`、`SaveImage`、`UltimateSDUpscale`、`UpscaleModelLoader`、`ImageScaleBy`、`VAEEncode`、`KSampler`、`DualCLIPLoader`、`VAELoader`、`CheckpointLoaderSimple`、`LoraLoaderModelOnly`、`UNETLoader`、`solarL_SaveImagesToZip`、`CLIPLoader`、`EmptyLatentImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CheckpointLoaderSimple、UNETLoader、CLIPTextEncode、CLIPLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

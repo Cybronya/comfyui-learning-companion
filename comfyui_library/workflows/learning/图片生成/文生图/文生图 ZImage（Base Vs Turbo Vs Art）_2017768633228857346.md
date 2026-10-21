@@ -1,0 +1,87 @@
+---
+key: 图片生成/文生图/文生图 ZImage（Base Vs Turbo Vs Art）_2017768633228857346.json
+name: 文生图 ZImage（Base Vs Turbo Vs Art）_2017768633228857346
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/文生图 ZImage（Base Vs Turbo Vs Art）_2017768633228857346.json
+hash: 285d0ae701d4eeb5
+coverage: 0.71875
+learned_at: 2026-10-19 22:15:59
+nodes: [UNETLoader, ModelSamplingAuraFlow, KSampler, MarkdownNote, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, CLIPTextEncode, LayerUtility: PurgeVRAM, KSampler, UNETLoader, QwenImageLatentAspectRatio, PrimitiveNode, VAEDecode, KSampler, VAEDecode, PreviewImage, PreviewImage, PreviewImage, Fast Groups Bypasser (rgthree), Fast Groups Bypasser (rgthree), VAELoader, CLIPLoader, UNETLoader, Fast Groups Bypasser (rgthree), LoraLoaderModelOnly, CR Prompt Text, Fast Groups Bypasser (rgthree), VAEDecode, SaveImage]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_multistep", "scheduler": "simple", "seed": 719866062675034, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/文生图 ZImage（Base Vs Turbo Vs Art）_2017768633228857346.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/文生图 ZImage（Base Vs Turbo Vs Art）_2017768633228857346.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（32 个）：
+- `UNETLoader` ★核心
+- `ModelSamplingAuraFlow`
+- `KSampler` ★核心
+- `MarkdownNote`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `LayerUtility: PurgeVRAM`
+- `KSampler` ★核心
+- `UNETLoader` ★核心
+- `QwenImageLatentAspectRatio`
+- `PrimitiveNode`
+- `VAEDecode` ★核心
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `PreviewImage`
+- `PreviewImage`
+- `PreviewImage`
+- `Fast Groups Bypasser (rgthree)`
+- `Fast Groups Bypasser (rgthree)`
+- `VAELoader`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `Fast Groups Bypasser (rgthree)`
+- `LoraLoaderModelOnly` ★核心
+- `CR Prompt Text`
+- `Fast Groups Bypasser (rgthree)`
+- `VAEDecode` ★核心
+- `SaveImage`
+
+## 关键参数
+
+- `seed` = `719866062675034`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_multistep`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **72%**（23/32）
+
+**有卡**：`UNETLoader`、`ModelSamplingAuraFlow`、`KSampler`、`CLIPTextEncode`、`LayerUtility: PurgeVRAM`、`QwenImageLatentAspectRatio`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`LoraLoaderModelOnly`、`CR Prompt Text`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、CLIPTextEncode、CLIPLoader、UNETLoader、QwenImageLatentAspectRatio
+
+## 参数体检
+
+发现 2 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

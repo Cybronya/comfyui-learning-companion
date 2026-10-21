@@ -1,0 +1,68 @@
+---
+key: 图片生成/文生图/Z-Image-跑场景图-v4.0_2044957910106640386.json
+name: Z-Image-跑场景图-v4.0_2044957910106640386
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Z-Image-跑场景图-v4.0_2044957910106640386.json
+hash: dcbbaf067c5ff225
+coverage: 0.761905
+learned_at: 2026-10-21 02:55:57
+nodes: [SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, SeedVR2LoadDiTModel, Image Comparer (rgthree), UNETLoader, CLIPLoader, KSampler, VAEDecode, EmptyLatentImage, VAELoader, Reroute, Reroute, Reroute, ConditioningZeroOut, ImageScaleBy, SaveImage, CLIPTextEncode, SaveImage, ImpactInt, ImpactInt, Fast Groups Bypasser (rgthree)]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1080, "sampler_name": "euler", "scheduler": "simple", "seed": 929135539923926, "steps": 10, "width": 1920}
+---
+
+# 图片生成/文生图/Z-Image-跑场景图-v4.0_2044957910106640386.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Z-Image-跑场景图-v4.0_2044957910106640386.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（21 个）：
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `SeedVR2LoadDiTModel`
+- `Image Comparer (rgthree)`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `EmptyLatentImage` ★核心
+- `VAELoader`
+- `Reroute`
+- `Reroute`
+- `Reroute`
+- `ConditioningZeroOut`
+- `ImageScaleBy`
+- `SaveImage`
+- `CLIPTextEncode` ★核心
+- `SaveImage`
+- `ImpactInt`
+- `ImpactInt`
+- `Fast Groups Bypasser (rgthree)`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `929135539923926`
+- `steps` = `10`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+- `width` = `1920`
+- `height` = `1080`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **76%**（16/21）
+
+**有卡**：`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`SeedVR2LoadDiTModel`、`UNETLoader`、`CLIPLoader`、`KSampler`、`VAEDecode`、`EmptyLatentImage`、`VAELoader`、`ConditioningZeroOut`、`ImageScaleBy`、`SaveImage`、`CLIPTextEncode`、`ImpactInt`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage、UNETLoader

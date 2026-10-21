@@ -1,0 +1,133 @@
+---
+key: 图片生成/图生图/Posture Transfer Image+Cloning双采样极速洗图超分放大 迁移_2105094113954717698.json
+name: Posture Transfer Image+Cloning双采样极速洗图超分放大 迁移_2105094113954717698
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/图生图/Posture Transfer Image+Cloning双采样极速洗图超分放大 迁移_2105094113954717698.json
+hash: 0422ed64a0af2a63
+coverage: 0.851064
+learned_at: 2026-10-21 00:41:53
+nodes: [ReferenceLatent, ConditioningZeroOut, ImageScaleBy, easy imageSize, TTP_Image_Tile_Batch, SeedVR2LoadVAEModel, SeedVR2VideoUpscaler, easy setNode, easy getNode, MarkdownNote, easy imageSize, ImageResize+, ImageScaleBy, TTP_Tile_image_size, ImageResize+, PreviewImage, easy imageSize, LayerUtility: PurgeVRAM, GetImageSize, ImageScaleToTotalPixels, easy getNode, EmptyFlux2LatentImage, KSamplerSelect, RandomNoise, CFGGuider, Flux2Scheduler, easy getNode, easy getNode, easy getNode, easy getNode, ImageColorMatch+, RandomNoise, LayerUtility: PurgeVRAM, easy setNode, KSamplerSelect, CLIPTextEncode, ZImageFunControlnet, BasicGuider, TTP_Image_Assy, LayerUtility: PurgeVRAM, easy setNode, FlowMatchEulerDiscreteScheduler (Custom), PreviewImage, PreviewImage, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, LayerUtility: ImageScaleByAspectRatio V2, PreviewImage, Any Switch (rgthree), EmptyLatentImage, GetImageSize+, CLIPTextEncode, easy getNode, VAEDecode, SamplerCustomAdvanced, VAEEncode, SaveImage, easy getNode, AIO_Preprocessor, easy getNode, easy getNode, easy setNode, SaveImage, easy getNode, Image Comparer (rgthree), AIO_Preprocessor, easy getNode, llama_cpp_parameters, LayerUtility: PurgeVRAM, easy setNode, llama_cpp_model_loader, Fast Groups Bypasser (rgthree), AIO_Preprocessor, Fast Groups Bypasser (rgthree), UNETLoader, LoraLoaderModelOnly, CLIPLoader, VAELoader, ModelPatchLoader, UNETLoader, CLIPLoader, VAELoader, LoraLoaderModelOnly, SeedVR2LoadDiTModel, easy showAnything, PreviewImage, llama_cpp_instruct_adv, Image Comparer (rgthree), Image Comparer (rgthree), PreviewImage, VAEDecode, SaveImage, SamplerCustomAdvanced, LoadImage]
+patterns: []
+missing: []
+parameters: {"batch_size": 1, "height": 512, "width": 512}
+---
+
+# 图片生成/图生图/Posture Transfer Image+Cloning双采样极速洗图超分放大 迁移_2105094113954717698.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/图生图/Posture Transfer Image+Cloning双采样极速洗图超分放大 迁移_2105094113954717698.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Control → Sampling → Decode → Process → Output → Other
+
+**节点**（94 个）：
+- `ReferenceLatent`
+- `ConditioningZeroOut`
+- `ImageScaleBy`
+- `easy imageSize`
+- `TTP_Image_Tile_Batch`
+- `SeedVR2LoadVAEModel`
+- `SeedVR2VideoUpscaler`
+- `easy setNode`
+- `easy getNode`
+- `MarkdownNote`
+- `easy imageSize`
+- `ImageResize+`
+- `ImageScaleBy`
+- `TTP_Tile_image_size`
+- `ImageResize+`
+- `PreviewImage`
+- `easy imageSize`
+- `LayerUtility: PurgeVRAM`
+- `GetImageSize`
+- `ImageScaleToTotalPixels`
+- `easy getNode`
+- `EmptyFlux2LatentImage`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `CFGGuider`
+- `Flux2Scheduler`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `easy getNode`
+- `ImageColorMatch+`
+- `RandomNoise`
+- `LayerUtility: PurgeVRAM`
+- `easy setNode`
+- `KSamplerSelect` ★核心
+- `CLIPTextEncode` ★核心
+- `ZImageFunControlnet`
+- `BasicGuider`
+- `TTP_Image_Assy`
+- `LayerUtility: PurgeVRAM`
+- `easy setNode`
+- `FlowMatchEulerDiscreteScheduler (Custom)`
+- `PreviewImage`
+- `PreviewImage`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `LayerUtility: ImageScaleByAspectRatio V2`
+- `PreviewImage`
+- `Any Switch (rgthree)`
+- `EmptyLatentImage` ★核心
+- `GetImageSize+`
+- `CLIPTextEncode` ★核心
+- `easy getNode`
+- `VAEDecode` ★核心
+- `SamplerCustomAdvanced` ★核心
+- `VAEEncode` ★核心
+- `SaveImage`
+- `easy getNode`
+- `AIO_Preprocessor`
+- `easy getNode`
+- `easy getNode`
+- `easy setNode`
+- `SaveImage`
+- `easy getNode`
+- `Image Comparer (rgthree)`
+- `AIO_Preprocessor`
+- `easy getNode`
+- `llama_cpp_parameters`
+- `LayerUtility: PurgeVRAM`
+- `easy setNode`
+- `llama_cpp_model_loader`
+- `Fast Groups Bypasser (rgthree)`
+- `AIO_Preprocessor`
+- `Fast Groups Bypasser (rgthree)`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `ModelPatchLoader`
+- `UNETLoader` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `SeedVR2LoadDiTModel`
+- `easy showAnything`
+- `PreviewImage`
+- `llama_cpp_instruct_adv`
+- `Image Comparer (rgthree)`
+- `Image Comparer (rgthree)`
+- `PreviewImage`
+- `VAEDecode` ★核心
+- `SaveImage`
+- `SamplerCustomAdvanced` ★核心
+- `LoadImage`
+
+## 关键参数
+
+- `width` = `512`
+- `height` = `512`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **85%**（80/94）
+
+**有卡**：`ReferenceLatent`、`ConditioningZeroOut`、`ImageScaleBy`、`easy imageSize`、`TTP_Image_Tile_Batch`、`SeedVR2LoadVAEModel`、`SeedVR2VideoUpscaler`、`easy setNode`、`easy getNode`、`ImageResize+`、`TTP_Tile_image_size`、`LayerUtility: PurgeVRAM`、`GetImageSize`、`ImageScaleToTotalPixels`、`EmptyFlux2LatentImage`、`KSamplerSelect`、`RandomNoise`、`CFGGuider`、`Flux2Scheduler`、`ImageColorMatch+`、`CLIPTextEncode`、`ZImageFunControlnet`、`BasicGuider`、`TTP_Image_Assy`、`FlowMatchEulerDiscreteScheduler (Custom)`、`LayerUtility: ImageScaleByAspectRatio V2`、`EmptyLatentImage`、`GetImageSize+`、`VAEDecode`、`SamplerCustomAdvanced`、`VAEEncode`、`SaveImage`、`AIO_Preprocessor`、`llama_cpp_parameters`、`llama_cpp_model_loader`、`UNETLoader`、`LoraLoaderModelOnly`、`CLIPLoader`、`VAELoader`、`ModelPatchLoader`、`SeedVR2LoadDiTModel`、`llama_cpp_instruct_adv`、`LoadImage`
+
+**用到的条目**：VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage

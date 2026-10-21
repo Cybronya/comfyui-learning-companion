@@ -1,0 +1,263 @@
+---
+key: 图片生成/文生图/DRZY侧脸转正高清处理｜1.0.2图生图人像修复生成_2097092787421409281.json
+name: DRZY侧脸转正高清处理｜1.0.2图生图人像修复生成_2097092787421409281
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/DRZY侧脸转正高清处理｜1.0.2图生图人像修复生成_2097092787421409281.json
+hash: 933bdd1856d25b62
+coverage: 0.633166
+learned_at: 2026-10-20 01:34:17
+nodes: [GetNode, GuHai_IDPhotoCrop, GetNode, GetNode, GetNode, GetNode, easy imageRemBg, Any Switch (rgthree), GetNode, GetNode, 图像缩放V2_孤海, ColorCorrect, SetNode, SetNode, SetNode, GetNode, SetNode, SetNode, GuHai_IDPhotoCrop, ImageComposite+, RMBG, ModelSamplingAuraFlow, SetNode, GetNode, easy seed, GetNode, easy ifElse, GetNode, KSampler, ConditioningZeroOut, VAEEncode, CLIPLoader, VAELoader, LoraLoaderModelOnly, Text Concatenate, GetNode, GetNode, TextEncodeQwenImageEditPlusCustom_lrzjason, GrowMaskWithBlur, RemoveBackgroundWithMask, SAM3Segment, 图像缩放V2_孤海, ConditioningZeroOut, QwenEditConfigPreparer, QwenEditConfigPreparer, Flux2KleinConfigPreparer_EditUtils, ReferenceLatent, CLIPTextEncode, VAEDecode, easy imageColorMatch, Flux2KleinModelConfig_EditUtils, ImageBlur, GetNode, SeedVR2LoadVAEModel, 图像缩放V2_孤海, SetNode, TextInput_, TextInput_, GetNode, KSampler, KSampler, ColorConverterGuhai, ColorConverterGuhai, SetNode, easy showAnything, 孤海-自定义颜色, TTP_Tile_image_size, ImageScaleBy, ImageScaleBy, SeedVR2VideoUpscaler, GetImageSize+, ImageResize+, 布尔孤海, GoohaiUniversalSlider, GetNode, 布尔孤海, TextInput_, EditTextEncode_EditUtils, LoraLoaderModelOnly, LoraLoaderModelOnly, TextEncodeQwenImageEditPlus, PreviewImage, GetNode, GetNode, GetNode, GetNode, GetNode, LoraLoaderModelOnly, GetNode, KSamplerSelect, RandomNoise, VAEEncode, ReferenceLatent, ConditioningZeroOut, CLIPTextEncode, VAEDecode, 图像缩放V2_孤海, GetNode, GetNode, Any Switch (rgthree), 图像缩放V2_孤海, VAEEncode, SimpleMath+, 图像缩放V2_孤海, SamplerCustomAdvanced, ReferenceLatent, CFGGuider, GetImageSize+, Flux2Scheduler, SetNode, 忽略多组孤海, 忽略多组孤海, GetNode, Any Switch (rgthree), GetNode, GetNode, GetNode, Any Switch (rgthree), GetNode, TTP_Image_Tile_Batch, 忽略多组孤海, 忽略多组孤海, 忽略多组孤海, SetNode, SetNode, SetNode, VAELoader, CLIPLoader, UNETLoader, PreviewImage, PreviewImage, LoraLoaderModelOnly, UNETLoader, SeedVR2LoadDiTModel, ReferenceLatent, ReferenceLatent, GuHai_IDPhotoCrop, SingleImageLayoutNode, SetNode, TTP_Image_Assy, SetNode, SetNode, easy ifElse, 图像缩放V2_孤海, LoadImage, SetNode, VAEDecode, SetNode, VAEDecode, LoadImage, GetNode, GetNode, GetNode, GetNode, Any Switch (rgthree), GetNode, GetNode, PreviewImage, Image Comparer (rgthree), GetNode, SaveImage, ImageSaveNode_孤海, Image Comparer (rgthree), LoadImage, IDPhotoClothingSelector_孤海, SetNode, IDPhotoClothingSelector_孤海, 孤海-取色器, SaveImage, PreviewImage, 孤海注释, 孤海注释, UNETLoader, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, LoraLoaderModelOnly, KSampler, CLIPTextEncode, CLIPLoader, CLIPTextEncode, JjkText, EmptyLatentImage, solarL_SaveImagesToZip, VAEDecode, VAELoader, Note]
+patterns: [text_to_image, image_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 1, "cfg": 4.5, "denoise": 1, "height": 80, "sampler_name": "er_sde", "scheduler": "beta", "seed": 598626327129635, "steps": 4, "width": 80}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30, [medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/DRZY侧脸转正高清处理｜1.0.2图生图人像修复生成_2097092787421409281.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/DRZY侧脸转正高清处理｜1.0.2图生图人像修复生成_2097092787421409281.json`
+
+## 结构
+
+**生成流程**：Model → Encode → Condition → Latent → Sampling → Decode → Process → Output → Other
+
+**节点**（199 个）：
+- `GetNode`
+- `GuHai_IDPhotoCrop`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `easy imageRemBg`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `GetNode`
+- `图像缩放V2_孤海`
+- `ColorCorrect`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `GetNode`
+- `SetNode`
+- `SetNode`
+- `GuHai_IDPhotoCrop`
+- `ImageComposite+`
+- `RMBG`
+- `ModelSamplingAuraFlow`
+- `SetNode`
+- `GetNode`
+- `easy seed`
+- `GetNode`
+- `easy ifElse`
+- `GetNode`
+- `KSampler` ★核心
+- `ConditioningZeroOut`
+- `VAEEncode` ★核心
+- `CLIPLoader`
+- `VAELoader`
+- `LoraLoaderModelOnly` ★核心
+- `Text Concatenate`
+- `GetNode`
+- `GetNode`
+- `TextEncodeQwenImageEditPlusCustom_lrzjason`
+- `GrowMaskWithBlur`
+- `RemoveBackgroundWithMask`
+- `SAM3Segment`
+- `图像缩放V2_孤海`
+- `ConditioningZeroOut`
+- `QwenEditConfigPreparer`
+- `QwenEditConfigPreparer`
+- `Flux2KleinConfigPreparer_EditUtils`
+- `ReferenceLatent`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `easy imageColorMatch`
+- `Flux2KleinModelConfig_EditUtils`
+- `ImageBlur`
+- `GetNode`
+- `SeedVR2LoadVAEModel`
+- `图像缩放V2_孤海`
+- `SetNode`
+- `TextInput_`
+- `TextInput_`
+- `GetNode`
+- `KSampler` ★核心
+- `KSampler` ★核心
+- `ColorConverterGuhai`
+- `ColorConverterGuhai`
+- `SetNode`
+- `easy showAnything`
+- `孤海-自定义颜色`
+- `TTP_Tile_image_size`
+- `ImageScaleBy`
+- `ImageScaleBy`
+- `SeedVR2VideoUpscaler`
+- `GetImageSize+`
+- `ImageResize+`
+- `布尔孤海`
+- `GoohaiUniversalSlider`
+- `GetNode`
+- `布尔孤海`
+- `TextInput_`
+- `EditTextEncode_EditUtils`
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `TextEncodeQwenImageEditPlus`
+- `PreviewImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `LoraLoaderModelOnly` ★核心
+- `GetNode`
+- `KSamplerSelect` ★核心
+- `RandomNoise`
+- `VAEEncode` ★核心
+- `ReferenceLatent`
+- `ConditioningZeroOut`
+- `CLIPTextEncode` ★核心
+- `VAEDecode` ★核心
+- `图像缩放V2_孤海`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `图像缩放V2_孤海`
+- `VAEEncode` ★核心
+- `SimpleMath+`
+- `图像缩放V2_孤海`
+- `SamplerCustomAdvanced` ★核心
+- `ReferenceLatent`
+- `CFGGuider`
+- `GetImageSize+`
+- `Flux2Scheduler`
+- `SetNode`
+- `忽略多组孤海`
+- `忽略多组孤海`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `TTP_Image_Tile_Batch`
+- `忽略多组孤海`
+- `忽略多组孤海`
+- `忽略多组孤海`
+- `SetNode`
+- `SetNode`
+- `SetNode`
+- `VAELoader`
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `PreviewImage`
+- `PreviewImage`
+- `LoraLoaderModelOnly` ★核心
+- `UNETLoader` ★核心
+- `SeedVR2LoadDiTModel`
+- `ReferenceLatent`
+- `ReferenceLatent`
+- `GuHai_IDPhotoCrop`
+- `SingleImageLayoutNode`
+- `SetNode`
+- `TTP_Image_Assy`
+- `SetNode`
+- `SetNode`
+- `easy ifElse`
+- `图像缩放V2_孤海`
+- `LoadImage`
+- `SetNode`
+- `VAEDecode` ★核心
+- `SetNode`
+- `VAEDecode` ★核心
+- `LoadImage`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `GetNode`
+- `Any Switch (rgthree)`
+- `GetNode`
+- `GetNode`
+- `PreviewImage`
+- `Image Comparer (rgthree)`
+- `GetNode`
+- `SaveImage`
+- `ImageSaveNode_孤海`
+- `Image Comparer (rgthree)`
+- `LoadImage`
+- `IDPhotoClothingSelector_孤海`
+- `SetNode`
+- `IDPhotoClothingSelector_孤海`
+- `孤海-取色器`
+- `SaveImage`
+- `PreviewImage`
+- `孤海注释`
+- `孤海注释`
+- `UNETLoader` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `LoraLoaderModelOnly` ★核心
+- `KSampler` ★核心
+- `CLIPTextEncode` ★核心
+- `CLIPLoader`
+- `CLIPTextEncode` ★核心
+- `JjkText`
+- `EmptyLatentImage` ★核心
+- `solarL_SaveImagesToZip`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `Note`
+
+**识别到的模式**：text_to_image、image_to_image
+
+## 关键参数
+
+- `seed` = `598626327129635`
+- `steps` = `4`
+- `cfg` = `4.5`
+- `sampler_name` = `er_sde`
+- `scheduler` = `beta`
+- `denoise` = `1`
+- `width` = `80`
+- `height` = `80`
+- `batch_size` = `1`
+
+## 知识
+
+覆盖率 **63%**（126/199）
+
+**有卡**：`GuHai_IDPhotoCrop`、`easy imageRemBg`、`图像缩放V2_孤海`、`ColorCorrect`、`ImageComposite+`、`RMBG`、`ModelSamplingAuraFlow`、`easy seed`、`KSampler`、`ConditioningZeroOut`、`VAEEncode`、`CLIPLoader`、`VAELoader`、`LoraLoaderModelOnly`、`Text Concatenate`、`TextEncodeQwenImageEditPlusCustom_lrzjason`、`GrowMaskWithBlur`、`RemoveBackgroundWithMask`、`SAM3Segment`、`QwenEditConfigPreparer`、`Flux2KleinConfigPreparer_EditUtils`、`ReferenceLatent`、`CLIPTextEncode`、`VAEDecode`、`easy imageColorMatch`、`Flux2KleinModelConfig_EditUtils`、`ImageBlur`、`SeedVR2LoadVAEModel`、`TextInput_`、`ColorConverterGuhai`、`孤海-自定义颜色`、`TTP_Tile_image_size`、`ImageScaleBy`、`SeedVR2VideoUpscaler`、`GetImageSize+`、`ImageResize+`、`布尔孤海`、`GoohaiUniversalSlider`、`EditTextEncode_EditUtils`、`TextEncodeQwenImageEditPlus`、`KSamplerSelect`、`RandomNoise`、`SimpleMath+`、`SamplerCustomAdvanced`、`CFGGuider`、`Flux2Scheduler`、`忽略多组孤海`、`TTP_Image_Tile_Batch`、`UNETLoader`、`SeedVR2LoadDiTModel`、`SingleImageLayoutNode`、`TTP_Image_Assy`、`LoadImage`、`SaveImage`、`ImageSaveNode_孤海`、`IDPhotoClothingSelector_孤海`、`孤海-取色器`、`EmptyLatentImage`、`solarL_SaveImagesToZip`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、LoraLoaderModelOnly、UNETLoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut
+
+## 参数体检
+
+发现 4 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

@@ -1,0 +1,66 @@
+---
+key: 图片生成/文生图/nunchaku-qwen-image with lora_2073405156171018242.json
+name: nunchaku-qwen-image with lora_2073405156171018242
+type: Unknown Workflow
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/nunchaku-qwen-image with lora_2073405156171018242.json
+hash: 7eb23ef416a0943b
+coverage: 0.923077
+learned_at: 2026-10-20 00:02:06
+nodes: [Note, VAEDecode, VAELoader, CLIPLoader, SaveImage, EmptySD3LatentImage, CLIPTextEncode, CLIPTextEncode, ModelSamplingAuraFlow, KSampler, NunchakuQwenImageDiTLoader, EmptyImage, SaveImage]
+patterns: []
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"cfg": 1, "denoise": 1, "sampler_name": "res_multistep", "scheduler": "simple", "seed": 47920188110092, "steps": 8}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/nunchaku-qwen-image with lora_2073405156171018242.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/nunchaku-qwen-image with lora_2073405156171018242.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Sampling → Decode → Process → Output → Other
+
+**节点**（13 个）：
+- `Note`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `SaveImage`
+- `EmptySD3LatentImage`
+- `CLIPTextEncode` ★核心
+- `CLIPTextEncode` ★核心
+- `ModelSamplingAuraFlow`
+- `KSampler` ★核心
+- `NunchakuQwenImageDiTLoader`
+- `EmptyImage`
+- `SaveImage`
+
+## 关键参数
+
+- `seed` = `47920188110092`
+- `steps` = `8`
+- `cfg` = `1`
+- `sampler_name` = `res_multistep`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **92%**（12/13）
+
+**有卡**：`VAEDecode`、`VAELoader`、`CLIPLoader`、`SaveImage`、`EmptySD3LatentImage`、`CLIPTextEncode`、`ModelSamplingAuraFlow`、`KSampler`、`NunchakuQwenImageDiTLoader`、`EmptyImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、SaveImage、EmptySD3LatentImage、EmptyImage
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

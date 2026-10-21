@@ -1,0 +1,67 @@
+---
+key: 图片生成/文生图/boogu. image电商海报_2040459014437347330.json
+name: boogu. image电商海报_2040459014437347330
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/boogu. image电商海报_2040459014437347330.json
+hash: 4b0d8b7de426b108
+coverage: 1
+learned_at: 2026-10-19 22:45:57
+nodes: [CLIPLoader, UNETLoader, VAELoader, ConditioningZeroOut, KSampler, VAEDecode, CLIPTextEncode, EmptyLatentImage, SaveImage]
+patterns: [text_to_image]
+missing: []
+problems: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+parameters: {"batch_size": 4, "cfg": 1, "denoise": 1, "height": 1536, "sampler_name": "lcm", "scheduler": "sgm_uniform", "seed": 619377295300410, "steps": 4, "width": 1024}
+discoveries: [[medium] Steps较低，可能导致细节不足 → 建议增加到20-30]
+---
+
+# 图片生成/文生图/boogu. image电商海报_2040459014437347330.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/boogu. image电商海报_2040459014437347330.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output
+
+**节点**（9 个）：
+- `CLIPLoader`
+- `UNETLoader` ★核心
+- `VAELoader`
+- `ConditioningZeroOut`
+- `KSampler` ★核心
+- `VAEDecode` ★核心
+- `CLIPTextEncode` ★核心
+- `EmptyLatentImage` ★核心
+- `SaveImage`
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `seed` = `619377295300410`
+- `steps` = `4`
+- `cfg` = `1`
+- `sampler_name` = `lcm`
+- `scheduler` = `sgm_uniform`
+- `denoise` = `1`
+- `width` = `1024`
+- `height` = `1536`
+- `batch_size` = `4`
+
+## 知识
+
+覆盖率 **100%**（9/9）
+
+**有卡**：`CLIPLoader`、`UNETLoader`、`VAELoader`、`ConditioningZeroOut`、`KSampler`、`VAEDecode`、`CLIPTextEncode`、`EmptyLatentImage`、`SaveImage`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage、UNETLoader
+
+## 参数体检
+
+发现 1 个问题：
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30
+
+## 学习发现
+
+- [medium] Steps较低，可能导致细节不足 → 建议增加到20-30

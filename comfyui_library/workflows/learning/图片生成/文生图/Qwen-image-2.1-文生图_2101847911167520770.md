@@ -1,0 +1,58 @@
+---
+key: 图片生成/文生图/Qwen-image-2.1-文生图_2101847911167520770.json
+name: Qwen-image-2.1-文生图_2101847911167520770
+type: Text To Image
+status: completed
+source: json
+file: comfyui_library/workflows/图片生成/文生图/Qwen-image-2.1-文生图_2101847911167520770.json
+hash: 1e740ea9833f8862
+coverage: 0.909091
+learned_at: 2026-10-20 01:51:19
+nodes: [UNETLoader, SaveImage, QwenImage21Cache, VAEDecode, VAELoader, CLIPLoader, EmptyLatentImage, ConditioningZeroOut, KSampler, PreviewImage, CLIPTextEncode]
+patterns: [text_to_image]
+missing: []
+parameters: {"batch_size": 1, "cfg": 1, "denoise": 1, "height": 1024, "sampler_name": "euler", "scheduler": "simple", "seed": 536232809520762, "steps": 25, "width": 1024}
+---
+
+# 图片生成/文生图/Qwen-image-2.1-文生图_2101847911167520770.json
+
+> 来源文件 `comfyui_library/workflows/图片生成/文生图/Qwen-image-2.1-文生图_2101847911167520770.json`
+
+## 结构
+
+**生成流程**：Model → Condition → Latent → Sampling → Decode → Output → Other
+
+**节点**（11 个）：
+- `UNETLoader` ★核心
+- `SaveImage`
+- `QwenImage21Cache`
+- `VAEDecode` ★核心
+- `VAELoader`
+- `CLIPLoader`
+- `EmptyLatentImage` ★核心
+- `ConditioningZeroOut`
+- `KSampler` ★核心
+- `PreviewImage`
+- `CLIPTextEncode` ★核心
+
+**识别到的模式**：text_to_image
+
+## 关键参数
+
+- `width` = `1024`
+- `height` = `1024`
+- `batch_size` = `1`
+- `seed` = `536232809520762`
+- `steps` = `25`
+- `cfg` = `1`
+- `sampler_name` = `euler`
+- `scheduler` = `simple`
+- `denoise` = `1`
+
+## 知识
+
+覆盖率 **91%**（10/11）
+
+**有卡**：`UNETLoader`、`SaveImage`、`QwenImage21Cache`、`VAEDecode`、`VAELoader`、`CLIPLoader`、`EmptyLatentImage`、`ConditioningZeroOut`、`KSampler`、`CLIPTextEncode`
+
+**用到的条目**：KSampler、VAEDecode、VAELoader、CLIPTextEncode、CLIPLoader、ConditioningZeroOut、EmptyLatentImage、QwenImage21Cache
